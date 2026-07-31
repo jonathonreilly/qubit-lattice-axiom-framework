@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 830: exact reverse attack on the S* funnel state.
+"""Cycle 830 v2: exact collision hierarchy of the S* funnel state.
 
 The landed k=2 update is reimplemented here as an exact Boolean circuit.
 Its provenance is the SHA-pinned Cycle-719 ``mapped_macro`` update used by
@@ -16,7 +16,7 @@ X/CNOT/Toffoli arithmetic.
 """
 from __future__ import annotations
 
-AUDIT_TIMEOUT_SEC = 1500
+AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 200 * 1024
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
@@ -112,6 +112,63 @@ NINE_KEYS = (
     (0, (4, 9)),
     (0, (4, 10)),
     (0, (5, 10)),
+)
+EXPECTED_NINE_KEY_PARTITIONS = (
+    (NINE_KEYS,),
+    ((NINE_KEYS[0],), NINE_KEYS[1:4], NINE_KEYS[4:]),
+    (
+        (NINE_KEYS[0],),
+        (NINE_KEYS[1],),
+        NINE_KEYS[2:4],
+        NINE_KEYS[4:],
+    ),
+    (
+        (NINE_KEYS[0],),
+        (NINE_KEYS[1],),
+        NINE_KEYS[2:4],
+        NINE_KEYS[4:7],
+        NINE_KEYS[7:],
+    ),
+    ((NINE_KEYS[0],), NINE_KEYS[1:4], NINE_KEYS[4:]),
+    (
+        (NINE_KEYS[0],),
+        (NINE_KEYS[1],),
+        NINE_KEYS[2:4],
+        NINE_KEYS[4:7],
+        NINE_KEYS[7:],
+    ),
+    (
+        (NINE_KEYS[0],),
+        (NINE_KEYS[1],),
+        NINE_KEYS[2:4],
+        NINE_KEYS[4:7],
+        NINE_KEYS[7:],
+    ),
+    (
+        (NINE_KEYS[0],),
+        (NINE_KEYS[1],),
+        NINE_KEYS[2:4],
+        NINE_KEYS[4:7],
+        NINE_KEYS[7:],
+    ),
+    (
+        (NINE_KEYS[0],),
+        NINE_KEYS[1:4],
+        NINE_KEYS[4:7],
+        NINE_KEYS[7:],
+    ),
+)
+EXPECTED_NINE_KEY_OCCUPANCY = (1, 3, 4, 5, 3, 5, 5, 5, 4)
+EXPECTED_SHARED_PAIR_COUNTS = (36, 13, 11, 5, 13, 5, 5, 5, 7)
+EXPECTED_FORWARD_PARTITION_RELATIONS = (
+    "SPLIT_TO_FINER",
+    "UNCHANGED",
+    "UNCHANGED",
+    "COALESCE_TO_COARSER",
+    "SPLIT_TO_FINER",
+    "COALESCE_TO_COARSER",
+    "COALESCE_TO_COARSER",
+    "COALESCE_TO_COARSER",
 )
 
 # Replaced mechanically from /tmp/cycle830_constants.txt after extraction
@@ -771,7 +828,56 @@ def partition_keys(
     groups: dict[int, list[tuple[int, tuple[int, int]]]] = {}
     for key, state in zip(NINE_KEYS, states):
         groups.setdefault(state, []).append(key)
-    return tuple(tuple(group) for group in groups.values())
+    return tuple(
+        tuple(group)
+        for _state, group in sorted(
+            groups.items(),
+            key=lambda item: (item[1][0], len(item[1])),
+        )
+    )
+
+
+def partition_nodes(
+    states: tuple[int, ...],
+) -> tuple[dict[str, object], ...]:
+    groups: dict[int, list[tuple[int, tuple[int, int]]]] = {}
+    for key, state in zip(NINE_KEYS, states):
+        groups.setdefault(state, []).append(key)
+    return tuple(
+        {
+            "node_state_sha256": state_sha256(state),
+            "keys": tuple(group),
+            "key_count": len(group),
+        }
+        for state, group in sorted(
+            groups.items(),
+            key=lambda item: (item[1][0], len(item[1])),
+        )
+    )
+
+
+def partition_refines(
+    finer: tuple[tuple[tuple[int, tuple[int, int]], ...], ...],
+    coarser: tuple[tuple[tuple[int, tuple[int, int]], ...], ...],
+) -> bool:
+    coarse_blocks = tuple(frozenset(group) for group in coarser)
+    return all(
+        any(frozenset(group) <= block for block in coarse_blocks)
+        for group in finer
+    )
+
+
+def partition_relation(
+    before: tuple[tuple[tuple[int, tuple[int, int]], ...], ...],
+    after: tuple[tuple[tuple[int, tuple[int, int]], ...], ...],
+) -> str:
+    if before == after:
+        return "UNCHANGED"
+    if partition_refines(after, before):
+        return "SPLIT_TO_FINER"
+    if partition_refines(before, after):
+        return "COALESCE_TO_COARSER"
+    return "INCOMPARABLE_REARRANGEMENT"
 
 
 def varying_wires(states: tuple[int, ...]) -> tuple[int, ...]:
@@ -789,7 +895,9 @@ def trajectory_and_mechanism_certificates(
     snapshots: dict[int, dict[object, int]],
     levels: dict[int, set[int]],
     all_keys: tuple[tuple[int, tuple[int, int]], ...],
-) -> tuple[dict[str, object], dict[str, object]]:
+) -> tuple[
+    dict[str, object], dict[str, object], dict[str, object]
+]:
     reverse_states = [target] * len(NINE_KEYS)
     rows = []
     for depth in range(TREE_DEPTH + 1):
@@ -804,11 +912,20 @@ def trajectory_and_mechanism_certificates(
             for key in NINE_KEYS
         )
         varying = varying_wires(states)
+        partition = partition_keys(states)
         rows.append({
             "depth": depth,
             "forward_time": MECHANISM_ENTRY - depth,
             "distinct_nine_state_nodes": len(set(states)),
-            "branch_partition": partition_keys(states),
+            "branch_partition": partition,
+            "partition_nodes": partition_nodes(states),
+            "shared_state_groups": tuple(
+                group for group in partition if len(group) > 1
+            ),
+            "shared_pair_count": sum(
+                len(group) * (len(group) - 1) // 2
+                for group in partition
+            ),
             "varying_wire_indices": varying,
             "key_distinguishing_wire_count": len(varying),
             "equal_across_nine_wire_count": STATE_BITS - len(varying),
@@ -834,9 +951,47 @@ def trajectory_and_mechanism_certificates(
             ) == 5
         )
     )
-    trajectories = {
+    partition_sequence = tuple(
+        row["branch_partition"] for row in rows
+    )
+    occupancy = tuple(
+        row["distinct_nine_state_nodes"] for row in rows
+    )
+    shared_pair_counts = tuple(
+        row["shared_pair_count"] for row in rows
+    )
+    positive_depth_collision_depths = tuple(
+        row["depth"] for row in rows[1:]
+        if row["shared_state_groups"]
+    )
+    all_nine_merge_depths = tuple(
+        row["depth"] for row in rows
+        if row["distinct_nine_state_nodes"] == 1
+    )
+    collision_map = {
+        "version": 2,
         "scope": "nine actual fixed-position trajectories",
+        "claim":
+            "Exact partition by shared 5815-bit projected state at every "
+            "reverse depth 0..8.",
+        "v1_retraction":
+            "RETRACTED: the nine do not merge only at depth 0 under the "
+            "pairwise/shared-state meaning.  Pairwise projected collisions "
+            "occur at every positive depth 1..8.  Only the common merger of "
+            "all nine is confined to depth 0.",
         "depth_rows": tuple(rows),
+        "full_partition_sequence_depth_0_through_8": partition_sequence,
+        "node_occupancy_counts_depth_0_through_8": occupancy,
+        "shared_pair_counts_depth_0_through_8": shared_pair_counts,
+        "positive_depth_collision_depths":
+            positive_depth_collision_depths,
+        "positive_depth_shared_state_groups": tuple(
+            (
+                row["depth"],
+                row["shared_state_groups"],
+            )
+            for row in rows[1:]
+        ),
         "all_forward_snapshot_checks_exact":
             all(row["independent_forward_snapshot_exact"] for row in rows),
         "all_materialized_memberships_exact":
@@ -844,24 +999,102 @@ def trajectory_and_mechanism_certificates(
                 row["materialized_tree_membership"] is True
                 for row in rows
             ),
-        "all_nine_merge_depths": tuple(
-            row["depth"] for row in rows
-            if row["distinct_nine_state_nodes"] == 1
-        ),
-        "positive_depth_all_nine_merge": any(
-            row["depth"] > 0
-            and row["distinct_nine_state_nodes"] == 1
-            for row in rows
-        ),
+        "all_nine_common_merger_depths": all_nine_merge_depths,
         "maximum_distinct_nine_nodes_through_D": max(
             row["distinct_nine_state_nodes"] for row in rows
         ),
     }
-    trajectories["pass"] = (
-        trajectories["all_forward_snapshot_checks_exact"]
-        and trajectories["all_materialized_memberships_exact"]
-        and trajectories["all_nine_merge_depths"] == (0,)
-        and not trajectories["positive_depth_all_nine_merge"]
+    collision_map["pass"] = (
+        collision_map["all_forward_snapshot_checks_exact"]
+        and collision_map["all_materialized_memberships_exact"]
+        and partition_sequence == EXPECTED_NINE_KEY_PARTITIONS
+        and occupancy == EXPECTED_NINE_KEY_OCCUPANCY
+        and shared_pair_counts == EXPECTED_SHARED_PAIR_COUNTS
+        and positive_depth_collision_depths
+        == tuple(range(1, TREE_DEPTH + 1))
+        and all_nine_merge_depths == (0,)
+    )
+    transition_rows = []
+    for before_depth in range(TREE_DEPTH, 0, -1):
+        after_depth = before_depth - 1
+        before = partition_sequence[before_depth]
+        after = partition_sequence[after_depth]
+        relation = partition_relation(before, after)
+        transition_rows.append({
+            "from_depth": before_depth,
+            "from_forward_time": MECHANISM_ENTRY - before_depth,
+            "to_depth": after_depth,
+            "to_forward_time": MECHANISM_ENTRY - after_depth,
+            "relation": relation,
+            "from_partition": before,
+            "to_partition": after,
+            "dissolved_blocks": tuple(
+                group for group in before if group not in after
+            ),
+            "formed_blocks": tuple(
+                group for group in after if group not in before
+            ),
+        })
+    forward_relations = tuple(
+        row["relation"] for row in transition_rows
+    )
+    hierarchy = {
+        "version": 2,
+        "scope":
+            "partition sequence from reverse depth 8 to 0, equivalently "
+            "forward times t=14731 through t=14739",
+        "full_partition_sequence_depth_8_through_0":
+            tuple(reversed(partition_sequence)),
+        "node_occupancy_depth_8_through_0":
+            tuple(reversed(occupancy)),
+        "transition_rows": tuple(transition_rows),
+        "transition_relations_depth_8_through_0": forward_relations,
+        "monotone_coarsening_toward_depth_0": all(
+            relation in {"UNCHANGED", "COALESCE_TO_COARSER"}
+            for relation in forward_relations
+        ),
+        "ruling":
+            "NONMONOTONE: the approach contains exact subgroup splits "
+            "(8->7 and 4->3), unchanged stages, and coalescences.  It is a "
+            "hierarchical collision profile, not a monotone partition "
+            "coarsening.",
+        "split_transitions": tuple(
+            (row["from_depth"], row["to_depth"])
+            for row in transition_rows
+            if row["relation"] == "SPLIT_TO_FINER"
+        ),
+        "unchanged_transitions": tuple(
+            (row["from_depth"], row["to_depth"])
+            for row in transition_rows
+            if row["relation"] == "UNCHANGED"
+        ),
+        "coalescence_transitions": tuple(
+            (row["from_depth"], row["to_depth"])
+            for row in transition_rows
+            if row["relation"] == "COALESCE_TO_COARSER"
+        ),
+        "final_tick": {
+            "transition": (1, 0),
+            "predecessor_partition": partition_sequence[1],
+            "predecessor_distinct_nodes": occupancy[1],
+            "image_partition": partition_sequence[0],
+            "image_distinct_nodes": occupancy[0],
+            "all_nine_one_state": partition_sequence[0] == (NINE_KEYS,),
+            "reading":
+                "The final tick completes synchronization by coalescing "
+                "the remaining three projected nodes into the one all-nine "
+                "S* node.",
+        },
+    }
+    hierarchy["pass"] = (
+        collision_map["pass"]
+        and forward_relations == EXPECTED_FORWARD_PARTITION_RELATIONS
+        and not hierarchy["monotone_coarsening_toward_depth_0"]
+        and hierarchy["split_transitions"] == ((8, 7), (4, 3))
+        and hierarchy["unchanged_transitions"] == ((7, 6), (6, 5))
+        and hierarchy["coalescence_transitions"]
+        == ((5, 4), (3, 2), (2, 1), (1, 0))
+        and hierarchy["final_tick"]["all_nine_one_state"]
     )
     reverse_varying = tuple(
         row["key_distinguishing_wire_count"] for row in rows
@@ -881,14 +1114,30 @@ def trajectory_and_mechanism_certificates(
         })
     mechanism = {
         "classification":
-            "PARAMETERIZED_BIJECTION_SYNCHRONIZATION_NOT_SINGLE_MAP_ATTRACTION",
+            "NONMONOTONE_HIERARCHICAL_PARAMETERIZED_BIJECTION_"
+            "SYNCHRONIZATION_NOT_SINGLE_MAP_ATTRACTION",
         "exact_reading":
-            "At t=14738 the nine projected data states occupy three nodes: "
-            "5800 of 5815 wires are common across those nine histories and "
-            "15 distinguish the nodes.  The nine different fixed-position "
-            "bijections map those three predecessors to the same S*.  "
-            "Retaining the position label prevents a collision; projecting "
-            "it away creates the funnel.",
+            "Scoped to these nine data trajectories, partial synchronization "
+            "is present throughout the funnel approach as exact shared-state "
+            "subgroups.  Those subgroups split as well as coalesce, so the "
+            "hierarchical profile is nonmonotone.  At t=14738 the nine "
+            "projected data states occupy three nodes: 5800 of 5815 wires "
+            "are common and 15 distinguish the nodes.  The key-specific "
+            "final tick maps those three predecessors to the same S*, "
+            "erasing the last differences and completing synchronization.  "
+            "Retaining each position parameter keeps its update bijective; "
+            "projecting the parameter away permits the collisions.",
+        "collision_correction":
+            "V1's pairwise depth-0-only merger wording is retracted.  "
+            "Positive-depth shared projected states occur at all depths "
+            "1..8; depth 0 is special only as the all-nine common state.",
+        "hierarchical_profile": {
+            "partition_transition_relations":
+                hierarchy["transition_relations_depth_8_through_0"],
+            "monotone_coarsening_toward_depth_0":
+                hierarchy["monotone_coarsening_toward_depth_0"],
+            "ruling": hierarchy["ruling"],
+        },
         "full_fixed_position_preimage_levels": tuple(full_level_rows),
         "forced_equal_scope":
             "within each exact 44-ray projected level, not over arbitrary "
@@ -936,12 +1185,14 @@ def trajectory_and_mechanism_certificates(
         "honest_gap":
             "The tree identifies the exact final synchronization and the "
             "component equalities within the finite 44-ray levels, but the "
-            "nonmonotone nine-history profile does not support a claim of "
-            "progressive component erasure and does not derive the entry "
-            "predicate or a universal attraction mechanism.",
+            "nonmonotone hierarchical nine-history profile does not support "
+            "a claim of progressive component erasure and does not derive "
+            "the entry predicate or a universal attraction mechanism.",
     }
     mechanism["pass"] = (
-        reverse_varying
+        collision_map["pass"]
+        and hierarchy["pass"]
+        and reverse_varying
         == (0, 15, 19, 23, 19, 23, 21, 12, 11)
         and not mechanism["progressive_monotone_erasure"]
         and full_level_rows[1]["varying_wire_count"] == 23
@@ -950,7 +1201,7 @@ def trajectory_and_mechanism_certificates(
         and not mechanism["after_Sstar"]["Sstar_is_common_fixed_point"]
         and mechanism["entry_predicate"]["equals_exact_nine"]
     )
-    return trajectories, mechanism
+    return collision_map, hierarchy, mechanism
 
 
 def moment_certificate(
@@ -1063,26 +1314,89 @@ def run() -> int:
     )
     certificate_b = one_step_certificate(target, words)
     certificate_c, levels = preimage_tree_certificate(target, words)
-    certificate_c_trajectories, certificate_d = (
+    (
+        certificate_collision,
+        certificate_hierarchy,
+        certificate_mechanism,
+    ) = (
         trajectory_and_mechanism_certificates(
             target, words, census["snapshots"], levels, fixtures["keys"]
         )
     )
     certificate_c["nine_actual_trajectories"] = (
-        certificate_c_trajectories
+        certificate_collision
     )
     certificate_c["pass"] = (
-        certificate_c["pass"] and certificate_c_trajectories["pass"]
+        certificate_c["pass"] and certificate_collision["pass"]
     )
     certificate_e = moment_certificate(census, target)
+    certificate_unchanged = {
+        "scope":
+            "Cycle-830 v1 results unaffected by the adopted collision "
+            "correction and reproduced without weakening their checks.",
+        "preimage_derivations": {
+            "Sstar_reconstruction": certificate_a,
+            "one_step_44_labels_to_14_data_states": certificate_b,
+            "depth_0_through_8_tree": certificate_c,
+        },
+        "erasure_accounting": {
+            "status": "STANDS_EXACTLY",
+            "depth1_distinct_nodes":
+                certificate_mechanism["last_tick"][
+                    "predecessor_distinct_nodes"
+                ],
+            "depth1_varying_wire_indices":
+                certificate_mechanism["last_tick"][
+                    "predecessor_varying_wire_indices"
+                ],
+            "depth1_varying_wire_count":
+                certificate_mechanism["last_tick"][
+                    "predecessor_varying_wire_count"
+                ],
+            "image_distinct_nodes":
+                certificate_mechanism["last_tick"][
+                    "image_distinct_nodes"
+                ],
+            "image_varying_wire_count":
+                certificate_mechanism["last_tick"][
+                    "image_varying_wire_count"
+                ],
+            "all_key_specific_final_ticks_equal_Sstar":
+                certificate_hierarchy["final_tick"]["all_nine_one_state"],
+        },
+        "tenth_mechanism_failure": certificate_e,
+    }
+    certificate_unchanged["pass"] = (
+        certificate_a["pass"]
+        and certificate_b["pass"]
+        and certificate_c["pass"]
+        and certificate_unchanged["erasure_accounting"]["status"]
+        == "STANDS_EXACTLY"
+        and certificate_unchanged["erasure_accounting"][
+            "depth1_distinct_nodes"
+        ] == 3
+        and certificate_unchanged["erasure_accounting"][
+            "depth1_varying_wire_count"
+        ] == 15
+        and certificate_unchanged["erasure_accounting"][
+            "image_distinct_nodes"
+        ] == 1
+        and certificate_unchanged["erasure_accounting"][
+            "image_varying_wire_count"
+        ] == 0
+        and certificate_unchanged["erasure_accounting"][
+            "all_key_specific_final_ticks_equal_Sstar"
+        ]
+        and certificate_e["pass"]
+    )
     elapsed = monotonic() - started
     checks = {
-        "A_SSTAR_RECONSTRUCTION": certificate_a["pass"],
-        "B_ONE_STEP_PREIMAGE": certificate_b["pass"],
-        "C_DEPTH8_PREIMAGE_TREE": certificate_c["pass"],
-        "D_EXACT_MECHANISM_READING": certificate_d["pass"],
-        "E_MOMENT_HONEST_EQUIVALENT_GAP": certificate_e["pass"],
-        "F_CONTROLS": False,
+        "A_COLLISION_MAP": certificate_collision["pass"],
+        "B_HIERARCHICAL_PROFILE": certificate_hierarchy["pass"],
+        "C_CORRECTED_MECHANISM_READING":
+            certificate_mechanism["pass"],
+        "D_UNCHANGED_RESULTS": certificate_unchanged["pass"],
+        "E_CONTROLS": False,
     }
     controls = {
         **sources,
@@ -1113,16 +1427,17 @@ def run() -> int:
         and elapsed < AUDIT_TIMEOUT_SEC
     )
     certificates = {
-        "A_SSTAR": certificate_a,
-        "B_ONE_STEP_PREIMAGE": certificate_b,
-        "C_PREIMAGE_TREE": certificate_c,
-        "D_MECHANISM": certificate_d,
-        "E_MOMENT": certificate_e,
-        "F_CONTROLS": controls,
+        "A_COLLISION_MAP": certificate_collision,
+        "B_HIERARCHICAL_PROFILE": certificate_hierarchy,
+        "C_CORRECTED_MECHANISM": certificate_mechanism,
+        "D_UNCHANGED_PREIMAGE_ERASURE_TENTH_MECHANISM":
+            certificate_unchanged,
+        "E_CONTROLS": controls,
     }
     report = {
         "cycle": 830,
-        "target": "S* preimage tree",
+        "version": 2,
+        "target": "S* hierarchical preimage merger profile",
         "actual_status":
             "exact support conditional on disclosed landed-fixture import",
         "one_step_distinct_data_preimages":
@@ -1132,9 +1447,21 @@ def run() -> int:
             certificate_c["exact_materialized_counts"],
         "nine_distinct_nodes_by_reverse_depth": tuple(
             row["distinct_nine_state_nodes"]
-            for row in certificate_c_trajectories["depth_rows"]
+            for row in certificate_collision["depth_rows"]
         ),
-        "mechanism": certificate_d["classification"],
+        "full_partition_sequence_depth_0_through_8":
+            certificate_collision[
+                "full_partition_sequence_depth_0_through_8"
+            ],
+        "partition_relations_depth_8_through_0":
+            certificate_hierarchy[
+                "transition_relations_depth_8_through_0"
+            ],
+        "monotone_partition_coarsening_toward_depth_0":
+            certificate_hierarchy[
+                "monotone_coarsening_toward_depth_0"
+            ],
+        "mechanism": certificate_mechanism["classification"],
         "moment_outcome": certificate_e["outcome"],
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
@@ -1142,31 +1469,31 @@ def run() -> int:
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "checks": {},
         "pass": False,
-        "terminal": "CYCLE830_SSTAR_PREIMAGE_TREE_HONEST_FAIL",
+        "terminal": "CYCLE830_V2_HIERARCHICAL_MERGER_HONEST_FAIL",
     }
     for _iteration in range(8):
         controls["pass"] = controls_base
-        checks["F_CONTROLS"] = controls["pass"]
+        checks["E_CONTROLS"] = controls["pass"]
         report["checks"] = dict(checks)
         report["pass"] = all(checks.values())
         report["terminal"] = (
-            "CYCLE830_SSTAR_PREIMAGE_TREE_EXACT_PASS"
+            "CYCLE830_V2_HIERARCHICAL_MERGER_EXACT_PASS"
             if report["pass"]
-            else "CYCLE830_SSTAR_PREIMAGE_TREE_HONEST_FAIL"
+            else "CYCLE830_V2_HIERARCHICAL_MERGER_HONEST_FAIL"
         )
         output = stable_render(certificates, report)
         total_bytes = len(output.encode("utf-8"))
         stdout_ok = total_bytes < STDOUT_LIMIT_BYTES
         controls["stdout_bytes"] = total_bytes
         controls["pass"] = controls_base and stdout_ok
-        checks["F_CONTROLS"] = controls["pass"]
+        checks["E_CONTROLS"] = controls["pass"]
         report["stdout_bytes"] = total_bytes
     output = stable_render(certificates, report)
     final_bytes = len(output.encode("utf-8"))
     if final_bytes >= STDOUT_LIMIT_BYTES:
         sys.stdout.write(compact({
             "pass": False,
-            "terminal": "CYCLE830_SSTAR_PREIMAGE_TREE_HONEST_FAIL",
+            "terminal": "CYCLE830_V2_HIERARCHICAL_MERGER_HONEST_FAIL",
             "failure": "stdout bound exceeded",
             "stdout_bytes": final_bytes,
             "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
@@ -1182,7 +1509,7 @@ def main() -> int:
     except Exception as error:
         sys.stdout.write(compact({
             "pass": False,
-            "terminal": "CYCLE830_SSTAR_PREIMAGE_TREE_HONEST_FAIL",
+            "terminal": "CYCLE830_V2_HIERARCHICAL_MERGER_HONEST_FAIL",
             "exception_type": type(error).__name__,
             "exception": str(error),
         }) + "\n")

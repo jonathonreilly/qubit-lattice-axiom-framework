@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF17-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle830_preimage_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 8
+    },
+    "logs/runner-cache/frontier_cycle830_sstar_preimage_tree_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 16
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 830,
+  "files": {
+    "docs/SSTAR_PREIMAGE_TREE_CYCLE830_BOUNDED_THEOREM_NOTE_2026-07-28.md": "bc3f7cd30d4fab2336765ca81fa380ae5b58400d60a83482644ca3b0d2906aa3",
+    "logs/runner-cache/frontier_cycle830_preimage_independent_check_2026_07_28.txt": "a25c69767dbc11f223141b4c9b4beb716a5e1fcaa83c29c1ce2459ecdd20e398",
+    "logs/runner-cache/frontier_cycle830_sstar_preimage_tree_2026_07_28.txt": "f32f237bb5b5b56a2c09921a11f33563d20b93e0d9d5a85e216f12cd0524c25a",
+    "scripts/frontier_cycle830_preimage_independent_check_2026_07_28.py": "0ec6c5e3c119bfe5b61ba3d75b58b9542584af91c58d326d4b41bd7448caede9",
+    "scripts/frontier_cycle830_sstar_preimage_tree_2026_07_28.py": "40d8cfb99b65fa251599bbf07f6a4399fd5bda9ad1e9e12e24db9395c4737d58"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "the preimage tree exact (44->14; depth counts [1,14,18,21,16,18,26,26,25])",
+    "reversal twenty: v1 depth-0-only merger REFUTED; v2 partition profile NON-MONOTONE (d4=d1; d5-7=d3), full union only at depth 0",
+    "mechanism: braided synchronization; final tick erases 15 diffs across 3 nodes",
+    "tenth moment-mechanism dead (circular); checker CYCLE830_V2_INDEPENDENT_CHECK_EXACT_PASS"
+  ]
+}

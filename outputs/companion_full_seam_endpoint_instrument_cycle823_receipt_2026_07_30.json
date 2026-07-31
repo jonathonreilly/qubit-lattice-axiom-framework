@@ -3,7 +3,7 @@
   "audit": "unset",
   "authority": "none",
   "artifact_provenance_sha256": {
-    "note": "c3593b3903b64c5d96c4ff0e0723d1976ad7069061a2a21cb2b80989526e18cd",
+    "note": "7838206e0d69ba29f6cfdac718aff21872d4d96c9f2d85733ca43a3cd0a0a9ae",
     "runner": "c23370fdc02ca2e70dcb68e7de816da518c76425db84d2b1d6d69f02e63cb543"
   },
   "checks_passed": 9,
@@ -18,8 +18,7 @@
     "monomial_full_seam_failures": 0,
     "endpoint_swap_failures": 0,
     "instrument_isometry_failures": 0,
-    "maximum_primary_instrument_residual": 0.0,
-    "maximum_independent_instrument_residual": 2.24e-17,
+    "maximum_instrument_residual": 0.0,
     "dirty_ancilla_unlawful_inputs_per_edge": 7
   },
   "active_controls": {

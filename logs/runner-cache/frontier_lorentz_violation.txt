@@ -1,322 +1,69 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_violation.py
-runner_sha256: 73478063f8a0f10fb32e117acbc399a4c7d675e26b984be18003e614a524c4f5
+runner_sha256: b40597f93011206f4e346cc6632fefff350e67ba7a1b07bc60a235ffc19ee687
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.68
+elapsed_sec: 3.36
 status: ok
 ----- stdout -----
-==============================================================================
-FIXED-ACTION CUBIC-ANISOTROPY DIAGNOSTIC
-Conditional SME-style scale parameterization
-==============================================================================
-
-==============================================================================
-0. FULL O_h SIGNED-PERMUTATION ACTION CERTIFICATE
+FIXED-ACTION CUBIC-ANISOTROPY CERTIFICATE
+Conditional algebra for the supplied symbol; no physical Lorentz/CPT/SME claim
 ==============================================================================
 
-  [PASS] O_h construction has 48 distinct signed-permutation matrices
-         constructed=48, distinct=48 = 3!*2^3
-  [PASS] Every O_h element is an orthogonal 3x3 integer matrix
-         R^T R = I exactly and entries lie in {-1,0,1} for all 48 elements
-  [PASS] O_h contains 24 proper and 24 improper elements
-         det=+1: 24, det=-1: 24
-  [PASS] Identity and inverses are present
-         I is present and R^{-1}=R^T belongs to the set for every element
-  [PASS] The 48-element set is closed under multiplication
-         all 48^2 = 2304 products remain in the constructed set
-  [PASS] The supplied nearest-neighbor cubic kinetic symbol is O_h-invariant
-         max residual=1.776e-15 over 48 x 5 deterministic hostile momentum actions
-  [PASS] sum_i n_i^4 is O_h-invariant
-         max residual=0.000e+00 over 48 x 5 deterministic hostile direction actions
-  [PASS] A generic proper rotation outside O_h changes the finite-a symbol
-         R_z(pi/7): distance to O_h=6.294e-01, |K(Rp)-K(p)|=1.369633
+A. Full O_h action and negative control
+---------------------------------------
+[PASS] O_h has 48 distinct signed-permutation matrices
+       constructed=48, distinct=48 = 3!*2^3
+[PASS] O_h has 24 proper and 24 improper elements
+       det(+1)=24, det(-1)=24
+[PASS] O_h is closed and contains every inverse
+       all 48^2 products close and R^-1=R^T is present
+[PASS] the supplied finite-a symbol is invariant under all of O_h
+       max |K_a(Rp)-K_a(p)|=1.776e-15 over 48x3 actions
+[PASS] sum_i n_i^4 is invariant under all of O_h
+       max quartic residual=0.000e+00 over 48x4 actions
+[PASS] R_z(pi/7) is a proper rotation outside O_h and changes the symbol
+       det(R)=1.000000000000000, norm residual=0.000e+00, distance(O_h)=6.294e-01, |K(Rp)-K(p)|=1.369633
+
+B. Exact Taylor coefficient
+---------------------------
+[PASS] symbolic series has coefficients 1, -a^2/12, +a^4/360
+       series=a**4*p**6/360 - a**2*p**4/12 + p**2; coeff(p^4)=-a**2/12
+[PASS] independent numeric residual falls at the predicted next order
+       |exact-p4|=6.095e-07, |exact-p6|=3.140e-10
+
+C. Normalized cubic-harmonic projection
+---------------------------------------
+[PASS] normalized harmonic identity holds pointwise
+       trigsimp(sum_i n_i^4 - 3/5 - (4*sqrt(pi)/15)K_4)=0
+[PASS] exact normalized projection is 4*sqrt(pi)/15
+       <K_4|K_4>=12/7, <f|K_4>=16*sqrt(pi)/35, ratio=4*sqrt(pi)/15
+[PASS] discarded coefficient 4/5 fails in the normalized convention
+       axis residual(old-correct)=-2/5 + 6/(5*sqrt(pi))
+[PASS] directional anisotropy is exactly a factor of three
+       f4([100])=1, f4([111])=1/3, ratio=3
+
+D. Approved scale-reference unit conversion
+-------------------------------------------
+[PASS] metres to GeV^-1 conversion reproduces the Planck energy reciprocal
+       a=8.1907451111e-20 GeV^-1, 1/a=1.2208901467e+19 GeV, relative difference=1.201e-07
+[PASS] a^2/12 gives the one-GeV fractional scale 5.6e-40
+       a^2/12=5.5906921229e-40 GeV^-2; 1/(12 E_Pl^2)=5.5906934661e-40 GeV^-2; relative difference=2.403e-07
+
+Scope boundary
+--------------
+Verified only for K_a(p)=sum_i (4/a^2) sin^2(a p_i/2).
+Not derived: action selection, carrier/continuum meaning, CPT, SME response,
+or experimental consistency. The scale reference is a units primitive only.
 
-  FULL O_h ACTION CERTIFICATE: PASS (8/8 checks)
-
-==============================================================================
-1. LATTICE DISPERSION RELATION
-==============================================================================
-
-  On a cubic lattice with spacing a, the dispersion relation is:
-
-    E^2 = m^2 + sum_i (4/a^2) sin^2(p_i a/2)
-
-  (Standard second-order finite-difference Laplacian eigenvalue;
-  see LORENTZ_VIOLATION_DERIVED_NOTE.md Step 2.)
-
-  Taylor expanding for p_i a << 1:
-
-    sin^2(p_i a/2) = (p_i a/2)^2 - (p_i a/2)^4/3 + (p_i a/2)^6*2/45 - ...
-
-    (4/a^2) sin^2(p_i a/2) = p_i^2 - a^2 p_i^4/12 + a^4 p_i^6/360 - ...
-
-  Therefore:
-    E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + (a^4/360) sum_i p_i^6 - ...
-                       ^^^^^^^^^^^^^^^^^^^^^^^^
-                       FINITE-a CUBIC-ANISOTROPY TERM
-
-  The p_i^4 term is spatially anisotropic with cubic symmetry O_h.
-  Its coefficient is a^2/12 for this supplied kinetic symbol. This runner
-  does not derive the symbol, spacing, or a full spacetime representation.
-
-  Numerical verification (1D, a=0.1, m=0.1):
-    At p*a = 0.1256:
-      E^2 (exact lattice) = 1.5861683563
-      E^2 (continuum)     = 1.5882429737
-      E^2 (p^4 corrected) = 1.5861672646
-      E^2 (p^6 corrected) = 1.5861683566
-      Residual (lattice - p^4): 1.0917e-06
-      Residual (lattice - p^6): 3.0770e-10
-
-==============================================================================
-2. CONDITIONAL SME-STYLE COEFFICIENT PARAMETERIZATION
-==============================================================================
-
-  The fixed-action finite-a correction decomposes in NORMALIZED real spherical
-  harmonics Y_lm (scipy.special.sph_harm / sympy.Ynm convention):
-
-    sum_i p_i^4 = p^4 * [3/5 + (4*sqrt(pi)/15) * K_4(theta, phi)]
-
-  where K_4 is the cubic harmonic of order 4:
-    K_4 = Y_{40} + sqrt(5/14) (Y_{44} + Y_{4,-4})
-
-  The coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727 with normalized Y_lm,
-  NOT 4/5 (corrected 2026-05-29; verify_cubic_harmonic_identity() pins it).
-
-  If a compatible carrier and sector matching are supplied, an SME-style
-  parameterization would assign:
-  - The correction is a dimension-6 operator (d=6, n=4 in p)
-  - An even-in-momentum contribution in the c-type coefficient basis
-  - No full-action CPT classification (see Section 5 below)
-  - The nonminimal SME coefficients are:
-
-    c^(6)_{(I)00}   = -(a^2/12)(3/5) / sqrt(4 pi)        [isotropic, j=0]
-    c^(6)_{(I)40}   = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=0]
-    c^(6)_{(I)44}   = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=4]
-    c^(6)_{(I)4,-4} = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=-4]
-
-  The selected scalar symbol has no j=1,2,3 component. This does not set
-  independent coefficients of a complete action to zero.
-
-  For a = l_Planck = 1.6163e-35 m:
-    a in natural units:    8.2041e-20 GeV^-1
-    c4 coefficient (a^2/12): 5.6090e-40 GeV^-2
-    c^(6) isotropic (j=0): -3.3654e-40 GeV^-2
-    c^(6) aniso (j=4,m=0): -2.6511e-40 GeV^-2
-
-  Dimensionless mass-normalized coefficients (c^(6) * m^2):
-    Electron: c^(6) * m_e^2 = 1.4646e-46
-    Proton:   c^(6) * m_p^2 = 4.9350e-40
-    Photon:   c^(6) coefficient = 5.6090e-40 GeV^-2
-
-==============================================================================
-2b. CUBIC-HARMONIC IDENTITY VERIFICATION (normalized Y_lm)
-==============================================================================
-
-  [PASS] Exact identity sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 (normalized Y_lm)
-         max|LHS-RHS| = 7.77e-16 over 200000 random directions (coef = 4*sqrt(pi)/15 = 0.472654)
-  [PASS] Old coefficient 4/5 is refuted under normalized Y_lm
-         max|LHS-RHS| = 2.77e-01 with the discarded 4/5 coefficient
-  [PASS] Isotropic average <sum_i n_i^4> = 3/5 (unchanged by the correction)
-         <f> = 0.599758 (expect 0.600000)
-  [PASS] Sympy: trigsimp(sum_i n_i^4 - [3/5 + (4*sqrt(pi)/15) K_4]) = 0 identically
-         symbolic residual = 0
-  [PASS] Sympy: <f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15 (exact spherical projection)
-         projected coefficient = 4*sqrt(pi)/15
-
-  CUBIC-HARMONIC IDENTITY VERIFICATION: PASS (5/5 checks)
-
-==============================================================================
-3. CONDITIONAL COEFFICIENT SCALE (NO EXPERIMENTAL MATCH)
-==============================================================================
-
-  Natural suppression at E = 1 GeV:
-    (E/E_Planck)^2 = (1.0 / 1.2209e+19)^2 = 6.7087e-39
-
-  Conditional p^4 coefficient when a = l_Planck is supplied:
-    a^2/12 = (1.6163e-35 m)^2 / 12
-           = 5.6090e-40 GeV^-2
-           = 8.3607e-02 (in E_Planck^-2 units)
-
-  No experimental bound is divided into this coefficient. Published constraint
-  catalogs mix sectors, operator dimensions, and observable responses;
-  none supplies the sector-specific response map needed for a valid match.
-  The numbers in this section are therefore internal scales of the selected
-  symbol only.
-
-
-==============================================================================
-4. STAGGERED FERMION TASTE-BREAKING CONTRIBUTIONS
-==============================================================================
-
-  Staggered fermions on a cubic lattice have 2^d degenerate tastes.
-  Taste symmetry is broken at O(a^2), introducing an ADDITIONAL imported
-  finite-a illustration beyond the naive lattice dispersion.
-
-  The taste-dependent correction has the form:
-    delta(E^2)_taste = a^2 * C_taste * p^4
-
-  where C_taste depends on the taste representation. The total illustrative
-  finite-a coefficient
-  for each taste is:
-    (a^2/12)(1 + C_taste) * sum_i p_i^4
-
-  Enhancement factors by taste (from lattice QCD):
-
-  Taste              C_taste    Enhancement    Total c^(6) (GeV^-2)  
-  ────────────────── ────────── ────────────── ──────────────────────
-  pseudoscalar       1.0        2.0            1.1218e-39            
-  axial_vector       1.2        2.2            1.2340e-39            
-  tensor             1.5        2.5            1.4022e-39            
-  vector             2.0        3.0            1.6827e-39            
-  scalar             2.5        3.5            1.9631e-39            
-  identity           3.0        4.0            2.2436e-39            
-
-  These imported taste factors illustrate sensitivity of the selected model
-  calculation only. The runner does not derive them for this framework or
-  identify tastes with physical fermion species, so it makes no
-  flavor-dependent Lorentz-violation prediction.
-
-
-==============================================================================
-5. DISCRETE-SYMMETRY SCOPE
-==============================================================================
-
-  Verified here: the selected scalar kinetic symbol is even in momentum.
-
-  Not supplied or verified here: a complete matter action and explicit C, T,
-  or CPT operators. Therefore no exact-CPT theorem follows and no CPT-odd SME
-  coefficient is fixed to zero by this calculation.
-
-  No Greenberg-theorem or CPT conclusion is drawn: the runner does not specify or test the complete QFT assumptions, matter action, or C/P/T operators required for that inference.
-
-
-==============================================================================
-6. CONDITIONAL PROPAGATION DIAGNOSTIC
-==============================================================================
-
-  For a massless relativistic carrier governed by the supplied kinetic symbol,
-  the leading finite-a anisotropy is governed by K_4(theta, phi). Neither that
-  carrier identification nor a = l_Planck is derived here.
-
-  1. DIRECTION-DEPENDENT GROUP VELOCITY
-
-     For a massless mode governed by the supplied scalar symbol:
-       E/p = 1 - (a^2/24) p^2 * f_4(theta, phi) + O(a^4 p^4)
-       v_g   = 1 - (a^2/8) p^2 * f_4(theta, phi) + O(a^4 p^4)
-
-     where f_4 = sin^4(theta)cos^4(phi) + sin^4(theta)sin^4(phi)
-                 + cos^4(theta)
-
-     The speed varies with direction by:
-       delta_v_g ~ (a^2/8) * p^2 * (f_4_max - f_4_min)
-                 = (a^2/8) * p^2 * (1 - 1/3)
-                 = (a^2/12) * p^2
-
-     For the supplied comparison values a = l_Planck and p = 10 GeV:
-
-       delta_v_g = (a^2/12) * p^2
-                 = (8.2041e-20)^2 / 12 * (10.0)^2
-                 = 5.6090e-38
-
-     This is 5.6e-38, approximately 10^-38.
-
-  2. INTERPRETATION LIMIT
-
-     The dimensionless factor (E/E_Planck)^2 cannot be compared directly with
-     a dimensionful SME coefficient bound, and unrelated SME sectors cannot be
-     compared by relabeling units. This runner therefore makes no exclusion,
-     margin, or energy-reach estimate. A valid comparison requires a specified
-     carrier, observable, sector convention, and dimensionally matched response
-     map.
-
-
-==============================================================================
-7. CONDITIONAL SCALE TABLE
-==============================================================================
-
-  Lattice: a = l_Planck = 1.6163e-35 m
-  Leading finite-a coefficient: a^2/12 = 5.6090e-40 GeV^-2
-
-  E (GeV)      (E/E_Pl)^2     axis |delta E^2/E^2|     axis |delta v_g|  
-  ──────────── ────────────── ──────────────────────── ──────────────────
-  1.0e-03      6.71e-45       5.61e-46                 8.41e-46          
-  1.0e-01      6.71e-41       5.61e-42                 8.41e-42          
-  1.0e+00      6.71e-39       5.61e-40                 8.41e-40          
-  1.0e+01      6.71e-37       5.61e-38                 8.41e-38          
-  1.0e+02      6.71e-35       5.61e-36                 8.41e-36          
-  1.0e+03      6.71e-33       5.61e-34                 8.41e-34          
-  1.0e+04      6.71e-31       5.61e-32                 8.41e-32          
-  1.0e+07      6.71e-25       5.61e-26                 8.41e-26          
-  1.0e+10      6.71e-19       5.61e-20                 8.41e-20          
-
-==============================================================================
-8. DIRECTIONAL ANISOTROPY (CUBIC LATTICE FINGERPRINT)
-==============================================================================
-
-  The cubic symmetry creates direction-dependent propagation.
-  f_4(theta, phi) = sum_i (n_i)^4 for unit vector n.
-
-  Direction            theta      phi        f_4        deviation from 3/5
-  ──────────────────── ────────── ────────── ────────── ────────────────────
-  axis [100]           0.0000     0.0000     1.0000     +0.4000
-  face diag [110]      0.7854     0.0000     0.5000     -0.1000
-  body diag [111]      0.9553     0.7854     0.3333     -0.2667
-
-  The ratio f_4(axis) / f_4(diagonal) = 3.0
-
-  The factor-of-3 anisotropy is an exact property of this selected cubic
-  momentum symbol. It is not a unique microscopic fingerprint: other models
-  with the same cubic symmetry can share the angular pattern.
-
-
-==============================================================================
-SCOPE VERDICT
-==============================================================================
-
-  VERIFIED FOR THE SUPPLIED FIXED-ACTION MODEL:
-
-  1. Spatial finite-a anisotropy
-     - The selected momentum symbol has cubic group O_h
-     - Leading correction: -(a^2/12) sum_i p_i^4
-     - Dimension-6 p^4 term in the conditional parameterization
-
-  2. CPT
-     - Not established: the complete action and C/P/T operators are absent
-     - No CPT-odd coefficient is fixed by this runner
-
-  3. Conditional coefficient values if a = l_Planck and matching is supplied:
-     - c^(6)_{(I)00} ~ -3.37e-40 GeV^-2 (isotropic)
-     - c^(6)_{(I)40} ~ -2.65e-40 GeV^-2 (anisotropic)
-
-  4. Natural suppression:
-     - (E/E_Planck)^2 ~ 10^-38 at E = 1 GeV
-     - Historical scale comparison only; no experimental verdict
-
-  5. Staggered fermion taste-breaking:
-     - Changes the imported finite-a illustration by factor 2-4 by taste channel
-     - Imported illustration; no physical flavor identification established
-     - No experimental comparison is made without a sector response map
-
-  6. Characteristic angular signature:
-     - Cubic harmonics (j=4 with m=0, +4, -4)
-     - Factor of 3 anisotropy between lattice axis and body diagonal
-     - Shared by models with the same cubic symmetry; not unique
-
-  BOTTOM LINE:
-    This runner validates the selected symbol's O_h action, Taylor expansion,
-    and cubic-harmonic identity. It does not establish physical Lorentz
-    violation or promote the calculation to a four-axiom, framework-native
-    selection, CPT, SME-matching, or experimental-consistency result.
-
-  Elapsed: 1.5 s
-
-==============================================================================
 EXPERIMENT COMPLETE
-  Full O_h action certificate: PASS
-  Cubic-harmonic identity check: PASS
-==============================================================================
+-------------------
+Full O_h action certificate: PASS
+Taylor coefficient check: PASS
+Cubic-harmonic identity check: PASS
+Unit conversion check: PASS
+Executed assertions: PASS=14 FAIL=0
+CLAIM_BOUNDARY=conditional_algebraic_diagnostic_for_supplied_symbol
 
 ----- stderr -----
 

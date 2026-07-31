@@ -1,44 +1,27 @@
 #!/usr/bin/env python3
-"""Fixed-action cubic-anisotropy diagnostic.
+"""Compact certificate for the supplied nearest-neighbor cubic symbol.
 
-This script evaluates a supplied nearest-neighbor second-order
-finite-difference spatial kinetic symbol on a cubic lattice. It does not derive
-that action, the lattice spacing, a relativistic carrier, CPT, or an SME-sector
-identification from the four axioms. Its phenomenology tables are historical
-scale illustrations, not validated experimental exclusions or framework
-predictions. The robust checks are the full-`O_h` signed-permutation action,
-Taylor coefficients, and normalized cubic-harmonic identity for the selected
-symbol. The full-group certificate and cubic-harmonic identity are independent
-load-bearing exit gates.
+The only scientific input is the selected spatial kinetic symbol
 
-The key result: the lattice correction to the dispersion relation is
+    K_a(p) = sum_i (4/a^2) sin^2(a p_i/2).
 
-    E^2 = m^2 + sum_i (4/a^2) sin^2(p_i a/2)
+The runner verifies four audit-targeted consequences:
 
-(the standard second-order finite-difference Laplacian eigenvalue;
-matches LORENTZ_VIOLATION_DERIVED_NOTE.md Step 2). Expanding at low
-momentum:
+1. its exact Taylor coefficient is ``-a^2/12`` at quartic order;
+2. ``sum_i n_i^4`` has normalized cubic-harmonic coefficient
+   ``4*sqrt(pi)/15``;
+3. the symbol is invariant under all 48 signed permutations in ``O_h`` but a
+   fixed proper rotation outside ``O_h`` changes it; and
+4. the approved scale-reference conversion ``a^{-1}=M_Pl`` gives the stated
+   natural-unit coefficient at one GeV.
 
-    E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + O(a^4)
+This is a class-A algebraic certificate conditional on the supplied symbol.
+It does not select an action, derive a relativistic carrier, establish physical
+Lorentz violation or CPT, perform SME matching, or test experiment.
 
-The `p_i^4` term is spatially anisotropic with cubic group `O_h`. A later
-SME-style parameterization is conditional on additional carrier and matching
-assumptions that this runner does not verify.
-
-If `a = l_Planck` is supplied externally, the scale factor is
-`(E/E_Planck)^2`; this identification is not an axiom consequence.
-
-The angular decomposition sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 uses the
-standard NORMALIZED real spherical harmonics Y_lm (the
-scipy.special.sph_harm / sympy.Ynm convention); the l=4 cubic-harmonic
-coefficient is 4*sqrt(pi)/15, not 4/5 (corrected 2026-05-29). Section 2b
-(verify_cubic_harmonic_identity) checks this numerically and, when sympy
-is available, symbolically; the script exits non-zero if the check fails.
-scipy/sympy are used only for that optional cross-check and degrade
-gracefully (a closed-form numpy K_4 backs the numeric check if scipy is
-absent).
-
-PStack experiment: lorentz-violation-sme
+The source and stdout are deliberately compact enough to appear in full in
+the restricted audit packet (40,000 source characters and 20,000 stdout
+characters as of 2026-07-29).
 """
 
 from __future__ import annotations
@@ -46,43 +29,41 @@ from __future__ import annotations
 import itertools
 import math
 import sys
-import time
+from collections.abc import Callable
 
 import numpy as np
-
-np.set_printoptions(precision=10, linewidth=120, suppress=True)
-
-
-# ============================================================
-# Physical constants
-# ============================================================
-HBAR = 1.054571817e-34       # J s
-C_LIGHT = 2.99792458e8       # m/s
-G_NEWTON = 6.67430e-11       # m^3 kg^-1 s^-2
-L_PLANCK = 1.616255e-35      # m
-E_PLANCK_GEV = 1.2209e19     # GeV
-E_PLANCK_J = 1.956e9         # J
-GEV_TO_INVMETER = 5.076e15   # 1 GeV = 5.076e15 m^-1
-
-# Particle masses in GeV
-M_ELECTRON_GEV = 0.000511
-M_PROTON_GEV = 0.938
-M_NEUTRON_GEV = 0.940
-M_NEUTRINO_GEV = 1e-10       # upper bound, ~0.1 eV
+import sympy as sp
 
 
-# ============================================================
-# Section 0: full cubic-group action certificate
-# ============================================================
+TOL = 1.0e-12
+PLANCK_LENGTH_M = 1.616255e-35
+HBAR_C_GEV_M = 1.973269804e-16
+PLANCK_ENERGY_GEV = 1.220890e19
 
-def full_o_h_signed_permutations() -> tuple[np.ndarray, ...]:
-    """Return the full 48-element signed-permutation representation of O_h.
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
-    Each matrix has exactly one nonzero entry, equal to +/-1, in every row
-    and column.  The 3! coordinate permutations and 2^3 independent row
-    signs therefore give all 48 orthogonal integer matrices, including both
-    determinant +1 (proper) and determinant -1 (improper) elements.
-    """
+
+def check(name: str, condition: bool, detail: str) -> bool:
+    """Record and print one executed assertion."""
+    global PASS_COUNT, FAIL_COUNT
+    if condition:
+        PASS_COUNT += 1
+        status = "PASS"
+    else:
+        FAIL_COUNT += 1
+        status = "FAIL"
+    print(f"[{status}] {name}")
+    print(f"       {detail}")
+    return condition
+
+
+def section(title: str) -> None:
+    print(f"\n{title}\n{'-' * len(title)}")
+
+
+def signed_permutations() -> tuple[np.ndarray, ...]:
+    """Construct the full 48-element signed-permutation representation."""
     elements: list[np.ndarray] = []
     for permutation in itertools.permutations(range(3)):
         for signs in itertools.product((-1, 1), repeat=3):
@@ -93,1126 +74,282 @@ def full_o_h_signed_permutations() -> tuple[np.ndarray, ...]:
     return tuple(elements)
 
 
-def _integer_matrix_key(matrix: np.ndarray) -> tuple[int, ...]:
-    """Hashable row-major key for an integer 3x3 matrix."""
+def matrix_key(matrix: np.ndarray) -> tuple[int, ...]:
     return tuple(int(entry) for entry in matrix.reshape(-1))
 
 
-def _integer_det3(matrix: np.ndarray) -> int:
-    """Exact determinant formula for a 3x3 integer matrix."""
-    a, b, c = (int(x) for x in matrix[0])
-    d, e, f = (int(x) for x in matrix[1])
-    g, h, i = (int(x) for x in matrix[2])
+def integer_det3(matrix: np.ndarray) -> int:
+    a, b, c = (int(value) for value in matrix[0])
+    d, e, f = (int(value) for value in matrix[1])
+    g, h, i = (int(value) for value in matrix[2])
     return a * (e * i - f * h) - b * (d * i - f * g) + c * (d * h - e * g)
 
 
-def nearest_neighbor_cubic_symbol(momentum: np.ndarray, a: float) -> float:
-    """Supplied nearest-neighbor cubic kinetic symbol without the mass term."""
+def kinetic_symbol(momentum: np.ndarray, spacing: float) -> float:
     momentum = np.asarray(momentum, dtype=float)
-    return float(np.sum((4.0 / a**2) * np.sin(momentum * a / 2.0) ** 2))
+    return float(np.sum((4.0 / spacing**2) * np.sin(spacing * momentum / 2.0) ** 2))
 
 
-def quartic_direction_symbol(direction: np.ndarray) -> float:
-    """Return sum_i n_i^4 after normalizing a nonzero direction vector."""
-    direction = np.asarray(direction, dtype=float)
-    norm = float(np.linalg.norm(direction))
-    if norm == 0.0:
-        raise ValueError("direction must be nonzero")
-    unit = direction / norm
+def quartic_direction(direction: np.ndarray) -> float:
+    unit = np.asarray(direction, dtype=float)
+    unit = unit / np.linalg.norm(unit)
     return float(np.sum(unit**4))
 
 
-def verify_full_o_h_action() -> bool:
-    """Certify the full finite O_h action and its exact invariants.
+def verify_o_h() -> bool:
+    """Verify exact group structure, invariance, and an outside-group control."""
+    before = FAIL_COUNT
+    section("A. Full O_h action and negative control")
 
-    The group checks use exact integer arithmetic.  The action checks apply
-    every one of the 48 matrices to deterministic hostile samples, including
-    momenta near Brillouin-zone faces and generic unequal components.  A
-    fixed rotation through pi/7 outside O_h supplies the negative control:
-    it preserves the Euclidean norm but changes the finite-a kinetic symbol.
-    """
-    print(f"\n{'=' * 78}")
-    print("0. FULL O_h SIGNED-PERMUTATION ACTION CERTIFICATE")
-    print(f"{'=' * 78}\n")
-
-    n_pass = 0
-    n_fail = 0
-
-    def _check(name: str, condition: bool, detail: str) -> None:
-        nonlocal n_pass, n_fail
-        tag = "PASS" if condition else "FAIL"
-        if condition:
-            n_pass += 1
-        else:
-            n_fail += 1
-        print(f"  [{tag}] {name}")
-        print(f"         {detail}")
-
-    group = full_o_h_signed_permutations()
-    keys = {_integer_matrix_key(matrix) for matrix in group}
+    group = signed_permutations()
+    keys = {matrix_key(matrix) for matrix in group}
     identity = np.eye(3, dtype=np.int64)
-    identity_key = _integer_matrix_key(identity)
-    determinants = [_integer_det3(matrix) for matrix in group]
+    determinants = [integer_det3(matrix) for matrix in group]
 
-    _check(
-        "O_h construction has 48 distinct signed-permutation matrices",
-        len(group) == 48 and len(keys) == 48,
+    check(
+        "O_h has 48 distinct signed-permutation matrices",
+        len(group) == len(keys) == 48,
         f"constructed={len(group)}, distinct={len(keys)} = 3!*2^3",
     )
-    _check(
-        "Every O_h element is an orthogonal 3x3 integer matrix",
-        all(
-            set(int(x) for x in matrix.reshape(-1)) <= {-1, 0, 1}
-            and np.array_equal(matrix.T @ matrix, identity)
-            for matrix in group
-        ),
-        "R^T R = I exactly and entries lie in {-1,0,1} for all 48 elements",
+    check(
+        "O_h has 24 proper and 24 improper elements",
+        determinants.count(1) == determinants.count(-1) == 24,
+        f"det(+1)={determinants.count(1)}, det(-1)={determinants.count(-1)}",
     )
-    _check(
-        "O_h contains 24 proper and 24 improper elements",
-        determinants.count(1) == 24 and determinants.count(-1) == 24,
-        f"det=+1: {determinants.count(1)}, det=-1: {determinants.count(-1)}",
-    )
-    _check(
-        "Identity and inverses are present",
-        identity_key in keys
-        and all(
-            _integer_matrix_key(matrix.T) in keys
-            and np.array_equal(matrix @ matrix.T, identity)
-            for matrix in group
-        ),
-        "I is present and R^{-1}=R^T belongs to the set for every element",
-    )
-    closure_ok = all(
-        _integer_matrix_key(left @ right) in keys
-        for left in group
-        for right in group
-    )
-    _check(
-        "The 48-element set is closed under multiplication",
-        closure_ok,
-        "all 48^2 = 2304 products remain in the constructed set",
+    check(
+        "O_h is closed and contains every inverse",
+        all(matrix_key(left @ right) in keys for left in group for right in group)
+        and all(matrix_key(matrix.T) in keys for matrix in group)
+        and all(np.array_equal(matrix @ matrix.T, identity) for matrix in group),
+        "all 48^2 products close and R^-1=R^T is present",
     )
 
-    a_hostile = 0.731
-    momentum_samples = (
-        np.array([0.0, 0.0, 0.0]),
-        np.array([math.pi * (1.0 - 2.0**-20),
-                  -math.pi * (1.0 - 2.0**-18), 0.25]) / a_hostile,
-        np.array([0.127, -1.937, 2.619]) / a_hostile,
-        np.array([math.sqrt(2.0), -math.sqrt(3.0), math.pi / 5.0]) / a_hostile,
-        np.array([-2.91, 1.0e-11, 1.73]) / a_hostile,
+    spacing = 0.731
+    momenta = (
+        np.array([0.127, -1.937, 2.619]) / spacing,
+        np.array([math.pi * (1.0 - 2.0**-20), -2.4, 0.25]) / spacing,
+        np.array([math.sqrt(2.0), -math.sqrt(3.0), math.pi / 5.0]) / spacing,
     )
-    kinetic_residual = max(
-        abs(
-            nearest_neighbor_cubic_symbol(matrix @ momentum, a_hostile)
-            - nearest_neighbor_cubic_symbol(momentum, a_hostile)
-        )
-        for matrix in group
-        for momentum in momentum_samples
-    )
-    _check(
-        "The supplied nearest-neighbor cubic kinetic symbol is O_h-invariant",
-        kinetic_residual < 1.0e-12,
-        f"max residual={kinetic_residual:.3e} over 48 x {len(momentum_samples)} "
-        "deterministic hostile momentum actions",
-    )
-
-    direction_samples = (
+    directions = (
         np.array([1.0, 0.0, 0.0]),
         np.array([1.0, 1.0, 1.0]),
         np.array([1.0, 2.0, 3.0]),
         np.array([math.sqrt(2.0), -math.pi, math.e]),
-        np.array([1.0e-12, 1.0, -1.5]),
+    )
+    kinetic_residual = max(
+        abs(kinetic_symbol(matrix @ p, spacing) - kinetic_symbol(p, spacing))
+        for matrix in group
+        for p in momenta
     )
     quartic_residual = max(
-        abs(
-            quartic_direction_symbol(matrix @ direction)
-            - quartic_direction_symbol(direction)
-        )
+        abs(quartic_direction(matrix @ n) - quartic_direction(n))
         for matrix in group
-        for direction in direction_samples
+        for n in directions
     )
-    _check(
-        "sum_i n_i^4 is O_h-invariant",
-        quartic_residual < 1.0e-14,
-        f"max residual={quartic_residual:.3e} over 48 x {len(direction_samples)} "
-        "deterministic hostile direction actions",
+    check(
+        "the supplied finite-a symbol is invariant under all of O_h",
+        kinetic_residual < TOL,
+        f"max |K_a(Rp)-K_a(p)|={kinetic_residual:.3e} over 48x{len(momenta)} actions",
+    )
+    check(
+        "sum_i n_i^4 is invariant under all of O_h",
+        quartic_residual < TOL,
+        f"max quartic residual={quartic_residual:.3e} over 48x{len(directions)} actions",
     )
 
     angle = math.pi / 7.0
-    generic_rotation = np.array([
-        [math.cos(angle), -math.sin(angle), 0.0],
-        [math.sin(angle), math.cos(angle), 0.0],
-        [0.0, 0.0, 1.0],
-    ])
-    outside_distance = min(
-        float(np.linalg.norm(generic_rotation - matrix)) for matrix in group
+    rotation = np.array(
+        [
+            [math.cos(angle), -math.sin(angle), 0.0],
+            [math.sin(angle), math.cos(angle), 0.0],
+            [0.0, 0.0, 1.0],
+        ]
     )
-    generic_momentum = np.array([2.3, 0.4, -1.1]) / a_hostile
-    generic_delta = abs(
-        nearest_neighbor_cubic_symbol(generic_rotation @ generic_momentum, a_hostile)
-        - nearest_neighbor_cubic_symbol(generic_momentum, a_hostile)
+    momentum = np.array([2.3, 0.4, -1.1]) / spacing
+    distance_to_group = min(float(np.linalg.norm(rotation - matrix)) for matrix in group)
+    norm_residual = abs(float(np.linalg.norm(rotation @ momentum) - np.linalg.norm(momentum)))
+    symbol_delta = abs(kinetic_symbol(rotation @ momentum, spacing) - kinetic_symbol(momentum, spacing))
+    check(
+        "R_z(pi/7) is a proper rotation outside O_h and changes the symbol",
+        abs(float(np.linalg.det(rotation)) - 1.0) < TOL
+        and norm_residual < TOL
+        and distance_to_group > 1.0e-3
+        and symbol_delta > 1.0e-3,
+        "det(R)=%.15f, norm residual=%.3e, distance(O_h)=%.3e, |K(Rp)-K(p)|=%.6f"
+        % (float(np.linalg.det(rotation)), norm_residual, distance_to_group, symbol_delta),
     )
-    generic_is_rotation = (
-        np.allclose(generic_rotation.T @ generic_rotation, np.eye(3), atol=1.0e-14)
-        and abs(float(np.linalg.det(generic_rotation)) - 1.0) < 1.0e-14
+    return FAIL_COUNT == before
+
+
+def verify_taylor_coefficient() -> bool:
+    """Extract the low-momentum coefficients from the supplied symbol exactly."""
+    before = FAIL_COUNT
+    section("B. Exact Taylor coefficient")
+
+    momentum, spacing = sp.symbols("p a", real=True, nonzero=True)
+    one_axis_symbol = 4 * sp.sin(spacing * momentum / 2) ** 2 / spacing**2
+    series = sp.series(one_axis_symbol, momentum, 0, 8).removeO().expand()
+    quadratic = sp.simplify(series.coeff(momentum, 2))
+    quartic = sp.simplify(series.coeff(momentum, 4))
+    sextic = sp.simplify(series.coeff(momentum, 6))
+
+    check(
+        "symbolic series has coefficients 1, -a^2/12, +a^4/360",
+        quadratic == 1 and quartic == -spacing**2 / 12 and sextic == spacing**4 / 360,
+        f"series={series}; coeff(p^4)={quartic}",
     )
-    _check(
-        "A generic proper rotation outside O_h changes the finite-a symbol",
-        generic_is_rotation and outside_distance > 1.0e-6 and generic_delta > 1.0e-3,
-        f"R_z(pi/7): distance to O_h={outside_distance:.3e}, "
-        f"|K(Rp)-K(p)|={generic_delta:.6f}",
+
+    spacing_num = 0.37
+    momentum_num = np.array([0.19, -0.31, 0.47])
+    exact = kinetic_symbol(momentum_num, spacing_num)
+    through_p4 = float(
+        np.sum(momentum_num**2 - spacing_num**2 * momentum_num**4 / 12.0)
     )
-
-    verdict = "PASS" if n_fail == 0 else "FAIL"
-    print(f"\n  FULL O_h ACTION CERTIFICATE: {verdict} "
-          f"({n_pass}/{n_pass + n_fail} checks)")
-    return n_fail == 0
-
-
-# ============================================================
-# Section 1: Lattice dispersion relation
-# ============================================================
-
-def lattice_dispersion_1d(p: np.ndarray, a: float, m: float) -> np.ndarray:
-    """Single-component lattice dispersion: (4/a^2) sin^2(p*a/2).
-
-    On a cubic lattice with spacing a, the standard second-order
-    finite-difference Laplacian eigenvalue is
-        K_i = (4/a^2) sin^2(p_i a/2) = (2/a^2) (1 - cos(p_i a))
-
-    rather than the continuum p_i^2. This is the canonical normalization
-    that matches LORENTZ_VIOLATION_DERIVED_NOTE.md Step 2.
-
-    Note (2026-05-02 audit fix): the previous version used (2/a^2)
-    sin^2(p_i a/2), which is half-normalized: it gives leading
-    p_i^2 / 2 rather than p_i^2 in the small-p_i limit, and the
-    runner's printed expansion was inconsistent with its actual kinetic
-    function. The (4/a^2) form below is the correct standard
-    normalization for which sin^2(pa/2) -> (pa/2)^2 - (pa/2)^4/3 + ...
-    multiplied by 4/a^2 yields p^2 - a^2 p^4/12 + ... .
-
-    E^2 = m^2 + sum_i (4/a^2) sin^2(p_i a/2)
-
-    Args:
-        p: momentum array (GeV, in natural units with c=hbar=1)
-        a: lattice spacing (in natural-unit length = 1/GeV)
-        m: mass (GeV)
-
-    Returns:
-        E^2 array
-    """
-    return m**2 + (4.0 / a**2) * np.sin(p * a / 2.0)**2
-
-
-def lattice_dispersion_3d(px: float, py: float, pz: float,
-                          a: float, m: float) -> float:
-    """3D lattice dispersion relation (standard (4/a^2) normalization)."""
-    K = sum((4.0 / a**2) * math.sin(pi * a / 2.0)**2
-            for pi in [px, py, pz])
-    return m**2 + K
-
-
-def continuum_dispersion(p: np.ndarray, m: float) -> np.ndarray:
-    """Standard relativistic dispersion: E^2 = m^2 + p^2."""
-    return m**2 + p**2
-
-
-def lorentz_violation_coefficient(a: float) -> float:
-    """The coefficient of the p_i^4 finite-a anisotropy term.
-
-    Expanding sin^2(p_i a/2) = (p_i a/2)^2 - (p_i a/2)^4/3 + ...
-    gives (4/a^2) sin^2(p_i a/2) = p_i^2 - a^2 p_i^4/12 + ...
-
-    The fixed-action correction to E^2 is:
-        delta(E^2) = -(a^2/12) sum_i p_i^4
-
-    Returns the coefficient a^2/12.
-    """
-    return a**2 / 12.0
-
-
-def sixth_order_coefficient(a: float) -> float:
-    """The coefficient of the p_i^6 term (next fixed-action order).
-
-    sin^2(x) = x^2 - x^4/3 + 2x^6/45 - ...
-    (4/a^2) sin^2(pa/2) = p^2 - a^2 p^4/12 + a^4 p^6/360 + ...
-
-    Returns a^4/360.
-    """
-    return a**4 / 360.0
-
-
-# ============================================================
-# Section 2: SME (Standard Model Extension) mapping
-# ============================================================
-
-def compute_sme_coefficients(a_meters: float) -> dict:
-    """Package formal coefficient-basis labels without an SME matching claim.
-
-    The Standard Model Extension (Kostelecky, 2004) parameterizes
-    Lorentz violation in terms of tensor coefficients that modify
-    the free-particle dispersion relation.
-
-    For a spin-1/2 fermion in the SME, the modified dispersion is:
-        E^2 = m^2 + p^2 + sum_{d,jm} k^(d)_{jm} |p|^{d-2}
-
-    where d is the mass dimension of the operator, and k^(d)_{jm}
-    are spherical-harmonic coefficients.
-
-    The cubic lattice correction -(a^2/12) sum_i p_i^4 has:
-    - Mass dimension d = 6 (the p^4 term modifies a dimension-6 operator)
-    - It is a sum of p_i^4 terms, which decomposes in NORMALIZED real
-      spherical harmonics Y_lm (scipy.special.sph_harm / sympy.Ynm
-      convention) as:
-      sum_i p_i^4 = (3/5)|p|^4 + (4*sqrt(pi)/15)|p|^4 [Y_{40} + sqrt(5/14)(Y_{44}+Y_{4-4})]
-      (the coefficient on the l=4 cubic harmonic is 4*sqrt(pi)/15 ~= 0.4727
-      with normalized Y_lm, NOT 4/5; see verify_cubic_harmonic_identity())
-    - The isotropic part (j=0) gives: k^(6)_{00} ~ -(a^2/12)(3/5)
-    - The anisotropic part (j=4) gives: k^(6)_{40} ~ -(a^2/12)(4*sqrt(pi)/15) etc.
-
-    For this unmatched scale illustration only:
-    - The coefficients have dimension [length]^2 = [energy]^{-2}
-    - Convert a from meters to natural units: a_nat = a * (GeV / (hbar c))
-
-    Args:
-        a_meters: lattice spacing in meters
-
-    Returns:
-        Dictionary of SME coefficients
-    """
-    # Convert lattice spacing to natural units (1/GeV)
-    a_nat = a_meters * GEV_TO_INVMETER  # in 1/GeV
-
-    # The LV correction coefficient in natural units
-    c4_coeff = a_nat**2 / 12.0  # dimension [1/GeV^2]
-
-    # Decompose sum_i p_i^4 into NORMALIZED real spherical harmonics Y_lm
-    # (the scipy.special.sph_harm / sympy.Ynm convention):
-    #   x^4 + y^4 + z^4 = (3/5)r^4 + (4*sqrt(pi)/15) r^4 * K_4,
-    #   K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_{4,-4})
-    # The coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727 with normalized Y_lm,
-    # NOT 4/5 (an earlier revision wrote 4/5, which is only correct for an
-    # unnormalized angular convention; corrected 2026-05-29 to match the
-    # normalized K_4 and the verify_cubic_harmonic_identity() projection).
-
-    # Isotropic part: modifies the effective mass or the p^4 coefficient
-    # in the rotationally-invariant sector
-    iso_fraction = 3.0 / 5.0
-    aniso_fraction = 4.0 * math.sqrt(math.pi) / 15.0  # coeff on normalized K_4
-
-    # SME dimension-6 coefficients (c-type, CPT-even)
-    # These modify the fermion dispersion as:
-    # delta(E^2) = -c4_coeff * sum_i p_i^4
-    #            = -c4_coeff * p^4 * [iso + aniso * cubic_harmonics]
-
-    # For the electron sector (dimension-6, CPT-even):
-    # c^(6)_{(I)jm} with j=0 and j=4
-    c6_iso = -c4_coeff * iso_fraction        # j=0 coefficient
-    c6_j4_m0 = -c4_coeff * aniso_fraction    # j=4, m=0 component
-
-    # For dimension-8 (from the p^6 term):
-    c6_coeff = a_nat**4 / 360.0
-    c8_iso = c6_coeff * iso_fraction
-
-    # The key SME coefficients commonly quoted:
-    # For fermion sector, the dimension-6 operator c^(6)_{\mu\nu\rho\sigma}
-    # contracted with p gives corrections proportional to a^2 p^4 / E_Planck^2.
-    #
-    # In the notation of Kostelecky & Mewes (2009, 2012):
-    # The nonminimal coefficients are c^(d)_{(I)jm} for CPT-even
-    # and a^(d)_{(V)jm} for CPT-odd.
-    #
-    # This selected even scalar symbol contributes only to the even sector of
-    # this parameterization. It does not prove that a complete action has no
-    # independent CPT-odd operators.
-
-    return {
-        # Dimension-6 CPT-even coefficients (units: GeV^-2)
-        "c6_iso_j0": c6_iso,
-        "c6_aniso_j4_m0": c6_j4_m0,
-        "c6_total": -c4_coeff,
-
-        # Dimension-8 CPT-even (units: GeV^-4)
-        "c8_iso_j0": c8_iso,
-
-        # Raw coefficient
-        "a_natural_units": a_nat,
-        "c4_coefficient": c4_coeff,
-
-        # For comparison: express as (a/l_compton)^2 for each particle
-        "electron_c6": c4_coeff * M_ELECTRON_GEV**2,  # dimensionless
-        "proton_c6": c4_coeff * M_PROTON_GEV**2,
-        "photon_c6": c4_coeff,  # for photons, no mass suppression
-    }
-
-
-# ============================================================
-# Section 3: Historical experimental bounds
-# ============================================================
-
-EXPERIMENTAL_BOUNDS = {
-    "photon_birefringence": {
-        "description": "GRB polarization (vacuum birefringence)",
-        "sector": "photon",
-        "dimension": 6,
-        "bound_gev_minus2": 1e-32,
-        "reference": "Kostelecky & Mewes, PRL 110 (2013) 201601",
-        "notes": "Bound on k^(6)_F from GRB 061122 polarimetry",
-    },
-    "photon_dispersion_fermi": {
-        "description": "Fermi LAT time-of-flight",
-        "sector": "photon",
-        "dimension": 6,
-        "bound_gev_minus2": 1.0 / (6.3e10)**2,  # E_QG > 6.3e10 GeV for n=2
-        "reference": "Vasileiou et al., PRD 87 (2013) 122001",
-        "notes": "GRB 090510 photon speed, n=2 (dimension-6 LV)",
-    },
-    "electron_hughes_drever": {
-        "description": "Hughes-Drever (electron sector)",
-        "sector": "electron",
-        "dimension": 4,
-        "bound_gev": 1e-27,
-        "reference": "Kostelecky & Lane, PRD 60 (1999) 116010",
-        "notes": "Bound on c_{mu nu} for electrons, clock comparisons",
-    },
-    "proton_clock": {
-        "description": "Atomic clock comparisons (proton sector)",
-        "sector": "proton",
-        "dimension": 4,
-        "bound_gev": 1e-27,
-        "reference": "Kostelecky & Vargas, PRD 98 (2018) 036003",
-        "notes": "Bound on c_{mu nu} for protons",
-    },
-    "neutron_spin_precession": {
-        "description": "Neutron spin precession",
-        "sector": "neutron",
-        "dimension": 4,
-        "bound_gev": 1e-31,
-        "reference": "Altarev et al., EPL 92 (2010) 51001",
-        "notes": "Bound on b_mu for neutrons (CPT-odd, dimension 3)",
-    },
-    "neutrino_oscillation": {
-        "description": "Neutrino oscillation (MINOS/IceCube)",
-        "sector": "neutrino",
-        "dimension": 4,
-        "bound_gev": 1e-23,
-        "reference": "Kostelecky & Mewes, PRD 85 (2012) 096005",
-        "notes": "Bound on (a_L)_mu for neutrinos",
-    },
-    "muon_g_minus_2": {
-        "description": "Muon anomalous magnetic moment",
-        "sector": "muon",
-        "dimension": 4,
-        "bound_gev": 1e-24,
-        "reference": "Bluhm et al., PRL 84 (2000) 1098",
-        "notes": "Bound on c_{mu nu} for muons",
-    },
-    "gravity_sector_cbar": {
-        "description": "Gravity sector (lunar laser ranging)",
-        "sector": "gravity",
-        "dimension": 4,
-        "bound_dimensionless": 1e-9,
-        "reference": "Battat et al., PRL 99 (2007) 241103",
-        "notes": "Bound on s_bar^{mu nu} in pure gravity sector",
-    },
-}
-
-
-# ============================================================
-# Section 4: Staggered fermion taste-breaking
-# ============================================================
-
-def staggered_taste_breaking(a_nat: float) -> dict:
-    """Compute an imported taste-breaking finite-a illustration.
-
-    Staggered fermions on a cubic lattice have 2^d = 8 (in 3D) or 16 (in 4D)
-    degenerate species (tastes). The taste symmetry is broken by
-    lattice artifacts proportional to a^2.
-
-    The taste-breaking interactions have the form (Lepage, 1999):
-        delta_S = a^2 * sum_{mu<nu} (psi_bar gamma_mu x xi_nu psi)^2
-
-    where xi_nu are taste matrices. These introduce ADDITIONAL dimension-6
-    finite-a operators beyond the naive lattice dispersion.
-
-    The taste-dependent dispersion becomes:
-        E^2_taste = m^2 + p^2 - (a^2/12) sum_i p_i^4
-                    + a^2 * Delta_taste(p)
-
-    where Delta_taste depends on the taste quantum number and has
-    a DIFFERENT angular structure than the naive p_i^4 term.
-
-    For the physical (lightest) taste, Delta_taste is suppressed by
-    an additional factor relative to the naive term. For heavy tastes,
-    it can be comparable or larger.
-
-    In the continuum limit a -> 0, both contributions vanish as a^2.
-    But at finite a, the taste-breaking can double this illustrative
-    correction for some taste channels.
-
-    Args:
-        a_nat: lattice spacing in natural units (1/GeV)
-
-    Returns:
-        Dictionary of taste-breaking coefficients
-    """
-    # Naive lattice finite-a coefficient
-    naive_c4 = a_nat**2 / 12.0
-
-    # Taste-breaking correction factors (from lattice QCD studies)
-    # The taste splitting goes as:
-    #   delta_m^2_taste ~ C_taste * alpha_s^2 * a^2 * Lambda_QCD^2
-    # For this selected illustrative parameterization (no running coupling),
-    # the analogous splitting is:
-    #   delta_LV_taste ~ C_taste * a^2 * p^4
-    # where C_taste depends on the taste representation.
-
-    # Taste representations and their approximate splitting factors
-    # (from Aubin & Bernard, PRD 68 (2003) 034014):
-    # Pseudoscalar (PS): C = 1 (reference)
-    # Axial vector (AV): C ~ 1.2
-    # Tensor (T): C ~ 1.5
-    # Vector (V): C ~ 2.0
-    # Scalar (S): C ~ 2.5
-    # Identity (I): C ~ 3.0
-
-    taste_factors = {
-        "pseudoscalar": 1.0,
-        "axial_vector": 1.2,
-        "tensor": 1.5,
-        "vector": 2.0,
-        "scalar": 2.5,
-        "identity": 3.0,
-    }
-
-    results = {}
-    for taste, factor in taste_factors.items():
-        # Total illustrative finite-a coefficient: naive + taste-breaking
-        total_c4 = naive_c4 * (1.0 + factor)
-        results[taste] = {
-            "naive_c4": naive_c4,
-            "taste_factor": factor,
-            "total_c4": total_c4,
-            "enhancement_ratio": 1.0 + factor,
-        }
-
-    return results
-
-
-# ============================================================
-# Section 5: discrete-symmetry scope
-# ============================================================
-
-def discrete_symmetry_scope() -> dict:
-    """Report which symmetry statements the selected scalar symbol supports.
-
-    The even momentum dependence verifies spatial inversion of this one
-    symbol. A complete C, T, or CPT theorem would require a supplied matter
-    action and explicit symmetry operators, none of which are tested here.
-    """
-    return {
-        "selected_symbol_even_in_momentum": True,
-        "complete_action_supplied": False,
-        "cpt_established": False,
-        "cpt_odd_coefficients_fixed": False,
-        "scope": (
-            "No Greenberg-theorem or CPT conclusion is drawn: the runner "
-            "does not specify or test the complete QFT assumptions, matter "
-            "action, or C/P/T operators required for that inference."
-        ),
-    }
-
-
-# ============================================================
-# Section 6: Numerical computation
-# ============================================================
-
-def compute_suppression_factor(E_gev: float, E_planck_gev: float) -> float:
-    """Compute the natural Planck-scale suppression (E/E_Planck)^2.
-
-    For dimension-6 operators (p^4 correction), the suppression is:
-        (E/E_Planck)^2
-
-    This is the factor by which lattice effects are suppressed at energy E.
-    """
-    return (E_gev / E_planck_gev)**2
-
-
-def lattice_dispersion_correction_isotropic(p_gev: float,
-                                            a_meters: float) -> float:
-    """Fractional correction to E^2 from the isotropic p^4 term.
-
-    delta(E^2) / E^2 ~ -(a^2/12)(3/5) p^4 / p^2 = -(a^2/20) p^2
-
-    In natural units: a_nat = a_meters * GEV_TO_INVMETER.
-
-    Args:
-        p_gev: momentum in GeV
-        a_meters: lattice spacing in meters
-
-    Returns:
-        Fractional correction (dimensionless)
-    """
-    a_nat = a_meters * GEV_TO_INVMETER
-    return (a_nat**2 / 20.0) * p_gev**2
-
-
-def direction_dependent_correction(p_gev: float, theta: float,
-                                   phi: float, a_meters: float) -> float:
-    """Direction-dependent (anisotropic) correction from cubic symmetry.
-
-    For momentum along direction (theta, phi) in the lattice frame:
-    sum_i p_i^4 = p^4 * f(theta, phi)
-
-    where f(theta, phi) = sin^4(theta)cos^4(phi) + sin^4(theta)sin^4(phi)
-                          + cos^4(theta)
-
-    The isotropic average is <f> = 3/5.
-    The anisotropic part is delta_f = f - 3/5.
-
-    Maximum anisotropy: along axis (f=1) vs diagonal (f=1/3).
-
-    Args:
-        p_gev: momentum magnitude in GeV
-        theta, phi: direction angles in lattice frame
-        a_meters: lattice spacing in meters
-
-    Returns:
-        Fractional anisotropic correction to E^2
-    """
-    a_nat = a_meters * GEV_TO_INVMETER
-
-    # Cubic angular factor
-    sx = math.sin(theta) * math.cos(phi)
-    sy = math.sin(theta) * math.sin(phi)
-    sz = math.cos(theta)
-    f_cubic = sx**4 + sy**4 + sz**4
-
-    # The correction
-    return (a_nat**2 / 12.0) * f_cubic * p_gev**2
-
-
-# ============================================================
-# Section 6b: Cubic-harmonic identity verification (normalized Y_lm)
-# ============================================================
-
-def _real_cubic_harmonic_k4(theta: np.ndarray, phi: np.ndarray) -> np.ndarray:
-    """K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_{4,-4}) with NORMALIZED real Y_lm.
-
-    Uses scipy.special.sph_harm when available (with a version-robust
-    fallback for scipy >= 1.15, where the routine was renamed sph_harm_y).
-    If scipy is unavailable, falls back to the exact closed form
-
-        K_4 = (1/(16 sqrt(pi))) [ 3 (35 c^4 - 30 c^2 + 3) + 15 s^4 cos(4 phi) ]
-
-    (c = cos theta, s = sin theta), so the numeric identity check never
-    silently skips. Both routes use the same normalized Condon-Shortley
-    convention, in which Y_44 + Y_{4,-4} is real and proportional to
-    cos(4 phi).
-    """
-    try:
-        try:
-            from scipy.special import sph_harm  # scipy < 1.15
-        except ImportError:
-            from scipy.special import sph_harm_y as _shy  # scipy >= 1.15
-
-            def sph_harm(m, l, az, pol):
-                return _shy(l, m, pol, az)
-
-        y40 = sph_harm(0, 4, phi, theta)
-        y44 = sph_harm(4, 4, phi, theta)
-        y4m4 = sph_harm(-4, 4, phi, theta)
-        return np.real(y40 + math.sqrt(5.0 / 14.0) * (y44 + y4m4))
-    except Exception:
-        c = np.cos(theta)
-        s = np.sin(theta)
-        return (1.0 / (16.0 * math.sqrt(math.pi))) * (
-            3.0 * (35.0 * c ** 4 - 30.0 * c ** 2 + 3.0)
-            + 15.0 * s ** 4 * np.cos(4.0 * phi)
+    through_p6 = float(
+        np.sum(
+            momentum_num**2
+            - spacing_num**2 * momentum_num**4 / 12.0
+            + spacing_num**4 * momentum_num**6 / 360.0
         )
-
-
-def verify_cubic_harmonic_identity() -> bool:
-    """Verify the corrected cubic-harmonic decomposition identity.
-
-    With STANDARD NORMALIZED real spherical harmonics Y_lm (the
-    scipy.special.sph_harm / sympy.Ynm convention), the exact identity is
-
-        sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4,
-        K_4 = Y_40 + sqrt(5/14) (Y_44 + Y_{4,-4})
-
-    The coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727, NOT 4/5; the old
-    4/5 value is only correct for an unnormalized angular convention and
-    is refuted here. Checks: (1) numeric pointwise identity over 2x10^5
-    random directions, (2) refutation of the discarded 4/5 coefficient,
-    (3) the 3/5 isotropic average, and (4) optionally (if sympy imports)
-    the symbolic trigsimp(f - rhs) = 0 plus the exact spherical projection
-    <f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15.
-
-    Returns True iff every check passes.
-    """
-    print(f"\n{'=' * 78}")
-    print("2b. CUBIC-HARMONIC IDENTITY VERIFICATION (normalized Y_lm)")
-    print(f"{'=' * 78}\n")
-
-    n_pass = 0
-    n_fail = 0
-
-    def _check(name: str, cond: bool, detail: str) -> None:
-        nonlocal n_pass, n_fail
-        tag = "PASS" if cond else "FAIL"
-        if cond:
-            n_pass += 1
-        else:
-            n_fail += 1
-        print(f"  [{tag}] {name}")
-        print(f"         {detail}")
-
-    coef_correct = 4.0 * math.sqrt(math.pi) / 15.0   # ~= 0.472654
-    coef_old = 4.0 / 5.0
-
-    rng = np.random.default_rng(2026)
-    n_dir = 200000
-    z = rng.uniform(-1.0, 1.0, n_dir)
-    phi = rng.uniform(0.0, 2.0 * np.pi, n_dir)
-    theta = np.arccos(z)
-    nx = np.sin(theta) * np.cos(phi)
-    ny = np.sin(theta) * np.sin(phi)
-    nz = np.cos(theta)
-    lhs = nx ** 4 + ny ** 4 + nz ** 4
-
-    k4 = _real_cubic_harmonic_k4(theta, phi)
-    err_correct = float(np.max(np.abs(lhs - (3.0 / 5.0 + coef_correct * k4))))
-    err_old = float(np.max(np.abs(lhs - (3.0 / 5.0 + coef_old * k4))))
-    iso_avg = float(np.mean(lhs))
-
-    _check(
-        "Exact identity sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 (normalized Y_lm)",
-        err_correct < 1e-12,
-        f"max|LHS-RHS| = {err_correct:.2e} over {n_dir} random directions "
-        f"(coef = 4*sqrt(pi)/15 = {coef_correct:.6f})",
     )
-    _check(
-        "Old coefficient 4/5 is refuted under normalized Y_lm",
-        err_old > 1e-3,
-        f"max|LHS-RHS| = {err_old:.2e} with the discarded 4/5 coefficient",
+    residual_p4 = abs(exact - through_p4)
+    residual_p6 = abs(exact - through_p6)
+    check(
+        "independent numeric residual falls at the predicted next order",
+        residual_p6 < residual_p4 and residual_p6 < 1.0e-9,
+        f"|exact-p4|={residual_p4:.3e}, |exact-p6|={residual_p6:.3e}",
     )
-    _check(
-        "Isotropic average <sum_i n_i^4> = 3/5 (unchanged by the correction)",
-        abs(iso_avg - 3.0 / 5.0) < 1e-3,
-        f"<f> = {iso_avg:.6f} (expect 0.600000)",
-    )
+    return FAIL_COUNT == before
 
-    # Optional exact symbolic confirmation (only if sympy is importable).
-    try:
-        import sympy as sp
 
-        th, ph = sp.symbols("theta phi", real=True)
-        nx_s = sp.sin(th) * sp.cos(ph)
-        ny_s = sp.sin(th) * sp.sin(ph)
-        nz_s = sp.cos(th)
-        f_s = nx_s ** 4 + ny_s ** 4 + nz_s ** 4
-        y40_s = sp.Ynm(4, 0, th, ph).expand(func=True)
-        y44_s = sp.Ynm(4, 4, th, ph).expand(func=True)
-        y4m4_s = sp.Ynm(4, -4, th, ph).expand(func=True)
-        k4_s = y40_s + sp.sqrt(sp.Rational(5, 14)) * (y44_s + y4m4_s)
-        rhs_s = sp.Rational(3, 5) + (4 * sp.sqrt(sp.pi) / 15) * k4_s
-        residual = sp.trigsimp(sp.simplify((f_s - rhs_s).rewrite(sp.cos)))
-        _check(
-            "Sympy: trigsimp(sum_i n_i^4 - [3/5 + (4*sqrt(pi)/15) K_4]) = 0 identically",
-            residual == 0,
-            f"symbolic residual = {residual}",
+def sphere_inner(
+    left: sp.Expr,
+    right: sp.Expr,
+    theta: sp.Symbol,
+    phi: sp.Symbol,
+) -> sp.Expr:
+    return sp.simplify(
+        sp.integrate(
+            sp.integrate(left * sp.conjugate(right) * sp.sin(theta), (phi, 0, 2 * sp.pi)),
+            (theta, 0, sp.pi),
         )
-
-        def _inner(a, b):
-            integrand = a * sp.conjugate(b) * sp.sin(th)
-            return sp.integrate(
-                sp.integrate(integrand, (ph, 0, 2 * sp.pi)), (th, 0, sp.pi)
-            )
-
-        coef_sym = sp.simplify(_inner(f_s, k4_s) / _inner(k4_s, k4_s))
-        _check(
-            "Sympy: <f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15 (exact spherical projection)",
-            sp.simplify(coef_sym - 4 * sp.sqrt(sp.pi) / 15) == 0,
-            f"projected coefficient = {coef_sym}",
-        )
-    except ImportError:
-        print("  [skip] sympy not available -- symbolic identity check skipped")
-        print("         (numeric pointwise check above already pins coef = 4*sqrt(pi)/15)")
-
-    verdict = "PASS" if n_fail == 0 else "FAIL"
-    print(f"\n  CUBIC-HARMONIC IDENTITY VERIFICATION: {verdict} "
-          f"({n_pass}/{n_pass + n_fail} checks)")
-    return n_fail == 0
+    )
 
 
-# ============================================================
-# Main experiment
-# ============================================================
+def verify_normalized_harmonic() -> bool:
+    """Derive the normalized K_4 projection and pointwise identity exactly."""
+    before = FAIL_COUNT
+    section("C. Normalized cubic-harmonic projection")
 
-def run_experiment():
-    t0 = time.time()
+    theta, phi = sp.symbols("theta phi", real=True)
+    cosine = sp.cos(theta)
+    sine = sp.sin(theta)
+    f4 = sine**4 * (sp.cos(phi) ** 4 + sp.sin(phi) ** 4) + cosine**4
 
-    print("=" * 78)
-    print("FIXED-ACTION CUBIC-ANISOTROPY DIAGNOSTIC")
-    print("Conditional SME-style scale parameterization")
+    # This is exactly Y_40 + sqrt(5/14)(Y_44 + Y_4,-4) in the normalized
+    # Condon-Shortley complex basis. The combination is real.
+    k4 = (
+        3 * (35 * cosine**4 - 30 * cosine**2 + 3)
+        + 15 * sine**4 * sp.cos(4 * phi)
+    ) / (16 * sp.sqrt(sp.pi))
+    coefficient = 4 * sp.sqrt(sp.pi) / 15
+    pointwise_residual = sp.trigsimp(sp.expand_trig(f4 - sp.Rational(3, 5) - coefficient * k4))
+    pointwise_residual = sp.simplify(pointwise_residual)
+
+    check(
+        "normalized harmonic identity holds pointwise",
+        pointwise_residual == 0,
+        "trigsimp(sum_i n_i^4 - 3/5 - (4*sqrt(pi)/15)K_4)="
+        f"{pointwise_residual}",
+    )
+
+    norm = sphere_inner(k4, k4, theta, phi)
+    overlap = sphere_inner(f4, k4, theta, phi)
+    projection = sp.simplify(overlap / norm)
+    check(
+        "exact normalized projection is 4*sqrt(pi)/15",
+        norm == sp.Rational(12, 7)
+        and overlap == 16 * sp.sqrt(sp.pi) / 35
+        and sp.simplify(projection - coefficient) == 0,
+        f"<K_4|K_4>={norm}, <f|K_4>={overlap}, ratio={projection}",
+    )
+
+    old_residual = sp.simplify(
+        (sp.Rational(4, 5) - coefficient) * k4.subs({theta: 0, phi: 0})
+    )
+    check(
+        "discarded coefficient 4/5 fails in the normalized convention",
+        old_residual != 0,
+        f"axis residual(old-correct)={old_residual}",
+    )
+
+    axis = sp.simplify(f4.subs({theta: 0, phi: 0}))
+    diagonal_theta = sp.acos(1 / sp.sqrt(3))
+    diagonal = sp.simplify(f4.subs({theta: diagonal_theta, phi: sp.pi / 4}))
+    check(
+        "directional anisotropy is exactly a factor of three",
+        axis == 1 and diagonal == sp.Rational(1, 3) and axis / diagonal == 3,
+        f"f4([100])={axis}, f4([111])={diagonal}, ratio={axis / diagonal}",
+    )
+    return FAIL_COUNT == before
+
+
+def verify_unit_conversion() -> bool:
+    """Recheck the scale-reference illustration with an explicit unit map."""
+    before = FAIL_COUNT
+    section("D. Approved scale-reference unit conversion")
+
+    # Since 1 GeV^-1 = hbar*c = 1.973269804e-16 m, divide a length in metres
+    # by hbar*c to express it in GeV^-1.
+    spacing_gev_inverse = PLANCK_LENGTH_M / HBAR_C_GEV_M
+    reciprocal_energy = 1.0 / spacing_gev_inverse
+    coefficient_gev_inverse2 = spacing_gev_inverse**2 / 12.0
+    coefficient_from_energy = 1.0 / (12.0 * PLANCK_ENERGY_GEV**2)
+    relative_reciprocal_error = abs(reciprocal_energy / PLANCK_ENERGY_GEV - 1.0)
+    relative_coefficient_error = abs(coefficient_gev_inverse2 / coefficient_from_energy - 1.0)
+
+    check(
+        "metres to GeV^-1 conversion reproduces the Planck energy reciprocal",
+        relative_reciprocal_error < 2.0e-6,
+        "a=%.10e GeV^-1, 1/a=%.10e GeV, relative difference=%.3e"
+        % (spacing_gev_inverse, reciprocal_energy, relative_reciprocal_error),
+    )
+    check(
+        "a^2/12 gives the one-GeV fractional scale 5.6e-40",
+        relative_coefficient_error < 4.0e-6
+        and math.isclose(coefficient_gev_inverse2, 5.6e-40, rel_tol=2.0e-3),
+        "a^2/12=%.10e GeV^-2; 1/(12 E_Pl^2)=%.10e GeV^-2; relative difference=%.3e"
+        % (coefficient_gev_inverse2, coefficient_from_energy, relative_coefficient_error),
+    )
+    return FAIL_COUNT == before
+
+
+def main() -> int:
+    print("FIXED-ACTION CUBIC-ANISOTROPY CERTIFICATE")
+    print("Conditional algebra for the supplied symbol; no physical Lorentz/CPT/SME claim")
     print("=" * 78)
 
-    oh_action_ok = verify_full_o_h_action()
-
-    # ── Section 1: Lattice dispersion relation ────────────────────
-    print(f"\n{'=' * 78}")
-    print("1. LATTICE DISPERSION RELATION")
-    print(f"{'=' * 78}")
-
-    print("""
-  On a cubic lattice with spacing a, the dispersion relation is:
-
-    E^2 = m^2 + sum_i (4/a^2) sin^2(p_i a/2)
-
-  (Standard second-order finite-difference Laplacian eigenvalue;
-  see LORENTZ_VIOLATION_DERIVED_NOTE.md Step 2.)
-
-  Taylor expanding for p_i a << 1:
-
-    sin^2(p_i a/2) = (p_i a/2)^2 - (p_i a/2)^4/3 + (p_i a/2)^6*2/45 - ...
-
-    (4/a^2) sin^2(p_i a/2) = p_i^2 - a^2 p_i^4/12 + a^4 p_i^6/360 - ...
-
-  Therefore:
-    E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + (a^4/360) sum_i p_i^6 - ...
-                       ^^^^^^^^^^^^^^^^^^^^^^^^
-                       FINITE-a CUBIC-ANISOTROPY TERM
-
-  The p_i^4 term is spatially anisotropic with cubic symmetry O_h.
-  Its coefficient is a^2/12 for this supplied kinetic symbol. This runner
-  does not derive the symbol, spacing, or a full spacetime representation.
-""")
-
-    # Numerical verification of the expansion
-    a_test = 0.1  # lattice spacing in arbitrary units
-    p_test = np.linspace(0, 0.5 / a_test, 200)
-    m_test = 0.1
-
-    E2_lattice = np.array([
-        m_test**2 + (4.0/a_test**2) * math.sin(p * a_test / 2)**2
-        for p in p_test
-    ])
-    E2_continuum = m_test**2 + p_test**2
-    E2_corrected = m_test**2 + p_test**2 - (a_test**2 / 12.0) * p_test**4
-    E2_order6 = (m_test**2 + p_test**2 - (a_test**2 / 12.0) * p_test**4
-                 + (a_test**4 / 360.0) * p_test**6)
-
-    # Check at p*a = 0.5 (moderately low momentum)
-    idx_check = len(p_test) // 4
-    p_c = p_test[idx_check]
-    pa = p_c * a_test
-    print(f"  Numerical verification (1D, a={a_test}, m={m_test}):")
-    print(f"    At p*a = {pa:.4f}:")
-    print(f"      E^2 (exact lattice) = {E2_lattice[idx_check]:.10f}")
-    print(f"      E^2 (continuum)     = {E2_continuum[idx_check]:.10f}")
-    print(f"      E^2 (p^4 corrected) = {E2_corrected[idx_check]:.10f}")
-    print(f"      E^2 (p^6 corrected) = {E2_order6[idx_check]:.10f}")
-    print(f"      Residual (lattice - p^4): "
-          f"{abs(E2_lattice[idx_check] - E2_corrected[idx_check]):.4e}")
-    print(f"      Residual (lattice - p^6): "
-          f"{abs(E2_lattice[idx_check] - E2_order6[idx_check]):.4e}")
-
-    # ── Section 2: SME coefficient mapping ────────────────────────
-    print(f"\n{'=' * 78}")
-    print("2. CONDITIONAL SME-STYLE COEFFICIENT PARAMETERIZATION")
-    print(f"{'=' * 78}")
-
-    print("""
-  The fixed-action finite-a correction decomposes in NORMALIZED real spherical
-  harmonics Y_lm (scipy.special.sph_harm / sympy.Ynm convention):
-
-    sum_i p_i^4 = p^4 * [3/5 + (4*sqrt(pi)/15) * K_4(theta, phi)]
-
-  where K_4 is the cubic harmonic of order 4:
-    K_4 = Y_{40} + sqrt(5/14) (Y_{44} + Y_{4,-4})
-
-  The coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727 with normalized Y_lm,
-  NOT 4/5 (corrected 2026-05-29; verify_cubic_harmonic_identity() pins it).
-
-  If a compatible carrier and sector matching are supplied, an SME-style
-  parameterization would assign:
-  - The correction is a dimension-6 operator (d=6, n=4 in p)
-  - An even-in-momentum contribution in the c-type coefficient basis
-  - No full-action CPT classification (see Section 5 below)
-  - The nonminimal SME coefficients are:
-
-    c^(6)_{(I)00}   = -(a^2/12)(3/5) / sqrt(4 pi)        [isotropic, j=0]
-    c^(6)_{(I)40}   = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=0]
-    c^(6)_{(I)44}   = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=4]
-    c^(6)_{(I)4,-4} = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=-4]
-
-  The selected scalar symbol has no j=1,2,3 component. This does not set
-  independent coefficients of a complete action to zero.
-""")
-
-    a_planck = L_PLANCK  # meters
-    sme = compute_sme_coefficients(a_planck)
-
-    print(f"  For a = l_Planck = {a_planck:.4e} m:")
-    print(f"    a in natural units:    {sme['a_natural_units']:.4e} GeV^-1")
-    print(f"    c4 coefficient (a^2/12): {sme['c4_coefficient']:.4e} GeV^-2")
-    print(f"    c^(6) isotropic (j=0): {sme['c6_iso_j0']:.4e} GeV^-2")
-    print(f"    c^(6) aniso (j=4,m=0): {sme['c6_aniso_j4_m0']:.4e} GeV^-2")
-
-    print(f"\n  Dimensionless mass-normalized coefficients (c^(6) * m^2):")
-    print(f"    Electron: c^(6) * m_e^2 = {sme['electron_c6']:.4e}")
-    print(f"    Proton:   c^(6) * m_p^2 = {sme['proton_c6']:.4e}")
-    print(f"    Photon:   c^(6) coefficient = {sme['photon_c6']:.4e} GeV^-2")
-
-    # ── Section 2b: Cubic-harmonic identity verification ──────────
-    # Pin the angular decomposition coefficient (normalized Y_lm): the
-    # l=4 cubic-harmonic coefficient is 4*sqrt(pi)/15, not 4/5.
-    identity_ok = verify_cubic_harmonic_identity()
-
-    # ── Section 3: coefficient scale only ─────────────────────────
-    print(f"\n{'=' * 78}")
-    print("3. CONDITIONAL COEFFICIENT SCALE (NO EXPERIMENTAL MATCH)")
-    print(f"{'=' * 78}")
-
-    print(f"\n  Natural suppression at E = 1 GeV:")
-    E_test = 1.0  # GeV
-    suppression = compute_suppression_factor(E_test, E_PLANCK_GEV)
-    print(f"    (E/E_Planck)^2 = ({E_test} / {E_PLANCK_GEV:.4e})^2 "
-          f"= {suppression:.4e}")
-
-    print(f"\n  Conditional p^4 coefficient when a = l_Planck is supplied:")
-    print(f"    a^2/12 = ({a_planck:.4e} m)^2 / 12")
-    a_nat = a_planck * GEV_TO_INVMETER
-    c4_pred = a_nat**2 / 12.0
-    print(f"           = {c4_pred:.4e} GeV^-2")
-    print(f"           = {c4_pred * E_PLANCK_GEV**2:.4e} (in E_Planck^-2 units)")
-
-    print("""
-  No experimental bound is divided into this coefficient. Published constraint
-  catalogs mix sectors, operator dimensions, and observable responses;
-  none supplies the sector-specific response map needed for a valid match.
-  The numbers in this section are therefore internal scales of the selected
-  symbol only.
-""")
-
-    # ── Section 4: Staggered fermion taste-breaking ───────────────
-    print(f"\n{'=' * 78}")
-    print("4. STAGGERED FERMION TASTE-BREAKING CONTRIBUTIONS")
-    print(f"{'=' * 78}")
-
-    print("""
-  Staggered fermions on a cubic lattice have 2^d degenerate tastes.
-  Taste symmetry is broken at O(a^2), introducing an ADDITIONAL imported
-  finite-a illustration beyond the naive lattice dispersion.
-
-  The taste-dependent correction has the form:
-    delta(E^2)_taste = a^2 * C_taste * p^4
-
-  where C_taste depends on the taste representation. The total illustrative
-  finite-a coefficient
-  for each taste is:
-    (a^2/12)(1 + C_taste) * sum_i p_i^4
-
-  Enhancement factors by taste (from lattice QCD):
-""")
-
-    taste_results = staggered_taste_breaking(a_nat)
-
-    print(f"  {'Taste':<18} {'C_taste':<10} {'Enhancement':<14} "
-          f"{'Total c^(6) (GeV^-2)':<22}")
-    print(f"  {'─'*18} {'─'*10} {'─'*14} {'─'*22}")
-
-    for taste, data in taste_results.items():
-        print(f"  {taste:<18} {data['taste_factor']:<10.1f} "
-              f"{data['enhancement_ratio']:<14.1f} "
-              f"{data['total_c4']:<22.4e}")
-
-    print(f"""
-  These imported taste factors illustrate sensitivity of the selected model
-  calculation only. The runner does not derive them for this framework or
-  identify tastes with physical fermion species, so it makes no
-  flavor-dependent Lorentz-violation prediction.
-""")
-
-    # ── Section 5: discrete-symmetry scope ────────────────────────
-    print(f"\n{'=' * 78}")
-    print("5. DISCRETE-SYMMETRY SCOPE")
-    print(f"{'=' * 78}")
-
-    symmetry_scope = discrete_symmetry_scope()
-
-    print(f"""
-  Verified here: the selected scalar kinetic symbol is even in momentum.
-
-  Not supplied or verified here: a complete matter action and explicit C, T,
-  or CPT operators. Therefore no exact-CPT theorem follows and no CPT-odd SME
-  coefficient is fixed to zero by this calculation.
-
-  {symmetry_scope['scope']}
-""")
-
-    # ── Section 6: conditional propagation diagnostic ─────────────
-    print(f"\n{'=' * 78}")
-    print("6. CONDITIONAL PROPAGATION DIAGNOSTIC")
-    print(f"{'=' * 78}")
-
-    print(f"""
-  For a massless relativistic carrier governed by the supplied kinetic symbol,
-  the leading finite-a anisotropy is governed by K_4(theta, phi). Neither that
-  carrier identification nor a = l_Planck is derived here.
-
-  1. DIRECTION-DEPENDENT GROUP VELOCITY
-
-     For a massless mode governed by the supplied scalar symbol:
-       E/p = 1 - (a^2/24) p^2 * f_4(theta, phi) + O(a^4 p^4)
-       v_g   = 1 - (a^2/8) p^2 * f_4(theta, phi) + O(a^4 p^4)
-
-     where f_4 = sin^4(theta)cos^4(phi) + sin^4(theta)sin^4(phi)
-                 + cos^4(theta)
-
-     The speed varies with direction by:
-       delta_v_g ~ (a^2/8) * p^2 * (f_4_max - f_4_min)
-                 = (a^2/8) * p^2 * (1 - 1/3)
-                 = (a^2/12) * p^2
-
-     For the supplied comparison values a = l_Planck and p = 10 GeV:
-""")
-
-    p_fermi = 10.0  # GeV
-    a_nat_planck = L_PLANCK * GEV_TO_INVMETER
-    aniso_correction = (a_nat_planck**2 / 12.0) * p_fermi**2
-    print(f"       delta_v_g = (a^2/12) * p^2")
-    print(f"                 = ({a_nat_planck:.4e})^2 / 12 * ({p_fermi})^2")
-    print(f"                 = {aniso_correction:.4e}")
-
-    print(f"""
-     This is {aniso_correction:.1e}, approximately 10^-38.
-
-  2. INTERPRETATION LIMIT
-
-     The dimensionless factor (E/E_Planck)^2 cannot be compared directly with
-     a dimensionful SME coefficient bound, and unrelated SME sectors cannot be
-     compared by relabeling units. This runner therefore makes no exclusion,
-     margin, or energy-reach estimate. A valid comparison requires a specified
-     carrier, observable, sector convention, and dimensionally matched response
-     map.
-""")
-
-    # ── Section 7: Summary table ──────────────────────────────────
-    print(f"\n{'=' * 78}")
-    print("7. CONDITIONAL SCALE TABLE")
-    print(f"{'=' * 78}")
-
-    energies = [1e-3, 1e-1, 1.0, 10.0, 100.0, 1e3, 1e4, 1e7, 1e10]
-
-    print(f"\n  Lattice: a = l_Planck = {L_PLANCK:.4e} m")
-    print(f"  Leading finite-a coefficient: a^2/12 = {c4_pred:.4e} GeV^-2\n")
-
-    print(f"  {'E (GeV)':<12} {'(E/E_Pl)^2':<14} {'axis |delta E^2/E^2|':<24} "
-          f"{'axis |delta v_g|':<18}")
-    print(f"  {'─'*12} {'─'*14} {'─'*24} {'─'*18}")
-
-    for E in energies:
-        supp = compute_suppression_factor(E, E_PLANCK_GEV)
-        delta_E2 = c4_pred * E**2  # fractional correction to E^2
-        delta_v = 1.5 * delta_E2  # axis group-velocity correction magnitude
-
-        print(f"  {E:<12.1e} {supp:<14.2e} {delta_E2:<24.2e} "
-              f"{delta_v:<18.2e}")
-
-    # ── Section 8: Direction dependence (anisotropy) ──────────────
-    print(f"\n{'=' * 78}")
-    print("8. DIRECTIONAL ANISOTROPY (CUBIC LATTICE FINGERPRINT)")
-    print(f"{'=' * 78}")
-
-    print(f"\n  The cubic symmetry creates direction-dependent propagation.")
-    print(f"  f_4(theta, phi) = sum_i (n_i)^4 for unit vector n.\n")
-
-    directions = {
-        "axis [100]":     (0.0, 0.0),
-        "face diag [110]": (math.pi/4, 0.0),
-        "body diag [111]": (math.acos(1/math.sqrt(3)), math.pi/4),
-    }
-
-    print(f"  {'Direction':<20} {'theta':<10} {'phi':<10} "
-          f"{'f_4':<10} {'deviation from 3/5'}")
-    print(f"  {'─'*20} {'─'*10} {'─'*10} {'─'*10} {'─'*20}")
-
-    for name, (theta, phi) in directions.items():
-        sx = math.sin(theta) * math.cos(phi)
-        sy = math.sin(theta) * math.sin(phi)
-        sz = math.cos(theta)
-        f4 = sx**4 + sy**4 + sz**4
-        dev = f4 - 3.0/5.0
-        print(f"  {name:<20} {theta:<10.4f} {phi:<10.4f} "
-              f"{f4:<10.4f} {dev:+.4f}")
-
-    print(f"""
-  The ratio f_4(axis) / f_4(diagonal) = {1.0 / (1.0/3.0):.1f}
-
-  The factor-of-3 anisotropy is an exact property of this selected cubic
-  momentum symbol. It is not a unique microscopic fingerprint: other models
-  with the same cubic symmetry can share the angular pattern.
-""")
-
-    # ── Section 9: Hypothesis verdict ─────────────────────────────
-    print(f"\n{'=' * 78}")
-    print("SCOPE VERDICT")
-    print(f"{'=' * 78}")
-
-    print(f"""
-  VERIFIED FOR THE SUPPLIED FIXED-ACTION MODEL:
-
-  1. Spatial finite-a anisotropy
-     - The selected momentum symbol has cubic group O_h
-     - Leading correction: -(a^2/12) sum_i p_i^4
-     - Dimension-6 p^4 term in the conditional parameterization
-
-  2. CPT
-     - Not established: the complete action and C/P/T operators are absent
-     - No CPT-odd coefficient is fixed by this runner
-
-  3. Conditional coefficient values if a = l_Planck and matching is supplied:
-     - c^(6)_{{(I)00}} ~ {sme['c6_iso_j0']:.2e} GeV^-2 (isotropic)
-     - c^(6)_{{(I)40}} ~ {sme['c6_aniso_j4_m0']:.2e} GeV^-2 (anisotropic)
-
-  4. Natural suppression:
-     - (E/E_Planck)^2 ~ 10^-38 at E = 1 GeV
-     - Historical scale comparison only; no experimental verdict
-
-  5. Staggered fermion taste-breaking:
-     - Changes the imported finite-a illustration by factor 2-4 by taste channel
-     - Imported illustration; no physical flavor identification established
-     - No experimental comparison is made without a sector response map
-
-  6. Characteristic angular signature:
-     - Cubic harmonics (j=4 with m=0, +4, -4)
-     - Factor of 3 anisotropy between lattice axis and body diagonal
-     - Shared by models with the same cubic symmetry; not unique
-
-  BOTTOM LINE:
-    This runner validates the selected symbol's O_h action, Taylor expansion,
-    and cubic-harmonic identity. It does not establish physical Lorentz
-    violation or promote the calculation to a four-axiom, framework-native
-    selection, CPT, SME-matching, or experimental-consistency result.
-""")
-
-    elapsed = time.time() - t0
-    print(f"  Elapsed: {elapsed:.1f} s")
-    print(f"\n{'=' * 78}")
-    print("EXPERIMENT COMPLETE")
-    print(f"  Full O_h action certificate: "
-          f"{'PASS' if oh_action_ok else 'FAIL'}")
-    print(f"  Cubic-harmonic identity check: "
-          f"{'PASS' if identity_ok else 'FAIL'}")
-    print(f"{'=' * 78}")
-
-    return oh_action_ok and identity_ok
+    gates: tuple[tuple[str, Callable[[], bool]], ...] = (
+        ("Full O_h action certificate", verify_o_h),
+        ("Taylor coefficient check", verify_taylor_coefficient),
+        ("Cubic-harmonic identity check", verify_normalized_harmonic),
+        ("Unit conversion check", verify_unit_conversion),
+    )
+    results = [(name, gate()) for name, gate in gates]
+
+    section("Scope boundary")
+    print("Verified only for K_a(p)=sum_i (4/a^2) sin^2(a p_i/2).")
+    print("Not derived: action selection, carrier/continuum meaning, CPT, SME response,")
+    print("or experimental consistency. The scale reference is a units primitive only.")
+
+    section("EXPERIMENT COMPLETE")
+    for name, passed in results:
+        print(f"{name}: {'PASS' if passed else 'FAIL'}")
+    print(f"Executed assertions: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print("CLAIM_BOUNDARY=conditional_algebraic_diagnostic_for_supplied_symbol")
+
+    return 0 if FAIL_COUNT == 0 and all(passed for _, passed in results) else 1
 
 
 if __name__ == "__main__":
-    ok = run_experiment()
-    sys.exit(0 if ok else 1)
+    raise SystemExit(main())

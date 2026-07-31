@@ -17,14 +17,16 @@ This note checks one selected model surface:
   a cubic lattice;
 - a separately supplied spacing `a`;
 - a relativistic-dispersion interpretation of that symbol; and
-- for the numerical scale illustration only, the external identification
-  `a = l_Planck`.
+- for the numerical scale illustration only, the approved
+  [scale-reference units primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+  `a^{-1} = M_Pl`.
 
-The four axioms do not select that action or kinetic symbol, do not identify
-the lattice spacing with the Planck length, and do not establish the charge
-conjugation, parity, time-reversal, carrier, or SME-sector assumptions needed
-for a physical CPT or phenomenology claim. The exact-CPT source previously
-used by this lane is not used by this theorem.
+The four axioms do not select that action or kinetic symbol and do not
+establish the charge conjugation, parity, time-reversal, carrier, or SME-sector
+assumptions needed for a physical CPT or phenomenology claim. The exact-CPT
+source previously used by this lane is not used by this theorem. The
+registered scale-reference primitive supplies a ruler only: it does not derive
+`a/l_P = 1` as physics or supply any dimensionless dynamics.
 
 ## Derivation chain
 
@@ -47,7 +49,7 @@ checks both the supplied nearest-neighbor kinetic symbol
     K_a(p) = sum_i (4/a^2) sin^2(p_i a / 2)
 
 and `sum_i n_i^4` on generic unequal components, axis/diagonal directions,
-near-zero components, and momenta near Brillouin-zone faces. Both are
+and momenta near Brillouin-zone faces. Both are
 invariant under all `48` actions. As a negative control, the proper rotation
 `R_z(pi/7)`, which is not a signed permutation and hence is outside `O_h`,
 changes `K_a(p)` for the fixed hostile momentum used by the runner while
@@ -73,27 +75,31 @@ Summing over i = 1,2,3 gives the modified dispersion relation
 The leading correction is a dimension-6 operator (p^4 with a^2 coefficient).
 No odd power appears in this particular Taylor series because the selected
 symbol is even in momentum. That algebraic fact does not establish parity or
-CPT for a complete matter action. Numerically, the `O(p^4)` expansion matches
-the exact selected symbol to < 0.02% for `pa < 0.5`, and the coefficient
-`a^2/12` is confirmed to six significant figures.
+CPT for a complete matter action. The runner asks Sympy for the series of the
+supplied sine symbol and asserts the exact coefficients `1`, `-a^2/12`, and
+`a^4/360`; a separate fixed numerical sample confirms that the `p^6`
+truncation residual is smaller than the `p^4` residual.
 
 ### Step 3 -- conditional Planck-scale illustration
 
-If one separately sets `a = l_Planck` and uses `a = 1/E_Planck` in natural
-units, then:
+Using the approved units reference `a^{-1} = M_Pl` and
+`1 GeV^{-1} = hbar c = 1.973269804 x 10^{-16} m`, one obtains
+`a = 8.1907451111 x 10^{-20} GeV^{-1}` and
+`1/a = 1.2208901467 x 10^19 GeV`. Therefore:
 
     |delta E^2| / E^2 ~ (1/12)(E / E_Planck)^2
 
-At `E = 1 GeV` this gives `5.6 x 10^{-40}`. This is a scale illustration for
-the supplied identification, not a framework prediction. The quadratic
-suppression follows from the selected even finite-difference symbol.
+At `E = 1 GeV` this gives `a^2/12 = 5.5906921229 x 10^{-40} GeV^{-2}`,
+or `5.6 x 10^{-40}` to two significant figures. This is a units illustration,
+not a framework prediction. The quadratic suppression follows from the
+selected even finite-difference symbol.
 
 ### Step 4 -- Angular structure: the cubic harmonic fingerprint
 
 The operator sum_i n_i^4 (for unit vector n) decomposes, in the basis of
 the STANDARD NORMALIZED real spherical harmonics Y_lm (orthonormal over
-the unit sphere, Condon-Shortley convention -- the same convention as
-scipy.special.sph_harm / sympy.Ynm used by the runner), as:
+the unit sphere, Condon-Shortley convention). The runner implements the
+corresponding closed normalized expression and exact sphere projection:
 
     sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4(theta, phi)
 
@@ -105,9 +111,9 @@ Convention note (normalization correction, 2026-05-29). With *normalized*
 Y_lm the coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727, NOT 4/5. An earlier
 revision of this note wrote 4/5; that value is only correct for an
 unnormalized angular convention and is inconsistent with the normalized
-K_4 above and with the runner's sph_harm projection. The identity is fixed
-here to the normalized convention so that note and runner agree. The
-isotropic part 3/5, the factor-of-3 anisotropy, and the l = 0/2/6-free
+K_4 above and with the runner's exact normalized projection. The identity is
+fixed here to the normalized convention so that note and runner agree. The
+isotropic part 3/5, the factor-of-3 anisotropy, and the `l = 2,6`-free
 structure are unchanged by this correction; only the numerical weight on
 the l = 4 anisotropy operator is corrected.
 
@@ -121,31 +127,18 @@ projections are l = 0 and l = 4:
   K_4 are orthonormal, with coefficients 1, sqrt(5/14), sqrt(5/14)).
 - <f | K_4> / <K_4 | K_4> = 4*sqrt(pi)/15.
 
-Reconstructing f = 3/5 + (4*sqrt(pi)/15) K_4 and simplifying gives
-trigsimp(f - rhs) = 0 identically (exact symbolic zero). A numeric
-cross-check over 2x10^5 random directions gives max|LHS - RHS| =
-7.8x10^-16 for the corrected coefficient versus 2.8x10^-1 for the old 4/5
--- confirming 4*sqrt(pi)/15 and refuting 4/5 under the normalized
-convention. The runner reproduces both the symbolic and numeric checks.
+Reconstructing `f = 3/5 + (4*sqrt(pi)/15) K_4` and simplifying gives
+`trigsimp(f - rhs) = 0` identically. The runner independently integrates the
+closed normalized expression over the sphere and asserts
 
-Verified numerically:
-- Isotropic average < f_4 > = 3/5 (to 0.002% by angular integration;
-  unchanged by the coefficient correction)
-- Exact identity sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 holds pointwise
-  to max|LHS - RHS| = 7.8e-16 over 2x10^5 random directions (old 4/5
-  refuted at 2.8e-1)
-- Only l=4 spherical harmonics contribute (l=2 and l=6 projections < 0.1% of l=4)
-- Coefficient ratio |c_{44}/c_{40}| = sqrt(5/14) to 0.2% (the relative
-  l=4 structure is unaffected by the overall normalization correction)
-- Invariant under all 48 O_h elements
-- Factor-of-3 anisotropy: f_4 = 1 along axis, f_4 = 1/3 along body diagonal
-  (pure geometry; independent of the K_4 coefficient)
+- `<K_4 | K_4> = 12/7`;
+- `<f | K_4> = 16*sqrt(pi)/35`; and
+- `<f | K_4>/<K_4 | K_4> = 4*sqrt(pi)/15`.
 
-The uniqueness of the cubic harmonic at l=4 follows from representation
-theory: the trivial representation A_{1g} of O_h appears exactly once in
-the decomposition of the l=4 representation of SO(3).  The C_4 rotation
-constrains m mod 4 = 0, and the C_3 rotation about [111] fixes the
-relative coefficient to sqrt(5/14).
+It also evaluates the discarded `4/5` coefficient on the `[100]` axis and
+asserts a nonzero residual. The same executed certificate verifies invariance
+under all 48 O_h elements and the exact directional values `f_4([100]) = 1`
+and `f_4([111]) = 1/3`.
 
 ### Step 5 -- what the calculation does not establish
 
@@ -157,25 +150,18 @@ zero. Any such conclusion requires a separately specified complete action,
 symmetry operators, their domains, and an audit-clean proof.
 
 The physical selection bridge remains open: nothing here derives the supplied
-nearest-neighbor kinetic operator, a relativistic carrier interpretation, the
-spacing `a`, the illustrative identification `a = l_Planck`, a framework-
-native choice of this carrier/action, or an SME sector response map. The
+nearest-neighbor kinetic operator, a relativistic carrier interpretation, a
+framework-native choice of this carrier/action, or an SME sector response map.
+The registered scale-reference primitive supplies only the units ruler. The
 finite-group certificate therefore does not by itself establish physical
 Lorentz violation.
 
 ## Experimental status
 
-| Experiment | Quoted bound | Conditional value at `a = l_Planck` | Ratio | Role |
-|---|---|---|---|---|
-| Photon birefringence (GRB) | 10^{-32} GeV^{-2} | 5.6 x 10^{-40} GeV^{-2} | 5.6 x 10^{-8} | illustrative comparison only |
-| Fermi LAT dispersion | 2.5 x 10^{-22} GeV^{-2} | 5.6 x 10^{-40} GeV^{-2} | 2.2 x 10^{-18} | illustrative comparison only |
-| Hughes-Drever (electron) | 10^{-27} | 1.5 x 10^{-46} | 1.5 x 10^{-19} | illustrative comparison only |
-| Atomic clocks (proton) | 10^{-27} | 4.9 x 10^{-40} | 4.9 x 10^{-13} | illustrative comparison only |
-
-These rows are retained only as historical numerical diagnostics. The runner
-does not validate the quoted experimental inputs, the sector-by-sector SME
-matching, or the physical identification of the selected lattice excitation
-with the listed probes.
+No experimental-consistency claim is made. Comparator rows from earlier
+revisions are omitted because this packet supplies neither a sector-by-sector
+SME response map nor a physical identification of the selected lattice
+excitation with an experimental probe.
 
 ## Interpretation boundary
 
@@ -184,6 +170,112 @@ symbol: its `p_i^4` Taylor term, normalized `l=4` cubic-harmonic decomposition,
 and factor-of-three `[100]`/`[111]` angular ratio. It does not uniquely identify
 an underlying microscopic theory, distinguish this framework from all other
 models, or support a CPT or experimental-consistency verdict.
+
+## No-Go Discipline gate for the named boundary
+
+The boundary above is a statement about what this packet contains, not a
+theorem that physical Lorentz restoration, CPT, SME matching, or experimental
+comparison is impossible. The current `origin/main` No-Go Discipline gate was
+applied because this is a bounded theorem with named open conditions.
+
+### N1 — normalized alternative routes
+
+The route families below differ in primary object, load-bearing mechanism, and
+terminal obligation; they are not multiple descriptions of one approach.
+
+| family | attempted route and terminal obligation | current-cycle result |
+|---|---|---|
+| microscopic action selection | Derive the nearest-neighbor symbol from the four-axiom source and prove it is the physically selected kinetic action. | `ATTEMPTED`: the exhaustive premise source `docs/MINIMAL_AXIOMS_2026-06-29.md` explicitly supplies no source/action bridge, so the route is absent from this packet rather than ruled out. |
+| continuum/RG restoration | Embed the cubic regulator in an interacting flow and prove that all boost-breaking operators are irrelevant or attracted to a Lorentz-invariant surface. | `ATTEMPTED`: `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` grants only `c_t=c_s` and explicitly does not grant dynamics, radiative stability, or a Lorentz-closure theorem. |
+| carrier and OS reconstruction | Construct the physical Lorentzian carrier from a reflection-positive Euclidean theory and prove how the finite-lattice symbol enters its dispersion relation. | `ATTEMPTED`: neither the supplied symbol nor the units primitive contains that reconstruction; the terminal carrier theorem remains outside the declared inputs. |
+| SME response map | Match the computed cubic operator into a specified field/action sector and derive the corresponding SME coefficient tensor. | `ATTEMPTED`: the runner deliberately has no matter/gauge action or sector map, so its scalar momentum identity cannot authenticate that matching. |
+| operational comparison | Identify a record-readable probe, transport the sector response to it, and compare a predicted observable with data. | `ATTEMPTED`: the minimal premise source supplies no physical observable or measurement-response bridge, and the runner contains no experimental comparator. |
+| alternate kinetic stencil | Replace the nearest-neighbor Laplacian by an improved stencil that cancels the `O(a^2 p^4)` term and re-run the anisotropy calculation. | `ATTEMPTED`: this route succeeds as a counterexample to universality, because changing the supplied symbol can change the leading correction; it therefore enforces the present fixed-action scope. |
+
+The six families support only the narrow disposition: the four executed
+algebraic consequences close for the supplied symbol, while broader physical
+interpretations remain possible future routes.
+
+### N2 — wall independence and collapse
+
+The raw wording names action selection, carrier/continuum interpretation, and
+SME/experimental response. They are stages of one ordered physical
+identification chain, not three independent obstructions:
+
+| pair | first closes second? | second closes first? | disposition |
+|---|:---:|:---:|---|
+| action selection / carrier reconstruction | no | yes, a complete physical carrier theorem identifies the action it carries | collapse |
+| carrier reconstruction / SME-response map | no | yes, a complete response map includes its carrier/domain identification | collapse |
+| action selection / operational comparison | no | yes, a complete prediction-to-record comparison includes the selected model and response chain | collapse |
+
+The collapsed set is the single chain `W_phys`: select a complete action and
+carrier, reconstruct its physical domain, and derive a sector-to-record
+response. The approved scale-reference primitive is not part of `W_phys`; it
+chain-satisfies the units conversion and supplies no dimensionless dynamics.
+
+### N3 — hidden-condition scan
+
+The phrases `registered`, `standard`, and `canonical` occur on this surface.
+`registered scale-reference primitive` refers to the approved entry in
+`docs/audit/data/axiom_premise_nodes.json` and is units-only. `standard
+normalized` and `canonical expansion` declare conventions that the runner
+checks symbolically; they are not physics inputs. No hit for `we assume`, `by
+construction`, `as is standard`, `the framework provides`, `bridge context`,
+`background`, `naturally`, `obviously`, or `standard QFT` hides another
+load-bearing condition. The supplied symbol, spacing, and interpretation are
+already explicit at the top of the note.
+
+### N4 — residual matching
+
+No prior no-go, failed campaign, or wall is used as a witness for the fixed-
+action algebraic theorem. The minimal-axiom and primitive sources above are
+premise-boundary checks, not evidence that `W_phys` is impossible. Required
+witness count is therefore zero, and no nonmatching residual is imported.
+
+### N5 — rhetoric resolutions
+
+The runner tests a per-momentum symbol, the complete 48-element cubic group,
+the normalized angular block, and the full three-component finite symbol. It
+does not test a site-local matter action, a physical mode, an interacting
+field block, or a lattice-wide Lorentzian observable. Accordingly the note
+says only that those physical results are *not established by this packet*;
+it does not infer that they fail at any untested resolution.
+
+### N6 — partial-closure paths
+
+Three legitimate import-retirement paths remain open without silently adding
+a new axiom: (1) supply an explicit complete action, prove the bounded symbol
+theorem, then independently retire the action import; (2) prove an OS/carrier
+reconstruction for that action; and (3) prove a sector and record-response map.
+The approved kinetic-isotropy primitive can close only the structural
+`c_t=c_s` input, while the approved scale primitive closes only units. Neither
+is mislabeled as a wall or allowed to supply the remaining dynamics.
+
+### N7 — steelman
+
+A hostile reviewer can replace the nearest-neighbor operator by an
+`O(a^2)`-improved stencil whose Taylor coefficient cancels, then embed that
+action in a reflection-positive interacting theory with an RG-attractive
+Lorentz surface and an explicit SME response map. The actionable obligations
+are to prove selection of that complete action/carrier and to compute whether
+any cubic operator survives in the physical response. The kinetic-isotropy
+primitive explicitly leaves such downstream Lorentz theorems open. This route
+would defeat any universal claim of physical Lorentz violation, but it does
+not falsify the present algebra for the one supplied nearest-neighbor symbol.
+
+### N8 — cross-cycle echo
+
+Repository searches find the closest structural echoes in the staggered-
+kinetic and matter-action campaigns. One formerly open graining-ratio issue
+was retired by explicit approval of the kinetic-isotropy primitive, but that
+mechanism deliberately stopped short of dynamics and Lorentz closure. The
+same governance mechanism could approve another structural convention, while
+a retained action-selection or reconstruction theorem could retire `W_phys`.
+Both possibilities are preserved here; no cross-cycle wall is promoted to a
+universal no-go.
+
+**Gate disposition:** `PASS` for a fixed-action bounded theorem with the
+single named open chain `W_phys`; no physical impossibility claim ships.
 
 ## Relation to frontier_lorentz_violation.py
 
@@ -201,12 +293,24 @@ samples, and checks that `R_z(pi/7)` outside `O_h` changes the finite-`a`
 symbol. The group certificate and the existing cubic-harmonic identity are both
 load-bearing exit conditions, so either failure produces a nonzero exit.
 
+Restricted-packet repair (2026-07-29): the registered runner was reduced from
+an oversized historical phenomenology script to a compact, self-contained
+algebraic certificate. Its complete source is below the audit packet's
+40,000-character runner-source limit, and its exact current stdout is captured
+in the SHA-pinned runner cache linked above and is below the 20,000-character
+stdout limit. Four independent exit gates now explicitly assert the repair
+targets: the `-a^2/12` Taylor coefficient, the `4*sqrt(pi)/15` normalized
+projection, the `O_h` outside-group negative control, and the metre/GeV unit
+conversion. The final summary prints every gate and exits nonzero if any
+executed assertion fails.
+
 Audit fix (2026-05-02): a previous version of the runner used
 `(2/a^2) sin^2(pa/2)`, which is the half-normalized kinetic eigenvalue
 and is internally inconsistent with the printed Taylor expansion. The
 runner has been updated to the standard `(4/a^2)` form that matches
-this note's Step 2 and produces sub-microscopic residuals
-(`< 1.1e-6`) in the p^4 expansion check at `pa = 0.1256`.
+this note's Step 2. The compact certificate now extracts the three displayed
+coefficients exactly and separately verifies residual improvement through
+`p^6` at a fixed three-component momentum.
 
 Normalization correction (2026-05-29): a previous version of this note
 and runner wrote the cubic-harmonic decomposition with coefficient `4/5`
@@ -214,13 +318,10 @@ on `K_4 = Y_{40} + sqrt(5/14)(Y_{44} + Y_{4,-4})`. With the standard
 normalized real spherical harmonics `Y_lm` (the
 `scipy.special.sph_harm` / `sympy.Ynm` convention) the correct
 coefficient is `4*sqrt(pi)/15 ~= 0.4727` (see Step 4). The runner now
-carries this corrected identity and an explicit verification block
-(`verify_cubic_harmonic_identity()`): a numeric pointwise check over
-`2x10^5` random directions (`max|LHS - RHS| = 7.8e-16` for
-`4*sqrt(pi)/15`, the old `4/5` refuted at `2.8e-1`) plus, when `sympy`
-is importable, the symbolic `trigsimp(f - rhs) = 0` and the exact
-projection `<f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15`. This is a normalization
-correction only: the dimension-6 classification, the parity-even /
+derives the symbolic `trigsimp(f - rhs) = 0`, the exact norm and overlap,
+and the projection `<f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15` in one mandatory
+Sympy path; it separately refutes `4/5` at the `[100]` axis. This is a
+normalization correction only: the dimension-6 classification, the parity-even /
 no-odd-power conclusion, the `3/5` isotropic average, and the
 factor-of-3 `[100]`/`[111]` anisotropy are unchanged, because they
 follow from the dispersion Taylor structure and pure geometry, not from

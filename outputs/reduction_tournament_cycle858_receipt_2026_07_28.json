@@ -1,0 +1,37 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC28-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle858_reduction_independent_check_2026_07_28.txt": "PASS/FAIL certificate lines",
+    "logs/runner-cache/frontier_cycle858_reduction_tournament_2026_07_28.txt": "PASS/FAIL certificate lines"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle858_reduction_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle858_reduction_tournament_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "checker_disclosure": "checker attack logic byte-identical to v1; only pinned expectation constants re-frozen for the v2 primary; its v1-refutation labels retained by design - disclosed, not edited",
+  "claim_type": "bounded_theorem",
+  "cycle": 858,
+  "files": {
+    "docs/REDUCTION_TOURNAMENT_CYCLE858_BOUNDED_THEOREM_NOTE_2026-07-28.md": "a86eb264c13fc1f9a2152c0be2d9166c1f2ae4e84f1a108a78a5a8a418fb5209",
+    "logs/runner-cache/frontier_cycle858_reduction_independent_check_2026_07_28.txt": "a7449b69cd4750d1994ec648a7322f37bc66cfb4ce461abe7c4207665ebd2150",
+    "logs/runner-cache/frontier_cycle858_reduction_tournament_2026_07_28.txt": "cac5a989d2be51ff6774f5e1473603e1bb98c99de6c321abeb1e49949fa838ba",
+    "scripts/frontier_cycle858_reduction_independent_check_2026_07_28.py": "7dbc89540d15923ea43a1827206e6126ba3db51424be3e96cf7d75eed481e1fe",
+    "scripts/frontier_cycle858_reduction_tournament_2026_07_28.py": "36ffd41228683eba9ae6084fb5d191f4264838d0a2552c3766cb27210b5e3773"
+  },
+  "independent_audit_still_required": true,
+  "reversal": "twenty-eight: the checker refuted v1's 64-class merge claim (non-rule-preserving conjugacies); v2 adopts the truth",
+  "verdicts": [
+    "reversal twenty-eight: v1's 68->64 merge claim REFUTED - all seven proposed merges fail rule intertwining; v2 verdict: 68 dynamical classes, irreducible at the declared ladder (seven exact non-conjugacies with witnesses)",
+    "automorphism honesty: S_5270 permutes only the 5,270 never-active wires; no merging symmetry among active wires beyond the ring",
+    "prefix-compositional with honest horizons (re-indexed): agreement through H-1, first disagreement exactly at H, both atom orders; H_{0,1}=12-d, H_2=d-1 (d even)/d (d odd), H_3=(2,1,4,4)",
+    "irreducible-input chain: 748 (9.55 bits) -> 68 (6.09, ring symmetry) -> 68 (no dynamical reduction); atomic generation compresses description, not choice; input = 6.09 family + 3.46 allocation bits"
+  ]
+}

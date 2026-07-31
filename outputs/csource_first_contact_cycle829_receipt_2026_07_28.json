@@ -1,0 +1,30 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP15-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle829_contact_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 0
+    },
+    "logs/runner-cache/frontier_cycle829_csource_first_contact_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 0
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 829,
+  "files": {
+    "docs/CSOURCE_FIRST_CONTACT_CYCLE829_BOUNDED_THEOREM_NOTE_2026-07-28.md": "ee15ece6bdbdf9e6a94fb5f2bd84926ec414cc4ed04f8310ea82ca3460541cc3",
+    "logs/runner-cache/frontier_cycle829_contact_independent_check_2026_07_28.txt": "d9b0514c0f7bb64cf7690733d9617d6b5477904c7aa39775afae7d8135856d32",
+    "logs/runner-cache/frontier_cycle829_csource_first_contact_2026_07_28.txt": "caff187978569ff13e53d17a818b363ab2333f08cfd2db25bab58f86fcab8dbf",
+    "scripts/frontier_cycle829_contact_independent_check_2026_07_28.py": "25e5a585b09a9176f8d447354d6570bd574d17f93e8b834c9103dee1aaa2d73d",
+    "scripts/frontier_cycle829_csource_first_contact_2026_07_28.py": "c5f56d69e8bf6cd72c06c295c852489a1b5e40644b26375f85bd0cbce6e5eefa"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "NOT_YET_COMPOSABLE, checker-TIGHTENED (partial injections + coercions + one-hop compositions exhausted)",
+    "the C_source work order: 9 typed external-input mismatches + 2 no-injection controls",
+    "all 7 modules exact origin/main@ae8a02b blobs"
+  ]
+}

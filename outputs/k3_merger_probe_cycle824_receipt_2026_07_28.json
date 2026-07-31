@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC20-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle824_k3_merger_probe_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 12
+    },
+    "logs/runner-cache/frontier_cycle824_probe_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 11
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 824,
+  "files": {
+    "docs/K3_MERGER_PROBE_CYCLE824_BOUNDED_THEOREM_NOTE_2026-07-28.md": "ae8f08cb371d690d44fe0e3b5e54489f07400e28e03c3e8eec5b74a8a458ed9a",
+    "logs/runner-cache/frontier_cycle824_k3_merger_probe_2026_07_28.txt": "ee666dd77173311a8097bfc54c31eadc48966fbb382b8011b15ee9692ff568bd",
+    "logs/runner-cache/frontier_cycle824_probe_independent_check_2026_07_28.txt": "12debb0e6f970603cb7732d9bc39252b5178725579072891e8e6aa0757722972",
+    "scripts/frontier_cycle824_k3_merger_probe_2026_07_28.py": "b279582fb8deab4b8713c08353a3c6f3f1239135f1d0f666bdc6b35fe3b99223",
+    "scripts/frontier_cycle824_probe_independent_check_2026_07_28.py": "9ddca4a9bed1928314411dec748277e119ae0c2e6de621ddf20aad2cb46a1c31"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "STRATUM_STRUCTURE_FOUND \u2014 K3_5952_CYCLES_IDENTICAL_IN_PHASE_OFFSET_0 (four keys, one trajectory)",
+    "k=3 transients: NO merger (empty coincidence map, lags 0..8)",
+    "zero S* visits; same 5,815-bit state space",
+    "checker PRIMARY_STRATUM_STRUCTURE_FOUND_SURVIVES (5,953 checkpoints exact)"
+  ]
+}

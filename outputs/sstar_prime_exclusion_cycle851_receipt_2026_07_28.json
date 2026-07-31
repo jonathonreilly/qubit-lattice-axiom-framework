@@ -1,0 +1,37 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR25-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle851_exclusion_independent_check_2026_07_28.txt": "REPORT.checks map",
+    "logs/runner-cache/frontier_cycle851_sstar_prime_exclusion_2026_07_28.txt": "REPORT.checks map"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle851_exclusion_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    },
+    "logs/runner-cache/frontier_cycle851_sstar_prime_exclusion_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    }
+  },
+  "checker_disclosure": "checker attack logic byte-identical to v1; only pinned expectation constants re-frozen for the v2 primary; its refutation certificate retains the v1-era label by design (it refuted v1's OPEN ruling) - disclosed, not edited",
+  "claim_type": "bounded_theorem",
+  "cycle": 851,
+  "files": {
+    "docs/SSTAR_PRIME_EXCLUSION_CYCLE851_BOUNDED_THEOREM_NOTE_2026-07-28.md": "a8bdd211c551ad6e90fa56f2287c94404e21ea53036b5af1b4a6e29395564f63",
+    "logs/runner-cache/frontier_cycle851_exclusion_independent_check_2026_07_28.txt": "54d7c0dfa9253f757d758ee2820d9ab52d32ca5a258db5d7a000cde4424aaaac",
+    "logs/runner-cache/frontier_cycle851_sstar_prime_exclusion_2026_07_28.txt": "670e26f554d3bb735e1b73637d3345a6545989ddc69919fab201e22e8d73abd5",
+    "scripts/frontier_cycle851_exclusion_independent_check_2026_07_28.py": "362ed0d66cac2306a4a2f30e456446154fad199f64580cf07d53cec7425d7a82",
+    "scripts/frontier_cycle851_sstar_prime_exclusion_2026_07_28.py": "2d5796c01613ca3b5deec05e7e86c6fe7240ba7dd87f704c90579f21d0cc45c8"
+  },
+  "independent_audit_still_required": true,
+  "reversal": "twenty-seven (constructive): checker refuted v1's OPEN ruling by FINDING the four affine separators; v2 adopts the truth and attempts the universal upgrade",
+  "verdicts": [
+    "S0' unvisited across all landed trajectories; closest approach Hamming distance 1 (weight-46 S1, event 1, pair (1,6), movement 51,110, differing only at wire 110)",
+    "four bounded affine separators HEAD[1] XOR HEAD[j], j=2..5: each 0 initially, 1 at S0', zero violations across 891,486 landed transitions (checker-found under the one-bit lemma)",
+    "universal induction FAILS exactly: generator counterexamples for all four - the rule can flip these parities; the landed family never does (spontaneous conservation)",
+    "ruling S0PRIME_EXCLUDED_AT_FAMILY_SCOPE; universal-separator question open; standing forecast: any family extension must keep all four parities at 0 or S0' becomes reachable"
+  ]
+}

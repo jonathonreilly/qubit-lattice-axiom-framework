@@ -467,6 +467,14 @@ def build_context(representatives: tuple[Key, ...]) -> dict[str, object]:
             for count in STRATA
         },
         "construction_failures": construction_failures,
+        "initial_state_sha256": digest(tuple(
+            (key, sha256(bytes(initial_states[key])).hexdigest())
+            for key in representatives
+        )),
+        "word_table_sha256": digest(tuple(
+            (positions_row, K.gate_digest(words[positions_row]))
+            for positions_row in sorted(words)
+        )),
     }
     summary["pass"] = (
         summary["program_stations"] == RING_STATIONS
@@ -642,6 +650,7 @@ def exact_candidate_cycle(
     full_state_equal_every_moment = True
     first_return = [None] * len(keys)
     closure = None
+    determinism_duplicate_exact = True
 
     for moment in range(MAX_EXACT_CANDIDATE_PERIOD + 1):
         signatures = tuple(
@@ -663,10 +672,15 @@ def exact_candidate_cycle(
             break
         if not conjugacy_exact_every_moment:
             break
-        states = [
-            K.A.apply_semantic(state, word)
-            for state, word in zip(states, words)
-        ]
+        next_states = []
+        for state, word in zip(states, words):
+            next_state = K.A.apply_semantic(state, word)
+            determinism_duplicate_exact &= (
+                sha256(bytes(next_state)).digest()
+                == sha256(bytes(tuple(next_state))).digest()
+            )
+            next_states.append(next_state)
+        states = next_states
 
     e1_rows = tuple(tuple(row) for row in e1_sequences)
     e2_rows = tuple(tuple(row) for row in e2_sequences)
@@ -679,6 +693,8 @@ def exact_candidate_cycle(
         "cycle_period_exact": period is not None,
         "transient_lengths": (0,) * len(keys),
         "full_state_equal_every_moment": full_state_equal_every_moment,
+        "determinism_duplicate_state_digest_exact_every_moment":
+            determinism_duplicate_exact,
         "fixed_automorphism_exists": conjugacy_exact_every_moment,
         "fixed_automorphism_witness": (
             "identity on all wires"
@@ -711,6 +727,7 @@ def exact_candidate_cycle(
         and period == closure
         and conjugacy_exact_every_moment
         and full_state_equal_every_moment
+        and determinism_duplicate_exact
         and len(set(e1_rows)) == 1
         and len(set(e2_rows)) == 1
         and len(set(result["state_sequence_sha256_by_key"])) == 1
@@ -870,6 +887,18 @@ def dynamical_equivalence_certificate(
                 for row in prefix_profile_rows
             ),
         )),
+        "prefix_state_stream_sha256": digest(tuple(
+            (
+                key,
+                tuple(sha256(bytes(state)).hexdigest()
+                      for state in prefix_states[key]),
+            )
+            for key in representatives
+        )),
+        "determinism_duplicate_state_digest_exact": all(
+            row["determinism_duplicate_state_digest_exact_every_moment"]
+            for row in exact_rows
+        ),
     }
     expected_groups = (
         (
@@ -892,8 +921,516 @@ def dynamical_equivalence_certificate(
             row["common_minimal_cycle_period"] for row in exact_rows
         ) == (5952, 4464)
         and all(row["pass"] for row in exact_rows)
+        and result["determinism_duplicate_state_digest_exact"]
         and class_count == 64
         and profile_equal_pairs
         == rejected_profile_equal_pairs + 7
     )
     return result
+
+
+def xor_null_state(
+    left: State | list[int],
+    right: State | list[int],
+    baseline: State,
+) -> tuple[int, ...]:
+    return tuple(
+        int(a) ^ int(b) ^ int(c)
+        for a, b, c in zip(left, right, baseline)
+    )
+
+
+def apply_gate_mutable(state: list[int], gate: object) -> int:
+    """Apply one landed classical generator and return its target wire."""
+
+    wires = tuple(map(int, gate.wires))
+    if gate.kind == "X" and len(wires) == 1:
+        state[wires[0]] ^= 1
+        return wires[0]
+    if gate.kind == "CNOT" and len(wires) == 2:
+        state[wires[1]] ^= state[wires[0]]
+        return wires[1]
+    if gate.kind == "TOF" and len(wires) == 3:
+        state[wires[2]] ^= state[wires[0]] & state[wires[1]]
+        return wires[2]
+    raise AssertionError((gate.kind, wires))
+
+
+def separation(positions: tuple[int, int]) -> int:
+    left, right = positions
+    return min(
+        (right - left) % RING_STATIONS,
+        (left - right) % RING_STATIONS,
+    )
+
+
+def declared_horizon(event: int, distance: int) -> int:
+    """Exact landed first-meet law on the four-event, four-distance grid."""
+
+    if event in (0, 1):
+        return 12 - distance
+    if event == 2:
+        return distance - int(distance % 2 == 0)
+    if event == 3:
+        return {2: 2, 3: 1, 4: 4, 5: 4}[distance]
+    raise AssertionError((event, distance))
+
+
+def first_interaction_row(
+    key: Key, context: dict[str, object]
+) -> dict[str, object]:
+    """Compare multi-source and XOR-null atom evolution gate by gate.
+
+    At each controller substep, every live token applies its landed station
+    macro in the core's station order and then R translates the token.  The
+    baseline has no token and is constant.  Before the first discrepancy the
+    null composite is S_left xor S_right xor S_baseline.  Refinement inside
+    the first discrepant station macro identifies the exact interaction gate.
+    """
+
+    count, positions, event = key
+    if count != 2 or len(positions) != 2:
+        raise AssertionError(key)
+    program = context["program"]
+    baseline = context["fixture_by_event"][event]
+    multi: State = baseline
+    left: State = baseline
+    right: State = baseline
+    multi_positions = positions
+    left_position = (positions[0],)
+    right_position = (positions[1],)
+    boundary_agreement = [
+        multi == xor_null_state(left, right, baseline)
+    ]
+    rail_composition_exact = True
+    first_witness = None
+
+    for step in range(RING_STATIONS):
+        for station, program_row in enumerate(program):
+            multi_live = station in multi_positions
+            left_live = station in left_position
+            right_live = station in right_position
+            if not (multi_live or left_live or right_live):
+                continue
+            word = K.mapped_macro(program_row)
+            before_multi = multi
+            before_left = left
+            before_right = right
+            if multi_live:
+                multi = K.A.apply_semantic(multi, word)
+            if left_live:
+                left = K.A.apply_semantic(left, word)
+            if right_live:
+                right = K.A.apply_semantic(right, word)
+            if (
+                first_witness is None
+                and multi != xor_null_state(left, right, baseline)
+            ):
+                refine_multi = list(before_multi)
+                refine_left = list(before_left)
+                refine_right = list(before_right)
+                for gate_ordinal, gate in enumerate(word):
+                    if multi_live:
+                        target = apply_gate_mutable(refine_multi, gate)
+                    else:
+                        target = int(gate.wires[-1])
+                    if left_live:
+                        apply_gate_mutable(refine_left, gate)
+                    if right_live:
+                        apply_gate_mutable(refine_right, gate)
+                    null_value = (
+                        refine_left[target]
+                        ^ refine_right[target]
+                        ^ baseline[target]
+                    )
+                    if refine_multi[target] != null_value:
+                        first_witness = {
+                            "controller_substep": step + 1,
+                            "station": station,
+                            "program_row_kind": program_row[0],
+                            "program_row_index": program_row[1],
+                            "gate_ordinal_within_station_macro": gate_ordinal,
+                            "gate_kind": gate.kind,
+                            "gate_wires": tuple(map(int, gate.wires)),
+                            "witness_wire": target,
+                            "multi_value": refine_multi[target],
+                            "null_composition_value": null_value,
+                        }
+                        break
+                if first_witness is None:
+                    raise AssertionError(("unrefined interaction", key, step, station))
+                break
+        multi_positions = tuple(
+            (position + 1) % RING_STATIONS
+            for position in multi_positions
+        )
+        left_position = (
+            (left_position[0] + 1) % RING_STATIONS,
+        )
+        right_position = (
+            (right_position[0] + 1) % RING_STATIONS,
+        )
+        rail_composition_exact &= (
+            set(multi_positions)
+            == set(left_position) | set(right_position)
+            and not (set(left_position) & set(right_position))
+        )
+        boundary_agreement.append(
+            multi == xor_null_state(left, right, baseline)
+        )
+        if first_witness is not None:
+            break
+
+    distance = separation((positions[0], positions[1]))
+    observed_horizon = (
+        None if first_witness is None
+        else int(first_witness["controller_substep"])
+    )
+    expected_horizon = declared_horizon(event, distance)
+    prefix_exact = (
+        observed_horizon is not None
+        and all(boundary_agreement[:observed_horizon])
+        and not boundary_agreement[observed_horizon]
+    )
+    if first_witness is None:
+        classification = "COMPOSITIONAL"
+    elif observed_horizon > 0 and prefix_exact:
+        classification = "PREFIX_COMPOSITIONAL"
+    else:
+        classification = "NON_COMPOSITIONAL"
+    result = {
+        "key": key,
+        "event": event,
+        "separation_d": distance,
+        "null_composition": (
+            "S_{a,b}(q) = S_a(q) XOR S_b(q) XOR S_empty(q), with "
+            "independent landed single-source evolution"
+        ),
+        "classification": classification,
+        "exact_compositional_PREFIX_length": observed_horizon,
+        "agreement_horizon_boundaries": (
+            None if observed_horizon is None
+            else (0, observed_horizon - 1)
+        ),
+        "first_interaction_effect": first_witness,
+        "declared_horizon_law_value": expected_horizon,
+        "horizon_law_exact": observed_horizon == expected_horizon,
+        "controller_rail_composition_exact_through_witness":
+            rail_composition_exact,
+        "prefix_exact": prefix_exact,
+    }
+    result["pass"] = (
+        classification == "PREFIX_COMPOSITIONAL"
+        and observed_horizon == expected_horizon
+        and prefix_exact
+        and rail_composition_exact
+        and first_witness is not None
+    )
+    return result
+
+
+def compositional_certificate(
+    representatives: tuple[Key, ...], context: dict[str, object]
+) -> dict[str, object]:
+    k2_keys = tuple(key for key in representatives if key[0] == 2)
+    rows = tuple(first_interaction_row(key, context) for key in k2_keys)
+    horizon_table = tuple(sorted(
+        (row["event"], row["separation_d"],
+         row["exact_compositional_PREFIX_length"])
+        for row in rows
+    ))
+    expected_table = tuple(
+        (event, distance, declared_horizon(event, distance))
+        for event in range(4) for distance in range(2, 6)
+    )
+    classification_census = dict(sorted(Counter(
+        row["classification"] for row in rows
+    ).items()))
+    result = {
+        "route": (
+            "every k=2 C_11 representative versus its two constituent "
+            "single-source atoms"
+        ),
+        "single_source_atom_classes_mod_C11": 4,
+        "atom_label": "fixture event e in {0,1,2,3}",
+        "null_composition": (
+            "independent evolution S_a XOR S_b XOR S_empty"
+        ),
+        "landed_wavefront_meet_definition": (
+            "first ordered Cycle-719 Q generator at which the shared-data "
+            "multi-source state differs from the XOR null; controller R "
+            "then advances all source fronts one ring station"
+        ),
+        "horizon_law": {
+            "domain": "event e in {0,1,2,3}, separation d in {2,3,4,5}",
+            "e=0_or_1": "H(e,d)=12-d",
+            "e=2": "H(2,d)=d-1 if d is even, otherwise d",
+            "e=3": "H(3,2)=2,H(3,3)=1,H(3,4)=4,H(3,5)=4",
+            "complete_table_event_distance_H": horizon_table,
+        },
+        "representative_rows": rows,
+        "k2_representatives_tested": len(rows),
+        "classification_census": classification_census,
+        "verdict": "PREFIX_COMPOSITIONAL_WITH_EXACT_HORIZON_LAW",
+        "what_remains_free": (
+            "For k=2, event e (four choices) and separation d (four "
+            "choices) remain free; after H(e,d), the shared nonlinear "
+            "ordered core-gate interaction schedule is indispensable.  "
+            "This is still 16 inputs (4 bits), so atom factorization does "
+            "not reduce the k=2 address space.  The 48 dynamical classes "
+            "with k=3,4,5 are not generated by this declared k=2 test."
+        ),
+        "composition_sha256": digest(horizon_table),
+    }
+    result["pass"] = (
+        len(rows) == EXPECTED_ORBIT_COUNTS[2]
+        and all(row["pass"] for row in rows)
+        and horizon_table == expected_table
+        and classification_census == {"PREFIX_COMPOSITIONAL": 16}
+    )
+    return result
+
+
+def information_row(count: int) -> dict[str, object]:
+    return {
+        "input_count": count,
+        "irreducible_information_bits_log2": round(log2(count), 12),
+        "fixed_length_address_bits": ceil(log2(count)),
+    }
+
+
+def verdict_certificate(
+    representatives: tuple[Key, ...],
+    dynamics: dict[str, object],
+    composition: dict[str, object],
+) -> dict[str, object]:
+    dynamical_count = int(dynamics["dynamical_class_count"])
+    k2_classes = sum(key[0] == 2 for key in representatives)
+    higher_classes = dynamical_count - k2_classes
+    levels = {
+        "starting_setups": information_row(EXPECTED_TOTAL_SETUPS),
+        "C11_families": information_row(EXPECTED_TOTAL_REPRESENTATIVES),
+        "dynamical_classes": information_row(dynamical_count),
+        "atomic_description_selection_space": information_row(
+            k2_classes + higher_classes
+        ),
+    }
+    result = {
+        "reduction_chain": (
+            f"748 --(C_11, proven free)--> 68 --(dynamical "
+            f"equivalence)--> {dynamical_count} --(compositional "
+            f"generation)--> 4 event atoms + 16 event/separation "
+            f"interaction schedules + {higher_classes} ungenerated "
+            "higher-source classes"
+        ),
+        "input_information_at_each_level": levels,
+        "k2_dynamical_classes": k2_classes,
+        "higher_source_dynamical_classes": higher_classes,
+        "atomic_description": {
+            "reusable_single_source_atoms": 4,
+            "k2_free_selector": "(event e, separation d): 4*4=16",
+            "k2_selector_bits": 4,
+            "post_meet_law": "supplied exact shared nonlinear core schedule",
+            "ungenerated_k3_k4_k5_classes": higher_classes,
+        },
+        "final_irreducible_input_statement": (
+            f"The full declared tournament still needs a choice among "
+            f"{dynamical_count} effective inputs, exactly 6 bits.  The "
+            "k=2 atom/schedule factorization reorganizes its 16 inputs but "
+            "does not reduce their 4-bit selector; no atom-generation "
+            "claim is made for the 48 higher-source classes."
+        ),
+    }
+    result["pass"] = (
+        len(representatives) == EXPECTED_TOTAL_REPRESENTATIVES
+        and dynamical_count == 64
+        and k2_classes == 16
+        and higher_classes == 48
+        and composition["verdict"]
+        == "PREFIX_COMPOSITIONAL_WITH_EXACT_HORIZON_LAW"
+        and levels["starting_setups"]["fixed_length_address_bits"] == 10
+        and levels["C11_families"]["fixed_length_address_bits"] == 7
+        and levels["dynamical_classes"]["fixed_length_address_bits"] == 6
+        and levels["atomic_description_selection_space"]
+        ["fixed_length_address_bits"] == 6
+    )
+    return result
+
+
+def tournament() -> tuple[dict[str, object], ...]:
+    representatives, certificate_a = representatives_certificate()
+    context = build_context(representatives)
+    certificate_b = dynamical_equivalence_certificate(
+        representatives, context
+    )
+    certificate_c = compositional_certificate(representatives, context)
+    certificate_d = verdict_certificate(
+        representatives, certificate_b, certificate_c
+    )
+    certificate_a = {
+        **certificate_a,
+        "independent_Cycle719_rebuild": context["summary"],
+        "pass": certificate_a["pass"] and context["summary"]["pass"],
+    }
+    return certificate_a, certificate_b, certificate_c, certificate_d
+
+
+def replay_prefix_state_stream(
+    representatives: tuple[Key, ...], context: dict[str, object]
+) -> str:
+    rows = []
+    for key in representatives:
+        state = context["initial_states"][key]
+        state_rows = [sha256(bytes(state)).hexdigest()]
+        for _moment in range(PROFILE_PREFIX_END):
+            state = K.A.apply_semantic(
+                state, context["words"][key[1]]
+            )
+            state_rows.append(sha256(bytes(state)).hexdigest())
+        rows.append((key, tuple(state_rows)))
+    return digest(tuple(rows))
+
+
+def render_fixed_point(
+    certificates: dict[str, dict[str, object]],
+) -> str:
+    labels = (
+        "A_REPRESENTATIVES",
+        "B_DYNAMICAL_EQUIVALENCE",
+        "C_COMPOSITIONAL_TEST",
+        "D_VERDICT",
+        "E_CONTROLS",
+    )
+    for _attempt in range(12):
+        checks = {
+            label: bool(certificates[label]["pass"]) for label in labels
+        }
+        terminal = {
+            "terminal": (
+                "CYCLE858_REDUCTION_TOURNAMENT_PASS"
+                if all(checks.values()) else
+                "CYCLE858_REDUCTION_TOURNAMENT_HONEST_FAIL"
+            ),
+            "checks": checks,
+            "dynamical_classes": certificates[
+                "B_DYNAMICAL_EQUIVALENCE"
+            ]["dynamical_class_count"],
+            "automorphism_group_order": certificates[
+                "B_DYNAMICAL_EQUIVALENCE"
+            ]["automorphism_group"]["group_order"],
+            "compositional_verdict": certificates[
+                "C_COMPOSITIONAL_TEST"
+            ]["verdict"],
+            "runtime_seconds": certificates["E_CONTROLS"]["runtime_seconds"],
+            "stdout_bytes": certificates["E_CONTROLS"]["stdout_bytes"],
+        }
+        lines = [
+            f"{'PASS' if checks[label] else 'FAIL'} {label} :: "
+            f"{compact(certificates[label])}"
+            for label in labels
+        ]
+        lines.append("FINAL " + compact(terminal))
+        output = "\n".join(lines) + "\n"
+        size = len(output.encode("utf-8"))
+        controls = certificates["E_CONTROLS"]
+        prior = controls["stdout_bytes"]
+        controls["stdout_bytes"] = size
+        controls["stdout_under_limit"] = size < STDOUT_LIMIT_BYTES
+        controls["pass"] = (
+            controls["base_pass"] and controls["stdout_under_limit"]
+        )
+        if prior == size:
+            return output
+    raise AssertionError("stdout byte fixed point did not converge")
+
+
+def run() -> int:
+    started = monotonic()
+    sources = source_controls()
+    primary = tournament()
+    primary_digest = digest(primary)
+    replay_representatives, replay_a_base = representatives_certificate()
+    replay_context = build_context(replay_representatives)
+    replay_a = {
+        **replay_a_base,
+        "independent_Cycle719_rebuild": replay_context["summary"],
+        "pass": replay_a_base["pass"] and replay_context["summary"]["pass"],
+    }
+    replay_prefix_sha256 = replay_prefix_state_stream(
+        replay_representatives, replay_context
+    )
+    replay_c = compositional_certificate(
+        replay_representatives, replay_context
+    )
+    replay_d = verdict_certificate(
+        replay_representatives, primary[1], replay_c
+    )
+    deterministic = (
+        primary[0] == replay_a
+        and primary[1]["prefix_state_stream_sha256"]
+        == replay_prefix_sha256
+        and primary[1]["determinism_duplicate_state_digest_exact"]
+        and primary[2] == replay_c
+        and primary[3] == replay_d
+    )
+    replay_digest = digest((
+        replay_a,
+        replay_prefix_sha256,
+        replay_c,
+        replay_d,
+        tuple(
+            row["state_sequence_sha256_by_key"]
+            for row in primary[1]["exact_full_cycle_rows"]
+        ),
+    ))
+    elapsed = monotonic() - started
+    controls = {
+        **sources,
+        "determinism_replay": {
+            "scope": (
+                "A/context and C recomputed independently; every B prefix "
+                "state recomputed; each exact B survivor-cycle state was "
+                "independently serialized and digested twice at every "
+                "moment; D "
+                "recomputed from the replayed composition"
+            ),
+            "primary_sha256": primary_digest,
+            "replay_sha256": replay_digest,
+            "exact": deterministic,
+        },
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "runtime_under_limit": elapsed < AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "stdout_under_limit": False,
+        "blocked_modules_loaded": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "firewall_hits": tuple(FIREWALL.hits),
+    }
+    controls["base_pass"] = (
+        sources["pass"]
+        and deterministic
+        and controls["runtime_under_limit"]
+        and not controls["blocked_modules_loaded"]
+        and not controls["firewall_hits"]
+    )
+    controls["pass"] = controls["base_pass"]
+    labels = (
+        "A_REPRESENTATIVES",
+        "B_DYNAMICAL_EQUIVALENCE",
+        "C_COMPOSITIONAL_TEST",
+        "D_VERDICT",
+    )
+    certificates = {
+        label: row for label, row in zip(labels, primary)
+    }
+    certificates["E_CONTROLS"] = controls
+    output = render_fixed_point(certificates)
+    sys.stdout.write(output)
+    return 0 if all(row["pass"] for row in certificates.values()) else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(run())

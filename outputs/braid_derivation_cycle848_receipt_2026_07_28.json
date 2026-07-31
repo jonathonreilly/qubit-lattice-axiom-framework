@@ -2,14 +2,21 @@
   "audit": "unset",
   "authority": "none",
   "block": "blockR24-20260729",
+  "certificate_count_format_note": {
+    "amended": "counts re-derived from each cache's native certificate format after the generic line-count patterns returned 0/0; needle assertions were verified before first commit and are unchanged",
+    "formats": {
+      "logs/runner-cache/frontier_cycle848_braid_derivation_2026_07_28.txt": "REPORT.checks map (boolean or PASS/FAIL values)",
+      "logs/runner-cache/frontier_cycle848_derivation_independent_check_2026_07_28.txt": "REPORT.checks map (boolean or PASS/FAIL values)"
+    }
+  },
   "certificates": {
     "logs/runner-cache/frontier_cycle848_braid_derivation_2026_07_28.txt": {
       "fail": 0,
-      "pass": 0
+      "pass": 4
     },
     "logs/runner-cache/frontier_cycle848_derivation_independent_check_2026_07_28.txt": {
       "fail": 0,
-      "pass": 0
+      "pass": 4
     }
   },
   "claim_type": "bounded_theorem",

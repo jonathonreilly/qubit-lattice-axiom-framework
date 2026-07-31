@@ -1,3 +1,29 @@
+# TOE lane update — fixed rubric (2026-07-31, the mechanism wave)
+
+| TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operational quantum / Records | 98% | 97% | 70% | 99% |
+| Causal time | 89% ↑2 | 75% | 48% ↑1 | 99% |
+| Inertia / matter | 97% | 98% | 88% | 99% |
+| Gravity / source / resources | 71% | 47% | 30% | 94% |
+| Born probability / realized history | 93% ↑1 | 66% | 41% | 99% |
+
+Science-evidence scores, not audit-retention scores; 94 campaign PRs (#5772-#5860) pre-review.
+
+Why the scores changed (this wave, checker-verified):
+- Time: THE MOMENT-LAW ACCOUNTING CLOSED PRINCIPLED — gap = lcm(4464,5952) + register catch-up on the physics clocks, exactly {595,64}, no fitted terms (the forcing table proves every landed physics consumer reads MOMENT/MOMENT-5; the orphan clock's only readers are the audit artifacts that measured it). The per-s meeting theorem stands; the origin is a modulator (delays 4-5x, shrinks cohorts, shifts funnel regimes 57/51).
+- Born/realized history: the entry predicate is REGISTER-LOCALLY READABLE in three wires (40/81/105) at the meet — a representation theorem; the transient family is 37 in three funnel regimes; S0' stands through T=131072.
+- Reversals 24-25 absorbed (both refining): the 172-bit discriminator minimized to 3 wires and identified AS the predicate; the zero-consumer claim corrected to zero-PHYSICS-consumers.
+
+Breakthrough log this wave:
+1. The principled tick: the clocks that matter agree, and the arithmetic meets the calendar exactly.
+2. Three wires spell the entry predicate at the wavefront meeting.
+3. The origin as modulator (four late transients; funnels 57/51).
+4. The meeting theorem + the 0/44-vs-9/44 reachability split.
+5. The trio bet survives T=262144.
+
+Next retasking: the pulse phase (full-state hunt at the coincidence phase); the LOCAL CAUSAL THEOREM (from the 3-wire representation to a rule-level forward argument); the trio bet deeper; the two owner decisions (E1/E2 #5847; allocation #5843); review-lane drain (the science-vs-retained gap is now 94 PRs wide).
+
 # TOE lane update — fixed rubric (2026-07-31, campaign-4 wave: the unification)
 
 | TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |

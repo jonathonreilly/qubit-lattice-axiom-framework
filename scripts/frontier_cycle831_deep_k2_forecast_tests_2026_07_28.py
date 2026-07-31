@@ -1171,6 +1171,43 @@ def run() -> int:
         ),
         "pass": True,
     }
+    cohort_keys = tuple(sorted({
+        (
+            int(row["resolution_moment"]),
+            str(row["outcome"]),
+            int(row["key"][0]),
+        )
+        for row in new_resolutions
+    }))
+    resolution_cohorts = tuple({
+        "resolution_moment": moment,
+        "outcome": outcome,
+        "event": event,
+        "keys": tuple(
+            row["key"] for row in new_resolutions
+            if row["resolution_moment"] == moment
+            and row["outcome"] == outcome
+            and row["key"][0] == event
+        ),
+        "count": sum(
+            row["resolution_moment"] == moment
+            and row["outcome"] == outcome
+            and row["key"][0] == event
+            for row in new_resolutions
+        ),
+        "all_exact_same_state_at_resolution": all(
+            set(
+                candidate["key"] for candidate in new_resolutions
+                if candidate["resolution_moment"] == moment
+                and candidate["outcome"] == outcome
+                and candidate["key"][0] == event
+            ) <= set(row["merger_at_resolution_moment"]["same_state_keys"])
+            for row in new_resolutions
+            if row["resolution_moment"] == moment
+            and row["outcome"] == "TRANSIENT"
+            and row["key"][0] == event
+        ) if outcome == "TRANSIENT" else None,
+    } for moment, outcome, event in cohort_keys)
 
     identity_transient = records.get(IDENTITY_TRANSIENT_KEY)
     identity_cycle = records.get(IDENTITY_CYCLE_KEY)
@@ -1311,6 +1348,7 @@ def run() -> int:
                 "Cycle-795 forecast-vector class extinct; new resolutions "
                 "are pure data and no legacy vector is scored",
             "new_resolution_count": len(new_resolutions),
+            "resolution_cohorts": resolution_cohorts,
             "new_resolutions": new_resolutions,
             "Sstar_visit_count_over_151_continuation_trajectories":
                 sum(len(rows) for rows in sstar_visits.values()),
@@ -1376,9 +1414,17 @@ def run() -> int:
         "F1":
             "HOLDS" if all(row["F1"]["pass"]
                            for row in new_resolutions) else "FALSIFIED",
-        "F2":
-            "HOLDS" if all(row["F2"]["pass"]
-                           for row in new_resolutions) else "FALSIFIED",
+        "F2": (
+            "STANDING_NO_NEW_CYCLE"
+            if not any(
+                row["outcome"] == "CYCLE" for row in new_resolutions
+            )
+            else (
+                "HOLDS" if all(row["F2"]["pass"]
+                               for row in new_resolutions)
+                else "FALSIFIED"
+            )
+        ),
         "merger":
             "YES" if merger_certificate[
                 "any_new_transients_share_resolution_moment_and_state"

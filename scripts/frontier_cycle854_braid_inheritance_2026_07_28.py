@@ -80,6 +80,8 @@ BACKBONE = (
 PREDICATE_WIRES = (40, 81, 105)
 EXPECTED_EVENT_COUNT = 20
 EXPECTED_TYPE_COUNT = 16
+EXPECTED_INHERITED_WIRE_COUNT = 5320
+EXPECTED_INHERITED_PAIR_COUNT = 14148540
 BLOCKLISTED_MODULES = tuple(Path(path).stem for path in AUDIT_INPUT_PATHS)
 
 
@@ -548,13 +550,618 @@ def transition_rows(
     return tuple(rows)
 
 
-def main() -> int:
-    print(compact({
-        "cycle": 854,
+def ranges(values: tuple[int, ...]) -> tuple[tuple[int, int], ...]:
+    if not values:
+        return ()
+    result = []
+    start = previous = values[0]
+    for value in values[1:]:
+        if value != previous + 1:
+            result.append((start, previous))
+            start = value
+        previous = value
+    result.append((start, previous))
+    return tuple(result)
+
+
+def gate_target(row: tuple[int, int, int, int]) -> int:
+    kind, first, second, third = row
+    return first if kind == 0 else second if kind == 1 else third
+
+
+def inheritance_census(
+    fixtures: dict[str, object],
+    gate_words: dict[
+        tuple[int, int], tuple[tuple[int, int, int, int], ...]
+    ],
+) -> tuple[dict[str, object], dict[str, object]]:
+    target_counts = []
+    for pair in BACKBONE:
+        counts: dict[int, list[int]] = defaultdict(lambda: [0, 0, 0])
+        for row in gate_words[pair]:
+            counts[gate_target(row)][row[0]] += 1
+        target_counts.append(counts)
+
+    profiles = {
+        wire: tuple(tuple(target_counts[index][wire]) for index in range(len(BACKBONE)))
+        for wire in range(STATE_BITS)
+    }
+    profile_groups: dict[
+        tuple[tuple[int, int, int], ...], list[int]
+    ] = defaultdict(list)
+    for wire, profile in profiles.items():
+        profile_groups[profile].append(wire)
+
+    def x_only_signature(
+        profile: tuple[tuple[int, int, int], ...],
+    ) -> tuple[int, ...] | None:
+        if any(cnot_count or toffoli_count
+               for _x_count, cnot_count, toffoli_count in profile):
+            return None
+        return tuple(x_count % 2 for x_count, _cnot, _toffoli in profile)
+
+    wire_family = tuple(
+        wire for wire, profile in profiles.items()
+        if x_only_signature(profile) == (0,) * len(BACKBONE)
+    )
+    wire_family_set = set(wire_family)
+    signature_groups: dict[tuple[int, ...], list[int]] = defaultdict(list)
+    signature_by_wire = {}
+    for wire, profile in profiles.items():
+        signature = x_only_signature(profile)
+        if signature is not None:
+            signature_groups[signature].append(wire)
+            signature_by_wire[wire] = signature
+    pair_count = sum(
+        len(wires) * (len(wires) - 1) // 2
+        for wires in signature_groups.values()
+    )
+
+    public_profiles = []
+    for profile, wires_list in sorted(
+        profile_groups.items(), key=lambda item: (item[0], item[1][0]),
+    ):
+        wires = tuple(wires_list)
+        signature = x_only_signature(profile)
+        public_profiles.append({
+            "wire_count": len(wires),
+            "wire_ranges": ranges(wires),
+            "per_generator": tuple({
+                "generator": pair,
+                "unconditional_X_targets": counts[0],
+                "CNOT_targets": counts[1],
+                "Toffoli_targets": counts[2],
+            } for pair, counts in zip(BACKBONE, profile)),
+            "x_only_toggle_signature": signature,
+            "wire_level_admitted": signature == (0,) * len(BACKBONE),
+        })
+    pair_groups = tuple({
+        "toggle_signature": signature,
+        "wire_count": len(wires),
+        "wire_ranges": ranges(tuple(wires)),
+        "unordered_pair_count": len(wires) * (len(wires) - 1) // 2,
+    } for signature, wires in sorted(signature_groups.items()) if len(wires) >= 2)
+
+    invariant_mask = sum(1 << wire for wire in wire_family)
+    ordered_states = tuple(fixtures["states"][key] for key in fixtures["keys"])
+    initial_projection = b"".join(
+        (state & invariant_mask).to_bytes(STATE_BYTES, "little")
+        for state in ordered_states
+    )
+    initial_signatures = Counter(
+        tuple((state >> wire) & 1 for state in ordered_states)
+        for wire in wire_family
+    )
+    uniform_zero = initial_signatures.get((0,) * FAMILY_SIZE, 0)
+    uniform_one = initial_signatures.get((1,) * FAMILY_SIZE, 0)
+    dead_profiles = {
+        wire: tuple({
+            "generator": pair,
+            "unconditional_X_targets": profiles[wire][index][0],
+            "CNOT_targets": profiles[wire][index][1],
+            "Toffoli_targets": profiles[wire][index][2],
+            "boundary_relation": "x_out=x_in",
+        } for index, pair in enumerate(BACKBONE))
+        for wire in (56, 58)
+    }
+    dead_initial = {
+        wire: sum((state >> wire) & 1 for state in ordered_states)
+        for wire in (56, 58)
+    }
+    dead_special = {
+        "wires": (56, 58),
+        "wire_56_in_wire_family": 56 in wire_family_set,
+        "wire_58_in_wire_family": 58 in wire_family_set,
+        "pair_56_58_in_pair_family": (
+            signature_by_wire.get(56) == signature_by_wire.get(58)
+            and signature_by_wire.get(56) is not None
+        ),
+        "all_176_initial_one_counts": dead_initial,
+        "forced_boundary_values": (0, 0),
+        "forced_boundary_parity": 0,
+        "per_wire_per_generator": dead_profiles,
+        "cycle853_special_case_reappears": (
+            dead_initial == {56: 0, 58: 0}
+            and all(
+                row["unconditional_X_targets"] == 4
+                and row["CNOT_targets"] == 0
+                and row["Toffoli_targets"] == 0
+                for wire in (56, 58) for row in dead_profiles[wire]
+            )
+        ),
+    }
+    profile_coverage = sum(row["wire_count"] for row in public_profiles)
+    certificate = {
+        "declared_inheritance_ladder": (
+            "LEVEL_1_SINGLE_WIRE_VALUE",
+            "LEVEL_2_UNORDERED_WIRE_PAIR_PARITY",
+        ),
+        "derivation_rule": (
+            "At a complete F_pair boundary, a single wire is inherited iff every "
+            "primitive targeting it is an unconditional X and the X count is even "
+            "for each of the nine generators (zero is even).  A wire-pair parity "
+            "is inherited iff both target lists are X-only and their X-count "
+            "parities agree generator by generator.  Conditional target gates "
+            "are never cancelled or inferred from trajectory behavior."
+        ),
+        "all_wire_boundary_toggle_structures": tuple(public_profiles),
+        "all_wire_profile_group_count": len(public_profiles),
+        "all_wire_profile_coverage": profile_coverage,
+        "all_wire_profiles_sha256": digest(tuple(profiles.items())),
+        "level_1": {
+            "family_count": len(wire_family),
+            "family_wire_ranges": ranges(wire_family),
+            "family_sha256": digest(wire_family),
+            "nonfamily_count": STATE_BITS - len(wire_family),
+            "nonfamily_wire_ranges": ranges(tuple(
+                wire for wire in range(STATE_BITS) if wire not in wire_family_set
+            )),
+            "boundary_theorem":
+                "x_t[w]=x_0[w] at every complete-generator boundary",
+            "initial_projection_sha256": sha256(initial_projection).hexdigest(),
+            "uniform_zero_initial_wires": uniform_zero,
+            "uniform_one_initial_wires": uniform_one,
+            "nonuniform_initial_wires":
+                len(wire_family) - uniform_zero - uniform_one,
+        },
+        "level_2": {
+            "family_count": pair_count,
+            "compressed_complete_family": pair_groups,
+            "family_definition":
+                "For every displayed signature group, every unordered distinct "
+                "pair of listed wires is in the family; there are no other pairs.",
+            "boundary_theorem":
+                "x_t[a] XOR x_t[b] = x_0[a] XOR x_0[b] at every complete-generator boundary",
+            "family_sha256": digest(tuple(
+                (signature, tuple(wires))
+                for signature, wires in sorted(signature_groups.items())
+                if len(wires) >= 2
+            )),
+        },
+        "dead_wire_pair_special_case": dead_special,
+        "trajectory_cooccurrence_used_for_admission": False,
+        "finding": "FULL_TWO_LEVEL_EVEN_TOGGLE_INHERITANCE_FAMILY_CERTIFIED",
+        "pass": (
+            profile_coverage == STATE_BITS
+            and len(wire_family) == EXPECTED_INHERITED_WIRE_COUNT
+            and pair_count == EXPECTED_INHERITED_PAIR_COUNT
+            and dead_special["cycle853_special_case_reappears"]
+            and dead_special["pair_56_58_in_pair_family"]
+        ),
+    }
+    private = {
+        "wire_family": wire_family_set,
+        "signature_by_wire": signature_by_wire,
+        "signature_groups": {
+            signature: tuple(wires) for signature, wires in signature_groups.items()
+        },
+    }
+    return certificate, private
+
+
+def occurrence_entailment(
+    event: dict[str, object], fixtures: dict[str, object],
+    inheritance: dict[str, object],
+) -> dict[str, object]:
+    component_wires = tuple(sorted(set(PREDICATE_WIRES) | set(
+        event["predecessor_variation_support"]
+    )))
+    wire_family = inheritance["wire_family"]
+    signature_by_wire = inheritance["signature_by_wire"]
+    signature_groups = inheritance["signature_groups"]
+    pattern_rows = []
+    free_components = []
+    constraint_rank = 0
+    consistency = True
+    for lane, key, state in zip(
+        event["coincident_lanes"], event["coincident_keys"],
+        event["predecessor_states"],
+    ):
+        initial = fixtures["states"][(0, key)]
+        selected_by_signature: dict[tuple[int, ...], list[int]] = defaultdict(list)
+        conditional_wires = []
+        for wire in component_wires:
+            signature = signature_by_wire.get(wire)
+            if signature is None:
+                conditional_wires.append(wire)
+            else:
+                selected_by_signature[signature].append(wire)
+        forced_values = []
+        forced_relations = []
+        lane_free = []
+        for wire in conditional_wires:
+            lane_free.append(wire)
+        for signature, selected in sorted(selected_by_signature.items()):
+            anchors = tuple(
+                wire for wire in signature_groups[signature]
+                if wire in wire_family
+            )
+            if anchors:
+                anchor = anchors[0]
+                for wire in selected:
+                    expected = (initial >> wire) & 1
+                    actual = (state >> wire) & 1
+                    forced_values.append((wire, expected))
+                    consistency &= actual == expected
+                    constraint_rank += 1
+            else:
+                representative = min(selected)
+                lane_free.append(representative)
+                for wire in sorted(selected):
+                    if wire == representative:
+                        continue
+                    expected_parity = ((initial >> representative) ^ (initial >> wire)) & 1
+                    actual_parity = ((state >> representative) ^ (state >> wire)) & 1
+                    forced_relations.append((representative, wire, expected_parity))
+                    consistency &= actual_parity == expected_parity
+                    constraint_rank += 1
+        required_values = tuple((state >> wire) & 1 for wire in component_wires)
+        for wire in sorted(lane_free):
+            free_components.append({
+                "event_index": event["event_index"],
+                "key": key,
+                "wire": wire,
+                "required_value": (state >> wire) & 1,
+            })
+        pattern_rows.append({
+            "lane": lane,
+            "key": key,
+            "component_wires": component_wires,
+            "required_values": required_values,
+            "forced_wire_values": tuple(forced_values),
+            "forced_pair_relations": tuple(forced_relations),
+            "free_basis_wires": tuple(sorted(lane_free)),
+        })
+    cell_count = len(component_wires) * len(event["coincident_keys"])
+    if constraint_rank == cell_count:
+        verdict = "INHERITED"
+    elif constraint_rank == 0:
+        verdict = "FREE"
+    else:
+        verdict = "MIXED"
+    return {
+        "event_index": event["event_index"],
+        "normalized_depth": event["normalized_depth"],
+        "predecessor_depth": event["predecessor_depth"],
+        "keys": event["coincident_keys"],
+        "component_scope": (
+            "Cycle-848 structural precondition components: exact predecessor "
+            "variation-support wires plus landed predicate wires (40,81,105)."
+        ),
+        "component_wires": component_wires,
+        "state_component_pattern_by_key": tuple(pattern_rows),
+        "component_cell_count": cell_count,
+        "inherited_constraint_rank": constraint_rank,
+        "free_degree_count": len(free_components),
+        "free_components": tuple(free_components),
+        "observed_pattern_satisfies_derived_constraints": consistency,
+        "verdict": verdict,
+    }
+
+
+def precondition_entailment(
+    events: tuple[dict[str, object], ...], fixtures: dict[str, object],
+    inheritance: dict[str, object],
+) -> dict[str, object]:
+    grouped: dict[str, list[dict[str, object]]] = defaultdict(list)
+    structural_types = {}
+    for event in events:
+        key = event["type_sha256"]
+        grouped[key].append(occurrence_entailment(event, fixtures, inheritance))
+        structural_types[key] = event["structural_precondition_type"]
+    type_rows = []
+    for index, key in enumerate(sorted(grouped), 1):
+        occurrences = tuple(grouped[key])
+        cells = sum(row["component_cell_count"] for row in occurrences)
+        rank = sum(row["inherited_constraint_rank"] for row in occurrences)
+        free = tuple(
+            component for row in occurrences for component in row["free_components"]
+        )
+        verdict = "INHERITED" if rank == cells else "FREE" if rank == 0 else "MIXED"
+        type_rows.append({
+            "type_id": f"T{index:02d}",
+            "type_sha256": key,
+            "cycle848_structural_type": structural_types[key],
+            "occurrence_count": len(occurrences),
+            "occurrences": occurrences,
+            "component_cell_count": cells,
+            "inherited_constraint_rank": rank,
+            "free_degree_count": len(free),
+            "free_components": free,
+            "verdict": verdict,
+            "entailment_basis": (
+                "Only the level-1 fixed wire values and level-2 fixed pair "
+                "parities derived in A are used.  Trajectory occurrence is used "
+                "only to state the target pattern, never to prove entailment."
+            ),
+        })
+    certificate = {
+        "cycle848_generated_event_count": len(events),
+        "cycle848_precondition_type_count": len(type_rows),
+        "declared_component_scope": (
+            "For each Cycle-848 structural precondition occurrence, the state-component "
+            "pattern is the exact bit assignment on its predecessor variation support "
+            "union (40,81,105), separately at the printed predecessor depth and keys."
+        ),
+        "declared_inheritance_levels_used": (
+            "LEVEL_1_SINGLE_WIRE_VALUE",
+            "LEVEL_2_UNORDERED_WIRE_PAIR_PARITY",
+        ),
+        "per_type": tuple(type_rows),
+        "trajectory_cooccurrence_used_as_entailment": False,
+        "finding": "ALL_16_BRAID_PRECONDITION_TYPES_CLASSIFIED_BY_DERIVATION",
+        "pass": (
+            len(events) == EXPECTED_EVENT_COUNT
+            and len(type_rows) == EXPECTED_TYPE_COUNT
+            and sum(row["occurrence_count"] for row in type_rows)
+            == EXPECTED_EVENT_COUNT
+            and all(
+                occurrence["observed_pattern_satisfies_derived_constraints"]
+                for row in type_rows for occurrence in row["occurrences"]
+            )
+            and all(row["verdict"] in {"INHERITED", "MIXED", "FREE"}
+                    for row in type_rows)
+        ),
+    }
+    return certificate
+
+
+def analyze_once(fixtures: dict[str, object]) -> dict[str, object]:
+    gate_words = build_gate_words(fixtures["macros"])
+    certificate_a, private = inheritance_census(fixtures, gate_words)
+    nine = evolve_nine(fixtures)
+    events = transition_rows(nine, compile_words(gate_words))
+    certificate_b = precondition_entailment(events, fixtures, private)
+    return {
+        "A_INHERITANCE_CENSUS": certificate_a,
+        "B_BRAID_PRECONDITION_ENTAILMENT": certificate_b,
+        "nine_reconstruction": {
+            key: value for key, value in nine.items() if key != "states_by_depth"
+        },
+        "event_census_sha256": digest(tuple({
+            key: value for key, value in event.items()
+            if key != "predecessor_states"
+        } for event in events)),
+    }
+
+
+def decomposition(certificate_b: dict[str, object]) -> dict[str, object]:
+    verdict_counts = Counter(row["verdict"] for row in certificate_b["per_type"])
+    inherited = verdict_counts["INHERITED"]
+    mixed = verdict_counts["MIXED"]
+    free = verdict_counts["FREE"]
+    if inherited == EXPECTED_TYPE_COUNT:
+        verdict = "INITIAL_CONDITION_INHERITED_MECHANISM_CANDIDATE_NOT_CLOSURE"
+        finding = "ALL_16_TYPES_INHERITED_MECHANISM_CANDIDATE_FOUND_NOT_CLOSURE"
+    elif 0 < inherited < EXPECTED_TYPE_COUNT:
+        verdict = "MERGED_WHY_DECOMPOSES"
+        finding = "PARTIAL_INHERITANCE_DECOMPOSES_THE_MERGED_WHY"
+    else:
+        verdict = "INHERITANCE_MECHANISM_DOES_NOT_REACH_BRAID_AT_DECLARED_LEVELS"
+        finding = "ZERO_TYPES_INHERITED_BOUNDED_NEGATIVE_AT_DECLARED_LEVELS"
+    mysterious = tuple(
+        row["type_id"] for row in certificate_b["per_type"]
+        if row["verdict"] != "INHERITED"
+    )
+    result = {
+        "inherited_types": inherited,
+        "mixed_types": mixed,
+        "free_types": free,
+        "total_types": EXPECTED_TYPE_COUNT,
+        "decomposition": f"{inherited}/16 inherited, {mixed}/16 mixed, {free}/16 free",
+        "mysterious_types": mysterious,
+        "verdict": verdict,
+        "candidate_not_closure": inherited == EXPECTED_TYPE_COUNT,
+        "bounded_scope": (
+            "Complete-generator boundaries; declared ladder of single-wire values "
+            "then unordered wire-pair parities; Cycle-848 depths 0..64 and its "
+            "structural state-component preconditions only."
+        ),
+        "finding": finding,
+        "pass": (
+            inherited + mixed + free == EXPECTED_TYPE_COUNT
+            and certificate_b["pass"]
+            and (
+                (inherited == EXPECTED_TYPE_COUNT and result_case(verdict, "candidate"))
+                or (0 < inherited < EXPECTED_TYPE_COUNT and result_case(verdict, "decomposes"))
+                or (inherited == 0 and result_case(verdict, "negative"))
+            )
+        ),
+    }
+    return result
+
+
+def result_case(verdict: str, case: str) -> bool:
+    expected = {
+        "candidate": "INITIAL_CONDITION_INHERITED_MECHANISM_CANDIDATE_NOT_CLOSURE",
+        "decomposes": "MERGED_WHY_DECOMPOSES",
+        "negative": "INHERITANCE_MECHANISM_DOES_NOT_REACH_BRAID_AT_DECLARED_LEVELS",
+    }
+    return verdict == expected[case]
+
+
+def run() -> int:
+    started = monotonic()
+    sources, trees = source_controls()
+    fixtures_first = decode_fixtures(trees[AUDIT_INPUT_PATHS[0]])
+    first = analyze_once(fixtures_first)
+    fixtures_second = decode_fixtures(trees[AUDIT_INPUT_PATHS[0]])
+    second = analyze_once(fixtures_second)
+    deterministic = first == second
+    certificate_a = first["A_INHERITANCE_CENSUS"]
+    certificate_b = first["B_BRAID_PRECONDITION_ENTAILMENT"]
+    certificate_c = decomposition(certificate_b)
+    elapsed = monotonic() - started
+    blocked_at_end = tuple(sorted(
+        name for name in sys.modules
+        if name.rsplit(".", 1)[-1] in BLOCKLISTED_MODULES
+    ))
+    controls_base = (
+        sources["pass"]
+        and fixtures_first["public"]["pass"]
+        and fixtures_second["public"]["pass"]
+        and deterministic
+        and first["nine_reconstruction"]["pass"]
+        and second["nine_reconstruction"]["pass"]
+        and not blocked_at_end
+        and not FIREWALL.hits
+        and elapsed < AUDIT_TIMEOUT_SEC
+    )
+    certificate_d = {
+        "source_controls": sources,
+        "fixture_reconstruction_first": fixtures_first["public"],
+        "fixture_reconstruction_second": fixtures_second["public"],
+        "primary_access_policy": (
+            "Every literal AUDIT_INPUT_PATHS entry is SHA/blob pinned, BLOCKLISTED, "
+            "and consumed as text/AST only; no frontier primary is imported or executed."
+        ),
+        "determinism_replay": {
+            "exact": deterministic,
+            "first_sha256": digest(first),
+            "second_sha256": digest(second),
+            "nine_first": first["nine_reconstruction"],
+            "nine_second": second["nine_reconstruction"],
+            "event_census_first_sha256": first["event_census_sha256"],
+            "event_census_second_sha256": second["event_census_sha256"],
+        },
+        "blocked_modules_loaded_at_end": blocked_at_end,
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "runtime_below_limit": elapsed < AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "stdout_below_limit": False,
+        "finding": "CONTROLS_FAIL",
         "pass": False,
-        "terminal": "CYCLE854_IMPLEMENTATION_IN_PROGRESS",
-    }))
-    return 1
+    }
+    certificates = {
+        "A_INHERITANCE_CENSUS": certificate_a,
+        "B_BRAID_PRECONDITION_ENTAILMENT": certificate_b,
+        "C_DECOMPOSITION": certificate_c,
+        "D_CONTROLS": certificate_d,
+    }
+    checks = {
+        "A_INHERITANCE_CENSUS": bool(certificate_a["pass"]),
+        "B_BRAID_PRECONDITION_ENTAILMENT": bool(certificate_b["pass"]),
+        "C_DECOMPOSITION": bool(certificate_c["pass"]),
+        "D_CONTROLS": False,
+    }
+    report = {
+        "cycle": 854,
+        "title": "the inheritance attack on the braid",
+        "decomposition": certificate_c["decomposition"],
+        "inherited_wire_count": certificate_a["level_1"]["family_count"],
+        "inherited_pair_parity_count": certificate_a["level_2"]["family_count"],
+        "verdict": certificate_c["verdict"],
+        "runtime_seconds": round(elapsed, 6),
+        "checks": {},
+        "pass": False,
+        "terminal": "CYCLE854_BRAID_INHERITANCE_HONEST_FAIL",
+    }
+
+    def render() -> str:
+        lines = []
+        for name, value in certificates.items():
+            lines.append(f"{name}: {'PASS' if checks[name] else 'FAIL'}")
+            lines.append(f"{name}_FINDING={value['finding']}")
+            lines.append(f"{name}_CERTIFICATE={compact(value)}")
+        lines.append(f"REPORT={compact(report)}")
+        return "\n".join(lines) + "\n"
+
+    for _iteration in range(12):
+        certificate_d["pass"] = controls_base
+        certificate_d["finding"] = (
+            "CONTROLS_PASS" if certificate_d["pass"] else "CONTROLS_FAIL"
+        )
+        checks["D_CONTROLS"] = certificate_d["pass"]
+        report["checks"] = dict(checks)
+        report["pass"] = all(checks.values())
+        report["terminal"] = (
+            "CYCLE854_BRAID_INHERITANCE_PASS"
+            if report["pass"] else "CYCLE854_BRAID_INHERITANCE_HONEST_FAIL"
+        )
+        output = render()
+        stdout_bytes = len(output.encode("utf-8"))
+        certificate_d["stdout_bytes"] = stdout_bytes
+        certificate_d["stdout_below_limit"] = stdout_bytes < STDOUT_LIMIT_BYTES
+        controls_base = controls_base and stdout_bytes < STDOUT_LIMIT_BYTES
+    output = render()
+    if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
+        print(compact({
+            "cycle": 854,
+            "pass": False,
+            "terminal": "CYCLE854_STDOUT_LIMIT_EXCEEDED",
+            "stdout_bytes": len(output.encode("utf-8")),
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        }))
+        return 1
+    sys.stdout.write(output)
+    return 0 if report["pass"] else 1
+
+
+def main() -> int:
+    if len(sys.argv) == 2 and sys.argv[1] == "--_worker":
+        try:
+            return run()
+        except Exception as error:
+            print(compact({
+                "cycle": 854,
+                "pass": False,
+                "terminal": "CYCLE854_BRAID_INHERITANCE_HONEST_FAIL",
+                "exception_type": type(error).__name__,
+                "exception": str(error),
+            }))
+            return 1
+    if len(sys.argv) != 1:
+        raise SystemExit("usage: frontier_cycle854_braid_inheritance_2026_07_28.py")
+    try:
+        completed = subprocess.run(
+            (sys.executable, str(Path(__file__).resolve()), "--_worker"),
+            cwd=ROOT, capture_output=True, text=True, timeout=AUDIT_TIMEOUT_SEC,
+        )
+    except subprocess.TimeoutExpired:
+        print(compact({
+            "cycle": 854,
+            "pass": False,
+            "terminal": "CYCLE854_TIMEOUT",
+            "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        }))
+        return 1
+    stdout_bytes = len(completed.stdout.encode("utf-8"))
+    if stdout_bytes >= STDOUT_LIMIT_BYTES:
+        print(compact({
+            "cycle": 854,
+            "pass": False,
+            "terminal": "CYCLE854_STDOUT_LIMIT_EXCEEDED",
+            "stdout_bytes": stdout_bytes,
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        }))
+        return 1
+    sys.stdout.write(completed.stdout)
+    if completed.stderr:
+        sys.stderr.write(completed.stderr)
+    return completed.returncode
 
 
 if __name__ == "__main__":

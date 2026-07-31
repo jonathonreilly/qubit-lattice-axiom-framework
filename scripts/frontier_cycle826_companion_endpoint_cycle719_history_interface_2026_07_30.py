@@ -213,6 +213,7 @@ def interface_key(
 
 def composition_certificate(truth: dict[str, object]) -> dict[str, object]:
     cases = failures = interface_failures = 0
+    endpoint_scratch_cleanup_failures = 0
     maximum_residual = 0.0
     histories = {(): 0, (-1,): 0, (1,): 0}
     actual_history = {
@@ -246,6 +247,9 @@ def composition_certificate(truth: dict[str, object]) -> dict[str, object]:
                         interface_rows.append(interface)
                         post_left, post_right, pointer = interface
                         interface_failures += pointer != (post_left ^ post_right)
+                        endpoint_scratch_cleanup_failures += bool(
+                            (output >> width) & 0b11
+                        )
                         controller_history = actual_history[
                             (post_left, post_right, pointer)
                         ]
@@ -280,6 +284,7 @@ def composition_certificate(truth: dict[str, object]) -> dict[str, object]:
         "physical_or_target_phase_classes": cases,
         "composition_failures": failures,
         "interface_xor_failures": interface_failures,
+        "endpoint_scratch_cleanup_failures": endpoint_scratch_cleanup_failures,
         "maximum_composition_residual": maximum_residual,
         "history_class_counts": {str(key): value for key, value in histories.items()},
         "per_shape": tuple(per_shape),
@@ -316,6 +321,7 @@ def main() -> None:
             and composition["physical_or_target_phase_classes"] == 1312
             and composition["composition_failures"] == 0
             and composition["interface_xor_failures"] == 0
+            and composition["endpoint_scratch_cleanup_failures"] == 0
             and composition["maximum_composition_residual"] < TOL
         ),
         "success_finalizer_deletion_is_active": (

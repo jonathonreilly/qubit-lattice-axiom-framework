@@ -4,7 +4,7 @@
   "authority": "none",
   "artifact_provenance_sha256": {
     "note": "75a6e9757178d0d9f42e971b6e2efcdec0e98b359497b2d60571a03b05302d8a",
-    "runner": "f27cf1ed377d5eba1434ae4106bf84bfee2a8ef7524243040933f76e3efaad72"
+    "runner": "7132c530e8ff55e9015094b3eaba48b50eabf3ebf85aee31d4b126a5879e8af5"
   },
   "checks_passed": 5,
   "checks_total": 5,
@@ -30,6 +30,7 @@
     "physical_or_target_phase_classes": 1312,
     "composition_failures": 0,
     "interface_xor_failures": 0,
+    "endpoint_scratch_cleanup_failures": 0,
     "maximum_composition_residual": 0.0,
     "history_class_counts": {
       "no_packet": 656,

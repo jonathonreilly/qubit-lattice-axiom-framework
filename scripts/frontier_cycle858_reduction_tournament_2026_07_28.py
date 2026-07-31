@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Cycle 858: exact reduction tournament for the 748 multi-source setups.
+"""Cycle 858 v2: exact reduction tournament for 748 multi-source setups.
 
 Only the landed Cycle-719 controller core is executable science input.  The
 four later lineage primaries are SHA-pinned, parsed as text/AST controls, and
 blocked from import.  The runner independently rebuilds the independent-set
 census on C_11, derives the free rotation quotient, tests exact trajectory
-conjugacy under the wire permutations that preserve every ordered core
+conjugacy only under wire permutations that preserve every ordered core
 generator, and tests whether each k=2 representative is a composition of its
-two single-source trajectories.
+two single-source trajectories.  V2 adopts the independent checker's result:
+the seven trajectory coincidences are not rule conjugacies, so all 68 C_11
+families remain dynamically irreducible at the declared ladder.
 
 The dynamical ladder is deliberately lazy but exact.  Reversibility proves
 zero dynamical preperiod for every orbit.  Exact E1/E2 weight prefixes and
@@ -36,6 +38,7 @@ from itertools import combinations
 import json
 from math import ceil, comb, factorial, log2
 from pathlib import Path
+import random
 import subprocess
 import sys
 from time import monotonic
@@ -515,6 +518,22 @@ def watched_residual_wires() -> tuple[int, ...]:
     return tuple(rows)
 
 
+def contiguous_ranges(values: tuple[int, ...]) -> tuple[tuple[int, int], ...]:
+    """Compact an ordered integer census without hiding its exact support."""
+
+    if not values:
+        return ()
+    rows = []
+    start = prior = values[0]
+    for value in values[1:]:
+        if value != prior + 1:
+            rows.append((start, prior))
+            start = value
+        prior = value
+    rows.append((start, prior))
+    return tuple(rows)
+
+
 def derive_rule_automorphisms(context: dict[str, object]) -> dict[str, object]:
     """Derive the exact ordered-generator wire-permutation group.
 
@@ -551,8 +570,8 @@ def derive_rule_automorphisms(context: dict[str, object]) -> dict[str, object]:
     order_decimal = str(order)
     result = {
         "declared_family": (
-            "all permutations of the 5815 state wires preserving every "
-            "ordered Cycle-719 generator's kind and operand roles"
+            "identity on every generator-active wire and arbitrary free "
+            "permutation of the never-active wires"
         ),
         "derivation": (
             "partition wires by their complete (generator ordinal, kind, "
@@ -565,7 +584,17 @@ def derive_rule_automorphisms(context: dict[str, object]) -> dict[str, object]:
         "cell_size_census": dict(sorted(Counter(cell_sizes).items())),
         "active_singleton_wires": len(active),
         "inactive_rule_identity_wires": len(inactive),
+        "never_active_wire_census": {
+            "count": len(inactive),
+            "exact_ranges": contiguous_ranges(inactive),
+            "sha256": digest(inactive),
+            "never_an_ordered_generator_operand": True,
+        },
         "group_structure": f"S_{len(inactive)}",
+        "group_action_disclosure": (
+            f"S_{len(inactive)} permutes only the exact never-active-wire "
+            "census; all 545 generator-active wires are fixed pointwise"
+        ),
         "group_order": order_decimal,
         "group_order_digits": len(order_decimal),
         "group_order_sha256": sha256(order_decimal.encode("ascii")).hexdigest(),
@@ -636,7 +665,7 @@ def exact_candidate_cycle(
     automorphisms: dict[str, object],
     residual_wires: tuple[int, ...],
 ) -> dict[str, object]:
-    """Compare every state until a minimal common full-state return."""
+    """Certify trajectory coincidence without inferring rule conjugacy."""
 
     states = [context["initial_states"][key] for key in keys]
     initials = tuple(states)
@@ -646,7 +675,7 @@ def exact_candidate_cycle(
     e1_sequences = [[] for _key in keys]
     e2_sequences = [[] for _key in keys]
     state_streams = [sha256() for _key in keys]
-    conjugacy_exact_every_moment = True
+    same_group_orbit_every_moment = True
     full_state_equal_every_moment = True
     first_return = [None] * len(keys)
     closure = None
@@ -657,7 +686,7 @@ def exact_candidate_cycle(
             state_automorphism_signature(state, active, inactive)
             for state in states
         )
-        conjugacy_exact_every_moment &= len(set(signatures)) == 1
+        same_group_orbit_every_moment &= len(set(signatures)) == 1
         full_state_equal_every_moment &= len(set(states)) == 1
         for lane, state in enumerate(states):
             e1_sequences[lane].append(
@@ -670,7 +699,7 @@ def exact_candidate_cycle(
         if moment > 0 and all(value is not None for value in first_return):
             closure = moment
             break
-        if not conjugacy_exact_every_moment:
+        if not same_group_orbit_every_moment:
             break
         next_states = []
         for state, word in zip(states, words):
@@ -695,14 +724,19 @@ def exact_candidate_cycle(
         "full_state_equal_every_moment": full_state_equal_every_moment,
         "determinism_duplicate_state_digest_exact_every_moment":
             determinism_duplicate_exact,
-        "fixed_automorphism_exists": conjugacy_exact_every_moment,
-        "fixed_automorphism_witness": (
+        "trajectory_identity_map_exists": same_group_orbit_every_moment,
+        "trajectory_map_witness": (
             "identity on all wires"
             if full_state_equal_every_moment else
             "identity on active wires plus one fixed inactive permutation"
         ),
-        "infinite_sequence_certificate": (
-            "all states conjugate at every t=0..period and every lane "
+        "trajectory_only_disclosure": (
+            "This certifies only the displayed initial-state trajectories; "
+            "global rule intertwining is tested separately and is required "
+            "before any dynamical merge."
+        ),
+        "infinite_trajectory_certificate": (
+            "all states coincide at every t=0..period and every lane "
             "returns exactly to its own t=0 state at the common minimal "
             "period; periodic repetition proves all t"
         ),
@@ -725,7 +759,7 @@ def exact_candidate_cycle(
     result["pass"] = (
         closure is not None
         and period == closure
-        and conjugacy_exact_every_moment
+        and same_group_orbit_every_moment
         and full_state_equal_every_moment
         and determinism_duplicate_exact
         and len(set(e1_rows)) == 1
@@ -733,6 +767,95 @@ def exact_candidate_cycle(
         and len(set(result["state_sequence_sha256_by_key"])) == 1
     )
     return result
+
+
+def group_fixed_witness_states(
+    width: int,
+    active_wires: tuple[int, ...],
+    inactive_wires: tuple[int, ...],
+) -> tuple[State, ...]:
+    """Inputs fixed by every declared never-active-wire permutation."""
+
+    rows = [(0,) * width, (1,) * width]
+    rng = random.Random(8580064)
+    for inactive_value in (0, 1):
+        for _sample in range(8):
+            state = [inactive_value] * width
+            for wire in active_wires:
+                state[wire] = rng.getrandbits(1)
+            if not all(state[wire] == inactive_value for wire in inactive_wires):
+                raise AssertionError("non-uniform inactive witness")
+            rows.append(tuple(state))
+    return tuple(rows)
+
+
+def exact_rule_nonconjugacies(
+    candidate_groups: tuple[tuple[Key, ...], ...],
+    context: dict[str, object],
+    active_wires: tuple[int, ...],
+    inactive_wires: tuple[int, ...],
+) -> tuple[dict[str, object], ...]:
+    """Refute every proposed merge under every declared rule automorphism.
+
+    Each witness input is fixed by all of S_inactive.  Every permitted map
+    also fixes active outputs pointwise.  Thus one active-output difference
+    proves P F_left(s) != F_right P(s) simultaneously for every permitted P.
+    """
+
+    width = int(context["summary"]["state_width"])
+    witness_states = group_fixed_witness_states(
+        width, active_wires, inactive_wires
+    )
+    rows = []
+    for group in candidate_groups:
+        for left, right in combinations(group, 2):
+            left_word = context["words"][left[1]]
+            right_word = context["words"][right[1]]
+            witness = None
+            for state_index, state in enumerate(witness_states):
+                left_output = K.A.apply_semantic(state, left_word)
+                right_output = K.A.apply_semantic(state, right_word)
+                differences = tuple(
+                    wire for wire in active_wires
+                    if left_output[wire] != right_output[wire]
+                )
+                if differences:
+                    witness = {
+                        "group_fixed_input_index": state_index,
+                        "input_fixed_by_every_declared_map": all(
+                            state[wire] == state[inactive_wires[0]]
+                            for wire in inactive_wires
+                        ),
+                        "active_output_difference_count": len(differences),
+                        "first_active_difference_wires": differences[:20],
+                        "left_output_active_sha256": sha256(bytes(
+                            left_output[wire] for wire in active_wires
+                        )).hexdigest(),
+                        "right_output_active_sha256": sha256(bytes(
+                            right_output[wire] for wire in active_wires
+                        )).hexdigest(),
+                    }
+                    break
+            rows.append({
+                "left": left,
+                "right": right,
+                "left_boundary_word_sha256": K.gate_digest(left_word),
+                "right_boundary_word_sha256": K.gate_digest(right_word),
+                "boundary_words_literal_equal": left_word == right_word,
+                "tested_map_family": (
+                    "all rule-preserving maps: identity on active wires "
+                    f"times S_{len(inactive_wires)} on never-active wires"
+                ),
+                "intertwining_equation": "P F_left(s) = F_right P(s)",
+                "all_rule_preserving_maps_refuted": witness is not None,
+                "exact_refutation_basis": (
+                    "the witness is fixed by every permitted P, every P "
+                    "fixes active outputs, and the two rules differ on an "
+                    "active output wire"
+                ),
+                "witness": witness,
+            })
+    return tuple(rows)
 
 
 def dynamical_equivalence_certificate(
@@ -812,8 +935,16 @@ def dynamical_equivalence_certificate(
         )
         for group in candidate_groups
     )
-    merged_keys = sum(len(group) - 1 for group in candidate_groups)
-    class_count = len(representatives) - merged_keys
+    failed_merge_rows = exact_rule_nonconjugacies(
+        candidate_groups, context, active, inactive
+    )
+    honest_rule_preserving_merges = tuple(
+        row for row in failed_merge_rows
+        if not row["all_rule_preserving_maps_refuted"]
+    )
+    class_count = len(representatives) - len(
+        honest_rule_preserving_merges
+    )
     prefix_profile_rows = tuple({
         "key": key,
         "exact_prefix_moments": (0, PROFILE_PREFIX_END),
@@ -846,10 +977,11 @@ def dynamical_equivalence_certificate(
                 "never approximated or used unresolved"
             ),
             "level_ii": (
-                "one fixed rule-automorphism must conjugate the full state "
-                "sequence at equal moments; t=0..2 rejects candidates, and "
-                "survivors are checked through a common minimal full-state "
-                "period"
+                "a rule-preserving map must both map the declared initial "
+                "state and globally intertwine the two boundary rules; "
+                "t=0..2 rejects non-candidates, trajectory survivors are "
+                "checked through their exact periods, and only then is the "
+                "global intertwining equation tested with exact witnesses"
             ),
             "E1": reading_profile(
                 (next(iter(context["initial_states"].values())),),
@@ -868,20 +1000,25 @@ def dynamical_equivalence_certificate(
             rejected_profile_equal_pairs,
         "earliest_exact_conjugacy_obstruction_census":
             dict(sorted(earliest_obstruction_census.items())),
-        "exact_prefix_survivor_groups": candidate_groups,
-        "exact_full_cycle_rows": exact_rows,
-        "merge_list": candidate_groups,
+        "trajectory_coincidence_candidate_groups": candidate_groups,
+        "exact_full_cycle_trajectory_rows": exact_rows,
+        "failed_merge_nonconjugacy_rows": failed_merge_rows,
+        "failed_proposed_pair_merge_count": len(failed_merge_rows),
+        "honest_rule_preserving_merges": honest_rule_preserving_merges,
+        "merge_list": honest_rule_preserving_merges,
         "dynamical_class_count": class_count,
         "irreducibility_statement": (
-            f"{class_count} exact classes: only the printed merge groups "
-            "survive; every other pair has an exact level-I profile or "
-            "level-II rule-automorphism obstruction"
+            f"{class_count} classes, dynamically irreducible at the "
+            "declared ladder: every non-candidate pair has an exact "
+            "level-I/initial-orbit obstruction and all seven trajectory-"
+            "coincident proposed merges fail global rule intertwining"
         ),
         "classification_sha256": digest((
             candidate_groups,
             tuple(
                 row["state_sequence_sha256_by_key"] for row in exact_rows
             ),
+            failed_merge_rows,
             tuple(
                 row["exact_level_II_orbit_signature_sha256"]
                 for row in prefix_profile_rows
@@ -921,8 +1058,16 @@ def dynamical_equivalence_certificate(
             row["common_minimal_cycle_period"] for row in exact_rows
         ) == (5952, 4464)
         and all(row["pass"] for row in exact_rows)
+        and len(failed_merge_rows) == 7
+        and all(
+            not row["boundary_words_literal_equal"]
+            and row["all_rule_preserving_maps_refuted"]
+            and row["witness"]["input_fixed_by_every_declared_map"]
+            for row in failed_merge_rows
+        )
+        and not honest_rule_preserving_merges
         and result["determinism_duplicate_state_digest_exact"]
-        and class_count == 64
+        and class_count == 68
         and profile_equal_pairs
         == rejected_profile_equal_pairs + 7
     )
@@ -999,8 +1144,11 @@ def first_interaction_row(
     multi_positions = positions
     left_position = (positions[0],)
     right_position = (positions[1],)
-    boundary_agreement = [
+    forward_atom_order_agreement = [
         multi == xor_null_state(left, right, baseline)
+    ]
+    reverse_atom_order_agreement = [
+        multi == xor_null_state(right, left, baseline)
     ]
     rail_composition_exact = True
     first_witness = None
@@ -1043,6 +1191,11 @@ def first_interaction_row(
                         ^ refine_right[target]
                         ^ baseline[target]
                     )
+                    reverse_null_value = (
+                        refine_right[target]
+                        ^ refine_left[target]
+                        ^ baseline[target]
+                    )
                     if refine_multi[target] != null_value:
                         first_witness = {
                             "controller_substep": step + 1,
@@ -1055,6 +1208,8 @@ def first_interaction_row(
                             "witness_wire": target,
                             "multi_value": refine_multi[target],
                             "null_composition_value": null_value,
+                            "reverse_atom_order_null_value":
+                                reverse_null_value,
                         }
                         break
                 if first_witness is None:
@@ -1075,8 +1230,11 @@ def first_interaction_row(
             == set(left_position) | set(right_position)
             and not (set(left_position) & set(right_position))
         )
-        boundary_agreement.append(
+        forward_atom_order_agreement.append(
             multi == xor_null_state(left, right, baseline)
+        )
+        reverse_atom_order_agreement.append(
+            multi == xor_null_state(right, left, baseline)
         )
         if first_witness is not None:
             break
@@ -1087,11 +1245,17 @@ def first_interaction_row(
         else int(first_witness["controller_substep"])
     )
     expected_horizon = declared_horizon(event, distance)
-    prefix_exact = (
+    forward_prefix_exact = (
         observed_horizon is not None
-        and all(boundary_agreement[:observed_horizon])
-        and not boundary_agreement[observed_horizon]
+        and all(forward_atom_order_agreement[:observed_horizon])
+        and not forward_atom_order_agreement[observed_horizon]
     )
+    reverse_prefix_exact = (
+        observed_horizon is not None
+        and all(reverse_atom_order_agreement[:observed_horizon])
+        and not reverse_atom_order_agreement[observed_horizon]
+    )
+    prefix_exact = forward_prefix_exact and reverse_prefix_exact
     if first_witness is None:
         classification = "COMPOSITIONAL"
     elif observed_horizon > 0 and prefix_exact:
@@ -1107,11 +1271,22 @@ def first_interaction_row(
             "independent landed single-source evolution"
         ),
         "classification": classification,
-        "exact_compositional_PREFIX_length": observed_horizon,
-        "agreement_horizon_boundaries": (
+        "horizon_convention": (
+            "agreement at boundaries 0 through H-1; FIRST disagreement "
+            "exactly at boundary H"
+        ),
+        "first_disagreement_boundary_H": observed_horizon,
+        "agreement_boundaries_through_H_minus_1": (
             None if observed_horizon is None
             else (0, observed_horizon - 1)
         ),
+        "both_atom_order_directions_exactly_match": (
+            forward_prefix_exact and reverse_prefix_exact
+        ),
+        "forward_atom_order_agreement":
+            tuple(forward_atom_order_agreement),
+        "reverse_atom_order_agreement":
+            tuple(reverse_atom_order_agreement),
         "first_interaction_effect": first_witness,
         "declared_horizon_law_value": expected_horizon,
         "horizon_law_exact": observed_horizon == expected_horizon,
@@ -1136,7 +1311,7 @@ def compositional_certificate(
     rows = tuple(first_interaction_row(key, context) for key in k2_keys)
     horizon_table = tuple(sorted(
         (row["event"], row["separation_d"],
-         row["exact_compositional_PREFIX_length"])
+         row["first_disagreement_boundary_H"])
         for row in rows
     ))
     expected_table = tuple(
@@ -1163,21 +1338,32 @@ def compositional_certificate(
         ),
         "horizon_law": {
             "domain": "event e in {0,1,2,3}, separation d in {2,3,4,5}",
-            "e=0_or_1": "H(e,d)=12-d",
-            "e=2": "H(2,d)=d-1 if d is even, otherwise d",
-            "e=3": "H(3,2)=2,H(3,3)=1,H(3,4)=4,H(3,5)=4",
+            "honest_convention": (
+                "agreement through boundary H-1; FIRST disagreement "
+                "exactly at boundary H"
+            ),
+            "e=0_or_1_first_disagreement": "H(e,d)=12-d",
+            "e=2_first_disagreement": (
+                "H(2,d)=d-1 if d is even, otherwise d"
+            ),
+            "e=3_first_disagreement": (
+                "H(3,2)=2,H(3,3)=1,H(3,4)=4,H(3,5)=4"
+            ),
             "complete_table_event_distance_H": horizon_table,
         },
         "representative_rows": rows,
         "k2_representatives_tested": len(rows),
         "classification_census": classification_census,
+        "both_atom_order_directions_verified": all(
+            row["both_atom_order_directions_exactly_match"] for row in rows
+        ),
         "verdict": "PREFIX_COMPOSITIONAL_WITH_EXACT_HORIZON_LAW",
         "what_remains_free": (
             "For k=2, event e (four choices) and separation d (four "
-            "choices) remain free; after H(e,d), the shared nonlinear "
+            "choices) remain free; starting at H(e,d), the shared nonlinear "
             "ordered core-gate interaction schedule is indispensable.  "
             "This is still 16 inputs (4 bits), so atom factorization does "
-            "not reduce the k=2 address space.  The 48 dynamical classes "
+            "not reduce the k=2 address space.  The 52 C_11 families "
             "with k=3,4,5 are not generated by this declared k=2 test."
         ),
         "composition_sha256": digest(horizon_table),
@@ -1185,6 +1371,7 @@ def compositional_certificate(
     result["pass"] = (
         len(rows) == EXPECTED_ORBIT_COUNTS[2]
         and all(row["pass"] for row in rows)
+        and result["both_atom_order_directions_verified"]
         and horizon_table == expected_table
         and classification_census == {"PREFIX_COMPOSITIONAL": 16}
     )
@@ -1210,6 +1397,7 @@ def verdict_certificate(
     levels = {
         "starting_setups": information_row(EXPECTED_TOTAL_SETUPS),
         "C11_families": information_row(EXPECTED_TOTAL_REPRESENTATIVES),
+        "C11_allocation_within_orbit": information_row(RING_STATIONS),
         "dynamical_classes": information_row(dynamical_count),
         "atomic_description_selection_space": information_row(
             k2_classes + higher_classes
@@ -1217,11 +1405,8 @@ def verdict_certificate(
     }
     result = {
         "reduction_chain": (
-            f"748 --(C_11, proven free)--> 68 --(dynamical "
-            f"equivalence)--> {dynamical_count} --(compositional "
-            f"generation)--> 4 event atoms + 16 event/separation "
-            f"interaction schedules + {higher_classes} ungenerated "
-            "higher-source classes"
+            "748 (~9.55 bits) --C_11 proven--> 68 (6.09 bits) "
+            "--dynamical equivalence: NO further reduction--> 68"
         ),
         "input_information_at_each_level": levels,
         "k2_dynamical_classes": k2_classes,
@@ -1232,27 +1417,49 @@ def verdict_certificate(
             "k2_selector_bits": 4,
             "post_meet_law": "supplied exact shared nonlinear core schedule",
             "ungenerated_k3_k4_k5_classes": higher_classes,
+            "compression_scope": (
+                "atoms plus the interaction law compress the DESCRIPTION "
+                "but do not reduce the 68-class count"
+            ),
+        },
+        "irreducible_input_decomposition": {
+            "family_bits_log2_68": round(log2(68), 2),
+            "allocation_bits_log2_11": round(log2(11), 2),
+            "combined_bits_log2_748": round(log2(748), 2),
+            "statement": (
+                "6.09 family bits + 3.46 allocation bits = 9.55 bits"
+            ),
         },
         "final_irreducible_input_statement": (
-            f"The full declared tournament still needs a choice among "
-            f"{dynamical_count} effective inputs, exactly 6 bits.  The "
-            "k=2 atom/schedule factorization reorganizes its 16 inputs but "
-            "does not reduce their 4-bit selector; no atom-generation "
-            "claim is made for the 48 higher-source classes."
+            "The irreducible input is 6.09 family bits plus 3.46 C_11 "
+            "allocation bits.  The k=2 atom/schedule factorization "
+            "compresses the description but not the class count; no "
+            f"atom-generation claim is made for the {higher_classes} "
+            "higher-source classes."
         ),
     }
     result["pass"] = (
         len(representatives) == EXPECTED_TOTAL_REPRESENTATIVES
-        and dynamical_count == 64
+        and dynamical_count == 68
         and k2_classes == 16
-        and higher_classes == 48
+        and higher_classes == 52
         and composition["verdict"]
         == "PREFIX_COMPOSITIONAL_WITH_EXACT_HORIZON_LAW"
         and levels["starting_setups"]["fixed_length_address_bits"] == 10
         and levels["C11_families"]["fixed_length_address_bits"] == 7
-        and levels["dynamical_classes"]["fixed_length_address_bits"] == 6
+        and levels["C11_allocation_within_orbit"]
+        ["fixed_length_address_bits"] == 4
+        and levels["dynamical_classes"]["fixed_length_address_bits"] == 7
         and levels["atomic_description_selection_space"]
-        ["fixed_length_address_bits"] == 6
+        ["fixed_length_address_bits"] == 7
+        and result["irreducible_input_decomposition"] == {
+            "family_bits_log2_68": 6.09,
+            "allocation_bits_log2_11": 3.46,
+            "combined_bits_log2_748": 9.55,
+            "statement": (
+                "6.09 family bits + 3.46 allocation bits = 9.55 bits"
+            ),
+        }
     )
     return result
 
@@ -1380,7 +1587,7 @@ def run() -> int:
         replay_d,
         tuple(
             row["state_sequence_sha256_by_key"]
-            for row in primary[1]["exact_full_cycle_rows"]
+            for row in primary[1]["exact_full_cycle_trajectory_rows"]
         ),
     ))
     elapsed = monotonic() - started

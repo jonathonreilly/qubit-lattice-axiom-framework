@@ -1,0 +1,67 @@
+{
+  "artifact": "frontier_cycle827_cycle719_parity_safe_typed_controller_atlas_2026_07_30.py",
+  "audit": "unset",
+  "authority": "none",
+  "artifact_provenance_sha256": {
+    "note": "2c0fd28b3823078caa5b483bcab265c975090d399f8cc160eea5ac66e69c187e",
+    "runner": "402d9c2fcc19dd7c104885703c9cce88f011ec743b48b9fd07c3eec3c3c7720d"
+  },
+  "checks_passed": 6,
+  "checks_total": 6,
+  "claim_scope": "fixed finite parity-safe one/two-M2 recompile and typed route atlas for the landed 12-bank Cycle719 controller; Cycle823 same-chart port placement and intrinsic atlas generation remain open",
+  "semantic_recompile": {
+    "semantic_gates": 61562,
+    "control_order_swaps": 6,
+    "endpoint_truth_rows": 4,
+    "normalized_vs_landed_failures": 0,
+    "normalized_inverse_failures": 0
+  },
+  "elementary_factors": {
+    "total": 740226,
+    "CNOT": 303942,
+    "H": 96952,
+    "T": 193904,
+    "T_dagger": 145428,
+    "original_prefix_parity_violations": 12,
+    "normalized_prefix_parity_violations": 0,
+    "toffoli_decomposition_maximum_residual": 7.346882794269506e-16
+  },
+  "typed_atlas": {
+    "unique_two_M2_pairs": 41717,
+    "two_M2_factor_occurrences": 303942,
+    "charged_unique_pairs": 8,
+    "charged_pair_occurrences": 24,
+    "charged_corridor_sites": 84,
+    "charged_route_exchange": "FSWAP",
+    "neutral_route_exchange": "SWAP",
+    "neutral_unique_pairs_rerouted": 1297,
+    "neutral_pair_occurrences_rerouted": 7700,
+    "maximum_route_distance": 45,
+    "routed_gates_per_H": 13315498,
+    "routed_gates_per_130_H_orbit": 1731014740,
+    "missing_or_structural_route_failures": 0,
+    "charged_neutral_fixed_type_overlap": 0
+  },
+  "legacy_active_control": {
+    "charged_corridor_neutral_persistent_hits": 10,
+    "charged_neutral_corridor_overlaps": 34,
+    "neutral_corridor_charged_persistent_hits": 12,
+    "control_order_mutations_detected": 6,
+    "nonlocal_unique_route_deletions_detected": 41056
+  },
+  "covariance": {
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "unique_route_edges": 27740,
+    "transported_type_partition_failures": 0,
+    "transported_nearest_neighbour_failures": 0,
+    "coordinate_product_failures": 0
+  },
+  "open_boundary": [
+    "same-chart Cycle823 endpoint-to-controller physical port placement",
+    "intrinsic query-free atlas generation and local type/genesis enforcement",
+    "autonomous token/bank genesis, admission, renewal, and multi-source arbitration",
+    "physical time, permanent Record, Born/history, source/gravity, and prediction bridge"
+  ],
+  "status": "cycle827-cycle719-parity-safe-typed-controller-atlas-bounded-positive"
+}

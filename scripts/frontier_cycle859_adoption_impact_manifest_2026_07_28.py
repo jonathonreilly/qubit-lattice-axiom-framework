@@ -106,10 +106,12 @@ EXPLICIT_E1_E2_PATTERNS = (
         r"QUOTATION MARK}]?(?:Records?\b|candidate|reading|every|orbit|first)",
         re.IGNORECASE,
     ),
-    re.compile(
-        r"\b(?:candidate|reading|completion|adoption|adopted)\s+E[12]\b",
-        re.IGNORECASE,
-    ),
+)
+BROAD_E1_E2_PATTERN = re.compile(
+    r"(?<![A-Za-z0-9])E[12](?![A-Za-z0-9])"
+)
+RECORD_CONTEXT_PATTERN = re.compile(
+    r"\brecord(?:s|ed|ing)?\b|record[_-]", re.IGNORECASE
 )
 EXPLICIT_RULE_PATTERNS = (
     re.compile(
@@ -245,7 +247,17 @@ def count_patterns(text: str, patterns: Iterable[re.Pattern[str]]) -> int:
 def contextual_e_mentions(text: str) -> int:
     """Count E1/E2 labels only when syntax identifies the Record reading."""
 
-    return count_patterns(text, EXPLICIT_E1_E2_PATTERNS)
+    positions = set()
+    for pattern in EXPLICIT_E1_E2_PATTERNS:
+        for match in pattern.finditer(text):
+            label = BROAD_E1_E2_PATTERN.search(match.group())
+            if label:
+                positions.add(match.start() + label.start())
+    for match in BROAD_E1_E2_PATTERN.finditer(text):
+        window = text[max(0, match.start() - 200):match.end() + 200]
+        if RECORD_CONTEXT_PATTERN.search(window):
+            positions.add(match.start())
+    return len(positions)
 
 
 def scan_fragment(text: str) -> dict[str, int]:
@@ -306,6 +318,8 @@ class ScriptTokenVisitor(ast.NodeVisitor):
             key = node.slice
             if isinstance(key, ast.Constant) and isinstance(key.value, str):
                 self.add("field_reads", key.value)
+                self.visit(node.value)
+                return
         self.generic_visit(node)
 
 
@@ -633,6 +647,13 @@ def cycle828_spot_verification(
             and certificate_b["pass"]
             and certificate_b["candidate"] == "E2"
         ),
+        "E1_every_H_attestation": {
+            "transients": certificate_a["full_record_set_count"],
+            "zero_record_cycles":
+                certificate_a["remaining_zero_record_cycle_count"],
+            "single_source_46_reproduced":
+                certificate_a["single_source_46_reproduced"],
+        },
         "E2_landed_reproduction": {
             "transients": certificate_b["fifteen_event_count"],
             "zero_record_cycles":
@@ -651,6 +672,11 @@ def cycle828_spot_verification(
     result["pass"] = (
         result["pinned_cache_sha256"] == EXPECTED_SHA256[CACHE_PATHS[0]]
         and result["both_readings_already_ran"]
+        and result["E1_every_H_attestation"] == {
+            "transients": 58,
+            "zero_record_cycles": 9,
+            "single_source_46_reproduced": True,
+        }
         and result["E2_landed_reproduction"] == {
             "transients": 15,
             "zero_record_cycles": 20,
@@ -791,6 +817,13 @@ def certificate_d_controls(
         for path, tree in primary_trees.items()
     }
     current_head = git_text("rev-parse", "HEAD")
+    scoped_tree_delta_from_R28 = tuple(
+        line for line in git_text(
+            "diff", "--name-status", BASE_R28_SHA, SNAPSHOT_HEAD_SHA,
+            "--", "scripts", "docs",
+        ).splitlines()
+        if line
+    )
     result = {
         "certificate": "D_CONTROLS",
         "finding": "CONTROLS_CLEAN",
@@ -818,6 +851,9 @@ def certificate_d_controls(
         "base_R28_is_snapshot_ancestor": git_bytes(
             "merge-base", "--is-ancestor", BASE_R28_SHA, SNAPSHOT_HEAD_SHA
         ) == b"",
+        "scoped_tree_delta_from_R28": scoped_tree_delta_from_R28,
+        "only_manifest_added_since_R28":
+            scoped_tree_delta_from_R28 == (f"A\t{MANIFEST_PATH}",),
         "recent_main_landings_scope": "OUT_OF_SCOPE_IF_OUTSIDE_PINNED_LINEAGE",
         "owner_lane_live_main_action": "RERUN_ON_LIVE_MAIN_HEAD",
         "text_AST_only_paths": TEXT_AST_ONLY_PATHS,
@@ -853,6 +889,7 @@ def certificate_d_controls(
         and result["running_branch"] == EXPECTED_BRANCH
         and result["snapshot_is_execution_head"]
         and result["base_R28_is_snapshot_ancestor"]
+        and result["only_manifest_added_since_R28"]
         and not result["blocked_imports_in_self"]
         and not result["blocked_modules_loaded"]
         and not result["blocker_hits"]

@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T20:48:51.808928+00:00",
+  "audit_invocation_history": [
+    "c525be642c694582be9d7dc3ab373c42"
+  ],
+  "audit_invocation_id": "c525be642c694582be9d7dc3ab373c42",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 6.524,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "c75da032ddc002833b1357f7b53a66005085cf04488de29b78459ddb5f2727f0",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "c75da032ddc002833b1357f7b53a66005085cf04488de29b78459ddb5f2727f0",
+    "runner_path": "scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 45
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260801-399bb24d",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebraic proof is exhaustive, but clean retention of the asserted derived negative boundary does not close because the packet lacks the required N5 live resolution-scale evidence and an independent N7 resolution surface.",
   "claim_id": "charged_lepton_two_higgs_canonical_reduction_note",
-  "claim_scope": null,
+  "claim_scope": "Proper-support strata classified as moduli-only forests.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T20:48:51.808928+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 6.524,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Every proper subset of the six-cycle is a forest whose saturated incidence matrix has rank equal to its number of active edges, leaving no phase coordinate.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "625be061b9f9acd1d682f975d382a006a3006ee720882b94d5f23e6c24536828",
   "note_path": "docs/CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Add current-cycle runner lines covering all five N5 resolution classes and an independent N7 resolution artifact for the forest boundary, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1470,14 +1518,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 60,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 60
   },
   "runner_path": "scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py",
   "title": "Supplied Two-Offset 3\u00d73 Texture Canonical Reduction Theorem",
   "transitive_descendants": 45,
-  "verdict_rationale": null
+  "verdict_rationale": "Mathematically, the source and runner give five distinct attacks on the proper-support claim\u2014an exhaustive 64-mask census, leaf peeling, one-zero paths, Smith/global analysis, and the specified-action incidence computation\u2014and the single asserted wall is the exact forest/no-phase boundary, so N2 is vacuous; N3 phrases are non-load-bearing scope language and N4 has no prior-route residual. N5 cannot be completed because the live stdout supplies none of the required per_element, per_site, per_mode, per_block, and lattice_wide resolution lines. N6's indexed primitives, open gates, and reframes do not alter the supplied finite-matrix problem, while the relevant N8 same-lane echo supplies no independent retained witness. N7 therefore remains unresolved because the packet has no independent live or retained/accepted resolution surface for the wall, so the mandatory no-go-discipline gate cannot certify the asserted derived boundary."
 }

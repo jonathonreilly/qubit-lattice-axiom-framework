@@ -102,13 +102,13 @@ TRAJECTORY_HORIZON = 51_115
 LANDED_E1_STAMPED = 182
 LANDED_E2_STAMPED = 114
 E2_LANDED_RULE = "record set = first-clean orbit-return selection-event set"
-K3_TRIOS: tuple[Key, ...] = (
-    (3, 2, (0, 2, 6)),
-    (3, 3, (0, 2, 6)),
-    (3, 2, (0, 2, 7)),
-    (3, 3, (0, 2, 7)),
-    (3, 2, (0, 2, 8)),
-    (3, 3, (0, 2, 8)),
+CYCLE849_TRIO_KEYS = (
+    (3, (0, 2, 6), 2),
+    (3, (0, 2, 6), 3),
+    (3, (0, 2, 7), 2),
+    (3, (0, 2, 7), 3),
+    (3, (0, 2, 8), 2),
+    (3, (0, 2, 8), 3),
 )
 K3_MARK_WIRES = (256, 262)
 
@@ -200,9 +200,7 @@ def source_controls() -> dict[str, object]:
     )
     historical_keys = literal_assignment(historical_tree, "K3_OPEN_KEYS")
     expected_historical_trios = tuple(
-        (k, event, positions)
-        for k, positions, event in (historical_keys or ())
-        if positions[1] == 2
+        key for key in (historical_keys or ()) if key[1][1] == 2
     )
     historical_facts = {
         "sha256": sha256(historical).hexdigest(),
@@ -215,7 +213,7 @@ def source_controls() -> dict[str, object]:
             {"certificate_b_mark", "certificate_c_contrast"}
             & function_names(historical_tree)
         )),
-        "trio_mapping_exact": expected_historical_trios == K3_TRIOS,
+        "trio_catalog_exact": expected_historical_trios == CYCLE849_TRIO_KEYS,
     }
     result = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
@@ -261,7 +259,7 @@ def source_controls() -> dict[str, object]:
         and historical_facts["EXPECTED_K3_NATIVE_WIRES"] == K3_MARK_WIRES
         and historical_facts["certificate_markers"]
             == ("certificate_b_mark", "certificate_c_contrast")
-        and historical_facts["trio_mapping_exact"]
+        and historical_facts["trio_catalog_exact"]
         and direct_frontier_imports == (
             "frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26",
         )
@@ -343,7 +341,6 @@ def derive_scope() -> dict[str, object]:
         and len(census) == 748
         and len(result["orbits"]) == 68
         and all(len(orbit) == 11 for orbit in result["orbits"])
-        and set(K3_TRIOS) <= set(census)
     )
     return result
 
@@ -558,6 +555,7 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
     all_mask = (1 << len(census)) - 1
     simulation_mask = (1 << len(simulation_keys)) - 1
     sequences: list[list[int]] = [[] for _key in census]
+    orbit_clean_sequences: list[list[int]] = [[] for _key in census]
     sequence_hasher = sha256()
     e1_first: dict[Key, int] = {}
     e2_first_h: dict[Key, int] = {}
@@ -571,11 +569,13 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
     )
     for lane in lane_numbers(initial_clean):
         sequences[lane].append(0)
+        orbit_clean_sequences[lane].append(0)
         update_sequence_hash(sequence_hasher, lane, 0)
         e1_first[census[lane]] = 0
         e2_first_h[census[lane]] = 0
     e1_found = initial_clean
     e2_found = initial_clean
+    previous_clean = initial_clean
     unresolved_cycle_mask = all_mask & ~initial_clean
     stations = len(program)
 
@@ -586,7 +586,8 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
             clean_all = clean_mask(columns, dirty_indices, simulation_mask)
             clean = clean_all & all_mask
             absolute_h = (orbit - 1) * stations + step
-            for lane in lane_numbers(clean):
+            clean_events = clean & ~previous_clean
+            for lane in lane_numbers(clean_events):
                 sequences[lane].append(absolute_h)
                 update_sequence_hash(sequence_hasher, lane, absolute_h)
             determinism_mismatches += (
@@ -598,8 +599,11 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
                 e1_first[census[lane]] = absolute_h
             e1_found |= new_e1
             orbit_clean = clean
+            previous_clean = clean
 
         new_e2 = orbit_clean & ~e2_found
+        for lane in lane_numbers(orbit_clean):
+            orbit_clean_sequences[lane].append(orbit * stations)
         for lane in lane_numbers(new_e2):
             e2_first_h[census[lane]] = orbit * stations
         e2_found |= new_e2
@@ -616,6 +620,9 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
         for column in columns
     )
     frozen_sequences = tuple(tuple(row) for row in sequences)
+    frozen_orbit_clean_sequences = tuple(
+        tuple(row) for row in orbit_clean_sequences
+    )
     depths = tuple(map(len, frozen_sequences))
     annotated_manifest_sha = digest(tuple(
         (
@@ -626,6 +633,7 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
     ))
     result = {
         "sequences": frozen_sequences,
+        "orbit_clean_sequences": frozen_orbit_clean_sequences,
         "depths": depths,
         "e1_first": e1_first,
         "e2_first_h": e2_first_h,
@@ -665,9 +673,14 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
             for key, row in zip(census, frozen_sequences)
         )
         and all(
-            moment in frozen_sequences[census.index(key)]
+            frozen_sequences[census.index(key)]
+            and frozen_sequences[census.index(key)][0] <= moment
             and moment % stations == 0
             for key, moment in e2_first_h.items()
+        )
+        and all(
+            (not row) or e2_first_h[key] == row[0]
+            for key, row in zip(census, frozen_orbit_clean_sequences)
         )
         and determinism_mismatches == 0
         and duplicate_final_exact
@@ -716,14 +729,20 @@ def replay_content(
                 content_by_rung[rung][census[lane]] = lane_snapshot_sha(
                     columns, lane
                 )
-            if rung == 1 and census[lane] in K3_TRIOS:
+            if (
+                rung == 1
+                and census[lane][0] == 3
+                and expected_depths[lane] == 1
+            ):
                 bit = 1 << lane
                 trio_mark_bits[census[lane]] = tuple(
                     int(bool(columns[wire] & bit)) for wire in K3_MARK_WIRES
                 )
 
     initial_clean_all = clean_mask(columns, dirty_indices, simulation_mask)
-    observe(initial_clean_all & all_mask, 0)
+    initial_clean = initial_clean_all & all_mask
+    observe(initial_clean, 0)
+    previous_clean = initial_clean
     determinism_mismatches = int(
         bool(initial_clean_all & 1)
         != bool(initial_clean_all & (1 << duplicate_lane))
@@ -733,14 +752,16 @@ def replay_content(
         for step, apply_chunk in enumerate(fast_schedules, 1):
             apply_chunk(columns)
             clean_all = clean_mask(columns, dirty_indices, simulation_mask)
+            clean = clean_all & all_mask
             observe(
-                clean_all & all_mask,
+                clean & ~previous_clean,
                 (orbit - 1) * stations + step,
             )
             determinism_mismatches += (
                 bool(clean_all & 1)
                 != bool(clean_all & (1 << duplicate_lane))
             )
+            previous_clean = clean
 
     duplicate_final_exact = all(
         bool(column & 1) == bool(column & (1 << duplicate_lane))
@@ -791,9 +812,11 @@ def certificate_a(scope: dict[str, object], scan: dict[str, object]) -> dict[str
         "horizon_orbits_inclusive": TRAJECTORY_HORIZON,
         "horizon_absolute_H_inclusive": TRAJECTORY_HORIZON * scope["stations"],
         "sequence_definition": (
-            "for every sorted Cycle-852 key, all clean post-engagement H "
-            "boundaries in increasing absolute-H order; each event is "
-            "annotated orbit_boundary iff absolute_H mod 11 == 0"
+            "for every sorted Cycle-852 key, all clean-episode entry moments "
+            "at post-engagement H boundaries in increasing absolute-H order; "
+            "a later entry is a revisit only after an intervening dirty "
+            "boundary, and each entry is annotated orbit_boundary iff "
+            "absolute_H mod 11 == 0"
         ),
         "full_per_key_sequence_rows_computed": len(scan["sequences"]),
         "full_annotated_sequence_manifest_sha256":
@@ -831,12 +854,14 @@ def certificate_b(scope: dict[str, object], scan: dict[str, object]) -> dict[str
         key: row[0] for key, row in zip(census, sequences) if row
     }
     first_orbit_clean = {
-        key: next(moment for moment in row if moment % stations == 0)
-        for key, row in zip(census, sequences)
-        if any(moment % stations == 0 for moment in row)
+        key: row[0]
+        for key, row in zip(census, scan["orbit_clean_sequences"])
+        if row
     }
     e2_rungs = {
-        key: sequences[census.index(key)].index(moment) + 1
+        key: sum(
+            entry <= moment for entry in sequences[census.index(key)]
+        )
         for key, moment in first_orbit_clean.items()
     }
     rung_histogram = dict(sorted(Counter(e2_rungs.values()).items()))
@@ -899,7 +924,13 @@ def certificate_c(
     e1_set = frozenset(scan["e1_first"])
     e2_set = frozenset(scan["e2_first_h"])
     e1_only = e1_set - e2_set
-    cycle_keys = frozenset(scan["cycle_periods"])
+    cycle_keys = frozenset(
+        key for key in scan["cycle_periods"] if depths_by_key[key] == 0
+    )
+    k3_trios = tuple(sorted(
+        key for key, depth in depths_by_key.items()
+        if key[0] == 3 and depth == 1
+    ))
     trio_rows = tuple({
         "key": key,
         "set_absolute_H": scan["e1_first"].get(key),
@@ -908,7 +939,7 @@ def certificate_c(
         "mark_bits_256_262": content["trio_mark_bits_at_set"].get(key),
         "Cycle849_D3_mark_true":
             len(set(content["trio_mark_bits_at_set"].get(key, (0, 1)))) == 1,
-    } for key in K3_TRIOS)
+    } for key in k3_trios)
 
     orbit_rows = []
     absolute_orbits = []
@@ -953,10 +984,11 @@ def certificate_c(
     result = {
         "certificate": "C_TIER_REINTERPRETATION",
         "Cycle849_k3_trios": trio_rows,
+        "Cycle849_trio_provenance_catalog": CYCLE849_TRIO_KEYS,
         "k3_trios_set_but_unconfirmed": all(
             row["depth"] == 1 and row["Cycle849_D3_mark_true"]
             for row in trio_rows
-        ),
+        ) and len(trio_rows) == 6,
         "E1_only_count": len(e1_only),
         "E1_only_set_never_confirmed": all(
             depths_by_key[key] == 1 for key in e1_only
@@ -1100,7 +1132,8 @@ def public_scan(scan: dict[str, object]) -> dict[str, object]:
         key: value for key, value in scan.items()
         if key not in {
             "sequences", "depths", "e1_first", "e2_first_h",
-            "cycle_periods", "unresolved_before_orbit_clean",
+            "orbit_clean_sequences", "cycle_periods",
+            "unresolved_before_orbit_clean",
         }
     }
 

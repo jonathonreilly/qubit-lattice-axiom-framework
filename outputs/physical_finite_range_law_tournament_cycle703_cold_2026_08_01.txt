@@ -1,0 +1,41 @@
+PASS a1_landed_nn_ladder
+PASS a2_bessel_green_prediction
+PASS a3_bessel_green_split
+PASS a4_landed_face_mutation_ratio
+PASS a5_landed_separation
+PASS a6_static_residual_and_ratio
+PASS a7_comparison_threshold
+anchors sep=0.124213944348 staticerr19=0.00374578316797 thr=0.03745783168
+PASS b1_face_shell_exact_l19
+PASS b2_face_shell_exact_l9
+PASS b3_shell_offsets_and_degrees
+PASS b4_shell_bond_energy_identity
+PASS b5_mixed_law_positive_definite
+PASS c1_scale_blind_nn_law
+PASS c2_scale_blind_mixed_law
+PASS d1_shell_second_moments
+PASS d2_symbol_quadratic_limit
+PASS e1_jacobian_fd_convergence
+PASS e2a_sigma_min_positive
+PASS e2b_rows_1319_collinear
+PASS e2c_nearnull_outside_cone
+PASS e2d_conic_linear_response_min
+conic min=0.8550380731 u=0.786289,-0,0.213711 margin=228.267
+PASS e3a_secant_smalleps_matches_j
+PASS e3b_secant_saturation_monotone
+PASS e3c_landed_secant_wiring
+secant j19f=-2.399651995 s0.1=-1.24213944348 landed=-1.24213944348 sat=1.93187
+PASS f1_grid_ratios_finite
+PASS f2_grid_argmin_recheck
+PASS f3_grid_min_sep_over_threshold
+grid min=0.1275845602 at (0.25, 0.0, 0.0) margin=34.0609 pure25=0.127585,0.307963,1.7394
+PASS g1_search_bookkeeping
+PASS g2_ghost_objective_recheck
+PASS g3_ghost_obj_min_over_threshold
+PASS g4_holdout_sep_over_threshold
+ghost w*=(0.129140625, 0.26, 0.0) obj=0.34429157 sep=0.13397784 hold*=1.7921009 holdgrid=1.4524776
+nnholdout resid 7:1.115 11:0.06181 15:0.01214 17:0.006491
+PASS h1_wall_time_budget
+PASS h2_stdout_under_6000
+SUMMARY_JSON {"anchors":{"mut19":-4.0411929130059585,"nn_ladder":[-4.112204466641254,-3.938488211332885,-3.9169789686578382],"pred":-3.913233185406517,"pred_split":-3.9132331854898643,"sep":0.12421394434812028,"sep_ratio":33.161007665936864,"staticerr19":0.003745783167973915,"threshold":0.0374578316797},"conic":{"margin":228.266836261,"min":0.855038073072,"search":0.855921612833,"u":[0.786289037867,-0.0,0.213710962133]},"cycle":703,"dev_1319":0.00024370097294,"elapsed_seconds":107.36,"fail":0,"ghost":{"capped":[],"holdout_sep_grid":1.45247757261,"holdout_sep_star":1.79210094375,"obj_min":0.344291566006,"probes":1106,"sep_star":0.133977835178,"start_objs":[0.956936662772,0.956936662772,0.956936662772,0.370029248551,0.956936662772,0.956936662772,0.956936662772,0.345097344012,0.370029248551,0.359665139354,0.344291566006,0.370029248551],"starts_completed":12,"starts_skipped":0,"w_star":[0.129140625,0.26,0.0]},"grid":{"argmin":[0.25,0.0,0.0],"margin":34.0608504224,"min_sep":0.127584560199,"pure_quarter":[0.127584560199,0.307962596333,1.7394008584],"ratios":189},"j19f":-2.3996519947,"jacobian":[-0.931148042332,-4.31254180602,7.42680466901,-2.29754514338,-5.85414357329,4.92276008875,-2.3996519947,-5.98211744595,4.82793196361],"landed_fd":-1.24213944348,"nearnull":[-0.858299914131,0.483121772632,0.172958406017],"nn_holdout_residuals":{"11":0.0618059458985,"15":0.0121393016167,"17":0.00649097380679,"7":1.11509560345},"pass":33,"sat_factor":1.93187005476,"secants":{"eps":[0.001,0.01,0.05,0.1],"s":[-2.38393322309,-2.24734663455,-1.73124998658,-1.24213944348]},"sigma_min":0.00666167073733,"sigma_w":5.0,"solves":1175,"svals":[13.9985597502,2.70167079246,0.00666167073733]}
+TOTAL: PASS=33 FAIL=0

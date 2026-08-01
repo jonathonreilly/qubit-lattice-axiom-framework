@@ -1,44 +1,66 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T18:10:29.570870+00:00",
+  "audit_invocation_history": [
+    "d640bda9466e4f819b51a94941ee7320"
+  ],
+  "audit_invocation_id": "d640bda9466e4f819b51a94941ee7320",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "free_dirac_poincare_representation_bounded_note_2026-05-30": "Exact continuum free-Dirac/Poincare algebra, mass-shell, invariant-measure, Wigner-rotation, given-CAR spectrum, and bispinor-covariance checks on the supplied four-taste pole-derived carrier, excluding reconstruction, domain, exponentiation, and statistics-selection claims."
+    },
+    "dep_claim_type": {
+      "free_dirac_poincare_representation_bounded_note_2026-05-30": "decoration"
+    },
+    "dep_effective_status": {
+      "free_dirac_poincare_representation_bounded_note_2026-05-30": "decoration_under_free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17"
+    },
+    "deps": [
+      "free_dirac_poincare_representation_bounded_note_2026-05-30"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.0,
+    "runner_hash": "a14b9ce9a04b98f6d7bbc8abde3c82eeaf6e64d9506e6316aa56125c26af5d03",
+    "transitive_descendants": 3
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260801-98eafaa8",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Under the stated continuous-section and spin-cover hypotheses, the Wigner cocycle establishes the group law, while dominated convergence and the unitary epsilon/3 density argument establish strong continuity on all of H_1. The chain is standard mathematics over the retained-grade companion carrier.",
   "claim_id": "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
-  "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_scope": "Formal strong-continuity extension for the stated free massive one-particle Wigner action, conditional on a continuous standard-boost section and a consistent spin-cover lift.",
+  "claim_type": "decoration",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": "bounded theorem / direct-support bridge",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "default_positive_theorem",
+  "claim_type_last_reviewed": "2026-08-01T18:10:29.570870+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "free_dirac_poincare_representation_bounded_note_2026-05-30",
   "deps": [
     "free_dirac_poincare_representation_bounded_note_2026-05-30"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_free_dirac_poincare_representation_bounded_note_2026-05-30",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_free_dirac_poincare_representation_bounded_note_2026-05-30",
   "load_bearing_score": 3.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For compactly supported smooth psi, pointwise continuity with common compact domination gives norm continuity by dominated convergence, and unitarity extends it to all H_1 by the epsilon/3 density argument.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "d4e4234e1c87e3c4c3531f5b6663c8d3d7d2e9b1813d125c354e1bad07187e4e",
   "note_path": "docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -195,14 +217,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 8,
+    "B": 40,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 48
   },
   "runner_path": "scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py",
   "title": "Free Dirac Wigner Action Strong-Continuity Bridge",
   "transitive_descendants": 3,
-  "verdict_rationale": null
+  "verdict_rationale": "The cited authority is retained-grade through its decoration-under-retained status and supplies the mass shell, invariant measure, and unitary SU(2) fiber data. Given the audited scope's continuous standard-boost section and consistent spin-cover lift, the cocycle, dominated-convergence, and density-extension steps are class-A standard mathematics over that single parent, making this a decoration rather than an independent framework derivation. The runner's 1+1 numerical and same-axis checks corroborate local pieces but do not themselves prove the full 3+1 statement."
 }

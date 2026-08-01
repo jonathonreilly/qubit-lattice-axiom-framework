@@ -1,44 +1,99 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T19:15:36.036968+00:00",
+  "audit_invocation_history": [
+    "d20426fdcc92426b87e28544e7475629"
+  ],
+  "audit_invocation_id": "d20426fdcc92426b87e28544e7475629",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/frontier_dimension_selection.py": "48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83"
+    },
+    "load_bearing_score": 4.17,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_dimension_selection.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "48b650e3500d7d92cafe1ae852317f25d00ab40bbb27f160acc07ba87189ec83",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "e930b674a18932d85782a39a6127bbdfbbe04774008c78afb915318d033811c3",
+        "cache_runner_sha256": "121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade",
+    "runner_path": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 8
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260801-fcb675ca",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The source-defined potential is undefined at the on-lattice mass point for d>=2, while the runner silently replaces r<0.5 by r=0.5. Therefore the numerical sign certificate is not derived from the displayed source formula as written.",
   "claim_id": "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
-  "claim_scope": null,
+  "claim_scope": "The finite-k normalized-centroid derivative and M=0.005 sign pattern for k=6.0, L_x=40, L_y=60, source at y_mid, mass offset +7, and d=1 through 5 under the potential family displayed in the note.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T19:15:36.036968+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_dimension_selection.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 4.17,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For the stated runner constants, the exact finite-k first derivative is negative for d=1,2 and positive for d=3,4,5, with the M=0.005 probe giving the same signs.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "1ded6f472dafb2f839c25b35ad30bfb279fae11e88719a3a9cb6cb4a65d143dd",
   "note_path": "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after the source explicitly defines the runner's r_eff=max(r,0.5) regularization and the derivative and finite-difference certificates are rerun against that corrected formula.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -224,14 +279,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 11,
+    "B": 14,
+    "C": 31,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 56
   },
   "runner_path": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py",
   "title": "Dimension-Selection Finite-k Centroid-Sign Bridge",
   "transitive_descendants": 8,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the note defines r by the unregularized Euclidean distance, which equals zero at the lattice mass site, making log(r) and r^{-(d-2)} undefined there, whereas both runners silently impose r_eff=max(r,0.5). Why this blocks: the reported derivatives and signs certify the clipped potential, not the displayed potential family, so the source and executable claim surfaces disagree at a load-bearing boundary condition. Repair target: state the r_eff=max(r,0.5) regularization in the source equations and independently recheck every derivative and finite-M value under that definition. Claim boundary until fixed: the runner output supports only a numerical sign pattern for its silently regularized implementation, not the finite-dimensional theorem as written."
 }

@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T17:56:15.151992+00:00",
+  "audit_invocation_history": [
+    "69923df2c8374695908b1a811dc0da32"
+  ],
+  "audit_invocation_id": "69923df2c8374695908b1a811dc0da32",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_schur_covariance_inheritance_narrow.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem."
+    },
+    "dep_claim_type": {
+      "site_phase_cube_shift_intertwiner_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "site_phase_cube_shift_intertwiner_note": "retained"
+    },
+    "deps": [
+      "site_phase_cube_shift_intertwiner_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 6.609,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_schur_covariance_inheritance_narrow.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "input_mismatch",
+        "cache_input_fingerprint_sha256": "773e0944f4ef2522bfc0972a6c6b9453a515fc72966cbc8a17d784f9bdfa211c",
+        "cache_runner_sha256": "5357c787f5764f8cbdeca56b3cfcc9cfd53944eae2e605b5608f0a2356576d2a",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "5357c787f5764f8cbdeca56b3cfcc9cfd53944eae2e605b5608f0a2356576d2a",
+    "runner_path": "scripts/frontier_schur_covariance_inheritance_narrow.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 68
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260801-f3ec9fbe",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The Schur-complement identity closes by direct block algebra, but clean ratification does not: the required N1\u2013N8 evidence gate lacks a fifth distinct marker-bearing N1 route and the exact five-resolution N5 stdout checks.",
   "claim_id": "schur_covariance_inheritance_narrow_theorem_note_2026-05-02",
-  "claim_scope": null,
+  "claim_scope": "Schur complement covariance inheritance for a finite-dimensional block decomposition V=V_1\u2295W under a block-diagonal unitary action, assuming UMU\u2020=M and invertible D.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem (proposed; audit-lane to ratify)",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T17:56:15.151992+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,20 @@
     "site_phase_cube_shift_intertwiner_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 6.609,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Using U_1BU_W\u2020=B and U_WD\u207b\u00b9U_W\u2020=D\u207b\u00b9 gives U_1(A\u2212BD\u207b\u00b9B\u2020)U_1\u2020=A\u2212BD\u207b\u00b9B\u2020.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "e26ee0729ff61ba5a0b79da8b668ea49a694674f72b55877e4ec6a25f2e61596",
   "note_path": "docs/SCHUR_COVARIANCE_INHERITANCE_NARROW_THEOREM_NOTE_2026-05-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle stdout evidence for a fifth genuinely distinct N1 mechanism class and the five exact N5 resolution checks, then re-audit.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -257,14 +311,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 37,
+    "B": 15,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 52
   },
   "runner_path": "scripts/frontier_schur_covariance_inheritance_narrow.py",
   "title": "Schur Complement Covariance Inheritance \u2014 Narrow Theorem",
   "transitive_descendants": 68,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the independently checked block-matrix proof is correct, but the mandatory clean-verdict evidence gate cannot pass because the runner stdout supports only four distinct marker-bearing N1 route classes and supplies no exact five-resolution N5 lines. Why this blocks: the packet expressly forbids audited_clean when that gate cannot pass. Repair target: extend the live runner evidence with a fifth genuinely distinct route and the required per-element, per-site, per-mode, per-block, and lattice-wide checks. Claim boundary until fixed: the finite-dimensional Schur covariance lemma is algebraically supported, but clean audit ratification remains pending the evidence repair."
 }

@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T19:06:34.915081+00:00",
+  "audit_invocation_history": [
+    "58573b0034314dad95709ea954dd2d21"
+  ],
+  "audit_invocation_id": "58573b0034314dad95709ea954dd2d21",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/frontier_ckm_cp_phase_rho_eta_to_delta_narrow.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.322,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_ckm_cp_phase_rho_eta_to_delta_narrow.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "7d2d3aedaf445520713c49144e5fe4249d53a664df1538e0b504a731aba46848",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "7d2d3aedaf445520713c49144e5fe4249d53a664df1538e0b504a731aba46848",
+    "runner_path": "scripts/frontier_ckm_cp_phase_rho_eta_to_delta_narrow.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 4
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260801-dc15174d",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "T1-T6c close algebraically, but the stated hypotheses constrain only squared quantities and do not select the positive roots used in T6d, T7b-T7c, and T8-T9. An explicit first-quadrant definition for delta and nonnegativity definition for eta are missing.",
   "claim_id": "ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "The abstract coordinate, principal-branch trigonometric, integer-k, and J_0 substitution identities T1-T9, plus the explicitly diagnostic finite Wolfenstein-truncated witness T10; no physical selection of the substituted inputs was audited.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-08-01T19:06:34.915081+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 3.322,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The step from the squared definitions to \u201cdelta = arccos(1/sqrt(k))\u201d and \u201ceta = sqrt(r^2 * w_perp)\u201d selects positive roots.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "508a4a28f5c99958e0b47f1dbdabb59bd08de996f6578d5e2eb6be9306f3d830",
   "note_path": "docs/CKM_CP_PHASE_RHO_ETA_TO_DELTA_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Add explicit hypotheses or definitions delta in (0, pi/2) and eta >= 0, then rerun with negative-root and second-quadrant counterchecks.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1330,14 +1376,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 30,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 30
   },
   "runner_path": "scripts/frontier_ckm_cp_phase_rho_eta_to_delta_narrow.py",
   "title": "CKM CP-Phase rho-eta to delta Narrow Theorem",
   "transitive_descendants": 4,
-  "verdict_rationale": null
+  "verdict_rationale": "The definitions determine cos^2(delta), sin^2(delta), tan^2(delta), and eta^2, but not the signs or branches of delta, tan(delta), and eta. For example, delta = pi - arccos(1/sqrt(k)) satisfies all three squared angle definitions while contradicting T6d and the positive tangent in T7b; eta = -sqrt(r^2*w_perp) likewise satisfies D-eta but changes J_0. The runner evaluates only math.acos and the positive square root, so its 30 passing checks do not discharge these omitted domain conditions."
 }

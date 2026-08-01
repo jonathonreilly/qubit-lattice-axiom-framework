@@ -1102,6 +1102,8 @@ def main() -> None:
         "CYCLE864_LOCAL_GRANT_ARBITER_CONDITIONAL_PASS"
         if report["pass"] else "CYCLE864_LOCAL_GRANT_ARBITER_FAIL"
     )
+    if not report["pass"]:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

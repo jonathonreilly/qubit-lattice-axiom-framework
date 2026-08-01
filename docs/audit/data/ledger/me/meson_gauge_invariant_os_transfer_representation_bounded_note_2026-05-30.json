@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T19:17:17.937608+00:00",
+  "audit_invocation_history": [
+    "c732e130e83e4726aadde4052e0476f3"
+  ],
+  "audit_invocation_id": "c732e130e83e4726aadde4052e0476f3",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 22,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+    },
+    "dep_claim_type": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+    },
+    "deps": [
+      "staggered_only_det_positivity_case_a_note_2026-05-17"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 2.822,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "28b99471f9377af741a92bf83fbda146d5871ebff8d6bd67855035cda5081da5",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "28b99471f9377af741a92bf83fbda146d5871ebff8d6bd67855035cda5081da5",
+    "runner_path": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 4
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260801-469bde49",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The displayed Wick contraction and intertwiner algebra support the finite identity, but the restricted packet clips both registered load-bearing evidence surfaces. The packet preflight therefore forbids complete independent closure.",
   "claim_id": "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
-  "claim_scope": null,
+  "claim_scope": "On the four listed finite static-background carriers at m=0.5 and Lt=28, the same-M connected four-field Wick minor is asserted to equal the finite spectral trace kernel configuration-by-configuration and under determinant-weighted finite averaging, with Gram positivity and the narrow empty-vacuum vanishing boundary.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T19:17:17.937608+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,22 @@
     "staggered_only_det_positivity_case_a_note_2026-05-17"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 2.822,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Using A W_a = W_a G_a, C W_b = -W_b G_b, and the isometries, the connected contraction -Tr(L_left^dag C L_right A) becomes Tr(V_left^dag G_b V_right G_a).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "df286514817ef8276bcb429c61a890943ce37a298f3a71157bbfcac55e2ec626",
   "note_path": "docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with complete, unclipped SHA-pinned runner stdout and the full retained determinant-positivity authority, then repeat the independent finite-identity audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1524,14 +1580,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 64,
     "B": 0,
-    "C": 0,
+    "C": 52,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 116
   },
   "runner_path": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
   "title": "Gauge-Invariant Meson Same-Matrix Wick-Minor / Exact Finite-Kernel Identity on Listed Carriers \u2014 Bounded Note",
   "transitive_descendants": 4,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the runner stdout and retained determinant-positivity authority are clipped, so the complete registered evidence cannot be independently audited; the note additionally establishes only the narrow derived boundary Fhat_V|Omega>=0 and the resulting empty-vacuum sandwich vanishing, not a broader no-go. Why this blocks: the binding packet preflight expressly forbids audited_clean when these load-bearing surfaces are clipped. Repair target: provide complete SHA-pinned stdout and the full authority text, preserving the runner source, and repeat the algebra and numerical-accounting checks. Claim boundary until fixed: the visible source and PASS checks provisionally support the listed finite same-M identity, but neither retained closure nor a physical operator-Hilbert-space meson bridge is ratified."
 }

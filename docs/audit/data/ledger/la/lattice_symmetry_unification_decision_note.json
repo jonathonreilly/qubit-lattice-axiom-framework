@@ -1,45 +1,110 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T18:17:58.069784+00:00",
+  "audit_invocation_history": [
+    "e34a32c1dc4d4ad89633b0ef46c5cb8a"
+  ],
+  "audit_invocation_id": "e34a32c1dc4d4ad89633b0ef46c5cb8a",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 4,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/lattice_mirror_hybrid.py": "28c23fe871ffc356a4a4cd9b0a8a76985a2a464c79c3389ad96651084bcb3e97",
+      "scripts/lattice_symmetry_unification_decision.py": "baa6e0f9d16de2fad7be55b9fa11b673a80f1b88005803ae4a03dc6106bb709d"
+    },
+    "load_bearing_score": 4.807,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "de9e7b95edbc5ce2aba094a67aa7f55e55e53a0d7208dfec9bfa950a9bbc0927",
+        "cache_runner_sha256": "b3b00bf6b2a8c28d2b85b9446f6ee251fbd5f3af42bad03c7431b8b38b9f7f4c",
+        "cache_status": "ok"
+      },
+      "scripts/lattice_mirror_hybrid.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/lattice_symmetry_unification_decision.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "baa6e0f9d16de2fad7be55b9fa11b673a80f1b88005803ae4a03dc6106bb709d",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "b3b00bf6b2a8c28d2b85b9446f6ee251fbd5f3af42bad03c7431b8b38b9f7f4c",
+    "runner_path": "scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 13
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260801-5e755943",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner and an independent transcript aggregation close the stated counts and signs, but the stretch-negative claim lacks the required alternative-route, steelman, and cross-cycle closure; only the partial finite attempt closes.",
   "claim_id": "lattice_symmetry_unification_decision_note",
-  "claim_scope": null,
+  "claim_scope": "The supplied execution transcript reports 36 nonpositive tradeoff rows, 44 nonpositive canonical barrier-distance points, and 0/36 accepted rows, without excluding alternate models or physical bridges.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T18:17:58.069784+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/lattice_mirror_hybrid.py",
     "scripts/lattice_symmetry_unification_decision.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 4.807,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Every one of the 36 supplied tradeoff keys has a nonpositive final-detector centroid-shift proxy, with strict maximum -4.744643220520, and the supplied predicate accepts 0/36 rows.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "stretch_attempt_negative"
+  ],
   "note_hash": "723d9c732ef17b39da7a406914ffc0c206fd81a25140cccae260dcd2f0c31ae4",
   "note_path": "docs/LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: reframe the theorem as a partial stretch-attempt transcript or add five distinct live-evidenced N1 routes plus resolved N7 and N8 dispositions.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -247,14 +312,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 5,
     "B": 0,
-    "C": 0,
+    "C": 10,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 15
   },
   "runner_path": "scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py",
   "title": "Finite Lattice-Symmetry Proxy Census \u2014 Bounded Theorem",
   "transitive_descendants": 13,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: N1 fails because the artifact tests only the supplied finite-case mechanism and closes fewer than five distinct attack routes; N7 and N8 therefore remain unresolved, while N2 has no wall pair, N4 no prior witness, and N6 no partial-closure candidate supplying route exhaustion. Why this blocks: N3 contract terms such as boundary, canonical, and normalization are non-load-bearing rather than hidden admissions, and N5 rhetoric is explicitly census-scoped, but those checks do not turn one attempted route into a claim-cementing bounded theorem. Repair target: supply a validator-complete N1-N8 packet with five genuinely distinct live-evidenced routes, a resolved steelman, and complete cross-cycle dispositions. Claim boundary until fixed: independent transcript aggregation verifies 36 unique nonpositive tradeoff rows, maximum -4.74464322 at (4, narrow_center, -1), 44 nonpositive barrier points, and 0/36 accepted rows, without foreclosing alternate models or physical bridges."
 }

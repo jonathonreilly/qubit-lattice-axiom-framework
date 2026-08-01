@@ -1,47 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T18:21:55.108721+00:00",
+  "audit_invocation_history": [
+    "3d483a1787a5431891efa30d57e10173"
+  ],
+  "audit_invocation_id": "3d483a1787a5431891efa30d57e10173",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "free_dirac_poincare_representation_bounded_note_2026-05-30": "Exact continuum free-Dirac/Poincare algebra, mass-shell, invariant-measure, Wigner-rotation, given-CAR spectrum, and bispinor-covariance checks on the supplied four-taste pole-derived carrier, excluding reconstruction, domain, exponentiation, and statistics-selection claims.",
+      "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "Formal strong-continuity extension for the stated free massive one-particle Wigner action, conditional on a continuous standard-boost section and a consistent spin-cover lift."
+    },
+    "dep_claim_type": {
+      "free_dirac_poincare_representation_bounded_note_2026-05-30": "decoration",
+      "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "decoration"
+    },
+    "dep_effective_status": {
+      "free_dirac_poincare_representation_bounded_note_2026-05-30": "decoration_under_free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17",
+      "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "decoration_under_free_dirac_poincare_representation_bounded_note_2026-05-30"
+    },
+    "deps": [
+      "free_dirac_poincare_representation_bounded_note_2026-05-30",
+      "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07"
+    ],
+    "helper_runner_hashes": {
+      "scripts/free_dirac_poincare_representation_2026-05-30.py": "39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214"
+    },
+    "load_bearing_score": 2.585,
+    "runner_hash": "5d76aecb86c966ec587805e761813f3a8c8fa3b32a5cb8c64bad37f8dd6e865d",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260801-65bb728e",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The retained-grade bridge establishes a strongly continuous unitary Wigner action, and Stone's theorem then supplies its self-adjoint one-parameter generators. The present note adds bounded algebraic and finite-proxy checks but no independent theorem beyond that parent chain.",
   "claim_id": "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T18:21:55.108721+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
   "deps": [
     "free_dirac_poincare_representation_bounded_note_2026-05-30",
     "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [
     "scripts/free_dirac_poincare_representation_2026-05-30.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
   "load_bearing_score": 2.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The 2026-06-07 Wigner bridge supplies the functional-analytic consequence that the displayed action is a strongly continuous unitary representation, and Stone's theorem supplies the self-adjoint one-parameter generators.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "stretch_attempt_negative"
+  ],
   "note_hash": "c7bccb41cefd6942a4853e89a2055ce8fd817d6573277c29d70e6184f0aa30c3",
   "note_path": "docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Recheck if the Wigner bridge's transitive decoration-under-retained status changes.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -255,14 +285,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 7,
+    "B": 14,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 21
   },
   "runner_path": "scripts/free_dirac_poincare_generators_selfadjointness_2026-05-30.py",
   "title": "Free Dirac Poincare Generators: Direct Integrability Repair",
   "transitive_descendants": 2,
-  "verdict_rationale": null
+  "verdict_rationale": "The positive conclusion follows by applying Stone's theorem to the strongly continuous unitary Wigner action already established by the cited bridge; the current runner chiefly verifies dependencies and supplies finite proxies. Both one-hop authorities carry pipeline-assigned decoration-under-retained status, so no open dependency remains, but the chain reduces to the Wigner bridge plus standard functional analysis and is therefore decoration rather than a new clean theorem. The N1\u2013N8 judgment is that the negative assertion is confined to the tested Gaussian/Nelson route, while the explicit unitary-action route supplies the conclusion; no universal no-go is asserted."
 }

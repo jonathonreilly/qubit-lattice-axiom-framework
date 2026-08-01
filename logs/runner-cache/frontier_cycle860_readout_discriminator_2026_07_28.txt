@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle860_readout_discriminator_2026_07_28.py
+runner_sha256: 28a62fb0bc83ec7a46c18901158693344a84cc1eff8c0c9537b40d9004d8b926
+input_fingerprint_sha256: fa8f2dd8793b9e7dd10fadc42cc0ba8ff7948fbe4f3c7d1606936c6ee4dee391
+timeout_sec: 1400
+exit_code: 0
+elapsed_sec: 112.74
+status: ok
+----- stdout -----
+CYCLE860_READOUT_DISCRIMINATOR
+PROPOSAL_CONTEXT_EXERCISE_ROUTE_1_NO_AXIOM_SURFACE_TOUCHED
+E2_LANDED_RULE :: record set = first-clean orbit-return selection-event set
+CERTIFICATE A_STAMP_REGRESSION PASS {"census_size":748,"certificate":"A_STAMP_REGRESSION","determinism_mismatches":0,"e1_before_or_at_e2_boundary":true,"e1_stamped_count":182,"e2_stamped_count":114,"e2_subset_of_e1":true,"initial_build_failures":0,"landed_expected":[182,114],"pass":true,"per_k_e1":{"2":55,"3":74,"4":42,"5":11},"per_k_e2":{"2":29,"3":60,"4":18,"5":7}}
+CERTIFICATE B_CONTENT_CENSUS PASS {"both_stamped":114,"certificate":"B_CONTENT_CENSUS","content_class_size_histogram":{"1":29,"2":29,"3":1,"4":2,"5":4,"6":2,"9":1,"10":1,"12":1,"15":1,"16":1,"18":3,"50":1},"different_content_examples":[{"e1_absolute_h":541,"e1_content_sha":"bc9bdd500e601a37","e2_content_sha":"32fcb7fee632da04","e2_orbit":424,"key":[3,0,[1,7,9]]},{"e1_absolute_h":386,"e1_content_sha":"1acc9f4f5b703bfc","e2_content_sha":"aa2109170337b724","e2_orbit":379,"key":[3,0,[1,8,10]]},{"e1_absolute_h":540,"e1_content_sha":"bc9bdd500e601a37","e2_content_sha":"32fcb7fee632da04","e2_orbit":424,"key":[3,0,[2,8,10]]}],"different_moment_different_content_count":31,"different_moment_equal_content_count":49,"distinct_content_class_count":76,"e1_only_count":68,"e1_only_examples":[{"content_sha":"0bb75a401c76be06","e1_absolute_h":9,"key":[2,0,[0,2]]},{"content_sha":"0bb75a401c76be06","e1_absolute_h":8,"key":[2,0,[0,3]]},{"content_sha":"0bb75a401c76be06","e1_absolute_h":7,"key":[2,0,[0,4]]}],"pass":true,"same_moment_count":34}
+CERTIFICATE C_SEPARATION_THEOREM PASS {"certificate":"C_SEPARATION_THEOREM","e2_content_count":48,"e2_contents_forced_zero":6,"e2_contents_surviving_free":42,"eq_constraint_count":114,"pass":true,"separable_by_E1_only_existence":true,"separable_on_shared_sector":true,"verdict":"SEPARABLE_WITH_NONTRIVIAL_AGREEING_KERNEL","witness":{"content_sha":"0bb75a401c76be06","key":[2,0,[0,2]],"statement":"any content-determined v with v!=0 on this record content gives I_E1 != 0 = I_E2 on this single history","type":"E1_only_history"},"zero_constraint_count":68}
+CERTIFICATE D_LANDED_VALUE_SCAN PASS {"certificate":"D_LANDED_VALUE_FUNCTION_SCAN","finding":"no multi-source scalar record value function is implemented on the pinned surfaces; the landed corpus evaluates I only on the single-source sector; the separation analysis therefore ranges over ALL admissible content-determined value functions","multi_source_value_function_found":false,"needle_counts":{"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":{"I_value":0,"readout_value":0,"record_value":0,"scalar_readout":0},"scripts/frontier_cycle852_selection_tournament_2026_07_28.py":{"I_value":0,"readout_value":0,"record_value":0,"scalar_readout":0}},"pass":true}
+SUMMARY_JSON {"checks":{"A_STAMP_REGRESSION":true,"B_CONTENT_CENSUS":true,"C_SEPARATION_THEOREM":true,"D_LANDED_VALUE_SCAN":true,"E_CONTROLS":true},"content_digest":"f77c04f33b5c596a0bb5f80e3fa685ddee8b4497069470da6cc34a23a4616150","cycle":860,"pass":true,"runtime_seconds":111.944592,"scan_runtime_seconds":111.919797,"verdict":"SEPARABLE_WITH_NONTRIVIAL_AGREEING_KERNEL"}
+CYCLE860_READOUT_DISCRIMINATOR_PASS
+
+----- stderr -----
+

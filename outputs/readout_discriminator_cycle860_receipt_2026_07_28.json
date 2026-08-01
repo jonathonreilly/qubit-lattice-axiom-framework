@@ -1,0 +1,36 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "supervisor-authored primary (owner-directed exercise Route 1); checker via workhorse",
+  "block": "proof-grade-blockP22-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle860_discriminator_independent_check_2026_07_28.txt": "SUMMARY_JSON.checks map",
+    "logs/runner-cache/frontier_cycle860_readout_discriminator_2026_07_28.txt": "SUMMARY_JSON.checks map"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle860_discriminator_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    },
+    "logs/runner-cache/frontier_cycle860_readout_discriminator_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 860,
+  "files": {
+    "docs/READOUT_DISCRIMINATOR_CYCLE860_BOUNDED_THEOREM_NOTE_2026-07-28.md": "e20081d5f2cb0e20757b5f9ff28bbe971b5a3f6fda92c4b5f060bab3390ae800",
+    "logs/runner-cache/frontier_cycle860_discriminator_independent_check_2026_07_28.txt": "1bf9a6e18aac74d2ec9f96fc3edca7c056676cf0cd6d29878489000b030b7f0d",
+    "logs/runner-cache/frontier_cycle860_readout_discriminator_2026_07_28.txt": "0409ac9bf6b1f9dd63e45d1222069343e60b8a82283904b4c30b208e106dc383",
+    "scripts/frontier_cycle860_discriminator_independent_check_2026_07_28.py": "f5dc7d2940ec96500426ab42905a310e38c2816c64566cdd058356605f004281",
+    "scripts/frontier_cycle860_readout_discriminator_2026_07_28.py": "28a62fb0bc83ec7a46c18901158693344a84cc1eff8c0c9537b40d9004d8b926"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "stamp/content census (852 replay, 748 keys, horizon 51,115): 182/114 stamped, E2 subset of E1; both-stamped split 34 same-moment / 49 different-moment-identical-content / 31 different-content; 68 E1-only; 76 content classes (checker digest-exact)",
+    "separation theorem: agreement kernel = {v=0 on 68 E1-only contents; v equal on 31 split pairs} forcing 6 of 48 E2 contents to zero, 42 free - a nontrivial agreeing readout exists only as a fine-tuned exception; witness key (2,0,(0,2))",
+    "naturalness probe (checker): record counting, content weight, payload weight, single-source direction convention - ALL FOUR OUTSIDE the kernel; no natural readout makes the readings agree",
+    "standing: 828 refined - landed files invariant, landed physics not; under every natural readout the readings differ on 99 of 748 landed universes; the formation decision is empirically loaded at the readout layer"
+  ]
+}

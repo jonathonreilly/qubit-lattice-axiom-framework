@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Cycle 859: scoped adoption-impact manifest for Record completion E2.
+"""Cycle 859 v2: corrected scoped adoption-impact manifest for Record E2.
 
 The audited corpus is the top-level tracked ``scripts/*.py`` and ``docs/*.md``
 tree at the pinned pre-Cycle-859 commit.  Source runners are inspected only as
-text/AST.  This runner neither imports a cited primary nor writes an adoption.
+text/AST.  Consumer detection is the union of the v1 primary design and the
+independent checker's broader design.  This runner neither imports a cited
+primary nor writes an adoption.
 """
 from __future__ import annotations
 
@@ -126,6 +128,51 @@ EXPLICIT_RULE_PATTERNS = (
 )
 TRACKED_PATH_PATTERN = re.compile(
     r"(?:scripts/[^/]+\.py|docs/[^/]+\.md)\Z"
+)
+V1_DETECTOR_SET = "CYCLE859_V1_PRIMARY_TOKEN_NEEDLE_AST_DESIGN"
+CHECKER_DETECTOR_SET = (
+    "CYCLE859_INDEPENDENT_BROADER_NEEDLE_AST_DATAFLOW_DESIGN"
+)
+CONSUMER_DETECTOR_UNION = (V1_DETECTOR_SET, CHECKER_DETECTOR_SET)
+
+# The independent design is reproduced here as a separately named detector
+# set.  Broad candidates remain an attack surface; only lexical or bounded
+# semantic evidence promotes a path into the consumer union.
+CHECKER_DECLARED_NEEDLE_FAMILIES = {
+    "formation": ("form", "forms", "formed", "formation"),
+    "cadence": ("cadence", "clock", "boundary"),
+    "orbit_return": ("orbit", "return", "admissible", "admissibility"),
+    "stamp": ("stamp", "timestamp", "time", "tick"),
+    "moment": ("moment", "moments"),
+    "labels": ("E1", "E2"),
+    "record_rule": ("record", "records", "selection", "event", "clean"),
+}
+CHECKER_FORMATION_STAMPS = frozenset({
+    252, 371, 444, 532, 681, 1385, 14739, 14744, 33195, 51115,
+})
+CHECKER_LATE_FORMATION_STAMPS = frozenset({14739, 14744, 33195, 51115})
+CHECKER_FORMATION_LANE_CYCLES = frozenset({
+    792, 794, 796, 799, 813, 814, 818, 819, 820, 822, 828, 830, 832,
+    837, 839, 842, 845, 848, 851, 853, 854, 855,
+})
+CHECKER_SEMANTIC_FIELDS = frozenset({
+    "first_clean_t",
+    "claimed_first_clean_t",
+    "clean_moments",
+    "observed_clean_moments",
+    "period_clean_moments",
+    "identity_moments",
+    "resolution_moment",
+    "moment_certificate",
+    "moment_formula",
+    "transient_cohort_keys",
+    "earlier_transient_keys",
+    "first_clean_events_found",
+    "missed_first_clean_events",
+})
+CHECKER_E_LABEL = re.compile(r"(?<![A-Za-z0-9])E[12](?![A-Za-z0-9])")
+CHECKER_RECORD_WORD = re.compile(
+    r"\brecord(?:s|ed|ing)?\b|record[_-]", re.IGNORECASE
 )
 class _PrimaryBlocker(importlib.abc.MetaPathFinder):
     """Fail closed if either provenance-only Cycle-828 runner is imported."""
@@ -260,6 +307,352 @@ def contextual_e_mentions(text: str) -> int:
     return len(positions)
 
 
+def checker_word_terms(text: str) -> tuple[str, ...]:
+    return tuple(re.findall(r"[A-Za-z]+|[0-9]+", text))
+
+
+def checker_formation_lane_refs(text: str) -> tuple[str, ...]:
+    found = set()
+    for match in re.finditer(
+        r"frontier_cycle([0-9]{3})_[A-Za-z0-9_]+", text
+    ):
+        if int(match.group(1)) in CHECKER_FORMATION_LANE_CYCLES:
+            found.add(match.group())
+    return tuple(sorted(found))
+
+
+def checker_core_lexical_features(text: str) -> frozenset[str]:
+    """Normalized-word replay of the independent lexical surface."""
+
+    lowered = text.lower()
+    if not any(
+        token in lowered
+        for token in ("orbit", "first", "moment", "absolute_h")
+    ):
+        return frozenset()
+    features = set()
+
+    def joined(left: str, right: str) -> bool:
+        return bool(re.search(
+            rf"(?<![A-Za-z0-9_]){left}[-_ ]{right}(?![A-Za-z0-9_])",
+            text,
+            re.IGNORECASE,
+        ))
+
+    if joined("orbit", "moments?"):
+        features.add("ORBIT_MOMENT")
+    if joined("orbit", "return"):
+        features.add("ORBIT_RETURN")
+    if joined("orbit", "admissibility"):
+        features.add("ORBIT_ADMISSIBILITY")
+    if joined("first", "clean"):
+        features.add("FIRST_CLEAN")
+    if re.search(
+        r"(?<![A-Za-z0-9_])absolute_H(?![A-Za-z0-9_])", text
+    ):
+        features.add("ABSOLUTE_H_SYMBOL")
+    for symbol in re.findall(
+        r"(?<![A-Za-z0-9_])[A-Z][A-Z0-9_]*(?![A-Za-z0-9_])", text
+    ):
+        components = symbol.split("_")
+        if symbol == "MOMENT" or (
+            len(components) >= 2
+            and components[-1] in {"MOMENT", "MOMENTS"}
+        ):
+            features.add("CONSTANT_MOMENT_FIELD")
+    return frozenset(features)
+
+
+def checker_explicit_reading_features(text: str) -> frozenset[str]:
+    if (
+        "E1" not in text
+        and "E2" not in text
+        and "record" not in text.lower()
+    ):
+        return frozenset()
+    features = set()
+    for match in CHECKER_E_LABEL.finditer(text):
+        window = text[max(0, match.start() - 200):match.end() + 200]
+        if CHECKER_RECORD_WORD.search(window):
+            features.add("E_LABEL_WITH_RECORD_CONTEXT")
+    for symbol in re.findall(
+        r"(?<![A-Za-z0-9_])E[12]_[A-Za-z0-9_]+", text
+    ):
+        components = {part.upper() for part in symbol.split("_")[1:]}
+        if components & {
+            "CANDIDATE", "READING", "EVERY", "AXES", "OCCURRENCE",
+            "OCCURRENCES", "EDIT", "RECORD", "FORMATION",
+        }:
+            features.add("E_LABELED_READING_FIELD")
+    lowered_terms = tuple(
+        term.lower() for term in checker_word_terms(text)
+    )
+    phrases = (
+        ("records", "form", "at", "first", "admissibility"),
+        ("records", "form", "at", "first", "orbit", "admissibility"),
+        (
+            "record", "set", "first", "clean", "orbit", "return",
+            "selection", "event", "set",
+        ),
+    )
+    for phrase in phrases:
+        width = len(phrase)
+        if any(
+            lowered_terms[index:index + width] == phrase
+            for index in range(len(lowered_terms) - width + 1)
+        ):
+            features.add("PLAIN_RECORD_FORMATION_RULE")
+    return frozenset(features)
+
+
+def checker_broad_candidate_features(text: str) -> frozenset[str]:
+    """Overinclusive independent needles; semantic evidence adjudicates."""
+
+    lowered = text.lower()
+    if not any(token in lowered for token in (
+        "formation", "cadence", "orbit", "stamp", "moment", "record",
+        "transient", "zero-record", "zero_record", "e1", "e2",
+    )):
+        return frozenset()
+    terms = {term.lower() for term in checker_word_terms(text)}
+    features = set()
+    if "formation" in terms and terms & {
+        "record", "records", "moment", "stamp",
+    }:
+        features.add("BROAD_FORMATION_CONTEXT")
+    if "cadence" in terms and terms & {
+        "record", "records", "orbit", "selection",
+    }:
+        features.add("BROAD_CADENCE_CONTEXT")
+    if terms & {"stamp", "timestamp"} and terms & {
+        "record", "records", "moment", "selection",
+    }:
+        features.add("BROAD_STAMP_CONTEXT")
+    if terms & {"moment", "moments"} and terms & {
+        "transient", "transients", "clean", "selection", "formation",
+        "cohort", "cohorts",
+    }:
+        features.add("BROAD_MOMENT_CONTEXT")
+    if "orbit" in terms and terms & {
+        "return", "admissible", "admissibility",
+    }:
+        features.add("BROAD_ORBIT_RETURN_CONTEXT")
+    if terms & {"e1", "e2"} and terms & {
+        "record", "records", "reading", "formation",
+    }:
+        features.add("BROAD_E1_E2_CONTEXT")
+    if re.search(r"\bzero[-_ ]record\w*\b", lowered):
+        features.add("BROAD_ZERO_RECORD_CONTEXT")
+    return frozenset(features)
+
+
+class CheckerScriptProbe(ast.NodeVisitor):
+    """Collect the independent AST/data-flow consumer channels."""
+
+    def __init__(self) -> None:
+        self.core_features: set[str] = set()
+        self.explicit_features: set[str] = set()
+        self.broad_features: set[str] = set()
+        self.loaded_fields: set[str] = set()
+        self.semantic_fields: set[str] = set()
+        self.integer_constants: set[int] = set()
+        self.lane_refs: set[str] = set()
+        self.alias_edges: set[tuple[str, str]] = set()
+        self.json_calls: set[str] = set()
+
+    def add_fragment(self, channel: str, value: str) -> None:
+        self.core_features.update(checker_core_lexical_features(value))
+        self.explicit_features.update(
+            checker_explicit_reading_features(value)
+        )
+        self.broad_features.update(
+            checker_broad_candidate_features(value)
+        )
+        if channel in {"string", "import"}:
+            self.lane_refs.update(checker_formation_lane_refs(value))
+        lowered = value.lower()
+        if lowered in CHECKER_SEMANTIC_FIELDS:
+            self.semantic_fields.add(lowered)
+        elif len(value) < 2048:
+            for field in CHECKER_SEMANTIC_FIELDS:
+                if re.search(
+                    rf"(?<![A-Za-z0-9_]){re.escape(field)}"
+                    rf"(?![A-Za-z0-9_])",
+                    value,
+                    re.IGNORECASE,
+                ):
+                    self.semantic_fields.add(field)
+
+    def visit_Import(self, node: ast.Import) -> None:  # noqa: N802
+        for alias in node.names:
+            self.add_fragment("import", alias.name)
+            if alias.asname:
+                self.add_fragment("import", alias.asname)
+
+    def visit_ImportFrom(self, node: ast.ImportFrom) -> None:  # noqa: N802
+        if node.module:
+            self.add_fragment("import", node.module)
+        for alias in node.names:
+            self.add_fragment("import", alias.name)
+            if alias.asname:
+                self.add_fragment("import", alias.asname)
+
+    def visit_Constant(self, node: ast.Constant) -> None:  # noqa: N802
+        if isinstance(node.value, str):
+            self.add_fragment("string", node.value)
+        elif isinstance(node.value, int) and not isinstance(node.value, bool):
+            self.integer_constants.add(node.value)
+
+    def visit_Name(self, node: ast.Name) -> None:  # noqa: N802
+        if isinstance(node.ctx, ast.Load):
+            self.loaded_fields.add(node.id)
+            self.add_fragment("field", node.id)
+
+    def visit_Attribute(self, node: ast.Attribute) -> None:  # noqa: N802
+        if isinstance(node.ctx, ast.Load):
+            self.loaded_fields.add(node.attr)
+            self.add_fragment("field", node.attr)
+        self.generic_visit(node)
+
+    def visit_Subscript(self, node: ast.Subscript) -> None:  # noqa: N802
+        if isinstance(node.ctx, ast.Load):
+            key = node.slice
+            if isinstance(key, ast.Constant) and isinstance(key.value, str):
+                self.loaded_fields.add(key.value)
+                self.add_fragment("field", key.value)
+                self.visit(node.value)
+                return
+        self.generic_visit(node)
+
+    def visit_Assign(self, node: ast.Assign) -> None:  # noqa: N802
+        source_fields = {
+            child.value
+            for child in ast.walk(node.value)
+            if isinstance(child, ast.Constant)
+            and isinstance(child.value, str)
+            and child.value.lower() in CHECKER_SEMANTIC_FIELDS
+        }
+        targets = {
+            child.id
+            for target in node.targets
+            for child in ast.walk(target)
+            if isinstance(child, ast.Name)
+        }
+        self.alias_edges.update(
+            (target, source)
+            for target in targets
+            for source in source_fields
+        )
+        self.generic_visit(node)
+
+    def visit_Call(self, node: ast.Call) -> None:  # noqa: N802
+        function = node.func
+        if isinstance(function, ast.Attribute) and function.attr in {
+            "loads", "load", "dumps", "dump",
+        }:
+            self.json_calls.add(function.attr)
+        self.generic_visit(node)
+
+
+def checker_lexical_classification(
+    text: str,
+    probe: CheckerScriptProbe | None,
+) -> tuple[str, tuple[str, ...]]:
+    if probe is None:
+        core = set(checker_core_lexical_features(text))
+        explicit = set(checker_explicit_reading_features(text))
+    else:
+        core = set(probe.core_features)
+        explicit = set(probe.explicit_features)
+    if explicit:
+        return "EXPLICIT_READING", tuple(sorted(explicit | core))
+    if core:
+        return "CORPUS_IMPLICIT", tuple(sorted(core))
+    return "NO_CONSUMPTION", ()
+
+
+def checker_document_semantic_evidence(
+    path: str,
+    text: str,
+) -> tuple[str, ...]:
+    cycle_match = re.search(r"CYCLE([0-9]{3})", path)
+    if (
+        not cycle_match
+        or int(cycle_match.group(1)) not in CHECKER_FORMATION_LANE_CYCLES
+    ):
+        return ()
+    lowered = " ".join(text.lower().split())
+    evidence = set()
+    if "record-candidate" in lowered and "moment" in lowered:
+        evidence.add("NARRATIVE_RECORD_CANDIDATE_MOMENT")
+    if re.search(
+        r"\b(?:selection moment|simultaneous selections?)\b", lowered
+    ):
+        evidence.add("NARRATIVE_SELECTION_MOMENT")
+    if re.search(r"cohort(?:'s|s')? own moment", lowered):
+        evidence.add("NARRATIVE_COHORT_OWN_MOMENT")
+    for match in re.finditer(r"\btransient\w*\b", lowered):
+        window = lowered[
+            max(0, match.start() - 320):match.end() + 320
+        ]
+        if re.search(
+            r"\b(?:moment|clean|selection|resolved|cohort|funnel|basin)"
+            r"\w*\b",
+            window,
+        ):
+            evidence.add("NARRATIVE_TRANSIENT_FAMILY")
+            break
+    if re.search(r"\bzero[- ]record\w*\b", lowered) and re.search(
+        r"\b(?:cycle|transient|clean|selection)\w*\b", lowered
+    ):
+        evidence.add("NARRATIVE_ZERO_RECORD_FAMILY")
+    present_stamps = {
+        stamp
+        for stamp in CHECKER_LATE_FORMATION_STAMPS
+        if str(stamp) in text
+    }
+    if present_stamps and re.search(
+        r"\b(?:selection|clean|funnel|transient|moment)\w*\b", lowered
+    ):
+        evidence.add("NARRATIVE_PINNED_FORMATION_STAMP")
+    return tuple(sorted(evidence))
+
+
+def checker_script_semantic_evidence(
+    path: str,
+    probe: CheckerScriptProbe,
+) -> tuple[str, ...]:
+    cycle_match = re.search(r"frontier_cycle([0-9]{3})_", path)
+    if (
+        not cycle_match
+        or int(cycle_match.group(1)) not in CHECKER_FORMATION_LANE_CYCLES
+    ):
+        return ()
+    fields = {
+        field.lower() for field in probe.semantic_fields | probe.loaded_fields
+    } & CHECKER_SEMANTIC_FIELDS
+    stamps = probe.integer_constants & CHECKER_FORMATION_STAMPS
+    late_stamps = stamps & CHECKER_LATE_FORMATION_STAMPS
+    evidence = set()
+    if "first_clean_t" in fields and stamps:
+        evidence.add("AST_ALIASED_FIRST_CLEAN_STAMP")
+    if fields & {
+        "resolution_moment", "moment_certificate", "transient_cohort_keys",
+        "earlier_transient_keys",
+    } and (probe.lane_refs or probe.json_calls):
+        evidence.add("AST_DOWNSTREAM_FORMATION_RECEIPT")
+    if late_stamps and probe.lane_refs:
+        evidence.add("AST_PINNED_FUNNEL_STAMP_CONSUMER")
+    if fields & {
+        "clean_moments", "observed_clean_moments", "period_clean_moments",
+        "first_clean_events_found", "missed_first_clean_events",
+    } and (stamps or probe.lane_refs):
+        evidence.add("AST_CLEAN_MOMENT_FAMILY_CONSUMER")
+    if probe.alias_edges and stamps:
+        evidence.add("AST_STAMP_ALIAS_DATAFLOW")
+    return tuple(sorted(evidence))
+
+
 def scan_fragment(text: str) -> dict[str, int]:
     return {
         "FORMATION_MOMENT": count_patterns(text, FORMATION_PATTERNS),
@@ -341,8 +734,19 @@ def normalized_map(
 
 def sweep_payloads(
     payloads: dict[str, bytes],
-) -> tuple[dict[str, dict[str, dict[str, int]]], tuple[str, ...]]:
-    consumers = {}
+) -> tuple[
+    dict[str, dict[str, dict[str, int]]],
+    dict[str, str],
+    dict[str, tuple[str, ...]],
+    dict[str, tuple[str, ...]],
+    dict[str, tuple[str, ...]],
+    tuple[str, ...],
+]:
+    v1_consumers = {}
+    checker_lexical_rows = {}
+    checker_lexical_features = {}
+    checker_broad_candidates = {}
+    checker_semantic_evidence = {}
     parse_failures = []
     for path in sorted(payloads):
         try:
@@ -361,6 +765,12 @@ def sweep_payloads(
             visitor = ScriptTokenVisitor()
             visitor.visit(tree)
             token_map = normalized_map(visitor.counts)
+            checker_probe = CheckerScriptProbe()
+            checker_probe.visit(tree)
+            checker_broad = tuple(sorted(checker_probe.broad_features))
+            checker_semantic = checker_script_semantic_evidence(
+                path, checker_probe
+            )
         else:
             found = scan_fragment(text)
             token_map = {
@@ -368,9 +778,31 @@ def sweep_payloads(
                 for token_class, count in found.items()
                 if count
             }
+            checker_probe = None
+            checker_broad = tuple(sorted(
+                checker_broad_candidate_features(text)
+            ))
+            checker_semantic = checker_document_semantic_evidence(path, text)
         if token_map:
-            consumers[path] = token_map
-    return consumers, tuple(parse_failures)
+            v1_consumers[path] = token_map
+        checker_label, checker_features = checker_lexical_classification(
+            text, checker_probe
+        )
+        checker_lexical_rows[path] = checker_label
+        if checker_features:
+            checker_lexical_features[path] = checker_features
+        if checker_broad:
+            checker_broad_candidates[path] = checker_broad
+        if checker_semantic:
+            checker_semantic_evidence[path] = checker_semantic
+    return (
+        v1_consumers,
+        checker_lexical_rows,
+        checker_lexical_features,
+        checker_broad_candidates,
+        checker_semantic_evidence,
+        tuple(parse_failures),
+    )
 
 
 def total_for(
@@ -391,7 +823,7 @@ def is_explicit_reading(
     return any(pattern.search(text) for pattern in EXPLICIT_RULE_PATTERNS)
 
 
-def classify(
+def classify_v1(
     payloads: dict[str, bytes],
     consumers: dict[str, dict[str, dict[str, int]]],
 ) -> dict[str, tuple[str, ...]]:
@@ -410,6 +842,81 @@ def classify(
             label = "CORPUS_IMPLICIT"
         rows[label].append(path)
     return {label: tuple(paths) for label, paths in rows.items()}
+
+
+def path_labels(
+    classifications: dict[str, tuple[str, ...]],
+) -> dict[str, str]:
+    return {
+        path: label
+        for label, paths in classifications.items()
+        for path in paths
+    }
+
+
+def classify_union(
+    payloads: dict[str, bytes],
+    v1_classifications: dict[str, tuple[str, ...]],
+    checker_lexical_rows: dict[str, str],
+    checker_lexical_features: dict[str, tuple[str, ...]],
+    checker_semantic_evidence: dict[str, tuple[str, ...]],
+) -> tuple[
+    dict[str, tuple[str, ...]],
+    dict[str, tuple[str, ...]],
+    tuple[dict[str, object], ...],
+]:
+    """Return the monotone union partition and every v1-to-v2 movement."""
+
+    v1_rows = path_labels(v1_classifications)
+    rows: dict[str, list[str]] = {
+        "NO_CONSUMPTION": [],
+        "CORPUS_IMPLICIT": [],
+        "EXPLICIT_READING": [],
+    }
+    union_evidence: dict[str, tuple[str, ...]] = {}
+    movements = []
+    for path in sorted(payloads):
+        v1_label = v1_rows[path]
+        checker_label = checker_lexical_rows[path]
+        evidence = []
+        if v1_label != "NO_CONSUMPTION":
+            evidence.append(f"V1:{v1_label}")
+        evidence.extend(
+            f"CHECKER:LEXICAL:{item}"
+            for item in checker_lexical_features.get(path, ())
+        )
+        evidence.extend(
+            f"CHECKER:SEMANTIC:{item}"
+            for item in checker_semantic_evidence.get(path, ())
+        )
+        if (
+            v1_label == "EXPLICIT_READING"
+            or checker_label == "EXPLICIT_READING"
+        ):
+            union_label = "EXPLICIT_READING"
+        elif (
+            v1_label == "CORPUS_IMPLICIT"
+            or checker_label == "CORPUS_IMPLICIT"
+            or path in checker_semantic_evidence
+        ):
+            union_label = "CORPUS_IMPLICIT"
+        else:
+            union_label = "NO_CONSUMPTION"
+        rows[union_label].append(path)
+        if union_label != "NO_CONSUMPTION":
+            union_evidence[path] = tuple(evidence)
+        if union_label != v1_label:
+            movements.append({
+                "path": path,
+                "v1_class": v1_label,
+                "union_class": union_label,
+                "evidence": tuple(evidence),
+            })
+    return (
+        {label: tuple(paths) for label, paths in rows.items()},
+        union_evidence,
+        tuple(movements),
+    )
 
 
 def common_prefix_length(left: str, right: str) -> int:
@@ -459,34 +966,39 @@ def decode_path_list(package: dict[str, object]) -> tuple[str, ...]:
 
 def certificate_a_consumer_sweep(
     payloads: dict[str, bytes],
-    consumers: dict[str, dict[str, dict[str, int]]],
+    v1_consumers: dict[str, dict[str, dict[str, int]]],
+    checker_lexical_rows: dict[str, str],
+    checker_broad_candidates: dict[str, tuple[str, ...]],
+    checker_semantic_evidence: dict[str, tuple[str, ...]],
+    union_evidence: dict[str, tuple[str, ...]],
+    movements: tuple[dict[str, object], ...],
     parse_failures: tuple[str, ...],
 ) -> dict[str, object]:
-    output_consumer_map = {
+    v1_consumer_map = {
         path: {
             token_class: total_for(token_map, token_class)
             for token_class in TOKEN_CLASSES
             if total_for(token_map, token_class)
         }
-        for path, token_map in consumers.items()
+        for path, token_map in v1_consumers.items()
     }
     class_file_counts = {
         token_class: sum(
             total_for(token_map, token_class) > 0
-            for token_map in consumers.values()
+            for token_map in v1_consumers.values()
         )
         for token_class in TOKEN_CLASSES
     }
     class_token_counts = {
         token_class: sum(
             total_for(token_map, token_class)
-            for token_map in consumers.values()
+            for token_map in v1_consumers.values()
         )
         for token_class in TOKEN_CLASSES
     }
     result = {
         "certificate": "A_CONSUMER_SWEEP",
-        "finding": "SCOPED_CONSUMER_MAP_COMPLETE",
+        "finding": "V2_UNION_CONSUMER_MAP_COMPLETE",
         "snapshot_scope_head_sha": SNAPSHOT_HEAD_SHA,
         "snapshot_definition":
             "top-level tracked scripts/*.py and docs/*.md blobs at the "
@@ -496,12 +1008,40 @@ def certificate_a_consumer_sweep(
         "scanned_file_count": len(payloads),
         "script_count": sum(path.startswith("scripts/") for path in payloads),
         "doc_count": sum(path.startswith("docs/") for path in payloads),
-        "consumer_file_count": len(consumers),
-        "token_class_file_counts": class_file_counts,
-        "token_class_occurrence_counts": class_token_counts,
-        "script_method": "AST imports + string constants + loaded field reads",
-        "docs_method": "text",
-        "consumer_file_to_token_class_counts": output_consumer_map,
+        "consumer_detector_union": CONSUMER_DETECTOR_UNION,
+        "detector_designs": {
+            V1_DETECTOR_SET: {
+                "token_classes": TOKEN_CLASSES,
+                "script_method":
+                    "AST imports + string constants + loaded field reads",
+                "docs_method": "full text",
+            },
+            CHECKER_DETECTOR_SET: {
+                "declared_needle_families":
+                    CHECKER_DECLARED_NEEDLE_FAMILIES,
+                "script_method":
+                    "AST imports/strings/loaded names/attributes/keys; "
+                    "assignment alias edges; JSON receipt calls",
+                "docs_method":
+                    "full text plus bounded semantic-context windows",
+            },
+        },
+        "v1_consumer_file_count": len(v1_consumers),
+        "union_consumer_file_count": len(union_evidence),
+        "v1_token_class_file_counts": class_file_counts,
+        "v1_token_class_occurrence_counts": class_token_counts,
+        "v1_consumer_map_sha256": digest(v1_consumer_map),
+        "checker_lexical_consumer_file_count": sum(
+            label != "NO_CONSUMPTION"
+            for label in checker_lexical_rows.values()
+        ),
+        "checker_broad_candidate_file_count":
+            len(checker_broad_candidates),
+        "checker_semantic_evidence_file_count":
+            len(checker_semantic_evidence),
+        "union_consumer_evidence_sha256": digest(union_evidence),
+        "v1_to_union_movement_count": len(movements),
+        "v1_to_union_movements_sha256": digest(movements),
         "parse_failures": parse_failures,
     }
     result["pass"] = (
@@ -509,7 +1049,16 @@ def certificate_a_consumer_sweep(
         and result["script_count"] + result["doc_count"] == len(payloads)
         and all(TRACKED_PATH_PATTERN.fullmatch(path) for path in payloads)
         and not parse_failures
-        and set(consumers) <= set(payloads)
+        and set(v1_consumers) <= set(payloads)
+        and set(checker_lexical_rows) == set(payloads)
+        and set(checker_broad_candidates) <= set(payloads)
+        and set(checker_semantic_evidence) <= set(payloads)
+        and set(union_evidence) <= set(payloads)
+        and all(
+            row["v1_class"] != row["union_class"]
+            and row["evidence"]
+            for row in movements
+        )
     )
     return result
 
@@ -517,6 +1066,8 @@ def certificate_a_consumer_sweep(
 def certificate_b_classification(
     payloads: dict[str, bytes],
     classifications: dict[str, tuple[str, ...]],
+    v1_classifications: dict[str, tuple[str, ...]],
+    movements: tuple[dict[str, object], ...],
 ) -> dict[str, object]:
     encoded = {
         label: encode_path_list(paths)
@@ -532,38 +1083,80 @@ def certificate_b_classification(
     disjoint = sum(len(paths) for paths in classifications.values()) == len(
         set(all_paths)
     )
+    v1_explicit = v1_classifications["EXPLICIT_READING"]
+    union_explicit = classifications["EXPLICIT_READING"]
+    explicit_refire_unchanged = union_explicit == v1_explicit
+    if explicit_refire_unchanged:
+        refire_statement = (
+            "The EXPLICIT_READING refire list is unchanged at "
+            f"{len(union_explicit)}; the guarantee stands with corrected "
+            "class sizes."
+        )
+    else:
+        refire_statement = (
+            "The detector union changed the EXPLICIT_READING refire list "
+            f"from {len(v1_explicit)} to {len(union_explicit)}; the prior "
+            "guarantee requires review."
+        )
     result = {
         "certificate": "B_CLASSIFICATION",
-        "finding": "COMPLETE_THREE_WAY_PARTITION",
+        "finding": "CORRECTED_COMPLETE_THREE_WAY_PARTITION",
         "definitions": {
             "NO_CONSUMPTION":
-                "no scoped record-formation token detected by this "
-                "specified AST/text sweep",
+                "no scoped record-formation consumer evidence detected by "
+                "the union of the named v1 and checker designs",
             "CORPUS_IMPLICIT":
-                "non-explicit scoped token hit: operationally uses landed "
-                "behavior; under E2 the pinned 828 cache attests that behavior "
-                "becomes exact with zero modeled content change",
+                "non-explicit scoped lexical, AST/data-flow, or bounded "
+                "narrative receipt: operationally uses landed behavior; "
+                "under E2 the pinned 828 cache attests that behavior becomes "
+                "exact with zero modeled content change",
             "EXPLICIT_READING":
                 "strong E1/E2 Record-reading label or exact candidate/reading "
                 "hit; re-ratification is confirmation under E2 because both "
                 "readings already ran",
         },
-        "classification_kind": "SCOPED_LEXICAL_OPERATIONAL_PARTITION",
+        "classification_kind":
+            "SCOPED_UNION_LEXICAL_SEMANTIC_OPERATIONAL_PARTITION",
         "semantic_exhaustiveness_claimed": False,
         "alias_paraphrase_caveat":
-            "The partition is exhaustive for the declared tokens and tracked "
-            "snapshot, not for undeclared aliases, paraphrases, or semantic "
-            "dependencies invisible to the specified sweep.",
+            "The partition is exhaustive for the union of both declared "
+            "designs and the tracked snapshot, not for dependencies invisible "
+            "to both specified sweeps.",
+        "consumer_detector_union": CONSUMER_DETECTOR_UNION,
+        "v1_counts": {
+            label: len(paths)
+            for label, paths in v1_classifications.items()
+        },
         "counts": {
             label: len(paths) for label, paths in classifications.items()
         },
-        "full_lists": encoded,
+        "classification_counts_derived_not_expected_constants": True,
+        "v1_to_union_movement_count": len(movements),
+        "v1_to_union_movements_sha256": digest(movements),
+        "explicit_reading_refire_count": len(union_explicit),
+        "explicit_reading_refire_list_unchanged": explicit_refire_unchanged,
+        "refire_guarantee_stands": explicit_refire_unchanged,
+        "refire_statement": refire_statement,
+        "full_consumer_lists": {
+            label: encoded[label]
+            for label in ("CORPUS_IMPLICIT", "EXPLICIT_READING")
+        },
+        "NO_CONSUMPTION_complement": {
+            "definition":
+                "sorted scoped snapshot paths minus both full consumer lists",
+            "count": len(classifications["NO_CONSUMPTION"]),
+            "path_list_sha256": digest(
+                classifications["NO_CONSUMPTION"]
+            ),
+        },
         "full_list_encoding_note":
-            "Each complete path list is printed in reversible compressed form "
-            "to satisfy the 150KB stdout control.",
+            "Both complete consumer lists are printed reversibly; the full "
+            "NO_CONSUMPTION list is their exact complement in the printed "
+            "pinned snapshot scope and is digest-bound.",
         "decode_recipe":
-            "base85-decode; xz-decompress; for each hexprefix:suffix line, "
-            "path=previous[:int(hexprefix,16)]+suffix",
+            "For each consumer list: base85-decode; xz-decompress; for each "
+            "hexprefix:suffix line, path=previous[:int(hexprefix,16)]+suffix; "
+            "then subtract both lists from sorted snapshot paths for NO.",
         "decode_roundtrip_exact": decoded == classifications,
         "partition_disjoint": disjoint,
         "partition_complete": all_paths == tuple(sorted(payloads)),
@@ -572,6 +1165,7 @@ def certificate_b_classification(
         result["decode_roundtrip_exact"]
         and result["partition_disjoint"]
         and result["partition_complete"]
+        and result["explicit_reading_refire_list_unchanged"]
     )
     return result
 
@@ -770,9 +1364,16 @@ def sweep_fingerprint(sweep: dict[str, object]) -> str:
     return digest({
         "entries": sweep["entries"],
         "payload_sha256": hash_manifest(sweep["payloads"]),
-        "consumers": sweep["consumers"],
+        "v1_consumers": sweep["v1_consumers"],
+        "checker_lexical_rows": sweep["checker_lexical_rows"],
+        "checker_lexical_features": sweep["checker_lexical_features"],
+        "checker_broad_candidates": sweep["checker_broad_candidates"],
+        "checker_semantic_evidence": sweep["checker_semantic_evidence"],
         "parse_failures": sweep["parse_failures"],
+        "v1_classifications": sweep["v1_classifications"],
         "classifications": sweep["classifications"],
+        "union_evidence": sweep["union_evidence"],
+        "movements": sweep["movements"],
     })
 
 
@@ -903,27 +1504,52 @@ def certificate_d_controls(
 def build_sweep() -> dict[str, object]:
     entries = snapshot_entries()
     payloads = load_snapshot_payloads(entries)
-    consumers, parse_failures = sweep_payloads(payloads)
-    classifications = classify(payloads, consumers)
+    (
+        v1_consumers,
+        checker_lexical_rows,
+        checker_lexical_features,
+        checker_broad_candidates,
+        checker_semantic_evidence,
+        parse_failures,
+    ) = sweep_payloads(payloads)
+    v1_classifications = classify_v1(payloads, v1_consumers)
+    classifications, union_evidence, movements = classify_union(
+        payloads,
+        v1_classifications,
+        checker_lexical_rows,
+        checker_lexical_features,
+        checker_semantic_evidence,
+    )
     return {
         "entries": entries,
         "payloads": payloads,
-        "consumers": consumers,
+        "v1_consumers": v1_consumers,
+        "checker_lexical_rows": checker_lexical_rows,
+        "checker_lexical_features": checker_lexical_features,
+        "checker_broad_candidates": checker_broad_candidates,
+        "checker_semantic_evidence": checker_semantic_evidence,
         "parse_failures": parse_failures,
+        "v1_classifications": v1_classifications,
         "classifications": classifications,
+        "union_evidence": union_evidence,
+        "movements": movements,
     }
 
 
 def render(
     certificates: tuple[tuple[str, dict[str, object]], ...],
     controls: dict[str, object],
+    movements: tuple[dict[str, object], ...],
 ) -> str:
     lines = [
-        "CYCLE859_ADOPTION_IMPACT_MANIFEST",
+        "CYCLE859_V2_ADOPTION_IMPACT_MANIFEST",
         "ADOPTION_MODEL :: registered additive primitive; no axiom-text change",
         "SCOPE :: pinned execution-HEAD branch snapshot " + SNAPSHOT_HEAD_SHA,
         "OUT_OF_SCOPE :: recent main landings outside this lineage; the "
         "owner-lane adoption PR must repin and re-run on live main",
+        "CONSUMER_DETECTION_UNION :: " + " + ".join(
+            CONSUMER_DETECTOR_UNION
+        ),
     ]
     for label, certificate in certificates:
         lines.append(
@@ -938,8 +1564,31 @@ def render(
     )
     classification = dict(certificates)["B_CLASSIFICATION"]
     invariance = dict(certificates)["C_INVARIANCE_CERTIFICATE"]
+    for movement in movements:
+        lines.append(
+            "UNION_RECLASSIFICATION_EVIDENCE :: "
+            + str(movement["path"])
+            + " :: "
+            + str(movement["v1_class"])
+            + " -> "
+            + str(movement["union_class"])
+            + " :: evidence="
+            + compact(movement["evidence"])
+        )
+    lines.append(
+        "REFIRE_GUARANTEE :: " + str(classification["refire_statement"])
+    )
     lines.append("FINAL :: " + compact({
         "classification_counts": classification["counts"],
+        "classification_counts_derived_not_hardcoded": True,
+        "v1_to_union_movement_count":
+            classification["v1_to_union_movement_count"],
+        "explicit_reading_refire_count":
+            classification["explicit_reading_refire_count"],
+        "explicit_reading_refire_list_unchanged":
+            classification["explicit_reading_refire_list_unchanged"],
+        "refire_guarantee_stands":
+            classification["refire_guarantee_stands"],
         "invariance_verdict": invariance["verdict"],
         "snapshot_head_sha": SNAPSHOT_HEAD_SHA,
         "runtime_seconds": controls["runtime_seconds"],
@@ -948,10 +1597,10 @@ def render(
             and controls["pass"],
     }))
     lines.append(
-        "CYCLE859_ADOPTION_IMPACT_MANIFEST_PASS"
+        "CYCLE859_V2_ADOPTION_IMPACT_MANIFEST_PASS"
         if all(value["pass"] for _label, value in certificates)
         and controls["pass"]
-        else "CYCLE859_ADOPTION_IMPACT_MANIFEST_FAIL"
+        else "CYCLE859_V2_ADOPTION_IMPACT_MANIFEST_FAIL"
     )
     return "\n".join(lines) + "\n"
 
@@ -961,10 +1610,20 @@ def main() -> int:
     sweep = build_sweep()
     input_payloads_before = read_audit_inputs()
     certificate_a = certificate_a_consumer_sweep(
-        sweep["payloads"], sweep["consumers"], sweep["parse_failures"]
+        sweep["payloads"],
+        sweep["v1_consumers"],
+        sweep["checker_lexical_rows"],
+        sweep["checker_broad_candidates"],
+        sweep["checker_semantic_evidence"],
+        sweep["union_evidence"],
+        sweep["movements"],
+        sweep["parse_failures"],
     )
     certificate_b = certificate_b_classification(
-        sweep["payloads"], sweep["classifications"]
+        sweep["payloads"],
+        sweep["classifications"],
+        sweep["v1_classifications"],
+        sweep["movements"],
     )
     certificate_c = certificate_c_invariance(
         sweep["payloads"], input_payloads_before
@@ -984,13 +1643,13 @@ def main() -> int:
         input_payloads_after,
         runtime_seconds,
     )
-    output = render(certificates, controls)
+    output = render(certificates, controls, sweep["movements"])
     for _attempt in range(3):
         output_bytes = len(output.encode("utf-8"))
         controls["stdout_bytes"] = output_bytes
         controls["stdout_within_limit"] = output_bytes < STDOUT_LIMIT_BYTES
         controls["pass"] = controls["pass"] and controls["stdout_within_limit"]
-        updated = render(certificates, controls)
+        updated = render(certificates, controls, sweep["movements"])
         if len(updated.encode("utf-8")) == output_bytes:
             output = updated
             break
@@ -998,7 +1657,7 @@ def main() -> int:
     output_bytes = len(output.encode("utf-8"))
     controls["stdout_bytes"] = output_bytes
     controls["stdout_within_limit"] = output_bytes < STDOUT_LIMIT_BYTES
-    output = render(certificates, controls)
+    output = render(certificates, controls, sweep["movements"])
     if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
         raise AssertionError(
             ("stdout bound", len(output.encode("utf-8")), STDOUT_LIMIT_BYTES)

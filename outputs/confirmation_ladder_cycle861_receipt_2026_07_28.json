@@ -1,0 +1,36 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP23-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle861_confirmation_ladder_2026_07_28.txt": "SUMMARY_JSON.checks map",
+    "logs/runner-cache/frontier_cycle861_ladder_independent_check_2026_07_28.txt": "SUMMARY_JSON.checks map"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle861_confirmation_ladder_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle861_ladder_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 861,
+  "files": {
+    "docs/CONFIRMATION_LADDER_CYCLE861_BOUNDED_THEOREM_NOTE_2026-07-28.md": "8802db8d39ccfbeb80a4db106a69477240866d02bb00a73b1c00188a73165afd",
+    "logs/runner-cache/frontier_cycle861_confirmation_ladder_2026_07_28.txt": "fa3c0c28088a51e305214c03ba157660c02befbeb502c9489482b3bcdcb9d4f7",
+    "logs/runner-cache/frontier_cycle861_ladder_independent_check_2026_07_28.txt": "6ff74eeea573e59ddb67849f596313e8a481e599128d41d14ba7295aa1440fc1",
+    "scripts/frontier_cycle861_confirmation_ladder_2026_07_28.py": "bf669014fb8f9e01cf73ac386faddda89169bb561cb700ffdda0a3d764319d67",
+    "scripts/frontier_cycle861_ladder_independent_check_2026_07_28.py": "66ff6f4e1336894aa6ae60809660b15f345f662fc4f0362b1716d8a2f235cdd8"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "the ladder censused (748 keys, horizon 51,115): 566 never-clean / 182 set; NO depth-1; max depth 153,348; per-k splits exact (checker-reproduced)",
+    "E1 = rung 1 exactly (moment-exact); E2 is NOT a rung - it is the ORBIT-BOUNDARY CLOCK (key-dependent rungs 1..167): set on any clock, lock on the tick",
+    "corrections certified: 849 trios depth ZERO (marks outside the ladder); the 68 E1-only confirm repeatedly but never on the tick; the 20 period-496 cycles never set; monitor degree does not determine depth",
+    "new exact regularity: the first confirmation always repeats the set content (182/182); first divergence rungs 3..12 for 126 keys, 56 never diverge within horizon",
+    "cadence family collision-free: every-H 182 / orbit 114 / every-2nd 95 / every-4th 94 - the landed readings are exactly the two natural clocks; threshold remains a model-layer dial"
+  ]
+}

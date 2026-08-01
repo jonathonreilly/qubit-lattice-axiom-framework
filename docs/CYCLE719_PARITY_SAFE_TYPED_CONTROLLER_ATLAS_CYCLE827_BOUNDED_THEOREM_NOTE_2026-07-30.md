@@ -45,20 +45,25 @@ The normalized one-controller-step word contains 61,562 semantic gates and
 - 193,904 T; and
 - 145,428 T-dagger.
 
-The original word has 12 elementary parity violations; the normalized word
-has zero. All six hostile restorations of the old control order are detected.
-The Toffoli matrix residual is `7.346882794269506e-16`. The normalized
-controller and its inverse agree exactly with the landed controller on all
-four endpoint/pointer rows.
+The original word has 12 elementary parity violations and 18 noncommuting
+cumulative prefixes; the normalized word has zero of either. Both complete
+words return the declared global parity operator. All six hostile restorations
+of the old control order are detected. The locally reconstructed Toffoli
+matrix residual is `7.810391308407985e-16`. The normalized controller and its
+inverse agree exactly with the landed controller on all four endpoint/pointer
+rows.
 
 ## Fixed typed atlas
 
 The compiler assigns the 12 matter sites and 84 new charged corridor sites to
 the charged type. Charged control transport uses FSWAP through supplied blank
 charged route work; every other route uses SWAP through neutral sites. The
-charged corridors hit no persistent site. On the declared blank-corridor
-domain, FSWAP and SWAP agree with residual zero; the fermionic exchange is
-nevertheless retained so the physical factor remains parity typed.
+charged corridors hit no persistent site. On the full two-M2 at-most-one-
+particle subspace, FSWAP and SWAP agree with residual zero. A returned
+three-M2 FSWAP-CNOT-FSWAP route also equals the corresponding remote CNOT with
+residual zero on every basis input with blank corridor M2. The fermionic
+exchange is nevertheless retained so the physical factor remains parity
+typed.
 
 The full word has 41,717 unique two-M2 endpoint pairs and 303,942 two-M2
 factor occurrences. Eight unique pairs (24 occurrences) carry a charged
@@ -117,9 +122,12 @@ Open:
 
 ## Boundary and TOE effect
 
-This is a positive bounded physical compiler result for one supplied finite
-controller. It is not a translation-invariant autonomous law, time law,
-Record/Born law, source/gravity law, minimum, no-go, or axiom-pressure result.
+This is a positive bounded factor-and-route atlas/compiler certificate for one
+supplied finite controller. The runner does not materialize or densely execute
+the 13,315,498-gate routed word; logical endpoint equivalence and physical
+route structure are certified separately. This is not a translation-invariant
+autonomous law, time law, Record/Born law, source/gravity law, minimum, no-go,
+or axiom-pressure result.
 `C_local` narrows because the recurrent controller now shares the companion
 code's fixed parity grammar. `C_ref` remains open at physical co-location,
 coframe/atlas genesis, and the unique-token sector. `C_num`, `C_wrap`,

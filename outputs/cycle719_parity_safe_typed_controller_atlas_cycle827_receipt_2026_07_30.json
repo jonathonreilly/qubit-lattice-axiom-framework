@@ -3,11 +3,11 @@
   "audit": "unset",
   "authority": "none",
   "artifact_provenance_sha256": {
-    "note": "41eda384f13d2e5b4de6c760c5e2021f3c3f9d89a99ed746108edd235c3a937c",
-    "runner": "2e371095411bb55635fbc384267a6504998b3ff741b5766676395a625c3c2b77"
+    "note": "265f2af2ec4e91958e0bf58e9d8535c06f3f948703683e6eecd388c9573e0ee9",
+    "runner": "ee105138368935e9f4d54aa9efeaa01c2b8b8d103058ffd3ce184712f62010e7"
   },
-  "checks_passed": 6,
-  "checks_total": 6,
+  "checks_passed": 7,
+  "checks_total": 7,
   "claim_scope": "fixed finite parity-safe one/two-M2 recompile and typed route atlas for the landed 12-bank Cycle719 controller; Cycle823 same-chart port placement and intrinsic atlas generation remain open",
   "semantic_recompile": {
     "semantic_gates": 61562,
@@ -22,9 +22,13 @@
     "H": 96952,
     "T": 193904,
     "T_dagger": 145428,
-    "original_prefix_parity_violations": 12,
-    "normalized_prefix_parity_violations": 0,
-    "toffoli_decomposition_maximum_residual": 7.346882794269506e-16
+    "original_elementary_parity_violations": 12,
+    "normalized_elementary_parity_violations": 0,
+    "original_noncommuting_prefixes": 18,
+    "normalized_noncommuting_prefixes": 0,
+    "original_terminal_parity_returns": true,
+    "normalized_terminal_parity_returns": true,
+    "toffoli_decomposition_maximum_residual": 7.810391308407985e-16
   },
   "typed_atlas": {
     "unique_two_M2_pairs": 41717,
@@ -35,6 +39,7 @@
     "charged_route_exchange": "FSWAP",
     "neutral_route_exchange": "SWAP",
     "blank_corridor_FSWAP_vs_SWAP_residual": 0.0,
+    "blank_corridor_returned_FSWAP_CNOT_FSWAP_residual": 0.0,
     "neutral_unique_pairs_rerouted": 1297,
     "neutral_pair_occurrences_rerouted": 7700,
     "maximum_route_distance": 45,
@@ -57,7 +62,9 @@
     "unique_route_edges": 27740,
     "transported_type_partition_failures": 0,
     "transported_nearest_neighbour_failures": 0,
-    "coordinate_product_failures": 0
+    "coordinate_product_failures": 0,
+    "proper_cubic_product_closure_failures": 0,
+    "coordinate_product_sites_tested": 256
   },
   "open_boundary": [
     "same-chart Cycle823 endpoint-to-controller physical port placement",

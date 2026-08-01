@@ -14,7 +14,6 @@ import numpy as np
 
 import frontier_cycle719_recurrent_matter_history_controller_2026_07_26 as H719
 import frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30 as R822
-import frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30 as I823
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,9 +25,14 @@ RUNNER_PATH = (
     "scripts/frontier_cycle827_cycle719_parity_safe_typed_controller_"
     "atlas_2026_07_30.py"
 )
+RECEIPT_PATH = (
+    "outputs/cycle719_parity_safe_typed_controller_atlas_"
+    "cycle827_receipt_2026_07_30.json"
+)
 AUDIT_INPUT_PATHS = (
     NOTE_PATH,
     RUNNER_PATH,
+    RECEIPT_PATH,
     "docs/COMPANION_ENDPOINT_CYCLE719_HISTORY_INTERFACE_"
     "CYCLE826_BOUNDED_THEOREM_NOTE_2026-07-30.md",
     "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_"
@@ -55,6 +59,27 @@ def digest(path: Path) -> str:
 
 def add(left, right):
     return tuple(a + b for a, b in zip(left, right))
+
+
+def lift_matrix(matrix: np.ndarray, wires: tuple[int, ...], total: int) -> np.ndarray:
+    output = np.zeros((1 << total, 1 << total), dtype=complex)
+    for source in range(1 << total):
+        local_source = sum(
+            ((source >> wire) & 1) << index
+            for index, wire in enumerate(wires)
+        )
+        for local_target in range(1 << len(wires)):
+            amplitude = matrix[local_target, local_source]
+            if abs(amplitude) < 1.0e-15:
+                continue
+            target = source
+            for index, wire in enumerate(wires):
+                target = (
+                    (target & ~(1 << wire))
+                    | (((local_target >> index) & 1) << wire)
+                )
+            output[target, source] += amplitude
+    return output
 
 
 def normalized_gate(gate):
@@ -97,6 +122,67 @@ def factor_parity_violation(kind: str, wires: tuple[int, ...]) -> bool:
     raise ValueError(kind)
 
 
+def prefix_parity_certificate(word):
+    """Track the conjugated global parity Pauli after every elementary prefix."""
+    initial_z = set(CHARGED_WIRES)
+    x_support: set[int] = set()
+    z_support = set(initial_z)
+    negative = False
+    noncommuting_prefixes = 0
+    for kind, wires in H719.A.expanded(word):
+        if kind == "CNOT":
+            control, target = wires
+            x_control = control in x_support
+            x_target = target in x_support
+            z_control = control in z_support
+            z_target = target in z_support
+            negative ^= x_control and z_target and (x_target ^ z_control ^ True)
+            if x_control:
+                x_support.symmetric_difference_update((target,))
+            if z_target:
+                z_support.symmetric_difference_update((control,))
+        elif kind == "H":
+            (wire,) = wires
+            x_bit = wire in x_support
+            z_bit = wire in z_support
+            negative ^= x_bit and z_bit
+            if x_bit != z_bit:
+                x_support.symmetric_difference_update((wire,))
+                z_support.symmetric_difference_update((wire,))
+        elif kind == "X":
+            (wire,) = wires
+            negative ^= wire in z_support
+        elif kind in ("T", "TD"):
+            (wire,) = wires
+            if wire in x_support:
+                raise AssertionError("non-Pauli T conjugation entered parity tracker")
+        else:
+            raise ValueError(kind)
+        noncommuting_prefixes += bool(
+            negative or x_support or z_support != initial_z
+        )
+    return {
+        "noncommuting_prefixes": noncommuting_prefixes,
+        "terminal_parity_returns": bool(
+            not negative and not x_support and z_support == initial_z
+        ),
+    }
+
+
+def toffoli_decomposition_residual() -> float:
+    word = H719.A.expanded((H719.A.Gate("TOF", (0, 1, 2)),))
+    actual = np.zeros((8, 8), dtype=complex)
+    expected = np.zeros((8, 8), dtype=complex)
+    for source in range(8):
+        for target, amplitude in H719.A.sparse_apply(
+            {source: 1.0 + 0.0j}, word
+        ).items():
+            actual[target, source] = amplitude
+        target = source ^ ((((source >> 0) & 1) & ((source >> 1) & 1)) << 2)
+        expected[target, source] = 1.0
+    return float(np.linalg.norm(actual - expected))
+
+
 def expanded_certificate(original, normalized):
     original_counts = Counter()
     normalized_counts = Counter()
@@ -127,17 +213,29 @@ def expanded_certificate(original, normalized):
                     for kind, wires in fixed_factors
                 )
             )
+    original_prefix = prefix_parity_certificate(original)
+    normalized_prefix = prefix_parity_certificate(normalized)
     return {
         "original_factor_counts": dict(sorted(original_counts.items())),
         "normalized_factor_counts": dict(sorted(normalized_counts.items())),
         "expanded_factors": sum(normalized_counts.values()),
-        "original_prefix_parity_violations": original_violations,
-        "normalized_prefix_parity_violations": normalized_violations,
+        "original_elementary_parity_violations": original_violations,
+        "normalized_elementary_parity_violations": normalized_violations,
+        "original_noncommuting_prefixes": original_prefix[
+            "noncommuting_prefixes"
+        ],
+        "normalized_noncommuting_prefixes": normalized_prefix[
+            "noncommuting_prefixes"
+        ],
+        "original_terminal_parity_returns": original_prefix[
+            "terminal_parity_returns"
+        ],
+        "normalized_terminal_parity_returns": normalized_prefix[
+            "terminal_parity_returns"
+        ],
         "control_order_mutation_trials": mutation_trials,
         "control_order_mutations_detected": mutation_detected,
-        "toffoli_decomposition_maximum_residual": (
-            I823.toffoli_decomposition_certificate()["maximum_matrix_residual"]
-        ),
+        "toffoli_decomposition_maximum_residual": toffoli_decomposition_residual(),
     }
 
 
@@ -361,7 +459,22 @@ def typed_atlas(normalized, wire_sites):
     fswap = R822.primitive_matrix("FSWAP")
     swap = R822.primitive_matrix("SWAP")
     blank_corridor_fswap_residual = float(
-        np.linalg.norm((fswap - swap)[:, (0, 1)])
+        np.linalg.norm((fswap - swap)[:, (0, 1, 2)])
+    )
+    cnot = R822.primitive_matrix("data_CNOT_work")
+    routed_remote_cnot = (
+        lift_matrix(fswap, (0, 1), 3)
+        @ lift_matrix(cnot, (1, 2), 3)
+        @ lift_matrix(fswap, (0, 1), 3)
+    )
+    ideal_remote_cnot = lift_matrix(cnot, (0, 2), 3)
+    blank_corridor_columns = tuple(
+        source for source in range(8) if not ((source >> 1) & 1)
+    )
+    blank_corridor_returned_cnot_residual = float(
+        np.linalg.norm(
+            (routed_remote_cnot - ideal_remote_cnot)[:, blank_corridor_columns]
+        )
     )
     return {
         "paths": all_paths,
@@ -402,6 +515,9 @@ def typed_atlas(normalized, wire_sites):
         "neutral_route_exchange": "SWAP",
         "route_exchange_prefix_parity_violations": route_exchange_parity_violations,
         "blank_corridor_FSWAP_vs_SWAP_residual": blank_corridor_fswap_residual,
+        "blank_corridor_returned_FSWAP_CNOT_FSWAP_residual": (
+            blank_corridor_returned_cnot_residual
+        ),
         "legacy_charged_corridor_neutral_persistent_hits": len(
             legacy_charged_corridor & (persistent - charged_persistent)
         ),
@@ -443,10 +559,11 @@ def covariance_certificate(atlas):
             for left, right in edges
         )
     samples = tuple(sorted(charged | neutral))[:256]
-    product_failures = 0
+    product_failures = product_closure_failures = 0
     for left in frames:
         for right in frames:
             combined = R822.S789.matmul(left, right)
+            product_closure_failures += combined not in frames
             product_failures += any(
                 R822.S789.matvec(left, R822.S789.matvec(right, site))
                 != R822.S789.matvec(combined, site)
@@ -459,11 +576,165 @@ def covariance_certificate(atlas):
         "transported_type_partition_failures": type_failures,
         "transported_nearest_neighbour_failures": nearest_failures,
         "coordinate_product_failures": product_failures,
+        "proper_cubic_product_closure_failures": product_closure_failures,
+        "coordinate_product_sites_tested": len(samples),
         "covariance_scope": (
             "passive signed-permutation transport of the fixed atlas; "
             "intrinsic atlas generation remains supplied"
         ),
     }
+
+
+def paired_receipt_certificate(swaps, factors, semantics, atlas, covariance):
+    payload = json.loads((ROOT / RECEIPT_PATH).read_text())
+    expected = {
+        "artifact": Path(RUNNER_PATH).name,
+        "audit": "unset",
+        "authority": "none",
+        "artifact_provenance_sha256": {
+            "note": digest(ROOT / NOTE_PATH),
+            "runner": digest(ROOT / RUNNER_PATH),
+        },
+        "checks_passed": 7,
+        "checks_total": 7,
+        "claim_scope": (
+            "fixed finite parity-safe one/two-M2 recompile and typed route atlas "
+            "for the landed 12-bank Cycle719 controller; Cycle823 same-chart "
+            "port placement and intrinsic atlas generation remain open"
+        ),
+        "semantic_recompile": {
+            "semantic_gates": semantics["normalized_semantic_gates"],
+            "control_order_swaps": swaps,
+            "endpoint_truth_rows": semantics["endpoint_truth_rows"],
+            "normalized_vs_landed_failures": semantics[
+                "normalized_vs_landed_failures"
+            ],
+            "normalized_inverse_failures": semantics[
+                "normalized_inverse_failures"
+            ],
+        },
+        "elementary_factors": {
+            "total": factors["expanded_factors"],
+            "CNOT": factors["normalized_factor_counts"]["CNOT"],
+            "H": factors["normalized_factor_counts"]["H"],
+            "T": factors["normalized_factor_counts"]["T"],
+            "T_dagger": factors["normalized_factor_counts"]["TD"],
+            "original_elementary_parity_violations": factors[
+                "original_elementary_parity_violations"
+            ],
+            "normalized_elementary_parity_violations": factors[
+                "normalized_elementary_parity_violations"
+            ],
+            "original_noncommuting_prefixes": factors[
+                "original_noncommuting_prefixes"
+            ],
+            "normalized_noncommuting_prefixes": factors[
+                "normalized_noncommuting_prefixes"
+            ],
+            "original_terminal_parity_returns": factors[
+                "original_terminal_parity_returns"
+            ],
+            "normalized_terminal_parity_returns": factors[
+                "normalized_terminal_parity_returns"
+            ],
+            "toffoli_decomposition_maximum_residual": factors[
+                "toffoli_decomposition_maximum_residual"
+            ],
+        },
+        "typed_atlas": {
+            "unique_two_M2_pairs": atlas["unique_two_M2_pairs"],
+            "two_M2_factor_occurrences": atlas["two_M2_factor_occurrences"],
+            "charged_unique_pairs": atlas["charged_unique_pairs"],
+            "charged_pair_occurrences": atlas["charged_pair_occurrences"],
+            "charged_corridor_sites": atlas["charged_corridor_sites"],
+            "charged_route_exchange": atlas["charged_route_exchange"],
+            "neutral_route_exchange": atlas["neutral_route_exchange"],
+            "blank_corridor_FSWAP_vs_SWAP_residual": atlas[
+                "blank_corridor_FSWAP_vs_SWAP_residual"
+            ],
+            "blank_corridor_returned_FSWAP_CNOT_FSWAP_residual": atlas[
+                "blank_corridor_returned_FSWAP_CNOT_FSWAP_residual"
+            ],
+            "neutral_unique_pairs_rerouted": atlas[
+                "neutral_unique_pairs_rerouted"
+            ],
+            "neutral_pair_occurrences_rerouted": atlas[
+                "neutral_pair_occurrences_rerouted"
+            ],
+            "maximum_route_distance": atlas["maximum_route_distance"],
+            "routed_gates_per_H": atlas["routed_total_gates"],
+            "routed_gates_per_130_H_orbit": atlas[
+                "full_130_H_orbit_routed_controller_gates"
+            ],
+            "missing_or_structural_route_failures": sum(
+                atlas[label]
+                for label in (
+                    "charged_control_paths_failed",
+                    "neutral_paths_failed",
+                    "charged_corridor_persistent_hits",
+                    "nearest_neighbour_or_repeated_site_failures",
+                    "operand_order_failures",
+                    "route_return_failures",
+                )
+            ),
+            "charged_neutral_fixed_type_overlap": atlas[
+                "charged_neutral_fixed_type_overlap"
+            ],
+        },
+        "legacy_active_control": {
+            "charged_corridor_neutral_persistent_hits": atlas[
+                "legacy_charged_corridor_neutral_persistent_hits"
+            ],
+            "charged_neutral_corridor_overlaps": atlas[
+                "legacy_charged_neutral_corridor_overlaps"
+            ],
+            "neutral_corridor_charged_persistent_hits": atlas[
+                "legacy_neutral_corridor_charged_persistent_hits"
+            ],
+            "control_order_mutations_detected": factors[
+                "control_order_mutations_detected"
+            ],
+            "nonlocal_unique_routes": atlas["nonlocal_unique_routes"],
+            "nonlocal_unique_route_deletions_detected": atlas[
+                "nonlocal_unique_route_deletions_detected"
+            ],
+        },
+        "covariance": {
+            "proper_cubic_frames": covariance["proper_cubic_frames"],
+            "ordered_frame_products": covariance["ordered_frame_products"],
+            "unique_route_edges": covariance["unique_route_edges"],
+            "transported_type_partition_failures": covariance[
+                "transported_type_partition_failures"
+            ],
+            "transported_nearest_neighbour_failures": covariance[
+                "transported_nearest_neighbour_failures"
+            ],
+            "coordinate_product_failures": covariance[
+                "coordinate_product_failures"
+            ],
+            "proper_cubic_product_closure_failures": covariance[
+                "proper_cubic_product_closure_failures"
+            ],
+            "coordinate_product_sites_tested": covariance[
+                "coordinate_product_sites_tested"
+            ],
+        },
+        "open_boundary": [
+            "same-chart Cycle823 endpoint-to-controller physical port placement",
+            "intrinsic query-free atlas generation and local type/genesis enforcement",
+            "autonomous token/bank genesis, admission, renewal, and multi-source arbitration",
+            "physical time, permanent Record, Born/history, source/gravity, and prediction bridge",
+        ],
+        "status": (
+            "cycle827-cycle719-parity-safe-typed-controller-atlas-bounded-positive"
+        ),
+    }
+    section_matches = {
+        key: payload.get(key) == value for key, value in expected.items()
+    }
+    section_matches["no_unpinned_receipt_sections"] = set(payload) == set(expected)
+    section_matches["all"] = all(section_matches.values())
+    return section_matches
 
 
 def main() -> None:
@@ -487,6 +758,9 @@ def main() -> None:
     paths = atlas.pop("paths")
     atlas.pop("fixed_charged")
     atlas.pop("fixed_neutral")
+    receipt = paired_receipt_certificate(
+        swaps, factors, semantics, atlas, covariance
+    )
     checks = {
         "declared_inputs_are_unique_existing_repo_relative_files": declared,
         "six_control_swaps_preserve_the_semantic_controller": (
@@ -498,17 +772,30 @@ def main() -> None:
         ),
         "normalized_elementary_word_is_prefix_parity_safe": (
             factors["expanded_factors"] == 740226
-            and factors["original_prefix_parity_violations"] == 12
-            and factors["normalized_prefix_parity_violations"] == 0
+            and factors["normalized_factor_counts"] == {
+                "CNOT": 303942,
+                "H": 96952,
+                "T": 193904,
+                "TD": 145428,
+            }
+            and factors["original_elementary_parity_violations"] == 12
+            and factors["normalized_elementary_parity_violations"] == 0
+            and factors["original_noncommuting_prefixes"] == 18
+            and factors["normalized_noncommuting_prefixes"] == 0
+            and factors["original_terminal_parity_returns"]
+            and factors["normalized_terminal_parity_returns"]
             and factors["control_order_mutation_trials"]
             == factors["control_order_mutations_detected"] == 6
             and factors["toffoli_decomposition_maximum_residual"] < 3.0e-11
         ),
         "fixed_type_route_atlas_is_complete_and_collision_free": (
             atlas["unique_two_M2_pairs"] == 41717
+            and atlas["two_M2_factor_occurrences"] == 303942
             and atlas["charged_unique_pairs"] == 8
+            and atlas["charged_pair_occurrences"] == 24
             and atlas["charged_control_paths_failed"] == 0
             and atlas["neutral_paths_failed"] == 0
+            and atlas["charged_corridor_sites"] == 84
             and atlas["charged_corridor_persistent_hits"] == 0
             and atlas["charged_neutral_fixed_type_overlap"] == 0
             and atlas["nearest_neighbour_or_repeated_site_failures"] == 0
@@ -518,6 +805,14 @@ def main() -> None:
             and atlas["neutral_route_exchange"] == "SWAP"
             and atlas["route_exchange_prefix_parity_violations"] == 0
             and atlas["blank_corridor_FSWAP_vs_SWAP_residual"] < 3.0e-11
+            and atlas["blank_corridor_returned_FSWAP_CNOT_FSWAP_residual"]
+            < 3.0e-11
+            and atlas["neutral_unique_pairs_rerouted"] == 1297
+            and atlas["neutral_pair_occurrences_rerouted"] == 7700
+            and atlas["maximum_route_distance"] == 45
+            and atlas["routed_total_gates"] == 13315498
+            and atlas["full_130_H_orbit_routed_controller_gates"]
+            == 1731014740
         ),
         "legacy_failures_are_repaired_by_active_route_changes": (
             atlas["legacy_charged_corridor_neutral_persistent_hits"] == 10
@@ -525,15 +820,18 @@ def main() -> None:
             and atlas["legacy_neutral_corridor_charged_persistent_hits"] == 12
             and atlas["neutral_unique_pairs_rerouted"] > 0
             and atlas["nonlocal_unique_route_deletions_detected"]
-            == atlas["nonlocal_unique_routes"] > 0
+            == atlas["nonlocal_unique_routes"] == 41056
         ),
         "proper_cubic_transport_and_products_preserve_the_typed_atlas": (
             covariance["proper_cubic_frames"] == 24
             and covariance["ordered_frame_products"] == 576
+            and covariance["unique_route_edges"] == 27740
             and covariance["transported_type_partition_failures"] == 0
             and covariance["transported_nearest_neighbour_failures"] == 0
             and covariance["coordinate_product_failures"] == 0
+            and covariance["proper_cubic_product_closure_failures"] == 0
         ),
+        "paired_receipt_is_current_and_all_values_are_pinned": receipt["all"],
     }
     report = {
         "cycle": 827,
@@ -554,6 +852,7 @@ def main() -> None:
         "semantic_controller": semantics,
         "atlas": atlas,
         "covariance": covariance,
+        "paired_receipt": receipt,
         "checks": checks,
         "inventory": {
             "derived": (

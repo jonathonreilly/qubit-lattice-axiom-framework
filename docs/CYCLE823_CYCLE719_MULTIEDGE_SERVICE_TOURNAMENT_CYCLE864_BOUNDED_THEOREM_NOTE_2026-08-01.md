@@ -182,7 +182,9 @@ sign; dirty-sign failures are zero.
 
 The Cycle863 token/admission/finalizer controls are inherited rather than
 rerun independently on every rack replica.  The new Route-A controls are the
-243 literal port-route deletions and the held placement/type/covariance tests.
+243 literal port-route deletions, keyed controller-port-role swaps,
+signature-dependent opportunity-phase twists, and the held
+placement/type/covariance tests.
 
 The normalized 61,562-gate semantic `H` is executed for 130 ordinals on all
 four endpoint rows.  The expected history table is stated independently in
@@ -198,14 +200,25 @@ Cycle823 instrument/controller compositions are:
 | `(3,2,2)` | 160 | 160 | 320 | 0 |
 | `(5,3,2)` | 472 | 472 | 944 | 0 |
 
-The coherent extension follows by linearity from an exact monomial basis map;
-a dense global multiedge amplitude execution was not performed.
+For every row the runner independently constructs the declared target from
+the Cycle823 full-seam map and Cycle826 orientation, applies the literal keyed
+FSWAP/SWAP path map, infers controller roles from the actual path endpoints,
+executes the controller table, returns both charged endpoints, and compares
+the resulting basis keys and complex coefficients.  The maximum dictionary
+residual is zero and every route, role, pointer-law, and return failure census
+is zero.  Swapping the two charged controller roles is detected on
+`16 + 160 + 472 = 648` of 1,296 rows with maximum residual `sqrt(2)`;
+twisting every opportunity amplitude by `-1` is detected on the same 648 rows
+with maximum residual `2`.  The coherent extension follows by linearity from
+this exact monomial basis map; a dense global multiedge amplitude execution
+was not performed.
 
 Every held box passes passive transport through all 24 proper-cubic frames,
 all 576 frame products on 512 route-coordinate samples, and eight affine
 translations of the already compiled finite atlas.  This is covariance of a
 supplied finite program.  It is not an intrinsic translation-local placement
-law.
+law.  The `24`, `576`, `512`, and eight coverage cardinalities are part of the
+executable PASS predicate.
 
 The unchanged endpoint return preserves the landed matter fixture: mass
 `0.45340565417488515`, Cycle219 comparison residual
@@ -329,6 +342,9 @@ returned macro 751 factors, all three one-pass routes 2,173 factors, forward
 load/return 3,595 factors, typed support 17,733 coordinates per edge, and
 Chebyshev radius 164.
 
+The `24`, `576`, 27, and 1,429,515 coverage cardinalities are all required by
+the executable PASS predicate; an identity-only frame set cannot satisfy it.
+
 This certifies the dilated local persistent and complete endpoint-auxiliary
 templates, one Cycle827 controller atlas per unordered edge, and typed port
 corridors.  It does **not** recompile the full Cycle822/823 intercell
@@ -396,7 +412,7 @@ charged-pair and 56 charged-control type mismatches across 56 target pairs;
 the runner records that rejected substitution as a typed counterfactual
 census.  An actual-atlas adverse comparison is also load-bearing: only 13 of
 1,724 ordered candidate `(opcode, sites)` supports occur in the compiled
-Cycle822/823 `(3,2,2)` atlas, rising only to 16 when two-site orientation is
+Cycle822/823 `(3,2,2)` atlas, rising only to 15 when two-site orientation is
 ignored.  Of 185 candidate-charged sites, 128 are absent
 from the compiled charged palette and 10 are compiled neutral; of 7,589
 candidate-neutral sites, 7,335 are absent and 104 are compiled charged.
@@ -458,10 +474,28 @@ redundant placement.  The no-go promotion gate fails.
 
 ### N2 — wall-independence audit
 
-The positive theorem leaves three unexecuted tasks: full-update/corridor
-genesis; whole-schedule arbitration/order; and autonomous
-occurrence/renewal.  Physical time, permanent Record, Born admission, and
-source response are downstream interfaces not executed in this experiment.
+The positive theorem leaves three unexecuted task groups:
+
+- `W1`: compile and authenticate the full update/seam atlas, its typed
+  corridors, and their lawful genesis;
+- `W2`: implement shared-service arbitration and application order over that
+  completed atlas; and
+- `W3`: derive autonomous occurrence, admission, termination, capacity, and
+  renewal for the program and service resources.
+
+Their pairwise dependency audit is:
+
+| attempted closure | closes `W1` | closes `W2` | closes `W3` |
+|---|---|---|---|
+| `W1` full authenticated atlas | yes | no; it only supplies the domain on which arbitration must act | no |
+| `W2` arbitration/order | no; it presupposes or co-constructs an atlas | yes | no; a selected order need not occur autonomously |
+| `W3` occurrence/renewal | no | no; occurrence does not choose a conflict-free shared order | yes |
+
+Thus `W2` is domain-dependent on `W1`; it is not an independent pre-atlas
+wall.  The dependency-aware open set is `(W1 with W2 jointly tested on it,
+W3)`.  This collapse is bookkeeping, not a minimum-resource or independence
+theorem.  Physical time, permanent Record, Born admission, and source response
+are downstream interfaces not executed in this experiment.
 
 ### N3 — hidden-wall scan
 
@@ -560,7 +594,8 @@ Derived here:
   held-box collisions;
 - exact sparse signature composition and passive covariance;
 - conditional local refusal and finite service-token constructions;
-- physical evidence that controller event order is observable.
+- basis-state evidence that the hosted controller output depends on supplied
+  application order.
 
 Still supplied:
 

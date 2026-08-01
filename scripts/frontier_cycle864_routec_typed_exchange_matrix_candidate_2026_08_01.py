@@ -993,9 +993,8 @@ def candidate_factor_trace_certificate(geometry, taxi, actual_atlas):
         "selected_ordered_opcode_site_supports": len(selected_ordered),
         "actual_ordered_support_matches": len(selected_ordered & actual_ordered),
         "selected_unique_unordered_opcode_site_supports": len(selected_unordered),
-        "actual_unordered_support_matches": sum(
-            support_key(opcode, sites, unordered=True) in actual_unordered
-            for opcode, sites in selected_ordered
+        "actual_unordered_support_matches": len(
+            selected_unordered & actual_unordered
         ),
         "charged_candidate_ordered_supports": len(charged_ordered),
         "charged_actual_ordered_support_matches": len(

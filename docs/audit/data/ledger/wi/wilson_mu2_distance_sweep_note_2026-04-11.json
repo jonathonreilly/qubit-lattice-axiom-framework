@@ -1,45 +1,110 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T19:39:21.488801+00:00",
+  "audit_invocation_history": [
+    "bea88ea87c414ad7bf63e57c3deaf4dc"
+  ],
+  "audit_invocation_id": "bea88ea87c414ad7bf63e57c3deaf4dc",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/frontier_wilson_mu2_distance_sweep.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/frontier_newton_both_masses.py": "33ba89abde56bc98b4d08dcd7f61d59be0b92a554dd0b777a6086e82c173c8e6",
+      "scripts/frontier_wilson_two_body_open.py": "4bdf0c25421509b987b4424ce9dc6befa6281d8a4e50be49578fc60e5b01ae4f"
+    },
+    "load_bearing_score": 4.085,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_newton_both_masses.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "33ba89abde56bc98b4d08dcd7f61d59be0b92a554dd0b777a6086e82c173c8e6",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_wilson_mu2_distance_sweep.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "62c833eef6c563eb10d2d938710a5625c68c92228c6c9c143b889b66c44cbf1a",
+        "cache_runner_sha256": "71245b0c1616afa73fa5296a15849bea21654a48b2dc1b7ec600de2f72d5cf30",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_wilson_two_body_open.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4bdf0c25421509b987b4424ce9dc6befa6281d8a4e50be49578fc60e5b01ae4f",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "71245b0c1616afa73fa5296a15849bea21654a48b2dc1b7ec600de2f72d5cf30",
+    "runner_path": "scripts/frontier_wilson_mu2_distance_sweep.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 11
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260801-08715882",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The headline finite outputs reproduce, but the note also makes unverified reversal and leave-one-out claims; the supplied checks do not discharge them.",
   "claim_id": "wilson_mu2_distance_sweep_note_2026-04-11",
-  "claim_scope": null,
+  "claim_scope": "On the declared open cubic graphs and parameter grids, 60/60 shared-minus-self separation-curvature means are negative and stable with rounded fitted exponents increasing from -3.315 to -1.871, while the separate 4x4 centroid proxy fails its declared finite criteria, without physical or no-go interpretation.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T19:39:21.488801+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_newton_both_masses.py",
     "scripts/frontier_wilson_two_body_open.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 4.085,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The complete executable packet preserves two bounded formal-model facts: all 60 sampled rows are negative and stable with five increasing fitted exponents, and the separate finite two-coefficient proxy misses its declared criteria.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "stretch_attempt_negative"
+  ],
   "note_hash": "48a8487f2905620e2b5fcd81c4285144074b04d1cf842f1535865baa45867d41",
   "note_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: add exact reversed-hopping and reversed-phi control checks plus executable leave-one-out anchor regressions from raw data, or remove and narrow those assertions.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1580,13 +1645,13 @@
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
-    "B": 0,
-    "C": 0,
+    "B": 6,
+    "C": 9,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 15
   },
   "runner_path": "scripts/frontier_wilson_mu2_distance_sweep.py",
   "title": "One-Component Directed-Hopping `mu2` Parameter Sweep Note",
   "transitive_descendants": 11,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The 15 passing checks close the two headline finite certificates, but no executable check covers the claim that reversing the hopping orientation or phi-coupling sign reverses the separation-curvature sign, and no check covers the eight leave-one-out R-squared values. Why this blocks: on reflection-symmetric even-separation rows, global hopping-orientation reversal is conjugate to spatial reflection plus A/B exchange, which preserves the separation observable rather than proving a sign flip, so the extra characterization is not closed as written. Repair target: execute and assert both reversal controls and the leave-one-out regressions from raw anchor data, or remove or narrow those statements. Claim boundary until fixed: the completed runner and an independent regression recomputation support only the declared 60-row signs and stability, five rounded fits, and finite 4x4 comparator nonpass; alternate conventions and observables and any physical or universal no-go remain open."
 }

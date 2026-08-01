@@ -1,24 +1,94 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T19:08:20.288208+00:00",
+  "audit_invocation_history": [
+    "5ae5c6f696424ff4a866e916cf3e2061"
+  ],
+  "audit_invocation_id": "5ae5c6f696424ff4a866e916cf3e2061",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 3,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 11,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": "Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+      "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": "On the stipulated continuous-time, spatial-Z\u00b3 central-difference surface, the leading a\u00b2 artifact has zero p0 Hessian components and signed-permutation-averaged spatial Hessian 4|k|\u00b2I\u2083; no loop coefficient or Lorentz-restoration result is included.",
+      "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11": "For the explicitly defined finite periodic difference operator, exact blocking and rephasing produce the stated Clifford fiber, which decomposes unitarily into four identical irreducible four-dimensional matrix modules."
+    },
+    "dep_claim_type": {
+      "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": "bounded_theorem",
+      "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": "bounded_theorem",
+      "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": "retained_bounded",
+      "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": "retained_bounded",
+      "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11": "retained_bounded"
+    },
+    "deps": [
+      "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+      "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18",
+      "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11"
+    ],
+    "helper_runner_hashes": {
+      "scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py": "d524bfffed29c791db8049506f9547089077e60a03f33a206a626eb86f807ffc"
+    },
+    "load_bearing_score": 4.085,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "4bb91966e377d381c6e1f7e2993dabbd1f8df542d06ab819c48a10cdc247056a",
+        "cache_runner_sha256": "3d3af2b179977877676f34eaf4f012d33c45417e308b55eafc0f78ceeafe3a15",
+        "cache_status": "ok"
+      },
+      "scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "1ba2a5747fe3a7b0e142152fc23a6cb51737af18a9fab9dfe6f1d8a06a2499f7",
+        "cache_runner_sha256": "d524bfffed29c791db8049506f9547089077e60a03f33a206a626eb86f807ffc",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "3d3af2b179977877676f34eaf4f012d33c45417e308b55eafc0f78ceeafe3a15",
+    "runner_path": "scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 11
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260801-517ab103",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The 25 primary checks and seven independent scalar-trace checks close the finite-algebra and proxy-number portion. The note as written does not close because its N1\u2013N8 PASS relies on hostile executions absent from the supplied runner/helper code and stdout.",
   "claim_id": "velocity_rg_gauge_tensor_wti_xi_affine_drag_exact_support_note_2026-07-17",
-  "claim_scope": null,
+  "claim_scope": "On one declared periodic N^4 Euclidean naive-Dirac SU(2) reconstruction: the Wilson gauge tensor, midpoint WTI, xi-affine rainbow/tadpole identities, finite-torus Ward checks, and labeled finite-grid static-response proxy signs, without a target-surface, carrier, continuum, pole-speed, or RG-coefficient bridge.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T19:08:20.288208+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -28,21 +98,24 @@
     "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 4.085,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "On the declared D_w(xi) family, the finite sums give the exact WTI and xi-affine identities together with two positive static-response proxy directions.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls"
+  ],
   "note_hash": "69caf25e3925770abe7aed6189c1e81fe988f3b919fc6e0db8ea335935cbeee6",
   "note_path": "docs/VELOCITY_RG_GAUGE_TENSOR_WTI_XI_AFFINE_DRAG_EXACT_SUPPORT_NOTE_2026-07-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: add live asserted off-grid, omitted-seagull, sign-reversal, true-inverse/indefiniteness, and carrier-comparison checks, or mark those N1 routes untested and narrow the wall certificate.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -148,14 +221,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 12,
     "B": 0,
-    "C": 0,
+    "C": 13,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 25
   },
   "runner_path": "scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py",
   "title": "Four-Dimensional Euclidean Gauge Tensor, Exact Lattice WTI, And Xi-Affine Static Proxies (Bounded)",
   "transitive_descendants": 11,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The N1/N7 boundary certificate says the runner executed off-grid, omitted-seagull, sign-reversal, true-inverse/indefiniteness, and carrier-comparison attacks, but none appears as an executed assertion in the supplied runner/helper sources or stdout. Why this blocks: The completed finite checks support the exact algebra and proxy values, and the N2\u2013N4/N6/N8 framing is bounded, but N5 rhetoric and the N7 prose steelman cannot substitute for missing N1 execution evidence, so the declared overall N1\u2013N8 PASS is unsupported. Repair target: Implement and cache asserted checks for every counted attack, or honestly classify the unsupported routes as OPEN/UNTESTED and revise the wall set. Claim boundary until fixed: The independently rechecked finite identities, finite-torus Ward results, and labeled proxy numbers remain supportable, but the clean bounded-with-named-walls certificate does not."
 }

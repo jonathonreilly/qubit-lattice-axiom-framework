@@ -1,0 +1,37 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR29-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle859_adoption_impact_manifest_2026_07_28.txt": "PASS/FAIL certificate lines",
+    "logs/runner-cache/frontier_cycle859_manifest_independent_check_2026_07_28.txt": "PASS/FAIL certificate lines"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle859_adoption_impact_manifest_2026_07_28.txt": {
+      "fail": 3,
+      "pass": 1
+    },
+    "logs/runner-cache/frontier_cycle859_manifest_independent_check_2026_07_28.txt": {
+      "fail": 3,
+      "pass": 1
+    }
+  },
+  "checker_disclosure": "checker attack logic byte-identical to v1; only pinned expectation constants re-frozen for the v2 primary; v1-refutation labels retained by design - disclosed, not edited",
+  "claim_type": "bounded_theorem",
+  "cycle": 859,
+  "files": {
+    "docs/ADOPTION_IMPACT_MANIFEST_CYCLE859_BOUNDED_THEOREM_NOTE_2026-07-28.md": "0de5128a94cc8f0ed7bb8b1f2fdbb9c01be4af2e3fcda5cb331a0d6bceed5591",
+    "logs/runner-cache/frontier_cycle859_adoption_impact_manifest_2026_07_28.txt": "eb7ad7eadb49f78f0ce34c335c31e3d84bb39ea7babb9a1affadd01823c054fa",
+    "logs/runner-cache/frontier_cycle859_manifest_independent_check_2026_07_28.txt": "941c67eb92abbcca301ab46a26c20e621534ddc0331ddeebaa25aeda17ee51d3",
+    "scripts/frontier_cycle859_adoption_impact_manifest_2026_07_28.py": "2639344a78197188272dfd2ecbe5a48a09fc9f2a0bda827c071fc52434186444",
+    "scripts/frontier_cycle859_manifest_independent_check_2026_07_28.py": "e47c8c6b4d9fdd7173bf6053e5856bc2b233890eae9a239d5be4c0a080995632"
+  },
+  "independent_audit_still_required": true,
+  "reversal": "twenty-nine: checker refuted 19 NO_CONSUMPTION classifications (8 docs + 11 scripts, all corpus-implicit); v2 adopts the union sweep with corrected derived counts",
+  "verdicts": [
+    "classification (v2 union sweep): NO_CONSUMPTION 9,320 / CORPUS_IMPLICIT 69 / EXPLICIT_READING 31 - the 31 are the complete semantic refire list; under E2 their re-ratification is confirmation-only",
+    "invariance: registry-additive adoption changes ZERO bytes of pinned scripts/docs (independently re-verified); mechanical blast radius zero; axiom hash untouched",
+    "reversal 29 absorbed: 19 reclassified files named with per-file evidence; the guarantee survived correction unchanged (31 rows, zero bytes)",
+    "scope: pinned snapshot; live-main re-run required at adoption time (owner lane)"
+  ]
+}

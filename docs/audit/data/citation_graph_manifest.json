@@ -1,6 +1,6 @@
 {
- "edge_count": 15377,
- "node_count": 4620,
+ "edge_count": 15382,
+ "node_count": 4621,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10473,6 +10473,10 @@
   "physical_m2_typed_radius_one_compiler_tournament_cycle822_bounded_theorem_note_2026-07-30": {
    "deps_hash": "4f426bcba0df",
    "out_degree": 10
+  },
+  "physical_multicoset_stabilizer_lattice_cycle702_note_2026-08-01": {
+   "deps_hash": "741160b855f7",
+   "out_degree": 5
   },
   "physical_operational_source_response_readout_chain_cycle700_note_2026-07-25": {
    "deps_hash": "7dc7df7e6543",

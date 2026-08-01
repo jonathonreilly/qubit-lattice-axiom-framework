@@ -1,42 +1,89 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T18:41:18.024965+00:00",
+  "audit_invocation_history": [
+    "c5d5019f8f8340adb16835c26708418c",
+    "c12f67bc6a8c49cda5644aab1d0b66ad"
+  ],
+  "audit_invocation_id": "c12f67bc6a8c49cda5644aab1d0b66ad",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 19.852,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "9d7049ac15930eb571f95a4caecbc72d4be389bd1bdd84bbb87ee80a34aaac6a",
+        "cache_runner_sha256": "ad9b476052d39d8ac3c6af239b6f4e240bb527643d4eaca137809c500d00c634",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "ad9b476052d39d8ac3c6af239b6f4e240bb527643d4eaca137809c500d00c634",
+    "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 230
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260801-7cd10724",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Given the stated operator hypotheses, direct antiunitary conjugation and algebraic substitution prove both C1 and C2. Framework-specific realization of those hypotheses is deliberately outside the audited scope.",
   "claim_id": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "The standalone implication that real anti-Hermitian D and real involutions C and P satisfying CDC=-D, PDP=-D, and KDK=D obey Theta D Theta^{-1}=D and [PK,iD]=0; lattice realization, Theta-squared/C3, physical-Hamiltonian, SME, and continuum claims are excluded.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T18:41:18.024965+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 24,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 19.852,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Using KDK=D and PDP=-D gives CPKDKPC=C(-D)C=D, while antiunitarity gives PK(iD)KP=-iPDP=iD.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "cbfdaf9d3eee868385ee200bdab826609d5a8b808eb245da6041149801f9f282",
   "note_path": "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_dependency_edge: if framework-specific applicability is later claimed, cite a retained authority deriving premises (1)-(3); otherwise preserve the present standalone conditional scope.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -387,14 +434,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 32,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 32
   },
   "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
   "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem (C1+C2 only, post-2026-05-12 narrowing)",
   "transitive_descendants": 230,
-  "verdict_rationale": null
+  "verdict_rationale": "The abstract C1 and C2 implications are correct class-A algebraic consequences of the stated premises, and the runner performs genuine exact-symbolic checks consistent with the proof. However, premises (1)-(3) are stipulated rather than derived from any cited retained authority, so the result is clean only as a conditional abstract theorem and does not establish framework-specific lattice applicability."
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 859 independent adversarial check of the adoption-impact manifest.
+"""Cycle 859 v3 independent check of the adoption-impact manifest.
 
 The primary is source evidence only: this checker reads and parses it but
 never imports or executes it.  The tracked corpus is rebuilt from the pinned
@@ -24,7 +24,7 @@ from typing import Iterable
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150_000
-SNAPSHOT_SHA = "3ff1043bce6ae08534bc3a01d028674fb8ea7fe2"
+SNAPSHOT_COMMIT_SHA = "d6a514430ac9921882017ba6424d289e2dc6b288"
 PRIMARY_PATH = (
     "scripts/frontier_cycle859_adoption_impact_manifest_2026_07_28.py"
 )
@@ -33,15 +33,27 @@ AUDIT_INPUT_PATHS = (
 )
 PRIMARY_MODULE = Path(PRIMARY_PATH).stem
 EXPECTED_PRIMARY_SHA256 = (
-    "2639344a78197188272dfd2ecbe5a48a09fc9f2a0bda827c071fc52434186444"
+    "52b94d68c25594a5f1222b8644f1c1a57591b13c0a78334cdcaee6360d2786b3"
 )
-EXPECTED_PRIMARY_GIT_BLOB = "92737631536a14fae73c61df3364d4953a05acfc"
+EXPECTED_PRIMARY_GIT_BLOB = "7d73f3cbc338bbbcf0271ced86f443284beb05aa"
 PRIMARY_COUNTS = {
     "NO_CONSUMPTION": 9339,
     "CORPUS_IMPLICIT": 50,
     "EXPLICIT_READING": 31,
 }
 EXPECTED_SCOPED_FILE_COUNT = 9420
+CACHE_CONTAMINATION_NOTE = (
+    "Cycle 859 v2 swept the working-tree snapshot; after its clean run, "
+    "the block note, runner caches, and receipt quoting the E2 wording "
+    "contaminated the rebuild, and failing caches shipped. Cycle 859 v3 "
+    "repairs that incident by sweeping only the Git tree pinned at "
+    f"{SNAPSHOT_COMMIT_SHA} via git ls-tree and git show."
+)
+EXPECTED_ADJUSTED_COUNTS = {
+    "NO_CONSUMPTION": 9320,
+    "CORPUS_IMPLICIT": 69,
+    "EXPLICIT_READING": 31,
+}
 HYPOTHETICAL_REGISTRY_PATH = (
     "owner-lane/primitive-registry/record-formation.jsonl"
 )
@@ -178,7 +190,9 @@ def literal_assignment(tree: ast.Module, name: str) -> object | None:
 
 
 def snapshot_entries(scoped_only: bool = True) -> tuple[tuple[str, str], ...]:
-    raw = git_bytes("ls-tree", "-rz", "--full-tree", SNAPSHOT_SHA)
+    raw = git_bytes(
+        "ls-tree", "-r", "-z", "--full-tree", SNAPSHOT_COMMIT_SHA
+    )
     rows = []
     for record in raw.split(b"\0"):
         if not record:
@@ -198,24 +212,12 @@ def snapshot_entries(scoped_only: bool = True) -> tuple[tuple[str, str], ...]:
 def load_snapshot_payloads(
     entries: tuple[tuple[str, str], ...],
 ) -> dict[str, bytes]:
-    request = "".join(f"{object_id}\n" for _path, object_id in entries)
-    raw = git_bytes("cat-file", "--batch", input_bytes=request.encode("ascii"))
-    cursor = 0
     payloads: dict[str, bytes] = {}
     for path, expected_id in entries:
-        line_end = raw.index(b"\n", cursor)
-        object_id, kind, raw_size = raw[cursor:line_end].decode("ascii").split()
-        if object_id != expected_id or kind != "blob":
-            raise AssertionError(("cat-file header", path, object_id, kind))
-        size = int(raw_size)
-        start = line_end + 1
-        finish = start + size
-        if raw[finish:finish + 1] != b"\n":
-            raise AssertionError(("cat-file framing", path))
-        payloads[path] = raw[start:finish]
-        cursor = finish + 1
-    if cursor != len(raw):
-        raise AssertionError(("cat-file trailing bytes", len(raw) - cursor))
+        payload = git_bytes("show", f"{SNAPSHOT_COMMIT_SHA}:{path}")
+        if git_blob_sha(payload) != expected_id:
+            raise AssertionError(("git show blob mismatch", path))
+        payloads[path] = payload
     return payloads
 
 
@@ -637,7 +639,7 @@ def certificate_sweep_replay(sweep: dict[str, object]) -> dict[str, object]:
     result = {
         "certificate": "THE_SWEEP_REPLAY",
         "finding": "PRIMARY_COUNTS_REFUTED_AFTER_SEMANTIC_ADJUDICATION",
-        "snapshot_sha": SNAPSHOT_SHA,
+        "snapshot_commit_sha": SNAPSHOT_COMMIT_SHA,
         "scanned_file_count": len(sweep["payloads"]),
         "declared_needle_families": DECLARED_NEEDLE_FAMILIES,
         "script_method": (
@@ -650,15 +652,25 @@ def certificate_sweep_replay(sweep: dict[str, object]) -> dict[str, object]:
         "lexical_only_counts_match_primary": lexical_counts == PRIMARY_COUNTS,
         "broad_candidate_file_count": len(sweep["broad_candidates"]),
         "semantic_adjusted_counts": adjusted_counts,
+        "expected_semantic_adjusted_counts": EXPECTED_ADJUSTED_COUNTS,
+        "semantic_adjusted_counts_exact":
+            adjusted_counts == EXPECTED_ADJUSTED_COUNTS,
         "exact_divergence_count": len(divergences),
         "exact_divergence_list": divergences,
         "parse_failures": sweep["parse_failures"],
     }
-    result["pass"] = (
+    result["legacy_no_refutation_pass"] = (
         not result["parse_failures"]
         and result["lexical_only_counts_match_primary"]
         and not divergences
         and adjusted_counts == PRIMARY_COUNTS
+    )
+    result["pass"] = (
+        not result["parse_failures"]
+        and result["lexical_only_counts_match_primary"]
+        and tuple(row["path"] for row in divergences)
+            == tuple(sorted(EXPECTED_FALSE_NO_PATHS))
+        and result["semantic_adjusted_counts_exact"]
     )
     return result
 
@@ -688,7 +700,11 @@ def certificate_missed_consumer_hunt(
         ),
         "reversal_triggered": bool(false_no),
     }
-    result["pass"] = not result["reversal_triggered"]
+    result["legacy_no_refutation_pass"] = not result["reversal_triggered"]
+    result["pass"] = (
+        result["reversal_triggered"]
+        and result["constructive_paths_exact"]
+    )
     return result
 
 
@@ -780,10 +796,6 @@ def certificate_invariance_logic(
     before_hashes = sweep["payload_sha256"]
     virtual_scoped_payloads = dict(sweep["payloads"])
     after_hashes = hash_manifest(virtual_scoped_payloads)
-    checkout_hashes = {
-        path: sha256((ROOT / path).read_bytes()).hexdigest()
-        for path in sorted(sweep["payloads"])
-    }
     post_full_paths = full_paths | {str(registry_path)}
     result = {
         "certificate": "THE_INVARIANCE_LOGIC",
@@ -810,7 +822,10 @@ def certificate_invariance_logic(
             git_blob_sha(sweep["payloads"][path]) == object_id
             for path, object_id in sweep["entries"]
         ),
-        "snapshot_matches_checkout": checkout_hashes == before_hashes,
+        "snapshot_git_blob_ids_recomputed_exact": all(
+            git_blob_sha(sweep["payloads"][path]) == object_id
+            for path, object_id in sweep["entries"]
+        ),
         "pinned_hashes_before_equal_virtual_after": before_hashes == after_hashes,
         "pinned_content_delta_file_count": sum(
             before_hashes[path] != after_hashes[path] for path in before_hashes
@@ -829,7 +844,7 @@ def certificate_invariance_logic(
         and result["registry_path_disjoint_from_every_pinned_path"]
         and result["virtual_operation_is_one_new_file"]
         and result["git_blob_ids_recomputed_exact"]
-        and result["snapshot_matches_checkout"]
+        and result["snapshot_git_blob_ids_recomputed_exact"]
         and result["pinned_hashes_before_equal_virtual_after"]
         and result["pinned_content_delta_file_count"] == 0
         and result["pinned_content_delta_bytes"] == 0
@@ -863,13 +878,7 @@ def certificate_controls(
     )
     actual_primary_sha = sha256(primary_before).hexdigest()
     actual_primary_blob = git_blob_sha(primary_before)
-    expected_adjusted_counts = {
-        "NO_CONSUMPTION": PRIMARY_COUNTS["NO_CONSUMPTION"]
-            - len(EXPECTED_FALSE_NO_PATHS),
-        "CORPUS_IMPLICIT": PRIMARY_COUNTS["CORPUS_IMPLICIT"]
-            + len(EXPECTED_FALSE_NO_PATHS),
-        "EXPLICIT_READING": PRIMARY_COUNTS["EXPLICIT_READING"],
-    }
+    current_head = git_text("rev-parse", "HEAD")
     result = {
         "certificate": "CONTROLS",
         "finding": "CONTROLS_CLEAN",
@@ -889,8 +898,9 @@ def certificate_controls(
         "primary_git_blob": actual_primary_blob,
         "primary_git_blob_pin_match":
             actual_primary_blob == EXPECTED_PRIMARY_GIT_BLOB,
-        "primary_snapshot_payload_match":
-            sweep["payloads"][PRIMARY_PATH] == primary_before,
+        "primary_snapshot_pin_match":
+            literal_assignment(primary_tree, "SNAPSHOT_COMMIT_SHA")
+            == SNAPSHOT_COMMIT_SHA,
         "inputs_unchanged": primary_before == primary_after,
         "primary_AST_valid": isinstance(primary_tree, ast.Module),
         "primary_access_mode": "read_bytes + ast.parse; never import/execute",
@@ -898,10 +908,17 @@ def certificate_controls(
         "primary_imported_by_self": PRIMARY_MODULE in imported_modules,
         "primary_loaded": PRIMARY_MODULE in sys.modules,
         "primary_blocker_hits": tuple(PRIMARY_BLOCKER.hits),
-        "snapshot_sha": SNAPSHOT_SHA,
-        "execution_head_sha": git_text("rev-parse", "HEAD"),
+        "snapshot_commit_sha": SNAPSHOT_COMMIT_SHA,
+        "literal_snapshot_commit_sha":
+            literal_assignment(self_tree, "SNAPSHOT_COMMIT_SHA")
+            == SNAPSHOT_COMMIT_SHA,
+        "execution_head_sha": current_head,
         "snapshot_is_execution_head":
-            git_text("rev-parse", "HEAD") == SNAPSHOT_SHA,
+            current_head == SNAPSHOT_COMMIT_SHA,
+        "snapshot_is_execution_head_required": False,
+        "snapshot_is_execution_head_ancestor": git_bytes(
+            "merge-base", "--is-ancestor", SNAPSHOT_COMMIT_SHA, current_head
+        ) == b"",
         "running_branch": git_text("rev-parse", "--abbrev-ref", "HEAD"),
         "scoped_file_count": len(sweep["payloads"]),
         "scoped_file_count_expected":
@@ -917,13 +934,13 @@ def certificate_controls(
         "expected_false_NO_paths_exact":
             tuple(sorted(sweep["false_no"]))
             == tuple(sorted(EXPECTED_FALSE_NO_PATHS)),
-        "expected_adjusted_counts": expected_adjusted_counts,
+        "expected_adjusted_counts": EXPECTED_ADJUSTED_COUNTS,
         "actual_adjusted_counts": row_counts(sweep["adjusted_rows"]),
         "adjusted_counts_exact": row_counts(sweep["adjusted_rows"])
-            == expected_adjusted_counts,
+            == EXPECTED_ADJUSTED_COUNTS,
         "refutation_coherent": (
-            not sweep_certificate["pass"]
-            and not hunt_certificate["pass"]
+            sweep_certificate["pass"]
+            and hunt_certificate["pass"]
             and hunt_certificate["reversal_triggered"]
             and hunt_certificate["constructive_paths_exact"]
         ),
@@ -939,13 +956,14 @@ def certificate_controls(
         and result["inputs_existing_worktree_relative"]
         and result["primary_sha256_pin_match"]
         and result["primary_git_blob_pin_match"]
-        and result["primary_snapshot_payload_match"]
+        and result["primary_snapshot_pin_match"]
         and result["inputs_unchanged"]
         and result["primary_AST_valid"]
         and not result["primary_imported_by_self"]
         and not result["primary_loaded"]
         and not result["primary_blocker_hits"]
-        and result["snapshot_is_execution_head"]
+        and result["literal_snapshot_commit_sha"]
+        and result["snapshot_is_execution_head_ancestor"]
         and result["scoped_file_count_expected"]
         and result["all_scoped_paths_exact"]
         and not result["parse_failures"]
@@ -966,7 +984,7 @@ def render(
     lines = [
         "CYCLE859_MANIFEST_INDEPENDENT_ADVERSARIAL_CHECK",
         "SCOPE :: pinned tracked top-level scripts/*.py and docs/*.md at "
-        + SNAPSHOT_SHA,
+        + SNAPSHOT_COMMIT_SHA,
         "PRIMARY_ACCESS :: BLOCKLISTED source text/AST only; never imported or executed",
     ]
     for certificate in certificates:
@@ -987,15 +1005,17 @@ def render(
     checker_clean = (
         controls["pass"]
         and invariance["pass"]
-        and not sweep["pass"]
-        and not hunt["pass"]
+        and sweep["pass"]
+        and hunt["pass"]
         and hunt["reversal_triggered"]
     )
     lines.append("FINAL :: " + compact({
+        "cache_contamination_note": CACHE_CONTAMINATION_NOTE,
         "checker_clean": checker_clean,
         "primary_survives": False if checker_clean else None,
         "primary_lexical_counts": sweep["lexical_only_counts"],
         "independent_semantic_counts": sweep["semantic_adjusted_counts"],
+        "snapshot_commit_sha": SNAPSHOT_COMMIT_SHA,
         "false_NO_count": hunt["constructive_false_NO_count"],
         "byte_invariance_survives": invariance["pass"],
         "scoped_refire_guarantee_survives": False if checker_clean else None,
@@ -1059,8 +1079,8 @@ def main() -> int:
     checker_clean = (
         controls["pass"]
         and invariance_certificate["pass"]
-        and not sweep_certificate["pass"]
-        and not hunt_certificate["pass"]
+        and sweep_certificate["pass"]
+        and hunt_certificate["pass"]
         and hunt_certificate["reversal_triggered"]
     )
     return 0 if checker_clean else 1

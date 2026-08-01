@@ -1,0 +1,37 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF23-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle862_stabilization_independent_check_2026_07_28.txt": "PASS/FAIL certificate lines",
+    "logs/runner-cache/frontier_cycle862_stabilization_threshold_2026_07_28.txt": "PASS/FAIL certificate lines"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle862_stabilization_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle862_stabilization_threshold_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 8
+    }
+  },
+  "checker_disclosure": "checker attack logic byte-identical; pins re-frozen to the v2 primary; v1-era labels retained by design",
+  "claim_type": "bounded_theorem",
+  "cycle": 862,
+  "files": {
+    "docs/STABILIZATION_THRESHOLD_CYCLE862_BOUNDED_THEOREM_NOTE_2026-07-28.md": "d9f3225261dd4328112025d0f0574e4091eecc9ee67010a2f5d85afc2136ddde",
+    "logs/runner-cache/frontier_cycle862_stabilization_independent_check_2026_07_28.txt": "e631414b0f54cca68e7647a0a3b6ab0e6b3c3d69bb6f9045d4265c23813cc889",
+    "logs/runner-cache/frontier_cycle862_stabilization_threshold_2026_07_28.txt": "3c9deb24457abad8a3c527a07af382e6ed4016e9859920a94f7caee2d2eea17e",
+    "scripts/frontier_cycle862_stabilization_independent_check_2026_07_28.py": "fae3209b76a71985ff62f76a9925fd7def756046360b4cc7c97dff55322aed74",
+    "scripts/frontier_cycle862_stabilization_threshold_2026_07_28.py": "b8ee658f2b9edb3b9c3fe9e0cb9216c88116c23939850b0828e283075c49e272"
+  },
+  "independent_audit_still_required": true,
+  "reversal": "thirty: checker refuted v1's zero-at-E2 coincidence claim (truth: 27 before / 14 at / 73 change-after among the 114) and exposed the tick-probe vacuity; v1 defect = first-bucket-wins ordering + missing change-after bucket; v2 adopts both",
+  "verdicts": [
+    "regression exact vs the landed 860 certification (182/114, 34/49/31, 68, digest)",
+    "stabilization census (horizon 51,115): 56 at the set / 126 scattered later / rest never certified - STABILIZATION_INCOMPLETE_AT_HORIZON",
+    "corrected decomposition of the 114: 27 stabilize before E2 / 14 at E2 / 73 change after E2; under reading R all 2,223,285 below-stabilization thresholds carry exact witnesses incl. 73 of E2's own stamps; fiat-permanence forces nothing",
+    "tick-restricted stability vacuity-dominated (final-singleton artifact); THRESHOLD-NOT-DERIVED: settled-facts selects neither landed reading; the two landed readings are cadence choices; stability is a third independent structure"
+  ]
+}

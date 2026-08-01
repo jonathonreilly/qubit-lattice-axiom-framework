@@ -62,8 +62,8 @@
   "load_bearing_score": 5.7,
   "load_bearing_step": "At the positive pole, m I_16 + alpha_0 omega_a - i sum_i alpha_i s_i = 2 omega_a P_(a,+) alpha_0, linking the scalar pole residue to the positive spectral fiber.",
   "load_bearing_step_class": "A",
-  "max_descendant_status": "audit_in_progress",
-  "max_descendant_status_rank": 30,
+  "max_descendant_status": "unknown",
+  "max_descendant_status_rank": 70,
   "negative_assertion_classes": [
     "derived_no_go_boundary"
   ],

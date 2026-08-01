@@ -19,7 +19,7 @@ file per claim), summarized in
 | Retained positive rows | 127 |
 | Retained bounded rows | 357 |
 | Retained no-go rows | 0 |
-| Boxed decorations under retained parents | 33 |
+| Boxed decorations under retained parents | 34 |
 
 ## Retained positive rows (127)
 
@@ -519,7 +519,7 @@ Sorted by load-bearing graph score (descending).
 
 - none at present
 
-## Boxed decorations under retained parents (33)
+## Boxed decorations under retained parents (34)
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.109; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.756; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
@@ -539,6 +539,7 @@ Sorted by load-bearing graph score (descending).
 - [`hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18`](../../docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) — score 10.533; audited 2026-07-29T17:43:10.584742+00:00; under `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`
 - [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) — score 10.098; audited 2026-07-29T17:48:15.600454+00:00; under `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
 - [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — score 9.670; audited 2026-07-25T03:09:22.007323+00:00; under `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`
+- [`free_dirac_poincare_representation_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md) — score 7.644; audited 2026-08-01T17:49:43.277909+00:00; under `free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17`
 - [`kubo_range_of_validity_note`](../../docs/KUBO_RANGE_OF_VALIDITY_NOTE.md) — score 6.024; audited 2026-05-05T11:26:50.315429+00:00; under `linear_response_true_kubo_note`
 - [`free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17`](../../docs/FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md) — score 5.700; audited 2026-07-25T06:10:53.579716+00:00; under `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`
 - [`lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17`](../../docs/LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md) — score 5.255; audited 2026-07-10T03:19:43.094692+00:00; under `graph_first_su3_integration_note`

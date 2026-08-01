@@ -1,0 +1,99 @@
+{
+  "artifact": "frontier_cycle863_cycle823_cycle719_same_chart_history_port_2026_08_01.py",
+  "audit": "unset",
+  "authority": "none",
+  "artifact_provenance_sha256": {
+    "note": "9e88aae81826885b2db30a684e6676c1601fdfc8039de4f8ab918c794793429f",
+    "runner": "26fe3c29f64bec9a0e49c79cd28e244d9a94d28d627396a345c777953c1de38c"
+  },
+  "checks_passed": 11,
+  "checks_total": 11,
+  "claim_scope": "one-use one-edge clean-genesis same-chart physical-M2 endpoint and pointer port into one translated finite Cycle719 H^130 controller",
+  "placement": {
+    "controller_translation": [6, -10, -2],
+    "port_route_distances": [28, 28, 8],
+    "port_returned_macro_gates": [55, 55, 15],
+    "forward_port_gate_count": 235,
+    "combined_charged_coordinates": 582,
+    "combined_neutral_coordinates": 17915,
+    "combined_charged_neutral_overlap": 0,
+    "port_path_sha256": "a27767ae0a4a0cda45bcfca43582b270024b69d141ff730ce574ccf34567784c"
+  },
+  "serial_schedule": {
+    "manifest": [
+      "Cycle823 prefix/prewrite/seam/postwrite-clean",
+      "two charged endpoint transfer macros",
+      "one neutral pointer transfer macro",
+      "normalized Cycle719 H repeated 130 circuit ordinals",
+      "two charged endpoint return macros",
+      "Cycle823 contact"
+    ],
+    "manifest_sha256": "4180c18db5b70d9a3e59e0c93d67d3a716f62e0ef26f74f04370dbea01867c99",
+    "stage_aware_collision_edges": 0,
+    "charged_same_type_corridor_reuse": 27,
+    "neutral_same_type_corridor_reuse": 3,
+    "erased_stage_reuse_coordinates": 30,
+    "endpoint_post_precedes_contact": true,
+    "stage_labels_are_physical_time": false
+  },
+  "intertwiner": {
+    "physical_signature_cases": 8,
+    "target_signature_cases": 8,
+    "coherent_fixed_parity_tests": 2,
+    "maximum_intertwiner_residual": 0.0,
+    "maximum_inverse_residual": 0.0,
+    "maximum_coherent_intertwiner_residual": 0.0,
+    "maximum_coherent_inverse_residual": 0.0,
+    "cleanup_failures": 0,
+    "decoded_observed_sha256": "199282397cac922c7161e0d36982a9150987c7eb5ec4e0861e197129d3ea25a7",
+    "decoded_expected_sha256": "199282397cac922c7161e0d36982a9150987c7eb5ec4e0861e197129d3ea25a7"
+  },
+  "active_controls": {
+    "route_deletions_detected": 3,
+    "endpoint_return_deletions_detected": 2,
+    "minimum_route_deletion_residual": 1.4142135623730951,
+    "dirty_destination_triples_detected": 7,
+    "FSWAP_vs_SWAP_dirty_11_residual": 2.0,
+    "rejected_acceptance_fields_detected": 4,
+    "zero_token_detected": true,
+    "two_token_detected": true,
+    "success_finalizer_deletion_detected": true
+  },
+  "parity_and_covariance": {
+    "controller_expanded_factors": 740226,
+    "combined_elementary_or_prefix_failures": 0,
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "unique_joint_route_edges": 29912,
+    "transport_or_product_failures": 0,
+    "port_coordinate_product_sites_tested": 67
+  },
+  "execution_scope": {
+    "normalized_semantic_gates_per_H": 61562,
+    "semantic_H_applications_per_input": 130,
+    "semantic_gate_applications_per_input": 8003060,
+    "semantic_controller_inputs_executed": 4,
+    "semantic_gate_applications_total": 32012240,
+    "controller_elementary_factors_per_H_structural": 740226,
+    "controller_routed_gates_per_H_structural": 13315498,
+    "controller_routed_gates_per_orbit_structural": 1731014740,
+    "literal_new_port_factors_executed_on_sparse_state": 235,
+    "semantic_controller_execution": true,
+    "controller_elementary_dense_execution": false,
+    "routed_controller_dense_execution": false,
+    "new_port_literal_sparse_state_execution": true
+  },
+  "mass_contact": {
+    "one_particle_mass": 0.45340565417488515,
+    "one_particle_mass_residual": 5.551115123125783e-17,
+    "contact_vacuum_and_one_particle_residual": 0.0,
+    "contact_double_occupation_phase_residual": 0.0
+  },
+  "open_boundary": [
+    "multi-edge placement, selection, arbitration, and resource scaling",
+    "intrinsic atlas generation, local type enforcement, and charged/neutral port-corridor genesis",
+    "autonomous program, token, bank, admission, occurrence, capacity, and renewal",
+    "physical time, inaccessible inverse, permanent Record, Born/history, source/gravity, and prediction bridges"
+  ],
+  "status": "cycle863-cycle823-cycle719-same-chart-history-port-bounded-positive"
+}

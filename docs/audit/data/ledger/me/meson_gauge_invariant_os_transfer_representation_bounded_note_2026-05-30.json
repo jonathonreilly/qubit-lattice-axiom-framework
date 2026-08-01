@@ -1,77 +1,24 @@
 {
-  "audit_date": "2026-07-25T16:20:11.409529+00:00",
-  "audit_invocation_history": [
-    "d5b76322e981417593ee1f6fabed9d4e"
-  ],
-  "audit_invocation_id": "d5b76322e981417593ee1f6fabed9d4e",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 17,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
-    },
-    "dep_claim_type": {
-      "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
-    },
-    "deps": [
-      "staggered_only_det_positivity_case_a_note_2026-05-17"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 2.822,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5",
-    "runner_path": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 4
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-d3e61bb7",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The exposed runner establishes agreement between two block-propagator constructions inserted into the same connected-loop formula, but it does not establish the claimed direct four-field Berezin correlator using the same finite fermion matrix whose determinant supplies the averaging weight. The clipped load-bearing source and execution evidence prevent independent closure of that missing step.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
-  "claim_scope": "Finite listed 3+1 carriers: agreement of two block-propagator constructions and their insertion into the same connected meson-loop formula under determinant-weighted finite gauge samples or quadratures; direct same-matrix four-field Berezin equality was not established.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T16:20:11.409529+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -79,22 +26,19 @@
     "staggered_only_det_positivity_case_a_note_2026-05-17"
   ],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 2.822,
-  "load_bearing_step": "At fixed gauge background, the claimed genuine connected four-field Berezin/Wick meson correlator equals the operator connected loop, and their determinant-weighted finite-sample averages agree.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
-  "note_hash": "25250c2b3546db5e5eea826b6477a3984aafd0b2b00a7ed64252806d3bf2985f",
+  "note_hash": "df286514817ef8276bcb429c61a890943ce37a298f3a71157bbfcac55e2ec626",
   "note_path": "docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue \u2014 expose complete SHA-pinned source and stdout and add an independent fixed-configuration four-field Wick/minor computation using the same finite M whose determinant weights the gauge average.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1482,19 +1426,112 @@
         "total_pass": 64
       },
       "verdict_rationale": "The source is complete and performs substantial finite-matrix computation, so the proposed load-bearing class is C rather than a printed-pass or numerical-match artifact. However, meson_correlator_full_berezin never calls wick or a full-spacetime Minv and instead performs the same reduced trace contraction after constructing Gf, leaving the advertised genuine four-field Berezin path untested. The determinant average also combines an Lt=2 determinant with a block kernel extracted using Lt=28, contrary to the claim that both belong to the same finite Berezin measure."
+    },
+    {
+      "archived_at": "2026-08-01T15:53:30.471672+00:00",
+      "archived_for_note_hash": "25250c2b3546db5e5eea826b6477a3984aafd0b2b00a7ed64252806d3bf2985f",
+      "audit_date": "2026-07-25T16:20:11.409529+00:00",
+      "audit_invocation_history": [
+        "d5b76322e981417593ee1f6fabed9d4e"
+      ],
+      "audit_invocation_id": "d5b76322e981417593ee1f6fabed9d4e",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 17,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 2.822,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5",
+        "runner_path": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-d3e61bb7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exposed runner establishes agreement between two block-propagator constructions inserted into the same connected-loop formula, but it does not establish the claimed direct four-field Berezin correlator using the same finite fermion matrix whose determinant supplies the averaging weight. The clipped load-bearing source and execution evidence prevent independent closure of that missing step.",
+      "claim_scope": "Finite listed 3+1 carriers: agreement of two block-propagator constructions and their insertion into the same connected meson-loop formula under determinant-weighted finite gauge samples or quadratures; direct same-matrix four-field Berezin equality was not established.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T16:20:11.409529+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At fixed gauge background, the claimed genuine connected four-field Berezin/Wick meson correlator equals the operator connected loop, and their determinant-weighted finite-sample averages agree.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue \u2014 expose complete SHA-pinned source and stdout and add an independent fixed-configuration four-field Wick/minor computation using the same finite M whose determinant weights the gauge average.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 48,
+        "D": 0,
+        "total_pass": 64
+      },
+      "verdict_rationale": "Issue: The exposed `meson_correlator_full_berezin` evaluates the same connected-loop trace using a two-point block kernel, while the determinant weight uses `det_M_finite(..., nt=1)` and that block kernel uses the `nt=14` temporal chain; the remaining load-bearing evidence is clipped. Why this blocks: the runner therefore supports propagator-construction agreement and same-loop consistency, not the claimed full four-field Berezin correlator and determinant arising from one finite Grassmann matrix. Repair target: provide complete hash-pinned evidence and directly compute the fixed-background four-field Wick/minor correlator from that same matrix, independently checking the reflection sign, normalization, eigenvectors, and determinant-weighted average. Claim boundary until fixed: only the finite propagator and same-loop numerical agreement is supported; for K2\u2013K4's tested negative boundaries, N1 alternative conventions and carriers are not exhausted, N2 reduces to the observed finite-control failures, N3/N5 rhetoric is explicitly test-scoped, N4 has no matched prior residual, N6 supplies no premise closing the artifact gap, N7 remains unresolved, and N8 establishes no applicable retirement mechanism."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 16,
+    "A": 0,
     "B": 0,
-    "C": 48,
+    "C": 0,
     "D": 0,
-    "total_pass": 64
+    "total_pass": 0
   },
   "runner_path": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
-  "title": "Gauge-Invariant, Number-Conserving Meson OS Transfer Representation Equality on a Finite 3+1 Staggered Carrier \u2014 Bounded Note",
+  "title": "Gauge-Invariant Meson Same-Matrix Wick-Minor / Exact Finite-Kernel Identity on Listed Carriers \u2014 Bounded Note",
   "transitive_descendants": 4,
-  "verdict_rationale": "Issue: The exposed `meson_correlator_full_berezin` evaluates the same connected-loop trace using a two-point block kernel, while the determinant weight uses `det_M_finite(..., nt=1)` and that block kernel uses the `nt=14` temporal chain; the remaining load-bearing evidence is clipped. Why this blocks: the runner therefore supports propagator-construction agreement and same-loop consistency, not the claimed full four-field Berezin correlator and determinant arising from one finite Grassmann matrix. Repair target: provide complete hash-pinned evidence and directly compute the fixed-background four-field Wick/minor correlator from that same matrix, independently checking the reflection sign, normalization, eigenvectors, and determinant-weighted average. Claim boundary until fixed: only the finite propagator and same-loop numerical agreement is supported; for K2\u2013K4's tested negative boundaries, N1 alternative conventions and carriers are not exhausted, N2 reduces to the observed finite-control failures, N3/N5 rhetoric is explicitly test-scoped, N4 has no matched prior residual, N6 supplies no premise closing the artifact gap, N7 remains unresolved, and N8 establishes no applicable retirement mechanism."
+  "verdict_rationale": null
 }

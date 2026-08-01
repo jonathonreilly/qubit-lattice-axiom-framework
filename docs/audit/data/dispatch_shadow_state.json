@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-07-30",
+ "as_of_date": "2026-08-01",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -485,7 +485,6 @@
   "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
   "universal_gr_a1_invariant_section_note",
   "universal_gr_block_constraint_interpretation_note",
-  "universal_gr_casimir_block_localization_note",
   "universal_gr_discrete_global_closure_note",
   "universal_gr_invariant_nonlinear_completion_note",
   "universal_gr_isotropic_glue_operator_note",

@@ -86,7 +86,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 3.0,
   "load_bearing_step": "Every product-projector menu is, up to swapping the sites, one of the four stated tree forms, and the proposed product grading normalizes every such form.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -112,6 +112,6 @@
   },
   "runner_path": "scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py",
   "title": "Born Form From Finite Effect Partitions And A Joint Product-Menu Relaxation",
-  "transitive_descendants": 2,
+  "transitive_descendants": 3,
   "verdict_rationale": "The note's algebra and bounded scope are internally coherent, and its negative boundary is conditional on one collapsed joint relaxation: product-only menu eligibility without global orthogonal additivity. N1/N7 present five attacks and a steelman, N2 collapses the advertised changes, N3/N4 expose the inputs and self-contained witness, and N5/N6 preserve the bounded strengthening routes. Although N8 evidence is supplied, the clipped runner source prevents independent verification of the load-bearing menu-exhaustion and normalization computation, so the packet cannot support clean N1-N8 closure. This is an artifact-completeness conditional, not a substantive refutation of the bounded theorem or its derived no-go boundary."
 }

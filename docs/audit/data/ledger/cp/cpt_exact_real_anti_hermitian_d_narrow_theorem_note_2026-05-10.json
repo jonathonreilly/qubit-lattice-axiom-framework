@@ -1,59 +1,42 @@
 {
-  "audit_date": "2026-07-15T21:18:34.899074+00:00",
-  "audit_invocation_history": [
-    "ba80620ba23c4f8a817f84d139d2f733"
-  ],
-  "audit_invocation_id": "ba80620ba23c4f8a817f84d139d2f733",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "load_bearing_score": 21.576,
-    "runner_hash": "8c26466b9bc61ff4be2f6728fb9a3dbb31c9255472709d35a88d7a9a87ce4705",
-    "transitive_descendants": 762
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-cpt_exact_real_anti_herm-064",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Within this restricted scope, both identities follow directly by algebraic substitution. No relation between C and P or lattice-specific realization is required.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-  "claim_scope": "The abstract C1 and C2 algebraic identities under the stated operator premises, excluding the Cl(3) lattice-premise derivation and the C3 conditional corollary.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-15T21:18:34.899074+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 24,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 19.852,
-  "load_bearing_step": "Using TDT=D, PDP=-D, and CDC=-D gives CP(TDT)PC=C(-D)C=D, while PK(iD)K^{-1}P=-iPDP=iD.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "conditional_wall_rationale",
-    "derived_no_go_boundary"
-  ],
-  "no_go_discipline": null,
-  "note_hash": "60ae2423e8c4ef453453664bb628ed5e86df12ac30fd4101acf8f4fe47ae45ba",
+  "note_hash": "cbfdaf9d3eee868385ee200bdab826609d5a8b808eb245da6041149801f9f282",
   "note_path": "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: replace the nonliteral mirror-chain instance with the claimed even-period cubic inversion and rerun, or revise the validation and special-case prose to match the actual four-dimensional, Theta^2=-I computation, then re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -337,10 +320,63 @@
         "total_pass": 35
       },
       "verdict_rationale": "The restricted C1\u2013C2 implication is valid class-A algebra, and the runner genuinely evaluates the relevant matrix identities. Clean certification of the note as written is blocked by an artifact mismatch: the note says the runner checks a framework-specific cubic L=4 construction with [C,P]=0 and Theta^2=+I, while the source builds a nonliteral four-dimensional mirror-chain example and stdout reports +I=False and -I=True. These discrepancies are non-load-bearing for scoped C1\u2013C2 but require correction before the artifact is clean. For N1\u2013N8, the substantive negative boundary concerning failure of unconditional scalar C3 lacks the five-mechanism attack set, resolution-level rhetoric checks, steelman resolution, and candidate dispositions required to certify that boundary."
+    },
+    {
+      "archived_at": "2026-08-01T15:53:14.241860+00:00",
+      "archived_for_note_hash": "60ae2423e8c4ef453453664bb628ed5e86df12ac30fd4101acf8f4fe47ae45ba",
+      "audit_date": "2026-07-15T21:18:34.899074+00:00",
+      "audit_invocation_history": [
+        "ba80620ba23c4f8a817f84d139d2f733"
+      ],
+      "audit_invocation_id": "ba80620ba23c4f8a817f84d139d2f733",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 21.576,
+        "runner_hash": "8c26466b9bc61ff4be2f6728fb9a3dbb31c9255472709d35a88d7a9a87ce4705",
+        "transitive_descendants": 762
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-cpt_exact_real_anti_herm-064",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within this restricted scope, both identities follow directly by algebraic substitution. No relation between C and P or lattice-specific realization is required.",
+      "claim_scope": "The abstract C1 and C2 algebraic identities under the stated operator premises, excluding the Cl(3) lattice-premise derivation and the C3 conditional corollary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T21:18:34.899074+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Using TDT=D, PDP=-D, and CDC=-D gives CP(TDT)PC=C(-D)C=D, while PK(iD)K^{-1}P=-iPDP=iD.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: replace the nonliteral mirror-chain instance with the claimed even-period cubic inversion and rerun, or revise the validation and special-case prose to match the actual four-dimensional, Theta^2=-I computation, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The restricted C1\u2013C2 implication is valid class-A algebra, and the runner genuinely evaluates the relevant matrix identities. Clean certification of the note as written is blocked by an artifact mismatch: the note says the runner checks a framework-specific cubic L=4 construction with [C,P]=0 and Theta^2=+I, while the source builds a nonliteral four-dimensional mirror-chain example and stdout reports +I=False and -I=True. These discrepancies are non-load-bearing for scoped C1\u2013C2 but require correction before the artifact is clean. For N1\u2013N8, the substantive negative boundary concerning failure of unconditional scalar C3 lacks the five-mechanism attack set, resolution-level rhetoric checks, steelman resolution, and candidate dispositions required to certify that boundary."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "restoration_history": [
     {
       "archived_at": "2026-07-15T21:18:44.349725+00:00",
@@ -351,14 +387,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 35,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 35
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
   "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem (C1+C2 only, post-2026-05-12 narrowing)",
   "transitive_descendants": 230,
-  "verdict_rationale": "The restricted C1\u2013C2 implication is valid class-A algebra, and the runner genuinely evaluates the relevant matrix identities. Clean certification of the note as written is blocked by an artifact mismatch: the note says the runner checks a framework-specific cubic L=4 construction with [C,P]=0 and Theta^2=+I, while the source builds a nonliteral four-dimensional mirror-chain example and stdout reports +I=False and -I=True. These discrepancies are non-load-bearing for scoped C1\u2013C2 but require correction before the artifact is clean. For N1\u2013N8, the substantive negative boundary concerning failure of unconditional scalar C3 lacks the five-mechanism attack set, resolution-level rhetoric checks, steelman resolution, and candidate dispositions required to certify that boundary."
+  "verdict_rationale": null
 }

@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.587,
+  "load_bearing_score": 7.629,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -139,6 +139,6 @@
   },
   "runner_path": "scripts/frontier_gr_class_expansion_finite_rank_target.py",
   "title": "Gravity Class Expansion Target: Finite-Rank Source-to-Metric on the Current Bridge Surface",
-  "transitive_descendants": 67,
+  "transitive_descendants": 69,
   "verdict_rationale": null
 }

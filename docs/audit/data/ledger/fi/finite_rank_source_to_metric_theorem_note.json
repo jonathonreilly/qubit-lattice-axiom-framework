@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 8.767,
+  "load_bearing_score": 8.804,
   "load_bearing_step": "On the fixed 15^3 Dirichlet lattice, with the seven-site support and finite-rank matrix defined in the runner, the finite-rank source reproduces the exterior field and its shell-averaged radial harmonic projection gives a bounded static isotropic residual reduction.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -247,6 +247,6 @@
   },
   "runner_path": "scripts/frontier_finite_rank_source_to_metric_theorem.py",
   "title": "Finite-Rank Source-to-Metric Self-Contained Finite-Lattice Certificate",
-  "transitive_descendants": 76,
+  "transitive_descendants": 78,
   "verdict_rationale": "Within the explicitly bounded scope, the conclusion follows from the self-contained finite computation: the finite-rank identities close to machine precision, exterior harmonicity and Schur stationarity are computed directly, and the radial harmonic projection produces the stated residual reduction. The note explicitly excludes full nonlinear GR, continuum limits, universal source-to-metric claims, tensorial 3+1 matching, and derivation of the support choice, so those unclosed extensions are not part of the audited claim. The 8 META lines are a non-load-bearing runner artifact to ignore for scientific closure, not a blocker."
 }

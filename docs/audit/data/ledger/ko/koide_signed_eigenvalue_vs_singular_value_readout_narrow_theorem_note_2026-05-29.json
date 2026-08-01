@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-29T14:18:59.382561+00:00",
-  "audit_invocation_history": [
-    "3a6eab8ddaf74a9aa3c13bbc99a97973",
-    "357b1f24c6d648588cc4158eb893a9f2"
-  ],
-  "audit_invocation_id": "357b1f24c6d648588cc4158eb893a9f2",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 2,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 7
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true,
-      "runner_path": "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py"
-    },
-    "criticality": "high",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 10.57,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "3f9c2a6dacb16447ab8999e5f21d87d1c14e361d4248d34b41bfff3752f73f0b",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "3f9c2a6dacb16447ab8999e5f21d87d1c14e361d4248d34b41bfff3752f73f0b",
-    "runner_path": "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 94
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-14d0c3fa",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The fixed-triple algebra checks independently, but the full claim adds a derived negative readout boundary whose required multiresolution and cross-cycle stress tests are incomplete.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
-  "claim_scope": "Signed-versus-singular-value Koide readout algebra for the C3-circulant Hermitian H at r=1/2, including the equality window and claimed generic readout-class exclusion.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-29T14:18:59.382561+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 8,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 10.57,
-  "load_bearing_step": "At r=1/2, Q(S)=2/3 for every \u03b8, whereas Q(V)=(3a\u00b2+6|b|\u00b2)/(\u03a3_k|\u03bb_k|)\u00b2 is nonconstant in \u03b8 and equals 2/3 exactly when every \u03bb_k\u22650.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
-  "note_hash": "d0aa395880c8456e73dc7c93cfd6efdede9e42ef0678e16042a4f28ad8452bc9",
+  "note_hash": "1d40f701309bec8824fa2163b68e05a7b7787206276bfcb6752f6107757700b3",
   "note_path": "docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: add runner-backed N5 evidence at every required resolution and complete the N8 candidate dispositions, or narrow the note to the exact formulas and explicit samples before re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -216,19 +167,105 @@
         "total_pass": 30
       },
       "verdict_rationale": "The claim is a genuine algebraic closure over the restricted packet with no load-bearing cited authority or external comparator. Independent formula checking confirms the factors 3a, 3a\u00b2+6|b|\u00b2, Q(S)=(1+2r)/3, the r=1/2 value 2/3, the closed equality window including \u03b8=\u03c0/12, and the one-negative denominator 3a\u22122\u03bb_min. The runner source actually computes the symbolic identities and exact samples rather than merely printing constants, and its PASS=30/FAIL=0 is consistent with the note."
+    },
+    {
+      "archived_at": "2026-08-01T15:53:25.126048+00:00",
+      "archived_for_note_hash": "d0aa395880c8456e73dc7c93cfd6efdede9e42ef0678e16042a4f28ad8452bc9",
+      "audit_date": "2026-07-29T14:18:59.382561+00:00",
+      "audit_invocation_history": [
+        "3a6eab8ddaf74a9aa3c13bbc99a97973",
+        "357b1f24c6d648588cc4158eb893a9f2"
+      ],
+      "audit_invocation_id": "357b1f24c6d648588cc4158eb893a9f2",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 2,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 7
+          },
+          "decoration_candidate": false,
+          "dominant_class": "D",
+          "exists": true,
+          "runner_path": "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py"
+        },
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.57,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "3f9c2a6dacb16447ab8999e5f21d87d1c14e361d4248d34b41bfff3752f73f0b",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "3f9c2a6dacb16447ab8999e5f21d87d1c14e361d4248d34b41bfff3752f73f0b",
+        "runner_path": "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 94
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260729-14d0c3fa",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The fixed-triple algebra checks independently, but the full claim adds a derived negative readout boundary whose required multiresolution and cross-cycle stress tests are incomplete.",
+      "claim_scope": "Signed-versus-singular-value Koide readout algebra for the C3-circulant Hermitian H at r=1/2, including the equality window and claimed generic readout-class exclusion.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-29T14:18:59.382561+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "At r=1/2, Q(S)=2/3 for every \u03b8, whereas Q(V)=(3a\u00b2+6|b|\u00b2)/(\u03a3_k|\u03bb_k|)\u00b2 is nonconstant in \u03b8 and equals 2/3 exactly when every \u03bb_k\u22650.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: add runner-backed N5 evidence at every required resolution and complete the N8 candidate dispositions, or narrow the note to the exact formulas and explicit samples before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "Issue: N1 closes five distinct attacks (character symmetry, denominator algebra, alternate readout, boundary cases, and exact finite samples); N2 collapses to one fixed-triple boundary; N3 finds the axiom, boundary, convention, and normalization mentions non-load-bearing; N4 has no prior-witness residual. N5 fails because no live per-element, per-site, per-mode, per-block, and lattice-wide resolution evidence is supplied; N6 finds no listed primitive or reframe that changes the absolute-value identity; N7's equality-window steelman defeats the broad compatibility phrasing although not the nonconstancy result; N8 lacks complete dispositions for the supplied cross-cycle candidates. Why this blocks / Repair target: the negative and phenomenological framing cannot be cemented until those stress tests are completed or the framing is narrowed. Claim boundary until fixed: the exact formulas and explicit abstract-H samples remain supported, but not the generic exclusion of singular-value reinterpretation or phenomenological preference for the signed readout."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 30,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 30
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py",
-  "title": "Koide Signed-Eigenvalue vs Singular-Value Readout Narrow Theorem",
+  "title": "Signed-Eigenvalue and Modulus-Vector Koide Functionals: Narrow Algebraic Theorem",
   "transitive_descendants": 94,
-  "verdict_rationale": "Issue: N1 closes five distinct attacks (character symmetry, denominator algebra, alternate readout, boundary cases, and exact finite samples); N2 collapses to one fixed-triple boundary; N3 finds the axiom, boundary, convention, and normalization mentions non-load-bearing; N4 has no prior-witness residual. N5 fails because no live per-element, per-site, per-mode, per-block, and lattice-wide resolution evidence is supplied; N6 finds no listed primitive or reframe that changes the absolute-value identity; N7's equality-window steelman defeats the broad compatibility phrasing although not the nonconstancy result; N8 lacks complete dispositions for the supplied cross-cycle candidates. Why this blocks / Repair target: the negative and phenomenological framing cannot be cemented until those stress tests are completed or the framing is narrowed. Claim boundary until fixed: the exact formulas and explicit abstract-H samples remain supported, but not the generic exclusion of singular-value reinterpretation or phenomenological preference for the signed readout."
+  "verdict_rationale": null
 }

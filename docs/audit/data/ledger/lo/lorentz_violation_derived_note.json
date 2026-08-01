@@ -1,90 +1,44 @@
 {
-  "audit_date": "2026-07-25T09:05:26.752261+00:00",
-  "audit_invocation_history": [
-    "8739066fb56c40a28171c4a4d7ff5389"
-  ],
-  "audit_invocation_id": "8739066fb56c40a28171c4a4d7ff5389",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 3,
-        "B": 0,
-        "C": 3,
-        "D": 8
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true,
-      "runner_path": "scripts/frontier_lorentz_violation.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 7.085,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_lorentz_violation.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "73478063f8a0f10fb32e117acbc399a4c7d675e26b984be18003e614a524c4f5",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "73478063f8a0f10fb32e117acbc399a4c7d675e26b984be18003e614a524c4f5",
-    "runner_path": "scripts/frontier_lorentz_violation.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 47
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-61822e6f",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The displayed algebra is internally plausible, but the clipped runner source and stdout prevent an end-to-end check of every load-bearing coefficient and executable assertion. Complete runner evidence plus an independent coefficient audit is missing.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "lorentz_violation_derived_note",
-  "claim_scope": "Conditional Taylor expansion, normalized cubic-harmonic decomposition, and directional anisotropy of the supplied nearest-neighbor cubic kinetic symbol.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T09:05:26.752261+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [],
+  "deps": [
+    "scale_reference_primitive"
+  ],
   "direct_in_degree": 3,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 7.085,
-  "load_bearing_step": "The supplied symbol expands as E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + O(a^4 p^6), with sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 in normalized real spherical harmonics.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls"
-  ],
-  "note_hash": "b75c970ccd80367a834f22c2ed28282b44552b41abc72167d77de4c9260435e3",
+  "note_hash": "d8fe762c6858d109b659fb05b01962a3435a77938637d96c1a67ee492d3029da",
   "note_path": "docs/LORENTZ_VIOLATION_DERIVED_NOTE.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: Supply the complete current runner source and exact stdout, then independently recheck the Taylor coefficient, normalized harmonic projection, O_h negative control, and unit conversion.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh",
   "previous_audits": [
@@ -380,19 +334,104 @@
         "total_pass": 5
       },
       "verdict_rationale": "Issue: the Taylor and normalized cubic-harmonic identities are mathematically consistent, but the kinetic action and carrier interpretation are supplied rather than derived; the note also says the runner constructs all 48 O_h elements although the included code contains no such group construction. Why this blocks: the computation verifies a selected model surface, not a consequence of the accepted framework premises, and part of the advertised runner coverage is absent. Repair target: add a retained theorem selecting the kinetic operator and carrier and add executable O_h order/invariance assertions. Claim boundary until fixed: the p_i^4 coefficient, normalized l=4 identity, and factor-of-three anisotropy remain valid conditional algebra for the explicitly supplied symbol."
+    },
+    {
+      "archived_at": "2026-08-01T15:53:28.721619+00:00",
+      "archived_for_note_hash": "b75c970ccd80367a834f22c2ed28282b44552b41abc72167d77de4c9260435e3",
+      "audit_date": "2026-07-25T09:05:26.752261+00:00",
+      "audit_invocation_history": [
+        "8739066fb56c40a28171c4a4d7ff5389"
+      ],
+      "audit_invocation_id": "8739066fb56c40a28171c4a4d7ff5389",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 3,
+            "B": 0,
+            "C": 3,
+            "D": 8
+          },
+          "decoration_candidate": false,
+          "dominant_class": "D",
+          "exists": true,
+          "runner_path": "scripts/frontier_lorentz_violation.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 7.085,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_lorentz_violation.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "73478063f8a0f10fb32e117acbc399a4c7d675e26b984be18003e614a524c4f5",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "73478063f8a0f10fb32e117acbc399a4c7d675e26b984be18003e614a524c4f5",
+        "runner_path": "scripts/frontier_lorentz_violation.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-61822e6f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebra is internally plausible, but the clipped runner source and stdout prevent an end-to-end check of every load-bearing coefficient and executable assertion. Complete runner evidence plus an independent coefficient audit is missing.",
+      "claim_scope": "Conditional Taylor expansion, normalized cubic-harmonic decomposition, and directional anisotropy of the supplied nearest-neighbor cubic kinetic symbol.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T09:05:26.752261+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The supplied symbol expands as E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + O(a^4 p^6), with sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 in normalized real spherical harmonics.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: Supply the complete current runner source and exact stdout, then independently recheck the Taylor coefficient, normalized harmonic projection, O_h negative control, and unit conversion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: The restricted packet clips load-bearing runner stdout and runner source, so the O_h, Taylor-coefficient, and normalized-harmonic checks cannot all be independently tied to executed assertions. Why this blocks: The bounded result may be correct for the supplied symbol, but the visible PASS summaries do not verify every displayed coefficient or the full runner path; the separate action-selection, carrier/continuum-interpretation, and SME-response walls therefore remain conditions rather than derived conclusions. Repair target: Provide the complete runner source and exact current stdout, then independently recheck the -a^2/12 Taylor coefficient, the 4*sqrt(pi)/15 normalized-harmonic projection, the O_h negative control, and the unit conversion. Claim boundary until fixed: Retain only the stated conditional algebraic diagnostic for the supplied nearest-neighbor symbol, with no framework-native Lorentz-violation, CPT, SME-matching, or experimental-consistency claim."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 2,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 2
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_lorentz_violation.py",
   "title": "Fixed-Action Cubic-Anisotropy Diagnostic",
   "transitive_descendants": 47,
-  "verdict_rationale": "Issue: The restricted packet clips load-bearing runner stdout and runner source, so the O_h, Taylor-coefficient, and normalized-harmonic checks cannot all be independently tied to executed assertions. Why this blocks: The bounded result may be correct for the supplied symbol, but the visible PASS summaries do not verify every displayed coefficient or the full runner path; the separate action-selection, carrier/continuum-interpretation, and SME-response walls therefore remain conditions rather than derived conclusions. Repair target: Provide the complete runner source and exact current stdout, then independently recheck the -a^2/12 Taylor coefficient, the 4*sqrt(pi)/15 normalized-harmonic projection, the O_h negative control, and the unit conversion. Claim boundary until fixed: Retain only the stated conditional algebraic diagnostic for the supplied nearest-neighbor symbol, with no framework-native Lorentz-violation, CPT, SME-matching, or experimental-consistency claim."
+  "verdict_rationale": null
 }

@@ -1,77 +1,24 @@
 {
-  "audit_date": "2026-07-25T06:49:51.807254+00:00",
-  "audit_invocation_history": [
-    "457fe5af68fb47378c504878f1717111"
-  ],
-  "audit_invocation_id": "457fe5af68fb47378c504878f1717111",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 12,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/free_dirac_poincare_representation_2026-05-30.py"
-    },
-    "criticality": "high",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17": "Exact finite-spacing pole, residue, projector and spin-fiber identities; compact-momentum four-taste free-Dirac/Poincare limit; and finite given-CAR Jordan-Wigner hole relabelling, conditional only on the retained blocked Clifford symbol and approved kinetic-isotropy normalization."
-    },
-    "dep_claim_type": {
-      "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17": "decoration"
-    },
-    "dep_effective_status": {
-      "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17": "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
-    },
-    "deps": [
-      "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 7.644,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/free_dirac_poincare_representation_2026-05-30.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214",
-    "runner_path": "scripts/free_dirac_poincare_representation_2026-05-30.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 24
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-a99fba6c",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "Independent commutator, sign, spectrum, and invariant-density checks corroborate the runner's eight passes. The chain nevertheless cannot be closed because the cited authority's load-bearing pole, residue, projector, carrier, and CAR derivation is clipped from the restricted packet.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "free_dirac_poincare_representation_bounded_note_2026-05-30",
-  "claim_scope": "Internal algebraic and finite-compute consistency of the explicitly defined continuum free massive Dirac/Poincare construction on a supplied mass-shell/CAR carrier; the clipped upstream pole-residue/carrier derivation was not audited.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T06:49:51.807254+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -79,20 +26,19 @@
     "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17"
   ],
   "direct_in_degree": 6,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 7.644,
-  "load_bearing_step": "The mass shell, invariant density, spin/taste fibers, and finite CAR negative-branch relabelling are no longer free context inputs: they are the specific outputs requested from the candidate one-hop authority.",
-  "load_bearing_step_class": "B",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
-  "note_hash": "b54cf7dd8f8b47c3516be6f30f3bca3a63494081430ca8020866edd2df22ee17",
+  "note_hash": "b976f0efbab87757795891b268b9c06d1d1cd2125b4698cba72fe8665fcfe3c4",
   "note_path": "docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue \u2014 regenerate the restricted packet with the cited authority's unclipped Sections 2\u20135 and repeat the independent formula audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -4863,19 +4809,110 @@
         "total_pass": 8
       },
       "verdict_rationale": "The runner performs eight genuine class-(A) checks covering explicit commutators, analytic test-function identities, Lorentz-orbit and measure preservation, spectral enumeration, and bispinor covariance; it neither hard-codes a comparator value nor relies on opaque helpers. However, the continuum Dirac/Poincare carrier, standard boosts, invariant measure, and CAR particle/antiparticle relabelling are introduced as textbook methodology rather than supplied by a cited retained or accepted authority or derived from the framework premises. The negative sentences are scope exclusions and negative controls, not a no-go result or named wall, so the N1-N8 discipline is not substantively triggered."
+    },
+    {
+      "archived_at": "2026-08-01T15:53:17.205314+00:00",
+      "archived_for_note_hash": "b54cf7dd8f8b47c3516be6f30f3bca3a63494081430ca8020866edd2df22ee17",
+      "audit_date": "2026-07-25T06:49:51.807254+00:00",
+      "audit_invocation_history": [
+        "457fe5af68fb47378c504878f1717111"
+      ],
+      "audit_invocation_id": "457fe5af68fb47378c504878f1717111",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 12,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/free_dirac_poincare_representation_2026-05-30.py"
+        },
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17": "Exact finite-spacing pole, residue, projector and spin-fiber identities; compact-momentum four-taste free-Dirac/Poincare limit; and finite given-CAR Jordan-Wigner hole relabelling, conditional only on the retained blocked Clifford symbol and approved kinetic-isotropy normalization."
+        },
+        "dep_claim_type": {
+          "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17": "decoration"
+        },
+        "dep_effective_status": {
+          "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17": "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
+        },
+        "deps": [
+          "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 7.644,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/free_dirac_poincare_representation_2026-05-30.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214",
+        "runner_path": "scripts/free_dirac_poincare_representation_2026-05-30.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-a99fba6c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Independent commutator, sign, spectrum, and invariant-density checks corroborate the runner's eight passes. The chain nevertheless cannot be closed because the cited authority's load-bearing pole, residue, projector, carrier, and CAR derivation is clipped from the restricted packet.",
+      "claim_scope": "Internal algebraic and finite-compute consistency of the explicitly defined continuum free massive Dirac/Poincare construction on a supplied mass-shell/CAR carrier; the clipped upstream pole-residue/carrier derivation was not audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T06:49:51.807254+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The mass shell, invariant density, spin/taste fibers, and finite CAR negative-branch relabelling are no longer free context inputs: they are the specific outputs requested from the candidate one-hop authority.",
+      "load_bearing_step_class": "B",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue \u2014 regenerate the restricted packet with the cited authority's unclipped Sections 2\u20135 and repeat the independent formula audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the cited authority's pole, residue, projectors, induced carrier, and CAR relabelling derivation is clipped from the restricted packet. Why this blocks: manual commutator and measure checks corroborate the eight class-A runner results, but the runner begins after the continuum mass shell and CAR carrier have been supplied and cannot verify the missing upstream derivation. Repair target: rebuild the packet with the authority's full text and independently check the pole/residue normalization, projectors, induced carrier, and Jordan-Wigner/hole relabelling. Claim boundary until fixed: only the internal algebraic consistency of the explicitly supplied continuum construction is supported."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 8,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 8
+    "total_pass": 0
   },
   "runner_path": "scripts/free_dirac_poincare_representation_2026-05-30.py",
   "title": "Free Dirac Poincare Algebra and Positive-Energy Support (Bounded)",
   "transitive_descendants": 24,
-  "verdict_rationale": "Issue: the cited authority's pole, residue, projectors, induced carrier, and CAR relabelling derivation is clipped from the restricted packet. Why this blocks: manual commutator and measure checks corroborate the eight class-A runner results, but the runner begins after the continuum mass shell and CAR carrier have been supplied and cannot verify the missing upstream derivation. Repair target: rebuild the packet with the authority's full text and independently check the pole/residue normalization, projectors, induced carrier, and Jordan-Wigner/hole relabelling. Claim boundary until fixed: only the internal algebraic consistency of the explicitly supplied continuum construction is supported."
+  "verdict_rationale": null
 }

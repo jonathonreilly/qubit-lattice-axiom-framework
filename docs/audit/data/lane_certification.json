@@ -345,7 +345,7 @@
         },
         {
           "claim_id": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
@@ -509,7 +509,7 @@
         },
         {
           "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
@@ -1433,7 +1433,7 @@
         },
         {
           "claim_id": "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "lhcm_y_normalization_from_anomaly_and_convention_note_2026-05-02",

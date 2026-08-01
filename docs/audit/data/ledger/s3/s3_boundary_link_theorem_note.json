@@ -75,7 +75,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 14.256,
+  "load_bearing_score": 14.259,
   "load_bearing_step": "Exhaustive enumeration verifies that every nonempty proper P with both Q_3 sides connected has simplicial closure K_simp(P) a PL 2-disk.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -1716,6 +1716,6 @@
   },
   "runner_path": "scripts/frontier_s3_boundary_link_theorem.py",
   "title": "S^3 Boundary-Link Disk Bounded Certificate",
-  "transitive_descendants": 1222,
+  "transitive_descendants": 1224,
   "verdict_rationale": "Issue: The restricted packet clips load-bearing portions of both the source proof and runner. Why this blocks: PASS counts and visible call sites cannot establish that the omitted routines correctly compute the claimed complexes, and the packet preflight explicitly forbids a clean verdict. Repair target: provide complete rendered proof and executable evidence for the manifold, bridge, and exhaustive-certificate steps. Claim boundary until fixed: the bounded computational claims remain provisional, while the all-R extension retains the named large-coordinate bridge limitation."
 }

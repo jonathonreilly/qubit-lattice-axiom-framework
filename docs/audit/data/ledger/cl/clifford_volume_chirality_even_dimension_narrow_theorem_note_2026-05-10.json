@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 13.95,
+  "load_bearing_score": 13.952,
   "load_bearing_step": "For odd n, centrality and invertibility of omega make x omega=-omega x and x omega=omega x, forcing every internal common anticommuter x to vanish.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1809,6 +1809,6 @@
   },
   "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
   "title": "Clifford Volume-Element Chirality Forces Even Total Dimension Narrow Theorem",
-  "transitive_descendants": 1398,
+  "transitive_descendants": 1400,
   "verdict_rationale": "The finite-dimensional Clifford proof is mathematically sound, and the supplied runner performs 79 successful class-A checks, including exact coefficient kernels and an independent matrix-vectorization route. N1 supplies five distinct closed attacks; N2 has the single internal-Clifford-algebra kernel wall; N3 and N5 occurrences are non-load-bearing or resolved; N4 has no prior-route witness; and N6/N8 reveal no applicable closure or echo. However, the N7 external-carrier argument and resolution are carried only on the same live stdout surface, contrary to the packet's requirement for a distinct independent resolution path, so audited_clean is unavailable."
 }

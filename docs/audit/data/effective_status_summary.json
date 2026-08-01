@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2195,
+    "bounded_theorem": 2234,
     "decoration": 48,
-    "meta": 364,
+    "meta": 373,
     "no_go": 439,
     "open_gate": 207,
-    "positive_theorem": 660
+    "positive_theorem": 659
   },
   "cycle_examples": [
     [
@@ -78,10 +78,10 @@
       "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1"
     ]
   ],
-  "cycles_detected": 58,
+  "cycles_detected": 59,
   "effective_status_counts": {
     "audit_in_progress": 2,
-    "audited_conditional": 304,
+    "audited_conditional": 284,
     "audited_failed": 76,
     "audited_numerical_match": 11,
     "audited_renaming": 34,
@@ -108,12 +108,12 @@
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "decoration_under_plaquette_self_consistency_note": 1,
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
-    "meta": 356,
+    "meta": 365,
     "open_gate": 3,
     "retained": 127,
     "retained_bounded": 357,
     "retained_pending_chain": 12,
-    "unaudited": 2598
+    "unaudited": 2656
   },
   "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [

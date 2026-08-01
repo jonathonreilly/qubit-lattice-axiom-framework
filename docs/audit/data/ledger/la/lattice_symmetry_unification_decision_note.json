@@ -1,102 +1,45 @@
 {
-  "audit_date": "2026-07-25T04:20:36.768523+00:00",
-  "audit_invocation_history": [
-    "e2d8940fde4b426fb093486f58d3309b"
-  ],
-  "audit_invocation_id": "e2d8940fde4b426fb093486f58d3309b",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true,
-      "runner_path": "scripts/lattice_symmetry_unification_decision.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/lattice_mirror_hybrid.py": "28c23fe871ffc356a4a4cd9b0a8a76985a2a464c79c3389ad96651084bcb3e97"
-    },
-    "load_bearing_score": 4.807,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/lattice_mirror_hybrid.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/lattice_symmetry_unification_decision.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "baa6e0f9d16de2fad7be55b9fa11b673a80f1b88005803ae4a03dc6106bb709d",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "baa6e0f9d16de2fad7be55b9fa11b673a80f1b88005803ae4a03dc6106bb709d",
-    "runner_path": "scripts/lattice_symmetry_unification_decision.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 13
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-27819c29",
-  "auditor_confidence": "medium",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The visible tradeoff rows support the reported sign and count arithmetic, but the packet preflight identifies clipped load-bearing stdout. Complete current execution evidence is therefore missing.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "lattice_symmetry_unification_decision_note",
-  "claim_scope": "Finite standard-strength ordered-lattice Z2 symmetry sweep over max_dy 3..6, three slit geometries, and mass offsets -1..+1, testing whether any row unifies Born cleanliness, MI/decoherence, positive same-slit gravity, and distance-law criteria.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T04:20:36.768523+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
-    "scripts/lattice_mirror_hybrid.py"
+    "scripts/lattice_mirror_hybrid.py",
+    "scripts/lattice_symmetry_unification_decision.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 4.807,
-  "load_bearing_step": "Across the full 4 x 3 x 3 = 36 tradeoff rows, positive gravity appears on 0/36 and retained one-family rows on 0/36.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "no_go_result",
-    "stretch_attempt_negative"
-  ],
-  "note_hash": "7a0d028927f35a87a707f168447292712a17b350b19faa1e8288617fd0832e85",
+  "note_hash": "723d9c732ef17b39da7a406914ffc0c206fd81a25140cccae260dcd2f0c31ae4",
   "note_path": "docs/LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete SHA-pinned stdout or a sliced runner certificate covering the canonical sweep, barrier-distance curves, all tradeoff rows, and the final decision, then independently recheck the sign and count logic.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -204,6 +147,101 @@
         "total_pass": 1
       },
       "verdict_rationale": "The runner computes the finite sweep and decision summary from the specified lattice setup rather than hard-coding a promoted result. The note keeps the claim bounded: it rules out promotion on the tested standard-strength slice, while preserving the two-harness status and later weak-field reopening as outside scope. Residual risk is limited to untested families outside the stated sweep."
+    },
+    {
+      "archived_at": "2026-08-01T15:53:26.914516+00:00",
+      "archived_for_note_hash": "7a0d028927f35a87a707f168447292712a17b350b19faa1e8288617fd0832e85",
+      "audit_date": "2026-07-25T04:20:36.768523+00:00",
+      "audit_invocation_history": [
+        "e2d8940fde4b426fb093486f58d3309b"
+      ],
+      "audit_invocation_id": "e2d8940fde4b426fb093486f58d3309b",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/lattice_symmetry_unification_decision.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/lattice_mirror_hybrid.py": "28c23fe871ffc356a4a4cd9b0a8a76985a2a464c79c3389ad96651084bcb3e97"
+        },
+        "load_bearing_score": 4.807,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/lattice_mirror_hybrid.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/lattice_symmetry_unification_decision.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "baa6e0f9d16de2fad7be55b9fa11b673a80f1b88005803ae4a03dc6106bb709d",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "baa6e0f9d16de2fad7be55b9fa11b673a80f1b88005803ae4a03dc6106bb709d",
+        "runner_path": "scripts/lattice_symmetry_unification_decision.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 13
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-27819c29",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The visible tradeoff rows support the reported sign and count arithmetic, but the packet preflight identifies clipped load-bearing stdout. Complete current execution evidence is therefore missing.",
+      "claim_scope": "Finite standard-strength ordered-lattice Z2 symmetry sweep over max_dy 3..6, three slit geometries, and mass offsets -1..+1, testing whether any row unifies Born cleanliness, MI/decoherence, positive same-slit gravity, and distance-law criteria.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T04:20:36.768523+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Across the full 4 x 3 x 3 = 36 tradeoff rows, positive gravity appears on 0/36 and retained one-family rows on 0/36.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "no_go_result",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete SHA-pinned stdout or a sliced runner certificate covering the canonical sweep, barrier-distance curves, all tradeoff rows, and the final decision, then independently recheck the sign and count logic.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the packet preflight reports clipped load-bearing runner stdout, so the full current execution supporting the finite 36-row negative decision is unavailable even though the visible rows are consistent with 0/36 positive-gravity cases. Why this blocks: source and helper inspection show a genuine finite class-C computation, but partial stdout cannot authenticate every executed value and load-bearing branch. Repair target: supply complete SHA-pinned stdout or a sliced certificate covering all canonical, barrier-distance, tradeoff, and decision sections, plus an independent check of the sign and count logic. Claim boundary until fixed: the runner and source describe a finite standard-strength negative result, but it remains conditionally verified rather than retained clean."
     }
   ],
   "prose_corrections": [],
@@ -215,8 +253,8 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/lattice_symmetry_unification_decision.py",
-  "title": "Lattice Symmetry Unification Decision Note",
+  "runner_path": "scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py",
+  "title": "Finite Lattice-Symmetry Proxy Census \u2014 Bounded Theorem",
   "transitive_descendants": 13,
-  "verdict_rationale": "Issue: the packet preflight reports clipped load-bearing runner stdout, so the full current execution supporting the finite 36-row negative decision is unavailable even though the visible rows are consistent with 0/36 positive-gravity cases. Why this blocks: source and helper inspection show a genuine finite class-C computation, but partial stdout cannot authenticate every executed value and load-bearing branch. Repair target: supply complete SHA-pinned stdout or a sliced certificate covering all canonical, barrier-distance, tradeoff, and decision sections, plus an independent check of the sign and count logic. Claim boundary until fixed: the runner and source describe a finite standard-strength negative result, but it remains conditionally verified rather than retained clean."
+  "verdict_rationale": null
 }

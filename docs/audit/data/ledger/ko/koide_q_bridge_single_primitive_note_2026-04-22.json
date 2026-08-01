@@ -1,89 +1,42 @@
 {
-  "audit_date": "2026-07-29T14:28:38.591059+00:00",
-  "audit_invocation_history": [
-    "029f0b8b304548138795227a9a48a4e7",
-    "9eb3b915632a467ca8a350dfc8992342"
-  ],
-  "audit_invocation_id": "9eb3b915632a467ca8a350dfc8992342",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 10,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/frontier_koide_q_bridge_single_primitive.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 6.524,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_koide_q_bridge_single_primitive.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "42852238df4f169a4dfd05d31b35724339df148e96f4983e07d2bc4f7cb2d0e6",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "42852238df4f169a4dfd05d31b35724339df148e96f4983e07d2bc4f7cb2d0e6",
-    "runner_path": "scripts/frontier_koide_q_bridge_single_primitive.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 45
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-fbad4bf4",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The algebraic core closes only after stipulating the carrier formulas and positivity convention. The runner silently replaces a by sqrt(a^2), while the note's c=2|b|/a yields c=sgn(a)sqrt(2), not necessarily c=sqrt(2).",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "koide_q_bridge_single_primitive_note_2026-04-22",
-  "claim_scope": "The surviving arithmetic and representation/Yukawa faces on the stated charged-lepton carrier collapse to P_Q=1/2, implying kappa=2, c=sqrt(2), and Q=2/3, with physical source-law selection excluded.",
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-29T14:28:38.591059+00:00",
-  "claim_type_provenance": "audited",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 6.524,
-  "load_bearing_step": "a^2 = 2 |b|^2 <=> kappa = 2 <=> Brannen c = sqrt(2) <=> Koide Q = 2/3.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
-  "note_hash": "85b93e9464654d00b15c813285c484c22d096077f87dab3f488594f33c1628ab",
+  "note_hash": "912d10adc8f3e1e4c101217a44a5116fcd522f714eeec2920e7cd00524fbfc1f",
   "note_path": "docs/KOIDE_Q_BRIDGE_SINGLE_PRIMITIVE_NOTE_2026-04-22.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to algebra conditional on explicitly stipulated carrier formulas, or add the positivity domain and derivations or retained citations for the block normalizations, Brannen carrier match, and representation/Yukawa identifications, with executable assertions for every displayed face.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -279,19 +232,103 @@
         "total_pass": 16
       },
       "verdict_rationale": "The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs."
+    },
+    {
+      "archived_at": "2026-08-01T15:53:22.152351+00:00",
+      "archived_for_note_hash": "85b93e9464654d00b15c813285c484c22d096077f87dab3f488594f33c1628ab",
+      "audit_date": "2026-07-29T14:28:38.591059+00:00",
+      "audit_invocation_history": [
+        "029f0b8b304548138795227a9a48a4e7",
+        "9eb3b915632a467ca8a350dfc8992342"
+      ],
+      "audit_invocation_id": "9eb3b915632a467ca8a350dfc8992342",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 10,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/frontier_koide_q_bridge_single_primitive.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 6.524,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_koide_q_bridge_single_primitive.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "42852238df4f169a4dfd05d31b35724339df148e96f4983e07d2bc4f7cb2d0e6",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "42852238df4f169a4dfd05d31b35724339df148e96f4983e07d2bc4f7cb2d0e6",
+        "runner_path": "scripts/frontier_koide_q_bridge_single_primitive.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 45
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260729-fbad4bf4",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic core closes only after stipulating the carrier formulas and positivity convention. The runner silently replaces a by sqrt(a^2), while the note's c=2|b|/a yields c=sgn(a)sqrt(2), not necessarily c=sqrt(2).",
+      "claim_scope": "The surviving arithmetic and representation/Yukawa faces on the stated charged-lepton carrier collapse to P_Q=1/2, implying kappa=2, c=sqrt(2), and Q=2/3, with physical source-law selection excluded.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-29T14:28:38.591059+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "a^2 = 2 |b|^2 <=> kappa = 2 <=> Brannen c = sqrt(2) <=> Koide Q = 2/3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to algebra conditional on explicitly stipulated carrier formulas, or add the positivity domain and derivations or retained citations for the block normalizations, Brannen carrier match, and representation/Yukawa identifications, with executable assertions for every displayed face.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: Independent algebra gives Q(c)=1/3+c^2/6 and confirms the omitted Casimir ratio equals 1/2, but P_Q=1/2 together with the stated c=2|b|/a gives c=sgn(a)sqrt(2); the runner instead assumes c>0 and replaces a by sqrt(a^2). Why this blocks: the runner also hard-codes the block-power formulas, carrier match, dimensions, and Yukawa labels rather than deriving or citing them, so numerical equality alone does not establish that they are faces of one carrier primitive. Repair target: state and justify the positivity domain and supply self-contained derivations or retained citations for those carrier identifications, while directly asserting the third support ratio and replacing narrative True checks. Claim boundary until fixed: the stipulated algebra through P_Q=1/2, kappa=2, and Q=2/3 is conditionally valid, while physical source-law selection remains excluded."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 9,
-    "B": 5,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 16
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_q_bridge_single_primitive.py",
-  "title": "Koide `Q = 2/3` Bridge \u2014 Single-Primitive Narrowing",
+  "title": "Koide `Q = 2/3` Bridge \u2014 Conditional-Ratio Narrowing",
   "transitive_descendants": 45,
-  "verdict_rationale": "Issue: Independent algebra gives Q(c)=1/3+c^2/6 and confirms the omitted Casimir ratio equals 1/2, but P_Q=1/2 together with the stated c=2|b|/a gives c=sgn(a)sqrt(2); the runner instead assumes c>0 and replaces a by sqrt(a^2). Why this blocks: the runner also hard-codes the block-power formulas, carrier match, dimensions, and Yukawa labels rather than deriving or citing them, so numerical equality alone does not establish that they are faces of one carrier primitive. Repair target: state and justify the positivity domain and supply self-contained derivations or retained citations for those carrier identifications, while directly asserting the third support ratio and replacing narrative True checks. Claim boundary until fixed: the stipulated algebra through P_Q=1/2, kappa=2, and Q=2/3 is conditionally valid, while physical source-law selection remains excluded."
+  "verdict_rationale": null
 }

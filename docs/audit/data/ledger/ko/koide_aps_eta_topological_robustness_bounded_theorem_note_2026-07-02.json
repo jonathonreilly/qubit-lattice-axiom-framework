@@ -1,106 +1,44 @@
 {
-  "audit_date": "2026-07-29T13:55:10.962990+00:00",
-  "audit_invocation_history": [
-    "3c1c8dddbd8e4fab91d20c44680ae05c",
-    "a7403983a0c748e0925a76a58ecfb9d3"
-  ],
-  "audit_invocation_id": "a7403983a0c748e0925a76a58ecfb9d3",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 27,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/frontier_koide_aps_topological_robustness.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "koide_aps_block_by_block_forcing_note_2026-04-21": "Conditional algebraic restatement of the retained C3 inverse-normal-determinant theorem: for the body-diagonal C3 normal representation and the defined finite average, the value is 2/9; no global APS or physical-readout claim is audited.",
-      "s3_cap_uniqueness_note": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited."
-    },
-    "dep_claim_type": {
-      "koide_aps_block_by_block_forcing_note_2026-04-21": "decoration",
-      "s3_cap_uniqueness_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "koide_aps_block_by_block_forcing_note_2026-04-21": "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "s3_cap_uniqueness_note": "retained_bounded"
-    },
-    "deps": [
-      "koide_aps_block_by_block_forcing_note_2026-04-21",
-      "s3_cap_uniqueness_note"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 6.085,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_koide_aps_topological_robustness.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "63a3645cf0e4a715f51c8d1973d3aa2e51c750725c75db974fdcb361477f2f0a",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "63a3645cf0e4a715f51c8d1973d3aa2e51c750725c75db974fdcb361477f2f0a",
-    "runner_path": "scripts/frontier_koide_aps_topological_robustness.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 47
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-c311698e",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The visible runner closes the finite character-sum and metric-commutant algebra conditionally, but the packet clips load-bearing portions of the cited authority needed to verify the ABSS and kinematic input provenance.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02",
-  "claim_scope": "Conditional local result that the stated fixed-point character sum for the declared Z_3 tangent class (1,2) equals 2/9 mod Z and is invariant under Z_3-equivariant transverse metric changes; no global PL compactification or physical readout bridge is included.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T13:55:10.962990+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "koide_aps_block_by_block_forcing_note_2026-04-21",
-    "s3_cap_uniqueness_note"
+    "koide_aps_block_by_block_forcing_note_2026-04-21"
   ],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 6.085,
-  "load_bearing_step": "Solving R^T G R = G gives G = \u03bb\u00b7I, while the metric-free character sum evaluates at tangent weights (1,2) to \u03b7 = 2/9.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
-  "note_hash": "c258da0f90d308401ae9ad0732457273a769c7c2b99448a66c0ca0cb2e37369c",
+  "note_hash": "be1019c69f06c00e091cc8420a08e2c614e4f45848b67aa621c0ac15a8a7659c",
   "note_path": "docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": "other: regenerate the restricted packet with the full unclipped text of docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md, then re-audit the ABSS and tangent-weight provenance.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -159,19 +97,117 @@
         "total_pass": 41
       },
       "verdict_rationale": "The load-bearing step is exact algebra over declared local inputs, not a definition, renaming, tuned comparator, or physical-observable bridge. The current runner and cache both report PASS=41, FAIL=0, and the source code performs symbolic evaluations and invariant-metric solves rather than merely printing constants. Residual risk is bounded by the explicitly scoped premises: ABSS/fractional-part invariance and the upstream tangent-class input are consumed, not reproved, and no downstream physical eta-to-observable identification is established here."
+    },
+    {
+      "archived_at": "2026-08-01T15:53:20.401842+00:00",
+      "archived_for_note_hash": "c258da0f90d308401ae9ad0732457273a769c7c2b99448a66c0ca0cb2e37369c",
+      "audit_date": "2026-07-29T13:55:10.962990+00:00",
+      "audit_invocation_history": [
+        "3c1c8dddbd8e4fab91d20c44680ae05c",
+        "a7403983a0c748e0925a76a58ecfb9d3"
+      ],
+      "audit_invocation_id": "a7403983a0c748e0925a76a58ecfb9d3",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 27,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/frontier_koide_aps_topological_robustness.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_aps_block_by_block_forcing_note_2026-04-21": "Conditional algebraic restatement of the retained C3 inverse-normal-determinant theorem: for the body-diagonal C3 normal representation and the defined finite average, the value is 2/9; no global APS or physical-readout claim is audited.",
+          "s3_cap_uniqueness_note": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited."
+        },
+        "dep_claim_type": {
+          "koide_aps_block_by_block_forcing_note_2026-04-21": "decoration",
+          "s3_cap_uniqueness_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_block_by_block_forcing_note_2026-04-21": "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "s3_cap_uniqueness_note": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_block_by_block_forcing_note_2026-04-21",
+          "s3_cap_uniqueness_note"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 6.085,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_koide_aps_topological_robustness.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "63a3645cf0e4a715f51c8d1973d3aa2e51c750725c75db974fdcb361477f2f0a",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "63a3645cf0e4a715f51c8d1973d3aa2e51c750725c75db974fdcb361477f2f0a",
+        "runner_path": "scripts/frontier_koide_aps_topological_robustness.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260729-c311698e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The visible runner closes the finite character-sum and metric-commutant algebra conditionally, but the packet clips load-bearing portions of the cited authority needed to verify the ABSS and kinematic input provenance.",
+      "claim_scope": "Conditional local result that the stated fixed-point character sum for the declared Z_3 tangent class (1,2) equals 2/9 mod Z and is invariant under Z_3-equivariant transverse metric changes; no global PL compactification or physical readout bridge is included.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T13:55:10.962990+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Solving R^T G R = G gives G = \u03bb\u00b7I, while the metric-free character sum evaluates at tangent weights (1,2) to \u03b7 = 2/9.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: regenerate the restricted packet with the full unclipped text of docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md, then re-audit the ABSS and tangent-weight provenance.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "Issue: the restricted packet clips load-bearing portions of docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md, which the source cites for the ABSS and ambient fixed-locus chain. Why this blocks: the visible runner independently verifies the finite character-sum and metric-commutant algebra, but it cannot authenticate the upstream theorem and kinematic hypotheses from the clipped evidence. Repair target: provide the complete cited authority, or a direct retained one-hop authority for the ABSS formula and declared (1,2) weights, and re-audit. Claim boundary until fixed: conditional on those inputs, \u03b7=2/9 mod Z and the declared two-dimensional representation has only scalar invariant metrics; this derived negative boundary does not extend to global PL compactification or physical readout."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 41,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 41
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_aps_topological_robustness.py",
-  "title": "APS `\u03b7 = 2/9` Topological Robustness at the `Z_3` Fixed Locus \u2014 Bounded Member Note",
+  "title": "Local `Z_3` Normal-Plane Density `2/9` \u2014 Partial Narrowing",
   "transitive_descendants": 47,
-  "verdict_rationale": "Issue: the restricted packet clips load-bearing portions of docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md, which the source cites for the ABSS and ambient fixed-locus chain. Why this blocks: the visible runner independently verifies the finite character-sum and metric-commutant algebra, but it cannot authenticate the upstream theorem and kinematic hypotheses from the clipped evidence. Repair target: provide the complete cited authority, or a direct retained one-hop authority for the ABSS formula and declared (1,2) weights, and re-audit. Claim boundary until fixed: conditional on those inputs, \u03b7=2/9 mod Z and the declared two-dimensional representation has only scalar invariant metrics; this derived negative boundary does not extend to global PL compactification or physical readout."
+  "verdict_rationale": null
 }

@@ -62,7 +62,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.585,
+  "load_bearing_score": 5.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -83,6 +83,6 @@
   },
   "runner_path": "scripts/signed_gravity_nature_grade_closure_blockers.py",
   "title": "Signed Gravity Nature-Grade Closure Blocker Audit Note",
-  "transitive_descendants": 11,
+  "transitive_descendants": 13,
   "verdict_rationale": null
 }

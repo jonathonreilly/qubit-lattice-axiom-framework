@@ -1,0 +1,124 @@
+{
+ "averaged_spreads": [
+  "7.105e-15",
+  "2.359e-16",
+  "0.000e+00",
+  "1.110e-16"
+ ],
+ "axes_only_dev": 0.007,
+ "cell0": [
+  0,
+  6,
+  10,
+  12,
+  19,
+  21
+ ],
+ "census": {
+  "1,4": 3,
+  "2,2": 6,
+  "3,1": 4
+ },
+ "conj_frames": [
+  2,
+  4,
+  11,
+  13,
+  17,
+  23
+ ],
+ "coset_defect_max": [
+  8,
+  0.4580971
+ ],
+ "coset_reps": [
+  0,
+  23,
+  2,
+  3
+ ],
+ "cubic_spreads": [
+  0.33489977962932677,
+  0.20202937219367642,
+  0.12752360963188508,
+  0.07130325023123454
+ ],
+ "cycle": 701,
+ "edited_averaged_spread": 0.6817013,
+ "elapsed_sec": 6.4,
+ "fail": 0,
+ "fail_count": 0,
+ "first_fail_sites": [
+  [
+   0,
+   1,
+   1
+  ],
+  [
+   1,
+   0,
+   1
+  ],
+  [
+   1,
+   1,
+   0
+  ],
+  [
+   1,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   1
+  ],
+  [
+   2,
+   1,
+   1
+  ]
+ ],
+ "inter_coset_tension": 0.4823389,
+ "l7_averaged_spread": "3.539e-16",
+ "l7_edit_unaveraged_violation": 1.3036,
+ "l7_edit_x24_defect": "2.220e-16",
+ "l7_single_spread": 0.4146141008085868,
+ "lambda_min_avg_amp040": 0.03227752380131965,
+ "pass": true,
+ "pass_count": 36,
+ "pd_margin_gain": 0.000203409432265933,
+ "resources": {
+  "elapsed_seconds": 6.403685458004475
+ },
+ "runner_sha256": "0e8d74c03ad8189b0b752d7418ce251c279570e321380fd2ff39626cc954b711",
+ "s_avg": 0.42303983651076393,
+ "s_pd": 0.422836427078498,
+ "scope_frames": [
+  1,
+  4,
+  9,
+  15,
+  18,
+  23
+ ],
+ "scope_orders": {
+  "1": 2,
+  "4": 2,
+  "9": 2,
+  "15": 3,
+  "18": 3,
+  "23": 1
+ },
+ "synth_min_singular": 0.874032,
+ "transversal_diff": "3.640e-12",
+ "unaveraged_violation": [
+  0.4581,
+  0.367,
+  0.4581
+ ],
+ "union_classes": 13,
+ "within_coset_spread": "1.456e-11",
+ "x24_defect_max": "2.220e-16"
+}

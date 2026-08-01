@@ -1714,21 +1714,26 @@ def main():
             and guard["dirty_B_or_work_refusal_failures"] == 0
             and guard["guard_inverse_cleanup_failures"] == 0
         ),
-        "passive_covariant_24_576_and_held_transport": not any((
-            covariance["frame_path_failures"],
-            covariance["frame_type_failures"],
-            covariance["frame_control_adjacency_failures"],
-            covariance["frame_product_closure_failures"],
-            covariance["frame_product_anchor_failures"],
-            covariance["translation_failures"],
-            covariance["held_actual_source_translation_failures"],
-            covariance["matrix_candidate_24_frame_locality_failures"],
-            covariance["matrix_candidate_24_frame_distinctness_failures"],
-            covariance["matrix_candidate_576_product_coordinate_failures"],
-            covariance["matrix_candidate_576_product_locality_failures"],
-            covariance["held_matrix_candidate_locality_failures"],
-            covariance["held_shifted_charged_neutral_overlap"],
-        )),
+        "passive_covariant_24_576_and_held_transport": (
+            covariance["proper_cubic_frames"] == 24
+            and covariance["ordered_frame_products"] == 576
+            and covariance["translation_trials"] == 3
+            and not any((
+                covariance["frame_path_failures"],
+                covariance["frame_type_failures"],
+                covariance["frame_control_adjacency_failures"],
+                covariance["frame_product_closure_failures"],
+                covariance["frame_product_anchor_failures"],
+                covariance["translation_failures"],
+                covariance["held_actual_source_translation_failures"],
+                covariance["matrix_candidate_24_frame_locality_failures"],
+                covariance["matrix_candidate_24_frame_distinctness_failures"],
+                covariance["matrix_candidate_576_product_coordinate_failures"],
+                covariance["matrix_candidate_576_product_locality_failures"],
+                covariance["held_matrix_candidate_locality_failures"],
+                covariance["held_shifted_charged_neutral_overlap"],
+            ))
+        ),
         "lawful_service_and_full_inverse_exact": not any((
             lawful["history_failures"],
             lawful["endpoint_return_failures"],

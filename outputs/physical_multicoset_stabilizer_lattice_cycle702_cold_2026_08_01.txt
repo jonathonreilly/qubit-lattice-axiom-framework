@@ -1,0 +1,32 @@
+PASS a1_cosets_partition [0, 1, 2, 3]
+PASS a2_scope_frames_orders [1, 4, 9, 15, 18, 23]
+PASS a3_within_coset_spread 1.456002e-11
+PASS a4_inter_coset_min_distance 3.670333e-01
+PASS a5_two_two_split_min_distance 7.340666e-01
+PASS a6_transversal_agreement 7.279677e-12
+PASS b1_right_mult_well_defined 576
+PASS b2_composition_law 576
+PASS b3_faithful_24_permutations 24
+PASS b4_diagonal_dictionary 4 axes
+PASS c1_subgroup_family_fixpoint 30
+PASS c2_order_histogram [(1, 1), (2, 9), (3, 4), (4, 7), (6, 4), (8, 3), (12, 1), (24, 1)]
+PASS c3_completeness_certificate 720
+PASS c4_conjugation_closed 720
+PASS d1_stabilizer_orders [6, 4, 6, 24]
+PASS d2_conjugate_to_d3 [0, 1, 2, 3]
+PASS d3_pair_stabilizer_geometry 1,2,2
+PASS d4_complement_duality 14
+PASS d5_proper_max_order_six 6
+PASS d6_five_transitive_subgroups [8, 8, 8, 12, 24]
+PASS d7_singleton_not_transitive 1,3
+PASS e1_measured_equals_stabilizer 15/15
+PASS e2_stabilizer_side_max_defect 3.330669e-16
+PASS e3_outside_min_defect 1.223444e-01
+PASS e4_measured_k_profile [6, 4, 6, 24]
+PASS e5_full_average_defect 3.330669e-16
+PASS f1_l7_measured_equals_stab [0, 4, 19, 23]
+PASS f2_l7_two_sided_margin 1.665335e-16 6.421907e-01
+PASS g1_wall_under_budget 7.33s
+PASS g2_stdout_under_6000 2235
+SUMMARY_JSON {"conjugators_k1":[0,1,2,3],"conjugators_k3":[0,1,2,3],"coset_axes":["1,1,-1","1,1,1","1,-1,-1","1,-1,1"],"coset_cells":[[0,6,10,12,19,21],[1,4,9,15,18,23],[2,5,11,14,16,20],[3,7,8,13,17,22]],"coset_reps":[0,1,2,3],"cycle":702,"elapsed_sec":7.33,"equiv_amp":0.2,"fail":0,"full_average_max_defect":"3.330669e-16","inter_coset_min_distance":"3.670333e-01","l7_outside_min":"6.421907e-01","l7_stab":[0,4,19,23],"l7_stab_side_max":"1.665335e-16","l7_union":[0,1],"measured_profile_by_k":[6,4,6,24],"order_histogram":{"1":1,"2":9,"3":4,"4":7,"6":4,"8":3,"12":1,"24":1},"orders_above_six":[8,8,8,12,24],"outside_min_defect":"1.223444e-01","pass":30,"scope_frames":[1,4,9,15,18,23],"scope_orders":{"1":2,"4":2,"9":2,"15":3,"18":3,"23":1},"stab_profile_by_k":[6,4,6,24],"stab_side_max_defect":"3.330669e-16","subgroups":30,"transversal_agreement":"7.279677e-12","two_two_split_min_distance":"7.340666e-01","unions_verified":"15/15","within_coset_spread":"1.456002e-11"}
+TOTAL: PASS=30 FAIL=0

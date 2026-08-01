@@ -216,14 +216,6 @@ def lane_content_sha(planes, lane):
     return sha256(lane_state_bytes(planes, lane)).hexdigest()
 
 
-def packed_bit_sha(material):
-    """Diagnostic alternate serialization used only to identify regressions."""
-    packed = bytearray((len(material) + 7) // 8)
-    for wire, value in enumerate(material):
-        packed[wire >> 3] |= value << (wire & 7)
-    return sha256(packed).hexdigest()
-
-
 def static_content_bases(states, dynamic_targets):
     bases = []
     for state in states:
@@ -258,113 +250,16 @@ def iter_mask(mask):
         mask -= bit
 
 
-def digest_candidates(
-    keys, e1_sha, e2_sha, e1_packed, e2_packed, e1_material, e2_material,
-    e1_time, e2_time,
-):
-    """Temporary explicit candidates; the matching 860 serialization is selected later."""
-    expected = "f77c04f33b5c596a0bb5f80e3fa685ddee8b4497069470da6cc34a23a4616150"
-    candidates = {}
-    for variant, left, right in (
-        ("byte_vector", e1_sha, e2_sha),
-        ("packed_bits", e1_packed, e2_packed),
-    ):
-        for scope, lanes in (
-            ("union", sorted(set(left) | set(right))),
-            ("both", sorted(set(left) & set(right))),
-        ):
-            rows = [
-                [keys[lane][0], keys[lane][1], list(keys[lane][2]), left.get(lane), right.get(lane)]
-                for lane in lanes
-            ]
-            mapping = {
-                repr(keys[lane]): {"E1": left.get(lane), "E2": right.get(lane)}
-                for lane in lanes
-            }
-            payloads = {
-                "rows_default": json.dumps(rows, sort_keys=True).encode(),
-                "rows_compact": json.dumps(rows, sort_keys=True, separators=(",", ":")).encode(),
-                "map_default": json.dumps(mapping, sort_keys=True).encode(),
-                "map_compact": json.dumps(
-                    mapping, sort_keys=True, separators=(",", ":")
-                ).encode(),
-                "sha_concat": "".join(
-                    (left.get(lane) or "") + (right.get(lane) or "") for lane in lanes
-                ).encode(),
-                "key_sha_concat": "".join(
-                    repr(keys[lane]) + (left.get(lane) or "") + (right.get(lane) or "")
-                    for lane in lanes
-                ).encode(),
-            }
-            for encoding, payload in payloads.items():
-                label = f"{variant}:{scope}:{encoding}"
-                candidates[label] = sha256(payload).hexdigest()
-            tuple_rows = tuple(
-                (keys[lane], left.get(lane), right.get(lane)) for lane in lanes
-            )
-            candidates[f"{variant}:{scope}:repr_tuple_rows"] = sha256(
-                repr(tuple_rows).encode()
-            ).hexdigest()
-            nested = {
-                "E1": {repr(keys[lane]): left[lane] for lane in lanes if lane in left},
-                "E2": {repr(keys[lane]): right[lane] for lane in lanes if lane in right},
-            }
-            candidates[f"{variant}:{scope}:nested_default"] = sha256(
-                json.dumps(nested, sort_keys=True).encode()
-            ).hexdigest()
-            candidates[f"{variant}:{scope}:nested_compact"] = sha256(
-                json.dumps(nested, sort_keys=True, separators=(",", ":")).encode()
-            ).hexdigest()
+def compact(value):
+    return json.dumps(value, sort_keys=True, separators=(",", ":"), default=str)
 
-    all_lanes = tuple(range(len(keys)))
-    scopes = {
-        "union": tuple(sorted(set(e1_sha) | set(e2_sha))),
-        "both": tuple(sorted(set(e1_sha) & set(e2_sha))),
-        "all": all_lanes,
+
+def cycle860_joint_content_digest(keys, e1_sha, e2_sha):
+    payload = {
+        "e1": tuple(sorted((compact(keys[lane]), value) for lane, value in e1_sha.items())),
+        "e2": tuple(sorted((compact(keys[lane]), value) for lane, value in e2_sha.items())),
     }
-    value_variants = {
-        "sha_ascii": (e1_sha, e2_sha, lambda value: value.encode()),
-        "sha_binary": (e1_sha, e2_sha, bytes.fromhex),
-        "packed_sha_ascii": (e1_packed, e2_packed, lambda value: value.encode()),
-        "packed_sha_binary": (e1_packed, e2_packed, bytes.fromhex),
-        "raw": (e1_material, e2_material, lambda value: value),
-    }
-    for scope, lanes in scopes.items():
-        for variant, (left, right, encode) in value_variants.items():
-            for missing_name, missing in (("empty", b""), ("dash", b"-"), ("zero", b"\0")):
-                encoded_left = {
-                    lane: encode(left[lane]) if lane in left else missing for lane in lanes
-                }
-                encoded_right = {
-                    lane: encode(right[lane]) if lane in right else missing for lane in lanes
-                }
-                layouts = {
-                    "interleaved": b"".join(
-                        encoded_left[lane] + encoded_right[lane] for lane in lanes
-                    ),
-                    "rails": (
-                        b"".join(encoded_left[lane] for lane in lanes)
-                        + b"".join(encoded_right[lane] for lane in lanes)
-                    ),
-                    "key_interleaved": b"".join(
-                        repr(keys[lane]).encode()
-                        + encoded_left[lane]
-                        + encoded_right[lane]
-                        for lane in lanes
-                    ),
-                    "labeled_records": b"".join(
-                        repr((keys[lane], "E1", e1_time.get(lane))).encode()
-                        + encoded_left[lane]
-                        + repr((keys[lane], "E2", e2_time.get(lane))).encode()
-                        + encoded_right[lane]
-                        for lane in lanes
-                    ),
-                }
-                for layout, payload in layouts.items():
-                    label = f"{variant}:{scope}:{missing_name}:{layout}"
-                    candidates[label] = sha256(payload).hexdigest()
-    matches = tuple(label for label, digest in candidates.items() if digest == expected)
-    return candidates, matches
+    return sha256(compact(payload).encode("utf-8")).hexdigest()
 
 
 def short_key(key):
@@ -423,10 +318,6 @@ def main():
     e2_rung = {}
     e1_sha = {}
     e2_sha = {}
-    e1_packed = {}
-    e2_packed = {}
-    e1_material = {}
-    e2_material = {}
     duplicate_clean_mismatches = 0
     clean_occurrences = 0
     clean_moments = 0
@@ -476,9 +367,9 @@ def main():
                 cached = content_cache[lane].get(signature)
                 if cached is None:
                     material = material_from_signature(bases[lane], signature, dynamic_targets)
-                    cached = (sha256(material).hexdigest(), packed_bit_sha(material))
+                    cached = sha256(material).hexdigest()
                     content_cache[lane][signature] = cached
-                new_sha = cached[0]
+                new_sha = cached
                 if current_sha[lane] is not None:
                     if new_sha == current_sha[lane]:
                         raise AssertionError(("signature/hash disagreement", lane, tick))
@@ -505,20 +396,10 @@ def main():
             if lane not in e1_time:
                 e1_time[lane] = tick
                 e1_sha[lane] = current_sha[lane]
-                signature = content_signature(planes, lane, dynamic_targets)
-                e1_packed[lane] = content_cache[lane][signature][1]
-                e1_material[lane] = material_from_signature(
-                    bases[lane], signature, dynamic_targets
-                )
             if orbit_boundary and lane not in e2_time:
                 e2_time[lane] = tick
                 e2_rung[lane] = depths[lane]
                 e2_sha[lane] = current_sha[lane]
-                signature = content_signature(planes, lane, dynamic_targets)
-                e2_packed[lane] = content_cache[lane][signature][1]
-                e2_material[lane] = material_from_signature(
-                    bases[lane], signature, dynamic_targets
-                )
 
     observe(0, True)
     total_chunks = HORIZON_ORBITS * STATIONS
@@ -539,9 +420,9 @@ def main():
         e1_time[lane] != e2_time[lane] and e1_sha[lane] != e2_sha[lane]
         for lane in e2_time
     )
-    digest_map, digest_matches = digest_candidates(
-        keys, e1_sha, e2_sha, e1_packed, e2_packed,
-        e1_material, e2_material, e1_time, e2_time,
+    joint_content_digest = cycle860_joint_content_digest(keys, e1_sha, e2_sha)
+    expected_joint_digest = (
+        "f77c04f33b5c596a0bb5f80e3fa685ddee8b4497069470da6cc34a23a4616150"
     )
 
     regression = {
@@ -552,7 +433,7 @@ def main():
         "both_different_moment_equal_content": different_moment_equal,
         "both_different_content": different_content,
         "E1_only": len(set(e1_time) - set(e2_time)),
-        "joint_digest_matches": list(digest_matches),
+        "joint_content_digest": joint_content_digest,
     }
     expected_regression = (
         len(e1_time) == 182
@@ -562,7 +443,7 @@ def main():
         and different_moment_equal == 49
         and different_content == 31
         and regression["E1_only"] == 68
-        and bool(digest_matches)
+        and joint_content_digest == expected_joint_digest
         and allocator_failures == token_failures == 0
     )
 
@@ -683,9 +564,6 @@ def main():
             "per_key_table": categories,
         }, **compact),
     ]
-    if not digest_matches:
-        lines.append("DIGEST_CANDIDATES " + json.dumps(digest_map, **compact))
-
     f_core = {
         "audit_input_paths_literal": list(AUDIT_INPUT_PATHS),
         "audit_input_paths_exist": all((ROOT / path).is_file() for path in AUDIT_INPUT_PATHS),

@@ -1,24 +1,45 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T20:32:01.624978+00:00",
+  "audit_invocation_history": [
+    "290d26e1721c43f1ab4e54eb2a18cb6e"
+  ],
+  "audit_invocation_id": "290d26e1721c43f1ab4e54eb2a18cb6e",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "koide_aps_block_by_block_forcing_note_2026-04-21": "Conditional algebraic restatement of the retained C3 inverse-normal-determinant theorem: for the body-diagonal C3 normal representation and the defined finite average, the value is 2/9; no global APS or physical-readout claim is audited."
+    },
+    "dep_claim_type": {
+      "koide_aps_block_by_block_forcing_note_2026-04-21": "decoration"
+    },
+    "dep_effective_status": {
+      "koide_aps_block_by_block_forcing_note_2026-04-21": "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    "deps": [
+      "koide_aps_block_by_block_forcing_note_2026-04-21"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 6.085,
+    "runner_hash": "a985cd39d9eb147fbccc7b915ca71c382031990ab968ea46967467faa6bb5e23",
+    "transitive_descendants": 47
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-A-20260801-e7bc27df",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The finite claim closes directly: \u03b6\u00b2+\u03b6+1=0 gives (1\u2212\u03b6)(1\u2212\u03b6\u00b2)=3 and both summands in L(1,2) equal 1/3. Independently solving R\u1d40GR=G for a general real symmetric 2\u00d72 G gives zero off-diagonal entry and equal diagonal entries.",
   "claim_id": "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02",
-  "claim_scope": null,
+  "claim_scope": "For the real two-dimensional rotation R(2\u03c0/3) and conjugate Z\u2083 characters (1,2), det(I\u2212R)=3, the defined finite average L(1,2)=2/9, and every R-invariant symmetric bilinear form is a scalar multiple of the identity.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-01T20:32:01.624978+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +47,20 @@
     "koide_aps_block_by_block_forcing_note_2026-04-21"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
   "load_bearing_score": 6.085,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For the conjugate characters (a,b)=(1,2), det_R(I\u2212R)=3 and L(1,2)=(1/3)(1/3+1/3)=2/9.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "be1019c69f06c00e091cc8420a08e2c614e4f45848b67aa621c0ac15a8a7659c",
   "note_path": "docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -200,14 +222,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 41,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 41
   },
   "runner_path": "scripts/frontier_koide_aps_topological_robustness.py",
   "title": "Local `Z_3` Normal-Plane Density `2/9` \u2014 Partial Narrowing",
   "transitive_descendants": 47,
-  "verdict_rationale": null
+  "verdict_rationale": "The audited result is a self-contained finite algebraic and representation-theoretic theorem, not an operator eta, global topology, or physical-readout claim. Manual use of the cube-root identity independently reproduces the determinant and 2/9 value, while direct component solution independently confirms the scalar symmetric commutant. The runner source genuinely performs all 41 exact checks and its output matches the narrowly stated scope."
 }

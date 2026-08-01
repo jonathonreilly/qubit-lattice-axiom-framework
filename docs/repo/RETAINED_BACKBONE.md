@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 128 |
-| Retained bounded rows | 360 |
+| Retained bounded rows | 361 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 36 |
 
@@ -154,12 +154,12 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (360)
+## Retained bounded rows (361)
 
 Sorted by load-bearing graph score (descending).
 
 - [`plaquette_self_consistency_note`](../../docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md) — score 49.304; audited 2026-07-18T01:04:58.329581+00:00
-- [`s3_cap_uniqueness_note`](../../docs/S3_CAP_UNIQUENESS_NOTE.md) — score 21.282; audited 2026-05-28T01:33:46.485182+00:00
+- [`s3_cap_uniqueness_note`](../../docs/S3_CAP_UNIQUENESS_NOTE.md) — score 24.282; audited 2026-05-28T01:33:46.485182+00:00
 - [`lattice_greens_function_maradudin_textbook_import_note_2026-05-18`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) — score 20.176; audited 2026-06-10T02:32:15.539017+00:00
 - [`gauge_vacuum_plaquette_reduction_existence_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md) — score 18.940; audited 2026-07-22T17:50:03.273685+00:00
 - [`dm_leptogenesis_pmns_projector_interface_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md) — score 18.598; audited 2026-07-21T18:21:47.783638+00:00
@@ -262,6 +262,7 @@ Sorted by load-bearing graph score (descending).
 - [`yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25`](../../docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md) — score 6.248; audited 2026-07-25T11:59:32.666775+00:00
 - [`dm_abcc_basin_finite_search_support_note_2026-04-30`](../../docs/DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md) — score 6.200; audited 2026-05-28T03:52:23.814600+00:00
 - [`axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md) — score 6.085; audited 2026-05-31T00:15:33.913636+00:00
+- [`koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02`](../../docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md) — score 6.085; audited 2026-08-01T20:32:01.624978+00:00
 - [`record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md) — score 6.085; audited 2026-06-18T08:05:56.775728+00:00
 - [`retarded_field_causality_probe_note`](../../docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md) — score 6.085; audited 2026-05-04T23:31:09.124684+00:00
 - [`lattice_complementarity_note`](../../docs/LATTICE_COMPLEMENTARITY_NOTE.md) — score 6.024; audited 2026-05-05T11:27:11.208412+00:00
@@ -527,10 +528,10 @@ Sorted by load-bearing graph score (descending).
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.109; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.756; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
+- [`koide_aps_block_by_block_forcing_note_2026-04-21`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md) — score 17.055; audited 2026-07-19T20:19:41.817771+00:00; under `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
 - [`gauge_vacuum_plaquette_susceptibility_flow_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md) — score 15.785; audited 2026-07-22T18:23:13.482301+00:00; under `gauge_vacuum_plaquette_reduction_existence_theorem_note`
 - [`yukawa_color_projection_theorem`](../../docs/YUKAWA_COLOR_PROJECTION_THEOREM.md) — score 15.395; audited 2026-05-25T10:18:49.309520+00:00; under `graph_first_su3_integration_note`
 - [`hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02`](../../docs/HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md) — score 15.079; audited 2026-07-29T21:15:54.994932+00:00; under `hierarchy_matsubara_decomposition_note`
-- [`koide_aps_block_by_block_forcing_note_2026-04-21`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md) — score 14.055; audited 2026-07-19T20:19:41.817771+00:00; under `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
 - [`canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) — score 13.820; audited 2026-07-18T03:30:46.114644+00:00; under `plaquette_self_consistency_note`
 - [`newton_law_derived_note`](../../docs/NEWTON_LAW_DERIVED_NOTE.md) — score 13.629; audited 2026-07-12T18:58:38.545638+00:00; under `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
 - [`lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) — score 12.612; audited 2026-05-22T16:04:50.374175+00:00; under `graph_first_su3_integration_note`

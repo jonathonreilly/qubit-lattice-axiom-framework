@@ -83,6 +83,22 @@ expectation constants were re-frozen for v2; its attack logic is
 byte-identical and its v1-refutation labels are retained by design —
 disclosed here and in the receipt, not edited away.
 
+## Cache-contamination incident (v3)
+
+The v2 scripts swept the WORKING snapshot. During the ship chain, this
+block's own untracked note and receipt (which quote the E2 wording)
+entered the worktree before the cache build; the cache re-execution
+therefore saw a drifted tree, three certificates failed, and the
+failing caches were briefly committed. v3 repairs the design defect:
+both scripts now enumerate and read files exclusively from the pinned
+tracked snapshot `d6a514430ac9921882017ba6424d289e2dc6b288` via git,
+making the classification immune to working-tree state; both rerun
+clean and reproduce 9,320 / 69 / 31 exactly. The incident and repair
+are also recorded in both runners' outputs (`cache_contamination_note`)
+and in the receipt. Process rule banked: repo-sweeping runners must
+pin their snapshot; ship-chain guards must reject caches on nonzero
+exit or any FAIL count.
+
 ## Verdict
 
 The question "what breaks if we decide?" now has a certified answer:

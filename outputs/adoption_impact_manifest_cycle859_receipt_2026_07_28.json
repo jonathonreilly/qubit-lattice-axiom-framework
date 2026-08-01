@@ -2,36 +2,37 @@
   "audit": "unset",
   "authority": "none",
   "block": "proof-grade-blockR29-20260729",
+  "cache_contamination_incident": "v2 swept the working snapshot; the block's own untracked note/receipt contaminated the cache rebuild (three failing certificates, briefly committed). v3 pins the sweep to tracked snapshot d6a514430ac9921882017ba6424d289e2dc6b288 via git; both runners rerun clean and reproduce 9,320/69/31; process rules banked (pin repo-sweeping runners; guards reject nonzero-exit/FAIL caches)",
   "certificate_count_formats": {
     "logs/runner-cache/frontier_cycle859_adoption_impact_manifest_2026_07_28.txt": "PASS/FAIL certificate lines",
     "logs/runner-cache/frontier_cycle859_manifest_independent_check_2026_07_28.txt": "PASS/FAIL certificate lines"
   },
   "certificates": {
     "logs/runner-cache/frontier_cycle859_adoption_impact_manifest_2026_07_28.txt": {
-      "fail": 3,
-      "pass": 1
+      "fail": 0,
+      "pass": 4
     },
     "logs/runner-cache/frontier_cycle859_manifest_independent_check_2026_07_28.txt": {
-      "fail": 3,
-      "pass": 1
+      "fail": 0,
+      "pass": 4
     }
   },
-  "checker_disclosure": "checker attack logic byte-identical to v1; only pinned expectation constants re-frozen for the v2 primary; v1-refutation labels retained by design - disclosed, not edited",
+  "checker_disclosure": "checker attack logic byte-identical; pins re-frozen to the v3 primary; v1-refutation labels retained by design",
   "claim_type": "bounded_theorem",
   "cycle": 859,
   "files": {
-    "docs/ADOPTION_IMPACT_MANIFEST_CYCLE859_BOUNDED_THEOREM_NOTE_2026-07-28.md": "0de5128a94cc8f0ed7bb8b1f2fdbb9c01be4af2e3fcda5cb331a0d6bceed5591",
-    "logs/runner-cache/frontier_cycle859_adoption_impact_manifest_2026_07_28.txt": "eb7ad7eadb49f78f0ce34c335c31e3d84bb39ea7babb9a1affadd01823c054fa",
-    "logs/runner-cache/frontier_cycle859_manifest_independent_check_2026_07_28.txt": "941c67eb92abbcca301ab46a26c20e621534ddc0331ddeebaa25aeda17ee51d3",
-    "scripts/frontier_cycle859_adoption_impact_manifest_2026_07_28.py": "2639344a78197188272dfd2ecbe5a48a09fc9f2a0bda827c071fc52434186444",
-    "scripts/frontier_cycle859_manifest_independent_check_2026_07_28.py": "e47c8c6b4d9fdd7173bf6053e5856bc2b233890eae9a239d5be4c0a080995632"
+    "docs/ADOPTION_IMPACT_MANIFEST_CYCLE859_BOUNDED_THEOREM_NOTE_2026-07-28.md": "176c2d062e42355ed1d1590c981f8963252aaece8c66370bfba42e2149c9fdb0",
+    "logs/runner-cache/frontier_cycle859_adoption_impact_manifest_2026_07_28.txt": "79d1ab32115fde69890be1f8a28138cb4e6ad6326acbc2709556db4f5b07a595",
+    "logs/runner-cache/frontier_cycle859_manifest_independent_check_2026_07_28.txt": "65c9a3bdc35d1f4fcc243bbd397401cb8bdc3c5b1375924bc70da2d94adf3e20",
+    "scripts/frontier_cycle859_adoption_impact_manifest_2026_07_28.py": "52b94d68c25594a5f1222b8644f1c1a57591b13c0a78334cdcaee6360d2786b3",
+    "scripts/frontier_cycle859_manifest_independent_check_2026_07_28.py": "bb69cf7675e05a933aa844974b3d911cbf04d99fac060d9dc34d9aaf070a059f"
   },
   "independent_audit_still_required": true,
-  "reversal": "twenty-nine: checker refuted 19 NO_CONSUMPTION classifications (8 docs + 11 scripts, all corpus-implicit); v2 adopts the union sweep with corrected derived counts",
+  "reversal": "twenty-nine: checker refuted 19 NO_CONSUMPTION classifications; v2 adopted the union sweep (9,320/69/31)",
   "verdicts": [
-    "classification (v2 union sweep): NO_CONSUMPTION 9,320 / CORPUS_IMPLICIT 69 / EXPLICIT_READING 31 - the 31 are the complete semantic refire list; under E2 their re-ratification is confirmation-only",
-    "invariance: registry-additive adoption changes ZERO bytes of pinned scripts/docs (independently re-verified); mechanical blast radius zero; axiom hash untouched",
-    "reversal 29 absorbed: 19 reclassified files named with per-file evidence; the guarantee survived correction unchanged (31 rows, zero bytes)",
-    "scope: pinned snapshot; live-main re-run required at adoption time (owner lane)"
+    "classification (v3 pinned-snapshot sweep): NO_CONSUMPTION 9,320 / CORPUS_IMPLICIT 69 / EXPLICIT_READING 31 - the 31 are the complete semantic refire list; under E2 re-ratification is confirmation-only",
+    "invariance: registry-additive adoption changes ZERO bytes of pinned scripts/docs; mechanical blast radius zero; axiom hash untouched",
+    "reversal 29 absorbed; cache-contamination incident repaired in v3 with the sweep pinned to the tracked snapshot",
+    "scope: pinned snapshot d6a51443...; live-main re-run required at adoption time (owner lane)"
   ]
 }

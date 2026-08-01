@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 127 |
-| Retained bounded rows | 359 |
+| Retained bounded rows | 360 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 36 |
 
@@ -153,7 +153,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (359)
+## Retained bounded rows (360)
 
 Sorted by load-bearing graph score (descending).
 
@@ -500,6 +500,7 @@ Sorted by load-bearing graph score (descending).
 - [`staggered_test_mass_companion_note_2026-04-11`](../../docs/STAGGERED_TEST_MASS_COMPANION_NOTE_2026-04-11.md) — score 0.000; audited 2026-05-02T00:47:23.639365+00:00
 - [`structureless_dag_gravity_harness_note`](../../docs/STRUCTURELESS_DAG_GRAVITY_HARNESS_NOTE.md) — score 0.000; audited 2026-05-02T00:54:51.322213+00:00
 - [`structureless_dag_gravity_note`](../../docs/STRUCTURELESS_DAG_GRAVITY_NOTE.md) — score 0.000; audited 2026-05-03T00:21:55.050529+00:00
+- [`supplied_three_label_target_apportionment_comparator_bounded_theorem_note_2026-07-30`](../../docs/SUPPLIED_THREE_LABEL_TARGET_APPORTIONMENT_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-07-30.md) — score 0.000; audited 2026-08-01T19:13:50.688103+00:00
 - [`symmetry_generated_paired_chokepoint_note`](../../docs/SYMMETRY_GENERATED_PAIRED_CHOKEPOINT_NOTE.md) — score 0.000; audited 2026-05-02T00:58:00.494073+00:00
 - [`symmetry_spectrum_mirror_compare_note`](../../docs/SYMMETRY_SPECTRUM_MIRROR_COMPARE_NOTE.md) — score 0.000; audited 2026-05-02T00:59:30.186654+00:00
 - [`teleportation_3d_operator_consistent_end_to_end_note`](../../docs/TELEPORTATION_3D_OPERATOR_CONSISTENT_END_TO_END_NOTE.md) — score 0.000; audited 2026-05-03T00:38:39.276138+00:00

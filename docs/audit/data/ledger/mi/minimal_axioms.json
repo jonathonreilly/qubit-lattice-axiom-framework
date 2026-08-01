@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 282.608,
+  "load_bearing_score": 282.609,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "retained_no_go",
@@ -50,6 +50,6 @@
   },
   "runner_path": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
   "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)",
-  "transitive_descendants": 2206,
+  "transitive_descendants": 2207,
   "verdict_rationale": null
 }

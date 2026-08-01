@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3960 |
+| Ledger rows | 3961 |
 | Applied audit verdicts | 936 |
 | Retained-grade rows, including boxed decorations | 517 |
 | Retained positive theorems | 127 |
@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 357 |
 | Boxed decorations under retained parents | 33 |
 | Open gates | 3 |
-| Unaudited rows | 2656 |
+| Unaudited rows | 2657 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 284 |
 | Audited renaming rows | 34 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3019 |
+| Total pending rows | 3020 |
 | Ready rows | 552 |
 | Cycle-break targets | 60 |
 | Critical pending | 635 |
 | High pending | 377 |
 | Medium pending | 845 |
-| Leaf pending | 1162 |
+| Leaf pending | 1163 |
 
 Next ready rows by queue order:
 
@@ -109,11 +109,8 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Live rows fail-open (legacy/unversioned snapshot) | 30 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
-| Lane rows removed since prior pass | 1 |
+| Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 105 |
-
-Named lane membership churn since the prior pass:
-- removed: `universal_gr_casimir_block_localization_note`
 
 Unmanifested candidates (visible gaming surface; need review-landed pending entries before admission):
 - `route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30`
@@ -342,15 +339,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4618 |
+| Citation-graph nodes | 4619 |
 | Critical nodes | 765 |
 | High nodes | 460 |
 | Medium nodes | 1187 |
-| Leaf nodes | 2206 |
+| Leaf nodes | 2207 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2206 descendants; score 282.608
+- `minimal_axioms` - critical; 2207 descendants; score 282.609
 - `graph_first_su3_integration_note` - critical; 1684 descendants; score 64.219
 - `three_generation_observable_theorem_note` - critical; 1288 descendants; score 62.332
 - `observable_principle_from_axiom_note` - critical; 1130 descendants; score 61.643

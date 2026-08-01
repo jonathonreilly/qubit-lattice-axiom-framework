@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Cycle 862: bounded content-stabilization threshold certificate.
+"""Cycle 862 v2: bounded content-stabilization threshold certificate.
 
 The census and evolution are rebuilt from the tracked Cycle-719 controller
 core.  Records are observed at clean H-chunk boundaries, including the
 initial (orbit-boundary) state produced by ``run_orbit``.
+
+Version 2 separates the full-census stabilization-rung histogram from the
+relation of stabilization to the E2 stamp.  Version 1 tested ``rung == 1``
+before ``e2_rung == rung`` in one first-match bucket list, which swallowed the
+14 same-rung E2 cases and could not represent the 73 post-E2 revisions.
 """
 from __future__ import annotations
 
@@ -318,6 +323,11 @@ def main():
     e2_rung = {}
     e1_sha = {}
     e2_sha = {}
+    post_e2_different = {}
+    boundary_depths = [0] * len(keys)
+    boundary_sha = [None] * len(keys)
+    boundary_count = [0] * len(keys)
+    boundary_start_ordinal = [None] * len(keys)
     duplicate_clean_mismatches = 0
     clean_occurrences = 0
     clean_moments = 0
@@ -401,6 +411,26 @@ def main():
                 e2_rung[lane] = depths[lane]
                 e2_sha[lane] = current_sha[lane]
 
+            if lane in e2_time:
+                if orbit_boundary:
+                    boundary_depths[lane] += 1
+                    if boundary_sha[lane] != current_sha[lane]:
+                        boundary_sha[lane] = current_sha[lane]
+                        boundary_count[lane] = 1
+                        boundary_start_ordinal[lane] = boundary_depths[lane]
+                    else:
+                        boundary_count[lane] += 1
+                if (
+                    tick > e2_time[lane]
+                    and current_sha[lane] != e2_sha[lane]
+                    and lane not in post_e2_different
+                ):
+                    post_e2_different[lane] = {
+                        "tick": tick,
+                        "rung": depths[lane],
+                        "sha256": current_sha[lane],
+                    }
+
     observe(0, True)
     total_chunks = HORIZON_ORBITS * STATIONS
     for tick in range(1, total_chunks + 1):
@@ -456,8 +486,7 @@ def main():
     stabilization_histogram = dict(sorted(Counter(stabilization.values()).items()))
 
     categories = {
-        "E1": [],
-        "E2_ORBIT_BOUNDARY": [],
+        "RUNG_1_AT_SET": [],
         "OTHER_RUNG": [],
         "NEVER_WITHIN_HORIZON": [short_key(keys[lane]) for lane in no_ladder],
     }
@@ -466,20 +495,59 @@ def main():
         if lane in vacuous_censored:
             categories["NEVER_WITHIN_HORIZON"].append(short_key(keys[lane]))
         elif rung == 1:
-            categories["E1"].append(short_key(keys[lane]))
-        elif e2_rung.get(lane) == rung:
-            categories["E2_ORBIT_BOUNDARY"].append(short_key(keys[lane]))
+            categories["RUNG_1_AT_SET"].append(short_key(keys[lane]))
         else:
             categories["OTHER_RUNG"].append(short_key(keys[lane]))
     category_counts = {label: len(rows) for label, rows in categories.items()}
-    if categories["NEVER_WITHIN_HORIZON"]:
-        coincidence_verdict = "STABILIZATION_INCOMPLETE_AT_HORIZON"
-    else:
-        nonempty = [label for label in categories if categories[label]]
-        if len(nonempty) == 1:
-            coincidence_verdict = f"THRESHOLD_DERIVED_AT_{nonempty[0]}"
+
+    relative_to_e2 = {
+        "STABILIZE_BEFORE_E2": [],
+        "STABILIZE_AT_E2": [],
+        "CHANGE_AFTER_E2": [],
+    }
+    e2_relation_by_lane = {}
+    for lane in sorted(e2_time, key=lambda index: short_key(keys[index])):
+        if lane in post_e2_different:
+            relation = "CHANGE_AFTER_E2"
+        elif stabilization[lane] == e2_rung[lane]:
+            relation = "STABILIZE_AT_E2"
+        elif stabilization[lane] < e2_rung[lane]:
+            relation = "STABILIZE_BEFORE_E2"
         else:
-            coincidence_verdict = "THRESHOLD_PER_KEY_STABILIZED_NO_UNIFORM_NAME"
+            raise AssertionError(("unclassified E2 relation", lane))
+        e2_relation_by_lane[lane] = relation
+        relative_to_e2[relation].append(short_key(keys[lane]))
+    relative_counts = {
+        label: len(rows) for label, rows in relative_to_e2.items()
+    }
+
+    full_bucket_by_lane = {}
+    for lane in range(len(keys)):
+        if lane not in stabilization or lane in vacuous_censored:
+            full_bucket_by_lane[lane] = "NEVER_WITHIN_HORIZON"
+        elif stabilization[lane] == 1:
+            full_bucket_by_lane[lane] = "RUNG_1_AT_SET"
+        else:
+            full_bucket_by_lane[lane] = "OTHER_RUNG"
+    reconciliation = {
+        relation: {
+            full_bucket: sum(
+                e2_relation_by_lane[lane] == relation
+                and full_bucket_by_lane[lane] == full_bucket
+                for lane in e2_time
+            )
+            for full_bucket in categories
+        }
+        for relation in relative_to_e2
+    }
+    reconciliation_row_marginals = {
+        relation: sum(row.values()) for relation, row in reconciliation.items()
+    }
+    reconciliation_column_marginals = {
+        full_bucket: sum(row[full_bucket] for row in reconciliation.values())
+        for full_bucket in categories
+    }
+    coincidence_verdict = "THRESHOLD-NOT-DERIVED"
 
     sequence_table = {}
     for lane in stamped:
@@ -506,7 +574,64 @@ def main():
     )
     expected_witnesses = sum(stabilization[lane] - 1 for lane in stamped)
     d_pass = witness_count == expected_witnesses and len(witness_examples) == 3
-    e_pass = sum(category_counts.values()) == len(keys)
+    expected_category_counts = {
+        "RUNG_1_AT_SET": 56,
+        "OTHER_RUNG": 126,
+        "NEVER_WITHIN_HORIZON": 566,
+    }
+    expected_relative_counts = {
+        "STABILIZE_BEFORE_E2": 27,
+        "STABILIZE_AT_E2": 14,
+        "CHANGE_AFTER_E2": 73,
+    }
+    e_pass = (
+        category_counts == expected_category_counts
+        and relative_counts == expected_relative_counts
+        and sum(category_counts.values()) == len(keys)
+        and reconciliation_row_marginals == relative_counts
+        and reconciliation_column_marginals["NEVER_WITHIN_HORIZON"] == 0
+        and sum(reconciliation_column_marginals.values()) == len(e2_time) == 114
+    )
+
+    e2_r_witness_lanes = tuple(sorted(post_e2_different))
+    e2_r_examples = [
+        {
+            "key": short_key(keys[lane]),
+            "E2_tick": e2_time[lane],
+            "E2_rung": e2_rung[lane],
+            "E2_locked_sha256": e2_sha[lane],
+            "later_clean_contradiction": post_e2_different[lane],
+        }
+        for lane in e2_r_witness_lanes[:3]
+    ]
+    r_e2_pass = (
+        len(e2_r_witness_lanes) == 73
+        and all(e2_rung[lane] < stabilization[lane] for lane in e2_r_witness_lanes)
+        and set(e2_r_witness_lanes)
+        == {
+            lane
+            for lane, relation in e2_relation_by_lane.items()
+            if relation == "CHANGE_AFTER_E2"
+        }
+    )
+
+    tick_at_e2_data = tuple(
+        lane for lane in e2_time if boundary_start_ordinal[lane] == 1
+    )
+    tick_later = tuple(
+        lane for lane in e2_time if boundary_start_ordinal[lane] > 1
+    )
+    tick_final_singletons = tuple(
+        lane for lane in e2_time if boundary_count[lane] == 1
+    )
+    tick_negative_pass = (
+        len(e2_time) == 114
+        and len(tick_at_e2_data) == 43
+        and len(tick_later) == 71
+        and len(tick_final_singletons) == 114
+        and set(tick_at_e2_data).isdisjoint(tick_later)
+        and set(tick_at_e2_data) | set(tick_later) == set(e2_time)
+    )
 
     input_shas = {
         path: sha256((ROOT / path).read_bytes()).hexdigest()
@@ -560,11 +685,71 @@ def main():
         ("PASS" if e_pass else "FAIL") + " E_THE_COINCIDENCE :: "
         + json.dumps({
             "verdict": coincidence_verdict,
-            "counts": category_counts,
-            "per_key_table": categories,
+            "finding": (
+                "Stabilization is scattered: relative to E2 the split is "
+                "27 before / 14 at / 73 change after; over the full census 56 "
+                "stabilize at their set rung, 126 at another rung, and 566 remain "
+                "unset at the horizon. Stabilization coincides uniformly with nothing."
+            ),
+            "v1_defect_diagnosis": (
+                "V1 conflated the full-census named-rung histogram with the relation "
+                "to E2 in one first-match bucket list. Its rung==1 branch ran before "
+                "e2_rung==rung, swallowing the 14 at-E2 cases, and the buckets had no "
+                "state for content revised after E2."
+            ),
+            "full_census_rung_buckets": category_counts,
+            "E2_relative_buckets": relative_counts,
+            "reconciliation_of_bucketings": {
+                "scope": "114 both-stamped keys only",
+                "cross_tab_E2_relation_by_full_census_rung_bucket": reconciliation,
+                "E2_relation_row_marginals": reconciliation_row_marginals,
+                "full_census_bucket_column_marginals_within_E2_scope": (
+                    reconciliation_column_marginals
+                ),
+            },
+            "full_census_per_key_table": categories,
+            "E2_relative_per_key_table": relative_to_e2,
+            "incomplete_at_horizon": True,
+        }, **compact),
+        ("PASS" if r_e2_pass else "FAIL") + " F_E2_UNDER_READING_R :: "
+        + json.dumps({
+            "both_stamped": len(e2_time),
+            "E2_stamps_later_revised": len(e2_r_witness_lanes),
+            "below_threshold_under_R": len(e2_r_witness_lanes),
+            "witnesses_counted": len(e2_r_witness_lanes),
+            "witness_keys": [short_key(keys[lane]) for lane in e2_r_witness_lanes],
+            "witness_examples": e2_r_examples,
+            "under_reading_R": (
+                "Each of the 73 E2 stamps locks content contradicted by a later clean "
+                "confirmation, so each E2 stamp is a witnessed below-threshold stamp."
+            ),
+            "under_fiat_permanence": (
+                "NO threshold consequence follows: permanence is imposed on the stamp "
+                "regardless of the later admissible dynamics."
+            ),
+        }, **compact),
+        ("PASS" if tick_negative_pass else "FAIL")
+        + " G_TICK_RESTRICTED_VACUITY_NEGATIVE :: "
+        + json.dumps({
+            "verdict": "NO_MEANINGFUL_SETTLED_ON_THE_TICK_READING_AT_THIS_SCOPE",
+            "finding": (
+                "The tick-restricted probe 'certifies' all 114 only because every final "
+                "on-tick content run is a singleton stable over an empty tail. The 43 "
+                "raw at-E2 classifications are reported as data only, not as a "
+                "non-vacuous rescue of a scope-wide threshold."
+            ),
+            "E2_tick_set_keys": len(e2_time),
+            "never_tick_set": len(keys) - len(e2_time),
+            "apparent_at_E2_cases_data_only": len(tick_at_e2_data),
+            "apparent_later_tick_cases": len(tick_later),
+            "final_singleton_empty_tail_artifacts": len(tick_final_singletons),
+            "at_E2_keys": [short_key(keys[lane]) for lane in tick_at_e2_data],
+            "later_tick_keys": [short_key(keys[lane]) for lane in tick_later],
+            "all_positive_tick_stability_claims_vacuous": True,
+            "at_E2_cases_are_data_not_rescue": True,
         }, **compact),
     ]
-    f_core = {
+    h_core = {
         "audit_input_paths_literal": list(AUDIT_INPUT_PATHS),
         "audit_input_paths_exist": all((ROOT / path).is_file() for path in AUDIT_INPUT_PATHS),
         "input_shas": input_shas,
@@ -577,33 +762,41 @@ def main():
         "runtime_seconds": round(runtime, 3),
         "runtime_under_1400s": runtime < 1400,
     }
-    f_prepass = (
-        f_core["audit_input_paths_exist"]
+    h_prepass = (
+        h_core["audit_input_paths_exist"]
         and duplicate_clean_mismatches == 0
         and replay_equal
         and final_lane_sha == duplicate_lane_sha
         and runtime < 1400
     )
-    verdicts = (expected_regression, b_pass, c_pass, d_pass, e_pass)
-    final_line = "CYCLE862_STABILIZATION_THRESHOLD_PASS" if all(verdicts) and f_prepass else (
+    verdicts = (
+        expected_regression,
+        b_pass,
+        c_pass,
+        d_pass,
+        e_pass,
+        r_e2_pass,
+        tick_negative_pass,
+    )
+    final_line = "CYCLE862_STABILIZATION_THRESHOLD_PASS" if all(verdicts) and h_prepass else (
         "CYCLE862_STABILIZATION_THRESHOLD_HONEST_FAIL"
     )
     stdout_bytes = 0
     for _ in range(4):
-        f_core["stdout_bytes"] = stdout_bytes
-        f_core["stdout_under_150KB"] = stdout_bytes < 150 * 1024 if stdout_bytes else True
-        f_line = ("PASS" if f_prepass and f_core["stdout_under_150KB"] else "FAIL") \
-            + " F_CONTROLS :: " + json.dumps(f_core, **compact)
-        stdout_bytes = len(("\n".join(lines + [f_line, final_line]) + "\n").encode())
-    f_core["stdout_bytes"] = stdout_bytes
-    f_core["stdout_under_150KB"] = stdout_bytes < 150 * 1024
-    f_pass = f_prepass and f_core["stdout_under_150KB"]
-    final_line = "CYCLE862_STABILIZATION_THRESHOLD_PASS" if all(verdicts) and f_pass else (
+        h_core["stdout_bytes"] = stdout_bytes
+        h_core["stdout_under_150KB"] = stdout_bytes < 150 * 1024 if stdout_bytes else True
+        h_line = ("PASS" if h_prepass and h_core["stdout_under_150KB"] else "FAIL") \
+            + " H_CONTROLS :: " + json.dumps(h_core, **compact)
+        stdout_bytes = len(("\n".join(lines + [h_line, final_line]) + "\n").encode())
+    h_core["stdout_bytes"] = stdout_bytes
+    h_core["stdout_under_150KB"] = stdout_bytes < 150 * 1024
+    h_pass = h_prepass and h_core["stdout_under_150KB"]
+    final_line = "CYCLE862_STABILIZATION_THRESHOLD_PASS" if all(verdicts) and h_pass else (
         "CYCLE862_STABILIZATION_THRESHOLD_HONEST_FAIL"
     )
-    f_line = ("PASS" if f_pass else "FAIL") + " F_CONTROLS :: " + json.dumps(f_core, **compact)
-    print("\n".join(lines + [f_line, final_line]))
-    return 0 if all(verdicts) and f_pass else 1
+    h_line = ("PASS" if h_pass else "FAIL") + " H_CONTROLS :: " + json.dumps(h_core, **compact)
+    print("\n".join(lines + [h_line, final_line]))
+    return 0 if all(verdicts) and h_pass else 1
 
 
 if __name__ == "__main__":

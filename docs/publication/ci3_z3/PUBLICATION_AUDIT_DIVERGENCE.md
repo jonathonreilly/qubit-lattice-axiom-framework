@@ -19,9 +19,9 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 111 |
+| medium | `unaudited` | 110 |
 | critical | `audited_conditional` | 14 |
-| medium | `audited_conditional` | 6 |
+| medium | `audited_conditional` | 7 |
 | high | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
 | medium | `audited_failed` | 4 |
@@ -532,7 +532,7 @@ publication tables phrase it.
 | medium | `kubo_continuum_limit_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `lensing_adjoint_kernel_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `lepton_charge_universality_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `lorentz_violation_derived_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `lorentz_violation_derived_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `mass_mixing_subspace_disjointness_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | medium | `meson_charges_from_quark_y_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `momentum_charge_commute_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

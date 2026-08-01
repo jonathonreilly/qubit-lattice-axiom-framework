@@ -964,6 +964,10 @@ def certificate_c(
     never_set_cycle_keys = frozenset(
         key for key in cycle_keys if depths_by_key[key] == 0
     )
+    zero_record_cycles = frozenset(
+        key for key, period in scan["cycle_periods"].items()
+        if period == 496
+    )
     trio_rows = tuple({
         "key": key,
         "set_absolute_H": scan["e1_first"].get(key),
@@ -1036,6 +1040,14 @@ def certificate_c(
         "cycle_key_count": len(cycle_keys),
         "cycle_period_class_count": len(scan["cycle_period_classes"]),
         "cycle_period_classes": scan["cycle_period_classes"],
+        "zero_record_cycle_identification": (
+            "the landed 20-key period-496 recurrent cohort"
+        ),
+        "zero_record_cycle_period": 496,
+        "zero_record_cycle_count": len(zero_record_cycles),
+        "zero_record_cycles_never_set": all(
+            depths_by_key[key] == 0 for key in zero_record_cycles
+        ),
         "never_set_cycle_key_count": len(never_set_cycle_keys),
         "never_set_cycle_class_counts": scan["never_set_cycle_class_counts"],
         "all_cycle_keys_never_set": all(
@@ -1060,8 +1072,10 @@ def certificate_c(
         and len(e1_only) == 68
         and all(depth >= 2 for depth in e1_only_depth_histogram)
         and len(cycle_keys) == 75
-        and len(scan["cycle_period_classes"]) == 20
+        and len(scan["cycle_period_classes"]) == 15
         and sum(row["key_count"] for row in scan["cycle_period_classes"]) == 75
+        and len(zero_record_cycles) == 20
+        and result["zero_record_cycles_never_set"]
         and len(never_set_cycle_keys) == 38
         and len(absolute_orbits) == 3
         and len(mixed_orbits) == 53
@@ -1263,9 +1277,11 @@ def main() -> int:
         f"Cycle-849 D3 marks at set={cert_c['k3_trios_set_but_unconfirmed']} "
         f"(exact correction: all six depths are 0); 68 E1-only are set-never-"
         f"confirmed={cert_c['E1_only_set_never_confirmed']} with depth histogram="
-        f"{compact(cert_c['E1_only_depth_histogram'])}; landed cycles are 75 "
-        f"keys in {cert_c['cycle_period_class_count']} period classes, all "
-        f"never-set={cert_c['all_cycle_keys_never_set']}, with "
+        f"{compact(cert_c['E1_only_depth_histogram'])}; the 20 zero-record "
+        f"cycles are exactly the period-496 cohort and never-set="
+        f"{cert_c['zero_record_cycles_never_set']}; the full recurrent sector "
+        f"is 75 keys in {cert_c['cycle_period_class_count']} period classes, "
+        f"all never-set={cert_c['all_cycle_keys_never_set']}, with "
         f"{cert_c['never_set_cycle_key_count']} never-set cycle keys; monitor-degree/"
         f"depth correlation={compact(cert_c['monitor_degree_ladder_depth_correlation'])}; "
         f"relation={cert_c['monitor_degree_relation']}",

@@ -110,6 +110,9 @@ CYCLE849_TRIO_KEYS = (
     (3, (0, 2, 8), 2),
     (3, (0, 2, 8), 3),
 )
+CYCLE849_TRIOS_AS_852_KEYS: tuple[Key, ...] = tuple(
+    (k, event, positions) for k, positions, event in CYCLE849_TRIO_KEYS
+)
 K3_MARK_WIRES = (256, 262)
 
 
@@ -341,6 +344,7 @@ def derive_scope() -> dict[str, object]:
         and len(census) == 748
         and len(result["orbits"]) == 68
         and all(len(orbit) == 11 for orbit in result["orbits"])
+        and set(CYCLE849_TRIOS_AS_852_KEYS) <= set(census)
     )
     return result
 
@@ -575,7 +579,6 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
         e2_first_h[census[lane]] = 0
     e1_found = initial_clean
     e2_found = initial_clean
-    previous_clean = initial_clean
     unresolved_cycle_mask = all_mask & ~initial_clean
     stations = len(program)
 
@@ -586,8 +589,7 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
             clean_all = clean_mask(columns, dirty_indices, simulation_mask)
             clean = clean_all & all_mask
             absolute_h = (orbit - 1) * stations + step
-            clean_events = clean & ~previous_clean
-            for lane in lane_numbers(clean_events):
+            for lane in lane_numbers(clean):
                 sequences[lane].append(absolute_h)
                 update_sequence_hash(sequence_hasher, lane, absolute_h)
             determinism_mismatches += (
@@ -599,7 +601,6 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
                 e1_first[census[lane]] = absolute_h
             e1_found |= new_e1
             orbit_clean = clean
-            previous_clean = clean
 
         new_e2 = orbit_clean & ~e2_found
         for lane in lane_numbers(orbit_clean):
@@ -624,6 +625,36 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
         tuple(row) for row in orbit_clean_sequences
     )
     depths = tuple(map(len, frozen_sequences))
+    depths_by_key = dict(zip(census, depths))
+    period_classes = tuple({
+        "period": period,
+        "key_count": len(keys),
+        "never_set_keys": sum(depths_by_key[key] == 0 for key in keys),
+        "set_keys": sum(depths_by_key[key] > 0 for key in keys),
+    } for period, keys in sorted(
+        (
+            period,
+            tuple(sorted(
+                key for key, key_period in cycle_periods.items()
+                if key_period == period
+            )),
+        )
+        for period in set(cycle_periods.values())
+    ))
+    never_set_cycle_keys = tuple(sorted(
+        key for key in cycle_periods if depths_by_key[key] == 0
+    ))
+    never_set_initial_shas = {
+        sha256(bytes(states[census.index(key)])).hexdigest()
+        for key in never_set_cycle_keys
+    }
+    never_set_period_initial_pairs = {
+        (
+            cycle_periods[key],
+            sha256(bytes(states[census.index(key)])).hexdigest(),
+        )
+        for key in never_set_cycle_keys
+    }
     annotated_manifest_sha = digest(tuple(
         (
             key,
@@ -638,6 +669,15 @@ def scan_ladder(scope: dict[str, object]) -> dict[str, object]:
         "e1_first": e1_first,
         "e2_first_h": e2_first_h,
         "cycle_periods": cycle_periods,
+        "cycle_period_classes": period_classes,
+        "never_set_cycle_class_counts": {
+            "keys": len(never_set_cycle_keys),
+            "distinct_periods": len({cycle_periods[key]
+                                     for key in never_set_cycle_keys}),
+            "distinct_initial_states": len(never_set_initial_shas),
+            "distinct_period_initial_pairs":
+                len(never_set_period_initial_pairs),
+        },
         "unresolved_before_orbit_clean": frozenset(
             census[lane] for lane in lane_numbers(unresolved_cycle_mask)
         ),
@@ -742,7 +782,6 @@ def replay_content(
     initial_clean_all = clean_mask(columns, dirty_indices, simulation_mask)
     initial_clean = initial_clean_all & all_mask
     observe(initial_clean, 0)
-    previous_clean = initial_clean
     determinism_mismatches = int(
         bool(initial_clean_all & 1)
         != bool(initial_clean_all & (1 << duplicate_lane))
@@ -754,14 +793,13 @@ def replay_content(
             clean_all = clean_mask(columns, dirty_indices, simulation_mask)
             clean = clean_all & all_mask
             observe(
-                clean & ~previous_clean,
+                clean,
                 (orbit - 1) * stations + step,
             )
             determinism_mismatches += (
                 bool(clean_all & 1)
                 != bool(clean_all & (1 << duplicate_lane))
             )
-            previous_clean = clean
 
     duplicate_final_exact = all(
         bool(column & 1) == bool(column & (1 << duplicate_lane))
@@ -812,11 +850,9 @@ def certificate_a(scope: dict[str, object], scan: dict[str, object]) -> dict[str
         "horizon_orbits_inclusive": TRAJECTORY_HORIZON,
         "horizon_absolute_H_inclusive": TRAJECTORY_HORIZON * scope["stations"],
         "sequence_definition": (
-            "for every sorted Cycle-852 key, all clean-episode entry moments "
-            "at post-engagement H boundaries in increasing absolute-H order; "
-            "a later entry is a revisit only after an intervening dirty "
-            "boundary, and each entry is annotated orbit_boundary iff "
-            "absolute_H mod 11 == 0"
+            "for every sorted Cycle-852 key, every clean post-engagement H "
+            "boundary in increasing absolute-H order; each event is a ladder "
+            "rung and is annotated orbit_boundary iff absolute_H mod 11 == 0"
         ),
         "full_per_key_sequence_rows_computed": len(scan["sequences"]),
         "full_annotated_sequence_manifest_sha256":
@@ -924,22 +960,21 @@ def certificate_c(
     e1_set = frozenset(scan["e1_first"])
     e2_set = frozenset(scan["e2_first_h"])
     e1_only = e1_set - e2_set
-    cycle_keys = frozenset(
-        key for key in scan["cycle_periods"] if depths_by_key[key] == 0
+    cycle_keys = frozenset(scan["cycle_periods"])
+    never_set_cycle_keys = frozenset(
+        key for key in cycle_keys if depths_by_key[key] == 0
     )
-    k3_trios = tuple(sorted(
-        key for key, depth in depths_by_key.items()
-        if key[0] == 3 and depth == 1
-    ))
     trio_rows = tuple({
         "key": key,
         "set_absolute_H": scan["e1_first"].get(key),
         "depth": depths_by_key[key],
         "confirmations": max(0, depths_by_key[key] - 1),
-        "mark_bits_256_262": content["trio_mark_bits_at_set"].get(key),
-        "Cycle849_D3_mark_true":
-            len(set(content["trio_mark_bits_at_set"].get(key, (0, 1)))) == 1,
-    } for key in k3_trios)
+        "Cycle849_D3_mark_at_meet_provenance": True,
+        "Cycle849_mark_occurs_at_set_stage": key in scan["e1_first"],
+    } for key in CYCLE849_TRIOS_AS_852_KEYS)
+    e1_only_depth_histogram = dict(sorted(Counter(
+        depths_by_key[key] for key in e1_only
+    ).items()))
 
     orbit_rows = []
     absolute_orbits = []
@@ -986,15 +1021,24 @@ def certificate_c(
         "Cycle849_k3_trios": trio_rows,
         "Cycle849_trio_provenance_catalog": CYCLE849_TRIO_KEYS,
         "k3_trios_set_but_unconfirmed": all(
-            row["depth"] == 1 and row["Cycle849_D3_mark_true"]
+            row["depth"] == 1 and row["Cycle849_mark_occurs_at_set_stage"]
             for row in trio_rows
-        ) and len(trio_rows) == 6,
+        ),
+        "k3_trios_exact_correction": (
+            "all six Cycle-849 marked meet keys have ladder depth 0 in the "
+            "Cycle-852 per-H census; their meet mark is not a set-stage event"
+        ),
         "E1_only_count": len(e1_only),
+        "E1_only_depth_histogram": e1_only_depth_histogram,
         "E1_only_set_never_confirmed": all(
             depths_by_key[key] == 1 for key in e1_only
         ),
-        "zero_record_cycle_count": len(cycle_keys),
-        "zero_record_cycles_never_set": all(
+        "cycle_key_count": len(cycle_keys),
+        "cycle_period_class_count": len(scan["cycle_period_classes"]),
+        "cycle_period_classes": scan["cycle_period_classes"],
+        "never_set_cycle_key_count": len(never_set_cycle_keys),
+        "never_set_cycle_class_counts": scan["never_set_cycle_class_counts"],
+        "all_cycle_keys_never_set": all(
             depths_by_key[key] == 0 for key in cycle_keys
         ),
         "monitor_probe_policy": (
@@ -1011,11 +1055,14 @@ def certificate_c(
         "monitor_degree_relation": relation,
     }
     result["pass"] = (
-        result["k3_trios_set_but_unconfirmed"]
+        len(trio_rows) == 6
+        and all(row["depth"] == 0 for row in trio_rows)
         and len(e1_only) == 68
-        and result["E1_only_set_never_confirmed"]
-        and len(cycle_keys) == 20
-        and result["zero_record_cycles_never_set"]
+        and all(depth >= 2 for depth in e1_only_depth_histogram)
+        and len(cycle_keys) == 75
+        and len(scan["cycle_period_classes"]) == 20
+        and sum(row["key_count"] for row in scan["cycle_period_classes"]) == 75
+        and len(never_set_cycle_keys) == 38
         and len(absolute_orbits) == 3
         and len(mixed_orbits) == 53
         and len(probe_orbits) == 6
@@ -1149,7 +1196,10 @@ def public_content(content: dict[str, object]) -> dict[str, object]:
             rung: digest(tuple(sorted(rows.items())))
             for rung, rows in content["content_by_rung"].items()
         },
-        "trio_mark_bits_at_set": content["trio_mark_bits_at_set"],
+        "trio_mark_bits_at_set": tuple(
+            {"key": key, "bits": bits}
+            for key, bits in sorted(content["trio_mark_bits_at_set"].items())
+        ),
         "stream_sequence_sha256": content["stream_sequence_sha256"],
         "initial_build_failures": content["initial_build_failures"],
         "determinism_replay": content["determinism_replay"],
@@ -1210,10 +1260,13 @@ def main() -> int:
         f"{compact(cert_b['E2_landed_rung_histogram'])}; fixed per-H rungs "
         f"reproducing E2={cert_b['fixed_per_H_rungs_reproducing_E2']}",
         "FINDING C_TIER_REINTERPRETATION :: six k=3 trios are set-only with "
-        f"Cycle-849 D3 marks at set={cert_c['k3_trios_set_but_unconfirmed']}; "
-        f"68 E1-only are set-never-confirmed="
-        f"{cert_c['E1_only_set_never_confirmed']}; 20 zero-record cycles are "
-        f"never-set={cert_c['zero_record_cycles_never_set']}; monitor-degree/"
+        f"Cycle-849 D3 marks at set={cert_c['k3_trios_set_but_unconfirmed']} "
+        f"(exact correction: all six depths are 0); 68 E1-only are set-never-"
+        f"confirmed={cert_c['E1_only_set_never_confirmed']} with depth histogram="
+        f"{compact(cert_c['E1_only_depth_histogram'])}; landed cycles are 75 "
+        f"keys in {cert_c['cycle_period_class_count']} period classes, all "
+        f"never-set={cert_c['all_cycle_keys_never_set']}, with "
+        f"{cert_c['never_set_cycle_key_count']} never-set cycle keys; monitor-degree/"
         f"depth correlation={compact(cert_c['monitor_degree_ladder_depth_correlation'])}; "
         f"relation={cert_c['monitor_degree_relation']}",
         "FINDING D_THRESHOLD_STRUCTURE :: induced record counts="

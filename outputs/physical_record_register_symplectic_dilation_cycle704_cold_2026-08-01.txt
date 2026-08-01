@@ -1,0 +1,87 @@
+== A LANDED ANCHORS ==
+PASS a1_hold_t20
+PASS a1_hold_t40
+PASS a1_hold_t80
+PASS a1_hold_t160
+REPORT a1_hold=-4.209568736178572,-4.150939492487698,-4.121308954024253,-4.1145788661621125
+PASS a2_c700_exact_reversal
+REPORT a2_reversal=2.916316e-16
+PASS a3_static19_pin
+PASS a3_static_residual_pin
+PASS a3_mutated_ratio_pin
+PASS a3_range_separation_pin
+PASS a3_range_ratio_pin
+REPORT a3_static=-3.9169789686578382 res=0.003745783167973915
+REPORT a3_mut=-4.0411929130059585 sep=0.12421394434812028
+REPORT a3_range_ratio=33.161007665936864
+== B DILATION CARRIES THE CHANNEL ==
+PASS b1_phi_bit_identity
+PASS b2_pi_bit_identity
+PASS b3_phibar_bit_identity
+PASS b4_register_carries_holdmean
+PASS b4b_register_ratio_matches
+PASS b4b_register_ratio_landed
+REPORT b4_relerr=0.0 ratio=-4.11457886616211
+REPORT b4b_rel=6.47584e-16 abs=2.664535e-15
+PASS b5_conserved_active_coupling
+PASS b6_window_additivity
+REPORT b5_bdrift=0.0 b6_add=1.047724e-15
+== C INVERSE AND SYMPLECTICITY ==
+PASS c1_augmented_inverse
+PASS c2_unregistration
+PASS c2b_back_momentum_zero
+REPORT c1_back=2.916316e-16 c2_aback=2.414735e-15
+PASS c3a_kick_matrix_symmetry
+PASS c3b_factor_generator_symmetry
+PASS c3c_factor_generator_nilpotent
+PASS c3d_factor_numeric_defect
+PASS c3e_factor_inverse_exact
+REPORT c3_sym=0.0 nil=0.0 num=0.0 inv=0.0
+PASS c4a_composed_defect_norm
+PASS c4a_composed_defect_raw
+PASS c4b_unit_determinant
+REPORT c4_defect_raw=3.637979e-12 prodnorm=6.615678e+08
+REPORT c4_logdet=4.82947e-14 sign=1.0
+PASS c4c_matrix_matches_integrator
+REPORT c4c_relerr=6.255091e-16
+PASS c5a_factorwise_inverse
+PASS c5b_affine_round_trip
+REPORT c5_inv_raw=3.274181e-11 trip=1.803016e-13
+== D OPENNESS MEASURED ==
+PASS d1_adjoint_matches_forward
+PASS d2_affine_readout_map
+REPORT d1_rel=6.270474e-14 d2_rel=1.800173e-13
+PASS d3_readout_rank_four
+REPORT d3_sv=77.5680609707272,54.09257575502038,47.78606367793194,39.56216442318937
+REPORT d3_kernel_dim=1454
+PASS d4_kernel_silence
+PASS d4b_environment_survives
+PASS d5_row_space_loudness
+REPORT d4_silent=3.433735e-19 env=1.4554301648969057
+REPORT d5_loud=0.0008532113036548952 contrast=2.484791e+15
+PASS d6_same_record_witness
+PASS d6b_environments_differ
+REPORT d6_record=2.940279e-19 env_gap=1.4554301648969066
+== E MUTATIONS THROUGH THE DILATION ==
+PASS e1_deletion_exact_zero
+PASS e1b_deletion_null_ratio
+PASS e2_sign_bit_exact_oddness
+PASS e2b_sign_ratio_blind
+PASS e2c_sign_difference_registers
+REPORT e1_delratio=0.0 e2_dsum=0.0
+PASS e3_scale_double_exact
+PASS e3b_scale_half_exact
+PASS e4_register_swap_inverse
+REPORT e4_swap=2.775558e-17
+== F REJECTORS ==
+PASS f1_back_reaction_detected
+PASS f2_back_reaction_linear
+PASS f3_bit_identity_discriminates
+PASS f4_adjoint_window_rejector
+REPORT f1_shift=0.024162430644096317 f2_lin=1.740479e-14
+REPORT f4_window=0.022060595687201985
+== G RECEIPT ==
+PASS g1_receipt_fields
+PASS stdout_under_6000
+SUMMARY_JSON {"A":{"R_mut":-4.0411929130059585,"R_static19":-3.9169789686578382,"hold":[-4.209568736178572,-4.150939492487698,-4.121308954024253,-4.1145788661621125],"range_ratio":33.161007665936864,"range_sep":0.12421394434812028,"reversal":2.916316e-16,"staticerr":0.003745783167973915},"B":{"b4":0.0,"b5":0.0,"b6":1.047724e-15,"bit_phi":true,"bit_phibar":true,"bit_pi":true,"ratio_A":-4.11457886616211},"C":{"c1":2.916316e-16,"c2":2.414735e-15,"c4c":6.255091e-16,"defect_raw":3.637979e-12,"dim":58,"inv_raw":3.274181e-11,"logdet":4.82947e-14,"trip":1.803016e-13},"D":{"d1":6.270474e-14,"d2":1.800173e-13,"d6":2.940279e-19,"env_gap":1.4554301648969066,"kernel_dim":1454,"loud":0.0008532113036548952,"silent":3.433735e-19,"sv":[77.5680609707272,54.09257575502038,47.78606367793194,39.56216442318937]},"E":{"del":0.0,"swap":2.775558e-17},"F":{"f1":0.024162430644096317,"f2":1.740479e-14,"f4":0.022060595687201985},"cycle":704,"fail":0,"pass":54}
+TOTAL: PASS=54 FAIL=0

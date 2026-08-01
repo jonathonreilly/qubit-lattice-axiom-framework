@@ -780,6 +780,13 @@ def main():
         value for key, value in sanitized["covariance"].items()
         if key.endswith("failures")
     )
+    covariance_coverage = (
+        sanitized["covariance"]["proper_cubic_frames"] == 24
+        and sanitized["covariance"]["ordered_frame_products"] == 576
+        and sanitized["covariance"]["translation_vectors"] == 27
+        and sanitized["covariance"]["translation_path_coordinate_tests"]
+        == 1429515
+    )
     local_rule_failures = sum(
         shape["shared_edge_alias_failures"]
         + shape["incident_label_edge_address_failures"]
@@ -793,12 +800,17 @@ def main():
     )
     sanitized["pass"] = (
         conflict_total == 0 and covariance_failures == 0
-        and local_rule_failures == 0
+        and covariance_coverage and local_rule_failures == 0
     )
     serial = json.dumps(sanitized, sort_keys=True, separators=(",", ":"))
     sanitized["report_sha256"] = sha256(serial.encode()).hexdigest()
     print(json.dumps(sanitized, sort_keys=True, indent=2))
-    print("CYCLE864_LOCAL_DILATED_SERVICE_PASS" if sanitized["pass"] else "CYCLE864_LOCAL_DILATED_SERVICE_FAIL")
+    print(
+        "CYCLE864_LOCAL_DILATED_SERVICE_PASS"
+        if sanitized["pass"] else "CYCLE864_LOCAL_DILATED_SERVICE_FAIL"
+    )
+    if not sanitized["pass"]:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

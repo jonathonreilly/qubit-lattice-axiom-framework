@@ -753,11 +753,128 @@ def controller_semantic_table(base):
     }
 
 
-def composition_census(context, table):
+def route_leg(path, occupied, *, fermionic, reverse=False):
+    """Execute one literal returned-route macro from either endpoint."""
+    distance = len(path) - 1
+    source_ordinal = distance if reverse else 0
+    target_ordinal = 0 if reverse else distance
+    observed, phase = execute_blank_route(
+        path,
+        fermionic=fermionic,
+        occupied=(source_ordinal,) if occupied else (),
+    )
+    expected = (target_ordinal,) if occupied else ()
+    return phase, observed != expected
+
+
+def composed_signature_map(
+    instrumented,
+    *,
+    width,
+    left,
+    right,
+    edge_index,
+    controller,
+    rack,
+    table,
+    swap_controller_roles=False,
+    twist_opportunity_phase=False,
+):
+    """Execute the keyed rack-port/controller map on one sparse signature.
+
+    The controller roles are inferred from the literal rack path endpoints,
+    rather than from the path dictionary key.  This makes a source-to-port
+    permutation an active semantic mutation instead of a self-confirming
+    label comparison.
+    """
+    target_roles = {
+        site: role for role, site in enumerate(controller["targets"])
+    }
+    if swap_controller_roles:
+        target_roles = dict(target_roles)
+        first, second = controller["targets"][:2]
+        target_roles[first], target_roles[second] = (
+            target_roles[second], target_roles[first]
+        )
+
+    observed = {}
+    route_failures = role_failures = pointer_failures = return_failures = 0
+    matter_mask = (1 << width) - 1
+    pointer_wire = width + 2
+    for output, amplitude in instrumented.items():
+        source_bits = (
+            (output >> left) & 1,
+            (output >> right) & 1,
+            (output >> pointer_wire) & 1,
+        )
+        role_bits = [None, None, None]
+        phase = 1
+        role_for_port = []
+        for port, occupied in enumerate(source_bits):
+            path = rack["paths"][(edge_index, port)]
+            loaded_phase, failed = route_leg(
+                path, occupied, fermionic=port < 2
+            )
+            phase *= loaded_phase
+            route_failures += failed
+            role = target_roles.get(path[-1])
+            role_failures += role is None
+            role_for_port.append(role)
+            if role is not None:
+                role_failures += role_bits[role] is not None
+                role_bits[role] = occupied
+
+        if any(value is None for value in role_bits):
+            role_failures += 1
+            continue
+        controller_left, controller_right, controller_pointer = role_bits
+        pointer_failures += controller_pointer != (
+            controller_left ^ controller_right
+        )
+        if controller_pointer != (controller_left ^ controller_right):
+            continue
+        history = table["rows"][(controller_left, controller_right)]["history"]
+
+        returned = [0, 0]
+        for port in (1, 0):
+            role = role_for_port[port]
+            occupied = role_bits[role]
+            path = rack["paths"][(edge_index, port)]
+            returned_phase, failed = route_leg(
+                path, occupied, fermionic=True, reverse=True
+            )
+            phase *= returned_phase
+            return_failures += failed
+            returned[port] = occupied
+
+        clean_matter = output & matter_mask
+        clean_matter &= ~((1 << left) | (1 << right))
+        clean_matter |= returned[0] << left
+        clean_matter |= returned[1] << right
+        coefficient = amplitude * phase
+        if twist_opportunity_phase and controller_pointer:
+            coefficient *= -1
+        key = (clean_matter, history)
+        observed[key] = observed.get(key, 0.0j) + coefficient
+    return observed, {
+        "route_macro_failures": route_failures,
+        "controller_role_binding_failures": role_failures,
+        "controller_pointer_law_failures": pointer_failures,
+        "endpoint_return_failures": return_failures,
+    }
+
+
+def composition_census(context, table, rack):
     cases = failures = inverse_failures = linearity_corollaries = 0
     physical_cases = target_cases = 0
+    maximum_residual = 0.0
+    structural_failures = Counter()
+    port_swap_cases = phase_twist_cases = 0
+    port_swap_residuals = []
+    phase_twist_residuals = []
     for edge_index, edge in enumerate(context["fixture"].edges):
         left, right = edge[4], edge[5]
+        controller = rack["controllers"][edge_index]
         for family, rows, width in (
             ("physical", context["fixture"].physical_terms(edge_index), context["fixture"].qubits),
             ("target", context["fixture"].target_terms(edge_index), context["fixture"].matter_qubits),
@@ -767,21 +884,74 @@ def composition_census(context, table):
                 instrumented = I823.instrument_sparse(
                     rows, source, left, right, width
                 )
+                seam = I823.apply_full_seam(rows, source)
+                declared = I823.expected_instrument_output(
+                    seam, source, left, right, width
+                )
                 cases += 1
                 physical_cases += family == "physical"
                 target_cases += family == "target"
-                failures += len(instrumented) != 1
-                for output, amplitude in instrumented.items():
+                expected = {}
+                for output, amplitude in declared.items():
+                    clean_matter = output & ((1 << width) - 1)
                     post_left = (output >> left) & 1
                     post_right = (output >> right) & 1
                     pointer = (output >> (width + 2)) & 1
-                    row = table["rows"][(post_left, post_right)]
-                    failures += pointer != (post_left ^ post_right)
-                    failures += row["history"] != EXPECTED_HISTORY[
-                        (post_left, post_right)
-                    ]
-                    failures += abs(abs(amplitude) - 1.0) > 1.0e-12
-                    inverse_failures += row["restored"] != row["before"]
+                    history = I826.expected_orientation(
+                        post_left, post_right, pointer
+                    )
+                    key = (clean_matter, history)
+                    expected[key] = expected.get(key, 0.0j) + amplitude
+
+                observed, structure = composed_signature_map(
+                    instrumented,
+                    width=width,
+                    left=left,
+                    right=right,
+                    edge_index=edge_index,
+                    controller=controller,
+                    rack=rack,
+                    table=table,
+                )
+                structural_failures.update(structure)
+                residual = I823.dictionary_residual(observed, expected)
+                maximum_residual = max(maximum_residual, residual)
+                failures += residual > 1.0e-12
+
+                swapped, _ = composed_signature_map(
+                    instrumented,
+                    width=width,
+                    left=left,
+                    right=right,
+                    edge_index=edge_index,
+                    controller=controller,
+                    rack=rack,
+                    table=table,
+                    swap_controller_roles=True,
+                )
+                swapped_residual = I823.dictionary_residual(swapped, expected)
+                port_swap_residuals.append(swapped_residual)
+                port_swap_cases += swapped_residual > 1.0e-12
+
+                twisted, _ = composed_signature_map(
+                    instrumented,
+                    width=width,
+                    left=left,
+                    right=right,
+                    edge_index=edge_index,
+                    controller=controller,
+                    rack=rack,
+                    table=table,
+                    twist_opportunity_phase=True,
+                )
+                twisted_residual = I823.dictionary_residual(twisted, expected)
+                phase_twist_residuals.append(twisted_residual)
+                phase_twist_cases += twisted_residual > 1.0e-12
+
+                for post_left in (0, 1):
+                    for post_right in (0, 1):
+                        row = table["rows"][(post_left, post_right)]
+                        inverse_failures += row["restored"] != row["before"]
             # Linearity makes each fixed-parity coherent test exact once the
             # monomial basis map and relative phases above are exact.
             linearity_corollaries += 2
@@ -791,9 +961,20 @@ def composition_census(context, table):
         "total_signature_cases": cases,
         "composition_failures": failures,
         "inverse_failures": inverse_failures,
+        "structural_failure_census": dict(sorted(structural_failures.items())),
         "coherent_fixed_parity_linearity_corollaries": linearity_corollaries,
         "dense_coherent_multiedge_execution_performed": False,
-        "maximum_dictionary_residual": 0.0 if not failures else math.inf,
+        "maximum_dictionary_residual": maximum_residual,
+        "hostile_charged_port_role_swap_cases_detected": port_swap_cases,
+        "hostile_charged_port_role_swap_cases_tested": cases,
+        "maximum_hostile_charged_port_role_swap_residual": max(
+            port_swap_residuals
+        ),
+        "hostile_opportunity_phase_twist_cases_detected": phase_twist_cases,
+        "hostile_opportunity_phase_twist_cases_tested": cases,
+        "maximum_hostile_opportunity_phase_twist_residual": max(
+            phase_twist_residuals
+        ),
     }
 
 
@@ -889,7 +1070,7 @@ def main():
             base, context, seam_charged, seam_neutral
         )
         rack = rack_compile(base, context, seam_charged, seam_neutral)
-        composition = composition_census(context, semantics)
+        composition = composition_census(context, semantics, rack)
         covariance = covariance_and_translation(base, rack)
         reports.append({
             "shape": shape,
@@ -947,6 +1128,16 @@ def main():
         "signature_compositions_match_independent_table": all(
             row["composition"]["composition_failures"] == 0
             and row["composition"]["inverse_failures"] == 0
+            and not any(
+                row["composition"]["structural_failure_census"].values()
+            )
+            and row["composition"]["maximum_dictionary_residual"] < 1.0e-12
+            and row["composition"][
+                "hostile_charged_port_role_swap_cases_detected"
+            ] > 0
+            and row["composition"][
+                "hostile_opportunity_phase_twist_cases_detected"
+            ] > 0
             for row in reports
         ),
         "passive_covariance_and_affine_transport": all(
@@ -954,6 +1145,10 @@ def main():
                 value for key, value in row["covariance_and_translation"].items()
                 if key.endswith("failures")
             )
+            and row["covariance_and_translation"]["proper_cubic_frames"] == 24
+            and row["covariance_and_translation"]["ordered_frame_products"] == 576
+            and row["covariance_and_translation"]["product_coordinate_samples"] == 512
+            and row["covariance_and_translation"]["translation_vectors"] == 8
             for row in reports
         ),
         "one_particle_mass_and_contact_fixture_preserved": (

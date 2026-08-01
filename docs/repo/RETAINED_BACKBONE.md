@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 127 |
-| Retained bounded rows | 357 |
+| Retained bounded rows | 358 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 34 |
 
@@ -153,7 +153,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (357)
+## Retained bounded rows (358)
 
 Sorted by load-bearing graph score (descending).
 
@@ -300,6 +300,7 @@ Sorted by load-bearing graph score (descending).
 - [`flavor_doublet_metric_default_is_detr_2026-06-02`](../../docs/FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md) — score 4.459; audited 2026-06-06T23:36:46.567960+00:00
 - [`staggered_newton_blocking_sensitivity_note_2026-04-11`](../../docs/STAGGERED_NEWTON_BLOCKING_SENSITIVITY_NOTE_2026-04-11.md) — score 4.200; audited 2026-05-19T14:40:22.207638+00:00
 - [`teleportation_causal_channel_note`](../../docs/TELEPORTATION_CAUSAL_CHANNEL_NOTE.md) — score 4.170; audited 2026-05-03T01:02:19.070823+00:00
+- [`cycle_graph_c43_independent_set_census_narrow_theorem_note_2026-07-28`](../../docs/CYCLE_GRAPH_C43_INDEPENDENT_SET_CENSUS_NARROW_THEOREM_NOTE_2026-07-28.md) — score 4.085; audited 2026-08-01T18:06:58.988643+00:00
 - [`fifth_family_complex_note`](../../docs/FIFTH_FAMILY_COMPLEX_NOTE.md) — score 3.959; audited 2026-06-11T14:11:42.881573+00:00
 - [`lattice_nn_distance_law_note`](../../docs/LATTICE_NN_DISTANCE_LAW_NOTE.md) — score 3.959; audited 2026-05-07T02:35:11.544536+00:00
 - [`mirror_2d_gravity_law_note`](../../docs/MIRROR_2D_GRAVITY_LAW_NOTE.md) — score 3.822; audited 2026-05-25T19:40:18.863053+00:00

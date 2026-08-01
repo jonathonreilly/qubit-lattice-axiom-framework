@@ -31,7 +31,7 @@
       "overturned_by_third": 0,
       "ratified_by_third": 0,
       "total_audits": 3,
-      "verdict_changed_after_re_audit": 20,
+      "verdict_changed_after_re_audit": 21,
       "verdict_counts": {
         "audited_clean": 3
       }
@@ -110,7 +110,7 @@
       "third_pass_overturn_rate": 0.52,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
       "total_audits": 285,
-      "verdict_changed_after_re_audit": 838,
+      "verdict_changed_after_re_audit": 842,
       "verdict_counts": {
         "audited_clean": 256,
         "audited_conditional": 4,
@@ -121,7 +121,7 @@
     },
     "codex-gpt-5.6": {
       "audits_with_runner_class": {
-        "A": 373,
+        "A": 374,
         "B": 18,
         "C": 135,
         "D": 2,
@@ -138,7 +138,7 @@
         "critical": 127,
         "high": 52,
         "leaf": 257,
-        "medium": 126
+        "medium": 127
       },
       "cross_confirmation_agreement_rate": 0.547,
       "cross_confirmation_outcomes": {
@@ -156,11 +156,11 @@
       "third_pass_decisions_n": 54,
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 562,
+      "total_audits": 563,
       "verdict_changed_after_re_audit": 232,
       "verdict_counts": {
         "audited_clean": 137,
-        "audited_conditional": 283,
+        "audited_conditional": 284,
         "audited_decoration": 34,
         "audited_failed": 76,
         "audited_numerical_match": 8,
@@ -195,7 +195,7 @@
   "totals": {
     "auditor_families_observed": 5,
     "overall_agreement_rate": 0.709,
-    "total_audits_recorded": 940,
+    "total_audits_recorded": 941,
     "total_cross_confirmation_family_participations": 163,
     "total_cross_confirmation_pairs": 148,
     "total_third_pass_decisions": 82

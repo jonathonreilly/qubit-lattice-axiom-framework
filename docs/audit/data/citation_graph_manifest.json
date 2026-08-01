@@ -1,6 +1,6 @@
 {
- "edge_count": 15371,
- "node_count": 4619,
+ "edge_count": 15377,
+ "node_count": 4620,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2765,6 +2765,10 @@
   "cycle719_parity_safe_typed_controller_atlas_cycle827_bounded_theorem_note_2026-07-30": {
    "deps_hash": "828359955ba5",
    "out_degree": 3
+  },
+  "cycle823_cycle719_same_chart_history_port_cycle863_bounded_theorem_note_2026-08-01": {
+   "deps_hash": "959d1cb0529a",
+   "out_degree": 6
   },
   "cycle_battery_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",

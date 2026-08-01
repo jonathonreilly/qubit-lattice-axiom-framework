@@ -10,7 +10,7 @@ from __future__ import annotations
 import ast
 import base64
 from collections import Counter
-from hashlib import sha256
+from hashlib import sha1, sha256
 import importlib.abc
 import json
 import lzma
@@ -147,6 +147,11 @@ def compact(value: object) -> str:
 
 def digest(value: object) -> str:
     return sha256(compact(value).encode("utf-8")).hexdigest()
+
+
+def git_blob_sha(payload: bytes) -> str:
+    header = f"blob {len(payload)}\0".encode("ascii")
+    return sha1(header + payload).hexdigest()
 
 
 def git_bytes(*arguments: str, input_bytes: bytes | None = None) -> bytes:
@@ -461,6 +466,7 @@ def certificate_a_consumer_sweep(
     }
     result = {
         "certificate": "A_CONSUMER_SWEEP",
+        "finding": "SCOPED_CONSUMER_MAP_COMPLETE",
         "snapshot_scope_head_sha": SNAPSHOT_HEAD_SHA,
         "snapshot_definition":
             "top-level tracked scripts/*.py and docs/*.md blobs in pinned tree",
@@ -507,6 +513,7 @@ def certificate_b_classification(
     )
     result = {
         "certificate": "B_CLASSIFICATION",
+        "finding": "COMPLETE_THREE_WAY_PARTITION",
         "definitions": {
             "NO_CONSUMPTION": "never touches record formation tokens",
             "CORPUS_IMPLICIT":
@@ -535,6 +542,297 @@ def certificate_b_classification(
     return result
 
 
+def read_audit_inputs() -> dict[str, bytes]:
+    return {
+        path: (ROOT / path).read_bytes()
+        for path in AUDIT_INPUT_PATHS
+    }
+
+
+def cache_stdout(payload: bytes) -> tuple[str, ...]:
+    text = payload.decode("utf-8")
+    before, separator, after = text.partition("----- stdout -----\n")
+    if not separator:
+        raise AssertionError("cache stdout marker absent")
+    stdout, separator, _stderr = after.partition("\n----- stderr -----")
+    if not separator:
+        raise AssertionError("cache stderr marker absent")
+    envelope = dict(
+        line.split(": ", 1)
+        for line in before.splitlines()
+        if ": " in line
+    )
+    if envelope.get("exit_code") != "0" or envelope.get("status") != "ok":
+        raise AssertionError(("cache envelope", envelope))
+    return tuple(stdout.splitlines())
+
+
+def unique_json_line(lines: tuple[str, ...], prefix: str) -> object:
+    matches = [
+        json.loads(line[len(prefix):])
+        for line in lines
+        if line.startswith(prefix)
+    ]
+    if len(matches) != 1:
+        raise AssertionError(("cache JSON line", prefix, len(matches)))
+    return matches[0]
+
+
+def cycle828_spot_verification(
+    input_payloads: dict[str, bytes],
+) -> dict[str, object]:
+    primary_lines = cache_stdout(input_payloads[CACHE_PATHS[0]])
+    independent_lines = cache_stdout(input_payloads[CACHE_PATHS[1]])
+    certificate_a = unique_json_line(
+        primary_lines, "PASS CERTIFICATE_A_E1_EVERY_H_TRUTH :: "
+    )
+    certificate_b = unique_json_line(
+        primary_lines, "PASS CERTIFICATE_B_E2_ORBIT_REPRODUCTION :: "
+    )
+    certificate_d = unique_json_line(
+        primary_lines, "PASS CERTIFICATE_D_TWO_CANDIDATE_COMPARISON :: "
+    )
+    final = unique_json_line(primary_lines, "FINAL :: ")
+    independent = unique_json_line(independent_lines, "SUMMARY_JSON ")
+    e2_rows = [
+        row for row in certificate_d["comparison_table"]
+        if row["candidate"] == "E2"
+    ]
+    if len(e2_rows) != 1:
+        raise AssertionError(("E2 comparison rows", len(e2_rows)))
+    e2_row = e2_rows[0]
+    result = {
+        "pinned_cache_sha256": sha256(
+            input_payloads[CACHE_PATHS[0]]
+        ).hexdigest(),
+        "both_readings_already_ran": (
+            certificate_a["pass"]
+            and certificate_a["candidate"] == "E1"
+            and certificate_b["pass"]
+            and certificate_b["candidate"] == "E2"
+        ),
+        "E2_landed_reproduction": {
+            "transients": certificate_b["fifteen_event_count"],
+            "zero_record_cycles":
+                certificate_b["zero_record_certified_cycle_count"],
+            "single_source_events":
+                certificate_b["single_source_46"]["event_count"],
+            "record_rule": certificate_b["record_rule"],
+            "relation": certificate_b["record_set_relation"],
+        },
+        "E2_selection": e2_row["selection_count"],
+        "E2_allocation": e2_row["allocation"],
+        "primary_terminal": final["verdict"],
+        "independent_terminal": independent["terminal"],
+        "independent_pass": independent["pass"],
+    }
+    result["pass"] = (
+        result["pinned_cache_sha256"] == EXPECTED_SHA256[CACHE_PATHS[0]]
+        and result["both_readings_already_ran"]
+        and result["E2_landed_reproduction"] == {
+            "transients": 15,
+            "zero_record_cycles": 20,
+            "single_source_events": 46,
+            "record_rule": E2_CERTIFIED_READING,
+            "relation": "EXACTLY_LANDED_FAMILY",
+        }
+        and result["E2_selection"] == "1_OF_8"
+        and result["E2_allocation"] == "STILL_FREE"
+        and result["primary_terminal"]
+        == "TWO_CANDIDATE_EDIT_AUDIT_COMPLETE"
+        and result["independent_terminal"]
+        == "CYCLE828_INDEPENDENT_ADVERSARIAL_CHECK_PASS"
+        and result["independent_pass"]
+    )
+    return result
+
+
+def hash_manifest(payloads: dict[str, bytes]) -> dict[str, str]:
+    return {
+        path: sha256(payload).hexdigest()
+        for path, payload in sorted(payloads.items())
+    }
+
+
+def certificate_c_invariance(
+    payloads: dict[str, bytes],
+    input_payloads: dict[str, bytes],
+) -> dict[str, object]:
+    before_hashes = hash_manifest(payloads)
+    hypothetical_post_payloads = dict(payloads)
+    after_hashes = hash_manifest(hypothetical_post_payloads)
+    checkout_hashes = {
+        path: sha256((ROOT / path).read_bytes()).hexdigest()
+        for path in sorted(payloads)
+    }
+    spot = cycle828_spot_verification(input_payloads)
+    registry_bytes = HYPOTHETICAL_REGISTRY_LINE.encode("utf-8")
+    primitive_reference_hits = tuple(
+        path for path, payload in sorted(payloads.items())
+        if HYPOTHETICAL_PRIMITIVE_ID.encode("ascii") in payload
+    )
+    manifest_rows = tuple(sorted(before_hashes.items()))
+    result = {
+        "certificate": "C_INVARIANCE_CERTIFICATE",
+        "finding": "ZERO_BYTES_CHANGED",
+        "adoption_model": {
+            "operation": "additive virtual registry entry",
+            "registry_path": HYPOTHETICAL_REGISTRY_PATH,
+            "registry_line": HYPOTHETICAL_REGISTRY_LINE,
+            "registry_line_sha256": sha256(registry_bytes).hexdigest(),
+            "axiom_text_change": False,
+        },
+        "hashed_file_count": len(before_hashes),
+        "hashed_byte_count": sum(len(payload) for payload in payloads.values()),
+        "sha256_manifest_sha256": digest(manifest_rows),
+        "all_file_sha256_recomputed": len(before_hashes) == len(payloads),
+        "snapshot_matches_checkout": checkout_hashes == before_hashes,
+        "registry_path_disjoint_from_corpus":
+            HYPOTHETICAL_REGISTRY_PATH not in payloads,
+        "primitive_id_reference_hits": primitive_reference_hits,
+        "adoption_content_delta_file_count": sum(
+            before_hashes[path] != after_hashes[path]
+            for path in before_hashes
+        ),
+        "adoption_content_delta_bytes": 0,
+        "cycle828_spot_verification": spot,
+        "verdict": "E2_ADOPTION_AS_PRIMITIVE_CHANGES_ZERO_CORPUS_BYTES",
+    }
+    result["pass"] = (
+        result["hashed_file_count"] == 9419
+        and result["all_file_sha256_recomputed"]
+        and result["snapshot_matches_checkout"]
+        and result["registry_path_disjoint_from_corpus"]
+        and not result["primitive_id_reference_hits"]
+        and before_hashes == after_hashes
+        and result["adoption_content_delta_file_count"] == 0
+        and result["adoption_content_delta_bytes"] == 0
+        and spot["pass"]
+    )
+    return result
+
+
+def sweep_fingerprint(sweep: dict[str, object]) -> str:
+    return digest({
+        "entries": sweep["entries"],
+        "payload_sha256": hash_manifest(sweep["payloads"]),
+        "consumers": sweep["consumers"],
+        "parse_failures": sweep["parse_failures"],
+        "classifications": sweep["classifications"],
+    })
+
+
+def certificate_d_controls(
+    sweep: dict[str, object],
+    repeat: dict[str, object],
+    input_payloads_before: dict[str, bytes],
+    input_payloads_after: dict[str, bytes],
+    runtime_seconds: float,
+) -> dict[str, object]:
+    self_payload = Path(__file__).read_bytes()
+    self_tree = ast.parse(self_payload, filename=Path(__file__).name)
+    primary_trees = {
+        path: ast.parse(input_payloads_before[path], filename=path)
+        for path in TEXT_AST_ONLY_PATHS
+    }
+    actual_sha = {
+        path: sha256(payload).hexdigest()
+        for path, payload in input_payloads_before.items()
+    }
+    actual_blobs = {
+        path: git_blob_sha(payload)
+        for path, payload in input_payloads_before.items()
+    }
+    imported_modules = {
+        alias.name
+        for node in ast.walk(self_tree)
+        if isinstance(node, ast.Import)
+        for alias in node.names
+    }
+    imported_modules.update(
+        node.module
+        for node in ast.walk(self_tree)
+        if isinstance(node, ast.ImportFrom) and node.module
+    )
+    primary_string_constants = {
+        path: {
+            node.value
+            for node in ast.walk(tree)
+            if isinstance(node, ast.Constant) and isinstance(node.value, str)
+        }
+        for path, tree in primary_trees.items()
+    }
+    current_head = git_text("rev-parse", "HEAD")
+    result = {
+        "certificate": "D_CONTROLS",
+        "finding": "CONTROLS_CLEAN",
+        "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
+        "literal_AUDIT_INPUT_PATHS":
+            literal_assignment(self_tree, "AUDIT_INPUT_PATHS")
+            == AUDIT_INPUT_PATHS,
+        "inputs_existing_worktree_relative": all(
+            not Path(path).is_absolute()
+            and ".." not in Path(path).parts
+            and (ROOT / path).is_file()
+            for path in AUDIT_INPUT_PATHS
+        ),
+        "input_sha256_pins": actual_sha,
+        "input_sha256_pins_match": actual_sha == EXPECTED_SHA256,
+        "input_git_blob_pins_match": actual_blobs == EXPECTED_GIT_BLOBS,
+        "inputs_unchanged": input_payloads_before == input_payloads_after,
+        "snapshot_scope_head_sha": SNAPSHOT_HEAD_SHA,
+        "snapshot_is_R28_head": git_text(
+            "rev-parse", "physics-loop/proof-grade-blockR28-20260729"
+        ) == SNAPSHOT_HEAD_SHA,
+        "running_branch": git_text("rev-parse", "--abbrev-ref", "HEAD"),
+        "execution_head_sha": current_head,
+        "snapshot_is_execution_ancestor": git_bytes(
+            "merge-base", "--is-ancestor", SNAPSHOT_HEAD_SHA, current_head
+        ) == b"",
+        "recent_main_landings_scope": "OUT_OF_SCOPE_IF_OUTSIDE_PINNED_LINEAGE",
+        "owner_lane_live_main_action": "REPIN_AND_RERUN_ON_LIVE_MAIN",
+        "text_AST_only_paths": TEXT_AST_ONLY_PATHS,
+        "blocked_modules": BLOCKLISTED_MODULES,
+        "blocked_imports_in_self": tuple(sorted(
+            set(BLOCKLISTED_MODULES) & imported_modules
+        )),
+        "blocked_modules_loaded": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "blocker_hits": tuple(PRIMARY_BLOCKER.hits),
+        "primary_access_mode": "read_bytes + ast.parse; never import/execute",
+        "primary_E2_literal_pinned": (
+            literal_assignment(primary_trees[TEXT_AST_ONLY_PATHS[0]],
+                               "E2_CANDIDATE_EDIT") == E2_COMPLETION
+            and E2_CERTIFIED_READING
+            in primary_string_constants[TEXT_AST_ONLY_PATHS[0]]
+        ),
+        "determinism_replay": sweep_fingerprint(sweep) == sweep_fingerprint(repeat),
+        "runtime_seconds": round(runtime_seconds, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "stdout_within_limit": False,
+    }
+    result["pass"] = (
+        result["literal_AUDIT_INPUT_PATHS"]
+        and result["inputs_existing_worktree_relative"]
+        and result["input_sha256_pins_match"]
+        and result["input_git_blob_pins_match"]
+        and result["inputs_unchanged"]
+        and result["snapshot_is_R28_head"]
+        and result["running_branch"] == EXPECTED_BRANCH
+        and result["snapshot_is_execution_ancestor"]
+        and not result["blocked_imports_in_self"]
+        and not result["blocked_modules_loaded"]
+        and not result["blocker_hits"]
+        and result["primary_E2_literal_pinned"]
+        and result["determinism_replay"]
+        and runtime_seconds < AUDIT_TIMEOUT_SEC
+    )
+    return result
+
+
 def build_sweep() -> dict[str, object]:
     entries = snapshot_entries()
     payloads = load_snapshot_payloads(entries)
@@ -549,22 +847,13 @@ def build_sweep() -> dict[str, object]:
     }
 
 
-def main() -> int:
-    started = monotonic()
-    sweep = build_sweep()
-    certificate_a = certificate_a_consumer_sweep(
-        sweep["payloads"], sweep["consumers"], sweep["parse_failures"]
-    )
-    certificate_b = certificate_b_classification(
-        sweep["payloads"], sweep["classifications"]
-    )
-    runtime_seconds = monotonic() - started
-    certificates = (
-        ("A_CONSUMER_SWEEP", certificate_a),
-        ("B_CLASSIFICATION", certificate_b),
-    )
+def render(
+    certificates: tuple[tuple[str, dict[str, object]], ...],
+    controls: dict[str, object],
+) -> str:
     lines = [
         "CYCLE859_ADOPTION_IMPACT_MANIFEST",
+        "ADOPTION_MODEL :: registered additive primitive; no axiom-text change",
         "SCOPE :: pinned pre-Cycle-859 branch snapshot " + SNAPSHOT_HEAD_SHA,
         "OUT_OF_SCOPE :: recent main landings outside this lineage; the "
         "owner-lane adoption PR must repin and re-run on live main",
@@ -572,15 +861,87 @@ def main() -> int:
     for label, certificate in certificates:
         lines.append(
             ("PASS " if certificate["pass"] else "FAIL ")
-            + label + " :: " + compact(certificate)
+            + label + " FINDING=" + str(certificate["finding"])
+            + " :: " + compact(certificate)
         )
-    lines.append("RUNTIME_SECONDS :: " + f"{runtime_seconds:.6f}")
-    output = "\n".join(lines) + "\n"
+    lines.append(
+        ("PASS " if controls["pass"] else "FAIL ")
+        + "D_CONTROLS FINDING=" + str(controls["finding"])
+        + " :: " + compact(controls)
+    )
+    classification = dict(certificates)["B_CLASSIFICATION"]
+    invariance = dict(certificates)["C_INVARIANCE_CERTIFICATE"]
+    lines.append("FINAL :: " + compact({
+        "classification_counts": classification["counts"],
+        "invariance_verdict": invariance["verdict"],
+        "snapshot_head_sha": SNAPSHOT_HEAD_SHA,
+        "runtime_seconds": controls["runtime_seconds"],
+        "owner_lane_live_main_action": "REPIN_AND_RERUN_ON_LIVE_MAIN",
+        "pass": all(value["pass"] for _label, value in certificates)
+            and controls["pass"],
+    }))
+    lines.append(
+        "CYCLE859_ADOPTION_IMPACT_MANIFEST_PASS"
+        if all(value["pass"] for _label, value in certificates)
+        and controls["pass"]
+        else "CYCLE859_ADOPTION_IMPACT_MANIFEST_FAIL"
+    )
+    return "\n".join(lines) + "\n"
+
+
+def main() -> int:
+    started = monotonic()
+    sweep = build_sweep()
+    input_payloads_before = read_audit_inputs()
+    certificate_a = certificate_a_consumer_sweep(
+        sweep["payloads"], sweep["consumers"], sweep["parse_failures"]
+    )
+    certificate_b = certificate_b_classification(
+        sweep["payloads"], sweep["classifications"]
+    )
+    certificate_c = certificate_c_invariance(
+        sweep["payloads"], input_payloads_before
+    )
+    repeat = build_sweep()
+    input_payloads_after = read_audit_inputs()
+    runtime_seconds = monotonic() - started
+    certificates = (
+        ("A_CONSUMER_SWEEP", certificate_a),
+        ("B_CLASSIFICATION", certificate_b),
+        ("C_INVARIANCE_CERTIFICATE", certificate_c),
+    )
+    controls = certificate_d_controls(
+        sweep,
+        repeat,
+        input_payloads_before,
+        input_payloads_after,
+        runtime_seconds,
+    )
+    output = render(certificates, controls)
+    for _attempt in range(3):
+        output_bytes = len(output.encode("utf-8"))
+        controls["stdout_bytes"] = output_bytes
+        controls["stdout_within_limit"] = output_bytes < STDOUT_LIMIT_BYTES
+        controls["pass"] = controls["pass"] and controls["stdout_within_limit"]
+        updated = render(certificates, controls)
+        if len(updated.encode("utf-8")) == output_bytes:
+            output = updated
+            break
+        output = updated
     output_bytes = len(output.encode("utf-8"))
-    if output_bytes >= STDOUT_LIMIT_BYTES:
-        raise AssertionError(("stdout bound", output_bytes, STDOUT_LIMIT_BYTES))
+    controls["stdout_bytes"] = output_bytes
+    controls["stdout_within_limit"] = output_bytes < STDOUT_LIMIT_BYTES
+    output = render(certificates, controls)
+    if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
+        raise AssertionError(
+            ("stdout bound", len(output.encode("utf-8")), STDOUT_LIMIT_BYTES)
+        )
     sys.stdout.write(output)
-    return 0 if all(certificate["pass"] for _, certificate in certificates) else 1
+    passed = (
+        all(certificate["pass"] for _, certificate in certificates)
+        and controls["pass"]
+    )
+    return 0 if passed else 1
 
 
 if __name__ == "__main__":

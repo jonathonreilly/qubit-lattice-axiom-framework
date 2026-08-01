@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 859 v2: corrected scoped adoption-impact manifest for Record E2.
+"""Cycle 859 v3: snapshot-pinned adoption-impact manifest for Record E2.
 
 The audited corpus is the top-level tracked ``scripts/*.py`` and ``docs/*.md``
 tree at the pinned pre-Cycle-859 commit.  Source runners are inspected only as
@@ -28,15 +28,21 @@ ROOT = Path(__file__).resolve().parents[1]
 AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 150_000
 BASE_R28_SHA = "e3a77fa19d5a4840c19534e70df727751be3e0bb"
-SNAPSHOT_HEAD_SHA = subprocess.run(
-    ("git", "rev-parse", "HEAD"),
-    cwd=ROOT,
-    check=True,
-    capture_output=True,
-    text=True,
-).stdout.strip()
+SNAPSHOT_COMMIT_SHA = "d6a514430ac9921882017ba6424d289e2dc6b288"
 EXPECTED_BRANCH = "physics-loop/proof-grade-blockR29-20260729"
 MANIFEST_PATH = "scripts/frontier_cycle859_adoption_impact_manifest_2026_07_28.py"
+CACHE_CONTAMINATION_NOTE = (
+    "Cycle 859 v2 swept the working-tree snapshot; after its clean run, "
+    "the block note, runner caches, and receipt quoting the E2 wording "
+    "contaminated the rebuild, and failing caches shipped. Cycle 859 v3 "
+    "repairs that incident by sweeping only the Git tree pinned at "
+    f"{SNAPSHOT_COMMIT_SHA} via git ls-tree and git show."
+)
+EXPECTED_CLASSIFICATION_COUNTS = {
+    "NO_CONSUMPTION": 9320,
+    "CORPUS_IMPLICIT": 69,
+    "EXPLICIT_READING": 31,
+}
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle828_axiom_edit_audit_2026_07_28.py",
     "scripts/frontier_cycle828_edit_audit_independent_check_2026_07_28.py",
@@ -247,7 +253,9 @@ def literal_assignment(tree: ast.Module, name: str) -> object | None:
 
 
 def snapshot_entries() -> tuple[tuple[str, str], ...]:
-    raw = git_bytes("ls-tree", "-rz", "--full-tree", SNAPSHOT_HEAD_SHA)
+    raw = git_bytes(
+        "ls-tree", "-r", "-z", "--full-tree", SNAPSHOT_COMMIT_SHA
+    )
     rows = []
     for record in raw.split(b"\0"):
         if not record:
@@ -265,25 +273,12 @@ def snapshot_entries() -> tuple[tuple[str, str], ...]:
 def load_snapshot_payloads(
     entries: tuple[tuple[str, str], ...],
 ) -> dict[str, bytes]:
-    request = "".join(f"{object_id}\n" for _path, object_id in entries)
-    raw = git_bytes("cat-file", "--batch", input_bytes=request.encode("ascii"))
-    offset = 0
     payloads: dict[str, bytes] = {}
     for path, expected_object_id in entries:
-        end = raw.index(b"\n", offset)
-        header = raw[offset:end].decode("ascii")
-        object_id, object_type, raw_size = header.split()
-        if object_id != expected_object_id or object_type != "blob":
-            raise AssertionError(("cat-file header", path, header))
-        size = int(raw_size)
-        start = end + 1
-        finish = start + size
-        payloads[path] = raw[start:finish]
-        if raw[finish:finish + 1] != b"\n":
-            raise AssertionError(("cat-file framing", path))
-        offset = finish + 1
-    if offset != len(raw):
-        raise AssertionError(("cat-file trailing bytes", len(raw) - offset))
+        payload = git_bytes("show", f"{SNAPSHOT_COMMIT_SHA}:{path}")
+        if git_blob_sha(payload) != expected_object_id:
+            raise AssertionError(("git show blob mismatch", path))
+        payloads[path] = payload
     return payloads
 
 
@@ -999,10 +994,10 @@ def certificate_a_consumer_sweep(
     result = {
         "certificate": "A_CONSUMER_SWEEP",
         "finding": "V2_UNION_CONSUMER_MAP_COMPLETE",
-        "snapshot_scope_head_sha": SNAPSHOT_HEAD_SHA,
+        "snapshot_commit_sha": SNAPSHOT_COMMIT_SHA,
         "snapshot_definition":
             "top-level tracked scripts/*.py and docs/*.md blobs at the "
-            "execution HEAD captured once at process start",
+            "literal pinned Cycle 859 v2 snapshot commit",
         "out_of_scope":
             "recent main landings outside this pinned lineage are out of scope",
         "scanned_file_count": len(payloads),
@@ -1130,6 +1125,10 @@ def certificate_b_classification(
         "counts": {
             label: len(paths) for label, paths in classifications.items()
         },
+        "expected_counts": EXPECTED_CLASSIFICATION_COUNTS,
+        "counts_exact": {
+            label: len(paths) for label, paths in classifications.items()
+        } == EXPECTED_CLASSIFICATION_COUNTS,
         "classification_counts_derived_not_expected_constants": True,
         "v1_to_union_movement_count": len(movements),
         "v1_to_union_movements_sha256": digest(movements),
@@ -1165,6 +1164,7 @@ def certificate_b_classification(
         result["decode_roundtrip_exact"]
         and result["partition_disjoint"]
         and result["partition_complete"]
+        and result["counts_exact"]
         and result["explicit_reading_refire_list_unchanged"]
     )
     return result
@@ -1303,10 +1303,7 @@ def certificate_c_invariance(
     before_hashes = hash_manifest(payloads)
     hypothetical_post_payloads = dict(payloads)
     after_hashes = hash_manifest(hypothetical_post_payloads)
-    checkout_hashes = {
-        path: sha256((ROOT / path).read_bytes()).hexdigest()
-        for path in sorted(payloads)
-    }
+    entries = snapshot_entries()
     spot = cycle828_spot_verification(input_payloads)
     registry_bytes = HYPOTHETICAL_REGISTRY_LINE.encode("utf-8")
     primitive_reference_hits = tuple(
@@ -1328,7 +1325,10 @@ def certificate_c_invariance(
         "hashed_byte_count": sum(len(payload) for payload in payloads.values()),
         "sha256_manifest_sha256": digest(manifest_rows),
         "all_file_sha256_recomputed": len(before_hashes) == len(payloads),
-        "snapshot_matches_checkout": checkout_hashes == before_hashes,
+        "snapshot_git_blob_ids_recomputed_exact": all(
+            git_blob_sha(payloads[path]) == object_id
+            for path, object_id in entries
+        ),
         "registry_path_disjoint_from_corpus":
             HYPOTHETICAL_REGISTRY_PATH not in payloads,
         "primitive_id_reference_hits": primitive_reference_hits,
@@ -1349,7 +1349,7 @@ def certificate_c_invariance(
     result["pass"] = (
         result["hashed_file_count"] == len(payloads)
         and result["all_file_sha256_recomputed"]
-        and result["snapshot_matches_checkout"]
+        and result["snapshot_git_blob_ids_recomputed_exact"]
         and result["registry_path_disjoint_from_corpus"]
         and not result["non_manifest_primitive_id_reference_hits"]
         and before_hashes == after_hashes
@@ -1420,7 +1420,7 @@ def certificate_d_controls(
     current_head = git_text("rev-parse", "HEAD")
     scoped_tree_delta_from_R28 = tuple(
         line for line in git_text(
-            "diff", "--name-status", BASE_R28_SHA, SNAPSHOT_HEAD_SHA,
+            "diff", "--name-status", BASE_R28_SHA, SNAPSHOT_COMMIT_SHA,
             "--", "scripts", "docs",
         ).splitlines()
         if line
@@ -1442,15 +1442,23 @@ def certificate_d_controls(
         "input_sha256_pins_match": actual_sha == EXPECTED_SHA256,
         "input_git_blob_pins_match": actual_blobs == EXPECTED_GIT_BLOBS,
         "inputs_unchanged": input_payloads_before == input_payloads_after,
-        "snapshot_scope_head_sha": SNAPSHOT_HEAD_SHA,
+        "snapshot_commit_sha": SNAPSHOT_COMMIT_SHA,
+        "literal_snapshot_commit_sha":
+            literal_assignment(self_tree, "SNAPSHOT_COMMIT_SHA")
+            == SNAPSHOT_COMMIT_SHA,
         "base_R28_ref_matches_pin": git_text(
             "rev-parse", "physics-loop/proof-grade-blockR28-20260729"
         ) == BASE_R28_SHA,
         "running_branch": git_text("rev-parse", "--abbrev-ref", "HEAD"),
         "execution_head_sha": current_head,
-        "snapshot_is_execution_head": SNAPSHOT_HEAD_SHA == current_head,
+        "snapshot_is_execution_head": SNAPSHOT_COMMIT_SHA == current_head,
+        "snapshot_is_execution_head_required": False,
         "base_R28_is_snapshot_ancestor": git_bytes(
-            "merge-base", "--is-ancestor", BASE_R28_SHA, SNAPSHOT_HEAD_SHA
+            "merge-base", "--is-ancestor", BASE_R28_SHA,
+            SNAPSHOT_COMMIT_SHA,
+        ) == b"",
+        "snapshot_is_execution_head_ancestor": git_bytes(
+            "merge-base", "--is-ancestor", SNAPSHOT_COMMIT_SHA, current_head
         ) == b"",
         "scoped_tree_delta_from_R28": scoped_tree_delta_from_R28,
         "only_manifest_added_since_R28":
@@ -1486,10 +1494,11 @@ def certificate_d_controls(
         and result["input_sha256_pins_match"]
         and result["input_git_blob_pins_match"]
         and result["inputs_unchanged"]
+        and result["literal_snapshot_commit_sha"]
         and result["base_R28_ref_matches_pin"]
         and result["running_branch"] == EXPECTED_BRANCH
-        and result["snapshot_is_execution_head"]
         and result["base_R28_is_snapshot_ancestor"]
+        and result["snapshot_is_execution_head_ancestor"]
         and result["only_manifest_added_since_R28"]
         and not result["blocked_imports_in_self"]
         and not result["blocked_modules_loaded"]
@@ -1542,9 +1551,9 @@ def render(
     movements: tuple[dict[str, object], ...],
 ) -> str:
     lines = [
-        "CYCLE859_V2_ADOPTION_IMPACT_MANIFEST",
+        "CYCLE859_V3_ADOPTION_IMPACT_MANIFEST",
         "ADOPTION_MODEL :: registered additive primitive; no axiom-text change",
-        "SCOPE :: pinned execution-HEAD branch snapshot " + SNAPSHOT_HEAD_SHA,
+        "SCOPE :: pinned tracked Git tree " + SNAPSHOT_COMMIT_SHA,
         "OUT_OF_SCOPE :: recent main landings outside this lineage; the "
         "owner-lane adoption PR must repin and re-run on live main",
         "CONSUMER_DETECTION_UNION :: " + " + ".join(
@@ -1590,17 +1599,18 @@ def render(
         "refire_guarantee_stands":
             classification["refire_guarantee_stands"],
         "invariance_verdict": invariance["verdict"],
-        "snapshot_head_sha": SNAPSHOT_HEAD_SHA,
+        "snapshot_commit_sha": SNAPSHOT_COMMIT_SHA,
+        "cache_contamination_note": CACHE_CONTAMINATION_NOTE,
         "runtime_seconds": controls["runtime_seconds"],
         "owner_lane_live_main_action": "RERUN_ON_LIVE_MAIN_HEAD",
         "pass": all(value["pass"] for _label, value in certificates)
             and controls["pass"],
     }))
     lines.append(
-        "CYCLE859_V2_ADOPTION_IMPACT_MANIFEST_PASS"
+        "CYCLE859_V3_ADOPTION_IMPACT_MANIFEST_PASS"
         if all(value["pass"] for _label, value in certificates)
         and controls["pass"]
-        else "CYCLE859_V2_ADOPTION_IMPACT_MANIFEST_FAIL"
+        else "CYCLE859_V3_ADOPTION_IMPACT_MANIFEST_FAIL"
     )
     return "\n".join(lines) + "\n"
 

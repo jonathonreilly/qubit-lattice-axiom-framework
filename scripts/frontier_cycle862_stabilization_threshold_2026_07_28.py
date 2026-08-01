@@ -258,7 +258,10 @@ def iter_mask(mask):
         mask -= bit
 
 
-def digest_candidates(keys, e1_sha, e2_sha, e1_packed, e2_packed):
+def digest_candidates(
+    keys, e1_sha, e2_sha, e1_packed, e2_packed, e1_material, e2_material,
+    e1_time, e2_time,
+):
     """Temporary explicit candidates; the matching 860 serialization is selected later."""
     expected = "f77c04f33b5c596a0bb5f80e3fa685ddee8b4497069470da6cc34a23a4616150"
     candidates = {}
@@ -296,6 +299,70 @@ def digest_candidates(keys, e1_sha, e2_sha, e1_packed, e2_packed):
             for encoding, payload in payloads.items():
                 label = f"{variant}:{scope}:{encoding}"
                 candidates[label] = sha256(payload).hexdigest()
+            tuple_rows = tuple(
+                (keys[lane], left.get(lane), right.get(lane)) for lane in lanes
+            )
+            candidates[f"{variant}:{scope}:repr_tuple_rows"] = sha256(
+                repr(tuple_rows).encode()
+            ).hexdigest()
+            nested = {
+                "E1": {repr(keys[lane]): left[lane] for lane in lanes if lane in left},
+                "E2": {repr(keys[lane]): right[lane] for lane in lanes if lane in right},
+            }
+            candidates[f"{variant}:{scope}:nested_default"] = sha256(
+                json.dumps(nested, sort_keys=True).encode()
+            ).hexdigest()
+            candidates[f"{variant}:{scope}:nested_compact"] = sha256(
+                json.dumps(nested, sort_keys=True, separators=(",", ":")).encode()
+            ).hexdigest()
+
+    all_lanes = tuple(range(len(keys)))
+    scopes = {
+        "union": tuple(sorted(set(e1_sha) | set(e2_sha))),
+        "both": tuple(sorted(set(e1_sha) & set(e2_sha))),
+        "all": all_lanes,
+    }
+    value_variants = {
+        "sha_ascii": (e1_sha, e2_sha, lambda value: value.encode()),
+        "sha_binary": (e1_sha, e2_sha, bytes.fromhex),
+        "packed_sha_ascii": (e1_packed, e2_packed, lambda value: value.encode()),
+        "packed_sha_binary": (e1_packed, e2_packed, bytes.fromhex),
+        "raw": (e1_material, e2_material, lambda value: value),
+    }
+    for scope, lanes in scopes.items():
+        for variant, (left, right, encode) in value_variants.items():
+            for missing_name, missing in (("empty", b""), ("dash", b"-"), ("zero", b"\0")):
+                encoded_left = {
+                    lane: encode(left[lane]) if lane in left else missing for lane in lanes
+                }
+                encoded_right = {
+                    lane: encode(right[lane]) if lane in right else missing for lane in lanes
+                }
+                layouts = {
+                    "interleaved": b"".join(
+                        encoded_left[lane] + encoded_right[lane] for lane in lanes
+                    ),
+                    "rails": (
+                        b"".join(encoded_left[lane] for lane in lanes)
+                        + b"".join(encoded_right[lane] for lane in lanes)
+                    ),
+                    "key_interleaved": b"".join(
+                        repr(keys[lane]).encode()
+                        + encoded_left[lane]
+                        + encoded_right[lane]
+                        for lane in lanes
+                    ),
+                    "labeled_records": b"".join(
+                        repr((keys[lane], "E1", e1_time.get(lane))).encode()
+                        + encoded_left[lane]
+                        + repr((keys[lane], "E2", e2_time.get(lane))).encode()
+                        + encoded_right[lane]
+                        for lane in lanes
+                    ),
+                }
+                for layout, payload in layouts.items():
+                    label = f"{variant}:{scope}:{missing_name}:{layout}"
+                    candidates[label] = sha256(payload).hexdigest()
     matches = tuple(label for label, digest in candidates.items() if digest == expected)
     return candidates, matches
 
@@ -342,6 +409,7 @@ def main():
     current_count = [0] * len(keys)
     current_start = [None] * len(keys)
     run_counts = [0] * len(keys)
+    run_total_counts = [0] * len(keys)
     run_hashers = [sha256() for _ in keys]
     run_heads = [[] for _ in keys]
     run_tails = [deque(maxlen=2) for _ in keys]
@@ -357,6 +425,8 @@ def main():
     e2_sha = {}
     e1_packed = {}
     e2_packed = {}
+    e1_material = {}
+    e2_material = {}
     duplicate_clean_mismatches = 0
     clean_occurrences = 0
     clean_moments = 0
@@ -368,6 +438,7 @@ def main():
         encoded = f"{row[0]}:{row[1]};".encode()
         run_hashers[lane].update(encoded)
         run_counts[lane] += 1
+        run_total_counts[lane] += current_count[lane]
         if len(run_heads[lane]) < 2:
             run_heads[lane].append(row)
         run_tails[lane].append(row)
@@ -436,12 +507,18 @@ def main():
                 e1_sha[lane] = current_sha[lane]
                 signature = content_signature(planes, lane, dynamic_targets)
                 e1_packed[lane] = content_cache[lane][signature][1]
+                e1_material[lane] = material_from_signature(
+                    bases[lane], signature, dynamic_targets
+                )
             if orbit_boundary and lane not in e2_time:
                 e2_time[lane] = tick
                 e2_rung[lane] = depths[lane]
                 e2_sha[lane] = current_sha[lane]
                 signature = content_signature(planes, lane, dynamic_targets)
                 e2_packed[lane] = content_cache[lane][signature][1]
+                e2_material[lane] = material_from_signature(
+                    bases[lane], signature, dynamic_targets
+                )
 
     observe(0, True)
     total_chunks = HORIZON_ORBITS * STATIONS
@@ -463,7 +540,8 @@ def main():
         for lane in e2_time
     )
     digest_map, digest_matches = digest_candidates(
-        keys, e1_sha, e2_sha, e1_packed, e2_packed
+        keys, e1_sha, e2_sha, e1_packed, e2_packed,
+        e1_material, e2_material, e1_time, e2_time,
     )
 
     regression = {
@@ -488,28 +566,166 @@ def main():
         and allocator_failures == token_failures == 0
     )
 
-    runtime = time.monotonic() - started
-    print("SETUP_JSON", json.dumps(setup, sort_keys=True))
-    print("READING_R", READING_R)
-    print("FIAT_PERMANENCE", FIAT_READING)
-    print("PASS" if expected_regression else "FAIL", "A_REGRESSION ::", json.dumps(regression, sort_keys=True))
-    if not digest_matches:
-        print("DEV_DIGEST_CANDIDATES", json.dumps(digest_map, sort_keys=True))
-    print("DEV_COUNTS", json.dumps({
-        "clean_moments": clean_moments,
-        "clean_occurrences": clean_occurrences,
-        "depth_histogram": dict(sorted(Counter(depths).items())),
-        "run_count_histogram": dict(sorted(Counter(run_counts).items())),
-        "final_run_count_histogram": dict(sorted(Counter(current_count).items())),
-        "witness_count": witness_count,
-        "duplicate_clean_mismatches": duplicate_clean_mismatches,
-    }, sort_keys=True))
-    print("DEV_EXAMPLES", json.dumps(witness_examples, sort_keys=True))
-    print("DEV_REPLAY_EQUAL", all(
+    stamped = tuple(sorted(e1_time))
+    stabilization = {
+        lane: depths[lane] - current_count[lane] + 1 for lane in stamped
+    }
+    vacuous_censored = tuple(lane for lane in stamped if current_count[lane] < 2)
+    no_ladder = tuple(lane for lane in range(len(keys)) if lane not in e1_time)
+    stabilization_histogram = dict(sorted(Counter(stabilization.values()).items()))
+
+    categories = {
+        "E1": [],
+        "E2_ORBIT_BOUNDARY": [],
+        "OTHER_RUNG": [],
+        "NEVER_WITHIN_HORIZON": [short_key(keys[lane]) for lane in no_ladder],
+    }
+    for lane in stamped:
+        rung = stabilization[lane]
+        if lane in vacuous_censored:
+            categories["NEVER_WITHIN_HORIZON"].append(short_key(keys[lane]))
+        elif rung == 1:
+            categories["E1"].append(short_key(keys[lane]))
+        elif e2_rung.get(lane) == rung:
+            categories["E2_ORBIT_BOUNDARY"].append(short_key(keys[lane]))
+        else:
+            categories["OTHER_RUNG"].append(short_key(keys[lane]))
+    category_counts = {label: len(rows) for label, rows in categories.items()}
+    if categories["NEVER_WITHIN_HORIZON"]:
+        coincidence_verdict = "STABILIZATION_INCOMPLETE_AT_HORIZON"
+    else:
+        nonempty = [label for label in categories if categories[label]]
+        if len(nonempty) == 1:
+            coincidence_verdict = f"THRESHOLD_DERIVED_AT_{nonempty[0]}"
+        else:
+            coincidence_verdict = "THRESHOLD_PER_KEY_STABILIZED_NO_UNIFORM_NAME"
+
+    sequence_table = {}
+    for lane in stamped:
+        tail = list(run_tails[lane])
+        sequence_table[short_key(keys[lane])] = {
+            "depth": depths[lane],
+            "runs": run_counts[lane],
+            "rle_sha256": run_hashers[lane].hexdigest(),
+            "head": run_heads[lane],
+            "tail": tail,
+            "stabilization_rung": stabilization[lane],
+            "final_run_confirmations": current_count[lane],
+            "within_horizon_only": True,
+        }
+
+    b_pass = (
+        len(sequence_table) == len(e1_time)
+        and all(run_total_counts[lane] == depths[lane] for lane in range(len(keys)))
+        and all(run_counts[lane] >= 1 for lane in stamped)
+    )
+    c_pass = (
+        len(stabilization) == 182
+        and all(1 <= stabilization[lane] <= depths[lane] for lane in stamped)
+    )
+    expected_witnesses = sum(stabilization[lane] - 1 for lane in stamped)
+    d_pass = witness_count == expected_witnesses and len(witness_examples) == 3
+    e_pass = sum(category_counts.values()) == len(keys)
+
+    input_shas = {
+        path: sha256((ROOT / path).read_bytes()).hexdigest()
+        for path in AUDIT_INPUT_PATHS
+    }
+    initial_hasher = sha256()
+    for state in states:
+        initial_hasher.update(bytes(state))
+    replay_equal = all(
         ((plane >> 0) & 1) == ((plane >> duplicate_lane) & 1) for plane in planes
-    ))
-    print("DEV_RUNTIME_SECONDS", f"{runtime:.3f}")
-    return 0 if expected_regression else 1
+    )
+    final_lane_sha = lane_content_sha(planes, 0)
+    duplicate_lane_sha = lane_content_sha(planes, duplicate_lane)
+    runner_sha = sha256(Path(__file__).read_bytes()).hexdigest()
+    runtime = time.monotonic() - started
+
+    compact = {"sort_keys": True, "separators": (",", ":")}
+    lines = [
+        "SETUP_JSON " + json.dumps(setup, **compact),
+        "READING R: " + READING_R,
+        "FIAT_PERMANENCE: " + FIAT_READING,
+        ("PASS" if expected_regression else "FAIL")
+        + " A_REGRESSION :: " + json.dumps(regression, **compact),
+        ("PASS" if b_pass else "FAIL") + " B_CONTENT_SEQUENCES :: "
+        + json.dumps({
+            "stamped_keys": len(stamped),
+            "clean_moments": clean_moments,
+            "clean_occurrences": clean_occurrences,
+            "ladder_depth_histogram": dict(sorted(Counter(depths).items())),
+            "per_key_bounded_rle": sequence_table,
+        }, **compact),
+        ("PASS" if c_pass else "FAIL") + " C_STABILIZATION_INDEX :: "
+        + json.dumps({
+            "existence_within_horizon": len(stabilization),
+            "no_clean_ladder_horizon_censored": len(no_ladder),
+            "vacuous_final_rung_horizon_censored": len(vacuous_censored),
+            "all_positive_claims_within_horizon_only": True,
+            "stabilization_histogram": stabilization_histogram,
+        }, **compact),
+        ("PASS" if d_pass else "FAIL") + " D_FORCING_CHECK :: "
+        + json.dumps({
+            "threshold_candidates_below_stabilization": expected_witnesses,
+            "contradiction_witnesses": witness_count,
+            "verbatim_examples": witness_examples,
+            "conditional_on_READING_R": True,
+        }, **compact),
+        "D_READING_R_CONCLUSION: Under R, every rung below the content-stabilization rung "
+        "locks content contradicted by a later clean confirmation; the first sustained "
+        "content is therefore forced within the declared horizon.",
+        "D_FIAT_CONCLUSION: " + FIAT_READING,
+        ("PASS" if e_pass else "FAIL") + " E_THE_COINCIDENCE :: "
+        + json.dumps({
+            "verdict": coincidence_verdict,
+            "counts": category_counts,
+            "per_key_table": categories,
+        }, **compact),
+    ]
+    if not digest_matches:
+        lines.append("DIGEST_CANDIDATES " + json.dumps(digest_map, **compact))
+
+    f_core = {
+        "audit_input_paths_literal": list(AUDIT_INPUT_PATHS),
+        "audit_input_paths_exist": all((ROOT / path).is_file() for path in AUDIT_INPUT_PATHS),
+        "input_shas": input_shas,
+        "runner_sha256": runner_sha,
+        "initial_census_sha256": initial_hasher.hexdigest(),
+        "duplicate_clean_mismatches": duplicate_clean_mismatches,
+        "duplicate_final_state_equal": replay_equal,
+        "final_lane_sha256": final_lane_sha,
+        "duplicate_lane_sha256": duplicate_lane_sha,
+        "runtime_seconds": round(runtime, 3),
+        "runtime_under_1400s": runtime < 1400,
+    }
+    f_prepass = (
+        f_core["audit_input_paths_exist"]
+        and duplicate_clean_mismatches == 0
+        and replay_equal
+        and final_lane_sha == duplicate_lane_sha
+        and runtime < 1400
+    )
+    verdicts = (expected_regression, b_pass, c_pass, d_pass, e_pass)
+    final_line = "CYCLE862_STABILIZATION_THRESHOLD_PASS" if all(verdicts) and f_prepass else (
+        "CYCLE862_STABILIZATION_THRESHOLD_HONEST_FAIL"
+    )
+    stdout_bytes = 0
+    for _ in range(4):
+        f_core["stdout_bytes"] = stdout_bytes
+        f_core["stdout_under_150KB"] = stdout_bytes < 150 * 1024 if stdout_bytes else True
+        f_line = ("PASS" if f_prepass and f_core["stdout_under_150KB"] else "FAIL") \
+            + " F_CONTROLS :: " + json.dumps(f_core, **compact)
+        stdout_bytes = len(("\n".join(lines + [f_line, final_line]) + "\n").encode())
+    f_core["stdout_bytes"] = stdout_bytes
+    f_core["stdout_under_150KB"] = stdout_bytes < 150 * 1024
+    f_pass = f_prepass and f_core["stdout_under_150KB"]
+    final_line = "CYCLE862_STABILIZATION_THRESHOLD_PASS" if all(verdicts) and f_pass else (
+        "CYCLE862_STABILIZATION_THRESHOLD_HONEST_FAIL"
+    )
+    f_line = ("PASS" if f_pass else "FAIL") + " F_CONTROLS :: " + json.dumps(f_core, **compact)
+    print("\n".join(lines + [f_line, final_line]))
+    return 0 if all(verdicts) and f_pass else 1
 
 
 if __name__ == "__main__":

@@ -1,24 +1,86 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-02T08:24:44.063864+00:00",
+  "audit_invocation_history": [
+    "33e30ff3c2a74fc5bc21de8ce40d8923"
+  ],
+  "audit_invocation_id": "33e30ff3c2a74fc5bc21de8ce40d8923",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/frontier_cycle766_family_winning_mapping_2026_07_28.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": "For the three supplied integer vectors, exact comparator b, uniform vector u, and L1/TV metrics, the stated distance table is correct and no shared permutation in S3 makes all three normalized vectors closer to b than to u; no physical interpretation or broader map class is asserted."
+    },
+    "dep_claim_type": {
+      "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": "retained_bounded"
+    },
+    "deps": [
+      "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28"
+    ],
+    "helper_runner_hashes": {
+      "scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py": "702f7cfddf9d582a1eb7c2824bd9c8ea43da589fc44c6c7f12d1555bbb7fc828"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "0064f577dae7314db2f5e1b3b0aabc209e6ab71def38626501ff6d9e51438823",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_cycle766_family_winning_mapping_2026_07_28.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "f74f4415822253e9b6203466247f282f9a4951bbe64a35089bef2d44656eafae",
+        "cache_runner_sha256": "9e1b03c2f185815d4c897556951e55caf1363641f288434366112b0153808909",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "9e1b03c2f185815d4c897556951e55caf1363641f288434366112b0153808909",
+    "runner_path": "scripts/frontier_cycle766_family_winning_mapping_2026_07_28.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260802-f918c25b",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The primary computation and an independent manual enumeration reproduce the stated arithmetic, but the restricted packet omits the source and live output of the separately claimed independent checker. That omission prevents authentication of the note\u2019s asserted independent implementation path.",
   "claim_id": "family_winning_mapping_cycle766_bounded_theorem_note_2026-07-28",
-  "claim_scope": null,
+  "claim_scope": "For the supplied vectors, comparator, coordinate order, per-row bijection, total-variation metric, and pooling rule, the transformed rows, endpoint table, unique pooled rank, second score, and complete S3^3 census were audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-02T08:24:44.063864+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,34 +88,35 @@
     "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Exhaustive exact arithmetic over all 6^3 = 216 per-row bijection triples makes the supplied map the unique pooled-comparator-TV minimum and yields the stated census counts.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "2593e2ccdca8c998038b5fe6a7ce636405feac42bbf8c506cc428c8acd760e16",
   "note_path": "docs/FAMILY_WINNING_MAPPING_CYCLE766_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: include scripts/frontier_cycle766_mapping_independent_check_2026_07_28.py and its live SHA-pinned output, then recheck its inverse-indexing enumeration against the primary runner.",
   "open_dependency_paths": [],
   "previous_audits": [],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 8,
+    "B": 1,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/frontier_cycle766_family_winning_mapping_2026_07_28.py",
   "title": "Supplied cyclic per-row bijection: exact `S3^3` census \u2014 Cycle 766",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the source explicitly relies on a separately implemented independent checker, but that checker\u2019s source and output are absent from the restricted packet. Why this blocks: the primary runner correctly computes all stated quantities but also asserts hard-coded expected values, so the claimed independent implementation cannot be authenticated here despite a successful manual recomputation. Repair target: provide the named checker source and live output and compare its full 216-member census with the primary results. Claim boundary until fixed: the supplied-input finite arithmetic is internally consistent and manually reproduced, but clean artifact-level ratification remains pending."
 }

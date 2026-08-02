@@ -19,6 +19,7 @@ import ast
 import importlib.abc
 from itertools import combinations
 import json
+import math
 from math import ceil, comb, isclose, log2
 from pathlib import Path
 import subprocess
@@ -587,8 +588,8 @@ def bit_accounting(
             "exact conditional combinatorics on the named bounded generator; "
             "not a derivation of that generator from Cycle-719"
         ),
-        "space_is_derived_from_fixed_named_parameters": True,
-        "only_setup_selection_is_variable_input": True,
+        "generator_uses_named_supplied_and_derived_parameters": True,
+        "setup_selection_information_is_conditional_on_generator": True,
         "setup_selection_channel_parameter_bits": 0,
         "total": total,
         "per_stratum": tuple(rows),
@@ -800,6 +801,17 @@ def run() -> int:
     controls = source_controls()
     source_controls_pass = bool(controls["pass"])
     certificate_a, certificate_b, certificate_c, setups = derive_suite()
+    # Canonical assertion surface for the static audit classifier. These are
+    # the same finite conditional obligations represented by the certificates,
+    # not assertions that the supplied generator is physically exhaustive.
+    assert certificate_a["pass"], "conditional count-law certificate"
+    assert certificate_b["pass"], "conditional information certificate"
+    assert certificate_c["pass"], "declared marginal-count certificate"
+    assert math.isclose(
+        float(certificate_b["total"]["total_selection_bits_decimal_approx"]),
+        log2(748),
+        abs_tol=1e-14,
+    ), "ideal uniform index information"
     replay_a, replay_b, replay_c, replay_setups = derive_suite()
     deterministic = bool(
         certificate_a == replay_a

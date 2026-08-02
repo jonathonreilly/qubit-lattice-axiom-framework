@@ -1,6 +1,6 @@
 {
- "edge_count": 15385,
- "node_count": 4621,
+ "edge_count": 15386,
+ "node_count": 4622,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1689,6 +1689,10 @@
   "causal_source_placement_robustness_note": {
    "deps_hash": "690d3eeef06c",
    "out_degree": 3
+  },
+  "census_theorem_cycle857_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "7c59543ab5ac",
+   "out_degree": 1
   },
   "centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11": {
    "deps_hash": "3d91acad8044",

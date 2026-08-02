@@ -504,14 +504,17 @@ do not weaken the N1-N8 packet or apply gates.
 
 The canary gets exactly one independent scientific seat. If that prompt-bound
 judgment has a complete top-level scientific core but its N1-N8 packet is
-rejected, it may receive at most three focused packet-completion passes because
-distinct structural defects can surface serially (for example, an N1
-route-class marker mismatch followed by an N5 rhetoric-scan coverage mismatch).
-Those passes may add or replace only `no_go_discipline`; the verdict, claim
-type/scope, chain judgment, rationale, negative declaration, invocation, and
-every other top-level value remain canonically identical. The existing N1-N8
-`required` and `status` gate fields are immutable too, so completion cannot
-promote FAIL to PASS. A nonzero legacy
+rejected on citation or authenticated-occurrence mechanics, it may receive at
+most three focused packet-mechanics passes because distinct binding defects can
+surface serially (for example, an evidence-locator mismatch followed by an
+authenticated occurrence-tuple mismatch). Those passes may change only N1-N8
+evidence path/locator fields and authenticated occurrence metadata. The
+verdict, claim type/scope, chain judgment, rationale, negative declaration,
+invocation, every other top-level value, and every substantive N1-N8 route,
+wall, classification, residual match, resolution, closure, steelman, and echo
+disposition remain canonically identical. The existing N1-N8 `required` and
+`status` gate fields are immutable too, so completion cannot promote FAIL to
+PASS. A nonzero legacy
 fresh-schema retry budget is a hard configuration error. Coverage rejects
 require one exact N3/N5 disposition for every authenticated
 `full_phrase_groups` record on every applicable manifest path; records that
@@ -572,7 +575,7 @@ returned JSON that the audit contract cannot apply (for example malformed
 JSON, an incomplete N1-N8 packet, or a field whose value contradicts the
 schema). It does not show that the source claim is false or needs editing.
 
-- Every restricted Codex seat (ordinary audit, focused packet completion, and
+- Every restricted Codex seat (ordinary audit, focused packet mechanics, and
   judicial judge) must use CLI `--output-schema` with a transport-level JSON
   object schema. The canonical Python validators remain the only semantic
   schema authority; the CLI schema prevents fences/preambles/malformed JSON
@@ -582,11 +585,13 @@ schema). It does not show that the source claim is false or needs editing.
   accepts the same verdict, declaration, rationale, and every other field with
   `no_go_discipline=null`. Do this before launching completion. Never use this
   normalization for clean authority, a no-go source/type, or forensic work.
-- Give parseable N1-N8 structural-packet rejects bounded, error-specific
-  completion attempts in the same restricted seat. Preserve every top-level
-  scientific judgment; only repair the rejected structural packet. Malformed
-  JSON and other contract rejects without a narrow judgment-preserving repair
-  target go directly to the same exhausted-delivery path.
+- Give parseable N1-N8 citation/occurrence-mechanics rejects bounded,
+  error-specific correction attempts in the same restricted seat. Preserve
+  every top-level scientific judgment and every substantive N1-N8 value; only
+  repair authenticated evidence path/locator and occurrence-tuple metadata.
+  Malformed JSON, missing packet content, and other contract rejects without a
+  narrow judgment-preserving repair target go directly to the same
+  exhausted-delivery path.
 - Treat an incompatible verdict/type tuple as a schema-invalid delivery, not
   as a scientific seat. In particular, `audited_decoration` requires
   `claim_type=decoration` plus a decoration parent, while `audited_clean`

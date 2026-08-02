@@ -1412,11 +1412,12 @@ def packet_completion_pass(
     validator_error: str | None = None,
     attempt: int = 1,
 ) -> dict | None:
-    """Mechanically complete or repair one structural N1-N8 packet.
+    """Mechanically correct one already-present structural N1-N8 packet.
 
     The same restricted audit seat sees only its original packet, rejected
-    JSON, and exact validator error.  Every top-level judgment remains
-    immutable; only ``no_go_discipline`` may be added or replaced.
+    JSON, and exact validator error. Every top-level and substantive N1-N8
+    judgment remains immutable; only authenticated citation/occurrence
+    mechanics may change.
     """
 
     cid = job["row"]["claim_id"]
@@ -1445,23 +1446,13 @@ def packet_completion_pass(
         "evidence. "
         f"Your audit JSON for claim {cid} is at: {blob_path}\n"
         f"{error_block}\n"
-        "Your verdict output names walls/negative boundaries, so the apply "
-        "gate requires a structural `no_go_discipline` object (development "
-        "tier). Use the N1-N8 schema in AUDIT_TASK.md and author it "
-        "SCHEMA-HONESTLY:\n"
-        "- Claim gate status PASS only if it genuinely passes: at least 5 "
-        "DISTINCT route_class values among evidenced N1 routes, every route "
-        "closed, complete N2-N8, and a resolved N7 steelman whose route_id "
-        "names an N1 route and whose evidence_path MATCHES that route's "
-        "evidence_path.\n"
-        "- Otherwise set status FAIL with the honest failures list AND the "
-        "FAIL-only fields (demotion, prior_claim_scope, narrowed_claim_scope, "
-        "corrected_wall_set, next_route). For an existing non-clean verdict, "
-        "an honest FAIL gate is legitimate and validates; an unearned PASS "
-        "does not. Preserve the existing verdict either way.\n"
-        "- Structured judgments with quoted evidence from the note/runner you "
-        "already audited (structural validation; no manifest-containment, "
-        "live-stdout, transport, or full-universe disposition plumbing).\n"
+        "The existing `no_go_discipline` object is scientific authority. "
+        "Preserve every route, wall, classification, residual match, "
+        "resolution, closure, steelman, echo disposition, required/status "
+        "gate, and all other substantive values exactly. You may correct only "
+        "evidence_path/evidence_locator citation fields and authenticated "
+        "occurrence_group_id, occurrence_count, and "
+        "occurrence_locator_sha256 metadata against AUDIT_TASK.md.\n"
         "Change NOTHING else — preserve every original field and value. "
         "Return the complete JSON as your final response: one JSON object, "
         "with no code fence or commentary."
@@ -1518,21 +1509,10 @@ def packet_completion_pass(
         return None
     if completed.get("compute_required") is None:
         completed.pop("compute_required", None)
-    packet = completed.get("no_go_discipline")
-    if not isinstance(packet, dict):
+    if not isinstance(completed.get("no_go_discipline"), dict):
         return None
 
-    # This is packet completion, not a second scientific audit: the only
-    # permitted delta is adding or replacing the structural packet.
-    expected = dict(blob)
-    expected["no_go_discipline"] = packet
-    canonical_completed = json.dumps(
-        completed, sort_keys=True, separators=(",", ":"), ensure_ascii=False
-    )
-    canonical_expected = json.dumps(
-        expected, sort_keys=True, separators=(",", ":"), ensure_ascii=False
-    )
-    if canonical_completed != canonical_expected:
+    if audit_runner.validation_repair_preservation_error(blob, completed):
         return None
     return completed
 
@@ -1661,11 +1641,15 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
         "transport_bounded_n8": job["transport_bound"] is not None,
     }
     error = audit_runner.validate_verdict(blob, cid, **validation_args)
+
     def _packet_error(err: object) -> bool:
         return bool(re.search(
             r"(?:\bN[1-8](?:\b|_)|No-Go Discipline|no_go_discipline)",
             str(err or ""),
         ))
+
+    def _packet_mechanics_error(err: object) -> bool:
+        return audit_runner.packet_completion_eligible_error(str(err or ""))
 
     optional_packet_dropped = False
     forensic_tier = bool(
@@ -1700,7 +1684,7 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     while (
         error
         and not source_requires_no_go
-        and _packet_error(error)
+        and _packet_mechanics_error(error)
         and completion_attempt < 2
     ):
         completion_attempt += 1
@@ -1716,7 +1700,7 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     if not error and blob.get("verdict") == "audited_clean" and clipped:
         error = f"audited_clean packet has clipped evidence: {clipped}"
     if error:
-        packet_error = _packet_error(error)
+        packet_error = _packet_mechanics_error(error)
         return None, {
             **base,
             "result": "validation_failed",
@@ -2535,6 +2519,11 @@ def _contains_non_finite_json_number(value: object) -> bool:
     return False
 
 
+def _campaign_validator_detail(detail: str) -> str:
+    """Remove only the campaign artifact pointer from validator detail."""
+    return detail.split("; preserved_run_log=", 1)[0]
+
+
 def _campaign_failure_schema_error(
     claim_id: str,
     reason: str,
@@ -2632,6 +2621,14 @@ def _campaign_failure_schema_error(
         error_code = failure.get("error_code")
         if not isinstance(error_code, str) or not error_code.strip():
             return "campaign exclusion failure has no error_code"
+        expected_code = audit_runner.schema_failure_code(
+            _campaign_validator_detail(str(failure["detail"]))
+        )
+        if error_code != expected_code:
+            return (
+                "campaign exclusion error_code does not match validator "
+                f"detail (expected={expected_code!r}, got={error_code!r})"
+            )
         if failure.get("failure_class") not in {
             "packet_completion_exhausted",
             "scientific_reaudit_required",

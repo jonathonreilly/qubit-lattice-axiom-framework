@@ -9814,7 +9814,12 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIn("Do not invent evidence", flat_prompt)
         self.assertIn("may not change the verdict", flat_prompt)
         self.assertIn("untrusted completion target, not evidence", flat_prompt)
-        self.assertIn("only the structured N1-N8 packet", flat_prompt)
+        self.assertIn(
+            "only evidence_path/evidence_locator citation fields", flat_prompt
+        )
+        self.assertIn(
+            "substantive N1-N8 value must remain exactly stable", flat_prompt
+        )
         self.assertIn("cannot flip FAIL to PASS", flat_prompt)
         self.assertIn("honest FAIL packet is valid", flat_prompt)
         self.assertNotIn("accept despite", prompt.casefold())
@@ -9909,10 +9914,11 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         changed_route_disposition["no_go_discipline"][
             "N1_alternative_routes"
         ][0]["disposition"] = "CLOSED"
-        self.assertIsNone(
+        self.assertIn(
+            "changed preserved no-go scientific content",
             m.validation_repair_preservation_error(
                 rejected, changed_route_disposition
-            )
+            ) or "",
         )
 
         changed_packet_status = json.loads(json.dumps(locator_repair))
@@ -9932,7 +9938,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "N1 route 1 evidence_locator is not present in docs/TARGET.md",
             )
         )
-        self.assertTrue(
+        self.assertFalse(
             m.validation_repair_eligible(
                 rejected,
                 "target",
@@ -13382,7 +13388,7 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         )
         self.assertEqual(candidate["evidence_locator"], "absent quoted basis prefix")
 
-    def test_packet_completion_may_replace_packet_only(self):
+    def test_packet_completion_preserves_scientific_packet_content(self):
         m = _import_codex_audit_runner()
         rejected = {
             "verdict": "audited_clean",
@@ -13415,8 +13421,9 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             m.validation_repair_preservation_error(rejected, repaired)
         )
         repaired_hit["classification"] = "hidden_admission"
-        self.assertIsNone(
-            m.validation_repair_preservation_error(rejected, repaired)
+        self.assertIn(
+            "changed preserved no-go scientific content",
+            m.validation_repair_preservation_error(rejected, repaired) or "",
         )
         repaired["verdict"] = "audited_conditional"
         self.assertIn(
@@ -13428,24 +13435,32 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         m = _import_codex_audit_runner()
         cases = {
             "N5 statement 1 must record one tested resolution per required class":
-                "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE",
+                ("N5_CANONICAL_RESOLUTION_SET_INCOMPLETE", False),
             "N2.walls must each be evidenced at N2.evidence_path":
-                "N2_WALL_EVIDENCE_BINDING_MISMATCH",
+                ("N2_WALL_EVIDENCE_BINDING_MISMATCH", True),
             "N3.hits must exactly disposition orchestrator phrase scan; "
             "missing=[('secret_path', 'sector', 'secret_id')], extra=[]":
-                "N3_AUTHENTICATED_GROUP_COVERAGE_MISMATCH",
+                ("N3_AUTHENTICATED_GROUP_COVERAGE_MISMATCH", False),
             "N6 candidate 1.closure_mechanism must use its indexed_basis":
-                "N6_INDEXED_BASIS_VERBATIM_MISMATCH",
+                ("N6_INDEXED_BASIS_VERBATIM_MISMATCH", False),
         }
-        for error, expected_code in cases.items():
+        for error, (expected_code, completion_eligible) in cases.items():
             with self.subTest(error=error):
-                self.assertTrue(m.packet_completion_eligible_error(error))
+                self.assertEqual(
+                    m.packet_completion_eligible_error(error),
+                    completion_eligible,
+                )
                 self.assertEqual(m.schema_failure_code(error), expected_code)
                 self.assertEqual(
                     m.validation_failure_class(
-                        error, packet_completion_eligible=True
+                        error,
+                        packet_completion_eligible=completion_eligible,
                     ),
-                    "packet_completion_exhausted",
+                    (
+                        "packet_completion_exhausted"
+                        if completion_eligible
+                        else "scientific_reaudit_required"
+                    ),
                 )
 
         self.assertFalse(m.packet_completion_eligible_error("claim_id mismatch"))
@@ -13535,7 +13550,10 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             "audit_invocation_id": invocation,
             "no_go_discipline": {"required": True, "status": "PASS"},
         })
-        error = "N1-N8 packet is required for this source or verdict"
+        error = (
+            "N1 route 1 evidence_locator is not present in "
+            "'docs/TARGET.md'"
+        )
         self.assertTrue(
             m.validation_repair_eligible(
                 rejected,
@@ -13558,6 +13576,14 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
                 missing_packet,
                 "target",
                 error,
+                expected_invocation_id=invocation,
+            )
+        )
+        self.assertFalse(
+            m.validation_repair_eligible(
+                rejected,
+                "target",
+                "N1-N8 packet is required for this source or verdict",
                 expected_invocation_id=invocation,
             )
         )

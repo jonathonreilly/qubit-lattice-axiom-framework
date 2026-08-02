@@ -1622,6 +1622,19 @@ class SchemaRecoveryTest(unittest.TestCase):
                 '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
                 "invalid failure_class",
             ),
+            "typed code detail mismatch": (
+                '{"claim_id":"row","reason":"schema_invalid_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"validation_failed",'
+                '"detail":"N2.walls must each be evidenced at '
+                'N2.evidence_path",'
+                '"error_code":"N5_CANONICAL_RESOLUTION_SET_INCOMPLETE",'
+                '"failure_class":"packet_completion_exhausted",'
+                '"scientific_seat_count":1,'
+                '"packet_completion_attempt_count":3}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "error_code does not match validator detail",
+            ),
             "wrong reason evidence": (
                 '{"claim_id":"row","reason":"compute_required_quarantined",'
                 '"failures":[{"cid":"row","pass":1,'
@@ -1885,10 +1898,13 @@ class SchemaRecoveryTest(unittest.TestCase):
             ) as completion:
                 envelope, result = batch.finalize_worker(job)
 
-        completion.assert_called_once()
+        completion.assert_not_called()
         self.assertIsNone(envelope)
         self.assertEqual(result["result"], "validation_failed")
         self.assertIn("N1_alternative_routes", result["detail"])
+        self.assertEqual(
+            result["failure_class"], "scientific_reaudit_required"
+        )
 
     def test_terminal_verdict_cannot_mix_compute_required(self):
         invocation = "c" * 32
@@ -3243,6 +3259,52 @@ class ClaimTransactionTest(unittest.TestCase):
         self.assertEqual(proc.wait.call_args_list, [mock.call()])
         killpg.assert_called_once_with(4321, signal.SIGKILL)
         self.assertLess(time.monotonic() - started, 1)
+
+    def test_packet_completion_rejects_scientific_packet_change(self):
+        blob = {
+            "verdict": "audited_clean",
+            "verdict_rationale": "x" * 240,
+            "no_go_discipline": {
+                "required": True,
+                "status": "PASS",
+                "N3_hidden_wall_scan": {
+                    "hits": [{
+                        "classification": "non_load_bearing",
+                        "evidence_path": "docs/SOURCE.md",
+                        "evidence_locator": "original locator text",
+                    }],
+                },
+            },
+        }
+        completed = json.loads(json.dumps(blob))
+        completed["no_go_discipline"]["N3_hidden_wall_scan"]["hits"][0][
+            "classification"
+        ] = "hidden_admission"
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            out_path = root / "completion-row-p1-a1-out.json"
+
+            def fake_popen(*_args, **_kwargs):
+                out_path.write_text(json.dumps(completed), encoding="utf-8")
+                return mock.Mock()
+
+            job = {
+                "row": {"claim_id": "row"},
+                "pass": 1,
+                "auditor": "test-auditor",
+                "isolated": root,
+            }
+            with mock.patch.object(
+                batch.shutil, "which", return_value=sys.executable
+            ), mock.patch.object(
+                batch.subprocess, "Popen", side_effect=fake_popen
+            ), mock.patch.object(
+                batch, "_wait_for_packet_completion", return_value=(False, 0)
+            ):
+                result = batch.packet_completion_pass(job, blob, root)
+
+        self.assertIsNone(result)
 
     def test_checkpoint_abort_cannot_delete_concurrent_build(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -5290,14 +5352,26 @@ class CampaignContractTest(unittest.TestCase):
                 "reason": batch.SCHEMA_QUARANTINE_RESULT,
                 "failures": [{
                     "detail": "redacted validator detail",
-                    "error_code": "N6_INDEXED_BASIS_VERBATIM_MISMATCH",
+                    "error_code": "N2_WALL_EVIDENCE_BINDING_MISMATCH",
+                    "failure_class": "packet_completion_exhausted",
+                    "scientific_seat_count": 1,
+                    "packet_completion_attempt_count": 3,
                 }],
             }
             for claim_id in ("claim_d", "claim_e", "claim_f")
         ]
         self.assertEqual(
             audit_loop.forensic_mechanics_circuit(typed_records),
-            ("N6_INDEXED_BASIS_VERBATIM_MISMATCH", 3),
+            ("N2_WALL_EVIDENCE_BINDING_MISMATCH", 3),
+        )
+
+        scientific_records = json.loads(json.dumps(typed_records))
+        for record in scientific_records:
+            record["failures"][0][
+                "failure_class"
+            ] = "scientific_reaudit_required"
+        self.assertIsNone(
+            audit_loop.forensic_mechanics_circuit(scientific_records)
         )
 
     def test_open_forensic_mechanics_circuit_spends_no_new_seat(self):
@@ -5308,9 +5382,9 @@ class CampaignContractTest(unittest.TestCase):
             args.campaign_quarantine_file = (
                 campaign / "campaign-row-exclusions.jsonl"
             )
-            n7_length_error = (
-                audit_loop.no_go_discipline_gate.
-                n7_steelman_normalized_length_error()
+            locator_error = (
+                "N3 hit 1 evidence_locator must contain at least 12 "
+                "normalized characters"
             )
             report = [
                 {
@@ -5318,7 +5392,7 @@ class CampaignContractTest(unittest.TestCase):
                     "pass": 1,
                     "result": "validation_failed",
                     "detail": (
-                        n7_length_error + "; "
+                        locator_error + "; "
                         "preserved_run_log=forensic.jsonl"
                     ),
                 }
@@ -5342,19 +5416,18 @@ class CampaignContractTest(unittest.TestCase):
         run_command.assert_not_called()
         self.assertEqual(
             audit_loop.PROGRESS["canary_state"],
-            "mechanics_circuit_open:N7_MIN_LENGTH:3",
+            "mechanics_circuit_open:EVIDENCE_LOCATOR_MIN_LENGTH:3",
         )
 
-    def test_forensic_n7_signature_follows_shared_minimum(self):
+    def test_forensic_n7_scientific_defect_is_not_mechanics_signature(self):
         gate = audit_loop.no_go_discipline_gate
         with mock.patch.object(
             gate, "N7_STEELMAN_MIN_NORMALIZED_CHARS", 81
         ):
             detail = gate.n7_steelman_normalized_length_error()
             self.assertIn("81 normalized characters", detail)
-            self.assertEqual(
-                audit_loop.forensic_schema_failure_signature(detail),
-                "N7_MIN_LENGTH",
+            self.assertIsNone(
+                audit_loop.forensic_schema_failure_signature(detail)
             )
 
     def test_forensic_schema_failure_is_quarantined_and_returns_success(self):
@@ -5413,7 +5486,7 @@ class CampaignContractTest(unittest.TestCase):
             )
             self.assertEqual(
                 records[0]["failures"][0]["failure_class"],
-                "packet_completion_exhausted",
+                "scientific_reaudit_required",
             )
             self.assertEqual(
                 records[0]["failures"][0]["scientific_seat_count"], 1
@@ -5427,6 +5500,24 @@ class CampaignContractTest(unittest.TestCase):
             self.assertTrue(
                 audit_loop.PROGRESS["canary_state"].startswith("quarantined:")
             )
+
+    def test_forensic_canary_rejects_corrupt_typed_terminal_record(self):
+        terminal = {
+            "phase": "validate_failed",
+            "error": "N2.walls must each be evidenced at N2.evidence_path",
+            "error_code": "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE",
+            "failure_class": "packet_completion_exhausted",
+            "scientific_seat_count": 1,
+            "packet_completion_attempt_count": 3,
+        }
+
+        self.assertIsNone(
+            audit_loop.forensic_canary_claim_local_failure(
+                terminal,
+                "forensic_row",
+                Path("forensic.jsonl"),
+            )
+        )
 
     def test_forensic_alternate_source_is_forwarded_to_restricted_runner(self):
         with tempfile.TemporaryDirectory() as tmp:

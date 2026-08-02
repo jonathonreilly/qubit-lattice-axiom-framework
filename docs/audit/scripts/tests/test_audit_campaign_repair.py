@@ -93,7 +93,7 @@ class CampaignRepairTest(unittest.TestCase):
                 "reason": repair.SCHEMA_QUARANTINE,
                 "failures": [{
                     "failure_class": "packet_completion_exhausted",
-                    "error_code": "N6_INDEXED_BASIS_VERBATIM_MISMATCH",
+                    "error_code": "N2_WALL_EVIDENCE_BINDING_MISMATCH",
                 }],
             },
             {"audit_status": "unaudited", "effective_status": "unaudited"},

@@ -150,20 +150,6 @@ def forensic_schema_failure_signature(detail: str) -> str | None:
     """Normalize known control-plane schema defects without verdict content."""
     if "evidence_locator must contain at least 12 normalized characters" in detail:
         return "EVIDENCE_LOCATOR_MIN_LENGTH"
-    if no_go_discipline_gate.n7_steelman_normalized_length_error() in detail:
-        return "N7_MIN_LENGTH"
-    if (
-        detail.startswith("N1 route ")
-        and ".route_class=" in detail
-        and "is not supported by its evidenced" in detail
-    ):
-        return "N1_ROUTE_CLASS_MARKER_MISMATCH"
-    if (
-        detail.startswith("N5 statement ")
-        and "tested resolution is not evidenced at resolution_evidence_path"
-        in detail
-    ):
-        return "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH"
     return None
 
 
@@ -182,16 +168,33 @@ def forensic_mechanics_circuit(
         for failure in record.get("failures") or []:
             if not isinstance(failure, dict):
                 continue
-            error_code = failure.get("error_code")
-            signature = (
-                error_code
-                if isinstance(error_code, str)
-                and error_code
-                and error_code != "AUDIT_SCHEMA_REJECT"
-                else forensic_schema_failure_signature(
+            typed_fields = {
+                "error_code",
+                "failure_class",
+                "scientific_seat_count",
+                "packet_completion_attempt_count",
+            }
+            if typed_fields & set(failure):
+                if (
+                    failure.get("failure_class")
+                    != "packet_completion_exhausted"
+                ):
+                    continue
+                error_code = failure.get("error_code")
+                signature = (
+                    error_code
+                    if isinstance(error_code, str)
+                    and error_code
+                    and error_code != "AUDIT_SCHEMA_REJECT"
+                    else forensic_schema_failure_signature(
+                        str(failure.get("detail") or "")
+                    )
+                )
+            else:
+                # Campaign records from before typed failures remain readable.
+                signature = forensic_schema_failure_signature(
                     str(failure.get("detail") or "")
                 )
-            )
             if signature is not None:
                 claims_by_signature.setdefault(signature, set()).add(claim_id)
     eligible = [
@@ -769,25 +772,50 @@ def forensic_canary_claim_local_failure(
             "validation repair codex exec failed:"
         ):
             return None
-        error_code = terminal.get("error_code")
-        if not isinstance(error_code, str) or not error_code:
+        typed_fields = {
+            "error_code",
+            "failure_class",
+            "scientific_seat_count",
+            "packet_completion_attempt_count",
+        }
+        present_typed_fields = typed_fields & set(terminal)
+        if present_typed_fields:
+            # Current runner artifacts are a closed typed contract. Do not
+            # normalize a partial or corrupt typed record into campaign state.
+            if present_typed_fields != typed_fields:
+                return None
+            error_code = terminal.get("error_code")
+            if error_code != batch.audit_runner.schema_failure_code(detail):
+                return None
+            failure_class = terminal.get("failure_class")
+            if failure_class not in {
+                "packet_completion_exhausted",
+                "scientific_reaudit_required",
+            }:
+                return None
+            scientific_seat_count = terminal.get("scientific_seat_count")
+            if (
+                type(scientific_seat_count) is not int
+                or scientific_seat_count != 1
+            ):
+                return None
+            completion_count = terminal.get("packet_completion_attempt_count")
+            if (
+                type(completion_count) is not int
+                or not 0 <= completion_count <= 3
+            ):
+                return None
+        else:
+            # Legacy terminal records had only the exact validator detail.
             error_code = batch.audit_runner.schema_failure_code(detail)
-        failure_class = terminal.get("failure_class")
-        if failure_class not in {
-            "packet_completion_exhausted",
-            "scientific_reaudit_required",
-        }:
+            completion_eligible = (
+                batch.audit_runner.packet_completion_eligible_error(detail)
+            )
             failure_class = batch.audit_runner.validation_failure_class(
                 detail,
-                packet_completion_eligible=(
-                    batch.audit_runner.packet_completion_eligible_error(detail)
-                ),
+                packet_completion_eligible=completion_eligible,
             )
-        scientific_seat_count = terminal.get("scientific_seat_count")
-        if type(scientific_seat_count) is not int or scientific_seat_count != 1:
             scientific_seat_count = 1
-        completion_count = terminal.get("packet_completion_attempt_count")
-        if type(completion_count) is not int or not 0 <= completion_count <= 3:
             completion_count = 0
         return batch.SCHEMA_QUARANTINE_RESULT, {
             "cid": claim_id,

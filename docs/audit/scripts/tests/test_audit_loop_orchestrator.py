@@ -5273,14 +5273,17 @@ class CampaignContractTest(unittest.TestCase):
             args.campaign_quarantine_file = (
                 campaign / "campaign-row-exclusions.jsonl"
             )
+            n7_length_error = (
+                audit_loop.no_go_discipline_gate.
+                n7_steelman_normalized_length_error()
+            )
             report = [
                 {
                     "cid": claim_id,
                     "pass": 1,
                     "result": "validation_failed",
                     "detail": (
-                        "N7.argument and N7.resolution must each contain at "
-                        "least 80 normalized characters; "
+                        n7_length_error + "; "
                         "preserved_run_log=forensic.jsonl"
                     ),
                 }
@@ -5306,6 +5309,18 @@ class CampaignContractTest(unittest.TestCase):
             audit_loop.PROGRESS["canary_state"],
             "mechanics_circuit_open:N7_MIN_LENGTH:3",
         )
+
+    def test_forensic_n7_signature_follows_shared_minimum(self):
+        gate = audit_loop.no_go_discipline_gate
+        with mock.patch.object(
+            gate, "N7_STEELMAN_MIN_NORMALIZED_CHARS", 81
+        ):
+            detail = gate.n7_steelman_normalized_length_error()
+            self.assertIn("81 normalized characters", detail)
+            self.assertEqual(
+                audit_loop.forensic_schema_failure_signature(detail),
+                "N7_MIN_LENGTH",
+            )
 
     def test_forensic_schema_failure_is_quarantined_and_returns_success(self):
         with tempfile.TemporaryDirectory() as tmp:

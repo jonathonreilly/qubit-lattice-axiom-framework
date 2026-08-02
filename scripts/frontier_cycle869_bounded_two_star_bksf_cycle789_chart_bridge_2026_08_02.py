@@ -400,12 +400,16 @@ def symbolic_route_return(routed) -> dict[str, int]:
     touched = tuple(sorted({site for gate in routed for site in gate.sites}))
     labels = {site: (37 * index + 11) % 101 for index, site in enumerate(touched)}
     initial = dict(labels)
+    swap_gates = 0
     for gate in routed:
-        if gate.kind.endswith("SWAP") or gate.kind == "route_SWAP":
+        if gate.kind == "route_swap":
             left, right = gate.sites
             labels[left], labels[right] = labels[right], labels[left]
+            swap_gates += 1
     return {
         "symbolic_dirty_labels": len(labels),
+        "symbolic_route_swap_gates": swap_gates,
+        "symbolic_non_swap_gates": len(routed) - swap_gates,
         "symbolic_dirty_label_return_failures": sum(
             labels[key] != value for key, value in initial.items()
         ),
@@ -488,6 +492,10 @@ def canonical_literal_bridge() -> dict[str, object]:
 
     routed, route_report = P.c707.route_word(sandwich)
     symbolic = symbolic_route_return(routed)
+    expected_route_swaps = sum(
+        2 * max(0, l1(*instruction.sites) - 1)
+        for instruction in sandwich if len(instruction.sites) == 2
+    )
     touched = set(route_report["touched_coordinates"])
     declared = set(all_sites) | {ancilla}
     resource = {
@@ -591,6 +599,7 @@ def canonical_literal_bridge() -> dict[str, object]:
             "delete_first_swap_detected_macros"
         ],
         "routed_word_sha256": route_report["word_sha256"],
+        "expected_route_swap_gates": expected_route_swaps,
         **symbolic,
         "deletions_and_mutations": deletion,
         "restricted_transvection": {
@@ -998,6 +1007,10 @@ def main() -> None:
             and bridge["non_NN_failures"] == 0
             and bridge["operand_order_failures"] == 0
             and bridge["route_return_failures"] == 0
+            and bridge["symbolic_route_swap_gates"]
+            == bridge["expected_route_swap_gates"]
+            and bridge["symbolic_non_swap_gates"]
+            == sum(bridge["E_character_Einverse_primitive_gates"])
             and bridge["symbolic_dirty_label_return_failures"] == 0
             and bridge["dirty_repetition_seed_residual"] < TOL
             and bridge["dirty_ancilla_seed_residual"] < TOL

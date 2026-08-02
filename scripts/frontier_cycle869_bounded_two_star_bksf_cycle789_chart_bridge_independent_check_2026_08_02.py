@@ -45,7 +45,7 @@ TARGET_SPEC = (
 TARGET_SHA256 = "2220b3f4a35fa1ad80a9069c0c2436bd7418fc5c9896b0bc62974340fa0b05e9"
 PACKAGE_BASE_COMMIT = "1900b64260f39f075c59f2e353079c44e8ede031"
 EXPECTED_PRIMARY_RUNNER_SHA256 = (
-    "deade411c095e32e7656fa6e245d66d135813a2bd50672004e77c8b0f48ff2b1"
+    "b3f9a8f1251f8156f24ba09126aa6d44599ccc93f95e73921417640d90d1071f"
 )
 EXPECTED_LOADED_HELPER_COUNT = 45
 EXPECTED_LOADED_HELPER_CLOSURE_SHA256 = (
@@ -205,6 +205,47 @@ def inverse_word(word):
     )
 
 
+def replay_returned_route(word, routed) -> dict[str, int]:
+    """Independently replay physical route swaps and logical operands."""
+
+    touched = {site for gate in routed for site in gate.sites}
+    labels = {site: site for site in touched}
+    expected_index = 0
+    swap_gates = nn_failures = operand_failures = 0
+    kind_failures = matrix_failures = 0
+    for gate in routed:
+        if len(gate.sites) == 2:
+            left, right = gate.sites
+            nn_failures += sum(
+                abs(a - b) for a, b in zip(left, right)
+            ) != 1
+        if gate.kind == "route_swap":
+            left, right = gate.sites
+            labels[left], labels[right] = labels[right], labels[left]
+            swap_gates += 1
+            continue
+        expected = word[expected_index]
+        expected_index += 1
+        operand_failures += tuple(
+            labels[site] for site in gate.sites
+        ) != expected.sites
+        kind_failures += gate.kind != expected.kind
+        matrix_failures += int(np.linalg.norm(
+            gate.matrix - expected.matrix
+        ) > 1.0e-12)
+    return {
+        "replayed_route_swap_gates": swap_gates,
+        "replayed_non_swap_gates": expected_index,
+        "replayed_NN_failures": nn_failures,
+        "replayed_operand_failures": operand_failures,
+        "replayed_kind_failures": kind_failures,
+        "replayed_matrix_failures": matrix_failures,
+        "replayed_label_return_failures": sum(
+            site != label for site, label in labels.items()
+        ),
+    }
+
+
 def literal_reconstruction() -> dict[str, object]:
     cells = ((0, 0, 0), (1, 0, 0))
     eq, graph, site_map, gauges, sites, collisions = P.placement_bundle(cells)
@@ -227,6 +268,13 @@ def literal_reconstruction() -> dict[str, object]:
     character = character_word(source_physical, sites, ancilla)
     word = inverse_word(e_word) + character + e_word
     routed, route = P.c707.route_word(word)
+    replay = replay_returned_route(word, routed)
+    expected_route_swaps = sum(
+        2 * max(0, sum(
+            abs(a - b) for a, b in zip(*instruction.sites)
+        ) - 1)
+        for instruction in word if len(instruction.sites) == 2
+    )
     touched = set(route["touched_coordinates"])
     declared = set(sites) | {ancilla}
     return {
@@ -250,6 +298,8 @@ def literal_reconstruction() -> dict[str, object]:
         "delete_first_swap_detected": route[
             "delete_first_swap_detected_macros"
         ],
+        "expected_route_swap_gates": expected_route_swaps,
+        **replay,
     }
 
 
@@ -461,6 +511,16 @@ def main() -> None:
             and literal["operand_order_failures"] == 0
             and literal["route_return_failures"] == 0
             and literal["delete_first_swap_detected"] == 111
+            and literal["replayed_route_swap_gates"]
+            == literal["expected_route_swap_gates"] == 3164
+            and literal["replayed_non_swap_gates"] == sum(
+                literal["primitive_counts"]
+            ) == 163
+            and literal["replayed_NN_failures"] == 0
+            and literal["replayed_operand_failures"] == 0
+            and literal["replayed_kind_failures"] == 0
+            and literal["replayed_matrix_failures"] == 0
+            and literal["replayed_label_return_failures"] == 0
         ),
         "overlap_rank_and_shared_addresses_reconstructed": (
             overlap["raw"]["exact"] == 2

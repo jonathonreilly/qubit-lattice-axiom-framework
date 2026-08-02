@@ -204,7 +204,8 @@ phase.  The runner does not infer 576 dense state-vector executions.
   the factor schedule gives 14 failures;
 - dirty repetition and dirty character-ancilla seeds retain the exact
   intertwiner with residuals below `3.7e-16`;
-- all 155 distinct routed labels return; and
+- all 3,164 returned `route_swap` gates are replayed and all 155 distinct
+  routed labels return; and
 - the interface cleanup and main route both detect nontrivial SWAP deletion.
 
 Dirty-seed closure is finite robustness of the intertwiner, not autonomous
@@ -285,10 +286,10 @@ state/tableau comparison.
 Cold hashes for this package are:
 
 ```text
-deade411c095e32e7656fa6e245d66d135813a2bd50672004e77c8b0f48ff2b1  primary runner
-dc5b75dea0d0e2dc6eb4ec9de2a4a216865f7e0869d58b64251e56480a3a2352  independent verifier
-350201ae4215f93d7c480a2862d252a54073f6e3c5decc6bd44721b19ced9252  primary report
-62561fc6117140982f50dd5d0074b6359d68fa1ebf07b6adfc532529dda11cf3  independent report
+b3f9a8f1251f8156f24ba09126aa6d44599ccc93f95e73921417640d90d1071f  primary runner
+f151e0241943b8edba311e8ca2b95556bc5530e186e77441fd4af2ba67d84ac4  independent verifier
+15c65f747ca6440e90faf03d1f3ee1c857b9e7130d851aa613d516250541e51e  primary report
+77dbd0ccf84389bfd2d9fdf818b5a91a95d684693a2033322f034da6c35d0794  independent report
 ```
 
 Authority remains `none`; audit remains `unset`.  Only a separate audit lane

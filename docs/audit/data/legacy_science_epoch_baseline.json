@@ -1,5 +1,5 @@
 {
-  "dependency_policy_epoch_digest": "729eb5e07f5cfa1dd6bbf7861e45d249a5684d32c09fe09b7bff8f3918b2dfe1",
+  "dependency_policy_epoch_digest": "2b8150fbbe023645cdf719e191879d783c36236f4dea9dbfe9b81a117ae27d69",
   "description": "Immutable deployment anchor for active audit judgments that predate science_fingerprint_v2. Do not refresh these digests when an axiom, approved premise, or dependency policy changes: a mismatch deliberately forces those legacy judgments through fresh audit or a separately reviewed provenance migration.",
   "framework_premise_epoch_digest": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
   "schema": "legacy_science_epoch_baseline_v1"

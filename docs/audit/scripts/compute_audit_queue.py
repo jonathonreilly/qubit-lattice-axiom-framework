@@ -116,20 +116,46 @@ PACKET_ONLY_INVALIDATION_PREFIXES = (
 
 def _latest_archived_audit(row: dict) -> dict | None:
     history = row.get("previous_audits") or []
-    for archived in reversed(history):
-        if isinstance(archived, dict) and archived.get("audit_status"):
-            return archived
-    return None
+    if not isinstance(history, list) or not history:
+        return None
+    archived = history[-1]
+    if not isinstance(archived, dict) or not archived.get("audit_status"):
+        return None
+    return archived
 
 
-def audit_work_kind(row: dict, rows: dict[str, dict]) -> tuple[str, str | None]:
+def audit_work_kind(
+    row: dict,
+    rows: dict[str, dict],
+    *,
+    epoch_cache: dict[str, str] | None = None,
+) -> tuple[str, str | None]:
     """Route mechanical preparation separately from scientific re-audit.
 
     A prior judgment is packet-upgrade eligible only when its v2 scientific
-    baseline exactly matches current state.  Legacy rows with no such proof
-    are sent to deterministic provenance reconstruction; ambiguity never
-    falls through to the cheaper path.
+    baseline and frozen judgment exactly match current state.  Any missing or
+    ambiguous proof consumes a fresh scientific seat; there is no separate
+    provenance lane that can strand queue work indefinitely.
     """
+    live_status = row.get("audit_status") or "unaudited"
+    if live_status not in {"unaudited", "audit_in_progress"}:
+        return (
+            "fresh_scientific_audit",
+            f"live scientific judgment supersedes archive:{live_status}",
+        )
+    # Packet upgrade is valid only immediately after a full invalidation
+    # reset.  An in-progress first/second seat is a newer live lifecycle even
+    # if an older packet-invalidated archive still exists below it.
+    live_judgment_fields = (
+        "audit_state_snapshot",
+        "cross_confirmation",
+        "audit_date",
+        "auditor",
+        "verdict_rationale",
+    )
+    if any(row.get(field) is not None for field in live_judgment_fields):
+        return "fresh_scientific_audit", "newer live audit lifecycle exists"
+
     archived = _latest_archived_audit(row)
     if archived is None:
         return "fresh_scientific_audit", None
@@ -140,7 +166,7 @@ def audit_work_kind(row: dict, rows: dict[str, dict]) -> tuple[str, str | None]:
     baseline = snapshot.get("science_fingerprint")
     if baseline is None:
         return (
-            "provenance_reconstruction_required",
+            "fresh_scientific_audit",
             "legacy audit has no science_fingerprint_v2",
         )
     judgment_baseline = snapshot.get("judgment_fingerprint")
@@ -151,10 +177,16 @@ def audit_work_kind(row: dict, rows: dict[str, dict]) -> tuple[str, str | None]:
     )
     if judgment_problems:
         return (
-            "provenance_reconstruction_required",
+            "fresh_scientific_audit",
             "legacy audit has no valid frozen judgment fingerprint: "
             + ",".join(judgment_problems[:3]),
         )
+    judgment_change = audit_science_fingerprint.judgment_fingerprint_change(
+        judgment_baseline,
+        {**archived, "claim_id": row.get("claim_id")},
+    )
+    if judgment_change is not None:
+        return "fresh_scientific_audit", judgment_change
     try:
         current = audit_science_fingerprint.build_science_fingerprint(
             {
@@ -167,9 +199,10 @@ def audit_work_kind(row: dict, rows: dict[str, dict]) -> tuple[str, str | None]:
             },
             rows,
             REPO_ROOT,
+            epoch_cache=epoch_cache,
         )
     except audit_science_fingerprint.ScienceFingerprintError as exc:
-        return "provenance_reconstruction_required", str(exc)
+        return "fresh_scientific_audit", str(exc)
     change = audit_science_fingerprint.science_fingerprint_change(
         baseline,
         current,
@@ -665,6 +698,7 @@ def main() -> int:
     rows = ledger.get("rows", {})
 
     pending: list[dict] = []
+    science_epoch_cache: dict[str, str] = {}
     for cid, row in rows.items():
         include, queue_reason = needs_audit(row)
         if not include:
@@ -681,6 +715,7 @@ def main() -> int:
         work_kind, work_reason = audit_work_kind(
             {**row, "claim_id": cid},
             rows,
+            epoch_cache=science_epoch_cache,
         )
         if evidence_issue is not None:
             work_kind = "evidence_repair_required"
@@ -765,7 +800,6 @@ def main() -> int:
                 "fresh_scientific_audit",
                 "legacy_packet_upgrade",
                 "evidence_repair_required",
-                "provenance_reconstruction_required",
             )
         },
         "cycle_break_targets": cycle_targets,

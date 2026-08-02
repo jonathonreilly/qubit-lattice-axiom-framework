@@ -1151,6 +1151,7 @@ def main() -> int:
     errors: list[str] = []
     warnings: dict[str, list[str]] = defaultdict(list)
     notices: dict[str, list[str]] = defaultdict(list)
+    science_epoch_cache: dict[str, str] = {}
 
     def add_warning(category: str, message: str) -> None:
         warnings[category].append(message)
@@ -2034,14 +2035,17 @@ def main() -> int:
                     )
 
         # Criticality bump after audit (warn that re-audit may be needed).
-        # Skip rows already at unaudited / audit_in_progress: the warning is
-        # only meaningful for an ACTIVE audit verdict whose snapshot might be
-        # stale relative to current criticality. Once the row has been reset
-        # (e.g. via invalidate_stale_audits.py or note-hash drift), the
-        # snapshot is just historical noise and shouldn't generate a warning.
+        # Scientific provenance applies to every active judgment, including an
+        # awaiting-second-seat ``audit_in_progress`` row.  Criticality-specific
+        # warnings below still exclude in-progress rows.  Once fully reset to
+        # unaudited, the snapshot is historical noise.
         snap = row.get("audit_state_snapshot")
-        if snap is not None and a not in {None, "unaudited"}:
-            science_baseline = snap.get("science_fingerprint")
+        if a not in {None, "unaudited"}:
+            science_baseline = (
+                snap.get("science_fingerprint")
+                if isinstance(snap, dict)
+                else None
+            )
             if science_baseline is not None:
                 science_problems = (
                     audit_science_fingerprint.science_fingerprint_problems(
@@ -2060,6 +2064,7 @@ def main() -> int:
                                 {**row, "claim_id": cid},
                                 rows,
                                 REPO_ROOT,
+                                epoch_cache=science_epoch_cache,
                             )
                         )
                     except audit_science_fingerprint.ScienceFingerprintError as exc:
@@ -2083,7 +2088,8 @@ def main() -> int:
                 try:
                     legacy_epoch_change = (
                         audit_science_fingerprint.legacy_science_epoch_change(
-                            REPO_ROOT
+                            REPO_ROOT,
+                            epoch_cache=science_epoch_cache,
                         )
                     )
                 except audit_science_fingerprint.ScienceFingerprintError as exc:
@@ -2097,7 +2103,16 @@ def main() -> int:
                             f"{cid}: {legacy_epoch_change}; run invalidation "
                             "before treating this legacy audit as live"
                         )
-            judgment_baseline = snap.get("judgment_fingerprint")
+                if snap is not None and not isinstance(snap, dict):
+                    errors.append(
+                        f"{cid}: malformed legacy audit_state_snapshot; "
+                        "run invalidation before treating this audit as live"
+                    )
+            judgment_baseline = (
+                snap.get("judgment_fingerprint")
+                if isinstance(snap, dict)
+                else None
+            )
             if judgment_baseline is not None:
                 judgment_change = (
                     audit_science_fingerprint.judgment_fingerprint_change(
@@ -2109,7 +2124,7 @@ def main() -> int:
                     errors.append(
                         f"{cid}: stale frozen audit judgment: {judgment_change}"
                     )
-        if snap is not None and a not in {None, "unaudited", "audit_in_progress"}:
+        if isinstance(snap, dict) and a not in {None, "unaudited", "audit_in_progress"}:
             crit_now = row.get("criticality") or "leaf"
             crit_at_audit = snap.get("criticality") or "leaf"
             crit_rank = {"leaf": 0, "medium": 1, "high": 2, "critical": 3}

@@ -18,7 +18,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "scripts"))
@@ -27,6 +27,32 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "scripts"))
 SCIENCE_FINGERPRINT_SCHEMA = "science_fingerprint_v2"
 PACKET_POLICY_FINGERPRINT_SCHEMA = "packet_policy_fingerprint_v1"
 JUDGMENT_FINGERPRINT_SCHEMA = "frozen_audit_judgment_v1"
+
+# These sources define which inputs are admissible, how dependency readiness
+# is interpreted, and whether runner evidence is authentic and complete.  The
+# manifest in ``dependency_policy_epoch.json`` must contain this exact set.
+# Keep the tuple centralized so tests and maintenance tools cannot silently
+# mirror a narrower policy boundary.
+DEPENDENCY_POLICY_SOURCES = (
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/scripts/audit_science_fingerprint.py",
+    "docs/audit/scripts/build_citation_graph.py",
+    "docs/audit/scripts/classify_runner_passes.py",
+    "docs/audit/scripts/compute_audit_queue.py",
+    "docs/audit/scripts/compute_effective_status.py",
+    "docs/audit/scripts/forensic_evidence_readiness.py",
+    "docs/audit/scripts/premise_nodes.py",
+    "docs/audit/scripts/runner_pin_gate.py",
+    "scripts/runner_cache.py",
+    "docs/audit/data/doc_authority_registry.json",
+    "docs/audit/data/tier_a_admissions.json",
+    "docs/audit/data/owner_governed_premise_nodes.json",
+    "docs/audit/data/source_path_aliases.json",
+)
+OPTIONAL_DEPENDENCY_POLICY_SOURCES = {
+    "docs/audit/data/tier_a_admissions.json",
+    "docs/audit/data/owner_governed_premise_nodes.json",
+}
 
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 
@@ -52,6 +78,26 @@ def _canonical_json(value: object) -> bytes:
 
 def _digest(value: object) -> str:
     return hashlib.sha256(_canonical_json(value)).hexdigest()
+
+
+def _epoch_value(
+    repo_root: Path,
+    cache: dict[str, str] | None,
+    key: str,
+    builder: Callable[[Path], str],
+) -> str:
+    """Memoize repository-wide epochs only when a caller owns the cache.
+
+    Direct calls remain uncached so unit tests, migrations, and review probes
+    observe filesystem edits immediately.  Long ledger sweeps pass a cache
+    whose lifetime is one immutable repository read, avoiding thousands of
+    repeated hashes of the same governed sources.
+    """
+    if cache is None:
+        return builder(repo_root)
+    if key not in cache:
+        cache[key] = builder(repo_root)
+    return cache[key]
 
 
 def _file_sha256(path: Path, *, required: bool = False) -> str | None:
@@ -213,23 +259,12 @@ def dependency_policy_epoch(repo_root: Path) -> str:
     governed policy surfaces makes a premise/admission/readiness rule change a
     deliberate re-audit event whose blast radius is visible in review.
     """
-    paths = (
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/scripts/build_citation_graph.py",
-        "docs/audit/scripts/compute_effective_status.py",
-        "docs/audit/scripts/premise_nodes.py",
-        "docs/audit/data/doc_authority_registry.json",
-        "docs/audit/data/tier_a_admissions.json",
-        "docs/audit/data/owner_governed_premise_nodes.json",
-        "docs/audit/data/source_path_aliases.json",
-    )
-    optional = {
-        "docs/audit/data/tier_a_admissions.json",
-        "docs/audit/data/owner_governed_premise_nodes.json",
-    }
     actual_sources = {
-        path: _file_sha256(repo_root / path, required=path not in optional)
-        for path in paths
+        path: _file_sha256(
+            repo_root / path,
+            required=path not in OPTIONAL_DEPENDENCY_POLICY_SOURCES,
+        )
+        for path in DEPENDENCY_POLICY_SOURCES
     }
     manifest_path = (
         repo_root / "docs" / "audit" / "data" /
@@ -257,7 +292,11 @@ def dependency_policy_epoch(repo_root: Path) -> str:
     )
 
 
-def legacy_science_epoch_change(repo_root: Path) -> str | None:
+def legacy_science_epoch_change(
+    repo_root: Path,
+    *,
+    epoch_cache: dict[str, str] | None = None,
+) -> str | None:
     """Protect pre-v2 judgments against future premise/policy drift.
 
     Existing audit snapshots predate the per-judgment premise and policy
@@ -291,9 +330,19 @@ def legacy_science_epoch_change(repo_root: Path) -> str | None:
             "legacy science-epoch baseline is malformed; do not refresh "
             "it to silence premise or policy drift"
         )
-    if framework_premise_epoch(repo_root) != expected_framework:
+    if _epoch_value(
+        repo_root,
+        epoch_cache,
+        "framework_premise_epoch",
+        framework_premise_epoch,
+    ) != expected_framework:
         return "legacy_framework_premise_epoch_changed"
-    if dependency_policy_epoch(repo_root) != expected_policy:
+    if _epoch_value(
+        repo_root,
+        epoch_cache,
+        "dependency_policy_epoch",
+        dependency_policy_epoch,
+    ) != expected_policy:
         return "legacy_dependency_policy_epoch_changed"
     return None
 
@@ -365,6 +414,8 @@ def build_science_fingerprint(
     row: dict,
     rows: dict[str, dict],
     repo_root: Path,
+    *,
+    epoch_cache: dict[str, str] | None = None,
 ) -> dict[str, Any]:
     """Build the exact scientific-input baseline for one audit judgment."""
     claim_id = row.get("claim_id")
@@ -438,8 +489,18 @@ def build_science_fingerprint(
         },
         "dependencies": dependency_states,
         "runners": runners,
-        "framework_premise_epoch": framework_premise_epoch(repo_root),
-        "dependency_policy_epoch": dependency_policy_epoch(repo_root),
+        "framework_premise_epoch": _epoch_value(
+            repo_root,
+            epoch_cache,
+            "framework_premise_epoch",
+            framework_premise_epoch,
+        ),
+        "dependency_policy_epoch": _epoch_value(
+            repo_root,
+            epoch_cache,
+            "dependency_policy_epoch",
+            dependency_policy_epoch,
+        ),
     }
     body["digest"] = _digest(body)
     return body
@@ -571,6 +632,8 @@ def judgment_fingerprint(row: dict) -> dict[str, Any]:
         "auditor_family",
         "auditor_model",
         "auditor_reasoning_effort",
+        "audit_invocation_id",
+        "audit_invocation_history",
         "independence",
         "claim_type",
         "claim_scope",

@@ -15,6 +15,7 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 
 import audit_science_fingerprint as science
+import check_changed_audit_evidence
 import codex_audit_runner
 import compute_audit_queue
 import invalidate_stale_audits
@@ -52,17 +53,22 @@ class ScienceFingerprintFixture(unittest.TestCase):
             "docs/ai_methodology/skills/audit-loop/SKILL.md",
             "# audit-loop-v1\n",
         )
-        for relative in (
-            "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-            "docs/audit/scripts/build_citation_graph.py",
-            "docs/audit/scripts/compute_effective_status.py",
-            "docs/audit/scripts/premise_nodes.py",
+        policy_data_paths = {
+            "docs/audit/data/doc_authority_registry.json",
+            "docs/audit/data/tier_a_admissions.json",
+            "docs/audit/data/owner_governed_premise_nodes.json",
             "docs/audit/data/source_path_aliases.json",
+        }
+        for relative in (
+            path
+            for path in science.DEPENDENCY_POLICY_SOURCES
+            if path not in policy_data_paths
         ):
             self._write(
                 relative,
                 "{}\n" if relative.endswith(".json") else "# policy-v1\n",
             )
+        self._write_json("docs/audit/data/source_path_aliases.json", {})
         self._write_json(
             "docs/audit/data/axiom_premise_nodes.json",
             {
@@ -81,16 +87,6 @@ class ScienceFingerprintFixture(unittest.TestCase):
             "docs/audit/data/doc_authority_registry.json",
             {"schema_version": 1, "rows": []},
         )
-        dependency_policy_paths = (
-            "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-            "docs/audit/scripts/build_citation_graph.py",
-            "docs/audit/scripts/compute_effective_status.py",
-            "docs/audit/scripts/premise_nodes.py",
-            "docs/audit/data/doc_authority_registry.json",
-            "docs/audit/data/tier_a_admissions.json",
-            "docs/audit/data/owner_governed_premise_nodes.json",
-            "docs/audit/data/source_path_aliases.json",
-        )
         self._write_json(
             "docs/audit/data/dependency_policy_epoch.json",
             {
@@ -102,7 +98,7 @@ class ScienceFingerprintFixture(unittest.TestCase):
                         if (self.root / relative).is_file()
                         else None
                     )
-                    for relative in dependency_policy_paths
+                    for relative in science.DEPENDENCY_POLICY_SOURCES
                 },
             },
         )
@@ -243,6 +239,27 @@ class ScienceFingerprintFixture(unittest.TestCase):
                 self.rows["target"], self.rows, self.root
             )
 
+    def test_readiness_policy_is_inside_dependency_epoch(self) -> None:
+        before = science.build_science_fingerprint(
+            self.rows["chain"], self.rows, self.root
+        )
+        policy_path = "docs/audit/scripts/forensic_evidence_readiness.py"
+        self._write(policy_path, "# reviewed readiness policy v2\n")
+        manifest_path = "docs/audit/data/dependency_policy_epoch.json"
+        manifest = json.loads((self.root / manifest_path).read_text())
+        manifest["epoch"] = "fixture_dependency_policy_v2"
+        manifest["sources"][policy_path] = hashlib.sha256(
+            (self.root / policy_path).read_bytes()
+        ).hexdigest()
+        self._write_json(manifest_path, manifest)
+        after = science.build_science_fingerprint(
+            self.rows["chain"], self.rows, self.root
+        )
+        self.assertEqual(
+            science.science_fingerprint_change(before, after),
+            "science_changed:dependency_policy_epoch",
+        )
+
     def test_premise_removal_is_visible_to_legacy_snapshots(self) -> None:
         snapshot = {
             "deps": ["axiom"],
@@ -305,6 +322,24 @@ class ScienceFingerprintFixture(unittest.TestCase):
         rows = {**self.rows, "target": target}
         self._write("docs/AXIOM.md", "# Reviewed axiom revision\n")
 
+        with mock.patch.object(invalidate_stale_audits, "REPO_ROOT", self.root):
+            self.assertEqual(
+                invalidate_stale_audits.detect_invalidation(target, rows),
+                "legacy_framework_premise_epoch_changed",
+            )
+
+    def test_future_axiom_change_invalidates_snapshotless_active_judgment(self) -> None:
+        target = {
+            **self.rows["target"],
+            "audit_status": "audit_in_progress",
+            "audit_state_snapshot": None,
+            "cross_confirmation": {
+                "status": "awaiting_second",
+                "first_audit": {"verdict": "audited_clean"},
+            },
+        }
+        rows = {**self.rows, "target": target}
+        self._write("docs/AXIOM.md", "# Reviewed axiom revision\n")
         with mock.patch.object(invalidate_stale_audits, "REPO_ROOT", self.root):
             self.assertEqual(
                 invalidate_stale_audits.detect_invalidation(target, rows),
@@ -395,6 +430,10 @@ class ScienceFingerprintFixture(unittest.TestCase):
         row = {
             **self.rows["target"],
             "verdict_rationale": "frozen scientific rationale",
+            "audit_invocation_id": "11111111-1111-4111-8111-111111111111",
+            "audit_invocation_history": [
+                "11111111-1111-4111-8111-111111111111"
+            ],
             "no_go_discipline": {"required": True, "status": "FAIL"},
         }
         baseline = science.judgment_fingerprint(row)
@@ -411,6 +450,14 @@ class ScienceFingerprintFixture(unittest.TestCase):
         }
         self.assertEqual(
             science.judgment_fingerprint_change(baseline, changed_judgment),
+            "audit_judgment_changed_without_new_fingerprint",
+        )
+        changed_seat = {
+            **packet_only,
+            "audit_invocation_id": "22222222-2222-4222-8222-222222222222",
+        }
+        self.assertEqual(
+            science.judgment_fingerprint_change(baseline, changed_seat),
             "audit_judgment_changed_without_new_fingerprint",
         )
 
@@ -464,6 +511,36 @@ class ScienceFingerprintFixture(unittest.TestCase):
         with mock.patch.object(restore, "REPO_ROOT", self.root):
             self.assertIsNone(restore.restore_audit_from_previous(reset, rows))
 
+    def test_restore_rejects_tampered_frozen_judgment(self) -> None:
+        audited = {
+            **self.rows["target"],
+            "audit_status": "audited_numerical_match",
+            "audit_date": "2026-08-01",
+            "auditor": "independent-seat",
+            "verdict_rationale": "original frozen rationale",
+        }
+        science_baseline = science.build_science_fingerprint(
+            audited, self.rows, self.root
+        )
+        snapshot = {
+            "science_fingerprint": science_baseline,
+            "judgment_fingerprint": science.judgment_fingerprint(audited),
+        }
+        archived = {
+            **audited,
+            "verdict_rationale": "tampered archived rationale",
+            "audit_state_snapshot": snapshot,
+            "invalidation_reason": "no_go_discipline_packet_missing",
+        }
+        reset = {
+            **self.rows["target"],
+            "audit_status": "unaudited",
+            "previous_audits": [archived],
+        }
+        rows = {**self.rows, "target": reset}
+        with mock.patch.object(restore, "REPO_ROOT", self.root):
+            self.assertIsNone(restore.restore_audit_from_previous(reset, rows))
+
     def test_queue_routes_only_exact_science_to_packet_upgrade(self) -> None:
         baseline = science.build_science_fingerprint(
             self.rows["target"], self.rows, self.root
@@ -502,7 +579,36 @@ class ScienceFingerprintFixture(unittest.TestCase):
                     target_without_proof,
                     {**rows, "target": target_without_proof},
                 )[0],
-                "provenance_reconstruction_required",
+                "fresh_scientific_audit",
+            )
+
+            newer_live_judgment = {
+                **target,
+                "audit_status": "audited_conditional",
+                "verdict_rationale": "newer live scientific judgment",
+            }
+            self.assertEqual(
+                compute_audit_queue.audit_work_kind(
+                    newer_live_judgment,
+                    {**rows, "target": newer_live_judgment},
+                )[0],
+                "fresh_scientific_audit",
+            )
+
+            newer_archive = {
+                **archived,
+                "invalidation_reason": "science_changed:target_source",
+            }
+            reset_with_newer_archive = {
+                **target,
+                "previous_audits": [archived, newer_archive],
+            }
+            self.assertEqual(
+                compute_audit_queue.audit_work_kind(
+                    reset_with_newer_archive,
+                    {**rows, "target": reset_with_newer_archive},
+                )[0],
+                "fresh_scientific_audit",
             )
 
             self._write("docs/AXIOM.md", "# Changed axiom after audit\n")
@@ -536,6 +642,11 @@ class ScienceFingerprintFixture(unittest.TestCase):
                         "ready": True,
                         "audit_work_kind": "provenance_reconstruction_required",
                     },
+                    {
+                        "claim_id": "blocked-fresh",
+                        "ready": False,
+                        "audit_work_kind": "fresh_scientific_audit",
+                    },
                 ]
             }),
             encoding="utf-8",
@@ -544,6 +655,61 @@ class ScienceFingerprintFixture(unittest.TestCase):
             self.assertEqual(
                 [row["claim_id"] for row in codex_audit_runner.load_queue()],
                 ["fresh"],
+            )
+            self.assertEqual(
+                [
+                    row["claim_id"]
+                    for row in codex_audit_runner.load_queue(ready_only=False)
+                ],
+                ["fresh", "blocked-fresh"],
+            )
+
+    def test_deployed_legacy_epoch_baseline_change_fails_review_gate(self) -> None:
+        paths = {check_changed_audit_evidence.LEGACY_EPOCH_BASELINE_PATH}
+        with (
+            mock.patch.object(
+                check_changed_audit_evidence,
+                "merge_base_commit",
+                return_value="base-sha",
+            ),
+            mock.patch.object(
+                check_changed_audit_evidence,
+                "_git",
+                return_value=(
+                    check_changed_audit_evidence.LEGACY_EPOCH_BASELINE_PATH
+                    + "\n"
+                ),
+            ),
+        ):
+            failures = check_changed_audit_evidence.immutable_control_failures(
+                "origin/main",
+                paths,
+            )
+        self.assertEqual(
+            failures[0]["control"],
+            "immutable_legacy_science_epoch_baseline",
+        )
+
+    def test_initial_legacy_epoch_baseline_introduction_is_allowed(self) -> None:
+        paths = {check_changed_audit_evidence.LEGACY_EPOCH_BASELINE_PATH}
+        with (
+            mock.patch.object(
+                check_changed_audit_evidence,
+                "merge_base_commit",
+                return_value="base-sha",
+            ),
+            mock.patch.object(
+                check_changed_audit_evidence,
+                "_git",
+                return_value="",
+            ),
+        ):
+            self.assertEqual(
+                check_changed_audit_evidence.immutable_control_failures(
+                    "origin/main",
+                    paths,
+                ),
+                [],
             )
 
 

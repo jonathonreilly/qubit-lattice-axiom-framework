@@ -1549,8 +1549,8 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     else:
         row["no_go_discipline"] = judgment.get("no_go_discipline")
     row["blocker"] = None
-    row["audit_state_snapshot"] = snapshot_audit_state(row, rows)
     consume_audit_invocation(row, invocation_id)
+    row["audit_state_snapshot"] = snapshot_audit_state(row, rows)
     rows[cid] = row
     ledger["rows"] = rows
     return True, f"judicial panel majority confirmed {side} verdict"
@@ -1597,13 +1597,13 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
 
     def accept_row() -> None:
         """Commit the detached row and consume this invocation exactly once."""
+        consume_audit_invocation(row, invocation_id)
         if row.get("audit_status") not in {None, "unaudited"}:
             # Several governed paths return before the ordinary field-apply
             # tail (first critical seat, disagreements, explicit second
             # seats).  They still contain a scientific judgment and therefore
             # need the same fail-closed provenance baseline.
             row["audit_state_snapshot"] = snapshot_audit_state(row, rows)
-        consume_audit_invocation(row, invocation_id)
         rows[cid] = row
         ledger["rows"] = rows
 
@@ -2079,10 +2079,6 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         if "prose_corrections" in audit:
             row["prose_corrections"] = audit["prose_corrections"]
 
-    # Snapshot the state at audit time so invalidate_stale_audits.py can
-    # detect changes that warrant re-audit (dep added/removed, dep status
-    # changed, criticality bumped).
-    row["audit_state_snapshot"] = snapshot_audit_state(row, rows)
     accept_row()
     if terminal_second_pass_error:
         return False, terminal_second_pass_error

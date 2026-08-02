@@ -654,13 +654,23 @@ REQUIRED_VERDICT_FIELDS = {
     "negative_assertion_classes",
 }
 
-# A validator-guided packet-completion pass is not a second scientific audit.
-# Every top-level key and value except ``no_go_discipline`` remains exactly
-# stable. This prevents the focused pass from changing the verdict, type,
-# scope, closure judgment, rationale, declarations, confidence, or optional
-# apply controls such as ``pre_audit_prose_fix`` and
-# ``cross_confirmation_role``.
+# A validator-guided packet-mechanics pass is not a second scientific audit.
+# Every top-level key/value and every substantive N1-N8 value remains exactly
+# stable. The focused pass may correct only citation bindings and authenticated
+# occurrence metadata, which the unchanged validator checks against the
+# restricted packet. This prevents the pass from changing the verdict, type,
+# scope, closure judgment, rationale, declarations, confidence, packet
+# classifications/dispositions, or optional apply controls such as
+# ``pre_audit_prose_fix`` and ``cross_confirmation_role``.
 VALIDATION_REPAIR_MUTABLE_FIELD = "no_go_discipline"
+VALIDATION_REPAIR_LOCATOR_FIELDS = {
+    "evidence_path",
+    "evidence_locator",
+    "claim_evidence_path",
+    "claim_evidence_locator",
+    "resolution_evidence_path",
+    "resolution_evidence_locator",
+}
 
 # Map JSON-extracted-from-stdout to apply_audit.py's input schema. apply_audit
 # expects `verdict` etc. plus the runner-side fields auditor/auditor_family/
@@ -2995,26 +3005,31 @@ def render_validation_repair_prompt(
     validation_error: str,
     attempt: int,
 ) -> str:
-    """Ask a focused pass to complete only the rejected N1-N8 packet.
+    """Ask a focused pass to correct only rejected N1-N8 mechanics.
 
     The original restricted evidence and rejected object are repeated verbatim.
     The unchanged validator and apply gate still decide whether the completed
-    object is usable. Every top-level scientific judgment remains immutable;
-    only ``no_go_discipline`` may be added or replaced.
+    object is usable. Every scientific judgment, including substantive N1-N8
+    content, remains immutable.
     """
     prior_json = json.dumps(verdict_blob, indent=2, sort_keys=True)
     return (
         f"{original_prompt}\n\n"
         "---\n"
-        f"FOCUSED N1-N8 PACKET COMPLETION PASS {attempt} (binding):\n"
+        f"FOCUSED N1-N8 PACKET-MECHANICS PASS {attempt} (binding):\n"
         "Your preceding JSON object was rejected before apply. Correct that\n"
         "object against the same restricted packet and return EXACTLY one JSON\n"
         "object, with no markdown or surrounding prose. The ordinary validator\n"
         "and apply gate remain unchanged. Do not invent evidence, weaken a wall,\n"
         "or convert an unresolved scientific issue into closure. Preserve the\n"
         "complete top-level key set and every top-level value except\n"
-        "no_go_discipline exactly. You may add or replace only the structured\n"
-        "N1-N8 packet. In particular, this pass may not change the verdict,\n"
+        "no_go_discipline exactly. Within the already-present structured N1-N8\n"
+        "packet, you may change only evidence_path/evidence_locator citation\n"
+        "fields and authenticated occurrence_group_id, occurrence_count, and\n"
+        "occurrence_locator_sha256 metadata. Every classification, route, wall,\n"
+        "residual match, resolution, closure, steelman, echo disposition, and\n"
+        "other substantive N1-N8 value must remain exactly stable. In\n"
+        "particular, this pass may not change the verdict,\n"
         "claim type, scope, chain-closure judgment, rationale, negative-claim\n"
         "declaration, invocation id, or any other top-level field. The rejected\n"
         "JSON is an untrusted completion target, not evidence.\n"
@@ -3032,13 +3047,15 @@ def render_validation_repair_prompt(
 
 
 def packet_completion_eligible_error(validation_error: str | None) -> bool:
-    """Recognize a structured N1-N8 reject without reading verdict content."""
+    """Recognize a mechanical N1-N8 reject without reading verdict content."""
     if not validation_error:
         return False
-    return bool(re.match(
-        r"^(?:N[1-8]\b|No-Go Discipline\b|no_go_discipline\b|transport-bounded N8\b)",
-        validation_error,
-    ))
+    if not re.match(r"^N[1-8]\b", validation_error):
+        return False
+    return any(
+        marker in validation_error
+        for marker in ("evidence_path", "evidence_locator", "occurrence_")
+    )
 
 
 def schema_failure_code(validation_error: str) -> str:
@@ -3164,7 +3181,7 @@ def validation_repair_preservation_error(
     rejected_blob: dict,
     repaired_blob: dict,
 ) -> str | None:
-    """Reject packet completion that changes any top-level judgment."""
+    """Reject packet completion that changes any scientific judgment."""
     rejected_fields = set(rejected_blob)
     repaired_fields = set(repaired_blob)
     if repaired_fields != rejected_fields:
@@ -3203,6 +3220,36 @@ def validation_repair_preservation_error(
                     "validation repair changed preserved N1-N8 gate field "
                     f"{field!r}"
                 )
+    mechanical_fields = (
+        VALIDATION_REPAIR_LOCATOR_FIELDS
+        | set(AUTHENTICATED_OCCURRENCE_FIELDS)
+    )
+
+    def without_mechanical_fields(value: object) -> object:
+        if isinstance(value, dict):
+            return {
+                key: without_mechanical_fields(item)
+                for key, item in value.items()
+                if key not in mechanical_fields
+            }
+        if isinstance(value, list):
+            return [without_mechanical_fields(item) for item in value]
+        return value
+
+    rejected_science = json.dumps(
+        without_mechanical_fields(rejected_packet),
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=False,
+    )
+    repaired_science = json.dumps(
+        without_mechanical_fields(repaired_packet),
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=False,
+    )
+    if repaired_science != rejected_science:
+        return "validation repair changed preserved no-go scientific content"
     return None
 
 
@@ -3308,11 +3355,11 @@ def main() -> int:
         default=1,
         help=(
             "After a complete prompt-bound judgment fails a strict N1-N8 "
-            "packet rule, run this many focused completions that may replace "
-            "only no_go_discipline (default 1; 0 disables). Every other "
-            "top-level value is immutable and the unchanged validator/apply "
-            "gates still bind. The legacy --validation-repair-attempts name "
-            "is accepted as an alias."
+            "citation or occurrence-metadata rule, run this many focused "
+            "mechanics corrections (default 1; 0 disables). Every top-level "
+            "value and substantive N1-N8 value is immutable, and the "
+            "unchanged validator/apply gates still bind. The legacy "
+            "--validation-repair-attempts name is accepted as an alias."
         ),
     )
     p.add_argument(
@@ -3419,8 +3466,8 @@ def main() -> int:
     if args.fresh_schema_retry_attempts != 0:
         print(
             "REFUSING: --fresh-schema-retry-attempts is retired; use 0. "
-            "Packet rejects may receive only judgment-preserving focused "
-            "completion."
+            "Eligible packet rejects may receive only judgment-preserving "
+            "focused mechanics correction."
         )
         return 2
     if args.from_dispatch and args.from_reaudit_candidates:
@@ -3981,6 +4028,7 @@ def main() -> int:
                 transport_bounded_n8=transport_bound is not None,
             )
             initial_validation_error = err
+            routing_validation_error = err
             initial_rejected_blob = blob
             repair_elapsed = 0.0
             repair_attempts_used = 0
@@ -4135,12 +4183,19 @@ def main() -> int:
                         }) + "\n")
                     if preservation_error is None:
                         blob = repair_blob
+                        if repair_error is not None:
+                            routing_validation_error = repair_error
                     err = repair_error
                     if err is None:
                         print(
                             f"  validation repair passed "
                             f"({repair_elapsed:.1f}s cumulative)"
                         )
+                        break
+                    if (
+                        preservation_error is None
+                        and not packet_completion_eligible_error(err)
+                    ):
                         break
                 elapsed += repair_elapsed
             if (
@@ -4150,16 +4205,22 @@ def main() -> int:
                 and not err.startswith("validation repair codex exec failed:")
             ):
                 # A malformed or judgment-changing completion cannot replace
-                # the original validator reject. Preserve the exact routing
-                # signal while keeping the rejected scientific tuple intact.
-                err = initial_validation_error
+                # the last validator reject reached by an accepted mechanical
+                # correction. Preserve that exact routing signal while keeping
+                # the rejected scientific tuple intact.
+                err = routing_validation_error
             if err:
                 print(f"  FAIL validate: {err}")
                 failed += 1
                 failure_code = schema_failure_code(err)
                 failure_class = validation_failure_class(
                     err,
-                    packet_completion_eligible=repair_eligible,
+                    packet_completion_eligible=validation_repair_eligible(
+                        blob,
+                        cid,
+                        err,
+                        expected_invocation_id=audit_invocation_id,
+                    ),
                 )
                 with run_log.open("a", encoding="utf-8") as f:
                     f.write(json.dumps({

@@ -1,0 +1,1055 @@
+{
+  "Cycle789_full_target_deltas": [
+    {
+      "Cycle789_fixture_identity_failures": 0,
+      "boundary": "the landed physical edge row is exactly two-cell local; the full target adds a Z-only lexicographic Jordan--Wigner bridge whose support grows with intervening cells",
+      "bridge_non_Z_failures": 0,
+      "by_axis": {
+        "0": {
+          "Z_bridge_weights": [
+            18
+          ],
+          "edges": 8,
+          "lexicographic_cell_index_distances": [
+            4
+          ]
+        },
+        "1": {
+          "Z_bridge_weights": [
+            6
+          ],
+          "edges": 6,
+          "lexicographic_cell_index_distances": [
+            2
+          ]
+        },
+        "2": {
+          "Z_bridge_weights": [
+            0
+          ],
+          "edges": 6,
+          "lexicographic_cell_index_distances": [
+            1
+          ]
+        }
+      },
+      "cells": 12,
+      "edges": 20,
+      "maximum_Z_bridge_weight": 18,
+      "physical_equals_embedded_two_cell_failures": 0,
+      "raw_physical_to_target_phase_two_failures": 0,
+      "raw_target_to_canonical_phase_two_failures": 0,
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "target_bridge_replay_failures": 0,
+      "total_Z_bridge_weight": 180,
+      "weight_formula_6_times_lexicographic_distance_minus_one_failures": 0
+    },
+    {
+      "Cycle789_fixture_identity_failures": 0,
+      "boundary": "the landed physical edge row is exactly two-cell local; the full target adds a Z-only lexicographic Jordan--Wigner bridge whose support grows with intervening cells",
+      "bridge_non_Z_failures": 0,
+      "by_axis": {
+        "0": {
+          "Z_bridge_weights": [
+            30
+          ],
+          "edges": 24,
+          "lexicographic_cell_index_distances": [
+            6
+          ]
+        },
+        "1": {
+          "Z_bridge_weights": [
+            6
+          ],
+          "edges": 20,
+          "lexicographic_cell_index_distances": [
+            2
+          ]
+        },
+        "2": {
+          "Z_bridge_weights": [
+            0
+          ],
+          "edges": 15,
+          "lexicographic_cell_index_distances": [
+            1
+          ]
+        }
+      },
+      "cells": 30,
+      "edges": 59,
+      "maximum_Z_bridge_weight": 30,
+      "physical_equals_embedded_two_cell_failures": 0,
+      "raw_physical_to_target_phase_two_failures": 0,
+      "raw_target_to_canonical_phase_two_failures": 0,
+      "shape": [
+        5,
+        3,
+        2
+      ],
+      "target_bridge_replay_failures": 0,
+      "total_Z_bridge_weight": 840,
+      "weight_formula_6_times_lexicographic_distance_minus_one_failures": 0
+    }
+  ],
+  "abstract_active_covariance": {
+    "active_decoded_gauge_to_clean_group_symmetric_difference": 0,
+    "active_encoded_frame_membership_mismatches": 16,
+    "active_gate_maximum": 410,
+    "active_gauge_group_symmetric_difference": 0,
+    "active_inverse_failures": 0,
+    "active_paired_failures": 0,
+    "active_two_qubit_gate_maximum": 161,
+    "boundary": "abstract active Clifford/tableau covariance only; literal routing of the 23 non-selected active words is not claimed",
+    "direct_13_gate_native_slice_frames": 1,
+    "matter_frame_product_failures": 0,
+    "ordered_frame_products": 576,
+    "physical_frame_product_failures": 0,
+    "proper_cubic_frames": 24,
+    "six_colour_bijection_failures": 0,
+    "six_colour_product_failures": 0,
+    "translation_colour_law_failures": 0
+  },
+  "checks": {
+    "Cycle789_full_target_delta_is_exact_growing_Z_bridge": true,
+    "abstract_active_24_frames_576_products_exact": true,
+    "all_frontier_imports_beneath_repo_scripts": true,
+    "all_prepare_inverse_factor_deletions_detected": true,
+    "direct_import_inventory_complete": true,
+    "four_seam_factors_and_complete_wrapper_exact": true,
+    "landed_one_particle_mass_and_contact_fixture_rerun": true,
+    "local_vs_full_term2_character_census_matches": true,
+    "pinned_origin_main_direct_import_hashes": true,
+    "six_disjoint_axis_parity_layers_cover_all_factors": true,
+    "three_native_13_gate_words_exact": true
+  },
+  "classification": "PORTABLE_ORIGIN_MAIN_LOCAL_E2_AND_TARGET_DELTA",
+  "direct_import_sha256_pins": {
+    "frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3",
+    "frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py": "c2e7f261c47092f11e445b16bde703330ccfd3e3af06bec0dac078ba64cf2297",
+    "frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982",
+    "frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py": "42ada20e51eaf48c14d9862ddce1467982af90874829ddac62ba75b424d45da5",
+    "frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py": "808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c",
+    "frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py": "990016c074cfc98cd2e4ba2f27afe0e7dd2da7a96b9a38a13d4062f778216a36",
+    "frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py": "ed7cec59daa3a640a48706ed57d6a1699700a61d3d86964ad07a3e2b1c343721",
+    "frontier_factorization_object_api_2026_07_28.py": "a6fed8f34adbf36f82501fa827c756ce488d8b67e375e9ae28aa519cd727f0e7"
+  },
+  "foreign_frontier_imports": [],
+  "landed_one_particle_mass_contact_fixture": {
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "contact_double_occupation_phase_residual": 0.0,
+    "contact_vacuum_and_one_particle_residual": 0.0,
+    "one_particle_coin_eigen_residual": 2.594441202963249e-16,
+    "one_particle_extended_even_sector_present": true,
+    "one_particle_mass": 0.45340565417488515,
+    "one_particle_mass_residual": 5.551115123125783e-17
+  },
+  "loaded_landed_import_count": 46,
+  "loaded_landed_import_inventory": [
+    {
+      "bytes": 39426,
+      "git_blob_sha1": "54f104bca5fa994e16cb56ff62d4631ade6d5c10",
+      "module_names": [
+        "ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17"
+      ],
+      "relative_path": "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+      "sha256": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9"
+    },
+    {
+      "bytes": 11463,
+      "git_blob_sha1": "7f07c00dba3e5f89b4c2bea4b34e74bb43a117d0",
+      "module_names": [
+        "active_cubic_source_response_cycle211_2026_07_16"
+      ],
+      "relative_path": "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+      "sha256": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6"
+    },
+    {
+      "bytes": 20516,
+      "git_blob_sha1": "6e4cf833d410d2296521adf074286a2c43b3a6e9",
+      "module_names": [
+        "archive_carrier_source_ledger_cycle227_2026_07_17"
+      ],
+      "relative_path": "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+      "sha256": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a"
+    },
+    {
+      "bytes": 23941,
+      "git_blob_sha1": "aa4ab2a26da22c713686ac0038270f88d6ba99c1",
+      "module_names": [
+        "autonomous_cubic_field_emission_cycle214_2026_07_16"
+      ],
+      "relative_path": "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+      "sha256": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4"
+    },
+    {
+      "bytes": 9484,
+      "git_blob_sha1": "1e36cd2e9780b1bf7aa294e221a09167e40a01f2",
+      "module_names": [
+        "common_matter_field_coin_family_cycle219_2026_07_16"
+      ],
+      "relative_path": "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+      "sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a"
+    },
+    {
+      "bytes": 15919,
+      "git_blob_sha1": "7e9aa844b665d3e1d06334ddb2c4e2bd632228b7",
+      "module_names": [
+        "finite_coin_scalar_wave_dilation_cycle215_2026_07_16"
+      ],
+      "relative_path": "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+      "sha256": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17"
+    },
+    {
+      "bytes": 27453,
+      "git_blob_sha1": "1bb451682f609fc3340c5c4a337ebdcf6f1d8583",
+      "module_names": [
+        "fock_modular_boundary_current_cycle229_2026_07_17"
+      ],
+      "relative_path": "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+      "sha256": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7"
+    },
+    {
+      "bytes": 66435,
+      "git_blob_sha1": "1cf7c95b6ccbdd2ea9757770def4696e89814df5",
+      "module_names": [
+        "frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25"
+      ],
+      "relative_path": "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
+      "sha256": "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4"
+    },
+    {
+      "bytes": 52179,
+      "git_blob_sha1": "8b3d7997d8fd6f20bd0ac31269e64b1e3fc732d3",
+      "module_names": [
+        "frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26"
+      ],
+      "relative_path": "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+      "sha256": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69"
+    },
+    {
+      "bytes": 10351,
+      "git_blob_sha1": "0427cf49484a312fb2ebe2fcd35430be2dad01b5",
+      "module_names": [
+        "frontier_cycle708_cube_basis_gauge_core_2026_07_26"
+      ],
+      "relative_path": "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+      "sha256": "b42ea07c1ed671b9cbab38bc38eba6f8166fe65be52295941a95e3ed75049abf"
+    },
+    {
+      "bytes": 17316,
+      "git_blob_sha1": "6a58331ff33fc0bcf9a4f61965e4b87ccef5d6da",
+      "module_names": [
+        "frontier_cycle708_endpoint_cube_tableau_core_2026_07_26"
+      ],
+      "relative_path": "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+      "sha256": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3"
+    },
+    {
+      "bytes": 38764,
+      "git_blob_sha1": "4f53c00be333427b111bf7b129826e5474c4b9be",
+      "module_names": [
+        "frontier_cycle708_physical_endpoint_cube_core_2026_07_26"
+      ],
+      "relative_path": "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+      "sha256": "3aa964a6eaca559048a53de580f39d9295a3e4b41ef9d4ff9dcdd4d3ff7444a7"
+    },
+    {
+      "bytes": 34366,
+      "git_blob_sha1": "f284f9ec776fabb463e894130db93acc8ce29fd3",
+      "module_names": [
+        "frontier_cycle709_local_seam_clifford_core_2026_07_26"
+      ],
+      "relative_path": "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+      "sha256": "5d49d85ddbc4daddfc0b24737dc569eaa9f32a050f5fccf48f048fe0fdd74b40"
+    },
+    {
+      "bytes": 21640,
+      "git_blob_sha1": "5254571dd02f24affb18dd087d58c3755bc5761d",
+      "module_names": [
+        "frontier_cycle709_local_seam_physical_core_2026_07_26"
+      ],
+      "relative_path": "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+      "sha256": "d74fb32e21879b2a843eae822c8e71b950729d9dc295eaf336911f174cceee3a"
+    },
+    {
+      "bytes": 63376,
+      "git_blob_sha1": "539421fb6bc963b17b0a5b9c669effeb784b0c49",
+      "module_names": [
+        "frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26"
+      ],
+      "relative_path": "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+      "sha256": "c2e7f261c47092f11e445b16bde703330ccfd3e3af06bec0dac078ba64cf2297"
+    },
+    {
+      "bytes": 23309,
+      "git_blob_sha1": "9c0be02dd8d063121047b967c0b67683153acb30",
+      "module_names": [
+        "frontier_cycle720_bounded_general_clifford_orbit_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_bounded_general_clifford_orbit_2026_07_27.py",
+      "sha256": "742ca885cea8b734d0ba8398028f60ae8a7162e7a7970ba3160015c0eb1b28b8"
+    },
+    {
+      "bytes": 28286,
+      "git_blob_sha1": "049d16ffbd7f7c9092e3bf9d43596341c6c9f7c7",
+      "module_names": [
+        "frontier_cycle720_cell_majorana_companion_geometry_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
+      "sha256": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982"
+    },
+    {
+      "bytes": 52283,
+      "git_blob_sha1": "01f01cb929b2873cc17a574ada4cc50ae298504d",
+      "module_names": [
+        "frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py",
+      "sha256": "6a309f6449d155244b1dbee581cbe169937db5fe815c4dcc3e93929274a79004"
+    },
+    {
+      "bytes": 58331,
+      "git_blob_sha1": "3c2a51d6c8350fba0e055f0a2c0aec520e2c71eb",
+      "module_names": [
+        "frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py",
+      "sha256": "42ada20e51eaf48c14d9862ddce1467982af90874829ddac62ba75b424d45da5"
+    },
+    {
+      "bytes": 53731,
+      "git_blob_sha1": "207e4a6c76857675e698916ae0310aad433b68e5",
+      "module_names": [
+        "frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
+      "sha256": "808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c"
+    },
+    {
+      "bytes": 22077,
+      "git_blob_sha1": "67edfdd84625c4679df014ae58ad5fb36118eb18",
+      "module_names": [
+        "frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py",
+      "sha256": "990016c074cfc98cd2e4ba2f27afe0e7dd2da7a96b9a38a13d4062f778216a36"
+    },
+    {
+      "bytes": 29932,
+      "git_blob_sha1": "cdd3763adfd9058f5493e7707b7bc18b0a2bc51c",
+      "module_names": [
+        "frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27.py",
+      "sha256": "91ec583b03dafa5af1e26b1a87de771d3f92b1908848794d4b5b32b5e170e399"
+    },
+    {
+      "bytes": 41728,
+      "git_blob_sha1": "6d92ce299947520d09039de69364a6ec69a97e34",
+      "module_names": [
+        "frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
+      "sha256": "108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974"
+    },
+    {
+      "bytes": 29897,
+      "git_blob_sha1": "174ee96068583df4e1f8851d1d388e1fc50f4633",
+      "module_names": [
+        "frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27.py",
+      "sha256": "d85a0dda0004e395d9e14b891a2c2616a93295b99c256b2d3e0f19e6c3bb360a"
+    },
+    {
+      "bytes": 42254,
+      "git_blob_sha1": "5bbfefbe8ac93b282e422faf6aba38f749830b13",
+      "module_names": [
+        "frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py",
+      "sha256": "ee7d6c6d442bac4fe646535ed46369a649fc8b80eb661044242392058c139628"
+    },
+    {
+      "bytes": 32343,
+      "git_blob_sha1": "6f12afbe928e9bbd67d6828d9992d8ba97a29eeb",
+      "module_names": [
+        "frontier_cycle720_companion_subsystem_m2_update_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
+      "sha256": "34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d"
+    },
+    {
+      "bytes": 31140,
+      "git_blob_sha1": "6f146a08de0d9d3a15c823021d9e8ae77f07cf6e",
+      "module_names": [
+        "frontier_cycle720_companion_subsystem_mixed_gauge_factorization_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_companion_subsystem_mixed_gauge_factorization_2026_07_27.py",
+      "sha256": "0c999aab2010a4ed1b77a0491a36bd9447db867513f6095b4ac2ebb43c5c5399"
+    },
+    {
+      "bytes": 42655,
+      "git_blob_sha1": "29016a46251458c41b65fb624a50672aa7163d40",
+      "module_names": [
+        "frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py",
+      "sha256": "dee1557eca4b88af75c469413290801577415cdf4ebfa3d970ceaa5ea15a2a8b"
+    },
+    {
+      "bytes": 30747,
+      "git_blob_sha1": "6fc3600e44d32396e400482c927b7b794a846ddb",
+      "module_names": [
+        "frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
+      "sha256": "ed7cec59daa3a640a48706ed57d6a1699700a61d3d86964ad07a3e2b1c343721"
+    },
+    {
+      "bytes": 27323,
+      "git_blob_sha1": "c881c3a4f1158293f85da3aacaaa28f56c6b8c11",
+      "module_names": [
+        "frontier_cycle720_product_companion_full_word_holonomy_2026_07_27"
+      ],
+      "relative_path": "scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py",
+      "sha256": "438ab263262df8aee2ef1f2cc56fd6ac71a91d19c1fa9d422dd3f5418c7e340c"
+    },
+    {
+      "bytes": 44755,
+      "git_blob_sha1": "4dd9d4bb74e4ef5e752ff3ebcac0efa1d6b744aa",
+      "module_names": [
+        "__main__"
+      ],
+      "relative_path": "scripts/frontier_cycle868_transient_two_cell_companion_encoder_2026_08_02.py",
+      "sha256": "52a78f5ca46e1d61e5e0faab5cfe3ba6ed29f0f5c9a66b4f2c3ed6c0646beeb8"
+    },
+    {
+      "bytes": 26029,
+      "git_blob_sha1": "5346d9019b218508fa6659ced1d3cec430a0b23b",
+      "module_names": [
+        "frontier_factorization_object_api_2026_07_28"
+      ],
+      "relative_path": "scripts/frontier_factorization_object_api_2026_07_28.py",
+      "sha256": "a6fed8f34adbf36f82501fa827c756ce488d8b67e375e9ae28aa519cd727f0e7"
+    },
+    {
+      "bytes": 32492,
+      "git_blob_sha1": "313a3d4960620cf28cfc9022d5fe36d0c9922e1e",
+      "module_names": [
+        "frontier_full128_25site_nn_circuit_core_2026_07_24"
+      ],
+      "relative_path": "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+      "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+    },
+    {
+      "bytes": 29115,
+      "git_blob_sha1": "431acbd3906f70c6bc3c7f47d45df4eaff5c6d48",
+      "module_names": [
+        "frontier_full128_bare_frame_pair_cocycle_2026_07_24"
+      ],
+      "relative_path": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+      "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0"
+    },
+    {
+      "bytes": 14150,
+      "git_blob_sha1": "e1566f84c2245a70c016fb67d178fe6a73d6d972",
+      "module_names": [
+        "frontier_full128_code_projectors_2026_07_24"
+      ],
+      "relative_path": "scripts/frontier_full128_code_projectors_2026_07_24.py",
+      "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44"
+    },
+    {
+      "bytes": 38220,
+      "git_blob_sha1": "f8c35b6d4435a62efd08457de8ee768ae60cb37e",
+      "module_names": [
+        "frontier_full128_cycle_cocycle_intertwiner_2026_07_24"
+      ],
+      "relative_path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+      "sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195"
+    },
+    {
+      "bytes": 36632,
+      "git_blob_sha1": "8a991399d0d4ebc9abd2fb30bc99451f1664354c",
+      "module_names": [
+        "frontier_full128_cycle_encoder_2026_07_24"
+      ],
+      "relative_path": "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+      "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935"
+    },
+    {
+      "bytes": 30748,
+      "git_blob_sha1": "5762deccd63319693364f13ed780eb47dab3ee85",
+      "module_names": [
+        "frontier_full128_two_rail_fixed_law_core_2026_07_24"
+      ],
+      "relative_path": "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+      "sha256": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb"
+    },
+    {
+      "bytes": 8149,
+      "git_blob_sha1": "9753fe17f67389f4d03bbf55b5c12d0af2f43aac",
+      "module_names": [
+        "frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26"
+      ],
+      "relative_path": "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+      "sha256": "05cb2f6083cf6c4307c04284632e991b7fd7378cbd2a4eb08a52d5e3c7ae6b99"
+    },
+    {
+      "bytes": 37673,
+      "git_blob_sha1": "30257f2417a05f256bc959fd81917c0791cefc9b",
+      "module_names": [
+        "frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26"
+      ],
+      "relative_path": "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+      "sha256": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480"
+    },
+    {
+      "bytes": 29998,
+      "git_blob_sha1": "5e34cee568688461ea1be5745f0ec636d0d17744",
+      "module_names": [
+        "local_conservative_commit_resource_gravity_cycle9_2026_07_14"
+      ],
+      "relative_path": "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+      "sha256": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6"
+    },
+    {
+      "bytes": 41039,
+      "git_blob_sha1": "ab9a192961ffcbbf284ca20ce085d199bcd17d4a",
+      "module_names": [
+        "local_generator_source_tournament_cycle228_2026_07_17"
+      ],
+      "relative_path": "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+      "sha256": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d"
+    },
+    {
+      "bytes": 26218,
+      "git_blob_sha1": "0be8d83ec8ed874ff12e2092dc47121b8030a5bc",
+      "module_names": [
+        "proper_cubic_bound_object_equivalence_cycle210_2026_07_16"
+      ],
+      "relative_path": "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+      "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b"
+    },
+    {
+      "bytes": 27499,
+      "git_blob_sha1": "85397bad07b4e85692e077facabbe919977b352f",
+      "module_names": [
+        "retarded_cubic_mass_field_cycle213_2026_07_16"
+      ],
+      "relative_path": "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+      "sha256": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86"
+    },
+    {
+      "bytes": 35105,
+      "git_blob_sha1": "629cb69cb9b80e0a747cb20296b7f29f02628fba",
+      "module_names": [
+        "spatial_car_contact_seam_form_factor_cycle230_2026_07_17"
+      ],
+      "relative_path": "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+      "sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
+    },
+    {
+      "bytes": 13815,
+      "git_blob_sha1": "06c3ff816f50238f3de007aa412a49d9ec18db6a",
+      "module_names": [
+        "virtual_exchange_green_kernel_cycle216_2026_07_16"
+      ],
+      "relative_path": "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+      "sha256": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011"
+    }
+  ],
+  "local_vs_full_target_character_census": [
+    {
+      "boundary": "deleting the bridge while retaining the same Bell-character basis changes a commuting full-rank family into a noncommuting full-rank family; this is not an auxiliary-minimum theorem and does not exclude local gauge extensions",
+      "embedded_local_term2": {
+        "GF2_character_rank": 20,
+        "GF2_commutator_Gram_rank": 16,
+        "anticommuting_pairs": 22,
+        "rows": 20
+      },
+      "full_JW_term2": {
+        "GF2_character_rank": 20,
+        "GF2_commutator_Gram_rank": 0,
+        "anticommuting_pairs": 0,
+        "rows": 20
+      },
+      "shape": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "boundary": "deleting the bridge while retaining the same Bell-character basis changes a commuting full-rank family into a noncommuting full-rank family; this is not an auxiliary-minimum theorem and does not exclude local gauge extensions",
+      "embedded_local_term2": {
+        "GF2_character_rank": 59,
+        "GF2_commutator_Gram_rank": 46,
+        "anticommuting_pairs": 76,
+        "rows": 59
+      },
+      "full_JW_term2": {
+        "GF2_character_rank": 59,
+        "GF2_commutator_Gram_rank": 0,
+        "anticommuting_pairs": 0,
+        "rows": 59
+      },
+      "shape": [
+        5,
+        3,
+        2
+      ]
+    }
+  ],
+  "native_axes": [
+    {
+      "abstract_gate_count": 13,
+      "all_factor_deletions_detected": true,
+      "all_inverse_deletions_detected": true,
+      "all_prepare_deletions_detected": true,
+      "axis": 0,
+      "column_failures": 0,
+      "decoded_gauge_generators": [
+        [
+          0,
+          0,
+          131072
+        ],
+        [
+          0,
+          0,
+          65536
+        ],
+        [
+          0,
+          0,
+          32768
+        ],
+        [
+          0,
+          0,
+          16384
+        ],
+        [
+          0,
+          0,
+          8192
+        ],
+        [
+          0,
+          0,
+          4096
+        ]
+      ],
+      "decoded_gauge_vs_explicit_clean_group_symmetric_difference": 0,
+      "factor_deletion_columns_per_occurrence": 4096,
+      "factor_deletion_occurrences": 4,
+      "factor_deletion_residuals": [
+        0.7653668647301792,
+        0.7653668647301792,
+        0.7653668647301792,
+        0.7653668647301792
+      ],
+      "factorization_tableau_sha256": "3cb9e9c14de10b3cab61c029d2f599d320233c82a26fc7d060eab7e5dcf204f3",
+      "four_factor_wrapper_failures": 0,
+      "gate_census": {
+        "E2_CNOT": 6,
+        "E2_H": 1,
+        "E2_Z": 6
+      },
+      "gauge_group_symmetric_difference": 0,
+      "inverse_deletion_columns_per_occurrence": 4096,
+      "inverse_deletion_occurrences": 13,
+      "inverse_deletion_residuals": [
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        0.7653668647301792
+      ],
+      "inverse_tableau_failures": 0,
+      "matter_columns_tested": 4096,
+      "maximum_column_residual": 0.0,
+      "maximum_four_factor_wrapper_residual": 1.1102230246251565e-16,
+      "paired_decoded_gauge_membership_failures": 0,
+      "paired_encoded_frame_membership_mismatches": 2,
+      "paired_failures": 0,
+      "paired_family_failures": {
+        "onsite_B": 0,
+        "onsite_even": 0,
+        "seam": 0
+      },
+      "paired_rows_tested": 76,
+      "prepare_deletion_columns_per_occurrence": 4096,
+      "prepare_deletion_occurrences": 13,
+      "prepare_deletion_residuals": [
+        0.7653668647301792,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991
+      ],
+      "seam_decoded_clean_Z_masks": [
+        0,
+        0,
+        9,
+        9
+      ],
+      "seam_factors_tested_individually": 4,
+      "shape": [
+        2,
+        1,
+        1
+      ],
+      "single_factor_failures": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "single_factor_maximum_residuals": [
+        1.5700924586837752e-16,
+        1.5700924586837752e-16,
+        1.5700924586837752e-16,
+        1.5700924586837752e-16
+      ]
+    },
+    {
+      "abstract_gate_count": 13,
+      "all_factor_deletions_detected": true,
+      "all_inverse_deletions_detected": true,
+      "all_prepare_deletions_detected": true,
+      "axis": 1,
+      "column_failures": 0,
+      "decoded_gauge_generators": [
+        [
+          0,
+          0,
+          131072
+        ],
+        [
+          0,
+          0,
+          65536
+        ],
+        [
+          0,
+          0,
+          32768
+        ],
+        [
+          0,
+          0,
+          16384
+        ],
+        [
+          0,
+          0,
+          8192
+        ],
+        [
+          0,
+          0,
+          4096
+        ]
+      ],
+      "decoded_gauge_vs_explicit_clean_group_symmetric_difference": 0,
+      "factor_deletion_columns_per_occurrence": 4096,
+      "factor_deletion_occurrences": 4,
+      "factor_deletion_residuals": [
+        0.7653668647301792,
+        0.7653668647301792,
+        0.7653668647301792,
+        0.7653668647301792
+      ],
+      "factorization_tableau_sha256": "347346b51e0b6aedb3ddfe243ef55cdc1c87c6cda4720e6e158705c017cb7185",
+      "four_factor_wrapper_failures": 0,
+      "gate_census": {
+        "E2_CNOT": 6,
+        "E2_H": 1,
+        "E2_Z": 6
+      },
+      "gauge_group_symmetric_difference": 0,
+      "inverse_deletion_columns_per_occurrence": 4096,
+      "inverse_deletion_occurrences": 13,
+      "inverse_deletion_residuals": [
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        0.7653668647301792
+      ],
+      "inverse_tableau_failures": 0,
+      "matter_columns_tested": 4096,
+      "maximum_column_residual": 0.0,
+      "maximum_four_factor_wrapper_residual": 1.1102230246251565e-16,
+      "paired_decoded_gauge_membership_failures": 0,
+      "paired_encoded_frame_membership_mismatches": 2,
+      "paired_failures": 0,
+      "paired_family_failures": {
+        "onsite_B": 0,
+        "onsite_even": 0,
+        "seam": 0
+      },
+      "paired_rows_tested": 76,
+      "prepare_deletion_columns_per_occurrence": 4096,
+      "prepare_deletion_occurrences": 13,
+      "prepare_deletion_residuals": [
+        0.7653668647301792,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991
+      ],
+      "seam_decoded_clean_Z_masks": [
+        0,
+        0,
+        27,
+        27
+      ],
+      "seam_factors_tested_individually": 4,
+      "shape": [
+        1,
+        2,
+        1
+      ],
+      "single_factor_failures": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "single_factor_maximum_residuals": [
+        1.5700924586837752e-16,
+        1.5700924586837752e-16,
+        1.5700924586837752e-16,
+        1.5700924586837752e-16
+      ]
+    },
+    {
+      "abstract_gate_count": 13,
+      "all_factor_deletions_detected": true,
+      "all_inverse_deletions_detected": true,
+      "all_prepare_deletions_detected": true,
+      "axis": 2,
+      "column_failures": 0,
+      "decoded_gauge_generators": [
+        [
+          0,
+          0,
+          131072
+        ],
+        [
+          0,
+          0,
+          65536
+        ],
+        [
+          0,
+          0,
+          32768
+        ],
+        [
+          0,
+          0,
+          16384
+        ],
+        [
+          0,
+          0,
+          8192
+        ],
+        [
+          0,
+          0,
+          4096
+        ]
+      ],
+      "decoded_gauge_vs_explicit_clean_group_symmetric_difference": 0,
+      "factor_deletion_columns_per_occurrence": 4096,
+      "factor_deletion_occurrences": 4,
+      "factor_deletion_residuals": [
+        0.7653668647301792,
+        0.7653668647301792,
+        0.7653668647301792,
+        0.7653668647301792
+      ],
+      "factorization_tableau_sha256": "eb72d239b251cc3a9c936443927f509628e57c9a7e38805dc2d7d7d8eff320fb",
+      "four_factor_wrapper_failures": 0,
+      "gate_census": {
+        "E2_CNOT": 6,
+        "E2_H": 1,
+        "E2_Z": 6
+      },
+      "gauge_group_symmetric_difference": 0,
+      "inverse_deletion_columns_per_occurrence": 4096,
+      "inverse_deletion_occurrences": 13,
+      "inverse_deletion_residuals": [
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        0.7653668647301792
+      ],
+      "inverse_tableau_failures": 0,
+      "matter_columns_tested": 4096,
+      "maximum_column_residual": 0.0,
+      "maximum_four_factor_wrapper_residual": 1.1102230246251565e-16,
+      "paired_decoded_gauge_membership_failures": 0,
+      "paired_encoded_frame_membership_mismatches": 2,
+      "paired_failures": 0,
+      "paired_family_failures": {
+        "onsite_B": 0,
+        "onsite_even": 0,
+        "seam": 0
+      },
+      "paired_rows_tested": 76,
+      "prepare_deletion_columns_per_occurrence": 4096,
+      "prepare_deletion_occurrences": 13,
+      "prepare_deletion_residuals": [
+        0.7653668647301792,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.4142135623730945,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991,
+        1.9999999999999991
+      ],
+      "seam_decoded_clean_Z_masks": [
+        0,
+        0,
+        63,
+        63
+      ],
+      "seam_factors_tested_individually": 4,
+      "shape": [
+        1,
+        1,
+        2
+      ],
+      "single_factor_failures": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "single_factor_maximum_residuals": [
+        1.5700924586837752e-16,
+        1.5700924586837752e-16,
+        1.5700924586837752e-16,
+        1.5700924586837752e-16
+      ]
+    }
+  ],
+  "numpy": "2.4.4",
+  "python": "3.13.5",
+  "report_sha256": "dc16321775e6ef5b85a317f5c5af341bf28b42b8f242556cb7af6329aaf1817c",
+  "runner_sha256": "52a78f5ca46e1d61e5e0faab5cfe3ba6ed29f0f5c9a66b4f2c3ed6c0646beeb8",
+  "runtime_seconds": 49.04970041709021,
+  "scope": {
+    "claims_commutator_Gram_rank_is_an_auxiliary_minimum": false,
+    "claims_global_JW_bridge_is_bounded_local": false,
+    "claims_literal_active_routing": false,
+    "claims_schedule_arbitration_no_go": false,
+    "repository_mutations_beyond_declared_receipt": false
+  },
+  "six_axis_parity_layers": [
+    {
+      "colour_census": {
+        "(0, 0)": 4,
+        "(0, 1)": 4,
+        "(1, 0)": 3,
+        "(1, 1)": 3,
+        "(2, 0)": 3,
+        "(2, 1)": 3
+      },
+      "colours_present": 6,
+      "edges": 20,
+      "factor_coverage_failures": 0,
+      "factors": 80,
+      "layer_label": "(axis, positive-edge-owner body parity)",
+      "same_colour_cell_conflicts": 0,
+      "shape": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "colour_census": {
+        "(0, 0)": 12,
+        "(0, 1)": 12,
+        "(1, 0)": 10,
+        "(1, 1)": 10,
+        "(2, 0)": 8,
+        "(2, 1)": 7
+      },
+      "colours_present": 6,
+      "edges": 59,
+      "factor_coverage_failures": 0,
+      "factors": 236,
+      "layer_label": "(axis, positive-edge-owner body parity)",
+      "same_colour_cell_conflicts": 0,
+      "shape": [
+        5,
+        3,
+        2
+      ]
+    }
+  ],
+  "source_commit": "8622da346adf2db00f1e774faa63b542585353de",
+  "status": "PASS"
+}

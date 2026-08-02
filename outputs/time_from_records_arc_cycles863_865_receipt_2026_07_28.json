@@ -1,0 +1,60 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "three supervisor-authored primaries (owner-directed, run personally); one comprehensive workhorse checker",
+  "block": "proof-grade-blockP24-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle863_865_arc_independent_check_2026_07_28.txt": "checks map",
+    "logs/runner-cache/frontier_cycle863_time_from_records_2026_07_28.txt": "checks map",
+    "logs/runner-cache/frontier_cycle864_laws_in_record_time_2026_07_28.txt": "checks map",
+    "logs/runner-cache/frontier_cycle865_offset_law_2026_07_28.txt": "checks map"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle863_865_arc_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle863_time_from_records_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    },
+    "logs/runner-cache/frontier_cycle864_laws_in_record_time_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle865_offset_law_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    }
+  },
+  "checker_corrections_absorbed": [
+    "863 sync_events_total is 4,096-store-capped; uncapped total 6,821,527 (verdict unchanged)",
+    "864 periodicity: 2 of 8 extended aperiodic keys were store-cap artifacts",
+    "865 residue priced: no non-vacuous record-native offset predictor across 29 singles + 28 pairs"
+  ],
+  "claim_type": "bounded_theorem",
+  "cycles": [
+    863,
+    864,
+    865
+  ],
+  "files": {
+    "docs/TIME_FROM_RECORDS_ARC_CYCLES863_865_BOUNDED_THEOREM_NOTE_2026-07-28.md": "ce7274e92893f79064f99d4d246e2a25396f96f3ac2b2f97e0c110bdcc2af273",
+    "logs/runner-cache/frontier_cycle863_865_arc_independent_check_2026_07_28.txt": "75104f5d11749e378d447da4b930cd0456f60fe85e41b5c73c59657d9cae8a90",
+    "logs/runner-cache/frontier_cycle863_time_from_records_2026_07_28.txt": "d326156c331332b82ffd85bc07cdc7cc9402021854065b9f121a22dc2a904baa",
+    "logs/runner-cache/frontier_cycle864_laws_in_record_time_2026_07_28.txt": "23adfab12899300445f00df870a89f19bb65903c1485b530631febd32fd3860f",
+    "logs/runner-cache/frontier_cycle865_offset_law_2026_07_28.txt": "c778ca722a80d7e45976ba5da1ab5c80cbce583b262c1a10c0e0fead8c85ef79",
+    "scripts/frontier_cycle863_865_arc_independent_check_2026_07_28.py": "d0c62a4388e90800e09d357757df0f3c32f47564c607c359c275c0674f42ed37",
+    "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+    "scripts/frontier_cycle864_laws_in_record_time_2026_07_28.py": "3c353b112f87aa41adde6380fcde147427f0d3f16130aadd97a8119f6dfa8e4c",
+    "scripts/frontier_cycle865_offset_law_2026_07_28.py": "1693de262d8eda5fc384575ce99be77b5418bf43af86c0ff52614110dea7346a"
+  },
+  "incident": "worktree-prune automation deleted gitfiles AND tracked working files in three scratchpad worktrees mid-arc; all commits object-store-safe; branch pushed; worktrees rebuilt from primary metadata and tracked trees restored from HEAD; process rules banked (push supervisor commits immediately; scratchpad worktrees prunable at any moment)",
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "E1 fully intrinsic: 182/182 records = first formation events, scheduler-free (the event-level formation-is-the-tick identification, theorem at scope)",
+    "the supplied tick does NOT re-derive from two-bank record synchronization (~14% on-tick; 25/114 + 624 spurious; honest uncapped sync total 6,821,527)",
+    "the moment law TRANSFORMS in record-age (spreads 0-5 over 15 multi-member cohorts); 566 timeless worlds scoped gauge-layer; B-AXIS discharge condition stated",
+    "the offset law: offsets = exact function of the set moment (85 rows, 50 classes, 35 nontrivial agreements, zero violations; 7 rivals refuted); no record-native replacement at declared families - the scheduler carries no law and survives only as one birth datum per world"
+  ]
+}

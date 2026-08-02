@@ -545,13 +545,32 @@ def restore_audit_from_previous(
     if not history:
         return None
     archived = history[-1]
+    if not isinstance(archived, dict):
+        return None
+    raw_snapshot = archived.get("audit_state_snapshot")
+    snap = raw_snapshot if isinstance(raw_snapshot, dict) else {}
+    science_baseline = snap.get("science_fingerprint")
+    judgment_baseline = snap.get("judgment_fingerprint")
+    # A v2 scientific baseline is reusable only together with its matching
+    # frozen judgment.  Recompute against the archived fields themselves so a
+    # hand-edited rationale, scope, verdict, or seat record cannot be restored
+    # under an otherwise valid source fingerprint.
+    if science_baseline is not None and judgment_baseline is None:
+        return None
+    if judgment_baseline is not None:
+        frozen_claim_id = row.get("claim_id")
+        if frozen_claim_id is None and isinstance(judgment_baseline, dict):
+            frozen_claim_id = judgment_baseline.get("claim_id")
+        if audit_science_fingerprint.judgment_fingerprint_change(
+            judgment_baseline,
+            {**archived, "claim_id": frozen_claim_id},
+        ) is not None:
+            return None
     # Scientific-provenance pre-check: an audit performed under different
     # target/dependency/runner/premise state is re-audit material, never
     # restoration material.  Check before writing so stale authority is not
     # briefly live between restoration and the next invalidation sweep.
     if rows is not None:
-        snap = archived.get("audit_state_snapshot") or {}
-        science_baseline = snap.get("science_fingerprint")
         if science_baseline is not None:
             current_science = audit_science_fingerprint.build_science_fingerprint(
                 {

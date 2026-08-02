@@ -897,11 +897,12 @@ python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main
 ```
 
 This gate is mechanical preparation, not an audit. It must pass for every
-changed non-meta scientific note and every row bound to a changed primary or
-helper runner. A missing runner, invalid/unreadable declared input, stale or
-failed SHA/input-bound compute result, or incomplete forensic N5 resolution
-certificate blocks review-loop PASS. Repair the evidence surface in the PR,
-or make intentionally incomplete work an explicit `open_gate`; do not let the
+changed row not classified as `meta`, `open_gate`, or `decoration`, including
+every such row bound to a changed primary or helper runner. A missing runner,
+invalid/unreadable declared input, stale or failed SHA/input-bound compute
+result, or incomplete forensic N5 resolution certificate blocks review-loop
+PASS. Intentionally incomplete work must be typed as an explicit `open_gate`
+and remains outside this seat-readiness gate until promoted; do not let the
 independent audit discover a deterministic compute omission after spending a
 seat. The cache/result used here is non-authoritative review evidence only.
 The audit lane must still execute the current runner live and authenticate its

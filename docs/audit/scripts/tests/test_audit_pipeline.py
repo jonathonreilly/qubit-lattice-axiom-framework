@@ -724,7 +724,7 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
     # Conditional/failed verdict writers now hash required policy surfaces
     # fail-loudly. General apply-audit fixtures provide real minimal surfaces;
     # dedicated fingerprint tests separately exercise missing/read failures.
-    if hasattr(module, "snapshot_audit_state"):
+    if hasattr(module, "audit_science_fingerprint"):
         prompt = tmp_root / "docs" / "audit" / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
         prompt.parent.mkdir(parents=True, exist_ok=True)
         if not prompt.exists():
@@ -771,12 +771,17 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
                 json.dumps({"schema_version": 1, "rows": []}) + "\n",
                 encoding="utf-8",
             )
-        for relative in (
-            "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-            "docs/audit/scripts/build_citation_graph.py",
-            "docs/audit/scripts/compute_effective_status.py",
-            "docs/audit/scripts/premise_nodes.py",
+        science_module = module.audit_science_fingerprint
+        policy_data_paths = {
+            "docs/audit/data/doc_authority_registry.json",
+            "docs/audit/data/tier_a_admissions.json",
+            "docs/audit/data/owner_governed_premise_nodes.json",
             "docs/audit/data/source_path_aliases.json",
+        }
+        for relative in (
+            path
+            for path in science_module.DEPENDENCY_POLICY_SOURCES
+            if path not in policy_data_paths
         ):
             policy_surface = tmp_root / relative
             policy_surface.parent.mkdir(parents=True, exist_ok=True)
@@ -785,16 +790,9 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
                     "{}\n" if relative.endswith(".json") else "# fixture\n",
                     encoding="utf-8",
                 )
-        dependency_policy_paths = (
-            "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-            "docs/audit/scripts/build_citation_graph.py",
-            "docs/audit/scripts/compute_effective_status.py",
-            "docs/audit/scripts/premise_nodes.py",
-            "docs/audit/data/doc_authority_registry.json",
-            "docs/audit/data/tier_a_admissions.json",
-            "docs/audit/data/owner_governed_premise_nodes.json",
-            "docs/audit/data/source_path_aliases.json",
-        )
+        source_aliases = tmp_root / "docs/audit/data/source_path_aliases.json"
+        if not source_aliases.exists():
+            source_aliases.write_text("{}\n", encoding="utf-8")
         policy_manifest = module.DATA_DIR / "dependency_policy_epoch.json"
         policy_manifest.write_text(
             json.dumps({
@@ -806,11 +804,25 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
                         if (tmp_root / relative).is_file()
                         else None
                     )
-                    for relative in dependency_policy_paths
+                    for relative in science_module.DEPENDENCY_POLICY_SOURCES
                 },
             }) + "\n",
             encoding="utf-8",
         )
+        legacy_baseline = module.DATA_DIR / "legacy_science_epoch_baseline.json"
+        if not legacy_baseline.exists():
+            legacy_baseline.write_text(
+                json.dumps({
+                    "schema": "legacy_science_epoch_baseline_v1",
+                    "framework_premise_epoch_digest": (
+                        science_module.framework_premise_epoch(tmp_root)
+                    ),
+                    "dependency_policy_epoch_digest": (
+                        science_module.dependency_policy_epoch(tmp_root)
+                    ),
+                }) + "\n",
+                encoding="utf-8",
+            )
         module.AXIOM_PREMISE_NODES_PATH = registry
         module._AXIOM_PREMISE_IDS = None
     # Writers persist through the sharded ledger; point the module's OWN
@@ -1265,6 +1277,16 @@ class ApplyAuditTest(unittest.TestCase):
         }
         ok, msg = m.apply_one(led, audit)
         self.assertTrue(ok, msg)
+        applied = led["rows"]["test_invocation_replay"]
+        frozen = applied["audit_state_snapshot"]["judgment_fingerprint"]
+        self.assertEqual(
+            m.audit_science_fingerprint.judgment_fingerprint_change(
+                frozen,
+                applied,
+            ),
+            None,
+        )
+        self.assertEqual(applied["audit_invocation_id"], "a" * 32)
         ok, msg = m.apply_one(led, audit)
         self.assertFalse(ok)
         self.assertIn("already been consumed", msg)
@@ -2361,6 +2383,13 @@ class ApplyAuditTest(unittest.TestCase):
             ok, msg = m.apply_one(led, fresh_audit)
         self.assertTrue(ok, msg)
         self.assertIn("first audit recorded", msg)
+        first_seat_row = led["rows"]["legacy_pending_no_go"]
+        self.assertIsNone(
+            m.audit_science_fingerprint.judgment_fingerprint_change(
+                first_seat_row["audit_state_snapshot"]["judgment_fingerprint"],
+                first_seat_row,
+            )
+        )
 
         second_audit = {
             **fresh_audit,
@@ -4837,6 +4866,47 @@ class AuditLintTest(unittest.TestCase):
             row["note_hash"] = hashlib.sha256(body.encode("utf-8")).hexdigest()
             row.setdefault("deps", [])
         self.fx.write_ledger({"schema_version": 1, "rows": rows})
+
+    def test_snapshotless_active_judgment_obeys_legacy_policy_epoch(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "awaiting_second": {
+                "claim_id": "awaiting_second",
+                "audit_status": "audit_in_progress",
+                "claim_type": "positive_theorem",
+                "claim_scope": "legacy first-seat scope",
+                "audit_state_snapshot": None,
+                "cross_confirmation": {
+                    "status": "awaiting_second",
+                    "first_audit": {"verdict": "audited_clean"},
+                    "second_audit": None,
+                },
+                "blocker": "awaiting_cross_confirmation",
+                "criticality": "critical",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        policy_path = self.tmp_root / "docs/audit/scripts/premise_nodes.py"
+        policy_path.write_text("# reviewed fixture policy v2\n", encoding="utf-8")
+        manifest_path = (
+            self.tmp_root / "docs/audit/data/dependency_policy_epoch.json"
+        )
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        manifest["epoch"] = "fixture_dependency_policy_v2"
+        manifest["sources"]["docs/audit/scripts/premise_nodes.py"] = (
+            hashlib.sha256(policy_path.read_bytes()).hexdigest()
+        )
+        manifest_path.write_text(json.dumps(manifest) + "\n", encoding="utf-8")
+
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1)
+        self.assertIn(
+            "legacy_dependency_policy_epoch_changed",
+            output.getvalue(),
+        )
 
     def test_cross_confirmation_tuple_normalization_matches_apply_gate(self):
         m = _import("audit_lint")
@@ -11309,10 +11379,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "claim_scope": "legacy obstruction",
                 "chain_closes": True,
             }
-            self.assertEqual(
-                m.detect_invalidation(row, {"legacy_no_go": row}),
-                "no_go_discipline_packet_missing",
-            )
+            with mock.patch.object(
+                m.audit_science_fingerprint,
+                "legacy_science_epoch_change",
+                return_value=None,
+            ):
+                self.assertEqual(
+                    m.detect_invalidation(row, {"legacy_no_go": row}),
+                    "no_go_discipline_packet_missing",
+                )
 
     def test_packetless_declared_negative_conditional_remains_repair_queue(self):
         m = _import("invalidate_stale_audits")
@@ -11477,10 +11552,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     claim_id="legacy_no_go",
                 ),
             }
-            self.assertEqual(
-                m.detect_invalidation(row, {"legacy_no_go": row}),
-                "no_go_discipline_packet_invalid",
-            )
+            with mock.patch.object(
+                m.audit_science_fingerprint,
+                "legacy_science_epoch_change",
+                return_value=None,
+            ):
+                self.assertEqual(
+                    m.detect_invalidation(row, {"legacy_no_go": row}),
+                    "no_go_discipline_packet_invalid",
+                )
 
     def test_legacy_clean_authority_without_exact_model_detail_is_preserved(self):
         m = _import("invalidate_stale_audits")
@@ -11496,7 +11576,14 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "auditor": "legacy", "auditor_family": "codex-gpt-5.6",
                 "negative_assertion_classes": [],
             }
-            self.assertIsNone(m.detect_invalidation(row, {"positive": row}))
+            with mock.patch.object(
+                m.audit_science_fingerprint,
+                "legacy_science_epoch_change",
+                return_value=None,
+            ):
+                self.assertIsNone(
+                    m.detect_invalidation(row, {"positive": row})
+                )
 
 
 class ComputeLaneCertificationTest(unittest.TestCase):
@@ -13830,18 +13917,16 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         self.addCleanup(self._tmp.cleanup)
         self.tmp_root = Path(self._tmp.name)
         self.fx = CleanLedgerFixture(self.tmp_root)
+        science = _import("audit_science_fingerprint")
         for relative in (
-            "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-            "docs/audit/scripts/build_citation_graph.py",
-            "docs/audit/scripts/compute_effective_status.py",
-            "docs/audit/scripts/premise_nodes.py",
-            "docs/audit/data/doc_authority_registry.json",
-            "docs/audit/data/source_path_aliases.json",
+            *science.DEPENDENCY_POLICY_SOURCES,
             "docs/audit/data/dependency_policy_epoch.json",
         ):
             destination = self.tmp_root / relative
             destination.parent.mkdir(parents=True, exist_ok=True)
-            destination.write_bytes((PROJECT_ROOT / relative).read_bytes())
+            source = PROJECT_ROOT / relative
+            if source.is_file():
+                destination.write_bytes(source.read_bytes())
         data_dir = self.tmp_root / "docs" / "audit" / "data"
         data_dir.mkdir(parents=True, exist_ok=True)
         (data_dir / "axiom_premise_nodes.json").write_text(

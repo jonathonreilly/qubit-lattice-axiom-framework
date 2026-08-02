@@ -863,12 +863,14 @@ python3 docs/audit/scripts/audit_lint.py --strict
 
 Then re-attempt selection (steps 1-5). If the refreshed fresh-science selector
 is empty, inspect and report `by_work_kind`. The audit lane is genuinely
-caught up only when there is also no `legacy_packet_upgrade`,
-`provenance_reconstruction_required`, or `evidence_repair_required` work.
-Those are mechanical preparation/certification lanes, never permission to
-spend a fresh scientific seat. Do not refresh repeatedly in one session and
-do not invoke `gh workflow run audit.yml` from inside the audit loop (the CI
-workflow runs its own pipeline and could race the local one).
+caught up only when there is no pending `fresh_scientific_audit`,
+`legacy_packet_upgrade`, or `evidence_repair_required` work. The latter two
+are mechanical preparation/certification lanes, never permission to spend a
+fresh scientific seat. Missing or ambiguous v2 provenance is conservatively
+routed to `fresh_scientific_audit`, so it cannot rest in an undrained
+preparation category. Do not refresh repeatedly in one session and do not
+invoke `gh workflow run audit.yml` from inside the audit loop (the CI workflow
+runs its own pipeline and could race the local one).
 
 The empty-queue refresh exists because runner caches and audit verdicts land continuously; the queue snapshot can lag behind by several commits when the session started. A single local refresh covers the common case where a recent PR (e.g. a compute-limited backlog repair) made dozens of rows newly auditable but the local queue hasn't yet caught up.
 

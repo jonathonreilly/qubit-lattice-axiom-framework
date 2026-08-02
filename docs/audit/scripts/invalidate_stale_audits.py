@@ -281,7 +281,12 @@ INDEX_GROWTH_TARGETS: list[dict] = []
 GROWTH_TARGETS_PATH = REPO_ROOT / "docs" / "audit" / "data" / "no_go_index_growth_targets.json"
 
 
-def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
+def detect_invalidation(
+    row: dict,
+    rows: dict[str, dict],
+    *,
+    epoch_cache: dict[str, str] | None = None,
+) -> str | None:
     audit_status = row.get("audit_status")
     if audit_status == "audited_clean" and not clean_auditor_provenance_is_valid(row):
         return "auditor_provenance_incomplete"
@@ -312,6 +317,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             row,
             rows,
             REPO_ROOT,
+            epoch_cache=epoch_cache,
         )
         science_reason = audit_science_fingerprint.science_fingerprint_change(
             science_baseline,
@@ -319,14 +325,20 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
         )
         if science_reason is not None:
             return science_reason
-    elif isinstance(snap, dict):
+    else:
+        # Every active pre-v2 judgment is governed by the immutable deployment
+        # anchor, including the oldest rows that have no snapshot at all and
+        # awaiting-second-seat lifecycles whose first seat predates snapshots.
         legacy_epoch_reason = (
             audit_science_fingerprint.legacy_science_epoch_change(
-                REPO_ROOT
+                REPO_ROOT,
+                epoch_cache=epoch_cache,
             )
         )
         if legacy_epoch_reason is not None:
             return legacy_epoch_reason
+        if snap is not None and not isinstance(snap, dict):
+            return "audit_state_snapshot_invalid"
     judgment_baseline = (
         snap.get("judgment_fingerprint")
         if isinstance(snap, dict)
@@ -895,6 +907,7 @@ def main() -> int:
 
     invalidated: list[tuple[str, str]] = []
     soft_reset: list[tuple[str, str]] = []
+    science_epoch_cache: dict[str, str] = {}
     for cid, row in rows.items():
         if row.get("audit_status", "unaudited") == "unaudited":
             continue
@@ -903,7 +916,11 @@ def main() -> int:
             and not isinstance(row.get("cross_confirmation"), dict)
         ):
             continue
-        reason = detect_invalidation(row, rows)
+        reason = detect_invalidation(
+            row,
+            rows,
+            epoch_cache=science_epoch_cache,
+        )
         if reason is None:
             continue
         if reason.startswith("criticality_soft_reset:"):

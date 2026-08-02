@@ -822,19 +822,21 @@ def load_queue(criticality_filter: str | None = None,
     retained-grade deterministically yields audited_conditional and burns a
     Codex call without compounding progress. The 'ready' flag in the queue
     encodes the dep-readiness condition computed by compute_audit_queue.py.
-    Pass --allow-blocked to opt into auditing blocked rows anyway.
+    Pass --allow-blocked to opt into auditing dependency/evidence-blocked rows
+    anyway.  That flag never admits mechanical packet/preparation work into a
+    fresh scientific auditor seat.
     """
     q = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
     rows = q.get("queue", [])
     if criticality_filter:
         rows = [r for r in rows if (r.get("criticality") or "") == criticality_filter]
+    rows = [
+        r for r in rows
+        if r.get("audit_work_kind", "fresh_scientific_audit")
+        == "fresh_scientific_audit"
+    ]
     if ready_only:
-        rows = [
-            r for r in rows
-            if r.get("ready")
-            and r.get("audit_work_kind", "fresh_scientific_audit")
-            == "fresh_scientific_audit"
-        ]
+        rows = [r for r in rows if r.get("ready")]
     # rows are already pre-sorted by descending score in audit_queue.json
     return rows
 

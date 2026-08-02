@@ -10076,7 +10076,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
-            "must contain the route's complete `mechanism` and `attempt` verbatim",
+            "must contain at least 80 normalized characters and the route's "
+            "complete `mechanism` and `attempt` verbatim",
+            template_flat,
+        )
+        self.assertIn(
+            "select a line of at least 80 normalized characters that names an "
+            "evidenced N2 wall",
             template_flat,
         )
         self.assertIn(
@@ -12030,6 +12036,19 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
         self.assertEqual(panel_schema["type"], "object")
         assert_closed(audit_schema)
         assert_closed(panel_schema)
+
+    def test_codex_output_schema_enforces_n7_steelman_minimum_lengths(self):
+        m = _import_codex_audit_runner()
+        gate = _import("no_go_discipline_gate")
+
+        n7 = (
+            m.audit_verdict_output_schema()["properties"]["no_go_discipline"]
+            ["anyOf"][0]["properties"]["N7_steelman"]["properties"]
+        )
+        expected = gate.N7_STEELMAN_MIN_NORMALIZED_CHARS
+
+        self.assertEqual(n7["argument"]["minLength"], expected)
+        self.assertEqual(n7["resolution"]["minLength"], expected)
 
     def test_best_cached_model_uses_highest_full_gpt_version_not_cache_order(self):
         m = _import_codex_audit_runner()

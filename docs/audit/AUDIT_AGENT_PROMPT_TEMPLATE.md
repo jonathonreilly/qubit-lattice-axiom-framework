@@ -581,8 +581,8 @@ validator still requires substantive values whenever the condition applies.
   },
   "N7_steelman": {
     "route_id": "<the evidenced N1 route that instantiates the strongest steelman>",
-    "argument": "<copy one complete contiguous live-execution line that contains the selected N1 route mechanism and attempt verbatim>",
-    "resolution": "<copy one complete contiguous line from the cited independent execution or retained/accepted authority; it must name an N2 wall>",
+    "argument": "<copy one complete contiguous live-execution line of at least 80 normalized characters that contains the selected N1 route mechanism and attempt verbatim>",
+    "resolution": "<copy one complete contiguous line of at least 80 normalized characters from the cited independent execution or retained/accepted authority; it must name an N2 wall>",
     "resolved": true,
     "evidence_path": "<live runner_stdout path containing the complete argument and matching N1 evidence>",
     "evidence_locator": "<actual locator>",
@@ -774,10 +774,11 @@ for the steelman and either orchestrator-marked independent execution or a
 retained/accepted, byte-authenticated authority for the resolution; a merely
 different path is not independence. Copy `N7.argument` byte-for-byte as one
 contiguous line from the selected N1 route's live execution surface; that line
-must contain the route's complete `mechanism` and `attempt` verbatim. Copy
+must contain at least 80 normalized characters and the route's complete
+`mechanism` and `attempt` verbatim. Copy
 `N7.resolution` byte-for-byte as one contiguous line from its independent
-resolution surface, and select a line that names an evidenced N2 wall. Do not
-paraphrase either field. N8 must bind
+resolution surface, and select a line of at least 80 normalized characters
+that names an evidenced N2 wall. Do not paraphrase either field. N8 must bind
 each mechanism to its exact indexed candidate record. Copy known retirement
 state exactly; when the indexed `lifecycle_state` is `unknown`, preserve
 `retired` as JSON `null`. Applicability is a separate current-scope decision

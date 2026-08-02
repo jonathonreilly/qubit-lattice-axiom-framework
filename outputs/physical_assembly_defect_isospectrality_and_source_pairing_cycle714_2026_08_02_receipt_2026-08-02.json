@@ -1,0 +1,254 @@
+{
+  "LT": 2,
+  "constant_sign_frames": 6,
+  "cycle": 714,
+  "distinct_pairing_values": 4,
+  "fail": 0,
+  "frames": 24,
+  "gates": {
+    "g01": {
+      "claim": "dof count matches the open-box formula",
+      "detail": "n = 98 279 604 1115",
+      "pass": true
+    },
+    "g02": {
+      "claim": "every frame relabelling is a bijection of the dof set",
+      "detail": "24 frames at L = 3,4,5,6; zero dofs outside the index",
+      "pass": true
+    },
+    "g03": {
+      "claim": "identity frame gives the identity relabelling",
+      "detail": "frame index 23",
+      "pass": true
+    },
+    "g04": {
+      "claim": "group law m(ab) = m(a) after m(b) at L = 3",
+      "detail": "576 of 576 ordered pairs",
+      "pass": true
+    },
+    "g05": {
+      "claim": "group law m(ab) = m(a) after m(b) at L = 4",
+      "detail": "576 of 576 ordered pairs",
+      "pass": true
+    },
+    "g06": {
+      "claim": "rejector: dropping the anchor shift breaks bijectivity",
+      "detail": "L = 3: 45 of 98 dofs outside, 53 distinct images",
+      "pass": true
+    },
+    "g07": {
+      "claim": "the assembled operator is nonsingular and indefinite",
+      "detail": "negative/positive counts at L = 3,4,5: 96/2 265/14 569/35 ; smallest magnitude 3.2e-03",
+      "pass": true
+    },
+    "g08": {
+      "claim": "spectrum is unchanged by mixed-frame reassembly at L = 3",
+      "detail": "18 frames, worst deviation 1.9e-13",
+      "pass": true
+    },
+    "g09": {
+      "claim": "spectrum is unchanged by mixed-frame reassembly at L = 4",
+      "detail": "18 frames, worst deviation 4.8e-13",
+      "pass": true
+    },
+    "g10": {
+      "claim": "spectrum is unchanged by mixed-frame reassembly at L = 5",
+      "detail": "4 frames, worst deviation 4.0e-13",
+      "pass": true
+    },
+    "g11": {
+      "claim": "spectrum is unchanged by mixed-frame reassembly at L = 6",
+      "detail": "2 frames, worst deviation 9.4e-13",
+      "pass": true
+    },
+    "g12": {
+      "claim": "defect is traceless at L = 3",
+      "detail": "18 mixed frames, worst 0.0e+00",
+      "pass": true
+    },
+    "g13": {
+      "claim": "defect is traceless at L = 4",
+      "detail": "18 mixed frames, worst 0.0e+00",
+      "pass": true
+    },
+    "g14": {
+      "claim": "second power-sum identity holds",
+      "detail": "worst 9.1e-13",
+      "pass": true
+    },
+    "g15": {
+      "claim": "third power-sum identity holds",
+      "detail": "worst 1.2e-10",
+      "pass": true
+    },
+    "g16": {
+      "claim": "eigenvectors are transported, not mixed",
+      "detail": "top and bottom, 3 frames, worst residual 2.6e-14",
+      "pass": true
+    },
+    "g17": {
+      "claim": "rejector: same pattern, same magnitudes, resigned, at L = 3",
+      "detail": "smallest spectral shift 8.92e+00 over 3 seeds",
+      "pass": true
+    },
+    "g18": {
+      "claim": "rejector: same pattern, same magnitudes, resigned, at L = 4",
+      "detail": "smallest spectral shift 9.36e+00 over 3 seeds",
+      "pass": true
+    },
+    "g19": {
+      "claim": "Frobenius law reassembles from the landed census",
+      "detail": "cubic 800, quadratic 224, linear 32",
+      "pass": true
+    },
+    "g20": {
+      "claim": "Frobenius law 7360 holds at L = 3",
+      "detail": "18 mixed frames, worst relative deviation 3.4e-09",
+      "pass": true
+    },
+    "g21": {
+      "claim": "Frobenius law 23712 holds at L = 4",
+      "detail": "18 mixed frames, worst relative deviation 2.1e-09",
+      "pass": true
+    },
+    "g22": {
+      "claim": "Frobenius law 54912 holds at L = 5",
+      "detail": "18 mixed frames, worst relative deviation 1.5e-09",
+      "pass": true
+    },
+    "g23": {
+      "claim": "Frobenius law 105760 holds at L = 6",
+      "detail": "18 mixed frames, worst relative deviation 1.1e-09",
+      "pass": true
+    },
+    "g24": {
+      "claim": "Frobenius law 181056 holds at L = 7",
+      "detail": "18 mixed frames, worst relative deviation 8.2e-10",
+      "pass": true
+    },
+    "g25": {
+      "claim": "Frobenius law 285600 holds at L = 8",
+      "detail": "3 mixed frames, worst relative deviation 6.4e-10",
+      "pass": true
+    },
+    "g26": {
+      "claim": "constant-sign frames carry no defect",
+      "detail": "6 frames at L = 3,4,5,6, ceiling 2.9e-17",
+      "pass": true
+    },
+    "g27": {
+      "claim": "relative defect grows with box size",
+      "detail": "ratios 0.1029 0.1271 0.1454 0.1596 0.1709 0.1802",
+      "pass": true
+    },
+    "g28": {
+      "claim": "pairing transfers to the relabelled source at L = 3",
+      "detail": "24 frames, worst deviation 1.1e-16",
+      "pass": true
+    },
+    "g29": {
+      "claim": "pairing transfers to the relabelled source at L = 4",
+      "detail": "24 frames, worst deviation 3.4e-14",
+      "pass": true
+    },
+    "g30": {
+      "claim": "a transported source reproduces the reference solution",
+      "detail": "worst relative deviation 4.2e-14",
+      "pass": true
+    },
+    "g31": {
+      "claim": "a source held fixed does not",
+      "detail": "smallest relative deviation 2.6671",
+      "pass": true
+    },
+    "g32": {
+      "claim": "frame spread of the pairing stays order one",
+      "detail": "spread over reference 1.6928 7.3335 10.5157",
+      "pass": true
+    },
+    "g33": {
+      "claim": "constant-sign frames form a subgroup",
+      "detail": "order 6, traces [-1, -1, -1, 0, 0, 3]",
+      "pass": true
+    },
+    "g34": {
+      "claim": "the subgroup has four right cosets",
+      "detail": "sizes 6 6 6 6",
+      "pass": true
+    },
+    "g35": {
+      "claim": "the pairing is constant on each right coset",
+      "detail": "worst variation within a coset 6.2e-10",
+      "pass": true
+    },
+    "g36": {
+      "claim": "the four coset values are separated",
+      "detail": "nearest pair of coset values 0.0027 apart",
+      "pass": true
+    },
+    "g37": {
+      "claim": "the 24-frame scan takes exactly four values",
+      "detail": "distinct values at L = 3,4,5,6: 4 4 4 4",
+      "pass": true
+    },
+    "g38": {
+      "claim": "a fully averaged source is blind to the frame",
+      "detail": "spread over 24 frames 4.4e-16",
+      "pass": true
+    },
+    "g39": {
+      "claim": "rejector: averaging over the subgroup alone does not suffice",
+      "detail": "smallest remaining spread 0.0176",
+      "pass": true
+    }
+  },
+  "identity_frame": 23,
+  "mixed_frames": 18,
+  "notes": {
+    "action": "m(gh) = m(g) after m(h); Q_g = P Q P^T, P the permutation of m(g)",
+    "coset_sizes": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "dof_counts": {
+      "3": 98,
+      "4": 279,
+      "5": 604,
+      "6": 1115,
+      "7": 1854,
+      "8": 2863
+    },
+    "frobenius_law": "|E_g|_F^2 = 800(L-1)^3 + 224(L-1)^2 + 32(L-1)",
+    "frobenius_values": {
+      "3": 7360.0,
+      "4": 23712.0,
+      "5": 54912.0,
+      "6": 105760.0,
+      "7": 181056.0,
+      "8": 285600.0
+    },
+    "full_average_spread": "4.4e-16",
+    "pairing_transfer": "b . Q_g^-1 . b = (P^T b) . Q^-1 . (P^T b)",
+    "sextet_traces": [
+      -1,
+      -1,
+      -1,
+      0,
+      0,
+      3
+    ],
+    "subgroup_average_spread": "1.8e-02"
+  },
+  "object": "assembly-defect isospectrality and the source-pairing collapse",
+  "pass": 39,
+  "sizes": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ]
+}

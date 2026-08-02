@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle863_time_from_records_2026_07_28.py
+runner_sha256: e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62
+input_fingerprint_sha256: f7731e18f2e9bb8ca1e6d582402b36b9d7983e0d6a210cb96fd55b37e40ac3d9
+timeout_sec: 1400
+exit_code: 0
+elapsed_sec: 120.36
+status: ok
+----- stdout -----
+CYCLE863_TIME_FROM_RECORDS_TRIPTYCH
+OWNER_DIRECTED_SUPERVISOR_RUN_NO_AXIOM_SURFACE_TOUCHED
+CERTIFICATE A_SATURATION PASS {"availability_histogram_control":{"0":64},"availability_histogram_formation":{"0":60,"2":4},"certificate":"A_SATURATION","counterfactual_operator":"K.M.prepare_endpoint(state, direction)","declared_sample":{"boundary_cap":1100,"lane_cap":64,"lanes_sampled":64},"finding":"formation-as-saturation holds iff formation boundaries concentrate at availability==1 and dirty controls at availability!=1; histograms above are the exact verdict at the declared bounded sample","pass":true,"samples":{"control":64,"formation":64},"substitution_errors":128}
+CERTIFICATE B_DERIVED_CLOCK PASS {"certificate":"B_DERIVED_CLOCK","finding":"the supplied tick re-derives from record structure iff sync events sit on orbit boundaries and the E2 census equals first sync events; fractions above are the exact verdict","first_sync_equals_landed_E2":"25/114","on_tick_fraction":0.141648,"pass":true,"spacing_top":[[1,432146],[13,13183],[30,8902],[6,6359],[383,4899],[29,4783]],"sync_events_total":559606,"sync_off_tick":480339,"sync_on_tick":79267}
+CERTIFICATE C_INTRINSIC_RECONSTRUCTION PASS {"E2_prime_extra_keys":624,"E2_prime_first_sync_matches":"25/114","certificate":"C_INTRINSIC_RECONSTRUCTION","finding":"E1 is intrinsically definable by construction (first formation event); E2 is scheduler-free iff first-sync reproduces it exactly and adds no extra keys","intrinsic_E1_identity":"182/182","landed_counts":[182,114],"landed_expected":[182,114],"pass":true}
+SUMMARY_JSON {"checks":{"A_SATURATION":true,"B_DERIVED_CLOCK":true,"C_INTRINSIC_RECONSTRUCTION":true,"D_CONTROLS":true},"cycle":863,"event_store_cap":4096,"pass":true,"replay_runtime":118.226,"runtime_seconds":119.612}
+CYCLE863_TIME_FROM_RECORDS_PASS
+
+----- stderr -----
+

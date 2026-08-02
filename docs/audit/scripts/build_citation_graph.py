@@ -157,6 +157,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "cl3_complexification_split_narrow_theorem_note_2026-05-10": [
         "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py",
     ],
+    # Cycle857's bit-mask checker deliberately stays independent of the
+    # primary combinations/gap implementation and therefore does not import
+    # it. Expose the sibling checker beside the primary in this claim packet.
+    "census_theorem_cycle857_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle857_census_independent_check_2026_07_28.py",
+    ],
     # This positive-theorem packet names the irreducible-faithful boundary.
     # Its independently implemented direct-sum steelman is not imported by
     # the primary runner, so register that exact N7 surface claim-scoped.

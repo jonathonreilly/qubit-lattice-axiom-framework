@@ -1,6 +1,6 @@
 {
- "edge_count": 15396,
- "node_count": 4625,
+ "edge_count": 15400,
+ "node_count": 4626,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10485,6 +10485,10 @@
   "physical_m2_typed_radius_one_compiler_tournament_cycle822_bounded_theorem_note_2026-07-30": {
    "deps_hash": "4f426bcba0df",
    "out_degree": 10
+  },
+  "physical_minus_branch_response_floor_assembly_defect_law_cycle709_note_2026-08-02": {
+   "deps_hash": "7d75f5a5e4cf",
+   "out_degree": 4
   },
   "physical_operational_source_response_readout_chain_cycle700_note_2026-07-25": {
    "deps_hash": "7dc7df7e6543",

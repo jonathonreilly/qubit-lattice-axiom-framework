@@ -683,6 +683,8 @@ def first_ready_forensic_claim(
     for row in rows:
         if (
             row.get("ready")
+            and row.get("audit_work_kind", "fresh_scientific_audit")
+            == "fresh_scientific_audit"
             and row.get("audit_status") in {"unaudited", "audit_in_progress"}
             and batch.source_requires_forensic(row)
         ):

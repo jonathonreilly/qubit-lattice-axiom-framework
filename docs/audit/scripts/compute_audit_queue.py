@@ -32,6 +32,8 @@ import classify_runner_passes
 import no_go_discipline_gate
 import premise_nodes
 import ledger_io
+import audit_science_fingerprint
+import forensic_evidence_readiness
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -100,6 +102,81 @@ def needs_audit(row: dict) -> tuple[bool, str]:
     if audit_status == "audited_failed" and not row.get("note_path", "").startswith("archive_unlanded/"):
         return True, "non_terminal_failed"
     return False, "not_pending"
+
+
+PACKET_ONLY_INVALIDATION_PREFIXES = (
+    "no_go_discipline_packet_missing",
+    "no_go_discipline_packet_invalid",
+    "no_go_discipline_cross_confirmation_packet_invalid",
+    "cross_confirmation_first_audit_no_go_packet_invalid",
+    "cross_confirmation_second_audit_no_go_packet_invalid",
+    "cross_confirmation_third_audit_no_go_packet_invalid",
+)
+
+
+def _latest_archived_audit(row: dict) -> dict | None:
+    history = row.get("previous_audits") or []
+    for archived in reversed(history):
+        if isinstance(archived, dict) and archived.get("audit_status"):
+            return archived
+    return None
+
+
+def audit_work_kind(row: dict, rows: dict[str, dict]) -> tuple[str, str | None]:
+    """Route mechanical preparation separately from scientific re-audit.
+
+    A prior judgment is packet-upgrade eligible only when its v2 scientific
+    baseline exactly matches current state.  Legacy rows with no such proof
+    are sent to deterministic provenance reconstruction; ambiguity never
+    falls through to the cheaper path.
+    """
+    archived = _latest_archived_audit(row)
+    if archived is None:
+        return "fresh_scientific_audit", None
+    invalidation_reason = str(archived.get("invalidation_reason") or "")
+    if not invalidation_reason.startswith(PACKET_ONLY_INVALIDATION_PREFIXES):
+        return "fresh_scientific_audit", invalidation_reason or None
+    snapshot = archived.get("audit_state_snapshot") or {}
+    baseline = snapshot.get("science_fingerprint")
+    if baseline is None:
+        return (
+            "provenance_reconstruction_required",
+            "legacy audit has no science_fingerprint_v2",
+        )
+    judgment_baseline = snapshot.get("judgment_fingerprint")
+    judgment_problems = (
+        audit_science_fingerprint.judgment_fingerprint_problems(
+            judgment_baseline
+        )
+    )
+    if judgment_problems:
+        return (
+            "provenance_reconstruction_required",
+            "legacy audit has no valid frozen judgment fingerprint: "
+            + ",".join(judgment_problems[:3]),
+        )
+    try:
+        current = audit_science_fingerprint.build_science_fingerprint(
+            {
+                **row,
+                # Invalidation resets auditor-owned classification fields.
+                # Compare the archived judgment's exact target classification
+                # while recomputing every factual source/dependency surface.
+                "claim_type": archived.get("claim_type"),
+                "claim_scope": archived.get("claim_scope"),
+            },
+            rows,
+            REPO_ROOT,
+        )
+    except audit_science_fingerprint.ScienceFingerprintError as exc:
+        return "provenance_reconstruction_required", str(exc)
+    change = audit_science_fingerprint.science_fingerprint_change(
+        baseline,
+        current,
+    )
+    if change is not None:
+        return "fresh_scientific_audit", change
+    return "legacy_packet_upgrade", None
 
 
 def cycle_break_targets(rows: dict[str, dict]) -> list[dict]:
@@ -594,7 +671,21 @@ def main() -> int:
             continue
         a = row.get("audit_status", "unaudited")
         criticality = row.get("criticality") or "leaf"
-        ready = is_ready(row, rows)
+        dependency_ready = is_ready(row, rows)
+        evidence_issue = forensic_evidence_readiness.cached_row_readiness_issue(
+            {**row, "claim_id": cid},
+            rows,
+            REPO_ROOT,
+        )
+        forensic_evidence_ready = evidence_issue is None
+        work_kind, work_reason = audit_work_kind(
+            {**row, "claim_id": cid},
+            rows,
+        )
+        if evidence_issue is not None:
+            work_kind = "evidence_repair_required"
+            work_reason = evidence_issue
+        ready = dependency_ready and forensic_evidence_ready
         entry = {
             "claim_id": cid,
             "note_path": row.get("note_path"),
@@ -613,6 +704,11 @@ def main() -> int:
             "helper_runner_paths": list(row.get("helper_runner_paths") or []),
             "deps": list(row.get("deps", [])),
             "ready": ready,
+            "dependency_ready": dependency_ready,
+            "forensic_evidence_ready": forensic_evidence_ready,
+            "forensic_evidence_readiness_issue": evidence_issue,
+            "audit_work_kind": work_kind,
+            "audit_work_reason": work_reason,
             "blocker": row.get("blocker"),
             "cross_confirmation_status": (row.get("cross_confirmation") or {}).get("status"),
             "audit_independence_required": (
@@ -643,6 +739,12 @@ def main() -> int:
     queue = {
         "total_pending": len(pending),
         "ready_count": sum(1 for e in pending if e["ready"]),
+        "dependency_ready_count": sum(
+            1 for e in pending if e["dependency_ready"]
+        ),
+        "forensic_evidence_ready_count": sum(
+            1 for e in pending if e["forensic_evidence_ready"]
+        ),
         "shadow_would_park_count": sum(
             1 for e in pending if e.get("would_park") is True
         ),
@@ -657,6 +759,15 @@ def main() -> int:
             c: sum(1 for e in pending if e["criticality"] == c)
             for c in ("critical", "high", "medium", "leaf")
         },
+        "by_work_kind": {
+            kind: sum(1 for e in pending if e["audit_work_kind"] == kind)
+            for kind in (
+                "fresh_scientific_audit",
+                "legacy_packet_upgrade",
+                "evidence_repair_required",
+                "provenance_reconstruction_required",
+            )
+        },
         "cycle_break_targets": cycle_targets,
         "cycle_break_target_count": len(cycle_targets),
         "queue": pending,
@@ -669,12 +780,18 @@ def main() -> int:
         "# Audit Queue",
         "",
         f"**Total pending:** {queue['total_pending']}",
-        f"**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** {queue['ready_count']}",
+        f"**Ready (dependencies and deterministic forensic evidence):** {queue['ready_count']}",
+        f"**Dependency-ready:** {queue['dependency_ready_count']}",
+        f"**Forensic-evidence-ready:** {queue['forensic_evidence_ready_count']}",
         "",
         "By criticality:",
     ]
     for c in ("critical", "high", "medium", "leaf"):
         md_lines.append(f"- `{c}`: {queue['by_criticality'][c]}")
+    md_lines.append("")
+    md_lines.append("By work kind:")
+    for kind, count in queue["by_work_kind"].items():
+        md_lines.append(f"- `{kind}`: {count}")
     md_lines.append("")
     md_lines.append(
         "Auditor (current best Codex GPT model at maximum reasoning by "
@@ -686,12 +803,13 @@ def main() -> int:
     md_lines.append("## Top 50")
     md_lines.append("")
     md_lines.append(
-        "| # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |"
+        "| # | claim_id | work kind | claim_type | reason | criticality | desc | score | ready | indep required | runner |"
     )
-    md_lines.append("|---:|---|---|---|---|---:|---:|:---:|---|---|")
+    md_lines.append("|---:|---|---|---|---|---|---:|---:|:---:|---|---|")
     for i, e in enumerate(top, 1):
         md_lines.append(
-            f"| {i} | `{e['claim_id']}` | {e.get('claim_type') or '-'} | "
+            f"| {i} | `{e['claim_id']}` | {e['audit_work_kind']} | "
+            f"{e.get('claim_type') or '-'} | "
             f"{e['queue_reason']} | {e['criticality']} | "
             f"{e['transitive_descendants']} | "
             f"{e['load_bearing_score']:.2f} | "

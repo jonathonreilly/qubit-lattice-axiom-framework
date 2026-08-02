@@ -89,6 +89,13 @@ mutation per check family (on a scratch copy or reverted immediately), and
 the check must fail. A check that asserts the formula it is supposed to test
 confirms nothing. Record the mutations you ran in the PR body.
 
+After the full pipeline refreshes changed-runner caches, run
+`python3 docs/audit/scripts/check_changed_audit_evidence.py --base
+origin/main`. Fix every named missing runner/input/current compute result or
+incomplete N5 certificate before requesting review. This is preflight only:
+the independent audit reruns the exact runner live and does not inherit a PR
+author's verdict.
+
 ## 9. Clean-state validation
 
 From a worktree with no untracked pipeline residue (`git clean` generated

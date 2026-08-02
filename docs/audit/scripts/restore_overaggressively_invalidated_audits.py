@@ -105,12 +105,14 @@ from pathlib import Path
 
 import no_go_discipline_gate
 import audit_contract
+import audit_science_fingerprint
 
 import ledger_io
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 # Mirror of `invalidate_stale_audits.ARCHIVED_FIELDS`. These are the
 # audit-owned fields that `archive_and_reset` snapshots into
@@ -543,20 +545,42 @@ def restore_audit_from_previous(
     if not history:
         return None
     archived = history[-1]
-    # Axiom-premise pre-check (mirrors invalidate_stale_audits.py's
-    # axiom_premise_changed trigger exactly, including its tolerance for
-    # snapshots that predate the hash map): an audit performed under
-    # different axiom-premise text is re-audit material, never restore
-    # material. Without this, a restored stale-premise verdict is briefly
-    # LIVE in the ledger until the next sweep re-invalidates it — a window
-    # in which dispatch producers, lane certification, or a collaborator
-    # can read a verdict audited under different axioms as current.
+    # Scientific-provenance pre-check: an audit performed under different
+    # target/dependency/runner/premise state is re-audit material, never
+    # restoration material.  Check before writing so stale authority is not
+    # briefly live between restoration and the next invalidation sweep.
     if rows is not None:
         snap = archived.get("audit_state_snapshot") or {}
-        snap_axiom_hash = snap.get("dep_axiom_premise_note_hash") or {}
-        for dep, before in snap_axiom_hash.items():
-            after = (rows.get(dep) or {}).get("note_hash")
-            if before is not None and after is not None and before != after:
+        science_baseline = snap.get("science_fingerprint")
+        if science_baseline is not None:
+            current_science = audit_science_fingerprint.build_science_fingerprint(
+                {
+                    **row,
+                    "claim_type": archived.get("claim_type"),
+                    "claim_scope": archived.get("claim_scope"),
+                },
+                rows,
+                REPO_ROOT,
+            )
+            if audit_science_fingerprint.science_fingerprint_change(
+                science_baseline,
+                current_science,
+            ) is not None:
+                return None
+        else:
+            if (
+                audit_science_fingerprint.legacy_science_epoch_change(
+                    REPO_ROOT
+                )
+                is not None
+            ):
+                return None
+            if audit_science_fingerprint.legacy_premise_snapshot_change(
+                snap,
+                row,
+                rows,
+                REPO_ROOT,
+            ) is not None:
                 return None
     new_row = dict(row)
     new_row["previous_audits"] = history

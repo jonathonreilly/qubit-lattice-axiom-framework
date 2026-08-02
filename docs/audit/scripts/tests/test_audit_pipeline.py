@@ -729,13 +729,88 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
         prompt.parent.mkdir(parents=True, exist_ok=True)
         if not prompt.exists():
             prompt.write_text("# Fixture audit prompt\n", encoding="utf-8")
+        packet_gate = (
+            tmp_root / "docs" / "audit" / "scripts" /
+            "no_go_discipline_gate.py"
+        )
+        packet_gate.parent.mkdir(parents=True, exist_ok=True)
+        if not packet_gate.exists():
+            packet_gate.write_text("# Fixture packet gate\n", encoding="utf-8")
+        for relative in (
+            "docs/audit/scripts/apply_audit.py",
+            "docs/audit/scripts/audit_contract.py",
+            "docs/audit/scripts/orchestrate_audit_loop.py",
+            "scripts/codex_audit_runner.py",
+        ):
+            packet_surface = tmp_root / relative
+            packet_surface.parent.mkdir(parents=True, exist_ok=True)
+            if not packet_surface.exists():
+                packet_surface.write_text(
+                    "# Fixture packet policy\n",
+                    encoding="utf-8",
+                )
+        audit_skill = (
+            tmp_root / "docs" / "ai_methodology" / "skills" /
+            "audit-loop" / "SKILL.md"
+        )
+        audit_skill.parent.mkdir(parents=True, exist_ok=True)
+        if not audit_skill.exists():
+            audit_skill.write_text("# Fixture audit skill\n", encoding="utf-8")
         registry = module.DATA_DIR / "axiom_premise_nodes.json"
         registry.parent.mkdir(parents=True, exist_ok=True)
         if not registry.exists():
             registry.write_text(
-                json.dumps({"schema_version": 1, "canonical_ids": []}) + "\n",
+                json.dumps(
+                    {"schema_version": 1, "canonical_ids": [], "nodes": {}}
+                ) + "\n",
                 encoding="utf-8",
             )
+        authority_registry = module.DATA_DIR / "doc_authority_registry.json"
+        if not authority_registry.exists():
+            authority_registry.write_text(
+                json.dumps({"schema_version": 1, "rows": []}) + "\n",
+                encoding="utf-8",
+            )
+        for relative in (
+            "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+            "docs/audit/scripts/build_citation_graph.py",
+            "docs/audit/scripts/compute_effective_status.py",
+            "docs/audit/scripts/premise_nodes.py",
+            "docs/audit/data/source_path_aliases.json",
+        ):
+            policy_surface = tmp_root / relative
+            policy_surface.parent.mkdir(parents=True, exist_ok=True)
+            if not policy_surface.exists():
+                policy_surface.write_text(
+                    "{}\n" if relative.endswith(".json") else "# fixture\n",
+                    encoding="utf-8",
+                )
+        dependency_policy_paths = (
+            "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+            "docs/audit/scripts/build_citation_graph.py",
+            "docs/audit/scripts/compute_effective_status.py",
+            "docs/audit/scripts/premise_nodes.py",
+            "docs/audit/data/doc_authority_registry.json",
+            "docs/audit/data/tier_a_admissions.json",
+            "docs/audit/data/owner_governed_premise_nodes.json",
+            "docs/audit/data/source_path_aliases.json",
+        )
+        policy_manifest = module.DATA_DIR / "dependency_policy_epoch.json"
+        policy_manifest.write_text(
+            json.dumps({
+                "schema": "dependency_policy_epoch_manifest_v1",
+                "epoch": "fixture_dependency_policy_v1",
+                "sources": {
+                    relative: (
+                        hashlib.sha256((tmp_root / relative).read_bytes()).hexdigest()
+                        if (tmp_root / relative).is_file()
+                        else None
+                    )
+                    for relative in dependency_policy_paths
+                },
+            }) + "\n",
+            encoding="utf-8",
+        )
         module.AXIOM_PREMISE_NODES_PATH = registry
         module._AXIOM_PREMISE_IDS = None
     # Writers persist through the sharded ledger; point the module's OWN
@@ -13755,6 +13830,52 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         self.addCleanup(self._tmp.cleanup)
         self.tmp_root = Path(self._tmp.name)
         self.fx = CleanLedgerFixture(self.tmp_root)
+        for relative in (
+            "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+            "docs/audit/scripts/build_citation_graph.py",
+            "docs/audit/scripts/compute_effective_status.py",
+            "docs/audit/scripts/premise_nodes.py",
+            "docs/audit/data/doc_authority_registry.json",
+            "docs/audit/data/source_path_aliases.json",
+            "docs/audit/data/dependency_policy_epoch.json",
+        ):
+            destination = self.tmp_root / relative
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes((PROJECT_ROOT / relative).read_bytes())
+        data_dir = self.tmp_root / "docs" / "audit" / "data"
+        data_dir.mkdir(parents=True, exist_ok=True)
+        (data_dir / "axiom_premise_nodes.json").write_text(
+            json.dumps(
+                {
+                    "schema_version": 1,
+                    "canonical_ids": [],
+                    "nodes": {},
+                }
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        self._write_legacy_epoch_baseline()
+
+    def _write_legacy_epoch_baseline(self):
+        science = _import("audit_science_fingerprint")
+        data_dir = self.tmp_root / "docs" / "audit" / "data"
+        (data_dir / "legacy_science_epoch_baseline.json").write_text(
+            json.dumps(
+                {
+                    "schema": "legacy_science_epoch_baseline_v1",
+                    "framework_premise_epoch_digest": (
+                        science.framework_premise_epoch(self.tmp_root)
+                    ),
+                    "dependency_policy_epoch_digest": (
+                        science.dependency_policy_epoch(self.tmp_root)
+                    ),
+                },
+                sort_keys=True,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
 
     def _archived_audit(self, *, audit_status="audited_clean",
                         independence="cross_family", cc_status=None,
@@ -13812,8 +13933,37 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         m.ledger_io.DATA = m.DATA_DIR
         return m
 
+    def _write_premise_registry(self, module):
+        module.DATA_DIR.mkdir(parents=True, exist_ok=True)
+        (self.tmp_root / "docs" / "MINIMAL.md").write_text(
+            "# Fixture minimal axiom\n",
+            encoding="utf-8",
+        )
+        (self.tmp_root / "docs" / "SCALE.md").write_text(
+            "# Fixture scale premise\n",
+            encoding="utf-8",
+        )
+        (module.DATA_DIR / "axiom_premise_nodes.json").write_text(
+            json.dumps({
+                "schema_version": 1,
+                "canonical_ids": [
+                    "minimal_axioms",
+                    "scale_reference_primitive",
+                ],
+                "nodes": {
+                    "minimal_axioms": {"current_path": "docs/MINIMAL.md"},
+                    "scale_reference_primitive": {
+                        "current_path": "docs/SCALE.md"
+                    },
+                },
+            }) + "\n",
+            encoding="utf-8",
+        )
+        self._write_legacy_epoch_baseline()
+
     def test_restore_refuses_stale_axiom_premise_hash(self):
         m = self._import_and_patch()
+        self._write_premise_registry(m)
         matching_hash = "c8201cb1" + "0" * 56
         archived = self._archived_audit()
         archived["audit_state_snapshot"] = {
@@ -13844,6 +13994,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
 
     def test_restore_proceeds_on_matching_or_absent_axiom_premise_hash(self):
         m = self._import_and_patch()
+        self._write_premise_registry(m)
         matching_hash = "c8201cb1" + "0" * 56
         matching_primitive_hash = "9a2f106e" + "0" * 56
         archived = self._archived_audit()
@@ -13856,6 +14007,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             },
         }
         row = self._seed_with_archived("matching_premise_row", archived)
+        row["deps"] = ["minimal_axioms", "scale_reference_primitive"]
         rows = {
             "matching_premise_row": row,
             "minimal_axioms": {

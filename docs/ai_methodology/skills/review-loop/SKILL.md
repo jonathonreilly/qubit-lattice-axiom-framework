@@ -819,6 +819,21 @@ repair first, or ask for explicit user approval to spend the audit capacity.
 Never trade a clean audit graph for cosmetic source-note churn without making
 that cost explicit.
 
+**Dependency/axiom impact guard.** `science_fingerprint_v2` binds the complete
+framework-premise epoch and dependency-policy epoch. A branch that changes an
+axiom/approved primitive, premise membership or classification, document
+authority/admission registry, citation/dependency extraction policy,
+chain-sufficiency policy, or the fresh-look dependency standard must inspect
+the pipeline's resulting invalidation set before PASS. The safe default is a
+fresh scientific audit for every mismatching fingerprint, including
+transitive consumers. Narrowing that blast radius requires a separate,
+reviewed machine-readable equivalence/impact record; neither the PR author nor
+review-loop may silently declare existing scientific judgments unaffected.
+`docs/audit/data/legacy_science_epoch_baseline.json` is an immutable
+deployment anchor, not a rolling manifest: never refresh it to make a policy
+change pass. A mismatch must invalidate remaining pre-v2 judgments or be
+resolved by a separately reviewed, row-specific provenance migration.
+
 0. Before applying a PR, inventory any audit-status surface it touches:
 
 ```bash
@@ -873,6 +888,24 @@ git diff --check
 
 The known graph-cycle warning is acceptable. Any strict-lint error blocks a
 review-loop PASS.
+
+6a. **Changed-science evidence-readiness PASS gate (hard).** After the full
+pipeline has executed or refreshed every changed runner, run:
+
+```bash
+python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main
+```
+
+This gate is mechanical preparation, not an audit. It must pass for every
+changed non-meta scientific note and every row bound to a changed primary or
+helper runner. A missing runner, invalid/unreadable declared input, stale or
+failed SHA/input-bound compute result, or incomplete forensic N5 resolution
+certificate blocks review-loop PASS. Repair the evidence surface in the PR,
+or make intentionally incomplete work an explicit `open_gate`; do not let the
+independent audit discover a deterministic compute omission after spending a
+seat. The cache/result used here is non-authoritative review evidence only.
+The audit lane must still execute the current runner live and authenticate its
+invocation-bound stdout before applying a verdict.
 
 **`note_hash` drift is a notice for non-retained rows, an error only for
 retained-grade rows.** `note_hash` is a *source-content* hash, not an audit

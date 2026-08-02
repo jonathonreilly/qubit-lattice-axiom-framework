@@ -18,6 +18,7 @@ from itertools import product
 import json
 import math
 from pathlib import Path
+import subprocess
 import sys
 from time import perf_counter
 
@@ -56,6 +57,7 @@ if not SCRIPTS.is_dir():
 sys.path.insert(0, str(SCRIPTS))
 
 
+import frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25 as C703
 import frontier_cycle708_endpoint_cube_tableau_core_2026_07_26 as T708
 import frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26 as C712
 import frontier_cycle720_cell_majorana_companion_geometry_2026_07_27 as M720
@@ -67,6 +69,8 @@ import frontier_factorization_object_api_2026_07_28 as FACTOR
 
 
 DIRECT_IMPORT_SHA256 = {
+    "frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py":
+        "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4",
     "frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py":
         "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3",
     "frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py":
@@ -84,6 +88,10 @@ DIRECT_IMPORT_SHA256 = {
     "frontier_factorization_object_api_2026_07_28.py":
         "a6fed8f34adbf36f82501fa827c756ce488d8b67e375e9ae28aa519cd727f0e7",
 }
+EXPECTED_LOADED_HELPER_COUNT = 45
+EXPECTED_LOADED_HELPER_CLOSURE_SHA256 = (
+    "23724607a21de418a45acc5783162a7833e4567df709fae761e48ab4ca675dfa"
+)
 MATTER = 12
 PHYSICAL = 18
 MATTER_MASK = (1 << MATTER) - 1
@@ -743,10 +751,38 @@ def target_character_census(shape: tuple[int, int, int]) -> dict:
 def landed_mass_contact_fixture() -> dict:
     """Rerun the landed Cycle720/Cycle822 one-particle fixture surface."""
     raw = M720.C.R.local_free_contact_mass()["mass_contact"]
-    return {
+    report = {
         key: value.item() if isinstance(value, np.generic) else value
         for key, value in raw.items()
     }
+    rows = []
+    for mode in range(6):
+        matter = 1 << mode
+        references = C703.encoded_reference_mask(matter, 1)
+        total_parity = (matter.bit_count() + references.bit_count()) & 1
+        flipped_total_parity = (
+            matter.bit_count() + (references ^ 1).bit_count()
+        ) & 1
+        rows.append({
+            "mode": mode,
+            "reference_bits": references,
+            "extended_total_parity": total_parity,
+            "flipped_reference_total_parity": flipped_total_parity,
+        })
+    failures = sum(row["extended_total_parity"] != 0 for row in rows)
+    flipped_detection_failures = sum(
+        row["flipped_reference_total_parity"] != 1 for row in rows
+    )
+    report.update({
+        "one_particle_extended_even_sector_columns_tested": len(rows),
+        "one_particle_extended_even_sector_failures": failures,
+        "one_particle_wrong_reference_flip_detection_failures": (
+            flipped_detection_failures
+        ),
+        "one_particle_extended_even_sector_rows": rows,
+        "one_particle_extended_even_sector_present": failures == 0,
+    })
+    return report
 
 
 def six_layer_certificate(shape: tuple[int, int, int]) -> dict:
@@ -1000,6 +1036,75 @@ def landed_import_inventory() -> tuple[list[dict], list[str]]:
     return inventory, sorted(foreign)
 
 
+def loaded_helper_closure_certificate(inventory: list[dict]) -> dict:
+    """Content-pin the complete loaded repo-local helper closure.
+
+    The changed Cycle868 runner is excluded because its hash is recorded
+    separately as ``runner_sha256``.  Every other loaded Python source below
+    ``scripts/`` contributes both its relative path and SHA-256 to the frozen
+    closure digest, so a changed, missing, or newly loaded transitive helper
+    changes this certificate.
+    """
+    runner_path = f"scripts/{SCRIPT.name}"
+    rows = sorted(
+        (row["relative_path"], row["sha256"])
+        for row in inventory
+        if row["relative_path"] != runner_path
+    )
+    observed = sha256(json.dumps(
+        rows, separators=(",", ":")
+    ).encode()).hexdigest()
+    return {
+        "runner_path_excluded": runner_path,
+        "loaded_helper_count": len(rows),
+        "expected_loaded_helper_count": EXPECTED_LOADED_HELPER_COUNT,
+        "observed_closure_sha256": observed,
+        "expected_closure_sha256": EXPECTED_LOADED_HELPER_CLOSURE_SHA256,
+        "match": (
+            len(rows) == EXPECTED_LOADED_HELPER_COUNT
+            and observed == EXPECTED_LOADED_HELPER_CLOSURE_SHA256
+        ),
+    }
+
+
+def source_commit_object_certificate() -> dict:
+    """Verify the named source commit when Git metadata is available.
+
+    Git-archive snapshots have no object database; for those, the complete
+    loaded-helper closure pin remains the portable source-identity gate.
+    """
+    try:
+        inside = subprocess.run(
+            ("git", "-C", str(REPO), "rev-parse", "--is-inside-work-tree"),
+            capture_output=True, text=True, check=False,
+        )
+        repository_has_git_metadata = (
+            inside.returncode == 0 and inside.stdout.strip() == "true"
+        )
+        exists = subprocess.run(
+            (
+                "git", "-C", str(REPO), "cat-file", "-e",
+                f"{ARGS.source_commit}^{{commit}}",
+            ),
+            capture_output=True, text=True, check=False,
+        ) if repository_has_git_metadata else None
+    except OSError:
+        repository_has_git_metadata = False
+        exists = None
+    return {
+        "named_source_commit": ARGS.source_commit,
+        "repository_has_git_metadata": repository_has_git_metadata,
+        "commit_object_exists": (
+            None if exists is None else exists.returncode == 0
+        ),
+        "verification_mode": (
+            "git_commit_object_plus_loaded_helper_closure"
+            if repository_has_git_metadata
+            else "portable_loaded_helper_closure_only"
+        ),
+    }
+
+
 def main() -> None:
     started = perf_counter()
     direct_hash_failures = sum(
@@ -1017,6 +1122,8 @@ def main() -> None:
     covariance = frame_covariance_certificate()
     mass_contact = landed_mass_contact_fixture()
     inventory, foreign_imports = landed_import_inventory()
+    helper_closure = loaded_helper_closure_certificate(inventory)
+    source_commit_object = source_commit_object_certificate()
     inventory_paths = {row["relative_path"] for row in inventory}
     direct_inventory_failures = sum(
         f"scripts/{name}" not in inventory_paths
@@ -1024,6 +1131,13 @@ def main() -> None:
     )
     checks = {
         "pinned_origin_main_direct_import_hashes": direct_hash_failures == 0,
+        "pinned_origin_main_complete_loaded_helper_closure": (
+            helper_closure["match"]
+        ),
+        "named_source_commit_object_exists_when_git_is_available": (
+            not source_commit_object["repository_has_git_metadata"]
+            or source_commit_object["commit_object_exists"] is True
+        ),
         "all_frontier_imports_beneath_repo_scripts": not foreign_imports,
         "direct_import_inventory_complete": direct_inventory_failures == 0,
         "three_native_13_gate_words_exact": all(
@@ -1103,6 +1217,15 @@ def main() -> None:
             and mass_contact[
                 "contact_double_occupation_phase_residual"
             ] < 1.0e-12
+            and mass_contact[
+                "one_particle_extended_even_sector_columns_tested"
+            ] == 6
+            and mass_contact[
+                "one_particle_extended_even_sector_failures"
+            ] == 0
+            and mass_contact[
+                "one_particle_wrong_reference_flip_detection_failures"
+            ] == 0
             and mass_contact["one_particle_extended_even_sector_present"]
         ),
     }
@@ -1121,6 +1244,8 @@ def main() -> None:
         "abstract_active_covariance": covariance,
         "landed_one_particle_mass_contact_fixture": mass_contact,
         "direct_import_sha256_pins": DIRECT_IMPORT_SHA256,
+        "loaded_helper_closure_pin": helper_closure,
+        "source_commit_object_certificate": source_commit_object,
         "loaded_landed_import_count": len(inventory),
         "loaded_landed_import_inventory": inventory,
         "foreign_frontier_imports": foreign_imports,

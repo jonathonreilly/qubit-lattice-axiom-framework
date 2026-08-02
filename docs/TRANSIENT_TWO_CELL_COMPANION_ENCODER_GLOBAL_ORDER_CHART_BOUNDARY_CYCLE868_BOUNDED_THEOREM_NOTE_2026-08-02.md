@@ -130,11 +130,10 @@ of the local encoder or the target-chart discriminator.
 
 The three native-axis words are direct. The transported abstract operator
 family is closed under all 24 proper-cubic frames and all 576 ordered frame
-products. State-vector lifts acquire only a classified order-two projective
-scalar, which cancels from operator and channel conjugation. Literal
-nearest-neighbour routing of every active-frame word on one common held atlas
-is a separate acceptance obligation and is not inferred from the abstract
-tableau result.
+products. Cycle868 does not execute state-vector lifts or classify their
+projective cocycle. Literal nearest-neighbour routing of every active-frame
+word on one common held atlas is a separate acceptance obligation and is not
+inferred from the abstract tableau result.
 
 ## Supplied, derived, and open
 

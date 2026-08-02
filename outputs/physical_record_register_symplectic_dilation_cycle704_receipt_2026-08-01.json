@@ -1,17 +1,17 @@
 {
  "A": {
-  "R_mut": -4.0411929130059585,
-  "R_static19": -3.9169789686578382,
+  "R_mut": -4.041192913005944,
+  "R_static19": -3.9169789686578174,
   "hold": [
    -4.209568736178572,
    -4.150939492487698,
    -4.121308954024253,
    -4.1145788661621125
   ],
-  "range_ratio": 33.161007665936864,
-  "range_sep": 0.12421394434812028,
+  "range_ratio": 33.161007666123425,
+  "range_sep": 0.12421394434812694,
   "reversal": 2.916316e-16,
-  "staticerr": 0.003745783167973915
+  "staticerr": 0.003745783167953043
  },
  "B": {
   "b4": 0.0,
@@ -25,21 +25,21 @@
  "C": {
   "c1": 2.916316e-16,
   "c2": 2.414735e-15,
-  "c4c": 6.255091e-16,
+  "c4c": 4.773069e-16,
   "defect_raw": 3.637979e-12,
   "dim": 58,
   "inv_raw": 3.274181e-11,
-  "logdet": 4.82947e-14,
-  "trip": 1.803016e-13
+  "logdet": 5.340173e-14,
+  "trip": 2.19301e-13
  },
  "D": {
   "d1": 6.270474e-14,
   "d2": 1.800173e-13,
-  "d6": 2.940279e-19,
-  "env_gap": 1.4554301648969066,
+  "d6": 5.594399e-19,
   "kernel_dim": 1454,
-  "loud": 0.0008532113036548952,
-  "silent": 3.433735e-19,
+  "loud": 0.0008532113036548956,
+  "omitted_gap": 1.4554301648969066,
+  "silent": 3.507658e-19,
   "sv": [
    77.5680609707272,
    54.09257575502038,
@@ -62,7 +62,12 @@
  "pass": true,
  "pass_count": 54,
  "resources": {
-  "elapsed_seconds": 2.86134691699408
+  "elapsed_seconds": 6.9937511250027455,
+  "timer_scope": "from primary-module execution before NumPy/SciPy and sibling-runner imports until immediately before receipt metadata assembly, after deterministic stdout is written; excludes interpreter startup"
  },
- "runner_sha256": "04409151aeaa1ef09e47c67866026fea1c42717e4ee0a16f6867f153dcabc083"
+ "runner_sha256": "7e24aca6718eedd53197e790bf174e68a71492365e226691551bc7cfdc9fe6f5",
+ "stdout": {
+  "bytes": 3873,
+  "sha256": "70e519025aa5f5d63932d64d9bf93de14e54bd7704ada1d3ef359520903b2234"
+ }
 }

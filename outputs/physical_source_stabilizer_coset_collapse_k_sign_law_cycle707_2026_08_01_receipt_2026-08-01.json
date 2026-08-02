@@ -9,18 +9,53 @@
     3,
     7
   ],
+  "conditional_on_clip": 6,
+  "conditionals": {
+    "G10.L3.broken": {
+      "detail": "clipped-surrogate broken min over both compare signs 1.9e-01",
+      "status": "conditional_on_clip"
+    },
+    "G10.L3.mm": {
+      "detail": "clipped-surrogate mm multiset max 9.7e-11",
+      "status": "conditional_on_clip"
+    },
+    "G10.L3.pp": {
+      "detail": "clipped-surrogate pp multiset max 2.7e-14",
+      "status": "conditional_on_clip"
+    },
+    "G10.L7.broken": {
+      "detail": "clipped-surrogate broken min over both compare signs 1.0e-01",
+      "status": "conditional_on_clip"
+    },
+    "G10.L7.mm": {
+      "detail": "clipped-surrogate mm multiset max 5.5e-10",
+      "status": "conditional_on_clip"
+    },
+    "G10.L7.pp": {
+      "detail": "clipped-surrogate pp multiset max 6.9e-13",
+      "status": "conditional_on_clip"
+    }
+  },
   "fail": 0,
   "gates": {
+    "G0.L3.domain": {
+      "detail": "x5 principal coframe exists; clipped 0 pd_min 9.8e-02",
+      "pass": true
+    },
+    "G0.L7.domain": {
+      "detail": "x5 principal coframe exists; clipped 0 pd_min 2.1e-01",
+      "pass": true
+    },
     "G1.L3.i0": {
       "detail": "cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11",
       "pass": true
     },
     "G1.L3.i1": {
-      "detail": "cs +1 e 2.8e-15 p 4.2e-15 K 5.9e-15",
+      "detail": "cs +1 e 6.3e-15 p 5.4e-15 K 8.6e-15",
       "pass": true
     },
     "G1.L3.i2": {
-      "detail": "cs +1 e 4.6e-15 p 4.8e-15 K 4.8e-15",
+      "detail": "cs +1 e 3.2e-15 p 2.3e-15 K 2.8e-15",
       "pass": true
     },
     "G1.L3.i3": {
@@ -32,7 +67,7 @@
       "pass": true
     },
     "G1.L3.i5": {
-      "detail": "cs +1 e 2.8e-15 p 2.6e-15 K 2.8e-15",
+      "detail": "cs +1 e 3.9e-15 p 4.1e-15 K 7.4e-15",
       "pass": true
     },
     "G1.L3.id": {
@@ -52,11 +87,11 @@
       "pass": true
     },
     "G1.L3.p15": {
-      "detail": "cs +1 e 4.6e-15 p 4.8e-15 K 4.9e-15",
+      "detail": "cs +1 e 5.2e-15 p 4.9e-15 K 7.4e-15",
       "pass": true
     },
     "G1.L3.p18": {
-      "detail": "cs +1 e 4.4e-15 p 5.1e-15 K 6.1e-15",
+      "detail": "cs +1 e 6.9e-15 p 5.8e-15 K 9.3e-15",
       "pass": true
     },
     "G1.L3.p23": {
@@ -72,11 +107,7 @@
       "pass": true
     },
     "G1.L7.plus": {
-      "detail": "branch max over 6 frames 4.6e-13",
-      "pass": true
-    },
-    "G10.L3.broken": {
-      "detail": "broken min over both compare signs 1.9e-01",
+      "detail": "branch max over 6 frames 3.1e-13",
       "pass": true
     },
     "G10.L3.classes": {
@@ -84,23 +115,15 @@
       "pass": true
     },
     "G10.L3.collapse": {
-      "detail": "coset 12/12 link-equal 12/12",
+      "detail": "coset 12/12 decorated-domain-equal 12/12",
       "pass": true
     },
-    "G10.L3.mm": {
-      "detail": "mm multiset max 9.7e-11",
+    "G10.L3.domain": {
+      "detail": "x5y7 clip quarantine engaged; base 5 frame range 5-6 pd_min -1.1e-01",
       "pass": true
     },
     "G10.L3.mz": {
       "detail": "m_z = diag(1,1,-1) fixes x5y7",
-      "pass": true
-    },
-    "G10.L3.pp": {
-      "detail": "pp multiset max 9.5e-15",
-      "pass": true
-    },
-    "G10.L7.broken": {
-      "detail": "broken min over both compare signs 1.0e-01",
       "pass": true
     },
     "G10.L7.classes": {
@@ -108,27 +131,23 @@
       "pass": true
     },
     "G10.L7.collapse": {
-      "detail": "coset 12/12 link-equal 12/12",
+      "detail": "coset 12/12 decorated-domain-equal 12/12",
       "pass": true
     },
-    "G10.L7.mm": {
-      "detail": "mm multiset max 5.5e-10",
+    "G10.L7.domain": {
+      "detail": "x5y7 clip quarantine engaged; base 24 frame range 24-28 pd_min -5.1e-01",
       "pass": true
     },
     "G10.L7.mz": {
       "detail": "m_z = diag(1,1,-1) fixes x5y7",
       "pass": true
     },
-    "G10.L7.pp": {
-      "detail": "pp multiset max 9.7e-13",
-      "pass": true
-    },
     "G2.L3": {
-      "detail": "minus/plus floor 2.5e+03",
+      "detail": "minus/plus floor 1.6e+03",
       "pass": true
     },
     "G2.L7": {
-      "detail": "minus/plus floor 6.7e+02",
+      "detail": "minus/plus floor 9.9e+02",
       "pass": true
     },
     "G3.L3": {
@@ -148,7 +167,11 @@
       "pass": true
     },
     "G4.L3.mix": {
-      "detail": "parity None -> no law 18/18",
+      "detail": "parity None -> stated pointwise law fails 18/18",
+      "pass": true
+    },
+    "G4.L3.parity": {
+      "detail": "local/imported frame parity agree 24/24",
       "pass": true
     },
     "G4.L3.rej": {
@@ -164,7 +187,11 @@
       "pass": true
     },
     "G4.L7.mix": {
-      "detail": "parity None -> no law 18/18",
+      "detail": "parity None -> stated pointwise law fails 18/18",
+      "pass": true
+    },
+    "G4.L7.parity": {
+      "detail": "local/imported frame parity agree 24/24",
       "pass": true
     },
     "G4.L7.rej": {
@@ -188,7 +215,7 @@
       "pass": true
     },
     "G6.L3.collapse": {
-      "detail": "link-dict equality g.dom == (g t).dom 24/24",
+      "detail": "decorated-domain equality g.dom == (g t).dom 24/24",
       "pass": true
     },
     "G6.L3.determinism": {
@@ -200,7 +227,7 @@
       "pass": true
     },
     "G6.L7.collapse": {
-      "detail": "link-dict equality g.dom == (g t).dom 24/24",
+      "detail": "decorated-domain equality g.dom == (g t).dom 24/24",
       "pass": true
     },
     "G6.L7.images": {
@@ -216,7 +243,7 @@
       "pass": true
     },
     "G7.L3.plus": {
-      "detail": "chi=+1 multiset max 4.8e-15",
+      "detail": "chi=+1 multiset max 7.4e-15",
       "pass": true
     },
     "G7.L3.rej": {
@@ -232,7 +259,7 @@
       "pass": true
     },
     "G7.L7.plus": {
-      "detail": "chi=+1 multiset max 3.8e-13",
+      "detail": "chi=+1 multiset max 2.0e-13",
       "pass": true
     },
     "G8.L3.b.minus": {
@@ -240,7 +267,7 @@
       "pass": true
     },
     "G8.L3.b.plus": {
-      "detail": "d_b 2.9e-15",
+      "detail": "d_b 3.1e-15",
       "pass": true
     },
     "G8.L3.eps.minus": {
@@ -248,7 +275,7 @@
       "pass": true
     },
     "G8.L3.eps.plus": {
-      "detail": "d_eps 9.8e-15",
+      "detail": "d_eps 8.4e-15",
       "pass": true
     },
     "G8.L3.len": {
@@ -276,7 +303,7 @@
       "pass": true
     },
     "G8.L7.eps.plus": {
-      "detail": "d_eps 1.5e-12",
+      "detail": "d_eps 7.2e-13",
       "pass": true
     },
     "G8.L7.rho.minus": {
@@ -288,7 +315,7 @@
       "pass": true
     },
     "G9.L3.r1": {
-      "detail": "d 2.5e-12 4.9e-12 ratio 2.0e+00",
+      "detail": "d 2.5e-12 5.0e-12 ratio 2.0e+00",
       "pass": true
     },
     "G9.L3.r2": {

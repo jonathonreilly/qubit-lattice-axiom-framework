@@ -1,64 +1,69 @@
 c707 source-stabilizer coset collapse of the compiled K sign law
 24 proper rotations, 6 improper constant-sign identities, AMP 2.0e-01
 -- L=3 --
+PASS G0.L3.domain x5 principal coframe exists; clipped 0 pd_min 9.8e-02
 PASS G1.L3.p01 cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11
 PASS G1.L3.p04 cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11
 PASS G1.L3.p09 cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11
-PASS G1.L3.p15 cs +1 e 4.6e-15 p 4.8e-15 K 4.9e-15
-PASS G1.L3.p18 cs +1 e 4.4e-15 p 5.1e-15 K 6.1e-15
+PASS G1.L3.p15 cs +1 e 5.2e-15 p 4.9e-15 K 7.4e-15
+PASS G1.L3.p18 cs +1 e 6.9e-15 p 5.8e-15 K 9.3e-15
 PASS G1.L3.p23 cs +1 e 0.0e+00 p 0.0e+00 K 0.0e+00
 PASS G1.L3.i0 cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11
-PASS G1.L3.i1 cs +1 e 2.8e-15 p 4.2e-15 K 5.9e-15
-PASS G1.L3.i2 cs +1 e 4.6e-15 p 4.8e-15 K 4.8e-15
+PASS G1.L3.i1 cs +1 e 6.3e-15 p 5.4e-15 K 8.6e-15
+PASS G1.L3.i2 cs +1 e 3.2e-15 p 2.3e-15 K 2.8e-15
 PASS G1.L3.i3 cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11
 PASS G1.L3.i4 cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11
-PASS G1.L3.i5 cs +1 e 2.8e-15 p 2.6e-15 K 2.8e-15
+PASS G1.L3.i5 cs +1 e 3.9e-15 p 4.1e-15 K 7.4e-15
 PASS G1.L3.id identity total defect 0.0e+00
-PASS G2.L3 minus/plus floor 2.5e+03
+PASS G2.L3 minus/plus floor 1.6e+03
 PASS G3.L3 mixed min d_e 2.4e-01 over 18 frames
 PASS G4.L3.cs parity not None -> law 6/6
-PASS G4.L3.mix parity None -> no law 18/18
+PASS G4.L3.mix parity None -> stated pointwise law fails 18/18
+PASS G4.L3.parity local/imported frame parity agree 24/24
 PASS G4.L3.imp improper det -1 parity match 6/6
 PASS G4.L3.rej wrong-sign d_K 6.7e-01
 PASS G5.stab proper stabilizer of x5 (20, 21, 22, 23)
 PASS G5.c4 quartet = powers of the x-axis rotation
 PASS G5.transversal exactly one constant-sign coset member 24/24
 PASS G5.sx sx coset-invariant 96/96
-PASS G6.L3.collapse link-dict equality g.dom == (g t).dom 24/24
+PASS G6.L3.collapse decorated-domain equality g.dom == (g t).dom 24/24
 PASS G6.L3.images distinct domain images 6
 PASS G6.L3.determinism chain determinism on collapsed pairs 6/6
-PASS G7.L3.plus chi=+1 multiset max 4.8e-15
+PASS G7.L3.plus chi=+1 multiset max 7.4e-15
 PASS G7.L3.minus chi=-1 multiset max 1.0e-11
 PASS G7.L3.counts chi split 12/12
 PASS G7.L3.rej plus-compare on a minus frame 2.1e-01
 PASS G8.L3.rho.minus d_rho 0.0e+00
 PASS G8.L3.rho.plus d_rho 0.0e+00
 PASS G8.L3.b.minus d_b 2.1e-14
-PASS G8.L3.b.plus d_b 2.9e-15
+PASS G8.L3.b.plus d_b 3.1e-15
 PASS G8.L3.eps.minus d_eps 6.9e-11 over 100 d_b 2.1e-12
-PASS G8.L3.eps.plus d_eps 9.8e-15
+PASS G8.L3.eps.plus d_eps 8.4e-15
 PASS G8.L3.len d_len 1.4e-11 vs AMP d_eps 1.4e-11
-PASS G9.L3.r1 d 2.5e-12 4.9e-12 ratio 2.0e+00
+PASS G9.L3.r1 d 2.5e-12 5.0e-12 ratio 2.0e+00
 PASS G9.L3.r2 d 1.0e-11 ratio 2.0e+00
 PASS G10.L3.mz m_z = diag(1,1,-1) fixes x5y7
 PASS G10.L3.classes pp/mm/broken 6/6/12
-PASS G10.L3.collapse coset 12/12 link-equal 12/12
-PASS G10.L3.pp pp multiset max 9.5e-15
-PASS G10.L3.mm mm multiset max 9.7e-11
-PASS G10.L3.broken broken min over both compare signs 1.9e-01
+PASS G10.L3.collapse coset 12/12 decorated-domain-equal 12/12
+PASS G10.L3.domain x5y7 clip quarantine engaged; base 5 frame range 5-6 pd_min -1.1e-01
+CONDITIONAL_ON_CLIP G10.L3.pp clipped-surrogate pp multiset max 2.7e-14
+CONDITIONAL_ON_CLIP G10.L3.mm clipped-surrogate mm multiset max 9.7e-11
+CONDITIONAL_ON_CLIP G10.L3.broken clipped-surrogate broken min over both compare signs 1.9e-01
 -- L=7 --
-PASS G1.L7.plus branch max over 6 frames 4.6e-13
+PASS G0.L7.domain x5 principal coframe exists; clipped 0 pd_min 2.1e-01
+PASS G1.L7.plus branch max over 6 frames 3.1e-13
 PASS G1.L7.minus branch max over 6 frames 3.1e-10
 PASS G1.L7.id identity total defect 0.0e+00
-PASS G2.L7 minus/plus floor 6.7e+02
+PASS G2.L7 minus/plus floor 9.9e+02
 PASS G3.L7 mixed min d_e 6.3e-01 over 18 frames
 PASS G4.L7.cs parity not None -> law 6/6
-PASS G4.L7.mix parity None -> no law 18/18
+PASS G4.L7.mix parity None -> stated pointwise law fails 18/18
+PASS G4.L7.parity local/imported frame parity agree 24/24
 PASS G4.L7.imp improper det -1 parity match 6/6
 PASS G4.L7.rej wrong-sign d_K 9.9e-01
-PASS G6.L7.collapse link-dict equality g.dom == (g t).dom 24/24
+PASS G6.L7.collapse decorated-domain equality g.dom == (g t).dom 24/24
 PASS G6.L7.images distinct domain images 6
-PASS G7.L7.plus chi=+1 multiset max 3.8e-13
+PASS G7.L7.plus chi=+1 multiset max 2.0e-13
 PASS G7.L7.minus chi=-1 multiset max 3.1e-10
 PASS G7.L7.counts chi split 12/12
 note G7.L7 plus-compare on a minus frame 4.1e-02 unscored
@@ -67,12 +72,13 @@ PASS G8.L7.rho.plus d_rho 0.0e+00
 PASS G8.L7.b.minus d_b 1.0e-14
 PASS G8.L7.b.plus d_b 1.8e-15
 PASS G8.L7.eps.minus d_eps 1.5e-09 over 100 d_b 1.0e-12
-PASS G8.L7.eps.plus d_eps 1.5e-12
+PASS G8.L7.eps.plus d_eps 7.2e-13
 note G8.L7 minus d_len 2.7e-10 unscored
 PASS G10.L7.mz m_z = diag(1,1,-1) fixes x5y7
 PASS G10.L7.classes pp/mm/broken 6/6/12
-PASS G10.L7.collapse coset 12/12 link-equal 12/12
-PASS G10.L7.pp pp multiset max 9.7e-13
-PASS G10.L7.mm mm multiset max 5.5e-10
-PASS G10.L7.broken broken min over both compare signs 1.0e-01
-TOTAL: PASS=71 FAIL=0
+PASS G10.L7.collapse coset 12/12 decorated-domain-equal 12/12
+PASS G10.L7.domain x5y7 clip quarantine engaged; base 24 frame range 24-28 pd_min -5.1e-01
+CONDITIONAL_ON_CLIP G10.L7.pp clipped-surrogate pp multiset max 6.9e-13
+CONDITIONAL_ON_CLIP G10.L7.mm clipped-surrogate mm multiset max 5.5e-10
+CONDITIONAL_ON_CLIP G10.L7.broken clipped-surrogate broken min over both compare signs 1.0e-01
+TOTAL: PASS=71 FAIL=0 CONDITIONAL_ON_CLIP=6

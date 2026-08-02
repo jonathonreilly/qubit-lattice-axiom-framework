@@ -16,8 +16,9 @@ on two decorated source domains and measures, from that chain alone:
   G6  the exact collapse of every frame image onto a constant-sign representative;
   G7  the all-24 multiset sign law with chi = sx;
   G8  the stage ladder that locates the negation floor;
-  G9  the amplitude-linearity of the negation floor;
-  G10 the two-edit trichotomy.
+  G9  the sampled near-doubling of the negation floor on the amplitude ladder;
+  G10 the exact two-edit source trichotomy and the downstream coframe-domain
+      boundary.  Clipped downstream values are diagnostics, not theorem gates.
 
 No value is read from a pinned table: every number printed here is recomputed from
 the compiler chain in this run.
@@ -53,7 +54,6 @@ BOUND_MINUS = 1e-7
 BOUND_B = 1e-12
 BOUND_EPS_PLUS = 1e-10
 BREAK_FLOOR = 1e-2
-PP_FLOOR = 1e-10
 RATIO_LO = 1.6
 RATIO_HI = 2.4
 
@@ -62,8 +62,10 @@ RECEIPT_NAME = ("physical_source_stabilizer_coset_collapse_k_sign_law_cycle707"
 
 N_PASS = 0
 N_FAIL = 0
+N_CONDITIONAL = 0
 GATES: dict = {}
 NOTES: dict = {}
+CONDITIONALS: dict = {}
 
 
 def fmt(x) -> str:
@@ -82,6 +84,14 @@ def check(name: str, ok: bool, detail: str = "") -> bool:
     GATES[name] = {"pass": ok, "detail": detail}
     print("{} {} {}".format("PASS" if ok else "FAIL", name, detail))
     return ok
+
+
+def conditional_on_clip(name: str, detail: str) -> None:
+    """Record a clipped-surrogate diagnostic without treating it as evidence."""
+    global N_CONDITIONAL
+    N_CONDITIONAL += 1
+    CONDITIONALS[name] = {"status": "conditional_on_clip", "detail": detail}
+    print("CONDITIONAL_ON_CLIP {} {}".format(name, detail))
 
 
 # ---------------------------------------------------------------------------
@@ -135,10 +145,6 @@ def improper_constant_sign():
 IMPROPER = improper_constant_sign()
 
 
-def links_key(dom: dict) -> tuple:
-    return tuple(sorted((u, v, w) for (u, v), w in dom["links"].items()))
-
-
 # ---------------------------------------------------------------------------
 # the landed Cycle-696 chain, quoted verbatim
 # ---------------------------------------------------------------------------
@@ -163,7 +169,10 @@ def chain(ctx: dict, dom: dict, amp: float = AMP) -> dict:
     kf = c696.k_field(mc["e_clipped"])
     return {"rho": rho, "b": b, "eps": eps, "h": mc["h"], "e": mc["e_clipped"],
             "lengths": np.asarray(mc["lengths"]),
-            "parts": np.asarray(kf["parts"]), "K": np.asarray(kf["K"])}
+            "parts": np.asarray(kf["parts"]), "K": np.asarray(kf["K"]),
+            "clip_used": bool(mc["clip_used"]),
+            "n_sites_clipped": int(mc["n_sites_clipped"]),
+            "pd_min": float(np.min(mc["pd_min"]))}
 
 
 def transport_defects(ctx: dict, c0: dict, cR: dict, R: np.ndarray):
@@ -233,6 +242,9 @@ def run_L(ctx: dict) -> None:
     tag = "L{}".format(L)
     dom0 = ctx["dom0"]
     c0 = chain(ctx, dom0)
+    check("G0.{}.domain".format(tag), not c0["clip_used"],
+          "x5 principal coframe exists; clipped {} pd_min {}".format(
+              c0["n_sites_clipped"], fmt(c0["pd_min"])))
 
     ident = next(g for g in range(24) if np.array_equal(FRAMES[g], EYE3))
     minus_g = next(g for g in range(24) if cs_sign(FRAMES[g]) == -1)
@@ -250,6 +262,7 @@ def run_L(ctx: dict) -> None:
     cs_n = 0
     mix_ok = 0
     mix_n = 0
+    parity_ok = 0
     ident_total = None
     rej_sign = 0.0
     rej_branch = 0.0
@@ -260,6 +273,8 @@ def run_L(ctx: dict) -> None:
         cR = chain(ctx, c696.apply_frame_to_domain(dom0, R))
         d_e, d_p, d_k = transport_defects(ctx, c0, cR, R)
         sg = cs_sign(R)
+        if c696.frame_K_parity(R) == sg:
+            parity_ok += 1
         sxg = sx_of(R)
         ms = multiset_defect(cR["K"], sxg * c0["K"])
         if sxg == 1:
@@ -329,14 +344,17 @@ def run_L(ctx: dict) -> None:
     check("G4.{}.cs".format(tag), cs_ok == cs_n and cs_n == 6,
           "parity not None -> law {}/{}".format(cs_ok, cs_n))
     check("G4.{}.mix".format(tag), mix_ok == mix_n and mix_n == 18,
-          "parity None -> no law {}/{}".format(mix_ok, mix_n))
+          "parity None -> stated pointwise law fails {}/{}".format(mix_ok, mix_n))
+    check("G4.{}.parity".format(tag), parity_ok == 24,
+          "local/imported frame parity agree {}/24".format(parity_ok))
     check("G4.{}.imp".format(tag), imp_ok == 6,
           "improper det -1 parity match {}/6".format(imp_ok))
     check("G4.{}.rej".format(tag), rej_sign > BREAK_FLOOR,
           "wrong-sign d_K {}".format(fmt(rej_sign)))
 
     stab = [g for g in range(24)
-            if c696.apply_frame_to_domain(dom0, FRAMES[g])["links"] == dom0["links"]]
+            if c696.domain_key(c696.apply_frame_to_domain(dom0, FRAMES[g]))
+            == c696.domain_key(dom0)]
     transversal = {}
     n_uniq = 0
     for g in range(24):
@@ -363,11 +381,11 @@ def run_L(ctx: dict) -> None:
     for g in range(24):
         d_g = c696.apply_frame_to_domain(dom0, FRAMES[g])
         d_t = c696.apply_frame_to_domain(dom0, FRAMES[g] @ FRAMES[transversal[g]])
-        if d_g["links"] == d_t["links"]:
+        if c696.domain_key(d_g) == c696.domain_key(d_t):
             ok_link += 1
-        reps.setdefault(links_key(d_g), g)
+        reps.setdefault(c696.domain_key(d_g), g)
     check("G6.{}.collapse".format(tag), ok_link == 24,
-          "link-dict equality g.dom == (g t).dom {}/24".format(ok_link))
+          "decorated-domain equality g.dom == (g t).dom {}/24".format(ok_link))
     check("G6.{}.images".format(tag), len(reps) == 6,
           "distinct domain images {}".format(len(reps)))
     if L == 3:
@@ -428,7 +446,8 @@ def run_L(ctx: dict) -> None:
     dom1 = ctx["dom1"]
     c1 = chain(ctx, dom1)
     check("G10.{}.mz".format(tag),
-          c696.apply_frame_to_domain(dom1, MZ)["links"] == dom1["links"],
+          c696.domain_key(c696.apply_frame_to_domain(dom1, MZ))
+          == c696.domain_key(dom1),
           "m_z = diag(1,1,-1) fixes x5y7")
     n_pp = sum(1 for g in range(24) if sx_of(FRAMES[g]) == 1 and sy_of(FRAMES[g]) == 1)
     n_mm = sum(1 for g in range(24) if sx_of(FRAMES[g]) == -1 and sy_of(FRAMES[g]) == -1)
@@ -447,18 +466,20 @@ def run_L(ctx: dict) -> None:
         n_cs += 1
         if sx_of(R) == sy_of(R):
             matched += 1
-        if (c696.apply_frame_to_domain(dom1, R)["links"]
-                == c696.apply_frame_to_domain(dom1, u)["links"]):
+        if (c696.domain_key(c696.apply_frame_to_domain(dom1, R))
+                == c696.domain_key(c696.apply_frame_to_domain(dom1, u))):
             ok_cs += 1
     check("G10.{}.collapse".format(tag), n_cs == 12 and ok_cs == 12 and matched == 12,
-          "coset {}/12 link-equal {}/12".format(n_cs, ok_cs))
+          "coset {}/12 decorated-domain-equal {}/12".format(n_cs, ok_cs))
 
     pp = 0.0
     mm = 0.0
     brk = float("inf")
+    clip_counts = []
     for g in range(24):
         R = FRAMES[g]
         cg = chain(ctx, c696.apply_frame_to_domain(dom1, R))
+        clip_counts.append(cg["n_sites_clipped"])
         d_pos = multiset_defect(cg["K"], c1["K"])
         d_neg = multiset_defect(cg["K"], -c1["K"])
         if sx_of(R) == 1 and sy_of(R) == 1:
@@ -467,10 +488,17 @@ def run_L(ctx: dict) -> None:
             mm = max(mm, d_neg)
         else:
             brk = min(brk, min(d_pos, d_neg))
-    check("G10.{}.pp".format(tag), pp < PP_FLOOR, "pp multiset max {}".format(fmt(pp)))
-    check("G10.{}.mm".format(tag), mm < BOUND_MINUS, "mm multiset max {}".format(fmt(mm)))
-    check("G10.{}.broken".format(tag), brk > BREAK_FLOOR,
-          "broken min over both compare signs {}".format(fmt(brk)))
+    check("G10.{}.domain".format(tag),
+          c1["clip_used"]
+          and (min(clip_counts), max(clip_counts)) == {3: (5, 6), 7: (24, 28)}[L],
+          "x5y7 clip quarantine engaged; base {} frame range {}-{} pd_min {}".format(
+              c1["n_sites_clipped"], min(clip_counts), max(clip_counts), fmt(c1["pd_min"])))
+    conditional_on_clip("G10.{}.pp".format(tag),
+                        "clipped-surrogate pp multiset max {}".format(fmt(pp)))
+    conditional_on_clip("G10.{}.mm".format(tag),
+                        "clipped-surrogate mm multiset max {}".format(fmt(mm)))
+    conditional_on_clip("G10.{}.broken".format(tag),
+                        "clipped-surrogate broken min over both compare signs {}".format(fmt(brk)))
 
 
 def main() -> int:
@@ -484,6 +512,8 @@ def main() -> int:
     receipt = {"amp": fmt(AMP),
                "amp_ladder": [fmt(a) for a in AMP_LADDER],
                "box_sizes": list(L_LIST),
+               "conditional_on_clip": N_CONDITIONAL,
+               "conditionals": CONDITIONALS,
                "fail": N_FAIL,
                "gates": GATES,
                "notes": NOTES,
@@ -493,7 +523,8 @@ def main() -> int:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(receipt, sort_keys=True, indent=2) + "\n")
 
-    print("TOTAL: PASS={} FAIL={}".format(N_PASS, N_FAIL))
+    print("TOTAL: PASS={} FAIL={} CONDITIONAL_ON_CLIP={}".format(
+        N_PASS, N_FAIL, N_CONDITIONAL))
     return 1 if N_FAIL else 0
 
 

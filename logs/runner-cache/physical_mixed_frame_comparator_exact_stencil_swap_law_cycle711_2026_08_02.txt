@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.py
+runner_sha256: 297b1235f4a5762b370dea14fbc0555887f5bc10afb84c07666ef07e158660d1
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 17.08
+status: ok
+----- stdout -----
+c711 exact stencil swap law behind the mixed-frame comparator
+tick multiplier LT = 2  FD step = 1.0e-04  frames = 24  sextet = [1, 4, 9, 15, 18, 23]
+PASS c1_empty_iff_sextet empty-substitution frames [1, 4, 9, 15, 18, 23]
+PASS c1_constant_sign_iff_empty all 24 frames
+PASS c1_mixed_two_face_one_body 18 mixed frames: 2 face + 1 body
+PASS c1_nn_never_substituted axis classes never substituted
+PASS c2_pair_two_incidences disjoint complementary face-diagonal pair: 2 incidences
+PASS c2_pair_bit_match LT * sum(local) equals assembled entry bit-for-bit, entry -4.0e+00
+PASS c2_pair_each_near_minus_one each per-simplex mixed value within 5.0e-09 of -1
+PASS c2_pair_incidence_classes (template, slot_i, slot_j) = (0,5,1) and (18,8,5)
+PASS c2_shared_vertex_zero shared-vertex pair: 0 incidences, entry exactly 0.0
+PASS c3_exact_minus_one_p0 exact mixed d2 = -1
+PASS c3_acos_free_p0 no arc-cosine atom survives at the flat background
+PASS c3_rational_hinges_p0 every surviving per-hinge value is rational
+PASS c3_exact_minus_one_p18 exact mixed d2 = -1
+PASS c3_acos_free_p18 no arc-cosine atom survives at the flat background
+PASS c3_rational_hinges_p18 every surviving per-hinge value is rational
+PASS c3_rejector_perturbed_background perturbed background gives -3*sqrt(7)/7 (distance 1.3e-01 from -1)
+PASS c4_fd_ratio_p0 err(h) 3.3e-09 err(h/2) 8.1e-10 ratio 4.09
+PASS c4_fd_ratio_p18 err(h) 3.3e-09 err(h/2) 8.5e-10 ratio 3.93
+PASS c4_budget_matches_entry LT * (err0 + err1) = 1.3e-08 vs entry deviation 1.3e-08
+PASS c4_deviation_scale |entry magnitude - 4| = 1.3e-08 le 2.0e-08
+PASS c5_emax_bitwise_uniform_L3 one emax bit pattern across 18 mixed frames
+PASS c5_emax_value_L3 comparator 4.0000000133e+00
+PASS c5_argmax_count_uniform_L3 argmax family size [128] at every mixed frame
+PASS c5_all_swaps_L3 every argmax entry is a 0 <-> 4 magnitude swap
+PASS c5_one_substituted_endpoint_L3 face-face pairs, exactly one substituted endpoint, orientations {True: 1152, False: 1152}
+PASS c6_census_frame_uniform_L3 rounded census of entries above 2: [(-4, 64), (-3, 224), (-2, 136), (2, 136), (3, 224), (4, 64)]
+PASS c6_census_keys_L3 swap family values
+PASS c6_both_clean_sqrt8_L3 both-clean ceiling 2.8e+00 matches 2*sqrt(2) within 2.0e-07
+PASS c6_offint_sqrt12_L3 largest integer distance 4.6e-01 matches 2*sqrt(3) - 3
+PASS c5_emax_bitwise_uniform_L7 one emax bit pattern across 18 mixed frames
+PASS c5_emax_value_L7 comparator 4.0000000133e+00
+PASS c5_argmax_count_uniform_L7 argmax family size [3456] at every mixed frame
+PASS c5_all_swaps_L7 every argmax entry is a 0 <-> 4 magnitude swap
+PASS c5_one_substituted_endpoint_L7 face-face pairs, exactly one substituted endpoint, orientations {True: 31104, False: 31104}
+PASS c6_census_frame_uniform_L7 rounded census of entries above 2: [(-4, 1728), (-3, 4896), (-2, 4056), (2, 4056), (3, 4896), (4, 1728)]
+PASS c6_census_keys_L7 swap family values
+PASS c6_both_clean_sqrt8_L7 both-clean ceiling 2.8e+00 matches 2*sqrt(2) within 2.0e-07
+PASS c6_offint_sqrt12_L7 largest integer distance 4.6e-01 matches 2*sqrt(3) - 3
+PASS c5_emax_bitwise_size_stable same comparator bit pattern at both box sizes
+PASS c7_sextet_ceilings plus branch 7.1e-15 minus branch 1.2e-10
+PASS c7_identity_exact_zero identity frame defect exactly 0.0
+PASS c7_supplied_constants tick multiplier and FD step as supplied by the compiler
+TOTAL: PASS=42 FAIL=0
+
+----- stderr -----
+

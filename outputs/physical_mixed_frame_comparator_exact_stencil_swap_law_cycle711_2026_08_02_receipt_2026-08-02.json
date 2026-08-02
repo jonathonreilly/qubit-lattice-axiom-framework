@@ -1,0 +1,197 @@
+{
+  "box_sizes": [
+    3,
+    7
+  ],
+  "configs": [
+    [
+      0,
+      5,
+      1
+    ],
+    [
+      18,
+      8,
+      5
+    ]
+  ],
+  "fail": 0,
+  "gates": {
+    "c1_constant_sign_iff_empty": {
+      "detail": "all 24 frames",
+      "pass": true
+    },
+    "c1_empty_iff_sextet": {
+      "detail": "empty-substitution frames [1, 4, 9, 15, 18, 23]",
+      "pass": true
+    },
+    "c1_mixed_two_face_one_body": {
+      "detail": "18 mixed frames: 2 face + 1 body",
+      "pass": true
+    },
+    "c1_nn_never_substituted": {
+      "detail": "axis classes never substituted",
+      "pass": true
+    },
+    "c2_pair_bit_match": {
+      "detail": "LT * sum(local) equals assembled entry bit-for-bit, entry -4.0e+00",
+      "pass": true
+    },
+    "c2_pair_each_near_minus_one": {
+      "detail": "each per-simplex mixed value within 5.0e-09 of -1",
+      "pass": true
+    },
+    "c2_pair_incidence_classes": {
+      "detail": "(template, slot_i, slot_j) = (0,5,1) and (18,8,5)",
+      "pass": true
+    },
+    "c2_pair_two_incidences": {
+      "detail": "disjoint complementary face-diagonal pair: 2 incidences",
+      "pass": true
+    },
+    "c2_shared_vertex_zero": {
+      "detail": "shared-vertex pair: 0 incidences, entry exactly 0.0",
+      "pass": true
+    },
+    "c3_acos_free_p0": {
+      "detail": "no arc-cosine atom survives at the flat background",
+      "pass": true
+    },
+    "c3_acos_free_p18": {
+      "detail": "no arc-cosine atom survives at the flat background",
+      "pass": true
+    },
+    "c3_exact_minus_one_p0": {
+      "detail": "exact mixed d2 = -1",
+      "pass": true
+    },
+    "c3_exact_minus_one_p18": {
+      "detail": "exact mixed d2 = -1",
+      "pass": true
+    },
+    "c3_rational_hinges_p0": {
+      "detail": "every surviving per-hinge value is rational",
+      "pass": true
+    },
+    "c3_rational_hinges_p18": {
+      "detail": "every surviving per-hinge value is rational",
+      "pass": true
+    },
+    "c3_rejector_perturbed_background": {
+      "detail": "perturbed background gives -3*sqrt(7)/7 (distance 1.3e-01 from -1)",
+      "pass": true
+    },
+    "c4_budget_matches_entry": {
+      "detail": "LT * (err0 + err1) = 1.3e-08 vs entry deviation 1.3e-08",
+      "pass": true
+    },
+    "c4_deviation_scale": {
+      "detail": "|entry magnitude - 4| = 1.3e-08 le 2.0e-08",
+      "pass": true
+    },
+    "c4_fd_ratio_p0": {
+      "detail": "err(h) 3.3e-09 err(h/2) 8.1e-10 ratio 4.09",
+      "pass": true
+    },
+    "c4_fd_ratio_p18": {
+      "detail": "err(h) 3.3e-09 err(h/2) 8.5e-10 ratio 3.93",
+      "pass": true
+    },
+    "c5_all_swaps_L3": {
+      "detail": "every argmax entry is a 0 <-> 4 magnitude swap",
+      "pass": true
+    },
+    "c5_all_swaps_L7": {
+      "detail": "every argmax entry is a 0 <-> 4 magnitude swap",
+      "pass": true
+    },
+    "c5_argmax_count_uniform_L3": {
+      "detail": "argmax family size [128] at every mixed frame",
+      "pass": true
+    },
+    "c5_argmax_count_uniform_L7": {
+      "detail": "argmax family size [3456] at every mixed frame",
+      "pass": true
+    },
+    "c5_emax_bitwise_size_stable": {
+      "detail": "same comparator bit pattern at both box sizes",
+      "pass": true
+    },
+    "c5_emax_bitwise_uniform_L3": {
+      "detail": "one emax bit pattern across 18 mixed frames",
+      "pass": true
+    },
+    "c5_emax_bitwise_uniform_L7": {
+      "detail": "one emax bit pattern across 18 mixed frames",
+      "pass": true
+    },
+    "c5_emax_value_L3": {
+      "detail": "comparator 4.0000000133e+00",
+      "pass": true
+    },
+    "c5_emax_value_L7": {
+      "detail": "comparator 4.0000000133e+00",
+      "pass": true
+    },
+    "c5_one_substituted_endpoint_L3": {
+      "detail": "face-face pairs, exactly one substituted endpoint, orientations {True: 1152, False: 1152}",
+      "pass": true
+    },
+    "c5_one_substituted_endpoint_L7": {
+      "detail": "face-face pairs, exactly one substituted endpoint, orientations {True: 31104, False: 31104}",
+      "pass": true
+    },
+    "c6_both_clean_sqrt8_L3": {
+      "detail": "both-clean ceiling 2.8e+00 matches 2*sqrt(2) within 2.0e-07",
+      "pass": true
+    },
+    "c6_both_clean_sqrt8_L7": {
+      "detail": "both-clean ceiling 2.8e+00 matches 2*sqrt(2) within 2.0e-07",
+      "pass": true
+    },
+    "c6_census_frame_uniform_L3": {
+      "detail": "rounded census of entries above 2: [(-4, 64), (-3, 224), (-2, 136), (2, 136), (3, 224), (4, 64)]",
+      "pass": true
+    },
+    "c6_census_frame_uniform_L7": {
+      "detail": "rounded census of entries above 2: [(-4, 1728), (-3, 4896), (-2, 4056), (2, 4056), (3, 4896), (4, 1728)]",
+      "pass": true
+    },
+    "c6_census_keys_L3": {
+      "detail": "swap family values",
+      "pass": true
+    },
+    "c6_census_keys_L7": {
+      "detail": "swap family values",
+      "pass": true
+    },
+    "c6_offint_sqrt12_L3": {
+      "detail": "largest integer distance 4.6e-01 matches 2*sqrt(3) - 3",
+      "pass": true
+    },
+    "c6_offint_sqrt12_L7": {
+      "detail": "largest integer distance 4.6e-01 matches 2*sqrt(3) - 3",
+      "pass": true
+    },
+    "c7_identity_exact_zero": {
+      "detail": "identity frame defect exactly 0.0",
+      "pass": true
+    },
+    "c7_sextet_ceilings": {
+      "detail": "plus branch 7.1e-15 minus branch 1.2e-10",
+      "pass": true
+    },
+    "c7_supplied_constants": {
+      "detail": "tick multiplier and FD step as supplied by the compiler",
+      "pass": true
+    }
+  },
+  "notes": {
+    "both_clean_L3": "2.8e+00",
+    "both_clean_L7": "2.8e+00",
+    "emax_L3": "4.0e+00",
+    "emax_L7": "4.0e+00"
+  },
+  "pass": 42,
+  "runner": "physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.py"
+}

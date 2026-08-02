@@ -898,6 +898,25 @@ def soft_reset_to_cross_confirmation_pending(row: dict, reason: str) -> dict:
     return new_row
 
 
+def audit_in_progress_has_live_judgment(row: dict) -> bool:
+    """Distinguish an empty work claim from an already-recorded audit seat."""
+    if row.get("audit_status") != "audit_in_progress":
+        return False
+    if isinstance(row.get("cross_confirmation"), dict):
+        return True
+    return any(
+        row.get(field) is not None
+        for field in (
+            "audit_state_snapshot",
+            "audit_date",
+            "auditor",
+            "audit_invocation_id",
+            "chain_closes",
+            "verdict_rationale",
+        )
+    )
+
+
 def main() -> int:
     ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
@@ -913,7 +932,7 @@ def main() -> int:
             continue
         if (
             row.get("audit_status") == "audit_in_progress"
-            and not isinstance(row.get("cross_confirmation"), dict)
+            and not audit_in_progress_has_live_judgment(row)
         ):
             continue
         reason = detect_invalidation(

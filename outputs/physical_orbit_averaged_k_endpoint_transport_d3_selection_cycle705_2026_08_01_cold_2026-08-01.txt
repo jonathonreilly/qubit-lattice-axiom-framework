@@ -1,0 +1,85 @@
+A frames
+[PASS] a1_frames_count measured=24 bound===24
+[PASS] a1_det_plus_one measured=0.0 bound=<=1e-12
+[PASS] a1_group_closed measured=1 bound===1
+[PASS] a2_push_pull_identity measured=0.0 bound=<=1e-15
+[PASS] a3_row_form_rebuild measured=0.0 bound===0.0
+B parity
+[PASS] b1_plus_count measured=3 bound===3
+[PASS] b1_plus_even_perm measured=3 bound===3
+[PASS] b2_minus_count measured=3 bound===3
+[PASS] b2_minus_transposition measured=3 bound===3
+[PASS] b3_union_is_landed_list measured=[1, 4, 9, 15, 18, 23] bound=[1, 4, 9, 15, 18, 23]
+[PASS] b4_subgroup_closed measured=1 bound===1
+[PASS] b5_landed_parity_agrees measured=1 bound===1
+L=3
+[PASS] c1_rho_invariance_L3 measured=0.0 bound===0.0
+[PASS] c1_orbit_sizes_L3 measured=1,6 bound=1,6
+[PASS] c2_no_clip_in_law_L3 measured=0 bound===0
+[PASS] c2_x24_equivariance_exec_L3 measured=8.326672684688674e-17 bound=<=1e-12
+[PASS] c2_x24_equivariance_edit_L3 measured=2.220446049250313e-16 bound=<=1e-12
+[PASS] c3_single_carrier_break_L3 measured=0.2809215446349391 bound=>=1e-2
+[PASS] d_parts_row_exec_L3 measured=8.881784197001252e-16 bound=<=1e-12
+[PASS] d_parts_row_edit_L3 measured=2.220446049250313e-15 bound=<=1e-12
+[PASS] d5_column_rejector_L3 measured=0.30485815587167875 bound=>=1e-2
+[PASS] d6_single_parts_break_L3 measured=0.04570357231269362 bound=>=1e-2
+[PASS] e1_scalar_plus_exec_L3 measured=1.7763568394002505e-15 bound=<=1e-11
+[PASS] e2_odd_minus_exec_L3 measured=1.1102230246251565e-15 bound=<=1e-11
+[PASS] e3_mixed_break_exec_L3 measured=0.30485815587167836 bound=>=1e-3
+[PASS] e1_scalar_plus_edit_L3 measured=2.00e-15 bound=<=1e-11
+[PASS] e2_odd_minus_edit_L3 measured=2.00e-15 bound=<=1e-11
+[PASS] e3_mixed_break_edit_L3 measured=0.4429750018353683 bound=>=1e-3
+[PASS] f1_single_amp1_not_pd measured=6 bound===6
+[PASS] f1_single_amp1_min_length measured=-0.44222284059860884 bound=<0
+[PASS] f2_avg_amp1_fail_closed measured=0 bound=closed
+[PASS] f2_avg_amp1_lam_invariant measured=2.220446049250313e-16 bound=<=1e-12
+[MEAS] f2_avg_amp1_pdmin measured=0.025104532061362428
+[PASS] f3_avg_pdmin_band measured=0.41984471373012233 bound=in[0.3,0.5]
+[PASS] g1_p_exc_d3_invariant_L3 measured=2.0643209364124004e-16 bound=<=1e-12
+[PASS] g2_p_exc_mixed_break_L3 measured=0.008540305089554697 bound=>=1e-6
+[PASS] g3_y_scalar_plus_L3 measured=3.552713678800501e-15 bound=<=1e-11
+[PASS] g4_y_sign_flip_minus_L3 measured=2.2213134109883015e-15 bound=<=1e-11
+[PASS] g5_y_mixed_break_L3 measured=0.6003157491985265 bound=>=1e-6
+[PASS] g7_closed_form_anchor_L3 measured=1.0408340855860843e-17 bound=<=1e-12
+[PASS] g8_norm_conserved_L3 measured=1.1102230246251565e-16 bound=<=1e-12
+[PASS] g6_single_d3_band_L3 measured=4.24966659084980e-12 bound=in[1e-14,1e-8]
+[PASS] g6_single_over_avg_L3 measured=20586.268907563026 bound=>=10
+[MEAS] g9_centre_shift_L3 measured=-4.279293191420088e-22
+[MEAS] g9_max_shift_L3 measured=1.706600101400e-02
+[PASS] h1_subset_average_L3 measured=0.0457035723080389 bound=>=1e-3
+[PASS] h2_source_movement_L3 measured=3.16830100e-01 bound=>=1e-3
+[PASS] h3_cache_off_equal_L3 measured=0.0 bound=<=1e-15
+L=7
+[PASS] c1_rho_invariance_L7 measured=0.0 bound===0.0
+[PASS] c1_orbit_sizes_L7 measured=1,6 bound=1,6
+[PASS] c2_no_clip_in_law_L7 measured=0 bound===0
+[PASS] c2_x24_equivariance_exec_L7 measured=1.1102230246251565e-16 bound=<=1e-12
+[PASS] c2_x24_equivariance_edit_L7 measured=2.220446049250313e-16 bound=<=1e-12
+[PASS] c3_single_carrier_break_L7 measured=0.6498797142773745 bound=>=1e-2
+[PASS] d_parts_row_exec_L7 measured=2.886579864025407e-15 bound=<=1e-12
+[PASS] d_parts_row_edit_L7 measured=4.218847493575595e-15 bound=<=1e-12
+[PASS] d5_column_rejector_L7 measured=0.3317884290184846 bound=>=1e-2
+[PASS] d6_single_parts_break_L7 measured=0.23664416925776133 bound=>=1e-2
+[PASS] e1_scalar_plus_exec_L7 measured=2.55351295663786e-15 bound=<=1e-11
+[PASS] e2_odd_minus_exec_L7 measured=2.6645352591003757e-15 bound=<=1e-11
+[PASS] e3_mixed_break_exec_L7 measured=0.3317884290184838 bound=>=1e-3
+[PASS] e1_scalar_plus_edit_L7 measured=3.774758283725532e-15 bound=<=1e-11
+[PASS] e2_odd_minus_edit_L7 measured=4.773959005888173e-15 bound=<=1e-11
+[PASS] e3_mixed_break_edit_L7 measured=0.394436836969876 bound=>=1e-3
+[PASS] f3_avg_pdmin_positive_L7 measured=0.44721752738115417 bound=>0
+[PASS] g1_p_exc_d3_invariant_L7 measured=2.1163626406917047e-16 bound=<=1e-12
+[PASS] g2_p_exc_mixed_break_L7 measured=0.0036547365855677237 bound=>=1e-6
+[PASS] g3_y_scalar_plus_L7 measured=5.093148125467906e-15 bound=<=1e-11
+[PASS] g4_y_sign_flip_minus_L7 measured=5.3273357947247746e-15 bound=<=1e-11
+[PASS] g5_y_mixed_break_L7 measured=0.6514688777012956 bound=>=1e-6
+[PASS] g7_closed_form_anchor_L7 measured=1.0408340855860843e-17 bound=<=1e-12
+[PASS] g8_norm_conserved_L7 measured=2.220446049250313e-16 bound=<=1e-12
+[PASS] g6_single_d3_band_L7 measured=4.0190836769760097e-11 bound=in[1e-14,1e-8]
+[PASS] g6_single_over_avg_L7 measured=1.90e+05 bound=>=10
+[MEAS] g9_centre_shift_L7 measured=-6.337736865315878e-22
+[MEAS] g9_max_shift_L7 measured=0.0704241139583106
+[PASS] h1_subset_average_L7 measured=0.23664416924177956 bound=>=1e-3
+[PASS] h2_source_movement_L7 measured=0.18572110376590484 bound=>=1e-3
+[PASS] h3_cache_off_equal_L7 measured=0.0 bound=<=1e-15
+TOTAL: PASS=74 FAIL=0
+wall_s=6.2

@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02.py
+runner_sha256: e8502b8cc5c2388454e3d70f2eba5fc4de193e172a992b49ce15d2e50bc51f59
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 5.58
+status: ok
+----- stdout -----
+== frame combinatorics (all 24 proper rotations) ==
+constant-sign sextet: [1, 4, 9, 15, 18, 23]  plus [15, 18, 23]  minus [1, 4, 9]  mixed count 18
+nflip census: [(0, 3), (1, 9), (2, 9), (3, 3)]  sextet orders: [(1, 2), (4, 2), (9, 2), (15, 3), (18, 3), (23, 1)]
+L=3 n_dof=98 null_dim=0 lam_min=4.7e-01 |w|max=6.3e+01 |eps0|_2=9.7e+00
+L=7 n_dof=1854 null_dim=0 lam_min=1.1e-02 |w|max=6.6e+01 |eps0|_2=2.4e+01
+L=3 dQ minus 1.2e-10 plus 7.1e-15 coset spread 7.1e-15
+L=3 cocycle worst 0.0e+00 over 20 pairs; reversed 7.1e-15 wrong-frame 2.5e-10
+L=3 law g= 1 resid=9.4e-04 cos=1.0e+00 |t2|=2.3e-10
+L=3 law g= 4 resid=8.8e-04 cos=1.0e+00 |t2|=2.3e-10
+L=3 law g= 9 resid=8.9e-04 cos=1.0e+00 |t2|=2.3e-10
+L=3 law g=15 resid=1.1e+00 cos=-3.6e-01 |t2|=6.3e-14
+L=3 law g=18 resid=1.1e+00 cos=-3.8e-01 |t2|=4.7e-14
+L=3 mixed |E|max 4.0e+00 |Emax-4| 1.3e-08 sep vs minus 3.2e+10 law resid 3.8e+00 floor spread 4.0e-05
+L=7 dQ minus 1.2e-10 plus 7.1e-15 coset spread 7.1e-15
+L=7 cocycle worst 0.0e+00 over 20 pairs; reversed 7.1e-15 wrong-frame 2.5e-10
+L=7 law g= 1 resid=8.7e-04 cos=1.0e+00 |t2|=1.5e-08
+L=7 law g= 4 resid=5.5e-04 cos=1.0e+00 |t2|=1.5e-08
+L=7 law g= 9 resid=4.9e-04 cos=1.0e+00 |t2|=1.5e-08
+L=7 law g=15 resid=9.8e-01 cos=8.1e-01 |t2|=1.1e-11
+L=7 law g=18 resid=1.0e+00 cos=-1.4e-01 |t2|=1.0e-11
+L=7 mixed |E|max 4.0e+00 |Emax-4| 1.3e-08 sep vs minus 3.2e+10 law resid 2.0e+02 floor spread 5.6e-05
+== C0 frame scope, census, bijections, solver scope ==
+ok   c0.det 24 frames, det=+1 for all
+ok   c0.census.plus all-plus frames [15, 18, 23]
+ok   c0.census.minus all-minus frames [1, 4, 9]
+ok   c0.census.mixed mixed-sign frames 18
+ok   c0.bij.L3 all 24 dof transports bijective
+ok   c0.null.L3 null_dim=0
+ok   c0.bij.L7 all 24 dof transports bijective
+ok   c0.null.L7 null_dim=0
+ok   c0.identity identity frame: transport trivial, defect 0.0e+00
+== C1 transport functoriality and group structure on the sextet ==
+ok   c1.func.L3 m_(a.b) = m_a[m_b] on all 36 sextet pairs
+ok   c1.func.L7 m_(a.b) = m_a[m_b] on all 36 sextet pairs
+ok   c1.closure sextet closed under composition
+ok   c1.coset branch product rule: minus.minus=plus, minus.plus=minus
+== C2 exact cocycle identity with reversed-composition rejector ==
+ok   c2.cocycle.L3 worst residual 0.0e+00 over composable pairs
+ok   c2.pairs.L3 composable non-identity pairs 20
+ok   c2.cocycle.L7 worst residual 0.0e+00 over composable pairs
+ok   c2.pairs.L7 composable non-identity pairs 20
+ok   c2.reject.m non-commuting pair: 96 transport entries differ under reversal
+ok   c2.reject.E.L3 wrong-frame bracket misses by 2.5e-10 (cross-branch)
+ok   c2.rev.L3 reversed-order bracket within coset-spread scale 7.1e-15
+ok   c2.reject.E.L7 wrong-frame bracket misses by 2.5e-10 (cross-branch)
+ok   c2.rev.L7 reversed-order bracket within coset-spread scale 7.1e-15
+== C3 branch uniformity and the coset-spread law ==
+ok   c3.minus.bit.L3 minus-branch ceiling bit-identical across frames 1.2e-10
+ok   c3.plus.bit.L3 plus-branch ceiling bit-identical across frames 7.1e-15
+ok   c3.minus.bit.L7 minus-branch ceiling bit-identical across frames 1.2e-10
+ok   c3.plus.bit.L7 plus-branch ceiling bit-identical across frames 7.1e-15
+ok   c3.size.minus minus ceiling bit-identical across sizes 1.2e-10
+ok   c3.size.plus plus ceiling bit-identical across sizes 7.1e-15
+ok   c3.spread.L3 coset spread equals plus ceiling bit for bit 7.1e-15
+ok   c3.spread.L7 coset spread equals plus ceiling bit for bit 7.1e-15
+== C4 first-order law at every non-identity sextet frame ==
+ok   c4.resid.L3.g1 minus law residual 9.4e-04
+ok   c4.resid.L3.g4 minus law residual 8.8e-04
+ok   c4.resid.L3.g9 minus law residual 8.9e-04
+ok   c4.cos.L3 worst minus alignment gap 4.1e-07
+ok   c4.reject.L3 plus-branch rejector residual 1.1e+00
+ok   c4.floor.L3 minus floor relative spread 4.0e-05
+ok   c4.resid.L7.g1 minus law residual 8.7e-04
+ok   c4.resid.L7.g4 minus law residual 5.5e-04
+ok   c4.resid.L7.g9 minus law residual 4.9e-04
+ok   c4.cos.L7 worst minus alignment gap 3.7e-07
+ok   c4.reject.L7 plus-branch rejector residual 9.8e-01
+ok   c4.floor.L7 minus floor relative spread 5.6e-05
+== C5 the covariance boundary: comparator, separation, carrier ==
+ok   c5.uniform.L3 comparator bit-identical across all 18 non-sextet frames
+ok   c5.value.L3 comparator 4.0e+00 within 1.3e-08 of 4
+ok   c5.sep.L3 boundary separation 3.2e+10
+ok   c5.reject.L3 first-order law fails at the boundary, residual 3.8e+00
+ok   c5.uniform.L7 comparator bit-identical across all 18 non-sextet frames
+ok   c5.value.L7 comparator 4.0e+00 within 1.3e-08 of 4
+ok   c5.sep.L7 boundary separation 3.2e+10
+ok   c5.reject.L7 first-order law fails at the boundary, residual 2.0e+02
+ok   c5.carrier body-diagonal class carries the obstruction at all 18 frames
+ok   c5.equiv zero mixed classes iff constant-sign sextet, over all 24
+== C6 census cross-checks against the landed cycle-700 identification ==
+ok   c6.list constant-sign list [1, 4, 9, 15, 18, 23]
+ok   c6.nflip nflip census [(0, 3), (1, 9), (2, 9), (3, 3)]
+ok   c6.orders sextet element orders [(1, 2), (4, 2), (9, 2), (15, 3), (18, 3), (23, 1)]
+RECEIPT: outputs/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02_receipt_2026-08-02.json
+TOTAL: PASS=55 FAIL=0
+
+----- stderr -----
+

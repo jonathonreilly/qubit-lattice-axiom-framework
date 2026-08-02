@@ -32,13 +32,13 @@
     "route_b_typed_spectator_radius_one_synthesis_cycle822_bounded_theorem_note_2026-07-30",
     "routec_staggered_radius_one_parity_even_transport_cycle822_bounded_theorem_note_2026-07-30"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.0,
+  "load_bearing_score": 5.587,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -59,6 +59,6 @@
   },
   "runner_path": null,
   "title": "Cycle 822: physical-M2 typed radius-one compiler tournament",
-  "transitive_descendants": 15,
+  "transitive_descendants": 16,
   "verdict_rationale": null
 }

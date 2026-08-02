@@ -92,7 +92,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.518,
+  "load_bearing_score": 10.524,
   "load_bearing_step": "Gluing produces a matched integer label whose branch-summed 2D U(1) action yields the exact e^{i theta Q} pairing, while nonuniqueness of integer-valued SU(3) matched-label functions narrows the physical residual to carrier and action-level pairing selection.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -185,6 +185,6 @@
   },
   "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py",
   "title": "Multi-Plaquette Character Gluing Derives the Emergent Integer Sector-Record Context Exactly on the Finite 2D U(1) Surface \u2014 Branch-Datum-Free, With the Theta Pairing Coming From the Action Slot \u2014 and Sharpens the Remaining Theta Q-Context Wall to Action-Level Pairing Selection on the Physical 4D SU(3) Surface (Bounded Theorem)",
-  "transitive_descendants": 732,
+  "transitive_descendants": 735,
   "verdict_rationale": "Issue: the restricted packet clips the retained SU(3) character authority used by Theorem 4. Why this blocks: the omitted material prevents independent verification of the SU(3) input and hence the asserted physical-residual sharpening, although the supplied U(1) Fourier, Haar, incidence, and Poisson checks are internally consistent. Negative-boundary judgment (N1-N8): only the class-scoped absence of a shift-sum index in the supplied 2D SU(N) class-function weight and the demonstrated nonuniqueness of integer-valued matched-label functions are supported; the 4D carrier, action-pairing, scaling-limit, and center-dual routes remain open. Repair target: supply the complete retained authority and re-audit; until then, the finite witness-surface algebra is provisional and the SU(3)/4D narrowing is not audit-closed."
 }

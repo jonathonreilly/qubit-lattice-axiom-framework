@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 7.008,
+  "load_bearing_score": 7.055,
   "load_bearing_step": "Given the displayed definitions of epsilon(x), P, I, and L, the note claims only the resulting finite algebraic identities and distinctions, including P-I = Phi(x)(epsilon(x)-1) and Hermiticity of sqrt(N) H_flat sqrt(N) for real diagonal sqrt(N).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -143,6 +143,6 @@
   },
   "runner_path": "scripts/frontier_staggered_scalar_parity_lapse_coupling_external_narrow.py",
   "title": "Staggered Scalar Parity / Lapse Coupling Algebra Certificate",
-  "transitive_descendants": 90,
+  "transitive_descendants": 93,
   "verdict_rationale": "The source note has successfully narrowed the claim to an if-given-these-operator-forms algebraic certificate. This is not a definition-only external bridge claim, because the audited conclusion is not that P or L is forced or externally correct, but that the displayed forms have the stated algebraic consequences. It is not decoration under the policy because there is no single retained parent claim being expanded into corollaries; the row is self-contained bounded algebra rather than a boxed corollary cluster."
 }

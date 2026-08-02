@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 7.426,
+  "load_bearing_score": 7.476,
   "load_bearing_step": "Under the configured probe parameters, the mean phase delta from the static v=0 baseline is monotonic in v_z and the small-|v| rows agree with antisymmetry within the configured tolerance.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -308,6 +308,6 @@
   },
   "runner_path": "scripts/gravitomagnetic_portable.py",
   "title": "Velocity-Dependent Phase Shift on the Imposed-Source Layered DAG",
-  "transitive_descendants": 85,
+  "transitive_descendants": 88,
   "verdict_rationale": "The runner performs substantive DAG growth and propagation calculations and does not hard-code the reported phase values. Its completed stdout agrees with the note and supports monotonicity, the small-|v| tolerance result, the large-|v| failure of antisymmetry, and the stated approximate family spread. The audited scope expressly excludes a GR observable bridge and moving-source self-consistency, so the runner's legacy interpretive SAFE READ does not enlarge the claim."
 }

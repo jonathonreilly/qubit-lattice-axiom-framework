@@ -85,7 +85,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 13.235,
+  "load_bearing_score": 13.24,
   "load_bearing_step": "For each weight in the finite window, the cited Schur/Peter-Weyl convolution theorem is applied to z_(p,q)=lambda r_(p,q), yielding R_beta[r] chi_(p,q)=(1/lambda)C_(Z_beta^(N)) chi_(p,q).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -837,6 +837,6 @@
   },
   "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
   "title": "Gauge-Vacuum Plaquette Supplied-D Residual Quotient and Formal Convolution Packaging",
-  "transitive_descendants": 851,
+  "transitive_descendants": 854,
   "verdict_rationale": "Issue: the restricted packet clips the retained convolution authority before its complete load-bearing proof, while the runner constructs the convolution-side diagonal matrix from the asserted coefficient dictionary. Why this blocks: the quotient identity closes as elementary diagonal algebra, but the formal convolution conclusion cannot receive an independent clean audit from the rendered evidence. Repair target: rebuild the packet with the complete authority and recheck the Schur-convolution action outside the runner\u2019s construction path. Claim boundary until fixed: the supplied quotient algebra, normalization distinction, and narrow off-diagonal counterexample remain supported, but neither clean formal-packaging closure nor any Wilson identification is ratified."
 }

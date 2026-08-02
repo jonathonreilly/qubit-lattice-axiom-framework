@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 18.317,
+  "load_bearing_score": 18.322,
   "load_bearing_step": "The displayed Hermitian generators satisfy {G_mu,G_nu}=2 delta_munu I_16, from which the M(phi) square, grading, block, reordering, and norm identities follow.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1862,6 +1862,6 @@
   },
   "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py",
   "title": "DM Neutrino Dirac Bridge Algebra Note",
-  "transitive_descendants": 901,
+  "transitive_descendants": 904,
   "verdict_rationale": "Issue: The 24 exact class-A checks and an independent Pauli-string audit support the formulas, but the packet cannot satisfy its mandatory audited-clean N1-N8 contract: stdout contains no five-resolution N5 lines and no independent N7 resolution surface. Why this blocks: the packet states that an audited_clean verdict without that structured evidence is rejected, so audit-chain closure cannot be recorded even though no mathematical mismatch was found. Repair target: add a dedicated current-cycle N1-N8 evidence run with exact per_element, per_site, per_mode, per_block, and lattice_wide lines plus an independent N7 resolution, or revise the positive-row clean gate. Claim boundary until fixed: treat the displayed finite-matrix identities as exact conditional support, without physical carrier, chirality, Yukawa, selector-selection, or normalization semantics."
 }

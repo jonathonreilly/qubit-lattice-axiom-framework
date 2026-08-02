@@ -86,7 +86,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 5.585,
+  "load_bearing_score": 5.907,
   "load_bearing_step": "For any named motion g, a state and g * state present the same record-content-relative-to-supplied-structure description, so a lawful condition holds at one if and only if it holds at the other.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -1397,6 +1397,6 @@
   },
   "runner_path": "scripts/frontier_answer_condition_motion_closure_2026_07_02.py",
   "title": "Final Reading-Note Derivations: Answer, Condition, Motion Closure, And Extensional Judgment",
-  "transitive_descendants": 11,
+  "transitive_descendants": 14,
   "verdict_rationale": "Issue: T3 infers motion invariance of every lawful condition after choosing identity transport on one-site possibilities and treating the condition as equivariant, neither of which follows from the cited axioms; the runner checks only selected toy predicates and reports a Qualification-quotation mismatch at check 8. Why this blocks: finite examples cannot prove the universal motion-closure statement, and a supplied condition is not thereby guaranteed to satisfy the required equivariance restriction or canonical inter-site trivialization. Repair target: state the transport and equivariance as explicit bounded premises or derive them, update the Qualification quotation, and make the runner test the revised obligation. Claim boundary until fixed: T1, T2, and fixed-interface T4 remain bounded semantic readings, while T3 and its negative boundary against anchored or rigid-list conditions remain conditional."
 }

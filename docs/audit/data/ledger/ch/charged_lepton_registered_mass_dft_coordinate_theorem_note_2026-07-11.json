@@ -57,7 +57,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 10.529,
+  "load_bearing_score": 10.535,
   "load_bearing_step": "Parseval in the stated normalization gives sum_j z_j^2 = 3(a^2 + 2|c|^2), hence Q = 1/3 + 2r/3, while the S3 action on c folds phi to an unordered-triple invariant.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1248,6 +1248,6 @@
   },
   "runner_path": "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py",
   "title": "Registered Positive Mass Triple: Exact C3 Fourier Coordinates and Koide Identity",
-  "transitive_descendants": 738,
+  "transitive_descendants": 741,
   "verdict_rationale": "Direct expansion in Q(omega), using omega^2 + omega + 1 = 0, independently reproduces the inverse transform, the 6|c|^2 variance identity, Parseval, and Q = 1/3 + 2r/3. The S3 action phi -> +/-phi + 2pi k/3 proves folded-phase invariance and unordered reconstruction, including the c = 0 limit. The scope starts from a supplied positive triple; physical functional construction and empirical comparison are explicitly outside scope, and r remains unselected."
 }

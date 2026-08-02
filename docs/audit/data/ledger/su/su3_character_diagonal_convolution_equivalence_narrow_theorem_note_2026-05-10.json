@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 23.293,
+  "load_bearing_score": 23.298,
   "load_bearing_step": "The contraction integral equals \u03b4_(lambda,mu) chi_mu(V)/d_mu, so the d_lambda coefficient in Z cancels the Schur factor and yields C_Z chi_mu = rho_mu chi_mu.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1531,6 +1531,6 @@
   },
   "runner_path": "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py",
   "title": "SU(3) Character Diagonal Convolution Equivalence Narrow Theorem",
-  "transitive_descendants": 886,
+  "transitive_descendants": 889,
   "verdict_rationale": "The load-bearing contraction is a genuine exact algebraic identity, not a definition or imported coefficient: direct index contraction independently reproduces the irrep delta, trace, and 1/d_mu normalization. The SU(3) dimension formula, Schur normalization, coefficient uniqueness, positivity, self-adjointness, and swap commutation are consistent, while the runner supplies exact symbolic checks and convention-hostile controls rather than merely printing expected values. The theorem remains correctly scoped away from any physical Wilson-environment coefficient-source identification."
 }

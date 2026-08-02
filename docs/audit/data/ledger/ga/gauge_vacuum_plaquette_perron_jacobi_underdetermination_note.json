@@ -84,7 +84,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_failed",
-  "load_bearing_score": 12.75,
+  "load_bearing_score": 12.755,
   "load_bearing_step": "The runner exhibits two admissible supplied diagonals for the same J_box whose Perron first moments and Jacobi coefficients differ.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -382,6 +382,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py",
   "title": "Gauge-Vacuum Plaquette Perron/Jacobi Underdetermination",
-  "transitive_descendants": 860,
+  "transitive_descendants": 863,
   "verdict_rationale": "Issue: the exact class-membership step is contradicted by the runner\u2019s `packet symmetry err = 2.711e-19`; its check replaces exact swap commutation with a `< 1.0e-12` tolerance. Why this blocks: multiplying R_A or R_B by that packet does not establish that either resulting diagonal, and hence either transfer matrix, belongs to the exact swap-symmetric class required by the theorem, so the finite underdetermination consequence is not certified as written. Repair target: construct an exactly symmetrized positive packet, or prove exact conjugation symmetry for the stated finite mode sum, then recompute and certify the Perron and Jacobi separations. Claim boundary until fixed: the current runner provides a numerically near-symmetric finite-box separation outside the claimed exact witness class."
 }

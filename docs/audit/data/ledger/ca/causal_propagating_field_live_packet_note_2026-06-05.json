@@ -39,7 +39,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 11.644,
+  "load_bearing_score": 11.687,
   "load_bearing_step": "In this configured center-family runner, finite cone fields produce stable strength-independent proxy ratios, and the archived 0.45 dynamic row is stale.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -60,6 +60,6 @@
   },
   "runner_path": "scripts/causal_propagating_field.py",
   "title": "Causal Propagating Field Live Packet Note",
-  "transitive_descendants": 99,
+  "transitive_descendants": 102,
   "verdict_rationale": "The primary runner and helper source are included and the load-bearing path genuinely computes the finite replay from the configured growth, field, propagation, and centroid routines. The stdout values match the note's narrowed safe read, and the code does not claim a physical wave speed, derived carrier, self-consistent retarded field, or cross-family portability law. The conclusion therefore closes only as a bounded configured-runner fact, not as the archived 0.63/0.45 positive table or a broader physics theorem."
 }

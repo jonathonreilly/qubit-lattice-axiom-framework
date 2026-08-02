@@ -36,7 +36,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.0,
+  "load_bearing_score": 5.459,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -57,6 +57,6 @@
   },
   "runner_path": "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
   "title": "The 3+1 Tick Extension of the Retained Cubic-Coxeter Complex: the Regge Second Variation Yields the Lambda-One Kinetic Fiber Metric, the Multiplier Structure, and the Comparator Signs Geometrically \u2014 Isotropically Across Tick-Mixed Directions",
-  "transitive_descendants": 7,
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

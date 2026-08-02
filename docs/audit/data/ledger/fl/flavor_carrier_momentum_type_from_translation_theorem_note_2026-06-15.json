@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.747,
+  "load_bearing_score": 11.75,
   "load_bearing_step": "The uniform profile gives sum_n w_n |psi_k(n)|^2 = (1/8) sum_n w_n for every character k.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -362,6 +362,6 @@
   },
   "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
   "title": "Finite Translation-Character Profiles and Projectors Theorem",
-  "transitive_descendants": 1214,
+  "transitive_descendants": 1217,
   "verdict_rationale": "The runner genuinely constructs the Z_2^3 translations and characters and exactly verifies all 20 identities, so the finite positive algebra and diagonal-expectation boundary are substantively supported. N1 supplies five distinct closed routes, N2 is a singleton wall, N3-N6 and N8 disclose no substantive unresolved item, and N5 tests all five required resolutions. However, N7 cites live runner output for the steelman but uses the unaudited source note as its resolution, rather than an orchestrator-marked independent execution or retained/accepted authority; a different path alone is not independence. The clean gate therefore remains conditional on independent N7 resolution evidence."
 }

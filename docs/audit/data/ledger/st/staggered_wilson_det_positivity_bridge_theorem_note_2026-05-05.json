@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 12.19,
+  "load_bearing_score": 12.195,
   "load_bearing_step": "Unitary block conjugation reduces M to two-by-two blocks B_i whose determinants are alpha^2 + sigma_i^2, so their product is positive for alpha>0.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -567,6 +567,6 @@
   },
   "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
   "title": "Staggered + Wilson Supplied-Surface Determinant Positivity",
-  "transitive_descendants": 825,
+  "transitive_descendants": 828,
   "verdict_rationale": "The SVD/block-diagonal argument correctly proves the determinant formula and strict positivity on the explicitly scoped alpha>0 surface. The runner genuinely computes the matrix structure and numerical factorisation, with 26 algebraic checks passing and no mismatches. An audited_clean verdict nevertheless cannot ship because the supplied execution evidence cannot support the packet-mandated N1-N8 clean-verdict stress test."
 }

@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -34,13 +34,13 @@
     "finite_regge_plaquette_scattering_diagnostics_cycle576_bounded_theorem_note_2026-07-22",
     "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 3.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -61,6 +61,6 @@
   },
   "runner_path": "scripts/physical_operational_source_response_readout_chain_cycle700_2026_07_25.py",
   "title": "An executed source-to-response-to-relational-readout chain with carrier-resolved covariance, on re-derived pins \u2014 Cycle 700",
-  "transitive_descendants": 0,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

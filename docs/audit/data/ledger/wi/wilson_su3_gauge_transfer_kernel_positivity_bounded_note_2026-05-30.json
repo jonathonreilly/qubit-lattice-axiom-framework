@@ -90,7 +90,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 14.058,
+  "load_bearing_score": 14.064,
   "load_bearing_step": "Equation (13) expresses c_lambda(beta) as a convergent sum of non-negative terms (beta/(2N_c))^n m_lambda^(n)/n!, hence c_lambda(beta) >= 0 for every irrep and beta >= 0.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -304,6 +304,6 @@
   },
   "runner_path": "scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py",
   "title": "Wilson SU(3) Temporal-Gauge Transfer-Kernel Positivity (Bounded)",
-  "transitive_descendants": 753,
+  "transitive_descendants": 756,
   "verdict_rationale": "Issue: the restricted packet clips both retained one-hop authorities, preventing independent review of their complete convolution-diagonalization and temporal-gauge factorization proofs. Why this blocks: the binding packet preflight forbids audited_clean, and the missing authority verification is comparable to the kernel-equivalence portion of the scoped claim rather than a cosmetic lemma. Repair target: render both cited authorities in full and repeat the fresh-context audit. Claim boundary until fixed: the self-contained non-negative character-series argument and all six runner checks are internally consistent, but the whole cited dependency chain is not cleanly auditable from this packet."
 }

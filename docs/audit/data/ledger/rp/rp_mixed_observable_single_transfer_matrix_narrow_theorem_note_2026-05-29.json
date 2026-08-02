@@ -57,7 +57,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.02,
+  "load_bearing_score": 10.026,
   "load_bearing_step": "Given the represented mixed OS transfer form, T_full=(T_gauge^{1/2} x I)(oplus_U B[U]^dag B[U])(T_gauge^{1/2} x I)=W^dag W, so <Theta(F)F>=||W(O_hat Omega)||^2>=0.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -326,6 +326,6 @@
   },
   "runner_path": "scripts/rp_combined_mixed_observable_u_integrated_2026_05_29.py",
   "title": "Finite-Carrier Single-Transfer Assembly for Mixed Gauge+Fermion Reflection-Positivity Observables",
-  "transitive_descendants": 733,
+  "transitive_descendants": 736,
   "verdict_rationale": "Issue: the valid W^dag W identity imports the mixed OS transfer representation and Wilson-boundary PSD premise, neither of which is closed by the cited authorities. Why this blocks: the runner defines the Gram through the assembled positive operator, while Route C uses det(I+t1) rather than deriving the asserted det(M_KS+mI)-weighted path-integral representation. Repair target: add retained one-hop authorities proving the mixed representation, Wilson-boundary positivity, and fixed-background fermion transfer premise, with a runner that checks their identification. Claim boundary until fixed: only the supplied-premise finite-carrier algebra is supported; the ancillary single-step no-go is non-load-bearing, and one finite negative Gram does not establish the stated exhaustive no-go."
 }

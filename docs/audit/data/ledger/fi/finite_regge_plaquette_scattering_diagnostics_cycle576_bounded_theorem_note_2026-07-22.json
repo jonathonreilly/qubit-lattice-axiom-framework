@@ -37,7 +37,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 2.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
   "title": "Finite Regge, Plaquette, and Scattering Diagnostics \u2014 Cycle 576",
-  "transitive_descendants": 1,
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

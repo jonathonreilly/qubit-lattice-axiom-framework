@@ -85,7 +85,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 7.658,
+  "load_bearing_score": 7.7,
   "load_bearing_step": "The third family has a small signed-source basin centered in the tested drift window, but the edge drifts fall into a clean opposite-sign regime.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -294,6 +294,6 @@
   },
   "runner_path": "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py",
   "title": "Third Grown Family Boundary Note",
-  "transitive_descendants": 100,
+  "transitive_descendants": 103,
   "verdict_rationale": "Issue: The executable sweep supports 5/15 passing rows and reversed orientation in all six edge rows, but its zero and neutral controls are identities by construction, while the geometry, connectivity, source field, propagation action, and readout are hard-coded. Why this blocks: The table establishes a basin only inside the chosen harness and does not establish that its boundary is structural or retained framework content. Repair target: Supply a retained bridge for those model and observable choices and independently reproduce the sign table. Claim boundary until fixed: Only the enumerated harness outcome is supported; N1 lacks five distinct attack routes, N2 supplies no independent wall set beyond the edge labels, N3 exposes unratified model choices, N4 has no cited residual witness, N5 tests the negative rhetoric only at row level, N6 supplies no primitive closing the bridge, N7 leaves that bridge open despite the finite-table steelman, and N8 supplies no applicable retirement mechanism."
 }

@@ -94,7 +94,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 16.267,
+  "load_bearing_score": 16.271,
   "load_bearing_step": "Dividing equations (3.1) and (3.2) gives the exact marked-factor deletion identity (3.3) for rho_lambda^env(beta).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -426,7 +426,7 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py",
   "title": "Gauge-Vacuum Plaquette Actual Spatial-Environment Character Measure",
-  "transitive_descendants": 870,
+  "transitive_descendants": 873,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

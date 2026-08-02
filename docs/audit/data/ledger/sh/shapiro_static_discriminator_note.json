@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 10.024,
+  "load_bearing_score": 10.07,
   "load_bearing_step": "Sampled at delays 0 through 3, the static-scheduling proxy produces a near-flat phase response that does not reproduce the comparator's c-dependence.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -327,6 +327,6 @@
   },
   "runner_path": "scripts/shapiro_static_discriminator.py",
   "title": "Shapiro Static Discriminator",
-  "transitive_descendants": 91,
+  "transitive_descendants": 94,
   "verdict_rationale": "The causal and static-cone builders return the same field law at matched parameters, apart from an unused local variable, so their equality is a valid algebraic identity rather than evidence about distinct physical hypotheses. The scheduling values are computed rather than printed as constants and support the narrowly stated finite-sweep result. Although stdout falsely describes the zero placeholder as an exact control, the source note explicitly excludes any evaluated zero-strength-control claim."
 }

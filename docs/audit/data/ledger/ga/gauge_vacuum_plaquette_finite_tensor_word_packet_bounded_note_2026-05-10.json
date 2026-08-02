@@ -84,7 +84,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 23.773,
+  "load_bearing_score": 23.778,
   "load_bearing_step": "Construct tensor_word = diag_c \u00b7 (N_f + N_fbar) \u00b7 diag_c \u00b7 (N_f + N_fbar)^T \u00b7 diag_c and directly check P1\u2013P3.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -278,6 +278,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
   "title": "Gauge-Vacuum Plaquette Finite Tensor-Word Packet \u2014 Bounded Note",
-  "transitive_descendants": 874,
+  "transitive_descendants": 877,
   "verdict_rationale": "The matrix-product computation and independent algebra support nonnegativity, conjugation symmetry, and the boundary-column corollary at x=2. However, the runner's displayed construction uses the formula family c_(p,q)(6)/(d_(p,q)c_(0,0)(6)), while its code and the audited note use c_(p,q)(2)/(d_(p,q)c_(0,0)(2)); this source-runner convention drift prevents clean certification as written. The runner also recomputes the Bessel formula but does not directly assert the note's claimed full 25-value agreement with authenticated companion values."
 }

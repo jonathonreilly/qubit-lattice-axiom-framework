@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 4.7,
+  "load_bearing_score": 5.0,
   "load_bearing_step": "On a normal mode q(t) = exp(i omega t), the Euler-Lagrange equation gives omega^2 = V/G for G != 0.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1266,6 +1266,6 @@
   },
   "runner_path": "scripts/frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09.py",
   "title": "Universal GR Quadratic Mode Gluing Derivation",
-  "transitive_descendants": 12,
+  "transitive_descendants": 15,
   "verdict_rationale": "Independent variation gives dL/dqdot = G qdot and dL/dq = -V q, hence G qddot + V q = 0; substituting exp(i omega t) yields V - G omega^2 = 0 and omega^2 = V/G for nonzero G. This independently verifies the displayed sign and normalization. The runner's GR-control check uses supplied comparator coefficients only as a non-load-bearing control, so the scoped theorem is neither a tuned match nor a physical GR identification."
 }

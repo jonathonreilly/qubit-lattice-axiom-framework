@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 18.576,
+  "load_bearing_score": 18.581,
   "load_bearing_step": "Taking the standard Hermitian norm gives Q = v^2/8 [g^2(W1^2 + W2^2) + (g W3 - gY B)^2].",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -4991,6 +4991,6 @@
   },
   "runner_path": "scripts/frontier_ew_higgs_gauge_mass_diagonalization.py",
   "title": "Defined `C^2` Quadratic-Form Diagonalization Theorem",
-  "transitive_descendants": 762,
+  "transitive_descendants": 765,
   "verdict_rationale": "The theorem is exact finite-dimensional algebra over its explicitly stated definitions. Manual multiplication, Hermitian-norm expansion, Hessian reconstruction, and rank-one diagonalization reproduce every load-bearing sign, factor, and normalization, including the charged-coordinate coefficient and annihilator. The runner's 44 passing checks agree with those independent calculations, and its source constructs the matrices symbolically without importing physical or empirical inputs."
 }

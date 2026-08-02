@@ -62,7 +62,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 6.926,
+  "load_bearing_score": 6.976,
   "load_bearing_step": "At eta=20, s=0.004, c=0.25, the instantaneous field traps while the dynamic causal field escapes, with forward-only static not escaping and exposure-matched static also escaping.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -181,6 +181,6 @@
   },
   "runner_path": "scripts/causal_escape_window.py",
   "title": "Causal-Escape Window: Qualitative Regime (Conditional)",
-  "transitive_descendants": 85,
+  "transitive_descendants": 88,
   "verdict_rationale": "The repaired runner constructs the lattice-like propagation model, evaluates the field variants, and computes escape ratios from the stated finite setup; the target values are not hard-coded as expected constants. The completed cache exits successfully and includes the previously missing exposure-matched static, c/eta/s, portability, and four-seed robustness evidence. The clean verdict is bounded to the runner-defined diagnostic, while stale conditional labels and broader causal-gravity prose in the note are not promoted."
 }

@@ -96,7 +96,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 14.035,
+  "load_bearing_score": 14.041,
   "load_bearing_step": "The load-bearing step is `(retained-pending-re-audit Matsubara free-energy density formula from Bridge 1) \u21d2 (A_2, A_4, A_inf, C_inf^(4D)) algebraic identities`, evaluated mechanically by the runner.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -423,6 +423,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_effective_potential_endpoint.py",
   "title": "Hierarchy Effective-Potential Endpoint Note",
-  "transitive_descendants": 741,
+  "transitive_descendants": 744,
   "verdict_rationale": "Issue: the supplied Bridge 1 authority is packet-clipped across its load-bearing derivation, so the imported Matsubara formula cannot be independently verified from this restricted packet, although its downstream sums check. Why this blocks: the bounded endpoint identities depend on precisely that formula, while the runner assumes it rather than deriving it. Repair target: supply the complete authority or a complete SHA-bound proof certificate and independently verify the determinant-log normalization yielding 1/(2 L_t). Claim boundary until fixed: conditional on the formula, A_2, A_4, A_inf, A_inf/A_2, and the formal fourth-root factor are algebraically correct, but the named physical det-to-v insertion wall and electroweak hierarchy closure remain outside scope."
 }

@@ -64,7 +64,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 12.129,
+  "load_bearing_score": 12.172,
   "load_bearing_step": "Sweep summary: tested drifts 0.0 through 0.5 over seeds 0 through 4, with passing rows 32/45 and clean zero, neutral, sign-orientation, and near-linear charge-scaling controls on passing rows.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "retained_bounded",
@@ -223,6 +223,6 @@
   },
   "runner_path": "scripts/ALT_CONNECTIVITY_FAMILY_BASIN.py",
   "title": "ALT Connectivity Family Basin Note",
-  "transitive_descendants": 98,
+  "transitive_descendants": 101,
   "verdict_rationale": "The load-bearing result is a finite deterministic sweep, not a generic physics bridge, and the note correctly limits the claim to a bounded basin rather than universal closure. The cached runner completes successfully and computes the 32/45 row count from the grown geometries, alternative connectivity construction, propagated source fields, and explicit ok gate; it does not use an external comparator or import the 32/45 result as an input. Residual risk is that the runner's final mean-exponent summary appears to index the neutral column rather than the exponent column, but the row-level exponents and ok predicate still support the source note's near-linear scaling statement."
 }

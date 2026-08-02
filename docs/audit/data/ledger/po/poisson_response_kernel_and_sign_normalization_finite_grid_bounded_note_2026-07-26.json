@@ -86,7 +86,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.126,
+  "load_bearing_score": 10.131,
   "load_bearing_step": "The runner computes matched response-column residuals above 0.998, shows that the 0.93 correlation criterion admits p=2.805, and after per-operator source-sign normalization ranks Poisson third at N=20 and N=24.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -110,6 +110,6 @@
   },
   "runner_path": "scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py",
   "title": "Poisson Response-Kernel and Sign-Normalization Finite-Grid Diagnostic",
-  "transitive_descendants": 789,
+  "transitive_descendants": 792,
   "verdict_rationale": "Issue: N1 presents eight distinct finite attacks, N2 separates the three numerical questions, N3 exposes the conditions, N4 uses no prior no-go witness, N5 bounds the rhetoric, N6 preserves partial positive results, and N8 supplies no applicable echo, but N7 lacks an independent resolution surface. Why this blocks: the mandatory clean-verdict negative-claim gate cannot independently close N7, although all 16 completed runner checks are internally consistent and the code computes the reported results. Repair target: add a second independent executable or retained-authority surface testing the density-response-versus-amplitude-resolvent distinction and naming the point-response mismatch. Claim boundary until fixed: the completed finite-grid rows may be reported as a stretch attempt with an honest N7 residual, but not as audited clean."
 }

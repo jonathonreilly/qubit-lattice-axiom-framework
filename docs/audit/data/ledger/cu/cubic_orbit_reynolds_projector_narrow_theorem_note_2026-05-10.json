@@ -43,7 +43,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 3.0,
+  "load_bearing_score": 3.807,
   "load_bearing_step": "As g ranges over D_4, each point of orbit(dy,dz) occurs exactly |D_4|/|O| times, so the group average equals the orbit average P; equivariance then forces every projection onto V_sym to equal P.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1257,6 +1257,6 @@
   },
   "runner_path": "scripts/frontier_cubic_orbit_reynolds_projector_narrow.py",
   "title": "Cubic-Orbit Reynolds Projector Narrow Positive Theorem",
-  "transitive_descendants": 3,
+  "transitive_descendants": 6,
   "verdict_rationale": "The theorem closes by exact finite-set and finite-group algebra without cited dependencies or imported physical identifications. Independently, orbit-stabilizer counting reproduces equation (6), unordered pairs from {0,\u2026,d_max} give (d_max+1)(d_max+2)/2 orbit classes, and QPk=Qk together with QPk=Pk proves uniqueness. The runner\u2019s 143 checks are consistent with these exact arguments and introduce no comparator, calibration, or contested premise."
 }

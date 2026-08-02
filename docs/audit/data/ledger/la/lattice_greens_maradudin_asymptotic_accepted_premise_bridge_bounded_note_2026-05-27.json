@@ -60,7 +60,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-  "load_bearing_score": 10.098,
+  "load_bearing_score": 10.104,
   "load_bearing_step": "(B4) Therefore the framework-local Green kernel has leading coefficient c = 1/(4 pi) for the exact nearest-neighbor Z3 graph-Laplacian convention consumed by downstream Newton-Poisson rows.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1795,6 +1795,6 @@
   },
   "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
   "title": "Cubic-Lattice Green's Function Asymptotic Native Reroute",
-  "transitive_descendants": 774,
+  "transitive_descendants": 777,
   "verdict_rationale": "Issue: B4 repeats the retained parent\u2019s Green-kernel asymptotic, and the runner\u2019s B1-B3 calculations only replay normalization checks. Why this blocks: with no external comparator or conclusion beyond the single parent, the row has no independent theorem content. Repair target: independent theorem status would require a new conclusion or a self-contained asymptotic proof beyond the parent and finite axis-residual evidence. Claim boundary until fixed: exact algebraic and numerical normalization decoration under the retained parent."
 }

@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 11.531,
+  "load_bearing_score": 11.537,
   "load_bearing_step": "For each positive sampled location s=1,2,3, the explicit reversible generator Q(s) satisfies Q(s) pi(s)=0 with one zero mode and negative transverse modes.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -4951,6 +4951,6 @@
   },
   "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
   "title": "Record Clock/Rate Normalization And Stable-Dial Gate",
-  "transitive_descendants": 739,
+  "transitive_descendants": 742,
   "verdict_rationale": "Independently, each row of Q pi equals -2+1+1=0, detailed balance gives Q_ij pi_j=Q_ji pi_i=1, and the associated symmetric form has one zero direction and two strictly negative directions. Positive rescaling preserves the kernel and scales the nonzero spectrum, while both displayed rate-clock pairs give exp(-2rt)=1/2 and hence the same transition matrix. The five section-D checks do not compute their assertions, so the clean verdict is confined to the explicit finite construction and rate-clock product example stated in the audited scope."
 }

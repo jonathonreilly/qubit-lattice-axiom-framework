@@ -58,7 +58,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "decoration_under_hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
-  "load_bearing_score": 10.533,
+  "load_bearing_score": 10.539,
   "load_bearing_step": "Substituting q(H(v))=v^2 into rho_*=Aq(H(v))^2 and equating two positive fixed-density endpoints gives v(L)/v_ref=(A_ref/A(L))^(1/4).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -518,6 +518,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
   "title": "Hierarchy EW Order-Parameter D4 Density Readout Bridge",
-  "transitive_descendants": 740,
+  "transitive_descendants": 743,
   "verdict_rationale": "Independent substitution gives q=2(v^2/2)=v^2, cancellation gives the unique positive inverse fourth root, and the exact endpoint, negative-control, and scalar-readout arithmetic agrees with the runner. Nevertheless, the result is class-A algebra already contained in the cited fixed-density bridge, with q=v^2 only a defined neutral-vector substitution and no external comparator or new physical content. The negative controls establish only two local substitution failures inside the D=4 equation; they do not claim route exhaustion, and no independent wall set, prior-witness residual, rhetoric-resolution ladder, partial-closure reframe, unresolved steelman, or cross-cycle echo bears on this decoration verdict. Endpoint selection, physical Higgs identification, and absolute scale remain outside the audited scope."
 }

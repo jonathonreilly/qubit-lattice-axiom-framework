@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 17.916,
+  "load_bearing_score": 17.92,
   "load_bearing_step": "R_lat(d \u2212 1) \u2212 R_RD(d) = \u2212A(d)/[d 2^(d \u2212 1)], together with the proof that A(d) = 0 uniquely at d = 4 for integers d \u2265 2.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "retained_bounded",
@@ -1388,6 +1388,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
   "title": "Hierarchy 7/8 Riemann-Dirichlet Dimensional Anchor \u2014 Narrow Theorem",
-  "transitive_descendants": 965,
+  "transitive_descendants": 968,
   "verdict_rationale": "The source gives a self-contained exact algebraic proof with no cited load-bearing authority, imported calibration, physical selector, or open bridge. The runner genuinely evaluates the definitions and symbolic identities, checks the induction certificate, and reports 20 class-A passes with no failures. This is not decoration because the result does not reduce to an upstream parent claim."
 }

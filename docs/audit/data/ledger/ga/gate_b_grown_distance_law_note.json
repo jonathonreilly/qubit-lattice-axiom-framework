@@ -54,7 +54,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 15.64,
+  "load_bearing_score": 15.67,
   "load_bearing_step": "The frozen log reports that exact grid and grown drift=0.2 both give 20/20 TOWARD tails with comparable declining fits, b^(-0.90) and b^(-0.83), over z=3..7.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "retained_no_go",
@@ -181,6 +181,6 @@
   },
   "runner_path": "scripts/gate_b_grown_distance_law.py",
   "title": "Gate B Grown-Geometry Distance-Law Note",
-  "transitive_descendants": 140,
+  "transitive_descendants": 143,
   "verdict_rationale": "The source note makes a bounded numerical claim about a specific harness result, and the included runner code is not a constant-printing script or cross-note value import. It performs the geometry growth, propagation, field perturbation, delta aggregation, and log-log tail fit that its stdout reports. The conclusion is therefore clean only for the stated finite tested family, not for broader Gate B closure or all generated-geometry parameter space."
 }

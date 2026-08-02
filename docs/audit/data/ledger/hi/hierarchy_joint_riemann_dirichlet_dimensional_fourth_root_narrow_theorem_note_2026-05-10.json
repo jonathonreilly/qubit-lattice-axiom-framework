@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.049,
+  "load_bearing_score": 10.055,
   "load_bearing_step": "The odd/even split yields eta(s)/zeta(s) = 1 - 2^(1-s), the positive coefficients (s+1)2^k - s establish strict monotonicity, and lambda^(d p) = lambda for every lambda > 0 forces p = 1/d.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -4363,6 +4363,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow.py",
   "title": "Hierarchy Joint Riemann-Dirichlet / Dimensional Fourth-Root \u2014 Narrow Theorem",
-  "transitive_descendants": 748,
+  "transitive_descendants": 751,
   "verdict_rationale": "Parts (A)-(D) are valid class-A algebraic closures on their explicitly stated domains. For the scoped nonselection language, N1-N4 substantively provide distinct routes, independent supplied conditions, explicit assumptions, and residual checks. N6-N8 identify partial closures, resolve the steelman, and bound the cited historical echoes. N5 cannot be certified under the required structured contract because the runner supplies no five-resolution execution lines, so clean ratification remains conditional on runner-artifact repair."
 }

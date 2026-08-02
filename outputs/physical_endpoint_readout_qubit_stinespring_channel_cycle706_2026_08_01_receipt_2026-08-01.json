@@ -1,5 +1,11 @@
 {
-  "total_pass": 68,
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "scope": "conditional finite-dimensional model calculation",
+  "total_pass": 73,
   "total_fail": 0,
-  "wall_seconds": 5.2
+  "conditional_on_clip_not_counted": 12,
+  "timer_scope": "Cycle696 import plus all calculations and gates; excludes receipt write",
+  "wall_seconds": 4.382
 }

@@ -1,0 +1,305 @@
+{
+  "amp": "2.0e-01",
+  "amp_ladder": [
+    "5.0e-02",
+    "1.0e-01",
+    "2.0e-01"
+  ],
+  "box_sizes": [
+    3,
+    7
+  ],
+  "fail": 0,
+  "gates": {
+    "G1.L3.i0": {
+      "detail": "cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11",
+      "pass": true
+    },
+    "G1.L3.i1": {
+      "detail": "cs +1 e 2.8e-15 p 4.2e-15 K 5.9e-15",
+      "pass": true
+    },
+    "G1.L3.i2": {
+      "detail": "cs +1 e 4.6e-15 p 4.8e-15 K 4.8e-15",
+      "pass": true
+    },
+    "G1.L3.i3": {
+      "detail": "cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11",
+      "pass": true
+    },
+    "G1.L3.i4": {
+      "detail": "cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11",
+      "pass": true
+    },
+    "G1.L3.i5": {
+      "detail": "cs +1 e 2.8e-15 p 2.6e-15 K 2.8e-15",
+      "pass": true
+    },
+    "G1.L3.id": {
+      "detail": "identity total defect 0.0e+00",
+      "pass": true
+    },
+    "G1.L3.p01": {
+      "detail": "cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11",
+      "pass": true
+    },
+    "G1.L3.p04": {
+      "detail": "cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11",
+      "pass": true
+    },
+    "G1.L3.p09": {
+      "detail": "cs -1 e 1.5e-11 p 1.3e-11 K 1.0e-11",
+      "pass": true
+    },
+    "G1.L3.p15": {
+      "detail": "cs +1 e 4.6e-15 p 4.8e-15 K 4.9e-15",
+      "pass": true
+    },
+    "G1.L3.p18": {
+      "detail": "cs +1 e 4.4e-15 p 5.1e-15 K 6.1e-15",
+      "pass": true
+    },
+    "G1.L3.p23": {
+      "detail": "cs +1 e 0.0e+00 p 0.0e+00 K 0.0e+00",
+      "pass": true
+    },
+    "G1.L7.id": {
+      "detail": "identity total defect 0.0e+00",
+      "pass": true
+    },
+    "G1.L7.minus": {
+      "detail": "branch max over 6 frames 3.1e-10",
+      "pass": true
+    },
+    "G1.L7.plus": {
+      "detail": "branch max over 6 frames 4.6e-13",
+      "pass": true
+    },
+    "G10.L3.broken": {
+      "detail": "broken min over both compare signs 1.9e-01",
+      "pass": true
+    },
+    "G10.L3.classes": {
+      "detail": "pp/mm/broken 6/6/12",
+      "pass": true
+    },
+    "G10.L3.collapse": {
+      "detail": "coset 12/12 link-equal 12/12",
+      "pass": true
+    },
+    "G10.L3.mm": {
+      "detail": "mm multiset max 9.7e-11",
+      "pass": true
+    },
+    "G10.L3.mz": {
+      "detail": "m_z = diag(1,1,-1) fixes x5y7",
+      "pass": true
+    },
+    "G10.L3.pp": {
+      "detail": "pp multiset max 9.5e-15",
+      "pass": true
+    },
+    "G10.L7.broken": {
+      "detail": "broken min over both compare signs 1.0e-01",
+      "pass": true
+    },
+    "G10.L7.classes": {
+      "detail": "pp/mm/broken 6/6/12",
+      "pass": true
+    },
+    "G10.L7.collapse": {
+      "detail": "coset 12/12 link-equal 12/12",
+      "pass": true
+    },
+    "G10.L7.mm": {
+      "detail": "mm multiset max 5.5e-10",
+      "pass": true
+    },
+    "G10.L7.mz": {
+      "detail": "m_z = diag(1,1,-1) fixes x5y7",
+      "pass": true
+    },
+    "G10.L7.pp": {
+      "detail": "pp multiset max 9.7e-13",
+      "pass": true
+    },
+    "G2.L3": {
+      "detail": "minus/plus floor 2.5e+03",
+      "pass": true
+    },
+    "G2.L7": {
+      "detail": "minus/plus floor 6.7e+02",
+      "pass": true
+    },
+    "G3.L3": {
+      "detail": "mixed min d_e 2.4e-01 over 18 frames",
+      "pass": true
+    },
+    "G3.L7": {
+      "detail": "mixed min d_e 6.3e-01 over 18 frames",
+      "pass": true
+    },
+    "G4.L3.cs": {
+      "detail": "parity not None -> law 6/6",
+      "pass": true
+    },
+    "G4.L3.imp": {
+      "detail": "improper det -1 parity match 6/6",
+      "pass": true
+    },
+    "G4.L3.mix": {
+      "detail": "parity None -> no law 18/18",
+      "pass": true
+    },
+    "G4.L3.rej": {
+      "detail": "wrong-sign d_K 6.7e-01",
+      "pass": true
+    },
+    "G4.L7.cs": {
+      "detail": "parity not None -> law 6/6",
+      "pass": true
+    },
+    "G4.L7.imp": {
+      "detail": "improper det -1 parity match 6/6",
+      "pass": true
+    },
+    "G4.L7.mix": {
+      "detail": "parity None -> no law 18/18",
+      "pass": true
+    },
+    "G4.L7.rej": {
+      "detail": "wrong-sign d_K 9.9e-01",
+      "pass": true
+    },
+    "G5.c4": {
+      "detail": "quartet = powers of the x-axis rotation",
+      "pass": true
+    },
+    "G5.stab": {
+      "detail": "proper stabilizer of x5 (20, 21, 22, 23)",
+      "pass": true
+    },
+    "G5.sx": {
+      "detail": "sx coset-invariant 96/96",
+      "pass": true
+    },
+    "G5.transversal": {
+      "detail": "exactly one constant-sign coset member 24/24",
+      "pass": true
+    },
+    "G6.L3.collapse": {
+      "detail": "link-dict equality g.dom == (g t).dom 24/24",
+      "pass": true
+    },
+    "G6.L3.determinism": {
+      "detail": "chain determinism on collapsed pairs 6/6",
+      "pass": true
+    },
+    "G6.L3.images": {
+      "detail": "distinct domain images 6",
+      "pass": true
+    },
+    "G6.L7.collapse": {
+      "detail": "link-dict equality g.dom == (g t).dom 24/24",
+      "pass": true
+    },
+    "G6.L7.images": {
+      "detail": "distinct domain images 6",
+      "pass": true
+    },
+    "G7.L3.counts": {
+      "detail": "chi split 12/12",
+      "pass": true
+    },
+    "G7.L3.minus": {
+      "detail": "chi=-1 multiset max 1.0e-11",
+      "pass": true
+    },
+    "G7.L3.plus": {
+      "detail": "chi=+1 multiset max 4.8e-15",
+      "pass": true
+    },
+    "G7.L3.rej": {
+      "detail": "plus-compare on a minus frame 2.1e-01",
+      "pass": true
+    },
+    "G7.L7.counts": {
+      "detail": "chi split 12/12",
+      "pass": true
+    },
+    "G7.L7.minus": {
+      "detail": "chi=-1 multiset max 3.1e-10",
+      "pass": true
+    },
+    "G7.L7.plus": {
+      "detail": "chi=+1 multiset max 3.8e-13",
+      "pass": true
+    },
+    "G8.L3.b.minus": {
+      "detail": "d_b 2.1e-14",
+      "pass": true
+    },
+    "G8.L3.b.plus": {
+      "detail": "d_b 2.9e-15",
+      "pass": true
+    },
+    "G8.L3.eps.minus": {
+      "detail": "d_eps 6.9e-11 over 100 d_b 2.1e-12",
+      "pass": true
+    },
+    "G8.L3.eps.plus": {
+      "detail": "d_eps 9.8e-15",
+      "pass": true
+    },
+    "G8.L3.len": {
+      "detail": "d_len 1.4e-11 vs AMP d_eps 1.4e-11",
+      "pass": true
+    },
+    "G8.L3.rho.minus": {
+      "detail": "d_rho 0.0e+00",
+      "pass": true
+    },
+    "G8.L3.rho.plus": {
+      "detail": "d_rho 0.0e+00",
+      "pass": true
+    },
+    "G8.L7.b.minus": {
+      "detail": "d_b 1.0e-14",
+      "pass": true
+    },
+    "G8.L7.b.plus": {
+      "detail": "d_b 1.8e-15",
+      "pass": true
+    },
+    "G8.L7.eps.minus": {
+      "detail": "d_eps 1.5e-09 over 100 d_b 1.0e-12",
+      "pass": true
+    },
+    "G8.L7.eps.plus": {
+      "detail": "d_eps 1.5e-12",
+      "pass": true
+    },
+    "G8.L7.rho.minus": {
+      "detail": "d_rho 0.0e+00",
+      "pass": true
+    },
+    "G8.L7.rho.plus": {
+      "detail": "d_rho 0.0e+00",
+      "pass": true
+    },
+    "G9.L3.r1": {
+      "detail": "d 2.5e-12 4.9e-12 ratio 2.0e+00",
+      "pass": true
+    },
+    "G9.L3.r2": {
+      "detail": "d 1.0e-11 ratio 2.0e+00",
+      "pass": true
+    }
+  },
+  "notes": {
+    "G7.L7.plus_compare": "4.1e-02",
+    "G8.L7.d_len_minus": "2.7e-10"
+  },
+  "pass": 71,
+  "runner": "physical_source_stabilizer_coset_collapse_k_sign_law_cycle707_2026_08_01.py"
+}

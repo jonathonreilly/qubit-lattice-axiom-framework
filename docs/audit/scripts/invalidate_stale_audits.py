@@ -84,6 +84,7 @@ import runner_cache as rc  # noqa: E402
 import no_go_discipline_gate  # noqa: E402
 
 import compute_audit_queue
+import audit_science_fingerprint
 import ledger_io
 
 
@@ -296,6 +297,51 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
         note_path, note_body, row.get("claim_type")
     )
 
+    snap = row.get("audit_state_snapshot")
+    science_baseline = (
+        snap.get("science_fingerprint")
+        if isinstance(snap, dict)
+        else None
+    )
+    if science_baseline is not None:
+        # Run the scientific comparison before packet-policy checks.  This
+        # preserves the important distinction between a certificate migration
+        # and a changed scientific basis: only an exact science match is ever
+        # eligible for packet-only work.
+        current_science = audit_science_fingerprint.build_science_fingerprint(
+            row,
+            rows,
+            REPO_ROOT,
+        )
+        science_reason = audit_science_fingerprint.science_fingerprint_change(
+            science_baseline,
+            current_science,
+        )
+        if science_reason is not None:
+            return science_reason
+    elif isinstance(snap, dict):
+        legacy_epoch_reason = (
+            audit_science_fingerprint.legacy_science_epoch_change(
+                REPO_ROOT
+            )
+        )
+        if legacy_epoch_reason is not None:
+            return legacy_epoch_reason
+    judgment_baseline = (
+        snap.get("judgment_fingerprint")
+        if isinstance(snap, dict)
+        else None
+    )
+    if judgment_baseline is not None:
+        judgment_reason = (
+            audit_science_fingerprint.judgment_fingerprint_change(
+                judgment_baseline,
+                row,
+            )
+        )
+        if judgment_reason is not None:
+            return judgment_reason
+
     packet = row.get("no_go_discipline")
     _forensic = bool(
         source_required
@@ -440,7 +486,6 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
         if packet is not None and not isinstance(packet, dict):
             return "no_go_discipline_packet_invalid"
 
-    snap = row.get("audit_state_snapshot")
     if snap is not None:
         is_v1 = snap.get("schema") == compute_audit_queue.BLOCKER_FINGERPRINT_V1
         if is_v1:
@@ -561,16 +606,16 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
     # text changes. Compare the dep's note_hash at audit time against the
     # current one and re-look the direct citer when the axiom actually
     # changed. (Older snapshots predate this map; in that case skip.)
-    snap_axiom_hash = snap.get("dep_axiom_premise_note_hash") or {}
-    if snap_axiom_hash:
-        premise_ids = axiom_premise_ids()
-        for d in current_deps:
-            if d not in premise_ids:
-                continue
-            before = snap_axiom_hash.get(d)
-            after = rows.get(d, {}).get("note_hash")
-            if before is not None and after is not None and before != after:
-                return f"axiom_premise_changed:{d}:{before[:8]}->{after[:8]}"
+    legacy_premise_reason = (
+        audit_science_fingerprint.legacy_premise_snapshot_change(
+            snap,
+            row,
+            rows,
+            REPO_ROOT,
+        )
+    )
+    if legacy_premise_reason is not None:
+        return legacy_premise_reason
 
     snap_crit = snap.get("criticality") or "leaf"
     cur_crit = row.get("criticality") or "leaf"

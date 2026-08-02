@@ -59,6 +59,7 @@ import premise_nodes
 import ledger_io
 import no_go_discipline_gate
 import audit_contract
+import audit_science_fingerprint
 import runner_pin_gate
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -2039,6 +2040,75 @@ def main() -> int:
         # (e.g. via invalidate_stale_audits.py or note-hash drift), the
         # snapshot is just historical noise and shouldn't generate a warning.
         snap = row.get("audit_state_snapshot")
+        if snap is not None and a not in {None, "unaudited"}:
+            science_baseline = snap.get("science_fingerprint")
+            if science_baseline is not None:
+                science_problems = (
+                    audit_science_fingerprint.science_fingerprint_problems(
+                        science_baseline
+                    )
+                )
+                if science_problems:
+                    errors.append(
+                        f"{cid}: malformed science_fingerprint_v2: "
+                        f"{science_problems}"
+                    )
+                else:
+                    try:
+                        current_science = (
+                            audit_science_fingerprint.build_science_fingerprint(
+                                {**row, "claim_id": cid},
+                                rows,
+                                REPO_ROOT,
+                            )
+                        )
+                    except audit_science_fingerprint.ScienceFingerprintError as exc:
+                        errors.append(
+                            f"{cid}: cannot recompute science_fingerprint_v2: {exc}"
+                        )
+                    else:
+                        science_change = (
+                            audit_science_fingerprint.science_fingerprint_change(
+                                science_baseline,
+                                current_science,
+                            )
+                        )
+                        if science_change is not None:
+                            errors.append(
+                                f"{cid}: stale science_fingerprint_v2: "
+                                f"{science_change}; run invalidation before "
+                                "treating this audit as live"
+                            )
+            else:
+                try:
+                    legacy_epoch_change = (
+                        audit_science_fingerprint.legacy_science_epoch_change(
+                            REPO_ROOT
+                        )
+                    )
+                except audit_science_fingerprint.ScienceFingerprintError as exc:
+                    errors.append(
+                        f"{cid}: cannot validate legacy science-epoch "
+                        f"baseline: {exc}"
+                    )
+                else:
+                    if legacy_epoch_change is not None:
+                        errors.append(
+                            f"{cid}: {legacy_epoch_change}; run invalidation "
+                            "before treating this legacy audit as live"
+                        )
+            judgment_baseline = snap.get("judgment_fingerprint")
+            if judgment_baseline is not None:
+                judgment_change = (
+                    audit_science_fingerprint.judgment_fingerprint_change(
+                        judgment_baseline,
+                        {**row, "claim_id": cid},
+                    )
+                )
+                if judgment_change is not None:
+                    errors.append(
+                        f"{cid}: stale frozen audit judgment: {judgment_change}"
+                    )
         if snap is not None and a not in {None, "unaudited", "audit_in_progress"}:
             crit_now = row.get("criticality") or "leaf"
             crit_at_audit = snap.get("criticality") or "leaf"

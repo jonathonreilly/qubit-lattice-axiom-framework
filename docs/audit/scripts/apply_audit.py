@@ -41,6 +41,7 @@ from pathlib import Path
 import no_go_discipline_gate
 import audit_invocation
 import audit_contract
+import audit_science_fingerprint
 
 import ledger_io
 
@@ -804,6 +805,21 @@ def snapshot_audit_state(row: dict, rows: dict[str, dict]) -> dict:
         "transitive_descendants": row.get("transitive_descendants"),
         "runner_hash": runner_hash_value,
         "helper_runner_hashes": helper_runner_hashes,
+        # Scientific provenance and packet-policy provenance are deliberately
+        # separate.  Exact science drift forces a new scientific audit; a
+        # policy-only drift may be handled by a governed packet upgrade that
+        # cannot alter the prior judgment.
+        "science_fingerprint": audit_science_fingerprint.build_science_fingerprint(
+            row,
+            rows,
+            REPO_ROOT,
+        ),
+        "packet_policy_fingerprint": (
+            audit_science_fingerprint.packet_policy_fingerprint(REPO_ROOT)
+        ),
+        "judgment_fingerprint": (
+            audit_science_fingerprint.judgment_fingerprint(row)
+        ),
     }
     # v1 blocker-fingerprint stamp for NEW conditional/failed verdict writes
     # only (dispatch-retarget design note, 2026-07-16, section 3b). Callers
@@ -1581,6 +1597,12 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
 
     def accept_row() -> None:
         """Commit the detached row and consume this invocation exactly once."""
+        if row.get("audit_status") not in {None, "unaudited"}:
+            # Several governed paths return before the ordinary field-apply
+            # tail (first critical seat, disagreements, explicit second
+            # seats).  They still contain a scientific judgment and therefore
+            # need the same fail-closed provenance baseline.
+            row["audit_state_snapshot"] = snapshot_audit_state(row, rows)
         consume_audit_invocation(row, invocation_id)
         rows[cid] = row
         ledger["rows"] = rows

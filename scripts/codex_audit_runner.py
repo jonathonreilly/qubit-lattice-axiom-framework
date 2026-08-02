@@ -66,6 +66,7 @@ import audit_invocation
 import audit_contract
 import compute_audit_dispatch_queue
 import compute_reaudit_candidates
+import forensic_evidence_readiness
 
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
@@ -828,7 +829,12 @@ def load_queue(criticality_filter: str | None = None,
     if criticality_filter:
         rows = [r for r in rows if (r.get("criticality") or "") == criticality_filter]
     if ready_only:
-        rows = [r for r in rows if r.get("ready")]
+        rows = [
+            r for r in rows
+            if r.get("ready")
+            and r.get("audit_work_kind", "fresh_scientific_audit")
+            == "fresh_scientific_audit"
+        ]
     # rows are already pre-sorted by descending score in audit_queue.json
     return rows
 
@@ -1149,6 +1155,8 @@ AUDIT_PACKET_CONTROL_PATHS = (
     "docs/audit/scripts/apply_audit.py",
     "docs/audit/scripts/audit_contract.py",
     "docs/audit/scripts/audit_invocation.py",
+    "docs/audit/scripts/audit_science_fingerprint.py",
+    "docs/audit/scripts/forensic_evidence_readiness.py",
     "docs/audit/scripts/no_go_discipline_gate.py",
     "docs/audit/scripts/premise_nodes.py",
     "docs/audit/scripts/run_pipeline.sh",
@@ -2102,43 +2110,8 @@ def forensic_evidence_readiness_issue(
     Detect only that necessary condition here; all scientific judgments and
     every remaining N1-N8 gate stay with the restricted auditor and validator.
     """
-    required_statements = no_go_discipline_gate.required_phrase_groups(
-        evidence_manifest,
-        {"source"},
-        no_go_discipline_gate.N5_SCAN_PHRASES,
-    )
-    if not required_statements:
-        return None
-
-    runner_text = "\n".join(
-        str(entry.get("text") or "")
-        for entry in evidence_manifest.values()
-        if "runner_stdout" in set(entry.get("roles") or [])
-    )
-    missing: list[str] = []
-    for resolution_class in sorted(
-        no_go_discipline_gate.N5_RESOLUTION_CLASSES
-    ):
-        marker = f"{resolution_class}:"
-        found = False
-        for line in runner_text.splitlines():
-            normalized = re.sub(r"\s+", " ", line.strip().casefold())
-            marker_index = normalized.find(marker)
-            if (
-                marker_index >= 0
-                and len(normalized[marker_index:]) >= 40
-            ):
-                found = True
-                break
-        if not found:
-            missing.append(resolution_class)
-    if not missing:
-        return None
-    return (
-        "forensic N5 execution certificate is incomplete: current-cycle "
-        "runner_stdout lacks substantive canonical resolution lines for "
-        f"{','.join(missing)}; add a deterministic runner certificate with "
-        "per_element, per_site, per_mode, per_block, and lattice_wide lines"
+    return forensic_evidence_readiness.live_manifest_readiness_issue(
+        evidence_manifest
     )
 
 

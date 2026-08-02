@@ -840,7 +840,12 @@ now-unblocked downstream conditionals.
 Default fall-through selection is the highest-priority ready scoped claim:
 
 1. Read `docs/audit/data/audit_queue.json`.
-2. Pick the first row with `ready = true`, `audit_status` in `{unaudited, audit_in_progress}`, and `claim_type` in `{positive_theorem, bounded_theorem, no_go, open_gate}`.
+2. Pick the first row with `ready = true`, `audit_work_kind =
+   fresh_scientific_audit`, `audit_status` in `{unaudited,
+   audit_in_progress}`, and `claim_type` in `{positive_theorem,
+   bounded_theorem, no_go, open_gate}`. `ready` is the conjunction of
+   `dependency_ready` and `forensic_evidence_ready`; it is no longer a
+   dependency-only flag.
 3. If the user explicitly says strict queue order, take the top queue row even if `claim_type` is unset.
 4. Exclude any claim id recorded in the current session's blocked/skip set by the Blocked-Row Loop Guard.
 5. If only `meta` or `decoration` rows remain, process them only when the user explicitly asks for those classes.
@@ -856,7 +861,14 @@ bash docs/audit/scripts/run_pipeline.sh
 python3 docs/audit/scripts/audit_lint.py --strict
 ```
 
-Then re-attempt selection (steps 1-5). If the refreshed queue is still empty by the same filters, the audit lane is genuinely caught up — report the empty queue, the refresh attempt, and stop the loop. Do not refresh repeatedly in one session and do not invoke `gh workflow run audit.yml` from inside the audit loop (the CI workflow runs its own pipeline and could race the local one).
+Then re-attempt selection (steps 1-5). If the refreshed fresh-science selector
+is empty, inspect and report `by_work_kind`. The audit lane is genuinely
+caught up only when there is also no `legacy_packet_upgrade`,
+`provenance_reconstruction_required`, or `evidence_repair_required` work.
+Those are mechanical preparation/certification lanes, never permission to
+spend a fresh scientific seat. Do not refresh repeatedly in one session and
+do not invoke `gh workflow run audit.yml` from inside the audit loop (the CI
+workflow runs its own pipeline and could race the local one).
 
 The empty-queue refresh exists because runner caches and audit verdicts land continuously; the queue snapshot can lag behind by several commits when the session started. A single local refresh covers the common case where a recent PR (e.g. a compute-limited backlog repair) made dozens of rows newly auditable but the local queue hasn't yet caught up.
 
@@ -867,7 +879,9 @@ python3 - <<'PY'
 import json
 q=json.load(open("docs/audit/data/audit_queue.json"))["queue"]
 for e in q:
-    if e.get("ready") and e.get("claim_type") in {"positive_theorem","bounded_theorem","no_go","open_gate"}:
+    if (e.get("ready")
+            and e.get("audit_work_kind") == "fresh_scientific_audit"
+            and e.get("claim_type") in {"positive_theorem","bounded_theorem","no_go","open_gate"}):
         print(e["claim_id"], e["note_path"], e.get("runner_path") or "-")
         break
 PY

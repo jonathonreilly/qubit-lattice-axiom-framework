@@ -330,10 +330,14 @@ def no_go_output_schema() -> dict:
         "N7_steelman": _closed_schema({
             "route_id": _string_schema(),
             "argument": _string_schema(
-                min_length=no_go_discipline_gate.N7_STEELMAN_MIN_NORMALIZED_CHARS,
+                min_length=(
+                    no_go_discipline_gate.N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS
+                ),
             ),
             "resolution": _string_schema(
-                min_length=no_go_discipline_gate.N7_STEELMAN_MIN_NORMALIZED_CHARS,
+                min_length=(
+                    no_go_discipline_gate.N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS
+                ),
             ),
             "resolved": {"type": "boolean"},
             **evidence_fields,
@@ -2018,6 +2022,12 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         "{{CLAIM_TYPE_HINT}}": claim_type_hint or "(none)",
         "{{RUNNER_PATH}}": runner_path or "(none)",
         "{{NO_GO_DISCIPLINE_REQUIRED}}": "true" if no_go_required else "false",
+        "{{N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS}}": str(
+            no_go_discipline_gate.N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS
+        ),
+        "{{N7_STEELMAN_MIN_NORMALIZED_CHARS}}": str(
+            no_go_discipline_gate.N7_STEELMAN_MIN_NORMALIZED_CHARS
+        ),
         "{{PRIOR_CLAIM_SCOPE}}": prior_claim_scope,
         "{{NO_GO_EVIDENCE_MANIFEST}}": evidence_manifest_text,
         "{{NOTE_BODY}}": note_body,
@@ -3070,7 +3080,7 @@ def fresh_schema_retry_code(validation_error: str) -> str:
         "N7.resolution is not evidenced at resolution_evidence_path",
         "N7.argument must name the steelmanned route mechanism",
         "N7.argument must name the steelmanned route attempt",
-        "N7.argument and N7.resolution must each contain at least 80 normalized characters",
+        no_go_discipline_gate.n7_steelman_normalized_length_error(),
     }:
         return "N7_EXECUTION_EVIDENCE_VERBATIM_MISMATCH"
     if validation_error.startswith("transport-bounded N8"):
@@ -3264,6 +3274,11 @@ def render_fresh_schema_retry_prompt(
             "Static N7 invariant: copy argument byte-for-byte as one complete "
             "contiguous live-execution line from the selected N1 route surface; "
             "that line must contain the route mechanism and attempt verbatim. "
+            f"Both copied lines must contain at least "
+            f"{no_go_discipline_gate.N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS} raw "
+            "Unicode code points for the transport prefilter and at least "
+            f"{no_go_discipline_gate.N7_STEELMAN_MIN_NORMALIZED_CHARS} "
+            "characters after whitespace-collapsed, case-folded normalization. "
             "Copy resolution byte-for-byte as one complete contiguous line from "
             "the cited independent execution or retained/accepted authority, "
             "and choose a line that names an evidenced N2 wall. Do not paraphrase "

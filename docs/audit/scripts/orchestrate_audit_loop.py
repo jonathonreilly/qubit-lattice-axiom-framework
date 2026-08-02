@@ -46,6 +46,7 @@ QUEUE = DATA / "audit_queue.json"
 
 sys.path.insert(0, str(SCRIPTS))
 import orchestrate_audit_batch as batch  # noqa: E402
+import no_go_discipline_gate  # noqa: E402
 
 
 PROGRESS = {
@@ -149,10 +150,7 @@ def forensic_schema_failure_signature(detail: str) -> str | None:
     """Normalize known control-plane schema defects without verdict content."""
     if "evidence_locator must contain at least 12 normalized characters" in detail:
         return "EVIDENCE_LOCATOR_MIN_LENGTH"
-    if (
-        "N7.argument and N7.resolution must each contain at least 80 "
-        "normalized characters"
-    ) in detail:
+    if no_go_discipline_gate.n7_steelman_normalized_length_error() in detail:
         return "N7_MIN_LENGTH"
     if (
         detail.startswith("N1 route ")

@@ -20,6 +20,11 @@ from typing import Any
 
 
 RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
+# JSON Schema ``minLength`` counts raw Unicode code points and cannot express
+# this module's whitespace-collapsed, case-folded normalization.  Keep the raw
+# transport prefilter distinct from the authoritative normalized-length gate so
+# neither contract is mistaken for the other.
+N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS = 80
 N7_STEELMAN_MIN_NORMALIZED_CHARS = 80
 
 # Publication-strength rank, mirroring compute_effective_status.RANK. This
@@ -3150,6 +3155,24 @@ def _norm(value: str) -> str:
     return re.sub(r"\s+", " ", value.strip().casefold())
 
 
+def n7_steelman_normalized_length_error() -> str:
+    """Return the canonical N7 normalized-length rejection text."""
+    return (
+        "N7.argument and N7.resolution must each contain at least "
+        f"{N7_STEELMAN_MIN_NORMALIZED_CHARS} normalized characters"
+    )
+
+
+def n7_steelman_length_error(argument: str, resolution: str) -> str | None:
+    """Apply the authoritative normalized N7 evidence-line length gate."""
+    if (
+        len(_norm(argument)) < N7_STEELMAN_MIN_NORMALIZED_CHARS
+        or len(_norm(resolution)) < N7_STEELMAN_MIN_NORMALIZED_CHARS
+    ):
+        return n7_steelman_normalized_length_error()
+    return None
+
+
 def _semantic_norm(value: str) -> str:
     normalized = re.sub(
         r"\b(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|first|second|third|fourth|fifth)\b|\d+",
@@ -4234,14 +4257,11 @@ def _validate_n7(packet: dict, status: str, manifest: dict[str, dict] | None) ->
         return "N7.route_id, N7.argument, and N7.resolution must be non-empty"
     if not isinstance(section.get("resolved"), bool):
         return "N7.resolved must be boolean"
-    if (
-        len(_norm(section["argument"])) < N7_STEELMAN_MIN_NORMALIZED_CHARS
-        or len(_norm(section["resolution"])) < N7_STEELMAN_MIN_NORMALIZED_CHARS
-    ):
-        return (
-            "N7.argument and N7.resolution must each contain at least "
-            f"{N7_STEELMAN_MIN_NORMALIZED_CHARS} normalized characters"
-        )
+    error = n7_steelman_length_error(
+        section["argument"], section["resolution"]
+    )
+    if error:
+        return error
     error = _locator_error(section.get("evidence_path"), section.get("evidence_locator"), manifest, "N7")
     if error:
         return error

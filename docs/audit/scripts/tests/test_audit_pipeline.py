@@ -10076,13 +10076,16 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
-            "must contain at least 80 normalized characters and the route's "
+            "must contain at least {{N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS}} "
+            "raw Unicode code points for the transport prefilter and at least "
+            "{{N7_STEELMAN_MIN_NORMALIZED_CHARS}} characters after "
+            "whitespace-collapsed, case-folded normalization, plus the route's "
             "complete `mechanism` and `attempt` verbatim",
             template_flat,
         )
         self.assertIn(
-            "select a line of at least 80 normalized characters that names an "
-            "evidenced N2 wall",
+            "select a line meeting the same raw and normalized minimums that "
+            "names an evidenced N2 wall",
             template_flat,
         )
         self.assertIn(
@@ -12045,10 +12048,87 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
             m.audit_verdict_output_schema()["properties"]["no_go_discipline"]
             ["anyOf"][0]["properties"]["N7_steelman"]["properties"]
         )
-        expected = gate.N7_STEELMAN_MIN_NORMALIZED_CHARS
+        expected = gate.N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS
 
         self.assertEqual(n7["argument"]["minLength"], expected)
         self.assertEqual(n7["resolution"]["minLength"], expected)
+
+    def test_n7_transport_minimum_is_an_explicit_raw_prefilter(self):
+        m = _import_codex_audit_runner()
+        gate = m.no_go_discipline_gate
+        n7 = (
+            m.audit_verdict_output_schema()["properties"]["no_go_discipline"]
+            ["anyOf"][0]["properties"]["N7_steelman"]["properties"]
+        )
+        raw_long_normalized_short = "x " * 40
+        raw_short_casefold_expands = "ß" * 40
+
+        self.assertEqual(len(raw_long_normalized_short), 80)
+        self.assertEqual(len(gate._norm(raw_long_normalized_short)), 79)
+        self.assertEqual(
+            gate.n7_steelman_length_error(
+                raw_long_normalized_short, raw_long_normalized_short
+            ),
+            gate.n7_steelman_normalized_length_error(),
+        )
+        self.assertGreaterEqual(
+            len(raw_long_normalized_short), n7["argument"]["minLength"]
+        )
+
+        self.assertEqual(len(raw_short_casefold_expands), 40)
+        self.assertEqual(len(gate._norm(raw_short_casefold_expands)), 80)
+        self.assertIsNone(
+            gate.n7_steelman_length_error(
+                raw_short_casefold_expands, raw_short_casefold_expands
+            )
+        )
+        self.assertLess(
+            len(raw_short_casefold_expands), n7["argument"]["minLength"]
+        )
+
+    def test_n7_constants_drive_schema_prompt_error_and_fresh_retry(self):
+        m = _import_codex_audit_runner()
+        gate = m.no_go_discipline_gate
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            note = root / "docs" / "TARGET.md"
+            note.parent.mkdir(parents=True, exist_ok=True)
+            note.write_text("Exact source.\n", encoding="utf-8")
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/TARGET.md",
+                "deps": [],
+            }
+            with mock.patch.object(m, "REPO_ROOT", root), mock.patch.object(
+                gate, "N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS", 82
+            ), mock.patch.object(
+                gate, "N7_STEELMAN_MIN_NORMALIZED_CHARS", 81
+            ):
+                schema = (
+                    m.audit_verdict_output_schema()["properties"]
+                    ["no_go_discipline"]["anyOf"][0]["properties"]
+                    ["N7_steelman"]["properties"]
+                )
+                prompt = m.render_prompt(
+                    row,
+                    {"target": row},
+                    "raw={{N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS}} "
+                    "normalized={{N7_STEELMAN_MIN_NORMALIZED_CHARS}}",
+                    1,
+                    skip_runner_stdout=True,
+                )
+                error = gate.n7_steelman_length_error("x" * 80, "x" * 80)
+                self.assertIsNotNone(error)
+                code = m.fresh_schema_retry_code(error or "")
+                retry = m.render_fresh_schema_retry_prompt(prompt, code, 1)
+
+        self.assertEqual(schema["argument"]["minLength"], 82)
+        self.assertEqual(schema["resolution"]["minLength"], 82)
+        self.assertIn("raw=82 normalized=81", prompt)
+        self.assertIn("at least 81 normalized characters", error or "")
+        self.assertEqual(code, "N7_EXECUTION_EVIDENCE_VERBATIM_MISMATCH")
+        self.assertIn("82 raw Unicode code points", retry)
+        self.assertIn("81 characters after whitespace-collapsed", retry)
 
     def test_best_cached_model_uses_highest_full_gpt_version_not_cache_order(self):
         m = _import_codex_audit_runner()
@@ -13479,7 +13559,7 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             "N7.resolution is not evidenced at resolution_evidence_path",
             "N7.argument must name the steelmanned route mechanism",
             "N7.argument must name the steelmanned route attempt",
-            "N7.argument and N7.resolution must each contain at least 80 normalized characters",
+            m.no_go_discipline_gate.n7_steelman_normalized_length_error(),
         ):
             n7_code = m.fresh_schema_retry_code(n7_error)
             self.assertEqual(
@@ -13490,6 +13570,8 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             )
             self.assertIn("one complete contiguous live-execution line", n7_prompt)
             self.assertIn("route mechanism and attempt verbatim", n7_prompt)
+            self.assertIn("raw Unicode code points", n7_prompt)
+            self.assertIn("whitespace-collapsed, case-folded", n7_prompt)
             self.assertIn("names an evidenced N2 wall", n7_prompt)
             self.assertNotIn(n7_error, n7_prompt)
         locator_error = (

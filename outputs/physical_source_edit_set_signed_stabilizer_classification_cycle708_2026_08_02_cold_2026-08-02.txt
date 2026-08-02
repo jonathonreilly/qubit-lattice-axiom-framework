@@ -1,0 +1,54 @@
+c708 signed-stabilizer classification of the registered K sign law over edit sets
+note PHYSICAL_SOURCE_EDIT_SET_SIGNED_STABILIZER_CLASSIFICATION_CYCLE708_NOTE_2026-08-02.md
+battery d1 one-edit d2 two-edit d3 three-edit d4 symmetric-pair; sizes 3 and 7
+A1 G48 order 48 distinct 48 proper 24 equals module FRAMES set PASS
+A2 CS order 12 closed under all 144 products PASS
+A3 SANITY CS_proper order 6 FRAMES indices [1, 4, 9, 15, 18, 23] PASS
+A4 sx multiplicative on all 144 CS pairs PASS
+B1 L=3 Stab48 orders d1 8 d2 2 d3 1 d4 16 PASS
+B2 L=3 CS^Stab orders 2 1 1 4 minus-sign member no no no yes PASS
+B3 L=3 CS.Stab set orders 48 24 12 48 equal formula 48 24 12 48 PASS
+C0 L=3 principal coframe unclipped on all 57 chains pd_min 4.8e-01 PASS
+C1 L=3 state collapse over lawful pairs 24 12 6 48 PASS
+C2 L=3 rho bit-equality over the same lawful pairs PASS
+C3 L=3 pointwise law reps 6 12 6 6 worst plus 3.8e-15 minus 2.7e-11 PASS
+C4 L=3 d1 measured 12/12/0/0 predicted 12/12/0/0 agreement 24/24 PASS
+C4 L=3 d2 measured 6/6/0/12 predicted 6/6/0/12 agreement 24/24 PASS
+C4 L=3 d3 measured 3/3/0/18 predicted 3/3/0/18 agreement 24/24 PASS
+C4 L=3 d4 measured 0/0/24/0 predicted 0/0/24/0 agreement 24/24 PASS
+C5 L=3 d1 floors plus 2.3e-15 minus 2.5e-12 both none broken none sep none PASS
+C5 L=3 d2 floors plus 3.0e-15 minus 2.4e-11 both none broken 5.7e-02 sep 2.3e+09 PASS
+C5 L=3 d3 floors plus 3.3e-15 minus 2.7e-11 both none broken 8.5e-02 sep 3.1e+09 PASS
+C5 L=3 d4 floors plus none minus none both 6.4e-12 broken none sep none PASS
+D1 L=3 proper-only classifier lawful 6 vs measured 12 on d2 mismatch 6 PASS
+D2 L=3 det-as-sign model misclassifies 12 of 24 on d1 PASS
+D3 L=3 d1 wrong-sign distance plus-frame 5.0e-02 minus-frame 5.0e-02 sep 2.0e+10 PASS
+D3 L=3 d3 wrong-sign distance plus-frame 4.2e-02 minus-frame 4.2e-02 sep 1.5e+09 PASS
+E1 L=3 -I in Stab48(d4) True PASS
+E2E3E4 L=3 d4 palindrome 6.3e-12 centre 6.5e-12 antisymmetry 1.3e-11 PASS
+F1 L=3 smallest off-class distance over worst lawful floor 1.5e+09 across 4 rows PASS
+B1 L=7 Stab48 orders d1 8 d2 2 d3 1 d4 16 PASS
+B2 L=7 CS^Stab orders 2 1 1 4 minus-sign member no no no yes PASS
+B3 L=7 CS.Stab set orders 48 24 12 48 equal formula 48 24 12 48 PASS
+C0 L=7 principal coframe unclipped on all 57 chains pd_min 4.2e-01 PASS
+C1 L=7 state collapse over lawful pairs 24 12 6 48 PASS
+C2 L=7 rho bit-equality over the same lawful pairs PASS
+C3 L=7 pointwise law reps 6 12 6 6 worst plus 2.1e-13 minus 1.6e-10 PASS
+C4 L=7 d1 measured 12/12/0/0 predicted 12/12/0/0 agreement 24/24 PASS
+C4 L=7 d2 measured 6/6/0/12 predicted 6/6/0/12 agreement 24/24 PASS
+C4 L=7 d3 measured 3/3/0/18 predicted 3/3/0/18 agreement 24/24 PASS
+C4 L=7 d4 measured 0/0/24/0 predicted 0/0/24/0 agreement 24/24 PASS
+C5 L=7 d1 floors plus 8.9e-14 minus 8.2e-11 both none broken none sep none PASS
+C5 L=7 d2 floors plus 2.1e-13 minus 1.5e-10 both none broken 4.1e-02 sep 2.6e+08 PASS
+C5 L=7 d3 floors plus 1.4e-13 minus 1.6e-10 both none broken 1.2e-01 sep 7.7e+08 PASS
+C5 L=7 d4 floors plus none minus none both 1.2e-10 broken none sep none PASS
+D1 L=7 proper-only classifier lawful 6 vs measured 12 on d2 mismatch 6 PASS
+D2 L=7 det-as-sign model misclassifies 12 of 24 on d1 PASS
+D3 L=7 d1 wrong-sign distance plus-frame 1.2e-02 minus-frame 1.2e-02 sep 1.5e+08 PASS
+D3 L=7 d3 wrong-sign distance plus-frame 3.2e-02 minus-frame 3.2e-02 sep 2.0e+08 PASS
+E1 L=7 -I in Stab48(d4) True PASS
+E2E3E4 L=7 d4 palindrome 1.2e-10 centre 3.4e-11 antisymmetry 1.2e-10 PASS
+F1 L=7 smallest off-class distance over worst lawful floor 1.5e+08 across 4 rows PASS
+B4 Stab48 member index lists equal at L=3 and L=7 for d1 d2 d3 d4 PASS
+D4 sgn-set single-valued on every lawful frame d1 24 d2 12 d3 6 PASS
+TOTAL: PASS=95 FAIL=0

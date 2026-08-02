@@ -633,7 +633,6 @@ def judgment_fingerprint(row: dict) -> dict[str, Any]:
         "auditor_model",
         "auditor_reasoning_effort",
         "audit_invocation_id",
-        "audit_invocation_history",
         "independence",
         "claim_type",
         "claim_scope",

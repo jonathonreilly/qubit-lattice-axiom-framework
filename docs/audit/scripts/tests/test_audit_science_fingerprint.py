@@ -346,6 +346,33 @@ class ScienceFingerprintFixture(unittest.TestCase):
                 "legacy_framework_premise_epoch_changed",
             )
 
+    def test_in_progress_sweep_skips_only_empty_placeholders(self) -> None:
+        empty = {
+            "audit_status": "audit_in_progress",
+            "audit_state_snapshot": None,
+            "cross_confirmation": None,
+            "auditor": None,
+        }
+        self.assertFalse(
+            invalidate_stale_audits.audit_in_progress_has_live_judgment(empty)
+        )
+        self.assertTrue(
+            invalidate_stale_audits.audit_in_progress_has_live_judgment(
+                {**empty, "auditor": "recorded-first-seat"}
+            )
+        )
+        self.assertTrue(
+            invalidate_stale_audits.audit_in_progress_has_live_judgment(
+                {
+                    **empty,
+                    "cross_confirmation": {
+                        "status": "awaiting_second",
+                        "first_audit": {"verdict": "audited_clean"},
+                    },
+                }
+            )
+        )
+
     def test_future_policy_change_invalidates_legacy_snapshots(self) -> None:
         target = dict(self.rows["target"])
         target["audit_state_snapshot"] = {
@@ -460,6 +487,19 @@ class ScienceFingerprintFixture(unittest.TestCase):
             science.judgment_fingerprint_change(baseline, changed_seat),
             "audit_judgment_changed_without_new_fingerprint",
         )
+        extended_replay_history = {
+            **packet_only,
+            "audit_invocation_history": [
+                "11111111-1111-4111-8111-111111111111",
+                "22222222-2222-4222-8222-222222222222",
+            ],
+        }
+        self.assertIsNone(
+            science.judgment_fingerprint_change(
+                baseline,
+                extended_replay_history,
+            )
+        )
 
     def test_live_invalidator_catches_legacy_premise_reclassification(self) -> None:
         target = dict(self.rows["target"])
@@ -540,6 +580,56 @@ class ScienceFingerprintFixture(unittest.TestCase):
         rows = {**self.rows, "target": reset}
         with mock.patch.object(restore, "REPO_ROOT", self.root):
             self.assertIsNone(restore.restore_audit_from_previous(reset, rows))
+
+    def test_restore_preserves_frozen_seat_when_replay_history_grows(self) -> None:
+        invocation_id = "11111111-1111-4111-8111-111111111111"
+        audited = {
+            **self.rows["target"],
+            "audit_status": "audited_numerical_match",
+            "audit_date": "2026-08-01",
+            "auditor": "independent-seat",
+            "audit_invocation_id": invocation_id,
+            "audit_invocation_history": [invocation_id],
+            "verdict_rationale": "original frozen rationale",
+        }
+        snapshot = {
+            "science_fingerprint": science.build_science_fingerprint(
+                audited, self.rows, self.root
+            ),
+            "judgment_fingerprint": science.judgment_fingerprint(audited),
+        }
+        archived = {
+            **audited,
+            "audit_state_snapshot": snapshot,
+            "invalidation_reason": "criticality_increased:leaf->medium",
+        }
+        reset = {
+            **self.rows["target"],
+            "audit_status": "unaudited",
+            "audit_invocation_id": None,
+            "audit_invocation_history": [
+                "22222222-2222-4222-8222-222222222222"
+            ],
+            "previous_audits": [archived],
+        }
+        rows = {**self.rows, "target": reset}
+        with mock.patch.object(restore, "REPO_ROOT", self.root):
+            restored = restore.restore_audit_from_previous(reset, rows)
+        self.assertIsNotNone(restored)
+        assert restored is not None
+        self.assertIsNone(
+            science.judgment_fingerprint_change(
+                snapshot["judgment_fingerprint"],
+                restored,
+            )
+        )
+        self.assertEqual(
+            restored["audit_invocation_history"],
+            [
+                invocation_id,
+                "22222222-2222-4222-8222-222222222222",
+            ],
+        )
 
     def test_queue_routes_only_exact_science_to_packet_upgrade(self) -> None:
         baseline = science.build_science_fingerprint(

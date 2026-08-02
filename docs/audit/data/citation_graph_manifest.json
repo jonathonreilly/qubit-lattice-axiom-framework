@@ -1,6 +1,6 @@
 {
- "edge_count": 15503,
- "node_count": 5454,
+ "edge_count": 15504,
+ "node_count": 5455,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13669,6 +13669,10 @@
   "physical_cycle704_fswap_endpoint_cube_bridge_cycle708_bounded_theorem_note_2026-07-26": {
    "deps_hash": "45ce5a497291",
    "out_degree": 3
+  },
+  "physical_defect_weight_law_and_complete_census_cycle713_note_2026-08-02": {
+   "deps_hash": "4da3dcedb546",
+   "out_degree": 1
   },
   "physical_direction_set_vs_triangulation_covariance_cycle695_note_2026-07-25": {
    "deps_hash": "b5d4aaddc594",

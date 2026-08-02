@@ -1603,6 +1603,25 @@ class SchemaRecoveryTest(unittest.TestCase):
                 '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
                 "invalid campaign exclusion failure fields",
             ),
+            "partial typed failure": (
+                '{"claim_id":"row","reason":"schema_invalid_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"validation_failed","detail":"bad schema",'
+                '"error_code":"AUDIT_SCHEMA_REJECT"}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "invalid campaign exclusion failure fields",
+            ),
+            "invalid typed failure class": (
+                '{"claim_id":"row","reason":"schema_invalid_quarantined",'
+                '"failures":[{"cid":"row","pass":1,'
+                '"result":"validation_failed","detail":"bad schema",'
+                '"error_code":"AUDIT_SCHEMA_REJECT",'
+                '"failure_class":"verdict_failed",'
+                '"scientific_seat_count":1,'
+                '"packet_completion_attempt_count":3}],'
+                '"recorded_at":"2026-07-23T12:00:00+00:00"}\n',
+                "invalid failure_class",
+            ),
             "wrong reason evidence": (
                 '{"claim_id":"row","reason":"compute_required_quarantined",'
                 '"failures":[{"cid":"row","pass":1,'
@@ -5265,6 +5284,22 @@ class CampaignContractTest(unittest.TestCase):
             ("EVIDENCE_LOCATOR_MIN_LENGTH", 3),
         )
 
+        typed_records = [
+            {
+                "claim_id": claim_id,
+                "reason": batch.SCHEMA_QUARANTINE_RESULT,
+                "failures": [{
+                    "detail": "redacted validator detail",
+                    "error_code": "N6_INDEXED_BASIS_VERBATIM_MISMATCH",
+                }],
+            }
+            for claim_id in ("claim_d", "claim_e", "claim_f")
+        ]
+        self.assertEqual(
+            audit_loop.forensic_mechanics_circuit(typed_records),
+            ("N6_INDEXED_BASIS_VERBATIM_MISMATCH", 3),
+        )
+
     def test_open_forensic_mechanics_circuit_spends_no_new_seat(self):
         with tempfile.TemporaryDirectory() as tmp:
             campaign = Path(tmp)
@@ -5372,6 +5407,23 @@ class CampaignContractTest(unittest.TestCase):
                 "preserved_run_log",
                 records[0]["failures"][0]["detail"],
             )
+            self.assertEqual(
+                records[0]["failures"][0]["error_code"],
+                "N5_AUTHENTICATED_GROUP_COVERAGE_MISMATCH",
+            )
+            self.assertEqual(
+                records[0]["failures"][0]["failure_class"],
+                "packet_completion_exhausted",
+            )
+            self.assertEqual(
+                records[0]["failures"][0]["scientific_seat_count"], 1
+            )
+            self.assertEqual(
+                records[0]["failures"][0][
+                    "packet_completion_attempt_count"
+                ],
+                0,
+            )
             self.assertTrue(
                 audit_loop.PROGRESS["canary_state"].startswith("quarantined:")
             )
@@ -5416,6 +5468,18 @@ class CampaignContractTest(unittest.TestCase):
 
         self.assertEqual(rc, 0)
         self.assertIn("--from-reaudit-candidates", seen_command)
+        self.assertEqual(
+            seen_command[
+                seen_command.index("--packet-completion-attempts") + 1
+            ],
+            "3",
+        )
+        self.assertEqual(
+            seen_command[
+                seen_command.index("--fresh-schema-retry-attempts") + 1
+            ],
+            "0",
+        )
 
     def test_forensic_compute_skip_is_quarantined_and_returns_success(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -5496,7 +5560,7 @@ class CampaignContractTest(unittest.TestCase):
             self.assertEqual(rc, 1)
             self.assertFalse(args.campaign_quarantine_file.exists())
 
-    def test_forensic_fresh_schema_execution_failure_is_not_quarantined(self):
+    def test_forensic_packet_completion_execution_failure_is_not_quarantined(self):
         with tempfile.TemporaryDirectory() as tmp:
             campaign = Path(tmp)
             args = _args()
@@ -5514,7 +5578,7 @@ class CampaignContractTest(unittest.TestCase):
                             "claim_id": claim_id,
                             "phase": "validate_failed",
                             "error": (
-                                "fresh schema retry codex exec failed: "
+                                "validation repair codex exec failed: "
                                 "transport died"
                             ),
                             "blob": {},
@@ -5535,7 +5599,7 @@ class CampaignContractTest(unittest.TestCase):
             self.assertEqual(rc, 1)
             self.assertFalse(args.campaign_quarantine_file.exists())
 
-    def test_forensic_schema_retry_503_uses_only_execution_diagnostic(self):
+    def test_forensic_packet_completion_503_uses_only_execution_diagnostic(self):
         with tempfile.TemporaryDirectory() as tmp:
             campaign = Path(tmp)
             args = _args()
@@ -5553,7 +5617,7 @@ class CampaignContractTest(unittest.TestCase):
                             "claim_id": claim_id,
                             "phase": "validate_failed",
                             "error": (
-                                "fresh schema retry codex exec failed: "
+                                "validation repair codex exec failed: "
                                 "HTTP 503 Service Unavailable"
                             ),
                             "blob": {
@@ -5597,7 +5661,7 @@ class CampaignContractTest(unittest.TestCase):
                             "claim_id": claim_id,
                             "phase": "validate_failed",
                             "error": (
-                                "fresh schema retry codex exec failed: opaque "
+                                "validation repair codex exec failed: opaque "
                                 "worker exit"
                             ),
                             "blob": {

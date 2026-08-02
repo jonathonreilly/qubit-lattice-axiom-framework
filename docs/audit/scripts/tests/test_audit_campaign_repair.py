@@ -45,7 +45,13 @@ class CampaignRepairTest(unittest.TestCase):
             },
         }
         exclusions = [
-            {"claim_id": "schema", "reason": repair.SCHEMA_QUARANTINE},
+            {
+                "claim_id": "schema",
+                "reason": repair.SCHEMA_QUARANTINE,
+                "failures": [{
+                    "failure_class": "scientific_reaudit_required",
+                }],
+            },
             {"claim_id": "compute", "reason": repair.COMPUTE_QUARANTINE},
             {
                 "claim_id": "blocked",
@@ -61,7 +67,9 @@ class CampaignRepairTest(unittest.TestCase):
         plan = repair.build_plan(exclusions, rows)
         by_claim = {item["claim_id"]: item for item in plan}
 
-        self.assertEqual(by_claim["schema"]["route"], "fresh_schema_valid_seat")
+        self.assertEqual(
+            by_claim["schema"]["route"], "fresh_scientific_seat_required"
+        )
         self.assertTrue(by_claim["schema"]["ready_for_new_campaign"])
         self.assertEqual(by_claim["compute"]["route"], "supply_compute_artifact")
         self.assertEqual(
@@ -77,6 +85,23 @@ class CampaignRepairTest(unittest.TestCase):
             by_claim["transaction"]["route"], "repair_claim_transaction"
         )
         self.assertTrue(all("audit_status" in item["current"] for item in plan))
+
+    def test_exhausted_packet_completion_does_not_request_full_reaudit(self):
+        item = repair.repair_route(
+            {
+                "claim_id": "row",
+                "reason": repair.SCHEMA_QUARANTINE,
+                "failures": [{
+                    "failure_class": "packet_completion_exhausted",
+                    "error_code": "N6_INDEXED_BASIS_VERBATIM_MISMATCH",
+                }],
+            },
+            {"audit_status": "unaudited", "effective_status": "unaudited"},
+        )
+
+        self.assertEqual(item["route"], "repair_packet_completion_contract")
+        self.assertFalse(item["ready_for_new_campaign"])
+        self.assertIn("do not spend another full seat", item["action"])
 
     def test_resolved_blocked_reentry_is_safe_to_reconsider(self):
         item = repair.repair_route(

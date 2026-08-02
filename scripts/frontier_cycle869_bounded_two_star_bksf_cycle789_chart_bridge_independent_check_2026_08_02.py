@@ -45,7 +45,7 @@ TARGET_SPEC = (
 TARGET_SHA256 = "2220b3f4a35fa1ad80a9069c0c2436bd7418fc5c9896b0bc62974340fa0b05e9"
 PACKAGE_BASE_COMMIT = "1900b64260f39f075c59f2e353079c44e8ede031"
 EXPECTED_PRIMARY_RUNNER_SHA256 = (
-    "b3f9a8f1251f8156f24ba09126aa6d44599ccc93f95e73921417640d90d1071f"
+    "61425733dddbfda2ff056639d47bc77a9608b9994382282689bbcc79104c0a2a"
 )
 EXPECTED_LOADED_HELPER_COUNT = 45
 EXPECTED_LOADED_HELPER_CLOSURE_SHA256 = (
@@ -212,7 +212,7 @@ def replay_returned_route(word, routed) -> dict[str, int]:
     labels = {site: site for site in touched}
     expected_index = 0
     swap_gates = nn_failures = operand_failures = 0
-    kind_failures = matrix_failures = 0
+    kind_failures = matrix_failures = swap_matrix_failures = 0
     for gate in routed:
         if len(gate.sites) == 2:
             left, right = gate.sites
@@ -223,6 +223,9 @@ def replay_returned_route(word, routed) -> dict[str, int]:
             left, right = gate.sites
             labels[left], labels[right] = labels[right], labels[left]
             swap_gates += 1
+            swap_matrix_failures += int(np.linalg.norm(
+                gate.matrix - P.c707.c655.SWAP
+            ) > 1.0e-12)
             continue
         expected = word[expected_index]
         expected_index += 1
@@ -240,6 +243,7 @@ def replay_returned_route(word, routed) -> dict[str, int]:
         "replayed_operand_failures": operand_failures,
         "replayed_kind_failures": kind_failures,
         "replayed_matrix_failures": matrix_failures,
+        "replayed_swap_matrix_failures": swap_matrix_failures,
         "replayed_label_return_failures": sum(
             site != label for site, label in labels.items()
         ),
@@ -520,6 +524,7 @@ def main() -> None:
             and literal["replayed_operand_failures"] == 0
             and literal["replayed_kind_failures"] == 0
             and literal["replayed_matrix_failures"] == 0
+            and literal["replayed_swap_matrix_failures"] == 0
             and literal["replayed_label_return_failures"] == 0
         ),
         "overlap_rank_and_shared_addresses_reconstructed": (

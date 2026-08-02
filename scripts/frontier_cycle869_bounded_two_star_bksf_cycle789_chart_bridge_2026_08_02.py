@@ -398,7 +398,7 @@ def phase_aligned(observed, expected) -> tuple[float, complex]:
 
 def symbolic_route_return(routed) -> dict[str, int]:
     touched = tuple(sorted({site for gate in routed for site in gate.sites}))
-    labels = {site: (37 * index + 11) % 101 for index, site in enumerate(touched)}
+    labels = {site: site for site in touched}
     initial = dict(labels)
     swap_gates = 0
     for gate in routed:

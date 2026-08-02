@@ -286,10 +286,10 @@ state/tableau comparison.
 Cold hashes for this package are:
 
 ```text
-b3f9a8f1251f8156f24ba09126aa6d44599ccc93f95e73921417640d90d1071f  primary runner
-f151e0241943b8edba311e8ca2b95556bc5530e186e77441fd4af2ba67d84ac4  independent verifier
+61425733dddbfda2ff056639d47bc77a9608b9994382282689bbcc79104c0a2a  primary runner
+c571e7f2b004a9a4be6d46db621b70b864b95ca2d1cba060a2a456d5328e3c85  independent verifier
 15c65f747ca6440e90faf03d1f3ee1c857b9e7130d851aa613d516250541e51e  primary report
-77dbd0ccf84389bfd2d9fdf818b5a91a95d684693a2033322f034da6c35d0794  independent report
+d073cccaf4729f68d107e2da33e2fdbdd89c14be778920cc4ad0d9c8f4d87fd3  independent report
 ```
 
 Authority remains `none`; audit remains `unset`.  Only a separate audit lane

@@ -1,0 +1,55 @@
+c716 complete classification of frame-blind averaging sets
+-- group layer --
+PASS g1_sextet_identity S [1, 4, 9, 15, 18, 23] order 6 closed
+PASS g1_sextet_right_coset_count index 4 = 24 over 6
+PASS g1_subgroup_lattice complete lattice by closure 30
+PASS g1_covering_subgroups orders [4, 4, 4, 4, 8, 8, 8, 12, 24]
+PASS g1_complements 4 complements meeting S in the identity alone
+PASS g1_noncovering_order4_rejector 3 order-4 subgroups meet S twice, cover 12 of 24
+PASS g1_minimal_blind_collections 24 right cosets of the complements, each of size 4
+PASS g1_left_family_equals_right_family left and right coset families coincide as sets
+PASS g1_covering_contains_complement every covering subgroup contains a complement
+PASS g1_family_size_and_histogram 231 members, by size [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]
+PASS g1_sizes_are_multiples_of_four no member of size 1, 2, 3 or any size off the quarter ladder
+PASS g1_family_generated_by_minimal every member is a union of minimal blind collections
+PASS g1_family_not_union_closed 168 disjoint minimal pairs, 108 unions outside the family
+PASS g1_minimal_cover_overlaps the 24 minimal collections overlap partially, they do not partition
+-- left-stabilizer criterion on the complete powerset --
+PASS g2_stabilizers_are_subgroups every left stabilizer over the complete powerset lies in the 30-member lattice, 30 distinct values
+PASS g2_criterion_recovers_family S L(A) = whole group holds for exactly 231 of 16777215 collections
+PASS g2_stabilizer_order_divides_size order of L(A) divides size of A on all 231, minimum order 4
+-- L=3 --
+PASS g3_L3_dof_and_scale n 98 scale 2.9e+01
+PASS g3_L3_sextet_recovered S [1, 4, 9, 15, 18, 23] at tol 1.0e-09
+PASS g3_L3_four_representative_reduction worst deviation 6.2e-12 over all 2324 collections of size at most 3
+PASS g4_L3_sufficiency_all_sources 231 members x 5 sources, worst spread 7.0e-12 smallest norm 2.0e+00
+PASS g5_L3_generic-7160_complete_converse 16777215 collections, 231 blind, family match True
+PASS g5_L3_generic-7160_separation worst blind 5.8e-12 best non-blind 6.8e-06 ratio 1.2e+06 smallest norm 1.1e+01
+PASS g5_L3_generic-7160_size_ladder zero blind collections at every size off the quarter ladder, nonzero counts [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]
+PASS g5_L3_generic-7161_complete_converse 16777215 collections, 231 blind, family match True
+PASS g5_L3_generic-7161_separation worst blind 7.0e-12 best non-blind 4.7e-05 ratio 6.6e+06 smallest norm 9.7e+00
+PASS g5_L3_generic-7161_size_ladder zero blind collections at every size off the quarter ladder, nonzero counts [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]
+PASS g6_L3_sextet_not_blind the sextet itself spreads 2.0e-02
+PASS g6_L3_non_subgroup_subset_not_blind subset [1, 4, 9, 23] of the sextet spreads 3.3e-02
+PASS g6_L3_non_covering_cosets_not_blind 72 cosets of the 3 non-covering order-4 subgroups, least spread 5.4e-03
+-- L=4 --
+PASS g3_L4_dof_and_scale n 279 scale 2.9e+01
+PASS g3_L4_sextet_recovered S [1, 4, 9, 15, 18, 23] at tol 1.0e-09
+PASS g3_L4_four_representative_reduction worst deviation 3.0e-10 over all 2324 collections of size at most 3
+PASS g4_L4_sufficiency_all_sources 231 members x 5 sources, worst spread 1.6e-10 smallest norm 2.0e+00
+PASS g5_L4_generic-7160_complete_converse 16777215 collections, 231 blind, family match True
+PASS g5_L4_generic-7160_separation worst blind 1.6e-10 best non-blind 6.6e-05 ratio 4.2e+05 smallest norm 1.6e+01
+PASS g5_L4_generic-7160_size_ladder zero blind collections at every size off the quarter ladder, nonzero counts [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]
+PASS g5_L4_generic-7161_complete_converse 16777215 collections, 231 blind, family match True
+PASS g5_L4_generic-7161_separation worst blind 1.1e-10 best non-blind 3.4e-04 ratio 3.1e+06 smallest norm 1.6e+01
+PASS g5_L4_generic-7161_size_ladder zero blind collections at every size off the quarter ladder, nonzero counts [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]
+PASS g6_L4_sextet_not_blind the sextet itself spreads 1.4e+00
+PASS g6_L4_non_subgroup_subset_not_blind subset [1, 4, 9, 23] of the sextet spreads 1.1e+00
+PASS g6_L4_non_covering_cosets_not_blind 72 cosets of the 3 non-covering order-4 subgroups, least spread 2.3e-01
+-- boundary (structured sources) --
+PASS g7_L3_unit-slot0_blinds_strictly_more 153 blind of 1271625 at size at most 8, family has 75, nonzero at sizes [4, 8], below the generic floor []
+PASS g7_L3_unit-slot7_blinds_strictly_more 723 blind of 1271625 at size at most 8, family has 75, nonzero at sizes [2, 4, 6, 8], below the generic floor [(2, 24)]
+PASS g7_L3_all_ones_orbit_is_one_point orbit diameter 0.0e+00 blind on all 1271625 collections
+PASS g7_L3_boundary_ordering structured blind counts 723 and 153 against family 75
+PASS g7_L3_sub_minimal_blindness_is_structured_only a structured source admits 24 blind collections below the generic minimum size of four, so that floor is generic, not universal
+TOTAL: PASS=48 FAIL=0

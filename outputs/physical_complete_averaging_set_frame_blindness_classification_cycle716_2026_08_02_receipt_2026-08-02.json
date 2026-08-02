@@ -1,0 +1,261 @@
+{
+  "blind_family_size": 231,
+  "box_sizes": [
+    3,
+    4
+  ],
+  "collections_scanned": 16777215,
+  "covering_orders": [
+    4,
+    4,
+    4,
+    4,
+    8,
+    8,
+    8,
+    12,
+    24
+  ],
+  "fail": 0,
+  "gates": {
+    "g1_complements": {
+      "detail": "4 complements meeting S in the identity alone",
+      "pass": true
+    },
+    "g1_covering_contains_complement": {
+      "detail": "every covering subgroup contains a complement",
+      "pass": true
+    },
+    "g1_covering_subgroups": {
+      "detail": "orders [4, 4, 4, 4, 8, 8, 8, 12, 24]",
+      "pass": true
+    },
+    "g1_family_generated_by_minimal": {
+      "detail": "every member is a union of minimal blind collections",
+      "pass": true
+    },
+    "g1_family_not_union_closed": {
+      "detail": "168 disjoint minimal pairs, 108 unions outside the family",
+      "pass": true
+    },
+    "g1_family_size_and_histogram": {
+      "detail": "231 members, by size [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]",
+      "pass": true
+    },
+    "g1_left_family_equals_right_family": {
+      "detail": "left and right coset families coincide as sets",
+      "pass": true
+    },
+    "g1_minimal_blind_collections": {
+      "detail": "24 right cosets of the complements, each of size 4",
+      "pass": true
+    },
+    "g1_minimal_cover_overlaps": {
+      "detail": "the 24 minimal collections overlap partially, they do not partition",
+      "pass": true
+    },
+    "g1_noncovering_order4_rejector": {
+      "detail": "3 order-4 subgroups meet S twice, cover 12 of 24",
+      "pass": true
+    },
+    "g1_sextet_identity": {
+      "detail": "S [1, 4, 9, 15, 18, 23] order 6 closed",
+      "pass": true
+    },
+    "g1_sextet_right_coset_count": {
+      "detail": "index 4 = 24 over 6",
+      "pass": true
+    },
+    "g1_sizes_are_multiples_of_four": {
+      "detail": "no member of size 1, 2, 3 or any size off the quarter ladder",
+      "pass": true
+    },
+    "g1_subgroup_lattice": {
+      "detail": "complete lattice by closure 30",
+      "pass": true
+    },
+    "g2_criterion_recovers_family": {
+      "detail": "S L(A) = whole group holds for exactly 231 of 16777215 collections",
+      "pass": true
+    },
+    "g2_stabilizer_order_divides_size": {
+      "detail": "order of L(A) divides size of A on all 231, minimum order 4",
+      "pass": true
+    },
+    "g2_stabilizers_are_subgroups": {
+      "detail": "every left stabilizer over the complete powerset lies in the 30-member lattice, 30 distinct values",
+      "pass": true
+    },
+    "g3_L3_dof_and_scale": {
+      "detail": "n 98 scale 2.9e+01",
+      "pass": true
+    },
+    "g3_L3_four_representative_reduction": {
+      "detail": "worst deviation 6.2e-12 over all 2324 collections of size at most 3",
+      "pass": true
+    },
+    "g3_L3_sextet_recovered": {
+      "detail": "S [1, 4, 9, 15, 18, 23] at tol 1.0e-09",
+      "pass": true
+    },
+    "g3_L4_dof_and_scale": {
+      "detail": "n 279 scale 2.9e+01",
+      "pass": true
+    },
+    "g3_L4_four_representative_reduction": {
+      "detail": "worst deviation 3.0e-10 over all 2324 collections of size at most 3",
+      "pass": true
+    },
+    "g3_L4_sextet_recovered": {
+      "detail": "S [1, 4, 9, 15, 18, 23] at tol 1.0e-09",
+      "pass": true
+    },
+    "g4_L3_sufficiency_all_sources": {
+      "detail": "231 members x 5 sources, worst spread 7.0e-12 smallest norm 2.0e+00",
+      "pass": true
+    },
+    "g4_L4_sufficiency_all_sources": {
+      "detail": "231 members x 5 sources, worst spread 1.6e-10 smallest norm 2.0e+00",
+      "pass": true
+    },
+    "g5_L3_generic-7160_complete_converse": {
+      "detail": "16777215 collections, 231 blind, family match True",
+      "pass": true
+    },
+    "g5_L3_generic-7160_separation": {
+      "detail": "worst blind 5.8e-12 best non-blind 6.8e-06 ratio 1.2e+06 smallest norm 1.1e+01",
+      "pass": true
+    },
+    "g5_L3_generic-7160_size_ladder": {
+      "detail": "zero blind collections at every size off the quarter ladder, nonzero counts [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]",
+      "pass": true
+    },
+    "g5_L3_generic-7161_complete_converse": {
+      "detail": "16777215 collections, 231 blind, family match True",
+      "pass": true
+    },
+    "g5_L3_generic-7161_separation": {
+      "detail": "worst blind 7.0e-12 best non-blind 4.7e-05 ratio 6.6e+06 smallest norm 9.7e+00",
+      "pass": true
+    },
+    "g5_L3_generic-7161_size_ladder": {
+      "detail": "zero blind collections at every size off the quarter ladder, nonzero counts [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]",
+      "pass": true
+    },
+    "g5_L4_generic-7160_complete_converse": {
+      "detail": "16777215 collections, 231 blind, family match True",
+      "pass": true
+    },
+    "g5_L4_generic-7160_separation": {
+      "detail": "worst blind 1.6e-10 best non-blind 6.6e-05 ratio 4.2e+05 smallest norm 1.6e+01",
+      "pass": true
+    },
+    "g5_L4_generic-7160_size_ladder": {
+      "detail": "zero blind collections at every size off the quarter ladder, nonzero counts [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]",
+      "pass": true
+    },
+    "g5_L4_generic-7161_complete_converse": {
+      "detail": "16777215 collections, 231 blind, family match True",
+      "pass": true
+    },
+    "g5_L4_generic-7161_separation": {
+      "detail": "worst blind 1.1e-10 best non-blind 3.4e-04 ratio 3.1e+06 smallest norm 1.6e+01",
+      "pass": true
+    },
+    "g5_L4_generic-7161_size_ladder": {
+      "detail": "zero blind collections at every size off the quarter ladder, nonzero counts [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]",
+      "pass": true
+    },
+    "g6_L3_non_covering_cosets_not_blind": {
+      "detail": "72 cosets of the 3 non-covering order-4 subgroups, least spread 5.4e-03",
+      "pass": true
+    },
+    "g6_L3_non_subgroup_subset_not_blind": {
+      "detail": "subset [1, 4, 9, 23] of the sextet spreads 3.3e-02",
+      "pass": true
+    },
+    "g6_L3_sextet_not_blind": {
+      "detail": "the sextet itself spreads 2.0e-02",
+      "pass": true
+    },
+    "g6_L4_non_covering_cosets_not_blind": {
+      "detail": "72 cosets of the 3 non-covering order-4 subgroups, least spread 2.3e-01",
+      "pass": true
+    },
+    "g6_L4_non_subgroup_subset_not_blind": {
+      "detail": "subset [1, 4, 9, 23] of the sextet spreads 1.1e+00",
+      "pass": true
+    },
+    "g6_L4_sextet_not_blind": {
+      "detail": "the sextet itself spreads 1.4e+00",
+      "pass": true
+    },
+    "g7_L3_all_ones_orbit_is_one_point": {
+      "detail": "orbit diameter 0.0e+00 blind on all 1271625 collections",
+      "pass": true
+    },
+    "g7_L3_boundary_ordering": {
+      "detail": "structured blind counts 723 and 153 against family 75",
+      "pass": true
+    },
+    "g7_L3_sub_minimal_blindness_is_structured_only": {
+      "detail": "a structured source admits 24 blind collections below the generic minimum size of four, so that floor is generic, not universal",
+      "pass": true
+    },
+    "g7_L3_unit-slot0_blinds_strictly_more": {
+      "detail": "153 blind of 1271625 at size at most 8, family has 75, nonzero at sizes [4, 8], below the generic floor []",
+      "pass": true
+    },
+    "g7_L3_unit-slot7_blinds_strictly_more": {
+      "detail": "723 blind of 1271625 at size at most 8, family has 75, nonzero at sizes [2, 4, 6, 8], below the generic floor [(2, 24)]",
+      "pass": true
+    }
+  },
+  "minimal_blind_collections": 24,
+  "notes": {
+    "boundary_L3_all-ones": {
+      "best_non_blind": "inf",
+      "blind": 1271625,
+      "min_norm": "9.9e+00",
+      "worst_blind": "5.6e-17"
+    },
+    "boundary_L3_unit-slot0": {
+      "best_non_blind": "1.4e-06",
+      "blind": 153,
+      "min_norm": "1.0e+00",
+      "worst_blind": "3.6e-13"
+    },
+    "boundary_L3_unit-slot7": {
+      "best_non_blind": "7.3e-06",
+      "blind": 723,
+      "min_norm": "1.0e+00",
+      "worst_blind": "5.0e-13"
+    },
+    "example_union_outside_family": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        7,
+        16,
+        19
+      ]
+    ]
+  },
+  "pass": 48,
+  "runner": "physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02.py",
+  "sextet": [
+    1,
+    4,
+    9,
+    15,
+    18,
+    23
+  ],
+  "subgroup_lattice": 30,
+  "tolerance": "1.0e-08"
+}

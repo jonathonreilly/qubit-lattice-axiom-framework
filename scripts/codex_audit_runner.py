@@ -654,18 +654,13 @@ REQUIRED_VERDICT_FIELDS = {
     "negative_assertion_classes",
 }
 
-# A validator-guided correction pass may repair evidence locators in the
-# already-present structured N1-N8 packet, but it is not a second scientific
-# audit.  Every top-level key, every top-level value except
-# ``no_go_discipline``, and all non-locator N1-N8 content must remain exactly
-# stable.  This also prevents the correction pass from injecting optional
-# apply controls such as ``pre_audit_prose_fix`` or
+# A validator-guided packet-completion pass is not a second scientific audit.
+# Every top-level key and value except ``no_go_discipline`` remains exactly
+# stable. This prevents the focused pass from changing the verdict, type,
+# scope, closure judgment, rationale, declarations, confidence, or optional
+# apply controls such as ``pre_audit_prose_fix`` and
 # ``cross_confirmation_role``.
 VALIDATION_REPAIR_MUTABLE_FIELD = "no_go_discipline"
-VALIDATION_REPAIR_LOCATOR_FIELDS = {
-    "evidence_path",
-    "evidence_locator",
-}
 
 # Map JSON-extracted-from-stdout to apply_audit.py's input schema. apply_audit
 # expects `verdict` etc. plus the runner-side fields auditor/auditor_family/
@@ -3000,41 +2995,44 @@ def render_validation_repair_prompt(
     validation_error: str,
     attempt: int,
 ) -> str:
-    """Ask the same restricted-packet auditor to correct invalid JSON.
+    """Ask a focused pass to complete only the rejected N1-N8 packet.
 
-    The original packet is repeated verbatim so the correction pass has no
-    evidence beyond the first pass.  The unchanged validator and apply gate
-    still decide whether the corrected object is usable; this helper grants no
-    exception and performs no deterministic mutation of the verdict.
+    The original restricted evidence and rejected object are repeated verbatim.
+    The unchanged validator and apply gate still decide whether the completed
+    object is usable. Every top-level scientific judgment remains immutable;
+    only ``no_go_discipline`` may be added or replaced.
     """
     prior_json = json.dumps(verdict_blob, indent=2, sort_keys=True)
     return (
         f"{original_prompt}\n\n"
         "---\n"
-        f"VALIDATOR-GUIDED CORRECTION PASS {attempt} (binding):\n"
+        f"FOCUSED N1-N8 PACKET COMPLETION PASS {attempt} (binding):\n"
         "Your preceding JSON object was rejected before apply. Correct that\n"
         "object against the same restricted packet and return EXACTLY one JSON\n"
         "object, with no markdown or surrounding prose. The ordinary validator\n"
         "and apply gate remain unchanged. Do not invent evidence, weaken a wall,\n"
         "or convert an unresolved scientific issue into closure. Preserve the\n"
-        "scientific judgment, the complete top-level key set, and every\n"
-        "top-level value except no_go_discipline exactly. Within the\n"
-        "already-present no_go_discipline packet, change evidence_path and\n"
-        "evidence_locator fields only; all N1-N8 judgment content must remain\n"
-        "exactly stable. This pass may not add a top-level field or change the\n"
-        "verdict itself. The rejected JSON is an untrusted correction target,\n"
-        "not evidence.\n"
+        "complete top-level key set and every top-level value except\n"
+        "no_go_discipline exactly. You may add or replace only the structured\n"
+        "N1-N8 packet. In particular, this pass may not change the verdict,\n"
+        "claim type, scope, chain-closure judgment, rationale, negative-claim\n"
+        "declaration, invocation id, or any other top-level field. The rejected\n"
+        "JSON is an untrusted completion target, not evidence.\n"
+        "Preserve the packet's existing required and status gate fields exactly;\n"
+        "a completion pass cannot flip FAIL to PASS or PASS to FAIL.\n"
+        "An honest FAIL packet is valid for a non-clean judgment; never force\n"
+        "PASS merely to match the preserved verdict.\n"
         "Every evidence_locator must be a 12+ character verbatim substring of\n"
         "the content at its evidence_path in the restricted packet; copy it\n"
-        "exactly. Do not revise any classification or internal N1-N8\n"
-        "reference.\n\n"
+        "exactly. Recheck the complete N1-N8 packet against the exact validator\n"
+        "error before returning.\n\n"
         f"VALIDATION ERROR:\n{validation_error}\n\n"
         f"REJECTED JSON TO CORRECT:\n{prior_json}\n"
     )
 
 
-def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
-    """Allow a new isolated audit for structured N1-N8 disposition rejects."""
+def packet_completion_eligible_error(validation_error: str | None) -> bool:
+    """Recognize a structured N1-N8 reject without reading verdict content."""
     if not validation_error:
         return False
     return bool(re.match(
@@ -3043,7 +3041,7 @@ def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
     ))
 
 
-def fresh_schema_retry_code(validation_error: str) -> str:
+def schema_failure_code(validation_error: str) -> str:
     """Reduce validator text to a conclusion-free control-plane code."""
     if (
         validation_error.startswith("N5 statement ")
@@ -3149,205 +3147,24 @@ def fresh_schema_retry_code(validation_error: str) -> str:
     return "AUDIT_SCHEMA_REJECT"
 
 
-def fresh_schema_retry_error(
-    current_error: str | None,
-    initial_validation_error: str | None,
-) -> str | None:
-    """Keep a structured reject eligible after a failed locator repair.
-
-    Locator repair cannot change N1-N8 judgment content. A repair that
-    violates that rule, fails parsing, or fails operationally must not erase
-    the original structured validator reject and suppress the independent
-    fresh-schema retry.
-    """
-    if current_error is None:
-        return None
-    if fresh_schema_retry_eligible(current_error):
-        return current_error
-    if fresh_schema_retry_eligible(initial_validation_error):
-        return initial_validation_error
-    return current_error
-
-
-def render_fresh_schema_retry_prompt(
-    original_prompt: str,
-    validation_code: str | list[str],
-    attempt: int,
+def validation_failure_class(
+    validation_error: str | None,
+    *,
+    packet_completion_eligible: bool,
 ) -> str:
-    """Request a fresh judgment without exposing the rejected JSON.
-
-    Unlike locator repair, this starts a distinct isolated Codex context and
-    discards the prior object completely. The generic validator code reveals
-    no failed section, scientific framing, or prior conclusion.
-    """
-    guidance_by_code = {
-        "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE": (
-            "Static N5 invariant: every statements[] entry must list the five "
-            "canonical resolution classes exactly once and copy exactly five "
-            "substantive tested_resolutions lines from live current-cycle "
-            "runner_stdout: per_element, per_site, per_mode, per_block, and "
-            "lattice_wide. Recheck every statement before returning.\n"
-        ),
-        "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH": (
-            "Static N3 invariant: retained_authority describes path provenance, "
-            "not phrase semantics. Use it exactly when the hit path has an "
-            "authority/framework_premise/premise_registry role and retained-grade "
-            "status or accepted axiom/approved-primitive type. A source-role path "
-            "must instead be classified from its actual load-bearing use.\n"
-        ),
-        "N1_ROUTE_CLASS_MARKER_MISMATCH": (
-            "Static N1 invariant: at least one individual mechanism, attempt, or "
-            "outcome field must contain a documented literal marker for the "
-            "selected route_class. "
-            "Identifier separators '_' and '-' count as lexical boundaries, and "
-            "ordinary carrier/sector/module/space/irrep plurals are accepted. "
-            "For normalization routes, unit/units must be whole tokens; exact "
-            "W_unit/W_units may cross underscore boundaries, while preW_unit, "
-            "W_unit_post, W_unitary, and W__unit are reserved lookalikes. The "
-            "normalization markers use literal ASCII spelling, and Unicode "
-            "letters or combining marks continue a token. "
-            "At least one of those fields must itself copy the marker. When a "
-            "check label lacks it, use an evidenced marker-bearing live section "
-            "header that genuinely names the same route; do not duplicate fields "
-            "unless stdout supplies the same text for distinct semantic roles.\n"
-        ),
-        "N1_ROUTE_EVIDENCE_COMPLETENESS_MISMATCH": (
-            "Static N1 invariant: mechanisms and attempts must be semantically "
-            "distinct, not numbered paraphrases. Every ATTEMPTED route must cite "
-            "live current-cycle runner_stdout and copy a 12+ character locator "
-            "from that exact surface. Do not invent extra routes to reach five; "
-            "an honestly incomplete N1 set must remain FAIL.\n"
-        ),
-        "N2_WALL_EVIDENCE_BINDING_MISMATCH": (
-            "Static N2 invariant: copy every wall verbatim from the cited "
-            "evidence, and make each pairwise rationale name both complete wall "
-            "strings while remaining a verbatim-supported locator on the same "
-            "surface. Recheck every wall and pair, not only the first reject.\n"
-        ),
-        "EVIDENCE_LOCATOR_VERBATIM_LENGTH_MISMATCH": (
-            "Static evidence invariant: every evidence_locator must copy a "
-            "contiguous 12+ normalized-character substring from its cited "
-            "authenticated path. Section-level scan locators are subject to the "
-            "same rule. Recheck all N1-N8 locators before returning.\n"
-        ),
-        "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH": (
-            "Static N3 invariant: copy phrase, occurrence_group_id, "
-            "occurrence_count, occurrence_locator_sha256, and evidence_locator "
-            "from one same full_phrase_groups record. Separate authenticated "
-            "phrase records may share a context-derived id or digest; reproduce "
-            "that sharing only when each complete phrase record is listed. Never "
-            "infer an unlisted phrase from a shared id or cross-label a count, "
-            "digest, or locator from another record.\n"
-        ),
-        "N3_AUTHENTICATED_GROUP_COVERAGE_MISMATCH": (
-            "Static N3 coverage invariant: enumerate every authenticated "
-            "full_phrase_groups record from every applicable manifest path "
-            "exactly once in N3.hits. Key coverage by the complete "
-            "(evidence_path, phrase, occurrence_group_id) tuple. Do not "
-            "deduplicate records merely because they share a context-derived "
-            "group id or digest, and do not add a phrase absent from the "
-            "authenticated records. Copy each record's complete occurrence "
-            "tuple without cross-labeling fields.\n"
-        ),
-        "N5_AUTHENTICATED_GROUP_TUPLE_MISMATCH": (
-            "Static N5 invariant: copy phrase, occurrence_group_id, "
-            "occurrence_count, occurrence_locator_sha256, and evidence_locator "
-            "from one same full_phrase_groups record. Never cross-label a group "
-            "id, count, digest, or locator under another phrase.\n"
-        ),
-        "N5_AUTHENTICATED_GROUP_COVERAGE_MISMATCH": (
-            "Static N5 coverage invariant: enumerate every authenticated "
-            "full_phrase_groups record from every applicable manifest path "
-            "exactly once in N5.statements. Key coverage by the complete "
-            "(evidence_path, phrase, occurrence_group_id) tuple. Shared group "
-            "ids or digests do not merge distinct phrase records. Do not omit, "
-            "deduplicate, or invent records; copy each record's complete "
-            "occurrence tuple from that same record.\n"
-        ),
-        "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH": (
-            "Static N5 invariant: copy every complete tested_resolutions entry, "
-            "including its canonical class prefix and body, byte-for-byte as a "
-            "contiguous line from the cited live current-cycle runner_stdout. "
-            "Do not summarize, shorten, or paraphrase those five lines.\n"
-        ),
-        "N7_EXECUTION_EVIDENCE_VERBATIM_MISMATCH": (
-            "Static N7 invariant: copy argument byte-for-byte as one complete "
-            "contiguous live-execution line from the selected N1 route surface; "
-            "that line must contain the route mechanism and attempt verbatim. "
-            f"Both copied lines must contain at least "
-            f"{no_go_discipline_gate.N7_STEELMAN_TRANSPORT_MIN_RAW_CHARS} raw "
-            "Unicode code points for the transport prefilter and at least "
-            f"{no_go_discipline_gate.N7_STEELMAN_MIN_NORMALIZED_CHARS} "
-            "characters after whitespace-collapsed, case-folded normalization. "
-            "Copy resolution byte-for-byte as one complete contiguous line from "
-            "the cited independent execution or retained/accepted authority, "
-            "and choose a line that names an evidenced N2 wall. Do not paraphrase "
-            "either field.\n"
-        ),
-        "N4_WITNESS_SCHEMA_MISMATCH": (
-            "Static N4 invariant: when no N1 route is RULED OUT BY PRIOR, emit "
-            "witnesses as an empty list with a substantive none_found_reason; "
-            "never fabricate a placeholder witness. Otherwise every witness "
-            "must include witness_residual_id and claim_residual_id as stable "
-            "residual:<id> strings, plus separate authority evidence_path and "
-            "evidence_locator fields and separate source claim_evidence_path and "
-            "claim_evidence_locator fields. The witness surface must have the "
-            "authority role and the claim surface must have the source role. Copy "
-            "each residual text and ID verbatim from its own cited packet surface.\n"
-        ),
-        "N5_STATEMENT_FIELD_NESTING_MISMATCH": (
-            "Static N5 invariant: resolution_classes_checked, "
-            "tested_resolutions, untested_resolutions, resolution_evidence_path, "
-            "and resolution_evidence_locator belong inside each statements[] "
-            "object, never on the N5_rhetoric_audit section object. Preserve all "
-            "statement content while placing each field at that documented level.\n"
-        ),
-        "N6_INDEXED_BASIS_VERBATIM_MISMATCH": (
-            "Static N6 invariant: copy indexed_basis exactly from the candidate "
-            "record and include that complete text verbatim inside the same "
-            "candidate's closure_mechanism before the explanation of how it could "
-            "affect the named wall. Do not paraphrase or shorten indexed_basis.\n"
-        ),
-        "N6_AFFECTED_WALL_VERBATIM_MISMATCH": (
-            "Static N6 invariant: copy affected_wall exactly from the same "
-            "candidate and include that complete text verbatim inside its "
-            "disposition before explaining why the candidate does or does not "
-            "close the wall. Do not paraphrase or shorten affected_wall.\n"
-        ),
-    }
-    validation_codes = (
-        [validation_code]
-        if isinstance(validation_code, str)
-        else list(dict.fromkeys(validation_code))
-    )
-    guidance = "".join(
-        guidance_by_code.get(code, "")
-        for code in validation_codes
-    )
-    code_label = "VALIDATOR CODE" if len(validation_codes) == 1 else "VALIDATOR CODES"
-    code_text = "\n".join(validation_codes)
-    return (
-        f"{original_prompt}\n\n"
-        "---\n"
-        f"FRESH SCHEMA RETRY {attempt} (binding):\n"
-        "A separate restricted-context attempt was rejected before apply by "
-        "the unchanged deterministic audit schema validator. You are not given its "
-        "JSON or conclusion. Reperform the scientific audit from the supplied "
-        "evidence and return a wholly fresh JSON object. The validator error "
-        "below is a sanitized control-plane schema code only, not scientific evidence. "
-        "Do not infer or preserve any prior verdict. Recheck the complete "
-        "output schema and every invariant already stated in the original "
-        "restricted packet before responding.\n\n"
-        f"{code_label}:\n{code_text}\n"
-        f"{guidance}"
-    )
+    """Route a no-verdict reject without treating it as scientific evidence."""
+    if packet_completion_eligible and packet_completion_eligible_error(
+        validation_error
+    ):
+        return "packet_completion_exhausted"
+    return "scientific_reaudit_required"
 
 
 def validation_repair_preservation_error(
     rejected_blob: dict,
     repaired_blob: dict,
 ) -> str | None:
-    """Reject a format correction that changes the scientific judgment."""
+    """Reject packet completion that changes any top-level judgment."""
     rejected_fields = set(rejected_blob)
     repaired_fields = set(repaired_blob)
     if repaired_fields != rejected_fields:
@@ -3358,33 +3175,34 @@ def validation_repair_preservation_error(
             f"(added={added}, removed={removed})"
         )
     for field in sorted(rejected_fields - {VALIDATION_REPAIR_MUTABLE_FIELD}):
-        if repaired_blob.get(field) != rejected_blob.get(field):
+        rejected_value = json.dumps(
+            rejected_blob.get(field),
+            sort_keys=True,
+            separators=(",", ":"),
+            ensure_ascii=False,
+        )
+        repaired_value = json.dumps(
+            repaired_blob.get(field),
+            sort_keys=True,
+            separators=(",", ":"),
+            ensure_ascii=False,
+        )
+        if repaired_value != rejected_value:
             return (
                 "validation repair changed preserved scientific field "
                 f"{field!r}"
             )
-    def without_locator_fields(value: object) -> object:
-        if isinstance(value, dict):
-            return {
-                key: without_locator_fields(item)
-                for key, item in value.items()
-                if key not in (
-                    VALIDATION_REPAIR_LOCATOR_FIELDS
-                    | set(AUTHENTICATED_OCCURRENCE_FIELDS)
+    rejected_packet = rejected_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD)
+    repaired_packet = repaired_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD)
+    if not isinstance(repaired_packet, dict):
+        return "validation repair did not supply a structured N1-N8 packet"
+    if isinstance(rejected_packet, dict):
+        for field in ("required", "status"):
+            if repaired_packet.get(field) != rejected_packet.get(field):
+                return (
+                    "validation repair changed preserved N1-N8 gate field "
+                    f"{field!r}"
                 )
-            }
-        if isinstance(value, list):
-            return [without_locator_fields(item) for item in value]
-        return value
-
-    rejected_packet = without_locator_fields(
-        rejected_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD)
-    )
-    repaired_packet = without_locator_fields(
-        repaired_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD)
-    )
-    if repaired_packet != rejected_packet:
-        return "validation repair changed preserved no-go judgment content"
     return None
 
 
@@ -3392,20 +3210,29 @@ def validation_repair_eligible(
     rejected_blob: dict,
     expected_cid: str,
     validation_error: str | None,
+    expected_invocation_id: str | None = None,
 ) -> bool:
-    """True only for a complete verdict with an N1-N8 locator failure."""
-    if not validation_error:
+    """True only for a complete, prompt-bound judgment with an N1-N8 reject."""
+    if not packet_completion_eligible_error(validation_error):
         return False
-    locator_error = validation_error.casefold()
-    if not any(
-        marker in locator_error
-        for marker in ("evidence_path", "evidence path", "evidence_locator")
+    if validation_error == "transport-bounded N8 evidence forbids audited_clean":
+        return False
+    if not isinstance(rejected_blob, dict):
+        return False
+    if not REQUIRED_VERDICT_FIELDS.issubset(rejected_blob):
+        return False
+    if rejected_blob.get("claim_id") != expected_cid:
+        return False
+    if (
+        expected_invocation_id is not None
+        and rejected_blob.get("audit_invocation_id") != expected_invocation_id
     ):
         return False
+    packet = rejected_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD)
     return (
-        REQUIRED_VERDICT_FIELDS.issubset(rejected_blob)
-        and rejected_blob.get("claim_id") == expected_cid
-        and isinstance(rejected_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD), dict)
+        isinstance(packet, dict)
+        and packet.get("required") is True
+        and packet.get("status") in {"PASS", "FAIL"}
     )
 
 
@@ -3473,19 +3300,31 @@ def main() -> int:
                         "codex-cli-<model>-<utc-yyyymmdd-hhmm>-<run-id>")
     p.add_argument("--codex-timeout-sec", type=int, default=600,
                    help="Per-row codex exec timeout (default 600).")
-    p.add_argument("--validation-repair-attempts", type=int, default=1,
-                   help="After a complete parsed verdict fails strict N1-N8 "
-                        "evidence-locator validation, ask "
-                        "the same restricted-packet auditor for this many "
-                        "validator-guided JSON corrections (default 1; 0 "
-                        "disables). Every correction must pass the unchanged "
-                        "validator and apply gate.")
-    p.add_argument("--fresh-schema-retry-attempts", type=int, default=2,
-                   help="After a complete verdict fails an N1-N8 structural "
-                        "schema rule that is not eligible for locator-only "
-                        "repair, rerun the full restricted audit in this many "
-                        "new isolated contexts (default 2; 0 disables). The "
-                        "rejected JSON/conclusion is never passed forward.")
+    p.add_argument(
+        "--packet-completion-attempts",
+        "--validation-repair-attempts",
+        dest="validation_repair_attempts",
+        type=int,
+        default=1,
+        help=(
+            "After a complete prompt-bound judgment fails a strict N1-N8 "
+            "packet rule, run this many focused completions that may replace "
+            "only no_go_discipline (default 1; 0 disables). Every other "
+            "top-level value is immutable and the unchanged validator/apply "
+            "gates still bind. The legacy --validation-repair-attempts name "
+            "is accepted as an alias."
+        ),
+    )
+    p.add_argument(
+        "--fresh-schema-retry-attempts",
+        type=int,
+        default=0,
+        help=(
+            "Deprecated fail-closed compatibility option. Only 0 is "
+            "accepted; a schema reject never launches another full "
+            "scientific audit."
+        ),
+    )
     p.add_argument("--runner-timeout-sec", type=int, default=120,
                    help="Per-row primary-runner timeout (default 120).")
     p.add_argument("--no-propagate", action="store_true",
@@ -3577,8 +3416,12 @@ def main() -> int:
     if not 0 <= args.validation_repair_attempts <= 3:
         print("REFUSING: --validation-repair-attempts must be between 0 and 3.")
         return 2
-    if not 0 <= args.fresh_schema_retry_attempts <= 3:
-        print("REFUSING: --fresh-schema-retry-attempts must be between 0 and 3.")
+    if args.fresh_schema_retry_attempts != 0:
+        print(
+            "REFUSING: --fresh-schema-retry-attempts is retired; use 0. "
+            "Packet rejects may receive only judgment-preserving focused "
+            "completion."
+        )
         return 2
     if args.from_dispatch and args.from_reaudit_candidates:
         print("REFUSING: choose only one of --from-dispatch and --from-reaudit-candidates.")
@@ -3782,7 +3625,6 @@ def main() -> int:
     propagation_failed = False
     for i, row in enumerate(targets, 1):
         cid = row["claim_id"]
-        fresh_retry_dirs: list[Path] = []
         print(f"\n[{i}/{len(targets)}] {cid}")
         try:
             # Determine first-pass vs second-pass vs skip BEFORE invoking codex.
@@ -4141,9 +3983,16 @@ def main() -> int:
             initial_validation_error = err
             initial_rejected_blob = blob
             repair_elapsed = 0.0
-            repair_eligible = validation_repair_eligible(blob, cid, err)
+            repair_attempts_used = 0
+            repair_eligible = validation_repair_eligible(
+                blob,
+                cid,
+                err,
+                expected_invocation_id=audit_invocation_id,
+            )
             if err and args.validation_repair_attempts > 0 and repair_eligible:
                 for repair_attempt in range(1, args.validation_repair_attempts + 1):
+                    repair_attempts_used = repair_attempt
                     print(
                         f"  validation repair {repair_attempt}/"
                         f"{args.validation_repair_attempts}: {err}"
@@ -4294,179 +4143,33 @@ def main() -> int:
                         )
                         break
                 elapsed += repair_elapsed
-            err = fresh_schema_retry_error(err, initial_validation_error)
-            schema_retry_compute_required: str | None = None
             if (
                 err
-                and args.fresh_schema_retry_attempts > 0
-                and fresh_schema_retry_eligible(err)
+                and initial_validation_error
+                and repair_eligible
+                and not err.startswith("validation repair codex exec failed:")
             ):
-                schema_elapsed = 0.0
-                schema_retry_codes: list[str] = []
-                for schema_attempt in range(1, args.fresh_schema_retry_attempts + 1):
-                    retry_code = fresh_schema_retry_code(err)
-                    if retry_code not in schema_retry_codes:
-                        schema_retry_codes.append(retry_code)
-                    print(
-                        f"  fresh schema retry {schema_attempt}/"
-                        f"{args.fresh_schema_retry_attempts}: {retry_code}"
-                    )
-                    schema_prompt = render_fresh_schema_retry_prompt(
-                        prompt, schema_retry_codes, schema_attempt
-                    )
-                    if prompt_exceeds_hard_input_limit(schema_prompt):
-                        err = "fresh schema retry prompt exceeds Codex hard input limit"
-                        break
-                    schema_dir = ISOLATED_BASE / (
-                        f"{run_id}-{i:03d}-fresh-schema-{schema_attempt:02d}"
-                    )
-                    fresh_retry_dirs.append(schema_dir)
-                    schema_t0 = time.time()
-                    schema_ok, schema_stdout, schema_stderr = run_codex(
-                        schema_prompt,
-                        schema_dir,
-                        args.codex_timeout_sec,
-                        reasoning_effort=reasoning_effort,
-                        model=audit_model,
-                    )
-                    schema_elapsed += time.time() - schema_t0
-                    if not schema_ok:
-                        err = (
-                            "fresh schema retry codex exec failed: "
-                            f"{schema_stderr.strip()[:300]}"
-                        )
-                        with run_log.open("a", encoding="utf-8") as f:
-                            f.write(json.dumps({
-                                "claim_id": cid,
-                                "phase": "fresh_schema_retry_codex_failed",
-                                "attempt": schema_attempt,
-                                "error": err,
-                            }) + "\n")
-                        continue
-                    schema_reply = extract_response(schema_stdout)
-                    schema_retry_compute_required = compute_required_reason(schema_reply)
-                    if schema_retry_compute_required:
-                        break
-                    schema_blob = parse_verdict_json(schema_reply or "")
-                    if schema_blob is None:
-                        err = "fresh schema retry reply not valid JSON"
-                        with run_log.open("a", encoding="utf-8") as f:
-                            f.write(json.dumps({
-                                "claim_id": cid,
-                                "phase": "fresh_schema_retry_json_parse_failed",
-                                "attempt": schema_attempt,
-                                "reply": schema_reply or "",
-                            }) + "\n")
-                        continue
-                    schema_casefold_path_bindings = (
-                        bind_authenticated_casefold_evidence_paths(
-                            schema_blob, exact_evidence_manifest
-                        )
-                    )
-                    if schema_casefold_path_bindings:
-                        with run_log.open("a", encoding="utf-8") as f:
-                            f.write(json.dumps({
-                                "claim_id": cid,
-                                "phase": (
-                                    "fresh_schema_retry_authenticated_casefold_"
-                                    "evidence_paths_bound"
-                                ),
-                                "attempt": schema_attempt,
-                                "bindings": schema_casefold_path_bindings,
-                            }) + "\n")
-                    schema_n8_universe_bindings = (
-                        bind_authenticated_n8_universe_metadata(
-                            schema_blob, exact_evidence_manifest
-                        )
-                    )
-                    if schema_n8_universe_bindings:
-                        with run_log.open("a", encoding="utf-8") as f:
-                            f.write(json.dumps({
-                                "claim_id": cid,
-                                "phase": (
-                                    "fresh_schema_retry_authenticated_n8_"
-                                    "universe_metadata_bound"
-                                ),
-                                "attempt": schema_attempt,
-                                "bindings": schema_n8_universe_bindings,
-                            }) + "\n")
-                    schema_bindings = bind_authenticated_occurrence_metadata(
-                        schema_blob, exact_evidence_manifest
-                    )
-                    if schema_bindings:
-                        with run_log.open("a", encoding="utf-8") as f:
-                            f.write(json.dumps({
-                                "claim_id": cid,
-                                "phase": (
-                                    "fresh_schema_retry_authenticated_"
-                                    "occurrence_metadata_bound"
-                                ),
-                                "attempt": schema_attempt,
-                                "bindings": schema_bindings,
-                            }) + "\n")
-                    schema_n6_locator_bindings = (
-                        bind_authenticated_n6_candidate_locators(
-                            schema_blob, exact_evidence_manifest
-                        )
-                    )
-                    if schema_n6_locator_bindings:
-                        with run_log.open("a", encoding="utf-8") as f:
-                            f.write(json.dumps({
-                                "claim_id": cid,
-                                "phase": (
-                                    "fresh_schema_retry_authenticated_n6_"
-                                    "candidate_locators_bound"
-                                ),
-                                "attempt": schema_attempt,
-                                "bindings": schema_n6_locator_bindings,
-                            }) + "\n")
-                    schema_error = validate_verdict(
-                        schema_blob,
-                        cid,
-                        source_requires_no_go=source_requires_no_go,
-                        evidence_manifest=exact_evidence_manifest,
-                        prior_claim_scope=prior_claim_scope_for_row(full_led_row),
-                        expected_invocation_id=audit_invocation_id,
-                        transport_bounded_n8=transport_bound is not None,
-                    )
-                    with run_log.open("a", encoding="utf-8") as f:
-                        f.write(json.dumps({
-                            "claim_id": cid,
-                            "phase": (
-                                "fresh_schema_retry_passed"
-                                if schema_error is None
-                                else "fresh_schema_retry_failed"
-                            ),
-                            "attempt": schema_attempt,
-                            "error": schema_error,
-                        }) + "\n")
-                    blob = schema_blob
-                    err = schema_error
-                    if err is None:
-                        print(
-                            "  fresh schema retry passed "
-                            f"({schema_elapsed:.1f}s cumulative)"
-                        )
-                        break
-                elapsed += schema_elapsed
-            if schema_retry_compute_required is not None:
-                print(f"  COMPUTE_REQUIRED: {schema_retry_compute_required[:200]}")
-                skipped += 1
-                with run_log.open("a", encoding="utf-8") as f:
-                    f.write(json.dumps({
-                        "claim_id": cid,
-                        "phase": "compute_required",
-                        "elapsed_sec": elapsed,
-                        "reason": schema_retry_compute_required,
-                    }) + "\n")
-                continue
+                # A malformed or judgment-changing completion cannot replace
+                # the original validator reject. Preserve the exact routing
+                # signal while keeping the rejected scientific tuple intact.
+                err = initial_validation_error
             if err:
                 print(f"  FAIL validate: {err}")
                 failed += 1
+                failure_code = schema_failure_code(err)
+                failure_class = validation_failure_class(
+                    err,
+                    packet_completion_eligible=repair_eligible,
+                )
                 with run_log.open("a", encoding="utf-8") as f:
                     f.write(json.dumps({
                         "claim_id": cid, "phase": "validate_failed",
-                        "error": err, "blob": blob
+                        "error": err,
+                        "error_code": failure_code,
+                        "failure_class": failure_class,
+                        "scientific_seat_count": 1,
+                        "packet_completion_attempt_count": repair_attempts_used,
+                        "blob": blob,
                     }) + "\n")
                 continue
 
@@ -4589,9 +4292,6 @@ def main() -> int:
             iso = ISOLATED_BASE / f"{run_id}-{i:03d}"
             if iso.exists():
                 shutil.rmtree(iso, ignore_errors=True)
-            for retry_dir in fresh_retry_dirs:
-                if retry_dir.exists():
-                    shutil.rmtree(retry_dir, ignore_errors=True)
 
     # Batch push mode: one commit covering the whole run
     if (

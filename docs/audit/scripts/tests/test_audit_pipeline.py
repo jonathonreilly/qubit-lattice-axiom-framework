@@ -9782,7 +9782,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         base["verdict"] = "audited_decoration"
         self.assertIsNone(m.validate_verdict(base, "target"))
 
-    def test_validation_repair_prompt_reuses_packet_and_preserves_strict_gate(self):
+    def test_packet_completion_prompt_reuses_evidence_and_preserves_strict_gate(self):
         m = _import_codex_audit_runner()
         original_prompt = "restricted packet with EXACT EVIDENCE LOCATOR"
         rejected = {
@@ -9812,9 +9812,11 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         )
         self.assertIn("12+ character verbatim substring", flat_prompt)
         self.assertIn("Do not invent evidence", flat_prompt)
-        self.assertIn("or change the verdict itself", flat_prompt)
-        self.assertIn("untrusted correction target, not evidence", flat_prompt)
-        self.assertIn("may not add a top-level field", flat_prompt)
+        self.assertIn("may not change the verdict", flat_prompt)
+        self.assertIn("untrusted completion target, not evidence", flat_prompt)
+        self.assertIn("only the structured N1-N8 packet", flat_prompt)
+        self.assertIn("cannot flip FAIL to PASS", flat_prompt)
+        self.assertIn("honest FAIL packet is valid", flat_prompt)
         self.assertNotIn("accept despite", prompt.casefold())
 
     def test_validation_repair_cannot_change_scientific_judgment(self):
@@ -9907,18 +9909,16 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         changed_route_disposition["no_go_discipline"][
             "N1_alternative_routes"
         ][0]["disposition"] = "CLOSED"
-        self.assertIn(
-            "changed preserved no-go judgment content",
+        self.assertIsNone(
             m.validation_repair_preservation_error(
                 rejected, changed_route_disposition
             )
-            or "",
         )
 
         changed_packet_status = json.loads(json.dumps(locator_repair))
         changed_packet_status["no_go_discipline"]["status"] = "PASS"
         self.assertIn(
-            "changed preserved no-go judgment content",
+            "changed preserved N1-N8 gate field 'status'",
             m.validation_repair_preservation_error(
                 rejected, changed_packet_status
             )
@@ -9932,7 +9932,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "N1 route 1 evidence_locator is not present in docs/TARGET.md",
             )
         )
-        self.assertFalse(
+        self.assertTrue(
             m.validation_repair_eligible(
                 rejected,
                 "target",
@@ -12086,14 +12086,14 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
             len(raw_short_casefold_expands), n7["argument"]["minLength"]
         )
 
-    def test_n7_constants_drive_schema_prompt_error_and_fresh_retry(self):
+    def test_n7_constants_drive_schema_prompt_error_and_failure_code(self):
         m = _import_codex_audit_runner()
         gate = m.no_go_discipline_gate
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             note = root / "docs" / "TARGET.md"
             note.parent.mkdir(parents=True, exist_ok=True)
-            note.write_text("Exact source.\n", encoding="utf-8")
+            note.write_text("Exact source.\\n", encoding="utf-8")
             row = {
                 "claim_id": "target",
                 "note_path": "docs/TARGET.md",
@@ -12119,16 +12119,13 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
                 )
                 error = gate.n7_steelman_length_error("x" * 80, "x" * 80)
                 self.assertIsNotNone(error)
-                code = m.fresh_schema_retry_code(error or "")
-                retry = m.render_fresh_schema_retry_prompt(prompt, code, 1)
+                code = m.schema_failure_code(error or "")
 
         self.assertEqual(schema["argument"]["minLength"], 82)
         self.assertEqual(schema["resolution"]["minLength"], 82)
         self.assertIn("raw=82 normalized=81", prompt)
         self.assertIn("at least 81 normalized characters", error or "")
         self.assertEqual(code, "N7_EXECUTION_EVIDENCE_VERBATIM_MISMATCH")
-        self.assertIn("82 raw Unicode code points", retry)
-        self.assertIn("81 characters after whitespace-collapsed", retry)
 
     def test_best_cached_model_uses_highest_full_gpt_version_not_cache_order(self):
         m = _import_codex_audit_runner()
@@ -12200,6 +12197,20 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
         ), self.assertRaises(SystemExit) as caught:
             m.main()
         self.assertEqual(caught.exception.code, 2)
+
+    def test_nonzero_full_schema_reaudit_budget_is_rejected(self):
+        m = _import_codex_audit_runner()
+        with mock.patch.object(
+            sys,
+            "argv",
+            [
+                "codex_audit_runner.py",
+                "--dry-run",
+                "--fresh-schema-retry-attempts",
+                "1",
+            ],
+        ):
+            self.assertEqual(m.main(), 2)
 
     def test_reused_auditor_base_still_gets_distinct_run_identity(self):
         m = _import_codex_audit_runner()
@@ -13371,7 +13382,7 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         )
         self.assertEqual(candidate["evidence_locator"], "absent quoted basis prefix")
 
-    def test_locator_repair_preservation_allows_bound_metadata_only(self):
+    def test_packet_completion_may_replace_packet_only(self):
         m = _import_codex_audit_runner()
         rejected = {
             "verdict": "audited_clean",
@@ -13404,256 +13415,60 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             m.validation_repair_preservation_error(rejected, repaired)
         )
         repaired_hit["classification"] = "hidden_admission"
+        self.assertIsNone(
+            m.validation_repair_preservation_error(rejected, repaired)
+        )
+        repaired["verdict"] = "audited_conditional"
         self.assertIn(
-            "changed preserved no-go judgment content",
+            "changed preserved scientific field 'verdict'",
             m.validation_repair_preservation_error(rejected, repaired) or "",
         )
 
-    def test_fresh_schema_retry_exposes_error_not_rejected_conclusion(self):
+    def test_packet_completion_errors_get_typed_conclusion_free_codes(self):
         m = _import_codex_audit_runner()
-        self.assertTrue(m.fresh_schema_retry_eligible(
-            "N5 statement 1 must record one tested resolution per required class"
-        ))
-        self.assertTrue(m.fresh_schema_retry_eligible(
-            "no_go_discipline.status must be PASS or FAIL"
-        ))
-        transport_error = "transport-bounded N8 evidence forbids audited_clean"
-        self.assertTrue(m.fresh_schema_retry_eligible(transport_error))
+        cases = {
+            "N5 statement 1 must record one tested resolution per required class":
+                "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE",
+            "N2.walls must each be evidenced at N2.evidence_path":
+                "N2_WALL_EVIDENCE_BINDING_MISMATCH",
+            "N3.hits must exactly disposition orchestrator phrase scan; "
+            "missing=[('secret_path', 'sector', 'secret_id')], extra=[]":
+                "N3_AUTHENTICATED_GROUP_COVERAGE_MISMATCH",
+            "N6 candidate 1.closure_mechanism must use its indexed_basis":
+                "N6_INDEXED_BASIS_VERBATIM_MISMATCH",
+        }
+        for error, expected_code in cases.items():
+            with self.subTest(error=error):
+                self.assertTrue(m.packet_completion_eligible_error(error))
+                self.assertEqual(m.schema_failure_code(error), expected_code)
+                self.assertEqual(
+                    m.validation_failure_class(
+                        error, packet_completion_eligible=True
+                    ),
+                    "packet_completion_exhausted",
+                )
+
+        self.assertFalse(m.packet_completion_eligible_error("claim_id mismatch"))
         self.assertEqual(
-            m.fresh_schema_retry_code(transport_error),
+            m.schema_failure_code("claim_id mismatch"), "AUDIT_SCHEMA_REJECT"
+        )
+        self.assertEqual(
+            m.validation_failure_class(
+                "claim_id mismatch", packet_completion_eligible=False
+            ),
+            "scientific_reaudit_required",
+        )
+        transport_error = "transport-bounded N8 evidence forbids audited_clean"
+        self.assertEqual(
+            m.schema_failure_code(transport_error),
             "N8_TRANSPORT_BOUND_DISPOSITION_MISMATCH",
         )
-        self.assertFalse(m.fresh_schema_retry_eligible("claim_id mismatch"))
-        code = m.fresh_schema_retry_code(
-            "N1 route prior_secret.route_class exposes prior content"
-        )
-        self.assertEqual(code, "AUDIT_SCHEMA_REJECT")
-        prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET",
-            code,
-            1,
-        )
-        self.assertIn("ORIGINAL RESTRICTED PACKET", prompt)
-        self.assertIn("AUDIT_SCHEMA_REJECT", prompt)
-        self.assertNotIn("N1_SCHEMA_REJECT", prompt)
-        self.assertNotIn("N1-N8 validator", prompt)
-        self.assertNotIn("Recheck every N1-N8", prompt)
-        self.assertNotIn("prior_secret", prompt)
-        self.assertIn("not given its JSON or conclusion", prompt)
         self.assertEqual(
-            m.fresh_schema_retry_code(
-                "N5 statement 1 must record one tested resolution per "
-                "required class"
+            m.validation_failure_class(
+                transport_error, packet_completion_eligible=False
             ),
-            "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE",
+            "scientific_reaudit_required",
         )
-        self.assertEqual(
-            m.fresh_schema_retry_code(
-                "N2.walls must each be evidenced at N2.evidence_path"
-            ),
-            "N2_WALL_EVIDENCE_BINDING_MISMATCH",
-        )
-        accumulated_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET",
-            [
-                "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE",
-                "N2_WALL_EVIDENCE_BINDING_MISMATCH",
-            ],
-            2,
-        )
-        self.assertIn("VALIDATOR CODES:", accumulated_prompt)
-        self.assertIn(
-            "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE", accumulated_prompt
-        )
-        self.assertIn(
-            "N2_WALL_EVIDENCE_BINDING_MISMATCH", accumulated_prompt
-        )
-        self.assertIn(
-            "per_element, per_site, per_mode", accumulated_prompt
-        )
-        self.assertIn("name both complete wall strings", accumulated_prompt)
-        n3_code = m.fresh_schema_retry_code(
-            "N3 retained_authority hit 1 is not retained or accepted in the manifest"
-        )
-        self.assertEqual(
-            n3_code, "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH"
-        )
-        n3_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", n3_code, 1,
-        )
-        self.assertIn("describes path provenance", n3_prompt)
-        self.assertNotIn("hit 1", n3_prompt)
-        n1_code = m.fresh_schema_retry_code(
-            "N1 route 2.route_class='symmetry_or_representation' "
-            "is not supported by its evidenced mechanism/attempt/outcome vocabulary"
-        )
-        self.assertEqual(n1_code, "N1_ROUTE_CLASS_MARKER_MISMATCH")
-        n1_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", n1_code, 1,
-        )
-        self.assertIn("at least one individual mechanism", n1_prompt)
-        self.assertNotIn("route 2", n1_prompt)
-        n5_code = m.fresh_schema_retry_code(
-            "N5 statement 1 tested resolution is not evidenced at "
-            "resolution_evidence_path"
-        )
-        self.assertEqual(n5_code, "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH")
-        n5_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", n5_code, 1,
-        )
-        self.assertIn("byte-for-byte as a contiguous line", n5_prompt)
-        self.assertNotIn("statement 1", n5_prompt)
-        n3_tuple_code = m.fresh_schema_retry_code(
-            "N3 hit 2.occurrence_group_id must be a 16-hex context digest"
-        )
-        self.assertEqual(
-            n3_tuple_code, "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH"
-        )
-        n3_tuple_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", n3_tuple_code, 1,
-        )
-        self.assertIn("from one same full_phrase_groups record", n3_tuple_prompt)
-        self.assertIn("may share a context-derived id or digest", n3_tuple_prompt)
-        self.assertIn("Never infer an unlisted phrase", n3_tuple_prompt)
-        self.assertNotIn("hit 2", n3_tuple_prompt)
-        n3_scan_code = m.fresh_schema_retry_code(
-            "N3.hits must exactly disposition orchestrator phrase scan; "
-            "missing=[], extra=[('secret_path', 'sector', 'secret_id')]"
-        )
-        self.assertEqual(
-            n3_scan_code, "N3_AUTHENTICATED_GROUP_COVERAGE_MISMATCH"
-        )
-        n3_scan_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", n3_scan_code, 1,
-        )
-        self.assertIn(
-            "every authenticated full_phrase_groups record", n3_scan_prompt
-        )
-        self.assertIn("exactly once in N3.hits", n3_scan_prompt)
-        self.assertIn(
-            "(evidence_path, phrase, occurrence_group_id)", n3_scan_prompt
-        )
-        self.assertNotIn("secret_path", n3_scan_prompt)
-        self.assertNotIn("secret_id", n3_scan_prompt)
-        n5_scan_code = m.fresh_schema_retry_code(
-            "N5.statements must exactly disposition orchestrator rhetoric scan; "
-            "missing=[('secret_path', 'cannot', 'secret_id')], extra=[]"
-        )
-        self.assertEqual(
-            n5_scan_code, "N5_AUTHENTICATED_GROUP_COVERAGE_MISMATCH"
-        )
-        n5_scan_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", n5_scan_code, 1,
-        )
-        self.assertIn(
-            "every authenticated full_phrase_groups record", n5_scan_prompt
-        )
-        self.assertIn("exactly once in N5.statements", n5_scan_prompt)
-        self.assertIn(
-            "Shared group ids or digests do not merge", n5_scan_prompt
-        )
-        self.assertNotIn("secret_path", n5_scan_prompt)
-        self.assertNotIn("secret_id", n5_scan_prompt)
-        for n7_error in (
-            "N7.argument is not evidenced at its N1 execution path",
-            "N7.resolution is not evidenced at resolution_evidence_path",
-            "N7.argument must name the steelmanned route mechanism",
-            "N7.argument must name the steelmanned route attempt",
-            m.no_go_discipline_gate.n7_steelman_normalized_length_error(),
-        ):
-            n7_code = m.fresh_schema_retry_code(n7_error)
-            self.assertEqual(
-                n7_code, "N7_EXECUTION_EVIDENCE_VERBATIM_MISMATCH"
-            )
-            n7_prompt = m.render_fresh_schema_retry_prompt(
-                "ORIGINAL RESTRICTED PACKET", n7_code, 1,
-            )
-            self.assertIn("one complete contiguous live-execution line", n7_prompt)
-            self.assertIn("route mechanism and attempt verbatim", n7_prompt)
-            self.assertIn("raw Unicode code points", n7_prompt)
-            self.assertIn("whitespace-collapsed, case-folded", n7_prompt)
-            self.assertIn("names an evidenced N2 wall", n7_prompt)
-            self.assertNotIn(n7_error, n7_prompt)
-        locator_error = (
-            "N3 hit 1 evidence_locator must contain at least 12 normalized characters"
-        )
-        locator_code = m.fresh_schema_retry_code(locator_error)
-        self.assertEqual(
-            locator_code,
-            "EVIDENCE_LOCATOR_VERBATIM_LENGTH_MISMATCH",
-        )
-        locator_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", locator_code, 1,
-        )
-        self.assertIn("contiguous 12+ normalized-character substring", locator_prompt)
-        self.assertIn("12+ normalized-character", locator_prompt)
-        self.assertNotIn("hit 1", locator_prompt)
-        n4_errors = [
-            "N4 witness 1.witness_residual_id must be non-empty",
-            "N4 witness 1.claim_residual_id must be a stable residual:<id>",
-            "N4 witness 1 witness residual must cite an authority at secret/path",
-            "N4 witness 1 claim residual must cite the source secret_claim_id",
-            "N4 witness 1 requires non-empty evidence_path and evidence_locator",
-            "N4 witness 1 claim residual requires non-empty evidence_path and evidence_locator",
-        ]
-        for n4_error in n4_errors:
-            with self.subTest(n4_error=n4_error):
-                n4_code = m.fresh_schema_retry_code(n4_error)
-                self.assertEqual(n4_code, "N4_WITNESS_SCHEMA_MISMATCH")
-                n4_prompt = m.render_fresh_schema_retry_prompt(
-                    "ORIGINAL RESTRICTED PACKET", n4_code, 1,
-                )
-                self.assertIn("when no N1 route is RULED OUT BY PRIOR", n4_prompt)
-                self.assertIn("stable residual:<id> strings", n4_prompt)
-                self.assertIn("authority evidence_path and evidence_locator", n4_prompt)
-                self.assertIn(
-                    "source claim_evidence_path and claim_evidence_locator",
-                    n4_prompt,
-                )
-                self.assertIn("witness surface must have the authority role", n4_prompt)
-                self.assertNotIn("witness 1", n4_prompt)
-                self.assertNotIn("secret/path", n4_prompt)
-                self.assertNotIn("secret_claim_id", n4_prompt)
-        n5_nesting_error = (
-            "N5 contains unknown fields ['resolution_classes_checked', "
-            "'tested_resolutions', 'secret_field_value']"
-        )
-        n5_nesting_code = m.fresh_schema_retry_code(n5_nesting_error)
-        self.assertEqual(
-            n5_nesting_code, "N5_STATEMENT_FIELD_NESTING_MISMATCH"
-        )
-        n5_nesting_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", n5_nesting_code, 1,
-        )
-        self.assertIn("belong inside each statements[] object", n5_nesting_prompt)
-        self.assertNotIn("secret_field_value", n5_nesting_prompt)
-        n6_basis_error = (
-            "N6 candidate 1.closure_mechanism must use its indexed_basis"
-        )
-        n6_basis_code = m.fresh_schema_retry_code(n6_basis_error)
-        self.assertEqual(
-            n6_basis_code, "N6_INDEXED_BASIS_VERBATIM_MISMATCH"
-        )
-        n6_basis_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", n6_basis_code, 1,
-        )
-        self.assertIn("copy indexed_basis exactly", n6_basis_prompt)
-        self.assertIn("complete text verbatim", n6_basis_prompt)
-        self.assertNotIn("candidate 1", n6_basis_prompt)
-        n6_wall_error = (
-            "N6 candidate 1.disposition must name its affected_wall secret_wall"
-        )
-        n6_wall_code = m.fresh_schema_retry_code(n6_wall_error)
-        self.assertEqual(
-            n6_wall_code, "N6_AFFECTED_WALL_VERBATIM_MISMATCH"
-        )
-        n6_wall_prompt = m.render_fresh_schema_retry_prompt(
-            "ORIGINAL RESTRICTED PACKET", n6_wall_code, 1,
-        )
-        self.assertIn("copy affected_wall exactly", n6_wall_prompt)
-        self.assertIn("complete text verbatim inside its disposition", n6_wall_prompt)
-        self.assertNotIn("candidate 1", n6_wall_prompt)
-        self.assertNotIn("secret_wall", n6_wall_prompt)
 
     def test_forensic_readiness_requires_live_n5_resolution_certificate(self):
         m = _import_codex_audit_runner()
@@ -13709,24 +13524,58 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             m.forensic_evidence_readiness_issue(evidence_manifest)
         )
 
-    def test_failed_locator_repair_preserves_fresh_schema_eligibility(self):
+    def test_packet_completion_requires_prompt_bound_scientific_core(self):
         m = _import_codex_audit_runner()
-        initial = "N1 route 1.outcome is not evidenced at evidence_path"
-        preservation = "validation repair changed preserved no-go judgment content"
-        self.assertEqual(
-            m.fresh_schema_retry_error(preservation, initial),
-            initial,
+        invocation = "a" * 32
+        rejected = {
+            field: "stable" for field in m.REQUIRED_VERDICT_FIELDS
+        }
+        rejected.update({
+            "claim_id": "target",
+            "audit_invocation_id": invocation,
+            "no_go_discipline": {"required": True, "status": "PASS"},
+        })
+        error = "N1-N8 packet is required for this source or verdict"
+        self.assertTrue(
+            m.validation_repair_eligible(
+                rejected,
+                "target",
+                error,
+                expected_invocation_id=invocation,
+            )
         )
-        self.assertEqual(
-            m.fresh_schema_retry_error("N3 scan is incomplete", initial),
-            "N3 scan is incomplete",
+        self.assertFalse(
+            m.validation_repair_eligible(
+                rejected,
+                "target",
+                error,
+                expected_invocation_id="b" * 32,
+            )
         )
-        self.assertEqual(
-            m.fresh_schema_retry_error("claim_id mismatch", None),
-            "claim_id mismatch",
+        missing_packet = {**rejected, "no_go_discipline": None}
+        self.assertFalse(
+            m.validation_repair_eligible(
+                missing_packet,
+                "target",
+                error,
+                expected_invocation_id=invocation,
+            )
         )
-        self.assertIsNone(
-            m.fresh_schema_retry_error(None, initial),
+        self.assertFalse(
+            m.validation_repair_eligible(
+                rejected,
+                "target",
+                "transport-bounded N8 evidence forbids audited_clean",
+                expected_invocation_id=invocation,
+            )
+        )
+        self.assertFalse(
+            m.validation_repair_eligible(
+                rejected,
+                "target",
+                "claim_id mismatch",
+                expected_invocation_id=invocation,
+            )
         )
 
     def test_oversized_validation_repair_is_detected_before_transport(self):

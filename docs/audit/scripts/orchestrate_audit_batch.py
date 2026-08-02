@@ -1716,7 +1716,19 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     if not error and blob.get("verdict") == "audited_clean" and clipped:
         error = f"audited_clean packet has clipped evidence: {clipped}"
     if error:
-        return None, {**base, "result": "validation_failed", "detail": error}
+        packet_error = _packet_error(error)
+        return None, {
+            **base,
+            "result": "validation_failed",
+            "detail": error,
+            "error_code": audit_runner.schema_failure_code(str(error)),
+            "failure_class": audit_runner.validation_failure_class(
+                str(error),
+                packet_completion_eligible=packet_error,
+            ),
+            "scientific_seat_count": 1,
+            "packet_completion_attempt_count": completion_attempt,
+        }
 
     full_blob = audit_runner.add_auditor_metadata(
         blob,
@@ -2540,6 +2552,15 @@ def _campaign_failure_schema_error(
         expected = {"cid", "pass", "result"}
         if result == "validation_failed":
             expected.add("detail")
+            typed_fields = {
+                "error_code",
+                "failure_class",
+                "scientific_seat_count",
+                "packet_completion_attempt_count",
+            }
+            present_typed_fields = typed_fields & set(failure)
+            if present_typed_fields:
+                expected.update(typed_fields)
         elif result != "malformed_json":
             return (
                 "campaign exclusion failure result is incompatible with "
@@ -2607,6 +2628,26 @@ def _campaign_failure_schema_error(
         detail = failure.get("detail")
         if not isinstance(detail, str) or not detail.strip():
             return "campaign exclusion failure has no detail"
+    if "error_code" in expected:
+        error_code = failure.get("error_code")
+        if not isinstance(error_code, str) or not error_code.strip():
+            return "campaign exclusion failure has no error_code"
+        if failure.get("failure_class") not in {
+            "packet_completion_exhausted",
+            "scientific_reaudit_required",
+        }:
+            return "campaign exclusion failure has invalid failure_class"
+        if (
+            type(failure.get("scientific_seat_count")) is not int
+            or failure.get("scientific_seat_count") != 1
+        ):
+            return "campaign exclusion scientific_seat_count must be 1"
+        completion_count = failure.get("packet_completion_attempt_count")
+        if type(completion_count) is not int or not 0 <= completion_count <= 3:
+            return (
+                "campaign exclusion packet_completion_attempt_count must be "
+                "an integer from 0 through 3"
+            )
     return None
 
 

@@ -502,16 +502,27 @@ current transaction can land, and a stale duplicate is discarded. Do not add
 intra-clone forensic fan-out; duplicate cross-clone attempts cost compute but
 do not weaken the N1-N8 packet or apply gates.
 
-The canary gets the bounded three-seat fresh-schema budget because distinct
-packet-completion defects can surface serially (for example, an N1 route-class
-marker mismatch followed by an N5 rhetoric-scan coverage mismatch). Coverage
-rejects require one exact N3/N5 disposition for every authenticated
+The canary gets exactly one independent scientific seat. If that prompt-bound
+judgment has a complete top-level scientific core but its N1-N8 packet is
+rejected, it may receive at most three focused packet-completion passes because
+distinct structural defects can surface serially (for example, an N1
+route-class marker mismatch followed by an N5 rhetoric-scan coverage mismatch).
+Those passes may add or replace only `no_go_discipline`; the verdict, claim
+type/scope, chain judgment, rationale, negative declaration, invocation, and
+every other top-level value remain canonically identical. The existing N1-N8
+`required` and `status` gate fields are immutable too, so completion cannot
+promote FAIL to PASS. A nonzero legacy
+fresh-schema retry budget is a hard configuration error. Coverage rejects
+require one exact N3/N5 disposition for every authenticated
 `full_phrase_groups` record on every applicable manifest path; records that
 share a group id or digest are still distinct when their phrase/path tuple is
 distinct. If that bounded budget still ends in malformed JSON or a validator
 reject, quarantine only that row for the campaign and continue to the next
-ready forensic row. That is not a landed canary and does not authorize
-forensic fan-out.
+ready forensic row. Record the typed validator code, repair class, preserved
+run-log location, scientific-seat count, and focused-completion attempt count.
+That is not a landed canary, does
+not authorize forensic fan-out, and must never be described as multiple
+scientific audits.
 
 **Seat-blocked judicial rows are reseated, never frozen and never retried
 as recorded.** A disagreement whose recorded seats lack invocation-bound
@@ -676,7 +687,7 @@ Repair and re-entry are reason-specific:
 
 | Operational result | Required repair | Re-entry |
 | --- | --- | --- |
-| `schema_invalid_quarantined` | Preserve the malformed response, exact validator errors, and any `forensic-canary-*.jsonl` artifact; correct the CLI transport schema, prompt, or bounded packet-completion defect. A failed forensic row enters this route while the worker advances through the remaining non-excluded backlog. Never edit the scientific judgment into validity. | Start a new campaign so a fresh restricted-context seat is selected. Reusing the old workdir keeps the claim excluded. |
+| `schema_invalid_quarantined` | Preserve the malformed response, exact validator errors, typed error code/class, scientific-seat count, and any `forensic-canary-*.jsonl` artifact; correct the CLI transport schema, prompt, or bounded packet-completion defect. A failed forensic row enters this route while the worker advances through the remaining non-excluded backlog. Never edit the scientific judgment into validity. | Do not immediately spend another full scientific seat. Repair the typed packet/evidence prerequisite first; use a fresh scientific seat only when the preserved judgment is absent, invalid, or cannot be proven current. Reusing the old workdir keeps the claim excluded. |
 | `compute_required_quarantined` / `compute_required` | Produce a SHA-pinned runner cache with `cached_runner_output.py`, a sliced deterministic certificate, or an independent derivation; then run the full pipeline and strict lint. | Start a new campaign after the artifact is current. |
 | `blocked_row_reentry_quarantined` | Repair the recorded classifier promotion, dependency/status cycle, note-hash drift, or other invalidation cause. Require one converged full pipeline. | Start a new campaign only after the row no longer immediately returns to the same dep-ready state. |
 | `claim_transaction_quarantined` | Fix the recorded apply, pipeline, or lint defect and prove the clean full pipeline converges. The failed delivery minted no verdict. | Use a fresh seat in a new campaign unless canonical tooling verifies an exact preserved-envelope replay against the current source/seat fingerprint. |

@@ -182,8 +182,15 @@ def forensic_mechanics_circuit(
         for failure in record.get("failures") or []:
             if not isinstance(failure, dict):
                 continue
-            signature = forensic_schema_failure_signature(
-                str(failure.get("detail") or "")
+            error_code = failure.get("error_code")
+            signature = (
+                error_code
+                if isinstance(error_code, str)
+                and error_code
+                and error_code != "AUDIT_SCHEMA_REJECT"
+                else forensic_schema_failure_signature(
+                    str(failure.get("detail") or "")
+                )
             )
             if signature is not None:
                 claims_by_signature.setdefault(signature, set()).add(claim_id)
@@ -759,17 +766,38 @@ def forensic_canary_claim_local_failure(
     if phase == "validate_failed":
         detail = str(terminal.get("error") or "").strip()
         if not detail or detail.startswith(
-            (
-                "fresh schema retry codex exec failed:",
-                "validation repair codex exec failed:",
-            )
+            "validation repair codex exec failed:"
         ):
             return None
+        error_code = terminal.get("error_code")
+        if not isinstance(error_code, str) or not error_code:
+            error_code = batch.audit_runner.schema_failure_code(detail)
+        failure_class = terminal.get("failure_class")
+        if failure_class not in {
+            "packet_completion_exhausted",
+            "scientific_reaudit_required",
+        }:
+            failure_class = batch.audit_runner.validation_failure_class(
+                detail,
+                packet_completion_eligible=(
+                    batch.audit_runner.packet_completion_eligible_error(detail)
+                ),
+            )
+        scientific_seat_count = terminal.get("scientific_seat_count")
+        if type(scientific_seat_count) is not int or scientific_seat_count != 1:
+            scientific_seat_count = 1
+        completion_count = terminal.get("packet_completion_attempt_count")
+        if type(completion_count) is not int or not 0 <= completion_count <= 3:
+            completion_count = 0
         return batch.SCHEMA_QUARANTINE_RESULT, {
             "cid": claim_id,
             "pass": 1,
             "result": "validation_failed",
             "detail": f"{detail}; preserved_run_log={run_log.name}",
+            "error_code": error_code,
+            "failure_class": failure_class,
+            "scientific_seat_count": scientific_seat_count,
+            "packet_completion_attempt_count": completion_count,
         }, 1
     if phase == "json_parse_failed":
         return batch.SCHEMA_QUARANTINE_RESULT, {
@@ -817,12 +845,7 @@ def forensic_canary_transient_diagnostic(terminal: dict | None) -> str:
         return str(terminal.get("stderr") or "")
     if phase == "validate_failed":
         error = str(terminal.get("error") or "")
-        if error.startswith(
-            (
-                "fresh schema retry codex exec failed:",
-                "validation repair codex exec failed:",
-            )
-        ):
+        if error.startswith("validation repair codex exec failed:"):
             return error
     return ""
 
@@ -887,10 +910,10 @@ def run_forensic_canary(
         str(args.codex_timeout_sec),
         "--runner-timeout-sec",
         str(args.runner_timeout_sec),
-        "--validation-repair-attempts",
-        "1",
-        "--fresh-schema-retry-attempts",
+        "--packet-completion-attempts",
         "3",
+        "--fresh-schema-retry-attempts",
+        "0",
         "--run-log-path",
         str(run_log),
     ]

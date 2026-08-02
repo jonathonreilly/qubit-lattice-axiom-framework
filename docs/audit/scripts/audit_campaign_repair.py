@@ -76,14 +76,33 @@ def repair_route(
             ),
         }
     if reason == SCHEMA_QUARANTINE:
+        failure_classes = {
+            failure.get("failure_class")
+            for failure in result["failures"]
+            if isinstance(failure, dict)
+        }
+        if failure_classes == {"packet_completion_exhausted"}:
+            return {
+                **result,
+                "route": "repair_packet_completion_contract",
+                "ready_for_new_campaign": False,
+                "action": (
+                    "Keep the preserved scientific judgment non-authoritative "
+                    "but do not spend another full seat. Repair the typed "
+                    "N1-N8 packet/prompt defect named in failures and retain "
+                    "the forensic run log for fingerprint-bound packet-only "
+                    "recovery."
+                ),
+            }
         return {
             **result,
-            "route": "fresh_schema_valid_seat",
+            "route": "fresh_scientific_seat_required",
             "ready_for_new_campaign": True,
             "action": (
                 "Keep the malformed output non-authoritative. Correct the "
-                "transport/prompt defect named in failures, then start a new "
-                "campaign so a fresh restricted-context seat is selected."
+                "top-level contract defect named in failures, then start a "
+                "new campaign so a fresh restricted-context scientific seat "
+                "is selected."
             ),
         }
     if reason == COMPUTE_QUARANTINE:

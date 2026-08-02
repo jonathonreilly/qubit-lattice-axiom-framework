@@ -124,12 +124,15 @@
     "four_seam_factors_and_complete_wrapper_exact": true,
     "landed_one_particle_mass_and_contact_fixture_rerun": true,
     "local_vs_full_term2_character_census_matches": true,
+    "named_source_commit_object_exists_when_git_is_available": true,
+    "pinned_origin_main_complete_loaded_helper_closure": true,
     "pinned_origin_main_direct_import_hashes": true,
     "six_disjoint_axis_parity_layers_cover_all_factors": true,
     "three_native_13_gate_words_exact": true
   },
   "classification": "PORTABLE_ORIGIN_MAIN_LOCAL_E2_AND_TARGET_DELTA",
   "direct_import_sha256_pins": {
+    "frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py": "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4",
     "frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3",
     "frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py": "c2e7f261c47092f11e445b16bde703330ccfd3e3af06bec0dac078ba64cf2297",
     "frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982",
@@ -145,9 +148,58 @@
     "contact_double_occupation_phase_residual": 0.0,
     "contact_vacuum_and_one_particle_residual": 0.0,
     "one_particle_coin_eigen_residual": 2.594441202963249e-16,
+    "one_particle_extended_even_sector_columns_tested": 6,
+    "one_particle_extended_even_sector_failures": 0,
     "one_particle_extended_even_sector_present": true,
+    "one_particle_extended_even_sector_rows": [
+      {
+        "extended_total_parity": 0,
+        "flipped_reference_total_parity": 1,
+        "mode": 0,
+        "reference_bits": 1
+      },
+      {
+        "extended_total_parity": 0,
+        "flipped_reference_total_parity": 1,
+        "mode": 1,
+        "reference_bits": 1
+      },
+      {
+        "extended_total_parity": 0,
+        "flipped_reference_total_parity": 1,
+        "mode": 2,
+        "reference_bits": 1
+      },
+      {
+        "extended_total_parity": 0,
+        "flipped_reference_total_parity": 1,
+        "mode": 3,
+        "reference_bits": 1
+      },
+      {
+        "extended_total_parity": 0,
+        "flipped_reference_total_parity": 1,
+        "mode": 4,
+        "reference_bits": 1
+      },
+      {
+        "extended_total_parity": 0,
+        "flipped_reference_total_parity": 1,
+        "mode": 5,
+        "reference_bits": 1
+      }
+    ],
     "one_particle_mass": 0.45340565417488515,
-    "one_particle_mass_residual": 5.551115123125783e-17
+    "one_particle_mass_residual": 5.551115123125783e-17,
+    "one_particle_wrong_reference_flip_detection_failures": 0
+  },
+  "loaded_helper_closure_pin": {
+    "expected_closure_sha256": "23724607a21de418a45acc5783162a7833e4567df709fae761e48ab4ca675dfa",
+    "expected_loaded_helper_count": 45,
+    "loaded_helper_count": 45,
+    "match": true,
+    "observed_closure_sha256": "23724607a21de418a45acc5783162a7833e4567df709fae761e48ab4ca675dfa",
+    "runner_path_excluded": "scripts/frontier_cycle868_transient_two_cell_companion_encoder_2026_08_02.py"
   },
   "loaded_landed_import_count": 46,
   "loaded_landed_import_inventory": [
@@ -422,13 +474,13 @@
       "sha256": "438ab263262df8aee2ef1f2cc56fd6ac71a91d19c1fa9d422dd3f5418c7e340c"
     },
     {
-      "bytes": 44755,
-      "git_blob_sha1": "4dd9d4bb74e4ef5e752ff3ebcac0efa1d6b744aa",
+      "bytes": 49799,
+      "git_blob_sha1": "b8bd14f628ca705899a037833f98737095e2d5c0",
       "module_names": [
         "__main__"
       ],
       "relative_path": "scripts/frontier_cycle868_transient_two_cell_companion_encoder_2026_08_02.py",
-      "sha256": "52a78f5ca46e1d61e5e0faab5cfe3ba6ed29f0f5c9a66b4f2c3ed6c0646beeb8"
+      "sha256": "d98d69096c4b5de1ba1ee757b7f449b465b32278e500b6fb920b89fe1c9ee1fc"
     },
     {
       "bytes": 26029,
@@ -996,9 +1048,9 @@
   ],
   "numpy": "2.4.4",
   "python": "3.13.5",
-  "report_sha256": "dc16321775e6ef5b85a317f5c5af341bf28b42b8f242556cb7af6329aaf1817c",
-  "runner_sha256": "52a78f5ca46e1d61e5e0faab5cfe3ba6ed29f0f5c9a66b4f2c3ed6c0646beeb8",
-  "runtime_seconds": 49.04970041709021,
+  "report_sha256": "62f4a6a2a4a5cd27a50d5b1060f9d310f2e7db59ed5b19be4f7b320860b7bd5d",
+  "runner_sha256": "d98d69096c4b5de1ba1ee757b7f449b465b32278e500b6fb920b89fe1c9ee1fc",
+  "runtime_seconds": 50.31984899984673,
   "scope": {
     "claims_commutator_Gram_rank_is_an_auxiliary_minimum": false,
     "claims_global_JW_bridge_is_bounded_local": false,
@@ -1051,5 +1103,11 @@
     }
   ],
   "source_commit": "8622da346adf2db00f1e774faa63b542585353de",
+  "source_commit_object_certificate": {
+    "commit_object_exists": true,
+    "named_source_commit": "8622da346adf2db00f1e774faa63b542585353de",
+    "repository_has_git_metadata": true,
+    "verification_mode": "git_commit_object_plus_loaded_helper_closure"
+  },
   "status": "PASS"
 }

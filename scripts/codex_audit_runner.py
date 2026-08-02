@@ -166,10 +166,16 @@ def _nullable(schema: dict) -> dict:
     return {"anyOf": [schema, {"type": "null"}]}
 
 
-def _string_schema(*, enum: tuple[str, ...] | None = None) -> dict:
+def _string_schema(
+    *,
+    enum: tuple[str, ...] | None = None,
+    min_length: int | None = None,
+) -> dict:
     schema: dict = {"type": "string"}
     if enum is not None:
         schema["enum"] = list(enum)
+    if min_length is not None:
+        schema["minLength"] = min_length
     return schema
 
 
@@ -323,8 +329,12 @@ def no_go_output_schema() -> dict:
         }),
         "N7_steelman": _closed_schema({
             "route_id": _string_schema(),
-            "argument": _string_schema(),
-            "resolution": _string_schema(),
+            "argument": _string_schema(
+                min_length=no_go_discipline_gate.N7_STEELMAN_MIN_NORMALIZED_CHARS,
+            ),
+            "resolution": _string_schema(
+                min_length=no_go_discipline_gate.N7_STEELMAN_MIN_NORMALIZED_CHARS,
+            ),
             "resolved": {"type": "boolean"},
             **evidence_fields,
             "resolution_evidence_path": _string_schema(),

@@ -20,6 +20,7 @@ from typing import Any
 
 
 RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
+N7_STEELMAN_MIN_NORMALIZED_CHARS = 80
 
 # Publication-strength rank, mirroring compute_effective_status.RANK. This
 # module is a leaf import for the whole audit lane (apply, invalidate, queue,
@@ -4233,8 +4234,14 @@ def _validate_n7(packet: dict, status: str, manifest: dict[str, dict] | None) ->
         return "N7.route_id, N7.argument, and N7.resolution must be non-empty"
     if not isinstance(section.get("resolved"), bool):
         return "N7.resolved must be boolean"
-    if len(_norm(section["argument"])) < 80 or len(_norm(section["resolution"])) < 80:
-        return "N7.argument and N7.resolution must each contain at least 80 normalized characters"
+    if (
+        len(_norm(section["argument"])) < N7_STEELMAN_MIN_NORMALIZED_CHARS
+        or len(_norm(section["resolution"])) < N7_STEELMAN_MIN_NORMALIZED_CHARS
+    ):
+        return (
+            "N7.argument and N7.resolution must each contain at least "
+            f"{N7_STEELMAN_MIN_NORMALIZED_CHARS} normalized characters"
+        )
     error = _locator_error(section.get("evidence_path"), section.get("evidence_locator"), manifest, "N7")
     if error:
         return error

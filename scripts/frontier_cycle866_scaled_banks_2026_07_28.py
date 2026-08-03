@@ -417,20 +417,63 @@ def main() -> int:
                       "birth_datum": birth,
                       "mismatches": scan["mismatches"]}
     runtime = round(monotonic() - started, 3)
+
+    def integrity_b(B):
+        d = results[B]["derived_clock"]
+        m, t = map(int, d["first_allsync_equals_e2"].split("/"))
+        return (
+            ((d["allsync_on_tick_fraction"] is None)
+             == (d["allsync_stored"] == 0))
+            and 0 <= m <= t <= d["stamped_e2"]
+            and 0 < d["stamped_e2"] <= d["stamped_e1"] <= d["census_size"]
+        )
+
+    def integrity_c(B):
+        sc = results[B]["second_clock"]
+        expected_pairs = B * (B - 1) // 2
+        fracs = sc["pair_on_tick_fractions"]
+        return (
+            len(fracs) == expected_pairs
+            and len(sc["pair_dominant_gaps"]) == expected_pairs
+            and all(v is None or 0.0 <= v <= 1.0 for v in fracs.values())
+            and 1 <= sc["distinct_pair_cadence_signatures"]
+            <= expected_pairs
+        )
+
+    def integrity_d(B):
+        bd = results[B]["birth_datum"]
+        hist_total = sum(bd["offset_histogram"].values())
+        return (
+            hist_total == bd["cohort_member_rows"] > 0
+            and bd["native_pattern_functional"]
+            == (bd["native_stats"] is not None)
+            and bd["gauge_e1_functional"]
+            == (bd["gauge_stats"] is not None)
+        )
+
     checks = {
         "A_SCALED_SUBSTRATE": all(
             results[B]["derived_clock"]["stamped_e1"] > 0
             for B in BANK_COUNTS
         ),
-        "B_DERIVED_CLOCK_AT_SCALE": True,
-        "C_SECOND_CLOCK_TEST": True,
-        "D_BIRTH_DATUM_INTRINSIC": True,
+        "B_DERIVED_CLOCK_AT_SCALE": all(
+            integrity_b(B) for B in BANK_COUNTS
+        ),
+        "C_SECOND_CLOCK_TEST": all(
+            integrity_c(B) for B in BANK_COUNTS
+        ),
+        "D_BIRTH_DATUM_INTRINSIC": all(
+            integrity_d(B) for B in BANK_COUNTS
+        ),
         "E_CONTROLS": bool(
             controls["pass"]
             and all(results[B]["mismatches"] == 0 for B in BANK_COUNTS)
             and runtime < AUDIT_TIMEOUT_SEC
         ),
     }
+    # Gates are INTEGRITY conditions (bookkeeping consistency), never the
+    # desired physics outcome: the fractions/functionality findings are
+    # reported as data whichever way they fall.
     lines = ["CYCLE866_SCALED_BANKS",
              "OWNER_DIRECTED_RUN_TO_GROUND_NO_AXIOM_SURFACE_TOUCHED",
              f"DECLARED_PROBE events={EVENTS_USED} k=2 horizon={HORIZON}"

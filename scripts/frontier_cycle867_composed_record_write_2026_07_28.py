@@ -137,12 +137,50 @@ def main() -> int:
     )
     dead_set = set(dead_wires)
 
-    # --- The composed scan: base dynamics + register writes ---------------
+    # Safe register slots: dead wires that no gate ever READS (inputs) or
+    # WRITES (targets) — mutation is then STRUCTURALLY inert: the active
+    # dynamics cannot see or touch them. Derived from the raw schedules.
+    raw_schedules = C863.masked_h_schedules(program, sim)
+    gate_inputs: set = set()
+    gate_targets: set = set()
+    for schedule in raw_schedules:
+        for kind, a, b, c3, _mask in schedule:
+            if kind == 0:
+                gate_targets.add(a)
+            elif kind == 1:
+                gate_inputs.add(a)
+                gate_targets.add(b)
+            else:
+                gate_inputs.update((a, b))
+                gate_targets.add(c3)
+    safe_slots_pool = tuple(
+        w for w in dead_wires
+        if w not in gate_inputs and w not in gate_targets
+    )
+    slot_tags = [("G", 0)] + [
+        (f"B{b}", k) for b in (0, 1) for k in range(REGISTER_CAP)
+    ]
+    if len(safe_slots_pool) < len(slot_tags):
+        raise AssertionError(("insufficient safe slots",
+                              len(safe_slots_pool), len(slot_tags)))
+    slot_of = {tag: safe_slots_pool[i] for i, tag in enumerate(slot_tags)}
+    slot_wires = set(slot_of.values())
+
+    # --- The composed scan: base dynamics + REAL register writes ----------
     columns = C863.pack_lanes(states + (states[0],))
     register: list[list[tuple]] = [[] for _ in range(n)]
     register_counts = [0] * n
+    bank_write_ordinal = [[0, 0] for _ in range(n)]
     write_once_violations = 0
     dead_activation_conflicts = 0
+
+    def wire_write(tag, lane):
+        nonlocal write_once_violations
+        wire = slot_of[tag]
+        bit = 1 << lane
+        if columns[wire] & bit:
+            write_once_violations += 1
+        columns[wire] |= bit
     prev_bank = [
         C863.mask_over(columns, bank_dirty[b], uni_all) for b in (0, 1)
     ]
@@ -151,6 +189,7 @@ def main() -> int:
     mism = int(bool(prev_global & 1) != bool(prev_global & (1 << dup)))
     for lane in C863.lanes_of(prev_global & uni_all):
         e1_first_composed.setdefault(census[lane], 0)
+        wire_write(("G", 0), lane)
         if register_counts[lane] < REGISTER_CAP:
             register[lane].append((0, "G", sha256(bytes(
                 C863.lane_state(columns, lane))).hexdigest()[:16]))
@@ -174,45 +213,61 @@ def main() -> int:
                 bm = C863.mask_over(columns, bank_dirty[b], uni_all)
                 edge = bm & ~prev_bank[b]
                 for lane in C863.lanes_of(edge):
-                    mark = (lane, b, boundary)
-                    if mark in written_marks:
-                        write_once_violations += 1
-                    written_marks.add(mark)
-                    if register_counts[lane] < REGISTER_CAP:
+                    ordinal = bank_write_ordinal[lane][b]
+                    if ordinal < REGISTER_CAP:
+                        wire_write((f"B{b}", ordinal), lane)
                         register[lane].append(
                             (boundary, f"B{b}", sha256(bytes(
                                 C863.lane_state(columns, lane)
                             )).hexdigest()[:16])
                         )
+                    bank_write_ordinal[lane][b] = ordinal + 1
                     register_counts[lane] += 1
                 prev_bank[b] = bm
             for w in dead_wires:
+                if w in slot_wires:
+                    continue
                 if columns[w] & uni_sim:
                     dead_activation_conflicts += 1
                     break
 
+    slot_population = {
+        compact(tag): bin(columns[wire]).count("1")
+        for tag, wire in sorted(slot_of.items())
+    }
     cert_a = {
         "certificate": "A_DEAD_WIRE_REGISTER",
         "dead_wire_count": len(dead_wires),
+        "safe_slot_pool": len(safe_slots_pool),
+        "slots_allocated": len(slot_of),
+        "structural_inertness": {
+            "slots_in_gate_inputs": len(slot_wires & gate_inputs),
+            "slots_in_gate_targets": len(slot_wires & gate_targets),
+            "statement": (
+                "register slots are dead wires no gate reads or writes;"
+                " mutation cannot influence or be influenced by the"
+                " active dynamics — inertness is structural, and the"
+                " writes REALLY mutate the state columns"
+            ),
+        },
         "derivation_window": {
             "chunk_granularity_orbits": DEAD_CHUNK_ORBITS,
             "orbit_granularity_orbits": DEAD_ORBIT_ORBITS,
         },
         "dead_activation_conflicts_through_horizon":
             dead_activation_conflicts,
-        "write_once_violations": write_once_violations,
-        "total_register_writes": sum(register_counts),
-        "composed_model": (
-            "record writes fire at bank clean-edges; the write medium is"
-            " the boundary-dead wire family (Cycle-854 gauge freedom);"
-            " the active dynamics is the unmodified base dynamics, so"
-            " trajectory non-perturbation holds by construction and the"
-            " conflict counter verifies the medium stays dead"
-        ),
+        "write_once_violations_on_wires": write_once_violations,
+        "total_register_write_events": sum(register_counts),
+        "wire_bits_set_total": sum(slot_population.values()),
+        "slot_population_sample": dict(list(slot_population.items())[:6]),
     }
     cert_a["pass"] = (
-        len(dead_wires) > 0 and dead_activation_conflicts == 0
+        len(dead_wires) > 0
+        and len(slot_wires & gate_inputs) == 0
+        and len(slot_wires & gate_targets) == 0
+        and dead_activation_conflicts == 0
         and write_once_violations == 0
+        and sum(slot_population.values()) > 0
     )
 
     # --- Certificate B: register reproduces annotation at same horizon ----
@@ -227,20 +282,39 @@ def main() -> int:
         1 for key, b in e1_first_composed.items()
         if anno_e1.get(key) == b
     )
+    g_wire_lanes = set(C863.lanes_of(columns[slot_of[("G", 0)]] & uni_all))
+    b0_first_lanes = set(
+        C863.lanes_of(columns[slot_of[("B0", 0)]] & uni_all)
+    )
+    wire_existence_count = len(
+        g_wire_lanes | b0_first_lanes | set(
+            C863.lanes_of(columns[slot_of[("B1", 0)]] & uni_all)
+        )
+    )
     cert_b = {
         "certificate": "B_REGISTER_REPRODUCES_ANNOTATION",
         "declared_horizon": HORIZON,
         "composed_first_writes": len(e1_first_composed),
         "annotation_stamps_at_horizon": len(anno_e1),
         "moment_exact_matches": match,
+        "wire_level_existence": {
+            "lanes_with_any_first_slot_bit": wire_existence_count,
+            "statement": (
+                "record EXISTENCE is read back from the mutated state"
+                " wires; moments/contents are measurement metadata (host"
+                " log), disclosed as such"
+            ),
+        },
         "finding": (
             "the phantom-stamp seam is closed iff every annotation stamp"
-            " has a moment-exact composed register write and vice versa"
+            " has a moment-exact composed register write and vice versa,"
+            " with existence readable from the state itself"
         ),
     }
     cert_b["pass"] = (
         match == len(anno_e1) == len(e1_first_composed)
         and rep["mismatches"] == 0
+        and wire_existence_count >= len(e1_first_composed)
     )
 
     # --- Certificate C: formation locality probe ---------------------------
@@ -323,7 +397,16 @@ def main() -> int:
             " sample and one-flip perturbation class"
         ),
     }
-    cert_c["pass"] = rows["sampled"] > 0
+    # Integrity gate only — the locality/hypersensitivity outcome is
+    # reported as data whichever way it falls.
+    max_probes = rows["sampled"]
+    cert_c["pass"] = (
+        rows["sampled"] > 0
+        and 0 <= rows["far_content_equal"] <= rows["far_fired"]
+        <= max_probes
+        and 0 <= rows["near_content_equal"] <= rows["near_fired"]
+        <= max_probes
+    )
 
     runtime = round(monotonic() - started, 3)
     checks = {

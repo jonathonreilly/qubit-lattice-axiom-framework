@@ -1,0 +1,211 @@
+{
+  "box_sizes": [
+    3,
+    4,
+    5
+  ],
+  "fail": 0,
+  "gates": {
+    "A1.offset_is_centre_conjugate": {
+      "detail": "max deviation from (I-R)c over 48 frames and three box sizes 0.000000e+00",
+      "pass": true
+    },
+    "A2.reproduces_landed_site_map": {
+      "detail": "site mismatch against the landed map, 48 frames x 3 sizes 0",
+      "pass": true
+    },
+    "A3.integer_offset_is_special": {
+      "detail": "non-integer offsets among 144 frame-size pairs 0 against 4 for unimodular non-permutation rejectors",
+      "pass": true
+    },
+    "A4.zero_offset_rejector": {
+      "detail": "images leaving the box when the offset is dropped 7938",
+      "pass": true
+    },
+    "B1.L3.bijective": {
+      "detail": "bijective slot maps out of 48, slot count 98",
+      "pass": true
+    },
+    "B1.L5.bijective": {
+      "detail": "bijective slot maps out of 48, slot count 604",
+      "pass": true
+    },
+    "B2.L3.homomorphism": {
+      "detail": "composition mismatch over 2304 ordered pairs 0",
+      "pass": true
+    },
+    "B2.L5.homomorphism": {
+      "detail": "composition mismatch over 2304 ordered pairs 0",
+      "pass": true
+    },
+    "B3.L3.reversed_order_rejector": {
+      "detail": "mismatch under the reversed composition order 175104",
+      "pass": true
+    },
+    "B3.L5.reversed_order_rejector": {
+      "detail": "mismatch under the reversed composition order 1094400",
+      "pass": true
+    },
+    "B4.L3.maps_distinct": {
+      "detail": "distinct slot maps 48",
+      "pass": true
+    },
+    "B4.L5.maps_distinct": {
+      "detail": "distinct slot maps 48",
+      "pass": true
+    },
+    "C1.sigma_is_scalar_central": {
+      "detail": "max matrix commutator of -I against all 48 0",
+      "pass": true
+    },
+    "C2.noncentral_matrix_rejector": {
+      "detail": "frames failing to commute with a single-axis sign flip 32",
+      "pass": true
+    },
+    "C3.sigma_involution_not_a_frame": {
+      "detail": "sigma squares to the identity and is not one of the 24 proper frames",
+      "pass": true
+    },
+    "C4.L3.sigma_slot_central": {
+      "detail": "worst slot commutator of sigma against all 48 0",
+      "pass": true
+    },
+    "C4.L5.sigma_slot_central": {
+      "detail": "worst slot commutator of sigma against all 48 0",
+      "pass": true
+    },
+    "C5.L3.noncentral_slot_rejector": {
+      "detail": "frames whose slot map fails to commute with the flip 32",
+      "pass": true
+    },
+    "C5.L5.noncentral_slot_rejector": {
+      "detail": "frames whose slot map fails to commute with the flip 32",
+      "pass": true
+    },
+    "C6.L3.closed_form_recovered": {
+      "detail": "mismatch against the landed closed form for sigma 0",
+      "pass": true
+    },
+    "C6.L5.closed_form_recovered": {
+      "detail": "mismatch against the landed closed form for sigma 0",
+      "pass": true
+    },
+    "D1.templates_carry_the_body_diagonal": {
+      "detail": "templates carrying the four-cube body diagonal 24 of 24",
+      "pass": true
+    },
+    "D2.folded_stabilizer_order": {
+      "detail": "signed axis permutations preserving the stencil 12",
+      "pass": true
+    },
+    "D3.body_diagonal_criterion": {
+      "detail": "stencil stabilizer equals the set fixing the body-diagonal line, 48 of 48",
+      "pass": true
+    },
+    "D4.tick_fold_supplies_improper_half": {
+      "detail": "order without the periodic tick identification 6 against 12",
+      "pass": true
+    },
+    "D5.determinant_split": {
+      "detail": "proper 6 improper 6 within the stabilizer",
+      "pass": true
+    },
+    "D6.proper_half_is_the_sextet": {
+      "detail": "proper members among the 24 landed frames (1, 4, 9, 15, 18, 23)",
+      "pass": true
+    },
+    "D7.coset_count": {
+      "detail": "proper frames per stabilizer member 4",
+      "pass": true
+    },
+    "D8.orbit_structure": {
+      "detail": "stencil orbits under the derived group 2 of size [12]",
+      "pass": true
+    },
+    "D9.local_pieces_coincide": {
+      "detail": "worst spread over the 24 local pieces 0.000000e+00 with 24 distinct class tuples",
+      "pass": true
+    },
+    "E1.L3.derived_predicts_measured": {
+      "detail": "slots 98 agreement 48 of 48 invariant 12",
+      "pass": true
+    },
+    "E1.L4.derived_predicts_measured": {
+      "detail": "slots 279 agreement 48 of 48 invariant 12",
+      "pass": true
+    },
+    "E1.L5.derived_predicts_measured": {
+      "detail": "slots 604 agreement 48 of 48 invariant 12",
+      "pass": true
+    },
+    "E2.L3.separation": {
+      "detail": "within 1.243450e-10 floor outside 4.000000e+00 entry max 2.945214e+01",
+      "pass": true
+    },
+    "E2.L4.separation": {
+      "detail": "within 1.243450e-10 floor outside 4.000000e+00 entry max 2.945214e+01",
+      "pass": true
+    },
+    "E2.L5.separation": {
+      "detail": "within 1.243450e-10 floor outside 4.000000e+00 entry max 2.945214e+01",
+      "pass": true
+    },
+    "E3.L3.label_is_the_coset_count": {
+      "detail": "measured classes 4 matching the derived cosets, block size [6]",
+      "pass": true
+    },
+    "E3.L4.label_is_the_coset_count": {
+      "detail": "measured classes 4 matching the derived cosets, block size [6]",
+      "pass": true
+    },
+    "E3.L5.label_is_the_coset_count": {
+      "detail": "measured classes 4 matching the derived cosets, block size [6]",
+      "pass": true
+    },
+    "E4.full": {
+      "detail": "templates 24 derived 12 measured 12 floor 1.007048e+01",
+      "pass": true
+    },
+    "E4.half": {
+      "detail": "templates 12 derived 2 measured 2 floor 1.116895e+01",
+      "pass": true
+    },
+    "E4.orbit": {
+      "detail": "templates 12 derived 12 measured 12 floor 5.001437e+00",
+      "pass": true
+    },
+    "E4.pair": {
+      "detail": "templates 2 derived 1 measured 1 floor 3.141593e+00",
+      "pass": true
+    },
+    "E4.single_a": {
+      "detail": "templates 1 derived 1 measured 1 floor 1.221442e+00",
+      "pass": true
+    },
+    "E4.single_b": {
+      "detail": "templates 1 derived 1 measured 1 floor 2.500719e+00",
+      "pass": true
+    },
+    "E5.stencil_tracking": {
+      "detail": "mutilated stencils whose measured group equals the derived one 6 of 6",
+      "pass": true
+    }
+  },
+  "notes": {
+    "offset_escapes": 7938,
+    "rigid_order": 6,
+    "stencil_order": 12,
+    "tracked_stencils": 6
+  },
+  "pass": 46,
+  "runner": "physical_stencil_derived_centrality_cycle721_2026_08_02.py",
+  "sextet": [
+    1,
+    4,
+    9,
+    15,
+    18,
+    23
+  ],
+  "tick_length": 2
+}

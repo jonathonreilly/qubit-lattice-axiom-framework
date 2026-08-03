@@ -1,0 +1,44 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor review",
+ "block": "toe-time-blockF2-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "checker": "5/5 PASS 54s, zero refutations",
+  "primary": "5/5 PASS 98s"
+ },
+ "claim_type": "bounded_theorem",
+ "cycles": [
+  877
+ ],
+ "files": {
+  "docs/SHARDED_CONTENT_SURVIVAL_LAW_CYCLE877_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "766d1854a1c47993e970554567c739f609b4e4d0",
+   "sha256": "526b0f0a36233d470019b4e1463b0c84e07965581d7e38d986383b4fe64d3511"
+  },
+  "logs/runner-cache/frontier_cycle877_sharded_content_2026_07_28.txt": {
+   "git_blob": "be0f2ac3ada07acb9ffabb58a9734cf3d4452b54",
+   "sha256": "366d2cdd8336870aaf7a77fafcc64637061809333468395ca1883b6937d0ce7f"
+  },
+  "logs/runner-cache/frontier_cycle877_sharding_independent_check_2026_07_28.txt": {
+   "git_blob": "a84994efff57617bc018642c3a6f66b255d81921",
+   "sha256": "523e11085c8221c2b20b022ff5b1358892dd062c5be75222872eb1d05e5f7404"
+  },
+  "scripts/frontier_cycle877_sharded_content_2026_07_28.py": {
+   "git_blob": "bf03b74421462fba32eb8fd4061d188e1c13c9ab",
+   "sha256": "2cbb9314ac8b74ac465f6552e2363f43be64efa36cb0f5c4591ccf06b2e61dd3"
+  },
+  "scripts/frontier_cycle877_sharding_independent_check_2026_07_28.py": {
+   "git_blob": "cb34d8aaa954a4ff3dc3cd7c5ec1bdd5d64c3b3a",
+   "sha256": "7ae3d0d6e9494a740aca92ef93699d31110b5abd19327e896a2a0063d2f304da"
+  }
+ },
+ "headline": "the survival law is ONE WIRE (719/720 boundary probes; cone permits 295): always the flip's own shard; recovery 0.50/0.75/0.877 at S=2/4/8, asymptote 1-1/147; S<=160 pool bound; contiguity buys tail protection; defeating sharding costs k placed flips + 70% formation suppression",
+ "independence": "cross-context (different allocator, arithmetic boundaries, two shard rules the primary never builds; cell-for-cell reproduction)",
+ "note": "docs/SHARDED_CONTENT_SURVIVAL_LAW_CYCLE877_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "runtime_seconds": {
+  "checker": 54,
+  "primary": 98
+ }
+}

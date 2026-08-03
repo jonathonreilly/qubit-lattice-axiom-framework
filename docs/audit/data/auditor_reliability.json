@@ -121,8 +121,8 @@
     },
     "codex-gpt-5.6": {
       "audits_with_runner_class": {
-        "A": 404,
-        "B": 19,
+        "A": 405,
+        "B": 18,
         "C": 141,
         "D": 2,
         "E": 14,

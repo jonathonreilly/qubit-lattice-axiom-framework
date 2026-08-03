@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 131 |
-| Retained bounded rows | 362 |
+| Retained bounded rows | 363 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 36 |
 
@@ -157,7 +157,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (362)
+## Retained bounded rows (363)
 
 Sorted by load-bearing graph score (descending).
 
@@ -227,6 +227,7 @@ Sorted by load-bearing graph score (descending).
 - [`valley_linear_asymptotic_bridge_note`](../../docs/VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md) — score 8.907; audited 2026-05-11T23:53:57.595085+00:00
 - [`finite_rank_source_to_metric_theorem_note`](../../docs/FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md) — score 8.804; audited 2026-05-27T01:35:32.559501+00:00
 - [`moving_source_retarded_portability_note`](../../docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md) — score 8.500; audited 2026-05-04T23:31:50.701839+00:00
+- [`full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`](../../docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md) — score 8.477; audited 2026-08-03T02:57:07.306394+00:00
 - [`ordered_lattice_quasi_persistent_relaunch_2d_note`](../../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md) — score 8.459; audited 2026-05-19T14:19:25.694084+00:00
 - [`lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`](../../docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md) — score 8.392; audited 2026-07-11T22:29:04.561861+00:00
 - [`asymmetry_persistence_joint_card_note`](../../docs/ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md) — score 8.322; audited 2026-05-17T13:20:43.861405+00:00

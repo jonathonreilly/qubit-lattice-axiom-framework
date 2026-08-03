@@ -1,0 +1,31 @@
+c720 ambient stabilizer versus domain symmetry on the cycle-696 open-box static assembly
+box sizes 3 4 5 | domains: full box, corner simplices, one slab
+A order-12 set: distinct 12 proper 6 improper 6 | proper half is the cycle-719 sextet True
+A the proper half is the graph of the sign character True | composition-closed True | centre reflection central True
+-- L=3 n=98 --
+R1 site map vs compiler 0 | slot bijections 25/25 | composition mismatch 0
+B ambient sextet dev 1.243450e-10 centre-reflection dev 1.243450e-10 | entry max 2.945214e+01 | non-sextet floor 4.000000e+00
+  full box    |D|=  98 sym 12=6+6 levels 13 = orbits 13 within 2.391640e-11 gap 4.286579e-05 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 25 deficit 12 | blind 6 -> 6
+  corner K=2  |D|=  15 sym 6=3+3 levels 4 = orbits 4 within 2.081668e-17 gap 1.951044e-04 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 4 deficit 0 | blind 0 -> 0
+  corner K=3  |D|=  40 sym 6=3+3 levels 10 = orbits 10 within 6.661338e-16 gap 1.576889e-05 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 10 deficit 0 | blind 3 -> 0
+  corner K=4  |D|=  70 sym 6=3+3 levels 17 = orbits 17 within 4.718448e-16 gap 1.077019e-05 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 17 deficit 0 | blind 6 -> 0
+  slab x<=1   |D|=  57 sym 2=1+1 levels 33 = orbits 33 within 2.775558e-16 gap 2.874069e-06 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 33 deficit 0 | blind 5 -> 1
+-- L=4 n=279 --
+R1 site map vs compiler 0 | slot bijections 25/25 | composition mismatch 0
+B ambient sextet dev 1.243450e-10 centre-reflection dev 1.243450e-10 | entry max 2.945214e+01 | non-sextet floor 4.000000e+00
+  full box    |D|= 279 sym 12=6+6 levels 34 = orbits 34 within 7.638064e-10 gap 1.264701e-04 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 64 deficit 30 | blind 19 -> 19
+  corner K=2  |D|=  15 sym 6=3+3 levels 4 = orbits 4 within 2.081668e-17 gap 1.951044e-04 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 4 deficit 0 | blind 0 -> 0
+  corner K=3  |D|=  43 sym 6=3+3 levels 11 = orbits 11 within 3.885781e-16 gap 4.613333e-05 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 11 deficit 0 | blind 0 -> 0
+  corner K=4  |D|=  91 sym 6=3+3 levels 21 = orbits 21 within 6.217249e-15 gap 8.983150e-06 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 21 deficit 0 | blind 3 -> 0
+  slab x<=1   |D|= 115 sym 2=1+1 levels 64 = orbits 64 within 4.024558e-16 gap 1.705615e-06 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 64 deficit 0 | blind 3 -> 3
+-- L=5 n=604 --
+R1 site map vs compiler 0 | slot bijections 25/25 | composition mismatch 0
+B ambient sextet dev 1.243450e-10 centre-reflection dev 1.243450e-10 | entry max 2.945214e+01 | non-sextet floor 4.000000e+00
+  full box    |D|= 604 sym 12=6+6 levels 66 = orbits 66 within 4.591440e-09 gap 1.750560e-05 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 130 deficit 64 | blind 12 -> 12
+  corner K=2  |D|=  15 sym 6=3+3 levels 4 = orbits 4 within 2.081668e-17 gap 1.951044e-04 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 4 deficit 0 | blind 0 -> 0
+  corner K=3  |D|=  43 sym 6=3+3 levels 11 = orbits 11 within 3.885781e-16 gap 4.613333e-05 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 11 deficit 0 | blind 0 -> 0
+  corner K=4  |D|=  94 sym 6=3+3 levels 22 = orbits 22 within 2.664535e-15 gap 3.428924e-05 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 22 deficit 0 | blind 0 -> 0
+  slab x<=1   |D|= 193 sym 2=1+1 levels 105 = orbits 105 within 2.220446e-15 gap 3.660977e-06 | cls 4 coset 1.243450e-10 cross 4.000000e+00 | perm orbits 105 deficit 0 | blind 1 -> 1
+R3 reversed composition differs on 456/576 frame pairs | R4 bumped-diagonal survivors 2/6 at 1.000000e+00 | R5 other-side grouping 4.000000e+00
+D0 over all rows: largest within-orbit spread 4.591440e-09 smallest level gap 1.705615e-06 smallest ratio 3.812660e+03
+TOTAL: PASS=98 FAIL=0

@@ -11914,7 +11914,8 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
             return True, set(), set(), []
 
         launch = mock.Mock(
-            side_effect=lambda row, all_rows, pass_no, wd, timeout, round_no=1: {
+            side_effect=lambda row, all_rows, pass_no, wd, timeout, round_no=1,
+            claim_packet_cache=None: {
                 "cid": row["claim_id"], "pass": pass_no, "round": round_no,
             }
         )
@@ -11942,8 +11943,12 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         workdir = self.root / "wd2"
         workdir.mkdir(parents=True)
         proc = mock.Mock(pid=1234)
+
+        def rendered_prompt(*_args, audit_invocation_id=None, **_kwargs):
+            return f"packet invocation={audit_invocation_id}"
+
         with mock.patch.object(
-            m.audit_runner, "render_prompt", return_value="packet"
+            m.audit_runner, "render_prompt", side_effect=rendered_prompt
         ), mock.patch.object(
             m.audit_runner, "PROMPT_TEMPLATE_PATH"
         ) as template_path, mock.patch.object(
@@ -11970,6 +11975,51 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         self.assertEqual(schema["type"], "object")
         self.assertFalse(schema["additionalProperties"])
         self.assertIn("compute_required", schema["required"])
+
+    def test_critical_seats_share_one_frozen_claim_packet(self):
+        m = _import("orchestrate_audit_batch")
+        row = {**self._row(), "criticality": "critical"}
+        rows = {"spin_row": row}
+        workdir = self.root / "wd-frozen-packet"
+        workdir.mkdir(parents=True)
+        processes = [mock.Mock(pid=1234), mock.Mock(pid=1235)]
+
+        def rendered_prompt(*_args, audit_invocation_id=None, **_kwargs):
+            return f"frozen evidence\ninvocation={audit_invocation_id}\n"
+
+        packet_cache: dict[str, dict] = {}
+        with mock.patch.object(
+            m.audit_runner, "render_prompt", side_effect=rendered_prompt
+        ) as render, mock.patch.object(
+            m.audit_runner, "PROMPT_TEMPLATE_PATH"
+        ) as template_path, mock.patch.object(
+            m, "selection_fingerprint", return_value="selection"
+        ), mock.patch.object(
+            m.subprocess, "Popen", side_effect=processes
+        ):
+            template_path.read_text.return_value = "template"
+            first = m.launch_worker(
+                row, rows, 1, workdir, 120, 1, packet_cache
+            )
+            self.addCleanup(first["log_handle"].close)
+            second = m.launch_worker(
+                row, rows, 2, workdir, 120, 1, packet_cache
+            )
+            self.addCleanup(second["log_handle"].close)
+
+        self.assertEqual(render.call_count, 1)
+        self.assertEqual(set(packet_cache), {"spin_row"})
+        first_prompt = (first["isolated"] / "AUDIT_TASK.md").read_text()
+        second_prompt = (second["isolated"] / "AUDIT_TASK.md").read_text()
+        self.assertIn(first["invocation_id"], first_prompt)
+        self.assertIn(second["invocation_id"], second_prompt)
+        self.assertNotEqual(first["invocation_id"], second["invocation_id"])
+        self.assertEqual(
+            first_prompt.replace(first["invocation_id"], "INVOCATION"),
+            second_prompt.replace(second["invocation_id"], "INVOCATION"),
+        )
+        self.assertEqual(first["evidence_manifest"], second["evidence_manifest"])
+        self.assertIsNot(first["evidence_manifest"], second["evidence_manifest"])
 
     def test_conditional_rows_wait_for_repair_across_runs(self):
         """A re-queued audited_conditional row is not re-targeted until its

@@ -19,6 +19,7 @@ clean guard is repeated immediately before every mutation and race retry.
 from __future__ import annotations
 
 import argparse
+import copy
 import fcntl
 import hashlib
 import json
@@ -859,19 +860,20 @@ def fit_worker_prompt_to_transport_limit(
     )
 
 
-def launch_worker(
+def prepare_claim_packet(
     row: dict,
     rows: dict[str, dict],
-    pass_no: int,
-    workdir: Path,
     runner_timeout: int,
-    round_no: int = 1,
 ) -> dict:
+    """Render one immutable evidence packet for every seat on a claim.
+
+    Cross-confirmation is independence of judgment over the same restricted
+    evidence, not a request to execute the scientific runner once per judge.
+    The placeholder is exactly UUID-sized, so replacing it with each seat's
+    invocation id cannot change the transport decision.
+    """
     cid = row["claim_id"]
-    key = artifact_key(cid)
-    seat = "A" if pass_no == 1 else "B"
-    ident = f"{seat}-{datetime.now(timezone.utc).strftime('%Y%m%d')}-{uuid.uuid4().hex[:8]}"
-    invocation_id = uuid.uuid4().hex
+    invocation_placeholder = uuid.uuid4().hex
     evidence_manifest: dict[str, dict] = {}
     template = audit_runner.PROMPT_TEMPLATE_PATH.read_text(encoding="utf-8")
     prompt = audit_runner.render_prompt(
@@ -881,7 +883,7 @@ def launch_worker(
         runner_timeout,
         use_cache=False,
         evidence_manifest_out=evidence_manifest,
-        audit_invocation_id=invocation_id,
+        audit_invocation_id=invocation_placeholder,
     )
     clipped_evidence = prompt_has_clipped_evidence(evidence_manifest)
     if clipped_evidence:
@@ -909,6 +911,49 @@ def launch_worker(
             f"{cid}: development packet is {len(prompt)} characters; "
             "packet must be narrowed without converting transport size into a verdict"
         )
+    if prompt.count(invocation_placeholder) != 1:
+        raise ValueError(
+            f"{cid}: prepared packet must contain exactly one invocation placeholder"
+        )
+    return {
+        "prompt": prompt,
+        "invocation_placeholder": invocation_placeholder,
+        "evidence_manifest": evidence_manifest,
+        "transport_bound": transport_bound,
+    }
+
+
+def launch_worker(
+    row: dict,
+    rows: dict[str, dict],
+    pass_no: int,
+    workdir: Path,
+    runner_timeout: int,
+    round_no: int = 1,
+    claim_packet_cache: dict[str, dict] | None = None,
+) -> dict:
+    cid = row["claim_id"]
+    key = artifact_key(cid)
+    seat = "A" if pass_no == 1 else "B"
+    ident = f"{seat}-{datetime.now(timezone.utc).strftime('%Y%m%d')}-{uuid.uuid4().hex[:8]}"
+    invocation_id = uuid.uuid4().hex
+    prepared = (
+        claim_packet_cache.get(cid)
+        if claim_packet_cache is not None
+        else None
+    )
+    if prepared is None:
+        prepared = prepare_claim_packet(row, rows, runner_timeout)
+        if claim_packet_cache is not None:
+            claim_packet_cache[cid] = prepared
+    invocation_placeholder = prepared["invocation_placeholder"]
+    prompt = prepared["prompt"].replace(
+        invocation_placeholder,
+        invocation_id,
+        1,
+    )
+    evidence_manifest = copy.deepcopy(prepared["evidence_manifest"])
+    transport_bound = copy.deepcopy(prepared["transport_bound"])
 
     # Artifact names carry the round so a claim legitimately re-entering a
     # later round (e.g. a critical row resuming at awaiting_second) never
@@ -3637,12 +3682,14 @@ def main() -> int:
         transport_quarantines: set[str] = set()
         try:
             for row in batch:
+                claim_packet_cache: dict[str, dict] = {}
                 for pass_no in passes_for_row(row):
                     try:
                         jobs.append(
                             launch_worker(
                                 row, rows, pass_no, workdir,
                                 args.runner_timeout_sec, round_no,
+                                claim_packet_cache,
                             )
                         )
                     except PromptTransportBlockedError as exc:
@@ -3653,6 +3700,11 @@ def main() -> int:
                             "result": "prompt_transport_blocked",
                             "detail": str(exc),
                         })
+                        # Every seat on this claim receives the same complete
+                        # packet. A deterministic transport failure therefore
+                        # applies to every peer; do not rebuild expensive live
+                        # evidence only to reproduce it.
+                        break
                     except Exception as exc:
                         launch_blocked = True
                         report.append({

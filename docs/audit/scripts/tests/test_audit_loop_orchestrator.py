@@ -928,7 +928,7 @@ class BatchExitSemanticsTest(unittest.TestCase):
         row = {
             "claim_id": "oversized",
             "claim_type": "bounded_theorem",
-            "criticality": "ordinary",
+            "criticality": "critical",
         }
         lock = mock.Mock()
         with tempfile.TemporaryDirectory() as tmp:
@@ -946,7 +946,7 @@ class BatchExitSemanticsTest(unittest.TestCase):
                     "--claims",
                     "oversized",
                     "--max-workers",
-                    "1",
+                    "2",
                     "--rounds",
                     "1",
                     "--campaign-quarantine-file",
@@ -970,7 +970,7 @@ class BatchExitSemanticsTest(unittest.TestCase):
                 side_effect=batch.PromptTransportBlockedError(
                     "prompt remains 1636029 chars after removing rendered N8"
                 ),
-            ), mock.patch.object(
+            ) as launch_worker, mock.patch.object(
                 batch, "start_progress_ticker"
             ), mock.patch.object(
                 batch, "maybe_progress_summary"
@@ -997,6 +997,7 @@ class BatchExitSemanticsTest(unittest.TestCase):
                 batch.PROMPT_TRANSPORT_QUARANTINE_RESULT,
             },
         )
+        self.assertEqual(launch_worker.call_count, 1)
         wait_workers.assert_not_called()
         lock.close.assert_called_once_with()
 
@@ -6153,11 +6154,10 @@ class CampaignContractTest(unittest.TestCase):
                             raise OSError("HEAD unavailable after child exit")
                         return "same"
 
-                    completed = mock.Mock(
-                        returncode=batch.CLEANUP_INTEGRITY_EXIT_CODE
-                    )
+                    child = mock.Mock(pid=4321)
+                    child.wait.return_value = batch.CLEANUP_INTEGRITY_EXIT_CODE
                     with mock.patch.object(
-                        audit_loop.subprocess, "run", return_value=completed
+                        audit_loop.subprocess, "Popen", return_value=child
                     ), mock.patch.object(
                         audit_loop, "git_head", side_effect=git_head
                     ), mock.patch.object(
@@ -6174,14 +6174,15 @@ class CampaignContractTest(unittest.TestCase):
             audit_loop.PROGRESS.update(original_progress)
 
     def test_child_end_reporting_failure_still_propagates_on_ordinary_result(self):
-        completed = mock.Mock(returncode=1)
+        child = mock.Mock(pid=4321)
+        child.wait.return_value = 1
 
         def emit(message):
             if message.startswith("END "):
                 raise OSError("stdout unavailable after ordinary child exit")
 
         with mock.patch.object(
-            audit_loop.subprocess, "run", return_value=completed
+            audit_loop.subprocess, "Popen", return_value=child
         ), mock.patch.object(
             audit_loop, "git_head", return_value="same"
         ), mock.patch.object(
@@ -6192,6 +6193,30 @@ class CampaignContractTest(unittest.TestCase):
                 "stdout unavailable after ordinary child exit",
             ):
                 audit_loop.run_command("batch-probe", ["child"])
+
+    def test_parent_interrupt_contains_owned_child_phase_before_reraising(self):
+        original_progress = dict(audit_loop.PROGRESS)
+        child = mock.Mock(pid=4321)
+        child.poll.return_value = None
+        child.wait.side_effect = [KeyboardInterrupt(), 0]
+        try:
+            with mock.patch.object(
+                audit_loop.subprocess, "Popen", return_value=child
+            ) as popen, mock.patch.object(
+                audit_loop.os, "killpg"
+            ) as killpg, mock.patch.object(
+                audit_loop, "emit"
+            ), self.assertRaises(KeyboardInterrupt):
+                audit_loop.run_command("batch-probe", ["child"])
+
+            self.assertTrue(popen.call_args.kwargs["start_new_session"])
+            killpg.assert_called_once_with(4321, audit_loop.signal.SIGINT)
+            child.wait.assert_has_calls(
+                [mock.call(), mock.call(timeout=30)]
+            )
+        finally:
+            audit_loop.PROGRESS.clear()
+            audit_loop.PROGRESS.update(original_progress)
 
     def test_parent_finalizers_propagate_ordinary_failure_after_exhaustive_close(
         self,

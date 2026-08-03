@@ -1,11 +1,25 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-08-03T09:30:17.109832+00:00",
   "audit_invocation_history": [
     "837a3e41a24c4cb489655a5280b1eb82",
-    "12f24f14954c44f4a41400e973e306b1"
+    "12f24f14954c44f4a41400e973e306b1",
+    "807f1829c5c749d0b88d4841c5a5f16d"
   ],
-  "audit_invocation_id": "12f24f14954c44f4a41400e973e306b1",
+  "audit_invocation_id": "807f1829c5c749d0b88d4841c5a5f16d",
   "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py"
+    },
     "criticality": "critical",
     "dep_axiom_premise_note_hash": {},
     "dep_claim_scope": {},
@@ -15,22 +29,23 @@
     "helper_runner_hashes": {},
     "judgment_fingerprint": {
       "claim_id": "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
-      "digest": "825caae8a0450e08b18272965d2114dd06d151f5dbf59f931aabbee0379e6e77",
+      "digest": "001e81f0c7de7ca6ee4bb68d8869b66020756322d209a14587e16219a1171d63",
       "judgment": {
-        "audit_date": null,
-        "audit_invocation_id": "12f24f14954c44f4a41400e973e306b1",
-        "audit_status": "audit_in_progress",
-        "auditor": null,
-        "auditor_confidence": null,
-        "auditor_family": null,
-        "auditor_model": null,
-        "auditor_reasoning_effort": null,
-        "chain_closes": null,
-        "chain_closure_explanation": null,
-        "claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.",
+        "audit_date": "2026-08-03T09:30:17.109832+00:00",
+        "audit_invocation_id": "807f1829c5c749d0b88d4841c5a5f16d",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-judicial-2-20260803-9db304d0",
+        "auditor_confidence": "judicial",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-89e0aebe\", \"judge\": 1, \"rationale\": \"The scoped positive theorem closes by Pauli anticommutation and parity algebra: the displayed connection identity yields uniform Z_2 plaquette curvature and the rectangular area law. The note expressly leaves UD_2 and braid-class identification outside that scope, and the packet\\u2019s source-shape check says the No-Go Discipline gate is not triggered.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-9db304d0\", \"judge\": 2, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-7c9a4f99\", \"judge\": 3, \"rationale\": \"The Pauli and parity algebra closes the positive class-A base-flux identities. However, the source also asserts a scoped negative boundary and conditional obstruction, while the runner provides no route-specific N1 checks, five-resolution N5 evidence, complete N6/N8 dispositions, or independently resolved N7 steelman. The development-tier non-clean verdict may omit the structured packet when the N1\\u2013N8 failures are stated in the rationale, so audited_conditional is the applyable conservative tuple.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-836715f2\", \"judge\": 4, \"rationale\": \"The displayed Pauli and parity identities establish the scalar connection, uniform curvature, and rectangular area law exactly. The note\\u2019s UD_2 and braid-class language expressly excludes those conclusions from scope and records an open bridge rather than asserting a no-go or named-wall theorem; the packet\\u2019s source-shape gate is therefore false.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-8327b71e\", \"judge\": 5, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities, but the artifact also asserts that the base graph supplies no plaquette 2-cell, identifies a missing UD_2 bridge as the boundary, and states a conditional braid-character obstruction. Those are negative-boundary assertions, and the restricted packet does not provide the route, rhetoric-resolution, partial-closure, steelman, and cross-cycle evidence needed for a clean No-Go Discipline pass.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]",
+        "claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
         "claim_type": "positive_theorem",
-        "claim_type_provenance": "audited_pending_cross_confirmation",
+        "claim_type_provenance": "judicial_review",
         "cross_confirmation": {
+          "agreement_schema": "audit_tuple_v2",
           "first_audit": {
             "audit_date": "2026-08-03T09:20:14.769500+00:00",
             "audit_invocation_id": "837a3e41a24c4cb489655a5280b1eb82",
@@ -59,6 +74,153 @@
             "verdict": "audited_clean",
             "verdict_rationale": "Using sigma_i sigma_j=-sigma_j sigma_i for i distinct and sigma_i^2=I, the displayed T gives the spin-diagonal identity for every integer site; direct substitution of the eta parities gives F=-1 in all three coordinate planes, and internal-edge cancellation gives Hol=(-1)^(ab) for arbitrary rectangles. The runner genuinely checks finite instances and gauge invariance, while its unconditional scope checks are not used as proof. Residual topology questions concerning UD_2 and braid classes are expressly outside the audited scope."
           },
+          "judicial_panel_record_v1": {
+            "cid": "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+            "disagreement_fingerprint": {
+              "claim_id": "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+              "first_audit_invocation_id": "837a3e41a24c4cb489655a5280b1eb82",
+              "note_hash": "5c2fe1924c69110be45343e4cd4fff9abfae08a6d596b923d92d232edd963f65",
+              "schema": "judicial_disagreement_fingerprint_v1",
+              "seat_summaries_sha256": "81fb773b8e606dc105065626365a1d8c89e5d79e7daff153fb7191eca632f1fd",
+              "second_audit_invocation_id": "12f24f14954c44f4a41400e973e306b1"
+            },
+            "failures": [],
+            "invocation_id": "807f1829c5c749d0b88d4841c5a5f16d",
+            "majority_count": 3,
+            "panel": 1,
+            "result": "majority_candidate",
+            "schema": "judicial_panel_record_v1",
+            "tally": [
+              {
+                "count": 3,
+                "tuple": [
+                  "second",
+                  "audited_conditional",
+                  "positive_theorem",
+                  "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+                  "A",
+                  null,
+                  [
+                    "bounded_with_named_walls",
+                    "conditional_wall_rationale",
+                    "derived_no_go_boundary"
+                  ]
+                ]
+              },
+              {
+                "count": 2,
+                "tuple": [
+                  "first",
+                  "audited_clean",
+                  "positive_theorem",
+                  "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.",
+                  "A",
+                  null,
+                  []
+                ]
+              }
+            ],
+            "votes": [
+              {
+                "auditor": "codex-judicial-1-20260803-89e0aebe",
+                "first_auditor_error": "none",
+                "hybrid_resolution_note": null,
+                "judge": 1,
+                "judgment_rationale": "The scoped positive theorem closes by Pauli anticommutation and parity algebra: the displayed connection identity yields uniform Z_2 plaquette curvature and the rectangular area law. The note expressly leaves UD_2 and braid-class identification outside that scope, and the packet\u2019s source-shape check says the No-Go Discipline gate is not triggered.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": "Recheck if the scope later expands to a UD_2 null-homotopy or braid-class statement.",
+                "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "For the displayed T and eta phases, T(x)^dag sigma_mu T(x+e_mu)=eta_mu(x) I_2, which yields uniform coordinate-plaquette curvature -1 and Hol(rectangle a x b)=(-1)^(ab).",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "It incorrectly treated explicit scope exclusions and a conditional warning about a future UD_2 bridge as asserted negative results requiring N1-N8, even though the ratified claim stops before either topological conclusion.",
+                "sided_with": "first"
+              },
+              {
+                "auditor": "codex-judicial-2-20260803-9db304d0",
+                "first_auditor_error": "It narrowed the artifact to its positive algebra while overlooking the source\u2019s asserted scoped negative boundary, named missing UD_2 bridge, and conditional obstruction. Those assertions require honest negative-assertion classification, and an audited_clean verdict would require a structured N1\u2013N8 PASS packet, which is absent.",
+                "hybrid_resolution_note": null,
+                "judge": 2,
+                "judgment_rationale": "The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.",
+                "negative_assertion_classes": [
+                  "bounded_with_named_walls",
+                  "conditional_wall_rationale",
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "runner_artifact_issue: add live route-specific N1 checks, five-resolution N5 checks, N6/N8 dispositions, and an independently resolved N7 steelman; also add a dated downstream-hygiene line to this note's own boundary so the repaired packet re-enters audit.",
+                "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "T(x)^dag sigma_mu T(x + e_mu) = eta_mu(x) I_2.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_conditional",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              },
+              {
+                "auditor": "codex-judicial-3-20260803-7c9a4f99",
+                "first_auditor_error": "It treated the artifact\u2019s explicit scoped negative boundary, named UD_2 bridge blocker, and conditional obstruction as mere coverage disclaimers, yielding an empty negative-assertion declaration and an audited-clean verdict without the required N1\u2013N8 support.",
+                "hybrid_resolution_note": null,
+                "judge": 3,
+                "judgment_rationale": "The Pauli and parity algebra closes the positive class-A base-flux identities. However, the source also asserts a scoped negative boundary and conditional obstruction, while the runner provides no route-specific N1 checks, five-resolution N5 evidence, complete N6/N8 dispositions, or independently resolved N7 steelman. The development-tier non-clean verdict may omit the structured packet when the N1\u2013N8 failures are stated in the rationale, so audited_conditional is the applyable conservative tuple.",
+                "negative_assertion_classes": [
+                  "bounded_with_named_walls",
+                  "conditional_wall_rationale",
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "runner_artifact_issue: add live route-specific N1 checks, five-resolution N5 checks, N6/N8 dispositions, and an independently resolved N7 steelman; also add a dated downstream-hygiene line to this note's own boundary so the repaired packet re-enters audit.",
+                "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "T(x)^dag sigma_mu T(x + e_mu) = eta_mu(x) I_2.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_conditional",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              },
+              {
+                "auditor": "codex-judicial-4-20260803-836715f2",
+                "first_auditor_error": "none",
+                "hybrid_resolution_note": null,
+                "judge": 4,
+                "judgment_rationale": "The displayed Pauli and parity identities establish the scalar connection, uniform curvature, and rectangular area law exactly. The note\u2019s UD_2 and braid-class language expressly excludes those conclusions from scope and records an open bridge rather than asserting a no-go or named-wall theorem; the packet\u2019s source-shape gate is therefore false.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": null,
+                "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": null,
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "It misclassifies explicit scope exclusions and coverage routing as asserted negative-boundary classes, then makes an inapplicable N1-N8 packet the condition for accepting the independently closed positive algebra.",
+                "sided_with": "first"
+              },
+              {
+                "auditor": "codex-judicial-5-20260803-8327b71e",
+                "first_auditor_error": "It treated the boundary prose as mere coverage routing, but the note affirmatively derives a scoped negative boundary and states a conditional obstruction tied to the missing UD_2 bridge; those assertions trigger No-Go Discipline and preclude an audited_clean verdict without N1-N8 closure.",
+                "hybrid_resolution_note": null,
+                "judge": 5,
+                "judgment_rationale": "The Pauli and parity algebra closes the positive base-flux identities, but the artifact also asserts that the base graph supplies no plaquette 2-cell, identifies a missing UD_2 bridge as the boundary, and states a conditional braid-character obstruction. Those are negative-boundary assertions, and the restricted packet does not provide the route, rhetoric-resolution, partial-closure, steelman, and cross-cycle evidence needed for a clean No-Go Discipline pass.",
+                "negative_assertion_classes": [
+                  "bounded_with_named_walls",
+                  "conditional_wall_rationale",
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "runner_artifact_issue: add live route-specific N1 checks, five-resolution N5 checks, N6/N8 dispositions, and an independently resolved N7 steelman; also add a dated downstream-hygiene line to this note's own boundary so the repaired packet re-enters audit.",
+                "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "T(x)^dag sigma_mu T(x + e_mu) = eta_mu(x) I_2.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_conditional",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              }
+            ]
+          },
+          "mode": "judicial_panel_majority",
           "second_audit": {
             "audit_date": "2026-08-03T09:20:14.776574+00:00",
             "audit_invocation_id": "12f24f14954c44f4a41400e973e306b1",
@@ -91,14 +253,40 @@
             "verdict": "audited_conditional",
             "verdict_rationale": "The positive algebra is exact: direct Pauli anticommutation gives the displayed scalar connection, uniform curvature -1, gauge invariance, and the rectangle law (-1)^(ab). The negative-boundary gate does not close: N1 lacks five closed alternative mechanisms, N2 has no complete wall-independence record, N3 lacks dispositions for authenticated boundary/axiom/obstruction occurrences, and N4 supplies no prior-route residual match. N5 has no live five-resolution checks, N6 candidates and N8 echoes remain undispositioned, and N7 lacks an independently resolved steelman. Until those audit artifacts exist, the base-flux calculation is safe bounded content but the note cannot receive clean retained-grade ratification."
           },
-          "status": "disagreement"
+          "status": "third_confirmed_second",
+          "third_audit": {
+            "audit_date": "2026-08-03T09:30:17.109832+00:00",
+            "audit_invocation_id": "807f1829c5c749d0b88d4841c5a5f16d",
+            "auditor": "codex-judicial-2-20260803-9db304d0",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+            "claim_type": "positive_theorem",
+            "first_auditor_error": "It narrowed the artifact to its positive algebra while overlooking the source\u2019s asserted scoped negative boundary, named missing UD_2 bridge, and conditional obstruction. Those assertions require honest negative-assertion classification, and an audited_clean verdict would require a structured N1\u2013N8 PASS packet, which is absent.",
+            "independence": "judicial_review",
+            "judgment_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-89e0aebe\", \"judge\": 1, \"rationale\": \"The scoped positive theorem closes by Pauli anticommutation and parity algebra: the displayed connection identity yields uniform Z_2 plaquette curvature and the rectangular area law. The note expressly leaves UD_2 and braid-class identification outside that scope, and the packet\\u2019s source-shape check says the No-Go Discipline gate is not triggered.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-9db304d0\", \"judge\": 2, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-7c9a4f99\", \"judge\": 3, \"rationale\": \"The Pauli and parity algebra closes the positive class-A base-flux identities. However, the source also asserts a scoped negative boundary and conditional obstruction, while the runner provides no route-specific N1 checks, five-resolution N5 evidence, complete N6/N8 dispositions, or independently resolved N7 steelman. The development-tier non-clean verdict may omit the structured packet when the N1\\u2013N8 failures are stated in the rationale, so audited_conditional is the applyable conservative tuple.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-836715f2\", \"judge\": 4, \"rationale\": \"The displayed Pauli and parity identities establish the scalar connection, uniform curvature, and rectangular area law exactly. The note\\u2019s UD_2 and braid-class language expressly excludes those conclusions from scope and records an open bridge rather than asserting a no-go or named-wall theorem; the packet\\u2019s source-shape gate is therefore false.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-8327b71e\", \"judge\": 5, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities, but the artifact also asserts that the base graph supplies no plaquette 2-cell, identifies a missing UD_2 bridge as the boundary, and states a conditional braid-character obstruction. Those are negative-boundary assertions, and the restricted packet does not provide the route, rhetoric-resolution, partial-closure, steelman, and cross-cycle evidence needed for a clean No-Go Discipline pass.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "bounded_with_named_walls",
+              "conditional_wall_rationale",
+              "derived_no_go_boundary"
+            ],
+            "second_auditor_error": "none",
+            "sided_with": "second",
+            "verdict": "audited_conditional"
+          }
         },
         "decoration_parent_claim_id": null,
-        "independence": null,
-        "load_bearing_step": null,
-        "load_bearing_step_class": null,
-        "negative_assertion_classes": null,
-        "notes_for_re_audit_if_any": null,
+        "independence": "judicial_review",
+        "load_bearing_step": "T(x)^dag sigma_mu T(x + e_mu) = eta_mu(x) I_2.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [
+          "bounded_with_named_walls",
+          "conditional_wall_rationale",
+          "derived_no_go_boundary"
+        ],
+        "notes_for_re_audit_if_any": "runner_artifact_issue: add live route-specific N1 checks, five-resolution N5 checks, N6/N8 dispositions, and an independently resolved N7 steelman; also add a dated downstream-hygiene line to this note's own boundary so the repaired packet re-enters audit.",
         "open_dependency_paths": [],
         "runner_check_breakdown": {
           "A": 0,
@@ -107,7 +295,7 @@
           "D": 0,
           "total_pass": 0
         },
-        "verdict_rationale": null
+        "verdict_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-89e0aebe\", \"judge\": 1, \"rationale\": \"The scoped positive theorem closes by Pauli anticommutation and parity algebra: the displayed connection identity yields uniform Z_2 plaquette curvature and the rectangular area law. The note expressly leaves UD_2 and braid-class identification outside that scope, and the packet\\u2019s source-shape check says the No-Go Discipline gate is not triggered.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-9db304d0\", \"judge\": 2, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-7c9a4f99\", \"judge\": 3, \"rationale\": \"The Pauli and parity algebra closes the positive class-A base-flux identities. However, the source also asserts a scoped negative boundary and conditional obstruction, while the runner provides no route-specific N1 checks, five-resolution N5 evidence, complete N6/N8 dispositions, or independently resolved N7 steelman. The development-tier non-clean verdict may omit the structured packet when the N1\\u2013N8 failures are stated in the rationale, so audited_conditional is the applyable conservative tuple.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-836715f2\", \"judge\": 4, \"rationale\": \"The displayed Pauli and parity identities establish the scalar connection, uniform curvature, and rectangular area law exactly. The note\\u2019s UD_2 and braid-class language expressly excludes those conclusions from scope and records an open bridge rather than asserting a no-go or named-wall theorem; the packet\\u2019s source-shape gate is therefore false.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-8327b71e\", \"judge\": 5, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities, but the artifact also asserts that the base graph supplies no plaquette 2-cell, identifies a missing UD_2 bridge as the boundary, and states a conditional braid-character obstruction. Those are negative-boundary assertions, and the restricted packet does not provide the route, rhetoric-resolution, partial-closure, steelman, and cross-cycle evidence needed for a clean No-Go Discipline pass.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]"
       },
       "schema": "frozen_audit_judgment_v1"
     },
@@ -125,11 +313,30 @@
         "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
       }
     },
+    "policy_versions": {
+      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e09e33d6e0bbc3df902ec695510243d43f083b01841752be1282f5eae7c0daeb",
+        "cache_status": "ok"
+      }
+    },
     "runner_hash": "e09e33d6e0bbc3df902ec695510243d43f083b01841752be1282f5eae7c0daeb",
+    "runner_path": "scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
     "science_fingerprint": {
       "dependencies": [],
       "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "021f8016fa044c28f161cad1b382aac519269fc899834cf42ff2c824f2018316",
+      "digest": "62ee6a435361e7ed230d6a3eb99640235531095afe34591c126b6fd4f2898dc6",
       "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
       "runners": [
         {
@@ -145,7 +352,7 @@
       "schema": "science_fingerprint_v2",
       "target": {
         "claim_id": "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
-        "claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.",
+        "claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
         "claim_type": "positive_theorem",
         "ledger_note_hash": "5c2fe1924c69110be45343e4cd4fff9abfae08a6d596b923d92d232edd963f65",
         "note_path": "docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md",
@@ -154,24 +361,25 @@
     },
     "transitive_descendants": 792
   },
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "cross_confirmation_disagreement",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_status": "audited_conditional",
+  "auditor": "codex-judicial-2-20260803-9db304d0",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-89e0aebe\", \"judge\": 1, \"rationale\": \"The scoped positive theorem closes by Pauli anticommutation and parity algebra: the displayed connection identity yields uniform Z_2 plaquette curvature and the rectangular area law. The note expressly leaves UD_2 and braid-class identification outside that scope, and the packet\\u2019s source-shape check says the No-Go Discipline gate is not triggered.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-9db304d0\", \"judge\": 2, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-7c9a4f99\", \"judge\": 3, \"rationale\": \"The Pauli and parity algebra closes the positive class-A base-flux identities. However, the source also asserts a scoped negative boundary and conditional obstruction, while the runner provides no route-specific N1 checks, five-resolution N5 evidence, complete N6/N8 dispositions, or independently resolved N7 steelman. The development-tier non-clean verdict may omit the structured packet when the N1\\u2013N8 failures are stated in the rationale, so audited_conditional is the applyable conservative tuple.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-836715f2\", \"judge\": 4, \"rationale\": \"The displayed Pauli and parity identities establish the scalar connection, uniform curvature, and rectangular area law exactly. The note\\u2019s UD_2 and braid-class language expressly excludes those conclusions from scope and records an open bridge rather than asserting a no-go or named-wall theorem; the packet\\u2019s source-shape gate is therefore false.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-8327b71e\", \"judge\": 5, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities, but the artifact also asserts that the base graph supplies no plaquette 2-cell, identifies a missing UD_2 bridge as the boundary, and states a conditional braid-character obstruction. Those are negative-boundary assertions, and the restricted packet does not provide the route, rhetoric-resolution, partial-closure, steelman, and cross-cycle evidence needed for a clean No-Go Discipline pass.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]",
   "claim_id": "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
-  "claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.",
+  "claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": "exact-support with a scoped negative boundary",
-  "claim_type_last_reviewed": "2026-08-03T09:20:14.769500+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-08-03T09:30:17.109832+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-08-03T09:20:14.769500+00:00",
       "audit_invocation_id": "837a3e41a24c4cb489655a5280b1eb82",
@@ -200,6 +408,158 @@
       "verdict": "audited_clean",
       "verdict_rationale": "Using sigma_i sigma_j=-sigma_j sigma_i for i distinct and sigma_i^2=I, the displayed T gives the spin-diagonal identity for every integer site; direct substitution of the eta parities gives F=-1 in all three coordinate planes, and internal-edge cancellation gives Hol=(-1)^(ab) for arbitrary rectangles. The runner genuinely checks finite instances and gauge invariance, while its unconditional scope checks are not used as proof. Residual topology questions concerning UD_2 and braid classes are expressly outside the audited scope."
     },
+    "judicial_panel_record_v1": {
+      "cid": "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+      "disagreement_fingerprint": {
+        "claim_id": "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+        "first_audit_invocation_id": "837a3e41a24c4cb489655a5280b1eb82",
+        "note_hash": "5c2fe1924c69110be45343e4cd4fff9abfae08a6d596b923d92d232edd963f65",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "81fb773b8e606dc105065626365a1d8c89e5d79e7daff153fb7191eca632f1fd",
+        "second_audit_invocation_id": "12f24f14954c44f4a41400e973e306b1"
+      },
+      "failures": [],
+      "invocation_id": "807f1829c5c749d0b88d4841c5a5f16d",
+      "majority_count": 3,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 3,
+          "tuple": [
+            "second",
+            "audited_conditional",
+            "positive_theorem",
+            "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+            "A",
+            null,
+            [
+              "bounded_with_named_walls",
+              "conditional_wall_rationale",
+              "derived_no_go_boundary"
+            ]
+          ]
+        },
+        {
+          "count": 2,
+          "tuple": [
+            "first",
+            "audited_clean",
+            "positive_theorem",
+            "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.",
+            "A",
+            null,
+            []
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260803-89e0aebe",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The scoped positive theorem closes by Pauli anticommutation and parity algebra: the displayed connection identity yields uniform Z_2 plaquette curvature and the rectangular area law. The note expressly leaves UD_2 and braid-class identification outside that scope, and the packet\u2019s source-shape check says the No-Go Discipline gate is not triggered.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Recheck if the scope later expands to a UD_2 null-homotopy or braid-class statement.",
+          "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "For the displayed T and eta phases, T(x)^dag sigma_mu T(x+e_mu)=eta_mu(x) I_2, which yields uniform coordinate-plaquette curvature -1 and Hol(rectangle a x b)=(-1)^(ab).",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "It incorrectly treated explicit scope exclusions and a conditional warning about a future UD_2 bridge as asserted negative results requiring N1-N8, even though the ratified claim stops before either topological conclusion.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-2-20260803-9db304d0",
+          "first_auditor_error": "It narrowed the artifact to its positive algebra while overlooking the source\u2019s asserted scoped negative boundary, named missing UD_2 bridge, and conditional obstruction. Those assertions require honest negative-assertion classification, and an audited_clean verdict would require a structured N1\u2013N8 PASS packet, which is absent.",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: add live route-specific N1 checks, five-resolution N5 checks, N6/N8 dispositions, and an independently resolved N7 steelman; also add a dated downstream-hygiene line to this note's own boundary so the repaired packet re-enters audit.",
+          "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "T(x)^dag sigma_mu T(x + e_mu) = eta_mu(x) I_2.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-3-20260803-7c9a4f99",
+          "first_auditor_error": "It treated the artifact\u2019s explicit scoped negative boundary, named UD_2 bridge blocker, and conditional obstruction as mere coverage disclaimers, yielding an empty negative-assertion declaration and an audited-clean verdict without the required N1\u2013N8 support.",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The Pauli and parity algebra closes the positive class-A base-flux identities. However, the source also asserts a scoped negative boundary and conditional obstruction, while the runner provides no route-specific N1 checks, five-resolution N5 evidence, complete N6/N8 dispositions, or independently resolved N7 steelman. The development-tier non-clean verdict may omit the structured packet when the N1\u2013N8 failures are stated in the rationale, so audited_conditional is the applyable conservative tuple.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: add live route-specific N1 checks, five-resolution N5 checks, N6/N8 dispositions, and an independently resolved N7 steelman; also add a dated downstream-hygiene line to this note's own boundary so the repaired packet re-enters audit.",
+          "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "T(x)^dag sigma_mu T(x + e_mu) = eta_mu(x) I_2.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-4-20260803-836715f2",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The displayed Pauli and parity identities establish the scalar connection, uniform curvature, and rectangular area law exactly. The note\u2019s UD_2 and braid-class language expressly excludes those conclusions from scope and records an open bridge rather than asserting a no-go or named-wall theorem; the packet\u2019s source-shape gate is therefore false.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "It misclassifies explicit scope exclusions and coverage routing as asserted negative-boundary classes, then makes an inapplicable N1-N8 packet the condition for accepting the independently closed positive algebra.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-5-20260803-8327b71e",
+          "first_auditor_error": "It treated the boundary prose as mere coverage routing, but the note affirmatively derives a scoped negative boundary and states a conditional obstruction tied to the missing UD_2 bridge; those assertions trigger No-Go Discipline and preclude an audited_clean verdict without N1-N8 closure.",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The Pauli and parity algebra closes the positive base-flux identities, but the artifact also asserts that the base graph supplies no plaquette 2-cell, identifies a missing UD_2 bridge as the boundary, and states a conditional braid-character obstruction. Those are negative-boundary assertions, and the restricted packet does not provide the route, rhetoric-resolution, partial-closure, steelman, and cross-cycle evidence needed for a clean No-Go Discipline pass.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "runner_artifact_issue: add live route-specific N1 checks, five-resolution N5 checks, N6/N8 dispositions, and an independently resolved N7 steelman; also add a dated downstream-hygiene line to this note's own boundary so the repaired packet re-enters audit.",
+          "ratified_claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "T(x)^dag sigma_mu T(x + e_mu) = eta_mu(x) I_2.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-08-03T09:20:14.776574+00:00",
       "audit_invocation_id": "12f24f14954c44f4a41400e973e306b1",
@@ -232,24 +592,51 @@
       "verdict": "audited_conditional",
       "verdict_rationale": "The positive algebra is exact: direct Pauli anticommutation gives the displayed scalar connection, uniform curvature -1, gauge invariance, and the rectangle law (-1)^(ab). The negative-boundary gate does not close: N1 lacks five closed alternative mechanisms, N2 has no complete wall-independence record, N3 lacks dispositions for authenticated boundary/axiom/obstruction occurrences, and N4 supplies no prior-route residual match. N5 has no live five-resolution checks, N6 candidates and N8 echoes remain undispositioned, and N7 lacks an independently resolved steelman. Until those audit artifacts exist, the base-flux calculation is safe bounded content but the note cannot receive clean retained-grade ratification."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-08-03T09:30:17.109832+00:00",
+      "audit_invocation_id": "807f1829c5c749d0b88d4841c5a5f16d",
+      "auditor": "codex-judicial-2-20260803-9db304d0",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.",
+      "claim_type": "positive_theorem",
+      "first_auditor_error": "It narrowed the artifact to its positive algebra while overlooking the source\u2019s asserted scoped negative boundary, named missing UD_2 bridge, and conditional obstruction. Those assertions require honest negative-assertion classification, and an audited_clean verdict would require a structured N1\u2013N8 PASS packet, which is absent.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-89e0aebe\", \"judge\": 1, \"rationale\": \"The scoped positive theorem closes by Pauli anticommutation and parity algebra: the displayed connection identity yields uniform Z_2 plaquette curvature and the rectangular area law. The note expressly leaves UD_2 and braid-class identification outside that scope, and the packet\\u2019s source-shape check says the No-Go Discipline gate is not triggered.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-9db304d0\", \"judge\": 2, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-7c9a4f99\", \"judge\": 3, \"rationale\": \"The Pauli and parity algebra closes the positive class-A base-flux identities. However, the source also asserts a scoped negative boundary and conditional obstruction, while the runner provides no route-specific N1 checks, five-resolution N5 evidence, complete N6/N8 dispositions, or independently resolved N7 steelman. The development-tier non-clean verdict may omit the structured packet when the N1\\u2013N8 failures are stated in the rationale, so audited_conditional is the applyable conservative tuple.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-836715f2\", \"judge\": 4, \"rationale\": \"The displayed Pauli and parity identities establish the scalar connection, uniform curvature, and rectangular area law exactly. The note\\u2019s UD_2 and braid-class language expressly excludes those conclusions from scope and records an open bridge rather than asserting a no-go or named-wall theorem; the packet\\u2019s source-shape gate is therefore false.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-8327b71e\", \"judge\": 5, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities, but the artifact also asserts that the base graph supplies no plaquette 2-cell, identifies a missing UD_2 bridge as the boundary, and states a conditional braid-character obstruction. Those are negative-boundary assertions, and the restricted packet does not provide the route, rhetoric-resolution, partial-closure, steelman, and cross-cycle evidence needed for a clean No-Go Discipline pass.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_conditional"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 10.131,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "T(x)^dag sigma_mu T(x + e_mu) = eta_mu(x) I_2.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary"
+  ],
   "note_hash": "5c2fe1924c69110be45343e4cd4fff9abfae08a6d596b923d92d232edd963f65",
   "note_path": "docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: add live route-specific N1 checks, five-resolution N5 checks, N6/N8 dispositions, and an independently resolved N7 steelman; also add a dated downstream-hygiene line to this note's own boundary so the repaired packet re-enters audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1632,5 +2019,5 @@
   "runner_path": "scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py",
   "title": "eta Holonomy Base-Flux Scope Boundary",
   "transitive_descendants": 792,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-89e0aebe\", \"judge\": 1, \"rationale\": \"The scoped positive theorem closes by Pauli anticommutation and parity algebra: the displayed connection identity yields uniform Z_2 plaquette curvature and the rectangular area law. The note expressly leaves UD_2 and braid-class identification outside that scope, and the packet\\u2019s source-shape check says the No-Go Discipline gate is not triggered.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-9db304d0\", \"judge\": 2, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities exactly, but the artifact also asserts a bounded negative boundary involving the missing UD_2 bridge and a conditional braid-character obstruction. Because the required N1\\u2013N8 support for those negative assertions is absent, the positive calculation remains safe bounded content but the full artifact cannot receive audited_clean ratification.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-7c9a4f99\", \"judge\": 3, \"rationale\": \"The Pauli and parity algebra closes the positive class-A base-flux identities. However, the source also asserts a scoped negative boundary and conditional obstruction, while the runner provides no route-specific N1 checks, five-resolution N5 evidence, complete N6/N8 dispositions, or independently resolved N7 steelman. The development-tier non-clean verdict may omit the structured packet when the N1\\u2013N8 failures are stated in the rationale, so audited_conditional is the applyable conservative tuple.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-836715f2\", \"judge\": 4, \"rationale\": \"The displayed Pauli and parity identities establish the scalar connection, uniform curvature, and rectangular area law exactly. The note\\u2019s UD_2 and braid-class language expressly excludes those conclusions from scope and records an open bridge rather than asserting a no-go or named-wall theorem; the packet\\u2019s source-shape gate is therefore false.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-8327b71e\", \"judge\": 5, \"rationale\": \"The Pauli and parity algebra closes the positive base-flux identities, but the artifact also asserts that the base graph supplies no plaquette 2-cell, identifies a missing UD_2 bridge as the boundary, and states a conditional braid-character obstruction. Those are negative-boundary assertions, and the restricted packet does not provide the route, rhetoric-resolution, partial-closure, steelman, and cross-cycle evidence needed for a clean No-Go Discipline pass.\", \"tuple\": [\"second\", \"audited_conditional\", \"positive_theorem\", \"Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]"
 }

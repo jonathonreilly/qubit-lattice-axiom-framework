@@ -1,11 +1,12 @@
 {
-  "audit_date": "2026-08-03T10:52:11.696077+00:00",
+  "audit_date": "2026-08-03T11:42:11.498182+00:00",
   "audit_invocation_history": [
     "73eb2f35473c460ca1b83764e037273d",
     "c3000bfba3ca4998ae2ae784c21273fb",
-    "19bf777842d5496bb94f68a49b074c1a"
+    "19bf777842d5496bb94f68a49b074c1a",
+    "8aad139963e1483eb2cb04503eabb294"
   ],
-  "audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a",
+  "audit_invocation_id": "8aad139963e1483eb2cb04503eabb294",
   "audit_state_snapshot": {
     "criticality": "critical",
     "dep_axiom_premise_note_hash": {},
@@ -16,22 +17,23 @@
     "helper_runner_hashes": {},
     "judgment_fingerprint": {
       "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-      "digest": "4d1a5177eead6e7af3eff7cac376382b51b959dcf59de8cecea5aa1b8b206a0c",
+      "digest": "3790ed74e5528cc475905fac353d1f216fe8eb183de2ba99e66e9b693f81c3f2",
       "judgment": {
-        "audit_date": "2026-08-03T10:52:11.696077+00:00",
-        "audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a",
-        "audit_status": "audit_in_progress",
-        "auditor": "codex-audit-batch-A-20260803-06e16ce5",
-        "auditor_confidence": "high",
+        "audit_date": "2026-08-03T11:42:11.498182+00:00",
+        "audit_invocation_id": "8aad139963e1483eb2cb04503eabb294",
+        "audit_status": "audited_clean",
+        "auditor": "codex-judicial-1-20260803-efc5b988",
+        "auditor_confidence": "judicial",
         "auditor_family": "codex-gpt-5.6",
         "auditor_model": "gpt-5.6-sol",
         "auditor_reasoning_effort": "xhigh",
-        "chain_closes": false,
-        "chain_closure_explanation": "The exact algebra closes the d = 4 tuple, but the broader uniqueness boundary lacks the mandatory five distinct live-evidenced N1 attack classes and all-resolution N5 checks.",
-        "claim_scope": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).",
+        "chain_closes": true,
+        "chain_closure_explanation": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-efc5b988\", \"judge\": 1, \"rationale\": \"The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-77f511b3\", \"judge\": 2, \"rationale\": \"The exact common-denominator identity makes ratio equality equivalent to A(d)=0 because the denominator is positive on integers d \\u2265 2. The verified base values and strictly positive forward difference for d \\u2265 4 prove that d=4 is the unique zero, while the odd/even eta-zeta split establishes the stated ratio; all 20 runner checks are class A and no unresolved dependency enters.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-8c0eb479\", \"judge\": 3, \"rationale\": \"The packet directly establishes the exact ratio-gap identity, and the base values together with A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 prove that d=4 is the unique zero on the stated domain. The eta-zeta identity follows from the displayed absolutely convergent odd/even split. Thus the scoped arithmetic theorem closes as class A without physical or repository-dependent premises.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-9645e2b6\", \"judge\": 4, \"rationale\": \"The packet directly establishes the ratio-gap identity by common-denominator algebra. The stated base values and positive forward difference for every integer d \\u2265 4 then prove that A(d) has the unique zero d = 4 on the stated domain; the odd/even split independently gives the eta-zeta ratio. The first scope also matches the authenticated pre-audit scope exactly.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-b47e40c9\", \"judge\": 5, \"rationale\": \"The packet directly establishes the eta-zeta ratio, the exact ratio-gap identity, and the unique integer zero of A(d): the stated base values cover d=2,3,4, while A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 excludes later zeros. The runner independently computes all 20 class-A checks, and no physical selector, fitted value, external comparator, or unresolved dependency enters the scoped theorem. The second position states this closed arithmetic result with the more explicit, self-contained scope.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}]",
+        "claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
         "claim_type": "positive_theorem",
-        "claim_type_provenance": "audited_pending_cross_confirmation",
+        "claim_type_provenance": "judicial_review",
         "cross_confirmation": {
+          "agreement_schema": "audit_tuple_v2",
           "first_audit": {
             "audit_date": "2026-08-03T10:52:11.702483+00:00",
             "audit_invocation_id": "c3000bfba3ca4998ae2ae784c21273fb",
@@ -60,6 +62,137 @@
             "verdict": "audited_clean",
             "verdict_rationale": "The eta-zeta split, rational-ratio simplification, and ratio-gap identity are exact and independently check algebraically. The finite scan is only corroborative; the all-integer uniqueness follows from the verified base values and strictly positive forward difference for d \u2265 4. No physical dimension selection, fitted input, external comparator, or repository dependency is used."
           },
+          "judicial_panel_record_v1": {
+            "cid": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+            "disagreement_fingerprint": {
+              "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "first_audit_invocation_id": "c3000bfba3ca4998ae2ae784c21273fb",
+              "note_hash": "b1ca0469b26d1ea72204ae4b37edfd48ea602e3243081ff67695fc353419c7dc",
+              "schema": "judicial_disagreement_fingerprint_v1",
+              "seat_summaries_sha256": "70faa860f262008cd7667b1317d60407c69d6e3706cb7f96efd138297cdecd1f",
+              "second_audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a"
+            },
+            "failures": [],
+            "invocation_id": "8aad139963e1483eb2cb04503eabb294",
+            "majority_count": 3,
+            "panel": 1,
+            "result": "majority_candidate",
+            "schema": "judicial_panel_record_v1",
+            "tally": [
+              {
+                "count": 3,
+                "tuple": [
+                  "second",
+                  "audited_clean",
+                  "positive_theorem",
+                  "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+                  "A",
+                  null,
+                  []
+                ]
+              },
+              {
+                "count": 2,
+                "tuple": [
+                  "first",
+                  "audited_clean",
+                  "positive_theorem",
+                  "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).",
+                  "A",
+                  null,
+                  []
+                ]
+              }
+            ],
+            "votes": [
+              {
+                "auditor": "codex-judicial-1-20260803-efc5b988",
+                "first_auditor_error": "Its claim scope is substantively correct but underspecified: \u201cthe two defined ratios\u201d does not identify R_lat(d\u22121) and R_RD(d) explicitly, whereas the second position states the audited equality and tuple exactly.",
+                "hybrid_resolution_note": null,
+                "judge": 1,
+                "judgment_rationale": "The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": null,
+                "ratified_claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              },
+              {
+                "auditor": "codex-judicial-2-20260803-77f511b3",
+                "first_auditor_error": "none",
+                "hybrid_resolution_note": null,
+                "judge": 2,
+                "judgment_rationale": "The exact common-denominator identity makes ratio equality equivalent to A(d)=0 because the denominator is positive on integers d \u2265 2. The verified base values and strictly positive forward difference for d \u2265 4 prove that d=4 is the unique zero, while the odd/even eta-zeta split establishes the stated ratio; all 20 runner checks are class A and no unresolved dependency enters.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": null,
+                "ratified_claim_scope": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "R_lat(d \u2212 1) \u2212 R_RD(d) = \u2212A(d)/[d 2^(d \u2212 1)], together with the proof that A(d) = 0 uniquely at d = 4 for integers d \u2265 2.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "Its scope is mathematically equivalent, but it restates rather than reproduces the packet\u2019s exact supplied scope sentence; the first position is therefore the more procedurally exact full tuple.",
+                "sided_with": "first"
+              },
+              {
+                "auditor": "codex-judicial-3-20260803-8c0eb479",
+                "first_auditor_error": "The first scope is less precise because it replaces the explicit relation R_lat(d\u22121)=R_RD(d) with \u201cthe two defined ratios,\u201d making the ratified statement less self-contained.",
+                "hybrid_resolution_note": null,
+                "judge": 3,
+                "judgment_rationale": "The packet directly establishes the exact ratio-gap identity, and the base values together with A(d+1)\u2212A(d)=2^(d\u22122)\u22121>0 for every integer d\u22654 prove that d=4 is the unique zero on the stated domain. The eta-zeta identity follows from the displayed absolutely convergent odd/even split. Thus the scoped arithmetic theorem closes as class A without physical or repository-dependent premises.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": null,
+                "ratified_claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              },
+              {
+                "auditor": "codex-judicial-4-20260803-9645e2b6",
+                "first_auditor_error": "none",
+                "hybrid_resolution_note": null,
+                "judge": 4,
+                "judgment_rationale": "The packet directly establishes the ratio-gap identity by common-denominator algebra. The stated base values and positive forward difference for every integer d \u2265 4 then prove that A(d) has the unique zero d = 4 on the stated domain; the odd/even split independently gives the eta-zeta ratio. The first scope also matches the authenticated pre-audit scope exactly.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": null,
+                "ratified_claim_scope": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": null,
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "The second position substituted an equivalent but character-for-character different scope for the authenticated pre-audit scope; this is a scope-recording discrepancy, not a scientific error.",
+                "sided_with": "first"
+              },
+              {
+                "auditor": "codex-judicial-5-20260803-b47e40c9",
+                "first_auditor_error": "Its claim scope refers only to \u201cthe two defined ratios\u201d instead of explicitly identifying R_lat(d\u22121) and R_RD(d), making the ratified scope less self-contained; its scientific conclusion is otherwise correct.",
+                "hybrid_resolution_note": null,
+                "judge": 5,
+                "judgment_rationale": "The packet directly establishes the eta-zeta ratio, the exact ratio-gap identity, and the unique integer zero of A(d): the stated base values cover d=2,3,4, while A(d+1)\u2212A(d)=2^(d\u22122)\u22121>0 for every integer d\u22654 excludes later zeros. The runner independently computes all 20 class-A checks, and no physical selector, fitted value, external comparator, or unresolved dependency enters the scoped theorem. The second position states this closed arithmetic result with the more explicit, self-contained scope.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": null,
+                "ratified_claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              }
+            ]
+          },
+          "mode": "judicial_panel_majority",
           "second_audit": {
             "audit_date": "2026-08-03T11:34:59.405736+00:00",
             "audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a",
@@ -88,16 +221,32 @@
             "verdict": "audited_clean",
             "verdict_rationale": "The load-bearing identity follows by direct common-denominator algebra, independently of the runner. The values A(2)=\u22121, A(3)=\u22121, A(4)=0 and A(d+1)\u2212A(d)=2^(d\u22122)\u22121>0 for d\u22654 establish the unique integer zero, while the eta-zeta identity follows from the absolutely convergent odd/even split. The runner computes and checks all 20 stated class-A assertions, and the theorem imports no physical selector, normalization, or unresolved dependency."
           },
-          "status": "disagreement"
+          "status": "third_confirmed_second",
+          "third_audit": {
+            "audit_date": "2026-08-03T11:42:11.498182+00:00",
+            "audit_invocation_id": "8aad139963e1483eb2cb04503eabb294",
+            "auditor": "codex-judicial-1-20260803-efc5b988",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+            "claim_type": "positive_theorem",
+            "first_auditor_error": "Its claim scope is substantively correct but underspecified: \u201cthe two defined ratios\u201d does not identify R_lat(d\u22121) and R_RD(d) explicitly, whereas the second position states the audited equality and tuple exactly.",
+            "independence": "judicial_review",
+            "judgment_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-efc5b988\", \"judge\": 1, \"rationale\": \"The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-77f511b3\", \"judge\": 2, \"rationale\": \"The exact common-denominator identity makes ratio equality equivalent to A(d)=0 because the denominator is positive on integers d \\u2265 2. The verified base values and strictly positive forward difference for d \\u2265 4 prove that d=4 is the unique zero, while the odd/even eta-zeta split establishes the stated ratio; all 20 runner checks are class A and no unresolved dependency enters.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-8c0eb479\", \"judge\": 3, \"rationale\": \"The packet directly establishes the exact ratio-gap identity, and the base values together with A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 prove that d=4 is the unique zero on the stated domain. The eta-zeta identity follows from the displayed absolutely convergent odd/even split. Thus the scoped arithmetic theorem closes as class A without physical or repository-dependent premises.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-9645e2b6\", \"judge\": 4, \"rationale\": \"The packet directly establishes the ratio-gap identity by common-denominator algebra. The stated base values and positive forward difference for every integer d \\u2265 4 then prove that A(d) has the unique zero d = 4 on the stated domain; the odd/even split independently gives the eta-zeta ratio. The first scope also matches the authenticated pre-audit scope exactly.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-b47e40c9\", \"judge\": 5, \"rationale\": \"The packet directly establishes the eta-zeta ratio, the exact ratio-gap identity, and the unique integer zero of A(d): the stated base values cover d=2,3,4, while A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 excludes later zeros. The runner independently computes all 20 class-A checks, and no physical selector, fitted value, external comparator, or unresolved dependency enters the scoped theorem. The second position states this closed arithmetic result with the more explicit, self-contained scope.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}]",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+            "second_auditor_error": "none",
+            "sided_with": "second",
+            "verdict": "audited_clean"
+          }
         },
         "decoration_parent_claim_id": null,
-        "independence": "cross_family",
-        "load_bearing_step": "R_lat(d \u2212 1) \u2212 R_RD(d) = \u2212A(d)/[d 2^(d \u2212 1)], together with the integer-domain proof that A(d) = 0 only at d = 4.",
+        "independence": "judicial_review",
+        "load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
         "load_bearing_step_class": "A",
-        "negative_assertion_classes": [
-          "derived_no_go_boundary"
-        ],
-        "notes_for_re_audit_if_any": "scope_too_broad: retain the exact d = 4 tuple, but add five genuinely distinct live-evidenced attacks and five-resolution checks for every authenticated negative phrase before re-auditing the uniqueness boundary.",
+        "negative_assertion_classes": [],
+        "notes_for_re_audit_if_any": "",
         "open_dependency_paths": [],
         "runner_check_breakdown": {
           "A": 20,
@@ -106,7 +255,7 @@
           "D": 0,
           "total_pass": 20
         },
-        "verdict_rationale": "Issue: The identity and monotonicity proof are correct, but the assertion that no other integer dimension aligns is a derived no-go boundary whose packet supplies fewer than five distinct live-evidenced N1 attack classes and no per-element, per-site, per-mode, per-block, and lattice-wide N5 execution lines. N2 finds no independent wall set; N3's axiom, background, boundary, and normalization hits are non-load-bearing; N4 has no prior residual witness; N6 finds no relevant partial-closure premise; N7's strongest algebraic steelman is resolved; and N8's indexed echoes are inapplicable to this arithmetic scope. Why this blocks: The restricted packet establishes the positive d = 4 tuple but cannot certify the broader negative uniqueness boundary under the mandatory discipline. Repair target: add the missing route and resolution evidence or remove that boundary; claim boundary until fixed: only the exact tuple (7/8, 7/8, 0) at d = 4."
+        "verdict_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-efc5b988\", \"judge\": 1, \"rationale\": \"The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-77f511b3\", \"judge\": 2, \"rationale\": \"The exact common-denominator identity makes ratio equality equivalent to A(d)=0 because the denominator is positive on integers d \\u2265 2. The verified base values and strictly positive forward difference for d \\u2265 4 prove that d=4 is the unique zero, while the odd/even eta-zeta split establishes the stated ratio; all 20 runner checks are class A and no unresolved dependency enters.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-8c0eb479\", \"judge\": 3, \"rationale\": \"The packet directly establishes the exact ratio-gap identity, and the base values together with A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 prove that d=4 is the unique zero on the stated domain. The eta-zeta identity follows from the displayed absolutely convergent odd/even split. Thus the scoped arithmetic theorem closes as class A without physical or repository-dependent premises.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-9645e2b6\", \"judge\": 4, \"rationale\": \"The packet directly establishes the ratio-gap identity by common-denominator algebra. The stated base values and positive forward difference for every integer d \\u2265 4 then prove that A(d) has the unique zero d = 4 on the stated domain; the odd/even split independently gives the eta-zeta ratio. The first scope also matches the authenticated pre-audit scope exactly.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-b47e40c9\", \"judge\": 5, \"rationale\": \"The packet directly establishes the eta-zeta ratio, the exact ratio-gap identity, and the unique integer zero of A(d): the stated base values cover d=2,3,4, while A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 excludes later zeros. The runner independently computes all 20 class-A checks, and no physical selector, fitted value, external comparator, or unresolved dependency enters the scoped theorem. The second position states this closed arithmetic result with the more explicit, self-contained scope.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}]"
       },
       "schema": "frozen_audit_judgment_v1"
     },
@@ -128,7 +277,7 @@
     "science_fingerprint": {
       "dependencies": [],
       "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "5cf7774645f57fa33cc848e1a55b7e538afea577601d0a6bb11c4d781deee486",
+      "digest": "820f85e0debaaf8a1cc20f074855f2dfa900f2b1268155dec71d22dd95f137e9",
       "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
       "runners": [
         {
@@ -144,7 +293,7 @@
       "schema": "science_fingerprint_v2",
       "target": {
         "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-        "claim_scope": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).",
+        "claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
         "claim_type": "positive_theorem",
         "ledger_note_hash": "b1ca0469b26d1ea72204ae4b37edfd48ea602e3243081ff67695fc353419c7dc",
         "note_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
@@ -153,24 +302,25 @@
     },
     "transitive_descendants": 968
   },
-  "audit_status": "audit_in_progress",
-  "auditor": "codex-audit-batch-A-20260803-06e16ce5",
-  "auditor_confidence": "high",
+  "audit_status": "audited_clean",
+  "auditor": "codex-judicial-1-20260803-efc5b988",
+  "auditor_confidence": "judicial",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
-  "blocker": "cross_confirmation_disagreement",
-  "chain_closes": false,
-  "chain_closure_explanation": "The exact algebra closes the d = 4 tuple, but the broader uniqueness boundary lacks the mandatory five distinct live-evidenced N1 attack classes and all-resolution N5 checks.",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-efc5b988\", \"judge\": 1, \"rationale\": \"The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-77f511b3\", \"judge\": 2, \"rationale\": \"The exact common-denominator identity makes ratio equality equivalent to A(d)=0 because the denominator is positive on integers d \\u2265 2. The verified base values and strictly positive forward difference for d \\u2265 4 prove that d=4 is the unique zero, while the odd/even eta-zeta split establishes the stated ratio; all 20 runner checks are class A and no unresolved dependency enters.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-8c0eb479\", \"judge\": 3, \"rationale\": \"The packet directly establishes the exact ratio-gap identity, and the base values together with A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 prove that d=4 is the unique zero on the stated domain. The eta-zeta identity follows from the displayed absolutely convergent odd/even split. Thus the scoped arithmetic theorem closes as class A without physical or repository-dependent premises.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-9645e2b6\", \"judge\": 4, \"rationale\": \"The packet directly establishes the ratio-gap identity by common-denominator algebra. The stated base values and positive forward difference for every integer d \\u2265 4 then prove that A(d) has the unique zero d = 4 on the stated domain; the odd/even split independently gives the eta-zeta ratio. The first scope also matches the authenticated pre-audit scope exactly.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-b47e40c9\", \"judge\": 5, \"rationale\": \"The packet directly establishes the eta-zeta ratio, the exact ratio-gap identity, and the unique integer zero of A(d): the stated base values cover d=2,3,4, while A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 excludes later zeros. The runner independently computes all 20 class-A checks, and no physical selector, fitted value, external comparator, or unresolved dependency enters the scoped theorem. The second position states this closed arithmetic result with the more explicit, self-contained scope.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}]",
   "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-  "claim_scope": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).",
+  "claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-08-03T10:52:11.702483+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-08-03T11:42:11.498182+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-08-03T10:52:11.702483+00:00",
       "audit_invocation_id": "c3000bfba3ca4998ae2ae784c21273fb",
@@ -199,6 +349,142 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The eta-zeta split, rational-ratio simplification, and ratio-gap identity are exact and independently check algebraically. The finite scan is only corroborative; the all-integer uniqueness follows from the verified base values and strictly positive forward difference for d \u2265 4. No physical dimension selection, fitted input, external comparator, or repository dependency is used."
     },
+    "judicial_panel_record_v1": {
+      "cid": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+      "disagreement_fingerprint": {
+        "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+        "first_audit_invocation_id": "c3000bfba3ca4998ae2ae784c21273fb",
+        "note_hash": "b1ca0469b26d1ea72204ae4b37edfd48ea602e3243081ff67695fc353419c7dc",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "70faa860f262008cd7667b1317d60407c69d6e3706cb7f96efd138297cdecd1f",
+        "second_audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a"
+      },
+      "failures": [],
+      "invocation_id": "8aad139963e1483eb2cb04503eabb294",
+      "majority_count": 3,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 3,
+          "tuple": [
+            "second",
+            "audited_clean",
+            "positive_theorem",
+            "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+            "A",
+            null,
+            []
+          ]
+        },
+        {
+          "count": 2,
+          "tuple": [
+            "first",
+            "audited_clean",
+            "positive_theorem",
+            "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).",
+            "A",
+            null,
+            []
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260803-efc5b988",
+          "first_auditor_error": "Its claim scope is substantively correct but underspecified: \u201cthe two defined ratios\u201d does not identify R_lat(d\u22121) and R_RD(d) explicitly, whereas the second position states the audited equality and tuple exactly.",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-2-20260803-77f511b3",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The exact common-denominator identity makes ratio equality equivalent to A(d)=0 because the denominator is positive on integers d \u2265 2. The verified base values and strictly positive forward difference for d \u2265 4 prove that d=4 is the unique zero, while the odd/even eta-zeta split establishes the stated ratio; all 20 runner checks are class A and no unresolved dependency enters.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "R_lat(d \u2212 1) \u2212 R_RD(d) = \u2212A(d)/[d 2^(d \u2212 1)], together with the proof that A(d) = 0 uniquely at d = 4 for integers d \u2265 2.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "Its scope is mathematically equivalent, but it restates rather than reproduces the packet\u2019s exact supplied scope sentence; the first position is therefore the more procedurally exact full tuple.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-3-20260803-8c0eb479",
+          "first_auditor_error": "The first scope is less precise because it replaces the explicit relation R_lat(d\u22121)=R_RD(d) with \u201cthe two defined ratios,\u201d making the ratified statement less self-contained.",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The packet directly establishes the exact ratio-gap identity, and the base values together with A(d+1)\u2212A(d)=2^(d\u22122)\u22121>0 for every integer d\u22654 prove that d=4 is the unique zero on the stated domain. The eta-zeta identity follows from the displayed absolutely convergent odd/even split. Thus the scoped arithmetic theorem closes as class A without physical or repository-dependent premises.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-4-20260803-9645e2b6",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The packet directly establishes the ratio-gap identity by common-denominator algebra. The stated base values and positive forward difference for every integer d \u2265 4 then prove that A(d) has the unique zero d = 4 on the stated domain; the odd/even split independently gives the eta-zeta ratio. The first scope also matches the authenticated pre-audit scope exactly.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": null,
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second position substituted an equivalent but character-for-character different scope for the authenticated pre-audit scope; this is a scope-recording discrepancy, not a scientific error.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-5-20260803-b47e40c9",
+          "first_auditor_error": "Its claim scope refers only to \u201cthe two defined ratios\u201d instead of explicitly identifying R_lat(d\u22121) and R_RD(d), making the ratified scope less self-contained; its scientific conclusion is otherwise correct.",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The packet directly establishes the eta-zeta ratio, the exact ratio-gap identity, and the unique integer zero of A(d): the stated base values cover d=2,3,4, while A(d+1)\u2212A(d)=2^(d\u22122)\u22121>0 for every integer d\u22654 excludes later zeros. The runner independently computes all 20 class-A checks, and no physical selector, fitted value, external comparator, or unresolved dependency enters the scoped theorem. The second position states this closed arithmetic result with the more explicit, self-contained scope.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": null,
+          "ratified_claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-08-03T11:34:59.405736+00:00",
       "audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a",
@@ -227,27 +513,43 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The load-bearing identity follows by direct common-denominator algebra, independently of the runner. The values A(2)=\u22121, A(3)=\u22121, A(4)=0 and A(d+1)\u2212A(d)=2^(d\u22122)\u22121>0 for d\u22654 establish the unique integer zero, while the eta-zeta identity follows from the absolutely convergent odd/even split. The runner computes and checks all 20 stated class-A assertions, and the theorem imports no physical selector, normalization, or unresolved dependency."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-08-03T11:42:11.498182+00:00",
+      "audit_invocation_id": "8aad139963e1483eb2cb04503eabb294",
+      "auditor": "codex-judicial-1-20260803-efc5b988",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+      "claim_type": "positive_theorem",
+      "first_auditor_error": "Its claim scope is substantively correct but underspecified: \u201cthe two defined ratios\u201d does not identify R_lat(d\u22121) and R_RD(d) explicitly, whereas the second position states the audited equality and tuple exactly.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-efc5b988\", \"judge\": 1, \"rationale\": \"The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-77f511b3\", \"judge\": 2, \"rationale\": \"The exact common-denominator identity makes ratio equality equivalent to A(d)=0 because the denominator is positive on integers d \\u2265 2. The verified base values and strictly positive forward difference for d \\u2265 4 prove that d=4 is the unique zero, while the odd/even eta-zeta split establishes the stated ratio; all 20 runner checks are class A and no unresolved dependency enters.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-8c0eb479\", \"judge\": 3, \"rationale\": \"The packet directly establishes the exact ratio-gap identity, and the base values together with A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 prove that d=4 is the unique zero on the stated domain. The eta-zeta identity follows from the displayed absolutely convergent odd/even split. Thus the scoped arithmetic theorem closes as class A without physical or repository-dependent premises.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-9645e2b6\", \"judge\": 4, \"rationale\": \"The packet directly establishes the ratio-gap identity by common-denominator algebra. The stated base values and positive forward difference for every integer d \\u2265 4 then prove that A(d) has the unique zero d = 4 on the stated domain; the odd/even split independently gives the eta-zeta ratio. The first scope also matches the authenticated pre-audit scope exactly.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-b47e40c9\", \"judge\": 5, \"rationale\": \"The packet directly establishes the eta-zeta ratio, the exact ratio-gap identity, and the unique integer zero of A(d): the stated base values cover d=2,3,4, while A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 excludes later zeros. The runner independently computes all 20 class-A checks, and no physical selector, fitted value, external comparator, or unresolved dependency enters the scoped theorem. The second position states this closed arithmetic result with the more explicit, self-contained scope.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_clean"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 10,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "retained",
   "load_bearing_score": 14.92,
-  "load_bearing_step": "R_lat(d \u2212 1) \u2212 R_RD(d) = \u2212A(d)/[d 2^(d \u2212 1)], together with the integer-domain proof that A(d) = 0 only at d = 4.",
+  "load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
+  "negative_assertion_classes": [],
   "note_hash": "b1ca0469b26d1ea72204ae4b37edfd48ea602e3243081ff67695fc353419c7dc",
   "note_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: retain the exact d = 4 tuple, but add five genuinely distinct live-evidenced attacks and five-resolution checks for every authenticated negative phrase before re-auditing the uniqueness boundary.",
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1637,5 +1939,5 @@
   "runner_path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
   "title": "Hierarchy 7/8 Riemann-Dirichlet Dimensional Anchor \u2014 Narrow Theorem",
   "transitive_descendants": 968,
-  "verdict_rationale": "Issue: The identity and monotonicity proof are correct, but the assertion that no other integer dimension aligns is a derived no-go boundary whose packet supplies fewer than five distinct live-evidenced N1 attack classes and no per-element, per-site, per-mode, per-block, and lattice-wide N5 execution lines. N2 finds no independent wall set; N3's axiom, background, boundary, and normalization hits are non-load-bearing; N4 has no prior residual witness; N6 finds no relevant partial-closure premise; N7's strongest algebraic steelman is resolved; and N8's indexed echoes are inapplicable to this arithmetic scope. Why this blocks: The restricted packet establishes the positive d = 4 tuple but cannot certify the broader negative uniqueness boundary under the mandatory discipline. Repair target: add the missing route and resolution evidence or remove that boundary; claim boundary until fixed: only the exact tuple (7/8, 7/8, 0) at d = 4."
+  "verdict_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-efc5b988\", \"judge\": 1, \"rationale\": \"The packet proves the exact gap identity with a strictly positive denominator, so ratio equality is equivalent to A(d)=0. The verified base values and positive forward difference for every integer d\\u22654 establish the unique zero d=4; the eta-zeta odd/even split and exact tuple then follow algebraically. All 20 runner checks are class A, and no physical selector or unresolved dependency enters this narrow positive theorem.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-77f511b3\", \"judge\": 2, \"rationale\": \"The exact common-denominator identity makes ratio equality equivalent to A(d)=0 because the denominator is positive on integers d \\u2265 2. The verified base values and strictly positive forward difference for d \\u2265 4 prove that d=4 is the unique zero, while the odd/even eta-zeta split establishes the stated ratio; all 20 runner checks are class A and no unresolved dependency enters.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-8c0eb479\", \"judge\": 3, \"rationale\": \"The packet directly establishes the exact ratio-gap identity, and the base values together with A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 prove that d=4 is the unique zero on the stated domain. The eta-zeta identity follows from the displayed absolutely convergent odd/even split. Thus the scoped arithmetic theorem closes as class A without physical or repository-dependent premises.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-9645e2b6\", \"judge\": 4, \"rationale\": \"The packet directly establishes the ratio-gap identity by common-denominator algebra. The stated base values and positive forward difference for every integer d \\u2265 4 then prove that A(d) has the unique zero d = 4 on the stated domain; the odd/even split independently gives the eta-zeta ratio. The first scope also matches the authenticated pre-audit scope exactly.\", \"tuple\": [\"first\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, the two defined ratios are equal if and only if A(d) vanishes, uniquely at d = 4, where the exact tuple is (7/8, 7/8, 0).\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-b47e40c9\", \"judge\": 5, \"rationale\": \"The packet directly establishes the eta-zeta ratio, the exact ratio-gap identity, and the unique integer zero of A(d): the stated base values cover d=2,3,4, while A(d+1)\\u2212A(d)=2^(d\\u22122)\\u22121>0 for every integer d\\u22654 excludes later zeros. The runner independently computes all 20 class-A checks, and no physical selector, fitted value, external comparator, or unresolved dependency enters the scoped theorem. The second position states this closed arithmetic result with the more explicit, self-contained scope.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"For integers d \\u2265 2, R_lat(d\\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).\", \"A\", null, []]}]"
 }

@@ -1,0 +1,211 @@
+==============================================================================
+CYCLE 871 -- EXACT PRICING OF THE SOURCE-ACTION BRIDGE
+==============================================================================
+
+SCOPE NOTE: no artifact named 'retention map' exists on this branch.
+The bridge is therefore priced against the landed gravity/mass/readout
+primaries pinned below, and no retention-map row is quoted or invented.
+
+-- provenance -----------------------------------------------------------
+  [gravity] docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+            sha256=e246730a80817475 exact=True blob=2c9e1d0c75ea exact=True access=TEXT_ONLY_PINNED_SOURCE
+  [gravity] docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
+            sha256=af7bbdfda8831df1 exact=True blob=36c2b9dd0b79 exact=True access=TEXT_ONLY_PINNED_SOURCE
+  [gravity] docs/SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md
+            sha256=cb19cb3441136c4a exact=True blob=f2256fe7c1bf exact=True access=TEXT_ONLY_PINNED_SOURCE
+  [gravity] docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md
+            sha256=5de15beb514fc3ea exact=True blob=ecfa17055c67 exact=True access=TEXT_ONLY_PINNED_SOURCE
+  [gravity] docs/SIGNED_GRAVITY_RESPONSE_LANE_STATUS_NOTE_2026-04-26.md
+            sha256=c03409f79768b8f5 exact=True blob=b4d3526079af exact=True access=TEXT_ONLY_PINNED_SOURCE
+  [   mass] docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+            sha256=ef5e0280ab8bc7ae exact=True blob=b9f089eef239 exact=True access=TEXT_ONLY_PINNED_SOURCE
+  [readout] docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md
+            sha256=4d742bcc68a1e7cd exact=True blob=9a449956422a exact=True access=TEXT_ONLY_PINNED_SOURCE
+  [gravity] scripts/gate_b_weak_field_source_action_interface_2026_06_16.py
+            sha256=ac9ea8b6b7556ce8 exact=True blob=d604bc5f180e exact=True access=TEXT_AST_ONLY_BLOCKLISTED_PRIMARY
+  BLOCKLIST=['gate_b_weak_field_source_action_interface_2026_06_16'] leaks=[]
+
+-- (A) QUOTED ROWS THAT NAME THE BRIDGE ---------------------------------
+  alias-matching lines: 24   of which name a blocker: 9
+  blocker rows by lane: {'gravity': 6, 'mass': 2, 'readout': 1}
+
+  docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md:104  [gravity] sha256=e246730a8081 classes=scale_object
+    VERBATIM LINE | source normalization, propagation/readout, and generated-connectivity
+    SENTENCE      | Therefore the parent Gate B row remains an open gate until the remaining source normalization, propagation/readout, and generated-connectivity bridges are independently derived or explicitly admitted by repo policy.
+    byte_recovered=True
+  docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md:247  [gravity] sha256=af7bbdfda883 classes=bridge_object
+    VERBATIM LINE | This repair takes route (2). The source-action term is classified as an
+    SENTENCE      | The source-action term is classified as an `open_gate` proposed-extension boundary, not as an admitted axiom and not as a retained theorem.
+    byte_recovered=True
+  docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md:527  [gravity] sha256=af7bbdfda883 classes=bridge_object
+    VERBATIM LINE | proved, this row should be re-audited as an open-gate source-action proposal
+    SENTENCE      | Until that is proved, this row should be re-audited as an open-gate source-action proposal with a passing conditional harness, not as a source-action theorem.
+    byte_recovered=True
+  docs/SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md:205  [gravity] sha256=cb19cb344113 classes=bridge_object
+    VERBATIM LINE | source-action premise until derived from retained APS/Wald/Gauss structure.
+    SENTENCE      | This is the cleanest target action for the APS route, but it is still a new source-action premise until derived from retained APS/Wald/Gauss structure.
+    byte_recovered=True
+  docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md:92  [gravity] sha256=5de15beb514f classes=bridge_object
+    VERBATIM LINE |   but it is a new source-action premise until derived from retained
+    SENTENCE      | it passes variation, locked-table, positive-inertia, Born, norm, null, and source-unit controls, but it is a new source-action premise until derived from retained APS/Wald/Gauss structure - the origin/superselection/stability audit now returns `APS_LOCKED_ACTION_CONDITIONAL_NOT_RETAINED`:
+    byte_recovered=True
+  docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md:472  [gravity] sha256=5de15beb514f classes=bridge_object
+    VERBATIM LINE | - status is conditional only: this is a new source-action premise unless a
+    SENTENCE      | this is a new source-action premise unless a separate APS/Wald/Gauss derivation is supplied
+    byte_recovered=True
+  docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md:95  [mass] sha256=ef5e0280ab8b classes=bridge_object
+    VERBATIM LINE | branch already recorded by the source/action bridge.  The projective
+    SENTENCE      | That is the positive conditional branch already recorded by the source/action bridge.
+    byte_recovered=True
+  docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md:96  [mass] sha256=ef5e0280ab8b classes=bridge_object
+    VERBATIM LINE | measurement theorem alone does not supply that source-action premise.
+    SENTENCE      | The projective measurement theorem alone does not supply that source-action premise.
+    byte_recovered=True
+  docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md:21  [readout] sha256=4d742bcc68a1 classes=bridge_object
+    VERBATIM LINE | A closing theorem must provide a physical carrier/source-action bridge and
+    SENTENCE      | A closing theorem must provide a physical carrier/source-action bridge and either a native eta/holonomy identity or a genuinely inhomogeneous Record-facing normalization theorem.
+    byte_recovered=True
+
+  non-blocker alias lines (context only, not obligations):
+    docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md:1 | # Gate B Weak-Field Source/Action Interface Boundary Note
+    docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md:62 | - the source-strength normalization that absorbs constants such as `1/(4 pi)`
+    docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md:68 | The runner also verifies the normalization residual explicitly: in the linear
+    docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md:1 | # Signed Gravity APS-Locked Source Action Proposal
+    docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md:21 | This note is the exact source-action proposal row for the inserted term
+    docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md:52 | source-action term: open_gate conditional ansatz, not retained
+    docs/SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md:30 | The source-unit theorem establishes a positive source scale:
+    docs/SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md:105 | The primitive boundary/Wald carrier fixes a positive area/source scale:
+    docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md:88 | - a minimal APS-locked source action proposal is now explicit:
+    docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md:385 |   only — that audit cites the locked-source-action proposal as its
+    docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md:418 | | APS / spectral-asymmetry boundary index | `APS_WALD_GAUSS_BRIDGE_NOT_DERIVED` | eta-sign is basis-invariant,
+    docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md:447 | APS-locked source action proposal:
+    docs/SIGNED_GRAVITY_RESPONSE_LANE_STATUS_NOTE_2026-04-26.md:188 | 3. **Source-action bridge:** derive the signed source action, including the
+    docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md:22 | top-source scale lambda?
+    docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md:162 | - derive the primitive source/action premise;
+
+-- (B) WHAT THE BRIDGE MUST SUPPLY: FORCED vs FREE ----------------------
+  REC0: Record axiom, empty-record clause: a source configuration with no registered record contributes no action content.
+  REC1: Record axiom, count-once clause + Admissibility composition: disjointly supported sources compose additively.
+  LAT: Lattice axiom: the patch translation group acts covariantly.
+  QUBIT: Qubit axiom: the per-site source alphabet is two-valued, so the configuration domain is the subset lattice (encoded in the model domain, contributing no separate row).
+  ADM: Admissibility axiom: A is single-valued and finite on admissible configurations (well-posedness of the model; contributes no linear row and is reported as such).
+
+  free dimension of the source-to-action map, per patch:
+  patch        sites  unknowns    rank  full  struct  agree
+  (2,)             2         4       3     1       1   True
+  (3,)             3         8       7     1       1   True
+  (4,)             4        16      15     1       1   True
+  (5,)             5        32      31     1       1   True
+  (6,)             6        64      63     1       1   True
+  (2, 2)           4        16      15     1       1   True
+  (2, 3)           6        64      63     1       1   True
+  (7,)             7         0       0    -1       1   None
+  (8,)             8         0       0    -1       1   None
+  (10,)           10         0       0    -1       1   None
+  (12,)           12         0       0    -1       1   None
+  (3, 3)           9         0       0    -1       1   None
+  (2, 2, 2)        8         0       0    -1       1   None
+  (2, 2, 3)       12         0       0    -1       1   None
+  (4, 4)          16         0       0    -1       1   None
+  (3, 3, 3)       27         0       0    -1       1   None
+  free dimensions observed across all patches: [1]
+
+  axiom ablation ladder (free parameters removed by each clause):
+  patch     ablation                unknowns    rank  free_dim
+  (3,)      all-four-axioms                8       7         1
+  (3,)      drop-LAT                       8       5         3
+  (3,)      drop-REC1                      8       5         3
+  (3,)      drop-REC0                      8       6         2
+  (3,)      drop-REC1-and-LAT              8       1         7
+  (3,)      no-axiom-content               8       0         8
+  (4,)      all-four-axioms               16      15         1
+  (4,)      drop-LAT                      16      12         4
+  (4,)      drop-REC1                     16      11         5
+  (4,)      drop-REC0                     16      14         2
+  (4,)      drop-REC1-and-LAT             16       1        15
+  (4,)      no-axiom-content              16       0        16
+  (2, 2)    all-four-axioms               16      15         1
+  (2, 2)    drop-LAT                      16      12         4
+  (2, 2)    drop-REC1                     16      10         6
+  (2, 2)    drop-REC0                     16      14         2
+  (2, 2)    drop-REC1-and-LAT             16       1        15
+  (2, 2)    no-axiom-content              16       0        16
+
+  price of each axiom clause (free parameters it removes):
+    patch (3,): REC0 removes 1, REC1 removes 2, LAT removes 2, residual free dim 1
+    patch (4,): REC0 removes 1, REC1 removes 4, LAT removes 3, residual free dim 1
+    patch (2, 2): REC0 removes 1, REC1 removes 5, LAT removes 3, residual free dim 1
+
+-- (C) NARROWEST SUB-GAP CLOSED ----------------------------------------
+  Target: the Gate B normalization residual, upgraded from a single
+  float point-check at 1e-15 to an exact determination of the whole
+  rescaling stabilizer of L(1 - lambda*sigma/(r+eps)).
+  grid pairs tested (exact rationals): 100
+  pairs acting trivially on every in-scope action value: 10
+  invariant set equals {(a,b): a*b = 1}: True
+  invariant set is a group on the grid: True
+  in-scope observables (values, pairwise differences, pairwise ratios) separating lambda from sigma: 0
+  free dimension of the shape after quotienting the scale: 0
+  free dimension of the scale itself: 1
+
+-- (D) OBLIGATION MAP FOR THE REST -------------------------------------
+  bridge free dimension used as the yardstick: 1
+   free_dim  strength    clause
+          0  weaker      GB-S1a linear test-action shape
+             model : REC0+REC1+LAT on the config map, quotiented by the overall scale
+             source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+             role  : forced by the axioms; no import
+          1  equivalent  GB-S1b source-strength normalization (absorbs 1/(4 pi) and any unit conversion)
+             model : the residual free direction of REC0+REC1+LAT
+             source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+             role  : import: one real normalization constant, narrow role = fixes the source-to-action scale and nothing else
+          1  equivalent  physical Newton constant / SI normalization
+             model : same residual free direction
+             source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+             role  : import: one real normalization constant, narrow role = fixes the source-to-action scale and nothing else
+          5  stronger    finite-core scalar 1/(r+0.1) vs the exact periodic graph-Laplacian Green solution
+             model : translation-covariant two-point kernel on Z_3^2 with the lattice reflection imposed (dim 5; translation alone would give 9)
+             source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+             role  : import: 5 free parameters, strictly more than the bridge supplies
+          8  stronger    GB-S2 phase-propagation kernel and detector-window readout
+             model : that same kernel (5) plus one detector-window weight per squared-distance class (3)
+             source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+             role  : import: 8 free parameters, strictly more than the bridge supplies
+          4  stronger    GB-S3 label/offset generated-connectivity family
+             model : translation-covariant symmetric adjacency on the patch
+             source: docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+             role  : import: 4 free parameters, strictly more than the bridge supplies
+          2  stronger    signed-gravity locked source-action term (scale plus locked orientation)
+             model : uniform scale plus the discrete orientation the lane locks
+             source: docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md
+             role  : import: 2 free parameters, strictly more than the bridge supplies
+          2  stronger    h-class/h-unit density-to-angle readout identity
+             model : density scale, angle scale and offset under REC0
+             source: docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md
+             role  : import: 2 free parameters, strictly more than the bridge supplies
+  tally: {'weaker': 1, 'equivalent': 2, 'stronger': 5}
+
+-- AST evidence on the cited landed runner ------------------------------
+  scripts/gate_b_weak_field_source_action_interface_2026_06_16.py
+  functions=4 float_literals=16 arithmetic_here=exact Fraction
+
+-- FINDINGS (generated from the computed values above) ------------------
+  F1 the alias scope carries 9 lines that name the bridge as an open obligation, across lanes ['gravity', 'mass', 'readout'].
+  F2 on every one of the 16 patches tested (up to 27 sites, 1D/2D/3D) the four axioms leave the source-to-action map with free dimension [1]; two independent routes agree wherever both ran.
+  F3 on patch (4,) the count-once clause removes 4 free parameters, translation covariance removes 3, the empty-record clause removes 1, leaving 1.
+  F4 the rescaling stabilizer is exactly the product-one one-parameter family (equal=True, group=True) and 0 in-scope observables separate the two factors.
+  F5 the bridge's total import at weak-field linear order is 1 real scalar; its shape content has free dimension 0 and is therefore forced, not imported.
+  F6 obligation map tally over 8 clauses: {'weaker': 1, 'equivalent': 2, 'stronger': 5}.
+
+-- CERTIFICATES --------------------------------------------------------
+  PASS  CERT-PROV/pinned-inputs            paths=8 sha_exact=8 blob_exact=8 blocklist_leaks=[]
+  PASS  CERT-A/quote-integrity             rows=24 byte_recovered=24 deterministic=True
+  PASS  CERT-B/route-agreement             cross_checked_patches=7 routes_agree=True ablation_monotone=True
+  PASS  CERT-C/stabilizer-determined       grid_pairs=100 invariant=10 moving=90 closed=True identity=True inverses=True
+  PASS  CERT-D/classification-is-computed  clauses=8 pure_function_replay=True all_dims_computed=True
+  PASS  CERT-AST/landed-form-present       functions=4 gate_b_action=True gate_b_phi=True
+  PASS  CERT-E/determinism                 sections_replayed=4 all_stream_sha_stable=True
+  PASS  CERT-F/runtime-budget              elapsed_s=0.2 budget_s=1400
+
+TOTAL: PASS=8 FAIL=0
+VERDICT: PASS

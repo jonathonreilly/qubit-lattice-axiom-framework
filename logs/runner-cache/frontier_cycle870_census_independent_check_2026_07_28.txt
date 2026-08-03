@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle870_census_independent_check_2026_07_28.py
+runner_sha256: 2a981687560f2d4098ca25b74bff79a08fd9bfd573cf04fafd0a06dfc60f0d6a
+input_fingerprint_sha256: 45efc823b6e4e54aec3c709d879d450ea13a144e32521b0a76113107d264d123
+timeout_sec: 1400
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+CYCLE870_CENSUS_INDEPENDENT_CHECK
+DESIGN :: conditioning DP + integer transfer matrix + minimal-period canonical forms + Burnside/Moebius; primary read as text and cache only, never imported
+SPEC :: this checker is built to REFUTE -- every primary claim is a refutation target and the refuter is itself tested against mutants
+PASS A_INDEPENDENT_COUNTS FINDING=TWO_INDEPENDENT_ROUTES_AGREE :: {"certificate":"A_INDEPENDENT_COUNTS","dp_equals_bitmask_brute_force":true,"dp_equals_transfer_matrix":true,"finding":"TWO_INDEPENDENT_ROUTES_AGREE","n11_profile":{"0":1,"1":11,"2":44,"3":77,"4":55,"5":11},"n11_total":199,"n12_profile":{"0":1,"1":12,"2":54,"3":112,"4":105,"5":36,"6":2},"n12_total":322,"pass":true,"range":[3,24],"totals_obey_lucas_recurrence":true}
+PASS B_INDEPENDENT_ORBITS FINDING=CANONICAL_FORM_AND_MOEBIUS_ROUTES_AGREE :: {"all_k_elements_equal_census_total":true,"canonical_equals_moebius":true,"canonical_orbit_count":31,"certificate":"B_INDEPENDENT_ORBITS","finding":"CANONICAL_FORM_AND_MOEBIUS_ROUTES_AGREE","moebius_orbit_count":31,"n":12,"orbit_size_equals_minimal_period":true,"pass":true,"phased_orbit_multiplicities_k_ge_2":{"12":96,"2":4,"3":4,"4":4,"6":8},"scoped_element_totals":{"ALL_K":322,"K_EQ_2":54,"K_GE_1":321,"K_GE_2":309},"scoped_spectra":{"ALL_K":{"1":1,"12":25,"2":1,"3":1,"4":1,"6":2},"K_EQ_2":{"12":4,"6":1},"K_GE_1":{"12":25,"2":1,"3":1,"4":1,"6":2},"K_GE_2":{"12":24,"2":1,"3":1,"4":1,"6":2}}}
+PASS C_REFUTATION_HARNESS FINDING=ALL_PRIMARY_CLAIMS_SURVIVE_ALL_MUTANTS_REFUTED :: {"certificate":"C_REFUTATION_HARNESS","finding":"ALL_PRIMARY_CLAIMS_SURVIVE_ALL_MUTANTS_REFUTED","independent_k_eq_2_spectrum":{"12":4,"6":1},"independent_k_ge_2_spectrum":{"12":24,"2":1,"3":1,"4":1,"6":2},"independent_n11_phased":{"0":4,"1":44,"2":176,"3":308,"4":220,"5":44},"independent_n12_phased":{"0":4,"1":48,"2":216,"3":448,"4":420,"5":144,"6":8},"independent_phased_multiplicities":[4,4,4,8,96],"mutant_verdicts":{"M1_n11_row_off_by_one":"REFUTED","M2_external_is_k_eq_2":"REFUTED","M3_min_selection_is_one":"REFUTED","M4_floor_is_largest_prime_factor":"REFUTED","M5_phase_factor_is_4_to_the_k":"REFUTED","M6_counts_are_plain_binomials":"REFUTED","M7_orbit_sizes_all_equal_n":"REFUTED"},"mutants_refuted":7,"mutants_surviving":[],"pass":true,"primary_claim_verdicts":{"R10_phased_row_is_not_orbit_sizes":"SURVIVED","R11_min_covariant_selection_n12":"SURVIVED","R12_selection_floor_is_spf":"SURVIVED","R13_no_single_placement_selection":"SURVIVED","R14_prime_n11_orbits_all_free":"SURVIVED","R15_primary_theorem_string_matches_law":"SURVIVED","R16_final_block_consistent":"SURVIVED","R1_general_law_matches_independent_counts":"SURVIVED","R2_n11_phased_row":"SURVIVED","R3_n11_quoted_subrow":"SURVIVED","R4_n12_phased_census":"SURVIVED","R5_n12_k_eq_2_spectrum":"SURVIVED","R6_n12_k_ge_2_spectrum":"SURVIVED","R7_external_scope_label_is_wrong":"SURVIVED","R8_external_numbers_are_k_ge_2":"SURVIVED","R9_phased_row_is_multiplicities":"SURVIVED"},"primary_claims_refuted":[],"primary_claims_surviving":16,"selection_floor_range":[3,40]}
+PASS D_PRIMARY_HYGIENE FINDING=PRIMARY_DERIVES_ITS_NUMBERS :: {"blocker_hits":[],"cache_certificate_labels":["A_GENERAL_LAW","B_N11_REPRODUCTION","C_COMPOSITE_TABLE","D_SELECTION_SCOPE","E_CONTROLS"],"cache_exit_code":"0","cache_runner":"scripts/frontier_cycle870_general_n_census_2026_07_28.py","cache_runner_sha256":"3470cc2ef70ec0e88ad8ce17a9e1ac17416c67b5319c5731e67cf5b07a0fa7dd","cache_sha_matches_pinned_primary":true,"cache_status":"ok","cache_terminal_is_pass":true,"cache_terminal_line":"CYCLE870_GENERAL_N_CENSUS_LAW_PASS","certificate":"D_PRIMARY_HYGIENE","finding":"PRIMARY_DERIVES_ITS_NUMBERS","no_smuggled_answer_literals":true,"pass":true,"primary_access_mode":"read_bytes + ast.parse; never import/execute","primary_imports":["__future__","ast","collections","hashlib","importlib.abc","itertools","json","math","pathlib","subprocess","sympy","sys","time"],"primary_imports_no_sibling_runner":true,"primary_module_loaded":false,"primary_reads_only_itself":true,"primary_repo_path_strings":["scripts/frontier_cycle870_general_n_census_2026_07_28.py"],"smuggled_answer_literals":[]}
+PASS E_CONTROLS FINDING=CONTROLS_CLEAN :: {"AUDIT_INPUT_PATHS":["scripts/frontier_cycle870_general_n_census_2026_07_28.py","logs/runner-cache/frontier_cycle870_general_n_census_2026_07_28.txt"],"blocker_hits":[],"certificate":"E_CONTROLS","checker_uses_no_symbolic_algebra":true,"determinism_replay":true,"execution_head_sha":"c8a962764065749fa6465dac58e6764b32101233","expected_branch":"physics-loop/toe-time-blockN1-20260802","finding":"CONTROLS_CLEAN","imported_modules":["__future__","ast","collections","hashlib","importlib.abc","json","pathlib","subprocess","sys","time"],"input_git_blob_pins_match":true,"input_sha256_pins":{"logs/runner-cache/frontier_cycle870_general_n_census_2026_07_28.txt":"4cdcaf3fce2fe91ed8c59df824052842c9dd984aba3c9e0a8a31ac1b3041fc92","scripts/frontier_cycle870_general_n_census_2026_07_28.py":"3470cc2ef70ec0e88ad8ce17a9e1ac17416c67b5319c5731e67cf5b07a0fa7dd"},"input_sha256_pins_match":true,"inputs_existing_worktree_relative":true,"inputs_unchanged":true,"literal_audit_input_paths":true,"no_write_calls_in_source":true,"pass":true,"primary_is_tracked_at_head":true,"primary_module_never_loaded":true,"running_branch":"physics-loop/toe-time-blockN1-20260802","runtime_limit_seconds":1400,"runtime_seconds":0.047551,"stdout_bytes":7473,"stdout_limit_bytes":150000,"stdout_within_limit":true,"write_calls_found":[]}
+REFUTATION_ATTEMPT :: R10_phased_row_is_not_orbit_sizes :: SURVIVED
+REFUTATION_ATTEMPT :: R11_min_covariant_selection_n12 :: SURVIVED
+REFUTATION_ATTEMPT :: R12_selection_floor_is_spf :: SURVIVED
+REFUTATION_ATTEMPT :: R13_no_single_placement_selection :: SURVIVED
+REFUTATION_ATTEMPT :: R14_prime_n11_orbits_all_free :: SURVIVED
+REFUTATION_ATTEMPT :: R15_primary_theorem_string_matches_law :: SURVIVED
+REFUTATION_ATTEMPT :: R16_final_block_consistent :: SURVIVED
+REFUTATION_ATTEMPT :: R1_general_law_matches_independent_counts :: SURVIVED
+REFUTATION_ATTEMPT :: R2_n11_phased_row :: SURVIVED
+REFUTATION_ATTEMPT :: R3_n11_quoted_subrow :: SURVIVED
+REFUTATION_ATTEMPT :: R4_n12_phased_census :: SURVIVED
+REFUTATION_ATTEMPT :: R5_n12_k_eq_2_spectrum :: SURVIVED
+REFUTATION_ATTEMPT :: R6_n12_k_ge_2_spectrum :: SURVIVED
+REFUTATION_ATTEMPT :: R7_external_scope_label_is_wrong :: SURVIVED
+REFUTATION_ATTEMPT :: R8_external_numbers_are_k_ge_2 :: SURVIVED
+REFUTATION_ATTEMPT :: R9_phased_row_is_multiplicities :: SURVIVED
+MUTANT_PROBE :: M1_n11_row_off_by_one :: REFUTED
+MUTANT_PROBE :: M2_external_is_k_eq_2 :: REFUTED
+MUTANT_PROBE :: M3_min_selection_is_one :: REFUTED
+MUTANT_PROBE :: M4_floor_is_largest_prime_factor :: REFUTED
+MUTANT_PROBE :: M5_phase_factor_is_4_to_the_k :: REFUTED
+MUTANT_PROBE :: M6_counts_are_plain_binomials :: REFUTED
+MUTANT_PROBE :: M7_orbit_sizes_all_equal_n :: REFUTED
+FINAL :: {"external_scope_label_verdict":"REFUTED_AS_K_EQ_2_CORRECT_AS_K_GE_2","independent_k_eq_2_spectrum":{"12":4,"6":1},"independent_k_ge_2_spectrum":{"12":24,"2":1,"3":1,"4":1,"6":2},"independent_n11_phased":{"0":4,"1":44,"2":176,"3":308,"4":220,"5":44},"independent_n12_phased":{"0":4,"1":48,"2":216,"3":448,"4":420,"5":144,"6":8},"mutants_surviving":[],"mutants_tested":7,"pass":true,"primary_claims_refuted":[],"primary_claims_tested":16,"runtime_seconds":0.047551,"selection_floor_law":"min covariant selection size = spf(n)"}
+CYCLE870_CENSUS_INDEPENDENT_CHECK_PASS
+
+----- stderr -----
+

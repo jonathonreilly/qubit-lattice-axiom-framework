@@ -19,14 +19,38 @@
 - Local disposition: **pass** (ship as bounded_theorem; independent
   audit still required).
 
-## Cycle 868 — gravity response-surface sign census (blockG1) — pending supervisor review
+## Cycle 868 — gravity response-surface sign census (blockG1, PR #5923) — 2026-08-03
 
-- Worker report: SCOPED_NO_GO (no landed response object constrains the
-  conformal-sector sign at declared scope; mechanism split sigma-even
-  structural / sigma-odd ledger-trace; named escape). Checker
-  CORROBORATES_BY_EXHAUSTION (4,998,672 comparisons, 0 sensitive
-  functionals; tamper test fail-closed). Worker read 7 repo files
-  (cap 6; 5 by grep/head only) — disclosed deviation, accepted.
-- N1-N8 no-go discipline gate: due at ship (negative claim).
-- Supervisor line-by-line review: NOT YET DONE — commits fda5b87e0a,
-  3363c73f64, fae1b25e53 unreviewed; nothing pushed.
+- Worker: Claude Opus 5 (substitution disclosed). Supervisor review:
+  full read of the runner's scope/family/objects/census/mechanism/
+  verdict/controls chain plus targeted checker review; hand-verified
+  the sigma-parity mechanism (R involution => sigma squared in O2;
+  quadratic cross-terms killed by sector-orthogonality; O1/O3 blind
+  iff ledger trace zero) and the family count 72+1296=1368.
+- Supervisor strengthening recorded in the note: generator blindness
+  => the whole functional algebra is blind (the quadratic sweep is
+  redundancy, not the boundary).
+- N1-N8 answered in writing in the note and PR body (six routes; M1/M2
+  independence; steelman refuted structurally; covariance-ceiling echo
+  mapped to escape (b)).
+- Deviation accepted: worker consulted 7 files vs 6-cap (5 grep/head).
+- Local disposition: **pass** (ship as no_go; independent audit still
+  required).
+
+## 866/867 finale (blockP25) — in flight 2026-08-03
+
+- Finale checker (worker-authored, supervisor-reviewed) REFUTED v2's
+  certificate C: uniform chunk slicing off-trajectory; positional
+  near/far split left the far arm empty; REGISTER_CAP=64 undisclosed
+  (97.7% of write events dropped silently). 866 fully confirmed, even
+  uncapped.
+- Supervisor verified both bug claims in source, authored v3
+  (true per-step chunks; kernel pack-state bank membership; four
+  declared perturbation classes; every cap disclosed), committed
+  BEFORE running (d172e402 lesson), reran clean: firing robust 32/32
+  near AND far in every direct class; content equality 0 direct;
+  flip-and-restore near 32/32 vs far 29/32 content-equal — a genuine
+  near/far contrast with far path-dependence. Cell-for-cell equal to
+  the checker's independent numbers.
+- Checker reconciled to v3 (pins, claims, corroboration + v2
+  regression record) by supervisor edit, disclosed; rerun in flight.

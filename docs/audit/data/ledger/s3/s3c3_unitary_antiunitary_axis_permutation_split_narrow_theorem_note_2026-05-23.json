@@ -1,24 +1,166 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-03T04:58:59.196787+00:00",
+  "audit_invocation_history": [
+    "a6f840f493554f19b44b44833a6cced2"
+  ],
+  "audit_invocation_id": "a6f840f493554f19b44b44833a6cced2",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0)."
+    },
+    "dep_claim_type": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23",
+      "digest": "e9b5fe4e88560852fe13790abf23952b0cef154ebf54ee3eab1594939b219766",
+      "judgment": {
+        "audit_date": "2026-08-03T04:58:59.196787+00:00",
+        "audit_invocation_id": "a6f840f493554f19b44b44833a6cced2",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-audit-batch-A-20260803-4bb1440b",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "The source and runner support the finite Pauli-matrix calculation, but the restricted packet clips the cited load-bearing Cl(3,0) authority. The complete dependency chain therefore cannot be independently verified from the supplied evidence.",
+        "claim_scope": "Audited the finite-dimensional Pauli/Cl(3,0) algebra claim that even axis permutations are unitarily realizable while odd permutations reverse the central volume form and cannot be complex-linear unitary on the fixed generator triple.",
+        "claim_type": "bounded_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": null,
+        "decoration_parent_claim_id": null,
+        "independence": "cross_family",
+        "load_bearing_step": "A complex-linear unitary implementing a transposition would have to send \u03c9=iI both to \u2212\u03c9 and to iI, which is impossible.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [
+          "derived_no_go_boundary"
+        ],
+        "notes_for_re_audit_if_any": "other: rebuild the restricted packet with the complete unclipped docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md authority and re-audit the closure and decoration classification.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 20,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "total_pass": 20
+        },
+        "verdict_rationale": "The primary runner performs 20 genuine finite-matrix algebra checks and reports PASS=20 FAIL=0, supporting the stated unitary/non-unitary split on the fixed Pauli triple. The negative assertion is narrowly derived: odd permutations cannot be implemented by complex-linear unitaries on that fixed representation, without excluding antiunitary physical symmetries. Nevertheless, the packet explicitly clips a cited load-bearing authority, so a retained-grade terminal verdict is not available from this restricted evidence surface."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 0.0,
+    "packet_policy_fingerprint": {
+      "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "policy_versions": {
+      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "8e20d34262b9c73113240f99bb045a5f3424e990044f24a68db9821e441598b6",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "8e20d34262b9c73113240f99bb045a5f3424e990044f24a68db9821e441598b6",
+    "runner_path": "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "science_fingerprint": {
+      "dependencies": [
+        {
+          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+          "claim_type": "positive_theorem",
+          "effective_status": "retained",
+          "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "premise_classification": "ordinary_claim",
+          "present": true
+        }
+      ],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "717c1f79b8e54e78b1b020c8cc6bb6a336cc04e40ca2810b7b93132a5a1eba29",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "8e20d34262b9c73113240f99bb045a5f3424e990044f24a68db9821e441598b6"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23",
+        "claim_scope": "Audited the finite-dimensional Pauli/Cl(3,0) algebra claim that even axis permutations are unitarily realizable while odd permutations reverse the central volume form and cannot be complex-linear unitary on the fixed generator triple.",
+        "claim_type": "bounded_theorem",
+        "ledger_note_hash": "54ba111da5a529d2224523a6725ea7f709d666c7a52ccdedc7c515223ea2bbea",
+        "note_path": "docs/S3C3_UNITARY_ANTIUNITARY_AXIS_PERMUTATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-23.md",
+        "note_sha256": "54ba111da5a529d2224523a6725ea7f709d666c7a52ccdedc7c515223ea2bbea"
+      }
+    },
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260803-4bb1440b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The source and runner support the finite Pauli-matrix calculation, but the restricted packet clips the cited load-bearing Cl(3,0) authority. The complete dependency chain therefore cannot be independently verified from the supplied evidence.",
   "claim_id": "s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23",
-  "claim_scope": null,
+  "claim_scope": "Audited the finite-dimensional Pauli/Cl(3,0) algebra claim that even axis permutations are unitarily realizable while odd permutations reverse the central volume form and cannot be complex-linear unitary on the fixed generator triple.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-03T04:58:59.196787+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +168,22 @@
     "cl3_complexification_split_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "A complex-linear unitary implementing a transposition would have to send \u03c9=iI both to \u2212\u03c9 and to iI, which is impossible.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "54ba111da5a529d2224523a6725ea7f709d666c7a52ccdedc7c515223ea2bbea",
   "note_path": "docs/S3C3_UNITARY_ANTIUNITARY_AXIS_PERMUTATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-23.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: rebuild the restricted packet with the complete unclipped docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md authority and re-audit the closure and decoration classification.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -98,14 +243,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 20,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 20
   },
   "runner_path": "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py",
   "title": "Unitary/Antiunitary Axis-Permutation Split on the One-Qubit Operator Algebra",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The primary runner performs 20 genuine finite-matrix algebra checks and reports PASS=20 FAIL=0, supporting the stated unitary/non-unitary split on the fixed Pauli triple. The negative assertion is narrowly derived: odd permutations cannot be implemented by complex-linear unitaries on that fixed representation, without excluding antiunitary physical symmetries. Nevertheless, the packet explicitly clips a cited load-bearing authority, so a retained-grade terminal verdict is not available from this restricted evidence surface."
 }

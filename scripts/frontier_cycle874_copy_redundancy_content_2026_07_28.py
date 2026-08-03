@@ -1,0 +1,1092 @@
+#!/usr/bin/env python3
+"""Cycle 874: does COPY REDUNDANCY protect record CONTENT?
+
+Campaign-5 continuation of the Cycle-867 composed record-write model (v3,
+sha-pinned below).  867 found: formation FIRING is robust (one-flip fires
+32/32 near and far) while record CONTENT is hypersensitive (content_equal
+0 in every direct-flip class), with the flip-and-restore class showing
+near 32/32 versus far 29/32 content preservation.
+
+This cycle asks the reframed robust-formation question: is that content
+fragility a property of the SINGLE COPY -- in which case R-fold redundancy
+should rescue the majority readback and sharpen the near/far contrast --
+or a property of the FORMATION EVENT itself, in which case all copies
+corrupt together and R does nothing (a scoped negative that prices the
+copy-redundancy suspect out).
+
+The model.  867's register stored record EXISTENCE as single bits in
+structurally dead wires.  Here the register also stores record CONTENT:
+a CONTENT_BITS-wide word, derived from the lane's live payload projection
+at its formation edge, written bit-by-bit into R disjoint slot groups
+drawn from the same structurally-dead safe pool.  Content is therefore
+READ BACK FROM THE STATE, not from host metadata.  Two declared
+redundancy modes are built and measured:
+
+  replicated -- the R copies hold the SAME word, written at the same
+                instant into disjoint slot groups (the mode the campaign
+                brief specifies: location redundancy only).
+  staggered  -- copy c holds the word sampled at the lane's (c+1)-th
+                global-clean edge (time redundancy: a genuinely second
+                channel, so the null is not true by construction).
+
+A. A_REDUNDANT_CONTENT_REGISTER: derive the dead-wire safe pool as v3
+   does; allocate the existence register plus 2 x R_MAX x CONTENT_BITS
+   content slots; verify disjointness and structural inertness FOR ALL
+   COPIES; run the composed scan with real wire-mutating writes.
+B. B_CONTENT_READBACK: read every copy back out of the final state
+   columns; per-R agreement census; readback-versus-host fidelity;
+   content diversity; scan-versus-probe content agreement.
+C. C_REDUNDANCY_UNDER_PERTURBATION: re-run v3's four declared
+   perturbation classes (one_flip, late_acting, untouched_in_chunk,
+   flip_and_restore) near/far by kernel pack-state bank membership, and
+   measure PER R in {1,2,3} and PER MODE: per-copy content survival,
+   majority-readback survival, and the restore-class near/far contrast.
+D. D_CONTROLS, including reproduction of the sha-pinned 867 numbers.
+
+Declared scope: B=2, the 852 census (748 lanes), horizon 16,384 orbits;
+dead-wire derivation window 512 orbits chunk-granular then 4,096
+orbit-granular; existence register cap 64 wire-visible ordinals per
+(tag, lane); content word 32 bits; R in {1,2,3}; staggered-copy walk cap
+64 boundaries; locality sample 32 early-formation lanes with first-clean
+boundary <= 1,100, up to 4 payload wires per side.  All caps disclosed in
+the emitted certificates.  Integrity gates are bookkeeping only: the
+R-dependence is reported as data whichever way it falls.
+
+bounded_theorem, authority none, audit unset.  Independent audit still
+required (companion checker spec'd to refute).
+"""
+from __future__ import annotations
+
+import ast
+from hashlib import sha1, sha256
+import importlib.abc
+import json
+from pathlib import Path
+import sys
+from time import monotonic
+
+AUDIT_TIMEOUT_SEC = 1400
+STDOUT_LIMIT_BYTES = 150 * 1024
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+    "scripts/frontier_cycle867_composed_record_write_2026_07_28.py",
+)
+IMPORTABLE_PATHS = AUDIT_INPUT_PATHS[:2]
+TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[2:]
+BLOCKLISTED_MODULES = tuple(Path(p).stem for p in TEXT_AST_ONLY_PATHS)
+EXPECTED_SHA256 = {
+    AUDIT_INPUT_PATHS[0]:
+        "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+    AUDIT_INPUT_PATHS[1]:
+        "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+    AUDIT_INPUT_PATHS[2]:
+        "49605f6d0730e224d6c4cd25a182ec49e0c7d2f2316851bc2755632dcbe2c828",
+}
+EXPECTED_GIT_BLOBS = {
+    AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
+    AUDIT_INPUT_PATHS[1]: "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+    AUDIT_INPUT_PATHS[2]: "5f923e8429373fa5afc71a417cd4e6f787ec71b8",
+}
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+
+class _PrimaryFirewall(importlib.abc.MetaPathFinder):
+    """The cited 867 primary is read as text/AST only, never imported."""
+
+    def __init__(self) -> None:
+        self.hits: list[str] = []
+
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname.rsplit(".", 1)[-1] in BLOCKLISTED_MODULES:
+            self.hits.append(fullname)
+            raise ImportError(f"BLOCKLIST forbids primary import: {fullname}")
+        return None
+
+
+PRIMARY_FIREWALL = _PrimaryFirewall()
+sys.meta_path.insert(0, PRIMARY_FIREWALL)
+
+import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
+import frontier_cycle863_time_from_records_2026_07_28 as C863
+
+# ---- declared scope of this cycle (every cap is emitted below) ----------
+HORIZON = 16_384
+DEAD_CHUNK_ORBITS = 512
+DEAD_ORBIT_ORBITS = 4_096
+REGISTER_CAP = 64
+CONTENT_BITS = 32
+R_VALUES = (1, 2, 3)
+R_MAX = 3
+REDUNDANCY_MODES = ("replicated", "staggered")
+STAGGER_WALK_CAP = 64
+LOCALITY_SAMPLE = 32
+LOCALITY_BOUNDARY_CAP = 1_100
+PAYLOAD_WIRES_PER_SIDE = 4
+PERTURBATION_CLASSES = (
+    "one_flip", "late_acting", "untouched_in_chunk", "flip_and_restore"
+)
+DETERMINISM_LANES = 4
+
+# Sha-pinned Cycle-867 v3 numbers, reproduced here as a control (never a
+# physics gate): the landed pool, the landed annotation match, and the
+# landed full-state locality cells (probes, fired, content_equal).
+LANDED_867 = {
+    "dead_wire_count": 5_668,
+    "safe_slot_pool": 5_270,
+    "moment_exact": 164,
+    "annotation_stamps": 164,
+    "composed_first_writes": 164,
+    "lanes_with_first_slot_bit": 748,
+    "locality_cells": {
+        "one_flip": {"near": (32, 32, 0), "far": (32, 32, 0)},
+        "late_acting": {"near": (13, 13, 0), "far": (25, 25, 0)},
+        "untouched_in_chunk": {"near": (19, 19, 0), "far": (15, 15, 0)},
+        "flip_and_restore": {"near": (32, 32, 32), "far": (32, 29, 29)},
+    },
+}
+
+
+def compact(v):
+    return json.dumps(v, sort_keys=True, separators=(",", ":"), default=str)
+
+
+def digest(v) -> str:
+    return sha256(compact(v).encode("utf-8")).hexdigest()
+
+
+def git_blob(b: bytes) -> str:
+    return sha1(f"blob {len(b)}\0".encode() + b).hexdigest()
+
+
+def source_controls():
+    payloads = {p: (ROOT / p).read_bytes() for p in AUDIT_INPUT_PATHS}
+    for p, b in payloads.items():
+        ast.parse(b, filename=p)
+    sha_rows = {p: sha256(b).hexdigest() for p, b in payloads.items()}
+    blob_rows = {p: git_blob(b) for p, b in payloads.items()}
+    tree = ast.parse(Path(__file__).read_text(encoding="utf-8"), filename="self")
+    literal = None
+    for node in tree.body:
+        if isinstance(node, ast.Assign):
+            for t in node.targets:
+                if isinstance(t, ast.Name) and t.id == "AUDIT_INPUT_PATHS":
+                    literal = ast.literal_eval(node.value)
+    result = {
+        "sha256": sha_rows,
+        "git_blobs": blob_rows,
+        "literal_ok": literal == AUDIT_INPUT_PATHS,
+        "existing_worktree_relative": all(
+            not Path(p).is_absolute() and (ROOT / p).is_file()
+            for p in AUDIT_INPUT_PATHS
+        ),
+        "text_ast_only": TEXT_AST_ONLY_PATHS,
+        "blocked_modules_loaded": tuple(
+            n for n in BLOCKLISTED_MODULES if n in sys.modules
+        ),
+        "firewall_hits": tuple(PRIMARY_FIREWALL.hits),
+    }
+    result["pass"] = (
+        result["literal_ok"]
+        and result["existing_worktree_relative"]
+        and sha_rows == EXPECTED_SHA256
+        and blob_rows == EXPECTED_GIT_BLOBS
+        and not result["blocked_modules_loaded"]
+        and not result["firewall_hits"]
+    )
+    return result
+
+
+def true_step_chunks(program, positions):
+    """Per-step gate lists on the true trajectory (v3's corrected form)."""
+    stations_local = len(program)
+    macros = [K.mapped_macro(row) for row in program]
+    chunks = []
+    for step in range(stations_local):
+        gates = []
+        for station in range(stations_local):
+            if (station - step) % stations_local in positions:
+                gates.extend(macros[station])
+        chunks.append(tuple(gates))
+    return tuple(chunks)
+
+
+def bank_wire_rows(bank_count):
+    """TRUE bank membership of packed rows via single-bit pack-state
+    marking (v3's corrected form)."""
+    banks, links = K.B.chain_genesis(bank_count)
+    zb = tuple(tuple(0 for _ in b) for b in banks)
+    zl = tuple(tuple(0 for _ in link) for link in links)
+    base = K.M.pack_state(zb, zl)
+    rows = []
+    for bi in range(bank_count):
+        marked_rows = set()
+        for wire in range(len(zb[bi])):
+            changed = [list(b) for b in zb]
+            changed[bi][wire] = 1
+            marked = K.M.pack_state(tuple(tuple(b) for b in changed), zl)
+            diff = [i for i, (l, r) in enumerate(zip(base, marked)) if l != r]
+            if len(diff) != 1:
+                raise AssertionError(("bank marking not injective", bi, wire))
+            marked_rows.add(diff[0])
+        rows.append(frozenset(marked_rows))
+    return tuple(rows)
+
+
+def majority_word(words, r):
+    """Bitwise majority over the first r copies.  Declared tie rule for
+    even r: a tie resolves to 0 (no strict majority for a 1)."""
+    out = 0
+    for j in range(CONTENT_BITS):
+        ones = sum((words[c] >> j) & 1 for c in range(r))
+        if ones * 2 > r:
+            out |= 1 << j
+    return out
+
+
+def main() -> int:
+    started = monotonic()
+    controls = source_controls()
+    program, event_seeds, census = C863.derive_census()
+    stations = len(program)
+    n = len(census)
+    states, init_fail = C863.build_initial_states(program, event_seeds, census)
+    sim = census + (census[0],)
+    dup = n
+    columns = C863.pack_lanes(states + (states[0],))
+    fast = C863.compile_fast(C863.masked_h_schedules(program, sim))
+    per_bank, links, source_ptr = C863.dirty_partition()
+    global_dirty = tuple(sorted(
+        set(per_bank[0]) | set(per_bank[1]) | set(links) | {source_ptr}
+    ))
+    bank_dirty = (tuple(sorted(per_bank[0])), tuple(sorted(per_bank[1])))
+    uni_all = (1 << n) - 1
+    uni_sim = (1 << (n + 1)) - 1
+
+    # --- Certificate A part 1: the dead-wire safe pool (v3 derivation) ----
+    acc = [0] * len(columns)
+    work = [c for c in columns]
+    for w, c in enumerate(work):
+        acc[w] |= c
+    for orbit in range(1, DEAD_ORBIT_ORBITS + 1):
+        for chunk in fast:
+            chunk(work)
+            if orbit <= DEAD_CHUNK_ORBITS:
+                for w in range(len(work)):
+                    acc[w] |= work[w]
+        if orbit > DEAD_CHUNK_ORBITS:
+            for w in range(len(work)):
+                acc[w] |= work[w]
+    dead_wires = tuple(w for w in range(len(acc)) if (acc[w] & uni_sim) == 0)
+    dead_set = set(dead_wires)
+
+    raw_schedules = C863.masked_h_schedules(program, sim)
+    gate_inputs: set = set()
+    gate_targets: set = set()
+    for schedule in raw_schedules:
+        for kind, a, b, c3, _mask in schedule:
+            if kind == 0:
+                gate_targets.add(a)
+            elif kind == 1:
+                gate_inputs.add(a)
+                gate_targets.add(b)
+            else:
+                gate_inputs.update((a, b))
+                gate_targets.add(c3)
+    safe_slots_pool = tuple(
+        w for w in dead_wires
+        if w not in gate_inputs and w not in gate_targets
+    )
+
+    # --- Certificate A part 2: R-fold disjoint slot allocation ------------
+    existence_tags = [("E", "G", 0)] + [
+        ("E", f"B{b}", k) for b in (0, 1) for k in range(REGISTER_CAP)
+    ]
+    content_tags = [
+        ("C", mode, copy, bit)
+        for mode in REDUNDANCY_MODES
+        for copy in range(R_MAX)
+        for bit in range(CONTENT_BITS)
+    ]
+    slot_tags = existence_tags + content_tags
+    if len(safe_slots_pool) < len(slot_tags):
+        raise AssertionError(("insufficient safe slots",
+                              len(safe_slots_pool), len(slot_tags)))
+    slot_of = {tag: safe_slots_pool[i] for i, tag in enumerate(slot_tags)}
+    slot_wires = set(slot_of.values())
+    exist_slot = {tag[1:]: slot_of[tag] for tag in existence_tags}
+    content_slot = {tag[1:]: slot_of[tag] for tag in content_tags}
+    copy_groups = {
+        (mode, copy): frozenset(
+            content_slot[(mode, copy, bit)] for bit in range(CONTENT_BITS)
+        )
+        for mode in REDUNDANCY_MODES for copy in range(R_MAX)
+    }
+    group_keys = sorted(copy_groups)
+    pairwise_overlaps = sum(
+        len(copy_groups[a] & copy_groups[b])
+        for i, a in enumerate(group_keys) for b in group_keys[i + 1:]
+    )
+    existence_group = frozenset(exist_slot.values())
+    content_all = frozenset().union(*copy_groups.values())
+    disjointness = {
+        "slot_tags": len(slot_tags),
+        "distinct_slot_wires": len(slot_wires),
+        "copy_group_size": CONTENT_BITS,
+        "copy_groups": len(copy_groups),
+        "pairwise_copy_overlaps": pairwise_overlaps,
+        "content_existence_overlap": len(content_all & existence_group),
+        "all_slots_in_safe_pool": len(slot_wires - set(safe_slots_pool)) == 0,
+    }
+    inertness = {
+        "slots_in_gate_inputs": len(slot_wires & gate_inputs),
+        "slots_in_gate_targets": len(slot_wires & gate_targets),
+        "content_slots_in_gate_inputs": len(content_all & gate_inputs),
+        "content_slots_in_gate_targets": len(content_all & gate_targets),
+        "content_slots_all_dead": len(content_all - dead_set) == 0,
+        "statement": (
+            "every copy's slots are dead wires that no gate reads or"
+            " writes; mutation is structurally inert for ALL copies, and"
+            " the writes really mutate the state columns"
+        ),
+    }
+
+    def content_word_of(state):
+        """CONTENT_BITS-wide word over the LIVE payload projection: all
+        register slots are zeroed first, so the word is a function of the
+        active state alone (no self-reference through the register)."""
+        payload = bytearray(state)
+        for w in slot_wires:
+            payload[w] = 0
+        return int.from_bytes(
+            sha256(bytes(payload)).digest()[:(CONTENT_BITS + 7) // 8], "big"
+        ) & ((1 << CONTENT_BITS) - 1)
+
+    # --- The composed scan: base dynamics + REAL existence and content ----
+    columns = C863.pack_lanes(states + (states[0],))
+    register_counts = [0] * n
+    bank_write_ordinal = [[0, 0] for _ in range(n)]
+    write_once_violations = 0
+    content_write_once_violations = 0
+    dead_activation_conflicts = 0
+    wire_visible_writes = 0
+    content_bit_writes = 0
+    host_words: dict = {}
+    written_lanes: dict = {key: 0 for key in copy_groups}
+
+    def wire_write(tag, lane):
+        nonlocal write_once_violations, wire_visible_writes
+        wire = exist_slot[tag]
+        bit = 1 << lane
+        if columns[wire] & bit:
+            write_once_violations += 1
+        columns[wire] |= bit
+        wire_visible_writes += 1
+
+    def content_write(mode, copy, lane, word):
+        nonlocal content_write_once_violations, content_bit_writes
+        key = (mode, copy)
+        bit = 1 << lane
+        if written_lanes[key] & bit:
+            content_write_once_violations += 1
+        written_lanes[key] |= bit
+        for j in range(CONTENT_BITS):
+            if (word >> j) & 1:
+                columns[content_slot[(mode, copy, j)]] |= bit
+        content_bit_writes += CONTENT_BITS
+        host_words[(mode, copy, lane)] = word
+
+    prev_bank = [
+        C863.mask_over(columns, bank_dirty[b], uni_all) for b in (0, 1)
+    ]
+    e1_first_composed: dict = {}
+    stag_pending = 0
+    stag_count = [0] * n
+    prev_global = C863.mask_over(columns, global_dirty, uni_sim)
+    mism = int(bool(prev_global & 1) != bool(prev_global & (1 << dup)))
+    for lane in C863.lanes_of(prev_global & uni_all):
+        e1_first_composed.setdefault(census[lane], 0)
+        wire_write(("G", 0), lane)
+        word = content_word_of(C863.lane_state(columns, lane))
+        for copy in range(R_MAX):
+            content_write("replicated", copy, lane, word)
+        content_write("staggered", 0, lane, word)
+        stag_count[lane] = 1
+        stag_pending |= 1 << lane
+        register_counts[lane] += 1
+
+    boundary = 0
+    for orbit in range(1, HORIZON + 1):
+        for chunk in fast:
+            chunk(columns)
+            boundary += 1
+            g = C863.mask_over(columns, global_dirty, uni_sim)
+            mism += int(bool(g & 1) != bool(g & (1 << dup)))
+            ga = g & uni_all
+            todo = ga & stag_pending
+            if todo:
+                for lane in C863.lanes_of(todo):
+                    copy = stag_count[lane]
+                    content_write(
+                        "staggered", copy, lane,
+                        content_word_of(C863.lane_state(columns, lane))
+                    )
+                    stag_count[lane] = copy + 1
+                    if copy + 1 >= R_MAX:
+                        stag_pending &= ~(1 << lane)
+            for lane in C863.lanes_of(ga):
+                if census[lane] not in e1_first_composed:
+                    e1_first_composed[census[lane]] = boundary
+                    word = content_word_of(C863.lane_state(columns, lane))
+                    for copy in range(R_MAX):
+                        content_write("replicated", copy, lane, word)
+                    content_write("staggered", 0, lane, word)
+                    stag_count[lane] = 1
+                    stag_pending |= 1 << lane
+            for b in (0, 1):
+                bm = C863.mask_over(columns, bank_dirty[b], uni_all)
+                edge = bm & ~prev_bank[b]
+                for lane in C863.lanes_of(edge):
+                    ordinal = bank_write_ordinal[lane][b]
+                    if ordinal < REGISTER_CAP:
+                        wire_write((f"B{b}", ordinal), lane)
+                    bank_write_ordinal[lane][b] = ordinal + 1
+                    register_counts[lane] += 1
+                prev_bank[b] = bm
+            for w in dead_wires:
+                if w in slot_wires:
+                    continue
+                if columns[w] & uni_sim:
+                    dead_activation_conflicts += 1
+                    break
+
+    cert_a = {
+        "certificate": "A_REDUNDANT_CONTENT_REGISTER",
+        "declared_scope": {
+            "horizon_orbits": HORIZON,
+            "dead_window_chunk_granular_orbits": DEAD_CHUNK_ORBITS,
+            "dead_window_orbit_granular_orbits": DEAD_ORBIT_ORBITS,
+            "existence_register_cap_per_tag_lane": REGISTER_CAP,
+            "content_bits_per_copy": CONTENT_BITS,
+            "r_values": R_VALUES,
+            "r_max": R_MAX,
+            "redundancy_modes": REDUNDANCY_MODES,
+        },
+        "dead_wire_count": len(dead_wires),
+        "safe_slot_pool": len(safe_slots_pool),
+        "disjointness": disjointness,
+        "structural_inertness": inertness,
+        "dead_activation_conflicts_through_horizon": dead_activation_conflicts,
+        "existence_write_once_violations": write_once_violations,
+        "content_write_once_violations": content_write_once_violations,
+        "wire_visible_existence_writes": wire_visible_writes,
+        "content_bit_write_events": content_bit_writes,
+        "lanes_with_content_per_group": {
+            compact(key): bin(mask).count("1")
+            for key, mask in sorted(written_lanes.items())
+        },
+        "reproduces_landed_867_pool": (
+            len(dead_wires) == LANDED_867["dead_wire_count"]
+            and len(safe_slots_pool) == LANDED_867["safe_slot_pool"]
+        ),
+    }
+    cert_a["pass"] = (
+        len(dead_wires) > 0
+        and disjointness["distinct_slot_wires"] == disjointness["slot_tags"]
+        and disjointness["pairwise_copy_overlaps"] == 0
+        and disjointness["content_existence_overlap"] == 0
+        and disjointness["all_slots_in_safe_pool"]
+        and inertness["slots_in_gate_inputs"] == 0
+        and inertness["slots_in_gate_targets"] == 0
+        and inertness["content_slots_all_dead"]
+        and dead_activation_conflicts == 0
+        and write_once_violations == 0
+        and content_write_once_violations == 0
+        and content_bit_writes > 0
+    )
+
+    # --- Certificate B: read every copy back out of the state -------------
+    def readback(mode, copy, lane):
+        bit = 1 << lane
+        return sum(
+            ((columns[content_slot[(mode, copy, j)]] & bit) != 0) << j
+            for j in range(CONTENT_BITS)
+        )
+
+    content_lanes = {
+        mode: sorted(C863.lanes_of(written_lanes[(mode, 0)]))
+        for mode in REDUNDANCY_MODES
+    }
+    readback_mismatches = 0
+    for (mode, copy, lane), word in host_words.items():
+        readback_mismatches += int(readback(mode, copy, lane) != word)
+    agreement: dict = {}
+    diversity: dict = {}
+    for mode in REDUNDANCY_MODES:
+        complete = [
+            lane for lane in content_lanes[mode]
+            if all((written_lanes[(mode, c)] >> lane) & 1
+                   for c in range(R_MAX))
+        ]
+        rows = {}
+        for r in R_VALUES:
+            all_agree = 0
+            for lane in complete:
+                words = [readback(mode, c, lane) for c in range(r)]
+                all_agree += int(len(set(words)) == 1)
+            rows[str(r)] = {
+                "lanes": len(complete),
+                "all_copies_agree": all_agree,
+                "agreement_rate": (
+                    round(all_agree / len(complete), 6) if complete else None
+                ),
+            }
+        agreement[mode] = rows
+        diversity[mode] = {
+            "lanes_with_copy0": len(content_lanes[mode]),
+            "lanes_with_all_copies": len(complete),
+            "distinct_copy0_words": len({
+                readback(mode, 0, lane) for lane in content_lanes[mode]
+            }),
+        }
+
+    old_h = C863.TRAJECTORY_HORIZON
+    C863.TRAJECTORY_HORIZON = HORIZON
+    try:
+        rep = C863.replay(program, event_seeds, census)
+    finally:
+        C863.TRAJECTORY_HORIZON = old_h
+    anno_e1 = rep["e1_moment"]
+    moment_exact = sum(
+        1 for key, b in e1_first_composed.items() if anno_e1.get(key) == b
+    )
+    existence_lane_count = len(
+        set(C863.lanes_of(columns[exist_slot[("G", 0)]] & uni_all))
+        | set(C863.lanes_of(columns[exist_slot[("B0", 0)]] & uni_all))
+        | set(C863.lanes_of(columns[exist_slot[("B1", 0)]] & uni_all))
+    )
+    cert_b = {
+        "certificate": "B_CONTENT_READBACK",
+        "readback_source": (
+            "record CONTENT is reconstructed bit-by-bit from the final"
+            " state columns of the disjoint dead-wire slot groups; the"
+            " host word log is kept only to cross-check the readback"
+        ),
+        "readback_host_mismatches": readback_mismatches,
+        "content_words_written": len(host_words),
+        "agreement_census": agreement,
+        "diversity": diversity,
+        "existence_leg": {
+            "composed_first_writes": len(e1_first_composed),
+            "annotation_stamps_at_horizon": len(anno_e1),
+            "moment_exact_matches": moment_exact,
+            "lanes_with_any_first_slot_bit": existence_lane_count,
+        },
+        "tie_rule": (
+            "majority over r copies sets a bit iff strictly more than r/2"
+            " copies carry it; for even r a tie resolves to 0"
+        ),
+    }
+    cert_b["pass"] = (
+        readback_mismatches == 0
+        and len(host_words) > 0
+        and all(
+            diversity[m]["lanes_with_all_copies"] > 0 for m in REDUNDANCY_MODES
+        )
+        and all(
+            0 <= agreement[m][str(r)]["all_copies_agree"]
+            <= agreement[m][str(r)]["lanes"]
+            for m in REDUNDANCY_MODES for r in R_VALUES
+        )
+    )
+
+    # --- Certificate C: redundancy under the declared perturbations -------
+    seeds = dict(C863.derive_event_seeds(program))
+    payload_pool = [
+        w for w in range(len(columns))
+        if w not in dead_set and w not in set(global_dirty)
+    ]
+    bank_rows_true = bank_wire_rows(2)
+    bank_payload = {
+        b: [w for w in payload_pool if w in bank_rows_true[b]]
+        [:PAYLOAD_WIRES_PER_SIDE]
+        for b in (0, 1)
+    }
+    if not bank_payload[0] or not bank_payload[1]:
+        raise AssertionError(("empty bank payload pool",
+                              len(bank_payload[0]), len(bank_payload[1])))
+    chunk_cache: dict = {}
+
+    def step_chunks_for(positions):
+        if positions not in chunk_cache:
+            chunk_cache[positions] = true_step_chunks(program, positions)
+        return chunk_cache[positions]
+
+    def is_clean(state):
+        return all(state[w] == 0 for w in global_dirty)
+
+    def stagger_words(state, chunks_t, at_boundary):
+        """Words at the first R_MAX global-clean edges from `at_boundary`
+        (where `state` is already clean), walking at most
+        STAGGER_WALK_CAP boundaries.  None if the cap is hit first."""
+        words = [content_word_of(state)]
+        cur, b, steps = state, at_boundary, 0
+        while len(words) < R_MAX and steps < STAGGER_WALK_CAP:
+            cur = K.A.apply_semantic(cur, chunks_t[b % stations])
+            b += 1
+            steps += 1
+            if is_clean(cur):
+                words.append(content_word_of(cur))
+        return words if len(words) == R_MAX else None
+
+    def new_cell():
+        return {"probes": 0, "fired": 0, "copy_survivals": 0,
+                "all_copies_equal": 0, "majority_equal": 0}
+
+    tally = {
+        mode: {
+            str(r): {cls: {side: new_cell() for side in ("near", "far")}
+                     for cls in PERTURBATION_CLASSES}
+            for r in R_VALUES
+        }
+        for mode in REDUNDANCY_MODES
+    }
+    full_state_tally = {
+        cls: {side: {"probes": 0, "fired": 0, "content_equal": 0}
+              for side in ("near", "far")}
+        for cls in PERTURBATION_CLASSES
+    }
+    sampled = 0
+    base_not_clean = 0
+    degenerate_restore_skips = 0
+    stagger_incomplete_base = 0
+    stagger_incomplete_probe = 0
+    scan_probe_content_agree = 0
+    scan_probe_content_checked = 0
+    per_lane_determinism: list = []
+    candidates = sorted(
+        (rep["stores"]["global"][lane][0], lane)
+        for lane, key in enumerate(census)
+        if rep["stores"]["global"][lane]
+        and 0 < rep["stores"]["global"][lane][0] <= LOCALITY_BOUNDARY_CAP
+    )[:LOCALITY_SAMPLE]
+
+    for first, lane in candidates:
+        key = census[lane]
+        chunks_t = step_chunks_for(key[2])
+        state, _ra, _rb, _t = K.run_orbit(
+            seeds[key[1]], program, token_positions=key[2]
+        )
+        for b in range(first - 1):
+            state = K.A.apply_semantic(state, chunks_t[b % stations])
+        pre = state
+        last_chunk = chunks_t[(first - 1) % stations]
+        base_after = K.A.apply_semantic(pre, last_chunk)
+        if not is_clean(base_after):
+            base_not_clean += 1
+            continue
+        sampled += 1
+        base_full = sha256(bytes(base_after)).hexdigest()
+        base_word = content_word_of(base_after)
+        base_stag = stagger_words(base_after, chunks_t, first)
+        if base_stag is None:
+            stagger_incomplete_base += 1
+        base_words = {
+            "replicated": [base_word] * R_MAX,
+            "staggered": base_stag,
+        }
+        # scan-versus-probe cross-check: the register's stored word for
+        # this lane must equal the probe's independently walked word.
+        if ("replicated", 0, lane) in host_words:
+            scan_probe_content_checked += 1
+            scan_probe_content_agree += int(
+                readback("replicated", 0, lane) == base_word
+            )
+        rec_bank = 0 if all(base_after[w] == 0 for w in bank_dirty[0]) else 1
+        first_touch: dict = {}
+        for idx, gate in enumerate(last_chunk):
+            for w in gate.wires:
+                first_touch.setdefault(w, idx)
+        lane_cells: list = []
+        for side, bank in (("near", rec_bank), ("far", 1 - rec_bank)):
+            pool = bank_payload[bank]
+            picks = {"one_flip": pool[0], "flip_and_restore": pool[0]}
+            touched = [w for w in pool if w in first_touch]
+            picks["late_acting"] = (
+                max(touched, key=lambda w: first_touch[w]) if touched else None
+            )
+            untouched = [w for w in pool if w not in first_touch]
+            picks["untouched_in_chunk"] = untouched[0] if untouched else None
+            for cls, wire in picks.items():
+                if wire is None:
+                    continue
+                if cls == "flip_and_restore":
+                    if first - 1 == 0:
+                        degenerate_restore_skips += 1
+                        continue
+                    walk_state, _a, _b2, _t2 = K.run_orbit(
+                        seeds[key[1]], program, token_positions=key[2]
+                    )
+                    flipped = list(walk_state)
+                    flipped[wire] ^= 1
+                    walk_state = tuple(flipped)
+                    for b in range(first - 1):
+                        walk_state = K.A.apply_semantic(
+                            walk_state, chunks_t[b % stations]
+                        )
+                    restored = list(walk_state)
+                    restored[wire] ^= 1
+                    after = K.A.apply_semantic(tuple(restored), last_chunk)
+                else:
+                    mut = list(pre)
+                    mut[wire] ^= 1
+                    after = K.A.apply_semantic(tuple(mut), last_chunk)
+                fired = is_clean(after)
+                fs = full_state_tally[cls][side]
+                fs["probes"] += 1
+                fs["fired"] += int(fired)
+                if fired:
+                    fs["content_equal"] += int(
+                        sha256(bytes(after)).hexdigest() == base_full
+                    )
+                probe_words = {"replicated": None, "staggered": None}
+                if fired:
+                    w0 = content_word_of(after)
+                    probe_words["replicated"] = [w0] * R_MAX
+                    stag = stagger_words(after, chunks_t, first)
+                    if stag is None:
+                        stagger_incomplete_probe += 1
+                    probe_words["staggered"] = stag
+                for mode in REDUNDANCY_MODES:
+                    have = (
+                        base_words[mode] is not None
+                        and (not fired or probe_words[mode] is not None)
+                    )
+                    for r in R_VALUES:
+                        cell = tally[mode][str(r)][cls][side]
+                        if not have:
+                            continue
+                        cell["probes"] += 1
+                        cell["fired"] += int(fired)
+                        if not fired:
+                            continue
+                        bw = base_words[mode]
+                        pw = probe_words[mode]
+                        survivals = sum(
+                            int(pw[c] == bw[c]) for c in range(r)
+                        )
+                        cell["copy_survivals"] += survivals
+                        cell["all_copies_equal"] += int(survivals == r)
+                        cell["majority_equal"] += int(
+                            majority_word(pw, r) == majority_word(bw, r)
+                        )
+                        if len(lane_cells) < DETERMINISM_LANES * 8:
+                            lane_cells.append(
+                                (mode, r, cls, side, survivals,
+                                 majority_word(pw, r))
+                            )
+        if len(per_lane_determinism) < DETERMINISM_LANES:
+            per_lane_determinism.append(digest(lane_cells))
+
+    def rate(mode, r, cls, side, field):
+        cell = tally[mode][str(r)][cls][side]
+        return (
+            round(cell[field] / cell["probes"], 6) if cell["probes"] else None
+        )
+
+    def copy_rate(mode, r, cls, side):
+        cell = tally[mode][str(r)][cls][side]
+        denom = cell["fired"] * r
+        return round(cell["copy_survivals"] / denom, 6) if denom else None
+
+    def given_fired(mode, r, cls, side, field):
+        cell = tally[mode][str(r)][cls][side]
+        return (
+            round(cell[field] / cell["fired"], 6) if cell["fired"] else None
+        )
+
+    computed = {}
+    for mode in REDUNDANCY_MODES:
+        rows = {}
+        for r in R_VALUES:
+            rows[str(r)] = {
+                "per_copy_survival": {
+                    f"{cls}.{side}": copy_rate(mode, r, cls, side)
+                    for cls in PERTURBATION_CLASSES for side in ("near", "far")
+                },
+                "majority_readback_survival": {
+                    f"{cls}.{side}": rate(mode, r, cls, side, "majority_equal")
+                    for cls in PERTURBATION_CLASSES for side in ("near", "far")
+                },
+                "majority_survival_given_fired": {
+                    f"{cls}.{side}":
+                        given_fired(mode, r, cls, side, "majority_equal")
+                    for cls in PERTURBATION_CLASSES for side in ("near", "far")
+                },
+                "firing_rate": {
+                    f"{cls}.{side}": rate(mode, r, cls, side, "fired")
+                    for cls in PERTURBATION_CLASSES for side in ("near", "far")
+                },
+                "restore_near_far_contrast": (
+                    None
+                    if rate(mode, r, "flip_and_restore", "near",
+                            "majority_equal") is None
+                    or rate(mode, r, "flip_and_restore", "far",
+                            "majority_equal") is None
+                    else round(
+                        rate(mode, r, "flip_and_restore", "near",
+                             "majority_equal")
+                        - rate(mode, r, "flip_and_restore", "far",
+                               "majority_equal"), 6
+                    )
+                ),
+            }
+        computed[mode] = rows
+
+    # The R-dependence, computed: does raising R change ANY majority cell?
+    r_dependence = {}
+    for mode in REDUNDANCY_MODES:
+        deltas = {}
+        for cls in PERTURBATION_CLASSES:
+            for side in ("near", "far"):
+                a = rate(mode, 1, cls, side, "majority_equal")
+                b = rate(mode, R_MAX, cls, side, "majority_equal")
+                deltas[f"{cls}.{side}"] = (
+                    None if a is None or b is None else round(b - a, 6)
+                )
+        nonzero = sorted(k for k, v in deltas.items() if v not in (None, 0.0))
+        gains = sorted(k for k, v in deltas.items()
+                       if v is not None and v > 0.0)
+        r_dependence[mode] = {
+            "majority_delta_R3_minus_R1": deltas,
+            "cells_changed_by_redundancy": nonzero,
+            "cells_improved_by_redundancy": gains,
+            "any_change": bool(nonzero),
+            "any_gain": bool(gains),
+        }
+    contrast_by_r = {
+        mode: {str(r): computed[mode][str(r)]["restore_near_far_contrast"]
+               for r in R_VALUES}
+        for mode in REDUNDANCY_MODES
+    }
+    # Decompose the restore-class near/far contrast: is it a FIRING
+    # difference or a CONTENT difference?  Computed, not asserted.
+    contrast_decomposition = {}
+    for mode in REDUNDANCY_MODES:
+        rows = {}
+        for r in R_VALUES:
+            fire = {
+                side: rate(mode, r, "flip_and_restore", side, "fired")
+                for side in ("near", "far")
+            }
+            cond = {
+                side: given_fired(mode, r, "flip_and_restore", side,
+                                  "majority_equal")
+                for side in ("near", "far")
+            }
+            rows[str(r)] = {
+                "firing_rate": fire,
+                "majority_survival_given_fired": cond,
+                "firing_gap_near_minus_far": (
+                    None if fire["near"] is None or fire["far"] is None
+                    else round(fire["near"] - fire["far"], 6)
+                ),
+                "content_gap_given_fired_near_minus_far": (
+                    None if cond["near"] is None or cond["far"] is None
+                    else round(cond["near"] - cond["far"], 6)
+                ),
+            }
+        contrast_decomposition[mode] = rows
+
+    verdict_bits = []
+    for mode in REDUNDANCY_MODES:
+        dep = r_dependence[mode]
+        verdict_bits.append(
+            f"{mode}: R=1->{R_MAX} changes "
+            f"{len(dep['cells_changed_by_redundancy'])}/"
+            f"{len(dep['majority_delta_R3_minus_R1'])} majority cells"
+            f" ({len(dep['cells_improved_by_redundancy'])} improved);"
+            f" restore near-far contrast by R = "
+            + ",".join(f"R{r}={contrast_by_r[mode][str(r)]}"
+                       for r in R_VALUES)
+        )
+    cert_c = {
+        "certificate": "C_REDUNDANCY_UNDER_PERTURBATION",
+        "declared_sample": {
+            "lanes": sampled,
+            "boundary_cap": LOCALITY_BOUNDARY_CAP,
+            "lane_cap": LOCALITY_SAMPLE,
+            "wires_per_side": PAYLOAD_WIRES_PER_SIDE,
+            "classes": PERTURBATION_CLASSES,
+            "r_values": R_VALUES,
+            "modes": REDUNDANCY_MODES,
+            "stagger_walk_cap_boundaries": STAGGER_WALK_CAP,
+            "base_not_clean_skips": base_not_clean,
+            "degenerate_restore_skips": degenerate_restore_skips,
+            "stagger_incomplete_base_lanes": stagger_incomplete_base,
+            "stagger_incomplete_probes": stagger_incomplete_probe,
+        },
+        "payload_derivation": {
+            "pool_size": len(payload_pool),
+            "bank_pool_sizes": [len(bank_payload[0]), len(bank_payload[1])],
+            "membership": "kernel pack-state single-bit marking",
+        },
+        "per_r_per_mode": tally,
+        "full_state_content_tally": full_state_tally,
+        "computed_reading": computed,
+        "r_dependence": r_dependence,
+        "restore_contrast_by_r": contrast_by_r,
+        "restore_contrast_decomposition": contrast_decomposition,
+        "scan_probe_content_agreement":
+            f"{scan_probe_content_agree}/{scan_probe_content_checked}",
+        "finding": (
+            "the copy-redundancy question is answered by the computed"
+            " R-dependence, whichever way it falls -- "
+            + " | ".join(verdict_bits)
+            + " || restore-class decomposition at R=1: "
+            + "; ".join(
+                f"{mode} firing_gap="
+                f"{contrast_decomposition[mode]['1']['firing_gap_near_minus_far']}"
+                f" content_gap_given_fired="
+                f"{contrast_decomposition[mode]['1']['content_gap_given_fired_near_minus_far']}"
+                for mode in REDUNDANCY_MODES
+            )
+        ),
+    }
+    cells_ok = all(
+        0 <= cell["majority_equal"] <= cell["fired"] <= cell["probes"]
+        <= sampled
+        and 0 <= cell["all_copies_equal"] <= cell["fired"]
+        and 0 <= cell["copy_survivals"] <= cell["fired"] * r
+        for mode in REDUNDANCY_MODES for r in R_VALUES
+        for cls in PERTURBATION_CLASSES
+        for cell in (tally[mode][str(r)][cls]["near"],
+                     tally[mode][str(r)][cls]["far"])
+    )
+    full_ok = all(
+        0 <= cell["content_equal"] <= cell["fired"] <= cell["probes"]
+        <= sampled
+        for cls in PERTURBATION_CLASSES
+        for cell in (full_state_tally[cls]["near"], full_state_tally[cls]["far"])
+    )
+    # Integrity gates only -- bookkeeping consistency, never the outcome.
+    cert_c["pass"] = (
+        sampled > 0
+        and cells_ok
+        and full_ok
+        and sampled + base_not_clean == len(candidates)
+        and len(bank_payload[0]) > 0 and len(bank_payload[1]) > 0
+        and scan_probe_content_checked > 0
+        and scan_probe_content_agree == scan_probe_content_checked
+    )
+
+    # --- Certificate D: controls -----------------------------------------
+    landed_cells = {
+        cls: {side: (full_state_tally[cls][side]["probes"],
+                     full_state_tally[cls][side]["fired"],
+                     full_state_tally[cls][side]["content_equal"])
+              for side in ("near", "far")}
+        for cls in PERTURBATION_CLASSES
+    }
+    reproduction = {
+        "pool": cert_a["reproduces_landed_867_pool"],
+        "annotation": (
+            moment_exact == LANDED_867["moment_exact"]
+            and len(anno_e1) == LANDED_867["annotation_stamps"]
+            and len(e1_first_composed) == LANDED_867["composed_first_writes"]
+            and existence_lane_count == LANDED_867["lanes_with_first_slot_bit"]
+        ),
+        "locality_cells": landed_cells == LANDED_867["locality_cells"],
+        "observed_locality_cells": landed_cells,
+    }
+    reproduction["pass"] = all(
+        reproduction[k] for k in ("pool", "annotation", "locality_cells")
+    )
+    determinism = {
+        "per_lane_probe_digests": per_lane_determinism,
+        "slot_allocation_digest": digest(sorted(
+            (compact(t), w) for t, w in slot_of.items()
+        )),
+        "repeat_slot_allocation_digest": digest(sorted(
+            (compact(t), safe_slots_pool[i])
+            for i, t in enumerate(slot_tags)
+        )),
+        "bank_rows_digest": digest([sorted(r) for r in bank_wire_rows(2)]),
+        "repeat_bank_rows_digest": digest([sorted(r) for r in bank_wire_rows(2)]),
+    }
+    determinism["pass"] = (
+        determinism["slot_allocation_digest"]
+        == determinism["repeat_slot_allocation_digest"]
+        and determinism["bank_rows_digest"]
+        == determinism["repeat_bank_rows_digest"]
+        and len(per_lane_determinism) > 0
+    )
+    runtime = round(monotonic() - started, 3)
+    cert_d = {
+        "certificate": "D_CONTROLS",
+        "source_controls": controls,
+        "initial_state_failures": init_fail,
+        "duplicate_lane_mismatches": mism,
+        "replay_mismatches": rep["mismatches"],
+        "landed_867_reproduction": reproduction,
+        "determinism": determinism,
+        "runtime_seconds": runtime,
+        "runtime_budget_seconds": AUDIT_TIMEOUT_SEC,
+    }
+    cert_d["pass"] = bool(
+        controls["pass"] and init_fail == 0 and mism == 0
+        and rep["mismatches"] == 0 and reproduction["pass"]
+        and determinism["pass"] and runtime < AUDIT_TIMEOUT_SEC
+    )
+
+    checks = {
+        "A_REDUNDANT_CONTENT_REGISTER": cert_a["pass"],
+        "B_CONTENT_READBACK": cert_b["pass"],
+        "C_REDUNDANCY_UNDER_PERTURBATION": cert_c["pass"],
+        "D_CONTROLS": cert_d["pass"],
+    }
+    lines = ["CYCLE874_COPY_REDUNDANCY_CONTENT",
+             "CAMPAIGN5_CONTENT_ROBUSTNESS_NO_AXIOM_SURFACE_TOUCHED"]
+    for name, payload in (("A_REDUNDANT_CONTENT_REGISTER", cert_a),
+                          ("B_CONTENT_READBACK", cert_b),
+                          ("C_REDUNDANCY_UNDER_PERTURBATION", cert_c),
+                          ("D_CONTROLS", cert_d)):
+        status = "PASS" if payload["pass"] else "FAIL"
+        lines.append(f"CERTIFICATE {name} {status} {compact(payload)}")
+    summary = {
+        "checks": checks, "cycle": 874,
+        "r_values": R_VALUES, "modes": REDUNDANCY_MODES,
+        "redundancy_changes_majority_readback": {
+            mode: r_dependence[mode]["any_change"] for mode in REDUNDANCY_MODES
+        },
+        "redundancy_improves_majority_readback": {
+            mode: r_dependence[mode]["any_gain"] for mode in REDUNDANCY_MODES
+        },
+        "restore_contrast_by_r": contrast_by_r,
+        "restore_contrast_is_firing_not_content": {
+            mode: {
+                "firing_gap_R1":
+                    contrast_decomposition[mode]["1"][
+                        "firing_gap_near_minus_far"],
+                "content_gap_given_fired_R1":
+                    contrast_decomposition[mode]["1"][
+                        "content_gap_given_fired_near_minus_far"],
+            }
+            for mode in REDUNDANCY_MODES
+        },
+        "runtime_seconds": round(monotonic() - started, 3),
+        "pass": all(checks.values()),
+    }
+    lines.append("SUMMARY_JSON " + compact(summary))
+    lines.append("CYCLE874_COPY_REDUNDANCY_CONTENT_"
+                 + ("PASS" if summary["pass"] else "HONEST_FAIL"))
+    out = "\n".join(lines) + "\n"
+    if len(out.encode()) >= STDOUT_LIMIT_BYTES:
+        raise AssertionError(("stdout limit", len(out.encode())))
+    sys.stdout.write(out)
+    return 0 if summary["pass"] else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

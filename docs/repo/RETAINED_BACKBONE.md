@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 114 |
+| Retained positive rows | 115 |
 | Retained bounded rows | 320 |
 | Retained no-go rows | 0 |
-| Boxed decorations under retained parents | 27 |
+| Boxed decorations under retained parents | 28 |
 
-## Retained positive rows (114)
+## Retained positive rows (115)
 
 Sorted by load-bearing graph score (descending).
 
@@ -52,6 +52,7 @@ Sorted by load-bearing graph score (descending).
 - [`koide_anticommuting_operator_derivation_theorem_note_2026-05-10`](../../docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md) — score 13.801; audited 2026-07-10T16:57:30.154028+00:00
 - [`gauge_vacuum_plaquette_connected_hierarchy_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md) — score 13.788; audited 2026-07-22T19:33:03.603578+00:00
 - [`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md) — score 13.669; audited 2026-06-11T13:12:46.274572+00:00
+- [`wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`](../../docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) — score 12.845; audited 2026-08-03T12:52:06.872740+00:00
 - [`koide_gamma_orbit_selector_bridge_note_2026-04-18`](../../docs/KOIDE_GAMMA_ORBIT_SELECTOR_BRIDGE_NOTE_2026-04-18.md) — score 12.833; audited 2026-05-10T14:37:33.189790+00:00
 - [`i3_zero_exact_theorem_note`](../../docs/I3_ZERO_EXACT_THEOREM_NOTE.md) — score 12.209; audited 2026-05-03T12:43:10.800116+00:00
 - [`dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md) — score 12.171; audited 2026-07-29T20:48:31.179543+00:00
@@ -469,7 +470,7 @@ Sorted by load-bearing graph score (descending).
 
 - none at present
 
-## Boxed decorations under retained parents (27)
+## Boxed decorations under retained parents (28)
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.112; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.760; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
@@ -498,3 +499,4 @@ Sorted by load-bearing graph score (descending).
 - [`koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25`](../../docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md) — score 0.000; audited 2026-07-25T17:52:11.054837+00:00; under `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`
 - [`lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10`](../../docs/LH_DOUBLET_EIGENVALUE_RATIO_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T12:39:32.935228+00:00; under `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
 - [`lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10`](../../docs/LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md) — score 0.000; audited 2026-05-24T21:03:48.233481+00:00; under `graph_first_su3_integration_note`
+- [`wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16`](../../docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md) — score 0.000; audited 2026-07-25T20:04:45.384269+00:00; under `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`

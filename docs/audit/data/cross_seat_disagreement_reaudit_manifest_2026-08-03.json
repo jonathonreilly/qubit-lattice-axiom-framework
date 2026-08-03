@@ -1,0 +1,16 @@
+{
+  "description": "One-shot guarded resets for rows whose simultaneous critical-seat results were applied before the audit contract preserved conditional/decoration disagreements. This is targeting metadata only and carries no scientific verdict.",
+  "schema": "cross_seat_disagreement_reaudit_manifest_v1",
+  "targets": [
+    {
+      "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+      "expected_audit_invocation_id": "8758cbe3d8b8465d8848d77de552981c",
+      "expected_audit_status": "audited_decoration",
+      "expected_claim_type": "decoration",
+      "expected_criticality": "critical",
+      "expected_cross_confirmation_status": null,
+      "expected_note_hash": "ba90bbb603ce1b887f4db3422b8f264e744627e07310b755a67f289a5a0ca7be",
+      "observed_batch_commit": "23fc6260b98edaaca2d431b5262471f1eb75b848"
+    }
+  ]
+}

@@ -2059,6 +2059,154 @@ class ApplyAuditTest(unittest.TestCase):
             "b" * 32,
         )
 
+    def test_terminal_conditional_decoration_disagreement_is_preserved(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_conditional_decoration_disagreement",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        first = {
+            "claim_id": "test_conditional_decoration_disagreement",
+            "verdict": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "first bounded scope",
+            "auditor": "first-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "B",
+            "audit_invocation_id": "c" * 32,
+        }
+        ok, msg = m.apply_one(led, first)
+        self.assertTrue(ok, msg)
+        self.assertEqual(
+            led["rows"]["test_conditional_decoration_disagreement"]["audit_status"],
+            "audited_conditional",
+        )
+
+        second = {
+            **first,
+            "verdict": "audited_decoration",
+            "claim_type": "decoration",
+            "claim_scope": "second decoration scope",
+            "auditor": "second-auditor",
+            "load_bearing_step_class": "A",
+            "decoration_parent_claim_id": "retained_parent",
+            "audit_invocation_id": "d" * 32,
+        }
+        ok, msg = m.apply_one(led, second)
+        self.assertTrue(ok, msg)
+        updated = led["rows"]["test_conditional_decoration_disagreement"]
+        self.assertEqual(updated["audit_status"], "audit_in_progress")
+        self.assertEqual(updated["blocker"], "cross_confirmation_disagreement")
+        self.assertEqual(updated["cross_confirmation"]["status"], "disagreement")
+        self.assertEqual(
+            updated["cross_confirmation"]["first_audit"]["verdict"],
+            "audited_conditional",
+        )
+        self.assertEqual(
+            updated["cross_confirmation"]["second_audit"]["verdict"],
+            "audited_decoration",
+        )
+        self.assertEqual(updated["auditor"], "first-auditor")
+
+    def test_terminal_decoration_conditional_disagreement_is_preserved(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_decoration_conditional_disagreement",
+            audit_status="audited_decoration",
+            claim_type="decoration",
+            criticality="high",
+        )
+        led = self.fx.read_ledger()
+        row = led["rows"]["test_decoration_conditional_disagreement"]
+        row.update({
+            "auditor": "first-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "claim_scope": "first decoration scope",
+            "load_bearing_step_class": "A",
+            "decoration_parent_claim_id": "retained_parent",
+            "verdict_rationale": "first rationale",
+            "audit_invocation_id": "e" * 32,
+        })
+        incoming = {
+            "claim_id": "test_decoration_conditional_disagreement",
+            "verdict": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "second bounded scope",
+            "auditor": "second-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "B",
+            "audit_invocation_id": "f" * 32,
+        }
+        ok, msg = m.apply_one(led, incoming)
+        self.assertTrue(ok, msg)
+        updated = led["rows"]["test_decoration_conditional_disagreement"]
+        self.assertEqual(updated["audit_status"], "audit_in_progress")
+        self.assertEqual(updated["blocker"], "cross_confirmation_disagreement")
+        self.assertEqual(updated["cross_confirmation"]["status"], "disagreement")
+        self.assertEqual(
+            updated["cross_confirmation"]["first_audit"]["verdict"],
+            "audited_decoration",
+        )
+        self.assertEqual(
+            updated["cross_confirmation"]["second_audit"]["verdict"],
+            "audited_conditional",
+        )
+        self.assertEqual(updated["verdict_rationale"], "first rationale")
+
+    def test_matching_terminal_conditionals_are_cross_confirmed(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_matching_conditionals",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        first = {
+            "claim_id": "test_matching_conditionals",
+            "verdict": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "shared bounded scope",
+            "auditor": "first-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "B",
+            "audit_invocation_id": "1" * 32,
+        }
+        ok, msg = m.apply_one(led, first)
+        self.assertTrue(ok, msg)
+        second = {
+            **first,
+            "auditor": "second-auditor",
+            "audit_invocation_id": "2" * 32,
+        }
+        ok, msg = m.apply_one(led, second)
+        self.assertTrue(ok, msg)
+        updated = led["rows"]["test_matching_conditionals"]
+        self.assertEqual(updated["audit_status"], "audited_conditional")
+        self.assertEqual(updated["cross_confirmation"]["status"], "confirmed")
+        self.assertEqual(
+            updated["cross_confirmation"]["agreement_schema"],
+            "audit_tuple_v2",
+        )
+
     def test_main_persists_disagreement_as_applied_and_runs_propagation(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -6035,6 +6183,77 @@ class CheckStagedClaimTypingTest(unittest.TestCase):
         # No ledger written at all: the gate must not fail on non-doc commits.
         rc, _ = self._run(m, "scripts/foo.py\nlogs/runner-cache/x.json\n")
         self.assertEqual(rc, 0)
+
+
+class CrossSeatDisagreementReauditManifestTest(unittest.TestCase):
+    def _target(self):
+        return {
+            "claim_id": "test_cross_seat_reaudit",
+            "expected_audit_invocation_id": "a" * 32,
+            "expected_audit_status": "audited_decoration",
+            "expected_claim_type": "decoration",
+            "expected_criticality": "critical",
+            "expected_cross_confirmation_status": None,
+            "expected_note_hash": "b" * 64,
+            "observed_batch_commit": "c" * 40,
+        }
+
+    def test_manifest_parser_accepts_closed_guard_schema(self):
+        m = _import("invalidate_stale_audits")
+        target = self._target()
+        parsed = m.parse_cross_seat_reaudit_manifest({
+            "schema": "cross_seat_disagreement_reaudit_manifest_v1",
+            "description": "targeting metadata only",
+            "targets": [target],
+        })
+        self.assertEqual(parsed, {target["claim_id"]: target})
+
+    def test_manifest_parser_rejects_unknown_target_fields(self):
+        m = _import("invalidate_stale_audits")
+        target = {**self._target(), "verdict": "audited_clean"}
+        with self.assertRaisesRegex(ValueError, "field mismatch"):
+            m.parse_cross_seat_reaudit_manifest({
+                "schema": "cross_seat_disagreement_reaudit_manifest_v1",
+                "description": "targeting metadata only",
+                "targets": [target],
+            })
+
+    def test_reaudit_reason_requires_exact_current_authority(self):
+        m = _import("invalidate_stale_audits")
+        target = self._target()
+        row = {
+            "claim_id": target["claim_id"],
+            "audit_invocation_id": target["expected_audit_invocation_id"],
+            "audit_status": target["expected_audit_status"],
+            "claim_type": target["expected_claim_type"],
+            "criticality": target["expected_criticality"],
+            "note_hash": target["expected_note_hash"],
+            "cross_confirmation": None,
+        }
+        self.assertEqual(
+            m.cross_seat_reaudit_reason(row, target),
+            "cross_seat_disagreement_contract_reaudit:"
+            + target["observed_batch_commit"]
+            + ":"
+            + target["expected_audit_invocation_id"],
+        )
+        for field in (
+            "claim_id",
+            "audit_invocation_id",
+            "audit_status",
+            "claim_type",
+            "criticality",
+            "note_hash",
+        ):
+            moved = dict(row)
+            moved[field] = "moved"
+            self.assertIsNone(
+                m.cross_seat_reaudit_reason(moved, target),
+                field,
+            )
+        moved = dict(row)
+        moved["cross_confirmation"] = {"status": "confirmed"}
+        self.assertIsNone(m.cross_seat_reaudit_reason(moved, target))
 
 
 class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):

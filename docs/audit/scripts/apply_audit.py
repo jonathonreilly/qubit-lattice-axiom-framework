@@ -462,6 +462,8 @@ JUDICIAL_REVIEWABLE_STATUSES = {
 }
 TERMINAL_CROSS_CONFIRM_VERDICTS = {
     "audited_renaming",
+    "audited_conditional",
+    "audited_decoration",
     "audited_numerical_match",
     "audited_failed",
 }

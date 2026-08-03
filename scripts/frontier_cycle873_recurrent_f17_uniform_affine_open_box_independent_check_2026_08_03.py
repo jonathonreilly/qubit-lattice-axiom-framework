@@ -32,11 +32,11 @@ TOL = 3.0e-10
 EXPECTED_BASE_COMMIT = "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef"
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
 PRIMARY_REL = Path("scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py")
-PRIMARY_SHA256 = "c7cc974a8a5ebe6481ba71bf210089b63bfe92a8ca76e60600484562380e6ef2"
+PRIMARY_SHA256 = "ab9f365c167b8fafb4f54508c0fb38b325bf687fdf8f222bc9aa833ad65dfc62"
 PHYSICAL_CORE_REL = Path("scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py")
-PHYSICAL_CORE_SHA256 = "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7"
+PHYSICAL_CORE_SHA256 = "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7"
 PHYSICAL_RECEIPT_REL = Path("outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json")
-PHYSICAL_RECEIPT_SHA256 = "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e"
+PHYSICAL_RECEIPT_SHA256 = "397657af570393fad9967edc55e74f7a66f46e8284fd5102be0f5e1df9247d0b"
 DEFAULT_OUTPUT = DEFAULT_ROOT / "outputs/cycle873_recurrent_f17_uniform_affine_open_box_independent_check_receipt_2026_08_03.json"
 EXPECTED_SOURCE_SHA256 = {
     "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py":
@@ -768,7 +768,7 @@ def emitted_schedule_certificate(root, C870, C871, C714):
     expected = receipt["fixtures"][0]["augmented_epoch_ledgers"]["A_F17_only"]["seam_stage_schedule_sha256"]
     return {
         "shape": (2, 2, 2), "seams": len(logical_counts),
-        "schedule_sha256": digest, "expected_primary_receipt_schedule_sha256": expected,
+        "schedule_sha256": digest, "physical_core_F17_only_schedule_sha256": expected,
         "schedule_hash_match": digest == expected,
         "total_logical_instructions": sum(logical_counts),
         "logical_min_max": (min(logical_counts), max(logical_counts)),

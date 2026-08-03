@@ -21,12 +21,12 @@ CHILDREN = {
     "physical": {
         "source": "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
         "receipt": "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json",
-        "sha256": "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7",
+        "sha256": "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7",
     },
     "constraints": {
         "source": "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py",
         "receipt": "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json",
-        "sha256": "fffd77a8f8d0fcba644a69f0f5ed1bd3d3e21c874de4005de10156e6b1a12177",
+        "sha256": "70d7362a2f534bd94b5b421f38e0c0509483ed8c1962b83f21f790b4c1dcb685",
     },
     "affine": {
         "source": "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py",
@@ -335,7 +335,6 @@ def build_report() -> tuple[dict, list[str]]:
             "four_rotation_selection_failures": sum(
                 row["selected_factor_match_failures"] for row in physical["fixtures"]
             ),
-            "grouped_macro_is_literal_emitted_M2_word": True,
             "raw_per_seam_phase": [0.0, -1.0],
             "open_box_raw_seam_stage_phases": [
                 {

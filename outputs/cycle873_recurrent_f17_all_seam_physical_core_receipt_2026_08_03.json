@@ -214,8 +214,6 @@
           "omitted_seams": 1
         }
       },
-      "active_single_packet_site_interface_deletions": 708,
-      "active_single_rail_bank_deletions": 204,
       "all_seam_bank_union_M2": 912,
       "alpha_plus_minus_route_census_failures": 0,
       "assigned_plus_route_support_union_M2": 2964,
@@ -448,6 +446,7 @@
       "retained_nonseam_rotations": 1344,
       "retained_post_seam_rotations": 360,
       "retained_pre_seam_rotations": 984,
+      "role_removal_census_boundary": "set-membership and expected-cardinality integrity only; no damaged circuit or state is executed, and these rows are not active deletion controls",
       "route_failures": 0,
       "route_touched_union_M2": 2724,
       "same_axis_parity_rotation_anticommutators": 0,
@@ -465,7 +464,12 @@
         2
       ],
       "shared_role_alias_failures": 0,
-      "single_rail_bank_deletion_lost_one_hot_columns": 204,
+      "single_packet_site_role_removal_census_cases": 708,
+      "single_packet_site_role_removal_census_failures": 0,
+      "single_packet_site_role_removal_expected_remaining_bank_M2": 75,
+      "single_rail_role_removal_census_cases": 204,
+      "single_rail_role_removal_census_failures": 0,
+      "single_rail_role_removal_expected_remaining_roles": 19,
       "source_update_instructions": 17048,
       "source_update_rotations": 1392,
       "stage_abstract_Gauss_preservation_failures": {
@@ -475,9 +479,7 @@
         "seam": 0
       },
       "total_macro_logical_instructions": 17448,
-      "total_macro_routed_gates": 90224,
-      "undetected_single_packet_site_interface_deletions": 0,
-      "undetected_single_rail_bank_deletions": 0
+      "total_macro_routed_gates": 90224
     },
     {
       "C870_constraint_certificate": {
@@ -674,8 +676,6 @@
           "omitted_seams": 1
         }
       },
-      "active_single_packet_site_interface_deletions": 3186,
-      "active_single_rail_bank_deletions": 918,
       "all_seam_bank_union_M2": 4104,
       "alpha_plus_minus_route_census_failures": 0,
       "assigned_plus_route_support_union_M2": 12671,
@@ -983,6 +983,7 @@
       "retained_nonseam_rotations": 4536,
       "retained_post_seam_rotations": 1215,
       "retained_pre_seam_rotations": 3321,
+      "role_removal_census_boundary": "set-membership and expected-cardinality integrity only; no damaged circuit or state is executed, and these rows are not active deletion controls",
       "route_failures": 0,
       "route_touched_union_M2": 11915,
       "same_axis_parity_rotation_anticommutators": 0,
@@ -1000,7 +1001,12 @@
         3
       ],
       "shared_role_alias_failures": 0,
-      "single_rail_bank_deletion_lost_one_hot_columns": 918,
+      "single_packet_site_role_removal_census_cases": 3186,
+      "single_packet_site_role_removal_census_failures": 0,
+      "single_packet_site_role_removal_expected_remaining_bank_M2": 75,
+      "single_rail_role_removal_census_cases": 918,
+      "single_rail_role_removal_census_failures": 0,
+      "single_rail_role_removal_expected_remaining_roles": 19,
       "source_update_instructions": 61038,
       "source_update_rotations": 4752,
       "stage_abstract_Gauss_preservation_failures": {
@@ -1010,9 +1016,7 @@
         "seam": 0
       },
       "total_macro_logical_instructions": 79020,
-      "total_macro_routed_gates": 437288,
-      "undetected_single_packet_site_interface_deletions": 0,
-      "undetected_single_rail_bank_deletions": 0
+      "total_macro_routed_gates": 437288
     },
     {
       "C870_constraint_certificate": {
@@ -1161,8 +1165,6 @@
           "omitted_seams": 1
         }
       },
-      "active_single_packet_site_interface_deletions": 1180,
-      "active_single_rail_bank_deletions": 340,
       "all_seam_bank_union_M2": 1520,
       "alpha_plus_minus_route_census_failures": 0,
       "assigned_plus_route_support_union_M2": 4839,
@@ -1420,6 +1422,7 @@
       "retained_nonseam_rotations": 2016,
       "retained_post_seam_rotations": 540,
       "retained_pre_seam_rotations": 1476,
+      "role_removal_census_boundary": "set-membership and expected-cardinality integrity only; no damaged circuit or state is executed, and these rows are not active deletion controls",
       "route_failures": 0,
       "route_touched_union_M2": 4487,
       "same_axis_parity_rotation_anticommutators": 0,
@@ -1437,7 +1440,12 @@
         2
       ],
       "shared_role_alias_failures": 0,
-      "single_rail_bank_deletion_lost_one_hot_columns": 340,
+      "single_packet_site_role_removal_census_cases": 1180,
+      "single_packet_site_role_removal_census_failures": 0,
+      "single_packet_site_role_removal_expected_remaining_bank_M2": 75,
+      "single_rail_role_removal_census_cases": 340,
+      "single_rail_role_removal_census_failures": 0,
+      "single_rail_role_removal_expected_remaining_roles": 19,
       "source_update_instructions": 26060,
       "source_update_rotations": 2096,
       "stage_abstract_Gauss_preservation_failures": {
@@ -1447,9 +1455,7 @@
         "seam": 0
       },
       "total_macro_logical_instructions": 29144,
-      "total_macro_routed_gates": 156208,
-      "undetected_single_packet_site_interface_deletions": 0,
-      "undetected_single_rail_bank_deletions": 0
+      "total_macro_routed_gates": 156208
     }
   ],
   "name": "Cycle873 recurrent F17-only all-seam physical core",

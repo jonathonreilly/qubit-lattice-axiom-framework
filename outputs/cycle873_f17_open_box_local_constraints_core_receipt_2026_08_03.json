@@ -400,7 +400,7 @@
     "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
     "expected_base_is_ancestor_of_head": true,
     "integration_runner": "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
-    "integration_runner_sha256": "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7",
+    "integration_runner_sha256": "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7",
     "pinned_source_sha256": {
       "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a",
       "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",

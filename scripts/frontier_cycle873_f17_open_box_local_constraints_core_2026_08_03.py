@@ -56,7 +56,7 @@ INTEGRATION_PATH = (
     HERE / "frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py"
 )
 EXPECTED_INTEGRATION_SHA256 = (
-    "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7"
+    "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7"
 )
 
 

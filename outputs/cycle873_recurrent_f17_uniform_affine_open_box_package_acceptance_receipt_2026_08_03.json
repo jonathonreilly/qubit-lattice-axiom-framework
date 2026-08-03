@@ -1,7 +1,50 @@
 {
+  "L2_grouped_macro_literal_emission_crosscheck": {
+    "exact_match": true,
+    "independent_schedule_sha256": "74f24db6629a021ae1fa17f3fa124e21cebc3fee8c1f9953b368e0ed42910e67",
+    "independent_word_count": 12,
+    "larger_fixture_boundary": "the 3x3x3 and held 3x2x2 fixtures use the same pinned generic emitter but do not receive a second per-word digest reconstruction",
+    "physical_core_schedule_sha256": "74f24db6629a021ae1fa17f3fa124e21cebc3fee8c1f9953b368e0ed42910e67",
+    "scope": "all 12 F17-only seams of the 2x2x2 fixture"
+  },
   "acceptance_receipt_self_hash_excluded": true,
   "acceptance_source": "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
-  "acceptance_source_sha256": "786b2a2210ae8f7a30c94698faa69d7d5a92b82f354188c30b539d7975a3f10c",
+  "acceptance_source_sha256": "6f72e9edb3bebf31e3e9760925fd1ee9ae3ae8666c40292fe97d13fd24f1c2fb",
+  "audit_input_missing": [],
+  "audit_input_paths": [
+    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt",
+    "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_independent_check_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json",
+    "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json",
+    "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py",
+    "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part5_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle873_primary_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part3_2026_08_03.py"
+  ],
+  "audit_input_unpinned": [],
   "base": {
     "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
     "base_is_ancestor_of_head": true,
@@ -12,18 +55,34 @@
   },
   "candidate_artifact_hash_drift": {},
   "candidate_artifact_sha256": {
-    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md": "4f189594d0e565f2fb2183acb0bd52765cfee45b3717a5e25c452ff8d44d7207",
+    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md": "3cd18032e6f14007e11c2709e70021b9fbcd81fcfc8974cbc650f64cd4df010e",
     "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt": "6689ee8aac078f36507af89c20a90a19ea0721d34af74b1a98318cec06c35812",
     "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt": "72be1cd183bf85663c6726223f9db9fb61be3e80b6ed0f3d386f32849312eb74",
-    "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json": "28c954d13a4d0a3d0b589c4a8a8fd9d31c3d0f9774e934abb4f84aae8d568233",
-    "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json": "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
-    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_independent_check_receipt_2026_08_03.json": "ce3dae5a6fafd675d69fdbaa0e0e651e07988b5409c3bff914a86341be18ced9",
-    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json": "1377569cebc4feb82a568460f3c730e2e6618c457fff10ca96ba35788dd517a1",
+    "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json": "ed30056eaeeac03301849d3f386a6d8d0b7accbef2237b4c388e85a595212f1e",
+    "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json": "397657af570393fad9967edc55e74f7a66f46e8284fd5102be0f5e1df9247d0b",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_independent_check_receipt_2026_08_03.json": "4fdff3e14f0c0253b13c38349fbe0e1bff9c6b9bdee60b7e86d58f9b98d6b5bd",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json": "08a2ad65a8d17e308ca08a0a9c51882bf8df4b0a13005103f17890d77a27a5ec",
     "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json": "d5d0dec904a034a0994d1e98e1c38b966240b91a3ad3435ac7bb01011c5b21b9",
-    "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py": "fffd77a8f8d0fcba644a69f0f5ed1bd3d3e21c874de4005de10156e6b1a12177",
-    "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py": "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7",
-    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py": "fa8d7d6b8f128452560d16d3f702e5536eb45dc3633a91e3dc8d5c7fa893e9fd",
-    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py": "c7cc974a8a5ebe6481ba71bf210089b63bfe92a8ca76e60600484562380e6ef2",
+    "scripts/frontier_cycle873_affine_source_audit_view_part1_2026_08_03.py": "f2dc97037cdab023921274ff47b4a07c5de0f7f94d63df24cdc374363f8bd52b",
+    "scripts/frontier_cycle873_affine_source_audit_view_part2_2026_08_03.py": "3bed3a64dfd06ac42b304af088e4be06dc5d2a14432dccb0037772987ffbb7a5",
+    "scripts/frontier_cycle873_affine_source_audit_view_part3_2026_08_03.py": "b826bb8cc96dde8aa7d2f6cc89fbd924b7e0fb25fc134c4a47a9bb89f0d0e50c",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part1_2026_08_03.py": "5079d8aacdfe2ab0154714526043dab928a85e83727a8783d93a36daa893adf0",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part2_2026_08_03.py": "62ec0b8329ec6169985c4d27e38d36ea03cd67a8e0dc831c21eb3c231babd4a6",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part3_2026_08_03.py": "91c7f8b8c2d866f9782a4770b4686d920ff2b6b505133f71eb5edaea9a95b6b3",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part4_2026_08_03.py": "dceec4cc66669c9aa98b9bc7dcae53d9b4b70c244b7323986d246d66b4d17725",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part5_2026_08_03.py": "2f1158a27ab6f9a2d55580b4dbcaf4c740b30434f5e8b9ff2ecc5d353d77ddc0",
+    "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py": "70d7362a2f534bd94b5b421f38e0c0509483ed8c1962b83f21f790b4c1dcb685",
+    "scripts/frontier_cycle873_independent_source_audit_view_part1_2026_08_03.py": "bb8adcca563d1c70c9e491ff75127b8c9d41240afa040deb742e478f353788e9",
+    "scripts/frontier_cycle873_independent_source_audit_view_part2_2026_08_03.py": "74aa3ba5a44dd478c81247703ed545c176154a877bcdd3270ebbaa35629a396c",
+    "scripts/frontier_cycle873_independent_source_audit_view_part3_2026_08_03.py": "755a6c2e4e63fc6d6238b7ad053a32d0218e4a415a9c23c0973a3aa367658a1f",
+    "scripts/frontier_cycle873_independent_source_audit_view_part4_2026_08_03.py": "8801f70904fa2cb54e1be6458b349b154e0f29d533df218574ddabc7a7efd412",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part1_2026_08_03.py": "b85d277b1fc6e4a8fabd1e62c52d369bbe8d2f5762ce7f44eac35539c09ff16e",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part2_2026_08_03.py": "24441e0224609c66bfd3cb3e7e924e2cef071125d1f90f8ca26b84487074f779",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part3_2026_08_03.py": "207f75b20961a5c33d40dc2a38fa26c753ce3287d5655f7bb6815b35ddae2aeb",
+    "scripts/frontier_cycle873_primary_source_audit_view_part1_2026_08_03.py": "59e7bc8fbefbf318d0dec4d79535a49f96278bde2c310fccb1ba65cddcad8669",
+    "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py": "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py": "02c3f321ba5ef1dce723ed04bd83919839648fd89202f607b6cc680645a97734",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py": "ab9f365c167b8fafb4f54508c0fb38b325bf687fdf8f222bc9aa833ad65dfc62",
     "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py": "a1bc2159c5e2d5f59087860e3fe40bb1919cd4e476f6565a99c326d5af1c5ca9"
   },
   "canonical_receipt_status": {
@@ -33,13 +92,13 @@
     "physical": "pass",
     "primary": "pass"
   },
-  "citation_manifest_sha256": "3ee9d12f1a0249abedfc56c7aaeadb497349d96b5e446120b229a391015e91fb",
+  "citation_manifest_sha256": "f5239fc8436f39c4043e1028968d79407934d9c9b9464cbcb415d1700db8591d",
   "cold_runs": {
     "independent": {
       "canonical_log_sha256": "6689ee8aac078f36507af89c20a90a19ea0721d34af74b1a98318cec06c35812",
-      "canonical_receipt_sha256": "ce3dae5a6fafd675d69fdbaa0e0e651e07988b5409c3bff914a86341be18ced9",
+      "canonical_receipt_sha256": "4fdff3e14f0c0253b13c38349fbe0e1bff9c6b9bdee60b7e86d58f9b98d6b5bd",
       "fresh_receipt_byte_identical_to_canonical": true,
-      "fresh_receipt_sha256": "ce3dae5a6fafd675d69fdbaa0e0e651e07988b5409c3bff914a86341be18ced9",
+      "fresh_receipt_sha256": "4fdff3e14f0c0253b13c38349fbe0e1bff9c6b9bdee60b7e86d58f9b98d6b5bd",
       "returncode": 0,
       "source": "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py",
       "stderr": "",
@@ -48,9 +107,9 @@
     },
     "primary": {
       "canonical_log_sha256": "72be1cd183bf85663c6726223f9db9fb61be3e80b6ed0f3d386f32849312eb74",
-      "canonical_receipt_sha256": "1377569cebc4feb82a568460f3c730e2e6618c457fff10ca96ba35788dd517a1",
+      "canonical_receipt_sha256": "08a2ad65a8d17e308ca08a0a9c51882bf8df4b0a13005103f17890d77a27a5ec",
       "fresh_receipt_byte_identical_to_canonical": true,
-      "fresh_receipt_sha256": "1377569cebc4feb82a568460f3c730e2e6618c457fff10ca96ba35788dd517a1",
+      "fresh_receipt_sha256": "08a2ad65a8d17e308ca08a0a9c51882bf8df4b0a13005103f17890d77a27a5ec",
       "returncode": 0,
       "source": "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py",
       "stderr": "",
@@ -83,6 +142,40 @@
   ],
   "missing_note_required_text": [],
   "missing_package_files_before_acceptance_output": [],
+  "observed_package_files": [
+    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt",
+    "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_independent_check_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json",
+    "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json",
+    "scripts/frontier_cycle873_affine_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part5_2026_08_03.py",
+    "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_primary_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py",
+    "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py"
+  ],
   "package_candidate_files": [
     "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md",
     "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt",
@@ -94,19 +187,168 @@
     "outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json",
     "outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json",
     "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json",
+    "scripts/frontier_cycle873_affine_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part5_2026_08_03.py",
     "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_primary_source_audit_view_part1_2026_08_03.py",
     "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
     "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
     "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py",
     "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py",
     "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py"
   ],
-  "package_file_count": 16,
+  "package_file_count": 32,
   "schema": "cycle873-recurrent-f17-uniform-affine-open-box-package-acceptance-v1",
   "self_reference_exclusions": {
     "outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json": "a file cannot contain its own SHA-256 without a fixed-point requirement",
     "outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json": "the generated receipt cannot contain and pin its own final SHA-256",
     "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py": "the acceptance source pins this manifest, so manifest-to-acceptance pinning would create a mutual hash cycle; the acceptance receipt records the source hash"
+  },
+  "source_views": {
+    "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py": {
+      "byte_identical": true,
+      "contiguous": true,
+      "line_range": [
+        1,
+        1092
+      ],
+      "mutation_controls": {
+        "actual_child_mutation_detected": true,
+        "hard_pin_view_mutation_detected": true,
+        "malformed_prefix_detected": true,
+        "ordinal_mutation_detected": true,
+        "payload_mutation_detected": true
+      },
+      "part_count": 3,
+      "source_bytes": 47962,
+      "source_final_newline": true,
+      "source_sha256": "70d7362a2f534bd94b5b421f38e0c0509483ed8c1962b83f21f790b4c1dcb685",
+      "target_source": "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py",
+      "total_source_lines": 1092,
+      "view_paths": [
+        "scripts/frontier_cycle873_local_constraints_source_audit_view_part1_2026_08_03.py",
+        "scripts/frontier_cycle873_local_constraints_source_audit_view_part2_2026_08_03.py",
+        "scripts/frontier_cycle873_local_constraints_source_audit_view_part3_2026_08_03.py"
+      ]
+    },
+    "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py": {
+      "byte_identical": true,
+      "contiguous": true,
+      "line_range": [
+        1,
+        2038
+      ],
+      "mutation_controls": {
+        "actual_child_mutation_detected": true,
+        "hard_pin_view_mutation_detected": true,
+        "malformed_prefix_detected": true,
+        "ordinal_mutation_detected": true,
+        "payload_mutation_detected": true
+      },
+      "part_count": 5,
+      "source_bytes": 92611,
+      "source_final_newline": true,
+      "source_sha256": "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7",
+      "target_source": "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
+      "total_source_lines": 2038,
+      "view_paths": [
+        "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part1_2026_08_03.py",
+        "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part2_2026_08_03.py",
+        "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part3_2026_08_03.py",
+        "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part4_2026_08_03.py",
+        "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part5_2026_08_03.py"
+      ]
+    },
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py": {
+      "byte_identical": true,
+      "contiguous": true,
+      "line_range": [
+        1,
+        1546
+      ],
+      "mutation_controls": {
+        "actual_child_mutation_detected": true,
+        "hard_pin_view_mutation_detected": true,
+        "malformed_prefix_detected": true,
+        "ordinal_mutation_detected": true,
+        "payload_mutation_detected": true
+      },
+      "part_count": 4,
+      "source_bytes": 76863,
+      "source_final_newline": true,
+      "source_sha256": "02c3f321ba5ef1dce723ed04bd83919839648fd89202f607b6cc680645a97734",
+      "target_source": "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py",
+      "total_source_lines": 1546,
+      "view_paths": [
+        "scripts/frontier_cycle873_independent_source_audit_view_part1_2026_08_03.py",
+        "scripts/frontier_cycle873_independent_source_audit_view_part2_2026_08_03.py",
+        "scripts/frontier_cycle873_independent_source_audit_view_part3_2026_08_03.py",
+        "scripts/frontier_cycle873_independent_source_audit_view_part4_2026_08_03.py"
+      ]
+    },
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py": {
+      "byte_identical": true,
+      "contiguous": true,
+      "line_range": [
+        1,
+        491
+      ],
+      "mutation_controls": {
+        "actual_child_mutation_detected": true,
+        "hard_pin_view_mutation_detected": true,
+        "malformed_prefix_detected": true,
+        "ordinal_mutation_detected": true,
+        "payload_mutation_detected": true
+      },
+      "part_count": 1,
+      "source_bytes": 21567,
+      "source_final_newline": true,
+      "source_sha256": "ab9f365c167b8fafb4f54508c0fb38b325bf687fdf8f222bc9aa833ad65dfc62",
+      "target_source": "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py",
+      "total_source_lines": 491,
+      "view_paths": [
+        "scripts/frontier_cycle873_primary_source_audit_view_part1_2026_08_03.py"
+      ]
+    },
+    "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py": {
+      "byte_identical": true,
+      "contiguous": true,
+      "line_range": [
+        1,
+        1118
+      ],
+      "mutation_controls": {
+        "actual_child_mutation_detected": true,
+        "hard_pin_view_mutation_detected": true,
+        "malformed_prefix_detected": true,
+        "ordinal_mutation_detected": true,
+        "payload_mutation_detected": true
+      },
+      "part_count": 3,
+      "source_bytes": 46050,
+      "source_final_newline": true,
+      "source_sha256": "a1bc2159c5e2d5f59087860e3fe40bb1919cd4e476f6565a99c326d5af1c5ca9",
+      "target_source": "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py",
+      "total_source_lines": 1118,
+      "view_paths": [
+        "scripts/frontier_cycle873_affine_source_audit_view_part1_2026_08_03.py",
+        "scripts/frontier_cycle873_affine_source_audit_view_part2_2026_08_03.py",
+        "scripts/frontier_cycle873_affine_source_audit_view_part3_2026_08_03.py"
+      ]
+    }
   },
   "status": "pass",
   "upstream_citation_hash_drift": {}

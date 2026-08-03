@@ -2,7 +2,11 @@
 
 Type: bounded_theorem
 
-Status: proposed_retained. Authority: none. Audit: unset. Constitutional effect: none. The effective status remains pipeline-derived after independent audit.
+**Primary runner:** [cold Cycle 873 package acceptance](../scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py)
+
+Status: bounded construction candidate. Authority: none. Audit: unset. Constitutional effect: none. The effective status remains pipeline-derived after independent audit.
+
+**Result scope:** modular literal-physical/effective and effective/affine intertwiners on supplied open-box code inputs; no monolithic physical affine-state preparation or autonomous recurrence theorem.
 
 Base: freshly fetched `origin/main` at `c73a11d1ea7ddd564c48aa2a5a459a43d94262ef`. Cycle 873 was unused on that base before this package was prepared. The executable provenance check requires this base to be an ancestor of the current checkout; it does not require the current `HEAD` to equal the base and therefore remains valid after a reviewed package commit.
 
@@ -43,6 +47,8 @@ The four commuting landed `pi/2` rotations emit the raw seam as exactly `-i * FS
 - held `3x2x2`: 20 seams, raw seam-stage phase `+1`.
 
 Only the formal `+i`-corrected per-seam macro is exact generally. The complete epoch also retains Cycle 870's separate ledgered global correction; the seam-stage phase accounting does not replace it.
+
+The physical core emits and digests all 86 seam macros across the three open fixtures. A separately implemented checker exactly matches every grouped word and the complete schedule digest for all 12 L2 seams. The `3x3x3` and held `3x2x2` fixtures use the same pinned generic emitter, but they do not receive a second per-word digest reconstruction; the acceptance receipt records this larger-fixture boundary explicitly.
 
 ## Physical open-box certificates
 
@@ -106,11 +112,11 @@ Incidence times plaquette boundary is zero modulo 17, so the star and plaquette 
 
 These operators characterize and preserve the admitted code space. The runners do not prepare a uniform affine state, enforce one-hotness, measure or synthesize the 17-term spectral projectors, select a star sector, correct leakage, cool, or reset the banks.
 
-The onsite part of the preservation claim is executed rather than assigned by stage name. Cycle 870 supplies the pinned physical-word-to-target intertwiners. The local core then exterior-lifts the live six-mode coin and reverse targets to all 64 occupation columns, constructs the live contact target, and checks each target and their composed onsite epoch against `diag(omega^N_x)`. All four star-clock commutator residuals are zero; the maximum onsite-target unitarity residual is `5.561024564318497e-15`. An independent reconstruction repeats the 64-column calculation. A hostile bare occupation flip has commutator norm `2.939992285065125`, so the preservation gate is active. Since these onsite targets act identically on every F17 link rail, this target calculation plus the pinned Cycle 870 physical intertwiner supplies the onsite factor in the full augmented-epoch preservation chain.
+The onsite part of the preservation claim is executed rather than assigned by stage name. Cycle 870 supplies the pinned physical-word-to-target intertwiners, including the supplied contact coupling `g_contact=0.37`; this numerical coupling is distinct from the unrelated affine background field `g`. The local core then exterior-lifts the live six-mode coin and reverse targets to all 64 occupation columns, constructs the live contact target, and checks each target and their composed onsite epoch against `diag(omega^N_x)`. All four star-clock commutator residuals are zero; the maximum onsite-target unitarity residual is `5.561024564318497e-15`. An independent reconstruction repeats the 64-column calculation. A hostile bare occupation flip has commutator norm `2.939992285065125`, so the preservation gate is active. Since these onsite targets act identically on every F17 link rail, this target calculation plus the pinned Cycle 870 physical intertwiner supplies the onsite factor in the full augmented-epoch preservation chain.
 
-## Actual Cycle 219 recurrence and dispersion fixture
+## Inherited Cycle 870 numerical recurrence and dispersion fixture
 
-The package does include the actual pinned Cycle 219 `beta=-0.3` free one-particle fixture because it is directly evidenced. The affine core reconstructs the dense coin, its 20-gate QR schedule, onsite encoded intertwiner, same-block eightfold-multiplication consistency, and local curvature. Separately, the independent checker constructs the F17-encoded length-five recurrence and the native one-particle matrix through different code paths and compares their eighth powers. It obtains
+Cycle 873 does not select or derive a numerical coin/contact law. It re-executes the exact numerical fixture already supplied by Cycle 870: `beta=-0.3` and `g_contact=0.37`. Here `g_contact` denotes the onsite contact coupling and is distinct from the separately supplied affine star/background field `g`. The affine core reconstructs the inherited dense coin, its 20-gate QR schedule, onsite encoded intertwiner, same-block eightfold-multiplication consistency, and local curvature. Separately, the independent checker constructs the F17-encoded length-five recurrence and the native one-particle matrix through different code paths and compares their eighth powers. It obtains
 
 - analytic mass `0.4534056541748852`;
 - rest mass `0.4534056541748851`;
@@ -119,7 +125,7 @@ The package does include the actual pinned Cycle 219 `beta=-0.3` free one-partic
 
 The independent checker separately reconstructs the Cycle 870 `coin -> reverse -> seam -> contact` order on a length-five ring, checks 30 encoded one-particle columns with 17 affine terms each, and matches the native compressed and discrete Bloch blocks to numerical precision.
 
-This is the supplied translation-invariant free one-particle momentum fixture. It is not a periodic physical F17-box construction, a periodic Wilson-sector selection, or an interacting finite-open-box spectrum. The QR deletion control deliberately selects one active nonidentity gate; identity phase entries can be inactive, so no every-gate essentiality claim is made.
+These are conditional computations for the supplied numerical fixture; Cycle 873 derives neither `beta`, `g_contact`, nor the analytic-mass law from the Minimal Axioms. This is not a periodic physical F17-box construction, a periodic Wilson-sector selection, or an interacting finite-open-box spectrum. The QR deletion control deliberately selects one active nonidentity gate; identity phase entries can be inactive, so no every-gate essentiality claim is made.
 
 ## Active controls
 
@@ -149,7 +155,7 @@ The raw computational-basis link witness is not shipped as an obstruction, no-go
 - **N7 — steelman:** the strongest counterargument is constructive and wins—the trivial-character affine state is invariant under every plaquette translation, so the two path histories act on the same encoded vector. This defeats any whole-F17 obstruction reading.
 - **N8 — cross-cycle echo:** the campaign repeatedly retired route-specific parity/history failures by changing the local auxiliary representation rather than changing axioms; the successful affine route is the directly relevant echo here.
 
-Gate verdict: `FAIL_AS_NO_GO; DEMOTED_TO_COMPUTATIONAL_BASIS_WITNESS`. No shared substrate obstruction or axiom-pressure conclusion is drawn.
+No-go gate status: `FAIL`. Controlled demotion: `partial-narrowing`. The preserved content is only the explicitly scoped computational-basis path-history witness. No shared substrate obstruction or axiom-pressure conclusion is drawn.
 
 ## Secondary and optional evidence
 
@@ -181,27 +187,27 @@ This concept is not Cycle 873 evidence. Literal physical-M2 `g`-bank placement, 
 
 ## Claim graph and implementation provenance
 
-The direct note-level claim inputs are:
+The complete direct theorem-dependency set for this bounded statement is:
 
 - [Minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md), supplying the lattice/qubit/admissibility premises without adding a Record interpretation here;
-- [Cycle 870 recurrent physical-M2 matter compiler](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md), supplying the landed recurrent factor stream, physical encoding, routing convention, and formal phase ledger;
+- [Cycle 870 recurrent physical-M2 matter compiler](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md), supplying the landed recurrent factor stream, physical encoding, routing convention, formal phase ledger, and the supplied numerical fixture `beta=-0.3`, `g_contact=0.37`;
 - [Cycle 871 endpoint/coframe bridge](OPENREFERENCE_MATTER_ENDPOINT_CAUSAL_INTERVAL_PACKET_CYCLE871_BOUNDED_THEOREM_NOTE_2026-08-02.md), consumed only for its landed endpoint-B extraction, coframe, and placement surfaces, not for causal/packet closure;
-- [Cycle 219 common matter-field coin fixture](work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md), supplying the actual `beta=-0.3` free one-particle coin/mass fixture;
-- [Cycle 210 proper-cubic object fixture](work_history/repo/review_feedback/PROPER_CUBIC_BOUND_OBJECT_EQUIVALENCE_CYCLE210_NOTE_2026-07-16.md), supplying the analytic mass relation consumed by the Cycle 219 comparison;
-- [Cycle 230 contact/seam fixture](work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md), supplying the inherited contact/beta implementation fixture;
 - [Cycle 714 fixed packet/primitive implementation](PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md), consumed for primitive constants, roles, matrices, and reversible word definitions only; packet coexistence remains optional evidence.
 
-The exact script and receipt hashes in the citation manifest are implementation provenance. They do not replace these claim-graph edges or promote transitive imports to direct theorem inputs. Cycles 696 and 700 are not package dependencies.
+No other note is a direct Cycle 873 theorem dependency. The numerical `beta=-0.3`, analytic mass relation, and `g_contact=0.37` fixtures are transitive implementation/regression inputs already consumed through Cycle 870 and re-executed here. Their exact source implementations—[Cycle 219 coin](../scripts/common_matter_field_coin_family_cycle219_2026_07_16.py), [Cycle 210 mass relation](../scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py), and [Cycle 230 contact/seam](../scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py)—are byte-pinned in the citation manifest. The historical Cycle 210/219/230 work-history notes are provenance only, are excluded audit nodes, and are not independent Cycle 873 claim authorities.
+
+The exact script and receipt hashes in the citation manifest are implementation provenance. They do not replace the four direct claim-graph edges above or promote transitive imports to direct theorem inputs. Cycles 696 and 700 are not package dependencies.
 
 ## Audit surface
 
-The exact candidate surface has sixteen files:
+The exact candidate surface has 32 files:
 
 - this bounded theorem note;
-- the physical all-seam core, local-constraint core, affine-intertwiner core, primary runner, independent checker, and cold package acceptance runner;
+- the [physical all-seam core](../scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py), [local-constraint core](../scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py), [affine-intertwiner core](../scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py), [primary runner](../scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py), [independent checker](../scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py), and cold package acceptance runner linked at the top of this note;
 - the five canonical computational receipts from the three cores, primary runner, and independent checker;
 - the citation manifest and package-acceptance receipt;
-- the primary and independent cold-output logs.
+- the primary and independent cold-output logs; and
+- 16 import-free byte-exact source-view modules, each below the restricted helper-source ceiling, covering the complete five computational children. The acceptance runner reconstructs each child byte-for-byte, verifies line-range/ordinal/hash integrity, and runs prefix, ordinal, payload, hard-pin, and child-mutation controls. These views transport evidence only; they are not runners, derivations, or authorities.
 
 The citation manifest SHA-pins every non-circular artifact. It excludes its own hash, the acceptance source that pins the manifest, and the acceptance receipt generated by that source; the acceptance receipt records the acceptance-source hash and the exclusion reasons. No package file is authoritative, and no audit verdict is set.
 

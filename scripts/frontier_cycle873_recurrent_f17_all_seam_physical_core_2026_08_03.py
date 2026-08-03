@@ -1572,11 +1572,16 @@ def fixture_certificate(shape, covariance_catalog):
         ),
         "shared_role_alias_failures": shared_alias_failures,
         "packet_entry_work_failures": packet_entry_work_failures,
-        "active_single_rail_bank_deletions": bank_delete_rows,
-        "single_rail_bank_deletion_lost_one_hot_columns": bank_delete_rows,
-        "undetected_single_rail_bank_deletions": bank_delete_undetected,
-        "active_single_packet_site_interface_deletions": packet_delete_rows,
-        "undetected_single_packet_site_interface_deletions": packet_delete_undetected,
+        "single_rail_role_removal_census_cases": bank_delete_rows,
+        "single_rail_role_removal_census_failures": bank_delete_undetected,
+        "single_rail_role_removal_expected_remaining_roles": 19,
+        "single_packet_site_role_removal_census_cases": packet_delete_rows,
+        "single_packet_site_role_removal_census_failures": packet_delete_undetected,
+        "single_packet_site_role_removal_expected_remaining_bank_M2": C714.N + F17 - 1,
+        "role_removal_census_boundary": (
+            "set-membership and expected-cardinality integrity only; no damaged "
+            "circuit or state is executed, and these rows are not active deletion controls"
+        ),
         "current_to_pointer_alias_collision_mutation_detected_seams":
             len(seams) - alias_collision_mutation_undetected,
         "current_to_pointer_alias_collision_mutation_undetected":
@@ -1750,7 +1755,7 @@ def collect_primary_failures(report):
             "F17_only_bank_pair_overlap_sites",
             "F17_only_bank_carrier_aux_collision_sites",
             "endpoint_B_physical_constraint_anticommutators",
-            "undetected_single_rail_bank_deletions",
+            "single_rail_role_removal_census_failures",
         ):
             if fixture[key]:
                 failures.append(f"{prefix}:{key}")
@@ -1824,7 +1829,7 @@ def collect_secondary_optional_failures(report):
             "bank_carrier_aux_collision_sites",
             "persistent_rail_packet_collision_sites", "shared_role_alias_failures",
             "packet_entry_work_failures",
-            "undetected_single_packet_site_interface_deletions",
+            "single_packet_site_role_removal_census_failures",
             "current_to_pointer_alias_collision_mutation_undetected",
             "coexistence_added_instruction_census_failures",
         ):

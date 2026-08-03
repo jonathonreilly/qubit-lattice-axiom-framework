@@ -229,8 +229,8 @@
     },
     "constraints": {
       "byte_identical_to_canonical": true,
-      "canonical_receipt_sha256": "28c954d13a4d0a3d0b589c4a8a8fd9d31c3d0f9774e934abb4f84aae8d568233",
-      "fresh_receipt_sha256": "28c954d13a4d0a3d0b589c4a8a8fd9d31c3d0f9774e934abb4f84aae8d568233",
+      "canonical_receipt_sha256": "ed30056eaeeac03301849d3f386a6d8d0b7accbef2237b4c388e85a595212f1e",
+      "fresh_receipt_sha256": "ed30056eaeeac03301849d3f386a6d8d0b7accbef2237b4c388e85a595212f1e",
       "returncode": 0,
       "stderr": "",
       "stdout": "{\n  \"status\": \"pass\",\n  \"base_commit\": \"c73a11d1ea7ddd564c48aa2a5a459a43d94262ef\",\n  \"expected_base_is_ancestor_of_head\": true,\n  \"receipt\": \"outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json\",\n  \"failures\": [],\n  \"fixtures\": [\n    {\n      \"shape\": [\n        2,\n        2,\n        2\n      ],\n      \"V\": 8,\n      \"E\": 12,\n      \"P\": 6,\n      \"cycle_rank\": 5,\n      \"plaquette_rank\": 5,\n      \"fixed_divergence_dimension\": 1419857,\n      \"plus_one_dimension\": 1,\n      \"star_support\": 72,\n      \"plaquette_radius\": 10\n    },\n    {\n      \"shape\": [\n        3,\n        3,\n        3\n      ],\n      \"V\": 27,\n      \"E\": 54,\n      \"P\": 36,\n      \"cycle_rank\": 28,\n      \"plaquette_rank\": 28,\n      \"fixed_divergence_dimension\": 28351092476867700887730107366063041,\n      \"plus_one_dimension\": 1,\n      \"star_support\": 126,\n      \"plaquette_radius\": 10\n    },\n    {\n      \"shape\": [\n        3,\n        2,\n        2\n      ],\n      \"V\": 12,\n      \"E\": 20,\n      \"P\": 11,\n      \"cycle_rank\": 9,\n      \"plaquette_rank\": 9,\n      \"fixed_divergence_dimension\": 118587876497,\n      \"plus_one_dimension\": 1,\n      \"star_support\": 90,\n      \"plaquette_radius\": 10\n    }\n  ]\n}\n",
@@ -238,8 +238,8 @@
     },
     "physical": {
       "byte_identical_to_canonical": true,
-      "canonical_receipt_sha256": "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
-      "fresh_receipt_sha256": "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
+      "canonical_receipt_sha256": "397657af570393fad9967edc55e74f7a66f46e8284fd5102be0f5e1df9247d0b",
+      "fresh_receipt_sha256": "397657af570393fad9967edc55e74f7a66f46e8284fd5102be0f5e1df9247d0b",
       "returncode": 0,
       "stderr": "",
       "stdout": "{\n  \"status\": \"pass\",\n  \"base_commit\": \"c73a11d1ea7ddd564c48aa2a5a459a43d94262ef\",\n  \"expected_base_is_ancestor_of_head\": true,\n  \"receipt\": \"outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json\",\n  \"failures\": [],\n  \"secondary_optional_status\": \"pass\",\n  \"secondary_optional_failures\": [],\n  \"fixtures\": [\n    {\n      \"shape\": [\n        2,\n        2,\n        2\n      ],\n      \"seams\": 12,\n      \"F17_only_bank_union_M2\": 240,\n      \"F17_only_logical\": 8808,\n      \"F17_only_routed\": 58280,\n      \"colors\": 12,\n      \"F17_only_parallel_depth\": 58280,\n      \"F17_only_route_union\": 2547,\n      \"F17_only_support_union\": 2787\n    },\n    {\n      \"shape\": [\n        3,\n        3,\n        3\n      ],\n      \"seams\": 54,\n      \"F17_only_bank_union_M2\": 1080,\n      \"F17_only_logical\": 40140,\n      \"F17_only_routed\": 293540,\n      \"colors\": 24,\n      \"F17_only_parallel_depth\": 139776,\n      \"F17_only_route_union\": 11130,\n      \"F17_only_support_union\": 11886\n    },\n    {\n      \"shape\": [\n        3,\n        2,\n        2\n      ],\n      \"seams\": 20,\n      \"F17_only_bank_union_M2\": 400,\n      \"F17_only_logical\": 14744,\n      \"F17_only_routed\": 102968,\n      \"colors\": 16,\n      \"F17_only_parallel_depth\": 84768,\n      \"F17_only_route_union\": 4195,\n      \"F17_only_support_union\": 4547\n    }\n  ]\n}\n",
@@ -248,7 +248,6 @@
   },
   "factor_level_proof": {
     "four_rotation_selection_failures": 0,
-    "grouped_macro_is_literal_emitted_M2_word": true,
     "grouping_boundary": "the augmented factor is the complete grouped emitted M2 word; no claim is made that its four individual seam rotations separately preserve the affine star code before the group is complete",
     "individual_rotation_boundary": "the four landed seam rotations are not claimed separately to preserve the affine star code; the effective affine identity is checked for the completed grouped factor through two separate pinned legs, and no monolithic physical affine encoder is executed",
     "landed_seam_phase": "the four commuting pi/2 rotations emit raw -i*FSWAP; the formal +pi/2 zero-site scalar restores the exact FSWAP representative",
@@ -508,14 +507,14 @@
   "provenance": {
     "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
     "child_receipt_sha256": {
-      "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json": "28c954d13a4d0a3d0b589c4a8a8fd9d31c3d0f9774e934abb4f84aae8d568233",
-      "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json": "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
+      "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json": "ed30056eaeeac03301849d3f386a6d8d0b7accbef2237b4c388e85a595212f1e",
+      "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json": "397657af570393fad9967edc55e74f7a66f46e8284fd5102be0f5e1df9247d0b",
       "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json": "d5d0dec904a034a0994d1e98e1c38b966240b91a3ad3435ac7bb01011c5b21b9"
     },
     "child_source_hash_mismatches": {},
     "child_source_sha256": {
-      "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py": "fffd77a8f8d0fcba644a69f0f5ed1bd3d3e21c874de4005de10156e6b1a12177",
-      "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py": "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7",
+      "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py": "70d7362a2f534bd94b5b421f38e0c0509483ed8c1962b83f21f790b4c1dcb685",
+      "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py": "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7",
       "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py": "a1bc2159c5e2d5f59087860e3fe40bb1919cd4e476f6565a99c326d5af1c5ca9"
     },
     "expected_base_is_ancestor_of_head": true,

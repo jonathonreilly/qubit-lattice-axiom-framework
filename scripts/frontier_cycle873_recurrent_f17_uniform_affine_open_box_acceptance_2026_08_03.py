@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Cold acceptance for the bounded Cycle873 candidate package.
 
-This runner imports none of the Cycle873 computational children.  It validates
-the citation and package pins, proves the recorded fetched base is an ancestor
-of the current checkout, verifies Cycle873 was unused in that base tree,
-launches the primary and independent runners from a temporary working
+The static Cycle873 imports are intentional: they expose every computational
+child to the repository's restricted audit packet.  The executable path still
+validates the citation and package pins, proves the recorded fetched base is an
+ancestor of the current checkout, verifies Cycle873 was unused in that base
+tree, launches the primary and independent runners from a temporary working
 directory, and byte-compares both receipts and stdout logs.
 """
 
@@ -19,6 +20,30 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+from typing import TYPE_CHECKING
+
+
+# These imports are intentionally type-check-only.  Each module is an
+# import-free, byte-exact source view, so the restricted audit packet receives
+# the complete Cycle873 computational children without recursively importing
+# their large transitive implementation closure.
+if TYPE_CHECKING:
+    import frontier_cycle873_affine_source_audit_view_part1_2026_08_03  # noqa: F401
+    import frontier_cycle873_affine_source_audit_view_part2_2026_08_03  # noqa: F401
+    import frontier_cycle873_affine_source_audit_view_part3_2026_08_03  # noqa: F401
+    import frontier_cycle873_all_seam_physical_source_audit_view_part1_2026_08_03  # noqa: F401
+    import frontier_cycle873_all_seam_physical_source_audit_view_part2_2026_08_03  # noqa: F401
+    import frontier_cycle873_all_seam_physical_source_audit_view_part3_2026_08_03  # noqa: F401
+    import frontier_cycle873_all_seam_physical_source_audit_view_part4_2026_08_03  # noqa: F401
+    import frontier_cycle873_all_seam_physical_source_audit_view_part5_2026_08_03  # noqa: F401
+    import frontier_cycle873_independent_source_audit_view_part1_2026_08_03  # noqa: F401
+    import frontier_cycle873_independent_source_audit_view_part2_2026_08_03  # noqa: F401
+    import frontier_cycle873_independent_source_audit_view_part3_2026_08_03  # noqa: F401
+    import frontier_cycle873_independent_source_audit_view_part4_2026_08_03  # noqa: F401
+    import frontier_cycle873_local_constraints_source_audit_view_part1_2026_08_03  # noqa: F401
+    import frontier_cycle873_local_constraints_source_audit_view_part2_2026_08_03  # noqa: F401
+    import frontier_cycle873_local_constraints_source_audit_view_part3_2026_08_03  # noqa: F401
+    import frontier_cycle873_primary_source_audit_view_part1_2026_08_03  # noqa: F401
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,22 +65,110 @@ NOTE = "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE
 PRIMARY_LOG = "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt"
 INDEPENDENT_LOG = "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt"
 DEFAULT_OUTPUT = ROOT / ACCEPTANCE_RECEIPT
-EXPECTED_MANIFEST_SHA256 = "3ee9d12f1a0249abedfc56c7aaeadb497349d96b5e446120b229a391015e91fb"
+EXPECTED_MANIFEST_SHA256 = "f5239fc8436f39c4043e1028968d79407934d9c9b9464cbcb415d1700db8591d"
+
+LOCAL_SOURCE_VIEWS = (
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part3_2026_08_03.py",
+)
+PHYSICAL_SOURCE_VIEWS = (
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part5_2026_08_03.py",
+)
+INDEPENDENT_SOURCE_VIEWS = (
+    "scripts/frontier_cycle873_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part4_2026_08_03.py",
+)
+PRIMARY_SOURCE_VIEWS = (
+    "scripts/frontier_cycle873_primary_source_audit_view_part1_2026_08_03.py",
+)
+AFFINE_SOURCE_VIEWS = (
+    "scripts/frontier_cycle873_affine_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part3_2026_08_03.py",
+)
+SOURCE_VIEW_SETS = {
+    LOCAL: LOCAL_SOURCE_VIEWS,
+    PHYSICAL: PHYSICAL_SOURCE_VIEWS,
+    INDEPENDENT: INDEPENDENT_SOURCE_VIEWS,
+    PRIMARY: PRIMARY_SOURCE_VIEWS,
+    AFFINE: AFFINE_SOURCE_VIEWS,
+}
+SOURCE_VIEW_FILES = tuple(
+    path for paths in SOURCE_VIEW_SETS.values() for path in paths
+)
+
+AUDIT_INPUT_PATHS = (
+    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt",
+    "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_independent_check_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json",
+    "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json",
+    "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py",
+    "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_local_constraints_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle873_all_seam_physical_source_audit_view_part5_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle873_independent_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle873_primary_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle873_affine_source_audit_view_part3_2026_08_03.py",
+)
+DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
 EXPECTED_ARTIFACT_SHA256 = {
-    NOTE: "4f189594d0e565f2fb2183acb0bd52765cfee45b3717a5e25c452ff8d44d7207",
+    NOTE: "3cd18032e6f14007e11c2709e70021b9fbcd81fcfc8974cbc650f64cd4df010e",
     PRIMARY_LOG: "72be1cd183bf85663c6726223f9db9fb61be3e80b6ed0f3d386f32849312eb74",
     INDEPENDENT_LOG: "6689ee8aac078f36507af89c20a90a19ea0721d34af74b1a98318cec06c35812",
-    PHYSICAL_RECEIPT: "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
-    LOCAL_RECEIPT: "28c954d13a4d0a3d0b589c4a8a8fd9d31c3d0f9774e934abb4f84aae8d568233",
+    PHYSICAL_RECEIPT: "397657af570393fad9967edc55e74f7a66f46e8284fd5102be0f5e1df9247d0b",
+    LOCAL_RECEIPT: "ed30056eaeeac03301849d3f386a6d8d0b7accbef2237b4c388e85a595212f1e",
     AFFINE_RECEIPT: "d5d0dec904a034a0994d1e98e1c38b966240b91a3ad3435ac7bb01011c5b21b9",
-    PRIMARY_RECEIPT: "1377569cebc4feb82a568460f3c730e2e6618c457fff10ca96ba35788dd517a1",
-    INDEPENDENT_RECEIPT: "ce3dae5a6fafd675d69fdbaa0e0e651e07988b5409c3bff914a86341be18ced9",
-    PHYSICAL: "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7",
-    LOCAL: "fffd77a8f8d0fcba644a69f0f5ed1bd3d3e21c874de4005de10156e6b1a12177",
+    PRIMARY_RECEIPT: "08a2ad65a8d17e308ca08a0a9c51882bf8df4b0a13005103f17890d77a27a5ec",
+    INDEPENDENT_RECEIPT: "4fdff3e14f0c0253b13c38349fbe0e1bff9c6b9bdee60b7e86d58f9b98d6b5bd",
+    PHYSICAL: "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7",
+    LOCAL: "70d7362a2f534bd94b5b421f38e0c0509483ed8c1962b83f21f790b4c1dcb685",
     AFFINE: "a1bc2159c5e2d5f59087860e3fe40bb1919cd4e476f6565a99c326d5af1c5ca9",
-    PRIMARY: "c7cc974a8a5ebe6481ba71bf210089b63bfe92a8ca76e60600484562380e6ef2",
-    INDEPENDENT: "fa8d7d6b8f128452560d16d3f702e5536eb45dc3633a91e3dc8d5c7fa893e9fd",
+    PRIMARY: "ab9f365c167b8fafb4f54508c0fb38b325bf687fdf8f222bc9aa833ad65dfc62",
+    INDEPENDENT: "02c3f321ba5ef1dce723ed04bd83919839648fd89202f607b6cc680645a97734",
+    LOCAL_SOURCE_VIEWS[0]: "b85d277b1fc6e4a8fabd1e62c52d369bbe8d2f5762ce7f44eac35539c09ff16e",
+    LOCAL_SOURCE_VIEWS[1]: "24441e0224609c66bfd3cb3e7e924e2cef071125d1f90f8ca26b84487074f779",
+    LOCAL_SOURCE_VIEWS[2]: "207f75b20961a5c33d40dc2a38fa26c753ce3287d5655f7bb6815b35ddae2aeb",
+    PHYSICAL_SOURCE_VIEWS[0]: "5079d8aacdfe2ab0154714526043dab928a85e83727a8783d93a36daa893adf0",
+    PHYSICAL_SOURCE_VIEWS[1]: "62ec0b8329ec6169985c4d27e38d36ea03cd67a8e0dc831c21eb3c231babd4a6",
+    PHYSICAL_SOURCE_VIEWS[2]: "91c7f8b8c2d866f9782a4770b4686d920ff2b6b505133f71eb5edaea9a95b6b3",
+    PHYSICAL_SOURCE_VIEWS[3]: "dceec4cc66669c9aa98b9bc7dcae53d9b4b70c244b7323986d246d66b4d17725",
+    PHYSICAL_SOURCE_VIEWS[4]: "2f1158a27ab6f9a2d55580b4dbcaf4c740b30434f5e8b9ff2ecc5d353d77ddc0",
+    INDEPENDENT_SOURCE_VIEWS[0]: "bb8adcca563d1c70c9e491ff75127b8c9d41240afa040deb742e478f353788e9",
+    INDEPENDENT_SOURCE_VIEWS[1]: "74aa3ba5a44dd478c81247703ed545c176154a877bcdd3270ebbaa35629a396c",
+    INDEPENDENT_SOURCE_VIEWS[2]: "755a6c2e4e63fc6d6238b7ad053a32d0218e4a415a9c23c0973a3aa367658a1f",
+    INDEPENDENT_SOURCE_VIEWS[3]: "8801f70904fa2cb54e1be6458b349b154e0f29d533df218574ddabc7a7efd412",
+    PRIMARY_SOURCE_VIEWS[0]: "59e7bc8fbefbf318d0dec4d79535a49f96278bde2c310fccb1ba65cddcad8669",
+    AFFINE_SOURCE_VIEWS[0]: "f2dc97037cdab023921274ff47b4a07c5de0f7f94d63df24cdc374363f8bd52b",
+    AFFINE_SOURCE_VIEWS[1]: "3bed3a64dfd06ac42b304af088e4be06dc5d2a14432dccb0037772987ffbb7a5",
+    AFFINE_SOURCE_VIEWS[2]: "b826bb8cc96dde8aa7d2f6cc89fbd924b7e0fb25fc134c4a47a9bb89f0d0e50c",
 }
 
 EXPECTED_PACKAGE_FILES = tuple(sorted((
@@ -75,6 +188,7 @@ EXPECTED_PACKAGE_FILES = tuple(sorted((
     PRIMARY,
     INDEPENDENT,
     ACCEPTANCE,
+    *SOURCE_VIEW_FILES,
 )))
 
 EXPECTED_EXCLUSIONS = {
@@ -85,7 +199,7 @@ EXPECTED_EXCLUSIONS = {
 
 NOTE_REQUIRED_TEXT = (
     "Type: bounded_theorem",
-    "Status: proposed_retained.",
+    "Status: bounded construction candidate.",
     "Authority: none. Audit: unset.",
     "endpoint B extraction -> landed four-rotation seam factor -> mutually exclusive positive/negative predicate-controlled unary shifts -> endpoint cleanup",
     "The grouped augmented macro is the literal emitted M2 word.",
@@ -105,12 +219,14 @@ NOTE_REQUIRED_TEXT = (
     "classical 19-vertex/18-edge six-ray-tree projection",
     "Cycle 700 is classical only",
     "This concept is not Cycle 873 evidence.",
-    "FAIL_AS_NO_GO; DEMOTED_TO_COMPUTATIONAL_BASIS_WITNESS",
+    "No-go gate status: `FAIL`. Controlled demotion: `partial-narrowing`.",
     "2,448 rows with seam bits",
     "612 `a=b=1` rows carry the FSWAP minus sign",
     "supplied lattice parity origin",
     "does not prove unit-translation/origin-shift equivalence",
     "The 20 M2 persistent bank is not the whole routing substrate.",
+    "The exact candidate surface has 32 files:",
+    "16 import-free byte-exact source-view modules",
     "[Minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md)",
     "[Cycle 870 recurrent physical-M2 matter compiler]",
 )
@@ -122,6 +238,189 @@ def digest(path: Path) -> str:
 
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def literal_assignment_bytes(source: bytes, name: str):
+    tree = ast.parse(source.decode("utf-8", errors="strict"))
+    for node in tree.body:
+        if not isinstance(node, (ast.Assign, ast.AnnAssign)):
+            continue
+        targets = node.targets if isinstance(node, ast.Assign) else (node.target,)
+        if any(
+            isinstance(target, ast.Name) and target.id == name
+            for target in targets
+        ):
+            return ast.literal_eval(node.value)
+    raise KeyError(name)
+
+
+def parse_source_view(raw: bytes, label: str) -> dict[str, object]:
+    metadata = {
+        key: literal_assignment_bytes(raw, key)
+        for key in (
+            "TARGET_SOURCE", "PART_ORDINAL", "PART_COUNT", "FIRST_SOURCE_LINE",
+            "LAST_SOURCE_LINE", "TOTAL_SOURCE_LINES", "SOURCE_FINAL_NEWLINE",
+            "EXPECTED_SOURCE_SHA256",
+        )
+    }
+    prefix = b"# C873SRC "
+    rows: list[tuple[int, bytes]] = []
+    for line in raw.splitlines(keepends=True):
+        if line.startswith(prefix):
+            if not line.endswith(b"\n") or line.endswith(b"\r\n"):
+                raise ValueError(f"{label}: payload newline")
+            number_raw, separator, payload = line[len(prefix):].partition(b"|")
+            if separator != b"|" or len(number_raw) != 6 or not number_raw.isdigit():
+                raise ValueError(f"{label}: payload prefix")
+            rows.append((int(number_raw), payload[:-1]))
+        elif line.startswith(b"# C873SRC"):
+            raise ValueError(f"{label}: malformed payload prefix")
+    first = int(metadata["FIRST_SOURCE_LINE"])
+    last = int(metadata["LAST_SOURCE_LINE"])
+    if [number for number, _ in rows] != list(range(first, last + 1)):
+        raise ValueError(f"{label}: noncontiguous payload rows")
+    metadata["rows"] = rows
+    metadata["view_path"] = label
+    return metadata
+
+
+def validate_source_view_set(
+    target: str,
+    view_paths: tuple[str, ...],
+    *,
+    raw_overrides: dict[str, bytes] | None = None,
+    actual_override: bytes | None = None,
+    enforce_view_hashes: bool = True,
+) -> dict[str, object]:
+    raw_overrides = raw_overrides or {}
+    parts = []
+    expected_next = 1
+    total_lines = None
+    final_newline = None
+    expected_source_sha = EXPECTED_ARTIFACT_SHA256[target]
+    for ordinal, view_path in enumerate(view_paths, 1):
+        raw = raw_overrides.get(view_path, (ROOT / view_path).read_bytes())
+        if (
+            enforce_view_hashes
+            and sha256(raw).hexdigest() != EXPECTED_ARTIFACT_SHA256[view_path]
+        ):
+            raise ValueError(f"{view_path}: view hash")
+        part = parse_source_view(raw, view_path)
+        if part["TARGET_SOURCE"] != target:
+            raise ValueError(f"{view_path}: target")
+        if part["PART_ORDINAL"] != ordinal or part["PART_COUNT"] != len(view_paths):
+            raise ValueError(f"{view_path}: ordinal")
+        if part["FIRST_SOURCE_LINE"] != expected_next:
+            raise ValueError(f"{view_path}: gap or overlap")
+        if part["EXPECTED_SOURCE_SHA256"] != expected_source_sha:
+            raise ValueError(f"{view_path}: source hash declaration")
+        if total_lines is None:
+            total_lines = part["TOTAL_SOURCE_LINES"]
+            final_newline = part["SOURCE_FINAL_NEWLINE"]
+        if (
+            part["TOTAL_SOURCE_LINES"] != total_lines
+            or part["SOURCE_FINAL_NEWLINE"] != final_newline
+        ):
+            raise ValueError(f"{view_path}: inconsistent source metadata")
+        expected_next = int(part["LAST_SOURCE_LINE"]) + 1
+        parts.append(part)
+    if total_lines is None or expected_next != int(total_lines) + 1:
+        raise ValueError(f"{target}: incomplete source range")
+    numbered_rows = [row for part in parts for row in part["rows"]]
+    numbers = [number for number, _ in numbered_rows]
+    if numbers != list(range(1, int(total_lines) + 1)):
+        raise ValueError(f"{target}: global line range")
+    reconstructed = b"".join(
+        payload
+        + (b"\n" if number < int(total_lines) or bool(final_newline) else b"")
+        for number, payload in numbered_rows
+    )
+    actual = actual_override if actual_override is not None else (ROOT / target).read_bytes()
+    if reconstructed != actual:
+        raise ValueError(f"{target}: reconstructed bytes")
+    if sha256(actual).hexdigest() != expected_source_sha:
+        raise ValueError(f"{target}: literal source hash")
+    return {
+        "target_source": target,
+        "view_paths": view_paths,
+        "part_count": len(parts),
+        "total_source_lines": total_lines,
+        "source_final_newline": final_newline,
+        "source_bytes": len(actual),
+        "source_sha256": sha256(actual).hexdigest(),
+        "line_range": (numbers[0], numbers[-1]),
+        "contiguous": len(numbers) == len(set(numbers)) == int(total_lines),
+        "byte_identical": reconstructed == actual,
+    }
+
+
+def source_view_certificate(
+    target: str, view_paths: tuple[str, ...]
+) -> dict[str, object]:
+    certificate = validate_source_view_set(target, view_paths)
+    first_path = view_paths[0]
+    original = (ROOT / first_path).read_bytes()
+
+    def rejected(raw: bytes, *, enforce_view_hashes: bool) -> bool:
+        try:
+            validate_source_view_set(
+                target,
+                view_paths,
+                raw_overrides={first_path: raw},
+                enforce_view_hashes=enforce_view_hashes,
+            )
+        except (KeyError, SyntaxError, UnicodeDecodeError, ValueError):
+            return True
+        return False
+
+    prefix_mutation = original.replace(b"# C873SRC ", b"# C873SRX ", 1)
+    ordinal_mutation = original.replace(
+        b"PART_ORDINAL = 1\n", b"PART_ORDINAL = 9\n", 1
+    )
+    first_payload_end = original.index(b"\n", original.index(b"# C873SRC "))
+    payload_mutation = original[:first_payload_end] + b"X" + original[first_payload_end:]
+    try:
+        validate_source_view_set(
+            target,
+            view_paths,
+            actual_override=(ROOT / target).read_bytes() + b" ",
+        )
+    except ValueError:
+        child_mutation_detected = True
+    else:
+        child_mutation_detected = False
+    certificate["mutation_controls"] = {
+        "hard_pin_view_mutation_detected": rejected(
+            payload_mutation, enforce_view_hashes=True
+        ),
+        "malformed_prefix_detected": rejected(
+            prefix_mutation, enforce_view_hashes=False
+        ),
+        "ordinal_mutation_detected": rejected(
+            ordinal_mutation, enforce_view_hashes=False
+        ),
+        "payload_mutation_detected": rejected(
+            payload_mutation, enforce_view_hashes=False
+        ),
+        "actual_child_mutation_detected": child_mutation_detected,
+    }
+    return certificate
+
+
+def package_manifest() -> tuple[str, ...]:
+    output: list[str] = []
+    for directory in ("docs", "scripts", "outputs", "logs/runner-cache"):
+        base = ROOT / directory
+        if not base.is_dir():
+            continue
+        output.extend(
+            str(path.relative_to(ROOT))
+            for path in base.iterdir()
+            if path.is_file()
+            and "cycle873" in path.name.lower()
+            and path.suffix != ".pyc"
+        )
+    return tuple(sorted(output))
 
 
 def imported_modules(path: Path) -> set[str]:
@@ -259,6 +558,41 @@ def build_report() -> tuple[dict, list[str]]:
     if missing_files:
         failures.append("candidate package file missing")
 
+    observed_package_files = package_manifest()
+    if observed_package_files != EXPECTED_PACKAGE_FILES:
+        failures.append("exact Cycle873 package manifest")
+
+    audit_missing = tuple(
+        path for path in AUDIT_INPUT_PATHS if not (ROOT / path).is_file()
+    )
+    audit_unpinned = tuple(
+        path
+        for path in AUDIT_INPUT_PATHS
+        if path not in {ACCEPTANCE, MANIFEST}
+        and path not in EXPECTED_ARTIFACT_SHA256
+    )
+    if DECLARED_INPUT_PATHS != AUDIT_INPUT_PATHS:
+        failures.append("declared/audit input mismatch")
+    if len(AUDIT_INPUT_PATHS) != len(set(AUDIT_INPUT_PATHS)):
+        failures.append("duplicate audit inputs")
+    if audit_missing:
+        failures.append("missing audit inputs")
+    if audit_unpinned:
+        failures.append("unpinned audit inputs")
+    if ACCEPTANCE_RECEIPT in AUDIT_INPUT_PATHS:
+        failures.append("acceptance output receipt declared as audit input")
+
+    source_views: dict[str, object] = {}
+    for target, view_paths in SOURCE_VIEW_SETS.items():
+        try:
+            certificate = source_view_certificate(target, view_paths)
+        except (KeyError, SyntaxError, UnicodeDecodeError, ValueError) as error:
+            failures.append(f"source view: {target}: {error}")
+        else:
+            source_views[target] = certificate
+            if not all(certificate["mutation_controls"].values()):
+                failures.append("source view mutation controls: " + target)
+
     note = (ROOT / NOTE).read_text(encoding="utf-8")
     missing_note_text = [text for text in NOTE_REQUIRED_TEXT if text not in note]
     if missing_note_text:
@@ -298,6 +632,46 @@ def build_report() -> tuple[dict, list[str]]:
         if not provenance.get("expected_base_is_ancestor_of_head"):
             failures.append(f"{label} canonical base ancestry")
 
+    physical_l2 = next(
+        (
+            row for row in receipts["physical"].get("fixtures", ())
+            if tuple(row.get("shape", ())) == (2, 2, 2)
+        ),
+        {},
+    )
+    physical_l2_schedule_sha256 = physical_l2.get(
+        "augmented_epoch_ledgers", {}
+    ).get("A_F17_only", {}).get("seam_stage_schedule_sha256")
+    independent_l2_schedule = receipts["independent"].get(
+        "literal_L2_emitted_schedule", {}
+    )
+    grouped_macro_literal_crosscheck = {
+        "scope": "all 12 F17-only seams of the 2x2x2 fixture",
+        "physical_core_schedule_sha256": physical_l2_schedule_sha256,
+        "independent_schedule_sha256": independent_l2_schedule.get(
+            "schedule_sha256"
+        ),
+        "independent_word_count": len(
+            independent_l2_schedule.get("independent_word_sha256", ())
+        ),
+        "larger_fixture_boundary": (
+            "the 3x3x3 and held 3x2x2 fixtures use the same pinned generic "
+            "emitter but do not receive a second per-word digest reconstruction"
+        ),
+    }
+    grouped_macro_literal_crosscheck["exact_match"] = (
+        independent_l2_schedule.get("shape") == [2, 2, 2]
+        and independent_l2_schedule.get("seams") == 12
+        and grouped_macro_literal_crosscheck["independent_word_count"] == 12
+        and independent_l2_schedule.get("schedule_sha256")
+            == physical_l2_schedule_sha256
+        and independent_l2_schedule.get("physical_core_F17_only_schedule_sha256")
+            == physical_l2_schedule_sha256
+        and independent_l2_schedule.get("schedule_hash_match") is True
+    )
+    if not grouped_macro_literal_crosscheck["exact_match"]:
+        failures.append("L2 grouped-macro literal-emission crosscheck")
+
     factor = receipts["primary"].get("factor_level_proof", {})
     expected_phases = {
         (2, 2, 2): [1.0, 0.0],
@@ -312,9 +686,6 @@ def build_report() -> tuple[dict, list[str]]:
         failures.append("raw per-seam phase boundary")
     if observed_phases != expected_phases:
         failures.append("open-box raw seam-stage phase boundary")
-    if not factor.get("grouped_macro_is_literal_emitted_M2_word"):
-        failures.append("grouped literal macro certificate")
-
     semantic_mutations = receipts["primary"].get("active_controls", {}).get(
         "physical_component_mutations", {}
     ).get("component_mutations", {})
@@ -508,18 +879,26 @@ def build_report() -> tuple[dict, list[str]]:
         "base": base,
         "package_candidate_files": EXPECTED_PACKAGE_FILES,
         "package_file_count": len(EXPECTED_PACKAGE_FILES),
+        "observed_package_files": observed_package_files,
         "candidate_artifact_sha256": observed,
         "candidate_artifact_hash_drift": drift,
         "citation_manifest_sha256": manifest_hash,
         "upstream_citation_hash_drift": upstream_drift,
         "self_reference_exclusions": manifest.get("self_reference_exclusions", {}),
         "missing_package_files_before_acceptance_output": missing_files,
+        "audit_input_paths": AUDIT_INPUT_PATHS,
+        "audit_input_missing": audit_missing,
+        "audit_input_unpinned": audit_unpinned,
+        "source_views": source_views,
         "missing_note_required_text": missing_note_text,
         "independent_imports": sorted(independent_imports),
         "forbidden_independent_imports": forbidden_imports,
         "canonical_receipt_status": {
             label: receipt.get("status") for label, receipt in receipts.items()
         },
+        "L2_grouped_macro_literal_emission_crosscheck": (
+            grouped_macro_literal_crosscheck
+        ),
         "cold_runs": cold,
         "acceptance_source": ACCEPTANCE,
         "acceptance_source_sha256": digest(ROOT / ACCEPTANCE),

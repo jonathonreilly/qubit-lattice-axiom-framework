@@ -220,9 +220,9 @@
     "emit_field_order_match": true,
     "emit_required_semantics_missing": [],
     "physical_core_imports_cycle873_primary": false,
-    "physical_core_sha256": "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7",
-    "physical_receipt_sha256": "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
-    "primary_sha256": "c7cc974a8a5ebe6481ba71bf210089b63bfe92a8ca76e60600484562380e6ef2",
+    "physical_core_sha256": "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7",
+    "physical_receipt_sha256": "397657af570393fad9967edc55e74f7a66f46e8284fd5102be0f5e1df9247d0b",
+    "primary_sha256": "ab9f365c167b8fafb4f54508c0fb38b325bf687fdf8f222bc9aa833ad65dfc62",
     "rail_offsets_match": true
   },
   "literal_L2_emitted_schedule": {
@@ -230,7 +230,6 @@
     "all_seam_maximum_formal_corrected_residual": 0.0,
     "all_seam_maximum_raw_to_minus_i_FSWAP_residual": 0.0,
     "all_seam_rotation_physical_constraint_anticommutators": 0,
-    "expected_primary_receipt_schedule_sha256": "74f24db6629a021ae1fa17f3fa124e21cebc3fee8c1f9953b368e0ed42910e67",
     "independent_word_sha256": [
       "92c2e65a21470d42d95ac8b2ea3201b999d28824e6501e059dfd4ee7560d6574",
       "ddbf2904317e34f37e290b14726f177c3679d1ad630b2714434fd4b5dd09efd7",
@@ -249,6 +248,7 @@
       726,
       742
     ],
+    "physical_core_F17_only_schedule_sha256": "74f24db6629a021ae1fa17f3fa124e21cebc3fee8c1f9953b368e0ed42910e67",
     "routed_min_max": [
       4418,
       5662

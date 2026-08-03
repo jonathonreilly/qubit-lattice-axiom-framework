@@ -348,12 +348,12 @@
    "differing_lines_explained_by_mask": [
     11
    ],
-   "elapsed_seconds": 9.053,
+   "elapsed_seconds": 9.001,
    "exit_code": 0,
    "length_delta_fully_explained": true,
    "line_counts_equal": true,
    "live_masked_sha256": "bd3e920ae24a91a67af95f5b0ea19d5392a421de1b8b36de6d12013093afe28c",
-   "live_stdout_sha256": "069820e2afd45cf8eb6ec4acecc083bfe1f50be9d82496611fd2a537615ad7a4",
+   "live_stdout_sha256": "87178cdc4f0702f1bd6ea99017e57185a3f3fb0be69c3e6ef539245917eabe38",
    "mask_patterns": [
     "\"(runtime_seconds|elapsed_seconds|runtime|elapsed)\":\\s*-?[0-9]+(\\.[0-9]+)?",
     "\"(stdout_bytes)\":\\s*[0-9]+"
@@ -743,7 +743,7 @@
    "pass": true,
    "pinned_evidence_all_match": true,
    "runtime_budget_seconds": 1400,
-   "runtime_seconds": 9.098,
+   "runtime_seconds": 9.047,
    "runtime_under_budget": true
   }
  },
@@ -775,7 +775,7 @@
   ],
   "pass": true,
   "premise_standing": "B_AXIS_NOT_DISCHARGED__SECOND_LEG_PARTIAL_AT_SCOPE",
-  "runtime_seconds": 9.098,
+  "runtime_seconds": 9.047,
   "tally": {
    "DISCHARGED_AT_SCOPE": 6,
    "OPEN": 5,

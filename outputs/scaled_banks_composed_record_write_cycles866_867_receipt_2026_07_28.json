@@ -1,0 +1,72 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "two supervisor-authored primaries (v1 owner-reviewed; v2 recovered from the rebooted desktop session's transcript; v3 checker-driven repair); one Claude Opus 5 worker-authored adversarial checker (substitution disclosed) reconciled by supervisor with the v2 refutation kept as a regression arm",
+ "block": "proof-grade-blockP25-20260729",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "logs/runner-cache/frontier_cycle866_867_finale_independent_check_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 5
+  },
+  "logs/runner-cache/frontier_cycle866_scaled_banks_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 5
+  },
+  "logs/runner-cache/frontier_cycle867_composed_record_write_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 4
+  }
+ },
+ "claim_type": "bounded_theorem",
+ "corrected_reading": "formation firing robust (32/32 near and far, every direct class); record content hypersensitive (0 content-equal direct); locality in the restore class (near 32/32 vs far 29/32 content-equal; 3 far path-dependence failures)",
+ "cycles": [
+  866,
+  867
+ ],
+ "files": {
+  "docs/SCALED_BANKS_AND_COMPOSED_RECORD_WRITE_CYCLES866_867_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "c695010cabc497db41ecd014de1adc6321834df0",
+   "sha256": "7e239ce816e3b19af06f0ee8e46e79088386a73395614bed0069e3ce71c2418b"
+  },
+  "logs/runner-cache/frontier_cycle866_867_finale_independent_check_2026_07_28.txt": {
+   "git_blob": "391cf780788d693bcae4f87796e4ee8fdb11d1dc",
+   "sha256": "1dc13d2054d6c990d43e57e9d4bb1ab08c16c13c99523620fe42362e18a173c4"
+  },
+  "logs/runner-cache/frontier_cycle866_scaled_banks_2026_07_28.txt": {
+   "git_blob": "4506f4c7090ad24469bc5b9516802900f5eac183",
+   "sha256": "743e01f75fd7ccc0da42c3350273851ed44f2a97a850e08fc8ae8ff7de0c3ef4"
+  },
+  "logs/runner-cache/frontier_cycle867_composed_record_write_2026_07_28.txt": {
+   "git_blob": "35e740b700994d7972c4cb83c676cfb08942308a",
+   "sha256": "0d502dd3423b84d76c4ffa97d69356cc7f553c699457bb45dea581a7a8e7d80b"
+  },
+  "scripts/frontier_cycle866_867_finale_independent_check_2026_07_28.py": {
+   "git_blob": "4b6f18b00b087787c9f253d0c9b23a9ec74f9cb1",
+   "sha256": "265498fc24a0b71d56e5de6ef1ebc4113510963407e0247fa80940c935e277ba"
+  },
+  "scripts/frontier_cycle866_scaled_banks_2026_07_28.py": {
+   "git_blob": "1eed343ece2880de0933ee6d5f69c06ab1e5e05a",
+   "sha256": "acabf4e0df9d2290842eb94599f19e2a7ea4a99dd7729905896feddb3c6822cc"
+  },
+  "scripts/frontier_cycle867_composed_record_write_2026_07_28.py": {
+   "git_blob": "5f923e8429373fa5afc71a417cd4e6f787ec71b8",
+   "sha256": "49605f6d0730e224d6c4cd25a182ec49e0c7d2f2316851bc2755632dcbe2c828"
+  }
+ },
+ "headline": "scale breaks the offset law and fragments cadences; records become genuine state content moment-exact 164/164; locality lives in the flip-and-restore class",
+ "independence": "cross-context (worker checker vs supervisor primaries; disjoint replay machinery; import firewall; AST regression guard on the v2 defect patterns)",
+ "note": "docs/SCALED_BANKS_AND_COMPOSED_RECORD_WRITE_CYCLES866_867_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "review_chain": [
+  "v1 2026-08-02: owner found hardcoded verdicts (866), phantom register (867), vacuous locality gate",
+  "v2 2026-08-02: repairs authored; machine reboot ~4 min later destroyed the uncommitted worktree; recovered from transcript 2026-08-03 and committed BEFORE rerunning",
+  "checker run 1: REFUTED v2 cert C (uniform chunk slicing off-trajectory; positional near/far split left far arm empty; REGISTER_CAP undisclosed dropping 97.7% of write events)",
+  "v3: true per-step chunks, kernel pack-state bank membership, four declared classes, all caps disclosed",
+  "checker run 2 (reconciled): zero refutations; all arms CONFIRMED/CORROBORATED cell-for-cell"
+ ],
+ "runtime_seconds": {
+  "c866_v2": 178.409,
+  "c867_v3": 142.273,
+  "checker": 262.529
+ }
+}

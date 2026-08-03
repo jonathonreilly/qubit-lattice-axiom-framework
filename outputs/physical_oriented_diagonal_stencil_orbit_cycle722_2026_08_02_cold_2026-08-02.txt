@@ -1,0 +1,86 @@
+Cycle 722 -- oriented body diagonal of the assembly stencil
+Local pieces imported from the cycle-696 compiler; its tick length is 2.
+
+-- A. the tick-resolved assembly contracts onto the landed static form --
+[PASS] triangle types match the landed count mine = 50, landed = 50
+[PASS] L=3 LT=2 contraction equals (LT/2) times the landed form dim = 446, dev < 1.0e-09
+[PASS] rejector: a shifted tick-length factor is refused dev = 2.945214e-02
+[PASS] L=3 LT=3 contraction equals (LT/2) times the landed form dim = 669, dev < 1.0e-09
+[PASS] L=4 LT=2 contraction equals (LT/2) times the landed form dim = 1244, dev < 1.0e-09
+[PASS] L=4 LT=3 contraction equals (LT/2) times the landed form dim = 1866, dev < 1.0e-09
+Landed static form scale 2.945214e+01; its whole tick-length
+dependence is the overall factor LT/2.
+
+-- B. the sign-absorbing edge classifier is the landed one --
+[PASS] classifier reproduces the landed cell template on the source corner 000 0 slot mismatches over 240
+[PASS] every edge slot of all eight stencils satisfies the anchor law 0 violations over 1920 slots
+[PASS] rejector: the sign-blind anchor rule breaks the anchor law 1116 violations over 1920 slots
+
+-- C. the eight stencils form ONE orbit of the axiom's rotations --
+[PASS] proper rotations act transitively on the 8 oriented diagonals orbit = 8, stabilizer = 3, 24/3 = 8
+[PASS] proper rotations act transitively on the 4 diagonal lines orbit = 4, stabilizer = 6, 24/6 = 4
+[PASS] oriented stabilizer inside the proper rotations has order 3
+[PASS] line stabilizer inside the proper rotations has order 6 (the sextet)
+[PASS] oriented stabilizer inside the 48 signed permutations has order 6 48/6 = 8 oriented labels
+[PASS] line stabilizer inside the 48 signed permutations has order 12 48/12 = 4 line labels
+Order 12 stabilizes the UNORIENTED line, order 6 the ORIENTED diagonal; the
+improper half is exactly the orientation-reversing coset.
+
+-- D. assembly is covariant, so no rotation prefers a stencil --
+[PASS] L=3 LT=3: relabelling by g carries stencil a onto stencil g.a 192 pairs, dev < 1.0e-09
+[PASS] rejector: holding the stencil fixed under the same relabelling is refused dev = 2.789850e+00
+[PASS] L=4 LT=2: relabelling by g carries stencil a onto stencil g.a 192 pairs, dev < 1.0e-09
+
+-- E. the box-centre point reflection is an intertwiner, not a broken symmetry --
+[PASS] the point reflection sends source corner 000 to 111
+[PASS] it carries the form of stencil 000 onto the form of stencil 111 dev < 1.0e-09
+[PASS] its apparent failure on stencil 000 equals the stencil separation exactly floor = 2.789850e+00 = the min separation
+
+-- F. averaging over the orbit restores the axiom's full symmetry, at a price --
+[PASS] the orbit-averaged form admits all 48 signed permutations 48 of 48
+[PASS] the orbit-averaged form carries a single frame label
+[PASS] the averaging cost is exactly half the stencil separation cost = 1.394925e+00, separation = 2.789850e+00
+
+-- G. the frame label is 8-valued on the tick-resolved complex --
+[PASS] LT=2: 8 distinct stencil forms and 8 frame classes dim = 446, distinct = 8, classes = 8
+[PASS] LT=3: 8 distinct stencil forms and 8 frame classes dim = 669, distinct = 8, classes = 8
+[PASS] LT=5: 8 distinct stencil forms and 8 frame classes dim = 1115, distinct = 8, classes = 8
+
+-- H. order 12 holds exactly when the projection IDENTIFIES the two stencils --
+[PASS] LT=2 tick-resolved, all classes sym = 6, stencils separated at 2.789850e+00
+[PASS] LT=2 tick-resolved, temporal dropped sym = 12, stencils identified
+[PASS] LT=2 tick-folded, all classes sym = 12, stencils identified
+[PASS] LT=2 tick-folded, temporal dropped = STATIC sym = 12, stencils identified
+[PASS] LT=3 tick-resolved, all classes sym = 6, stencils separated at 2.789850e+00
+[PASS] LT=3 tick-resolved, temporal dropped sym = 6, stencils separated at 1.000000e+00
+[PASS] LT=3 tick-folded, all classes sym = 12, stencils identified
+[PASS] LT=3 tick-folded, temporal dropped = STATIC sym = 12, stencils identified
+[PASS] LT=5 tick-resolved, all classes sym = 6, stencils separated at 2.789850e+00
+[PASS] LT=5 tick-resolved, temporal dropped sym = 6, stencils separated at 1.000000e+00
+[PASS] LT=5 tick-folded, all classes sym = 12, stencils identified
+[PASS] LT=5 tick-folded, temporal dropped = STATIC sym = 12, stencils identified
+Identification and order 12 agree in every row.
+
+-- I. two projections identify, and tick length tells them apart --
+[PASS] LT=3: dropping temporal classes leaves the stencils separated floor = 1.000000
+[PASS] LT=4: dropping temporal classes leaves the stencils separated floor = 1.000000
+[PASS] LT=4: the tick fold identifies them where dropping does not dev < 1.0e-09
+[PASS] LT=5: dropping temporal classes leaves the stencils separated floor = 1.000000
+Temporal-class dropping identifies only at tick length 2; the fold identifies
+at every tick length.  The landed static form applies both.
+
+-- J. the improper half needs a tick reversal; it does not vanish --
+[PASS] LT=2: tick translations give 6, adding a tick reversal gives 12 translations = 6, with reversal = 12
+[PASS] LT=3: tick translations give 6, adding a tick reversal gives 12 translations = 6, with reversal = 12
+[PASS] LT=4: tick translations give 6, adding a tick reversal gives 12 translations = 6, with reversal = 12
+[PASS] LT=5: tick translations give 6, adding a tick reversal gives 12 translations = 6, with reversal = 12
+
+-- K. the stencil is derived structure, not the axiom's adjacency --
+[PASS] the stencil carries 240 edge slots, 120 of them spatial total = 240, spatial = 120
+[PASS] a large share of the spatial slots are not nearest-neighbour steps 72 on the six axis directions, 48 not
+
+-- L. the static rows reproduce the landed cycle-721 reading --
+[PASS] static form at LT=2 carries 4 frame labels labels = 4
+[PASS] static form at LT=3 carries 4 frame labels labels = 4
+
+TOTAL: PASS=51 FAIL=0

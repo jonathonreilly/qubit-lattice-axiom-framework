@@ -57,12 +57,20 @@ interface.
 - [Cycle 870 recurrent physical-M2 matter compiler](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md)
 - [Cycle 714 fixed 59-M2 packet](PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md)
 - [Cycle 713 coherent endpoint instrument](PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md)
-- [Cycle 704 endpoint/interval schema](work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md)
-- [Cycle 610 intrinsic tick and relational-duration interface](work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md)
-- [Cycle 612 tick/echo association and causal-order interface](work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md)
 - [Cycle 718 recurrent-bank/allocator boundary](PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md)
-- [Cycle 219 one-particle coin/mass fixture](work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md)
-- [Cycle 230 contact/seam fixture](work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md)
+
+## Historical regression provenance (non-load-bearing)
+
+The four auditable dependencies above import and re-execute the historical
+interfaces and fixtures listed here.  These work-history notes are provenance
+for those regressions, not direct load-bearing dependencies of the Cycle-871
+claim:
+
+- Cycle 704 endpoint/interval schema: `work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md`
+- Cycle 610 intrinsic tick and relational-duration interface: `work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md`
+- Cycle 612 tick/echo association and causal-order interface: `work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md`
+- Cycle 219 one-particle coin/mass fixture: `work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md`
+- Cycle 230 contact/seam fixture: `work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md`
 
 The executable surfaces are the
 [primary emitted-word runner](../scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py)
@@ -225,8 +233,9 @@ additivity, reversal, inverse/replay, exhaustion, and unlawful-domain
 controls.  The unchanged Cycle-612 JointOrder harness retains consistent
 admissions, inverted-order refusal, forced-cycle detection, and the
 no-opportunity control.  These are interface acceptance tests.  Circuit
-ordinals remain circuit bookkeeping; physical duration is read only through
-the unchanged Cycle-610 interface.
+ordinals remain circuit bookkeeping; the decoded candidate interval is read
+only through the unchanged Cycle-610 interface, and no physical-duration
+interpretation is derived.
 
 Active controls include prewrite deletion, OR-Toffoli deletion, route-return
 deletion, raw-port normalization deletion, negative-frame half-swap deletion,

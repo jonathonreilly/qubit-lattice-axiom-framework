@@ -1,44 +1,157 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-03T04:53:53.378422+00:00",
+  "audit_invocation_history": [
+    "eaa68ade611344c9aa01b99dc93ae3f5"
+  ],
+  "audit_invocation_id": "eaa68ade611344c9aa01b99dc93ae3f5",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0)."
+    },
+    "dep_claim_type": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17",
+      "digest": "9091ee93c095b2616d2bc27a2a23e69bc0c967cc521aa66c10fa90b638bd5674",
+      "judgment": {
+        "audit_date": "2026-08-03T04:53:53.378422+00:00",
+        "audit_invocation_id": "eaa68ade611344c9aa01b99dc93ae3f5",
+        "audit_status": "audited_decoration",
+        "auditor": "codex-audit-batch-A-20260803-8944d34f",
+        "auditor_confidence": "medium",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": true,
+        "chain_closure_explanation": "Given the retained parent statements K1/K3 and standard Schur/Artin-Wedderburn theory, the scalar dichotomy, separator implication, and idempotent images follow exactly with the displayed signs and factors. The result is nevertheless a one-parent algebraic corollary rather than an independent positive theorem.",
+        "claim_scope": "Algebraic consequences of the retained Cl(3,0) complexification split: central-pseudoscalar eigenvalues \u00b1i, inequivalence across opposite eigenvalues, and factorization through the corresponding central-idempotent summand for faithful irreducible complex modules; no physical chirality assignment.",
+        "claim_type": "decoration",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": null,
+        "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "independence": "cross_family",
+        "load_bearing_step": "Schur's lemma makes \u03c1(\u03c9) scalar, and \u03c9\u00b2 = -1 forces that scalar to lie in {+i, -i}, after which intertwiner invariance and substitution into e\u00b1 yield (S2)-(S3).",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [
+          "derived_no_go_boundary"
+        ],
+        "notes_for_re_audit_if_any": "Re-render the full cited authority without clipping before any attempt to reclassify this row as audited_clean; absent independent content, retain it as decoration under the complexification-split parent.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 42,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "total_pass": 42
+        },
+        "verdict_rationale": "The displayed formulas are correct: Schur's lemma plus \u03c9\u00b2 = -1 gives \u03c7 = \u00b1i; intertwining preserves the central character; and substituting \u03c7 into e\u00b1 gives the complementary projectors. The note contributes only class-(A) corollaries of the single retained complexification-split parent, with no independent comparator, so the decoration policy precludes a standalone positive-theorem verdict. Its negative boundary is limited to the exact algebraic exclusion of equivalence across opposite Schur characters and of real \u03c7 values, not a physical no-go. The cited authority is packet-clipped, independently forbidding audited_clean in this invocation."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 0.0,
+    "packet_policy_fingerprint": {
+      "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "runner_hash": "94d7e9f46b557f086a6bea6760e4206144ad83b507196e7daaec198ce851cece",
+    "science_fingerprint": {
+      "dependencies": [
+        {
+          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+          "claim_type": "positive_theorem",
+          "effective_status": "retained",
+          "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "premise_classification": "ordinary_claim",
+          "present": true
+        }
+      ],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "69fbe0f0b5cce4ad399a116d7e219c4210d02a84ea2c3d7389e48732721528d8",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "94d7e9f46b557f086a6bea6760e4206144ad83b507196e7daaec198ce851cece"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17",
+        "claim_scope": "Algebraic consequences of the retained Cl(3,0) complexification split: central-pseudoscalar eigenvalues \u00b1i, inequivalence across opposite eigenvalues, and factorization through the corresponding central-idempotent summand for faithful irreducible complex modules; no physical chirality assignment.",
+        "claim_type": "decoration",
+        "ledger_note_hash": "935e1b8c9b9e6956afb53ec27aff4f54544250d632f73f148805ce867ad9c134",
+        "note_path": "docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
+        "note_sha256": "935e1b8c9b9e6956afb53ec27aff4f54544250d632f73f148805ce867ad9c134"
+      }
+    },
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260803-8944d34f",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Given the retained parent statements K1/K3 and standard Schur/Artin-Wedderburn theory, the scalar dichotomy, separator implication, and idempotent images follow exactly with the displayed signs and factors. The result is nevertheless a one-parent algebraic corollary rather than an independent positive theorem.",
   "claim_id": "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_scope": "Algebraic consequences of the retained Cl(3,0) complexification split: central-pseudoscalar eigenvalues \u00b1i, inequivalence across opposite eigenvalues, and factorization through the corresponding central-idempotent summand for faithful irreducible complex modules; no physical chirality assignment.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-03T04:53:53.378422+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
   "deps": [
     "cl3_complexification_split_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Schur's lemma makes \u03c1(\u03c9) scalar, and \u03c9\u00b2 = -1 forces that scalar to lie in {+i, -i}, after which intertwiner invariance and substitution into e\u00b1 yield (S2)-(S3).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "935e1b8c9b9e6956afb53ec27aff4f54544250d632f73f148805ce867ad9c134",
   "note_path": "docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-render the full cited authority without clipping before any attempt to reclassify this row as audited_clean; absent independent content, retain it as decoration under the complexification-split parent.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1328,14 +1441,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 42,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 42
   },
   "runner_path": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py",
   "title": "Cl(3) Central Pseudoscalar Schur Separator Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The displayed formulas are correct: Schur's lemma plus \u03c9\u00b2 = -1 gives \u03c7 = \u00b1i; intertwining preserves the central character; and substituting \u03c7 into e\u00b1 gives the complementary projectors. The note contributes only class-(A) corollaries of the single retained complexification-split parent, with no independent comparator, so the decoration policy precludes a standalone positive-theorem verdict. Its negative boundary is limited to the exact algebraic exclusion of equivalence across opposite Schur characters and of real \u03c7 values, not a physical no-go. The cited authority is packet-clipped, independently forbidding audited_clean in this invocation."
 }

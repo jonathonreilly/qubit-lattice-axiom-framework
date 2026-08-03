@@ -2933,8 +2933,8 @@
   "load_bearing_score": 25.311,
   "load_bearing_step": "The restrictions of \u03c0\u208a and \u03c0\u208b identify the two central-idempotent summands with M\u2082(C), so Cl(3,0) \u2297_R C \u2245 M\u2082(C) \u2295 M\u2082(C), and each irreducible module has complex dimension 2.",
   "load_bearing_step_class": "A",
-  "max_descendant_status": "audit_in_progress",
-  "max_descendant_status_rank": 30,
+  "max_descendant_status": "unknown",
+  "max_descendant_status_rank": 70,
   "negative_assertion_classes": [
     "derived_no_go_boundary"
   ],

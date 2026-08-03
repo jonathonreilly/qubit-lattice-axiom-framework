@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3969 |
-| Applied audit verdicts | 965 |
+| Applied audit verdicts | 966 |
 | Retained-grade rows, including boxed decorations | 527 |
 | Retained positive theorems | 129 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 362 |
 | Boxed decorations under retained parents | 36 |
 | Open gates | 3 |
-| Unaudited rows | 2634 |
+| Unaudited rows | 2633 |
 | Retained-pending-chain rows | 12 |
-| Audited conditional rows | 299 |
+| Audited conditional rows | 300 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 59 |
@@ -71,7 +71,7 @@ Next ready rows by queue order:
 - [`staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; non_terminal_failed
 - [`s3_boundary_link_theorem_note`](../../docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md) - critical; non_terminal_conditional
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - critical; non_terminal_conditional
-- [`staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
+- [`staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; non_terminal_conditional
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 1 |
 | Admitted ids absent from lane candidates | 34 |
-| Live conditional/failed rows that would park | 0 |
+| Live conditional/failed rows that would park | 1 |
 | Live rows fail-open (legacy/unversioned snapshot) | 30 |
 | Lane rows already in actual ready top-10 | 2 |
 | Lane rows added since prior pass | 0 |

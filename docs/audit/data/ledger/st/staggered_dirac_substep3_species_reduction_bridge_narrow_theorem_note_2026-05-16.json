@@ -1,24 +1,197 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-03T01:59:15.686331+00:00",
+  "audit_invocation_history": [
+    "6cbda51e63ea4068afbd14cf2a116f34",
+    "d4a64b1ca4734c5ab011a61f4cc8ae45"
+  ],
+  "audit_invocation_id": "d4a64b1ca4734c5ab011a61f4cc8ae45",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+      "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+      "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11": "For the explicitly defined finite periodic difference operator, exact blocking and rephasing produce the stated Clifford fiber, which decomposes unitarily into four identical irreducible four-dimensional matrix modules."
+    },
+    "dep_claim_type": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+      "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+      "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+      "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+      "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11": "retained_bounded"
+    },
+    "deps": [
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+      "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11"
+    ],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+      "digest": "aca4609eb43e4349ab07c04ac5e1efe3f970e0a1a359fda75e399a8e5226c003",
+      "judgment": {
+        "audit_date": "2026-08-03T01:59:15.686331+00:00",
+        "audit_invocation_id": "d4a64b1ca4734c5ab011a61f4cc8ae45",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-audit-batch-B-20260803-5f51acaa",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "The R3 authority is packet-clipped, so its complete central-idempotent and simple-module proof is unavailable. The runner checks two Pauli realizations and their dimensions but does not independently establish the exhaustive complexified split, preventing closure of the full conjunction.",
+        "claim_scope": "The conjunction R1-R5: at d=4 the naive corner count is 16; 16=4\u00d74 is role-free; Cl(3,0) complexifies into two M2(C) summands with irreducible dimensions (2,2); the defined 16-dimensional alpha module is four copies of an irreducible 4-dimensional module; and these separate facts do not identify their carriers.",
+        "claim_type": "bounded_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": null,
+        "decoration_parent_claim_id": null,
+        "independence": "fresh_context",
+        "load_bearing_step": "The explicit similarity U^dagger alpha_mu U = gamma_mu tensor I_4, rather than the identity 16=4\u00d74, proves that the defined 16-dimensional module consists of four copies of the irreducible 4-dimensional module.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [
+          "derived_no_go_boundary"
+        ],
+        "notes_for_re_audit_if_any": "other: regenerate the restricted packet with the complete unclipped docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md authority, or a complete independent exact split certificate, and re-audit R3; this is restricted-packet clipping rather than a dependency-status or runner defect.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 18,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "total_pass": 18
+        },
+        "verdict_rationale": "Issue: the load-bearing R3 formula family is supplied through a clipped authority, while the runner hard-codes representative Pauli modules without independently proving the exhaustive split Cl(3,0) tensor_R C \u2245 M_2(C) direct-sum M_2(C). Why this blocks: the required independent math audit cannot verify every member of the asserted R1-R5 conjunction from the restricted evidence. Repair target: provide the complete authority or an unclipped exact certificate for the central-idempotent split and irreducible-module classification. Claim boundary until fixed: R1/R2 and R4 are supported, while R5 is only the scoped negative boundary that the supplied hypotheses do not identify the separately specified carriers; the full conjunction is not cleanly auditable."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 13.723,
+    "packet_policy_fingerprint": {
+      "digest": "9a71ed6d9de3c07d77ac54c174c860c732c2623464ee5216069a1c5f667d1111",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "4c8254d65a5c51706b53309059bcb4323bc72cf9d4db2fbc0c9378926046e3ac",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "policy_versions": {
+      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "372a9e95bac3f08002e1df5efedaf3335d2b6af2d8d6f74442f67b7404cc6bc8",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "372a9e95bac3f08002e1df5efedaf3335d2b6af2d8d6f74442f67b7404cc6bc8",
+    "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "science_fingerprint": {
+      "dependencies": [
+        {
+          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+          "claim_type": "positive_theorem",
+          "effective_status": "retained",
+          "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "premise_classification": "ordinary_claim",
+          "present": true
+        },
+        {
+          "claim_id": "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "claim_scope": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "claim_type": "positive_theorem",
+          "effective_status": "retained",
+          "ledger_note_hash": "c6e5764f245539c5f1a1beb5689bdb4e714c052716491731d1f1f70e05b3c4b6",
+          "note_path": "docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "note_sha256": "c6e5764f245539c5f1a1beb5689bdb4e714c052716491731d1f1f70e05b3c4b6",
+          "premise_classification": "ordinary_claim",
+          "present": true
+        },
+        {
+          "claim_id": "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11",
+          "claim_scope": "For the explicitly defined finite periodic difference operator, exact blocking and rephasing produce the stated Clifford fiber, which decomposes unitarily into four identical irreducible four-dimensional matrix modules.",
+          "claim_type": "bounded_theorem",
+          "effective_status": "retained_bounded",
+          "ledger_note_hash": "98f6dd93545165dd38a6a04be2f528b3f52d51c1c7bdbb7f715a4d993975b8c9",
+          "note_path": "docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md",
+          "note_sha256": "98f6dd93545165dd38a6a04be2f528b3f52d51c1c7bdbb7f715a4d993975b8c9",
+          "premise_classification": "ordinary_claim",
+          "present": true
+        }
+      ],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "fa8058a8d7487f74948bf96898ae7a573294fb6636a84e7138b3d9d927b0a759",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "372a9e95bac3f08002e1df5efedaf3335d2b6af2d8d6f74442f67b7404cc6bc8"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+        "claim_scope": "The conjunction R1-R5: at d=4 the naive corner count is 16; 16=4\u00d74 is role-free; Cl(3,0) complexifies into two M2(C) summands with irreducible dimensions (2,2); the defined 16-dimensional alpha module is four copies of an irreducible 4-dimensional module; and these separate facts do not identify their carriers.",
+        "claim_type": "bounded_theorem",
+        "ledger_note_hash": "dc985f957b1eb4ca5589a3d08be99c057fc632193f3640b39eac25dee31d7087",
+        "note_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+        "note_sha256": "dc985f957b1eb4ca5589a3d08be99c057fc632193f3640b39eac25dee31d7087"
+      }
+    },
+    "transitive_descendants": 1194
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260803-5f51acaa",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The R3 authority is packet-clipped, so its complete central-idempotent and simple-module proof is unavailable. The runner checks two Pauli realizations and their dimensions but does not independently establish the exhaustive complexified split, preventing closure of the full conjunction.",
   "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-  "claim_scope": null,
+  "claim_scope": "The conjunction R1-R5: at d=4 the naive corner count is 16; 16=4\u00d74 is role-free; Cl(3,0) complexifies into two M2(C) summands with irreducible dimensions (2,2); the defined 16-dimensional alpha module is four copies of an irreducible 4-dimensional module; and these separate facts do not identify their carriers.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-03T01:59:15.686331+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -28,19 +201,22 @@
     "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11"
   ],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 13.723,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The explicit similarity U^dagger alpha_mu U = gamma_mu tensor I_4, rather than the identity 16=4\u00d74, proves that the defined 16-dimensional module consists of four copies of the irreducible 4-dimensional module.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "dc985f957b1eb4ca5589a3d08be99c057fc632193f3640b39eac25dee31d7087",
   "note_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: regenerate the restricted packet with the complete unclipped docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md authority, or a complete independent exact split certificate, and re-audit R3; this is restricted-packet clipping rather than a dependency-status or runner defect.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1535,14 +1711,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 18,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 18
   },
   "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
   "title": "Staggered-Dirac Substep 3 \u2014 Species Reduction Bridge Narrow Theorem",
   "transitive_descendants": 1194,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the load-bearing R3 formula family is supplied through a clipped authority, while the runner hard-codes representative Pauli modules without independently proving the exhaustive split Cl(3,0) tensor_R C \u2245 M_2(C) direct-sum M_2(C). Why this blocks: the required independent math audit cannot verify every member of the asserted R1-R5 conjunction from the restricted evidence. Repair target: provide the complete authority or an unclipped exact certificate for the central-idempotent split and irreducible-module classification. Claim boundary until fixed: R1/R2 and R4 are supported, while R5 is only the scoped negative boundary that the supplied hypotheses do not identify the separately specified carriers; the full conjunction is not cleanly auditable."
 }

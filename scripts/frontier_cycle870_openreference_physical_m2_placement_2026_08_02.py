@@ -31,6 +31,13 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
     "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
 )
+EXPECTED_DEPENDENCY_SHA256 = {
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+    "scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py": "833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245",
+    "scripts/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py": "5dab64cd17ead6cb5062eab9266b9206d74bb608dcc22f3a1132ee1f1af3e9a9",
+    "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py": "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
+}
 
 import ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17 as base
 import frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25 as prep
@@ -42,6 +49,10 @@ import frontier_full128_25site_nn_circuit_core_2026_07_24 as route
 Coord = tuple[int, int, int]
 DIRECTIONS = tuple(tuple(map(int, row)) for row in base.c210.DIRECTIONS)
 TOL = 1.0e-10
+
+
+def file_sha256(path: Path) -> str:
+    return sha256(path.read_bytes()).hexdigest()
 
 
 def add(left: Coord, right: Coord) -> Coord:
@@ -550,7 +561,7 @@ def covariance_certificate(shape: tuple[int, int, int], graph, site_map) -> dict
         "ordered_products": len(frames) ** 2,
         "frame_injectivity_failures": frame_failures,
         "product_diagram_failures": product_failures,
-        "transported_coframe_supplied": True,
+        "coframe_status": "supplied and transported",
     }
 
 
@@ -645,7 +656,7 @@ def semantic_covariance_certificate(shape: tuple[int, int, int]) -> dict[str, ob
         "product_generator_failures": product_generator_failures,
         "product_edge_failures": product_edge_failures,
         "product_site_failures": product_site_failures,
-        "signed_port_order_gauge_included": True,
+        "port_order_gauge_status": "signed local chart gauge included",
     }
 
 
@@ -739,6 +750,14 @@ def fixture(shape: tuple[int, int, int]) -> dict[str, object]:
 
 
 def main() -> int:
+    dependency_hashes = {
+        path: file_sha256(ROOT / path) for path in EXPECTED_DEPENDENCY_SHA256
+    }
+    dependency_pin_failures = {
+        path: {"expected": expected, "observed": dependency_hashes[path]}
+        for path, expected in EXPECTED_DEPENDENCY_SHA256.items()
+        if dependency_hashes[path] != expected
+    }
     rows = [
         fixture(shape)
         for shape in (
@@ -751,7 +770,7 @@ def main() -> int:
         )
     ]
     semantic_covariance = semantic_covariance_certificate((3, 2, 2))
-    failures = []
+    failures = [("dependencies", path) for path in dependency_pin_failures]
     for row in rows:
         alg = row["algebra"]
         routes = row["routes"]
@@ -806,6 +825,8 @@ def main() -> int:
         "failures": failures,
         "fixtures": rows,
         "semantic_covariance": semantic_covariance,
+        "dependency_sha256": dependency_hashes,
+        "dependency_pin_failures": dependency_pin_failures,
         "boundary": {
             "derived": [
                 "formulaic OpenReference carrier placement including reference bonds",

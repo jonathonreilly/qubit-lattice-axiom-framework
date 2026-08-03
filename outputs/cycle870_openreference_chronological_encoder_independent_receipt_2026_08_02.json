@@ -2,7 +2,7 @@
   "artifact": {
     "cold_command": "python3 scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py",
     "path": "scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py",
-    "sha256": "49be3d479b0adfb0825442af2b82fc24418f75b90bc62c0a1d7795e58f494ae3"
+    "sha256": "d11791df361c719041bba7dbda9bacbfb3a6a0e2790c2f2e71d16eda04c029fe"
   },
   "chronology": [
     "triangle_syndrome",
@@ -15,7 +15,7 @@
   ],
   "claim_boundary": {
     "controller_domain": "one supplied invocation with syndrome/input/work clean and every root fresh=1,token=spent=0",
-    "exact_execution": "seven-stage clean-domain H/S/T/CNOT/CZ/SWAP primitive word with returned NN routes on explicitly counted transit M2 capacity",
+    "exact_execution": "seven-stage clean-domain H/S/T/X/CNOT/CZ/SWAP primitive word with returned NN routes on explicitly counted transit M2 capacity",
     "not_claimed": "no local spent-sector admission guard, reset, recurrence, autonomous genesis, physical occurrence, or intrinsic time",
     "root_atlas": "root interaction lists are template/address atlases; controller templates are reused by the independently emitted depth-first word and are not interpreted in list order as time"
   },
@@ -24,8 +24,37 @@
     "CCZ_subgate_deletions_tested": 17,
     "Toffoli_decomposition_residual": 7.346882794269506e-16,
     "Toffoli_subgate_deletions_tested": 15,
+    "maximum_router_decomposition_residual": 0.0,
     "minimum_CCZ_subgate_deletion_residual": 1.5307337294603587,
-    "minimum_Toffoli_subgate_deletion_residual": 1.5307337294603587
+    "minimum_Toffoli_subgate_deletion_residual": 1.5307337294603587,
+    "minimum_router_subgate_deletion_residual": 2.0,
+    "router_decomposition_residuals": {
+      "leaf": 0.0,
+      "one_child": 0.0,
+      "two_children": 0.0
+    },
+    "router_gate_counts": {
+      "leaf": 0,
+      "one_child": 3,
+      "two_children": 4
+    },
+    "router_gate_set": "X/CNOT",
+    "router_matrix_basis_encoding": "left + 2*right (substrate little-endian wires)",
+    "router_semantic_integer_encoding": "left + 2*right",
+    "router_subgate_deletion_residuals": {
+      "leaf": [],
+      "one_child": [
+        2.8284271247461903,
+        2.0,
+        2.8284271247461903
+      ],
+      "two_children": [
+        2.8284271247461903,
+        2.0,
+        2.0,
+        2.8284271247461903
+      ]
+    }
   },
   "fixtures": [
     {
@@ -178,6 +207,95 @@
         "unit_step_failures": 0
       },
       "dense_transit_capacity_M2": 42875,
+      "emitted_encoder_isometry": {
+        "carrier_M2": 180,
+        "check_macro_operator_certificate": {
+          "conjugation_residuals": {
+            "X": 8.881784197001252e-16,
+            "Y": 8.881784197001252e-16,
+            "Z": 0.0
+          },
+          "maximum_residual": 8.881784197001252e-16,
+          "minimum_parity_gate_deletion_residual": 2.8284271247461894,
+          "negative_sign_X_residual": 0.0,
+          "parity_gate_deletion_residuals": {
+            "X": 2.8284271247461894,
+            "Y": 2.8284271247461894,
+            "Z": 2.8284271247461903
+          }
+        },
+        "controller_complete_ANF_certificate": {
+          "coarse_check_bits": 6,
+          "complete_lawful_domain_exact": true,
+          "correction_ANF_monomials": 22,
+          "failure_census": {
+            "fresh_consumption_failures": 0,
+            "nonlinear_correction_polynomials": 0,
+            "router_return_failures": 0,
+            "source_register_mutations": 0,
+            "spent_ack_failures": 0,
+            "syndrome_action_ANF_failures": 0,
+            "token_return_failures": 0,
+            "value_work_return_failures": 0
+          },
+          "independent_edge_variables": 12,
+          "lawful_syndrome_rank": 5,
+          "maximum_correction_ANF_degree": 1,
+          "maximum_intermediate_ANF_degree": 1,
+          "proof_domain": "complete lawful syndrome image parameterized by coarse-edge variables"
+        },
+        "failure_census": {
+          "Z_correction_preservation_failures": 0,
+          "bond_decoder_response_failures": 0,
+          "check_macro_failures": 0,
+          "check_support_atlas_failures": 0,
+          "coarse_controller_ANF_failures": 0,
+          "controller_local_decomposition_failures": 0,
+          "cycle_check_commutator_failures": 0,
+          "extraction_preservation_failures": 0,
+          "inactive_check_macro_mutations": 0,
+          "inactive_loader_macro_mutations": 0,
+          "inactive_router_decomposition_mutations": 0,
+          "initial_preserved_not_plus_Z_failures": 0,
+          "later_correction_prior_check_disturbance_failures": 0,
+          "loader_macro_failures": 0,
+          "loader_support_atlas_failures": 0,
+          "logical_pair_failures": 0,
+          "logical_stabilizer_commutator_failures": 0,
+          "primitive_unitarity_failures": 0,
+          "routed_SWAP_conjugation_failures": 0,
+          "triangle_decoder_response_failures": 0,
+          "vacuum_commutator_failures": 0,
+          "vacuum_phase_failures": 0,
+          "vacuum_rank_deficit": 0
+        },
+        "literal_emitted_encoder_isometry_exact": true,
+        "loader_macro_operator_certificate": {
+          "controlled_axis_residuals": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "controlled_gate_deletion_residuals": {
+            "X": 2.0,
+            "Y": 2.0,
+            "Z": 2.0
+          },
+          "generic_clean_subspace_swap_residual": 0.0,
+          "maximum_residual": 0.0,
+          "minimum_controlled_gate_deletion_residual": 2.0,
+          "negative_signed_X_control_residual": 0.0,
+          "parity_unload_deletion_residual": 1.4142135623730951
+        },
+        "physical_code_rows": 133,
+        "physical_logical_Z_rows": 48,
+        "proof_method": "independent local-matrix macro identities, complete-lawful-domain ANF controller execution, signed stabilizer rank, and symbolic returned-SWAP conjugation",
+        "retained_garbage_factorization": "unique pure carrier vacuum plus input-untouched preparation stages makes retained syndrome/spent garbage input-independent",
+        "signed_logical_generator_identities_checked": 96,
+        "signed_logical_generator_pairs": 48,
+        "unique_plus_vacuum": true,
+        "vacuum_tableau_rank": 180
+      },
       "encoded_carrier_M2": 180,
       "exact_primitive_route": {
         "arbitrary_transit_register_return_failures": 0,
@@ -185,9 +303,9 @@
         "maximum_route_distance": 42,
         "non_NN_failures": 0,
         "operand_failures": 0,
-        "persistent_auxiliary_sites_touched": 266,
+        "persistent_auxiliary_sites_touched": 262,
         "primitive_endpoint_outside_carrier_auxiliary_bank": 0,
-        "primitive_gates": 3872,
+        "primitive_gates": 3889,
         "primitive_kind_census": {
           "check_CNOT": 1072,
           "check_H": 840,
@@ -218,18 +336,22 @@
           "loader_parity_CNOT": 264,
           "root_fresh_to_token_SWAP": 3,
           "root_token_to_spent_SWAP": 3,
-          "router_leaf": 4,
-          "router_one_child": 6,
-          "router_two_children": 3,
+          "router_one_child_CNOT_right_left": 6,
+          "router_one_child_X_right_post": 6,
+          "router_one_child_X_right_pre": 6,
+          "router_two_children_CNOT_left_right": 3,
+          "router_two_children_CNOT_right_left": 3,
+          "router_two_children_X_left": 3,
+          "router_two_children_X_right": 3,
           "syndrome_controlled_Z": 252,
           "token_SWAP_down": 5,
           "token_SWAP_up": 5
         },
         "primitive_unitarity_failures": 0,
         "route_sites_outside_radius9_capacity": 0,
-        "routed_gates": 48938,
-        "routed_word_sha256": "5baa8ac733ff8c4fc53919bb4cf9df8e39b065c409b3b421ec40d04974d095e9",
-        "transit_sites_touched": 4309
+        "routed_gates": 48913,
+        "routed_word_sha256": "ec4fbba0c9977c395f60e1a0937996f6db0b204fafa6a998a54d37f781f3a997",
+        "transit_sites_touched": 4296
       },
       "expected_18N_plus_3E": 180,
       "expected_36N": 288,
@@ -257,7 +379,7 @@
       "stage_primitive_counts": {
         "bond_correction": 12,
         "bond_syndrome": 276,
-        "coarse_echo_correction_ack": 414,
+        "coarse_echo_correction_ack": 431,
         "coarse_syndrome": 342,
         "logical_load": 988,
         "triangle_correction": 240,
@@ -531,6 +653,95 @@
         "unit_step_failures": 0
       },
       "dense_transit_capacity_M2": 132651,
+      "emitted_encoder_isometry": {
+        "carrier_M2": 648,
+        "check_macro_operator_certificate": {
+          "conjugation_residuals": {
+            "X": 8.881784197001252e-16,
+            "Y": 8.881784197001252e-16,
+            "Z": 0.0
+          },
+          "maximum_residual": 8.881784197001252e-16,
+          "minimum_parity_gate_deletion_residual": 2.8284271247461894,
+          "negative_sign_X_residual": 0.0,
+          "parity_gate_deletion_residuals": {
+            "X": 2.8284271247461894,
+            "Y": 2.8284271247461894,
+            "Z": 2.8284271247461903
+          }
+        },
+        "controller_complete_ANF_certificate": {
+          "coarse_check_bits": 36,
+          "complete_lawful_domain_exact": true,
+          "correction_ANF_monomials": 164,
+          "failure_census": {
+            "fresh_consumption_failures": 0,
+            "nonlinear_correction_polynomials": 0,
+            "router_return_failures": 0,
+            "source_register_mutations": 0,
+            "spent_ack_failures": 0,
+            "syndrome_action_ANF_failures": 0,
+            "token_return_failures": 0,
+            "value_work_return_failures": 0
+          },
+          "independent_edge_variables": 54,
+          "lawful_syndrome_rank": 28,
+          "maximum_correction_ANF_degree": 1,
+          "maximum_intermediate_ANF_degree": 1,
+          "proof_domain": "complete lawful syndrome image parameterized by coarse-edge variables"
+        },
+        "failure_census": {
+          "Z_correction_preservation_failures": 0,
+          "bond_decoder_response_failures": 0,
+          "check_macro_failures": 0,
+          "check_support_atlas_failures": 0,
+          "coarse_controller_ANF_failures": 0,
+          "controller_local_decomposition_failures": 0,
+          "cycle_check_commutator_failures": 0,
+          "extraction_preservation_failures": 0,
+          "inactive_check_macro_mutations": 0,
+          "inactive_loader_macro_mutations": 0,
+          "inactive_router_decomposition_mutations": 0,
+          "initial_preserved_not_plus_Z_failures": 0,
+          "later_correction_prior_check_disturbance_failures": 0,
+          "loader_macro_failures": 0,
+          "loader_support_atlas_failures": 0,
+          "logical_pair_failures": 0,
+          "logical_stabilizer_commutator_failures": 0,
+          "primitive_unitarity_failures": 0,
+          "routed_SWAP_conjugation_failures": 0,
+          "triangle_decoder_response_failures": 0,
+          "vacuum_commutator_failures": 0,
+          "vacuum_phase_failures": 0,
+          "vacuum_rank_deficit": 0
+        },
+        "literal_emitted_encoder_isometry_exact": true,
+        "loader_macro_operator_certificate": {
+          "controlled_axis_residuals": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "controlled_gate_deletion_residuals": {
+            "X": 2.0,
+            "Y": 2.0,
+            "Z": 2.0
+          },
+          "generic_clean_subspace_swap_residual": 0.0,
+          "maximum_residual": 0.0,
+          "minimum_controlled_gate_deletion_residual": 2.0,
+          "negative_signed_X_control_residual": 0.0,
+          "parity_unload_deletion_residual": 1.4142135623730951
+        },
+        "physical_code_rows": 494,
+        "physical_logical_Z_rows": 162,
+        "proof_method": "independent local-matrix macro identities, complete-lawful-domain ANF controller execution, signed stabilizer rank, and symbolic returned-SWAP conjugation",
+        "retained_garbage_factorization": "unique pure carrier vacuum plus input-untouched preparation stages makes retained syndrome/spent garbage input-independent",
+        "signed_logical_generator_identities_checked": 324,
+        "signed_logical_generator_pairs": 162,
+        "unique_plus_vacuum": true,
+        "vacuum_tableau_rank": 648
+      },
       "encoded_carrier_M2": 648,
       "exact_primitive_route": {
         "arbitrary_transit_register_return_failures": 0,
@@ -538,9 +749,9 @@
         "maximum_route_distance": 42,
         "non_NN_failures": 0,
         "operand_failures": 0,
-        "persistent_auxiliary_sites_touched": 922,
+        "persistent_auxiliary_sites_touched": 910,
         "primitive_endpoint_outside_carrier_auxiliary_bank": 0,
-        "primitive_gates": 15369,
+        "primitive_gates": 15473,
         "primitive_kind_census": {
           "check_CNOT": 4347,
           "check_H": 3348,
@@ -571,18 +782,22 @@
           "loader_parity_CNOT": 918,
           "root_fresh_to_token_SWAP": 8,
           "root_token_to_spent_SWAP": 8,
-          "router_leaf": 12,
-          "router_one_child": 40,
-          "router_two_children": 12,
+          "router_one_child_CNOT_right_left": 40,
+          "router_one_child_X_right_post": 40,
+          "router_one_child_X_right_pre": 40,
+          "router_two_children_CNOT_left_right": 12,
+          "router_two_children_CNOT_right_left": 12,
+          "router_two_children_X_left": 12,
+          "router_two_children_X_right": 12,
           "syndrome_controlled_Z": 864,
           "token_SWAP_down": 28,
           "token_SWAP_up": 28
         },
         "primitive_unitarity_failures": 0,
         "route_sites_outside_radius9_capacity": 0,
-        "routed_gates": 207043,
-        "routed_word_sha256": "0f75e766bf7fd96d2603f2ef8df1998c6d3c37beddd940cd7b20a1c7d8e26368",
-        "transit_sites_touched": 16464
+        "routed_gates": 207027,
+        "routed_word_sha256": "9e474f8b87657a94d64123b3920dc711ac94b9d1b265f994b164f12a5f537e3c",
+        "transit_sites_touched": 16416
       },
       "expected_18N_plus_3E": 648,
       "expected_36N": 972,
@@ -610,7 +825,7 @@
       "stage_primitive_counts": {
         "bond_correction": 54,
         "bond_syndrome": 1305,
-        "coarse_echo_correction_ack": 2292,
+        "coarse_echo_correction_ack": 2396,
         "coarse_syndrome": 2052,
         "logical_load": 3456,
         "triangle_correction": 810,
@@ -628,21 +843,21 @@
     }
   ],
   "frozen_target_comparison": {
-    "comparison_is_read_only_no_target_import": true,
+    "comparison_method": "read-only frozen metric comparison; target module not imported",
     "comparison_rows": [
       {
         "L": 2,
-        "fields_compared": 14,
+        "fields_compared": 15,
         "mismatches": {}
       },
       {
         "L": 3,
-        "fields_compared": 14,
+        "fields_compared": 15,
         "mismatches": {}
       }
     ],
-    "frozen_receipt_sha256": "3a389eb5646f8f9023b9c7af5b83c86277662c61b23fa7c717a28105d53d738d",
-    "frozen_source_sha256": "25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5",
+    "frozen_receipt_sha256": "cb7a8892649d41ea1c4fe6cf4ddb8ec8678356932f063a74ea775179df77ba1b",
+    "frozen_source_sha256": "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457",
     "mismatch_keys": [],
     "target_failures": [],
     "target_status": "pass",
@@ -658,10 +873,10 @@
       "frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py": "5dab64cd17ead6cb5062eab9266b9206d74bb608dcc22f3a1132ee1f1af3e9a9",
       "frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
     },
-    "frozen_joined_receipt_sha256": "3a389eb5646f8f9023b9c7af5b83c86277662c61b23fa7c717a28105d53d738d",
-    "frozen_joined_target_sha256": "25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5",
+    "frozen_joined_receipt_sha256": "cb7a8892649d41ea1c4fe6cf4ddb8ec8678356932f063a74ea775179df77ba1b",
+    "frozen_joined_target_sha256": "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457",
     "joint_probe_imported": false,
-    "root_sha256": "e31501b599f5ea81838320bc103a11225c95d1593d44becd1fe2701e3b5ab0ce",
+    "root_sha256": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
     "root_source": "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
     "target_frozen_for_comparison": true
   },

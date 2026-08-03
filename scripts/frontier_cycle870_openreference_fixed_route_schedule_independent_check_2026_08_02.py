@@ -35,13 +35,17 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 REPO_DEFAULT = HERE.parent
 PRIOR_SOURCE = HERE / "frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py"
-PRIOR_EXPECTED_SHA256 = "c7bfa021bbc16357a1c01376a869e55c94da68b20c7f4cfac0b19311971bc960"
+PRIOR_EXPECTED_SHA256 = "61adc5c70f116daf58c583c892eb6ecebd4d7d6872e341dc578c22599e4c0a92"
 NATIVE_TARGET = HERE / "frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py"
 JOINED_TARGET = HERE / "frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py"
 ROOT_E_TARGET = HERE / "frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py"
-FROZEN_NATIVE_TARGET_SHA256 = "df5809cb74e5ff6bae1fa125094dbeae4f356bf2114a3944a9227365ae574237"
-FROZEN_JOINED_TARGET_SHA256 = "25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5"
-FROZEN_ROOT_E_TARGET_SHA256 = "e31501b599f5ea81838320bc103a11225c95d1593d44becd1fe2701e3b5ab0ce"
+FROZEN_NATIVE_TARGET_SHA256 = "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237"
+FROZEN_JOINED_TARGET_SHA256 = "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457"
+FROZEN_ROOT_E_TARGET_SHA256 = "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2"
+EXPECTED_DIRECT_INPUT_SHA256 = {
+    "common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+}
 EXPECTED_BASE_COMMIT = "4d6dedee82a14e13cbccb8bf62d6eac1227a4f0c"
 MODULUS = 3
 MODE_PATH = (0, 2, 1, 4, 3, 5)
@@ -1003,6 +1007,14 @@ def covariance_certificate(primary_l3: dict[str, object]):
             product_direction_failures += any(
                 left_map[right_map[mode]] != final_map[mode] for mode in range(6)
             )
+    transported_failures = (
+        frame_unit_failures
+        + residue_bijection_failures
+        + coordinate_injectivity_failures
+        + product_coordinate_failures
+        + product_residue_failures
+        + product_direction_failures
+    )
     return {
         "proper_cubic_frames": len(frames),
         "ordered_products": len(frames) ** 2,
@@ -1012,7 +1024,7 @@ def covariance_certificate(primary_l3: dict[str, object]):
         "product_coordinate_failures": product_coordinate_failures,
         "product_residue_failures": product_residue_failures,
         "product_direction_semantics_failures": product_direction_failures,
-        "transported_atlas_covariance": True,
+        "transported_atlas_covariance": transported_failures == 0,
         "canonical_lab_Manhattan_word_equality_claimed": False,
         "meaning": (
             "The supplied coframe transports paths, type semantics, and mod-3 colors. "
@@ -1069,17 +1081,20 @@ def main() -> int:
     )
     args = parser.parse_args()
     repo = args.repo.resolve()
-    sys.path.insert(0, str(repo / "scripts"))
+    scripts = repo / "scripts"
+    direct_input_hashes = {
+        name: sha256(scripts / name) for name in EXPECTED_DIRECT_INPUT_SHA256
+    }
+    direct_input_pin_failures = {
+        name: {"expected": expected, "observed": direct_input_hashes[name]}
+        for name, expected in EXPECTED_DIRECT_INPUT_SHA256.items()
+        if direct_input_hashes[name] != expected
+    }
+    sys.path.insert(0, str(scripts))
     import common_matter_field_coin_family_cycle219_2026_07_16 as c219
     import spatial_car_contact_seam_form_factor_cycle230_2026_07_17 as c230
 
     ind = load_prior()
-    commit = subprocess.run(
-        ("git", "-C", str(repo), "rev-parse", "HEAD"),
-        check=True,
-        capture_output=True,
-        text=True,
-    ).stdout.strip()
     expected_base_is_ancestor = subprocess.run(
         (
             "git",
@@ -1136,13 +1151,20 @@ def main() -> int:
     route_deletion = route_deletion_family_certificate(
         ANALYTIC_ROTATION_DIAMETER_CAP
     )
+    native_target_hash = sha256(NATIVE_TARGET) if NATIVE_TARGET.is_file() else None
+    joined_target_hash = sha256(JOINED_TARGET) if JOINED_TARGET.is_file() else None
+    root_target_hash = sha256(ROOT_E_TARGET) if ROOT_E_TARGET.is_file() else None
     target_hashes = {
-        "native_G_active_target": sha256(NATIVE_TARGET) if NATIVE_TARGET.is_file() else None,
-        "joined_EG_active_target": sha256(JOINED_TARGET) if JOINED_TARGET.is_file() else None,
-        "root_E_active_target": sha256(ROOT_E_TARGET) if ROOT_E_TARGET.is_file() else None,
-        "targets_frozen_for_comparison": True,
+        "native_G_active_target": native_target_hash,
+        "joined_EG_active_target": joined_target_hash,
+        "root_E_active_target": root_target_hash,
+        "targets_frozen_for_comparison": (
+            native_target_hash == FROZEN_NATIVE_TARGET_SHA256
+            and joined_target_hash == FROZEN_JOINED_TARGET_SHA256
+            and root_target_hash == FROZEN_ROOT_E_TARGET_SHA256
+        ),
     }
-    failures = []
+    failures = [f"direct input pin:{name}" for name in direct_input_pin_failures]
     if not expected_base_is_ancestor:
         failures.append("expected base is not an ancestor")
     if target_hashes["native_G_active_target"] != FROZEN_NATIVE_TARGET_SHA256:
@@ -1221,12 +1243,13 @@ def main() -> int:
         },
         "sources": {
             "repo": ".",
-            "commit": commit,
             "expected_base_commit": EXPECTED_BASE_COMMIT,
             "expected_base_is_ancestor": expected_base_is_ancestor,
             "prior_independent_core": str(PRIOR_SOURCE.relative_to(repo)),
             "prior_independent_core_sha256": sha256(PRIOR_SOURCE),
             "joint_probe_imported": False,
+            "direct_input_sha256": direct_input_hashes,
+            "direct_input_pin_failures": direct_input_pin_failures,
             "target_hashes_at_run": target_hashes,
         },
         "coin_QR": qr,

@@ -38,12 +38,14 @@ vector,
 G_physical_exact E_joined = E_joined G_native_exact.
 ```
 
-The equation is exact as a vector equation after an explicitly inventoried
-zero-site scalar cancels the compiled rotation word's global phase.  Without
-that scalar the routed word has only the corresponding projective equality.
+The returned routed word `U_routed` is the executable physical operation; its
+channel, equivalently its projective class, is the fixed recurrent physical
+law on the encoded bank.  The notation
+`G_physical_exact = exp(-i phi) U_routed` selects a formal vector
+representative so the displayed equation has literal vector equality.  The
+unrouted scalar is not a physical gate or observable operation.
 
-The physical update `G_physical_exact` is a fixed recurrent law on the encoded
-bank.  The encoder is not autonomous: it is invoked once on a supplied clean
+The encoder is not autonomous: it is invoked once on a supplied clean
 open-cube domain.  No physical admission/reset law prepares or renews that
 domain.  This distinction is load bearing.
 
@@ -54,15 +56,17 @@ general fermion-encoding novelty claim.
 
 ## Direct landed inputs
 
-- the Cycle-219 `beta=-0.3` one-particle coin/mass and Cycle-230 `g=0.37`
-  contact fixtures, re-executed on the [Cycle-709 physical seam compiler
+- the [Cycle-219 `beta=-0.3` one-particle coin/mass](work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md)
+  and [Cycle-230 `g=0.37` contact](work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md)
+  fixtures, re-executed on the [Cycle-709 physical seam compiler
   surface](LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md);
 - the [Cycle-703 OpenReference/local-Gauss BKSF code, coherent loader, and
   reversible echo/ack semantics](RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md);
 - the [Cycle-232 spacing-16 local physical placement](work_history/repo/review_feedback/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_NOTE_2026-07-17.md)
   and returned Manhattan routing primitives; and
-- the proper-cubic signed transport conventions already used by the landed
-  Cycle-703--707 physical compiler surfaces.
+- the proper-cubic signed transport conventions from the
+  [Cycle-706 OpenReference/PatchGraph equivalence](OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md)
+  and [Cycle-707 literal M2 placement/controller](LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md).
 
 Each dynamically consumed runner is byte-pinned by the package.  The
 independent verifiers reconstruct the relevant algebra and schedules rather
@@ -103,8 +107,22 @@ SWAP(fresh, token)
 ```
 
 `Toffoli` and `CCZ` are decomposed into the declared one- and two-M2
-Clifford+T gate language.  Every two-site primitive is then compiled into a
+Clifford+T gate language.  The three echo-router permutations are independently
+reduced to exact `X/CNOT` words, including an explicit little-endian port-bit
+convention.  Every two-site primitive is then compiled into a
 nearest-neighbour returned route.
+
+The emitted encoder is tied to the abstract isometry by operator checks, not
+by a declared boolean.  The literal extraction macros conjugate each syndrome
+`Z` into the signed physical check; the triangle, coarse, and bond correction
+incidence maps have zero residual; and the physical constraints plus all
+logical `Z` rows have unique-vacuum ranks `180/180` and `648/648`.  The
+controller is executed symbolically over the complete lawful syndrome image
+with one Boolean indeterminate per coarse edge.  Its correction and work ANFs
+have zero residual and maximum degree one.  Finally the literal signed
+controlled-logical-`X` and parity-unload macros prove all `96` L2 and `324` L3
+logical-generator identities.  Returned-route label permutations prove that
+the routed word conjugates to the same primitive word.
 
 The recurrent update uses exactly the same carrier addresses.  Every
 Hermitian native `A/B` generator is lifted through the signed repetition
@@ -124,22 +142,25 @@ No parameter or placement rule is refitted between the primary `L=2` and held
 | logical input qubits | 48 | 162 |
 | encoded carrier M2 | 180 | 648 |
 | persistent preparation auxiliary M2 | 288 | 972 |
-| bounded transit-route substrate M2 | 4,773 | 18,566 |
-| total observed declared support M2 | 5,241 | 20,186 |
-| `E` primitive gates | 3,872 | 15,369 |
-| `E` returned-NN gates | 48,938 | 207,043 |
+| bounded transit-route substrate M2 | 4,760 | 18,518 |
+| total observed declared support M2 | 5,228 | 20,138 |
+| `E` primitive gates | 3,889 | 15,473 |
+| `E` returned-NN gates | 48,913 | 207,027 |
 | `G` rotations | 1,392 | 4,752 |
 | `G` primitive gates | 17,048 | 61,038 |
 | `G` returned-NN gates | 173,352 | 703,550 |
-| combined returned-NN gates | 222,290 | 910,593 |
+| combined returned-NN gates | 222,265 | 910,577 |
 | maximum observed route distance | 42 | 42 |
 | NN / operand / route-return failures | 0 / 0 / 0 | 0 / 0 / 0 |
-| exact-intertwiner proof-obligation failures | 0 | 0 |
+| emitted-encoder / exact-intertwiner failures | 0 / 0 | 0 / 0 |
 
-The controller test exhausts all 32 lawful L2 coarse syndromes.  The held L3
-test covers every 54 unit-edge syndrome plus 64 deterministic linearity pairs,
-118 cases in total.  It is a generator/basis structural proof backed by exact
-linearity, not a dense `2^(physical M2)` state-vector run.
+The earlier sampled controller tests still exhaust all 32 lawful L2 coarse
+syndromes and cover 118 L3 unit/pair cases.  The load-bearing proof is now
+stronger: exact algebraic-normal-form execution parameterizes the complete
+lawful image using all 12 L2 or 54 L3 coarse-edge variables.  Every output
+coefficient residual is zero and no correction polynomial exceeds degree one.
+This is a complete basis-and-linearity proof, not a dense
+`2^(physical M2)` state-vector run.
 
 Every endpoint and Manhattan path lies inside
 `center(owner)+[-25,25]^3`.  Thus `51^3 = 132,651` is a conservative a-priori
@@ -202,8 +223,11 @@ them.
 | held, no refit | 4 | 64 / 144 | 11,328 | 4,860 | 0 | 0 / 22,224 |
 | held, no refit | 5 | 125 / 300 | 22,200 | 4,860 | 0 | 0 / 46,540 |
 
-All 4,900 individually deleted forward, central, and reverse route-gate
-positions are detected.  Arbitrary/entangled transit restoration, operand
+All 4,900 positions in the distance-1-through-70 symbolic returned-route shape
+family are deleted and detected: forward, central, and reverse positions are
+covered for every distance.  This is a complete mutation of the bounded route
+shape family, not 4,900 mutations sampled from the emitted volume word.
+Arbitrary/entangled transit restoration, operand
 order, nearest-neighbour routing, and code-safe reorder checks have zero
 failures.  A carrier-only negative control is active: it omits 1,624, 6,783,
 17,768, and 36,775 required route sites at L2--L5.  This rejects only the
@@ -236,9 +260,12 @@ transport.  Its validation-failure list is empty.
 
 The independent chronological encoder checker likewise imports only the
 byte-pinned root atlas and landed dependencies.  It independently emits all
-seven stages and matches 28 frozen target fields exactly.  Its L2/L3 primitive
-and routed gate counts, controller chronology, ranks, transit censuses, and
-proper-cubic checks all agree with the primary.
+seven stages, reconstructs local matrices using the substrate's little-endian
+wire convention, and compares against frozen target metrics.  More
+importantly, it independently rebuilds the complete-lawful-domain controller
+ANFs, correction incidence maps, unique-vacuum ranks, signed loader identities,
+and returned-SWAP conjugation certificate.  Every L2/L3 emitted-isometry
+failure field is zero.
 
 It also falsifies a stronger deletion claim.  On the lawful clean domain, 8
 L2 and 20 L3 root-child `parent-XOR` Toffolis are redundant.  Exact execution
@@ -248,11 +275,14 @@ semantic occurrence is essential.  Separately, all 15 Toffoli-decomposition
 and 17 CCZ-decomposition subgate deletions are active, with minimum residual
 `1.5307337294603587`.
 
-The primary check/correction/loader deletion fields are sensitivity censuses;
+The repaired check, loader, router, Toffoli, and CCZ semantic certificates all
+have active subgate mutations.  The primary aggregate
+check/correction/loader deletion fields are sensitivity censuses;
 they are not promoted to an executed deletion of every such gate.  The joined
 route checks delete the first forward SWAP of eligible macros, whereas the
-independent fixed-schedule checker performs the complete 4,900-position route
-deletion suite.  This distinction is preserved in the receipts.
+independent fixed-schedule checker performs the complete 4,900-position
+symbolic route-shape deletion suite.  This distinction is preserved in the
+receipts.
 
 ## Supplied, derived, and open
 
@@ -275,7 +305,8 @@ Cycle-870-derived:
 - preparation of the local `+1` OpenReference code sector from the supplied
   clean physical domain;
 - the exact recurrent coin/reverse/seam/contact update and all-vector
-  intertwiner, including its scalar convention;
+  intertwiner, with a formal vector-representative scalar convention distinct
+  from the executable physical channel;
 - bounded carrier, persistent-auxiliary, and transit-substrate formulas;
 - two independent volume-independent schedules for recurrent `G`;
 - exact two-overlapping-star consistency, held-size checks, and 24/576
@@ -335,7 +366,7 @@ Accordingly no route-independent obstruction survives this cycle.  The open
 items listed above are supplied interfaces for future construction, not negative
 physics conclusions.
 
-## TOE dependency effect and fixed-rubric lane scores
+## TOE dependency effect
 
 | campaign ledger coordinate | Cycle-870 effect |
 |---|---|
@@ -346,24 +377,10 @@ physics conclusions.
 | `C_local` | major constructive closure: bounded physical carrier, auxiliary constraints, transit capacity, overlapping-star consistency, exact `E G` intertwining, held sizes, and 24/576 covariance; autonomous `E` admission/renewal and periodic topology remain open |
 | `C_source` | unchanged: no source identification, reciprocal response, conserved resource, backreaction, or gravity law is derived |
 
-Scores use the campaign's fixed rubric.  Evidence ceiling is a reachability
-estimate, not progress.
-
-| TOE lane | repo-side science | verified physical-M2 bridge | end-to-end autonomous closure | evidence ceiling |
-|---|---:|---:|---:|---:|
-| operational quantum / Records | 97% | 98% | 73% | 99% |
-| causal time | 77% | 76% | 45% | 99% |
-| inertia / matter | 95% | 99% | **97%** | 99% |
-| gravity / source / resources | 77% | 45% | 29% | 94% |
-| Born probability / realized history | 90% | 66% | 36% | 99% |
-
-The inertia/matter autonomous score rises from 96% to 97% because the
-candidate now has a cold-replayed exact encoder/update equation on one common
-physical bank and two independently fixed recurrent-`G` schedules.  It does
-not rise further because physical genesis/admission/renewal and the downstream
-matter-caused endpoint bridge remain supplied or unexecuted.  No other lane
-score changes: compilation and packaging do not substitute for the missing
-time, source/gravity, Record, or Born laws.
+Campaign percentages are intentionally kept out of this theorem surface.
+They are project-management estimates rather than theorem outputs.  This note
+records only the dependency changes above; audit retention and later lane
+scoring must evaluate the executable evidence independently.
 
 ## Breakthrough log and novelty boundary
 
@@ -382,6 +399,9 @@ Scientifically interesting positives within the framework:
 Scientifically useful negatives/qualifications:
 
 - hostile spent replay proves the present `E` is one-invocation only;
+- semantic review exposed and repaired a big-endian convention in the former
+  independent encoder checker; the authoritative substrate gate matrices are
+  little-endian and are now compared directly;
 - 28 root-child parent-XOR Toffolis are redundant on the tested lawful clean
   domains, preventing a false per-occurrence deletion claim; and
 - carrier-only execution misses thousands of route sites, while explicit
@@ -396,6 +416,15 @@ cross-lane interfaces close and reach a prediction without discretionary
 law choices.
 
 ## Reproduction
+
+The primary executable is the
+[joined recurrent compiler](../scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py).
+Its explicit helper/independent runners are the
+[physical placement runner](../scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py),
+[native update runner](../scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py),
+[independent ordered-update checker](../scripts/frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py),
+[independent emitted-encoder checker](../scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py),
+and [independent fixed-route checker](../scripts/frontier_cycle870_openreference_fixed_route_schedule_independent_check_2026_08_02.py).
 
 From the repository root run, in order:
 
@@ -422,12 +451,12 @@ INDEPENDENT_FIXED_MOD3_ROUTE_SCHEDULE_PASS
 Cold package hashes before the citation manifest are:
 
 ```text
-e31501b599f5ea81838320bc103a11225c95d1593d44becd1fe2701e3b5ab0ce  placement runner
-df5809cb74e5ff6bae1fa125094dbeae4f356bf2114a3944a9227365ae574237  native-update runner
-25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5  joined compiler runner
-c7bfa021bbc16357a1c01376a869e55c94da68b20c7f4cfac0b19311971bc960  independent update checker
-49be3d479b0adfb0825442af2b82fc24418f75b90bc62c0a1d7795e58f494ae3  independent encoder checker
-807428ecabc6757b74b6d8aa94f1c0a5d31d406c6f50649cf657b0ad19206931  independent schedule checker
+64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2  placement runner
+687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237  native-update runner
+81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457  joined compiler runner
+61adc5c70f116daf58c583c892eb6ecebd4d7d6872e341dc578c22599e4c0a92  independent update checker
+d11791df361c719041bba7dbda9bacbfb3a6a0e2790c2f2e71d16eda04c029fe  independent encoder checker
+74616bc16fc5329cb9cb6055a1e1f73f045350137d3eb2ecb158552aeb66e998  independent schedule checker
 ```
 
 All six cold runs pass: the three primary `failures` lists and the three

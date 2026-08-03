@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle864_laws_in_record_time_2026_07_28.py
+runner_sha256: 3c353b112f87aa41adde6380fcde147427f0d3f16130aadd97a8119f6dfa8e4c
+input_fingerprint_sha256: b7bb1a8c982c75bfa8e55936a2462290cbcc1355d133a5791c391afc96fd0b64
+timeout_sec: 1400
+exit_code: 0
+elapsed_sec: 117.71
+status: ok
+----- stdout -----
+CYCLE864_LAWS_IN_RECORD_TIME
+OWNER_DIRECTED_SEAM_CLOSURE_NO_AXIOM_SURFACE_TOUCHED
+CERTIFICATE A_MOMENT_LAW_IN_RECORD_AGE PASS {"certificate":"A_MOMENT_LAW_IN_RECORD_AGE","multi_member_cohorts":15,"multi_member_rows":[{"moment":0,"rungs":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"size":24,"spread":0},{"moment":36,"rungs":[4,5,6,7,8,9],"size":6,"spread":5},{"moment":44,"rungs":[2,3,4],"size":3,"spread":2},{"moment":45,"rungs":[2,3,4],"size":3,"spread":2},{"moment":61,"rungs":[10,11],"size":2,"spread":1},{"moment":66,"rungs":[4,5,6,7,8],"size":5,"spread":4},{"moment":424,"rungs":[10,11],"size":2,"spread":1},{"moment":443,"rungs":[4,5,6,7,8],"size":5,"spread":4},{"moment":1224,"rungs":[50,51],"size":2,"spread":1},{"moment":1225,"rungs":[50,51],"size":2,"spread":1}],"pass":true,"record_age_cohort_sizes":{"1":34,"2":13,"3":10,"4":13,"5":9,"6":9,"7":4,"8":3,"10":3,"11":3,"50":2,"51":2,"53":2},"rung_censored":0,"scheduler_cohorts_total":44,"stamped_with_rung":114,"verdict":"MOMENT_LAW_TRANSFORMS","within_cohort_spread_histogram":{"0":30,"1":4,"2":4,"4":5,"5":1}}
+CERTIFICATE B_RECORD_TIME_PERIODICITY PASS {"aperiodic_within_store":40,"certificate":"B_RECORD_TIME_PERIODICITY","declared_sample":{"cap":4096,"lanes":48,"min_events":64},"events_per_orbit_rate_top":[{"keys":25,"rate":0.02},{"keys":3,"rate":1.5},{"keys":2,"rate":0.04},{"keys":2,"rate":1.23},{"keys":2,"rate":0.74},{"keys":1,"rate":1.51}],"eventually_periodic":8,"pass":true,"period_law_rows_top":[{"events_per_period":9,"keys":1,"scheduler_span":66},{"events_per_period":5,"keys":1,"scheduler_span":22},{"events_per_period":6,"keys":1,"scheduler_span":22},{"events_per_period":3,"keys":1,"scheduler_span":44},{"events_per_period":4,"keys":1,"scheduler_span":44},{"events_per_period":5,"keys":1,"scheduler_span":44},{"events_per_period":6,"keys":1,"scheduler_span":44},{"events_per_period":7,"keys":1,"scheduler_span":44}],"verdict":"MIXED"}
+CERTIFICATE C_TIMELESS_SECTOR PASS {"certificate":"C_TIMELESS_SECTOR","never_clean_worlds":566,"pass":true,"set_but_unstamped_worlds":68,"statement":"laws about never-clean worlds (incl. the depth-0 trios and the zero-record cycles) have NO record-time expression: in the formation-is-the-tick reading these are timeless worlds and their regularities (meets, marks, state periods) are gauge-layer content by scope, not failed reductions"}
+CERTIFICATE D_B_AXIS_CONTACT PASS {"certificate":"D_B_AXIS_CONTACT","discharge_condition":"B-AXIS discharges (premise -> derived) iff the evolution axis is CONSTITUTED by the record order: (i) the landed temporal laws restate in record-time coordinates (certificates A/B here), and (ii) the axis admits no second record-clock (the single-clock content) \u2014 condition (ii) is untested here and remains the open leg","pass":true,"premise":"ANOMALY_FORCES_TIME_THEOREM B-AXIS: one supplied blocked time step, one declared evolution axis, no admitted second clock; the theorem itself states 'No step defines time via the anomaly'","what_this_cycle_contributes":"A and B are the (i)-leg evidence; C scopes the gauge remainder; the (ii)-leg needs the scaled-bank construction"}
+SUMMARY_JSON {"checks":{"A_MOMENT_LAW_IN_RECORD_AGE":true,"B_RECORD_TIME_PERIODICITY":true,"C_TIMELESS_SECTOR":true,"D_B_AXIS_CONTACT":true,"E_CONTROLS":true},"cycle":864,"pass":true,"runtime_seconds":117.11,"verdict_A":"MOMENT_LAW_TRANSFORMS","verdict_B":"MIXED"}
+CYCLE864_LAWS_IN_RECORD_TIME_PASS
+
+----- stderr -----
+

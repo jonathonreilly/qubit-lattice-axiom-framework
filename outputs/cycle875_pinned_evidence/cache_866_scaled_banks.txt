@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle866_scaled_banks_2026_07_28.py
+runner_sha256: acabf4e0df9d2290842eb94599f19e2a7ea4a99dd7729905896feddb3c6822cc
+timeout_sec: 1400
+exit_code: 0
+elapsed_sec: 178.409
+status: ok
+----- stdout -----
+CYCLE866_SCALED_BANKS
+OWNER_DIRECTED_RUN_TO_GROUND_NO_AXIOM_SURFACE_TOUCHED
+DECLARED_PROBE events=(0, 1) k=2 horizon=8192 store_cap=1024
+CERTIFICATE B3_RESULTS PASS {"birth_datum":{"cohort_member_rows":38,"gauge_e1_functional":false,"gauge_stats":null,"native_pattern_functional":false,"native_stats":null,"offset_histogram":{"0":6,"1":4,"2":5,"3":5,"4":4,"5":4,"6":4,"7":4,"8":2}},"derived_clock":{"B":3,"allsync_on_tick_fraction":0.058037,"allsync_stored":38010,"census_size":304,"first_allsync_equals_e2":"0/38","stamped_e1":60,"stamped_e2":38,"stations":19},"mismatches":0,"second_clock":{"distinct_pair_cadence_signatures":3,"pair_dominant_gaps":{"(0, 1)":[[1,62061],[3,2888],[2,2136]],"(0, 2)":[[1,98610],[5,5857],[4,4446]],"(1, 2)":[[1,99224],[2,3601],[11,3029]]},"pair_on_tick_fractions":{"(0, 1)":0.0537,"(0, 2)":0.0612,"(1, 2)":0.0515}}}
+CERTIFICATE B4_RESULTS PASS {"birth_datum":{"cohort_member_rows":70,"gauge_e1_functional":false,"gauge_stats":null,"native_pattern_functional":false,"native_stats":null,"offset_histogram":{"0":6,"1":4,"2":5,"3":5,"4":4,"5":4,"6":4,"7":4,"8":4,"9":4,"10":4,"11":4,"12":4,"13":4,"14":4,"15":4,"16":2}},"derived_clock":{"B":4,"allsync_on_tick_fraction":0.048992,"allsync_stored":110917,"census_size":648,"first_allsync_equals_e2":"0/70","stamped_e1":107,"stamped_e2":70,"stations":27},"mismatches":0,"second_clock":{"distinct_pair_cadence_signatures":6,"pair_dominant_gaps":{"(0, 1)":[[1,247354],[29,2769],[6,2591]],"(0, 2)":[[1,306585],[3,11689],[5,11246]],"(0, 3)":[[1,364528],[5,9180],[4,7083]],"(1, 2)":[[1,297280],[2,5121],[3,3004]],"(1, 3)":[[1,365331],[2,9368],[4,7273]],"(2, 3)":[[1,523151],[2,4597],[3,1819]]},"pair_on_tick_fractions":{"(0, 1)":0.0408,"(0, 2)":0.04,"(0, 3)":0.036,"(1, 2)":0.0385,"(1, 3)":0.0375,"(2, 3)":0.0379}}}
+SUMMARY_JSON {"checks":{"A_SCALED_SUBSTRATE":true,"B_DERIVED_CLOCK_AT_SCALE":true,"C_SECOND_CLOCK_TEST":true,"D_BIRTH_DATUM_INTRINSIC":true,"E_CONTROLS":true},"cycle":866,"native_functional_by_B":{"3":false,"4":false},"on_tick_by_B":{"3":0.058037,"4":0.048992},"pass":true,"runtime_seconds":178.409}
+CYCLE866_SCALED_BANKS_PASS

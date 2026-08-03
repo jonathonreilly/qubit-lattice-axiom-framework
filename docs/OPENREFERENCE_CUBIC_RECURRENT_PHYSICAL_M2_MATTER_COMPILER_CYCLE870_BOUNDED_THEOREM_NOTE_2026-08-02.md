@@ -8,6 +8,9 @@
 
 **Audit:** unset
 
+**Primary runner:**
+[Cycle-870 cold package acceptance](../scripts/frontier_cycle870_openreference_package_acceptance_2026_08_02.py)
+
 **Result scope:** positive recurrent matter update after one supplied
 clean-domain encoding invocation
 
@@ -54,7 +57,7 @@ encoder and the complete free-plus-contact update on the same M2 carrier bank
 without a global Jordan--Wigner string or host parity service.  It is not a
 general fermion-encoding novelty claim.
 
-## Direct landed inputs
+## Direct supplied inputs
 
 - the [Cycle-219 `beta=-0.3` one-particle coin/mass](work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md)
   and [Cycle-230 `g=0.37` contact](work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md)
@@ -117,6 +120,9 @@ by a declared boolean.  The literal extraction macros conjugate each syndrome
 `Z` into the signed physical check; the triangle, coarse, and bond correction
 incidence maps have zero residual; and the physical constraints plus all
 logical `Z` rows have unique-vacuum ranks `180/180` and `648/648`.  The
+clean-carrier premise checks those logical `Z` rows explicitly, and every
+physical stream-`Z`/coarse-plaquette commutator column equals the same box
+incidence column consumed by the controller ANF.  The
 controller is executed symbolically over the complete lawful syndrome image
 with one Boolean indeterminate per coarse edge.  Its correction and work ANFs
 have zero residual and maximum degree one.  Finally the literal signed
@@ -290,8 +296,8 @@ Supplied:
 
 - finite open cubic `L=2` or `L=3` boundary, spacing-16 origin, transported
   proper-cubic coframe, incident-edge gauge, and serial `E/G` factor order;
-- one clean raw-input/syndrome/work/controller genesis domain with every root
-  in `fresh=1, token=spent=0`;
+- one arbitrary raw-input bank tensor a clean carrier/syndrome/work/controller
+  genesis domain with every root in `fresh=1, token=spent=0`;
 - Cycle-703 check, decoder, loader, echo-forest, and one-invocation semantics;
 - the OpenReference constraint grammar and target `+1` sector definition;
 - Cycle-219 `beta=-0.3` and Cycle-230 `g=0.37`; and
@@ -336,8 +342,8 @@ autonomous preparation law is impossible.
 |---|---|---|
 | seven cell-parity bits | route-specific negative from Cycle 657 | 74,400 of 83,244 branch-term pairs mismatch at L5 and held L6; this rejects that feature set only |
 | endpoint-incidence qutrit | exact sign/constraint positive from Cycle 658 | zero errors on all 83,244 L5/L6 cases and exact 24/576 cocycle; coherent extraction and recurrent physical execution were then open |
-| transient companion/global-order chart | bounded partial positive through Cycle 868 | local two-cell action closes, but the supplied global order chart and transient preparation are not the present recurrent code |
-| direct Cycle-789 target-chart substitution | bounded partial positive in Cycle 869 | one seam and two-star transport close; nonzero primary/held Gram differences reject only literal substitution into that target chart |
+| transient companion/global-order chart | bounded partial positive through [Cycle 868](TRANSIENT_TWO_CELL_COMPANION_ENCODER_GLOBAL_ORDER_CHART_BOUNDARY_CYCLE868_BOUNDED_THEOREM_NOTE_2026-08-02.md) | local two-cell action closes, but the supplied global order chart and transient preparation are not the present recurrent code |
+| direct Cycle-789 target-chart substitution | bounded partial positive in [Cycle 869](BOUNDED_TWO_STAR_BKSF_CYCLE789_TARGET_CHART_BRIDGE_CYCLE869_BOUNDED_THEOREM_NOTE_2026-08-02.md) | one seam and two-star transport close; nonzero primary/held Gram differences reject only literal substitution into that target chart |
 | local OpenReference gauge/auxiliary route | positive here | exact one-shot `E` plus recurrent full `G` on open cubes, with explicit genesis/admission/topology conditions |
 | staggered/fixed scheduling | positive for recurrent `G` | independent mod-three and mod-four schedules close without host-volume enumeration; autonomous scheduling of one-time `E` remains open |
 
@@ -347,7 +353,7 @@ No route-specific failure is promoted to constitutional evidence.
 
 Cycle 870 makes no no-go, minimum-content, shared-obstruction, or axiom-pressure
 claim.  The N1 route scan finds live alternatives to autonomous encoder
-renewal: the Cycle-719 local refusal, one-marker, and two-rail mechanisms, plus
+renewal: the [Cycle-719 local refusal, one-marker, and two-rail mechanisms](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md), plus
 an untested alternating reset rail, entropy export, and periodic local-gauge
 preparation.  Those alternatives prevent negative promotion; they are not
 presented as failed routes or as a count of independent walls.
@@ -417,7 +423,10 @@ law choices.
 
 ## Reproduction
 
-The primary executable is the
+The audit entry point is the
+[cold package-acceptance harness](../scripts/frontier_cycle870_openreference_package_acceptance_2026_08_02.py),
+which reruns and hash-checks every source below.  The primary physical
+executable is the
 [joined recurrent compiler](../scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py).
 Its explicit helper/independent runners are the
 [physical placement runner](../scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py),
@@ -435,6 +444,7 @@ python3 -B scripts/frontier_cycle870_openreference_joined_recurrent_compiler_202
 python3 -B scripts/frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py
 python3 -B scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py
 python3 -B scripts/frontier_cycle870_openreference_fixed_route_schedule_independent_check_2026_08_02.py
+python3 -B scripts/frontier_cycle870_openreference_package_acceptance_2026_08_02.py
 ```
 
 Expected terminal markers are, respectively:
@@ -446,6 +456,7 @@ OPENREFERENCE_JOINED_CUBE_PASS
 INDEPENDENT_OPENREFERENCE_RECONSTRUCTION_PASS
 INDEPENDENT_CHRONOLOGICAL_E_EXACTNESS_PASS_WITH_QUALIFICATIONS
 INDEPENDENT_FIXED_MOD3_ROUTE_SCHEDULE_PASS
+CYCLE870_PACKAGE_ACCEPTANCE_PASS
 ```
 
 Cold package hashes before the citation manifest are:
@@ -453,14 +464,16 @@ Cold package hashes before the citation manifest are:
 ```text
 64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2  placement runner
 687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237  native-update runner
-81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457  joined compiler runner
-61adc5c70f116daf58c583c892eb6ecebd4d7d6872e341dc578c22599e4c0a92  independent update checker
-d11791df361c719041bba7dbda9bacbfb3a6a0e2790c2f2e71d16eda04c029fe  independent encoder checker
-74616bc16fc5329cb9cb6055a1e1f73f045350137d3eb2ecb158552aeb66e998  independent schedule checker
+1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd  joined compiler runner
+49d76550de2d1d44adb2703be0ce7d3bc1ebfdc4914c8eee0413b29ad8dc8af9  independent update checker
+6ae587e6bd8769e0b6880199d7a95023649464f625211bcb0530c21634a7e3ab  independent encoder checker
+7d2a074dda9bf89566895c7df99de32a675e0ba0706304f4db964d2f053cbdbd  independent schedule checker
+d69857a709e73dec059fd1de943fb866930c02231dac9f191e65f72e214900d9  package acceptance harness
 ```
 
-All six cold runs pass: the three primary `failures` lists and the three
-independent `validation_failures` lists are empty.  The chronological encoder
+All six component cold runs and the package-acceptance harness pass: the three
+primary `failures` lists and the three independent `validation_failures` lists
+are empty.  The chronological encoder
 receipt separately records `verification_status:
 pass_with_deletion_and_domain_qualifications` and false per-occurrence deletion
 completeness.

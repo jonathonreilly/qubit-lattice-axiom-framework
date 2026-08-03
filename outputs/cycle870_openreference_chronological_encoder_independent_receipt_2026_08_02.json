@@ -2,7 +2,7 @@
   "artifact": {
     "cold_command": "python3 scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py",
     "path": "scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py",
-    "sha256": "d11791df361c719041bba7dbda9bacbfb3a6a0e2790c2f2e71d16eda04c029fe"
+    "sha256": "6ae587e6bd8769e0b6880199d7a95023649464f625211bcb0530c21634a7e3ab"
   },
   "chronology": [
     "triangle_syndrome",
@@ -224,6 +224,7 @@
             "Z": 2.8284271247461903
           }
         },
+        "coarse_physical_incidence_columns_checked": 12,
         "controller_complete_ANF_certificate": {
           "coarse_check_bits": 6,
           "complete_lawful_domain_exact": true,
@@ -250,6 +251,7 @@
           "check_macro_failures": 0,
           "check_support_atlas_failures": 0,
           "coarse_controller_ANF_failures": 0,
+          "coarse_physical_incidence_failures": 0,
           "controller_local_decomposition_failures": 0,
           "cycle_check_commutator_failures": 0,
           "extraction_preservation_failures": 0,
@@ -670,6 +672,7 @@
             "Z": 2.8284271247461903
           }
         },
+        "coarse_physical_incidence_columns_checked": 54,
         "controller_complete_ANF_certificate": {
           "coarse_check_bits": 36,
           "complete_lawful_domain_exact": true,
@@ -696,6 +699,7 @@
           "check_macro_failures": 0,
           "check_support_atlas_failures": 0,
           "coarse_controller_ANF_failures": 0,
+          "coarse_physical_incidence_failures": 0,
           "controller_local_decomposition_failures": 0,
           "cycle_check_commutator_failures": 0,
           "extraction_preservation_failures": 0,
@@ -856,8 +860,8 @@
         "mismatches": {}
       }
     ],
-    "frozen_receipt_sha256": "cb7a8892649d41ea1c4fe6cf4ddb8ec8678356932f063a74ea775179df77ba1b",
-    "frozen_source_sha256": "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457",
+    "frozen_receipt_sha256": "d6be75419b1fab56853127d55730b63a23ef7d44205e66b7fa73c9f19aac8611",
+    "frozen_source_sha256": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
     "mismatch_keys": [],
     "target_failures": [],
     "target_status": "pass",
@@ -873,8 +877,8 @@
       "frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py": "5dab64cd17ead6cb5062eab9266b9206d74bb608dcc22f3a1132ee1f1af3e9a9",
       "frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
     },
-    "frozen_joined_receipt_sha256": "cb7a8892649d41ea1c4fe6cf4ddb8ec8678356932f063a74ea775179df77ba1b",
-    "frozen_joined_target_sha256": "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457",
+    "frozen_joined_receipt_sha256": "d6be75419b1fab56853127d55730b63a23ef7d44205e66b7fa73c9f19aac8611",
+    "frozen_joined_target_sha256": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
     "joint_probe_imported": false,
     "root_sha256": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
     "root_source": "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",

@@ -36,7 +36,7 @@
     "eliminations": 14,
     "reconstruction_residual": 9.774239351035397e-16
   },
-  "content_sha256_before_hash_field": "77465049ebe358c85331fc4aacab87da6f36a878b75b0a70b03bb0a57c6ee16d",
+  "content_sha256_before_hash_field": "59d8163ac8c8b64fe602a46d6544adf455dab9775e781546da4d22f8f92ad974",
   "failures": [],
   "fixtures": [
     {
@@ -157,6 +157,7 @@
           "the frozen zero-site scalar cancels the compiled word's checked relative phase",
           "induction in the frozen serial factor order yields the displayed exact equality"
         ],
+        "raw_relative_phase_nonzero": true,
         "routed_rotation_word_without_scalar_is_projective_only": true
       },
       "inventory": {
@@ -510,6 +511,7 @@
             "phase_statement": "the semantic word is a computational-basis permutation followed only by the displayed token/value-controlled Z corrections; exact Toffoli, CCZ, and router decompositions introduce no residual scalar",
             "proof_domain": "complete image of the coarse edge-to-plaquette boundary map"
           },
+          "coarse_physical_incidence_columns_checked": 12,
           "emitted_E_isometry_exact_on_declared_clean_domain": true,
           "failure_census": {
             "Z_correction_preservation_failures": 0,
@@ -517,6 +519,7 @@
             "check_macro_failures": 0,
             "check_support_atlas_failures": 0,
             "coarse_controller_ANF_failures": 0,
+            "coarse_physical_incidence_failures": 0,
             "controller_decomposition_failures": 0,
             "cycle_check_commutator_failures": 0,
             "extraction_preservation_failures": 0,
@@ -945,6 +948,7 @@
           "the frozen zero-site scalar cancels the compiled word's checked relative phase",
           "induction in the frozen serial factor order yields the displayed exact equality"
         ],
+        "raw_relative_phase_nonzero": true,
         "routed_rotation_word_without_scalar_is_projective_only": true
       },
       "inventory": {
@@ -1340,6 +1344,7 @@
             "phase_statement": "the semantic word is a computational-basis permutation followed only by the displayed token/value-controlled Z corrections; exact Toffoli, CCZ, and router decompositions introduce no residual scalar",
             "proof_domain": "complete image of the coarse edge-to-plaquette boundary map"
           },
+          "coarse_physical_incidence_columns_checked": 54,
           "emitted_E_isometry_exact_on_declared_clean_domain": true,
           "failure_census": {
             "Z_correction_preservation_failures": 0,
@@ -1347,6 +1352,7 @@
             "check_macro_failures": 0,
             "check_support_atlas_failures": 0,
             "coarse_controller_ANF_failures": 0,
+            "coarse_physical_incidence_failures": 0,
             "controller_decomposition_failures": 0,
             "cycle_check_commutator_failures": 0,
             "extraction_preservation_failures": 0,
@@ -1765,7 +1771,7 @@
     "root_placement_receipt_sha256": "ab2d980726e336221e49808b6edcfaaae802173ee2f00fe96d8d55a4f2c6899d",
     "root_placement_source": "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
     "root_placement_source_sha256": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
-    "this_source_sha256": "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457"
+    "this_source_sha256": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd"
   },
   "status": "pass"
 }

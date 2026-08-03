@@ -35,12 +35,12 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 REPO_DEFAULT = HERE.parent
 PRIOR_SOURCE = HERE / "frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py"
-PRIOR_EXPECTED_SHA256 = "61adc5c70f116daf58c583c892eb6ecebd4d7d6872e341dc578c22599e4c0a92"
+PRIOR_EXPECTED_SHA256 = "49d76550de2d1d44adb2703be0ce7d3bc1ebfdc4914c8eee0413b29ad8dc8af9"
 NATIVE_TARGET = HERE / "frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py"
 JOINED_TARGET = HERE / "frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py"
 ROOT_E_TARGET = HERE / "frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py"
 FROZEN_NATIVE_TARGET_SHA256 = "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237"
-FROZEN_JOINED_TARGET_SHA256 = "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457"
+FROZEN_JOINED_TARGET_SHA256 = "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd"
 FROZEN_ROOT_E_TARGET_SHA256 = "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2"
 EXPECTED_DIRECT_INPUT_SHA256 = {
     "common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",

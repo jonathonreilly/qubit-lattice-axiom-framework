@@ -1,0 +1,105 @@
+{
+  "artifact": {
+    "method": "cold dependency-ordered execution of every registered Cycle-870 runner",
+    "path": "scripts/frontier_cycle870_openreference_package_acceptance_2026_08_02.py",
+    "sha256": "d69857a709e73dec059fd1de943fb866930c02231dac9f191e65f72e214900d9"
+  },
+  "claim_boundary": "This harness certifies package execution, pins, and receipt semantics. It adds no physical law and does not upgrade the bounded theorem scope.",
+  "content_sha256_before_hash_field": "d325ca142064b8bc08f40f20b4c70bb70e2f5de8b702a652ff0c424ccd8cb016",
+  "package_acceptance_pass": true,
+  "runner_rows": [
+    {
+      "executed": true,
+      "expected_receipt_sha256": "ab2d980726e336221e49808b6edcfaaae802173ee2f00fe96d8d55a4f2c6899d",
+      "expected_source_sha256": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+      "name": "placement",
+      "receipt": "outputs/cycle870_openreference_physical_m2_placement_receipt_2026_08_02.json",
+      "receipt_sha256": "ab2d980726e336221e49808b6edcfaaae802173ee2f00fe96d8d55a4f2c6899d",
+      "returncode": 0,
+      "semantic_failure_count": 0,
+      "source": "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+      "source_sha256": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+      "terminal_marker": "OPENREFERENCE_PHYSICAL_PLACEMENT_PASS",
+      "terminal_marker_seen": true
+    },
+    {
+      "executed": true,
+      "expected_receipt_sha256": "b1c812afbf25b84b99a5d171cf7925ffc86272e52c252c5f7ee68cb9f5a76807",
+      "expected_source_sha256": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+      "name": "native_update",
+      "receipt": "outputs/cycle870_openreference_native_recurrent_update_receipt_2026_08_02.json",
+      "receipt_sha256": "b1c812afbf25b84b99a5d171cf7925ffc86272e52c252c5f7ee68cb9f5a76807",
+      "returncode": 0,
+      "semantic_failure_count": 0,
+      "source": "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py",
+      "source_sha256": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+      "terminal_marker": "OPENREFERENCE_NATIVE_UPDATE_PASS",
+      "terminal_marker_seen": true
+    },
+    {
+      "executed": true,
+      "expected_receipt_sha256": "d6be75419b1fab56853127d55730b63a23ef7d44205e66b7fa73c9f19aac8611",
+      "expected_source_sha256": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
+      "name": "joined_compiler",
+      "receipt": "outputs/cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json",
+      "receipt_sha256": "d6be75419b1fab56853127d55730b63a23ef7d44205e66b7fa73c9f19aac8611",
+      "returncode": 0,
+      "semantic_failure_count": 0,
+      "source": "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py",
+      "source_sha256": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
+      "terminal_marker": "OPENREFERENCE_JOINED_CUBE_PASS",
+      "terminal_marker_seen": true
+    },
+    {
+      "executed": true,
+      "expected_receipt_sha256": "f3fa00ade5696bf3061a2bedc776a910ad801e6bef28a7558f1a3f07ab7a813f",
+      "expected_source_sha256": "49d76550de2d1d44adb2703be0ce7d3bc1ebfdc4914c8eee0413b29ad8dc8af9",
+      "name": "independent_update",
+      "receipt": "outputs/cycle870_openreference_recurrent_update_independent_receipt_2026_08_02.json",
+      "receipt_sha256": "f3fa00ade5696bf3061a2bedc776a910ad801e6bef28a7558f1a3f07ab7a813f",
+      "returncode": 0,
+      "semantic_failure_count": 0,
+      "source": "scripts/frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py",
+      "source_sha256": "49d76550de2d1d44adb2703be0ce7d3bc1ebfdc4914c8eee0413b29ad8dc8af9",
+      "terminal_marker": "INDEPENDENT_OPENREFERENCE_RECONSTRUCTION_PASS",
+      "terminal_marker_seen": true
+    },
+    {
+      "executed": true,
+      "expected_receipt_sha256": "dfedebd2cc790cadd692bb323b2578b830dc800938e90b60aa2739216cde5308",
+      "expected_source_sha256": "6ae587e6bd8769e0b6880199d7a95023649464f625211bcb0530c21634a7e3ab",
+      "name": "independent_encoder",
+      "receipt": "outputs/cycle870_openreference_chronological_encoder_independent_receipt_2026_08_02.json",
+      "receipt_sha256": "dfedebd2cc790cadd692bb323b2578b830dc800938e90b60aa2739216cde5308",
+      "returncode": 0,
+      "semantic_failure_count": 0,
+      "source": "scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py",
+      "source_sha256": "6ae587e6bd8769e0b6880199d7a95023649464f625211bcb0530c21634a7e3ab",
+      "terminal_marker": "INDEPENDENT_CHRONOLOGICAL_E_EXACTNESS_PASS_WITH_QUALIFICATIONS",
+      "terminal_marker_seen": true
+    },
+    {
+      "executed": true,
+      "expected_receipt_sha256": "87d8a95f305c4adaa1feadc051df2d9ac89ee8adc93534f783922bc29cec1b8f",
+      "expected_source_sha256": "7d2a074dda9bf89566895c7df99de32a675e0ba0706304f4db964d2f053cbdbd",
+      "name": "independent_schedule",
+      "receipt": "outputs/cycle870_openreference_fixed_route_schedule_independent_receipt_2026_08_02.json",
+      "receipt_sha256": "87d8a95f305c4adaa1feadc051df2d9ac89ee8adc93534f783922bc29cec1b8f",
+      "returncode": 0,
+      "semantic_failure_count": 0,
+      "source": "scripts/frontier_cycle870_openreference_fixed_route_schedule_independent_check_2026_08_02.py",
+      "source_sha256": "7d2a074dda9bf89566895c7df99de32a675e0ba0706304f4db964d2f053cbdbd",
+      "terminal_marker": "INDEPENDENT_FIXED_MOD3_ROUTE_SCHEDULE_PASS",
+      "terminal_marker_seen": true
+    }
+  ],
+  "static_audit_helper_modules": [
+    "frontier_cycle870_openreference_physical_m2_placement_2026_08_02",
+    "frontier_cycle870_openreference_native_recurrent_update_2026_08_02",
+    "frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02",
+    "frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02",
+    "frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02",
+    "frontier_cycle870_openreference_fixed_route_schedule_independent_check_2026_08_02"
+  ],
+  "validation_failures": []
+}

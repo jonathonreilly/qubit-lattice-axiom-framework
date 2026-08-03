@@ -1,98 +1,39 @@
 {
-  "AUDIT_INPUT_PATHS": [
-    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
-    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py",
-    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
-    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py"
-  ],
-  "census_stream_sha256": {
-    "LANDED_cycle320_unit_grading": "30f4c411076a12bc36ce6b0f4ca30c9386610d8b37432d93079d0a9b45368c38",
-    "WITNESS_cycle318_coefficient_two": "ce2bfd16f49bf619e46aa8457926b84cb63e54b25cc6501497ba6f5c8d6b3133"
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); worker conjecture refuted by its own sweep, recorded; supervisor review",
+ "block": "toe-time-blockG4-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "checker_attacks": {
+  "landed": 0,
+  "mounted": 5,
+  "notable": "occupancy sweep STRENGTHENED the result (unit-weight tracelessness is occupancy-independent)"
+ },
+ "claim_type": "bounded_theorem",
+ "cluster_cap_evaluation": "OPEN \u2014 4th gravity-family PR: the conservation-defect identity, the lawful grading segment, and the landed trace-bearing witness with full census are new load-bearing content; highest marginal review value of the ladder (names the wall's single supplied premise)",
+ "conditional_exposure": "the 868/872 sign-invisibility wall is conditional on the supplied unit sector grading (1,1,1); closing derivation target named",
+ "cycles": [
+  873
+ ],
+ "files": {
+  "docs/TRACELESSNESS_PROVENANCE_CYCLE873_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "8f920a0c2b9dbbd704fb51b495b5e4d49e258d1e",
+   "sha256": "143063ef386a550c6e5c564d0c8a59b580bc31fd86689101363949024d034b43"
   },
-  "cycle": 873,
-  "escape_a_status": "OPEN",
-  "expected_git_blobs": {
-    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py": "c64dd97a3034ccbedc2603db4dacc1c80acfd952",
-    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "0be8d83ec8ed874ff12e2092dc47121b8030a5bc",
-    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py": "7672380148d79f22a4ab9b2700121aac1b097004",
-    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0"
+  "scripts/frontier_cycle873_provenance_independent_check_2026_07_28.py": {
+   "git_blob": "0601c96056a19de2e2eda5606b16cd4bdadda80e",
+   "sha256": "3ef67fcb0509a482c3098be8c3e4037b5c90f08f2fc9422a13062c05dd28e1b4"
   },
-  "expected_sha256": {
-    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py": "e09226e35a58cd52e2d4f61516f6e2a64cdebb7f4c20893307a1f3d2ff3f4ebb",
-    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
-    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py": "3c1575c99622c0874ab42730494d615fbe1a2b867975e5bf048fd2a4a8af9d56",
-    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"
-  },
-  "landed_ledger_coefficients": [
-    -2,
-    1,
-    1
-  ],
-  "landed_support_lawful_grading_locus": [
-    "(1,0,2)",
-    "(1,1/2,3/2)",
-    "(1,1,1)",
-    "(1,3/2,1/2)",
-    "(1,2,0)"
-  ],
-  "lawful_trace_bearing_at_unit_grading": 0,
-  "lawful_triples_at_unit_grading": 90,
-  "minimum_nonzero_trace_L1_norm": 2,
-  "objects_newly_sensitive_under_the_witness": [
-    "O1_PUSHFORWARD",
-    "O3_FLUX_BALANCE"
-  ],
-  "objects_still_blind_under_the_witness": [
-    "O2_ADJOINT_PULLBACK",
-    "O4_RESPONSE_GRAM",
-    "O5_RESPONSE_TENSOR",
-    "O6_EDGE_TRANSFER"
-  ],
-  "provenance_map": {
-    "layer_1_forcing_step": "the sector trace IS the conservation defect certified by Cycle-320's unit-weight Q/P balance check; the exchange is supported only on equal-P pairs, so the commutator vanishes identically in the coupling angle",
-    "layer_1_ledger_given_the_support_and_the_unit_grading": "DERIVED",
-    "layer_2_scope": "all 1296 target triples swept with all three sectors occupied; 90 lawful, 0 trace-bearing; minimum nonzero trace L1 norm 2 so no infinitesimal detuning exists",
-    "layer_2_target_freedom_at_unit_grading": "DERIVED_EXHAUSTIVELY",
-    "layer_3_evidence": "the lawful grading locus for the landed support is the segment w_field + w_auxiliary = 2, not a point; every grading admitting a lawful trace-bearing support with nonzero matter recoil is non-unit and the unit grading admits none, so the guarantee rides on w = (1,1,1); a sector at weight zero is a momentum spectator and may be absent, which is the occupancy door the witness walks through; Cycle-318's own text calls its coefficient two supplied candidate-law structure and Cycle-320 lists the route by name",
-    "layer_3_sector_grading_and_occupancy": "SUPPLIED",
-    "layer_4_consequence": "the witness ledger (-2d,+d,0) makes O1_PUSHFORWARD, O3_FLUX_BALANCE object(s) sign-sensitive"
-  },
-  "sensitive_witnesses": {
-    "LANDED_cycle320_unit_grading": {},
-    "WITNESS_cycle318_coefficient_two": {
-      "O1_PUSHFORWARD": {
-        "component_index": 9,
-        "difference": "-2/3",
-        "member": [
-          "k1",
-          0,
-          0,
-          1
-        ],
-        "sigma_polynomial": "(-5/3)s^0+(-1/3)s^1",
-        "value_at_sigma_minus_one": "-4/3",
-        "value_at_sigma_plus_one": "-2"
-      },
-      "O3_FLUX_BALANCE": {
-        "component_index": 3,
-        "difference": "-2",
-        "member": [
-          "k1",
-          0,
-          0,
-          1
-        ],
-        "sigma_polynomial": "(-1/1)s^1",
-        "value_at_sigma_minus_one": "1",
-        "value_at_sigma_plus_one": "-1"
-      }
-    }
-  },
-  "verdict": "TRACELESSNESS_SUPPLIED_VIA_SECTOR_GRADING__ESCAPE_A_OPEN",
-  "witness_ledger_coefficients": [
-    -2,
-    1,
-    0
-  ],
-  "witness_ledger_sector_sum": -1
+  "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py": {
+   "git_blob": "0c5893f9b0c277fe864ed71efb38ba2c59d52d04",
+   "sha256": "08e92fde118415f32043c4fc154f8cc5aaca66af18704c024f89cde5445662de"
+  }
+ },
+ "headline": "trace = conservation defect (polynomial identity); 90/90 lawful unit-grading triples traceless (exhaustive); lawful gradings form the segment w_field+w_aux=2; landed coefficient-two witness (Cycle 318) embeds as (-2d,+d,0) and makes O1/O3 sign-sensitive on every member",
+ "independence": "cross-context (dense integer matrix route; 1.25M superposition search; occupancy sweep on the excluded axis; polynomial-free census route)",
+ "note": "docs/TRACELESSNESS_PROVENANCE_CYCLE873_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "runtime_seconds": {
+  "checker": 10.6,
+  "primary": 4.5
+ }
 }

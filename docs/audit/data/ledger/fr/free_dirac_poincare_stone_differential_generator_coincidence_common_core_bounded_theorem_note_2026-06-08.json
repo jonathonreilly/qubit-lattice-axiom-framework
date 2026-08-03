@@ -1,91 +1,24 @@
 {
-  "audit_date": "2026-08-01T19:27:03.899920+00:00",
-  "audit_invocation_history": [
-    "f5ec24f9531c43d79b0e240758cbb42e"
-  ],
-  "audit_invocation_id": "f5ec24f9531c43d79b0e240758cbb42e",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 12,
-        "B": 0,
-        "C": 3,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
-      "free_dirac_poincare_representation_bounded_note_2026-05-30": "Exact continuum free-Dirac/Poincare algebra, mass-shell, invariant-measure, Wigner-rotation, given-CAR spectrum, and bispinor-covariance checks on the supplied four-taste pole-derived carrier, excluding reconstruction, domain, exponentiation, and statistics-selection claims.",
-      "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "Formal strong-continuity extension for the stated free massive one-particle Wigner action, conditional on a continuous standard-boost section and a consistent spin-cover lift.",
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "decoration",
-      "free_dirac_poincare_representation_bounded_note_2026-05-30": "decoration",
-      "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "decoration",
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "decoration_under_free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
-      "free_dirac_poincare_representation_bounded_note_2026-05-30": "decoration_under_free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17",
-      "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "decoration_under_free_dirac_poincare_representation_bounded_note_2026-05-30",
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
-      "free_dirac_poincare_representation_bounded_note_2026-05-30",
-      "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "9972fab35d76d93640ecaf176fc783eec0e9b0723f4a8c4258c22a739d8f9bb4",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "9972fab35d76d93640ecaf176fc783eec0e9b0723f4a8c4258c22a739d8f9bb4",
-    "runner_path": "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-batch-A-20260801-663b1315",
-  "auditor_confidence": "medium",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The common-core lemma is applicable only after strong differentiation identifies every restricted Stone generator. For the displayed action, the positive-time subgroup has derivative +iE\u03c8, whereas the note requires \u2212iH\u03c8 with H=E; the required reversed parameter convention is not specified or checked.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08",
-  "claim_scope": "The asserted common-core coincidence of all ten Stone and differential Poincar\u00e9 generators for the supplied massive spin-1/2 one-particle Wigner representation.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-08-01T19:27:03.899920+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -96,20 +29,19 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Density, U(t)-invariance, and inclusion in the Stone-generator domain make C_c^infinity a common core, so agreement there implies equality of the self-adjoint closures.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "4f9525311a3adbb220c0cf63d585b5511af912e7c3ad450f649b13e40a9fd94d",
   "note_path": "docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md",
-  "notes_for_re_audit_if_any": "Re-check the signed one-parameter conventions after adding an explicit time-translation derivative and replacing the runner\u2019s hard-coded B3/F3 coincidence assertions with executable checks.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -308,19 +240,124 @@
         "total_pass": 21
       },
       "verdict_rationale": "All load-bearing upstream authorities are retained-grade, and the result is a bounded algebraic and functional-analytic closure on the explicitly supplied continuum carrier. The exact action formulas support the derivative and invariance premises, after which the cited core theorem gives essential self-adjointness and coincidence. Several runner lines, including B3 and F1-F5, are hard-coded assertions rather than executable tests, but the source note independently states the corresponding standard arguments, so this runner weakness does not leave an open scientific premise."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.282138+00:00",
+      "audit_date": "2026-08-01T19:27:03.899920+00:00",
+      "audit_invocation_history": [
+        "f5ec24f9531c43d79b0e240758cbb42e"
+      ],
+      "audit_invocation_id": "f5ec24f9531c43d79b0e240758cbb42e",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 12,
+            "B": 0,
+            "C": 3,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Exact continuum free-Dirac/Poincare algebra, mass-shell, invariant-measure, Wigner-rotation, given-CAR spectrum, and bispinor-covariance checks on the supplied four-taste pole-derived carrier, excluding reconstruction, domain, exponentiation, and statistics-selection claims.",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "Formal strong-continuity extension for the stated free massive one-particle Wigner action, conditional on a continuous standard-boost section and a consistent spin-cover lift.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "decoration",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "decoration",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "decoration",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30": "decoration_under_free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "decoration_under_free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07": "decoration_under_free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "9972fab35d76d93640ecaf176fc783eec0e9b0723f4a8c4258c22a739d8f9bb4",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "9972fab35d76d93640ecaf176fc783eec0e9b0723f4a8c4258c22a739d8f9bb4",
+        "runner_path": "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-batch-A-20260801-663b1315",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The common-core lemma is applicable only after strong differentiation identifies every restricted Stone generator. For the displayed action, the positive-time subgroup has derivative +iE\u03c8, whereas the note requires \u2212iH\u03c8 with H=E; the required reversed parameter convention is not specified or checked.",
+      "claim_scope": "The asserted common-core coincidence of all ten Stone and differential Poincar\u00e9 generators for the supplied massive spin-1/2 one-particle Wigner representation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-08-01T19:27:03.899920+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30:decoration_under_free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07->unaudited",
+      "load_bearing_step": "Density, U(t)-invariance, and inclusion in the Stone-generator domain make C_c^infinity a common core, so agreement there implies equality of the self-adjoint closures.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the signed one-parameter conventions after adding an explicit time-translation derivative and replacing the runner\u2019s hard-coded B3/F3 coincidence assertions with executable checks.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Issue: With the displayed action U(a,\u039b)\u03c8(p)=exp(i a\u00b7p)\u2026 and H=E, U((t,0),I) has derivative +iH\u03c8, contradicting the claimed universal derivative \u2212iA_diff\u03c8; the runner never tests H and records translation check B3 as literal True. Why this blocks: the domain/core theorem cannot establish coincidence for all ten generators when one generator\u2019s signed strong derivative is unproved and, under the displayed positive-time parameterization, opposite. Repair target: state a coherent orientation and Stone convention for every one-parameter subgroup, explicitly compute the time-translation derivative, and verify the resulting Poincar\u00e9-algebra signs. Claim boundary until fixed: the packet supports the rotation, boost, and spatial-translation coincidence calculations, but not the stated all-ten-generator theorem."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 21,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 21
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py",
   "title": "Free Dirac Poincar\u00e9: Stone Generators Coincide with the Differential Generators on a Common Core",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: With the displayed action U(a,\u039b)\u03c8(p)=exp(i a\u00b7p)\u2026 and H=E, U((t,0),I) has derivative +iH\u03c8, contradicting the claimed universal derivative \u2212iA_diff\u03c8; the runner never tests H and records translation check B3 as literal True. Why this blocks: the domain/core theorem cannot establish coincidence for all ten generators when one generator\u2019s signed strong derivative is unproved and, under the displayed positive-time parameterization, opposite. Repair target: state a coherent orientation and Stone convention for every one-parameter subgroup, explicitly compute the time-translation derivative, and verify the resulting Poincar\u00e9-algebra signs. Claim boundary until fixed: the packet supports the rotation, boost, and spatial-translation coincidence calculations, but not the stated all-ten-generator theorem."
+  "verdict_rationale": null
 }

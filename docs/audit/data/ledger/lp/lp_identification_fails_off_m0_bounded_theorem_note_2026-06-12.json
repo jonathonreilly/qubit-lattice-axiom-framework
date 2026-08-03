@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-25T23:16:32.833461+00:00",
-  "audit_invocation_history": [
-    "011d74c09de44ed58c56f58b878dab5e"
-  ],
-  "audit_invocation_id": "011d74c09de44ed58c56f58b878dab5e",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 5,
-        "D": 7
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true,
-      "runner_path": "scripts/frontier_lp_identification_fails_off_m0_2026_06_12.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 2.822,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_lp_identification_fails_off_m0_2026_06_12.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "cfdd30f640ed6a425fc38310c167e1dd3c178ed36189056abb081598f321c1ca",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "cfdd30f640ed6a425fc38310c167e1dd3c178ed36189056abb081598f321c1ca",
-    "runner_path": "scripts/frontier_lp_identification_fails_off_m0_2026_06_12.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 4
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-cb8ec369",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The runner independently computes the four finite-cell separations, but the restricted packet does not derive the selected staggered Harper carrier or the finite-field/LP observable identification from the framework axioms. It also leaves the corrected two-band formula and strict B\u21920 limit untested.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12",
-  "claim_scope": "Staggered d=2 Harper cell with q=24, Ly=2, finite B=2\u03c0/24, for sampled (m,T)=(0.2,0.2),(0.2,0.4),(0.5,0.2),(0.5,0.4); audits only the measured separation from the intraband det-Hessian LP kernel, not a corrected two-band orbital formula or the strict B\u21920 limit.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T23:16:32.833461+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 2.822,
-  "load_bearing_step": "The computed full-field and intraband-LP sign-change roots separate by 0.0424013806, 0.0461600062, 0.2010378416, and 0.1994054030 at the four sampled finite-B points.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "2839c65da3e6611d545e240f8f52db9168a3d18ecb6be26d57744920823e4f8e",
   "note_path": "docs/LP_IDENTIFICATION_FAILS_OFF_M0_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation or explicit accepted premise for the staggered Harper carrier and the finite-field/LP boundary-observable identification, then add a dated downstream-hygiene line to this note's own boundary before re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -134,19 +85,105 @@
         "total_pass": 44
       },
       "verdict_rationale": "There are no cited upstream authorities and no open imported dependency in the restricted packet. The source does not merely print constants: the runner recomputes the finite-field and LP roots from the specified model, with the hard-coded deviation table serving as a regression gate after recomputation. The clean verdict applies only to the bounded measured finite-B/sample statement, because the note explicitly excludes the corrected two-band orbital formula and strict B\u21920 limit."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:24.393137+00:00",
+      "audit_date": "2026-07-25T23:16:32.833461+00:00",
+      "audit_invocation_history": [
+        "011d74c09de44ed58c56f58b878dab5e"
+      ],
+      "audit_invocation_id": "011d74c09de44ed58c56f58b878dab5e",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 5,
+            "D": 7
+          },
+          "decoration_candidate": false,
+          "dominant_class": "D",
+          "exists": true,
+          "runner_path": "scripts/frontier_lp_identification_fails_off_m0_2026_06_12.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 2.822,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_lp_identification_fails_off_m0_2026_06_12.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "cfdd30f640ed6a425fc38310c167e1dd3c178ed36189056abb081598f321c1ca",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "cfdd30f640ed6a425fc38310c167e1dd3c178ed36189056abb081598f321c1ca",
+        "runner_path": "scripts/frontier_lp_identification_fails_off_m0_2026_06_12.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-cb8ec369",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner independently computes the four finite-cell separations, but the restricted packet does not derive the selected staggered Harper carrier or the finite-field/LP observable identification from the framework axioms. It also leaves the corrected two-band formula and strict B\u21920 limit untested.",
+      "claim_scope": "Staggered d=2 Harper cell with q=24, Ly=2, finite B=2\u03c0/24, for sampled (m,T)=(0.2,0.2),(0.2,0.4),(0.5,0.2),(0.5,0.4); audits only the measured separation from the intraband det-Hessian LP kernel, not a corrected two-band orbital formula or the strict B\u21920 limit.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T23:16:32.833461+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The computed full-field and intraband-LP sign-change roots separate by 0.0424013806, 0.0461600062, 0.2010378416, and 0.1994054030 at the four sampled finite-B points.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation or explicit accepted premise for the staggered Harper carrier and the finite-field/LP boundary-observable identification, then add a dated downstream-hygiene line to this note's own boundary before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 36,
+        "D": 1,
+        "total_pass": 44
+      },
+      "verdict_rationale": "The source code genuinely constructs the Harper spectra and LP kernel, solves both roots, and reproduces all four stated deviations with convergence and structural controls; the frozen deviation constants are used only as regression comparators. However, no cited retained authority or accepted premise supplies the chosen Hamiltonian, hopping normalization, or the physical identification of these two computed sign changes, so the framework-level chain remains conditional. The bounded negative result closes only for the sampled finite-B intraband surface: the corrected interband/geometric formula, the strict B\u21920 limit, and broader off-sample routes remain open rather than ruled out."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 7,
+    "A": 0,
     "B": 0,
-    "C": 36,
-    "D": 1,
-    "total_pass": 44
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_lp_identification_fails_off_m0_2026_06_12.py",
   "title": "The Landau\u2013Peierls Identification Does Not Extend Off m = 0: Measured Deviations 0.042 \u2192 0.20 (m = 0.5) Between the Full-Field Boundary and the Staggered LP Sign Change \u2014 the Identification Is an m = 0 Statement (Bounded)",
   "transitive_descendants": 4,
-  "verdict_rationale": "The source code genuinely constructs the Harper spectra and LP kernel, solves both roots, and reproduces all four stated deviations with convergence and structural controls; the frozen deviation constants are used only as regression comparators. However, no cited retained authority or accepted premise supplies the chosen Hamiltonian, hopping normalization, or the physical identification of these two computed sign changes, so the framework-level chain remains conditional. The bounded negative result closes only for the sampled finite-B intraband surface: the corrected interband/geometric formula, the strict B\u21920 limit, and broader off-sample routes remain open rather than ruled out."
+  "verdict_rationale": null
 }

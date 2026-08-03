@@ -1,101 +1,44 @@
 {
-  "audit_date": "2026-07-25T16:49:54.452711+00:00",
-  "audit_invocation_history": [
-    "5a228d1c18594e188528a1475ad4f712"
-  ],
-  "audit_invocation_id": "5a228d1c18594e188528a1475ad4f712",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 4,
-      "counts": {
-        "A": 1,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/frontier_chiral_layer_oscillation.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/frontier_chiral_3plus1d_converged.py": "1b6d783bfc0c364ab4254022e7ff22dc4ae273af60cf5f8a6b2a41797efc1a91"
-    },
-    "load_bearing_score": 2.822,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_chiral_3plus1d_converged.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_chiral_layer_oscillation.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "bde5228b9ddc004ab8c6668d0eeba01716cf8ba2b188e545e5b9ef946e3da295",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "bde5228b9ddc004ab8c6668d0eeba01716cf8ba2b188e545e5b9ef946e3da295",
-    "runner_path": "scripts/frontier_chiral_layer_oscillation.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 4
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-7b130668",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite sign check closes internally: the reported sweep contains both positive and negative values, and the runner computes the stated shell-difference proxy. The physical chain does not close because no supplied authority derives the chosen evolution, mass coupling, source state, or gravity-observable identification from the framework premises.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "chiral_layer_oscillation_2026-04-09",
-  "claim_scope": "Finite-slice numerical sign noninvariance of the shell-difference proxy at n=15, theta0=0.3, strength=5e-4, periodic boundaries, mass offset +3 on the runner's third coordinate, and N in {12,14,16,18,20}.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T16:49:54.452711+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_chiral_3plus1d_converged.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 2.822,
-  "load_bearing_step": "The current frozen runner observes both signs across the finite N sweep at the stated operating point.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "10579dc4bbebfe14f57eebbf6cbfece4d17a6d97e6cbc352cbbd08799b99c927",
   "note_path": "docs/CHIRAL_LAYER_OSCILLATION_2026-04-09.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the coin evolution, theta-modulated mass coupling, balanced-source prescription, and shell-difference gravity-observable bridge, then add their dependency edges to this note.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1408,19 +1351,113 @@
         "total_pass": 4
       },
       "verdict_rationale": "The helper source explicitly constructs the balanced state, position-dependent coin, periodic shifts, and probability density, while the primary runner derives the shell-difference values rather than printing or matching stored targets. The completed output agrees with the source note's frozen table and establishes both positive and negative signals on exactly the stated finite sweep. This verdict does not ratify the proposed phase-mismatch mechanism, a continuum oscillation law, physical propagation-distance identification, or universal Newtonian gravity."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:07.292336+00:00",
+      "audit_date": "2026-07-25T16:49:54.452711+00:00",
+      "audit_invocation_history": [
+        "5a228d1c18594e188528a1475ad4f712"
+      ],
+      "audit_invocation_id": "5a228d1c18594e188528a1475ad4f712",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 4,
+          "counts": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/frontier_chiral_layer_oscillation.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/frontier_chiral_3plus1d_converged.py": "1b6d783bfc0c364ab4254022e7ff22dc4ae273af60cf5f8a6b2a41797efc1a91"
+        },
+        "load_bearing_score": 2.822,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_chiral_3plus1d_converged.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_chiral_layer_oscillation.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "bde5228b9ddc004ab8c6668d0eeba01716cf8ba2b188e545e5b9ef946e3da295",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "bde5228b9ddc004ab8c6668d0eeba01716cf8ba2b188e545e5b9ef946e3da295",
+        "runner_path": "scripts/frontier_chiral_layer_oscillation.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-7b130668",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite sign check closes internally: the reported sweep contains both positive and negative values, and the runner computes the stated shell-difference proxy. The physical chain does not close because no supplied authority derives the chosen evolution, mass coupling, source state, or gravity-observable identification from the framework premises.",
+      "claim_scope": "Finite-slice numerical sign noninvariance of the shell-difference proxy at n=15, theta0=0.3, strength=5e-4, periodic boundaries, mass offset +3 on the runner's third coordinate, and N in {12,14,16,18,20}.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T16:49:54.452711+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The current frozen runner observes both signs across the finite N sweep at the stated operating point.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the coin evolution, theta-modulated mass coupling, balanced-source prescription, and shell-difference gravity-observable bridge, then add their dependency edges to this note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the runner computes both signs for the five stated N values, and direct arithmetic on the reported values confirms finite-set sign noninvariance, but the packet contains no retained derivation or approved premise selecting this coin evolution, theta-modulated mass coupling, balanced source, or shell-difference as a gravity observable. Why this blocks: the numerical property closes for the specified code, yet its asserted physical interpretation as a chiral-walk gravity boundary does not follow from the supplied axioms, which expressly supply no dynamics or physical-observable bridge. No-go discipline: N1 leaves alternate coin, coupling, boundary or initial-state, larger-window, and alternate-observable routes open; N2 treats model selection, observable identification, and finite-window coverage as distinct limitations; N3 treats \u201ccanonical\u201d as non-authoritative and the periodic boundary as disclosed; N4 has no prior residual witness; N5 confines the negative wording to the stated finite set; N6 finds no approved primitive closing the missing dynamics or readout choices; N7's strongest alternative-design steelman remains unresolved; and N8 supplies no applicable retirement of these limitations. Repair target: retain a derivation or bridge for the evolution, coupling, state, and readout, or recast the result solely as a property of the supplied algorithm; claim boundary until fixed: the five reported shell-difference values for that exact implementation have both signs."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 4,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_chiral_layer_oscillation.py",
   "title": "Chiral Walk Layer Oscillation \u2014 Gravity Sign Depends on N",
   "transitive_descendants": 4,
-  "verdict_rationale": "Issue: the runner computes both signs for the five stated N values, and direct arithmetic on the reported values confirms finite-set sign noninvariance, but the packet contains no retained derivation or approved premise selecting this coin evolution, theta-modulated mass coupling, balanced source, or shell-difference as a gravity observable. Why this blocks: the numerical property closes for the specified code, yet its asserted physical interpretation as a chiral-walk gravity boundary does not follow from the supplied axioms, which expressly supply no dynamics or physical-observable bridge. No-go discipline: N1 leaves alternate coin, coupling, boundary or initial-state, larger-window, and alternate-observable routes open; N2 treats model selection, observable identification, and finite-window coverage as distinct limitations; N3 treats \u201ccanonical\u201d as non-authoritative and the periodic boundary as disclosed; N4 has no prior residual witness; N5 confines the negative wording to the stated finite set; N6 finds no approved primitive closing the missing dynamics or readout choices; N7's strongest alternative-design steelman remains unresolved; and N8 supplies no applicable retirement of these limitations. Repair target: retain a derivation or bridge for the evolution, coupling, state, and readout, or recast the result solely as a property of the supplied algorithm; claim boundary until fixed: the five reported shell-difference values for that exact implementation have both signs."
+  "verdict_rationale": null
 }

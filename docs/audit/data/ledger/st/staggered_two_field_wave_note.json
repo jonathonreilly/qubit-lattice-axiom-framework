@@ -1,90 +1,42 @@
 {
-  "audit_date": "2026-07-25T18:20:36.312125+00:00",
-  "audit_invocation_history": [
-    "4297f394201a47889d6f2941fd27a212"
-  ],
-  "audit_invocation_id": "4297f394201a47889d6f2941fd27a212",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_two_field_wave.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_two_field_wave.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "dd0ced9415ea4f8f1f8984d7b297140389d5140694dd7e6571188014b4ac008d",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "dd0ced9415ea4f8f1f8984d7b297140389d5140694dd7e6571188014b4ac008d",
-    "runner_path": "scripts/frontier_two_field_wave.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-95c6525f",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite computation closes from the runner's hard-coded model, but the chain from the permitted axioms does not: no retained step derives the wave law, parity-coupled Hamiltonian, graph battery, or parameter choices. The note's first two W3 drift values also differ from the supplied runner output.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "staggered_two_field_wave_note",
-  "claim_scope": "For the fixed 30-step wave/CN simulations on random_geometric (36), growing (48), and layered_cycle (24) graphs, W1-W4 pass on all three and W6 passes only on growing, producing hard scores 4/5, 5/5, and 4/5; W5 remains diagnostic.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T18:20:36.312125+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "With a fresh \u03a6=0, d\u03a6/dt=0 restart for each family, W6 closes only on the growing family, giving hard scores 4/5, 5/5, 4/5.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls"
-  ],
   "note_hash": "f991180277a19753eb9bf2080f706222e1c3f9be7cc720a0dde14cb6eba6b489",
   "note_path": "docs/STAGGERED_TWO_FIELD_WAVE_NOTE.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained axiom-to-dynamics derivation covering the wave law, staggered parity coupling, admissible graph battery, and parameter choices, then synchronize the W3 drift entries with a fresh runner result.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -153,6 +105,91 @@
         "total_pass": 1
       },
       "verdict_rationale": "The claim is scoped to a bounded corrected wave-field prototype, not retained universal robustness. Current output confirms W1-W4 on all three families, W6 only on growing, and width response as a diagnostic rather than a gate. Residual risk is limited to the stated lack of universal contraction, full state-family robustness, larger-graph battery, and retarded-field closure."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:30.498432+00:00",
+      "audit_date": "2026-07-25T18:20:36.312125+00:00",
+      "audit_invocation_history": [
+        "4297f394201a47889d6f2941fd27a212"
+      ],
+      "audit_invocation_id": "4297f394201a47889d6f2941fd27a212",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_two_field_wave.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_two_field_wave.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "dd0ced9415ea4f8f1f8984d7b297140389d5140694dd7e6571188014b4ac008d",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "dd0ced9415ea4f8f1f8984d7b297140389d5140694dd7e6571188014b4ac008d",
+        "runner_path": "scripts/frontier_two_field_wave.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-95c6525f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite computation closes from the runner's hard-coded model, but the chain from the permitted axioms does not: no retained step derives the wave law, parity-coupled Hamiltonian, graph battery, or parameter choices. The note's first two W3 drift values also differ from the supplied runner output.",
+      "claim_scope": "For the fixed 30-step wave/CN simulations on random_geometric (36), growing (48), and layered_cycle (24) graphs, W1-W4 pass on all three and W6 passes only on growing, producing hard scores 4/5, 5/5, and 4/5; W5 remains diagnostic.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T18:20:36.312125+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "With a fresh \u03a6=0, d\u03a6/dt=0 restart for each family, W6 closes only on the growing family, giving hard scores 4/5, 5/5, 4/5.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained axiom-to-dynamics derivation covering the wave law, staggered parity coupling, admissible graph battery, and parameter choices, then synchronize the W3 drift entries with a fresh runner result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner genuinely computes 13 passing hard checks across the three fixed graph cases and reproduces the hard scores and width ratios, but its W3 drifts are 4.4409e-16, 4.4409e-16, and 2.2204e-16 rather than the note's 1.1e-15, 2.2e-16, and 2.2e-16. More importantly, the restricted packet supplies no retained derivation from the four axioms of the wave law, staggered Hamiltonian/parity coupling, chosen finite graph families, or constants; the minimal-axiom premise explicitly does not choose dynamics or a Hamiltonian. The negative assertion is only bounded_with_named_walls: W6 fails on random_geometric and layered_cycle and contraction fails on two fixed runs, while algebraic, representation/carrier, initial-state, normalization, dynamical, lattice-scale, and alternate-readout routes remain untested rather than ruled out. No prior residual witness or independent steelman resolution is supplied; the initial-condition language is explicit, accepted primitives do not close the missing dynamics, and the supplied partial-closure and cross-cycle material provides no current-scope theorem."
     }
   ],
   "prose_corrections": [],
@@ -160,12 +197,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 13,
+    "C": 0,
     "D": 0,
-    "total_pass": 13
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_two_field_wave.py",
   "title": "Staggered Two-Field Wave Coupling \u2014 Rerun-Corrected Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "The runner genuinely computes 13 passing hard checks across the three fixed graph cases and reproduces the hard scores and width ratios, but its W3 drifts are 4.4409e-16, 4.4409e-16, and 2.2204e-16 rather than the note's 1.1e-15, 2.2e-16, and 2.2e-16. More importantly, the restricted packet supplies no retained derivation from the four axioms of the wave law, staggered Hamiltonian/parity coupling, chosen finite graph families, or constants; the minimal-axiom premise explicitly does not choose dynamics or a Hamiltonian. The negative assertion is only bounded_with_named_walls: W6 fails on random_geometric and layered_cycle and contraction fails on two fixed runs, while algebraic, representation/carrier, initial-state, normalization, dynamical, lattice-scale, and alternate-readout routes remain untested rather than ruled out. No prior residual witness or independent steelman resolution is supplied; the initial-condition language is explicit, accepted primitives do not close the missing dynamics, and the supplied partial-closure and cross-cycle material provides no current-scope theorem."
+  "verdict_rationale": null
 }

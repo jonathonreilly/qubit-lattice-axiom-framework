@@ -1,166 +1,24 @@
 {
-  "audit_date": "2026-08-03T04:40:13.599182+00:00",
-  "audit_invocation_history": [
-    "a1586c09202d4acda9fab6261163c64e"
-  ],
-  "audit_invocation_id": "a1586c09202d4acda9fab6261163c64e",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 1,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0)."
-    },
-    "dep_claim_type": {
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
-    },
-    "deps": [
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-    ],
-    "helper_runner_hashes": {},
-    "judgment_fingerprint": {
-      "claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
-      "digest": "9ad0eb4f25a7b68aa8b9eab879d4f4ecf06728df7c5736d73013ba10ef771ac4",
-      "judgment": {
-        "audit_date": "2026-08-03T04:40:13.599182+00:00",
-        "audit_invocation_id": "a1586c09202d4acda9fab6261163c64e",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-audit-batch-A-20260803-fc228e32",
-        "auditor_confidence": "high",
-        "auditor_family": "codex-gpt-5.6",
-        "auditor_model": "gpt-5.6-sol",
-        "auditor_reasoning_effort": "xhigh",
-        "chain_closes": false,
-        "chain_closure_explanation": "The load-bearing authority is packet-clipped, and the runner verifies examples but does not prove the universal factorization and decomposition claims. An unclipped independently checkable proof of K3-K4 is missing.",
-        "claim_scope": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
-        "claim_type": "positive_theorem",
-        "claim_type_provenance": "audited",
-        "cross_confirmation": null,
-        "decoration_parent_claim_id": null,
-        "independence": "cross_family",
-        "load_bearing_step": "Using Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C) and Artin-Wedderburn/Maschke, each irreducible factors through one M_2(C) summand and every finite-dimensional module decomposes into two-dimensional chirality summands.",
-        "load_bearing_step_class": "A",
-        "negative_assertion_classes": [
-          "derived_no_go_boundary"
-        ],
-        "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the packet with the complete retained K3-K4 authority and replace the runner's hard-coded universal odd-dimensional exclusions with an independently checkable algebraic certificate.",
-        "open_dependency_paths": [],
-        "runner_check_breakdown": {
-          "A": 37,
-          "B": 0,
-          "C": 0,
-          "D": 0,
-          "total_pass": 37
-        },
-        "verdict_rationale": "Issue: the load-bearing K3-K4 authority is packet-clipped, while the local runner only instantiates 2\u00d72 examples and hard-codes the universal D2f and D2h exclusions as true. Why this blocks: the restricted evidence does not contain a complete independent derivation of universal factorization and decomposition, so the derived no-odd-dimensional boundary cannot be ratified. Repair target: supply the complete authority or an unclipped exact proof of K3-K4 and executable universal certificates. Claim boundary until fixed: the displayed Pauli realizations, chirality separation, and sample direct sums are verified, but the universal decomposition and negative boundary remain conditional."
-      },
-      "schema": "frozen_audit_judgment_v1"
-    },
-    "load_bearing_score": 5.7,
-    "packet_policy_fingerprint": {
-      "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
-      "schema": "packet_policy_fingerprint_v1",
-      "sources": {
-        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
-        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
-        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
-        "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
-        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
-      }
-    },
-    "policy_versions": {
-      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "e29a875de781cdbbb2111c80ee211ed76eafda85ecd73eee01a4f43bc62d2b17",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "e29a875de781cdbbb2111c80ee211ed76eafda85ecd73eee01a4f43bc62d2b17",
-    "runner_path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "science_fingerprint": {
-      "dependencies": [
-        {
-          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
-          "claim_type": "positive_theorem",
-          "effective_status": "retained",
-          "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
-          "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
-          "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
-          "premise_classification": "ordinary_claim",
-          "present": true
-        }
-      ],
-      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "fde8a7b29f30b9d08e86a834d2542247d6ef3461aa2aabfef053b4af32392f4c",
-      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
-      "runners": [
-        {
-          "declared_input_fingerprint_sha256": null,
-          "declared_input_paths": null,
-          "declared_inputs": [],
-          "path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py",
-          "present": true,
-          "role": "primary",
-          "sha256": "e29a875de781cdbbb2111c80ee211ed76eafda85ecd73eee01a4f43bc62d2b17"
-        }
-      ],
-      "schema": "science_fingerprint_v2",
-      "target": {
-        "claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
-        "claim_scope": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
-        "claim_type": "positive_theorem",
-        "ledger_note_hash": "a508dbde507ad1f4621df32e382ab6ba8308d48b2eaf3d4cc4cdca4379ed429e",
-        "note_path": "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md",
-        "note_sha256": "a508dbde507ad1f4621df32e382ab6ba8308d48b2eaf3d4cc4cdca4379ed429e"
-      }
-    },
-    "transitive_descendants": 12
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260803-fc228e32",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The load-bearing authority is packet-clipped, and the runner verifies examples but does not prove the universal factorization and decomposition claims. An unclipped independently checkable proof of K3-K4 is missing.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
-  "claim_scope": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-08-03T04:40:13.599182+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -168,22 +26,19 @@
     "cl3_complexification_split_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 4,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 5.7,
-  "load_bearing_step": "Using Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C) and Artin-Wedderburn/Maschke, each irreducible factors through one M_2(C) summand and every finite-dimensional module decomposes into two-dimensional chirality summands.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "a508dbde507ad1f4621df32e382ab6ba8308d48b2eaf3d4cc4cdca4379ed429e",
   "note_path": "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the packet with the complete retained K3-K4 authority and replace the runner's hard-coded universal odd-dimensional exclusions with an independently checkable algebraic certificate.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -288,19 +143,201 @@
         "total_pass": 37
       },
       "verdict_rationale": "The mathematics closes, but under ALGEBRAIC_DECORATION_POLICY it is boxed as decoration: it has a single parent, follows by ordinary semisimple algebra from that parent, has no external comparator or new physical bridge, and does not compress the parent because the parent already contains the same two-dimensional irrep readout in K4. The winning tuple is therefore audited_decoration / decoration / A: the ratified step is ordinary algebra on the retained split input, not an independent theorem row.\n\nFive-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=2; ('second', 'audited_decoration', 'decoration', 'A')=3."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:13.876203+00:00",
+      "audit_date": "2026-08-03T04:40:13.599182+00:00",
+      "audit_invocation_history": [
+        "a1586c09202d4acda9fab6261163c64e"
+      ],
+      "audit_invocation_id": "a1586c09202d4acda9fab6261163c64e",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0)."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "helper_runner_hashes": {},
+        "judgment_fingerprint": {
+          "claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+          "digest": "9ad0eb4f25a7b68aa8b9eab879d4f4ecf06728df7c5736d73013ba10ef771ac4",
+          "judgment": {
+            "audit_date": "2026-08-03T04:40:13.599182+00:00",
+            "audit_invocation_id": "a1586c09202d4acda9fab6261163c64e",
+            "audit_status": "audited_conditional",
+            "auditor": "codex-audit-batch-A-20260803-fc228e32",
+            "auditor_confidence": "high",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "The load-bearing authority is packet-clipped, and the runner verifies examples but does not prove the universal factorization and decomposition claims. An unclipped independently checkable proof of K3-K4 is missing.",
+            "claim_scope": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+            "claim_type": "positive_theorem",
+            "claim_type_provenance": "audited",
+            "cross_confirmation": null,
+            "decoration_parent_claim_id": null,
+            "independence": "cross_family",
+            "load_bearing_step": "Using Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C) and Artin-Wedderburn/Maschke, each irreducible factors through one M_2(C) summand and every finite-dimensional module decomposes into two-dimensional chirality summands.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the packet with the complete retained K3-K4 authority and replace the runner's hard-coded universal odd-dimensional exclusions with an independently checkable algebraic certificate.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 37,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 37
+            },
+            "verdict_rationale": "Issue: the load-bearing K3-K4 authority is packet-clipped, while the local runner only instantiates 2\u00d72 examples and hard-codes the universal D2f and D2h exclusions as true. Why this blocks: the restricted evidence does not contain a complete independent derivation of universal factorization and decomposition, so the derived no-odd-dimensional boundary cannot be ratified. Repair target: supply the complete authority or an unclipped exact proof of K3-K4 and executable universal certificates. Claim boundary until fixed: the displayed Pauli realizations, chirality separation, and sample direct sums are verified, but the universal decomposition and negative boundary remain conditional."
+          },
+          "schema": "frozen_audit_judgment_v1"
+        },
+        "load_bearing_score": 5.7,
+        "packet_policy_fingerprint": {
+          "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
+          "schema": "packet_policy_fingerprint_v1",
+          "sources": {
+            "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+            "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+            "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+            "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+            "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+            "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
+            "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+          }
+        },
+        "policy_versions": {
+          "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "e29a875de781cdbbb2111c80ee211ed76eafda85ecd73eee01a4f43bc62d2b17",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "e29a875de781cdbbb2111c80ee211ed76eafda85ecd73eee01a4f43bc62d2b17",
+        "runner_path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "science_fingerprint": {
+          "dependencies": [
+            {
+              "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+              "claim_type": "positive_theorem",
+              "effective_status": "retained",
+              "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+              "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+              "premise_classification": "ordinary_claim",
+              "present": true
+            }
+          ],
+          "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+          "digest": "fde8a7b29f30b9d08e86a834d2542247d6ef3461aa2aabfef053b4af32392f4c",
+          "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+          "runners": [
+            {
+              "declared_input_fingerprint_sha256": null,
+              "declared_input_paths": null,
+              "declared_inputs": [],
+              "path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py",
+              "present": true,
+              "role": "primary",
+              "sha256": "e29a875de781cdbbb2111c80ee211ed76eafda85ecd73eee01a4f43bc62d2b17"
+            }
+          ],
+          "schema": "science_fingerprint_v2",
+          "target": {
+            "claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+            "claim_scope": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+            "claim_type": "positive_theorem",
+            "ledger_note_hash": "a508dbde507ad1f4621df32e382ab6ba8308d48b2eaf3d4cc4cdca4379ed429e",
+            "note_path": "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "note_sha256": "a508dbde507ad1f4621df32e382ab6ba8308d48b2eaf3d4cc4cdca4379ed429e"
+          }
+        },
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260803-fc228e32",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The load-bearing authority is packet-clipped, and the runner verifies examples but does not prove the universal factorization and decomposition claims. An unclipped independently checkable proof of K3-K4 is missing.",
+      "claim_scope": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-08-03T04:40:13.599182+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "science_changed:dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:claim_scope",
+      "load_bearing_step": "Using Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C) and Artin-Wedderburn/Maschke, each irreducible factors through one M_2(C) summand and every finite-dimensional module decomposes into two-dimensional chirality summands.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the packet with the complete retained K3-K4 authority and replace the runner's hard-coded universal odd-dimensional exclusions with an independently checkable algebraic certificate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "Issue: the load-bearing K3-K4 authority is packet-clipped, while the local runner only instantiates 2\u00d72 examples and hard-codes the universal D2f and D2h exclusions as true. Why this blocks: the restricted evidence does not contain a complete independent derivation of universal factorization and decomposition, so the derived no-odd-dimensional boundary cannot be ratified. Repair target: supply the complete authority or an unclipped exact proof of K3-K4 and executable universal certificates. Claim boundary until fixed: the displayed Pauli realizations, chirality separation, and sample direct sums are verified, but the universal decomposition and negative boundary remain conditional."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 37,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 37
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py",
   "title": "Cl(3) Faithful Irrep Complex Dimension Two Narrow Theorem",
   "transitive_descendants": 12,
-  "verdict_rationale": "Issue: the load-bearing K3-K4 authority is packet-clipped, while the local runner only instantiates 2\u00d72 examples and hard-codes the universal D2f and D2h exclusions as true. Why this blocks: the restricted evidence does not contain a complete independent derivation of universal factorization and decomposition, so the derived no-odd-dimensional boundary cannot be ratified. Repair target: supply the complete authority or an unclipped exact proof of K3-K4 and executable universal certificates. Claim boundary until fixed: the displayed Pauli realizations, chirality separation, and sample direct sums are verified, but the universal decomposition and negative boundary remain conditional."
+  "verdict_rationale": null
 }

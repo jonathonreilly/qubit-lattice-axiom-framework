@@ -1,83 +1,24 @@
 {
-  "audit_date": "2026-07-25T22:20:12.513828+00:00",
-  "audit_invocation_history": [
-    "4300a1099da54da2aa8a6788a167c645"
-  ],
-  "audit_invocation_id": "4300a1099da54da2aa8a6788a167c645",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 6,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "graph_first_su3_integration_note": "positive_theorem",
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "graph_first_su3_integration_note": "retained",
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "graph_first_su3_integration_note",
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "e1a1680536ab8c386ff10c7e6d82dec5f8d6f4d8b27b55338ecbd6f58203c7c0",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "e1a1680536ab8c386ff10c7e6d82dec5f8d6f4d8b27b55338ecbd6f58203c7c0",
-    "runner_path": "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-5c9176db",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite dimensional and algebraic core closes, but the full T4 negative scope does not: the packet lacks five evidenced N1 attack routes, resolution-complete N5 checks, and current-scope N8 dispositions.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06",
-  "claim_scope": "Bounded audit of the historical COMP Hurwitz clause as non-operational for the SU(3) norm-one-unit and C^3 carrier targets and unnecessary for the supplied graph-first selected-axis algebra-selection route, with no physical-color derivation.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T22:20:12.513828+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -86,22 +27,19 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "By T3, at least one landed selection route reaches su(3) without composition-algebra input, while T1-T2 exclude Hurwitz unit and carrier realizations at SU(3) and C^3.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "8af5d1632da58090a69977bcb3f0fdf56e438fe1b917fae78bf0bca416c38c6a",
   "note_path": "docs/COLOR_COMP_HURWITZ_CLAUSE_SCOPE_REDUCTION_NARROW_THEOREM_NOTE_2026-07-06.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: add a dated, runner-backed N1-N8 block covering five distinct attacks, all five rhetoric resolutions, the optional-label/scaffold steelman, and current-scope cross-cycle dispositions before re-auditing T4.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -165,19 +103,118 @@
         "total_pass": 9
       },
       "verdict_rationale": "Issue: the theorem's non-operational half consumes external Hurwitz classification and Standard Model color-target premises that are not present as direct retained dependencies. Why this blocks: the full T4 scope cannot be granted from the stated direct chain; the runner verifies finite arithmetic/algebra after those premises are supplied. Repair target: add and audit direct retained or accepted-premise authority for Hurwitz classification and the scoped SU(3)/C^3 target facts, or split the clean T3 no-composition-input core from the conditional target-mismatch claim. Claim boundary until fixed: the graph-first route's algebra-selection independence from composition-algebra input is supportable; the physical-target Hurwitz obstruction remains conditional on imported authorities."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:16.216560+00:00",
+      "audit_date": "2026-07-25T22:20:12.513828+00:00",
+      "audit_invocation_history": [
+        "4300a1099da54da2aa8a6788a167c645"
+      ],
+      "audit_invocation_id": "4300a1099da54da2aa8a6788a167c645",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 6,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "e1a1680536ab8c386ff10c7e6d82dec5f8d6f4d8b27b55338ecbd6f58203c7c0",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "e1a1680536ab8c386ff10c7e6d82dec5f8d6f4d8b27b55338ecbd6f58203c7c0",
+        "runner_path": "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-5c9176db",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite dimensional and algebraic core closes, but the full T4 negative scope does not: the packet lacks five evidenced N1 attack routes, resolution-complete N5 checks, and current-scope N8 dispositions.",
+      "claim_scope": "Bounded audit of the historical COMP Hurwitz clause as non-operational for the SU(3) norm-one-unit and C^3 carrier targets and unnecessary for the supplied graph-first selected-axis algebra-selection route, with no physical-color derivation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T22:20:12.513828+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "By T3, at least one landed selection route reaches su(3) without composition-algebra input, while T1-T2 exclude Hurwitz unit and carrier realizations at SU(3) and C^3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: add a dated, runner-backed N1-N8 block covering five distinct attacks, all five rhetoric resolutions, the optional-label/scaffold steelman, and current-scope cross-cycle dispositions before re-auditing T4.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: Independent algebra confirms dim SU(3)=8 versus Hurwitz norm-one dimensions 0,1,3,7, dim_R(C^3)=6, and the Pauli-fiber commutant M4 split by the 3+1 swap to M3\u2295M1 of dimension 10, but the derived negative boundaries lack N1's five evidenced attack routes and N5's required five-resolution live checks. Why this blocks: N2 leaves the SU(3)-unit, C^3-carrier, and graph-route-necessity boundaries independent; N3's historical-admission and canonical-route phrases are non-load-bearing; and N4 has no prior residual witness, so none cures the N1/N5 gap. Repair target: disposition N6's supplied premise/reframe candidates, resolve N7's strongest optional-label/scaffold steelman explicitly, and disposition N8's cross-cycle echoes in a dated runner-backed N1-N8 block. Claim boundary until fixed: cite only T1's Hurwitz-unit dimension exclusion, T2's real-dimension-six carrier exclusion, and T3's finite graph-commutant computation, not T4 as a cleanly cemented historical-clause theorem."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 6,
-    "B": 2,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 9
+    "total_pass": 0
   },
   "runner_path": "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py",
   "title": "Color COMP Hurwitz-Clause Scope-Reduction Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: Independent algebra confirms dim SU(3)=8 versus Hurwitz norm-one dimensions 0,1,3,7, dim_R(C^3)=6, and the Pauli-fiber commutant M4 split by the 3+1 swap to M3\u2295M1 of dimension 10, but the derived negative boundaries lack N1's five evidenced attack routes and N5's required five-resolution live checks. Why this blocks: N2 leaves the SU(3)-unit, C^3-carrier, and graph-route-necessity boundaries independent; N3's historical-admission and canonical-route phrases are non-load-bearing; and N4 has no prior residual witness, so none cures the N1/N5 gap. Repair target: disposition N6's supplied premise/reframe candidates, resolve N7's strongest optional-label/scaffold steelman explicitly, and disposition N8's cross-cycle echoes in a dated runner-backed N1-N8 block. Claim boundary until fixed: cite only T1's Hurwitz-unit dimension exclusion, T2's real-dimension-six carrier exclusion, and T3's finite graph-commutant computation, not T4 as a cleanly cemented historical-clause theorem."
+  "verdict_rationale": null
 }

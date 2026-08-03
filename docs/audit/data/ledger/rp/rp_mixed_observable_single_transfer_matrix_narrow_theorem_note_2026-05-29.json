@@ -1,49 +1,24 @@
 {
-  "audit_date": "2026-07-16T06:10:26.849990+00:00",
-  "audit_invocation_history": [
-    "914b2e646ad24490b0f60e34da57d400"
-  ],
-  "audit_invocation_id": "914b2e646ad24490b0f60e34da57d400",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
-      "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
-    },
-    "dep_claim_type": {
-      "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
-      "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
-      "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
-    },
-    "deps": [
-      "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-      "staggered_only_det_positivity_case_a_note_2026-05-17"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 9.97,
-    "runner_hash": "35e97b1e015bae056630e92d6cbedfa0052661f3c3c9f720c04e66bd4033d600",
-    "transitive_descendants": 708
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-rp_mixed_observable_sing-130",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The W^dag W factorization closes algebraically under the stated premises, but the cited authorities do not establish the Wilson-boundary PSD kernel or the mixed staggered gauge-fermion OS transfer representation. The runner constructs the represented Gram from T_full rather than deriving that representation from the path integral.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29",
-  "claim_scope": "Finite-carrier W^dag W algebra for represented mixed gauge+fermion observables, conditional on a PSD gauge transfer, block-diagonal B[U]^dag B[U] fermion blocks, and the mixed OS transfer representation.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-16T06:10:26.849990+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -52,25 +27,19 @@
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 10.026,
-  "load_bearing_step": "Given the represented mixed OS transfer form, T_full=(T_gauge^{1/2} x I)(oplus_U B[U]^dag B[U])(T_gauge^{1/2} x I)=W^dag W, so <Theta(F)F>=||W(O_hat Omega)||^2>=0.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary",
-    "no_go_result",
-    "stretch_attempt_negative"
-  ],
-  "no_go_discipline": null,
   "note_hash": "ac6e412130be1b26c72ae04046cea121f1a77974fab480d831d6cc495e511dbe",
   "note_path": "docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge: add dated load-bearing markdown links from this note to retained one-hop authorities for the mixed-entangled OS representation, Wilson temporal-gauge boundary positivity, and fixed-background fermion transfer positivity; then refresh the cached numerical table against the supplied runner.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -304,6 +273,73 @@
         "total_pass": 6
       },
       "verdict_rationale": "Issue: the valid W^dag W identity imports the mixed OS transfer representation and Wilson-boundary PSD premise, neither of which is closed by the cited authorities. Why this blocks: the runner defines the Gram through the assembled positive operator, while Route C uses det(I+t1) rather than deriving the asserted det(M_KS+mI)-weighted path-integral representation. Repair target: add retained one-hop authorities proving the mixed representation, Wilson-boundary positivity, and fixed-background fermion transfer premise, with a runner that checks their identification. Claim boundary until fixed: only the supplied-premise finite-carrier algebra is supported; the ancillary single-step no-go is non-load-bearing, and one finite negative Gram does not establish the stated exhaustive no-go."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:29.577974+00:00",
+      "audit_date": "2026-07-16T06:10:26.849990+00:00",
+      "audit_invocation_history": [
+        "914b2e646ad24490b0f60e34da57d400"
+      ],
+      "audit_invocation_id": "914b2e646ad24490b0f60e34da57d400",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 9.97,
+        "runner_hash": "35e97b1e015bae056630e92d6cbedfa0052661f3c3c9f720c04e66bd4033d600",
+        "transitive_descendants": 708
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-rp_mixed_observable_sing-130",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The W^dag W factorization closes algebraically under the stated premises, but the cited authorities do not establish the Wilson-boundary PSD kernel or the mixed staggered gauge-fermion OS transfer representation. The runner constructs the represented Gram from T_full rather than deriving that representation from the path integral.",
+      "claim_scope": "Finite-carrier W^dag W algebra for represented mixed gauge+fermion observables, conditional on a PSD gauge transfer, block-diagonal B[U]^dag B[U] fermion blocks, and the mixed OS transfer representation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-16T06:10:26.849990+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Given the represented mixed OS transfer form, T_full=(T_gauge^{1/2} x I)(oplus_U B[U]^dag B[U])(T_gauge^{1/2} x I)=W^dag W, so <Theta(F)F>=||W(O_hat Omega)||^2>=0.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary",
+        "no_go_result",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add dated load-bearing markdown links from this note to retained one-hop authorities for the mixed-entangled OS representation, Wilson temporal-gauge boundary positivity, and fixed-background fermion transfer positivity; then refresh the cached numerical table against the supplied runner.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the valid W^dag W identity imports the mixed OS transfer representation and Wilson-boundary PSD premise, neither of which is closed by the cited authorities. Why this blocks: the runner defines the Gram through the assembled positive operator, while Route C uses det(I+t1) rather than deriving the asserted det(M_KS+mI)-weighted path-integral representation. Repair target: add retained one-hop authorities proving the mixed representation, Wilson-boundary positivity, and fixed-background fermion transfer premise, with a runner that checks their identification. Claim boundary until fixed: only the supplied-premise finite-carrier algebra is supported; the ancillary single-step no-go is non-load-bearing, and one finite negative Gram does not establish the stated exhaustive no-go."
     }
   ],
   "prose_corrections": [],
@@ -318,14 +354,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 6,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 6
+    "total_pass": 0
   },
   "runner_path": "scripts/rp_combined_mixed_observable_u_integrated_2026_05_29.py",
   "title": "Finite-Carrier Single-Transfer Assembly for Mixed Gauge+Fermion Reflection-Positivity Observables",
   "transitive_descendants": 736,
-  "verdict_rationale": "Issue: the valid W^dag W identity imports the mixed OS transfer representation and Wilson-boundary PSD premise, neither of which is closed by the cited authorities. Why this blocks: the runner defines the Gram through the assembled positive operator, while Route C uses det(I+t1) rather than deriving the asserted det(M_KS+mI)-weighted path-integral representation. Repair target: add retained one-hop authorities proving the mixed representation, Wilson-boundary positivity, and fixed-background fermion transfer premise, with a runner that checks their identification. Claim boundary until fixed: only the supplied-premise finite-carrier algebra is supported; the ancillary single-step no-go is non-load-bearing, and one finite negative Gram does not establish the stated exhaustive no-go."
+  "verdict_rationale": null
 }

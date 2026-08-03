@@ -1,59 +1,42 @@
 {
-  "audit_date": "2026-07-16T03:12:18.729502+00:00",
-  "audit_invocation_history": [
-    "da43ce44732142f5ade1887701cdb45c"
-  ],
-  "audit_invocation_id": "da43ce44732142f5ade1887701cdb45c",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 15.98,
-    "runner_hash": "3999f4aa12847acc936173951833268a38635caffd752f952f3376d9982bea2a",
-    "transitive_descendants": 713
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-single_clock_stone_finit-111",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The spectral theorem closes the construction and the identity T^n=U(-in\u03c4), but it does not establish uniqueness among analytic functions agreeing at those discrete points. The sample set has no finite accumulation point, so the analytic identity theorem does not apply.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
-  "claim_scope": "The finite-dimensional construction of H_gen, uniqueness of its strongly continuous unitary group, the identity T^n=U(-in\u03c4), and the asserted uniqueness of analytic continuation from those discrete powers.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-16T03:12:18.729502+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 13,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 16.045,
-  "load_bearing_step": "The continuation is unique because each eigenvalue exp(-i t E_k) is entire and the spectral expansion is finite.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
-  "no_go_discipline": null,
   "note_hash": "fc42a3f0a6e9e2bae30d6db67d9e0f91647baae386f7b2117e6dd6accf44213c",
   "note_path": "docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "Re-audit after removing or narrowing the discrete-samples uniqueness assertion, correcting the sign typo in equation (7), and adding a runner probe using a nonzero entire function that vanishes at every sampled imaginary time.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1373,6 +1356,59 @@
         "total_pass": 24
       },
       "verdict_rationale": "N1-N3 and the equality T^n=U(-in\u03c4) are valid under the stated finite-dimensional hypotheses. The runner checks a concrete diagonal example and the prescribed exponential's group and ODE identities, but never tests uniqueness among all analytic interpolants. For any nonzero matrix A, F(z)=U(z)+sin(\u03c0 i z/\u03c4)A agrees with U at every z=-in\u03c4 yet differs elsewhere; uniqueness follows only after separately imposing the fixed-generator one-parameter-group form. The note's auxiliary counterexample to the removed (*) condition is a valid derived negative boundary, but it does not repair this analytic-continuation overclaim."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:29.862065+00:00",
+      "audit_date": "2026-07-16T03:12:18.729502+00:00",
+      "audit_invocation_history": [
+        "da43ce44732142f5ade1887701cdb45c"
+      ],
+      "audit_invocation_id": "da43ce44732142f5ade1887701cdb45c",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 15.98,
+        "runner_hash": "3999f4aa12847acc936173951833268a38635caffd752f952f3376d9982bea2a",
+        "transitive_descendants": 713
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-single_clock_stone_finit-111",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The spectral theorem closes the construction and the identity T^n=U(-in\u03c4), but it does not establish uniqueness among analytic functions agreeing at those discrete points. The sample set has no finite accumulation point, so the analytic identity theorem does not apply.",
+      "claim_scope": "The finite-dimensional construction of H_gen, uniqueness of its strongly continuous unitary group, the identity T^n=U(-in\u03c4), and the asserted uniqueness of analytic continuation from those discrete powers.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-16T03:12:18.729502+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The continuation is unique because each eigenvalue exp(-i t E_k) is entire and the spectral expansion is finite.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after removing or narrowing the discrete-samples uniqueness assertion, correcting the sign typo in equation (7), and adding a runner probe using a nonzero entire function that vanishes at every sampled imaginary time.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "N1-N3 and the equality T^n=U(-in\u03c4) are valid under the stated finite-dimensional hypotheses. The runner checks a concrete diagonal example and the prescribed exponential's group and ODE identities, but never tests uniqueness among all analytic interpolants. For any nonzero matrix A, F(z)=U(z)+sin(\u03c0 i z/\u03c4)A agrees with U at every z=-in\u03c4 yet differs elsewhere; uniqueness follows only after separately imposing the fixed-generator one-parameter-group form. The note's auxiliary counterexample to the removed (*) condition is a valid derived negative boundary, but it does not repair this analytic-continuation overclaim."
     }
   ],
   "prose_corrections": [],
@@ -1387,14 +1423,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 24,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 24
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_single_clock_stone_finite_dim_exact_2026_05_10.py",
   "title": "Single-Clock Stone Finite-Dim Uniqueness Narrow Theorem",
   "transitive_descendants": 746,
-  "verdict_rationale": "N1-N3 and the equality T^n=U(-in\u03c4) are valid under the stated finite-dimensional hypotheses. The runner checks a concrete diagonal example and the prescribed exponential's group and ODE identities, but never tests uniqueness among all analytic interpolants. For any nonzero matrix A, F(z)=U(z)+sin(\u03c0 i z/\u03c4)A agrees with U at every z=-in\u03c4 yet differs elsewhere; uniqueness follows only after separately imposing the fixed-generator one-parameter-group form. The note's auxiliary counterexample to the removed (*) condition is a valid derived negative boundary, but it does not repair this analytic-continuation overclaim."
+  "verdict_rationale": null
 }

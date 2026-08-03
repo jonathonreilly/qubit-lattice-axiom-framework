@@ -1,318 +1,42 @@
 {
-  "audit_date": "2026-07-25T01:44:38.427356+00:00",
-  "audit_invocation_history": [
-    "c6e695d44dc949cd8a39e72050f2786c",
-    "115dd93ab3f34d05bdaeb11a724abf2a",
-    "f0222963fb5248c0bb8db8704d4a180b"
-  ],
-  "audit_invocation_id": "f0222963fb5248c0bb8db8704d4a180b",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 1,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_yt_source_action_support_packet.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 13.492,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_yt_source_action_support_packet.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "8ba4439e09f5e0ce6b0bd2d3f1cb7749937fcece9fd179373b6fe41a6e679f73",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "8ba4439e09f5e0ce6b0bd2d3f1cb7749937fcece9fd179373b6fe41a6e679f73",
-    "runner_path": "scripts/frontier_yt_source_action_support_packet.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 44
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-judicial-1-20260725-4458c191",
-  "auditor_confidence": "judicial",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\u2013N8. The conservative applyable tuple is therefore the second auditor\u2019s bounded, conditional scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260725-4458c191\", \"judge\": 1, \"rationale\": \"The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\\u2013N8. The conservative applyable tuple is therefore the second auditor\\u2019s bounded, conditional scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-2-20260725-d3f75a1c\", \"judge\": 2, \"rationale\": \"The uniform-baseline exponential identities close algebraically. However, the note also presents a single-authority-question reduction and named remaining gates as support for withholding Y_T closure; those bounded conditional-wall assertions are not established by the three algebra checks or the seven repository-state guards. Without an N1\\u2013N8 stress test, audited_conditional is the conservative applyable verdict.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-3-20260725-5273fde0\", \"judge\": 3, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are genuine class-A algebraic results. However, the note also names unresolved Y_T walls, and the mandatory structured evidence needed for a clean verdict is absent. Because this is a development-tier, non-clean, non-no-go verdict, the second auditor may conservatively declare the negative-assertion classes while leaving the optional structured packet null.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-4-20260725-04be4ec5\", \"judge\": 4, \"rationale\": \"The finite uniform-baseline identities close algebraically, but the artifact also frames the unresolved physical boundary through a single authority question and four named gates. Those bounded wall assertions lack the required N1\\u2013N8 stress evidence, so the conservative applyable verdict is audited_conditional while preserving the exact algebraic core.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-5-20260725-0899dbcb\", \"judge\": 5, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are exact class-A algebra. However, the note goes beyond those identities by presenting a single-authority reduction and a four-gate boundary for remaining Y_T closure; the restricted packet does not establish that boundary through N1\\u2013N8 stress testing. The conservative applyable verdict is therefore audited_conditional at the second auditor\\u2019s narrowed scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}]",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "yt_source_action_support_packet_note_2026-05-22",
-  "claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T01:44:38.427356+00:00",
-  "claim_type_provenance": "judicial_review",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
-  "cross_confirmation": {
-    "agreement_schema": "audit_tuple_v2",
-    "first_audit": {
-      "audit_date": "2026-07-17T17:57:00.232354+00:00",
-      "audit_invocation_id": "c6e695d44dc949cd8a39e72050f2786c",
-      "auditor": "codex-audit-loop-recovery-12h-20260717-7b07fe35ad1145188c8e93934e680a13-yt_source_action_support-001",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": true,
-      "chain_closure_explanation": "The exponential identities and the origin score follow directly for the finite uniform signed-record measure. The action calculation establishes the same normalized family on that baseline without importing physical source-surface authority.",
-      "claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and a site-diagonal source-coupled action; no physical neutral EW/Higgs or Y_T identification was audited.",
-      "claim_type": "bounded_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "cross_family",
-      "load_bearing_step": "On a finite uniform signed-record block, multiplying the exponential source weights adds their profiles, while the action shift S_h = S_0 - sum_x h_x epsilon_x produces the same normalized exponential tilt.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "notes_for_re_audit_if_any": "Re-audit if the claim is broadened to a nonuniform S_0 baseline, where the score is epsilon_x minus its S_0 expectation and the normalizer must be defined relative to the S_0 measure.",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 10,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 10
-      },
-      "verdict": "audited_clean",
-      "verdict_rationale": "The load-bearing result is a genuine finite algebraic identity, not a definition, renaming, tuned numerical match, or external comparison. The runner independently evaluates the three mathematical equalities on a finite sample, while the note supplies the general finite-block proof. The remaining runner checks are scope and repository-state guards and do not provide or purport to provide physical neutral EW/Higgs closure."
-    },
-    "judicial_panel_record_v1": {
-      "cid": "yt_source_action_support_packet_note_2026-05-22",
-      "disagreement_fingerprint": {
-        "claim_id": "yt_source_action_support_packet_note_2026-05-22",
-        "first_audit_invocation_id": "c6e695d44dc949cd8a39e72050f2786c",
-        "note_hash": "faef6bc4e6246cab6d9dab404140936bd7f766c34ddf47852eaae3ca3e9924f3",
-        "schema": "judicial_disagreement_fingerprint_v1",
-        "seat_summaries_sha256": "2b052c2f84472c5834a2e00342ff7d077601959992624f6e580f20552628fd2e",
-        "second_audit_invocation_id": "115dd93ab3f34d05bdaeb11a724abf2a"
-      },
-      "failures": [],
-      "invocation_id": "f0222963fb5248c0bb8db8704d4a180b",
-      "majority_count": 5,
-      "panel": 2,
-      "result": "majority_candidate",
-      "schema": "judicial_panel_record_v1",
-      "tally": [
-        {
-          "count": 5,
-          "tuple": [
-            "second",
-            "audited_conditional",
-            "bounded_theorem",
-            "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
-            "A",
-            null,
-            [
-              "bounded_with_named_walls",
-              "conditional_wall_rationale"
-            ]
-          ]
-        }
-      ],
-      "votes": [
-        {
-          "auditor": "codex-judicial-1-20260725-4458c191",
-          "first_auditor_error": "The first position correctly validates the finite algebraic identities but overlooks the note\u2019s stronger boundary language: it says the source-side mathematics is reduced to a single authority question and names the remaining gates. Those assertions require the N1\u2013N8 stress evidence before an audited_clean verdict can apply.",
-          "hybrid_resolution_note": null,
-          "judge": 1,
-          "judgment_rationale": "The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\u2013N8. The conservative applyable tuple is therefore the second auditor\u2019s bounded, conditional scope.",
-          "negative_assertion_classes": [
-            "bounded_with_named_walls",
-            "conditional_wall_rationale"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
-          "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-2-20260725-d3f75a1c",
-          "first_auditor_error": "The first position ratifies audited_clean with no structured N1\u2013N8 packet despite the binding requirement for every clean verdict, and it treats the named open gates and \u201csingle authority question\u201d boundary as mere exclusions without stress-testing them.",
-          "hybrid_resolution_note": null,
-          "judge": 2,
-          "judgment_rationale": "The uniform-baseline exponential identities close algebraically. However, the note also presents a single-authority-question reduction and named remaining gates as support for withholding Y_T closure; those bounded conditional-wall assertions are not established by the three algebra checks or the seven repository-state guards. Without an N1\u2013N8 stress test, audited_conditional is the conservative applyable verdict.",
-          "negative_assertion_classes": [
-            "bounded_with_named_walls",
-            "conditional_wall_rationale"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
-          "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-3-20260725-5273fde0",
-          "first_auditor_error": "The first auditor returned audited_clean with no_go_discipline=null, but section 4a explicitly requires a complete structured N1\u2013N8 PASS packet for every audited_clean verdict, even when the orchestrator\u2019s source-shape trigger is false; its tuple is therefore unapplyable.",
-          "hybrid_resolution_note": null,
-          "judge": 3,
-          "judgment_rationale": "The finite uniform-baseline exponential-tilt identities are genuine class-A algebraic results. However, the note also names unresolved Y_T walls, and the mandatory structured evidence needed for a clean verdict is absent. Because this is a development-tier, non-clean, non-no-go verdict, the second auditor may conservatively declare the negative-assertion classes while leaving the optional structured packet null.",
-          "negative_assertion_classes": [
-            "bounded_with_named_walls",
-            "conditional_wall_rationale"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
-          "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-4-20260725-04be4ec5",
-          "first_auditor_error": "The first auditor correctly verified the algebraic identity but declared no negative-assertion classes despite the note\u2019s \u201csingle authority question\u201d reduction and four named remaining gates. That omission also made its audited_clean tuple contract-invalid because the required N1\u2013N8 packet was absent.",
-          "hybrid_resolution_note": null,
-          "judge": 4,
-          "judgment_rationale": "The finite uniform-baseline identities close algebraically, but the artifact also frames the unresolved physical boundary through a single authority question and four named gates. Those bounded wall assertions lack the required N1\u2013N8 stress evidence, so the conservative applyable verdict is audited_conditional while preserving the exact algebraic core.",
-          "negative_assertion_classes": [
-            "bounded_with_named_walls",
-            "conditional_wall_rationale"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
-          "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-5-20260725-0899dbcb",
-          "first_auditor_error": "The first auditor scoped out the note\u2019s asserted negative boundary even though the note reduces the source-side problem to a \u201csingle authority question\u201d and enumerates four remaining gates. It also ratified audited_clean without the structured N1\u2013N8 packet required for a clean verdict.",
-          "hybrid_resolution_note": null,
-          "judge": 5,
-          "judgment_rationale": "The finite uniform-baseline exponential-tilt identities are exact class-A algebra. However, the note goes beyond those identities by presenting a single-authority reduction and a four-gate boundary for remaining Y_T closure; the restricted packet does not establish that boundary through N1\u2013N8 stress testing. The conservative applyable verdict is therefore audited_conditional at the second auditor\u2019s narrowed scope.",
-          "negative_assertion_classes": [
-            "bounded_with_named_walls",
-            "conditional_wall_rationale"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
-          "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        }
-      ]
-    },
-    "mode": "judicial_panel_majority",
-    "second_audit": {
-      "audit_date": "2026-07-25T01:32:07.151022+00:00",
-      "audit_invocation_id": "115dd93ab3f34d05bdaeb11a724abf2a",
-      "auditor": "codex-audit-batch-B-20260725-ee4e03ed",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": false,
-      "chain_closure_explanation": "The three uniform-baseline identities close algebraically, but the row\u2019s completeness claim about the named remaining Y_T gates is not established by the restricted evidence or an N1\u2013N8 stress test.",
-      "claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
-      "claim_type": "bounded_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "fresh_context",
-      "load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [
-        "bounded_with_named_walls",
-        "conditional_wall_rationale"
-      ],
-      "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 3,
-        "B": 7,
-        "C": 0,
-        "D": 0,
-        "total_pass": 10
-      },
-      "verdict": "audited_conditional",
-      "verdict_rationale": "Issue: The exponential-tilt identities are exact on the uniform finite baseline, but the note additionally presents four remaining gates as an exhaustive Y_T boundary without the required negative-claim stress evidence. Why this blocks: N1 has fewer than five tested mechanisms; N2 wall independence and N3 hidden-premise scanning are absent; N4 has no matched witness residuals; N5 resolution rhetoric is untested; N6 indexed partial closures are undispositioned; N7 has no resolved steelman; and N8 echoes are undispositioned. Repair target: Execute N1\u2013N8 with route-specific live evidence and validate, collapse, expand, or qualify the gate list. Claim boundary until fixed: Only source composition, the origin score, and the uniform-baseline RN/action identity are supported; no completeness claim about physical Y_T obstructions is established."
-    },
-    "status": "third_confirmed_second",
-    "third_audit": {
-      "audit_date": "2026-07-25T01:44:38.427356+00:00",
-      "audit_invocation_id": "f0222963fb5248c0bb8db8704d4a180b",
-      "auditor": "codex-judicial-1-20260725-4458c191",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
-      "claim_type": "bounded_theorem",
-      "first_auditor_error": "The first position correctly validates the finite algebraic identities but overlooks the note\u2019s stronger boundary language: it says the source-side mathematics is reduced to a single authority question and names the remaining gates. Those assertions require the N1\u2013N8 stress evidence before an audited_clean verdict can apply.",
-      "independence": "judicial_review",
-      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\u2013N8. The conservative applyable tuple is therefore the second auditor\u2019s bounded, conditional scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260725-4458c191\", \"judge\": 1, \"rationale\": \"The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\\u2013N8. The conservative applyable tuple is therefore the second auditor\\u2019s bounded, conditional scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-2-20260725-d3f75a1c\", \"judge\": 2, \"rationale\": \"The uniform-baseline exponential identities close algebraically. However, the note also presents a single-authority-question reduction and named remaining gates as support for withholding Y_T closure; those bounded conditional-wall assertions are not established by the three algebra checks or the seven repository-state guards. Without an N1\\u2013N8 stress test, audited_conditional is the conservative applyable verdict.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-3-20260725-5273fde0\", \"judge\": 3, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are genuine class-A algebraic results. However, the note also names unresolved Y_T walls, and the mandatory structured evidence needed for a clean verdict is absent. Because this is a development-tier, non-clean, non-no-go verdict, the second auditor may conservatively declare the negative-assertion classes while leaving the optional structured packet null.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-4-20260725-04be4ec5\", \"judge\": 4, \"rationale\": \"The finite uniform-baseline identities close algebraically, but the artifact also frames the unresolved physical boundary through a single authority question and four named gates. Those bounded wall assertions lack the required N1\\u2013N8 stress evidence, so the conservative applyable verdict is audited_conditional while preserving the exact algebraic core.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-5-20260725-0899dbcb\", \"judge\": 5, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are exact class-A algebra. However, the note goes beyond those identities by presenting a single-authority reduction and a four-gate boundary for remaining Y_T closure; the restricted packet does not establish that boundary through N1\\u2013N8 stress testing. The conservative applyable verdict is therefore audited_conditional at the second auditor\\u2019s narrowed scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}]",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [
-        "bounded_with_named_walls",
-        "conditional_wall_rationale"
-      ],
-      "second_auditor_error": "none",
-      "sided_with": "second",
-      "verdict": "audited_conditional"
-    }
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 16,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "judicial_review",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 13.492,
-  "load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale"
-  ],
   "note_hash": "faef6bc4e6246cab6d9dab404140936bd7f766c34ddf47852eaae3ca3e9924f3",
   "note_path": "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1650,6 +1374,319 @@
         "total_pass": 0
       },
       "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-08-03T07:42:31.897643+00:00",
+      "audit_date": "2026-07-25T01:44:38.427356+00:00",
+      "audit_invocation_history": [
+        "c6e695d44dc949cd8a39e72050f2786c",
+        "115dd93ab3f34d05bdaeb11a724abf2a",
+        "f0222963fb5248c0bb8db8704d4a180b"
+      ],
+      "audit_invocation_id": "f0222963fb5248c0bb8db8704d4a180b",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_yt_source_action_support_packet.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 13.492,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_yt_source_action_support_packet.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "8ba4439e09f5e0ce6b0bd2d3f1cb7749937fcece9fd179373b6fe41a6e679f73",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "8ba4439e09f5e0ce6b0bd2d3f1cb7749937fcece9fd179373b6fe41a6e679f73",
+        "runner_path": "scripts/frontier_yt_source_action_support_packet.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 44
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judicial-1-20260725-4458c191",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\u2013N8. The conservative applyable tuple is therefore the second auditor\u2019s bounded, conditional scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260725-4458c191\", \"judge\": 1, \"rationale\": \"The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\\u2013N8. The conservative applyable tuple is therefore the second auditor\\u2019s bounded, conditional scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-2-20260725-d3f75a1c\", \"judge\": 2, \"rationale\": \"The uniform-baseline exponential identities close algebraically. However, the note also presents a single-authority-question reduction and named remaining gates as support for withholding Y_T closure; those bounded conditional-wall assertions are not established by the three algebra checks or the seven repository-state guards. Without an N1\\u2013N8 stress test, audited_conditional is the conservative applyable verdict.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-3-20260725-5273fde0\", \"judge\": 3, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are genuine class-A algebraic results. However, the note also names unresolved Y_T walls, and the mandatory structured evidence needed for a clean verdict is absent. Because this is a development-tier, non-clean, non-no-go verdict, the second auditor may conservatively declare the negative-assertion classes while leaving the optional structured packet null.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-4-20260725-04be4ec5\", \"judge\": 4, \"rationale\": \"The finite uniform-baseline identities close algebraically, but the artifact also frames the unresolved physical boundary through a single authority question and four named gates. Those bounded wall assertions lack the required N1\\u2013N8 stress evidence, so the conservative applyable verdict is audited_conditional while preserving the exact algebraic core.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-5-20260725-0899dbcb\", \"judge\": 5, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are exact class-A algebra. However, the note goes beyond those identities by presenting a single-authority reduction and a four-gate boundary for remaining Y_T closure; the restricted packet does not establish that boundary through N1\\u2013N8 stress testing. The conservative applyable verdict is therefore audited_conditional at the second auditor\\u2019s narrowed scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}]",
+      "claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T01:44:38.427356+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "agreement_schema": "audit_tuple_v2",
+        "first_audit": {
+          "audit_date": "2026-07-17T17:57:00.232354+00:00",
+          "audit_invocation_id": "c6e695d44dc949cd8a39e72050f2786c",
+          "auditor": "codex-audit-loop-recovery-12h-20260717-7b07fe35ad1145188c8e93934e680a13-yt_source_action_support-001",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": true,
+          "chain_closure_explanation": "The exponential identities and the origin score follow directly for the finite uniform signed-record measure. The action calculation establishes the same normalized family on that baseline without importing physical source-surface authority.",
+          "claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and a site-diagonal source-coupled action; no physical neutral EW/Higgs or Y_T identification was audited.",
+          "claim_type": "bounded_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "On a finite uniform signed-record block, multiplying the exponential source weights adds their profiles, while the action shift S_h = S_0 - sum_x h_x epsilon_x produces the same normalized exponential tilt.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "notes_for_re_audit_if_any": "Re-audit if the claim is broadened to a nonuniform S_0 baseline, where the score is epsilon_x minus its S_0 expectation and the normalizer must be defined relative to the S_0 measure.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 10,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 10
+          },
+          "verdict": "audited_clean",
+          "verdict_rationale": "The load-bearing result is a genuine finite algebraic identity, not a definition, renaming, tuned numerical match, or external comparison. The runner independently evaluates the three mathematical equalities on a finite sample, while the note supplies the general finite-block proof. The remaining runner checks are scope and repository-state guards and do not provide or purport to provide physical neutral EW/Higgs closure."
+        },
+        "judicial_panel_record_v1": {
+          "cid": "yt_source_action_support_packet_note_2026-05-22",
+          "disagreement_fingerprint": {
+            "claim_id": "yt_source_action_support_packet_note_2026-05-22",
+            "first_audit_invocation_id": "c6e695d44dc949cd8a39e72050f2786c",
+            "note_hash": "faef6bc4e6246cab6d9dab404140936bd7f766c34ddf47852eaae3ca3e9924f3",
+            "schema": "judicial_disagreement_fingerprint_v1",
+            "seat_summaries_sha256": "2b052c2f84472c5834a2e00342ff7d077601959992624f6e580f20552628fd2e",
+            "second_audit_invocation_id": "115dd93ab3f34d05bdaeb11a724abf2a"
+          },
+          "failures": [],
+          "invocation_id": "f0222963fb5248c0bb8db8704d4a180b",
+          "majority_count": 5,
+          "panel": 2,
+          "result": "majority_candidate",
+          "schema": "judicial_panel_record_v1",
+          "tally": [
+            {
+              "count": 5,
+              "tuple": [
+                "second",
+                "audited_conditional",
+                "bounded_theorem",
+                "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+                "A",
+                null,
+                [
+                  "bounded_with_named_walls",
+                  "conditional_wall_rationale"
+                ]
+              ]
+            }
+          ],
+          "votes": [
+            {
+              "auditor": "codex-judicial-1-20260725-4458c191",
+              "first_auditor_error": "The first position correctly validates the finite algebraic identities but overlooks the note\u2019s stronger boundary language: it says the source-side mathematics is reduced to a single authority question and names the remaining gates. Those assertions require the N1\u2013N8 stress evidence before an audited_clean verdict can apply.",
+              "hybrid_resolution_note": null,
+              "judge": 1,
+              "judgment_rationale": "The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\u2013N8. The conservative applyable tuple is therefore the second auditor\u2019s bounded, conditional scope.",
+              "negative_assertion_classes": [
+                "bounded_with_named_walls",
+                "conditional_wall_rationale"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
+              "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-2-20260725-d3f75a1c",
+              "first_auditor_error": "The first position ratifies audited_clean with no structured N1\u2013N8 packet despite the binding requirement for every clean verdict, and it treats the named open gates and \u201csingle authority question\u201d boundary as mere exclusions without stress-testing them.",
+              "hybrid_resolution_note": null,
+              "judge": 2,
+              "judgment_rationale": "The uniform-baseline exponential identities close algebraically. However, the note also presents a single-authority-question reduction and named remaining gates as support for withholding Y_T closure; those bounded conditional-wall assertions are not established by the three algebra checks or the seven repository-state guards. Without an N1\u2013N8 stress test, audited_conditional is the conservative applyable verdict.",
+              "negative_assertion_classes": [
+                "bounded_with_named_walls",
+                "conditional_wall_rationale"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
+              "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-3-20260725-5273fde0",
+              "first_auditor_error": "The first auditor returned audited_clean with no_go_discipline=null, but section 4a explicitly requires a complete structured N1\u2013N8 PASS packet for every audited_clean verdict, even when the orchestrator\u2019s source-shape trigger is false; its tuple is therefore unapplyable.",
+              "hybrid_resolution_note": null,
+              "judge": 3,
+              "judgment_rationale": "The finite uniform-baseline exponential-tilt identities are genuine class-A algebraic results. However, the note also names unresolved Y_T walls, and the mandatory structured evidence needed for a clean verdict is absent. Because this is a development-tier, non-clean, non-no-go verdict, the second auditor may conservatively declare the negative-assertion classes while leaving the optional structured packet null.",
+              "negative_assertion_classes": [
+                "bounded_with_named_walls",
+                "conditional_wall_rationale"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
+              "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-4-20260725-04be4ec5",
+              "first_auditor_error": "The first auditor correctly verified the algebraic identity but declared no negative-assertion classes despite the note\u2019s \u201csingle authority question\u201d reduction and four named remaining gates. That omission also made its audited_clean tuple contract-invalid because the required N1\u2013N8 packet was absent.",
+              "hybrid_resolution_note": null,
+              "judge": 4,
+              "judgment_rationale": "The finite uniform-baseline identities close algebraically, but the artifact also frames the unresolved physical boundary through a single authority question and four named gates. Those bounded wall assertions lack the required N1\u2013N8 stress evidence, so the conservative applyable verdict is audited_conditional while preserving the exact algebraic core.",
+              "negative_assertion_classes": [
+                "bounded_with_named_walls",
+                "conditional_wall_rationale"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
+              "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-5-20260725-0899dbcb",
+              "first_auditor_error": "The first auditor scoped out the note\u2019s asserted negative boundary even though the note reduces the source-side problem to a \u201csingle authority question\u201d and enumerates four remaining gates. It also ratified audited_clean without the structured N1\u2013N8 packet required for a clean verdict.",
+              "hybrid_resolution_note": null,
+              "judge": 5,
+              "judgment_rationale": "The finite uniform-baseline exponential-tilt identities are exact class-A algebra. However, the note goes beyond those identities by presenting a single-authority reduction and a four-gate boundary for remaining Y_T closure; the restricted packet does not establish that boundary through N1\u2013N8 stress testing. The conservative applyable verdict is therefore audited_conditional at the second auditor\u2019s narrowed scope.",
+              "negative_assertion_classes": [
+                "bounded_with_named_walls",
+                "conditional_wall_rationale"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
+              "ratified_claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            }
+          ]
+        },
+        "mode": "judicial_panel_majority",
+        "second_audit": {
+          "audit_date": "2026-07-25T01:32:07.151022+00:00",
+          "audit_invocation_id": "115dd93ab3f34d05bdaeb11a724abf2a",
+          "auditor": "codex-audit-batch-B-20260725-ee4e03ed",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": false,
+          "chain_closure_explanation": "The three uniform-baseline identities close algebraically, but the row\u2019s completeness claim about the named remaining Y_T gates is not established by the restricted evidence or an N1\u2013N8 stress test.",
+          "claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+          "claim_type": "bounded_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale"
+          ],
+          "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 3,
+            "B": 7,
+            "C": 0,
+            "D": 0,
+            "total_pass": 10
+          },
+          "verdict": "audited_conditional",
+          "verdict_rationale": "Issue: The exponential-tilt identities are exact on the uniform finite baseline, but the note additionally presents four remaining gates as an exhaustive Y_T boundary without the required negative-claim stress evidence. Why this blocks: N1 has fewer than five tested mechanisms; N2 wall independence and N3 hidden-premise scanning are absent; N4 has no matched witness residuals; N5 resolution rhetoric is untested; N6 indexed partial closures are undispositioned; N7 has no resolved steelman; and N8 echoes are undispositioned. Repair target: Execute N1\u2013N8 with route-specific live evidence and validate, collapse, expand, or qualify the gate list. Claim boundary until fixed: Only source composition, the origin score, and the uniform-baseline RN/action identity are supported; no completeness claim about physical Y_T obstructions is established."
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-25T01:44:38.427356+00:00",
+          "audit_invocation_id": "f0222963fb5248c0bb8db8704d4a180b",
+          "auditor": "codex-judicial-1-20260725-4458c191",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first position correctly validates the finite algebraic identities but overlooks the note\u2019s stronger boundary language: it says the source-side mathematics is reduced to a single authority question and names the remaining gates. Those assertions require the N1\u2013N8 stress evidence before an audited_clean verdict can apply.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\u2013N8. The conservative applyable tuple is therefore the second auditor\u2019s bounded, conditional scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260725-4458c191\", \"judge\": 1, \"rationale\": \"The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\\u2013N8. The conservative applyable tuple is therefore the second auditor\\u2019s bounded, conditional scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-2-20260725-d3f75a1c\", \"judge\": 2, \"rationale\": \"The uniform-baseline exponential identities close algebraically. However, the note also presents a single-authority-question reduction and named remaining gates as support for withholding Y_T closure; those bounded conditional-wall assertions are not established by the three algebra checks or the seven repository-state guards. Without an N1\\u2013N8 stress test, audited_conditional is the conservative applyable verdict.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-3-20260725-5273fde0\", \"judge\": 3, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are genuine class-A algebraic results. However, the note also names unresolved Y_T walls, and the mandatory structured evidence needed for a clean verdict is absent. Because this is a development-tier, non-clean, non-no-go verdict, the second auditor may conservatively declare the negative-assertion classes while leaving the optional structured packet null.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-4-20260725-04be4ec5\", \"judge\": 4, \"rationale\": \"The finite uniform-baseline identities close algebraically, but the artifact also frames the unresolved physical boundary through a single authority question and four named gates. Those bounded wall assertions lack the required N1\\u2013N8 stress evidence, so the conservative applyable verdict is audited_conditional while preserving the exact algebraic core.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-5-20260725-0899dbcb\", \"judge\": 5, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are exact class-A algebra. However, the note goes beyond those identities by presenting a single-authority reduction and a four-gate boundary for remaining Y_T closure; the restricted packet does not establish that boundary through N1\\u2013N8 stress testing. The conservative applyable verdict is therefore audited_conditional at the second auditor\\u2019s narrowed scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}]",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale"
+          ],
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_cross_confirmation_packet_invalid",
+      "load_bearing_step": "For S_h(epsilon)=S_0(epsilon)-sum_x h_x epsilon_x, the normalized ratio exp(-S_h)/exp(-S_0) is the same exponential RN source family.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Run a route-specific N1\u2013N8 stress test with live evidence, then either validate or qualify the exhaustive \u201csingle authority question\u201d and four-gate boundary; record the resulting qualification in a dated hygiene line in this note so its hash re-enters audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\u2013N8. The conservative applyable tuple is therefore the second auditor\u2019s bounded, conditional scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260725-4458c191\", \"judge\": 1, \"rationale\": \"The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\\u2013N8. The conservative applyable tuple is therefore the second auditor\\u2019s bounded, conditional scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-2-20260725-d3f75a1c\", \"judge\": 2, \"rationale\": \"The uniform-baseline exponential identities close algebraically. However, the note also presents a single-authority-question reduction and named remaining gates as support for withholding Y_T closure; those bounded conditional-wall assertions are not established by the three algebra checks or the seven repository-state guards. Without an N1\\u2013N8 stress test, audited_conditional is the conservative applyable verdict.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-3-20260725-5273fde0\", \"judge\": 3, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are genuine class-A algebraic results. However, the note also names unresolved Y_T walls, and the mandatory structured evidence needed for a clean verdict is absent. Because this is a development-tier, non-clean, non-no-go verdict, the second auditor may conservatively declare the negative-assertion classes while leaving the optional structured packet null.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-4-20260725-04be4ec5\", \"judge\": 4, \"rationale\": \"The finite uniform-baseline identities close algebraically, but the artifact also frames the unresolved physical boundary through a single authority question and four named gates. Those bounded wall assertions lack the required N1\\u2013N8 stress evidence, so the conservative applyable verdict is audited_conditional while preserving the exact algebraic core.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-5-20260725-0899dbcb\", \"judge\": 5, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are exact class-A algebra. However, the note goes beyond those identities by presenting a single-authority reduction and a four-gate boundary for remaining Y_T closure; the restricted packet does not establish that boundary through N1\\u2013N8 stress testing. The conservative applyable verdict is therefore audited_conditional at the second auditor\\u2019s narrowed scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}]"
     }
   ],
   "prose_corrections": [],
@@ -1664,5 +1701,5 @@
   "runner_path": "scripts/frontier_yt_source_action_support_packet.py",
   "title": "Y_T Source-Action Support Packet",
   "transitive_descendants": 44,
-  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\u2013N8. The conservative applyable tuple is therefore the second auditor\u2019s bounded, conditional scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260725-4458c191\", \"judge\": 1, \"rationale\": \"The uniform-baseline source-composition, origin-score, and RN/action identities close algebraically. However, the packet also frames a single remaining source-side authority question and inventories open physical gates, while the runner only checks finite examples, file absence, and scope guards; it does not stress-test that boundary through N1\\u2013N8. The conservative applyable tuple is therefore the second auditor\\u2019s bounded, conditional scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-2-20260725-d3f75a1c\", \"judge\": 2, \"rationale\": \"The uniform-baseline exponential identities close algebraically. However, the note also presents a single-authority-question reduction and named remaining gates as support for withholding Y_T closure; those bounded conditional-wall assertions are not established by the three algebra checks or the seven repository-state guards. Without an N1\\u2013N8 stress test, audited_conditional is the conservative applyable verdict.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-3-20260725-5273fde0\", \"judge\": 3, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are genuine class-A algebraic results. However, the note also names unresolved Y_T walls, and the mandatory structured evidence needed for a clean verdict is absent. Because this is a development-tier, non-clean, non-no-go verdict, the second auditor may conservatively declare the negative-assertion classes while leaving the optional structured packet null.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-4-20260725-04be4ec5\", \"judge\": 4, \"rationale\": \"The finite uniform-baseline identities close algebraically, but the artifact also frames the unresolved physical boundary through a single authority question and four named gates. Those bounded wall assertions lack the required N1\\u2013N8 stress evidence, so the conservative applyable verdict is audited_conditional while preserving the exact algebraic core.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}, {\"auditor\": \"codex-judicial-5-20260725-0899dbcb\", \"judge\": 5, \"rationale\": \"The finite uniform-baseline exponential-tilt identities are exact class-A algebra. However, the note goes beyond those identities by presenting a single-authority reduction and a four-gate boundary for remaining Y_T closure; the restricted packet does not establish that boundary through N1\\u2013N8 stress testing. The conservative applyable verdict is therefore audited_conditional at the second auditor\\u2019s narrowed scope.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Exact finite-support equivalence, on the uniform signed-record baseline, between the product exponential RN source family and the normalized site-diagonal source-coupled action, excluding any completeness claim about physical Y_T gates.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\"]]}]"
+  "verdict_rationale": null
 }

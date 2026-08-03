@@ -1,103 +1,44 @@
 {
-  "audit_date": "2026-07-25T12:31:35.920118+00:00",
-  "audit_invocation_history": [
-    "fd05224c8cb14eb8a68a3694c18a7e9f"
-  ],
-  "audit_invocation_id": "fd05224c8cb14eb8a68a3694c18a7e9f",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true,
-      "runner_path": "scripts/source_resolved_generated_support_mass_scaling.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f"
-    },
-    "load_bearing_score": 1.5,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/causal_field_gravity.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
-        "cache_status": "ok"
-      },
-      "scripts/source_resolved_generated_support_mass_scaling.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "b37ebd9375b14677e5fff16aef9580fcd7f6c17b990f54f83e172f197df439be",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "b37ebd9375b14677e5fff16aef9580fcd7f6c17b990f54f83e172f197df439be",
-    "runner_path": "scripts/source_resolved_generated_support_mass_scaling.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-73e5c2f1",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The runner computes the per-strength rows and fitted exponents, but no explicit threshold or independent comparator turns the -0.152 exponent into failure of the retained linear class. Also, the stated tweak aggregate mean (-4.658e-02) is not the arithmetic mean of the displayed rows (-4.663e-02).",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "source_resolved_generated_support_mass_scaling_note",
-  "claim_scope": "Frozen seeds 0..3 per-strength rows, zero-source checks, sign counts, mean N_eff, and fitted exponents; excluding the aggregate centroid-mean column and classifier-level mass-law conclusion.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T12:31:35.920118+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/causal_field_gravity.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
-  "load_bearing_step": "The four-strength fits give exponents -0.299 for baseline and -0.152 with the kNN floor, supporting broader detector support and improved sign but not, without a comparator, the claimed mass-scaling classification.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "235accaf3b4fd6a2c4ef41296f0ab361cb5cdda213d5f1385e27a0c158b395e2",
   "note_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: correct the tweak aggregate mean to -4.663e-02 and narrow the retained statement to the certified finite readout; if the classifier conclusion is retained, add an explicit linear-class threshold and uncertainty test.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -1463,6 +1404,102 @@
         "total_pass": 1
       },
       "verdict_rationale": "Issue: the note claims that its two-row aggregate table is reproduced by the runner and defines the centroid column as the arithmetic mean, but the tweak value -4.658e-02 disagrees with the displayed per-strength rows, and the runner does not print that aggregate. Why this blocks: the claimed supported perimeter expressly includes that numerical table, while the stronger mass-class rejection additionally relies on an unspecified comparator threshold and a sign-changing absolute-value fit. Repair target: print and assert the aggregate means in the runner, refresh the stale value, and register an executable linear-class criterion using an appropriate signed or piecewise response analysis. Claim boundary until fixed: the zero-source checks, per-strength rows, sign counts, mean N_eff values, and fitted absolute-magnitude exponents remain reproducible finite diagnostics."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:29.995592+00:00",
+      "audit_date": "2026-07-25T12:31:35.920118+00:00",
+      "audit_invocation_history": [
+        "fd05224c8cb14eb8a68a3694c18a7e9f"
+      ],
+      "audit_invocation_id": "fd05224c8cb14eb8a68a3694c18a7e9f",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/source_resolved_generated_support_mass_scaling.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f"
+        },
+        "load_bearing_score": 1.5,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/causal_field_gravity.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
+            "cache_status": "ok"
+          },
+          "scripts/source_resolved_generated_support_mass_scaling.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "b37ebd9375b14677e5fff16aef9580fcd7f6c17b990f54f83e172f197df439be",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "b37ebd9375b14677e5fff16aef9580fcd7f6c17b990f54f83e172f197df439be",
+        "runner_path": "scripts/source_resolved_generated_support_mass_scaling.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-73e5c2f1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the per-strength rows and fitted exponents, but no explicit threshold or independent comparator turns the -0.152 exponent into failure of the retained linear class. Also, the stated tweak aggregate mean (-4.658e-02) is not the arithmetic mean of the displayed rows (-4.663e-02).",
+      "claim_scope": "Frozen seeds 0..3 per-strength rows, zero-source checks, sign counts, mean N_eff, and fitted exponents; excluding the aggregate centroid-mean column and classifier-level mass-law conclusion.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T12:31:35.920118+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The four-strength fits give exponents -0.299 for baseline and -0.152 with the kNN floor, supporting broader detector support and improved sign but not, without a comparator, the claimed mass-scaling classification.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: correct the tweak aggregate mean to -4.663e-02 and narrow the retained statement to the certified finite readout; if the classifier conclusion is retained, add an explicit linear-class threshold and uncertainty test.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The primary runner and supplied helper genuinely compute the finite seeded observables rather than printing expected constants, and stdout supports the per-strength tables, zero-source checks, sign counts, mean N_eff values, and fitted exponents. The aggregate tweak centroid mean is arithmetically inconsistent with those rows, while the classifier-level conclusion still imports an unspecified linear-class comparator. The asserted negative result is therefore only a finite stretch result and a bounded, conditional wall rationale, not a closed mass-law classification."
     }
   ],
   "prose_corrections": [],
@@ -1470,12 +1507,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 1,
+    "C": 0,
     "D": 0,
-    "total_pass": 1
+    "total_pass": 0
   },
   "runner_path": "scripts/source_resolved_generated_support_mass_scaling.py",
   "title": "Source-Resolved Generated Support + Mass Scaling",
   "transitive_descendants": 1,
-  "verdict_rationale": "The primary runner and supplied helper genuinely compute the finite seeded observables rather than printing expected constants, and stdout supports the per-strength tables, zero-source checks, sign counts, mean N_eff values, and fitted exponents. The aggregate tweak centroid mean is arithmetically inconsistent with those rows, while the classifier-level conclusion still imports an unspecified linear-class comparator. The asserted negative result is therefore only a finite stretch result and a bounded, conditional wall rationale, not a closed mass-law classification."
+  "verdict_rationale": null
 }

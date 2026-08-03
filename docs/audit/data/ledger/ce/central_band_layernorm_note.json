@@ -1,39 +1,24 @@
 {
-  "audit_date": "2026-05-21T22:08:00.113358+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_claim_scope": {
-      "geometry_lane_head_to_head_note": "Finite four-configuration runner table for modular gap=2, modular gap=4, central |y-center|<1, and central |y-center|<2 on N=25,40,60,80,100 with 16 matched seeds, npl=25, y_range=12, connect_radius=3.0, and the stated layernorm pur_min/gravity readouts."
-    },
-    "dep_claim_type": {
-      "geometry_lane_head_to_head_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "geometry_lane_head_to_head_note": "retained_bounded"
-    },
-    "deps": [
-      "geometry_lane_head_to_head_note"
-    ],
-    "load_bearing_score": 0.0,
-    "runner_hash": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-central_band_layernorm_n-024",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The primary runner and helper sources compute the central-band graph generation, pruning, propagation, purity, gravity, and standard-error summaries directly rather than printing constants. The modular-gap comparison row and fit are inlined, and the one-hop cited authority is retained_bounded.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "central_band_layernorm_note",
-  "claim_scope": "Finite matched-seed runner audit of central-band removal with layernorm for N=25,40,60,80,100, y_cut in {1,2,3}, plus in-packet comparison to the modular-gap=2 + layernorm row.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-21T22:08:00.113358+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -41,23 +26,23 @@
     "geometry_lane_head_to_head_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/combined_gravity_scaling.py",
     "scripts/generative_causal_dag_interference.py",
     "scripts/topology_families.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Using the decoherence-optimal y_cut = 2 layernorm row, the central-band fit is (1 - pur_min) = 4.81 * N^(-0.813) and it is competitive with, but does not dominate, modular gap=2 + layernorm.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "bafa729f59c9686c64fa6d556342c63aca97bdd89e905feb11b7fc0c25eea089",
   "note_path": "docs/CENTRAL_BAND_LAYERNORM_NOTE.md",
-  "notes_for_re_audit_if_any": "A second auditor should re-check the central-band y_cut=2 log-linear fit coefficients and the modular-gap inlined fit arithmetic, but the packet contains the needed data.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -226,19 +211,74 @@
         "total_pass": 2
       },
       "verdict_rationale": "The central-band part is substantially supported: the provided runner computes the reported central-band table from generated DAGs and layernorm propagation rather than printing constants. However, the load-bearing comparison to modular gap=2 imports the canonical modular row from `geometry_lane_head_to_head.py` / its cache, and those artifacts are not supplied for source-level verification. A second audit should also re-check the modular `R^2` convention, since the stated log-linear fit coefficients match the inlined points but the reported `R^2=0.970` appears to be original-space rather than log-space."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:07.191271+00:00",
+      "audit_date": "2026-05-21T22:08:00.113358+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "geometry_lane_head_to_head_note": "Finite four-configuration runner table for modular gap=2, modular gap=4, central |y-center|<1, and central |y-center|<2 on N=25,40,60,80,100 with 16 matched seeds, npl=25, y_range=12, connect_radius=3.0, and the stated layernorm pur_min/gravity readouts."
+        },
+        "dep_claim_type": {
+          "geometry_lane_head_to_head_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "geometry_lane_head_to_head_note": "retained_bounded"
+        },
+        "deps": [
+          "geometry_lane_head_to_head_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ede0c2eed1c75533893d356eb23c408c0f8f1ca56c82967f74e2da996f58b208",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-central_band_layernorm_n-024",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner and helper sources compute the central-band graph generation, pruning, propagation, purity, gravity, and standard-error summaries directly rather than printing constants. The modular-gap comparison row and fit are inlined, and the one-hop cited authority is retained_bounded.",
+      "claim_scope": "Finite matched-seed runner audit of central-band removal with layernorm for N=25,40,60,80,100, y_cut in {1,2,3}, plus in-packet comparison to the modular-gap=2 + layernorm row.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-21T22:08:00.113358+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Using the decoherence-optimal y_cut = 2 layernorm row, the central-band fit is (1 - pur_min) = 4.81 * N^(-0.813) and it is competitive with, but does not dominate, modular gap=2 + layernorm.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the central-band y_cut=2 log-linear fit coefficients and the modular-gap inlined fit arithmetic, but the packet contains the needed data.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The central-band numerical table is supported by completed runner stdout whose values match the note, and the runner source performs the graph construction, pruning rule, propagation, purity, and gravity computations without hard-coded expected outputs. The scaling fit and threshold comparisons are algebraic summaries over the computed row and the inlined modular-gap row. The conclusion is bounded and appropriately cautious: central-band removal is competitive through the finite sweep but not a universal winner."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 1,
-    "B": 1,
-    "C": 1,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 3
+    "total_pass": 0
   },
   "runner_path": "scripts/central_band_layernorm_combo.py",
   "title": "Central-Band Removal + Layernorm Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "The central-band numerical table is supported by completed runner stdout whose values match the note, and the runner source performs the graph construction, pruning rule, propagation, purity, and gravity computations without hard-coded expected outputs. The scaling fit and threshold comparisons are algebraic summaries over the computed row and the inlined modular-gap row. The conclusion is bounded and appropriately cautious: central-band removal is competitive through the finite sweep but not a universal winner."
+  "verdict_rationale": null
 }

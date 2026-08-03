@@ -1,213 +1,31 @@
 {
-  "audit_date": "2026-07-25T12:27:42.193299+00:00",
-  "audit_invocation_history": [
-    "d4b52337334b4e61a4dec42b4ca9e51f"
-  ],
-  "audit_invocation_id": "d4b52337334b4e61a4dec42b4ca9e51f",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 0,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/_frontier_loader.py": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
-      "scripts/frontier_coarse_grained_exterior_law.py": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
-      "scripts/frontier_discrete_dtn_shell_kernel.py": "31cb89f1b161de258503a6a91f5c2334d041099f0f135df0aeb7078520bc0d31",
-      "scripts/frontier_finite_rank_gravity_residual.py": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
-      "scripts/frontier_flux_fixed_matching_theorem.py": "3ea379ef8f2642858772e3017e06a90784651f0ceb27d540d06622e5940df95d",
-      "scripts/frontier_microscopic_dirichlet_bridge_principle.py": "18ebfab7a135966a29a2df9ca62378203224a8c2fec6c854e58beb702f954b4e",
-      "scripts/frontier_oh_schur_boundary_action.py": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
-      "scripts/frontier_one_parameter_reduced_shell_law.py": "d6e71ec16da2c52c9515360c136c724d75029ca212171922a40fbc014e05e40e",
-      "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py": "55020114ec83ccf1b61e6d167aaaed0b67dda356542fa363d79f5b2b4f81c791",
-      "scripts/frontier_radial_shell_matching_law.py": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
-      "scripts/frontier_same_source_metric_ansatz_scan.py": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
-      "scripts/frontier_sewing_shell_source.py": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
-      "scripts/frontier_star_shell_projector.py": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
-      "scripts/frontier_tensor_boundary_drive_two_channel.py": "966053ec7eef614d46776a72f70da1c9c9a7b9188942340ed1bfaf6f1d4d6721",
-      "scripts/frontier_tensor_universal_kernel.py": "6633ff45feebad69a60a4da2e652432b2d8a0286dc29004cf23bd65cb75ca07b",
-      "scripts/frontier_tensorial_einstein_regge_completion.py": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
-      "scripts/frontier_universal_shell_profile.py": "34d892020e314f3edb0e7d10bc515fccfb2dbb2bf90f7c7421324c09dcc16d15"
-    },
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/_frontier_loader.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_coarse_grained_exterior_law.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_discrete_dtn_shell_kernel.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_finite_rank_gravity_residual.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_flux_fixed_matching_theorem.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_microscopic_dirichlet_bridge_principle.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_oh_schur_boundary_action.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_one_parameter_reduced_shell_law.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "d6e71ec16da2c52c9515360c136c724d75029ca212171922a40fbc014e05e40e",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "55020114ec83ccf1b61e6d167aaaed0b67dda356542fa363d79f5b2b4f81c791",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "69b4c171fe9858171551f12841c6a598d14fe2538055b0fc0ca9652cb5fc06f0",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_radial_shell_matching_law.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_same_source_metric_ansatz_scan.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_sewing_shell_source.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_star_shell_projector.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_tensor_boundary_drive_two_channel.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_tensor_universal_kernel.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_tensorial_einstein_regge_completion.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_universal_shell_profile.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "69b4c171fe9858171551f12841c6a598d14fe2538055b0fc0ca9652cb5fc06f0",
-    "runner_path": "scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-a1d720cd",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The runner closes the finite-prefix computations, but no asymptotic theorem or formal criterion turns four samples into the claimed no-go on convergence evidence; that missing obligation is comparable to the scoped negative conclusion.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "quark_route2_e_center_lift_size_scan_boundary_note_2026-06-21",
-  "claim_scope": "The audited finite-box family at N=11, 13, 15, and 17 does not support the naive inference that the N=15 match demonstrates convergence of q_E(N) to 15/8; no claim is made against a different size-stable family or future infinite-volume theorem.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T12:27:42.193299+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/_frontier_loader.py",
     "scripts/frontier_coarse_grained_exterior_law.py",
@@ -227,23 +45,16 @@
     "scripts/frontier_tensorial_einstein_regge_completion.py",
     "scripts/frontier_universal_shell_profile.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The neighboring executable boxes do not lie near the target chain and do not form a monotone convergence certificate.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary",
-    "no_go_result",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "c10cfba45d74b281970eff53818aecab7ca174396dab7f31ac6fa2d362fcf2c4",
   "note_path": "docs/QUARK_ROUTE2_E_CENTER_LIFT_SIZE_SCAN_BOUNDARY_NOTE_2026-06-21.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: narrow the source to the computed N=11,13,15,17 finite-prefix facts and refresh the N=13/N=17 table values; retain the no-go and cannot-be-cited language only after a dedicated N1-N8 stress-test runner supplies alternative-route, five-resolution, steelman, and cross-cycle dispositions.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -290,19 +101,245 @@
         "total_pass": 7
       },
       "verdict_rationale": "The load-bearing numerical rows are produced by an actual finite-operator computation rather than printed constants or imported target values. The landed cache is used only to verify N=15 reproducibility, while the negative conclusion comes from independently computed neighboring sizes. The conclusion is appropriately limited to absence of convergence evidence for the current parameterization and does not overclaim nonconvergence or refute a future infinite-volume theorem."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:27.398258+00:00",
+      "audit_date": "2026-07-25T12:27:42.193299+00:00",
+      "audit_invocation_history": [
+        "d4b52337334b4e61a4dec42b4ca9e51f"
+      ],
+      "audit_invocation_id": "d4b52337334b4e61a4dec42b4ca9e51f",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 0,
+            "D": 2
+          },
+          "decoration_candidate": false,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/_frontier_loader.py": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
+          "scripts/frontier_coarse_grained_exterior_law.py": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+          "scripts/frontier_discrete_dtn_shell_kernel.py": "31cb89f1b161de258503a6a91f5c2334d041099f0f135df0aeb7078520bc0d31",
+          "scripts/frontier_finite_rank_gravity_residual.py": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
+          "scripts/frontier_flux_fixed_matching_theorem.py": "3ea379ef8f2642858772e3017e06a90784651f0ceb27d540d06622e5940df95d",
+          "scripts/frontier_microscopic_dirichlet_bridge_principle.py": "18ebfab7a135966a29a2df9ca62378203224a8c2fec6c854e58beb702f954b4e",
+          "scripts/frontier_oh_schur_boundary_action.py": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
+          "scripts/frontier_one_parameter_reduced_shell_law.py": "d6e71ec16da2c52c9515360c136c724d75029ca212171922a40fbc014e05e40e",
+          "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py": "55020114ec83ccf1b61e6d167aaaed0b67dda356542fa363d79f5b2b4f81c791",
+          "scripts/frontier_radial_shell_matching_law.py": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
+          "scripts/frontier_same_source_metric_ansatz_scan.py": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
+          "scripts/frontier_sewing_shell_source.py": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
+          "scripts/frontier_star_shell_projector.py": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
+          "scripts/frontier_tensor_boundary_drive_two_channel.py": "966053ec7eef614d46776a72f70da1c9c9a7b9188942340ed1bfaf6f1d4d6721",
+          "scripts/frontier_tensor_universal_kernel.py": "6633ff45feebad69a60a4da2e652432b2d8a0286dc29004cf23bd65cb75ca07b",
+          "scripts/frontier_tensorial_einstein_regge_completion.py": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+          "scripts/frontier_universal_shell_profile.py": "34d892020e314f3edb0e7d10bc515fccfb2dbb2bf90f7c7421324c09dcc16d15"
+        },
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/_frontier_loader.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_coarse_grained_exterior_law.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_discrete_dtn_shell_kernel.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_finite_rank_gravity_residual.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_flux_fixed_matching_theorem.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_microscopic_dirichlet_bridge_principle.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_oh_schur_boundary_action.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_one_parameter_reduced_shell_law.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "d6e71ec16da2c52c9515360c136c724d75029ca212171922a40fbc014e05e40e",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "55020114ec83ccf1b61e6d167aaaed0b67dda356542fa363d79f5b2b4f81c791",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "69b4c171fe9858171551f12841c6a598d14fe2538055b0fc0ca9652cb5fc06f0",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_radial_shell_matching_law.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_same_source_metric_ansatz_scan.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_sewing_shell_source.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_star_shell_projector.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_tensor_boundary_drive_two_channel.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_tensor_universal_kernel.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_tensorial_einstein_regge_completion.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_universal_shell_profile.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "69b4c171fe9858171551f12841c6a598d14fe2538055b0fc0ca9652cb5fc06f0",
+        "runner_path": "scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-a1d720cd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the finite-prefix computations, but no asymptotic theorem or formal criterion turns four samples into the claimed no-go on convergence evidence; that missing obligation is comparable to the scoped negative conclusion.",
+      "claim_scope": "The audited finite-box family at N=11, 13, 15, and 17 does not support the naive inference that the N=15 match demonstrates convergence of q_E(N) to 15/8; no claim is made against a different size-stable family or future infinite-volume theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T12:27:42.193299+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The neighboring executable boxes do not lie near the target chain and do not form a monotone convergence certificate.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "no_go_result",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the source to the computed N=11,13,15,17 finite-prefix facts and refresh the N=13/N=17 table values; retain the no-go and cannot-be-cited language only after a dedicated N1-N8 stress-test runner supplies alternative-route, five-resolution, steelman, and cross-cycle dispositions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 4,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner is a genuine class-C finite-lattice computation and robustly establishes the finite-prefix sign and gap facts, although the N=13 and N=17 values are slightly stale in the note. The strongest unresolved terminal obligation is a formal asymptotic-control or convergence-evidence criterion, comparable to the negative route-pruning conclusion, because a nonmonotone finite prefix can still converge. N1 supplies only one attempted numerical route; N2 has no independent wall set; N3's boundary and normalization terms are explicit current-family restrictions; N4 has no prior residual witness; N5 has no five-resolution execution; N6 leaves partial-closure candidates open; N7 lacks an independent steelman resolution; and N8's cross-cycle echoes are not dispositioned. The finite observations remain bounded support, but the asserted no-go conclusion is conditional rather than clean."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 1,
-    "B": 2,
-    "C": 4,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 7
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py",
   "title": "Route-2 E-Center Lift Size-Scan Boundary: the 15^3 Calibration Replay Is Real, but the Current Finite-Box Family Does Not Certify Convergence",
   "transitive_descendants": 0,
-  "verdict_rationale": "The runner is a genuine class-C finite-lattice computation and robustly establishes the finite-prefix sign and gap facts, although the N=13 and N=17 values are slightly stale in the note. The strongest unresolved terminal obligation is a formal asymptotic-control or convergence-evidence criterion, comparable to the negative route-pruning conclusion, because a nonmonotone finite prefix can still converge. N1 supplies only one attempted numerical route; N2 has no independent wall set; N3's boundary and normalization terms are explicit current-family restrictions; N4 has no prior residual witness; N5 has no five-resolution execution; N6 leaves partial-closure candidates open; N7 lacks an independent steelman resolution; and N8's cross-cycle echoes are not dispositioned. The finite observations remain bounded support, but the asserted no-go conclusion is conditional rather than clean."
+  "verdict_rationale": null
 }

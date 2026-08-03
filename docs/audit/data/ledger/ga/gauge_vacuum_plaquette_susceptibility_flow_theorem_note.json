@@ -1,70 +1,44 @@
 {
-  "audit_date": "2026-07-22T18:23:13.482301+00:00",
-  "audit_invocation_history": [
-    "0b56aec362964ff6bf94ec5f6242401d",
-    "40a06dfcea024b4b892fc4fed8190794"
-  ],
-  "audit_invocation_id": "40a06dfcea024b4b892fc4fed8190794",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "gauge_vacuum_plaquette_reduction_existence_theorem_note": "For every integer L >= 2 on the finite periodic SU(3) Wilson L^4 product-Haar space and beta >= 0, P_1plaq and P_L are real-analytic strictly increasing bijections onto [0,1), so beta_eff,L = P_1plaq^(-1) composed with P_L exists uniquely, is real analytic and strictly increasing, and satisfies beta_eff,L(0) = 0 and beta_eff,L'(0) = 1; no physical reduction law or interpretation of beta is included."
-    },
-    "dep_claim_type": {
-      "gauge_vacuum_plaquette_reduction_existence_theorem_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained_bounded"
-    },
-    "deps": [
-      "gauge_vacuum_plaquette_reduction_existence_theorem_note"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 11.762,
-    "runner_hash": "9f06a14eb67b2fea4615a97dcf9e69507cef9cc66862bc708635f3ff7937df84",
-    "transitive_descendants": 867
-  },
-  "audit_status": "audited_decoration",
-  "auditor": "codex-audit-batch-B-20260722-a302aa71",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The retained parent supplies the analytic inverse coordinate and nonvanishing derivatives. The chain rule and fundamental theorem of calculus then give the stated quotient and integral identities without evaluating the unknown finite-volume susceptibility.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
-  "claim_scope": "On finite periodic SU(3) Wilson L^4 surfaces with L >= 2 and finite beta >= 0, differentiating the retained inverse-coordinate identity yields the susceptibility quotient and integral representation while leaving chi_L unevaluated.",
-  "claim_type": "decoration",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-22T18:23:13.482301+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+  "decoration_parent_claim_id": null,
   "deps": [
     "gauge_vacuum_plaquette_reduction_existence_theorem_note"
   ],
   "direct_in_degree": 4,
-  "effective_status": "decoration_under_gauge_vacuum_plaquette_reduction_existence_theorem_note",
-  "effective_status_reason": "decoration_parent_retained",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "decoration_under_gauge_vacuum_plaquette_reduction_existence_theorem_note",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 15.79,
-  "load_bearing_step": "Differentiating the coordinate identity gives `chi_L(beta) = chi_1plaq(beta_eff,L(beta)) * beta_eff,L'(beta)`.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "retained_no_go",
   "max_descendant_status_rank": 100,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "5121d03fb03a3bfa03c9f586d0a15c8dc230ff5f073534c9a813f7dae94e48e2",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -309,19 +283,82 @@
         "total_pass": 8
       },
       "verdict_rationale": "The load-bearing step is a genuine algebraic consequence of the retained implicit reduction theorem and the positivity of the one-plaquette susceptibility. The mixed-cumulant authority supplies the retained beta^5 onset coefficient, whose differentiation gives the stated beta^4 susceptibility coefficient. The runner's theorem checks are algebraic/imported-coefficient checks; its canonical plaquette inverse checks use a hard-coded support value but are non-load-bearing for this bounded theorem."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.901696+00:00",
+      "audit_date": "2026-07-22T18:23:13.482301+00:00",
+      "audit_invocation_history": [
+        "0b56aec362964ff6bf94ec5f6242401d",
+        "40a06dfcea024b4b892fc4fed8190794"
+      ],
+      "audit_invocation_id": "40a06dfcea024b4b892fc4fed8190794",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "For every integer L >= 2 on the finite periodic SU(3) Wilson L^4 product-Haar space and beta >= 0, P_1plaq and P_L are real-analytic strictly increasing bijections onto [0,1), so beta_eff,L = P_1plaq^(-1) composed with P_L exists uniquely, is real analytic and strictly increasing, and satisfies beta_eff,L(0) = 0 and beta_eff,L'(0) = 1; no physical reduction law or interpretation of beta is included."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.762,
+        "runner_hash": "9f06a14eb67b2fea4615a97dcf9e69507cef9cc66862bc708635f3ff7937df84",
+        "transitive_descendants": 867
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-batch-B-20260722-a302aa71",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained parent supplies the analytic inverse coordinate and nonvanishing derivatives. The chain rule and fundamental theorem of calculus then give the stated quotient and integral identities without evaluating the unknown finite-volume susceptibility.",
+      "claim_scope": "On finite periodic SU(3) Wilson L^4 surfaces with L >= 2 and finite beta >= 0, differentiating the retained inverse-coordinate identity yields the susceptibility quotient and integral representation while leaving chi_L unevaluated.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-22T18:23:13.482301+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Differentiating the coordinate identity gives `chi_L(beta) = chi_1plaq(beta_eff,L(beta)) * beta_eff,L'(beta)`.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The retained parent already proves the inverse-coordinate definition and its derivative formula; this note applies standard calculus and susceptibility notation, so its load-bearing content is class A decoration with no external comparator. The runner genuinely checks an exact composition and numerically computes sampled one-plaquette susceptibilities, but it does not compute chi_L and does not overstate those samples as a proof of the finite-volume response. N1-N4: algebraic rearrangement, normalization changes, finite sampling, alternate readouts, and registry reclassification do not evaluate chi_L; the sole named wall is independent determination of chi_L, with no hidden load-bearing admission or prior-residual import. N5-N8: the negative language is confined to that non-evaluative boundary, the strongest differentiate-and-solve steelman retains the same unknown quotient, and no partial-closure premise or cross-cycle echo is used by the decorated identity."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 1,
+    "A": 0,
     "B": 0,
-    "C": 1,
+    "C": 0,
     "D": 0,
-    "total_pass": 2
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py",
   "title": "Gauge-Vacuum Plaquette Inverse-Coordinate Derivative Packet",
   "transitive_descendants": 884,
-  "verdict_rationale": "The retained parent already proves the inverse-coordinate definition and its derivative formula; this note applies standard calculus and susceptibility notation, so its load-bearing content is class A decoration with no external comparator. The runner genuinely checks an exact composition and numerically computes sampled one-plaquette susceptibilities, but it does not compute chi_L and does not overstate those samples as a proof of the finite-volume response. N1-N4: algebraic rearrangement, normalization changes, finite sampling, alternate readouts, and registry reclassification do not evaluate chi_L; the sole named wall is independent determination of chi_L, with no hidden load-bearing admission or prior-residual import. N5-N8: the negative language is confined to that non-evaluative boundary, the strongest differentiate-and-solve steelman retains the same unknown quotient, and no partial-closure premise or cross-cycle echo is used by the decorated identity."
+  "verdict_rationale": null
 }

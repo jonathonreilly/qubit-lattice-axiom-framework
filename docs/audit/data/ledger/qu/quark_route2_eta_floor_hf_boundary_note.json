@@ -1,197 +1,31 @@
 {
-  "audit_date": "2026-07-25T04:46:49.731422+00:00",
-  "audit_invocation_history": [
-    "27631d28af22446cac42910fc1aa67ea"
-  ],
-  "audit_invocation_id": "27631d28af22446cac42910fc1aa67ea",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/quark_route2_eta_floor_hf_boundary_check.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/_frontier_loader.py": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
-      "scripts/frontier_coarse_grained_exterior_law.py": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
-      "scripts/frontier_discrete_dtn_shell_kernel.py": "31cb89f1b161de258503a6a91f5c2334d041099f0f135df0aeb7078520bc0d31",
-      "scripts/frontier_finite_rank_gravity_residual.py": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
-      "scripts/frontier_flux_fixed_matching_theorem.py": "3ea379ef8f2642858772e3017e06a90784651f0ceb27d540d06622e5940df95d",
-      "scripts/frontier_microscopic_dirichlet_bridge_principle.py": "18ebfab7a135966a29a2df9ca62378203224a8c2fec6c854e58beb702f954b4e",
-      "scripts/frontier_oh_schur_boundary_action.py": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
-      "scripts/frontier_radial_shell_matching_law.py": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
-      "scripts/frontier_same_source_metric_ansatz_scan.py": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
-      "scripts/frontier_sewing_shell_source.py": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
-      "scripts/frontier_star_shell_projector.py": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
-      "scripts/frontier_tensor_boundary_drive_two_channel.py": "966053ec7eef614d46776a72f70da1c9c9a7b9188942340ed1bfaf6f1d4d6721",
-      "scripts/frontier_tensor_universal_kernel.py": "6633ff45feebad69a60a4da2e652432b2d8a0286dc29004cf23bd65cb75ca07b",
-      "scripts/frontier_tensorial_einstein_regge_completion.py": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
-      "scripts/frontier_universal_shell_profile.py": "34d892020e314f3edb0e7d10bc515fccfb2dbb2bf90f7c7421324c09dcc16d15"
-    },
-    "load_bearing_score": 3.822,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/_frontier_loader.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_coarse_grained_exterior_law.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_discrete_dtn_shell_kernel.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_finite_rank_gravity_residual.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_flux_fixed_matching_theorem.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_microscopic_dirichlet_bridge_principle.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_oh_schur_boundary_action.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_radial_shell_matching_law.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_same_source_metric_ansatz_scan.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_sewing_shell_source.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_star_shell_projector.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_tensor_boundary_drive_two_channel.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_tensor_universal_kernel.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_tensorial_einstein_regge_completion.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_universal_shell_profile.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/quark_route2_eta_floor_hf_boundary_check.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "f31460d33a845bae8b976dd74d5556e3ff8b93ddbeec0e531c567cd35d4c76f0",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "f31460d33a845bae8b976dd74d5556e3ff8b93ddbeec0e531c567cd35d4c76f0",
-    "runner_path": "scripts/quark_route2_eta_floor_hf_boundary_check.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 9
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-03600346",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The inspected assignments close the narrower fact that eta_floor[1] is e_spatial_tf and FamilyBlock exposes no eigenpair. The broader negative boundary cannot be cemented because the N1 routes collapse to one implementation-trace mechanism rather than five distinct attack classes.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "quark_route2_eta_floor_hf_boundary_note",
-  "claim_scope": "The inspected live Route-2 assignments set eta_floor[1] to e_spatial_tf and expose no spectral operator or floor eigenpair in FamilyBlock.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (implementation-boundary result)",
-  "claim_type_last_reviewed": "2026-07-25T04:46:49.731422+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/_frontier_loader.py",
     "scripts/frontier_coarse_grained_exterior_law.py",
@@ -209,22 +43,16 @@
     "scripts/frontier_tensorial_einstein_regge_completion.py",
     "scripts/frontier_universal_shell_profile.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 11.116,
-  "load_bearing_step": "The live eta-floor endpoint is a nonspectral max-entry envelope, not a lambda_min(A(phi)) object.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary",
-    "no_go_result",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "88e0d9ea383da3f2f2f1ef30e1ad880553ada55e045cb3db1591dcf40225321a",
   "note_path": "docs/QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: add live route-specific N1 tests spanning at least five genuinely distinct mechanism classes and resolve the conceptual-spectral steelman and authenticated cross-cycle scan before re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1445,19 +1273,228 @@
         "total_pass": 12
       },
       "verdict_rationale": "The load-bearing step is a class-A implementation identity over the supplied code, not a first-principles physics calculation or tuned numerical match. The runner substantively traces the value through the live call chain, scans for spectral calls, evaluates both endpoints, and inspects the exposed object; its final tautological no-emission check is non-load-bearing. The conclusion is correctly narrowed to the absence of Hellmann-Feynman prerequisites in this implementation and explicitly leaves spectral-operator and direct-envelope derivative routes open."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:27.401071+00:00",
+      "audit_date": "2026-07-25T04:46:49.731422+00:00",
+      "audit_invocation_history": [
+        "27631d28af22446cac42910fc1aa67ea"
+      ],
+      "audit_invocation_id": "27631d28af22446cac42910fc1aa67ea",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/quark_route2_eta_floor_hf_boundary_check.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/_frontier_loader.py": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
+          "scripts/frontier_coarse_grained_exterior_law.py": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+          "scripts/frontier_discrete_dtn_shell_kernel.py": "31cb89f1b161de258503a6a91f5c2334d041099f0f135df0aeb7078520bc0d31",
+          "scripts/frontier_finite_rank_gravity_residual.py": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
+          "scripts/frontier_flux_fixed_matching_theorem.py": "3ea379ef8f2642858772e3017e06a90784651f0ceb27d540d06622e5940df95d",
+          "scripts/frontier_microscopic_dirichlet_bridge_principle.py": "18ebfab7a135966a29a2df9ca62378203224a8c2fec6c854e58beb702f954b4e",
+          "scripts/frontier_oh_schur_boundary_action.py": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
+          "scripts/frontier_radial_shell_matching_law.py": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
+          "scripts/frontier_same_source_metric_ansatz_scan.py": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
+          "scripts/frontier_sewing_shell_source.py": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
+          "scripts/frontier_star_shell_projector.py": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
+          "scripts/frontier_tensor_boundary_drive_two_channel.py": "966053ec7eef614d46776a72f70da1c9c9a7b9188942340ed1bfaf6f1d4d6721",
+          "scripts/frontier_tensor_universal_kernel.py": "6633ff45feebad69a60a4da2e652432b2d8a0286dc29004cf23bd65cb75ca07b",
+          "scripts/frontier_tensorial_einstein_regge_completion.py": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+          "scripts/frontier_universal_shell_profile.py": "34d892020e314f3edb0e7d10bc515fccfb2dbb2bf90f7c7421324c09dcc16d15"
+        },
+        "load_bearing_score": 3.822,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/_frontier_loader.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_coarse_grained_exterior_law.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_discrete_dtn_shell_kernel.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_finite_rank_gravity_residual.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_flux_fixed_matching_theorem.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_microscopic_dirichlet_bridge_principle.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_oh_schur_boundary_action.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_radial_shell_matching_law.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_same_source_metric_ansatz_scan.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_sewing_shell_source.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_star_shell_projector.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_tensor_boundary_drive_two_channel.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_tensor_universal_kernel.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_tensorial_einstein_regge_completion.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_universal_shell_profile.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/quark_route2_eta_floor_hf_boundary_check.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "f31460d33a845bae8b976dd74d5556e3ff8b93ddbeec0e531c567cd35d4c76f0",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "f31460d33a845bae8b976dd74d5556e3ff8b93ddbeec0e531c567cd35d4c76f0",
+        "runner_path": "scripts/quark_route2_eta_floor_hf_boundary_check.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-03600346",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The inspected assignments close the narrower fact that eta_floor[1] is e_spatial_tf and FamilyBlock exposes no eigenpair. The broader negative boundary cannot be cemented because the N1 routes collapse to one implementation-trace mechanism rather than five distinct attack classes.",
+      "claim_scope": "The inspected live Route-2 assignments set eta_floor[1] to e_spatial_tf and expose no spectral operator or floor eigenpair in FamilyBlock.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T04:46:49.731422+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The live eta-floor endpoint is a nonspectral max-entry envelope, not a lambda_min(A(phi)) object.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary",
+        "no_go_result",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: add live route-specific N1 tests spanning at least five genuinely distinct mechanism classes and resolve the conceptual-spectral steelman and authenticated cross-cycle scan before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "Issue: The static trace and endpoint checks support one implementation wall, but the six N1 observations are witnesses of that same trace/max-envelope mechanism rather than five genuinely distinct attack-route classes, as the note's N2 collapse itself recognizes. Why this blocks: N3 finds no hidden premise, N4 has no prior-witness residual, N5 is appropriately narrow, and N6 keeps both spectral-operator and direct-envelope routes open, while N7's conceptual-spectral steelman and N8's authenticated cross-cycle dispositions are not fully resolved. Repair target: supply live, route-specific evidence for five distinct mechanisms and complete the N7/N8 resolution. Claim boundary until fixed: the runner establishes the inspected assignments and absence of an exposed FamilyBlock eigenpair, not foreclosure of every spectral or exact-derivative route."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 12,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 12
+    "total_pass": 0
   },
   "runner_path": "scripts/quark_route2_eta_floor_hf_boundary_check.py",
   "title": "Route-2 Eta-Floor HF Boundary: No Spectral Floor Object in the Live Chain",
   "transitive_descendants": 1109,
-  "verdict_rationale": "Issue: The static trace and endpoint checks support one implementation wall, but the six N1 observations are witnesses of that same trace/max-envelope mechanism rather than five genuinely distinct attack-route classes, as the note's N2 collapse itself recognizes. Why this blocks: N3 finds no hidden premise, N4 has no prior-witness residual, N5 is appropriately narrow, and N6 keeps both spectral-operator and direct-envelope routes open, while N7's conceptual-spectral steelman and N8's authenticated cross-cycle dispositions are not fully resolved. Repair target: supply live, route-specific evidence for five distinct mechanisms and complete the N7/N8 resolution. Claim boundary until fixed: the runner establishes the inspected assignments and absence of an exposed FamilyBlock eigenpair, not foreclosure of every spectral or exact-derivative route."
+  "verdict_rationale": null
 }

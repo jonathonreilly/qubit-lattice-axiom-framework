@@ -1,70 +1,46 @@
 {
-  "audit_date": "2026-07-18T06:34:07.230631+00:00",
-  "audit_invocation_history": [
-    "b639c614fb36437a8721f8f50ef66e97"
-  ],
-  "audit_invocation_id": "b639c614fb36437a8721f8f50ef66e97",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/frontier_pmns_active_four_real_source_from_transport.py": "4142d1a974e63b4fdf54d17f681cd13962cca9879dddd6d7929b37b961a65d7c",
-      "scripts/frontier_pmns_lower_level_end_to_end_closure.py": "b02c46d593c30a3a667ac3c0467dba8893c5809d462fc7bb26853ba595d0c21e",
-      "scripts/pmns_lower_level_utils.py": "173bc6d96d2640f742e13fa915d5db141adccd5c4819d10833868f042846a583"
-    },
-    "load_bearing_score": 12.496,
-    "runner_hash": "85a3244903d20e287a2ed493c58f249a0f6eaa2d43b789a6fa0b1e3e901e0d9f",
-    "transitive_descendants": 721
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-loop-drain-ready-20260717-0c102651760a4b3c8764f13f24241007-pmns_uniform_scalar_defo-001",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The runner verifies the finite-dimensional identities for the encoded model, but no cited authority derives the uniform scalar/Coleman-Weinberg deformation, its exhaustive reduction to sector-scalar retained blocks, or the PMNS classifier from accepted framework premises.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "pmns_uniform_scalar_deformation_boundary_note",
-  "claim_scope": "Conditional on the encoded staggered uniform-scalar Hamiltonian and encoded one-sided-minimal retained PMNS classifier, uniform scalar deformations keep the hw=1 triplets sector-scalar and are rejected by that classifier.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-18T06:34:07.230631+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 6,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_pmns_active_four_real_source_from_transport.py",
     "scripts/frontier_pmns_lower_level_end_to_end_closure.py",
     "scripts/pmns_lower_level_utils.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 12.613,
-  "load_bearing_step": "For the encoded staggered unit-cell Hamiltonian, H(K, phi)^2 = -(1 + phi^2) I_8 at every hw=1 corner.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary",
-    "no_go_result"
-  ],
-  "no_go_discipline": null,
   "note_hash": "c9749300a3a1c8e713d54fc915ed1dd0a7f68ea3c094b414e0b35f54ce784395",
   "note_path": "docs/PMNS_UNIFORM_SCALAR_DEFORMATION_BOUNDARY_NOTE.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the complete map from an accepted or retained uniform scalar/Coleman-Weinberg dynamics to (u_0 I_3, u_- I_3), and provide a direct retained authority for the one-sided-minimal PMNS classifier before re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-gpt-5",
   "previous_audits": [
@@ -1511,6 +1487,66 @@
         "total_pass": 22
       },
       "verdict_rationale": "Issue: The runner genuinely verifies 22 finite algebra/model checks, but it instantiates the retained blocks as scalar matrices and imports the one-sided-minimal classifier rather than deriving either from a cited retained or accepted premise. Why this blocks: the corner-square identity establishes equal spectra for the encoded Hamiltonian, not the asserted exhaustive physical map from the admitted uniform scalar/Coleman-Weinberg lane to the most general retained lepton pair. No-go discipline: N1 lacks five distinct live-tested alternative mechanisms; N2 leaves independent sector-scalarity and classifier-acceptance walls; N3 exposes the uncited admitted-lane and sector selection; N4 has no retained prior witness; and N5 lacks live per-element, per-site, per-mode, per-block, and lattice-wide resolution tests. N6 supplies no candidate closing the missing bridge, N7 lacks an independent steelman resolution, and N8's indexed echoes are not authority; the safe boundary is therefore only algebraic rejection of scalar fixtures by the encoded classifier."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:26.969057+00:00",
+      "audit_date": "2026-07-18T06:34:07.230631+00:00",
+      "audit_invocation_history": [
+        "b639c614fb36437a8721f8f50ef66e97"
+      ],
+      "audit_invocation_id": "b639c614fb36437a8721f8f50ef66e97",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/frontier_pmns_active_four_real_source_from_transport.py": "4142d1a974e63b4fdf54d17f681cd13962cca9879dddd6d7929b37b961a65d7c",
+          "scripts/frontier_pmns_lower_level_end_to_end_closure.py": "b02c46d593c30a3a667ac3c0467dba8893c5809d462fc7bb26853ba595d0c21e",
+          "scripts/pmns_lower_level_utils.py": "173bc6d96d2640f742e13fa915d5db141adccd5c4819d10833868f042846a583"
+        },
+        "load_bearing_score": 12.496,
+        "runner_hash": "85a3244903d20e287a2ed493c58f249a0f6eaa2d43b789a6fa0b1e3e901e0d9f",
+        "transitive_descendants": 721
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-drain-ready-20260717-0c102651760a4b3c8764f13f24241007-pmns_uniform_scalar_defo-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the finite-dimensional identities for the encoded model, but no cited authority derives the uniform scalar/Coleman-Weinberg deformation, its exhaustive reduction to sector-scalar retained blocks, or the PMNS classifier from accepted framework premises.",
+      "claim_scope": "Conditional on the encoded staggered uniform-scalar Hamiltonian and encoded one-sided-minimal retained PMNS classifier, uniform scalar deformations keep the hw=1 triplets sector-scalar and are rejected by that classifier.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-18T06:34:07.230631+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For the encoded staggered unit-cell Hamiltonian, H(K, phi)^2 = -(1 + phi^2) I_8 at every hw=1 corner.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the complete map from an accepted or retained uniform scalar/Coleman-Weinberg dynamics to (u_0 I_3, u_- I_3), and provide a direct retained authority for the one-sided-minimal PMNS classifier before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "Issue: The runner genuinely verifies 22 finite algebra/model checks, but it instantiates the retained blocks as scalar matrices and imports the one-sided-minimal classifier rather than deriving either from a cited retained or accepted premise. Why this blocks: the corner-square identity establishes equal spectra for the encoded Hamiltonian, not the asserted exhaustive physical map from the admitted uniform scalar/Coleman-Weinberg lane to the most general retained lepton pair. No-go discipline: N1 lacks five distinct live-tested alternative mechanisms; N2 leaves independent sector-scalarity and classifier-acceptance walls; N3 exposes the uncited admitted-lane and sector selection; N4 has no retained prior witness; and N5 lacks live per-element, per-site, per-mode, per-block, and lattice-wide resolution tests. N6 supplies no candidate closing the missing bridge, N7 lacks an independent steelman resolution, and N8's indexed echoes are not authority; the safe boundary is therefore only algebraic rejection of scalar fixtures by the encoded classifier."
     }
   ],
   "prose_corrections": [],
@@ -1527,14 +1563,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 22,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 22
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py",
   "title": "PMNS Uniform Scalar Deformation Boundary",
   "transitive_descendants": 782,
-  "verdict_rationale": "Issue: The runner genuinely verifies 22 finite algebra/model checks, but it instantiates the retained blocks as scalar matrices and imports the one-sided-minimal classifier rather than deriving either from a cited retained or accepted premise. Why this blocks: the corner-square identity establishes equal spectra for the encoded Hamiltonian, not the asserted exhaustive physical map from the admitted uniform scalar/Coleman-Weinberg lane to the most general retained lepton pair. No-go discipline: N1 lacks five distinct live-tested alternative mechanisms; N2 leaves independent sector-scalarity and classifier-acceptance walls; N3 exposes the uncited admitted-lane and sector selection; N4 has no retained prior witness; and N5 lacks live per-element, per-site, per-mode, per-block, and lattice-wide resolution tests. N6 supplies no candidate closing the missing bridge, N7 lacks an independent steelman resolution, and N8's indexed echoes are not authority; the safe boundary is therefore only algebraic rejection of scalar fixtures by the encoded classifier."
+  "verdict_rationale": null
 }

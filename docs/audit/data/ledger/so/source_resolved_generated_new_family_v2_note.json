@@ -1,112 +1,45 @@
 {
-  "audit_date": "2026-07-25T12:35:40.004877+00:00",
-  "audit_invocation_history": [
-    "fd81859283cd45569d030448234592ea"
-  ],
-  "audit_invocation_id": "fd81859283cd45569d030448234592ea",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true,
-      "runner_path": "scripts/source_resolved_generated_new_family_v2_probe.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
-      "scripts/source_resolved_generated_wavefield_bridge.py": "e0880eb5efe84c87041513c3818a9d1d36208547b165d4701956bca5e7fc4c11"
-    },
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/causal_field_gravity.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
-        "cache_status": "ok"
-      },
-      "scripts/source_resolved_generated_new_family_v2_probe.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "a6eb69c01019f8e0e80d2ddc1c20b295ed5f5f128de4a71638642dc6cac1e41b",
-        "cache_status": "ok"
-      },
-      "scripts/source_resolved_generated_wavefield_bridge.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "a6eb69c01019f8e0e80d2ddc1c20b295ed5f5f128de4a71638642dc6cac1e41b",
-    "runner_path": "scripts/source_resolved_generated_new_family_v2_probe.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-8eb00910",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The transcript closes for the exact deterministic harness, but the law-level interpretation does not. No retained bridge derives the split-shell geometry, Green/causal/wavefield dynamics, gain normalization, or centroid readout from the axioms, and four seeds do not establish robustness.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "source_resolved_generated_new_family_v2_note",
-  "claim_scope": "On the supplied fixed four-seed split-shell harness, the aggregate fitted F~M exponent is 0.500 for fixed weights versus 0.381 for self-consistent weights, with zero-source shift 0; no framework-level or statistically robust weak-field recovery is established.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T12:35:40.004877+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/causal_field_gravity.py",
     "scripts/source_resolved_generated_wavefield_bridge.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The split-shell wavefield gives F~M = 0.381, while the split-shell fixedwave gives F~M = 0.500.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "e8733ce399099391540d975859784669bf19a44a5a52457727a316db3ba7db81",
   "note_path": "docs/SOURCE_RESOLVED_GENERATED_NEW_FAMILY_V2_NOTE.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: Narrow the note to an aggregate result on this fixed harness, replace \u201creal\u201d with \u201cobserved in the aggregate,\u201d and add seed/parameter sensitivity evidence before asserting robust law improvement.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -150,19 +83,123 @@
         "total_pass": 1
       },
       "verdict_rationale": "The current runner output matches the frozen table: bridge modes give 7/16, 6/16, and 5/16 TOWARD with F~M values 0.058, 0.098, and 0.230; split-shell modes give 8/16 for all three with F~M values 0.424, 0.381, and 0.500. The LAW COMPARISON also matches and supports the note's bounded read that fixed weights help the law but do not recover a near-linear class. Residual risk is limited to the chosen split-shell family and mode definitions."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:29.988226+00:00",
+      "audit_date": "2026-07-25T12:35:40.004877+00:00",
+      "audit_invocation_history": [
+        "fd81859283cd45569d030448234592ea"
+      ],
+      "audit_invocation_id": "fd81859283cd45569d030448234592ea",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/source_resolved_generated_new_family_v2_probe.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/causal_field_gravity.py": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
+          "scripts/source_resolved_generated_wavefield_bridge.py": "e0880eb5efe84c87041513c3818a9d1d36208547b165d4701956bca5e7fc4c11"
+        },
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/causal_field_gravity.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
+            "cache_status": "ok"
+          },
+          "scripts/source_resolved_generated_new_family_v2_probe.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "a6eb69c01019f8e0e80d2ddc1c20b295ed5f5f128de4a71638642dc6cac1e41b",
+            "cache_status": "ok"
+          },
+          "scripts/source_resolved_generated_wavefield_bridge.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "a6eb69c01019f8e0e80d2ddc1c20b295ed5f5f128de4a71638642dc6cac1e41b",
+        "runner_path": "scripts/source_resolved_generated_new_family_v2_probe.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-8eb00910",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The transcript closes for the exact deterministic harness, but the law-level interpretation does not. No retained bridge derives the split-shell geometry, Green/causal/wavefield dynamics, gain normalization, or centroid readout from the axioms, and four seeds do not establish robustness.",
+      "claim_scope": "On the supplied fixed four-seed split-shell harness, the aggregate fitted F~M exponent is 0.500 for fixed weights versus 0.381 for self-consistent weights, with zero-source shift 0; no framework-level or statistically robust weak-field recovery is established.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T12:35:40.004877+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The split-shell wavefield gives F~M = 0.381, while the split-shell fixedwave gives F~M = 0.500.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow the note to an aggregate result on this fixed harness, replace \u201creal\u201d with \u201cobserved in the aggregate,\u201d and add seed/parameter sensitivity evidence before asserting robust law improvement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The code genuinely computes the displayed four-seed exponents, sign counts, support values, and exact zero-source reduction; the note matches stdout. The claimed \u201creal\u201d improvement is only aggregate: fixedwave underperforms wavefield for seeds 0 and 2, and no uncertainty or sensitivity analysis is supplied. For N1\u2013N8, alternative geometries, dynamics, normalizations, limits, and readouts remain untested; the model-to-framework and finite-sample limitations are independent, the hard-coded choices are explicit, no prior residual witness or five-resolution test is supplied, approved primitives do not close the bridge, the aggregate steelman lacks independent validation, and relevant cross-cycle echoes do not repair it."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 1,
+    "A": 0,
     "B": 0,
-    "C": 3,
+    "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/source_resolved_generated_new_family_v2_probe.py",
   "title": "Source-Resolved Generated New Family V2 Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "The code genuinely computes the displayed four-seed exponents, sign counts, support values, and exact zero-source reduction; the note matches stdout. The claimed \u201creal\u201d improvement is only aggregate: fixedwave underperforms wavefield for seeds 0 and 2, and no uncertainty or sensitivity analysis is supplied. For N1\u2013N8, alternative geometries, dynamics, normalizations, limits, and readouts remain untested; the model-to-framework and finite-sample limitations are independent, the hard-coded choices are explicit, no prior residual witness or five-resolution test is supplied, approved primitives do not close the bridge, the aggregate steelman lacks independent validation, and relevant cross-cycle echoes do not repair it."
+  "verdict_rationale": null
 }

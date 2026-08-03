@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-30T04:58:09.780446+00:00",
-  "audit_invocation_history": [
-    "e169074603744505a88601be4a3ed9c7"
-  ],
-  "audit_invocation_id": "e169074603744505a88601be4a3ed9c7",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 17,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 11.747,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "b7adbd6223dce24a49c4ffa01363da9172d6fd1b6ae56151ece4ed1d49623f0d",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "b7adbd6223dce24a49c4ffa01363da9172d6fd1b6ae56151ece4ed1d49623f0d",
-    "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1214
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260730-88698a74",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite-dimensional proof closes, but the artifact also asserts a derived negative boundary whose mandatory N7 steelman resolution lacks an independent retained or accepted evidence surface.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-  "claim_scope": "On the supplied periodic 2 x 2 x 2 cell, all translation characters have identical expectations for every position-diagonal operator, while their rank-one character projectors give the Kronecker-delta expectation matrix.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-30T04:58:09.780446+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 11.75,
-  "load_bearing_step": "The uniform profile gives sum_n w_n |psi_k(n)|^2 = (1/8) sum_n w_n for every character k.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "5b9b7ac467cb4bc0d25ee328578e8a1936a68a45daf5acadd42ea29efd066a70",
   "note_path": "docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md",
-  "notes_for_re_audit_if_any": "other: Add an orchestrator-marked independent execution or retained/accepted analytic authority that reproduces the N7 zero-diagonal resolution and names the singleton wall.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -349,19 +300,105 @@
         "total_pass": 10
       },
       "verdict_rationale": "Issue: the exact finite equalities pass, but the mandatory clean-verdict N1-N8 evidence packet cannot be completed from the supplied runner stdout. Why this blocks: the stdout does not evidence five distinct N1 mechanism classes or the five required N5 resolution tests, so an audited-clean result would violate the packet rules. Repair target: extend the current-cycle runner evidence with the required distinct stress routes and resolution-class tests, then rerun the restricted audit. Claim boundary until fixed: the displayed finite-cell identities remain exactly runner-supported, but clean audit ratification is withheld."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.059829+00:00",
+      "audit_date": "2026-07-30T04:58:09.780446+00:00",
+      "audit_invocation_history": [
+        "e169074603744505a88601be4a3ed9c7"
+      ],
+      "audit_invocation_id": "e169074603744505a88601be4a3ed9c7",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 17,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.747,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "b7adbd6223dce24a49c4ffa01363da9172d6fd1b6ae56151ece4ed1d49623f0d",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "b7adbd6223dce24a49c4ffa01363da9172d6fd1b6ae56151ece4ed1d49623f0d",
+        "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1214
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260730-88698a74",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional proof closes, but the artifact also asserts a derived negative boundary whose mandatory N7 steelman resolution lacks an independent retained or accepted evidence surface.",
+      "claim_scope": "On the supplied periodic 2 x 2 x 2 cell, all translation characters have identical expectations for every position-diagonal operator, while their rank-one character projectors give the Kronecker-delta expectation matrix.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-30T04:58:09.780446+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The uniform profile gives sum_n w_n |psi_k(n)|^2 = (1/8) sum_n w_n for every character k.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: Add an orchestrator-marked independent execution or retained/accepted analytic authority that reproduces the N7 zero-diagonal resolution and names the singleton wall.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner genuinely constructs the Z_2^3 translations and characters and exactly verifies all 20 identities, so the finite positive algebra and diagonal-expectation boundary are substantively supported. N1 supplies five distinct closed routes, N2 is a singleton wall, N3-N6 and N8 disclose no substantive unresolved item, and N5 tests all five required resolutions. However, N7 cites live runner output for the steelman but uses the unaudited source note as its resolution, rather than an orchestrator-marked independent execution or retained/accepted authority; a different path alone is not independence. The clean gate therefore remains conditional on independent N7 resolution evidence."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 20,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 20
+    "total_pass": 0
   },
   "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
   "title": "Finite Translation-Character Profiles and Projectors Theorem",
   "transitive_descendants": 1217,
-  "verdict_rationale": "The runner genuinely constructs the Z_2^3 translations and characters and exactly verifies all 20 identities, so the finite positive algebra and diagonal-expectation boundary are substantively supported. N1 supplies five distinct closed routes, N2 is a singleton wall, N3-N6 and N8 disclose no substantive unresolved item, and N5 tests all five required resolutions. However, N7 cites live runner output for the steelman but uses the unaudited source note as its resolution, rather than an orchestrator-marked independent execution or retained/accepted authority; a different path alone is not independence. The clean gate therefore remains conditional on independent N7 resolution evidence."
+  "verdict_rationale": null
 }

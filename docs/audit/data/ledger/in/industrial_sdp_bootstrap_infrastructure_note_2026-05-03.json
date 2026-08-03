@@ -1,77 +1,24 @@
 {
-  "audit_date": "2026-07-25T08:59:32.330655+00:00",
-  "audit_invocation_history": [
-    "491f523cdb8443ccb5cf9223ceac4396"
-  ],
-  "audit_invocation_id": "491f523cdb8443ccb5cf9223ceac4396",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 20,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "plaquette_self_consistency_note": "For a fixed finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is bounded and has a unique finite expectation; the runner supplies finite diagnostics, not a physical 0.5934 certificate."
-    },
-    "dep_claim_type": {
-      "plaquette_self_consistency_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "plaquette_self_consistency_note": "retained_bounded"
-    },
-    "deps": [
-      "plaquette_self_consistency_note"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 7.615,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_industrial_sdp_bootstrap_block01.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "5fec271ff86d939b62d16fe7822322a8a21786d652c8415058b54286d5d328b6",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "5fec271ff86d939b62d16fe7822322a8a21786d652c8415058b54286d5d328b6",
-    "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 48
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-batch-A-20260725-09de6a68",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The SU(3) SDP uses the incorrect support interval [-1/3,1]. The valid SU(3) element U=e^(2\u03c0i/3)I has det(U)=1 and Re Tr(U)/3=-1/2, so the claimed support-aware validation is not established.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "industrial_sdp_bootstrap_infrastructure_note_2026-05-03",
-  "claim_scope": "Support-aware validation of a CVXPY moment SDP for SU(2) and SU(3) beta=6 single-plaquette moments and N=3 fixed-moment m1 brackets.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": "infrastructure + validation support theorem",
-  "claim_type_last_reviewed": "2026-07-25T08:59:32.330655+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -79,22 +26,19 @@
     "plaquette_self_consistency_note"
   ],
   "direct_in_degree": 4,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 7.615,
-  "load_bearing_step": "The SU(3) fixed-moment SDP uses P in [-1/3,1] and returns m1 in [0.281915,0.451550], containing the computed reference value 0.422532.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "dec37228fc1fadd9a0b6091c68eb7d6fa8a798e6b7305d3b8b2c49edb6c80fce",
   "note_path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md",
-  "notes_for_re_audit_if_any": "Correct the SU(3) support to [-1/2,1], rerun the pure and fixed-moment SDPs, and re-audit the resulting containment and endpoint claims.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -256,19 +200,112 @@
         "total_pass": 13
       },
       "verdict_rationale": "Independent recomputation gives I_2(6)/I_1(6)=0.7627260757491918, matching the SU(2) m1 in the note. A fresh independent PSD feasibility scan gives SU(2) m1 about [0.6799586, 0.7669342] and SU(3) about [0.2819121, 0.4515328], both containing their reference m1 values and matching runner output to solver tolerance. The runner source does not hard-code target brackets; 0.5934/0.59353 appear only as printed comparators. The clean scope is bounded infrastructure validation, not the source note's broader positive theorem hint."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:20.641664+00:00",
+      "audit_date": "2026-07-25T08:59:32.330655+00:00",
+      "audit_invocation_history": [
+        "491f523cdb8443ccb5cf9223ceac4396"
+      ],
+      "audit_invocation_id": "491f523cdb8443ccb5cf9223ceac4396",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 20,
+            "D": 2
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a fixed finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is bounded and has a unique finite expectation; the runner supplies finite diagnostics, not a physical 0.5934 certificate."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 7.615,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_industrial_sdp_bootstrap_block01.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "5fec271ff86d939b62d16fe7822322a8a21786d652c8415058b54286d5d328b6",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "5fec271ff86d939b62d16fe7822322a8a21786d652c8415058b54286d5d328b6",
+        "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-batch-A-20260725-09de6a68",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The SU(3) SDP uses the incorrect support interval [-1/3,1]. The valid SU(3) element U=e^(2\u03c0i/3)I has det(U)=1 and Re Tr(U)/3=-1/2, so the claimed support-aware validation is not established.",
+      "claim_scope": "Support-aware validation of a CVXPY moment SDP for SU(2) and SU(3) beta=6 single-plaquette moments and N=3 fixed-moment m1 brackets.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-25T08:59:32.330655+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The SU(3) fixed-moment SDP uses P in [-1/3,1] and returns m1 in [0.281915,0.451550], containing the computed reference value 0.422532.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Correct the SU(3) support to [-1/2,1], rerun the pure and fixed-moment SDPs, and re-audit the resulting containment and endpoint claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "All 13 coded checks pass, but they never test the asserted SU(3) pointwise support: checking only that the mean lies in [-1/3,1] cannot validate that interval. The center element U=e^(2\u03c0i/3)I is an exact counterexample, so the resulting containment can be accidental at this truncation and does not validate a support-aware SU(3) bootstrap. For the ancillary PSD-only boundary, N1 support-normalization, representation, finite-truncation, convention, and dependency routes do not repair the wrong domain; N2 has only the missing-extra-constraints wall; N3 finds the disclosed normalization/convention language non-hidden; N4 has no prior residual witness; N5 lacks all-resolution evidence beyond N=2\u20134; N6 supplies no primitive that changes SU(3) support; N7's strongest containment steelman still assumes the false interval; and N8 supplies no applicable echo that defeats the counterexample."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 8,
+    "A": 0,
     "B": 0,
-    "C": 5,
+    "C": 0,
     "D": 0,
-    "total_pass": 13
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py",
   "title": "Industrial SDP Bootstrap \u2014 Infrastructure + SU(2)/SU(3) Single-Plaquette Validation",
   "transitive_descendants": 48,
-  "verdict_rationale": "All 13 coded checks pass, but they never test the asserted SU(3) pointwise support: checking only that the mean lies in [-1/3,1] cannot validate that interval. The center element U=e^(2\u03c0i/3)I is an exact counterexample, so the resulting containment can be accidental at this truncation and does not validate a support-aware SU(3) bootstrap. For the ancillary PSD-only boundary, N1 support-normalization, representation, finite-truncation, convention, and dependency routes do not repair the wrong domain; N2 has only the missing-extra-constraints wall; N3 finds the disclosed normalization/convention language non-hidden; N4 has no prior residual witness; N5 lacks all-resolution evidence beyond N=2\u20134; N6 supplies no primitive that changes SU(3) support; N7's strongest containment steelman still assumes the false interval; and N8 supplies no applicable echo that defeats the counterexample."
+  "verdict_rationale": null
 }

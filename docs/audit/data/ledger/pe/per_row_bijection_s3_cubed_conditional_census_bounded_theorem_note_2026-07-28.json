@@ -1,86 +1,24 @@
 {
-  "audit_date": "2026-08-02T08:48:12.778571+00:00",
-  "audit_invocation_history": [
-    "ec3bb307917845018d01b54d4db07ea4"
-  ],
-  "audit_invocation_id": "ec3bb307917845018d01b54d4db07ea4",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 10
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true,
-      "runner_path": "scripts/frontier_cycle765_per_row_bijection_s3_cubed_conditional_census_2026_07_28.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": "For the three supplied integer vectors, exact comparator b, uniform vector u, and L1/TV metrics, the stated distance table is correct and no shared permutation in S3 makes all three normalized vectors closer to b than to u; no physical interpretation or broader map class is asserted."
-    },
-    "dep_claim_type": {
-      "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": "retained_bounded"
-    },
-    "deps": [
-      "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28"
-    ],
-    "helper_runner_hashes": {
-      "scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py": "702f7cfddf9d582a1eb7c2824bd9c8ea43da589fc44c6c7f12d1555bbb7fc828"
-    },
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "0064f577dae7314db2f5e1b3b0aabc209e6ab71def38626501ff6d9e51438823",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_cycle765_per_row_bijection_s3_cubed_conditional_census_2026_07_28.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "1435b60c5fc8093f7e1120ec0740f85286abc8791932d64b45e7f93af047ec40",
-    "runner_path": "scripts/frontier_cycle765_per_row_bijection_s3_cubed_conditional_census_2026_07_28.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260802-263d86e0",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Within the stated conditional domain, the acyclic chain from supplied literals through exact row transformation, normalization, total variation, and exhaustive enumeration of all 216 S3^3 members is fully discharged. Physical provenance or selection of the supplied map is explicitly outside the audited target.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "per_row_bijection_s3_cubed_conditional_census_bounded_theorem_note_2026-07-28",
-  "claim_scope": "For the three exact synthetic count vectors, exact comparator and uniform reference, supplied feature-to-output per-row bijection, and total-variation metric, the transformed rows, pooled vector, four endpoint comparisons, and exhaustive 216-member S3^3 census are correct; no broader deterministic, stochastic, statistical, or physical claim was audited.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-08-02T08:48:12.778571+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -88,37 +26,137 @@
     "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Exhaustive exact arithmetic over S3^3 finds 122 members strictly below the supplied map's pooled comparator distance, 6 ties, 18 members closer to the comparator at all four scopes, and 91 closer at pooled scope.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "d407070221bac6a3058b2da50ca3e3a8312ad743e7deb7178bfa00f41679ed95",
   "note_path": "docs/PER_ROW_BIJECTION_S3_CUBED_CONDITIONAL_CENSUS_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge: to seek an unconditional or physical upgrade, add a retained dependency deriving or authorizing the supplied per-row bijection and its association; after any upstream repair, add a dated downstream-hygiene line to this note's own boundary before re-audit.",
-  "open_dependency_paths": [
-    "docs/SYMMETRY_BROKEN_ENSEMBLES_CYCLE763_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-08-03T07:43:19.410404+00:00",
+      "audit_date": "2026-08-02T08:48:12.778571+00:00",
+      "audit_invocation_history": [
+        "ec3bb307917845018d01b54d4db07ea4"
+      ],
+      "audit_invocation_id": "ec3bb307917845018d01b54d4db07ea4",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 10
+          },
+          "decoration_candidate": false,
+          "dominant_class": "D",
+          "exists": true,
+          "runner_path": "scripts/frontier_cycle765_per_row_bijection_s3_cubed_conditional_census_2026_07_28.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": "For the three supplied integer vectors, exact comparator b, uniform vector u, and L1/TV metrics, the stated distance table is correct and no shared permutation in S3 makes all three normalized vectors closer to b than to u; no physical interpretation or broader map class is asserted."
+        },
+        "dep_claim_type": {
+          "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": "retained_bounded"
+        },
+        "deps": [
+          "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28"
+        ],
+        "helper_runner_hashes": {
+          "scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py": "702f7cfddf9d582a1eb7c2824bd9c8ea43da589fc44c6c7f12d1555bbb7fc828"
+        },
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "0064f577dae7314db2f5e1b3b0aabc209e6ab71def38626501ff6d9e51438823",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_cycle765_per_row_bijection_s3_cubed_conditional_census_2026_07_28.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "1435b60c5fc8093f7e1120ec0740f85286abc8791932d64b45e7f93af047ec40",
+        "runner_path": "scripts/frontier_cycle765_per_row_bijection_s3_cubed_conditional_census_2026_07_28.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260802-263d86e0",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated conditional domain, the acyclic chain from supplied literals through exact row transformation, normalization, total variation, and exhaustive enumeration of all 216 S3^3 members is fully discharged. Physical provenance or selection of the supplied map is explicitly outside the audited target.",
+      "claim_scope": "For the three exact synthetic count vectors, exact comparator and uniform reference, supplied feature-to-output per-row bijection, and total-variation metric, the transformed rows, pooled vector, four endpoint comparisons, and exhaustive 216-member S3^3 census are correct; no broader deterministic, stochastic, statistical, or physical claim was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-08-02T08:48:12.778571+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28:retained_bounded->unaudited",
+      "load_bearing_step": "Exhaustive exact arithmetic over S3^3 finds 122 members strictly below the supplied map's pooled comparator distance, 6 ties, 18 members closer to the comparator at all four scopes, and 91 closer at pooled scope.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: to seek an unconditional or physical upgrade, add a retained dependency deriving or authorizing the supplied per-row bijection and its association; after any upstream repair, add a dated downstream-hygiene line to this note's own boundary before re-audit.",
+      "open_dependency_paths": [
+        "docs/SYMMETRY_BROKEN_ENSEMBLES_CYCLE763_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner genuinely computes the transformations, exact rational distances, and all 216 row-wise permutation triples; independent reconstruction agrees with every reported value and count. There is no unresolved target-equivalent mathematical lemma within that finite scope. The result remains conditional because the synthetic vectors, comparator, coordinate convention, and especially the per-row bijection are supplied rather than physically or framework-derived; the note correctly makes no extrapolation beyond them."
+    }
   ],
-  "previous_audits": [],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 8,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 8
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_cycle765_per_row_bijection_s3_cubed_conditional_census_2026_07_28.py",
   "title": "Conditional per-row bijection census in `S3^3` \u2014 Cycle 765",
   "transitive_descendants": 0,
-  "verdict_rationale": "The runner genuinely computes the transformations, exact rational distances, and all 216 row-wise permutation triples; independent reconstruction agrees with every reported value and count. There is no unresolved target-equivalent mathematical lemma within that finite scope. The result remains conditional because the synthetic vectors, comparator, coordinate convention, and especially the per-row bijection are supplied rather than physically or framework-derived; the note correctly makes no extrapolation beyond them."
+  "verdict_rationale": null
 }

@@ -1,90 +1,42 @@
 {
-  "audit_date": "2026-07-25T07:21:42.265315+00:00",
-  "audit_invocation_history": [
-    "b419afc8b05745a1bb3670545e32050d"
-  ],
-  "audit_invocation_id": "b419afc8b05745a1bb3670545e32050d",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true,
-      "runner_path": "scripts/distance_law_3d_64_closure.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 3.959,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/distance_law_3d_64_closure.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "4192c33bf452a09881ef4a75cef1710adf0eedacd7f2a482215a31bce2c68b1b",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "4192c33bf452a09881ef4a75cef1710adf0eedacd7f2a482215a31bce2c68b1b",
-    "runner_path": "scripts/distance_law_3d_64_closure.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 10
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-048b8208",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The computation imports a Poisson point-source field, Dirichlet boundary condition, valley-linear action, and phase-gradient-to-deflection/force identification that are not supplied by the cited-authority section or framework axioms. The clipped stdout also prevents complete verification of every displayed result.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "distance_law_3d_64_closure_note_2026-04-11",
-  "claim_scope": "Conditional finite-grid computation on the specified 31^3\u201364^3 Dirichlet Poisson and valley-linear path-sum setup, including its fitted exponent and source-mass linearity; not continuum, architecture-independent, observable-bridge, or two-body Newton closure.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T07:21:42.265315+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 3.959,
-  "load_bearing_step": "That is consistent with a Newtonian 1/r^2 force law at the level of a bounded numerical continuation, with the usual finite-size caveats.",
-  "load_bearing_step_class": "D",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls"
-  ],
   "note_hash": "cc0d84224611c9b5863462ef1b573be52c3367bcf6bc8a8ddc5e4c079deb40eb",
   "note_path": "docs/DISTANCE_LAW_3D_64_CLOSURE_NOTE_2026-04-11.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation of the Poisson source/action and phase-gradient-to-deflection/force observable bridge on the stated surface, reconcile the exponent sign convention, and provide complete runner evidence.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1368,6 +1320,91 @@
         "total_pass": 3
       },
       "verdict_rationale": "The source code solves the lattice Poisson problem, computes phase differences, fits the finite-grid exponents, and reproduces the reported largest-grid exponent, extrapolation, and approximately 0.1% mass-linearity spread without hard-coding those outputs. However, it supplies the Coulomb source field, valley-linear action, boundary condition, and extrapolation ansatz rather than deriving them from the framework premises. The result is therefore valid as a bounded configured-model numerical continuation, but not as an unconditional physical Newton-law derivation."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:16.862170+00:00",
+      "audit_date": "2026-07-25T07:21:42.265315+00:00",
+      "audit_invocation_history": [
+        "b419afc8b05745a1bb3670545e32050d"
+      ],
+      "audit_invocation_id": "b419afc8b05745a1bb3670545e32050d",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/distance_law_3d_64_closure.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 3.959,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/distance_law_3d_64_closure.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "4192c33bf452a09881ef4a75cef1710adf0eedacd7f2a482215a31bce2c68b1b",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "4192c33bf452a09881ef4a75cef1710adf0eedacd7f2a482215a31bce2c68b1b",
+        "runner_path": "scripts/distance_law_3d_64_closure.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 10
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-048b8208",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The computation imports a Poisson point-source field, Dirichlet boundary condition, valley-linear action, and phase-gradient-to-deflection/force identification that are not supplied by the cited-authority section or framework axioms. The clipped stdout also prevents complete verification of every displayed result.",
+      "claim_scope": "Conditional finite-grid computation on the specified 31^3\u201364^3 Dirichlet Poisson and valley-linear path-sum setup, including its fitted exponent and source-mass linearity; not continuum, architecture-independent, observable-bridge, or two-body Newton closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T07:21:42.265315+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "That is consistent with a Newtonian 1/r^2 force law at the level of a bounded numerical continuation, with the usual finite-size caveats.",
+      "load_bearing_step_class": "D",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation of the Poisson source/action and phase-gradient-to-deflection/force observable bridge on the stated surface, reconcile the exponent sign convention, and provide complete runner evidence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 1,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: The runner computes finite-grid exponents and source-mass linearity, but assumes the point-source Poisson field, Dirichlet boundary, valley-linear action, and physical phase-difference interpretation; no cited authority derives these inputs, and the supplied stdout is clipped. Why this blocks: the results support only a conditional computation on the selected surface, not a framework-derived Newtonian force statement or controlled continuum result. Repair target: supply a retained source/action/readout theorem, boundary and asymptotic control, and complete runner evidence with the exponent sign convention reconciled. Claim boundary until fixed: retain the reported finite-grid trend and mass-linearity result conditional on the specified setup; the point-source, Dirichlet, control-family, portability, and two-body limitations are bounded named walls rather than a no-go."
     }
   ],
   "prose_corrections": [],
@@ -1375,12 +1412,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 2,
-    "D": 1,
-    "total_pass": 3
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/distance_law_3d_64_closure.py",
   "title": "3D Path-Sum Distance Continuation Note",
   "transitive_descendants": 10,
-  "verdict_rationale": "Issue: The runner computes finite-grid exponents and source-mass linearity, but assumes the point-source Poisson field, Dirichlet boundary, valley-linear action, and physical phase-difference interpretation; no cited authority derives these inputs, and the supplied stdout is clipped. Why this blocks: the results support only a conditional computation on the selected surface, not a framework-derived Newtonian force statement or controlled continuum result. Repair target: supply a retained source/action/readout theorem, boundary and asymptotic control, and complete runner evidence with the exponent sign convention reconciled. Claim boundary until fixed: retain the reported finite-grid trend and mass-linearity result conditional on the specified setup; the point-source, Dirichlet, control-family, portability, and two-body limitations are bounded named walls rather than a no-go."
+  "verdict_rationale": null
 }

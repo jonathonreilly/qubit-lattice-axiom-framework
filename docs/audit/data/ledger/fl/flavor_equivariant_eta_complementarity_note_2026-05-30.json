@@ -1,93 +1,42 @@
 {
-  "audit_date": "2026-07-25T21:48:19.284453+00:00",
-  "audit_invocation_history": [
-    "bc40c2fca05144ecbdf51b7a200936a6"
-  ],
-  "audit_invocation_id": "bc40c2fca05144ecbdf51b7a200936a6",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 6,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 1.5,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "c6ea0107f08068606d625ab30dfbe85e9d5b4a7836846dd2e98152ea004f382a",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "c6ea0107f08068606d625ab30dfbe85e9d5b4a7836846dd2e98152ea004f382a",
-    "runner_path": "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-batch-A-20260725-74e7321c",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The runner verifies one tensor-coin construction, not the claimed classification of every admissible native extension or the assertion that \u03b7 vanishes for all parameters. It also assumes rather than derives the stated range of equivariant \u03b7.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "flavor_equivariant_eta_complementarity_note_2026-05-30",
-  "claim_scope": "The explicit finite-dimensional R and \u0393\u03c7 matrix identities, the single D=I\u2083\u2297\u03c3_x tensor-coin example, and the arithmetic separation of 2/9 from Q=2/3.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T21:48:19.284453+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
-  "load_bearing_step": "The only dodge of the bare-R\u00b3 no-go is claimed to be the tensor-coin extension, on which breaking becomes possible but \u03b7 is identically zero for all parameters.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary",
-    "no_go_result",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "0ff687252e057a2061ee03d258c33b66271894cd88448f99f70ed740a734540d",
   "note_path": "docs/FLAVOR_EQUIVARIANT_ETA_COMPLEMENTARITY_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": "Re-audit after adding a general classification theorem for admissible tensor-coin Dirac families and replacing E1's hard-coded premise with an explicit finite-dimensional equivariant-\u03b7 derivation.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -134,19 +83,107 @@
         "total_pass": 5
       },
       "verdict_rationale": "The load-bearing complementarity is a first-principles finite operator computation, not a renaming or tuned numerical match. The runner does instantiate the matrices and verifies the core algebraic facts; the independently checked formulas include L3(1,2)=2/9, (N\u22121)/N^2=2/9 at N=3, Q(r=1/2)=2/3, and 2/9 not being an algebraic integer. The clean verdict is bounded to the eta/index route in these native finite sectors and does not ratify the speculative Berry-holonomy next path or external literature survey language."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.088476+00:00",
+      "audit_date": "2026-07-25T21:48:19.284453+00:00",
+      "audit_invocation_history": [
+        "bc40c2fca05144ecbdf51b7a200936a6"
+      ],
+      "audit_invocation_id": "bc40c2fca05144ecbdf51b7a200936a6",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 6,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 1.5,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "c6ea0107f08068606d625ab30dfbe85e9d5b4a7836846dd2e98152ea004f382a",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "c6ea0107f08068606d625ab30dfbe85e9d5b4a7836846dd2e98152ea004f382a",
+        "runner_path": "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-batch-A-20260725-74e7321c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies one tensor-coin construction, not the claimed classification of every admissible native extension or the assertion that \u03b7 vanishes for all parameters. It also assumes rather than derives the stated range of equivariant \u03b7.",
+      "claim_scope": "The explicit finite-dimensional R and \u0393\u03c7 matrix identities, the single D=I\u2083\u2297\u03c3_x tensor-coin example, and the arithmetic separation of 2/9 from Q=2/3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T21:48:19.284453+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The only dodge of the bare-R\u00b3 no-go is claimed to be the tensor-coin extension, on which breaking becomes possible but \u03b7 is identically zero for all parameters.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary",
+        "no_go_result",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after adding a general classification theorem for admissible tensor-coin Dirac families and replacing E1's hard-coded premise with an explicit finite-dimensional equivariant-\u03b7 derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner genuinely checks the displayed finite matrices in E2\u2013E5, but E4 is one example and supplies neither a classification of all native extensions nor the stated \u201conly dodge\u201d and \u201cfor all parameters\u201d conclusions; that missing theorem is target-equivalent to the claimed complementarity. E1 hard-codes `is_alg_int = False` and never derives `\u03b7_g(T) \u2208 Z[\u03b6\u2083]`, which also needs explicit finite-dimensional scope to avoid conflation with regularized APS \u03b7. N1 leaves alternate carriers and dynamical/equivariant families untested; N2 does not establish an exhaustive independent barrier set; N3 exposes the imported R\u00b3 carrier and \u0393\u03c7 grading; N4 has no prior witness because no authority is supplied. N5's negative assertions lack resolution tests, N6's indexed closure candidates are not dispositioned, N7's strongest larger-family steelman remains unresolved, and N8 cannot replace the missing classification with unrelated cross-cycle echoes."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 2,
+    "A": 0,
     "B": 0,
-    "C": 3,
+    "C": 0,
     "D": 0,
-    "total_pass": 5
+    "total_pass": 0
   },
   "runner_path": "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py",
   "title": "Flavor \u2014 the equivariant-\u03b7 / spectral-asymmetry route reduces to the chirality gate via an exact complementarity (and 2/9 is not an \u03b7)",
   "transitive_descendants": 1,
-  "verdict_rationale": "The runner genuinely checks the displayed finite matrices in E2\u2013E5, but E4 is one example and supplies neither a classification of all native extensions nor the stated \u201conly dodge\u201d and \u201cfor all parameters\u201d conclusions; that missing theorem is target-equivalent to the claimed complementarity. E1 hard-codes `is_alg_int = False` and never derives `\u03b7_g(T) \u2208 Z[\u03b6\u2083]`, which also needs explicit finite-dimensional scope to avoid conflation with regularized APS \u03b7. N1 leaves alternate carriers and dynamical/equivariant families untested; N2 does not establish an exhaustive independent barrier set; N3 exposes the imported R\u00b3 carrier and \u0393\u03c7 grading; N4 has no prior witness because no authority is supplied. N5's negative assertions lack resolution tests, N6's indexed closure candidates are not dispositioned, N7's strongest larger-family steelman remains unresolved, and N8 cannot replace the missing classification with unrelated cross-cycle echoes."
+  "verdict_rationale": null
 }

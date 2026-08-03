@@ -1,90 +1,42 @@
 {
-  "audit_date": "2026-07-25T10:47:38.903795+00:00",
-  "audit_invocation_history": [
-    "a5d5f1f0d638418f8243d2fd83e9f9ed"
-  ],
-  "audit_invocation_id": "a5d5f1f0d638418f8243d2fd83e9f9ed",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "49dac2559025ffa9abed89adc590303ba0ceb5817eadedf7e1c560828f9501b5",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "49dac2559025ffa9abed89adc590303ba0ceb5817eadedf7e1c560828f9501b5",
-    "runner_path": "scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-c932d189",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The written finite-sum algebra appears complete, but the executable audit chain cannot be certified because the primary runner source is clipped across a load-bearing implementation span. The 42-pass stdout cannot authenticate the omitted computation.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "post_record_persistent_record_production_bridge_prototype_2026-06-06",
-  "claim_scope": "For nonempty finite X and Y, an exact rational probability packet P, and a total deterministic map F, pushforward preserves normalization and exactly transports rational observables and arbitrary rational product kernels.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-25T10:47:38.903795+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Because totality partitions X into target fibers, finite rearrangement\u2014and expansion of both fibers for the pair kernel\u2014turns each target sum into its corresponding source sum.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "conditional_wall_rationale"
-  ],
   "note_hash": "4bb2695212a40fe26e1c547ccb650cfe58268cb3f59de31a7e682a1aa2a0aa5d",
   "note_path": "docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: include the complete SHA-pinned primary runner source without the omitted middle span, then rerun the restricted audit so its computations can be checked against the 42-pass stdout.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -176,19 +128,104 @@
         "total_pass": 44
       },
       "verdict_rationale": "Issue: the finite pushforward and overlap arithmetic are valid for the runner's supplied word law, update, persistence rule, and kernel, but those bridge inputs are assumed rather than derived from the axiom packet. Why this blocks: with no cited retained authority or primitive supplying those inputs, the claim cannot close as a production-record bridge beyond the supplied finite witness. Repair target: a retained theorem deriving or explicitly admitting the record-writing law, persistence/readout rule, and overlap-kernel/production-time bridge. Claim boundary until fixed: the safe result is an exact finite supplied-bridge prototype with law-scoped expected overlap 169/320 and no internal probability field in realized post-record tuples."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:27.121497+00:00",
+      "audit_date": "2026-07-25T10:47:38.903795+00:00",
+      "audit_invocation_history": [
+        "a5d5f1f0d638418f8243d2fd83e9f9ed"
+      ],
+      "audit_invocation_id": "a5d5f1f0d638418f8243d2fd83e9f9ed",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "49dac2559025ffa9abed89adc590303ba0ceb5817eadedf7e1c560828f9501b5",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "49dac2559025ffa9abed89adc590303ba0ceb5817eadedf7e1c560828f9501b5",
+        "runner_path": "scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-c932d189",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The written finite-sum algebra appears complete, but the executable audit chain cannot be certified because the primary runner source is clipped across a load-bearing implementation span. The 42-pass stdout cannot authenticate the omitted computation.",
+      "claim_scope": "For nonempty finite X and Y, an exact rational probability packet P, and a total deterministic map F, pushforward preserves normalization and exactly transports rational observables and arbitrary rational product kernels.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-25T10:47:38.903795+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Because totality partitions X into target fibers, finite rearrangement\u2014and expansion of both fibers for the pair kernel\u2014turns each target sum into its corresponding source sum.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the complete SHA-pinned primary runner source without the omitted middle span, then rerun the restricted audit so its computations can be checked against the 42-pass stdout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 42,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 42
+      },
+      "verdict_rationale": "The note presents a class-A finite-sum theorem scoped solely to supplied mathematical arguments and does not supply a physical record-production law. N1\u2013N8 prose judgment: its physical-application caveat is a conditional scope rationale, not a route-exhaustion or derived no-go; the packet supplies no independent obstruction set, residual witness, hidden load-bearing admission, or negative-resolution basis for a stronger exclusion. Partial-closure, steelman, and cross-cycle considerations do not alter the positive algebraic core. Nevertheless, the clipped runner source prevents authentication of the implementation, so clean ratification is forbidden until the artifact is complete."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 42,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 42
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py",
   "title": "Exact Finite Deterministic Pushforward and Product-Kernel Transport Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": "The note presents a class-A finite-sum theorem scoped solely to supplied mathematical arguments and does not supply a physical record-production law. N1\u2013N8 prose judgment: its physical-application caveat is a conditional scope rationale, not a route-exhaustion or derived no-go; the packet supplies no independent obstruction set, residual witness, hidden load-bearing admission, or negative-resolution basis for a stronger exclusion. Partial-closure, steelman, and cross-cycle considerations do not alter the positive algebraic core. Nevertheless, the clipped runner source prevents authentication of the implementation, so clean ratification is forbidden until the artifact is complete."
+  "verdict_rationale": null
 }

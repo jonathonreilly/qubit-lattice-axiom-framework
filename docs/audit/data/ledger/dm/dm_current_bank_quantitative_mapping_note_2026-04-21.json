@@ -1,62 +1,44 @@
 {
-  "audit_date": "2026-07-25T15:13:13.613505+00:00",
-  "audit_invocation_history": [
-    "57d0b427c4894550b97ceb416a39e3e8"
-  ],
-  "audit_invocation_id": "57d0b427c4894550b97ceb416a39e3e8",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41"
-    },
-    "load_bearing_score": 0.0,
-    "runner_hash": "d360606a084987b74c6c8c36a72d20e6feedac8de64b75a1242c7a437860ed11",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_renaming",
-  "auditor": "codex-audit-batch-A-20260725-c59fc120",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The table reproduces imported package values and assigns physical-role labels, but no cited retained authority or derivation establishes the bank-to-observable identifications. The completeness check is hard-coded with every item set to true.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "dm_current_bank_quantitative_mapping_note_2026-04-21",
-  "claim_scope": "Bookkeeping claim that hard-coded current-bank quantities are reproduced, arithmetic checks pass, and labels are assembled into the displayed mapping table; not a physical derivation or flagship closure.",
+  "claim_scope": null,
   "claim_type": "meta",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T15:13:13.613505+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_renaming",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "meta",
+  "effective_status_reason": "metadata",
   "helper_runner_paths": [
     "scripts/dm_leptogenesis_exact_common.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_renaming",
+  "independence": null,
+  "intrinsic_status": "meta",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The work here is to expose that bank as one explicit quantitative mapping.",
-  "load_bearing_step_class": "F",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls"
-  ],
   "note_hash": "a5f8eef64e020dcc9ca94e319c27be3bf510afb038195ce8b9b694f2b618ba30",
   "note_path": "docs/DM_CURRENT_BANK_QUANTITATIVE_MAPPING_NOTE_2026-04-21.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: register the row as meta bookkeeping limited to table reproduction, attach complete unclipped runner stdout, and require cited retained bank and bridge derivations before asserting a physical-observable theorem.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-gpt-5",
   "previous_audits": [
@@ -1406,6 +1388,61 @@
         "total_pass": 17
       },
       "verdict_rationale": "Issue: the load-bearing mapping is implemented by labeling existing package fields as physical observables, while the helper supplies key numerical inputs directly. Why this blocks: arithmetic consistency and finiteness do not derive the semantic observable bridge or establish first-principles provenance for the current bank. Repair target: cite retained derivations for the bank inputs and add a theorem and runner that construct the physical-observable map rather than declaring labels and true completeness flags. Claim boundary until fixed: the artifact is a reproducible bookkeeping table for a supplied benchmark bank."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:16.921872+00:00",
+      "audit_date": "2026-07-25T15:13:13.613505+00:00",
+      "audit_invocation_history": [
+        "57d0b427c4894550b97ceb416a39e3e8"
+      ],
+      "audit_invocation_id": "57d0b427c4894550b97ceb416a39e3e8",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41"
+        },
+        "load_bearing_score": 0.0,
+        "runner_hash": "d360606a084987b74c6c8c36a72d20e6feedac8de64b75a1242c7a437860ed11",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-batch-A-20260725-c59fc120",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The table reproduces imported package values and assigns physical-role labels, but no cited retained authority or derivation establishes the bank-to-observable identifications. The completeness check is hard-coded with every item set to true.",
+      "claim_scope": "Bookkeeping claim that hard-coded current-bank quantities are reproduced, arithmetic checks pass, and labels are assembled into the displayed mapping table; not a physical derivation or flagship closure.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-07-25T15:13:13.613505+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The work here is to expose that bank as one explicit quantitative mapping.",
+      "load_bearing_step_class": "F",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: register the row as meta bookkeeping limited to table reproduction, attach complete unclipped runner stdout, and require cited retained bank and bridge derivations before asserting a physical-observable theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 15,
+        "D": 2,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The source explicitly limits itself to bookkeeping: it relabels values returned by `exact_package()` as DM observables and publishes them in a table. The runner's completeness entries are literal `True` values, while the helper hard-codes several numerical premises, so the checks establish copying, finiteness, and arithmetic rather than a derivation from the axiom. The clipped stdout independently forbids `audited_clean`, and the flagship, selector, and branch-choice boundaries remain outside this mapping item."
     }
   ],
   "prose_corrections": [],
@@ -1415,12 +1452,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 15,
-    "D": 2,
-    "total_pass": 17
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_current_bank_quantitative_mapping_2026_04_21.py",
   "title": "DM Current-Bank Quantitative Mapping",
   "transitive_descendants": 0,
-  "verdict_rationale": "The source explicitly limits itself to bookkeeping: it relabels values returned by `exact_package()` as DM observables and publishes them in a table. The runner's completeness entries are literal `True` values, while the helper hard-codes several numerical premises, so the checks establish copying, finiteness, and arithmetic rather than a derivation from the axiom. The clipped stdout independently forbids `audited_clean`, and the flagship, selector, and branch-choice boundaries remain outside this mapping item."
+  "verdict_rationale": null
 }

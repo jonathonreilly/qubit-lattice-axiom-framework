@@ -1,79 +1,24 @@
 {
-  "audit_date": "2026-07-25T03:03:08.364996+00:00",
-  "audit_invocation_history": [
-    "a419949bb9b74e18a4023933d4f54bc1"
-  ],
-  "audit_invocation_id": "a419949bb9b74e18a4023933d4f54bc1",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/generated_finite_composition_minimality_2026_07_13.py"
-    },
-    "criticality": "high",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 8.248,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/generated_finite_composition_minimality_2026_07_13.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "9fc824a995068847effaa96d411cf42fd28e6688cf0f75e9cc048c13404faefb",
-    "runner_path": "scripts/generated_finite_composition_minimality_2026_07_13.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 37
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-e23857c6",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite algebraic equivalence closes. The broader negative/minimality component lacks the required N1, N5, and N7 execution evidence: retirement routes remain live and the current stdout contains no five-class resolution tests.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "generated_finite_composition_minimality_theorem_2026-07-13",
-  "claim_scope": "Finite-dimensional complex C*-algebra composition equivalence from faithful commuting local M2(C) embeddings plus generatedness, including the candidate negative that local copies without generatedness or an equivalent condition do not force the declared global algebra.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T03:03:08.364996+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -81,38 +26,131 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 6,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 8.248,
-  "load_bearing_step": "The tensor-product domain is simple, so the unital product homomorphism is injective; generatedness makes its image all of B_F and hence makes it an isomorphism.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "1d2da4cc66897c49f71830105e88766dde01da67efd87cdffcc6de70a63c7a2f",
   "note_path": "docs/GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle runner lines substantively testing every N1 route and all five N5 resolution classes, independently resolve N7, and then re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
-  "previous_audits": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-08-03T07:42:19.965487+00:00",
+      "audit_date": "2026-07-25T03:03:08.364996+00:00",
+      "audit_invocation_history": [
+        "a419949bb9b74e18a4023933d4f54bc1"
+      ],
+      "audit_invocation_id": "a419949bb9b74e18a4023933d4f54bc1",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/generated_finite_composition_minimality_2026_07_13.py"
+        },
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 8.248,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/generated_finite_composition_minimality_2026_07_13.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "9fc824a995068847effaa96d411cf42fd28e6688cf0f75e9cc048c13404faefb",
+        "runner_path": "scripts/generated_finite_composition_minimality_2026_07_13.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 37
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-e23857c6",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic equivalence closes. The broader negative/minimality component lacks the required N1, N5, and N7 execution evidence: retirement routes remain live and the current stdout contains no five-class resolution tests.",
+      "claim_scope": "Finite-dimensional complex C*-algebra composition equivalence from faithful commuting local M2(C) embeddings plus generatedness, including the candidate negative that local copies without generatedness or an equivalent condition do not force the declared global algebra.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T03:03:08.364996+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The tensor-product domain is simple, so the unital product homomorphism is injective; generatedness makes its image all of B_F and hence makes it an isomorphism.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle runner lines substantively testing every N1 route and all five N5 resolution classes, independently resolve N7, and then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 8,
+        "C": 6,
+        "D": 6,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The positive theorem is a correct class-A closure: commutation constructs the product homomorphism, simplicity gives injectivity, and generatedness gives surjectivity. The runner genuinely computes the stated finite ranks and both extension witnesses, with 25 checks passing, but those finite checks are corroboration rather than the general proof. N1 leaves canonical-law, operational-quotient, and irreducibility routes live; N2 identifies two independent clauses, N3 finds the category assumptions explicit, N4 supplies no prior-ruled witness, N5 lacks the required five resolution classes, N6 remains open, N7 is unresolved, and N8 cannot repair those omissions. Accordingly, the bounded positive core is sound, but the artifact's negative/minimality component is not eligible for clean retention."
+    }
+  ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 5,
-    "B": 8,
-    "C": 6,
-    "D": 6,
-    "total_pass": 25
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/generated_finite_composition_minimality_2026_07_13.py",
   "title": "Generated Finite Composition: Category-Relative Equivalence Theorem",
   "transitive_descendants": 37,
-  "verdict_rationale": "The positive theorem is a correct class-A closure: commutation constructs the product homomorphism, simplicity gives injectivity, and generatedness gives surjectivity. The runner genuinely computes the stated finite ranks and both extension witnesses, with 25 checks passing, but those finite checks are corroboration rather than the general proof. N1 leaves canonical-law, operational-quotient, and irreducibility routes live; N2 identifies two independent clauses, N3 finds the category assumptions explicit, N4 supplies no prior-ruled witness, N5 lacks the required five resolution classes, N6 remains open, N7 is unresolved, and N8 cannot repair those omissions. Accordingly, the bounded positive core is sound, but the artifact's negative/minimality component is not eligible for clean retention."
+  "verdict_rationale": null
 }

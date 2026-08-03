@@ -1,92 +1,42 @@
 {
-  "audit_date": "2026-07-25T14:28:11.330151+00:00",
-  "audit_invocation_history": [
-    "917927dd97564591b0d3bf6b457ce833"
-  ],
-  "audit_invocation_id": "917927dd97564591b0d3bf6b457ce833",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 1,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true,
-      "runner_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "878137f0ac267df279d7d4a4bf187979fab4cbd4b7933145cf381687baaa437c",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "878137f0ac267df279d7d4a4bf187979fab4cbd4b7933145cf381687baaa437c",
-    "runner_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-ba5b1e4d",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite identities close, but the negative boundary fails N1/N5/N7: operator-level sector-factorization is explicitly left open, and the required resolution-complete stress test is absent.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
-  "claim_scope": "Within the finite real regular C3 packet, only the Gaussian r=1 calculation, projector ranks (1,2), and existence of multiple positive invariant metrics for the same central idempotents were audited; exhaustive non-forcing of det_C/r=1/2 was not.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T14:28:11.330151+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The same central idempotents admit positive C3-invariant metric families with different trivial-to-standard energy ratios, so K0 does not by itself select an energy weighting.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "e75d40809507c76e0226c1693745c0c96d74e4f7ae9799cab72804a72f586a89",
   "note_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
-  "notes_for_re_audit_if_any": "scope_too_broad \u2014 split the verified finite counterfamily from the no-forcing language or execute the named operator-level sector-factorization route and supply five fully evidenced attack routes plus resolution-complete N5/N8 dispositions; add a dated downstream-hygiene line to this note's boundary to trigger re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1441,19 +1391,106 @@
         "total_pass": 4
       },
       "verdict_rationale": "Issue: the finite algebra supports the K0 non-selector result, but operator-level sector-factorization remains explicitly open and the trace route is not separately derived. Why this blocks: the mandatory N1-N8 gate cannot certify exhaustive non-forcing, so audited_clean is unavailable. Repair target: test the operator-superselection route and independently establish the trace-measure premise. Claim boundary until fixed: retain only the finite C3 projector, metric-family, and measure-comparison result."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.095357+00:00",
+      "audit_date": "2026-07-25T14:28:11.330151+00:00",
+      "audit_invocation_history": [
+        "917927dd97564591b0d3bf6b457ce833"
+      ],
+      "audit_invocation_id": "917927dd97564591b0d3bf6b457ce833",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 2
+          },
+          "decoration_candidate": false,
+          "dominant_class": "D",
+          "exists": true,
+          "runner_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "878137f0ac267df279d7d4a4bf187979fab4cbd4b7933145cf381687baaa437c",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "878137f0ac267df279d7d4a4bf187979fab4cbd4b7933145cf381687baaa437c",
+        "runner_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-ba5b1e4d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite identities close, but the negative boundary fails N1/N5/N7: operator-level sector-factorization is explicitly left open, and the required resolution-complete stress test is absent.",
+      "claim_scope": "Within the finite real regular C3 packet, only the Gaussian r=1 calculation, projector ranks (1,2), and existence of multiple positive invariant metrics for the same central idempotents were audited; exhaustive non-forcing of det_C/r=1/2 was not.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T14:28:11.330151+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The same central idempotents admit positive C3-invariant metric families with different trivial-to-standard energy ratios, so K0 does not by itself select an energy weighting.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad \u2014 split the verified finite counterfamily from the no-forcing language or execute the named operator-level sector-factorization route and supply five fully evidenced attack routes plus resolution-complete N5/N8 dispositions; add a dated downstream-hygiene line to this note's boundary to trigger re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: The finite algebra checks are sound, but the artifact asserts a stretch-attempt negative and derived no-go boundary while the named operator-level sector-factorization route remains untested; N1 lacks five fully evidenced closed attacks, N5 lacks live checks at all five required resolutions, and N7 remains unresolved. Why this blocks: N2 collapses to the single block-vs-DOF measure wall, N3 reveals no additional hidden premise, N4 has no one-hop witness to match, N6 supplies no approved primitive fixing the measure, and N8 provides no packet evidence retiring the open operator route. Repair target: execute and document the operator-level route and a complete N1\u2013N8 stress test while retaining the finite counterfamily proof. Claim boundary until fixed: the packet supports the Gaussian, projector-rank, and varying-invariant-metric facts, but not a clean no-forcing theorem."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 4,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
   "title": "Flavor \u2014 Find-J round 4 executable block-count measure check",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: The finite algebra checks are sound, but the artifact asserts a stretch-attempt negative and derived no-go boundary while the named operator-level sector-factorization route remains untested; N1 lacks five fully evidenced closed attacks, N5 lacks live checks at all five required resolutions, and N7 remains unresolved. Why this blocks: N2 collapses to the single block-vs-DOF measure wall, N3 reveals no additional hidden premise, N4 has no one-hop witness to match, N6 supplies no approved primitive fixing the measure, and N8 provides no packet evidence retiring the open operator route. Repair target: execute and document the operator-level route and a complete N1\u2013N8 stress test while retaining the finite counterfamily proof. Claim boundary until fixed: the packet supports the Gaussian, projector-rank, and varying-invariant-metric facts, but not a clean no-forcing theorem."
+  "verdict_rationale": null
 }

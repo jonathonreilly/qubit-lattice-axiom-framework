@@ -1,78 +1,24 @@
 {
-  "audit_date": "2026-07-24T00:03:03.496924+00:00",
-  "audit_invocation_history": [
-    "a00124654cd146fc8f096f69a5a8a8fc",
-    "a1010b2be74f47cf9fe55ba551c658f5"
-  ],
-  "audit_invocation_id": "a1010b2be74f47cf9fe55ba551c658f5",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, which occurs uniquely at d = 4; there the exact tuple is (7/8, 7/8, 0)."
-    },
-    "dep_claim_type": {
-      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
-    },
-    "deps": [
-      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 15.747,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_sm_relativistic_dof_finite_inventory.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "b6bb4af047494b3acea94b65f00453dec5b6225c4bdcb0f27f2204cce7379338",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "b6bb4af047494b3acea94b65f00453dec5b6225c4bdcb0f27f2204cce7379338",
-    "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 858
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260724-173d0c25",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite arithmetic closes exactly from the supplied 28, 90, and 7/8 inputs, but the restricted packet does not establish the Standard Model inventory or its thermal applicability; the runner explicitly treats both as literature inputs. The physical chain therefore remains conditional.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
-  "claim_scope": "Given the explicitly declared Standard Model inventory totals of 28 bosonic and 90 fermionic states and the retained 7/8 weight, exact finite arithmetic gives g_* = 427/4 = 106.75; inventory selection and thermal applicability are excluded.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-24T00:03:03.496924+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -80,20 +26,19 @@
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 12,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 15.775,
-  "load_bearing_step": "With the retained fermion weight 7/8, g_* = 28 + (7/8) * 90 = 427/4 = 106.75.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "863040ed53be13ca3d73f0c99c303879ac1d8c3f421353083943ad1721d10420",
   "note_path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained physical-inventory and thermal-applicability derivation or bridge dependency, then re-audit this note.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -285,19 +230,111 @@
         "total_pass": 28
       },
       "verdict_rationale": "The exact arithmetic is correct, and the runner genuinely computes the multiplicity products and Fraction sum rather than merely printing a passing result. However, the Standard Model inventory and its interpretation as relativistic thermal states are expressly declared external physical inputs; only the 7/8 weight is supplied by a retained one-hop authority. The result is therefore a valid conditional arithmetic certificate, not clean retained closure of the physical g_* value."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:29.914282+00:00",
+      "audit_date": "2026-07-24T00:03:03.496924+00:00",
+      "audit_invocation_history": [
+        "a00124654cd146fc8f096f69a5a8a8fc",
+        "a1010b2be74f47cf9fe55ba551c658f5"
+      ],
+      "audit_invocation_id": "a1010b2be74f47cf9fe55ba551c658f5",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, which occurs uniquely at d = 4; there the exact tuple is (7/8, 7/8, 0)."
+        },
+        "dep_claim_type": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 15.747,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_sm_relativistic_dof_finite_inventory.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "b6bb4af047494b3acea94b65f00453dec5b6225c4bdcb0f27f2204cce7379338",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "b6bb4af047494b3acea94b65f00453dec5b6225c4bdcb0f27f2204cce7379338",
+        "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 858
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260724-173d0c25",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite arithmetic closes exactly from the supplied 28, 90, and 7/8 inputs, but the restricted packet does not establish the Standard Model inventory or its thermal applicability; the runner explicitly treats both as literature inputs. The physical chain therefore remains conditional.",
+      "claim_scope": "Given the explicitly declared Standard Model inventory totals of 28 bosonic and 90 fermionic states and the retained 7/8 weight, exact finite arithmetic gives g_* = 427/4 = 106.75; inventory selection and thermal applicability are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-24T00:03:03.496924+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "With the retained fermion weight 7/8, g_* = 28 + (7/8) * 90 = 427/4 = 106.75.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained physical-inventory and thermal-applicability derivation or bridge dependency, then re-audit this note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 25,
+        "C": 0,
+        "D": 0,
+        "total_pass": 78
+      },
+      "verdict_rationale": "Issue: The finite identity is correct, but the Standard Model inventory totals and high-temperature applicability are explicit literature inputs not established by the restricted packet; the runner checks only their local attribution and mapping. Why this blocks: those physical inputs are load-bearing, so exact arithmetic alone does not close the full chain. Repair target: supply a retained derivation or bridge dependency establishing the inventory and thermal applicability. Claim boundary until fixed: conditional on the declared 28/90 inventory, stated thermal scope, and retained 7/8 factor, the exact result is 427/4 = 106.75."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 53,
-    "B": 25,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 78
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
   "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Literature-Conditioned Inventory and Finite Arithmetic",
   "transitive_descendants": 875,
-  "verdict_rationale": "Issue: The finite identity is correct, but the Standard Model inventory totals and high-temperature applicability are explicit literature inputs not established by the restricted packet; the runner checks only their local attribution and mapping. Why this blocks: those physical inputs are load-bearing, so exact arithmetic alone does not close the full chain. Repair target: supply a retained derivation or bridge dependency establishing the inventory and thermal applicability. Claim boundary until fixed: conditional on the declared 28/90 inventory, stated thermal scope, and retained 7/8 factor, the exact result is 427/4 = 106.75."
+  "verdict_rationale": null
 }

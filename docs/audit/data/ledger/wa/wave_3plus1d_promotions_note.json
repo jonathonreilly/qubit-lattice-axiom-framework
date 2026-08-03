@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-25T18:11:30.791465+00:00",
-  "audit_invocation_history": [
-    "a3d4fd5cb9cd45dca788f7d05d6942d3"
-  ],
-  "audit_invocation_id": "a3d4fd5cb9cd45dca788f7d05d6942d3",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true,
-      "runner_path": "scripts/wave_3plus1d_promotions.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 1.5,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/wave_3plus1d_promotions.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "9b9851c6a24777b5aecdf659ecbccd7c1dd0b2b0181231c2eac6f9e01df652fd",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "9b9851c6a24777b5aecdf659ecbccd7c1dd0b2b0181231c2eac6f9e01df652fd",
-    "runner_path": "scripts/wave_3plus1d_promotions.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-8b7a5d55",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite lightcone and stitched-comparator tables close computationally, but no elliptic/Poisson solve or convergence bound identifies the I branch with the c\u2192\u221e comparator required for the retardation and combined-signature interpretation.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "wave_3plus1d_promotions_note",
-  "claim_scope": "Finite (3+1)D wave-operator result: delta-pulse first arrival is first_dt = r for r=2..8, and the moving-source history differs from the stitched late-time-frozen c=1 comparator by 30.44%, 26.47%, and 30.72% on Fam1/Fam2/Fam3; a true c->infinity comparator, framework derivation of the physical operator, and combined Lane-8 closure are excluded.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T18:11:30.791465+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
-  "load_bearing_step": "The runner computes first_dt = r for r=2..8 and three moving-source gaps of 30.44%, 26.47%, and 30.72% against the stitched late-time-frozen comparator.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale"
-  ],
   "note_hash": "76270898d12838a29dca58328a40b3e2c39992775ebf6ff8439d70d332fa9f78",
   "note_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: replace the I branch with a layerwise elliptic/Poisson solve or add a runner-asserted convergence bound to the c->infinity limit, together with hard assertions for the lightcone and gap gates.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1448,19 +1399,105 @@
         "total_pass": 10
       },
       "verdict_rationale": "Issue: the runner computes the displayed finite tables but its I branch remains a late-time slice of a finite-c wave solve, not a derived instantaneous c->infinity solution. Why this blocks: the literal retardation claim, physical-operator language, and combined three-signature closure do not follow from the restricted packet. Repair target: implement a layerwise elliptic/Poisson comparator or prove a runner-asserted convergence bound, supply the operator bridge, and audit Lane 8 separately. Claim boundary until fixed: retain only the strict finite lightcone result and the three-family gap against the specifically defined frozen-wave comparator."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:31.476195+00:00",
+      "audit_date": "2026-07-25T18:11:30.791465+00:00",
+      "audit_invocation_history": [
+        "a3d4fd5cb9cd45dca788f7d05d6942d3"
+      ],
+      "audit_invocation_id": "a3d4fd5cb9cd45dca788f7d05d6942d3",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 2
+          },
+          "decoration_candidate": false,
+          "dominant_class": "D",
+          "exists": true,
+          "runner_path": "scripts/wave_3plus1d_promotions.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 1.5,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/wave_3plus1d_promotions.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "9b9851c6a24777b5aecdf659ecbccd7c1dd0b2b0181231c2eac6f9e01df652fd",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "9b9851c6a24777b5aecdf659ecbccd7c1dd0b2b0181231c2eac6f9e01df652fd",
+        "runner_path": "scripts/wave_3plus1d_promotions.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-8b7a5d55",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite lightcone and stitched-comparator tables close computationally, but no elliptic/Poisson solve or convergence bound identifies the I branch with the c\u2192\u221e comparator required for the retardation and combined-signature interpretation.",
+      "claim_scope": "Finite (3+1)D wave-operator result: delta-pulse first arrival is first_dt = r for r=2..8, and the moving-source history differs from the stitched late-time-frozen c=1 comparator by 30.44%, 26.47%, and 30.72% on Fam1/Fam2/Fam3; a true c->infinity comparator, framework derivation of the physical operator, and combined Lane-8 closure are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T18:11:30.791465+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner computes first_dt = r for r=2..8 and three moving-source gaps of 30.44%, 26.47%, and 30.72% against the stitched late-time-frozen comparator.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: replace the I branch with a layerwise elliptic/Poisson solve or add a runner-asserted convergence bound to the c->infinity limit, together with hard assertions for the lightcone and gap gates.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 3,
+        "C": 1,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The supplied source genuinely evolves the finite 19^3 wave lattice and reproduces the seven lightcone arrivals and three reported comparator gaps rather than merely printing constants. However, _make_instantaneous stitches the final slice of frozen-source c=1 wave evolutions; it neither solves an elliptic Poisson problem nor bounds convergence to c\u2192\u221e. Accordingly the finite stitched-comparator result is supported, while the literal instantaneous-retardation and combined Lane-8 interpretations remain conditional."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 7,
-    "B": 3,
-    "C": 1,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 11
+    "total_pass": 0
   },
   "runner_path": "scripts/wave_3plus1d_promotions.py",
   "title": "(3+1)D Promotions of Lane 5 (Lightcone) and Lane 6 (Retarded vs Instantaneous)",
   "transitive_descendants": 1,
-  "verdict_rationale": "The supplied source genuinely evolves the finite 19^3 wave lattice and reproduces the seven lightcone arrivals and three reported comparator gaps rather than merely printing constants. However, _make_instantaneous stitches the final slice of frozen-source c=1 wave evolutions; it neither solves an elliptic Poisson problem nor bounds convergence to c\u2192\u221e. Accordingly the finite stitched-comparator result is supported, while the literal instantaneous-retardation and combined Lane-8 interpretations remain conditional."
+  "verdict_rationale": null
 }

@@ -1,93 +1,42 @@
 {
-  "audit_date": "2026-07-25T21:49:43.197765+00:00",
-  "audit_invocation_history": [
-    "59d96bfe0c6a4886b75916b9e942c310"
-  ],
-  "audit_invocation_id": "59d96bfe0c6a4886b75916b9e942c310",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 3,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "8a57f9051c3a46e54d677bbb82498ee35517cbc2b922ac6eb23c374337e59024",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "8a57f9051c3a46e54d677bbb82498ee35517cbc2b922ac6eb23c374337e59024",
-    "runner_path": "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-c36f19d8",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The four runner checks are correct algebraic consequences of the stated 3x3 matrices. The broader no-J boundary does not close because only four distinct negative routes are evidenced, while a noncentral physical generation action remains untested.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "flavor_find_j_round3_dirac_generation_blind_2026-06-02",
-  "claim_scope": "Four exact finite 3x3 C3-circulant algebra checks conditional on U_gen=iI3; no general doublet-J absence or physical charge-conjugation claim.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T21:49:43.197765+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Conditional on U_gen=iI3, the central scalar and C-eigenbasis phase centralizer leave H fixed, generic rephasing breaks the C3 relation, and the Hermitian C3-circulant anticommutant is zero.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "ef60620527073ccb5e9f9c7a2e6cf988f782edd94b0f4f5fce27699165328221",
   "note_path": "docs/FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md",
-  "notes_for_re_audit_if_any": "scope_too_broad \u2014 execute at least one fifth genuinely distinct attack route, beginning with a noncentral generation-space Dirac action, and rerun the N1-N8 gate before retaining any general no-J boundary.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1402,19 +1351,107 @@
         "total_pass": 4
       },
       "verdict_rationale": "The runner performs genuine numerical matrix checks and exact symbolic algebra rather than printing expected constants. It supports the stated central-scalar invariance, phase-centralizer invariance, generic scalar-rephasing obstruction, and exact zero solution in the Hermitian C3-circulant anticommutant family. The result remains conditional on U_gen=iI3, and neither the physical spinor-to-generation bridge nor exhaustion of all possible doublet-J mechanisms is established."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.105028+00:00",
+      "audit_date": "2026-07-25T21:49:43.197765+00:00",
+      "audit_invocation_history": [
+        "59d96bfe0c6a4886b75916b9e942c310"
+      ],
+      "audit_invocation_id": "59d96bfe0c6a4886b75916b9e942c310",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 3,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "8a57f9051c3a46e54d677bbb82498ee35517cbc2b922ac6eb23c374337e59024",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "8a57f9051c3a46e54d677bbb82498ee35517cbc2b922ac6eb23c374337e59024",
+        "runner_path": "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-c36f19d8",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The four runner checks are correct algebraic consequences of the stated 3x3 matrices. The broader no-J boundary does not close because only four distinct negative routes are evidenced, while a noncentral physical generation action remains untested.",
+      "claim_scope": "Four exact finite 3x3 C3-circulant algebra checks conditional on U_gen=iI3; no general doublet-J absence or physical charge-conjugation claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T21:49:43.197765+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Conditional on U_gen=iI3, the central scalar and C-eigenbasis phase centralizer leave H fixed, generic rephasing breaks the C3 relation, and the Hermitian C3-circulant anticommutant is zero.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad \u2014 execute at least one fifth genuinely distinct attack route, beginning with a noncentral generation-space Dirac action, and rerun the N1-N8 gate before retaining any general no-J boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue (N1/N7): the packet executes only four distinct route checks, and the strongest steelman\u2014that the physical Dirac operator acts noncentrally on generation space\u2014remains untested. Why this blocks (N2-N6): the four tested restrictions are distinct and algebraically valid, no hidden premise or residual-witness mismatch appears, the rhetoric is explicitly packet-bounded, and no supplied primitive closes the noncentral generation-action route. Repair target (N8): execute a fifth genuinely distinct route and disposition the supplied cross-cycle echoes against it. Claim boundary until fixed: retain only the four exact 3x3 C3-circulant identities conditional on U_gen=iI3, not a general absence of a doublet J or a physical charged-lepton conclusion."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 4,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py",
   "title": "Flavor \u2014 J-hunt round 3: conditional finite-generation algebra for `U_gen=iI3`; no doublet `J` is supplied.",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue (N1/N7): the packet executes only four distinct route checks, and the strongest steelman\u2014that the physical Dirac operator acts noncentrally on generation space\u2014remains untested. Why this blocks (N2-N6): the four tested restrictions are distinct and algebraically valid, no hidden premise or residual-witness mismatch appears, the rhetoric is explicitly packet-bounded, and no supplied primitive closes the noncentral generation-action route. Repair target (N8): execute a fifth genuinely distinct route and disposition the supplied cross-cycle echoes against it. Claim boundary until fixed: retain only the four exact 3x3 C3-circulant identities conditional on U_gen=iI3, not a general absence of a doublet J or a physical charged-lepton conclusion."
+  "verdict_rationale": null
 }

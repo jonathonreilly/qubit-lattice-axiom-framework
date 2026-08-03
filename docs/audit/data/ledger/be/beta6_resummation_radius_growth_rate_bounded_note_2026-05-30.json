@@ -1,81 +1,24 @@
 {
-  "audit_date": "2026-07-29T22:31:59.238057+00:00",
-  "audit_invocation_history": [
-    "7a30cdc08d88483da30cb160ba521510"
-  ],
-  "audit_invocation_id": "7a30cdc08d88483da30cb160ba521510",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 5,
-      "counts": {
-        "A": 2,
-        "B": 1,
-        "C": 7,
-        "D": 4
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier.",
-      "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated Taylor-series ODE residual through the runner window, finite numerical agreement at beta=2,4,6,8,10, and the beta=6 logarithmic-derivative readout; no all-order Picard-Fuchs or all-order branch-identification claim was audited."
-    },
-    "dep_claim_type": {
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
-      "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
-      "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
-    },
-    "deps": [
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-      "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 1.5,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "1413e2f4e92df6cb59983a24345da92a7d330574a9c8495b8034825a069b77a1",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "1413e2f4e92df6cb59983a24345da92a7d330574a9c8495b8034825a069b77a1",
-    "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-ca871339",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The geometric-series algebra and finite compact-block counterexample check out, but the supplied chain does not derive the uniform tree-sector coefficient majorant connecting actual cluster weights to that geometric series. Moreover, a majorant establishes a one-sided radius lower bound, not equality or necessary-and-sufficient convergence without a matching lower-growth argument.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
-  "claim_scope": "The formal tree-sector geometric-majorant implication yielding R_tree at least 18/g_tree^(1/4), its sufficient beta=6 condition g_tree<81, and the finite compact K-built 2x2x1 deficit counterexample; no full-series or beta=6 plaquette closure.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem / negative_route_pruning (a conditional lower bound",
-  "claim_type_last_reviewed": "2026-07-29T22:31:59.238057+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -84,27 +27,20 @@
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
   ],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
-  "load_bearing_step": "Given |W_k(beta)| <= g_tree^k 18^(-(4k+1)) |beta|^(4k+1), the tree-sector majorant is geometric in g_tree(|beta|/18)^4 and therefore gives radius at least 18/g_tree^(1/4).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "7b81131d5611257f02dd31ce4794328ad811b88b83de154329a38b67415f03ec",
   "note_path": "docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": "other: supply a retained derivation of the uniform tree-sector coefficient majorant, including the Euler weight, n=F-1 rule, and cumulant/count control; rewrite equality and iff language as a one-sided sufficient bound unless a matching lower-growth theorem is proved.",
-  "open_dependency_paths": [
-    "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md"
-  ],
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
   "previous_audits": [
     {
       "archived_at": "2026-06-05T09:04:38.949719+00:00",
@@ -378,19 +314,120 @@
         "total_pass": 32
       },
       "verdict_rationale": "The load-bearing theorem is an algebraic closure over the stated sector definitions and retained-grade upstream recurrence/cumulant inputs, with the actual growth product g_tree left explicit rather than imported. The runner source performs exact rational/symbolic checks and finite cubical incidence enumeration rather than merely printing the threshold; the independent formula check confirms the Euler exponent, threshold 81, and deficit factor 9. The note also preserves the required negative boundary by not promoting the result to all K-built clusters or to the full connected series."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:06.885203+00:00",
+      "audit_date": "2026-07-29T22:31:59.238057+00:00",
+      "audit_invocation_history": [
+        "7a30cdc08d88483da30cb160ba521510"
+      ],
+      "audit_invocation_id": "7a30cdc08d88483da30cb160ba521510",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 5,
+          "counts": {
+            "A": 2,
+            "B": 1,
+            "C": 7,
+            "D": 4
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated Taylor-series ODE residual through the runner window, finite numerical agreement at beta=2,4,6,8,10, and the beta=6 logarithmic-derivative readout; no all-order Picard-Fuchs or all-order branch-identification claim was audited."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 1.5,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "1413e2f4e92df6cb59983a24345da92a7d330574a9c8495b8034825a069b77a1",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "1413e2f4e92df6cb59983a24345da92a7d330574a9c8495b8034825a069b77a1",
+        "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260729-ca871339",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The geometric-series algebra and finite compact-block counterexample check out, but the supplied chain does not derive the uniform tree-sector coefficient majorant connecting actual cluster weights to that geometric series. Moreover, a majorant establishes a one-sided radius lower bound, not equality or necessary-and-sufficient convergence without a matching lower-growth argument.",
+      "claim_scope": "The formal tree-sector geometric-majorant implication yielding R_tree at least 18/g_tree^(1/4), its sufficient beta=6 condition g_tree<81, and the finite compact K-built 2x2x1 deficit counterexample; no full-series or beta=6 plaquette closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T22:31:59.238057+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Given |W_k(beta)| <= g_tree^k 18^(-(4k+1)) |beta|^(4k+1), the tree-sector majorant is geometric in g_tree(|beta|/18)^4 and therefore gives radius at least 18/g_tree^(1/4).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: supply a retained derivation of the uniform tree-sector coefficient majorant, including the Euler weight, n=F-1 rule, and cumulant/count control; rewrite equality and iff language as a one-sided sufficient bound unless a matching lower-growth theorem is proved.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 4,
+        "total_pass": 32
+      },
+      "verdict_rationale": "Issue: the runner verifies cubical incidence and threshold arithmetic but assumes rather than derives the uniform actual-cluster majorant, and the note promotes that majorant to equality/iff language. Why this blocks: an upper majorant proves sufficient absolute convergence and a radius lower bound, not the actual radius or a necessary condition. Repair target: derive the tree-sector weight bound from retained SU(3) linked-cluster inputs and add a matching lower-growth argument if equality is intended. Claim boundary until fixed: only the formal majorant implication and finite fixed-increment counterexample survive; under the N1-N8 judgment, tree growth, compact deficits, and the baryon/epsilon sector remain distinct open walls."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 3,
-    "B": 4,
-    "C": 5,
-    "D": 4,
-    "total_pass": 32
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
   "title": "Beta=6 SU(3) Wilson Delta(beta) \u2014 Tree-Sector Product Bound and Compact-Deficit Obstruction",
   "transitive_descendants": 1,
-  "verdict_rationale": "Issue: the runner verifies cubical incidence and threshold arithmetic but assumes rather than derives the uniform actual-cluster majorant, and the note promotes that majorant to equality/iff language. Why this blocks: an upper majorant proves sufficient absolute convergence and a radius lower bound, not the actual radius or a necessary condition. Repair target: derive the tree-sector weight bound from retained SU(3) linked-cluster inputs and add a matching lower-growth argument if equality is intended. Claim boundary until fixed: only the formal majorant implication and finite fixed-increment counterexample survive; under the N1-N8 judgment, tree growth, compact deficits, and the baryon/epsilon sector remain distinct open walls."
+  "verdict_rationale": null
 }

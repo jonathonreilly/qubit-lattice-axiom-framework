@@ -1,72 +1,45 @@
 {
-  "audit_date": "2026-07-29T21:24:11.387395+00:00",
-  "audit_invocation_history": [
-    "5fbf4fc2d93340478ccafceee71bf523",
-    "45a9b2554ddb429a8cfbab97a2af17c0"
-  ],
-  "audit_invocation_id": "45a9b2554ddb429a8cfbab97a2af17c0",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "hierarchy_matsubara_decomposition_note": "Exact determinant magnitude, free-energy density difference, and condensate density formulas for the specified finite L_s=2 spatial-APBC staggered Dirac operator over general L_t; physical endpoint, order-parameter, hierarchy-normalization, and alpha_LM selection are excluded.",
-      "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "For every integer L_t\u22652, real m, and u_0>0, the mean-field staggered Dirac operator on the minimal L_s=2 spatial APBC block satisfies |det(D+m)|=\u220f_\u03c9[m\u00b2+u_0\u00b2(3+sin\u00b2\u03c9)]\u2074; no physical EWSB observable or Higgs-mass bridge was audited."
-    },
-    "dep_claim_type": {
-      "hierarchy_matsubara_decomposition_note": "positive_theorem",
-      "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "decoration"
-    },
-    "dep_effective_status": {
-      "hierarchy_matsubara_decomposition_note": "retained",
-      "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "decoration_under_hierarchy_matsubara_decomposition_note"
-    },
-    "deps": [
-      "hierarchy_matsubara_decomposition_note",
-      "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 11.539,
-    "runner_hash": "6fb0a3f546b8e2b72e1743612508d9aad08ee3dc5f9746a5112aec848a45d6a5",
-    "transitive_descendants": 743
-  },
-  "audit_status": "audited_decoration",
-  "auditor": "codex-audit-batch-B-20260729-ed236579",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Substituting m=0 into the retained determinant identity, subtracting the positive real logarithms, and applying n_matrix=8L_t gives the claimed factor 4/(8L_t)=1/(2L_t) exactly. The result is an algebraic corollary of one retained parent rather than an independent theorem.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
-  "claim_scope": "Algebraic specialization of the supplied determinant identity at L_s=2 to the conventionally defined per-matrix-entry log-determinant difference Delta f(L_t,m)=(1/(2L_t)) Sum_omega ln(1+m^2/[u_0^2(3+sin^2 omega)]).",
-  "claim_type": "decoration",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem (proposed; audit-lane to ratify)",
-  "claim_type_last_reviewed": "2026-07-29T21:24:11.387395+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
+  "decoration_parent_claim_id": null,
   "deps": [
     "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
     "hierarchy_matsubara_decomposition_note"
   ],
   "direct_in_degree": 4,
-  "effective_status": "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
-  "effective_status_reason": "decoration_parent_retained",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 11.545,
-  "load_bearing_step": "Delta f(L_t,m)=(1/(8L_t))\u00b74 Sum_omega ln(1+m^2/[u_0^2(3+sin^2 omega)])=(1/(2L_t)) Sum_omega ln(1+m^2/[u_0^2(3+sin^2 omega)]).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "40b92dad8801b9fb05e9c84779e0d14d7530e5d367d954cb1154aa34f9188a0b",
   "note_path": "docs/HIERARCHY_MATSUBARA_FREE_ENERGY_DENSITY_NARROW_THEOREM_NOTE_2026-05-16.md",
-  "notes_for_re_audit_if_any": "Recheck if the parent determinant identity or the per-matrix-entry normalization convention changes.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -124,19 +97,83 @@
         "total_pass": 26
       },
       "verdict_rationale": "The load-bearing work is entirely class A algebra over the upstream Matsubara determinant formula plus the stated per-matrix-entry normalization. The runner source performs symbolic log and prefactor checks plus numerical matrix cross-checks; it does not use external comparators. Because the chain reduces to a single upstream parent determinant/decomposition claim and standard mathematics, the conservative rubric classifies it as audited_decoration rather than audited_clean."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:20.467127+00:00",
+      "audit_date": "2026-07-29T21:24:11.387395+00:00",
+      "audit_invocation_history": [
+        "5fbf4fc2d93340478ccafceee71bf523",
+        "45a9b2554ddb429a8cfbab97a2af17c0"
+      ],
+      "audit_invocation_id": "45a9b2554ddb429a8cfbab97a2af17c0",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_matsubara_decomposition_note": "Exact determinant magnitude, free-energy density difference, and condensate density formulas for the specified finite L_s=2 spatial-APBC staggered Dirac operator over general L_t; physical endpoint, order-parameter, hierarchy-normalization, and alpha_LM selection are excluded.",
+          "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "For every integer L_t\u22652, real m, and u_0>0, the mean-field staggered Dirac operator on the minimal L_s=2 spatial APBC block satisfies |det(D+m)|=\u220f_\u03c9[m\u00b2+u_0\u00b2(3+sin\u00b2\u03c9)]\u2074; no physical EWSB observable or Higgs-mass bridge was audited."
+        },
+        "dep_claim_type": {
+          "hierarchy_matsubara_decomposition_note": "positive_theorem",
+          "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "hierarchy_matsubara_decomposition_note": "retained",
+          "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "decoration_under_hierarchy_matsubara_decomposition_note"
+        },
+        "deps": [
+          "hierarchy_matsubara_decomposition_note",
+          "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.539,
+        "runner_hash": "6fb0a3f546b8e2b72e1743612508d9aad08ee3dc5f9746a5112aec848a45d6a5",
+        "transitive_descendants": 743
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-batch-B-20260729-ed236579",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Substituting m=0 into the retained determinant identity, subtracting the positive real logarithms, and applying n_matrix=8L_t gives the claimed factor 4/(8L_t)=1/(2L_t) exactly. The result is an algebraic corollary of one retained parent rather than an independent theorem.",
+      "claim_scope": "Algebraic specialization of the supplied determinant identity at L_s=2 to the conventionally defined per-matrix-entry log-determinant difference Delta f(L_t,m)=(1/(2L_t)) Sum_omega ln(1+m^2/[u_0^2(3+sin^2 omega)]).",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-29T21:24:11.387395+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hierarchy_matsubara_decomposition_note:retained->unaudited",
+      "load_bearing_step": "Delta f(L_t,m)=(1/(8L_t))\u00b74 Sum_omega ln(1+m^2/[u_0^2(3+sin^2 omega)])=(1/(2L_t)) Sum_omega ln(1+m^2/[u_0^2(3+sin^2 omega)]).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck if the parent determinant identity or the per-matrix-entry normalization convention changes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "Independent algebra confirms the logarithmic subtraction and the normalization factor 4/(8L_t)=1/(2L_t), with positivity ensured by u_0>0. The runner\u2019s 26 checks agree, including direct finite-matrix comparisons. Because the result uses only one retained determinant parent plus standard logarithm algebra and introduces no independent comparator or physical identification, it is an audited decoration rather than a standalone positive theorem."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 26,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 26
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_hierarchy_matsubara_free_energy_density_narrow.py",
   "title": "Hierarchy Matsubara Free-Energy Density - Narrow Algebraic Theorem",
   "transitive_descendants": 746,
-  "verdict_rationale": "Independent algebra confirms the logarithmic subtraction and the normalization factor 4/(8L_t)=1/(2L_t), with positivity ensured by u_0>0. The runner\u2019s 26 checks agree, including direct finite-matrix comparisons. Because the result uses only one retained determinant parent plus standard logarithm algebra and introduces no independent comparator or physical identification, it is an audited decoration rather than a standalone positive theorem."
+  "verdict_rationale": null
 }

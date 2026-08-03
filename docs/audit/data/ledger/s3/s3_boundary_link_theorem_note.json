@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-29T18:17:29.464481+00:00",
-  "audit_invocation_history": [
-    "7bfdbe234693464c95d04f19ff23ef7f",
-    "9ead276fa7f647c890bbee0e21a29a06"
-  ],
-  "audit_invocation_id": "9ead276fa7f647c890bbee0e21a29a06",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 9
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true,
-      "runner_path": "scripts/frontier_s3_boundary_link_theorem.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 14.256,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_s3_boundary_link_theorem.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "0b3adc684b6221e288ca797322e588c4068262f01128f18459c82d6bdd2c77fe",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "0b3adc684b6221e288ca797322e588c4068262f01128f18459c82d6bdd2c77fe",
-    "runner_path": "scripts/frontier_s3_boundary_link_theorem.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1222
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260729-e5913303",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The packet clips load-bearing portions of the source proof and runner, preventing verification of the manifold, bridge, and exhaustive-certificate implementations. Completed stdout alone cannot discharge those omitted obligations.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "s3_boundary_link_theorem_note",
-  "claim_scope": "The R=2..10 boundary-link PL 2-disk verification and exhaustive Proposition Z certificate for Q_3-both-connected octahedral closures, excluding the all-R large-coordinate bridge extension.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T18:17:29.464481+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 8,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 14.262,
-  "load_bearing_step": "Exhaustive enumeration verifies that every nonempty proper P with both Q_3 sides connected has simplicial closure K_simp(P) a PL 2-disk.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls"
-  ],
   "note_hash": "a07eb6f0d49a2a937162273dd2f060afb83226e89f4bc9c37a494be8c49cdc10",
   "note_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete Property 5, Bridge Lemma, and Proposition Z proof text and every load-bearing runner function, then independently recheck the finite complexes.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1694,6 +1645,92 @@
         "total_pass": 121
       },
       "verdict_rationale": "Issue: the source reports 121 PASS as 120 EXACT and 1 BOUNDED, while completed runner stdout reports 119 EXACT and 2 BOUNDED. Why this blocks: the evidence contradicts the source\u2019s current-revision accounting, preventing clean source-level certification even though the load-bearing 1162/1162 bridge and 126/126 Proposition Z results agree. Repair target: correct the accounting and regenerate the restricted packet. Claim boundary until fixed: the stated R=2..6 and Proposition Z results remain supported; the artifact\u2019s large-coordinate qualification is bounded-with-named-walls and conditional-wall rationale, while its 24 unrealizable subset types form a derived no-go boundary."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:29.681526+00:00",
+      "audit_date": "2026-07-29T18:17:29.464481+00:00",
+      "audit_invocation_history": [
+        "7bfdbe234693464c95d04f19ff23ef7f",
+        "9ead276fa7f647c890bbee0e21a29a06"
+      ],
+      "audit_invocation_id": "9ead276fa7f647c890bbee0e21a29a06",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 9
+          },
+          "decoration_candidate": false,
+          "dominant_class": "D",
+          "exists": true,
+          "runner_path": "scripts/frontier_s3_boundary_link_theorem.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 14.256,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_s3_boundary_link_theorem.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "0b3adc684b6221e288ca797322e588c4068262f01128f18459c82d6bdd2c77fe",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "0b3adc684b6221e288ca797322e588c4068262f01128f18459c82d6bdd2c77fe",
+        "runner_path": "scripts/frontier_s3_boundary_link_theorem.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1222
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260729-e5913303",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet clips load-bearing portions of the source proof and runner, preventing verification of the manifold, bridge, and exhaustive-certificate implementations. Completed stdout alone cannot discharge those omitted obligations.",
+      "claim_scope": "The R=2..10 boundary-link PL 2-disk verification and exhaustive Proposition Z certificate for Q_3-both-connected octahedral closures, excluding the all-R large-coordinate bridge extension.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T18:17:29.464481+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Exhaustive enumeration verifies that every nonempty proper P with both Q_3 sides connected has simplicial closure K_simp(P) a PL 2-disk.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete Property 5, Bridge Lemma, and Proposition Z proof text and every load-bearing runner function, then independently recheck the finite complexes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 121,
+        "D": 0,
+        "total_pass": 121
+      },
+      "verdict_rationale": "Issue: The restricted packet clips load-bearing portions of both the source proof and runner. Why this blocks: PASS counts and visible call sites cannot establish that the omitted routines correctly compute the claimed complexes, and the packet preflight explicitly forbids a clean verdict. Repair target: provide complete rendered proof and executable evidence for the manifold, bridge, and exhaustive-certificate steps. Claim boundary until fixed: the bounded computational claims remain provisional, while the all-R extension retains the named large-coordinate bridge limitation."
     }
   ],
   "prose_corrections": [],
@@ -1710,12 +1747,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 121,
+    "C": 0,
     "D": 0,
-    "total_pass": 121
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_s3_boundary_link_theorem.py",
   "title": "S^3 Boundary-Link Disk Bounded Certificate",
   "transitive_descendants": 1227,
-  "verdict_rationale": "Issue: The restricted packet clips load-bearing portions of both the source proof and runner. Why this blocks: PASS counts and visible call sites cannot establish that the omitted routines correctly compute the claimed complexes, and the packet preflight explicitly forbids a clean verdict. Repair target: provide complete rendered proof and executable evidence for the manifold, bridge, and exhaustive-certificate steps. Claim boundary until fixed: the bounded computational claims remain provisional, while the all-R extension retains the named large-coordinate bridge limitation."
+  "verdict_rationale": null
 }

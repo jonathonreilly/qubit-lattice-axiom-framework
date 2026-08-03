@@ -1,166 +1,24 @@
 {
-  "audit_date": "2026-08-03T05:01:29.635247+00:00",
-  "audit_invocation_history": [
-    "7a560db09b7f419c91e5080081b15216"
-  ],
-  "audit_invocation_id": "7a560db09b7f419c91e5080081b15216",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0)."
-    },
-    "dep_claim_type": {
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
-    },
-    "deps": [
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-    ],
-    "helper_runner_hashes": {},
-    "judgment_fingerprint": {
-      "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
-      "digest": "836105fdfe3b122a7ed09e8a547318892a06aee3079fb987f0ae06dcdb4c518f",
-      "judgment": {
-        "audit_date": "2026-08-03T05:01:29.635247+00:00",
-        "audit_invocation_id": "7a560db09b7f419c91e5080081b15216",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-audit-batch-A-20260803-ad5b2656",
-        "auditor_confidence": "high",
-        "auditor_family": "codex-gpt-5.6",
-        "auditor_model": "gpt-5.6-sol",
-        "auditor_reasoning_effort": "xhigh",
-        "chain_closes": false,
-        "chain_closure_explanation": "The substitution from N_SU(2)=2 to (U1) is exact, but the packet clips the proof and executable exclusion evidence establishing the exhaustive K4 irrep classification, while the primary runner hard-codes N_SU(2)=2.",
-        "claim_scope": "Conditional on (X1)-(X3), substituting N_SU(2)=2 yields u_0(SU(2)) = \u27e8(1/2) Re Tr U_plaquette^SU(2)\u27e9^(1/4), without plaquette evaluation or g_2 closure.",
-        "claim_type": "bounded_theorem",
-        "claim_type_provenance": "audited",
-        "cross_confirmation": null,
-        "decoration_parent_claim_id": null,
-        "independence": "cross_family",
-        "load_bearing_step": "Substitute N_G=N_SU(2)=2 from the Cl(3) bivector-irrep dimensional readout into the L\u00fcscher\u2013Mackenzie tadpole convention to obtain (U1).",
-        "load_bearing_step_class": "A",
-        "negative_assertion_classes": [
-          "derived_no_go_boundary"
-        ],
-        "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete CL3 complexification authority and its K3-K4 exclusion-runner source and stdout, then rerun the independent audit.",
-        "open_dependency_paths": [],
-        "runner_check_breakdown": {
-          "A": 35,
-          "B": 0,
-          "C": 0,
-          "D": 0,
-          "total_pass": 35
-        },
-        "verdict_rationale": "Issue: the packet clips the retained authority's K3-K4 proof and exclusion-runner evidence for the load-bearing N_SU(2)=2 input, while the primary runner hard-codes 2 and checks only the resulting realization and substitution. Why this blocks: the algebra after assuming N_SU(2)=2 closes, but the restricted evidence cannot independently establish the exhaustive irrep classification. Repair target: regenerate the packet with the full authority and exact exclusion-runner source and stdout, then independently recheck K3-K4. Claim boundary until fixed: conditional on (X1)-(X3), (U1)-(U2) and (C2)-(C4) are exact; for C1's derived no-go boundary, N1/N7/N8 are not independently certifiable from the clipped evidence, N2 has only that single boundary, N3 shows (X3) is explicit rather than hidden, N4 has no residual witness, N5 is scoped to the one-dimensional exclusion, and N6 supplies no packet-side closure."
-      },
-      "schema": "frozen_audit_judgment_v1"
-    },
-    "load_bearing_score": 0.0,
-    "packet_policy_fingerprint": {
-      "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
-      "schema": "packet_policy_fingerprint_v1",
-      "sources": {
-        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
-        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
-        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
-        "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
-        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
-      }
-    },
-    "policy_versions": {
-      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
-    "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "science_fingerprint": {
-      "dependencies": [
-        {
-          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
-          "claim_type": "positive_theorem",
-          "effective_status": "retained",
-          "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
-          "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
-          "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
-          "premise_classification": "ordinary_claim",
-          "present": true
-        }
-      ],
-      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "f4c4f243c86f2498ab68804e03edfaf4a344d1bbc03013c77c43fb4b3c97f4ec",
-      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
-      "runners": [
-        {
-          "declared_input_fingerprint_sha256": null,
-          "declared_input_paths": null,
-          "declared_inputs": [],
-          "path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
-          "present": true,
-          "role": "primary",
-          "sha256": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773"
-        }
-      ],
-      "schema": "science_fingerprint_v2",
-      "target": {
-        "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
-        "claim_scope": "Conditional on (X1)-(X3), substituting N_SU(2)=2 yields u_0(SU(2)) = \u27e8(1/2) Re Tr U_plaquette^SU(2)\u27e9^(1/4), without plaquette evaluation or g_2 closure.",
-        "claim_type": "bounded_theorem",
-        "ledger_note_hash": "2176e349fc6e037865c4c81d372786dd0e5fa90c01bf6268fd466ccb0f117352",
-        "note_path": "docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-        "note_sha256": "2176e349fc6e037865c4c81d372786dd0e5fa90c01bf6268fd466ccb0f117352"
-      }
-    },
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260803-ad5b2656",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The substitution from N_SU(2)=2 to (U1) is exact, but the packet clips the proof and executable exclusion evidence establishing the exhaustive K4 irrep classification, while the primary runner hard-codes N_SU(2)=2.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
-  "claim_scope": "Conditional on (X1)-(X3), substituting N_SU(2)=2 yields u_0(SU(2)) = \u27e8(1/2) Re Tr U_plaquette^SU(2)\u27e9^(1/4), without plaquette evaluation or g_2 closure.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-08-03T05:01:29.635247+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -168,22 +26,19 @@
     "cl3_complexification_split_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Substitute N_G=N_SU(2)=2 from the Cl(3) bivector-irrep dimensional readout into the L\u00fcscher\u2013Mackenzie tadpole convention to obtain (U1).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "2176e349fc6e037865c4c81d372786dd0e5fa90c01bf6268fd466ccb0f117352",
   "note_path": "docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete CL3 complexification authority and its K3-K4 exclusion-runner source and stdout, then rerun the independent audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -346,19 +201,201 @@
         "total_pass": 35
       },
       "verdict_rationale": "The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:31.192921+00:00",
+      "audit_date": "2026-08-03T05:01:29.635247+00:00",
+      "audit_invocation_history": [
+        "7a560db09b7f419c91e5080081b15216"
+      ],
+      "audit_invocation_id": "7a560db09b7f419c91e5080081b15216",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0)."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "helper_runner_hashes": {},
+        "judgment_fingerprint": {
+          "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
+          "digest": "836105fdfe3b122a7ed09e8a547318892a06aee3079fb987f0ae06dcdb4c518f",
+          "judgment": {
+            "audit_date": "2026-08-03T05:01:29.635247+00:00",
+            "audit_invocation_id": "7a560db09b7f419c91e5080081b15216",
+            "audit_status": "audited_conditional",
+            "auditor": "codex-audit-batch-A-20260803-ad5b2656",
+            "auditor_confidence": "high",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "The substitution from N_SU(2)=2 to (U1) is exact, but the packet clips the proof and executable exclusion evidence establishing the exhaustive K4 irrep classification, while the primary runner hard-codes N_SU(2)=2.",
+            "claim_scope": "Conditional on (X1)-(X3), substituting N_SU(2)=2 yields u_0(SU(2)) = \u27e8(1/2) Re Tr U_plaquette^SU(2)\u27e9^(1/4), without plaquette evaluation or g_2 closure.",
+            "claim_type": "bounded_theorem",
+            "claim_type_provenance": "audited",
+            "cross_confirmation": null,
+            "decoration_parent_claim_id": null,
+            "independence": "cross_family",
+            "load_bearing_step": "Substitute N_G=N_SU(2)=2 from the Cl(3) bivector-irrep dimensional readout into the L\u00fcscher\u2013Mackenzie tadpole convention to obtain (U1).",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete CL3 complexification authority and its K3-K4 exclusion-runner source and stdout, then rerun the independent audit.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 35,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 35
+            },
+            "verdict_rationale": "Issue: the packet clips the retained authority's K3-K4 proof and exclusion-runner evidence for the load-bearing N_SU(2)=2 input, while the primary runner hard-codes 2 and checks only the resulting realization and substitution. Why this blocks: the algebra after assuming N_SU(2)=2 closes, but the restricted evidence cannot independently establish the exhaustive irrep classification. Repair target: regenerate the packet with the full authority and exact exclusion-runner source and stdout, then independently recheck K3-K4. Claim boundary until fixed: conditional on (X1)-(X3), (U1)-(U2) and (C2)-(C4) are exact; for C1's derived no-go boundary, N1/N7/N8 are not independently certifiable from the clipped evidence, N2 has only that single boundary, N3 shows (X3) is explicit rather than hidden, N4 has no residual witness, N5 is scoped to the one-dimensional exclusion, and N6 supplies no packet-side closure."
+          },
+          "schema": "frozen_audit_judgment_v1"
+        },
+        "load_bearing_score": 0.0,
+        "packet_policy_fingerprint": {
+          "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
+          "schema": "packet_policy_fingerprint_v1",
+          "sources": {
+            "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+            "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+            "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+            "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+            "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+            "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
+            "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+          }
+        },
+        "policy_versions": {
+          "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
+        "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "science_fingerprint": {
+          "dependencies": [
+            {
+              "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+              "claim_type": "positive_theorem",
+              "effective_status": "retained",
+              "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+              "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+              "premise_classification": "ordinary_claim",
+              "present": true
+            }
+          ],
+          "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+          "digest": "f4c4f243c86f2498ab68804e03edfaf4a344d1bbc03013c77c43fb4b3c97f4ec",
+          "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+          "runners": [
+            {
+              "declared_input_fingerprint_sha256": null,
+              "declared_input_paths": null,
+              "declared_inputs": [],
+              "path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
+              "present": true,
+              "role": "primary",
+              "sha256": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773"
+            }
+          ],
+          "schema": "science_fingerprint_v2",
+          "target": {
+            "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
+            "claim_scope": "Conditional on (X1)-(X3), substituting N_SU(2)=2 yields u_0(SU(2)) = \u27e8(1/2) Re Tr U_plaquette^SU(2)\u27e9^(1/4), without plaquette evaluation or g_2 closure.",
+            "claim_type": "bounded_theorem",
+            "ledger_note_hash": "2176e349fc6e037865c4c81d372786dd0e5fa90c01bf6268fd466ccb0f117352",
+            "note_path": "docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+            "note_sha256": "2176e349fc6e037865c4c81d372786dd0e5fa90c01bf6268fd466ccb0f117352"
+          }
+        },
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260803-ad5b2656",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The substitution from N_SU(2)=2 to (U1) is exact, but the packet clips the proof and executable exclusion evidence establishing the exhaustive K4 irrep classification, while the primary runner hard-codes N_SU(2)=2.",
+      "claim_scope": "Conditional on (X1)-(X3), substituting N_SU(2)=2 yields u_0(SU(2)) = \u27e8(1/2) Re Tr U_plaquette^SU(2)\u27e9^(1/4), without plaquette evaluation or g_2 closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-08-03T05:01:29.635247+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "science_changed:dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:claim_scope",
+      "load_bearing_step": "Substitute N_G=N_SU(2)=2 from the Cl(3) bivector-irrep dimensional readout into the L\u00fcscher\u2013Mackenzie tadpole convention to obtain (U1).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete CL3 complexification authority and its K3-K4 exclusion-runner source and stdout, then rerun the independent audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "Issue: the packet clips the retained authority's K3-K4 proof and exclusion-runner evidence for the load-bearing N_SU(2)=2 input, while the primary runner hard-codes 2 and checks only the resulting realization and substitution. Why this blocks: the algebra after assuming N_SU(2)=2 closes, but the restricted evidence cannot independently establish the exhaustive irrep classification. Repair target: regenerate the packet with the full authority and exact exclusion-runner source and stdout, then independently recheck K3-K4. Claim boundary until fixed: conditional on (X1)-(X3), (U1)-(U2) and (C2)-(C4) are exact; for C1's derived no-go boundary, N1/N7/N8 are not independently certifiable from the clipped evidence, N2 has only that single boundary, N3 shows (X3) is explicit rather than hidden, N4 has no residual witness, N5 is scoped to the one-dimensional exclusion, and N6 supplies no packet-side closure."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 35,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 35
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
   "title": "u_0(SU(2)) Bivector-Irrep Analytic Derivation Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the packet clips the retained authority's K3-K4 proof and exclusion-runner evidence for the load-bearing N_SU(2)=2 input, while the primary runner hard-codes 2 and checks only the resulting realization and substitution. Why this blocks: the algebra after assuming N_SU(2)=2 closes, but the restricted evidence cannot independently establish the exhaustive irrep classification. Repair target: regenerate the packet with the full authority and exact exclusion-runner source and stdout, then independently recheck K3-K4. Claim boundary until fixed: conditional on (X1)-(X3), (U1)-(U2) and (C2)-(C4) are exact; for C1's derived no-go boundary, N1/N7/N8 are not independently certifiable from the clipped evidence, N2 has only that single boundary, N3 shows (X3) is explicit rather than hidden, N4 has no residual witness, N5 is scoped to the one-dimensional exclusion, and N6 supplies no packet-side closure."
+  "verdict_rationale": null
 }

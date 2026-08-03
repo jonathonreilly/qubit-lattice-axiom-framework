@@ -1,109 +1,147 @@
 {
-  "audit_date": "2026-07-25T03:32:40.739044+00:00",
-  "audit_invocation_history": [
-    "210e9883c0f649848ddaa7ecc3d77aba"
-  ],
-  "audit_invocation_id": "210e9883c0f649848ddaa7ecc3d77aba",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 1,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py"
-    },
-    "criticality": "high",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 7.585,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "2a1227e8c62222ea5af7ae73fb0e36b23d274515070053fe8a263c2c993b243c",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "2a1227e8c62222ea5af7ae73fb0e36b23d274515070053fe8a263c2c993b243c",
-    "runner_path": "scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 23
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-ea773802",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The packet omits the named one-hop authority supplying the actual factor-two coordinates, fine-link Dobrushin majorant, and exponential-moment input. The raw fiber-factorization identity closes independently, but the constrained-fiber theorem does not.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "wilson_staggered_constrained_fiber_dobrushin_and_raw_rg_unit_directions_bounded_theorem_note_2026-07-12",
-  "claim_scope": "Exact raw fiber-measurable lift identity in the declared finite-volume unrescaled norm, and conditional alpha_fiber<=2alpha implication from the named factor-two coordinate and fine-row inputs.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T03:32:40.739044+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 6,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 7.585,
-  "load_bearing_step": "The hidden influence bound q^H_(h,k)<=sum_(e in E_h)sum_(f in E_k)q_(e,f), combined with the footprint partition, gives alpha_fiber<=2alpha.",
-  "load_bearing_step_class": "B",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary",
-    "no_go_result",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "f6b39e5a1b23b62053b1fdb53c2eedbadc34628ff12a7a9a058b2c91c483a711",
   "note_path": "docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge \u2014 wire and include the named factor-two Schur/OS theorem as a direct retained-grade dependency, then independently recheck equation (2.2) and weighted-row inheritance.",
-  "open_dependency_paths": [
-    "docs/MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md"
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-08-03T07:42:31.728698+00:00",
+      "audit_date": "2026-07-25T03:32:40.739044+00:00",
+      "audit_invocation_history": [
+        "210e9883c0f649848ddaa7ecc3d77aba"
+      ],
+      "audit_invocation_id": "210e9883c0f649848ddaa7ecc3d77aba",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py"
+        },
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 7.585,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "2a1227e8c62222ea5af7ae73fb0e36b23d274515070053fe8a263c2c993b243c",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "2a1227e8c62222ea5af7ae73fb0e36b23d274515070053fe8a263c2c993b243c",
+        "runner_path": "scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 23
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-ea773802",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet omits the named one-hop authority supplying the actual factor-two coordinates, fine-link Dobrushin majorant, and exponential-moment input. The raw fiber-factorization identity closes independently, but the constrained-fiber theorem does not.",
+      "claim_scope": "Exact raw fiber-measurable lift identity in the declared finite-volume unrescaled norm, and conditional alpha_fiber<=2alpha implication from the named factor-two coordinate and fine-row inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T03:32:40.739044+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The hidden influence bound q^H_(h,k)<=sum_(e in E_h)sum_(f in E_k)q_(e,f), combined with the footprint partition, gives alpha_fiber<=2alpha.",
+      "load_bearing_step_class": "B",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "no_go_result",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge \u2014 wire and include the named factor-two Schur/OS theorem as a direct retained-grade dependency, then independently recheck equation (2.2) and weighted-row inheritance.",
+      "open_dependency_paths": [
+        "docs/MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the packet supplies no one-hop authority even though equations (0.1)-(0.3) import the factor-two fiber coordinates, fine-link majorant, and determinant-loop exponential moment from the named dependency; independently, equation (0.6) and the numerical evaluations are correct. Why this blocks: the constrained-fiber uniqueness and exponential-comparison theorem cannot be checked from the supplied axioms, while the runner tests a hard-coded toy partition rather than the actual model. Repair target: include the named authority and independently verify (2.2) and weighted-row inheritance; under N1-N8, N1 also fails with only two attempted routes, N2's three conditions remain independent, N3 finds no additional hidden premise, N4 lacks the sole cited witness, N5 properly limits the impossibility to the raw unprojected norm, N6 finds no primitive or relabeling closure, N7's projection/rescaling steelman survives, and N8 is only a source-note echo table. Claim boundary until fixed: equation (3.2) proves the unit direction for fiber-measurable lifts in the declared norm, while alpha_fiber<=2alpha and its infinite-volume consequences remain conditional."
+    }
   ],
-  "previous_audits": [],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 8,
-    "B": 1,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 9
+    "total_pass": 0
   },
   "runner_path": "scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py",
   "title": "Constrained-fiber Dobrushin control and raw coarse-action unit directions",
   "transitive_descendants": 23,
-  "verdict_rationale": "Issue: the packet supplies no one-hop authority even though equations (0.1)-(0.3) import the factor-two fiber coordinates, fine-link majorant, and determinant-loop exponential moment from the named dependency; independently, equation (0.6) and the numerical evaluations are correct. Why this blocks: the constrained-fiber uniqueness and exponential-comparison theorem cannot be checked from the supplied axioms, while the runner tests a hard-coded toy partition rather than the actual model. Repair target: include the named authority and independently verify (2.2) and weighted-row inheritance; under N1-N8, N1 also fails with only two attempted routes, N2's three conditions remain independent, N3 finds no additional hidden premise, N4 lacks the sole cited witness, N5 properly limits the impossibility to the raw unprojected norm, N6 finds no primitive or relabeling closure, N7's projection/rescaling steelman survives, and N8 is only a source-note echo table. Claim boundary until fixed: equation (3.2) proves the unit direction for fiber-measurable lifts in the declared norm, while alpha_fiber<=2alpha and its infinite-volume consequences remain conditional."
+  "verdict_rationale": null
 }

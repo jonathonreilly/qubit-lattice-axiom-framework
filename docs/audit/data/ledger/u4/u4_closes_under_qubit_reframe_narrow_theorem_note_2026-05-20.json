@@ -1,149 +1,24 @@
 {
-  "audit_date": "2026-08-03T04:45:20.727579+00:00",
-  "audit_invocation_history": [
-    "d366af20d93f4ab0bf623737862825a6"
-  ],
-  "audit_invocation_id": "d366af20d93f4ab0bf623737862825a6",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "judgment_fingerprint": {
-      "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-      "digest": "f19f4191092c715c090d346f83e5e461d54eba6b954a3a652f92c1d47524dd92",
-      "judgment": {
-        "audit_date": "2026-08-03T04:45:20.727579+00:00",
-        "audit_invocation_id": "d366af20d93f4ab0bf623737862825a6",
-        "audit_status": "audited_renaming",
-        "auditor": "codex-audit-batch-A-20260803-6b360208",
-        "auditor_confidence": "high",
-        "auditor_family": "codex-gpt-5.6",
-        "auditor_model": "gpt-5.6-sol",
-        "auditor_reasoning_effort": "xhigh",
-        "chain_closes": false,
-        "chain_closure_explanation": "The algebraic implication k(x)=1 \u21d2 H_x \u2245 \u2102\u00b2 is supported, but U4 is retired only by identifying it with the explicitly imposed multiplicity-one condition, not by deriving that condition from the Qubit axiom. The clipped authority also prevents clean full-formula verification.",
-        "claim_scope": "Audited only the source-side compatibility/alias map from the older U4 bridge wording to the current one-qubit/M2(C)/Cl(3,0) per-site baseline, with downstream staggered-Dirac gates left separately auditor-owned.",
-        "claim_type": "positive_theorem",
-        "claim_type_provenance": "audited",
-        "cross_confirmation": null,
-        "decoration_parent_claim_id": null,
-        "independence": "cross_family",
-        "load_bearing_step": "The load-bearing move is the identification of the older U4 bridge with the one-qubit-per-site (multiplicity-one) reading of the accepted Qubit axiom, carried here as an explicit named condition.",
-        "load_bearing_step_class": "F",
-        "negative_assertion_classes": [],
-        "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained physical-carrier theorem deriving k(x)=1 from accepted premises rather than naming it, and provide the complete unclipped Cl(3) authority for full mathematical review.",
-        "open_dependency_paths": [],
-        "runner_check_breakdown": {
-          "A": 4,
-          "B": 12,
-          "C": 0,
-          "D": 0,
-          "total_pass": 16
-        },
-        "verdict_rationale": "Issue: the load-bearing move identifies the older U4 bridge with the explicitly assumed k(x)=1 condition; it does not derive multiplicity one from the current Qubit axiom. Why this blocks: the accepted axiom supplies only the M2(C) possibility algebra, while physical Hilbert multiplicity remains a named condition, and the packet clips the supporting Cl(3) authority. Repair target: provide an unclipped authority and a separate theorem deriving the physical multiplicity-one module without restating it. Claim boundary until fixed: this is a valid compatibility/alias map conditional on k(x)=1, not an independent positive theorem retiring U4 from the axiom alone."
-      },
-      "schema": "frozen_audit_judgment_v1"
-    },
-    "load_bearing_score": 3.5,
-    "packet_policy_fingerprint": {
-      "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
-      "schema": "packet_policy_fingerprint_v1",
-      "sources": {
-        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
-        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
-        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
-        "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
-        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
-      }
-    },
-    "runner_hash": "09e29deb31859f2f7c72c37ff63fb3fa37ad283772aed3111e1c81c7742d13d1",
-    "science_fingerprint": {
-      "dependencies": [
-        {
-          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
-          "claim_type": "positive_theorem",
-          "effective_status": "retained",
-          "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
-          "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
-          "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
-          "premise_classification": "ordinary_claim",
-          "present": true
-        },
-        {
-          "claim_id": "minimal_axioms",
-          "claim_scope": null,
-          "claim_type": "meta",
-          "effective_status": "meta",
-          "ledger_note_hash": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
-          "note_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
-          "note_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
-          "premise_classification": "accepted_premise",
-          "present": true
-        }
-      ],
-      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "e2b3629bbf2ea0d9481c9ede73f4002df86b4f54af0310dd36be04fd84e3ce4a",
-      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
-      "runners": [
-        {
-          "declared_input_fingerprint_sha256": null,
-          "declared_input_paths": null,
-          "declared_inputs": [],
-          "path": "scripts/frontier_u4_qubit_reframe_closure.py",
-          "present": true,
-          "role": "primary",
-          "sha256": "09e29deb31859f2f7c72c37ff63fb3fa37ad283772aed3111e1c81c7742d13d1"
-        }
-      ],
-      "schema": "science_fingerprint_v2",
-      "target": {
-        "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-        "claim_scope": "Audited only the source-side compatibility/alias map from the older U4 bridge wording to the current one-qubit/M2(C)/Cl(3,0) per-site baseline, with downstream staggered-Dirac gates left separately auditor-owned.",
-        "claim_type": "positive_theorem",
-        "ledger_note_hash": "2d5fee13dd27012e19a377358bdac78bc0f9d8a68c986618670e76f65679a0fc",
-        "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
-        "note_sha256": "2d5fee13dd27012e19a377358bdac78bc0f9d8a68c986618670e76f65679a0fc"
-      }
-    },
-    "transitive_descendants": 3
-  },
-  "audit_status": "audited_renaming",
-  "auditor": "codex-audit-batch-A-20260803-6b360208",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The algebraic implication k(x)=1 \u21d2 H_x \u2245 \u2102\u00b2 is supported, but U4 is retired only by identifying it with the explicitly imposed multiplicity-one condition, not by deriving that condition from the Qubit axiom. The clipped authority also prevents clean full-formula verification.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-  "claim_scope": "Audited only the source-side compatibility/alias map from the older U4 bridge wording to the current one-qubit/M2(C)/Cl(3,0) per-site baseline, with downstream staggered-Dirac gates left separately auditor-owned.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-08-03T04:45:20.727579+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -152,20 +27,19 @@
     "cl3_complexification_split_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 3,
-  "effective_status": "audited_renaming",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_renaming",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 3.5,
-  "load_bearing_step": "The load-bearing move is the identification of the older U4 bridge with the one-qubit-per-site (multiplicity-one) reading of the accepted Qubit axiom, carried here as an explicit named condition.",
-  "load_bearing_step_class": "F",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "2d5fee13dd27012e19a377358bdac78bc0f9d8a68c986618670e76f65679a0fc",
   "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained physical-carrier theorem deriving k(x)=1 from accepted premises rather than naming it, and provide the complete unclipped Cl(3) authority for full mathematical review.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -941,19 +815,182 @@
         "total_pass": 15
       },
       "verdict_rationale": "The runner passes all 15 checks and verifies the Pauli/M2(C)/Cl(3,0) facts plus the source boundary text. The source note itself says the claim is source-side alias or renaming support, not a new theorem-grade derivation, and preserves downstream auditor ownership. Under the rubric this is class F: a correct identification between existing concepts rather than an independent derivation."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:31.219999+00:00",
+      "audit_date": "2026-08-03T04:45:20.727579+00:00",
+      "audit_invocation_history": [
+        "d366af20d93f4ab0bf623737862825a6"
+      ],
+      "audit_invocation_id": "d366af20d93f4ab0bf623737862825a6",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "judgment_fingerprint": {
+          "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+          "digest": "f19f4191092c715c090d346f83e5e461d54eba6b954a3a652f92c1d47524dd92",
+          "judgment": {
+            "audit_date": "2026-08-03T04:45:20.727579+00:00",
+            "audit_invocation_id": "d366af20d93f4ab0bf623737862825a6",
+            "audit_status": "audited_renaming",
+            "auditor": "codex-audit-batch-A-20260803-6b360208",
+            "auditor_confidence": "high",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "The algebraic implication k(x)=1 \u21d2 H_x \u2245 \u2102\u00b2 is supported, but U4 is retired only by identifying it with the explicitly imposed multiplicity-one condition, not by deriving that condition from the Qubit axiom. The clipped authority also prevents clean full-formula verification.",
+            "claim_scope": "Audited only the source-side compatibility/alias map from the older U4 bridge wording to the current one-qubit/M2(C)/Cl(3,0) per-site baseline, with downstream staggered-Dirac gates left separately auditor-owned.",
+            "claim_type": "positive_theorem",
+            "claim_type_provenance": "audited",
+            "cross_confirmation": null,
+            "decoration_parent_claim_id": null,
+            "independence": "cross_family",
+            "load_bearing_step": "The load-bearing move is the identification of the older U4 bridge with the one-qubit-per-site (multiplicity-one) reading of the accepted Qubit axiom, carried here as an explicit named condition.",
+            "load_bearing_step_class": "F",
+            "negative_assertion_classes": [],
+            "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained physical-carrier theorem deriving k(x)=1 from accepted premises rather than naming it, and provide the complete unclipped Cl(3) authority for full mathematical review.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 4,
+              "B": 12,
+              "C": 0,
+              "D": 0,
+              "total_pass": 16
+            },
+            "verdict_rationale": "Issue: the load-bearing move identifies the older U4 bridge with the explicitly assumed k(x)=1 condition; it does not derive multiplicity one from the current Qubit axiom. Why this blocks: the accepted axiom supplies only the M2(C) possibility algebra, while physical Hilbert multiplicity remains a named condition, and the packet clips the supporting Cl(3) authority. Repair target: provide an unclipped authority and a separate theorem deriving the physical multiplicity-one module without restating it. Claim boundary until fixed: this is a valid compatibility/alias map conditional on k(x)=1, not an independent positive theorem retiring U4 from the axiom alone."
+          },
+          "schema": "frozen_audit_judgment_v1"
+        },
+        "load_bearing_score": 3.5,
+        "packet_policy_fingerprint": {
+          "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
+          "schema": "packet_policy_fingerprint_v1",
+          "sources": {
+            "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+            "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+            "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+            "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+            "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+            "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
+            "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+          }
+        },
+        "runner_hash": "09e29deb31859f2f7c72c37ff63fb3fa37ad283772aed3111e1c81c7742d13d1",
+        "science_fingerprint": {
+          "dependencies": [
+            {
+              "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+              "claim_type": "positive_theorem",
+              "effective_status": "retained",
+              "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+              "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+              "premise_classification": "ordinary_claim",
+              "present": true
+            },
+            {
+              "claim_id": "minimal_axioms",
+              "claim_scope": null,
+              "claim_type": "meta",
+              "effective_status": "meta",
+              "ledger_note_hash": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "note_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "note_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "premise_classification": "accepted_premise",
+              "present": true
+            }
+          ],
+          "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+          "digest": "e2b3629bbf2ea0d9481c9ede73f4002df86b4f54af0310dd36be04fd84e3ce4a",
+          "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+          "runners": [
+            {
+              "declared_input_fingerprint_sha256": null,
+              "declared_input_paths": null,
+              "declared_inputs": [],
+              "path": "scripts/frontier_u4_qubit_reframe_closure.py",
+              "present": true,
+              "role": "primary",
+              "sha256": "09e29deb31859f2f7c72c37ff63fb3fa37ad283772aed3111e1c81c7742d13d1"
+            }
+          ],
+          "schema": "science_fingerprint_v2",
+          "target": {
+            "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+            "claim_scope": "Audited only the source-side compatibility/alias map from the older U4 bridge wording to the current one-qubit/M2(C)/Cl(3,0) per-site baseline, with downstream staggered-Dirac gates left separately auditor-owned.",
+            "claim_type": "positive_theorem",
+            "ledger_note_hash": "2d5fee13dd27012e19a377358bdac78bc0f9d8a68c986618670e76f65679a0fc",
+            "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
+            "note_sha256": "2d5fee13dd27012e19a377358bdac78bc0f9d8a68c986618670e76f65679a0fc"
+          }
+        },
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-batch-A-20260803-6b360208",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic implication k(x)=1 \u21d2 H_x \u2245 \u2102\u00b2 is supported, but U4 is retired only by identifying it with the explicitly imposed multiplicity-one condition, not by deriving that condition from the Qubit axiom. The clipped authority also prevents clean full-formula verification.",
+      "claim_scope": "Audited only the source-side compatibility/alias map from the older U4 bridge wording to the current one-qubit/M2(C)/Cl(3,0) per-site baseline, with downstream staggered-Dirac gates left separately auditor-owned.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-08-03T04:45:20.727579+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "science_changed:dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:claim_scope",
+      "load_bearing_step": "The load-bearing move is the identification of the older U4 bridge with the one-qubit-per-site (multiplicity-one) reading of the accepted Qubit axiom, carried here as an explicit named condition.",
+      "load_bearing_step_class": "F",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained physical-carrier theorem deriving k(x)=1 from accepted premises rather than naming it, and provide the complete unclipped Cl(3) authority for full mathematical review.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: the load-bearing move identifies the older U4 bridge with the explicitly assumed k(x)=1 condition; it does not derive multiplicity one from the current Qubit axiom. Why this blocks: the accepted axiom supplies only the M2(C) possibility algebra, while physical Hilbert multiplicity remains a named condition, and the packet clips the supporting Cl(3) authority. Repair target: provide an unclipped authority and a separate theorem deriving the physical multiplicity-one module without restating it. Claim boundary until fixed: this is a valid compatibility/alias map conditional on k(x)=1, not an independent positive theorem retiring U4 from the axiom alone."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 4,
-    "B": 12,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 16
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_u4_qubit_reframe_closure.py",
   "title": "U4 Closure Under the 2026-05-20 Qubit Reframe (Narrow)",
   "transitive_descendants": 3,
-  "verdict_rationale": "Issue: the load-bearing move identifies the older U4 bridge with the explicitly assumed k(x)=1 condition; it does not derive multiplicity one from the current Qubit axiom. Why this blocks: the accepted axiom supplies only the M2(C) possibility algebra, while physical Hilbert multiplicity remains a named condition, and the packet clips the supporting Cl(3) authority. Repair target: provide an unclipped authority and a separate theorem deriving the physical multiplicity-one module without restating it. Claim boundary until fixed: this is a valid compatibility/alias map conditional on k(x)=1, not an independent positive theorem retiring U4 from the axiom alone."
+  "verdict_rationale": null
 }

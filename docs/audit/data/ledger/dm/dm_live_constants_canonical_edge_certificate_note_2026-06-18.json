@@ -1,110 +1,24 @@
 {
-  "audit_date": "2026-07-25T04:41:30.670190+00:00",
-  "audit_invocation_history": [
-    "76019f1c95d24b7ea8744b12a95fe0d4"
-  ],
-  "audit_invocation_id": "76019f1c95d24b7ea8744b12a95fe0d4",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 25,
-        "D": 8
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": "Bounded arithmetic certificate for the canonical plaquette-derived alpha_LM and alpha_s(v) constants, conditional only on using the parent plaquette value P = 0.5934 as scoped input; no derivation of P or physical coupling closure is audited."
-    },
-    "dep_claim_type": {
-      "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": "decoration"
-    },
-    "dep_effective_status": {
-      "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": "decoration_under_plaquette_self_consistency_note"
-    },
-    "deps": [
-      "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16"
-    ],
-    "helper_runner_hashes": {
-      "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
-      "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py": "63d6f323675fc1d97a5453b9ae44ca0c60a9fdd5222eb176dc7d4d66f2a50097",
-      "scripts/dm_full_closure_same_surface_thermal_support_common.py": "a35b8aa9bf42484fe3467dcbf97aac42ec1039598d525b130c049b432c12dc82",
-      "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41"
-    },
-    "load_bearing_score": 6.115,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/canonical_plaquette_surface.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/dm_full_closure_same_surface_thermal_support_common.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/dm_leptogenesis_exact_common.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "a3ffc6a4188f5b89d280718131a0649effc63aa26fae4f11dcea33e5e0d7b48d",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "a3ffc6a4188f5b89d280718131a0649effc63aa26fae4f11dcea33e5e0d7b48d",
-    "runner_path": "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 48
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-e395899c",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The bounded wiring claim closes: the runner imports the supplied helper surfaces, verifies their identities and arithmetic, and includes sensitivity checks. It does not derive the plaquette or observed comparator inputs and does not establish DM selector or packet-completeness closure.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
-  "claim_scope": "Bounded verification that live DM thermal constants and eta/Omega bookkeeping match the provided canonical plaquette arithmetic and supplied observed comparator inputs, without auditing DM closure.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T04:41:30.670190+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -112,25 +26,24 @@
     "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16"
   ],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/canonical_plaquette_surface.py",
     "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
     "scripts/dm_full_closure_same_surface_thermal_support_common.py",
     "scripts/dm_leptogenesis_exact_common.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 6.115,
-  "load_bearing_step": "The live DM helper constants satisfy DM ALPHA_LO = alpha_LM and DM ALPHA_HI = -log(1 - (pi^2/3) alpha_bare)/(pi^2/3), with eta/Omega quantities obtained from the stated supplied inputs.",
-  "load_bearing_step_class": "B",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "2c56412ccb2110794de0366ca670a1383063e1c0d36870a74b07c9a4fadc9d92",
   "note_path": "docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge: add explicit one-hop provenance citations for ETA_OBS, OMEGA_DM_OBS, and H_PARAM while preserving their supplied-input status, then re-audit the bounded wiring claim.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -185,19 +98,143 @@
         "total_pass": 59
       },
       "verdict_rationale": "The runner is not a first-principles physics computation, but the note only claims a bounded constants-edge certificate. The cited canonical arithmetic authority is provided with inherited decoration status, and the helper sources show the live constants are wired to the canonical plaquette arithmetic with matching independent recomputation. The observed eta/Omega values are explicitly scoped as supplied comparators rather than framework derivations, so the clean verdict applies only to this bounded edge."
+    },
+    {
+      "archived_at": "2026-08-03T07:43:16.761549+00:00",
+      "audit_date": "2026-07-25T04:41:30.670190+00:00",
+      "audit_invocation_history": [
+        "76019f1c95d24b7ea8744b12a95fe0d4"
+      ],
+      "audit_invocation_id": "76019f1c95d24b7ea8744b12a95fe0d4",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 25,
+            "D": 8
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": "Bounded arithmetic certificate for the canonical plaquette-derived alpha_LM and alpha_s(v) constants, conditional only on using the parent plaquette value P = 0.5934 as scoped input; no derivation of P or physical coupling closure is audited."
+        },
+        "dep_claim_type": {
+          "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": "decoration"
+        },
+        "dep_effective_status": {
+          "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": "decoration_under_plaquette_self_consistency_note"
+        },
+        "deps": [
+          "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16"
+        ],
+        "helper_runner_hashes": {
+          "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+          "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py": "63d6f323675fc1d97a5453b9ae44ca0c60a9fdd5222eb176dc7d4d66f2a50097",
+          "scripts/dm_full_closure_same_surface_thermal_support_common.py": "a35b8aa9bf42484fe3467dcbf97aac42ec1039598d525b130c049b432c12dc82",
+          "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41"
+        },
+        "load_bearing_score": 6.115,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/canonical_plaquette_surface.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/dm_full_closure_same_surface_thermal_support_common.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/dm_leptogenesis_exact_common.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "a3ffc6a4188f5b89d280718131a0649effc63aa26fae4f11dcea33e5e0d7b48d",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "a3ffc6a4188f5b89d280718131a0649effc63aa26fae4f11dcea33e5e0d7b48d",
+        "runner_path": "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-e395899c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded wiring claim closes: the runner imports the supplied helper surfaces, verifies their identities and arithmetic, and includes sensitivity checks. It does not derive the plaquette or observed comparator inputs and does not establish DM selector or packet-completeness closure.",
+      "claim_scope": "Bounded verification that live DM thermal constants and eta/Omega bookkeeping match the provided canonical plaquette arithmetic and supplied observed comparator inputs, without auditing DM closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T04:41:30.670190+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16:decoration_under_plaquette_self_consistency_note->unaudited",
+      "load_bearing_step": "The live DM helper constants satisfy DM ALPHA_LO = alpha_LM and DM ALPHA_HI = -log(1 - (pi^2/3) alpha_bare)/(pi^2/3), with eta/Omega quantities obtained from the stated supplied inputs.",
+      "load_bearing_step_class": "B",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add explicit one-hop provenance citations for ETA_OBS, OMEGA_DM_OBS, and H_PARAM while preserving their supplied-input status, then re-audit the bounded wiring claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 38,
+        "C": 0,
+        "D": 3,
+        "total_pass": 59
+      },
+      "verdict_rationale": "The runner substantively verifies source wiring and arithmetic, but its load-bearing step is cross-source input verification rather than a first-principles derivation. The scoped match succeeds, while P = 0.5934 and the observational eta/Omega/H inputs remain supplied quantities. The note therefore supports a conditional bounded certificate only and supplies no DM selector or closure theorem."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 18,
-    "B": 38,
+    "A": 0,
+    "B": 0,
     "C": 0,
-    "D": 3,
-    "total_pass": 59
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py",
   "title": "DM Live Constants Canonical Edge Certificate",
   "transitive_descendants": 48,
-  "verdict_rationale": "The runner substantively verifies source wiring and arithmetic, but its load-bearing step is cross-source input verification rather than a first-principles derivation. The scoped match succeeds, while P = 0.5934 and the observational eta/Omega/H inputs remain supplied quantities. The note therefore supports a conditional bounded certificate only and supplies no DM selector or closure theorem."
+  "verdict_rationale": null
 }

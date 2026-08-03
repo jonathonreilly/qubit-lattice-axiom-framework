@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-25T14:25:10.292656+00:00",
-  "audit_invocation_history": [
-    "8b401b463c07492385a4e2a6c879665b"
-  ],
-  "audit_invocation_id": "8b401b463c07492385a4e2a6c879665b",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "6ff8713bcc2802684a072c42885f17c965e9bd3de396cf0687613a5a9e86ea68",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "6ff8713bcc2802684a072c42885f17c965e9bd3de396cf0687613a5a9e86ea68",
-    "runner_path": "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-batch-A-20260725-e4d6e206",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The matrix identities establish C3-covariant alternatives, but they do not instantiate both I and J as admissible fermionic/Berezin theories on a common carrier. That target-equivalent countermodel lemma is missing, so determinant-power non-selection does not follow from the restricted packet.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "flavor_find_j_round2_power_not_count_2026-06-02",
-  "claim_scope": "The restricted finite C3/Berezin packet establishes that determinant power and C3 covariance alone do not select the antisymmetric J pairing.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T14:25:10.292656+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The symmetric identity I and antisymmetric J=C-C^2 both satisfy C^T X C=X, so finite C3 covariance does not select J over I.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary",
-    "no_go_result"
-  ],
   "note_hash": "ccd06033147f7ca66417bfae050172eeff355ee9d9cc5a48a555b93a6f7b9de2",
   "note_path": "docs/FLAVOR_FIND_J_ROUND2_POWER_NOT_COUNT_2026-06-02.md",
-  "notes_for_re_audit_if_any": "Re-audit after constructing admissible I- and J-based fermionic/Berezin realizations under identical premises and supplying live N1-N8 stress-test evidence.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1340,19 +1291,105 @@
         "total_pass": 4
       },
       "verdict_rationale": "The runner substantively verifies determinant-versus-Frobenius scaling, the simultaneous C3 invariance of I and J, and the distinction between Gaussian determinant exponent and mode count. It imports no external number or contested upstream premise, and the note correctly excludes det_R/Q, r/Q, and Dirac-versus-Majorana conclusions. Nevertheless, the required no-go gate cannot pass because the packet closes only three distinct attack classes and explicitly leaves separate reality-structure and readout mechanisms open."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.099242+00:00",
+      "audit_date": "2026-07-25T14:25:10.292656+00:00",
+      "audit_invocation_history": [
+        "8b401b463c07492385a4e2a6c879665b"
+      ],
+      "audit_invocation_id": "8b401b463c07492385a4e2a6c879665b",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "6ff8713bcc2802684a072c42885f17c965e9bd3de396cf0687613a5a9e86ea68",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "6ff8713bcc2802684a072c42885f17c965e9bd3de396cf0687613a5a9e86ea68",
+        "runner_path": "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-batch-A-20260725-e4d6e206",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The matrix identities establish C3-covariant alternatives, but they do not instantiate both I and J as admissible fermionic/Berezin theories on a common carrier. That target-equivalent countermodel lemma is missing, so determinant-power non-selection does not follow from the restricted packet.",
+      "claim_scope": "The restricted finite C3/Berezin packet establishes that determinant power and C3 covariance alone do not select the antisymmetric J pairing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T14:25:10.292656+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The symmetric identity I and antisymmetric J=C-C^2 both satisfy C^T X C=X, so finite C3 covariance does not select J over I.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after constructing admissible I- and J-based fermionic/Berezin realizations under identical premises and supplying live N1-N8 stress-test evidence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The displayed algebraic identities are correct, but the claimed non-selection theorem still needs a common-carrier countermodel showing that both invariant forms are admissible under the same fermionic/Berezin premises. For N1, N4, and N7, the functional-scaling and symmetry routes are attempted and no prior residual witness is used, while the strongest alternate-carrier/reality-structure route remains unresolved. For N2, N3, and N5, the three stated limitations concern distinct logical axes and the admission-like phrases are non-load-bearing boundary language, but no pairwise-closure record or five-resolution live rhetoric test is supplied. For N6 and N8, the indexed partial-closure candidates and cross-cycle echoes are not dispositioned by live evidence; the surviving result is only the individual determinant/Frobenius and covariance identities, and the next test is an explicit same-premise I/J fermionic realization comparison."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 3,
-    "B": 1,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py",
   "title": "Flavor J-Hunt Round 2: Fermionic Power Does Not Select the `J` Pairing",
   "transitive_descendants": 0,
-  "verdict_rationale": "The displayed algebraic identities are correct, but the claimed non-selection theorem still needs a common-carrier countermodel showing that both invariant forms are admissible under the same fermionic/Berezin premises. For N1, N4, and N7, the functional-scaling and symmetry routes are attempted and no prior residual witness is used, while the strongest alternate-carrier/reality-structure route remains unresolved. For N2, N3, and N5, the three stated limitations concern distinct logical axes and the admission-like phrases are non-load-bearing boundary language, but no pairwise-closure record or five-resolution live rhetoric test is supplied. For N6 and N8, the indexed partial-closure candidates and cross-cycle echoes are not dispositioned by live evidence; the surviving result is only the individual determinant/Frobenius and covariance identities, and the next test is an explicit same-premise I/J fermionic realization comparison."
+  "verdict_rationale": null
 }

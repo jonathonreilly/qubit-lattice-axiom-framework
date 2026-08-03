@@ -1,83 +1,24 @@
 {
-  "audit_date": "2026-07-25T09:10:44.085086+00:00",
-  "audit_invocation_history": [
-    "b70b04449b364cc1bbc18a1b1425df2b"
-  ],
-  "audit_invocation_id": "b70b04449b364cc1bbc18a1b1425df2b",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 1,
-        "B": 0,
-        "C": 15,
-        "D": 1
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "Finite-Lambda pure-Wilson spatial-axis transfer-operator gap, audited only as an axis-permutation decoration under the retained finite-Lambda temporal-axis T_W gap theorem; no thermodynamic-limit, Yang-Mills mass-gap, fermion-factor, or downstream bridge-lift claim.",
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration",
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 2.585,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/cluster_decomposition_spatial_slab_bridge_check.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
-    "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 2
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-d6258a7a",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The conditional spectral and trace-distance bridge closes from H1 and H2. The finite-\u039b pure-Wilson composition cannot be verified because the packet clips the load-bearing axis-permutation authority that must establish its trace-class positivity-improving operator and strict gap.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
-  "claim_scope": "Conditional finite-dimensional and compact positive-self-adjoint bridge H1+H2 \u21d2 (S.7), and (S.8) when the thermal operator is trace-class; the finite-\u039b pure-Wilson composition is not closed by the supplied one-hop authority.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T09:10:44.085086+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -86,27 +27,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 2.585,
-  "load_bearing_step": "The spectral expansion followed by the Cauchy-Schwarz estimate (S.14) and trace-distance bounds (S.17)\u2013(S.19) derives (S.7)\u2013(S.8) from H1 and H2.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "89db4817abed8282a0b4a69fbd41f5602c2eeead242ce1f0e9ca1ca22481b1ac",
   "note_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": "other: supply an unclipped one-hop authority packet containing the complete axis-permutation lemma and its imported trace-class, positivity-improving, simple-top-eigenvalue, and strict-gap proof, then re-audit the finite-\u039b pure-Wilson corollary.",
-  "open_dependency_paths": [
-    "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md"
-  ],
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
   "previous_audits": [
     {
       "archived_at": "2026-05-29T12:08:46.875051+00:00",
@@ -1795,19 +1729,122 @@
         "total_pass": 5
       },
       "verdict_rationale": "The spectral, Cauchy\u2013Schwarz, and trace-distance arguments are correct on their stated finite-dimensional and compact positive-self-adjoint surfaces, and the runner performs genuine finite-matrix checks rather than hard-coding a physical gap. However, the runner assumes H1/H2, and the cited axis-permutation authority's theorem states only trace-class positivity-improving compactness, not positive self-adjointness or Hermiticity. Consequently the abstract conditional bridge is supported, but the asserted finite-\u039b pure-Wilson corollary is not closed by the restricted packet."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:16.208259+00:00",
+      "audit_date": "2026-07-25T09:10:44.085086+00:00",
+      "audit_invocation_history": [
+        "b70b04449b364cc1bbc18a1b1425df2b"
+      ],
+      "audit_invocation_id": "b70b04449b364cc1bbc18a1b1425df2b",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 1,
+            "B": 0,
+            "C": 15,
+            "D": 1
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "Finite-Lambda pure-Wilson spatial-axis transfer-operator gap, audited only as an axis-permutation decoration under the retained finite-Lambda temporal-axis T_W gap theorem; no thermodynamic-limit, Yang-Mills mass-gap, fermion-factor, or downstream bridge-lift claim.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 2.585,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/cluster_decomposition_spatial_slab_bridge_check.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+        "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-d6258a7a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional spectral and trace-distance bridge closes from H1 and H2. The finite-\u039b pure-Wilson composition cannot be verified because the packet clips the load-bearing axis-permutation authority that must establish its trace-class positivity-improving operator and strict gap.",
+      "claim_scope": "Conditional finite-dimensional and compact positive-self-adjoint bridge H1+H2 \u21d2 (S.7), and (S.8) when the thermal operator is trace-class; the finite-\u039b pure-Wilson composition is not closed by the supplied one-hop authority.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T09:10:44.085086+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The spectral expansion followed by the Cauchy-Schwarz estimate (S.14) and trace-distance bounds (S.17)\u2013(S.19) derives (S.7)\u2013(S.8) from H1 and H2.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: supply an unclipped one-hop authority packet containing the complete axis-permutation lemma and its imported trace-class, positivity-improving, simple-top-eigenvalue, and strict-gap proof, then re-audit the finite-\u039b pure-Wilson corollary.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The finite-dimensional H1+H2 implication is a valid algebraic closure, and the supplied runner performs five consistent finite-matrix checks of its identity, clustering, thermal, degenerate-gap, and mirror formulas. The compact extension is also correctly conditional on trace-class hypotheses. However, the asserted finite-\u039b pure-Wilson discharge of H1 and H2 cannot be ratified from the clipped one-hop authority, while the full canonical surface retains the named H1/H2 walls. The \u0394_x=0 counterexample supports only the bridge-specific negative boundary that a positive gap is required for this decay argument; it does not establish a global no-go."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 5,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 5
+    "total_pass": 0
   },
   "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
   "title": "Spatial-Slab Cluster-Decomposition Bridge on physical Cl(3) over Z^3",
   "transitive_descendants": 2,
-  "verdict_rationale": "The finite-dimensional H1+H2 implication is a valid algebraic closure, and the supplied runner performs five consistent finite-matrix checks of its identity, clustering, thermal, degenerate-gap, and mirror formulas. The compact extension is also correctly conditional on trace-class hypotheses. However, the asserted finite-\u039b pure-Wilson discharge of H1 and H2 cannot be ratified from the clipped one-hop authority, while the full canonical surface retains the named H1/H2 walls. The \u0394_x=0 counterexample supports only the bridge-specific negative boundary that a positive gap is required for this decay argument; it does not establish a global no-go."
+  "verdict_rationale": null
 }

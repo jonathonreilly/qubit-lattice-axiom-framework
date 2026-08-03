@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-22T20:28:51.438644+00:00",
-  "audit_invocation_history": [
-    "64f6b88474724010b59f5a50d98f3f1a",
-    "55a46dc7641c4c36943410033fb66598"
-  ],
-  "audit_invocation_id": "55a46dc7641c4c36943410033fb66598",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true,
-      "runner_path": "scripts/frontier_koide_q_readout_factorization_theorem.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 14.043,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_koide_q_readout_factorization_theorem.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "159a1f2dcc2da5815d78c1e6ea62e1e1e6fafc27f06e029c069fbd501a14336b",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "159a1f2dcc2da5815d78c1e6ea62e1e1e6fafc27f06e029c069fbd501a14336b",
-    "runner_path": "scripts/frontier_koide_q_readout_factorization_theorem.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 745
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260722-eb9ffbd4",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The rank/kernel/image/fiber/quotient chain and definitional selector corollary close. The full source does not close as written because its invariant-quadratic characterization silently requires Q to be symmetric.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "koide_q_readout_factorization_theorem_2026-04-22",
-  "claim_scope": "The exact 16-by-16-to-L rank/kernel/image/fiber/quotient calculation, declared C3 intertwining and invariant-quadratic characterization, and definition-driven selector corollary.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-22T20:28:51.438644+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 9,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 14.076,
-  "load_bearing_step": "The basis calculation gives, on each time copy, L(u,v,w,z) = diag(u,v,w).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "6a7ddbef1f074255399ba86caefb02bb3162703b817ca0274c831449d74c94e7",
   "note_path": "docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: State Q=Q^T explicitly (or characterize only the symmetric part of Q), then supply the N1-N8 packet required to certify the asserted C3-insufficiency boundary cleanly.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -523,19 +474,105 @@
         "total_pass": 13
       },
       "verdict_rationale": "The explicit operator computation supports L(u,v,w,z)=diag(u,v,w), and the resulting rank, kernel, image, and quotient statements are valid algebraic consequences. The load-bearing kernel-invariance repair is not independently derived: runner D.2 constructs a selector already having the form Phi(L(W)), while D.3 labels a z-sensitive scalar non-first-live because it violates that stipulated form. Thus the advertised admissibility theorem reduces to defining the first-live selector class as functions on the returned operator."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:22.374440+00:00",
+      "audit_date": "2026-07-22T20:28:51.438644+00:00",
+      "audit_invocation_history": [
+        "64f6b88474724010b59f5a50d98f3f1a",
+        "55a46dc7641c4c36943410033fb66598"
+      ],
+      "audit_invocation_id": "55a46dc7641c4c36943410033fb66598",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/frontier_koide_q_readout_factorization_theorem.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 14.043,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_koide_q_readout_factorization_theorem.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "159a1f2dcc2da5815d78c1e6ea62e1e1e6fafc27f06e029c069fbd501a14336b",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "159a1f2dcc2da5815d78c1e6ea62e1e1e6fafc27f06e029c069fbd501a14336b",
+        "runner_path": "scripts/frontier_koide_q_readout_factorization_theorem.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 745
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260722-eb9ffbd4",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rank/kernel/image/fiber/quotient chain and definitional selector corollary close. The full source does not close as written because its invariant-quadratic characterization silently requires Q to be symmetric.",
+      "claim_scope": "The exact 16-by-16-to-L rank/kernel/image/fiber/quotient calculation, declared C3 intertwining and invariant-quadratic characterization, and definition-driven selector corollary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-22T20:28:51.438644+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The basis calculation gives, on each time copy, L(u,v,w,z) = diag(u,v,w).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: State Q=Q^T explicitly (or characterize only the symmetric part of Q), then supply the N1-N8 packet required to certify the asserted C3-insufficiency boundary cleanly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 6,
+        "C": 3,
+        "D": 2,
+        "total_pass": 19
+      },
+      "verdict_rationale": "Direct transition enumeration and projector multiplication both give L=[I3 0], so the quotient theorem and definition-driven selector invariance are correct. However, q(d)=d^TQd is invariant whenever the symmetric part of Q has the displayed form; arbitrary antisymmetric parts are invisible, while the runner silently parameterizes Q as symmetric. The note also asserts the narrow derived boundary that declared C3 covariance alone does not force L-factorization, but the supplied packet lacks the structured alternative-route certification required to cement that negative assertion cleanly."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 8,
-    "B": 6,
-    "C": 3,
-    "D": 2,
-    "total_pass": 19
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_q_readout_factorization_theorem.py",
   "title": "Koide Q Readout Rank/Kernel Quotient Theorem",
   "transitive_descendants": 762,
-  "verdict_rationale": "Direct transition enumeration and projector multiplication both give L=[I3 0], so the quotient theorem and definition-driven selector invariance are correct. However, q(d)=d^TQd is invariant whenever the symmetric part of Q has the displayed form; arbitrary antisymmetric parts are invisible, while the runner silently parameterizes Q as symmetric. The note also asserts the narrow derived boundary that declared C3 covariance alone does not force L-factorization, but the supplied packet lacks the structured alternative-route certification required to cement that negative assertion cleanly."
+  "verdict_rationale": null
 }

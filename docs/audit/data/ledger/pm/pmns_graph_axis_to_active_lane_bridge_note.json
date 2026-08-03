@@ -1,302 +1,26 @@
 {
-  "audit_date": "2026-07-23T19:35:44.394854+00:00",
-  "audit_invocation_history": [
-    "efb9dc31863b4f64a5af0f5c911c6eca",
-    "282e0f3d4639480f9757c74358f955a7",
-    "77dadc34a40a45c9bddda705d6917ce5"
-  ],
-  "audit_invocation_id": "77dadc34a40a45c9bddda705d6917ce5",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 2,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
-      "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
-      "z2_hw1_mass_matrix_parametrization_note": "Exact residual-Z_2 Hermitian normal form, spectrum, open-dense simple-spectrum locus, and exact full-S_3 sublocus for the supplied three-axis permutation representation."
-    },
-    "dep_claim_type": {
-      "graph_first_selector_derivation_note": "positive_theorem",
-      "site_phase_cube_shift_intertwiner_note": "positive_theorem",
-      "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "graph_first_selector_derivation_note": "retained",
-      "site_phase_cube_shift_intertwiner_note": "retained",
-      "z2_hw1_mass_matrix_parametrization_note": "retained"
-    },
-    "deps": [
-      "graph_first_selector_derivation_note",
-      "site_phase_cube_shift_intertwiner_note",
-      "z2_hw1_mass_matrix_parametrization_note"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 11.092,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "e622447a0bdef7842d3206a98962b7ae76d68457c51816f69c044ceed6ad2f04",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "e622447a0bdef7842d3206a98962b7ae76d68457c51816f69c044ceed6ad2f04",
-    "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 771
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-judicial-2-20260723-9a0d44b2",
-  "auditor_confidence": "judicial",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-51d71ab9\", \"judge\": 1, \"rationale\": \"The packet proves the finite-dimensional identity T_tau_k|V_1=P_tau_k and therefore the stated equivalence between residual invariance of a supplied H and P_tau_k H P_tau_k=H. It does not prove that the relevant physical active operator occupies this carrier and must be pointwise invariant: the runner projects arbitrary matrices into the invariant subalgebra, while the retained parametrization authority expressly leaves physical-carrier identification and pointwise operator invariance to a separate theorem. This is an explicit unclosed bridge supporting audited_conditional, not failure of the \", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260723-9a0d44b2\", \"judge\": 2, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260723-66c8542a\", \"judge\": 3, \"rationale\": \"The packet proves the class-A restriction T_tau|V_1=P_tau and the equivalence for an operator already assumed invariant. It does not prove that the relevant active Hermitian operator is pointwise invariant under the selected-axis residual Z_2: the retained parametrization authority expressly requires that step separately, and the runner only projects arbitrary matrices into the invariant subalgebra or tests matrices constructed to be invariant. Because the source presents this target-equivalent missing lemma as closing the named mandatory bridge rather than as an explicit premise, the proof-ob\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260723-31030844\", \"judge\": 4, \"rationale\": \"The source claims that the selected graph axis forces mandatory P_23 invariance and that the missing bridge is closed, but it proves only T_tau|V_1=P_tau and the conditional equivalence for an H already invariant under the residual action. The runner confirms this limitation by projecting arbitrary H to H_inv before checking invariance, while the retained Z_2 authority expressly requires separate pointwise operator invariance. Because the unresolved pointwise-invariance lemma is target-equivalent and is not disclosed as a retained premise or dependency, the rubric requires audited_failed rathe\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260723-9f8944d0\", \"judge\": 5, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau and the equivalence for an operator already assumed or constructed to be invariant. It does not prove the advertised target that the selected-axis residual stabilizer forces pointwise invariance of the relevant active Hermitian operator; under the proof-obligation closure gate, an unproved target-equivalent bridge presented as closed requires audited_failed, not audited_conditional.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}]",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
-  "claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-23T19:35:44.394854+00:00",
-  "claim_type_provenance": "judicial_review",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
-  "cross_confirmation": {
-    "agreement_schema": "audit_tuple_v2",
-    "first_audit": {
-      "audit_date": "2026-07-23T19:31:54.639195+00:00",
-      "audit_invocation_id": "efb9dc31863b4f64a5af0f5c911c6eca",
-      "auditor": "codex-audit-batch-A-20260723-c244c6c5",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": false,
-      "chain_closure_explanation": "The restriction T_tau|V_1=P_tau is established, but the packet never derives that the relevant active Hermitian operator must be invariant under that residual action. The clipped runner evidence also omits the complete load-bearing certificate.",
-      "claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
-      "claim_type": "bounded_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "cross_family",
-      "load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 87,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 87
-      },
-      "verdict": "audited_failed",
-      "verdict_rationale": "Issue: the exact calculation T_sigma|V_1=P_sigma is valid, but the claimed mandatory aligned law is replaced by the conditional statement that an already-invariant H satisfies P_tau H P_tau=H. Why this blocks: the runner symmetrizes arbitrary matrices into H_inv=(H+P_23 H P_23)/2 and checks the constructed result, so it assumes or constructs invariance rather than proving the original active operator is invariant. Repair target: supply a retained theorem connecting the graph selector and residual action to pointwise invariance of the relevant active Hermitian law, then provide complete unclipped runner evidence testing that implication. Claim boundary until fixed: only the permutation restriction and the equivalence for an already-imposed invariant H are supported; the active-sector and PMNS-value exclusions are scope boundaries, not no-go assertions."
-    },
-    "judicial_panel_record_v1": {
-      "cid": "pmns_graph_axis_to_active_lane_bridge_note",
-      "disagreement_fingerprint": {
-        "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
-        "first_audit_invocation_id": "efb9dc31863b4f64a5af0f5c911c6eca",
-        "note_hash": "8553fe0b6ba602ecda8a067e1aea727a3cf622a8d67374fd6dedc7ec7f4dce75",
-        "schema": "judicial_disagreement_fingerprint_v1",
-        "seat_summaries_sha256": "4a0b9e40ee850f89c27e773f791dd424fab3066e25eeba688f09b8497e858591",
-        "second_audit_invocation_id": "282e0f3d4639480f9757c74358f955a7"
-      },
-      "failures": [],
-      "invocation_id": "77dadc34a40a45c9bddda705d6917ce5",
-      "majority_count": 4,
-      "panel": 1,
-      "result": "majority_candidate",
-      "schema": "judicial_panel_record_v1",
-      "tally": [
-        {
-          "count": 4,
-          "tuple": [
-            "first",
-            "audited_failed",
-            "bounded_theorem",
-            "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
-            "A",
-            null,
-            []
-          ]
-        },
-        {
-          "count": 1,
-          "tuple": [
-            "second",
-            "audited_conditional",
-            "bounded_theorem",
-            "Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.",
-            "A",
-            null,
-            []
-          ]
-        }
-      ],
-      "votes": [
-        {
-          "auditor": "codex-judicial-1-20260723-51d71ab9",
-          "first_auditor_error": "It treated the missing active-carrier and pointwise-invariance theorem as making the narrowed conditional representation lemma fail even on its own terms. Under the rubric, that explicit unclosed bridge warrants audited_conditional; moreover, its own claim scope excludes mandatory active-operator invariance, and clipped stdout is not itself a scientific failure when the supplied runner source exposes the computation.",
-          "hybrid_resolution_note": null,
-          "judge": 1,
-          "judgment_rationale": "The packet proves the finite-dimensional identity T_tau_k|V_1=P_tau_k and therefore the stated equivalence between residual invariance of a supplied H and P_tau_k H P_tau_k=H. It does not prove that the relevant physical active operator occupies this carrier and must be pointwise invariant: the runner projects arbitrary matrices into the invariant subalgebra, while the retained parametrization authority expressly leaves physical-carrier identification and pointwise operator invariance to a separate theorem. This is an explicit unclosed bridge supporting audited_conditional, not failure of the narrowed lemma on its own terms.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the active-carrier equivariance and pointwise-invariance theorem, then rerender complete unclipped stdout for the load-bearing checks.",
-          "ratified_claim_scope": "Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "A Hermitian operator H on V_1 is invariant under the residual Z_2 stabilizer if and only if P_tau_k H P_tau_k = H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_conditional",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-2-20260723-9a0d44b2",
-          "first_auditor_error": "none",
-          "hybrid_resolution_note": null,
-          "judge": 2,
-          "judgment_rationale": "The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
-          "ratified_claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_failed",
-          "second_auditor_error": "The second position improperly replaces the source's claimed mandatory-invariance bridge with the weaker true conditional equivalence. Mandatory pointwise invariance is neither derived nor presented as an explicit premise or dependency, so the proof-obligation closure rule classifies the claimed chain as failed, not conditional.",
-          "sided_with": "first"
-        },
-        {
-          "auditor": "codex-judicial-3-20260723-66c8542a",
-          "first_auditor_error": "none",
-          "hybrid_resolution_note": null,
-          "judge": 3,
-          "judgment_rationale": "The packet proves the class-A restriction T_tau|V_1=P_tau and the equivalence for an operator already assumed invariant. It does not prove that the relevant active Hermitian operator is pointwise invariant under the selected-axis residual Z_2: the retained parametrization authority expressly requires that step separately, and the runner only projects arbitrary matrices into the invariant subalgebra or tests matrices constructed to be invariant. Because the source presents this target-equivalent missing lemma as closing the named mandatory bridge rather than as an explicit premise, the proof-obligation gate requires audited_failed, not audited_conditional.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
-          "ratified_claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_failed",
-          "second_auditor_error": "The second auditor misclassifies the unresolved pointwise-invariance theorem as a conditional premise. The source instead claims that it closes the prior mandatory bridge and that the aligned constraint is not an extra premise, so leaving that target-equivalent obligation unproved is failure on the source's own terms.",
-          "sided_with": "first"
-        },
-        {
-          "auditor": "codex-judicial-4-20260723-31030844",
-          "first_auditor_error": "The first position incorrectly treats clipped stdout as an additional blocker: the packet supplies complete runner source and enough displayed output to determine what is computed. This evidentiary overstatement does not affect its scientific tuple.",
-          "hybrid_resolution_note": null,
-          "judge": 4,
-          "judgment_rationale": "The source claims that the selected graph axis forces mandatory P_23 invariance and that the missing bridge is closed, but it proves only T_tau|V_1=P_tau and the conditional equivalence for an H already invariant under the residual action. The runner confirms this limitation by projecting arbitrary H to H_inv before checking invariance, while the retained Z_2 authority expressly requires separate pointwise operator invariance. Because the unresolved pointwise-invariance lemma is target-equivalent and is not disclosed as a retained premise or dependency, the rubric requires audited_failed rather than audited_conditional.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
-          "ratified_claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_failed",
-          "second_auditor_error": "The second position improperly converts the unproved headline obligation into a conditional premise. The source says the bridge forces the law and is not an extra premise, so the missing pointwise-invariance theorem is target-equivalent and, under section 4.0, supports audited_failed.",
-          "sided_with": "first"
-        },
-        {
-          "auditor": "codex-judicial-5-20260723-9f8944d0",
-          "first_auditor_error": "none",
-          "hybrid_resolution_note": null,
-          "judge": 5,
-          "judgment_rationale": "The packet proves the representation identity T_tau|V_1=P_tau and the equivalence for an operator already assumed or constructed to be invariant. It does not prove the advertised target that the selected-axis residual stabilizer forces pointwise invariance of the relevant active Hermitian operator; under the proof-obligation closure gate, an unproved target-equivalent bridge presented as closed requires audited_failed, not audited_conditional.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
-          "ratified_claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_failed",
-          "second_auditor_error": "The second auditor treated the missing pointwise-invariance theorem as an explicit conditional premise, but the source claims that this bridge is derived and closes the prior gap. The rubric therefore requires audited_failed because the target-equivalent terminal obligation remains unproved.",
-          "sided_with": "first"
-        }
-      ]
-    },
-    "mode": "judicial_panel_majority",
-    "second_audit": {
-      "audit_date": "2026-07-23T19:31:54.647298+00:00",
-      "audit_invocation_id": "282e0f3d4639480f9757c74358f955a7",
-      "auditor": "codex-audit-batch-B-20260723-1f59d8c3",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": false,
-      "chain_closure_explanation": "The finite-dimensional representation identity closes, but mandatory invariance of the relevant active Hermitian operator does not. The runner constructs or projects invariant operators rather than deriving the required active-carrier identification and pointwise residual invariance.",
-      "claim_scope": "Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.",
-      "claim_type": "bounded_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "fresh_context",
-      "load_bearing_step": "A Hermitian operator H on V_1 is invariant under the residual Z_2 stabilizer if and only if P_tau_k H P_tau_k = H.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the active-carrier equivariance and pointwise-invariance theorem, then rerender complete unclipped stdout for the load-bearing checks.",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 87,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 87
-      },
-      "verdict": "audited_conditional",
-      "verdict_rationale": "Issue: the exact restriction T_tau_k|V_1 = P_tau_k does not derive that the relevant active Hermitian operator is identified with this carrier and invariant under the residual action. Why this blocks: the runner verifies representation identities and projects arbitrary H into the invariant subalgebra, while the retained Z_2 authority expressly requires separate physical-carrier identification and pointwise operator invariance. Repair target: supply a retained equivariant-carrier theorem proving that residual Z_2 invariance applies to the active operator, and provide unclipped load-bearing runner evidence. Claim boundary until fixed: conditional on that carrier and invariance premise, residual invariance is exactly P_tau_k H P_tau_k = H, with P_23 after relabeling."
-    },
-    "status": "third_confirmed_first",
-    "third_audit": {
-      "audit_date": "2026-07-23T19:35:44.394854+00:00",
-      "audit_invocation_id": "77dadc34a40a45c9bddda705d6917ce5",
-      "auditor": "codex-judicial-2-20260723-9a0d44b2",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
-      "claim_type": "bounded_theorem",
-      "first_auditor_error": "none",
-      "independence": "judicial_review",
-      "judgment_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-51d71ab9\", \"judge\": 1, \"rationale\": \"The packet proves the finite-dimensional identity T_tau_k|V_1=P_tau_k and therefore the stated equivalence between residual invariance of a supplied H and P_tau_k H P_tau_k=H. It does not prove that the relevant physical active operator occupies this carrier and must be pointwise invariant: the runner projects arbitrary matrices into the invariant subalgebra, while the retained parametrization authority expressly leaves physical-carrier identification and pointwise operator invariance to a separate theorem. This is an explicit unclosed bridge supporting audited_conditional, not failure of the \", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260723-9a0d44b2\", \"judge\": 2, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260723-66c8542a\", \"judge\": 3, \"rationale\": \"The packet proves the class-A restriction T_tau|V_1=P_tau and the equivalence for an operator already assumed invariant. It does not prove that the relevant active Hermitian operator is pointwise invariant under the selected-axis residual Z_2: the retained parametrization authority expressly requires that step separately, and the runner only projects arbitrary matrices into the invariant subalgebra or tests matrices constructed to be invariant. Because the source presents this target-equivalent missing lemma as closing the named mandatory bridge rather than as an explicit premise, the proof-ob\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260723-31030844\", \"judge\": 4, \"rationale\": \"The source claims that the selected graph axis forces mandatory P_23 invariance and that the missing bridge is closed, but it proves only T_tau|V_1=P_tau and the conditional equivalence for an H already invariant under the residual action. The runner confirms this limitation by projecting arbitrary H to H_inv before checking invariance, while the retained Z_2 authority expressly requires separate pointwise operator invariance. Because the unresolved pointwise-invariance lemma is target-equivalent and is not disclosed as a retained premise or dependency, the rubric requires audited_failed rathe\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260723-9f8944d0\", \"judge\": 5, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau and the equivalence for an operator already assumed or constructed to be invariant. It does not prove the advertised target that the selected-axis residual stabilizer forces pointwise invariance of the relevant active Hermitian operator; under the proof-obligation closure gate, an unproved target-equivalent bridge presented as closed requires audited_failed, not audited_conditional.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}]",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "second_auditor_error": "The second position improperly replaces the source's claimed mandatory-invariance bridge with the weaker true conditional equivalence. Mandatory pointwise invariance is neither derived nor presented as an explicit premise or dependency, so the proof-obligation closure rule classifies the claimed chain as failed, not conditional.",
-      "sided_with": "first",
-      "verdict": "audited_failed"
-    }
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "z2_hw1_mass_matrix_parametrization_note",
@@ -304,20 +28,19 @@
     "graph_first_selector_derivation_note"
   ],
   "direct_in_degree": 3,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "judicial_review",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 11.124,
-  "load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "8553fe0b6ba602ecda8a067e1aea727a3cf622a8d67374fd6dedc7ec7f4dce75",
   "note_path": "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md",
-  "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -4950,19 +4673,333 @@
         "total_pass": 87
       },
       "verdict_rationale": "The runner constructs the cube shifts, tensor-factor permutation unitaries, hw=1 basis, restriction blocks, and invariant Hermitian operators rather than importing or printing the contested bridge. All 87 checks are finite-dimensional algebraic checks, and the cited authorities are retained-grade. The statement that the natural three-dimensional permutation carrier is irreducible is inaccurate\u2014it decomposes as trivial plus standard\u2014but that incidental wording is not used by the scoped bridge proof."
+    },
+    {
+      "archived_at": "2026-08-03T07:43:19.623150+00:00",
+      "audit_date": "2026-07-23T19:35:44.394854+00:00",
+      "audit_invocation_history": [
+        "efb9dc31863b4f64a5af0f5c911c6eca",
+        "282e0f3d4639480f9757c74358f955a7",
+        "77dadc34a40a45c9bddda705d6917ce5"
+      ],
+      "audit_invocation_id": "77dadc34a40a45c9bddda705d6917ce5",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 2,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "z2_hw1_mass_matrix_parametrization_note": "Exact residual-Z_2 Hermitian normal form, spectrum, open-dense simple-spectrum locus, and exact full-S_3 sublocus for the supplied three-axis permutation representation."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.092,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "e622447a0bdef7842d3206a98962b7ae76d68457c51816f69c044ceed6ad2f04",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "e622447a0bdef7842d3206a98962b7ae76d68457c51816f69c044ceed6ad2f04",
+        "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 771
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-judicial-2-20260723-9a0d44b2",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-51d71ab9\", \"judge\": 1, \"rationale\": \"The packet proves the finite-dimensional identity T_tau_k|V_1=P_tau_k and therefore the stated equivalence between residual invariance of a supplied H and P_tau_k H P_tau_k=H. It does not prove that the relevant physical active operator occupies this carrier and must be pointwise invariant: the runner projects arbitrary matrices into the invariant subalgebra, while the retained parametrization authority expressly leaves physical-carrier identification and pointwise operator invariance to a separate theorem. This is an explicit unclosed bridge supporting audited_conditional, not failure of the \", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260723-9a0d44b2\", \"judge\": 2, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260723-66c8542a\", \"judge\": 3, \"rationale\": \"The packet proves the class-A restriction T_tau|V_1=P_tau and the equivalence for an operator already assumed invariant. It does not prove that the relevant active Hermitian operator is pointwise invariant under the selected-axis residual Z_2: the retained parametrization authority expressly requires that step separately, and the runner only projects arbitrary matrices into the invariant subalgebra or tests matrices constructed to be invariant. Because the source presents this target-equivalent missing lemma as closing the named mandatory bridge rather than as an explicit premise, the proof-ob\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260723-31030844\", \"judge\": 4, \"rationale\": \"The source claims that the selected graph axis forces mandatory P_23 invariance and that the missing bridge is closed, but it proves only T_tau|V_1=P_tau and the conditional equivalence for an H already invariant under the residual action. The runner confirms this limitation by projecting arbitrary H to H_inv before checking invariance, while the retained Z_2 authority expressly requires separate pointwise operator invariance. Because the unresolved pointwise-invariance lemma is target-equivalent and is not disclosed as a retained premise or dependency, the rubric requires audited_failed rathe\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260723-9f8944d0\", \"judge\": 5, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau and the equivalence for an operator already assumed or constructed to be invariant. It does not prove the advertised target that the selected-axis residual stabilizer forces pointwise invariance of the relevant active Hermitian operator; under the proof-obligation closure gate, an unproved target-equivalent bridge presented as closed requires audited_failed, not audited_conditional.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}]",
+      "claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-23T19:35:44.394854+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "agreement_schema": "audit_tuple_v2",
+        "first_audit": {
+          "audit_date": "2026-07-23T19:31:54.639195+00:00",
+          "audit_invocation_id": "efb9dc31863b4f64a5af0f5c911c6eca",
+          "auditor": "codex-audit-batch-A-20260723-c244c6c5",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": false,
+          "chain_closure_explanation": "The restriction T_tau|V_1=P_tau is established, but the packet never derives that the relevant active Hermitian operator must be invariant under that residual action. The clipped runner evidence also omits the complete load-bearing certificate.",
+          "claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+          "claim_type": "bounded_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 87,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 87
+          },
+          "verdict": "audited_failed",
+          "verdict_rationale": "Issue: the exact calculation T_sigma|V_1=P_sigma is valid, but the claimed mandatory aligned law is replaced by the conditional statement that an already-invariant H satisfies P_tau H P_tau=H. Why this blocks: the runner symmetrizes arbitrary matrices into H_inv=(H+P_23 H P_23)/2 and checks the constructed result, so it assumes or constructs invariance rather than proving the original active operator is invariant. Repair target: supply a retained theorem connecting the graph selector and residual action to pointwise invariance of the relevant active Hermitian law, then provide complete unclipped runner evidence testing that implication. Claim boundary until fixed: only the permutation restriction and the equivalence for an already-imposed invariant H are supported; the active-sector and PMNS-value exclusions are scope boundaries, not no-go assertions."
+        },
+        "judicial_panel_record_v1": {
+          "cid": "pmns_graph_axis_to_active_lane_bridge_note",
+          "disagreement_fingerprint": {
+            "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
+            "first_audit_invocation_id": "efb9dc31863b4f64a5af0f5c911c6eca",
+            "note_hash": "8553fe0b6ba602ecda8a067e1aea727a3cf622a8d67374fd6dedc7ec7f4dce75",
+            "schema": "judicial_disagreement_fingerprint_v1",
+            "seat_summaries_sha256": "4a0b9e40ee850f89c27e773f791dd424fab3066e25eeba688f09b8497e858591",
+            "second_audit_invocation_id": "282e0f3d4639480f9757c74358f955a7"
+          },
+          "failures": [],
+          "invocation_id": "77dadc34a40a45c9bddda705d6917ce5",
+          "majority_count": 4,
+          "panel": 1,
+          "result": "majority_candidate",
+          "schema": "judicial_panel_record_v1",
+          "tally": [
+            {
+              "count": 4,
+              "tuple": [
+                "first",
+                "audited_failed",
+                "bounded_theorem",
+                "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+                "A",
+                null,
+                []
+              ]
+            },
+            {
+              "count": 1,
+              "tuple": [
+                "second",
+                "audited_conditional",
+                "bounded_theorem",
+                "Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.",
+                "A",
+                null,
+                []
+              ]
+            }
+          ],
+          "votes": [
+            {
+              "auditor": "codex-judicial-1-20260723-51d71ab9",
+              "first_auditor_error": "It treated the missing active-carrier and pointwise-invariance theorem as making the narrowed conditional representation lemma fail even on its own terms. Under the rubric, that explicit unclosed bridge warrants audited_conditional; moreover, its own claim scope excludes mandatory active-operator invariance, and clipped stdout is not itself a scientific failure when the supplied runner source exposes the computation.",
+              "hybrid_resolution_note": null,
+              "judge": 1,
+              "judgment_rationale": "The packet proves the finite-dimensional identity T_tau_k|V_1=P_tau_k and therefore the stated equivalence between residual invariance of a supplied H and P_tau_k H P_tau_k=H. It does not prove that the relevant physical active operator occupies this carrier and must be pointwise invariant: the runner projects arbitrary matrices into the invariant subalgebra, while the retained parametrization authority expressly leaves physical-carrier identification and pointwise operator invariance to a separate theorem. This is an explicit unclosed bridge supporting audited_conditional, not failure of the narrowed lemma on its own terms.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the active-carrier equivariance and pointwise-invariance theorem, then rerender complete unclipped stdout for the load-bearing checks.",
+              "ratified_claim_scope": "Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "A Hermitian operator H on V_1 is invariant under the residual Z_2 stabilizer if and only if P_tau_k H P_tau_k = H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_conditional",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-2-20260723-9a0d44b2",
+              "first_auditor_error": "none",
+              "hybrid_resolution_note": null,
+              "judge": 2,
+              "judgment_rationale": "The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
+              "ratified_claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_failed",
+              "second_auditor_error": "The second position improperly replaces the source's claimed mandatory-invariance bridge with the weaker true conditional equivalence. Mandatory pointwise invariance is neither derived nor presented as an explicit premise or dependency, so the proof-obligation closure rule classifies the claimed chain as failed, not conditional.",
+              "sided_with": "first"
+            },
+            {
+              "auditor": "codex-judicial-3-20260723-66c8542a",
+              "first_auditor_error": "none",
+              "hybrid_resolution_note": null,
+              "judge": 3,
+              "judgment_rationale": "The packet proves the class-A restriction T_tau|V_1=P_tau and the equivalence for an operator already assumed invariant. It does not prove that the relevant active Hermitian operator is pointwise invariant under the selected-axis residual Z_2: the retained parametrization authority expressly requires that step separately, and the runner only projects arbitrary matrices into the invariant subalgebra or tests matrices constructed to be invariant. Because the source presents this target-equivalent missing lemma as closing the named mandatory bridge rather than as an explicit premise, the proof-obligation gate requires audited_failed, not audited_conditional.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
+              "ratified_claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_failed",
+              "second_auditor_error": "The second auditor misclassifies the unresolved pointwise-invariance theorem as a conditional premise. The source instead claims that it closes the prior mandatory bridge and that the aligned constraint is not an extra premise, so leaving that target-equivalent obligation unproved is failure on the source's own terms.",
+              "sided_with": "first"
+            },
+            {
+              "auditor": "codex-judicial-4-20260723-31030844",
+              "first_auditor_error": "The first position incorrectly treats clipped stdout as an additional blocker: the packet supplies complete runner source and enough displayed output to determine what is computed. This evidentiary overstatement does not affect its scientific tuple.",
+              "hybrid_resolution_note": null,
+              "judge": 4,
+              "judgment_rationale": "The source claims that the selected graph axis forces mandatory P_23 invariance and that the missing bridge is closed, but it proves only T_tau|V_1=P_tau and the conditional equivalence for an H already invariant under the residual action. The runner confirms this limitation by projecting arbitrary H to H_inv before checking invariance, while the retained Z_2 authority expressly requires separate pointwise operator invariance. Because the unresolved pointwise-invariance lemma is target-equivalent and is not disclosed as a retained premise or dependency, the rubric requires audited_failed rather than audited_conditional.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
+              "ratified_claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_failed",
+              "second_auditor_error": "The second position improperly converts the unproved headline obligation into a conditional premise. The source says the bridge forces the law and is not an extra premise, so the missing pointwise-invariance theorem is target-equivalent and, under section 4.0, supports audited_failed.",
+              "sided_with": "first"
+            },
+            {
+              "auditor": "codex-judicial-5-20260723-9f8944d0",
+              "first_auditor_error": "none",
+              "hybrid_resolution_note": null,
+              "judge": 5,
+              "judgment_rationale": "The packet proves the representation identity T_tau|V_1=P_tau and the equivalence for an operator already assumed or constructed to be invariant. It does not prove the advertised target that the selected-axis residual stabilizer forces pointwise invariance of the relevant active Hermitian operator; under the proof-obligation closure gate, an unproved target-equivalent bridge presented as closed requires audited_failed, not audited_conditional.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
+              "ratified_claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_failed",
+              "second_auditor_error": "The second auditor treated the missing pointwise-invariance theorem as an explicit conditional premise, but the source claims that this bridge is derived and closes the prior gap. The rubric therefore requires audited_failed because the target-equivalent terminal obligation remains unproved.",
+              "sided_with": "first"
+            }
+          ]
+        },
+        "mode": "judicial_panel_majority",
+        "second_audit": {
+          "audit_date": "2026-07-23T19:31:54.647298+00:00",
+          "audit_invocation_id": "282e0f3d4639480f9757c74358f955a7",
+          "auditor": "codex-audit-batch-B-20260723-1f59d8c3",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": false,
+          "chain_closure_explanation": "The finite-dimensional representation identity closes, but mandatory invariance of the relevant active Hermitian operator does not. The runner constructs or projects invariant operators rather than deriving the required active-carrier identification and pointwise residual invariance.",
+          "claim_scope": "Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.",
+          "claim_type": "bounded_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "A Hermitian operator H on V_1 is invariant under the residual Z_2 stabilizer if and only if P_tau_k H P_tau_k = H.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the active-carrier equivariance and pointwise-invariance theorem, then rerender complete unclipped stdout for the load-bearing checks.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 87,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 87
+          },
+          "verdict": "audited_conditional",
+          "verdict_rationale": "Issue: the exact restriction T_tau_k|V_1 = P_tau_k does not derive that the relevant active Hermitian operator is identified with this carrier and invariant under the residual action. Why this blocks: the runner verifies representation identities and projects arbitrary H into the invariant subalgebra, while the retained Z_2 authority expressly requires separate physical-carrier identification and pointwise operator invariance. Repair target: supply a retained equivariant-carrier theorem proving that residual Z_2 invariance applies to the active operator, and provide unclipped load-bearing runner evidence. Claim boundary until fixed: conditional on that carrier and invariance premise, residual invariance is exactly P_tau_k H P_tau_k = H, with P_23 after relabeling."
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-07-23T19:35:44.394854+00:00",
+          "audit_invocation_id": "77dadc34a40a45c9bddda705d6917ce5",
+          "auditor": "codex-judicial-2-20260723-9a0d44b2",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-51d71ab9\", \"judge\": 1, \"rationale\": \"The packet proves the finite-dimensional identity T_tau_k|V_1=P_tau_k and therefore the stated equivalence between residual invariance of a supplied H and P_tau_k H P_tau_k=H. It does not prove that the relevant physical active operator occupies this carrier and must be pointwise invariant: the runner projects arbitrary matrices into the invariant subalgebra, while the retained parametrization authority expressly leaves physical-carrier identification and pointwise operator invariance to a separate theorem. This is an explicit unclosed bridge supporting audited_conditional, not failure of the \", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260723-9a0d44b2\", \"judge\": 2, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260723-66c8542a\", \"judge\": 3, \"rationale\": \"The packet proves the class-A restriction T_tau|V_1=P_tau and the equivalence for an operator already assumed invariant. It does not prove that the relevant active Hermitian operator is pointwise invariant under the selected-axis residual Z_2: the retained parametrization authority expressly requires that step separately, and the runner only projects arbitrary matrices into the invariant subalgebra or tests matrices constructed to be invariant. Because the source presents this target-equivalent missing lemma as closing the named mandatory bridge rather than as an explicit premise, the proof-ob\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260723-31030844\", \"judge\": 4, \"rationale\": \"The source claims that the selected graph axis forces mandatory P_23 invariance and that the missing bridge is closed, but it proves only T_tau|V_1=P_tau and the conditional equivalence for an H already invariant under the residual action. The runner confirms this limitation by projecting arbitrary H to H_inv before checking invariance, while the retained Z_2 authority expressly requires separate pointwise operator invariance. Because the unresolved pointwise-invariance lemma is target-equivalent and is not disclosed as a retained premise or dependency, the rubric requires audited_failed rathe\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260723-9f8944d0\", \"judge\": 5, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau and the equivalence for an operator already assumed or constructed to be invariant. It does not prove the advertised target that the selected-axis residual stabilizer forces pointwise invariance of the relevant active Hermitian operator; under the proof-obligation closure gate, an unproved target-equivalent bridge presented as closed requires audited_failed, not audited_conditional.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}]",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "second_auditor_error": "The second position improperly replaces the source's claimed mandatory-invariance bridge with the weaker true conditional equivalence. Mandatory pointwise invariance is neither derived nor presented as an explicit premise or dependency, so the proof-obligation closure rule classifies the claimed chain as failed, not conditional.",
+          "sided_with": "first",
+          "verdict": "audited_failed"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:z2_hw1_mass_matrix_parametrization_note:retained->unaudited",
+      "load_bearing_step": "Pushing the selected axis onto the active Hermitian triplet lane forces the aligned law P_23 H P_23 = H.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after a retained equivariance or pointwise-invariance theorem shows that the selected-axis residual stabilizer must leave the relevant active Hermitian law invariant, and after supplying complete SHA-pinned runner stdout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 87,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 87
+      },
+      "verdict_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-51d71ab9\", \"judge\": 1, \"rationale\": \"The packet proves the finite-dimensional identity T_tau_k|V_1=P_tau_k and therefore the stated equivalence between residual invariance of a supplied H and P_tau_k H P_tau_k=H. It does not prove that the relevant physical active operator occupies this carrier and must be pointwise invariant: the runner projects arbitrary matrices into the invariant subalgebra, while the retained parametrization authority expressly leaves physical-carrier identification and pointwise operator invariance to a separate theorem. This is an explicit unclosed bridge supporting audited_conditional, not failure of the \", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260723-9a0d44b2\", \"judge\": 2, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260723-66c8542a\", \"judge\": 3, \"rationale\": \"The packet proves the class-A restriction T_tau|V_1=P_tau and the equivalence for an operator already assumed invariant. It does not prove that the relevant active Hermitian operator is pointwise invariant under the selected-axis residual Z_2: the retained parametrization authority expressly requires that step separately, and the runner only projects arbitrary matrices into the invariant subalgebra or tests matrices constructed to be invariant. Because the source presents this target-equivalent missing lemma as closing the named mandatory bridge rather than as an explicit premise, the proof-ob\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260723-31030844\", \"judge\": 4, \"rationale\": \"The source claims that the selected graph axis forces mandatory P_23 invariance and that the missing bridge is closed, but it proves only T_tau|V_1=P_tau and the conditional equivalence for an H already invariant under the residual action. The runner confirms this limitation by projecting arbitrary H to H_inv before checking invariance, while the retained Z_2 authority expressly requires separate pointwise operator invariance. Because the unresolved pointwise-invariance lemma is target-equivalent and is not disclosed as a retained premise or dependency, the rubric requires audited_failed rathe\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260723-9f8944d0\", \"judge\": 5, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau and the equivalence for an operator already assumed or constructed to be invariant. It does not prove the advertised target that the selected-axis residual stabilizer forces pointwise invariance of the relevant active Hermitian operator; under the proof-obligation closure gate, an unproved target-equivalent bridge presented as closed requires audited_failed, not audited_conditional.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}]"
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 87,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 87
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
   "title": "PMNS Graph-Axis -> Active Hermitian Lane Bridge",
   "transitive_descendants": 788,
-  "verdict_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260723-51d71ab9\", \"judge\": 1, \"rationale\": \"The packet proves the finite-dimensional identity T_tau_k|V_1=P_tau_k and therefore the stated equivalence between residual invariance of a supplied H and P_tau_k H P_tau_k=H. It does not prove that the relevant physical active operator occupies this carrier and must be pointwise invariant: the runner projects arbitrary matrices into the invariant subalgebra, while the retained parametrization authority expressly leaves physical-carrier identification and pointwise operator invariance to a separate theorem. This is an explicit unclosed bridge supporting audited_conditional, not failure of the \", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Conditional finite-dimensional representation lemma: on the supplied V_1 carrier, T_tau restricts to P_tau and invariance of a supplied H is equivalent to P_tau H P_tau = H, specifically P_23 after relabeling; active-carrier assignment and mandatory invariance are not derived.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260723-9a0d44b2\", \"judge\": 2, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau, but it does not prove that the relevant active Hermitian operator must be invariant under that action. The runner instead constructs H_inv by group averaging and tests already aligned forms; because the source claims this missing mandatory-invariance bridge is proved, the rubric requires audited_failed rather than weakening the target to a conditional lemma.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260723-66c8542a\", \"judge\": 3, \"rationale\": \"The packet proves the class-A restriction T_tau|V_1=P_tau and the equivalence for an operator already assumed invariant. It does not prove that the relevant active Hermitian operator is pointwise invariant under the selected-axis residual Z_2: the retained parametrization authority expressly requires that step separately, and the runner only projects arbitrary matrices into the invariant subalgebra or tests matrices constructed to be invariant. Because the source presents this target-equivalent missing lemma as closing the named mandatory bridge rather than as an explicit premise, the proof-ob\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260723-31030844\", \"judge\": 4, \"rationale\": \"The source claims that the selected graph axis forces mandatory P_23 invariance and that the missing bridge is closed, but it proves only T_tau|V_1=P_tau and the conditional equivalence for an H already invariant under the residual action. The runner confirms this limitation by projecting arbitrary H to H_inv before checking invariance, while the retained Z_2 authority expressly requires separate pointwise operator invariance. Because the unresolved pointwise-invariance lemma is target-equivalent and is not disclosed as a retained premise or dependency, the rubric requires audited_failed rathe\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260723-9f8944d0\", \"judge\": 5, \"rationale\": \"The packet proves the representation identity T_tau|V_1=P_tau and the equivalence for an operator already assumed or constructed to be invariant. It does not prove the advertised target that the selected-axis residual stabilizer forces pointwise invariance of the relevant active Hermitian operator; under the proof-obligation closure gate, an unproved target-equivalent bridge presented as closed requires audited_failed, not audited_conditional.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"Finite-dimensional restriction T_sigma|V_1=P_sigma and equivalence between invariance of an already-specified Hermitian H under tau=(2 3) and P_23 H P_23=H; mandatory active-operator invariance, active-sector assignment, and PMNS values are excluded.\", \"A\", null, []]}]"
+  "verdict_rationale": null
 }

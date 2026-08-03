@@ -1,87 +1,24 @@
 {
-  "audit_date": "2026-07-25T16:06:09.476932+00:00",
-  "audit_invocation_history": [
-    "9d4e34e25685475983d5653e817254dc"
-  ],
-  "audit_invocation_id": "9d4e34e25685475983d5653e817254dc",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 3,
-        "D": 6
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true,
-      "runner_path": "scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "key_terminology": null,
-      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "The elementary identities T1-T3 for signed real x_k, plus the Koide-form corollary only when every x_k is positive; no physical mass, coefficient-selection, scale, or phase derivation was audited.",
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "key_terminology": "meta",
-      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "key_terminology": "meta",
-      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "key_terminology",
-      "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "685db840f0c451c1ace8b31d068e808a6859f6b7b6956168162201e3f9c1b1df",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "685db840f0c451c1ace8b31d068e808a6859f6b7b6956168162201e3f9c1b1df",
-    "runner_path": "scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-5bc3ae08",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The runner supports the local counterexamples, but the restricted packet clips the load-bearing Q=2/3 authority and the terminology authority, preventing complete one-hop verification.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "koide_record_sign_agnostic_eta_refuted_2026-06-04",
-  "claim_scope": "Open-gate diagnosis that Record additivity does not select among the four tested additive readouts, squaring erases sign, eta alone does not determine the signed Koide denominator, and the all-positive charged-lepton comparator is non-load-bearing.",
+  "claim_scope": null,
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "open_gate (readout-route diagnosis)",
-  "claim_type_last_reviewed": "2026-07-25T16:06:09.476932+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -91,22 +28,19 @@
     "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Eta is too coarse to reconstruct the real-valued signed denominator: two positive spectra have the same eta but different Q.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "c7511d09597d6b738edefd38d57059c4b6d3d393316aa71a158cac830731bdd5",
   "note_path": "docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md",
-  "notes_for_re_audit_if_any": "other: rerender the restricted packet with the complete KEY_TERMINOLOGY and Koide Q=2/3 authority evidence, then rerun the independent audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -285,19 +219,122 @@
       "open_dependency_paths": [],
       "runner_check_breakdown": "A checks: tested_functionals_add_over_direct_sum, squaring_erases_single_sign, eta_count_does_not_fix_q, r_half_maps_to_q_two_thirds; D non-load-bearing comparator: charged_lepton_comparator_sign_homogeneous; scope guard text checks: 5; B/C checks: none.",
       "verdict_rationale": "The scoped open-gate claim closes as elementary algebra and a concrete eta counterexample: the runner checks additivity on tested direct sums, sign erasure under squaring, and same-eta/different-Q spectra. The note explicitly refuses the broader no-go/readout theorem, treats the PDG comparator as non-load-bearing, and keeps future framework-native signed readout routes open. No readout functional, physical Koide derivation, or all-future-route exclusion is being claimed."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:22.391952+00:00",
+      "audit_date": "2026-07-25T16:06:09.476932+00:00",
+      "audit_invocation_history": [
+        "9d4e34e25685475983d5653e817254dc"
+      ],
+      "audit_invocation_id": "9d4e34e25685475983d5653e817254dc",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 3,
+            "D": 6
+          },
+          "decoration_candidate": false,
+          "dominant_class": "D",
+          "exists": true,
+          "runner_path": "scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "The elementary identities T1-T3 for signed real x_k, plus the Koide-form corollary only when every x_k is positive; no physical mass, coefficient-selection, scale, or phase derivation was audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "685db840f0c451c1ace8b31d068e808a6859f6b7b6956168162201e3f9c1b1df",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "685db840f0c451c1ace8b31d068e808a6859f6b7b6956168162201e3f9c1b1df",
+        "runner_path": "scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-5bc3ae08",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner supports the local counterexamples, but the restricted packet clips the load-bearing Q=2/3 authority and the terminology authority, preventing complete one-hop verification.",
+      "claim_scope": "Open-gate diagnosis that Record additivity does not select among the four tested additive readouts, squaring erases sign, eta alone does not determine the signed Koide denominator, and the all-positive charged-lepton comparator is non-load-bearing.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-25T16:06:09.476932+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Eta is too coarse to reconstruct the real-valued signed denominator: two positive spectra have the same eta but different Q.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: rerender the restricted packet with the complete KEY_TERMINOLOGY and Koide Q=2/3 authority evidence, then rerun the independent audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 5,
+        "C": 0,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner genuinely checks additivity, sign erasure, the eta counterexample, the r-to-Q algebra, and the explicitly non-load-bearing observed comparator. The supported negative boundary is limited to sign-blind squaring and eta-only reconstruction; it does not foreclose framework-native signed readouts. For N1/N7, alternative signed readouts remain open; N2 finds the two tested limitations distinct; N3/N5 finds the negative language scoped; N4 invokes no prior residual witness; N6 leaves framework-native readout candidates open; and N8 supports no broader cross-cycle conclusion. Because load-bearing upstream evidence is clipped, the packet cannot support a clean terminal verdict."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 4,
-    "B": 5,
+    "A": 0,
+    "B": 0,
     "C": 0,
-    "D": 1,
-    "total_pass": 10
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py",
   "title": "Koide Record Sign-Agnostic Eta Route Diagnosis",
   "transitive_descendants": 0,
-  "verdict_rationale": "The runner genuinely checks additivity, sign erasure, the eta counterexample, the r-to-Q algebra, and the explicitly non-load-bearing observed comparator. The supported negative boundary is limited to sign-blind squaring and eta-only reconstruction; it does not foreclose framework-native signed readouts. For N1/N7, alternative signed readouts remain open; N2 finds the two tested limitations distinct; N3/N5 finds the negative language scoped; N4 invokes no prior residual witness; N6 leaves framework-native readout candidates open; and N8 supports no broader cross-cycle conclusion. Because load-bearing upstream evidence is clipped, the packet cannot support a clean terminal verdict."
+  "verdict_rationale": null
 }

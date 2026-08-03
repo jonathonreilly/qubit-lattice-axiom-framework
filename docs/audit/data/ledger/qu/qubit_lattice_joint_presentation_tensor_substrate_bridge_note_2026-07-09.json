@@ -1,47 +1,24 @@
 {
-  "audit_date": "2026-07-18T11:11:19.585831+00:00",
-  "audit_invocation_history": [
-    "132bd9acdb3045f190ca220687e741bd"
-  ],
-  "audit_invocation_id": "132bd9acdb3045f190ca220687e741bd",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 10.439,
-    "runner_hash": "94c5120910cda948ac1ba8001c060e52e144130a9d7d72befd64d37a2c5646a3",
-    "transitive_descendants": 693
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-loop-drain-ready-20260717-93080406ea054ee786370fc08ff89880-qubit_lattice_joint_pres-001",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The algebraic conclusions follow if J1 and J2 are granted, but the restricted packet neither derives those premises nor registers them as accepted framework premises.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09",
-  "claim_scope": "The finite-dimensional generated-algebra, multiplicity, minimal m = 1 carrier, Gleason dimension-threshold, and projection-span conclusions conditional on J1 and J2.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-18T11:11:19.585831+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -49,24 +26,19 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 10.56,
-  "load_bearing_step": "Pairwise elementwise commutation makes \u03a6 a unital *-homomorphism from the tensor product, simplicity makes its kernel zero, and finite type-I representation theory then gives H \u2245 \u2102^(2\u207f) \u2297 \u2102\u1d50.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale"
-  ],
-  "no_go_discipline": null,
   "note_hash": "3ed48ed831b33b320565363662b3ae317149767388377f954e1e4b75acc8e7c8",
   "note_path": "docs/QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations of J1 and J2 or register both as approved premises, update the A4 runner needle to the current Qualification wording, and rerun the exact checks.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1429,6 +1401,70 @@
         "total_pass": 39
       },
       "verdict_rationale": "The matrix-algebra, representation, dimension, and projection-span arguments are correct once J1 and J2 are granted, but those premises are neither derived nor accepted by the supplied registry. The completed 39/40 runner supports the conditional mathematics; its A4 failure comes from expecting Qualification wording that does not match the current cited authority. For N1-N8, the two named premises are independent, explicitly disclosed rather than hidden, have no matching prior residual that closes them, survive rhetoric and partial-closure scans, remain unresolved under the strongest conditional steelman, and receive no applicable closure from the supplied cross-cycle index."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:27.426575+00:00",
+      "audit_date": "2026-07-18T11:11:19.585831+00:00",
+      "audit_invocation_history": [
+        "132bd9acdb3045f190ca220687e741bd"
+      ],
+      "audit_invocation_id": "132bd9acdb3045f190ca220687e741bd",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.439,
+        "runner_hash": "94c5120910cda948ac1ba8001c060e52e144130a9d7d72befd64d37a2c5646a3",
+        "transitive_descendants": 693
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-drain-ready-20260717-93080406ea054ee786370fc08ff89880-qubit_lattice_joint_pres-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic conclusions follow if J1 and J2 are granted, but the restricted packet neither derives those premises nor registers them as accepted framework premises.",
+      "claim_scope": "The finite-dimensional generated-algebra, multiplicity, minimal m = 1 carrier, Gleason dimension-threshold, and projection-span conclusions conditional on J1 and J2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-18T11:11:19.585831+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Pairwise elementwise commutation makes \u03a6 a unital *-homomorphism from the tensor product, simplicity makes its kernel zero, and finite type-I representation theory then gives H \u2245 \u2102^(2\u207f) \u2297 \u2102\u1d50.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations of J1 and J2 or register both as approved premises, update the A4 runner needle to the current Qualification wording, and rerun the exact checks.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 9,
+        "C": 8,
+        "D": 6,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The matrix-algebra, representation, dimension, and projection-span arguments are correct once J1 and J2 are granted, but those premises are neither derived nor accepted by the supplied registry. The completed 39/40 runner supports the conditional mathematics; its A4 failure comes from expecting Qualification wording that does not match the current cited authority. For N1-N8, the two named premises are independent, explicitly disclosed rather than hidden, have no matching prior residual that closes them, survive rhetoric and partial-closure scans, remain unresolved under the strongest conditional steelman, and receive no applicable closure from the supplied cross-cycle index."
     }
   ],
   "prose_corrections": [],
@@ -1443,14 +1479,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 3,
-    "B": 9,
-    "C": 8,
-    "D": 6,
-    "total_pass": 39
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py",
   "title": "Qubit-Lattice Joint Presentation Tensor Substrate Bridge (Narrow)",
   "transitive_descendants": 754,
-  "verdict_rationale": "The matrix-algebra, representation, dimension, and projection-span arguments are correct once J1 and J2 are granted, but those premises are neither derived nor accepted by the supplied registry. The completed 39/40 runner supports the conditional mathematics; its A4 failure comes from expecting Qualification wording that does not match the current cited authority. For N1-N8, the two named premises are independent, explicitly disclosed rather than hidden, have no matching prior residual that closes them, survive rhetoric and partial-closure scans, remain unresolved under the strongest conditional steelman, and receive no applicable closure from the supplied cross-cycle index."
+  "verdict_rationale": null
 }

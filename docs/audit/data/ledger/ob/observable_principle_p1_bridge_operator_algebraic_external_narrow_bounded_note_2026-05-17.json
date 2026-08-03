@@ -1,98 +1,43 @@
 {
-  "audit_date": "2026-07-25T01:26:17.353914+00:00",
-  "audit_invocation_history": [
-    "a31c7010bf824c00b859d4720f797d23"
-  ],
-  "audit_invocation_id": "a31c7010bf824c00b859d4720f797d23",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 17,
-        "B": 3,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py"
-    },
-    "criticality": "high",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 10.248,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "6e5c447a0bb8ece3964fa9de8015f1b9d7b938692b54de41482238b046f64431",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "6e5c447a0bb8ece3964fa9de8015f1b9d7b938692b54de41482238b046f64431",
-    "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 37
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-800205e4",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The algebraic counterexample closes P1\u2013P3, but the full bounded-negative chain does not: T6 cannot verify the cited ledger statuses, and the packet does not discharge the required stress tests for the claimed route boundary.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
-  "claim_scope": "Finite-block audit of determinant factorization, existential non-additivity of F_p=r^p, and the claimed non-closure of the three named operator-algebraic sub-routes.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T01:26:17.353914+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 10,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 10.248,
-  "load_bearing_step": "The family F_p[J]=r(J)^p factorizes multiplicatively when r(J_A\u2295J_B)=r_A r_B but, for every p\u22600, is not globally block-additive.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "b74fd67edcdd62419f802729b02627b7aecd1fdc5295daa29205f27bf4ce1abc",
   "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: include docs/audit/data/audit_ledger.json in the runner checkout or make T6 consume authenticated packet evidence, rerun it, and supply complete N1\u2013N8 evidence before seeking a clean bounded-negative verdict.",
-  "open_dependency_paths": [
-    "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-    "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
-    "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md"
-  ],
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
   "previous_audits": [
     {
       "archived_at": "2026-05-24T16:12:11.800943+00:00",
@@ -221,19 +166,111 @@
         "total_pass": 29
       },
       "verdict_rationale": "The load-bearing step is an elementary algebraic separation, not a definition, external comparator, tuned numerical match, or imported open dependency. The runner source performs actual symbolic/rational determinant, tensor-trace, logarithm, and F_p defect checks; its ledger and source-boundary checks are non-load-bearing artifact checks. The source note is scoped as a bounded negative result for this operator-algebraic scaffold and explicitly does not claim P1 closure or a global no-go beyond the stated primitives."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:24.819674+00:00",
+      "audit_date": "2026-07-25T01:26:17.353914+00:00",
+      "audit_invocation_history": [
+        "a31c7010bf824c00b859d4720f797d23"
+      ],
+      "audit_invocation_id": "a31c7010bf824c00b859d4720f797d23",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 17,
+            "B": 3,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py"
+        },
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.248,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "6e5c447a0bb8ece3964fa9de8015f1b9d7b938692b54de41482238b046f64431",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "6e5c447a0bb8ece3964fa9de8015f1b9d7b938692b54de41482238b046f64431",
+        "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 37
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-800205e4",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic counterexample closes P1\u2013P3, but the full bounded-negative chain does not: T6 cannot verify the cited ledger statuses, and the packet does not discharge the required stress tests for the claimed route boundary.",
+      "claim_scope": "Finite-block audit of determinant factorization, existential non-additivity of F_p=r^p, and the claimed non-closure of the three named operator-algebraic sub-routes.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T01:26:17.353914+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The family F_p[J]=r(J)^p factorizes multiplicatively when r(J_A\u2295J_B)=r_A r_B but, for every p\u22600, is not globally block-additive.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include docs/audit/data/audit_ledger.json in the runner checkout or make T6 consume authenticated packet evidence, rerun it, and supply complete N1\u2013N8 evidence before seeking a clean bounded-negative verdict.",
+      "open_dependency_paths": [
+        "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+        "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
+        "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The determinant and power identities establish the finite-block counterexample at class (A), supporting only the narrow statement that multiplicative factorization alone does not imply block additivity. A clean bounded-negative verdict is unsupported: N1 contains only three author-selected routes, while N2 wall independence, N3 hidden-admission scanning, N4 residual matching, N5 five-resolution rhetoric testing, N6 partial-closure disposition, N7 independent steelman resolution, and N8 cross-cycle disposition are not discharged. The completed runner reports 26 passes and one artifact failure because T6 cannot access the ledger, while the packet supplies no one-hop authorities for the trace, cluster, and Reeh-Schlieder claims. The result is therefore conditional on artifact repair and full negative-claim stress testing, not a no-go against all operator-algebraic derivations."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 26,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 26
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
   "title": "Observable Principle P1 Bridge \u2014 Operator-Algebraic External Narrow Bounded Note",
   "transitive_descendants": 37,
-  "verdict_rationale": "The determinant and power identities establish the finite-block counterexample at class (A), supporting only the narrow statement that multiplicative factorization alone does not imply block additivity. A clean bounded-negative verdict is unsupported: N1 contains only three author-selected routes, while N2 wall independence, N3 hidden-admission scanning, N4 residual matching, N5 five-resolution rhetoric testing, N6 partial-closure disposition, N7 independent steelman resolution, and N8 cross-cycle disposition are not discharged. The completed runner reports 26 passes and one artifact failure because T6 cannot access the ledger, while the packet supplies no one-hop authorities for the trace, cluster, and Reeh-Schlieder claims. The result is therefore conditional on artifact repair and full negative-claim stress testing, not a no-go against all operator-algebraic derivations."
+  "verdict_rationale": null
 }

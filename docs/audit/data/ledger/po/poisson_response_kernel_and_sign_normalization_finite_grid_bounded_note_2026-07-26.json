@@ -1,115 +1,153 @@
 {
-  "audit_date": "2026-07-29T17:29:37.948056+00:00",
-  "audit_invocation_history": [
-    "ace0d86de0694a4c98b5b58bc2db91ba",
-    "37b63746af35406a9a9c74dbd4bf4fb5"
-  ],
-  "audit_invocation_id": "37b63746af35406a9a9c74dbd4bf4fb5",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/frontier_self_consistent_field_equation.py": "9e49b83bb9ce50ecdff58092da859dd2ee5b5d2558bf428d0c840b38be4af4f6"
-    },
-    "load_bearing_score": 10.126,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_self_consistent_field_equation.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "sha_mismatch",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "9714bfc547816059745b009ddba47db626444270e34e00aae08319cd2b5d1da2",
-        "cache_status": "ok"
-      },
-      "scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "24b738ceff61113baa33f840adb0832a5c4cb97a9dbbbecc6e0e36cd39ea47cc",
-    "runner_path": "scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 789
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260729-1c7774c8",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite computations are internally consistent, but the clean negative-claim gate lacks an independent execution or retained authority resolving the amplitude-resolvent steelman against the point-response mismatch.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "poisson_response_kernel_and_sign_normalization_finite_grid_bounded_note_2026-07-26",
-  "claim_scope": "Finite-grid checks of three N=10 response columns at h=1e-3, N=20 correlation selectivity, and sign-normalized deterministic-operator rankings at N=20 and N=24 under the supplied Dirichlet-lattice protocol.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T17:29:37.948056+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_self_consistent_field_equation.py"
   ],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 10.131,
-  "load_bearing_step": "The runner computes matched response-column residuals above 0.998, shows that the 0.93 correlation criterion admits p=2.805, and after per-operator source-sign normalization ranks Poisson third at N=20 and N=24.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls"
-  ],
   "note_hash": "13865f23caa6947ed7986f841cc3ae4f22326aa53362a263af16cdcf9e93bc1f",
   "note_path": "docs/POISSON_RESPONSE_KERNEL_AND_SIGN_NORMALIZATION_FINITE_GRID_BOUNDED_NOTE_2026-07-26.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: add an independent live execution or retained authority resolving the amplitude-resolvent steelman against the point-response mismatch.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
-  "previous_audits": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-08-03T07:42:26.981190+00:00",
+      "audit_date": "2026-07-29T17:29:37.948056+00:00",
+      "audit_invocation_history": [
+        "ace0d86de0694a4c98b5b58bc2db91ba",
+        "37b63746af35406a9a9c74dbd4bf4fb5"
+      ],
+      "audit_invocation_id": "37b63746af35406a9a9c74dbd4bf4fb5",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/frontier_self_consistent_field_equation.py": "9e49b83bb9ce50ecdff58092da859dd2ee5b5d2558bf428d0c840b38be4af4f6"
+        },
+        "load_bearing_score": 10.126,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_self_consistent_field_equation.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "sha_mismatch",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "9714bfc547816059745b009ddba47db626444270e34e00aae08319cd2b5d1da2",
+            "cache_status": "ok"
+          },
+          "scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "24b738ceff61113baa33f840adb0832a5c4cb97a9dbbbecc6e0e36cd39ea47cc",
+        "runner_path": "scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 789
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260729-1c7774c8",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite computations are internally consistent, but the clean negative-claim gate lacks an independent execution or retained authority resolving the amplitude-resolvent steelman against the point-response mismatch.",
+      "claim_scope": "Finite-grid checks of three N=10 response columns at h=1e-3, N=20 correlation selectivity, and sign-normalized deterministic-operator rankings at N=20 and N=24 under the supplied Dirichlet-lattice protocol.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T17:29:37.948056+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner computes matched response-column residuals above 0.998, shows that the 0.93 correlation criterion admits p=2.805, and after per-operator source-sign normalization ranks Poisson third at N=20 and N=24.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add an independent live execution or retained authority resolving the amplitude-resolvent steelman against the point-response mismatch.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 12,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: N1 presents eight distinct finite attacks, N2 separates the three numerical questions, N3 exposes the conditions, N4 uses no prior no-go witness, N5 bounds the rhetoric, N6 preserves partial positive results, and N8 supplies no applicable echo, but N7 lacks an independent resolution surface. Why this blocks: the mandatory clean-verdict negative-claim gate cannot independently close N7, although all 16 completed runner checks are internally consistent and the code computes the reported results. Repair target: add a second independent executable or retained-authority surface testing the density-response-versus-amplitude-resolvent distinction and naming the point-response mismatch. Claim boundary until fixed: the completed finite-grid rows may be reported as a stretch attempt with an honest N7 residual, but not as audited clean."
+    }
+  ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 3,
-    "B": 1,
-    "C": 12,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 16
+    "total_pass": 0
   },
   "runner_path": "scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py",
   "title": "Poisson Response-Kernel and Sign-Normalization Finite-Grid Diagnostic",
   "transitive_descendants": 792,
-  "verdict_rationale": "Issue: N1 presents eight distinct finite attacks, N2 separates the three numerical questions, N3 exposes the conditions, N4 uses no prior no-go witness, N5 bounds the rhetoric, N6 preserves partial positive results, and N8 supplies no applicable echo, but N7 lacks an independent resolution surface. Why this blocks: the mandatory clean-verdict negative-claim gate cannot independently close N7, although all 16 completed runner checks are internally consistent and the code computes the reported results. Repair target: add a second independent executable or retained-authority surface testing the density-response-versus-amplitude-resolvent distinction and naming the point-response mismatch. Claim boundary until fixed: the completed finite-grid rows may be reported as a stretch attempt with an honest N7 residual, but not as audited clean."
+  "verdict_rationale": null
 }

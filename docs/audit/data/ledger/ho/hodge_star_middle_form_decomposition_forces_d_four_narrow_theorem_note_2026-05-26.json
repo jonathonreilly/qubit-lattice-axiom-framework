@@ -1,90 +1,42 @@
 {
-  "audit_date": "2026-07-25T15:17:05.671687+00:00",
-  "audit_invocation_history": [
-    "4ebe1a524c804717902d04af3c1b054e"
-  ],
-  "audit_invocation_id": "4ebe1a524c804717902d04af3c1b054e",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 15,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "3ec3719443764a4a2dadca3b839f3e46ae820687e8242957cc4afb1083a13332",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "3ec3719443764a4a2dadca3b839f3e46ae820687e8242957cc4afb1083a13332",
-    "runner_path": "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-91301acb",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The source presents the decisive degree argument, but the restricted packet clips the current-cycle runner output before the load-bearing H1\u2013H5 checks. Complete execution evidence is therefore missing from the audit chain.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26",
-  "claim_scope": "Standalone theorem that the Hodge star gives a non-vacuous eigenspace decomposition of 2-forms exactly in d=4, with 3-dimensional real \u00b11 eigenspaces in Riemannian signature and complex \u00b1i eigenspaces in Lorentzian signature.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-25T15:17:05.671687+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Because * maps \u039b\u00b2(R^d) to \u039b^(d\u22122)(R^d), it is an endomorphism of \u039b\u00b2 exactly when d\u22122=2, equivalently d=4.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "93cfa8a18f49dd9b0a1929f2ad6b0059f4a6272a7857a133f9229e22e884195d",
   "note_path": "docs/HODGE_STAR_MIDDLE_FORM_DECOMPOSITION_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the restricted packet with complete, unclipped current-cycle runner stdout covering the load-bearing H1\u2013H5 checks and summary.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -133,19 +85,104 @@
         "total_pass": 178
       },
       "verdict_rationale": "The row closes as a standalone Hodge-star linear-algebra theorem. The source's load-bearing step is the complementary-degree map k -> d-k and the standard star-square identity; the exact runner verifies source-target dimensions, d=4 uniqueness for k=2, the explicit 4D Riemannian Hodge action, orthonormal +/- eigenbasis, trace/eigenvalue multiplicities, and d!=4 counterfactuals with PASS=178 FAIL=0. Residual risk is downstream overuse: this does not identify a framework gauge curvature, derive Wick rotation or d=4 from axioms, or prove Yang-Mills/instanton/Donaldson/twistor consequences."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:20.576231+00:00",
+      "audit_date": "2026-07-25T15:17:05.671687+00:00",
+      "audit_invocation_history": [
+        "4ebe1a524c804717902d04af3c1b054e"
+      ],
+      "audit_invocation_id": "4ebe1a524c804717902d04af3c1b054e",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 15,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "3ec3719443764a4a2dadca3b839f3e46ae820687e8242957cc4afb1083a13332",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "3ec3719443764a4a2dadca3b839f3e46ae820687e8242957cc4afb1083a13332",
+        "runner_path": "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-91301acb",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source presents the decisive degree argument, but the restricted packet clips the current-cycle runner output before the load-bearing H1\u2013H5 checks. Complete execution evidence is therefore missing from the audit chain.",
+      "claim_scope": "Standalone theorem that the Hodge star gives a non-vacuous eigenspace decomposition of 2-forms exactly in d=4, with 3-dimensional real \u00b11 eigenspaces in Riemannian signature and complex \u00b1i eigenspaces in Lorentzian signature.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-25T15:17:05.671687+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Because * maps \u039b\u00b2(R^d) to \u039b^(d\u22122)(R^d), it is an endomorphism of \u039b\u00b2 exactly when d\u22122=2, equivalently d=4.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the restricted packet with complete, unclipped current-cycle runner stdout covering the load-bearing H1\u2013H5 checks and summary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 178,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 178
+      },
+      "verdict_rationale": "The source proof is a genuine class-(A) exterior-degree argument, and the supplied runner source implements exact symbolic checks rather than merely printing expected constants. However, the authenticated current-cycle stdout is clipped before the principal endomorphism, square-identity, and eigenspace checks, so the packet expressly forbids an audited-clean result until complete execution evidence is supplied. The d\u22604 statement is retained only as the narrow derived boundary that this Hodge star is not an endomorphism of \u039b\u00b2, not as a broader physical no-go."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 178,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 178
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py",
   "title": "Hodge Star Middle-Form Self-Dual/Anti-Self-Dual Decomposition Forces `d = 4` Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": "The source proof is a genuine class-(A) exterior-degree argument, and the supplied runner source implements exact symbolic checks rather than merely printing expected constants. However, the authenticated current-cycle stdout is clipped before the principal endomorphism, square-identity, and eigenspace checks, so the packet expressly forbids an audited-clean result until complete execution evidence is supplied. The d\u22604 statement is retained only as the narrow derived boundary that this Hodge star is not an endomorphism of \u039b\u00b2, not as a broader physical no-go."
+  "verdict_rationale": null
 }

@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-25T04:14:04.615210+00:00",
-  "audit_invocation_history": [
-    "05828dd481a44b29acece29a2f87f74e"
-  ],
-  "audit_invocation_id": "05828dd481a44b29acece29a2f87f74e",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 7,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_arrow_from_record_formation_2026_06_05.py"
-    },
-    "criticality": "high",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 12.044,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_arrow_from_record_formation_2026_06_05.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "d1306f32dc634dded2c9263152084ffd2533cf3d0cb7bf7c29d635532de5b2a9",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "d1306f32dc634dded2c9263152084ffd2533cf3d0cb7bf7c29d635532de5b2a9",
-    "runner_path": "scripts/frontier_arrow_from_record_formation_2026_06_05.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 65
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-b9395dd0",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite sequential controlled-flip calculation closes, but the packet supplies no bridge identifying its blank-fragment, low-redundancy boundary with the thermodynamic Past Hypothesis or proving that boundary is the unique irreducible residual.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05",
-  "claim_scope": "On the explicit 1+5-qubit sequential controlled-flip schedule, redundancy rises from the blank product state, falls from the GHZ and time-reversed controls, and is flat for I/d; identification of the blank-state condition with the thermodynamic Past Hypothesis and a universal-floor residual remains conditional.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T04:14:04.615210+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 12,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 12.044,
-  "load_bearing_step": "With the dynamics held fixed, the increase, decrease, or absence of redundant records is determined by the selected initial state, which the note then identifies with a Past-Hypothesis residual.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "3ea63b519ddeb481d3d5e619f34054ef0f1954edc9fd9dcdada31248f499de7d",
   "note_path": "docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: restrict the retained statement to the explicit sequential controlled-flip schedule and replace the Past-Hypothesis/universal-floor identification with a named open thermodynamic bridge; add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the row for audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -270,6 +221,92 @@
         "total_pass": 20
       },
       "verdict_rationale": "The runner genuinely computes the advertised finite-model redundancy profiles rather than printing their values, although its Born-typicality PASS is hard-coded. The Past-Hypothesis identification does not follow: unitary evolution preserves global von Neumann entropy, the high-record GHZ control is as globally pure as the blank state, and R_tot is a sum of marginal entropies rather than a general record-information functional. The scheduled record-write Hamiltonians and blank-fragment boundary are supplied model structure, not consequences of the accepted axioms, and the finite calculation cannot establish the claimed universality over all time-symmetric dynamics. For N1\u2013N8, boundary-state, alternative-dynamics, entropy-coarse-graining, and alternative-record-functional routes remain open; the independent walls are the missing low-record-to-macroentropy bridge and the unsupplied dynamics, the source's admission/boundary rhetoric exposes both, no prior residual witness closes them, only a finite six-qubit resolution is tested, no indexed premise or cross-cycle echo supplies the bridge, and the strongest exact-reversal steelman establishes record dependence only."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:06.647399+00:00",
+      "audit_date": "2026-07-25T04:14:04.615210+00:00",
+      "audit_invocation_history": [
+        "05828dd481a44b29acece29a2f87f74e"
+      ],
+      "audit_invocation_id": "05828dd481a44b29acece29a2f87f74e",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 7,
+            "D": 2
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_arrow_from_record_formation_2026_06_05.py"
+        },
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 12.044,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_arrow_from_record_formation_2026_06_05.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "d1306f32dc634dded2c9263152084ffd2533cf3d0cb7bf7c29d635532de5b2a9",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "d1306f32dc634dded2c9263152084ffd2533cf3d0cb7bf7c29d635532de5b2a9",
+        "runner_path": "scripts/frontier_arrow_from_record_formation_2026_06_05.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 65
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-b9395dd0",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite sequential controlled-flip calculation closes, but the packet supplies no bridge identifying its blank-fragment, low-redundancy boundary with the thermodynamic Past Hypothesis or proving that boundary is the unique irreducible residual.",
+      "claim_scope": "On the explicit 1+5-qubit sequential controlled-flip schedule, redundancy rises from the blank product state, falls from the GHZ and time-reversed controls, and is flat for I/d; identification of the blank-state condition with the thermodynamic Past Hypothesis and a universal-floor residual remains conditional.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T04:14:04.615210+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "With the dynamics held fixed, the increase, decrease, or absence of redundant records is determined by the selected initial state, which the note then identifies with a Past-Hypothesis residual.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: restrict the retained statement to the explicit sequential controlled-flip schedule and replace the Past-Hypothesis/universal-floor identification with a named open thermodynamic bridge; add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the row for audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 13,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "Issue: the runner verifies the finite record-correlation profiles, but it does not derive the identification of the blank low-record product state with the thermodynamic Past Hypothesis or the claimed irreducible universal-floor residual; both the blank and GHZ controls are globally pure, and the executable source yields 19 passes rather than the note's stated 20. Why this blocks: the calculation establishes initial-state dependence for one supplied record-production schedule, not a thermodynamic entropy bridge or uniqueness theorem for the residual. N1 fails because fewer than five distinct alternative mechanisms are tested; N2 has one stated residual, N3 exposes the separately supplied dynamics and missing entropy/readout bridge, N4 has no one-hop witness, N5 leaves the \u201conly\u201d and \u201cirreducible\u201d rhetoric unresolved across scales, N6 supplies no closing primitive, N7 steelmans only the finite-model result, and N8 supplies no applicable retirement of the missing bridge. Repair target and claim boundary until fixed: derive a retained coarse-graining/observable theorem connecting low redundancy to the thermodynamic Past Hypothesis and establish uniqueness beyond this schedule; until then retain only the explicit 1+5-qubit trajectory result."
     }
   ],
   "prose_corrections": [],
@@ -284,14 +321,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 6,
+    "A": 0,
     "B": 0,
-    "C": 13,
+    "C": 0,
     "D": 0,
-    "total_pass": 19
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_arrow_from_record_formation_2026_06_05.py",
   "title": "Arrow Of Time From Record Formation, Modulo The Past Hypothesis (Bounded)",
   "transitive_descendants": 65,
-  "verdict_rationale": "Issue: the runner verifies the finite record-correlation profiles, but it does not derive the identification of the blank low-record product state with the thermodynamic Past Hypothesis or the claimed irreducible universal-floor residual; both the blank and GHZ controls are globally pure, and the executable source yields 19 passes rather than the note's stated 20. Why this blocks: the calculation establishes initial-state dependence for one supplied record-production schedule, not a thermodynamic entropy bridge or uniqueness theorem for the residual. N1 fails because fewer than five distinct alternative mechanisms are tested; N2 has one stated residual, N3 exposes the separately supplied dynamics and missing entropy/readout bridge, N4 has no one-hop witness, N5 leaves the \u201conly\u201d and \u201cirreducible\u201d rhetoric unresolved across scales, N6 supplies no closing primitive, N7 steelmans only the finite-model result, and N8 supplies no applicable retirement of the missing bridge. Repair target and claim boundary until fixed: derive a retained coarse-graining/observable theorem connecting low redundancy to the thermodynamic Past Hypothesis and establish uniqueness beyond this schedule; until then retain only the explicit 1+5-qubit trajectory result."
+  "verdict_rationale": null
 }

@@ -1,157 +1,31 @@
 {
-  "audit_date": "2026-07-29T22:33:49.349866+00:00",
-  "audit_invocation_history": [
-    "e092d850117e434ba020b91a30c0a710"
-  ],
-  "audit_invocation_id": "e092d850117e434ba020b91a30c0a710",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 13,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "b5690e23867f6de4b56e0608554d88906d31d79a2aef05ceefbf162beb21c407",
-      "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": "7fcdfa92751f29eb682de885a11a1d2fffcfea46f896241cbf2a7504ea320c9b",
-      "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
-      "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
-      "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
-      "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py": "2c0548a485e40f440f4043248cd8cb28df3fb5ca5b3326f5a08e3ba2bef238e8",
-      "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py": "a94dd7345a7a0e36034acaa89bcf13d3a4db16b588f6db145fa84abda65066e3",
-      "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py": "1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721",
-      "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py": "86a68b339ce0d69b660dd107633ba4a055fd981a3df98d7e864372ecf46797cb",
-      "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py": "a99e46182f9f2be89b8eee139b6c5c3617720e4bb6521058ac85e6048c0260c4"
-    },
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "sha_mismatch",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "0cd4dd2cd40a18d52651737a7d8837f59acfd465136b525b13ea1f9e8f6eb4cf",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "5b5fcf52d1da14dea9d1cfb79d0433313c47eedbd76b4a2370461d87b9fe6c35",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "2c0548a485e40f440f4043248cd8cb28df3fb5ca5b3326f5a08e3ba2bef238e8",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "a94dd7345a7a0e36034acaa89bcf13d3a4db16b588f6db145fa84abda65066e3",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "86a68b339ce0d69b660dd107633ba4a055fd981a3df98d7e864372ecf46797cb",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "a99e46182f9f2be89b8eee139b6c5c3617720e4bb6521058ac85e6048c0260c4",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "5b5fcf52d1da14dea9d1cfb79d0433313c47eedbd76b4a2370461d87b9fe6c35",
-    "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-d56f1ea7",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The current primary runner imports `transfer_from_packet`, which the supplied helper does not export, and exits before executing any check. Without the transfer construction, the claimed Perron/Jacobi separation is not independently verified.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19",
-  "claim_scope": "Finite truncated-box certificate that the specified retained first-sector projection and completed three-sample triple do not determine higher-tail Perron/Jacobi data among the two explicit factorized-class extensions constructed by the runner.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T22:33:49.349866+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
@@ -164,19 +38,16 @@
     "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
     "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The zero and positive decaying-tail extensions agree on the specified first-sector packet and completed three-sample triple but induce different Perron/Perron-Jacobi data for the same source operator J.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "82ae06cfccb5cd2bb1a8a6a5e8a31e299a0731414e3dee500adc0a6ebbda6f6d",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TAIL_UNDERDETERMINATION_THEOREM_NOTE_2026-04-19.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: restore or export `transfer_from_packet`, rerun the exact primary artifact, and independently recompute the eigenvalue, moment, and Jacobi separations.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -314,6 +185,172 @@
         "total_pass": 6
       },
       "verdict_rationale": "The primary runner is not a print-only certificate: it constructs the two packets, forms the transfer matrices, computes eigenpairs, moments, and Jacobi coefficients, and asserts both equality on retained data and separation in Perron/Jacobi readouts. The load-bearing helper path computes retained packet, sampling, Wilson coefficient, recurrence, and eigen/Jacobi primitives rather than importing the contested conclusion; hard-coded expected values in helper main blocks are not on the parent runner's load-bearing path. The note's boundary is narrow and matches the executable evidence: it claims only finite underdetermination inside the two constructed extensions, not a full Wilson-environment or continuum theorem."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.732102+00:00",
+      "audit_date": "2026-07-29T22:33:49.349866+00:00",
+      "audit_invocation_history": [
+        "e092d850117e434ba020b91a30c0a710"
+      ],
+      "audit_invocation_id": "e092d850117e434ba020b91a30c0a710",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 13,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "b5690e23867f6de4b56e0608554d88906d31d79a2aef05ceefbf162beb21c407",
+          "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": "7fcdfa92751f29eb682de885a11a1d2fffcfea46f896241cbf2a7504ea320c9b",
+          "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
+          "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+          "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+          "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py": "2c0548a485e40f440f4043248cd8cb28df3fb5ca5b3326f5a08e3ba2bef238e8",
+          "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py": "a94dd7345a7a0e36034acaa89bcf13d3a4db16b588f6db145fa84abda65066e3",
+          "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py": "1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721",
+          "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py": "86a68b339ce0d69b660dd107633ba4a055fd981a3df98d7e864372ecf46797cb",
+          "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py": "a99e46182f9f2be89b8eee139b6c5c3617720e4bb6521058ac85e6048c0260c4"
+        },
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "sha_mismatch",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "0cd4dd2cd40a18d52651737a7d8837f59acfd465136b525b13ea1f9e8f6eb4cf",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "5b5fcf52d1da14dea9d1cfb79d0433313c47eedbd76b4a2370461d87b9fe6c35",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "2c0548a485e40f440f4043248cd8cb28df3fb5ca5b3326f5a08e3ba2bef238e8",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "a94dd7345a7a0e36034acaa89bcf13d3a4db16b588f6db145fa84abda65066e3",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "1c10505013301caca0727840d2ece5d1fb83704185865c133de2100eab644721",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "86a68b339ce0d69b660dd107633ba4a055fd981a3df98d7e864372ecf46797cb",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "a99e46182f9f2be89b8eee139b6c5c3617720e4bb6521058ac85e6048c0260c4",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "5b5fcf52d1da14dea9d1cfb79d0433313c47eedbd76b4a2370461d87b9fe6c35",
+        "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260729-d56f1ea7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current primary runner imports `transfer_from_packet`, which the supplied helper does not export, and exits before executing any check. Without the transfer construction, the claimed Perron/Jacobi separation is not independently verified.",
+      "claim_scope": "Finite truncated-box certificate that the specified retained first-sector projection and completed three-sample triple do not determine higher-tail Perron/Jacobi data among the two explicit factorized-class extensions constructed by the runner.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T22:33:49.349866+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The zero and positive decaying-tail extensions agree on the specified first-sector packet and completed three-sample triple but induce different Perron/Perron-Jacobi data for the same source operator J.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: restore or export `transfer_from_packet`, rerun the exact primary artifact, and independently recompute the eigenvalue, moment, and Jacobi separations.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the current primary runner fails at import because `transfer_from_packet` is absent from the supplied helper, so the note\u2019s cached PASS=6 output and Perron/Jacobi figures are stale against the executable artifact. Why this blocks: no transfer, positivity, spectral-separation, moment, or Jacobi check executes; N1 is incomplete, N2 claims no independent wall set, N3\u2019s boundary/sector language is scoped rather than a hidden admission, N4 has no prior-witness residual, N5 lacks live five-resolution testing, N6 supplies no premise repairing the missing function, N7 remains unresolved, and N8 cannot cure the current import failure. Repair target: restore the transfer implementation, obtain a successful current run, and independently cross-check the load-bearing spectral and Jacobi calculations. Claim boundary until fixed: code inspection supports only the intended unchanged retained coordinates under the tail addition, not the full finite transfer/Perron underdetermination certificate."
     }
   ],
   "prose_corrections": [],
@@ -328,5 +365,5 @@
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py",
   "title": "Gauge Vacuum Plaquette First-Sector Tail Underdetermination Live Packet",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the current primary runner fails at import because `transfer_from_packet` is absent from the supplied helper, so the note\u2019s cached PASS=6 output and Perron/Jacobi figures are stale against the executable artifact. Why this blocks: no transfer, positivity, spectral-separation, moment, or Jacobi check executes; N1 is incomplete, N2 claims no independent wall set, N3\u2019s boundary/sector language is scoped rather than a hidden admission, N4 has no prior-witness residual, N5 lacks live five-resolution testing, N6 supplies no premise repairing the missing function, N7 remains unresolved, and N8 cannot cure the current import failure. Repair target: restore the transfer implementation, obtain a successful current run, and independently cross-check the load-bearing spectral and Jacobi calculations. Claim boundary until fixed: code inspection supports only the intended unchanged retained coordinates under the tail addition, not the full finite transfer/Perron underdetermination certificate."
+  "verdict_rationale": null
 }

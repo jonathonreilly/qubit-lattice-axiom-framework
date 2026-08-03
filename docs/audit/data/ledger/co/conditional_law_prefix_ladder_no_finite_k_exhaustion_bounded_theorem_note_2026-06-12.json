@@ -1,93 +1,42 @@
 {
-  "audit_date": "2026-07-29T15:16:00.703071+00:00",
-  "audit_invocation_history": [
-    "edebaeb8fae64168a68af53f39b1b530",
-    "ad0fbd14b6914022962e8da08abc9f00"
-  ],
-  "audit_invocation_id": "ad0fbd14b6914022962e8da08abc9f00",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 5,
-        "D": 1
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "fae50c084efc0e659223a8e51f18b068c5ef914dceeca165ae274ddf5d2f1588",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "fae50c084efc0e659223a8e51f18b068c5ef914dceeca165ae274ddf5d2f1588",
-    "runner_path": "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-e821ca0f",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The code computes the reported finite gaps and adequacy sets, but the packet contains no cited authority deriving the chosen dynamics, Born/Kraus instrument, determinant-phase readout, selector, adequacy threshold, or 300-draw null from accepted premises.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12",
-  "claim_scope": "For the fixed L=3 runner object at cap 12, seeds 4242, 99, and 7, prefix k=2..8, the literal min-active-family and active-family adequacy gate, and the fixed seeded 300-draw permutation null, all observed adequate rows clear the sampled null; higher-k and physical generalizations are excluded.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T15:16:00.703071+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Under the stated family-adequacy gate, every tested seed clears at every adequate k: seed 4242 through k=6, seed 99 through k=4, and seed 7 through k=7.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "fde0049a36205d4d9b88bd260ba37ae46b2719a81a2fedcc11db906d6c0881e3",
   "note_path": "docs/CONDITIONAL_LAW_PREFIX_LADDER_NO_FINITE_K_EXHAUSTION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: split the exact finite runner-defined clearance table from the unclosed physical framework interpretation, and add a dated downstream-hygiene line to this note's own boundary limiting the result to the chosen Hamiltonian, instrument, selector, adequacy rule, and sampled null.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1414,19 +1363,107 @@
         "total_pass": 9
       },
       "verdict_rationale": "The runner is substantive rather than a print-only harness: it constructs the finite Fock-space dynamics, evolves branch trees, computes determinant phases and permutation-null quantiles, and obtains the displayed adequate clear sets. Its result is nevertheless conditional on substantial fixed model machinery and numerical choices that are not derived from the supplied axiom registry or supported by cited one-hop authorities. The no-go discipline gate also fails because a different adequate-family rule is explicitly left open, so the rhetoric cannot be certified as exhaustion-independent even within the broader accessible ladder."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:16.245481+00:00",
+      "audit_date": "2026-07-29T15:16:00.703071+00:00",
+      "audit_invocation_history": [
+        "edebaeb8fae64168a68af53f39b1b530",
+        "ad0fbd14b6914022962e8da08abc9f00"
+      ],
+      "audit_invocation_id": "ad0fbd14b6914022962e8da08abc9f00",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 5,
+            "D": 1
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "fae50c084efc0e659223a8e51f18b068c5ef914dceeca165ae274ddf5d2f1588",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "fae50c084efc0e659223a8e51f18b068c5ef914dceeca165ae274ddf5d2f1588",
+        "runner_path": "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260729-e821ca0f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The code computes the reported finite gaps and adequacy sets, but the packet contains no cited authority deriving the chosen dynamics, Born/Kraus instrument, determinant-phase readout, selector, adequacy threshold, or 300-draw null from accepted premises.",
+      "claim_scope": "For the fixed L=3 runner object at cap 12, seeds 4242, 99, and 7, prefix k=2..8, the literal min-active-family and active-family adequacy gate, and the fixed seeded 300-draw permutation null, all observed adequate rows clear the sampled null; higher-k and physical generalizations are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T15:16:00.703071+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Under the stated family-adequacy gate, every tested seed clears at every adequate k: seed 4242 through k=6, seed 99 through k=4, and seed 7 through k=7.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: split the exact finite runner-defined clearance table from the unclosed physical framework interpretation, and add a dated downstream-hygiene line to this note's own boundary limiting the result to the chosen Hamiltonian, instrument, selector, adequacy rule, and sampled null.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 7,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the runner supports the finite set-equality for its fixed object, but no authority derives its Hamiltonian, K_OCC=5, epsilon=0.6, tau=0.35, Kraus/Born weighting, determinant-phase observable, selector, adequacy cutoff, or seeded null from accepted premises. Why this blocks: the output is conditional finite data about a chosen model and test, not a framework theorem. No-go stress test: N1's five finite routes are checked only within that runner; N2 lacks pairwise closure evidence; N3 exposes inherited Born/instrument machinery as hidden inputs; N4 has no cited witness residuals; N5 is safe only after narrowing \u201cno exhaustion\u201d to the fixed observed rows; N6's approved premises supply none of the choices; N7's different-rule, period, and higher-k steelman remains outside the packet; and N8 supplies no applicable retirement mechanism for the missing runner-to-physics bridge. Repair target: derive those bridges from retained authorities or reframe the result explicitly as a finite runner-defined data lemma; until then, only the listed adequate rows' clearance of the fixed sampled null is supported."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
     "A": 0,
-    "B": 2,
-    "C": 7,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 9
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py",
   "title": "The Record-Conditional Structure Shows No Exhaustion Anywhere in the Adequate-Family Range: Every Seed Clears Its Nulls at Every Adequate k (k_max = 6/4/7), With All Higher-k Entries Family-Inadequate and Reported Only (Bounded)",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the runner supports the finite set-equality for its fixed object, but no authority derives its Hamiltonian, K_OCC=5, epsilon=0.6, tau=0.35, Kraus/Born weighting, determinant-phase observable, selector, adequacy cutoff, or seeded null from accepted premises. Why this blocks: the output is conditional finite data about a chosen model and test, not a framework theorem. No-go stress test: N1's five finite routes are checked only within that runner; N2 lacks pairwise closure evidence; N3 exposes inherited Born/instrument machinery as hidden inputs; N4 has no cited witness residuals; N5 is safe only after narrowing \u201cno exhaustion\u201d to the fixed observed rows; N6's approved premises supply none of the choices; N7's different-rule, period, and higher-k steelman remains outside the packet; and N8 supplies no applicable retirement mechanism for the missing runner-to-physics bridge. Repair target: derive those bridges from retained authorities or reframe the result explicitly as a finite runner-defined data lemma; until then, only the listed adequate rows' clearance of the fixed sampled null is supported."
+  "verdict_rationale": null
 }

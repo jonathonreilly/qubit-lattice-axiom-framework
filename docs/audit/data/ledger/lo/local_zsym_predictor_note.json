@@ -1,114 +1,45 @@
 {
-  "audit_date": "2026-07-30T05:49:18.858068+00:00",
-  "audit_invocation_history": [
-    "bc3031e5bd2d47469b05e461598a37a3"
-  ],
-  "audit_invocation_id": "bc3031e5bd2d47469b05e461598a37a3",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 1
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true,
-      "runner_path": "scripts/local_zsym_predictor.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/independent_generators_heldout.py": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76",
-      "scripts/universality_classifier.py": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de"
-    },
-    "load_bearing_score": 4.822,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/independent_generators_heldout.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76",
-        "cache_status": "ok"
-      },
-      "scripts/local_zsym_predictor.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": "7efceafe49fc20def5688fe57033c946fcb87ef78f84b25f98184607e4aee595",
-        "cache_runner_sha256": "22eff30f19264d69130aae58d132b352ecdc9afcfb01539bbeb16c3176f12ff3",
-        "cache_status": "ok"
-      },
-      "scripts/universality_classifier.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "22eff30f19264d69130aae58d132b352ecdc9afcfb01539bbeb16c3176f12ff3",
-    "runner_path": "scripts/local_zsym_predictor.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 19
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260730-7a9f3f4f",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The runner closes the finite 26-family fit and nine-generator no-refit comparison. Testing one added metric in a fixed three-property AND search does not establish exhaustion of simple or node-level classifiers generally.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "local_zsym_predictor_note",
-  "claim_scope": "Bounded finite search: adding local_z_asym to the fixed three-property AND classifier over 26 swept families is rejected, and no-refit accuracy on nine independent generators remains 6/9, matching the old rule.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-30T05:49:18.858068+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/independent_generators_heldout.py",
     "scripts/universality_classifier.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 4.822,
-  "load_bearing_step": "The best three-property search omits local_z_asym, collapses to the original two informative predictors, and leaves cross-generator accuracy unchanged at 6/9.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary",
-    "no_go_result",
-    "stretch_attempt_negative"
-  ],
   "note_hash": "4a639fc16467e219dec0a60cb1932480ccd55779e4296be926dde4e173f6e24e",
   "note_path": "docs/LOCAL_ZSYM_PREDICTOR_NOTE.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: remove or explicitly demote the simple-classifier exhaustion claims and keep the theorem limited to the registered 26+9 fixed-search result.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -225,19 +156,125 @@
         "total_pass": 0
       },
       "verdict_rationale": "The archived log exactly supports the note's narrowed finite perimeter: local_z_asym does not improve the fixed 3-property classifier search, and cross-generator accuracy stays at 6/9. The original positive-theorem/exhaustion language is too broad, so the audited claim is retyped to bounded_theorem and limited to the registered finite search. Residual risk is the lack of a current completed cache and the absence of runner assertions; the completed archived artifact is sufficient for the narrow historical finite result only."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:24.386457+00:00",
+      "audit_date": "2026-07-30T05:49:18.858068+00:00",
+      "audit_invocation_history": [
+        "bc3031e5bd2d47469b05e461598a37a3"
+      ],
+      "audit_invocation_id": "bc3031e5bd2d47469b05e461598a37a3",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "decoration_candidate": false,
+          "dominant_class": "D",
+          "exists": true,
+          "runner_path": "scripts/local_zsym_predictor.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/independent_generators_heldout.py": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76",
+          "scripts/universality_classifier.py": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de"
+        },
+        "load_bearing_score": 4.822,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/independent_generators_heldout.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "4fa0d5b77877d8d826b0ceb913bacb909f77f2ab27d4c9d7cb625be8f453cd76",
+            "cache_status": "ok"
+          },
+          "scripts/local_zsym_predictor.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": "7efceafe49fc20def5688fe57033c946fcb87ef78f84b25f98184607e4aee595",
+            "cache_runner_sha256": "22eff30f19264d69130aae58d132b352ecdc9afcfb01539bbeb16c3176f12ff3",
+            "cache_status": "ok"
+          },
+          "scripts/universality_classifier.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "22eff30f19264d69130aae58d132b352ecdc9afcfb01539bbeb16c3176f12ff3",
+        "runner_path": "scripts/local_zsym_predictor.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260730-7a9f3f4f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the finite 26-family fit and nine-generator no-refit comparison. Testing one added metric in a fixed three-property AND search does not establish exhaustion of simple or node-level classifiers generally.",
+      "claim_scope": "Bounded finite search: adding local_z_asym to the fixed three-property AND classifier over 26 swept families is rejected, and no-refit accuracy on nine independent generators remains 6/9, matching the old rule.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-30T05:49:18.858068+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The best three-property search omits local_z_asym, collapses to the original two informative predictors, and leaves cross-generator accuracy unchanged at 6/9.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "no_go_result",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: remove or explicitly demote the simple-classifier exhaustion claims and keep the theorem limited to the registered 26+9 fixed-search result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 3,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner genuinely computes local_z_asym, searches the fixed classifier family, and reproduces the finite 6/9 result. N1/N7 leave spectral, path-counting, global-structure, alternate-readout, dynamical, and other classifier-family routes untested; N2-N4 therefore leave the broader exhaustion wall independent of the closed local_z_asym attempt, with no retained residual witness closing it. N5-N8 likewise show that the negative rhetoric exceeds the per-element, per-site, per-mode, and per-block execution because lattice-wide resolution was not executed and no supplied premise, partial-closure candidate, or cross-cycle echo provides the missing enumeration. The finite result is supported, but the broader no-go remains conditional."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 1,
-    "B": 1,
-    "C": 3,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 5
+    "total_pass": 0
   },
   "runner_path": "scripts/local_zsym_predictor.py",
   "title": "Local Z-Asymmetry 3rd Predictor \u2014 NEGATIVE (Hypothesis Rejected)",
   "transitive_descendants": 19,
-  "verdict_rationale": "The runner genuinely computes local_z_asym, searches the fixed classifier family, and reproduces the finite 6/9 result. N1/N7 leave spectral, path-counting, global-structure, alternate-readout, dynamical, and other classifier-family routes untested; N2-N4 therefore leave the broader exhaustion wall independent of the closed local_z_asym attempt, with no retained residual witness closing it. N5-N8 likewise show that the negative rhetoric exceeds the per-element, per-site, per-mode, and per-block execution because lattice-wide resolution was not executed and no supplied premise, partial-closure candidate, or cross-cycle echo provides the missing enumeration. The finite result is supported, but the broader no-go remains conditional."
+  "verdict_rationale": null
 }

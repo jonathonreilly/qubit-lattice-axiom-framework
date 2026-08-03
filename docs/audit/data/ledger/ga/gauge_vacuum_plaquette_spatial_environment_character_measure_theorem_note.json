@@ -1,85 +1,24 @@
 {
-  "audit_date": "2026-07-29T19:39:11.300084+00:00",
-  "audit_invocation_history": [
-    "2d35910e798244a2b9f9e5e9c2e33ace"
-  ],
-  "audit_invocation_id": "2d35910e798244a2b9f9e5e9c2e33ace",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 26,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
-      "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "For every N>=0, real beta, and supplied nonnegative swap-symmetric character-diagonal sequence on B_N, T_beta=M_beta D_beta M_beta has the stated exact entries, positivity, symmetry, rank, kernel, spectral bounds, and definiteness characterization.",
-      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "The finite-truncation SU(3) character-convolution identity and its coefficient-uniqueness, positivity, self-adjointness, and conjugation-symmetry consequences for an abstract normalized sequence, excluding any Wilson-environment identification."
-    },
-    "dep_claim_type": {
-      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
-      "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "positive_theorem",
-      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
-      "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained",
-      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
-    },
-    "deps": [
-      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
-      "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 16.267,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "adc317ebec7341fcf5dd81f371e0d87f653accd0f371cfa5fd4cb4f959c62e26",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "adc317ebec7341fcf5dd81f371e0d87f653accd0f371cfa5fd4cb4f959c62e26",
-    "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 870
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260729-f8e9a57f",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The visible source-local deletion and direct-environment identities and their Monte Carlo implementation close the bounded static target, but the audit chain cannot be certified because two load-bearing authority excerpts are explicitly packet-clipped. Identification with the stripped two-slice residual remains outside scope and open.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-  "claim_scope": "On the finite periodic L_s=3 SU(3) Wilson lattice, exact normalized character-coefficient identities for the 80-plaquette unmarked environment for beta>0, plus beta=6 low-rank Monte Carlo estimates from independent deletion and direct-environment chains; no identification with the stripped two-slice residual.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T19:39:11.300084+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -89,22 +28,19 @@
     "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 13,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 16.271,
-  "load_bearing_step": "Dividing equations (3.1) and (3.2) gives the exact marked-factor deletion identity (3.3) for rho_lambda^env(beta).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls"
-  ],
   "note_hash": "4a75cd1dc686aa5c6093e467e2f0fe61f8f66f776040a52697ceceef06fb606c",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md",
-  "notes_for_re_audit_if_any": "other: regenerate the restricted packet with complete, unclipped text for the temporal-gauge mixed-kernel factorization and SU(3) character-convolution authorities, then rerun the fresh audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -413,16 +349,117 @@
         "total_pass": 9
       },
       "verdict_rationale": "The cited upstream authorities are retained_bounded, and the source note narrows the claim to a finite packet rather than importing the open residual-environment theorem. The runner is not a print-only or hard-coded-value check: it computes the Wilson coefficients from the Schur-Weyl Bessel-determinant formula, checks normalization, positivity, conjugation symmetry, and verifies the finite factorized packet symmetries. The conclusion follows for the bounded packet only, with the actual full spatial-environment identification explicitly left open."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.865687+00:00",
+      "audit_date": "2026-07-29T19:39:11.300084+00:00",
+      "audit_invocation_history": [
+        "2d35910e798244a2b9f9e5e9c2e33ace"
+      ],
+      "audit_invocation_id": "2d35910e798244a2b9f9e5e9c2e33ace",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 26,
+            "D": 2
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "For every N>=0, real beta, and supplied nonnegative swap-symmetric character-diagonal sequence on B_N, T_beta=M_beta D_beta M_beta has the stated exact entries, positivity, symmetry, rank, kernel, spectral bounds, and definiteness characterization.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "The finite-truncation SU(3) character-convolution identity and its coefficient-uniqueness, positivity, self-adjointness, and conjugation-symmetry consequences for an abstract normalized sequence, excluding any Wilson-environment identification."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "positive_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 16.267,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "adc317ebec7341fcf5dd81f371e0d87f653accd0f371cfa5fd4cb4f959c62e26",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "adc317ebec7341fcf5dd81f371e0d87f653accd0f371cfa5fd4cb4f959c62e26",
+        "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 870
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260729-f8e9a57f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The visible source-local deletion and direct-environment identities and their Monte Carlo implementation close the bounded static target, but the audit chain cannot be certified because two load-bearing authority excerpts are explicitly packet-clipped. Identification with the stripped two-slice residual remains outside scope and open.",
+      "claim_scope": "On the finite periodic L_s=3 SU(3) Wilson lattice, exact normalized character-coefficient identities for the 80-plaquette unmarked environment for beta>0, plus beta=6 low-rank Monte Carlo estimates from independent deletion and direct-environment chains; no identification with the stripped two-slice residual.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T19:39:11.300084+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Dividing equations (3.1) and (3.2) gives the exact marked-factor deletion identity (3.3) for rho_lambda^env(beta).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: regenerate the restricted packet with complete, unclipped text for the temporal-gauge mixed-kernel factorization and SU(3) character-convolution authorities, then rerun the fresh audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 13,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The visible source and runner support the bounded static result: equations (3.3) and (4.1) follow algebraically from the environment push-forward, and the code samples both finite-volume ensembles without importing rho values. For the stated negative boundary, the strongest N1/N7 literal-deletion route does not close the N2 compression-order and mixed-link-hypothesis boundary; N3/N5 show that limitation is explicit, N4 provides no matched prior residual, N6 names construction of R_stripped as the next route, and the applicable N8 echo supports keeping equality open rather than asserting a no-go. Nonetheless, the packet preflight reports clipped load-bearing text in two retained authorities, so full restricted-chain verification is unavailable and audited_clean is forbidden pending an unclipped packet."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 8,
+    "A": 0,
     "B": 0,
-    "C": 13,
+    "C": 0,
     "D": 0,
-    "total_pass": 21
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py",
   "title": "Gauge-Vacuum Plaquette Actual Spatial-Environment Character Measure",
@@ -434,5 +471,5 @@
       "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
     }
   ],
-  "verdict_rationale": "The visible source and runner support the bounded static result: equations (3.3) and (4.1) follow algebraically from the environment push-forward, and the code samples both finite-volume ensembles without importing rho values. For the stated negative boundary, the strongest N1/N7 literal-deletion route does not close the N2 compression-order and mixed-link-hypothesis boundary; N3/N5 show that limitation is explicit, N4 provides no matched prior residual, N6 names construction of R_stripped as the next route, and the applicable N8 echo supports keeping equality open rather than asserting a no-go. Nonetheless, the packet preflight reports clipped load-bearing text in two retained authorities, so full restricted-chain verification is unavailable and audited_clean is forbidden pending an unclipped packet."
+  "verdict_rationale": null
 }

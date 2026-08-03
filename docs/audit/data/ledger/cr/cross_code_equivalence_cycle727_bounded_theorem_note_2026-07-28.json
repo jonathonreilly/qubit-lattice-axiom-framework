@@ -1,117 +1,31 @@
 {
-  "audit_date": "2026-08-01T19:36:40.948884+00:00",
-  "audit_invocation_history": [
-    "f34809f7f3064994ace6b268dec8e46d"
-  ],
-  "audit_invocation_id": "f34809f7f3064994ace6b268dec8e46d",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true,
-      "runner_path": "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/frontier_cycle727_cross_code_pullback_analysis_2026_07_28.py": "596ba1a3b9f2f5b2e7fd3b0ac7d1d6884a6c06ba2620e543674cee63324a1ed2",
-      "scripts/frontier_cycle727_cross_code_pullback_core_2026_07_28.py": "a59d8f442ccdff9ab67a2afffe98d4a7ad2f556e6a0360bfbf0a8e9d4fdab76c",
-      "scripts/frontier_cycle727_finite_factorization_2026_07_28.py": "52fedc5d3df325e0a7012f1077c206287fa26a9115bc00dc92afa11cdacc3fa5",
-      "scripts/frontier_cycle727_finite_fixtures_2026_07_28.py": "20bf77931a43d8aeb771f11cc6979fe7e735ef766e738a4004189ef1e612c5dc",
-      "scripts/frontier_cycle727_finite_pauli_tableau_2026_07_28.py": "ad7667133a679e459d1c896dce04c1e4be2e06ca1644d62edbcc7e3090b8a59e"
-    },
-    "load_bearing_score": 1.5,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": "ec65d62191b6b490b2d65942da307ac9584c3b9d0097b000e1369bed6a54ce11",
-        "cache_runner_sha256": "7696f47f761a92f297adc23b1640fd07a4263e96f54e46f2edb17b4e2136d3a8",
-        "cache_status": "ok"
-      },
-      "scripts/frontier_cycle727_cross_code_pullback_analysis_2026_07_28.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_cycle727_cross_code_pullback_core_2026_07_28.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_cycle727_finite_factorization_2026_07_28.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_cycle727_finite_fixtures_2026_07_28.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/frontier_cycle727_finite_pauli_tableau_2026_07_28.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "7696f47f761a92f297adc23b1640fd07a4263e96f54e46f2edb17b4e2136d3a8",
-    "runner_path": "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260801-a64134c3",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite signed-pullback construction and exponent counts close, but the full artifact does not satisfy the mandatory negative-claim closure gate for its fixed-sector no-isometry conclusion. Missing are five distinct route tests, five-resolution rhetoric checks, and complete cross-cycle dispositions grounded in current-cycle evidence.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "cross_code_equivalence_cycle727_bounded_theorem_note_2026-07-28",
-  "claim_scope": "Four explicitly listed finite boxes, one frozen even-CAR dictionary, shape-specific fitted CellEdgeGauge/EulerMarkerGauge/CompanionFixture signed pullbacks in separately supplied even and odd sectors, and the 2^(6N) versus 2^(6N-1) single-sector dimension statement; all uniform, preparational, coherent two-sector, and global-topology extensions are excluded.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "`bounded_theorem`",
-  "claim_type_last_reviewed": "2026-08-01T19:36:40.948884+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_cycle727_cross_code_pullback_analysis_2026_07_28.py",
     "scripts/frontier_cycle727_cross_code_pullback_core_2026_07_28.py",
@@ -119,32 +33,156 @@
     "scripts/frontier_cycle727_finite_fixtures_2026_07_28.py",
     "scripts/frontier_cycle727_finite_pauli_tableau_2026_07_28.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
-  "load_bearing_step": "For each of the four stated shapes, the helper chain constructs a fitted orientation/factorization and verifies that every dictionary row has identical signed pullbacks in both separately supplied parity sectors, with Euler and one-sector companion exponents 6N and 6N-1.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "c658f68950c71e369790c843cf177f1cd3037259d781e3164aad9b7d4188c2a2",
   "note_path": "docs/CROSS_CODE_EQUIVALENCE_CYCLE727_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-  "notes_for_re_audit_if_any": "other: add live current-cycle N1-N8 stress-test evidence for the exact fixed-sector no-isometry boundary, including five distinct route tests, five-resolution rhetoric lines, a steelman resolution, and complete cross-cycle candidate dispositions.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
-  "previous_audits": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-08-03T07:42:16.388265+00:00",
+      "audit_date": "2026-08-01T19:36:40.948884+00:00",
+      "audit_invocation_history": [
+        "f34809f7f3064994ace6b268dec8e46d"
+      ],
+      "audit_invocation_id": "f34809f7f3064994ace6b268dec8e46d",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/frontier_cycle727_cross_code_pullback_analysis_2026_07_28.py": "596ba1a3b9f2f5b2e7fd3b0ac7d1d6884a6c06ba2620e543674cee63324a1ed2",
+          "scripts/frontier_cycle727_cross_code_pullback_core_2026_07_28.py": "a59d8f442ccdff9ab67a2afffe98d4a7ad2f556e6a0360bfbf0a8e9d4fdab76c",
+          "scripts/frontier_cycle727_finite_factorization_2026_07_28.py": "52fedc5d3df325e0a7012f1077c206287fa26a9115bc00dc92afa11cdacc3fa5",
+          "scripts/frontier_cycle727_finite_fixtures_2026_07_28.py": "20bf77931a43d8aeb771f11cc6979fe7e735ef766e738a4004189ef1e612c5dc",
+          "scripts/frontier_cycle727_finite_pauli_tableau_2026_07_28.py": "ad7667133a679e459d1c896dce04c1e4be2e06ca1644d62edbcc7e3090b8a59e"
+        },
+        "load_bearing_score": 1.5,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": "ec65d62191b6b490b2d65942da307ac9584c3b9d0097b000e1369bed6a54ce11",
+            "cache_runner_sha256": "7696f47f761a92f297adc23b1640fd07a4263e96f54e46f2edb17b4e2136d3a8",
+            "cache_status": "ok"
+          },
+          "scripts/frontier_cycle727_cross_code_pullback_analysis_2026_07_28.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_cycle727_cross_code_pullback_core_2026_07_28.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_cycle727_finite_factorization_2026_07_28.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_cycle727_finite_fixtures_2026_07_28.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/frontier_cycle727_finite_pauli_tableau_2026_07_28.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "7696f47f761a92f297adc23b1640fd07a4263e96f54e46f2edb17b4e2136d3a8",
+        "runner_path": "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260801-a64134c3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite signed-pullback construction and exponent counts close, but the full artifact does not satisfy the mandatory negative-claim closure gate for its fixed-sector no-isometry conclusion. Missing are five distinct route tests, five-resolution rhetoric checks, and complete cross-cycle dispositions grounded in current-cycle evidence.",
+      "claim_scope": "Four explicitly listed finite boxes, one frozen even-CAR dictionary, shape-specific fitted CellEdgeGauge/EulerMarkerGauge/CompanionFixture signed pullbacks in separately supplied even and odd sectors, and the 2^(6N) versus 2^(6N-1) single-sector dimension statement; all uniform, preparational, coherent two-sector, and global-topology extensions are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-08-01T19:36:40.948884+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For each of the four stated shapes, the helper chain constructs a fitted orientation/factorization and verifies that every dictionary row has identical signed pullbacks in both separately supplied parity sectors, with Euler and one-sector companion exponents 6N and 6N-1.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: add live current-cycle N1-N8 stress-test evidence for the exact fixed-sector no-isometry boundary, including five distinct route tests, five-resolution rhetoric lines, a steelman resolution, and complete cross-cycle candidate dispositions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 26,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The included primary and helper code genuinely constructs the finite Pauli/tableau objects and recomputes the pullbacks; independent checks confirm the stated N, E, 36N+2E row counts and the even-CAR fixed-sector exponent 6N-1, so the positive finite core is class C rather than a digest-only match. The artifact also asserts the derived negative boundary that a 2^(6N) Euler space cannot map isometrically into a 2^(6N-1) fixed sector, but current-cycle stdout supplies only one dimension check rather than five distinct evidenced N1 routes or the resolution-specific lines required by N5. N2 has one dimension wall, N3 exposes the supplied fixed-sector assumptions, N4 has no cited residual witness, and N6 explicitly leaves the dimension-matched direct-sum route open. The N7 steelman is that coherent two-sector route, while N8 lacks complete executable-evidence dispositions; therefore the finite pullback core survives, but clean ratification of the complete artifact remains conditional on a packet-valid negative-claim stress test."
+    }
+  ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 5,
+    "A": 0,
     "B": 0,
-    "C": 26,
+    "C": 0,
     "D": 0,
-    "total_pass": 31
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py",
   "title": "Cycle 727: finite-box signed reference-to-companion pullback relation",
   "transitive_descendants": 1,
-  "verdict_rationale": "The included primary and helper code genuinely constructs the finite Pauli/tableau objects and recomputes the pullbacks; independent checks confirm the stated N, E, 36N+2E row counts and the even-CAR fixed-sector exponent 6N-1, so the positive finite core is class C rather than a digest-only match. The artifact also asserts the derived negative boundary that a 2^(6N) Euler space cannot map isometrically into a 2^(6N-1) fixed sector, but current-cycle stdout supplies only one dimension check rather than five distinct evidenced N1 routes or the resolution-specific lines required by N5. N2 has one dimension wall, N3 exposes the supplied fixed-sector assumptions, N4 has no cited residual witness, and N6 explicitly leaves the dimension-matched direct-sum route open. The N7 steelman is that coherent two-sector route, while N8 lacks complete executable-evidence dispositions; therefore the finite pullback core survives, but clean ratification of the complete artifact remains conditional on a packet-valid negative-claim stress test."
+  "verdict_rationale": null
 }

@@ -1,83 +1,24 @@
 {
-  "audit_date": "2026-07-29T22:44:22.095734+00:00",
-  "audit_invocation_history": [
-    "35a9103bf180449181eaffdb6787617a"
-  ],
-  "audit_invocation_id": "35a9103bf180449181eaffdb6787617a",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 2,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 13,
-        "D": 1
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier.",
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "bba2a9363a88cd03072e3e2bbee81fa115c8eec99372bb39a6f82c7303e05af5",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "bba2a9363a88cd03072e3e2bbee81fa115c8eec99372bb39a6f82c7303e05af5",
-    "runner_path": "scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-7c966ec7",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The retained character-recurrence authority is clipped, so the imported fusion rules and Wilson-coefficient premises cannot be independently checked from this packet. The runner\u2019s internal algebra therefore cannot establish full authority-level closure.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02",
-  "claim_scope": "The SU(3) seed-kernel identities: spectral flip-evenness, conjugation symmetry of the enumerated Casimir/dimension/fusion profile, the phased-seed odd-part decomposition, and conjugation oddness of determinant phases; the outer-evenness bridge is excluded.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (exact finite theorems plus a graded,",
-  "claim_type_last_reviewed": "2026-07-29T22:44:22.095734+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -86,23 +27,19 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Conjugation invariance of the Casimir, dimension, and retained fusion profile forces real spectral coefficient functions to be flip-even, while the phased seed's odd part is -2 c sin(alpha) Im(chi_F).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "e32df402fc6a937745f95ad5fa1e635d6c8bfc9461c5d8d7c494ad6f612422c1",
   "note_path": "docs/THETA_SEED_SPECTRAL_REALITY_CONJUGATION_SYMMETRIC_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md authority and rerun this audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -163,19 +100,119 @@
         "total_pass": 10
       },
       "verdict_rationale": "The runner performs substantive algebraic and numerical checks rather than merely printing expected results, and the displayed formulas independently support the core spectral and seed-splitting identities. Its finite windows, sample points, and quadrature do not prove that Casimir, dimension, and the two fusion rules exhaust all supplied pure-gauge distinctions. Determinant-phase oddness establishes an example of suitable odd data, not the broader location or uniqueness claim, while the note correctly leaves the semantic outer-evenness bridge unadjudicated."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:30.980373+00:00",
+      "audit_date": "2026-07-29T22:44:22.095734+00:00",
+      "audit_invocation_history": [
+        "35a9103bf180449181eaffdb6787617a"
+      ],
+      "audit_invocation_id": "35a9103bf180449181eaffdb6787617a",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 2,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 13,
+            "D": 1
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "bba2a9363a88cd03072e3e2bbee81fa115c8eec99372bb39a6f82c7303e05af5",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "bba2a9363a88cd03072e3e2bbee81fa115c8eec99372bb39a6f82c7303e05af5",
+        "runner_path": "scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260729-7c966ec7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained character-recurrence authority is clipped, so the imported fusion rules and Wilson-coefficient premises cannot be independently checked from this packet. The runner\u2019s internal algebra therefore cannot establish full authority-level closure.",
+      "claim_scope": "The SU(3) seed-kernel identities: spectral flip-evenness, conjugation symmetry of the enumerated Casimir/dimension/fusion profile, the phased-seed odd-part decomposition, and conjugation oddness of determinant phases; the outer-evenness bridge is excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T22:44:22.095734+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Conjugation invariance of the Casimir, dimension, and retained fusion profile forces real spectral coefficient functions to be flip-even, while the phased seed's odd part is -2 c sin(alpha) Im(chi_F).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md authority and rerun this audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the packet clips the retained character-recurrence authority, so its Wilson-coefficient and fusion-rule premises cannot be independently verified; N1-N3 support only the narrow derived boundary for spectral functions and the enumerated pure-gauge profile, while phased, matter-sector, multi-plaquette, and primitive routes remain explicit or open and the outer-evenness bridge is not promoted. Why this blocks: the ten runner checks support the finite algebra, but N4-N6 leave determinant-phase routing and the bridge, weighting, and readout paths unable to replace the missing authority surface. Repair target: include the complete cited authority and recheck the imported recurrence and Wilson formulas; under N7 the tautology and unproved-bridge steelmen remain bounded by the exact invariance calculation, while N8 contributes no additional consumed cross-cycle exclusion. Claim boundary until fixed: the runner-supported finite SU(3) identities may be cited conditionally, but authority-level chain closure may not."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 10,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 10
+    "total_pass": 0
   },
   "runner_path": "scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py",
   "title": "The Seed-Class Kernel Dissected: Spectrally-Constructed Weights Are Automatically Flip-Even, the Pure-Gauge Supplied Structure Is Exactly Conjugation-Symmetric, a Phased Seed's Odd Direction Is the Real Im-Trace Reweighting, and Conjugation-Odd Data of the Theta Type Live in Determinant-Phase (Mass-Side) Structures (Bounded Theorem)",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the packet clips the retained character-recurrence authority, so its Wilson-coefficient and fusion-rule premises cannot be independently verified; N1-N3 support only the narrow derived boundary for spectral functions and the enumerated pure-gauge profile, while phased, matter-sector, multi-plaquette, and primitive routes remain explicit or open and the outer-evenness bridge is not promoted. Why this blocks: the ten runner checks support the finite algebra, but N4-N6 leave determinant-phase routing and the bridge, weighting, and readout paths unable to replace the missing authority surface. Repair target: include the complete cited authority and recheck the imported recurrence and Wilson formulas; under N7 the tautology and unproved-bridge steelmen remain bounded by the exact invariance calculation, while N8 contributes no additional consumed cross-cycle exclusion. Claim boundary until fixed: the runner-supported finite SU(3) identities may be cited conditionally, but authority-level chain closure may not."
+  "verdict_rationale": null
 }

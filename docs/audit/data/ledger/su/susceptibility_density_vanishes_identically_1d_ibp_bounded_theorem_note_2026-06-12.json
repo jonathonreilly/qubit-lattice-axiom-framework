@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-25T12:48:51.589355+00:00",
-  "audit_invocation_history": [
-    "2d6f957aea744015ab674e4e84dbaf73"
-  ],
-  "audit_invocation_id": "2d6f957aea744015ab674e4e84dbaf73",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 1,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/frontier_susceptibility_density_identity_zero_2026_06_12.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_susceptibility_density_identity_zero_2026_06_12.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "e8be7755c3b70a97e94fc5e7553c3da21d55d9a8d061469ec12647cc6c974df2",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "e8be7755c3b70a97e94fc5e7553c3da21d55d9a8d061469ec12647cc6c974df2",
-    "runner_path": "scripts/frontier_susceptibility_density_identity_zero_2026_06_12.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-f004b985",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The integration-by-parts identity closes exactly for the declared smooth periodic density integral. The stronger inference that nontrivial orbital response requires d \u2265 2 is not established against the note\u2019s acknowledged nonsmooth, boundary, disorder, interaction, and other one-dimensional routes.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12",
-  "claim_scope": "Smooth periodic one-dimensional bands with occupations f(E): the declared thermodynamic density integral vanishes; broader claims about all one-dimensional orbital response are excluded.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T12:48:51.589355+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Integrating the first term by parts over the closed Brillouin zone gives \u222ef(E)E\u2033 dk = \u2212\u222ef\u2032(E)(E\u2032)\u00b2 dk because the periodic boundary term vanishes.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "a250b9fc47f7a754c16248148266cd971c5014653d2cbacbbce754e9a4ae8873",
   "note_path": "docs/SUSCEPTIBILITY_DENSITY_VANISHES_IDENTICALLY_1D_IBP_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: Restrict the title and conclusions to the smooth-periodic one-dimensional density identity, remove or explicitly qualify the d \u2265 2 necessity claim, and re-audit the narrowed note.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -134,19 +85,105 @@
         "total_pass": 23
       },
       "verdict_rationale": "The restricted claim is an algebraic integration-by-parts identity over a smooth periodic 1D band and smooth occupation. The displayed scaling from flux shift to the density object is internally consistent with the declared object, and the vanishing follows from a total derivative, not from fitted numerics or cross-note imports. The source note's No-Go Discipline walls correctly preserve finite-size, nonsmooth, boundary, and higher-dimensional routes rather than overclaiming a broad orbital-response no-go."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:30.599804+00:00",
+      "audit_date": "2026-07-25T12:48:51.589355+00:00",
+      "audit_invocation_history": [
+        "2d6f957aea744015ab674e4e84dbaf73"
+      ],
+      "audit_invocation_id": "2d6f957aea744015ab674e4e84dbaf73",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/frontier_susceptibility_density_identity_zero_2026_06_12.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_susceptibility_density_identity_zero_2026_06_12.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "e8be7755c3b70a97e94fc5e7553c3da21d55d9a8d061469ec12647cc6c974df2",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "e8be7755c3b70a97e94fc5e7553c3da21d55d9a8d061469ec12647cc6c974df2",
+        "runner_path": "scripts/frontier_susceptibility_density_identity_zero_2026_06_12.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-f004b985",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The integration-by-parts identity closes exactly for the declared smooth periodic density integral. The stronger inference that nontrivial orbital response requires d \u2265 2 is not established against the note\u2019s acknowledged nonsmooth, boundary, disorder, interaction, and other one-dimensional routes.",
+      "claim_scope": "Smooth periodic one-dimensional bands with occupations f(E): the declared thermodynamic density integral vanishes; broader claims about all one-dimensional orbital response are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T12:48:51.589355+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Integrating the first term by parts over the closed Brillouin zone gives \u222ef(E)E\u2033 dk = \u2212\u222ef\u2032(E)(E\u2032)\u00b2 dk because the periodic boundary term vanishes.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Restrict the title and conclusions to the smooth-periodic one-dimensional density identity, remove or explicitly qualify the d \u2265 2 necessity claim, and re-audit the narrowed note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The displayed integrand is exactly d[f(E)E\u2032]/dk, so periodicity proves the scoped density identity independently of the numerical runner; the runner genuinely computes 23 consistent class-A checks. N1/N7 leave acknowledged nonsmooth, boundary, disorder, interaction, and higher-dimensional alternatives outside the proof; N2\u2019s walls are explicit, N3 finds no additional load-bearing premise, and N4 matches only the smooth-periodic density residual. N5\u2019s \u201cneeds d \u2265 2\u201d rhetoric exceeds that residual, while N6 preserves alternative routes and N8 supplies no independent cross-cycle closure, so the negative-boundary gate does not support the broader wording."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 23,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 23
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_susceptibility_density_identity_zero_2026_06_12.py",
   "title": "The 1D Orbital Susceptibility Density Vanishes Identically \u2014 an Integration-by-Parts Identity, Confirmed Numerically at 10\u207b\u00b9\u2076 Across the Entire Grid: the Finite-Ring Sign Structure Is Pure Finite-Size Effect, and the Screening Sign Needs d \u2265 2 (Bounded)",
   "transitive_descendants": 0,
-  "verdict_rationale": "The displayed integrand is exactly d[f(E)E\u2032]/dk, so periodicity proves the scoped density identity independently of the numerical runner; the runner genuinely computes 23 consistent class-A checks. N1/N7 leave acknowledged nonsmooth, boundary, disorder, interaction, and higher-dimensional alternatives outside the proof; N2\u2019s walls are explicit, N3 finds no additional load-bearing premise, and N4 matches only the smooth-periodic density residual. N5\u2019s \u201cneeds d \u2265 2\u201d rhetoric exceeds that residual, while N6 preserves alternative routes and N8 supplies no independent cross-cycle closure, so the negative-boundary gate does not support the broader wording."
+  "verdict_rationale": null
 }

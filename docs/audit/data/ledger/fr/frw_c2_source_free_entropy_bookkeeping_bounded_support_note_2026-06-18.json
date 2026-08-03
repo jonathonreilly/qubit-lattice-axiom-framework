@@ -1,90 +1,42 @@
 {
-  "audit_date": "2026-07-25T10:09:26.317716+00:00",
-  "audit_invocation_history": [
-    "541dcc464c6843abbc1daf0fcac3f23a"
-  ],
-  "audit_invocation_id": "541dcc464c6843abbc1daf0fcac3f23a",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 1.5,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "53a359830ce11f6ee53e760808a439471134891df1aad7dd007c1581e5b5d133",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "53a359830ce11f6ee53e760808a439471134891df1aad7dd007c1581e5b5d133",
-    "runner_path": "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-905b5eb3",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The zero-sum update and conserved-ratio identities close algebraically. The g_*S compensation limb assumes, without deriving or citing, the thermal relation S = C g_*S T^3 a^3, so the complete scoped chain does not close from the supplied inputs.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18",
-  "claim_scope": "Finite source-free entropy bookkeeping: conservation under zero-sum component updates, g_*S T^3 a^3 step compensation, and conserved N_B/S when numerator and total entropy are conserved.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T10:09:26.317716+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
-  "load_bearing_step": "Setting S_1 = S_2 in S = C g_*S T^3 a^3 gives T_2/T_1 = (g_1/g_2)^(1/3)(a_1/a_2).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "808c1af3640029a22e48fd008c2920b4b54b6da55126c1c6f831bb52117dd380",
   "note_path": "docs/FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge: cite a retained or accepted authority for S = C g_*S T^3 a^3, including its thermal-domain assumptions, then rerun the audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -131,19 +83,104 @@
         "total_pass": 41
       },
       "verdict_rationale": "The load-bearing proof is ordinary finite algebra, not a definition substitution or tuned numerical match. The runner source actually computes Fraction examples for zero-sum transfers, nonzero injection, g_*S compensation, wrong-scaling failure, and N_B/S behavior; its text checks enforce the stated scope boundary rather than serving as the mathematical proof. This clean verdict applies only to the bounded bookkeeping theorem stated in claim_scope."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.362277+00:00",
+      "audit_date": "2026-07-25T10:09:26.317716+00:00",
+      "audit_invocation_history": [
+        "541dcc464c6843abbc1daf0fcac3f23a"
+      ],
+      "audit_invocation_id": "541dcc464c6843abbc1daf0fcac3f23a",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 1.5,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "53a359830ce11f6ee53e760808a439471134891df1aad7dd007c1581e5b5d133",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "53a359830ce11f6ee53e760808a439471134891df1aad7dd007c1581e5b5d133",
+        "runner_path": "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-905b5eb3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The zero-sum update and conserved-ratio identities close algebraically. The g_*S compensation limb assumes, without deriving or citing, the thermal relation S = C g_*S T^3 a^3, so the complete scoped chain does not close from the supplied inputs.",
+      "claim_scope": "Finite source-free entropy bookkeeping: conservation under zero-sum component updates, g_*S T^3 a^3 step compensation, and conserved N_B/S when numerator and total entropy are conserved.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T10:09:26.317716+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Setting S_1 = S_2 in S = C g_*S T^3 a^3 gives T_2/T_1 = (g_1/g_2)^(1/3)(a_1/a_2).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite a retained or accepted authority for S = C g_*S T^3 a^3, including its thermal-domain assumptions, then rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 26,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The finite-sum and charge-ratio arguments are valid class-A algebra, and the runner's 15 arithmetic checks agree; its other 26 passes are source/firewall checks rather than derivation. The general entropy-density proportionality is supplied without authority, while the runner checks only one hard-coded rational instance. N1-N8 judgment: alternative formulations do not evade the two exact algebraic complements without changing their hypotheses (N1-N2); the source-free and g_*S assumptions are visible rather than hidden (N3); no prior residual is invoked (N4); the negative rhetoric is confined to directly tested complements (N5); no supplied primitive closes the thermal proportionality (N6); treating it as definitional is the strongest unresolved steelman (N7); and the local identities require no cross-cycle negative result (N8)."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 15,
-    "B": 26,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 41
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py",
   "title": "FRW C2 Source-Free Entropy Bookkeeping Bounded Support",
   "transitive_descendants": 1,
-  "verdict_rationale": "The finite-sum and charge-ratio arguments are valid class-A algebra, and the runner's 15 arithmetic checks agree; its other 26 passes are source/firewall checks rather than derivation. The general entropy-density proportionality is supplied without authority, while the runner checks only one hard-coded rational instance. N1-N8 judgment: alternative formulations do not evade the two exact algebraic complements without changing their hypotheses (N1-N2); the source-free and g_*S assumptions are visible rather than hidden (N3); no prior residual is invoked (N4); the negative rhetoric is confined to directly tested complements (N5); no supplied primitive closes the thermal proportionality (N6); treating it as definitional is the strongest unresolved steelman (N7); and the local identities require no cross-cycle negative result (N8)."
+  "verdict_rationale": null
 }

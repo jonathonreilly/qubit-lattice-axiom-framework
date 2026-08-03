@@ -1,130 +1,24 @@
 {
-  "audit_date": "2026-07-30T02:19:50.532102+00:00",
-  "audit_invocation_history": [
-    "179a720448a64488bb81e2039752a482"
-  ],
-  "audit_invocation_id": "179a720448a64488bb81e2039752a482",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/persistent_record_sidebit_certificate.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "persistent_record_matched_compare_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
-    },
-    "dep_claim_type": {
-      "persistent_record_matched_compare_note": "bounded_theorem",
-      "persistent_record_overlap_kernel_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "persistent_record_matched_compare_note": "retained_bounded",
-      "persistent_record_overlap_kernel_note": "retained_bounded"
-    },
-    "deps": [
-      "persistent_record_matched_compare_note",
-      "persistent_record_overlap_kernel_note"
-    ],
-    "helper_runner_hashes": {
-      "scripts/density_matrix_analysis.py": "3f125052aa13fd82e2d4a903d74f657d4d32835bc9f3ffdebd1bb4dfbe6a3d1b",
-      "scripts/entangling_env_decoherence.py": "a3c90f7f1155aa10801d989b40a5a89a22c9859366d7d23573d864e9bb5be76b",
-      "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
-      "scripts/graph_memory_scar_decoherence.py": "3011d38ef33633f3ca28eefe7df947bef520ca1fc56ffe20d9cdee8a8a9e593e",
-      "scripts/persistent_record_matched_compare.py": "85f7c6d986368a231f681f22dbb346fdc2d60d039fb25094009c7afac43f5157",
-      "scripts/persistent_record_overlap_kernel.py": "57d4a199f7a3e735d8c06c28308c3a59adca79aafce29c01fbe72f1b30f8dc40"
-    },
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/density_matrix_analysis.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/entangling_env_decoherence.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/generative_causal_dag_interference.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/graph_memory_scar_decoherence.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      },
-      "scripts/persistent_record_matched_compare.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "85f7c6d986368a231f681f22dbb346fdc2d60d039fb25094009c7afac43f5157",
-        "cache_status": "ok"
-      },
-      "scripts/persistent_record_overlap_kernel.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "57d4a199f7a3e735d8c06c28308c3a59adca79aafce29c01fbe72f1b30f8dc40",
-        "cache_status": "ok"
-      },
-      "scripts/persistent_record_sidebit_certificate.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": "fa09d02c5950844038173b3b54e2f42c77f281d733262b00d00c5608fbbe87be",
-        "cache_runner_sha256": "90cdef20350c7f56c50f645bd08fcccd3ca06c3af527d87666b578eff695ed12",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "90cdef20350c7f56c50f645bd08fcccd3ca06c3af527d87666b578eff695ed12",
-    "runner_path": "scripts/persistent_record_sidebit_certificate.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260730-7f4d4c89",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The displayed inequalities check arithmetically, but the load-bearing amplitudes use `compute_field` from the absent `scripts/two_register_decoherence.py`. That opaque transitive helper prevents source-level verification of the computation.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "persistent_record_sidebit_note",
-  "claim_scope": "Bounded generated-DAG comparison at N=8,12,18, two seeds, and gamma=1.0: whether the persistent side bit improves soft-overlap purity at N=12 and N=18, lacks uniform exact-trace improvement, and remains above node-label purity.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-30T02:19:50.532102+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -133,8 +27,8 @@
     "persistent_record_overlap_kernel_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/persistent_record_overlap_kernel.py",
     "scripts/persistent_record_matched_compare.py",
@@ -143,19 +37,16 @@
     "scripts/generative_causal_dag_interference.py",
     "scripts/graph_memory_scar_decoherence.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "On the bounded matched slice, the side bit improves soft-overlap purity at N=12 and N=18, does not improve exact-trace purity uniformly, and does not beat node-label raw purity.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "stretch_attempt_negative"
-  ],
   "note_hash": "6379c519f5d7ccbd87dca725d29f9453ce55cf94cbb66478d9d0eb5da4e03fa3",
   "note_path": "docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: include the load-bearing transitive helper `scripts/two_register_decoherence.py`, rerun the restricted certificate, and add five route-specific stress tests before retaining the negative conclusion; until then classify it as a stretch-attempt-with-honest-residual.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -336,19 +227,165 @@
         "total_pass": 1
       },
       "verdict_rationale": "The bounded claim closes because the runner computes the node, persistent trace/soft, and side-bit trace/soft rows over the declared finite slice rather than hard-coding the side-bit conclusion. The live output matches the quoted N=8 row exactly and the N=12/N=18 rows within the documented third-decimal drift, preserving the narrow conclusion: side-bit helps the soft-overlap lane at N=12 and N=18, does not uniformly help trace purity, and remains behind node-label raw purity. Residual risk is limited to bounded-slice and stochastic-drift scope, which the audited claim already states."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:26.787917+00:00",
+      "audit_date": "2026-07-30T02:19:50.532102+00:00",
+      "audit_invocation_history": [
+        "179a720448a64488bb81e2039752a482"
+      ],
+      "audit_invocation_id": "179a720448a64488bb81e2039752a482",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/persistent_record_sidebit_certificate.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "persistent_record_matched_compare_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "persistent_record_matched_compare_note": "bounded_theorem",
+          "persistent_record_overlap_kernel_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "persistent_record_matched_compare_note": "retained_bounded",
+          "persistent_record_overlap_kernel_note": "retained_bounded"
+        },
+        "deps": [
+          "persistent_record_matched_compare_note",
+          "persistent_record_overlap_kernel_note"
+        ],
+        "helper_runner_hashes": {
+          "scripts/density_matrix_analysis.py": "3f125052aa13fd82e2d4a903d74f657d4d32835bc9f3ffdebd1bb4dfbe6a3d1b",
+          "scripts/entangling_env_decoherence.py": "a3c90f7f1155aa10801d989b40a5a89a22c9859366d7d23573d864e9bb5be76b",
+          "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+          "scripts/graph_memory_scar_decoherence.py": "3011d38ef33633f3ca28eefe7df947bef520ca1fc56ffe20d9cdee8a8a9e593e",
+          "scripts/persistent_record_matched_compare.py": "85f7c6d986368a231f681f22dbb346fdc2d60d039fb25094009c7afac43f5157",
+          "scripts/persistent_record_overlap_kernel.py": "57d4a199f7a3e735d8c06c28308c3a59adca79aafce29c01fbe72f1b30f8dc40"
+        },
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/density_matrix_analysis.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/entangling_env_decoherence.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/generative_causal_dag_interference.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/graph_memory_scar_decoherence.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          },
+          "scripts/persistent_record_matched_compare.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "85f7c6d986368a231f681f22dbb346fdc2d60d039fb25094009c7afac43f5157",
+            "cache_status": "ok"
+          },
+          "scripts/persistent_record_overlap_kernel.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "57d4a199f7a3e735d8c06c28308c3a59adca79aafce29c01fbe72f1b30f8dc40",
+            "cache_status": "ok"
+          },
+          "scripts/persistent_record_sidebit_certificate.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": "fa09d02c5950844038173b3b54e2f42c77f281d733262b00d00c5608fbbe87be",
+            "cache_runner_sha256": "90cdef20350c7f56c50f645bd08fcccd3ca06c3af527d87666b578eff695ed12",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "90cdef20350c7f56c50f645bd08fcccd3ca06c3af527d87666b578eff695ed12",
+        "runner_path": "scripts/persistent_record_sidebit_certificate.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260730-7f4d4c89",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed inequalities check arithmetically, but the load-bearing amplitudes use `compute_field` from the absent `scripts/two_register_decoherence.py`. That opaque transitive helper prevents source-level verification of the computation.",
+      "claim_scope": "Bounded generated-DAG comparison at N=8,12,18, two seeds, and gamma=1.0: whether the persistent side bit improves soft-overlap purity at N=12 and N=18, lacks uniform exact-trace improvement, and remains above node-label purity.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-30T02:19:50.532102+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On the bounded matched slice, the side bit improves soft-overlap purity at N=12 and N=18, does not improve exact-trace purity uniformly, and does not beat node-label raw purity.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the load-bearing transitive helper `scripts/two_register_decoherence.py`, rerun the restricted certificate, and add five route-specific stress tests before retaining the negative conclusion; until then classify it as a stretch-attempt-with-honest-residual.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the finite inequalities are reproduced, but `setup[\"field\"]` comes from `compute_field` in an unprovided transitive helper. Why this blocks: that helper could alter the amplitudes and comparison, while the N1\u2013N8 stress test also lacks five evidenced alternative routes; N2 has no named independent conditions, N3\u2019s registered/sector hits are non-load-bearing, N4 has no prior residual witness, N5 is limited to executed resolutions, N6/N8 offer no applicable closure mechanism or echo, and N7\u2019s strongest steelman is the opaque field calculation. Repair target: provide `scripts/two_register_decoherence.py`, repeat the restricted source audit, and evidence the required alternative-route checks. Claim boundary until fixed: the displayed numbers may be reported as provisional finite-run output, without source-verified bounded-theorem status or broader negative closure."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 3,
-    "B": 1,
-    "C": 2,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 6
+    "total_pass": 0
   },
   "runner_path": "scripts/persistent_record_sidebit_certificate.py",
   "title": "Persistent Record Side-Bit Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the finite inequalities are reproduced, but `setup[\"field\"]` comes from `compute_field` in an unprovided transitive helper. Why this blocks: that helper could alter the amplitudes and comparison, while the N1\u2013N8 stress test also lacks five evidenced alternative routes; N2 has no named independent conditions, N3\u2019s registered/sector hits are non-load-bearing, N4 has no prior residual witness, N5 is limited to executed resolutions, N6/N8 offer no applicable closure mechanism or echo, and N7\u2019s strongest steelman is the opaque field calculation. Repair target: provide `scripts/two_register_decoherence.py`, repeat the restricted source audit, and evidence the required alternative-route checks. Claim boundary until fixed: the displayed numbers may be reported as provisional finite-run output, without source-verified bounded-theorem status or broader negative closure."
+  "verdict_rationale": null
 }

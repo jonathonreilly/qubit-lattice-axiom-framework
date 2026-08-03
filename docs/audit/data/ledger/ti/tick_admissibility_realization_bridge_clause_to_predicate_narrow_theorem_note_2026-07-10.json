@@ -1,79 +1,24 @@
 {
-  "audit_date": "2026-07-25T20:48:26.083997+00:00",
-  "audit_invocation_history": [
-    "f1ed3b8a8d0c47dbb23c9aa3d880b814"
-  ],
-  "audit_invocation_id": "f1ed3b8a8d0c47dbb23c9aa3d880b814",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 1,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "91c60a02617cecaa9188bba7ba374925872974ac0383a03d9fe89cd882e9ee3a",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "91c60a02617cecaa9188bba7ba374925872974ac0383a03d9fe89cd882e9ee3a",
-    "runner_path": "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-cc48a0f7",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The two positive conditional implications are algebraically supported, but the artifact\u2019s strictness, sharpness, and converse-failure boundaries cannot complete the mandatory rhetoric audit because the current-cycle stdout contains none of the required per-element, per-site, per-mode, per-block, and lattice-wide resolution lines.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10",
-  "claim_scope": "On the stipulated even binary ring, REAL's fixed-assignment and conditioning-faithfulness parts imply covariance with M(U)=0 and off-site support respectively, together with asserted strictness, sharpness, converse-failure, and physical-bridge boundaries.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T20:48:26.083997+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -81,24 +26,19 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Translation invariance makes v_x(d) site-independent, so the site-independent assignment F makes U0 depend only on displacement and hence exactly translation covariant.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "bbd7605e23654b769287b4c2f7de35411cd90ee057c3e6638a2ecc1c237d6c92",
   "note_path": "docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle runner lines testing per_element, per_site, per_mode, per_block, and lattice_wide resolutions for every authenticated N5 phrase group, then re-audit the unchanged scientific scope.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -155,19 +95,116 @@
         "total_pass": 23
       },
       "verdict_rationale": "The analytic covariance argument is a correct algebraic closure, and the runner genuinely computes its finite examples, sharpness witnesses, and gauge constructions rather than merely printing expected results. However, the result is explicitly conditional on the named REAL predicate and other stipulated surface structure. Neither the source note nor its accepted axiom authority derives the existence or physical selection of such a realized tick, so the result cannot serve as the requested physical realization theorem."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:31.080676+00:00",
+      "audit_date": "2026-07-25T20:48:26.083997+00:00",
+      "audit_invocation_history": [
+        "f1ed3b8a8d0c47dbb23c9aa3d880b814"
+      ],
+      "audit_invocation_id": "f1ed3b8a8d0c47dbb23c9aa3d880b814",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 1,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "91c60a02617cecaa9188bba7ba374925872974ac0383a03d9fe89cd882e9ee3a",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "91c60a02617cecaa9188bba7ba374925872974ac0383a03d9fe89cd882e9ee3a",
+        "runner_path": "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-cc48a0f7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The two positive conditional implications are algebraically supported, but the artifact\u2019s strictness, sharpness, and converse-failure boundaries cannot complete the mandatory rhetoric audit because the current-cycle stdout contains none of the required per-element, per-site, per-mode, per-block, and lattice-wide resolution lines.",
+      "claim_scope": "On the stipulated even binary ring, REAL's fixed-assignment and conditioning-faithfulness parts imply covariance with M(U)=0 and off-site support respectively, together with asserted strictness, sharpness, converse-failure, and physical-bridge boundaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T20:48:26.083997+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Translation invariance makes v_x(d) site-independent, so the site-independent assignment F makes U0 depend only on displacement and hence exactly translation covariant.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle runner lines testing per_element, per_site, per_mode, per_block, and lattice_wide resolutions for every authenticated N5 phrase group, then re-audit the unchanged scientific scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 4,
+        "C": 12,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "N1 stress routes are represented by the frame-rigidity algebra, covariance symmetry, finite Givens and identity counterexamples, the weaker modulus observable, and the unproved realization dependency; N2 leaves fixed assignment and conditioning faithfulness as independent walls. N3 exposes the realization admission explicitly rather than hiding it, and N4 has no prior-witness residual to match. N5 cannot be completed because the live stdout lacks every required resolution-class line, while N6 registry and reframe candidates do not supply those missing tests or a physical realization bridge. N7\u2019s strongest sharpness steelman is substantively answered by the displayed counterexamples, and N8 reveals no substitute for the missing current-cycle rhetoric evidence, so clean certification is unavailable."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 7,
-    "B": 4,
-    "C": 12,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 23
+    "total_pass": 0
   },
   "runner_path": "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py",
   "title": "Conditional Equivariant Tick-Realization Lemma on a Binary Ring",
   "transitive_descendants": 0,
-  "verdict_rationale": "N1 stress routes are represented by the frame-rigidity algebra, covariance symmetry, finite Givens and identity counterexamples, the weaker modulus observable, and the unproved realization dependency; N2 leaves fixed assignment and conditioning faithfulness as independent walls. N3 exposes the realization admission explicitly rather than hiding it, and N4 has no prior-witness residual to match. N5 cannot be completed because the live stdout lacks every required resolution-class line, while N6 registry and reframe candidates do not supply those missing tests or a physical realization bridge. N7\u2019s strongest sharpness steelman is substantively answered by the displayed counterexamples, and N8 reveals no substitute for the missing current-cycle rhetoric evidence, so clean certification is unavailable."
+  "verdict_rationale": null
 }

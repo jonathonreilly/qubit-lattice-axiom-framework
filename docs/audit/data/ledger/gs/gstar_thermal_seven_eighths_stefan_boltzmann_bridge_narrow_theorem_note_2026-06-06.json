@@ -1,293 +1,44 @@
 {
-  "audit_date": "2026-07-22T19:45:55.898794+00:00",
-  "audit_invocation_history": [
-    "41b2e8dcc5d04f7bb235860c0abcec6d",
-    "7704248dfc3248bdb09083f8b6c3b579",
-    "bec56cd3a95a4ac6996db369ec6334e8"
-  ],
-  "audit_invocation_id": "bec56cd3a95a4ac6996db369ec6334e8",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, which occurs uniquely at d = 4; there the exact tuple is (7/8, 7/8, 0)."
-    },
-    "dep_claim_type": {
-      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
-    },
-    "deps": [
-      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 12.14,
-    "runner_hash": "b09235f6fbf09865a81414b8855ad9d50f161c0906f72fb77a63ced98b84742a",
-    "transitive_descendants": 797
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-judicial-2-20260722-f721cad1",
-  "auditor_confidence": "judicial",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\u2019s 12 algebraic checks from its 17 note/input-verification checks.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-e2277919\", \"judge\": 1, \"rationale\": \"The source closes the bounded thermal statement: absolute summability permits termwise integration, the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the common isotropic phase-space measure gives the stated per-degree coefficients. The hard-coded parent-inventory checks are downstream and non-load-bearing.\", \"tuple\": [\"second\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-f721cad1\", \"judge\": 2, \"rationale\": \"The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\\u2019s 12 algebraic checks from its 17 note/input-verification checks.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3d7cec70\", \"judge\": 3, \"rationale\": \"Absolute integrability supports termwise integration; the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor gives the per-degree coefficients. These are exact class-A steps under the explicit hypotheses, with 29 runner checks passing and no open dependency. The cited hierarchy theorem and downstream inventory arithmetic are non-load-bearing, so the result is neither conditional nor decoration.\", \"tuple\": [\"hybrid\", \"audited_clean\", \"bounded_theorem\", \"For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-66ebb9d6\", \"judge\": 4, \"rationale\": \"The first position uses the packet\\u2019s canonical scope verbatim. The absolutely summable exponential expansions give the Bose and Fermi integrals, the eta-zeta identity yields their exact 7/8 ratio, and the stated 3+1-dimensional phase-space measure gives the per-degree coefficients. The source\\u2019s exclusions are scope boundaries rather than negative assertions.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-66cb8979\", \"judge\": 5, \"rationale\": \"The packet directly establishes the scoped thermal result: termwise integration gives the Bose and Fermi eta/zeta integrals, eta(4)/zeta(4)=7/8, and the common 3+1-dimensional phase-space factor gives the stated per-degree coefficients. This is a class-A algebraic closure under the explicit massless, zero-chemical-potential hypotheses; the inventory and equilibrium exclusions are non-load-bearing scope boundaries.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}]",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
-  "claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-22T19:45:55.898794+00:00",
-  "claim_type_provenance": "judicial_review",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
-  "cross_confirmation": {
-    "agreement_schema": "audit_tuple_v2",
-    "first_audit": {
-      "audit_date": "2026-07-22T19:33:03.614012+00:00",
-      "audit_invocation_id": "41b2e8dcc5d04f7bb235860c0abcec6d",
-      "auditor": "codex-audit-batch-A-20260722-06984e11",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": true,
-      "chain_closure_explanation": "The exponential-series integration, eta-zeta identity, zeta(4) evaluation, and 3+1-dimensional phase-space normalization jointly yield the stated ratio and absolute coefficients under the explicit thermal hypotheses.",
-      "claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
-      "claim_type": "bounded_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "cross_family",
-      "load_bearing_step": "Using eta(s)=(1-2^(1-s))zeta(s) at s=4 gives I_F=(7/8)I_B, and multiplication by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "notes_for_re_audit_if_any": "A second auditor should recheck zeta(4)=pi^4/90 and the phase-space prefactor independently because the runner assigns those expected expressions directly.",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 12,
-        "B": 17,
-        "C": 0,
-        "D": 0,
-        "total_pass": 29
-      },
-      "verdict": "audited_clean",
-      "verdict_rationale": "The series interchange is justified by absolute integrability, since the integrated absolute terms sum as 6 zeta(4). Independently of the runner, the eta-zeta split gives 7/8, the standard zeta(4) evaluation gives pi^4/90, and spherical 3+1-dimensional phase-space integration gives the prefactor 1/(2 pi^2). The downstream g_*=427/4 arithmetic is non-load-bearing and does not enlarge the audited scope."
-    },
-    "judicial_panel_record_v1": {
-      "cid": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
-      "disagreement_fingerprint": {
-        "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
-        "first_audit_invocation_id": "41b2e8dcc5d04f7bb235860c0abcec6d",
-        "note_hash": "ba90bbb603ce1b887f4db3422b8f264e744627e07310b755a67f289a5a0ca7be",
-        "schema": "judicial_disagreement_fingerprint_v1",
-        "seat_summaries_sha256": "7cc9cb66913cd9e7bf1ed4f1bbc8b55d6224f9a8671c0bac573c60067e44bb6a",
-        "second_audit_invocation_id": "7704248dfc3248bdb09083f8b6c3b579"
-      },
-      "failures": [],
-      "invocation_id": "bec56cd3a95a4ac6996db369ec6334e8",
-      "majority_count": 3,
-      "panel": 1,
-      "result": "majority_candidate",
-      "schema": "judicial_panel_record_v1",
-      "tally": [
-        {
-          "count": 3,
-          "tuple": [
-            "first",
-            "audited_clean",
-            "bounded_theorem",
-            "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
-            "A",
-            null,
-            []
-          ]
-        },
-        {
-          "count": 1,
-          "tuple": [
-            "second",
-            "audited_clean",
-            "bounded_theorem",
-            "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
-            "A",
-            null,
-            []
-          ]
-        },
-        {
-          "count": 1,
-          "tuple": [
-            "hybrid",
-            "audited_clean",
-            "bounded_theorem",
-            "For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.",
-            "A",
-            null,
-            []
-          ]
-        }
-      ],
-      "votes": [
-        {
-          "auditor": "codex-judicial-1-20260722-e2277919",
-          "first_auditor_error": "Its 12A/17B runner breakdown misclassifies two hard-coded local premise-equality checks, N_bosons=28 and N_fermions=90, as class B; the code performs those as class-A checks, giving 14A/15B.",
-          "hybrid_resolution_note": null,
-          "judge": 1,
-          "judgment_rationale": "The source closes the bounded thermal statement: absolute summability permits termwise integration, the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the common isotropic phase-space measure gives the stated per-degree coefficients. The hard-coded parent-inventory checks are downstream and non-load-bearing.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": null,
-          "ratified_claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Using eta(4)=(1-2^(-3))zeta(4) gives I_F=(7/8)I_B, and multiplying the exact integrals by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_clean",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-2-20260722-f721cad1",
-          "first_auditor_error": "none",
-          "hybrid_resolution_note": null,
-          "judge": 2,
-          "judgment_rationale": "The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\u2019s 12 algebraic checks from its 17 note/input-verification checks.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": null,
-          "ratified_claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": null,
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_clean",
-          "second_auditor_error": "The second position misclassifies two runner checks, reporting A=14 and B=15; the packet supports A=12 and B=17 because the wiring, premise-value, and source-guard checks are input verification rather than algebraic closure. It also needlessly alters the authenticated scope wording.",
-          "sided_with": "first"
-        },
-        {
-          "auditor": "codex-judicial-3-20260722-3d7cec70",
-          "first_auditor_error": "Its scope omits the natural-units hypothesis and attaches \u201cper-degree\u201d to the dimensionless Fermi integral instead of explicitly to the energy densities.",
-          "hybrid_resolution_note": "The hybrid preserves both auditors\u2019 clean bounded-theorem classification while correcting the scope so that the natural-units and per-internal-degree qualifications apply exactly where the source note places them.",
-          "judge": 3,
-          "judgment_rationale": "Absolute integrability supports termwise integration; the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor gives the per-degree coefficients. These are exact class-A steps under the explicit hypotheses, with 29 runner checks passing and no open dependency. The cited hierarchy theorem and downstream inventory arithmetic are non-load-bearing, so the result is neither conditional nor decoration.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": null,
-          "ratified_claim_scope": "For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Termwise integration gives I_B=6 zeta(4) and I_F=6 eta(4); eta(4)=(7/8)zeta(4) yields I_F/I_B=7/8, and multiplication by (1/(2 pi^2))T^4 gives the per-internal-degree energy-density coefficients.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_clean",
-          "second_auditor_error": "Its scope likewise omits the natural-units hypothesis and attaches \u201cper-degree\u201d to the dimensionless Fermi integral rather than explicitly qualifying both energy-density coefficients.",
-          "sided_with": "hybrid"
-        },
-        {
-          "auditor": "codex-judicial-4-20260722-66ebb9d6",
-          "first_auditor_error": "none",
-          "hybrid_resolution_note": null,
-          "judge": 4,
-          "judgment_rationale": "The first position uses the packet\u2019s canonical scope verbatim. The absolutely summable exponential expansions give the Bose and Fermi integrals, the eta-zeta identity yields their exact 7/8 ratio, and the stated 3+1-dimensional phase-space measure gives the per-degree coefficients. The source\u2019s exclusions are scope boundaries rather than negative assertions.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "A second auditor should recheck zeta(4)=pi^4/90 and the phase-space prefactor independently because the runner assigns those expected expressions directly.",
-          "ratified_claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Using eta(s)=(1-2^(1-s))zeta(s) at s=4 gives I_F=(7/8)I_B, and multiplication by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_clean",
-          "second_auditor_error": "The second position introduces an unnecessary reformulation of the canonical claim-scope sentence. Its scientific conclusion is equivalent, but the scope-string disagreement should be resolved in favor of the packet\u2019s exact supplied scope.",
-          "sided_with": "first"
-        },
-        {
-          "auditor": "codex-judicial-5-20260722-66cb8979",
-          "first_auditor_error": "none",
-          "hybrid_resolution_note": null,
-          "judge": 5,
-          "judgment_rationale": "The packet directly establishes the scoped thermal result: termwise integration gives the Bose and Fermi eta/zeta integrals, eta(4)/zeta(4)=7/8, and the common 3+1-dimensional phase-space factor gives the stated per-degree coefficients. This is a class-A algebraic closure under the explicit massless, zero-chemical-potential hypotheses; the inventory and equilibrium exclusions are non-load-bearing scope boundaries.",
-          "negative_assertion_classes": [],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": null,
-          "ratified_claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
-          "ratified_claim_type": "bounded_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Using eta(s)=(1-2^(1-s))zeta(s) at s=4 gives I_F=(7/8)I_B, and multiplication by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_clean",
-          "second_auditor_error": "The second position changes the exact supplied scope sentence despite reaching the same scientific verdict and derivation class; the first position preserves the packet's canonical audited scope character-for-character.",
-          "sided_with": "first"
-        }
-      ]
-    },
-    "mode": "judicial_panel_majority",
-    "second_audit": {
-      "audit_date": "2026-07-22T19:33:03.620416+00:00",
-      "audit_invocation_id": "7704248dfc3248bdb09083f8b6c3b579",
-      "auditor": "codex-audit-batch-B-20260722-20db43de",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": true,
-      "chain_closure_explanation": "Absolute summability justifies termwise integration, and the eta-zeta identity plus the isotropic phase-space prefactor yields the stated ratio and coefficients. The excluded inventory and equilibrium questions are not needed for this scoped result.",
-      "claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
-      "claim_type": "bounded_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "fresh_context",
-      "load_bearing_step": "Using eta(4)=(1-2^(-3))zeta(4) gives I_F=(7/8)I_B, and multiplying the exact integrals by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "notes_for_re_audit_if_any": "",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 14,
-        "B": 15,
-        "C": 0,
-        "D": 0,
-        "total_pass": 29
-      },
-      "verdict": "audited_clean",
-      "verdict_rationale": "Independently, the geometric expansions are termwise integrable because the summed absolute Gamma integrals equal 6 zeta(4), which is finite. Gamma(4)=6, zeta(4)=pi^4/90, and eta(4)=(1-2^-3)zeta(4) give I_B=pi^4/15 and I_F=7pi^4/120; the isotropic momentum measure then gives the stated coefficients. The runner confirms the exact arithmetic, although its parent-inventory constants are hard-coded, non-load-bearing checks outside the audited bridge."
-    },
-    "status": "third_confirmed_first",
-    "third_audit": {
-      "audit_date": "2026-07-22T19:45:55.898794+00:00",
-      "audit_invocation_id": "bec56cd3a95a4ac6996db369ec6334e8",
-      "auditor": "codex-judicial-2-20260722-f721cad1",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
-      "claim_type": "bounded_theorem",
-      "first_auditor_error": "none",
-      "independence": "judicial_review",
-      "judgment_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\u2019s 12 algebraic checks from its 17 note/input-verification checks.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-e2277919\", \"judge\": 1, \"rationale\": \"The source closes the bounded thermal statement: absolute summability permits termwise integration, the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the common isotropic phase-space measure gives the stated per-degree coefficients. The hard-coded parent-inventory checks are downstream and non-load-bearing.\", \"tuple\": [\"second\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-f721cad1\", \"judge\": 2, \"rationale\": \"The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\\u2019s 12 algebraic checks from its 17 note/input-verification checks.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3d7cec70\", \"judge\": 3, \"rationale\": \"Absolute integrability supports termwise integration; the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor gives the per-degree coefficients. These are exact class-A steps under the explicit hypotheses, with 29 runner checks passing and no open dependency. The cited hierarchy theorem and downstream inventory arithmetic are non-load-bearing, so the result is neither conditional nor decoration.\", \"tuple\": [\"hybrid\", \"audited_clean\", \"bounded_theorem\", \"For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-66ebb9d6\", \"judge\": 4, \"rationale\": \"The first position uses the packet\\u2019s canonical scope verbatim. The absolutely summable exponential expansions give the Bose and Fermi integrals, the eta-zeta identity yields their exact 7/8 ratio, and the stated 3+1-dimensional phase-space measure gives the per-degree coefficients. The source\\u2019s exclusions are scope boundaries rather than negative assertions.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-66cb8979\", \"judge\": 5, \"rationale\": \"The packet directly establishes the scoped thermal result: termwise integration gives the Bose and Fermi eta/zeta integrals, eta(4)/zeta(4)=7/8, and the common 3+1-dimensional phase-space factor gives the stated per-degree coefficients. This is a class-A algebraic closure under the explicit massless, zero-chemical-potential hypotheses; the inventory and equilibrium exclusions are non-load-bearing scope boundaries.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}]",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "second_auditor_error": "The second position misclassifies two runner checks, reporting A=14 and B=15; the packet supports A=12 and B=17 because the wiring, premise-value, and source-guard checks are input verification rather than algebraic closure. It also needlessly alters the authenticated scope wording.",
-      "sided_with": "first",
-      "verdict": "audited_clean"
-    }
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 5,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "judicial_review",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 12.171,
-  "load_bearing_step": "Using eta(s)=(1-2^(1-s))zeta(s) at s=4 gives I_F=(7/8)I_B, and multiplication by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "ba90bbb603ce1b887f4db3422b8f264e744627e07310b755a67f289a5a0ca7be",
   "note_path": "docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-  "notes_for_re_audit_if_any": "A second auditor should recheck zeta(4)=pi^4/90 and the phase-space prefactor independently because the runner assigns those expected expressions directly.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -662,6 +413,292 @@
         "total_pass": 0
       },
       "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The series expansion, Gamma integral, and eta-zeta identity establish I_F/I_B=7/8. However, the absolute energy-density coefficients require the additional phase-space normalization 1/(2 pi^2), which is inserted in both the note and runner without derivation or a supplied retained premise. The packet therefore supports the second auditor's conditional verdict.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-b251cb4f\", \"judge\": 1, \"rationale\": \"The series expansion, Gamma integral, and eta-zeta identity establish I_F/I_B=7/8. However, the absolute energy-density coefficients require the additional phase-space normalization 1/(2 pi^2), which is inserted in both the note and runner without derivation or a supplied retained premise. The packet therefore supports the second auditor's conditional verdict.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the absolute coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-e3d31346\", \"judge\": 2, \"rationale\": \"The Gamma/eta/zeta calculation closes the exact dimensionless ratio I_F/I_B=7/8. The absolute coefficients additionally require the density-of-states prefactor 1/(2 pi^2), which is neither a listed hypothesis nor supplied by a retained authority, and the runner merely hard-codes it.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the absolute coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-d487ce78\", \"judge\": 3, \"rationale\": \"The exponential-series and Gamma-function algebra closes the dimensionless 7/8 ratio. However, the claimed absolute coefficients depend on the additional phase-space prefactor 1/(2 pi^2), which is inserted rather than derived from the enumerated hypotheses, so the full stated scope is conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the absolute coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-a6ddc69b\", \"judge\": 4, \"rationale\": \"The packet proves the dimensionless integral ratio I_F/I_B=7/8 by class-A algebra. The claimed absolute energy-density coefficients additionally depend on the phase-space normalization 1/(2 pi^2), which is inserted rather than derived or supplied among the stated hypotheses; therefore the full stated scope remains conditional.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the absolute coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-c1d2c3e1\", \"judge\": 5, \"rationale\": \"The series proof closes I_F/I_B=7/8, but the absolute coefficients require the additional phase-space normalization 1/(2 pi^2), which is asserted rather than derived or supplied among the hypotheses. The conditional verdict therefore matches the restricted packet.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the absolute coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}]"
+    },
+    {
+      "archived_at": "2026-08-03T07:43:17.920077+00:00",
+      "audit_date": "2026-07-22T19:45:55.898794+00:00",
+      "audit_invocation_history": [
+        "41b2e8dcc5d04f7bb235860c0abcec6d",
+        "7704248dfc3248bdb09083f8b6c3b579",
+        "bec56cd3a95a4ac6996db369ec6334e8"
+      ],
+      "audit_invocation_id": "bec56cd3a95a4ac6996db369ec6334e8",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, which occurs uniquely at d = 4; there the exact tuple is (7/8, 7/8, 0)."
+        },
+        "dep_claim_type": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 12.14,
+        "runner_hash": "b09235f6fbf09865a81414b8855ad9d50f161c0906f72fb77a63ced98b84742a",
+        "transitive_descendants": 797
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-2-20260722-f721cad1",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\u2019s 12 algebraic checks from its 17 note/input-verification checks.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-e2277919\", \"judge\": 1, \"rationale\": \"The source closes the bounded thermal statement: absolute summability permits termwise integration, the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the common isotropic phase-space measure gives the stated per-degree coefficients. The hard-coded parent-inventory checks are downstream and non-load-bearing.\", \"tuple\": [\"second\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-f721cad1\", \"judge\": 2, \"rationale\": \"The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\\u2019s 12 algebraic checks from its 17 note/input-verification checks.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3d7cec70\", \"judge\": 3, \"rationale\": \"Absolute integrability supports termwise integration; the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor gives the per-degree coefficients. These are exact class-A steps under the explicit hypotheses, with 29 runner checks passing and no open dependency. The cited hierarchy theorem and downstream inventory arithmetic are non-load-bearing, so the result is neither conditional nor decoration.\", \"tuple\": [\"hybrid\", \"audited_clean\", \"bounded_theorem\", \"For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-66ebb9d6\", \"judge\": 4, \"rationale\": \"The first position uses the packet\\u2019s canonical scope verbatim. The absolutely summable exponential expansions give the Bose and Fermi integrals, the eta-zeta identity yields their exact 7/8 ratio, and the stated 3+1-dimensional phase-space measure gives the per-degree coefficients. The source\\u2019s exclusions are scope boundaries rather than negative assertions.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-66cb8979\", \"judge\": 5, \"rationale\": \"The packet directly establishes the scoped thermal result: termwise integration gives the Bose and Fermi eta/zeta integrals, eta(4)/zeta(4)=7/8, and the common 3+1-dimensional phase-space factor gives the stated per-degree coefficients. This is a class-A algebraic closure under the explicit massless, zero-chemical-potential hypotheses; the inventory and equilibrium exclusions are non-load-bearing scope boundaries.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}]",
+      "claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-22T19:45:55.898794+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "agreement_schema": "audit_tuple_v2",
+        "first_audit": {
+          "audit_date": "2026-07-22T19:33:03.614012+00:00",
+          "audit_invocation_id": "41b2e8dcc5d04f7bb235860c0abcec6d",
+          "auditor": "codex-audit-batch-A-20260722-06984e11",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": true,
+          "chain_closure_explanation": "The exponential-series integration, eta-zeta identity, zeta(4) evaluation, and 3+1-dimensional phase-space normalization jointly yield the stated ratio and absolute coefficients under the explicit thermal hypotheses.",
+          "claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
+          "claim_type": "bounded_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Using eta(s)=(1-2^(1-s))zeta(s) at s=4 gives I_F=(7/8)I_B, and multiplication by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "notes_for_re_audit_if_any": "A second auditor should recheck zeta(4)=pi^4/90 and the phase-space prefactor independently because the runner assigns those expected expressions directly.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 12,
+            "B": 17,
+            "C": 0,
+            "D": 0,
+            "total_pass": 29
+          },
+          "verdict": "audited_clean",
+          "verdict_rationale": "The series interchange is justified by absolute integrability, since the integrated absolute terms sum as 6 zeta(4). Independently of the runner, the eta-zeta split gives 7/8, the standard zeta(4) evaluation gives pi^4/90, and spherical 3+1-dimensional phase-space integration gives the prefactor 1/(2 pi^2). The downstream g_*=427/4 arithmetic is non-load-bearing and does not enlarge the audited scope."
+        },
+        "judicial_panel_record_v1": {
+          "cid": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "disagreement_fingerprint": {
+            "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+            "first_audit_invocation_id": "41b2e8dcc5d04f7bb235860c0abcec6d",
+            "note_hash": "ba90bbb603ce1b887f4db3422b8f264e744627e07310b755a67f289a5a0ca7be",
+            "schema": "judicial_disagreement_fingerprint_v1",
+            "seat_summaries_sha256": "7cc9cb66913cd9e7bf1ed4f1bbc8b55d6224f9a8671c0bac573c60067e44bb6a",
+            "second_audit_invocation_id": "7704248dfc3248bdb09083f8b6c3b579"
+          },
+          "failures": [],
+          "invocation_id": "bec56cd3a95a4ac6996db369ec6334e8",
+          "majority_count": 3,
+          "panel": 1,
+          "result": "majority_candidate",
+          "schema": "judicial_panel_record_v1",
+          "tally": [
+            {
+              "count": 3,
+              "tuple": [
+                "first",
+                "audited_clean",
+                "bounded_theorem",
+                "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
+                "A",
+                null,
+                []
+              ]
+            },
+            {
+              "count": 1,
+              "tuple": [
+                "second",
+                "audited_clean",
+                "bounded_theorem",
+                "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
+                "A",
+                null,
+                []
+              ]
+            },
+            {
+              "count": 1,
+              "tuple": [
+                "hybrid",
+                "audited_clean",
+                "bounded_theorem",
+                "For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.",
+                "A",
+                null,
+                []
+              ]
+            }
+          ],
+          "votes": [
+            {
+              "auditor": "codex-judicial-1-20260722-e2277919",
+              "first_auditor_error": "Its 12A/17B runner breakdown misclassifies two hard-coded local premise-equality checks, N_bosons=28 and N_fermions=90, as class B; the code performs those as class-A checks, giving 14A/15B.",
+              "hybrid_resolution_note": null,
+              "judge": 1,
+              "judgment_rationale": "The source closes the bounded thermal statement: absolute summability permits termwise integration, the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the common isotropic phase-space measure gives the stated per-degree coefficients. The hard-coded parent-inventory checks are downstream and non-load-bearing.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": null,
+              "ratified_claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Using eta(4)=(1-2^(-3))zeta(4) gives I_F=(7/8)I_B, and multiplying the exact integrals by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_clean",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-2-20260722-f721cad1",
+              "first_auditor_error": "none",
+              "hybrid_resolution_note": null,
+              "judge": 2,
+              "judgment_rationale": "The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\u2019s 12 algebraic checks from its 17 note/input-verification checks.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": null,
+              "ratified_claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": null,
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_clean",
+              "second_auditor_error": "The second position misclassifies two runner checks, reporting A=14 and B=15; the packet supports A=12 and B=17 because the wiring, premise-value, and source-guard checks are input verification rather than algebraic closure. It also needlessly alters the authenticated scope wording.",
+              "sided_with": "first"
+            },
+            {
+              "auditor": "codex-judicial-3-20260722-3d7cec70",
+              "first_auditor_error": "Its scope omits the natural-units hypothesis and attaches \u201cper-degree\u201d to the dimensionless Fermi integral instead of explicitly to the energy densities.",
+              "hybrid_resolution_note": "The hybrid preserves both auditors\u2019 clean bounded-theorem classification while correcting the scope so that the natural-units and per-internal-degree qualifications apply exactly where the source note places them.",
+              "judge": 3,
+              "judgment_rationale": "Absolute integrability supports termwise integration; the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor gives the per-degree coefficients. These are exact class-A steps under the explicit hypotheses, with 29 runner checks passing and no open dependency. The cited hierarchy theorem and downstream inventory arithmetic are non-load-bearing, so the result is neither conditional nor decoration.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": null,
+              "ratified_claim_scope": "For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Termwise integration gives I_B=6 zeta(4) and I_F=6 eta(4); eta(4)=(7/8)zeta(4) yields I_F/I_B=7/8, and multiplication by (1/(2 pi^2))T^4 gives the per-internal-degree energy-density coefficients.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_clean",
+              "second_auditor_error": "Its scope likewise omits the natural-units hypothesis and attaches \u201cper-degree\u201d to the dimensionless Fermi integral rather than explicitly qualifying both energy-density coefficients.",
+              "sided_with": "hybrid"
+            },
+            {
+              "auditor": "codex-judicial-4-20260722-66ebb9d6",
+              "first_auditor_error": "none",
+              "hybrid_resolution_note": null,
+              "judge": 4,
+              "judgment_rationale": "The first position uses the packet\u2019s canonical scope verbatim. The absolutely summable exponential expansions give the Bose and Fermi integrals, the eta-zeta identity yields their exact 7/8 ratio, and the stated 3+1-dimensional phase-space measure gives the per-degree coefficients. The source\u2019s exclusions are scope boundaries rather than negative assertions.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "A second auditor should recheck zeta(4)=pi^4/90 and the phase-space prefactor independently because the runner assigns those expected expressions directly.",
+              "ratified_claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Using eta(s)=(1-2^(1-s))zeta(s) at s=4 gives I_F=(7/8)I_B, and multiplication by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_clean",
+              "second_auditor_error": "The second position introduces an unnecessary reformulation of the canonical claim-scope sentence. Its scientific conclusion is equivalent, but the scope-string disagreement should be resolved in favor of the packet\u2019s exact supplied scope.",
+              "sided_with": "first"
+            },
+            {
+              "auditor": "codex-judicial-5-20260722-66cb8979",
+              "first_auditor_error": "none",
+              "hybrid_resolution_note": null,
+              "judge": 5,
+              "judgment_rationale": "The packet directly establishes the scoped thermal result: termwise integration gives the Bose and Fermi eta/zeta integrals, eta(4)/zeta(4)=7/8, and the common 3+1-dimensional phase-space factor gives the stated per-degree coefficients. This is a class-A algebraic closure under the explicit massless, zero-chemical-potential hypotheses; the inventory and equilibrium exclusions are non-load-bearing scope boundaries.",
+              "negative_assertion_classes": [],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": null,
+              "ratified_claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
+              "ratified_claim_type": "bounded_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Using eta(s)=(1-2^(1-s))zeta(s) at s=4 gives I_F=(7/8)I_B, and multiplication by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_clean",
+              "second_auditor_error": "The second position changes the exact supplied scope sentence despite reaching the same scientific verdict and derivation class; the first position preserves the packet's canonical audited scope character-for-character.",
+              "sided_with": "first"
+            }
+          ]
+        },
+        "mode": "judicial_panel_majority",
+        "second_audit": {
+          "audit_date": "2026-07-22T19:33:03.620416+00:00",
+          "audit_invocation_id": "7704248dfc3248bdb09083f8b6c3b579",
+          "auditor": "codex-audit-batch-B-20260722-20db43de",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": true,
+          "chain_closure_explanation": "Absolute summability justifies termwise integration, and the eta-zeta identity plus the isotropic phase-space prefactor yields the stated ratio and coefficients. The excluded inventory and equilibrium questions are not needed for this scoped result.",
+          "claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
+          "claim_type": "bounded_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Using eta(4)=(1-2^(-3))zeta(4) gives I_F=(7/8)I_B, and multiplying the exact integrals by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "notes_for_re_audit_if_any": "",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 14,
+            "B": 15,
+            "C": 0,
+            "D": 0,
+            "total_pass": 29
+          },
+          "verdict": "audited_clean",
+          "verdict_rationale": "Independently, the geometric expansions are termwise integrable because the summed absolute Gamma integrals equal 6 zeta(4), which is finite. Gamma(4)=6, zeta(4)=pi^4/90, and eta(4)=(1-2^-3)zeta(4) give I_B=pi^4/15 and I_F=7pi^4/120; the isotropic momentum measure then gives the stated coefficients. The runner confirms the exact arithmetic, although its parent-inventory constants are hard-coded, non-load-bearing checks outside the audited bridge."
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-07-22T19:45:55.898794+00:00",
+          "audit_invocation_id": "bec56cd3a95a4ac6996db369ec6334e8",
+          "auditor": "codex-judicial-2-20260722-f721cad1",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\u2019s 12 algebraic checks from its 17 note/input-verification checks.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-e2277919\", \"judge\": 1, \"rationale\": \"The source closes the bounded thermal statement: absolute summability permits termwise integration, the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the common isotropic phase-space measure gives the stated per-degree coefficients. The hard-coded parent-inventory checks are downstream and non-load-bearing.\", \"tuple\": [\"second\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-f721cad1\", \"judge\": 2, \"rationale\": \"The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\\u2019s 12 algebraic checks from its 17 note/input-verification checks.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3d7cec70\", \"judge\": 3, \"rationale\": \"Absolute integrability supports termwise integration; the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor gives the per-degree coefficients. These are exact class-A steps under the explicit hypotheses, with 29 runner checks passing and no open dependency. The cited hierarchy theorem and downstream inventory arithmetic are non-load-bearing, so the result is neither conditional nor decoration.\", \"tuple\": [\"hybrid\", \"audited_clean\", \"bounded_theorem\", \"For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-66ebb9d6\", \"judge\": 4, \"rationale\": \"The first position uses the packet\\u2019s canonical scope verbatim. The absolutely summable exponential expansions give the Bose and Fermi integrals, the eta-zeta identity yields their exact 7/8 ratio, and the stated 3+1-dimensional phase-space measure gives the per-degree coefficients. The source\\u2019s exclusions are scope boundaries rather than negative assertions.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-66cb8979\", \"judge\": 5, \"rationale\": \"The packet directly establishes the scoped thermal result: termwise integration gives the Bose and Fermi eta/zeta integrals, eta(4)/zeta(4)=7/8, and the common 3+1-dimensional phase-space factor gives the stated per-degree coefficients. This is a class-A algebraic closure under the explicit massless, zero-chemical-potential hypotheses; the inventory and equilibrium exclusions are non-load-bearing scope boundaries.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}]",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "second_auditor_error": "The second position misclassifies two runner checks, reporting A=14 and B=15; the packet supports A=12 and B=17 because the wiring, premise-value, and source-guard checks are input verification rather than algebraic closure. It also needlessly alters the authenticated scope wording.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "Using eta(s)=(1-2^(1-s))zeta(s) at s=4 gives I_F=(7/8)I_B, and multiplication by the common phase-space prefactor (1/(2 pi^2))T^4 gives the per-degree coefficients.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should recheck zeta(4)=pi^4/90 and the phase-space prefactor independently because the runner assigns those expected expressions directly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\u2019s 12 algebraic checks from its 17 note/input-verification checks.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-e2277919\", \"judge\": 1, \"rationale\": \"The source closes the bounded thermal statement: absolute summability permits termwise integration, the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the common isotropic phase-space measure gives the stated per-degree coefficients. The hard-coded parent-inventory checks are downstream and non-load-bearing.\", \"tuple\": [\"second\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-f721cad1\", \"judge\": 2, \"rationale\": \"The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\\u2019s 12 algebraic checks from its 17 note/input-verification checks.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3d7cec70\", \"judge\": 3, \"rationale\": \"Absolute integrability supports termwise integration; the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor gives the per-degree coefficients. These are exact class-A steps under the explicit hypotheses, with 29 runner checks passing and no open dependency. The cited hierarchy theorem and downstream inventory arithmetic are non-load-bearing, so the result is neither conditional nor decoration.\", \"tuple\": [\"hybrid\", \"audited_clean\", \"bounded_theorem\", \"For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-66ebb9d6\", \"judge\": 4, \"rationale\": \"The first position uses the packet\\u2019s canonical scope verbatim. The absolutely summable exponential expansions give the Bose and Fermi integrals, the eta-zeta identity yields their exact 7/8 ratio, and the stated 3+1-dimensional phase-space measure gives the per-degree coefficients. The source\\u2019s exclusions are scope boundaries rather than negative assertions.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-66cb8979\", \"judge\": 5, \"rationale\": \"The packet directly establishes the scoped thermal result: termwise integration gives the Bose and Fermi eta/zeta integrals, eta(4)/zeta(4)=7/8, and the common 3+1-dimensional phase-space factor gives the stated per-degree coefficients. This is a class-A algebraic closure under the explicit massless, zero-chemical-potential hypotheses; the inventory and equilibrium exclusions are non-load-bearing scope boundaries.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}]"
     }
   ],
   "prose_corrections": [],
@@ -676,5 +713,5 @@
   "runner_path": "scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py",
   "title": "`g_*` Thermal `7/8` Stefan-Boltzmann Integral Bridge",
   "transitive_descendants": 814,
-  "verdict_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\u2019s 12 algebraic checks from its 17 note/input-verification checks.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-e2277919\", \"judge\": 1, \"rationale\": \"The source closes the bounded thermal statement: absolute summability permits termwise integration, the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the common isotropic phase-space measure gives the stated per-degree coefficients. The hard-coded parent-inventory checks are downstream and non-load-bearing.\", \"tuple\": [\"second\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and the coefficients are rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-f721cad1\", \"judge\": 2, \"rationale\": \"The source note closes the scoped bounded theorem: absolute summability permits termwise integration, the eta-zeta identity yields the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor yields the two per-degree coefficients. The first position also preserves the authenticated pre-audit scope exactly and correctly separates the runner\\u2019s 12 algebraic checks from its 17 note/input-verification checks.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3d7cec70\", \"judge\": 3, \"rationale\": \"Absolute integrability supports termwise integration; the eta-zeta identity at s=4 gives the exact 7/8 ratio, and the stated 3+1-dimensional phase-space prefactor gives the per-degree coefficients. These are exact class-A steps under the explicit hypotheses, with 29 runner checks passing and no open dependency. The cited hierarchy theorem and downstream inventory arithmetic are non-load-bearing, so the result is neither conditional nor decoration.\", \"tuple\": [\"hybrid\", \"audited_clean\", \"bounded_theorem\", \"For one internal relativistic, effectively massless degree of freedom at zero chemical potential in 3+1 dimensions and natural units, I_F/I_B=7/8, rho_B=(pi^2/30)T^4, and rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-66ebb9d6\", \"judge\": 4, \"rationale\": \"The first position uses the packet\\u2019s canonical scope verbatim. The absolutely summable exponential expansions give the Bose and Fermi integrals, the eta-zeta identity yields their exact 7/8 ratio, and the stated 3+1-dimensional phase-space measure gives the per-degree coefficients. The source\\u2019s exclusions are scope boundaries rather than negative assertions.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-66cb8979\", \"judge\": 5, \"rationale\": \"The packet directly establishes the scoped thermal result: termwise integration gives the Bose and Fermi eta/zeta integrals, eta(4)/zeta(4)=7/8, and the common 3+1-dimensional phase-space factor gives the stated per-degree coefficients. This is a class-A algebraic closure under the explicit massless, zero-chemical-potential hypotheses; the inventory and equilibrium exclusions are non-load-bearing scope boundaries.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"Under massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral and rho_B=(pi^2/30)T^4 while rho_F=(7/8)(pi^2/30)T^4.\", \"A\", null, []]}]"
+  "verdict_rationale": null
 }

@@ -1,81 +1,24 @@
 {
-  "audit_date": "2026-07-30T01:36:39.738788+00:00",
-  "audit_invocation_history": [
-    "2347bf382a72492e89e60035c9be3a1e"
-  ],
-  "audit_invocation_id": "2347bf382a72492e89e60035c9be3a1e",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 2,
-      "counts": {
-        "A": 2,
-        "B": 0,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Float64 finite-box evaluation at x=2 and 0<=p,q<=4 of the stipulated SU(3) Haar character integrals and normalized rho values, including the disclosed cross-route and refinement checks, without a physical Wilson-environment or plaquette identification.",
-      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "The finite-truncation SU(3) character-convolution identity and its coefficient-uniqueness, positivity, self-adjointness, and conjugation-symmetry consequences for an abstract normalized sequence, excluding any Wilson-environment identification."
-    },
-    "dep_claim_type": {
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem",
-      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded",
-      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
-    },
-    "deps": [
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
-      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 6.65,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "116929476e3d55bc20ae6360b76b0790834561368767884c451c58135ceb3351",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "116929476e3d55bc20ae6360b76b0790834561368767884c451c58135ceb3351",
-    "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 70
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260730-29527b50",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite coefficient-map argument is internally consistent, but the restricted packet clips the retained normalization authority and omits the companion source imported by the runner. Full independent closure therefore cannot be certified.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17",
-  "claim_scope": "On the finite box B={(p,q):0<=p,q<=4}, a separately supplied nonnegative swap-symmetric character-diagonal operator has a unique scale-divided central-character convolution realization; the beta=6 packet is only a bounded witness, and positivity plus conjugation symmetry alone do not imply diagonality.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-30T01:36:39.738788+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -84,22 +27,19 @@
     "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
   ],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 6.65,
-  "load_bearing_step": "The finite Peter-Weyl identity gives C_(Z[rho]/z_0) chi_(p,q)=rho_(p,q) chi_(p,q), so equality on H_B and uniqueness of the scale-divided character polynomial follow.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "5157c4817b18be7cb9cdf378e620895e2e66ad4e5d8f5a3a31134680f94e731a",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: rebuild the restricted packet with the complete SU3 character-diagonal convolution authority and the imported companion runner source/cache, then independently recheck the convolution normalization and dimension factors.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -157,19 +97,116 @@
         "total_pass": 13
       },
       "verdict_rationale": "The load-bearing inverse step is a genuine finite-dimensional algebraic closure over retained_bounded inputs: block 17 supplies uniqueness of R_beta^env|_B, and the bounded companion supplies the convolution-on-characters identity and rho(6) witness data. The runner source mostly checks coefficient/eigenvalue inversion and perturbation behavior; the beta=6 witness check imports the companion coefficients, so it is cross-note consistency rather than first-principles computation. No non-retained load-bearing dependency is required for the stated finite-box uniqueness claim."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.853928+00:00",
+      "audit_date": "2026-07-30T01:36:39.738788+00:00",
+      "audit_invocation_history": [
+        "2347bf382a72492e89e60035c9be3a1e"
+      ],
+      "audit_invocation_id": "2347bf382a72492e89e60035c9be3a1e",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 2,
+          "counts": {
+            "A": 2,
+            "B": 0,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Float64 finite-box evaluation at x=2 and 0<=p,q<=4 of the stipulated SU(3) Haar character integrals and normalized rho values, including the disclosed cross-route and refinement checks, without a physical Wilson-environment or plaquette identification.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "The finite-truncation SU(3) character-convolution identity and its coefficient-uniqueness, positivity, self-adjointness, and conjugation-symmetry consequences for an abstract normalized sequence, excluding any Wilson-environment identification."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 6.65,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "116929476e3d55bc20ae6360b76b0790834561368767884c451c58135ceb3351",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "116929476e3d55bc20ae6360b76b0790834561368767884c451c58135ceb3351",
+        "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 70
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260730-29527b50",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite coefficient-map argument is internally consistent, but the restricted packet clips the retained normalization authority and omits the companion source imported by the runner. Full independent closure therefore cannot be certified.",
+      "claim_scope": "On the finite box B={(p,q):0<=p,q<=4}, a separately supplied nonnegative swap-symmetric character-diagonal operator has a unique scale-divided central-character convolution realization; the beta=6 packet is only a bounded witness, and positivity plus conjugation symmetry alone do not imply diagonality.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-30T01:36:39.738788+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The finite Peter-Weyl identity gives C_(Z[rho]/z_0) chi_(p,q)=rho_(p,q) chi_(p,q), so equality on H_B and uniqueness of the scale-divided character polynomial follow.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: rebuild the restricted packet with the complete SU3 character-diagonal convolution authority and the imported companion runner source/cache, then independently recheck the convolution normalization and dimension factors.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "Issue: The retained Peter-Weyl normalization authority is clipped, and the runner's M5 path imports a companion module whose source is absent from the packet. Why this blocks: the binding packet preflight forbids audited_clean, while the 13 passing checks cannot replace inspection of the missing load-bearing evidence. Repair target: render the complete authority and imported companion source/cache, then independently verify the convolution factor d_(p,q) and scale division. Claim boundary until fixed: the finite coefficient-map identity remains conditionally supported, while the explicit C=I+|v><v| counterexample establishes only the derived boundary that positivity and conjugation symmetry do not imply character diagonality or a physical Wilson-environment identification."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 12,
-    "B": 1,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 13
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py",
   "title": "Supplied-Diagonal Finite-Box Convolution-Realization Uniqueness",
   "transitive_descendants": 70,
-  "verdict_rationale": "Issue: The retained Peter-Weyl normalization authority is clipped, and the runner's M5 path imports a companion module whose source is absent from the packet. Why this blocks: the binding packet preflight forbids audited_clean, while the 13 passing checks cannot replace inspection of the missing load-bearing evidence. Repair target: render the complete authority and imported companion source/cache, then independently verify the convolution factor d_(p,q) and scale division. Claim boundary until fixed: the finite coefficient-map identity remains conditionally supported, while the explicit C=I+|v><v| counterexample establishes only the derived boundary that positivity and conjugation symmetry do not imply character diagonality or a physical Wilson-environment identification."
+  "verdict_rationale": null
 }

@@ -1,84 +1,24 @@
 {
-  "audit_date": "2026-07-29T20:41:23.915605+00:00",
-  "audit_invocation_history": [
-    "cc922b9da7604620a18879e03e346688",
-    "a6d059c693b14fdab208a0a4650a4bc1"
-  ],
-  "audit_invocation_id": "a6d059c693b14fdab208a0a4650a4bc1",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 2,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 3,
-        "D": 1
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier.",
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 10.518,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "ca695f5643be5a62a82b6c11067c74b51c7de3f02c6891b0dbc413bfef8eaf2e",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "ca695f5643be5a62a82b6c11067c74b51c7de3f02c6891b0dbc413bfef8eaf2e",
-    "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 732
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260729-1f43bdce",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite U(1) identities and deterministic runner checks are internally consistent, but the retained authority supplying the SU(3) Wilson weight and character basis is clipped. The SU(3) contrast and resulting 4D residual-sharpening dependency therefore cannot be independently verified from this packet.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02",
-  "claim_scope": "Finite 2D U(1) character-gluing/winding witness construction and SU(2)/SU(3) matched-label contrast, plus the asserted narrowing of the physical 4D SU(3) W_theta_Q_context residual to carrier plus action-level pairing selection.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T20:41:23.915605+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -87,24 +27,19 @@
     "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
   ],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 10.524,
-  "load_bearing_step": "Gluing produces a matched integer label whose branch-summed 2D U(1) action yields the exact e^{i theta Q} pairing, while nonuniqueness of integer-valued SU(3) matched-label functions narrows the physical residual to carrier and action-level pairing selection.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "conditional_wall_rationale",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "baf7a0cb041a0f7a0bc7635a7ac06f13293c49693fd3ea5d21845d9708308c85",
   "note_path": "docs/GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": "other: rerender the restricted packet with the complete docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md authority and repeat the audit; this is a packet-clipping defect, not a runner failure or dependency-status defect.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -172,19 +107,121 @@
         "total_pass": 30
       },
       "verdict_rationale": "Issue: the finite 2D U(1) and SU(2)/SU(3) witness computations pass, but the scoped claim also asserts a physical 4D SU(3) wall-sharpening against authorities not wired as direct dependencies. Why this blocks: from the two provided dependencies alone, a hostile reviewer cannot verify that carrier plus action-level pairing selection is exactly the residual of W_theta_Q_context. Repair target: add direct dependency edges for the Tier-A theta registry, campaign theta bridge, no-winding carrier note, and companion center-grading/no-go context, or split/narrow the row to the finite witness theorem only. Claim boundary until fixed: the finite witness algebra and non-uniqueness contrast are supported; the physical-wall sharpening remains conditional."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.605673+00:00",
+      "audit_date": "2026-07-29T20:41:23.915605+00:00",
+      "audit_invocation_history": [
+        "cc922b9da7604620a18879e03e346688",
+        "a6d059c693b14fdab208a0a4650a4bc1"
+      ],
+      "audit_invocation_id": "a6d059c693b14fdab208a0a4650a4bc1",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 2,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 3,
+            "D": 1
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.518,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "ca695f5643be5a62a82b6c11067c74b51c7de3f02c6891b0dbc413bfef8eaf2e",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "ca695f5643be5a62a82b6c11067c74b51c7de3f02c6891b0dbc413bfef8eaf2e",
+        "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 732
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260729-1f43bdce",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite U(1) identities and deterministic runner checks are internally consistent, but the retained authority supplying the SU(3) Wilson weight and character basis is clipped. The SU(3) contrast and resulting 4D residual-sharpening dependency therefore cannot be independently verified from this packet.",
+      "claim_scope": "Finite 2D U(1) character-gluing/winding witness construction and SU(2)/SU(3) matched-label contrast, plus the asserted narrowing of the physical 4D SU(3) W_theta_Q_context residual to carrier plus action-level pairing selection.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T20:41:23.915605+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Gluing produces a matched integer label whose branch-summed 2D U(1) action yields the exact e^{i theta Q} pairing, while nonuniqueness of integer-valued SU(3) matched-label functions narrows the physical residual to carrier and action-level pairing selection.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: rerender the restricted packet with the complete docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md authority and repeat the audit; this is a packet-clipping defect, not a runner failure or dependency-status defect.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "Issue: the restricted packet clips the retained SU(3) character authority used by Theorem 4. Why this blocks: the omitted material prevents independent verification of the SU(3) input and hence the asserted physical-residual sharpening, although the supplied U(1) Fourier, Haar, incidence, and Poisson checks are internally consistent. Negative-boundary judgment (N1-N8): only the class-scoped absence of a shift-sum index in the supplied 2D SU(N) class-function weight and the demonstrated nonuniqueness of integer-valued matched-label functions are supported; the 4D carrier, action-pairing, scaling-limit, and center-dual routes remain open. Repair target: supply the complete retained authority and re-audit; until then, the finite witness-surface algebra is provisional and the SU(3)/4D narrowing is not audit-closed."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 24,
-    "B": 6,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 30
+    "total_pass": 0
   },
   "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py",
   "title": "Multi-Plaquette Character Gluing Derives the Emergent Integer Sector-Record Context Exactly on the Finite 2D U(1) Surface \u2014 Branch-Datum-Free, With the Theta Pairing Coming From the Action Slot \u2014 and Sharpens the Remaining Theta Q-Context Wall to Action-Level Pairing Selection on the Physical 4D SU(3) Surface (Bounded Theorem)",
   "transitive_descendants": 735,
-  "verdict_rationale": "Issue: the restricted packet clips the retained SU(3) character authority used by Theorem 4. Why this blocks: the omitted material prevents independent verification of the SU(3) input and hence the asserted physical-residual sharpening, although the supplied U(1) Fourier, Haar, incidence, and Poisson checks are internally consistent. Negative-boundary judgment (N1-N8): only the class-scoped absence of a shift-sum index in the supplied 2D SU(N) class-function weight and the demonstrated nonuniqueness of integer-valued matched-label functions are supported; the 4D carrier, action-pairing, scaling-limit, and center-dual routes remain open. Repair target: supply the complete retained authority and re-audit; until then, the finite witness-surface algebra is provisional and the SU(3)/4D narrowing is not audit-closed."
+  "verdict_rationale": null
 }

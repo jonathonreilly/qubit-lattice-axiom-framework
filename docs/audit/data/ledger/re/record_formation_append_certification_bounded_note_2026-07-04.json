@@ -1,79 +1,24 @@
 {
-  "audit_date": "2026-07-25T15:47:40.284841+00:00",
-  "audit_invocation_history": [
-    "6f6761516b094d569550907715591a66"
-  ],
-  "audit_invocation_id": "6f6761516b094d569550907715591a66",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 5,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/record_formation_append_certification_2026_07_04.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/record_formation_append_certification_2026_07_04.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "1e5c24a10d7ba3911190459bd693d8a355315f8816b493a29c31ee474aa342bb",
-    "runner_path": "scripts/record_formation_append_certification_2026_07_04.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-batch-A-20260725-cce21df3",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The occurrence and actual-successor extension claims close, but the full theorem does not: B1 lacks a proof that a globally admissible saturated Z^3 configuration exists, and B2 identifies domain-wide firing with a maximal rate despite having no clock or rate definition.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "record_formation_append_certification_bounded_note_2026-07-04",
-  "claim_scope": "Occurrence-strength interpretation and actual-successor extension, together with the claimed saturation and law-form boundary exhibits.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T15:47:40.284841+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -81,23 +26,19 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Permanence preserves every old record and per-site uniqueness prevents replacement, so any actual formation-successor preserves the predecessor and adds a newly occupied site.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "bounded_with_named_walls",
-    "derived_no_go_boundary"
-  ],
   "note_hash": "8b2315c8756f77d31de75a84b65bb7526db81eea176fdcf80bcd03a4ca8ef77d",
   "note_path": "docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md",
-  "notes_for_re_audit_if_any": "Re-audit after supplying or removing the globally admissible saturated-state lemma, correcting the rate claim, and reconciling the stale qualification quote and measured runner total.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -155,19 +96,115 @@
         "total_pass": 43
       },
       "verdict_rationale": "The citable axiom text contains 'Records form.' and the Qualification blocks extra physical structure absent derivation/admission. Read minimally, that supports occurrence and excludes empty-forever history, but it does not supply a total transition law, availability domain, site or possibility selector, rate, clock, stochastic process, or dynamics. The extension lemma closes only under the explicit conditional 'for any realized formation-successor': permanence preserves old records, per-site uniqueness forbids overwrite, and formation adds a record. The runner verifies exact text needles and finite toy consequences; it is not an independent dynamics derivation, but the note does not claim one."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:27.558728+00:00",
+      "audit_date": "2026-07-25T15:47:40.284841+00:00",
+      "audit_invocation_history": [
+        "6f6761516b094d569550907715591a66"
+      ],
+      "audit_invocation_id": "6f6761516b094d569550907715591a66",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 5,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/record_formation_append_certification_2026_07_04.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/record_formation_append_certification_2026_07_04.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "1e5c24a10d7ba3911190459bd693d8a355315f8816b493a29c31ee474aa342bb",
+        "runner_path": "scripts/record_formation_append_certification_2026_07_04.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-batch-A-20260725-cce21df3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The occurrence and actual-successor extension claims close, but the full theorem does not: B1 lacks a proof that a globally admissible saturated Z^3 configuration exists, and B2 identifies domain-wide firing with a maximal rate despite having no clock or rate definition.",
+      "claim_scope": "Occurrence-strength interpretation and actual-successor extension, together with the claimed saturation and law-form boundary exhibits.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T15:47:40.284841+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Permanence preserves every old record and per-site uniqueness prevents replacement, so any actual formation-successor preserves the predecessor and adds a newly occupied site.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after supplying or removing the globally admissible saturated-state lemma, correcting the rate claim, and reconciling the stale qualification quote and measured runner total.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 26,
+        "C": 16,
+        "D": 0,
+        "total_pass": 42
+      },
+      "verdict_rationale": "The core occurrence and extension route is an elementary closure over the accepted Record premise, but the full bounded theorem fails because B1 assumes an admissible saturated state and B2 imports a clockless notion of maximal rate. N1-N2 leave those as distinct open attack routes; N3-N6 expose the hidden admissibility/existence and rate premises with no supplied partial closure, N7 leaves the strongest law-form steelman unresolved, and N8 supplies no cross-cycle evidence that repairs them. The completed runner also contradicts the note's claimed 43/0 result, reporting 42/1 because the purported verbatim qualification quote has drifted from the current authority."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
-    "B": 26,
-    "C": 16,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 42
+    "total_pass": 0
   },
   "runner_path": "scripts/record_formation_append_certification_2026_07_04.py",
   "title": "Record-Formation Append Certification: Landed Occurrence Strength (Bounded Note)",
   "transitive_descendants": 0,
-  "verdict_rationale": "The core occurrence and extension route is an elementary closure over the accepted Record premise, but the full bounded theorem fails because B1 assumes an admissible saturated state and B2 imports a clockless notion of maximal rate. N1-N2 leave those as distinct open attack routes; N3-N6 expose the hidden admissibility/existence and rate premises with no supplied partial closure, N7 leaves the strongest law-form steelman unresolved, and N8 supplies no cross-cycle evidence that repairs them. The completed runner also contradicts the note's claimed 43/0 result, reporting 42/1 because the purported verbatim qualification quote has drifted from the current authority."
+  "verdict_rationale": null
 }

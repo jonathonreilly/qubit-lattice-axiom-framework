@@ -1,90 +1,42 @@
 {
-  "audit_date": "2026-07-25T12:13:00.628829+00:00",
-  "audit_invocation_history": [
-    "987a4cb3f73649e0b2975d71e943f8e5"
-  ],
-  "audit_invocation_id": "987a4cb3f73649e0b2975d71e943f8e5",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 4,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "95d74b598013dffb2dab2a5b31d58606fa345f64a45e8fbef8c27875c1275160",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "95d74b598013dffb2dab2a5b31d58606fa345f64a45e8fbef8c27875c1275160",
-    "runner_path": "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-38616fe6",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The five finite computations independently check out, but the step from those computations to the derived negative rotation boundary lacks the required alternative-route, rhetoric-resolution, partial-closure, steelman, and cross-cycle dispositions.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "flavor_doublet_rotation_exhaustive_note_2026-05-30",
-  "claim_scope": "The audited narrow core is the five explicit finite computations: six induced hw=1 actions, the order-four and bit-flip preservation counts, the central iI3/J_cs distinction, and the +/-J_cs real-circulant solution set.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T12:13:00.628829+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Within the finite packet, the checked finite lattice actions supply no additional continuous doublet rotation, while the real C3-circulant equations yield only +/-J_cs.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "36b118da3e4869ec94d0cafe886372ed6a7a58ea4323744604c2193e127860b8",
   "note_path": "docs/FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": "scope_too_broad \u2014 alternative attack routes not exhausted; add distinct live N1 route tests together with N5, N6, N7, and N8 dispositions, or remove the synthesized no-additional-rotation conclusion while retaining the exact finite computations.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1417,19 +1369,104 @@
         "total_pass": 5
       },
       "verdict_rationale": "E1-E3 are direct finite enumerations rather than printed constants, and E5 uses an exact symbolic solve whose two solutions agree with the independently stated circulant identities. For E4, the constructed `J_cs` has a zero eigenvalue and is visibly non-scalar, whereas `iI3` is central and invertible, so they are distinct. The note expressly excludes broader classification and readout claims, leaving no missing bridge inside the audited scope."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.083464+00:00",
+      "audit_date": "2026-07-25T12:13:00.628829+00:00",
+      "audit_invocation_history": [
+        "987a4cb3f73649e0b2975d71e943f8e5"
+      ],
+      "audit_invocation_id": "987a4cb3f73649e0b2975d71e943f8e5",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 4,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "95d74b598013dffb2dab2a5b31d58606fa345f64a45e8fbef8c27875c1275160",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "95d74b598013dffb2dab2a5b31d58606fa345f64a45e8fbef8c27875c1275160",
+        "runner_path": "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-38616fe6",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The five finite computations independently check out, but the step from those computations to the derived negative rotation boundary lacks the required alternative-route, rhetoric-resolution, partial-closure, steelman, and cross-cycle dispositions.",
+      "claim_scope": "The audited narrow core is the five explicit finite computations: six induced hw=1 actions, the order-four and bit-flip preservation counts, the central iI3/J_cs distinction, and the +/-J_cs real-circulant solution set.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T12:13:00.628829+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Within the finite packet, the checked finite lattice actions supply no additional continuous doublet rotation, while the real C3-circulant equations yield only +/-J_cs.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad \u2014 alternative attack routes not exhausted; add distinct live N1 route tests together with N5, N6, N7, and N8 dispositions, or remove the synthesized no-additional-rotation conclusion while retaining the exact finite computations.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the runner correctly obtains the finite counts and exact circulant solutions, but the source promotes them into a derived negative boundary about additional continuous doublet rotations. Why this blocks: N1 supplies fewer than five distinct evidenced alternative mechanisms and N7 has no independently resolved steelman; N2 provides no multi-condition independence theorem, N3's flagged terms are scoped or administrative, N4 has no one-hop witness, and the packet does not complete the N5 resolution tests, N6 candidate dispositions, or N8 echo dispositions. Repair target: add a current-runner discipline packet with five genuinely distinct routes, all-resolution rhetoric tests, indexed-candidate and cross-cycle dispositions, and an independent steelman resolution, or delete the synthesized negative conclusion. Claim boundary until fixed: only the exact finite counts, Hamming-weight images, scalar/matrix distinction, and +/-J_cs solution set are certified."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 2,
+    "A": 0,
     "B": 0,
-    "C": 3,
+    "C": 0,
     "D": 0,
-    "total_pass": 5
+    "total_pass": 0
   },
   "runner_path": "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py",
   "title": "Flavor \u2014 finite doublet-rotation checks: `O_h/hw=1`, bit-flip boundary, and `J_cs` uniqueness",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the runner correctly obtains the finite counts and exact circulant solutions, but the source promotes them into a derived negative boundary about additional continuous doublet rotations. Why this blocks: N1 supplies fewer than five distinct evidenced alternative mechanisms and N7 has no independently resolved steelman; N2 provides no multi-condition independence theorem, N3's flagged terms are scoped or administrative, N4 has no one-hop witness, and the packet does not complete the N5 resolution tests, N6 candidate dispositions, or N8 echo dispositions. Repair target: add a current-runner discipline packet with five genuinely distinct routes, all-resolution rhetoric tests, indexed-candidate and cross-cycle dispositions, and an independent steelman resolution, or delete the synthesized negative conclusion. Claim boundary until fixed: only the exact finite counts, Hamming-weight images, scalar/matrix distinction, and +/-J_cs solution set are certified."
+  "verdict_rationale": null
 }

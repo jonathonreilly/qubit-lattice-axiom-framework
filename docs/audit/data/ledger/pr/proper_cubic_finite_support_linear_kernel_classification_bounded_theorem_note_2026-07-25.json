@@ -1,47 +1,24 @@
 {
-  "audit_date": "2026-07-25T20:41:47.485021+00:00",
-  "audit_invocation_history": [
-    "b9f7b49fbb824e7992e0dfee80ba9acc"
-  ],
-  "audit_invocation_id": "b9f7b49fbb824e7992e0dfee80ba9acc",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 2.585,
-    "runner_hash": "050d84597412469e9648c13656e0c1df06e2d681c9a4ccb4e642a9b7daa73526",
-    "transitive_descendants": 2
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-audit-batch-A-20260725-3bcfc28d",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The orbit-indicator classification follows directly from constancy on group orbits, and the nearest-neighbour and constant-annihilation corollaries follow by exact coefficient algebra. The general proof covers every finite rotation-closed support, including degenerate support, while the runner independently verifies the stated finite-ball controls.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "proper_cubic_finite_support_linear_kernel_classification_bounded_theorem_note_2026-07-25",
-  "claim_scope": "For every finite proper-cubic-rotation-closed P subset of Z^3, the O-invariant rational scalar kernels on P have the orbit indicators as a basis; for nearest-neighbour support this space is span_Q{I, Delta}, with constant annihilation selecting the Laplacian line, and the six stated ball counts are exact.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T20:41:47.485021+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -49,33 +26,94 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 2,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 3.807,
-  "load_bearing_step": "Invariance makes k constant on each O-orbit, while assigning one rational value to each orbit produces every invariant kernel.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "205ec384a10bcead9c4d2344efb1044a481b10a36db0ae771014f9db47cf9707",
   "note_path": "docs/PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
-  "previous_audits": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-08-03T07:42:27.279373+00:00",
+      "audit_date": "2026-07-25T20:41:47.485021+00:00",
+      "audit_invocation_history": [
+        "b9f7b49fbb824e7992e0dfee80ba9acc"
+      ],
+      "audit_invocation_id": "b9f7b49fbb824e7992e0dfee80ba9acc",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 2.585,
+        "runner_hash": "050d84597412469e9648c13656e0c1df06e2d681c9a4ccb4e642a9b7daa73526",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-batch-A-20260725-3bcfc28d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The orbit-indicator classification follows directly from constancy on group orbits, and the nearest-neighbour and constant-annihilation corollaries follow by exact coefficient algebra. The general proof covers every finite rotation-closed support, including degenerate support, while the runner independently verifies the stated finite-ball controls.",
+      "claim_scope": "For every finite proper-cubic-rotation-closed P subset of Z^3, the O-invariant rational scalar kernels on P have the orbit indicators as a basis; for nearest-neighbour support this space is span_Q{I, Delta}, with constant annihilation selecting the Laplacian line, and the six stated ball counts are exact.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T20:41:47.485021+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Invariance makes k constant on each O-orbit, while assigning one rational value to each orbit produces every invariant kernel.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The proof identifies the invariant-kernel space with one independent rational coordinate per orbit, so the dimension and orbit-indicator basis follow without a missing terminal lemma. Independent algebra confirms the range-one decomposition, the zero-sum dimensions at ranges one and two, and the displayed orbit counts; the runner implements exact group enumeration, Burnside counting, and rational nullspace calculations without an external comparator."
+    }
+  ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 5,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 5
+    "total_pass": 0
   },
   "runner_path": "scripts/proper_cubic_finite_support_linear_kernel_classification_2026_07_25.py",
   "title": "Proper-cubic finite-support linear-kernel classification",
   "transitive_descendants": 6,
-  "verdict_rationale": "The proof identifies the invariant-kernel space with one independent rational coordinate per orbit, so the dimension and orbit-indicator basis follow without a missing terminal lemma. Independent algebra confirms the range-one decomposition, the zero-sum dimensions at ranges one and two, and the displayed orbit counts; the runner implements exact group enumeration, Burnside counting, and rational nullspace calculations without an external comparator."
+  "verdict_rationale": null
 }

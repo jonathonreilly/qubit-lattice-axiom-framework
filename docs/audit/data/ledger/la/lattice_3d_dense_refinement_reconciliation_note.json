@@ -1,86 +1,24 @@
 {
-  "audit_date": "2026-07-25T09:00:52.141205+00:00",
-  "audit_invocation_history": [
-    "a3b00125cddf401eb68dcf6a3332c8d0"
-  ],
-  "audit_invocation_id": "a3b00125cddf401eb68dcf6a3332c8d0",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true,
-      "runner_path": "scripts/lattice_3d_dense_refinement_reconciliation.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "action_power_note": "Fixed finite-output audit of scripts/action_power_canonical_harness.py for the action-power p=0.5 versus spent-delay 2D/3D NN harness values reported in docs/ACTION_POWER_NOTE.md."
-    },
-    "dep_claim_type": {
-      "action_power_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "action_power_note": "retained_bounded"
-    },
-    "deps": [
-      "action_power_note"
-    ],
-    "helper_runner_hashes": {
-      "scripts/action_power_canonical_harness.py": "42edf509eacb80fa08deeffbb58b2d601089e3396dd368783b53f63ae6d4150d"
-    },
-    "load_bearing_score": 3.822,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/action_power_canonical_harness.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "42edf509eacb80fa08deeffbb58b2d601089e3396dd368783b53f63ae6d4150d",
-        "cache_status": "ok"
-      },
-      "scripts/lattice_3d_dense_refinement_reconciliation.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "f8551e193b0ddd495d67622e39986c43981d03c9abd8a8fb60f3f346c530c235",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "f8551e193b0ddd495d67622e39986c43981d03c9abd8a8fb60f3f346c530c235",
-    "runner_path": "scripts/lattice_3d_dense_refinement_reconciliation.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 9
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-batch-A-20260725-4f49d8fd",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The source summaries are stale relative to the completed runner. An independent log-linear check of the three attractive h=1.0 rows gives slope -0.609 and R\u00b2 0.966, confirming the runner rather than the note's -0.94 and 0.934.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "lattice_3d_dense_refinement_reconciliation_note",
-  "claim_scope": "The finite h=1.0 versus h=0.5 reconciliation on the ordered 3D dense spent-delay harness, including its reported barrier and distance summaries.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T09:00:52.141205+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -88,24 +26,21 @@
     "action_power_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/action_power_canonical_harness.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 3.822,
-  "load_bearing_step": "The older h=0.5 refinement-positive story fails under the corrected physical mapping.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "stretch_attempt_negative"
-  ],
   "note_hash": "4ac12c9a332008b981739caa911be5a3b0164b56d813589424814f881cda3343",
   "note_path": "docs/LATTICE_3D_DENSE_REFINEMENT_RECONCILIATION_NOTE.md",
-  "notes_for_re_audit_if_any": "Re-audit after regenerating the source summaries from a SHA-pinned current runner and independently checking every displayed value and classification count.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -1490,6 +1425,108 @@
         "total_pass": 2
       },
       "verdict_rationale": "The primary runner constructs and propagates the lattice instead of printing hard-coded targets, so the load-bearing computation is class C. Its SHA-pinned output supports the bounded qualitative conclusion that the tested h = 0.5 row does not preserve the chosen positive hierarchy. However, the source note's h = 1.0 hierarchy count, fitted exponent, R\u00b2, and both Born summaries are stale, so the stated reconciliation does not close as written."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:22.535953+00:00",
+      "audit_date": "2026-07-25T09:00:52.141205+00:00",
+      "audit_invocation_history": [
+        "a3b00125cddf401eb68dcf6a3332c8d0"
+      ],
+      "audit_invocation_id": "a3b00125cddf401eb68dcf6a3332c8d0",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/lattice_3d_dense_refinement_reconciliation.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "action_power_note": "Fixed finite-output audit of scripts/action_power_canonical_harness.py for the action-power p=0.5 versus spent-delay 2D/3D NN harness values reported in docs/ACTION_POWER_NOTE.md."
+        },
+        "dep_claim_type": {
+          "action_power_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "action_power_note": "retained_bounded"
+        },
+        "deps": [
+          "action_power_note"
+        ],
+        "helper_runner_hashes": {
+          "scripts/action_power_canonical_harness.py": "42edf509eacb80fa08deeffbb58b2d601089e3396dd368783b53f63ae6d4150d"
+        },
+        "load_bearing_score": 3.822,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/action_power_canonical_harness.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "42edf509eacb80fa08deeffbb58b2d601089e3396dd368783b53f63ae6d4150d",
+            "cache_status": "ok"
+          },
+          "scripts/lattice_3d_dense_refinement_reconciliation.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "f8551e193b0ddd495d67622e39986c43981d03c9abd8a8fb60f3f346c530c235",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "f8551e193b0ddd495d67622e39986c43981d03c9abd8a8fb60f3f346c530c235",
+        "runner_path": "scripts/lattice_3d_dense_refinement_reconciliation.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-batch-A-20260725-4f49d8fd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source summaries are stale relative to the completed runner. An independent log-linear check of the three attractive h=1.0 rows gives slope -0.609 and R\u00b2 0.966, confirming the runner rather than the note's -0.94 and 0.934.",
+      "claim_scope": "The finite h=1.0 versus h=0.5 reconciliation on the ordered 3D dense spent-delay harness, including its reported barrier and distance summaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T09:00:52.141205+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The older h=0.5 refinement-positive story fails under the corrected physical mapping.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after regenerating the source summaries from a SHA-pinned current runner and independently checking every displayed value and classification count.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: The source reports h=1.0 Born 4.95e-16, fit b^(-0.94) with R\u00b2=0.934, and 5/5 aligned rows, plus h=0.5 Born 2.54e-15, while the completed runner gives 4.85e-16, b^(-0.61) with R\u00b2=0.966, 3/5, and 2.48e-15. Why this blocks: the exact finite reconciliation, including its quantitative summaries, is stale and therefore does not close as written, although the h=0.5 result of zero attractive rows remains supported. Repair target: Regenerate every table and narrative count from the current runner, pin the artifact version, and independently recheck the classifications and fit. Claim boundary until fixed: the packet supports only the bounded current-run stretch-attempt negative\u2014mixed barriers at both spacings, 3/5 attractive distance rows at h=1.0, and 0/5 at h=0.5\u2014not a no-go or named-wall result; N1-N8 identifies no asserted wall, prior residual, hidden premise, partial closure, unresolved steelman, or cross-cycle retirement that this finite result forecloses."
     }
   ],
   "prose_corrections": [],
@@ -1497,12 +1534,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 1,
+    "C": 0,
     "D": 0,
-    "total_pass": 1
+    "total_pass": 0
   },
   "runner_path": "scripts/lattice_3d_dense_refinement_reconciliation.py",
   "title": "3D Dense Spent-Delay Refinement Reconciliation",
   "transitive_descendants": 9,
-  "verdict_rationale": "Issue: The source reports h=1.0 Born 4.95e-16, fit b^(-0.94) with R\u00b2=0.934, and 5/5 aligned rows, plus h=0.5 Born 2.54e-15, while the completed runner gives 4.85e-16, b^(-0.61) with R\u00b2=0.966, 3/5, and 2.48e-15. Why this blocks: the exact finite reconciliation, including its quantitative summaries, is stale and therefore does not close as written, although the h=0.5 result of zero attractive rows remains supported. Repair target: Regenerate every table and narrative count from the current runner, pin the artifact version, and independently recheck the classifications and fit. Claim boundary until fixed: the packet supports only the bounded current-run stretch-attempt negative\u2014mixed barriers at both spacings, 3/5 attractive distance rows at h=1.0, and 0/5 at h=0.5\u2014not a no-go or named-wall result; N1-N8 identifies no asserted wall, prior residual, hidden premise, partial closure, unresolved steelman, or cross-cycle retirement that this finite result forecloses."
+  "verdict_rationale": null
 }

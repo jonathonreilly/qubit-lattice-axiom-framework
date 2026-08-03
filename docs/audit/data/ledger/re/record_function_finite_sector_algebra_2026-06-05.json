@@ -1,82 +1,24 @@
 {
-  "audit_date": "2026-07-29T20:05:02.016090+00:00",
-  "audit_invocation_history": [
-    "e11fe28120314df08e25621c8ce0dd0a",
-    "d0eae68957f84285b6408a7879705621"
-  ],
-  "audit_invocation_id": "d0eae68957f84285b6408a7879705621",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 67,
-        "B": 3,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/record_function_finite_sector_algebra_2026_06_05.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": "For any supplied positive real mass triple, the normalized C3 DFT gives exact reconstruction, a symmetric scale- and permutation-invariant r coordinate, Q = 1/3 + 2r/3 with r unselected, and an S3-invariant folded phase for the unordered triple, including the c = 0 boundary.",
-      "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "Exact Fourier identity a_0^2-2|z|^2=3(a^2-2|b|^2) and equivalent polynomial zero locus on Herm_circ(3), including b=0, with the kappa=2 ratio form restricted to b!=0."
-    },
-    "dep_claim_type": {
-      "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": "positive_theorem",
-      "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": "retained",
-      "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "retained"
-    },
-    "deps": [
-      "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
-      "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 13.027,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/record_function_finite_sector_algebra_2026_06_05.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "input_mismatch",
-        "cache_input_fingerprint_sha256": "2fd016d1d4b863f202262ee13b66a6ebc21d47389fd7a2016f8b70adeea54d66",
-        "cache_runner_sha256": "cd69cf2741221e3442d509fac42e3f5170b4e21eff4ca98354e421c3752654cf",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "cd69cf2741221e3442d509fac42e3f5170b4e21eff4ca98354e421c3752654cf",
-    "runner_path": "scripts/record_function_finite_sector_algebra_2026_06_05.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 737
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260729-d806c6ff",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite-additivity, coarse-graining, ratio, and C3 identities are exact, but the identification of one-third Fourier-projection powers with scalar record coordinates is explicitly supplied rather than derived by either retained authority.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "record_function_finite_sector_algebra_2026-06-05",
-  "claim_scope": "Finite additive record-sector vectors, incidence-matrix coarse-graining, scale-invariant coordinates, and the stated generation identities conditional on the supplied two-block and C3 definitions.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-29T20:05:02.016090+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -85,22 +27,19 @@
     "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11"
   ],
   "direct_in_degree": 7,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 13.033,
-  "load_bearing_step": "Under the supplied two-block identification, the Fourier power split defines singlet readout = a^2 and doublet readout = 2|b|^2, from which rho = 2r and Q = 1/3 + (2/3)r follow.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "8e0dcfc856bede72a6684fc443dd6cd4a4e8bf05c3cb2e774acb25e602c87a4b",
   "note_path": "docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite a retained Record-to-Fourier-power readout identification, or split the unconditional finite-additive core from the conditional C3 specialization.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -5049,6 +4988,104 @@
         "total_pass": 21
       },
       "verdict_rationale": "The runner genuinely performs 21 symbolic or exhaustive finite class-A checks and supports the finite-additivity, incidence-composition, scale-invariance, and displayed conditional identities. However, the generation-sector powers and C3/K-real lambda form are supplied without a direct retained or accepted authority, while the accepted Record premise supplies only finite scalar additivity. The asserted negative boundary is narrow: the arbitrary-ratio family supports absence of value selection, and finite additivity contains no update-law premise, but these checks do not certify a broader no-go. For N1-N8, only these narrow mechanisms are evidenced, the two walls are distinct, no prior residual witness is invoked, rhetoric-resolution testing is not exhaustive, indexed alternatives do not supply the missing generation bridge, and the strongest steelman\u2014adding retained weighting, dynamics, or generation-readout authority\u2014remains outside the packet."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:27.568388+00:00",
+      "audit_date": "2026-07-29T20:05:02.016090+00:00",
+      "audit_invocation_history": [
+        "e11fe28120314df08e25621c8ce0dd0a",
+        "d0eae68957f84285b6408a7879705621"
+      ],
+      "audit_invocation_id": "d0eae68957f84285b6408a7879705621",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 67,
+            "B": 3,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/record_function_finite_sector_algebra_2026_06_05.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": "For any supplied positive real mass triple, the normalized C3 DFT gives exact reconstruction, a symmetric scale- and permutation-invariant r coordinate, Q = 1/3 + 2r/3 with r unselected, and an S3-invariant folded phase for the unordered triple, including the c = 0 boundary.",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "Exact Fourier identity a_0^2-2|z|^2=3(a^2-2|b|^2) and equivalent polynomial zero locus on Herm_circ(3), including b=0, with the kappa=2 ratio form restricted to b!=0."
+        },
+        "dep_claim_type": {
+          "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": "positive_theorem",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": "retained",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+          "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 13.027,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/record_function_finite_sector_algebra_2026_06_05.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "input_mismatch",
+            "cache_input_fingerprint_sha256": "2fd016d1d4b863f202262ee13b66a6ebc21d47389fd7a2016f8b70adeea54d66",
+            "cache_runner_sha256": "cd69cf2741221e3442d509fac42e3f5170b4e21eff4ca98354e421c3752654cf",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "cd69cf2741221e3442d509fac42e3f5170b4e21eff4ca98354e421c3752654cf",
+        "runner_path": "scripts/record_function_finite_sector_algebra_2026_06_05.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 737
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260729-d806c6ff",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-additivity, coarse-graining, ratio, and C3 identities are exact, but the identification of one-third Fourier-projection powers with scalar record coordinates is explicitly supplied rather than derived by either retained authority.",
+      "claim_scope": "Finite additive record-sector vectors, incidence-matrix coarse-graining, scale-invariant coordinates, and the stated generation identities conditional on the supplied two-block and C3 definitions.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-29T20:05:02.016090+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Under the supplied two-block identification, the Fourier power split defines singlet readout = a^2 and doublet readout = 2|b|^2, from which rho = 2r and Q = 1/3 + (2/3)r follow.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite a retained Record-to-Fourier-power readout identification, or split the unconditional finite-additive core from the conditional C3 specialization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 29,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "Issue: The C3 extension assumes that one third of the trivial and doublet Fourier-projection powers are scalar record coordinates. Why this blocks: the retained authorities establish the Fourier algebra but explicitly do not establish that Record-to-power readout identification, so the full claimed scope remains conditional despite all 32 runner checks passing. Repair target: supply a retained bridge theorem for that identification or separate the unconditional record-function theorem from the conditional specialization. Claim boundary until fixed: the finite-additive vector and incidence algebra remains exact, while the generation-coordinate consequences hold only under the named input; for the derived negative boundary, N1/N7 are supported by the arbitrary-p construction, identity-versus-swap update counterfamily, normalization/ratio distinction, b=0 boundary, and wrong-doublet rejector, N2/N3 keep the value-selection and dynamics limits distinct and expose the supplied assumption, N4 has no prior residual witness, N5 makes no resolution-universal physical assertion, N6 finds no approved primitive closing the identification, and N8 supplies no applicable retirement mechanism."
     }
   ],
   "prose_corrections": [],
@@ -5063,14 +5100,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 29,
-    "B": 3,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 32
+    "total_pass": 0
   },
   "runner_path": "scripts/record_function_finite_sector_algebra_2026_06_05.py",
   "title": "Record Function Finite Sector Algebra",
   "transitive_descendants": 740,
-  "verdict_rationale": "Issue: The C3 extension assumes that one third of the trivial and doublet Fourier-projection powers are scalar record coordinates. Why this blocks: the retained authorities establish the Fourier algebra but explicitly do not establish that Record-to-power readout identification, so the full claimed scope remains conditional despite all 32 runner checks passing. Repair target: supply a retained bridge theorem for that identification or separate the unconditional record-function theorem from the conditional specialization. Claim boundary until fixed: the finite-additive vector and incidence algebra remains exact, while the generation-coordinate consequences hold only under the named input; for the derived negative boundary, N1/N7 are supported by the arbitrary-p construction, identity-versus-swap update counterfamily, normalization/ratio distinction, b=0 boundary, and wrong-doublet rejector, N2/N3 keep the value-selection and dynamics limits distinct and expose the supplied assumption, N4 has no prior residual witness, N5 makes no resolution-universal physical assertion, N6 finds no approved primitive closing the identification, and N8 supplies no applicable retirement mechanism."
+  "verdict_rationale": null
 }

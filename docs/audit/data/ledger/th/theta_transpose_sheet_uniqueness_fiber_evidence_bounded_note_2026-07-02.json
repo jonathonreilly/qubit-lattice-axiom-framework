@@ -1,79 +1,24 @@
 {
-  "audit_date": "2026-07-25T13:18:10.340729+00:00",
-  "audit_invocation_history": [
-    "7e2e1cc0c7e841c589f53452358d7aa9"
-  ],
-  "audit_invocation_id": "7e2e1cc0c7e841c589f53452358d7aa9",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 2,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "c90212493ed1f40a97e2365e236eb8620eb3706de7d641df453ed6af786b69c5",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "c90212493ed1f40a97e2365e236eb8620eb3706de7d641df453ed6af786b69c5",
-    "runner_path": "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-batch-A-20260725-b12ab48d",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The singlet multiplicities independently follow from standard SU(3) tensor decompositions, and transpose isometry supports matching Jacobian singular spectra. However, the source-runner convergence counts disagree, and equality of two trace invariants is not shown to classify distinct fiber branches.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02",
-  "claim_scope": "Deterministic bounded computational evidence for two sampled fixed-(A,B) fibers, numerical local rigidity at one generic triple and its transpose, and singlet multiplicities at three specified low multidegrees; no global sheet-uniqueness theorem.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (deterministic rigidity certificates,",
-  "claim_type_last_reviewed": "2026-07-25T13:18:10.340729+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -81,22 +26,19 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "With (A, B) fixed, the two searches reportedly produced 28/60 and 10/30 converged solutions, all reproducing the original orbit's flip-odd invariant vector, so no second branch was found.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "stretch_attempt_negative"
-  ],
   "note_hash": "28bd6b97d3e2203d43b422b7e88ad335a6f248bb8c2267ffc1b136b22c86f41b",
   "note_path": "docs/THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": "Re-audit after synchronizing the note with current runner output and either narrowing \u201cno second branch found\u201d to \u201cno different tested invariant vector found\u201d or adding a complete orbit/branch classifier.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -153,6 +95,101 @@
         "total_pass": 8
       },
       "verdict_rationale": "The source computes rather than merely prints the reported search outcomes, singular values, and representation-theoretic nullities, with no imported fitted value or contested cross-note premise. The search is local and sample-limited, and the Jacobians are numerical, but the note repeatedly preserves those limitations and does not claim uniqueness. The stated bounded evidence therefore follows on its own terms."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:30.989888+00:00",
+      "audit_date": "2026-07-25T13:18:10.340729+00:00",
+      "audit_invocation_history": [
+        "7e2e1cc0c7e841c589f53452358d7aa9"
+      ],
+      "audit_invocation_id": "7e2e1cc0c7e841c589f53452358d7aa9",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 2,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "c90212493ed1f40a97e2365e236eb8620eb3706de7d641df453ed6af786b69c5",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "c90212493ed1f40a97e2365e236eb8620eb3706de7d641df453ed6af786b69c5",
+        "runner_path": "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-batch-A-20260725-b12ab48d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The singlet multiplicities independently follow from standard SU(3) tensor decompositions, and transpose isometry supports matching Jacobian singular spectra. However, the source-runner convergence counts disagree, and equality of two trace invariants is not shown to classify distinct fiber branches.",
+      "claim_scope": "Deterministic bounded computational evidence for two sampled fixed-(A,B) fibers, numerical local rigidity at one generic triple and its transpose, and singlet multiplicities at three specified low multidegrees; no global sheet-uniqueness theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T13:18:10.340729+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "With (A, B) fixed, the two searches reportedly produced 28/60 and 10/30 converged solutions, all reproducing the original orbit's flip-odd invariant vector, so no second branch was found.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after synchronizing the note with current runner output and either narrowing \u201cno second branch found\u201d to \u201cno different tested invariant vector found\u201d or adding a complete orbit/branch classifier.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the source reports 28/60 and 10/30 convergences, while the authenticated runner reports 29/60 and 11/30; additionally, the runner flags only solutions with a different two-trace invariant vector and does not exclude a distinct branch sharing that vector. Why this blocks: the stated numerical evidence is stale, and the implemented classifier does not establish the advertised branch-level search result, although independent SU(3) decompositions confirm the three singlet dimensions and transpose isometry explains the matching Jacobian spectra. Repair target: regenerate the source numbers and either prove the invariant vector is a complete branch classifier or report only the invariant-vector result actually tested. Claim boundary until fixed: the runner supports two finite searches with no differing tested invariant vector, local full-rank Jacobians on the sampled sheets, and low-multidegree singlet counts, but not the note's exact search statistics or literal \u201cno second branch found\u201d statement."
     }
   ],
   "prose_corrections": [],
@@ -160,12 +197,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 8,
+    "C": 0,
     "D": 0,
-    "total_pass": 8
+    "total_pass": 0
   },
   "runner_path": "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py",
   "title": "The Transpose-Sheet Sliver Strengthened on Three Angles: Expanded Fiber Search Finds No Second Branch in Two Independent Families, Both Sheets Pass Matching Rigidity Certificates, and Low-Multidegree Even Invariant Counts Are Pair-Generated (Bounded Evidence Note)",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the source reports 28/60 and 10/30 convergences, while the authenticated runner reports 29/60 and 11/30; additionally, the runner flags only solutions with a different two-trace invariant vector and does not exclude a distinct branch sharing that vector. Why this blocks: the stated numerical evidence is stale, and the implemented classifier does not establish the advertised branch-level search result, although independent SU(3) decompositions confirm the three singlet dimensions and transpose isometry explains the matching Jacobian spectra. Repair target: regenerate the source numbers and either prove the invariant vector is a complete branch classifier or report only the invariant-vector result actually tested. Claim boundary until fixed: the runner supports two finite searches with no differing tested invariant vector, local full-rank Jacobians on the sampled sheets, and low-multidegree singlet counts, but not the note's exact search statistics or literal \u201cno second branch found\u201d statement."
+  "verdict_rationale": null
 }

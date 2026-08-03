@@ -1,90 +1,42 @@
 {
-  "audit_date": "2026-07-25T17:57:46.660600+00:00",
-  "audit_invocation_history": [
-    "86f71f52088349c0a3f88f191ca2a124"
-  ],
-  "audit_invocation_id": "86f71f52088349c0a3f88f191ca2a124",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 2,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "324f73e90284c7c39141090b4a321dc45160a9c40841d34a0824925b2ddb81fe",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "324f73e90284c7c39141090b4a321dc45160a9c40841d34a0824925b2ddb81fe",
-    "runner_path": "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-cf477224",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The listed stdout is internally consistent with the runner source and independent arithmetic checks, but the minimal axioms do not select the runner's four-component Dirac carrier, update law, mass-field coupling, initial state, or bias functional. No retained authority for those load-bearing choices is cited.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "dirac_field_smoothing_note",
-  "claim_scope": "Finite m0 = 0.10 field-smoothing scan under the source's declared four-component Dirac-walk, mass-profile, and bias-readout choices.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T17:57:46.660600+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The binding evidence of this note is exactly the finite m0 = 0.10 runner output on the declared N and offset scan grid.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "stretch_attempt_negative"
-  ],
   "note_hash": "e571b6c4b6e15d5a5dd223e1d699ddfb896cd63188ae8abaeb148ab8a73f60e4",
   "note_path": "docs/DIRAC_FIELD_SMOOTHING_NOTE.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge: cite retained derivations for the four-component Dirac carrier, evolution rule, mass-field insertion, initial state, and bias functional, or reclassify the row explicitly as a software-output artifact without framework-derivation status.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1410,19 +1362,104 @@
         "total_pass": 1
       },
       "verdict_rationale": "The narrowed claim is a finite computational result, and the runner source performs the load-bearing evolution and readout rather than printing hard-coded expected values. The quoted biases, TOWARD counts, monotonicity results, and Gaussian fit match the completed stdout. The result establishes only the declared code-path output, not nearby-mass robustness, an asymptotic law, or a physical gravity observable."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:16.766944+00:00",
+      "audit_date": "2026-07-25T17:57:46.660600+00:00",
+      "audit_invocation_history": [
+        "86f71f52088349c0a3f88f191ca2a124"
+      ],
+      "audit_invocation_id": "86f71f52088349c0a3f88f191ca2a124",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 2,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "324f73e90284c7c39141090b4a321dc45160a9c40841d34a0824925b2ddb81fe",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "324f73e90284c7c39141090b4a321dc45160a9c40841d34a0824925b2ddb81fe",
+        "runner_path": "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-cf477224",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The listed stdout is internally consistent with the runner source and independent arithmetic checks, but the minimal axioms do not select the runner's four-component Dirac carrier, update law, mass-field coupling, initial state, or bias functional. No retained authority for those load-bearing choices is cited.",
+      "claim_scope": "Finite m0 = 0.10 field-smoothing scan under the source's declared four-component Dirac-walk, mass-profile, and bias-readout choices.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-25T17:57:46.660600+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The binding evidence of this note is exactly the finite m0 = 0.10 runner output on the declared N and offset scan grid.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite retained derivations for the four-component Dirac carrier, evolution rule, mass-field insertion, initial state, and bias functional, or reclassify the row explicitly as a software-output artifact without framework-derivation status.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Independent checks confirm the matched-strength ratios, sign counts, non-monotonicity flags, and Gaussian fit alpha = 3.053 with R^2 = 0.8098; the runner genuinely computes rather than printing those values. The result nevertheless remains conditional because the restricted packet supplies no retained derivation of the chosen carrier, dynamics, field coupling, state, or readout from the framework axioms. For the finite-scan negative assertion, N1/N7 alternate carrier, readout, normalization, and grid routes remain untested; N2 establishes no independent universal barriers, N3 exposes explicit load-bearing setup choices, N4 has no prior residual witness, N5 is finite-grid rhetoric only, N6 supplied premises do not close dynamics or readout, and N8 supplies no applicable cross-cycle closure."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 4,
+    "A": 0,
     "B": 0,
-    "C": 1,
+    "C": 0,
     "D": 0,
-    "total_pass": 5
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py",
   "title": "Dirac Field Smoothing Note \u2014 Finite m\u2080 = 0.10 Runner Output (Binding)",
   "transitive_descendants": 0,
-  "verdict_rationale": "Independent checks confirm the matched-strength ratios, sign counts, non-monotonicity flags, and Gaussian fit alpha = 3.053 with R^2 = 0.8098; the runner genuinely computes rather than printing those values. The result nevertheless remains conditional because the restricted packet supplies no retained derivation of the chosen carrier, dynamics, field coupling, state, or readout from the framework axioms. For the finite-scan negative assertion, N1/N7 alternate carrier, readout, normalization, and grid routes remain untested; N2 establishes no independent universal barriers, N3 exposes explicit load-bearing setup choices, N4 has no prior residual witness, N5 is finite-grid rhetoric only, N6 supplied premises do not close dynamics or readout, and N8 supplies no applicable cross-cycle closure."
+  "verdict_rationale": null
 }

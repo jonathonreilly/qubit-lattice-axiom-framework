@@ -1,74 +1,45 @@
 {
-  "audit_date": "2026-07-29T17:43:10.584742+00:00",
-  "audit_invocation_history": [
-    "e017ddd95b1a4ddb83daf08c3e56dd3e",
-    "7bd0989d658a4afd9138d3f83e4bb1c7"
-  ],
-  "audit_invocation_id": "7bd0989d658a4afd9138d3f83e4bb1c7",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact finite-dimensional diagonalization and scalar identities for the explicitly defined real-linear map L and quadratic form Q on C^2, without physical identification.",
-      "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Exact positive-real algebra mapping a fixed D=4 density coefficient ratio to an inverse fourth-root scale ratio, including sign, reference normalization, and the stated APBC endpoint evaluations; no electroweak VEV identification."
-    },
-    "dep_claim_type": {
-      "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
-      "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration"
-    },
-    "dep_effective_status": {
-      "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
-      "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
-    },
-    "deps": [
-      "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-      "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 10.533,
-    "runner_hash": "737b69a09537d32fe382e1104d6fdc76e304ad90c46358e454a9dc608349b61a",
-    "transitive_descendants": 740
-  },
-  "audit_status": "audited_decoration",
-  "auditor": "codex-audit-batch-B-20260729-f5cee03d",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Within the restricted algebraic scope, direct substitution and cancellation prove the positive inverse-fourth-root relation. The physical Higgs identification, endpoint selection, and absolute scale are explicitly outside that scope.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
-  "claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
-  "claim_type": "decoration",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T17:43:10.584742+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+  "decoration_parent_claim_id": null,
   "deps": [
     "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
     "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
   ],
   "direct_in_degree": 2,
-  "effective_status": "decoration_under_hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
-  "effective_status_reason": "decoration_parent_retained",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "decoration_under_hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 10.539,
-  "load_bearing_step": "Substituting q(H(v))=v^2 into rho_*=Aq(H(v))^2 and equating two positive fixed-density endpoints gives v(L)/v_ref=(A_ref/A(L))^(1/4).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "cf8bfc734a10fca3f6a3a6c73afc80c6c7a62872c082050ba772a02bc2268c67",
   "note_path": "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
-  "notes_for_re_audit_if_any": "Re-audit if a revision adds an independently derived physical carrier/readout identification or external comparator beyond the cited D4 bridge.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -505,19 +476,85 @@
         "total_pass": 13
       },
       "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The packet explicitly scopes the as-written runner verification total: the source expects TOTAL: PASS=12 FAIL=0, while the supplied runner executes 13 checks and reports TOTAL: PASS=13 FAIL=0. Although the class-A finite algebra closes, that factual mismatch leaves the full scoped claim false as written, so audited_failed is the correct conservative tuple.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260722-a65805a8\", \"judge\": 1, \"rationale\": \"The packet explicitly scopes the as-written runner verification total: the source expects TOTAL: PASS=12 FAIL=0, while the supplied runner executes 13 checks and reports TOTAL: PASS=13 FAIL=0. Although the class-A finite algebra closes, that factual mismatch leaves the full scoped claim false as written, so audited_failed is the correct conservative tuple.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260722-4a46c039\", \"judge\": 2, \"rationale\": \"The packet explicitly makes the as-written runner verification total part of the supplied claim scope. The source predicts PASS=12, while the completed runner executes and reports PASS=13; under the rubric, that stale completed-run mismatch is valid audit evidence even though the underlying finite algebra closes.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260722-3f08296a\", \"judge\": 3, \"rationale\": \"The restricted packet confirms 13 executed passing checks (3+4+2+4), while the source note\\u2019s Verification block predicts TOTAL: PASS=12 FAIL=0. Because the authenticated claim scope expressly includes the as-written runner verification total, the full chain does not close despite the underlying class-A algebra being correct.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260722-40cd6dcd\", \"judge\": 4, \"rationale\": \"The class-A finite algebra is supported, but the source's Verification block explicitly predicts TOTAL: PASS=12 FAIL=0 while the included completed runner reports TOTAL: PASS=13 FAIL=0. Because the packet treats completed stale-number mismatches as valid audit evidence, the as-written verification contract does not close on its own terms.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260722-a41e5520\", \"judge\": 5, \"rationale\": \"The source note explicitly predicts TOTAL: PASS=12 FAIL=0, while the completed primary runner reports TOTAL: PASS=13 FAIL=0. The packet expressly treats completed runner mismatches and stale numbers as valid audit evidence. Although the finite algebra closes, the as-written verification claim is false, so the bounded-theorem artifact cannot be ratified until that mismatch is repaired.\", \"tuple\": [\"first\", \"audited_failed\", \"bounded_theorem\", \"For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.\", \"A\", null, []]}]"
+    },
+    {
+      "archived_at": "2026-08-03T07:42:20.388117+00:00",
+      "audit_date": "2026-07-29T17:43:10.584742+00:00",
+      "audit_invocation_history": [
+        "e017ddd95b1a4ddb83daf08c3e56dd3e",
+        "7bd0989d658a4afd9138d3f83e4bb1c7"
+      ],
+      "audit_invocation_id": "7bd0989d658a4afd9138d3f83e4bb1c7",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact finite-dimensional diagonalization and scalar identities for the explicitly defined real-linear map L and quadratic form Q on C^2, without physical identification.",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Exact positive-real algebra mapping a fixed D=4 density coefficient ratio to an inverse fourth-root scale ratio, including sign, reference normalization, and the stated APBC endpoint evaluations; no electroweak VEV identification."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.533,
+        "runner_hash": "737b69a09537d32fe382e1104d6fdc76e304ad90c46358e454a9dc608349b61a",
+        "transitive_descendants": 740
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-batch-B-20260729-f5cee03d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the restricted algebraic scope, direct substitution and cancellation prove the positive inverse-fourth-root relation. The physical Higgs identification, endpoint selection, and absolute scale are explicitly outside that scope.",
+      "claim_scope": "For the defined neutral vector H(v) and a supplied positive quartic D=4 density, the q=v^2 substitution, inverse fourth-root fixed-density ratio, and as-written runner verification total.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-29T17:43:10.584742+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting q(H(v))=v^2 into rho_*=Aq(H(v))^2 and equating two positive fixed-density endpoints gives v(L)/v_ref=(A_ref/A(L))^(1/4).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if a revision adds an independently derived physical carrier/readout identification or external comparator beyond the cited D4 bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "Independent substitution gives q=2(v^2/2)=v^2, cancellation gives the unique positive inverse fourth root, and the exact endpoint, negative-control, and scalar-readout arithmetic agrees with the runner. Nevertheless, the result is class-A algebra already contained in the cited fixed-density bridge, with q=v^2 only a defined neutral-vector substitution and no external comparator or new physical content. The negative controls establish only two local substitution failures inside the D=4 equation; they do not claim route exhaustion, and no independent wall set, prior-witness residual, rhetoric-resolution ladder, partial-closure reframe, unresolved steelman, or cross-cycle echo bears on this decoration verdict. Endpoint selection, physical Higgs identification, and absolute scale remain outside the audited scope."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 12,
-    "B": 5,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 17
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
   "title": "Hierarchy EW Order-Parameter D4 Density Readout Bridge",
   "transitive_descendants": 743,
-  "verdict_rationale": "Independent substitution gives q=2(v^2/2)=v^2, cancellation gives the unique positive inverse fourth root, and the exact endpoint, negative-control, and scalar-readout arithmetic agrees with the runner. Nevertheless, the result is class-A algebra already contained in the cited fixed-density bridge, with q=v^2 only a defined neutral-vector substitution and no external comparator or new physical content. The negative controls establish only two local substitution failures inside the D=4 equation; they do not claim route exhaustion, and no independent wall set, prior-witness residual, rhetoric-resolution ladder, partial-closure reframe, unresolved steelman, or cross-cycle echo bears on this decoration verdict. Endpoint selection, physical Higgs identification, and absolute scale remain outside the audited scope."
+  "verdict_rationale": null
 }

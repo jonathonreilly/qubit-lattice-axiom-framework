@@ -1,93 +1,42 @@
 {
-  "audit_date": "2026-07-29T18:48:31.338443+00:00",
-  "audit_invocation_history": [
-    "d8d20d6d7b8a416d961c864e9bc9e485",
-    "094219a5a1214117984423d7e5dbb59c",
-    "c5ebaafcd7a1430795933df4d619dc1e"
-  ],
-  "audit_invocation_id": "c5ebaafcd7a1430795933df4d619dc1e",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 22,
-        "D": 1
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/mixed_os_transfer_representation_2026-05-30.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/mixed_os_transfer_representation_2026-05-30.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "cde3411fd2d22742356ef7be2b6e26b4f7947d3416e4e52e65f0b171a147b1e3",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "cde3411fd2d22742356ef7be2b6e26b4f7947d3416e4e52e65f0b171a147b1e3",
-    "runner_path": "scripts/mixed_os_transfer_representation_2026-05-30.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-c369e179",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The runner reports six passing checks, but its load-bearing source is clipped and the visible code declares BLOCK_MEASURE=2.0 before comparison. The restricted packet therefore cannot verify the complete computation or independently derived normalization.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "mixed_os_transfer_representation_bounded_note_2026-05-30",
-  "claim_scope": "Finite-carrier numerical comparison on the explicit runner carriers at m=0.5 and declared c_block=2: Berezin block-metric eigenvalues versus operator two-step transfer eigenvalues, plus the listed single-step indefiniteness control.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T18:48:31.338443+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "On the explicit finite carriers, the reflected Berezin block metric has one positive eigenvalue per mode equal to c_block\u00b7e^{-2E_j}, with c_block=2, while the single-step reflected metric is indefinite.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary",
-    "no_go_result"
-  ],
   "note_hash": "082f96aca007f178ea5311b424d3a1dbdf9ffa09498155f9b3f6a45f64d9a634",
   "note_path": "docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete exact source of scripts/mixed_os_transfer_representation_2026-05-30.py and independently verify that c_block=2 is extracted from the computed Gram rather than merely supplied before comparison.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -134,19 +83,107 @@
         "total_pass": 6
       },
       "verdict_rationale": "The load-bearing comparison is not a definition or external numerical match: the Berezin side is computed from the finite Grassmann propagator while the operator side is computed from the spatial-hop spectrum and Fock transfer construction. The runner output covers the displayed finite-carrier quantitative claims in scope, including c_block = 2, the e^{-2E} decay anchor, and the single-step indefinite negative control. CHECK 3 is correctly scoped as a shared-wrapper per-config fermion equality, not as an independent mixed-observable gauge-fermion test."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:24.700305+00:00",
+      "audit_date": "2026-07-29T18:48:31.338443+00:00",
+      "audit_invocation_history": [
+        "d8d20d6d7b8a416d961c864e9bc9e485",
+        "094219a5a1214117984423d7e5dbb59c",
+        "c5ebaafcd7a1430795933df4d619dc1e"
+      ],
+      "audit_invocation_id": "c5ebaafcd7a1430795933df4d619dc1e",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 22,
+            "D": 1
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/mixed_os_transfer_representation_2026-05-30.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/mixed_os_transfer_representation_2026-05-30.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "cde3411fd2d22742356ef7be2b6e26b4f7947d3416e4e52e65f0b171a147b1e3",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "cde3411fd2d22742356ef7be2b6e26b4f7947d3416e4e52e65f0b171a147b1e3",
+        "runner_path": "scripts/mixed_os_transfer_representation_2026-05-30.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260729-c369e179",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner reports six passing checks, but its load-bearing source is clipped and the visible code declares BLOCK_MEASURE=2.0 before comparison. The restricted packet therefore cannot verify the complete computation or independently derived normalization.",
+      "claim_scope": "Finite-carrier numerical comparison on the explicit runner carriers at m=0.5 and declared c_block=2: Berezin block-metric eigenvalues versus operator two-step transfer eigenvalues, plus the listed single-step indefiniteness control.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-29T18:48:31.338443+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On the explicit finite carriers, the reflected Berezin block metric has one positive eigenvalue per mode equal to c_block\u00b7e^{-2E_j}, with c_block=2, while the single-step reflected metric is indefinite.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete exact source of scripts/mixed_os_transfer_representation_2026-05-30.py and independently verify that c_block=2 is extracted from the computed Gram rather than merely supplied before comparison.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the primary runner\u2019s load-bearing source is clipped, so the dual Berezin/operator construction and all six reported PASS checks cannot be fully inspected; the visible code also declares BLOCK_MEASURE=2.0 before testing it. Why this blocks: completed stdout cannot substitute for source verification, so the equality and normalization are not independently auditable from this restricted packet. Repair target: provide the complete runner and demonstrate the normalization by extracting the ratio from the computed Gram. Claim boundary until fixed: the packet supports reported finite-carrier numerical agreement and the asserted single-step no-go control, not an audited representation theorem or independently fixed normalization."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 1,
+    "A": 0,
     "B": 0,
-    "C": 5,
+    "C": 0,
     "D": 0,
-    "total_pass": 6
+    "total_pass": 0
   },
   "runner_path": "scripts/mixed_os_transfer_representation_2026-05-30.py",
   "title": "Fermion-Sector OS Transfer Representation on the 2-Step Blocked Staggered Surface \u2014 Bounded Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the primary runner\u2019s load-bearing source is clipped, so the dual Berezin/operator construction and all six reported PASS checks cannot be fully inspected; the visible code also declares BLOCK_MEASURE=2.0 before testing it. Why this blocks: completed stdout cannot substitute for source verification, so the equality and normalization are not independently auditable from this restricted packet. Repair target: provide the complete runner and demonstrate the normalization by extracting the ratio from the computed Gram. Claim boundary until fixed: the packet supports reported finite-carrier numerical agreement and the asserted single-step no-go control, not an audited representation theorem or independently fixed normalization."
+  "verdict_rationale": null
 }

@@ -1,101 +1,44 @@
 {
-  "audit_date": "2026-07-25T06:29:25.156452+00:00",
-  "audit_invocation_history": [
-    "f10e08eb372241e68d075cae50eaafc1"
-  ],
-  "audit_invocation_id": "f10e08eb372241e68d075cae50eaafc1",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true,
-      "runner_path": "scripts/equivalence_principle_harness.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/two_body_momentum_harness.py": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24"
-    },
-    "load_bearing_score": 6.044,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/equivalence_principle_harness.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "98afae8a4c22ef56e44d5c1e755a3db0f7718888c46b5f3279c3afd1e5a87522",
-        "cache_status": "ok"
-      },
-      "scripts/two_body_momentum_harness.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "98afae8a4c22ef56e44d5c1e755a3db0f7718888c46b5f3279c3afd1e5a87522",
-    "runner_path": "scripts/equivalence_principle_harness.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 32
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-6d30ddb8",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The code-internal amplitude cancellation and tabulated spreads check out, but the supplied premises do not bridge the code-defined propagation and centroid to an inertial or equivalence-principle observable.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "equivalence_principle_harness_note",
-  "claim_scope": "For the supplied h=0.5, W=8, L=12 lattice code and external source at z=5, the valley-linear and spent-delay propagators exhibit amplitude-rescaling-invariant centroid shifts for c = 0.5, 1, 2, 5 and packet-shape dependence for the five listed normalized packets.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T06:29:25.156452+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/two_body_momentum_harness.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 6.044,
-  "load_bearing_step": "Global amplitude scaling cancels exactly in the centroid ratio, so global amplitude is not an independent inertial parameter in the test-particle regime.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "0bf777ec0bec4458088828592cec76f91c1b9f2cae9d4647268b807962060d05",
   "note_path": "docs/EQUIVALENCE_PRINCIPLE_HARNESS_NOTE.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: narrow the note to the code-internal amplitude/shape regression claim and add a dated boundary line disclaiming framework-level inertial or gravitational identification, unless retained dynamics and readout bridges are supplied.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -249,19 +192,113 @@
         "total_pass": 4
       },
       "verdict_rationale": "Five-judge panel majority ratified the second audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: second / audited_clean / bounded_theorem / class C; J2: second / audited_clean / bounded_theorem / class C; J3: second / audited_clean / bounded_theorem / class C; J4: second / audited_clean / bounded_theorem / class C; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: J1: The scoped claim is a bounded finite-lattice harness result. Amplitude cancellation is algebraic, but the same audited claim also depends on the computed valley/spent_delay packet-shape centroid shifts and spreads. That decisive comparison is a deterministic first-principles computation on the specified propagator, so class C is the correct load-bearing class; the clean bounded verdict and claim_type close from the runner and note. | J2: The bounded claim closes cleanly: the source and cached runner verify amplitude-scaling invariance and packet-shape-dependent centroid shifts on the fixed lattice family, while the note explicitly excludes persistent-pattern mass closure. The load-bearing result is not purely algebraic because the packet-shape dependence and reported spreads come from deterministic lattice propagation, so class C is the correct class for the audited tuple. | J3: The audited claim includes the fixed-lattice packet-shape-dependent centroid shifts, not only the algebraic cancellation under global amplitude rescaling. Those deltas and spreads are produced by the runner's finite lattice propagation computation, so the load-bearing class is C while the bounded clean verdict and bounded_theorem scope are correct. | J4: The bounded claim closes: the runner supports amplitude-scaling invariance and packet-shape-dependent centroid shifts on the fixed lattice family, while the note explicitly avoids persistent-pattern mass-law closure. The load-bearing class is C because the packet-shape deltas and spreads come from an actual finite lattice/action propagation computation; only the amplitude-cancellation subclaim is purely algebraic. | J5: The bounded claim is clean: the runner instantiates the fixed 3D lattice family and computes the amplitude-invariant deltas and packet-shape-dependent centroid shifts without an external comparator or hard-coded expected outputs. Because the scoped claim includes the packet-shape dependence/spreads, the load-bearing step is a finite first-principles lattice computation, not only the algebraic amplitude-cancellation identity."
+    },
+    {
+      "archived_at": "2026-08-03T07:42:17.321857+00:00",
+      "audit_date": "2026-07-25T06:29:25.156452+00:00",
+      "audit_invocation_history": [
+        "f10e08eb372241e68d075cae50eaafc1"
+      ],
+      "audit_invocation_id": "f10e08eb372241e68d075cae50eaafc1",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": null,
+          "exists": true,
+          "runner_path": "scripts/equivalence_principle_harness.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/two_body_momentum_harness.py": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24"
+        },
+        "load_bearing_score": 6.044,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/equivalence_principle_harness.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "98afae8a4c22ef56e44d5c1e755a3db0f7718888c46b5f3279c3afd1e5a87522",
+            "cache_status": "ok"
+          },
+          "scripts/two_body_momentum_harness.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "98afae8a4c22ef56e44d5c1e755a3db0f7718888c46b5f3279c3afd1e5a87522",
+        "runner_path": "scripts/equivalence_principle_harness.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 32
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-6d30ddb8",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The code-internal amplitude cancellation and tabulated spreads check out, but the supplied premises do not bridge the code-defined propagation and centroid to an inertial or equivalence-principle observable.",
+      "claim_scope": "For the supplied h=0.5, W=8, L=12 lattice code and external source at z=5, the valley-linear and spent-delay propagators exhibit amplitude-rescaling-invariant centroid shifts for c = 0.5, 1, 2, 5 and packet-shape dependence for the five listed normalized packets.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T06:29:25.156452+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Global amplitude scaling cancels exactly in the centroid ratio, so global amplitude is not an independent inertial parameter in the test-particle regime.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the note to the code-internal amplitude/shape regression claim and add a dated boundary line disclaiming framework-level inertial or gravitational identification, unless retained dynamics and readout bridges are supplied.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: centroid ratios are homogeneous and the two relative spreads independently recompute to 159.21% and 155.21%, but the helper code supplies rather than derives the propagation law, action phases, field, cutoff, and centroid observable. Why this blocks: the accepted premises explicitly supply no dynamics or physical-observable bridge, so amplitude cancellation cannot by itself establish that amplitude is not an inertial parameter or an equivalence-principle statement. No-go gate: N1 supplies only the finite packet-shape route; N2 does not establish independence of the dynamics/action and centroid-to-inertial walls; N3's authenticated \u201cis not\u201d occurrence is load-bearing; N4 has no matched prior residual; N5 lacks five-resolution tests; N6's supplied primitives close neither wall; N7 has no independently resolved steelman; and N8 is not fully dispositioned. Repair target: supply retained dynamics/action and centroid-to-inertial-response bridges, or narrow the note to a code-regression result; claim boundary until fixed: only the listed finite code outputs and algebraic amplitude cancellation for the tested amplitudes are supported."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 2,
+    "A": 0,
     "B": 0,
-    "C": 2,
+    "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/equivalence_principle_harness.py",
   "title": "Equivalence Principle Harness Note",
   "transitive_descendants": 32,
-  "verdict_rationale": "Issue: centroid ratios are homogeneous and the two relative spreads independently recompute to 159.21% and 155.21%, but the helper code supplies rather than derives the propagation law, action phases, field, cutoff, and centroid observable. Why this blocks: the accepted premises explicitly supply no dynamics or physical-observable bridge, so amplitude cancellation cannot by itself establish that amplitude is not an inertial parameter or an equivalence-principle statement. No-go gate: N1 supplies only the finite packet-shape route; N2 does not establish independence of the dynamics/action and centroid-to-inertial walls; N3's authenticated \u201cis not\u201d occurrence is load-bearing; N4 has no matched prior residual; N5 lacks five-resolution tests; N6's supplied primitives close neither wall; N7 has no independently resolved steelman; and N8 is not fully dispositioned. Repair target: supply retained dynamics/action and centroid-to-inertial-response bridges, or narrow the note to a code-regression result; claim boundary until fixed: only the listed finite code outputs and algebraic amplitude cancellation for the tested amplitudes are supported."
+  "verdict_rationale": null
 }

@@ -5576,6 +5576,97 @@ class CampaignContractTest(unittest.TestCase):
                 selected = audit_loop.first_ready_forensic_claim({"quarantined"})
         self.assertEqual(selected, "next_canary")
 
+    def test_forensic_selector_applies_worker_rotation_within_queue(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            queue = Path(tmp) / "queue.json"
+            queue.write_text(
+                json.dumps(
+                    {
+                        "queue": [
+                            {
+                                "claim_id": "first",
+                                "ready": True,
+                                "audit_status": "unaudited",
+                                "criticality": "critical",
+                            },
+                            {
+                                "claim_id": "rotated",
+                                "ready": True,
+                                "audit_status": "unaudited",
+                                "criticality": "critical",
+                            },
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with mock.patch.object(audit_loop, "QUEUE", queue), mock.patch.object(
+                batch, "source_requires_forensic", return_value=True
+            ), mock.patch.object(
+                batch,
+                "rotate_priority_tiers",
+                side_effect=lambda rows, _worker_id: list(reversed(rows)),
+            ) as rotate:
+                selected = audit_loop.first_ready_forensic_claim(
+                    worker_id="employee-beta"
+                )
+
+        self.assertEqual(selected, "rotated")
+        rotate.assert_called_once()
+        self.assertEqual(rotate.call_args.args[1], "employee-beta")
+
+    def test_forensic_selector_applies_worker_rotation_to_alternate_source(self):
+        ledger_rows = {
+            "first": {"claim_id": "first", "criticality": "critical"},
+            "rotated": {
+                "claim_id": "rotated",
+                "criticality": "critical",
+            },
+        }
+        with mock.patch.object(
+            batch, "load_rows", return_value=ledger_rows
+        ), mock.patch.object(
+            batch,
+            "source_queue_rows",
+            side_effect=lambda source, _rows: (
+                list(ledger_rows.values()) if source == "dispatch" else []
+            ),
+        ), mock.patch.object(
+            batch.audit_runner,
+            "determine_audit_role",
+            return_value=("first", "cross_family"),
+        ), mock.patch.object(
+            batch, "source_requires_forensic", return_value=True
+        ), mock.patch.object(
+            batch,
+            "rotate_priority_tiers",
+            side_effect=lambda rows, _worker_id: list(reversed(rows)),
+        ):
+            selected = audit_loop.first_ready_forensic_claim(
+                include_alternate_sources=True,
+                worker_id="employee-beta",
+            )
+
+        self.assertEqual(selected, "rotated")
+        self.assertEqual(audit_loop.PROGRESS["last_canary_source"], "dispatch")
+
+    def test_forensic_canary_forwards_worker_id_to_selector(self):
+        args = _args()
+        args.worker_id = "employee-beta"
+        with mock.patch.object(
+            batch, "load_campaign_exclusion_records", return_value=[]
+        ), mock.patch.object(
+            audit_loop, "first_ready_forensic_claim", return_value=None
+        ) as selector:
+            rc = audit_loop.run_forensic_canary(args)
+
+        self.assertEqual(rc, 0)
+        selector.assert_called_once_with(
+            set(),
+            include_alternate_sources=True,
+            worker_id="employee-beta",
+        )
+
     def test_forensic_mechanics_circuit_uses_distinct_claims(self):
         def record(claim_id: str, detail: str) -> dict:
             return {

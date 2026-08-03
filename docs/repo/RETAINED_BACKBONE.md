@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 115 |
+| Retained positive rows | 116 |
 | Retained bounded rows | 320 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 28 |
 
-## Retained positive rows (115)
+## Retained positive rows (116)
 
 Sorted by load-bearing graph score (descending).
 
@@ -38,6 +38,7 @@ Sorted by load-bearing graph score (descending).
 - [`site_phase_cube_shift_intertwiner_note`](../../docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) — score 24.029; audited 2026-05-02T15:37:57.008099+00:00
 - [`su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`](../../docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md) — score 23.298; audited 2026-07-29T18:19:30.856016+00:00
 - [`staggered_only_det_positivity_case_a_note_2026-05-17`](../../docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) — score 21.263; audited 2026-05-23T19:08:58.399053+00:00
+- [`gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) — score 20.352; audited 2026-08-03T13:00:12.734317+00:00
 - [`s3_taste_cube_decomposition_note`](../../docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md) — score 19.021; audited 2026-05-23T14:10:38.971653+00:00
 - [`gauge_scalar_temporal_completion_theorem_note`](../../docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) — score 17.762; audited 2026-05-23T13:36:42.061961+00:00
 - [`koide_dweh_cyclic_compression_note_2026-04-18`](../../docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md) — score 16.557; audited 2026-05-05T09:49:41.642799+00:00

@@ -52,7 +52,7 @@ RUNNERS = (
         "source_sha256": "dedd76c9cc1d99e6b5b186b964fb2d3ffa34a724d147571069bf23819771b5c2",
         "marker": "CYCLE871_OPENREFERENCE_ENDPOINT_PACKET_PASS",
         "receipt": "outputs/cycle871_openreference_endpoint_packet_bridge_receipt_2026_08_02.json",
-        "receipt_sha256": "6d7c18ac1b9529cf621ff04c7bf49fd8436a4c8e20931b4a5aba9a10908b4d51",
+        "receipt_sha256": "75fbf1c0db9c44111564ef32b2d727a6912ebddfdd07bca50053f573c6144a4c",
     },
     {
         "name": "cycle871_independent",

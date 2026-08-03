@@ -5,6 +5,9 @@
 **Audit:** unset
 **Date:** 2026-08-02
 
+**Primary runner:**
+[Cycle-871 cold package acceptance](../scripts/frontier_cycle871_openreference_endpoint_packet_package_acceptance_2026_08_02.py)
+
 ## Result
 
 On a supplied selected spatial seam and signed local coframe, the landed

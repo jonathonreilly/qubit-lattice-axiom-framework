@@ -73,11 +73,13 @@ STDOUT_LIMIT_BYTES = 150 * 1024
 # Declared storage / search caps.  Every cap is reported with a saturation
 # counter so a cap that bites can never be mistaken for an absence of data.
 CADENCE_STORE_CAP = HORIZON_CHUNKS + 1        # ticks 0..H inclusive
-PERIOD_SCAN_GAP_CAP = 2_048                   # gaps fed to period detection
-PERIOD_TRANSIENT_OFFSETS = (0, 1, 2, 4, 8, 16)
+PERIOD_TAIL_WINDOW = 2_048                    # longest tail fed to the ladder
+PERIOD_TAIL_FLOOR = 16                        # shortest tail on the ladder
 PERIOD_MAX_BLOCK_GAPS = 512
+MIN_SATURATION_RUN = 8                        # consecutive ticks to call it saturated
 WINDOWED_OFFSET_ANCHORS = 8                   # head/tail anchors for F1W search
 MIN_LAG_OVERLAP = 8                           # non-vacuity floor for F3
+PARTIAL_COVERAGE_FLOOR = Fraction(1, 2)       # F3P must explain half a clock
 MIN_PERIOD_REPEATS = 2                        # full repeats required for F4
 ACROSS_KEY_REP_CAP = 600                      # distinct gap words compared
 WITNESS_PRINT_CAP = 4
@@ -102,19 +104,31 @@ FAMILY = (
     f"with |Y| >= {MIN_LAG_OVERLAP}.  This is periodic interleaving with lag: "
     "Y's whole gap word is a contiguous factor of X's at lag L, replayed at "
     "time offset d.  Witness (L,d).",
-    "F4  PERIODIC_RESIDUE_LAW      Beyond declared transients both cadences "
-    "are unions of residue classes modulo one common period P, and the "
-    "residue sets differ by a rotation: R_Y = R_X + c (mod P).  Both residue "
-    "sets must be PROPER subsets of Z_P (1 <= |R| < P): a clock whose residue "
-    "set is all of Z_P is clean at every tick beyond its transient, carries no "
-    "cadence to relate, and is reported as SATURATED instead.  Witness "
+    "F3P PARTIAL_LAG_OVERLAP       the same map as F3 but on a PARTIAL "
+    "overlap: y_n = x_{n+L} + d holds on a contiguous run of at least "
+    f"{MIN_LAG_OVERLAP} events covering at least "
+    f"{PARTIAL_COVERAGE_FLOOR.numerator}/{PARTIAL_COVERAGE_FLOOR.denominator} "
+    "of the shorter clock, with the rest of both clocks unexplained.  F3P is "
+    "reported as a PARTIAL match, never as a dictionary: it does not carry one "
+    "whole cadence onto another.  Witness (L,d,overlap,coverage).",
+    "F4  PERIODIC_RESIDUE_LAW      Beyond their transients both cadences are "
+    "unions of residue classes modulo one common period P, and the residue "
+    "sets differ by a rotation: R_Y = R_X + c (mod P).  Neither clock may be "
+    "SATURATED, and both residue sets must be PROPER subsets of Z_P.  The "
+    "block is read off the tail window and the transient is then pushed back "
+    "as far as the gap word allows, so the least transient is found exactly "
+    "rather than picked off a ladder.  F4 is a TAIL law by construction: it is "
+    "insensitive to any edit before the transient, because the transient is "
+    "free to move past it while enough whole periods survive.  Witness "
     "(P,c,transients).",
 )
 SATURATION_NOTE = (
-    "A clock is SATURATED when, beyond a declared transient, it is clean at "
-    "every chunk boundary.  Two saturated clocks agree on their common tail by "
-    "construction, so that agreement is classified TRIVIAL_SATURATION and is "
-    "never counted as a discovered relation."
+    "A clock is SATURATED when it is clean at every chunk boundary from some "
+    "tick through the horizon.  The test is exact and cap-free -- the maximal "
+    "run of consecutive ticks ending at the horizon, at least "
+    f"{8} long -- so no declared cap can hide or invent one.  Two saturated "
+    "clocks agree on their common tail by construction, so that agreement is "
+    "classified TRIVIAL_SATURATION and never counted as a relation."
 )
 EVIDENCE_FLOOR = 8
 EVIDENCE_NOTE = (
@@ -123,7 +137,7 @@ EVIDENCE_NOTE = (
     "reported but kept out of the headline coverage figure."
 )
 FAMILY_CLOSURE = (
-    "F is searched in the order F1, F1W, F2A, F2B, F3, F4 and the first "
+    "F is searched in the order F1, F1W, F2A, F2B, F3, F3P, F4 and the first "
     "member that holds is reported.  NO_RELATION_IN_F means every member was "
     "searched over its declared parameter range and refused a witness; it is "
     "a negative priced to F and its caps, not a claim about all conceivable "
@@ -300,49 +314,80 @@ def kmp_border(sequence):
     return failure[-1]
 
 
-def period_profile(cadence):
-    """Smallest eventual time period of a cadence, or ``None``.
+def saturation_profile(cadence, horizon=HORIZON_CHUNKS):
+    """Exact, cap-free saturation test.
 
-    Search is over the declared transient offsets and is capped at
-    ``PERIOD_SCAN_GAP_CAP`` gaps; both facts are reported per cadence.
+    A clock is SATURATED when it is clean at every chunk boundary from some
+    tick through the horizon.  This is decided by measuring the maximal run of
+    consecutive ticks ending at the last event -- no period search, no
+    transient cap, so no declared cap can hide or invent a saturated clock.
+    """
+    if not cadence or cadence[-1] != horizon:
+        return None
+    start = len(cadence) - 1
+    while start and cadence[start - 1] == cadence[start] - 1:
+        start -= 1
+    run = len(cadence) - start
+    if run < MIN_SATURATION_RUN:
+        return None
+    return {
+        "saturated_from_tick": cadence[start],
+        "consecutive_run": run,
+        "runs_to_horizon": True,
+    }
+
+
+def period_profile(cadence):
+    """Least eventual time period of a cadence, or ``None``.
+
+    The block is read off the TAIL window -- the eventual behaviour is what a
+    period claims -- and the transient is then pushed back as far as the gap
+    word allows.  This is O(len) and finds the least transient exactly, so the
+    result does not depend on any transient-offset ladder.
     """
     gaps = gaps_of(cadence)
-    truncated = len(gaps) > PERIOD_SCAN_GAP_CAP
-    scan = gaps[:PERIOD_SCAN_GAP_CAP]
+    if len(gaps) < MIN_PERIOD_REPEATS:
+        return None
+    # Halving ladder of tail lengths.  A single fixed tail would swallow the
+    # transient whenever the cadence is short, and would then report no period
+    # at all; the ladder lets the block be read off a tail that excludes it.
     best = None
-    for transient in PERIOD_TRANSIENT_OFFSETS:
-        if transient >= len(scan):
+    length = min(len(gaps), PERIOD_TAIL_WINDOW)
+    while length >= min(PERIOD_TAIL_FLOOR, len(gaps)):
+        tail = gaps[-length:]
+        block = len(tail) - kmp_border(tail)
+        if block and block <= PERIOD_MAX_BLOCK_GAPS \
+                and len(tail) >= MIN_PERIOD_REPEATS * block:
+            period = sum(tail[:block])
+            if period > 0 and (best is None or period < best[0]):
+                best = (period, block)
+        if length == 1:
             break
-        suffix = scan[transient:]
-        block = len(suffix) - kmp_border(suffix)
-        if block > PERIOD_MAX_BLOCK_GAPS or block == 0:
-            continue
-        if len(suffix) < MIN_PERIOD_REPEATS * block:
-            continue
-        period = sum(suffix[:block])
-        if period <= 0:
-            continue
-        candidate = {
-            "period_ticks": period,
-            "block_gaps": block,
-            "transient_events": transient,
-            "transient_tick": cadence[transient],
-            "repeats": len(suffix) // block,
-            "scan_truncated": truncated,
-        }
-        if best is None or (period, transient) < (best["period_ticks"],
-                                                  best["transient_events"]):
-            best = candidate
+        length //= 2
     if best is None:
         return None
+    period, block = best
+    transient = len(gaps) - block
+    while transient and gaps[transient - 1] == gaps[transient - 1 + block]:
+        transient -= 1
+    if len(gaps) - transient < MIN_PERIOD_REPEATS * block:
+        return None
+    best = {
+        "period_ticks": period,
+        "block_gaps": block,
+        "transient_events": transient,
+        "transient_tick": cadence[transient],
+        "repeats": (len(gaps) - transient) // block,
+        "tail_window": min(len(gaps), PERIOD_TAIL_WINDOW),
+    }
     stable = tuple(tick for tick in cadence if tick >= best["transient_tick"])
-    best["residues"] = tuple(sorted({tick % best["period_ticks"] for tick in stable}))
+    best["residues"] = tuple(sorted({tick % period for tick in stable}))
     best["residue_count"] = len(best["residues"])
-    best["saturated"] = len(best["residues"]) == best["period_ticks"]
-    window_hi = max(stable) - best["period_ticks"]
+    best["saturated"] = len(best["residues"]) == period
+    window_hi = max(stable) - period
     lower = {tick for tick in stable if tick <= window_hi}
-    upper = {tick for tick in stable if tick >= best["transient_tick"] + best["period_ticks"]}
-    best["shift_exact_on_window"] = {tick + best["period_ticks"] for tick in lower} == upper
+    upper = {tick for tick in stable if tick >= best["transient_tick"] + period}
+    best["shift_exact_on_window"] = {tick + period for tick in lower} == upper
     return best
 
 
@@ -356,6 +401,7 @@ def cadence_profile(cadence):
         "word": gap_word(gaps),
         "index": {tick: position for position, tick in enumerate(cadence)},
         "period": period_profile(cadence) if len(cadence) >= MIN_LAG_OVERLAP else None,
+        "saturation": saturation_profile(cadence),
         "ticks": cadence,
     }
 
@@ -460,14 +506,54 @@ def f3_lag_offset(x_profile, y_profile):
     return {"member": "F3", "L": lag, "d": shift, "overlap": len(y)}
 
 
+def f3p_partial_lag(x_profile, y_profile):
+    """Lag map on a partial overlap, in either index direction.
+
+    This is deliberately the most permissive member of F.  It is reported
+    separately from F3 because a map that explains only part of a clock is a
+    partial match, not a dictionary.
+    """
+    x, y = x_profile["ticks"], y_profile["ticks"]
+    shorter = min(len(x), len(y))
+    if shorter < MIN_LAG_OVERLAP:
+        return None
+    floor = max(
+        MIN_LAG_OVERLAP,
+        -(-shorter * PARTIAL_COVERAGE_FLOOR.numerator
+          // PARTIAL_COVERAGE_FLOOR.denominator),
+    )
+    for lag in range(-(len(y) - 1), len(x)):
+        start = max(0, -lag)
+        stop = min(len(y), len(x) - lag)
+        if stop - start < floor:
+            continue
+        shift = y[start] - x[start + lag]
+        if x[start + 1 + lag] + shift != y[start + 1]:
+            continue
+        if all(x[index + lag] + shift == y[index]
+               for index in range(start, stop)):
+            coverage = Fraction(stop - start, shorter)
+            return {
+                "member": "F3P",
+                "L": lag,
+                "d": shift,
+                "overlap": stop - start,
+                "coverage": f"{coverage.numerator}/{coverage.denominator}",
+                "partial": start > 0 or stop < len(y),
+            }
+    return None
+
+
 def f4_periodic_residue(x_profile, y_profile):
     left, right = x_profile["period"], y_profile["period"]
     if left is None or right is None:
         return None
     if not (left["shift_exact_on_window"] and right["shift_exact_on_window"]):
         return None
-    if left["saturated"] or right["saturated"]:
+    if x_profile["saturation"] or y_profile["saturation"]:
         return None  # no cadence to relate; reported as TRIVIAL_SATURATION
+    if left["saturated"] or right["saturated"]:
+        return None
     period = left["period_ticks"]
     if period != right["period_ticks"]:
         return None
@@ -488,18 +574,29 @@ def f4_periodic_residue(x_profile, y_profile):
     return None
 
 
-def relate(x_profile, y_profile, horizon=HORIZON_CHUNKS):
-    """First member of the declared family F carrying X onto Y, else None."""
+FULL_MEMBERS = ("F1", "F1W", "F2A", "F2B", "F3", "F4")
+PARTIAL_MEMBERS = ("F3P",)
+
+
+def relate(x_profile, y_profile, horizon=HORIZON_CHUNKS, allow_partial=True):
+    """First member of the declared family F carrying X onto Y, else None.
+
+    ``allow_partial=False`` restricts the search to the members that carry a
+    WHOLE cadence onto another; the partial member F3P is then skipped.
+    """
     if not x_profile["ticks"] or not y_profile["ticks"]:
         return None
-    for test in (
+    tests = [
         lambda: f1_constant_offset(x_profile, y_profile),
         lambda: f1w_windowed_offset(x_profile, y_profile, horizon),
         lambda: f2a_tick_affine(x_profile, y_profile),
         lambda: f2b_index_affine(x_profile, y_profile),
         lambda: f3_lag_offset(x_profile, y_profile),
-        lambda: f4_periodic_residue(x_profile, y_profile),
-    ):
+    ]
+    if allow_partial:
+        tests.append(lambda: f3p_partial_lag(x_profile, y_profile))
+    tests.append(lambda: f4_periodic_residue(x_profile, y_profile))
+    for test in tests:
         found = test()
         if found is not None:
             return found
@@ -551,6 +648,15 @@ def verify_witness(x_profile, y_profile, witness):
                 if low - offset <= tick <= high - offset}
         right = {tick for tick in y_profile["ticks"] if low <= tick <= high}
         return left == right and bool(right)
+    if member == "F3P":
+        source_ticks = x_profile["ticks"]
+        lag, shift, overlap = witness["L"], witness["d"], witness["overlap"]
+        start = max(0, -lag)
+        rebuilt = tuple(
+            source_ticks[start + lag + ordinal] + shift
+            for ordinal in range(overlap)
+        )
+        return rebuilt == y_profile["ticks"][start:start + overlap]
     if member == "F4":
         period, offset = witness["P"], witness["c"]
         left = x_profile["period"]
@@ -632,8 +738,47 @@ def family_controls(sample_profiles):
             if perturbed is not None:
                 break
         if perturbed is not None:
-            checks["negative_one_tick_perturbation_refused"] = (
-                perturbed["ticks"] != base and relate(source, perturbed) is None
+            # The exact whole-cadence members must all refuse.  F4 is a tail
+            # law and may legitimately survive an edit before its transient --
+            # but only by MOVING that transient past the edit, which is checked.
+            exact = [
+                f1_constant_offset(source, perturbed),
+                f1w_windowed_offset(source, perturbed, HORIZON_CHUNKS),
+                f2a_tick_affine(source, perturbed),
+                f2b_index_affine(source, perturbed),
+                f3_lag_offset(source, perturbed),
+            ]
+            residue = f4_periodic_residue(source, perturbed)
+            partial = f3p_partial_lag(source, perturbed)
+            checks["negative_one_tick_perturbation_refused_by_exact_members"] = (
+                perturbed["ticks"] != base and not any(exact)
+            )
+            checks["negative_perturbation_F4_only_by_moving_its_transient"] = (
+                residue is None
+                or residue["transient_Y"] > residue["transient_X"]
+            )
+            checks["negative_one_tick_perturbation_partial_is_identity_only"] = (
+                partial is None or partial["d"] == 0
+            )
+
+        # Negative 1b: an edit inside the final period leaves no periodic tail
+        # for F4 to retreat to, so the tail law must refuse it outright.
+        tail_broken = None
+        last = len(base) - 2
+        for delta in range(1, 65):
+            if base[last] + delta >= base[last + 1]:
+                break
+            left_gap = base[last] - base[last - 1] + delta
+            right_gap = base[last + 1] - base[last] - delta
+            if left_gap in source_gap_values or right_gap in source_gap_values:
+                continue
+            broken = list(base)
+            broken[last] += delta
+            tail_broken = cadence_profile(tuple(broken))
+            break
+        if tail_broken is not None:
+            checks["negative_tail_edit_refused_by_F4"] = (
+                f4_periodic_residue(source, tail_broken) is None
             )
 
         # Negative 2: triangular-index thinning is neither an arithmetic index
@@ -647,8 +792,11 @@ def family_controls(sample_profiles):
             position += step
         if len(indices) >= 4:
             thinned_triangular = cadence_profile(tuple(base[i] for i in indices))
+            # The triangular thinning must be refused by EVERY member, the
+            # permissive partial one included.
             checks["negative_triangular_thinning_refused"] = (
                 relate(source, thinned_triangular) is None
+                and relate(thinned_triangular, source) is None
             )
 
         rows.append({"clock": name, **checks})
@@ -659,7 +807,10 @@ def family_controls(sample_profiles):
         "F2A_positive",
         "F2B_positive",
         "F3_positive",
-        "negative_one_tick_perturbation_refused",
+        "negative_one_tick_perturbation_refused_by_exact_members",
+        "negative_perturbation_F4_only_by_moving_its_transient",
+        "negative_one_tick_perturbation_partial_is_identity_only",
+        "negative_tail_edit_refused_by_F4",
         "negative_triangular_thinning_refused",
     )
     passed = (
@@ -831,9 +982,7 @@ def main():
     # double count: a silent clock has no events and therefore no period.
     silent_and_saturated = sum(
         1 for lane in pair_profiles for profile in lane
-        if not profile["ticks"]
-        and profile["period"] is not None
-        and profile["period"]["saturated"]
+        if not profile["ticks"] and profile["saturation"] is not None
     )
     b_pass = (
         silent_and_saturated == 0
@@ -866,13 +1015,13 @@ def main():
         periods = Counter()
         for lane in profiles:
             for profile in lane:
+                if profile["saturation"] is not None:
+                    saturated += 1
                 period = profile["period"]
                 if period is None or not period["shift_exact_on_window"]:
                     continue
                 periodic += 1
-                if period["saturated"]:
-                    saturated += 1
-                else:
+                if not period["saturated"] and profile["saturation"] is None:
                     periods[period["period_ticks"]] += 1
         return periodic, saturated, dict(sorted(periods.items()))
 
@@ -929,8 +1078,7 @@ def main():
 
     # ------------------------------------------------- within-key comparisons
     def is_saturated(profile):
-        period = profile["period"]
-        return bool(period and period["saturated"] and period["shift_exact_on_window"])
+        return profile["saturation"] is not None
 
     def within_key_block(profiles, labels):
         verdicts = Counter()
@@ -979,27 +1127,41 @@ def main():
                 if not reverified:
                     witness_failures += 1
                 verdicts[found["member"]] += 1
-                evidence["THIN_RELATION" if thin else "SUBSTANTIVE_RELATION"] += 1
+                full_member = found["member"] in FULL_MEMBERS
+                if full_member:
+                    evidence["THIN_RELATION" if thin else "SUBSTANTIVE_RELATION"] += 1
+                if full_member and not thin:
+                    substantive_related += 1
+                # Identity-like means the map leaves the tick VALUES alone:
+                # one clock is literally a sub-run of the other at the same
+                # absolute times.  That is containment, not a transformation
+                # law, whichever family member reports it.
                 identity_like = (
                     found.get("c") == 0
-                    if found["member"] in ("F1", "F1W")
-                    else found["member"] == "F3"
-                    and found["L"] == 0
-                    and found["d"] == 0
+                    or (found["member"] in ("F3", "F3P") and found["d"] == 0)
+                    or (found["member"] == "F2B" and found["s"] == 1)
                 )
-                if not thin and not identity_like:
+                if found["member"] in PARTIAL_MEMBERS:
+                    evidence["PARTIAL" if thin is False else "THIN_PARTIAL"] += 1
+                    if not thin and not identity_like:
+                        parameters["#SUBSTANTIVE_NONIDENTITY_PARTIAL"] += 1
+                if not thin and not identity_like and found["member"] in FULL_MEMBERS:
                     parameters["#SUBSTANTIVE_NONIDENTITY"] += 1
                 if found["member"] in ("F1", "F1W"):
                     parameters[f"{found['member']}:c={found['c']}"] += 1
-                elif found["member"] == "F3":
-                    parameters[f"F3:L={found['L']},d={found['d']}"] += 1
+                elif found["member"] in ("F3", "F3P"):
+                    parameters[
+                        f"{found['member']}:L={found['L']},d={found['d']}"
+                    ] += 1
                 elif found["member"] == "F4":
                     parameters[f"F4:P={found['P']},c={found['c']}"] += 1
                 else:
                     parameters[found["member"]] += 1
-                if not thin:
-                    substantive_related += 1
-                codes.append(found["member"][1:2] if found["member"] != "F1W" else "w")
+                codes.append(
+                    "w" if found["member"] == "F1W"
+                    else "p" if found["member"] == "F3P"
+                    else found["member"][1:2]
+                )
                 row = {
                     "key": short_key(keys[lane]),
                     "from": labels[left if direction == "forward" else right],
@@ -1020,7 +1182,13 @@ def main():
                 (label, count) for label, count in parameters.items()
                 if not label.startswith("#")
             )),
-            "substantive_nonidentity_witnesses": parameters["#SUBSTANTIVE_NONIDENTITY"],
+            "substantive_nonidentity_full_dictionaries": (
+                parameters["#SUBSTANTIVE_NONIDENTITY"]
+            ),
+            "substantive_nonidentity_partial_matches": (
+                parameters["#SUBSTANTIVE_NONIDENTITY_PARTIAL"]
+            ),
+            "substantive_partial_matches": evidence["PARTIAL"],
             "comparable_pairs_of_clocks": comparable,
             "substantive_pairs_of_clocks": substantive,
             "substantive_relations": substantive_related,
@@ -1182,6 +1350,7 @@ def main():
             "period_over_stations_squared": str(
                 Fraction(period, STATIONS * STATIONS)
             ),
+            "exact_multiple_of_stations": period % STATIONS == 0,
             "exact_multiple_of_stations_squared": period % (STATIONS * STATIONS) == 0,
             "bank_clocks_carrying_it": bank_period_hist.get(period, 0),
             "pair_clocks_carrying_it": pair_period_hist.get(period, 0),
@@ -1199,7 +1368,11 @@ def main():
         block["sounding_keys"] - block["keys_in_nontrivial_F1_class"]
         for block in across_pair.values()
     )
-    substantive_nonidentity = within_pair["substantive_nonidentity_witnesses"]
+    substantive_nonidentity = within_pair["substantive_nonidentity_full_dictionaries"]
+    substantive_partial = within_pair["substantive_partial_matches"]
+    substantive_partial_nonidentity = within_pair[
+        "substantive_nonidentity_partial_matches"
+    ]
     if substantive and substantive_related == substantive:
         relation_verdict = "DICTIONARY_TOTAL_WITHIN_KEY"
     elif substantive_related == 0:
@@ -1207,7 +1380,7 @@ def main():
     elif substantive_nonidentity == 0:
         relation_verdict = "COINCIDENCE_ONLY_NO_TRANSFORMATION_LAW_WITHIN_KEY"
     else:
-        relation_verdict = "DICTIONARY_PARTIAL_WITHIN_KEY"
+        relation_verdict = "DICTIONARY_SPARSE_WITHIN_KEY"
     cross_key_nonzero = sum(
         block["F1_edges_with_nonzero_offset"] for block in across_pair.values()
     )
@@ -1230,9 +1403,13 @@ def main():
             "horizon_chunks": HORIZON_CHUNKS,
             "cadence_store_cap": CADENCE_STORE_CAP,
             "cadence_store_saturations": store_saturations,
-            "period_scan_gap_cap": PERIOD_SCAN_GAP_CAP,
-            "period_transient_offsets": list(PERIOD_TRANSIENT_OFFSETS),
+            "period_tail_window": PERIOD_TAIL_WINDOW,
             "period_max_block_gaps": PERIOD_MAX_BLOCK_GAPS,
+            "min_saturation_run": MIN_SATURATION_RUN,
+            "saturation_detection": (
+                "exact and cap-free: maximal consecutive run ending at the "
+                "horizon, no period search involved"
+            ),
             "windowed_offset_anchors": WINDOWED_OFFSET_ANCHORS,
             "min_lag_overlap": MIN_LAG_OVERLAP,
             "across_key_rep_cap": ACROSS_KEY_REP_CAP,
@@ -1247,7 +1424,9 @@ def main():
     }
     verdict_block = {
         "within_key_pair_clock_verdict": relation_verdict,
-        "headline_substantive_coverage": f"{substantive_related}/{substantive}",
+        "headline_substantive_full_dictionary_coverage": (
+            f"{substantive_related}/{substantive}"
+        ),
         "headline_coverage_fraction": (
             f"{coverage.numerator}/{coverage.denominator}"
         ),
@@ -1255,8 +1434,15 @@ def main():
         "within_key_member_histogram": pair_totals,
         "within_key_evidence_split": within_pair["evidence_split"],
         "within_key_witness_parameters": within_pair["witness_parameter_histogram"],
-        "within_key_substantive_nonidentity_witnesses": substantive_nonidentity,
+        "within_key_substantive_nonidentity_full_dictionaries": substantive_nonidentity,
+        "within_key_substantive_partial_matches": substantive_partial,
+        "within_key_substantive_nonidentity_partial_matches": (
+            substantive_partial_nonidentity
+        ),
         "nondegenerate_periods_in_corpus": period_arithmetic,
+        "every_nondegenerate_period_is_whole_orbits": all(
+            row["exact_multiple_of_stations"] for row in period_arithmetic
+        ),
         "within_key_bank_clock_histogram": within_bank["verdicts"],
         "within_key_bank_clock_substantive_coverage": (
             f"{within_bank['substantive_relations']}/"
@@ -1271,20 +1457,22 @@ def main():
         "evidence_note": EVIDENCE_NOTE,
         "reading": (
             f"On the {substantive} substantive pairs-of-pair-clocks the declared "
-            f"family supplies a dictionary for {substantive_related} and refuses "
-            f"one for {substantive - substantive_related}.  On the single-bank "
-            f"clocks it supplies {within_bank['substantive_relations']} of "
+            f"family supplies a WHOLE-cadence dictionary for "
+            f"{substantive_related}, of which {substantive_nonidentity} move the "
+            f"tick values at all; the permissive partial member F3P matches a "
+            f"further {substantive_partial} on at least half a clock, "
+            f"{substantive_partial_nonidentity} of them non-identity.  On the "
+            f"single-bank clocks the dictionary count is "
+            f"{within_bank['substantive_relations']} of "
             f"{within_bank['substantive_pairs_of_clocks']}.  Of the "
             f"{lane_count * len(BANK_PAIRS)} pair clocks, "
             f"{domination.get('STRICTLY_JOINT', 0)} carry information neither "
             f"bank clock carries alone, "
             f"{domination.get('ONE_BANK_GATES_THE_PAIR', 0)} are one bank clock "
             f"outright, {domination.get('BOTH_BANK_CLOCKS_IDENTICAL', 0)} are "
-            f"both, and {domination.get('SILENT_PAIR', 0)} never sound.  Of the "
-            f"within-key dictionaries only {substantive_nonidentity} carry a "
-            f"non-identity parameter.  Across keys, at a FIXED bank pair, "
-            f"{cross_key_nonzero} of {cross_key_edges} constant-offset edges "
-            f"carry a nonzero offset."
+            f"both, and {domination.get('SILENT_PAIR', 0)} never sound.  "
+            f"Across keys, at a FIXED bank pair, {cross_key_nonzero} of "
+            f"{cross_key_edges} constant-offset edges carry a nonzero offset."
         ),
         "pricing": pricing,
     }
@@ -1374,7 +1562,11 @@ def main():
             "constructible_negative_controls": {
                 "one_tick_perturbation": sum(
                     1 for row in control_rows
-                    if "negative_one_tick_perturbation_refused" in row
+                    if "negative_one_tick_perturbation_refused_by_exact_members" in row
+                ),
+                "tail_edit": sum(
+                    1 for row in control_rows
+                    if "negative_tail_edit_refused_by_F4" in row
                 ),
                 "triangular_thinning": sum(
                     1 for row in control_rows

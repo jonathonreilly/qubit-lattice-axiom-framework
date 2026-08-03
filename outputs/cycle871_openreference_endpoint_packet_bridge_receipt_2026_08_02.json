@@ -1,0 +1,642 @@
+{
+  "claim_scope": "selected-seam coherent Cycle870 physical endpoint opportunity -> fixed blank Cycle714 packet -> unchanged Cycle704/610/612 interface on the declared signed-coframe, blank-packet, head/rotor, control, and seam input domain",
+  "constructed_outputs": [
+    "physical endpoint B words and coherent XOR/OR opportunity pointer",
+    "clean reuse of packet work M2 q56/q57 after endpoint extraction",
+    "signed-frame half swap and local-port mask normalization to 66",
+    "bounded radius-two 59-M2 placement and coframe-covariant returned routing",
+    "fixed-cell packet projection into unchanged interval and JointOrder interfaces"
+  ],
+  "declared_input_coordinates": [
+    "selected seam and signed local coframe",
+    "Cycle870 lawful codeword and clean bridge registers",
+    "blank fixed-address packet cell 23 and clean packet work",
+    "packet head, rotor, binder, actuality, admissibility, law-domain, and freshness inputs",
+    "Cycle714 orientation input coordinate",
+    "fixed serial circuit word and route-transit substrate",
+    "Cycle219 coin and Cycle230 contact parameters"
+  ],
+  "downstream": {
+    "joint_order": {
+      "JointOrder_class_module": "physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22",
+      "consistent_acyclic": true,
+      "consistent_statuses": [
+        "admitted",
+        "admitted"
+      ],
+      "edge_qubit_opportunities": [
+        1,
+        1
+      ],
+      "forced_cycle_detected": true,
+      "inverted_first": "admitted",
+      "inverted_refusal": "refused_inverted",
+      "no_endpoint_status": "no_opportunity"
+    },
+    "joint_order_pass": true,
+    "packet_interface": {
+      "Cycle610_append_attempts_compared": 25,
+      "actuality_admissibility_domain_supplied": true,
+      "additivity_closed": true,
+      "bank_admitted": 24,
+      "bank_cells": 24,
+      "bank_exhausted_seen": true,
+      "candidate_head_bits": 6,
+      "candidate_packet_payload_bits_per_bank_cell": 34,
+      "carry_truth_failures": 0,
+      "d_ab": 9,
+      "d_ac": 21,
+      "d_bc": 12,
+      "duplicate_statuses": [
+        "refused_fresh",
+        "refused_fresh"
+      ],
+      "empirical_unit_supplied": false,
+      "forward_replay_exact": true,
+      "interval_failures": 0,
+      "inverse_returned_initial_state": true,
+      "inverse_statuses": [
+        "unappended",
+        "unappended",
+        "unappended",
+        "unappended",
+        "unappended",
+        "unappended"
+      ],
+      "matching_statuses": 25,
+      "no_actuality_statuses": [
+        "refused_supplied",
+        "refused_supplied"
+      ],
+      "no_endpoint_statuses": [
+        "no_opportunity",
+        "no_opportunity"
+      ],
+      "projection_failures": 0,
+      "refill_statuses": [
+        "admitted",
+        "admitted"
+      ],
+      "register_inverse_cases": 96,
+      "register_inverse_failures": 0,
+      "reversal_closed": true,
+      "schedule_ordinal_stored": false,
+      "software_blank_address_selector_supplied": true,
+      "software_packet_inverse_accessible": true
+    },
+    "packet_interface_pass": true
+  },
+  "fixtures": [
+    {
+      "cells": 8,
+      "coframe_product_failures": 0,
+      "coordinate_representation_product_failures": 0,
+      "emitted_binding": {
+        "baseline_update_reconstruction_failure": 0,
+        "candidate_coin_schedule_gates": 20,
+        "candidate_coin_schedule_sha256": "39921ba948ed42bc7e1a94285c6620b22fa8fd4ac644671c05b6f79391fd8045",
+        "coin_schedule_mismatch": 0,
+        "composite_surface_mismatches": {
+          "endpoint_vs_independent_expected": 0,
+          "endpoint_vs_stored_segments": 0,
+          "full_vs_independent_expected": 0,
+          "full_vs_stored_segments": 0,
+          "selected_packet_vs_independent_expected": 0,
+          "selected_packet_vs_stored_segments": 0
+        },
+        "contiguous_selection_failure": 0,
+        "emitted_endpoint_sha256": "c7328c946f0744db5c9d62fb32d7f8861cc8a053ccf3e394b06b3acedc24900e",
+        "emitted_full_instructions": 17831,
+        "emitted_full_word_sha256": "11efdbc93e465e0d61aeb653110b19138490d6df7e2e14f75614e3c34615f7a2",
+        "emitted_selected_packet_sha256": "e04af31b1cea8dcb451fd8cf6bd98bbc3478ff87c6197c1803ab6be996ed26a8",
+        "expected_coin_schedule_gates": 20,
+        "expected_coin_schedule_sha256": "39921ba948ed42bc7e1a94285c6620b22fa8fd4ac644671c05b6f79391fd8045",
+        "failure_count": 0,
+        "partition_reconstruction_failure": 0,
+        "requested_factor": "('seam', 0, (0, 0, 0), 0, (1, 0, 0))",
+        "requested_selected_serials": [
+          984,
+          985,
+          986,
+          987
+        ],
+        "requested_selection_failures": 0,
+        "segment_instruction_counts": {
+          "endpoint_clean": 24,
+          "endpoint_or": 17,
+          "endpoint_post": 12,
+          "endpoint_pre": 12,
+          "packet": 718,
+          "selected_seam": 92,
+          "update_prefix": 11312,
+          "update_suffix": 5644
+        },
+        "segment_signature_mismatches": {}
+      },
+      "emitted_mutations": {
+        "inactive_mutations": [],
+        "mutation_failure_counts": {
+          "delete_OR_Toffoli": 4,
+          "delete_endpoint_cleanup": 4,
+          "delete_entire_endpoint_instrument": 9,
+          "delete_left_prewrite": 4,
+          "delete_one_OR_Toffoli_primitive": 4,
+          "delete_one_cleanup_primitive": 4,
+          "delete_one_endpoint_post_primitive": 4,
+          "delete_one_packet_primitive": 3,
+          "delete_one_selected_seam_primitive": 5,
+          "delete_one_update_prefix_primitive": 3,
+          "delete_one_update_suffix_primitive": 3,
+          "delete_packet_word": 3,
+          "delete_selected_seam_primitive": 5,
+          "delete_update_suffix": 3,
+          "empty_coin_schedule_update": 3,
+          "hostile_endpoint_composition_omits_prewrite": 2,
+          "hostile_full_composition_moves_packet_before_suffix": 2,
+          "hostile_full_composition_omits_endpoint": 2,
+          "hostile_selected_packet_composition_omits_endpoint": 2,
+          "wrong_selected_factor_partition": 6
+        }
+      },
+      "full_update_route": {
+        "logical_instructions": 17831,
+        "logical_kind_census": {
+          "axis_RZ": 1392,
+          "basis_H": 880,
+          "basis_S": 368,
+          "basis_Sdg": 368,
+          "endpoint_OR_CNOT": 2,
+          "endpoint_OR_Toffoli_CNOT": 6,
+          "endpoint_OR_Toffoli_H": 2,
+          "endpoint_OR_Toffoli_T": 4,
+          "endpoint_OR_Toffoli_TD": 3,
+          "endpoint_clean_left_B": 12,
+          "endpoint_clean_right_B": 12,
+          "endpoint_post_left_B": 6,
+          "endpoint_post_right_B": 6,
+          "endpoint_pre_left_B": 6,
+          "endpoint_pre_right_B": 6,
+          "packet_CNOT": 295,
+          "packet_H": 94,
+          "packet_T": 188,
+          "packet_TD": 141,
+          "parity_CNOT": 14040
+        },
+        "maximum_route_distance": 33,
+        "nearest_neighbor_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_deletion_detected_macros": 14374,
+        "route_return_failures": 0,
+        "route_schedule_sha256": "f5cf618b50e1dcd311ecb753c0789a49285f90edfc1f300066855296dfe131ba",
+        "routed_gates": 177033,
+        "touched_coordinates": 1858
+      },
+      "ordered_frame_products": 576,
+      "ordered_program_signature_product_rows": 1165824,
+      "ordered_route_path_product_rows": 551232,
+      "packet_M2": 59,
+      "packet_carrier_or_aux_collisions": 0,
+      "packet_radius": 2,
+      "packet_radius_failures": 0,
+      "phase_representative": {
+        "circuit_and_route_ordinals": "circuit bookkeeping",
+        "compiled_relative_phase_angle": -168.20687791288861,
+        "emitted_update_instructions": 17048,
+        "emitted_update_sha256": "83bb7264032293b323e16a0c88b22f7e11b04373c7ba3b445cc810cbfb8292be",
+        "endpoint_packet_declared_scalar_angle": 0.0,
+        "exact_vector_representative": "G871_physical_exact := exp(-i*phi870) U871_routed",
+        "formal_correction_angle": 168.20687791288861,
+        "formal_scalar": [
+          0.13129080709171057,
+          -0.9913438979351249
+        ],
+        "formal_scalar_routed_gate_count": 0,
+        "landed_update_instructions": 17048,
+        "landed_update_sha256": "83bb7264032293b323e16a0c88b22f7e11b04373c7ba3b445cc810cbfb8292be",
+        "literal_vector_equality_uses_formal_unrouted_scalar": true,
+        "packet_Toffoli_decomposition_residual": 8.021723640960921e-16,
+        "phase_breakdown": {
+          "coin": -25.159986462117423,
+          "contact": -11.099999999999985,
+          "reverse_FSWAP": -113.09733552923244,
+          "seam_FSWAP": -18.84955592153876
+        },
+        "phase_breakdown_sum_residual": 0.0,
+        "phase_sum_residual_mod_2pi": 0.0,
+        "projective_equation": "U871_routed E871 = exp(i*phi870) E871 G871_logical",
+        "update_segment_signature_failures": 0
+      },
+      "physical_B_constraint_anticommutators": 0,
+      "physical_B_weight_failures": 0,
+      "physical_carriers": 180,
+      "physical_seam_maximum_four_rotation_residual": 0.0,
+      "program_covariance_instructions": 18706,
+      "program_signature_product_failures": 0,
+      "proper_frames": 24,
+      "route_covariance_two_site_instructions": 14818,
+      "route_frame_coordinate_failures": 0,
+      "route_path_product_failures": 0,
+      "seam_maximum_four_rotation_residual": 0.0,
+      "seams": 12,
+      "selected_route": {
+        "logical_instructions": 875,
+        "logical_kind_census": {
+          "axis_RZ": 4,
+          "basis_H": 12,
+          "endpoint_OR_CNOT": 2,
+          "endpoint_OR_Toffoli_CNOT": 6,
+          "endpoint_OR_Toffoli_H": 2,
+          "endpoint_OR_Toffoli_T": 4,
+          "endpoint_OR_Toffoli_TD": 3,
+          "endpoint_clean_left_B": 12,
+          "endpoint_clean_right_B": 12,
+          "endpoint_post_left_B": 6,
+          "endpoint_post_right_B": 6,
+          "endpoint_pre_left_B": 6,
+          "endpoint_pre_right_B": 6,
+          "packet_CNOT": 295,
+          "packet_H": 94,
+          "packet_T": 188,
+          "packet_TD": 141,
+          "parity_CNOT": 76
+        },
+        "maximum_route_distance": 27,
+        "nearest_neighbor_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_deletion_detected_macros": 426,
+        "route_return_failures": 0,
+        "route_schedule_sha256": "5c61995cb3247f6e8161ae9114369f6b4fbc7c519ffc0634f1ae86a1510f8c26",
+        "routed_gates": 5541,
+        "touched_coordinates": 275
+      },
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "splice": {
+        "inventory": {
+          "coin_euler_max_residual": 3.6188843062238402e-16,
+          "coin_one_particle_gates_per_cell": 20,
+          "compiled_relative_phase_breakdown": {
+            "coin": -25.159986462117423,
+            "contact": -11.099999999999985,
+            "reverse_FSWAP": -113.09733552923244,
+            "seam_FSWAP": -18.84955592153876
+          },
+          "compiled_relative_to_target_global_phase_angle": -168.20687791288861,
+          "contact_pairs": 120,
+          "direct_reverse_helper_FSWAPs": 72,
+          "exact_target_global_phase_correction_angle": 168.20687791288861,
+          "global_phase_correction_routed_gate_count": 0,
+          "logical_reverse_FSWAPs": 24,
+          "phase_breakdown_sum_residual": 0.0,
+          "phase_convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
+          "seam_FSWAPs": 12
+        },
+        "landed_factor_sha256": "6084e8496a814e9ef8992991464fa0c5704068ccf459ec5112956b76e0dcc907",
+        "landed_kind_census": {
+          "directed_seam_fswap": 48,
+          "onsite_coin_mass": 696,
+          "onsite_contact": 360,
+          "onsite_reverse_fswap": 288
+        },
+        "landed_update_rotations": 1392,
+        "nonselected_rotation_count": 1388,
+        "replacement_rotation_count": 4,
+        "selected_factor": "('seam', 0, (0, 0, 0), 0, (1, 0, 0))",
+        "selected_factor_rotation_count": 4,
+        "selected_rotation_match_failures": 0
+      },
+      "unique_program_signatures": 2024,
+      "unique_route_paths": 957
+    },
+    {
+      "cells": 27,
+      "coframe_product_failures": 0,
+      "coordinate_representation_product_failures": 0,
+      "emitted_binding": {
+        "baseline_update_reconstruction_failure": 0,
+        "candidate_coin_schedule_gates": 20,
+        "candidate_coin_schedule_sha256": "39921ba948ed42bc7e1a94285c6620b22fa8fd4ac644671c05b6f79391fd8045",
+        "coin_schedule_mismatch": 0,
+        "composite_surface_mismatches": {
+          "endpoint_vs_independent_expected": 0,
+          "endpoint_vs_stored_segments": 0,
+          "full_vs_independent_expected": 0,
+          "full_vs_stored_segments": 0,
+          "selected_packet_vs_independent_expected": 0,
+          "selected_packet_vs_stored_segments": 0
+        },
+        "contiguous_selection_failure": 0,
+        "emitted_endpoint_sha256": "290797f4133b9422d6fb2cfd3773952cc8d55141e3e2f4c122c67e06dbe65446",
+        "emitted_full_instructions": 61821,
+        "emitted_full_word_sha256": "038b6f3ac7a5e50494acb25fddaf0fa6d6fdf814e7050fdff6780292547b2cb1",
+        "emitted_selected_packet_sha256": "df68a330a2620d97b28850bb1024c88960868b2b2886954165f96ed3fdadd3dc",
+        "expected_coin_schedule_gates": 20,
+        "expected_coin_schedule_sha256": "39921ba948ed42bc7e1a94285c6620b22fa8fd4ac644671c05b6f79391fd8045",
+        "failure_count": 0,
+        "partition_reconstruction_failure": 0,
+        "requested_factor": "('seam', 0, (0, 0, 0), 0, (1, 0, 0))",
+        "requested_selected_serials": [
+          3321,
+          3322,
+          3323,
+          3324
+        ],
+        "requested_selection_failures": 0,
+        "segment_instruction_counts": {
+          "endpoint_clean": 24,
+          "endpoint_or": 17,
+          "endpoint_post": 12,
+          "endpoint_pre": 12,
+          "packet": 718,
+          "selected_seam": 96,
+          "update_prefix": 39285,
+          "update_suffix": 21657
+        },
+        "segment_signature_mismatches": {}
+      },
+      "emitted_mutations": {
+        "inactive_mutations": [],
+        "mutation_failure_counts": {
+          "delete_OR_Toffoli": 4,
+          "delete_endpoint_cleanup": 4,
+          "delete_entire_endpoint_instrument": 9,
+          "delete_left_prewrite": 4,
+          "delete_one_OR_Toffoli_primitive": 4,
+          "delete_one_cleanup_primitive": 4,
+          "delete_one_endpoint_post_primitive": 4,
+          "delete_one_packet_primitive": 3,
+          "delete_one_selected_seam_primitive": 5,
+          "delete_one_update_prefix_primitive": 3,
+          "delete_one_update_suffix_primitive": 3,
+          "delete_packet_word": 3,
+          "delete_selected_seam_primitive": 5,
+          "delete_update_suffix": 3,
+          "empty_coin_schedule_update": 3,
+          "hostile_endpoint_composition_omits_prewrite": 2,
+          "hostile_full_composition_moves_packet_before_suffix": 2,
+          "hostile_full_composition_omits_endpoint": 2,
+          "hostile_selected_packet_composition_omits_endpoint": 2,
+          "wrong_selected_factor_partition": 6
+        }
+      },
+      "full_update_route": {
+        "logical_instructions": 61821,
+        "logical_kind_census": {
+          "axis_RZ": 4752,
+          "basis_H": 3132,
+          "basis_S": 1242,
+          "basis_Sdg": 1242,
+          "endpoint_OR_CNOT": 2,
+          "endpoint_OR_Toffoli_CNOT": 6,
+          "endpoint_OR_Toffoli_H": 2,
+          "endpoint_OR_Toffoli_T": 4,
+          "endpoint_OR_Toffoli_TD": 3,
+          "endpoint_clean_left_B": 12,
+          "endpoint_clean_right_B": 12,
+          "endpoint_post_left_B": 6,
+          "endpoint_post_right_B": 6,
+          "endpoint_pre_left_B": 6,
+          "endpoint_pre_right_B": 6,
+          "packet_CNOT": 295,
+          "packet_H": 94,
+          "packet_T": 188,
+          "packet_TD": 141,
+          "parity_CNOT": 50670
+        },
+        "maximum_route_distance": 33,
+        "nearest_neighbor_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_deletion_detected_macros": 50924,
+        "route_return_failures": 0,
+        "route_schedule_sha256": "a84e1ac86e5112a1526df43de9ef2a81af77304ca94534fae318e18b3b396709",
+        "routed_gates": 707231,
+        "touched_coordinates": 7481
+      },
+      "ordered_frame_products": 576,
+      "ordered_program_signature_product_rows": 3878208,
+      "ordered_route_path_product_rows": 1974528,
+      "packet_M2": 59,
+      "packet_carrier_or_aux_collisions": 0,
+      "packet_radius": 2,
+      "packet_radius_failures": 0,
+      "phase_representative": {
+        "circuit_and_route_ordinals": "circuit bookkeeping",
+        "compiled_relative_phase_angle": -588.9039633677298,
+        "emitted_update_instructions": 61038,
+        "emitted_update_sha256": "209cce82e273f2377b62cc588d8c249c4a42ac557e3ebe0d1fc78deb315fbea7",
+        "endpoint_packet_declared_scalar_angle": 0.0,
+        "exact_vector_representative": "G871_physical_exact := exp(-i*phi870) U871_routed",
+        "formal_correction_angle": 588.9039633677298,
+        "formal_scalar": [
+          -0.14415517827490035,
+          -0.9895550942603103
+        ],
+        "formal_scalar_routed_gate_count": 0,
+        "landed_update_instructions": 61038,
+        "landed_update_sha256": "209cce82e273f2377b62cc588d8c249c4a42ac557e3ebe0d1fc78deb315fbea7",
+        "literal_vector_equality_uses_formal_unrouted_scalar": true,
+        "packet_Toffoli_decomposition_residual": 8.021723640960921e-16,
+        "phase_breakdown": {
+          "coin": -84.91495430964635,
+          "contact": -37.46250000000021,
+          "reverse_FSWAP": -381.70350741115885,
+          "seam_FSWAP": -84.8230016469244
+        },
+        "phase_breakdown_sum_residual": 0.0,
+        "phase_sum_residual_mod_2pi": 0.0,
+        "projective_equation": "U871_routed E871 = exp(i*phi870) E871 G871_logical",
+        "update_segment_signature_failures": 0
+      },
+      "physical_B_constraint_anticommutators": 0,
+      "physical_B_weight_failures": 0,
+      "physical_carriers": 648,
+      "physical_seam_maximum_four_rotation_residual": 0.0,
+      "program_covariance_instructions": 62700,
+      "program_signature_product_failures": 0,
+      "proper_frames": 24,
+      "route_covariance_two_site_instructions": 51452,
+      "route_frame_coordinate_failures": 0,
+      "route_path_product_failures": 0,
+      "seam_maximum_four_rotation_residual": 0.0,
+      "seams": 54,
+      "selected_route": {
+        "logical_instructions": 879,
+        "logical_kind_census": {
+          "axis_RZ": 4,
+          "basis_H": 12,
+          "endpoint_OR_CNOT": 2,
+          "endpoint_OR_Toffoli_CNOT": 6,
+          "endpoint_OR_Toffoli_H": 2,
+          "endpoint_OR_Toffoli_T": 4,
+          "endpoint_OR_Toffoli_TD": 3,
+          "endpoint_clean_left_B": 12,
+          "endpoint_clean_right_B": 12,
+          "endpoint_post_left_B": 6,
+          "endpoint_post_right_B": 6,
+          "endpoint_pre_left_B": 6,
+          "endpoint_pre_right_B": 6,
+          "packet_CNOT": 295,
+          "packet_H": 94,
+          "packet_T": 188,
+          "packet_TD": 141,
+          "parity_CNOT": 80
+        },
+        "maximum_route_distance": 27,
+        "nearest_neighbor_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_deletion_detected_macros": 430,
+        "route_return_failures": 0,
+        "route_schedule_sha256": "f75bdd0c711ca90b8742c0ed8f1a156ee9b5a9062fb76ffb882e140d2b0a6b58",
+        "routed_gates": 5753,
+        "touched_coordinates": 278
+      },
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "splice": {
+        "inventory": {
+          "coin_euler_max_residual": 3.6188843062238402e-16,
+          "coin_one_particle_gates_per_cell": 20,
+          "compiled_relative_phase_breakdown": {
+            "coin": -84.91495430964635,
+            "contact": -37.46250000000021,
+            "reverse_FSWAP": -381.70350741115885,
+            "seam_FSWAP": -84.8230016469244
+          },
+          "compiled_relative_to_target_global_phase_angle": -588.9039633677298,
+          "contact_pairs": 405,
+          "direct_reverse_helper_FSWAPs": 243,
+          "exact_target_global_phase_correction_angle": 588.9039633677298,
+          "global_phase_correction_routed_gate_count": 0,
+          "logical_reverse_FSWAPs": 81,
+          "phase_breakdown_sum_residual": 0.0,
+          "phase_convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
+          "seam_FSWAPs": 54
+        },
+        "landed_factor_sha256": "28e1eedf40c9a773662db400790b07ad86a726d1896ca8e672fe6503fe5696f5",
+        "landed_kind_census": {
+          "directed_seam_fswap": 216,
+          "onsite_coin_mass": 2349,
+          "onsite_contact": 1215,
+          "onsite_reverse_fswap": 972
+        },
+        "landed_update_rotations": 4752,
+        "nonselected_rotation_count": 4748,
+        "replacement_rotation_count": 4,
+        "selected_factor": "('seam', 0, (0, 0, 0), 0, (1, 0, 0))",
+        "selected_factor_rotation_count": 4,
+        "selected_rotation_match_failures": 0
+      },
+      "unique_program_signatures": 6733,
+      "unique_route_paths": 3428
+    }
+  ],
+  "inherited_matter": {
+    "QR": {
+      "QR_off_diagonal_residual": 9.058932439513524e-16,
+      "eliminations": 14,
+      "reconstruction_residual": 9.774239351035397e-16
+    },
+    "contact": {
+      "contact_pairs": 15,
+      "global_phase": [
+        0.1822716652330454,
+        -0.9832482087719115
+      ],
+      "maximum_residual_up_to_global_phase": 1.8610729195778454e-15,
+      "occupation_words": 64
+    },
+    "contact_fixture_pass": true,
+    "interpretation": "the endpoint/packet splice changes no Cycle219 coin or Cycle230 contact rotation; the retained pointer is an augmented logical output of the declared channel",
+    "mass_fixture_pass": true,
+    "one_particle": {
+      "analytic_mass": 0.4534056541748852,
+      "beta": -0.3,
+      "coin_unitarity_residual": 1.2236950713340232e-15,
+      "maximum_coin_covariance_residual": 0.0,
+      "one_particle_schedule_gates": 20,
+      "proper_cubic_frames": 24,
+      "rest_mass": 0.4534056541748851,
+      "reverse_helper_permutation_residual": 0.0,
+      "scalar_rest_phase": 0.15113521805829505
+    }
+  },
+  "provenance": {
+    "duplicate_declared_inputs": 0,
+    "input_sha256": {
+      "docs/OPENREFERENCE_MATTER_ENDPOINT_CAUSAL_INTERVAL_PACKET_CYCLE871_BOUNDED_THEOREM_NOTE_2026-08-02.md": "1e0eb51ab8d53575096241977f8e68aed87fc0beef0a571a4578ed0c1ece0788",
+      "outputs/cycle871_selected_openreference_seam_cycle714_packet_bridge_check_receipt_2026_08_02.json": "e8ceb57382957f08b523e96e617153ea9fd6807cc756bc6f5568ccdf67d52cdf",
+      "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py": "4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a",
+      "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
+      "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a",
+      "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
+      "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+      "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+      "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py": "dedd76c9cc1d99e6b5b186b964fb2d3ffa34a724d147571069bf23819771b5c2",
+      "scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py": "3d09072e53052724ff503a37a7df41b20de56f3aa62948850081531a5c9a4608",
+      "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+      "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b"
+    },
+    "missing_declared_inputs": [],
+    "pin_required_inputs": [
+      "scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py",
+      "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py",
+      "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py",
+      "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+      "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+      "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+      "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+      "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+      "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py"
+    ],
+    "pinned_input_failures": {},
+    "unpinned_declared_inputs": []
+  },
+  "runner_sha256": "dedd76c9cc1d99e6b5b186b964fb2d3ffa34a724d147571069bf23819771b5c2",
+  "semantic": {
+    "FSWAP_phase_failures": 0,
+    "OR_Toffoli_deletion_detected_moving_cases": 6144,
+    "coherent_FSWAP_vs_SWAP_residuals": [
+      1.414213562373095,
+      1.414213562373095,
+      1.414213562373095
+    ],
+    "contact_false_positives": 0,
+    "independent_orientation_outputs_bitset": 2,
+    "inverse_failures": 0,
+    "minimum_coherent_FSWAP_vs_SWAP_residual": 1.414213562373095,
+    "negative_frame_half_swap_deletion_undetected": 0,
+    "normalized_mask_failures": 0,
+    "packet_projection_failures": 0,
+    "packet_work_return_failures": 0,
+    "positive_axis_raw_masks": [
+      0,
+      66,
+      264,
+      1056
+    ],
+    "predicate_failures": 0,
+    "prewrite_deletion_detected_moving_cases": 3072,
+    "proper_frame_rows": 72,
+    "raw_mask_failures": 0,
+    "scratch_cleanup_failures": 0,
+    "signed_normalization_failures": 0,
+    "signed_orientation_failures": 0,
+    "transported_nonzero_raw_masks": [
+      66,
+      129,
+      264,
+      516,
+      1056,
+      2064
+    ],
+    "two_cell_columns": 12288
+  },
+  "status": "pass",
+  "validation_failures": []
+}

@@ -1,0 +1,4892 @@
+{
+  "L2_L3_geometry": {
+    "coframe_recomputed_from_unsigned_target_axis": false,
+    "ordered_product_coordinate_failures": 0,
+    "proper_frame_coframe_transport_failures": 0,
+    "radius_two_rule": "q44=m+d, q56=m+b, q57=m-b; remaining wires receive unblocked local [-2,2]^3 offsets in (Linf,L1,local tuple) order",
+    "seam_layouts_checked": 66,
+    "shapes": [
+      {
+        "all_seam_layout_sha256": "d8d61526bc9a2fbb745afaa7965daac08983f0ca38735510694ca68425166673",
+        "cells": 8,
+        "internal_seams": 12,
+        "landed_coordinate_covariance": {
+          "coframe_status": "supplied and transported",
+          "frame_injectivity_failures": 0,
+          "ordered_products": 576,
+          "product_diagram_failures": 0,
+          "proper_cubic_frames": 24
+        },
+        "name": "open_L2",
+        "persistent_preparation_auxiliary_M2": 288,
+        "physical_carrier_M2": 180,
+        "seam_layouts_checked": 12,
+        "seams": [
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "f5e0962f1720745645e8835019b157b9f285db499e986e658b632bf89c157c74"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "d1d5e363bd0079bfbe253ed740d00c1fd3755110f44e34d98e30502d98b480ff"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 0,
+            "selected_seam": [
+              [
+                0,
+                0,
+                0
+              ],
+              0,
+              [
+                1,
+                0,
+                0
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "219c9d08ef86f8f4a992844ea31b2027f37c6e4b52acfb6a88578e841d8beca2"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "7b40b2faa12e07b1e0bca2fce801b1ccd16eaa1348824025a1e1c834dea479ab"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 1,
+            "selected_seam": [
+              [
+                0,
+                0,
+                1
+              ],
+              0,
+              [
+                1,
+                0,
+                1
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "bf990fcb6291f9e8a7cb114fb211736b623e01b074b3b85416e0d85e036c45ec"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "077434b2febf4afb5fe4494ce816280bd225ed91a8cf70fa523016b068b6461a"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 2,
+            "selected_seam": [
+              [
+                0,
+                1,
+                0
+              ],
+              0,
+              [
+                1,
+                1,
+                0
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "7504f3b598ab27ef9f70defb1d25c89cc501c419fb7ec250d4d2a789086cd725"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "7f3aaed369e10ded4b8ea79bd26141e968975523a8be9ada2e9d5ce4b87fc5cc"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 3,
+            "selected_seam": [
+              [
+                0,
+                1,
+                1
+              ],
+              0,
+              [
+                1,
+                1,
+                1
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "4166877f29cbe1c2029d7c766a1f6e0bd5bf9caec143089859e18ca873a4db10"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "07fc8b8ecf36613b2bcd5189ac6043a04b0e160d929d47c8ec01d32a7a486406"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 4,
+            "selected_seam": [
+              [
+                0,
+                0,
+                0
+              ],
+              1,
+              [
+                0,
+                1,
+                0
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "cc04a7bc19b645921e6a1b98ed044d4f26d41a6dbf8217f153d87cbe580717de"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "c8ca4ea19cdc76a9f9bc43e72e836be66f2dd49344c58fae69d3ab177f1c433f"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 5,
+            "selected_seam": [
+              [
+                0,
+                0,
+                1
+              ],
+              1,
+              [
+                0,
+                1,
+                1
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "ae6845301600c8990e50e3f3f954e57d7137bc32c8452d30aefb521c546a0b87"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "2042460735ed4a5c147a924830300e4500badfe8df3ccb7b6fd940128c2732f9"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 6,
+            "selected_seam": [
+              [
+                1,
+                0,
+                0
+              ],
+              1,
+              [
+                1,
+                1,
+                0
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "0288ad286cfabc4e8a9e94fa27b8f3afd6868cdc2d9c77660b8cf5350103cf01"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "11e28b57fade58fbd9adaeea1cde2d27316eaa6a9d629cb69d7e3fc5428af215"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 7,
+            "selected_seam": [
+              [
+                1,
+                0,
+                1
+              ],
+              1,
+              [
+                1,
+                1,
+                1
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "166df7fdb4f3b3a89978d9b90eaaf63a7783a8b34b5ca3f018b2b61ea3f62af4"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "4e98e1368a592595696be8b26f66cff39e1bda6e2a0e400a762ed14d29f9d584"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 8,
+            "selected_seam": [
+              [
+                0,
+                0,
+                0
+              ],
+              2,
+              [
+                0,
+                0,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "cd749d3d47aa9ff853f64b686e5d154eeb7736ed1c10c25f7ad7d94bbd33b2bc"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "855a1c796b02eb6e240030e1eb93e33c29c79957c42d941ed59cb08e71eb6933"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 9,
+            "selected_seam": [
+              [
+                0,
+                1,
+                0
+              ],
+              2,
+              [
+                0,
+                1,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "668a65f20d95222aa34d7d0354b40eb31b80ea2e52bc5a22da39fa7ff3474b2c"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "8781289bca1984bbd95613a49a0a74cc3d8e62eee8c578e383eb564718033213"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 10,
+            "selected_seam": [
+              [
+                1,
+                0,
+                0
+              ],
+              2,
+              [
+                1,
+                0,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "3aa4ee366060b63a6a6d3ed72deb76c80e6572ac0471757bd496e17db2c1d655"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "b3f25bb0c0bb8292284d5cdba1962b333a9857aa51b89d4949a0718526b4aef3"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 11,
+            "selected_seam": [
+              [
+                1,
+                1,
+                0
+              ],
+              2,
+              [
+                1,
+                1,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          }
+        ],
+        "shape": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "all_seam_layout_sha256": "ed39155ae7cbf10d51358d5962c0a66fe3bbabf9b711322eef31b2fbc7a28964",
+        "cells": 27,
+        "internal_seams": 54,
+        "landed_coordinate_covariance": {
+          "coframe_status": "supplied and transported",
+          "frame_injectivity_failures": 0,
+          "ordered_products": 576,
+          "product_diagram_failures": 0,
+          "proper_cubic_frames": 24
+        },
+        "name": "open_L3",
+        "persistent_preparation_auxiliary_M2": 972,
+        "physical_carrier_M2": 648,
+        "seam_layouts_checked": 54,
+        "seams": [
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "f5e0962f1720745645e8835019b157b9f285db499e986e658b632bf89c157c74"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "d1d5e363bd0079bfbe253ed740d00c1fd3755110f44e34d98e30502d98b480ff"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 0,
+            "selected_seam": [
+              [
+                0,
+                0,
+                0
+              ],
+              0,
+              [
+                1,
+                0,
+                0
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "219c9d08ef86f8f4a992844ea31b2027f37c6e4b52acfb6a88578e841d8beca2"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "7b40b2faa12e07b1e0bca2fce801b1ccd16eaa1348824025a1e1c834dea479ab"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 1,
+            "selected_seam": [
+              [
+                0,
+                0,
+                1
+              ],
+              0,
+              [
+                1,
+                0,
+                1
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "d391830c4cac4c5e57c2191b0abf02946ae2c839c17b1d58177f38b74a4adc7a"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "9298a240d7b38b995e6970561ca985afb005e774d87093eddb563f8db32a5c47"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 2,
+            "selected_seam": [
+              [
+                0,
+                0,
+                2
+              ],
+              0,
+              [
+                1,
+                0,
+                2
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "bf990fcb6291f9e8a7cb114fb211736b623e01b074b3b85416e0d85e036c45ec"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "077434b2febf4afb5fe4494ce816280bd225ed91a8cf70fa523016b068b6461a"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 3,
+            "selected_seam": [
+              [
+                0,
+                1,
+                0
+              ],
+              0,
+              [
+                1,
+                1,
+                0
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "7504f3b598ab27ef9f70defb1d25c89cc501c419fb7ec250d4d2a789086cd725"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "7f3aaed369e10ded4b8ea79bd26141e968975523a8be9ada2e9d5ce4b87fc5cc"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 4,
+            "selected_seam": [
+              [
+                0,
+                1,
+                1
+              ],
+              0,
+              [
+                1,
+                1,
+                1
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "624b50f9524bcb1ab5a58a59d1654732ef96819faba699edc45a4e2117ffc082"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "e8342512e7a5afacbfdcaf53c9a8af45fcf80fa291d9458f7ead6b045fea1c03"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 5,
+            "selected_seam": [
+              [
+                0,
+                1,
+                2
+              ],
+              0,
+              [
+                1,
+                1,
+                2
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "39dd9cff0f979f02ce7ef02ed1c3c9bcc29e25ef4af0e857fe79b27147879f4c"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "19e3b27ca92d7b3e3ebc53b50483622ac89a31e60127ec1061bc7c57127e44fd"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 6,
+            "selected_seam": [
+              [
+                0,
+                2,
+                0
+              ],
+              0,
+              [
+                1,
+                2,
+                0
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "9288bce7384314afda284a96f655ac37f7a36fd2236fa0cd2a087ee20c9121c8"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "b31512b92dd2cc26b338290619bf090f602a84274e04fd764458e6ce81160a28"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 7,
+            "selected_seam": [
+              [
+                0,
+                2,
+                1
+              ],
+              0,
+              [
+                1,
+                2,
+                1
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "9813b9a41493ca7b8c4ee65f7be3ff03d82bb809696b4c2b5e0d0f4fa9452a42"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "e9e319551c1dc440f31088b4c624b4530a20aa8860b85193bf8c82924edcfe47"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 8,
+            "selected_seam": [
+              [
+                0,
+                2,
+                2
+              ],
+              0,
+              [
+                1,
+                2,
+                2
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "ac2083d4a35309f7b171853eb1f3a8111ee86bfa07bf8d191bfe53f3065930fe"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "4051361342cc1b5f72cec7e72e5c987e938e9ca5c8eaf25bc5bb0cb5d2d05adf"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 9,
+            "selected_seam": [
+              [
+                1,
+                0,
+                0
+              ],
+              0,
+              [
+                2,
+                0,
+                0
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "c615b764ab52be27848914774d03dcaa81b8a92bc1766486d5e169088093f1aa"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "0c869551378baadf8e1ab66ec28ce19ce7ecabfc8e88e5ff07807f0b14582346"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 10,
+            "selected_seam": [
+              [
+                1,
+                0,
+                1
+              ],
+              0,
+              [
+                2,
+                0,
+                1
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "4219c56c084d9fba2770503c2b7ba23eab1e4e398d22abd8386d34706a904f84"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "e29df0fdddaa4aa0b2e48684d21a638b4e8c01b121bddfffa3e2b71228b4cefc"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 11,
+            "selected_seam": [
+              [
+                1,
+                0,
+                2
+              ],
+              0,
+              [
+                2,
+                0,
+                2
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "159e6b5a697aebe2ea610db7e5df761d52ad060b15180203bd965e44c2e736be"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "0e39005a320386a801795f480e1b10872bfa09227ddec15efc7debcc925621ff"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 12,
+            "selected_seam": [
+              [
+                1,
+                1,
+                0
+              ],
+              0,
+              [
+                2,
+                1,
+                0
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "5dad20696d08a942803aa38bbf990d6b9e8943ce61b20b5732ee5635a69c7c3d"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "22112cfd18bb16d928857e595ca8cbe3e31524833c16789673c5b416bf7c516c"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 13,
+            "selected_seam": [
+              [
+                1,
+                1,
+                1
+              ],
+              0,
+              [
+                2,
+                1,
+                1
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "962b4ca7391e3051aaf7218d7f53c9e6924fd749f1a1405bcb84ad0b2407a3f7"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "cdcccb2e75f48d9e80748dbe950380df411bd3350b9ae027cc078967ab227e45"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 14,
+            "selected_seam": [
+              [
+                1,
+                1,
+                2
+              ],
+              0,
+              [
+                2,
+                1,
+                2
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "ecf4d7d59542ea642f569a5e0aa012c4c67c2383a8a3eeb735618eeada9264de"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "b373f6e51452467fa27bf28821ef3c7acab477fa447af5dbecb26ed3212a1211"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 15,
+            "selected_seam": [
+              [
+                1,
+                2,
+                0
+              ],
+              0,
+              [
+                2,
+                2,
+                0
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "ad0b33c38f7afea6e9dbea791f91beeb7aa7735d46939497d5cf29a4977100d9"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "7d46129af295341f99643643529e68ec14717a8a3eb16398855b70f0dd81ff0f"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 16,
+            "selected_seam": [
+              [
+                1,
+                2,
+                1
+              ],
+              0,
+              [
+                2,
+                2,
+                1
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 0,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "1c8b3b0ddb65fa0859aed22cc832155d25f0ccc664bd835bbb9bd997fda8a2d3"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 171,
+              "word_sha256": "36140281bc6cc69f24340ec4d0af895676b65d41ceffdfe5f55eb776ab11079a"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 16,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 17,
+            "selected_seam": [
+              [
+                1,
+                2,
+                2
+              ],
+              0,
+              [
+                2,
+                2,
+                2
+              ],
+              1,
+              0
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "4166877f29cbe1c2029d7c766a1f6e0bd5bf9caec143089859e18ca873a4db10"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "07fc8b8ecf36613b2bcd5189ac6043a04b0e160d929d47c8ec01d32a7a486406"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 18,
+            "selected_seam": [
+              [
+                0,
+                0,
+                0
+              ],
+              1,
+              [
+                0,
+                1,
+                0
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "cc04a7bc19b645921e6a1b98ed044d4f26d41a6dbf8217f153d87cbe580717de"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "c8ca4ea19cdc76a9f9bc43e72e836be66f2dd49344c58fae69d3ab177f1c433f"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 19,
+            "selected_seam": [
+              [
+                0,
+                0,
+                1
+              ],
+              1,
+              [
+                0,
+                1,
+                1
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "f9a2b13a6e549d0c547fe086573bd5af842cab5765a25d515655b642d81bd5c2"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "fca12008201eeec1beee7727531c8797a54b43f6f720aa388ae6b5b276058416"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 20,
+            "selected_seam": [
+              [
+                0,
+                0,
+                2
+              ],
+              1,
+              [
+                0,
+                1,
+                2
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "ae6845301600c8990e50e3f3f954e57d7137bc32c8452d30aefb521c546a0b87"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "2042460735ed4a5c147a924830300e4500badfe8df3ccb7b6fd940128c2732f9"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 21,
+            "selected_seam": [
+              [
+                1,
+                0,
+                0
+              ],
+              1,
+              [
+                1,
+                1,
+                0
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "0288ad286cfabc4e8a9e94fa27b8f3afd6868cdc2d9c77660b8cf5350103cf01"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "11e28b57fade58fbd9adaeea1cde2d27316eaa6a9d629cb69d7e3fc5428af215"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 22,
+            "selected_seam": [
+              [
+                1,
+                0,
+                1
+              ],
+              1,
+              [
+                1,
+                1,
+                1
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "0b6f3048a70e32daebf40364b769fad3878ac5c0efb81e05c95504f6dc5ac374"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "85c5c26cc7481de9f8050660b43e6ac960c180910442cacbc7079ca7b0f64cd0"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 23,
+            "selected_seam": [
+              [
+                1,
+                0,
+                2
+              ],
+              1,
+              [
+                1,
+                1,
+                2
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "520d3dac87c728dc5c0bc3bec5aa8c93c29c5b98b292be8477ff87e4b752a986"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "0b36b832230b101b543bb3b0f001bec5efc1f5eb7d4d42de9e27a1654e48dfaa"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 24,
+            "selected_seam": [
+              [
+                2,
+                0,
+                0
+              ],
+              1,
+              [
+                2,
+                1,
+                0
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "60d7be1dbb96d512b5ed3371c8399583f5a6679a0678717ca0cacc1c33c751a5"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "8d21021b8bec349520e57530b3be38e362f3bf158b228636bee046542db734d8"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 25,
+            "selected_seam": [
+              [
+                2,
+                0,
+                1
+              ],
+              1,
+              [
+                2,
+                1,
+                1
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "a96e2f6173ba2f924c070ce5c0ff34f3a347be19cf1384080f8f6e9a46d6d814"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "85bfc493806a4ce2cd6e52b02a27ac41a1ec2d512598a517b23eb4c272ab2b22"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 26,
+            "selected_seam": [
+              [
+                2,
+                0,
+                2
+              ],
+              1,
+              [
+                2,
+                1,
+                2
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "19ea9d286781d5aac198f13f2062d73adfde33fd139e47e03ef60456472acc4c"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "2e359503e8e527b93d24521724856818e6c9e390359d41468c4539d54ac9b5e4"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 27,
+            "selected_seam": [
+              [
+                0,
+                1,
+                0
+              ],
+              1,
+              [
+                0,
+                2,
+                0
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "f94c90e3fc0d6d367c9bcd3eb0690082aa855d8432ff3cc1771fa14c11e73d85"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "0cc952e2453628a49a70a6c19b52ba38a576d22f1c3f2583676684e501f2182c"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 28,
+            "selected_seam": [
+              [
+                0,
+                1,
+                1
+              ],
+              1,
+              [
+                0,
+                2,
+                1
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "4494bd1862b60896185f8a65c6bba8cdb8fc47a67d9017caaeb7b5fbf6117383"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "0349197129b4c5e32d69ba4f7c6faa98fe29db5ea73784ff9892500013a5dbbf"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 29,
+            "selected_seam": [
+              [
+                0,
+                1,
+                2
+              ],
+              1,
+              [
+                0,
+                2,
+                2
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "eb796372d01bea4353b4b1684703cfda05c94b4034b7c10a14cea56649f6db31"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "03143eafeebf5057c4b44bdddd92c8e48ea1456cff661b21009f64db4801e04f"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 30,
+            "selected_seam": [
+              [
+                1,
+                1,
+                0
+              ],
+              1,
+              [
+                1,
+                2,
+                0
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "c97e6a6118e0a6ba74b212217983cd24b08bc9445835892f9430349b7d0a336f"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "13dd092438ea155ff88235e262cec77e1ae9353f844a67b4484c5a567a62324a"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 31,
+            "selected_seam": [
+              [
+                1,
+                1,
+                1
+              ],
+              1,
+              [
+                1,
+                2,
+                1
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "d08d2859230617865a29975fe784224198acd4f57ee3901738ce0402e5cc22a2"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "f31c49f66aa98586729a2a9307f3ee5d2bceae0523079fc60fa2cff67e3a623a"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 32,
+            "selected_seam": [
+              [
+                1,
+                1,
+                2
+              ],
+              1,
+              [
+                1,
+                2,
+                2
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "815ed724f276b1c03f10509ba97b88d9b642840f234d36cf5b2de8b33f800959"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "82f146d13289270a63dd6e5932ec4e368aa60a47571e1665ff10e39e584f4aa0"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 33,
+            "selected_seam": [
+              [
+                2,
+                1,
+                0
+              ],
+              1,
+              [
+                2,
+                2,
+                0
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "ede3293a2a1cb76fd9e2c2226cff1cf6dff0280b4e471b3e19776cfd1409e0e1"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "ef0dfa426a4a5b1422f73496650e90a9bdff76bebee9af06ecc4e7718983cf3f"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 34,
+            "selected_seam": [
+              [
+                2,
+                1,
+                1
+              ],
+              1,
+              [
+                2,
+                2,
+                1
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 1,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "0b7c9057b64fe8d05316567f6c21aa217e6eff9d0bb9a0576543b7f06c01a356"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 151,
+              "word_sha256": "aa762884538f83e9c32d98f4a5c607f2f63024aa571fa8d25c8606099000e3f8"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 12,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 35,
+            "selected_seam": [
+              [
+                2,
+                1,
+                2
+              ],
+              1,
+              [
+                2,
+                2,
+                2
+              ],
+              3,
+              2
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "166df7fdb4f3b3a89978d9b90eaaf63a7783a8b34b5ca3f018b2b61ea3f62af4"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "4e98e1368a592595696be8b26f66cff39e1bda6e2a0e400a762ed14d29f9d584"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 36,
+            "selected_seam": [
+              [
+                0,
+                0,
+                0
+              ],
+              2,
+              [
+                0,
+                0,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "cd749d3d47aa9ff853f64b686e5d154eeb7736ed1c10c25f7ad7d94bbd33b2bc"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "855a1c796b02eb6e240030e1eb93e33c29c79957c42d941ed59cb08e71eb6933"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 37,
+            "selected_seam": [
+              [
+                0,
+                1,
+                0
+              ],
+              2,
+              [
+                0,
+                1,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "fbd2279301a472da980b1083aa0927a523ad95434372a647a355ca34d4cad2df"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "b99ad29fe41c7cae039d1a141eb84f7fccde94456c1e5d8bd0da2f49fa6687b4"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 38,
+            "selected_seam": [
+              [
+                0,
+                2,
+                0
+              ],
+              2,
+              [
+                0,
+                2,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "668a65f20d95222aa34d7d0354b40eb31b80ea2e52bc5a22da39fa7ff3474b2c"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "8781289bca1984bbd95613a49a0a74cc3d8e62eee8c578e383eb564718033213"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 39,
+            "selected_seam": [
+              [
+                1,
+                0,
+                0
+              ],
+              2,
+              [
+                1,
+                0,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "3aa4ee366060b63a6a6d3ed72deb76c80e6572ac0471757bd496e17db2c1d655"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "b3f25bb0c0bb8292284d5cdba1962b333a9857aa51b89d4949a0718526b4aef3"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 40,
+            "selected_seam": [
+              [
+                1,
+                1,
+                0
+              ],
+              2,
+              [
+                1,
+                1,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "3d76f86285b51e432a4feb42b7d251ee95c7e40dfa83504e7495051bbd0a22f3"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "45674423721e641acd959d0c6187be98d49dcf1f7a7feb08e6d28069af767dff"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 41,
+            "selected_seam": [
+              [
+                1,
+                2,
+                0
+              ],
+              2,
+              [
+                1,
+                2,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "2751faee161f4c3bfa463109b132a983f70836461d504ba0feafa58be371c720"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "d7676e2cd45d3a3e304a06436bff72c9ece1970753a0f255c6c2d063ee845bca"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 42,
+            "selected_seam": [
+              [
+                2,
+                0,
+                0
+              ],
+              2,
+              [
+                2,
+                0,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "9e347c11e47103892ab069b32469c488f6ce680a605b6d993ebf311098f9c209"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "3a41fc24335ab1577e2a91574e75b66667ddcdb857b3944781da54f8e0a6e042"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 43,
+            "selected_seam": [
+              [
+                2,
+                1,
+                0
+              ],
+              2,
+              [
+                2,
+                1,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "e8406a75cec3e998be2f931b1b612947771a4ec38fa59cd24fa8c9b9c0a4df22"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "8a34ce89a68afa692909c0c82981101ca0fb30a5780be5a17371e98a53518942"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 44,
+            "selected_seam": [
+              [
+                2,
+                2,
+                0
+              ],
+              2,
+              [
+                2,
+                2,
+                1
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "0fc8ec45e069b3801fec219dd43b4f61d66d8820815409683562c1c7f0e0392e"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "fc0d1d5fb8f786376e6714fe328a44fb9f6dce98093446f17bfe998bd871af1b"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 45,
+            "selected_seam": [
+              [
+                0,
+                0,
+                1
+              ],
+              2,
+              [
+                0,
+                0,
+                2
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "fc669fc9bfc09ebd1c1db74c906163f63d02f60c282054c384dd2c40557134e4"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "b4f1a0384366bd23528dca5c5704252bfeefc95b7d86e108d09fad3b666c06ed"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 46,
+            "selected_seam": [
+              [
+                0,
+                1,
+                1
+              ],
+              2,
+              [
+                0,
+                1,
+                2
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "eadef2fb51c10286a4d214cffa8c861a7688bc65cd9b19db456313bb3b0be245"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "5c94e74eecdca611e4f5a92fdbe417e1d07c4a7e9c8ba32aa59ca769503b7817"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 47,
+            "selected_seam": [
+              [
+                0,
+                2,
+                1
+              ],
+              2,
+              [
+                0,
+                2,
+                2
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "14855cb541afa072603d38645bd39291eee5fcb2df85ff48366a749c8c5512ce"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "6e630354a18a31e2911c582ca51d1aed911abe5edd41459289f6d8d059d17420"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 48,
+            "selected_seam": [
+              [
+                1,
+                0,
+                1
+              ],
+              2,
+              [
+                1,
+                0,
+                2
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "dbbe38133f8e935eed3b894f08e7ee098a170503674fb0fe7f12e9ed10ba9562"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "985c7bd42034ff6d47a688f7591a7df2247a2edbd083c2f89e19a3c6e432d220"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 49,
+            "selected_seam": [
+              [
+                1,
+                1,
+                1
+              ],
+              2,
+              [
+                1,
+                1,
+                2
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "f5f50efa60656b82ac54778c6abc475ae2f43e2dc5c6d0768ca32f16af988484"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "36340de52a185ee14f14d60dbbf02858aa559d50aee7255573c3343b3000e451"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 50,
+            "selected_seam": [
+              [
+                1,
+                2,
+                1
+              ],
+              2,
+              [
+                1,
+                2,
+                2
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "87eda75bb1cc49320c4cbbde4e2fb8b1aa817ccbcf2bbc4c2b42c4eaec65c10b"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "033f142fd0528d18e1efa3663adcbae164aa5cd768c6d8e44d1aa1d2e780aeb2"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 51,
+            "selected_seam": [
+              [
+                2,
+                0,
+                1
+              ],
+              2,
+              [
+                2,
+                0,
+                2
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "481e933c1c5df8034cb2f85026e83331d6da7a1414038095b63bd344fda46af0"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "587f8135046e8200f6c5de2922840ea5dea8bc22f79e81dc8433d49719306110"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 52,
+            "selected_seam": [
+              [
+                2,
+                1,
+                1
+              ],
+              2,
+              [
+                2,
+                1,
+                2
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          },
+          {
+            "Cycle714_packet_interface_M2": 59,
+            "assigned_palette_collisions": 0,
+            "available_radius_two_sites": 117,
+            "axis": 2,
+            "bridge_and_packet_aliased_M2": 59,
+            "endpoint_cleanup_precedes_packet": true,
+            "endpoint_scratch_aliases": [
+              56,
+              57
+            ],
+            "extra_primitive_instructions": 761,
+            "fixed_alias_blocked_collisions": 0,
+            "forward_inverse_routed_gate_count_match": true,
+            "forward_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "1c889ac87c87e010e981f8ce24d6236c5f12e70e7819aa71bdf7ad3361cfa163"
+            },
+            "inverse_route": {
+              "delete_first_swap_detected_macros": 328,
+              "maximum_route_distance": 13,
+              "non_NN_failures": 0,
+              "operand_order_failures": 0,
+              "route_return_failures": 0,
+              "routed_gate_count": 3191,
+              "routed_one_site": 432,
+              "routed_two_site": 2759,
+              "touched_sites": 128,
+              "word_sha256": "b669292ae8ef9fda189fd610e19bb6634921c6033c79a5aa6cc4934916c4406b"
+            },
+            "left_B_support_L1_diameter": 11,
+            "left_B_support_weight": 6,
+            "maximum_local_L_infinity_radius": 2,
+            "ordered_product_coordinate_failures": 0,
+            "packet_site_collisions": 0,
+            "persistent_palette_collisions": 0,
+            "pointer_alias": 44,
+            "proper_frame_coframe_transport_failures": 0,
+            "returned_route_persistent_spectators": 5,
+            "right_B_support_L1_diameter": 13,
+            "right_B_support_weight": 6,
+            "seam_index": 53,
+            "selected_seam": [
+              [
+                2,
+                2,
+                1
+              ],
+              2,
+              [
+                2,
+                2,
+                2
+              ],
+              5,
+              4
+            ],
+            "selected_seam_present": true
+          }
+        ],
+        "shape": [
+          3,
+          3,
+          3
+        ]
+      }
+    ]
+  },
+  "audit": "unset",
+  "authority": "none",
+  "checks": {
+    "24_frame_576_product_bridge_covariance_is_exact": true,
+    "L2_L3_bridge_geometry_and_returned_routes_close": true,
+    "all_262144_primary_liveness_rows_close_exactly": true,
+    "all_4096_rows_on_all_three_axes_close_exactly": true,
+    "both_declared_orientation_inputs_project_exactly": true,
+    "coherent_phase_pointer_and_scratch_are_exact": true,
+    "composed_inverse_and_59_M2_packet_inverse_are_exact": true,
+    "direct_dependencies_are_byte_pinned": true,
+    "every_named_bridge_mutation_is_detected": true,
+    "seam_term_and_rotation_deletions_are_active": true,
+    "selected_landed_seams_equal_signed_logical_FSWAPs": true,
+    "unchanged_Cycle704_610_612_acceptance_is_preserved": true
+  },
+  "claim_scope": "bounded selected-seam checker: signed Cycle870 FSWAP -> coherent XOR/OR opportunity pointer -> independently supplied Cycle714 orientation -> landed packet -> unchanged Cycle704/610/612 acceptance",
+  "covariance_24_576": {
+    "Cycle714_orientation_input_values_exhausted": 2,
+    "bridge_coordinate_product_failures": 0,
+    "canonical_mask_covariance_failures": 0,
+    "independent_landed_frame_set_difference": 0,
+    "maximum_signed_seam_phase_residual": 0.0,
+    "mode_product_failures": 0,
+    "ordered_frame_products": 576,
+    "pointer_covariance_failures": 0,
+    "proper_cubic_frames": 24,
+    "signed_Fock_product_failures": 0,
+    "signed_Fock_product_rows": 2359296,
+    "signed_seam_endpoint_mapping_failures": 0,
+    "signed_seam_occupation_rows": 294912,
+    "signed_seam_semantic_failures": 0
+  },
+  "cycle": 871,
+  "declared_inputs": [
+    "scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py",
+    "outputs/cycle871_selected_openreference_seam_cycle714_packet_bridge_check_receipt_2026_08_02.json",
+    "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py",
+    "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py"
+  ],
+  "declared_orientation_input": {
+    "Cycle714_ORIENT": "independent input coordinate"
+  },
+  "deletions": {
+    "difference_counts": {
+      "delete_OR_Toffoli": 12288,
+      "delete_OR_left_CNOT": 12288,
+      "delete_OR_right_CNOT": 12288,
+      "delete_cleanup_left": 12288,
+      "delete_cleanup_right": 12288,
+      "delete_packet_delta": 12288,
+      "delete_packet_enable": 12288,
+      "delete_packet_orientation": 6144,
+      "delete_packet_predecessor": 12288,
+      "delete_packet_word": 12288,
+      "delete_pointer_handoff": 12288,
+      "delete_post_left": 12288,
+      "delete_post_right": 12288,
+      "delete_pre_left": 12288,
+      "delete_pre_right": 12288,
+      "delete_raw_to_canonical": 8192,
+      "delete_seam": 18432,
+      "plain_SWAP_phase": 12288
+    },
+    "inactive_mutations": [],
+    "trials_per_mutation": 24576
+  },
+  "dependency_pin_failures": {},
+  "direct_dependency_sha256": {
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py": "4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a",
+    "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+    "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b"
+  },
+  "exhaustive_primary_liveness": {
+    "admitted_cases": 4096,
+    "cases": 262144,
+    "endpoint_scratch_aliases": [
+      56,
+      57
+    ],
+    "equation_failures": 0,
+    "factorization": "16 rotors * 64 heads * 2 supplied orientations * 4 endpoint occupations * 32 other-control patterns",
+    "inverse_failures": 0,
+    "pointer_alias": 44,
+    "pointer_q44_alias_failures": 0,
+    "post_packet_work_failures": 0,
+    "pre_packet_scratch_failures": 0,
+    "refused_cases": 258048,
+    "supplied_orientation_failures": 0,
+    "total_physical_M2": 59
+  },
+  "exhaustive_two_cell_bridge": {
+    "Cycle714_supplied_orientation_failures": 0,
+    "FSWAP_polynomial_truth_failures": 0,
+    "axes": [
+      {
+        "Cycle714_supplied_orientation_failures": 0,
+        "FSWAP_polynomial_truth_failures": 0,
+        "axis": 0,
+        "bridge_equation_failures": 0,
+        "composed_rows": 8192,
+        "independently_supplied_orientation_values": 2,
+        "inverse_failures": 0,
+        "maximum_FSWAP_column_residual": 0.0,
+        "occupation_rows_per_supplied_orientation": 4096,
+        "packet_schema_failures": 0,
+        "plain_SWAP_coherent_phase_residual": 1.414213562373095,
+        "pointer_false_rows": 4096,
+        "pointer_true_rows": 4096,
+        "raw_endpoint_modes": [
+          1,
+          6
+        ],
+        "raw_to_canonical_mask_failures": 0,
+        "scratch_cleanup_failures": 0,
+        "signed_negative_rows": 4096
+      },
+      {
+        "Cycle714_supplied_orientation_failures": 0,
+        "FSWAP_polynomial_truth_failures": 0,
+        "axis": 1,
+        "bridge_equation_failures": 0,
+        "composed_rows": 8192,
+        "independently_supplied_orientation_values": 2,
+        "inverse_failures": 0,
+        "maximum_FSWAP_column_residual": 0.0,
+        "occupation_rows_per_supplied_orientation": 4096,
+        "packet_schema_failures": 0,
+        "plain_SWAP_coherent_phase_residual": 1.414213562373095,
+        "pointer_false_rows": 4096,
+        "pointer_true_rows": 4096,
+        "raw_endpoint_modes": [
+          3,
+          8
+        ],
+        "raw_to_canonical_mask_failures": 0,
+        "scratch_cleanup_failures": 0,
+        "signed_negative_rows": 4096
+      },
+      {
+        "Cycle714_supplied_orientation_failures": 0,
+        "FSWAP_polynomial_truth_failures": 0,
+        "axis": 2,
+        "bridge_equation_failures": 0,
+        "composed_rows": 8192,
+        "independently_supplied_orientation_values": 2,
+        "inverse_failures": 0,
+        "maximum_FSWAP_column_residual": 0.0,
+        "occupation_rows_per_supplied_orientation": 4096,
+        "packet_schema_failures": 0,
+        "plain_SWAP_coherent_phase_residual": 1.414213562373095,
+        "pointer_false_rows": 4096,
+        "pointer_true_rows": 4096,
+        "raw_endpoint_modes": [
+          5,
+          10
+        ],
+        "raw_to_canonical_mask_failures": 0,
+        "scratch_cleanup_failures": 0,
+        "signed_negative_rows": 4096
+      }
+    ],
+    "bridge_equation_failures": 0,
+    "coherent_full_4096_by_two_orientation_rows": [
+      {
+        "axis": 0,
+        "independently_supplied_orientation_values": 2,
+        "norm_residual": 0.0,
+        "superposed_source_columns": 8192
+      },
+      {
+        "axis": 1,
+        "independently_supplied_orientation_values": 2,
+        "norm_residual": 0.0,
+        "superposed_source_columns": 8192
+      },
+      {
+        "axis": 2,
+        "independently_supplied_orientation_values": 2,
+        "norm_residual": 0.0,
+        "superposed_source_columns": 8192
+      }
+    ],
+    "inverse_failures": 0,
+    "maximum_FSWAP_column_residual": 0.0,
+    "maximum_coherent_composition_residual": 0.0,
+    "packet_schema_failures": 0,
+    "plain_SWAP_coherent_phase_residuals": [
+      1.414213562373095,
+      1.414213562373095,
+      1.414213562373095
+    ],
+    "pointer_false_rows": 12288,
+    "pointer_true_rows": 12288,
+    "raw_to_canonical_mask_failures": 0,
+    "scratch_cleanup_failures": 0,
+    "signed_negative_rows": 12288,
+    "total_occupation_rows": 24576
+  },
+  "packet_inverse": {
+    "Toffoli_decomposition_residual": 8.021723640960921e-16,
+    "arbitrary_59_M2_rows": 256,
+    "expanded_one_two_M2_gates": 718,
+    "inverse_failures": 0,
+    "semantic_gates": 60
+  },
+  "selected_seam_code_algebra": [
+    {
+      "axis": 0,
+      "code_target_residual": 0.0,
+      "constraint_rank": 26,
+      "four_rotation_global_phase": [
+        0.0,
+        -1.0
+      ],
+      "four_rotation_residual_up_to_global_phase": 0.0,
+      "full_space_involution_residual": 0.0,
+      "hermitian_term_failures": 0,
+      "rotation_deletion_residuals": [
+        0.7653668647301796,
+        0.7653668647301796,
+        0.7653668647301796,
+        0.7653668647301797
+      ],
+      "selected_seam": [
+        [
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          1,
+          0,
+          0
+        ],
+        1,
+        0
+      ],
+      "selected_seam_present_in_landed_graph_enumerator": true,
+      "term_deletion_code_residuals": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "term_deletion_involution_residuals": [
+        0.5590169943749475,
+        0.5590169943749475,
+        0.5590169943749475,
+        0.5590169943749475
+      ]
+    },
+    {
+      "axis": 1,
+      "code_target_residual": 0.0,
+      "constraint_rank": 26,
+      "four_rotation_global_phase": [
+        0.0,
+        -1.0
+      ],
+      "four_rotation_residual_up_to_global_phase": 0.0,
+      "full_space_involution_residual": 0.0,
+      "hermitian_term_failures": 0,
+      "rotation_deletion_residuals": [
+        0.7653668647301796,
+        0.7653668647301796,
+        0.7653668647301796,
+        0.7653668647301796
+      ],
+      "selected_seam": [
+        [
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          1,
+          0
+        ],
+        3,
+        2
+      ],
+      "selected_seam_present_in_landed_graph_enumerator": true,
+      "term_deletion_code_residuals": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "term_deletion_involution_residuals": [
+        0.5590169943749475,
+        0.5590169943749475,
+        0.5590169943749475,
+        0.5590169943749475
+      ]
+    },
+    {
+      "axis": 2,
+      "code_target_residual": 0.0,
+      "constraint_rank": 26,
+      "four_rotation_global_phase": [
+        0.0,
+        -1.0
+      ],
+      "four_rotation_residual_up_to_global_phase": 0.0,
+      "full_space_involution_residual": 0.0,
+      "hermitian_term_failures": 0,
+      "rotation_deletion_residuals": [
+        0.7653668647301796,
+        0.7653668647301796,
+        0.7653668647301796,
+        0.7653668647301796
+      ],
+      "selected_seam": [
+        [
+          0,
+          0,
+          0
+        ],
+        2,
+        [
+          0,
+          0,
+          1
+        ],
+        5,
+        4
+      ],
+      "selected_seam_present_in_landed_graph_enumerator": true,
+      "term_deletion_code_residuals": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "term_deletion_involution_residuals": [
+        0.5590169943749475,
+        0.5590169943749475,
+        0.5590169943749475,
+        0.5590169943749475
+      ]
+    }
+  ],
+  "status": "cycle871-selected-openreference-seam-cycle714-packet-bridge-check-pass",
+  "unchanged_acceptance": {
+    "Cycle610_EventCell_projection_failures": 0,
+    "Cycle610_statuses": [
+      "admitted",
+      "admitted"
+    ],
+    "Cycle612_generated_harness": {
+      "JointOrder_class_module": "physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22",
+      "consistent_acyclic": true,
+      "consistent_statuses": [
+        "admitted",
+        "admitted"
+      ],
+      "edge_qubit_opportunities": [
+        1,
+        1
+      ],
+      "forced_cycle_detected": true,
+      "inverted_first": "admitted",
+      "inverted_refusal": "refused_inverted",
+      "no_endpoint_status": "no_opportunity"
+    },
+    "Cycle612_landed_harness": {
+      "JointOrder_class_module": "physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22",
+      "consistent_acyclic": true,
+      "consistent_statuses": [
+        "admitted",
+        "admitted"
+      ],
+      "edge_qubit_opportunities": [
+        1,
+        1
+      ],
+      "forced_cycle_detected": true,
+      "inverted_first": "admitted",
+      "inverted_refusal": "refused_inverted",
+      "no_endpoint_status": "no_opportunity"
+    },
+    "Cycle612_unchanged_harness_failures": false,
+    "Cycle704_packet_projection_failures": 0,
+    "Cycle704_packet_statuses": [
+      "admitted",
+      "admitted"
+    ],
+    "generated_orientations": [
+      -1,
+      1
+    ],
+    "no_pointer_Cycle610_status": "no_opportunity",
+    "no_pointer_Cycle704_status": "no_opportunity",
+    "packet_orientation_bits": [
+      0,
+      1
+    ],
+    "supplied_orientation_bits": [
+      0,
+      1
+    ]
+  }
+}

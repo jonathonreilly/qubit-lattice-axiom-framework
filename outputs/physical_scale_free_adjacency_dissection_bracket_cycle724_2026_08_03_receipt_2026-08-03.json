@@ -1,0 +1,62 @@
+{
+  "adjacency_clique_box_sites": 125,
+  "adjacency_clique_offending_triples": 0,
+  "adjacency_only_affine_ranks": [
+    1,
+    2
+  ],
+  "adjacency_only_cell_volumes": [
+    0
+  ],
+  "adjacency_only_five_subsets": 1764,
+  "arbitrary_dissection_floor": "56.0",
+  "arbitrary_floor_argmin": [
+    [
+      7,
+      3
+    ]
+  ],
+  "below_average_clique_profile": {
+    "4": 16
+  },
+  "below_average_clique_reversed_order": 16,
+  "below_average_cost_clique": 16,
+  "compatibility_degree_range": [
+    987,
+    1863
+  ],
+  "compatibility_edges": 1984616,
+  "corner_cells_nondegenerate": 3008,
+  "corner_five_subsets": 4368,
+  "floor_attaining_cells": 64,
+  "floor_cell_structure": [
+    "((2, 1, 1, 1), True, True, 1)"
+  ],
+  "floor_cost_cell_ratio": "72.0",
+  "floor_cost_clique": 8,
+  "floor_cost_clique_colour_free": 8,
+  "monotone_path_cells": 24,
+  "monotone_path_cost_profile": {
+    "4": 12,
+    "5": 12
+  },
+  "monotone_path_dissection_cost": 108,
+  "monotone_path_overlaps": 0,
+  "per_cell_cost_floor": 3,
+  "programme_disagreements": 0,
+  "programme_pairs_checked": 2016,
+  "refined_cell_cost_floor": 3,
+  "refined_cells_nondegenerate": 2449800,
+  "refined_region_floor": "80.0",
+  "rejector_adjacency_cost": 3,
+  "rejector_affine_rank": 4,
+  "unimodular_cells": 2672,
+  "unimodular_cost_lower_bound": 96,
+  "unimodular_cost_profile": {
+    "3": 64,
+    "4": 384,
+    "5": 1152,
+    "6": 768,
+    "7": 304
+  }
+}

@@ -3,10 +3,10 @@
     "critical": 766,
     "high": 464,
     "leaf": 2213,
-    "medium": 1188
+    "medium": 1189
   },
   "flagship_signal_used": false,
-  "node_count": 4631,
+  "node_count": 4632,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 284.615,
-      "transitive_descendants": 2217
+      "load_bearing_score": 284.616,
+      "transitive_descendants": 2218
     },
     {
       "claim_id": "graph_first_su3_integration_note",
@@ -85,8 +85,8 @@
     {
       "claim_id": "kinetic_isotropy_primitive",
       "criticality": "critical",
-      "load_bearing_score": 39.29,
-      "transitive_descendants": 884
+      "load_bearing_score": 39.291,
+      "transitive_descendants": 885
     },
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",

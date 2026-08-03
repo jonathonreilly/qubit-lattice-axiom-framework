@@ -31,17 +31,17 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3971 |
-| Applied audit verdicts | 868 |
+| Ledger rows | 3972 |
+| Applied audit verdicts | 869 |
 | Retained-grade rows, including boxed decorations | 457 |
 | Retained positive theorems | 111 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 320 |
 | Boxed decorations under retained parents | 26 |
 | Open gates | 2 |
-| Unaudited rows | 2734 |
+| Unaudited rows | 2735 |
 | Retained-pending-chain rows | 12 |
-| Audited conditional rows | 282 |
+| Audited conditional rows | 283 |
 | Audited renaming rows | 33 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 59 |
@@ -54,12 +54,12 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3092 |
+| Total pending rows | 3093 |
 | Ready rows | 508 |
 | Cycle-break targets | 60 |
 | Critical pending | 661 |
 | High pending | 382 |
-| Medium pending | 857 |
+| Medium pending | 858 |
 | Leaf pending | 1192 |
 
 Next ready rows by queue order:
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 1 |
 | Admitted ids absent from lane candidates | 25 |
-| Live conditional/failed rows that would park | 6 |
+| Live conditional/failed rows that would park | 7 |
 | Live rows fail-open (legacy/unversioned snapshot) | 28 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 9 |
@@ -285,7 +285,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`: -3
 - `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`: -3
 - `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10`: -3
-- `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`: -3
+- `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`: -3
 - `record_markov_generator_embeddability_boundary_2026-06-06`: -3
 - `schur_covariance_inheritance_narrow_theorem_note_2026-05-02`: -3
 - `fermion_parity_z2_grading_theorem_note_2026-05-02`: -2
@@ -298,7 +298,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `staggered_3d_self_gravity_sign_note_2026-04-11`: -2
 - `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`: -2
 - `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04`: -2
-- `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`: -2
+- `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`: -2
 - `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`: -2
 - `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`: -1
 - `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`: -1
@@ -319,15 +319,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4631 |
+| Citation-graph nodes | 4632 |
 | Critical nodes | 766 |
 | High nodes | 464 |
-| Medium nodes | 1188 |
+| Medium nodes | 1189 |
 | Leaf nodes | 2213 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2217 descendants; score 284.615
+- `minimal_axioms` - critical; 2218 descendants; score 284.616
 - `graph_first_su3_integration_note` - critical; 1687 descendants; score 64.221
 - `three_generation_observable_theorem_note` - critical; 1291 descendants; score 62.335
 - `observable_principle_from_axiom_note` - critical; 1133 descendants; score 61.647

@@ -1,5 +1,18 @@
 # Campaign 5 review history — toe-time-expansion-20260802
 
+## Cycle 880 — visible-point physics (blockG6, PR #5937) — 2026-08-04
+
+- SUPERVISOR SPEC ERROR, worker-caught: the spec premised "the conformal
+  channel now nonzero" at (1,2,0) for the 868 family — false by Cycle
+  873's own trace grading-independence, which the spec failed to apply.
+  The runner states the refutation and builds the correct object (the
+  enlarged 36-support fibration; the 868 family = exactly its blind
+  locus). Lesson: spec premises must be checked against the stack's own
+  landed identities before farm-out; the refute-spec discipline caught
+  it regardless.
+- Worker's own first Rule B also self-refuted and restated as an iff.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
 ## Cycle 871 — source-action bridge pricing (blockG2, PR #5926) — 2026-08-03
 
 - Worker: Claude Opus 5 (substitution disclosed). Supervisor review:

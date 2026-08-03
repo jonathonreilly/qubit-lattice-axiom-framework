@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 128 |
+| Retained positive rows | 129 |
 | Retained bounded rows | 362 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 36 |
 
-## Retained positive rows (128)
+## Retained positive rows (129)
 
 Sorted by load-bearing graph score (descending).
 
@@ -31,6 +31,7 @@ Sorted by load-bearing graph score (descending).
 - [`koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`](../../docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) — score 30.758; audited 2026-07-18T04:09:14.626536+00:00
 - [`koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`](../../docs/KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) — score 29.742; audited 2026-07-18T01:25:36.958473+00:00
 - [`gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md) — score 26.356; audited 2026-07-29T19:41:04.061082+00:00
+- [`cl3_complexification_split_narrow_theorem_note_2026-05-10`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 25.311; audited 2026-08-03T01:49:18.756456+00:00
 - [`graph_first_selector_derivation_note`](../../docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md) — score 25.207; audited 2026-05-22T15:33:35.673777+00:00
 - [`gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10`](../../docs/GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 24.951; audited 2026-06-06T22:50:14.735139+00:00
 - [`alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`](../../docs/ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md) — score 24.883; audited 2026-07-15T18:45:38.154373+00:00

@@ -3440,6 +3440,7 @@ def apply_serialized(
 
 def selected_batch(targets: list[dict], max_workers: int) -> list[dict]:
     selected: list[dict] = []
+    reserved: set[str] = set()
     used = 0
     for row in targets:
         seats = len(passes_for_row(row))
@@ -3447,7 +3448,21 @@ def selected_batch(targets: list[dict], max_workers: int) -> list[dict]:
             continue
         if used + seats > max_workers:
             continue
+        # A verdict can update an ordinary dependency's derived status or
+        # topology (notably when a decoration relation is established).  Do
+        # not launch a sibling packet whose selection fingerprint would then
+        # be stale.  Canonical accepted premises are immutable policy inputs
+        # and therefore do not serialize otherwise-independent targets.
+        collision_keys = {row["claim_id"]}
+        collision_keys.update(
+            dep
+            for dep in (row.get("deps") or [])
+            if isinstance(dep, str) and dep and not accepted(dep)
+        )
+        if reserved.intersection(collision_keys):
+            continue
         selected.append(row)
+        reserved.update(collision_keys)
         used += seats
     return selected
 

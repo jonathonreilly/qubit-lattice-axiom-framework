@@ -1,0 +1,53 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor review",
+ "block": "toe-time-blockT2-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "checker": "all gates PASS, 46s; 9 mutation controls each fail exactly the intended gate",
+  "primary": "all gates PASS, 48s"
+ },
+ "claim_type": "bounded_theorem",
+ "cycles": [
+  879
+ ],
+ "deviations_disclosed": [
+  "store cap = horizon (nominal 1024 would truncate 1788 clocks / 1,956,769 events)",
+  "rep cap 600->648 (cannot bite; max observed 221)",
+  "dict->binary search (gated equivalent)"
+ ],
+ "files": {
+  "docs/B4_CLOCK_RELATION_RUN_CYCLE879_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "e46a08bb40783526b15a0a61343fab92e83b3922",
+   "sha256": "92b891c61c43548e879e58fbc73a4bb6587383d0604b7c42f8e1a13ce2a037f1"
+  },
+  "logs/runner-cache/frontier_cycle879_b4_clock_relation_2026_07_28.txt": {
+   "git_blob": "0f7523c82f6c415eba20a5862d397bbdd36e8906",
+   "sha256": "da3b35d69f81c986ecec5b4f34a98da1712ea559cd2643dc7eec3ab2520dc558"
+  },
+  "logs/runner-cache/frontier_cycle879_b4_relation_independent_check_2026_07_28.txt": {
+   "git_blob": "d13c86ebce126eedeca6724ccdfff9b1183b7f52",
+   "sha256": "c4201c624ba2aeff94c509416b13b0e353eae02cd9be1427193748a5c736e0f0"
+  },
+  "scripts/frontier_cycle879_b4_clock_relation_2026_07_28.py": {
+   "git_blob": "c2147a99c1a6879508fbf250051f87115b0b9d35",
+   "sha256": "40bf65b88db19a7872d3dd5de50c7746bbecd98ce87c2b1176ce18ec9e5f7b2f"
+  },
+  "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py": {
+   "git_blob": "fca6381db00ef57f3323aa622d09a9ae5d51198c",
+   "sha256": "f59ed85d4b96214bee3eeae244b17f0b015f383251020bd686d7a48565885177"
+  }
+ },
+ "headline": "B=4: translation law strengthens (5,085/5,085 nonzero, 87.2% coverage); within-key exhaustion persists weakened (9 non-identity of 8,171); THE ORBIT LAW BREAKS \u2014 P=11 on a 27-station ring (16 clocks, gated both ways); comparison table 4 strengthened / 1 unchanged / 3 weakened / 1 breaks",
+ "independence": "cross-context (own substrate rebuild, wider search 2,733 vs 496, both-ways period mutation control)",
+ "note": "docs/B4_CLOCK_RELATION_RUN_CYCLE879_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "runtime_seconds": {
+  "checker": 46,
+  "primary": 48
+ },
+ "successors": [
+  "P=11 characterization",
+  "leg-(ii) adjudication of the new exception sets"
+ ]
+}

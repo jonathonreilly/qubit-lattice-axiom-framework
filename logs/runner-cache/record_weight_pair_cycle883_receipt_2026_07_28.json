@@ -1,0 +1,459 @@
+{
+  "alpha_witness_rows": [
+    {
+      "contains_the_identity": true,
+      "exponent_window": 1,
+      "generators": [
+        3
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "1/9"
+      ],
+      "reaches_the_target_alpha": false,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 2,
+      "generators": [
+        3
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "1/9"
+      ],
+      "reaches_the_target_alpha": false,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 3,
+      "generators": [
+        3
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "1/9"
+      ],
+      "reaches_the_target_alpha": false,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 1,
+      "generators": [
+        2,
+        3
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "1/9"
+      ],
+      "reaches_the_target_alpha": false,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 2,
+      "generators": [
+        2,
+        3
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "1/9",
+        "2/27"
+      ],
+      "reaches_the_target_alpha": true,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 3,
+      "generators": [
+        2,
+        3
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "1/9",
+        "2/27"
+      ],
+      "reaches_the_target_alpha": true,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 1,
+      "generators": [
+        2
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/3"
+      ],
+      "reaches_the_target_alpha": false,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 2,
+      "generators": [
+        2
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/3"
+      ],
+      "reaches_the_target_alpha": false,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 3,
+      "generators": [
+        2
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/3"
+      ],
+      "reaches_the_target_alpha": false,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 1,
+      "generators": [
+        2,
+        3,
+        5
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "1/9"
+      ],
+      "reaches_the_target_alpha": false,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 2,
+      "generators": [
+        2,
+        3,
+        5
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "1/9",
+        "2/27"
+      ],
+      "reaches_the_target_alpha": true,
+      "uniquely_selects_the_target": false
+    },
+    {
+      "contains_the_identity": true,
+      "exponent_window": 3,
+      "generators": [
+        2,
+        3,
+        5
+      ],
+      "pinned_witnesses_surviving": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "1/9",
+        "2/27"
+      ],
+      "reaches_the_target_alpha": true,
+      "uniquely_selects_the_target": false
+    }
+  ],
+  "answer": "SL1 IS DERIVABLE at the pinned scope. The record's readout space over one lattice-realized C3 orbit carries the ordered pair (1, 2) with 2-adic profile (0, 1), forced by the Lattice rotation clause and the Record additivity clause with no free parameter.",
+  "cycle": 883,
+  "cycle882_T6_defeated": true,
+  "cycle882_T7_intact": true,
+  "derived_ordered_pair": [
+    1,
+    2
+  ],
+  "echo_ledger": [
+    {
+      "classification": "NUMERICS-ONLY",
+      "connection_to_the_derived_pair": "NONE COMPUTED",
+      "echo": "Cycle-318 mediator weight 2",
+      "evidence": "AST recovery finds it as a default argument at [('direction_vertex', 230)]; a default argument is a supply, and no landed artifact derives it from an isotype dimension or vice versa.",
+      "why_not_connected": "The derived 2 is a REPRESENTATION dimension of the readout space over a C3 orbit. The Cycle-318 2 is a relative weight in a candidate flux-balance vertex. No landed chain relates them, and this cycle constructs none. Equal numbers, unrelated objects, until something computes the map."
+    },
+    {
+      "classification": "NUMERICS-ONLY",
+      "connection_to_the_derived_pair": "NONE COMPUTED",
+      "echo": "the (1, 2, 0) joint-selection grading point",
+      "evidence": "Cycle 880's own pinned sentence records the point as unchosen: 'It SELECTS NOTHING: the choice of t is the owner's'.",
+      "why_not_connected": "The grading is a 3-vector on a gauge-fixed lawful line and the isotype pair is an ordered 2-tuple of subspace dimensions. Their leading entries agree numerically; no computation here or upstream maps one to the other."
+    },
+    {
+      "classification": "CONNECTED, BUT ONLY 2-ADICALLY",
+      "connection_to_the_derived_pair": "COMPUTED",
+      "echo": "the 2 inside the anchor 2/9",
+      "evidence": "v_2(2/9) = 1 and the derived complement dimension supplies exactly that valuation (certificate K, where 2/9 = 2^1 * 3^-2 enters <2, 3>).",
+      "why_not_more": "The connection is a valuation match plus membership, which is reachability. It is NOT the identification of the anchor with the isotype data: certificate M shows several closed forms in (1, 2, 3) return 2/9, so the match does not single one out."
+    },
+    {
+      "classification": "CORROBORATION OF THE READING ONLY",
+      "connection_to_the_derived_pair": "COMPUTED",
+      "echo": "the landed BAE isotype pair (1, 2)",
+      "evidence": "the BAE artifact names 'AV1/AV2/AV3 canonical (mu, nu) = (1, 2) on (trivial, doublet) -> F3', the same (trivial, doublet) reading derived here",
+      "why_not_more": "Its own check is assertion-shaped and its section 7 records (1, 1) and (1, 2) as both admissible, so it cannot carry any derivational weight; it is cited to show the reading is not novel to this cycle, nothing more."
+    }
+  ],
+  "exact_scope": "Exact scope. Derived: the ordered isotype pair (1, 2) over one free C3 orbit, from the Lattice rotation clause and the Record additivity clause. Not derived: which cyclic subgroup the registered orbit belongs to (SL0), and which functional binds the pair to the anchor (SL1b). Not claimed: any closure of the readout obligation, any connection between the derived 2 and Cycle-318's mediator weight, and any connection between the derived pair and the (1, 2, 0) grading.",
+  "inventory": [
+    {
+      "candidate": "record write ordinals",
+      "evidence": "tree-wide scan for ['write ordinal', 'write_ordinal', 'record ordinal'] returned 1 files",
+      "forcing_step_or_free_choice": "No landed artifact defines a record write ordinal. Record permanence plus one-record-per-site gives no order between records at distinct sites, and 'No site is privileged' forbids inventing one.",
+      "provenance": "ABSENT",
+      "shape_if_present": "an ordered pair of write positions"
+    },
+    {
+      "candidate": "bank pair structure (two banks)",
+      "evidence": "2 file(s) hit; the only physics hit is ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py'], whose two-bank sentence counts LAWFUL TRANSLATION CLASSES (81 of 1814400 anchored candidates), not weights",
+      "forcing_step_or_free_choice": "TWO banks is a cardinality-2 fact, i.e. a (1, 1) multiplicity pair with 2-adic profile (0, 0). Turning it into (1, 2) needs a weight on one bank, which is exactly the formation-weight content the axiom memo excludes.",
+      "provenance": "SUPPLIED",
+      "shape_if_present": "(1, 1) as a count, (1, 2) only if weighted"
+    },
+    {
+      "candidate": "leader/follower relay roles (sigma gating)",
+      "evidence": "'leader' hits 3 file(s), all in ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py', 'docs/ai_methodology/skills/audit-loop/SKILL.md'] (audit-loop worker documentation, which says there is NO leader); 'follower' hits zero physics artifacts",
+      "forcing_step_or_free_choice": "The mechanism has no artifact on this branch, so nothing can be pinned. Even granting it: a gating ORDER is a two-element total order, which carries no magnitude. Every strictly increasing weighting (1, r) with r > 1 is order-compatible, so the order fixes an inequality, not a point.",
+      "provenance": "ABSENT",
+      "shape_if_present": "(1, sigma^k) or (1, k)"
+    },
+    {
+      "candidate": "doubling in count-once (additive readout over pairs)",
+      "evidence": "36 file(s) hit, all loop working documents; the axiom clause itself is pinned as finite_additive_readout",
+      "forcing_step_or_free_choice": "FORCED: additivity over pairwise-disjoint records with I(empty) = 0 makes readout linear with EQUAL treatment of disjoint parts. The forced pair is (1, 1), profile (0, 0). The doubling shows up in the VALUE (a two-record reading is 2x a one-record reading) and not in the WEIGHTS, which is precisely the distinction SL1 turns on.",
+      "provenance": "DERIVED",
+      "shape_if_present": "(1, 1) per disjoint pair"
+    },
+    {
+      "candidate": "composed-record event families (B0/B1 refinement)",
+      "evidence": "3 file(s) hit, e.g. ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py']; there B0/B1 are two of six rank-one record roles in one M_2",
+      "forcing_step_or_free_choice": "B0 and B1 are BOTH rank one, so the multiplicity pair is (1, 1) with profile (0, 0). The refinement supplies a label, not an asymmetric weight.",
+      "provenance": "SUPPLIED",
+      "shape_if_present": "(1, 1) as two rank-one projector roles"
+    },
+    {
+      "candidate": "Cycle-318 mediator weight 2",
+      "evidence": "9 file(s) hit; recovered here by AST as a Python default argument (certificate N)",
+      "forcing_step_or_free_choice": "FREE CHOICE, quoted: the value is the default of the keyword argument `mediator_weight` in the Cycle-318 vertex builder. A default argument is a supply by construction, and Cycle 876 already recorded it as such.",
+      "provenance": "SUPPLIED",
+      "shape_if_present": "(1, 2) as (matter, mediator)"
+    },
+    {
+      "candidate": "the (1, 2, 0) grading point",
+      "evidence": "67 file(s) hit; Cycle 880's own docstring is pinned as selection-neutral",
+      "forcing_step_or_free_choice": "FREE CHOICE, quoted from the pinned artifact: 'It SELECTS NOTHING: the choice of t is the owner's'. The lawful locus is a whole segment w(t) = (1, 1+t, 1-t) and t = +1 is a point on it, not a forced value.",
+      "provenance": "SUPPLIED",
+      "shape_if_present": "(1, 2) as the first two sector weights"
+    },
+    {
+      "candidate": "the landed isotype weight pair (1, 2)",
+      "evidence": "4 file(s) hit the literal phrase; the earliest is ['scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py']",
+      "forcing_step_or_free_choice": "ASSERTION-SHAPED: the landed check is literally `(1, 2) == (1, 2)`, and the same file's section 7 records that '(1, 1) and (1, 2) both admissible'. So the tree names the right reading -- (trivial, doublet) dimensions -- but supplies rather than derives it. This cycle derives it.",
+      "provenance": "SUPPLIED",
+      "shape_if_present": "(1, 2) as (trivial, doublet) real dimensions"
+    },
+    {
+      "candidate": "the C3 isotype pair of the Record readout space",
+      "evidence": "certificates E, F, G, H below; built from axioms only",
+      "forcing_step_or_free_choice": "FORCED: Lattice supplies the proper cubic rotations, which contain order-3 body-diagonal elements; such an element acts on the six nearest neighbours with free orbits of length 3; Record makes readout on those three records a linear functional on a 3-dimensional space; the C3-invariant subspace has dimension 1 and its complement dimension 2. No step admits a choice.",
+      "provenance": "DERIVED",
+      "shape_if_present": "(1, 2) as (invariant dim, complement dim)"
+    }
+  ],
+  "open_successors": [
+    {
+      "lemma": "SL1 (this cycle's target): the record carries the weight pair (1, 2), a v_2 = 1 datum",
+      "status": "DERIVED at the pinned C3 scope (C883-T4)",
+      "still_open": false,
+      "strength_vs_the_readout_obligation": "WEAKER"
+    },
+    {
+      "lemma": "SL1b (the successor this cycle exposes): the Record-facing readout is the ISOTYPE-WEIGHTED functional, i.e. the anchor equals w1 / (w0 + w1)^2 on the derived pair rather than any of the other closed forms that also return 2/9",
+      "status": "OPEN",
+      "still_open": true,
+      "strength_vs_the_readout_obligation": "EQUIVALENT"
+    },
+    {
+      "lemma": "SL2 singleton readout predicate (Cycle 882)",
+      "status": "OPEN, untouched by this cycle",
+      "still_open": true,
+      "strength_vs_the_readout_obligation": "EQUIVALENT"
+    },
+    {
+      "lemma": "SL0 (newly named): derive the C3 scope itself, i.e. that the registered orbit is the order-3 one rather than the order-2 or order-4 orbits the same Lattice clause supplies",
+      "status": "OPEN, inherited from Cycle 882's pinned scope",
+      "still_open": true,
+      "strength_vs_the_readout_obligation": "INCOMPARABLE"
+    }
+  ],
+  "outcome_class": "POSITIVE_DERIVATION_PLUS_PRICED_RESIDUAL",
+  "question": "SL1: does the record carry the weight pair (1, 2), a v_2 = 1 datum, from the four axioms and approved primitives only?",
+  "sl1_met_at_the_pinned_scope": true,
+  "source_pins": [
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "40b0b4cd552cc41b55e4f3c59f9cabf621b3296b",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5"
+    },
+    {
+      "git_blob": "75d64abf2a4f5cc671e37ad271680c6e5c0f9ce1",
+      "path": "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "692a3ad36def7242845576b88b48ef1c44b7e9a11e97873952cb93f28729ffa5"
+    },
+    {
+      "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
+      "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+      "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a"
+    },
+    {
+      "git_blob": "db0472a8fe3e9e93f3f31f8e0b5ac0fd5c6630f8",
+      "path": "scripts/frontier_cycle880_visible_point_physics_2026_07_28.py",
+      "sha256": "e9d6f8a1483b87f7b0520ebe04356fcf4910bc5a25d1f7af97555644892d6ee4"
+    },
+    {
+      "git_blob": "58a709ebc3cd2f6a5a2220fdaebd970c4694495f",
+      "path": "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py",
+      "sha256": "1e13e4c6332c7d6c7798fb4d7366db8a94037eefba6e77ac1c3dd0d269cf7b39"
+    },
+    {
+      "git_blob": "7672380148d79f22a4ab9b2700121aac1b097004",
+      "path": "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py",
+      "sha256": "3c1575c99622c0874ab42730494d615fbe1a2b867975e5bf048fd2a4a8af9d56"
+    },
+    {
+      "git_blob": "eb7544f19e286793bfda45a6b94a364e68c7bb86",
+      "path": "scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py",
+      "sha256": "4bff2fd30246becefe9067015a62c22f65bb5855234a20b85cf1dad085c19524"
+    }
+  ],
+  "steelman": "The strongest case against this cycle's positive result: the derived pair lives in the READOUT SPACE over the record, whereas SL1's wording asks the record to carry the pair 'as Record content'. The answer is that Record's own additivity clause is what defines that readout space, so the pair is built from Record content and Lattice content and nothing else -- but the distinction is real and is recorded, not argued away. Anyone who insists the datum must live in the record rather than in its readout should read this cycle as deriving the datum one level out, which is exactly where C882-T6's arithmetic acts.",
+  "theorems": [
+    "C883-T1 axiom multiplicity inventory ({0, 1}) + supply dichotomy",
+    "C883-T2 the Lattice rotation group and its order-3 elements",
+    "C883-T3 the C3 neighbourhood splits into two free length-3 orbits",
+    "C883-T4 THE DERIVATION: the readout space splits 1 + 2",
+    "C883-T5 scalar-field robustness of the pair",
+    "C883-T6 the pair is (1, n-1); (1, 2) exactly at n = 3"
+  ],
+  "two_adic_profile": [
+    0,
+    1
+  ],
+  "wrong_pair_stress": [
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": true,
+      "produced_by_the_same_argument_at_some_other_orbit_length": false,
+      "reachable_by_some_free_cyclic_configuration": true,
+      "two_adic_profile": [
+        0,
+        1
+      ]
+    },
+    {
+      "pair": [
+        1,
+        1
+      ],
+      "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+      "produced_by_the_same_argument_at_some_other_orbit_length": true,
+      "reachable_by_some_free_cyclic_configuration": true,
+      "two_adic_profile": [
+        0,
+        0
+      ]
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+      "produced_by_the_same_argument_at_some_other_orbit_length": true,
+      "reachable_by_some_free_cyclic_configuration": true,
+      "two_adic_profile": [
+        0,
+        0
+      ]
+    },
+    {
+      "pair": [
+        2,
+        2
+      ],
+      "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+      "produced_by_the_same_argument_at_some_other_orbit_length": false,
+      "reachable_by_some_free_cyclic_configuration": true,
+      "two_adic_profile": [
+        1,
+        1
+      ]
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+      "produced_by_the_same_argument_at_some_other_orbit_length": false,
+      "reachable_by_some_free_cyclic_configuration": true,
+      "two_adic_profile": [
+        1,
+        2
+      ]
+    },
+    {
+      "pair": [
+        3,
+        6
+      ],
+      "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+      "produced_by_the_same_argument_at_some_other_orbit_length": false,
+      "reachable_by_some_free_cyclic_configuration": false,
+      "two_adic_profile": [
+        0,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1461 @@
+CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
+
+[PASS] A_PINS
+    finding: All 8 cited artifacts matched both their SHA-256 and their git-blob pins, every verbatim needle resolved, and the machine-readable axiom node still points at the pinned axiom memo.
+
+[PASS] B_AXIOM_CLAUSES
+    finding: All 9 load-bearing axiom clauses were located verbatim; one of them explicitly excludes formation weights, which removes the naive route before it is attempted.
+
+[PASS] C_AXIOM_MULTIPLICITY_INVENTORY
+    finding: The axiom-forced multiplicity set is [0, 1], whose nonzero members all have 2-adic valuation [0]; the only larger number in the text is a free cardinality, and admitting it costs a supply on either horn of the dichotomy.
+
+[PASS] D_CANDIDATE_SWEEP
+    finding: Of 9 candidate carriers swept over 10146 files, 2 are DERIVED, 5 are SUPPLIED and 2 are ABSENT; every landed literal (1, 2) in the tree is supplied, and the only derived (1, 2) is the C3 isotype pair built below.
+
+[PASS] E_LATTICE_ROTATION_GROUP
+    finding: The Lattice clause rebuilds to 24 proper rotations with order profile {1: 1, 2: 9, 3: 8, 4: 6}; all 8 order-3 elements are body-diagonal rotations spread two per axis over 4 axes, and 2 of them fix the (1,1,1) axis.
+
+[PASS] F_C3_ORBIT_STRUCTURE
+    finding: The axis-cycling rotation splits the 6-neighbour shell into orbits of lengths [3, 3], both free, so the pinned Cycle-882 scope 'one full C3 orbit' of length 3 is realized on the lattice rather than postulated.
+
+[PASS] G_ISOTYPE_PAIR_THEOREM
+    finding: The chain runs end to end with no free parameter: the readout space over one lattice-realized C3 orbit splits as 1 + 2, giving the ordered pair [1, 2] with 2-adic profile [0, 1] -- exactly the v_2 = 1 datum C882-T6 named as missing.
+
+[PASS] H_FIELD_ROBUSTNESS
+    finding: Both scalar-field readings return [1, 2] with identical 2-adic profiles, so the derived pair does not depend on a field choice the axioms leave open.
+
+[PASS] I_DISCRIMINATION_TABLE
+    finding: The pair follows (1, n-1) on every row scanned; the target pair occurs at orbit lengths [3] and nowhere else, while (1, 1), (1, 3) and (2, 2) are all realized by other configurations inside the same supplied rotation group.
+
+[PASS] J_WRONG_PAIR_STRESS
+    finding: Exactly 1 of the 6 tested pairs is produced by the C883-T4 argument at the pinned C3 scope, and it is the target; each of the three rejected arguments is shown to admit two or more pairs and therefore to force none.
+
+[PASS] K_BRIDGE_BACK_T6
+    finding: With the derived isotype dimension admitted the anchor group widens from valuations [0] to [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6] and the target 2/9 becomes reachable at {'two': 1, 'three': -2}, so the C882-T6 obstruction is defeated.
+
+[PASS] L_BRIDGE_BACK_T7
+    finding: Across 12 recomputed libraries the identity is present in every one, exactly 0 rows flip to uniquely selecting, and the target becomes reachable on the widened generator set without becoming selected.
+
+[PASS] M_BINDING_PRICE
+    finding: 5 of the 7 enumerated closed forms in the derived data return 2/9, so the datum is derived but its binding to the anchor is a 5-fold ambiguity that this cycle does not close.
+
+[PASS] N_ECHO_LEDGER
+    finding: Of 4 numerical echoes, 2 are recorded numerics-only and 1 carry a computed connection that stops short of identification; Cycle-318's 2 is confirmed by AST to be a Python default argument.
+
+[PASS] O_TERMINAL_LEMMA
+    finding: SL1 is discharged as derived; the obligation is not closed; the residual is re-localized from 'a missing datum' to 'a missing functional', and the newly named SL1b is classified EQUIVALENT.
+
+[PASS] P_OUTCOME
+    finding: The cycle returns a positive derivation with an exactly priced residual: SL1's datum is derived from two axiom clauses with no free parameter, the named 2-adic obstruction it was invented to defeat is defeated, and the surviving wall is unchanged.
+
+[PASS] Q_NO_GO_GATE
+    finding: All 8 routes carry a valid marker, the steelman against the positive result is stated rather than rebutted, and the exact scope names two open successors and three refused connections.
+
+{
+  "A_PINS": {
+    "axiom_needles_present": {
+      "axioms_and_primitives_complete": true,
+      "finite_additive_readout": true,
+      "formation_weight_is_downstream": true,
+      "law_privileges_no_states": true,
+      "no_site_privileged": true,
+      "one_record_per_site": true,
+      "only_records_readable": true,
+      "proper_cubic_rotations": true,
+      "record_locks_exactly_one": true
+    },
+    "axiom_node_canonical_ids": [
+      "minimal_axioms",
+      "scale_reference_primitive",
+      "kinetic_isotropy_primitive",
+      "realized_state_primitive"
+    ],
+    "axiom_node_current_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "axiom_node_resolves_to_the_pinned_axiom_file": true,
+    "bae_needles_present": {
+      "both_admissible": true,
+      "hs_rigidity": true,
+      "isotype_pair_named": true
+    },
+    "cycle876_default_argument_needle_present": true,
+    "cycle880_selection_neutrality_needle_present": true,
+    "cycle882_needles_present": {
+      "sl1_is_weaker": true,
+      "sl1_statement": true,
+      "t6_escape_condition": true
+    },
+    "finding": "All 8 cited artifacts matched both their SHA-256 and their git-blob pins, every verbatim needle resolved, and the machine-readable axiom node still points at the pinned axiom memo.",
+    "pass": true,
+    "rows": [
+      {
+        "bytes": 8846,
+        "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+        "git_blob_matches_pin": true,
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 6382,
+        "git_blob": "40b0b4cd552cc41b55e4f3c59f9cabf621b3296b",
+        "git_blob_matches_pin": true,
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 7856,
+        "git_blob": "75d64abf2a4f5cc671e37ad271680c6e5c0f9ce1",
+        "git_blob_matches_pin": true,
+        "path": "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "sha256": "692a3ad36def7242845576b88b48ef1c44b7e9a11e97873952cb93f28729ffa5",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 82271,
+        "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
+        "git_blob_matches_pin": true,
+        "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+        "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 98861,
+        "git_blob": "db0472a8fe3e9e93f3f31f8e0b5ac0fd5c6630f8",
+        "git_blob_matches_pin": true,
+        "path": "scripts/frontier_cycle880_visible_point_physics_2026_07_28.py",
+        "sha256": "e9d6f8a1483b87f7b0520ebe04356fcf4910bc5a25d1f7af97555644892d6ee4",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 93948,
+        "git_blob": "58a709ebc3cd2f6a5a2220fdaebd970c4694495f",
+        "git_blob_matches_pin": true,
+        "path": "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py",
+        "sha256": "1e13e4c6332c7d6c7798fb4d7366db8a94037eefba6e77ac1c3dd0d269cf7b39",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 35098,
+        "git_blob": "7672380148d79f22a4ab9b2700121aac1b097004",
+        "git_blob_matches_pin": true,
+        "path": "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py",
+        "sha256": "3c1575c99622c0874ab42730494d615fbe1a2b867975e5bf048fd2a4a8af9d56",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 10952,
+        "git_blob": "eb7544f19e286793bfda45a6b94a364e68c7bb86",
+        "git_blob_matches_pin": true,
+        "path": "scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py",
+        "sha256": "4bff2fd30246becefe9067015a62c22f65bb5855234a20b85cf1dad085c19524",
+        "sha256_matches_pin": true
+      }
+    ]
+  },
+  "B_AXIOM_CLAUSES": {
+    "clauses": [
+      {
+        "clause_id": "record_locks_exactly_one",
+        "forbids_weight_content": false,
+        "present": true,
+        "supplies_a_group_action": false,
+        "supplies_a_numeric_multiplicity": true,
+        "verbatim": "When present, a record locks exactly one admissible local possibility."
+      },
+      {
+        "clause_id": "one_record_per_site",
+        "forbids_weight_content": false,
+        "present": true,
+        "supplies_a_group_action": false,
+        "supplies_a_numeric_multiplicity": true,
+        "verbatim": "A site never carries more than one record; records are permanent."
+      },
+      {
+        "clause_id": "finite_additive_readout",
+        "forbids_weight_content": false,
+        "present": true,
+        "supplies_a_group_action": false,
+        "supplies_a_numeric_multiplicity": true,
+        "verbatim": "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`."
+      },
+      {
+        "clause_id": "only_records_readable",
+        "forbids_weight_content": false,
+        "present": true,
+        "supplies_a_group_action": false,
+        "supplies_a_numeric_multiplicity": false,
+        "verbatim": "Only records are readable. A readout value is determined by record content alone."
+      },
+      {
+        "clause_id": "proper_cubic_rotations",
+        "forbids_weight_content": false,
+        "present": true,
+        "supplies_a_group_action": true,
+        "supplies_a_numeric_multiplicity": false,
+        "verbatim": "Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor adjacency, standard translations, and proper cubic rotations about each site."
+      },
+      {
+        "clause_id": "no_site_privileged",
+        "forbids_weight_content": false,
+        "present": true,
+        "supplies_a_group_action": false,
+        "supplies_a_numeric_multiplicity": false,
+        "verbatim": "No site is privileged."
+      },
+      {
+        "clause_id": "law_privileges_no_states",
+        "forbids_weight_content": false,
+        "present": true,
+        "supplies_a_group_action": false,
+        "supplies_a_numeric_multiplicity": false,
+        "verbatim": "A law privileges no states."
+      },
+      {
+        "clause_id": "formation_weight_is_downstream",
+        "forbids_weight_content": true,
+        "present": true,
+        "supplies_a_group_action": false,
+        "supplies_a_numeric_multiplicity": false,
+        "verbatim": "formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate)"
+      },
+      {
+        "clause_id": "axioms_and_primitives_complete",
+        "forbids_weight_content": false,
+        "present": true,
+        "supplies_a_group_action": false,
+        "supplies_a_numeric_multiplicity": false,
+        "verbatim": "Axioms and approved primitives are the complete supplied foundation."
+      }
+    ],
+    "finding": "All 9 load-bearing axiom clauses were located verbatim; one of them explicitly excludes formation weights, which removes the naive route before it is attempted.",
+    "pass": true,
+    "route_constraint_this_forces": "Only two axiom clauses supply structure with any multiplicity content at all: Lattice's proper cubic rotations (a group) and Record's finite additive scalar readout (a linear functional). The derivation attempted below uses exactly those two and nothing else.",
+    "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "the_exclusion_clause": "The axiom memo's own Open Gates section names 'formation rules (which admissible possibility a new record locks, at which site, WITH WHAT WEIGHT, or at what rate)' as OUTSIDE axiom content. So a weight assigned BY A FORMATION RULE is excluded by the memo's own text and cannot be derived. Any admissible route to a (1, 2) must therefore avoid formation weights entirely and read the pair off structure the axioms already supply."
+  },
+  "C_AXIOM_MULTIPLICITY_INVENTORY": {
+    "consequence": "SL1 cannot be met by counting. If a v_2 = 1 datum exists it must come from STRUCTURE the axioms supply, not from a multiplicity the axioms state. That is what redirects this cycle to the group action in the Lattice axiom.",
+    "distinct_2_adic_valuations_of_the_nonzero_forced_values": [
+      0
+    ],
+    "finding": "The axiom-forced multiplicity set is [0, 1], whose nonzero members all have 2-adic valuation [0]; the only larger number in the text is a free cardinality, and admitting it costs a supply on either horn of the dichotomy.",
+    "forced_multiplicities": [
+      {
+        "from_clause": "record_locks_exactly_one",
+        "reading": "one admissible local possibility per record",
+        "value": 1
+      },
+      {
+        "from_clause": "one_record_per_site",
+        "reading": "at most one record per site",
+        "value": 1
+      },
+      {
+        "from_clause": "finite_additive_readout",
+        "reading": "I(empty) = 0",
+        "value": 0
+      }
+    ],
+    "forced_values": [
+      0,
+      1
+    ],
+    "free_cardinality": {
+      "from_clause": "finite_additive_readout",
+      "is_a_constant_of_the_axioms": false,
+      "quantifier": "universal ('for any finite collection')",
+      "reading": "the cardinality of a finite pairwise-disjoint collection",
+      "symbol": "n",
+      "why_not": "A universally quantified cardinality is a parameter of a state, not a supplied constant. Reading the value at n = 2 to obtain a v_2 = 1 datum is a choice of state, and the axiom memo's own law clause says 'A law privileges no states'. Either the rule privileges the 2-record states, which the memo forbids, or it carries a supplied domain condition, which is a free choice. Either horn is a SUPPLY, so the free cardinality is not a route."
+    },
+    "pass": true,
+    "supply_dichotomy": "privilege states (forbidden by the memo's law clause) OR supply a domain condition (a free choice) -- both are supplies",
+    "theorem": "C883-T1. The four axioms force the numeric multiplicities {0, 1} and nothing else; every larger number in the axiom text is a universally quantified cardinality, hence state data rather than a supplied constant. Consequently no v_2 = 1 CONSTANT is available from bare axiom multiplicity."
+  },
+  "D_CANDIDATE_SWEEP": {
+    "absent_candidates": [
+      "record write ordinals",
+      "leader/follower relay roles (sigma gating)"
+    ],
+    "brief_candidates_with_no_artifact_on_this_branch": [
+      {
+        "files_hit": 1,
+        "named": "Cycle 881 sigma leader/follower relay"
+      },
+      {
+        "files_hit": 1,
+        "named": "Cycle 878 B0/B1 composed-record refinement"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate": "record write ordinals",
+        "evidence": "tree-wide scan for ['write ordinal', 'write_ordinal', 'record ordinal'] returned 1 files",
+        "forcing_step_or_free_choice": "No landed artifact defines a record write ordinal. Record permanence plus one-record-per-site gives no order between records at distinct sites, and 'No site is privileged' forbids inventing one.",
+        "provenance": "ABSENT",
+        "shape_if_present": "an ordered pair of write positions"
+      },
+      {
+        "candidate": "bank pair structure (two banks)",
+        "evidence": "2 file(s) hit; the only physics hit is ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py'], whose two-bank sentence counts LAWFUL TRANSLATION CLASSES (81 of 1814400 anchored candidates), not weights",
+        "forcing_step_or_free_choice": "TWO banks is a cardinality-2 fact, i.e. a (1, 1) multiplicity pair with 2-adic profile (0, 0). Turning it into (1, 2) needs a weight on one bank, which is exactly the formation-weight content the axiom memo excludes.",
+        "provenance": "SUPPLIED",
+        "shape_if_present": "(1, 1) as a count, (1, 2) only if weighted"
+      },
+      {
+        "candidate": "leader/follower relay roles (sigma gating)",
+        "evidence": "'leader' hits 3 file(s), all in ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py', 'docs/ai_methodology/skills/audit-loop/SKILL.md'] (audit-loop worker documentation, which says there is NO leader); 'follower' hits zero physics artifacts",
+        "forcing_step_or_free_choice": "The mechanism has no artifact on this branch, so nothing can be pinned. Even granting it: a gating ORDER is a two-element total order, which carries no magnitude. Every strictly increasing weighting (1, r) with r > 1 is order-compatible, so the order fixes an inequality, not a point.",
+        "provenance": "ABSENT",
+        "shape_if_present": "(1, sigma^k) or (1, k)"
+      },
+      {
+        "candidate": "doubling in count-once (additive readout over pairs)",
+        "evidence": "36 file(s) hit, all loop working documents; the axiom clause itself is pinned as finite_additive_readout",
+        "forcing_step_or_free_choice": "FORCED: additivity over pairwise-disjoint records with I(empty) = 0 makes readout linear with EQUAL treatment of disjoint parts. The forced pair is (1, 1), profile (0, 0). The doubling shows up in the VALUE (a two-record reading is 2x a one-record reading) and not in the WEIGHTS, which is precisely the distinction SL1 turns on.",
+        "provenance": "DERIVED",
+        "shape_if_present": "(1, 1) per disjoint pair"
+      },
+      {
+        "candidate": "composed-record event families (B0/B1 refinement)",
+        "evidence": "3 file(s) hit, e.g. ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py']; there B0/B1 are two of six rank-one record roles in one M_2",
+        "forcing_step_or_free_choice": "B0 and B1 are BOTH rank one, so the multiplicity pair is (1, 1) with profile (0, 0). The refinement supplies a label, not an asymmetric weight.",
+        "provenance": "SUPPLIED",
+        "shape_if_present": "(1, 1) as two rank-one projector roles"
+      },
+      {
+        "candidate": "Cycle-318 mediator weight 2",
+        "evidence": "9 file(s) hit; recovered here by AST as a Python default argument (certificate N)",
+        "forcing_step_or_free_choice": "FREE CHOICE, quoted: the value is the default of the keyword argument `mediator_weight` in the Cycle-318 vertex builder. A default argument is a supply by construction, and Cycle 876 already recorded it as such.",
+        "provenance": "SUPPLIED",
+        "shape_if_present": "(1, 2) as (matter, mediator)"
+      },
+      {
+        "candidate": "the (1, 2, 0) grading point",
+        "evidence": "67 file(s) hit; Cycle 880's own docstring is pinned as selection-neutral",
+        "forcing_step_or_free_choice": "FREE CHOICE, quoted from the pinned artifact: 'It SELECTS NOTHING: the choice of t is the owner's'. The lawful locus is a whole segment w(t) = (1, 1+t, 1-t) and t = +1 is a point on it, not a forced value.",
+        "provenance": "SUPPLIED",
+        "shape_if_present": "(1, 2) as the first two sector weights"
+      },
+      {
+        "candidate": "the landed isotype weight pair (1, 2)",
+        "evidence": "4 file(s) hit the literal phrase; the earliest is ['scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py']",
+        "forcing_step_or_free_choice": "ASSERTION-SHAPED: the landed check is literally `(1, 2) == (1, 2)`, and the same file's section 7 records that '(1, 1) and (1, 2) both admissible'. So the tree names the right reading -- (trivial, doublet) dimensions -- but supplies rather than derives it. This cycle derives it.",
+        "provenance": "SUPPLIED",
+        "shape_if_present": "(1, 2) as (trivial, doublet) real dimensions"
+      },
+      {
+        "candidate": "the C3 isotype pair of the Record readout space",
+        "evidence": "certificates E, F, G, H below; built from axioms only",
+        "forcing_step_or_free_choice": "FORCED: Lattice supplies the proper cubic rotations, which contain order-3 body-diagonal elements; such an element acts on the six nearest neighbours with free orbits of length 3; Record makes readout on those three records a linear functional on a 3-dimensional space; the C3-invariant subspace has dimension 1 and its complement dimension 2. No step admits a choice.",
+        "provenance": "DERIVED",
+        "shape_if_present": "(1, 2) as (invariant dim, complement dim)"
+      }
+    ],
+    "derived_candidates": [
+      "doubling in count-once (additive readout over pairs)",
+      "the C3 isotype pair of the Record readout space"
+    ],
+    "files_scanned": 10146,
+    "finding": "Of 9 candidate carriers swept over 10146 files, 2 are DERIVED, 5 are SUPPLIED and 2 are ABSENT; every landed literal (1, 2) in the tree is supplied, and the only derived (1, 2) is the C3 isotype pair built below.",
+    "needle_first_hits": {
+      "composed_record_B0_B1": [
+        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+        "docs/work_history/repo/review_feedback/ABELIAN_COMPATIBLE_SEED_BELL_MERGE_CYCLE15_NOTE_2026-07-14.md",
+        "docs/work_history/repo/review_feedback/COMPLETE_CANDIDATE_LSTAR_ASSEMBLY_CYCLE41_NOTE_2026-07-14.md"
+      ],
+      "count_once_doubling": [
+        "scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py",
+        "scripts/acphilambda_occupancy_grain_menu_counting_correspondence_2026_07_16.py",
+        "scripts/acphilambda_sharpening_import_decomposition_2026_07_16.py",
+        "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py",
+        "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
+      ],
+      "cycle318_mediator_weight": [
+        "scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py",
+        "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py",
+        "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py",
+        "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py",
+        "scripts/frontier_cycle880_visible_point_independent_check_2026_07_28.py",
+        "scripts/frontier_cycle880_visible_point_physics_2026_07_28.py"
+      ],
+      "cycle878_artifact": [
+        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
+      ],
+      "cycle881_artifact": [
+        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
+      ],
+      "explicit_weight_pair_1_2": [
+        "scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py",
+        "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+        "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+      ],
+      "grading_1_2_0": [
+        "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py",
+        "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+        "scripts/autonomous_self_closing_diamond_cycle17_2026_07_14.py",
+        "scripts/car_compiler_record_causal_depth_bridge_cycle255_2026_07_17.py",
+        "scripts/cl3_a3_r5_hostile_review_2026_05_08_r5hr.py",
+        "scripts/cl3_koide_bae_probe_hw_sector_identification_2026_05_09_probe27.py"
+      ],
+      "isotype_pair": [
+        "scripts/acphilambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02.py",
+        "scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py",
+        "scripts/audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17.py",
+        "scripts/audit_companion_bae_probe_cl3_bivector_block01_2026_05_17.py",
+        "scripts/audit_companion_bae_u1b_canonical_phase_stretch_2026_05_17.py",
+        "scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py"
+      ],
+      "leader_follower_relay": [
+        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+        "docs/ai_methodology/skills/audit-loop/SKILL.md",
+        "docs/ai_methodology/skills/audit-loop/references/distributed-drain.md"
+      ],
+      "record_write_ordinal": [
+        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
+      ],
+      "two_bank_pair": [
+        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+        "docs/PROGRAM_CONTENT_ORDER_ATTEMPT_CYCLE755_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+      ]
+    },
+    "needle_hit_counts": {
+      "composed_record_B0_B1": 3,
+      "count_once_doubling": 36,
+      "cycle318_mediator_weight": 9,
+      "cycle878_artifact": 1,
+      "cycle881_artifact": 1,
+      "explicit_weight_pair_1_2": 4,
+      "grading_1_2_0": 67,
+      "isotype_pair": 203,
+      "leader_follower_relay": 3,
+      "record_write_ordinal": 1,
+      "two_bank_pair": 2
+    },
+    "pass": true,
+    "provenance_classes_valid": true,
+    "scope_honesty": "The cycle brief named a Cycle-881 sigma relay and a Cycle-878 composed-record refinement. Neither has any artifact in this tree, so neither is reconstructed or reasoned from here; both are reported ABSENT with their scan counts. The B0/B1 alphabet that DOES exist is older and unrelated to Cycle 878.",
+    "supplied_candidates": [
+      "bank pair structure (two banks)",
+      "composed-record event families (B0/B1 refinement)",
+      "Cycle-318 mediator weight 2",
+      "the (1, 2, 0) grading point",
+      "the landed isotype weight pair (1, 2)"
+    ],
+    "sweep_scope": "every *.py under scripts/ and every *.md under docs/, byte-wise, against a fixed needle table"
+  },
+  "E_LATTICE_ROTATION_GROUP": {
+    "axiom_clause_used": "Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor adjacency, standard translations, and proper cubic rotations about each site.",
+    "closed_under_composition_on_the_checked_block": true,
+    "diagonal_axes_used": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "element_order_counts": {
+      "1": 1,
+      "2": 9,
+      "3": 8,
+      "4": 6
+    },
+    "every_order_3_element_fixes_exactly_one_diagonal_axis": true,
+    "finding": "The Lattice clause rebuilds to 24 proper rotations with order profile {1: 1, 2: 9, 3: 8, 4: 6}; all 8 order-3 elements are body-diagonal rotations spread two per axis over 4 axes, and 2 of them fix the (1,1,1) axis.",
+    "order_3_elements": 8,
+    "order_3_elements_fixing_the_111_axis": 2,
+    "pass": true,
+    "proper_rotations": 24,
+    "signed_diagonal_vectors_fixed_per_order_3_element": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "signed_permutation_matrices": 48,
+    "theorem": "C883-T2. The proper cubic rotations named by the Lattice axiom form the 24-element group of determinant-one signed permutation matrices. Its element orders are 1, 2, 3 and 4 with multiplicities 1, 9, 8 and 6. The eight order-3 elements are exactly the body-diagonal rotations: each fixes exactly one of the four diagonal axes, two elements per axis, and exactly two of them fix the (1,1,1) axis used below.",
+    "two_order_3_elements_per_diagonal_axis": true,
+    "what_this_licenses": "A C3 subgroup is axiom-supplied, not imported. Note the honest consequence carried forward: C2 and C4 subgroups are supplied by the SAME clause, which is why certificate I must compute what pairs they give."
+  },
+  "F_C3_ORBIT_STRUCTURE": {
+    "all_orbits_free": true,
+    "finding": "The axis-cycling rotation splits the 6-neighbour shell into orbits of lengths [3, 3], both free, so the pinned Cycle-882 scope 'one full C3 orbit' of length 3 is realized on the lattice rather than postulated.",
+    "fixes_the_body_diagonal": true,
+    "generator": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "generator_order": 3,
+    "matches_cycle882_scope": true,
+    "neighbourhood_size": 6,
+    "orbit_lengths": [
+      3,
+      3
+    ],
+    "orbits": [
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    ],
+    "pass": true,
+    "theorem": "C883-T3. The body-diagonal rotation cycling the coordinate axes has order 3, fixes the (1,1,1) diagonal, and partitions the six nearest neighbours of a site into exactly two FREE orbits of length 3.",
+    "two_banks_read_correctly": "The two orbits ARE the two banks, and this certificate is exactly why the two-bank fact is (1, 1)-shaped: the orbits are exchanged by the inversion -1, which is a lattice symmetry, so nothing distinguishes them. The (1, 2) does NOT live between the banks. It lives INSIDE one bank, in the isotype split of the readout space, which certificate G computes."
+  },
+  "G_ISOTYPE_PAIR_THEOREM": {
+    "agrees_with_cycle882_nullspace_dimension_1": true,
+    "chain": [
+      {
+        "claim": "readout on a 3-record orbit is linear on a 3-dim space",
+        "computed": true,
+        "from": "Record: finite additive scalar readout, I(empty) = 0",
+        "step": 1
+      },
+      {
+        "claim": "a C3 subgroup acts by cyclic permutation of the three",
+        "computed": true,
+        "from": "Lattice: proper cubic rotations (certificates E and F)",
+        "step": 2
+      },
+      {
+        "claim": "the invariant subspace has dimension 1",
+        "computed": true,
+        "from": "exact nullspace of a_i - a_{i+1} = 0",
+        "step": 3
+      },
+      {
+        "claim": "the complement has dimension 2",
+        "computed": true,
+        "from": "3 - 1, with an explicit rank-2 basis exhibited",
+        "step": 4
+      }
+    ],
+    "coefficient_space_dimension": 3,
+    "complement_basis": [
+      [
+        "1/1",
+        "-1/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "1/1",
+        "-1/1"
+      ]
+    ],
+    "complement_basis_averages_to_zero": true,
+    "complement_basis_rank": 2,
+    "complement_isotype_dimension": 2,
+    "finding": "The chain runs end to end with no free parameter: the readout space over one lattice-realized C3 orbit splits as 1 + 2, giving the ordered pair [1, 2] with 2-adic profile [0, 1] -- exactly the v_2 = 1 datum C882-T6 named as missing.",
+    "invariant_isotype_dimension": 1,
+    "ordered_isotype_pair": [
+      1,
+      2
+    ],
+    "pair_equals_target": true,
+    "pass": true,
+    "scope": "Derived AT the C3-orbit scope. The pair is Record-FACING: it lives in the readout space that Record's additivity clause defines over the record, not in a new axiom clause. Certificate I computes what happens at other orbit lengths, and certificate M prices what is still missing between 'carries (1, 2)' and 'reads 2/9'.",
+    "supplies_a_v2_equals_1_datum": true,
+    "target_pair": [
+      1,
+      2
+    ],
+    "theorem": "C883-T4 (SL1 AT THE PINNED SCOPE). Let a body-diagonal C3 supplied by the Lattice axiom act freely on three records, and let I be the finite additive scalar readout supplied by the Record axiom. Then the readout coefficient space is 3-dimensional and splits under the C3 action into the invariant line (dimension 1) and its complement (dimension 2). The record therefore carries the ORDERED pair (1, 2), with 2-adic profile (0, 1).",
+    "two_adic_profile": [
+      0,
+      1
+    ],
+    "what_is_new_relative_to_cycle_882": "Cycle 882 computed the invariant dimension (1) and stopped there, because it only needed the alpha-family. The complement dimension (2) was never computed on this lineage. That second number is the v_2 = 1 datum C882-T6 asked for, and it costs no supply: it is 3 - 1 on a space both of whose ingredients are axiom clauses."
+  },
+  "H_FIELD_ROBUSTNESS": {
+    "both_readings_agree": true,
+    "character_count_over_C": {
+      "non_trivial": 2,
+      "trivial": 1
+    },
+    "corroboration_only": "The landed BAE artifact independently names the same reading, 'AV1/AV2/AV3 canonical (mu, nu) = (1, 2) on (trivial, doublet) -> F3'. It is corroboration of the READING, never a premise: its own section 7 records that (1, 1) and (1, 2) are both admissible in that context, because that context does not fix the orbit length. Here the orbit length is fixed by the lattice.",
+    "count_pair_over_C": [
+      1,
+      2
+    ],
+    "dimension_pair_over_Q_and_R": [
+      1,
+      2
+    ],
+    "dimensions_sum_to_the_orbit_length": true,
+    "finding": "Both scalar-field readings return [1, 2] with identical 2-adic profiles, so the derived pair does not depend on a field choice the axioms leave open.",
+    "irreducible_dimensions_over_C": [
+      1,
+      1,
+      1
+    ],
+    "pass": true,
+    "theorem": "C883-T5. The ordered pair (1, 2) is independent of the scalar field the Record readout is valued in: over Q and R it is the isotype DIMENSION pair, over C it is the isotype COUNT pair. Both readings give (1, 2) with profile (0, 1).",
+    "two_adic_profiles_agree": true,
+    "why_this_matters": "The Record axiom says 'scalar readout' without naming a field, and the Qubit axiom offers M_2(C) and a Cl(3,0) real presentation as equivalent. A derivation that depended on which one was meant would import an unnamed choice. This one does not."
+  },
+  "I_DISCRIMINATION_TABLE": {
+    "finding": "The pair follows (1, n-1) on every row scanned; the target pair occurs at orbit lengths [3] and nowhere else, while (1, 1), (1, 3) and (2, 2) are all realized by other configurations inside the same supplied rotation group.",
+    "formula_verified_on_every_row": true,
+    "multi_orbit_rows": [
+      {
+        "is_the_target_pair": false,
+        "orbit_lengths": [
+          2,
+          2
+        ],
+        "ordered_pair": [
+          2,
+          2
+        ]
+      },
+      {
+        "is_the_target_pair": false,
+        "orbit_lengths": [
+          3,
+          3
+        ],
+        "ordered_pair": [
+          2,
+          4
+        ]
+      },
+      {
+        "is_the_target_pair": false,
+        "orbit_lengths": [
+          2,
+          3
+        ],
+        "ordered_pair": [
+          2,
+          3
+        ]
+      },
+      {
+        "is_the_target_pair": false,
+        "orbit_lengths": [
+          2,
+          2,
+          2
+        ],
+        "ordered_pair": [
+          3,
+          3
+        ]
+      },
+      {
+        "is_the_target_pair": false,
+        "orbit_lengths": [
+          4,
+          4
+        ],
+        "ordered_pair": [
+          2,
+          6
+        ]
+      }
+    ],
+    "orbit_lengths_giving_the_target_pair": [
+      3
+    ],
+    "pair_2_2_is_realized_by": [
+      [
+        2,
+        2
+      ]
+    ],
+    "pass": true,
+    "single_orbit_rows": [
+      {
+        "cyclic_subgroup_realized_in_the_cubic_rotation_group": true,
+        "is_the_target_pair": false,
+        "matches_the_formula_1_n_minus_1": true,
+        "orbit_length": 2,
+        "ordered_pair": [
+          1,
+          1
+        ],
+        "two_adic_profile": [
+          0,
+          0
+        ]
+      },
+      {
+        "cyclic_subgroup_realized_in_the_cubic_rotation_group": true,
+        "is_the_target_pair": true,
+        "matches_the_formula_1_n_minus_1": true,
+        "orbit_length": 3,
+        "ordered_pair": [
+          1,
+          2
+        ],
+        "two_adic_profile": [
+          0,
+          1
+        ]
+      },
+      {
+        "cyclic_subgroup_realized_in_the_cubic_rotation_group": true,
+        "is_the_target_pair": false,
+        "matches_the_formula_1_n_minus_1": true,
+        "orbit_length": 4,
+        "ordered_pair": [
+          1,
+          3
+        ],
+        "two_adic_profile": [
+          0,
+          0
+        ]
+      },
+      {
+        "cyclic_subgroup_realized_in_the_cubic_rotation_group": false,
+        "is_the_target_pair": false,
+        "matches_the_formula_1_n_minus_1": true,
+        "orbit_length": 5,
+        "ordered_pair": [
+          1,
+          4
+        ],
+        "two_adic_profile": [
+          0,
+          2
+        ]
+      },
+      {
+        "cyclic_subgroup_realized_in_the_cubic_rotation_group": false,
+        "is_the_target_pair": false,
+        "matches_the_formula_1_n_minus_1": true,
+        "orbit_length": 6,
+        "ordered_pair": [
+          1,
+          5
+        ],
+        "two_adic_profile": [
+          0,
+          0
+        ]
+      },
+      {
+        "cyclic_subgroup_realized_in_the_cubic_rotation_group": false,
+        "is_the_target_pair": false,
+        "matches_the_formula_1_n_minus_1": true,
+        "orbit_length": 7,
+        "ordered_pair": [
+          1,
+          6
+        ],
+        "two_adic_profile": [
+          0,
+          1
+        ]
+      },
+      {
+        "cyclic_subgroup_realized_in_the_cubic_rotation_group": false,
+        "is_the_target_pair": false,
+        "matches_the_formula_1_n_minus_1": true,
+        "orbit_length": 8,
+        "ordered_pair": [
+          1,
+          7
+        ],
+        "two_adic_profile": [
+          0,
+          0
+        ]
+      }
+    ],
+    "target_pair_is_uniquely_n_equals_3": true,
+    "the_honest_residual": "C2, C3 and C4 subgroups are ALL supplied by the same Lattice clause, so the axioms alone do not choose n. What chooses n = 3 here is the obligation's own scope: Cycle 882 pins the object as 'one registered full C3 orbit' with ORBIT_LENGTH = 3. The derivation is therefore exact AT the pinned scope and carries a named upstream dependency (the C3 scope) rather than a hidden one.",
+    "theorem": "C883-T6. For a record consisting of one free orbit of a cyclic group of order n, the ordered isotype pair is exactly (1, n - 1). Hence the pair is (1, 2) if and only if n = 3; it is (1, 1) at n = 2 and (1, 3) at n = 4, and the pair (2, 2) is the two-C2-orbit record. The pair is a FUNCTION of the record configuration.",
+    "what_would_falsify_this": "Exhibit a record configuration with orbit length other than 3 whose ordered isotype pair is (1, 2). By the formula above no such configuration exists among free cyclic orbits, and the multi-orbit rows show sums never return to (1, 2) once the invariant dimension exceeds 1."
+  },
+  "J_WRONG_PAIR_STRESS": {
+    "defeated_argument_1_gating_order": {
+      "admissible_pairs_under_the_argument": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "argument": "leader raises, follower lowers, so the pair is (1, 2)",
+      "count": 4,
+      "has_discriminating_power": false,
+      "verdict": "REFUTED as a forcing. A strict order admits every (1, r) with r > 1, so the argument that reaches (1, 2) reaches (1, 3) and (1, 5) with equal right. It fixes an inequality, not a point."
+    },
+    "defeated_argument_2_two_banks": {
+      "argument": "there are two banks, so the pair is (1, 2)",
+      "is_the_target_pair": false,
+      "pair_the_argument_actually_yields": [
+        1,
+        1
+      ],
+      "two_adic_profile": [
+        0,
+        0
+      ],
+      "verdict": "REFUTED. Cardinality two is a (1, 1) multiplicity pair with profile (0, 0). The 2 appears in the SUM of the weights, not in the weights; C882-T6 needs a weight with v_2 = 1, and 1 + 1 = 2 does not supply one."
+    },
+    "defeated_argument_3_free_cardinality": {
+      "argument": "read the readout at n = 2 to get a v_2 = 1 value",
+      "verdict": "REFUTED by C883-T1's supply dichotomy: n is universally quantified, so fixing n = 2 either privileges the 2-record states, which the axiom memo's law clause forbids, or supplies a domain condition, which is a free choice."
+    },
+    "finding": "Exactly 1 of the 6 tested pairs is produced by the C883-T4 argument at the pinned C3 scope, and it is the target; each of the three rejected arguments is shown to admit two or more pairs and therefore to force none.",
+    "forcing_is_unique_at_the_pinned_scope": true,
+    "pairs_produced_at_the_pinned_C3_scope": [
+      [
+        1,
+        2
+      ]
+    ],
+    "pass": true,
+    "rows": [
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": true,
+        "produced_by_the_same_argument_at_some_other_orbit_length": false,
+        "reachable_by_some_free_cyclic_configuration": true,
+        "two_adic_profile": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          1,
+          1
+        ],
+        "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+        "produced_by_the_same_argument_at_some_other_orbit_length": true,
+        "reachable_by_some_free_cyclic_configuration": true,
+        "two_adic_profile": [
+          0,
+          0
+        ]
+      },
+      {
+        "pair": [
+          1,
+          3
+        ],
+        "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+        "produced_by_the_same_argument_at_some_other_orbit_length": true,
+        "reachable_by_some_free_cyclic_configuration": true,
+        "two_adic_profile": [
+          0,
+          0
+        ]
+      },
+      {
+        "pair": [
+          2,
+          2
+        ],
+        "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+        "produced_by_the_same_argument_at_some_other_orbit_length": false,
+        "reachable_by_some_free_cyclic_configuration": true,
+        "two_adic_profile": [
+          1,
+          1
+        ]
+      },
+      {
+        "pair": [
+          2,
+          4
+        ],
+        "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+        "produced_by_the_same_argument_at_some_other_orbit_length": false,
+        "reachable_by_some_free_cyclic_configuration": true,
+        "two_adic_profile": [
+          1,
+          2
+        ]
+      },
+      {
+        "pair": [
+          3,
+          6
+        ],
+        "produced_by_the_C883_T4_argument_at_the_pinned_C3_scope": false,
+        "produced_by_the_same_argument_at_some_other_orbit_length": false,
+        "reachable_by_some_free_cyclic_configuration": false,
+        "two_adic_profile": [
+          0,
+          1
+        ]
+      }
+    ],
+    "stress_specification": "Any argument that claims to FORCE (1, 2) is run unmodified on the deliberately wrong pairs. If the same argument also yields a wrong pair at the same scope, the forcing claim is refuted."
+  },
+  "K_BRIDGE_BACK_T6": {
+    "cycle882_distinct_2_adic_valuations": [
+      0
+    ],
+    "cycle882_generator_set": [
+      3
+    ],
+    "cycle882_target_reachable": false,
+    "cycle883_distinct_2_adic_valuations": [
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "cycle883_generator_set": [
+      2,
+      3
+    ],
+    "cycle883_generators_provenance": "2 = the derived complement isotype dimension (C883-T4); 3 = the orbit length, already pinned by Cycle 882",
+    "cycle883_target_reachable": true,
+    "exactly_what_changed": "C882-T6 excluded 2/9 because every element of <3> has v_2 = 0. Admitting the derived complement dimension 2 widens the group to <2, 3>, whose 2-adic valuations now range over the scanned window, and 2/9 = 2^1 * 3^-2 is a member. The named escape condition of C882-T6 is met by a DERIVED datum, not a supplied one.",
+    "finding": "With the derived isotype dimension admitted the anchor group widens from valuations [0] to [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6] and the target 2/9 becomes reachable at {'two': 1, 'three': -2}, so the C882-T6 obstruction is defeated.",
+    "obstruction_defeated": true,
+    "pass": true,
+    "recomputed_theorem": "C882-T6 (2-adic exclusion)",
+    "target_2_adic_valuation": 1,
+    "target_3_adic_valuation": -2,
+    "target_anchor": "2/9",
+    "what_is_NOT_claimed": "Reachability is not selection. C882-T7 is untouched by this widening and is recomputed separately in certificate L.",
+    "witness_exponents": {
+      "three": -2,
+      "two": 1
+    }
+  },
+  "L_BRIDGE_BACK_T7": {
+    "alpha_witness_row_deltas": [
+      {
+        "exponent_window": 1,
+        "reached_before": false,
+        "reaches_now": false
+      },
+      {
+        "exponent_window": 2,
+        "reached_before": false,
+        "reaches_now": true
+      },
+      {
+        "exponent_window": 3,
+        "reached_before": false,
+        "reaches_now": true
+      }
+    ],
+    "any_library_uniquely_selects_the_target": false,
+    "consistency_with_cycle882": "C882-T7 required only multiplicative closure, never the specific generator set, so widening the generators cannot touch it. The recomputation is a check that this cycle did not accidentally weaken a landed wall, and it did not.",
+    "count_of_rows_flipping_to_uniquely_selecting": 0,
+    "every_library_still_contains_the_identity": true,
+    "finding": "Across 12 recomputed libraries the identity is present in every one, exactly 0 rows flip to uniquely selecting, and the target becomes reachable on the widened generator set without becoming selected.",
+    "pass": true,
+    "recomputed_theorem": "C882-T7 (identity obstruction, the exact wall)",
+    "rows": [
+      {
+        "contains_the_identity": true,
+        "exponent_window": 1,
+        "generators": [
+          3
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/1",
+          "1/3",
+          "1/9"
+        ],
+        "reaches_the_target_alpha": false,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 2,
+        "generators": [
+          3
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/1",
+          "1/3",
+          "1/9"
+        ],
+        "reaches_the_target_alpha": false,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 3,
+        "generators": [
+          3
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/1",
+          "1/3",
+          "1/9"
+        ],
+        "reaches_the_target_alpha": false,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 1,
+        "generators": [
+          2,
+          3
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/1",
+          "1/3",
+          "1/9"
+        ],
+        "reaches_the_target_alpha": false,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 2,
+        "generators": [
+          2,
+          3
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/1",
+          "1/3",
+          "1/9",
+          "2/27"
+        ],
+        "reaches_the_target_alpha": true,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 3,
+        "generators": [
+          2,
+          3
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/1",
+          "1/3",
+          "1/9",
+          "2/27"
+        ],
+        "reaches_the_target_alpha": true,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 1,
+        "generators": [
+          2
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/3"
+        ],
+        "reaches_the_target_alpha": false,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 2,
+        "generators": [
+          2
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/3"
+        ],
+        "reaches_the_target_alpha": false,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 3,
+        "generators": [
+          2
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/3"
+        ],
+        "reaches_the_target_alpha": false,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 1,
+        "generators": [
+          2,
+          3,
+          5
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/1",
+          "1/3",
+          "1/9"
+        ],
+        "reaches_the_target_alpha": false,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 2,
+        "generators": [
+          2,
+          3,
+          5
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/1",
+          "1/3",
+          "1/9",
+          "2/27"
+        ],
+        "reaches_the_target_alpha": true,
+        "uniquely_selects_the_target": false
+      },
+      {
+        "contains_the_identity": true,
+        "exponent_window": 3,
+        "generators": [
+          2,
+          3,
+          5
+        ],
+        "pinned_witnesses_surviving": [
+          "0/1",
+          "1/1",
+          "1/3",
+          "1/9",
+          "2/27"
+        ],
+        "reaches_the_target_alpha": true,
+        "uniquely_selects_the_target": false
+      }
+    ],
+    "rows_flipping_to_uniquely_selecting": [],
+    "verdict": "The derived datum moves the REACHABILITY rows and moves no SELECTION row. Admitting the isotype dimension 2 lets the target alpha enter the survivor set, but every multiplicatively closed library still contains 1, so alpha = 1/3 survives alongside it and no row becomes uniquely selecting. This is exactly why Cycle 882 classified SL1 WEAKER rather than equivalent, and the classification is now confirmed by computation rather than inherited."
+  },
+  "M_BINDING_PRICE": {
+    "binding_is_forced": false,
+    "closed_forms_evaluated_at_(w0, w1, n) = (1, 2, 3)": [
+      {
+        "hits_the_anchor": true,
+        "name": "w1 / (w0 + w1)^2",
+        "value": "2/9"
+      },
+      {
+        "hits_the_anchor": true,
+        "name": "w0 * w1 / n^2",
+        "value": "2/9"
+      },
+      {
+        "hits_the_anchor": true,
+        "name": "w1 / n^2",
+        "value": "2/9"
+      },
+      {
+        "hits_the_anchor": true,
+        "name": "(n - 1) / n^2",
+        "value": "2/9"
+      },
+      {
+        "hits_the_anchor": true,
+        "name": "w1 / (w0 * n^2)",
+        "value": "2/9"
+      },
+      {
+        "hits_the_anchor": false,
+        "name": "w0 / n",
+        "value": "1/3"
+      },
+      {
+        "hits_the_anchor": false,
+        "name": "(w0 + w1) / n^2",
+        "value": "1/3"
+      }
+    ],
+    "finding": "5 of the 7 enumerated closed forms in the derived data return 2/9, so the datum is derived but its binding to the anchor is a 5-fold ambiguity that this cycle does not close.",
+    "forms_returning_the_anchor": [
+      "w1 / (w0 + w1)^2",
+      "w0 * w1 / n^2",
+      "w1 / n^2",
+      "(n - 1) / n^2",
+      "w1 / (w0 * n^2)"
+    ],
+    "number_of_forms_returning_the_anchor": 5,
+    "pass": true,
+    "price": {
+      "binding": "OPEN: 5 distinct closed forms in the derived data return the anchor, so nothing in the derivation picks one. Closing it needs the singleton Record predicate that C882-T7 already showed no algebraic structure can supply.",
+      "datum": "DISCHARGED by C883-T4 (derived, no free parameter)",
+      "scope_choice": "NAMED: the C3 orbit length is inherited from Cycle 882's pinned scope, not derived from the axioms, which supply C2, C3 and C4 alike (C883-T6)."
+    },
+    "question": "The datum is derived. Is the BINDING of that datum to the anchor constant 2/9 also derived?",
+    "remaining_discrete_choice": 5,
+    "remaining_free_dimension": 0,
+    "sl1_status": "MET at the pinned scope; the binding half is untouched"
+  },
+  "N_ECHO_LEDGER": {
+    "cycle318_ast_recovery": {
+      "occurrences": [
+        {
+          "argument": "mediator_weight",
+          "default_value": 2.0,
+          "function": "direction_vertex",
+          "is_a_default_argument": true,
+          "line": 230
+        }
+      ]
+    },
+    "cycle318_default_value_is_2": true,
+    "cycle876_independently_recorded_it_as_a_default_argument": true,
+    "cycle880_selection_neutrality_verbatim": true,
+    "discipline": "No echo was allowed to stand as an argument. Two are recorded as numerics-only and two carry a computed but strictly bounded connection.",
+    "echoes": [
+      {
+        "classification": "NUMERICS-ONLY",
+        "connection_to_the_derived_pair": "NONE COMPUTED",
+        "echo": "Cycle-318 mediator weight 2",
+        "evidence": "AST recovery finds it as a default argument at [('direction_vertex', 230)]; a default argument is a supply, and no landed artifact derives it from an isotype dimension or vice versa.",
+        "why_not_connected": "The derived 2 is a REPRESENTATION dimension of the readout space over a C3 orbit. The Cycle-318 2 is a relative weight in a candidate flux-balance vertex. No landed chain relates them, and this cycle constructs none. Equal numbers, unrelated objects, until something computes the map."
+      },
+      {
+        "classification": "NUMERICS-ONLY",
+        "connection_to_the_derived_pair": "NONE COMPUTED",
+        "echo": "the (1, 2, 0) joint-selection grading point",
+        "evidence": "Cycle 880's own pinned sentence records the point as unchosen: 'It SELECTS NOTHING: the choice of t is the owner's'.",
+        "why_not_connected": "The grading is a 3-vector on a gauge-fixed lawful line and the isotype pair is an ordered 2-tuple of subspace dimensions. Their leading entries agree numerically; no computation here or upstream maps one to the other."
+      },
+      {
+        "classification": "CONNECTED, BUT ONLY 2-ADICALLY",
+        "connection_to_the_derived_pair": "COMPUTED",
+        "echo": "the 2 inside the anchor 2/9",
+        "evidence": "v_2(2/9) = 1 and the derived complement dimension supplies exactly that valuation (certificate K, where 2/9 = 2^1 * 3^-2 enters <2, 3>).",
+        "why_not_more": "The connection is a valuation match plus membership, which is reachability. It is NOT the identification of the anchor with the isotype data: certificate M shows several closed forms in (1, 2, 3) return 2/9, so the match does not single one out."
+      },
+      {
+        "classification": "CORROBORATION OF THE READING ONLY",
+        "connection_to_the_derived_pair": "COMPUTED",
+        "echo": "the landed BAE isotype pair (1, 2)",
+        "evidence": "the BAE artifact names 'AV1/AV2/AV3 canonical (mu, nu) = (1, 2) on (trivial, doublet) -> F3', the same (trivial, doublet) reading derived here",
+        "why_not_more": "Its own check is assertion-shaped and its section 7 records (1, 1) and (1, 2) as both admissible, so it cannot carry any derivational weight; it is cited to show the reading is not novel to this cycle, nothing more."
+      }
+    ],
+    "echoes_connected": [
+      "the 2 inside the anchor 2/9"
+    ],
+    "echoes_numerics_only": [
+      "Cycle-318 mediator weight 2",
+      "the (1, 2, 0) joint-selection grading point"
+    ],
+    "finding": "Of 4 numerical echoes, 2 are recorded numerics-only and 1 carry a computed connection that stops short of identification; Cycle-318's 2 is confirmed by AST to be a Python default argument.",
+    "pass": true
+  },
+  "O_TERMINAL_LEMMA": {
+    "binding_still_open": true,
+    "cycle882_wall_still_intact": true,
+    "datum_derived": true,
+    "finding": "SL1 is discharged as derived; the obligation is not closed; the residual is re-localized from 'a missing datum' to 'a missing functional', and the newly named SL1b is classified EQUIVALENT.",
+    "pass": true,
+    "sl1_verdict": "SL1 IS DERIVABLE at the pinned scope. The record's readout space over one lattice-realized C3 orbit carries the ordered pair (1, 2) with 2-adic profile (0, 1), forced by the Lattice rotation clause and the Record additivity clause with no free parameter.",
+    "strength_classes_valid": true,
+    "subsidiary_lemmas": [
+      {
+        "lemma": "SL1 (this cycle's target): the record carries the weight pair (1, 2), a v_2 = 1 datum",
+        "status": "DERIVED at the pinned C3 scope (C883-T4)",
+        "still_open": false,
+        "strength_vs_the_readout_obligation": "WEAKER"
+      },
+      {
+        "lemma": "SL1b (the successor this cycle exposes): the Record-facing readout is the ISOTYPE-WEIGHTED functional, i.e. the anchor equals w1 / (w0 + w1)^2 on the derived pair rather than any of the other closed forms that also return 2/9",
+        "status": "OPEN",
+        "still_open": true,
+        "strength_vs_the_readout_obligation": "EQUIVALENT"
+      },
+      {
+        "lemma": "SL2 singleton readout predicate (Cycle 882)",
+        "status": "OPEN, untouched by this cycle",
+        "still_open": true,
+        "strength_vs_the_readout_obligation": "EQUIVALENT"
+      },
+      {
+        "lemma": "SL0 (newly named): derive the C3 scope itself, i.e. that the registered orbit is the order-3 one rather than the order-2 or order-4 orbits the same Lattice clause supplies",
+        "status": "OPEN, inherited from Cycle 882's pinned scope",
+        "still_open": true,
+        "strength_vs_the_readout_obligation": "INCOMPARABLE"
+      }
+    ],
+    "successor_named": "SL1b. With the datum in hand the whole remaining gap in the readout half is the CHOICE of functional: several closed forms in (1, 2, 3) return the anchor, and C882-T7 already proves no closed algebraic structure picks one. SL1b is therefore EQUIVALENT to the obligation, which means the readout half is once again all-or-nothing -- but now with the datum discharged and only the functional at stake."
+  },
+  "P_OUTCOME": {
+    "bridge_back": "C882-T6 is DEFEATED by the derived datum: the anchor group widens to <2, 3> and 2/9 = 2^1 * 3^-2 becomes reachable. C882-T7 is UNTOUCHED: every closed library still contains the identity and no alpha-witness row flips to uniquely selecting. Cycle 882's own classification of SL1 as WEAKER is thereby confirmed by recomputation.",
+    "cycle882_T6_obstruction_defeated": true,
+    "files_swept": 10146,
+    "finding": "The cycle returns a positive derivation with an exactly priced residual: SL1's datum is derived from two axiom clauses with no free parameter, the named 2-adic obstruction it was invented to defeat is defeated, and the surviving wall is unchanged.",
+    "named_upstream_dependency": "the C3 scope, inherited from Cycle 882 rather than derived; the Lattice clause supplies C2, C3 and C4 alike. Named as SL0.",
+    "obligation_closed": false,
+    "outcome_class": "POSITIVE_DERIVATION_PLUS_PRICED_RESIDUAL",
+    "pass": true,
+    "residual": "The readout half now needs a functional, not a datum. Named as SL1b and classified EQUIVALENT to the obligation.",
+    "sl1_met": true,
+    "what_was_derived": [
+      "C883-T1 the axioms force only the multiplicities {0, 1}, so no v_2 = 1 CONSTANT is available by counting, and the free cardinality escape costs a supply on either horn.",
+      "C883-T2 the Lattice clause rebuilds to the 24-element proper rotation group with eight body-diagonal order-3 elements.",
+      "C883-T3 a body-diagonal C3 splits the six nearest neighbours into exactly two free orbits of length 3 -- the two banks, and they are (1, 1)-shaped.",
+      "C883-T4 THE DERIVATION: Record additivity over one such orbit makes readout linear on a 3-dimensional space that splits under the C3 action as 1 + 2, so the record carries the ordered pair (1, 2) with 2-adic profile (0, 1).",
+      "C883-T5 the pair is scalar-field robust: dimensions over Q and R, isotype counts over C, both (1, 2).",
+      "C883-T6 the pair is (1, n-1) for a free cyclic orbit of length n, so it is (1, 2) exactly at n = 3, while (1, 1), (1, 3) and (2, 2) are realized by other configurations of the same group."
+    ],
+    "what_was_refuted": [
+      "the two-bank route (yields (1, 1), profile (0, 0))",
+      "the gating-order route (admits every (1, r), r > 1)",
+      "the free-cardinality route (privileges states or supplies a domain)"
+    ]
+  },
+  "Q_NO_GO_GATE": {
+    "Q1_route_enumeration": [
+      {
+        "marker": "ATTEMPTED",
+        "route": "bare axiom multiplicity ({0, 1})",
+        "verdict": "closed by C883-T1"
+      },
+      {
+        "marker": "ATTEMPTED",
+        "route": "free collection cardinality n = 2",
+        "verdict": "closed by the C883-T1 supply dichotomy"
+      },
+      {
+        "marker": "ATTEMPTED",
+        "route": "two-bank pair",
+        "verdict": "yields (1, 1); closed by C883-T3 and certificate J"
+      },
+      {
+        "marker": "ATTEMPTED",
+        "route": "leader/follower gating order",
+        "verdict": "no artifact on branch; and orders carry no magnitude"
+      },
+      {
+        "marker": "ATTEMPTED",
+        "route": "record write ordinals",
+        "verdict": "ABSENT tree-wide; forbidden by 'No site is privileged'"
+      },
+      {
+        "marker": "ATTEMPTED",
+        "route": "composed-record B0/B1 roles",
+        "verdict": "two rank-one roles, so (1, 1)"
+      },
+      {
+        "marker": "RULED-OUT-BY-PRIOR",
+        "route": "formation weight",
+        "verdict": "excluded by the axiom memo's own Open Gates clause"
+      },
+      {
+        "marker": "ATTEMPTED",
+        "route": "C3 isotype pair of the readout space",
+        "verdict": "SUCCEEDS (C883-T4)"
+      }
+    ],
+    "Q2_markers_valid": true,
+    "Q3_steelman": "The strongest case against this cycle's positive result: the derived pair lives in the READOUT SPACE over the record, whereas SL1's wording asks the record to carry the pair 'as Record content'. The answer is that Record's own additivity clause is what defines that readout space, so the pair is built from Record content and Lattice content and nothing else -- but the distinction is real and is recorded, not argued away. Anyone who insists the datum must live in the record rather than in its readout should read this cycle as deriving the datum one level out, which is exactly where C882-T6's arithmetic acts.",
+    "Q4_exact_scope": "Exact scope. Derived: the ordered isotype pair (1, 2) over one free C3 orbit, from the Lattice rotation clause and the Record additivity clause. Not derived: which cyclic subgroup the registered orbit belongs to (SL0), and which functional binds the pair to the anchor (SL1b). Not claimed: any closure of the readout obligation, any connection between the derived 2 and Cycle-318's mediator weight, and any connection between the derived pair and the (1, 2, 0) grading.",
+    "Q5_provenance_is_data_not_outcome": "The inventory certificate classifies candidates DERIVED / SUPPLIED / ABSENT by evidence and gates only on the classes being valid and the needle table being fully covered. It does not gate on how many land in any class.",
+    "Q6_discrimination_gates_are_symmetric": true,
+    "Q7_absent_means_absent": "Cycle 881 and Cycle 878 artifacts are reported ABSENT with their tree-wide scan counts. Nothing about their content is asserted.",
+    "finding": "All 8 routes carry a valid marker, the steelman against the positive result is stated rather than rebutted, and the exact scope names two open successors and three refused connections.",
+    "pass": true
+  }
+}
+
+controls: deterministic=True runtime_under_limit=True stdout=63574B cache=ce8d0e04e7c75aaf

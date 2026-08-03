@@ -228,7 +228,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 8.477,
+  "load_bearing_score": 8.5,
   "load_bearing_step": "The constructed encoding and physical update satisfy E_full G_coarse = G_physical E_full on all 128 decoded columns.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -379,6 +379,6 @@
   },
   "runner_path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
   "title": "Full128 local M64 \u00d7 seam-M2 bare-frame intertwiner",
-  "transitive_descendants": 62,
+  "transitive_descendants": 63,
   "verdict_rationale": "The supplied runner and helpers construct the operators and nearest-neighbor word rather than merely printing expected outputs, and all 13 checks pass without external comparators or imported calibrated values. Independently, the pair gadget prepares the stated antisymmetric state, one onsite phase per occupied pair gives exp(i g k(k-1)/2), the conjugation identities yield the intertwiner, and the constraint count leaves 2^7 code states with an integer gap realized by one corridor excitation. The result is therefore clean only on the explicitly supplied bounded finite surface."
 }

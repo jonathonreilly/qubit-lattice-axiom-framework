@@ -1,18 +1,18 @@
 # Audit Queue
 
-**Total pending:** 3015
+**Total pending:** 3016
 **Ready (dependencies and deterministic forensic evidence):** 472
 **Dependency-ready:** 556
-**Forensic-evidence-ready:** 2533
+**Forensic-evidence-ready:** 2534
 
 By criticality:
 - `critical`: 633
-- `high`: 375
-- `medium`: 841
-- `leaf`: 1166
+- `high`: 377
+- `medium`: 839
+- `leaf`: 1167
 
 By work kind:
-- `fresh_scientific_audit`: 2533
+- `fresh_scientific_audit`: 2534
 - `legacy_packet_upgrade`: 0
 - `evidence_repair_required`: 482
 

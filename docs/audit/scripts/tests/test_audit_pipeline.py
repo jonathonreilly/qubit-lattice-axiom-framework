@@ -12107,11 +12107,21 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         workdir.mkdir(parents=True)
         surviving = mock.Mock(pid=1235)
         packet_cache: dict[str, dict] = {}
+        log_handles = []
+        original_open = Path.open
+
+        def tracked_open(path, *args, **kwargs):
+            handle = original_open(path, *args, **kwargs)
+            if path.name.startswith("log-"):
+                log_handles.append(handle)
+            return handle
 
         def rendered_prompt(*_args, audit_invocation_id=None, **_kwargs):
             return f"one live compute\ninvocation={audit_invocation_id}\n"
 
         with mock.patch.object(
+            Path, "open", new=tracked_open
+        ), mock.patch.object(
             m.audit_runner, "render_prompt", side_effect=rendered_prompt
         ) as render, mock.patch.object(
             m.audit_runner, "PROMPT_TEMPLATE_PATH"
@@ -12133,6 +12143,8 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         self.assertEqual(render.call_count, 1)
         self.assertEqual(selection.call_count, 1)
         self.assertEqual(second["selection_fingerprint"], "selection")
+        self.assertEqual(len(log_handles), 2)
+        self.assertTrue(log_handles[0].closed)
 
     def test_conditional_rows_wait_for_repair_across_runs(self):
         """A re-queued audited_conditional row is not re-targeted until its

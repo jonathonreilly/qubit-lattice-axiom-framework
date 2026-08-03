@@ -6307,6 +6307,20 @@ class CampaignContractTest(unittest.TestCase):
             audit_loop.PROGRESS.clear()
             audit_loop.PROGRESS.update(original_progress)
 
+    def test_phase_spawn_failure_does_not_enter_child_cleanup_wait(self):
+        with mock.patch.object(
+            audit_loop.subprocess,
+            "Popen",
+            side_effect=OSError("phase spawn failed"),
+        ), mock.patch.object(
+            audit_loop, "await_phase_cleanup_boundary"
+        ) as await_boundary, self.assertRaisesRegex(
+            OSError, "phase spawn failed"
+        ):
+            audit_loop.run_command("batch-probe", ["child"])
+
+        await_boundary.assert_not_called()
+
     def test_parent_finalizers_propagate_ordinary_failure_after_exhaustive_close(
         self,
     ):

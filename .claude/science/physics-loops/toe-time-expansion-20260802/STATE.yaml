@@ -10,11 +10,13 @@ window_hours: 24
 mode: workhorse
 wave: 1
 worktrees:
-  c5-landing: blockP25 — 866/867 v2 recovered + committed (d172e4029d), cold rerun
-    in flight; ship pending finale checker reconciled against v2 outputs
-  c5-gravity: wave1 gravity sign census (blockG1, Cycle 868)
-  c5-clocks: wave1 local-clock relation (blockT1, Cycle 869)
-  c5-census: wave1 general-n census law (blockN1, Cycle 870)
+  c5-landing: blockP25 — 866/867 v2 reran clean (866 5/5 gates 178s; 867 4/4
+    gates 140s); finale checker worker running against v2 numbers
+  c5-gravity: wave1 gravity sign census (blockG1, Cycle 868) — worker done
+    (SCOPED_NO_GO + checker corroboration); supervisor review + N1-N8 pending
+  c5-clocks: wave1 local-clock relation (blockT1, Cycle 869) — worker running
+  c5-census: wave1 general-n census law (blockN1, Cycle 870) — SHIPPED as
+    PR #5921 (stacked on #5880); reviewed pass; audit pending
 notes: >
   Worker worktrees moved to durable .claude/worktrees/ paths (reboot lesson);
   supervisor commits push immediately, worker scripts commit BEFORE first run.

@@ -4459,7 +4459,7 @@ class CampaignContractTest(unittest.TestCase):
         self.assertNotIn("--coordinator", help_text)
         self.assertIn("--max-runtime-hours", help_text)
 
-    def test_batch_selection_skips_siblings_with_mutable_shared_dep(self):
+    def test_batch_selection_allows_siblings_with_shared_dependency(self):
         targets = [
             {"claim_id": "first", "deps": ["shared"]},
             {"claim_id": "sibling", "deps": ["shared"]},
@@ -4470,7 +4470,89 @@ class CampaignContractTest(unittest.TestCase):
 
         self.assertEqual(
             [row["claim_id"] for row in selected],
-            ["first", "independent"],
+            ["first", "sibling"],
+        )
+
+    def test_batch_selection_excludes_selected_dependency_and_consumers(self):
+        rows = {
+            "shared": {"claim_id": "shared", "deps": []},
+            "first": {"claim_id": "first", "deps": ["shared"]},
+            "sibling": {"claim_id": "sibling", "deps": ["shared"]},
+            "independent": {"claim_id": "independent", "deps": []},
+        }
+        targets = [
+            rows["shared"],
+            rows["first"],
+            rows["sibling"],
+            rows["independent"],
+        ]
+        with mock.patch.object(batch, "accepted", return_value=False):
+            selected = batch.selected_batch(
+                targets, max_workers=3, rows=rows
+            )
+
+        self.assertEqual(
+            [row["claim_id"] for row in selected],
+            ["shared", "independent"],
+        )
+
+    def test_batch_selection_excludes_transitive_dependency_collision(self):
+        rows = {
+            "ancestor": {"claim_id": "ancestor", "deps": []},
+            "middle": {"claim_id": "middle", "deps": ["ancestor"]},
+            "descendant": {"claim_id": "descendant", "deps": ["middle"]},
+            "independent": {"claim_id": "independent", "deps": []},
+        }
+        targets = [
+            rows["ancestor"],
+            rows["descendant"],
+            rows["independent"],
+        ]
+        with mock.patch.object(batch, "accepted", return_value=False):
+            selected = batch.selected_batch(
+                targets, max_workers=3, rows=rows
+            )
+
+        self.assertEqual(
+            [row["claim_id"] for row in selected],
+            ["ancestor", "independent"],
+        )
+
+        reverse_targets = [
+            rows["descendant"],
+            rows["ancestor"],
+            rows["independent"],
+        ]
+        with mock.patch.object(batch, "accepted", return_value=False):
+            reverse_selected = batch.selected_batch(
+                reverse_targets, max_workers=3, rows=rows
+            )
+
+        self.assertEqual(
+            [row["claim_id"] for row in reverse_selected],
+            ["descendant", "independent"],
+        )
+
+    def test_batch_selection_stops_dependency_closure_at_meta_context(self):
+        rows = {
+            "ancestor": {"claim_id": "ancestor", "deps": []},
+            "context": {
+                "claim_id": "context",
+                "claim_type": "meta",
+                "effective_status": "meta",
+                "deps": ["ancestor"],
+            },
+            "consumer": {"claim_id": "consumer", "deps": ["context"]},
+        }
+        targets = [rows["ancestor"], rows["consumer"]]
+        with mock.patch.object(batch, "accepted", return_value=False):
+            selected = batch.selected_batch(
+                targets, max_workers=2, rows=rows
+            )
+
+        self.assertEqual(
+            [row["claim_id"] for row in selected],
+            ["ancestor", "consumer"],
         )
 
     def test_batch_selection_allows_shared_accepted_premise(self):
@@ -4499,6 +4581,27 @@ class CampaignContractTest(unittest.TestCase):
         self.assertEqual(
             [row["claim_id"] for row in selected],
             ["critical"],
+        )
+
+    def test_source_row_fingerprint_ignores_generated_order_only(self):
+        first = {
+            "claim_id": "target",
+            "candidate_reason": "runner_artifact_repaired_since_audit",
+            "generated_order": 1,
+        }
+        renumbered = {**first, "generated_order": 2}
+        changed_reason = {
+            **renumbered,
+            "candidate_reason": "dependency_strengthened",
+        }
+
+        self.assertEqual(
+            batch.source_row_fingerprint(first),
+            batch.source_row_fingerprint(renumbered),
+        )
+        self.assertNotEqual(
+            batch.source_row_fingerprint(first),
+            batch.source_row_fingerprint(changed_reason),
         )
 
     def test_packet_fingerprint_normalizes_transport_bounded_virtual_index(self):

@@ -24,6 +24,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import audit_science_fingerprint
+import compute_audit_queue
 import premise_nodes
 import ledger_io
 
@@ -89,13 +90,29 @@ def stdout_transport_reaudit_candidate(row: dict) -> tuple[bool, int | None]:
     )
 
 
-def audited_under_packet_policy(row: dict, packet_policy: dict[str, str]) -> bool:
-    """Whether the row's terminal audit already used this packet policy."""
+def audited_under_unchanged_packet_policy(
+    row: dict,
+    rows: dict[str, dict],
+    packet_policy: dict,
+) -> bool:
+    """Whether the same packet policy saw the same recorded blockers."""
     snapshot = row.get("audit_state_snapshot")
     if not isinstance(snapshot, dict):
         return False
     recorded = snapshot.get("packet_policy_fingerprint")
-    return isinstance(recorded, dict) and recorded == packet_policy
+    if not isinstance(recorded, dict) or recorded != packet_policy:
+        return False
+
+    # Packet-policy equality prevents the immediate same-status retry only
+    # while the terminal verdict's complete blocker fingerprint is unchanged.
+    # In particular, a cache that became fresh after the audit is new evidence
+    # even though the transport policy itself did not move.  Reuse the audit
+    # queue's canonical comparator instead of mirroring its provenance rules.
+    parked, _reason = compute_audit_queue._live_conditional_would_park(
+        row, rows
+    )
+    return parked
+
 
 CRITICALITY_RANK = {"critical": 3, "high": 2, "medium": 1, "leaf": 0}
 RATIFIED_DEP_STATUSES = {"retained", "retained_no_go", "retained_bounded"}
@@ -266,8 +283,8 @@ def build_payload(rows: dict[str, dict]) -> dict:
                     runner_drift_candidates.append(entry)
 
             transport_freed, stdout_chars = stdout_transport_reaudit_candidate(row)
-            if transport_freed and not audited_under_packet_policy(
-                row, packet_policy
+            if transport_freed and not audited_under_unchanged_packet_policy(
+                row, rows, packet_policy
             ):
                 entry = candidate_entry(cid, row, rows, [])
                 entry["candidate_reason"] = (

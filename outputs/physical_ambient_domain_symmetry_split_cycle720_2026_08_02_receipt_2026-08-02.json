@@ -1,0 +1,665 @@
+{
+  "box_sizes": [
+    3,
+    4,
+    5
+  ],
+  "classes_expected": 4,
+  "corner_cuts": [
+    2,
+    3,
+    4
+  ],
+  "fail": 0,
+  "gates": {
+    "A1.distinct": {
+      "detail": "distinct 12 proper 6 improper 6",
+      "ok": true
+    },
+    "A2.proper_half_is_sextet": {
+      "detail": "proper half of the order-12 set equals the cycle-719 sextet",
+      "ok": true
+    },
+    "A3.sign_character_graph": {
+      "detail": "for each axis permutation exactly one of P, -P is proper, selected by det(P)",
+      "ok": true
+    },
+    "A4.closed_and_central": {
+      "detail": "closed under composition True centre-reflection commutator 0",
+      "ok": true
+    },
+    "B1.ambient.L3": {
+      "detail": "sextet 1.243450e-10 centre reflection 1.243450e-10",
+      "ok": true
+    },
+    "B1.ambient.L4": {
+      "detail": "sextet 1.243450e-10 centre reflection 1.243450e-10",
+      "ok": true
+    },
+    "B1.ambient.L5": {
+      "detail": "sextet 1.243450e-10 centre reflection 1.243450e-10",
+      "ok": true
+    },
+    "B2.ambient_rejector.L3": {
+      "detail": "smallest non-sextet frame deviation 4.000000e+00",
+      "ok": true
+    },
+    "B2.ambient_rejector.L4": {
+      "detail": "smallest non-sextet frame deviation 4.000000e+00",
+      "ok": true
+    },
+    "B2.ambient_rejector.L5": {
+      "detail": "smallest non-sextet frame deviation 4.000000e+00",
+      "ok": true
+    },
+    "C.half_improper.L3.corner_K2": {
+      "detail": "domain symmetry 6 proper 3 improper 3",
+      "ok": true
+    },
+    "C.half_improper.L3.corner_K3": {
+      "detail": "domain symmetry 6 proper 3 improper 3",
+      "ok": true
+    },
+    "C.half_improper.L3.corner_K4": {
+      "detail": "domain symmetry 6 proper 3 improper 3",
+      "ok": true
+    },
+    "C.half_improper.L3.full_box": {
+      "detail": "domain symmetry 12 proper 6 improper 6",
+      "ok": true
+    },
+    "C.half_improper.L3.slab_xle1": {
+      "detail": "domain symmetry 2 proper 1 improper 1",
+      "ok": true
+    },
+    "C.half_improper.L4.corner_K2": {
+      "detail": "domain symmetry 6 proper 3 improper 3",
+      "ok": true
+    },
+    "C.half_improper.L4.corner_K3": {
+      "detail": "domain symmetry 6 proper 3 improper 3",
+      "ok": true
+    },
+    "C.half_improper.L4.corner_K4": {
+      "detail": "domain symmetry 6 proper 3 improper 3",
+      "ok": true
+    },
+    "C.half_improper.L4.full_box": {
+      "detail": "domain symmetry 12 proper 6 improper 6",
+      "ok": true
+    },
+    "C.half_improper.L4.slab_xle1": {
+      "detail": "domain symmetry 2 proper 1 improper 1",
+      "ok": true
+    },
+    "C.half_improper.L5.corner_K2": {
+      "detail": "domain symmetry 6 proper 3 improper 3",
+      "ok": true
+    },
+    "C.half_improper.L5.corner_K3": {
+      "detail": "domain symmetry 6 proper 3 improper 3",
+      "ok": true
+    },
+    "C.half_improper.L5.corner_K4": {
+      "detail": "domain symmetry 6 proper 3 improper 3",
+      "ok": true
+    },
+    "C.half_improper.L5.full_box": {
+      "detail": "domain symmetry 12 proper 6 improper 6",
+      "ok": true
+    },
+    "C.half_improper.L5.slab_xle1": {
+      "detail": "domain symmetry 2 proper 1 improper 1",
+      "ok": true
+    },
+    "D.levels_are_orbits.L3.corner_K2": {
+      "detail": "levels 4 orbits 4 within-orbit 2.081668e-17 smallest gap 1.951044e-04",
+      "ok": true
+    },
+    "D.levels_are_orbits.L3.corner_K3": {
+      "detail": "levels 10 orbits 10 within-orbit 6.661338e-16 smallest gap 1.576889e-05",
+      "ok": true
+    },
+    "D.levels_are_orbits.L3.corner_K4": {
+      "detail": "levels 17 orbits 17 within-orbit 4.718448e-16 smallest gap 1.077019e-05",
+      "ok": true
+    },
+    "D.levels_are_orbits.L3.full_box": {
+      "detail": "levels 13 orbits 13 within-orbit 2.391640e-11 smallest gap 4.286579e-05",
+      "ok": true
+    },
+    "D.levels_are_orbits.L3.slab_xle1": {
+      "detail": "levels 33 orbits 33 within-orbit 2.775558e-16 smallest gap 2.874069e-06",
+      "ok": true
+    },
+    "D.levels_are_orbits.L4.corner_K2": {
+      "detail": "levels 4 orbits 4 within-orbit 2.081668e-17 smallest gap 1.951044e-04",
+      "ok": true
+    },
+    "D.levels_are_orbits.L4.corner_K3": {
+      "detail": "levels 11 orbits 11 within-orbit 3.885781e-16 smallest gap 4.613333e-05",
+      "ok": true
+    },
+    "D.levels_are_orbits.L4.corner_K4": {
+      "detail": "levels 21 orbits 21 within-orbit 6.217249e-15 smallest gap 8.983150e-06",
+      "ok": true
+    },
+    "D.levels_are_orbits.L4.full_box": {
+      "detail": "levels 34 orbits 34 within-orbit 7.638064e-10 smallest gap 1.264701e-04",
+      "ok": true
+    },
+    "D.levels_are_orbits.L4.slab_xle1": {
+      "detail": "levels 64 orbits 64 within-orbit 4.024558e-16 smallest gap 1.705615e-06",
+      "ok": true
+    },
+    "D.levels_are_orbits.L5.corner_K2": {
+      "detail": "levels 4 orbits 4 within-orbit 2.081668e-17 smallest gap 1.951044e-04",
+      "ok": true
+    },
+    "D.levels_are_orbits.L5.corner_K3": {
+      "detail": "levels 11 orbits 11 within-orbit 3.885781e-16 smallest gap 4.613333e-05",
+      "ok": true
+    },
+    "D.levels_are_orbits.L5.corner_K4": {
+      "detail": "levels 22 orbits 22 within-orbit 2.664535e-15 smallest gap 3.428924e-05",
+      "ok": true
+    },
+    "D.levels_are_orbits.L5.full_box": {
+      "detail": "levels 66 orbits 66 within-orbit 4.591440e-09 smallest gap 1.750560e-05",
+      "ok": true
+    },
+    "D.levels_are_orbits.L5.slab_xle1": {
+      "detail": "levels 105 orbits 105 within-orbit 2.220446e-15 smallest gap 3.660977e-06",
+      "ok": true
+    },
+    "D0.separation_margin": {
+      "detail": "largest within-orbit spread 4.591440e-09 smallest level gap 1.705615e-06 smallest ratio 3.812660e+03",
+      "ok": true
+    },
+    "E.ambient_label.L3.corner_K2": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L3.corner_K3": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L3.corner_K4": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L3.full_box": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L3.slab_xle1": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L4.corner_K2": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L4.corner_K3": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L4.corner_K4": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L4.full_box": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L4.slab_xle1": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L5.corner_K2": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L5.corner_K3": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L5.corner_K4": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L5.full_box": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "E.ambient_label.L5.slab_xle1": {
+      "detail": "classes 4 within 1.243450e-10 cross 4.000000e+00",
+      "ok": true
+    },
+    "F.merge_iff_central.L3.corner_K2": {
+      "detail": "axis-permutation orbits 4 domain orbits 4 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L3.corner_K3": {
+      "detail": "axis-permutation orbits 10 domain orbits 10 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L3.corner_K4": {
+      "detail": "axis-permutation orbits 17 domain orbits 17 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L3.full_box": {
+      "detail": "axis-permutation orbits 25 domain orbits 13 deficit 12 centre reflection in domain symmetry True",
+      "ok": true
+    },
+    "F.merge_iff_central.L3.slab_xle1": {
+      "detail": "axis-permutation orbits 33 domain orbits 33 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L4.corner_K2": {
+      "detail": "axis-permutation orbits 4 domain orbits 4 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L4.corner_K3": {
+      "detail": "axis-permutation orbits 11 domain orbits 11 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L4.corner_K4": {
+      "detail": "axis-permutation orbits 21 domain orbits 21 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L4.full_box": {
+      "detail": "axis-permutation orbits 64 domain orbits 34 deficit 30 centre reflection in domain symmetry True",
+      "ok": true
+    },
+    "F.merge_iff_central.L4.slab_xle1": {
+      "detail": "axis-permutation orbits 64 domain orbits 64 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L5.corner_K2": {
+      "detail": "axis-permutation orbits 4 domain orbits 4 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L5.corner_K3": {
+      "detail": "axis-permutation orbits 11 domain orbits 11 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L5.corner_K4": {
+      "detail": "axis-permutation orbits 22 domain orbits 22 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "F.merge_iff_central.L5.full_box": {
+      "detail": "axis-permutation orbits 130 domain orbits 66 deficit 64 centre reflection in domain symmetry True",
+      "ok": true
+    },
+    "F.merge_iff_central.L5.slab_xle1": {
+      "detail": "axis-permutation orbits 105 domain orbits 105 deficit 0 centre reflection in domain symmetry False",
+      "ok": true
+    },
+    "G.blindness.L3.corner_K2": {
+      "detail": "blind slots ambient 0 restricted 0",
+      "ok": true
+    },
+    "G.blindness.L3.corner_K3": {
+      "detail": "blind slots ambient 3 restricted 0",
+      "ok": true
+    },
+    "G.blindness.L3.corner_K4": {
+      "detail": "blind slots ambient 6 restricted 0",
+      "ok": true
+    },
+    "G.blindness.L3.full_box": {
+      "detail": "blind slots ambient 6 restricted 6",
+      "ok": true
+    },
+    "G.blindness.L3.slab_xle1": {
+      "detail": "blind slots ambient 5 restricted 1",
+      "ok": true
+    },
+    "G.blindness.L4.corner_K2": {
+      "detail": "blind slots ambient 0 restricted 0",
+      "ok": true
+    },
+    "G.blindness.L4.corner_K3": {
+      "detail": "blind slots ambient 0 restricted 0",
+      "ok": true
+    },
+    "G.blindness.L4.corner_K4": {
+      "detail": "blind slots ambient 3 restricted 0",
+      "ok": true
+    },
+    "G.blindness.L4.full_box": {
+      "detail": "blind slots ambient 19 restricted 19",
+      "ok": true
+    },
+    "G.blindness.L4.slab_xle1": {
+      "detail": "blind slots ambient 3 restricted 3",
+      "ok": true
+    },
+    "G.blindness.L5.corner_K2": {
+      "detail": "blind slots ambient 0 restricted 0",
+      "ok": true
+    },
+    "G.blindness.L5.corner_K3": {
+      "detail": "blind slots ambient 0 restricted 0",
+      "ok": true
+    },
+    "G.blindness.L5.corner_K4": {
+      "detail": "blind slots ambient 0 restricted 0",
+      "ok": true
+    },
+    "G.blindness.L5.full_box": {
+      "detail": "blind slots ambient 12 restricted 12",
+      "ok": true
+    },
+    "G.blindness.L5.slab_xle1": {
+      "detail": "blind slots ambient 1 restricted 1",
+      "ok": true
+    },
+    "R1a.site_map.L3": {
+      "detail": "site images vs compiler frame_site_map mismatches 0",
+      "ok": true
+    },
+    "R1a.site_map.L4": {
+      "detail": "site images vs compiler frame_site_map mismatches 0",
+      "ok": true
+    },
+    "R1a.site_map.L5": {
+      "detail": "site images vs compiler frame_site_map mismatches 0",
+      "ok": true
+    },
+    "R1b.bijective.L3": {
+      "detail": "slot bijections 25 of 25",
+      "ok": true
+    },
+    "R1b.bijective.L4": {
+      "detail": "slot bijections 25 of 25",
+      "ok": true
+    },
+    "R1b.bijective.L5": {
+      "detail": "slot bijections 25 of 25",
+      "ok": true
+    },
+    "R1c.homomorphism.L3": {
+      "detail": "composition mismatch over all 576 frame pairs 0",
+      "ok": true
+    },
+    "R1c.homomorphism.L4": {
+      "detail": "composition mismatch over all 576 frame pairs 0",
+      "ok": true
+    },
+    "R1c.homomorphism.L5": {
+      "detail": "composition mismatch over all 576 frame pairs 0",
+      "ok": true
+    },
+    "R3.anti_composition_rejected": {
+      "detail": "frame pairs on which the reversed composition differs 456 of 576",
+      "ok": true
+    },
+    "R4.bumped_diagonal_rejected": {
+      "detail": "symmetry survivors 2 of 6 largest deviation 1.000000e+00",
+      "ok": true
+    },
+    "R5.left_grouping_rejected": {
+      "detail": "other-side grouping deviation 4.000000e+00",
+      "ok": true
+    }
+  },
+  "identity_frame": 23,
+  "notes": {
+    "L3.corner_K2": {
+      "blind_ambient": 0,
+      "blind_restricted": 0,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "1.951044e-04",
+      "improper": 3,
+      "levels": 4,
+      "orbits": 4,
+      "proper": 3,
+      "size": 15,
+      "within": "1.243450e-10"
+    },
+    "L3.corner_K3": {
+      "blind_ambient": 3,
+      "blind_restricted": 0,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "1.576889e-05",
+      "improper": 3,
+      "levels": 10,
+      "orbits": 10,
+      "proper": 3,
+      "size": 40,
+      "within": "1.243450e-10"
+    },
+    "L3.corner_K4": {
+      "blind_ambient": 6,
+      "blind_restricted": 0,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "1.077019e-05",
+      "improper": 3,
+      "levels": 17,
+      "orbits": 17,
+      "proper": 3,
+      "size": 70,
+      "within": "1.243450e-10"
+    },
+    "L3.full_box": {
+      "blind_ambient": 6,
+      "blind_restricted": 6,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 12,
+      "gap": "4.286579e-05",
+      "improper": 6,
+      "levels": 13,
+      "orbits": 13,
+      "proper": 6,
+      "size": 98,
+      "within": "1.243450e-10"
+    },
+    "L3.slab_xle1": {
+      "blind_ambient": 5,
+      "blind_restricted": 1,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "2.874069e-06",
+      "improper": 1,
+      "levels": 33,
+      "orbits": 33,
+      "proper": 1,
+      "size": 57,
+      "within": "1.243450e-10"
+    },
+    "L4.corner_K2": {
+      "blind_ambient": 0,
+      "blind_restricted": 0,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "1.951044e-04",
+      "improper": 3,
+      "levels": 4,
+      "orbits": 4,
+      "proper": 3,
+      "size": 15,
+      "within": "1.243450e-10"
+    },
+    "L4.corner_K3": {
+      "blind_ambient": 0,
+      "blind_restricted": 0,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "4.613333e-05",
+      "improper": 3,
+      "levels": 11,
+      "orbits": 11,
+      "proper": 3,
+      "size": 43,
+      "within": "1.243450e-10"
+    },
+    "L4.corner_K4": {
+      "blind_ambient": 3,
+      "blind_restricted": 0,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "8.983150e-06",
+      "improper": 3,
+      "levels": 21,
+      "orbits": 21,
+      "proper": 3,
+      "size": 91,
+      "within": "1.243450e-10"
+    },
+    "L4.full_box": {
+      "blind_ambient": 19,
+      "blind_restricted": 19,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 30,
+      "gap": "1.264701e-04",
+      "improper": 6,
+      "levels": 34,
+      "orbits": 34,
+      "proper": 6,
+      "size": 279,
+      "within": "1.243450e-10"
+    },
+    "L4.slab_xle1": {
+      "blind_ambient": 3,
+      "blind_restricted": 3,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "1.705615e-06",
+      "improper": 1,
+      "levels": 64,
+      "orbits": 64,
+      "proper": 1,
+      "size": 115,
+      "within": "1.243450e-10"
+    },
+    "L5.corner_K2": {
+      "blind_ambient": 0,
+      "blind_restricted": 0,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "1.951044e-04",
+      "improper": 3,
+      "levels": 4,
+      "orbits": 4,
+      "proper": 3,
+      "size": 15,
+      "within": "1.243450e-10"
+    },
+    "L5.corner_K3": {
+      "blind_ambient": 0,
+      "blind_restricted": 0,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "4.613333e-05",
+      "improper": 3,
+      "levels": 11,
+      "orbits": 11,
+      "proper": 3,
+      "size": 43,
+      "within": "1.243450e-10"
+    },
+    "L5.corner_K4": {
+      "blind_ambient": 0,
+      "blind_restricted": 0,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "3.428924e-05",
+      "improper": 3,
+      "levels": 22,
+      "orbits": 22,
+      "proper": 3,
+      "size": 94,
+      "within": "1.243450e-10"
+    },
+    "L5.full_box": {
+      "blind_ambient": 12,
+      "blind_restricted": 12,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 64,
+      "gap": "1.750560e-05",
+      "improper": 6,
+      "levels": 66,
+      "orbits": 66,
+      "proper": 6,
+      "size": 604,
+      "within": "1.243450e-10"
+    },
+    "L5.slab_xle1": {
+      "blind_ambient": 1,
+      "blind_restricted": 1,
+      "classes": 4,
+      "cross": "4.000000e+00",
+      "deficit": 0,
+      "gap": "3.660977e-06",
+      "improper": 1,
+      "levels": 105,
+      "orbits": 105,
+      "proper": 1,
+      "size": 193,
+      "within": "1.243450e-10"
+    },
+    "ambient_L3": {
+      "centre_reflection": "1.243450e-10",
+      "entry_max": "2.945214e+01",
+      "non_sextet": "4.000000e+00",
+      "sextet": "1.243450e-10"
+    },
+    "ambient_L4": {
+      "centre_reflection": "1.243450e-10",
+      "entry_max": "2.945214e+01",
+      "non_sextet": "4.000000e+00",
+      "sextet": "1.243450e-10"
+    },
+    "ambient_L5": {
+      "centre_reflection": "1.243450e-10",
+      "entry_max": "2.945214e+01",
+      "non_sextet": "4.000000e+00",
+      "sextet": "1.243450e-10"
+    },
+    "order12": {
+      "distinct": 12,
+      "improper": 6,
+      "proper": 6
+    },
+    "rejectors": {
+      "bumped_survivors": 2,
+      "left_grouping": "4.000000e+00",
+      "reversed_composition": 456
+    },
+    "separation": {
+      "largest_within_orbit": "4.591440e-09",
+      "smallest_gap": "1.705615e-06",
+      "smallest_ratio": "3.812660e+03"
+    }
+  },
+  "pass": 98,
+  "runner": "physical_ambient_domain_symmetry_split_cycle720_2026_08_02.py",
+  "sextet": [
+    1,
+    4,
+    9,
+    15,
+    18,
+    23
+  ],
+  "slab_cut": 1
+}

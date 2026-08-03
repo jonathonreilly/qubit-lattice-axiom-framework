@@ -16,16 +16,28 @@ B. REGISTER_REPRODUCES_ANNOTATION: the register's first-write structure
    equals the annotation-machinery's event structure at the same
    horizon (the phantom-stamp seam closed).
 C. FORMATION_LOCALITY (the honest saturation reformulation): at
-   formation edges, far (other-bank) payload perturbations leave the
-   write and its content invariant; near (recording-bank) perturbations
-   do not — formation locks what the local neighborhood forces.
+   formation edges, probe DECLARED perturbation classes (one_flip,
+   late_acting, untouched_in_chunk, flip_and_restore) on payload wires
+   with TRUE bank membership (kernel pack-state marking), near
+   (recording-bank) versus far (other-bank); firing and content
+   invariance are reported as data whichever way they fall.
 D. CONTROLS.
 
 Declared scope: B=2, the 852 census, horizon 16,384 orbits;
 dead-wire derivation window 512 orbits at chunk granularity then
-orbit granularity to 4,096; locality sample 32 early-formation keys.
+orbit granularity to 4,096; locality sample 32 early-formation keys,
+up to 4 payload wires per side, register cap 64 wire-visible ordinals
+per (tag, lane) — all caps disclosed in the emitted certificates.
 bounded_theorem, authority none, audit unset. Independent audit still
 required.
+
+v3 (2026-08-03): the finale checker refuted the v2 probe's
+implementation — uniform chunk slicing was off-trajectory (true
+per-step gate counts are non-uniform) and the index-half bank split
+left the far arm empty — and found REGISTER_CAP undisclosed. v3
+reconstructs trajectories from true per-step chunks, derives bank
+membership by kernel pack-state marking, runs the four declared
+perturbation classes on both sides, and discloses every cap.
 """
 from __future__ import annotations
 
@@ -64,6 +76,10 @@ DEAD_ORBIT_ORBITS = 4_096
 LOCALITY_SAMPLE = 32
 LOCALITY_BOUNDARY_CAP = 1_100
 REGISTER_CAP = 64
+PAYLOAD_WIRES_PER_SIDE = 4
+PERTURBATION_CLASSES = (
+    "one_flip", "late_acting", "untouched_in_chunk", "flip_and_restore"
+)
 
 
 def compact(v):
@@ -92,6 +108,44 @@ def source_controls():
         "pass": literal == AUDIT_INPUT_PATHS
         and sha_rows == EXPECTED_SHA256 and blob_rows == EXPECTED_GIT_BLOBS,
     }
+
+
+def true_step_chunks(program, positions):
+    """Per-step gate lists on the true trajectory (variable length,
+    station order) — replaces the v2 uniform slicing the checker refuted."""
+    stations_local = len(program)
+    macros = [K.mapped_macro(row) for row in program]
+    chunks = []
+    for step in range(stations_local):
+        gates = []
+        for station in range(stations_local):
+            if (station - step) % stations_local in positions:
+                gates.extend(macros[station])
+        chunks.append(tuple(gates))
+    return tuple(chunks)
+
+
+def bank_wire_rows(bank_count):
+    """TRUE bank membership of packed state rows via single-bit
+    pack-state marking — replaces the v2 index-half split the checker
+    refuted (it left the far arm empty)."""
+    banks, links = K.B.chain_genesis(bank_count)
+    zb = tuple(tuple(0 for _ in b) for b in banks)
+    zl = tuple(tuple(0 for _ in link) for link in links)
+    base = K.M.pack_state(zb, zl)
+    rows = []
+    for bi in range(bank_count):
+        marked_rows = set()
+        for wire in range(len(zb[bi])):
+            changed = [list(b) for b in zb]
+            changed[bi][wire] = 1
+            marked = K.M.pack_state(tuple(tuple(b) for b in changed), zl)
+            diff = [i for i, (l, r) in enumerate(zip(base, marked)) if l != r]
+            if len(diff) != 1:
+                raise AssertionError(("bank marking not injective", bi, wire))
+            marked_rows.add(diff[0])
+        rows.append(frozenset(marked_rows))
+    return tuple(rows)
 
 
 def main() -> int:
@@ -173,14 +227,16 @@ def main() -> int:
     bank_write_ordinal = [[0, 0] for _ in range(n)]
     write_once_violations = 0
     dead_activation_conflicts = 0
+    wire_visible_writes = 0
 
     def wire_write(tag, lane):
-        nonlocal write_once_violations
+        nonlocal write_once_violations, wire_visible_writes
         wire = slot_of[tag]
         bit = 1 << lane
         if columns[wire] & bit:
             write_once_violations += 1
         columns[wire] |= bit
+        wire_visible_writes += 1
     prev_bank = [
         C863.mask_over(columns, bank_dirty[b], uni_all) for b in (0, 1)
     ]
@@ -257,6 +313,16 @@ def main() -> int:
         "dead_activation_conflicts_through_horizon":
             dead_activation_conflicts,
         "write_once_violations_on_wires": write_once_violations,
+        "write_once_semantics": (
+            "zero violations certifies the fresh-slot allocation"
+            " discipline (strictly increasing per-(tag,lane) ordinal)"
+            " plus non-interference; content immutability under slot"
+            " reuse is out of scope by construction"
+        ),
+        "register_cap_per_tag_lane": REGISTER_CAP,
+        "wire_visible_write_events": wire_visible_writes,
+        "write_events_beyond_cap_not_wire_visible":
+            sum(register_counts) - wire_visible_writes,
         "total_register_write_events": sum(register_counts),
         "wire_bits_set_total": sum(slot_population.values()),
         "slot_population_sample": dict(list(slot_population.items())[:6]),
@@ -317,19 +383,36 @@ def main() -> int:
         and wire_existence_count >= len(e1_first_composed)
     )
 
-    # --- Certificate C: formation locality probe ---------------------------
+    # --- Certificate C: formation locality probe (v3, corrected) ----------
     seeds = dict(C863.derive_event_seeds(program))
     payload_pool = [
         w for w in range(len(columns))
         if w not in dead_set and w not in set(global_dirty)
     ]
+    bank_rows_true = bank_wire_rows(2)
     bank_payload = {
-        0: [w for w in payload_pool if w < len(columns) // 2][:4],
-        1: [w for w in payload_pool if w >= len(columns) // 2][:4],
+        b: [w for w in payload_pool if w in bank_rows_true[b]]
+        [:PAYLOAD_WIRES_PER_SIDE]
+        for b in (0, 1)
     }
-    word_cache: dict = {}
-    rows = {"far_fired": 0, "far_content_equal": 0,
-            "near_fired": 0, "near_content_equal": 0, "sampled": 0}
+    if not bank_payload[0] or not bank_payload[1]:
+        raise AssertionError(("empty bank payload pool",
+                              len(bank_payload[0]), len(bank_payload[1])))
+    chunk_cache: dict = {}
+
+    def step_chunks_for(positions):
+        if positions not in chunk_cache:
+            chunk_cache[positions] = true_step_chunks(program, positions)
+        return chunk_cache[positions]
+
+    tally = {
+        cls: {side: {"probes": 0, "fired": 0, "content_equal": 0}
+              for side in ("near", "far")}
+        for cls in PERTURBATION_CLASSES
+    }
+    sampled = 0
+    base_not_clean = 0
+    degenerate_restore_skips = 0
     candidates = sorted(
         (rep["stores"]["global"][lane][0], lane)
         for lane, key in enumerate(census)
@@ -338,74 +421,131 @@ def main() -> int:
     )[:LOCALITY_SAMPLE]
     for first, lane in candidates:
         key = census[lane]
-        positions = key[2]
-        if positions not in word_cache:
-            word_cache[positions] = C863.synchronous_word(
-                program, positions
-            )
-        word = word_cache[positions]
-        per_chunk = len(word) // stations
+        chunks_t = step_chunks_for(key[2])
         state, _ra, _rb, _t = K.run_orbit(
-            seeds[key[1]], program, token_positions=positions
+            seeds[key[1]], program, token_positions=key[2]
         )
         for b in range(first - 1):
-            chunk = word[(b % stations) * per_chunk:
-                         ((b % stations) + 1) * per_chunk]
-            state = K.A.apply_semantic(state, chunk)
+            state = K.A.apply_semantic(state, chunks_t[b % stations])
         pre = state
-        last_chunk = word[((first - 1) % stations) * per_chunk:
-                          (((first - 1) % stations) + 1) * per_chunk]
+        last_chunk = chunks_t[(first - 1) % stations]
         base_after = K.A.apply_semantic(pre, last_chunk)
-        base_clean = all(base_after[w] == 0 for w in global_dirty)
-        if not base_clean:
+        if not all(base_after[w] == 0 for w in global_dirty):
+            base_not_clean += 1
             continue
-        base_content = sha256(bytes(base_after)).hexdigest()[:16]
+        sampled += 1
+        base_content = sha256(bytes(base_after)).hexdigest()
         rec_bank = 0 if all(
             base_after[w] == 0 for w in bank_dirty[0]
         ) else 1
-        far_bank = 1 - rec_bank
-        for kind, wire_list in (("far", bank_payload[far_bank]),
-                                ("near", bank_payload[rec_bank])):
-            for wire in wire_list[:1]:
-                mut = list(pre)
-                mut[wire] ^= 1
-                after = K.A.apply_semantic(tuple(mut), last_chunk)
-                fired = all(after[w] == 0 for w in global_dirty)
-                rows[f"{kind}_fired"] += int(fired)
-                if fired:
-                    rows[f"{kind}_content_equal"] += int(
-                        sha256(bytes(after)).hexdigest()[:16]
-                        == base_content
+        first_touch: dict = {}
+        for idx, gate in enumerate(last_chunk):
+            for w in gate.wires:
+                first_touch.setdefault(w, idx)
+        for side, bank in (("near", rec_bank), ("far", 1 - rec_bank)):
+            pool = bank_payload[bank]
+            picks = {"one_flip": pool[0], "flip_and_restore": pool[0]}
+            touched = [w for w in pool if w in first_touch]
+            picks["late_acting"] = (
+                max(touched, key=lambda w: first_touch[w])
+                if touched else None
+            )
+            untouched = [w for w in pool if w not in first_touch]
+            picks["untouched_in_chunk"] = (
+                untouched[0] if untouched else None
+            )
+            for cls, wire in picks.items():
+                if wire is None:
+                    continue
+                if cls == "flip_and_restore":
+                    if first - 1 == 0:
+                        degenerate_restore_skips += 1
+                        continue
+                    walk_state, _a, _b2, _t2 = K.run_orbit(
+                        seeds[key[1]], program, token_positions=key[2]
                     )
-        rows["sampled"] += 1
+                    flipped = list(walk_state)
+                    flipped[wire] ^= 1
+                    walk_state = tuple(flipped)
+                    for b in range(first - 1):
+                        walk_state = K.A.apply_semantic(
+                            walk_state, chunks_t[b % stations]
+                        )
+                    restored = list(walk_state)
+                    restored[wire] ^= 1
+                    after = K.A.apply_semantic(tuple(restored), last_chunk)
+                else:
+                    mut = list(pre)
+                    mut[wire] ^= 1
+                    after = K.A.apply_semantic(tuple(mut), last_chunk)
+                fired = all(after[w] == 0 for w in global_dirty)
+                cell = tally[cls][side]
+                cell["probes"] += 1
+                cell["fired"] += int(fired)
+                if fired:
+                    cell["content_equal"] += int(
+                        sha256(bytes(after)).hexdigest() == base_content
+                    )
+
+    def rate(cls, side, field):
+        cell = tally[cls][side]
+        return (cell[field] / cell["probes"]) if cell["probes"] else None
+
+    restore_contrast = (
+        rate("flip_and_restore", "near", "content_equal") is not None
+        and rate("flip_and_restore", "far", "content_equal") is not None
+        and rate("flip_and_restore", "near", "content_equal")
+        != rate("flip_and_restore", "far", "content_equal")
+    )
     cert_c = {
         "certificate": "C_FORMATION_LOCALITY",
-        "declared_sample": {"lanes": rows["sampled"],
-                            "boundary_cap": LOCALITY_BOUNDARY_CAP},
-        "far_perturbation": {
-            "still_fired": rows["far_fired"],
-            "content_equal": rows["far_content_equal"],
+        "declared_sample": {
+            "lanes": sampled,
+            "boundary_cap": LOCALITY_BOUNDARY_CAP,
+            "lane_cap": LOCALITY_SAMPLE,
+            "wires_per_side": PAYLOAD_WIRES_PER_SIDE,
+            "classes": PERTURBATION_CLASSES,
+            "base_not_clean_skips": base_not_clean,
+            "degenerate_restore_skips": degenerate_restore_skips,
         },
-        "near_perturbation": {
-            "still_fired": rows["near_fired"],
-            "content_equal": rows["near_content_equal"],
+        "payload_derivation": {
+            "pool_size": len(payload_pool),
+            "bank_pool_sizes": [len(bank_payload[0]), len(bank_payload[1])],
+            "membership": "kernel pack-state single-bit marking",
+        },
+        "per_class": tally,
+        "computed_reading": {
+            "one_flip_fires_near": rate("one_flip", "near", "fired"),
+            "one_flip_fires_far": rate("one_flip", "far", "fired"),
+            "direct_flip_content_equal_near":
+                rate("one_flip", "near", "content_equal"),
+            "direct_flip_content_equal_far":
+                rate("one_flip", "far", "content_equal"),
+            "restore_content_equal_near":
+                rate("flip_and_restore", "near", "content_equal"),
+            "restore_content_equal_far":
+                rate("flip_and_restore", "far", "content_equal"),
+            "restore_class_near_far_contrast": restore_contrast,
         },
         "finding": (
-            "formation locality holds iff far perturbations preserve"
-            " firing and content while near perturbations disrupt them;"
-            " the counts above are the exact verdict at the declared"
-            " sample and one-flip perturbation class"
+            "per-class firing and content-invariance counts are the"
+            " exact verdict at the declared sample, classes, and pools;"
+            " the near/far contrast question is answered by the"
+            " computed_reading rates, whichever way they fall"
         ),
     }
-    # Integrity gate only — the locality/hypersensitivity outcome is
-    # reported as data whichever way it falls.
-    max_probes = rows["sampled"]
+    # Integrity gate only — bookkeeping consistency, never the outcome.
+    cells_ok = all(
+        0 <= cell["content_equal"] <= cell["fired"] <= cell["probes"]
+        <= sampled
+        for cls in PERTURBATION_CLASSES for cell in (tally[cls]["near"],
+                                                     tally[cls]["far"])
+    )
     cert_c["pass"] = (
-        rows["sampled"] > 0
-        and 0 <= rows["far_content_equal"] <= rows["far_fired"]
-        <= max_probes
-        and 0 <= rows["near_content_equal"] <= rows["near_fired"]
-        <= max_probes
+        sampled > 0
+        and cells_ok
+        and sampled + base_not_clean == len(candidates)
+        and len(bank_payload[0]) > 0 and len(bank_payload[1]) > 0
     )
 
     runtime = round(monotonic() - started, 3)

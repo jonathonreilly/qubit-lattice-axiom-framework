@@ -1,0 +1,124 @@
+{
+  "C219_dispersion_mass": 0.4534056690336209,
+  "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+  "expected_base_is_ancestor_of_head": true,
+  "failures": [],
+  "fixtures": [
+    {
+      "Cycle870_full_epoch_formal_correction_angle": 168.20687791288861,
+      "F17_bank_M2": 240,
+      "checks": {
+        "bank": true,
+        "constraint_preservation": true,
+        "cycle_rank": true,
+        "depth": true,
+        "factor_order": true,
+        "links_equal_seams": true,
+        "logical": true,
+        "plaquette_span": true,
+        "plaquettes": true,
+        "raw_stage_phase": true,
+        "routed": true,
+        "routes": true,
+        "unique_uniform_plus_sector": true,
+        "vertices": true
+      },
+      "complete_epoch_depth": 204288,
+      "complete_epoch_logical": 24656,
+      "complete_epoch_routed": 204288,
+      "cycle_rank": 5,
+      "fixed_divergence_dimension": 1419857,
+      "links_and_seams": 12,
+      "plaquettes": 6,
+      "raw_seam_stage_phase": [
+        1.0,
+        0.0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "uniform_plus_sector_dimension": 1,
+      "vertices": 8
+    },
+    {
+      "Cycle870_full_epoch_formal_correction_angle": 588.9039633677298,
+      "F17_bank_M2": 1080,
+      "checks": {
+        "bank": true,
+        "constraint_preservation": true,
+        "cycle_rank": true,
+        "depth": true,
+        "factor_order": true,
+        "links_equal_seams": true,
+        "logical": true,
+        "plaquette_span": true,
+        "plaquettes": true,
+        "raw_stage_phase": true,
+        "routed": true,
+        "routes": true,
+        "unique_uniform_plus_sector": true,
+        "vertices": true
+      },
+      "complete_epoch_depth": 688998,
+      "complete_epoch_logical": 95274,
+      "complete_epoch_routed": 842762,
+      "cycle_rank": 28,
+      "fixed_divergence_dimension": 28351092476867700887730107366063041,
+      "links_and_seams": 54,
+      "plaquettes": 36,
+      "raw_seam_stage_phase": [
+        -1.0,
+        0.0
+      ],
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "uniform_plus_sector_dimension": 1,
+      "vertices": 27
+    },
+    {
+      "Cycle870_full_epoch_formal_correction_angle": 255.4519095229226,
+      "F17_bank_M2": 400,
+      "checks": {
+        "bank": true,
+        "constraint_preservation": true,
+        "cycle_rank": true,
+        "depth": true,
+        "factor_order": true,
+        "links_equal_seams": true,
+        "logical": true,
+        "plaquette_span": true,
+        "plaquettes": true,
+        "raw_stage_phase": true,
+        "routed": true,
+        "routes": true,
+        "unique_uniform_plus_sector": true,
+        "vertices": true
+      },
+      "complete_epoch_depth": 317116,
+      "complete_epoch_logical": 38740,
+      "complete_epoch_routed": 335316,
+      "cycle_rank": 9,
+      "fixed_divergence_dimension": 118587876497,
+      "links_and_seams": 20,
+      "plaquettes": 11,
+      "raw_seam_stage_phase": [
+        1.0,
+        0.0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "uniform_plus_sector_dimension": 1,
+      "vertices": 12
+    }
+  ],
+  "receipt": "outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json",
+  "status": "pass"
+}

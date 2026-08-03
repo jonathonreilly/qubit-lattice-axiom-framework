@@ -1,0 +1,849 @@
+{
+  "active_controls": {
+    "nontrivial_character_residual": 0.36749903563314074,
+    "omitted_independent_generator_residual": 1.4142135623730951,
+    "selected_active_QR_gate_deletion_index": 9,
+    "selected_active_QR_gate_deletion_residual": 2.646588210758058,
+    "wrong_alpha_cases": 24576,
+    "wrong_alpha_values": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "actual_Cycle219_decoded_free_one_particle": {
+    "QR_deletion_scope": "one selected nonidentity-gate deletion is an active control; identity phase entries may be structurally inactive and no every-gate essentiality claim is made",
+    "QR_gate_count": 20,
+    "QR_off_diagonal_residual": 9.058932439513524e-16,
+    "QR_reconstruction_residual": 9.774239351035397e-16,
+    "actual_Cycle870_beta": -0.3,
+    "actual_dense_coin_encoded_onsite_intertwiner_residual": 0.0,
+    "analytic_mass": 0.4534056541748852,
+    "coin_sha256": "fae998511058ee732e31058254e2b9883a97637b07bc6443402b5035112c4b70",
+    "coin_unitarity_residual": 1.2236950713340232e-15,
+    "curvature_tensor_step_1e_minus_4": [
+      [
+        2.2055304360613093,
+        1.1102230246251565e-08,
+        0.0
+      ],
+      [
+        1.1102230246251565e-08,
+        2.205530405530176,
+        2.7755575615628914e-09
+      ],
+      [
+        0.0,
+        2.7755575615628914e-09,
+        2.2055304471635395
+      ]
+    ],
+    "decoded_spectrum_statement": "the exact seam-column affine intertwiner plus onsite number preservation makes the trivial-character code representation conjugate to the supplied free one-particle Cycle219 Bloch word; its decoded eigenphases and local curvature therefore equal the displayed Cycle219 fixture",
+    "dense_nonzero_entries": 36,
+    "dispersion_mass": 0.4534056690336209,
+    "dispersion_relative_residual": 3.277139470903023e-08,
+    "eight_step_same_block_multiplication_consistency_residual": 1.7437498324404974e-15,
+    "inactive_identity_phase_deletion_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "maximum_Bloch_unitarity_residual": 1.3554488540262896e-15,
+    "momentum_samples": [
+      {
+        "momentum": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scalar_branch_phase": 0.1511352180582951,
+        "unitarity_residual": 1.2236950713340232e-15
+      },
+      {
+        "momentum": [
+          0.07,
+          0.0,
+          0.0
+        ],
+        "scalar_branch_phase": 0.15644756021112707,
+        "unitarity_residual": 1.2552051807999852e-15
+      },
+      {
+        "momentum": [
+          -0.07,
+          0.0,
+          0.0
+        ],
+        "scalar_branch_phase": 0.15644756021112713,
+        "unitarity_residual": 1.2502458912151192e-15
+      },
+      {
+        "momentum": [
+          0.0,
+          0.07,
+          0.0
+        ],
+        "scalar_branch_phase": 0.15644756021112718,
+        "unitarity_residual": 1.2857691933617613e-15
+      },
+      {
+        "momentum": [
+          0.0,
+          -0.07,
+          0.0
+        ],
+        "scalar_branch_phase": 0.15644756021112718,
+        "unitarity_residual": 1.2952128554728865e-15
+      },
+      {
+        "momentum": [
+          0.0,
+          0.0,
+          0.07
+        ],
+        "scalar_branch_phase": 0.1564475602111271,
+        "unitarity_residual": 1.2311470523641395e-15
+      },
+      {
+        "momentum": [
+          0.0,
+          0.0,
+          -0.07
+        ],
+        "scalar_branch_phase": 0.15644756021112705,
+        "unitarity_residual": 1.2315833550438673e-15
+      },
+      {
+        "momentum": [
+          0.04,
+          -0.03,
+          0.02
+        ],
+        "scalar_branch_phase": 0.15429998147164403,
+        "unitarity_residual": 1.3554488540262896e-15
+      }
+    ],
+    "rest_mass": 0.4534056541748851,
+    "rest_to_analytic_residual": 1.1102230246251565e-16,
+    "scope_boundary": "this is the supplied translation-invariant free one-particle momentum fixture, not a periodic F17 physical-box construction and not an interacting finite-open-box spectrum",
+    "selected_active_QR_gate_deletion_index": 9,
+    "selected_active_QR_gate_deletion_residual": 2.646588210758058,
+    "single_QR_gate_deletion_residuals": [
+      9.774239351035397e-16,
+      9.774239351035397e-16,
+      9.774239351035397e-16,
+      9.774239351035397e-16,
+      9.774239351035397e-16,
+      0.006811295182973464,
+      1.0971848946738614,
+      2.506606419588802,
+      2.4450389849164345,
+      2.646588210758058,
+      1.7046519977270436,
+      2.324647022615662,
+      2.381929298156762,
+      2.2570249370897972,
+      2.4494894797243156,
+      1.6374330600172748,
+      1.6112157584396136,
+      2.646588210758058,
+      1.3103145642463903,
+      1.0971848946738614
+    ],
+    "trivial_cycle_translation_residual": 0.0,
+    "trivial_cycle_uniform_normalization_residual": 1.1102230246251565e-16
+  },
+  "failures": [],
+  "field": "Z17",
+  "filled_plaquette": {
+    "affine_sector_size": 17,
+    "basis_link_closed_loop_overlap": [
+      0.0,
+      0.0
+    ],
+    "basis_link_closed_loop_residual": 1.4142135623730951,
+    "direct_fswap_columns_checked": 64,
+    "direct_intertwiner_max_residual": 0.0,
+    "edge_order": [
+      {
+        "axis": 0,
+        "head": [
+          1,
+          0,
+          0
+        ],
+        "tail": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 1,
+        "head": [
+          0,
+          1,
+          0
+        ],
+        "tail": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 0,
+        "head": [
+          1,
+          1,
+          0
+        ],
+        "tail": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "axis": 1,
+        "head": [
+          1,
+          1,
+          0
+        ],
+        "tail": [
+          1,
+          0,
+          0
+        ]
+      }
+    ],
+    "edges": 4,
+    "enumerated_affine_points": 17,
+    "face_labels": [
+      {
+        "axes": [
+          0,
+          1
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "face_relation_basis_mod17": [],
+    "face_vectors_mod17": [
+      [
+        1,
+        16,
+        16,
+        1
+      ]
+    ],
+    "faces": 1,
+    "four_factor_sequence_columns_checked": 16,
+    "four_factor_sequence_max_residual": 0.0,
+    "incidence_rank": 3,
+    "independent_face_indices": [
+      0
+    ],
+    "independent_face_vectors_mod17": [
+      [
+        1,
+        16,
+        16,
+        1
+      ]
+    ],
+    "kernel_dimension": 1,
+    "nonuniform_character_closed_loop_overlap": [
+      0.932472229404356,
+      -0.361241666187153
+    ],
+    "nonuniform_character_closed_loop_residual": 0.36749903563314074,
+    "nonuniform_character_exact_residual": "2 sin(pi/17)",
+    "omit_only_plaquette_invariant_dimension": 17,
+    "plaquette_boundary_rank": 1,
+    "supplied_background_variant_columns_checked": 192,
+    "supplied_background_variant_max_residual": 0.0,
+    "uniform_closed_loop_overlap": [
+      1.0,
+      0.0
+    ],
+    "uniform_closed_loop_residual": 0.0,
+    "uniform_invariant_subspace_dimension": 1,
+    "vertices": 4,
+    "wrong_alpha_active_column_residual": 1.4142135623730951,
+    "wrong_alpha_active_columns_per_value": 32,
+    "wrong_alpha_active_overlap": 0,
+    "wrong_alpha_values_mod17": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "wrong_sign_frobenius_one_edge": 4.0,
+    "wrong_sign_max_column_residual": 1.4142135623730951
+  },
+  "fixed_star_background": {
+    "covariance_boundary": "full affine-encoder 24-frame, 576-product, and translation covariance with transported g is not established here; only the separate local-constraint core checks its stated physical support/frame covariance",
+    "diagnostic_conventions": [
+      "ordered_prefix",
+      "first_anchor",
+      "last_anchor"
+    ],
+    "filled_plaquette_variant_cases": 192,
+    "filled_plaquette_variant_intertwiner_max_residual": 0.0,
+    "gauss_word": "q_g(n)=alpha*n+g mod17 with sum(g)=-alpha*N in a fixed-N sector",
+    "ordering_boundary": "ordered_prefix is one diagnostic background convention with a preferred vertex order; the theorem is also checked for first- and last-anchor backgrounds, but no preferred-order-free genesis claim is made",
+    "selection_boundary": "g and its fixed matter-number sector are input structure; this core does not select, prepare, or enforce either",
+    "type": "supplied FixedStarBackground(label, alpha, particle_number, field)"
+  },
+  "name": "Cycle873 uniform affine-Gauss/trivial-loop intertwiner core",
+  "open_box_general": {
+    "affine_sector_size": "17^(2 L^3-3 L^2+1)",
+    "arbitrary_open_cubic_subgraph": "only if plaquette boundaries span ker(incidence), equivalently H1=0",
+    "cycle_dimension": "2 L^3-3 L^2+1",
+    "edges": "3 L^2 (L-1)",
+    "incidence_rank": "L^3-1",
+    "plaquette_relations": "(L-1)^3 cube-boundary/Bianchi relations",
+    "plaquettes": "3 L (L-1)^2",
+    "unique_plus_sector": "yes for the full contractible box cell complex",
+    "vertices": "L^3"
+  },
+  "open_cube_L2": {
+    "affine_sector_size": 1419857,
+    "all_six_faces_minus_one_face_rank": 5,
+    "all_six_faces_minus_one_invariant_dimension": 1,
+    "correct_direct_incidence_failures": 0,
+    "direct_seam_cases_checked": 3072,
+    "edge_order": [
+      {
+        "axis": 0,
+        "head": [
+          1,
+          0,
+          0
+        ],
+        "tail": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 1,
+        "head": [
+          0,
+          1,
+          0
+        ],
+        "tail": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 2,
+        "head": [
+          0,
+          0,
+          1
+        ],
+        "tail": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 0,
+        "head": [
+          1,
+          0,
+          1
+        ],
+        "tail": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "axis": 1,
+        "head": [
+          0,
+          1,
+          1
+        ],
+        "tail": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "axis": 0,
+        "head": [
+          1,
+          1,
+          0
+        ],
+        "tail": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "axis": 2,
+        "head": [
+          0,
+          1,
+          1
+        ],
+        "tail": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "axis": 0,
+        "head": [
+          1,
+          1,
+          1
+        ],
+        "tail": [
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "axis": 1,
+        "head": [
+          1,
+          1,
+          0
+        ],
+        "tail": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 2,
+        "head": [
+          1,
+          0,
+          1
+        ],
+        "tail": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 1,
+        "head": [
+          1,
+          1,
+          1
+        ],
+        "tail": [
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "axis": 2,
+        "head": [
+          1,
+          1,
+          1
+        ],
+        "tail": [
+          1,
+          1,
+          0
+        ]
+      }
+    ],
+    "edges": 12,
+    "enumerated_affine_points": 1419857,
+    "face_labels": [
+      {
+        "axes": [
+          0,
+          1
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "axes": [
+          0,
+          1
+        ],
+        "base": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "axes": [
+          0,
+          2
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "axes": [
+          0,
+          2
+        ],
+        "base": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "axes": [
+          1,
+          2
+        ],
+        "base": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "axes": [
+          1,
+          2
+        ],
+        "base": [
+          1,
+          0,
+          0
+        ]
+      }
+    ],
+    "face_relation_basis_mod17": [
+      [
+        16,
+        1,
+        1,
+        16,
+        16,
+        1
+      ]
+    ],
+    "face_vectors_mod17": [
+      [
+        1,
+        16,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        16,
+        0,
+        0,
+        16,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        16,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        16,
+        16,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        16,
+        0,
+        16,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        16,
+        16,
+        1
+      ]
+    ],
+    "faces": 6,
+    "histories_with_nonzero_kernel_residual": 252,
+    "incidence_rank": 7,
+    "independent_basis_minus_one_invariant_dimension": 17,
+    "independent_face_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "independent_face_vectors_mod17": [
+      [
+        1,
+        16,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        16,
+        0,
+        0,
+        16,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        16,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        16,
+        16,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        16,
+        0,
+        16,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "independent_five_face_basis_minus_one_rank": 4,
+    "kernel_dimension": 5,
+    "nonuniform_character_cycle_overlap": [
+      0.9324722294043558,
+      -0.3612416661871529
+    ],
+    "nonuniform_character_cycle_residual": 0.3674990356331406,
+    "nonuniform_character_exact_residual": "2 sin(pi/17)",
+    "omitted_independent_generator_overlap": 0,
+    "omitted_independent_generator_residual": 1.4142135623730951,
+    "plaquette_boundary_rank": 5,
+    "repeated_factor_count": 36,
+    "repeated_history_kernel_failures": 0,
+    "repeated_matter_words_checked": 256,
+    "repeated_uniform_intertwiner_incidence_failures": 0,
+    "uniform_invariant_subspace_dimension": 1,
+    "vertices": 8,
+    "wrong_alpha_active_cases_checked": 24576,
+    "wrong_alpha_active_column_residual": 1.4142135623730951,
+    "wrong_alpha_active_overlap": 0,
+    "wrong_alpha_values_mod17": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "wrong_sign_column_residual": 1.4142135623730951,
+    "wrong_sign_nontrivial_cases": 1536,
+    "wrong_sign_overlap": 0
+  },
+  "orientation": "incidence boundary is head minus tail; +alpha on u->v has boundary alpha(e_v-e_u)",
+  "provenance": {
+    "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+    "expected_base_is_ancestor_of_head": true,
+    "runner": "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py",
+    "source_hash_mismatches": {},
+    "source_sha256": {
+      "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+      "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
+    }
+  },
+  "six_mode_total_occupation_extension": {
+    "FSWAP_minus_11_rows": 612,
+    "FSWAP_sign_failures": 0,
+    "alpha_normalization": "+1",
+    "fixed_background_or_star_invariance_failures": 0,
+    "incidence_failures": 0,
+    "link_labels": 17,
+    "occupation_range_failures": 0,
+    "omitted_link_shift_detected_rows": 1224,
+    "rows": 2448,
+    "scope": "algebraic alpha=+1 total-six-mode star/count extension of one selected seam; no second alpha=-1 global affine fixture, many-mode affine-state preparation, or new physical compiler",
+    "selected_seam_bits": "a,b in {0,1}",
+    "spectator_mode_counts": "s_u,s_v in {0,...,5}",
+    "total_number_failures": 0,
+    "total_occupations": "n_u=a+s_u and n_v=b+s_v, each in {0,...,6}",
+    "update": "n'_u=n_u-a+b; n'_v=n_v-b+a; ell'=ell+(a-b) mod17 at the alpha=+1 normalization",
+    "wrong_incidence_sign_detected_rows": 1224
+  },
+  "status": "pass",
+  "supplies_and_boundaries": {
+    "boundary": "connected finite open cell complex and compatible zero-total Gauss word, or separately supplied boundary flux ports",
+    "encoder_covariance": "no full affine-encoder proper-frame/product/translation covariance theorem is claimed by this core",
+    "finite_synthesis": "ideal arbitrary rotations and order-17 projector/preparation synthesis remain supplied/open",
+    "fixed_star_background": "a compatible fixed-N star/background field g is supplied and transported when geometry is compared; background selection and genesis remain open",
+    "genesis": "constraints characterize the state but do not prepare it; a coherent preparation/admission law and clean one-hot link bank remain supplied",
+    "interpretation_firewall": "no source, gravity, time, occurrence, Event, Record, Born, or autonomous genesis claim",
+    "orientation_and_alpha": "edge orientation and matter-charge convention are supplied; the global affine fixture is normalized to alpha=+1 and no alpha=-1 global encoder fixture is claimed",
+    "physical_compilation": "this algebra core is abstract; the separate Cycle873 physical and local-constraint cores emit the grouped augmented seam and 17-rail plaquette shifts",
+    "topology": "local plaquette shifts leave 17^b1 sectors when H1 is nonzero; full ker-uniformity additionally fixes/superposes Wilson cycles"
+  },
+  "theorem_checked": {
+    "affine_fiber_translation": "T_j A_q = A_(q + incidence*j) bijectively on every finite oriented graph",
+    "arbitrary_superpositions": "follows by linearity after basis-column equality",
+    "intertwiner_condition": "at fixed supplied g, incidence*j(n->n') = q_g(n')-q_g(n)",
+    "path_independence": "translations with the same boundary differ by ker(incidence), which fixes the trivial-character uniform state",
+    "repeated_factors": "follows by induction; independently checked below on a 36-factor L2 sequence",
+    "uniform_state_translation": "T_j |A_q> = |A_(q + incidence*j)> exactly"
+  }
+}

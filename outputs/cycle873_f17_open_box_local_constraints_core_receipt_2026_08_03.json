@@ -1,0 +1,676 @@
+{
+  "Object_A_preservation": {
+    "all_plaquettes": 53,
+    "all_seam_all_plaquette_commutator_failures": 0,
+    "all_seam_all_plaquette_current_rows": 6708,
+    "all_seam_all_plaquette_operator_pairs": 2236,
+    "all_seams": 86,
+    "full_augmented_epoch_constraint_preservation_failures": 0,
+    "onsite_stage_preservation": {
+      "bare_occupation_flip_control_commutator": 2.939992285065125,
+      "basis_occupation_columns": 64,
+      "coin_schedule_gates": 20,
+      "coin_schedule_reconstruction_residual": 9.774239351035397e-16,
+      "failures": 0,
+      "link_action": "identity for all three onsite stages",
+      "live_L2_onsite_rotation_census": {
+        "onsite_coin_mass": 696,
+        "onsite_contact": 360,
+        "onsite_reverse_fswap": 288
+      },
+      "matter_clock": "diag(omega^N_x) on all six-mode occupation words",
+      "physical_target_bridge": "pinned Cycle870 emitted-word intertwiners supply the physical-to-target step; this certificate executes the target-to-F17-star commutators",
+      "star_clock_commutator_residuals": {
+        "coin": 0.0,
+        "composed_onsite_epoch": 0.0,
+        "contact": 0.0,
+        "reverse": 0.0
+      },
+      "unitarity_residuals": {
+        "coin": 5.297945988401815e-15,
+        "composed_onsite_epoch": 5.561024564318497e-15,
+        "contact": 0.0,
+        "reverse": 0.0
+      }
+    },
+    "onsite_stage_preservation_failures": 0,
+    "seam_one_hot_label_failures": 0,
+    "seam_plaquette_translation_commutator_failures": 0,
+    "seam_plaquette_translation_commutator_rows": 23392,
+    "seam_star_basis_rows": 421056,
+    "seam_star_preservation_failures": 0
+  },
+  "clock_primitive": {
+    "formal_zero_site_scalar_per_matter_mode": [
+      0.9829730996839018,
+      0.18374951781657034
+    ],
+    "link_clock_formula": "on the one-hot sector, apply diag(1,omega^(sigma*k)) to physical rail k",
+    "link_clock_phase_residual": 9.42055475210265e-16,
+    "matter_clock_formula": "omega^n = exp(i*pi/17) exp[-i*(2*pi/17) B/2], B=1-2n",
+    "matter_clock_phase_residual": 5.551115123125783e-17,
+    "non_Clifford_angle": 0.36959913571644626,
+    "omega": [
+      0.9324722294043558,
+      0.3612416661871529
+    ]
+  },
+  "constraint_algebra": {
+    "commutation_reason": "incidence times plaquette boundary is zero mod17; label translations are abelian and preserve every unary Hamming sector",
+    "one_hot": "P1_e=sum_k |1_k><1_k|; Q_e=I-P1_e",
+    "plaquette": "S_p=product_e X_e^(boundary coefficient); S_p^17=I; the +1 sector is invariant under every plaquette translation",
+    "star": "A_x=omega^(N_x+alpha div ell), alpha in {-1,+1}, omega=exp(2*pi*i/17), with a selected eigenvalue/projector per supplied consistent sector"
+  },
+  "constructive_interference_route": {
+    "basis_link_witness_scope": "the prior orthogonal-history witness applies to supplied computational-basis link initialization only",
+    "computational_basis_translation_overlap": [
+      0.0,
+      0.0
+    ],
+    "interpretation": "within a consistent fixed-star sector on these open boxes, all closed-current path differences lie in the plaquette span and act trivially on the unique uniform +1 cycle-space state",
+    "mass_dispersion_status": "this core identifies the route-local basis-history variation algebraically; the separate Cycle873 affine-intertwiner core tests recurrence and decoded C219 dispersion",
+    "uniform_cycle_translation_overlap": [
+      0.9999999999999999,
+      0.0
+    ]
+  },
+  "failures": [],
+  "fixtures": [
+    {
+      "Object_A_total_bank_M2_including_three_clean_work_per_link": 240,
+      "bank_carrier_aux_collision_sites": 0,
+      "bank_pair_overlap_sites": 0,
+      "boundary_of_boundary_nonzero_entries": 0,
+      "constraint_commutation": {
+        "one_hot_with_plaquette_reason": "the executed cyclic-shift word preserves every rail Hamming sector",
+        "one_hot_with_star_reason": "the one-hot projector and star clock are diagonal in link occupation",
+        "plaquette_with_plaquette_reason": "all plaquette generators are products of commuting link translations",
+        "star_with_plaquette_failures": 0,
+        "star_with_star_reason": "all star clocks are diagonal"
+      },
+      "cycle_space_rank": 5,
+      "expected_connected_incidence_rank": 7,
+      "fixed_star_divergence_link_sector_dimension": 1419857,
+      "global_star_compatibility": "sum_x(g_x-N_x)=0 mod17",
+      "incidence_rank_mod17": 7,
+      "independent_link_star_constraints_at_fixed_matter": 7,
+      "one_hot_constraint": {
+        "maximum_L1_diameter": 9,
+        "maximum_L1_radius": 6,
+        "maximum_Linf_radius": 2,
+        "per_link_physical_support_M2": 17,
+        "radius_failures": 0,
+        "rail_path_NN_failures": 0
+      },
+      "oriented_links": 12,
+      "physical_unary_link_M2": 204,
+      "plaquette_boundary_rank_mod17": 5,
+      "plaquette_dependency_count": 1,
+      "plaquette_shift": {
+        "all_plaquette_words_sha256": "18b3638791f34f16159eb23eda286ed2fcc85e3665847a538b22a158bb942a79",
+        "clean_ancilla_M2": 0,
+        "individual_SWAP_deletions_tested": 384,
+        "logical_link_support": 4,
+        "maximum_L1_diameter": 26,
+        "maximum_L1_radius": 14,
+        "maximum_Linf_radius": 10,
+        "parallel_depth": 16,
+        "parallel_layer_site_collisions": 0,
+        "physical_SWAP_gates": 64,
+        "physical_support_M2": 68,
+        "undetected_individual_SWAP_deletions": 0,
+        "word_or_NN_failures": 0
+      },
+      "plaquettes": 6,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "star_constraint": {
+        "definition": "A_x=omega^(N_x+alpha[sum_out ell-sum_in ell]), alpha in {-1,+1}; P_{g,x}=17^-1 sum_t omega^(-tg) A_x^t",
+        "emitted_star_clock_word": {
+          "all_star_clock_words_sha256": "aab4371aef2ada2a8cf568a60b725e2a4bca12296a7cbf9b62b9c34870e3ecee",
+          "formal_zero_site_scalar_angle": 1.1087974071493387,
+          "matter_axis_RZ_gates_per_star": [
+            6
+          ],
+          "maximum_link_clock_phase_gates": 48,
+          "maximum_logical_instructions": 108,
+          "maximum_route_distance": 13,
+          "maximum_routed_gates": 684,
+          "minimum_logical_instructions": 108,
+          "minimum_routed_gates": 516,
+          "route_or_alpha_census_failures": 0
+        },
+        "encoded_matter_constraint_anticommutators": 0,
+        "maximum_L1_diameter": 26,
+        "maximum_L1_radius": 14,
+        "maximum_Linf_radius": 10,
+        "maximum_degree": 3,
+        "maximum_link_rail_support_M2": 51,
+        "maximum_matter_support_M2": 21,
+        "maximum_physical_support_M2": 72
+      },
+      "star_plaquette_commutator_exponent_nonzero_entries": 0,
+      "uniform_cycle_plus_one_sector_dimension": 1,
+      "unique_uniform_cycle_state_in_each_consistent_fixed_star_sector": true,
+      "vertices": 8
+    },
+    {
+      "Object_A_total_bank_M2_including_three_clean_work_per_link": 1080,
+      "bank_carrier_aux_collision_sites": 0,
+      "bank_pair_overlap_sites": 0,
+      "boundary_of_boundary_nonzero_entries": 0,
+      "constraint_commutation": {
+        "one_hot_with_plaquette_reason": "the executed cyclic-shift word preserves every rail Hamming sector",
+        "one_hot_with_star_reason": "the one-hot projector and star clock are diagonal in link occupation",
+        "plaquette_with_plaquette_reason": "all plaquette generators are products of commuting link translations",
+        "star_with_plaquette_failures": 0,
+        "star_with_star_reason": "all star clocks are diagonal"
+      },
+      "cycle_space_rank": 28,
+      "expected_connected_incidence_rank": 26,
+      "fixed_star_divergence_link_sector_dimension": 28351092476867700887730107366063041,
+      "global_star_compatibility": "sum_x(g_x-N_x)=0 mod17",
+      "incidence_rank_mod17": 26,
+      "independent_link_star_constraints_at_fixed_matter": 26,
+      "one_hot_constraint": {
+        "maximum_L1_diameter": 9,
+        "maximum_L1_radius": 6,
+        "maximum_Linf_radius": 2,
+        "per_link_physical_support_M2": 17,
+        "radius_failures": 0,
+        "rail_path_NN_failures": 0
+      },
+      "oriented_links": 54,
+      "physical_unary_link_M2": 918,
+      "plaquette_boundary_rank_mod17": 28,
+      "plaquette_dependency_count": 8,
+      "plaquette_shift": {
+        "all_plaquette_words_sha256": "26af5c4eb91128307dad3ed2de0936441e28edeb8cf8007491cd913734d9bc68",
+        "clean_ancilla_M2": 0,
+        "individual_SWAP_deletions_tested": 2304,
+        "logical_link_support": 4,
+        "maximum_L1_diameter": 26,
+        "maximum_L1_radius": 14,
+        "maximum_Linf_radius": 10,
+        "parallel_depth": 16,
+        "parallel_layer_site_collisions": 0,
+        "physical_SWAP_gates": 64,
+        "physical_support_M2": 68,
+        "undetected_individual_SWAP_deletions": 0,
+        "word_or_NN_failures": 0
+      },
+      "plaquettes": 36,
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "star_constraint": {
+        "definition": "A_x=omega^(N_x+alpha[sum_out ell-sum_in ell]), alpha in {-1,+1}; P_{g,x}=17^-1 sum_t omega^(-tg) A_x^t",
+        "emitted_star_clock_word": {
+          "all_star_clock_words_sha256": "9506cb9b8b76a2431a7b78f6c616cfa00090e600103e6a6711b14cb0ca6bf160",
+          "formal_zero_site_scalar_angle": 1.1087974071493387,
+          "matter_axis_RZ_gates_per_star": [
+            6
+          ],
+          "maximum_link_clock_phase_gates": 96,
+          "maximum_logical_instructions": 162,
+          "maximum_route_distance": 13,
+          "maximum_routed_gates": 858,
+          "minimum_logical_instructions": 108,
+          "minimum_routed_gates": 516,
+          "route_or_alpha_census_failures": 0
+        },
+        "encoded_matter_constraint_anticommutators": 0,
+        "maximum_L1_diameter": 26,
+        "maximum_L1_radius": 14,
+        "maximum_Linf_radius": 10,
+        "maximum_degree": 6,
+        "maximum_link_rail_support_M2": 102,
+        "maximum_matter_support_M2": 24,
+        "maximum_physical_support_M2": 126
+      },
+      "star_plaquette_commutator_exponent_nonzero_entries": 0,
+      "uniform_cycle_plus_one_sector_dimension": 1,
+      "unique_uniform_cycle_state_in_each_consistent_fixed_star_sector": true,
+      "vertices": 27
+    },
+    {
+      "Object_A_total_bank_M2_including_three_clean_work_per_link": 400,
+      "bank_carrier_aux_collision_sites": 0,
+      "bank_pair_overlap_sites": 0,
+      "boundary_of_boundary_nonzero_entries": 0,
+      "constraint_commutation": {
+        "one_hot_with_plaquette_reason": "the executed cyclic-shift word preserves every rail Hamming sector",
+        "one_hot_with_star_reason": "the one-hot projector and star clock are diagonal in link occupation",
+        "plaquette_with_plaquette_reason": "all plaquette generators are products of commuting link translations",
+        "star_with_plaquette_failures": 0,
+        "star_with_star_reason": "all star clocks are diagonal"
+      },
+      "cycle_space_rank": 9,
+      "expected_connected_incidence_rank": 11,
+      "fixed_star_divergence_link_sector_dimension": 118587876497,
+      "global_star_compatibility": "sum_x(g_x-N_x)=0 mod17",
+      "incidence_rank_mod17": 11,
+      "independent_link_star_constraints_at_fixed_matter": 11,
+      "one_hot_constraint": {
+        "maximum_L1_diameter": 9,
+        "maximum_L1_radius": 6,
+        "maximum_Linf_radius": 2,
+        "per_link_physical_support_M2": 17,
+        "radius_failures": 0,
+        "rail_path_NN_failures": 0
+      },
+      "oriented_links": 20,
+      "physical_unary_link_M2": 340,
+      "plaquette_boundary_rank_mod17": 9,
+      "plaquette_dependency_count": 2,
+      "plaquette_shift": {
+        "all_plaquette_words_sha256": "366ef8ee31477056533bf077a60428b3664eab8a7fbeb9eb886479a47c3eda2a",
+        "clean_ancilla_M2": 0,
+        "individual_SWAP_deletions_tested": 704,
+        "logical_link_support": 4,
+        "maximum_L1_diameter": 26,
+        "maximum_L1_radius": 14,
+        "maximum_Linf_radius": 10,
+        "parallel_depth": 16,
+        "parallel_layer_site_collisions": 0,
+        "physical_SWAP_gates": 64,
+        "physical_support_M2": 68,
+        "undetected_individual_SWAP_deletions": 0,
+        "word_or_NN_failures": 0
+      },
+      "plaquettes": 11,
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "star_constraint": {
+        "definition": "A_x=omega^(N_x+alpha[sum_out ell-sum_in ell]), alpha in {-1,+1}; P_{g,x}=17^-1 sum_t omega^(-tg) A_x^t",
+        "emitted_star_clock_word": {
+          "all_star_clock_words_sha256": "45b03247a3ff87288ef12a7c5c287c8ec0c4c7776772a6f7892805aaf5dc9822",
+          "formal_zero_site_scalar_angle": 1.1087974071493387,
+          "matter_axis_RZ_gates_per_star": [
+            6
+          ],
+          "maximum_link_clock_phase_gates": 64,
+          "maximum_logical_instructions": 126,
+          "maximum_route_distance": 13,
+          "maximum_routed_gates": 742,
+          "minimum_logical_instructions": 108,
+          "minimum_routed_gates": 516,
+          "route_or_alpha_census_failures": 0
+        },
+        "encoded_matter_constraint_anticommutators": 0,
+        "maximum_L1_diameter": 26,
+        "maximum_L1_radius": 14,
+        "maximum_Linf_radius": 10,
+        "maximum_degree": 4,
+        "maximum_link_rail_support_M2": 68,
+        "maximum_matter_support_M2": 22,
+        "maximum_physical_support_M2": 90
+      },
+      "star_plaquette_commutator_exponent_nonzero_entries": 0,
+      "uniform_cycle_plus_one_sector_dimension": 1,
+      "unique_uniform_cycle_state_in_each_consistent_fixed_star_sector": true,
+      "vertices": 12
+    }
+  ],
+  "name": "Cycle873 physical-M2 F17 open-box local constraints",
+  "one_hot_algebra": {
+    "P1_commutator_failures": 0,
+    "all_sector_Hamming_weight_failures": 0,
+    "all_sector_inverse_failures": 0,
+    "constraint": "Q=I-P1, with P1=sum_k |1_k><1_k| on this fixed 17-M2 bank",
+    "constraint_support_M2": 17,
+    "deleted_Fredkin_changed_one_hot_rows": {
+      "+1:0": 2,
+      "+1:1": 2,
+      "+1:10": 2,
+      "+1:11": 2,
+      "+1:12": 2,
+      "+1:13": 2,
+      "+1:14": 2,
+      "+1:15": 2,
+      "+1:2": 2,
+      "+1:3": 2,
+      "+1:4": 2,
+      "+1:5": 2,
+      "+1:6": 2,
+      "+1:7": 2,
+      "+1:8": 2,
+      "+1:9": 2,
+      "-1:0": 2,
+      "-1:1": 2,
+      "-1:10": 2,
+      "-1:11": 2,
+      "-1:12": 2,
+      "-1:13": 2,
+      "-1:14": 2,
+      "-1:15": 2,
+      "-1:2": 2,
+      "-1:3": 2,
+      "-1:4": 2,
+      "-1:5": 2,
+      "-1:6": 2,
+      "-1:7": 2,
+      "-1:8": 2,
+      "-1:9": 2
+    },
+    "deleted_Q_double_hot_columns_admitted": 136,
+    "deleted_Q_unlawful_columns_admitted": 131055,
+    "deleted_Q_vacuum_admitted": true,
+    "enforcement_boundary": "P1/Q is an explicit bounded-bank projector, but its initialization or enforcement is supplied/open and contributes no gates or physical-energy claim",
+    "exhaustive_masks_per_direction": 131072,
+    "inactive_deleted_Fredkins": [],
+    "one_hot_mapping_failures": 0,
+    "projector_rank": 17,
+    "unlawful_sector_rows_also_preserved_by_dynamics": 262110
+  },
+  "open_nonclaims": [
+    "no autonomous preparation/genesis or recurrence invocation",
+    "no periodic harmonic-sector selection",
+    "no completed joint spectrum, source, gravity, or backreaction claim",
+    "authority and audit verdict remain unset"
+  ],
+  "proper_frame_transport": {
+    "boundary_equivariance_failures": 0,
+    "edge_frame_rows": 2064,
+    "edge_orientation_label_failures": 0,
+    "edge_product_failures": 0,
+    "label_product_failures": 0,
+    "negative_edge_rows": 1032,
+    "ordered_frame_products": 576,
+    "physical_NN_gate_frame_failures": 0,
+    "physical_gate_product_failures": 0,
+    "physical_gate_product_rows": 36864,
+    "physical_star_support_frame_failures": 0,
+    "physical_star_support_product_failures": 0,
+    "physical_star_support_product_rows": 41472,
+    "plaquette_frame_rows": 1272,
+    "plaquette_generator_transport_rule": "S_p -> S_{F p}^{orientation}; the +1 eigenspace is unchanged when orientation=-1 because S and S^{-1} have the same +1 sector",
+    "plaquette_product_failures": 0,
+    "proper_frames": 24
+  },
+  "provenance": {
+    "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+    "expected_base_is_ancestor_of_head": true,
+    "integration_runner": "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
+    "integration_runner_sha256": "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7",
+    "pinned_source_sha256": {
+      "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a",
+      "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
+      "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+      "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py": "6645156635b4354d937759a28e71215121a19cefcc2f294a2791e6a84cf1423b"
+    }
+  },
+  "realization_boundary": {
+    "emitted": [
+      "each S_p as 64 physical NN SWAPs, four disjoint 16-SWAP cyclic words, depth16",
+      "each star clock as routed physical-B rotations plus one-site unary-rail 2*pi*k/17 phases, with its exact formal zero-site scalar ledger"
+    ],
+    "no_physical_energy_claim": true,
+    "non_Clifford_boundary": "the SWAP translations are Clifford permutations; star-clock 2*pi/17 phases are emitted using the landed ideal arbitrary-RZ/one-site phase primitive, but finite-gate synthesis and coherent/projective +1-sector realization are not compiled",
+    "not_emitted_or_supplied": [
+      "preparation of the uniform affine cycle-space state",
+      "measurement/projection onto S_p=+1",
+      "the 17-term star and plaquette spectral projectors",
+      "controlled order-17 syndrome measurements and deterministic correction",
+      "selection of a globally consistent star eigenvalue sector",
+      "periodic harmonic Wilson-loop sectors, absent on the tested open boxes",
+      "autonomous one-hot enforcement, reset, cooling, or genesis"
+    ]
+  },
+  "single_plaquette_uniform": {
+    "basis_link_shift_overlap": [
+      0.0,
+      0.0
+    ],
+    "basis_link_shift_residual": 1.4142135623730951,
+    "fixed_divergence_cycle_dimension": 17,
+    "nontrivial_power_identity_failures": 0,
+    "plaquette_translation_order": 17,
+    "uniform_normalization_residual": 1.1102230246251565e-16,
+    "uniform_plus_one_sector_dimension": 1,
+    "uniform_shift_overlap": [
+      0.9999999999999999,
+      0.0
+    ],
+    "uniform_shift_residual": 0.0
+  },
+  "sparse_plaquette_gate_word": {
+    "gates_per_plaquette": 64,
+    "negative_link_shift_SWAP_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ]
+    ],
+    "oriented_boundary_pattern": [
+      "+ edge(base,a)",
+      "+ edge(base+e_a,b)",
+      "- edge(base+e_b,a)",
+      "- edge(base,b)"
+    ],
+    "parallel_depth": 16,
+    "physical_coordinate_rule": "rail k is midpoint + sum_i offset[k,i]*transported_coframe_i; every listed pair is L1-nearest-neighbour",
+    "positive_link_shift_SWAP_pairs": [
+      [
+        15,
+        16
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "rail_local_offsets": [
+      [
+        -2,
+        2,
+        0
+      ],
+      [
+        -2,
+        2,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -2
+      ],
+      [
+        0,
+        2,
+        -2
+      ],
+      [
+        1,
+        2,
+        -2
+      ],
+      [
+        1,
+        1,
+        -2
+      ],
+      [
+        2,
+        1,
+        -2
+      ],
+      [
+        2,
+        0,
+        -2
+      ],
+      [
+        2,
+        -1,
+        -2
+      ],
+      [
+        1,
+        -1,
+        -2
+      ],
+      [
+        1,
+        -2,
+        -2
+      ],
+      [
+        0,
+        -2,
+        -2
+      ],
+      [
+        -1,
+        -2,
+        -2
+      ],
+      [
+        -1,
+        -2,
+        -1
+      ],
+      [
+        -2,
+        -2,
+        -1
+      ],
+      [
+        -2,
+        -2,
+        -2
+      ]
+    ]
+  },
+  "status": "pass"
+}

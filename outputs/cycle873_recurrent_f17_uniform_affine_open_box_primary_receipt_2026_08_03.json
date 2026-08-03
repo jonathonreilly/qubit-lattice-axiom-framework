@@ -1,0 +1,588 @@
+{
+  "active_controls": {
+    "affine": {
+      "nontrivial_character_residual": 0.36749903563314074,
+      "omitted_independent_generator_residual": 1.4142135623730951,
+      "selected_active_QR_gate_deletion_index": 9,
+      "selected_active_QR_gate_deletion_residual": 2.646588210758058,
+      "wrong_alpha_cases": 24576,
+      "wrong_alpha_values": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "local": {
+      "basis_translation_overlap": [
+        0.0,
+        0.0
+      ],
+      "plaquette_SWAP_deletions_tested": 3392,
+      "plaquette_SWAP_deletions_undetected": 0,
+      "uniform_translation_overlap": [
+        0.9999999999999999,
+        0.0
+      ]
+    },
+    "naive_axis_schedule_collision_rows": 203,
+    "physical_component_mutations": {
+      "component_mutations": {
+        "delete_cleanup": {
+          "changed_columns": 51,
+          "dirty_columns": 51
+        },
+        "delete_minus_shift": {
+          "changed_columns": 17,
+          "dirty_columns": 0
+        },
+        "delete_plus_shift": {
+          "changed_columns": 17,
+          "dirty_columns": 0
+        },
+        "delete_seam": {
+          "changed_columns": 51,
+          "dirty_columns": 34
+        }
+      },
+      "inactive_component_mutations": []
+    },
+    "physical_structural_route_deletions": {
+      "central_interaction_deletions": 33,
+      "forward_SWAP_deletions": 528,
+      "full_arbitrary_register_return_failures": 0,
+      "full_operand_failures": 0,
+      "path_distances": 33,
+      "qualification": "symbolic arbitrary-register routing structure, not a claim that every literal primitive deletion changes every supplied reachable state",
+      "return_SWAP_deletions": 528,
+      "structural_symbolic_deletions": 1089,
+      "undetected_structural_deletions": 0
+    },
+    "raw_seam_square_to_identity_residual": 2.0
+  },
+  "actual_Cycle219_decoded_free_one_particle": {
+    "QR_deletion_scope": "one selected nonidentity-gate deletion is an active control; identity phase entries may be structurally inactive and no every-gate essentiality claim is made",
+    "QR_gate_count": 20,
+    "QR_off_diagonal_residual": 9.058932439513524e-16,
+    "QR_reconstruction_residual": 9.774239351035397e-16,
+    "actual_Cycle870_beta": -0.3,
+    "actual_dense_coin_encoded_onsite_intertwiner_residual": 0.0,
+    "analytic_mass": 0.4534056541748852,
+    "coin_sha256": "fae998511058ee732e31058254e2b9883a97637b07bc6443402b5035112c4b70",
+    "coin_unitarity_residual": 1.2236950713340232e-15,
+    "curvature_tensor_step_1e_minus_4": [
+      [
+        2.2055304360613093,
+        1.1102230246251565e-08,
+        0.0
+      ],
+      [
+        1.1102230246251565e-08,
+        2.205530405530176,
+        2.7755575615628914e-09
+      ],
+      [
+        0.0,
+        2.7755575615628914e-09,
+        2.2055304471635395
+      ]
+    ],
+    "decoded_spectrum_statement": "the exact seam-column affine intertwiner plus onsite number preservation makes the trivial-character code representation conjugate to the supplied free one-particle Cycle219 Bloch word; its decoded eigenphases and local curvature therefore equal the displayed Cycle219 fixture",
+    "dense_nonzero_entries": 36,
+    "dispersion_mass": 0.4534056690336209,
+    "dispersion_relative_residual": 3.277139470903023e-08,
+    "eight_step_same_block_multiplication_consistency_residual": 1.7437498324404974e-15,
+    "inactive_identity_phase_deletion_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "maximum_Bloch_unitarity_residual": 1.3554488540262896e-15,
+    "momentum_samples": [
+      {
+        "momentum": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scalar_branch_phase": 0.1511352180582951,
+        "unitarity_residual": 1.2236950713340232e-15
+      },
+      {
+        "momentum": [
+          0.07,
+          0.0,
+          0.0
+        ],
+        "scalar_branch_phase": 0.15644756021112707,
+        "unitarity_residual": 1.2552051807999852e-15
+      },
+      {
+        "momentum": [
+          -0.07,
+          0.0,
+          0.0
+        ],
+        "scalar_branch_phase": 0.15644756021112713,
+        "unitarity_residual": 1.2502458912151192e-15
+      },
+      {
+        "momentum": [
+          0.0,
+          0.07,
+          0.0
+        ],
+        "scalar_branch_phase": 0.15644756021112718,
+        "unitarity_residual": 1.2857691933617613e-15
+      },
+      {
+        "momentum": [
+          0.0,
+          -0.07,
+          0.0
+        ],
+        "scalar_branch_phase": 0.15644756021112718,
+        "unitarity_residual": 1.2952128554728865e-15
+      },
+      {
+        "momentum": [
+          0.0,
+          0.0,
+          0.07
+        ],
+        "scalar_branch_phase": 0.1564475602111271,
+        "unitarity_residual": 1.2311470523641395e-15
+      },
+      {
+        "momentum": [
+          0.0,
+          0.0,
+          -0.07
+        ],
+        "scalar_branch_phase": 0.15644756021112705,
+        "unitarity_residual": 1.2315833550438673e-15
+      },
+      {
+        "momentum": [
+          0.04,
+          -0.03,
+          0.02
+        ],
+        "scalar_branch_phase": 0.15429998147164403,
+        "unitarity_residual": 1.3554488540262896e-15
+      }
+    ],
+    "rest_mass": 0.4534056541748851,
+    "rest_to_analytic_residual": 1.1102230246251565e-16,
+    "scope_boundary": "this is the supplied translation-invariant free one-particle momentum fixture, not a periodic F17 physical-box construction and not an interacting finite-open-box spectrum",
+    "selected_active_QR_gate_deletion_index": 9,
+    "selected_active_QR_gate_deletion_residual": 2.646588210758058,
+    "single_QR_gate_deletion_residuals": [
+      9.774239351035397e-16,
+      9.774239351035397e-16,
+      9.774239351035397e-16,
+      9.774239351035397e-16,
+      9.774239351035397e-16,
+      0.006811295182973464,
+      1.0971848946738614,
+      2.506606419588802,
+      2.4450389849164345,
+      2.646588210758058,
+      1.7046519977270436,
+      2.324647022615662,
+      2.381929298156762,
+      2.2570249370897972,
+      2.4494894797243156,
+      1.6374330600172748,
+      1.6112157584396136,
+      2.646588210758058,
+      1.3103145642463903,
+      1.0971848946738614
+    ],
+    "trivial_cycle_translation_residual": 0.0,
+    "trivial_cycle_uniform_normalization_residual": 1.1102230246251565e-16
+  },
+  "claim_scope": "recurrent F17-only physical-M2 all-seam augmentation plus uniform affine-Gauss/trivial-loop code and local constraint characterization and preservation on the three tested open boxes",
+  "cold_child_runs": {
+    "affine": {
+      "byte_identical_to_canonical": true,
+      "canonical_receipt_sha256": "d5d0dec904a034a0994d1e98e1c38b966240b91a3ad3435ac7bb01011c5b21b9",
+      "fresh_receipt_sha256": "d5d0dec904a034a0994d1e98e1c38b966240b91a3ad3435ac7bb01011c5b21b9",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"C219_beta\": -0.3,\n  \"C219_dispersion_mass\": 0.4534056690336209,\n  \"L2_repeated_factor_count\": 36,\n  \"base_commit\": \"c73a11d1ea7ddd564c48aa2a5a459a43d94262ef\",\n  \"expected_base_is_ancestor_of_head\": true,\n  \"failures\": [],\n  \"filled_plaquette_direct_columns\": 64,\n  \"receipt\": \"outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json\",\n  \"status\": \"pass\"\n}\n",
+      "stdout_sha256": "99d2c7b2de2d7d5a9ee223d5a2cf999f89a833af9b96e1e81921397eaf715f24"
+    },
+    "constraints": {
+      "byte_identical_to_canonical": true,
+      "canonical_receipt_sha256": "28c954d13a4d0a3d0b589c4a8a8fd9d31c3d0f9774e934abb4f84aae8d568233",
+      "fresh_receipt_sha256": "28c954d13a4d0a3d0b589c4a8a8fd9d31c3d0f9774e934abb4f84aae8d568233",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"pass\",\n  \"base_commit\": \"c73a11d1ea7ddd564c48aa2a5a459a43d94262ef\",\n  \"expected_base_is_ancestor_of_head\": true,\n  \"receipt\": \"outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json\",\n  \"failures\": [],\n  \"fixtures\": [\n    {\n      \"shape\": [\n        2,\n        2,\n        2\n      ],\n      \"V\": 8,\n      \"E\": 12,\n      \"P\": 6,\n      \"cycle_rank\": 5,\n      \"plaquette_rank\": 5,\n      \"fixed_divergence_dimension\": 1419857,\n      \"plus_one_dimension\": 1,\n      \"star_support\": 72,\n      \"plaquette_radius\": 10\n    },\n    {\n      \"shape\": [\n        3,\n        3,\n        3\n      ],\n      \"V\": 27,\n      \"E\": 54,\n      \"P\": 36,\n      \"cycle_rank\": 28,\n      \"plaquette_rank\": 28,\n      \"fixed_divergence_dimension\": 28351092476867700887730107366063041,\n      \"plus_one_dimension\": 1,\n      \"star_support\": 126,\n      \"plaquette_radius\": 10\n    },\n    {\n      \"shape\": [\n        3,\n        2,\n        2\n      ],\n      \"V\": 12,\n      \"E\": 20,\n      \"P\": 11,\n      \"cycle_rank\": 9,\n      \"plaquette_rank\": 9,\n      \"fixed_divergence_dimension\": 118587876497,\n      \"plus_one_dimension\": 1,\n      \"star_support\": 90,\n      \"plaquette_radius\": 10\n    }\n  ]\n}\n",
+      "stdout_sha256": "8a284046392cbb7da864abf85291bb22a2cc67195327a35439ffd5fc8f9d00cc"
+    },
+    "physical": {
+      "byte_identical_to_canonical": true,
+      "canonical_receipt_sha256": "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
+      "fresh_receipt_sha256": "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"pass\",\n  \"base_commit\": \"c73a11d1ea7ddd564c48aa2a5a459a43d94262ef\",\n  \"expected_base_is_ancestor_of_head\": true,\n  \"receipt\": \"outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json\",\n  \"failures\": [],\n  \"secondary_optional_status\": \"pass\",\n  \"secondary_optional_failures\": [],\n  \"fixtures\": [\n    {\n      \"shape\": [\n        2,\n        2,\n        2\n      ],\n      \"seams\": 12,\n      \"F17_only_bank_union_M2\": 240,\n      \"F17_only_logical\": 8808,\n      \"F17_only_routed\": 58280,\n      \"colors\": 12,\n      \"F17_only_parallel_depth\": 58280,\n      \"F17_only_route_union\": 2547,\n      \"F17_only_support_union\": 2787\n    },\n    {\n      \"shape\": [\n        3,\n        3,\n        3\n      ],\n      \"seams\": 54,\n      \"F17_only_bank_union_M2\": 1080,\n      \"F17_only_logical\": 40140,\n      \"F17_only_routed\": 293540,\n      \"colors\": 24,\n      \"F17_only_parallel_depth\": 139776,\n      \"F17_only_route_union\": 11130,\n      \"F17_only_support_union\": 11886\n    },\n    {\n      \"shape\": [\n        3,\n        2,\n        2\n      ],\n      \"seams\": 20,\n      \"F17_only_bank_union_M2\": 400,\n      \"F17_only_logical\": 14744,\n      \"F17_only_routed\": 102968,\n      \"colors\": 16,\n      \"F17_only_parallel_depth\": 84768,\n      \"F17_only_route_union\": 4195,\n      \"F17_only_support_union\": 4547\n    }\n  ]\n}\n",
+      "stdout_sha256": "c2cae9af9a9c868ec8d8a08113133de944fac2ec4c782dea89a6ffb1e1bea589"
+    }
+  },
+  "factor_level_proof": {
+    "four_rotation_selection_failures": 0,
+    "grouped_macro_is_literal_emitted_M2_word": true,
+    "grouping_boundary": "the augmented factor is the complete grouped emitted M2 word; no claim is made that its four individual seam rotations separately preserve the affine star code before the group is complete",
+    "individual_rotation_boundary": "the four landed seam rotations are not claimed separately to preserve the affine star code; the effective affine identity is checked for the completed grouped factor through two separate pinned legs, and no monolithic physical affine encoder is executed",
+    "landed_seam_phase": "the four commuting pi/2 rotations emit raw -i*FSWAP; the formal +pi/2 zero-site scalar restores the exact FSWAP representative",
+    "literal_emitted_order": "endpoint B extraction -> landed four-rotation seam factor -> mutually exclusive positive/negative predicate-controlled unary shifts -> endpoint cleanup",
+    "open_box_raw_seam_stage_phases": [
+      {
+        "phase": [
+          1.0,
+          0.0
+        ],
+        "seams": 12,
+        "shape": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "phase": [
+          -1.0,
+          0.0
+        ],
+        "seams": 54,
+        "shape": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "phase": [
+          1.0,
+          0.0
+        ],
+        "seams": 20,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      }
+    ],
+    "phase_cancellation_boundary": "L2 (12 seams) and held 3x2x2 (20 seams) have raw seam-stage phase +1; L3 (54 seams) has raw seam-stage phase -1.  Only the formal +i-corrected per-seam macro is exact generally, and the full epoch retains Cycle870's separate ledgered global correction",
+    "raw_per_seam_phase": [
+      0.0,
+      -1.0
+    ],
+    "selected_seam_factors": 86
+  },
+  "failures": [],
+  "fixtures": [
+    {
+      "Cycle870_full_epoch_formal_correction_angle": 168.20687791288861,
+      "F17_bank_M2": 240,
+      "checks": {
+        "bank": true,
+        "constraint_preservation": true,
+        "cycle_rank": true,
+        "depth": true,
+        "factor_order": true,
+        "links_equal_seams": true,
+        "logical": true,
+        "plaquette_span": true,
+        "plaquettes": true,
+        "raw_stage_phase": true,
+        "routed": true,
+        "routes": true,
+        "unique_uniform_plus_sector": true,
+        "vertices": true
+      },
+      "complete_epoch_depth": 204288,
+      "complete_epoch_logical": 24656,
+      "complete_epoch_routed": 204288,
+      "cycle_rank": 5,
+      "fixed_divergence_dimension": 1419857,
+      "links_and_seams": 12,
+      "plaquettes": 6,
+      "raw_seam_stage_phase": [
+        1.0,
+        0.0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "uniform_plus_sector_dimension": 1,
+      "vertices": 8
+    },
+    {
+      "Cycle870_full_epoch_formal_correction_angle": 588.9039633677298,
+      "F17_bank_M2": 1080,
+      "checks": {
+        "bank": true,
+        "constraint_preservation": true,
+        "cycle_rank": true,
+        "depth": true,
+        "factor_order": true,
+        "links_equal_seams": true,
+        "logical": true,
+        "plaquette_span": true,
+        "plaquettes": true,
+        "raw_stage_phase": true,
+        "routed": true,
+        "routes": true,
+        "unique_uniform_plus_sector": true,
+        "vertices": true
+      },
+      "complete_epoch_depth": 688998,
+      "complete_epoch_logical": 95274,
+      "complete_epoch_routed": 842762,
+      "cycle_rank": 28,
+      "fixed_divergence_dimension": 28351092476867700887730107366063041,
+      "links_and_seams": 54,
+      "plaquettes": 36,
+      "raw_seam_stage_phase": [
+        -1.0,
+        0.0
+      ],
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "uniform_plus_sector_dimension": 1,
+      "vertices": 27
+    },
+    {
+      "Cycle870_full_epoch_formal_correction_angle": 255.4519095229226,
+      "F17_bank_M2": 400,
+      "checks": {
+        "bank": true,
+        "constraint_preservation": true,
+        "cycle_rank": true,
+        "depth": true,
+        "factor_order": true,
+        "links_equal_seams": true,
+        "logical": true,
+        "plaquette_span": true,
+        "plaquettes": true,
+        "raw_stage_phase": true,
+        "routed": true,
+        "routes": true,
+        "unique_uniform_plus_sector": true,
+        "vertices": true
+      },
+      "complete_epoch_depth": 317116,
+      "complete_epoch_logical": 38740,
+      "complete_epoch_routed": 335316,
+      "cycle_rank": 9,
+      "fixed_divergence_dimension": 118587876497,
+      "links_and_seams": 20,
+      "plaquettes": 11,
+      "raw_seam_stage_phase": [
+        1.0,
+        0.0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "uniform_plus_sector_dimension": 1,
+      "vertices": 12
+    }
+  ],
+  "interpretation_firewall": "no source, gravity, backreaction, continuum, time, tick, occurrence, Event, Record, Born rule/history, or autonomous genesis/preparation conclusion",
+  "local_constraint_characterization": {
+    "Object_A_preservation": {
+      "all_plaquettes": 53,
+      "all_seam_all_plaquette_commutator_failures": 0,
+      "all_seam_all_plaquette_current_rows": 6708,
+      "all_seam_all_plaquette_operator_pairs": 2236,
+      "all_seams": 86,
+      "full_augmented_epoch_constraint_preservation_failures": 0,
+      "onsite_stage_preservation": {
+        "bare_occupation_flip_control_commutator": 2.939992285065125,
+        "basis_occupation_columns": 64,
+        "coin_schedule_gates": 20,
+        "coin_schedule_reconstruction_residual": 9.774239351035397e-16,
+        "failures": 0,
+        "link_action": "identity for all three onsite stages",
+        "live_L2_onsite_rotation_census": {
+          "onsite_coin_mass": 696,
+          "onsite_contact": 360,
+          "onsite_reverse_fswap": 288
+        },
+        "matter_clock": "diag(omega^N_x) on all six-mode occupation words",
+        "physical_target_bridge": "pinned Cycle870 emitted-word intertwiners supply the physical-to-target step; this certificate executes the target-to-F17-star commutators",
+        "star_clock_commutator_residuals": {
+          "coin": 0.0,
+          "composed_onsite_epoch": 0.0,
+          "contact": 0.0,
+          "reverse": 0.0
+        },
+        "unitarity_residuals": {
+          "coin": 5.297945988401815e-15,
+          "composed_onsite_epoch": 5.561024564318497e-15,
+          "contact": 0.0,
+          "reverse": 0.0
+        }
+      },
+      "onsite_stage_preservation_failures": 0,
+      "seam_one_hot_label_failures": 0,
+      "seam_plaquette_translation_commutator_failures": 0,
+      "seam_plaquette_translation_commutator_rows": 23392,
+      "seam_star_basis_rows": 421056,
+      "seam_star_preservation_failures": 0
+    },
+    "algebra": {
+      "commutation_reason": "incidence times plaquette boundary is zero mod17; label translations are abelian and preserve every unary Hamming sector",
+      "one_hot": "P1_e=sum_k |1_k><1_k|; Q_e=I-P1_e",
+      "plaquette": "S_p=product_e X_e^(boundary coefficient); S_p^17=I; the +1 sector is invariant under every plaquette translation",
+      "star": "A_x=omega^(N_x+alpha div ell), alpha in {-1,+1}, omega=exp(2*pi*i/17), with a selected eigenvalue/projector per supplied consistent sector"
+    },
+    "code_space_only": "one-hot, star, and plaquette operators characterize and preserve the admitted code space; they do not prepare, enforce, cool, or reset it",
+    "proper_frame_scope": "physical local-constraint supports, gate words, and labels only; not a full affine encoder with background selection",
+    "proper_frame_transport": {
+      "boundary_equivariance_failures": 0,
+      "edge_frame_rows": 2064,
+      "edge_orientation_label_failures": 0,
+      "edge_product_failures": 0,
+      "label_product_failures": 0,
+      "negative_edge_rows": 1032,
+      "ordered_frame_products": 576,
+      "physical_NN_gate_frame_failures": 0,
+      "physical_gate_product_failures": 0,
+      "physical_gate_product_rows": 36864,
+      "physical_star_support_frame_failures": 0,
+      "physical_star_support_product_failures": 0,
+      "physical_star_support_product_rows": 41472,
+      "plaquette_frame_rows": 1272,
+      "plaquette_generator_transport_rule": "S_p -> S_{F p}^{orientation}; the +1 eigenspace is unchanged when orientation=-1 because S and S^{-1} have the same +1 sector",
+      "plaquette_product_failures": 0,
+      "proper_frames": 24
+    },
+    "single_plaquette": {
+      "basis_link_shift_overlap": [
+        0.0,
+        0.0
+      ],
+      "basis_link_shift_residual": 1.4142135623730951,
+      "fixed_divergence_cycle_dimension": 17,
+      "nontrivial_power_identity_failures": 0,
+      "plaquette_translation_order": 17,
+      "uniform_normalization_residual": 1.1102230246251565e-16,
+      "uniform_plus_one_sector_dimension": 1,
+      "uniform_shift_overlap": [
+        0.9999999999999999,
+        0.0
+      ],
+      "uniform_shift_residual": 0.0
+    }
+  },
+  "modular_evidence_boundary": "the literal physical-word/effective-action leg and the effective-action/affine-encoder leg are separately reconstructed and pinned; no runner constructs or executes one physical affine encoder/Gauss-projector composition",
+  "name": "Cycle873 recurrent F17 uniform-affine open-box primary",
+  "provenance": {
+    "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+    "child_receipt_sha256": {
+      "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json": "28c954d13a4d0a3d0b589c4a8a8fd9d31c3d0f9774e934abb4f84aae8d568233",
+      "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json": "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
+      "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json": "d5d0dec904a034a0994d1e98e1c38b966240b91a3ad3435ac7bb01011c5b21b9"
+    },
+    "child_source_hash_mismatches": {},
+    "child_source_sha256": {
+      "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py": "fffd77a8f8d0fcba644a69f0f5ed1bd3d3e21c874de4005de10156e6b1a12177",
+      "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py": "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7",
+      "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py": "a1bc2159c5e2d5f59087860e3fe40bb1919cd4e476f6565a99c326d5af1c5ca9"
+    },
+    "expected_base_is_ancestor_of_head": true,
+    "runner": "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py"
+  },
+  "schedule_input_boundary": {
+    "color_traversal": "the deterministic order of the 24 color templates is supplied compiler schedule phase",
+    "not_proved": "unit-translation/origin-shift equivalence, physical-law translation compatibility, or host-free autonomous recurrence",
+    "parity_origin": "the owner-coordinate residues mod2 are computed relative to a supplied lattice parity origin",
+    "proved": "collision freedom, landed factor-order reconstruction, and the reported proper-frame/color transport on the three fixtures"
+  },
+  "secondary_optional_evidence": {
+    "Cycle696_C700_boundary": "not imported or tested by Cycle873; prior C696 is a classical-basis 19V/18E six-ray-tree projection rather than the full link graph, and C700 is classical only; neither is a quantum uniform-sector or gravity bridge",
+    "Cycle714_coexistence_failures": [],
+    "Cycle714_coexistence_status": "pass",
+    "closure_role": "reported but excluded from collect_primary_failures",
+    "future_open_route": "one candidate constructive route is a full-star coherent port rather than the literal ray-tree adapter; necessity and sufficiency are open"
+  },
+  "status": "pass",
+  "supplied_or_open": {
+    "finite_synthesis": "finite gate-set synthesis of ideal 2*pi/17 clock phases and order-17 projectors",
+    "genesis_and_preparation": "uniform affine-state preparation, code admission, one-hot enforcement, projector measurement, correction, cooling, reset, and recurrence invocation",
+    "periodic_topology": "periodic Wilson/harmonic sectors; the certified fixtures are contractible open boxes",
+    "schedule_origin": "the owner-coordinate parity origin and ordered 24-color traversal are supplied compiler inputs; unit-translation/origin-shift equivalence and host-free recurrence are not established"
+  },
+  "uniform_affine_code": {
+    "L2_repeated_factors": 36,
+    "L2_repeated_incidence_failures": 0,
+    "covariance_boundary": "full affine-encoder 24-frame, 576-product, and translation covariance with transported g is not established; the reported proper-frame checks belong to the separate local-constraint geometry",
+    "filled_plaquette_direct_columns": 64,
+    "filled_plaquette_direct_residual": 0.0,
+    "fixed_star_background": {
+      "covariance_boundary": "full affine-encoder 24-frame, 576-product, and translation covariance with transported g is not established here; only the separate local-constraint core checks its stated physical support/frame covariance",
+      "diagnostic_conventions": [
+        "ordered_prefix",
+        "first_anchor",
+        "last_anchor"
+      ],
+      "filled_plaquette_variant_cases": 192,
+      "filled_plaquette_variant_intertwiner_max_residual": 0.0,
+      "gauss_word": "q_g(n)=alpha*n+g mod17 with sum(g)=-alpha*N in a fixed-N sector",
+      "ordering_boundary": "ordered_prefix is one diagnostic background convention with a preferred vertex order; the theorem is also checked for first- and last-anchor backgrounds, but no preferred-order-free genesis claim is made",
+      "selection_boundary": "g and its fixed matter-number sector are input structure; this core does not select, prepare, or enforce either",
+      "type": "supplied FixedStarBackground(label, alpha, particle_number, field)"
+    },
+    "nontrivial_character_loop_residual": 0.36749903563314074,
+    "six_mode_total_occupation_extension": {
+      "FSWAP_minus_11_rows": 612,
+      "FSWAP_sign_failures": 0,
+      "alpha_normalization": "+1",
+      "fixed_background_or_star_invariance_failures": 0,
+      "incidence_failures": 0,
+      "link_labels": 17,
+      "occupation_range_failures": 0,
+      "omitted_link_shift_detected_rows": 1224,
+      "rows": 2448,
+      "scope": "algebraic alpha=+1 total-six-mode star/count extension of one selected seam; no second alpha=-1 global affine fixture, many-mode affine-state preparation, or new physical compiler",
+      "selected_seam_bits": "a,b in {0,1}",
+      "spectator_mode_counts": "s_u,s_v in {0,...,5}",
+      "total_number_failures": 0,
+      "total_occupations": "n_u=a+s_u and n_v=b+s_v, each in {0,...,6}",
+      "update": "n'_u=n_u-a+b; n'_v=n_v-b+a; ell'=ell+(a-b) mod17 at the alpha=+1 normalization",
+      "wrong_incidence_sign_detected_rows": 1224
+    },
+    "trivial_loop_overlap": [
+      1.0,
+      0.0
+    ]
+  }
+}

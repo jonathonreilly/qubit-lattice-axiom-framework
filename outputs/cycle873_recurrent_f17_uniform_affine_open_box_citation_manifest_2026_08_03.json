@@ -1,0 +1,122 @@
+{
+  "base": {
+    "commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+    "provenance_rule": "the recorded base must be an ancestor of HEAD; package receipts do not pin the mutable review HEAD",
+    "was_cycle873_unused": true,
+    "was_cycle873_unused_scope": "freshly fetched origin/main base tree before package construction"
+  },
+  "candidate_artifacts_sha256": {
+        "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md": "4f189594d0e565f2fb2183acb0bd52765cfee45b3717a5e25c452ff8d44d7207",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt": "6689ee8aac078f36507af89c20a90a19ea0721d34af74b1a98318cec06c35812",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt": "72be1cd183bf85663c6726223f9db9fb61be3e80b6ed0f3d386f32849312eb74",
+        "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json": "28c954d13a4d0a3d0b589c4a8a8fd9d31c3d0f9774e934abb4f84aae8d568233",
+        "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json": "486ed27ff7ecaaeb5dbe345f82c69a98f319410a2254bc05ab49d5811bfb840e",
+        "outputs/cycle873_recurrent_f17_uniform_affine_open_box_independent_check_receipt_2026_08_03.json": "ce3dae5a6fafd675d69fdbaa0e0e651e07988b5409c3bff914a86341be18ced9",
+        "outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json": "1377569cebc4feb82a568460f3c730e2e6618c457fff10ca96ba35788dd517a1",
+        "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json": "d5d0dec904a034a0994d1e98e1c38b966240b91a3ad3435ac7bb01011c5b21b9",
+        "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py": "fffd77a8f8d0fcba644a69f0f5ed1bd3d3e21c874de4005de10156e6b1a12177",
+        "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py": "69491f036463d9eb8947cdd4ad832f71f7c6e0cdd3f985adcbc29de4cdca37c7",
+        "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py": "fa8d7d6b8f128452560d16d3f702e5536eb45dc3633a91e3dc8d5c7fa893e9fd",
+        "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py": "c7cc974a8a5ebe6481ba71bf210089b63bfe92a8ca76e60600484562380e6ef2",
+        "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py": "a1bc2159c5e2d5f59087860e3fe40bb1919cd4e476f6565a99c326d5af1c5ca9"
+  },
+  "claim_boundaries": {
+    "Cycle219": "actual beta=-0.3 free one-particle recurrence/dispersion fixture only; not a periodic physical F17 box or interacting finite-box spectrum",
+    "Cycle696_Cycle700": "not imported, pinned, or cited as closure; C696 is a classical 19V/18E six-ray-tree projection and C700 is classical only",
+    "Cycle714": "primitive constants, work-role indices, matrices, and reversible word definitions are literal implementation dependencies; packet coexistence is secondary optional evidence excluded from the primary failure predicate",
+        "affine_background": "fixed compatible g and fixed-N sector are supplied; the executable global affine fixture is normalized to alpha=+1, no alpha=-1 global encoder is claimed, ordered-prefix is a diagnostic convention, and full affine-encoder 24/576/translation covariance is not established",
+        "constraints": "characterization and preservation only; no preparation, enforcement, projection, cooling, reset, or genesis",
+        "evidence_composition": "physical-word/effective-action and effective-action/affine-encoder legs are separately reconstructed and pinned; no runner constructs or executes one physical affine encoder/Gauss-projector composition",
+        "onsite_F17_star": "the live Cycle870 coin, reverse, contact, and composed onsite targets are lifted to all 64 occupation columns and tested for F17-star commutation and unitarity with an active bare-flip control",
+        "raw_history_diagnostic": "the computational-basis path-history witness is route-local only; N1-N8 returns FAIL for any obstruction, no-go, minimum-content, or axiom-pressure claim because the uniform affine route succeeds and other constructive routes remain open",
+        "recurrence_eighth_power": "the affine core tests same-block eightfold multiplication consistency and the independent checker compares encoded and native eighth powers; neither is an autonomous recurrence theorem",
+        "schedule_origin": "owner-coordinate parity origin and ordered 24-color traversal are supplied compiler inputs; unit-translation/origin-shift equivalence and host-free recurrence are not established",
+        "six_mode_extension": "2,448 alpha=+1 algebraic total-occupation rows including 612 11 FSWAP-minus rows; not a many-mode state-preparation compiler"
+  },
+  "package_candidate_files": [
+    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt",
+    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt",
+    "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_independent_check_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json",
+    "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json",
+    "scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py",
+    "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py"
+  ],
+  "schema": "cycle873-recurrent-f17-uniform-affine-open-box-citation-manifest-v1",
+  "self_reference_exclusions": {
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json": "a file cannot contain its own SHA-256 without a fixed-point requirement",
+    "outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json": "the generated receipt cannot contain and pin its own final SHA-256",
+    "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py": "the acceptance source pins this manifest, so manifest-to-acceptance pinning would create a mutual hash cycle; the acceptance receipt records the source hash"
+  },
+  "upstream_citations_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "role": "direct lattice, qubit, and admissibility premise surface; no Record interpretation is added",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md": {
+      "role": "direct theorem-level recurrent physical-M2 input",
+      "sha256": "74beb1de39ea0e579b8c709fdb294602f8cb959f1283b7556eb4c62335fd2e2b"
+    },
+    "docs/OPENREFERENCE_MATTER_ENDPOINT_CAUSAL_INTERVAL_PACKET_CYCLE871_BOUNDED_THEOREM_NOTE_2026-08-02.md": {
+      "role": "direct endpoint-B extraction, coframe, and placement claim surface only",
+      "sha256": "bd60421581e1adda906d0f37580437500eb4fcd274257760e7e4b53a13a7258d"
+    },
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md": {
+      "role": "direct primitive constants, roles, matrices, and reversible word definitions; packet closure remains optional",
+      "sha256": "bd0a8c21774c78411b0dd5477a08dabcb16005ce013500c6e58bdc4684b088a2"
+    },
+    "docs/work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md": {
+      "role": "direct actual beta=-0.3 free one-particle coin/mass fixture note",
+      "sha256": "999e88c014f22637caeeb904bba3c27ee5beff8f4bbf04975f625094035a28ec"
+    },
+    "docs/work_history/repo/review_feedback/PROPER_CUBIC_BOUND_OBJECT_EQUIVALENCE_CYCLE210_NOTE_2026-07-16.md": {
+      "role": "direct analytic mass relation fixture consumed through Cycle219",
+      "sha256": "c05aa08d1baa25a814f5ab583eb640822ea2fe6630f46da285de2fcd84d1285f"
+    },
+    "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md": {
+      "role": "direct inherited contact/beta implementation fixture note",
+      "sha256": "a7a3a0a021dbd691c6c2ddb9163679b445c5110b8150f63395271037963c7132"
+    },
+    "outputs/cycle870_openreference_recurrent_update_independent_receipt_2026_08_02.json": {
+      "role": "direct independent evidence for the inherited Cycle870 epoch",
+      "sha256": "f3fa00ade5696bf3061a2bedc776a910ad801e6bef28a7558f1a3f07ab7a813f"
+    },
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": {
+      "role": "direct actual beta=-0.3 free one-particle coin and dispersion fixture",
+      "sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a"
+    },
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py": {
+      "role": "literal primitive constants, work roles, matrices, and Toffoli/Fredkin word definitions; packet coexistence remains optional",
+      "sha256": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a"
+    },
+    "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": {
+      "role": "direct landed recurrent compiler input",
+      "sha256": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd"
+    },
+    "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py": {
+      "role": "direct native recurrent factor-stream input",
+      "sha256": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237"
+    },
+    "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py": {
+      "role": "direct endpoint B extraction, coframe, and placement helper",
+      "sha256": "6645156635b4354d937759a28e71215121a19cefcc2f294a2791e6a84cf1423b"
+    },
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": {
+      "role": "pinned Cycle219 analytic mass implementation input",
+      "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b"
+    },
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": {
+      "role": "pinned inherited Cycle870 contact/beta implementation input",
+      "sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
+    }
+  }
+}

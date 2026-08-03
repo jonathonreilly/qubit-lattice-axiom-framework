@@ -1,0 +1,1831 @@
+{
+  "claim_scope": "all landed directed seams on L2, L3, and held noncubic 3x2x2; supplied lawful matter, one-hot F17 banks, typed family/polarity, coframes, parity origin, ordered color traversal, recurrence invocation, and returned-route substrate",
+  "computational_basis_path_history_witness": {
+    "fixed_Gauss_sector_identifies_or_erases_closed_circulation": false,
+    "integrated_landed_mass_dispersion_fixture_executed": false,
+    "joint_F17_history_inner_product": 0,
+    "lower_G_matches_initial": true,
+    "lower_divergence": {
+      "(0, 0)": 1,
+      "(0, 1)": 0,
+      "(1, 0)": 0,
+      "(1, 1)": 16
+    },
+    "lower_link_labels": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "matter_endpoint_inner_product": 1,
+    "matter_reduced_interference_cross_term_relative_to_untracked_field": 0,
+    "one_particle_paths": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "same_endpoint_divergence": true,
+    "spectrum_boundary": "for supplied computational-basis link initialization, the witness does not by itself support inheritance of the landed matter-only mass/dispersion fixture: alternative paths occupy orthogonal divergence-free F17 circulations inside the same endpoint G sector.  This is a route-local diagnostic, not an obstruction claim: the uniform +1 cycle-space sector constructed separately identifies those translations",
+    "upper_G_matches_initial": true,
+    "upper_divergence": {
+      "(0, 0)": 1,
+      "(0, 1)": 0,
+      "(1, 0)": 0,
+      "(1, 1)": 16
+    },
+    "upper_link_labels": [
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  "coordinate_covariance": {
+    "bank_product_failures": 0,
+    "bank_product_rows": 576,
+    "color_frame_failures": 0,
+    "color_frame_rows": 576,
+    "color_product_failures": 0,
+    "color_product_rows": 13824,
+    "frame_bank_failures": 0,
+    "frame_route_path_failures": 0,
+    "ordered_frame_products": 576,
+    "path_product_failures": 0,
+    "path_product_rows": 153792,
+    "proper_frames": 24,
+    "signature_product_failures": 0,
+    "signature_product_rows": 343872,
+    "unique_normalized_bank_templates": 1,
+    "unique_normalized_instruction_signatures": 597,
+    "unique_normalized_route_paths": 267
+  },
+  "factor_level_proof": {
+    "grouping_boundary": "the augmented factor is the complete grouped emitted M2 word; no claim is made that its four individual seam rotations separately preserve the affine star code before the group is complete",
+    "landed_seam_phase": "the four commuting pi/2 rotations emit raw -i*FSWAP; the formal +pi/2 zero-site scalar restores the exact FSWAP representative",
+    "literal_emitted_order": "endpoint B extraction -> landed four-rotation seam factor -> mutually exclusive positive/negative predicate-controlled unary shifts -> endpoint cleanup"
+  },
+  "failures": [],
+  "fixtures": [
+    {
+      "C870_constraint_certificate": {
+        "abstract_constraint_commutator_failures": 0,
+        "abstract_constraint_rank": 120,
+        "abstract_constraint_rows": 121,
+        "abstract_edge_qubits": 168,
+        "abstract_phase_dependency_failures": 0,
+        "abstract_update_preservation_failures": 0,
+        "all_D_product_identity": true,
+        "expected_abstract_rank": 120,
+        "expected_physical_rank": 132,
+        "maximum_abstract_rotation_weight": 19,
+        "maximum_physical_rotation_diameter": 33,
+        "maximum_physical_rotation_weight": 20,
+        "physical_carrier_M2": 180,
+        "physical_constraint_commutator_failures": 0,
+        "physical_constraint_rank": 132,
+        "physical_constraint_rows": 133,
+        "physical_phase_dependency_failures": 0,
+        "physical_update_preservation_failures": 0,
+        "repetition_constraints": 12,
+        "signed_repetition_lift_homomorphism_failures": 0,
+        "update_hermiticity_failures": 0
+      },
+      "F17_only_added_instruction_census_failures": 0,
+      "F17_only_added_instructions_excluding_seam": 634,
+      "F17_only_all_seam_bank_union_M2": 240,
+      "F17_only_assigned_plus_route_support_union_M2": 2787,
+      "F17_only_bank_M2_per_seam": 20,
+      "F17_only_bank_carrier_aux_collision_sites": 0,
+      "F17_only_bank_pair_overlap_pairs": 0,
+      "F17_only_bank_pair_overlap_sites": 0,
+      "F17_only_declared_assigned_M2": 708,
+      "F17_only_expected_all_seam_bank_union_M2": 240,
+      "F17_only_fixed_schedule_identity_padding": 0,
+      "F17_only_fixed_schedule_parallel_routed_depth": 58280,
+      "F17_only_macro_max_logical_instructions": 742,
+      "F17_only_macro_max_routed_gates": 5662,
+      "F17_only_macro_min_logical_instructions": 726,
+      "F17_only_macro_min_routed_gates": 4418,
+      "F17_only_naive_axis_only_route_footprint_collisions": 12,
+      "F17_only_restored_route_transit_not_assigned_M2": 2079,
+      "F17_only_route_failures": 0,
+      "F17_only_route_touched_union_M2": 2547,
+      "F17_only_same_color_route_footprint_collisions": 0,
+      "F17_only_total_macro_logical_instructions": 8808,
+      "F17_only_total_macro_routed_gates": 58280,
+      "F17_role_M2_per_seam": 20,
+      "active_colors": 12,
+      "active_schedule_color_deletions": {
+        "(0, 0, 0, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1446,
+          "omitted_routed_gates": 7100,
+          "omitted_seams": 1
+        },
+        "(0, 0, 0, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1450,
+          "omitted_routed_gates": 7208,
+          "omitted_seams": 1
+        },
+        "(0, 0, 1, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1450,
+          "omitted_routed_gates": 7176,
+          "omitted_seams": 1
+        },
+        "(0, 0, 1, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1454,
+          "omitted_routed_gates": 7284,
+          "omitted_seams": 1
+        },
+        "(1, 0, 0, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1450,
+          "omitted_routed_gates": 7080,
+          "omitted_seams": 1
+        },
+        "(1, 0, 0, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1454,
+          "omitted_routed_gates": 7188,
+          "omitted_seams": 1
+        },
+        "(1, 1, 0, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1454,
+          "omitted_routed_gates": 7916,
+          "omitted_seams": 1
+        },
+        "(1, 1, 0, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1458,
+          "omitted_routed_gates": 8192,
+          "omitted_seams": 1
+        },
+        "(2, 0, 0, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1454,
+          "omitted_routed_gates": 7172,
+          "omitted_seams": 1
+        },
+        "(2, 0, 1, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1458,
+          "omitted_routed_gates": 7408,
+          "omitted_seams": 1
+        },
+        "(2, 1, 0, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1458,
+          "omitted_routed_gates": 8176,
+          "omitted_seams": 1
+        },
+        "(2, 1, 1, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1462,
+          "omitted_routed_gates": 8324,
+          "omitted_seams": 1
+        }
+      },
+      "active_single_packet_site_interface_deletions": 708,
+      "active_single_rail_bank_deletions": 204,
+      "all_seam_bank_union_M2": 912,
+      "alpha_plus_minus_route_census_failures": 0,
+      "assigned_plus_route_support_union_M2": 2964,
+      "augmented_epoch_ledgers": {
+        "A_F17_only": {
+          "baseline_nonseam_compiled_instructions": 15848,
+          "baseline_nonseam_rotations": 1344,
+          "baseline_nonseam_routed_gates": 146008,
+          "complete_epoch_fixed_routed_depth": 204288,
+          "complete_epoch_logical_instructions": 24656,
+          "complete_epoch_logical_word_sha256": "6a4fba2a3e0cc6143f624025bcff75f623f3b0c3247a3525ce87d55e54cf0711",
+          "complete_epoch_non_NN_or_return_failures": 0,
+          "complete_epoch_routed_NN_gates": 204288,
+          "complete_epoch_routed_schedule_sha256": "35031febf1036fc7e277255b8938532c64dbf68a21d8fd66596b0c0a3680dabc",
+          "depth_convention": "landed nonseam prefix/suffix serialized; 24-color seam stage uses identity padding to the longest disjoint macro in each color",
+          "factor_order_reconstruction_failures": 0,
+          "replaced_seam_macro_logical_instructions": 8808,
+          "replaced_seam_macro_routed_gates": 58280,
+          "replaced_seam_macros": 12,
+          "retained_nonseam_word_sha256": "5e36cd0a7a4d83a57c28d548c6985962410ace2dd54eb3ab987dbfcd63681c49",
+          "seam_stage_schedule_sha256": "74f24db6629a021ae1fa17f3fa124e21cebc3fee8c1f9953b368e0ed42910e67"
+        },
+        "B_F17_plus_Cycle714": {
+          "baseline_nonseam_compiled_instructions": 15848,
+          "baseline_nonseam_rotations": 1344,
+          "baseline_nonseam_routed_gates": 146008,
+          "complete_epoch_fixed_routed_depth": 236232,
+          "complete_epoch_logical_instructions": 33296,
+          "complete_epoch_logical_word_sha256": "8bdd9ba41d6085eaabd1a12456bf39f13a0be91450105bb935f677867413063b",
+          "complete_epoch_non_NN_or_return_failures": 0,
+          "complete_epoch_routed_NN_gates": 236232,
+          "complete_epoch_routed_schedule_sha256": "391617b1e4f7024982d1524d3dc5a1b2bbc52c89b02885319f72ad8411e5910a",
+          "depth_convention": "landed nonseam prefix/suffix serialized; 24-color seam stage uses identity padding to the longest disjoint macro in each color",
+          "factor_order_reconstruction_failures": 0,
+          "replaced_seam_macro_logical_instructions": 17448,
+          "replaced_seam_macro_routed_gates": 90224,
+          "replaced_seam_macros": 12,
+          "retained_nonseam_word_sha256": "5e36cd0a7a4d83a57c28d548c6985962410ace2dd54eb3ab987dbfcd63681c49",
+          "seam_stage_schedule_sha256": "ed975f411bdaa27048daa1d64acc8a1de1f74c1a9bcb66eb06b3bcb6360c03cc"
+        }
+      },
+      "bank_carrier_aux_collision_sites": 0,
+      "bank_pair_overlap_pairs": 0,
+      "bank_pair_overlap_sites": 0,
+      "bank_radius": 2,
+      "baseline_partition_failure": 0,
+      "cells": 8,
+      "coexistence_added_instruction_census_failures": 0,
+      "coexistence_added_instructions_excluding_seam_and_packet": 636,
+      "combined_packet_plus_F17_bank_M2_per_seam": 76,
+      "current_to_pointer_alias_collision_mutation_detected_seams": 12,
+      "current_to_pointer_alias_collision_mutation_undetected": 0,
+      "declared_assigned_M2": 1380,
+      "encoded_carrier_M2": 180,
+      "endpoint_B_physical_constraint_anticommutators": 0,
+      "envelope_width_failures_at_pitch32": 0,
+      "expected_all_seam_bank_union_M2": 912,
+      "fixed_schedule_identity_padding": 0,
+      "fixed_schedule_parallel_routed_depth": 90224,
+      "fixed_schedule_sha256": "ed975f411bdaa27048daa1d64acc8a1de1f74c1a9bcb66eb06b3bcb6360c03cc",
+      "inactive_schedule_color_deletions": [],
+      "incremental_persistent_F17_rail_M2_per_seam": 17,
+      "intentional_packet_F17_role_aliases_per_seam": 3,
+      "local_route_footprint_envelopes": {
+        "0": {
+          "high": [
+            12,
+            7,
+            7
+          ],
+          "low": [
+            -12,
+            -9,
+            -9
+          ],
+          "width": [
+            24,
+            16,
+            16
+          ]
+        },
+        "1": {
+          "high": [
+            12,
+            7,
+            8
+          ],
+          "low": [
+            -12,
+            -9,
+            -9
+          ],
+          "width": [
+            24,
+            16,
+            17
+          ]
+        },
+        "2": {
+          "high": [
+            12,
+            8,
+            8
+          ],
+          "low": [
+            -12,
+            -9,
+            -9
+          ],
+          "width": [
+            24,
+            17,
+            17
+          ]
+        }
+      },
+      "macro_logical_instruction_census": {
+        "1446": 1,
+        "1450": 3,
+        "1454": 4,
+        "1458": 3,
+        "1462": 1
+      },
+      "macro_max_logical_instructions": 1462,
+      "macro_max_routed_gates": 8324,
+      "macro_min_logical_instructions": 1446,
+      "macro_min_routed_gates": 7080,
+      "maximum_parallel_macros": 1,
+      "maximum_route_distance": 33,
+      "naive_axis_only_macro_pairs": 18,
+      "naive_axis_only_route_footprint_collisions": 12,
+      "noncommuting_order_failures": 0,
+      "noncommuting_seam_factor_pairs": 12,
+      "ordered_active_colors": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          0
+        ]
+      ],
+      "packet_M2_per_seam": 59,
+      "packet_entry_work_failures": 0,
+      "packet_instructions_per_seam": 718,
+      "persistent_rail_packet_collision_sites": 0,
+      "phase": {
+        "formal_scalar_angle_per_seam": 1.5707963267948966,
+        "formal_scalar_routed_gates": 0,
+        "maximum_formal_corrected_residual": 0.0,
+        "maximum_raw_square_to_identity_residual": 2.0,
+        "maximum_raw_square_to_minus_identity_residual": 0.0,
+        "raw_phase": [
+          0.0,
+          -1.0
+        ],
+        "seam_phase_rows": 12,
+        "unchanged_full_update_compiled_relative_phase_angle": -168.20687791288861,
+        "unchanged_full_update_formal_correction_angle": 168.20687791288861
+      },
+      "preparation_auxiliary_M2": 288,
+      "recurrent_separation_pitch": 32,
+      "repeated_color_groups": 0,
+      "restored_route_transit_not_assigned_M2": 1584,
+      "retained_nonseam_rotations": 1344,
+      "retained_post_seam_rotations": 360,
+      "retained_pre_seam_rotations": 984,
+      "route_failures": 0,
+      "route_touched_union_M2": 2724,
+      "same_axis_parity_rotation_anticommutators": 0,
+      "same_color_macro_pairs": 0,
+      "same_color_route_footprint_collisions": 0,
+      "schedule_color_rule": "(axis, owner_x mod2, owner_y mod2, owner_z mod2)",
+      "schedule_color_templates": 24,
+      "scheduled_duplicate_seams": 0,
+      "scheduled_missing_seams": 0,
+      "seams": 12,
+      "selected_factor_match_failures": 0,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "shared_role_alias_failures": 0,
+      "single_rail_bank_deletion_lost_one_hot_columns": 204,
+      "source_update_instructions": 17048,
+      "source_update_rotations": 1392,
+      "stage_abstract_Gauss_preservation_failures": {
+        "coin": 0,
+        "contact": 0,
+        "reverse": 0,
+        "seam": 0
+      },
+      "total_macro_logical_instructions": 17448,
+      "total_macro_routed_gates": 90224,
+      "undetected_single_packet_site_interface_deletions": 0,
+      "undetected_single_rail_bank_deletions": 0
+    },
+    {
+      "C870_constraint_certificate": {
+        "abstract_constraint_commutator_failures": 0,
+        "abstract_constraint_rank": 432,
+        "abstract_constraint_rows": 440,
+        "abstract_edge_qubits": 594,
+        "abstract_phase_dependency_failures": 0,
+        "abstract_update_preservation_failures": 0,
+        "all_D_product_identity": true,
+        "expected_abstract_rank": 432,
+        "expected_physical_rank": 486,
+        "maximum_abstract_rotation_weight": 24,
+        "maximum_physical_rotation_diameter": 33,
+        "maximum_physical_rotation_weight": 25,
+        "physical_carrier_M2": 648,
+        "physical_constraint_commutator_failures": 0,
+        "physical_constraint_rank": 486,
+        "physical_constraint_rows": 494,
+        "physical_phase_dependency_failures": 0,
+        "physical_update_preservation_failures": 0,
+        "repetition_constraints": 54,
+        "signed_repetition_lift_homomorphism_failures": 0,
+        "update_hermiticity_failures": 0
+      },
+      "F17_only_added_instruction_census_failures": 0,
+      "F17_only_added_instructions_excluding_seam": 634,
+      "F17_only_all_seam_bank_union_M2": 1080,
+      "F17_only_assigned_plus_route_support_union_M2": 11886,
+      "F17_only_bank_M2_per_seam": 20,
+      "F17_only_bank_carrier_aux_collision_sites": 0,
+      "F17_only_bank_pair_overlap_pairs": 0,
+      "F17_only_bank_pair_overlap_sites": 0,
+      "F17_only_declared_assigned_M2": 2700,
+      "F17_only_expected_all_seam_bank_union_M2": 1080,
+      "F17_only_fixed_schedule_identity_padding": 15760,
+      "F17_only_fixed_schedule_parallel_routed_depth": 139776,
+      "F17_only_macro_max_logical_instructions": 762,
+      "F17_only_macro_max_routed_gates": 6690,
+      "F17_only_macro_min_logical_instructions": 730,
+      "F17_only_macro_min_routed_gates": 4510,
+      "F17_only_naive_axis_only_route_footprint_collisions": 157,
+      "F17_only_restored_route_transit_not_assigned_M2": 9186,
+      "F17_only_route_failures": 0,
+      "F17_only_route_touched_union_M2": 11130,
+      "F17_only_same_color_route_footprint_collisions": 0,
+      "F17_only_total_macro_logical_instructions": 40140,
+      "F17_only_total_macro_routed_gates": 293540,
+      "F17_role_M2_per_seam": 20,
+      "active_colors": 24,
+      "active_schedule_color_deletions": {
+        "(0, 0, 0, 0)": {
+          "active_F17_basis_witnesses": 4,
+          "omitted_logical_instructions": 5816,
+          "omitted_routed_gates": 29616,
+          "omitted_seams": 4
+        },
+        "(0, 0, 0, 1)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2920,
+          "omitted_routed_gates": 15340,
+          "omitted_seams": 2
+        },
+        "(0, 0, 1, 0)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2920,
+          "omitted_routed_gates": 15308,
+          "omitted_seams": 2
+        },
+        "(0, 0, 1, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1466,
+          "omitted_routed_gates": 7920,
+          "omitted_seams": 1
+        },
+        "(0, 1, 0, 0)": {
+          "active_F17_basis_witnesses": 4,
+          "omitted_logical_instructions": 5816,
+          "omitted_routed_gates": 30992,
+          "omitted_seams": 4
+        },
+        "(0, 1, 0, 1)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2920,
+          "omitted_routed_gates": 16124,
+          "omitted_seams": 2
+        },
+        "(0, 1, 1, 0)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2920,
+          "omitted_routed_gates": 16124,
+          "omitted_seams": 2
+        },
+        "(0, 1, 1, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1466,
+          "omitted_routed_gates": 8376,
+          "omitted_seams": 1
+        },
+        "(1, 0, 0, 0)": {
+          "active_F17_basis_witnesses": 4,
+          "omitted_logical_instructions": 5832,
+          "omitted_routed_gates": 31048,
+          "omitted_seams": 4
+        },
+        "(1, 0, 0, 1)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2928,
+          "omitted_routed_gates": 16052,
+          "omitted_seams": 2
+        },
+        "(1, 0, 1, 0)": {
+          "active_F17_basis_witnesses": 4,
+          "omitted_logical_instructions": 5832,
+          "omitted_routed_gates": 31080,
+          "omitted_seams": 4
+        },
+        "(1, 0, 1, 1)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2928,
+          "omitted_routed_gates": 16068,
+          "omitted_seams": 2
+        },
+        "(1, 1, 0, 0)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2936,
+          "omitted_routed_gates": 17124,
+          "omitted_seams": 2
+        },
+        "(1, 1, 0, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1474,
+          "omitted_routed_gates": 8824,
+          "omitted_seams": 1
+        },
+        "(1, 1, 1, 0)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2936,
+          "omitted_routed_gates": 17396,
+          "omitted_seams": 2
+        },
+        "(1, 1, 1, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1474,
+          "omitted_routed_gates": 8960,
+          "omitted_seams": 1
+        },
+        "(2, 0, 0, 0)": {
+          "active_F17_basis_witnesses": 4,
+          "omitted_logical_instructions": 5848,
+          "omitted_routed_gates": 31752,
+          "omitted_seams": 4
+        },
+        "(2, 0, 0, 1)": {
+          "active_F17_basis_witnesses": 4,
+          "omitted_logical_instructions": 5848,
+          "omitted_routed_gates": 31784,
+          "omitted_seams": 4
+        },
+        "(2, 0, 1, 0)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2944,
+          "omitted_routed_gates": 16756,
+          "omitted_seams": 2
+        },
+        "(2, 0, 1, 1)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2944,
+          "omitted_routed_gates": 16772,
+          "omitted_seams": 2
+        },
+        "(2, 1, 0, 0)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2944,
+          "omitted_routed_gates": 17516,
+          "omitted_seams": 2
+        },
+        "(2, 1, 0, 1)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2944,
+          "omitted_routed_gates": 17788,
+          "omitted_seams": 2
+        },
+        "(2, 1, 1, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1482,
+          "omitted_routed_gates": 9216,
+          "omitted_seams": 1
+        },
+        "(2, 1, 1, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1482,
+          "omitted_routed_gates": 9352,
+          "omitted_seams": 1
+        }
+      },
+      "active_single_packet_site_interface_deletions": 3186,
+      "active_single_rail_bank_deletions": 918,
+      "all_seam_bank_union_M2": 4104,
+      "alpha_plus_minus_route_census_failures": 0,
+      "assigned_plus_route_support_union_M2": 12671,
+      "augmented_epoch_ledgers": {
+        "A_F17_only": {
+          "baseline_nonseam_compiled_instructions": 55134,
+          "baseline_nonseam_rotations": 4536,
+          "baseline_nonseam_routed_gates": 549222,
+          "complete_epoch_fixed_routed_depth": 688998,
+          "complete_epoch_logical_instructions": 95274,
+          "complete_epoch_logical_word_sha256": "304439d4f899f8c490a569f84dfb4c5115be60cf61727229e466fa0785c16e7c",
+          "complete_epoch_non_NN_or_return_failures": 0,
+          "complete_epoch_routed_NN_gates": 842762,
+          "complete_epoch_routed_schedule_sha256": "f380bc189fc8e9c109be99e0780ac55e12adb157308d9fadb6b02b8ca4943838",
+          "depth_convention": "landed nonseam prefix/suffix serialized; 24-color seam stage uses identity padding to the longest disjoint macro in each color",
+          "factor_order_reconstruction_failures": 0,
+          "replaced_seam_macro_logical_instructions": 40140,
+          "replaced_seam_macro_routed_gates": 293540,
+          "replaced_seam_macros": 54,
+          "retained_nonseam_word_sha256": "be5885ae14ba81fca0f8c960788500ac0ef718fe7ce8c10d1797db3649d0a34c",
+          "seam_stage_schedule_sha256": "b137e174e0bbb47063dcea2d5cab63e10ab30229eb40e58d8edf44f170230401"
+        },
+        "B_F17_plus_Cycle714": {
+          "baseline_nonseam_compiled_instructions": 55134,
+          "baseline_nonseam_rotations": 4536,
+          "baseline_nonseam_routed_gates": 549222,
+          "complete_epoch_fixed_routed_depth": 752886,
+          "complete_epoch_logical_instructions": 134154,
+          "complete_epoch_logical_word_sha256": "2338829bd3a38eedf8db6052f9ea3985c2831aa67a42e5ff3cc0213bd4dde053",
+          "complete_epoch_non_NN_or_return_failures": 0,
+          "complete_epoch_routed_NN_gates": 986510,
+          "complete_epoch_routed_schedule_sha256": "84fcb066c4ec0b656b796f923788e5c4b365f5cc3477569f000475c2e4ed8392",
+          "depth_convention": "landed nonseam prefix/suffix serialized; 24-color seam stage uses identity padding to the longest disjoint macro in each color",
+          "factor_order_reconstruction_failures": 0,
+          "replaced_seam_macro_logical_instructions": 79020,
+          "replaced_seam_macro_routed_gates": 437288,
+          "replaced_seam_macros": 54,
+          "retained_nonseam_word_sha256": "be5885ae14ba81fca0f8c960788500ac0ef718fe7ce8c10d1797db3649d0a34c",
+          "seam_stage_schedule_sha256": "e0401a003abce3020c6a953c844f5006be01dd73b4599232d10f452b0ed04024"
+        }
+      },
+      "bank_carrier_aux_collision_sites": 0,
+      "bank_pair_overlap_pairs": 0,
+      "bank_pair_overlap_sites": 0,
+      "bank_radius": 2,
+      "baseline_partition_failure": 0,
+      "cells": 27,
+      "coexistence_added_instruction_census_failures": 0,
+      "coexistence_added_instructions_excluding_seam_and_packet": 636,
+      "combined_packet_plus_F17_bank_M2_per_seam": 76,
+      "current_to_pointer_alias_collision_mutation_detected_seams": 54,
+      "current_to_pointer_alias_collision_mutation_undetected": 0,
+      "declared_assigned_M2": 5724,
+      "encoded_carrier_M2": 648,
+      "endpoint_B_physical_constraint_anticommutators": 0,
+      "envelope_width_failures_at_pitch32": 0,
+      "expected_all_seam_bank_union_M2": 4104,
+      "fixed_schedule_identity_padding": 15760,
+      "fixed_schedule_parallel_routed_depth": 203664,
+      "fixed_schedule_sha256": "e0401a003abce3020c6a953c844f5006be01dd73b4599232d10f452b0ed04024",
+      "inactive_schedule_color_deletions": [],
+      "incremental_persistent_F17_rail_M2_per_seam": 17,
+      "intentional_packet_F17_role_aliases_per_seam": 3,
+      "local_route_footprint_envelopes": {
+        "0": {
+          "high": [
+            15,
+            7,
+            7
+          ],
+          "low": [
+            -16,
+            -9,
+            -9
+          ],
+          "width": [
+            31,
+            16,
+            16
+          ]
+        },
+        "1": {
+          "high": [
+            15,
+            7,
+            8
+          ],
+          "low": [
+            -16,
+            -9,
+            -9
+          ],
+          "width": [
+            31,
+            16,
+            17
+          ]
+        },
+        "2": {
+          "high": [
+            15,
+            8,
+            8
+          ],
+          "low": [
+            -16,
+            -9,
+            -9
+          ],
+          "width": [
+            31,
+            17,
+            17
+          ]
+        }
+      },
+      "macro_logical_instruction_census": {
+        "1450": 2,
+        "1454": 6,
+        "1458": 12,
+        "1462": 12,
+        "1466": 8,
+        "1470": 6,
+        "1474": 6,
+        "1482": 2
+      },
+      "macro_max_logical_instructions": 1482,
+      "macro_max_routed_gates": 9352,
+      "macro_min_logical_instructions": 1450,
+      "macro_min_routed_gates": 7172,
+      "maximum_parallel_macros": 4,
+      "maximum_route_distance": 33,
+      "naive_axis_only_macro_pairs": 459,
+      "naive_axis_only_route_footprint_collisions": 157,
+      "noncommuting_order_failures": 0,
+      "noncommuting_seam_factor_pairs": 72,
+      "ordered_active_colors": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "packet_M2_per_seam": 59,
+      "packet_entry_work_failures": 0,
+      "packet_instructions_per_seam": 718,
+      "persistent_rail_packet_collision_sites": 0,
+      "phase": {
+        "formal_scalar_angle_per_seam": 1.5707963267948966,
+        "formal_scalar_routed_gates": 0,
+        "maximum_formal_corrected_residual": 0.0,
+        "maximum_raw_square_to_identity_residual": 2.0,
+        "maximum_raw_square_to_minus_identity_residual": 0.0,
+        "raw_phase": [
+          0.0,
+          -1.0
+        ],
+        "seam_phase_rows": 54,
+        "unchanged_full_update_compiled_relative_phase_angle": -588.9039633677298,
+        "unchanged_full_update_formal_correction_angle": 588.9039633677298
+      },
+      "preparation_auxiliary_M2": 972,
+      "recurrent_separation_pitch": 32,
+      "repeated_color_groups": 18,
+      "restored_route_transit_not_assigned_M2": 6947,
+      "retained_nonseam_rotations": 4536,
+      "retained_post_seam_rotations": 1215,
+      "retained_pre_seam_rotations": 3321,
+      "route_failures": 0,
+      "route_touched_union_M2": 11915,
+      "same_axis_parity_rotation_anticommutators": 0,
+      "same_color_macro_pairs": 48,
+      "same_color_route_footprint_collisions": 0,
+      "schedule_color_rule": "(axis, owner_x mod2, owner_y mod2, owner_z mod2)",
+      "schedule_color_templates": 24,
+      "scheduled_duplicate_seams": 0,
+      "scheduled_missing_seams": 0,
+      "seams": 54,
+      "selected_factor_match_failures": 0,
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "shared_role_alias_failures": 0,
+      "single_rail_bank_deletion_lost_one_hot_columns": 918,
+      "source_update_instructions": 61038,
+      "source_update_rotations": 4752,
+      "stage_abstract_Gauss_preservation_failures": {
+        "coin": 0,
+        "contact": 0,
+        "reverse": 0,
+        "seam": 0
+      },
+      "total_macro_logical_instructions": 79020,
+      "total_macro_routed_gates": 437288,
+      "undetected_single_packet_site_interface_deletions": 0,
+      "undetected_single_rail_bank_deletions": 0
+    },
+    {
+      "C870_constraint_certificate": {
+        "abstract_constraint_commutator_failures": 0,
+        "abstract_constraint_rank": 184,
+        "abstract_constraint_rows": 186,
+        "abstract_edge_qubits": 256,
+        "abstract_phase_dependency_failures": 0,
+        "abstract_update_preservation_failures": 0,
+        "all_D_product_identity": true,
+        "expected_abstract_rank": 184,
+        "expected_physical_rank": 204,
+        "maximum_abstract_rotation_weight": 21,
+        "maximum_physical_rotation_diameter": 33,
+        "maximum_physical_rotation_weight": 22,
+        "physical_carrier_M2": 276,
+        "physical_constraint_commutator_failures": 0,
+        "physical_constraint_rank": 204,
+        "physical_constraint_rows": 206,
+        "physical_phase_dependency_failures": 0,
+        "physical_update_preservation_failures": 0,
+        "repetition_constraints": 20,
+        "signed_repetition_lift_homomorphism_failures": 0,
+        "update_hermiticity_failures": 0
+      },
+      "F17_only_added_instruction_census_failures": 0,
+      "F17_only_added_instructions_excluding_seam": 634,
+      "F17_only_all_seam_bank_union_M2": 400,
+      "F17_only_assigned_plus_route_support_union_M2": 4547,
+      "F17_only_bank_M2_per_seam": 20,
+      "F17_only_bank_carrier_aux_collision_sites": 0,
+      "F17_only_bank_pair_overlap_pairs": 0,
+      "F17_only_bank_pair_overlap_sites": 0,
+      "F17_only_declared_assigned_M2": 1108,
+      "F17_only_expected_all_seam_bank_union_M2": 400,
+      "F17_only_fixed_schedule_identity_padding": 3760,
+      "F17_only_fixed_schedule_parallel_routed_depth": 84768,
+      "F17_only_macro_max_logical_instructions": 750,
+      "F17_only_macro_max_routed_gates": 6046,
+      "F17_only_macro_min_logical_instructions": 730,
+      "F17_only_macro_min_routed_gates": 4418,
+      "F17_only_naive_axis_only_route_footprint_collisions": 34,
+      "F17_only_restored_route_transit_not_assigned_M2": 3439,
+      "F17_only_route_failures": 0,
+      "F17_only_route_touched_union_M2": 4195,
+      "F17_only_same_color_route_footprint_collisions": 0,
+      "F17_only_total_macro_logical_instructions": 14744,
+      "F17_only_total_macro_routed_gates": 102968,
+      "F17_role_M2_per_seam": 20,
+      "active_colors": 16,
+      "active_schedule_color_deletions": {
+        "(0, 0, 0, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1450,
+          "omitted_routed_gates": 7312,
+          "omitted_seams": 1
+        },
+        "(0, 0, 0, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1454,
+          "omitted_routed_gates": 7420,
+          "omitted_seams": 1
+        },
+        "(0, 0, 1, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1454,
+          "omitted_routed_gates": 7388,
+          "omitted_seams": 1
+        },
+        "(0, 0, 1, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1458,
+          "omitted_routed_gates": 7496,
+          "omitted_seams": 1
+        },
+        "(0, 1, 0, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1450,
+          "omitted_routed_gates": 7608,
+          "omitted_seams": 1
+        },
+        "(0, 1, 0, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1454,
+          "omitted_routed_gates": 7748,
+          "omitted_seams": 1
+        },
+        "(0, 1, 1, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1454,
+          "omitted_routed_gates": 7748,
+          "omitted_seams": 1
+        },
+        "(0, 1, 1, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1458,
+          "omitted_routed_gates": 7888,
+          "omitted_seams": 1
+        },
+        "(1, 0, 0, 0)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2904,
+          "omitted_routed_gates": 14996,
+          "omitted_seams": 2
+        },
+        "(1, 0, 0, 1)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2912,
+          "omitted_routed_gates": 15380,
+          "omitted_seams": 2
+        },
+        "(1, 1, 0, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1462,
+          "omitted_routed_gates": 8300,
+          "omitted_seams": 1
+        },
+        "(1, 1, 0, 1)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1466,
+          "omitted_routed_gates": 8576,
+          "omitted_seams": 1
+        },
+        "(2, 0, 0, 0)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2912,
+          "omitted_routed_gates": 15348,
+          "omitted_seams": 2
+        },
+        "(2, 0, 1, 0)": {
+          "active_F17_basis_witnesses": 2,
+          "omitted_logical_instructions": 2920,
+          "omitted_routed_gates": 15732,
+          "omitted_seams": 2
+        },
+        "(2, 1, 0, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1466,
+          "omitted_routed_gates": 8560,
+          "omitted_seams": 1
+        },
+        "(2, 1, 1, 0)": {
+          "active_F17_basis_witnesses": 1,
+          "omitted_logical_instructions": 1470,
+          "omitted_routed_gates": 8708,
+          "omitted_seams": 1
+        }
+      },
+      "active_single_packet_site_interface_deletions": 1180,
+      "active_single_rail_bank_deletions": 340,
+      "all_seam_bank_union_M2": 1520,
+      "alpha_plus_minus_route_census_failures": 0,
+      "assigned_plus_route_support_union_M2": 4839,
+      "augmented_epoch_ledgers": {
+        "A_F17_only": {
+          "baseline_nonseam_compiled_instructions": 23996,
+          "baseline_nonseam_rotations": 2016,
+          "baseline_nonseam_routed_gates": 232348,
+          "complete_epoch_fixed_routed_depth": 317116,
+          "complete_epoch_logical_instructions": 38740,
+          "complete_epoch_logical_word_sha256": "c070bb8f84b2f0cd1c966660a975233622530f576446d7cca7aba85e6bfb1433",
+          "complete_epoch_non_NN_or_return_failures": 0,
+          "complete_epoch_routed_NN_gates": 335316,
+          "complete_epoch_routed_schedule_sha256": "341aa95a5d1d36e1a3dd4e1a31693abd531b4bcef6ba6f17e3acd1e12e23d5bd",
+          "depth_convention": "landed nonseam prefix/suffix serialized; 24-color seam stage uses identity padding to the longest disjoint macro in each color",
+          "factor_order_reconstruction_failures": 0,
+          "replaced_seam_macro_logical_instructions": 14744,
+          "replaced_seam_macro_routed_gates": 102968,
+          "replaced_seam_macros": 20,
+          "retained_nonseam_word_sha256": "d7dc854442ac9ac379a8e4d985df4bf343a983a565217c72242440a67ac8cc59",
+          "seam_stage_schedule_sha256": "7be70b6b7dcdd3b7c58cc22658ec8980d989539b4b7ab89de899b43edd55ea0d"
+        },
+        "B_F17_plus_Cycle714": {
+          "baseline_nonseam_compiled_instructions": 23996,
+          "baseline_nonseam_rotations": 2016,
+          "baseline_nonseam_routed_gates": 232348,
+          "complete_epoch_fixed_routed_depth": 359708,
+          "complete_epoch_logical_instructions": 53140,
+          "complete_epoch_logical_word_sha256": "0c2fe636a93ebbf1cea9511f04e09248550629d9fa0de1ff9b12599ccba252e6",
+          "complete_epoch_non_NN_or_return_failures": 0,
+          "complete_epoch_routed_NN_gates": 388556,
+          "complete_epoch_routed_schedule_sha256": "a1562d834a663acbc176cfe499771b384f985dc3d3f83f685de22758c5199bea",
+          "depth_convention": "landed nonseam prefix/suffix serialized; 24-color seam stage uses identity padding to the longest disjoint macro in each color",
+          "factor_order_reconstruction_failures": 0,
+          "replaced_seam_macro_logical_instructions": 29144,
+          "replaced_seam_macro_routed_gates": 156208,
+          "replaced_seam_macros": 20,
+          "retained_nonseam_word_sha256": "d7dc854442ac9ac379a8e4d985df4bf343a983a565217c72242440a67ac8cc59",
+          "seam_stage_schedule_sha256": "8d9a23dd9c504ce1414d2f05b8fc0ee8fdb94c05c4088083720a33f840fc301e"
+        }
+      },
+      "bank_carrier_aux_collision_sites": 0,
+      "bank_pair_overlap_pairs": 0,
+      "bank_pair_overlap_sites": 0,
+      "bank_radius": 2,
+      "baseline_partition_failure": 0,
+      "cells": 12,
+      "coexistence_added_instruction_census_failures": 0,
+      "coexistence_added_instructions_excluding_seam_and_packet": 636,
+      "combined_packet_plus_F17_bank_M2_per_seam": 76,
+      "current_to_pointer_alias_collision_mutation_detected_seams": 20,
+      "current_to_pointer_alias_collision_mutation_undetected": 0,
+      "declared_assigned_M2": 2228,
+      "encoded_carrier_M2": 276,
+      "endpoint_B_physical_constraint_anticommutators": 0,
+      "envelope_width_failures_at_pitch32": 0,
+      "expected_all_seam_bank_union_M2": 1520,
+      "fixed_schedule_identity_padding": 3760,
+      "fixed_schedule_parallel_routed_depth": 127360,
+      "fixed_schedule_sha256": "8d9a23dd9c504ce1414d2f05b8fc0ee8fdb94c05c4088083720a33f840fc301e",
+      "inactive_schedule_color_deletions": [],
+      "incremental_persistent_F17_rail_M2_per_seam": 17,
+      "intentional_packet_F17_role_aliases_per_seam": 3,
+      "local_route_footprint_envelopes": {
+        "0": {
+          "high": [
+            15,
+            7,
+            7
+          ],
+          "low": [
+            -16,
+            -9,
+            -9
+          ],
+          "width": [
+            31,
+            16,
+            16
+          ]
+        },
+        "1": {
+          "high": [
+            12,
+            7,
+            8
+          ],
+          "low": [
+            -12,
+            -9,
+            -9
+          ],
+          "width": [
+            24,
+            16,
+            17
+          ]
+        },
+        "2": {
+          "high": [
+            12,
+            8,
+            8
+          ],
+          "low": [
+            -12,
+            -9,
+            -9
+          ],
+          "width": [
+            24,
+            17,
+            17
+          ]
+        }
+      },
+      "macro_logical_instruction_census": {
+        "1450": 3,
+        "1454": 7,
+        "1458": 5,
+        "1462": 2,
+        "1466": 2,
+        "1470": 1
+      },
+      "macro_max_logical_instructions": 1470,
+      "macro_max_routed_gates": 8708,
+      "macro_min_logical_instructions": 1450,
+      "macro_min_routed_gates": 7080,
+      "maximum_parallel_macros": 2,
+      "maximum_route_distance": 33,
+      "naive_axis_only_macro_pairs": 58,
+      "naive_axis_only_route_footprint_collisions": 34,
+      "noncommuting_order_failures": 0,
+      "noncommuting_seam_factor_pairs": 22,
+      "ordered_active_colors": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          0
+        ]
+      ],
+      "packet_M2_per_seam": 59,
+      "packet_entry_work_failures": 0,
+      "packet_instructions_per_seam": 718,
+      "persistent_rail_packet_collision_sites": 0,
+      "phase": {
+        "formal_scalar_angle_per_seam": 1.5707963267948966,
+        "formal_scalar_routed_gates": 0,
+        "maximum_formal_corrected_residual": 0.0,
+        "maximum_raw_square_to_identity_residual": 2.0,
+        "maximum_raw_square_to_minus_identity_residual": 0.0,
+        "raw_phase": [
+          0.0,
+          -1.0
+        ],
+        "seam_phase_rows": 20,
+        "unchanged_full_update_compiled_relative_phase_angle": -255.4519095229226,
+        "unchanged_full_update_formal_correction_angle": 255.4519095229226
+      },
+      "preparation_auxiliary_M2": 432,
+      "recurrent_separation_pitch": 32,
+      "repeated_color_groups": 4,
+      "restored_route_transit_not_assigned_M2": 2611,
+      "retained_nonseam_rotations": 2016,
+      "retained_post_seam_rotations": 540,
+      "retained_pre_seam_rotations": 1476,
+      "route_failures": 0,
+      "route_touched_union_M2": 4487,
+      "same_axis_parity_rotation_anticommutators": 0,
+      "same_color_macro_pairs": 4,
+      "same_color_route_footprint_collisions": 0,
+      "schedule_color_rule": "(axis, owner_x mod2, owner_y mod2, owner_z mod2)",
+      "schedule_color_templates": 24,
+      "scheduled_duplicate_seams": 0,
+      "scheduled_missing_seams": 0,
+      "seams": 20,
+      "selected_factor_match_failures": 0,
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "shared_role_alias_failures": 0,
+      "single_rail_bank_deletion_lost_one_hot_columns": 340,
+      "source_update_instructions": 26060,
+      "source_update_rotations": 2096,
+      "stage_abstract_Gauss_preservation_failures": {
+        "coin": 0,
+        "contact": 0,
+        "reverse": 0,
+        "seam": 0
+      },
+      "total_macro_logical_instructions": 29144,
+      "total_macro_routed_gates": 156208,
+      "undetected_single_packet_site_interface_deletions": 0,
+      "undetected_single_rail_bank_deletions": 0
+    }
+  ],
+  "name": "Cycle873 recurrent F17-only all-seam physical core",
+  "objects": {
+    "A_F17_only_recurrent_augmentation": {
+      "added_instructions_excluding_landed_seam": 634,
+      "clean_returned_work_M2": 3,
+      "fresh_packet_or_address_required_per_epoch": false,
+      "packet_or_Cycle612_interface": false,
+      "persistent_bank_M2_per_seam": 20,
+      "spectrum_status": "open for basis-link initialization; uniform cycle-space repair is not excluded by the path-history witness"
+    },
+    "secondary_optional_B_F17_plus_unchanged_Cycle714_coexistence": {
+      "Cycle612_packet_interface_retained": true,
+      "added_instructions_excluding_landed_seam_and_packet": 636,
+      "combined_bank_M2_per_seam": 76,
+      "fresh_blank_packet_required_per_invocation": true,
+      "incremental_M2_beyond_live_packet": 17,
+      "unchanged_packet_instructions": 718
+    }
+  },
+  "open_nonclaims": [
+    "no autonomous F17-bank genesis, one-hot projection, leakage correction, or reset",
+    "no autonomous packet allocation, occurrence, admission, or clock law",
+    "no unit-translation covariance or origin-shift equivalence theorem for the parity-color schedule, and no host-free recurrence law",
+    "no source/charge sign identification and no mass-to-source map",
+    "no gravity, Regge, backreaction, continuum, or downstream response claim",
+    "authority and audit verdict remain unset"
+  ],
+  "persistent_recurrence": {
+    "F17_only_eight_epoch_failures": 0,
+    "F17_only_eight_epoch_rows": 544,
+    "F17_only_two_epoch_columns": 68,
+    "F17_only_two_epoch_failures": 0,
+    "F17_only_two_epoch_work_cleanup_failures": 0,
+    "coexistence_second_epoch_without_packet_blank_detected_columns": 34,
+    "object_A_boundary": "persistent F17 rails; q_u/q_v/current return clean; no Cycle714/612 packet output",
+    "object_B_boundary": "unchanged Cycle714 packet retained; a fresh blank packet/reset remains supplied for every invocation"
+  },
+  "primary_derived": [
+    "zero-unintended-overlap 20-M2 F17-only local banks",
+    "exact ell->ell+alpha(n_u-n_v) on the supplied one-hot sector",
+    "clean q_u/q_v/current work after every augmented seam",
+    "unchanged Cycle870 seam/nonseam factors apart from the inserted F17 word",
+    "24-color recurrent seam-stage route schedule with exact returned transit",
+    "proper-frame endpoint swap, rail k->-k, and typed-polarity normalization"
+  ],
+  "primary_failures": [],
+  "primary_supplied": [
+    "one-hot initialization of every persistent 17-M2 F17 rail bank",
+    "the bounded projector/domain restriction P1 and any enforcement",
+    "typed G=n+/-div family and matched alpha=+/-1 polarity",
+    "lawful Cycle870 encoded matter and signed local coframes",
+    "a lattice parity origin and ordered 24-color traversal/schedule phase",
+    "recurrence invocation, admission controls, and arbitrary returned-route substrate"
+  ],
+  "primitive": {
+    "Fredkin_residual": 8.021723640960921e-16,
+    "clean_target_Toffoli_primitives": 14,
+    "clean_target_column_residual": 0.0,
+    "inactive_remaining_clean_target_primitive_deletions": [],
+    "landed_full_Toffoli_primitives": 15,
+    "minimum_remaining_clean_target_primitive_deletion_residual": 1.0823922002923936,
+    "off_domain_full_space_difference": 2.8284271247461894,
+    "primitive_deletion_scope": "the reduced isolated clean-target compute word only; no per-occurrence essentiality claim is made for the supplied-domain Cycle714 packet word",
+    "remaining_clean_target_primitive_deletion_residuals": [
+      1.5307337294603587,
+      1.0823922002923936,
+      1.0823922002923936,
+      1.0823922002923936,
+      1.4142135623730945,
+      1.0823922002923936,
+      1.9999999999999993,
+      1.0823922002923936,
+      1.0823922002923936,
+      2.2741092487507735,
+      1.9999999999999993,
+      1.0823922002923936,
+      1.0823922002923936,
+      1.9999999999999993
+    ],
+    "removed_occurrences_per_macro": 2,
+    "removed_primitive": "('CNOT', (1, 2))",
+    "unchanged_full_Toffoli_residual": 8.021723640960921e-16
+  },
+  "provenance": {
+    "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+    "expected_base_is_ancestor_of_head": true,
+    "primary_source_hash_mismatches": {},
+    "runner": "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
+    "secondary_optional_source_hash_mismatches": {},
+    "source_hash_mismatches": {},
+    "source_sha256": {
+      "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a",
+      "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
+      "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+      "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py": "6645156635b4354d937759a28e71215121a19cefcc2f294a2791e6a84cf1423b"
+    }
+  },
+  "register_join": {
+    "F17_roles": 20,
+    "combined_bank_M2": 76,
+    "constant_radius": 2,
+    "intentional_shared_packet_work_roles": 3,
+    "live_packet_M2": 59,
+    "local_alias_offsets": {
+      "current_q58": [
+        -2,
+        1,
+        1
+      ],
+      "pointer_q44": [
+        0,
+        0,
+        1
+      ],
+      "q_u_q56": [
+        0,
+        1,
+        0
+      ],
+      "q_v_q57": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "new_persistent_F17_rails": 17,
+    "rail_local_offsets": [
+      [
+        -2,
+        2,
+        0
+      ],
+      [
+        -2,
+        2,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -2
+      ],
+      [
+        0,
+        2,
+        -2
+      ],
+      [
+        1,
+        2,
+        -2
+      ],
+      [
+        1,
+        1,
+        -2
+      ],
+      [
+        2,
+        1,
+        -2
+      ],
+      [
+        2,
+        0,
+        -2
+      ],
+      [
+        2,
+        -1,
+        -2
+      ],
+      [
+        1,
+        -1,
+        -2
+      ],
+      [
+        1,
+        -2,
+        -2
+      ],
+      [
+        0,
+        -2,
+        -2
+      ],
+      [
+        -1,
+        -2,
+        -2
+      ],
+      [
+        -1,
+        -2,
+        -1
+      ],
+      [
+        -2,
+        -2,
+        -1
+      ],
+      [
+        -2,
+        -2,
+        -2
+      ]
+    ]
+  },
+  "schedule_input_boundary": {
+    "color_traversal": "the deterministic order of the 24 color templates is supplied compiler schedule phase",
+    "not_proved": "unit-translation/origin-shift equivalence, physical-law translation compatibility, or host-free autonomous recurrence",
+    "parity_origin": "the owner-coordinate residues mod2 are computed relative to a supplied lattice parity origin",
+    "proved": "collision freedom, landed factor-order reconstruction, and the reported proper-frame/color transport on the three fixtures"
+  },
+  "secondary_optional_evidence": {
+    "Cycle714_coexistence": {
+      "Toffoli_primitive_residual": 8.021723640960921e-16,
+      "blank_packet_join_cases": 49152,
+      "expanded_packet_instructions": 718,
+      "independent_packet_failures": 0,
+      "packet_inverse_failures": 0,
+      "packet_work_cleanup_failures": 0,
+      "retained_pointer_failures": 0,
+      "shared_roles": {
+        "F17_q_u": 56,
+        "F17_q_v": 57,
+        "F17_serial_current": 58,
+        "retained_pointer": 44
+      }
+    },
+    "closure_role": "reported but excluded from collect_primary_failures"
+  },
+  "secondary_optional_failures": [],
+  "secondary_optional_status": "pass",
+  "semantic_mutations": {
+    "component_mutations": {
+      "delete_cleanup": {
+        "changed_columns": 51,
+        "dirty_columns": 51
+      },
+      "delete_minus_shift": {
+        "changed_columns": 17,
+        "dirty_columns": 0
+      },
+      "delete_plus_shift": {
+        "changed_columns": 17,
+        "dirty_columns": 0
+      },
+      "delete_seam": {
+        "changed_columns": 51,
+        "dirty_columns": 34
+      }
+    },
+    "inactive_component_mutations": []
+  },
+  "semantics": [
+    {
+      "alpha": 1,
+      "basis_failures": 0,
+      "coherent_forward_residual_with_formal_seam_scalar": 0.0,
+      "coherent_inverse_residual": 0.0,
+      "distinct_output_columns": 68,
+      "formal_zero_site_seam_correction_angle": 1.5707963267948966,
+      "lawful_columns": 68,
+      "pointer_boundary": "F17-only macro leaves the non-bank pointer spectator unchanged",
+      "pointer_failures": 0,
+      "raw_compiled_seam_global_phase": [
+        0.0,
+        -1.0
+      ],
+      "raw_normalized_state_residual_to_exact_target": 1.4142135623730951,
+      "scratch_cleanup_failures": 0,
+      "typed_G_failures": 0,
+      "typed_family": "G=n+div(ell)"
+    },
+    {
+      "alpha": -1,
+      "basis_failures": 0,
+      "coherent_forward_residual_with_formal_seam_scalar": 0.0,
+      "coherent_inverse_residual": 0.0,
+      "distinct_output_columns": 68,
+      "formal_zero_site_seam_correction_angle": 1.5707963267948966,
+      "lawful_columns": 68,
+      "pointer_boundary": "F17-only macro leaves the non-bank pointer spectator unchanged",
+      "pointer_failures": 0,
+      "raw_compiled_seam_global_phase": [
+        0.0,
+        -1.0
+      ],
+      "raw_normalized_state_residual_to_exact_target": 1.4142135623730951,
+      "scratch_cleanup_failures": 0,
+      "typed_G_failures": 0,
+      "typed_family": "G=n-div(ell)"
+    }
+  ],
+  "signed_transport": {
+    "negative_frame_endpoint_swap_omission_detected_rows": 2448,
+    "negative_frame_rail_k_to_minus_k_omission_detected_rows": 4608,
+    "negative_frame_spurious_alpha_family_flip_detected_rows": 4896,
+    "ordered_frame_products": 576,
+    "ordered_product_failures": 0,
+    "ordered_product_state_rows": 235008,
+    "polarity_normalization_rule": "after canonical endpoint reversal: (a,b,k)->(b,a,-k), while supplied alpha and the matched family sign stay fixed (s*alpha=1 mod17)",
+    "proper_frames": 24,
+    "signed_law_failures": 0,
+    "signed_law_rows": 9792,
+    "typed_family_transport_failures": 0
+  },
+  "status": "pass",
+  "structural_route_deletions": {
+    "central_interaction_deletions": 33,
+    "forward_SWAP_deletions": 528,
+    "full_arbitrary_register_return_failures": 0,
+    "full_operand_failures": 0,
+    "path_distances": 33,
+    "qualification": "symbolic arbitrary-register routing structure, not a claim that every literal primitive deletion changes every supplied reachable state",
+    "return_SWAP_deletions": 528,
+    "structural_symbolic_deletions": 1089,
+    "undetected_structural_deletions": 0
+  },
+  "unary_projector": {
+    "P1_commutator_failures": 0,
+    "all_sector_Hamming_weight_failures": 0,
+    "all_sector_inverse_failures": 0,
+    "constraint": "Q=I-P1, with P1=sum_k |1_k><1_k| on this fixed 17-M2 bank",
+    "constraint_support_M2": 17,
+    "deleted_Fredkin_changed_one_hot_rows": {
+      "+1:0": 2,
+      "+1:1": 2,
+      "+1:10": 2,
+      "+1:11": 2,
+      "+1:12": 2,
+      "+1:13": 2,
+      "+1:14": 2,
+      "+1:15": 2,
+      "+1:2": 2,
+      "+1:3": 2,
+      "+1:4": 2,
+      "+1:5": 2,
+      "+1:6": 2,
+      "+1:7": 2,
+      "+1:8": 2,
+      "+1:9": 2,
+      "-1:0": 2,
+      "-1:1": 2,
+      "-1:10": 2,
+      "-1:11": 2,
+      "-1:12": 2,
+      "-1:13": 2,
+      "-1:14": 2,
+      "-1:15": 2,
+      "-1:2": 2,
+      "-1:3": 2,
+      "-1:4": 2,
+      "-1:5": 2,
+      "-1:6": 2,
+      "-1:7": 2,
+      "-1:8": 2,
+      "-1:9": 2
+    },
+    "deleted_Q_double_hot_columns_admitted": 136,
+    "deleted_Q_unlawful_columns_admitted": 131055,
+    "deleted_Q_vacuum_admitted": true,
+    "enforcement_boundary": "P1/Q is an explicit bounded-bank projector, but its initialization or enforcement is supplied/open and contributes no gates or physical-energy claim",
+    "exhaustive_masks_per_direction": 131072,
+    "inactive_deleted_Fredkins": [],
+    "one_hot_mapping_failures": 0,
+    "projector_rank": 17,
+    "unlawful_sector_rows_also_preserved_by_dynamics": 262110
+  }
+}

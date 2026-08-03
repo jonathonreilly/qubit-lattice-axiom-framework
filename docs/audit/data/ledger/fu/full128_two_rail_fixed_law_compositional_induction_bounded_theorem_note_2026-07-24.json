@@ -1,24 +1,372 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-03T04:35:19.622263+00:00",
+  "audit_invocation_history": [
+    "6ae2c01fedc842a7a9469fb8b67561f4"
+  ],
+  "audit_invocation_id": "6ae2c01fedc842a7a9469fb8b67561f4",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24": "For the explicitly supplied seven-mode labels, constants, auxiliary states, geometry, routing order, and rotated seam family, the constructed 61-site code and 3,907-gate nearest-neighbor operator intertwine all 128 decoded columns, form the stated 59-projector 128-dimensional gap-one static code, and are covariant on code under all 24 proper-cubic frames and 576 frame products.",
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24": "bounded_theorem",
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24": "retained_bounded",
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24",
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {
+      "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
+      "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0",
+      "scripts/frontier_full128_code_projectors_2026_07_24.py": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44",
+      "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195",
+      "scripts/frontier_full128_cycle_encoder_2026_07_24.py": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
+      "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb"
+    },
+    "judgment_fingerprint": {
+      "claim_id": "full128_two_rail_fixed_law_compositional_induction_bounded_theorem_note_2026-07-24",
+      "digest": "addd05ffa0793eb4afceff4575ef2dac51ea429783a8c3ed1b2e0e9e7083c3c3",
+      "judgment": {
+        "audit_date": "2026-08-03T04:35:19.622263+00:00",
+        "audit_invocation_id": "6ae2c01fedc842a7a9469fb8b67561f4",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-audit-batch-A-20260803-23fedaeb",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "The local Cycle-656 trace closes within the rendered runner evidence, but the decisive Cycle-655 full128 intertwiner authority is clipped, so its complete proof obligations cannot be independently verified.",
+        "claim_scope": "On the supplied station-zero one-token, fixed-program, clean-ancilla genesis, the explicit law A_auto=RQ traces 3,908 ordered padded Cycle-655 factors and is claimed to satisfy A_auto^3908 E_combined = E_combined G_coarse with the stated finite resources.",
+        "claim_type": "bounded_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": null,
+        "decoration_parent_claim_id": null,
+        "independence": "cross_family",
+        "load_bearing_step": "After 3,908 ordered selector-before-shift steps, composing the recovered padded word with the Cycle-655 full128 intertwiner gives A_auto^3908 E_combined = E_combined G_coarse.",
+        "load_bearing_step_class": "B",
+        "negative_assertion_classes": [],
+        "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete unclipped Cycle-655 authority, then independently recheck its full128 intertwiner before re-audit.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 5,
+          "B": 2,
+          "C": 0,
+          "D": 0,
+          "total_pass": 7
+        },
+        "verdict_rationale": "Issue: the rendered Cycle-655 authority is clipped precisely where the imported full128 intertwiner must be audited. Why this blocks: runner PASS and the locally consistent 3,908-step trace cannot substitute for independent inspection of that load-bearing dependency. Repair target: regenerate the packet with the complete authority and recheck its intertwiner formulas and implementation. Claim boundary until fixed: the local trace and resource identities are supported, but the end-to-end operator equality remains conditional."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 7.358,
+    "packet_policy_fingerprint": {
+      "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "policy_versions": {
+      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "da2cf3028dd59cabc001e62420ea439c45c1f7e1308a38e911dcffcd27abde06",
+        "cache_runner_sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_full128_code_projectors_2026_07_24.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "5f7ed53762d8da3c2a221c7359f7b55adc98082d430c3c72ebe63346a09e24a7",
+        "cache_runner_sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_full128_cycle_encoder_2026_07_24.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "da2cf3028dd59cabc001e62420ea439c45c1f7e1308a38e911dcffcd27abde06",
+        "cache_runner_sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "d3db1ab09c325e6dc6e41949191da051d4b7e33bfdbe3ff9745dc29935eba760",
+        "cache_runner_sha256": "7ae16effb69785d20216db5a54a38f8943a0dec53fd5e297739d46ee3cc13a46",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "7ae16effb69785d20216db5a54a38f8943a0dec53fd5e297739d46ee3cc13a46",
+    "runner_path": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "science_fingerprint": {
+      "dependencies": [
+        {
+          "claim_id": "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24",
+          "claim_scope": "For the explicitly supplied seven-mode labels, constants, auxiliary states, geometry, routing order, and rotated seam family, the constructed 61-site code and 3,907-gate nearest-neighbor operator intertwine all 128 decoded columns, form the stated 59-projector 128-dimensional gap-one static code, and are covariant on code under all 24 proper-cubic frames and 576 frame products.",
+          "claim_type": "bounded_theorem",
+          "effective_status": "retained_bounded",
+          "ledger_note_hash": "52e6fe20cd162921322e18e794621499674c965cac7260ab2813fbefc0d25750",
+          "note_path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+          "note_sha256": "52e6fe20cd162921322e18e794621499674c965cac7260ab2813fbefc0d25750",
+          "premise_classification": "ordinary_claim",
+          "present": true
+        },
+        {
+          "claim_id": "minimal_axioms",
+          "claim_scope": null,
+          "claim_type": "meta",
+          "effective_status": "meta",
+          "ledger_note_hash": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+          "note_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "note_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+          "premise_classification": "accepted_premise",
+          "present": true
+        }
+      ],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "7a32d8518a73d53bb2f720fd7b4fb932b589922bdaf7c5b59fb98c7a33979486",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": "d3db1ab09c325e6dc6e41949191da051d4b7e33bfdbe3ff9745dc29935eba760",
+          "declared_input_paths": [
+            "docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+            "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+            "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+            "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+            "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+            "scripts/frontier_full128_25site_nn_supplied_schedule_2026_07_24.py",
+            "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+            "scripts/frontier_full128_code_projectors_2026_07_24.py",
+            "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py"
+          ],
+          "declared_inputs": [
+            {
+              "path": "docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+              "sha256": "3caba3e2e27140f3e65c4bb2298738b084083ca3f68e451017430ce2657325ac"
+            },
+            {
+              "path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+              "sha256": "52e6fe20cd162921322e18e794621499674c965cac7260ab2813fbefc0d25750"
+            },
+            {
+              "path": "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+              "sha256": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb"
+            },
+            {
+              "path": "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+              "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935"
+            },
+            {
+              "path": "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+              "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+            },
+            {
+              "path": "scripts/frontier_full128_25site_nn_supplied_schedule_2026_07_24.py",
+              "sha256": "c8cfa4ec5d97aa0bcb5e36fa4e3edf65bd70a9243544c5a52d25a14266f24e1c"
+            },
+            {
+              "path": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+              "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0"
+            },
+            {
+              "path": "scripts/frontier_full128_code_projectors_2026_07_24.py",
+              "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44"
+            },
+            {
+              "path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+              "sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195"
+            }
+          ],
+          "path": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "7ae16effb69785d20216db5a54a38f8943a0dec53fd5e297739d46ee3cc13a46"
+        },
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+          "present": true,
+          "role": "helper",
+          "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+        },
+        {
+          "declared_input_fingerprint_sha256": "da2cf3028dd59cabc001e62420ea439c45c1f7e1308a38e911dcffcd27abde06",
+          "declared_input_paths": [
+            "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md"
+          ],
+          "declared_inputs": [
+            {
+              "path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+              "sha256": "52e6fe20cd162921322e18e794621499674c965cac7260ab2813fbefc0d25750"
+            }
+          ],
+          "path": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+          "present": true,
+          "role": "helper",
+          "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0"
+        },
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/frontier_full128_code_projectors_2026_07_24.py",
+          "present": true,
+          "role": "helper",
+          "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44"
+        },
+        {
+          "declared_input_fingerprint_sha256": "5f7ed53762d8da3c2a221c7359f7b55adc98082d430c3c72ebe63346a09e24a7",
+          "declared_input_paths": [
+            "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+            "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+            "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+            "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+            "scripts/frontier_full128_code_projectors_2026_07_24.py"
+          ],
+          "declared_inputs": [
+            {
+              "path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+              "sha256": "52e6fe20cd162921322e18e794621499674c965cac7260ab2813fbefc0d25750"
+            },
+            {
+              "path": "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+              "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935"
+            },
+            {
+              "path": "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+              "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+            },
+            {
+              "path": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+              "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0"
+            },
+            {
+              "path": "scripts/frontier_full128_code_projectors_2026_07_24.py",
+              "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44"
+            }
+          ],
+          "path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+          "present": true,
+          "role": "helper",
+          "sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195"
+        },
+        {
+          "declared_input_fingerprint_sha256": "da2cf3028dd59cabc001e62420ea439c45c1f7e1308a38e911dcffcd27abde06",
+          "declared_input_paths": [
+            "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md"
+          ],
+          "declared_inputs": [
+            {
+              "path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+              "sha256": "52e6fe20cd162921322e18e794621499674c965cac7260ab2813fbefc0d25750"
+            }
+          ],
+          "path": "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+          "present": true,
+          "role": "helper",
+          "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935"
+        },
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+          "present": true,
+          "role": "helper",
+          "sha256": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "full128_two_rail_fixed_law_compositional_induction_bounded_theorem_note_2026-07-24",
+        "claim_scope": "On the supplied station-zero one-token, fixed-program, clean-ancilla genesis, the explicit law A_auto=RQ traces 3,908 ordered padded Cycle-655 factors and is claimed to satisfy A_auto^3908 E_combined = E_combined G_coarse with the stated finite resources.",
+        "claim_type": "bounded_theorem",
+        "ledger_note_hash": "3caba3e2e27140f3e65c4bb2298738b084083ca3f68e451017430ce2657325ac",
+        "note_path": "docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+        "note_sha256": "3caba3e2e27140f3e65c4bb2298738b084083ca3f68e451017430ce2657325ac"
+      }
+    },
+    "transitive_descendants": 57
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260803-23fedaeb",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The local Cycle-656 trace closes within the rendered runner evidence, but the decisive Cycle-655 full128 intertwiner authority is clipped, so its complete proof obligations cannot be independently verified.",
   "claim_id": "full128_two_rail_fixed_law_compositional_induction_bounded_theorem_note_2026-07-24",
-  "claim_scope": null,
+  "claim_scope": "On the supplied station-zero one-token, fixed-program, clean-ancilla genesis, the explicit law A_auto=RQ traces 3,908 ordered padded Cycle-655 factors and is claimed to satisfy A_auto^3908 E_combined = E_combined G_coarse with the stated finite resources.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-03T04:35:19.622263+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,8 +375,8 @@
     "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
     "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
@@ -37,29 +385,30 @@
     "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
     "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 7.358,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "After 3,908 ordered selector-before-shift steps, composing the recovered padded word with the Cycle-655 full128 intertwiner gives A_auto^3908 E_combined = E_combined G_coarse.",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "3caba3e2e27140f3e65c4bb2298738b084083ca3f68e451017430ce2657325ac",
   "note_path": "docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete unclipped Cycle-655 authority, then independently recheck its full128 intertwiner before re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 5,
+    "B": 2,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 7
   },
   "runner_path": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
   "title": "Full128 two-rail fixed-law compositional induction",
   "transitive_descendants": 57,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the rendered Cycle-655 authority is clipped precisely where the imported full128 intertwiner must be audited. Why this blocks: runner PASS and the locally consistent 3,908-step trace cannot substitute for independent inspection of that load-bearing dependency. Repair target: regenerate the packet with the complete authority and recheck its intertwiner formulas and implementation. Claim boundary until fixed: the local trace and resource identities are supported, but the end-to-end operator equality remains conditional."
 }

@@ -1,10 +1,11 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-08-03T10:30:17.525724+00:00",
   "audit_invocation_history": [
     "3761de5dc4714ad8b27f4c099562daae",
-    "71580f66fa1c4ed3ad2db7648492b38f"
+    "71580f66fa1c4ed3ad2db7648492b38f",
+    "2d064b8a239049b19da34d5494a77d25"
   ],
-  "audit_invocation_id": "71580f66fa1c4ed3ad2db7648492b38f",
+  "audit_invocation_id": "2d064b8a239049b19da34d5494a77d25",
   "audit_state_snapshot": {
     "criticality": "critical",
     "dep_axiom_premise_note_hash": {},
@@ -15,22 +16,23 @@
     "helper_runner_hashes": {},
     "judgment_fingerprint": {
       "claim_id": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
-      "digest": "5655810e10bd50b6c300c42b0f28219f323d6cd136bffa9aa417de98f1d2039b",
+      "digest": "5f7f18b0730e36e113d3e62ffe7761a79a75a9eb77bb55f48e2ae2f654a031dc",
       "judgment": {
-        "audit_date": null,
-        "audit_invocation_id": "71580f66fa1c4ed3ad2db7648492b38f",
-        "audit_status": "audit_in_progress",
-        "auditor": null,
-        "auditor_confidence": null,
-        "auditor_family": null,
-        "auditor_model": null,
-        "auditor_reasoning_effort": null,
-        "chain_closes": null,
-        "chain_closure_explanation": null,
-        "claim_scope": "Exact 3x3 identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity decomposition, Im[(K_{01})^2]=2 c_even c_odd, and the stated vanishing and nonvanishing corollaries.",
+        "audit_date": "2026-08-03T10:30:17.525724+00:00",
+        "audit_invocation_id": "2d064b8a239049b19da34d5494a77d25",
+        "audit_status": "audited_clean",
+        "auditor": "codex-judicial-1-20260803-3fca6294",
+        "auditor_confidence": "judicial",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": true,
+        "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-3fca6294\", \"judge\": 1, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-165c42b3\", \"judge\": 2, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation also gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd, with both corollaries following exactly. These are class-A algebraic identities with no imported authority, and the second position includes the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-49766810\", \"judge\": 3, \"rationale\": \"The explicitly defined matrices give P_{23}SP_{23}=S^2 by direct multiplication, while the fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs exact symbolic checks with no imported authority or comparator, so this is a closed class-A positive theorem. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-33b8b440\", \"judge\": 4, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity decomposition. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner performs the corresponding exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-0397b7e2\", \"judge\": 5, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs the corresponding exact symbolic checks without imported authority or comparators, so this is a closed class-A positive theorem. The second position also supplies the structured N1-N8 packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}]",
+        "claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
         "claim_type": "positive_theorem",
-        "claim_type_provenance": "audited_pending_cross_confirmation",
+        "claim_type_provenance": "judicial_review",
         "cross_confirmation": {
+          "agreement_schema": "audit_tuple_v2",
           "first_audit": {
             "audit_date": "2026-08-03T10:14:28.792168+00:00",
             "audit_invocation_id": "3761de5dc4714ad8b27f4c099562daae",
@@ -59,6 +61,125 @@
             "verdict": "audited_clean",
             "verdict_rationale": "The theorem is a genuine class-A algebraic closure with no upstream dependency or physical identification. Manual multiplication independently confirms the parity transformation, and direct expansion independently confirms the sign and factor in the coordinate polynomial and its corollaries. The runner executes the same exact matrix and symbolic checks successfully; its printed class-C labels are reclassified here as class A because the checks concern specified algebraic inputs rather than a first-principles framework computation."
           },
+          "judicial_panel_record_v1": {
+            "cid": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+            "disagreement_fingerprint": {
+              "claim_id": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "first_audit_invocation_id": "3761de5dc4714ad8b27f4c099562daae",
+              "note_hash": "b423abbb0f7d47cab90de1d6e7bddf40d538f1f2ba87422334f3193b97fa363f",
+              "schema": "judicial_disagreement_fingerprint_v1",
+              "seat_summaries_sha256": "8a9a3938fb118518459435f3f2a1b6bc6fc0e21c8c5f0eb97f49f69fa35a58ec",
+              "second_audit_invocation_id": "71580f66fa1c4ed3ad2db7648492b38f"
+            },
+            "failures": [],
+            "invocation_id": "2d064b8a239049b19da34d5494a77d25",
+            "majority_count": 5,
+            "panel": 2,
+            "result": "majority_candidate",
+            "schema": "judicial_panel_record_v1",
+            "tally": [
+              {
+                "count": 5,
+                "tuple": [
+                  "second",
+                  "audited_clean",
+                  "positive_theorem",
+                  "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+                  "A",
+                  null,
+                  []
+                ]
+              }
+            ],
+            "votes": [
+              {
+                "auditor": "codex-judicial-1-20260803-3fca6294",
+                "first_auditor_error": "The scientific conclusion is correct, but no_go_discipline=null violates the packet's mandatory structured N1-N8 requirement for an audited_clean verdict.",
+                "hybrid_resolution_note": null,
+                "judge": 1,
+                "judgment_rationale": "Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+                "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              },
+              {
+                "auditor": "codex-judicial-2-20260803-165c42b3",
+                "first_auditor_error": "The first position reaches the correct scientific tuple but omits the structured N1-N8 no_go_discipline object that the packet expressly requires for every audited_clean verdict.",
+                "hybrid_resolution_note": null,
+                "judge": 2,
+                "judgment_rationale": "Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation also gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd, with both corollaries following exactly. These are class-A algebraic identities with no imported authority, and the second position includes the structured packet required for an applyable audited_clean verdict.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+                "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              },
+              {
+                "auditor": "codex-judicial-3-20260803-49766810",
+                "first_auditor_error": "The scientific tuple is correct, but no_go_discipline=null violates the packet's mandatory structured N1-N8 requirement for an audited_clean verdict.",
+                "hybrid_resolution_note": null,
+                "judge": 3,
+                "judgment_rationale": "The explicitly defined matrices give P_{23}SP_{23}=S^2 by direct multiplication, while the fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs exact symbolic checks with no imported authority or comparator, so this is a closed class-A positive theorem. The second position also supplies the structured packet required for an applyable audited_clean verdict.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+                "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              },
+              {
+                "auditor": "codex-judicial-4-20260803-33b8b440",
+                "first_auditor_error": "The first position reaches the correct scientific tuple but omits the structured N1-N8 no_go_discipline object expressly required for every audited_clean verdict.",
+                "hybrid_resolution_note": null,
+                "judge": 4,
+                "judgment_rationale": "Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity decomposition. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner performs the corresponding exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+                "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              },
+              {
+                "auditor": "codex-judicial-5-20260803-0397b7e2",
+                "first_auditor_error": "The first position reaches the correct scientific conclusion but omits the structured N1-N8 no_go_discipline object that the packet expressly requires for every audited_clean verdict.",
+                "hybrid_resolution_note": null,
+                "judge": 5,
+                "judgment_rationale": "Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs the corresponding exact symbolic checks without imported authority or comparators, so this is a closed class-A positive theorem. The second position also supplies the structured N1-N8 packet required for an applyable audited_clean verdict.",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+                "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+                "ratified_claim_type": "positive_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_clean",
+                "second_auditor_error": "none",
+                "sided_with": "second"
+              }
+            ]
+          },
+          "mode": "judicial_panel_majority",
           "second_audit": {
             "audit_date": "2026-08-03T10:14:28.798042+00:00",
             "audit_invocation_id": "71580f66fa1c4ed3ad2db7648492b38f",
@@ -87,14 +208,32 @@
             "verdict": "audited_clean",
             "verdict_rationale": "Manual multiplication gives P_{23}SP_{23}=S^2 and P_{23}(S-S^2)P_{23}=-(S-S^2); with the stated orientation, K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. All 13 runner passes are exact algebraic checks and agree with that independent calculation, including Hermiticity and the concrete nonzero instance. The note imports no authority or comparator and confines itself to the defined matrices, so the zero-dependency positive theorem closes."
           },
-          "status": "disagreement"
+          "status": "third_confirmed_second",
+          "third_audit": {
+            "audit_date": "2026-08-03T10:30:17.525724+00:00",
+            "audit_invocation_id": "2d064b8a239049b19da34d5494a77d25",
+            "auditor": "codex-judicial-1-20260803-3fca6294",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+            "claim_type": "positive_theorem",
+            "first_auditor_error": "The scientific conclusion is correct, but no_go_discipline=null violates the packet's mandatory structured N1-N8 requirement for an audited_clean verdict.",
+            "independence": "judicial_review",
+            "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-3fca6294\", \"judge\": 1, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-165c42b3\", \"judge\": 2, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation also gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd, with both corollaries following exactly. These are class-A algebraic identities with no imported authority, and the second position includes the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-49766810\", \"judge\": 3, \"rationale\": \"The explicitly defined matrices give P_{23}SP_{23}=S^2 by direct multiplication, while the fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs exact symbolic checks with no imported authority or comparator, so this is a closed class-A positive theorem. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-33b8b440\", \"judge\": 4, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity decomposition. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner performs the corresponding exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-0397b7e2\", \"judge\": 5, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs the corresponding exact symbolic checks without imported authority or comparators, so this is a closed class-A positive theorem. The second position also supplies the structured N1-N8 packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}]",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+            "second_auditor_error": "none",
+            "sided_with": "second",
+            "verdict": "audited_clean"
+          }
         },
         "decoration_parent_claim_id": null,
-        "independence": null,
-        "load_bearing_step": null,
-        "load_bearing_step_class": null,
-        "negative_assertion_classes": null,
-        "notes_for_re_audit_if_any": null,
+        "independence": "judicial_review",
+        "load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [],
+        "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
         "open_dependency_paths": [],
         "runner_check_breakdown": {
           "A": 0,
@@ -103,7 +242,7 @@
           "D": 0,
           "total_pass": 0
         },
-        "verdict_rationale": null
+        "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-3fca6294\", \"judge\": 1, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-165c42b3\", \"judge\": 2, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation also gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd, with both corollaries following exactly. These are class-A algebraic identities with no imported authority, and the second position includes the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-49766810\", \"judge\": 3, \"rationale\": \"The explicitly defined matrices give P_{23}SP_{23}=S^2 by direct multiplication, while the fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs exact symbolic checks with no imported authority or comparator, so this is a closed class-A positive theorem. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-33b8b440\", \"judge\": 4, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity decomposition. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner performs the corresponding exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-0397b7e2\", \"judge\": 5, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs the corresponding exact symbolic checks without imported authority or comparators, so this is a closed class-A positive theorem. The second position also supplies the structured N1-N8 packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}]"
       },
       "schema": "frozen_audit_judgment_v1"
     },
@@ -125,7 +264,7 @@
     "science_fingerprint": {
       "dependencies": [],
       "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "790ce04dd7f3b1b1d7e45b14a694c7e609d811ea6e89ac8525b6edc75b6dff6e",
+      "digest": "88de0a0b368cbd7c7d1ef44cd376d9508ec170b1d83a26a5dee531ec9538709f",
       "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
       "runners": [
         {
@@ -141,7 +280,7 @@
       "schema": "science_fingerprint_v2",
       "target": {
         "claim_id": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
-        "claim_scope": "Exact 3x3 identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity decomposition, Im[(K_{01})^2]=2 c_even c_odd, and the stated vanishing and nonvanishing corollaries.",
+        "claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
         "claim_type": "positive_theorem",
         "ledger_note_hash": "b423abbb0f7d47cab90de1d6e7bddf40d538f1f2ba87422334f3193b97fa363f",
         "note_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
@@ -150,24 +289,25 @@
     },
     "transitive_descendants": 735
   },
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "cross_confirmation_disagreement",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_status": "audited_clean",
+  "auditor": "codex-judicial-1-20260803-3fca6294",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-3fca6294\", \"judge\": 1, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-165c42b3\", \"judge\": 2, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation also gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd, with both corollaries following exactly. These are class-A algebraic identities with no imported authority, and the second position includes the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-49766810\", \"judge\": 3, \"rationale\": \"The explicitly defined matrices give P_{23}SP_{23}=S^2 by direct multiplication, while the fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs exact symbolic checks with no imported authority or comparator, so this is a closed class-A positive theorem. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-33b8b440\", \"judge\": 4, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity decomposition. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner performs the corresponding exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-0397b7e2\", \"judge\": 5, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs the corresponding exact symbolic checks without imported authority or comparators, so this is a closed class-A positive theorem. The second position also supplies the structured N1-N8 packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}]",
   "claim_id": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
-  "claim_scope": "Exact 3x3 identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity decomposition, Im[(K_{01})^2]=2 c_even c_odd, and the stated vanishing and nonvanishing corollaries.",
+  "claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-08-03T10:14:28.792168+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-08-03T10:30:17.525724+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-08-03T10:14:28.792168+00:00",
       "audit_invocation_id": "3761de5dc4714ad8b27f4c099562daae",
@@ -196,6 +336,1345 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The theorem is a genuine class-A algebraic closure with no upstream dependency or physical identification. Manual multiplication independently confirms the parity transformation, and direct expansion independently confirms the sign and factor in the coordinate polynomial and its corollaries. The runner executes the same exact matrix and symbolic checks successfully; its printed class-C labels are reclassified here as class A because the checks concern specified algebraic inputs rather than a first-principles framework computation."
     },
+    "judicial_panel_record_v1": {
+      "cid": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+      "disagreement_fingerprint": {
+        "claim_id": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+        "first_audit_invocation_id": "3761de5dc4714ad8b27f4c099562daae",
+        "note_hash": "b423abbb0f7d47cab90de1d6e7bddf40d538f1f2ba87422334f3193b97fa363f",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "8a9a3938fb118518459435f3f2a1b6bc6fc0e21c8c5f0eb97f49f69fa35a58ec",
+        "second_audit_invocation_id": "71580f66fa1c4ed3ad2db7648492b38f"
+      },
+      "failures": [],
+      "invocation_id": "2d064b8a239049b19da34d5494a77d25",
+      "majority_count": 5,
+      "panel": 2,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 5,
+          "tuple": [
+            "second",
+            "audited_clean",
+            "positive_theorem",
+            "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+            "A",
+            null,
+            []
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260803-3fca6294",
+          "first_auditor_error": "The scientific conclusion is correct, but no_go_discipline=null violates the packet's mandatory structured N1-N8 requirement for an audited_clean verdict.",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "parity sends c_odd -> -c_odd",
+                "outcome": "pure linear algebra on 3x3 Hermitian circulants and a residual Z_2",
+                "prior_witness_id": null,
+                "route_class": "algebraic_rearrangement",
+                "route_id": "r_parity_algebra"
+              },
+              {
+                "attempt": "K is Hermitian (K = K^dagger)",
+                "disposition": "CLOSED",
+                "evidence_locator": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "a physical carrier, activation law, or readout.",
+                "outcome": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "prior_witness_id": null,
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "r_abstract_carrier"
+              },
+              {
+                "attempt": "Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "complete finite-matrix theorem",
+                "outcome": "TOTAL: PASS=13, FAIL=0",
+                "prior_witness_id": null,
+                "route_class": "numerical_or_finite_case",
+                "route_id": "r_finite_instance"
+              },
+              {
+                "attempt": "c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "physical-readout authority consumed.",
+                "outcome": "Im[K_01^2] at c_odd = 0 = 0",
+                "prior_witness_id": null,
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "r_readout_scope"
+              },
+              {
+                "attempt": "P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "authority consumed.",
+                "outcome": "residual-Z_2 swap of S, S^2",
+                "prior_witness_id": null,
+                "route_class": "dependency_or_registry_reclassification",
+                "route_id": "r_dependency_scope"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "parity sends c_odd -> -c_odd"
+              ],
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "pairwise_checks": [],
+              "unresolved": [],
+              "walls": [
+                "parity sends c_odd -> -c_odd"
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "## Convention note",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "hits": [
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "comparator, fitted selector, or admitted unit convention.",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "1b1ac9b75df1b060",
+                  "occurrence_locator_sha256": "84beec90ea04267c8dff839f4118c83adb8cf03f311e33d378ad1e71f3d50edb",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This occurrence excludes imported unit conventions and contributes no premise to the matrix identities."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "## Convention note",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "6db91e377ce37e22",
+                  "occurrence_locator_sha256": "377016e8f9b05b53882a3e7f98f4e2cf086e336c1f2b422beb381d5c4143fedf",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This heading introduces an explicit orientation-disclosure section rather than a hidden imported premise."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "`(S^2)_{01} = 0`, which corresponds to the opposite left-action convention",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "8639af4233268e18",
+                  "occurrence_locator_sha256": "2420b3c5c33faeff0966fb66b50af0bef32e7f97f2d3b39bcf5a7a27c78e0d30",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "The occurrence reconciles the explicitly defined shift orientation with its entries; it imports no external assumption."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "Under the convention `S e_k = e_{k-1 mod 3}` fixed in the Statement, the",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "a3ca22d809787a3c",
+                  "occurrence_locator_sha256": "ff71405e228d787698526909c7bc1958db7c4c033a00cb1d1cdc0ecbb24e5892",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This is the theorem's explicit definition of S, not a concealed physical normalization or authority."
+                }
+              ],
+              "none_found_reason": null,
+              "scan_scope": "Authenticated hidden-premise phrases in the source note; no ordinary one-hop authorities exist.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "This narrow theorem remains a separate zero-dependency algebra claim.",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": "No N1 route is ruled out by a prior witness, and the source cites no residual-bearing authority.",
+              "scan_scope": "Cited-witness and residual-ID surfaces in the zero-dependency packet.",
+              "scanned_evidence_paths": [],
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "## What this does NOT claim",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": null,
+              "scan_scope": "Authenticated negative rhetoric in the source, distinguishing scope fencing from negative physics results.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "statements": [
+                {
+                  "evidence_locator": "## What this does NOT claim",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "b5031d83d0434d4c",
+                  "occurrence_locator_sha256": "7850985e35c1d30b331c27438900b9959983705efa68318b1c42699c1941818f",
+                  "phrase": "does not",
+                  "resolution_classes_checked": [
+                    "per_element",
+                    "per_site",
+                    "per_mode",
+                    "per_block",
+                    "lattice_wide"
+                  ],
+                  "resolution_evidence_locator": "Audit-lane class:",
+                  "resolution_evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "tested_resolutions": [
+                    "per_element: checked; the phrase heads scope-disclaimer prose and asserts no per-element negative physics result.",
+                    "per_site: checked; the phrase heads scope-disclaimer prose and asserts no per-site negative physics result.",
+                    "per_mode: checked; the phrase heads scope-disclaimer prose and asserts no per-mode negative physics result.",
+                    "per_block: checked; the phrase heads scope-disclaimer prose and asserts no per-block negative physics result.",
+                    "lattice_wide: checked; the phrase heads scope-disclaimer prose and asserts no lattice-wide negative physics result."
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "affected_wall": "parity sends c_odd -> -c_odd",
+                  "candidate_id": "controlled_vocabulary:96",
+                  "closure_mechanism": "definition: \"Algebraic consequence of a parent claim with no new physical content.\" This definition could reclassify a dependent corollary, but it cannot establish the stated conjugation identity.",
+                  "could_close_wall": false,
+                  "disposition": "parity sends c_odd -> -c_odd is proved directly from the displayed matrices rather than closed by a definition or parent-claim reframe.",
+                  "evidence_locator": "controlled_vocabulary:96",
+                  "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "indexed_basis": "definition: \"Algebraic consequence of a parent claim with no new physical content.\"",
+                  "kind": "definition_refactor"
+                }
+              ],
+              "evidence_locator": "controlled_vocabulary:96",
+              "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "none_found_reason": null,
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "open_gate",
+                "convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "Supplied axioms, approved primitives, open obligations, conventions, definitions, and scope reframes relevant to the algebraic step.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)  ()",
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "resolution": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_locator": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
+              "resolved": true,
+              "route_id": "r_parity_algebra"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "disposition": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector | This concerns a physical alignment selector and free trivial block, not the direct conjugation identities of the present abstract matrix family.",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "mechanism": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector |",
+                  "retired": null
+                }
+              ],
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "no_go_row_universe_count": 439,
+              "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+              "none_found_reason": null,
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "corrected_wall_set": [],
+            "demotion": null,
+            "failures": [],
+            "narrowed_claim_scope": null,
+            "next_route": null,
+            "prior_claim_scope": null,
+            "required": true,
+            "status": "PASS"
+          },
+          "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+          "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-2-20260803-165c42b3",
+          "first_auditor_error": "The first position reaches the correct scientific tuple but omits the structured N1-N8 no_go_discipline object that the packet expressly requires for every audited_clean verdict.",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation also gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd, with both corollaries following exactly. These are class-A algebraic identities with no imported authority, and the second position includes the structured packet required for an applyable audited_clean verdict.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "parity sends c_odd -> -c_odd",
+                "outcome": "pure linear algebra on 3x3 Hermitian circulants and a residual Z_2",
+                "prior_witness_id": null,
+                "route_class": "algebraic_rearrangement",
+                "route_id": "r_parity_algebra"
+              },
+              {
+                "attempt": "K is Hermitian (K = K^dagger)",
+                "disposition": "CLOSED",
+                "evidence_locator": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "a physical carrier, activation law, or readout.",
+                "outcome": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "prior_witness_id": null,
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "r_abstract_carrier"
+              },
+              {
+                "attempt": "Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "complete finite-matrix theorem",
+                "outcome": "TOTAL: PASS=13, FAIL=0",
+                "prior_witness_id": null,
+                "route_class": "numerical_or_finite_case",
+                "route_id": "r_finite_instance"
+              },
+              {
+                "attempt": "c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "physical-readout authority consumed.",
+                "outcome": "Im[K_01^2] at c_odd = 0 = 0",
+                "prior_witness_id": null,
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "r_readout_scope"
+              },
+              {
+                "attempt": "P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "authority consumed.",
+                "outcome": "residual-Z_2 swap of S, S^2",
+                "prior_witness_id": null,
+                "route_class": "dependency_or_registry_reclassification",
+                "route_id": "r_dependency_scope"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "parity sends c_odd -> -c_odd"
+              ],
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "pairwise_checks": [],
+              "unresolved": [],
+              "walls": [
+                "parity sends c_odd -> -c_odd"
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "## Convention note",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "hits": [
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "comparator, fitted selector, or admitted unit convention.",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "1b1ac9b75df1b060",
+                  "occurrence_locator_sha256": "84beec90ea04267c8dff839f4118c83adb8cf03f311e33d378ad1e71f3d50edb",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This occurrence excludes imported unit conventions and contributes no premise to the matrix identities."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "## Convention note",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "6db91e377ce37e22",
+                  "occurrence_locator_sha256": "377016e8f9b05b53882a3e7f98f4e2cf086e336c1f2b422beb381d5c4143fedf",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This heading introduces an explicit orientation-disclosure section rather than a hidden imported premise."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "`(S^2)_{01} = 0`, which corresponds to the opposite left-action convention",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "8639af4233268e18",
+                  "occurrence_locator_sha256": "2420b3c5c33faeff0966fb66b50af0bef32e7f97f2d3b39bcf5a7a27c78e0d30",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "The occurrence reconciles the explicitly defined shift orientation with its entries; it imports no external assumption."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "Under the convention `S e_k = e_{k-1 mod 3}` fixed in the Statement, the",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "a3ca22d809787a3c",
+                  "occurrence_locator_sha256": "ff71405e228d787698526909c7bc1958db7c4c033a00cb1d1cdc0ecbb24e5892",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This is the theorem's explicit definition of S, not a concealed physical normalization or authority."
+                }
+              ],
+              "none_found_reason": null,
+              "scan_scope": "Authenticated hidden-premise phrases in the source note; no ordinary one-hop authorities exist.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "This narrow theorem remains a separate zero-dependency algebra claim.",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": "No N1 route is ruled out by a prior witness, and the source cites no residual-bearing authority.",
+              "scan_scope": "Cited-witness and residual-ID surfaces in the zero-dependency packet.",
+              "scanned_evidence_paths": [],
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "## What this does NOT claim",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": null,
+              "scan_scope": "Authenticated negative rhetoric in the source, distinguishing scope fencing from negative physics results.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "statements": [
+                {
+                  "evidence_locator": "## What this does NOT claim",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "b5031d83d0434d4c",
+                  "occurrence_locator_sha256": "7850985e35c1d30b331c27438900b9959983705efa68318b1c42699c1941818f",
+                  "phrase": "does not",
+                  "resolution_classes_checked": [
+                    "per_element",
+                    "per_site",
+                    "per_mode",
+                    "per_block",
+                    "lattice_wide"
+                  ],
+                  "resolution_evidence_locator": "Audit-lane class:",
+                  "resolution_evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "tested_resolutions": [
+                    "per_element: checked; the phrase heads scope-disclaimer prose and asserts no per-element negative physics result.",
+                    "per_site: checked; the phrase heads scope-disclaimer prose and asserts no per-site negative physics result.",
+                    "per_mode: checked; the phrase heads scope-disclaimer prose and asserts no per-mode negative physics result.",
+                    "per_block: checked; the phrase heads scope-disclaimer prose and asserts no per-block negative physics result.",
+                    "lattice_wide: checked; the phrase heads scope-disclaimer prose and asserts no lattice-wide negative physics result."
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "affected_wall": "parity sends c_odd -> -c_odd",
+                  "candidate_id": "controlled_vocabulary:96",
+                  "closure_mechanism": "definition: \"Algebraic consequence of a parent claim with no new physical content.\" This definition could reclassify a dependent corollary, but it cannot establish the stated conjugation identity.",
+                  "could_close_wall": false,
+                  "disposition": "parity sends c_odd -> -c_odd is proved directly from the displayed matrices rather than closed by a definition or parent-claim reframe.",
+                  "evidence_locator": "controlled_vocabulary:96",
+                  "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "indexed_basis": "definition: \"Algebraic consequence of a parent claim with no new physical content.\"",
+                  "kind": "definition_refactor"
+                }
+              ],
+              "evidence_locator": "controlled_vocabulary:96",
+              "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "none_found_reason": null,
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "open_gate",
+                "convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "Supplied axioms, approved primitives, open obligations, conventions, definitions, and scope reframes relevant to the algebraic step.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)  ()",
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "resolution": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_locator": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
+              "resolved": true,
+              "route_id": "r_parity_algebra"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "disposition": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector | This concerns a physical alignment selector and free trivial block, not the direct conjugation identities of the present abstract matrix family.",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "mechanism": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector |",
+                  "retired": null
+                }
+              ],
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "no_go_row_universe_count": 439,
+              "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+              "none_found_reason": null,
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "corrected_wall_set": [],
+            "demotion": null,
+            "failures": [],
+            "narrowed_claim_scope": null,
+            "next_route": null,
+            "prior_claim_scope": null,
+            "required": true,
+            "status": "PASS"
+          },
+          "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+          "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-3-20260803-49766810",
+          "first_auditor_error": "The scientific tuple is correct, but no_go_discipline=null violates the packet's mandatory structured N1-N8 requirement for an audited_clean verdict.",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The explicitly defined matrices give P_{23}SP_{23}=S^2 by direct multiplication, while the fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs exact symbolic checks with no imported authority or comparator, so this is a closed class-A positive theorem. The second position also supplies the structured packet required for an applyable audited_clean verdict.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "parity sends c_odd -> -c_odd",
+                "outcome": "pure linear algebra on 3x3 Hermitian circulants and a residual Z_2",
+                "prior_witness_id": null,
+                "route_class": "algebraic_rearrangement",
+                "route_id": "r_parity_algebra"
+              },
+              {
+                "attempt": "K is Hermitian (K = K^dagger)",
+                "disposition": "CLOSED",
+                "evidence_locator": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "a physical carrier, activation law, or readout.",
+                "outcome": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "prior_witness_id": null,
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "r_abstract_carrier"
+              },
+              {
+                "attempt": "Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "complete finite-matrix theorem",
+                "outcome": "TOTAL: PASS=13, FAIL=0",
+                "prior_witness_id": null,
+                "route_class": "numerical_or_finite_case",
+                "route_id": "r_finite_instance"
+              },
+              {
+                "attempt": "c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "physical-readout authority consumed.",
+                "outcome": "Im[K_01^2] at c_odd = 0 = 0",
+                "prior_witness_id": null,
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "r_readout_scope"
+              },
+              {
+                "attempt": "P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "authority consumed.",
+                "outcome": "residual-Z_2 swap of S, S^2",
+                "prior_witness_id": null,
+                "route_class": "dependency_or_registry_reclassification",
+                "route_id": "r_dependency_scope"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "parity sends c_odd -> -c_odd"
+              ],
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "pairwise_checks": [],
+              "unresolved": [],
+              "walls": [
+                "parity sends c_odd -> -c_odd"
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "## Convention note",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "hits": [
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "comparator, fitted selector, or admitted unit convention.",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "1b1ac9b75df1b060",
+                  "occurrence_locator_sha256": "84beec90ea04267c8dff839f4118c83adb8cf03f311e33d378ad1e71f3d50edb",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This occurrence excludes imported unit conventions and contributes no premise to the matrix identities."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "## Convention note",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "6db91e377ce37e22",
+                  "occurrence_locator_sha256": "377016e8f9b05b53882a3e7f98f4e2cf086e336c1f2b422beb381d5c4143fedf",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This heading introduces an explicit orientation-disclosure section rather than a hidden imported premise."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "`(S^2)_{01} = 0`, which corresponds to the opposite left-action convention",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "8639af4233268e18",
+                  "occurrence_locator_sha256": "2420b3c5c33faeff0966fb66b50af0bef32e7f97f2d3b39bcf5a7a27c78e0d30",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "The occurrence reconciles the explicitly defined shift orientation with its entries; it imports no external assumption."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "Under the convention `S e_k = e_{k-1 mod 3}` fixed in the Statement, the",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "a3ca22d809787a3c",
+                  "occurrence_locator_sha256": "ff71405e228d787a3c1b1cdc0ecbb24e5892",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This is the theorem's explicit definition of S, not a concealed physical normalization or authority."
+                }
+              ],
+              "none_found_reason": null,
+              "scan_scope": "Authenticated hidden-premise phrases in the source note; no ordinary one-hop authorities exist.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "This narrow theorem remains a separate zero-dependency algebra claim.",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": "No N1 route is ruled out by a prior witness, and the source cites no residual-bearing authority.",
+              "scan_scope": "Cited-witness and residual-ID surfaces in the zero-dependency packet.",
+              "scanned_evidence_paths": [],
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "## What this does NOT claim",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": null,
+              "scan_scope": "Authenticated negative rhetoric in the source, distinguishing scope fencing from negative physics results.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "statements": [
+                {
+                  "evidence_locator": "## What this does NOT claim",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "b5031d83d0434d4c",
+                  "occurrence_locator_sha256": "7850985e35c1d30b331c27438900b9959983705efa68318b1c42699c1941818f",
+                  "phrase": "does not",
+                  "resolution_classes_checked": [
+                    "per_element",
+                    "per_site",
+                    "per_mode",
+                    "per_block",
+                    "lattice_wide"
+                  ],
+                  "resolution_evidence_locator": "Audit-lane class:",
+                  "resolution_evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "tested_resolutions": [
+                    "per_element: checked; the phrase heads scope-disclaimer prose and asserts no per-element negative physics result.",
+                    "per_site: checked; the phrase heads scope-disclaimer prose and asserts no per-site negative physics result.",
+                    "per_mode: checked; the phrase heads scope-disclaimer prose and asserts no per-mode negative physics result.",
+                    "per_block: checked; the phrase heads scope-disclaimer prose and asserts no per-block negative physics result.",
+                    "lattice_wide: checked; the phrase heads scope-disclaimer prose and asserts no lattice-wide negative physics result."
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "affected_wall": "parity sends c_odd -> -c_odd",
+                  "candidate_id": "controlled_vocabulary:96",
+                  "closure_mechanism": "definition: \"Algebraic consequence of a parent claim with no new physical content.\" This definition could reclassify a dependent corollary, but it cannot establish the stated conjugation identity.",
+                  "could_close_wall": false,
+                  "disposition": "parity sends c_odd -> -c_odd is proved directly from the displayed matrices rather than closed by a definition or parent-claim reframe.",
+                  "evidence_locator": "controlled_vocabulary:96",
+                  "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "indexed_basis": "definition: \"Algebraic consequence of a parent claim with no new physical content.\"",
+                  "kind": "definition_refactor"
+                }
+              ],
+              "evidence_locator": "controlled_vocabulary:96",
+              "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "none_found_reason": null,
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "open_gate",
+                "convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "Supplied axioms, approved primitives, open obligations, conventions, definitions, and scope reframes relevant to the algebraic step.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)  ()",
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "resolution": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_locator": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
+              "resolved": true,
+              "route_id": "r_parity_algebra"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "disposition": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector | This concerns a physical alignment selector and free trivial block, not the direct conjugation identities of the present abstract matrix family.",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "mechanism": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector |",
+                  "retired": null
+                }
+              ],
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "no_go_row_universe_count": 439,
+              "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+              "none_found_reason": null,
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "corrected_wall_set": [],
+            "demotion": null,
+            "failures": [],
+            "narrowed_claim_scope": null,
+            "next_route": null,
+            "prior_claim_scope": null,
+            "required": true,
+            "status": "PASS"
+          },
+          "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+          "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-4-20260803-33b8b440",
+          "first_auditor_error": "The first position reaches the correct scientific tuple but omits the structured N1-N8 no_go_discipline object expressly required for every audited_clean verdict.",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity decomposition. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner performs the corresponding exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "parity sends c_odd -> -c_odd",
+                "outcome": "pure linear algebra on 3x3 Hermitian circulants and a residual Z_2",
+                "prior_witness_id": null,
+                "route_class": "algebraic_rearrangement",
+                "route_id": "r_parity_algebra"
+              },
+              {
+                "attempt": "K is Hermitian (K = K^dagger)",
+                "disposition": "CLOSED",
+                "evidence_locator": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "a physical carrier, activation law, or readout.",
+                "outcome": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "prior_witness_id": null,
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "r_abstract_carrier"
+              },
+              {
+                "attempt": "Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "complete finite-matrix theorem",
+                "outcome": "TOTAL: PASS=13, FAIL=0",
+                "prior_witness_id": null,
+                "route_class": "numerical_or_finite_case",
+                "route_id": "r_finite_instance"
+              },
+              {
+                "attempt": "c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "physical-readout authority consumed.",
+                "outcome": "Im[K_01^2] at c_odd = 0 = 0",
+                "prior_witness_id": null,
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "r_readout_scope"
+              },
+              {
+                "attempt": "P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "authority consumed.",
+                "outcome": "residual-Z_2 swap of S, S^2",
+                "prior_witness_id": null,
+                "route_class": "dependency_or_registry_reclassification",
+                "route_id": "r_dependency_scope"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "parity sends c_odd -> -c_odd"
+              ],
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "pairwise_checks": [],
+              "unresolved": [],
+              "walls": [
+                "parity sends c_odd -> -c_odd"
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "## Convention note",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "hits": [
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "comparator, fitted selector, or admitted unit convention.",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "1b1ac9b75df1b060",
+                  "occurrence_locator_sha256": "84beec90ea04267c8dff839f4118c83adb8cf03f311e33d378ad1e71f3d50edb",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This occurrence excludes imported unit conventions and contributes no premise to the matrix identities."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "## Convention note",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "6db91e377ce37e22",
+                  "occurrence_locator_sha256": "377016e8f9b05b53882a3e7f98f4e2cf086e336c1f2b422beb381d5c4143fedf",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This heading introduces an explicit orientation-disclosure section rather than a hidden imported premise."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "`(S^2)_{01} = 0`, which corresponds to the opposite left-action convention",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "8639af4233268e18",
+                  "occurrence_locator_sha256": "2420b3c5c33faeff0966fb66b50af0bef32e7f97f2d3b39bcf5a7a27c78e0d30",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "The occurrence reconciles the explicitly defined shift orientation with its entries; it imports no external assumption."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "Under the convention `S e_k = e_{k-1 mod 3}` fixed in the Statement, the",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "a3ca22d809787a3c",
+                  "occurrence_locator_sha256": "ff71405e228d787698526909c7bc1958db7c4c033a00cb1d1cdc0ecbb24e5892",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This is the theorem's explicit definition of S, not a concealed physical normalization or authority."
+                }
+              ],
+              "none_found_reason": null,
+              "scan_scope": "Authenticated hidden-premise phrases in the source note; no ordinary one-hop authorities exist.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "This narrow theorem remains a separate zero-dependency algebra claim.",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": "No N1 route is ruled out by a prior witness, and the source cites no residual-bearing authority.",
+              "scan_scope": "Cited-witness and residual-ID surfaces in the zero-dependency packet.",
+              "scanned_evidence_paths": [],
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "## What this does NOT claim",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": null,
+              "scan_scope": "Authenticated negative rhetoric in the source, distinguishing scope fencing from negative physics results.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "statements": [
+                {
+                  "evidence_locator": "## What this does NOT claim",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "b5031d83d0434d4c",
+                  "occurrence_locator_sha256": "7850985e35c1d30b331c27438900b9959983705efa68318b1c42699c1941818f",
+                  "phrase": "does not",
+                  "resolution_classes_checked": [
+                    "per_element",
+                    "per_site",
+                    "per_mode",
+                    "per_block",
+                    "lattice_wide"
+                  ],
+                  "resolution_evidence_locator": "Audit-lane class:",
+                  "resolution_evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "tested_resolutions": [
+                    "per_element: checked; the phrase heads scope-disclaimer prose and asserts no per-element negative physics result.",
+                    "per_site: checked; the phrase heads scope-disclaimer prose and asserts no per-site negative physics result.",
+                    "per_mode: checked; the phrase heads scope-disclaimer prose and asserts no per-mode negative physics result.",
+                    "per_block: checked; the phrase heads scope-disclaimer prose and asserts no per-block negative physics result.",
+                    "lattice_wide: checked; the phrase heads scope-disclaimer prose and asserts no lattice-wide negative physics result."
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "affected_wall": "parity sends c_odd -> -c_odd",
+                  "candidate_id": "controlled_vocabulary:96",
+                  "closure_mechanism": "definition: \"Algebraic consequence of a parent claim with no new physical content.\" This definition could reclassify a dependent corollary, but it cannot establish the stated conjugation identity.",
+                  "could_close_wall": false,
+                  "disposition": "parity sends c_odd -> -c_odd is proved directly from the displayed matrices rather than closed by a definition or parent-claim reframe.",
+                  "evidence_locator": "controlled_vocabulary:96",
+                  "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "indexed_basis": "definition: \"Algebraic consequence of a parent claim with no new physical content.\"",
+                  "kind": "definition_refactor"
+                }
+              ],
+              "evidence_locator": "controlled_vocabulary:96",
+              "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "none_found_reason": null,
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "open_gate",
+                "convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "Supplied axioms, approved primitives, open obligations, conventions, definitions, and scope reframes relevant to the algebraic step.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)  ()",
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "resolution": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_locator": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
+              "resolved": true,
+              "route_id": "r_parity_algebra"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "disposition": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector | This concerns a physical alignment selector and free trivial block, not the direct conjugation identities of the present abstract matrix family.",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "mechanism": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector |",
+                  "retired": null
+                }
+              ],
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "no_go_row_universe_count": 439,
+              "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+              "none_found_reason": null,
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "corrected_wall_set": [],
+            "demotion": null,
+            "failures": [],
+            "narrowed_claim_scope": null,
+            "next_route": null,
+            "prior_claim_scope": null,
+            "required": true,
+            "status": "PASS"
+          },
+          "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+          "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        },
+        {
+          "auditor": "codex-judicial-5-20260803-0397b7e2",
+          "first_auditor_error": "The first position reaches the correct scientific conclusion but omits the structured N1-N8 no_go_discipline object that the packet expressly requires for every audited_clean verdict.",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs the corresponding exact symbolic checks without imported authority or comparators, so this is a closed class-A positive theorem. The second position also supplies the structured N1-N8 packet required for an applyable audited_clean verdict.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "parity sends c_odd -> -c_odd",
+                "outcome": "pure linear algebra on 3x3 Hermitian circulants and a residual Z_2",
+                "prior_witness_id": null,
+                "route_class": "algebraic_rearrangement",
+                "route_id": "r_parity_algebra"
+              },
+              {
+                "attempt": "K is Hermitian (K = K^dagger)",
+                "disposition": "CLOSED",
+                "evidence_locator": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "a physical carrier, activation law, or readout.",
+                "outcome": "This separate narrow theorem overlaps the displayed parity and coordinate",
+                "prior_witness_id": null,
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "r_abstract_carrier"
+              },
+              {
+                "attempt": "Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "complete finite-matrix theorem",
+                "outcome": "TOTAL: PASS=13, FAIL=0",
+                "prior_witness_id": null,
+                "route_class": "numerical_or_finite_case",
+                "route_id": "r_finite_instance"
+              },
+              {
+                "attempt": "c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "physical-readout authority consumed.",
+                "outcome": "Im[K_01^2] at c_odd = 0 = 0",
+                "prior_witness_id": null,
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "r_readout_scope"
+              },
+              {
+                "attempt": "P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "disposition": "CLOSED",
+                "evidence_locator": "[PASS (C)] P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+                "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "authority consumed.",
+                "outcome": "residual-Z_2 swap of S, S^2",
+                "prior_witness_id": null,
+                "route_class": "dependency_or_registry_reclassification",
+                "route_id": "r_dependency_scope"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "parity sends c_odd -> -c_odd"
+              ],
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "pairwise_checks": [],
+              "unresolved": [],
+              "walls": [
+                "parity sends c_odd -> -c_odd"
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "## Convention note",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "hits": [
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "comparator, fitted selector, or admitted unit convention.",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "1b1ac9b75df1b060",
+                  "occurrence_locator_sha256": "84beec90ea04267c8dff839f4118c83adb8cf03f311e33d378ad1e71f3d50edb",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This occurrence excludes imported unit conventions and contributes no premise to the matrix identities."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "## Convention note",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "6db91e377ce37e22",
+                  "occurrence_locator_sha256": "377016e8f9b05b53882a3e7f98f4e2cf086e336c1f2b422beb381d5c4143fedf",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This heading introduces an explicit orientation-disclosure section rather than a hidden imported premise."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "`(S^2)_{01} = 0`, which corresponds to the opposite left-action convention",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "8639af4233268e18",
+                  "occurrence_locator_sha256": "2420b3c5c33faeff0966fb66b50af0bef32e7f97f2d3b39bcf5a7a27c78e0d30",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "The occurrence reconciles the explicitly defined shift orientation with its entries; it imports no external assumption."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "Under the convention `S e_k = e_{k-1 mod 3}` fixed in the Statement, the",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "a3ca22d809787a3c",
+                  "occurrence_locator_sha256": "ff71405e228d787698526909c7bc1958db7c4c033a00cb1d1cdc0ecbb24e5892",
+                  "phrase": "convention",
+                  "promoted_wall": null,
+                  "rationale": "This is the theorem's explicit definition of S, not a concealed physical normalization or authority."
+                }
+              ],
+              "none_found_reason": null,
+              "scan_scope": "Authenticated hidden-premise phrases in the source note; no ordinary one-hop authorities exist.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "This narrow theorem remains a separate zero-dependency algebra claim.",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": "No N1 route is ruled out by a prior witness, and the source cites no residual-bearing authority.",
+              "scan_scope": "Cited-witness and residual-ID surfaces in the zero-dependency packet.",
+              "scanned_evidence_paths": [],
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "## What this does NOT claim",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "none_found_reason": null,
+              "scan_scope": "Authenticated negative rhetoric in the source, distinguishing scope fencing from negative physics results.",
+              "scanned_evidence_paths": [
+                "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+              ],
+              "statements": [
+                {
+                  "evidence_locator": "## What this does NOT claim",
+                  "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+                  "occurrence_count": 1,
+                  "occurrence_group_id": "b5031d83d0434d4c",
+                  "occurrence_locator_sha256": "7850985e35c1d30b331c27438900b9959983705efa68318b1c42699c1941818f",
+                  "phrase": "does not",
+                  "resolution_classes_checked": [
+                    "per_element",
+                    "per_site",
+                    "per_mode",
+                    "per_block",
+                    "lattice_wide"
+                  ],
+                  "resolution_evidence_locator": "Audit-lane class:",
+                  "resolution_evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "tested_resolutions": [
+                    "per_element: checked; the phrase heads scope-disclaimer prose and asserts no per-element negative physics result.",
+                    "per_site: checked; the phrase heads scope-disclaimer prose and asserts no per-site negative physics result.",
+                    "per_mode: checked; the phrase heads scope-disclaimer prose and asserts no per-mode negative physics result.",
+                    "per_block: checked; the phrase heads scope-disclaimer prose and asserts no per-block negative physics result.",
+                    "lattice_wide: checked; the phrase heads scope-disclaimer prose and asserts no lattice-wide negative physics result."
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "affected_wall": "parity sends c_odd -> -c_odd",
+                  "candidate_id": "controlled_vocabulary:96",
+                  "closure_mechanism": "definition: \"Algebraic consequence of a parent claim with no new physical content.\" This definition could reclassify a dependent corollary, but it cannot establish the stated conjugation identity.",
+                  "could_close_wall": false,
+                  "disposition": "parity sends c_odd -> -c_odd is proved directly from the displayed matrices rather than closed by a definition or parent-claim reframe.",
+                  "evidence_locator": "controlled_vocabulary:96",
+                  "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "indexed_basis": "definition: \"Algebraic consequence of a parent claim with no new physical content.\"",
+                  "kind": "definition_refactor"
+                }
+              ],
+              "evidence_locator": "controlled_vocabulary:96",
+              "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "none_found_reason": null,
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "open_gate",
+                "convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "Supplied axioms, approved primitives, open obligations, conventions, definitions, and scope reframes relevant to the algebraic step.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)  ()",
+              "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+              "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "resolution": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_locator": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+              "resolution_evidence_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
+              "resolved": true,
+              "route_id": "r_parity_algebra"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "disposition": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector | This concerns a physical alignment selector and free trivial block, not the direct conjugation identities of the present abstract matrix family.",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+                  "mechanism": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector |",
+                  "retired": null
+                }
+              ],
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "no_go_row_universe_count": 439,
+              "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+              "none_found_reason": null,
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "corrected_wall_set": [],
+            "demotion": null,
+            "failures": [],
+            "narrowed_claim_scope": null,
+            "next_route": null,
+            "prior_claim_scope": null,
+            "required": true,
+            "status": "PASS"
+          },
+          "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
+          "ratified_claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+          "ratified_claim_type": "positive_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-08-03T10:14:28.798042+00:00",
       "audit_invocation_id": "71580f66fa1c4ed3ad2db7648492b38f",
@@ -468,24 +1947,531 @@
       "verdict": "audited_clean",
       "verdict_rationale": "Manual multiplication gives P_{23}SP_{23}=S^2 and P_{23}(S-S^2)P_{23}=-(S-S^2); with the stated orientation, K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. All 13 runner passes are exact algebraic checks and agree with that independent calculation, including Hermiticity and the concrete nonzero instance. The note imports no authority or comparator and confines itself to the defined matrices, so the zero-dependency positive theorem closes."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-08-03T10:30:17.525724+00:00",
+      "audit_invocation_id": "2d064b8a239049b19da34d5494a77d25",
+      "auditor": "codex-judicial-1-20260803-3fca6294",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.",
+      "claim_type": "positive_theorem",
+      "first_auditor_error": "The scientific conclusion is correct, but no_go_discipline=null violates the packet's mandatory structured N1-N8 requirement for an audited_clean verdict.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-3fca6294\", \"judge\": 1, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-165c42b3\", \"judge\": 2, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation also gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd, with both corollaries following exactly. These are class-A algebraic identities with no imported authority, and the second position includes the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-49766810\", \"judge\": 3, \"rationale\": \"The explicitly defined matrices give P_{23}SP_{23}=S^2 by direct multiplication, while the fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs exact symbolic checks with no imported authority or comparator, so this is a closed class-A positive theorem. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-33b8b440\", \"judge\": 4, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity decomposition. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner performs the corresponding exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-0397b7e2\", \"judge\": 5, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs the corresponding exact symbolic checks without imported authority or comparators, so this is a closed class-A positive theorem. The second position also supplies the structured N1-N8 packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2)",
+            "disposition": "CLOSED",
+            "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+            "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "parity sends c_odd -> -c_odd",
+            "outcome": "pure linear algebra on 3x3 Hermitian circulants and a residual Z_2",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "r_parity_algebra"
+          },
+          {
+            "attempt": "K is Hermitian (K = K^dagger)",
+            "disposition": "CLOSED",
+            "evidence_locator": "This separate narrow theorem overlaps the displayed parity and coordinate",
+            "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "a physical carrier, activation law, or readout.",
+            "outcome": "This separate narrow theorem overlaps the displayed parity and coordinate",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "r_abstract_carrier"
+          },
+          {
+            "attempt": "Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+            "disposition": "CLOSED",
+            "evidence_locator": "[PASS (C)] Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+            "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "complete finite-matrix theorem",
+            "outcome": "TOTAL: PASS=13, FAIL=0",
+            "prior_witness_id": null,
+            "route_class": "numerical_or_finite_case",
+            "route_id": "r_finite_instance"
+          },
+          {
+            "attempt": "c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+            "disposition": "CLOSED",
+            "evidence_locator": "[PASS (C)] c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+            "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "physical-readout authority consumed.",
+            "outcome": "Im[K_01^2] at c_odd = 0 = 0",
+            "prior_witness_id": null,
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "r_readout_scope"
+          },
+          {
+            "attempt": "P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+            "disposition": "CLOSED",
+            "evidence_locator": "[PASS (C)] P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+            "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "authority consumed.",
+            "outcome": "residual-Z_2 swap of S, S^2",
+            "prior_witness_id": null,
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "r_dependency_scope"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "parity sends c_odd -> -c_odd"
+          ],
+          "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+          "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "parity sends c_odd -> -c_odd"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "## Convention note",
+          "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "comparator, fitted selector, or admitted unit convention.",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "1b1ac9b75df1b060",
+              "occurrence_locator_sha256": "84beec90ea04267c8dff839f4118c83adb8cf03f311e33d378ad1e71f3d50edb",
+              "phrase": "convention",
+              "promoted_wall": null,
+              "rationale": "This occurrence excludes imported unit conventions and contributes no premise to the matrix identities."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "## Convention note",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "6db91e377ce37e22",
+              "occurrence_locator_sha256": "377016e8f9b05b53882a3e7f98f4e2cf086e336c1f2b422beb381d5c4143fedf",
+              "phrase": "convention",
+              "promoted_wall": null,
+              "rationale": "This heading introduces an explicit orientation-disclosure section rather than a hidden imported premise."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "`(S^2)_{01} = 0`, which corresponds to the opposite left-action convention",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "8639af4233268e18",
+              "occurrence_locator_sha256": "2420b3c5c33faeff0966fb66b50af0bef32e7f97f2d3b39bcf5a7a27c78e0d30",
+              "phrase": "convention",
+              "promoted_wall": null,
+              "rationale": "The occurrence reconciles the explicitly defined shift orientation with its entries; it imports no external assumption."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Under the convention `S e_k = e_{k-1 mod 3}` fixed in the Statement, the",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "a3ca22d809787a3c",
+              "occurrence_locator_sha256": "ff71405e228d787698526909c7bc1958db7c4c033a00cb1d1cdc0ecbb24e5892",
+              "phrase": "convention",
+              "promoted_wall": null,
+              "rationale": "This is the theorem's explicit definition of S, not a concealed physical normalization or authority."
+            }
+          ],
+          "none_found_reason": null,
+          "scan_scope": "Authenticated hidden-premise phrases in the source note; no ordinary one-hop authorities exist.",
+          "scanned_evidence_paths": [
+            "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "This narrow theorem remains a separate zero-dependency algebra claim.",
+          "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "none_found_reason": "No N1 route is ruled out by a prior witness, and the source cites no residual-bearing authority.",
+          "scan_scope": "Cited-witness and residual-ID surfaces in the zero-dependency packet.",
+          "scanned_evidence_paths": [],
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "## What this does NOT claim",
+          "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "none_found_reason": null,
+          "scan_scope": "Authenticated negative rhetoric in the source, distinguishing scope fencing from negative physics results.",
+          "scanned_evidence_paths": [
+            "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+          ],
+          "statements": [
+            {
+              "evidence_locator": "## What this does NOT claim",
+              "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "b5031d83d0434d4c",
+              "occurrence_locator_sha256": "7850985e35c1d30b331c27438900b9959983705efa68318b1c42699c1941818f",
+              "phrase": "does not",
+              "resolution_classes_checked": [
+                "per_element",
+                "per_site",
+                "per_mode",
+                "per_block",
+                "lattice_wide"
+              ],
+              "resolution_evidence_locator": "Audit-lane class:",
+              "resolution_evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "tested_resolutions": [
+                "per_element: checked; the phrase heads scope-disclaimer prose and asserts no per-element negative physics result.",
+                "per_site: checked; the phrase heads scope-disclaimer prose and asserts no per-site negative physics result.",
+                "per_mode: checked; the phrase heads scope-disclaimer prose and asserts no per-mode negative physics result.",
+                "per_block: checked; the phrase heads scope-disclaimer prose and asserts no per-block negative physics result.",
+                "lattice_wide: checked; the phrase heads scope-disclaimer prose and asserts no lattice-wide negative physics result."
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "affected_wall": "parity sends c_odd -> -c_odd",
+              "candidate_id": "controlled_vocabulary:96",
+              "closure_mechanism": "definition: \"Algebraic consequence of a parent claim with no new physical content.\" This definition could reclassify a dependent corollary, but it cannot establish the stated conjugation identity.",
+              "could_close_wall": false,
+              "disposition": "parity sends c_odd -> -c_odd is proved directly from the displayed matrices rather than closed by a definition or parent-claim reframe.",
+              "evidence_locator": "controlled_vocabulary:96",
+              "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "indexed_basis": "definition: \"Algebraic consequence of a parent claim with no new physical content.\"",
+              "kind": "definition_refactor"
+            }
+          ],
+          "evidence_locator": "controlled_vocabulary:96",
+          "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+          "none_found_reason": null,
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Supplied axioms, approved primitives, open obligations, conventions, definitions, and scope reframes relevant to the algebraic step.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)  ()",
+          "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+          "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+          "resolution": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+          "resolution_evidence_locator": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+          "resolution_evidence_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
+          "resolved": true,
+          "route_id": "r_parity_algebra"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+              "disposition": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector | This concerns a physical alignment selector and free trivial block, not the direct conjugation identities of the present abstract matrix family.",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+              "mechanism": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector |",
+              "retired": null
+            }
+          ],
+          "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+          "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+          "no_go_row_universe_count": 439,
+          "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+          "none_found_reason": null,
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [],
+        "demotion": null,
+        "failures": [],
+        "narrowed_claim_scope": null,
+        "next_route": null,
+        "prior_claim_scope": null,
+        "required": true,
+        "status": "PASS"
+      },
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_clean"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "retained",
   "load_bearing_score": 10.524,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Under the fixed shift convention, P_{23}SP_{23}=S^2 and K_{01}=c_even+i c_odd, yielding the parity sign flip and Im[(K_{01})^2]=2c_even c_odd.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
+  "no_go_discipline": {
+    "N1_alternative_routes": [
+      {
+        "attempt": "P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2)",
+        "disposition": "CLOSED",
+        "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+        "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "parity sends c_odd -> -c_odd",
+        "outcome": "pure linear algebra on 3x3 Hermitian circulants and a residual Z_2",
+        "prior_witness_id": null,
+        "route_class": "algebraic_rearrangement",
+        "route_id": "r_parity_algebra"
+      },
+      {
+        "attempt": "K is Hermitian (K = K^dagger)",
+        "disposition": "CLOSED",
+        "evidence_locator": "This separate narrow theorem overlaps the displayed parity and coordinate",
+        "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "a physical carrier, activation law, or readout.",
+        "outcome": "This separate narrow theorem overlaps the displayed parity and coordinate",
+        "prior_witness_id": null,
+        "route_class": "alternate_carrier_or_sector",
+        "route_id": "r_abstract_carrier"
+      },
+      {
+        "attempt": "Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+        "disposition": "CLOSED",
+        "evidence_locator": "[PASS (C)] Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
+        "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "complete finite-matrix theorem",
+        "outcome": "TOTAL: PASS=13, FAIL=0",
+        "prior_witness_id": null,
+        "route_class": "numerical_or_finite_case",
+        "route_id": "r_finite_instance"
+      },
+      {
+        "attempt": "c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+        "disposition": "CLOSED",
+        "evidence_locator": "[PASS (C)] c_odd = 0 forces Im[(K_01)^2] = 0 exact",
+        "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "physical-readout authority consumed.",
+        "outcome": "Im[K_01^2] at c_odd = 0 = 0",
+        "prior_witness_id": null,
+        "route_class": "alternate_observable_or_readout",
+        "route_id": "r_readout_scope"
+      },
+      {
+        "attempt": "P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+        "disposition": "CLOSED",
+        "evidence_locator": "[PASS (C)] P_{23} S P_{23} = S^2 exact (Z_2 swap)",
+        "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "authority consumed.",
+        "outcome": "residual-Z_2 swap of S, S^2",
+        "prior_witness_id": null,
+        "route_class": "dependency_or_registry_reclassification",
+        "route_id": "r_dependency_scope"
+      }
+    ],
+    "N2_wall_independence": {
+      "collapsed_wall_set": [
+        "parity sends c_odd -> -c_odd"
+      ],
+      "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+      "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+      "pairwise_checks": [],
+      "unresolved": [],
+      "walls": [
+        "parity sends c_odd -> -c_odd"
+      ]
+    },
+    "N3_hidden_wall_scan": {
+      "evidence_locator": "## Convention note",
+      "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "hits": [
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "comparator, fitted selector, or admitted unit convention.",
+          "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "1b1ac9b75df1b060",
+          "occurrence_locator_sha256": "84beec90ea04267c8dff839f4118c83adb8cf03f311e33d378ad1e71f3d50edb",
+          "phrase": "convention",
+          "promoted_wall": null,
+          "rationale": "This occurrence excludes imported unit conventions and contributes no premise to the matrix identities."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "## Convention note",
+          "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "6db91e377ce37e22",
+          "occurrence_locator_sha256": "377016e8f9b05b53882a3e7f98f4e2cf086e336c1f2b422beb381d5c4143fedf",
+          "phrase": "convention",
+          "promoted_wall": null,
+          "rationale": "This heading introduces an explicit orientation-disclosure section rather than a hidden imported premise."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "`(S^2)_{01} = 0`, which corresponds to the opposite left-action convention",
+          "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "8639af4233268e18",
+          "occurrence_locator_sha256": "2420b3c5c33faeff0966fb66b50af0bef32e7f97f2d3b39bcf5a7a27c78e0d30",
+          "phrase": "convention",
+          "promoted_wall": null,
+          "rationale": "The occurrence reconciles the explicitly defined shift orientation with its entries; it imports no external assumption."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "Under the convention `S e_k = e_{k-1 mod 3}` fixed in the Statement, the",
+          "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "a3ca22d809787a3c",
+          "occurrence_locator_sha256": "ff71405e228d787698526909c7bc1958db7c4c033a00cb1d1cdc0ecbb24e5892",
+          "phrase": "convention",
+          "promoted_wall": null,
+          "rationale": "This is the theorem's explicit definition of S, not a concealed physical normalization or authority."
+        }
+      ],
+      "none_found_reason": null,
+      "scan_scope": "Authenticated hidden-premise phrases in the source note; no ordinary one-hop authorities exist.",
+      "scanned_evidence_paths": [
+        "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+      ],
+      "unresolved": []
+    },
+    "N4_residual_matching": {
+      "evidence_locator": "This narrow theorem remains a separate zero-dependency algebra claim.",
+      "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "none_found_reason": "No N1 route is ruled out by a prior witness, and the source cites no residual-bearing authority.",
+      "scan_scope": "Cited-witness and residual-ID surfaces in the zero-dependency packet.",
+      "scanned_evidence_paths": [],
+      "unresolved": [],
+      "witnesses": []
+    },
+    "N5_rhetoric_audit": {
+      "evidence_locator": "## What this does NOT claim",
+      "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "none_found_reason": null,
+      "scan_scope": "Authenticated negative rhetoric in the source, distinguishing scope fencing from negative physics results.",
+      "scanned_evidence_paths": [
+        "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md"
+      ],
+      "statements": [
+        {
+          "evidence_locator": "## What this does NOT claim",
+          "evidence_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "b5031d83d0434d4c",
+          "occurrence_locator_sha256": "7850985e35c1d30b331c27438900b9959983705efa68318b1c42699c1941818f",
+          "phrase": "does not",
+          "resolution_classes_checked": [
+            "per_element",
+            "per_site",
+            "per_mode",
+            "per_block",
+            "lattice_wide"
+          ],
+          "resolution_evidence_locator": "Audit-lane class:",
+          "resolution_evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+          "tested_resolutions": [
+            "per_element: checked; the phrase heads scope-disclaimer prose and asserts no per-element negative physics result.",
+            "per_site: checked; the phrase heads scope-disclaimer prose and asserts no per-site negative physics result.",
+            "per_mode: checked; the phrase heads scope-disclaimer prose and asserts no per-mode negative physics result.",
+            "per_block: checked; the phrase heads scope-disclaimer prose and asserts no per-block negative physics result.",
+            "lattice_wide: checked; the phrase heads scope-disclaimer prose and asserts no lattice-wide negative physics result."
+          ],
+          "untested_resolutions": []
+        }
+      ],
+      "unresolved": []
+    },
+    "N6_partial_closure_scan": {
+      "candidates": [
+        {
+          "addressed": true,
+          "affected_wall": "parity sends c_odd -> -c_odd",
+          "candidate_id": "controlled_vocabulary:96",
+          "closure_mechanism": "definition: \"Algebraic consequence of a parent claim with no new physical content.\" This definition could reclassify a dependent corollary, but it cannot establish the stated conjugation identity.",
+          "could_close_wall": false,
+          "disposition": "parity sends c_odd -> -c_odd is proved directly from the displayed matrices rather than closed by a definition or parent-claim reframe.",
+          "evidence_locator": "controlled_vocabulary:96",
+          "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+          "indexed_basis": "definition: \"Algebraic consequence of a parent claim with no new physical content.\"",
+          "kind": "definition_refactor"
+        }
+      ],
+      "evidence_locator": "controlled_vocabulary:96",
+      "evidence_path": "audit-packet://partial-closure-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+      "none_found_reason": null,
+      "premise_classes_checked": [
+        "axiom_or_approved_primitive",
+        "open_gate",
+        "convention_not_accepted",
+        "definition_or_scope_reframe"
+      ],
+      "scan_scope": "Supplied axioms, approved primitives, open obligations, conventions, definitions, and scope reframes relevant to the algebraic step.",
+      "unresolved": []
+    },
+    "N7_steelman": {
+      "argument": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)  ()",
+      "evidence_locator": "[PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)",
+      "evidence_path": "audit-packet://runner-stdout/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+      "resolution": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+      "resolution_evidence_locator": "check(\"P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)\",",
+      "resolution_evidence_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
+      "resolved": true,
+      "route_id": "r_parity_algebra"
+    },
+    "N8_cross_cycle_echo": {
+      "echoes": [
+        {
+          "addressed": true,
+          "applicable": false,
+          "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+          "disposition": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector | This concerns a physical alignment selector and free trivial block, not the direct conjugation identities of the present abstract matrix family.",
+          "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+          "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+          "mechanism": "| Residual-`Z_2` normal form plus fixed spectra | Two-dimensional trivial block rotates freely and spans overlap `[0,1]` | new exact counterfamily | closed as an alignment selector |",
+          "retired": null
+        }
+      ],
+      "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/ckm-source-action-alignment-20260712/NO_GO_LEDGER.md",
+      "evidence_path": "audit-packet://cross-cycle-index/circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
+      "no_go_row_universe_count": 439,
+      "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+      "none_found_reason": null,
+      "packet_complete": true,
+      "unresolved": []
+    },
+    "corrected_wall_set": [],
+    "demotion": null,
+    "failures": [],
+    "narrowed_claim_scope": null,
+    "next_route": null,
+    "prior_claim_scope": null,
+    "required": true,
+    "status": "PASS"
+  },
   "note_hash": "b423abbb0f7d47cab90de1d6e7bddf40d538f1f2ba87422334f3193b97fa363f",
   "note_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-check the coordinate sign only if the explicitly fixed shift orientation is changed.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh",
   "previous_audits": [
@@ -808,5 +2794,5 @@
   "runner_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
   "title": "Hermitian Circulant Parity Decomposition + Coordinate-Polynomial Narrow Theorem",
   "transitive_descendants": 735,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-3fca6294\", \"judge\": 1, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity split. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner independently performs all 13 exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-2-20260803-165c42b3\", \"judge\": 2, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation also gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd, with both corollaries following exactly. These are class-A algebraic identities with no imported authority, and the second position includes the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-3-20260803-49766810\", \"judge\": 3, \"rationale\": \"The explicitly defined matrices give P_{23}SP_{23}=S^2 by direct multiplication, while the fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs exact symbolic checks with no imported authority or comparator, so this is a closed class-A positive theorem. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-4-20260803-33b8b440\", \"judge\": 4, \"rationale\": \"Direct multiplication of the displayed matrices gives P_{23}SP_{23}=S^2 and the stated parity decomposition. The fixed shift orientation gives K_{01}=c_even+i c_odd, hence Im[(K_{01})^2]=2c_even c_odd and both corollaries; the runner performs the corresponding exact class-A checks without imported authority or comparator. The second position also supplies the structured packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}, {\"auditor\": \"codex-judicial-5-20260803-0397b7e2\", \"judge\": 5, \"rationale\": \"Direct multiplication of the specified matrices gives P_{23}SP_{23}=S^2, fixes I and S+S^2, and negates i(S-S^2). The fixed orientation gives K_{01}=c_even+i c_odd and therefore Im[(K_{01})^2]=2c_even c_odd. The runner performs the corresponding exact symbolic checks without imported authority or comparators, so this is a closed class-A positive theorem. The second position also supplies the structured N1-N8 packet required for an applyable audited_clean verdict.\", \"tuple\": [\"second\", \"audited_clean\", \"positive_theorem\", \"Exact 3x3 linear-algebra identities for the specified S, P_{23}, and K(d,c_even,c_odd), including the residual-Z_2 parity split and Im[(K_{01})^2]=2 c_even c_odd.\", \"A\", null, []]}]"
 }

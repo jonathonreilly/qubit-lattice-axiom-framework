@@ -32,9 +32,9 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3971 |
-| Applied audit verdicts | 866 |
-| Retained-grade rows, including boxed decorations | 456 |
-| Retained positive theorems | 110 |
+| Applied audit verdicts | 867 |
+| Retained-grade rows, including boxed decorations | 457 |
+| Retained positive theorems | 111 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 320 |
 | Boxed decorations under retained parents | 26 |
@@ -54,10 +54,10 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3093 |
-| Ready rows | 509 |
+| Total pending rows | 3092 |
+| Ready rows | 508 |
 | Cycle-break targets | 60 |
-| Critical pending | 662 |
+| Critical pending | 661 |
 | High pending | 382 |
 | Medium pending | 857 |
 | Leaf pending | 1192 |
@@ -110,7 +110,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 9 |
 | Lane rows removed since prior pass | 0 |
-| Non-lane rows deferred by simulated interleave | 94 |
+| Non-lane rows deferred by simulated interleave | 93 |
 
 Named lane membership churn since the prior pass:
 - added: `cpt_exact_note`
@@ -166,7 +166,7 @@ Hypothetical next dispatch top-10 under OFF-ONLY banded interleave (ready rows, 
 - 10. sim `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` / actual `plaquette_self_consistency_note` ← differs
 
 Lane rows advanced by the simulated interleave (positions gained; complete list):
-- `quark_route2_exact_readout_map_note_2026-04-19`: +46
+- `quark_route2_exact_readout_map_note_2026-04-19`: +45
 - `planck_boundary_orientation_incidence_no_go_note_2026-04-30`: +41
 - `koide_q_delta_linking_relation_theorem_note_2026-04-20`: +36
 - `self_gravity_backreaction_closure_note`: +36
@@ -304,7 +304,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`: -1
 - `post_record_count_probability_firewall_2026-06-06`: -1
 - `koide_mru_demotion_note_2026-04-20`: -1
-- `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`: -1
 - `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02`: -1
 - `koide_a1_loop_final_status_2026-04-22`: -1
 - `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10`: -1

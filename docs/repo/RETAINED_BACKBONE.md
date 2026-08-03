@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 110 |
+| Retained positive rows | 111 |
 | Retained bounded rows | 320 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 26 |
 
-## Retained positive rows (110)
+## Retained positive rows (111)
 
 Sorted by load-bearing graph score (descending).
 
@@ -65,6 +65,7 @@ Sorted by load-bearing graph score (descending).
 - [`koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29`](../../docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md) — score 10.570; audited 2026-08-01T20:26:33.388687+00:00
 - [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 10.543; audited 2026-08-03T09:44:09.206933+00:00
 - [`charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11`](../../docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md) — score 10.535; audited 2026-07-12T19:55:26.260929+00:00
+- [`circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`](../../docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md) — score 10.524; audited 2026-08-03T10:30:17.525724+00:00
 - [`dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25`](../../docs/DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md) — score 10.055; audited 2026-07-25T03:31:16.829931+00:00
 - [`gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07`](../../docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md) — score 10.026; audited 2026-07-29T20:56:57.806172+00:00
 - [`scalar_3plus1_temporal_ratio_note`](../../docs/SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md) — score 8.822; audited 2026-05-23T13:54:19.575626+00:00

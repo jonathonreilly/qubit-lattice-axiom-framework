@@ -118,4 +118,4 @@ OUTCOME
 CYCLE 882 CERTIFICATES: ALL PASS
 ==============================================================================
 
-controls: deterministic=True runtime=0.049903s stdout=6373B cache=52de25f7fc144ecd
+controls: deterministic=True runtime_under_limit=True stdout=6373B cache=52de25f7fc144ecd

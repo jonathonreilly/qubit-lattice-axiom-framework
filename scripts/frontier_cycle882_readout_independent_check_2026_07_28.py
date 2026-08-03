@@ -1100,10 +1100,12 @@ def run() -> int:
     )
     certs["CL_CONTROLS"] = controls
     sys.stdout.write(text)
+    # Wall-clock seconds are deliberately NOT printed: the transcript is a
+    # committed cache and must be byte stable across cold runs.
     sys.stdout.write(
         f"\ncontrols: deterministic={deterministic} "
-        f"runtime={controls['runtime_seconds']}s stdout={stdout_bytes}B "
-        f"cache={cache_digest[:16]}\n")
+        f"runtime_under_limit={controls['runtime_under_limit']} "
+        f"stdout={stdout_bytes}B cache={cache_digest[:16]}\n")
     return 0 if all(c["pass"] for c in certs.values()) else 1
 
 

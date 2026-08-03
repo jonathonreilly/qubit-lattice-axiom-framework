@@ -164,9 +164,9 @@
   "scope_correction_demanded": "C882-T1 must be stated for constraint systems that are homogeneous OF A SINGLE DEGREE (equivalently scaling-covariant, F(lambda a) = lambda^d F(a)), not merely for systems with zero constant term. Mixed-degree zero-constant-term relations such as alpha^2 = c alpha have solution set {0, c} and DO reach a nonzero member.",
   "source_pins": [
     {
-      "git_blob": "35935905b229cf7b423896e57e4b6658a5ca9539",
+      "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
       "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
-      "sha256": "bc2da909d49f92b7c8551a5aa4ce2e051665c4bd2fbc81d2ed6291d777372c63"
+      "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a"
     },
     {
       "git_blob": "753990b65511ec3dcbc48d9cf265d151a4c423e9",

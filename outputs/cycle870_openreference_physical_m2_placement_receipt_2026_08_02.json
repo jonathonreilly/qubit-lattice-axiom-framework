@@ -1,0 +1,409 @@
+{
+  "boundary": {
+    "derived": [
+      "formulaic OpenReference carrier placement including reference bonds",
+      "bounded macrocell allocation for raw input, syndrome, and echo-controller registers",
+      "literal returned nearest-neighbor routes for every declared preparation/loader/controller interaction",
+      "transported 24/576 coordinate covariance"
+    ],
+    "open": [
+      "full OpenReference free/seam/contact update on the identical site map",
+      "intrinsic coframe/boundary/clean-genesis law",
+      "fault repair and periodic topology"
+    ],
+    "supplied": [
+      "spacing-16 origin and coframe",
+      "finite open boundary and one preparation invocation",
+      "clean raw-input/syndrome/controller genesis domain",
+      "Cycle703 abstract preparation and loader semantics"
+    ]
+  },
+  "content_sha256_before_hash_field": "bcb8ba67c8723b32a45ceea06eb0fad1f43de9d8cd555ae265c752a5615112ce",
+  "failures": [],
+  "fixtures": [
+    {
+      "abstract_edges": 256,
+      "algebra": {
+        "abstract_edge_qubits": 256,
+        "expected_logical_qubits": 72,
+        "logical_canonical_failures": 0,
+        "logical_qubits": 72,
+        "logical_stabilizer_commutator_failures": 0,
+        "maximum_lifted_loader_weight": 17,
+        "maximum_lifted_stabilizer_weight": 40,
+        "stabilizer_rank": 184,
+        "stabilizer_rows": 186
+      },
+      "carrier_auxiliary_collisions": 0,
+      "carrier_collisions": 0,
+      "cells": 12,
+      "chronology_interaction_count": 3448,
+      "coarse_edges": 20,
+      "covariance": {
+        "frame_injectivity_failures": 0,
+        "ordered_products": 576,
+        "product_diagram_failures": 0,
+        "proper_cubic_frames": 24,
+        "transported_coframe_supplied": true
+      },
+      "encoder_chronology": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ],
+      "expected_abstract_edges": 256,
+      "expected_physical_carrier_M2": 276,
+      "interaction_counts": {
+        "controller": 0,
+        "corrections": 380,
+        "loader": 1348,
+        "syndrome": 1720
+      },
+      "persistent_auxiliary_slots": 432,
+      "physical_carrier_M2": 276,
+      "routes": {
+        "first_swap_deletion_detected_macros": 3370,
+        "fixed_role_parity_colors": 2448,
+        "interaction_count": 3448,
+        "maximum_route_distance": 42,
+        "non_NN_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_failures": 0,
+        "routed_gate_count": 68544,
+        "same_color_route_collisions": 0
+      },
+      "shape": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "abstract_edges": 658,
+      "algebra": {
+        "abstract_edge_qubits": 658,
+        "expected_logical_qubits": 180,
+        "logical_canonical_failures": 0,
+        "logical_qubits": 180,
+        "logical_stabilizer_commutator_failures": 0,
+        "maximum_lifted_loader_weight": 18,
+        "maximum_lifted_stabilizer_weight": 40,
+        "stabilizer_rank": 478,
+        "stabilizer_rows": 486
+      },
+      "carrier_auxiliary_collisions": 0,
+      "carrier_collisions": 0,
+      "cells": 30,
+      "chronology_interaction_count": 9224,
+      "coarse_edges": 59,
+      "covariance": {
+        "frame_injectivity_failures": 0,
+        "ordered_products": 576,
+        "product_diagram_failures": 0,
+        "proper_cubic_frames": 24,
+        "transported_coframe_supplied": true
+      },
+      "encoder_chronology": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ],
+      "expected_abstract_edges": 658,
+      "expected_physical_carrier_M2": 717,
+      "interaction_counts": {
+        "controller": 0,
+        "corrections": 959,
+        "loader": 3435,
+        "syndrome": 4830
+      },
+      "persistent_auxiliary_slots": 1080,
+      "physical_carrier_M2": 717,
+      "routes": {
+        "first_swap_deletion_detected_macros": 9029,
+        "fixed_role_parity_colors": 2764,
+        "interaction_count": 9224,
+        "maximum_route_distance": 42,
+        "non_NN_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_failures": 0,
+        "routed_gate_count": 193610,
+        "same_color_route_collisions": 0
+      },
+      "shape": [
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "abstract_edges": 168,
+      "algebra": {
+        "abstract_edge_qubits": 168,
+        "expected_logical_qubits": 48,
+        "logical_canonical_failures": 0,
+        "logical_qubits": 48,
+        "logical_stabilizer_commutator_failures": 0,
+        "maximum_lifted_loader_weight": 17,
+        "maximum_lifted_stabilizer_weight": 40,
+        "stabilizer_rank": 120,
+        "stabilizer_rows": 121
+      },
+      "carrier_auxiliary_collisions": 0,
+      "carrier_collisions": 0,
+      "cells": 8,
+      "chronology_interaction_count": 2262,
+      "coarse_edges": 12,
+      "covariance": {
+        "frame_injectivity_failures": 0,
+        "ordered_products": 576,
+        "product_diagram_failures": 0,
+        "proper_cubic_frames": 24,
+        "transported_coframe_supplied": true
+      },
+      "encoder_chronology": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ],
+      "expected_abstract_edges": 168,
+      "expected_physical_carrier_M2": 180,
+      "interaction_counts": {
+        "controller": 46,
+        "corrections": 252,
+        "loader": 892,
+        "syndrome": 1072
+      },
+      "persistent_auxiliary_slots": 288,
+      "physical_carrier_M2": 180,
+      "routes": {
+        "first_swap_deletion_detected_macros": 2210,
+        "fixed_role_parity_colors": 2262,
+        "interaction_count": 2262,
+        "maximum_route_distance": 42,
+        "non_NN_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_failures": 0,
+        "routed_gate_count": 43932,
+        "same_color_route_collisions": 0
+      },
+      "shape": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "abstract_edges": 594,
+      "algebra": {
+        "abstract_edge_qubits": 594,
+        "expected_logical_qubits": 162,
+        "logical_canonical_failures": 0,
+        "logical_qubits": 162,
+        "logical_stabilizer_commutator_failures": 0,
+        "maximum_lifted_loader_weight": 19,
+        "maximum_lifted_stabilizer_weight": 40,
+        "stabilizer_rank": 432,
+        "stabilizer_rows": 440
+      },
+      "carrier_auxiliary_collisions": 0,
+      "carrier_collisions": 0,
+      "cells": 27,
+      "chronology_interaction_count": 8583,
+      "coarse_edges": 54,
+      "covariance": {
+        "frame_injectivity_failures": 0,
+        "ordered_products": 576,
+        "product_diagram_failures": 0,
+        "proper_cubic_frames": 24,
+        "transported_coframe_supplied": true
+      },
+      "encoder_chronology": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ],
+      "expected_abstract_edges": 594,
+      "expected_physical_carrier_M2": 648,
+      "interaction_counts": {
+        "controller": 240,
+        "corrections": 864,
+        "loader": 3132,
+        "syndrome": 4347
+      },
+      "persistent_auxiliary_slots": 972,
+      "physical_carrier_M2": 648,
+      "routes": {
+        "first_swap_deletion_detected_macros": 8403,
+        "fixed_role_parity_colors": 3190,
+        "interaction_count": 8583,
+        "maximum_route_distance": 42,
+        "non_NN_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_failures": 0,
+        "routed_gate_count": 181617,
+        "same_color_route_collisions": 0
+      },
+      "shape": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "abstract_edges": 1440,
+      "algebra": {
+        "abstract_edge_qubits": 1440,
+        "expected_logical_qubits": 384,
+        "logical_canonical_failures": 0,
+        "logical_qubits": 384,
+        "logical_stabilizer_commutator_failures": 0,
+        "maximum_lifted_loader_weight": 19,
+        "maximum_lifted_stabilizer_weight": 40,
+        "stabilizer_rank": 1056,
+        "stabilizer_rows": 1083
+      },
+      "carrier_auxiliary_collisions": 0,
+      "carrier_collisions": 0,
+      "cells": 64,
+      "chronology_interaction_count": 21622,
+      "coarse_edges": 144,
+      "covariance": {
+        "frame_injectivity_failures": 0,
+        "ordered_products": 576,
+        "product_diagram_failures": 0,
+        "proper_cubic_frames": 24,
+        "transported_coframe_supplied": true
+      },
+      "encoder_chronology": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ],
+      "expected_abstract_edges": 1440,
+      "expected_physical_carrier_M2": 1584,
+      "interaction_counts": {
+        "controller": 678,
+        "corrections": 2064,
+        "loader": 7568,
+        "syndrome": 11312
+      },
+      "persistent_auxiliary_slots": 2304,
+      "physical_carrier_M2": 1584,
+      "routes": {
+        "first_swap_deletion_detected_macros": 21190,
+        "fixed_role_parity_colors": 3262,
+        "interaction_count": 21622,
+        "maximum_route_distance": 42,
+        "non_NN_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_failures": 0,
+        "routed_gate_count": 475452,
+        "same_color_route_collisions": 0
+      },
+      "shape": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "abstract_edges": 2850,
+      "algebra": {
+        "abstract_edge_qubits": 2850,
+        "expected_logical_qubits": 750,
+        "logical_canonical_failures": 0,
+        "logical_qubits": 750,
+        "logical_stabilizer_commutator_failures": 0,
+        "maximum_lifted_loader_weight": 19,
+        "maximum_lifted_stabilizer_weight": 40,
+        "stabilizer_rank": 2100,
+        "stabilizer_rows": 2164
+      },
+      "carrier_auxiliary_collisions": 0,
+      "carrier_collisions": 0,
+      "cells": 125,
+      "chronology_interaction_count": 43821,
+      "coarse_edges": 300,
+      "covariance": {
+        "frame_injectivity_failures": 0,
+        "ordered_products": 576,
+        "product_diagram_failures": 0,
+        "proper_cubic_frames": 24,
+        "transported_coframe_supplied": true
+      },
+      "encoder_chronology": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ],
+      "expected_abstract_edges": 2850,
+      "expected_physical_carrier_M2": 3150,
+      "interaction_counts": {
+        "controller": 1456,
+        "corrections": 4050,
+        "loader": 14950,
+        "syndrome": 23365
+      },
+      "persistent_auxiliary_slots": 4500,
+      "physical_carrier_M2": 3150,
+      "routes": {
+        "first_swap_deletion_detected_macros": 42971,
+        "fixed_role_parity_colors": 3262,
+        "interaction_count": 43821,
+        "maximum_route_distance": 42,
+        "non_NN_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_failures": 0,
+        "routed_gate_count": 984495,
+        "same_color_route_collisions": 0
+      },
+      "shape": [
+        5,
+        5,
+        5
+      ]
+    }
+  ],
+  "semantic_covariance": {
+    "ordered_products": 576,
+    "product_edge_failures": 0,
+    "product_generator_failures": 0,
+    "product_site_failures": 0,
+    "proper_cubic_frames": 24,
+    "semantic_generator_rows": 340,
+    "shape": [
+      3,
+      2,
+      2
+    ],
+    "signed_port_order_gauge_included": true,
+    "single_frame_edge_type_failures": 0,
+    "single_frame_generator_failures": 0,
+    "single_frame_placement_failures": 0
+  },
+  "status": "pass"
+}

@@ -1,0 +1,943 @@
+{
+  "artifact": {
+    "cold_command": "python3 scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py",
+    "path": "scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py",
+    "sha256": "49be3d479b0adfb0825442af2b82fc24418f75b90bc62c0a1d7795e58f494ae3"
+  },
+  "chronology": [
+    "triangle_syndrome",
+    "triangle_correction",
+    "coarse_syndrome",
+    "coarse_echo_correction_ack",
+    "bond_syndrome",
+    "bond_correction",
+    "logical_load"
+  ],
+  "claim_boundary": {
+    "controller_domain": "one supplied invocation with syndrome/input/work clean and every root fresh=1,token=spent=0",
+    "exact_execution": "seven-stage clean-domain H/S/T/CNOT/CZ/SWAP primitive word with returned NN routes on explicitly counted transit M2 capacity",
+    "not_claimed": "no local spent-sector admission guard, reset, recurrence, autonomous genesis, physical occurrence, or intrinsic time",
+    "root_atlas": "root interaction lists are template/address atlases; controller templates are reused by the independently emitted depth-first word and are not interpreted in list order as time"
+  },
+  "controller_local_decompositions": {
+    "CCZ_H_Toffoli_H_residual": 1.1335532999722767e-15,
+    "CCZ_subgate_deletions_tested": 17,
+    "Toffoli_decomposition_residual": 7.346882794269506e-16,
+    "Toffoli_subgate_deletions_tested": 15,
+    "minimum_CCZ_subgate_deletion_residual": 1.5307337294603587,
+    "minimum_Toffoli_subgate_deletion_residual": 1.5307337294603587
+  },
+  "fixtures": [
+    {
+      "L": 2,
+      "all_stages_nonempty": true,
+      "analytic_capacity_upper_bound_6859N": 54872,
+      "carrier_auxiliary_collisions": 0,
+      "cells": 8,
+      "check_compilation": {
+        "atlas_extra": 0,
+        "atlas_missing": 0,
+        "check_support_deletions_algebraically_active": 1072,
+        "checks_by_kind": {
+          "bond_rectangle": 12,
+          "cell_triangle": 96,
+          "coarse_plaquette": 6
+        },
+        "negative_sign_flips": 114,
+        "support_CNOTs": 1072
+      },
+      "chronology_accepted": true,
+      "controller_chronology": {
+        "atlas_interactions": 46,
+        "expected_router_applications": 13,
+        "fixed_depth_first_word": true,
+        "foreign_non_epoch_templates": 0,
+        "fresh_to_token_SWAPS": 3,
+        "host_path_stop_barrier_choices": 0,
+        "non_epoch_atlas_templates_missing": 0,
+        "root_epoch_atlas_templates": 3,
+        "router_applications": 13,
+        "router_template_reapplications": 5,
+        "semantic_events": 54,
+        "token_to_spent_SWAPS": 3
+      },
+      "controller_execution": {
+        "case_kind": "all lawful syndromes",
+        "coarse_check_bits": 6,
+        "hostile_spent_reapplication_failures": {
+          "echo_correction_mismatch": 1,
+          "fresh_consumption": 0,
+          "router_return": 0,
+          "spent_epoch": 3,
+          "syndrome_action": 1,
+          "token_return": 3,
+          "value_work": 0
+        },
+        "hostile_spent_reapplication_syndrome": 3,
+        "individual_nonidentity_semantic_event_deletions_tested": 50,
+        "individual_semantic_event_deletions_detected": 42,
+        "lawful_cases": 32,
+        "lawful_execution_failures": {
+          "echo_correction_mismatch": 0,
+          "fresh_consumption": 0,
+          "router_return": 0,
+          "spent_epoch": 0,
+          "syndrome_action": 0,
+          "token_return": 0,
+          "value_work": 0
+        },
+        "lawful_syndrome_rank": 5,
+        "local_spent_sector_admission_guard_compiled": false,
+        "undetected_semantic_event_deletions": [
+          [
+            2,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "ay",
+              "down"
+            ]
+          ],
+          [
+            9,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "ay",
+              "up"
+            ]
+          ],
+          [
+            14,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "ay",
+              "down"
+            ]
+          ],
+          [
+            21,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "ay",
+              "up"
+            ]
+          ],
+          [
+            26,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "az",
+              "down"
+            ]
+          ],
+          [
+            33,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "az",
+              "up"
+            ]
+          ],
+          [
+            35,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "az",
+              "down"
+            ]
+          ],
+          [
+            51,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "az",
+              "up"
+            ]
+          ]
+        ],
+        "unlawful_syndrome": 1,
+        "unlawful_syndrome_action_failure": true
+      },
+      "correction_gate_counts": {
+        "bond_correction": 12,
+        "triangle_correction": 240
+      },
+      "covariance": {
+        "claim": "transported supplied route atlas; no fresh lab-axis recompilation equality",
+        "ordered_products": 576,
+        "proper_frames": 24,
+        "route_coordinate_injectivity_failures": 0,
+        "route_coordinate_product_failures": 0,
+        "unit_step_failures": 0
+      },
+      "dense_transit_capacity_M2": 42875,
+      "encoded_carrier_M2": 180,
+      "exact_primitive_route": {
+        "arbitrary_transit_register_return_failures": 0,
+        "carrier_sites_touched": 180,
+        "maximum_route_distance": 42,
+        "non_NN_failures": 0,
+        "operand_failures": 0,
+        "persistent_auxiliary_sites_touched": 266,
+        "primitive_endpoint_outside_carrier_auxiliary_bank": 0,
+        "primitive_gates": 3872,
+        "primitive_kind_census": {
+          "check_CNOT": 1072,
+          "check_H": 840,
+          "check_S": 96,
+          "check_Sdg": 96,
+          "check_sign_X": 114,
+          "controller_CCZ_H_post": 5,
+          "controller_CCZ_H_pre": 5,
+          "controller_Toffoli_00": 25,
+          "controller_Toffoli_01": 25,
+          "controller_Toffoli_02": 25,
+          "controller_Toffoli_03": 25,
+          "controller_Toffoli_04": 25,
+          "controller_Toffoli_05": 25,
+          "controller_Toffoli_06": 25,
+          "controller_Toffoli_07": 25,
+          "controller_Toffoli_08": 25,
+          "controller_Toffoli_09": 25,
+          "controller_Toffoli_10": 25,
+          "controller_Toffoli_11": 25,
+          "controller_Toffoli_12": 25,
+          "controller_Toffoli_13": 25,
+          "controller_Toffoli_14": 25,
+          "loader_CX_for_Y": 48,
+          "loader_CZ": 580,
+          "loader_S": 48,
+          "loader_Sdg": 48,
+          "loader_parity_CNOT": 264,
+          "root_fresh_to_token_SWAP": 3,
+          "root_token_to_spent_SWAP": 3,
+          "router_leaf": 4,
+          "router_one_child": 6,
+          "router_two_children": 3,
+          "syndrome_controlled_Z": 252,
+          "token_SWAP_down": 5,
+          "token_SWAP_up": 5
+        },
+        "primitive_unitarity_failures": 0,
+        "route_sites_outside_radius9_capacity": 0,
+        "routed_gates": 48938,
+        "routed_word_sha256": "5baa8ac733ff8c4fc53919bb4cf9df8e39b065c409b3b421ec40d04974d095e9",
+        "transit_sites_touched": 4309
+      },
+      "expected_18N_plus_3E": 180,
+      "expected_36N": 288,
+      "loader_compilation": {
+        "atlas_extra": 0,
+        "atlas_missing": 0,
+        "compiled_support_interactions": 892,
+        "controlled_X_sign_Z_gates": 0,
+        "logical_rows": 48,
+        "non_Z_axes_in_parity_unload": 0,
+        "truth_table": "|q>|0_L> -> |q>|q_L> -> |0>|q_L>"
+      },
+      "persistent_auxiliary_M2": 288,
+      "root_algebra": {
+        "abstract_edge_qubits": 168,
+        "expected_logical_qubits": 48,
+        "logical_canonical_failures": 0,
+        "logical_qubits": 48,
+        "logical_stabilizer_commutator_failures": 0,
+        "maximum_lifted_loader_weight": 17,
+        "maximum_lifted_stabilizer_weight": 40,
+        "stabilizer_rank": 120,
+        "stabilizer_rows": 121
+      },
+      "stage_primitive_counts": {
+        "bond_correction": 12,
+        "bond_syndrome": 276,
+        "coarse_echo_correction_ack": 414,
+        "coarse_syndrome": 342,
+        "logical_load": 988,
+        "triangle_correction": 240,
+        "triangle_syndrome": 1600
+      },
+      "stage_runs": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ]
+    },
+    {
+      "L": 3,
+      "all_stages_nonempty": true,
+      "analytic_capacity_upper_bound_6859N": 185193,
+      "carrier_auxiliary_collisions": 0,
+      "cells": 27,
+      "check_compilation": {
+        "atlas_extra": 0,
+        "atlas_missing": 0,
+        "check_support_deletions_algebraically_active": 4347,
+        "checks_by_kind": {
+          "bond_rectangle": 54,
+          "cell_triangle": 324,
+          "coarse_plaquette": 36
+        },
+        "negative_sign_flips": 414,
+        "support_CNOTs": 4347
+      },
+      "chronology_accepted": true,
+      "controller_chronology": {
+        "atlas_interactions": 240,
+        "expected_router_applications": 64,
+        "fixed_depth_first_word": true,
+        "foreign_non_epoch_templates": 0,
+        "fresh_to_token_SWAPS": 8,
+        "host_path_stop_barrier_choices": 0,
+        "non_epoch_atlas_templates_missing": 0,
+        "root_epoch_atlas_templates": 8,
+        "router_applications": 64,
+        "router_template_reapplications": 28,
+        "semantic_events": 276,
+        "token_to_spent_SWAPS": 8
+      },
+      "controller_execution": {
+        "case_kind": "zero, all unit-edge syndromes, 64 deterministic pairs",
+        "coarse_check_bits": 36,
+        "hostile_spent_reapplication_failures": {
+          "echo_correction_mismatch": 1,
+          "fresh_consumption": 0,
+          "router_return": 0,
+          "spent_epoch": 8,
+          "syndrome_action": 1,
+          "token_return": 8,
+          "value_work": 0
+        },
+        "hostile_spent_reapplication_syndrome": 3,
+        "individual_nonidentity_semantic_event_deletions_tested": 264,
+        "individual_semantic_event_deletions_detected": 244,
+        "lawful_cases": 103,
+        "lawful_execution_failures": {
+          "echo_correction_mismatch": 0,
+          "fresh_consumption": 0,
+          "router_return": 0,
+          "spent_epoch": 0,
+          "syndrome_action": 0,
+          "token_return": 0,
+          "value_work": 0
+        },
+        "lawful_syndrome_rank": 28,
+        "local_spent_sector_admission_guard_compiled": false,
+        "undetected_semantic_event_deletions": [
+          [
+            2,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "ay",
+              "down"
+            ]
+          ],
+          [
+            18,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "ay",
+              "up"
+            ]
+          ],
+          [
+            23,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "ay",
+              "down"
+            ]
+          ],
+          [
+            39,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "ay",
+              "up"
+            ]
+          ],
+          [
+            44,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "ay",
+              "down"
+            ]
+          ],
+          [
+            60,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "ay",
+              "up"
+            ]
+          ],
+          [
+            65,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "ay",
+              "down"
+            ]
+          ],
+          [
+            81,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "ay",
+              "up"
+            ]
+          ],
+          [
+            86,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "ay",
+              "down"
+            ]
+          ],
+          [
+            102,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "ay",
+              "up"
+            ]
+          ],
+          [
+            107,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "ay",
+              "down"
+            ]
+          ],
+          [
+            123,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "ay",
+              "up"
+            ]
+          ],
+          [
+            128,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "az",
+              "down"
+            ]
+          ],
+          [
+            144,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "az",
+              "up"
+            ]
+          ],
+          [
+            146,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "az",
+              "down"
+            ]
+          ],
+          [
+            198,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "az",
+              "up"
+            ]
+          ],
+          [
+            203,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "az",
+              "down"
+            ]
+          ],
+          [
+            219,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "az",
+              "up"
+            ]
+          ],
+          [
+            221,
+            "parent_Toffoli_down",
+            [
+              "controller_parent_xor",
+              "az",
+              "down"
+            ]
+          ],
+          [
+            273,
+            "parent_Toffoli_up",
+            [
+              "controller_parent_xor",
+              "az",
+              "up"
+            ]
+          ]
+        ],
+        "unlawful_syndrome": 1,
+        "unlawful_syndrome_action_failure": true
+      },
+      "correction_gate_counts": {
+        "bond_correction": 54,
+        "triangle_correction": 810
+      },
+      "covariance": {
+        "claim": "transported supplied route atlas; no fresh lab-axis recompilation equality",
+        "ordered_products": 576,
+        "proper_frames": 24,
+        "route_coordinate_injectivity_failures": 0,
+        "route_coordinate_product_failures": 0,
+        "unit_step_failures": 0
+      },
+      "dense_transit_capacity_M2": 132651,
+      "encoded_carrier_M2": 648,
+      "exact_primitive_route": {
+        "arbitrary_transit_register_return_failures": 0,
+        "carrier_sites_touched": 648,
+        "maximum_route_distance": 42,
+        "non_NN_failures": 0,
+        "operand_failures": 0,
+        "persistent_auxiliary_sites_touched": 922,
+        "primitive_endpoint_outside_carrier_auxiliary_bank": 0,
+        "primitive_gates": 15369,
+        "primitive_kind_census": {
+          "check_CNOT": 4347,
+          "check_H": 3348,
+          "check_S": 324,
+          "check_Sdg": 324,
+          "check_sign_X": 414,
+          "controller_CCZ_H_post": 28,
+          "controller_CCZ_H_pre": 28,
+          "controller_Toffoli_00": 140,
+          "controller_Toffoli_01": 140,
+          "controller_Toffoli_02": 140,
+          "controller_Toffoli_03": 140,
+          "controller_Toffoli_04": 140,
+          "controller_Toffoli_05": 140,
+          "controller_Toffoli_06": 140,
+          "controller_Toffoli_07": 140,
+          "controller_Toffoli_08": 140,
+          "controller_Toffoli_09": 140,
+          "controller_Toffoli_10": 140,
+          "controller_Toffoli_11": 140,
+          "controller_Toffoli_12": 140,
+          "controller_Toffoli_13": 140,
+          "controller_Toffoli_14": 140,
+          "loader_CX_for_Y": 162,
+          "loader_CZ": 2052,
+          "loader_S": 162,
+          "loader_Sdg": 162,
+          "loader_parity_CNOT": 918,
+          "root_fresh_to_token_SWAP": 8,
+          "root_token_to_spent_SWAP": 8,
+          "router_leaf": 12,
+          "router_one_child": 40,
+          "router_two_children": 12,
+          "syndrome_controlled_Z": 864,
+          "token_SWAP_down": 28,
+          "token_SWAP_up": 28
+        },
+        "primitive_unitarity_failures": 0,
+        "route_sites_outside_radius9_capacity": 0,
+        "routed_gates": 207043,
+        "routed_word_sha256": "0f75e766bf7fd96d2603f2ef8df1998c6d3c37beddd940cd7b20a1c7d8e26368",
+        "transit_sites_touched": 16464
+      },
+      "expected_18N_plus_3E": 648,
+      "expected_36N": 972,
+      "loader_compilation": {
+        "atlas_extra": 0,
+        "atlas_missing": 0,
+        "compiled_support_interactions": 3132,
+        "controlled_X_sign_Z_gates": 0,
+        "logical_rows": 162,
+        "non_Z_axes_in_parity_unload": 0,
+        "truth_table": "|q>|0_L> -> |q>|q_L> -> |0>|q_L>"
+      },
+      "persistent_auxiliary_M2": 972,
+      "root_algebra": {
+        "abstract_edge_qubits": 594,
+        "expected_logical_qubits": 162,
+        "logical_canonical_failures": 0,
+        "logical_qubits": 162,
+        "logical_stabilizer_commutator_failures": 0,
+        "maximum_lifted_loader_weight": 19,
+        "maximum_lifted_stabilizer_weight": 40,
+        "stabilizer_rank": 432,
+        "stabilizer_rows": 440
+      },
+      "stage_primitive_counts": {
+        "bond_correction": 54,
+        "bond_syndrome": 1305,
+        "coarse_echo_correction_ack": 2292,
+        "coarse_syndrome": 2052,
+        "logical_load": 3456,
+        "triangle_correction": 810,
+        "triangle_syndrome": 5400
+      },
+      "stage_runs": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ]
+    }
+  ],
+  "frozen_target_comparison": {
+    "comparison_is_read_only_no_target_import": true,
+    "comparison_rows": [
+      {
+        "L": 2,
+        "fields_compared": 14,
+        "mismatches": {}
+      },
+      {
+        "L": 3,
+        "fields_compared": 14,
+        "mismatches": {}
+      }
+    ],
+    "frozen_receipt_sha256": "3a389eb5646f8f9023b9c7af5b83c86277662c61b23fa7c717a28105d53d738d",
+    "frozen_source_sha256": "25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5",
+    "mismatch_keys": [],
+    "target_failures": [],
+    "target_status": "pass",
+    "total_field_mismatches": 0
+  },
+  "independent_chronological_E_exactness_pass": true,
+  "independent_per_occurrence_deletion_completeness_pass": false,
+  "sources": {
+    "dependency_sha256": {
+      "ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+      "frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py": "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4",
+      "frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py": "833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245",
+      "frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py": "5dab64cd17ead6cb5062eab9266b9206d74bb608dcc22f3a1132ee1f1af3e9a9",
+      "frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+    },
+    "frozen_joined_receipt_sha256": "3a389eb5646f8f9023b9c7af5b83c86277662c61b23fa7c717a28105d53d738d",
+    "frozen_joined_target_sha256": "25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5",
+    "joint_probe_imported": false,
+    "root_sha256": "e31501b599f5ea81838320bc103a11225c95d1593d44becd1fe2701e3b5ab0ce",
+    "root_source": "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+    "target_frozen_for_comparison": true
+  },
+  "target_checker_warnings": {
+    "class_level_not_individual_deletion": "active target stops after one detected representative per controller role class",
+    "compiled_subgate_deletion_missing": "active target does not delete each H/T/CNOT inside Toffoli/CCZ",
+    "counter_not_execution_controls": "active target labels several check/correction/loader counts as deletions without executing the reduced word",
+    "redundancy_interpretation": "these gates do not spoil exactness, but refute any per-occurrence claim that every listed semantic event is deletion-active",
+    "redundant_parent_xor_Toffolis_on_lawful_clean_domain": {
+      "L2": [
+        [
+          2,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "ay",
+            "down"
+          ]
+        ],
+        [
+          9,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "ay",
+            "up"
+          ]
+        ],
+        [
+          14,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "ay",
+            "down"
+          ]
+        ],
+        [
+          21,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "ay",
+            "up"
+          ]
+        ],
+        [
+          26,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "az",
+            "down"
+          ]
+        ],
+        [
+          33,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "az",
+            "up"
+          ]
+        ],
+        [
+          35,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "az",
+            "down"
+          ]
+        ],
+        [
+          51,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "az",
+            "up"
+          ]
+        ]
+      ],
+      "L3": [
+        [
+          2,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "ay",
+            "down"
+          ]
+        ],
+        [
+          18,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "ay",
+            "up"
+          ]
+        ],
+        [
+          23,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "ay",
+            "down"
+          ]
+        ],
+        [
+          39,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "ay",
+            "up"
+          ]
+        ],
+        [
+          44,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "ay",
+            "down"
+          ]
+        ],
+        [
+          60,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "ay",
+            "up"
+          ]
+        ],
+        [
+          65,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "ay",
+            "down"
+          ]
+        ],
+        [
+          81,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "ay",
+            "up"
+          ]
+        ],
+        [
+          86,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "ay",
+            "down"
+          ]
+        ],
+        [
+          102,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "ay",
+            "up"
+          ]
+        ],
+        [
+          107,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "ay",
+            "down"
+          ]
+        ],
+        [
+          123,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "ay",
+            "up"
+          ]
+        ],
+        [
+          128,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "az",
+            "down"
+          ]
+        ],
+        [
+          144,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "az",
+            "up"
+          ]
+        ],
+        [
+          146,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "az",
+            "down"
+          ]
+        ],
+        [
+          198,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "az",
+            "up"
+          ]
+        ],
+        [
+          203,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "az",
+            "down"
+          ]
+        ],
+        [
+          219,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "az",
+            "up"
+          ]
+        ],
+        [
+          221,
+          "parent_Toffoli_down",
+          [
+            "controller_parent_xor",
+            "az",
+            "down"
+          ]
+        ],
+        [
+          273,
+          "parent_Toffoli_up",
+          [
+            "controller_parent_xor",
+            "az",
+            "up"
+          ]
+        ]
+      ]
+    },
+    "route_deletion_scope": "active root/join route checks delete only the first forward SWAP, not every forward/central/reverse gate position",
+    "triangle_controlled_Z_deletion_missing": "active target counts triangle decoder table entries but has no explicit triangle controlled-Z gate deletion control",
+    "unlawful_guard_boundary": "unlawful syndrome and spent reapplication are detected adversarially, but no physical admission guard is compiled"
+  },
+  "unlawful_domain_controls": {
+    "invalid_scalars_rejected": 5,
+    "invalid_scalars_tested": 5,
+    "noncubes_rejected": 3,
+    "noncubes_tested": 3
+  },
+  "validation_failures": [],
+  "verification_status": "pass_with_deletion_and_domain_qualifications"
+}

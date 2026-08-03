@@ -1,6 +1,6 @@
 {
- "edge_count": 15405,
- "node_count": 4628,
+ "edge_count": 15409,
+ "node_count": 4630,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10178,6 +10178,10 @@
    "deps_hash": "5ed0add88d9d",
    "out_degree": 4
   },
+  "openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02": {
+   "deps_hash": "8bd5028cc7f7",
+   "out_degree": 4
+  },
   "openreference_patchgraph_four_rail_signed_clifford_equivalence_cycle706_note_2026-07-26": {
    "deps_hash": "a9cb5a27b029",
    "out_degree": 4
@@ -17059,6 +17063,10 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.open_site_reservation_handshake_cycle51_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_target_spec_2026-08-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

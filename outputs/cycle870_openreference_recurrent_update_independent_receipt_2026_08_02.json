@@ -1,0 +1,659 @@
+{
+  "artifact": {
+    "method": "independent reconstruction; target scratch read/hash only, never imported",
+    "path": "scripts/frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py",
+    "sha256_before_receipt_write": "c7bfa021bbc16357a1c01376a869e55c94da68b20c7f4cfac0b19311971bc960"
+  },
+  "claim_boundary": {
+    "bare_graph_Pauli_covariance": "requires the usual local incidence-order Clifford chart/gauge",
+    "bounded_M2_unitary_factors": true,
+    "intrinsic_layer_or_clock_claimed": false,
+    "nearest_neighbor_elementary_decomposition_claimed": false,
+    "repetition_lift_section_covariance": "code space, not full physical Hilbert space under orientation reversal",
+    "scope": "two supplied finite fixtures and the size-independent local templates they exercise",
+    "semantic_covariance": "full signed logical Fock space"
+  },
+  "coin_mass_contact": {
+    "Cycle219_analytic_mass": 0.4534056541748852,
+    "Cycle219_beta_from_Cycle230": -0.3,
+    "Cycle219_rest_mass": 0.4534056541748851,
+    "Cycle230_contact_coupling": 0.37,
+    "Cycle230_imported_Cycle219_coin_residual": 0.0,
+    "coin_Fock_target_residual": 5.0207498326926886e-15,
+    "coin_QR_triangular_residual": 1.2391324586559453e-15,
+    "coin_factor_deletion_minimum_target_residual": 0.038530504100350395,
+    "coin_factor_deletions_checked": 11,
+    "coin_factor_unitarity_maximum_residual": 9.421958632994231e-16,
+    "coin_one_particle_unitarity_residual": 1.2236950713340232e-15,
+    "coin_schedule_factor_counts": {
+      "coin_givens": 10,
+      "coin_phase": 1
+    },
+    "coin_schedule_factors": 11,
+    "contact_factor_deletion_minimum_target_residual": 1.4715722682243295,
+    "contact_factor_deletions_checked": 15,
+    "contact_full_onsite_target_residual": 1.961044852356119e-15,
+    "contact_one_particle_phase_maximum_residual": 0.0,
+    "contact_pair_factors": 15,
+    "contact_pair_unitarity_residual": 0.0,
+    "contact_two_particle_phase_maximum_residual": 0.0,
+    "contact_vacuum_phase_residual": 0.0,
+    "independent_scalar_phase_mass": 0.45340565417488515,
+    "mass_pairwise_maximum_residual": 1.1102230246251565e-16
+  },
+  "covariance": {
+    "composition_failures": 0,
+    "frame_rows": [
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          1,
+          0,
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          1,
+          0,
+          4,
+          5,
+          2,
+          3
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          3,
+          2,
+          1,
+          0,
+          5,
+          4
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          4,
+          5,
+          1,
+          0,
+          3,
+          2
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          5,
+          4,
+          1,
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          2,
+          3,
+          1,
+          0,
+          4,
+          5
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          3,
+          2,
+          4,
+          5,
+          1,
+          0
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          4,
+          5,
+          2,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          2,
+          3,
+          5,
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          3,
+          2,
+          5,
+          4,
+          0,
+          1
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          4,
+          5,
+          3,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          5,
+          4,
+          2,
+          3,
+          0,
+          1
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          2,
+          3,
+          4,
+          5,
+          0,
+          1
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          3,
+          2,
+          0,
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": true,
+        "mode_map": [
+          5,
+          4,
+          0,
+          1,
+          3,
+          2
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          4,
+          5,
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          2,
+          3,
+          0,
+          1,
+          5,
+          4
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          0,
+          1,
+          4,
+          5,
+          3,
+          2
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          0,
+          1,
+          5,
+          4,
+          2,
+          3
+        ]
+      },
+      {
+        "fixed_plus_x_reverses_canonical_owner": false,
+        "mode_map": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "maximum_one_particle_composition_residual": 0.0,
+    "maximum_signed_Fock_composition_residual": 0.0,
+    "one_particle_coin_covariance_maximum_residual": 0.0,
+    "physical_coordinate_composition_failures": 0,
+    "proper_cubic_frames": 24,
+    "reverse_contact_family_mapping_failures": 0,
+    "seam_endpoint_semantic_mapping_failures": 0,
+    "signed_Fock_coin_covariance_maximum_residual": 1.602143998693333e-15,
+    "signed_Fock_contact_covariance_maximum_residual": 0.0,
+    "signed_Fock_reverse_layer_covariance_maximum_residual": 0.0,
+    "signed_compositions_checked": 576,
+    "signed_frame_semantics_checked": 24,
+    "signed_individual_reverse_FSWAP_covariance_maximum_residual": 0.0,
+    "signed_intercell_FSWAP_column_failures": 0,
+    "signed_intercell_FSWAP_columns_checked": 294912,
+    "signed_intercell_FSWAP_endpoint_failures": 0
+  },
+  "deletion_and_dressing": {
+    "dressing_deletions": {
+      "omit_reference_A": {
+        "code_target_residual": 1.0,
+        "constraint_commutator_failures": 4,
+        "full_space_involution_residual": 0.0
+      },
+      "omit_spectator": {
+        "code_target_residual": 1.0,
+        "constraint_commutator_failures": 0,
+        "full_space_involution_residual": 0.0
+      }
+    },
+    "good_code_residual": 0.0,
+    "good_constraint_commutator_failures": 0,
+    "term_deletions": [
+      {
+        "code_target_residual": 0.5,
+        "deleted_term": 0,
+        "full_space_unitarity_residual": 0.5590169943749475
+      },
+      {
+        "code_target_residual": 0.5,
+        "deleted_term": 1,
+        "full_space_unitarity_residual": 0.5590169943749475
+      },
+      {
+        "code_target_residual": 0.5,
+        "deleted_term": 2,
+        "full_space_unitarity_residual": 0.5590169943749475
+      },
+      {
+        "code_target_residual": 0.5,
+        "deleted_term": 3,
+        "full_space_unitarity_residual": 0.5590169943749475
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "abstract_constraint_rank": 184,
+      "abstract_graph_edges": 256,
+      "abstract_logical_qubits_from_rank": 72,
+      "analytic_physical_L1_diameter_cap": 70,
+      "analytic_physical_weight_cap": 72,
+      "bounded_support_argument": "A factor touches at most two adjacent cell-stars. Each cell-star has at most 18 onsite carriers plus six incident (two-rail matter + one-rail reference) bond triples, hence <=36 carriers and <=72 for two stars. All incident carriers lie within L-infinity 9 of their spacing-16 cell center, giving L1 diameter <=16+6*9=70.",
+      "cells": 12,
+      "coarse_edges": 20,
+      "constraint_rows_supplied": 187,
+      "expected_18N_plus_2E": 256,
+      "expected_18N_plus_3E": 276,
+      "factor_constraint_commutator_failures": 0,
+      "factor_full_space_unitarity_failures": 0,
+      "factor_kind_counts": {
+        "coin_givens": 120,
+        "coin_phase": 12,
+        "contact_pair": 180,
+        "reverse_fswap": 36,
+        "seam_fswap": 20
+      },
+      "fswap": {
+        "constraint_commutator_failures": 0,
+        "exact_code_target_checks": 0,
+        "exact_code_target_failures": 0,
+        "exact_code_target_scope": "exercised on the independent two-cell complete graph; larger fixtures check full-space polynomial algebra and common-code preservation",
+        "factors": 56,
+        "full_space_Hermitian_failures": 0,
+        "full_space_involution_failures": 0,
+        "maximum_code_target_residual": 0.0,
+        "maximum_term_weight": 21,
+        "minimum_term_weight": 5,
+        "row_Hermitian_failures": 0,
+        "term_deletions_not_detected": 0,
+        "terms": 224
+      },
+      "leakage": {
+        "common_physical_code_logical_qubits": 72,
+        "direct_factor_graph_code_leakage_failures": 0,
+        "repetition_code_leakage_failures": 0,
+        "target_style_log_graph_code_leakage_failures": 0
+      },
+      "lifted_factor_full_space_unitarity_failures": 0,
+      "logical_chart": {
+        "Hermitian_involution_failures": 0,
+        "canonical_pair_failures": 0,
+        "logical_qubits": 72,
+        "maximum_X_weight": 17,
+        "maximum_Z_weight": 6,
+        "stabilizer_commutator_failures": 0
+      },
+      "matter_stream_repetition_checks": 20,
+      "maximum_physical_factor_L1_diameter": 33,
+      "maximum_physical_factor_weight": 26,
+      "ordered_factor_count": 368,
+      "physical_carriers": 276,
+      "physical_constraint_rank": 204,
+      "physical_logical_qubits_from_rank": 72,
+      "placement_collisions": 0,
+      "repetition_commutator_failures": 0,
+      "repetition_lift_homomorphism_failures": 0,
+      "seam_endpoint_reuse_failures": 0,
+      "seam_onsite_shared_register_overlaps": 1597,
+      "seam_seam_shared_register_overlaps": 100,
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "stage_counts": {
+        "coin": 132,
+        "contact": 180,
+        "reverse": 36,
+        "seam": 20
+      },
+      "target_style_coin_contact_log_extension": {
+        "active_Hermitian_Pauli_terms": 1344,
+        "coin_factors": 132,
+        "constraint_commutator_failures": 0,
+        "contact_factors": 180,
+        "factors": 312,
+        "lifted_Hamiltonian_Hermitian_failures": 0,
+        "maximum_active_terms_per_factor": 6,
+        "maximum_coefficient_imaginary_part": 0.0,
+        "maximum_log_expansion_residual": 7.397092656394907e-18,
+        "maximum_physical_generator_L1_diameter": 18,
+        "maximum_physical_generator_support": 12,
+        "maximum_signed_code_target_residual": 0.0,
+        "physical_Hamiltonian_full_space_Hermitian_failures": 0,
+        "physical_exponential_full_space_unitarity_failures": 0,
+        "physical_term_Hermitian_failures": 0,
+        "repetition_commutator_failures": 0,
+        "unitarity_reason": "exp(-i H_phys) is unitary on the full carrier Hilbert space because H_phys=H_phys^dagger"
+      }
+    },
+    {
+      "abstract_constraint_rank": 478,
+      "abstract_graph_edges": 658,
+      "abstract_logical_qubits_from_rank": 180,
+      "analytic_physical_L1_diameter_cap": 70,
+      "analytic_physical_weight_cap": 72,
+      "bounded_support_argument": "A factor touches at most two adjacent cell-stars. Each cell-star has at most 18 onsite carriers plus six incident (two-rail matter + one-rail reference) bond triples, hence <=36 carriers and <=72 for two stars. All incident carriers lie within L-infinity 9 of their spacing-16 cell center, giving L1 diameter <=16+6*9=70.",
+      "cells": 30,
+      "coarse_edges": 59,
+      "constraint_rows_supplied": 487,
+      "expected_18N_plus_2E": 658,
+      "expected_18N_plus_3E": 717,
+      "factor_constraint_commutator_failures": 0,
+      "factor_full_space_unitarity_failures": 0,
+      "factor_kind_counts": {
+        "coin_givens": 300,
+        "coin_phase": 30,
+        "contact_pair": 450,
+        "reverse_fswap": 90,
+        "seam_fswap": 59
+      },
+      "fswap": {
+        "constraint_commutator_failures": 0,
+        "exact_code_target_checks": 0,
+        "exact_code_target_failures": 0,
+        "exact_code_target_scope": "exercised on the independent two-cell complete graph; larger fixtures check full-space polynomial algebra and common-code preservation",
+        "factors": 149,
+        "full_space_Hermitian_failures": 0,
+        "full_space_involution_failures": 0,
+        "maximum_code_target_residual": 0.0,
+        "maximum_term_weight": 23,
+        "minimum_term_weight": 5,
+        "row_Hermitian_failures": 0,
+        "term_deletions_not_detected": 0,
+        "terms": 596
+      },
+      "leakage": {
+        "common_physical_code_logical_qubits": 180,
+        "direct_factor_graph_code_leakage_failures": 0,
+        "repetition_code_leakage_failures": 0,
+        "target_style_log_graph_code_leakage_failures": 0
+      },
+      "lifted_factor_full_space_unitarity_failures": 0,
+      "logical_chart": {
+        "Hermitian_involution_failures": 0,
+        "canonical_pair_failures": 0,
+        "logical_qubits": 180,
+        "maximum_X_weight": 18,
+        "maximum_Z_weight": 6,
+        "stabilizer_commutator_failures": 0
+      },
+      "matter_stream_repetition_checks": 59,
+      "maximum_physical_factor_L1_diameter": 33,
+      "maximum_physical_factor_weight": 28,
+      "ordered_factor_count": 929,
+      "physical_carriers": 717,
+      "physical_constraint_rank": 537,
+      "physical_logical_qubits_from_rank": 180,
+      "placement_collisions": 0,
+      "repetition_commutator_failures": 0,
+      "repetition_lift_homomorphism_failures": 0,
+      "seam_endpoint_reuse_failures": 0,
+      "seam_onsite_shared_register_overlaps": 5067,
+      "seam_seam_shared_register_overlaps": 412,
+      "shape": [
+        5,
+        3,
+        2
+      ],
+      "stage_counts": {
+        "coin": 330,
+        "contact": 450,
+        "reverse": 90,
+        "seam": 59
+      },
+      "target_style_coin_contact_log_extension": {
+        "active_Hermitian_Pauli_terms": 3360,
+        "coin_factors": 330,
+        "constraint_commutator_failures": 0,
+        "contact_factors": 450,
+        "factors": 780,
+        "lifted_Hamiltonian_Hermitian_failures": 0,
+        "maximum_active_terms_per_factor": 6,
+        "maximum_coefficient_imaginary_part": 0.0,
+        "maximum_log_expansion_residual": 7.397092656394907e-18,
+        "maximum_physical_generator_L1_diameter": 18,
+        "maximum_physical_generator_support": 12,
+        "maximum_signed_code_target_residual": 0.0,
+        "physical_Hamiltonian_full_space_Hermitian_failures": 0,
+        "physical_exponential_full_space_unitarity_failures": 0,
+        "physical_term_Hermitian_failures": 0,
+        "repetition_commutator_failures": 0,
+        "unitarity_reason": "exp(-i H_phys) is unitary on the full carrier Hilbert space because H_phys=H_phys^dagger"
+      }
+    }
+  ],
+  "independent_reconstruction_pass": true,
+  "joined_target_acceptance": {
+    "accepted_as_an_ordered_full_update": true,
+    "counterfactual_contact_before_seam_rejected": true,
+    "reason": "The current joined target emits and asserts coin/reverse/seam/contact. The independent composed word matches the exact target. The joined target also supplies the executable composition; this receipt is independent ordered-action evidence."
+  },
+  "physical_extension_order_boundary": {
+    "boundary": "For an orientation-reversing frame, T_F L(Z_edge) is Z on the target second rail whereas L(F Z_edge) is Z on the target first rail. Their quotient is the stream ZZ repetition stabilizer. Thus the geometric site permutation composes on the full Hilbert space, but the chosen abstract-to-physical first-rail section is equivariant only after restriction to the repetition code.",
+    "canonical_first_rail_extension_is_code_covariant": true,
+    "canonical_first_rail_extension_is_full_space_covariant": false,
+    "compositions_checked": 576,
+    "frames_checked": 24,
+    "full_space_site_permutation_is_a_representation": true,
+    "lifted_X_full_space_equivariance_failures": 0,
+    "lifted_Z_code_equivariance_failures": 0,
+    "lifted_Z_full_space_equivariance_failures": 12,
+    "lifted_Z_product_code_equivariance_failures": 0,
+    "lifted_Z_product_full_space_equivariance_failures": 288,
+    "orientation_reversing_for_probe": 12,
+    "probe_abstract_edge": "+x matter_stream",
+    "product_orientation_reversals_for_probe": 288
+  },
+  "sources": {
+    "commit": "f1c00e0afb4f9c6f613d5a149b87f40740af2ec8",
+    "direct_physics_imports": [
+      "common_matter_field_coin_family_cycle219_2026_07_16",
+      "spatial_car_contact_seam_form_factor_cycle230_2026_07_17"
+    ],
+    "expected_base_commit": "4d6dedee82a14e13cbccb8bf62d6eac1227a4f0c",
+    "expected_base_is_ancestor": true,
+    "joined_scratch_imported": false,
+    "joined_target_imported": false,
+    "repo": ".",
+    "target_hashes": {
+      "joined_recurrent_compiler": "25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5",
+      "physical_M2_placement": "e31501b599f5ea81838320bc103a11225c95d1593d44becd1fe2701e3b5ab0ce"
+    }
+  },
+  "two_cell_exact": {
+    "abstract_edges": 38,
+    "all_fswaps": {
+      "constraint_commutator_failures": 0,
+      "exact_code_target_checks": 7,
+      "exact_code_target_failures": 0,
+      "factors": 7,
+      "full_space_Hermitian_failures": 0,
+      "full_space_involution_failures": 0,
+      "maximum_code_target_residual": 0.0,
+      "maximum_term_weight": 13,
+      "minimum_term_weight": 5,
+      "row_Hermitian_failures": 0,
+      "term_deletions_not_detected": 0,
+      "terms": 28
+    },
+    "cells": 2,
+    "constraint_rank": 26,
+    "dressed_seam_exact_signed_coset_residual": 0.0,
+    "intercell_dressed_factors": 1,
+    "logical_qubits_from_rank": 12,
+    "onsite_reverse_factors": 6,
+    "truth_table": {
+      "double_occupation_phase": -1,
+      "logical_columns_checked": 4096,
+      "maximum_column_residual": 0.0,
+      "modes_swapped": [
+        1,
+        6
+      ],
+      "truth_table_failures": 0
+    }
+  },
+  "two_cell_order_attack": {
+    "canonical_factor_count": 59,
+    "canonical_operator_order": "contact @ seam @ reverse @ coin",
+    "canonical_stage_order": [
+      "coin",
+      "reverse",
+      "seam",
+      "contact"
+    ],
+    "canonical_word_target_residual": 5.41173990010552e-15,
+    "canonical_word_unitarity_residual": 5.159306330283335e-15,
+    "contact_before_seam_counterfactual_target_residual": 1.645267812776578,
+    "contact_seam_commutator_norm": 1.6452678127765774,
+    "exact_basis_dimension": 79,
+    "independent_runner_composes_full_factor_word": true,
+    "joined_scratch_checks_factor_stage_order": true,
+    "joined_scratch_composes_full_factor_word": false,
+    "joined_scratch_current_order_target_residual": 5.41173990010552e-15,
+    "joined_scratch_current_stage_order": [
+      "coin",
+      "reverse",
+      "seam",
+      "contact"
+    ],
+    "logical_modes": 12,
+    "maximum_contact_before_seam_entry_residual": 0.16076946380252435,
+    "number_sector_cutoff": 2
+  },
+  "validation_failures": []
+}

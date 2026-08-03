@@ -1,0 +1,121 @@
+==============================================================================
+CYCLE 882 -- THE READOUT-IDENTITY OBLIGATION (R-eta, readout half)
+==============================================================================
+
+[PASS] A_PINS
+       Every cited artifact matched its pinned SHA-256 and git blob and contained
+       each required quotation character for character.
+
+[PASS] B_PRIOR_ART_AS_DATA
+       The obligation's closure criterion is a conjunction (bridge AND a
+       disjunction); this block attacks the second disjunct. Nine live routes are
+       enumerated verbatim across the two pinned no-gos, and the two notes'
+       clashing uses of the letter alpha are separated.
+
+[PASS] C_READOUT_SPACE
+       The C3-covariant Record-additive readout space has exact dimension 1; the
+       symmetry-only constraint set therefore leaves a full line of readouts, and
+       all 12 tested members satisfy it. The target member alpha = 2/27 is
+       DERIVED as L3(1,2)/3 rather than transcribed. This reproduces the pinned
+       no-go from scratch.
+
+[PASS] D_GENUINE_INHOMOGENEITY
+       'Genuinely inhomogeneous' is pinned to a single testable predicate, and
+       the three candidate readings of it coincide on every one of the 18 library
+       members. Exactly 4 members qualify, and all of them are anchor
+       constraints.
+
+[PASS] E_HOMOGENEOUS_DICHOTOMY
+       All 13 homogeneous members obey the dichotomy: zero always solves, the
+       solution set is scaling closed, and not one of them isolates a nonzero
+       member.
+
+[PASS] F_RATIO_BLINDNESS
+       All 21 degree-0 functionals returned one common value across 11 distinct
+       nonzero alphas, so the entire comparative sector is certified alpha-blind.
+
+[PASS] G_INTENSIVITY
+       Intensivity at 2, 3 and 5 copies each collapse the line to the zero
+       member; the target member survives none of them.
+
+[PASS] H_ANCHOR_BIJECTION
+       Every anchor pins a singleton, the anchor-to-member map is a bijection
+       onto the five pinned witnesses, and the four axiom-available anchors pin
+       exactly the four wrong members.
+
+[PASS] I_CARDINALITY_GROUP
+       The orbit-cardinality group has a single 2-adic valuation ([0]); the
+       target anchor has valuation 1, so the target is arithmetically out of
+       reach of orbit multiplicity alone.
+
+[PASS] J_IDENTITY_OBSTRUCTION
+       Across 42 enumerated multiplicative anchor libraries, every single one
+       contains the identity and not one selects the target uniquely; the
+       singleton control confirms the wall is multiplicative closure rather than
+       anchoring itself.
+
+[PASS] K_ALPHA_WITNESS_TABLE
+       18 constraints x 12 alphas tabulated. 1 constraint(s) uniquely keep the
+       target, and each of them is an anchor constraint whose constant is the
+       fixed-locus arithmetic -- i.e. the license restated, not derived.
+
+[PASS] L_TERMINAL_LEMMA
+       Both derivation directions verify exactly, so the missing lemma is
+       classified EQUIVALENT to the obligation at this scope; three subsidiary
+       lemmas are classified WEAKER, STRONGER and INCOMPARABLE respectively.
+
+[PASS] M_OUTCOME_AND_PRICE
+       Negative-shaped and priced. Four route classes closed by theorem, one
+       exact wall (multiplicative closure always keeps the identity), the witness
+       list explained as the anchor library, and the terminal lemma classified
+       EQUIVALENT. The free dimension is unchanged at 1.
+
+[PASS] N_NO_GO_GATE
+       12 routes named (6 ruled out by pinned prior art, 6 attacked here), with
+       the steelman and the exact scope stated inline.
+
+------------------------------------------------------------------------------
+ALPHA-WITNESS TABLE (the falsification surface)
+------------------------------------------------------------------------------
+constraint                                       0   1/9   1/3     1   2/27
+K0_SYMMETRY_ONLY                                 y     y     y     y      y
+K1_COUNT_ONCE                                    y     y     y     y      y
+K2_HOMOG_FIXPOINT_lam_0_1                        y     .     .     .      .
+K2_HOMOG_FIXPOINT_lam_1_3                        y     .     .     .      .
+K2_HOMOG_FIXPOINT_lam_1_2                        y     .     .     .      .
+K2_HOMOG_FIXPOINT_lam_2_3                        y     .     .     .      .
+K2_HOMOG_FIXPOINT_lam_1_1                        y     y     y     y      y
+K2_HOMOG_FIXPOINT_lam_2_1                        y     .     .     .      .
+K2_HOMOG_FIXPOINT_lam_3_1                        y     .     .     .      .
+K2_HOMOG_FIXPOINT_lam_-1_1                       y     .     .     .      .
+K3_INTENSIVE_n2                                  y     .     .     .      .
+K3_INTENSIVE_n3                                  y     .     .     .      .
+K3_INTENSIVE_n5                                  y     .     .     .      .
+K4_ANCHOR_NULL                                   y     .     .     .      .
+K4_ANCHOR_INVERSE_MULTIPLICITY                   .     y     .     .      .
+K4_ANCHOR_UNIT                                   .     .     y     .      .
+K4_ANCHOR_COUNT                                  .     .     .     y      .
+K4_ANCHOR_FIXED_LOCUS_DENSITY                    .     .     .     .      y
+
+------------------------------------------------------------------------------
+ANCHOR LIBRARY (k -> alpha = k/3)
+------------------------------------------------------------------------------
+  k =   0/1  ->  alpha =    0/1  axiom_available=True   
+  k =   1/3  ->  alpha =    1/9  axiom_available=True   
+  k =   1/1  ->  alpha =    1/3  axiom_available=True   
+  k =   3/1  ->  alpha =    1/1  axiom_available=True   
+  k =   2/9  ->  alpha =   2/27  axiom_available=False  <== TARGET
+
+------------------------------------------------------------------------------
+OUTCOME
+------------------------------------------------------------------------------
+  class: SHARPER_OBSTRUCTION_PLUS_PRICED_PARTIAL
+  residual free dimension (readout half): 1
+  remains: LEMMA-882, the anchor-binding clause. Classified EQUIVALENT to the
+           obligation at this scope, so nothing short of it closes the readout half.
+
+==============================================================================
+CYCLE 882 CERTIFICATES: ALL PASS
+==============================================================================
+
+controls: deterministic=True runtime=0.048168s stdout=6373B cache=a5d2a3a6e3a23d74

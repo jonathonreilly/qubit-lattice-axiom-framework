@@ -547,9 +547,9 @@ def build_report(source_root: Path) -> dict[str, object]:
         "expected_package_manifest": EXPECTED_MANIFEST,
         "exact_manifest_match": observed_manifest == EXPECTED_MANIFEST,
         "manifest_scope": (
-            "all Cycle872-named files recursively under repo/package docs, scripts, "
-            "and outputs; unrelated repository files are outside this package manifest; "
-            "runtime __pycache__/*.pyc artifacts are explicitly ignored"
+            "all top-level Cycle872-named files directly under repo/package docs, "
+            "scripts, and outputs; generated subtrees such as docs/audit and unrelated "
+            "repository files are outside this package manifest"
         ),
         "package_sha256": package_hashes,
         "upstream_sha256": upstream_hashes,

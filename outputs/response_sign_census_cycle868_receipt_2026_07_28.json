@@ -1,0 +1,60 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (codex quota exhausted 2026-08-03; substitution disclosed); supervisor line-by-line review with hand-verified sigma-parity mechanism",
+ "block": "toe-time-blockG1-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 8
+  },
+  "logs/runner-cache/frontier_cycle868_sign_independent_check_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 6
+  }
+ },
+ "checker_teeth": {
+  "cache_tamper_fail_closed": true,
+  "detuned_ledger_fires_on": 744,
+  "functionals_per_member": 3654,
+  "planted_false_claims_caught": true,
+  "sensitive_found": 0,
+  "sigma_comparisons": 4998672
+ },
+ "claim_type": "no_go",
+ "cycles": [
+  868
+ ],
+ "files": {
+  "docs/RESPONSE_SURFACE_CONFORMAL_SIGN_CENSUS_CYCLE868_NARROW_NO_GO_NOTE_2026-07-28.md": {
+   "git_blob": "3e0ddcdbef379383835b7b05a4b783d29fa51742",
+   "sha256": "3b3726ba023d8a6821870306f224e8a6e56a2d645641680edc79b5e79fcffe4e"
+  },
+  "logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt": {
+   "git_blob": "1cdd55ce35dd7116ab3d4f959b5e21f5299ff5ed",
+   "sha256": "056b642e859e732d358be4632d4de8baa77b673704b1f5737bcd6ec566582d60"
+  },
+  "logs/runner-cache/frontier_cycle868_sign_independent_check_2026_07_28.txt": {
+   "git_blob": "51dd153ae56873182e8a8349b6b05c2a70a35c2f",
+   "sha256": "76b39598ec792f5ead8771f92bfb1867c2af52d7646b24773891558eebc1c953"
+  },
+  "scripts/frontier_cycle868_response_sign_census_2026_07_28.py": {
+   "git_blob": "c64dd97a3034ccbedc2603db4dacc1c80acfd952",
+   "sha256": "e09226e35a58cd52e2d4f61516f6e2a64cdebb7f4c20893307a1f3d2ff3f4ebb"
+  },
+  "scripts/frontier_cycle868_sign_independent_check_2026_07_28.py": {
+   "git_blob": "2e9d218a45f132934acfbf828a8a0a269f55b1e6",
+   "sha256": "b1fc3e80c245de9b31615616d3993e644fe995701e0559d3826ae05174374480"
+  }
+ },
+ "headline": "SCOPED_NO_GO: all 8208 (member, response-object) pairs identical at sigma=+1/-1; blindness = M1 structural evenness + M2 traceless ledger, zero unattributed; escapes named",
+ "independence": "cross-context (integer two-world route vs rational polynomial route; import firewall; shared authoring model family)",
+ "note": "docs/RESPONSE_SURFACE_CONFORMAL_SIGN_CENSUS_CYCLE868_NARROW_NO_GO_NOTE_2026-07-28.md",
+ "prior_art_search_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+ "runtime_seconds": {
+  "checker": 0.46,
+  "primary": 0.83
+ },
+ "worker_read_cap_deviation": "7 files consulted vs 6 spec cap (5 grep/head only); disclosed and accepted"
+}

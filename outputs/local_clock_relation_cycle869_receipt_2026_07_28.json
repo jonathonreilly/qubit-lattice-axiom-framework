@@ -1,0 +1,61 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (codex quota exhausted 2026-08-03; substitution disclosed); supervisor review of family grammar, discriminators, across-key construction, caches",
+ "block": "toe-time-blockT1-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 8
+  },
+  "logs/runner-cache/frontier_cycle869_relation_independent_check_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 7
+  }
+ },
+ "checker_teeth": {
+  "corrections_forced": [
+   "saturation transient ladder -> exact cap-free",
+   "period tail window hid 19/114-tick periods -> 3/4 ladder",
+   "partial overlaps unclassified -> F3P with 1/2 coverage floor"
+  ],
+  "kernel_replay_keys": 12,
+  "replay_mismatches": 0,
+  "substrate_rebuild_corpus_sha_equal": true,
+  "wider_search_matches_primary_relations": 32
+ },
+ "claim_type": "bounded_theorem",
+ "cycles": [
+  869
+ ],
+ "files": {
+  "docs/LOCAL_CLOCK_RELATION_CYCLE869_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "01afe307a717b8ee2d07cd74686107555e960e8a",
+   "sha256": "e397359ed7ea43d90e240b8afcfa760f4778e453f2e9dffe35a6c8d0243f0ff3"
+  },
+  "logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt": {
+   "git_blob": "e6ad75e05f42bec32570a8853954129c62f8356d",
+   "sha256": "ea19cd18c30c769453e2e15a9186449712ef8b99535234fde25b2073f1efa1fd"
+  },
+  "logs/runner-cache/frontier_cycle869_relation_independent_check_2026_07_28.txt": {
+   "git_blob": "3db50b345e4e25f6441aa46a6859e24f6d93d452",
+   "sha256": "c372c37db91e1a3f00ae89ed2c13a5842c68ef92d9159daefdc77a66ee64362a"
+  },
+  "scripts/frontier_cycle869_clock_relation_2026_07_28.py": {
+   "git_blob": "6e4a2cdd94cac128fa481ed3c38222d3905d5039",
+   "sha256": "1406bf829b19bb8ff9765b4f3e23a499467db98a6753e0b7d07cd983fab2f493"
+  },
+  "scripts/frontier_cycle869_relation_independent_check_2026_07_28.py": {
+   "git_blob": "6fc9745018754f6387c53e81e3ccc2be5dcf8e80",
+   "sha256": "7cc169b3bcdb85fc2173229cce7b4cd6f3d80167d528c6e88a1fa435e76a1b02"
+  }
+ },
+ "headline": "within-key: declared family exhausted, 1 substantive tick-moving dictionary of 480 (priced negative); across-key: 632/632 constant-offset edges nonzero \u2014 an exact time-translation dictionary between initial conditions; all periods are whole 19-station orbits",
+ "independence": "cross-context (own substrate rebuild + kernel replay; import blocklist; shared authoring model family)",
+ "note": "docs/LOCAL_CLOCK_RELATION_CYCLE869_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "runtime_seconds": {
+  "checker": 44,
+  "primary": 9
+ }
+}

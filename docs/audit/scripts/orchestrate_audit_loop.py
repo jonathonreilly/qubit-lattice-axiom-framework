@@ -22,7 +22,6 @@ import itertools
 import json
 import math
 import os
-import signal
 import subprocess
 import sys
 import tempfile
@@ -67,8 +66,7 @@ PROGRESS = {
     "quarantine_file": None,
 }
 _STOP_HEARTBEAT = threading.Event()
-PHASE_INTERRUPT_GRACE_SECONDS = 30
-PHASE_TERMINATION_GRACE_SECONDS = 5
+PHASE_INTERRUPT_STATUS_SECONDS = 30
 _DRAIN_LOCK_HANDLE: TextIO | None = None
 DEFAULT_SERVICE_RETRY_INITIAL_SECONDS = 60
 DEFAULT_SERVICE_RETRY_MAX_SECONDS = 15 * 60
@@ -366,35 +364,33 @@ def git_head() -> str:
     return proc.stdout.strip()
 
 
-def terminate_phase_process_group(proc: subprocess.Popen) -> None:
-    """Contain one owned orchestration phase after parent interruption."""
-    if proc.poll() is not None:
-        proc.wait()
-        return
-    for signum, grace in (
-        (signal.SIGINT, PHASE_INTERRUPT_GRACE_SECONDS),
-        (signal.SIGTERM, PHASE_TERMINATION_GRACE_SECONDS),
-    ):
+def await_phase_cleanup_boundary(proc: subprocess.Popen) -> None:
+    """Retain supervision until an interrupted child phase exits itself.
+
+    Batch and panel children own read-only auditor sessions that are detached
+    from the phase process group, and a batch child may simultaneously own a
+    serialized mutation transaction.  The supervisor therefore must not
+    signal or time-escalate the child session: process exit is the only safe
+    acknowledgment that detached seats were handled and any mutation reached
+    its rollback/push-reconciliation boundary.  Repeated parent interrupts are
+    preserved as diagnostics but cannot abandon that ownership contract.
+    """
+    while True:
         try:
-            os.killpg(proc.pid, signum)
-        except ProcessLookupError:
-            pass
-        try:
-            proc.wait(timeout=grace)
+            proc.wait(timeout=PHASE_INTERRUPT_STATUS_SECONDS)
             return
         except subprocess.TimeoutExpired:
+            emit_preserving_primary_result(
+                "INTERRUPT still deferred; the owned child phase has not yet "
+                "acknowledged its cleanup/transaction boundary"
+            )
             continue
-    try:
-        os.killpg(proc.pid, signal.SIGKILL)
-    except ProcessLookupError:
-        pass
-    try:
-        proc.wait(timeout=PHASE_TERMINATION_GRACE_SECONDS)
-    except subprocess.TimeoutExpired as exc:
-        raise batch.CleanupIntegrityError(
-            "owned audit phase process group survived interrupt containment: "
-            f"pgid={proc.pid}"
-        ) from exc
+        except BaseException as secondary_interrupt:
+            emit_preserving_primary_result(
+                "INTERRUPT still deferred until the owned child phase reaches "
+                "its cleanup/transaction boundary: "
+                f"{finalization_failure('secondary interrupt', secondary_interrupt)}"
+            )
 
 
 def run_command(label: str, command: list[str], env: dict[str, str] | None = None) -> int:
@@ -421,7 +417,11 @@ def run_command(label: str, command: list[str], env: dict[str, str] | None = Non
     try:
         returncode = proc.wait()
     except BaseException:
-        terminate_phase_process_group(proc)
+        emit_preserving_primary_result(
+            "INTERRUPT deferred until the isolated child phase exits under "
+            "its own seat-cleanup and mutation-transaction rules"
+        )
+        await_phase_cleanup_boundary(proc)
         raise
     if label.startswith("panel-"):
         state = "complete" if returncode == 0 else f"failed_exit_{returncode}"

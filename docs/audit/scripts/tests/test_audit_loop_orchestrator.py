@@ -1001,6 +1001,76 @@ class BatchExitSemanticsTest(unittest.TestCase):
         wait_workers.assert_not_called()
         lock.close.assert_called_once_with()
 
+    def test_unfrozen_claim_failure_stops_peer_without_transport_reclassification(self):
+        row = {
+            "claim_id": "fingerprint-failed",
+            "claim_type": "bounded_theorem",
+            "criticality": "critical",
+        }
+        lock = mock.Mock()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            workdir = root / "batch"
+            quarantine = root / "campaign-row-exclusions.jsonl"
+            with mock.patch.dict(
+                os.environ,
+                {"AUDIT_BATCH_WORKDIR": str(workdir)},
+            ), mock.patch.object(
+                sys,
+                "argv",
+                [
+                    "orchestrate_audit_batch.py",
+                    "--claims",
+                    "fingerprint-failed",
+                    "--max-workers",
+                    "2",
+                    "--rounds",
+                    "1",
+                    "--campaign-quarantine-file",
+                    str(quarantine),
+                ],
+            ), mock.patch.object(
+                batch,
+                "acquire_exclusive_drain_lock",
+                return_value=lock,
+            ), mock.patch.object(
+                batch, "clean_main_error", return_value=None
+            ), mock.patch.object(
+                batch,
+                "load_rows",
+                return_value={"fingerprint-failed": row},
+            ), mock.patch.object(
+                batch, "scope_for_args", return_value={"fingerprint-failed"}
+            ), mock.patch.object(
+                batch, "compute_targets", return_value=([row], [])
+            ), mock.patch.object(
+                batch,
+                "launch_worker",
+                side_effect=OSError("fingerprint unreadable"),
+            ) as launch_worker, mock.patch.object(
+                batch, "start_progress_ticker"
+            ), mock.patch.object(
+                batch, "maybe_progress_summary"
+            ), mock.patch.object(
+                batch, "wait_workers"
+            ) as wait_workers:
+                rc = batch.main()
+
+            report = [
+                json.loads(line)
+                for line in (workdir / "report.jsonl").read_text().splitlines()
+            ]
+
+        self.assertEqual(rc, 1)
+        self.assertEqual(launch_worker.call_count, 1)
+        self.assertEqual(
+            [item["result"] for item in report],
+            ["worker_launch_failed"],
+        )
+        self.assertIn("fingerprint unreadable", report[0]["detail"])
+        wait_workers.assert_not_called()
+        lock.close.assert_called_once_with()
+
     def test_banked_clean_seat_defers_only_the_invalid_peer(self):
         report = [
             {"cid": "row", "result": "validation_failed"},
@@ -6194,11 +6264,15 @@ class CampaignContractTest(unittest.TestCase):
             ):
                 audit_loop.run_command("batch-probe", ["child"])
 
-    def test_parent_interrupt_contains_owned_child_phase_before_reraising(self):
+    def test_parent_interrupt_waits_for_child_owned_cleanup_before_reraising(self):
         original_progress = dict(audit_loop.PROGRESS)
         child = mock.Mock(pid=4321)
-        child.poll.return_value = None
-        child.wait.side_effect = [KeyboardInterrupt(), 0]
+        child.wait.side_effect = [
+            KeyboardInterrupt(),
+            subprocess.TimeoutExpired(["child"], 30),
+            KeyboardInterrupt(),
+            0,
+        ]
         try:
             with mock.patch.object(
                 audit_loop.subprocess, "Popen", return_value=child
@@ -6206,13 +6280,28 @@ class CampaignContractTest(unittest.TestCase):
                 audit_loop.os, "killpg"
             ) as killpg, mock.patch.object(
                 audit_loop, "emit"
-            ), self.assertRaises(KeyboardInterrupt):
+            ) as emit, self.assertRaises(KeyboardInterrupt):
                 audit_loop.run_command("batch-probe", ["child"])
 
             self.assertTrue(popen.call_args.kwargs["start_new_session"])
-            killpg.assert_called_once_with(4321, audit_loop.signal.SIGINT)
+            killpg.assert_not_called()
             child.wait.assert_has_calls(
-                [mock.call(), mock.call(timeout=30)]
+                [
+                    mock.call(),
+                    mock.call(timeout=30),
+                    mock.call(timeout=30),
+                    mock.call(timeout=30),
+                ]
+            )
+            emitted = [str(call.args[0]) for call in emit.call_args_list]
+            self.assertTrue(
+                any("INTERRUPT deferred" in message for message in emitted)
+            )
+            self.assertTrue(
+                any("secondary interrupt" in message for message in emitted)
+            )
+            self.assertTrue(
+                any("has not yet acknowledged" in message for message in emitted)
             )
         finally:
             audit_loop.PROGRESS.clear()

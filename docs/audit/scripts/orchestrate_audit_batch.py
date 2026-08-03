@@ -920,6 +920,15 @@ def prepare_claim_packet(
         "invocation_placeholder": invocation_placeholder,
         "evidence_manifest": evidence_manifest,
         "transport_bound": transport_bound,
+        # Freeze the governed source/provenance identity at the same point as
+        # the rendered evidence.  No exception-capable fingerprinting may run
+        # after an auditor process has been started but before the caller owns
+        # its job record.
+        "selection_fingerprint": selection_fingerprint(
+            row,
+            rows,
+            evidence_manifest,
+        ),
     }
 
 
@@ -954,6 +963,11 @@ def launch_worker(
     )
     evidence_manifest = copy.deepcopy(prepared["evidence_manifest"])
     transport_bound = copy.deepcopy(prepared["transport_bound"])
+    frozen_selection_fingerprint = prepared["selection_fingerprint"]
+    independence = seat_independence(row, pass_no)
+    selection_source = row.get("_selection_source")
+    source_fingerprint = row.get("_source_fingerprint")
+    now = time.monotonic()
 
     # Artifact names carry the round so a claim legitimately re-entering a
     # later round (e.g. a critical row resuming at awaiting_second) never
@@ -993,38 +1007,71 @@ def launch_worker(
     except Exception:
         log_handle.close()
         raise
-    now = time.monotonic()
-    return {
-        "cid": cid,
-        "row": row,
-        "pass": pass_no,
-        "proc": proc,
-        "process_group": proc.pid,
-        "raw_output": raw_output,
-        "delivery": delivery,
-        "log_path": log_path,
-        "log_handle": log_handle,
-        "isolated": isolated,
-        "evidence_manifest": evidence_manifest,
-        "invocation_id": invocation_id,
-        "selection_fingerprint": selection_fingerprint(
-            row,
-            rows,
-            evidence_manifest,
-        ),
-        "selection_source": row.get("_selection_source"),
-        "source_fingerprint": row.get("_source_fingerprint"),
-        "transport_bound": transport_bound,
-        "auditor": f"codex-audit-batch-{ident}",
-        "independence": seat_independence(row, pass_no),
-        "workdir": workdir,
-        "started": now,
-        "last_size": 0,
-        "last_activity": (0, 0.0),
-        "last_progress": now,
-        "stalled": False,
-        "deadline_exceeded": False,
-    }
+    try:
+        return {
+            "cid": cid,
+            "row": row,
+            "pass": pass_no,
+            "proc": proc,
+            "process_group": proc.pid,
+            "raw_output": raw_output,
+            "delivery": delivery,
+            "log_path": log_path,
+            "log_handle": log_handle,
+            "isolated": isolated,
+            "evidence_manifest": evidence_manifest,
+            "invocation_id": invocation_id,
+            "selection_fingerprint": frozen_selection_fingerprint,
+            "selection_source": selection_source,
+            "source_fingerprint": source_fingerprint,
+            "transport_bound": transport_bound,
+            "auditor": f"codex-audit-batch-{ident}",
+            "independence": independence,
+            "workdir": workdir,
+            "started": now,
+            "last_size": 0,
+            "last_activity": (0, 0.0),
+            "last_progress": now,
+            "stalled": False,
+            "deadline_exceeded": False,
+        }
+    except BaseException as primary_error:
+        # Keep ownership even under an exceptional post-Popen failure.  The
+        # caller cannot clean a process whose job record was never returned.
+        cleanup_error: BaseException | None = None
+        try:
+            terminate_read_only_seat(
+                {
+                    "cid": cid,
+                    "proc": proc,
+                    "process_group": proc.pid,
+                }
+            )
+        except BaseException as exc:
+            cleanup_error = exc
+        log_failures = close_worker_logs(
+            [{"cid": cid, "log_handle": log_handle}]
+        )
+        if cleanup_error is not None:
+            log_detail = (
+                f"; log cleanup also failed: {'; '.join(log_failures)}"
+                if log_failures
+                else ""
+            )
+            raise CleanupIntegrityError(
+                "launched read-only auditor could not be contained after "
+                "job-record construction failed: "
+                f"{safe_exception_text(cleanup_error)}{log_detail}"
+            ) from cleanup_error
+        if log_failures and hasattr(primary_error, "add_note"):
+            try:
+                primary_error.add_note(
+                    "worker log cleanup also failed: "
+                    f"{'; '.join(log_failures)}"
+                )
+            except BaseException:
+                pass
+        raise
 
 
 PROGRESS = {
@@ -3705,6 +3752,8 @@ def main() -> int:
                         # applies to every peer; do not rebuild expensive live
                         # evidence only to reproduce it.
                         break
+                    except CleanupIntegrityError:
+                        raise
                     except Exception as exc:
                         launch_blocked = True
                         report.append({
@@ -3713,6 +3762,14 @@ def main() -> int:
                             "result": "worker_launch_failed",
                             "detail": f"{type(exc).__name__}: {exc}",
                         })
+                        # If no packet was frozen, this failure happened in
+                        # claim-level preparation.  A peer retry would rerun
+                        # live scientific evidence and could not satisfy the
+                        # same-packet cross-confirmation contract.  A failure
+                        # after preparation (for example Popen) retains the
+                        # cache and may still launch the peer from it.
+                        if row["claim_id"] not in claim_packet_cache:
+                            break
         except BaseException:
             terminate_workers(jobs)
             raise

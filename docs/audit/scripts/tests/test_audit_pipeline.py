@@ -11984,7 +11984,17 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         workdir.mkdir(parents=True)
         processes = [mock.Mock(pid=1234), mock.Mock(pid=1235)]
 
-        def rendered_prompt(*_args, audit_invocation_id=None, **_kwargs):
+        def rendered_prompt(
+            *_args,
+            audit_invocation_id=None,
+            evidence_manifest_out=None,
+            **_kwargs,
+        ):
+            evidence_manifest_out["docs/source.md"] = {
+                "path": "docs/source.md",
+                "roles": ["source"],
+                "text": "authenticated evidence",
+            }
             return f"frozen evidence\ninvocation={audit_invocation_id}\n"
 
         packet_cache: dict[str, dict] = {}
@@ -11994,7 +12004,7 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
             m.audit_runner, "PROMPT_TEMPLATE_PATH"
         ) as template_path, mock.patch.object(
             m, "selection_fingerprint", return_value="selection"
-        ), mock.patch.object(
+        ) as selection, mock.patch.object(
             m.subprocess, "Popen", side_effect=processes
         ):
             template_path.read_text.return_value = "template"
@@ -12008,6 +12018,8 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
             self.addCleanup(second["log_handle"].close)
 
         self.assertEqual(render.call_count, 1)
+        self.assertIs(render.call_args.kwargs["use_cache"], False)
+        self.assertEqual(selection.call_count, 1)
         self.assertEqual(set(packet_cache), {"spin_row"})
         first_prompt = (first["isolated"] / "AUDIT_TASK.md").read_text()
         second_prompt = (second["isolated"] / "AUDIT_TASK.md").read_text()
@@ -12020,6 +12032,107 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
         )
         self.assertEqual(first["evidence_manifest"], second["evidence_manifest"])
         self.assertIsNot(first["evidence_manifest"], second["evidence_manifest"])
+        self.assertIsNot(
+            first["evidence_manifest"]["docs/source.md"],
+            second["evidence_manifest"]["docs/source.md"],
+        )
+        self.assertEqual(first["transport_bound"], second["transport_bound"])
+        self.assertEqual(first["selection_fingerprint"], "selection")
+        self.assertEqual(second["selection_fingerprint"], "selection")
+        self.assertNotEqual(first["auditor"], second["auditor"])
+        self.assertEqual(first["independence"], "cross_family")
+        self.assertEqual(second["independence"], "fresh_context")
+
+    def test_packet_fingerprint_failure_precedes_process_launch(self):
+        m = _import("orchestrate_audit_batch")
+        row = self._row()
+        workdir = self.root / "wd-fingerprint-failure"
+        workdir.mkdir(parents=True)
+
+        def rendered_prompt(*_args, audit_invocation_id=None, **_kwargs):
+            return f"packet invocation={audit_invocation_id}"
+
+        with mock.patch.object(
+            m.audit_runner, "render_prompt", side_effect=rendered_prompt
+        ), mock.patch.object(
+            m.audit_runner, "PROMPT_TEMPLATE_PATH"
+        ) as template_path, mock.patch.object(
+            m, "selection_fingerprint", side_effect=OSError("fingerprint unreadable")
+        ), mock.patch.object(m.subprocess, "Popen") as popen:
+            template_path.read_text.return_value = "template"
+            with self.assertRaisesRegex(OSError, "fingerprint unreadable"):
+                m.launch_worker(row, {"spin_row": row}, 1, workdir, 120, 1)
+
+        popen.assert_not_called()
+
+    def test_post_popen_job_record_failure_contains_launched_seat(self):
+        m = _import("orchestrate_audit_batch")
+        row = self._row()
+        workdir = self.root / "wd-job-record-failure"
+        workdir.mkdir(parents=True)
+        proc = mock.Mock()
+        type(proc).pid = mock.PropertyMock(
+            side_effect=[OSError("pid read interrupted"), 1234]
+        )
+
+        def rendered_prompt(*_args, audit_invocation_id=None, **_kwargs):
+            return f"packet invocation={audit_invocation_id}"
+
+        with mock.patch.object(
+            m.audit_runner, "render_prompt", side_effect=rendered_prompt
+        ), mock.patch.object(
+            m.audit_runner, "PROMPT_TEMPLATE_PATH"
+        ) as template_path, mock.patch.object(
+            m, "selection_fingerprint", return_value="selection"
+        ), mock.patch.object(
+            m.subprocess, "Popen", return_value=proc
+        ), mock.patch.object(
+            m, "terminate_read_only_seat"
+        ) as terminate:
+            template_path.read_text.return_value = "template"
+            with self.assertRaisesRegex(OSError, "pid read interrupted"):
+                m.launch_worker(row, {"spin_row": row}, 1, workdir, 120, 1)
+
+        terminate.assert_called_once()
+        self.assertEqual(
+            terminate.call_args.args[0]["process_group"],
+            1234,
+        )
+
+    def test_seat_launch_failure_does_not_rerun_frozen_claim_compute(self):
+        m = _import("orchestrate_audit_batch")
+        row = {**self._row(), "criticality": "critical"}
+        rows = {"spin_row": row}
+        workdir = self.root / "wd-launch-retry"
+        workdir.mkdir(parents=True)
+        surviving = mock.Mock(pid=1235)
+        packet_cache: dict[str, dict] = {}
+
+        def rendered_prompt(*_args, audit_invocation_id=None, **_kwargs):
+            return f"one live compute\ninvocation={audit_invocation_id}\n"
+
+        with mock.patch.object(
+            m.audit_runner, "render_prompt", side_effect=rendered_prompt
+        ) as render, mock.patch.object(
+            m.audit_runner, "PROMPT_TEMPLATE_PATH"
+        ) as template_path, mock.patch.object(
+            m, "selection_fingerprint", return_value="selection"
+        ) as selection, mock.patch.object(
+            m.subprocess,
+            "Popen",
+            side_effect=[OSError("seat A launch failed"), surviving],
+        ):
+            template_path.read_text.return_value = "template"
+            with self.assertRaisesRegex(OSError, "seat A launch failed"):
+                m.launch_worker(row, rows, 1, workdir, 120, 1, packet_cache)
+            second = m.launch_worker(
+                row, rows, 2, workdir, 120, 1, packet_cache
+            )
+            self.addCleanup(second["log_handle"].close)
+
+        self.assertEqual(render.call_count, 1)
+        self.assertEqual(selection.call_count, 1)
+        self.assertEqual(second["selection_fingerprint"], "selection")
 
     def test_conditional_rows_wait_for_repair_across_runs(self):
         """A re-queued audited_conditional row is not re-targeted until its

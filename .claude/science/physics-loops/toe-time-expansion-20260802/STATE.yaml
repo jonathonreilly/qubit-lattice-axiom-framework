@@ -37,8 +37,9 @@ worktrees:
     reconstruction + cost curve, stacked on F1) — running
   c5-born: queue 4 (Cycle 878, Born groundwork: composed-record event space,
     measure-candidate inventory, fraction ledger; stacked on blockP25) — running
-  c5-baxis: queue 2c (Cycle 875, B-AXIS second-leg discharge certificate,
-    stacked on blockT1) — running
+  c5-baxis: blockB1 SHIPPED as PR #5930 — B-AXIS discharge map (6 at-scope /
+    5 open / 1 permanent); premise NOT promoted; full-corpus law 1328/1328
+    with residue 229 named; hermetic double-pinned evidence
 notes: >
   Worker worktrees moved to durable .claude/worktrees/ paths (reboot lesson);
   supervisor commits push immediately, worker scripts commit BEFORE first run.

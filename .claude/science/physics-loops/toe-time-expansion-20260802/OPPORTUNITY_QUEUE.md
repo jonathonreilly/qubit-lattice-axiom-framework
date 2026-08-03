@@ -52,6 +52,11 @@ independence from just-blocked lanes.
 - 2c B-AXIS second-leg formalization.
 - 4 Born groundwork: the composed-record event space as sample space.
 
+- **T2 — the B=4 relation-family run** (from 875's open rows: the largest
+  single absence in the B-AXIS map; also 869's own successor question —
+  does the cross-key translation law survive B=4?). Launch if a slot
+  frees before wind-down.
+
 ## Shipped this window
 
 - Cycle 870 blockN1 -> PR #5921 (general-n census law; bounded theorem).

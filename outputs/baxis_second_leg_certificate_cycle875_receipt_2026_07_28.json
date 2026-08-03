@@ -1,0 +1,58 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor review of the discharge map, hermetic-evidence pattern, and the scope sharpenings",
+ "block": "toe-time-blockB1-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "checker": {
+  "all_corroborated": true,
+  "attacks": 7,
+  "planted_defects_caught": [
+   "discharged B=4 row (A3)",
+   "truncated leg quote (A1)",
+   "O7 priced to 92 (A4)"
+  ]
+ },
+ "claim_type": "support",
+ "cycles": [
+  875
+ ],
+ "discharge_map": {
+  "discharged_at_scope": 6,
+  "open": 5,
+  "permanently_open": 1
+ },
+ "files": {
+  "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md": {
+   "git_blob": "ee88d4328e7963afbbb8bab5e7d34f4d39f28de5",
+   "sha256": "42469940b0d06c3ac721c27aaab34bee4dcec60fd548b9d02289b4c343da585c"
+  },
+  "logs/runner-cache/frontier_cycle875_baxis_independent_check_2026_07_28.txt": {
+   "git_blob": "4d3996f63477352576f24fe8e895ee3d86c38dc6",
+   "sha256": "9a539e2d1c03aeb0f487d298ced4958c48de10b4766e502ddb4f669737b9e03b"
+  },
+  "logs/runner-cache/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.txt": {
+   "git_blob": "78d041fb8933b67c5866b1b326766562ac5dc884",
+   "sha256": "901c08e2c2b95bbfc2a17a2c2f0281874ebac5a9a9019e2bdf608e4952cccad0"
+  },
+  "scripts/frontier_cycle875_baxis_independent_check_2026_07_28.py": {
+   "git_blob": "8287ca90e3e5eb765e18ee3649ef7fb0a205b049",
+   "sha256": "15c0d8df9ff5ae5ca6bbe5632890df27682837fc2594368f20ee4e47f4118db6"
+  },
+  "scripts/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.py": {
+   "git_blob": "87b83219557f83dfbe345cd6928f74834695a326",
+   "sha256": "7d235165d0ded2dc098446e05ae44ed4deb363f4fbd9cae2ce04402041b3f9ed"
+  }
+ },
+ "hermetic_evidence": "outputs/cycle875_pinned_evidence/ \u2014 7 byte-exact copies double-pinned (git object at named commit + recomputed blob sha)",
+ "note": "docs/BAXIS_SECOND_LEG_CERTIFICATE_CYCLE875_SUPPORT_NOTE_2026-07-28.md",
+ "runtime_seconds": {
+  "checker": 27.3,
+  "primary": 9.1
+ },
+ "sharpenings": [
+  "869 coverage decomposition: 13/480 = 12 identity + 1 substantive non-identity",
+  "full-corpus across-key: 1328/1328 nonzero F1 edges (strengthens); residue 229 keys (2.5x pair-clock headline); 329 F3 factor edges are relations, not translations"
+ ],
+ "standing": "B_AXIS_NOT_DISCHARGED__SECOND_LEG_PARTIAL_AT_SCOPE"
+}

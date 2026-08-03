@@ -6494,6 +6494,10 @@ class ComputeReauditCandidatesTest(unittest.TestCase):
             return_value=packet_policy,
         ), mock.patch.object(
             m, "cached_runner_stdout_chars", return_value=7_500
+        ), mock.patch.object(
+            m.compute_audit_queue,
+            "_live_conditional_would_park",
+            return_value=(True, "no_recorded_blocker_movement"),
         ):
             payload = m.build_payload({"current": row})
 
@@ -6510,6 +6514,10 @@ class ComputeReauditCandidatesTest(unittest.TestCase):
             return_value=packet_policy,
         ), mock.patch.object(
             m, "cached_runner_stdout_chars", return_value=7_500
+        ), mock.patch.object(
+            m.compute_audit_queue,
+            "_live_conditional_would_park",
+            return_value=(True, "no_recorded_blocker_movement"),
         ):
             payload = m.build_payload({"stale": row})
 
@@ -6519,6 +6527,48 @@ class ComputeReauditCandidatesTest(unittest.TestCase):
                 for entry in payload["runner_stdout_transport_candidates"]
             ],
             ["stale"],
+        )
+
+    def test_stdout_transport_requeues_current_policy_after_blocker_moves(self):
+        m = _import("compute_reaudit_candidates")
+        packet_policy = {
+            "schema": "packet_policy_fingerprint_v1",
+            "sources": {"policy.py": "a" * 64},
+            "digest": "b" * 64,
+        }
+        row = {
+            "claim_type": "bounded_theorem",
+            "audit_status": "audited_conditional",
+            "criticality": "leaf",
+            "deps": [],
+            "runner_path": "scripts/fixture.py",
+            "notes_for_re_audit_if_any": (
+                "runner_artifact_issue: provide complete unclipped stdout."
+            ),
+            "audit_state_snapshot": {
+                "packet_policy_fingerprint": packet_policy,
+            },
+        }
+
+        with mock.patch.object(
+            m.audit_science_fingerprint,
+            "packet_policy_fingerprint",
+            return_value=packet_policy,
+        ), mock.patch.object(
+            m, "cached_runner_stdout_chars", return_value=7_500
+        ), mock.patch.object(
+            m.compute_audit_queue,
+            "_live_conditional_would_park",
+            return_value=(False, "runner_cache_state_changed"),
+        ):
+            payload = m.build_payload({"moved": row})
+
+        self.assertEqual(
+            [
+                entry["claim_id"]
+                for entry in payload["runner_stdout_transport_candidates"]
+            ],
+            ["moved"],
         )
 
 

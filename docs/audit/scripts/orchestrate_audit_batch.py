@@ -617,8 +617,18 @@ def source_queue_rows(source: str, rows: dict[str, dict]) -> list[dict]:
 
 
 def source_row_fingerprint(row: dict) -> str:
+    # generated_order is presentation/ranking metadata.  Removing an earlier
+    # independent candidate renumbers the remaining stream but does not change
+    # this target's eligibility, evidence, or dispatch contract.
+    stable_row = {
+        key: value for key, value in row.items() if key != "generated_order"
+    }
     return hashlib.sha256(
-        json.dumps(row, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        json.dumps(
+            stable_row,
+            sort_keys=True,
+            separators=(",", ":"),
+        ).encode("utf-8")
     ).hexdigest()
 
 
@@ -3438,9 +3448,38 @@ def apply_serialized(
     )
 
 
-def selected_batch(targets: list[dict], max_workers: int) -> list[dict]:
+def ordinary_dependency_closure(row: dict, rows: dict[str, dict]) -> set[str]:
+    """Return transitive ordinary-claim dependencies for batch isolation."""
+    seen: set[str] = set()
+    stack = list(row.get("deps") or [])
+    while stack:
+        dep = stack.pop()
+        if not isinstance(dep, str) or not dep or dep in seen:
+            continue
+        dep_row = rows.get(dep)
+        if accepted(dep) or (
+            isinstance(dep_row, dict)
+            and (
+                dep_row.get("claim_type") == "meta"
+                or dep_row.get("effective_status") == "meta"
+            )
+        ):
+            continue
+        seen.add(dep)
+        if isinstance(dep_row, dict):
+            stack.extend(dep_row.get("deps") or [])
+    return seen
+
+
+def selected_batch(
+    targets: list[dict],
+    max_workers: int,
+    rows: dict[str, dict] | None = None,
+) -> list[dict]:
+    all_rows = rows or {row["claim_id"]: row for row in targets}
     selected: list[dict] = []
-    reserved: set[str] = set()
+    selected_claim_ids: set[str] = set()
+    selected_upstream_ids: set[str] = set()
     used = 0
     for row in targets:
         seats = len(passes_for_row(row))
@@ -3448,21 +3487,22 @@ def selected_batch(targets: list[dict], max_workers: int) -> list[dict]:
             continue
         if used + seats > max_workers:
             continue
-        # A verdict can update an ordinary dependency's derived status or
-        # topology (notably when a decoration relation is established).  Do
-        # not launch a sibling packet whose selection fingerprint would then
-        # be stale.  Canonical accepted premises are immutable policy inputs
-        # and therefore do not serialize otherwise-independent targets.
-        collision_keys = {row["claim_id"]}
-        collision_keys.update(
-            dep
-            for dep in (row.get("deps") or [])
-            if isinstance(dep, str) and dep and not accepted(dep)
-        )
-        if reserved.intersection(collision_keys):
+        # Applying a verdict can propagate through every downstream consumer.
+        # Select an antichain over the transitive ordinary-claim dependency
+        # order so no launched packet contains a ledger row that an earlier
+        # selected target can update.  Siblings may still run together: one
+        # sibling does not mutate their shared dependency.  Canonical accepted
+        # premises and stable meta context terminate the mutable closure.
+        cid = row["claim_id"]
+        upstream = ordinary_dependency_closure(row, all_rows)
+        if (
+            cid in selected_upstream_ids
+            or bool(selected_claim_ids.intersection(upstream))
+        ):
             continue
         selected.append(row)
-        reserved.update(collision_keys)
+        selected_claim_ids.add(cid)
+        selected_upstream_ids.update(upstream)
         used += seats
     return selected
 
@@ -3738,7 +3778,7 @@ def main() -> int:
             return finish(2)
         if not targets:
             break
-        batch = selected_batch(targets, args.max_workers)
+        batch = selected_batch(targets, args.max_workers, rows)
         if not batch:
             print("no target fits the configured worker limit (critical rows require two seats)")
             return finish(2)

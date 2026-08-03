@@ -352,25 +352,117 @@ No route-specific failure is promoted to constitutional evidence.
 ## No-go discipline and obstruction disposition
 
 Cycle 870 makes no no-go, minimum-content, shared-obstruction, or axiom-pressure
-claim.  The N1 route scan finds live alternatives to autonomous encoder
-renewal: the [Cycle-719 local refusal, one-marker, and two-rail mechanisms](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md), plus
-an untested alternating reset rail, entropy export, and periodic local-gauge
-preparation.  Those alternatives prevent negative promotion; they are not
-presented as failed routes or as a count of independent walls.
+claim.  The full N1--N8 stress test below fails any negative promotion and
+therefore leaves the result in its present positive bounded class.
 
-The hostile spent replay establishes only a property of this explicit emitted
-word on a second invocation.  It does not constrain every local guard, reset
-rail, noncubic controller, periodic sector, or all-volume preparation law.
-Prior cell-parity, transient-chart, and target-chart residuals address
-different objects and are not cited as evidence about renewal.  The strongest
-counter-route is concrete: a token-conditioned double buffer could export the
-old epoch locally and alternate rails under a fixed colour rule.  Its terminal
-obligations remain injective reset, returned physical routing, proper-cubic
-transport, and held-size recurrence.
+### N1 -- alternative routes
 
-Accordingly no route-independent obstruction survives this cycle.  The open
-items listed above are supplied interfaces for future construction, not negative
-physics conclusions.
+| route against a broad renewal/genesis obstruction | marker | exact disposition |
+|---|---|---|
+| [Cycle-719 local refusal, one-marker, and two-rail mechanisms](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md) | ATTEMPTED by prior bounded construction | local typed refusal and recurrent rails exist, but their clean genesis and integration with this encoder remain open |
+| token-conditioned alternating double buffer | UNTESTED/OPEN | exporting the old epoch and alternating rails under a fixed colour rule could make encoder use recurrent |
+| reversible local garbage conveyor / entropy-export rail | UNTESTED/OPEN | a bounded moving garbage register could preserve injectivity while renewing the local work bank |
+| periodic-sector local-gauge preparation | UNTESTED/OPEN | local stabilizer preparation plus explicit Wilson-sector handling could extend the open-cube encoder |
+| direct endpoint-incidence preparation without the emitted loader word | UNTESTED/OPEN | the Cycle-658 qutrit discriminant leaves a distinct coherent preparation route |
+| staggered pump or fault-repair layer on the OpenReference stabilizers | UNTESTED/OPEN | a fixed covariant local layer could prepare or repair the declared code sector without replaying `E` |
+
+Fewer than five alternatives are closed.  N1 therefore forbids a no-go,
+minimum-content, shared-obstruction, or axiom-pressure conclusion.  The open
+rows are not counted as failed attempts.
+
+### N2 -- collapsed wall set
+
+The raw open-item list collapses to four load-bearing boundary classes.  A
+downstream interface is not counted as an additional condition on the
+compiler theorem itself.
+
+| wall | exact content |
+|---|---|
+| `W_G` | supplied clean one-invocation genesis, open-cube boundary, and transported coframe/code sector |
+| `W_R` | local admission, spent-sector reset/renewal, and fault repair for reuse of `E` |
+| `W_X` | periodic/noncubic extension and a volume-independent parallel controller for the one-time `E` word |
+| `W_L` | selection of the numeric coin/contact law compiled by the fixed update |
+
+No member of this collapsed set automatically closes another: `W_G` provides
+the first lawful invocation but not renewal; `W_R` does not choose a coframe
+or periodic sector; `W_X` does not prepare or renew the code; and `W_L` does
+not compile any of those physical resources.  Clean ancillas, start token,
+boundary, coframe, code sector, and first-use admission are components of
+`W_G`, not extra independent walls.  Reset, renewal, and fault repair are
+components of `W_R`.  The Cycle-612/source/Record/Born interfaces are future
+consumers outside this compiler theorem, not extra compiler walls.
+
+### N3 -- hidden-wall scan
+
+Before this checklist was inserted, the prescribed phrase scan found no use
+of its trigger vocabulary as a load-bearing shortcut.  The quoted trigger
+list in this paragraph is itself non-load-bearing review metadata.  The
+supplied/derived/open inventory explicitly names
+the clean sector, boundary, coframe, numeric parameters, local schedules,
+carrier, persistent auxiliary, transit substrate, and one-use admission.
+
+### N4 -- residual matching
+
+| witness | residual actually tested | residual not inferred from it |
+|---|---|---|
+| Cycle 657 | 74,400/83,244 mismatches for the seven-cell-parity feature set | all bounded fermion encodings |
+| Cycle 868 | supplied global-order chart and transient preparation | recurrence of the present OpenReference bank |
+| Cycle 869 | nonzero primary/held Gram differences for literal Cycle-789 target-chart substitution | the OpenReference representation used here |
+| Cycle 870 hostile replay | 3 token plus 3 spent failures at L2; 8 plus 8 at L3 on a second unguarded `E` invocation | every local guard, reset rail, or preparation law |
+| Cycle 870 carrier-only deletion | thousands of required route sites absent from a carrier-only substrate | bounded execution after the explicit transit capacity is retained |
+
+Only the hostile-replay row matches the declared one-invocation boundary.
+The other residuals are retained as route diagnostics and are not witnesses
+for renewal or genesis.
+
+### N5 -- rhetoric and resolution audit
+
+The all-vector intertwiner and no-global-parity-service statements are tested
+on complete lawful open-cube code spaces at L2 and held L3, with recurrent
+schedule geometry held through L5 and covariance over all 24 proper-cubic
+frames and 576 products.  They are not extended to periodic Wilson sectors,
+noncubic regions, arbitrary faulted inputs, or autonomous preparation.  The
+spent-replay negative is only about this explicit emitted word at its second
+unguarded invocation on L2/L3.  The note does not broaden it to arbitrary
+encoders, sites, topologies, schedules, or all-volume preparation laws.
+
+### N6 -- partial-closure paths
+
+The legitimate import-retirement paths remain constructive: integrate a
+Cycle-719 refusal/two-rail controller, add a covariant alternating reset rail,
+compile periodic stabilizer preparation, or ratify only those boundary/coframe
+choices that are genuinely conventions rather than laws.  Approved axioms and
+framework primitives are not counted as walls, and no proposed primitive or
+axiom is silently promoted.  These paths are implementation or governance
+tests until an executable physical law closes them.
+
+### N7 -- steelman
+
+A hostile reviewer should reject any renewal obstruction: a
+token-conditioned double buffer can, in principle, move the spent epoch into a
+bounded garbage rail, switch to a clean partner bank under a fixed local
+colour rule, and run the same exact recurrent update while the first bank is
+repaired.  Cycle 719 already demonstrates the relevant refusal, marker, and
+two-rail ingredients.  Until injective reset, returned physical routing,
+proper-cubic transport, and held-size recurrence are tested for that
+counter-route, the one-use boundary is an implementation fact about this word,
+not a substrate theorem.
+
+### N8 -- cross-cycle echo
+
+Earlier global-parity and ordered-carrier walls in Cycles 232--257 were
+repeatedly narrowed by changing representation; Cycles 703/706 then supplied
+the local OpenReference gauge route used here.  Cycle 789's apparent input
+collision was repaired by a distinct third bank.  Those echoes show that
+genesis, role collision, and global-order residuals in this campaign have often
+been retired by additional local carriers or a representation change.  The
+same mechanisms remain live against `W_G`, `W_R`, and `W_X`.
+
+**Gate disposition:** `FAIL` for every negative promotion.  The required
+repair is already applied: Cycle 870 ships only as a positive bounded theorem
+with the collapsed walls above.  Accordingly no route-independent obstruction
+survives this cycle, and the open items are supplied interfaces for future
+construction rather than negative physics conclusions.
 
 ## TOE dependency effect
 

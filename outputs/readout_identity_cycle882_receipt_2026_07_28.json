@@ -500,6 +500,11 @@
       "marker": "ATTEMPTED",
       "pin": "the surviving live route; classified EQUIVALENT to the obligation in certificate L",
       "route": "R12 Record-facing affine anchor binding (LEMMA-882)"
+    },
+    {
+      "marker": "ATTEMPTED",
+      "pin": "constructed by the Cycle-882 independent checker, certificate CF, NOT by this runner. It reaches the target at record sizes (1, 27, 2) -- so it does evade C882-T6, whose scope is the orbit cardinality alone -- but its solution set is {0, s3/(s1 s2)} and every positive rational is attainable, so it selects nothing and retains the zero member. Recorded here because the route table must carry it.",
+      "route": "R13 bilinear Record relations I(R1) I(R2) = I(R3), where the inhomogeneous constant is carried by record sizes rather than written down"
     }
   ],
   "scope": "Scope: the finite single full C3 orbit readout family over Q at the obligation's own scope, with Record additivity, C3 covariance and empty-record normalization as the only structural inputs, plus the pinned retained arithmetic L3(1,2) = 2/9 and S_sum = 2/3 used as numbers only. Out of scope and NOT claimed: other orbits, non-abelian records, infinite records, the h-unit half, the carrier/source-action half (Cycle 871), any delta, r, Koide value, charged-lepton mass or mixing angle, and any statement about all future mathematical constructions.",

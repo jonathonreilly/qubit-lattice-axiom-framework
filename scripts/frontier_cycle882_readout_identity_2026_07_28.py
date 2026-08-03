@@ -821,10 +821,23 @@ def homogeneous_dichotomy_certificate(lib: list[dict]) -> dict:
         })
     return {
         "theorem": (
-            "C882-T1. Let S be the solution set in alpha of any homogeneous "
-            "constraint system on the C3-covariant Record-additive readout "
-            "line. Then S = {0} or S = Q. In particular S is never a nonzero "
-            "singleton, so no homogeneous route can select the target member."
+            "C882-T1. Let S be the solution set in alpha of a constraint "
+            "system that is homogeneous OF A SINGLE DEGREE d on the "
+            "C3-covariant Record-additive readout line -- equivalently, that "
+            "is scaling covariant, F(lambda a) = lambda^d F(a). Then S = {0} "
+            "or S = Q. In particular S is never a nonzero singleton, so no "
+            "scaling-covariant route can select the target member."
+        ),
+        "scope_qualification_is_load_bearing": (
+            "The single-degree qualification is NOT decoration. Constraints "
+            "with merely a zero constant term but MIXED degree escape the "
+            "dichotomy: alpha^2 - c alpha = 0 has solution set {0, c}, which "
+            "contains a nonzero member. The independent checker exhibits this "
+            "counterexample (certificate CE) and the route it opens "
+            "(certificate CF); neither closes the obligation, because {0, c} "
+            "still retains the zero member and c is still an externally "
+            "supplied constant. Every member of this runner's library is "
+            "linear, so nothing computed here is affected."
         ),
         "rows": rows,
         "members_checked": len(rows),
@@ -1434,6 +1447,21 @@ def outcome_certificate(prior: dict) -> dict:
             "unique arithmetic gap, and it is strictly weaker than the "
             "obligation, so it is attackable."
         ),
+        "corrections_forced_by_the_independent_checker": [
+            "C882-T1 was restated for single-degree (scaling-covariant) "
+            "homogeneity after the checker exhibited mixed-degree "
+            "zero-constant-term counterexamples; no computed result moved, "
+            "since this runner's whole constraint library is linear.",
+            "Route R13 (bilinear Record relations) was added to the route "
+            "table after the checker constructed it. It reaches the target "
+            "without an explicitly written constant and therefore shows that "
+            "C882-T6's restriction to orbit-cardinality data is load bearing; "
+            "it selects nothing, so the block's outcome is unchanged.",
+            "The checker also MEASURED where C882-T6 dissolves: admitting "
+            "record copy multiplicity 2 as a generator reaches the target "
+            "immediately. That is the same escape condition SL1 names, "
+            "arrived at independently.",
+        ],
         "finding": (
             "Negative-shaped and priced. Four route classes closed by theorem, "
             "one exact wall (multiplicative closure always keeps the identity), "
@@ -1492,6 +1520,17 @@ def no_go_gate_certificate() -> dict:
          "marker": "ATTEMPTED",
          "pin": "the surviving live route; classified EQUIVALENT to the "
                 "obligation in certificate L"},
+        {"route": "R13 bilinear Record relations I(R1) I(R2) = I(R3), where "
+                  "the inhomogeneous constant is carried by record sizes "
+                  "rather than written down",
+         "marker": "ATTEMPTED",
+         "pin": "constructed by the Cycle-882 independent checker, certificate "
+                "CF, NOT by this runner. It reaches the target at record sizes "
+                "(1, 27, 2) -- so it does evade C882-T6, whose scope is the "
+                "orbit cardinality alone -- but its solution set is {0, "
+                "s3/(s1 s2)} and every positive rational is attainable, so it "
+                "selects nothing and retains the zero member. Recorded here "
+                "because the route table must carry it."},
     ]
     markers_valid = all(r["marker"] in ROUTE_MARKERS for r in routes)
     attempted = [r for r in routes if r["marker"] == "ATTEMPTED"]

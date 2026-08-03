@@ -407,16 +407,19 @@ def run_command(label: str, command: list[str], env: dict[str, str] | None = Non
         lock_fd = _DRAIN_LOCK_HANDLE.fileno()
         child_env[batch.INHERITED_DRAIN_LOCK_FD_ENV] = str(lock_fd)
         pass_fds = (lock_fd,)
-    proc = subprocess.Popen(
-        command,
-        cwd=REPO_ROOT,
-        env=child_env,
-        pass_fds=pass_fds,
-        start_new_session=True,
-    )
+    proc: subprocess.Popen | None = None
     try:
+        proc = subprocess.Popen(
+            command,
+            cwd=REPO_ROOT,
+            env=child_env,
+            pass_fds=pass_fds,
+            start_new_session=True,
+        )
         returncode = proc.wait()
     except BaseException:
+        if proc is None:
+            raise
         emit_preserving_primary_result(
             "INTERRUPT deferred until the isolated child phase exits under "
             "its own seat-cleanup and mutation-transaction rules"

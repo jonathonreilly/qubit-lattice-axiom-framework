@@ -989,6 +989,7 @@ def launch_worker(
         "It is the complete restricted packet. Do not inspect any other file. "
         "Return only the response required by that packet."
     )
+    proc: subprocess.Popen | None = None
     try:
         proc = subprocess.Popen(
             [
@@ -1004,10 +1005,6 @@ def launch_worker(
             cwd=isolated,
             start_new_session=True,
         )
-    except Exception:
-        log_handle.close()
-        raise
-    try:
         return {
             "cid": cid,
             "row": row,
@@ -1036,6 +1033,19 @@ def launch_worker(
             "deadline_exceeded": False,
         }
     except BaseException as primary_error:
+        if proc is None:
+            log_failures = close_worker_logs(
+                [{"cid": cid, "log_handle": log_handle}]
+            )
+            if log_failures and hasattr(primary_error, "add_note"):
+                try:
+                    primary_error.add_note(
+                        "worker log cleanup also failed: "
+                        f"{'; '.join(log_failures)}"
+                    )
+                except BaseException:
+                    pass
+            raise
         # Keep ownership even under an exceptional post-Popen failure.  The
         # caller cannot clean a process whose job record was never returned.
         cleanup_error: BaseException | None = None

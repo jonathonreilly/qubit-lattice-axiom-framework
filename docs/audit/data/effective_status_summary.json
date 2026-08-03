@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 2250,
-    "decoration": 41,
+    "decoration": 42,
     "meta": 373,
     "no_go": 439,
     "open_gate": 207,
-    "positive_theorem": 661
+    "positive_theorem": 660
   },
   "cycle_examples": [
     [
@@ -80,13 +80,14 @@
   ],
   "cycles_detected": 59,
   "effective_status_counts": {
-    "audit_in_progress": 2,
+    "audit_in_progress": 1,
     "audited_conditional": 279,
     "audited_failed": 72,
     "audited_numerical_match": 11,
     "audited_renaming": 33,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
+    "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
@@ -103,10 +104,10 @@
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "meta": 365,
     "open_gate": 2,
-    "retained": 108,
+    "retained": 109,
     "retained_bounded": 320,
     "retained_pending_chain": 12,
-    "unaudited": 2742
+    "unaudited": 2741
   },
   "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [

@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 108 |
+| Retained positive rows | 109 |
 | Retained bounded rows | 320 |
 | Retained no-go rows | 0 |
-| Boxed decorations under retained parents | 25 |
+| Boxed decorations under retained parents | 26 |
 
-## Retained positive rows (108)
+## Retained positive rows (109)
 
 Sorted by load-bearing graph score (descending).
 
@@ -30,6 +30,7 @@ Sorted by load-bearing graph score (descending).
 - [`koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`](../../docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) — score 30.758; audited 2026-07-18T04:09:14.626536+00:00
 - [`gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md) — score 26.356; audited 2026-07-29T19:41:04.061082+00:00
 - [`koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`](../../docs/KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) — score 25.742; audited 2026-07-18T01:25:36.958473+00:00
+- [`cl3_complexification_split_narrow_theorem_note_2026-05-10`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 25.311; audited 2026-08-03T09:09:03.278281+00:00
 - [`graph_first_selector_derivation_note`](../../docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md) — score 25.207; audited 2026-05-22T15:33:35.673777+00:00
 - [`gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10`](../../docs/GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 24.951; audited 2026-06-06T22:50:14.735139+00:00
 - [`alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`](../../docs/ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md) — score 24.883; audited 2026-07-15T18:45:38.154373+00:00
@@ -463,7 +464,7 @@ Sorted by load-bearing graph score (descending).
 
 - none at present
 
-## Boxed decorations under retained parents (25)
+## Boxed decorations under retained parents (26)
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.112; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.760; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
@@ -485,6 +486,7 @@ Sorted by load-bearing graph score (descending).
 - [`alpha_s_derived_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md) — score 2.085; audited 2026-07-25T12:19:07.321240+00:00; under `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
 - [`connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10`](../../docs/CONNES_KREIMER_PARTIAL_SUM_RB_B4_EXTERNAL_BOUNDED_NOTE_2026-05-10.md) — score 1.500; audited 2026-07-25T20:22:25.439795+00:00; under `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10`
 - [`beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md) — score 0.000; audited 2026-07-25T11:20:02.772224+00:00; under `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`
+- [`cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17`](../../docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md) — score 0.000; audited 2026-08-03T04:53:53.378422+00:00; under `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - [`commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12`](../../docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 0.000; audited 2026-07-12T04:18:56.272539+00:00; under `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`
 - [`koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02`](../../docs/KOIDE_CYCLIC_WILSON_3_RESPONSE_NARROW_THEOREM_NOTE_2026-05-02.md) — score 0.000; audited 2026-05-05T11:39:48.207299+00:00; under `koide_dweh_cyclic_compression_note_2026-04-18`
 - [`koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25`](../../docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md) — score 0.000; audited 2026-07-25T17:52:11.054837+00:00; under `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`

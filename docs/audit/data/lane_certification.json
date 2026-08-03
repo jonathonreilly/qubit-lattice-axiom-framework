@@ -164,10 +164,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
           "effective_status": "audited_conditional"
         },
@@ -227,7 +223,7 @@
       "roots": [
         "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11"
       ],
-      "uncertified_count": 18
+      "uncertified_count": 17
     },
     {
       "blocking": [
@@ -498,10 +494,6 @@
         {
           "claim_id": "cl3_color_automorphism_theorem",
           "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
@@ -2852,7 +2844,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 653
+      "uncertified_count": 652
     }
   ],
   "schema": "lane_certification_v2"

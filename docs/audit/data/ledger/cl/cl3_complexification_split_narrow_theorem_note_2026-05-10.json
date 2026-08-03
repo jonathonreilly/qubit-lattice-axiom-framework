@@ -1,9 +1,10 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-08-03T09:09:03.278281+00:00",
   "audit_invocation_history": [
-    "5d0309009e464565a8932787c4a71212"
+    "5d0309009e464565a8932787c4a71212",
+    "27c95f9cc9554ff09812f6ef865f1466"
   ],
-  "audit_invocation_id": "5d0309009e464565a8932787c4a71212",
+  "audit_invocation_id": "27c95f9cc9554ff09812f6ef865f1466",
   "audit_state_snapshot": {
     "criticality": "critical",
     "dep_axiom_premise_note_hash": {},
@@ -17,22 +18,23 @@
     },
     "judgment_fingerprint": {
       "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-      "digest": "7d40bc5d4a7a94c20b5f4a5311da47a9aab736cbb76d8cbd4837a2581adf890d",
+      "digest": "9674dab9966e377b5780cb8885e65b677ecbd976ed0b1d9babda02140e255eb2",
       "judgment": {
-        "audit_date": null,
-        "audit_invocation_id": "5d0309009e464565a8932787c4a71212",
-        "audit_status": "audit_in_progress",
-        "auditor": null,
-        "auditor_confidence": null,
-        "auditor_family": null,
-        "auditor_model": null,
-        "auditor_reasoning_effort": null,
-        "chain_closes": null,
-        "chain_closure_explanation": null,
+        "audit_date": "2026-08-03T09:09:03.278281+00:00",
+        "audit_invocation_id": "27c95f9cc9554ff09812f6ef865f1466",
+        "audit_status": "audited_clean",
+        "auditor": "codex-audit-batch-B-20260803-716d8e8c",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": true,
+        "chain_closure_explanation": "The Clifford relations give K1\u2013K3 by exact finite-dimensional algebra, and Artin\u2013Wedderburn classification gives the two-dimensional irreducible modules in K4. The real-algebra restrictions are faithful, while the physical lattice-Hilbert-space bridge is explicitly outside the audited scope.",
         "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
         "claim_type": "positive_theorem",
-        "claim_type_provenance": "audited_pending_cross_confirmation",
+        "claim_type_provenance": "audited",
         "cross_confirmation": {
+          "agreement_schema": "audit_tuple_v2",
           "first_audit": {
             "audit_date": "2026-08-03T09:00:16.975457+00:00",
             "audit_invocation_id": "5d0309009e464565a8932787c4a71212",
@@ -63,24 +65,55 @@
             "verdict": "audited_clean",
             "verdict_rationale": "An independent Pauli-basis check gives eight real-linearly independent images, while \u03c9\u00b2 = \u22121 yields the two central idempotents and two M\u2082(C) blocks. Primitive left ideals in each block have complex dimension 2; each irreducible complexified representation kills the opposite block, but its restriction to the simple real algebra is injective. The exact 62-check runner reconstructs these identities rather than importing expected values, and the five-route negative stress test plus independent faithful-direct-sum steelman leaves irreducibility as the decisive qualifier."
           },
-          "second_audit": null,
-          "status": "awaiting_second"
+          "second_audit": {
+            "audit_date": "2026-08-03T09:09:03.278281+00:00",
+            "audit_invocation_id": "27c95f9cc9554ff09812f6ef865f1466",
+            "auditor": "codex-audit-batch-B-20260803-716d8e8c",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": true,
+            "chain_closure_explanation": "The Clifford relations give K1\u2013K3 by exact finite-dimensional algebra, and Artin\u2013Wedderburn classification gives the two-dimensional irreducible modules in K4. The real-algebra restrictions are faithful, while the physical lattice-Hilbert-space bridge is explicitly outside the audited scope.",
+            "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+            "claim_type": "positive_theorem",
+            "decoration_parent_claim_id": null,
+            "independence": "fresh_context",
+            "load_bearing_step": "Each simple summand M\u2082(C) has a unique irreducible left module of complex dimension 2; hence every faithful irreducible finite-dimensional complex representation of real Cl(3,0) has dimension 2.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 62,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 62
+            },
+            "verdict": "audited_clean",
+            "verdict_rationale": "K1\u2013K3 follow from the defining Clifford relations and exact central-idempotent algebra, while K4 follows from the exhaustive Artin\u2013Wedderburn/minimal-left-ideal classification. The primary and helper code recompute the algebra, kernels, ranks, and finite-region controls exactly, yielding 62 passes with no hard-coded contested target or external comparator. The physical per-site Hilbert-space bridge is explicitly excluded, so no open dependency enters the audited scope."
+          },
+          "status": "confirmed"
         },
         "decoration_parent_claim_id": null,
-        "independence": null,
-        "load_bearing_step": null,
-        "load_bearing_step_class": null,
-        "negative_assertion_classes": null,
-        "notes_for_re_audit_if_any": null,
+        "independence": "fresh_context",
+        "load_bearing_step": "Each simple summand M\u2082(C) has a unique irreducible left module of complex dimension 2; hence every faithful irreducible finite-dimensional complex representation of real Cl(3,0) has dimension 2.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [
+          "derived_no_go_boundary"
+        ],
+        "notes_for_re_audit_if_any": "",
         "open_dependency_paths": [],
         "runner_check_breakdown": {
-          "A": 0,
+          "A": 62,
           "B": 0,
           "C": 0,
           "D": 0,
-          "total_pass": 0
+          "total_pass": 62
         },
-        "verdict_rationale": null
+        "verdict_rationale": "K1\u2013K3 follow from the defining Clifford relations and exact central-idempotent algebra, while K4 follows from the exhaustive Artin\u2013Wedderburn/minimal-left-ideal classification. The primary and helper code recompute the algebra, kernels, ranks, and finite-region controls exactly, yielding 62 passes with no hard-coded contested target or external comparator. The physical per-site Hilbert-space bridge is explicitly excluded, so no open dependency enters the audited scope."
       },
       "schema": "frozen_audit_judgment_v1"
     },
@@ -152,24 +185,25 @@
     },
     "transitive_descendants": 1796
   },
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-B-20260803-716d8e8c",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The Clifford relations give K1\u2013K3 by exact finite-dimensional algebra, and Artin\u2013Wedderburn classification gives the two-dimensional irreducible modules in K4. The real-algebra restrictions are faithful, while the physical lattice-Hilbert-space bridge is explicitly outside the audited scope.",
   "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
   "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-08-03T09:00:16.975457+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-08-03T09:09:03.278281+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-08-03T09:00:16.975457+00:00",
       "audit_invocation_id": "5d0309009e464565a8932787c4a71212",
@@ -570,28 +604,702 @@
       "verdict": "audited_clean",
       "verdict_rationale": "An independent Pauli-basis check gives eight real-linearly independent images, while \u03c9\u00b2 = \u22121 yields the two central idempotents and two M\u2082(C) blocks. Primitive left ideals in each block have complex dimension 2; each irreducible complexified representation kills the opposite block, but its restriction to the simple real algebra is injective. The exact 62-check runner reconstructs these identities rather than importing expected values, and the five-route negative stress test plus independent faithful-direct-sum steelman leaves irreducibility as the decisive qualifier."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-08-03T09:09:03.278281+00:00",
+      "audit_invocation_id": "27c95f9cc9554ff09812f6ef865f1466",
+      "auditor": "codex-audit-batch-B-20260803-716d8e8c",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "The Clifford relations give K1\u2013K3 by exact finite-dimensional algebra, and Artin\u2013Wedderburn classification gives the two-dimensional irreducible modules in K4. The real-algebra restrictions are faithful, while the physical lattice-Hilbert-space bridge is explicitly outside the audited scope.",
+      "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Each simple summand M\u2082(C) has a unique irreducible left module of complex dimension 2; hence every faithful irreducible finite-dimensional complex representation of real Cl(3,0) has dimension 2.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "test whether an omitted central block or proper ideal supports another simple-module dimension",
+            "disposition": "CLOSED",
+            "evidence_locator": "mechanism_class 1: route_id=central_split",
+            "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "solve the complete center and central-idempotent algebra, then isolate matrix units in each summand",
+            "outcome": "E1 exhausts exactly two simple M2(C) summands",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "central_split"
+          },
+          {
+            "attempt": "test alternate irreducible modules or carrier dimensions within either M2(C) block",
+            "disposition": "CLOSED",
+            "evidence_locator": "mechanism_class 2: route_id=module_carriers",
+            "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "classify every minimal left ideal in both central sectors",
+            "outcome": "E2 finds one 2-dimensional simple-module class per sector",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "module_carriers"
+          },
+          {
+            "attempt": "search every one-dimensional scalar candidate for a Clifford character",
+            "disposition": "CLOSED",
+            "evidence_locator": "mechanism_class 3: route_id=scalar_finite_scan",
+            "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "compute the exact scalar polynomial solve, unit-ideal Groebner basis, and finite square-law scan",
+            "outcome": "E3 finds no solution and exhibits the exact contradiction",
+            "prior_witness_id": null,
+            "route_class": "numerical_or_finite_case",
+            "route_id": "scalar_finite_scan"
+          },
+          {
+            "attempt": "test whether the faithfulness wording hides an alternate full-complexification representation",
+            "disposition": "CLOSED",
+            "evidence_locator": "mechanism_class 4: route_id=faithfulness_boundary",
+            "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "compute kernels on the full complexification and at the real-algebra restriction boundary",
+            "outcome": "E4 computes the opposite summand kernels and faithful real restrictions",
+            "prior_witness_id": null,
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "faithfulness_boundary"
+          },
+          {
+            "attempt": "test whether multiple lattice sites evade the one-site exclusions or change the tensor-power simple-module dimensions",
+            "disposition": "CLOSED",
+            "evidence_locator": "mechanism_class 5: route_id=finite_lattice_tensor",
+            "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "restrict finite-region tensor-algebra characters sitewise and construct the two-site tensor modules",
+            "outcome": "EL proves all finite N by tensor induction and exhausts the N=2 blocks constructively",
+            "prior_witness_id": null,
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "finite_lattice_tensor"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "exhaustive irreducible-module dimension",
+            "faithfulness boundary"
+          ],
+          "evidence_locator": "=== E4: full-complexification kernel and real-algebra faithfulness boundary ===",
+          "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "pairwise_checks": [
+            {
+              "evidence_locator": "=== E2: exhaustive irreducible-module dimension ===",
+              "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "independent": true,
+              "left": "exhaustive irreducible-module dimension",
+              "left_closes_right": false,
+              "rationale": "The exhaustive irreducible-module dimension calculation fixes all simple-module sizes but does not by itself compute the faithfulness boundary; conversely, the faithfulness boundary computes kernels but does not classify every irreducible dimension.",
+              "right": "faithfulness boundary",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "exhaustive irreducible-module dimension",
+            "faithfulness boundary"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "# Cl(3) Complexification Split Narrow Theorem",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "faithfulness-boundary computation. Audit status remains solely an output of",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "20b9d014e0609968",
+              "occurrence_locator_sha256": "55cf8c22d429b56fdefbfdea6624a8238ff7623cff3070874e46d91b8f027292",
+              "phrase": "boundary",
+              "promoted_wall": null,
+              "rationale": "This occurrence labels a computed representation-theoretic kernel boundary and does not introduce an assumed boundary condition."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "classification, E3 scalar exclusion, and E4 faithfulness-boundary code, remain",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "869737c0bc2c50f5",
+              "occurrence_locator_sha256": "1de80c3fb1fa72c33b40b18287d148cb7d8b8d9af26923786f5b6ccdef44664d",
+              "phrase": "boundary",
+              "promoted_wall": null,
+              "rationale": "This occurrence identifies the E4 computation retained in the primary runner; it supplies no hidden premise or boundary condition."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "| Faithfulness boundary | Exclusion stress runner E4 | Both full-complexification kernels computed as the opposite summands at complex rank `4`; both restrictions to real `Cl(3,0)` have real rank `8` |",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "d3ab47b2b021b60c",
+              "occurrence_locator_sha256": "3963f8aaa280ac87def3eb3ed7158f5a94dc986c2dc00d9ee85c8d94334f2152",
+              "phrase": "boundary",
+              "promoted_wall": null,
+              "rationale": "The table row reports exact kernel and rank checks, so boundary is descriptive of a derived distinction rather than an admission."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "where every canonical resolution class (`per_element`, `per_site`,",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "a9d85561d33e2236",
+              "occurrence_locator_sha256": "9d8486c1ece8e77fb9ac0c72e83c2776b1c5fd9712469611d817b8f87cb22b43",
+              "phrase": "canonical",
+              "promoted_wall": null,
+              "rationale": "Canonical modifies the audit resolution-class vocabulary and carries no mathematical premise used to prove K1\u2013K4."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "faithful 2-dim irreps. The package convention `\u03c1_+` is a bookkeeping",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "71e7648076f3c4b9",
+              "occurrence_locator_sha256": "b798bb54f5680b2291aa68bc3a1e1b347e0567becab3bbee1746a70671f0859b",
+              "phrase": "convention",
+              "promoted_wall": null,
+              "rationale": "The convention selects only a chirality label after both faithful irreducible representations have already been derived."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "| (K4) every irreducible complex module has dimension `2` | Exclusion stress runner E2 | Both central-idempotent actions exhausted; primitive-idempotent left-ideal rank `2`, corner rank `1`, minimality, and explicit isomorphism in both summands |",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "c57c0c3fab7adeb8",
+              "occurrence_locator_sha256": "b14abe75a8654e20e74d29df43cdfc4988d1b8eafc70916639f98664652c5a4f",
+              "phrase": "primitive",
+              "promoted_wall": null,
+              "rationale": "Primitive occurs inside the technical term primitive-idempotent and does not invoke an approved primitive or hidden axiom."
+            }
+          ],
+          "none_found_reason": null,
+          "scan_scope": "Authenticated hidden-wall phrases in the audited source were checked; accepted framework-premise paths were omitted as directed, and there are no ordinary one-hop authorities.",
+          "scanned_evidence_paths": [
+            "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md"
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "None load-bearing.",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "none_found_reason": "All five N1 routes were attempted on current-cycle live execution evidence; none was marked RULED OUT BY PRIOR, and the packet supplies no one-hop authority residual to match.",
+          "scan_scope": "The source's zero-authority declaration and all N1 honesty markers were checked for prior-witness residual obligations.",
+          "scanned_evidence_paths": [],
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Cl(3)-irrep does not exist. The Artin-Wedderburn classification above,",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "none_found_reason": null,
+          "scan_scope": "The authenticated substantive negative phrase in the source was checked against all five live resolution classes.",
+          "scanned_evidence_paths": [
+            "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md"
+          ],
+          "statements": [
+            {
+              "evidence_locator": "Cl(3)-irrep does not exist. The Artin-Wedderburn classification above,",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "4ae1880e5e3890d1",
+              "occurrence_locator_sha256": "8506db733c5873fd9feeb128440344bc12bf8ab47845cbcaebc8805c17c8b65b",
+              "phrase": "does not",
+              "resolution_classes_checked": [
+                "per_element",
+                "per_site",
+                "per_mode",
+                "per_block",
+                "lattice_wide"
+              ],
+              "resolution_evidence_locator": "NEGATIVE STATEMENT 1: no faithful one-dimensional complex representation of Cl(3,0) exists",
+              "resolution_evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "tested_resolutions": [
+                "per_element: [EXECUTED] each generator pair (x_i, x_j), i != j, already forces the contradiction x_i x_j = -x_j x_i with commuting scalars; the scalar Clifford system has no solution element-by-element",
+                "per_site: [EXECUTED] Cl(3,0) is the one-site real algebra; the full scalar system over one site was solved exhaustively and is inconsistent",
+                "per_mode: [EXECUTED] every irreducible module (mode) restricts to one central summand and has computed complex dimension 2, never 1",
+                "per_block: [EXECUTED] both central-idempotent blocks e_+A and e_-A carry only the 2-dimensional simple module; no block admits a 1-dimensional faithful action",
+                "lattice_wide: [EXECUTED] for every nonempty finite N-site tensor algebra, a unital one-dimensional representation restricts to a forbidden one-site scalar character; the N=2 and N=3 joint systems were also solved explicitly with no solutions"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "affected_wall": "exhaustive irreducible-module dimension",
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "closure_mechanism": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-2 This candidate could touch the module-size question only by re-scoping it to the physical Qubit axiom; it does not independently prove the abstract Cl(3,0) classification from the defining relations.",
+              "could_close_wall": false,
+              "disposition": "exhaustive irreducible-module dimension remains independently closed by the abstract center, matrix-unit, and minimal-left-ideal calculations, so the physical Qubit premise is unnecessary and out of scope.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "indexed_basis": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-2",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "affected_wall": "faithfulness boundary",
+              "candidate_id": "claim_reframe:docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
+              "closure_mechanism": "- [CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) \u2014 establishes `Cl(3,0) \u2297_\u211d \u2102 \u2245 M_2(\u2102) \u2295 M_2(\u2102)` (\u00a7(K3); Step 3 of this note's U1\u2013U3 derivation) and the two-dim irrep dimensional readout (\u00a7(K4); load-bearing for U2: every faithful complex irreducible  This candidate restates the audited theorem as load-bearing content for a broader parent, so it cannot independently close the wall without circularity.",
+              "could_close_wall": false,
+              "disposition": "faithfulness boundary is closed here by direct kernel and real-rank calculations; the broader parent is a downstream consumer and supplies no independent premise.",
+              "evidence_locator": "claim_reframe:docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "indexed_basis": "- [CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) \u2014 establishes `Cl(3,0) \u2297_\u211d \u2102 \u2245 M_2(\u2102) \u2295 M_2(\u2102)` (\u00a7(K3); Step 3 of this note's U1\u2013U3 derivation) and the two-dim irrep dimensional readout (\u00a7(K4); load-bearing for U2: every faithful complex irreducible ",
+              "kind": "definition_refactor"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "none_found_reason": null,
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied foundation primitives, open obligations, convention/definition records, and scope reframes were checked for candidates capable of closing either abstract-algebra wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "mechanism_class 4: route_id=faithfulness_boundary route_class=boundary_or_initial_condition mechanism=compute kernels on the full complexification and at the real-algebra restriction boundary; attempt=test whether the faithfulness wording hides an alternate full-complexification representation; outcome=E4 computes the opposite summand kernels and faithful real restrictions; honesty_marker=ATTEMPTED disposition=CLOSED",
+          "evidence_locator": "mechanism_class 4: route_id=faithfulness_boundary",
+          "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "resolution": "N7_STEELMAN_RESOLUTION wall=irreducible complexified A-module faithfulness boundary; steelman=rho_plus_direct_sum_rho_minus; individual_kernel_dim_complex=4; combined_complex_rank=8; faithful=true; reducible=true; invariant_summand_dims_complex=2,2; conclusion=faithfulness_does_not_recover_irreducibility",
+          "resolution_evidence_locator": "N7_STEELMAN_RESOLUTION wall=irreducible complexified A-module faithfulness boundary",
+          "resolution_evidence_path": "audit-packet://runner-stdout-independent/cl3_complexification_split_narrow_theorem_note_2026-05-10/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17-1d53994169150908",
+          "resolved": true,
+          "route_id": "faithfulness_boundary"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "similar_negative_boundary:planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+              "disposition": "| packet selector / representation descent | no; the proof grants `P_A` and the descent still fails | no; changing to a spinor action does not select `P_A` among substrate packets | yes | This concerns selection of a physical substrate packet, whereas the audited scope is only the abstract Cl(3,0) algebra and its modules.",
+              "evidence_locator": "similar_negative_boundary:planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "mechanism": "| packet selector / representation descent | no; the proof grants `P_A` and the descent still fails | no; changing to a spinor action does not select `P_A` among substrate packets | yes |",
+              "retired": null
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "repo_negative_scan:docs/CHARGED_LEPTON_Y_TAU_WARD_STRUCTURAL_ANCHOR_REQUIREMENTS_POSITIVE_THEOREM_NOTE_2026-05-17.md",
+              "disposition": "no-go \u00a72: physical `Cl(3)` local algebra on the `Z\u00b3` spatial substrate This echo concerns a charged-lepton physical realization and does not challenge the defining-relation proof for the abstract algebra.",
+              "evidence_locator": "repo_negative_scan:docs/CHARGED_LEPTON_Y_TAU_WARD_STRUCTURAL_ANCHOR_REQUIREMENTS_POSITIVE_THEOREM_NOTE_2026-05-17.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "mechanism": "no-go \u00a72: physical `Cl(3)` local algebra on the `Z\u00b3` spatial substrate",
+              "retired": null
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "disposition": "| canonical exterior Clifford action | wedge plus contraction realizes `Cl_4` on all 16 dimensions but maps degree one to degrees zero and two | it does not preserve `P_A`; selecting an irreducible copy is a commutant choice | This mechanism concerns Cl\u2084 carrier selection and preservation of a physical packet, not the exhaustive Cl(3,0) simple-module classification.",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "mechanism": "| canonical exterior Clifford action | wedge plus contraction realizes `Cl_4` on all 16 dimensions but maps degree one to degrees zero and two | it does not preserve `P_A`; selecting an irreducible copy is a commutant choice |",
+              "retired": null
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-carrier-retirement-20260717/NO_GO_LEDGER.md",
+              "disposition": "| one-site algebra does not itself give cross-site CAR | current JW and statistics notes explicitly separate tensor/JW inputs from Qubit | hard-premise warning, not yet a campaign no-go | retained physical composition/graded-locality bridge | This is a cross-site CAR and physical-composition warning explicitly excluded from the present one-site abstract-algebra theorem.",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-carrier-retirement-20260717/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "mechanism": "| one-site algebra does not itself give cross-site CAR | current JW and statistics notes explicitly separate tensor/JW inputs from Qubit | hard-premise warning, not yet a campaign no-go | retained physical composition/graded-locality bridge |",
+              "retired": null
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "no_go_row_universe_count": 439,
+          "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+          "none_found_reason": null,
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [],
+        "demotion": null,
+        "failures": [],
+        "narrowed_claim_scope": null,
+        "next_route": null,
+        "prior_claim_scope": null,
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 62,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 62
+      },
+      "verdict": "audited_clean",
+      "verdict_rationale": "K1\u2013K3 follow from the defining Clifford relations and exact central-idempotent algebra, while K4 follows from the exhaustive Artin\u2013Wedderburn/minimal-left-ideal classification. The primary and helper code recompute the algebra, kernels, ranks, and finite-region controls exactly, yielding 62 passes with no hard-coded contested target or external comparator. The physical per-site Hilbert-space bridge is explicitly excluded, so no open dependency enters the audited scope."
+    },
+    "status": "confirmed"
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 29,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained",
+  "effective_status_reason": "self",
   "helper_runner_paths": [
     "scripts/cl3_complexification_lattice_exclusion_helper_2026_07_26.py",
     "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
   ],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
   "load_bearing_score": 25.311,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
-  "max_descendant_status": "audit_in_progress",
-  "max_descendant_status_rank": 30,
+  "load_bearing_step": "Each simple summand M\u2082(C) has a unique irreducible left module of complex dimension 2; hence every faithful irreducible finite-dimensional complex representation of real Cl(3,0) has dimension 2.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "unknown",
+  "max_descendant_status_rank": 70,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": {
+    "N1_alternative_routes": [
+      {
+        "attempt": "test whether an omitted central block or proper ideal supports another simple-module dimension",
+        "disposition": "CLOSED",
+        "evidence_locator": "mechanism_class 1: route_id=central_split",
+        "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "solve the complete center and central-idempotent algebra, then isolate matrix units in each summand",
+        "outcome": "E1 exhausts exactly two simple M2(C) summands",
+        "prior_witness_id": null,
+        "route_class": "algebraic_rearrangement",
+        "route_id": "central_split"
+      },
+      {
+        "attempt": "test alternate irreducible modules or carrier dimensions within either M2(C) block",
+        "disposition": "CLOSED",
+        "evidence_locator": "mechanism_class 2: route_id=module_carriers",
+        "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "classify every minimal left ideal in both central sectors",
+        "outcome": "E2 finds one 2-dimensional simple-module class per sector",
+        "prior_witness_id": null,
+        "route_class": "alternate_carrier_or_sector",
+        "route_id": "module_carriers"
+      },
+      {
+        "attempt": "search every one-dimensional scalar candidate for a Clifford character",
+        "disposition": "CLOSED",
+        "evidence_locator": "mechanism_class 3: route_id=scalar_finite_scan",
+        "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "compute the exact scalar polynomial solve, unit-ideal Groebner basis, and finite square-law scan",
+        "outcome": "E3 finds no solution and exhibits the exact contradiction",
+        "prior_witness_id": null,
+        "route_class": "numerical_or_finite_case",
+        "route_id": "scalar_finite_scan"
+      },
+      {
+        "attempt": "test whether the faithfulness wording hides an alternate full-complexification representation",
+        "disposition": "CLOSED",
+        "evidence_locator": "mechanism_class 4: route_id=faithfulness_boundary",
+        "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "compute kernels on the full complexification and at the real-algebra restriction boundary",
+        "outcome": "E4 computes the opposite summand kernels and faithful real restrictions",
+        "prior_witness_id": null,
+        "route_class": "boundary_or_initial_condition",
+        "route_id": "faithfulness_boundary"
+      },
+      {
+        "attempt": "test whether multiple lattice sites evade the one-site exclusions or change the tensor-power simple-module dimensions",
+        "disposition": "CLOSED",
+        "evidence_locator": "mechanism_class 5: route_id=finite_lattice_tensor",
+        "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "restrict finite-region tensor-algebra characters sitewise and construct the two-site tensor modules",
+        "outcome": "EL proves all finite N by tensor induction and exhausts the N=2 blocks constructively",
+        "prior_witness_id": null,
+        "route_class": "lattice_scale_or_limit",
+        "route_id": "finite_lattice_tensor"
+      }
+    ],
+    "N2_wall_independence": {
+      "collapsed_wall_set": [
+        "exhaustive irreducible-module dimension",
+        "faithfulness boundary"
+      ],
+      "evidence_locator": "=== E4: full-complexification kernel and real-algebra faithfulness boundary ===",
+      "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "pairwise_checks": [
+        {
+          "evidence_locator": "=== E2: exhaustive irreducible-module dimension ===",
+          "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "independent": true,
+          "left": "exhaustive irreducible-module dimension",
+          "left_closes_right": false,
+          "rationale": "The exhaustive irreducible-module dimension calculation fixes all simple-module sizes but does not by itself compute the faithfulness boundary; conversely, the faithfulness boundary computes kernels but does not classify every irreducible dimension.",
+          "right": "faithfulness boundary",
+          "right_closes_left": false
+        }
+      ],
+      "unresolved": [],
+      "walls": [
+        "exhaustive irreducible-module dimension",
+        "faithfulness boundary"
+      ]
+    },
+    "N3_hidden_wall_scan": {
+      "evidence_locator": "# Cl(3) Complexification Split Narrow Theorem",
+      "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "hits": [
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "faithfulness-boundary computation. Audit status remains solely an output of",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "20b9d014e0609968",
+          "occurrence_locator_sha256": "55cf8c22d429b56fdefbfdea6624a8238ff7623cff3070874e46d91b8f027292",
+          "phrase": "boundary",
+          "promoted_wall": null,
+          "rationale": "This occurrence labels a computed representation-theoretic kernel boundary and does not introduce an assumed boundary condition."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "classification, E3 scalar exclusion, and E4 faithfulness-boundary code, remain",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "869737c0bc2c50f5",
+          "occurrence_locator_sha256": "1de80c3fb1fa72c33b40b18287d148cb7d8b8d9af26923786f5b6ccdef44664d",
+          "phrase": "boundary",
+          "promoted_wall": null,
+          "rationale": "This occurrence identifies the E4 computation retained in the primary runner; it supplies no hidden premise or boundary condition."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "| Faithfulness boundary | Exclusion stress runner E4 | Both full-complexification kernels computed as the opposite summands at complex rank `4`; both restrictions to real `Cl(3,0)` have real rank `8` |",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "d3ab47b2b021b60c",
+          "occurrence_locator_sha256": "3963f8aaa280ac87def3eb3ed7158f5a94dc986c2dc00d9ee85c8d94334f2152",
+          "phrase": "boundary",
+          "promoted_wall": null,
+          "rationale": "The table row reports exact kernel and rank checks, so boundary is descriptive of a derived distinction rather than an admission."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "where every canonical resolution class (`per_element`, `per_site`,",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "a9d85561d33e2236",
+          "occurrence_locator_sha256": "9d8486c1ece8e77fb9ac0c72e83c2776b1c5fd9712469611d817b8f87cb22b43",
+          "phrase": "canonical",
+          "promoted_wall": null,
+          "rationale": "Canonical modifies the audit resolution-class vocabulary and carries no mathematical premise used to prove K1\u2013K4."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "faithful 2-dim irreps. The package convention `\u03c1_+` is a bookkeeping",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "71e7648076f3c4b9",
+          "occurrence_locator_sha256": "b798bb54f5680b2291aa68bc3a1e1b347e0567becab3bbee1746a70671f0859b",
+          "phrase": "convention",
+          "promoted_wall": null,
+          "rationale": "The convention selects only a chirality label after both faithful irreducible representations have already been derived."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "| (K4) every irreducible complex module has dimension `2` | Exclusion stress runner E2 | Both central-idempotent actions exhausted; primitive-idempotent left-ideal rank `2`, corner rank `1`, minimality, and explicit isomorphism in both summands |",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "c57c0c3fab7adeb8",
+          "occurrence_locator_sha256": "b14abe75a8654e20e74d29df43cdfc4988d1b8eafc70916639f98664652c5a4f",
+          "phrase": "primitive",
+          "promoted_wall": null,
+          "rationale": "Primitive occurs inside the technical term primitive-idempotent and does not invoke an approved primitive or hidden axiom."
+        }
+      ],
+      "none_found_reason": null,
+      "scan_scope": "Authenticated hidden-wall phrases in the audited source were checked; accepted framework-premise paths were omitted as directed, and there are no ordinary one-hop authorities.",
+      "scanned_evidence_paths": [
+        "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "unresolved": []
+    },
+    "N4_residual_matching": {
+      "evidence_locator": "None load-bearing.",
+      "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "none_found_reason": "All five N1 routes were attempted on current-cycle live execution evidence; none was marked RULED OUT BY PRIOR, and the packet supplies no one-hop authority residual to match.",
+      "scan_scope": "The source's zero-authority declaration and all N1 honesty markers were checked for prior-witness residual obligations.",
+      "scanned_evidence_paths": [],
+      "unresolved": [],
+      "witnesses": []
+    },
+    "N5_rhetoric_audit": {
+      "evidence_locator": "Cl(3)-irrep does not exist. The Artin-Wedderburn classification above,",
+      "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "none_found_reason": null,
+      "scan_scope": "The authenticated substantive negative phrase in the source was checked against all five live resolution classes.",
+      "scanned_evidence_paths": [
+        "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "statements": [
+        {
+          "evidence_locator": "Cl(3)-irrep does not exist. The Artin-Wedderburn classification above,",
+          "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "4ae1880e5e3890d1",
+          "occurrence_locator_sha256": "8506db733c5873fd9feeb128440344bc12bf8ab47845cbcaebc8805c17c8b65b",
+          "phrase": "does not",
+          "resolution_classes_checked": [
+            "per_element",
+            "per_site",
+            "per_mode",
+            "per_block",
+            "lattice_wide"
+          ],
+          "resolution_evidence_locator": "NEGATIVE STATEMENT 1: no faithful one-dimensional complex representation of Cl(3,0) exists",
+          "resolution_evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "tested_resolutions": [
+            "per_element: [EXECUTED] each generator pair (x_i, x_j), i != j, already forces the contradiction x_i x_j = -x_j x_i with commuting scalars; the scalar Clifford system has no solution element-by-element",
+            "per_site: [EXECUTED] Cl(3,0) is the one-site real algebra; the full scalar system over one site was solved exhaustively and is inconsistent",
+            "per_mode: [EXECUTED] every irreducible module (mode) restricts to one central summand and has computed complex dimension 2, never 1",
+            "per_block: [EXECUTED] both central-idempotent blocks e_+A and e_-A carry only the 2-dimensional simple module; no block admits a 1-dimensional faithful action",
+            "lattice_wide: [EXECUTED] for every nonempty finite N-site tensor algebra, a unital one-dimensional representation restricts to a forbidden one-site scalar character; the N=2 and N=3 joint systems were also solved explicitly with no solutions"
+          ],
+          "untested_resolutions": []
+        }
+      ],
+      "unresolved": []
+    },
+    "N6_partial_closure_scan": {
+      "candidates": [
+        {
+          "addressed": true,
+          "affected_wall": "exhaustive irreducible-module dimension",
+          "candidate_id": "approved_primitive:minimal_axioms",
+          "closure_mechanism": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-2 This candidate could touch the module-size question only by re-scoping it to the physical Qubit axiom; it does not independently prove the abstract Cl(3,0) classification from the defining relations.",
+          "could_close_wall": false,
+          "disposition": "exhaustive irreducible-module dimension remains independently closed by the abstract center, matrix-unit, and minimal-left-ideal calculations, so the physical Qubit premise is unnecessary and out of scope.",
+          "evidence_locator": "approved_primitive:minimal_axioms",
+          "evidence_path": "audit-packet://partial-closure-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "indexed_basis": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-2",
+          "kind": "approved_primitive"
+        },
+        {
+          "addressed": true,
+          "affected_wall": "faithfulness boundary",
+          "candidate_id": "claim_reframe:docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
+          "closure_mechanism": "- [CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) \u2014 establishes `Cl(3,0) \u2297_\u211d \u2102 \u2245 M_2(\u2102) \u2295 M_2(\u2102)` (\u00a7(K3); Step 3 of this note's U1\u2013U3 derivation) and the two-dim irrep dimensional readout (\u00a7(K4); load-bearing for U2: every faithful complex irreducible  This candidate restates the audited theorem as load-bearing content for a broader parent, so it cannot independently close the wall without circularity.",
+          "could_close_wall": false,
+          "disposition": "faithfulness boundary is closed here by direct kernel and real-rank calculations; the broader parent is a downstream consumer and supplies no independent premise.",
+          "evidence_locator": "claim_reframe:docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
+          "evidence_path": "audit-packet://partial-closure-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "indexed_basis": "- [CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) \u2014 establishes `Cl(3,0) \u2297_\u211d \u2102 \u2245 M_2(\u2102) \u2295 M_2(\u2102)` (\u00a7(K3); Step 3 of this note's U1\u2013U3 derivation) and the two-dim irrep dimensional readout (\u00a7(K4); load-bearing for U2: every faithful complex irreducible ",
+          "kind": "definition_refactor"
+        }
+      ],
+      "evidence_locator": "no_go_partial_closure_index_v1",
+      "evidence_path": "audit-packet://partial-closure-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "none_found_reason": null,
+      "premise_classes_checked": [
+        "axiom_or_approved_primitive",
+        "open_gate",
+        "convention_not_accepted",
+        "definition_or_scope_reframe"
+      ],
+      "scan_scope": "The supplied foundation primitives, open obligations, convention/definition records, and scope reframes were checked for candidates capable of closing either abstract-algebra wall.",
+      "unresolved": []
+    },
+    "N7_steelman": {
+      "argument": "mechanism_class 4: route_id=faithfulness_boundary route_class=boundary_or_initial_condition mechanism=compute kernels on the full complexification and at the real-algebra restriction boundary; attempt=test whether the faithfulness wording hides an alternate full-complexification representation; outcome=E4 computes the opposite summand kernels and faithful real restrictions; honesty_marker=ATTEMPTED disposition=CLOSED",
+      "evidence_locator": "mechanism_class 4: route_id=faithfulness_boundary",
+      "evidence_path": "audit-packet://runner-stdout/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "resolution": "N7_STEELMAN_RESOLUTION wall=irreducible complexified A-module faithfulness boundary; steelman=rho_plus_direct_sum_rho_minus; individual_kernel_dim_complex=4; combined_complex_rank=8; faithful=true; reducible=true; invariant_summand_dims_complex=2,2; conclusion=faithfulness_does_not_recover_irreducibility",
+      "resolution_evidence_locator": "N7_STEELMAN_RESOLUTION wall=irreducible complexified A-module faithfulness boundary",
+      "resolution_evidence_path": "audit-packet://runner-stdout-independent/cl3_complexification_split_narrow_theorem_note_2026-05-10/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17-1d53994169150908",
+      "resolved": true,
+      "route_id": "faithfulness_boundary"
+    },
+    "N8_cross_cycle_echo": {
+      "echoes": [
+        {
+          "addressed": true,
+          "applicable": false,
+          "candidate_id": "similar_negative_boundary:planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+          "disposition": "| packet selector / representation descent | no; the proof grants `P_A` and the descent still fails | no; changing to a spinor action does not select `P_A` among substrate packets | yes | This concerns selection of a physical substrate packet, whereas the audited scope is only the abstract Cl(3,0) algebra and its modules.",
+          "evidence_locator": "similar_negative_boundary:planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+          "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "mechanism": "| packet selector / representation descent | no; the proof grants `P_A` and the descent still fails | no; changing to a spinor action does not select `P_A` among substrate packets | yes |",
+          "retired": null
+        },
+        {
+          "addressed": true,
+          "applicable": false,
+          "candidate_id": "repo_negative_scan:docs/CHARGED_LEPTON_Y_TAU_WARD_STRUCTURAL_ANCHOR_REQUIREMENTS_POSITIVE_THEOREM_NOTE_2026-05-17.md",
+          "disposition": "no-go \u00a72: physical `Cl(3)` local algebra on the `Z\u00b3` spatial substrate This echo concerns a charged-lepton physical realization and does not challenge the defining-relation proof for the abstract algebra.",
+          "evidence_locator": "repo_negative_scan:docs/CHARGED_LEPTON_Y_TAU_WARD_STRUCTURAL_ANCHOR_REQUIREMENTS_POSITIVE_THEOREM_NOTE_2026-05-17.md",
+          "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "mechanism": "no-go \u00a72: physical `Cl(3)` local algebra on the `Z\u00b3` spatial substrate",
+          "retired": null
+        },
+        {
+          "addressed": true,
+          "applicable": false,
+          "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+          "disposition": "| canonical exterior Clifford action | wedge plus contraction realizes `Cl_4` on all 16 dimensions but maps degree one to degrees zero and two | it does not preserve `P_A`; selecting an irreducible copy is a commutant choice | This mechanism concerns Cl\u2084 carrier selection and preservation of a physical packet, not the exhaustive Cl(3,0) simple-module classification.",
+          "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+          "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "mechanism": "| canonical exterior Clifford action | wedge plus contraction realizes `Cl_4` on all 16 dimensions but maps degree one to degrees zero and two | it does not preserve `P_A`; selecting an irreducible copy is a commutant choice |",
+          "retired": null
+        },
+        {
+          "addressed": true,
+          "applicable": false,
+          "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-carrier-retirement-20260717/NO_GO_LEDGER.md",
+          "disposition": "| one-site algebra does not itself give cross-site CAR | current JW and statistics notes explicitly separate tensor/JW inputs from Qubit | hard-premise warning, not yet a campaign no-go | retained physical composition/graded-locality bridge | This is a cross-site CAR and physical-composition warning explicitly excluded from the present one-site abstract-algebra theorem.",
+          "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-carrier-retirement-20260717/NO_GO_LEDGER.md",
+          "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "mechanism": "| one-site algebra does not itself give cross-site CAR | current JW and statistics notes explicitly separate tensor/JW inputs from Qubit | hard-premise warning, not yet a campaign no-go | retained physical composition/graded-locality bridge |",
+          "retired": null
+        }
+      ],
+      "evidence_locator": "no_go_cross_cycle_index_v1",
+      "evidence_path": "audit-packet://cross-cycle-index/cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "no_go_row_universe_count": 439,
+      "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+      "none_found_reason": null,
+      "packet_complete": true,
+      "unresolved": []
+    },
+    "corrected_wall_set": [],
+    "demotion": null,
+    "failures": [],
+    "narrowed_claim_scope": null,
+    "next_route": null,
+    "prior_claim_scope": null,
+    "required": true,
+    "status": "PASS"
+  },
   "note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
   "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -8535,14 +9243,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 62,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 62
   },
   "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
   "title": "Cl(3) Complexification Split Narrow Theorem",
   "transitive_descendants": 1796,
-  "verdict_rationale": null
+  "verdict_rationale": "K1\u2013K3 follow from the defining Clifford relations and exact central-idempotent algebra, while K4 follows from the exhaustive Artin\u2013Wedderburn/minimal-left-ideal classification. The primary and helper code recompute the algebra, kernels, ranks, and finite-region controls exactly, yielding 62 passes with no hard-coded contested target or external comparator. The physical per-site Hilbert-space bridge is explicitly excluded, so no open dependency enters the audited scope."
 }

@@ -18,7 +18,9 @@ worktrees:
   c5-clocks: blockT1 SHIPPED as PR #5925 — within-key priced negative;
     cross-key time-translation law 632/632; periods = whole orbits
   c5-census: blockN1 SHIPPED as PR #5921 — general-n census law
-  c5-g2: gravity axiom-up G2 (Cycle 871, source-action bridge pricing) — running
+  c5-g2: blockG2 SHIPPED as PR #5926 — bridge free dim = 1 exactly (forced
+    additivity/locality/uniformity); Gate-B residual = the same scalar as an
+    exact gauge group; obligation map (5 clauses strictly stronger)
   c5-g3: gravity axiom-up G3 (Cycle 872, sigma-linear admissibility) — running
   c5-g4: gravity axiom-up G4 (Cycle 873, tracelessness provenance) — running
   c5-form: queue 2b reframed (Cycle 874, copy-redundancy CONTENT robustness,

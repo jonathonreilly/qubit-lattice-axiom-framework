@@ -1,5 +1,20 @@
 # Campaign 5 review history — toe-time-expansion-20260802
 
+## Cycle 871 — source-action bridge pricing (blockG2, PR #5926) — 2026-08-03
+
+- Worker: Claude Opus 5 (substitution disclosed). Supervisor review:
+  independently verified the structural route (count-once triangular
+  elimination of every multi-site mask to singletons + translation-orbit
+  identification => free dim = orbit count = 1 on torus patches);
+  CERT-A quote byte-recovery 24/24 against pins; stabilizer group
+  axioms machine-verified; obligation-map dims replayed as pure
+  functions. Scope disclosure honest (retention-map artifacts not
+  in-tree on the branch; no rows fabricated).
+- Checker mutation harness live (4 mutation classes each flip it).
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Cluster-cap: gravity family now at 2 PRs (#5923, #5926) — the
+  evaluator brief is REQUIRED before the 3rd gravity-family PR (G3/G4).
+
 ## Cycle 869 — local-clock relation (blockT1, PR #5925) — 2026-08-03
 
 - Worker: Claude Opus 5 (substitution disclosed). Supervisor review:

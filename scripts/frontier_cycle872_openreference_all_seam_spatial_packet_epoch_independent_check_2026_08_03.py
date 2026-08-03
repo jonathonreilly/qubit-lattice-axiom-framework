@@ -54,7 +54,7 @@ import frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25 as C704
 PRIMARY_MODULE = "frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03"
 NOTE = "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md"
 DEFAULT_RECEIPT = PACKAGE_ROOT / "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json"
-EXPECTED_NOTE_SHA256 = "f8ef1a6951f9fdc62cfaa70c73b279d57ffd1e855d3c21c3cf1178270c1d2dd9"
+EXPECTED_NOTE_SHA256 = "dd218e18d3a24506b11db9fdbad909f899187eeda5bf579a2b1a984afd10c8f7"
 EXPECTED_INPUT_SHA256 = {
     "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
     "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",

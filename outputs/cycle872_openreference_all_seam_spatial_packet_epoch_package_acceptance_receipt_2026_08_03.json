@@ -9,15 +9,27 @@
       "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py",
       "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json",
       "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
-      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json"
+      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json",
+      "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py",
+      "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py",
+      "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py",
+      "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py",
+      "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py",
+      "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py"
     ],
     "audit_input_sha256": {
-      "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md": "f8ef1a6951f9fdc62cfaa70c73b279d57ffd1e855d3c21c3cf1178270c1d2dd9",
-      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json": "67183c686d0c5cb0bd33039522b8564b6b0317ea57f185adc50ced60f9be44c7",
-      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json": "080953c2726e1db2bc423ef32360bef097e6f48666b589cbf508e73ea4c6228a",
-      "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py": "39f777c22707a6bba92b07367e5fc9ec945f55cd72f5df85148a52b915de757f",
-      "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_acceptance_2026_08_03.py": "c5bb61de821b82374449945e7477b66334fd1c594d777f60d811c83392fb945a",
-      "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py": "f73e1a2c19e5fc50b43228582af8aa8ad1a628c23692e201b0629660ef2c91e2"
+      "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md": "dd218e18d3a24506b11db9fdbad909f899187eeda5bf579a2b1a984afd10c8f7",
+      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json": "b1007ebffa91a8433e86cf4488bddce4b7c140c03ef40b33987baf9a5f2ba202",
+      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json": "604263a745e50005348ed62fc841520daa6d60b9bb88484240faf219d901058f",
+      "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py": "4dd5ae62e9573f0c3fe84d49f2e379b3ccd2fcf12226868d61d261618f2740d7",
+      "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py": "b26fc999db1e1f0bda9bfcb885fd0ab4f8497cd9fe8bfb9fd2d5fba4522eca34",
+      "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py": "c1b32ef8e2a870128b7081a88b920b85c84123d04f98a165bfc7225dcfc716e4",
+      "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_acceptance_2026_08_03.py": "2848b978f189804f7431868660f48a7e94ffe3a1cf0061f86c5255d0be012bdf",
+      "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py": "2350243e16aeb39a6a0f20b9a036468c82e541477e206566664c1103fa145523",
+      "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py": "7b1b0e6f767fdd6175935c5afdd00965c3f03bceb0d6051f01037005812df518",
+      "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py": "571a3ddb16880a6e73115a2c50214aa046a268f3b8bf9fe0af889bcdfceb4183",
+      "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py": "7303cad27a7c65c710f65e75aabdb49195088ad470c51229d853b4c032ae08fa",
+      "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py": "46c2fab4bf9ebc71880c4329d15f7847d064f7ea570bbc552fdf3376ae5c600a"
     },
     "audit_timeout_sec": 1500,
     "child_timeout_sec": 180,
@@ -27,7 +39,13 @@
       "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py",
       "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json",
       "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
-      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json"
+      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json",
+      "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py",
+      "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py",
+      "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py",
+      "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py",
+      "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py",
+      "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py"
     ],
     "duplicate_inputs": 0,
     "missing_inputs": [],
@@ -531,9 +549,15 @@
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json",
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_package_acceptance_receipt_2026_08_03.json",
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json",
+    "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py",
     "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py",
     "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_acceptance_2026_08_03.py",
-    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py"
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py"
   ],
   "failures": [],
   "firewall": "no time/tick/occurrence/Event/Record/Born/source/gravity derivation; causal orientation, couplings, scales, and later bank renewal remain supplied",
@@ -566,7 +590,13 @@
       "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py",
       "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
       "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json",
-      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json"
+      "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json",
+      "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py",
+      "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py",
+      "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py",
+      "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py",
+      "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py",
+      "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py"
     ],
     "unavoidable_self_reference_exclusions": [
       "acceptance source cannot hard-code its own final content hash",
@@ -578,19 +608,85 @@
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json",
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_package_acceptance_receipt_2026_08_03.json",
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json",
+    "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py",
     "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py",
     "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_acceptance_2026_08_03.py",
-    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py"
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py"
   ],
   "package_sha256": {
-    "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md": "f8ef1a6951f9fdc62cfaa70c73b279d57ffd1e855d3c21c3cf1178270c1d2dd9",
-    "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json": "67183c686d0c5cb0bd33039522b8564b6b0317ea57f185adc50ced60f9be44c7",
-    "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json": "080953c2726e1db2bc423ef32360bef097e6f48666b589cbf508e73ea4c6228a",
-    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py": "39f777c22707a6bba92b07367e5fc9ec945f55cd72f5df85148a52b915de757f",
-    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py": "f73e1a2c19e5fc50b43228582af8aa8ad1a628c23692e201b0629660ef2c91e2"
+    "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md": "dd218e18d3a24506b11db9fdbad909f899187eeda5bf579a2b1a984afd10c8f7",
+    "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json": "b1007ebffa91a8433e86cf4488bddce4b7c140c03ef40b33987baf9a5f2ba202",
+    "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json": "604263a745e50005348ed62fc841520daa6d60b9bb88484240faf219d901058f",
+    "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py": "4dd5ae62e9573f0c3fe84d49f2e379b3ccd2fcf12226868d61d261618f2740d7",
+    "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py": "b26fc999db1e1f0bda9bfcb885fd0ab4f8497cd9fe8bfb9fd2d5fba4522eca34",
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py": "c1b32ef8e2a870128b7081a88b920b85c84123d04f98a165bfc7225dcfc716e4",
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py": "2350243e16aeb39a6a0f20b9a036468c82e541477e206566664c1103fa145523",
+    "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py": "7b1b0e6f767fdd6175935c5afdd00965c3f03bceb0d6051f01037005812df518",
+    "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py": "571a3ddb16880a6e73115a2c50214aa046a268f3b8bf9fe0af889bcdfceb4183",
+    "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py": "7303cad27a7c65c710f65e75aabdb49195088ad470c51229d853b4c032ae08fa",
+    "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py": "46c2fab4bf9ebc71880c4329d15f7847d064f7ea570bbc552fdf3376ae5c600a"
   },
-  "runner_sha256": "c5bb61de821b82374449945e7477b66334fd1c594d777f60d811c83392fb945a",
+  "runner_sha256": "2848b978f189804f7431868660f48a7e94ffe3a1cf0061f86c5255d0be012bdf",
   "schema": "cycle872-all-seam-spatial-packet-package-acceptance-v1",
+  "source_views": {
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py": {
+      "byte_identical": true,
+      "contiguous": true,
+      "line_range": [
+        1,
+        1940
+      ],
+      "mutation_controls": {
+        "actual_child_mutation_detected": true,
+        "hard_pin_view_mutation_detected": true,
+        "malformed_prefix_detected": true,
+        "ordinal_mutation_detected": true,
+        "payload_mutation_detected": true
+      },
+      "part_count": 4,
+      "source_bytes": 89043,
+      "source_final_newline": true,
+      "source_sha256": "c1b32ef8e2a870128b7081a88b920b85c84123d04f98a165bfc7225dcfc716e4",
+      "target_source": "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py",
+      "total_source_lines": 1940,
+      "view_paths": [
+        "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py",
+        "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py",
+        "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py",
+        "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py"
+      ]
+    },
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py": {
+      "byte_identical": true,
+      "contiguous": true,
+      "line_range": [
+        1,
+        1064
+      ],
+      "mutation_controls": {
+        "actual_child_mutation_detected": true,
+        "hard_pin_view_mutation_detected": true,
+        "malformed_prefix_detected": true,
+        "ordinal_mutation_detected": true,
+        "payload_mutation_detected": true
+      },
+      "part_count": 2,
+      "source_bytes": 48427,
+      "source_final_newline": true,
+      "source_sha256": "2350243e16aeb39a6a0f20b9a036468c82e541477e206566664c1103fa145523",
+      "target_source": "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
+      "total_source_lines": 1064,
+      "view_paths": [
+        "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py",
+        "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py"
+      ]
+    }
+  },
   "status": "pass",
   "upstream_sha256": {
     "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",

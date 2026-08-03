@@ -19,6 +19,20 @@ import site
 import subprocess
 import sys
 import tempfile
+from typing import TYPE_CHECKING
+
+
+# These imports are intentionally type-check-only.  Each module is a readable,
+# byte-exact source view with no imports of its own, so the restricted audit
+# packet receives the complete child sources without executing or recursively
+# importing the children in this acceptance process.
+if TYPE_CHECKING:
+    import frontier_cycle872_independent_source_audit_view_part1_2026_08_03  # noqa: F401
+    import frontier_cycle872_independent_source_audit_view_part2_2026_08_03  # noqa: F401
+    import frontier_cycle872_primary_source_audit_view_part1_2026_08_03  # noqa: F401
+    import frontier_cycle872_primary_source_audit_view_part2_2026_08_03  # noqa: F401
+    import frontier_cycle872_primary_source_audit_view_part3_2026_08_03  # noqa: F401
+    import frontier_cycle872_primary_source_audit_view_part4_2026_08_03  # noqa: F401
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
@@ -29,6 +43,20 @@ PRIMARY_RECEIPT = "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_
 INDEPENDENT_RECEIPT = "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json"
 ACCEPTANCE_RECEIPT = "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_package_acceptance_receipt_2026_08_03.json"
 NOTE = "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md"
+PRIMARY_SOURCE_VIEWS = (
+    "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py",
+)
+INDEPENDENT_SOURCE_VIEWS = (
+    "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py",
+)
+SOURCE_VIEW_SETS = {
+    PRIMARY: PRIMARY_SOURCE_VIEWS,
+    INDEPENDENT: INDEPENDENT_SOURCE_VIEWS,
+}
 DEFAULT_RECEIPT = PACKAGE_ROOT / ACCEPTANCE_RECEIPT
 AUDIT_TIMEOUT_SEC = 1500
 CHILD_TIMEOUT_SEC = 180
@@ -39,6 +67,12 @@ AUDIT_INPUT_PATHS = (
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json",
     "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json",
+    "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py",
 )
 DECLARED_INPUT_PATHS = (
     "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md",
@@ -47,18 +81,31 @@ DECLARED_INPUT_PATHS = (
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json",
     "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
     "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json",
+    "scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py",
+    "scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py",
+    "scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py",
+    "scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py",
 )
 EXPECTED_MANIFEST = tuple(sorted((
     NOTE, PRIMARY, INDEPENDENT, ACCEPTANCE,
     PRIMARY_RECEIPT, INDEPENDENT_RECEIPT, ACCEPTANCE_RECEIPT,
+    *PRIMARY_SOURCE_VIEWS, *INDEPENDENT_SOURCE_VIEWS,
 )))
 
 EXPECTED_PACKAGE_SHA256 = {
-    NOTE: "f8ef1a6951f9fdc62cfaa70c73b279d57ffd1e855d3c21c3cf1178270c1d2dd9",
-    PRIMARY: "39f777c22707a6bba92b07367e5fc9ec945f55cd72f5df85148a52b915de757f",
-    INDEPENDENT: "f73e1a2c19e5fc50b43228582af8aa8ad1a628c23692e201b0629660ef2c91e2",
-    PRIMARY_RECEIPT: "080953c2726e1db2bc423ef32360bef097e6f48666b589cbf508e73ea4c6228a",
-    INDEPENDENT_RECEIPT: "67183c686d0c5cb0bd33039522b8564b6b0317ea57f185adc50ced60f9be44c7",
+    NOTE: "dd218e18d3a24506b11db9fdbad909f899187eeda5bf579a2b1a984afd10c8f7",
+    PRIMARY: "c1b32ef8e2a870128b7081a88b920b85c84123d04f98a165bfc7225dcfc716e4",
+    INDEPENDENT: "2350243e16aeb39a6a0f20b9a036468c82e541477e206566664c1103fa145523",
+    PRIMARY_RECEIPT: "604263a745e50005348ed62fc841520daa6d60b9bb88484240faf219d901058f",
+    INDEPENDENT_RECEIPT: "b1007ebffa91a8433e86cf4488bddce4b7c140c03ef40b33987baf9a5f2ba202",
+    PRIMARY_SOURCE_VIEWS[0]: "7b1b0e6f767fdd6175935c5afdd00965c3f03bceb0d6051f01037005812df518",
+    PRIMARY_SOURCE_VIEWS[1]: "571a3ddb16880a6e73115a2c50214aa046a268f3b8bf9fe0af889bcdfceb4183",
+    PRIMARY_SOURCE_VIEWS[2]: "7303cad27a7c65c710f65e75aabdb49195088ad470c51229d853b4c032ae08fa",
+    PRIMARY_SOURCE_VIEWS[3]: "46c2fab4bf9ebc71880c4329d15f7847d064f7ea570bbc552fdf3376ae5c600a",
+    INDEPENDENT_SOURCE_VIEWS[0]: "4dd5ae62e9573f0c3fe84d49f2e379b3ccd2fcf12226868d61d261618f2740d7",
+    INDEPENDENT_SOURCE_VIEWS[1]: "b26fc999db1e1f0bda9bfcb885fd0ab4f8497cd9fe8bfb9fd2d5fba4522eca34",
 }
 PRIMARY_MARKER = "CYCLE872_ALL_SEAM_SPATIAL_PACKET_EPOCH_PASS"
 INDEPENDENT_MARKER = "CYCLE872_ALL_SEAM_SPATIAL_PACKET_INDEPENDENT_PASS"
@@ -95,15 +142,160 @@ def discover_source_root(explicit: Path | None = None) -> Path:
     )
 
 
-def literal_assignment(path: Path, name: str):
-    tree = ast.parse(path.read_text(encoding="utf-8"))
+def literal_assignment_bytes(source: bytes, name: str):
+    tree = ast.parse(source.decode("utf-8", errors="strict"))
     for node in tree.body:
         if not isinstance(node, (ast.Assign, ast.AnnAssign)):
             continue
         targets = node.targets if isinstance(node, ast.Assign) else (node.target,)
         if any(isinstance(target, ast.Name) and target.id == name for target in targets):
             return ast.literal_eval(node.value)
-    raise KeyError((path, name))
+    raise KeyError(name)
+
+
+def literal_assignment(path: Path, name: str):
+    return literal_assignment_bytes(path.read_bytes(), name)
+
+
+def parse_source_view(raw: bytes, label: str) -> dict[str, object]:
+    """Parse one readable source mirror without normalizing any source byte."""
+    metadata = {
+        key: literal_assignment_bytes(raw, key)
+        for key in (
+            "TARGET_SOURCE", "PART_ORDINAL", "PART_COUNT", "FIRST_SOURCE_LINE",
+            "LAST_SOURCE_LINE", "TOTAL_SOURCE_LINES", "SOURCE_FINAL_NEWLINE",
+            "EXPECTED_SOURCE_SHA256",
+        )
+    }
+    prefix = b"# C872SRC "
+    rows: list[tuple[int, bytes]] = []
+    for line in raw.splitlines(keepends=True):
+        if line.startswith(prefix):
+            if not line.endswith(b"\n") or line.endswith(b"\r\n"):
+                raise ValueError(f"{label}: payload newline")
+            number_raw, separator, payload = line[len(prefix):].partition(b"|")
+            if separator != b"|" or len(number_raw) != 6 or not number_raw.isdigit():
+                raise ValueError(f"{label}: payload prefix")
+            rows.append((int(number_raw), payload[:-1]))
+        elif line.startswith(b"# C872SRC"):
+            raise ValueError(f"{label}: malformed payload prefix")
+    first = int(metadata["FIRST_SOURCE_LINE"])
+    last = int(metadata["LAST_SOURCE_LINE"])
+    expected_numbers = list(range(first, last + 1))
+    if [number for number, _ in rows] != expected_numbers:
+        raise ValueError(f"{label}: noncontiguous payload rows")
+    metadata["rows"] = rows
+    metadata["view_path"] = label
+    return metadata
+
+
+def validate_source_view_set(
+    target: str,
+    view_paths: tuple[str, ...],
+    *,
+    raw_overrides: dict[str, bytes] | None = None,
+    actual_override: bytes | None = None,
+    enforce_view_hashes: bool = True,
+) -> dict[str, object]:
+    """Reconstruct one child source exactly from ordered, fixed view parts."""
+    raw_overrides = raw_overrides or {}
+    parts = []
+    expected_next = 1
+    total_lines = None
+    final_newline = None
+    expected_source_sha = EXPECTED_PACKAGE_SHA256[target]
+    for ordinal, view_path in enumerate(view_paths, 1):
+        raw = raw_overrides.get(view_path, (PACKAGE_ROOT / view_path).read_bytes())
+        if enforce_view_hashes and sha256(raw).hexdigest() != EXPECTED_PACKAGE_SHA256[view_path]:
+            raise ValueError(f"{view_path}: view hash")
+        part = parse_source_view(raw, view_path)
+        if part["TARGET_SOURCE"] != target:
+            raise ValueError(f"{view_path}: target")
+        if part["PART_ORDINAL"] != ordinal or part["PART_COUNT"] != len(view_paths):
+            raise ValueError(f"{view_path}: ordinal")
+        if part["FIRST_SOURCE_LINE"] != expected_next:
+            raise ValueError(f"{view_path}: gap or overlap")
+        if part["EXPECTED_SOURCE_SHA256"] != expected_source_sha:
+            raise ValueError(f"{view_path}: source hash declaration")
+        if total_lines is None:
+            total_lines = part["TOTAL_SOURCE_LINES"]
+            final_newline = part["SOURCE_FINAL_NEWLINE"]
+        if (
+            part["TOTAL_SOURCE_LINES"] != total_lines
+            or part["SOURCE_FINAL_NEWLINE"] != final_newline
+        ):
+            raise ValueError(f"{view_path}: inconsistent source metadata")
+        expected_next = int(part["LAST_SOURCE_LINE"]) + 1
+        parts.append(part)
+    if total_lines is None or expected_next != int(total_lines) + 1:
+        raise ValueError(f"{target}: incomplete source range")
+    numbered_rows = [row for part in parts for row in part["rows"]]
+    numbers = [number for number, _ in numbered_rows]
+    if numbers != list(range(1, int(total_lines) + 1)):
+        raise ValueError(f"{target}: global line range")
+    reconstructed = b"".join(
+        payload
+        + (b"\n" if number < int(total_lines) or bool(final_newline) else b"")
+        for number, payload in numbered_rows
+    )
+    actual = actual_override if actual_override is not None else (PACKAGE_ROOT / target).read_bytes()
+    if reconstructed != actual:
+        raise ValueError(f"{target}: reconstructed bytes")
+    if sha256(actual).hexdigest() != expected_source_sha:
+        raise ValueError(f"{target}: literal source hash")
+    return {
+        "target_source": target,
+        "view_paths": view_paths,
+        "part_count": len(parts),
+        "total_source_lines": total_lines,
+        "source_final_newline": final_newline,
+        "source_bytes": len(actual),
+        "source_sha256": sha256(actual).hexdigest(),
+        "line_range": (numbers[0], numbers[-1]),
+        "contiguous": len(numbers) == len(set(numbers)) == int(total_lines),
+        "byte_identical": reconstructed == actual,
+    }
+
+
+def source_view_certificate(target: str, view_paths: tuple[str, ...]) -> dict[str, object]:
+    certificate = validate_source_view_set(target, view_paths)
+    first_path = view_paths[0]
+    original = (PACKAGE_ROOT / first_path).read_bytes()
+
+    def rejected(raw: bytes, *, enforce_view_hashes: bool) -> bool:
+        try:
+            validate_source_view_set(
+                target,
+                view_paths,
+                raw_overrides={first_path: raw},
+                enforce_view_hashes=enforce_view_hashes,
+            )
+        except (KeyError, SyntaxError, UnicodeDecodeError, ValueError):
+            return True
+        return False
+
+    prefix_mutation = original.replace(b"# C872SRC ", b"# C872SRX ", 1)
+    ordinal_mutation = original.replace(b"PART_ORDINAL = 1\n", b"PART_ORDINAL = 9\n", 1)
+    first_payload_end = original.index(b"\n", original.index(b"# C872SRC "))
+    payload_mutation = original[:first_payload_end] + b"X" + original[first_payload_end:]
+    try:
+        validate_source_view_set(
+            target,
+            view_paths,
+            actual_override=(PACKAGE_ROOT / target).read_bytes() + b" ",
+        )
+    except ValueError:
+        child_mutation_detected = True
+    else:
+        child_mutation_detected = False
+    certificate["mutation_controls"] = {
+        "hard_pin_view_mutation_detected": rejected(payload_mutation, enforce_view_hashes=True),
+        "malformed_prefix_detected": rejected(prefix_mutation, enforce_view_hashes=False),
+        "ordinal_mutation_detected": rejected(ordinal_mutation, enforce_view_hashes=False),
+        "payload_mutation_detected": rejected(payload_mutation, enforce_view_hashes=False),
+        "actual_child_mutation_detected": child_mutation_detected,
+    }
+    return certificate
 
 
 def package_manifest(root: Path = PACKAGE_ROOT) -> tuple[str, ...]:
@@ -111,7 +303,7 @@ def package_manifest(root: Path = PACKAGE_ROOT) -> tuple[str, ...]:
 
     Generated audit-ledger shards live below ``docs/audit`` and are validation
     outputs, not author-owned package files.  The package contract places all
-    seven canonical artifacts directly in ``docs``, ``scripts``, or
+    thirteen canonical artifacts directly in ``docs``, ``scripts``, or
     ``outputs``, so recurse into none of those repository subtrees.
     """
     output = []
@@ -181,7 +373,7 @@ def build_report(source_root: Path) -> dict[str, object]:
 
     observed_manifest = package_manifest()
     if observed_manifest != EXPECTED_MANIFEST:
-        failures.append("exact seven-file package manifest")
+        failures.append("exact thirteen-file package manifest")
     package_hashes = observed_hashes(PACKAGE_ROOT, EXPECTED_PACKAGE_SHA256)
     audit_input_hashes = {
         label: file_sha256(PACKAGE_ROOT / label)
@@ -224,6 +416,17 @@ def build_report(source_root: Path) -> dict[str, object]:
     for label, expected in primary_upstream_pins.items():
         if upstream_hashes[label] != expected:
             failures.append("upstream hash: " + label)
+
+    source_views: dict[str, object] = {}
+    for target, view_paths in SOURCE_VIEW_SETS.items():
+        try:
+            certificate = source_view_certificate(target, view_paths)
+        except (KeyError, SyntaxError, UnicodeDecodeError, ValueError) as error:
+            failures.append(f"source view: {target}: {error}")
+        else:
+            source_views[target] = certificate
+            if not all(certificate["mutation_controls"].values()):
+                failures.append("source view mutation controls: " + target)
 
     independent_imports = imported_modules(PACKAGE_ROOT / INDEPENDENT)
     primary_name = Path(PRIMARY).stem
@@ -552,6 +755,7 @@ def build_report(source_root: Path) -> dict[str, object]:
             "repository files are outside this package manifest"
         ),
         "package_sha256": package_hashes,
+        "source_views": source_views,
         "upstream_sha256": upstream_hashes,
         "literal_upstream_pin_count": len(primary_upstream_pins),
         "package_binding_surface": {

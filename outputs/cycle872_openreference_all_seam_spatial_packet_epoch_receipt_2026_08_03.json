@@ -602,10 +602,10 @@
     "literal_dependency_pin_count": 45,
     "missing_inputs": [],
     "pin_failures": {},
-    "runner_sha256": "39f777c22707a6bba92b07367e5fc9ec945f55cd72f5df85148a52b915de757f",
+    "runner_sha256": "c1b32ef8e2a870128b7081a88b920b85c84123d04f98a165bfc7225dcfc716e4",
     "theorem_note": "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md",
     "theorem_note_pin_failure": false,
-    "theorem_note_sha256": "f8ef1a6951f9fdc62cfaa70c73b279d57ffd1e855d3c21c3cf1178270c1d2dd9"
+    "theorem_note_sha256": "dd218e18d3a24506b11db9fdbad909f899187eeda5bf579a2b1a984afd10c8f7"
   },
   "schema": "cycle872-all-seam-spatial-packet-epoch-v1",
   "spatial_direction": {

@@ -275,7 +275,7 @@
     "wrong_side_routed_macro_sha256": "da96154459e553d0935a75782dd9e56d8eb1e6a37c8703d84b29886c7d650188"
   },
   "provenance": {
-    "checker_sha256": "f73e1a2c19e5fc50b43228582af8aa8ad1a628c23692e201b0629660ef2c91e2",
+    "checker_sha256": "2350243e16aeb39a6a0f20b9a036468c82e541477e206566664c1103fa145523",
     "dependency_surface": "complete local Python import closure plus dynamically loaded Cycle870 placement and Cycle610/611 modules",
     "input_sha256": {
       "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
@@ -326,7 +326,7 @@
     },
     "literal_dependency_pin_count": 45,
     "note_pin_failure": false,
-    "note_sha256": "f8ef1a6951f9fdc62cfaa70c73b279d57ffd1e855d3c21c3cf1178270c1d2dd9",
+    "note_sha256": "dd218e18d3a24506b11db9fdbad909f899187eeda5bf579a2b1a984afd10c8f7",
     "pin_failures": {}
   },
   "schema": "cycle872-all-seam-spatial-packet-independent-v1",

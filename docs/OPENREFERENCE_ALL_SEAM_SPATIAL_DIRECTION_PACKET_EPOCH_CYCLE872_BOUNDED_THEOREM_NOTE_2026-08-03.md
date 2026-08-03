@@ -84,17 +84,41 @@ The signed current has unit occupation weight. It is not energy, mass, charge ca
 
 Colors, factor classes, padding slots, route ordinals, packet addresses, and the update-epoch boundary are compiler structure. None is time, a tick, an occurrence, an Event, a Record, a Born history, a source, or a gravitational structure. This package does not claim autonomous recurrence.
 
+## Load-bearing theorem dependencies
+
+- [Cycle 870 recurrent physical-M2 matter compiler](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md)
+- [Cycle 871 matter-endpoint causal-interval packet](OPENREFERENCE_MATTER_ENDPOINT_CAUSAL_INTERVAL_PACKET_CYCLE871_BOUNDED_THEOREM_NOTE_2026-08-02.md)
+
+These are the direct theorem-level inputs to this construction: Cycle 870
+supplies the complete recurrent matter factor epoch, and Cycle 871 supplies
+the selected-seam endpoint/interval packet macro that is instantiated at each
+admitted seam.  The larger literal file-pin surface below records executable
+implementation provenance; it is not a substitute for these claim-graph
+dependencies and does not promote its transitive imports to direct theorem
+inputs.
+
 ## Audit surface
 
-The exact seven-file package manifest is:
+The exact thirteen-file package manifest is:
 
 - this theorem note;
 - the [primary physical-stream runner](../scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py);
 - the [independent reconstruction checker](../scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py), which does not import the primary;
 - the [cold package acceptance runner](../scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_acceptance_2026_08_03.py);
+- four readable, non-authoritative byte-exact views of the primary source ([1](../scripts/frontier_cycle872_primary_source_audit_view_part1_2026_08_03.py), [2](../scripts/frontier_cycle872_primary_source_audit_view_part2_2026_08_03.py), [3](../scripts/frontier_cycle872_primary_source_audit_view_part3_2026_08_03.py), [4](../scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py));
+- two readable, non-authoritative byte-exact views of the independent source ([1](../scripts/frontier_cycle872_independent_source_audit_view_part1_2026_08_03.py), [2](../scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py));
 - the [primary receipt](../outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json);
 - the [independent receipt](../outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json);
 - the [package acceptance receipt](../outputs/cycle872_openreference_all_seam_spatial_packet_epoch_package_acceptance_receipt_2026_08_03.json).
+
+The six source views are evidence-transport mirrors, not runners, derivations,
+or authorities.  Each row carries an absolute source-line number and its exact
+UTF-8 bytes before LF.  The acceptance runner rejects malformed prefixes,
+range gaps, overlaps, duplicate ordinals, newline or trailing-whitespace drift,
+and any byte mismatch against the two executable children and their literal
+SHA-256 pins.  This exposes the complete child sources to the restricted audit
+packet without changing dependency policy or importing their transitive
+implementation closure as new claim authorities.
 
 The acceptance runner hard-pins every non-self-referential package artifact and enforces this exact manifest. Its receipt binds the acceptance source by recording that source's hash. The acceptance source cannot hard-code its own final hash, and the acceptance receipt cannot contain its own hash, without a circular fixed-point requirement; these are the only two self-reference exclusions and are reported explicitly.
 

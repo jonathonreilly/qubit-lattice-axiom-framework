@@ -1,43 +1,201 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_date": "2026-08-03T13:10:34.777991+00:00",
+  "audit_invocation_history": [
+    "747ea550b63940ceb40fac48df70baba",
+    "b5289faa7dbe4e798f8a9e81e044dc1a"
+  ],
+  "audit_invocation_id": "b5289faa7dbe4e798f8a9e81e044dc1a",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+      "digest": "c7fcacac11967e0a614051da329d377e5d7dba4980229f429ad39ae1be38393a",
+      "judgment": {
+        "audit_date": "2026-08-03T13:10:34.777991+00:00",
+        "audit_invocation_id": "b5289faa7dbe4e798f8a9e81e044dc1a",
+        "audit_status": "audit_in_progress",
+        "auditor": "codex-audit-batch-A-20260803-e2595e06",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "The formal transfer-insertion bounds close for strictly positive Hermitian T. The note does not derive the physical local-correlator identification used in B.2-B.3, and its broader positive-semidefinite wording permits zero eigenvalues for which log(T/M_T) is not a finite self-adjoint operator.",
+        "claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.",
+        "claim_type": "bounded_theorem",
+        "claim_type_provenance": "audited_pending_cross_confirmation",
+        "cross_confirmation": {
+          "first_audit": {
+            "audit_date": "2026-08-03T13:10:34.784740+00:00",
+            "audit_invocation_id": "b5289faa7dbe4e798f8a9e81e044dc1a",
+            "auditor": "codex-audit-batch-B-20260803-fefc5ab8",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": true,
+            "chain_closure_explanation": "Within the formal transfer-insertion scope, spectral decomposition and Cauchy\u2013Schwarz prove the exponential factor, while trace-norm estimates yield the 6q_\u03b2 correction. The gap derivation and physical local-correlator identification are explicitly outside this scope.",
+            "claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.",
+            "claim_type": "bounded_theorem",
+            "decoration_parent_claim_id": null,
+            "independence": "fresh_context",
+            "load_bearing_step": "The corrected Cauchy\u2013Schwarz estimate in (B.14), together with \u2016\u03c1_\u03b2\u2212P\u2080\u2016\u2081=2q_\u03b2 and (B.16)\u2013(B.17), yields the ground-state and finite-temperature bounds (B.7) and (B.8).",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+            "notes_for_re_audit_if_any": "",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 5,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 5
+            },
+            "verdict": "audited_clean",
+            "verdict_rationale": "The spectral expansion, corrected adjoint placement, operator-norm estimate, thermal trace-distance estimate, and finite-dimensional Boltzmann bound all close by exact algebra; an independent manual check confirms their signs, factors, and normalization. The runner genuinely exercises these identities and the degenerate-top counterexample rather than importing an expected comparator. Residual risk is confined to excluded claims: construction of the canonical transfer matrix, derivation of \u0394_T>0, and identification of the formal insertion with a physical local thermal correlator."
+          },
+          "second_audit": null,
+          "status": "awaiting_second"
+        },
+        "decoration_parent_claim_id": null,
+        "independence": "cross_family",
+        "load_bearing_step": "Spectral decomposition and Cauchy-Schwarz give |\u03a3_{k\u22651}(\u03bb_k/M_T)^n\u27e80|A|k\u27e9\u27e8k|B|0\u27e9| \u2264 exp(-n\u0394_T)\u2016A\u2016\u2016B\u2016, after which trace-distance estimates add the 6q_\u03b2 correction.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [],
+        "notes_for_re_audit_if_any": "scope_too_broad: Rewrite B.2-B.3 to state only the formal transfer-insertion correlator, require T>0 rather than merely T\u22650, and add a dated downstream-hygiene line to this note's boundary so its hash re-enters the audit queue.",
+        "open_dependency_paths": [
+          "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+          "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+        ],
+        "runner_check_breakdown": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "total_pass": 5
+        },
+        "verdict_rationale": "Issue: The exact algebra proves B.6-B.8 only for the formal insertion \u27e8A T\u0303^n B\u27e9, while B.2-B.3 present it as a physical local correlator without a supplied identification theorem; the stated positive-Hermitian domain also does not exclude zero eigenvalues needed for a finite log T\u0303. Why this blocks: The abstract finite-dimensional estimate is valid, but the broader physical wording and Hamiltonian construction do not follow from the restricted inputs. Repair target: Narrow B.2-B.3 to the formal insertion with strictly positive T, or supply retained transfer-reconstruction and local-insertion authorities. Claim boundary until fixed: The spectral and q_\u03b2 bounds are valid finite-dimensional algebra only, with no canonical physical, spatial, infinite-volume, or continuum clustering conclusion."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 12.193,
+    "packet_policy_fingerprint": {
+      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "runner_hash": "370ae4055c497df85870e36357f136e8c3e63b056efb40f9c73b50c9d15517a0",
+    "science_fingerprint": {
+      "dependencies": [],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "6bf340254ec264a9b4f6b3fd93765f26f8ae8aff74f99c374690c07786a1b7fe",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "370ae4055c497df85870e36357f136e8c3e63b056efb40f9c73b50c9d15517a0"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.",
+        "claim_type": "bounded_theorem",
+        "ledger_note_hash": "6efb8b670324283b221f5d7062b39231c326b4b248ae70db60c3189913ce870a",
+        "note_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+        "note_sha256": "6efb8b670324283b221f5d7062b39231c326b4b248ae70db60c3189913ce870a"
+      }
+    },
+    "transitive_descendants": 827
+  },
+  "audit_status": "audit_in_progress",
+  "auditor": "codex-audit-batch-A-20260803-e2595e06",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": "awaiting_cross_confirmation",
+  "chain_closes": false,
+  "chain_closure_explanation": "The formal transfer-insertion bounds close for strictly positive Hermitian T. The note does not derive the physical local-correlator identification used in B.2-B.3, and its broader positive-semidefinite wording permits zero eigenvalues for which log(T/M_T) is not a finite self-adjoint operator.",
   "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-  "claim_scope": null,
+  "claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-08-03T13:10:34.784740+00:00",
+  "claim_type_provenance": "audited_pending_cross_confirmation",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-08-03T13:10:34.784740+00:00",
+      "audit_invocation_id": "b5289faa7dbe4e798f8a9e81e044dc1a",
+      "auditor": "codex-audit-batch-B-20260803-fefc5ab8",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the formal transfer-insertion scope, spectral decomposition and Cauchy\u2013Schwarz prove the exponential factor, while trace-norm estimates yield the 6q_\u03b2 correction. The gap derivation and physical local-correlator identification are explicitly outside this scope.",
+      "claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a strictly positive Hermitian transfer matrix with a unique top eigenvalue; the canonical-transfer-matrix construction, gap derivation, physical local-correlator identification, spatial clustering, and infinite-volume or continuum clustering are outside the ratified scope.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The corrected Cauchy\u2013Schwarz estimate in (B.14), together with \u2016\u03c1_\u03b2\u2212P\u2080\u2016\u2081=2q_\u03b2 and (B.16)\u2013(B.17), yields the ground-state and finite-temperature bounds (B.7) and (B.8).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict": "audited_clean",
+      "verdict_rationale": "The spectral expansion, corrected adjoint placement, operator-norm estimate, thermal trace-distance estimate, and finite-dimensional Boltzmann bound all close by exact algebra; an independent manual check confirms their signs, factors, and normalization. The runner genuinely exercises these identities and the degenerate-top counterexample rather than importing an expected comparator. Residual risk is confined to excluded claims: construction of the canonical transfer matrix, derivation of \u0394_T>0, and identification of the formal insertion with a physical local thermal correlator."
+    },
+    "second_audit": null,
+    "status": "awaiting_second"
+  },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
+  "effective_status": "audit_in_progress",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audit_in_progress",
   "load_bearing_score": 12.193,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Spectral decomposition and Cauchy-Schwarz give |\u03a3_{k\u22651}(\u03bb_k/M_T)^n\u27e80|A|k\u27e9\u27e8k|B|0\u27e9| \u2264 exp(-n\u0394_T)\u2016A\u2016\u2016B\u2016, after which trace-distance estimates add the 6q_\u03b2 correction.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "6efb8b670324283b221f5d7062b39231c326b4b248ae70db60c3189913ce870a",
   "note_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "scope_too_broad: Rewrite B.2-B.3 to state only the formal transfer-insertion correlator, require T>0 rather than merely T\u22650, and add a dated downstream-hygiene line to this note's boundary so its hash re-enters the audit queue.",
+  "open_dependency_paths": [
+    "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+    "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-05-30T22:12:17.433707+00:00",
@@ -1835,14 +1993,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 5,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 5
   },
   "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
   "title": "Mass-Gap Bridge for Cluster Decomposition on Cl(3) \u2297 Z^3",
   "transitive_descendants": 827,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The exact algebra proves B.6-B.8 only for the formal insertion \u27e8A T\u0303^n B\u27e9, while B.2-B.3 present it as a physical local correlator without a supplied identification theorem; the stated positive-Hermitian domain also does not exclude zero eigenvalues needed for a finite log T\u0303. Why this blocks: The abstract finite-dimensional estimate is valid, but the broader physical wording and Hamiltonian construction do not follow from the restricted inputs. Repair target: Narrow B.2-B.3 to the formal insertion with strictly positive T, or supply retained transfer-reconstruction and local-insertion authorities. Claim boundary until fixed: The spectral and q_\u03b2 bounds are valid finite-dimensional algebra only, with no canonical physical, spatial, infinite-volume, or continuum clustering conclusion."
 }

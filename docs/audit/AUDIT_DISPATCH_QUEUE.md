@@ -72,7 +72,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 14 | resolved_or_superseded | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem / unaudited / unaudited |
 | 15 | resolved_or_superseded | `oh_schur_boundary_action_note` | positive_theorem / unaudited / unaudited |
 | 16 | resolved_or_superseded | `three_generation_structure_note` | bounded_theorem / unaudited / unaudited |
-| 17 | resolved_or_superseded | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / unaudited / unaudited |
+| 17 | resolved_or_superseded | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / audit_in_progress / audit_in_progress |
 | 18 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
 | 19 | resolved_or_superseded | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / unaudited / unaudited |
 | 20 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_conditional / audited_conditional |

@@ -1,24 +1,166 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-03T02:53:50.514076+00:00",
+  "audit_invocation_history": [
+    "57a033d882d7487081f680b39f837c27"
+  ],
+  "audit_invocation_id": "57a033d882d7487081f680b39f837c27",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0)."
+    },
+    "dep_claim_type": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+      "digest": "05463214c63bb93e1db45a7e1c60c3c8700170f2b5df08afa957b1f2de84fbb4",
+      "judgment": {
+        "audit_date": "2026-08-03T02:53:50.514076+00:00",
+        "audit_invocation_id": "57a033d882d7487081f680b39f837c27",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-audit-batch-A-20260803-3c4e7630",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "The direct finite-matrix CAR, nilpotency, and number-operator checks pass, but the clipped source and authority prevent complete verification of the chain. In particular, the runner does not independently establish the J3 span/irreducibility claim.",
+        "claim_scope": "Given the retained two-dimensional Pauli Cl(3) carrier and a fixed ordering of finitely many tensor factors, the Jordan-Wigner operators satisfy the stated finite-mode CAR, nilpotency, generated-algebra, and number-operator identities; no physical-lattice or Grassmann-forcing identification was audited.",
+        "claim_type": "bounded_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": null,
+        "decoration_parent_claim_id": null,
+        "independence": "cross_family",
+        "load_bearing_step": "For \u03c0(x)<\u03c0(y), decomposing S_y=S_x\u03c3_3^(x)T_xy and using {\u03c3_3^(x),\u03c3_\u00b1^(x)}=0 supplies the sign reversal that makes the off-site anticommutators vanish.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [
+          "derived_no_go_boundary"
+        ],
+        "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the full unclipped source and retained authority, strengthen Part 11 with an actual rank/span or irreducibility check, and synchronize the note's expected PASS count with the runner before re-audit.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 44,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "total_pass": 44
+        },
+        "verdict_rationale": "Issue: the restricted packet clips both the source note and its sole retained authority, while the note expects at least 50 passes but the completed runner reports 44; Part 11 merely compares the asserted dimension formulas rather than checking monomial independence or irreducibility. Why this blocks: the finite CAR, nilpotency, and number-operator calculations are supported, but the complete bundled J1\u2013J4 chain cannot be authenticated from the rendered evidence. Repair target: supply the complete evidence and an independent J3 rank/span or irreducibility certificate, then correct the validation count. Claim boundary until fixed: the direct JW identities in the displayed finite cases and the derived boundary that naive disjoint-site ladders fail cross-site CAR remain supported."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 8.0,
+    "packet_policy_fingerprint": {
+      "digest": "9a71ed6d9de3c07d77ac54c174c860c732c2623464ee5216069a1c5f667d1111",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "4c8254d65a5c51706b53309059bcb4323bc72cf9d4db2fbc0c9378926046e3ac",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "policy_versions": {
+      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3",
+    "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "science_fingerprint": {
+      "dependencies": [
+        {
+          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+          "claim_type": "positive_theorem",
+          "effective_status": "retained",
+          "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "premise_classification": "ordinary_claim",
+          "present": true
+        }
+      ],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "ae19dd957600b1df910ed46739d5bb1050abb57d79e4b794beaed6a0aae2b538",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+        "claim_scope": "Given the retained two-dimensional Pauli Cl(3) carrier and a fixed ordering of finitely many tensor factors, the Jordan-Wigner operators satisfy the stated finite-mode CAR, nilpotency, generated-algebra, and number-operator identities; no physical-lattice or Grassmann-forcing identification was audited.",
+        "claim_type": "bounded_theorem",
+        "ledger_note_hash": "bdddd01505c68e93c8b89c1ae18f6aa39d3a9ee3c0b17af64fad23fdc4895c30",
+        "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
+        "note_sha256": "bdddd01505c68e93c8b89c1ae18f6aa39d3a9ee3c0b17af64fad23fdc4895c30"
+      }
+    },
+    "transitive_descendants": 127
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260803-3c4e7630",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The direct finite-matrix CAR, nilpotency, and number-operator checks pass, but the clipped source and authority prevent complete verification of the chain. In particular, the runner does not independently establish the J3 span/irreducibility claim.",
   "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "Given the retained two-dimensional Pauli Cl(3) carrier and a fixed ordering of finitely many tensor factors, the Jordan-Wigner operators satisfy the stated finite-mode CAR, nilpotency, generated-algebra, and number-operator identities; no physical-lattice or Grassmann-forcing identification was audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-03T02:53:50.514076+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +168,22 @@
     "cl3_complexification_split_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 8.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For \u03c0(x)<\u03c0(y), decomposing S_y=S_x\u03c3_3^(x)T_xy and using {\u03c3_3^(x),\u03c3_\u00b1^(x)}=0 supplies the sign reversal that makes the off-site anticommutators vanish.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "bdddd01505c68e93c8b89c1ae18f6aa39d3a9ee3c0b17af64fad23fdc4895c30",
   "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the full unclipped source and retained authority, strengthen Part 11 with an actual rank/span or irreducibility check, and synchronize the note's expected PASS count with the runner before re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1419,14 +1564,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 44,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 44
   },
   "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
   "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem",
   "transitive_descendants": 127,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the restricted packet clips both the source note and its sole retained authority, while the note expects at least 50 passes but the completed runner reports 44; Part 11 merely compares the asserted dimension formulas rather than checking monomial independence or irreducibility. Why this blocks: the finite CAR, nilpotency, and number-operator calculations are supported, but the complete bundled J1\u2013J4 chain cannot be authenticated from the rendered evidence. Repair target: supply the complete evidence and an independent J3 rank/span or irreducibility certificate, then correct the validation count. Claim boundary until fixed: the direct JW identities in the displayed finite cases and the derived boundary that naive disjoint-site ladders fail cross-site CAR remain supported."
 }

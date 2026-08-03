@@ -33,8 +33,38 @@
     "retained_no_go"
   ],
   "runner_drift_candidates": [],
-  "runner_stdout_transport_candidates": [],
+  "runner_stdout_transport_candidates": [
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "audited_conditional",
+      "cached_runner_stdout_chars": 6757,
+      "candidate_reason": "runner_stdout_transport_unclipped_by_head_tail_v2",
+      "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+      "claim_scope": "Given the retained two-dimensional Pauli Cl(3) carrier and a fixed ordering of finitely many tensor factors, the Jordan-Wigner operators satisfy the stated finite-mode CAR, nilpotency, generated-algebra, and number-operator identities; no physical-lattice or Grassmann-forcing identification was audited.",
+      "claim_type": "bounded_theorem",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "current_dep_effective_status": {
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+      },
+      "current_runner_stdout_char_limit": 20000,
+      "deps": [
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "audited_conditional",
+      "generated_order": 1,
+      "improved_dependencies": [],
+      "legacy_runner_stdout_char_limit": 6000,
+      "load_bearing_score": 8.0,
+      "note_hash": "bdddd01505c68e93c8b89c1ae18f6aa39d3a9ee3c0b17af64fad23fdc4895c30",
+      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "reraudit_after_claim_ids": [],
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
+      "transitive_descendants": 127
+    }
+  ],
   "total_candidates": 0,
   "total_runner_drift_candidates": 0,
-  "total_runner_stdout_transport_candidates": 0
+  "total_runner_stdout_transport_candidates": 1
 }

@@ -1,0 +1,403 @@
+{
+  "AUDIT_INPUT_PATHS": [
+    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py",
+    "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py",
+    "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py",
+    "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py",
+    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
+    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py"
+  ],
+  "algebra_identities": {
+    "I1_trace_of_G_equals_sigma_trace": true,
+    "I2_tracefree_channel_is_trace_null": true,
+    "I3_G_squared": true,
+    "I4_exchange_is_an_involution": true
+  },
+  "algebra_row_digest": "1228cabfa12658b44ccc3f176b4155aecf2d5745c36e3cb3d2baaef84790af6a",
+  "blind_subfamily_size_at_t_star": 1368,
+  "boundary": "This block prices the visible point. It does not select it. Every certificate above reports computed structure at a named value of a supplied parameter; none asserts that the parameter takes that value, and the selection remains the owner's.",
+  "branch_pins": {
+    "cycle868_block_commit": "9506d38958",
+    "cycle868_checker_commit": "fae1b25e53",
+    "cycle868_runner_commit": "3363c73f64",
+    "cycle871_reference": "sibling branch PR #5926 (source-action bridge free dimension 1: the overall normalisation scalar)",
+    "cycle872_block_commit_sibling_branch": "da7e6d05cb",
+    "cycle872_checker_commit_sibling_branch": "48e70ceb56",
+    "cycle872_present_in_this_worktree": false,
+    "cycle872_runner_commit_sibling_branch": "4cb64e4792",
+    "cycle873_block_commit": "d38a5ae809",
+    "cycle873_checker_commit": "35e52e8ad7",
+    "cycle873_runner_commit": "4ff7db1e1b",
+    "cycle876_block_commit": "311d83e951",
+    "cycle876_checker_commit": "c791fe6614",
+    "cycle876_runner_commit": "73714ea1cd"
+  },
+  "classification_rule_A_sensitivity": "an algebra object can carry a nonzero sigma-odd part only if it is LINEAR in the source and built from an ODD number of G factors; every sector-summed bilinear is even because identity I2 kills the cross term",
+  "classification_rule_B_purity": "a LINEAR algebra object is PURELY odd -- identically vanishing even part, so its value alone fixes sign(sigma) -- exactly when it is sigma-sensitive, has an odd G count, and ANNIHILATES THE TRACEFREE CHANNEL. This is an if-and-only-if and it is checked in both directions. Sector contraction is one way to annihilate that channel (identity I2) but not the only one: an explicit conformal projector does it too, which the census exhibits",
+  "closed_form_at_t_star": "lawful <=> D[matter] + 2 D[field] = D[direction], with the auxiliary index entirely free",
+  "cycle": 880,
+  "expected_git_blobs": {
+    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py": "c64dd97a3034ccbedc2603db4dacc1c80acfd952",
+    "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py": "0c5893f9b0c277fe864ed71efb38ba2c59d52d04",
+    "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py": "f61f0d2b7869672d66d346ffb7679e697c6d8940",
+    "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py": "58a709ebc3cd2f6a5a2220fdaebd970c4694495f",
+    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py": "7672380148d79f22a4ab9b2700121aac1b097004",
+    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0"
+  },
+  "expected_sha256": {
+    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py": "e09226e35a58cd52e2d4f61516f6e2a64cdebb7f4c20893307a1f3d2ff3f4ebb",
+    "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py": "08e92fde118415f32043c4fc154f8cc5aaca66af18704c024f89cde5445662de",
+    "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py": "95acbb56e2c2e3d54fd04c80d444716c4620734849d8048c008b9d582722ce1f",
+    "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py": "1e13e4c6332c7d6c7798fb4d7366db8a94037eefba6e77ac1c3dd0d269cf7b39",
+    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py": "3c1575c99622c0874ab42730494d615fbe1a2b867975e5bf048fd2a4a8af9d56",
+    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"
+  },
+  "generic_lawful_count": 6,
+  "generic_survivors": [
+    [
+      0,
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    [
+      2,
+      [
+        3,
+        2,
+        2
+      ]
+    ],
+    [
+      3,
+      [
+        2,
+        3,
+        3
+      ]
+    ],
+    [
+      4,
+      [
+        5,
+        4,
+        4
+      ]
+    ],
+    [
+      5,
+      [
+        4,
+        5,
+        5
+      ]
+    ]
+  ],
+  "landed_family_census": {
+    "blind": {
+      "O1_PUSHFORWARD": 1368,
+      "O2_ADJOINT_PULLBACK": 1368,
+      "O3_FLUX_BALANCE": 1368,
+      "O4_RESPONSE_GRAM": 1368,
+      "O5_RESPONSE_TENSOR": 1368,
+      "O6_EDGE_TRANSFER": 1368
+    },
+    "closed_form": 1368,
+    "closed_form_matches": true,
+    "member_count": 1368,
+    "members_with_nonzero_conformal_channel": 0,
+    "odd_part_degrees_observed": {
+      "O1_PUSHFORWARD": [],
+      "O2_ADJOINT_PULLBACK": [],
+      "O3_FLUX_BALANCE": [],
+      "O4_RESPONSE_GRAM": [],
+      "O5_RESPONSE_TENSOR": [],
+      "O6_EDGE_TRANSFER": []
+    },
+    "sensitive": {
+      "O1_PUSHFORWARD": 0,
+      "O2_ADJOINT_PULLBACK": 0,
+      "O3_FLUX_BALANCE": 0,
+      "O4_RESPONSE_GRAM": 0,
+      "O5_RESPONSE_TENSOR": 0,
+      "O6_EDGE_TRANSFER": 0
+    },
+    "stream_sha256": "c7ec62bab0ccaf90c6a9f8db25a694b0f01472611e39efc761594ded32e31551",
+    "support_count": 6,
+    "top_formal_sigma_degree": {
+      "O1_PUSHFORWARD": 0,
+      "O2_ADJOINT_PULLBACK": 0,
+      "O3_FLUX_BALANCE": -1,
+      "O4_RESPONSE_GRAM": 0,
+      "O5_RESPONSE_TENSOR": 0,
+      "O6_EDGE_TRANSFER": 0
+    }
+  },
+  "landed_objects_with_a_nonzero_odd_part_at_t_star": [
+    "O1_PUSHFORWARD",
+    "O3_FLUX_BALANCE"
+  ],
+  "largest_witness_magnitude": "12",
+  "lawful_count_at_t_star": 36,
+  "lawful_count_at_the_unit_grading": 90,
+  "purely_odd_algebra_objects": [
+    "G/T_SECTOR_TRACE",
+    "GPC/L_COMPONENTS",
+    "GPC/T_SECTOR_TRACE",
+    "GR/T_SECTOR_TRACE",
+    "GGG/T_SECTOR_TRACE",
+    "GPCR/L_COMPONENTS",
+    "GPCR/T_SECTOR_TRACE"
+  ],
+  "questions_declared_out_of_scope": [
+    "which point of the lawful line is physical",
+    "whether sigma is +1 or -1",
+    "whether the sign wall should be retired, adopted or carried",
+    "any recommendation among the three Cycle-876 dispositions"
+  ],
+  "restatement_ledger": [
+    {
+      "claim": "the landed source family at the Cycle-868 scope has 2*6*6 + (6*6)^2 members",
+      "claim_id": "R01_868_FAMILY_SIZE",
+      "classification": "RESTATES_UNCHANGED",
+      "note": "the fibration is a function of the support count and the held edge length, neither of which depends on the grading",
+      "pins": [
+        "3363c73f64",
+        "9506d38958"
+      ],
+      "value_at_t_star": 1368,
+      "value_at_the_unit_grading": 1368
+    },
+    {
+      "claim": "every member of the landed Cycle-868 family has zero conformal channel",
+      "claim_id": "R02_868_CONFORMAL_CHANNEL_VANISHES",
+      "classification": "RESTATES_UNCHANGED",
+      "note": "the Cycle-320 support is traceless at every point of the line, so this survives the move verbatim; the conformal channel is a function of the support and never of the grading",
+      "pins": [
+        "3363c73f64",
+        "fae1b25e53"
+      ],
+      "value_at_t_star": true,
+      "value_at_the_unit_grading": true
+    },
+    {
+      "claim": "all six landed response objects are sigma-blind on the landed family",
+      "claim_id": "R03_868_ALL_SIX_OBJECTS_BLIND",
+      "classification": "RESTATES_UNCHANGED",
+      "note": "unchanged as stated; the scope qualifier 'on the landed family' is load bearing and must be kept when the claim is cited",
+      "pins": [
+        "3363c73f64",
+        "9506d38958"
+      ],
+      "value_at_t_star": true,
+      "value_at_the_unit_grading": true
+    },
+    {
+      "claim": "the response surface cannot see sigma on the family over the supports that are LAWFUL at the working grading",
+      "claim_id": "R04_868_RESPONSE_SURFACE_CANNOT_SEE_SIGMA",
+      "classification": "LOSES_SUPPORT_AT_T_STAR",
+      "note": "this is the unqualified form of the blindness claim and it is the one that moves: at the unit grading every lawful support is traceless, at t* thirty of them are not",
+      "pins": [
+        "9506d38958",
+        "da7e6d05cb"
+      ],
+      "value_at_t_star": false,
+      "value_at_the_unit_grading": true
+    },
+    {
+      "claim": "the number of lawful supports at the working grading",
+      "claim_id": "R05_876_LAWFUL_SUPPORT_COUNT",
+      "classification": "RESTATES_WITH_MODIFIED_CONSTANTS",
+      "note": "a constant inside a landed certificate, not a claim that fails; the statement restates with this number replaced",
+      "pins": [
+        "73714ea1cd",
+        "311d83e951"
+      ],
+      "value_at_t_star": 36,
+      "value_at_the_unit_grading": 90
+    },
+    {
+      "claim": "the sector trace equals A and never moves with the grading",
+      "claim_id": "R06_876_TRACE_IS_GRADING_INDEPENDENT",
+      "classification": "RESTATES_UNCHANGED",
+      "note": "a statement about the whole line; it is what makes every other row computable at both points",
+      "pins": [
+        "73714ea1cd"
+      ],
+      "value_at_t_star": true,
+      "value_at_the_unit_grading": true
+    },
+    {
+      "claim": "the Cycle-320 landed support is lawful, traceless and matter-recoiling",
+      "claim_id": "R07_876_LANDED_320_IDENTITIES",
+      "classification": "RESTATES_UNCHANGED",
+      "note": "nothing Cycle 320 certified moves; this is the strongest survival result in the ledger",
+      "pins": [
+        "73714ea1cd",
+        "4ff7db1e1b"
+      ],
+      "value_at_t_star": true,
+      "value_at_the_unit_grading": true
+    },
+    {
+      "claim": "the Cycle-318 coefficient-two support, auxiliary sector absent, is lawful on every direction",
+      "claim_id": "R08_318_TWO_SECTOR_SUPPORT_LAWFUL",
+      "classification": "GAINS_SUPPORT_AT_T_STAR",
+      "note": "the landed route the unit grading excludes; it is the R9 joint solution's whole content",
+      "pins": [
+        "4ff7db1e1b",
+        "c791fe6614"
+      ],
+      "value_at_t_star": true,
+      "value_at_the_unit_grading": false
+    },
+    {
+      "claim": "the Cycle-873 trace-bearing witness ledger (-2, +1, 0) sits on a lawful support",
+      "claim_id": "R09_873_WITNESS_ON_SHELL",
+      "classification": "GAINS_SUPPORT_AT_T_STAR",
+      "note": "the witness itself is grading independent; what changes is whether it is on shell, and the auxiliary sector's zero weight at t* is what puts it there",
+      "pins": [
+        "4ff7db1e1b",
+        "d38a5ae809"
+      ],
+      "value_at_t_star": true,
+      "value_at_the_unit_grading": false
+    },
+    {
+      "claim": "the landed support locus is a segment and not a point",
+      "claim_id": "R10_873_SEGMENT_NOT_A_POINT",
+      "classification": "RESTATES_UNCHANGED",
+      "note": "a statement about the line's generic behaviour; both landed points are exceptional relative to it",
+      "pins": [
+        "4ff7db1e1b",
+        "35e52e8ad7"
+      ],
+      "value_at_t_star": true,
+      "value_at_the_unit_grading": true
+    },
+    {
+      "claim": "no response object exceeds sigma-degree two",
+      "claim_id": "R11_868_TOP_SIGMA_DEGREE",
+      "classification": "RESTATES_UNCHANGED",
+      "note": "the degree bound is a property of the constructor algebra, not of the support; it holds on both families",
+      "pins": [
+        "3363c73f64"
+      ],
+      "value_at_t_star": true,
+      "value_at_the_unit_grading": true
+    },
+    {
+      "claim": "the Cycle-872 constructor-algebra blindness wall at the unit grading",
+      "claim_id": "R12_872_BLINDNESS_WALL_SIBLING_BRANCH",
+      "classification": "NOT_RECOMPUTABLE_IN_THIS_WORKTREE",
+      "note": "the Cycle-872 artifacts are not present in this worktree (cycle872_present_in_this_worktree = False), so this row is pinned and NOT recomputed; it is recorded as unverifiable here rather than classified from artifacts this runner cannot open",
+      "pins": [
+        "4cb64e4792",
+        "48e70ceb56",
+        "da7e6d05cb"
+      ],
+      "value_at_t_star": null,
+      "value_at_the_unit_grading": null
+    }
+  ],
+  "rows_by_classification": {
+    "GAINS_SUPPORT_AT_T_STAR": [
+      "R08_318_TWO_SECTOR_SUPPORT_LAWFUL",
+      "R09_873_WITNESS_ON_SHELL"
+    ],
+    "LOSES_SUPPORT_AT_T_STAR": [
+      "R04_868_RESPONSE_SURFACE_CANNOT_SEE_SIGMA"
+    ],
+    "NOT_RECOMPUTABLE_IN_THIS_WORKTREE": [
+      "R12_872_BLINDNESS_WALL_SIBLING_BRANCH"
+    ],
+    "RESTATES_UNCHANGED": [
+      "R01_868_FAMILY_SIZE",
+      "R02_868_CONFORMAL_CHANNEL_VANISHES",
+      "R03_868_ALL_SIX_OBJECTS_BLIND",
+      "R06_876_TRACE_IS_GRADING_INDEPENDENT",
+      "R07_876_LANDED_320_IDENTITIES",
+      "R10_873_SEGMENT_NOT_A_POINT",
+      "R11_868_TOP_SIGMA_DEGREE"
+    ],
+    "RESTATES_WITH_MODIFIED_CONSTANTS": [
+      "R05_876_LAWFUL_SUPPORT_COUNT"
+    ]
+  },
+  "sector_trace_formula_at_t_star": "trace = D[auxiliary] - D[direction]",
+  "t_star": "1",
+  "t_star_derived_from": "Cycle-318 mediator weight default, by AST",
+  "t_star_family_census": {
+    "blind": {
+      "O1_PUSHFORWARD": 1368,
+      "O2_ADJOINT_PULLBACK": 47088,
+      "O3_FLUX_BALANCE": 1368,
+      "O4_RESPONSE_GRAM": 47088,
+      "O5_RESPONSE_TENSOR": 47088,
+      "O6_EDGE_TRANSFER": 47088
+    },
+    "closed_form": 47088,
+    "closed_form_matches": true,
+    "member_count": 47088,
+    "members_with_nonzero_conformal_channel": 45720,
+    "odd_part_degrees_observed": {
+      "O1_PUSHFORWARD": [
+        1
+      ],
+      "O2_ADJOINT_PULLBACK": [],
+      "O3_FLUX_BALANCE": [
+        1
+      ],
+      "O4_RESPONSE_GRAM": [],
+      "O5_RESPONSE_TENSOR": [],
+      "O6_EDGE_TRANSFER": []
+    },
+    "sensitive": {
+      "O1_PUSHFORWARD": 45720,
+      "O2_ADJOINT_PULLBACK": 0,
+      "O3_FLUX_BALANCE": 45720,
+      "O4_RESPONSE_GRAM": 0,
+      "O5_RESPONSE_TENSOR": 0,
+      "O6_EDGE_TRANSFER": 0
+    },
+    "stream_sha256": "623593e8e49c1f54574b7eb9489cf6b17c136cbd39306a8358b716ea7f71de01",
+    "support_count": 36,
+    "top_formal_sigma_degree": {
+      "O1_PUSHFORWARD": 1,
+      "O2_ADJOINT_PULLBACK": 2,
+      "O3_FLUX_BALANCE": 1,
+      "O4_RESPONSE_GRAM": 2,
+      "O5_RESPONSE_TENSOR": 2,
+      "O6_EDGE_TRANSFER": 2
+    }
+  },
+  "trace_bearing_count_at_t_star": 30,
+  "w_star": [
+    "1",
+    "2",
+    "0"
+  ],
+  "witness_component_count": 140616,
+  "witness_exact_law": "O3[e][a] = sigma * C[P e][a], where C is the conformal channel (sector trace) of the ungraded source and P is the endpoint reversal; the even part is identically zero",
+  "witness_magnitudes": {
+    "1": 20832,
+    "10": 2604,
+    "12": 2604,
+    "2": 23436,
+    "3": 20832,
+    "4": 23436,
+    "5": 20832,
+    "6": 23436,
+    "8": 2604
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "box_sizes": [
+    3,
+    4
+  ],
+  "fail": 0,
+  "gates": [
+    {
+      "detail": "index map homomorphism mismatch 0 anti-homomorphism mismatch 64",
+      "gate": "G1",
+      "ok": true
+    },
+    {
+      "detail": "sextet [1, 4, 9, 15, 18, 23] cuts four cosets of sizes [6, 6, 6, 6]",
+      "gate": "G2",
+      "ok": true
+    },
+    {
+      "detail": "assembly stabilizer IS the sextet sextet dev 1.243450e-10 outside dev 4.000000e+00",
+      "gate": "G3",
+      "ok": true
+    },
+    {
+      "detail": "delta-measurable slots 98 of 98 dense spread 7.581911e-12 label gap 9.063688e-04",
+      "gate": "G4",
+      "ok": true
+    },
+    {
+      "detail": "sextet-breaking control destroys delta-measurability, spread 4.482319e-04",
+      "gate": "G5",
+      "ok": true
+    },
+    {
+      "detail": "center reflection involution True assembly dev 1.243450e-10 diag dev 2.391624e-11 a frame False central True",
+      "gate": "G6",
+      "ok": true
+    },
+    {
+      "detail": "assembly symmetry order 12 = 6 proper + 6 improper",
+      "gate": "G7",
+      "ok": true
+    },
+    {
+      "detail": "orbits 13 constant to 2.391640e-11 separated by 4.286579e-05 sizes {2: 1, 6: 8, 12: 4}",
+      "gate": "G8",
+      "ok": true
+    },
+    {
+      "detail": "8 per-axis face swaps over-merge to 6 orbits, value dev 2.356587e-01",
+      "gate": "G9",
+      "ok": true
+    },
+    {
+      "detail": "blind slots 6 stabilizer-transitive 6 agreeing 6",
+      "gate": "G10",
+      "ok": true
+    },
+    {
+      "detail": "merged pairs 180 = 24 stabilizer + 50 sextet + 106 reflection, residue 0",
+      "gate": "G11",
+      "ok": true
+    },
+    {
+      "detail": "index map homomorphism mismatch 0 anti-homomorphism mismatch 177",
+      "gate": "G1",
+      "ok": true
+    },
+    {
+      "detail": "sextet [1, 4, 9, 15, 18, 23] cuts four cosets of sizes [6, 6, 6, 6]",
+      "gate": "G2",
+      "ok": true
+    },
+    {
+      "detail": "assembly stabilizer IS the sextet sextet dev 1.243450e-10 outside dev 4.000000e+00",
+      "gate": "G3",
+      "ok": true
+    },
+    {
+      "detail": "delta-measurable slots 279 of 279 dense spread 2.214548e-10 label gap 5.635424e-03",
+      "gate": "G4",
+      "ok": true
+    },
+    {
+      "detail": "sextet-breaking control destroys delta-measurability, spread 1.636304e-03",
+      "gate": "G5",
+      "ok": true
+    },
+    {
+      "detail": "center reflection involution True assembly dev 1.243450e-10 diag dev 7.638423e-10 a frame False central True",
+      "gate": "G6",
+      "ok": true
+    },
+    {
+      "detail": "assembly symmetry order 12 = 6 proper + 6 improper",
+      "gate": "G7",
+      "ok": true
+    },
+    {
+      "detail": "orbits 34 constant to 7.638064e-10 separated by 1.264701e-04 sizes {1: 1, 2: 1, 6: 18, 12: 14}",
+      "gate": "G8",
+      "ok": true
+    },
+    {
+      "detail": "8 per-axis face swaps over-merge to 16 orbits, value dev 1.858569e+00",
+      "gate": "G9",
+      "ok": true
+    },
+    {
+      "detail": "blind slots 19 stabilizer-transitive 19 agreeing 19",
+      "gate": "G10",
+      "ok": true
+    },
+    {
+      "detail": "merged pairs 450 = 70 stabilizer + 110 sextet + 270 reflection, residue 0",
+      "gate": "G11",
+      "ok": true
+    }
+  ],
+  "notes": [
+    "the improper half of the assembly symmetry carries no body-diagonal label"
+  ],
+  "pass": 22,
+  "per_box": {
+    "3": {
+      "antihom_mismatch": 64,
+      "blind": 6,
+      "control_spread": "4.482319e-04",
+      "dense_gap": "9.063688e-04",
+      "dense_spread": "7.581911e-12",
+      "hom_mismatch": 0,
+      "merged": {
+        "reflection": 106,
+        "residue": 0,
+        "sextet": 50,
+        "stabilizer": 24
+      },
+      "merged_total": 180,
+      "n": 98,
+      "orbit_const": "2.391640e-11",
+      "orbit_sep": "4.286579e-05",
+      "orbit_sizes": {
+        "12": 4,
+        "2": 1,
+        "6": 8
+      },
+      "orbits": 13,
+      "reflection_dev": "1.243450e-10",
+      "reflection_diag_dev": "2.391624e-11",
+      "slots_measurable": 98,
+      "stab_in_dev": "1.243450e-10",
+      "stab_out_dev": "4.000000e+00",
+      "swap_dev": "2.356587e-01",
+      "swap_maps": 8,
+      "swap_orbits": 6,
+      "sym_improper": 6,
+      "sym_proper": 6,
+      "transitive": 6
+    },
+    "4": {
+      "antihom_mismatch": 177,
+      "blind": 19,
+      "control_spread": "1.636304e-03",
+      "dense_gap": "5.635424e-03",
+      "dense_spread": "2.214548e-10",
+      "hom_mismatch": 0,
+      "merged": {
+        "reflection": 270,
+        "residue": 0,
+        "sextet": 110,
+        "stabilizer": 70
+      },
+      "merged_total": 450,
+      "n": 279,
+      "orbit_const": "7.638064e-10",
+      "orbit_sep": "1.264701e-04",
+      "orbit_sizes": {
+        "1": 1,
+        "12": 14,
+        "2": 1,
+        "6": 18
+      },
+      "orbits": 34,
+      "reflection_dev": "1.243450e-10",
+      "reflection_diag_dev": "7.638423e-10",
+      "slots_measurable": 279,
+      "stab_in_dev": "1.243450e-10",
+      "stab_out_dev": "4.000000e+00",
+      "swap_dev": "1.858569e+00",
+      "swap_maps": 8,
+      "swap_orbits": 16,
+      "sym_improper": 6,
+      "sym_proper": 6,
+      "transitive": 19
+    }
+  },
+  "runner": "physical_level_set_orbit_law_improper_center_identity_cycle719_2026_08_02.py",
+  "sextet": [
+    1,
+    4,
+    9,
+    15,
+    18,
+    23
+  ]
+}

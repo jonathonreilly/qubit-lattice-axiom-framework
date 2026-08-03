@@ -33,14 +33,21 @@ DEFAULT_RECEIPT = PACKAGE_ROOT / ACCEPTANCE_RECEIPT
 AUDIT_TIMEOUT_SEC = 1500
 CHILD_TIMEOUT_SEC = 180
 AUDIT_INPUT_PATHS = (
-    NOTE,
-    ACCEPTANCE,
-    PRIMARY,
-    PRIMARY_RECEIPT,
-    INDEPENDENT,
-    INDEPENDENT_RECEIPT,
+    "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_acceptance_2026_08_03.py",
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py",
+    "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json",
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
+    "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json",
 )
-DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+DECLARED_INPUT_PATHS = (
+    "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_acceptance_2026_08_03.py",
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py",
+    "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_receipt_2026_08_03.json",
+    "scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py",
+    "outputs/cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_receipt_2026_08_03.json",
+)
 EXPECTED_MANIFEST = tuple(sorted((
     NOTE, PRIMARY, INDEPENDENT, ACCEPTANCE,
     PRIMARY_RECEIPT, INDEPENDENT_RECEIPT, ACCEPTANCE_RECEIPT,
@@ -100,7 +107,13 @@ def literal_assignment(path: Path, name: str):
 
 
 def package_manifest(root: Path = PACKAGE_ROOT) -> tuple[str, ...]:
-    """Enumerate Cycle872-owned files without treating an entire repo as the package."""
+    """Enumerate top-level Cycle872 package files in the three owned namespaces.
+
+    Generated audit-ledger shards live below ``docs/audit`` and are validation
+    outputs, not author-owned package files.  The package contract places all
+    seven canonical artifacts directly in ``docs``, ``scripts``, or
+    ``outputs``, so recurse into none of those repository subtrees.
+    """
     output = []
     for directory in ("docs", "scripts", "outputs"):
         base = root / directory
@@ -108,7 +121,7 @@ def package_manifest(root: Path = PACKAGE_ROOT) -> tuple[str, ...]:
             continue
         output.extend(
             str(path.relative_to(root))
-            for path in base.rglob("*")
+            for path in base.iterdir()
             if path.is_file()
             and "cycle872" in path.name.lower()
             and "__pycache__" not in path.parts

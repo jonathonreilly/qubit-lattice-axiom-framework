@@ -1,44 +1,279 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_date": "2026-08-03T14:34:54.930803+00:00",
+  "audit_invocation_history": [
+    "474050fbba934e6d8eb83e863cc82f0a",
+    "12c7d91824b34f31a14d5efff0d7c62d"
+  ],
+  "audit_invocation_id": "12c7d91824b34f31a14d5efff0d7c62d",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f"
+    },
+    "judgment_fingerprint": {
+      "claim_id": "gravity_law_cleanup_note",
+      "digest": "9a78d8f514caec0640da64ec6a39c7c4101f597d38d3ea7161854799b5f2632d",
+      "judgment": {
+        "audit_date": "2026-08-03T14:34:54.930803+00:00",
+        "audit_invocation_id": "12c7d91824b34f31a14d5efff0d7c62d",
+        "audit_status": "audit_in_progress",
+        "auditor": "codex-audit-batch-A-20260803-c130c225",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": true,
+        "chain_closure_explanation": "Within the narrowly audited transcript scope, the runner source computes the displayed statistics and conditionally emits the supplied absence-of-fit message; both match the rendered stdout. This does not close the note\u2019s broader framework-gravity framing.",
+        "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+        "claim_type": "bounded_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": {
+          "first_audit": {
+            "audit_date": "2026-08-03T14:34:54.930803+00:00",
+            "audit_invocation_id": "474050fbba934e6d8eb83e863cc82f0a",
+            "auditor": "codex-audit-batch-A-20260803-c130c225",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": true,
+            "chain_closure_explanation": "Within the narrowly audited transcript scope, the runner source computes the displayed statistics and conditionally emits the supplied absence-of-fit message; both match the rendered stdout. This does not close the note\u2019s broader framework-gravity framing.",
+            "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+            "claim_type": "bounded_theorem",
+            "decoration_parent_claim_id": null,
+            "independence": "cross_family",
+            "load_bearing_step": "The primary-runner cache supplies the six raw per-b t-values descriptively and reports that there are not enough falling-tail points for a review-safe power-law fit.",
+            "load_bearing_step_class": "C",
+            "negative_assertion_classes": [
+              "bounded_with_named_walls",
+              "stretch_attempt_negative"
+            ],
+            "notes_for_re_audit_if_any": "scope_too_broad: replace \u201cbounded null-result\u201d and \u201cpeaked positive distance response\u201d with \u201ccached algorithm transcript only,\u201d and add a dated downstream-hygiene line to this note\u2019s own boundary forbidding downstream citation as significance or framework-gravity evidence.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 0,
+              "B": 0,
+              "C": 2,
+              "D": 0,
+              "total_pass": 2
+            },
+            "verdict": "audited_conditional",
+            "verdict_rationale": "The runner genuinely generates deterministic per-seed DAGs, computes field/no-field centroid differences, aggregates mean/SE/t, and produces stdout matching all six rows and the literal no-tail message. The note nevertheless calls this a \u201cbounded null-result\u201d and a \u201cpeaked positive distance response\u201d; because the maximum is at the window endpoint and the algorithm imposes an underived 1/r field, strength, phase band, and propagation rule, those phrases are not review-safe framework-gravity conclusions. N1 leaves only the finite-window numerical attempt closed as a transcript; N2\u2019s multiplicity and absent-tail limitations are independent, N3 identifies the stipulated algorithm as the premise load, and N4 has no prior-residual witness. N5 confines the negative rhetoric to current-cache insufficiency, N6 supplies no indexed premise adding a corrected test or falling tail, N7\u2019s strongest steelman supports descriptive closure only, and N8 provides no applicable echo upgrading it to a physical law."
+          },
+          "mode": "terminal_second_pass",
+          "second_audit": {
+            "audit_date": "2026-08-03T14:34:54.938809+00:00",
+            "audit_invocation_id": "12c7d91824b34f31a14d5efff0d7c62d",
+            "auditor": "codex-audit-batch-B-20260803-bfe852b4",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "The supplied code supports the six ratios, endpoint peak, and literal insufficient-tail message. The negative scientific interpretation does not close because the required current-cycle N1, N5, and N7 evidence is absent.",
+            "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+            "claim_type": "bounded_theorem",
+            "decoration_parent_claim_id": null,
+            "independence": "fresh_context",
+            "load_bearing_step": "The cached sweep does not extend far enough past its endpoint to support a review-safe falling-tail power-law fit.",
+            "load_bearing_step_class": "C",
+            "negative_assertion_classes": [
+              "stretch_attempt_negative"
+            ],
+            "notes_for_re_audit_if_any": "scope_too_broad: limit the claim to literal reproduction of the six cached rows and the code-branch message, and add a dated boundary line stating that the message is not a certified negative scientific result; otherwise supply complete current-cycle N1-N8 evidence.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 8,
+              "B": 0,
+              "C": 2,
+              "D": 0,
+              "total_pass": 10
+            },
+            "verdict": "audited_conditional",
+            "verdict_rationale": "Issue: the literal table is supported, but the artifact promotes the insufficient-tail message as a stretch-attempt negative; N1 lacks five evidenced attack routes, N5 lacks five-resolution live checks, and N7 lacks an independently resolved steelman. Why this blocks: N2 identifies only the sampling-sufficiency boundary, N3 reveals no additional load-bearing premise, N4 has no prior witness, N6 supplies no candidate adding post-peak samples, and N8 cannot replace missing current-cycle tests. Repair target: supply complete N1-N8 evidence or remove the negative-scientific framing. Claim boundary until fixed: the six ratios, endpoint peak, and literal runner message may be reported descriptively only."
+          },
+          "status": "disagreement"
+        },
+        "decoration_parent_claim_id": null,
+        "independence": "cross_family",
+        "load_bearing_step": "The primary-runner cache supplies the six raw per-b t-values descriptively and reports that there are not enough falling-tail points for a review-safe power-law fit.",
+        "load_bearing_step_class": "C",
+        "negative_assertion_classes": [
+          "bounded_with_named_walls",
+          "stretch_attempt_negative"
+        ],
+        "notes_for_re_audit_if_any": "scope_too_broad: replace \u201cbounded null-result\u201d and \u201cpeaked positive distance response\u201d with \u201ccached algorithm transcript only,\u201d and add a dated downstream-hygiene line to this note\u2019s own boundary forbidding downstream citation as significance or framework-gravity evidence.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 0,
+          "B": 0,
+          "C": 2,
+          "D": 0,
+          "total_pass": 2
+        },
+        "verdict_rationale": "The runner genuinely generates deterministic per-seed DAGs, computes field/no-field centroid differences, aggregates mean/SE/t, and produces stdout matching all six rows and the literal no-tail message. The note nevertheless calls this a \u201cbounded null-result\u201d and a \u201cpeaked positive distance response\u201d; because the maximum is at the window endpoint and the algorithm imposes an underived 1/r field, strength, phase band, and propagation rule, those phrases are not review-safe framework-gravity conclusions. N1 leaves only the finite-window numerical attempt closed as a transcript; N2\u2019s multiplicity and absent-tail limitations are independent, N3 identifies the stipulated algorithm as the premise load, and N4 has no prior-residual witness. N5 confines the negative rhetoric to current-cache insufficiency, N6 supplies no indexed premise adding a corrected test or falling tail, N7\u2019s strongest steelman supports descriptive closure only, and N8 provides no applicable echo upgrading it to a physical law."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 11.026,
+    "packet_policy_fingerprint": {
+      "digest": "08578e9875d79e57f9eea1e121f2d35948c7d03b79c9cd8fc4f23b3ec5f7e1dc",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c80a927605a7dad21c8913c25229bc607649dfeb0b1449613e5e5f885823a131",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "runner_hash": "caebed0844eda3827a918d70657dd54d2bf29f581412a2ea0335e15c56a90821",
+    "science_fingerprint": {
+      "dependencies": [],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "3ceb47fa06adb132b9336c916f95c839c69f5434de4a6ea297d61f12bbee6b22",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/gravity_distance_fixed_geometry.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "caebed0844eda3827a918d70657dd54d2bf29f581412a2ea0335e15c56a90821"
+        },
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/generative_causal_dag_interference.py",
+          "present": true,
+          "role": "helper",
+          "sha256": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "gravity_law_cleanup_note",
+        "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+        "claim_type": "bounded_theorem",
+        "ledger_note_hash": "d7814ad7bf67709f7aa7950db90bcb51ac14fb5f22a13c94834a27d77ecdd5d7",
+        "note_path": "docs/GRAVITY_LAW_CLEANUP_NOTE.md",
+        "note_sha256": "d7814ad7bf67709f7aa7950db90bcb51ac14fb5f22a13c94834a27d77ecdd5d7"
+      }
+    },
+    "transitive_descendants": 736
+  },
+  "audit_status": "audit_in_progress",
+  "auditor": "codex-audit-batch-A-20260803-c130c225",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": "cross_confirmation_disagreement",
+  "chain_closes": true,
+  "chain_closure_explanation": "Within the narrowly audited transcript scope, the runner source computes the displayed statistics and conditionally emits the supplied absence-of-fit message; both match the rendered stdout. This does not close the note\u2019s broader framework-gravity framing.",
   "claim_id": "gravity_law_cleanup_note",
-  "claim_scope": null,
+  "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "needs_reaudit_after_invalidation",
+  "claim_type_last_reviewed": "2026-08-03T14:34:54.930803+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-08-03T14:34:54.930803+00:00",
+      "audit_invocation_id": "474050fbba934e6d8eb83e863cc82f0a",
+      "auditor": "codex-audit-batch-A-20260803-c130c225",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowly audited transcript scope, the runner source computes the displayed statistics and conditionally emits the supplied absence-of-fit message; both match the rendered stdout. This does not close the note\u2019s broader framework-gravity framing.",
+      "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The primary-runner cache supplies the six raw per-b t-values descriptively and reports that there are not enough falling-tail points for a review-safe power-law fit.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "stretch_attempt_negative"
+      ],
+      "notes_for_re_audit_if_any": "scope_too_broad: replace \u201cbounded null-result\u201d and \u201cpeaked positive distance response\u201d with \u201ccached algorithm transcript only,\u201d and add a dated downstream-hygiene line to this note\u2019s own boundary forbidding downstream citation as significance or framework-gravity evidence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "The runner genuinely generates deterministic per-seed DAGs, computes field/no-field centroid differences, aggregates mean/SE/t, and produces stdout matching all six rows and the literal no-tail message. The note nevertheless calls this a \u201cbounded null-result\u201d and a \u201cpeaked positive distance response\u201d; because the maximum is at the window endpoint and the algorithm imposes an underived 1/r field, strength, phase band, and propagation rule, those phrases are not review-safe framework-gravity conclusions. N1 leaves only the finite-window numerical attempt closed as a transcript; N2\u2019s multiplicity and absent-tail limitations are independent, N3 identifies the stipulated algorithm as the premise load, and N4 has no prior-residual witness. N5 confines the negative rhetoric to current-cache insufficiency, N6 supplies no indexed premise adding a corrected test or falling tail, N7\u2019s strongest steelman supports descriptive closure only, and N8 provides no applicable echo upgrading it to a physical law."
+    },
+    "mode": "terminal_second_pass",
+    "second_audit": {
+      "audit_date": "2026-08-03T14:34:54.938809+00:00",
+      "audit_invocation_id": "12c7d91824b34f31a14d5efff0d7c62d",
+      "auditor": "codex-audit-batch-B-20260803-bfe852b4",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The supplied code supports the six ratios, endpoint peak, and literal insufficient-tail message. The negative scientific interpretation does not close because the required current-cycle N1, N5, and N7 evidence is absent.",
+      "claim_scope": "On the stipulated generated-DAG runner and cached b-window, the six t-values are descriptive and the code reports no review-safe falling-tail fit; no significance or physical force-law claim is audited.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The cached sweep does not extend far enough past its endpoint to support a review-safe falling-tail power-law fit.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "stretch_attempt_negative"
+      ],
+      "notes_for_re_audit_if_any": "scope_too_broad: limit the claim to literal reproduction of the six cached rows and the code-branch message, and add a dated boundary line stating that the message is not a certified negative scientific result; otherwise supply complete current-cycle N1-N8 evidence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "Issue: the literal table is supported, but the artifact promotes the insufficient-tail message as a stretch-attempt negative; N1 lacks five evidenced attack routes, N5 lacks five-resolution live checks, and N7 lacks an independently resolved steelman. Why this blocks: N2 identifies only the sampling-sufficiency boundary, N3 reveals no additional load-bearing premise, N4 has no prior witness, N6 supplies no candidate adding post-peak samples, and N8 cannot replace missing current-cycle tests. Repair target: supply complete N1-N8 evidence or remove the negative-scientific framing. Claim boundary until fixed: the six ratios, endpoint peak, and literal runner message may be reported descriptively only."
+    },
+    "status": "disagreement"
+  },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
+  "effective_status": "audit_in_progress",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/generative_causal_dag_interference.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audit_in_progress",
   "load_bearing_score": 11.026,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The primary-runner cache supplies the six raw per-b t-values descriptively and reports that there are not enough falling-tail points for a review-safe power-law fit.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "stretch_attempt_negative"
+  ],
   "note_hash": "d7814ad7bf67709f7aa7950db90bcb51ac14fb5f22a13c94834a27d77ecdd5d7",
   "note_path": "docs/GRAVITY_LAW_CLEANUP_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: replace \u201cbounded null-result\u201d and \u201cpeaked positive distance response\u201d with \u201ccached algorithm transcript only,\u201d and add a dated downstream-hygiene line to this note\u2019s own boundary forbidding downstream citation as significance or framework-gravity evidence.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -585,12 +820,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 2,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 2
   },
   "runner_path": "scripts/gravity_distance_fixed_geometry.py",
   "title": "Gravity Law Cleanup Note",
   "transitive_descendants": 736,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely generates deterministic per-seed DAGs, computes field/no-field centroid differences, aggregates mean/SE/t, and produces stdout matching all six rows and the literal no-tail message. The note nevertheless calls this a \u201cbounded null-result\u201d and a \u201cpeaked positive distance response\u201d; because the maximum is at the window endpoint and the algorithm imposes an underived 1/r field, strength, phase band, and propagation rule, those phrases are not review-safe framework-gravity conclusions. N1 leaves only the finite-window numerical attempt closed as a transcript; N2\u2019s multiplicity and absent-tail limitations are independent, N3 identifies the stipulated algorithm as the premise load, and N4 has no prior-residual witness. N5 confines the negative rhetoric to current-cache insufficiency, N6 supplies no indexed premise adding a corrected test or falling tail, N7\u2019s strongest steelman supports descriptive closure only, and N8 provides no applicable echo upgrading it to a physical law."
 }

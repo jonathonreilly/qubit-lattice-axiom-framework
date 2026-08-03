@@ -43,6 +43,10 @@ Triggers (any of):
   8. A live No-Go Discipline packet no longer validates against the current
      evidence/premise policy. Archive it and return the row to fresh audit
      instead of leaving strict lint blocked on stale authority.
+  9. A reviewed one-shot cross-seat disagreement repair manifest exactly
+     matches the current claim, invocation, note, status, criticality, and
+     cross-confirmation state. Archive that state and reopen the row for a
+     fresh simultaneous critical pair under the repaired apply contract.
 
 When triggered, the prior audit fields are archived into previous_audits
 with an `invalidation_reason`, and audit_status is reset to unaudited.
@@ -65,6 +69,20 @@ LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 RUNNER_CLASSIFICATION_PATH = DATA_DIR / "runner_classification.json"
 SOURCE_PATH_ALIASES_PATH = DATA_DIR / "source_path_aliases.json"
 AXIOM_PREMISE_NODES_PATH = DATA_DIR / "axiom_premise_nodes.json"
+CROSS_SEAT_REAUDIT_MANIFEST_PATH = (
+    DATA_DIR / "cross_seat_disagreement_reaudit_manifest_2026-08-03.json"
+)
+CROSS_SEAT_REAUDIT_SCHEMA = "cross_seat_disagreement_reaudit_manifest_v1"
+CROSS_SEAT_REAUDIT_TARGET_FIELDS = frozenset({
+    "claim_id",
+    "expected_audit_invocation_id",
+    "expected_audit_status",
+    "expected_claim_type",
+    "expected_criticality",
+    "expected_cross_confirmation_status",
+    "expected_note_hash",
+    "observed_batch_commit",
+})
 
 _AXIOM_PREMISE_IDS: set[str] | None = None
 
@@ -100,6 +118,118 @@ def _load_runner_classification() -> dict:
 
 _RUNNER_CLASSIFICATION_CACHE: dict | None = None
 _SOURCE_PATH_ALIAS_REPLACEMENTS: list[tuple[str, str]] | None = None
+
+
+def parse_cross_seat_reaudit_manifest(payload: object) -> dict[str, dict]:
+    """Validate guarded one-shot resets without interpreting science.
+
+    Every target binds the exact ledger authority that was produced by the
+    affected batch transaction. A moved row is left untouched; it has either
+    already been reset or acquired newer authority and must not be rolled back
+    by stale repair metadata.
+    """
+    if not isinstance(payload, dict):
+        raise ValueError("cross-seat re-audit manifest must be a JSON object")
+    allowed_top = {"schema", "description", "targets"}
+    unexpected_top = set(payload) - allowed_top
+    if unexpected_top:
+        raise ValueError(
+            "cross-seat re-audit manifest has unexpected fields: "
+            + ", ".join(sorted(unexpected_top))
+        )
+    if payload.get("schema") != CROSS_SEAT_REAUDIT_SCHEMA:
+        raise ValueError("cross-seat re-audit manifest has unsupported schema")
+    targets = payload.get("targets")
+    if not isinstance(targets, list):
+        raise ValueError("cross-seat re-audit manifest targets must be a list")
+
+    parsed: dict[str, dict] = {}
+    for index, target in enumerate(targets):
+        if not isinstance(target, dict):
+            raise ValueError(f"cross-seat re-audit target {index} is not an object")
+        fields = set(target)
+        if fields != CROSS_SEAT_REAUDIT_TARGET_FIELDS:
+            missing = CROSS_SEAT_REAUDIT_TARGET_FIELDS - fields
+            extra = fields - CROSS_SEAT_REAUDIT_TARGET_FIELDS
+            raise ValueError(
+                f"cross-seat re-audit target {index} field mismatch; "
+                f"missing={sorted(missing)} extra={sorted(extra)}"
+            )
+        cid = target.get("claim_id")
+        if not isinstance(cid, str) or not cid:
+            raise ValueError(f"cross-seat re-audit target {index} has invalid claim_id")
+        if cid in parsed:
+            raise ValueError(f"duplicate cross-seat re-audit target: {cid}")
+        invocation_id = target.get("expected_audit_invocation_id")
+        if not isinstance(invocation_id, str) or re.fullmatch(
+            r"[0-9a-f]{32}", invocation_id
+        ) is None:
+            raise ValueError(
+                f"cross-seat re-audit target {cid} has invalid invocation id"
+            )
+        note_hash = target.get("expected_note_hash")
+        if not isinstance(note_hash, str) or re.fullmatch(
+            r"[0-9a-f]{64}", note_hash
+        ) is None:
+            raise ValueError(f"cross-seat re-audit target {cid} has invalid note hash")
+        commit = target.get("observed_batch_commit")
+        if not isinstance(commit, str) or re.fullmatch(r"[0-9a-f]{40}", commit) is None:
+            raise ValueError(
+                f"cross-seat re-audit target {cid} has invalid batch commit"
+            )
+        for field in (
+            "expected_audit_status",
+            "expected_claim_type",
+            "expected_criticality",
+        ):
+            if not isinstance(target.get(field), str) or not target[field]:
+                raise ValueError(
+                    f"cross-seat re-audit target {cid} has invalid {field}"
+                )
+        cross_status = target.get("expected_cross_confirmation_status")
+        if cross_status is not None and not isinstance(cross_status, str):
+            raise ValueError(
+                f"cross-seat re-audit target {cid} has invalid cross status"
+            )
+        parsed[cid] = dict(target)
+    return parsed
+
+
+def load_cross_seat_reaudit_targets() -> dict[str, dict]:
+    if not CROSS_SEAT_REAUDIT_MANIFEST_PATH.exists():
+        return {}
+    try:
+        payload = json.loads(
+            CROSS_SEAT_REAUDIT_MANIFEST_PATH.read_text(encoding="utf-8")
+        )
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError("cannot read cross-seat re-audit manifest") from exc
+    return parse_cross_seat_reaudit_manifest(payload)
+
+
+def cross_seat_reaudit_reason(row: dict, target: dict | None) -> str | None:
+    """Return a reset reason only for the manifest's exact current authority."""
+    if target is None:
+        return None
+    expected = {
+        "claim_id": target["claim_id"],
+        "audit_invocation_id": target["expected_audit_invocation_id"],
+        "audit_status": target["expected_audit_status"],
+        "claim_type": target["expected_claim_type"],
+        "criticality": target["expected_criticality"],
+        "note_hash": target["expected_note_hash"],
+    }
+    if any(row.get(field) != value for field, value in expected.items()):
+        return None
+    cross = row.get("cross_confirmation")
+    cross_status = cross.get("status") if isinstance(cross, dict) else None
+    if cross_status != target["expected_cross_confirmation_status"]:
+        return None
+    return (
+        "cross_seat_disagreement_contract_reaudit:"
+        f"{target['observed_batch_commit']}:"
+        f"{target['expected_audit_invocation_id']}"
+    )
 
 
 def _get_runner_classification() -> dict:
@@ -927,6 +1057,10 @@ def main() -> int:
     invalidated: list[tuple[str, str]] = []
     soft_reset: list[tuple[str, str]] = []
     science_epoch_cache: dict[str, str] = {}
+    try:
+        cross_seat_targets = load_cross_seat_reaudit_targets()
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from exc
     for cid, row in rows.items():
         if row.get("audit_status", "unaudited") == "unaudited":
             continue
@@ -935,11 +1069,13 @@ def main() -> int:
             and not audit_in_progress_has_live_judgment(row)
         ):
             continue
-        reason = detect_invalidation(
-            row,
-            rows,
-            epoch_cache=science_epoch_cache,
-        )
+        reason = cross_seat_reaudit_reason(row, cross_seat_targets.get(cid))
+        if reason is None:
+            reason = detect_invalidation(
+                row,
+                rows,
+                epoch_cache=science_epoch_cache,
+            )
         if reason is None:
             continue
         if reason.startswith("criticality_soft_reset:"):

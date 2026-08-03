@@ -50,8 +50,12 @@ worktrees:
   c5-p11: blockT3 SHIPPED as PR #5938 — P=11 = the relay-swap gap
     DELTA(B,e)=8B-13-8e (derived, never whole-orbit); 869/879 period labels
     horizon-contingent; both leg-(ii) exception rows DISCHARGED_AT_SCOPE
-  c5-g7: G7 (Cycle 882, the readout-identity obligation — the dim-2 clause
-    of the 871 map, AC_RETA live routes only; stacked on G6) — running
+  c5-g7: blockG7 SHIPPED as PR #5939 — the readout half: seven exact
+    theorems incl. the closed-library wall T7; LEMMA-882 EQUIVALENT to the
+    obligation (incremental family blocked-equivalent); 871-pin discrepancy
+    (readout dim 1 vs 2) flagged for audit-lane reconciliation
+  c5-g8: G8 (Cycle 883, SL1 — derive the record-carried weight pair (1,2),
+    the strictly weaker v2=1 door; stacked on G7) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

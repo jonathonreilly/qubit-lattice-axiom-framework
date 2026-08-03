@@ -2,11 +2,11 @@
   "acceptance_scope": "cold execution, source/receipt pins, terminal markers, receipt semantics, and unchanged Cycle713/714/718 interface regressions",
   "artifact": {
     "path": "scripts/frontier_cycle871_openreference_endpoint_packet_package_acceptance_2026_08_02.py",
-    "sha256": "3832003566f38acf4e4603670dfd14a032ee89d1de0cf57cb9bf6ea175540fc1"
+    "sha256": "44fe157222f92d859d544a2c3b8148884dcd9b3a72d506c4f0074cc98078a508"
   },
   "audit": "unset",
   "authority": "none",
-  "content_sha256_before_hash_field": "7f5907ce744f524ab250341f6e58e5c089e29d4cda81f3a2b2afee3e395a0148",
+  "content_sha256_before_hash_field": "a33d566b34f6f6c7e34e26d9393c25362e742f2345c61791327b538a262c7d7a",
   "cycle": 871,
   "package_acceptance_pass": true,
   "runner_rows": [
@@ -14,12 +14,12 @@
       "executed": true,
       "marker": "CYCLE871_OPENREFERENCE_ENDPOINT_PACKET_PASS",
       "name": "cycle871_primary",
-      "observed_receipt_sha256": "6d7c18ac1b9529cf621ff04c7bf49fd8436a4c8e20931b4a5aba9a10908b4d51",
+      "observed_receipt_sha256": "75fbf1c0db9c44111564ef32b2d727a6912ebddfdd07bca50053f573c6144a4c",
       "observed_source_sha256": "dedd76c9cc1d99e6b5b186b964fb2d3ffa34a724d147571069bf23819771b5c2",
       "receipt": "outputs/cycle871_openreference_endpoint_packet_bridge_receipt_2026_08_02.json",
       "receipt_pin_match": true,
       "receipt_semantic_failures": [],
-      "receipt_sha256": "6d7c18ac1b9529cf621ff04c7bf49fd8436a4c8e20931b4a5aba9a10908b4d51",
+      "receipt_sha256": "75fbf1c0db9c44111564ef32b2d727a6912ebddfdd07bca50053f573c6144a4c",
       "returncode": 0,
       "source": "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py",
       "source_pin_match": true,

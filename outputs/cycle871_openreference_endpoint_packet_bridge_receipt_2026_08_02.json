@@ -569,7 +569,7 @@
   "provenance": {
     "duplicate_declared_inputs": 0,
     "input_sha256": {
-      "docs/OPENREFERENCE_MATTER_ENDPOINT_CAUSAL_INTERVAL_PACKET_CYCLE871_BOUNDED_THEOREM_NOTE_2026-08-02.md": "1e0eb51ab8d53575096241977f8e68aed87fc0beef0a571a4578ed0c1ece0788",
+      "docs/OPENREFERENCE_MATTER_ENDPOINT_CAUSAL_INTERVAL_PACKET_CYCLE871_BOUNDED_THEOREM_NOTE_2026-08-02.md": "641177721297d80fba87548d32f8943452f44bd74c6c4cb6aca47251acd9e51a",
       "outputs/cycle871_selected_openreference_seam_cycle714_packet_bridge_check_receipt_2026_08_02.json": "e8ceb57382957f08b523e96e617153ea9fd6807cc756bc6f5568ccdf67d52cdf",
       "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py": "4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a",
       "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",

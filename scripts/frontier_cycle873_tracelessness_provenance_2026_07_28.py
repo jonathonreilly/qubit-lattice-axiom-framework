@@ -300,6 +300,25 @@ def digest(value: object) -> str:
     return sha256(compact(value).encode()).hexdigest()
 
 
+# Fields that carry wall-clock or byte-count state rather than science.  They
+# are stripped before the payload digest so that determinism is asserted on the
+# certified content and never on how long the machine took.
+VOLATILE_FIELDS = (
+    "runtime_seconds", "stdout_bytes", "stdout_under_limit",
+    "runtime_under_limit", "pass", "base_pass",
+)
+
+
+def science_payload(certificates: dict) -> str:
+    return digest({
+        label: {
+            key: value for key, value in row.items()
+            if key not in VOLATILE_FIELDS
+        }
+        for label, row in sorted(certificates.items())
+    })
+
+
 def git_blob(payload: bytes) -> str:
     return sha1(f"blob {len(payload)}\0".encode() + payload).hexdigest()
 
@@ -1586,6 +1605,8 @@ def render_fixed_point(certificates: dict) -> str:
             "sign_sensitive_objects_under_the_witness":
                 certificates["G_VERDICT"][
                     "sign_sensitive_objects_under_the_witness"],
+            "science_payload_sha256":
+                certificates["H_CONTROLS"]["science_payload_sha256"],
             "runtime_seconds": certificates["H_CONTROLS"]["runtime_seconds"],
             "stdout_bytes": certificates["H_CONTROLS"]["stdout_bytes"],
         }
@@ -1688,6 +1709,12 @@ def run() -> int:
         },
         "cache_path": str(CACHE.relative_to(ROOT)),
         "cache_sha256": cache_digest,
+        "science_payload_sha256": "",
+        "science_payload_note": (
+            "sha256 over every certificate with the wall-clock and byte-count "
+            "fields stripped, so cross-process determinism is asserted on the "
+            "certified content and not on machine timing"
+        ),
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
         "runtime_under_limit": elapsed < AUDIT_TIMEOUT_SEC,
@@ -1730,6 +1757,7 @@ def run() -> int:
         "G_VERDICT": verdict,
         "H_CONTROLS": controls,
     }
+    controls["science_payload_sha256"] = science_payload(certificates)
     sys.stdout.write(render_fixed_point(certificates))
     return 0 if all(row["pass"] for row in certificates.values()) else 1
 

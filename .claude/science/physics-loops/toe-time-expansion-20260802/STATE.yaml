@@ -30,8 +30,13 @@ worktrees:
     wall is conditional on (1,1,1)
   c5-g5: gravity axiom-up G5 (Cycle 876, unit-grading provenance: derive or
     price (1,1,1)) — running, stacked on G4
-  c5-form: queue 2b reframed (Cycle 874, copy-redundancy CONTENT robustness,
-    stacked on blockP25) — running
+  c5-form: blockF1 SHIPPED as PR #5929 — copy redundancy priced out (R-flat);
+    the restore contrast is FIRING not content (gap-given-fired = 0.0);
+    sharding is the lever (surviving shard under every direct flip)
+  c5-shard: successor F2 (Cycle 877, sharded content: survival law +
+    reconstruction + cost curve, stacked on F1) — running
+  c5-born: queue 4 (Cycle 878, Born groundwork: composed-record event space,
+    measure-candidate inventory, fraction ledger; stacked on blockP25) — running
   c5-baxis: queue 2c (Cycle 875, B-AXIS second-leg discharge certificate,
     stacked on blockT1) — running
 notes: >

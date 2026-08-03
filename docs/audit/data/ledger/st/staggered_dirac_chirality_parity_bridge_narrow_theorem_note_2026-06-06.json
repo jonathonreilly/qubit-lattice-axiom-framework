@@ -1,42 +1,164 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-03T12:24:27.415611+00:00",
+  "audit_invocation_history": [
+    "0ce1543e0517407fa75b1a205960f79e",
+    "5834d529695046bd88291f2cacdfb56f"
+  ],
+  "audit_invocation_id": "5834d529695046bd88291f2cacdfb56f",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+      "digest": "97c1510eea468d006001a2f32a6180ea005208bcba09884e105b325b4160d07f",
+      "judgment": {
+        "audit_date": "2026-08-03T12:24:27.415611+00:00",
+        "audit_invocation_id": "5834d529695046bd88291f2cacdfb56f",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-audit-batch-B-20260803-f677427e",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "The graph-theoretic result closes conditional on the edge-flip hypothesis. The blocker-retirement chain does not close because no supplied axiom or retained authority derives that physical local chirality must be a scalar grading that flips on every coordinate edge.",
+        "claim_scope": "Claimed retirement of H_staggered_chirality via uniqueness up to global sign of a scalar Z_2 edge-flip grading on nearest-neighbor Z^3, multiplication by the central Pauli Cl(3) pseudoscalar, and edgewise anticommutation with arbitrary nearest-neighbor odd stencils.",
+        "claim_type": "bounded_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": null,
+        "decoration_parent_claim_id": null,
+        "independence": "fresh_context",
+        "load_bearing_step": "The edge-flip rule changes the sign once for each coordinate step, yielding s(x)=s(0)(-1)^(x_1+x_2+x_3).",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [],
+        "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation that physical local chirality is a scalar Z_2 grading which flips on every coordinate edge.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 7,
+          "B": 4,
+          "C": 2,
+          "D": 0,
+          "total_pass": 13
+        },
+        "verdict_rationale": "The Z^3 path-parity argument and Pauli identity correctly establish uniqueness and edgewise anticommutation conditional on a scalar edge-flip grading, and the runner genuinely checks 13 finite algebraic consequences. However, the note assumes the load-bearing edge-flip/chirality identification rather than deriving it from the supplied Lattice and Qubit axioms or a retained authority; defining Omega(x)=epsilon(x)Omega_global then verifies consequences of that assumption. The broader exclusions concerning the full realization, statistics, kinetic operator, and species bridge are honest scope boundaries rather than negative-result assertions."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 10.633,
+    "packet_policy_fingerprint": {
+      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "policy_versions": {
+      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4ba590c2619a6fa278e3e89783dbccc5dd629b912f8bfa4c478a4013c11e730a",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "4ba590c2619a6fa278e3e89783dbccc5dd629b912f8bfa4c478a4013c11e730a",
+    "runner_path": "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "science_fingerprint": {
+      "dependencies": [],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "75d65d14a04a33cdf05c1a080ecccc962d416c3d97dd3135918b24340930446a",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "4ba590c2619a6fa278e3e89783dbccc5dd629b912f8bfa4c478a4013c11e730a"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+        "claim_scope": "Claimed retirement of H_staggered_chirality via uniqueness up to global sign of a scalar Z_2 edge-flip grading on nearest-neighbor Z^3, multiplication by the central Pauli Cl(3) pseudoscalar, and edgewise anticommutation with arbitrary nearest-neighbor odd stencils.",
+        "claim_type": "bounded_theorem",
+        "ledger_note_hash": "fadcd518189d42d4958bf829125db0f95780a2238a8f06387d86b1a159ee8b8a",
+        "note_path": "docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+        "note_sha256": "fadcd518189d42d4958bf829125db0f95780a2238a8f06387d86b1a159ee8b8a"
+      }
+    },
+    "transitive_descendants": 793
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260803-f677427e",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The graph-theoretic result closes conditional on the edge-flip hypothesis. The blocker-retirement chain does not close because no supplied axiom or retained authority derives that physical local chirality must be a scalar grading that flips on every coordinate edge.",
   "claim_id": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-  "claim_scope": null,
+  "claim_scope": "Claimed retirement of H_staggered_chirality via uniqueness up to global sign of a scalar Z_2 edge-flip grading on nearest-neighbor Z^3, multiplication by the central Pauli Cl(3) pseudoscalar, and edgewise anticommutation with arbitrary nearest-neighbor odd stencils.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-08-03T12:24:27.415611+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 10.633,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The edge-flip rule changes the sign once for each coordinate step, yielding s(x)=s(0)(-1)^(x_1+x_2+x_3).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "fadcd518189d42d4958bf829125db0f95780a2238a8f06387d86b1a159ee8b8a",
   "note_path": "docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation that physical local chirality is a scalar Z_2 grading which flips on every coordinate edge.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -4237,14 +4359,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 7,
+    "B": 4,
+    "C": 2,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 13
   },
   "runner_path": "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py",
   "title": "Staggered-Dirac Chirality-Parity Bridge Narrow Theorem Note",
   "transitive_descendants": 793,
-  "verdict_rationale": null
+  "verdict_rationale": "The Z^3 path-parity argument and Pauli identity correctly establish uniqueness and edgewise anticommutation conditional on a scalar edge-flip grading, and the runner genuinely checks 13 finite algebraic consequences. However, the note assumes the load-bearing edge-flip/chirality identification rather than deriving it from the supplied Lattice and Qubit axioms or a retained authority; defining Omega(x)=epsilon(x)Omega_global then verifies consequences of that assumption. The broader exclusions concerning the full realization, statistics, kinetic operator, and species bridge are honest scope boundaries rather than negative-result assertions."
 }

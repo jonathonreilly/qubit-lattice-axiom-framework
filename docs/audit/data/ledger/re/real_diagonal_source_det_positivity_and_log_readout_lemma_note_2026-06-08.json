@@ -1,42 +1,168 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-03T11:31:21.644077+00:00",
+  "audit_invocation_history": [
+    "bd51420f73d64590acac54a8adef66c4",
+    "9b256a6fe7b64b9da2aac7a380de8ef4"
+  ],
+  "audit_invocation_id": "9b256a6fe7b64b9da2aac7a380de8ef4",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 20,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+      "digest": "a2f192fab75ddbdb2a5db15e4b6bef3651013cba0e267ec6cf030a8dbe1f762f",
+      "judgment": {
+        "audit_date": "2026-08-03T11:31:21.644077+00:00",
+        "audit_invocation_id": "9b256a6fe7b64b9da2aac7a380de8ef4",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-audit-batch-B-20260803-f1bead1b",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "L1/L2 close exactly, but the artifact-level derived L3 negative boundary lacks the mandatory N1 alternative-route and N5 multi-resolution evidence needed for a clean verdict.",
+        "claim_scope": "For finite real antisymmetric D, det(S+D)>0 when S is positive diagonal; if D is invertible and ||D^(-1)J||<1 for real diagonal J, then det(D+tJ)>0 for every t in [0,1].",
+        "claim_type": "bounded_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": null,
+        "decoration_parent_claim_id": null,
+        "independence": "fresh_context",
+        "load_bearing_step": "For L1, det(S+D)=det(S) product_k(1+lambda_k^2)>0; for L2, Neumann invertibility makes the real continuous det(D+tJ) sign-constant from positive det D.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [
+          "derived_no_go_boundary"
+        ],
+        "notes_for_re_audit_if_any": "scope_too_broad: supply an N1-N8-complete current-cycle audit surface for the derived L3 negative boundary, or remove that derived assertion while retaining only the L1/L2 scope firewall.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 7,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "total_pass": 7
+        },
+        "verdict_rationale": "Issue: The L1/L2 proofs are exact, but the note also asserts that continuity and direct-sum additivity do not force determinant-only readout without the five-route N1 stress test or N5 per-resolution execution evidence required for that derived negative boundary. Why this blocks: the countermodel closes one route, while the supplied live runner does not certify the broader negative assertion under the required stress-test discipline. Repair target: add a restricted runner and checklist covering at least five distinct attack mechanisms and every required rhetoric resolution, or remove the derived negative assertion. Claim boundary until fixed: the finite-matrix L1/L2 determinant-positivity theorem remains safely supported."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 12.656,
+    "packet_policy_fingerprint": {
+      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "policy_versions": {
+      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "333511b747d7deb95ef6c4ecdff150dc1733e22266f64ce9a771edae26db28be",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "333511b747d7deb95ef6c4ecdff150dc1733e22266f64ce9a771edae26db28be",
+    "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "science_fingerprint": {
+      "dependencies": [],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "526d7a3af96a42542da58a4d51bcfffefccdd2f6ac5d74a09e6ca16603844133",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "333511b747d7deb95ef6c4ecdff150dc1733e22266f64ce9a771edae26db28be"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "claim_scope": "For finite real antisymmetric D, det(S+D)>0 when S is positive diagonal; if D is invertible and ||D^(-1)J||<1 for real diagonal J, then det(D+tJ)>0 for every t in [0,1].",
+        "claim_type": "bounded_theorem",
+        "ledger_note_hash": "9751941ccd00c7d43106220b8ef4375ff21b36d6cdf8e98eeb5a522c27575bdb",
+        "note_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
+        "note_sha256": "9751941ccd00c7d43106220b8ef4375ff21b36d6cdf8e98eeb5a522c27575bdb"
+      }
+    },
+    "transitive_descendants": 1140
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260803-f1bead1b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "L1/L2 close exactly, but the artifact-level derived L3 negative boundary lacks the mandatory N1 alternative-route and N5 multi-resolution evidence needed for a clean verdict.",
   "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-  "claim_scope": null,
+  "claim_scope": "For finite real antisymmetric D, det(S+D)>0 when S is positive diagonal; if D is invertible and ||D^(-1)J||<1 for real diagonal J, then det(D+tJ)>0 for every t in [0,1].",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-08-03T11:31:21.644077+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 12.656,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For L1, det(S+D)=det(S) product_k(1+lambda_k^2)>0; for L2, Neumann invertibility makes the real continuous det(D+tJ) sign-constant from positive det D.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "9751941ccd00c7d43106220b8ef4375ff21b36d6cdf8e98eeb5a522c27575bdb",
   "note_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: supply an N1-N8-complete current-cycle audit surface for the derived L3 negative boundary, or remove that derived assertion while retaining only the L1/L2 scope firewall.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -2294,14 +2420,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 7,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 7
   },
   "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
   "title": "Real-Diagonal Source Determinant Positivity (Self-Contained Lemma)",
   "transitive_descendants": 1140,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The L1/L2 proofs are exact, but the note also asserts that continuity and direct-sum additivity do not force determinant-only readout without the five-route N1 stress test or N5 per-resolution execution evidence required for that derived negative boundary. Why this blocks: the countermodel closes one route, while the supplied live runner does not certify the broader negative assertion under the required stress-test discipline. Repair target: add a restricted runner and checklist covering at least five distinct attack mechanisms and every required rhetoric resolution, or remove the derived negative assertion. Claim boundary until fixed: the finite-matrix L1/L2 determinant-positivity theorem remains safely supported."
 }

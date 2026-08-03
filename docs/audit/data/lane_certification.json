@@ -2193,7 +2193,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",

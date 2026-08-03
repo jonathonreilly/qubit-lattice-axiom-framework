@@ -1,11 +1,25 @@
 {
-  "audit_date": "2026-08-03T02:01:48.035520+00:00",
+  "audit_date": "2026-08-03T02:24:00.524137+00:00",
   "audit_invocation_history": [
     "658aa165a4974a8fb786a9e778c923ed",
-    "5f7dc32e642f47c19c187c7acaa1d18f"
+    "5f7dc32e642f47c19c187c7acaa1d18f",
+    "b8d1e82d5c394084a84a77c82834ac29"
   ],
-  "audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f",
+  "audit_invocation_id": "b8d1e82d5c394084a84a77c82834ac29",
   "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py"
+    },
     "criticality": "critical",
     "dep_axiom_premise_note_hash": {
       "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
@@ -29,22 +43,23 @@
     "helper_runner_hashes": {},
     "judgment_fingerprint": {
       "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "digest": "6ad063b65d85732d77234143452456812c46eb572f2edc5ac191404ec03814a1",
+      "digest": "7b431a907f3c98fdb767d6ea29f044c2327e2d5a1157df7783c7f1a73a3d70df",
       "judgment": {
-        "audit_date": "2026-08-03T02:01:48.035520+00:00",
-        "audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f",
-        "audit_status": "audit_in_progress",
-        "auditor": "codex-audit-batch-A-20260803-3b6b8e66",
-        "auditor_confidence": "high",
+        "audit_date": "2026-08-03T02:24:00.524137+00:00",
+        "audit_invocation_id": "b8d1e82d5c394084a84a77c82834ac29",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-judicial-1-20260803-914299d2",
+        "auditor_confidence": "judicial",
         "auditor_family": "codex-gpt-5.6",
         "auditor_model": "gpt-5.6-sol",
         "auditor_reasoning_effort": "xhigh",
         "chain_closes": false,
-        "chain_closure_explanation": "The chain does not close as written: M2 misclassifies the k=0 zero-dimensional module by testing 2\u00d72 zero operators, and the packet clips portions of the source proof and retained Cl(3) authority needed for the remaining independent audit.",
-        "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+        "chain_closure_explanation": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-914299d2\", \"judge\": 1, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5515663e\", \"judge\": 2, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-2e323c3a\", \"judge\": 3, \"rationale\": \"The retained Cl(3) split supports k=1 implying complex dimension two, the unitary-equivalence argument, and the faithful k>=2 counterexamples. P-QBIT supplies rather than derives physical irreducibility and *-compatibility, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, requiring narrowing and repair rather than failure of the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-113051da\", \"judge\": 4, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-a5d4d7ac\", \"judge\": 5, \"rationale\": \"The retained Cl(3) split supports the k=1 dimensional implication, unitary-equivalence argument, and faithful k>=2 counterexamples. P-QBIT supplies physical irreducibility and *-compatibility but is neither derived nor registered as an accepted premise, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization must be excluded rather than allowed to invalidate the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]",
+        "claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
         "claim_type": "bounded_theorem",
-        "claim_type_provenance": "audited",
+        "claim_type_provenance": "judicial_review",
         "cross_confirmation": {
+          "agreement_schema": "audit_tuple_v2",
           "first_audit": {
             "audit_date": "2026-08-03T02:01:48.035520+00:00",
             "audit_invocation_id": "658aa165a4974a8fb786a9e778c923ed",
@@ -76,7 +91,165 @@
             "verdict": "audited_failed",
             "verdict_rationale": "Issue: M2 conflates the zero-dimensional k=0 module with 2\u00d72 zero operators; on H=0 the identity operator is zero, so the Clifford relation is satisfied, although the representation is unfaithful because its kernel is nontrivial. Why this blocks: the source's explicit k=0 classification and table are false as written, the runner tests the wrong carrier dimension, and clipped source and authority spans prevent complete independent verification of the remaining formulas. Repair target: correct the k=0 argument and runner\u2014or explicitly restrict to nonzero carriers and remove k=0 from the module enumeration\u2014then provide an unclipped authenticated packet. Claim boundary until fixed: the conditional k=1 implication and displayed k>=2 witnesses support the narrow derived boundary that Cl(3) alone does not force k=1, but they do not establish retained-grade physical-carrier closure beyond P-QBIT."
           },
-          "mode": "terminal_second_pass",
+          "judicial_panel_record_v1": {
+            "cid": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+            "disagreement_fingerprint": {
+              "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "first_audit_invocation_id": "658aa165a4974a8fb786a9e778c923ed",
+              "note_hash": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937",
+              "schema": "judicial_disagreement_fingerprint_v1",
+              "seat_summaries_sha256": "ff4e0ebc25baed8f04d7bbf2572ccc0aea98648702ab6fb9f3a7c239b63eadf6",
+              "second_audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f"
+            },
+            "failures": [],
+            "invocation_id": "b8d1e82d5c394084a84a77c82834ac29",
+            "majority_count": 3,
+            "panel": 3,
+            "result": "majority_candidate",
+            "schema": "judicial_panel_record_v1",
+            "tally": [
+              {
+                "count": 3,
+                "tuple": [
+                  "hybrid",
+                  "audited_conditional",
+                  "bounded_theorem",
+                  "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+                  "A",
+                  null,
+                  [
+                    "bounded_with_named_walls",
+                    "conditional_wall_rationale",
+                    "derived_no_go_boundary"
+                  ]
+                ]
+              },
+              {
+                "count": 2,
+                "tuple": [
+                  "hybrid",
+                  "audited_conditional",
+                  "bounded_theorem",
+                  "Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.",
+                  "A",
+                  null,
+                  [
+                    "bounded_with_named_walls",
+                    "conditional_wall_rationale",
+                    "derived_no_go_boundary"
+                  ]
+                ]
+              }
+            ],
+            "votes": [
+              {
+                "auditor": "codex-judicial-1-20260803-914299d2",
+                "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable error and packet clipping as failure of the supported nonzero-carrier core; that core remains valid but conditional on P-QBIT.",
+                "hybrid_resolution_note": "Adopt the second auditor's conditional verdict while narrowing explicitly to nonzero carriers, and preserve the first auditor's k=0 correction as required repair rather than failing the separable conditional core.",
+                "judge": 1,
+                "judgment_rationale": "The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.",
+                "negative_assertion_classes": [
+                  "bounded_with_named_walls",
+                  "conditional_wall_rationale",
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or supply a retained physical-carrier bridge; also correct M2 and the runner so the zero-dimensional module is Clifford-valid but unfaithful, then regenerate an unclipped packet.",
+                "ratified_claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+                "ratified_claim_type": "bounded_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "From the retained Cl(3) split, k=1 implies dim_C H_x=2, while P-QBIT explicitly supplies the irreducibility and *-module structure used for unitary Pauli equivalence.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_conditional",
+                "second_auditor_error": "The second auditor chose the appropriate conditional verdict but overlooked the false k=0 non-Clifford classification and the runner's dimension-mismatched zero-matrix test, requiring explicit nonzero-carrier narrowing and repair.",
+                "sided_with": "hybrid"
+              },
+              {
+                "auditor": "codex-judicial-2-20260803-5515663e",
+                "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable ancillary error and packet clipping as grounds for audited_failed; the nonzero-carrier conditional core remains assessable and is conditional because P-QBIT is unregistered.",
+                "hybrid_resolution_note": "Adopt the second auditor's conditional verdict while narrowing explicitly to nonzero carriers, and preserve the first auditor's k=0 correction as required repair rather than failing the separable conditional core.",
+                "judge": 2,
+                "judgment_rationale": "The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.",
+                "negative_assertion_classes": [
+                  "bounded_with_named_walls",
+                  "conditional_wall_rationale",
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or supply a retained physical-carrier bridge; also correct M2 and the runner so the zero-dimensional module is Clifford-valid but unfaithful, then regenerate an unclipped packet.",
+                "ratified_claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+                "ratified_claim_type": "bounded_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "From the retained Cl(3) split, k=1 implies dim_C H_x=2, while P-QBIT explicitly supplies the irreducibility and *-module structure used for unitary Pauli equivalence.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_conditional",
+                "second_auditor_error": "The second auditor failed to flag that M2 and the runner test a 2x2 zero action instead of the zero-dimensional module, requiring an explicit nonzero-carrier restriction and a repair note.",
+                "sided_with": "hybrid"
+              },
+              {
+                "auditor": "codex-judicial-3-20260803-2e323c3a",
+                "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable error and packet clipping as failure of the supported nonzero-carrier conditional core.",
+                "hybrid_resolution_note": "Retain the second auditor's conditional treatment of P-QBIT while adopting the first auditor's k=0 correction; narrow the ratified result to nonzero carriers and explicitly exclude the erroneous non-Clifford characterization of the zero-dimensional module.",
+                "judge": 3,
+                "judgment_rationale": "The retained Cl(3) split supports k=1 implying complex dimension two, the unitary-equivalence argument, and the faithful k>=2 counterexamples. P-QBIT supplies rather than derives physical irreducibility and *-compatibility, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, requiring narrowing and repair rather than failure of the separable core.",
+                "negative_assertion_classes": [
+                  "bounded_with_named_walls",
+                  "conditional_wall_rationale",
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or cite a retained bridge for physical-carrier irreducibility; also correct M2 and its runner so H=0 is a valid nonfaithful module, or explicitly restrict the theorem to nonzero carriers, then regenerate an unclipped packet.",
+                "ratified_claim_scope": "Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.",
+                "ratified_claim_type": "bounded_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "From the retained split, k=1 implies dim_C H_x=2; P-QBIT supplies irreducibility and the *-module premise, after which polar decomposition gives unitary equivalence.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_conditional",
+                "second_auditor_error": "The second auditor correctly chose a conditional verdict but overlooked the source and runner's k=0 defect and therefore failed to exclude the false non-Clifford characterization from its ratified scope.",
+                "sided_with": "hybrid"
+              },
+              {
+                "auditor": "codex-judicial-4-20260803-113051da",
+                "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable ancillary error and packet clipping as grounds for audited_failed; the nonzero-carrier conditional core remains assessable and is conditional because P-QBIT is unregistered.",
+                "hybrid_resolution_note": "Adopt the second auditor's conditional verdict while narrowing explicitly to nonzero carriers, and preserve the first auditor's k=0 correction as required repair rather than failing the separable conditional core.",
+                "judge": 4,
+                "judgment_rationale": "The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.",
+                "negative_assertion_classes": [
+                  "bounded_with_named_walls",
+                  "conditional_wall_rationale",
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or supply a retained physical-carrier bridge; also correct M2 and the runner so the zero-dimensional module is Clifford-valid but unfaithful, then regenerate an unclipped packet.",
+                "ratified_claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+                "ratified_claim_type": "bounded_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "From the retained Cl(3) split, k=1 implies dim_C H_x=2, while P-QBIT explicitly supplies the irreducibility and *-module structure used for unitary Pauli equivalence.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_conditional",
+                "second_auditor_error": "The second auditor failed to flag that M2 and the runner test 2x2 zero operators instead of the zero-dimensional module, requiring an explicit nonzero-carrier restriction and repair.",
+                "sided_with": "hybrid"
+              },
+              {
+                "auditor": "codex-judicial-5-20260803-a5d4d7ac",
+                "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable error and packet clipping as failure of the supported nonzero-carrier conditional core.",
+                "hybrid_resolution_note": "Retain the second auditor's conditional verdict while adopting the first auditor's k=0 correction; narrow the result to nonzero carriers and explicit k>=1 witnesses, excluding the k=0 characterization pending repair.",
+                "judge": 5,
+                "judgment_rationale": "The retained Cl(3) split supports the k=1 dimensional implication, unitary-equivalence argument, and faithful k>=2 counterexamples. P-QBIT supplies physical irreducibility and *-compatibility but is neither derived nor registered as an accepted premise, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization must be excluded rather than allowed to invalidate the separable core.",
+                "negative_assertion_classes": [
+                  "bounded_with_named_walls",
+                  "conditional_wall_rationale",
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or cite a retained bridge for physical-carrier irreducibility; also correct M2 and its runner so H=0 is a valid nonfaithful module, or explicitly restrict the theorem to nonzero carriers, then regenerate an unclipped packet.",
+                "ratified_claim_scope": "Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.",
+                "ratified_claim_type": "bounded_theorem",
+                "ratified_decoration_parent_claim_id": null,
+                "ratified_load_bearing_step": "From the retained split, k=1 implies dim_C H_x=2; P-QBIT supplies irreducibility and the *-module premise, after which polar decomposition gives unitary equivalence.",
+                "ratified_load_bearing_step_class": "A",
+                "ratified_verdict": "audited_conditional",
+                "second_auditor_error": "The second auditor correctly chose a conditional verdict but overlooked the source and runner's k=0 defect and therefore failed to exclude the false non-Clifford characterization from its ratified scope.",
+                "sided_with": "hybrid"
+              }
+            ]
+          },
+          "mode": "judicial_panel_majority",
           "second_audit": {
             "audit_date": "2026-08-03T02:01:48.041185+00:00",
             "audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f",
@@ -109,17 +282,40 @@
             "verdict": "audited_conditional",
             "verdict_rationale": "The retained Cl(3) split and standard semisimple representation theory support M1, C1, the equivalence statements, and the explicit k>=2 counterexamples. The physical k=1 conclusion nevertheless enters through local premise P-QBIT, while the runner only guards that premise's text rather than deriving the carrier selection. N1-N8 prose judgment is conservative: alternate-carrier modules establish the countermodel (N1), irreducible-carrier selection is the named limitation (N2), P-QBIT is explicit rather than hidden (N3), k>=2 witnesses match the algebra-only residual (N4), the rhetoric remains scoped (N5), no supplied registry candidate provides carrier irreducibility (N6), the strongest algebra-only steelman is defeated by those countermodels (N7), and clipped cross-cycle material prevents a complete structured N8 audit. The binding packet preflight reports clipped load-bearing evidence and therefore independently forbids an audited-clean verdict."
           },
-          "status": "disagreement"
+          "status": "third_confirmed_hybrid",
+          "third_audit": {
+            "audit_date": "2026-08-03T02:24:00.524137+00:00",
+            "audit_invocation_id": "b8d1e82d5c394084a84a77c82834ac29",
+            "auditor": "codex-judicial-1-20260803-914299d2",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+            "claim_type": "bounded_theorem",
+            "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable error and packet clipping as failure of the supported nonzero-carrier core; that core remains valid but conditional on P-QBIT.",
+            "independence": "judicial_review",
+            "judgment_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-914299d2\", \"judge\": 1, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5515663e\", \"judge\": 2, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-2e323c3a\", \"judge\": 3, \"rationale\": \"The retained Cl(3) split supports k=1 implying complex dimension two, the unitary-equivalence argument, and the faithful k>=2 counterexamples. P-QBIT supplies rather than derives physical irreducibility and *-compatibility, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, requiring narrowing and repair rather than failure of the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-113051da\", \"judge\": 4, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-a5d4d7ac\", \"judge\": 5, \"rationale\": \"The retained Cl(3) split supports the k=1 dimensional implication, unitary-equivalence argument, and faithful k>=2 counterexamples. P-QBIT supplies physical irreducibility and *-compatibility but is neither derived nor registered as an accepted premise, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization must be excluded rather than allowed to invalidate the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "bounded_with_named_walls",
+              "conditional_wall_rationale",
+              "derived_no_go_boundary"
+            ],
+            "second_auditor_error": "The second auditor chose the appropriate conditional verdict but overlooked the false k=0 non-Clifford classification and the runner's dimension-mismatched zero-matrix test, requiring explicit nonzero-carrier narrowing and repair.",
+            "sided_with": "hybrid",
+            "verdict": "audited_conditional"
+          }
         },
         "decoration_parent_claim_id": null,
-        "independence": "cross_family",
+        "independence": "judicial_review",
         "load_bearing_step": "Under P-QBIT the physical carrier has k=1 and dimension two, while the retained Cl(3) split classifies abstract modules by multiplicities n_+ and n_-.",
         "load_bearing_step_class": "A",
         "negative_assertion_classes": [
           "bounded_with_named_walls",
+          "conditional_wall_rationale",
           "derived_no_go_boundary"
         ],
-        "notes_for_re_audit_if_any": "Fix M2's k=0 module treatment and matching runner test, then regenerate the restricted packet with complete source and authority spans and recheck the M1/M2/C2 formula family.",
+        "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or supply a retained physical-carrier bridge; also correct M2 and the runner so the zero-dimensional module is Clifford-valid but unfaithful, then regenerate an unclipped packet.",
         "open_dependency_paths": [],
         "runner_check_breakdown": {
           "A": 56,
@@ -128,7 +324,7 @@
           "D": 0,
           "total_pass": 64
         },
-        "verdict_rationale": "Issue: M2 conflates the zero-dimensional k=0 module with 2\u00d72 zero operators; on H=0 the identity operator is zero, so the Clifford relation is satisfied, although the representation is unfaithful because its kernel is nontrivial. Why this blocks: the source's explicit k=0 classification and table are false as written, the runner tests the wrong carrier dimension, and clipped source and authority spans prevent complete independent verification of the remaining formulas. Repair target: correct the k=0 argument and runner\u2014or explicitly restrict to nonzero carriers and remove k=0 from the module enumeration\u2014then provide an unclipped authenticated packet. Claim boundary until fixed: the conditional k=1 implication and displayed k>=2 witnesses support the narrow derived boundary that Cl(3) alone does not force k=1, but they do not establish retained-grade physical-carrier closure beyond P-QBIT."
+        "verdict_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-914299d2\", \"judge\": 1, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5515663e\", \"judge\": 2, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-2e323c3a\", \"judge\": 3, \"rationale\": \"The retained Cl(3) split supports k=1 implying complex dimension two, the unitary-equivalence argument, and the faithful k>=2 counterexamples. P-QBIT supplies rather than derives physical irreducibility and *-compatibility, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, requiring narrowing and repair rather than failure of the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-113051da\", \"judge\": 4, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-a5d4d7ac\", \"judge\": 5, \"rationale\": \"The retained Cl(3) split supports the k=1 dimensional implication, unitary-equivalence argument, and faithful k>=2 counterexamples. P-QBIT supplies physical irreducibility and *-compatibility but is neither derived nor registered as an accepted premise, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization must be excluded rather than allowed to invalidate the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]"
       },
       "schema": "frozen_audit_judgment_v1"
     },
@@ -146,7 +342,26 @@
         "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
       }
     },
+    "policy_versions": {
+      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "532cbb2fb98740096280d8678dd344f84fe4962a044498f63eb0202e7eb1476e",
+        "cache_status": "ok"
+      }
+    },
     "runner_hash": "532cbb2fb98740096280d8678dd344f84fe4962a044498f63eb0202e7eb1476e",
+    "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
     "science_fingerprint": {
       "dependencies": [
         {
@@ -173,7 +388,7 @@
         }
       ],
       "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "50d74ddfb0ce1643b2415afd2ed0e6001ddc5db051a8232067c131c061236770",
+      "digest": "caf83b0f9e1e366b345a098b327b6843de30d6bef41821e5defad3c4b85d746c",
       "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
       "runners": [
         {
@@ -189,7 +404,7 @@
       "schema": "science_fingerprint_v2",
       "target": {
         "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+        "claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
         "claim_type": "bounded_theorem",
         "ledger_note_hash": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937",
         "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
@@ -198,24 +413,25 @@
     },
     "transitive_descendants": 816
   },
-  "audit_status": "audit_in_progress",
-  "auditor": "codex-audit-batch-A-20260803-3b6b8e66",
-  "auditor_confidence": "high",
+  "audit_status": "audited_conditional",
+  "auditor": "codex-judicial-1-20260803-914299d2",
+  "auditor_confidence": "judicial",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
-  "blocker": "cross_confirmation_disagreement",
+  "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The chain does not close as written: M2 misclassifies the k=0 zero-dimensional module by testing 2\u00d72 zero operators, and the packet clips portions of the source proof and retained Cl(3) authority needed for the remaining independent audit.",
+  "chain_closure_explanation": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-914299d2\", \"judge\": 1, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5515663e\", \"judge\": 2, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-2e323c3a\", \"judge\": 3, \"rationale\": \"The retained Cl(3) split supports k=1 implying complex dimension two, the unitary-equivalence argument, and the faithful k>=2 counterexamples. P-QBIT supplies rather than derives physical irreducibility and *-compatibility, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, requiring narrowing and repair rather than failure of the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-113051da\", \"judge\": 4, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-a5d4d7ac\", \"judge\": 5, \"rationale\": \"The retained Cl(3) split supports the k=1 dimensional implication, unitary-equivalence argument, and faithful k>=2 counterexamples. P-QBIT supplies physical irreducibility and *-compatibility but is neither derived nor registered as an accepted premise, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization must be excluded rather than allowed to invalidate the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]",
   "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-  "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+  "claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-08-03T02:01:48.035520+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": "2026-08-03T02:24:00.524137+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-08-03T02:01:48.035520+00:00",
       "audit_invocation_id": "658aa165a4974a8fb786a9e778c923ed",
@@ -247,7 +463,170 @@
       "verdict": "audited_failed",
       "verdict_rationale": "Issue: M2 conflates the zero-dimensional k=0 module with 2\u00d72 zero operators; on H=0 the identity operator is zero, so the Clifford relation is satisfied, although the representation is unfaithful because its kernel is nontrivial. Why this blocks: the source's explicit k=0 classification and table are false as written, the runner tests the wrong carrier dimension, and clipped source and authority spans prevent complete independent verification of the remaining formulas. Repair target: correct the k=0 argument and runner\u2014or explicitly restrict to nonzero carriers and remove k=0 from the module enumeration\u2014then provide an unclipped authenticated packet. Claim boundary until fixed: the conditional k=1 implication and displayed k>=2 witnesses support the narrow derived boundary that Cl(3) alone does not force k=1, but they do not establish retained-grade physical-carrier closure beyond P-QBIT."
     },
-    "mode": "terminal_second_pass",
+    "judicial_panel_record_v1": {
+      "cid": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+      "disagreement_fingerprint": {
+        "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "first_audit_invocation_id": "658aa165a4974a8fb786a9e778c923ed",
+        "note_hash": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "ff4e0ebc25baed8f04d7bbf2572ccc0aea98648702ab6fb9f3a7c239b63eadf6",
+        "second_audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f"
+      },
+      "failures": [],
+      "invocation_id": "b8d1e82d5c394084a84a77c82834ac29",
+      "majority_count": 3,
+      "panel": 3,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 3,
+          "tuple": [
+            "hybrid",
+            "audited_conditional",
+            "bounded_theorem",
+            "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+            "A",
+            null,
+            [
+              "bounded_with_named_walls",
+              "conditional_wall_rationale",
+              "derived_no_go_boundary"
+            ]
+          ]
+        },
+        {
+          "count": 2,
+          "tuple": [
+            "hybrid",
+            "audited_conditional",
+            "bounded_theorem",
+            "Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.",
+            "A",
+            null,
+            [
+              "bounded_with_named_walls",
+              "conditional_wall_rationale",
+              "derived_no_go_boundary"
+            ]
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260803-914299d2",
+          "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable error and packet clipping as failure of the supported nonzero-carrier core; that core remains valid but conditional on P-QBIT.",
+          "hybrid_resolution_note": "Adopt the second auditor's conditional verdict while narrowing explicitly to nonzero carriers, and preserve the first auditor's k=0 correction as required repair rather than failing the separable conditional core.",
+          "judge": 1,
+          "judgment_rationale": "The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or supply a retained physical-carrier bridge; also correct M2 and the runner so the zero-dimensional module is Clifford-valid but unfaithful, then regenerate an unclipped packet.",
+          "ratified_claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "From the retained Cl(3) split, k=1 implies dim_C H_x=2, while P-QBIT explicitly supplies the irreducibility and *-module structure used for unitary Pauli equivalence.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "The second auditor chose the appropriate conditional verdict but overlooked the false k=0 non-Clifford classification and the runner's dimension-mismatched zero-matrix test, requiring explicit nonzero-carrier narrowing and repair.",
+          "sided_with": "hybrid"
+        },
+        {
+          "auditor": "codex-judicial-2-20260803-5515663e",
+          "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable ancillary error and packet clipping as grounds for audited_failed; the nonzero-carrier conditional core remains assessable and is conditional because P-QBIT is unregistered.",
+          "hybrid_resolution_note": "Adopt the second auditor's conditional verdict while narrowing explicitly to nonzero carriers, and preserve the first auditor's k=0 correction as required repair rather than failing the separable conditional core.",
+          "judge": 2,
+          "judgment_rationale": "The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or supply a retained physical-carrier bridge; also correct M2 and the runner so the zero-dimensional module is Clifford-valid but unfaithful, then regenerate an unclipped packet.",
+          "ratified_claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "From the retained Cl(3) split, k=1 implies dim_C H_x=2, while P-QBIT explicitly supplies the irreducibility and *-module structure used for unitary Pauli equivalence.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "The second auditor failed to flag that M2 and the runner test a 2x2 zero action instead of the zero-dimensional module, requiring an explicit nonzero-carrier restriction and a repair note.",
+          "sided_with": "hybrid"
+        },
+        {
+          "auditor": "codex-judicial-3-20260803-2e323c3a",
+          "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable error and packet clipping as failure of the supported nonzero-carrier conditional core.",
+          "hybrid_resolution_note": "Retain the second auditor's conditional treatment of P-QBIT while adopting the first auditor's k=0 correction; narrow the ratified result to nonzero carriers and explicitly exclude the erroneous non-Clifford characterization of the zero-dimensional module.",
+          "judge": 3,
+          "judgment_rationale": "The retained Cl(3) split supports k=1 implying complex dimension two, the unitary-equivalence argument, and the faithful k>=2 counterexamples. P-QBIT supplies rather than derives physical irreducibility and *-compatibility, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, requiring narrowing and repair rather than failure of the separable core.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or cite a retained bridge for physical-carrier irreducibility; also correct M2 and its runner so H=0 is a valid nonfaithful module, or explicitly restrict the theorem to nonzero carriers, then regenerate an unclipped packet.",
+          "ratified_claim_scope": "Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "From the retained split, k=1 implies dim_C H_x=2; P-QBIT supplies irreducibility and the *-module premise, after which polar decomposition gives unitary equivalence.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "The second auditor correctly chose a conditional verdict but overlooked the source and runner's k=0 defect and therefore failed to exclude the false non-Clifford characterization from its ratified scope.",
+          "sided_with": "hybrid"
+        },
+        {
+          "auditor": "codex-judicial-4-20260803-113051da",
+          "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable ancillary error and packet clipping as grounds for audited_failed; the nonzero-carrier conditional core remains assessable and is conditional because P-QBIT is unregistered.",
+          "hybrid_resolution_note": "Adopt the second auditor's conditional verdict while narrowing explicitly to nonzero carriers, and preserve the first auditor's k=0 correction as required repair rather than failing the separable conditional core.",
+          "judge": 4,
+          "judgment_rationale": "The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or supply a retained physical-carrier bridge; also correct M2 and the runner so the zero-dimensional module is Clifford-valid but unfaithful, then regenerate an unclipped packet.",
+          "ratified_claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "From the retained Cl(3) split, k=1 implies dim_C H_x=2, while P-QBIT explicitly supplies the irreducibility and *-module structure used for unitary Pauli equivalence.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "The second auditor failed to flag that M2 and the runner test 2x2 zero operators instead of the zero-dimensional module, requiring an explicit nonzero-carrier restriction and repair.",
+          "sided_with": "hybrid"
+        },
+        {
+          "auditor": "codex-judicial-5-20260803-a5d4d7ac",
+          "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable error and packet clipping as failure of the supported nonzero-carrier conditional core.",
+          "hybrid_resolution_note": "Retain the second auditor's conditional verdict while adopting the first auditor's k=0 correction; narrow the result to nonzero carriers and explicit k>=1 witnesses, excluding the k=0 characterization pending repair.",
+          "judge": 5,
+          "judgment_rationale": "The retained Cl(3) split supports the k=1 dimensional implication, unitary-equivalence argument, and faithful k>=2 counterexamples. P-QBIT supplies physical irreducibility and *-compatibility but is neither derived nor registered as an accepted premise, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization must be excluded rather than allowed to invalidate the separable core.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or cite a retained bridge for physical-carrier irreducibility; also correct M2 and its runner so H=0 is a valid nonfaithful module, or explicitly restrict the theorem to nonzero carriers, then regenerate an unclipped packet.",
+          "ratified_claim_scope": "Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "From the retained split, k=1 implies dim_C H_x=2; P-QBIT supplies irreducibility and the *-module premise, after which polar decomposition gives unitary equivalence.",
+          "ratified_load_bearing_step_class": "A",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "The second auditor correctly chose a conditional verdict but overlooked the source and runner's k=0 defect and therefore failed to exclude the false non-Clifford characterization from its ratified scope.",
+          "sided_with": "hybrid"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-08-03T02:01:48.041185+00:00",
       "audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f",
@@ -280,7 +659,29 @@
       "verdict": "audited_conditional",
       "verdict_rationale": "The retained Cl(3) split and standard semisimple representation theory support M1, C1, the equivalence statements, and the explicit k>=2 counterexamples. The physical k=1 conclusion nevertheless enters through local premise P-QBIT, while the runner only guards that premise's text rather than deriving the carrier selection. N1-N8 prose judgment is conservative: alternate-carrier modules establish the countermodel (N1), irreducible-carrier selection is the named limitation (N2), P-QBIT is explicit rather than hidden (N3), k>=2 witnesses match the algebra-only residual (N4), the rhetoric remains scoped (N5), no supplied registry candidate provides carrier irreducibility (N6), the strongest algebra-only steelman is defeated by those countermodels (N7), and clipped cross-cycle material prevents a complete structured N8 audit. The binding packet preflight reports clipped load-bearing evidence and therefore independently forbids an audited-clean verdict."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_hybrid",
+    "third_audit": {
+      "audit_date": "2026-08-03T02:24:00.524137+00:00",
+      "audit_invocation_id": "b8d1e82d5c394084a84a77c82834ac29",
+      "auditor": "codex-judicial-1-20260803-914299d2",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.",
+      "claim_type": "bounded_theorem",
+      "first_auditor_error": "The first auditor correctly identified the k=0 defect but incorrectly treated that severable error and packet clipping as failure of the supported nonzero-carrier core; that core remains valid but conditional on P-QBIT.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-914299d2\", \"judge\": 1, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5515663e\", \"judge\": 2, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-2e323c3a\", \"judge\": 3, \"rationale\": \"The retained Cl(3) split supports k=1 implying complex dimension two, the unitary-equivalence argument, and the faithful k>=2 counterexamples. P-QBIT supplies rather than derives physical irreducibility and *-compatibility, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, requiring narrowing and repair rather than failure of the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-113051da\", \"judge\": 4, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-a5d4d7ac\", \"judge\": 5, \"rationale\": \"The retained Cl(3) split supports the k=1 dimensional implication, unitary-equivalence argument, and faithful k>=2 counterexamples. P-QBIT supplies physical irreducibility and *-compatibility but is neither derived nor registered as an accepted premise, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization must be excluded rather than allowed to invalidate the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "second_auditor_error": "The second auditor chose the appropriate conditional verdict but overlooked the false k=0 non-Clifford classification and the runner's dimension-mismatched zero-matrix test, requiring explicit nonzero-carrier narrowing and repair.",
+      "sided_with": "hybrid",
+      "verdict": "audited_conditional"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [
@@ -288,11 +689,11 @@
     "cl3_complexification_split_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 5,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 12.174,
   "load_bearing_step": "Under P-QBIT the physical carrier has k=1 and dimension two, while the retained Cl(3) split classifies abstract modules by multiplicities n_+ and n_-.",
   "load_bearing_step_class": "A",
@@ -300,11 +701,12 @@
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [
     "bounded_with_named_walls",
+    "conditional_wall_rationale",
     "derived_no_go_boundary"
   ],
   "note_hash": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937",
   "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": "Fix M2's k=0 module treatment and matching runner test, then regenerate the restricted packet with complete source and authority spans and recheck the M1/M2/C2 formula family.",
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: register P-QBIT as an approved premise or supply a retained physical-carrier bridge; also correct M2 and the runner so the zero-dimensional module is Clifford-valid but unfaithful, then regenerate an unclipped packet.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -2176,5 +2578,5 @@
   "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
   "title": "Staggered-Dirac Substep 1 \u2014 Qubit-Axiom Single-Module / U4 Conditional Repair",
   "transitive_descendants": 816,
-  "verdict_rationale": "Issue: M2 conflates the zero-dimensional k=0 module with 2\u00d72 zero operators; on H=0 the identity operator is zero, so the Clifford relation is satisfied, although the representation is unfaithful because its kernel is nontrivial. Why this blocks: the source's explicit k=0 classification and table are false as written, the runner tests the wrong carrier dimension, and clipped source and authority spans prevent complete independent verification of the remaining formulas. Repair target: correct the k=0 argument and runner\u2014or explicitly restrict to nonzero carriers and remove k=0 from the module enumeration\u2014then provide an unclipped authenticated packet. Claim boundary until fixed: the conditional k=1 implication and displayed k>=2 witnesses support the narrow derived boundary that Cl(3) alone does not force k=1, but they do not establish retained-grade physical-carrier closure beyond P-QBIT."
+  "verdict_rationale": "Five-judge panel majority (3/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-914299d2\", \"judge\": 1, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, unitary-equivalence argument, and explicit k>=2 counterexamples. P-QBIT supplies physical irreducibility but is neither derived nor registered as an accepted premise, so the physical-carrier conclusion remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization is excluded by the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5515663e\", \"judge\": 2, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-2e323c3a\", \"judge\": 3, \"rationale\": \"The retained Cl(3) split supports k=1 implying complex dimension two, the unitary-equivalence argument, and the faithful k>=2 counterexamples. P-QBIT supplies rather than derives physical irreducibility and *-compatibility, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, requiring narrowing and repair rather than failure of the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-113051da\", \"judge\": 4, \"rationale\": \"The retained Cl(3) authority supports the k=1 dimensional implication, the equivalence argument, and the k>=2 counterexamples. Physical irreducibility is supplied only by the local, unregistered P-QBIT premise, so the result is audited_conditional. The source and runner mishandle the zero-dimensional k=0 module, but that defect is excluded from the narrowed scope.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"On the nonzero single-site carrier surface, P-QBIT conditionally fixes k=1 and dim_C H_x=2, with unitary Pauli equivalence under the declared *-module structure and positive-chirality convention; absent P-QBIT, the exhibited k>=2 faithful modules show that the Cl(3) algebra alone does not select k=1.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-a5d4d7ac\", \"judge\": 5, \"rationale\": \"The retained Cl(3) split supports the k=1 dimensional implication, unitary-equivalence argument, and faithful k>=2 counterexamples. P-QBIT supplies physical irreducibility and *-compatibility but is neither derived nor registered as an accepted premise, so the physical-carrier result remains conditional. On H=0 the identity endomorphism is zero, making the zero module Clifford-valid but unfaithful; the runner instead tests 2x2 zero operators, so that characterization must be excluded rather than allowed to invalidate the separable core.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Conditional nonzero-carrier result: given P-QBIT, the physical Cl(3) carrier is a two-dimensional Pauli *-module up to unitary equivalence; without P-QBIT, explicit faithful modules occur for every multiplicity k>=1, while the source's characterization of the k=0 zero module as non-Clifford is not ratified.\", \"A\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\"]]}]"
 }

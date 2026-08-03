@@ -6,7 +6,7 @@
     "was_cycle873_unused_scope": "freshly fetched origin/main base tree before package construction"
   },
   "candidate_artifacts_sha256": {
-    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md": "3cd18032e6f14007e11c2709e70021b9fbcd81fcfc8974cbc650f64cd4df010e",
+    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md": "37bf888a461aac7f3929d0126a7a2b4c21f4fd01cc8e299ff6f8b42eba88e67f",
     "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt": "6689ee8aac078f36507af89c20a90a19ea0721d34af74b1a98318cec06c35812",
     "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt": "72be1cd183bf85663c6726223f9db9fb61be3e80b6ed0f3d386f32849312eb74",
     "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json": "ed30056eaeeac03301849d3f386a6d8d0b7accbef2237b4c388e85a595212f1e",
@@ -34,6 +34,7 @@
     "scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py": "8f0f23d86cc83c433be3e86a66e719631c70da7fbd8a1adf6b85b65815448ad7",
     "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py": "02c3f321ba5ef1dce723ed04bd83919839648fd89202f607b6cc680645a97734",
     "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py": "ab9f365c167b8fafb4f54508c0fb38b325bf687fdf8f222bc9aa833ad65dfc62",
+    "scripts/frontier_cycle873_source_view_validation_2026_08_03.py": "4b21203146df10b4a85ddcc245aa6a62f5cb03de8873756ccd745e4ba809b2c4",
     "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py": "a1bc2159c5e2d5f59087860e3fe40bb1919cd4e476f6565a99c326d5af1c5ca9"
   },
   "claim_boundaries": {
@@ -81,6 +82,7 @@
     "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
     "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py",
     "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py",
+    "scripts/frontier_cycle873_source_view_validation_2026_08_03.py",
     "scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py"
   ],
   "schema": "cycle873-recurrent-f17-uniform-affine-open-box-citation-manifest-v1",

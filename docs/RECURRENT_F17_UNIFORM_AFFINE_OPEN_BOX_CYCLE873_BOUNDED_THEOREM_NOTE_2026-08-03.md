@@ -200,12 +200,12 @@ The exact script and receipt hashes in the citation manifest are implementation 
 
 ## Audit surface
 
-The exact candidate surface has 32 files:
+The exact candidate surface has 33 files:
 
 - this bounded theorem note;
 - the [physical all-seam core](../scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py), [local-constraint core](../scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py), [affine-intertwiner core](../scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py), [primary runner](../scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py), [independent checker](../scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py), and cold package acceptance runner linked at the top of this note;
 - the five canonical computational receipts from the three cores, primary runner, and independent checker;
-- the citation manifest and package-acceptance receipt;
+- the citation manifest, package-acceptance receipt, and import-free source-view validation helper used by acceptance;
 - the primary and independent cold-output logs; and
 - 16 import-free byte-exact source-view modules, each below the restricted helper-source ceiling, covering the complete five computational children. The acceptance runner reconstructs each child byte-for-byte, verifies line-range/ordinal/hash integrity, and runs prefix, ordinal, payload, hard-pin, and child-mutation controls. These views transport evidence only; they are not runners, derivations, or authorities.
 

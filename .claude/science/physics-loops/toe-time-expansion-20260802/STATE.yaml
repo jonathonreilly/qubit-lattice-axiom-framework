@@ -54,8 +54,11 @@ worktrees:
     theorems incl. the closed-library wall T7; LEMMA-882 EQUIVALENT to the
     obligation (incremental family blocked-equivalent); 871-pin discrepancy
     (readout dim 1 vs 2) flagged for audit-lane reconciliation
-  c5-g8: G8 (Cycle 883, SL1 — derive the record-carried weight pair (1,2),
-    the strictly weaker v2=1 door; stacked on G7) — running
+  c5-g8: blockG8 SHIPPED as PR #5941 — SL1 DERIVED (the C3 isotype (1,2)
+    theorem, no free parameter); 882-T6 defeated; T7 untouched (recomputed);
+    residual: SL1b EQUIVALENT (blocked), SL0 scope (weaker door)
+  c5-g9: G9 (Cycle 884, GB-S2 kernel+window — the dim-8 obligation, the
+    biggest remaining rung on the 871 map; stacked on G8) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

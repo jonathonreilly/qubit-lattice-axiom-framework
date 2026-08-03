@@ -1,0 +1,1509 @@
+{
+  "boundary": {
+    "derived": [
+      "one literal 18N+3E carrier map shared address-for-address by preparation and update",
+      "36N unique persistent auxiliary slots disjoint from every carrier",
+      "the full bounded union of transit-route substrate M2, with arbitrary/entangled transit state restored",
+      "an a priori 51^3 total-support capacity bound per coarse cell",
+      "executable seven-stage coherent extraction/correction/echo-ack/loader primitive word with returned NN routes",
+      "exact native coin-reverse-seam-contact update with returned NN routes through a restored bank",
+      "exact global-phase scalar and generator-relation proof of G_physical_exact E_joined = E_joined G_native_exact",
+      "volume-independent 2880-color returned-route schedule for native G, with no host volume enumeration",
+      "joined 24-frame/576-product signed code and coordinate covariance",
+      "active E deletion-class witnesses and unlawful-syndrome controls; not every semantic occurrence is claimed essential",
+      "active complete-stage contact-before-seam, contact-deletion, and seam-deletion witnesses"
+    ],
+    "not_claimed": [
+      "no global Jordan--Wigner character or OpenReference-to-PatchGraph target is used",
+      "no autonomous genesis, recurrent all-volume controller, or broad obstruction is claimed"
+    ],
+    "one_time_genesis_boundary": "E_joined is consumed once from the supplied clean root domain.  The joined result does not derive that domain, reset it, or claim autonomous/recurrent preparation.",
+    "open": [
+      "intrinsic clean-genesis, start trigger, coframe, or boundary selection",
+      "recurrent reset/fault repair and noncubic controller composition",
+      "periodic Wilson sectors and a volume-independent parallel schedule for the one-time open-boundary E word"
+    ],
+    "supplied": [
+      "finite cubic L=2 or L=3 open boundary, spacing-16 origin, and proper-cubic coframe",
+      "one clean raw-input/syndrome/controller genesis domain",
+      "Cycle703 check/decoder/loader semantics, echo forest grammar, and one invocation",
+      "Cycle219 beta=-0.3 coin, Cycle230 g=0.37 contact, and serial update layer order"
+    ]
+  },
+  "claim_scope": "one executable clean-domain Cycle703/Cycle870 cubic preparation chronology joined to the phase-corrected native OpenReference coin-reverse-seam-contact update on one identical physical carrier/register map; no global Jordan--Wigner target",
+  "coin_QR": {
+    "QR_off_diagonal_residual": 9.058932439513524e-16,
+    "eliminations": 14,
+    "reconstruction_residual": 9.774239351035397e-16
+  },
+  "content_sha256_before_hash_field": "d2b398fa73f4382e96770e2e8632c01e5bdda58073c2f122bd7ab845b271f74f",
+  "failures": [],
+  "fixtures": [
+    {
+      "abstract_edge_qubits": 168,
+      "auxiliary_collisions": 0,
+      "carrier_auxiliary_collisions": 0,
+      "carrier_collisions": 0,
+      "cells": 8,
+      "coarse_edges": 12,
+      "constraints": {
+        "abstract_constraint_commutator_failures": 0,
+        "abstract_constraint_rank": 120,
+        "abstract_constraint_rows": 121,
+        "abstract_edge_qubits": 168,
+        "abstract_phase_dependency_failures": 0,
+        "abstract_update_preservation_failures": 0,
+        "all_D_product_identity": true,
+        "expected_abstract_rank": 120,
+        "expected_physical_rank": 132,
+        "maximum_abstract_rotation_weight": 19,
+        "maximum_physical_rotation_diameter": 33,
+        "maximum_physical_rotation_weight": 20,
+        "physical_carrier_M2": 180,
+        "physical_constraint_commutator_failures": 0,
+        "physical_constraint_rank": 132,
+        "physical_constraint_rows": 133,
+        "physical_phase_dependency_failures": 0,
+        "physical_update_preservation_failures": 0,
+        "repetition_constraints": 12,
+        "signed_repetition_lift_homomorphism_failures": 0,
+        "update_hermiticity_failures": 0
+      },
+      "controller_coverage": {
+        "all_root_and_nonroot_event_families_covered": true,
+        "expected_interactions": 46,
+        "expected_multiset_sha256": "a3aaaed04f831f57df3476752a5e64888774f57be361f5dad7ecee2c738f066d",
+        "extra_interactions": 0,
+        "missing_interactions": 0,
+        "nonroot_nodes_by_kind": {
+          "ay": 2,
+          "az": 3
+        },
+        "observed_interactions": 46,
+        "observed_multiset_sha256": "a3aaaed04f831f57df3476752a5e64888774f57be361f5dad7ecee2c738f066d",
+        "role_census": {
+          "controller_emit": 5,
+          "controller_parent_xor": 10,
+          "controller_root_epoch": 3,
+          "controller_router": 8,
+          "controller_source_xor": 10,
+          "controller_token_swap": 10
+        },
+        "root_nodes_by_kind": {
+          "ay": 2,
+          "az": 1
+        },
+        "valid_nodes_by_kind": {
+          "ay": 4,
+          "az": 4
+        }
+      },
+      "every_seam_exactness": {
+        "bare_matter_edge_D_anticommutator_census": {
+          "2": 12
+        },
+        "direct_onsite_FSWAP_max_factorization_residual": 0.0,
+        "direct_onsite_FSWAP_max_involution_residual": 0.0,
+        "hermitian_term_failures": 0,
+        "maximum_four_rotation_residual": 0.0,
+        "maximum_full_space_involution_residual": 0.0,
+        "minimum_rotation_deletion_residual": 0.7653668647301795,
+        "minimum_term_deletion_involution_residual": 0.5590169943749475,
+        "physical_lift_maximum_four_rotation_residual": 0.0,
+        "physical_lift_maximum_full_space_involution_residual": 0.0,
+        "seams": 12
+      },
+      "expected_abstract_edge_qubits": 168,
+      "expected_persistent_auxiliary_M2": 288,
+      "expected_physical_carrier_M2": 180,
+      "factor_sha256": "6084e8496a814e9ef8992991464fa0c5704068ccf459ec5112956b76e0dcc907",
+      "intertwiner": {
+        "E_joined_definition": "Cycle703 logical-X/Z preparation isometry into the OpenReference code, followed by the matter-stream repetition lift on the identical carrier map",
+        "all_proof_obligations_zero": true,
+        "dense_isometry_materialized": false,
+        "equation": "G_physical_exact E_joined = E_joined G_native_exact",
+        "exact_scalar_included_in_G_physical_exact": true,
+        "exact_vector_equality_follows_for_all_input_vectors": true,
+        "exact_vector_statement": "for every input vector |psi>, G_physical_exact E_joined|psi> = E_joined G_native_exact|psi> with no residual phase",
+        "logical_input_qubits": 48,
+        "native_AB_generators_checked": 224,
+        "native_update_generator_rows": 1392,
+        "phase_sum_residual_mod_2pi": 0.0,
+        "projective_routed_word_equation": "U_routed E_joined = exp(i*phi) E_joined G_native_exact",
+        "proof_mode": "exact generator relations, analytic exponentiation, factor induction",
+        "proof_obligations": {
+          "abstract_stabilizer_row_equality_failures": 0,
+          "abstract_update_preservation_failures": 0,
+          "lifted_stabilizer_row_equality_failures": 0,
+          "logical_XZ_lift_equality_failures": 0,
+          "logical_Z_equals_native_B_failures": 0,
+          "native_AB_generator_lift_equality_failures": 0,
+          "physical_update_preservation_failures": 0,
+          "root_logical_canonical_failures": 0,
+          "root_logical_stabilizer_commutator_failures": 0,
+          "rotation_generator_lift_equality_failures": 0,
+          "signed_repetition_lift_homomorphism_failures": 0
+        },
+        "proof_route": [
+          "root and update use identical abstract stabilizer rows and identical physical lifts",
+          "the root logical X/Z rows canonically identify the 6N input algebra; logical Z is native B",
+          "the signed repetition lift is a Pauli-algebra homomorphism on every edge generator",
+          "each Hermitian update generator preserves both abstract and physical code constraints",
+          "functional calculus exponentiates P_physical E = E P_native for every rotation",
+          "the frozen zero-site scalar cancels the compiled word's checked relative phase",
+          "induction in the frozen serial factor order yields the displayed exact equality"
+        ],
+        "routed_rotation_word_without_scalar_is_projective_only": true
+      },
+      "inventory": {
+        "coin_euler_max_residual": 3.6188843062238402e-16,
+        "coin_one_particle_gates_per_cell": 20,
+        "compiled_relative_phase_breakdown": {
+          "coin": -25.159986462117423,
+          "contact": -11.099999999999985,
+          "reverse_FSWAP": -113.09733552923244,
+          "seam_FSWAP": -18.84955592153876
+        },
+        "compiled_relative_to_target_global_phase_angle": -168.20687791288861,
+        "contact_pairs": 120,
+        "direct_reverse_helper_FSWAPs": 72,
+        "exact_target_global_phase_correction_angle": 168.20687791288861,
+        "global_phase_correction_routed_gate_count": 0,
+        "logical_reverse_FSWAPs": 24,
+        "phase_breakdown_sum_residual": 0.0,
+        "phase_convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
+        "seam_FSWAPs": 12
+      },
+      "joined_route": {
+        "E_deletion_controls": {
+          "bond_controlled_Z_deletions_detected": 12,
+          "check_support_gate_deletions_detected": 1072,
+          "loader_support_gate_deletions_detected": 892,
+          "triangle_decoder_active_entries": 240,
+          "triangle_decoder_active_entry_deletions_detected": 240
+        },
+        "all_seven_root_stages_nonempty": true,
+        "canonical_update_route_replay_failures": 0,
+        "canonical_update_route_replay_fields": [
+          "rotations",
+          "primitive_gate_count",
+          "primitive_word_sha256",
+          "two_site_primitive_count",
+          "routed_gate_count",
+          "routed_word_sha256",
+          "maximum_route_distance",
+          "non_NN_failures",
+          "operand_order_failures",
+          "route_return_failures",
+          "proper_cubic_rotated_unit_step_failures"
+        ],
+        "check_compilation": {
+          "checks_by_kind": {
+            "bond_rectangle": 12,
+            "cell_triangle": 96,
+            "coarse_plaquette": 6
+          },
+          "coherent_ancilla_initial_state": "|0>",
+          "negative_check_sign_X_flips": 114,
+          "retained_syndrome_bit_convention": "0 means +1 check eigenvalue",
+          "support_CNOT_deletion_changes_extracted_Pauli": 1072,
+          "support_atlas_compiled_sha256": "a6a35b86f14785359bee7750fef5b199a367a2829bd2845483dcc8d204acf6ca",
+          "support_atlas_expected_sha256": "a6a35b86f14785359bee7750fef5b199a367a2829bd2845483dcc8d204acf6ca",
+          "support_atlas_extra": 0,
+          "support_atlas_missing": 0,
+          "support_parity_CNOTs": 1072
+        },
+        "chronology_accepted": true,
+        "combined_maximum_route_distance": 42,
+        "combined_routed_gate_count": 222290,
+        "combined_serial_routed_word_sha256": "2d4f744d1873e09f71dae0edcc8bcd410fc9ab2bb6c11b8fb85e2686322807aa",
+        "controller_chronology": {
+          "CCZ_is_H_target_Toffoli_H_target": true,
+          "Toffoli_decomposition_residual": 7.346882794269506e-16,
+          "catalog_interactions": 46,
+          "catalog_non_epoch_templates_missing": 0,
+          "catalog_root_epoch_templates": 3,
+          "chronological_semantic_events": 54,
+          "compiled_one_two_qubit_primitives": 414,
+          "expected_router_applications": 13,
+          "fixed_depth_first_forest_word": true,
+          "foreign_non_epoch_templates": 0,
+          "host_path_stop_barrier_choices": 0,
+          "literal_fresh_to_token_SWAPS": 3,
+          "literal_token_to_spent_SWAPS": 3,
+          "root_epoch_template_expanded_to_literal_two_SWAP_handshake": true,
+          "root_spent_epoch_gates": 3,
+          "router_applications": 13,
+          "router_template_reapplications": 5
+        },
+        "controller_execution": {
+          "case_kind": "all lawful coarse syndromes",
+          "cases": 32,
+          "coarse_check_bits": 6,
+          "diagnostic_host_domain_predicate_columns": [
+            "fresh",
+            "token",
+            "spent",
+            "accepted"
+          ],
+          "diagnostic_host_domain_predicate_rows": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "diagnostic_host_predicate_is_physical_evidence": false,
+          "echo_correction_mismatch": 0,
+          "hostile_unguarded_spent_reapplication_correction": 0,
+          "hostile_unguarded_spent_reapplication_spent_failures": 3,
+          "hostile_unguarded_spent_reapplication_syndrome": 3,
+          "hostile_unguarded_spent_reapplication_token_failures": 3,
+          "interpretation": "the literal two-SWAP word is exact only on supplied fresh=1,token=spent=0; unguarded spent-sector reapplication reactivates token/spent state, so no recurrent claim",
+          "lawful_coarse_syndrome_rank": 5,
+          "local_permutation_tables": {
+            "controlled_Z_basis_phases": [
+              1,
+              1,
+              1,
+              -1
+            ],
+            "controlled_Z_unitarity_failures": 0,
+            "epoch_bijection_failures": 0,
+            "epoch_handshake_four_cycle": [
+              1,
+              2,
+              3,
+              0
+            ],
+            "finite_controller_work_qubit_upper_bound_per_dependency_node": 6,
+            "maximum_port_work_qubits": 2,
+            "meaning": "all local data, routing, token, epoch, and correction primitives are bounded abstract-qubit permutations or a bounded controlled phase",
+            "router_bijection_failures": 0,
+            "router_permutations": {
+              "leaf": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "one_child": [
+                1,
+                0,
+                2,
+                3
+              ],
+              "two_children": [
+                1,
+                2,
+                0,
+                3
+              ]
+            },
+            "router_port_encoding": "00=parent, 01=x-child, 10=y-child, 11=unused",
+            "token_SWAP_failures": 0,
+            "token_presence_SWAP_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "xor3_roundtrip_failures": 0,
+            "xor3_truth_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          "local_spent_sector_admission_guard_compiled": false,
+          "root_fresh_consumption_failures": 0,
+          "root_spent_epoch_failures": 0,
+          "router_return_failures": 0,
+          "syndrome_action_failure": 0,
+          "token_return_failures": 0,
+          "unlawful_echo_cannot_forge_lawful_correction": true,
+          "unlawful_syndrome_control": 1,
+          "unlawful_syndrome_rejected_by_action": true,
+          "value_work_failures": 0
+        },
+        "cross_stage_collision_claim": "none: the seven-stage root word and update factors are concatenated serially",
+        "exact_global_phase": {
+          "FSWAP_minus_i_phase_residual": 0.0,
+          "FSWAP_rotation_word_relative_phase": [
+            0.0,
+            -1.0
+          ],
+          "compiled_relative_phase_angle": -168.20687791288861,
+          "convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
+          "equality_scope": "G_physical_exact includes the displayed zero-site scalar; the routed rotation word alone is only projectively equal to G_native",
+          "formal_exact_target_correction_angle": 168.20687791288861,
+          "formal_scalar": [
+            0.13129080709171057,
+            -0.9913438979351249
+          ],
+          "phase_breakdown": {
+            "coin": -25.159986462117423,
+            "contact": -11.099999999999985,
+            "reverse_FSWAP": -113.09733552923244,
+            "seam_FSWAP": -18.84955592153876
+          },
+          "phase_breakdown_sum_residual": 0.0,
+          "phase_sum_residual_mod_2pi": 0.0,
+          "routed_gate_count": 0,
+          "single_contact_expected_phase_residual": 1.1102230246251565e-16,
+          "single_contact_factorization_residual": 1.1582857125638951e-16,
+          "single_contact_relative_phase": [
+            0.9957249245223884,
+            -0.09236814756659498
+          ]
+        },
+        "expected_encoder_chronology": [
+          "triangle_syndrome",
+          "triangle_correction",
+          "coarse_syndrome",
+          "coarse_echo_correction_ack",
+          "bond_syndrome",
+          "bond_correction",
+          "logical_load"
+        ],
+        "loader_compilation": {
+          "compiled_loader_support_interactions": 892,
+          "controlled_X_sign_corrections": 0,
+          "loader_support_gate_deletion_active_columns": 892,
+          "logical_rows": 48,
+          "non_Z_axes_in_parity_unload": 0,
+          "support_atlas_compiled_sha256": "4577e8d1abbe2a08ebadd828dd6e3a145e5c8e20099e514eb3cb67cc2a94de04",
+          "support_atlas_expected_sha256": "4577e8d1abbe2a08ebadd828dd6e3a145e5c8e20099e514eb3cb67cc2a94de04",
+          "support_atlas_extra": 0,
+          "support_atlas_missing": 0,
+          "truth_table": "|q>|0_L> -> |q>|q_L> -> |0>|q_L>"
+        },
+        "observed_primitive_stage_runs": [
+          "triangle_syndrome",
+          "triangle_correction",
+          "coarse_syndrome",
+          "coarse_echo_correction_ack",
+          "bond_syndrome",
+          "bond_correction",
+          "logical_load"
+        ],
+        "persistent_route_work_M2": 0,
+        "physical_resource_census": {
+          "analytic_bound_argument": "carrier offsets are at most 9, auxiliary offsets at most 6, every check/update dependency spans at most one adjacent cell, controller parent ports reach -16-6=-22, and Manhattan paths remain in endpoint boxes",
+          "analytic_owner_envelope": "center(owner)+[-25,25]^3",
+          "analytic_owner_envelope_coverage_failures": 0,
+          "analytic_physical_support_upper_bound_per_cell": 132651,
+          "analytic_total_support_upper_bound": 1061208,
+          "arbitrary_or_entangled_transit_state_restored": true,
+          "bounded_transit_route_M2": 4773,
+          "encoded_carrier_M2": 180,
+          "persistent_preparation_auxiliary_M2": 288,
+          "physical_support_coordinate_sha256": "067cc13a478a93ee3a8f10711fb17cde8e8d99d3e31285fb30e450ef12404038",
+          "total_declared_physical_support_M2": 5241,
+          "transit_clean_or_product_state_required": false,
+          "transit_coordinate_sha256": "bda593d15cf0282d9c04809b000a9232b545eaf5cb5eb4ac6da01ddc03cde552",
+          "transit_sites_are_substrate_capacity_not_ancilla": true
+        },
+        "root_catalog_route": {
+          "first_swap_deletion_detected_macros": 2210,
+          "fixed_role_parity_colors": 2262,
+          "interaction_count": 2262,
+          "maximum_route_distance": 42,
+          "non_NN_failures": 0,
+          "operand_order_failures": 0,
+          "route_return_failures": 0,
+          "routed_gate_count": 43932,
+          "same_color_route_collisions": 0
+        },
+        "root_chronology_semantics": "coherent Pauli extraction and phase-zero controlled-Z correction; the echo forest is unrolled depth-first with reversible router/token/work return and spent ack",
+        "root_executable_primitive_route": {
+          "auxiliary_sites_touched_and_returned": 266,
+          "carrier_sites_touched": 180,
+          "delete_first_swap_detected_macros": 2343,
+          "maximum_route_distance": 42,
+          "non_NN_failures": 0,
+          "operand_order_failures": 0,
+          "persistent_route_work_M2": 0,
+          "primitive_endpoint_outside_bank_failures": 0,
+          "primitive_gate_count": 3872,
+          "primitive_kind_census": {
+            "check_basis_H": 840,
+            "check_basis_S": 96,
+            "check_basis_Sdg": 96,
+            "check_parity_CNOT": 1072,
+            "check_sign_X": 114,
+            "controller_CCZ_H": 10,
+            "controller_Toffoli_CNOT": 150,
+            "controller_Toffoli_H": 50,
+            "controller_Toffoli_T": 100,
+            "controller_Toffoli_Tdg": 75,
+            "controller_root_fresh_to_token_SWAP": 3,
+            "controller_root_token_to_spent_SWAP": 3,
+            "controller_router_leaf": 4,
+            "controller_router_one_child": 6,
+            "controller_router_two_children": 3,
+            "controller_token_SWAP_down": 5,
+            "controller_token_SWAP_up": 5,
+            "loader_controlled_X_for_Y": 48,
+            "loader_controlled_Z": 580,
+            "loader_parity_CNOT": 264,
+            "loader_target_S": 48,
+            "loader_target_Sdg": 48,
+            "syndrome_controlled_Z": 252
+          },
+          "primitive_matrix_unitarity_failures": 0,
+          "route_return_failures": 0,
+          "routed_gate_count": 48938,
+          "routed_one_site": 1477,
+          "routed_two_site": 47461,
+          "touched_sites": 4755,
+          "transient_route_sites_touched_and_returned": 4309,
+          "word_sha256": "bce48e35d769a04171201b2a45601375a6a52919de4fb481c90de32a2b97f225"
+        },
+        "root_stage_interaction_counts": {
+          "bond_correction": 12,
+          "bond_syndrome": 144,
+          "coarse_echo_correction_ack": 46,
+          "coarse_syndrome": 192,
+          "logical_load": 892,
+          "triangle_correction": 240,
+          "triangle_syndrome": 736
+        },
+        "update_route": {
+          "auxiliary_sites_traversed_and_returned": 16,
+          "first_swap_deletion_detected_macros": 14024,
+          "maximum_route_distance": 33,
+          "non_NN_failures": 0,
+          "occupied_spectator_sites_traversed_and_returned": 75,
+          "operand_order_failures": 0,
+          "persistent_route_work_M2": 0,
+          "primitive_endpoint_on_auxiliary_failures": 0,
+          "primitive_gate_count": 17048,
+          "primitive_kind_census": {
+            "axis_RZ": 1392,
+            "basis_H": 880,
+            "basis_S": 368,
+            "basis_Sdg": 368,
+            "parity_CNOT": 14040
+          },
+          "primitive_word_sha256": "dc3aadad37cb800cc486556618addd513869056a2eea17f10e4ce1c125f27dc4",
+          "proper_cubic_rotated_unit_step_failures": 0,
+          "rotations": 1392,
+          "route_return_failures": 0,
+          "routed_gate_count": 173352,
+          "routed_kind_census": {
+            "axis_RZ": 1392,
+            "basis_H": 880,
+            "basis_S": 368,
+            "basis_Sdg": 368,
+            "parity_CNOT": 14040,
+            "route_swap": 156304
+          },
+          "routed_word_sha256": "164c0f74dbb5b10a1f684c96fd4350452d5a6d2bb2d16a7af4ae338cc623b768",
+          "schedule": "supplied serial factor/primitive order; no parallel-depth claim",
+          "touched_lattice_sites": 1804,
+          "transient_route_sites_traversed_and_returned": 1608,
+          "two_site_primitive_count": 14040
+        }
+      },
+      "persistent_auxiliary_M2": 288,
+      "physical_carrier_M2": 180,
+      "root_context_site_map_equality": true,
+      "root_update_address_equality": true,
+      "root_update_site_map_equality": true,
+      "semantic_factor_reordering": {
+        "cross_cell_rotation_commutator_failures": {
+          "onsite_coin_mass": 0,
+          "onsite_contact": 0,
+          "onsite_reverse_fswap": 0
+        },
+        "cross_cell_rotation_commutator_pairs": {
+          "onsite_coin_mass": 211932,
+          "onsite_contact": 56700,
+          "onsite_reverse_fswap": 36288
+        },
+        "reordering_justification": "onsite factors may be transposed only across distinct cells; seams retain axis/parity order and transpose only exact-commuting factors within one class",
+        "same_axis_parity_seam_factor_commutator_failures": 0,
+        "same_axis_parity_seam_factor_pairs": 18,
+        "same_axis_parity_seam_maximum_commutator_residual": 0.0
+      },
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "stage_order": {
+        "canonical_stage_order_accepted": true,
+        "exact_two_cell_native_polynomial_witness": {
+          "abstract_contact_block_deletion_residual": 1.1768751285203496,
+          "abstract_hostile_order_residual": 0.39763494202240557,
+          "abstract_seam_block_deletion_residual": 1.4142135623731027,
+          "contact_pairs_included": 30,
+          "global_JW_used": false,
+          "physical_contact_block_deletion_residual": 1.176875128520349,
+          "physical_hostile_order_residual": 0.3976349420224059,
+          "physical_seam_block_deletion_residual": 1.414213562373105
+        },
+        "expected_rotation_stage_runs": [
+          "onsite_coin_mass",
+          "onsite_reverse_fswap",
+          "directed_seam_fswap",
+          "onsite_contact"
+        ],
+        "full_stage_occupation_witness": {
+          "argument": "all seam FSWAP endpoints are disjoint; their common fermionic sign cancels between the two orders, while the complete contact phase changes",
+          "contact_pairs_after_seam": 1,
+          "contact_pairs_before_seam": 3,
+          "contact_stage_deletion_state_residual": 0.36789306705608243,
+          "hostile_contact_before_seam_state_residual": 0.723230863929924,
+          "particles_before_seam": 3,
+          "seam_stage_deletion_state_residual": 1.4142135623730951,
+          "selected_seam": [
+            [
+              0,
+              0,
+              0
+            ],
+            0,
+            [
+              1,
+              0,
+              0
+            ],
+            1,
+            0
+          ],
+          "stationary_corner_modes": [
+            0,
+            2
+          ]
+        },
+        "observed_rotation_stage_runs": [
+          "onsite_coin_mass",
+          "onsite_reverse_fswap",
+          "directed_seam_fswap",
+          "onsite_contact"
+        ],
+        "seam_endpoint_maximum_degree": 1,
+        "seam_endpoint_overlap_failures": 0
+      }
+    },
+    {
+      "abstract_edge_qubits": 594,
+      "auxiliary_collisions": 0,
+      "carrier_auxiliary_collisions": 0,
+      "carrier_collisions": 0,
+      "cells": 27,
+      "coarse_edges": 54,
+      "constraints": {
+        "abstract_constraint_commutator_failures": 0,
+        "abstract_constraint_rank": 432,
+        "abstract_constraint_rows": 440,
+        "abstract_edge_qubits": 594,
+        "abstract_phase_dependency_failures": 0,
+        "abstract_update_preservation_failures": 0,
+        "all_D_product_identity": true,
+        "expected_abstract_rank": 432,
+        "expected_physical_rank": 486,
+        "maximum_abstract_rotation_weight": 24,
+        "maximum_physical_rotation_diameter": 33,
+        "maximum_physical_rotation_weight": 25,
+        "physical_carrier_M2": 648,
+        "physical_constraint_commutator_failures": 0,
+        "physical_constraint_rank": 486,
+        "physical_constraint_rows": 494,
+        "physical_phase_dependency_failures": 0,
+        "physical_update_preservation_failures": 0,
+        "repetition_constraints": 54,
+        "signed_repetition_lift_homomorphism_failures": 0,
+        "update_hermiticity_failures": 0
+      },
+      "controller_coverage": {
+        "all_root_and_nonroot_event_families_covered": true,
+        "expected_interactions": 240,
+        "expected_multiset_sha256": "4d5a62589086553603ae43c725ab8e2a5c578a5ac7f2962ddd9f00e33cec86a3",
+        "extra_interactions": 0,
+        "missing_interactions": 0,
+        "nonroot_nodes_by_kind": {
+          "ay": 12,
+          "az": 16
+        },
+        "observed_interactions": 240,
+        "observed_multiset_sha256": "4d5a62589086553603ae43c725ab8e2a5c578a5ac7f2962ddd9f00e33cec86a3",
+        "role_census": {
+          "controller_emit": 28,
+          "controller_parent_xor": 56,
+          "controller_root_epoch": 8,
+          "controller_router": 36,
+          "controller_source_xor": 56,
+          "controller_token_swap": 56
+        },
+        "root_nodes_by_kind": {
+          "ay": 6,
+          "az": 2
+        },
+        "valid_nodes_by_kind": {
+          "ay": 18,
+          "az": 18
+        }
+      },
+      "every_seam_exactness": {
+        "bare_matter_edge_D_anticommutator_census": {
+          "2": 54
+        },
+        "direct_onsite_FSWAP_max_factorization_residual": 0.0,
+        "direct_onsite_FSWAP_max_involution_residual": 0.0,
+        "hermitian_term_failures": 0,
+        "maximum_four_rotation_residual": 0.0,
+        "maximum_full_space_involution_residual": 0.0,
+        "minimum_rotation_deletion_residual": 0.7653668647301795,
+        "minimum_term_deletion_involution_residual": 0.5590169943749475,
+        "physical_lift_maximum_four_rotation_residual": 0.0,
+        "physical_lift_maximum_full_space_involution_residual": 0.0,
+        "seams": 54
+      },
+      "expected_abstract_edge_qubits": 594,
+      "expected_persistent_auxiliary_M2": 972,
+      "expected_physical_carrier_M2": 648,
+      "factor_sha256": "28e1eedf40c9a773662db400790b07ad86a726d1896ca8e672fe6503fe5696f5",
+      "intertwiner": {
+        "E_joined_definition": "Cycle703 logical-X/Z preparation isometry into the OpenReference code, followed by the matter-stream repetition lift on the identical carrier map",
+        "all_proof_obligations_zero": true,
+        "dense_isometry_materialized": false,
+        "equation": "G_physical_exact E_joined = E_joined G_native_exact",
+        "exact_scalar_included_in_G_physical_exact": true,
+        "exact_vector_equality_follows_for_all_input_vectors": true,
+        "exact_vector_statement": "for every input vector |psi>, G_physical_exact E_joined|psi> = E_joined G_native_exact|psi> with no residual phase",
+        "logical_input_qubits": 162,
+        "native_AB_generators_checked": 783,
+        "native_update_generator_rows": 4752,
+        "phase_sum_residual_mod_2pi": 0.0,
+        "projective_routed_word_equation": "U_routed E_joined = exp(i*phi) E_joined G_native_exact",
+        "proof_mode": "exact generator relations, analytic exponentiation, factor induction",
+        "proof_obligations": {
+          "abstract_stabilizer_row_equality_failures": 0,
+          "abstract_update_preservation_failures": 0,
+          "lifted_stabilizer_row_equality_failures": 0,
+          "logical_XZ_lift_equality_failures": 0,
+          "logical_Z_equals_native_B_failures": 0,
+          "native_AB_generator_lift_equality_failures": 0,
+          "physical_update_preservation_failures": 0,
+          "root_logical_canonical_failures": 0,
+          "root_logical_stabilizer_commutator_failures": 0,
+          "rotation_generator_lift_equality_failures": 0,
+          "signed_repetition_lift_homomorphism_failures": 0
+        },
+        "proof_route": [
+          "root and update use identical abstract stabilizer rows and identical physical lifts",
+          "the root logical X/Z rows canonically identify the 6N input algebra; logical Z is native B",
+          "the signed repetition lift is a Pauli-algebra homomorphism on every edge generator",
+          "each Hermitian update generator preserves both abstract and physical code constraints",
+          "functional calculus exponentiates P_physical E = E P_native for every rotation",
+          "the frozen zero-site scalar cancels the compiled word's checked relative phase",
+          "induction in the frozen serial factor order yields the displayed exact equality"
+        ],
+        "routed_rotation_word_without_scalar_is_projective_only": true
+      },
+      "inventory": {
+        "coin_euler_max_residual": 3.6188843062238402e-16,
+        "coin_one_particle_gates_per_cell": 20,
+        "compiled_relative_phase_breakdown": {
+          "coin": -84.91495430964635,
+          "contact": -37.46250000000021,
+          "reverse_FSWAP": -381.70350741115885,
+          "seam_FSWAP": -84.8230016469244
+        },
+        "compiled_relative_to_target_global_phase_angle": -588.9039633677298,
+        "contact_pairs": 405,
+        "direct_reverse_helper_FSWAPs": 243,
+        "exact_target_global_phase_correction_angle": 588.9039633677298,
+        "global_phase_correction_routed_gate_count": 0,
+        "logical_reverse_FSWAPs": 81,
+        "phase_breakdown_sum_residual": 0.0,
+        "phase_convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
+        "seam_FSWAPs": 54
+      },
+      "joined_route": {
+        "E_deletion_controls": {
+          "bond_controlled_Z_deletions_detected": 54,
+          "check_support_gate_deletions_detected": 4347,
+          "controller_primitive_deletions": {
+            "all_declared_primitive_deletion_classes_active": true,
+            "cases_available": 118,
+            "deletion_classes": [
+              "controller_emit",
+              "controller_parent_xor_down",
+              "controller_parent_xor_up",
+              "controller_root_epoch",
+              "controller_router_nontrivial",
+              "controller_source_xor_down",
+              "controller_source_xor_up",
+              "controller_token_swap_down",
+              "controller_token_swap_up"
+            ],
+            "detected_by_class": {
+              "controller_emit": true,
+              "controller_parent_xor_down": true,
+              "controller_parent_xor_up": true,
+              "controller_root_epoch": true,
+              "controller_router_nontrivial": true,
+              "controller_source_xor_down": true,
+              "controller_source_xor_up": true,
+              "controller_token_swap_down": true,
+              "controller_token_swap_up": true
+            },
+            "shape": [
+              3,
+              3,
+              3
+            ],
+            "witness_case_by_class": {
+              "controller_emit": 0,
+              "controller_parent_xor_down": 0,
+              "controller_parent_xor_up": 0,
+              "controller_root_epoch": 0,
+              "controller_router_nontrivial": 0,
+              "controller_source_xor_down": 0,
+              "controller_source_xor_up": 21,
+              "controller_token_swap_down": 0,
+              "controller_token_swap_up": 0
+            }
+          },
+          "loader_support_gate_deletions_detected": 3132,
+          "triangle_decoder_active_entries": 810,
+          "triangle_decoder_active_entry_deletions_detected": 810
+        },
+        "all_seven_root_stages_nonempty": true,
+        "canonical_update_route_replay_failures": 0,
+        "canonical_update_route_replay_fields": [
+          "rotations",
+          "primitive_gate_count",
+          "primitive_word_sha256",
+          "two_site_primitive_count",
+          "routed_gate_count",
+          "routed_word_sha256",
+          "maximum_route_distance",
+          "non_NN_failures",
+          "operand_order_failures",
+          "route_return_failures",
+          "proper_cubic_rotated_unit_step_failures"
+        ],
+        "check_compilation": {
+          "checks_by_kind": {
+            "bond_rectangle": 54,
+            "cell_triangle": 324,
+            "coarse_plaquette": 36
+          },
+          "coherent_ancilla_initial_state": "|0>",
+          "negative_check_sign_X_flips": 414,
+          "retained_syndrome_bit_convention": "0 means +1 check eigenvalue",
+          "support_CNOT_deletion_changes_extracted_Pauli": 4347,
+          "support_atlas_compiled_sha256": "9cb633545071b71ee9271374e2d9a99bcd9a1512a67bac7bed7c4391e1c345b7",
+          "support_atlas_expected_sha256": "9cb633545071b71ee9271374e2d9a99bcd9a1512a67bac7bed7c4391e1c345b7",
+          "support_atlas_extra": 0,
+          "support_atlas_missing": 0,
+          "support_parity_CNOTs": 4347
+        },
+        "chronology_accepted": true,
+        "combined_maximum_route_distance": 42,
+        "combined_routed_gate_count": 910593,
+        "combined_serial_routed_word_sha256": "cfaefb274869c70a39273fa40e0d2b86a1f03dcfe61710eca606a4a1ad31c329",
+        "controller_chronology": {
+          "CCZ_is_H_target_Toffoli_H_target": true,
+          "Toffoli_decomposition_residual": 7.346882794269506e-16,
+          "catalog_interactions": 240,
+          "catalog_non_epoch_templates_missing": 0,
+          "catalog_root_epoch_templates": 8,
+          "chronological_semantic_events": 276,
+          "compiled_one_two_qubit_primitives": 2292,
+          "expected_router_applications": 64,
+          "fixed_depth_first_forest_word": true,
+          "foreign_non_epoch_templates": 0,
+          "host_path_stop_barrier_choices": 0,
+          "literal_fresh_to_token_SWAPS": 8,
+          "literal_token_to_spent_SWAPS": 8,
+          "root_epoch_template_expanded_to_literal_two_SWAP_handshake": true,
+          "root_spent_epoch_gates": 8,
+          "router_applications": 64,
+          "router_template_reapplications": 28
+        },
+        "controller_execution": {
+          "case_kind": "all unit-edge syndromes plus 64 deterministic linearity pairs",
+          "cases": 118,
+          "coarse_check_bits": 36,
+          "diagnostic_host_domain_predicate_columns": [
+            "fresh",
+            "token",
+            "spent",
+            "accepted"
+          ],
+          "diagnostic_host_domain_predicate_rows": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "diagnostic_host_predicate_is_physical_evidence": false,
+          "echo_correction_mismatch": 0,
+          "hostile_unguarded_spent_reapplication_correction": 0,
+          "hostile_unguarded_spent_reapplication_spent_failures": 8,
+          "hostile_unguarded_spent_reapplication_syndrome": 3,
+          "hostile_unguarded_spent_reapplication_token_failures": 8,
+          "interpretation": "the literal two-SWAP word is exact only on supplied fresh=1,token=spent=0; unguarded spent-sector reapplication reactivates token/spent state, so no recurrent claim",
+          "lawful_coarse_syndrome_rank": 28,
+          "local_permutation_tables": {
+            "controlled_Z_basis_phases": [
+              1,
+              1,
+              1,
+              -1
+            ],
+            "controlled_Z_unitarity_failures": 0,
+            "epoch_bijection_failures": 0,
+            "epoch_handshake_four_cycle": [
+              1,
+              2,
+              3,
+              0
+            ],
+            "finite_controller_work_qubit_upper_bound_per_dependency_node": 6,
+            "maximum_port_work_qubits": 2,
+            "meaning": "all local data, routing, token, epoch, and correction primitives are bounded abstract-qubit permutations or a bounded controlled phase",
+            "router_bijection_failures": 0,
+            "router_permutations": {
+              "leaf": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "one_child": [
+                1,
+                0,
+                2,
+                3
+              ],
+              "two_children": [
+                1,
+                2,
+                0,
+                3
+              ]
+            },
+            "router_port_encoding": "00=parent, 01=x-child, 10=y-child, 11=unused",
+            "token_SWAP_failures": 0,
+            "token_presence_SWAP_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "xor3_roundtrip_failures": 0,
+            "xor3_truth_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          "local_spent_sector_admission_guard_compiled": false,
+          "root_fresh_consumption_failures": 0,
+          "root_spent_epoch_failures": 0,
+          "router_return_failures": 0,
+          "syndrome_action_failure": 0,
+          "token_return_failures": 0,
+          "unlawful_echo_cannot_forge_lawful_correction": true,
+          "unlawful_syndrome_control": 1,
+          "unlawful_syndrome_rejected_by_action": true,
+          "value_work_failures": 0
+        },
+        "cross_stage_collision_claim": "none: the seven-stage root word and update factors are concatenated serially",
+        "exact_global_phase": {
+          "FSWAP_minus_i_phase_residual": 0.0,
+          "FSWAP_rotation_word_relative_phase": [
+            0.0,
+            -1.0
+          ],
+          "compiled_relative_phase_angle": -588.9039633677298,
+          "convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
+          "equality_scope": "G_physical_exact includes the displayed zero-site scalar; the routed rotation word alone is only projectively equal to G_native",
+          "formal_exact_target_correction_angle": 588.9039633677298,
+          "formal_scalar": [
+            -0.14415517827490035,
+            -0.9895550942603103
+          ],
+          "phase_breakdown": {
+            "coin": -84.91495430964635,
+            "contact": -37.46250000000021,
+            "reverse_FSWAP": -381.70350741115885,
+            "seam_FSWAP": -84.8230016469244
+          },
+          "phase_breakdown_sum_residual": 0.0,
+          "phase_sum_residual_mod_2pi": 0.0,
+          "routed_gate_count": 0,
+          "single_contact_expected_phase_residual": 0.0,
+          "single_contact_factorization_residual": 2.0639746915551e-17,
+          "single_contact_relative_phase": [
+            0.9957249245223883,
+            -0.09236814756659498
+          ]
+        },
+        "expected_encoder_chronology": [
+          "triangle_syndrome",
+          "triangle_correction",
+          "coarse_syndrome",
+          "coarse_echo_correction_ack",
+          "bond_syndrome",
+          "bond_correction",
+          "logical_load"
+        ],
+        "loader_compilation": {
+          "compiled_loader_support_interactions": 3132,
+          "controlled_X_sign_corrections": 0,
+          "loader_support_gate_deletion_active_columns": 3132,
+          "logical_rows": 162,
+          "non_Z_axes_in_parity_unload": 0,
+          "support_atlas_compiled_sha256": "954a46c2e493c9b544e7021e3270dd5f11c1481230e14578ed714c29b414a52c",
+          "support_atlas_expected_sha256": "954a46c2e493c9b544e7021e3270dd5f11c1481230e14578ed714c29b414a52c",
+          "support_atlas_extra": 0,
+          "support_atlas_missing": 0,
+          "truth_table": "|q>|0_L> -> |q>|q_L> -> |0>|q_L>"
+        },
+        "observed_primitive_stage_runs": [
+          "triangle_syndrome",
+          "triangle_correction",
+          "coarse_syndrome",
+          "coarse_echo_correction_ack",
+          "bond_syndrome",
+          "bond_correction",
+          "logical_load"
+        ],
+        "persistent_route_work_M2": 0,
+        "physical_resource_census": {
+          "analytic_bound_argument": "carrier offsets are at most 9, auxiliary offsets at most 6, every check/update dependency spans at most one adjacent cell, controller parent ports reach -16-6=-22, and Manhattan paths remain in endpoint boxes",
+          "analytic_owner_envelope": "center(owner)+[-25,25]^3",
+          "analytic_owner_envelope_coverage_failures": 0,
+          "analytic_physical_support_upper_bound_per_cell": 132651,
+          "analytic_total_support_upper_bound": 3581577,
+          "arbitrary_or_entangled_transit_state_restored": true,
+          "bounded_transit_route_M2": 18566,
+          "encoded_carrier_M2": 648,
+          "persistent_preparation_auxiliary_M2": 972,
+          "physical_support_coordinate_sha256": "a67bf7bd4b3cf24b61839d5cbdf9f07fce6b375c83a5a6bc61957055e6e0d6b4",
+          "total_declared_physical_support_M2": 20186,
+          "transit_clean_or_product_state_required": false,
+          "transit_coordinate_sha256": "ca029a828db17150edb0f9021f1f38b10ad3ea89a4e1626fdf7baa058842f218",
+          "transit_sites_are_substrate_capacity_not_ancilla": true
+        },
+        "root_catalog_route": {
+          "first_swap_deletion_detected_macros": 8403,
+          "fixed_role_parity_colors": 3190,
+          "interaction_count": 8583,
+          "maximum_route_distance": 42,
+          "non_NN_failures": 0,
+          "operand_order_failures": 0,
+          "route_return_failures": 0,
+          "routed_gate_count": 181617,
+          "same_color_route_collisions": 0
+        },
+        "root_chronology_semantics": "coherent Pauli extraction and phase-zero controlled-Z correction; the echo forest is unrolled depth-first with reversible router/token/work return and spent ack",
+        "root_executable_primitive_route": {
+          "auxiliary_sites_touched_and_returned": 922,
+          "carrier_sites_touched": 648,
+          "delete_first_swap_detected_macros": 9139,
+          "maximum_route_distance": 42,
+          "non_NN_failures": 0,
+          "operand_order_failures": 0,
+          "persistent_route_work_M2": 0,
+          "primitive_endpoint_outside_bank_failures": 0,
+          "primitive_gate_count": 15369,
+          "primitive_kind_census": {
+            "check_basis_H": 3348,
+            "check_basis_S": 324,
+            "check_basis_Sdg": 324,
+            "check_parity_CNOT": 4347,
+            "check_sign_X": 414,
+            "controller_CCZ_H": 56,
+            "controller_Toffoli_CNOT": 840,
+            "controller_Toffoli_H": 280,
+            "controller_Toffoli_T": 560,
+            "controller_Toffoli_Tdg": 420,
+            "controller_root_fresh_to_token_SWAP": 8,
+            "controller_root_token_to_spent_SWAP": 8,
+            "controller_router_leaf": 12,
+            "controller_router_one_child": 40,
+            "controller_router_two_children": 12,
+            "controller_token_SWAP_down": 28,
+            "controller_token_SWAP_up": 28,
+            "loader_controlled_X_for_Y": 162,
+            "loader_controlled_Z": 2052,
+            "loader_parity_CNOT": 918,
+            "loader_target_S": 162,
+            "loader_target_Sdg": 162,
+            "syndrome_controlled_Z": 864
+          },
+          "primitive_matrix_unitarity_failures": 0,
+          "route_return_failures": 0,
+          "routed_gate_count": 207043,
+          "routed_one_site": 6050,
+          "routed_two_site": 200993,
+          "touched_sites": 18034,
+          "transient_route_sites_touched_and_returned": 16464,
+          "word_sha256": "dcaa107ff1cc26a66e159cfb4d755290fc40822d9558a09368ceca69cb80aff3"
+        },
+        "root_stage_interaction_counts": {
+          "bond_correction": 54,
+          "bond_syndrome": 711,
+          "coarse_echo_correction_ack": 240,
+          "coarse_syndrome": 1152,
+          "logical_load": 3132,
+          "triangle_correction": 810,
+          "triangle_syndrome": 2484
+        },
+        "update_route": {
+          "auxiliary_sites_traversed_and_returned": 72,
+          "first_swap_deletion_detected_macros": 50574,
+          "maximum_route_distance": 33,
+          "non_NN_failures": 0,
+          "occupied_spectator_sites_traversed_and_returned": 302,
+          "operand_order_failures": 0,
+          "persistent_route_work_M2": 0,
+          "primitive_endpoint_on_auxiliary_failures": 0,
+          "primitive_gate_count": 61038,
+          "primitive_kind_census": {
+            "axis_RZ": 4752,
+            "basis_H": 3132,
+            "basis_S": 1242,
+            "basis_Sdg": 1242,
+            "parity_CNOT": 50670
+          },
+          "primitive_word_sha256": "0b8069d2209123da1562dcb1db73121e7fe6b4dc4a3600b297fb5d7b72731720",
+          "proper_cubic_rotated_unit_step_failures": 0,
+          "rotations": 4752,
+          "route_return_failures": 0,
+          "routed_gate_count": 703550,
+          "routed_kind_census": {
+            "axis_RZ": 4752,
+            "basis_H": 3132,
+            "basis_S": 1242,
+            "basis_Sdg": 1242,
+            "parity_CNOT": 50670,
+            "route_swap": 642512
+          },
+          "routed_word_sha256": "52984a688bd4cf333d73b4bc8a3dc17c6235ccf978a573223fa509ebec8bdbe5",
+          "schedule": "supplied serial factor/primitive order; no parallel-depth claim",
+          "touched_lattice_sites": 7431,
+          "transient_route_sites_traversed_and_returned": 6711,
+          "two_site_primitive_count": 50670
+        }
+      },
+      "persistent_auxiliary_M2": 972,
+      "physical_carrier_M2": 648,
+      "root_context_site_map_equality": true,
+      "root_update_address_equality": true,
+      "root_update_site_map_equality": true,
+      "semantic_factor_reordering": {
+        "cross_cell_rotation_commutator_failures": {
+          "onsite_coin_mass": 0,
+          "onsite_contact": 0,
+          "onsite_reverse_fswap": 0
+        },
+        "cross_cell_rotation_commutator_pairs": {
+          "onsite_coin_mass": 2656719,
+          "onsite_contact": 710775,
+          "onsite_reverse_fswap": 454896
+        },
+        "reordering_justification": "onsite factors may be transposed only across distinct cells; seams retain axis/parity order and transpose only exact-commuting factors within one class",
+        "same_axis_parity_seam_factor_commutator_failures": 0,
+        "same_axis_parity_seam_factor_pairs": 216,
+        "same_axis_parity_seam_maximum_commutator_residual": 0.0
+      },
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "stage_order": {
+        "canonical_stage_order_accepted": true,
+        "exact_two_cell_native_polynomial_witness": {
+          "abstract_contact_block_deletion_residual": 1.176875128520346,
+          "abstract_hostile_order_residual": 0.39763494202240557,
+          "abstract_seam_block_deletion_residual": 1.41421356237311,
+          "contact_pairs_included": 30,
+          "global_JW_used": false,
+          "physical_contact_block_deletion_residual": 1.1768751285203485,
+          "physical_hostile_order_residual": 0.3976349420224061,
+          "physical_seam_block_deletion_residual": 1.4142135623731027
+        },
+        "expected_rotation_stage_runs": [
+          "onsite_coin_mass",
+          "onsite_reverse_fswap",
+          "directed_seam_fswap",
+          "onsite_contact"
+        ],
+        "full_stage_occupation_witness": {
+          "argument": "all seam FSWAP endpoints are disjoint; their common fermionic sign cancels between the two orders, while the complete contact phase changes",
+          "contact_pairs_after_seam": 1,
+          "contact_pairs_before_seam": 3,
+          "contact_stage_deletion_state_residual": 0.36789306705608243,
+          "hostile_contact_before_seam_state_residual": 0.723230863929924,
+          "particles_before_seam": 3,
+          "seam_stage_deletion_state_residual": 1.4142135623730951,
+          "selected_seam": [
+            [
+              0,
+              0,
+              0
+            ],
+            0,
+            [
+              1,
+              0,
+              0
+            ],
+            1,
+            0
+          ],
+          "stationary_corner_modes": [
+            0,
+            2
+          ]
+        },
+        "observed_rotation_stage_runs": [
+          "onsite_coin_mass",
+          "onsite_reverse_fswap",
+          "directed_seam_fswap",
+          "onsite_contact"
+        ],
+        "seam_endpoint_maximum_degree": 1,
+        "seam_endpoint_overlap_failures": 0
+      }
+    }
+  ],
+  "joined_24_576_covariance": {
+    "composition_argument": "signed A/B transport generates every root stabilizer/logical row and every native update row; coordinate transport carries the identical carrier/aux bank",
+    "joined_code_diagram_products": 576,
+    "native_G": {
+      "all_update_rotation_transport_failures": 0,
+      "carrier_set_transport_failures": 0,
+      "coframe": "supplied and transported; lab-fixed textual rebuild is not claimed",
+      "graph_generator_transport_failures": 0,
+      "ordered_frame_products": 576,
+      "physical_coordinate_product_failures": 0,
+      "proper_cubic_frames": 24,
+      "rotation_parameter_transport_failures": 0,
+      "signed_AB_generator_product_failures": 0,
+      "update_metadata_product_failures": 0
+    },
+    "root_carrier_aux_coordinate": {
+      "frame_injectivity_failures": 0,
+      "ordered_products": 576,
+      "product_diagram_failures": 0,
+      "proper_cubic_frames": 24,
+      "transported_coframe_supplied": true
+    },
+    "root_signed_AB_semantic_E": {
+      "ordered_products": 576,
+      "product_edge_failures": 0,
+      "product_generator_failures": 0,
+      "product_site_failures": 0,
+      "proper_cubic_frames": 24,
+      "semantic_generator_rows": 224,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "signed_port_order_gauge_included": true,
+      "single_frame_edge_type_failures": 0,
+      "single_frame_generator_failures": 0,
+      "single_frame_placement_failures": 0
+    },
+    "shape": [
+      2,
+      2,
+      2
+    ]
+  },
+  "joined_stage_statement": "triangle_extract -> triangle_correct -> coarse_extract -> echo_correct_ack -> bond_extract -> bond_correct -> logical_load -> onsite_coin_mass -> onsite_reverse_fswap -> directed_seam_fswap -> onsite_contact -> exact_global_scalar",
+  "native_G_route_colors": {
+    "a_priori_factor_route_padding_bound": 1834664,
+    "a_priori_maximum_physical_rotation_weight": 128,
+    "a_priori_maximum_rotations_per_factor": 8,
+    "a_priori_maximum_route_distance": 150,
+    "a_priori_normalized_coordinate_span_bound": 50,
+    "a_priori_volume_independent_routed_depth_bound": 5283832320,
+    "active_colors_on_fixture": 2688,
+    "boundary_signature_argument": "the bound is chosen before the held stress run: all factor endpoints lie in center(owner)+[-25,25]^3 and Manhattan paths remain inside endpoint boxes; the held cube only checks the resulting rule on repeated residues",
+    "cells": 125,
+    "claim_scope": "native update G only; the one-time open-boundary echo E is separate",
+    "color_rule": "complete factor template (coin gate, reverse helper step, seam axis/parity, or contact pair) plus owner coordinates modulo 4",
+    "constant_color_upper_bound": 2880,
+    "factor_inventory": {
+      "coin_euler_max_residual": 3.6188843062238402e-16,
+      "coin_one_particle_gates_per_cell": 20,
+      "compiled_relative_phase_breakdown": {
+        "coin": -393.1247884705851,
+        "contact": -173.43750000000188,
+        "reverse_FSWAP": -1767.1458676442446,
+        "seam_FSWAP": -471.23889803846765
+      },
+      "compiled_relative_to_target_global_phase_angle": -2804.947054153299,
+      "contact_pairs": 1875,
+      "direct_reverse_helper_FSWAPs": 1125,
+      "exact_target_global_phase_correction_angle": 2804.947054153299,
+      "global_phase_correction_routed_gate_count": 0,
+      "logical_reverse_FSWAPs": 375,
+      "phase_breakdown_sum_residual": 0.0,
+      "phase_convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
+      "seam_FSWAPs": 300
+    },
+    "factor_macros": 5175,
+    "held_color_fixture": [
+      5,
+      5,
+      5
+    ],
+    "host_volume_enumeration_required": false,
+    "local_factor_templates": 45,
+    "macro_granularity": "each color item executes one whole returned-route factor macro serially; disjoint items in a color run in lockstep with identity padding",
+    "macros_in_repeated_color_groups": 4014,
+    "maximum_normalized_template_coordinate_span": 31,
+    "maximum_single_factor_routed_depth": 4236,
+    "modulus": 4,
+    "radius_one_cell_neighbor_signatures_present": 27,
+    "repeated_active_color_groups": 1527,
+    "rotation_rows_scanned": 22200,
+    "same_color_route_footprint_collisions": 0,
+    "same_residue_owner_separation": 64,
+    "seams": 300,
+    "stress_fixture_tightened_routed_depth_upper_bound": 3037184,
+    "template_envelope_separation_failures": 0
+  },
+  "source_pins": {
+    "native_update_receipt_sha256": "6073c7994a39dc8d51ef1884b59903235be3bb3db0b1cc8e5be9c451b67d8e9c",
+    "native_update_source": "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py",
+    "native_update_source_sha256": "df5809cb74e5ff6bae1fa125094dbeae4f356bf2114a3944a9227365ae574237",
+    "root_placement_receipt_sha256": "ef830843367d858622c4e53644a3d9d6dc2c6d7654f9eab0ce1e3d6c713f08c6",
+    "root_placement_source": "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+    "root_placement_source_sha256": "e31501b599f5ea81838320bc103a11225c95d1593d44becd1fe2701e3b5ab0ce",
+    "this_source_sha256": "25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5"
+  },
+  "status": "pass"
+}

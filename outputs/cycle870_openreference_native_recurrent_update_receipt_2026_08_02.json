@@ -1,0 +1,377 @@
+{
+  "boundary": {
+    "derived": [
+      "18N+3E collision-free physical carrier placement with the reference bond at each seam midpoint",
+      "one common physical stabilizer/repetition bank of rank q-6N for every update factor",
+      "exact onsite coin/mass, onsite reverse FSWAP, every dressed seam FSWAP, and onsite contact word",
+      "full-space seam Hermiticity/involution and exact four-rotation synthesis with active deletions",
+      "returned nearest-neighbour serial routing, translations, 24 frames, and 576 products"
+    ],
+    "not_claimed": [
+      "no OpenReference-to-PatchGraph conversion is used as update semantics",
+      "no global Jordan--Wigner target characters are used",
+      "no broad obstruction, minimum resource theorem, autonomous preparation, or periodic result"
+    ],
+    "open": [
+      "autonomous genesis or preparation of the supplied +1 stabilizer character",
+      "a noncubic or arbitrary-cell physical echo/controller composition",
+      "intrinsic coframe/boundary/layer-order selection, periodic Wilson sectors, and fault repair",
+      "collision-free constant-depth parallel routing or a recurrent all-volume controller"
+    ],
+    "supplied": [
+      "finite connected open cell set and its boundary",
+      "integer origin, proper-cubic coframe, BKSF incident-edge order gauge, and serial layer order",
+      "Cycle219 beta=-0.3 coin and Cycle230 g=0.37 contact",
+      "the +1 OpenReference loop/local-D character when an encoded state is required"
+    ]
+  },
+  "claim_scope": "native OpenReferenceGraph finite update closure and literal returned NN routing; no global-JW target character and no autonomous preparation/genesis claim",
+  "coin": {
+    "QR_off_diagonal_residual": 9.058932439513524e-16,
+    "analytic_mass": 0.4534056541748852,
+    "beta": -0.3,
+    "coin_unitarity_residual": 1.2236950713340232e-15,
+    "eliminations": 14,
+    "maximum_coin_covariance_residual": 0.0,
+    "one_particle_schedule_gates": 20,
+    "proper_cubic_frames": 24,
+    "reconstruction_residual": 9.774239351035397e-16,
+    "rest_mass": 0.4534056541748851,
+    "reverse_helper_permutation_residual": 0.0,
+    "scalar_rest_phase": 0.15113521805829505
+  },
+  "contact": {
+    "contact_pairs": 15,
+    "global_phase": [
+      0.1822716652330454,
+      -0.9832482087719115
+    ],
+    "maximum_residual_up_to_global_phase": 1.8610729195778454e-15,
+    "occupation_words": 64
+  },
+  "content_sha256_before_hash_field": "0f7271cf7485448de23449505d8e71728757d9c76c58e76bb07d27804a7debbc",
+  "failures": [],
+  "fixtures": [
+    {
+      "abstract_edge_formula": 246,
+      "cells": 12,
+      "coarse_edges": 15,
+      "constraints": {
+        "abstract_constraint_commutator_failures": 0,
+        "abstract_constraint_rank": 174,
+        "abstract_constraint_rows": 174,
+        "abstract_edge_qubits": 246,
+        "abstract_phase_dependency_failures": 0,
+        "abstract_update_preservation_failures": 0,
+        "all_D_product_identity": true,
+        "expected_abstract_rank": 174,
+        "expected_physical_rank": 189,
+        "maximum_abstract_rotation_weight": 21,
+        "maximum_physical_rotation_diameter": 33,
+        "maximum_physical_rotation_weight": 22,
+        "physical_carrier_M2": 261,
+        "physical_constraint_commutator_failures": 0,
+        "physical_constraint_rank": 189,
+        "physical_constraint_rows": 189,
+        "physical_phase_dependency_failures": 0,
+        "physical_update_preservation_failures": 0,
+        "repetition_constraints": 15,
+        "signed_repetition_lift_homomorphism_failures": 0,
+        "update_hermiticity_failures": 0
+      },
+      "covariance": {
+        "all_update_rotation_transport_failures": 0,
+        "carrier_set_transport_failures": 0,
+        "coframe": "supplied and transported; lab-fixed textual rebuild is not claimed",
+        "graph_generator_transport_failures": 0,
+        "ordered_frame_products": 0,
+        "physical_coordinate_product_failures": 0,
+        "proper_cubic_frames": 24,
+        "rotation_parameter_transport_failures": 0,
+        "signed_AB_generator_product_failures": 0,
+        "update_metadata_product_failures": 0
+      },
+      "factor_sha256": "c7e82710eee749b6df44351b28e70739bccaf1cb3de65c3a28de78611423c874",
+      "inventory": {
+        "coin_euler_max_residual": 3.6188843062238402e-16,
+        "coin_one_particle_gates_per_cell": 20,
+        "compiled_relative_phase_breakdown": {
+          "coin": -37.73997969317614,
+          "contact": -16.64999999999996,
+          "reverse_FSWAP": -169.64600329384854,
+          "seam_FSWAP": -23.561944901923454
+        },
+        "compiled_relative_to_target_global_phase_angle": -247.59792788894808,
+        "contact_pairs": 180,
+        "direct_reverse_helper_FSWAPs": 108,
+        "exact_target_global_phase_correction_angle": 247.59792788894808,
+        "global_phase_correction_routed_gate_count": 0,
+        "logical_reverse_FSWAPs": 36,
+        "phase_breakdown_sum_residual": 0.0,
+        "phase_convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
+        "seam_FSWAPs": 15
+      },
+      "name": "two_overlapping_maximal_stars",
+      "native_coin_algebra": {
+        "Hermiticity_failures": 0,
+        "XZ_anticommutator_failures": 0,
+        "allowed_mode_pairs": 5,
+        "commuting_hop_summand_failures": 0,
+        "maximum_native_su2_residual": 0.0,
+        "meaning": "intrinsic B/A algebra certifies the QR/Euler coin lift without a global-JW chart",
+        "odd_projector_action_failures": 0,
+        "odd_sector_axis_square_failures": 0
+      },
+      "native_reverse_braid": {
+        "maximum_full_space_braid_involution_residual": 0.0,
+        "maximum_occupation_conjugation_residual": 0.0,
+        "minimum_helper_FSWAP_deletion_residual": 1.4142135623730951,
+        "reverse_pairs": 3
+      },
+      "physical_carrier_formula": 261,
+      "placement_collisions": 0,
+      "route": {
+        "first_swap_deletion_detected_macros": 20452,
+        "maximum_route_distance": 33,
+        "non_NN_failures": 0,
+        "occupied_spectator_sites_traversed_and_returned": 119,
+        "operand_order_failures": 0,
+        "persistent_route_work_M2": 0,
+        "primitive_gate_count": 24940,
+        "primitive_kind_census": {
+          "axis_RZ": 2076,
+          "basis_H": 1284,
+          "basis_S": 552,
+          "basis_Sdg": 552,
+          "parity_CNOT": 20476
+        },
+        "primitive_word_sha256": "9b173dad2b1187464211bc24419598b928478fde1c8a180032cec5bf94694424",
+        "proper_cubic_rotated_unit_step_failures": 0,
+        "rotations": 2076,
+        "route_return_failures": 0,
+        "routed_gate_count": 253320,
+        "routed_kind_census": {
+          "axis_RZ": 2076,
+          "basis_H": 1284,
+          "basis_S": 552,
+          "basis_Sdg": 552,
+          "parity_CNOT": 20476,
+          "route_swap": 228380
+        },
+        "routed_word_sha256": "b29aa8f8f7c26ed2b5c9cade053310f44a9e9c540a02deb0b6174c7edc5fb0ed",
+        "schedule": "supplied serial factor/primitive order; no parallel-depth claim",
+        "touched_lattice_sites": 2905,
+        "two_site_primitive_count": 20476
+      },
+      "seams": {
+        "bare_matter_edge_D_anticommutator_census": {
+          "2": 15
+        },
+        "direct_onsite_FSWAP_max_factorization_residual": 0.0,
+        "direct_onsite_FSWAP_max_involution_residual": 0.0,
+        "hermitian_term_failures": 0,
+        "maximum_four_rotation_residual": 0.0,
+        "maximum_full_space_involution_residual": 0.0,
+        "minimum_rotation_deletion_residual": 0.7653668647301795,
+        "minimum_term_deletion_involution_residual": 0.5590169943749475,
+        "physical_lift_maximum_four_rotation_residual": 0.0,
+        "physical_lift_maximum_full_space_involution_residual": 0.0,
+        "seams": 15
+      },
+      "translations": {
+        "arbitrary_physical_origin_translation": "add the supplied integer origin to every routed coordinate",
+        "carrier_translation_failures": 0,
+        "coarse_translation_cases": 4,
+        "native_update_translation_failures": 0
+      },
+      "update_kind_census": {
+        "directed_seam_fswap": 60,
+        "onsite_coin_mass": 1044,
+        "onsite_contact": 540,
+        "onsite_reverse_fswap": 432
+      },
+      "update_rotation_count": 2076
+    },
+    {
+      "abstract_edge_formula": 256,
+      "cells": 12,
+      "coarse_edges": 20,
+      "constraints": {
+        "abstract_constraint_commutator_failures": 0,
+        "abstract_constraint_rank": 184,
+        "abstract_constraint_rows": 186,
+        "abstract_edge_qubits": 256,
+        "abstract_phase_dependency_failures": 0,
+        "abstract_update_preservation_failures": 0,
+        "all_D_product_identity": true,
+        "expected_abstract_rank": 184,
+        "expected_physical_rank": 204,
+        "maximum_abstract_rotation_weight": 21,
+        "maximum_physical_rotation_diameter": 33,
+        "maximum_physical_rotation_weight": 22,
+        "physical_carrier_M2": 276,
+        "physical_constraint_commutator_failures": 0,
+        "physical_constraint_rank": 204,
+        "physical_constraint_rows": 206,
+        "physical_phase_dependency_failures": 0,
+        "physical_update_preservation_failures": 0,
+        "repetition_constraints": 20,
+        "signed_repetition_lift_homomorphism_failures": 0,
+        "update_hermiticity_failures": 0
+      },
+      "covariance": {
+        "all_update_rotation_transport_failures": 0,
+        "carrier_set_transport_failures": 0,
+        "coframe": "supplied and transported; lab-fixed textual rebuild is not claimed",
+        "graph_generator_transport_failures": 0,
+        "ordered_frame_products": 576,
+        "physical_coordinate_product_failures": 0,
+        "proper_cubic_frames": 24,
+        "rotation_parameter_transport_failures": 0,
+        "signed_AB_generator_product_failures": 0,
+        "update_metadata_product_failures": 0
+      },
+      "factor_sha256": "6a56c7e5e423b00f11d3e95424be2c92d18c290cb2c050f00a17aaf53de06110",
+      "inventory": {
+        "coin_euler_max_residual": 3.6188843062238402e-16,
+        "coin_one_particle_gates_per_cell": 20,
+        "compiled_relative_phase_breakdown": {
+          "coin": -37.73997969317614,
+          "contact": -16.64999999999996,
+          "reverse_FSWAP": -169.64600329384854,
+          "seam_FSWAP": -31.415926535897945
+        },
+        "compiled_relative_to_target_global_phase_angle": -255.4519095229226,
+        "contact_pairs": 180,
+        "direct_reverse_helper_FSWAPs": 108,
+        "exact_target_global_phase_correction_angle": 255.4519095229226,
+        "global_phase_correction_routed_gate_count": 0,
+        "logical_reverse_FSWAPs": 36,
+        "phase_breakdown_sum_residual": 0.0,
+        "phase_convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
+        "seam_FSWAPs": 20
+      },
+      "name": "held_3x2x2_open_box",
+      "native_coin_algebra": {
+        "Hermiticity_failures": 0,
+        "XZ_anticommutator_failures": 0,
+        "allowed_mode_pairs": 5,
+        "commuting_hop_summand_failures": 0,
+        "maximum_native_su2_residual": 0.0,
+        "meaning": "intrinsic B/A algebra certifies the QR/Euler coin lift without a global-JW chart",
+        "odd_projector_action_failures": 0,
+        "odd_sector_axis_square_failures": 0
+      },
+      "native_reverse_braid": {
+        "maximum_full_space_braid_involution_residual": 0.0,
+        "maximum_occupation_conjugation_residual": 0.0,
+        "minimum_helper_FSWAP_deletion_residual": 1.4142135623730951,
+        "reverse_pairs": 3
+      },
+      "physical_carrier_formula": 276,
+      "placement_collisions": 0,
+      "route": {
+        "first_swap_deletion_detected_macros": 21484,
+        "maximum_route_distance": 33,
+        "non_NN_failures": 0,
+        "occupied_spectator_sites_traversed_and_returned": 131,
+        "operand_order_failures": 0,
+        "persistent_route_work_M2": 0,
+        "primitive_gate_count": 26060,
+        "primitive_kind_census": {
+          "axis_RZ": 2096,
+          "basis_H": 1344,
+          "basis_S": 552,
+          "basis_Sdg": 552,
+          "parity_CNOT": 21516
+        },
+        "primitive_word_sha256": "9d4c877c1d5b848dc80703752e065f3c390eb4fb7dee7a3d82eec3a5f7c84212",
+        "proper_cubic_rotated_unit_step_failures": 0,
+        "rotations": 2096,
+        "route_return_failures": 0,
+        "routed_gate_count": 283756,
+        "routed_kind_census": {
+          "axis_RZ": 2096,
+          "basis_H": 1344,
+          "basis_S": 552,
+          "basis_Sdg": 552,
+          "parity_CNOT": 21516,
+          "route_swap": 257696
+        },
+        "routed_word_sha256": "22c52e63d9dd65493e1e4fcf9dac2ae9018744c7d8d01ec3026c2e6909060905",
+        "schedule": "supplied serial factor/primitive order; no parallel-depth claim",
+        "touched_lattice_sites": 3003,
+        "two_site_primitive_count": 21516
+      },
+      "seams": {
+        "bare_matter_edge_D_anticommutator_census": {
+          "2": 20
+        },
+        "direct_onsite_FSWAP_max_factorization_residual": 0.0,
+        "direct_onsite_FSWAP_max_involution_residual": 0.0,
+        "hermitian_term_failures": 0,
+        "maximum_four_rotation_residual": 0.0,
+        "maximum_full_space_involution_residual": 0.0,
+        "minimum_rotation_deletion_residual": 0.7653668647301795,
+        "minimum_term_deletion_involution_residual": 0.5590169943749475,
+        "physical_lift_maximum_four_rotation_residual": 0.0,
+        "physical_lift_maximum_full_space_involution_residual": 0.0,
+        "seams": 20
+      },
+      "translations": {
+        "arbitrary_physical_origin_translation": "add the supplied integer origin to every routed coordinate",
+        "carrier_translation_failures": 0,
+        "coarse_translation_cases": 4,
+        "native_update_translation_failures": 0
+      },
+      "update_kind_census": {
+        "directed_seam_fswap": 80,
+        "onsite_coin_mass": 1044,
+        "onsite_contact": 540,
+        "onsite_reverse_fswap": 432
+      },
+      "update_rotation_count": 2096
+    }
+  ],
+  "root_placement_boundary_audit": {
+    "guard_confirmed": true,
+    "interpretation": "the root artifact closes carrier placement and declared cubic structural routes; it does not supply a noncubic preparation controller, and this update probe does not consume one",
+    "noncubic_controller_interactions": 0,
+    "noncubic_held_shape": [
+      3,
+      2,
+      2
+    ],
+    "site_rule_consumed_directly": true,
+    "source": "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+    "source_sha256": "e31501b599f5ea81838320bc103a11225c95d1593d44becd1fe2701e3b5ab0ce"
+  },
+  "shared_stars": {
+    "cells_per_star": [
+      7,
+      7
+    ],
+    "central_shared_seam_factor_count": 1,
+    "central_shared_seam_rotation_count": 4,
+    "common_global_constraint_bank": 189,
+    "induced_global_only_carriers": 12,
+    "maximal_stars": 2,
+    "shared_address_coordinate_failures": 0,
+    "shared_edge_addresses": 38,
+    "star_cell_intersection": 2,
+    "star_union_cells": 12,
+    "subview_to_union_coordinate_failures": 0,
+    "two_subview_carriers_subset_global": true,
+    "union_carrier_M2": 261,
+    "view_rule": "both stars are views of one global graph/register bank; cropped boundary A/B rebuilds are not substituted"
+  },
+  "source_pins": {
+    "Cycle219_coin_sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "Cycle230_contact_sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+    "Cycle703_OpenReferenceGraph_sha256": "833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245",
+    "Cycle706_covariance_sha256": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69",
+    "Cycle707_placement_routing_sha256": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480",
+    "this_source_sha256": "df5809cb74e5ff6bae1fa125094dbeae4f356bf2114a3944a9227365ae574237"
+  },
+  "status": "pass"
+}

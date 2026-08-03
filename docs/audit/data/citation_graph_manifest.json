@@ -1,5 +1,5 @@
 {
- "edge_count": 15409,
+ "edge_count": 15416,
  "node_count": 4630,
  "nodes": {
   "3d_correction_master_note": {
@@ -10179,8 +10179,8 @@
    "out_degree": 4
   },
   "openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02": {
-   "deps_hash": "8bd5028cc7f7",
-   "out_degree": 4
+   "deps_hash": "c37f4f4fe4a3",
+   "out_degree": 11
   },
   "openreference_patchgraph_four_rail_signed_clifford_equivalence_cycle706_note_2026-07-26": {
    "deps_hash": "a9cb5a27b029",

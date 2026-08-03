@@ -2,7 +2,7 @@
   "artifact": {
     "cold_command": "python3 scripts/frontier_cycle870_openreference_fixed_route_schedule_independent_check_2026_08_02.py --repo .",
     "path": "scripts/frontier_cycle870_openreference_fixed_route_schedule_independent_check_2026_08_02.py",
-    "sha256": "74616bc16fc5329cb9cb6055a1e1f73f045350137d3eb2ecb158552aeb66e998"
+    "sha256": "7d2a074dda9bf89566895c7df99de32a675e0ba0706304f4db964d2f053cbdbd"
   },
   "claim_boundary": {
     "exact_primitive_execution": "Each Pauli rotation has an exact H/S-parity-CNOT-RZ-uncompute word. Every nonlocal CNOT has a returned nearest-neighbour SWAP conjugation on the explicitly supplied dense transit-register capacity; all arbitrary transit states are restored. The 18N+3E count is encoded carriers only.",
@@ -1816,10 +1816,10 @@
     "expected_base_is_ancestor": true,
     "joint_probe_imported": false,
     "prior_independent_core": "scripts/frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py",
-    "prior_independent_core_sha256": "61adc5c70f116daf58c583c892eb6ecebd4d7d6872e341dc578c22599e4c0a92",
+    "prior_independent_core_sha256": "49d76550de2d1d44adb2703be0ce7d3bc1ebfdc4914c8eee0413b29ad8dc8af9",
     "repo": ".",
     "target_hashes_at_run": {
-      "joined_EG_active_target": "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457",
+      "joined_EG_active_target": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
       "native_G_active_target": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
       "root_E_active_target": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
       "targets_frozen_for_comparison": true

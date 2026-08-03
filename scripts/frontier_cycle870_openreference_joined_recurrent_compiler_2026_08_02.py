@@ -33,7 +33,12 @@ ROOT_SOURCE = HERE / "frontier_cycle870_openreference_physical_m2_placement_2026
 ROOT_RECEIPT = (
     ROOT / "outputs" / "cycle870_openreference_physical_m2_placement_receipt_2026_08_02.json"
 )
-AUDIT_INPUT_PATHS = (UPDATE_SOURCE, UPDATE_RECEIPT, ROOT_SOURCE, ROOT_RECEIPT)
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py",
+    "outputs/cycle870_openreference_native_recurrent_update_receipt_2026_08_02.json",
+    "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+    "outputs/cycle870_openreference_physical_m2_placement_receipt_2026_08_02.json",
+)
 EXPECTED_INPUT_SHA256 = {
     UPDATE_SOURCE: "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
     UPDATE_RECEIPT: "b1c812afbf25b84b99a5d171cf7925ffc86272e52c252c5f7ee68cb9f5a76807",
@@ -1374,6 +1379,7 @@ def loader_macro_certificate():
 
 
 def encoder_isometry_certificate(
+    shape,
     graph,
     site_map,
     context,
@@ -1450,11 +1456,39 @@ def encoder_isometry_certificate(
                 for index, bit in enumerate(response)
                 if physical_cycles[index][1] in ("cell_triangle", "coarse_plaquette")
             )
-    stream_z_targets = [
-        Pauli(z=1 << context.index[site_map[edge][0]])
-        for edge, (_u, _v, kind, _owner) in enumerate(graph.edges)
-        if kind == "matter_stream"
-    ]
+    geometry = root.echo.ca.box_geometry(shape[0])
+    coarse_masks = geometry["masks"]
+    coarse_edges = geometry["edges"]
+    coarse_plaquettes = geometry["plaquettes"]
+    coarse_lookup = {
+        key: row
+        for row, kind, key in physical_cycles
+        if kind == "coarse_plaquette"
+    }
+    ordered_coarse_rows = tuple(
+        coarse_lookup[(plaquette["anchor"], *plaquette["axes"])]
+        for plaquette in coarse_plaquettes
+    )
+    stream_z_targets = tuple(
+        Pauli(
+            z=1
+            << context.index[
+                site_map[graph.cross_edge[(cell, axis, 0)]][0]
+            ]
+        )
+        for cell, _target, axis in coarse_edges
+    )
+    coarse_physical_incidence_failures = 0
+    for edge_index, correction in enumerate(stream_z_targets):
+        observed = sum(
+            int(not correction.commutes(row)) << plaquette_index
+            for plaquette_index, row in enumerate(ordered_coarse_rows)
+        )
+        expected = sum(
+            ((mask >> edge_index) & 1) << plaquette_index
+            for plaquette_index, mask in enumerate(coarse_masks)
+        )
+        coarse_physical_incidence_failures += observed != expected
     coarse_prior_disturbance = sum(
         not correction.commutes(row)
         for correction in stream_z_targets
@@ -1481,7 +1515,7 @@ def encoder_isometry_certificate(
     initial_preserved = tuple(
         update.physical_lift(root.local_d(graph, cell), context)
         for cell in graph.cells[:-1]
-    ) + update.repetition_rows(context)
+    ) + update.repetition_rows(context) + tuple(physical_logical_z)
     initial_preserved_not_plus_Z = sum(
         row.x != 0 or row.phase % 4 != 0 for row in initial_preserved
     )
@@ -1516,6 +1550,7 @@ def encoder_isometry_certificate(
         ),
         "triangle_decoder_response_failures": triangle_response_failures,
         "coarse_controller_ANF_failures": sum(controller_failures.values()),
+        "coarse_physical_incidence_failures": coarse_physical_incidence_failures,
         "bond_decoder_response_failures": bond_response_failures,
         "later_correction_prior_check_disturbance_failures": (
             prior_disturbance_failures + coarse_prior_disturbance
@@ -1561,6 +1596,7 @@ def encoder_isometry_certificate(
         "loader_macro_operator_certificate": loader_macros,
         "physical_code_rows": len(physical_code),
         "physical_logical_Z_rows": len(physical_logical_z),
+        "coarse_physical_incidence_columns_checked": len(stream_z_targets),
         "carrier_M2": qubits,
         "vacuum_tableau_rank": vacuum_rank,
         "unique_plus_vacuum": vacuum_rank == qubits,
@@ -2122,6 +2158,12 @@ def intertwiner_certificate(
     }
     obligations_zero = all(value == 0 for value in obligations.values())
     representative_phase_exact = phase_certificate["phase_sum_residual_mod_2pi"] <= TOL
+    raw_relative_phase_nonzero = abs(
+        math.atan2(
+            math.sin(phase_certificate["compiled_relative_phase_angle"]),
+            math.cos(phase_certificate["compiled_relative_phase_angle"]),
+        )
+    ) > TOL
     emitted_encoder_exact = encoder_isometry[
         "emitted_E_isometry_exact_on_declared_clean_domain"
     ]
@@ -2163,7 +2205,9 @@ def intertwiner_certificate(
         "routed_rotation_word_without_scalar_is_projective_only": (
             phase_certificate["routed_gate_count"] == 0
             and representative_phase_exact
+            and raw_relative_phase_nonzero
         ),
+        "raw_relative_phase_nonzero": raw_relative_phase_nonzero,
         "formal_representative_scalar_checked": representative_phase_exact,
         "exact_vector_statement": (
             "for every input vector |psi>, G_physical_exact E_joined|psi> "
@@ -2340,6 +2384,7 @@ def stage_inventory(graph, site_map, context, coin_gates):
         shape, graph, site_map, controller_events
     )
     encoder_isometry = encoder_isometry_certificate(
+        shape,
         graph,
         site_map,
         context,

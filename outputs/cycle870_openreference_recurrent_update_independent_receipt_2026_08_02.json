@@ -2,7 +2,7 @@
   "artifact": {
     "method": "independent reconstruction; target scratch read/hash only, never imported",
     "path": "scripts/frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py",
-    "sha256_before_receipt_write": "61adc5c70f116daf58c583c892eb6ecebd4d7d6872e341dc578c22599e4c0a92"
+    "sha256_before_receipt_write": "49d76550de2d1d44adb2703be0ce7d3bc1ebfdc4914c8eee0413b29ad8dc8af9"
   },
   "claim_boundary": {
     "bare_graph_Pauli_covariance": "requires the usual local incidence-order Clifford chart/gauge",
@@ -816,16 +816,16 @@
     "expected_base_commit": "4d6dedee82a14e13cbccb8bf62d6eac1227a4f0c",
     "expected_base_is_ancestor": true,
     "expected_target_sha256": {
-      "outputs/cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json": "cb7a8892649d41ea1c4fe6cf4ddb8ec8678356932f063a74ea775179df77ba1b",
-      "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457",
+      "outputs/cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json": "d6be75419b1fab56853127d55730b63a23ef7d44205e66b7fa73c9f19aac8611",
+      "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
       "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2"
     },
     "joined_scratch_imported": false,
     "joined_target_imported": false,
     "repo": ".",
     "target_hashes": {
-      "joined_recurrent_compiler": "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457",
-      "joined_recurrent_compiler_receipt": "cb7a8892649d41ea1c4fe6cf4ddb8ec8678356932f063a74ea775179df77ba1b",
+      "joined_recurrent_compiler": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
+      "joined_recurrent_compiler_receipt": "d6be75419b1fab56853127d55730b63a23ef7d44205e66b7fa73c9f19aac8611",
       "physical_M2_placement": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2"
     },
     "target_pin_failures": {}

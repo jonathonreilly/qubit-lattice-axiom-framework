@@ -36,14 +36,18 @@ DEPENDENCY_HASHES = {
     "frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
 }
 ACTIVE_JOINED = HERE / "frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py"
-FROZEN_JOINED_SHA256 = "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457"
+FROZEN_JOINED_SHA256 = "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd"
 FROZEN_JOINED_RECEIPT = (
     REPO_ROOT
     / "outputs"
     / "cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json"
 )
-FROZEN_JOINED_RECEIPT_SHA256 = "cb7a8892649d41ea1c4fe6cf4ddb8ec8678356932f063a74ea775179df77ba1b"
-AUDIT_INPUT_PATHS = (ROOT_SOURCE, ACTIVE_JOINED, FROZEN_JOINED_RECEIPT)
+FROZEN_JOINED_RECEIPT_SHA256 = "d6be75419b1fab56853127d55730b63a23ef7d44205e66b7fa73c9f19aac8611"
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+    "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py",
+    "outputs/cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json",
+)
 TOL = 2.0e-9
 STAGES = (
     "triangle_syndrome",
@@ -1012,6 +1016,7 @@ def independent_physical_lift(root, row, site_map, site_index):
 
 def independent_emitted_isometry_certificate(
     root,
+    length,
     graph,
     site_map,
     events,
@@ -1097,11 +1102,37 @@ def independent_emitted_isometry_certificate(
                 for index, bit in enumerate(response)
                 if cycles[index][1] in ("cell_triangle", "coarse_plaquette")
             )
-    stream_z = [
-        root.base.Pauli(z=1 << site_index[site_map[edge][0]])
-        for edge, (_u, _v, kind, _owner) in enumerate(graph.edges)
-        if kind == "matter_stream"
-    ]
+    geometry = root.echo.ca.box_geometry(length)
+    coarse_masks = geometry["masks"]
+    coarse_edges = geometry["edges"]
+    coarse_plaquettes = geometry["plaquettes"]
+    coarse_lookup = {
+        key: row for row, kind, key in cycles if kind == "coarse_plaquette"
+    }
+    ordered_coarse = tuple(
+        coarse_lookup[(plaquette["anchor"], *plaquette["axes"])]
+        for plaquette in coarse_plaquettes
+    )
+    stream_z = tuple(
+        root.base.Pauli(
+            z=1
+            << site_index[
+                site_map[graph.cross_edge[(cell, axis, 0)]][0]
+            ]
+        )
+        for cell, _target, axis in coarse_edges
+    )
+    coarse_physical_incidence = 0
+    for edge_index, correction in enumerate(stream_z):
+        observed = sum(
+            int(not correction.commutes(row)) << plaquette_index
+            for plaquette_index, row in enumerate(ordered_coarse)
+        )
+        expected = sum(
+            ((mask >> edge_index) & 1) << plaquette_index
+            for plaquette_index, mask in enumerate(coarse_masks)
+        )
+        coarse_physical_incidence += observed != expected
     prior += sum(
         not correction.commutes(row)
         for correction in stream_z
@@ -1127,7 +1158,8 @@ def independent_emitted_isometry_certificate(
         if row not in cycle_only
     )
     initial_not_plus_z = sum(
-        row.x != 0 or row.phase % 4 != 0 for row in drows + repetition
+        row.x != 0 or row.phase % 4 != 0
+        for row in drows + repetition + logical_z
     )
     check_macros = independent_check_macro_certificate()
     loader_macros = independent_loader_macro_certificate()
@@ -1159,6 +1191,7 @@ def independent_emitted_isometry_certificate(
         ),
         "triangle_decoder_response_failures": triangle,
         "coarse_controller_ANF_failures": sum(symbolic_controller["failure_census"].values()),
+        "coarse_physical_incidence_failures": coarse_physical_incidence,
         "bond_decoder_response_failures": bond,
         "later_correction_prior_check_disturbance_failures": prior,
         "cycle_check_commutator_failures": cycle_commutators,
@@ -1200,6 +1233,7 @@ def independent_emitted_isometry_certificate(
         "loader_macro_operator_certificate": loader_macros,
         "physical_code_rows": len(physical_code),
         "physical_logical_Z_rows": len(logical_z),
+        "coarse_physical_incidence_columns_checked": len(stream_z),
         "carrier_M2": qubits,
         "vacuum_tableau_rank": vacuum_rank,
         "unique_plus_vacuum": vacuum_rank == qubits,
@@ -1257,6 +1291,7 @@ def fixture(root, length):
     decomposition = decomposition_certificate()
     isometry = independent_emitted_isometry_certificate(
         root,
+        length,
         graph,
         site_map,
         events,

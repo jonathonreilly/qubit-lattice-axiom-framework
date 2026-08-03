@@ -1,18 +1,18 @@
 # Audit Queue
 
-**Total pending:** 3095
+**Total pending:** 3096
 **Ready (dependencies and deterministic forensic evidence):** 501
 **Dependency-ready:** 583
-**Forensic-evidence-ready:** 2613
+**Forensic-evidence-ready:** 2614
 
 By criticality:
 - `critical`: 664
 - `high`: 382
 - `medium`: 857
-- `leaf`: 1192
+- `leaf`: 1193
 
 By work kind:
-- `fresh_scientific_audit`: 2608
+- `fresh_scientific_audit`: 2609
 - `legacy_packet_upgrade`: 5
 - `evidence_repair_required`: 482
 
@@ -25,7 +25,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 1 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | legacy_packet_upgrade | positive_theorem | unaudited | critical | 1796 | 25.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_complexification_exclusion_stress_2026_07_13.py` |
 | 2 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 1786 | 17.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py` |
 | 3 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | fresh_scientific_audit | positive_theorem | unaudited | critical | 1648 | 18.69 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/fermion_parity_z2_grading_check.py` |
-| 4 | `z2_hw1_mass_matrix_parametrization_note` | fresh_scientific_audit | positive_theorem | unaudited | critical | 1483 | 20.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_z2_hw1_mass_matrix_parametrization.py` |
+| 4 | `z2_hw1_mass_matrix_parametrization_note` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 1483 | 20.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_z2_hw1_mass_matrix_parametrization.py` |
 | 5 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 1478 | 14.03 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_mass_matrix_no_go.py` |
 | 6 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 1405 | 11.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py` |
 | 7 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 1403 | 13.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py` |

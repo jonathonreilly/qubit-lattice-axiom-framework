@@ -1,42 +1,164 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-03T08:20:25.460076+00:00",
+  "audit_invocation_history": [
+    "be514fdd9f5942e791e65bb93b007d25",
+    "4e6e9783867a4a92916ae8e798bb6405"
+  ],
+  "audit_invocation_id": "4e6e9783867a4a92916ae8e798bb6405",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 10,
+        "B": 1,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/frontier_z2_hw1_mass_matrix_parametrization.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "z2_hw1_mass_matrix_parametrization_note",
+      "digest": "68764e45fabd5b7bc9115e76d0ee351e8d243f5b9df6e5c9fb5a17ba57176ef5",
+      "judgment": {
+        "audit_date": "2026-08-03T08:20:25.460076+00:00",
+        "audit_invocation_id": "4e6e9783867a4a92916ae8e798bb6405",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-audit-batch-B-20260803-a2cc7eab",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "The coordinate calculation closes only if the displayed basis is orthonormal and the permutation action is unitary for the supplied inner product. As written, a general inner-product-space basis instead has Hermiticity condition M\u2020G=GM, so the displayed five-parameter form does not follow.",
+        "claim_scope": "Conditional on an orthonormal displayed basis and unitary axis-permutation action: the exact residual-Z_2 Hermitian normal form, spectrum, open-dense simple-spectrum locus, and full-S_3 sublocus.",
+        "claim_type": "positive_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": null,
+        "decoration_parent_claim_id": null,
+        "independence": "fresh_context",
+        "load_bearing_step": "The equation S M S\u2020=M applied to a general Hermitian matrix gives exactly the displayed five-real-parameter residual form.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [],
+        "notes_for_re_audit_if_any": "scope_too_broad: amend this note's safe statement and derivation to require the displayed basis to be orthonormal, equivalently specifying the standard coordinate inner product and unitary permutation action, then rerun the exact checks.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 30,
+          "B": 4,
+          "C": 0,
+          "D": 0,
+          "total_pass": 34
+        },
+        "verdict_rationale": "Issue: the proof silently identifies operator Hermiticity and adjoints with ordinary conjugate transpose in the displayed basis without stating that this basis is orthonormal. Why this blocks: for a general supplied inner product with Gram matrix G, self-adjointness is M\u2020G=GM and the asserted normal form need not hold. Repair target: explicitly supply an orthonormal basis and unitary permutation representation, or redo the classification for a general invariant Gram matrix. Claim boundary until fixed: all displayed algebra, spectra, discriminant, and S_3-locus calculations close under the missing orthonormal/unitary hypothesis."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 20.035,
+    "packet_policy_fingerprint": {
+      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "policy_versions": {
+      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_z2_hw1_mass_matrix_parametrization.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3a2e7aaf825c059b8f9a451941399c733174ed06b514a43ae843cebc363f65d9",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "3a2e7aaf825c059b8f9a451941399c733174ed06b514a43ae843cebc363f65d9",
+    "runner_path": "scripts/frontier_z2_hw1_mass_matrix_parametrization.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "science_fingerprint": {
+      "dependencies": [],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "7dd384e3b31c5c331dcac3062ea93d1861e9a5b1c6f0676892c278d61fc5964c",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/frontier_z2_hw1_mass_matrix_parametrization.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "3a2e7aaf825c059b8f9a451941399c733174ed06b514a43ae843cebc363f65d9"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "z2_hw1_mass_matrix_parametrization_note",
+        "claim_scope": "Conditional on an orthonormal displayed basis and unitary axis-permutation action: the exact residual-Z_2 Hermitian normal form, spectrum, open-dense simple-spectrum locus, and full-S_3 sublocus.",
+        "claim_type": "positive_theorem",
+        "ledger_note_hash": "4bfcec29c67a04ed7324c713e02586fe8c6b041efc4898c15848221ca6e688fb",
+        "note_path": "docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md",
+        "note_sha256": "4bfcec29c67a04ed7324c713e02586fe8c6b041efc4898c15848221ca6e688fb"
+      }
+    },
+    "transitive_descendants": 1483
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260803-a2cc7eab",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The coordinate calculation closes only if the displayed basis is orthonormal and the permutation action is unitary for the supplied inner product. As written, a general inner-product-space basis instead has Hermiticity condition M\u2020G=GM, so the displayed five-parameter form does not follow.",
   "claim_id": "z2_hw1_mass_matrix_parametrization_note",
-  "claim_scope": null,
+  "claim_scope": "Conditional on an orthonormal displayed basis and unitary axis-permutation action: the exact residual-Z_2 Hermitian normal form, spectrum, open-dense simple-spectrum locus, and full-S_3 sublocus.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-08-03T08:20:25.460076+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 19,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 20.035,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The equation S M S\u2020=M applied to a general Hermitian matrix gives exactly the displayed five-real-parameter residual form.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "4bfcec29c67a04ed7324c713e02586fe8c6b041efc4898c15848221ca6e688fb",
   "note_path": "docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: amend this note's safe statement and derivation to require the displayed basis to be orthonormal, equivalently specifying the standard coordinate inner product and unitary permutation action, then rerun the exact checks.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -446,14 +568,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 30,
+    "B": 4,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 34
   },
   "runner_path": "scripts/frontier_z2_hw1_mass_matrix_parametrization.py",
   "title": "Z_2 `hw=1` Mass-Matrix Parametrization Note",
   "transitive_descendants": 1483,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the proof silently identifies operator Hermiticity and adjoints with ordinary conjugate transpose in the displayed basis without stating that this basis is orthonormal. Why this blocks: for a general supplied inner product with Gram matrix G, self-adjointness is M\u2020G=GM and the asserted normal form need not hold. Repair target: explicitly supply an orthonormal basis and unitary permutation representation, or redo the classification for a general invariant Gram matrix. Claim boundary until fixed: all displayed algebra, spectra, discriminant, and S_3-locus calculations close under the missing orthonormal/unitary hypothesis."
 }

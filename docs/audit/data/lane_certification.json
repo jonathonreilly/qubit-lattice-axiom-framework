@@ -109,7 +109,7 @@
         },
         {
           "claim_id": "z2_hw1_mass_matrix_parametrization_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         }
       ],
       "certified": false,
@@ -2842,7 +2842,7 @@
         },
         {
           "claim_id": "z2_hw1_mass_matrix_parametrization_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         }
       ],
       "certified": false,

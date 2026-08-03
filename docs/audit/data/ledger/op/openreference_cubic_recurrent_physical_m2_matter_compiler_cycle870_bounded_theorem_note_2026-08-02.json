@@ -31,7 +31,7 @@
     "bounded_two_star_bksf_cycle789_target_chart_bridge_cycle869_bounded_theorem_note_2026-08-02",
     "recurrent_matter_history_controller_cycle719_bounded_theorem_note_2026-07-26"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -70,7 +70,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -91,6 +91,6 @@
   },
   "runner_path": "scripts/frontier_cycle870_openreference_package_acceptance_2026_08_02.py",
   "title": "OpenReference cubic recurrent physical-M2 matter compiler \u2014 Cycle 870",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

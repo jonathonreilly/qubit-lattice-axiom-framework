@@ -31,8 +31,8 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3970 |
-| Applied audit verdicts | 858 |
+| Ledger rows | 3971 |
+| Applied audit verdicts | 859 |
 | Retained-grade rows, including boxed decorations | 453 |
 | Retained positive theorems | 108 |
 | Retained no-go rows | 0 |
@@ -41,7 +41,7 @@ Owner-approval history for axioms and primitives:
 | Open gates | 2 |
 | Unaudited rows | 2744 |
 | Retained-pending-chain rows | 12 |
-| Audited conditional rows | 277 |
+| Audited conditional rows | 278 |
 | Audited renaming rows | 33 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 59 |
@@ -54,20 +54,20 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3095 |
+| Total pending rows | 3096 |
 | Ready rows | 501 |
 | Cycle-break targets | 60 |
 | Critical pending | 664 |
 | High pending | 382 |
 | Medium pending | 857 |
-| Leaf pending | 1192 |
+| Leaf pending | 1193 |
 
 Next ready rows by queue order:
 
 - [`cl3_complexification_split_narrow_theorem_note_2026-05-10`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_conditional
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`z2_hw1_mass_matrix_parametrization_note`](../../docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) - critical; unaudited
+- [`z2_hw1_mass_matrix_parametrization_note`](../../docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) - critical; non_terminal_conditional
 - [`s3_mass_matrix_conditional_degeneracy_note_2026-07-11`](../../docs/S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md) - critical; non_terminal_conditional
 - [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_conditional
@@ -82,10 +82,10 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 237 |
+| critical | `unaudited` | 236 |
 | high | `unaudited` | 165 |
 | medium | `unaudited` | 113 |
-| critical | `audited_conditional` | 10 |
+| critical | `audited_conditional` | 11 |
 | medium | `audited_conditional` | 7 |
 | high | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 1 |
 | Admitted ids absent from lane candidates | 25 |
-| Live conditional/failed rows that would park | 0 |
+| Live conditional/failed rows that would park | 1 |
 | Live rows fail-open (legacy/unversioned snapshot) | 28 |
 | Lane rows already in actual ready top-10 | 2 |
 | Lane rows added since prior pass | 9 |
@@ -207,10 +207,10 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `action_normalization_note`: +2
 - `three_generation_observable_count_corollary_note_2026-05-03`: +2
 - `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25`: +2
+- `gauge_vacuum_plaquette_spectral_measure_theorem_note`: +2
+- `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24`: +2
 - `koide_q_bridge_single_primitive_note_2026-04-22`: +2
 - `area_law_multipocket_selector_no_go_note_2026-04-25`: +1
-- `gauge_vacuum_plaquette_spectral_measure_theorem_note`: +1
-- `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24`: +1
 - `ckm_down_type_scale_convention_support_note_2026-04-22`: +1
 - `koide_transport_gap_constant_no_go_note_2026-04-20`: +1
 
@@ -294,6 +294,8 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`: -2
 - `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04`: -2
 - `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10`: -2
+- `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`: -2
+- `record_markov_generator_embeddability_boundary_2026-06-06`: -2
 - `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`: -2
 - `cl3_complexification_split_narrow_theorem_note_2026-05-10`: -1
 - `post_record_count_probability_firewall_2026-06-06`: -1
@@ -304,8 +306,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10`: -1
 - `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10`: -1
 - `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`: -1
-- `record_markov_generator_embeddability_boundary_2026-06-06`: -1
-- `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`: -1
 - `substrate_to_p_a_forcing_theorem_note_2026-04-30`: -1
 
 Simulation assumptions: ready-only rows, banded lane-first 1:1 alternation, no re-queue dynamics. Lane and gap come from THIS pipeline pass (stage 16 runs after the publication renderer); churn state persists in the tracked dispatch_shadow_state.json. Cutover flags remain OFF; see the dispatch-retarget design note's Ratification Log.
@@ -316,15 +316,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4630 |
+| Citation-graph nodes | 4631 |
 | Critical nodes | 766 |
 | High nodes | 464 |
 | Medium nodes | 1188 |
-| Leaf nodes | 2212 |
+| Leaf nodes | 2213 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2216 descendants; score 284.614
+- `minimal_axioms` - critical; 2217 descendants; score 284.615
 - `graph_first_su3_integration_note` - critical; 1687 descendants; score 64.221
 - `three_generation_observable_theorem_note` - critical; 1291 descendants; score 62.335
 - `observable_principle_from_axiom_note` - critical; 1133 descendants; score 61.647

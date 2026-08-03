@@ -19,7 +19,14 @@ independence from just-blocked lanes.
   bounded runner can certify, and emit the exact obligation map for
   the rest. High blast radius; medium retained-positive; runners
   buildable on the source-acceptance harness.
-- **G3 — sigma-linear response-object admissibility** (868 escape b).
+- DONE G3 (PR #5927) and G4 (PR #5928); their successor:
+- **G5 — the unit sector grading (1,1,1): derive or price** (NOW THE
+  DECISIVE RUNG — running as Cycle 876). 872 collapsed escape (b) into
+  (a); 873 relocated (a) to the supplied grading. If (1,1,1) derives
+  from the axioms, the sign wall is permanent at scope; if not, the
+  import is priced with its consequence function over the lawful
+  segment and the owner gets the decision surface.
+- SUPERSEDED: **G3 — sigma-linear response-object admissibility** (868 escape b).
   Classify response objects LINEAR in the endpoint exchange within
   landed admissibility; outcome is either a lawful sigma-visible
   object (a derivation route to the sign datum) or a scoped no-go

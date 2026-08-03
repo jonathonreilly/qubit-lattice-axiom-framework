@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 109 |
+| Retained positive rows | 110 |
 | Retained bounded rows | 320 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 26 |
 
-## Retained positive rows (109)
+## Retained positive rows (110)
 
 Sorted by load-bearing graph score (descending).
 
@@ -63,6 +63,7 @@ Sorted by load-bearing graph score (descending).
 - [`cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`](../../docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md) — score 11.029; audited 2026-05-29T02:03:27.054059+00:00
 - [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) — score 10.950; audited 2026-07-20T23:42:02.126081+00:00
 - [`koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29`](../../docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md) — score 10.570; audited 2026-08-01T20:26:33.388687+00:00
+- [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 10.543; audited 2026-08-03T09:44:09.206933+00:00
 - [`charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11`](../../docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md) — score 10.535; audited 2026-07-12T19:55:26.260929+00:00
 - [`dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25`](../../docs/DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md) — score 10.055; audited 2026-07-25T03:31:16.829931+00:00
 - [`gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07`](../../docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md) — score 10.026; audited 2026-07-29T20:56:57.806172+00:00

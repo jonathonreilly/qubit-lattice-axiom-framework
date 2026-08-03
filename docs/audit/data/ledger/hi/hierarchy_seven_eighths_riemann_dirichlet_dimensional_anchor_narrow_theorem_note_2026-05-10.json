@@ -2,9 +2,10 @@
   "audit_date": "2026-08-03T10:52:11.696077+00:00",
   "audit_invocation_history": [
     "73eb2f35473c460ca1b83764e037273d",
-    "c3000bfba3ca4998ae2ae784c21273fb"
+    "c3000bfba3ca4998ae2ae784c21273fb",
+    "19bf777842d5496bb94f68a49b074c1a"
   ],
-  "audit_invocation_id": "c3000bfba3ca4998ae2ae784c21273fb",
+  "audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a",
   "audit_state_snapshot": {
     "criticality": "critical",
     "dep_axiom_premise_note_hash": {},
@@ -15,10 +16,10 @@
     "helper_runner_hashes": {},
     "judgment_fingerprint": {
       "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-      "digest": "467089bbc89dd7848bb64d72dd5429d674fa930ef5c889c082df5d4313feee26",
+      "digest": "4d1a5177eead6e7af3eff7cac376382b51b959dcf59de8cecea5aa1b8b206a0c",
       "judgment": {
         "audit_date": "2026-08-03T10:52:11.696077+00:00",
-        "audit_invocation_id": "c3000bfba3ca4998ae2ae784c21273fb",
+        "audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a",
         "audit_status": "audit_in_progress",
         "auditor": "codex-audit-batch-A-20260803-06e16ce5",
         "auditor_confidence": "high",
@@ -59,8 +60,35 @@
             "verdict": "audited_clean",
             "verdict_rationale": "The eta-zeta split, rational-ratio simplification, and ratio-gap identity are exact and independently check algebraically. The finite scan is only corroborative; the all-integer uniqueness follows from the verified base values and strictly positive forward difference for d \u2265 4. No physical dimension selection, fitted input, external comparator, or repository dependency is used."
           },
-          "second_audit": null,
-          "status": "awaiting_second"
+          "second_audit": {
+            "audit_date": "2026-08-03T11:34:59.405736+00:00",
+            "audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a",
+            "auditor": "codex-audit-batch-B-20260803-fc81ca38",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": true,
+            "chain_closure_explanation": "Independent algebra confirms the ratio-gap identity, and the base values plus strictly positive forward difference for every integer d \u2265 4 prove uniqueness. No repository dependency or physical identification enters the scoped theorem.",
+            "claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+            "claim_type": "positive_theorem",
+            "decoration_parent_claim_id": null,
+            "independence": "fresh_context",
+            "load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+            "notes_for_re_audit_if_any": "",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 20,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 20
+            },
+            "verdict": "audited_clean",
+            "verdict_rationale": "The load-bearing identity follows by direct common-denominator algebra, independently of the runner. The values A(2)=\u22121, A(3)=\u22121, A(4)=0 and A(d+1)\u2212A(d)=2^(d\u22122)\u22121>0 for d\u22654 establish the unique integer zero, while the eta-zeta identity follows from the absolutely convergent odd/even split. The runner computes and checks all 20 stated class-A assertions, and the theorem imports no physical selector, normalization, or unresolved dependency."
+          },
+          "status": "disagreement"
         },
         "decoration_parent_claim_id": null,
         "independence": "cross_family",
@@ -131,7 +159,7 @@
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
-  "blocker": "awaiting_cross_confirmation",
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": false,
   "chain_closure_explanation": "The exact algebra closes the d = 4 tuple, but the broader uniqueness boundary lacks the mandatory five distinct live-evidenced N1 attack classes and all-resolution N5 checks.",
   "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
@@ -171,8 +199,35 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The eta-zeta split, rational-ratio simplification, and ratio-gap identity are exact and independently check algebraically. The finite scan is only corroborative; the all-integer uniqueness follows from the verified base values and strictly positive forward difference for d \u2265 4. No physical dimension selection, fitted input, external comparator, or repository dependency is used."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-08-03T11:34:59.405736+00:00",
+      "audit_invocation_id": "19bf777842d5496bb94f68a49b074c1a",
+      "auditor": "codex-audit-batch-B-20260803-fc81ca38",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "Independent algebra confirms the ratio-gap identity, and the base values plus strictly positive forward difference for every integer d \u2265 4 prove uniqueness. No repository dependency or physical identification enters the scoped theorem.",
+      "claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "R_lat(d\u22121)\u2212R_RD(d)=\u2212A(d)/[d\u00b72^(d\u22121)], together with the proof that A(d)=0 only at d=4 on integers d\u22652.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict": "audited_clean",
+      "verdict_rationale": "The load-bearing identity follows by direct common-denominator algebra, independently of the runner. The values A(2)=\u22121, A(3)=\u22121, A(4)=0 and A(d+1)\u2212A(d)=2^(d\u22122)\u22121>0 for d\u22654 establish the unique integer zero, while the eta-zeta identity follows from the absolutely convergent odd/even split. The runner computes and checks all 20 stated class-A assertions, and the theorem imports no physical selector, normalization, or unresolved dependency."
+    },
+    "status": "disagreement"
   },
   "decoration_parent_claim_id": null,
   "deps": [],

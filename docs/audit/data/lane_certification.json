@@ -500,10 +500,6 @@
           "effective_status": "retained_pending_chain"
         },
         {
-          "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
           "effective_status": "audited_conditional"
         },
@@ -2716,7 +2712,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 623
+      "uncertified_count": 622
     }
   ],
   "schema": "lane_certification_v2"

@@ -1,18 +1,18 @@
 # Audit Queue
 
-**Total pending:** 3017
-**Ready (dependencies and deterministic forensic evidence):** 473
-**Dependency-ready:** 557
-**Forensic-evidence-ready:** 2535
+**Total pending:** 3016
+**Ready (dependencies and deterministic forensic evidence):** 472
+**Dependency-ready:** 556
+**Forensic-evidence-ready:** 2534
 
 By criticality:
-- `critical`: 634
+- `critical`: 633
 - `high`: 376
 - `medium`: 841
 - `leaf`: 1166
 
 By work kind:
-- `fresh_scientific_audit`: 2535
+- `fresh_scientific_audit`: 2534
 - `legacy_packet_upgrade`: 0
 - `evidence_repair_required`: 482
 
@@ -71,7 +71,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 47 | `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | fresh_scientific_audit | bounded_theorem | non_terminal_failed | critical | 748 | 13.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py` |
 | 48 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 748 | 11.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_u0_plaquette_quartic_derivation.py` |
 | 49 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | fresh_scientific_audit | positive_theorem | non_terminal_failed | critical | 746 | 16.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_single_clock_stone_finite_dim_exact_2026_05_10.py` |
-| 50 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | fresh_scientific_audit | positive_theorem | audit_in_progress | critical | 745 | 10.54 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |
+| 50 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 745 | 10.54 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py` |
 
 ## Citation cycle break targets
 

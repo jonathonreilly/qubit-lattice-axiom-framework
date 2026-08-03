@@ -1,28 +1,238 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-08-03T02:39:47.821453+00:00",
   "audit_invocation_history": [
-    "8dec2700bcad477d857a4b96bb8f5cb3"
+    "8dec2700bcad477d857a4b96bb8f5cb3",
+    "495148bfb1ce416ab999838f4ee62f89"
   ],
-  "audit_invocation_id": "8dec2700bcad477d857a4b96bb8f5cb3",
-  "audit_state_snapshot": null,
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_invocation_id": "495148bfb1ce416ab999838f4ee62f89",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {
+      "scripts/clifford_chirality_dimension_n7_independent_check.py": "df5eece36e64a0104cabd21fadd79157e538b263175d407d159b413b1f68aae2"
+    },
+    "judgment_fingerprint": {
+      "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+      "digest": "d929bebad04dae439313ac0de7ce110e8067e2e6af85777a633dc37b0790e28b",
+      "judgment": {
+        "audit_date": "2026-08-03T02:39:47.821453+00:00",
+        "audit_invocation_id": "495148bfb1ce416ab999838f4ee62f89",
+        "audit_status": "audited_clean",
+        "auditor": "codex-audit-batch-B-20260803-2fcb30f2",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": true,
+        "chain_closure_explanation": "The Clifford-basis parity argument proves the volume commutation identity and eliminates the simultaneous internal anticommutant exactly; the phase then produces a square-one implementer precisely in even dimension. Under the explicitly conditional total-carrier hypothesis, the accepted Z^3 premise gives d_s=3 and hence odd d_t.",
+        "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+        "claim_type": "positive_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": {
+          "agreement_schema": "audit_tuple_v2",
+          "first_audit": {
+            "audit_date": "2026-08-01T19:54:04.349718+00:00",
+            "audit_invocation_id": "8dec2700bcad477d857a4b96bb8f5cb3",
+            "auditor": "codex-audit-batch-A-20260801-6a3fa5b4",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": true,
+            "chain_closure_explanation": "The Clifford-basis parity identity proves the volume-element relation and eliminates every coefficient in the odd-dimensional simultaneous anticommutant. The conditional d_t parity specialization then follows from the accepted Lattice premise d_s=3 without an open dependency.",
+            "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+            "claim_type": "positive_theorem",
+            "decoration_parent_claim_id": null,
+            "independence": "cross_family",
+            "load_bearing_step": "For a Clifford basis monomial gamma_S of degree r, gamma_S gamma_mu = (-1)^(r-1_{mu in S}) gamma_mu gamma_S, so simultaneous anticommutation leaves only the full volume monomial when n is even and no nonzero monomial when n is odd.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 37,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 37
+            },
+            "verdict": "audited_clean",
+            "verdict_rationale": "The symbolic Clifford-basis proof establishes T1 and both directions of T2 for arbitrary complex Cl(p,q); the finite runner checks are corroborating smoke tests rather than substitutes for that proof. T3 uses only the explicitly accepted Lattice premise d_s=3 and a separately stated total-carrier condition. The ambient-carrier counterexample is correctly excluded by the internal-algebra scope and independently reauthenticated, so the negative boundary remains valid without overreach."
+          },
+          "second_audit": {
+            "audit_date": "2026-08-03T02:39:47.821453+00:00",
+            "audit_invocation_id": "495148bfb1ce416ab999838f4ee62f89",
+            "auditor": "codex-audit-batch-B-20260803-2fcb30f2",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": true,
+            "chain_closure_explanation": "The Clifford-basis parity argument proves the volume commutation identity and eliminates the simultaneous internal anticommutant exactly; the phase then produces a square-one implementer precisely in even dimension. Under the explicitly conditional total-carrier hypothesis, the accepted Z^3 premise gives d_s=3 and hence odd d_t.",
+            "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+            "claim_type": "positive_theorem",
+            "decoration_parent_claim_id": null,
+            "independence": "fresh_context",
+            "load_bearing_step": "For each Clifford monomial gamma_S, gamma_S gamma_mu = (-1)^(|S|-1_{mu in S}) gamma_mu gamma_S, so simultaneous anticommutation with every generator is possible only for the full monomial when n is even.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "Re-check the carrier qualification if downstream work later treats this internal theorem as an ambient-operator statement.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 37,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 37
+            },
+            "verdict": "audited_clean",
+            "verdict_rationale": "Independent algebra verifies the sign in the volume-element commutation rule and the monomial-parity elimination of the odd-dimensional common anticommutant; the finite runner is corroborative rather than the proof. The phase i^{n(n-1)/2+q} squares against omega^2=(-1)^{n(n-1)/2+q}I to give the required involution in even dimension. The conditional d_t conclusion then follows from d_s=3 without selecting d_t=1, and the ambient-carrier steelman leaves the explicitly internal scope intact."
+          },
+          "status": "confirmed"
+        },
+        "decoration_parent_claim_id": null,
+        "independence": "fresh_context",
+        "load_bearing_step": "For each Clifford monomial gamma_S, gamma_S gamma_mu = (-1)^(|S|-1_{mu in S}) gamma_mu gamma_S, so simultaneous anticommutation with every generator is possible only for the full monomial when n is even.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [
+          "derived_no_go_boundary"
+        ],
+        "notes_for_re_audit_if_any": "Re-check the carrier qualification if downstream work later treats this internal theorem as an ambient-operator statement.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 37,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "total_pass": 37
+        },
+        "verdict_rationale": "Independent algebra verifies the sign in the volume-element commutation rule and the monomial-parity elimination of the odd-dimensional common anticommutant; the finite runner is corroborative rather than the proof. The phase i^{n(n-1)/2+q} squares against omega^2=(-1)^{n(n-1)/2+q}I to give the required involution in even dimension. The conditional d_t conclusion then follows from d_s=3 without selecting d_t=1, and the ambient-carrier steelman leaves the explicitly internal scope intact."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 10.543,
+    "packet_policy_fingerprint": {
+      "digest": "9a71ed6d9de3c07d77ac54c174c860c732c2623464ee5216069a1c5f667d1111",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "4c8254d65a5c51706b53309059bcb4323bc72cf9d4db2fbc0c9378926046e3ac",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "runner_hash": "5d8cfe3a8dfa88d1ec78d7e97303878391584d7661bd8d6866bc950177b690cb",
+    "science_fingerprint": {
+      "dependencies": [
+        {
+          "claim_id": "minimal_axioms",
+          "claim_scope": null,
+          "claim_type": "meta",
+          "effective_status": "meta",
+          "ledger_note_hash": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+          "note_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "note_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+          "premise_classification": "accepted_premise",
+          "present": true
+        }
+      ],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "6580bb6b485eb6a1b1330730991967b802e06b314bd16185a5506f073115011c",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": "27846084cc4319791c073f784273d6081186ebaa8305b683cb7e85acc2fb2ff6",
+          "declared_input_paths": [
+            "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "scripts/clifford_chirality_dimension_n7_independent_check.py"
+          ],
+          "declared_inputs": [
+            {
+              "path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "sha256": "ae49e3ca57d217445dff1ec4cafdad7880bbbd13025d06148d2edbad33007a95"
+            },
+            {
+              "path": "scripts/clifford_chirality_dimension_n7_independent_check.py",
+              "sha256": "df5eece36e64a0104cabd21fadd79157e538b263175d407d159b413b1f68aae2"
+            }
+          ],
+          "path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "5d8cfe3a8dfa88d1ec78d7e97303878391584d7661bd8d6866bc950177b690cb"
+        },
+        {
+          "declared_input_fingerprint_sha256": "7a2d9285cfc4965286accd4e52b4937d712aa33b27d15e5238f156338597b1de",
+          "declared_input_paths": [
+            "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "scripts/frontier_clifford_chirality_dimension_narrow.py"
+          ],
+          "declared_inputs": [
+            {
+              "path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "sha256": "ae49e3ca57d217445dff1ec4cafdad7880bbbd13025d06148d2edbad33007a95"
+            },
+            {
+              "path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
+              "sha256": "5d8cfe3a8dfa88d1ec78d7e97303878391584d7661bd8d6866bc950177b690cb"
+            }
+          ],
+          "path": "scripts/clifford_chirality_dimension_n7_independent_check.py",
+          "present": true,
+          "role": "helper",
+          "sha256": "df5eece36e64a0104cabd21fadd79157e538b263175d407d159b413b1f68aae2"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+        "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+        "claim_type": "positive_theorem",
+        "ledger_note_hash": "ae49e3ca57d217445dff1ec4cafdad7880bbbd13025d06148d2edbad33007a95",
+        "note_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "note_sha256": "ae49e3ca57d217445dff1ec4cafdad7880bbbd13025d06148d2edbad33007a95"
+      }
+    },
+    "transitive_descendants": 745
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-B-20260803-2fcb30f2",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The Clifford-basis parity argument proves the volume commutation identity and eliminates the simultaneous internal anticommutant exactly; the phase then produces a square-one implementer precisely in even dimension. Under the explicitly conditional total-carrier hypothesis, the accepted Z^3 premise gives d_s=3 and hence odd d_t.",
   "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
   "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-08-01T19:54:04.349718+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-08-03T02:39:47.821453+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-08-01T19:54:04.349718+00:00",
       "audit_invocation_id": "8dec2700bcad477d857a4b96bb8f5cb3",
@@ -376,29 +586,727 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The symbolic Clifford-basis proof establishes T1 and both directions of T2 for arbitrary complex Cl(p,q); the finite runner checks are corroborating smoke tests rather than substitutes for that proof. T3 uses only the explicitly accepted Lattice premise d_s=3 and a separately stated total-carrier condition. The ambient-carrier counterexample is correctly excluded by the internal-algebra scope and independently reauthenticated, so the negative boundary remains valid without overreach."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-08-03T02:39:47.821453+00:00",
+      "audit_invocation_id": "495148bfb1ce416ab999838f4ee62f89",
+      "auditor": "codex-audit-batch-B-20260803-2fcb30f2",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": true,
+      "chain_closure_explanation": "The Clifford-basis parity argument proves the volume commutation identity and eliminates the simultaneous internal anticommutant exactly; the phase then produces a square-one implementer precisely in even dimension. Under the explicitly conditional total-carrier hypothesis, the accepted Z^3 premise gives d_s=3 and hence odd d_t.",
+      "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+      "claim_type": "positive_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "For each Clifford monomial gamma_S, gamma_S gamma_mu = (-1)^(|S|-1_{mu in S}) gamma_mu gamma_S, so simultaneous anticommutation with every generator is possible only for the full monomial when n is even.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "solve the stacked full coefficient kernel after certifying the 2^n monomial span is faithful",
+            "disposition": "CLOSED",
+            "evidence_locator": "N1_ROUTE route_id=coefficient-cancellation",
+            "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "arbitrary coefficient cancellation in the simultaneous anticommutator algebra",
+            "outcome": "odd internal nullity is zero for n=1,3,5",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "coefficient-cancellation"
+          },
+          {
+            "attempt": "verify centrality and invertibility while an all-generator anticommuter crosses an odd product with negative sign",
+            "disposition": "CLOSED",
+            "evidence_locator": "N1_ROUTE route_id=central-volume",
+            "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "central invertible odd volume representation",
+            "outcome": "commuting and anticommuting with invertible omega forces M=0",
+            "prior_witness_id": null,
+            "route_class": "symmetry_or_representation",
+            "route_id": "central-volume"
+          },
+          {
+            "attempt": "search Pauli tensor words for an involution that anticommutes with every odd generator and raises the internal span rank",
+            "disposition": "CLOSED",
+            "evidence_locator": "N1_ROUTE route_id=external-matrix-carrier",
+            "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "alternate ambient matrix carrier outside the internal Clifford span",
+            "outcome": "external witnesses found outside Cl(n), cases=[(1, 2, 3), (3, 8, 9), (5, 32, 33)]",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "external-matrix-carrier"
+          },
+          {
+            "attempt": "compare the faithful Cl_n span with the span after adjoining the candidate and candidate-times-basis products",
+            "disposition": "CLOSED",
+            "evidence_locator": "N1_ROUTE route_id=extension-dimension",
+            "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "finite dimension-doubling test of universal extension by an anticommuting square-one generator",
+            "outcome": "ranks double from 2^n to 2^(n+1), cases=[(1, 2, 4), (3, 8, 16), (5, 32, 64)]",
+            "prior_witness_id": null,
+            "route_class": "numerical_or_finite_case",
+            "route_id": "extension-dimension"
+          },
+          {
+            "attempt": "test that the grade automorphism exchanges the central summands while internal conjugation fixes the center",
+            "disposition": "CLOSED",
+            "evidence_locator": "N1_ROUTE route_id=central-idempotent-exchange",
+            "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "global semisimple-algebra structure through two nonzero central volume idempotents",
+            "outcome": "nonzero exchanged idempotents, cases=[(1, 1, 1), (3, 2, 2), (5, 4, 4)]",
+            "prior_witness_id": null,
+            "route_class": "topology_or_global_structure",
+            "route_id": "central-idempotent-exchange"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "M in Cl(n)"
+          ],
+          "evidence_locator": "A_n  :=  { M in Cl(n) : {M, gamma_mu} = 0  for every mu }",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "M in Cl(n)"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "**Negative boundary under assessment:** no nonzero element of the internal",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "framework axiom-set authority (only load-bearing dependency).",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "614acac9e67bec7f",
+              "occurrence_locator_sha256": "91c667c6ac72379853fce78791c7a4bfc2e411d3297833e3d9132ffe6c266796",
+              "phrase": "axiom",
+              "promoted_wall": null,
+              "rationale": "This occurrence labels the explicitly cited framework authority and imports no additional unnamed premise."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "**Negative boundary under assessment:** no nonzero element of the internal",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "2ef918182553b3f4",
+              "occurrence_locator_sha256": "6cb3dbc30a771dd91e2583a2a3e5e1fb0aefcfcd5edb20b9be7ef9ffbdffdc9a",
+              "phrase": "boundary",
+              "promoted_wall": null,
+              "rationale": "This occurrence explicitly labels the scoped negative conclusion rather than concealing a premise."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "field, action, or Grassmann CAR boundary structure).",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "3d233f6269b2741d",
+              "occurrence_locator_sha256": "473582ac14531e7b61ac4e05a6615043a307dd238a83deb9bf0b60fa3bc39048",
+              "phrase": "boundary",
+              "promoted_wall": null,
+              "rationale": "This occurrence is inside an explicit forbidden-import exclusion and supplies no proof premise."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "| candidate boundary | disposition |",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "7c17fe8ef670bd0f",
+              "occurrence_locator_sha256": "68004e06e1ce38c3a66c506b3c0856927d5dbaf9e1344d2700d9df2e0fcc10c0",
+              "phrase": "boundary",
+              "promoted_wall": null,
+              "rationale": "This occurrence is a stress-test table heading and introduces no additional mathematical condition."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The source retains one deliberate authenticated negative-boundary phrase. The",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "ba1606a9681764eb",
+              "occurrence_locator_sha256": "d0fe8de7d16269285ddaf86b1d4c8878adcd2360680f074909d285faddc8fe33",
+              "phrase": "boundary",
+              "promoted_wall": null,
+              "rationale": "This occurrence describes rhetoric authentication and carries no independent premise in the derivation."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "satisfy the canonical anticommutation relations, and the represented",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "5a247a69b1d80ad2",
+              "occurrence_locator_sha256": "4662d32c15ac91577e6b33bbaaeb2f1295c41f148d5ec253919c7befbe1dd0dd",
+              "phrase": "canonical",
+              "promoted_wall": null,
+              "rationale": "Canonical here describes the already displayed Clifford relations and adds no unstated convention."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "convention).",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "0992a6308fbee38b",
+              "occurrence_locator_sha256": "db8d856e8fda6e80c5efab013333cdf430232d441cf7e10420fc590dc2d05c8b",
+              "phrase": "convention",
+              "promoted_wall": null,
+              "rationale": "This occurrence is bibliographic description and is not used to substitute for the displayed algebra."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Euclidean chirality convention).",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "3b224e6954129b91",
+              "occurrence_locator_sha256": "484fbee2150d9d29d6ff3e7fcedf7a55d0a6d8ef99cb86447fd65d86592d1ef0",
+              "phrase": "convention",
+              "promoted_wall": null,
+              "rationale": "This occurrence characterizes a non-load-bearing reference and does not select the theorem's normalization."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "the volume square and commutation rule in its Clifford-sign convention;",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "ba265acea0592ab5",
+              "occurrence_locator_sha256": "690d7e1f8700416fa8223774ee3c09d2ed36d15d274b8432c258da218030a37f",
+              "phrase": "convention",
+              "promoted_wall": null,
+              "rationale": "The source explicitly converts this cited sign convention, and the displayed conversion checks algebraically."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The zero-normalization consequence, finite subset enumeration through odd",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "a7de89f624e77a26",
+              "occurrence_locator_sha256": "66dfe75d59baa63776c619e21b0042d4a46ec1ec6940cb46b66f66d9e429c8cd",
+              "phrase": "normalization",
+              "promoted_wall": null,
+              "rationale": "This occurrence labels a subordinate robustness check and supplies no load-bearing normalization."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "### N2 -- wall independence",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "8067e9cdd9d1da0e",
+              "occurrence_locator_sha256": "80cdfd6c7137c21a12d27b92a878c7347b7468142dfd2da945f73ccf42188c3d",
+              "phrase": "wall",
+              "promoted_wall": null,
+              "rationale": "This occurrence is a checklist section label and does not introduce another theorem hypothesis."
+            }
+          ],
+          "none_found_reason": null,
+          "scan_scope": "Authenticated N3 phrase groups in the source note were checked; the sole one-hop authority is an accepted premise and was omitted under the stated premise rule.",
+          "scanned_evidence_paths": [
+            "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Physical sites are the points of the cubic lattice `Z^3`",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "none_found_reason": "All five N1 routes were attempted on current live execution surfaces; none was marked RULED OUT BY PRIOR, so no prior residual witness is invoked.",
+          "scan_scope": "The sole one-hop accepted authority was checked for prior-witness use and residual claims.",
+          "scanned_evidence_paths": [
+            "docs/MINIMAL_AXIOMS_2026-06-29.md"
+          ],
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "**Negative boundary under assessment:** no nonzero element of the internal",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "none_found_reason": null,
+          "scan_scope": "The authenticated source-side negative-rhetoric universe was checked at all five required resolutions.",
+          "scanned_evidence_paths": [
+            "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+          ],
+          "statements": [
+            {
+              "evidence_locator": "**Negative boundary under assessment:** no nonzero element of the internal",
+              "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "2ef918182553b3f4",
+              "occurrence_locator_sha256": "6cb3dbc30a771dd91e2583a2a3e5e1fb0aefcfcd5edb20b9be7ef9ffbdffdc9a",
+              "phrase": "no nonzero",
+              "resolution_classes_checked": [
+                "per_element",
+                "per_site",
+                "per_mode",
+                "per_block",
+                "lattice_wide"
+              ],
+              "resolution_evidence_locator": "Part 6: current-cycle N1/N5/N7 candidate evidence",
+              "resolution_evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+              "tested_resolutions": [
+                "per_element: live_test=PASS; disposition=CLOSED_AT_CLAIMED_SCOPE; faithful internal coefficient kernels have nullity zero for odd n=1,3,5",
+                "per_site: live_test=PASS; disposition=FINITE_SPECIALIZATION_CLOSED; one-site Pauli ambient common anticommutant has nullity 0",
+                "per_mode: live_test=PASS; disposition=COUNTEREXAMPLE_TO_BROADER_READING; sigma_y is a square-one anticommuter for the single sigma_x mode",
+                "per_block: live_test=PASS; disposition=COUNTEREXAMPLE_TO_BROADER_READING; the doubled faithful odd carrier has an external block anticommuter",
+                "lattice_wide: live_test=PASS; disposition=COUNTEREXAMPLE_TO_BROADER_READING; a two-site lift has an ambient anticommuter outside its internal span"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "affected_wall": "M in Cl(n)",
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "closure_mechanism": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-2 supplies Z^3 and d_s=3, but it supplies no ambient chirality carrier capable of changing the internal membership condition.",
+              "could_close_wall": false,
+              "disposition": "M in Cl(n) remains the explicit scope condition; the minimal axioms specialize d_s but neither enlarge the algebra nor furnish an external implementer.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+              "indexed_basis": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-2",
+              "kind": "approved_primitive"
+            }
+          ],
+          "evidence_locator": "approved_primitive:minimal_axioms",
+          "evidence_path": "audit-packet://partial-closure-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "none_found_reason": null,
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied axiom, approved-primitive, open-obligation, convention, definition, and scope-reframe index was checked for a route that changes the internal-carrier boundary.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "N7_STEELMAN_ARGUMENT mechanism=alternate ambient matrix carrier outside the internal Clifford span; attempt=search Pauli tensor words for an involution that anticommutes with every odd generator and raises the internal span rank; argument=a hostile reviewer can defeat any claim about all represented operators by doubling the odd carrier and adjoining the missing even-tower generator, so only a verified internal-span boundary can support the theorem.",
+          "evidence_locator": "N7_STEELMAN_ARGUMENT mechanism=alternate ambient matrix carrier outside the internal Clifford span",
+          "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "resolution": "N7_STEELMAN_RESOLUTION no nonzero `M in Cl(n)` satisfies (5) internal wall resolved: an independently constructed square-normalized ambient matrix anticommutes with every odd generator, but adjoining it raises the faithful internal Clifford-span rank by one; the counterexample is therefore external to Cl(n), exactly as the theorem's scope requires.",
+          "resolution_evidence_locator": "N7_STEELMAN_RESOLUTION no nonzero `M in Cl(n)` satisfies (5) internal wall resolved",
+          "resolution_evidence_path": "audit-packet://runner-stdout-independent/clifford_chirality_dimension_narrow_theorem_note_2026-05-10/clifford_chirality_dimension_n7_independent_check-34b4a4ee61929859",
+          "resolved": true,
+          "route_id": "external-matrix-carrier"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "similar_negative_boundary:planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+              "disposition": "| packet selector / representation descent | no; the proof grants `P_A` and the descent still fails | no; changing to a spinor action does not select `P_A` among substrate packets | yes | This concerns selection and descent of a physical substrate packet, not the abstract internal common anticommutant audited here.",
+              "evidence_locator": "similar_negative_boundary:planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+              "evidence_path": "audit-packet://cross-cycle-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+              "mechanism": "| packet selector / representation descent | no; the proof grants `P_A` and the descent still fails | no; changing to a spinor action does not select `P_A` among substrate packets | yes |",
+              "retired": null
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "disposition": "| canonical exterior Clifford action | wedge plus contraction realizes `Cl_4` on all 16 dimensions but maps degree one to degrees zero and two | it does not preserve `P_A`; selecting an irreducible copy is a commutant choice | This echo concerns preservation and selection of `P_A`, whereas the audited result assumes its abstract Clifford carrier and proves only the internal parity statement.",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+              "mechanism": "| canonical exterior Clifford action | wedge plus contraction realizes `Cl_4` on all 16 dimensions but maps degree one to degrees zero and two | it does not preserve `P_A`; selecting an irreducible copy is a commutant choice |",
+              "retired": null
+            }
+          ],
+          "evidence_locator": "no_go_row_universe_count",
+          "evidence_path": "audit-packet://cross-cycle-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "no_go_row_universe_count": 439,
+          "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+          "none_found_reason": null,
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [],
+        "demotion": null,
+        "failures": [],
+        "narrowed_claim_scope": null,
+        "next_route": null,
+        "prior_claim_scope": null,
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Re-check the carrier qualification if downstream work later treats this internal theorem as an ambient-operator statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict": "audited_clean",
+      "verdict_rationale": "Independent algebra verifies the sign in the volume-element commutation rule and the monomial-parity elimination of the odd-dimensional common anticommutant; the finite runner is corroborative rather than the proof. The phase i^{n(n-1)/2+q} squares against omega^2=(-1)^{n(n-1)/2+q}I to give the required involution in even dimension. The conditional d_t conclusion then follows from d_s=3 without selecting d_t=1, and the ambient-carrier steelman leaves the explicitly internal scope intact."
+    },
+    "status": "confirmed"
   },
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms"
   ],
   "direct_in_degree": 2,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained",
+  "effective_status_reason": "self",
   "helper_runner_paths": [
     "scripts/clifford_chirality_dimension_n7_independent_check.py"
   ],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
   "load_bearing_score": 10.543,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For each Clifford monomial gamma_S, gamma_S gamma_mu = (-1)^(|S|-1_{mu in S}) gamma_mu gamma_S, so simultaneous anticommutation with every generator is possible only for the full monomial when n is even.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": {
+    "N1_alternative_routes": [
+      {
+        "attempt": "solve the stacked full coefficient kernel after certifying the 2^n monomial span is faithful",
+        "disposition": "CLOSED",
+        "evidence_locator": "N1_ROUTE route_id=coefficient-cancellation",
+        "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "arbitrary coefficient cancellation in the simultaneous anticommutator algebra",
+        "outcome": "odd internal nullity is zero for n=1,3,5",
+        "prior_witness_id": null,
+        "route_class": "algebraic_rearrangement",
+        "route_id": "coefficient-cancellation"
+      },
+      {
+        "attempt": "verify centrality and invertibility while an all-generator anticommuter crosses an odd product with negative sign",
+        "disposition": "CLOSED",
+        "evidence_locator": "N1_ROUTE route_id=central-volume",
+        "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "central invertible odd volume representation",
+        "outcome": "commuting and anticommuting with invertible omega forces M=0",
+        "prior_witness_id": null,
+        "route_class": "symmetry_or_representation",
+        "route_id": "central-volume"
+      },
+      {
+        "attempt": "search Pauli tensor words for an involution that anticommutes with every odd generator and raises the internal span rank",
+        "disposition": "CLOSED",
+        "evidence_locator": "N1_ROUTE route_id=external-matrix-carrier",
+        "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "alternate ambient matrix carrier outside the internal Clifford span",
+        "outcome": "external witnesses found outside Cl(n), cases=[(1, 2, 3), (3, 8, 9), (5, 32, 33)]",
+        "prior_witness_id": null,
+        "route_class": "alternate_carrier_or_sector",
+        "route_id": "external-matrix-carrier"
+      },
+      {
+        "attempt": "compare the faithful Cl_n span with the span after adjoining the candidate and candidate-times-basis products",
+        "disposition": "CLOSED",
+        "evidence_locator": "N1_ROUTE route_id=extension-dimension",
+        "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "finite dimension-doubling test of universal extension by an anticommuting square-one generator",
+        "outcome": "ranks double from 2^n to 2^(n+1), cases=[(1, 2, 4), (3, 8, 16), (5, 32, 64)]",
+        "prior_witness_id": null,
+        "route_class": "numerical_or_finite_case",
+        "route_id": "extension-dimension"
+      },
+      {
+        "attempt": "test that the grade automorphism exchanges the central summands while internal conjugation fixes the center",
+        "disposition": "CLOSED",
+        "evidence_locator": "N1_ROUTE route_id=central-idempotent-exchange",
+        "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+        "honesty_marker": "ATTEMPTED",
+        "mechanism": "global semisimple-algebra structure through two nonzero central volume idempotents",
+        "outcome": "nonzero exchanged idempotents, cases=[(1, 1, 1), (3, 2, 2), (5, 4, 4)]",
+        "prior_witness_id": null,
+        "route_class": "topology_or_global_structure",
+        "route_id": "central-idempotent-exchange"
+      }
+    ],
+    "N2_wall_independence": {
+      "collapsed_wall_set": [
+        "M in Cl(n)"
+      ],
+      "evidence_locator": "A_n  :=  { M in Cl(n) : {M, gamma_mu} = 0  for every mu }",
+      "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "pairwise_checks": [],
+      "unresolved": [],
+      "walls": [
+        "M in Cl(n)"
+      ]
+    },
+    "N3_hidden_wall_scan": {
+      "evidence_locator": "**Negative boundary under assessment:** no nonzero element of the internal",
+      "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "hits": [
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "framework axiom-set authority (only load-bearing dependency).",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "614acac9e67bec7f",
+          "occurrence_locator_sha256": "91c667c6ac72379853fce78791c7a4bfc2e411d3297833e3d9132ffe6c266796",
+          "phrase": "axiom",
+          "promoted_wall": null,
+          "rationale": "This occurrence labels the explicitly cited framework authority and imports no additional unnamed premise."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "**Negative boundary under assessment:** no nonzero element of the internal",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "2ef918182553b3f4",
+          "occurrence_locator_sha256": "6cb3dbc30a771dd91e2583a2a3e5e1fb0aefcfcd5edb20b9be7ef9ffbdffdc9a",
+          "phrase": "boundary",
+          "promoted_wall": null,
+          "rationale": "This occurrence explicitly labels the scoped negative conclusion rather than concealing a premise."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "field, action, or Grassmann CAR boundary structure).",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "3d233f6269b2741d",
+          "occurrence_locator_sha256": "473582ac14531e7b61ac4e05a6615043a307dd238a83deb9bf0b60fa3bc39048",
+          "phrase": "boundary",
+          "promoted_wall": null,
+          "rationale": "This occurrence is inside an explicit forbidden-import exclusion and supplies no proof premise."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "| candidate boundary | disposition |",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "7c17fe8ef670bd0f",
+          "occurrence_locator_sha256": "68004e06e1ce38c3a66c506b3c0856927d5dbaf9e1344d2700d9df2e0fcc10c0",
+          "phrase": "boundary",
+          "promoted_wall": null,
+          "rationale": "This occurrence is a stress-test table heading and introduces no additional mathematical condition."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "The source retains one deliberate authenticated negative-boundary phrase. The",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "ba1606a9681764eb",
+          "occurrence_locator_sha256": "d0fe8de7d16269285ddaf86b1d4c8878adcd2360680f074909d285faddc8fe33",
+          "phrase": "boundary",
+          "promoted_wall": null,
+          "rationale": "This occurrence describes rhetoric authentication and carries no independent premise in the derivation."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "satisfy the canonical anticommutation relations, and the represented",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "5a247a69b1d80ad2",
+          "occurrence_locator_sha256": "4662d32c15ac91577e6b33bbaaeb2f1295c41f148d5ec253919c7befbe1dd0dd",
+          "phrase": "canonical",
+          "promoted_wall": null,
+          "rationale": "Canonical here describes the already displayed Clifford relations and adds no unstated convention."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "convention).",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "0992a6308fbee38b",
+          "occurrence_locator_sha256": "db8d856e8fda6e80c5efab013333cdf430232d441cf7e10420fc590dc2d05c8b",
+          "phrase": "convention",
+          "promoted_wall": null,
+          "rationale": "This occurrence is bibliographic description and is not used to substitute for the displayed algebra."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "Euclidean chirality convention).",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "3b224e6954129b91",
+          "occurrence_locator_sha256": "484fbee2150d9d29d6ff3e7fcedf7a55d0a6d8ef99cb86447fd65d86592d1ef0",
+          "phrase": "convention",
+          "promoted_wall": null,
+          "rationale": "This occurrence characterizes a non-load-bearing reference and does not select the theorem's normalization."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "the volume square and commutation rule in its Clifford-sign convention;",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "ba265acea0592ab5",
+          "occurrence_locator_sha256": "690d7e1f8700416fa8223774ee3c09d2ed36d15d274b8432c258da218030a37f",
+          "phrase": "convention",
+          "promoted_wall": null,
+          "rationale": "The source explicitly converts this cited sign convention, and the displayed conversion checks algebraically."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "The zero-normalization consequence, finite subset enumeration through odd",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "a7de89f624e77a26",
+          "occurrence_locator_sha256": "66dfe75d59baa63776c619e21b0042d4a46ec1ec6940cb46b66f66d9e429c8cd",
+          "phrase": "normalization",
+          "promoted_wall": null,
+          "rationale": "This occurrence labels a subordinate robustness check and supplies no load-bearing normalization."
+        },
+        {
+          "classification": "non_load_bearing",
+          "evidence_locator": "### N2 -- wall independence",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "8067e9cdd9d1da0e",
+          "occurrence_locator_sha256": "80cdfd6c7137c21a12d27b92a878c7347b7468142dfd2da945f73ccf42188c3d",
+          "phrase": "wall",
+          "promoted_wall": null,
+          "rationale": "This occurrence is a checklist section label and does not introduce another theorem hypothesis."
+        }
+      ],
+      "none_found_reason": null,
+      "scan_scope": "Authenticated N3 phrase groups in the source note were checked; the sole one-hop authority is an accepted premise and was omitted under the stated premise rule.",
+      "scanned_evidence_paths": [
+        "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "unresolved": []
+    },
+    "N4_residual_matching": {
+      "evidence_locator": "Physical sites are the points of the cubic lattice `Z^3`",
+      "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "none_found_reason": "All five N1 routes were attempted on current live execution surfaces; none was marked RULED OUT BY PRIOR, so no prior residual witness is invoked.",
+      "scan_scope": "The sole one-hop accepted authority was checked for prior-witness use and residual claims.",
+      "scanned_evidence_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "unresolved": [],
+      "witnesses": []
+    },
+    "N5_rhetoric_audit": {
+      "evidence_locator": "**Negative boundary under assessment:** no nonzero element of the internal",
+      "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "none_found_reason": null,
+      "scan_scope": "The authenticated source-side negative-rhetoric universe was checked at all five required resolutions.",
+      "scanned_evidence_paths": [
+        "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "statements": [
+        {
+          "evidence_locator": "**Negative boundary under assessment:** no nonzero element of the internal",
+          "evidence_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "occurrence_count": 1,
+          "occurrence_group_id": "2ef918182553b3f4",
+          "occurrence_locator_sha256": "6cb3dbc30a771dd91e2583a2a3e5e1fb0aefcfcd5edb20b9be7ef9ffbdffdc9a",
+          "phrase": "no nonzero",
+          "resolution_classes_checked": [
+            "per_element",
+            "per_site",
+            "per_mode",
+            "per_block",
+            "lattice_wide"
+          ],
+          "resolution_evidence_locator": "Part 6: current-cycle N1/N5/N7 candidate evidence",
+          "resolution_evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "tested_resolutions": [
+            "per_element: live_test=PASS; disposition=CLOSED_AT_CLAIMED_SCOPE; faithful internal coefficient kernels have nullity zero for odd n=1,3,5",
+            "per_site: live_test=PASS; disposition=FINITE_SPECIALIZATION_CLOSED; one-site Pauli ambient common anticommutant has nullity 0",
+            "per_mode: live_test=PASS; disposition=COUNTEREXAMPLE_TO_BROADER_READING; sigma_y is a square-one anticommuter for the single sigma_x mode",
+            "per_block: live_test=PASS; disposition=COUNTEREXAMPLE_TO_BROADER_READING; the doubled faithful odd carrier has an external block anticommuter",
+            "lattice_wide: live_test=PASS; disposition=COUNTEREXAMPLE_TO_BROADER_READING; a two-site lift has an ambient anticommuter outside its internal span"
+          ],
+          "untested_resolutions": []
+        }
+      ],
+      "unresolved": []
+    },
+    "N6_partial_closure_scan": {
+      "candidates": [
+        {
+          "addressed": true,
+          "affected_wall": "M in Cl(n)",
+          "candidate_id": "approved_primitive:minimal_axioms",
+          "closure_mechanism": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-2 supplies Z^3 and d_s=3, but it supplies no ambient chirality carrier capable of changing the internal membership condition.",
+          "could_close_wall": false,
+          "disposition": "M in Cl(n) remains the explicit scope condition; the minimal axioms specialize d_s but neither enlarge the algebra nor furnish an external implementer.",
+          "evidence_locator": "approved_primitive:minimal_axioms",
+          "evidence_path": "audit-packet://partial-closure-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "indexed_basis": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-2",
+          "kind": "approved_primitive"
+        }
+      ],
+      "evidence_locator": "approved_primitive:minimal_axioms",
+      "evidence_path": "audit-packet://partial-closure-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+      "none_found_reason": null,
+      "premise_classes_checked": [
+        "axiom_or_approved_primitive",
+        "open_gate",
+        "convention_not_accepted",
+        "definition_or_scope_reframe"
+      ],
+      "scan_scope": "The supplied axiom, approved-primitive, open-obligation, convention, definition, and scope-reframe index was checked for a route that changes the internal-carrier boundary.",
+      "unresolved": []
+    },
+    "N7_steelman": {
+      "argument": "N7_STEELMAN_ARGUMENT mechanism=alternate ambient matrix carrier outside the internal Clifford span; attempt=search Pauli tensor words for an involution that anticommutes with every odd generator and raises the internal span rank; argument=a hostile reviewer can defeat any claim about all represented operators by doubling the odd carrier and adjoining the missing even-tower generator, so only a verified internal-span boundary can support the theorem.",
+      "evidence_locator": "N7_STEELMAN_ARGUMENT mechanism=alternate ambient matrix carrier outside the internal Clifford span",
+      "evidence_path": "audit-packet://runner-stdout/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+      "resolution": "N7_STEELMAN_RESOLUTION no nonzero `M in Cl(n)` satisfies (5) internal wall resolved: an independently constructed square-normalized ambient matrix anticommutes with every odd generator, but adjoining it raises the faithful internal Clifford-span rank by one; the counterexample is therefore external to Cl(n), exactly as the theorem's scope requires.",
+      "resolution_evidence_locator": "N7_STEELMAN_RESOLUTION no nonzero `M in Cl(n)` satisfies (5) internal wall resolved",
+      "resolution_evidence_path": "audit-packet://runner-stdout-independent/clifford_chirality_dimension_narrow_theorem_note_2026-05-10/clifford_chirality_dimension_n7_independent_check-34b4a4ee61929859",
+      "resolved": true,
+      "route_id": "external-matrix-carrier"
+    },
+    "N8_cross_cycle_echo": {
+      "echoes": [
+        {
+          "addressed": true,
+          "applicable": false,
+          "candidate_id": "similar_negative_boundary:planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+          "disposition": "| packet selector / representation descent | no; the proof grants `P_A` and the descent still fails | no; changing to a spinor action does not select `P_A` among substrate packets | yes | This concerns selection and descent of a physical substrate packet, not the abstract internal common anticommutant audited here.",
+          "evidence_locator": "similar_negative_boundary:planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+          "evidence_path": "audit-packet://cross-cycle-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "mechanism": "| packet selector / representation descent | no; the proof grants `P_A` and the descent still fails | no; changing to a spinor action does not select `P_A` among substrate packets | yes |",
+          "retired": null
+        },
+        {
+          "addressed": true,
+          "applicable": false,
+          "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+          "disposition": "| canonical exterior Clifford action | wedge plus contraction realizes `Cl_4` on all 16 dimensions but maps degree one to degrees zero and two | it does not preserve `P_A`; selecting an irreducible copy is a commutant choice | This echo concerns preservation and selection of `P_A`, whereas the audited result assumes its abstract Clifford carrier and proves only the internal parity statement.",
+          "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+          "evidence_path": "audit-packet://cross-cycle-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "mechanism": "| canonical exterior Clifford action | wedge plus contraction realizes `Cl_4` on all 16 dimensions but maps degree one to degrees zero and two | it does not preserve `P_A`; selecting an irreducible copy is a commutant choice |",
+          "retired": null
+        }
+      ],
+      "evidence_locator": "no_go_row_universe_count",
+      "evidence_path": "audit-packet://cross-cycle-index/clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+      "no_go_row_universe_count": 439,
+      "no_go_row_universe_sha256": "ff5e5ec7e0ccc13bbd469759c48503e6759e68d07522602826d6c8a4b6be71a8",
+      "none_found_reason": null,
+      "packet_complete": true,
+      "unresolved": []
+    },
+    "corrected_wall_set": [],
+    "demotion": null,
+    "failures": [],
+    "narrowed_claim_scope": null,
+    "next_route": null,
+    "prior_claim_scope": null,
+    "required": true,
+    "status": "PASS"
+  },
   "note_hash": "ae49e3ca57d217445dff1ec4cafdad7880bbbd13025d06148d2edbad33007a95",
   "note_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-check the carrier qualification if downstream work later treats this internal theorem as an ambient-operator statement.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1388,14 +2296,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 37,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 37
   },
   "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
   "title": "Clifford Chirality-Dimension Narrow Theorem",
   "transitive_descendants": 745,
-  "verdict_rationale": null
+  "verdict_rationale": "Independent algebra verifies the sign in the volume-element commutation rule and the monomial-parity elimination of the odd-dimensional common anticommutant; the finite runner is corroborative rather than the proof. The phase i^{n(n-1)/2+q} squares against omega^2=(-1)^{n(n-1)/2+q}I to give the required involution in even dimension. The conditional d_t conclusion then follows from d_s=3 without selecting d_t=1, and the ambient-carrier steelman leaves the explicitly internal scope intact."
 }

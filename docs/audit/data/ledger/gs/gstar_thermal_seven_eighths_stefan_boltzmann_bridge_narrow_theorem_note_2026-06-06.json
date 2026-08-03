@@ -1,44 +1,154 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-03T12:43:00.658414+00:00",
+  "audit_invocation_history": [
+    "c034b179444c4129a61fd0b704b23c9b",
+    "8758cbe3d8b8465d8848d77de552981c"
+  ],
+  "audit_invocation_id": "8758cbe3d8b8465d8848d77de552981c",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0)."
+    },
+    "dep_claim_type": {
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+      "digest": "299a380424104ec767acb4b850fe380f0e880dc31b337065746b570d0c52ef57",
+      "judgment": {
+        "audit_date": "2026-08-03T12:43:00.658414+00:00",
+        "audit_invocation_id": "8758cbe3d8b8465d8848d77de552981c",
+        "audit_status": "audited_decoration",
+        "auditor": "codex-audit-batch-B-20260803-2d2a6a68",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": true,
+        "chain_closure_explanation": "The exponential-series expansion, Gamma integral, eta-zeta identity, and common phase-space prefactor close the stated thermal ratio and coefficients. The work is an algebraic thermodynamic restatement of the single retained eta-zeta authority.",
+        "claim_scope": "Under relativistic, effectively massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral, with rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
+        "claim_type": "decoration",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": null,
+        "decoration_parent_claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+        "independence": "fresh_context",
+        "load_bearing_step": "eta(4) = (1 - 2^(-3)) zeta(4) = (7/8) zeta(4), so I_F = (7/8) I_B, after which the common phase-space prefactor gives the per-degree coefficients.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [],
+        "notes_for_re_audit_if_any": "",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 12,
+          "B": 17,
+          "C": 0,
+          "D": 0,
+          "total_pass": 29
+        },
+        "verdict_rationale": "The derivation is mathematically correct, and the runner reports 29 passing checks with no external comparator. Its load-bearing content is class-A algebra over the retained eta-zeta authority and standard Gamma/Stefan-Boltzmann mathematics; the runner itself inserts the closed forms for zeta(4) and eta(4) rather than producing independent physical content. Under the rubric\u2019s single-parent, zero-D tie-break, this is an audited decoration rather than an independent bounded theorem."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 12.171,
+    "packet_policy_fingerprint": {
+      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "runner_hash": "b09235f6fbf09865a81414b8855ad9d50f161c0906f72fb77a63ced98b84742a",
+    "science_fingerprint": {
+      "dependencies": [
+        {
+          "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "claim_scope": "For integers d \u2265 2, R_lat(d\u22121)=R_RD(d) iff A(d)=0, uniquely at d=4, where (R_lat(3), R_RD(4), A(4))=(7/8, 7/8, 0).",
+          "claim_type": "positive_theorem",
+          "effective_status": "retained",
+          "ledger_note_hash": "b1ca0469b26d1ea72204ae4b37edfd48ea602e3243081ff67695fc353419c7dc",
+          "note_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "note_sha256": "b1ca0469b26d1ea72204ae4b37edfd48ea602e3243081ff67695fc353419c7dc",
+          "premise_classification": "ordinary_claim",
+          "present": true
+        }
+      ],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "1a48ff3fe9c4331cecfa1541943cf4cd7d30da8d36947e6a22ca91e16f6940ed",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "b09235f6fbf09865a81414b8855ad9d50f161c0906f72fb77a63ced98b84742a"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+        "claim_scope": "Under relativistic, effectively massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral, with rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
+        "claim_type": "decoration",
+        "ledger_note_hash": "ba90bbb603ce1b887f4db3422b8f264e744627e07310b755a67f289a5a0ca7be",
+        "note_path": "docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+        "note_sha256": "ba90bbb603ce1b887f4db3422b8f264e744627e07310b755a67f289a5a0ca7be"
+      }
+    },
+    "transitive_descendants": 814
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-B-20260803-2d2a6a68",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The exponential-series expansion, Gamma integral, eta-zeta identity, and common phase-space prefactor close the stated thermal ratio and coefficients. The work is an algebraic thermodynamic restatement of the single retained eta-zeta authority.",
   "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "Under relativistic, effectively massless, zero-chemical-potential thermal hypotheses in 3+1 dimensions, the per-degree Fermi integral is 7/8 of the Bose integral, with rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-08-03T12:43:00.658414+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
   "deps": [
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "decoration_under_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
   "load_bearing_score": 12.171,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "eta(4) = (1 - 2^(-3)) zeta(4) = (7/8) zeta(4), so I_F = (7/8) I_B, after which the common phase-space prefactor gives the per-degree coefficients.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "ba90bbb603ce1b887f4db3422b8f264e744627e07310b755a67f289a5a0ca7be",
   "note_path": "docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -704,14 +814,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 12,
+    "B": 17,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 29
   },
   "runner_path": "scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py",
   "title": "`g_*` Thermal `7/8` Stefan-Boltzmann Integral Bridge",
   "transitive_descendants": 814,
-  "verdict_rationale": null
+  "verdict_rationale": "The derivation is mathematically correct, and the runner reports 29 passing checks with no external comparator. Its load-bearing content is class-A algebra over the retained eta-zeta authority and standard Gamma/Stefan-Boltzmann mathematics; the runner itself inserts the closed forms for zeta(4) and eta(4) rather than producing independent physical content. Under the rubric\u2019s single-parent, zero-D tie-break, this is an audited decoration rather than an independent bounded theorem."
 }

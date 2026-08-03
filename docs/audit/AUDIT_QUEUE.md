@@ -1,18 +1,18 @@
 # Audit Queue
 
-**Total pending:** 3090
-**Ready (dependencies and deterministic forensic evidence):** 508
-**Dependency-ready:** 590
-**Forensic-evidence-ready:** 2608
+**Total pending:** 3089
+**Ready (dependencies and deterministic forensic evidence):** 507
+**Dependency-ready:** 589
+**Forensic-evidence-ready:** 2607
 
 By criticality:
-- `critical`: 658
+- `critical`: 657
 - `high`: 382
 - `medium`: 858
 - `leaf`: 1192
 
 By work kind:
-- `fresh_scientific_audit`: 2605
+- `fresh_scientific_audit`: 2604
 - `legacy_packet_upgrade`: 3
 - `evidence_repair_required`: 482
 
@@ -59,19 +59,19 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 35 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 828 | 12.20 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py` |
 | 36 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 827 | 12.19 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cluster_decomposition_mass_gap_bridge_check.py` |
 | 37 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 816 | 12.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py` |
-| 38 | `gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 814 | 12.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py` |
-| 39 | `su3_wigner_intertwiner_block1_theorem_note_2026-05-03` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 808 | 11.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_wigner_intertwiner_engine.py` |
-| 40 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 803 | 13.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py` |
-| 41 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 793 | 10.63 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py` |
-| 42 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 792 | 10.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py` |
-| 43 | `poisson_response_kernel_and_sign_normalization_finite_grid_bounded_note_2026-07-26` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 792 | 10.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py` |
-| 44 | `pmns_oriented_cycle_channel_value_law_note` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 788 | 18.62 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_oriented_cycle_channel_value_law.py` |
-| 45 | `pmns_uniform_scalar_deformation_boundary_note` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 782 | 12.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_uniform_scalar_deformation_boundary.py` |
-| 46 | `pmns_hw1_source_transfer_boundary_note` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 780 | 12.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_hw1_source_transfer_boundary.py` |
-| 47 | `gravity_full_self_consistency_note` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 779 | 14.11 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
-| 48 | `staggered_fermion_card_2026-04-11` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 778 | 13.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_17card_finite_scope_repair.py` |
-| 49 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 777 | 18.60 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py` |
-| 50 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | fresh_scientific_audit | positive_theorem | non_terminal_failed | critical | 777 | 10.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py` |
+| 38 | `su3_wigner_intertwiner_block1_theorem_note_2026-05-03` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 808 | 11.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_wigner_intertwiner_engine.py` |
+| 39 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 803 | 13.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py` |
+| 40 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 793 | 10.63 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py` |
+| 41 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 792 | 10.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py` |
+| 42 | `poisson_response_kernel_and_sign_normalization_finite_grid_bounded_note_2026-07-26` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 792 | 10.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py` |
+| 43 | `pmns_oriented_cycle_channel_value_law_note` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 788 | 18.62 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_oriented_cycle_channel_value_law.py` |
+| 44 | `pmns_uniform_scalar_deformation_boundary_note` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 782 | 12.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_uniform_scalar_deformation_boundary.py` |
+| 45 | `pmns_hw1_source_transfer_boundary_note` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 780 | 12.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_hw1_source_transfer_boundary.py` |
+| 46 | `gravity_full_self_consistency_note` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 779 | 14.11 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
+| 47 | `staggered_fermion_card_2026-04-11` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 778 | 13.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_17card_finite_scope_repair.py` |
+| 48 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 777 | 18.60 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py` |
+| 49 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | fresh_scientific_audit | positive_theorem | non_terminal_failed | critical | 777 | 10.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py` |
+| 50 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 774 | 13.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py` |
 
 ## Citation cycle break targets
 

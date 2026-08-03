@@ -1,45 +1,310 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_date": "2026-08-03T02:01:48.035520+00:00",
+  "audit_invocation_history": [
+    "658aa165a4974a8fb786a9e778c923ed",
+    "5f7dc32e642f47c19c187c7acaa1d18f"
+  ],
+  "audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "judgment_fingerprint": {
+      "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+      "digest": "6ad063b65d85732d77234143452456812c46eb572f2edc5ac191404ec03814a1",
+      "judgment": {
+        "audit_date": "2026-08-03T02:01:48.035520+00:00",
+        "audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f",
+        "audit_status": "audit_in_progress",
+        "auditor": "codex-audit-batch-A-20260803-3b6b8e66",
+        "auditor_confidence": "high",
+        "auditor_family": "codex-gpt-5.6",
+        "auditor_model": "gpt-5.6-sol",
+        "auditor_reasoning_effort": "xhigh",
+        "chain_closes": false,
+        "chain_closure_explanation": "The chain does not close as written: M2 misclassifies the k=0 zero-dimensional module by testing 2\u00d72 zero operators, and the packet clips portions of the source proof and retained Cl(3) authority needed for the remaining independent audit.",
+        "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+        "claim_type": "bounded_theorem",
+        "claim_type_provenance": "audited",
+        "cross_confirmation": {
+          "first_audit": {
+            "audit_date": "2026-08-03T02:01:48.035520+00:00",
+            "audit_invocation_id": "658aa165a4974a8fb786a9e778c923ed",
+            "auditor": "codex-audit-batch-A-20260803-3b6b8e66",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "The chain does not close as written: M2 misclassifies the k=0 zero-dimensional module by testing 2\u00d72 zero operators, and the packet clips portions of the source proof and retained Cl(3) authority needed for the remaining independent audit.",
+            "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+            "claim_type": "bounded_theorem",
+            "decoration_parent_claim_id": null,
+            "independence": "cross_family",
+            "load_bearing_step": "Under P-QBIT the physical carrier has k=1 and dimension two, while the retained Cl(3) split classifies abstract modules by multiplicities n_+ and n_-.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "bounded_with_named_walls",
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "Fix M2's k=0 module treatment and matching runner test, then regenerate the restricted packet with complete source and authority spans and recheck the M1/M2/C2 formula family.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 56,
+              "B": 3,
+              "C": 5,
+              "D": 0,
+              "total_pass": 64
+            },
+            "verdict": "audited_failed",
+            "verdict_rationale": "Issue: M2 conflates the zero-dimensional k=0 module with 2\u00d72 zero operators; on H=0 the identity operator is zero, so the Clifford relation is satisfied, although the representation is unfaithful because its kernel is nontrivial. Why this blocks: the source's explicit k=0 classification and table are false as written, the runner tests the wrong carrier dimension, and clipped source and authority spans prevent complete independent verification of the remaining formulas. Repair target: correct the k=0 argument and runner\u2014or explicitly restrict to nonzero carriers and remove k=0 from the module enumeration\u2014then provide an unclipped authenticated packet. Claim boundary until fixed: the conditional k=1 implication and displayed k>=2 witnesses support the narrow derived boundary that Cl(3) alone does not force k=1, but they do not establish retained-grade physical-carrier closure beyond P-QBIT."
+          },
+          "mode": "terminal_second_pass",
+          "second_audit": {
+            "audit_date": "2026-08-03T02:01:48.041185+00:00",
+            "audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f",
+            "auditor": "codex-audit-batch-B-20260803-afb4ade1",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "The algebraic implications close once P-QBIT is assumed. The restricted packet neither derives nor registers P-QBIT as an accepted premise, so physical-carrier selection does not close from the supplied authorities.",
+            "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+            "claim_type": "bounded_theorem",
+            "decoration_parent_claim_id": null,
+            "independence": "fresh_context",
+            "load_bearing_step": "From M1, k(x)=1 gives dim_C H_x=2, and under the positive-chirality convention and P-QBIT, polar decomposition upgrades invertible equivalence to unitary *-equivalence.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "bounded_with_named_walls",
+              "conditional_wall_rationale",
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge or approved-primitive registration deriving or accepting P-QBIT's physical-carrier irreducibility, then regenerate the unclipped restricted packet and re-audit.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 56,
+              "B": 3,
+              "C": 5,
+              "D": 0,
+              "total_pass": 64
+            },
+            "verdict": "audited_conditional",
+            "verdict_rationale": "The retained Cl(3) split and standard semisimple representation theory support M1, C1, the equivalence statements, and the explicit k>=2 counterexamples. The physical k=1 conclusion nevertheless enters through local premise P-QBIT, while the runner only guards that premise's text rather than deriving the carrier selection. N1-N8 prose judgment is conservative: alternate-carrier modules establish the countermodel (N1), irreducible-carrier selection is the named limitation (N2), P-QBIT is explicit rather than hidden (N3), k>=2 witnesses match the algebra-only residual (N4), the rhetoric remains scoped (N5), no supplied registry candidate provides carrier irreducibility (N6), the strongest algebra-only steelman is defeated by those countermodels (N7), and clipped cross-cycle material prevents a complete structured N8 audit. The binding packet preflight reports clipped load-bearing evidence and therefore independently forbids an audited-clean verdict."
+          },
+          "status": "disagreement"
+        },
+        "decoration_parent_claim_id": null,
+        "independence": "cross_family",
+        "load_bearing_step": "Under P-QBIT the physical carrier has k=1 and dimension two, while the retained Cl(3) split classifies abstract modules by multiplicities n_+ and n_-.",
+        "load_bearing_step_class": "A",
+        "negative_assertion_classes": [
+          "bounded_with_named_walls",
+          "derived_no_go_boundary"
+        ],
+        "notes_for_re_audit_if_any": "Fix M2's k=0 module treatment and matching runner test, then regenerate the restricted packet with complete source and authority spans and recheck the M1/M2/C2 formula family.",
+        "open_dependency_paths": [],
+        "runner_check_breakdown": {
+          "A": 56,
+          "B": 3,
+          "C": 5,
+          "D": 0,
+          "total_pass": 64
+        },
+        "verdict_rationale": "Issue: M2 conflates the zero-dimensional k=0 module with 2\u00d72 zero operators; on H=0 the identity operator is zero, so the Clifford relation is satisfied, although the representation is unfaithful because its kernel is nontrivial. Why this blocks: the source's explicit k=0 classification and table are false as written, the runner tests the wrong carrier dimension, and clipped source and authority spans prevent complete independent verification of the remaining formulas. Repair target: correct the k=0 argument and runner\u2014or explicitly restrict to nonzero carriers and remove k=0 from the module enumeration\u2014then provide an unclipped authenticated packet. Claim boundary until fixed: the conditional k=1 implication and displayed k>=2 witnesses support the narrow derived boundary that Cl(3) alone does not force k=1, but they do not establish retained-grade physical-carrier closure beyond P-QBIT."
+      },
+      "schema": "frozen_audit_judgment_v1"
+    },
+    "load_bearing_score": 12.174,
+    "packet_policy_fingerprint": {
+      "digest": "9a71ed6d9de3c07d77ac54c174c860c732c2623464ee5216069a1c5f667d1111",
+      "schema": "packet_policy_fingerprint_v1",
+      "sources": {
+        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+        "docs/audit/scripts/orchestrate_audit_loop.py": "4c8254d65a5c51706b53309059bcb4323bc72cf9d4db2fbc0c9378926046e3ac",
+        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+      }
+    },
+    "runner_hash": "532cbb2fb98740096280d8678dd344f84fe4962a044498f63eb0202e7eb1476e",
+    "science_fingerprint": {
+      "dependencies": [
+        {
+          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "claim_scope": "Pure abstract-algebra audit of (K1)\u2013(K4): the central pseudoscalar, real-algebra isomorphism Cl(3,0) \u2245 M\u2082(C), complexified two-block split, and dimension 2 of every faithful irreducible finite-dimensional complex representation of real Cl(3,0).",
+          "claim_type": "positive_theorem",
+          "effective_status": "retained",
+          "ledger_note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "note_sha256": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
+          "premise_classification": "ordinary_claim",
+          "present": true
+        },
+        {
+          "claim_id": "minimal_axioms",
+          "claim_scope": null,
+          "claim_type": "meta",
+          "effective_status": "meta",
+          "ledger_note_hash": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+          "note_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "note_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+          "premise_classification": "accepted_premise",
+          "present": true
+        }
+      ],
+      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+      "digest": "50d74ddfb0ce1643b2415afd2ed0e6001ddc5db051a8232067c131c061236770",
+      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+      "runners": [
+        {
+          "declared_input_fingerprint_sha256": null,
+          "declared_input_paths": null,
+          "declared_inputs": [],
+          "path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+          "present": true,
+          "role": "primary",
+          "sha256": "532cbb2fb98740096280d8678dd344f84fe4962a044498f63eb0202e7eb1476e"
+        }
+      ],
+      "schema": "science_fingerprint_v2",
+      "target": {
+        "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+        "claim_type": "bounded_theorem",
+        "ledger_note_hash": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937",
+        "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+        "note_sha256": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937"
+      }
+    },
+    "transitive_descendants": 816
+  },
+  "audit_status": "audit_in_progress",
+  "auditor": "codex-audit-batch-A-20260803-3b6b8e66",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": "cross_confirmation_disagreement",
+  "chain_closes": false,
+  "chain_closure_explanation": "The chain does not close as written: M2 misclassifies the k=0 zero-dimensional module by testing 2\u00d72 zero operators, and the packet clips portions of the source proof and retained Cl(3) authority needed for the remaining independent audit.",
   "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-08-03T02:01:48.035520+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
-  "cross_confirmation": null,
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-08-03T02:01:48.035520+00:00",
+      "audit_invocation_id": "658aa165a4974a8fb786a9e778c923ed",
+      "auditor": "codex-audit-batch-A-20260803-3b6b8e66",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain does not close as written: M2 misclassifies the k=0 zero-dimensional module by testing 2\u00d72 zero operators, and the packet clips portions of the source proof and retained Cl(3) authority needed for the remaining independent audit.",
+      "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under P-QBIT the physical carrier has k=1 and dimension two, while the retained Cl(3) split classifies abstract modules by multiplicities n_+ and n_-.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "notes_for_re_audit_if_any": "Fix M2's k=0 module treatment and matching runner test, then regenerate the restricted packet with complete source and authority spans and recheck the M1/M2/C2 formula family.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 56,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 64
+      },
+      "verdict": "audited_failed",
+      "verdict_rationale": "Issue: M2 conflates the zero-dimensional k=0 module with 2\u00d72 zero operators; on H=0 the identity operator is zero, so the Clifford relation is satisfied, although the representation is unfaithful because its kernel is nontrivial. Why this blocks: the source's explicit k=0 classification and table are false as written, the runner tests the wrong carrier dimension, and clipped source and authority spans prevent complete independent verification of the remaining formulas. Repair target: correct the k=0 argument and runner\u2014or explicitly restrict to nonzero carriers and remove k=0 from the module enumeration\u2014then provide an unclipped authenticated packet. Claim boundary until fixed: the conditional k=1 implication and displayed k>=2 witnesses support the narrow derived boundary that Cl(3) alone does not force k=1, but they do not establish retained-grade physical-carrier closure beyond P-QBIT."
+    },
+    "mode": "terminal_second_pass",
+    "second_audit": {
+      "audit_date": "2026-08-03T02:01:48.041185+00:00",
+      "audit_invocation_id": "5f7dc32e642f47c19c187c7acaa1d18f",
+      "auditor": "codex-audit-batch-B-20260803-afb4ade1",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic implications close once P-QBIT is assumed. The restricted packet neither derives nor registers P-QBIT as an accepted premise, so physical-carrier selection does not close from the supplied authorities.",
+      "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "From M1, k(x)=1 gives dim_C H_x=2, and under the positive-chirality convention and P-QBIT, polar decomposition upgrades invertible equivalence to unitary *-equivalence.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge or approved-primitive registration deriving or accepting P-QBIT's physical-carrier irreducibility, then regenerate the unclipped restricted packet and re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 56,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 64
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "The retained Cl(3) split and standard semisimple representation theory support M1, C1, the equivalence statements, and the explicit k>=2 counterexamples. The physical k=1 conclusion nevertheless enters through local premise P-QBIT, while the runner only guards that premise's text rather than deriving the carrier selection. N1-N8 prose judgment is conservative: alternate-carrier modules establish the countermodel (N1), irreducible-carrier selection is the named limitation (N2), P-QBIT is explicit rather than hidden (N3), k>=2 witnesses match the algebra-only residual (N4), the rhetoric remains scoped (N5), no supplied registry candidate provides carrier irreducibility (N6), the strongest algebra-only steelman is defeated by those countermodels (N7), and clipped cross-cycle material prevents a complete structured N8 audit. The binding packet preflight reports clipped load-bearing evidence and therefore independently forbids an audited-clean verdict."
+    },
+    "status": "disagreement"
+  },
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms",
     "cl3_complexification_split_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
+  "effective_status": "audit_in_progress",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audit_in_progress",
   "load_bearing_score": 12.174,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Under P-QBIT the physical carrier has k=1 and dimension two, while the retained Cl(3) split classifies abstract modules by multiplicities n_+ and n_-.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
   "note_hash": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937",
   "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Fix M2's k=0 module treatment and matching runner test, then regenerate the restricted packet with complete source and authority spans and recheck the M1/M2/C2 formula family.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1902,14 +2167,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 56,
+    "B": 3,
+    "C": 5,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 64
   },
   "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
   "title": "Staggered-Dirac Substep 1 \u2014 Qubit-Axiom Single-Module / U4 Conditional Repair",
   "transitive_descendants": 816,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: M2 conflates the zero-dimensional k=0 module with 2\u00d72 zero operators; on H=0 the identity operator is zero, so the Clifford relation is satisfied, although the representation is unfaithful because its kernel is nontrivial. Why this blocks: the source's explicit k=0 classification and table are false as written, the runner tests the wrong carrier dimension, and clipped source and authority spans prevent complete independent verification of the remaining formulas. Repair target: correct the k=0 argument and runner\u2014or explicitly restrict to nonzero carriers and remove k=0 from the module enumeration\u2014then provide an unclipped authenticated packet. Claim boundary until fixed: the conditional k=1 implication and displayed k>=2 witnesses support the narrow derived boundary that Cl(3) alone does not force k=1, but they do not establish retained-grade physical-carrier closure beyond P-QBIT."
 }

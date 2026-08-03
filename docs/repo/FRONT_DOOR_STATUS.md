@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 362 |
 | Boxed decorations under retained parents | 36 |
 | Open gates | 3 |
-| Unaudited rows | 2633 |
+| Unaudited rows | 2632 |
 | Retained-pending-chain rows | 12 |
 | Audited conditional rows | 300 |
 | Audited renaming rows | 34 |

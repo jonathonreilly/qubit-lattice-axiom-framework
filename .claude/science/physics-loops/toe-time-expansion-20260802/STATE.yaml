@@ -10,13 +10,16 @@ window_hours: 24
 mode: workhorse
 wave: 1
 worktrees:
-  c5-landing: blockP25 — 866/867 v2 reran clean (866 5/5 gates 178s; 867 4/4
-    gates 140s); finale checker worker running against v2 numbers
-  c5-gravity: wave1 gravity sign census (blockG1, Cycle 868) — worker done
-    (SCOPED_NO_GO + checker corroboration); supervisor review + N1-N8 pending
+  c5-landing: blockP25 SHIPPED as PR #5924 — checker refuted v2's locality
+    probe in-block; v3 repaired (robust firing / fragile content /
+    restore-class contrast); checker reconciled, zero refutations
+  c5-gravity: blockG1 SHIPPED as PR #5923 — scoped no-go (sign invisible to
+    the response surface; M1/M2 mechanisms; escapes named); N1-N8 in note
   c5-clocks: wave1 local-clock relation (blockT1, Cycle 869) — worker running
-  c5-census: wave1 general-n census law (blockN1, Cycle 870) — SHIPPED as
-    PR #5921 (stacked on #5880); reviewed pass; audit pending
+  c5-census: blockN1 SHIPPED as PR #5921 — general-n census law
+  c5-g2: gravity axiom-up G2 (Cycle 871, source-action bridge pricing) — running
+  c5-g3: gravity axiom-up G3 (Cycle 872, sigma-linear admissibility) — running
+  c5-g4: gravity axiom-up G4 (Cycle 873, tracelessness provenance) — running
 notes: >
   Worker worktrees moved to durable .claude/worktrees/ paths (reboot lesson);
   supervisor commits push immediately, worker scripts commit BEFORE first run.

@@ -1,0 +1,92 @@
+{
+  "assembled_form_past_cell_entry": "0.000000e+00",
+  "deletion_discarded_share": {
+    "L3": "0.529",
+    "L4": "0.547"
+  },
+  "distinct_slots_by_footprint_weight": [
+    8,
+    36,
+    18,
+    3
+  ],
+  "eliminated_form_past_cell_entry": "6.318",
+  "eliminated_share_by_range": {
+    "L3": {
+      "0": "0.400",
+      "1": "0.886",
+      "2": "0.235"
+    },
+    "L4": {
+      "0": "0.428",
+      "1": "0.836",
+      "2": "0.160",
+      "3": "0.304"
+    }
+  },
+  "exceeding_floor_by_tick_split": [
+    3,
+    3,
+    3,
+    3
+  ],
+  "facet_corner_dissections": 182,
+  "facet_corner_tetrahedra": 58,
+  "facet_dissection_exceeding_floor": 18,
+  "flat_directions": {
+    "L3_LT2": 16,
+    "L3_LT3": 24,
+    "L4_LT2": 54
+  },
+  "global_corner_stencil_floor": 48,
+  "live_condition_number": {
+    "L3_LT2": "1.83e+02",
+    "L3_LT3": "1.83e+02",
+    "L4_LT2": "6.00e+02"
+  },
+  "nondegenerate_corner_4_simplices": 3008,
+  "slot_uses_by_footprint_weight": [
+    24,
+    108,
+    72,
+    36
+  ],
+  "softest_live_eigenvalue": {
+    "L3_LT2": "1.5900e-01",
+    "L3_LT3": "1.5900e-01",
+    "L4_LT2": "4.8367e-02"
+  },
+  "spatial_axis_face_body": [
+    72,
+    36,
+    12
+  ],
+  "spatial_floor_by_tick_split": [
+    3,
+    1,
+    1,
+    3
+  ],
+  "stationarity_rejector_deviation": "8.608e-04",
+  "stationarity_relative_deviation": "7.400e-16",
+  "stencil_exceeding_by_tick_split": [
+    5,
+    4,
+    4,
+    5
+  ],
+  "symmetry_and_labels": {
+    "deleted": [
+      6,
+      8
+    ],
+    "eliminated": [
+      6,
+      8
+    ],
+    "full": [
+      6,
+      8
+    ]
+  }
+}

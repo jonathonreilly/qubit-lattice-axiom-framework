@@ -568,6 +568,15 @@ SWEEP_NEEDLES = {
 }
 
 
+# This cycle's own artifacts are excluded from the sweep.  A prior-art sweep
+# that counts the runner doing the sweeping would report its own prose as
+# evidence, and would turn every honest ABSENT verdict into a self-hit.
+SWEEP_EXCLUSIONS = (
+    "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+    "scripts/frontier_cycle883_weight_pair_independent_check_2026_07_28.py",
+)
+
+
 def sweep_tree() -> dict[str, dict]:
     """Byte-wise scan of scripts/ and docs/ for every inventory needle."""
     encoded = {
@@ -577,14 +586,18 @@ def sweep_tree() -> dict[str, dict]:
     counts = {key: 0 for key in SWEEP_NEEDLES}
     where: dict[str, list[str]] = {key: [] for key in SWEEP_NEEDLES}
     files = 0
+    excluded = 0
     for base, pattern in (("scripts", "*.py"), ("docs", "*.md")):
         for path in sorted((ROOT / base).rglob(pattern)):
+            rel = str(path.relative_to(ROOT))
+            if rel in SWEEP_EXCLUSIONS:
+                excluded += 1
+                continue
             try:
                 blob = path.read_bytes()
             except OSError:                              # pragma: no cover
                 continue
             files += 1
-            rel = str(path.relative_to(ROOT))
             for key, needles in encoded.items():
                 if any(n in blob for n in needles):
                     counts[key] += 1
@@ -592,6 +605,8 @@ def sweep_tree() -> dict[str, dict]:
                         where[key].append(rel)
     return {
         "files_scanned": files,
+        "files_excluded_as_self_reference": excluded,
+        "exclusions": list(SWEEP_EXCLUSIONS),
         "hit_counts": counts,
         "first_hits": where,
     }
@@ -756,9 +771,14 @@ def candidate_sweep_certificate(sweep: dict) -> dict:
     return {
         "sweep_scope": (
             "every *.py under scripts/ and every *.md under docs/, byte-wise, "
-            "against a fixed needle table"
+            "against a fixed needle table, with this cycle's own two artifacts "
+            "excluded so that no ABSENT verdict is contradicted by the runner's "
+            "own prose"
         ),
         "files_scanned": sweep["files_scanned"],
+        "files_excluded_as_self_reference":
+            sweep["files_excluded_as_self_reference"],
+        "exclusions": sweep["exclusions"],
         "needle_hit_counts": counts,
         "needle_first_hits": hits,
         "candidates": rows,
@@ -2007,6 +2027,9 @@ def run() -> int:
             "C883-T6 the pair is (1, n-1); (1, 2) exactly at n = 3",
         ],
         "inventory": science_a["D_CANDIDATE_SWEEP"]["candidates"],
+        "files_scanned_by_the_primary":
+            science_a["D_CANDIDATE_SWEEP"]["files_scanned"],
+        "sweep_exclusions": science_a["D_CANDIDATE_SWEEP"]["exclusions"],
         "wrong_pair_stress": science_a["J_WRONG_PAIR_STRESS"]["rows"],
         "alpha_witness_rows": science_a["L_BRIDGE_BACK_T7"]["rows"],
         "echo_ledger": science_a["N_ECHO_LEDGER"]["echoes"],

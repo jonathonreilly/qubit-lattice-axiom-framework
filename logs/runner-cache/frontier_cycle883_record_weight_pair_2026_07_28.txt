@@ -10,7 +10,7 @@ CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
     finding: The axiom-forced multiplicity set is [0, 1], whose nonzero members all have 2-adic valuation [0]; the only larger number in the text is a free cardinality, and admitting it costs a supply on either horn of the dichotomy.
 
 [PASS] D_CANDIDATE_SWEEP
-    finding: Of 9 candidate carriers swept over 10146 files, 2 are DERIVED, 5 are SUPPLIED and 2 are ABSENT; every landed literal (1, 2) in the tree is supplied, and the only derived (1, 2) is the C3 isotype pair built below.
+    finding: Of 9 candidate carriers swept over 10145 files, 2 are DERIVED, 5 are SUPPLIED and 2 are ABSENT; every landed literal (1, 2) in the tree is supplied, and the only derived (1, 2) is the C3 isotype pair built below.
 
 [PASS] E_LATTICE_ROTATION_GROUP
     finding: The Lattice clause rebuilds to 24 proper rotations with order profile {1: 1, 2: 9, 3: 8, 4: 6}; all 8 order-3 elements are body-diagonal rotations spread two per axis over 4 axes, and 2 of them fix the (1,1,1) axis.
@@ -280,67 +280,67 @@ CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
     ],
     "brief_candidates_with_no_artifact_on_this_branch": [
       {
-        "files_hit": 1,
+        "files_hit": 0,
         "named": "Cycle 881 sigma leader/follower relay"
       },
       {
-        "files_hit": 1,
+        "files_hit": 0,
         "named": "Cycle 878 B0/B1 composed-record refinement"
       }
     ],
     "candidates": [
       {
         "candidate": "record write ordinals",
-        "evidence": "tree-wide scan for ['write ordinal', 'write_ordinal', 'record ordinal'] returned 1 files",
+        "evidence": "tree-wide scan for ['write ordinal', 'write_ordinal', 'record ordinal'] returned 0 files",
         "forcing_step_or_free_choice": "No landed artifact defines a record write ordinal. Record permanence plus one-record-per-site gives no order between records at distinct sites, and 'No site is privileged' forbids inventing one.",
         "provenance": "ABSENT",
         "shape_if_present": "an ordered pair of write positions"
       },
       {
         "candidate": "bank pair structure (two banks)",
-        "evidence": "2 file(s) hit; the only physics hit is ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py'], whose two-bank sentence counts LAWFUL TRANSLATION CLASSES (81 of 1814400 anchored candidates), not weights",
+        "evidence": "1 file(s) hit; the only physics hit is ['docs/PROGRAM_CONTENT_ORDER_ATTEMPT_CYCLE755_BOUNDED_THEOREM_NOTE_2026-07-28.md'], whose two-bank sentence counts LAWFUL TRANSLATION CLASSES (81 of 1814400 anchored candidates), not weights",
         "forcing_step_or_free_choice": "TWO banks is a cardinality-2 fact, i.e. a (1, 1) multiplicity pair with 2-adic profile (0, 0). Turning it into (1, 2) needs a weight on one bank, which is exactly the formation-weight content the axiom memo excludes.",
         "provenance": "SUPPLIED",
         "shape_if_present": "(1, 1) as a count, (1, 2) only if weighted"
       },
       {
         "candidate": "leader/follower relay roles (sigma gating)",
-        "evidence": "'leader' hits 3 file(s), all in ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py', 'docs/ai_methodology/skills/audit-loop/SKILL.md'] (audit-loop worker documentation, which says there is NO leader); 'follower' hits zero physics artifacts",
+        "evidence": "'leader' hits 2 file(s), all in ['docs/ai_methodology/skills/audit-loop/SKILL.md', 'docs/ai_methodology/skills/audit-loop/references/distributed-drain.md'] (audit-loop worker documentation, which says there is NO leader); 'follower' hits zero physics artifacts",
         "forcing_step_or_free_choice": "The mechanism has no artifact on this branch, so nothing can be pinned. Even granting it: a gating ORDER is a two-element total order, which carries no magnitude. Every strictly increasing weighting (1, r) with r > 1 is order-compatible, so the order fixes an inequality, not a point.",
         "provenance": "ABSENT",
         "shape_if_present": "(1, sigma^k) or (1, k)"
       },
       {
         "candidate": "doubling in count-once (additive readout over pairs)",
-        "evidence": "36 file(s) hit, all loop working documents; the axiom clause itself is pinned as finite_additive_readout",
+        "evidence": "35 file(s) hit, all loop working documents; the axiom clause itself is pinned as finite_additive_readout",
         "forcing_step_or_free_choice": "FORCED: additivity over pairwise-disjoint records with I(empty) = 0 makes readout linear with EQUAL treatment of disjoint parts. The forced pair is (1, 1), profile (0, 0). The doubling shows up in the VALUE (a two-record reading is 2x a one-record reading) and not in the WEIGHTS, which is precisely the distinction SL1 turns on.",
         "provenance": "DERIVED",
         "shape_if_present": "(1, 1) per disjoint pair"
       },
       {
         "candidate": "composed-record event families (B0/B1 refinement)",
-        "evidence": "3 file(s) hit, e.g. ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py']; there B0/B1 are two of six rank-one record roles in one M_2",
+        "evidence": "2 file(s) hit, e.g. ['docs/work_history/repo/review_feedback/ABELIAN_COMPATIBLE_SEED_BELL_MERGE_CYCLE15_NOTE_2026-07-14.md']; there B0/B1 are two of six rank-one record roles in one M_2",
         "forcing_step_or_free_choice": "B0 and B1 are BOTH rank one, so the multiplicity pair is (1, 1) with profile (0, 0). The refinement supplies a label, not an asymmetric weight.",
         "provenance": "SUPPLIED",
         "shape_if_present": "(1, 1) as two rank-one projector roles"
       },
       {
         "candidate": "Cycle-318 mediator weight 2",
-        "evidence": "9 file(s) hit; recovered here by AST as a Python default argument (certificate N)",
+        "evidence": "8 file(s) hit; recovered here by AST as a Python default argument (certificate N)",
         "forcing_step_or_free_choice": "FREE CHOICE, quoted: the value is the default of the keyword argument `mediator_weight` in the Cycle-318 vertex builder. A default argument is a supply by construction, and Cycle 876 already recorded it as such.",
         "provenance": "SUPPLIED",
         "shape_if_present": "(1, 2) as (matter, mediator)"
       },
       {
         "candidate": "the (1, 2, 0) grading point",
-        "evidence": "67 file(s) hit; Cycle 880's own docstring is pinned as selection-neutral",
+        "evidence": "66 file(s) hit; Cycle 880's own docstring is pinned as selection-neutral",
         "forcing_step_or_free_choice": "FREE CHOICE, quoted from the pinned artifact: 'It SELECTS NOTHING: the choice of t is the owner's'. The lawful locus is a whole segment w(t) = (1, 1+t, 1-t) and t = +1 is a point on it, not a forced value.",
         "provenance": "SUPPLIED",
         "shape_if_present": "(1, 2) as the first two sector weights"
       },
       {
         "candidate": "the landed isotype weight pair (1, 2)",
-        "evidence": "4 file(s) hit the literal phrase; the earliest is ['scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py']",
+        "evidence": "3 file(s) hit the literal phrase; the earliest is ['scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py']",
         "forcing_step_or_free_choice": "ASSERTION-SHAPED: the landed check is literally `(1, 2) == (1, 2)`, and the same file's section 7 records that '(1, 1) and (1, 2) both admissible'. So the tree names the right reading -- (trivial, doublet) dimensions -- but supplies rather than derives it. This cycle derives it.",
         "provenance": "SUPPLIED",
         "shape_if_present": "(1, 2) as (trivial, doublet) real dimensions"
@@ -357,11 +357,15 @@ CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
       "doubling in count-once (additive readout over pairs)",
       "the C3 isotype pair of the Record readout space"
     ],
-    "files_scanned": 10146,
-    "finding": "Of 9 candidate carriers swept over 10146 files, 2 are DERIVED, 5 are SUPPLIED and 2 are ABSENT; every landed literal (1, 2) in the tree is supplied, and the only derived (1, 2) is the C3 isotype pair built below.",
+    "exclusions": [
+      "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+      "scripts/frontier_cycle883_weight_pair_independent_check_2026_07_28.py"
+    ],
+    "files_excluded_as_self_reference": 2,
+    "files_scanned": 10145,
+    "finding": "Of 9 candidate carriers swept over 10145 files, 2 are DERIVED, 5 are SUPPLIED and 2 are ABSENT; every landed literal (1, 2) in the tree is supplied, and the only derived (1, 2) is the C3 isotype pair built below.",
     "needle_first_hits": {
       "composed_record_B0_B1": [
-        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
         "docs/work_history/repo/review_feedback/ABELIAN_COMPATIBLE_SEED_BELL_MERGE_CYCLE15_NOTE_2026-07-14.md",
         "docs/work_history/repo/review_feedback/COMPLETE_CANDIDATE_LSTAR_ASSEMBLY_CYCLE41_NOTE_2026-07-14.md"
       ],
@@ -371,7 +375,7 @@ CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
         "scripts/acphilambda_sharpening_import_decomposition_2026_07_16.py",
         "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py",
         "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
-        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
+        "scripts/frontier_hierarchy_koide_acphilambda_two_bit_decomposition.py"
       ],
       "cycle318_mediator_weight": [
         "scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py",
@@ -381,16 +385,11 @@ CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
         "scripts/frontier_cycle880_visible_point_independent_check_2026_07_28.py",
         "scripts/frontier_cycle880_visible_point_physics_2026_07_28.py"
       ],
-      "cycle878_artifact": [
-        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
-      ],
-      "cycle881_artifact": [
-        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
-      ],
+      "cycle878_artifact": [],
+      "cycle881_artifact": [],
       "explicit_weight_pair_1_2": [
         "scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py",
         "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
-        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
         "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md"
       ],
       "grading_1_2_0": [
@@ -410,30 +409,26 @@ CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
         "scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py"
       ],
       "leader_follower_relay": [
-        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
         "docs/ai_methodology/skills/audit-loop/SKILL.md",
         "docs/ai_methodology/skills/audit-loop/references/distributed-drain.md"
       ],
-      "record_write_ordinal": [
-        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
-      ],
+      "record_write_ordinal": [],
       "two_bank_pair": [
-        "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
         "docs/PROGRAM_CONTENT_ORDER_ATTEMPT_CYCLE755_BOUNDED_THEOREM_NOTE_2026-07-28.md"
       ]
     },
     "needle_hit_counts": {
-      "composed_record_B0_B1": 3,
-      "count_once_doubling": 36,
-      "cycle318_mediator_weight": 9,
-      "cycle878_artifact": 1,
-      "cycle881_artifact": 1,
-      "explicit_weight_pair_1_2": 4,
-      "grading_1_2_0": 67,
-      "isotype_pair": 203,
-      "leader_follower_relay": 3,
-      "record_write_ordinal": 1,
-      "two_bank_pair": 2
+      "composed_record_B0_B1": 2,
+      "count_once_doubling": 35,
+      "cycle318_mediator_weight": 8,
+      "cycle878_artifact": 0,
+      "cycle881_artifact": 0,
+      "explicit_weight_pair_1_2": 3,
+      "grading_1_2_0": 66,
+      "isotype_pair": 202,
+      "leader_follower_relay": 2,
+      "record_write_ordinal": 0,
+      "two_bank_pair": 1
     },
     "pass": true,
     "provenance_classes_valid": true,
@@ -445,7 +440,7 @@ CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
       "the (1, 2, 0) grading point",
       "the landed isotype weight pair (1, 2)"
     ],
-    "sweep_scope": "every *.py under scripts/ and every *.md under docs/, byte-wise, against a fixed needle table"
+    "sweep_scope": "every *.py under scripts/ and every *.md under docs/, byte-wise, against a fixed needle table, with this cycle's own two artifacts excluded so that no ABSENT verdict is contradicted by the runner's own prose"
   },
   "E_LATTICE_ROTATION_GROUP": {
     "axiom_clause_used": "Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor adjacency, standard translations, and proper cubic rotations about each site.",
@@ -1382,7 +1377,7 @@ CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
   "P_OUTCOME": {
     "bridge_back": "C882-T6 is DEFEATED by the derived datum: the anchor group widens to <2, 3> and 2/9 = 2^1 * 3^-2 becomes reachable. C882-T7 is UNTOUCHED: every closed library still contains the identity and no alpha-witness row flips to uniquely selecting. Cycle 882's own classification of SL1 as WEAKER is thereby confirmed by recomputation.",
     "cycle882_T6_obstruction_defeated": true,
-    "files_swept": 10146,
+    "files_swept": 10145,
     "finding": "The cycle returns a positive derivation with an exactly priced residual: SL1's datum is derived from two axiom clauses with no free parameter, the named 2-adic obstruction it was invented to defeat is defeated, and the surviving wall is unchanged.",
     "named_upstream_dependency": "the C3 scope, inherited from Cycle 882 rather than derived; the Lattice clause supplies C2, C3 and C4 alike. Named as SL0.",
     "obligation_closed": false,
@@ -1458,4 +1453,4 @@ CYCLE 883 -- SL1: DOES THE RECORD CARRY THE WEIGHT PAIR (1, 2)?
   }
 }
 
-controls: deterministic=True runtime_under_limit=True stdout=63574B cache=ce8d0e04e7c75aaf
+controls: deterministic=True runtime_under_limit=True stdout=63480B cache=b12e382a4a408bd3

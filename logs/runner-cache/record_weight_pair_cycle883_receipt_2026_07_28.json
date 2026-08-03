@@ -227,59 +227,60 @@
     }
   ],
   "exact_scope": "Exact scope. Derived: the ordered isotype pair (1, 2) over one free C3 orbit, from the Lattice rotation clause and the Record additivity clause. Not derived: which cyclic subgroup the registered orbit belongs to (SL0), and which functional binds the pair to the anchor (SL1b). Not claimed: any closure of the readout obligation, any connection between the derived 2 and Cycle-318's mediator weight, and any connection between the derived pair and the (1, 2, 0) grading.",
+  "files_scanned_by_the_primary": 10145,
   "inventory": [
     {
       "candidate": "record write ordinals",
-      "evidence": "tree-wide scan for ['write ordinal', 'write_ordinal', 'record ordinal'] returned 1 files",
+      "evidence": "tree-wide scan for ['write ordinal', 'write_ordinal', 'record ordinal'] returned 0 files",
       "forcing_step_or_free_choice": "No landed artifact defines a record write ordinal. Record permanence plus one-record-per-site gives no order between records at distinct sites, and 'No site is privileged' forbids inventing one.",
       "provenance": "ABSENT",
       "shape_if_present": "an ordered pair of write positions"
     },
     {
       "candidate": "bank pair structure (two banks)",
-      "evidence": "2 file(s) hit; the only physics hit is ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py'], whose two-bank sentence counts LAWFUL TRANSLATION CLASSES (81 of 1814400 anchored candidates), not weights",
+      "evidence": "1 file(s) hit; the only physics hit is ['docs/PROGRAM_CONTENT_ORDER_ATTEMPT_CYCLE755_BOUNDED_THEOREM_NOTE_2026-07-28.md'], whose two-bank sentence counts LAWFUL TRANSLATION CLASSES (81 of 1814400 anchored candidates), not weights",
       "forcing_step_or_free_choice": "TWO banks is a cardinality-2 fact, i.e. a (1, 1) multiplicity pair with 2-adic profile (0, 0). Turning it into (1, 2) needs a weight on one bank, which is exactly the formation-weight content the axiom memo excludes.",
       "provenance": "SUPPLIED",
       "shape_if_present": "(1, 1) as a count, (1, 2) only if weighted"
     },
     {
       "candidate": "leader/follower relay roles (sigma gating)",
-      "evidence": "'leader' hits 3 file(s), all in ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py', 'docs/ai_methodology/skills/audit-loop/SKILL.md'] (audit-loop worker documentation, which says there is NO leader); 'follower' hits zero physics artifacts",
+      "evidence": "'leader' hits 2 file(s), all in ['docs/ai_methodology/skills/audit-loop/SKILL.md', 'docs/ai_methodology/skills/audit-loop/references/distributed-drain.md'] (audit-loop worker documentation, which says there is NO leader); 'follower' hits zero physics artifacts",
       "forcing_step_or_free_choice": "The mechanism has no artifact on this branch, so nothing can be pinned. Even granting it: a gating ORDER is a two-element total order, which carries no magnitude. Every strictly increasing weighting (1, r) with r > 1 is order-compatible, so the order fixes an inequality, not a point.",
       "provenance": "ABSENT",
       "shape_if_present": "(1, sigma^k) or (1, k)"
     },
     {
       "candidate": "doubling in count-once (additive readout over pairs)",
-      "evidence": "36 file(s) hit, all loop working documents; the axiom clause itself is pinned as finite_additive_readout",
+      "evidence": "35 file(s) hit, all loop working documents; the axiom clause itself is pinned as finite_additive_readout",
       "forcing_step_or_free_choice": "FORCED: additivity over pairwise-disjoint records with I(empty) = 0 makes readout linear with EQUAL treatment of disjoint parts. The forced pair is (1, 1), profile (0, 0). The doubling shows up in the VALUE (a two-record reading is 2x a one-record reading) and not in the WEIGHTS, which is precisely the distinction SL1 turns on.",
       "provenance": "DERIVED",
       "shape_if_present": "(1, 1) per disjoint pair"
     },
     {
       "candidate": "composed-record event families (B0/B1 refinement)",
-      "evidence": "3 file(s) hit, e.g. ['scripts/frontier_cycle883_record_weight_pair_2026_07_28.py']; there B0/B1 are two of six rank-one record roles in one M_2",
+      "evidence": "2 file(s) hit, e.g. ['docs/work_history/repo/review_feedback/ABELIAN_COMPATIBLE_SEED_BELL_MERGE_CYCLE15_NOTE_2026-07-14.md']; there B0/B1 are two of six rank-one record roles in one M_2",
       "forcing_step_or_free_choice": "B0 and B1 are BOTH rank one, so the multiplicity pair is (1, 1) with profile (0, 0). The refinement supplies a label, not an asymmetric weight.",
       "provenance": "SUPPLIED",
       "shape_if_present": "(1, 1) as two rank-one projector roles"
     },
     {
       "candidate": "Cycle-318 mediator weight 2",
-      "evidence": "9 file(s) hit; recovered here by AST as a Python default argument (certificate N)",
+      "evidence": "8 file(s) hit; recovered here by AST as a Python default argument (certificate N)",
       "forcing_step_or_free_choice": "FREE CHOICE, quoted: the value is the default of the keyword argument `mediator_weight` in the Cycle-318 vertex builder. A default argument is a supply by construction, and Cycle 876 already recorded it as such.",
       "provenance": "SUPPLIED",
       "shape_if_present": "(1, 2) as (matter, mediator)"
     },
     {
       "candidate": "the (1, 2, 0) grading point",
-      "evidence": "67 file(s) hit; Cycle 880's own docstring is pinned as selection-neutral",
+      "evidence": "66 file(s) hit; Cycle 880's own docstring is pinned as selection-neutral",
       "forcing_step_or_free_choice": "FREE CHOICE, quoted from the pinned artifact: 'It SELECTS NOTHING: the choice of t is the owner's'. The lawful locus is a whole segment w(t) = (1, 1+t, 1-t) and t = +1 is a point on it, not a forced value.",
       "provenance": "SUPPLIED",
       "shape_if_present": "(1, 2) as the first two sector weights"
     },
     {
       "candidate": "the landed isotype weight pair (1, 2)",
-      "evidence": "4 file(s) hit the literal phrase; the earliest is ['scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py']",
+      "evidence": "3 file(s) hit the literal phrase; the earliest is ['scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py']",
       "forcing_step_or_free_choice": "ASSERTION-SHAPED: the landed check is literally `(1, 2) == (1, 2)`, and the same file's section 7 records that '(1, 1) and (1, 2) both admissible'. So the tree names the right reading -- (trivial, doublet) dimensions -- but supplies rather than derives it. This cycle derives it.",
       "provenance": "SUPPLIED",
       "shape_if_present": "(1, 2) as (trivial, doublet) real dimensions"
@@ -364,6 +365,10 @@
     }
   ],
   "steelman": "The strongest case against this cycle's positive result: the derived pair lives in the READOUT SPACE over the record, whereas SL1's wording asks the record to carry the pair 'as Record content'. The answer is that Record's own additivity clause is what defines that readout space, so the pair is built from Record content and Lattice content and nothing else -- but the distinction is real and is recorded, not argued away. Anyone who insists the datum must live in the record rather than in its readout should read this cycle as deriving the datum one level out, which is exactly where C882-T6's arithmetic acts.",
+  "sweep_exclusions": [
+    "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+    "scripts/frontier_cycle883_weight_pair_independent_check_2026_07_28.py"
+  ],
   "theorems": [
     "C883-T1 axiom multiplicity inventory ({0, 1}) + supply dichotomy",
     "C883-T2 the Lattice rotation group and its order-3 elements",

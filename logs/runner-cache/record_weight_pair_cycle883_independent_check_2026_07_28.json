@@ -1,0 +1,140 @@
+{
+  "configurations_returning_the_target_pair": [
+    [
+      3
+    ]
+  ],
+  "cycle": 883,
+  "forms_returning_the_anchor": [
+    "w0*w1 / (n)^2",
+    "w0*w1 / (w0+w1)^2",
+    "w1 / (n)^2",
+    "w1 / (w0+w1)^2"
+  ],
+  "independently_computed_pair": [
+    1,
+    2
+  ],
+  "independently_computed_profile": [
+    0,
+    1
+  ],
+  "inventory_misses": [],
+  "libraries_uniquely_selecting_the_target": [],
+  "receipt_claims_cross_examined": [
+    {
+      "agrees": true,
+      "checker_computes": [
+        1,
+        2
+      ],
+      "claim": "derived ordered pair",
+      "receipt_says": [
+        1,
+        2
+      ]
+    },
+    {
+      "agrees": true,
+      "checker_computes": [
+        0,
+        1
+      ],
+      "claim": "two-adic profile",
+      "receipt_says": [
+        0,
+        1
+      ]
+    },
+    {
+      "agrees": true,
+      "checker_computes": true,
+      "claim": "SL1 met at the pinned scope",
+      "receipt_says": true
+    },
+    {
+      "agrees": true,
+      "checker_computes": true,
+      "claim": "C882-T6 defeated",
+      "receipt_says": true
+    },
+    {
+      "agrees": true,
+      "checker_computes": true,
+      "claim": "C882-T7 intact",
+      "receipt_says": true
+    },
+    {
+      "agrees": true,
+      "checker_computes": true,
+      "claim": "obligation closed",
+      "receipt_says": true
+    },
+    {
+      "agrees": true,
+      "checker_computes": true,
+      "claim": "binding is ambiguous, not forced",
+      "receipt_says": true
+    }
+  ],
+  "refutation_attempts": [
+    {
+      "attempt": "R1 circularity firewall",
+      "refutation_succeeded": false
+    },
+    {
+      "attempt": "R2 independent isotype dimension",
+      "refutation_succeeded": false
+    },
+    {
+      "attempt": "R3 independent group construction",
+      "refutation_succeeded": false
+    },
+    {
+      "attempt": "R4 wrong-pair stress",
+      "refutation_succeeded": false
+    },
+    {
+      "attempt": "R5 rescue the defeated routes",
+      "refutation_succeeded": false
+    },
+    {
+      "attempt": "R6 refute the bridge-back",
+      "refutation_succeeded": false
+    },
+    {
+      "attempt": "R7 refute the binding price",
+      "refutation_succeeded": false
+    },
+    {
+      "attempt": "R8 independent inventory sweep",
+      "refutation_succeeded": false
+    }
+  ],
+  "refutations_that_succeeded": [],
+  "role": "independent checker, specified to refute the primary",
+  "source_pins": [
+    {
+      "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+      "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+      "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c"
+    },
+    {
+      "git_blob": "86e923ae910a02cad84eb756e5a255b97d820f0e",
+      "path": "logs/runner-cache/record_weight_pair_cycle883_receipt_2026_07_28.json",
+      "sha256": "b12e382a4a408bd3fe518bb47aca83083a27e0180355128b3a76b5282accd511"
+    },
+    {
+      "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
+      "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+      "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a"
+    },
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    }
+  ],
+  "the_2_is_computed_not_typed": true,
+  "verdict": "The primary's positive claim SURVIVES every refutation attempt. The pair (1, 2) is computed and not typed, reproduces under two methods the primary did not use, is unique to the C3 orbit across an exhaustive configuration search, and cannot be reached by the two-bank, gating-order or free-cardinality routes the primary refused. The bridge-back survives in both directions: C882-T6 falls, C882-T7 does not."
+}

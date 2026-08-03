@@ -693,12 +693,14 @@ def first_ready_forensic_claim(
     excluded_claim_ids: set[str] | None = None,
     *,
     include_alternate_sources: bool = False,
+    worker_id: str = "",
 ) -> str | None:
     PROGRESS["last_canary_source"] = None
     excluded = excluded_claim_ids or set()
     if include_alternate_sources:
         ledger_rows = batch.load_rows()
         for source in ("dispatch", "reaudit"):
+            eligible: list[dict] = []
             for row in batch.source_queue_rows(source, ledger_rows):
                 claim_id = row.get("claim_id")
                 if (
@@ -718,27 +720,35 @@ def first_ready_forensic_claim(
                 if batch.source_requires_forensic(
                     ledger_rows.get(claim_id) or row
                 ):
-                    PROGRESS["last_canary_source"] = source
-                    return claim_id
+                    eligible.append(row)
+            if worker_id and eligible:
+                eligible = batch.rotate_priority_tiers(eligible, worker_id)
+            if eligible:
+                PROGRESS["last_canary_source"] = source
+                return eligible[0]["claim_id"]
     if not QUEUE.exists():
         return None
     rows = json.loads(QUEUE.read_text(encoding="utf-8")).get("queue", [])
+    eligible: list[dict] = []
     for row in rows:
-        if (
+        if not (
             row.get("ready")
             and row.get("audit_work_kind", "fresh_scientific_audit")
             == "fresh_scientific_audit"
             and row.get("audit_status") in {"unaudited", "audit_in_progress"}
             and batch.source_requires_forensic(row)
         ):
-            claim_id = row.get("claim_id")
-            if (
-                isinstance(claim_id, str)
-                and claim_id
-                and claim_id not in excluded
-            ):
-                return claim_id
-    return None
+            continue
+        claim_id = row.get("claim_id")
+        if (
+            isinstance(claim_id, str)
+            and claim_id
+            and claim_id not in excluded
+        ):
+            eligible.append(row)
+    if worker_id and eligible:
+        eligible = batch.rotate_priority_tiers(eligible, worker_id)
+    return eligible[0]["claim_id"] if eligible else None
 
 
 def forensic_canary_terminal_record(
@@ -959,6 +969,7 @@ def run_forensic_canary(
         claim_id = first_ready_forensic_claim(
             excluded,
             include_alternate_sources=True,
+            worker_id=getattr(args, "worker_id", ""),
         )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         emit(f"cannot authenticate forensic selection sources: {exc}")

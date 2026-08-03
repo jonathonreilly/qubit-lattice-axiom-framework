@@ -22,12 +22,51 @@ Claude model is driving the conversation (e.g. Fable, or the strongest available
 Claude model at the time). It is not a separately pinned or named model; it
 follows the in-chat model.
 
-Use the strongest configured text reasoning worker available through the local
-`codex exec` setup for bounded execution. If a named preferred worker profile is
-unavailable, do not substitute an image, visual-generation, document-rendering,
-or low-reasoning model. Use the strongest available text reasoning profile,
-disclose the substitution in the work log, and keep the supervising agent
-responsible for the result.
+Two worker profiles are first-class (owner directive 2026-08-03, after the
+2026-08-03 campaign ran eleven Claude workers with zero failed deliveries and
+the checker lane refuting a supervisor-authored primary):
+
+- **Codex text-reasoning worker** — the local `codex exec` setup, preferred
+  profile `gpt-5.6-sol` at `model_reasoning_effort=max` (owner directive
+  2026-07-08; verify slug and effort live against the local install). Launch
+  and reliability rules below.
+- **Claude worker** — a subagent of the host session (the Agent tool or
+  equivalent), running the strongest available Claude model at maximum
+  reasoning effort (farmed work runs at max — owner directive 2026-06-26;
+  subagents inherit the session's effort, so the session must be at max).
+  Launched as background workers, one per block, each in its own durable
+  worktree. The codex failure modes (stdin start-hang, context exhaustion
+  mid-delivery) do not apply; the bounded-read discipline still does.
+
+Profile selection is the supervising agent's discretion, with one preference:
+when both lanes are available, pair them — primary from one family, checker
+from the other — because cross-model checker independence is strictly stronger
+than cross-context. When only one family is available (quota, outage), the
+single-family setup is admissible ONLY under the robustness conditions below,
+and every shipped block must disclose its independence class (cross-model vs
+cross-context) in the note, receipt, and PR.
+
+Never substitute an image, visual-generation, document-rendering, or
+low-reasoning model for either profile. Disclose any substitution in the work
+log and keep the supervising agent responsible for the result.
+
+## Robustness Conditions (mandatory; load-bearing when primary and checker share a model family)
+
+- Every block ships an independent checker spec'd to REFUTE, built on
+  machinery disjoint from the primary's (different arithmetic route,
+  different enumeration/allocation, no import of the primary — text/AST pins
+  behind an import firewall).
+- Checker teeth must be demonstrated, not asserted: mutation probes or
+  planted defects that the checker provably catches, and tamper tests that
+  fail closed.
+- The supervising agent reviews every worker diff line-by-line and
+  hand-verifies the load-bearing mathematics of at least the central claim
+  before accepting a block; cache terminals are verified against emitted
+  certificates.
+- Integrity gates never encode desired outcomes; findings are generated from
+  computed values.
+- These conditions are what make same-family worker/checker pairs admissible;
+  they are good practice for cross-model pairs too.
 
 The supervising agent:
 
@@ -54,7 +93,20 @@ The worker must not:
 - decide to land, merge, or close PRs;
 - route science work through visual/image-generation tooling.
 
-## Codex Worker Launch & Reliability (REQUIRED)
+## Claude Worker Launch (when using the Claude profile)
+
+- Spawn one background subagent per block, each pointed at its own durable
+  worktree (never a tmp path — reboots purge tmp; the 2026-08-02 campaign
+  interruption is the precedent), with the block spec inline in the prompt.
+- The spec carries the same bounds as a codex spec: named read caps, exact
+  deliverable filenames, commit-incrementally-with-prefix, no docs/ edits,
+  no pushes (the supervisor pushes after review), raw final report with a
+  line cap.
+- Workers commit locally; the supervisor reviews, then commits any
+  supervisor-side artifacts (note, receipt) and pushes. Worker scripts are
+  committed BEFORE their first certified run wherever recovery matters.
+
+## Codex Worker Launch & Reliability (REQUIRED when using the codex profile)
 
 `codex exec` workers hang or silently fail to deliver in two confirmed ways. Both
 have a fix; apply all of the following every time.

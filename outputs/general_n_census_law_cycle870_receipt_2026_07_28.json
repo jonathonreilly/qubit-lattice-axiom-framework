@@ -1,0 +1,58 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (codex quota exhausted 2026-08-03; substitution disclosed); supervisor line-by-line review",
+ "block": "toe-time-blockN1-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "logs/runner-cache/frontier_cycle870_census_independent_check_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 5
+  },
+  "logs/runner-cache/frontier_cycle870_general_n_census_2026_07_28.txt": {
+   "fail": 0,
+   "pass": 5
+  }
+ },
+ "checker_teeth": {
+  "mutants_refuted": 7,
+  "mutants_surviving": 0,
+  "primary_claims_refuted": 0,
+  "primary_claims_survived": 16
+ },
+ "claim_type": "bounded_theorem",
+ "cycles": [
+  870
+ ],
+ "files": {
+  "docs/GENERAL_N_CENSUS_LAW_CYCLE870_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "ec31a00b57707c25ef944366f751ea3a10409acd",
+   "sha256": "c8a80f35d48056396a10477d501da898275c950c2a6001e9dbccad207b26931f"
+  },
+  "logs/runner-cache/frontier_cycle870_census_independent_check_2026_07_28.txt": {
+   "git_blob": "8549fd12c5e4c483a5bdc96c8c426234cb56c535",
+   "sha256": "775c7c587cf67ebc923270e1a298c298cd858ab7245e292886861a969aa3a485"
+  },
+  "logs/runner-cache/frontier_cycle870_general_n_census_2026_07_28.txt": {
+   "git_blob": "b8aeff672ef96c044f343bda0a247692e101bafa",
+   "sha256": "4cdcaf3fce2fe91ed8c59df824052842c9dd984aba3c9e0a8a31ac1b3041fc92"
+  },
+  "scripts/frontier_cycle870_census_independent_check_2026_07_28.py": {
+   "git_blob": "9c31d715c490a339d6322425827818d0359a11cb",
+   "sha256": "2a981687560f2d4098ca25b74bff79a08fd9bfd573cf04fafd0a06dfc60f0d6a"
+  },
+  "scripts/frontier_cycle870_general_n_census_2026_07_28.py": {
+   "git_blob": "4477d08aef6ea2646738946797fa1adfbceb9c27",
+   "sha256": "3470cc2ef70ec0e88ad8ce17a9e1ac17416c67b5319c5731e67cf5b07a0fa7dd"
+  }
+ },
+ "headline": "N(n,k) = 4*(n/k)*C(n-k-1,k-1); external n=12 spectrum correct only rescoped k>=2; min covariant selection = spf(n)",
+ "incident": "checker no-hardcoded-answer probe caught EXTENDED_N_MAX=36 colliding with I(12,5)=36; bound moved to 40, cache re-pinned",
+ "independence": "cross-context (shared authoring model family; disjoint machinery, import firewall, integer-only checker)",
+ "note": "docs/GENERAL_N_CENSUS_LAW_CYCLE870_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "prior_art_search_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+ "runtime_seconds": {
+  "checker": 0.15,
+  "primary": 1.23
+ }
+}

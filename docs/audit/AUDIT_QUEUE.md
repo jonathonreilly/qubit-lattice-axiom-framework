@@ -1,18 +1,18 @@
 # Audit Queue
 
-**Total pending:** 3087
+**Total pending:** 3086
 **Ready (dependencies and deterministic forensic evidence):** 508
 **Dependency-ready:** 591
-**Forensic-evidence-ready:** 2605
+**Forensic-evidence-ready:** 2604
 
 By criticality:
-- `critical`: 656
+- `critical`: 655
 - `high`: 382
 - `medium`: 858
 - `leaf`: 1191
 
 By work kind:
-- `fresh_scientific_audit`: 2602
+- `fresh_scientific_audit`: 2601
 - `legacy_packet_upgrade`: 3
 - `evidence_repair_required`: 482
 
@@ -40,7 +40,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 16 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 1140 | 12.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
 | 17 | `quark_route2_eta_floor_hf_boundary_note` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 1109 | 11.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/quark_route2_eta_floor_hf_boundary_check.py` |
 | 18 | `hypercharge_identification_note` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 1052 | 21.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py` |
-| 19 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | fresh_scientific_audit | positive_theorem | audit_in_progress | critical | 942 | 12.38 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_unit_singlet_overlap_narrow.py` |
+| 19 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 941 | 17.88 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 20 | `cpt_exact_note` | fresh_scientific_audit | positive_theorem | non_terminal_failed | critical | 932 | 31.87 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_cpt_exact.py` |
 | 21 | `hierarchy_matsubara_decomposition_note` | fresh_scientific_audit | positive_theorem | non_terminal_conditional | critical | 929 | 15.86 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_matsubara_decomposition.py` |
 | 22 | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | fresh_scientific_audit | bounded_theorem | non_terminal_conditional | critical | 910 | 10.33 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_declared_anchor_bounded_subchain.py` |

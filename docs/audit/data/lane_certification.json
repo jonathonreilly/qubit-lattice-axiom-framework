@@ -2505,10 +2505,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "universal_gr_a1_invariant_section_note",
           "effective_status": "unaudited"
         },
@@ -2816,7 +2812,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 645
+      "uncertified_count": 644
     }
   ],
   "schema": "lane_certification_v2"

@@ -32,9 +32,9 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3972 |
-| Applied audit verdicts | 885 |
-| Retained-grade rows, including boxed decorations | 463 |
-| Retained positive theorems | 116 |
+| Applied audit verdicts | 886 |
+| Retained-grade rows, including boxed decorations | 464 |
+| Retained positive theorems | 117 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 320 |
 | Boxed decorations under retained parents | 27 |
@@ -54,10 +54,10 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3087 |
+| Total pending rows | 3086 |
 | Ready rows | 508 |
 | Cycle-break targets | 60 |
-| Critical pending | 656 |
+| Critical pending | 655 |
 | High pending | 382 |
 | Medium pending | 858 |
 | Leaf pending | 1191 |
@@ -78,7 +78,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **553**.
+- Non-retained-grade cited rows in publication tables: **552**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -92,24 +92,24 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | medium | `audited_failed` | 3 |
 | critical | `audited_failed` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_numerical_match` | 1 |
+| critical | `audited_renaming` | 1 |
 
 ## Dispatch Shadow Report (no dispatch effect)
 
 | Metric | Value |
 |---|---:|
-| Publication-lane size (shadow, admitted only) | 564 |
+| Publication-lane size (shadow, admitted only) | 563 |
 | Manifest state | ok |
 | Manifest pending additions | 0 |
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 1 |
-| Admitted ids absent from lane candidates | 26 |
+| Admitted ids absent from lane candidates | 27 |
 | Live conditional/failed rows that would park | 15 |
 | Live rows fail-open (legacy/unversioned snapshot) | 28 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 8 |
-| Lane rows removed since prior pass | 0 |
+| Lane rows removed since prior pass | 1 |
 | Non-lane rows deferred by simulated interleave | 92 |
 
 Named lane membership churn since the prior pass:
@@ -121,6 +121,7 @@ Named lane membership churn since the prior pass:
 - added: `plaquette_self_consistency_note`
 - added: `universal_gr_casimir_block_localization_note`
 - added: `z2_hw1_mass_matrix_parametrization_note`
+- removed: `unit_singlet_overlap_narrow_theorem_note_2026-05-02`
 
 Unmanifested candidates (visible gaming surface; need review-landed pending entries before admission):
 - `route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30`
@@ -149,6 +150,7 @@ Admitted ids currently absent from lane candidates:
 - `shapiro_static_discriminator_note`
 - `single_axiom_hilbert_note`
 - `teleportation_native_axioms_theory_note`
+- `unit_singlet_overlap_narrow_theorem_note_2026-05-02`
 - `universal_gr_lorentzian_global_atlas_closure_note`
 - `work_history.ckm.cabibbo_bound_note`
 - `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02`
@@ -182,7 +184,7 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `hypercharge_identification_note`: +9
 - `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note`: +9
 - `no_per_site_bosonic_ccr_theorem_note_2026-05-02`: +9
-- `unit_singlet_overlap_narrow_theorem_note_2026-05-02`: +8
+- `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19`: +8
 - `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`: +8
 - `signed_gravity_response_lane_status_note_2026-04-26`: +8
 - `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25`: +8

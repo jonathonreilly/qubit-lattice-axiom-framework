@@ -1,0 +1,686 @@
+{
+  "association_firewall": {
+    "Cycle612_shared_order_reads_orientation": false,
+    "acceptance_failures": 0,
+    "causal_orientation": "supplied",
+    "lawful_pairs": [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "missing_map": "absent from these pinned interfaces: identity co-registration from seam opportunity to signed tick crossing, followed by EventCell.orientation = tick-crossing orientation; no global nonexistence claim",
+    "spatial_to_causal_is_function": false
+  },
+  "claim_scope": "one complete all-seam spatial-direction packet epoch on supplied clean own-bank inputs",
+  "color_covariance": {
+    "bijection_failures": 0,
+    "colors": 24,
+    "ordered_frame_products": 576,
+    "product_failures": 0,
+    "product_rows": 13824,
+    "proper_frames": 24
+  },
+  "continuity": {
+    "coupling_and_scale": "supplied",
+    "covered_full_occupation_columns": 16777216,
+    "current": "j_e = n_v_post - n_v_pre = r_u_to_v - r_v_to_u",
+    "current_patterns": 531441,
+    "endpoint_modes": 24,
+    "failure_census": {
+      "cell_continuity": 0,
+      "current_pattern": 0,
+      "global_number": 0
+    },
+    "frame_failures": 0,
+    "frame_rows": 864,
+    "identity": "Delta N_x = sum_in j_e - sum_out j_e",
+    "not_claimed": [
+      "energy",
+      "mass",
+      "source density",
+      "occurrence",
+      "gravity"
+    ],
+    "ordered_frame_products": 576,
+    "product_failures": 0,
+    "product_rows": 20736,
+    "proper_frames": 24,
+    "seams": 12,
+    "shape": [
+      2,
+      2,
+      2
+    ],
+    "stationary_equivalence_failures": 0,
+    "stationary_equivalence_rows": 2,
+    "type": "unit-weight conserved number/resource current"
+  },
+  "epoch_fixtures": [
+    {
+      "active_colors": 12,
+      "actual_factor_macros": 324,
+      "actual_seam_factors": 12,
+      "actual_seam_rotations": 48,
+      "actual_update_rotations": 1392,
+      "augmented_instruction_range": [
+        902,
+        918
+      ],
+      "augmented_instructions": 10920,
+      "binding_failures": {
+        "compiled_word": 0,
+        "four_rotations": 0,
+        "selection": 0
+      },
+      "cells": 8,
+      "certified_coarse_macro_pairs": 18,
+      "coarse_six_color_collision_control": 12,
+      "commutation_failures": {
+        "endpoint_overlap": 0,
+        "inversion_outside_class": 0,
+        "packet_overlap": 0,
+        "physical_anticommutators": 0,
+        "polynomial": 0
+      },
+      "commuting_transpositions": 0,
+      "dirty_spectator": {
+        "dirty_basis_failures": 0,
+        "dirty_basis_rows": 1456,
+        "endpoint_alias_failures": 0,
+        "label_return_failures": 0,
+        "operand_failures": 0,
+        "ordered_macro_bank_pairs": 46,
+        "path_return_failures": 0,
+        "same_color_failures": 0,
+        "site_incidences": 728
+      },
+      "emitted_physical_stream_order": "exact Cycle870 serial factor order",
+      "expected_seam_phase": -18.84955592153876,
+      "fine_24_color_collision_count": 0,
+      "first_forward_swap_deletion_detections": 5408,
+      "fixed_color_schedule_routed_depth": 74912,
+      "full_update_relative_phase_unchanged": -168.20687791288861,
+      "identity_padding_slots": 0,
+      "length": 2,
+      "lockstep_schedule_key": "nested coarse=(axis,owner[axis] mod 2), then fine=owner parities on remaining axes in ascending global-axis order",
+      "maximum_polynomial_commutator_residual": 0.0,
+      "observed_seam_phase": -18.84955592153876,
+      "packet_bank_pair_overlap_pairs": 0,
+      "packet_bank_radius": 2,
+      "resource_bank_pair_overlap_pairs": 0,
+      "retained_seam_route_reconciliation": {
+        "endpoint_failures": 0,
+        "landed_operand_failures": 0,
+        "landed_return_failures": 0,
+        "landed_routed_gates": 27152,
+        "path_differences": 540,
+        "replacement_operand_failures": 0,
+        "replacement_return_failures": 0,
+        "replacement_routed_gates": 27152,
+        "retained_two_site_instructions": 1008
+      },
+      "retained_spatial_current_M2_per_seam": 1,
+      "route_policy": "declared coframe-returned replacement for the augmented seam stage; landed Manhattan route retained outside that stage",
+      "same_color_footprint_collisions": 0,
+      "same_layer_gate_pairs": 0,
+      "same_layer_support_collisions": 0,
+      "seam_phase_failure": false,
+      "seam_stage_contiguity_failure": false,
+      "seams": 12,
+      "spatial_output_geometry_failures": {
+        "duplicate_output_sites": 0,
+        "native_aux_collisions": 0,
+        "packet_aliases": 0
+      },
+      "spatial_output_local_coordinate": [
+        0,
+        0,
+        3
+      ],
+      "stage_order_failure": false,
+      "total_resource_M2_per_seam": 60,
+      "total_resource_radius": 3,
+      "used_packet_M2_per_seam": 59,
+      "used_packet_union_M2": 708,
+      "used_resource_union_M2": 720
+    },
+    {
+      "active_colors": 24,
+      "actual_factor_macros": 1107,
+      "actual_seam_factors": 54,
+      "actual_seam_rotations": 216,
+      "actual_update_rotations": 4752,
+      "augmented_instruction_range": [
+        906,
+        938
+      ],
+      "augmented_instructions": 49644,
+      "binding_failures": {
+        "compiled_word": 0,
+        "four_rotations": 0,
+        "selection": 0
+      },
+      "cells": 27,
+      "certified_coarse_macro_pairs": 216,
+      "coarse_six_color_collision_control": 72,
+      "commutation_failures": {
+        "endpoint_overlap": 0,
+        "inversion_outside_class": 0,
+        "packet_overlap": 0,
+        "physical_anticommutators": 0,
+        "polynomial": 0
+      },
+      "commuting_transpositions": 84,
+      "dirty_spectator": {
+        "dirty_basis_failures": 0,
+        "dirty_basis_rows": 10848,
+        "endpoint_alias_failures": 0,
+        "label_return_failures": 0,
+        "operand_failures": 0,
+        "ordered_macro_bank_pairs": 281,
+        "path_return_failures": 0,
+        "same_color_failures": 0,
+        "site_incidences": 5424
+      },
+      "emitted_physical_stream_order": "exact Cycle870 serial factor order",
+      "expected_seam_phase": -84.82300164692441,
+      "fine_24_color_collision_count": 0,
+      "first_forward_swap_deletion_detections": 24816,
+      "fixed_color_schedule_routed_depth": 173040,
+      "full_update_relative_phase_unchanged": -588.9039633677298,
+      "identity_padding_slots": 15760,
+      "length": 3,
+      "lockstep_schedule_key": "nested coarse=(axis,owner[axis] mod 2), then fine=owner parities on remaining axes in ascending global-axis order",
+      "maximum_polynomial_commutator_residual": 0.0,
+      "observed_seam_phase": -84.8230016469244,
+      "packet_bank_pair_overlap_pairs": 0,
+      "packet_bank_radius": 2,
+      "resource_bank_pair_overlap_pairs": 0,
+      "retained_seam_route_reconciliation": {
+        "endpoint_failures": 0,
+        "landed_operand_failures": 0,
+        "landed_return_failures": 0,
+        "landed_routed_gates": 153464,
+        "path_differences": 2752,
+        "replacement_operand_failures": 0,
+        "replacement_return_failures": 0,
+        "replacement_routed_gates": 153464,
+        "retained_two_site_instructions": 5040
+      },
+      "retained_spatial_current_M2_per_seam": 1,
+      "route_policy": "declared coframe-returned replacement for the augmented seam stage; landed Manhattan route retained outside that stage",
+      "same_color_footprint_collisions": 0,
+      "same_layer_gate_pairs": 305376,
+      "same_layer_support_collisions": 0,
+      "seam_phase_failure": false,
+      "seam_stage_contiguity_failure": false,
+      "seams": 54,
+      "spatial_output_geometry_failures": {
+        "duplicate_output_sites": 0,
+        "native_aux_collisions": 0,
+        "packet_aliases": 0
+      },
+      "spatial_output_local_coordinate": [
+        0,
+        0,
+        3
+      ],
+      "stage_order_failure": false,
+      "total_resource_M2_per_seam": 60,
+      "total_resource_radius": 3,
+      "used_packet_M2_per_seam": 59,
+      "used_packet_union_M2": 3186,
+      "used_resource_union_M2": 3240
+    }
+  ],
+  "failures": [],
+  "four_rail_allocator_candidate": {
+    "M2_per_seam": 236,
+    "available_C4_orbits": 82,
+    "axis_product_failures": 0,
+    "frame_orbit_rows": 4248,
+    "frame_site_rows": 16992,
+    "geometry": [
+      {
+        "M2_union": 2832,
+        "cross_seam_overlap_pairs": 0,
+        "inventory_failures": 0,
+        "length": 2,
+        "native_aux_collisions": 0,
+        "seams": 12
+      },
+      {
+        "M2_union": 12744,
+        "cross_seam_overlap_pairs": 0,
+        "inventory_failures": 0,
+        "length": 3,
+        "native_aux_collisions": 0,
+        "seams": 54
+      },
+      {
+        "M2_union": 33984,
+        "cross_seam_overlap_pairs": 0,
+        "inventory_failures": 0,
+        "length": 4,
+        "native_aux_collisions": 0,
+        "seams": 144
+      },
+      {
+        "M2_union": 70800,
+        "cross_seam_overlap_pairs": 0,
+        "inventory_failures": 0,
+        "length": 5,
+        "native_aux_collisions": 0,
+        "seams": 300
+      }
+    ],
+    "half_action_deletion_detections": 36,
+    "matrix_product_failures": 0,
+    "missing_for_execution": "a transported four-rail Cycle714 word implementing the induced register/rail permutation",
+    "orbit_bijection_failures": 0,
+    "orbit_membership_failures": 0,
+    "orbit_product_failures": 0,
+    "orbit_product_rows": 101952,
+    "products": 1728,
+    "rails_per_register": 4,
+    "reflection_fixed_orbits": 6,
+    "reflection_paired_orbit_pairs": 38,
+    "register_orbits": 59,
+    "register_permutation_deletion_detections": 1944,
+    "selected_fixed_orbits": 5,
+    "selected_reflected_pairs": 27,
+    "site_product_failures": 0,
+    "site_product_rows": 407808,
+    "site_set_failures": 0,
+    "status": "separate geometric covariance candidate",
+    "used_by_executable_epoch": false
+  },
+  "held_schedule_fixtures": [
+    {
+      "active_colors": 24,
+      "cells": 64,
+      "coarse_six_color_collision_control": 216,
+      "fixed_color_schedule_routed_depth": 184848,
+      "footprint_offset_max": [
+        15,
+        15,
+        15
+      ],
+      "footprint_offset_min": [
+        -16,
+        -16,
+        -16
+      ],
+      "length": 4,
+      "lockstep_schedule_key": "nested coarse=(axis,owner[axis] mod 2), then fine=owner parities on remaining axes in ascending global-axis order",
+      "macro_routed_depth_range": [
+        5896,
+        8200
+      ],
+      "packet_bank_pair_overlap_pairs": 0,
+      "resource_bank_pair_overlap_pairs": 0,
+      "retained_spatial_current_M2_per_seam": 1,
+      "route_policy": "declared coframe-returned replacement",
+      "same_color_footprint_support_collisions": 0,
+      "same_color_macro_pairs": 408,
+      "seams": 144,
+      "spatial_output_geometry_failures": {
+        "duplicate_output_sites": 0,
+        "native_aux_collisions": 0,
+        "packet_aliases": 0
+      },
+      "spatial_output_local_coordinate": [
+        0,
+        0,
+        3
+      ],
+      "total_resource_M2_per_seam": 60,
+      "used_packet_M2_per_seam": 59,
+      "used_packet_union_M2": 8496,
+      "used_resource_union_M2": 8640
+    },
+    {
+      "active_colors": 24,
+      "cells": 125,
+      "coarse_six_color_collision_control": 480,
+      "fixed_color_schedule_routed_depth": 186816,
+      "footprint_offset_max": [
+        15,
+        15,
+        15
+      ],
+      "footprint_offset_min": [
+        -16,
+        -16,
+        -16
+      ],
+      "length": 5,
+      "lockstep_schedule_key": "nested coarse=(axis,owner[axis] mod 2), then fine=owner parities on remaining axes in ascending global-axis order",
+      "macro_routed_depth_range": [
+        5896,
+        8200
+      ],
+      "packet_bank_pair_overlap_pairs": 0,
+      "resource_bank_pair_overlap_pairs": 0,
+      "retained_spatial_current_M2_per_seam": 1,
+      "route_policy": "declared coframe-returned replacement",
+      "same_color_footprint_support_collisions": 0,
+      "same_color_macro_pairs": 1878,
+      "seams": 300,
+      "spatial_output_geometry_failures": {
+        "duplicate_output_sites": 0,
+        "native_aux_collisions": 0,
+        "packet_aliases": 0
+      },
+      "spatial_output_local_coordinate": [
+        0,
+        0,
+        3
+      ],
+      "total_resource_M2_per_seam": 60,
+      "used_packet_M2_per_seam": 59,
+      "used_packet_union_M2": 17700,
+      "used_resource_union_M2": 18000
+    }
+  ],
+  "interpretation_firewall": "not autonomous recurrence; colors/factors/padding/routes/addresses are not time, ticks, occurrences, Events, Records, Born histories, sources, or gravity; unit occupation current is not energy, mass, calibrated source density, or gravity",
+  "mass_contact": {
+    "QR_off_diagonal_residual": 9.058932439513524e-16,
+    "QR_reconstruction_residual": 9.774239351035397e-16,
+    "coin_unitarity_residual": 1.2236950713340232e-15,
+    "contact_fixture_pass": true,
+    "contact_residual": 1.8610729195778454e-15,
+    "mass_difference": 1.1102230246251565e-16,
+    "mass_fixture_pass": true,
+    "scope": "inherited unchanged Cycle870/Cycle871 factor fixtures and phase ledger; not a new integrated-epoch spectrum"
+  },
+  "noncommuting_stage_reorder_control": {
+    "commutator_residual": 0.18394653352804122,
+    "detected": true,
+    "mutation": "move a seam factor across a noncommuting contact factor",
+    "witness": [
+      0,
+      0
+    ]
+  },
+  "open_boundaries": [
+    "causal orientation remains supplied and is not derived from spatial direction",
+    "later-epoch fresh address/reset/renewal/genesis remains supplied or open",
+    "four-rail allocator is a separate geometric candidate; no transported packet word claimed",
+    "every coupling and physical scale for the unit-weight current remains supplied"
+  ],
+  "physical_epoch_stream": {
+    "augmented_seam_factors": 12,
+    "cells": 8,
+    "construction_failure_census": {
+      "NN_support": 0,
+      "active_gate_count": 0,
+      "active_matrix_binding": 0,
+      "active_operand_binding": 0,
+      "factor_binding": 0,
+      "factor_count": 0,
+      "factor_sequence": 0,
+      "gate_arity": 0,
+      "instruction_serial": 0,
+      "landed_nonseam_route_policy": 0,
+      "matrix_digest_collision": 0,
+      "physical_gate_serial": 0,
+      "rotation_coverage": 0,
+      "route_endpoint": 0,
+      "seam_factor_lookup": 0,
+      "seam_route_policy": 0,
+      "seam_segment_actual_word": 0,
+      "spectator_permutation_return": 0,
+      "stage_order": 0,
+      "unsupported_instruction_arity": 0
+    },
+    "deletion_control_scope": "delete the first forward SWAP of every nontrivial returned route; not exhaustive over arbitrary SWAP positions",
+    "execution_scope": "exact local gate matrices plus global serial composition/order; no global statevector or global matrix execution",
+    "factor_manifest_sha256": "653f27706716823d46d8c9395aed8cd55ab4c1750bf8ee12285fcd85771b2878",
+    "factor_order": "exact Cycle870 serial factor order",
+    "factor_stage_census": {
+      "coin": 120,
+      "contact": 120,
+      "reverse": 72,
+      "seam": 12
+    },
+    "first_forward_swap_deletion_detections": 18440,
+    "instruction_binding_sha256": "82afe2bdc537566a6cafc2691ff35df658e410ca37f2444074127689c00a117d",
+    "instruction_label_scope": "kind strings are diagnostic compiler labels; independent comparison uses the label-insensitive binding digest over factors, rotations, segments, sites, exact matrices, paths, and gate ranges",
+    "label_insensitive_instruction_binding_sha256": "c03fbd9503bcfda2cabb319f48ccb83d93db9b53f8c5aa7dd51859bdc1fff629",
+    "length": 2,
+    "matrix_registry_entries": 77,
+    "matrix_registry_sha256": "e2f7cf72a9bb1288db9f3d89f4677d4f77625cc23c4f6790c22cb268cfebf091",
+    "native_factor_sha256": "6084e8496a814e9ef8992991464fa0c5704068ccf459ec5112956b76e0dcc907",
+    "native_factors": 324,
+    "native_rotations": 1392,
+    "nonseam_route": "landed C707/C655 global-axis Manhattan returned route",
+    "normalized_physical_gate_sha256": "a178a1f221afd8fe8ad8aacac1cd61024f94c11eb5fe58eb75defa4d674e97b1",
+    "physical_gate_role_census": {
+      "active_one_site": 8300,
+      "active_two_site": 18468,
+      "swap_forward": 97076,
+      "swap_return": 97076
+    },
+    "physical_gate_stage_census": {
+      "coin": 61968,
+      "contact": 50824,
+      "reverse": 33216,
+      "seam": 74912
+    },
+    "physical_local_gates": 220920,
+    "seam_route": "declared Cycle872 local-coframe returned replacement",
+    "serialized_stream_bytes": 54280409,
+    "serialized_stream_sha256": "cce30b815236924eaa212eccdecb9f7aaf6f49f6f33a07cd1fac65e5480c894b",
+    "spectator_statement": "identity label permutation with intended operands at every active gate; therefore exact on arbitrary dirty or entangled spectator states",
+    "unrouted_bound_instructions": 26768
+  },
+  "physical_macro_mutations": {
+    "NN_failures": 0,
+    "canonical_routed_macro_sha256": "29d9a1d5794b23c29c4c93f0214895087ac82256fe8d148bb577eb279a1f7989",
+    "seam_deleted_routed_macro_sha256": "e765f3978cdc64dd253dbdcd313bae5abf5abed325647c4d5a5b89f91523606f",
+    "seam_deletion_digest_detections": 12,
+    "seams": 12,
+    "semantic_supported_rows": "reported in spatial_direction",
+    "shape": [
+      2,
+      2,
+      2
+    ],
+    "wrong_side_digest_detections": 12,
+    "wrong_side_routed_macro_sha256": "da96154459e553d0935a75782dd9e56d8eb1e6a37c8703d84b29886c7d650188"
+  },
+  "provenance": {
+    "declared_inputs": [
+      "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+      "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+      "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+      "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+      "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+      "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+      "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+      "scripts/frontier_cycle703_local_cellular_plaquette_decoder_2026_07_25.py",
+      "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
+      "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+      "scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py",
+      "scripts/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py",
+      "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+      "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+      "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+      "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+      "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+      "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+      "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+      "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+      "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py",
+      "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py",
+      "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+      "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py",
+      "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+      "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+      "scripts/frontier_full128_code_projectors_2026_07_24.py",
+      "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+      "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+      "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+      "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+      "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+      "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+      "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+      "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+      "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+      "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+      "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+      "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+      "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+      "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+      "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+      "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+      "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+      "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py"
+    ],
+    "dependency_surface": "complete local Python import closure plus dynamically loaded Cycle870 placement and Cycle610/611 modules",
+    "input_sha256": {
+      "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+      "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+      "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+      "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+      "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+      "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+      "scripts/frontier_cycle703_local_cellular_plaquette_decoder_2026_07_25.py": "2d9618ab1c50448f4bd611826c3f265bb8985878a5d76d01d3b78d793d3635d0",
+      "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py": "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4",
+      "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py": "781823cf744be93de73f5e86e4e4cc988e0e7fe19c9c88a264b6f58169c07b0e",
+      "scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py": "833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245",
+      "scripts/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py": "5dab64cd17ead6cb5062eab9266b9206d74bb608dcc22f3a1132ee1f1af3e9a9",
+      "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py": "4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a",
+      "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69",
+      "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py": "b42ea07c1ed671b9cbab38bc38eba6f8166fe65be52295941a95e3ed75049abf",
+      "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3",
+      "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py": "3aa964a6eaca559048a53de580f39d9295a3e4b41ef9d4ff9dcdd4d3ff7444a7",
+      "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py": "5d49d85ddbc4daddfc0b24737dc569eaa9f32a050f5fccf48f048fe0fdd74b40",
+      "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py": "d74fb32e21879b2a843eae822c8e71b950729d9dc295eaf336911f174cceee3a",
+      "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a",
+      "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
+      "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+      "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+      "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py": "6645156635b4354d937759a28e71215121a19cefcc2f294a2791e6a84cf1423b",
+      "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
+      "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0",
+      "scripts/frontier_full128_code_projectors_2026_07_24.py": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44",
+      "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195",
+      "scripts/frontier_full128_cycle_encoder_2026_07_24.py": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
+      "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb",
+      "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py": "05cb2f6083cf6c4307c04284632e991b7fd7378cbd2a4eb08a52d5e3c7ae6b99",
+      "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480",
+      "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+      "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+      "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py": "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8",
+      "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py": "67aa2435d66fb34b6734cc564a82ac839525139fdc9e8c347dc1b2277d08b40b",
+      "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": "ef6805e691a1ddd303a96f7cabd7000517e0cf33d5b1c577b20c2cbbf29aca23",
+      "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": "4ef60441d31d62b1fc61c9b5e09ff3bc8f7f32d1b68bc3c548834431d24302f6",
+      "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+      "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": "a9786cf68a9c669e7e7fe310a00ab9912aa404689651682ccfe3045a06e357f1",
+      "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b",
+      "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+      "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+      "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011"
+    },
+    "literal_dependency_pin_count": 45,
+    "missing_inputs": [],
+    "pin_failures": {},
+    "runner_sha256": "39f777c22707a6bba92b07367e5fc9ec945f55cd72f5df85148a52b915de757f",
+    "theorem_note": "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+    "theorem_note_pin_failure": false,
+    "theorem_note_sha256": "f8ef1a6951f9fdc62cfaa70c73b279d57ffd1e855d3c21c3cf1178270c1d2dd9"
+  },
+  "schema": "cycle872-all-seam-spatial-packet-epoch-v1",
+  "spatial_direction": {
+    "ORIENT_overload_detected": 6144,
+    "causal_orientation": "supplied and retained in ORIENT; PORIENT carries the fully enabled projection",
+    "dirty_spatial_input_detected": 24576,
+    "enabled_domain_simplification": "with BINDER=ACTUAL=ADMISS=LAW=FRESH=1 only, PORIENT=POINTER AND ORIENT",
+    "exact_packet_equation": "PORIENT = POINTER AND BINDER AND ACTUAL AND ADMISS AND LAW AND FRESH AND ORIENT",
+    "exact_packet_equation_rows": 128,
+    "failure_census": {
+      "causal_ORIENT_return": 0,
+      "causal_packet_projection": 0,
+      "current_decode": 0,
+      "exact_packet_ORIENT_return": 0,
+      "exact_packet_equation": 0,
+      "one_hot": 0,
+      "pointer": 0,
+      "scratch": 0,
+      "spatial_output": 0,
+      "work_return": 0
+    },
+    "moving": 12288,
+    "output_type": "spatial direction / unit-weight number-resource current",
+    "packet_reuse_without_reset_changed_bits": 21,
+    "packet_reuse_without_reset_detected": true,
+    "rows": 24576,
+    "seam_deletion_detected": 12288,
+    "spatial_causal_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "spatial_current_decode": "j_e = 2*r_u_to_v - pointer = r_u_to_v-r_v_to_u",
+    "spatial_output_register": "one separate retained M2 per seam",
+    "u_to_v": 6144,
+    "v_to_u": 6144,
+    "wrong_side_detected": 12288
+  },
+  "status": "pass",
+  "supplied_structures": [
+    "pinned Cycle870 graph/carriers/factor stream/coin/contact/non-seam route/phase representative",
+    "declared coframe-returned replacement route for augmented seam-stage instructions",
+    "one clean 59-wire own packet bank plus one blank retained spatial-current M2 per seam",
+    "blank packet payload and work; head; rotor; fixed address",
+    "binder; actuality; admissibility; law-domain; fresh controls",
+    "causal orientation supplied and retained in Cycle714 ORIENT; PORIENT obeys the full seven-factor enabled projection equation",
+    "separate candidate D4-closed four-rail orbit subset and register/rail representation",
+    "one declared update-epoch boundary"
+  ],
+  "used_epoch_passive_covariance": {
+    "frame_path_failures": 0,
+    "frame_path_rows": 10488,
+    "ordered_frame_products": 576,
+    "path_product_failures": 0,
+    "path_product_rows": 251712,
+    "proper_frames": 24,
+    "representative_axes": 3,
+    "retained_spatial_current_M2_per_seam": 1,
+    "scope": "passive coordinate/program/declared-coframe-route representation; not active covariance of the single-rail allocator",
+    "signature_product_failures": 0,
+    "signature_product_rows": 551808,
+    "total_resource_M2_per_seam": 60,
+    "used_packet_M2_per_seam": 59
+  }
+}

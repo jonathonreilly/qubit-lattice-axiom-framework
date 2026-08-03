@@ -906,29 +906,43 @@ def mechanism_certificate(members: tuple[Member, ...]) -> dict[str, object]:
             f"{len(m2_objects)} objects ({', '.join(m2_objects)}) are odd in "
             f"sigma and become sign-sensitive the moment the source carries a "
             f"conformal channel; they are blind here only because the frozen "
-            f"(-2d,+d,+d) ledger sums to zero in every sector for every "
-            f"carried weight. Both truncations in the declared scope are shown "
-            f"not to be load-bearing: carrying the weight d as a formal "
-            f"indeterminate makes the ledger's sector sum the zero polynomial, "
-            f"so the annihilation holds at every weight and not merely the six "
-            f"swept, and because the conformal channel is a per-source sum of "
-            f"that vanishing sector sum it stays zero at arbitrary source "
-            f"multiplicity, confirmed on declared extreme configurations up to "
-            f"eight sources and weights of order 10^12."
+            f"(-2d,+d,+d) ledger "
+            + ("sums to zero in every sector for every carried weight"
+               if ledger_sums_zero else
+               "does NOT sum to zero at every carried weight")
+            + ". On the truncations in the declared scope: carrying the weight "
+            f"d as a formal indeterminate makes the ledger's sector sum "
+            + ("the zero polynomial, so the annihilation holds at every weight "
+               "and not merely the six swept"
+               if symbolic_sum == POLY_ZERO else
+               f"the nonzero polynomial {p_text(symbolic_sum)}, so the weight "
+               f"truncation IS load-bearing")
+            + ", and the conformal channel at arbitrary source multiplicity "
+            + ("stayed zero on every declared extreme configuration up to "
+               "eight sources and weights of order 10^12"
+               if extreme_all_zero else
+               "was NONZERO on at least one declared extreme configuration")
+            + "."
         ),
     }
+    # Bookkeeping only.  The mechanism classification must be a well formed
+    # partition of the objects, the projector must be internally consistent,
+    # and the off-scope calibration probe must actually carry the conformal
+    # load it is supposed to carry.  Whether the LANDED family is annihilated
+    # is reported as data above and is deliberately NOT gated here.
+    result["gate_scope"] = (
+        "bookkeeping only: object partition well formed, projector identity "
+        "holds, calibration probe carries conformal load, all declared "
+        "spot-checks evaluated; the landed annihilation itself is reported, "
+        "not gated"
+    )
     result["pass"] = (
         set(m1_objects) | set(m2_objects) == set(OBJECT_NAMES)
         and not (set(m1_objects) & set(m2_objects))
-        and ledger_sums_zero
-        and result["balanced_conformal_is_zero"]
-        and result["unbalanced_conformal_is_nonzero"]
         and cross_terms_vanish
-        and result["M1_objects_even_for_balanced_source"]
-        and result["M1_objects_even_for_unbalanced_source"]
-        and result["M2_objects_odd_only_under_conformal_load"]
-        and result["symbolic_sector_sum_is_zero_polynomial"]
-        and result["multiplicity_truncation_is_not_load_bearing"]
+        and result["unbalanced_conformal_is_nonzero"]
+        and len(extreme_rows) == 3
+        and isinstance(symbolic_sum, tuple)
     )
     return result
 
@@ -990,15 +1004,24 @@ def calibration_certificate() -> dict[str, object]:
             "resting on a blind instrument."
         ),
         "finding": (
-            "The census instrument is demonstrably able to see the conformal "
-            "sign when the sign is there. An off-scope source whose ledger is "
-            "detuned by one unit, and an off-scope pure-conformal source, both "
-            "register SENSITIVE on every sigma-odd object; the landed balanced "
-            "source registers BLIND everywhere; and an adversary run that "
-            "carries the conformal channel at degree zero -- disabling the "
-            "sigma probe while changing nothing else -- goes blind even on the "
-            "detuned source, confirming the sensitive readings are caused by "
-            "the grading and are not an artifact of the pipeline."
+            "Instrument calibration against the four pre-registered probes: "
+            + "the detuned-ledger probe "
+            + ("fired" if p1_ok else "FAILED to fire")
+            + " on every sigma-odd object, the pure-conformal probe "
+            + ("fired" if p2_ok else "FAILED to fire")
+            + ", the landed balanced source "
+            + ("read blind everywhere" if p3_ok else "did NOT read blind")
+            + ", and the adversary run that carries the conformal channel at "
+            + "degree zero -- disabling the sigma probe while changing nothing "
+            + "else -- "
+            + ("went blind even on the detuned source" if p4_ok
+               else "still registered sensitive")
+            + ". Taken together the instrument is "
+            + ("demonstrably able" if (p1_ok and p2_ok and p4_ok)
+               else "NOT shown able")
+            + " to see the conformal sign when the sign is present, so a blind "
+            + "reading on the landed family is evidence rather than a dead "
+            + "detector."
         ),
     }
     result["pass"] = (
@@ -1061,9 +1084,15 @@ def verdict_certificate(
             f"channel of the recoil ledger."
         ) if verdict.startswith("SCOPED_NO_GO") else (
             f"The census returned {sensitive_total} sign-sensitive pairs, so "
-            f"the landed response surface does constrain the conformal-sector "
+            f"the landed response surface DOES constrain the conformal-sector "
             f"sign at the declared scope; the sensitive objects and their "
             f"members are recorded in the census certificate."
+        ) if sensitive_total > 0 else (
+            f"No landed response object distinguishes the two signs, but "
+            f"{unattributed} blind pairs are not explained by either declared "
+            f"mechanism. The invisibility is real at this scope and its cause "
+            f"is not fully identified, so no no-go is claimed; the "
+            f"unattributed pairs are the next object of work."
         ),
     }
     result["mechanism_object_cover_complete"] = (

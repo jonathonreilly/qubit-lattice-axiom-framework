@@ -42,8 +42,11 @@ worktrees:
   c5-born: blockQ1 SHIPPED as PR #5932 — event space certified (92,260 events,
     atoms singleton, refinement lattice); five admissible weightings, all
     pairs discriminate; nothing selected; exclusion boundary byte-quoted
-  c5-b4: T2 (Cycle 879, the B=4 relation-family run — the B-AXIS map's
-    largest open row; stacked on blockB1) — running
+  c5-b4: blockT2 SHIPPED as PR #5936 — B=4: translation law strengthens
+    (5,085/5,085); within-key exhaustion persists weakened (9 non-identity);
+    THE ORBIT LAW BREAKS at P=11 (16 clocks, gated both ways)
+  c5-p11: T3 (Cycle 881, the P=11 characterization — mechanism, incidence,
+    leg-(ii) adjudication of the new exception sets; stacked on T2) — running
   c5-baxis: blockB1 SHIPPED as PR #5930 — B-AXIS discharge map (6 at-scope /
     5 open / 1 permanent); premise NOT promoted; full-corpus law 1328/1328
     with residue 229 named; hermetic double-pinned evidence

@@ -1,0 +1,82 @@
+==============================================================================
+CYCLE 882 INDEPENDENT CHECK -- SPEC'D TO REFUTE
+==============================================================================
+
+[PASS] CA_PINS_AND_QUOTES
+       5 artifacts pinned; 15 checker-only quotation spans and all 28 of the
+       primary's own spans were found character for character.
+
+[PASS] CB_INDEPENDENT_READOUT_SPACE
+       Group averaging gives an idempotent of exact trace 1, so the C3-covariant
+       additive readout space is one dimensional and spanned by the orbit sum --
+       the primary's RREF nullspace result reproduced by a disjoint route.
+
+[PASS] CC_ADVERSARIAL_ALPHA_SWEEP
+       47 rationals disjoint from the primary's set, including 5 deliberate
+       near-misses of the target, all satisfy the symmetry-only constraints with
+       zero violations.
+
+[PASS] CD_DEGREE_HOMOGENEOUS_REFUTATION   verdict: NOT REFUTED
+       25 single-degree homogeneous constraints were driven against a 59-point
+       rational grid; every solution set contained zero and none was a nonzero
+       singleton. The dichotomy survives on its proper domain.
+
+[PASS] CE_NONLINEAR_SCOPE_REFUTATION   verdict: REFUTED AT THE LOOSE READING
+       4 explicit counterexamples to the loose reading, 1 of which reach the
+       target member. The primary's theorem statement needs the single-degree
+       qualification; its computed content is unaffected because its library is
+       linear throughout.
+
+[PASS] CF_BILINEAR_RECORD_ROUTE   verdict: REACHES BUT DOES NOT SELECT
+       A route absent from the primary was constructed and driven: it reaches the
+       target with record sizes (1, 27, 2) and reaches 4479 distinct members in
+       all, including 7 of 18 positive checker alphas -- so it selects nothing.
+
+[PASS] CG_IDENTITY_OBSTRUCTION_REFUTATION   verdict: NOT REFUTED
+       200 anchor libraries searched across five generators, four exponent
+       windows and both group and semigroup closure; 0 lacked the identity and 0
+       selected the target uniquely.
+
+[PASS] CH_TWO_ADIC_SCOPE_BOUNDARY   verdict: NOT REFUTED
+       Across an 81-point exponent window the cardinality group holds a single
+       2-adic valuation [0] and never reaches the target; admitting copy
+       multiplicity 2 as a generator reaches it immediately, which locates the
+       scope boundary exactly.
+
+[PASS] CI_INTENSIVITY_REFUTATION   verdict: NOT REFUTED
+       16 relaxed intensivity laws were solved exactly; each gave either the zero
+       member alone or the whole line, and none isolated the target.
+
+[PASS] CJ_TERMINAL_EQUIVALENCE_REFUTATION   verdict: NOT REFUTED
+       Both directions recomputed on 5 probe records, including partial and
+       weighted orbits the primary did not use; exactly 1 alpha is consistent
+       with the lemma, so the EQUIVALENT classification stands.
+
+[PASS] CK_PRIMARY_AGREEMENT
+       All 9 recorded quantities in the primary's receipt were recomputed here by
+       independent routes and agreed.
+
+------------------------------------------------------------------------------
+REFUTATION LEDGER
+------------------------------------------------------------------------------
+  CD_DEGREE_HOMOGENEOUS_REFUTATION       NOT REFUTED
+  CE_NONLINEAR_SCOPE_REFUTATION          REFUTED AT THE LOOSE READING
+  CF_BILINEAR_RECORD_ROUTE               REACHES BUT DOES NOT SELECT
+  CG_IDENTITY_OBSTRUCTION_REFUTATION     NOT REFUTED
+  CH_TWO_ADIC_SCOPE_BOUNDARY             NOT REFUTED
+  CI_INTENSIVITY_REFUTATION              NOT REFUTED
+  CJ_TERMINAL_EQUIVALENCE_REFUTATION     NOT REFUTED
+
+------------------------------------------------------------------------------
+NEW ROUTE FOUND BY THIS CHECKER
+------------------------------------------------------------------------------
+  bilinear Record relation I(R1) I(R2) = I(R3)
+  target reachable: True at s1=1, s2=27, s3=2
+  distinct members reachable: 4479
+  selects: False
+
+==============================================================================
+CYCLE 882 INDEPENDENT CHECK: ALL PASS
+==============================================================================
+
+controls: deterministic=True runtime=0.151046s stdout=4135B cache=ab4d4552de99b727

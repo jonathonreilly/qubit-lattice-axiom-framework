@@ -15,7 +15,8 @@ worktrees:
     restore-class contrast); checker reconciled, zero refutations
   c5-gravity: blockG1 SHIPPED as PR #5923 — scoped no-go (sign invisible to
     the response surface; M1/M2 mechanisms; escapes named); N1-N8 in note
-  c5-clocks: wave1 local-clock relation (blockT1, Cycle 869) — worker running
+  c5-clocks: blockT1 SHIPPED as PR #5925 — within-key priced negative;
+    cross-key time-translation law 632/632; periods = whole orbits
   c5-census: blockN1 SHIPPED as PR #5921 — general-n census law
   c5-g2: gravity axiom-up G2 (Cycle 871, source-action bridge pricing) — running
   c5-g3: gravity axiom-up G3 (Cycle 872, sigma-linear admissibility) — running

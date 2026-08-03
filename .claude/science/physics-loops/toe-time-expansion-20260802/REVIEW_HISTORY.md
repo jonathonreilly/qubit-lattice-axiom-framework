@@ -1,5 +1,23 @@
 # Campaign 5 review history — toe-time-expansion-20260802
 
+## Cycle 869 — local-clock relation (blockT1, PR #5925) — 2026-08-03
+
+- Worker: Claude Opus 5 (substitution disclosed). Supervisor review:
+  family grammar F1..F4 with declared caps and closure line;
+  substantive floor (>= 8 events) and identity-like split
+  (c=0/d=0/s=1 containment != law); witness re-verification; across-key
+  gap-word bucketing with per-edge offset confirmation. Caches: 8/8 +
+  7/7 gates, checker corpus sha equal, kernel replay 12 keys zero
+  mismatches.
+- Checker forced three real mid-cycle corrections (saturation ladder;
+  period tail window; F3P class) — the load-bearing-residual pattern,
+  third time this window.
+- Result: within-key priced negative (1/480 substantive tick-moving
+  dictionary); across-key exact time-translation law (632/632 nonzero
+  offsets); periods all whole 19-station orbits.
+- Local disposition: **pass** (ship as bounded_theorem; independent
+  audit still required).
+
 ## Cycle 870 — general-n census law (blockN1, PR #5921) — 2026-08-03
 
 - Worker: Claude Opus 5 (substitution: codex quota exhausted until

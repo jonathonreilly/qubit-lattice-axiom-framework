@@ -1,0 +1,58 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor review of the normal form, the route ledger, the visibility set, and the R9 joint system's framing",
+ "block": "toe-time-blockG5-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "checker": "5 attacks mounted, 0 refutations, 15/15 receipt checks, 4/4 tamper simulations bite",
+  "primary": "8/8 PASS"
+ },
+ "claim_type": "bounded_theorem",
+ "cluster_cap_evaluation": "OPEN \u2014 5th gravity-family PR: the provenance census, the one-rational pricing, the finite visibility set, and the R9 joint-selection finding are the ladder's conclusion; nothing here is a corollary of #5923/#5926/#5927/#5928",
+ "cycles": [
+  876
+ ],
+ "decision_surface": [
+  "derive-later (conditional weakens to t not in {-1,+1})",
+  "adopt (1,1,1) as named convention (unique lawful-support maximiser for; R9 against)",
+  "retire-by-generalization (cheapest; blindness restates upward)"
+ ],
+ "files": {
+  "docs/UNIT_GRADING_PROVENANCE_CYCLE876_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "a6cdfcfa613b0e04fbc654059d782cdf5f9ddf61",
+   "sha256": "d357c45ce0b98566ec892e7c253995d8524722e9a15ed5a19dfa10bbcf8f6125"
+  },
+  "logs/runner-cache/frontier_cycle876_grading_independent_check_2026_07_28.txt": {
+   "git_blob": "ad0e9968e5f88dc0435a009843d858e885f25804",
+   "sha256": "e051260402f128217cf9ab0ab93a41b62bc6fc1aa76ffdeafa96d6caa7ef2078"
+  },
+  "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt": {
+   "git_blob": "7da6d729c1abc6ad3bb17c019cbb2efa67b0f69e",
+   "sha256": "80a7698ef64e3bd1e3a45ed37eed784cf004cbfdad244f3d5bf8a7343f9b107f"
+  },
+  "outputs/unit_grading_independent_check_cycle876_receipt_2026_07_28.json": {
+   "git_blob": "4345656b18b6958f536b1b593ecf9889a127d6a5",
+   "sha256": "9fff8cf30d152f91abea56ce6d91568ee3d7a19cf7c6d03269cff198a0578ce6"
+  },
+  "outputs/unit_grading_provenance_cycle876_receipt_2026_07_28.json": {
+   "git_blob": "bb49938e1fa9552b2d8d55f62032e710b454f58b",
+   "sha256": "338f7e085473e87192acf9b881978939b08a5a52d3d63442e3647b022ea18b78"
+  },
+  "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py": {
+   "git_blob": "f61f0d2b7869672d66d346ffb7679e697c6d8940",
+   "sha256": "95acbb56e2c2e3d54fd04c80d444716c4620734849d8048c008b9d582722ce1f"
+  },
+  "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py": {
+   "git_blob": "58a709ebc3cd2f6a5a2220fdaebd970c4694495f",
+   "sha256": "1e13e4c6332c7d6c7798fb4d7366db8a94037eefba6e77ac1c3dd0d269cf7b39"
+  }
+ },
+ "headline": "unit grading SUPPLIED (13 sites, zero primitive backing, the axiom node's own disclaimer); residue after R1 equivariance + R3 gauge = ONE rational t; sigma visible only at t in {-1,+1}; unit point unique lawful-support maximiser; R9: the joint landed constraint set selects (1,2,0) \u2014 t=+1, where sigma IS visible",
+ "independence": "cross-context (checker rebuilt the sweep without the normal form: 436,752 componentwise solves; 4 extra route families; 18 adversarial rationals incl. t = 1 +/- 1/1000)",
+ "note": "docs/UNIT_GRADING_PROVENANCE_CYCLE876_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "runtime_seconds": {
+  "checker": 22.3,
+  "primary": 4.5
+ }
+}

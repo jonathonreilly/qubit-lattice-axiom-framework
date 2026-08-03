@@ -1342,37 +1342,6 @@ def terminate_workers(jobs: list[dict]) -> None:
             job["log_handle"].close()
 
 
-def schema_repair_guidance(blob: dict, validator_error: str | None) -> str:
-    """Render exact, judgment-preserving guidance for known schema errors."""
-    if not validator_error:
-        return ""
-    match = re.fullmatch(
-        r"N8 echo (\d+)\.disposition must name its indexed mechanism",
-        validator_error,
-    )
-    if match:
-        index = int(match.group(1)) - 1
-        packet = blob.get("no_go_discipline")
-        echoes = (
-            packet.get("N8_cross_cycle_echo", {}).get("echoes")
-            if isinstance(packet, dict)
-            else None
-        )
-        if isinstance(echoes, list) and 0 <= index < len(echoes):
-            echo = echoes[index]
-            mechanism = echo.get("mechanism") if isinstance(echo, dict) else None
-            if isinstance(mechanism, str) and mechanism.strip():
-                quoted = json.dumps(mechanism, ensure_ascii=False)
-                return (
-                    "\nMechanical repair guidance: preserve every judgment and "
-                    f"copy the exact mechanism string {quoted} verbatim into "
-                    f"N8_cross_cycle_echo.echoes[{index}].disposition. The "
-                    "validator requires that exact normalized substring; do not "
-                    "paraphrase it or change the mechanism field.\n"
-                )
-    return ""
-
-
 def _wait_for_packet_completion(proc: subprocess.Popen) -> tuple[bool, int]:
     """Wait for packet repair, killing promptly when the committer is cancelled."""
     deadline = time.monotonic() + PACKET_COMPLETION_STALL_SECONDS
@@ -1435,7 +1404,6 @@ def packet_completion_pass(
     error_block = (
         "\nThe validator rejected the previous packet with EXACTLY this "
         f"error — fix precisely this, nothing else:\n    {validator_error}\n"
-        f"{schema_repair_guidance(blob, validator_error)}"
         if validator_error
         else ""
     )
@@ -1641,6 +1609,15 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
         "transport_bounded_n8": job["transport_bound"] is not None,
     }
     error = audit_runner.validate_verdict(blob, cid, **validation_args)
+    n8_mechanism_bindings: list[dict[str, object]] = []
+    while error:
+        binding = audit_runner.bind_n8_indexed_mechanism_disposition(
+            blob, str(error)
+        )
+        if binding is None:
+            break
+        n8_mechanism_bindings.append(binding)
+        error = audit_runner.validate_verdict(blob, cid, **validation_args)
 
     def _packet_error(err: object) -> bool:
         return bool(re.search(
@@ -1730,6 +1707,8 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     temporary.write_text(json.dumps(envelope, sort_keys=True), encoding="utf-8")
     temporary.replace(job["delivery"])
     result = {**base, "result": "delivery_validated"}
+    if n8_mechanism_bindings:
+        result["n8_mechanism_binding_count"] = len(n8_mechanism_bindings)
     if optional_packet_dropped:
         result["detail"] = "invalid optional development-tier no_go_discipline dropped"
     return envelope, result

@@ -2939,6 +2939,67 @@ def bind_authenticated_n6_candidate_locators(
     return changes
 
 
+_N8_MECHANISM_DISPOSITION_ERROR = re.compile(
+    r"N8 echo (\d+)\.disposition must name its indexed mechanism"
+)
+
+
+def bind_n8_indexed_mechanism_disposition(
+    blob: dict,
+    validation_error: str | None,
+) -> dict[str, object] | None:
+    """Append one exact, redundant N8 mechanism binding after its rejection.
+
+    The auditor already selected both the indexed ``mechanism`` and the
+    scientific ``disposition``. This repair copies that same mechanism into
+    the same echo's disposition only when the canonical validator returns the
+    exact verbatim-binding error. It changes no retirement, applicability,
+    addressed, lifecycle, verdict, or packet-gate judgment, and the complete
+    packet is always revalidated by the caller.
+
+    Keeping this deterministic avoids spending another model call on a
+    formatting defect while preserving the strict validator unchanged.
+    """
+    if not isinstance(validation_error, str):
+        return None
+    match = _N8_MECHANISM_DISPOSITION_ERROR.fullmatch(validation_error)
+    if match is None:
+        return None
+    packet = blob.get("no_go_discipline")
+    section = (
+        packet.get("N8_cross_cycle_echo")
+        if isinstance(packet, dict)
+        else None
+    )
+    echoes = section.get("echoes") if isinstance(section, dict) else None
+    index = int(match.group(1)) - 1
+    if not isinstance(echoes, list) or not 0 <= index < len(echoes):
+        return None
+    echo = echoes[index]
+    if not isinstance(echo, dict):
+        return None
+    mechanism = echo.get("mechanism")
+    disposition = echo.get("disposition")
+    if not all(
+        isinstance(value, str) and value.strip()
+        for value in (mechanism, disposition)
+    ):
+        return None
+    if no_go_discipline_gate._norm(mechanism) in no_go_discipline_gate._norm(
+        disposition
+    ):
+        return None
+    echo["disposition"] = (
+        disposition + "\nIndexed mechanism (verbatim): " + mechanism
+    )
+    return {
+        "section": "N8_cross_cycle_echo",
+        "index": index + 1,
+        "field": "disposition",
+        "operation": "append_exact_indexed_mechanism",
+    }
+
+
 def compute_required_reason(reply: str | None) -> str | None:
     """Accept only the governed compute-required escape protocols.
 
@@ -4002,6 +4063,28 @@ def main() -> int:
                 expected_invocation_id=audit_invocation_id,
                 transport_bounded_n8=transport_bound is not None,
             )
+            n8_mechanism_bindings: list[dict[str, object]] = []
+            while err:
+                binding = bind_n8_indexed_mechanism_disposition(blob, err)
+                if binding is None:
+                    break
+                n8_mechanism_bindings.append(binding)
+                err = validate_verdict(
+                    blob,
+                    cid,
+                    source_requires_no_go=source_requires_no_go,
+                    evidence_manifest=exact_evidence_manifest,
+                    prior_claim_scope=prior_claim_scope_for_row(full_led_row),
+                    expected_invocation_id=audit_invocation_id,
+                    transport_bounded_n8=transport_bound is not None,
+                )
+            if n8_mechanism_bindings:
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "n8_indexed_mechanism_dispositions_bound",
+                        "bindings": n8_mechanism_bindings,
+                    }) + "\n")
             initial_validation_error = err
             routing_validation_error = err
             initial_rejected_blob = blob

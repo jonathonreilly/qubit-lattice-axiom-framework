@@ -1045,27 +1045,65 @@ class BatchExitSemanticsTest(unittest.TestCase):
 
 
 class SchemaRecoveryTest(unittest.TestCase):
-    def test_known_n8_failure_gets_exact_mechanism_repair_guidance(self):
+    def test_known_n8_failure_is_bound_without_a_completion_model_call(self):
         blob = {
+            "claim_id": "row",
             "no_go_discipline": {
                 "N8_cross_cycle_echo": {
                     "echoes": [
                         {
                             "mechanism": "projector-kernel obstruction",
-                            "disposition": "paraphrased obstruction",
+                            "disposition": (
+                                "The paraphrased obstruction remains applicable "
+                                "and is addressed by the current bounded scope."
+                            ),
                         }
                     ]
                 }
             }
         }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            raw = root / "raw.json"
+            raw.write_text(json.dumps(blob), encoding="utf-8")
+            job = {
+                "cid": "row",
+                "pass": 1,
+                "stalled": False,
+                "returncode": 0,
+                "raw_output": raw,
+                "row": {"claim_id": "row", "note_path": ""},
+                "evidence_manifest": {},
+                "invocation_id": "invocation",
+                "transport_bound": None,
+                "auditor": "test-auditor",
+                "independence": "cross_family",
+                "delivery": root / "delivery.json",
+                "workdir": root,
+                "isolated": root,
+            }
+            with mock.patch.object(
+                batch.audit_runner.no_go_discipline_gate,
+                "source_requires_no_go_discipline",
+                return_value=False,
+            ), mock.patch.object(
+                batch.audit_runner,
+                "validate_verdict",
+                side_effect=[
+                    "N8 echo 1.disposition must name its indexed mechanism",
+                    None,
+                ],
+            ), mock.patch.object(batch, "packet_completion_pass") as completion:
+                envelope, result = batch.finalize_worker(job)
 
-        guidance = batch.schema_repair_guidance(
-            blob,
-            "N8 echo 1.disposition must name its indexed mechanism",
-        )
-
-        self.assertIn('"projector-kernel obstruction"', guidance)
-        self.assertIn("copy the exact mechanism string", guidance)
+        completion.assert_not_called()
+        self.assertIsNotNone(envelope)
+        self.assertEqual(result["result"], "delivery_validated")
+        self.assertEqual(result["n8_mechanism_binding_count"], 1)
+        disposition = envelope["audit"]["no_go_discipline"][
+            "N8_cross_cycle_echo"
+        ]["echoes"][0]["disposition"]
+        self.assertIn("projector-kernel obstruction", disposition)
 
     def test_worker_503_is_typed_as_retryable_service_failure(self):
         with tempfile.TemporaryDirectory() as tmp:

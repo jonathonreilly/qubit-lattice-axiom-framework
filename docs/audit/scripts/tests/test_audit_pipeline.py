@@ -9587,6 +9587,27 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         _set_no_go_scan_coverage(packet, manifest)
         audit = {"claim_type": "no_go", "verdict": "audited_clean", "chain_closes": True, "no_go_discipline": packet}
         self.assertIsNone(m.validate_no_go_discipline(audit, evidence_manifest=manifest))
+        echo = packet["N8_cross_cycle_echo"]["echoes"][0]
+        echo["disposition"] = (
+            "The earlier selector obstruction is retired or inapplicable to "
+            "the current residual and therefore does not reopen this wall."
+        )
+        binding_error = m.validate_no_go_discipline(
+            audit, evidence_manifest=manifest
+        )
+        self.assertEqual(
+            binding_error,
+            "N8 echo 1.disposition must name its indexed mechanism",
+        )
+        runner = _import_codex_audit_runner()
+        self.assertIsNotNone(
+            runner.bind_n8_indexed_mechanism_disposition(
+                audit, binding_error
+            )
+        )
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
         packet["N8_cross_cycle_echo"]["echoes"][0]["mechanism"] = "invented unrelated mechanism"
         packet["N8_cross_cycle_echo"]["echoes"][0]["disposition"] = (
             "The invented unrelated mechanism is retired or inapplicable to the "
@@ -10237,6 +10258,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIn(
             "select a line meeting the same raw and normalized minimums that "
             "names an evidenced N2 wall",
+            template_flat,
+        )
+        self.assertIn(
+            "Copy each echo's complete `mechanism` string verbatim into that "
+            "same echo's `disposition`",
+            template_flat,
+        )
+        self.assertIn(
+            "a paraphrase does not satisfy the indexed binding",
             template_flat,
         )
         self.assertIn(
@@ -13591,6 +13621,69 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertIn(
             "changed preserved scientific field 'verdict'",
             m.validation_repair_preservation_error(rejected, repaired) or "",
+        )
+
+    def test_n8_mechanism_binding_is_exact_additive_and_narrow(self):
+        m = _import_codex_audit_runner()
+        mechanism = "projector-kernel obstruction from the indexed candidate"
+        disposition = (
+            "The earlier obstruction remains applicable and is addressed by "
+            "the current bounded treatment."
+        )
+        blob = {
+            "verdict": "audited_clean",
+            "no_go_discipline": {
+                "required": True,
+                "status": "PASS",
+                "N8_cross_cycle_echo": {
+                    "echoes": [{
+                        "candidate_id": "candidate-1",
+                        "mechanism": mechanism,
+                        "retired": False,
+                        "applicable": True,
+                        "addressed": True,
+                        "disposition": disposition,
+                    }],
+                },
+            },
+        }
+        before = json.loads(json.dumps(blob))
+
+        binding = m.bind_n8_indexed_mechanism_disposition(
+            blob,
+            "N8 echo 1.disposition must name its indexed mechanism",
+        )
+
+        self.assertEqual(
+            binding["operation"], "append_exact_indexed_mechanism"
+        )
+        expected = json.loads(json.dumps(before))
+        expected["no_go_discipline"]["N8_cross_cycle_echo"]["echoes"][0][
+            "disposition"
+        ] = disposition + "\nIndexed mechanism (verbatim): " + mechanism
+        self.assertEqual(blob, expected)
+        self.assertIn(
+            "changed preserved no-go scientific content",
+            m.validation_repair_preservation_error(before, blob) or "",
+        )
+
+        self.assertIsNone(
+            m.bind_n8_indexed_mechanism_disposition(
+                blob,
+                "N8 echo 1.disposition must name its indexed mechanism",
+            )
+        )
+        self.assertIsNone(
+            m.bind_n8_indexed_mechanism_disposition(
+                before,
+                "N8 echo 2.disposition must name its indexed mechanism",
+            )
+        )
+        self.assertIsNone(
+            m.bind_n8_indexed_mechanism_disposition(
+                before,
+                "N8 echo 1.addressed must be boolean",
+            )
         )
 
     def test_packet_completion_errors_get_typed_conclusion_free_codes(self):

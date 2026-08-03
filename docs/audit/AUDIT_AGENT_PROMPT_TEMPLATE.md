@@ -600,7 +600,7 @@ validator still requires substantive values whenever the condition applies.
         "retired": null,
         "applicable": "<true or false; decide for the current scope independently of retirement>",
         "addressed": true,
-        "disposition": "<40+ normalized characters explaining retirement/applicability and treatment>",
+        "disposition": "<copy this echo's complete mechanism verbatim, then use 40+ normalized characters to explain retirement/applicability and treatment>",
         "evidence_path": "<manifest path>",
         "evidence_locator": "<actual locator>"
       }
@@ -781,13 +781,15 @@ case-folded normalization, plus the route's complete
 `mechanism` and `attempt` verbatim. Copy
 `N7.resolution` byte-for-byte as one contiguous line from its independent
 resolution surface, and select a line meeting the same raw and normalized
-minimums that names an evidenced N2 wall. Do not paraphrase either field. N8 must bind
-each mechanism to its exact indexed candidate record. Copy known retirement
-state exactly; when the indexed `lifecycle_state` is `unknown`, preserve
-`retired` as JSON `null`. Applicability is a separate current-scope decision
-and must be boolean for PASS. Copy the complete authenticated no-go-row
-universe count and digest even though only relevance-selected candidates
-receive full echoes.
+minimums that names an evidenced N2 wall. Do not paraphrase either field. N8
+must bind each mechanism to its exact indexed candidate record. Copy each
+echo's complete `mechanism` string verbatim into that same echo's
+`disposition`, then explain its retirement, applicability, and treatment; a
+paraphrase does not satisfy the indexed binding. Copy known retirement state
+exactly; when the indexed `lifecycle_state` is `unknown`, preserve `retired` as
+JSON `null`. Applicability is a separate current-scope decision and must be
+boolean for PASS. Copy the complete authenticated no-go-row universe count and
+digest even though only relevance-selected candidates receive full echoes.
 FAIL narrowing must be a strict lexical subset that preserves logical polarity
 when the prior scope is supplied. For a blind re-audit carrying
 `WITHHELD_FOR_FRESH_CONTEXT`, derive the top-level scope only from the current

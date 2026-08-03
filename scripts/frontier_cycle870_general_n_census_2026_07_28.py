@@ -55,7 +55,7 @@ EXTERNAL_DECLARED_SCOPE = "K_EQ_2"
 
 BRUTE_N_MAX = 18
 LAW_SPOT_N_MAX = 14
-EXTENDED_N_MAX = 36
+EXTENDED_N_MAX = 40
 
 
 class _RunnerBlocker(importlib.abc.MetaPathFinder):

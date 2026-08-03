@@ -4459,6 +4459,48 @@ class CampaignContractTest(unittest.TestCase):
         self.assertNotIn("--coordinator", help_text)
         self.assertIn("--max-runtime-hours", help_text)
 
+    def test_batch_selection_skips_siblings_with_mutable_shared_dep(self):
+        targets = [
+            {"claim_id": "first", "deps": ["shared"]},
+            {"claim_id": "sibling", "deps": ["shared"]},
+            {"claim_id": "independent", "deps": ["other"]},
+        ]
+        with mock.patch.object(batch, "accepted", return_value=False):
+            selected = batch.selected_batch(targets, max_workers=2)
+
+        self.assertEqual(
+            [row["claim_id"] for row in selected],
+            ["first", "independent"],
+        )
+
+    def test_batch_selection_allows_shared_accepted_premise(self):
+        targets = [
+            {"claim_id": "first", "deps": ["axiom"]},
+            {"claim_id": "second", "deps": ["axiom"]},
+        ]
+        with mock.patch.object(
+            batch, "accepted", side_effect=lambda cid: cid == "axiom"
+        ):
+            selected = batch.selected_batch(targets, max_workers=2)
+
+        self.assertEqual(
+            [row["claim_id"] for row in selected],
+            ["first", "second"],
+        )
+
+    def test_batch_selection_preserves_multi_seat_capacity(self):
+        targets = [
+            {"claim_id": "critical", "criticality": "critical", "deps": []},
+            {"claim_id": "leaf", "criticality": "leaf", "deps": []},
+        ]
+        with mock.patch.object(batch, "accepted", return_value=False):
+            selected = batch.selected_batch(targets, max_workers=2)
+
+        self.assertEqual(
+            [row["claim_id"] for row in selected],
+            ["critical"],
+        )
+
     def test_packet_fingerprint_normalizes_transport_bounded_virtual_index(self):
         row = {"claim_id": "target", "deps": []}
         rows = {"target": row}

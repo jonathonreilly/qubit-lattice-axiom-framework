@@ -23,6 +23,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import audit_science_fingerprint
 import premise_nodes
 import ledger_io
 
@@ -86,6 +87,15 @@ def stdout_transport_reaudit_candidate(row: dict) -> tuple[bool, int | None]:
         and LEGACY_RUNNER_STDOUT_CHAR_LIMIT < stdout_chars <= RUNNER_STDOUT_CHAR_LIMIT,
         stdout_chars,
     )
+
+
+def audited_under_packet_policy(row: dict, packet_policy: dict[str, str]) -> bool:
+    """Whether the row's terminal audit already used this packet policy."""
+    snapshot = row.get("audit_state_snapshot")
+    if not isinstance(snapshot, dict):
+        return False
+    recorded = snapshot.get("packet_policy_fingerprint")
+    return isinstance(recorded, dict) and recorded == packet_policy
 
 CRITICALITY_RANK = {"critical": 3, "high": 2, "medium": 1, "leaf": 0}
 RATIFIED_DEP_STATUSES = {"retained", "retained_no_go", "retained_bounded"}
@@ -216,6 +226,7 @@ def sort_key(entry: dict) -> tuple:
 
 def build_payload(rows: dict[str, dict]) -> dict:
     """Return the canonical cache payload from current authoritative inputs."""
+    packet_policy = audit_science_fingerprint.packet_policy_fingerprint(REPO_ROOT)
     candidates: list[dict] = []
     runner_drift_candidates: list[dict] = []
     runner_stdout_transport_candidates: list[dict] = []
@@ -255,7 +266,9 @@ def build_payload(rows: dict[str, dict]) -> dict:
                     runner_drift_candidates.append(entry)
 
             transport_freed, stdout_chars = stdout_transport_reaudit_candidate(row)
-            if transport_freed:
+            if transport_freed and not audited_under_packet_policy(
+                row, packet_policy
+            ):
                 entry = candidate_entry(cid, row, rows, [])
                 entry["candidate_reason"] = (
                     "runner_stdout_transport_unclipped_by_head_tail_v2"
@@ -280,7 +293,7 @@ def build_payload(rows: dict[str, dict]) -> dict:
         entry["generated_order"] = idx
 
     return {
-        "policy": "reaudit_unblocked_v3_dep_runner_or_stdout_transport",
+        "policy": "reaudit_unblocked_v4_dep_runner_or_stdout_transport",
         "policy_summary": (
             "Non-clean audited theorem/no-go/open-gate claims surfaced under "
             "one of three policies: (a) all current one-hop deps are "
@@ -289,8 +302,10 @@ def build_payload(rows: dict[str, dict]) -> dict:
             "hash has changed since the audit_state_snapshot was taken; or "
             "(c) the audit requested complete runner stdout and a usable "
             "source-bound cache falls above the legacy 6k limit but within "
-            "the current 20k head+tail transport budget."
+            "the current 20k head+tail transport budget, and the terminal "
+            "audit predates the current packet-policy fingerprint."
         ),
+        "packet_policy_fingerprint": packet_policy,
         "eligible_claim_types": sorted(ELIGIBLE_CLAIM_TYPES),
         "eligible_audit_statuses": sorted(ELIGIBLE_AUDIT_STATUSES),
         "ratified_dependency_statuses": sorted(RATIFIED_DEP_STATUSES),

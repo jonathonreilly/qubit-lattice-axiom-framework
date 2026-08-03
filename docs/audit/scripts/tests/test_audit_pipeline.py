@@ -6467,6 +6467,60 @@ class ComputeReauditCandidatesTest(unittest.TestCase):
             )
         self.assertEqual(payload["runner_stdout_transport_candidates"], [])
 
+    def test_stdout_transport_does_not_requeue_current_packet_policy(self):
+        m = _import("compute_reaudit_candidates")
+        packet_policy = {
+            "schema": "packet_policy_fingerprint_v1",
+            "sources": {"policy.py": "a" * 64},
+            "digest": "b" * 64,
+        }
+        row = {
+            "claim_type": "bounded_theorem",
+            "audit_status": "audited_conditional",
+            "criticality": "leaf",
+            "deps": [],
+            "runner_path": "scripts/fixture.py",
+            "notes_for_re_audit_if_any": (
+                "runner_artifact_issue: provide complete unclipped stdout."
+            ),
+            "audit_state_snapshot": {
+                "packet_policy_fingerprint": packet_policy,
+            },
+        }
+
+        with mock.patch.object(
+            m.audit_science_fingerprint,
+            "packet_policy_fingerprint",
+            return_value=packet_policy,
+        ), mock.patch.object(
+            m, "cached_runner_stdout_chars", return_value=7_500
+        ):
+            payload = m.build_payload({"current": row})
+
+        self.assertEqual(payload["packet_policy_fingerprint"], packet_policy)
+        self.assertEqual(payload["runner_stdout_transport_candidates"], [])
+
+        row["audit_state_snapshot"]["packet_policy_fingerprint"] = {
+            **packet_policy,
+            "digest": "c" * 64,
+        }
+        with mock.patch.object(
+            m.audit_science_fingerprint,
+            "packet_policy_fingerprint",
+            return_value=packet_policy,
+        ), mock.patch.object(
+            m, "cached_runner_stdout_chars", return_value=7_500
+        ):
+            payload = m.build_payload({"stale": row})
+
+        self.assertEqual(
+            [
+                entry["claim_id"]
+                for entry in payload["runner_stdout_transport_candidates"]
+            ],
+            ["stale"],
+        )
+
 
 class NoGoDisciplineGateTest(unittest.TestCase):
     def setUp(self):

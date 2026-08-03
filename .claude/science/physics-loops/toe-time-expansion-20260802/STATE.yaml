@@ -8,7 +8,7 @@ interrupted: >
 restarted: 2026-08-03 18:10Z (24h window runs from restart; ends 2026-08-04 ~18:00Z)
 window_hours: 24
 mode: workhorse
-wave: 1
+wave: 2
 worktrees:
   c5-landing: blockP25 SHIPPED as PR #5924 — checker refuted v2's locality
     probe in-block; v3 repaired (robust firing / fragile content /
@@ -21,6 +21,10 @@ worktrees:
   c5-g2: gravity axiom-up G2 (Cycle 871, source-action bridge pricing) — running
   c5-g3: gravity axiom-up G3 (Cycle 872, sigma-linear admissibility) — running
   c5-g4: gravity axiom-up G4 (Cycle 873, tracelessness provenance) — running
+  c5-form: queue 2b reframed (Cycle 874, copy-redundancy CONTENT robustness,
+    stacked on blockP25) — running
+  c5-baxis: queue 2c (Cycle 875, B-AXIS second-leg discharge certificate,
+    stacked on blockT1) — running
 notes: >
   Worker worktrees moved to durable .claude/worktrees/ paths (reboot lesson);
   supervisor commits push immediately, worker scripts commit BEFORE first run.

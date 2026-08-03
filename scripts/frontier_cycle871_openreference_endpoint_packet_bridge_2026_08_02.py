@@ -45,7 +45,7 @@ RECEIPT_PATH = ROOT / "outputs" / (
 )
 AUDIT_TIMEOUT_SEC = 600
 AUDIT_INPUT_PATHS = (
-    NOTE_PATH,
+    "docs/OPENREFERENCE_MATTER_ENDPOINT_CAUSAL_INTERVAL_PACKET_CYCLE871_BOUNDED_THEOREM_NOTE_2026-08-02.md",
     "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py",
     "scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py",
     "outputs/cycle871_selected_openreference_seam_cycle714_packet_bridge_check_receipt_2026_08_02.json",
@@ -61,7 +61,7 @@ AUDIT_INPUT_PATHS = (
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 EXPECTED_INPUT_SHA256 = {
     "scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py":
-        "3d09072e53052724ff503a37a7df41b20de56f3aa62948850081531a5c9a4608",
+        "79855daab192d81af82c1c4f141ad6a7c45974a97db326f8a81f523c962c1b4b",
     "outputs/cycle871_selected_openreference_seam_cycle714_packet_bridge_check_receipt_2026_08_02.json":
         "e8ceb57382957f08b523e96e617153ea9fd6807cc756bc6f5568ccdf67d52cdf",
     "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py":

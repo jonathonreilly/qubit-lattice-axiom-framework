@@ -47,8 +47,8 @@ RECEIPT_PATH = (
     "check_receipt_2026_08_02.json"
 )
 AUDIT_INPUT_PATHS = (
-    RUNNER_PATH,
-    RECEIPT_PATH,
+    "scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py",
+    "outputs/cycle871_selected_openreference_seam_cycle714_packet_bridge_check_receipt_2026_08_02.json",
     "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py",
     "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
     "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",

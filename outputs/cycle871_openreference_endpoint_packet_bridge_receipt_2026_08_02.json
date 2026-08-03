@@ -577,8 +577,8 @@
       "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
       "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
       "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
-      "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py": "dedd76c9cc1d99e6b5b186b964fb2d3ffa34a724d147571069bf23819771b5c2",
-      "scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py": "3d09072e53052724ff503a37a7df41b20de56f3aa62948850081531a5c9a4608",
+      "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py": "6645156635b4354d937759a28e71215121a19cefcc2f294a2791e6a84cf1423b",
+      "scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py": "79855daab192d81af82c1c4f141ad6a7c45974a97db326f8a81f523c962c1b4b",
       "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
       "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b"
     },
@@ -597,7 +597,7 @@
     "pinned_input_failures": {},
     "unpinned_declared_inputs": []
   },
-  "runner_sha256": "dedd76c9cc1d99e6b5b186b964fb2d3ffa34a724d147571069bf23819771b5c2",
+  "runner_sha256": "6645156635b4354d937759a28e71215121a19cefcc2f294a2791e6a84cf1423b",
   "semantic": {
     "FSWAP_phase_failures": 0,
     "OR_Toffoli_deletion_detected_moving_cases": 6144,

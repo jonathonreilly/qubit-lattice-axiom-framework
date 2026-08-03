@@ -49,15 +49,15 @@ RUNNERS = (
     {
         "name": "cycle871_primary",
         "source": "scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py",
-        "source_sha256": "dedd76c9cc1d99e6b5b186b964fb2d3ffa34a724d147571069bf23819771b5c2",
+        "source_sha256": "6645156635b4354d937759a28e71215121a19cefcc2f294a2791e6a84cf1423b",
         "marker": "CYCLE871_OPENREFERENCE_ENDPOINT_PACKET_PASS",
         "receipt": "outputs/cycle871_openreference_endpoint_packet_bridge_receipt_2026_08_02.json",
-        "receipt_sha256": "75fbf1c0db9c44111564ef32b2d727a6912ebddfdd07bca50053f573c6144a4c",
+        "receipt_sha256": "a0ad25aabee2e0bcdb10838c007adf73e2b36de4b28b8ee109f030797cb3efe1",
     },
     {
         "name": "cycle871_independent",
         "source": "scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py",
-        "source_sha256": "3d09072e53052724ff503a37a7df41b20de56f3aa62948850081531a5c9a4608",
+        "source_sha256": "79855daab192d81af82c1c4f141ad6a7c45974a97db326f8a81f523c962c1b4b",
         "marker": "CYCLE871_SELECTED_OPENREFERENCE_SEAM_CYCLE714_PACKET_BRIDGE_CHECK_PASS",
         "receipt": "outputs/cycle871_selected_openreference_seam_cycle714_packet_bridge_check_receipt_2026_08_02.json",
         "receipt_sha256": "e8ceb57382957f08b523e96e617153ea9fd6807cc756bc6f5568ccdf67d52cdf",

@@ -1396,10 +1396,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "lattice_nn_light_cone_note",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
           "effective_status": "unaudited"
         },
@@ -2720,7 +2716,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 624
+      "uncertified_count": 623
     }
   ],
   "schema": "lane_certification_v2"

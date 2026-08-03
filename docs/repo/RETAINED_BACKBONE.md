@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 129 |
+| Retained positive rows | 130 |
 | Retained bounded rows | 362 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 36 |
 
-## Retained positive rows (129)
+## Retained positive rows (130)
 
 Sorted by load-bearing graph score (descending).
 
@@ -61,6 +61,7 @@ Sorted by load-bearing graph score (descending).
 - [`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md) — score 13.669; audited 2026-06-11T13:12:46.274572+00:00
 - [`wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`](../../docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) — score 12.845; audited 2026-07-24T01:07:58.872062+00:00
 - [`koide_gamma_orbit_selector_bridge_note_2026-04-18`](../../docs/KOIDE_GAMMA_ORBIT_SELECTOR_BRIDGE_NOTE_2026-04-18.md) — score 12.833; audited 2026-05-10T14:37:33.189790+00:00
+- [`lattice_nn_light_cone_note`](../../docs/LATTICE_NN_LIGHT_CONE_NOTE.md) — score 12.537; audited 2026-08-03T02:36:42.380919+00:00
 - [`i3_zero_exact_theorem_note`](../../docs/I3_ZERO_EXACT_THEOREM_NOTE.md) — score 12.209; audited 2026-05-03T12:43:10.800116+00:00
 - [`dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md) — score 12.171; audited 2026-07-29T20:48:31.179543+00:00
 - [`beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`](../../docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 12.044; audited 2026-06-06T16:26:01.015460+00:00

@@ -75,6 +75,7 @@ STDOUT_LIMIT_BYTES = 150 * 1024
 CADENCE_STORE_CAP = HORIZON_CHUNKS + 1        # ticks 0..H inclusive
 PERIOD_TAIL_WINDOW = 2_048                    # longest tail fed to the ladder
 PERIOD_TAIL_FLOOR = 16                        # shortest tail on the ladder
+PERIOD_TAIL_RATIO = (3, 4)                    # ladder step; finer than halving
 PERIOD_MAX_BLOCK_GAPS = 512
 MIN_SATURATION_RUN = 8                        # consecutive ticks to call it saturated
 WINDOWED_OFFSET_ANCHORS = 8                   # head/tail anchors for F1W search
@@ -361,9 +362,12 @@ def period_profile(cadence):
             period = sum(tail[:block])
             if period > 0 and (best is None or period < best[0]):
                 best = (period, block)
-        if length == 1:
+        if length <= PERIOD_TAIL_FLOOR:
             break
-        length //= 2
+        length = max(
+            PERIOD_TAIL_FLOOR,
+            length * PERIOD_TAIL_RATIO[0] // PERIOD_TAIL_RATIO[1],
+        )
     if best is None:
         return None
     period, block = best
@@ -1404,6 +1408,8 @@ def main():
             "cadence_store_cap": CADENCE_STORE_CAP,
             "cadence_store_saturations": store_saturations,
             "period_tail_window": PERIOD_TAIL_WINDOW,
+            "period_tail_floor": PERIOD_TAIL_FLOOR,
+            "period_tail_ladder_ratio": list(PERIOD_TAIL_RATIO),
             "period_max_block_gaps": PERIOD_MAX_BLOCK_GAPS,
             "min_saturation_run": MIN_SATURATION_RUN,
             "saturation_detection": (

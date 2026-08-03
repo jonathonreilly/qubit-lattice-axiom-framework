@@ -319,8 +319,9 @@ def build_payload(rows: dict[str, dict]) -> dict:
             "hash has changed since the audit_state_snapshot was taken; or "
             "(c) the audit requested complete runner stdout and a usable "
             "source-bound cache falls above the legacy 6k limit but within "
-            "the current 20k head+tail transport budget, and the terminal "
-            "audit predates the current packet-policy fingerprint."
+            "the current 20k head+tail transport budget, unless the terminal "
+            "audit used the current packet-policy fingerprint and every "
+            "recorded blocker fingerprint remains unchanged."
         ),
         "packet_policy_fingerprint": packet_policy,
         "eligible_claim_types": sorted(ELIGIBLE_CLAIM_TYPES),

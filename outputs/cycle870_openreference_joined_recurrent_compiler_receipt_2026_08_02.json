@@ -7,7 +7,7 @@
       "an a priori 51^3 total-support capacity bound per coarse cell",
       "executable seven-stage coherent extraction/correction/echo-ack/loader primitive word with returned NN routes",
       "exact native coin-reverse-seam-contact update with returned NN routes through a restored bank",
-      "exact global-phase scalar and generator-relation proof of G_physical_exact E_joined = E_joined G_native_exact",
+      "formal representative-phase convention and generator-relation proof of G_physical_exact E_joined = E_joined G_native_exact",
       "volume-independent 2880-color returned-route schedule for native G, with no host volume enumeration",
       "joined 24-frame/576-product signed code and coordinate covariance",
       "active E deletion-class witnesses and unlawful-syndrome controls; not every semantic occurrence is claimed essential",
@@ -36,7 +36,7 @@
     "eliminations": 14,
     "reconstruction_residual": 9.774239351035397e-16
   },
-  "content_sha256_before_hash_field": "d2b398fa73f4382e96770e2e8632c01e5bdda58073c2f122bd7ab845b271f74f",
+  "content_sha256_before_hash_field": "77465049ebe358c85331fc4aacab87da6f36a878b75b0a70b03bb0a57c6ee16d",
   "failures": [],
   "fixtures": [
     {
@@ -121,10 +121,14 @@
         "E_joined_definition": "Cycle703 logical-X/Z preparation isometry into the OpenReference code, followed by the matter-stream repetition lift on the identical carrier map",
         "all_proof_obligations_zero": true,
         "dense_isometry_materialized": false,
+        "emitted_encoder_isometry_exact": true,
         "equation": "G_physical_exact E_joined = E_joined G_native_exact",
-        "exact_scalar_included_in_G_physical_exact": true,
+        "exact_intertwiner_pass": true,
         "exact_vector_equality_follows_for_all_input_vectors": true,
         "exact_vector_statement": "for every input vector |psi>, G_physical_exact E_joined|psi> = E_joined G_native_exact|psi> with no residual phase",
+        "executable_physical_law": "the channel/projective class of the returned routed rotation word U_routed",
+        "formal_representative_scalar_checked": true,
+        "formal_vector_representative": "G_physical_exact = exp(-i*phi) U_routed; the scalar fixes an operator representative and is not a physical gate",
         "logical_input_qubits": 48,
         "native_AB_generators_checked": 224,
         "native_update_generator_rows": 1392,
@@ -215,16 +219,17 @@
         },
         "chronology_accepted": true,
         "combined_maximum_route_distance": 42,
-        "combined_routed_gate_count": 222290,
-        "combined_serial_routed_word_sha256": "2d4f744d1873e09f71dae0edcc8bcd410fc9ab2bb6c11b8fb85e2686322807aa",
+        "combined_routed_gate_count": 222265,
+        "combined_serial_routed_word_sha256": "4de8fb67878ceb03417d7eddc9836fdb697b54a4ac192b6e08732db0a3c58ee7",
         "controller_chronology": {
+          "CCZ_H_Toffoli_H_residual": 6.312164422641715e-16,
           "CCZ_is_H_target_Toffoli_H_target": true,
           "Toffoli_decomposition_residual": 7.346882794269506e-16,
           "catalog_interactions": 46,
           "catalog_non_epoch_templates_missing": 0,
           "catalog_root_epoch_templates": 3,
           "chronological_semantic_events": 54,
-          "compiled_one_two_qubit_primitives": 414,
+          "compiled_one_two_qubit_primitives": 431,
           "expected_router_applications": 13,
           "fixed_depth_first_forest_word": true,
           "foreign_non_epoch_templates": 0,
@@ -234,6 +239,37 @@
           "root_epoch_template_expanded_to_literal_two_SWAP_handshake": true,
           "root_spent_epoch_gates": 3,
           "router_applications": 13,
+          "router_decomposition": {
+            "gate_counts": {
+              "leaf": 0,
+              "one_child": 3,
+              "two_children": 4
+            },
+            "gate_set": "X/CNOT",
+            "matrix_basis_encoding": "left + 2*right (substrate little-endian wires)",
+            "maximum_residual": 0.0,
+            "minimum_nonidentity_subgate_deletion_residual": 2.0,
+            "residuals": {
+              "leaf": 0.0,
+              "one_child": 0.0,
+              "two_children": 0.0
+            },
+            "semantic_integer_encoding": "left + 2*right",
+            "subgate_deletion_residuals": {
+              "leaf": [],
+              "one_child": [
+                2.8284271247461903,
+                2.0,
+                2.8284271247461903
+              ],
+              "two_children": [
+                2.8284271247461903,
+                2.0,
+                2.0,
+                2.8284271247461903
+              ]
+            }
+          },
           "router_template_reapplications": 5
         },
         "controller_execution": {
@@ -435,6 +471,98 @@
           "value_work_failures": 0
         },
         "cross_stage_collision_claim": "none: the seven-stage root word and update factors are concatenated serially",
+        "encoder_isometry": {
+          "carrier_M2": 180,
+          "check_macro_operator_certificate": {
+            "conjugation_residuals": {
+              "X": 8.881784197001252e-16,
+              "Y": 8.881784197001252e-16,
+              "Z": 0.0
+            },
+            "maximum_residual": 8.881784197001252e-16,
+            "minimum_parity_gate_deletion_residual": 2.8284271247461894,
+            "negative_row_sign_X_residual": 0.0,
+            "parity_gate_deletion_residuals": {
+              "X": 2.8284271247461894,
+              "Y": 2.8284271247461894,
+              "Z": 2.8284271247461903
+            }
+          },
+          "clean_domain": "carrier/raw-code target, syndrome, controller, and route-work registers are initialized as declared; raw logical inputs are arbitrary",
+          "coarse_controller_complete_ANF_certificate": {
+            "all_lawful_basis_states_and_superpositions_proved": true,
+            "coarse_check_bits": 6,
+            "correction_ANF_monomials": 22,
+            "failure_census": {
+              "fresh_consumption_failures": 0,
+              "nonlinear_correction_polynomials": 0,
+              "router_return_failures": 0,
+              "source_register_mutations": 0,
+              "spent_ack_failures": 0,
+              "syndrome_action_ANF_failures": 0,
+              "token_return_failures": 0,
+              "value_work_return_failures": 0
+            },
+            "independent_edge_variables": 12,
+            "lawful_syndrome_rank": 5,
+            "maximum_correction_ANF_degree": 1,
+            "maximum_intermediate_ANF_degree": 1,
+            "phase_statement": "the semantic word is a computational-basis permutation followed only by the displayed token/value-controlled Z corrections; exact Toffoli, CCZ, and router decompositions introduce no residual scalar",
+            "proof_domain": "complete image of the coarse edge-to-plaquette boundary map"
+          },
+          "emitted_E_isometry_exact_on_declared_clean_domain": true,
+          "failure_census": {
+            "Z_correction_preservation_failures": 0,
+            "bond_decoder_response_failures": 0,
+            "check_macro_failures": 0,
+            "check_support_atlas_failures": 0,
+            "coarse_controller_ANF_failures": 0,
+            "controller_decomposition_failures": 0,
+            "cycle_check_commutator_failures": 0,
+            "extraction_preservation_failures": 0,
+            "inactive_check_macro_mutations": 0,
+            "inactive_loader_macro_mutations": 0,
+            "inactive_router_decomposition_mutations": 0,
+            "initial_preserved_not_plus_Z_failures": 0,
+            "later_correction_prior_check_disturbance_failures": 0,
+            "loader_macro_failures": 0,
+            "loader_support_atlas_failures": 0,
+            "logical_pair_failures": 0,
+            "logical_stabilizer_commutator_failures": 0,
+            "route_conjugation_failures": 0,
+            "triangle_decoder_response_failures": 0,
+            "vacuum_commutator_failures": 0,
+            "vacuum_phase_failures": 0,
+            "vacuum_rank_deficit": 0
+          },
+          "input_unload_statement": "exact logical-Z parity CNOT returns every raw input qubit to |0> after the signed controlled logical-X word",
+          "loader_macro_operator_certificate": {
+            "controlled_axis_residuals": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "controlled_gate_deletion_residuals": {
+              "X": 2.0,
+              "Y": 2.0,
+              "Z": 2.0
+            },
+            "generic_clean_subspace_swap_residual": 0.0,
+            "logical_Z_parity_unload_gate": "CNOT(logical-Z support -> raw input)",
+            "maximum_residual": 0.0,
+            "minimum_controlled_gate_deletion_residual": 2.0,
+            "negative_signed_X_control_residual": 0.0,
+            "parity_unload_deletion_residual": 1.4142135623730951
+          },
+          "physical_code_rows": 133,
+          "physical_logical_Z_rows": 48,
+          "retained_garbage_statement": "syndrome and spent-ack registers may retain an input-independent state; full-rank carrier vacuum uniqueness factorizes them before logical loading",
+          "routing_conjugation_statement": "for every emitted two-site primitive, the forward SWAP permutation places the ordered operands at the central gate and the inverse permutation restores every path label, proving SWAP-conjugation equality",
+          "signed_logical_generator_identities_checked": 96,
+          "signed_logical_generator_pairs": 48,
+          "unique_plus_vacuum": true,
+          "vacuum_tableau_rank": 180
+        },
         "exact_global_phase": {
           "FSWAP_minus_i_phase_residual": 0.0,
           "FSWAP_rotation_word_relative_phase": [
@@ -443,7 +571,7 @@
           ],
           "compiled_relative_phase_angle": -168.20687791288861,
           "convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
-          "equality_scope": "G_physical_exact includes the displayed zero-site scalar; the routed rotation word alone is only projectively equal to G_native",
+          "equality_scope": "U_routed is the executable physical word and defines the physical channel; G_physical_exact is a formal vector representative obtained by multiplying U_routed by the displayed unrouted scalar",
           "formal_exact_target_correction_angle": 168.20687791288861,
           "formal_scalar": [
             0.13129080709171057,
@@ -503,14 +631,14 @@
           "analytic_physical_support_upper_bound_per_cell": 132651,
           "analytic_total_support_upper_bound": 1061208,
           "arbitrary_or_entangled_transit_state_restored": true,
-          "bounded_transit_route_M2": 4773,
+          "bounded_transit_route_M2": 4760,
           "encoded_carrier_M2": 180,
           "persistent_preparation_auxiliary_M2": 288,
-          "physical_support_coordinate_sha256": "067cc13a478a93ee3a8f10711fb17cde8e8d99d3e31285fb30e450ef12404038",
-          "total_declared_physical_support_M2": 5241,
+          "physical_support_coordinate_sha256": "1b203e81afcc16d557e0ff9eac1e72479638548a9dfb29f5a663c76ef7521f9c",
+          "total_declared_physical_support_M2": 5228,
           "transit_clean_or_product_state_required": false,
-          "transit_coordinate_sha256": "bda593d15cf0282d9c04809b000a9232b545eaf5cb5eb4ac6da01ddc03cde552",
-          "transit_sites_are_substrate_capacity_not_ancilla": true
+          "transit_coordinate_sha256": "f1ee99facf800ccc239492c1e26383114d30835388e2586a456f39bb33082532",
+          "transit_site_classification": "substrate capacity, not persistent ancilla"
         },
         "root_catalog_route": {
           "first_swap_deletion_detected_macros": 2210,
@@ -525,15 +653,15 @@
         },
         "root_chronology_semantics": "coherent Pauli extraction and phase-zero controlled-Z correction; the echo forest is unrolled depth-first with reversible router/token/work return and spent ack",
         "root_executable_primitive_route": {
-          "auxiliary_sites_touched_and_returned": 266,
+          "auxiliary_sites_touched_and_returned": 262,
           "carrier_sites_touched": 180,
-          "delete_first_swap_detected_macros": 2343,
+          "delete_first_swap_detected_macros": 2342,
           "maximum_route_distance": 42,
           "non_NN_failures": 0,
           "operand_order_failures": 0,
           "persistent_route_work_M2": 0,
           "primitive_endpoint_outside_bank_failures": 0,
-          "primitive_gate_count": 3872,
+          "primitive_gate_count": 3889,
           "primitive_kind_census": {
             "check_basis_H": 840,
             "check_basis_S": 96,
@@ -547,9 +675,12 @@
             "controller_Toffoli_Tdg": 75,
             "controller_root_fresh_to_token_SWAP": 3,
             "controller_root_token_to_spent_SWAP": 3,
-            "controller_router_leaf": 4,
-            "controller_router_one_child": 6,
-            "controller_router_two_children": 3,
+            "controller_router_CNOT_left_right": 3,
+            "controller_router_CNOT_right_left": 9,
+            "controller_router_X_left": 3,
+            "controller_router_X_right": 3,
+            "controller_router_X_right_post": 6,
+            "controller_router_X_right_pre": 6,
             "controller_token_SWAP_down": 5,
             "controller_token_SWAP_up": 5,
             "loader_controlled_X_for_Y": 48,
@@ -561,12 +692,12 @@
           },
           "primitive_matrix_unitarity_failures": 0,
           "route_return_failures": 0,
-          "routed_gate_count": 48938,
-          "routed_one_site": 1477,
-          "routed_two_site": 47461,
-          "touched_sites": 4755,
-          "transient_route_sites_touched_and_returned": 4309,
-          "word_sha256": "bce48e35d769a04171201b2a45601375a6a52919de4fb481c90de32a2b97f225"
+          "routed_gate_count": 48913,
+          "routed_one_site": 1495,
+          "routed_two_site": 47418,
+          "touched_sites": 4738,
+          "transient_route_sites_touched_and_returned": 4296,
+          "word_sha256": "870bb9e40b94921770f4b6c188bb63882552b1d10874d4d067ab84e9ff43b7d1"
         },
         "root_stage_interaction_counts": {
           "bond_correction": 12,
@@ -778,10 +909,14 @@
         "E_joined_definition": "Cycle703 logical-X/Z preparation isometry into the OpenReference code, followed by the matter-stream repetition lift on the identical carrier map",
         "all_proof_obligations_zero": true,
         "dense_isometry_materialized": false,
+        "emitted_encoder_isometry_exact": true,
         "equation": "G_physical_exact E_joined = E_joined G_native_exact",
-        "exact_scalar_included_in_G_physical_exact": true,
+        "exact_intertwiner_pass": true,
         "exact_vector_equality_follows_for_all_input_vectors": true,
         "exact_vector_statement": "for every input vector |psi>, G_physical_exact E_joined|psi> = E_joined G_native_exact|psi> with no residual phase",
+        "executable_physical_law": "the channel/projective class of the returned routed rotation word U_routed",
+        "formal_representative_scalar_checked": true,
+        "formal_vector_representative": "G_physical_exact = exp(-i*phi) U_routed; the scalar fixes an operator representative and is not a physical gate",
         "logical_input_qubits": 162,
         "native_AB_generators_checked": 783,
         "native_update_generator_rows": 4752,
@@ -914,16 +1049,17 @@
         },
         "chronology_accepted": true,
         "combined_maximum_route_distance": 42,
-        "combined_routed_gate_count": 910593,
-        "combined_serial_routed_word_sha256": "cfaefb274869c70a39273fa40e0d2b86a1f03dcfe61710eca606a4a1ad31c329",
+        "combined_routed_gate_count": 910577,
+        "combined_serial_routed_word_sha256": "09b528d4032fefb02608703defd0375be2254cf45510b2e342732267e098ffca",
         "controller_chronology": {
+          "CCZ_H_Toffoli_H_residual": 6.312164422641715e-16,
           "CCZ_is_H_target_Toffoli_H_target": true,
           "Toffoli_decomposition_residual": 7.346882794269506e-16,
           "catalog_interactions": 240,
           "catalog_non_epoch_templates_missing": 0,
           "catalog_root_epoch_templates": 8,
           "chronological_semantic_events": 276,
-          "compiled_one_two_qubit_primitives": 2292,
+          "compiled_one_two_qubit_primitives": 2396,
           "expected_router_applications": 64,
           "fixed_depth_first_forest_word": true,
           "foreign_non_epoch_templates": 0,
@@ -933,6 +1069,37 @@
           "root_epoch_template_expanded_to_literal_two_SWAP_handshake": true,
           "root_spent_epoch_gates": 8,
           "router_applications": 64,
+          "router_decomposition": {
+            "gate_counts": {
+              "leaf": 0,
+              "one_child": 3,
+              "two_children": 4
+            },
+            "gate_set": "X/CNOT",
+            "matrix_basis_encoding": "left + 2*right (substrate little-endian wires)",
+            "maximum_residual": 0.0,
+            "minimum_nonidentity_subgate_deletion_residual": 2.0,
+            "residuals": {
+              "leaf": 0.0,
+              "one_child": 0.0,
+              "two_children": 0.0
+            },
+            "semantic_integer_encoding": "left + 2*right",
+            "subgate_deletion_residuals": {
+              "leaf": [],
+              "one_child": [
+                2.8284271247461903,
+                2.0,
+                2.8284271247461903
+              ],
+              "two_children": [
+                2.8284271247461903,
+                2.0,
+                2.0,
+                2.8284271247461903
+              ]
+            }
+          },
           "router_template_reapplications": 28
         },
         "controller_execution": {
@@ -1134,6 +1301,98 @@
           "value_work_failures": 0
         },
         "cross_stage_collision_claim": "none: the seven-stage root word and update factors are concatenated serially",
+        "encoder_isometry": {
+          "carrier_M2": 648,
+          "check_macro_operator_certificate": {
+            "conjugation_residuals": {
+              "X": 8.881784197001252e-16,
+              "Y": 8.881784197001252e-16,
+              "Z": 0.0
+            },
+            "maximum_residual": 8.881784197001252e-16,
+            "minimum_parity_gate_deletion_residual": 2.8284271247461894,
+            "negative_row_sign_X_residual": 0.0,
+            "parity_gate_deletion_residuals": {
+              "X": 2.8284271247461894,
+              "Y": 2.8284271247461894,
+              "Z": 2.8284271247461903
+            }
+          },
+          "clean_domain": "carrier/raw-code target, syndrome, controller, and route-work registers are initialized as declared; raw logical inputs are arbitrary",
+          "coarse_controller_complete_ANF_certificate": {
+            "all_lawful_basis_states_and_superpositions_proved": true,
+            "coarse_check_bits": 36,
+            "correction_ANF_monomials": 164,
+            "failure_census": {
+              "fresh_consumption_failures": 0,
+              "nonlinear_correction_polynomials": 0,
+              "router_return_failures": 0,
+              "source_register_mutations": 0,
+              "spent_ack_failures": 0,
+              "syndrome_action_ANF_failures": 0,
+              "token_return_failures": 0,
+              "value_work_return_failures": 0
+            },
+            "independent_edge_variables": 54,
+            "lawful_syndrome_rank": 28,
+            "maximum_correction_ANF_degree": 1,
+            "maximum_intermediate_ANF_degree": 1,
+            "phase_statement": "the semantic word is a computational-basis permutation followed only by the displayed token/value-controlled Z corrections; exact Toffoli, CCZ, and router decompositions introduce no residual scalar",
+            "proof_domain": "complete image of the coarse edge-to-plaquette boundary map"
+          },
+          "emitted_E_isometry_exact_on_declared_clean_domain": true,
+          "failure_census": {
+            "Z_correction_preservation_failures": 0,
+            "bond_decoder_response_failures": 0,
+            "check_macro_failures": 0,
+            "check_support_atlas_failures": 0,
+            "coarse_controller_ANF_failures": 0,
+            "controller_decomposition_failures": 0,
+            "cycle_check_commutator_failures": 0,
+            "extraction_preservation_failures": 0,
+            "inactive_check_macro_mutations": 0,
+            "inactive_loader_macro_mutations": 0,
+            "inactive_router_decomposition_mutations": 0,
+            "initial_preserved_not_plus_Z_failures": 0,
+            "later_correction_prior_check_disturbance_failures": 0,
+            "loader_macro_failures": 0,
+            "loader_support_atlas_failures": 0,
+            "logical_pair_failures": 0,
+            "logical_stabilizer_commutator_failures": 0,
+            "route_conjugation_failures": 0,
+            "triangle_decoder_response_failures": 0,
+            "vacuum_commutator_failures": 0,
+            "vacuum_phase_failures": 0,
+            "vacuum_rank_deficit": 0
+          },
+          "input_unload_statement": "exact logical-Z parity CNOT returns every raw input qubit to |0> after the signed controlled logical-X word",
+          "loader_macro_operator_certificate": {
+            "controlled_axis_residuals": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "controlled_gate_deletion_residuals": {
+              "X": 2.0,
+              "Y": 2.0,
+              "Z": 2.0
+            },
+            "generic_clean_subspace_swap_residual": 0.0,
+            "logical_Z_parity_unload_gate": "CNOT(logical-Z support -> raw input)",
+            "maximum_residual": 0.0,
+            "minimum_controlled_gate_deletion_residual": 2.0,
+            "negative_signed_X_control_residual": 0.0,
+            "parity_unload_deletion_residual": 1.4142135623730951
+          },
+          "physical_code_rows": 494,
+          "physical_logical_Z_rows": 162,
+          "retained_garbage_statement": "syndrome and spent-ack registers may retain an input-independent state; full-rank carrier vacuum uniqueness factorizes them before logical loading",
+          "routing_conjugation_statement": "for every emitted two-site primitive, the forward SWAP permutation places the ordered operands at the central gate and the inverse permutation restores every path label, proving SWAP-conjugation equality",
+          "signed_logical_generator_identities_checked": 324,
+          "signed_logical_generator_pairs": 162,
+          "unique_plus_vacuum": true,
+          "vacuum_tableau_rank": 648
+        },
         "exact_global_phase": {
           "FSWAP_minus_i_phase_residual": 0.0,
           "FSWAP_rotation_word_relative_phase": [
@@ -1142,7 +1401,7 @@
           ],
           "compiled_relative_phase_angle": -588.9039633677298,
           "convention": "U_rotations = exp(i*compiled_relative_to_target_global_phase_angle) G_native_exact",
-          "equality_scope": "G_physical_exact includes the displayed zero-site scalar; the routed rotation word alone is only projectively equal to G_native",
+          "equality_scope": "U_routed is the executable physical word and defines the physical channel; G_physical_exact is a formal vector representative obtained by multiplying U_routed by the displayed unrouted scalar",
           "formal_exact_target_correction_angle": 588.9039633677298,
           "formal_scalar": [
             -0.14415517827490035,
@@ -1202,14 +1461,14 @@
           "analytic_physical_support_upper_bound_per_cell": 132651,
           "analytic_total_support_upper_bound": 3581577,
           "arbitrary_or_entangled_transit_state_restored": true,
-          "bounded_transit_route_M2": 18566,
+          "bounded_transit_route_M2": 18518,
           "encoded_carrier_M2": 648,
           "persistent_preparation_auxiliary_M2": 972,
-          "physical_support_coordinate_sha256": "a67bf7bd4b3cf24b61839d5cbdf9f07fce6b375c83a5a6bc61957055e6e0d6b4",
-          "total_declared_physical_support_M2": 20186,
+          "physical_support_coordinate_sha256": "80ade3a6e1d718d19d9cd43b45a9ed65de24cc84b026b87986c7f6a049ac9813",
+          "total_declared_physical_support_M2": 20138,
           "transit_clean_or_product_state_required": false,
-          "transit_coordinate_sha256": "ca029a828db17150edb0f9021f1f38b10ad3ea89a4e1626fdf7baa058842f218",
-          "transit_sites_are_substrate_capacity_not_ancilla": true
+          "transit_coordinate_sha256": "d54c55477a56a05128b22e931f2f34767c9597dd5cd11bb13d39ce7b7fa2da55",
+          "transit_site_classification": "substrate capacity, not persistent ancilla"
         },
         "root_catalog_route": {
           "first_swap_deletion_detected_macros": 8403,
@@ -1224,7 +1483,7 @@
         },
         "root_chronology_semantics": "coherent Pauli extraction and phase-zero controlled-Z correction; the echo forest is unrolled depth-first with reversible router/token/work return and spent ack",
         "root_executable_primitive_route": {
-          "auxiliary_sites_touched_and_returned": 922,
+          "auxiliary_sites_touched_and_returned": 910,
           "carrier_sites_touched": 648,
           "delete_first_swap_detected_macros": 9139,
           "maximum_route_distance": 42,
@@ -1232,7 +1491,7 @@
           "operand_order_failures": 0,
           "persistent_route_work_M2": 0,
           "primitive_endpoint_outside_bank_failures": 0,
-          "primitive_gate_count": 15369,
+          "primitive_gate_count": 15473,
           "primitive_kind_census": {
             "check_basis_H": 3348,
             "check_basis_S": 324,
@@ -1246,9 +1505,12 @@
             "controller_Toffoli_Tdg": 420,
             "controller_root_fresh_to_token_SWAP": 8,
             "controller_root_token_to_spent_SWAP": 8,
-            "controller_router_leaf": 12,
-            "controller_router_one_child": 40,
-            "controller_router_two_children": 12,
+            "controller_router_CNOT_left_right": 12,
+            "controller_router_CNOT_right_left": 52,
+            "controller_router_X_left": 12,
+            "controller_router_X_right": 12,
+            "controller_router_X_right_post": 40,
+            "controller_router_X_right_pre": 40,
             "controller_token_SWAP_down": 28,
             "controller_token_SWAP_up": 28,
             "loader_controlled_X_for_Y": 162,
@@ -1260,12 +1522,12 @@
           },
           "primitive_matrix_unitarity_failures": 0,
           "route_return_failures": 0,
-          "routed_gate_count": 207043,
-          "routed_one_site": 6050,
-          "routed_two_site": 200993,
-          "touched_sites": 18034,
-          "transient_route_sites_touched_and_returned": 16464,
-          "word_sha256": "dcaa107ff1cc26a66e159cfb4d755290fc40822d9558a09368ceca69cb80aff3"
+          "routed_gate_count": 207027,
+          "routed_one_site": 6154,
+          "routed_two_site": 200873,
+          "touched_sites": 17974,
+          "transient_route_sites_touched_and_returned": 16416,
+          "word_sha256": "89a33d0d87f715ac58426935a103a7c74ba3639383f72b972e44be1da7da3d68"
         },
         "root_stage_interaction_counts": {
           "bond_correction": 54,
@@ -1412,14 +1674,15 @@
       "update_metadata_product_failures": 0
     },
     "root_carrier_aux_coordinate": {
+      "coframe_status": "supplied and transported",
       "frame_injectivity_failures": 0,
       "ordered_products": 576,
       "product_diagram_failures": 0,
-      "proper_cubic_frames": 24,
-      "transported_coframe_supplied": true
+      "proper_cubic_frames": 24
     },
     "root_signed_AB_semantic_E": {
       "ordered_products": 576,
+      "port_order_gauge_status": "signed local chart gauge included",
       "product_edge_failures": 0,
       "product_generator_failures": 0,
       "product_site_failures": 0,
@@ -1430,7 +1693,6 @@
         2,
         2
       ],
-      "signed_port_order_gauge_included": true,
       "single_frame_edge_type_failures": 0,
       "single_frame_generator_failures": 0,
       "single_frame_placement_failures": 0
@@ -1441,7 +1703,7 @@
       2
     ]
   },
-  "joined_stage_statement": "triangle_extract -> triangle_correct -> coarse_extract -> echo_correct_ack -> bond_extract -> bond_correct -> logical_load -> onsite_coin_mass -> onsite_reverse_fswap -> directed_seam_fswap -> onsite_contact -> exact_global_scalar",
+  "joined_stage_statement": "triangle_extract -> triangle_correct -> coarse_extract -> echo_correct_ack -> bond_extract -> bond_correct -> logical_load -> onsite_coin_mass -> onsite_reverse_fswap -> directed_seam_fswap -> onsite_contact -> formal_representative_scalar",
   "native_G_route_colors": {
     "a_priori_factor_route_padding_bound": 1834664,
     "a_priori_maximum_physical_rotation_weight": 128,
@@ -1497,13 +1759,13 @@
     "template_envelope_separation_failures": 0
   },
   "source_pins": {
-    "native_update_receipt_sha256": "6073c7994a39dc8d51ef1884b59903235be3bb3db0b1cc8e5be9c451b67d8e9c",
+    "native_update_receipt_sha256": "b1c812afbf25b84b99a5d171cf7925ffc86272e52c252c5f7ee68cb9f5a76807",
     "native_update_source": "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py",
-    "native_update_source_sha256": "df5809cb74e5ff6bae1fa125094dbeae4f356bf2114a3944a9227365ae574237",
-    "root_placement_receipt_sha256": "ef830843367d858622c4e53644a3d9d6dc2c6d7654f9eab0ce1e3d6c713f08c6",
+    "native_update_source_sha256": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+    "root_placement_receipt_sha256": "ab2d980726e336221e49808b6edcfaaae802173ee2f00fe96d8d55a4f2c6899d",
     "root_placement_source": "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
-    "root_placement_source_sha256": "e31501b599f5ea81838320bc103a11225c95d1593d44becd1fe2701e3b5ab0ce",
-    "this_source_sha256": "25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5"
+    "root_placement_source_sha256": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+    "this_source_sha256": "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457"
   },
   "status": "pass"
 }

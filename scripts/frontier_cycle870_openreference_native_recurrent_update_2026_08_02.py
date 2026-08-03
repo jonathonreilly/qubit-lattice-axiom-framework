@@ -46,6 +46,15 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
     "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
 )
+EXPECTED_DEPENDENCY_SHA256 = {
+    "frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+    "ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+    "common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py": "833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245",
+    "frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69",
+    "frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480",
+    "spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+}
 
 import ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17 as base
 import common_matter_field_coin_family_cycle219_2026_07_16 as c219
@@ -1274,7 +1283,7 @@ def root_placement_boundary_audit() -> dict[str, object]:
     return {
         "source": str(ROOT_PLACEMENT_SOURCE.relative_to(ROOT)),
         "source_sha256": file_sha256(ROOT_PLACEMENT_SOURCE),
-        "site_rule_consumed_directly": True,
+        "site_rule_consumption": "direct import by the pinned source path",
         "noncubic_held_shape": HELD_SHAPE,
         "noncubic_controller_interactions": len(noncube_controller),
         "guard_confirmed": len(noncube_controller) == 0,
@@ -1365,6 +1374,8 @@ def collect_failures(report) -> list[str]:
             failures.append(f"{prefix}:inactive seam rotation deletion")
         if seams["bare_matter_edge_D_anticommutator_census"] != {2: fixture_row["coarse_edges"]}:
             failures.append(f"{prefix}:reference deletion")
+        if not constraints["all_D_product_identity"]:
+            failures.append(f"{prefix}:global D dependency identity")
         if fixture_row["abstract_edge_formula"] != constraints["abstract_edge_qubits"]:
             failures.append(f"{prefix}:abstract formula")
         if fixture_row["physical_carrier_formula"] != constraints["physical_carrier_M2"]:
@@ -1384,6 +1395,15 @@ def collect_failures(report) -> list[str]:
 
 
 def main() -> int:
+    dependency_hashes = {
+        name: file_sha256(ROUTE_SCRIPTS / name)
+        for name in EXPECTED_DEPENDENCY_SHA256
+    }
+    dependency_pin_failures = {
+        name: {"expected": expected, "observed": dependency_hashes[name]}
+        for name, expected in EXPECTED_DEPENDENCY_SHA256.items()
+        if dependency_hashes[name] != expected
+    }
     species = c219.common_species(float(c230.BETA))
     coin = np.asarray(species.coin, dtype=complex)
     coin_gates, qr = qr_coin_schedule(coin)
@@ -1414,6 +1434,8 @@ def main() -> int:
             primary_graph, primary_context, primary_rotations
         ),
         "root_placement_boundary_audit": root_placement_boundary_audit(),
+        "dependency_sha256": dependency_hashes,
+        "dependency_pin_failures": dependency_pin_failures,
         "source_pins": {
             "this_source_sha256": file_sha256(Path(__file__)),
             "Cycle703_OpenReferenceGraph_sha256": file_sha256(
@@ -1459,7 +1481,8 @@ def main() -> int:
             ],
         },
     }
-    failures = collect_failures(report)
+    failures = [f"dependency pin:{name}" for name in dependency_pin_failures]
+    failures.extend(collect_failures(report))
     report["failures"] = failures
     report["status"] = "pass" if not failures else "fail"
     payload = json.dumps(report, sort_keys=True, indent=2, default=str)

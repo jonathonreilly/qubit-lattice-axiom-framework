@@ -26,7 +26,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
 ROOT_SOURCE = HERE / "frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py"
-ROOT_SHA256 = "e31501b599f5ea81838320bc103a11225c95d1593d44becd1fe2701e3b5ab0ce"
+ROOT_SHA256 = "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2"
 SCRIPT_ROOT = HERE
 DEPENDENCY_HASHES = {
     "ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
@@ -36,13 +36,13 @@ DEPENDENCY_HASHES = {
     "frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
 }
 ACTIVE_JOINED = HERE / "frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py"
-FROZEN_JOINED_SHA256 = "25890919f82e9ba2f96952a90c9c187d5ef0bbbb19e27f9a043f081bfb82dfb5"
+FROZEN_JOINED_SHA256 = "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457"
 FROZEN_JOINED_RECEIPT = (
     REPO_ROOT
     / "outputs"
     / "cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json"
 )
-FROZEN_JOINED_RECEIPT_SHA256 = "3a389eb5646f8f9023b9c7af5b83c86277662c61b23fa7c717a28105d53d738d"
+FROZEN_JOINED_RECEIPT_SHA256 = "cb7a8892649d41ea1c4fe6cf4ddb8ec8678356932f063a74ea775179df77ba1b"
 AUDIT_INPUT_PATHS = (ROOT_SOURCE, ACTIVE_JOINED, FROZEN_JOINED_RECEIPT)
 TOL = 2.0e-9
 STAGES = (
@@ -85,7 +85,7 @@ SDG = S.conj().T
 T = np.diag((1, np.exp(1j * math.pi / 4))).astype(complex)
 TDG = T.conj().T
 CNOT = np.asarray(
-    ((1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 0, 1), (0, 0, 1, 0)),
+    ((1, 0, 0, 0), (0, 0, 0, 1), (0, 0, 1, 0), (0, 1, 0, 0)),
     dtype=complex,
 )
 CZ = np.diag((1, 1, 1, -1)).astype(complex)
@@ -94,8 +94,8 @@ SWAP = np.asarray(
     dtype=complex,
 )
 TOFFOLI = np.eye(8, dtype=complex)
-TOFFOLI[6, 6] = TOFFOLI[7, 7] = 0
-TOFFOLI[6, 7] = TOFFOLI[7, 6] = 1
+TOFFOLI[3, 3] = TOFFOLI[7, 7] = 0
+TOFFOLI[3, 7] = TOFFOLI[7, 3] = 1
 CCZ = np.diag((1, 1, 1, 1, 1, 1, 1, -1)).astype(complex)
 
 
@@ -124,26 +124,27 @@ def permutation_matrix(table) -> np.ndarray:
     return output
 
 
+def semantic_router_matrix(table) -> np.ndarray:
+    """Matrix in the substrate's little-endian |left,right> local basis."""
+    return permutation_matrix(table)
+
+
 def embed_gate(qubits: int, sites: tuple[int, ...], gate: np.ndarray) -> np.ndarray:
     dimension = 1 << qubits
     output = np.zeros((dimension, dimension), dtype=complex)
     for source in range(dimension):
-        bits = [(source >> (qubits - 1 - index)) & 1 for index in range(qubits)]
-        local_source = 0
-        for site in sites:
-            local_source = (local_source << 1) | bits[site]
+        local_source = sum(
+            ((source >> site) & 1) << local_index
+            for local_index, site in enumerate(sites)
+        )
         for local_target in range(1 << len(sites)):
             amplitude = gate[local_target, local_source]
             if abs(amplitude) < 1.0e-15:
                 continue
-            target_bits = bits[:]
+            target = source
             for local_index, site in enumerate(sites):
-                target_bits[site] = (
-                    local_target >> (len(sites) - 1 - local_index)
-                ) & 1
-            target = 0
-            for bit in target_bits:
-                target = (target << 1) | bit
+                bit = (local_target >> local_index) & 1
+                target = (target & ~(1 << site)) | (bit << site)
             output[target, source] += amplitude
     return output
 
@@ -188,6 +189,42 @@ def decomposition_certificate():
     for deleted in range(len(ccz_word)):
         reduced = ccz_word[:deleted] + ccz_word[deleted + 1 :]
         ccz_deletions.append(float(np.linalg.norm(local_word_matrix(3, reduced) - CCZ)))
+    router_tables = {
+        "leaf": (0, 1, 2, 3),
+        "one_child": (1, 0, 2, 3),
+        "two_children": (1, 2, 0, 3),
+    }
+    router_words = {
+        "leaf": (),
+        "one_child": (((1,), X), ((1, 0), CNOT), ((1,), X)),
+        "two_children": (
+            ((0,), X),
+            ((1, 0), CNOT),
+            ((0, 1), CNOT),
+            ((1,), X),
+        ),
+    }
+    router_residuals = {
+        name: float(
+            np.linalg.norm(
+                local_word_matrix(2, router_words[name])
+                - semantic_router_matrix(table)
+            )
+        )
+        for name, table in router_tables.items()
+    }
+    router_deletions = {
+        name: tuple(
+            float(
+                np.linalg.norm(
+                    local_word_matrix(2, word[:deleted] + word[deleted + 1 :])
+                    - semantic_router_matrix(router_tables[name])
+                )
+            )
+            for deleted in range(len(word))
+        )
+        for name, word in router_words.items()
+    }
     return {
         "Toffoli_decomposition_residual": float(np.linalg.norm(toffoli_matrix - TOFFOLI)),
         "CCZ_H_Toffoli_H_residual": float(np.linalg.norm(ccz_matrix - CCZ)),
@@ -195,6 +232,21 @@ def decomposition_certificate():
         "minimum_Toffoli_subgate_deletion_residual": min(toffoli_deletions),
         "CCZ_subgate_deletions_tested": len(ccz_deletions),
         "minimum_CCZ_subgate_deletion_residual": min(ccz_deletions),
+        "router_semantic_integer_encoding": "left + 2*right",
+        "router_matrix_basis_encoding": "left + 2*right (substrate little-endian wires)",
+        "router_gate_set": "X/CNOT",
+        "router_gate_counts": {
+            name: len(word) for name, word in router_words.items()
+        },
+        "router_decomposition_residuals": router_residuals,
+        "router_subgate_deletion_residuals": router_deletions,
+        "minimum_router_subgate_deletion_residual": min(
+            residual
+            for name, rows in router_deletions.items()
+            if name != "leaf"
+            for residual in rows
+        ),
+        "maximum_router_decomposition_residual": max(router_residuals.values()),
     }
 
 
@@ -424,7 +476,12 @@ def compile_controller_semantics(root, shape, graph, site_map):
         "expected_router_applications": len(nodes) + nonroots,
         "router_template_reapplications": sum(router_counts.values()) - len(router_counts),
         "host_path_stop_barrier_choices": 0,
-        "fixed_depth_first_word": True,
+        "fixed_depth_first_word": (
+            len(events) > 0
+            and sum((catalog_non_epoch - used_non_epoch).values()) == 0
+            and sum((used_non_epoch - catalog_non_epoch).values()) == 0
+            and sum(router_counts.values()) == len(nodes) + nonroots
+        ),
     }
 
 
@@ -453,7 +510,35 @@ def compile_controller_primitives_with_root(root, events):
             output.append(Primitive(stage, event.kind, event.sites, SWAP, event.owner, event.role))
         elif event.kind.startswith("router_"):
             table_name = event.kind.removeprefix("router_")
-            output.append(Primitive(stage, event.kind, event.sites, permutation_matrix(tables[table_name]), event.owner, event.role))
+            left, right = event.sites
+            if table_name == "leaf":
+                word = ()
+            elif table_name == "one_child":
+                word = (
+                    ("X_right_pre", (right,), X),
+                    ("CNOT_right_left", (right, left), CNOT),
+                    ("X_right_post", (right,), X),
+                )
+            elif table_name == "two_children":
+                word = (
+                    ("X_left", (left,), X),
+                    ("CNOT_right_left", (right, left), CNOT),
+                    ("CNOT_left_right", (left, right), CNOT),
+                    ("X_right", (right,), X),
+                )
+            else:
+                raise AssertionError(table_name)
+            output.extend(
+                Primitive(
+                    stage,
+                    f"router_{table_name}_{kind}",
+                    sites,
+                    matrix,
+                    event.owner,
+                    event.role,
+                )
+                for kind, sites, matrix in word
+            )
         else:
             raise AssertionError(event.kind)
     return tuple(output)
@@ -579,6 +664,148 @@ def controller_certificate(root, shape, graph, site_map, events):
     }
 
 
+ANF_ZERO = frozenset()
+ANF_ONE = frozenset((frozenset(),))
+
+
+def anf_var(index):
+    return frozenset((frozenset((index,)),))
+
+
+def anf_xor(left, right):
+    return left.symmetric_difference(right)
+
+
+def anf_mul(left, right):
+    output = set()
+    for lterm in left:
+        for rterm in right:
+            term = lterm | rterm
+            if term in output:
+                output.remove(term)
+            else:
+                output.add(term)
+    return frozenset(output)
+
+
+def anf_degree(poly):
+    return max((len(term) for term in poly), default=-1)
+
+
+def substitute_router_table(table, left, right):
+    output = []
+    for bit in (0, 1):
+        truth = tuple((table[index] >> bit) & 1 for index in range(4))
+        coefficients = (
+            truth[0],
+            truth[1] ^ truth[0],
+            truth[2] ^ truth[0],
+            truth[3] ^ truth[2] ^ truth[1] ^ truth[0],
+        )
+        poly = ANF_ONE if coefficients[0] else ANF_ZERO
+        if coefficients[1]: poly = anf_xor(poly, left)
+        if coefficients[2]: poly = anf_xor(poly, right)
+        if coefficients[3]: poly = anf_xor(poly, anf_mul(left, right))
+        output.append(poly)
+    return tuple(output)
+
+
+def symbolic_controller_certificate(root, shape, graph, site_map, events):
+    length = shape[0]
+    geometry = root.echo.ca.box_geometry(length)
+    plaquettes = geometry["plaquettes"]
+    masks = geometry["masks"]
+    edges = geometry["edges"]
+    wire = defaultdict(lambda: ANF_ZERO)
+    initial = {}
+    for row_index, plaquette in enumerate(plaquettes):
+        poly = ANF_ZERO
+        for edge_index in range(len(edges)):
+            if (masks[row_index] >> edge_index) & 1:
+                poly = anf_xor(poly, anf_var(edge_index))
+        site = root.syndrome_slot_for_source(plaquette["anchor"], plaquette["axes"])
+        wire[site] = poly
+        initial[site] = poly
+    roots = root.echo.forest_roots(length)
+    for node in roots:
+        owner = root.echo.node_anchor(node)
+        wire[root.slot(owner, f"{node[0]}_controller", 4)] = ANF_ONE
+    target_edge = {}
+    for edge_index, (cell, _target, axis) in enumerate(edges):
+        graph_edge = graph.cross_edge[(cell, axis, 0)]
+        target_edge[site_map[graph_edge][0]] = edge_index
+    correction = [ANF_ZERO for _edge in edges]
+    tables = root.echo.local_permutation_tables()["router_permutations"]
+    for event in events:
+        role = event.role[0]
+        if role in ("controller_parent_xor", "controller_source_xor"):
+            token, control, target = event.sites
+            wire[target] = anf_xor(wire[target], anf_mul(wire[token], wire[control]))
+        elif role in ("controller_token_swap", "controller_root_epoch"):
+            left, right = event.sites
+            wire[left], wire[right] = wire[right], wire[left]
+        elif role == "controller_emit":
+            token, value, target = event.sites
+            edge_index = target_edge[target]
+            correction[edge_index] = anf_xor(
+                correction[edge_index], anf_mul(wire[token], wire[value])
+            )
+        elif role == "controller_router":
+            left, right = event.sites
+            table_name = event.kind.removeprefix("router_")
+            wire[left], wire[right] = substitute_router_table(
+                tables[table_name], wire[left], wire[right]
+            )
+        else:
+            raise AssertionError(("unexpected event", event))
+    action = 0
+    for row_index, plaquette in enumerate(plaquettes):
+        observed = ANF_ZERO
+        for edge_index, poly in enumerate(correction):
+            if (masks[row_index] >> edge_index) & 1:
+                observed = anf_xor(observed, poly)
+        site = root.syndrome_slot_for_source(plaquette["anchor"], plaquette["axes"])
+        action += observed != initial[site]
+    source = sum(wire[site] != poly for site, poly in initial.items())
+    value = token = router = fresh = spent = 0
+    root_set = set(roots)
+    for node in controller_nodes(root, length, graph):
+        owner = root.echo.node_anchor(node)
+        role = f"{node[0]}_controller"
+        value += wire[root.slot(owner, role, 0)] != ANF_ZERO
+        token += wire[root.slot(owner, role, 1)] != ANF_ZERO
+        router += wire[root.slot(owner, role, 2)] != ANF_ZERO
+        router += wire[root.slot(owner, role, 3)] != ANF_ZERO
+        if node in root_set:
+            fresh += wire[root.slot(owner, role, 4)] != ANF_ZERO
+            spent += wire[root.slot(owner, role, 5)] != ANF_ONE
+    failures = {
+        "syndrome_action_ANF_failures": action,
+        "source_register_mutations": source,
+        "value_work_return_failures": value,
+        "token_return_failures": token,
+        "router_return_failures": router,
+        "fresh_consumption_failures": fresh,
+        "spent_ack_failures": spent,
+        "nonlinear_correction_polynomials": sum(anf_degree(poly) > 1 for poly in correction),
+    }
+    return {
+        "proof_domain": "complete lawful syndrome image parameterized by coarse-edge variables",
+        "independent_edge_variables": len(edges),
+        "coarse_check_bits": len(masks),
+        "lawful_syndrome_rank": root.prep.gf2_rank(
+            [root.prep.apply_matrix(masks, 1 << index) for index in range(len(edges))]
+        ),
+        "maximum_intermediate_ANF_degree": max(
+            map(anf_degree, tuple(wire.values()) + tuple(correction)), default=-1
+        ),
+        "maximum_correction_ANF_degree": max(map(anf_degree, correction), default=-1),
+        "correction_ANF_monomials": sum(len(poly) for poly in correction),
+        "failure_census": failures,
+        "complete_lawful_domain_exact": all(value == 0 for value in failures.values()),
+    }
+
+
 def manhattan_path(left: Coord, right: Coord):
     current = list(left)
     output = [tuple(current)]
@@ -672,6 +899,321 @@ def covariance(root, sites):
     }
 
 
+def independent_check_macro_certificate():
+    identity = np.eye(2, dtype=complex)
+    y_gate = np.asarray(((0, -1j), (1j, 0)), dtype=complex)
+    z_ancilla = embed_gate(2, (1,), Z)
+    words = {
+        "X": (((0,), H), ((0, 1), CNOT), ((0,), H)),
+        "Y": (((0,), SDG), ((0,), H), ((0, 1), CNOT), ((0,), H), ((0,), S)),
+        "Z": (((0, 1), CNOT),),
+    }
+    axes = {"X": X, "Y": y_gate, "Z": Z}
+    residuals = {}
+    deletion_residuals = {}
+    for axis, word in words.items():
+        unitary = local_word_matrix(2, word)
+        residuals[axis] = float(
+            np.linalg.norm(
+                unitary.conj().T @ z_ancilla @ unitary
+                - embed_gate(2, (0,), axes[axis]) @ embed_gate(2, (1,), Z)
+            )
+        )
+        parity_index = next(index for index, (sites, _gate) in enumerate(word) if len(sites) == 2)
+        reduced = word[:parity_index] + word[parity_index + 1 :]
+        reduced_unitary = local_word_matrix(2, reduced)
+        expected = embed_gate(2, (0,), axes[axis]) @ embed_gate(2, (1,), Z)
+        deletion_residuals[axis] = float(
+            np.linalg.norm(reduced_unitary.conj().T @ z_ancilla @ reduced_unitary - expected)
+        )
+    sign = embed_gate(2, (1,), X)
+    sign_residual = float(np.linalg.norm(sign.conj().T @ z_ancilla @ sign + z_ancilla))
+    return {
+        "conjugation_residuals": residuals,
+        "negative_sign_X_residual": sign_residual,
+        "parity_gate_deletion_residuals": deletion_residuals,
+        "minimum_parity_gate_deletion_residual": min(deletion_residuals.values()),
+        "maximum_residual": max((*residuals.values(), sign_residual)),
+    }
+
+
+def independent_loader_macro_certificate():
+    identity = np.eye(2, dtype=complex)
+    y_gate = np.asarray(((0, -1j), (1j, 0)), dtype=complex)
+    words = {
+        "X": (((0, 1), CNOT),),
+        "Y": (((1,), SDG), ((0, 1), CNOT), ((1,), S)),
+        "Z": (((0, 1), CZ),),
+    }
+    axes = {"X": X, "Y": y_gate, "Z": Z}
+    residuals = {}
+    deletion_residuals = {}
+    for axis, word in words.items():
+        expected = np.zeros((4, 4), dtype=complex)
+        for source in range(4):
+            control = source & 1
+            target = (source >> 1) & 1
+            if control == 0:
+                expected[source, source] = 1.0
+                continue
+            for target_out in (0, 1):
+                expected[1 | (target_out << 1), source] = axes[axis][target_out, target]
+        residuals[axis] = float(np.linalg.norm(local_word_matrix(2, word) - expected))
+        controlled_index = next(index for index, (sites, _gate) in enumerate(word) if len(sites) == 2)
+        deletion_residuals[axis] = float(
+            np.linalg.norm(
+                local_word_matrix(2, word[:controlled_index] + word[controlled_index + 1 :])
+                - expected
+            )
+        )
+    negative_expected = np.zeros((4, 4), dtype=complex)
+    for source in range(4):
+        control = source & 1
+        target = (source >> 1) & 1
+        if control == 0:
+            negative_expected[source, source] = 1.0
+            continue
+        for target_out in (0, 1):
+            negative_expected[1 | (target_out << 1), source] = -X[target_out, target]
+    negative_residual = float(
+        np.linalg.norm(
+            local_word_matrix(2, (((0, 1), CNOT), ((0,), Z)))
+            - negative_expected
+        )
+    )
+    abstract_word = local_word_matrix(
+        2, (((0, 1), CNOT), ((1, 0), CNOT))
+    )
+    clean_residual = float(
+        np.linalg.norm(abstract_word[:, (0, 1)] - np.eye(4, dtype=complex)[:, (0, 2)])
+    )
+    unload_deleted = local_word_matrix(2, (((0, 1), CNOT),))
+    unload_deletion_residual = float(
+        np.linalg.norm(unload_deleted[:, (0, 1)] - np.eye(4, dtype=complex)[:, (0, 2)])
+    )
+    return {
+        "controlled_axis_residuals": residuals,
+        "negative_signed_X_control_residual": negative_residual,
+        "controlled_gate_deletion_residuals": deletion_residuals,
+        "minimum_controlled_gate_deletion_residual": min(deletion_residuals.values()),
+        "generic_clean_subspace_swap_residual": clean_residual,
+        "parity_unload_deletion_residual": unload_deletion_residual,
+        "maximum_residual": max((*residuals.values(), negative_residual, clean_residual)),
+    }
+
+
+def independent_physical_lift(root, row, site_map, site_index):
+    x = z = 0
+    for site, (xbit, zbit) in root.lift_pauli(row, None, site_map).items():
+        if xbit: x |= 1 << site_index[site]
+        if zbit: z |= 1 << site_index[site]
+    return root.base.Pauli(row.phase, x, z)
+
+
+def independent_emitted_isometry_certificate(
+    root,
+    graph,
+    site_map,
+    events,
+    primitives,
+    route,
+    symbolic_controller,
+    decomposition,
+    check_compilation,
+    loader_compilation,
+):
+    sites = tuple(sorted(root.occupied(site_map)))
+    site_index = {site: index for index, site in enumerate(sites)}
+
+    def lift(row):
+        support = root.lift_pauli(row, graph, site_map)
+        x = z = 0
+        for site, (xbit, zbit) in support.items():
+            if xbit: x |= 1 << site_index[site]
+            if zbit: z |= 1 << site_index[site]
+        return root.base.Pauli(row.phase, x, z)
+
+    cycles = [(lift(row), kind, key) for row, kind, key in root.cycle_rows(graph)]
+    drows = [lift(root.local_d(graph, cell)) for cell in graph.cells[:-1]]
+    repetition = []
+    for edge, (_u, _v, kind, _owner) in enumerate(graph.edges):
+        if kind != "matter_stream":
+            continue
+        left, right = site_map[edge]
+        repetition.append(
+            root.base.Pauli(z=(1 << site_index[left]) | (1 << site_index[right]))
+        )
+    logical = root.logical_rows(graph)
+    logical_z = [lift(zrow) for _cell, _mode, _xrow, zrow in logical]
+    physical_code = [row for row, _kind, _key in cycles] + drows + repetition
+    vacuum_rows = physical_code + logical_z
+    qubits = len(sites)
+    vacuum_rank = root.base.gf2_rank(row.symplectic(qubits) for row in vacuum_rows)
+    vacuum_commutators = sum(
+        not left.commutes(right)
+        for index, left in enumerate(vacuum_rows)
+        for right in vacuum_rows[index + 1 :]
+    )
+    vacuum_phases = root.base.stabilizer_phase_failures(vacuum_rows, qubits)
+
+    check_slots = {}
+    counters = Counter()
+    for physical, kind, key in cycles:
+        owner, role, _stage = check_owner(kind, key)
+        local_index = counters[(owner, role)]
+        counters[(owner, role)] += 1
+        check_slots[root.slot(owner, role, local_index)] = (physical, kind)
+    corrections = defaultdict(lambda: root.base.Pauli())
+    for row in root.correction_interactions(graph, site_map):
+        corrections[row.left] = corrections[row.left] @ root.base.Pauli(
+            z=1 << site_index[row.right]
+        )
+    triangle = bond = prior = 0
+    for slot, correction in corrections.items():
+        measured, kind = check_slots[slot]
+        matching = [
+            index
+            for index, (row, row_kind, _key) in enumerate(cycles)
+            if row == measured and row_kind == kind
+        ]
+        if len(matching) != 1:
+            raise AssertionError(("ambiguous check row", slot, matching))
+        expected = matching[0]
+        response = [not correction.commutes(row) for row, _kind, _key in cycles]
+        if kind == "cell_triangle":
+            triangle += sum(
+                bit != (index == expected)
+                for index, bit in enumerate(response)
+                if cycles[index][1] == "cell_triangle"
+            )
+        elif kind == "bond_rectangle":
+            bond += sum(
+                bit != (index == expected)
+                for index, bit in enumerate(response)
+                if cycles[index][1] == "bond_rectangle"
+            )
+            prior += sum(
+                bit
+                for index, bit in enumerate(response)
+                if cycles[index][1] in ("cell_triangle", "coarse_plaquette")
+            )
+    stream_z = [
+        root.base.Pauli(z=1 << site_index[site_map[edge][0]])
+        for edge, (_u, _v, kind, _owner) in enumerate(graph.edges)
+        if kind == "matter_stream"
+    ]
+    prior += sum(
+        not correction.commutes(row)
+        for correction in stream_z
+        for row, kind, _key in cycles
+        if kind == "cell_triangle"
+    )
+    cycle_commutators = sum(
+        not left[0].commutes(right[0])
+        for index, left in enumerate(cycles)
+        for right in cycles[index + 1 :]
+    )
+    preserve_rows = physical_code + logical_z
+    extraction_preservation = sum(
+        not cycle.commutes(row)
+        for cycle, _kind, _key in cycles
+        for row in preserve_rows
+    )
+    cycle_only = [row for row, _kind, _key in cycles]
+    correction_preservation = sum(
+        not correction.commutes(row)
+        for correction in tuple(corrections.values()) + tuple(stream_z)
+        for row in preserve_rows
+        if row not in cycle_only
+    )
+    initial_not_plus_z = sum(
+        row.x != 0 or row.phase % 4 != 0 for row in drows + repetition
+    )
+    check_macros = independent_check_macro_certificate()
+    loader_macros = independent_loader_macro_certificate()
+    algebra = root.stabilizer_and_loader_certificate(graph, site_map)
+    route_failures = sum(
+        route[key]
+        for key in (
+            "non_NN_failures",
+            "operand_failures",
+            "arbitrary_transit_register_return_failures",
+        )
+    )
+    primitive_unitarity = route["primitive_unitarity_failures"]
+    decomposition_failure = int(
+        max(
+            decomposition["Toffoli_decomposition_residual"],
+            decomposition["CCZ_H_Toffoli_H_residual"],
+            decomposition["maximum_router_decomposition_residual"],
+        )
+        > TOL
+    )
+    failures = {
+        "check_support_atlas_failures": (
+            check_compilation["atlas_missing"] + check_compilation["atlas_extra"]
+        ),
+        "check_macro_failures": int(check_macros["maximum_residual"] > TOL),
+        "inactive_check_macro_mutations": int(
+            check_macros["minimum_parity_gate_deletion_residual"] <= 1.0e-3
+        ),
+        "triangle_decoder_response_failures": triangle,
+        "coarse_controller_ANF_failures": sum(symbolic_controller["failure_census"].values()),
+        "bond_decoder_response_failures": bond,
+        "later_correction_prior_check_disturbance_failures": prior,
+        "cycle_check_commutator_failures": cycle_commutators,
+        "extraction_preservation_failures": extraction_preservation,
+        "Z_correction_preservation_failures": correction_preservation,
+        "initial_preserved_not_plus_Z_failures": initial_not_plus_z,
+        "vacuum_rank_deficit": qubits - vacuum_rank,
+        "vacuum_commutator_failures": vacuum_commutators,
+        "vacuum_phase_failures": vacuum_phases,
+        "loader_macro_failures": int(loader_macros["maximum_residual"] > TOL),
+        "loader_support_atlas_failures": (
+            loader_compilation["atlas_missing"]
+            + loader_compilation["atlas_extra"]
+            + loader_compilation["non_Z_axes_in_parity_unload"]
+        ),
+        "inactive_loader_macro_mutations": int(
+            loader_macros["minimum_controlled_gate_deletion_residual"] <= 1.0e-3
+            or loader_macros["parity_unload_deletion_residual"] <= 1.0e-3
+        ),
+        "logical_pair_failures": algebra["logical_canonical_failures"],
+        "logical_stabilizer_commutator_failures": algebra[
+            "logical_stabilizer_commutator_failures"
+        ],
+        "routed_SWAP_conjugation_failures": route_failures,
+        "primitive_unitarity_failures": primitive_unitarity,
+        "controller_local_decomposition_failures": decomposition_failure,
+        "inactive_router_decomposition_mutations": int(
+            decomposition["minimum_router_subgate_deletion_residual"] <= 1.0e-3
+        ),
+    }
+    exact = all(value == 0 for value in failures.values())
+    return {
+        "proof_method": (
+            "independent local-matrix macro identities, complete-lawful-domain ANF "
+            "controller execution, signed stabilizer rank, and symbolic returned-SWAP conjugation"
+        ),
+        "check_macro_operator_certificate": check_macros,
+        "controller_complete_ANF_certificate": symbolic_controller,
+        "loader_macro_operator_certificate": loader_macros,
+        "physical_code_rows": len(physical_code),
+        "physical_logical_Z_rows": len(logical_z),
+        "carrier_M2": qubits,
+        "vacuum_tableau_rank": vacuum_rank,
+        "unique_plus_vacuum": vacuum_rank == qubits,
+        "signed_logical_generator_pairs": len(logical),
+        "signed_logical_generator_identities_checked": 2 * len(logical),
+        "retained_garbage_factorization": (
+            "unique pure carrier vacuum plus input-untouched preparation stages makes "
+            "retained syndrome/spent garbage input-independent"
+        ),
+        "failure_census": failures,
+        "literal_emitted_encoder_isometry_exact": exact,
+    }
+
+
 def fixture(root, length):
     if not isinstance(length, int) or length < 2:
         raise ValueError("chronological E domain is integer cubic L>=2")
@@ -692,6 +1234,9 @@ def fixture(root, length):
     events, chronology = compile_controller_semantics(root, shape, graph, site_map)
     controller_primitives = compile_controller_primitives_with_root(root, events)
     controller_exec = controller_certificate(root, shape, graph, site_map, events)
+    controller_symbolic = symbolic_controller_certificate(
+        root, shape, graph, site_map, events
+    )
     stage_rows = (
         ("triangle_syndrome", checks["triangle_syndrome"]),
         ("triangle_correction", corrections["triangle_correction"]),
@@ -709,6 +1254,19 @@ def fixture(root, length):
     route = route_word(primitives, carrier, auxiliary, graph.cell_set)
     algebra = root.stabilizer_and_loader_certificate(graph, site_map)
     route_sites = route.pop("touched_sites")
+    decomposition = decomposition_certificate()
+    isometry = independent_emitted_isometry_certificate(
+        root,
+        graph,
+        site_map,
+        events,
+        primitives,
+        route,
+        controller_symbolic,
+        decomposition,
+        check_cert,
+        loader_cert,
+    )
     return {
         "L": length,
         "cells": length**3,
@@ -726,6 +1284,7 @@ def fixture(root, length):
         "loader_compilation": loader_cert,
         "controller_chronology": chronology,
         "controller_execution": controller_exec,
+        "emitted_encoder_isometry": isometry,
         "root_algebra": algebra,
         "exact_primitive_route": route,
         "dense_transit_capacity_M2": (16 * length + 3) ** 3,
@@ -761,6 +1320,12 @@ def frozen_target_comparison(fixtures):
             "controller_lawful_rank": (ours["controller_execution"]["lawful_syndrome_rank"], execution["lawful_coarse_syndrome_rank"]),
             "hostile_spent_token_failures": (ours["controller_execution"]["hostile_spent_reapplication_failures"].get("token_return", 0), execution["hostile_unguarded_spent_reapplication_token_failures"]),
             "hostile_spent_epoch_failures": (ours["controller_execution"]["hostile_spent_reapplication_failures"].get("spent_epoch", 0), execution["hostile_unguarded_spent_reapplication_spent_failures"]),
+            "emitted_encoder_isometry_exact": (
+                ours["emitted_encoder_isometry"]["literal_emitted_encoder_isometry_exact"],
+                theirs["joined_route"]["encoder_isometry"][
+                    "emitted_E_isometry_exact_on_declared_clean_domain"
+                ],
+            ),
         }
         bad = {key: pair for key, pair in comparisons.items() if pair[0] != pair[1]}
         mismatches.extend(f"L{ours['L']}:{key}" for key in bad)
@@ -777,7 +1342,7 @@ def frozen_target_comparison(fixtures):
         "comparison_rows": rows,
         "total_field_mismatches": len(mismatches),
         "mismatch_keys": mismatches,
-        "comparison_is_read_only_no_target_import": True,
+        "comparison_method": "read-only frozen metric comparison; target module not imported",
     }
 def main():
     parser = argparse.ArgumentParser()
@@ -840,7 +1405,15 @@ def main():
         algebra = row["root_algebra"]
         for key in ("logical_stabilizer_commutator_failures", "logical_canonical_failures"):
             if algebra[key]: failures.append(prefix + " algebra." + key)
-    for key in ("Toffoli_decomposition_residual", "CCZ_H_Toffoli_H_residual"):
+        if not row["emitted_encoder_isometry"][
+            "literal_emitted_encoder_isometry_exact"
+        ]:
+            failures.append(prefix + " emitted encoder isometry")
+    for key in (
+        "Toffoli_decomposition_residual",
+        "CCZ_H_Toffoli_H_residual",
+        "maximum_router_decomposition_residual",
+    ):
         if decomposition[key] > TOL: failures.append(key)
     if decomposition["minimum_Toffoli_subgate_deletion_residual"] <= 1.0e-3:
         failures.append("inactive Toffoli subgate deletion")
@@ -850,6 +1423,8 @@ def main():
         failures.append("unlawful domain")
     if target_comparison["total_field_mismatches"]:
         failures.append("frozen target comparison")
+    if target_comparison["target_status"] != "pass" or target_comparison["target_failures"]:
+        failures.append("frozen target did not pass")
     undetected_by_fixture = {
         f"L{row['L']}": row["controller_execution"]["undetected_semantic_event_deletions"]
         for row in fixtures
@@ -869,7 +1444,10 @@ def main():
             "joint_probe_imported": False,
             "frozen_joined_target_sha256": file_hash(ACTIVE_JOINED),
             "frozen_joined_receipt_sha256": file_hash(FROZEN_JOINED_RECEIPT),
-            "target_frozen_for_comparison": True,
+            "target_frozen_for_comparison": (
+                file_hash(ACTIVE_JOINED) == FROZEN_JOINED_SHA256
+                and file_hash(FROZEN_JOINED_RECEIPT) == FROZEN_JOINED_RECEIPT_SHA256
+            ),
         },
         "chronology": STAGES,
         "controller_local_decompositions": decomposition,
@@ -882,7 +1460,7 @@ def main():
             "noncubes_rejected": noncube_rejected,
         },
         "claim_boundary": {
-            "exact_execution": "seven-stage clean-domain H/S/T/CNOT/CZ/SWAP primitive word with returned NN routes on explicitly counted transit M2 capacity",
+            "exact_execution": "seven-stage clean-domain H/S/T/X/CNOT/CZ/SWAP primitive word with returned NN routes on explicitly counted transit M2 capacity",
             "root_atlas": "root interaction lists are template/address atlases; controller templates are reused by the independently emitted depth-first word and are not interpreted in list order as time",
             "controller_domain": "one supplied invocation with syndrome/input/work clean and every root fresh=1,token=spent=0",
             "not_claimed": "no local spent-sector admission guard, reset, recurrence, autonomous genesis, physical occurrence, or intrinsic time",

@@ -34,6 +34,12 @@ ROOT_RECEIPT = (
     ROOT / "outputs" / "cycle870_openreference_physical_m2_placement_receipt_2026_08_02.json"
 )
 AUDIT_INPUT_PATHS = (UPDATE_SOURCE, UPDATE_RECEIPT, ROOT_SOURCE, ROOT_RECEIPT)
+EXPECTED_INPUT_SHA256 = {
+    UPDATE_SOURCE: "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+    UPDATE_RECEIPT: "b1c812afbf25b84b99a5d171cf7925ffc86272e52c252c5f7ee68cb9f5a76807",
+    ROOT_SOURCE: "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+    ROOT_RECEIPT: "ab2d980726e336221e49808b6edcfaaae802173ee2f00fe96d8d55a4f2c6899d",
+}
 TOL = 2.0e-9
 EXPECTED_UPDATE_STAGES = (
     "onsite_coin_mass",
@@ -44,6 +50,12 @@ EXPECTED_UPDATE_STAGES = (
 
 
 def load_update():
+    for path, expected in EXPECTED_INPUT_SHA256.items():
+        observed = sha256(path.read_bytes()).hexdigest()
+        if observed != expected:
+            raise RuntimeError(
+                f"pinned Cycle870 input changed: {path.name}: {observed} != {expected}"
+            )
     spec = importlib.util.spec_from_file_location(
         "cycle871_openreference_native_update", UPDATE_SOURCE
     )
@@ -80,6 +92,38 @@ def permutation_matrix(table) -> np.ndarray:
     for source, target in enumerate(table):
         matrix[target, source] = 1.0
     return matrix
+
+
+def semantic_router_matrix(table) -> np.ndarray:
+    """Matrix in the substrate's little-endian |left,right> local basis."""
+    return permutation_matrix(table)
+
+
+def embed_local_gate(qubits: int, sites: tuple[int, ...], gate: np.ndarray) -> np.ndarray:
+    dimension = 1 << qubits
+    output = np.zeros((dimension, dimension), dtype=complex)
+    for source in range(dimension):
+        local_source = sum(
+            ((source >> site) & 1) << local_index
+            for local_index, site in enumerate(sites)
+        )
+        for local_target in range(1 << len(sites)):
+            amplitude = gate[local_target, local_source]
+            if abs(amplitude) < 1.0e-15:
+                continue
+            target = source
+            for local_index, site in enumerate(sites):
+                bit = (local_target >> local_index) & 1
+                target = (target & ~(1 << site)) | (bit << site)
+            output[target, source] += amplitude
+    return output
+
+
+def local_word_matrix(qubits: int, word) -> np.ndarray:
+    output = np.eye(1 << qubits, dtype=complex)
+    for sites, gate in word:
+        output = embed_local_gate(qubits, sites, gate) @ output
+    return output
 
 
 def file_sha256(path: Path) -> str:
@@ -505,6 +549,76 @@ def toffoli_primitives(event: PrimitiveOp):
     ]
 
 
+def router_primitive_word(event: PrimitiveOp):
+    """Decompose every echo-router table into X/CNOT on its two M2 sites."""
+    left, right = event.sites
+    table_name = event.kind.removeprefix("controller_router_")
+    if table_name == "leaf":
+        return []
+    if table_name == "one_child":
+        return [
+            PrimitiveOp(event.stage, "controller_router_X_right_pre", (right,), update.c707.c655.X),
+            PrimitiveOp(event.stage, "controller_router_CNOT_right_left", (right, left), update.c707.c655.CNOT),
+            PrimitiveOp(event.stage, "controller_router_X_right_post", (right,), update.c707.c655.X),
+        ]
+    if table_name == "two_children":
+        return [
+            PrimitiveOp(event.stage, "controller_router_X_left", (left,), update.c707.c655.X),
+            PrimitiveOp(event.stage, "controller_router_CNOT_right_left", (right, left), update.c707.c655.CNOT),
+            PrimitiveOp(event.stage, "controller_router_CNOT_left_right", (left, right), update.c707.c655.CNOT),
+            PrimitiveOp(event.stage, "controller_router_X_right", (right,), update.c707.c655.X),
+        ]
+    raise AssertionError(table_name)
+
+
+def router_decomposition_certificate():
+    tables = root.echo.local_permutation_tables()["router_permutations"]
+    residuals = {}
+    deletion_residuals = {}
+    gate_counts = {}
+    dummy_sites = ((0, 0, 0), (1, 0, 0))
+    for table_name, table in tables.items():
+        event = PrimitiveOp(
+            "router_test",
+            f"controller_router_{table_name}",
+            dummy_sites,
+            semantic_router_matrix(table),
+        )
+        word = router_primitive_word(event)
+        local_word = []
+        for operation in word:
+            local_sites = tuple(dummy_sites.index(site) for site in operation.sites)
+            local_word.append((local_sites, operation.matrix))
+        residuals[table_name] = float(
+            np.linalg.norm(local_word_matrix(2, local_word) - semantic_router_matrix(table))
+        )
+        deletion_residuals[table_name] = tuple(
+            float(
+                np.linalg.norm(
+                    local_word_matrix(2, local_word[:deleted] + local_word[deleted + 1 :])
+                    - semantic_router_matrix(table)
+                )
+            )
+            for deleted in range(len(local_word))
+        )
+        gate_counts[table_name] = len(word)
+    return {
+        "semantic_integer_encoding": "left + 2*right",
+        "matrix_basis_encoding": "left + 2*right (substrate little-endian wires)",
+        "gate_set": "X/CNOT",
+        "gate_counts": gate_counts,
+        "residuals": residuals,
+        "subgate_deletion_residuals": deletion_residuals,
+        "minimum_nonidentity_subgate_deletion_residual": min(
+            value
+            for table_name, rows in deletion_residuals.items()
+            if table_name != "leaf"
+            for value in rows
+        ),
+        "maximum_residual": max(residuals.values()),
+    }
+
+
 def compile_controller_events(events):
     output = []
     for event in events:
@@ -520,6 +634,8 @@ def compile_controller_events(events):
             output.append(
                 PrimitiveOp(event.stage, "controller_CCZ_H", (target,), update.c707.c655.H)
             )
+        elif event.kind.startswith("controller_router_"):
+            output.extend(router_primitive_word(event))
         else:
             output.append(event)
     return output
@@ -563,7 +679,7 @@ def controller_chronology_primitives(shape, graph, site_map, controller_catalog)
                 stage,
                 f"controller_router_{table_name}",
                 (root.slot(owner, role, 2), root.slot(owner, role, 3)),
-                permutation_matrix(table),
+                semantic_router_matrix(table),
                 owner,
                 atlas_role,
             )
@@ -712,6 +828,15 @@ def controller_chronology_primitives(shape, graph, site_map, controller_catalog)
     )
     root_count = len(root.echo.forest_roots(length))
     compiled = compile_controller_events(output)
+    h_target = embed_local_gate(3, (2,), update.c707.c655.H)
+    ccz_residual = float(
+        np.linalg.norm(
+            h_target
+            @ update.c707.c655.ideal_toffoli()
+            @ h_target
+            - np.diag((1, 1, 1, 1, 1, 1, 1, -1))
+        )
+    )
     return compiled, output, {
         "catalog_interactions": sum(catalog.values()),
         "chronological_semantic_events": len(output),
@@ -725,7 +850,10 @@ def controller_chronology_primitives(shape, graph, site_map, controller_catalog)
         "catalog_root_epoch_templates": root_count,
         "literal_fresh_to_token_SWAPS": root_count,
         "literal_token_to_spent_SWAPS": root_count,
-        "root_epoch_template_expanded_to_literal_two_SWAP_handshake": True,
+        "root_epoch_template_expanded_to_literal_two_SWAP_handshake": (
+            sum(row.atlas_role and row.atlas_role[0] == "controller_root_epoch" for row in output)
+            == 2 * root_count
+        ),
         "router_template_reapplications": sum(router_applications.values())
         - len(router_applications),
         "router_applications": sum(router_applications.values()),
@@ -733,8 +861,20 @@ def controller_chronology_primitives(shape, graph, site_map, controller_catalog)
         + sum(1 for node in controller_nodes(length, graph) if root.echo.parent_and_source(node) is not None),
         "root_spent_epoch_gates": root_count,
         "Toffoli_decomposition_residual": update.c707.c655.local_decomposition_residuals()[0],
-        "CCZ_is_H_target_Toffoli_H_target": True,
-        "fixed_depth_first_forest_word": True,
+        "CCZ_H_Toffoli_H_residual": ccz_residual,
+        "CCZ_is_H_target_Toffoli_H_target": ccz_residual <= TOL,
+        "router_decomposition": router_decomposition_certificate(),
+        "fixed_depth_first_forest_word": (
+            len(output) > 0
+            and sum((catalog_non_epoch - used_non_epoch).values()) == 0
+            and sum((used_non_epoch - catalog_non_epoch).values()) == 0
+            and sum(router_applications.values())
+            == len(controller_nodes(length, graph))
+            + sum(
+                root.echo.parent_and_source(node) is not None
+                for node in controller_nodes(length, graph)
+            )
+        ),
         "host_path_stop_barrier_choices": 0,
     }
 
@@ -912,6 +1052,535 @@ def controller_execution_certificate(shape, graph, site_map, operations):
             "unguarded spent-sector reapplication reactivates token/spent state, so no recurrent claim"
         ),
         "local_permutation_tables": root.echo.local_permutation_tables(),
+    }
+
+
+ANF_ZERO = frozenset()
+ANF_ONE = frozenset((frozenset(),))
+
+
+def anf_variable(index: int):
+    return frozenset((frozenset((index,)),))
+
+
+def anf_xor(left, right):
+    return left.symmetric_difference(right)
+
+
+def anf_product(left, right):
+    output = set()
+    for lterm in left:
+        for rterm in right:
+            term = lterm | rterm
+            if term in output:
+                output.remove(term)
+            else:
+                output.add(term)
+    return frozenset(output)
+
+
+def anf_degree(polynomial) -> int:
+    return max((len(term) for term in polynomial), default=-1)
+
+
+def anf_two_bit_table(table, left, right):
+    """Substitute ANF inputs into a left+2*right truth table."""
+    outputs = []
+    for output_bit in (0, 1):
+        truth = tuple((table[index] >> output_bit) & 1 for index in range(4))
+        coefficients = (
+            truth[0],
+            truth[1] ^ truth[0],
+            truth[2] ^ truth[0],
+            truth[3] ^ truth[2] ^ truth[1] ^ truth[0],
+        )
+        polynomial = ANF_ONE if coefficients[0] else ANF_ZERO
+        if coefficients[1]:
+            polynomial = anf_xor(polynomial, left)
+        if coefficients[2]:
+            polynomial = anf_xor(polynomial, right)
+        if coefficients[3]:
+            polynomial = anf_xor(polynomial, anf_product(left, right))
+        outputs.append(polynomial)
+    return tuple(outputs)
+
+
+def controller_symbolic_certificate(shape, graph, site_map, operations):
+    """Exact ANF execution on the complete lawful coarse-syndrome image.
+
+    Each coarse edge is an independent Boolean indeterminate.  Equality of the
+    resulting ANFs proves the controller action on every lawful syndrome basis
+    state at once, rather than sampling unit and pair syndromes.
+    """
+    length = shape[0]
+    geometry = root.echo.ca.box_geometry(length)
+    plaquettes = geometry["plaquettes"]
+    masks = geometry["masks"]
+    edges = geometry["edges"]
+    bits = defaultdict(lambda: ANF_ZERO)
+    initial_syndromes = {}
+    for plaquette_index, plaquette in enumerate(plaquettes):
+        polynomial = ANF_ZERO
+        mask = masks[plaquette_index]
+        for edge_index in range(len(edges)):
+            if (mask >> edge_index) & 1:
+                polynomial = anf_xor(polynomial, anf_variable(edge_index))
+        slot = root.syndrome_slot_for_source(
+            plaquette["anchor"], plaquette["axes"]
+        )
+        bits[slot] = polynomial
+        initial_syndromes[slot] = polynomial
+    roots = root.echo.forest_roots(length)
+    nodes = controller_nodes(length, graph)
+    for node in roots:
+        owner = root.echo.node_anchor(node)
+        role = f"{node[0]}_controller"
+        bits[root.slot(owner, role, 4)] = ANF_ONE
+    target_edge = {}
+    for edge_index, (cell, _target, axis) in enumerate(edges):
+        graph_edge = graph.cross_edge[(cell, axis, 0)]
+        target_edge[site_map[graph_edge][0]] = edge_index
+    corrections = [ANF_ZERO for _edge in edges]
+    tables = root.echo.local_permutation_tables()["router_permutations"]
+    for operation in operations:
+        role = operation.atlas_role[0] if operation.atlas_role else ""
+        if role in ("controller_parent_xor", "controller_source_xor"):
+            token, control, target = operation.sites
+            bits[target] = anf_xor(
+                bits[target], anf_product(bits[token], bits[control])
+            )
+        elif role in ("controller_token_swap", "controller_root_epoch"):
+            left, right = operation.sites
+            bits[left], bits[right] = bits[right], bits[left]
+        elif role == "controller_emit":
+            token, value, target = operation.sites
+            edge_index = target_edge[target]
+            corrections[edge_index] = anf_xor(
+                corrections[edge_index], anf_product(bits[token], bits[value])
+            )
+        elif role == "controller_router":
+            left, right = operation.sites
+            table_name = operation.kind.removeprefix("controller_router_")
+            bits[left], bits[right] = anf_two_bit_table(
+                tables[table_name], bits[left], bits[right]
+            )
+        else:
+            raise AssertionError(("unknown symbolic controller operation", operation))
+    action_failures = 0
+    for plaquette_index, plaquette in enumerate(plaquettes):
+        observed = ANF_ZERO
+        mask = masks[plaquette_index]
+        for edge_index, correction in enumerate(corrections):
+            if (mask >> edge_index) & 1:
+                observed = anf_xor(observed, correction)
+        slot = root.syndrome_slot_for_source(
+            plaquette["anchor"], plaquette["axes"]
+        )
+        action_failures += observed != initial_syndromes[slot]
+    source_mutations = sum(bits[slot] != value for slot, value in initial_syndromes.items())
+    value_failures = token_failures = router_failures = 0
+    fresh_failures = spent_failures = 0
+    root_set = set(roots)
+    for node in nodes:
+        owner = root.echo.node_anchor(node)
+        role = f"{node[0]}_controller"
+        value_failures += bits[root.slot(owner, role, 0)] != ANF_ZERO
+        token_failures += bits[root.slot(owner, role, 1)] != ANF_ZERO
+        router_failures += bits[root.slot(owner, role, 2)] != ANF_ZERO
+        router_failures += bits[root.slot(owner, role, 3)] != ANF_ZERO
+        if node in root_set:
+            fresh_failures += bits[root.slot(owner, role, 4)] != ANF_ZERO
+            spent_failures += bits[root.slot(owner, role, 5)] != ANF_ONE
+    all_polynomials = tuple(bits.values()) + tuple(corrections)
+    maximum_degree = max(map(anf_degree, all_polynomials), default=-1)
+    nonlinear_corrections = sum(anf_degree(row) > 1 for row in corrections)
+    failures = {
+        "syndrome_action_ANF_failures": action_failures,
+        "source_register_mutations": source_mutations,
+        "value_work_return_failures": value_failures,
+        "token_return_failures": token_failures,
+        "router_return_failures": router_failures,
+        "fresh_consumption_failures": fresh_failures,
+        "spent_ack_failures": spent_failures,
+        "nonlinear_correction_polynomials": nonlinear_corrections,
+    }
+    return {
+        "proof_domain": "complete image of the coarse edge-to-plaquette boundary map",
+        "independent_edge_variables": len(edges),
+        "lawful_syndrome_rank": root.prep.gf2_rank(
+            [root.prep.apply_matrix(masks, 1 << index) for index in range(len(edges))]
+        ),
+        "coarse_check_bits": len(masks),
+        "maximum_intermediate_ANF_degree": maximum_degree,
+        "maximum_correction_ANF_degree": max(map(anf_degree, corrections), default=-1),
+        "correction_ANF_monomials": sum(len(row) for row in corrections),
+        "failure_census": failures,
+        "all_lawful_basis_states_and_superpositions_proved": all(
+            value == 0 for value in failures.values()
+        ),
+        "phase_statement": (
+            "the semantic word is a computational-basis permutation followed only by "
+            "the displayed token/value-controlled Z corrections; exact Toffoli, CCZ, "
+            "and router decompositions introduce no residual scalar"
+        ),
+    }
+
+
+def check_macro_certificate():
+    identity = np.eye(2, dtype=complex)
+    z_ancilla = embed_local_gate(2, (1,), Z_GATE)
+    axes = {
+        "X": update.c707.c655.X,
+        "Y": np.asarray(((0, -1j), (1j, 0)), dtype=complex),
+        "Z": Z_GATE,
+    }
+    words = {
+        "X": (
+            ((0,), update.c707.c655.H),
+            ((0, 1), update.c707.c655.CNOT),
+            ((0,), update.c707.c655.H),
+        ),
+        "Y": (
+            ((0,), update.c707.SDG_GATE),
+            ((0,), update.c707.c655.H),
+            ((0, 1), update.c707.c655.CNOT),
+            ((0,), update.c707.c655.H),
+            ((0,), update.c707.S_GATE),
+        ),
+        "Z": (((0, 1), update.c707.c655.CNOT),),
+    }
+    residuals = {}
+    parity_gate_deletion_residuals = {}
+    for axis, word in words.items():
+        unitary = local_word_matrix(2, word)
+        expected = (
+            embed_local_gate(2, (0,), axes[axis])
+            @ embed_local_gate(2, (1,), Z_GATE)
+        )
+        residuals[axis] = float(
+            np.linalg.norm(unitary.conj().T @ z_ancilla @ unitary - expected)
+        )
+        parity_index = next(index for index, (sites, _gate) in enumerate(word) if len(sites) == 2)
+        reduced = word[:parity_index] + word[parity_index + 1 :]
+        reduced_unitary = local_word_matrix(2, reduced)
+        parity_gate_deletion_residuals[axis] = float(
+            np.linalg.norm(
+                reduced_unitary.conj().T @ z_ancilla @ reduced_unitary - expected
+            )
+        )
+    sign_unitary = embed_local_gate(2, (1,), update.c707.c655.X)
+    sign_residual = float(
+        np.linalg.norm(sign_unitary.conj().T @ z_ancilla @ sign_unitary + z_ancilla)
+    )
+    return {
+        "conjugation_residuals": residuals,
+        "negative_row_sign_X_residual": sign_residual,
+        "parity_gate_deletion_residuals": parity_gate_deletion_residuals,
+        "minimum_parity_gate_deletion_residual": min(
+            parity_gate_deletion_residuals.values()
+        ),
+        "maximum_residual": max((*residuals.values(), sign_residual)),
+    }
+
+
+def loader_macro_certificate():
+    identity = np.eye(2, dtype=complex)
+    axes = {
+        "X": update.c707.c655.X,
+        "Y": np.asarray(((0, -1j), (1j, 0)), dtype=complex),
+        "Z": Z_GATE,
+    }
+    words = {
+        "X": (((0, 1), update.c707.c655.CNOT),),
+        "Y": (
+            ((1,), update.c707.SDG_GATE),
+            ((0, 1), update.c707.c655.CNOT),
+            ((1,), update.c707.S_GATE),
+        ),
+        "Z": (((0, 1), CZ_GATE),),
+    }
+    residuals = {}
+    controlled_gate_deletion_residuals = {}
+    for axis, word in words.items():
+        expected = np.zeros((4, 4), dtype=complex)
+        for source in range(4):
+            control = source & 1
+            target = (source >> 1) & 1
+            if control == 0:
+                expected[source, source] = 1.0
+                continue
+            for target_out in (0, 1):
+                expected[1 | (target_out << 1), source] = axes[axis][
+                    target_out, target
+                ]
+        residuals[axis] = float(
+            np.linalg.norm(local_word_matrix(2, word) - expected)
+        )
+        controlled_index = next(index for index, (sites, _gate) in enumerate(word) if len(sites) == 2)
+        controlled_gate_deletion_residuals[axis] = float(
+            np.linalg.norm(
+                local_word_matrix(2, word[:controlled_index] + word[controlled_index + 1 :])
+                - expected
+            )
+        )
+    negative_expected = np.zeros((4, 4), dtype=complex)
+    for source in range(4):
+        control = source & 1
+        target = (source >> 1) & 1
+        if control == 0:
+            negative_expected[source, source] = 1.0
+            continue
+        for target_out in (0, 1):
+            negative_expected[1 | (target_out << 1), source] = -axes["X"][
+                target_out, target
+            ]
+    negative_word = (
+        ((0, 1), update.c707.c655.CNOT),
+        ((0,), Z_GATE),
+    )
+    negative_residual = float(
+        np.linalg.norm(local_word_matrix(2, negative_word) - negative_expected)
+    )
+    abstract_loader = local_word_matrix(
+        2,
+        (
+            ((0, 1), update.c707.c655.CNOT),
+            ((1, 0), update.c707.c655.CNOT),
+        ),
+    )
+    clean_columns = abstract_loader[:, (0, 1)]
+    expected_columns = np.eye(4, dtype=complex)[:, (0, 2)]
+    clean_subspace_residual = float(np.linalg.norm(clean_columns - expected_columns))
+    unload_deleted = local_word_matrix(
+        2, (((0, 1), update.c707.c655.CNOT),)
+    )
+    unload_deletion_residual = float(
+        np.linalg.norm(unload_deleted[:, (0, 1)] - expected_columns)
+    )
+    return {
+        "controlled_axis_residuals": residuals,
+        "negative_signed_X_control_residual": negative_residual,
+        "controlled_gate_deletion_residuals": controlled_gate_deletion_residuals,
+        "minimum_controlled_gate_deletion_residual": min(
+            controlled_gate_deletion_residuals.values()
+        ),
+        "logical_Z_parity_unload_gate": "CNOT(logical-Z support -> raw input)",
+        "generic_clean_subspace_swap_residual": clean_subspace_residual,
+        "parity_unload_deletion_residual": unload_deletion_residual,
+        "maximum_residual": max(
+            (*residuals.values(), negative_residual, clean_subspace_residual)
+        ),
+    }
+
+
+def encoder_isometry_certificate(
+    graph,
+    site_map,
+    context,
+    controller_symbolic,
+    controller_chronology,
+    root_primitive_route,
+    check_compilation,
+    loader_compilation,
+):
+    """Connect the emitted seven-stage word to the OpenReference isometry."""
+    cycle_data = root.cycle_rows(graph)
+    physical_cycles = [
+        (update.physical_lift(row, context), kind, key)
+        for row, kind, key in cycle_data
+    ]
+    logical = root.logical_rows(graph)
+    physical_logical_z = [
+        update.physical_lift(zrow, context)
+        for _cell, _mode, _xrow, zrow in logical
+    ]
+    physical_code = list(update.physical_stabilizers(context))
+    vacuum_rows = physical_code + physical_logical_z
+    qubits = len(context.sites)
+    vacuum_rank = root.base.gf2_rank(
+        row.symplectic(qubits) for row in vacuum_rows
+    )
+    vacuum_commutators = sum(
+        not left.commutes(right)
+        for index, left in enumerate(vacuum_rows)
+        for right in vacuum_rows[index + 1 :]
+    )
+    vacuum_phase_failures = root.base.stabilizer_phase_failures(vacuum_rows, qubits)
+
+    # Reconstruct the literal Z corrections selected by triangle and bond
+    # syndrome ancillas and compare their commutation response to the measured
+    # check rows.  This is the operator form of coherent syndrome correction.
+    check_by_slot = {}
+    check_counters = Counter()
+    for physical, kind, key in physical_cycles:
+        owner, role, _stage = check_owner_role(kind, key)
+        local_index = check_counters[(owner, role)]
+        check_counters[(owner, role)] += 1
+        check_by_slot[root.slot(owner, role, local_index)] = (physical, kind)
+    correction_by_slot = defaultdict(lambda: Pauli())
+    for row in root.correction_interactions(graph, site_map):
+        target_index = context.index[row.right]
+        correction_by_slot[row.left] = correction_by_slot[row.left] @ Pauli(
+            z=1 << target_index
+        )
+    triangle_response_failures = bond_response_failures = 0
+    prior_disturbance_failures = 0
+    for slot, correction in correction_by_slot.items():
+        measured, kind = check_by_slot[slot]
+        response = [not correction.commutes(row) for row, _kind, _key in physical_cycles]
+        expected_index = next(
+            index
+            for index, (row, row_kind, _key) in enumerate(physical_cycles)
+            if row == measured and row_kind == kind
+        )
+        if kind == "cell_triangle":
+            triangle_response_failures += sum(
+                bit != (index == expected_index)
+                for index, bit in enumerate(response)
+                if physical_cycles[index][1] == "cell_triangle"
+            )
+        elif kind == "bond_rectangle":
+            bond_response_failures += sum(
+                bit != (index == expected_index)
+                for index, bit in enumerate(response)
+                if physical_cycles[index][1] == "bond_rectangle"
+            )
+            prior_disturbance_failures += sum(
+                bit
+                for index, bit in enumerate(response)
+                if physical_cycles[index][1] in ("cell_triangle", "coarse_plaquette")
+            )
+    stream_z_targets = [
+        Pauli(z=1 << context.index[site_map[edge][0]])
+        for edge, (_u, _v, kind, _owner) in enumerate(graph.edges)
+        if kind == "matter_stream"
+    ]
+    coarse_prior_disturbance = sum(
+        not correction.commutes(row)
+        for correction in stream_z_targets
+        for row, kind, _key in physical_cycles
+        if kind == "cell_triangle"
+    )
+    cycle_commutators = sum(
+        not left[0].commutes(right[0])
+        for index, left in enumerate(physical_cycles)
+        for right in physical_cycles[index + 1 :]
+    )
+    preserved_rows = physical_code + physical_logical_z
+    extraction_preservation_failures = sum(
+        not cycle.commutes(row)
+        for cycle, _kind, _key in physical_cycles
+        for row in preserved_rows
+    )
+    correction_preservation_failures = sum(
+        not correction.commutes(row)
+        for correction in tuple(correction_by_slot.values()) + tuple(stream_z_targets)
+        for row in preserved_rows
+        if row not in [cycle for cycle, _kind, _key in physical_cycles]
+    )
+    initial_preserved = tuple(
+        update.physical_lift(root.local_d(graph, cell), context)
+        for cell in graph.cells[:-1]
+    ) + update.repetition_rows(context)
+    initial_preserved_not_plus_Z = sum(
+        row.x != 0 or row.phase % 4 != 0 for row in initial_preserved
+    )
+    check_macros = check_macro_certificate()
+    loader_macros = loader_macro_certificate()
+    controller_failures = controller_symbolic["failure_census"]
+    route_conjugation_failures = sum(
+        root_primitive_route[key]
+        for key in (
+            "non_NN_failures",
+            "operand_order_failures",
+            "route_return_failures",
+        )
+    )
+    router_residual = controller_chronology["router_decomposition"][
+        "maximum_residual"
+    ]
+    decomposition_residual = max(
+        controller_chronology["Toffoli_decomposition_residual"],
+        controller_chronology["CCZ_H_Toffoli_H_residual"],
+        router_residual,
+    )
+    root_algebra = root.stabilizer_and_loader_certificate(graph, site_map)
+    failure_census = {
+        "check_support_atlas_failures": (
+            check_compilation["support_atlas_missing"]
+            + check_compilation["support_atlas_extra"]
+        ),
+        "check_macro_failures": int(check_macros["maximum_residual"] > TOL),
+        "inactive_check_macro_mutations": int(
+            check_macros["minimum_parity_gate_deletion_residual"] <= 1.0e-3
+        ),
+        "triangle_decoder_response_failures": triangle_response_failures,
+        "coarse_controller_ANF_failures": sum(controller_failures.values()),
+        "bond_decoder_response_failures": bond_response_failures,
+        "later_correction_prior_check_disturbance_failures": (
+            prior_disturbance_failures + coarse_prior_disturbance
+        ),
+        "cycle_check_commutator_failures": cycle_commutators,
+        "extraction_preservation_failures": extraction_preservation_failures,
+        "Z_correction_preservation_failures": correction_preservation_failures,
+        "initial_preserved_not_plus_Z_failures": initial_preserved_not_plus_Z,
+        "vacuum_rank_deficit": qubits - vacuum_rank,
+        "vacuum_commutator_failures": vacuum_commutators,
+        "vacuum_phase_failures": vacuum_phase_failures,
+        "loader_macro_failures": int(loader_macros["maximum_residual"] > TOL),
+        "loader_support_atlas_failures": (
+            loader_compilation["support_atlas_missing"]
+            + loader_compilation["support_atlas_extra"]
+            + loader_compilation["non_Z_axes_in_parity_unload"]
+        ),
+        "inactive_loader_macro_mutations": int(
+            loader_macros["minimum_controlled_gate_deletion_residual"] <= 1.0e-3
+            or loader_macros["parity_unload_deletion_residual"] <= 1.0e-3
+        ),
+        "logical_pair_failures": root_algebra["logical_canonical_failures"],
+        "logical_stabilizer_commutator_failures": root_algebra[
+            "logical_stabilizer_commutator_failures"
+        ],
+        "route_conjugation_failures": route_conjugation_failures,
+        "controller_decomposition_failures": int(decomposition_residual > TOL),
+        "inactive_router_decomposition_mutations": int(
+            controller_chronology["router_decomposition"][
+                "minimum_nonidentity_subgate_deletion_residual"
+            ]
+            <= 1.0e-3
+        ),
+    }
+    exact = all(value == 0 for value in failure_census.values())
+    return {
+        "clean_domain": (
+            "carrier/raw-code target, syndrome, controller, and route-work registers "
+            "are initialized as declared; raw logical inputs are arbitrary"
+        ),
+        "check_macro_operator_certificate": check_macros,
+        "coarse_controller_complete_ANF_certificate": controller_symbolic,
+        "loader_macro_operator_certificate": loader_macros,
+        "physical_code_rows": len(physical_code),
+        "physical_logical_Z_rows": len(physical_logical_z),
+        "carrier_M2": qubits,
+        "vacuum_tableau_rank": vacuum_rank,
+        "unique_plus_vacuum": vacuum_rank == qubits,
+        "signed_logical_generator_pairs": len(logical),
+        "signed_logical_generator_identities_checked": 2 * len(logical),
+        "retained_garbage_statement": (
+            "syndrome and spent-ack registers may retain an input-independent state; "
+            "full-rank carrier vacuum uniqueness factorizes them before logical loading"
+        ),
+        "input_unload_statement": (
+            "exact logical-Z parity CNOT returns every raw input qubit to |0> after "
+            "the signed controlled logical-X word"
+        ),
+        "routing_conjugation_statement": (
+            "for every emitted two-site primitive, the forward SWAP permutation places "
+            "the ordered operands at the central gate and the inverse permutation restores "
+            "every path label, proving SWAP-conjugation equality"
+        ),
+        "failure_census": failure_census,
+        "emitted_E_isometry_exact_on_declared_clean_domain": exact,
     }
 
 
@@ -1368,8 +2037,9 @@ def exact_global_phase_certificate(inventory, graph):
             contact_phase - expected_contact_phase
         ),
         "equality_scope": (
-            "G_physical_exact includes the displayed zero-site scalar; the routed "
-            "rotation word alone is only projectively equal to G_native"
+            "U_routed is the executable physical word and defines the physical channel; "
+            "G_physical_exact is a formal vector representative obtained by multiplying "
+            "U_routed by the displayed unrouted scalar"
         ),
     }
 
@@ -1386,7 +2056,13 @@ def root_lift_as_pauli(row, graph, site_map, context) -> Pauli:
 
 
 def intertwiner_certificate(
-    graph, site_map, context, rotations, constraints, phase_certificate
+    graph,
+    site_map,
+    context,
+    rotations,
+    constraints,
+    phase_certificate,
+    encoder_isometry,
 ):
     root_stabilizers = tuple(row for row, _kind, _key in root.cycle_rows(graph)) + tuple(
         root.local_d(graph, cell) for cell in graph.cells[:-1]
@@ -1444,6 +2120,14 @@ def intertwiner_certificate(
             "signed_repetition_lift_homomorphism_failures"
         ],
     }
+    obligations_zero = all(value == 0 for value in obligations.values())
+    representative_phase_exact = phase_certificate["phase_sum_residual_mod_2pi"] <= TOL
+    emitted_encoder_exact = encoder_isometry[
+        "emitted_E_isometry_exact_on_declared_clean_domain"
+    ]
+    exact_intertwiner = (
+        obligations_zero and representative_phase_exact and emitted_encoder_exact
+    )
     return {
         "equation": "G_physical_exact E_joined = E_joined G_native_exact",
         "projective_routed_word_equation": (
@@ -1469,16 +2153,28 @@ def intertwiner_certificate(
         "phase_sum_residual_mod_2pi": phase_certificate[
             "phase_sum_residual_mod_2pi"
         ],
-        "routed_rotation_word_without_scalar_is_projective_only": True,
-        "exact_scalar_included_in_G_physical_exact": True,
+        "executable_physical_law": (
+            "the channel/projective class of the returned routed rotation word U_routed"
+        ),
+        "formal_vector_representative": (
+            "G_physical_exact = exp(-i*phi) U_routed; the scalar fixes an operator "
+            "representative and is not a physical gate"
+        ),
+        "routed_rotation_word_without_scalar_is_projective_only": (
+            phase_certificate["routed_gate_count"] == 0
+            and representative_phase_exact
+        ),
+        "formal_representative_scalar_checked": representative_phase_exact,
         "exact_vector_statement": (
             "for every input vector |psi>, G_physical_exact E_joined|psi> "
             "= E_joined G_native_exact|psi> with no residual phase"
         ),
-        "exact_vector_equality_follows_for_all_input_vectors": True,
+        "emitted_encoder_isometry_exact": emitted_encoder_exact,
+        "exact_vector_equality_follows_for_all_input_vectors": exact_intertwiner,
         "dense_isometry_materialized": False,
         "proof_mode": "exact generator relations, analytic exponentiation, factor induction",
-        "all_proof_obligations_zero": all(value == 0 for value in obligations.values()),
+        "all_proof_obligations_zero": obligations_zero,
+        "exact_intertwiner_pass": exact_intertwiner,
     }
 
 
@@ -1640,6 +2336,19 @@ def stage_inventory(graph, site_map, context, coin_gates):
     controller_execution = controller_execution_certificate(
         shape, graph, site_map, controller_events
     )
+    controller_symbolic = controller_symbolic_certificate(
+        shape, graph, site_map, controller_events
+    )
+    encoder_isometry = encoder_isometry_certificate(
+        graph,
+        site_map,
+        context,
+        controller_symbolic,
+        controller_chronology,
+        root_primitive_route,
+        check_compilation,
+        loader_compilation,
+    )
     triangle_decoder = root.prep.cell_triangle_decoder_certificate()
     deletion_controls = {
         "check_support_gate_deletions_detected": check_compilation[
@@ -1738,7 +2447,7 @@ def stage_inventory(graph, site_map, context, coin_gates):
             root_primitive_route["route_return_failures"] == 0
             and update_routes["route_return_failures"] == 0
         ),
-        "transit_sites_are_substrate_capacity_not_ancilla": True,
+        "transit_site_classification": "substrate capacity, not persistent ancilla",
         "analytic_owner_envelope": "center(owner)+[-25,25]^3",
         "analytic_owner_envelope_coverage_failures": envelope_coverage_failures,
         "analytic_physical_support_upper_bound_per_cell": 51**3,
@@ -1773,6 +2482,7 @@ def stage_inventory(graph, site_map, context, coin_gates):
         "loader_compilation": loader_compilation,
         "controller_chronology": controller_chronology,
         "controller_execution": controller_execution,
+        "encoder_isometry": encoder_isometry,
         "E_deletion_controls": deletion_controls,
         "root_catalog_route": catalog_routes,
         "root_executable_primitive_route": root_primitive_route,
@@ -1843,6 +2553,7 @@ def cube_fixture(length: int, coin_gates):
             rotations,
             constraints,
             joined_route["exact_global_phase"],
+            joined_route["encoder_isometry"],
         ),
         "semantic_factor_reordering": semantic_factor_reordering_certificate(
             graph, rotations
@@ -1972,6 +2683,14 @@ def collect_failures(report) -> list[str]:
             "Toffoli_decomposition_residual"
         ] > TOL:
             failures.append(f"{prefix}:Toffoli decomposition")
+        if row["joined_route"]["controller_chronology"][
+            "CCZ_H_Toffoli_H_residual"
+        ] > TOL:
+            failures.append(f"{prefix}:CCZ decomposition")
+        if row["joined_route"]["controller_chronology"][
+            "router_decomposition"
+        ]["maximum_residual"] > TOL:
+            failures.append(f"{prefix}:router decomposition")
         for key in (
             "root_update_site_map_equality",
             "root_context_site_map_equality",
@@ -2024,6 +2743,12 @@ def collect_failures(report) -> list[str]:
             failures.append(f"{prefix}:inactive controller deletion class")
         if not row["intertwiner"]["all_proof_obligations_zero"]:
             failures.append(f"{prefix}:intertwiner")
+        if not row["joined_route"]["encoder_isometry"][
+            "emitted_E_isometry_exact_on_declared_clean_domain"
+        ]:
+            failures.append(f"{prefix}:emitted encoder isometry")
+        if not row["intertwiner"]["exact_intertwiner_pass"]:
+            failures.append(f"{prefix}:exact intertwined emitted word")
         if row["intertwiner"]["phase_sum_residual_mod_2pi"] > TOL:
             failures.append(f"{prefix}:exact global phase")
         seam = row["every_seam_exactness"]
@@ -2172,7 +2897,8 @@ def main() -> int:
         "joined_stage_statement": (
             "triangle_extract -> triangle_correct -> coarse_extract -> echo_correct_ack -> "
             "bond_extract -> bond_correct -> logical_load -> onsite_coin_mass -> "
-            "onsite_reverse_fswap -> directed_seam_fswap -> onsite_contact -> exact_global_scalar"
+            "onsite_reverse_fswap -> directed_seam_fswap -> onsite_contact -> "
+            "formal_representative_scalar"
         ),
         "source_pins": {
             "this_source_sha256": file_sha256(Path(__file__)),
@@ -2197,7 +2923,7 @@ def main() -> int:
                 "an a priori 51^3 total-support capacity bound per coarse cell",
                 "executable seven-stage coherent extraction/correction/echo-ack/loader primitive word with returned NN routes",
                 "exact native coin-reverse-seam-contact update with returned NN routes through a restored bank",
-                "exact global-phase scalar and generator-relation proof of G_physical_exact E_joined = E_joined G_native_exact",
+                "formal representative-phase convention and generator-relation proof of G_physical_exact E_joined = E_joined G_native_exact",
                 "volume-independent 2880-color returned-route schedule for native G, with no host volume enumeration",
                 "joined 24-frame/576-product signed code and coordinate covariance",
                 "active E deletion-class witnesses and unlawful-syndrome controls; not every semantic occurrence is claimed essential",

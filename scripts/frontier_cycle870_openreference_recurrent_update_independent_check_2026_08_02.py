@@ -38,7 +38,17 @@ import numpy as np
 DEFAULT_REPO = Path(__file__).resolve().parents[1]
 TARGET_JOIN_REL = "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py"
 TARGET_PLACEMENT_REL = "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py"
+TARGET_JOIN_RECEIPT_REL = "outputs/cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json"
 EXPECTED_BASE_COMMIT = "4d6dedee82a14e13cbccb8bf62d6eac1227a4f0c"
+EXPECTED_DIRECT_INPUT_SHA256 = {
+    "common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+}
+EXPECTED_TARGET_SHA256 = {
+    TARGET_JOIN_REL: "81109892cf7c435f387fdfd71ea3d7d0b9affe0b301ca0339750db0f91c7a457",
+    TARGET_PLACEMENT_REL: "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+    TARGET_JOIN_RECEIPT_REL: "cb7a8892649d41ea1c4fe6cf4ddb8ec8678356932f063a74ea775179df77ba1b",
+}
 TOL = 8.0e-10
 
 Coord = tuple[int, int, int]
@@ -1550,7 +1560,7 @@ def two_cell_order_certificate(
     coin: np.ndarray,
     schedule: Sequence[Gate],
     contact: np.ndarray,
-    target_current_order_is_canonical: bool,
+    target_stage_runs: Sequence[str],
 ) -> dict[str, object]:
     modes = 12
     basis = tuple(state for state in range(1 << modes) if state.bit_count() <= 2)
@@ -1609,9 +1619,17 @@ def two_cell_order_certificate(
                 apply_local_gate_restricted(contact, (offset + left, offset + right), modes, basis)
             )
 
+    factors_by_stage = {
+        "coin": coin_factors,
+        "reverse": reverse_factors,
+        "seam": [direct_seam],
+        "contact": contact_factors,
+    }
+    canonical_order = ("coin", "reverse", "seam", "contact")
     canonical = identity
-    for factor in coin_factors + reverse_factors + [direct_seam] + contact_factors:
-        canonical = factor @ canonical
+    for stage in canonical_order:
+        for factor in factors_by_stage[stage]:
+            canonical = factor @ canonical
 
     # Counterfactual/order-deletion attack: contacts before the seam.  An early
     # scratch revision had this enumeration; the current pinned target does not.
@@ -1628,27 +1646,39 @@ def two_cell_order_certificate(
             contact_before_seam = contact_factors[cursor_contact] @ contact_before_seam
             cursor_contact += 1
     contact_before_seam = direct_seam @ contact_before_seam
-    current_target_word = canonical if target_current_order_is_canonical else contact_before_seam
+    target_name_map = {
+        "onsite_coin_mass": "coin",
+        "onsite_reverse_fswap": "reverse",
+        "directed_seam_fswap": "seam",
+        "onsite_contact": "contact",
+    }
+    normalized_target_runs = tuple(
+        target_name_map.get(name, f"unknown:{name}") for name in target_stage_runs
+    )
+    current_target_word = identity
+    unknown_target_stages = sum(stage not in factors_by_stage for stage in normalized_target_runs)
+    if not unknown_target_stages:
+        for stage in normalized_target_runs:
+            for factor in factors_by_stage[stage]:
+                current_target_word = factor @ current_target_word
+    current_residual = float(np.linalg.norm(current_target_word - direct_update))
+    target_current_order_is_canonical = normalized_target_runs == canonical_order
 
     return {
         "logical_modes": modes,
         "number_sector_cutoff": 2,
         "exact_basis_dimension": len(basis),
-        "canonical_stage_order": ("coin", "reverse", "seam", "contact"),
+        "canonical_stage_order": canonical_order,
         "canonical_operator_order": "contact @ seam @ reverse @ coin",
         "canonical_factor_count": len(coin_factors) + len(reverse_factors) + 1 + len(contact_factors),
         "canonical_word_target_residual": float(np.linalg.norm(canonical - direct_update)),
         "canonical_word_unitarity_residual": float(
             np.linalg.norm(canonical.conj().T @ canonical - identity)
         ),
-        "joined_scratch_current_stage_order": (
-            ("coin", "reverse", "seam", "contact")
-            if target_current_order_is_canonical
-            else ("per-cell coin/reverse/contact", "seam")
-        ),
-        "joined_scratch_current_order_target_residual": float(
-            np.linalg.norm(current_target_word - direct_update)
-        ),
+        "target_emitted_stage_runs": tuple(target_stage_runs),
+        "target_emitted_stage_runs_normalized": normalized_target_runs,
+        "target_unknown_stage_names": unknown_target_stages,
+        "target_emitted_order_target_residual": current_residual,
         "contact_seam_commutator_norm": float(
             np.linalg.norm(direct_contact @ direct_seam - direct_seam @ direct_contact)
         ),
@@ -1659,8 +1689,9 @@ def two_cell_order_certificate(
             np.max(np.abs(contact_before_seam - direct_update))
         ),
         "joined_scratch_checks_factor_stage_order": target_current_order_is_canonical,
-        "joined_scratch_composes_full_factor_word": False,
-        "independent_runner_composes_full_factor_word": True,
+        "independent_runner_composes_extracted_target_stage_word": (
+            unknown_target_stages == 0 and current_residual <= TOL
+        ),
     }
 
 
@@ -1873,42 +1904,110 @@ def covariance_certificate(coin: np.ndarray, coupling: float) -> dict[str, objec
 
 def repetition_extension_covariance_boundary() -> dict[str, object]:
     frames = proper_cubic_frames()
-    source_direction = np.asarray((1, 0, 0), dtype=int)
+    positive_directions = tuple(np.eye(3, dtype=int)[axis] for axis in range(3))
 
-    def reverses(frame: np.ndarray) -> bool:
-        transformed = tuple(int(value) for value in frame @ source_direction)
-        return transformed in ((-1, 0, 0), (0, -1, 0), (0, 0, -1))
+    def canonicalize(direction: np.ndarray) -> tuple[np.ndarray, int]:
+        row = np.asarray(direction, dtype=int)
+        nonzero = next(int(value) for value in row if value)
+        return (row if nonzero > 0 else -row), int(nonzero < 0)
 
-    frame_reversals = sum(reverses(frame) for frame in frames)
-    # Under reversal, original +7 maps to canonical target +9 and original +9
-    # maps to +7. X->XX is unchanged; Z(first) differs from canonical Z(first)
-    # by Z(first)Z(second), the +1 repetition stabilizer.
-    full_Z_equivariance_failures = frame_reversals
-    code_Z_equivariance_failures = 0
+    def rail_swap(frame: np.ndarray, direction: np.ndarray) -> tuple[np.ndarray, int]:
+        return canonicalize(frame @ direction)
+
+    def swap_mask(mask: int, swapped: int) -> int:
+        if not swapped:
+            return mask
+        return ((mask & 1) << 1) | ((mask & 2) >> 1)
+
+    # The repetition stabilizer is Z0 Z1.  Row reduction in this two-rail
+    # quotient is explicit rather than inferred from an orientation count.
+    def repetition_coset_zero(xmask: int, zmask: int) -> bool:
+        if xmask:
+            return False
+        return zmask in (0b00, 0b11)
+
+    lifted_x = (0b11, 0b00)
+    lifted_z = (0b00, 0b01)
+    frame_reversals = 0
     full_X_equivariance_failures = 0
+    full_Z_equivariance_failures = 0
+    code_Z_equivariance_failures = 0
+    frame_rows = []
+    for frame_index, frame in enumerate(frames):
+        row_failures = Counter()
+        row_reversals = 0
+        for direction in positive_directions:
+            _target_direction, swapped = rail_swap(frame, direction)
+            row_reversals += swapped
+            observed_x = (swap_mask(lifted_x[0], swapped), swap_mask(lifted_x[1], swapped))
+            observed_z = (swap_mask(lifted_z[0], swapped), swap_mask(lifted_z[1], swapped))
+            full_X_equivariance_failures += observed_x != lifted_x
+            full_Z_equivariance_failures += observed_z != lifted_z
+            quotient = (observed_z[0] ^ lifted_z[0], observed_z[1] ^ lifted_z[1])
+            code_failure = not repetition_coset_zero(*quotient)
+            code_Z_equivariance_failures += code_failure
+            row_failures["X_full"] += observed_x != lifted_x
+            row_failures["Z_full"] += observed_z != lifted_z
+            row_failures["Z_code"] += code_failure
+        frame_reversals += row_reversals
+        frame_rows.append(
+            {
+                "frame_index": frame_index,
+                "orientation_reversals_across_three_axes": row_reversals,
+                "failure_census": dict(row_failures),
+            }
+        )
 
     product_reversals = 0
+    full_space_representation_failures = 0
     code_product_failures = 0
+    product_full_Z_failures = 0
     for left in frames:
         for right in frames:
-            product_reversals += reverses(left @ right)
-            # Both rail-order representatives reduce to the same code coset.
-            code_product_failures += 0
+            for direction in positive_directions:
+                middle_direction, right_swap = rail_swap(right, direction)
+                final_direction, left_swap = rail_swap(left, middle_direction)
+                direct_direction, direct_swap = rail_swap(left @ right, direction)
+                sequential_swap = right_swap ^ left_swap
+                full_space_representation_failures += (
+                    not np.array_equal(final_direction, direct_direction)
+                    or sequential_swap != direct_swap
+                )
+                product_reversals += direct_swap
+                observed_z = (
+                    swap_mask(lifted_z[0], direct_swap),
+                    swap_mask(lifted_z[1], direct_swap),
+                )
+                product_full_Z_failures += observed_z != lifted_z
+                quotient = (
+                    observed_z[0] ^ lifted_z[0],
+                    observed_z[1] ^ lifted_z[1],
+                )
+                code_product_failures += not repetition_coset_zero(*quotient)
 
     return {
-        "probe_abstract_edge": "+x matter_stream",
+        "probe_abstract_edges": "+x,+y,+z matter_stream representatives",
         "frames_checked": len(frames),
         "orientation_reversing_for_probe": frame_reversals,
         "lifted_X_full_space_equivariance_failures": full_X_equivariance_failures,
         "lifted_Z_full_space_equivariance_failures": full_Z_equivariance_failures,
         "lifted_Z_code_equivariance_failures": code_Z_equivariance_failures,
+        "frame_axis_cases_checked": len(frames) * len(positive_directions),
         "compositions_checked": len(frames) ** 2,
+        "composition_axis_cases_checked": len(frames) ** 2 * len(positive_directions),
         "product_orientation_reversals_for_probe": product_reversals,
-        "lifted_Z_product_full_space_equivariance_failures": product_reversals,
+        "lifted_Z_product_full_space_equivariance_failures": product_full_Z_failures,
         "lifted_Z_product_code_equivariance_failures": code_product_failures,
-        "full_space_site_permutation_is_a_representation": True,
+        "full_space_site_permutation_representation_failures": full_space_representation_failures,
+        "full_space_site_permutation_is_a_representation": (
+            full_space_representation_failures == 0
+        ),
         "canonical_first_rail_extension_is_full_space_covariant": False,
-        "canonical_first_rail_extension_is_code_covariant": True,
+        "canonical_first_rail_extension_is_code_covariant": (
+            code_Z_equivariance_failures == 0 and code_product_failures == 0
+        ),
+        "repetition_stabilizer_row": {"x": 0, "z": 3},
+        "frame_rows": frame_rows,
         "boundary": (
             "For an orientation-reversing frame, T_F L(Z_edge) is Z on the "
             "target second rail whereas L(F Z_edge) is Z on the target first "
@@ -2112,8 +2211,10 @@ def validate_receipt(receipt: dict[str, object]) -> list[str]:
     order = receipt["two_cell_order_attack"]
     if order["canonical_word_target_residual"] > TOL:
         failures.append("canonical full-update order")
-    if order["joined_scratch_current_order_target_residual"] > TOL:
-        failures.append("joined scratch current factor order")
+    if order["target_emitted_order_target_residual"] > TOL:
+        failures.append("target emitted factor-stage order")
+    if not order["independent_runner_composes_extracted_target_stage_word"]:
+        failures.append("independent extracted target stage word")
     if order["contact_before_seam_counterfactual_target_residual"] <= 0.1:
         failures.append("contact-before-seam order attack did not activate")
     if order["contact_seam_commutator_norm"] <= 0.1:
@@ -2143,13 +2244,17 @@ def validate_receipt(receipt: dict[str, object]) -> list[str]:
             failures.append("covariance " + key)
 
     boundary = receipt["physical_extension_order_boundary"]
-    if boundary["orientation_reversing_for_probe"] != 12:
-        failures.append("24-frame rail reversal census")
-    if boundary["product_orientation_reversals_for_probe"] != 288:
-        failures.append("576-product rail reversal census")
+    if boundary["orientation_reversing_for_probe"] != 36:
+        failures.append("24-frame x three-axis rail reversal census")
+    if boundary["product_orientation_reversals_for_probe"] != 864:
+        failures.append("576-product x three-axis rail reversal census")
     if boundary["lifted_Z_code_equivariance_failures"]:
         failures.append("rail Z code covariance")
-    if boundary["lifted_Z_full_space_equivariance_failures"] != 12:
+    if boundary["lifted_Z_product_code_equivariance_failures"]:
+        failures.append("rail Z product code covariance")
+    if boundary["full_space_site_permutation_representation_failures"]:
+        failures.append("rail site representation")
+    if boundary["lifted_Z_full_space_equivariance_failures"] != 36:
         failures.append("rail Z full-space boundary not detected")
     return failures
 
@@ -2169,16 +2274,19 @@ def main() -> int:
         raise SystemExit(f"missing scripts directory: {scripts}")
     sys.path.insert(0, str(scripts))
 
+    direct_input_hashes = {
+        name: sha256(scripts / name) for name in EXPECTED_DIRECT_INPUT_SHA256
+    }
+    direct_input_pin_failures = {
+        name: {"expected": expected, "observed": direct_input_hashes[name]}
+        for name, expected in EXPECTED_DIRECT_INPUT_SHA256.items()
+        if direct_input_hashes[name] != expected
+    }
+
     # These are the two actual supplied input surfaces; no joined runner is imported.
     import common_matter_field_coin_family_cycle219_2026_07_16 as c219
     import spatial_car_contact_seam_form_factor_cycle230_2026_07_17 as c230
 
-    commit = subprocess.run(
-        ("git", "-C", str(repo), "rev-parse", "HEAD"),
-        check=True,
-        capture_output=True,
-        text=True,
-    ).stdout.strip()
     expected_base_is_ancestor = subprocess.run(
         ("git", "-C", str(repo), "merge-base", "--is-ancestor", EXPECTED_BASE_COMMIT, "HEAD"),
         check=False,
@@ -2195,21 +2303,60 @@ def main() -> int:
 
     target_join = repo / TARGET_JOIN_REL
     target_placement = repo / TARGET_PLACEMENT_REL
+    target_join_receipt = repo / TARGET_JOIN_RECEIPT_REL
     target_hashes = {
         "joined_recurrent_compiler": sha256(target_join) if target_join.is_file() else None,
         "physical_M2_placement": sha256(target_placement) if target_placement.is_file() else None,
+        "joined_recurrent_compiler_receipt": (
+            sha256(target_join_receipt) if target_join_receipt.is_file() else None
+        ),
     }
-    target_text = target_join.read_text(encoding="utf-8") if target_join.is_file() else ""
-    stage_markers = (
-        '"onsite_coin_mass"',
-        '"onsite_reverse_fswap"',
-        '"directed_seam_fswap"',
-        '"onsite_contact"',
+    target_pin_failures = {
+        name: {"expected": expected, "observed": target_hashes[key]}
+        for name, key, expected in (
+            (
+                TARGET_JOIN_REL,
+                "joined_recurrent_compiler",
+                EXPECTED_TARGET_SHA256[TARGET_JOIN_REL],
+            ),
+            (
+                TARGET_PLACEMENT_REL,
+                "physical_M2_placement",
+                EXPECTED_TARGET_SHA256[TARGET_PLACEMENT_REL],
+            ),
+            (
+                TARGET_JOIN_RECEIPT_REL,
+                "joined_recurrent_compiler_receipt",
+                EXPECTED_TARGET_SHA256[TARGET_JOIN_RECEIPT_REL],
+            ),
+        )
+        if target_hashes[key] != expected
+    }
+    target_receipt = (
+        json.loads(target_join_receipt.read_text())
+        if target_join_receipt.is_file()
+        else {}
     )
-    stage_positions = tuple(target_text.find(marker) for marker in stage_markers)
-    target_current_order_is_canonical = (
-        all(position >= 0 for position in stage_positions)
-        and tuple(sorted(stage_positions)) == stage_positions
+    target_stage_runs = tuple(
+        target_receipt.get("fixtures", [{}])[0]
+        .get("stage_order", {})
+        .get("observed_rotation_stage_runs", ())
+    )
+    target_current_order_is_canonical = target_stage_runs == (
+        "onsite_coin_mass",
+        "onsite_reverse_fswap",
+        "directed_seam_fswap",
+        "onsite_contact",
+    )
+    order_attack = two_cell_order_certificate(
+        coin, schedule, contact, target_stage_runs
+    )
+    bounded_unitary_factors = all(
+        row["factor_full_space_unitarity_failures"] == 0
+        and row["lifted_factor_full_space_unitarity_failures"] == 0
+        and row["maximum_physical_factor_weight"] <= row["analytic_physical_weight_cap"]
+        and row["maximum_physical_factor_L1_diameter"] <= row["analytic_physical_L1_diameter_cap"]
+        for row in fixture_rows
     )
     artifact_path = Path(__file__).resolve().relative_to(repo)
     receipt: dict[str, object] = {
@@ -2220,28 +2367,29 @@ def main() -> int:
         },
         "sources": {
             "repo": ".",
-            "commit": commit,
             "expected_base_commit": EXPECTED_BASE_COMMIT,
             "expected_base_is_ancestor": expected_base_is_ancestor,
             "direct_physics_imports": (
                 "common_matter_field_coin_family_cycle219_2026_07_16",
                 "spatial_car_contact_seam_form_factor_cycle230_2026_07_17",
             ),
+            "direct_input_sha256": direct_input_hashes,
+            "direct_input_pin_failures": direct_input_pin_failures,
             "joined_scratch_imported": False,
             "joined_target_imported": False,
             "target_hashes": target_hashes,
+            "expected_target_sha256": EXPECTED_TARGET_SHA256,
+            "target_pin_failures": target_pin_failures,
         },
         "coin_mass_contact": coin_mass_contact,
         "fixtures": fixture_rows,
         "two_cell_exact": two_cell_code_certificate(),
         "deletion_and_dressing": seam_dressing_deletion_certificate(),
-        "two_cell_order_attack": two_cell_order_certificate(
-            coin, schedule, contact, target_current_order_is_canonical
-        ),
+        "two_cell_order_attack": order_attack,
         "covariance": covariance_certificate(coin, c230.COUPLING),
         "physical_extension_order_boundary": repetition_extension_covariance_boundary(),
         "claim_boundary": {
-            "bounded_M2_unitary_factors": True,
+            "bounded_M2_unitary_factors": bounded_unitary_factors,
             "nearest_neighbor_elementary_decomposition_claimed": False,
             "intrinsic_layer_or_clock_claimed": False,
             "semantic_covariance": "full signed logical Fock space",
@@ -2250,7 +2398,9 @@ def main() -> int:
             "scope": "two supplied finite fixtures and the size-independent local templates they exercise",
         },
     }
-    failures = validate_receipt(receipt)
+    failures = [f"direct input pin:{name}" for name in direct_input_pin_failures]
+    failures.extend(f"target pin:{name}" for name in target_pin_failures)
+    failures.extend(validate_receipt(receipt))
     receipt["validation_failures"] = failures
     receipt["independent_reconstruction_pass"] = not failures
     receipt["joined_target_acceptance"] = {
@@ -2263,7 +2413,9 @@ def main() -> int:
             else
             "The joined target source does not contain the canonical coin/reverse/seam/contact order."
         ),
-        "counterfactual_contact_before_seam_rejected": True,
+        "counterfactual_contact_before_seam_rejected": (
+            order_attack["contact_before_seam_counterfactual_target_residual"] > 0.1
+        ),
     }
     args.receipt.write_text(json.dumps(receipt, indent=2, sort_keys=True, default=str) + "\n")
     print(json.dumps(receipt, indent=2, sort_keys=True, default=str))

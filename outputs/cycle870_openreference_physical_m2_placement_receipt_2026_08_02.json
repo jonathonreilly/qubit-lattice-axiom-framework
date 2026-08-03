@@ -18,7 +18,15 @@
       "Cycle703 abstract preparation and loader semantics"
     ]
   },
-  "content_sha256_before_hash_field": "bcb8ba67c8723b32a45ceea06eb0fad1f43de9d8cd555ae265c752a5615112ce",
+  "content_sha256_before_hash_field": "174c7b22af7af4389fbc4b7923857e1c751b62fd95c21e8fcb6dddfa62069736",
+  "dependency_pin_failures": {},
+  "dependency_sha256": {
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+    "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py": "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4",
+    "scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py": "833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245",
+    "scripts/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py": "5dab64cd17ead6cb5062eab9266b9206d74bb608dcc22f3a1132ee1f1af3e9a9",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+  },
   "failures": [],
   "fixtures": [
     {
@@ -40,11 +48,11 @@
       "chronology_interaction_count": 3448,
       "coarse_edges": 20,
       "covariance": {
+        "coframe_status": "supplied and transported",
         "frame_injectivity_failures": 0,
         "ordered_products": 576,
         "product_diagram_failures": 0,
-        "proper_cubic_frames": 24,
-        "transported_coframe_supplied": true
+        "proper_cubic_frames": 24
       },
       "encoder_chronology": [
         "triangle_syndrome",
@@ -101,11 +109,11 @@
       "chronology_interaction_count": 9224,
       "coarse_edges": 59,
       "covariance": {
+        "coframe_status": "supplied and transported",
         "frame_injectivity_failures": 0,
         "ordered_products": 576,
         "product_diagram_failures": 0,
-        "proper_cubic_frames": 24,
-        "transported_coframe_supplied": true
+        "proper_cubic_frames": 24
       },
       "encoder_chronology": [
         "triangle_syndrome",
@@ -162,11 +170,11 @@
       "chronology_interaction_count": 2262,
       "coarse_edges": 12,
       "covariance": {
+        "coframe_status": "supplied and transported",
         "frame_injectivity_failures": 0,
         "ordered_products": 576,
         "product_diagram_failures": 0,
-        "proper_cubic_frames": 24,
-        "transported_coframe_supplied": true
+        "proper_cubic_frames": 24
       },
       "encoder_chronology": [
         "triangle_syndrome",
@@ -223,11 +231,11 @@
       "chronology_interaction_count": 8583,
       "coarse_edges": 54,
       "covariance": {
+        "coframe_status": "supplied and transported",
         "frame_injectivity_failures": 0,
         "ordered_products": 576,
         "product_diagram_failures": 0,
-        "proper_cubic_frames": 24,
-        "transported_coframe_supplied": true
+        "proper_cubic_frames": 24
       },
       "encoder_chronology": [
         "triangle_syndrome",
@@ -284,11 +292,11 @@
       "chronology_interaction_count": 21622,
       "coarse_edges": 144,
       "covariance": {
+        "coframe_status": "supplied and transported",
         "frame_injectivity_failures": 0,
         "ordered_products": 576,
         "product_diagram_failures": 0,
-        "proper_cubic_frames": 24,
-        "transported_coframe_supplied": true
+        "proper_cubic_frames": 24
       },
       "encoder_chronology": [
         "triangle_syndrome",
@@ -345,11 +353,11 @@
       "chronology_interaction_count": 43821,
       "coarse_edges": 300,
       "covariance": {
+        "coframe_status": "supplied and transported",
         "frame_injectivity_failures": 0,
         "ordered_products": 576,
         "product_diagram_failures": 0,
-        "proper_cubic_frames": 24,
-        "transported_coframe_supplied": true
+        "proper_cubic_frames": 24
       },
       "encoder_chronology": [
         "triangle_syndrome",
@@ -390,6 +398,7 @@
   ],
   "semantic_covariance": {
     "ordered_products": 576,
+    "port_order_gauge_status": "signed local chart gauge included",
     "product_edge_failures": 0,
     "product_generator_failures": 0,
     "product_site_failures": 0,
@@ -400,7 +409,6 @@
       2,
       2
     ],
-    "signed_port_order_gauge_included": true,
     "single_frame_edge_type_failures": 0,
     "single_frame_generator_failures": 0,
     "single_frame_placement_failures": 0

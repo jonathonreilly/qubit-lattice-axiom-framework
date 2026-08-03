@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2250,
-    "decoration": 40,
+    "bounded_theorem": 2249,
+    "decoration": 41,
     "meta": 373,
     "no_go": 439,
     "open_gate": 207,
@@ -81,15 +81,16 @@
   "cycles_detected": 59,
   "effective_status_counts": {
     "audit_in_progress": 1,
-    "audited_conditional": 106,
-    "audited_failed": 30,
-    "audited_numerical_match": 9,
-    "audited_renaming": 26,
+    "audited_conditional": 277,
+    "audited_failed": 71,
+    "audited_numerical_match": 11,
+    "audited_renaming": 33,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
+    "decoration_under_gauge_vacuum_plaquette_reduction_existence_theorem_note": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
     "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": 1,
@@ -100,12 +101,12 @@
     "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
-    "meta": 366,
+    "meta": 365,
     "open_gate": 2,
-    "retained": 107,
+    "retained": 108,
     "retained_bounded": 320,
     "retained_pending_chain": 12,
-    "unaudited": 2967
+    "unaudited": 2745
   },
   "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [

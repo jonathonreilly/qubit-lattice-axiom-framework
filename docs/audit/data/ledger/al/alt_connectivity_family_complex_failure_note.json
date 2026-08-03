@@ -1,24 +1,94 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T06:06:17.339239+00:00",
+  "audit_invocation_history": [
+    "bdcd914d73534fd7894ae83b138b4a06"
+  ],
+  "audit_invocation_id": "bdcd914d73534fd7894ae83b138b4a06",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "alt_connectivity_family_sign_note": "A bounded numerical-computational audit of the parity-rotated sector-transition connectivity family on the no-restore grown slice for drifts 0.0, 0.1, 0.2, 0.3, 0.5 and seeds 0, 1, 2."
+    },
+    "dep_claim_type": {
+      "alt_connectivity_family_sign_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "alt_connectivity_family_sign_note": "retained_bounded"
+    },
+    "deps": [
+      "alt_connectivity_family_sign_note"
+    ],
+    "helper_runner_hashes": {
+      "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py": "c2bd8a6aa8d66ce0156274914ed34b385595c27592ea9e897ddd28de67513301",
+      "scripts/gate_b_no_restore_farfield.py": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373"
+    },
+    "load_bearing_score": 4.7,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "1a2506a16f382455cf2485f75b2325273fe4a73a2f9046b2748a773b718dbd6c",
+        "cache_status": "ok"
+      },
+      "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "c2bd8a6aa8d66ce0156274914ed34b385595c27592ea9e897ddd28de67513301",
+        "cache_status": "ok"
+      },
+      "scripts/gate_b_no_restore_farfield.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e6af20e5f54cbd8d49578d65573fc71c9f2a0a7a77cac1f4c11c6b0e501f8373",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "1a2506a16f382455cf2485f75b2325273fe4a73a2f9046b2748a773b718dbd6c",
+    "runner_path": "scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 12
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-511a09ad",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The source and runner close the finite-grid sign comparison: every displayed positive-gamma centroid shift has the same sign as its gamma=0 value. They do not close the broader structural or family-wide interpretation outside that grid.",
   "claim_id": "alt_connectivity_family_complex_failure_note",
-  "claim_scope": null,
+  "claim_scope": "On the runner-tested grid drifts 0.15, 0.20, 0.25; seeds 0, 1, 2; and gammas 0.0, 0.1, 0.2, 0.5, the script-defined centroid shift does not change sign between gamma 0 and the tested positive gamma values.",
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "open_gate",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T06:06:17.339239+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,22 +96,26 @@
     "alt_connectivity_family_sign_note"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
     "scripts/gate_b_no_restore_farfield.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 4.7,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "gamma = 0.1, 0.2, 0.5 remain on the same side as gamma = 0",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "stretch_attempt_negative"
+  ],
+  "no_go_discipline": null,
   "note_hash": "2284ff676a6bde9b3098ec9f92bc4ecef921da75b6b1642b35ff8f7f8b641572",
   "note_path": "docs/ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: revise the structural and family-wide sentences to the exact tested grid, add a dated downstream-hygiene line to this note's own boundary, and rerun with an N1-N8-capable audit harness.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -1638,15 +1712,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:06.568195+00:00",
+      "archived_audit_sha256": "64433136d1e11a5e928e7e9faca0fa9c2a1fbe58354b6c2c2bd8df277aa460c0",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.264879+00:00"
+    }
+  ],
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 9,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py",
   "title": "ALT Connectivity Family Complex Failure Note",
   "transitive_descendants": 12,
-  "verdict_rationale": null
+  "verdict_rationale": "The nine computed rows support the exact finite-grid negative, while the weak-field exponents remain near one and no external comparator is used. N1: only the finite numerical route was executed, leaving alternative route classes untested; N2: finite-grid coverage is the sole supported wall; N3: the boundary and sector wording adds no hidden premise beyond the explicit construction; N4: no prior-ruled residual is invoked. N5: per-element, per-site, per-mode, per-block, and lattice-wide resolutions were not tested; N6: the supplied primitives, open gates, and reframes do not promote the sample to family-wide closure; N7: agreement of all nine rows is the strongest steelman but says nothing about unsampled cases; N8: supplied echoes provide no independent execution of this exact result. The broader claims that the failure is structural and that the family does not support the branch therefore remain conditional on unperformed coverage tests."
 }

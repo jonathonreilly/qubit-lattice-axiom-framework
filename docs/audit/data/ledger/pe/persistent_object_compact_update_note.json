@@ -1,44 +1,103 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T10:37:51.780167+00:00",
+  "audit_invocation_history": [
+    "6ec092ea1a1e48e6b1f678fcc39882bf"
+  ],
+  "audit_invocation_id": "6ec092ea1a1e48e6b1f678fcc39882bf",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/persistent_object_compact_update_probe.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/minimal_source_driven_field_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+        "cache_status": "ok"
+      },
+      "scripts/persistent_object_compact_update_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "62c5c7c74ddfd2ae78c65b0201d58f5d87f574b8e65baa0f8e89bb73d58983eb",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "62c5c7c74ddfd2ae78c65b0201d58f5d87f574b8e65baa0f8e89bb73d58983eb",
+    "runner_path": "scripts/persistent_object_compact_update_probe.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-0553e545",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner repeats all-step mean object metrics on every step row and does not observe the state produced by the third top-3 update. The chosen propagation, source, update, and readout laws also lack a derivation from the supplied authorities.",
   "claim_id": "persistent_object_compact_update_note",
-  "claim_scope": null,
+  "claim_scope": "Whether three measured compact top-3 feedback updates on the fixed h=0.25 finite lattice produce a smaller source object while preserving positive centroid shifts and F~M\u22481.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "needs_reaudit_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T10:37:51.780167+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/minimal_source_driven_field_probe.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The tighter top-3 update produces a smaller repeated-update source object while preserving the weak-field sign and linear mass scaling.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "stretch_attempt_negative"
+  ],
+  "no_go_discipline": null,
   "note_hash": "58fd514d2e0d044a79595a03933cf0624e1e52ae9a3231114294afc6ae920b6f",
   "note_path": "docs/PERSISTENT_OBJECT_COMPACT_UPDATE_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Correct the runner to retain and print step-specific source, weight, and detector metrics; evaluate the state after the third top-3 update or narrow the claim to two observed feedback states; disambiguate the two response N_eff quantities; then rerun.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -181,15 +240,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:26.671016+00:00",
+      "archived_audit_sha256": "74bb3982ddf6d074d614c1fb28d393f670a143268827ec1de200c86ee7cc252c",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.598870+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 1,
     "B": 0,
-    "C": 0,
+    "C": 13,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 14
   },
   "runner_path": "scripts/persistent_object_compact_update_probe.py",
   "title": "Persistent Object Compact Update Probe",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The target requires three measured successive compact feedback updates with a smaller object and preserved sign and scaling. The code instead measures the initial uniform-weight propagation and only two post-feedback propagations, then prints an all-step mean object metric identically on every row; the unobserved third-update result is target-equivalent to the missing obligation. It also selects the propagator, Green kernel, gain, update law, and centroid/mass readout without an authority or axiom-native bridge, while the supplied axioms explicitly leave dynamics, update laws, source/action, persistence, and observable identification downstream. For the bounded negative limitation, N1/N4/N7 supply no live alternative-route, witness, or steelman evidence; N2/N3/N5 support only the observed broad-readout wording; N6 closes no missing bridge; and N8 echoes are not applicable authorities, so the negative boundary is not cemented."
 }

@@ -1,24 +1,86 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-30T02:09:29.877366+00:00",
+  "audit_invocation_history": [
+    "fbe5af7a9a794a329b987ea3745702e0"
+  ],
+  "audit_invocation_id": "fbe5af7a9a794a329b987ea3745702e0",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_teleportation_encoding_portability.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+    },
+    "dep_claim_type": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+    },
+    "deps": [
+      "teleportation_retained_axis_operator_algebra_closure_note"
+    ],
+    "helper_runner_hashes": {
+      "scripts/teleportation_encoding_portability_boundary_checks.py": "68421fc5903bfd7b6a554324263080a44267c4d8479f76697ec65f7682c2ca2a"
+    },
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_teleportation_encoding_portability.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "input_mismatch",
+        "cache_input_fingerprint_sha256": "11c11e1891f7e921d8f608817117a42f44acb08033ce75a2c9cfbbcada64da06",
+        "cache_runner_sha256": "3ee66c21d908816e18e73061feed7854b2cf0e33b6b5a454f1b320f04ec00080",
+        "cache_status": "ok"
+      },
+      "scripts/teleportation_encoding_portability_boundary_checks.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "3ee66c21d908816e18e73061feed7854b2cf0e33b6b5a454f1b320f04ec00080",
+    "runner_path": "scripts/frontier_teleportation_encoding_portability.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260730-84d42130",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite matrix calculation is internally represented, but the restricted chain cannot close because the cited T5 authority is clipped and the completed runner fails two required downstream status checks. The full authority excerpt and terminal status records are needed.",
   "claim_id": "teleportation_encoding_portability_note",
-  "claim_scope": null,
+  "claim_scope": "For dimensions 1\u20133 and even sides 2,4,6,8, over all cells, spectator assignments, and logical axes, the fixed pair-hop realizes logical X only on the last taste axis, while axis-adapted X passes all 1330 ideal same-encoding cases; no physical implementation is audited.",
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "open_gate",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-30T02:09:29.877366+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,21 +88,26 @@
     "teleportation_retained_axis_operator_algebra_closure_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/teleportation_encoding_portability_boundary_checks.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The fixed pair-hop flips only the last taste bit, so it realizes logical X exactly when the selected logical axis is last and otherwise has zero restriction to the encoded subspace.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "meta",
   "max_descendant_status_rank": 25,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "fe7f5aec9d5d0ac8a8ee53a7ccb2c499d43e78aa0e5e29fa3823acbe7110deed",
   "note_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete unabridged T5 authority text, then rerun after terminal status records exist for teleportation_three_register_cross_encoding_note and teleportation_conclusion_boundary_note.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh",
   "previous_audits": [
@@ -1726,15 +1793,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:30.737034+00:00",
+      "archived_audit_sha256": "dd4be4b2567846f00ec9dd1637df68e40f832eb5cc5ebc1deeed8d6486bc8022",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.757401+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 2,
+    "B": 11,
+    "C": 2,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 15
   },
   "runner_path": "scripts/frontier_teleportation_encoding_portability.py",
   "title": "Taste-Qubit Encoding Portability Note",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "The primary runner genuinely constructs the finite operators and computes the expected fixed-axis and adapted-axis behavior, but its completed execution exits 1 because two downstream record-status checks fail. Independently, the binding preflight reports that the load-bearing T5 authority is clipped, so audited_clean is forbidden. For N1, N2, and N7, axis adaptation is the strongest alternative: it succeeds by replacing the fixed operator and therefore does not negate the exact fixed-operator boundary; no N4 prior-residual match is relied upon. N3\u2013N5 expose no additional load-bearing premise beyond the stated definitions, while N6 and N8 supply no basis to upgrade the claim despite the incomplete authority evidence."
 }

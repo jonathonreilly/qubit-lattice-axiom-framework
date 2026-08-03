@@ -1,46 +1,121 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T13:13:49.475908+00:00",
+  "audit_invocation_history": [
+    "0f43d99c1fe74676aa697068131a836f"
+  ],
+  "audit_invocation_id": "0f43d99c1fe74676aa697068131a836f",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/triple_stack_collapse_scaling.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/combined_gravity_scaling.py": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+      "scripts/generative_causal_dag_interference.py": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+      "scripts/topology_families.py": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/combined_gravity_scaling.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/generative_causal_dag_interference.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/topology_families.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1",
+        "cache_status": "ok"
+      },
+      "scripts/triple_stack_collapse_scaling.py": {
+        "cache_exit_code": "None",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "7bf9c7e0aba48a1e9b98d77c20d1da914643b5d8a3c6a10c79c061197266c1ed",
+        "cache_status": "timeout"
+      }
+    },
+    "runner_hash": "7bf9c7e0aba48a1e9b98d77c20d1da914643b5d8a3c6a10c79c061197266c1ed",
+    "runner_path": "scripts/triple_stack_collapse_scaling.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-d6375fd3",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The supplied program reproduces the endpoint purities and negative fitted slope. The packet does not derive its hard-coded dynamics, collapse identification, and purity readout from accepted premises, nor justify inferring asymptotic behavior from five finite N values.",
   "claim_id": "triple_stack_collapse_scaling_note",
-  "claim_scope": null,
+  "claim_scope": "Default-setting five-size simulation result: the supplied algorithm yields purities 0.7075 and 0.8835 at N=25 and N=100 and a fitted triple-stack exponent alpha=-0.754, interpreted as no asymptotic reversal.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "needs_reaudit_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T13:13:49.475908+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/combined_gravity_scaling.py",
     "scripts/generative_causal_dag_interference.py",
     "scripts/topology_families.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "All four modes fit decreasing 1-purity with increasing N, so adding collapse does not reverse the asymptotic direction.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary",
+    "stretch_attempt_negative"
+  ],
+  "no_go_discipline": null,
   "note_hash": "74fa798d502b1491dd91d2b626e2503d0d4cfe176a76ff8d756d35b29f8de0ef",
   "note_path": "docs/TRIPLE_STACK_COLLAPSE_SCALING_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow the note to the five-size algorithm-specific pilot, label the random-phase operation as such, and require retained collapse/readout and asymptotic-limit bridges before restoring physical-collapse or asymptotic language.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -255,15 +330,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:31.100258+00:00",
+      "archived_audit_sha256": "dc960e86e84c60d6ba7f842f999a1db78124d55be41f2bf76a51308b24c9fa2f",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.790602+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 4,
     "B": 0,
-    "C": 0,
+    "C": 1,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 5
   },
   "runner_path": "scripts/triple_stack_collapse_scaling.py",
   "title": "Triple-Stack Collapse Scaling Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The code genuinely computes the reported finite-sample purities and fits\u2014independent recomputation from the rounded table gives triple-stack alpha=-0.7542\u2014but it hard-codes the propagator, BETA, k band, removal rule, phase-noise operation called collapse, and purity readout, while five N values do not establish an asymptotic limit. Why this blocks: no cited retained authority derives those physical identifications or licenses the extrapolation to \u201cno asymptotic reversal.\u201d Repair target: narrow the source to an algorithm-specific finite pilot, or supply retained collapse/readout/dynamics and asymptotic-limit bridges with an appropriate large-N test. Claim boundary until fixed: the default program\u2019s finite outputs and negative fitted slope are reproducible; N1/N7 exercise only the finite numerical route, while N2-N6/N8 provide no independent wall set, residual match, rhetoric-resolution sweep, partial-closure disposition, or cross-cycle closure for the asserted negative asymptotic boundary."
 }

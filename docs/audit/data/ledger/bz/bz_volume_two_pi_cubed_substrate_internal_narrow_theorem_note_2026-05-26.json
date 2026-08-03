@@ -1,24 +1,79 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T17:58:12.007933+00:00",
+  "audit_invocation_history": [
+    "ed8cecaf466f416f9d0b3ef784ffca52"
+  ],
+  "audit_invocation_id": "ed8cecaf466f416f9d0b3ef784ffca52",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 24,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 5.748,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "a3fd2879d50ce4dd97d3b8b7e034dc272776693dd66ede55950dfadda89d024e",
+        "cache_runner_sha256": "1c82a4d8ee23627e15929185578eaf951fba98dc4622f21ee81197701509980c",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "1c82a4d8ee23627e15929185578eaf951fba98dc4622f21ee81197701509980c",
+    "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 18
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260801-8e3bf6bc",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The harmonic-analysis proof closes once the named coordinate and normalization hypotheses are supplied, but the cited minimal axiom does not select those hypotheses; therefore the framework chain to a substrate-internal factor (2\u03c0)\u00b3 remains open.",
   "claim_id": "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
-  "claim_scope": null,
+  "claim_scope": "Under the explicit pairing \u03c7_k(n)=exp(i k\u00b7n), standard full-rank basis A=I, and probability-normalized Haar measure, the dual torus has coordinate cell volume (2\u03c0)\u00b3 and density d\u00b3k/(2\u03c0)\u00b3, with the stated full-rank lattice covariance.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-08-01T17:58:12.007933+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +81,23 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 5.748,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because m\u00b7n is an integer, \u03c7_{k+2\u03c0m}(n)=\u03c7_k(n), so the declared angular coordinate represents the dual torus as R\u00b3/(2\u03c0Z\u00b3).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "5d1c1c6628a6a7e77cc04ad08fddf3887d695f388ead446b96f5a96a326ef608",
   "note_path": "docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: keep downstream uses restricted to the explicit pairing, basis, and Haar-normalization hypotheses, and add a dated downstream-hygiene line to this note's own boundary before re-auditing any substrate-internal promotion.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -497,15 +556,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:07.103106+00:00",
+      "archived_audit_sha256": "7ff4588b6ba3fc9340080c128344647dbcb39a899f9c31644c04ccfcb1ac5d11",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.299804+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 25,
+    "B": 11,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 36
   },
   "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
   "title": "Brillouin-Zone Haar Normalization in the `e^{ik\u00b7n}` Coordinate \u2014 Bounded Theorem",
   "transitive_descendants": 18,
-  "verdict_rationale": null
+  "verdict_rationale": "The character-period identity and determinant/Jacobian steps are correct class-A algebra, and the source-backed runner performs exact symbolic checks rather than merely printing asserted results. The framework chain nevertheless does not derive the angular pairing, A=I coordinate choice, or probability normalization from the cited Z\u00b3 axiom, so the displayed theorem is valid only under its named hypotheses. N1 addresses sign reversal, coordinate reparameterization, variable spacing, non-orthogonal bases, shifted cells, and rank deficiency; N2 finds the named conditions distinct, N3 finds them disclosed rather than hidden, N4 finds no prior residual witness, and N5 confines the negative wording to the derived coordinate-dependence boundary. N6 supplies no indexed premise selecting these conventions from bare Z\u00b3, N7's strongest steelman proves only the bounded theorem from the explicit angular pairing, and N8's indexed cross-cycle candidates do not alter this narrow conclusion."
 }

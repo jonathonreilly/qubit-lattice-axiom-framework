@@ -26,7 +26,7 @@
     "positive_theorem"
   ],
   "packet_policy_fingerprint": {
-    "digest": "738a603aedd01e42399fd988cb394173b1ba3d9625c8e44ddcc1c8e6ed70461a",
+    "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
     "schema": "packet_policy_fingerprint_v1",
     "sources": {
       "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
@@ -34,7 +34,7 @@
       "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
       "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
       "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
-      "docs/audit/scripts/orchestrate_audit_loop.py": "0b09eebd6637c1695ddd349b805368c12ae7581f8f11b616d94984fc0045dadd",
+      "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
       "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
     }
   },

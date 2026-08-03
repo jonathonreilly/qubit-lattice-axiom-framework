@@ -1,42 +1,94 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T07:34:06.257649+00:00",
+  "audit_invocation_history": [
+    "2ff76e91442442f49e272c8bbe6244e8"
+  ],
+  "audit_invocation_id": "2ff76e91442442f49e272c8bbe6244e8",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 4.322,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "04a0fa3a15d0782625ac5dac75765e6375281819368f85ee0a8f0dc944b6c7c1",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "04a0fa3a15d0782625ac5dac75765e6375281819368f85ee0a8f0dc944b6c7c1",
+    "runner_path": "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 9
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-6fa4d0d2",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The T^2 stabilizer has dimension 2; 8\u22122=6 is the dimension of the frame orbit SU(3)/T^2, not a six-dimensional family of connections compatible with a fixed frame. No frame-to-connection map is defined that would make the claimed non-onto inference or campaign-level stratification follow.",
   "claim_id": "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
-  "claim_scope": null,
+  "claim_scope": "The supplied packet supports non-uniqueness of su(3) logarithms of a regular SU(3) connection and identifies the T^2 stabilizer of a complete frame.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (non-reduction theorem on the supplied",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T07:34:06.257649+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 4.322,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Arrow 1 not onto AND arrow 2 not onto \u21d2 the chain has two genuine gaps, so the four hats occupy distinct chain positions and do not collapse onto one missing input.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary",
+    "no_go_result"
+  ],
+  "no_go_discipline": null,
   "note_hash": "7d8f4cd9cad37e0b783902a357acfb0569e12efcfc91e22aa81cc33dca131e47",
   "note_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-check after the note defines the frame-to-connection relation, corrects the stabilizer-versus-orbit dimension argument, and supplies evidence for the campaign-level hat assignments and Record endpoint claims.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1436,15 +1488,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:19.240813+00:00",
+      "archived_audit_sha256": "ffd35c1b5e416b012ab9f3a7e1407eb1f211c63874f0e6c62cdd027768365be8",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.439851+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 17,
+    "B": 1,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 18
   },
   "runner_path": "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py",
   "title": "Four-hats stratification: the gauge-link / color-einselection open inputs sit at distinct positions of the frame \u2192 connection \u2192 generator chain (non-reduction, narrow theorem)",
   "transitive_descendants": 9,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner correctly exhibits the T^2 stabilizer and multiple logarithm branches. It then mistakes stabilizer codimension for residual connection freedom: stabilizing connections form the two-dimensional T^2, while without a compatibility condition all eight SU(3) directions remain possible. The campaign-level conclusion also relies on hard-coded Record endpoint booleans and unsupported hat assignments, so the two local algebraic facts do not establish four-hat stratification."
 }

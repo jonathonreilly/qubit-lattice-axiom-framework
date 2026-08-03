@@ -1,42 +1,92 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T14:08:18.706818+00:00",
+  "audit_invocation_history": [
+    "402d4d97afae4a629917a549e99a833e"
+  ],
+  "audit_invocation_id": "402d4d97afae4a629917a549e99a833e",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 11,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/universal_gr_complement_canonical_reaudit.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/universal_gr_complement_canonical_reaudit.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "6c06470ff2a637da9cac20d6777b6863eb3e2f2b527eea278ea946bfddf3b723",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "6c06470ff2a637da9cac20d6777b6863eb3e2f2b527eea278ea946bfddf3b723",
+    "runner_path": "scripts/universal_gr_complement_canonical_reaudit.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-479d5a72",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The exact one-rotation matrix witness closes independently, but it does not establish the note\u2019s full-SO(3), all-enumerated-data, canonical-section conclusion. The runner checks one complement representative and a runner-defined two-parameter quadratic family.",
   "claim_id": "universal_gr_complement_canonical_note",
-  "claim_scope": null,
+  "claim_scope": "Exact algebraic witness that one 90-degree spatial rotation preserves the A1 projection and the runner\u2019s two-parameter quadratic energy while moving the chosen complement representative; no exhaustive full-SO(3) or all-invariant no-section theorem was audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T14:08:18.706818+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "A 90-degree spatial rotation moves the chosen complement coordinates while preserving its A1 projection and every energy in the runner\u2019s two-parameter quadratic family.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "6f76251ee60ddfe05d588db4955637cc9f8ad391522ce24b53db81f90fe19340",
   "note_path": "docs/UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: restrict the theorem to the exact one-rotation/two-parameter witness, or add a general SO(3)-equivariance and invariant-class exhaustiveness proof plus complete N1-N8 evidence.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1562,15 +1612,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:31.274142+00:00",
+      "archived_audit_sha256": "c5e63c5ca4dfe3dd46e22daad097019d3679bbc49c8c27f5427badbf6ea63a52",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.802151+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
-    "D": 0,
-    "total_pass": 0
+    "A": 9,
+    "B": 3,
+    "C": 5,
+    "D": 2,
+    "total_pass": 19
   },
   "runner_path": "scripts/universal_gr_complement_canonical_reaudit.py",
   "title": "Universal GR Complement Canonicalization Audit",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: Independent algebra confirms the narrow witness, but the zero-to-zero A1 check and one sampled rotation do not derive the canonical rank-2 projector, full SO(3) residual gauge, Maurer-Cartan complement candidate, or exhaustiveness over the enumerated universal data; N1 leaves the listed curvature, non-quadratic, gauge-fixing, matter-probe, and external-structure routes untested, while N2 does not demonstrate independence of the three named walls. Why this blocks: N3 exposes an admitted exhaustiveness premise; N4 has no one-hop residual witness; N5 lacks five-resolution execution evidence; N6 and N7 expressly leave a tie-breaking invariant open; and N8 supplies no current-cycle disposition of cross-cycle echoes, so the negative boundary cannot be cemented. Repair target: either narrow the source theorem to the computed witness or supply a general equivariance/exhaustiveness theorem and complete structured N1-N8 stress testing. Claim boundary until fixed: one specified 90-degree rotation preserves the runner-defined A1 projection and two-parameter quadratic energy while moving the chosen complement representative."
 }

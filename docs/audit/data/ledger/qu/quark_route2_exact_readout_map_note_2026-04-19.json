@@ -1,31 +1,230 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T21:59:03.553496+00:00",
+  "audit_invocation_history": [
+    "9fd06a4d9dd04da1b706baf64dee0249",
+    "0ecdc16edcac4ce9a6d81176795f0281"
+  ],
+  "audit_invocation_id": "0ecdc16edcac4ce9a6d81176795f0281",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_quark_route2_exact_readout_map.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/_frontier_loader.py": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
+      "scripts/frontier_coarse_grained_exterior_law.py": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+      "scripts/frontier_discrete_dtn_shell_kernel.py": "31cb89f1b161de258503a6a91f5c2334d041099f0f135df0aeb7078520bc0d31",
+      "scripts/frontier_finite_rank_gravity_residual.py": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
+      "scripts/frontier_flux_fixed_matching_theorem.py": "3ea379ef8f2642858772e3017e06a90784651f0ceb27d540d06622e5940df95d",
+      "scripts/frontier_microscopic_dirichlet_bridge_principle.py": "18ebfab7a135966a29a2df9ca62378203224a8c2fec6c854e58beb702f954b4e",
+      "scripts/frontier_oh_schur_boundary_action.py": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
+      "scripts/frontier_one_parameter_reduced_shell_law.py": "d6e71ec16da2c52c9515360c136c724d75029ca212171922a40fbc014e05e40e",
+      "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py": "55020114ec83ccf1b61e6d167aaaed0b67dda356542fa363d79f5b2b4f81c791",
+      "scripts/frontier_quark_endpoint_readout_constraints.py": "9e4ec1b42cf84f49922a29c50eb4c1a49ae3877b640b14fe8485b54c1e35a1db",
+      "scripts/frontier_radial_shell_matching_law.py": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
+      "scripts/frontier_same_source_metric_ansatz_scan.py": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
+      "scripts/frontier_sewing_shell_source.py": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
+      "scripts/frontier_star_shell_projector.py": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
+      "scripts/frontier_tensor_boundary_drive_two_channel.py": "966053ec7eef614d46776a72f70da1c9c9a7b9188942340ed1bfaf6f1d4d6721",
+      "scripts/frontier_tensor_support_center_excess_law.py": "7b655be25dc7649a1a1a6173accfe20735ab546580e61d0bfe9453f60883866e",
+      "scripts/frontier_tensor_universal_kernel.py": "6633ff45feebad69a60a4da2e652432b2d8a0286dc29004cf23bd65cb75ca07b",
+      "scripts/frontier_tensorial_einstein_regge_completion.py": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+      "scripts/frontier_universal_shell_profile.py": "34d892020e314f3edb0e7d10bc515fccfb2dbb2bf90f7c7421324c09dcc16d15"
+    },
+    "load_bearing_score": 61.629,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/_frontier_loader.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_coarse_grained_exterior_law.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_discrete_dtn_shell_kernel.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_finite_rank_gravity_residual.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_flux_fixed_matching_theorem.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_microscopic_dirichlet_bridge_principle.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_oh_schur_boundary_action.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e8e375a14f750162e6bbed56c51bf91473538b428dd333f5d491a16f9753c891",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_one_parameter_reduced_shell_law.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d6e71ec16da2c52c9515360c136c724d75029ca212171922a40fbc014e05e40e",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "55020114ec83ccf1b61e6d167aaaed0b67dda356542fa363d79f5b2b4f81c791",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_quark_endpoint_readout_constraints.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "9e4ec1b42cf84f49922a29c50eb4c1a49ae3877b640b14fe8485b54c1e35a1db",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_quark_route2_exact_readout_map.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e4356c7079bca9a0ded2259d0f49cf9461bc16ba7e09cf688c78de3a56e2328a",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_radial_shell_matching_law.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_same_source_metric_ansatz_scan.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "cc0e24b12c6ed6a389cbff9b03e06754380103d8aca9d3b7903fddc3b1195b94",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_sewing_shell_source.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_star_shell_projector.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "843aadd321c8795087a75fc4c9fd439ad7040c7c4d65e14be9d1a90658b5d952",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_tensor_boundary_drive_two_channel.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_tensor_support_center_excess_law.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "18e63fb0d0719810d12ad41d854620cb258c5497fab00048ebd1353120263531",
+        "cache_runner_sha256": "7b655be25dc7649a1a1a6173accfe20735ab546580e61d0bfe9453f60883866e",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_tensor_universal_kernel.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_tensorial_einstein_regge_completion.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_universal_shell_profile.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "e4356c7079bca9a0ded2259d0f49cf9461bc16ba7e09cf688c78de3a56e2328a",
+    "runner_path": "scripts/frontier_quark_route2_exact_readout_map.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 197
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260729-93576bca",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The two-map counterexample closes algebraically only after stipulating the channelwise P_R family. The packet does not derive why bright-preserving admissibility excludes E/T cross-mixing or otherwise makes both maps admissible from the framework axioms.",
   "claim_id": "quark_route2_exact_readout_map_note_2026-04-19",
-  "claim_scope": null,
+  "claim_scope": "Restricted Route-2 carrier/readout reduction, endpoint-ratio algebra, and non-uniqueness of rho_E within the asserted channelwise readout family.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "needs_reaudit_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-29T21:59:03.553496+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 108,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/_frontier_loader.py",
     "scripts/frontier_coarse_grained_exterior_law.py",
@@ -47,16 +246,24 @@
     "scripts/frontier_tensorial_einstein_regge_completion.py",
     "scripts/frontier_universal_shell_profile.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 61.629,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "rho_E = 0 and rho_E = 21/4 are both exact admissible maps on the restricted carrier class, but they produce different center E readouts.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary",
+    "no_go_result",
+    "stretch_attempt_negative"
+  ],
+  "no_go_discipline": null,
   "note_hash": "3a06cefe154ea529001b8369d349cdb233069050af2e79471669bb35d8fe0ee2",
   "note_path": "docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow the note to a stipulated P_R-family theorem and add a dated downstream-hygiene line to this note's own boundary; restore the claimed forced reduction only after deriving the readout admissibility rule.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-gpt-5",
   "previous_audits": [
@@ -641,17 +848,24 @@
       "invalidation_reason": "no_go_discipline_packet_missing",
       "restoration_policy": "restore_overaggressive_invalidation.v2",
       "restored_at": "2026-07-22T17:21:20.763662+00:00"
+    },
+    {
+      "archived_at": "2026-08-03T07:42:27.408176+00:00",
+      "archived_audit_sha256": "deca70de51f26adcd707de08eaa5bcfc9a00815bfdfb4d35f34f7b3a5d576f1a",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.645782+00:00"
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 6,
+    "B": 3,
+    "C": 2,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 11
   },
   "runner_path": "scripts/frontier_quark_route2_exact_readout_map.py",
   "title": "Quark Route-2 Exact Readout Map",
   "transitive_descendants": 197,
-  "verdict_rationale": null
+  "verdict_rationale": "Within the stipulated P_R family, the endpoint algebra and two-map non-uniqueness are valid, but the runner never derives the admissibility rule that forces this family; its live endpoint mismatch also consumes hard-coded FAST_ENDPOINT_READOUT values. N1 lacks distinct alternative-route tests, N2 supports only the conditional unfixed-readout wall, N3 exposes load-bearing obstruction language, and N4 supplies no retained residual witness. N5 does not test the negative rhetoric across the required resolutions; N6's supplied premises and indexed reframes do not furnish readout selection; N7's strongest steelman proves only the stipulated-family counterexample; and N8 echoes are indexed but not dispositioned, so the broader current-stack negative boundary is unclosed."
 }

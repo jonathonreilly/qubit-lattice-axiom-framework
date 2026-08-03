@@ -1,42 +1,91 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-30T05:36:34.049191+00:00",
+  "audit_invocation_history": [
+    "865fc2f118b34a35847e2e635cb66b8e"
+  ],
+  "audit_invocation_id": "865fc2f118b34a35847e2e635cb66b8e",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 13.95,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "6d382695fbb8c50ef70bb361c28ee41fdcb35cba60e9ffcc9ed0222363ac48eb",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "6d382695fbb8c50ef70bb361c28ee41fdcb35cba60e9ffcc9ed0222363ac48eb",
+    "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1398
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260730-721de5bd",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebraic implication closes, but the clean-verdict negative-assertion gate does not: N7 lacks a distinct independent resolution evidence path for the external-carrier steelman.",
   "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "For finite-rank Cl(p,q) tensor C, a square-normalized internal element anticommuting with every canonical generator exists exactly when n=p+q is even, implying odd d_t when d_s=3.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-30T05:36:34.049191+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 13.955,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For odd n, centrality and invertibility of omega make x omega=-omega x and x omega=omega x, forcing every internal common anticommuter x to vanish.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "4933c69dfc48ac2a842a024f0c6f2c1b422d49c12700a518927729405d00474c",
   "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: add a distinct independent runner certificate or retained authority path verifying that the external ambient-matrix chirality lies outside the internal Clifford span, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1835,17 +1884,24 @@
       "invalidation_reason": "no_go_discipline_packet_missing",
       "restoration_policy": "restore_overaggressive_invalidation.v2",
       "restored_at": "2026-07-22T17:21:20.736123+00:00"
+    },
+    {
+      "archived_at": "2026-08-03T07:42:16.120929+00:00",
+      "archived_audit_sha256": "30043c754ef0ac9e451f5285afdc7811d939f87f97fdf2a11d3af9b126dc6dbe",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.321611+00:00"
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 79,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 79
   },
   "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
   "title": "Clifford Volume-Element Chirality Forces Even Total Dimension Narrow Theorem",
   "transitive_descendants": 1403,
-  "verdict_rationale": null
+  "verdict_rationale": "The finite-dimensional Clifford proof is mathematically sound, and the supplied runner performs 79 successful class-A checks, including exact coefficient kernels and an independent matrix-vectorization route. N1 supplies five distinct closed attacks; N2 has the single internal-Clifford-algebra kernel wall; N3 and N5 occurrences are non-load-bearing or resolved; N4 has no prior-route witness; and N6/N8 reveal no applicable closure or echo. However, the N7 external-carrier argument and resolution are carried only on the same live stdout surface, contrary to the packet's requirement for a distinct independent resolution path, so audited_clean is unavailable."
 }

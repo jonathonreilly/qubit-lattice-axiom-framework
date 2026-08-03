@@ -1,44 +1,103 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T18:29:36.879633+00:00",
+  "audit_invocation_history": [
+    "4738101fd2c847c88e30f20beb2ebe75"
+  ],
+  "audit_invocation_id": "4738101fd2c847c88e30f20beb2ebe75",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/persistent_inertial_object_probe.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/two_body_momentum_harness.py": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/persistent_inertial_object_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "0e5a9780f6bb4153cb30067a1883981ce14f7780027b1e933bc67668d0586480",
+        "cache_status": "ok"
+      },
+      "scripts/two_body_momentum_harness.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "0e5a9780f6bb4153cb30067a1883981ce14f7780027b1e933bc67668d0586480",
+    "runner_path": "scripts/persistent_inertial_object_probe.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-0e565f0d",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner discharges the finite table lookup over the listed topN values. The missing step is a retained derivation linking the chosen propagation model and capture/carry/shift thresholds to physical object persistence and inertia.",
   "claim_id": "persistent_inertial_object_probe_note",
-  "claim_scope": null,
+  "claim_scope": "For the fixed h=0.5, W=8, L=12 ordered-lattice topN sweep, no listed class meets the stated capture/carry/shift criteria, and the family therefore supports only broad-surrogate steering rather than a persistent inertial object.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "needs_reaudit_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T18:29:36.879633+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/two_body_momentum_harness.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "No row clears the combined capture/carry/shift thresholds.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "stretch_attempt_negative"
+  ],
+  "no_go_discipline": null,
   "note_hash": "66c17e62aeeef3d43e2773037f02dd3cec2c3453b2f1121288694e2839608c58",
   "note_path": "docs/PERSISTENT_INERTIAL_OBJECT_PROBE_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and cite a retained bridge from the supplied axioms to the Lattice3D propagation/action and to an operational persistence criterion, then rerun the fixed-family sweep.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -208,15 +267,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:26.624189+00:00",
+      "archived_audit_sha256": "b0d792b709c9cad1cf706527abc0757d214ac9712efa233c51cc4b525c56dae2",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.597710+00:00"
+    }
+  ],
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 1,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 1
   },
   "runner_path": "scripts/persistent_inertial_object_probe.py",
   "title": "Persistent Inertial Object Probe Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely computes the listed finite sweep, and its stdout supports the claim that no listed row passes all three hard-coded thresholds. However, the packet supplies no retained derivation of the Lattice3D propagation/action, K, beta, field profile, topN truncation, or threshold-to-physical-persistence bridge from the minimal axioms, which explicitly do not supply dynamics or physical persistence. For the N1-N8 stress judgment, alternative carriers, initial conditions, normalizations, actions, lattice scales, readouts, and cross-cycle or refactoring candidates remain unresolved; the three criteria are not shown independent or exhaustive, no prior residual witness closes them, and the strongest steelman is a narrower or differently defined object class. The result is therefore a conditional finite negative probe, not a closed persistent-mass or broad-surrogate theorem."
 }

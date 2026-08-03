@@ -1,44 +1,102 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T22:01:58.509710+00:00",
+  "audit_invocation_history": [
+    "b8ec763fc6b94e2e8abff540501e3798"
+  ],
+  "audit_invocation_id": "b8ec763fc6b94e2e8abff540501e3798",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/source_resolved_transverse_propagating_green.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/minimal_source_driven_field_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+        "cache_status": "ok"
+      },
+      "scripts/source_resolved_transverse_propagating_green.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "63075d06038cffa5dbd0747d1776aefb662eff0704e5c0b2ce14c866ae99cdca",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "63075d06038cffa5dbd0747d1776aefb662eff0704e5c0b2ce14c866ae99cdca",
+    "runner_path": "scripts/source_resolved_transverse_propagating_green.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-a31650ab",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The code computes the displayed finite-run inequalities, ratios, and scaling, but the Green kernel, propagation law, normalization, source configuration, and centroid readout are supplied rather than derived from the framework baseline. The physical transverse-propagation interpretation therefore remains unclosed.",
   "claim_id": "source_resolved_transverse_propagating_green_note",
-  "claim_scope": null,
+  "claim_scope": "Finite execution of the specified h=0.25, W=3, L=6 source, same-site-memory, and transverse-smoothing algorithm at source strengths 0.001 through 0.008; no framework-derived propagating-field interpretation.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T22:01:58.509710+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/minimal_source_driven_field_probe.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "On all four sampled rows, `trans - same` is negative and true `trans/same` is about 0.990.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "e562150877ce1350bde4f60e16cd011b0602ea0eb11e51ef52486ae8c2d4e2b3",
   "note_path": "docs/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and cite the propagation dynamics, Green-kernel/source-action identification, gain normalization, and detector-centroid readout from retained framework content; also assert support equality per row or narrow that statement explicitly to the mean.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -253,15 +311,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:30.034712+00:00",
+      "archived_audit_sha256": "908dbf24c95f96cd09afa84e3d3a372ad8f45ac1b217d3ff4419f33cb0a44f2a",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.718996+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 2,
     "B": 0,
-    "C": 0,
+    "C": 5,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 7
   },
   "runner_path": "scripts/source_resolved_transverse_propagating_green.py",
   "title": "Source-Resolved Transverse Propagating Green Boundary Live Packet",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The displayed differences, ratios, and near-linear scaling are internally consistent, but the runner supplies the Green kernel, propagation operator, gain normalization, memory/transverse mixes, source placement, and detector-centroid readout. Why this blocks: those dynamics and observable bridges do not follow from the supplied Z3/Qubit/Admissibility/Record premises, so PASS establishes a property of a chosen finite algorithm rather than a framework-derived transverse-propagation boundary. Repair target: provide retained derivations or approved premises for the update law and source/action/readout/normalization bridges, and make the support assertion per-row or narrow it to the computed mean. Claim boundary until fixed: the four hard-coded finite executions give positive transverse shifts, negative `trans-same`, ratios near 0.990, and zero mean support difference; this is a runner-specific derived negative boundary, not a general no-go."
 }

@@ -1,42 +1,91 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T08:46:43.311613+00:00",
+  "audit_invocation_history": [
+    "d3cd3db39ba4486986fd0e48fde55390"
+  ],
+  "audit_invocation_id": "d3cd3db39ba4486986fd0e48fde55390",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/frontier_universal_gr_so3_isotypic_orbit_flat_narrow.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.822,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_universal_gr_so3_isotypic_orbit_flat_narrow.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "b13a8419e7aade2468e59580105b188a44d7e357607e02c5e17b607cacdebc2c",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "b13a8419e7aade2468e59580105b188a44d7e357607e02c5e17b607cacdebc2c",
+    "runner_path": "scripts/frontier_universal_gr_so3_isotypic_orbit_flat_narrow.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 4
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-2f6ec6f5",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The exact invariance proof and corollary close, but the source note as written does not: verification item 9 gives h\u2032\u2080\u2082=+1 while Step 6 and the runner\u2019s stated Rz(\u03c0/2) convention give \u22121.",
   "claim_id": "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "For Sym^2(R^4) under 1 \u2295 SO(3) and isotropic spatial diagonal weights, the lapse-plus-spatial-trace projector is fixed, the complement weighted Frobenius energy is constant on each orbit, generic complement coordinates move, and E_{\u03b1,\u03b2} cannot distinguish frames within a nontrivial orbit.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T08:46:43.311613+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 3.822,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because Pi_A1 is pointwise fixed and the weighted norm is additive across Pi_A1 \u2295 Pi_perp, ||Pi_perp(h\u2032)||\u00b2_d = ||h\u2032||\u00b2_d \u2212 ||Pi_A1(h\u2032)||\u00b2_d = ||Pi_perp(h)||\u00b2_d.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "052c3b053afbba9354b7dcbdd40cf6c7ba12322bc422a9702e897024f0e87853",
   "note_path": "docs/UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Correct verification item 9 to h\u2032\u2080\u2082 = \u22121, or state |h\u2032\u2080\u2082| = 1, under the displayed Rz convention; also make the context-only ledger lookup nonfatal in restricted runner checkouts before re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1315,15 +1364,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:31.357727+00:00",
+      "archived_audit_sha256": "d32f383c2de1ee4639d5c83e847b9533cf95d8ba3b69d6d99e2678ccb5b58fdc",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.810198+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 32,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 32
   },
   "runner_path": "scripts/frontier_universal_gr_so3_isotypic_orbit_flat_narrow.py",
   "title": "SO(3) Isotypic Orbit-Flat Narrow Theorem on `Sym^2(R^4)`",
   "transitive_descendants": 4,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: verification item 9 asserts h\u2032\u2080\u2082=+1, whereas Step 6 and the executable calculation give h\u2032\u2080\u2082=\u22121 under the stated rotation convention. Why this blocks: every displayed sign must agree with the executable check, so the note is not clean as written even though T1\u2013T3 and the quadratic orbit-flat corollary independently follow from orthogonal invariance. Repair target: correct the signed witness and make the context-only ledger check nonfatal, then rerun the packet. Claim boundary until fixed: the exact within-orbit quadratic selection boundary remains supported; N1 considered algebraic, symmetry/representation, anisotropic-normalization, higher-order/effective-action, and finite-sample routes, while N2 has no multi-wall set, N3\u2013N6 reveal no hidden premise, residual, or partial-closure defect, N7\u2019s anisotropic-or-higher-order steelman is outside scope, and N8 does not repair the signed witness."
 }

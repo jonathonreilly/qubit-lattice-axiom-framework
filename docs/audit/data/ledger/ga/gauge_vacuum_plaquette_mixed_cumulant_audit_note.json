@@ -1,42 +1,92 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T20:44:44.747204+00:00",
+  "audit_invocation_history": [
+    "912085c5a57641768dab5dec8a061a86",
+    "496c1bd26cf1476ab7950355263b2065"
+  ],
+  "audit_invocation_id": "496c1bd26cf1476ab7950355263b2065",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 53,
+        "D": 31
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 15.733,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "f7ed20d42c622ae32a2106fcc41162e4e475a92027fcc272b4db4310df1e3b83",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "f7ed20d42c622ae32a2106fcc41162e4e475a92027fcc272b4db4310df1e3b83",
+    "runner_path": "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 850
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260729-538137f1",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite combinatorial and Haar calculation closes within the stated Wilson SU(3) model, but the packet does not derive or register that carrier, action, measure, and full-vacuum observable identification from the accepted premises.",
   "claim_id": "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-  "claim_scope": null,
+  "claim_scope": "Conditional on independent Haar SU(3) Wilson links with the stated plaquette normalization on a local nonwrapping four-dimensional cubical patch, the order-beta^5 correction is 1/472392 and the induced beta_eff coefficient is 1/26244, including repeated insertions.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-29T20:44:44.747204+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 12,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 15.738,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Exactly four cube shells survive, and each contributes 2(1/6)^6 3^(8-12)=1/18^5, giving the total coefficient 1/472392.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "3dba883088d38bdd58f895fa77287155905c8f8cc0bbf7cfcd9e34bd29a19723",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: cite or derive a retained Wilson SU(3) carrier, action, Haar-measure, and full-vacuum plaquette-observable bridge; also provide live N5-N7 evidence if clean certification of the finite vanishing subclaims is sought.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -434,17 +484,24 @@
       "invalidation_reason": "no_go_discipline_packet_missing",
       "restoration_policy": "restore_overaggressive_invalidation.v2",
       "restored_at": "2026-07-22T17:21:20.742503+00:00"
+    },
+    {
+      "archived_at": "2026-08-03T07:42:19.771616+00:00",
+      "archived_audit_sha256": "c8754926c134067b81ecc2b590c0ffd874cc2a5c260424a938a56b4eb9c25071",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.460565+00:00"
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 1,
     "B": 0,
-    "C": 0,
+    "C": 17,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 18
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
   "title": "Gauge-Vacuum Plaquette Mixed-Cumulant Audit and First Nonlinear Coefficient",
   "transitive_descendants": 853,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The finite-support enumeration and Haar contraction are internally consistent, but no cited or accepted premise supplies the SU(3) Wilson link carrier, beta=0 Haar gauge measure, or identification of its plaquette series with the framework's full vacuum. Why this blocks: the kinetic-isotropy primitive supplies only hypercubic graining, while the runner fixes DIMS=4 and N=3, leaving the physical carrier, action, and observable bridge unsupported. Repair target: cite or derive that retained bridge; the live runner output also lacks the five-resolution and independent-steelman evidence needed for clean N5-N7 certification of the finite negative subclaims. Claim boundary until fixed: the coefficients are supported only as a conditional mathematical result for the stated Wilson model."
 }

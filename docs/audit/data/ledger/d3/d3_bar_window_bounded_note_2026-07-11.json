@@ -1,24 +1,98 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T17:00:54.901567+00:00",
+  "audit_invocation_history": [
+    "e196178b86c344b585d106330802d2bc"
+  ],
+  "audit_invocation_id": "e196178b86c344b585d106330802d2bc",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 3,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 9
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/d3_bar_window_measurement_2026_07_11.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "d3_bar_location_design_scout_2026-07-10": null,
+      "d3_bar_window_design_delta_2026-07-11": null
+    },
+    "dep_claim_type": {
+      "d3_bar_location_design_scout_2026-07-10": "meta",
+      "d3_bar_window_design_delta_2026-07-11": "meta"
+    },
+    "dep_effective_status": {
+      "d3_bar_location_design_scout_2026-07-10": "meta",
+      "d3_bar_window_design_delta_2026-07-11": "meta"
+    },
+    "deps": [
+      "d3_bar_location_design_scout_2026-07-10",
+      "d3_bar_window_design_delta_2026-07-11"
+    ],
+    "helper_runner_hashes": {
+      "scripts/d3_bar_location_engine_ext_2026_07_10.py": "71189dad66e4427673a4a83ad216c122cbc461b0353086c105762e3d81e6cb27",
+      "scripts/d3_cubic_orbit_engine_2026_07_09.py": "4eb603fc229bc441ef254e9edc04c1cfeec1fe221be4a1af82fcee24f30bd60b"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/d3_bar_location_engine_ext_2026_07_10.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/d3_bar_window_measurement_2026_07_11.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "fa59a3cabfebc4c7bf5071ecdbdf96fe90636dbb09576e5be3d6bb6cda48aff7",
+        "cache_runner_sha256": "b11077be706ae3d74b779319362a793ce7a73bd8ee05fb331d8fa4ab40b21d29",
+        "cache_status": "ok"
+      },
+      "scripts/d3_cubic_orbit_engine_2026_07_09.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "b11077be706ae3d74b779319362a793ce7a73bd8ee05fb331d8fa4ab40b21d29",
+    "runner_path": "scripts/d3_bar_window_measurement_2026_07_11.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-cd32c392",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite computation and authenticated-summary chain closes on its declared protocol, but the repository-level dependency chain does not: both protocol authorities are meta, not accepted premises or retained-grade scientific authorities, and they supply the comparator, observables, partition, and gates.",
   "claim_id": "d3_bar_window_bounded_note_2026-07-11",
-  "claim_scope": null,
+  "claim_scope": "Conditional finite measurement on the declared open 3x3x3 transverse-field Ising comparator: authenticated traces yield W_full={0.02,0.05,0.10}, the reported theta* summaries and stability factors, and a commissioned certification boundary between lambda=0.10 and 0.20; no universal physical threshold is audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T17:00:54.901567+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,23 +101,32 @@
     "d3_bar_location_design_scout_2026-07-10"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/d3_bar_location_engine_ext_2026_07_10.py",
     "scripts/d3_cubic_orbit_engine_2026_07_09.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Exhaustive subset selection over the authenticated finite traces reproduces W_full={0.02,0.05,0.10} and the reported theta* and boundary summaries under the declared gates.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "74a0a4c0e40e78ec042824ba706389e53e8bde22443964388987557a1819552c",
   "note_path": "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "dependency_not_retained: independently audit and retain the two frozen protocol authorities as explicit comparator premises, then re-audit this row.",
+  "open_dependency_paths": [
+    "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md",
+    "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-08-03T07:42:16.596742+00:00",
@@ -167,15 +250,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:16.596742+00:00",
+      "archived_audit_sha256": "61bae4365c230c03e9a879e7f9ae8b78628eaf537a511679df005f2d5e32e5e3",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.357470+00:00"
+    }
+  ],
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 5,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 5
   },
   "runner_path": "scripts/d3_bar_window_measurement_2026_07_11.py",
   "title": "Finite-Ladder Transverse-Field Comparator: Bounded Measured Support",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner and helpers implement genuine finite Hamiltonian evolution, marginal construction, exhaustive subset selection, artifact authentication, and summary recomputation rather than printing hard-coded expected physical values. The measured result is nevertheless conditional on two protocol memos explicitly marked meta and not accepted premises, which supply every load-bearing comparator and gate choice. Its negative content is limited to the finite lambda=0.20 certification failures and the adjacent commissioned boundary, not a universal threshold or no-go. For N1-N8, the packet does not exhaust alternative carriers, bases, volumes, dynamics, or limits; establish universal wall independence or hidden-wall freedom; match prior residuals; exhaust resolutions; show primitive closure; resolve a no-go steelman; or establish cross-cycle no-go closure."
 }

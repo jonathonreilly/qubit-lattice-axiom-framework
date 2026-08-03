@@ -1,45 +1,107 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T16:01:00.099329+00:00",
+  "audit_invocation_history": [
+    "3ea29b676b9f4109a21709ba5c26f0c8"
+  ],
+  "audit_invocation_id": "3ea29b676b9f4109a21709ba5c26f0c8",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true,
+      "runner_path": "scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/teleportation_boundary_checks_2026_06_13.py": "095f958d84c2549e235defe174553aad674ee84086d2e00f2a0eed2cab6f0392"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "8bbf3b38c82d6aae96b05c28e964d9a882fe85b5067bdef443f5df0f9d995215",
+        "cache_status": "ok"
+      },
+      "scripts/teleportation_boundary_checks_2026_06_13.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "8bbf3b38c82d6aae96b05c28e964d9a882fe85b5067bdef443f5df0f9d995215",
+    "runner_path": "scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-36539f56",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The structural split depends on cross-note verification of the unavailable parent note. The supplied runner aborts before reporting checks because its audit-ledger input is missing.",
   "claim_id": "teleportation_native_axioms_scope_split_source_theorem_note_2026-05-16",
-  "claim_scope": null,
+  "claim_scope": "Planning-grade structural scope split between finite bookkeeping on the cited audited teleportation surfaces and nature-grade teleportation closure held open.",
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "open_gate",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T16:01:00.099329+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/teleportation_boundary_checks_2026_06_13.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Therefore surface B and surface N are independent claim grades, and the parent note carries content only on B at retained-grade.",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "1e862536d96083d1b344fef8ec903593def7bd167ce47d7f81163779a4dd3f1d",
   "note_path": "docs/TELEPORTATION_NATIVE_AXIOMS_SCOPE_SPLIT_SOURCE_THEOREM_NOTE_2026-05-16.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "runner_artifact_issue: include docs/audit/data/audit_ledger.json and the helper's conclusion-boundary input in the runner checkout, provide the parent note as a one-hop authority, and rerun the exact runner.",
+  "open_dependency_paths": [
+    "docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-06-17T10:32:21.396067+00:00",
@@ -230,6 +292,15 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:30.783904+00:00",
+      "archived_audit_sha256": "1112ad50cb63a2e6cbee051170e3bf4cfb896dc70db0d6ebed47395bdd8de539",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.760657+00:00"
+    }
+  ],
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -240,5 +311,5 @@
   "runner_path": "scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py",
   "title": "Teleportation Native Axioms Scope Split -- Source Theorem Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The claimed split is a cross-note structural classification: the runner searches the parent note and compares frozen evidence literals rather than deriving the result from the supplied axioms. Its completed execution aborts on a missing audit ledger before reporting any passed check, leaving the asserted runner-verified downstream alignment unestablished. The note honestly presents the seven nature-grade blocker classes as a bounded conditional negative boundary; this is an artifact/dependency failure, not timeout-based compute noncompletion."
 }

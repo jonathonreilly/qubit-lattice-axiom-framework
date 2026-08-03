@@ -1,42 +1,91 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T08:18:35.371901+00:00",
+  "audit_invocation_history": [
+    "164236448f9f450fbbe75d9c3bd56ce0"
+  ],
+  "audit_invocation_id": "164236448f9f450fbbe75d9c3bd56ce0",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_universal_gr_round_pl_s3_regge_hessian_2026_06_10.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_universal_gr_round_pl_s3_regge_hessian_2026_06_10.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "b17716612a99b8477550e07913bacd6e56c2a1235a7fcdc93146f1e9c213e252",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "b17716612a99b8477550e07913bacd6e56c2a1235a7fcdc93146f1e9c213e252",
+    "runner_path": "scripts/frontier_universal_gr_round_pl_s3_regge_hessian_2026_06_10.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 3
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-c7cfc8bf",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite calculation closes conditional on the supplied Lambda-Regge action and unit-edge round boundary-of-the-4-simplex background. The restricted packet supplies no axiom-to-action or background-selection derivation, so the repository-level chain does not close.",
   "claim_id": "universal_gr_round_pl_s3_regge_hessian_canonical_channels_narrow_theorem_note_2026-06-10",
-  "claim_scope": null,
+  "claim_scope": "The supplied three-dimensional Lambda-Regge action on the unit-edge round boundary of the 4-simplex: its symmetric critical Lambda, curved-background Hessian, S5 channel decomposition, measured channel spectrum, and absence of complement-frame ambiguity at that round point.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T08:18:35.371901+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 3.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "H commutes with the full S5 vertex-permutation action and the edge representation decomposes multiplicity-free as 10 = 1 + 4 + 5, so Schur's lemma makes the three-channel split unique.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls"
+  ],
+  "no_go_discipline": null,
   "note_hash": "ffb57efa7bf2d1466de2305818d11c531b19b2caad572209cbe08f94585a2385",
   "note_path": "docs/UNIVERSAL_GR_ROUND_PL_S3_REGGE_HESSIAN_CANONICAL_CHANNELS_NARROW_THEOREM_NOTE_2026-06-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation selecting the three-dimensional Lambda-Regge action and the round spatial background from accepted framework premises, then rerun the six checks.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1303,15 +1352,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:31.351895+00:00",
+      "archived_audit_sha256": "10f20aaa7d14e85d3e7d320eba167179edf89b5c2b2b780e6657185037bf8dab",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.807976+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 3,
     "B": 0,
-    "C": 0,
+    "C": 3,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 6
   },
   "runner_path": "scripts/frontier_universal_gr_round_pl_s3_regge_hessian_2026_06_10.py",
   "title": "The Regge Hessian on the Round PL S\u00b3: an Exact \u039b-Regge Critical Point with a Multiplicity-Free Canonical Channel Decomposition \u2014 the Geometric Route's Channel Structure on the Gate's Own Spatial Atlas",
   "transitive_descendants": 3,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely constructs the finite Regge geometry, differentiates the action, checks the Hessian end-to-end, verifies S5 equivariance and the 1+4+5 channel resolution, and measures the stated spectrum without fitted inputs. The result nevertheless depends on a supplied action and supplied round background that are not derived or imported from a retained authority. N1-N4 judgment: symmetry and finite-matrix routes support only the round-point result, while action changes, off-round backgrounds, 3+1 extension, and refinement remain outside scope; no prior residual witness is imported. N5-N8 judgment: the absence rhetoric is supported at the executed per-edge, per-channel, and full-matrix resolutions, but no supplied primitive or cross-cycle evidence promotes it into a broader no-go or closes the missing action/background bridge."
 }

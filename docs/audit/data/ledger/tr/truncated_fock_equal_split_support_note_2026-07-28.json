@@ -1,44 +1,102 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-08-01T19:18:59.243588+00:00",
+  "audit_invocation_history": [
+    "7a4daa818d55468aaace94dc2ce7859e"
+  ],
+  "audit_invocation_id": "7a4daa818d55468aaace94dc2ce7859e",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_truncated_fock_equal_split_support_2026_07_28.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/frontier_truncated_fock_equal_split_independent_check_2026_07_28.py": "dd0f66f4b44008df5b38fe0d5908753caa3257f7528d868ad8705b1af39bcffc"
+    },
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec1c81ae1df1d6b1f40cb3c4ae3dc8808f83b33b069e1e61640dc5242d654699",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "843541bbfd430df1e6537f0fc334498533be7f02e2150bffed9551a34af3f4d9"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_truncated_fock_equal_split_independent_check_2026_07_28.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "f15c52a07116fd4da3fb8b934c957260bbb637d80d23b9fc9c34ad14df31e260",
+        "cache_runner_sha256": "dd0f66f4b44008df5b38fe0d5908753caa3257f7528d868ad8705b1af39bcffc",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_truncated_fock_equal_split_support_2026_07_28.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "febeeb7599a39279ed80fe067e90df36e5b925951f95e69350e09766cc11b915",
+        "cache_runner_sha256": "05853a493ddc083ba3a4f63f7d41d80b97e7d6d9a2b57be83145407fd5f501d0",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "05853a493ddc083ba3a4f63f7d41d80b97e7d6d9a2b57be83145407fd5f501d0",
+    "runner_path": "scripts/frontier_truncated_fock_equal_split_support_2026_07_28.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260801-b704b8aa",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebra closes for the explicitly supplied fixture, including exact number preservation, recoil accounting, and alpha-family non-uniqueness. No authority connects that fixture to the future physical input port.",
   "claim_id": "truncated_fock_equal_split_support_note_2026-07-28",
-  "claim_scope": null,
+  "claim_scope": "Conditional finite algebraic certificate for the supplied six-mode CAR reversal-hop fixture on the two-cell n_left,n_right<=2 slice, including counts, number preservation, transition weights, transpose symmetry, recoil bookkeeping, and conservation-based non-selection of the equal split.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-08-01T19:18:59.243588+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_truncated_fock_equal_split_independent_check_2026_07_28.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For the supplied CAR reversal hop, each active channel changes matter momentum by -2d and, under the supplied equal split (1,1), assigns +d to each bookkeeping component while preserving occupation number on the n_left,n_right<=2 slice.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "meta",
   "max_descendant_status_rank": 25,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "7a9d7e85924e978bd6724cc71953de8f549ff98eda0b4f795f3a4e858e9c6b71",
   "note_path": "docs/TRUNCATED_FOCK_EQUAL_SPLIT_SUPPORT_NOTE_2026-07-28.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained physical-input-port theorem selecting the six-mode CAR/q-state carrier and recoil observable, and add a multi-resolution stress certificate if the conservation-nonselection boundary is retained.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -138,15 +196,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:31.103939+00:00",
+      "archived_audit_sha256": "4b820650289d4b291e29a4228b734031f40137054883fa906fda8b1a33bb4983",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.791928+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 10,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 10
   },
   "runner_path": "scripts/frontier_truncated_fock_equal_split_support_2026_07_28.py",
   "title": "Truncated-Fock equal-split recoil bookkeeping support",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: both runner implementations verify algebraic consequences of a supplied six-mode CAR/q-state fixture, cutoff, angle parameters, and equal split, but the packet provides no authority deriving that fixture as a physical input port; for the embedded negative boundary, N1 alternatives such as exchange symmetry, carrier labeling, normalization, dynamics, and readout require added structure, while N2 has only the single split-underdetermination boundary and N3 fixture/scope terms are non-load-bearing. Why this blocks: the result closes only conditionally on those inputs; N4 has no cited witness, N5 is local to the stated channel/block computation, N6 supplies no physical-fixture selector, N7's strongest equal-exchange-symmetry steelman selects alpha=1 only by adding symmetry, and N8 shows no applicable packet-grounded retirement of the conservation identity. Repair target: provide a retained bridge theorem selecting the six-mode carrier, hop, q-state momentum ledger, and numerical fixture, then rerun both implementations and the negative-boundary stress checks. Claim boundary until fixed: the 6,776-column n_left,n_right<=2 counts, number preservation, weights, transpose symmetry, recoil ledger, and conservation non-selection are supported only for the explicitly stated fixture."
 }

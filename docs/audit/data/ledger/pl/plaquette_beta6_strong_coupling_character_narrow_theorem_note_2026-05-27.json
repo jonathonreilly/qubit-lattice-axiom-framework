@@ -1,42 +1,92 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T14:46:45.786674+00:00",
+  "audit_invocation_history": [
+    "6675a2533bbf4372bf677c6109b86f98"
+  ],
+  "audit_invocation_id": "6675a2533bbf4372bf677c6109b86f98",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 6,
+        "B": 0,
+        "C": 7,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "a58e6c183ac57fcee96eeb137e2448fe6d87d469a10a6eab87e838d021ba5856",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "a58e6c183ac57fcee96eeb137e2448fe6d87d469a10a6eab87e838d021ba5856",
+    "runner_path": "scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-31f10854",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The exact rational Pad\u00e9 identities and positive-root statement close independently. The source as written does not close because T6 infers that c7 destabilizes the diagonal sequence from one [4/4] comparison, while Validation misstates the runner's check count and computation.",
   "claim_id": "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27",
-  "claim_scope": null,
+  "claim_scope": "Conditional finite algebra over I_SC: the exact Pad\u00e9[3/3] and alpha=2,4 values, c6 sensitivity values, Pad\u00e9[4/4](1/3)=157/395, and the positive real pole of the [3/3] Borel denominator; excluding the asserted cause and behavior of the diagonal sequence.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T14:46:45.786674+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Solving the Pad\u00e9[3/3] matching equations gives P(u)=u-6u^3 and Q(u)=1-6u^2-4u^3, hence Pade[3/3](1/3)=3/5.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "3e90b8f429288e9695027e697d9b1ebbe17c11b6cf041f7b2cd8f839fab292f8",
   "note_path": "docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after restricting T6 to the exact 157/395 value and observed one-step comparator gap, or supplying the missing c7 counterfactual and higher-order sequence analysis, and synchronizing Validation with the 26-check runner.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -299,15 +349,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:26.861446+00:00",
+      "archived_audit_sha256": "c28076c1ce9fbea4303bb8ef04d627c7a1d85bb8cb6c5cbc7eb3fd0cad0ba9eb",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.616407+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 18,
+    "B": 3,
     "C": 0,
-    "D": 0,
-    "total_pass": 0
+    "D": 5,
+    "total_pass": 26
   },
   "runner_path": "scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py",
   "title": "SU(3) Wilson Plaquette Strong-Coupling Pad\u00e9[3/3] Narrow Theorem (Bounded)",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: T6 attributes the [4/4] result to c7 and extrapolates instability beyond [3/3] without a c7 counterfactual or higher-order sequence analysis; Validation also says PASS=20 and scipy.integrate.quad integration while the supplied runner reports PASS=26 and performs only nroots/pole detection. Why this blocks: these are unsupported or stale claims in the audited source even though the exact finite Pad\u00e9 identities check independently. Repair target: restrict T6 to the exact 157/395 value and observed comparator gap, or add the missing proof, and synchronize the validation description and count with the runner. Claim boundary until fixed / N1-N8: T5 supports only the ordinary [3/3] Borel-Laplace route at u=1/3 from its positive denominator zero; alternative resummations remain open (N1/N7), there is one algebraic wall with no hidden or primitive supplement (N2/N3/N6), no prior residual witness is used (N4), the rhetoric is expressly route-limited (N5), and no restricted-packet cross-cycle retirement is established (N8)."
 }

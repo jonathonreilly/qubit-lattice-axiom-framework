@@ -1,42 +1,91 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T21:56:51.429428+00:00",
+  "audit_invocation_history": [
+    "83da67e7eba246f7aecfb91a8a75447f"
+  ],
+  "audit_invocation_id": "83da67e7eba246f7aecfb91a8a75447f",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 27,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_koide_z3_joint_projector_identity.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_koide_z3_joint_projector_identity.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e98159d7fcd2db4578a9e36d801544171de87ef47a68671ad7dfa398b5eb07f9",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "e98159d7fcd2db4578a9e36d801544171de87ef47a68671ad7dfa398b5eb07f9",
+    "runner_path": "scripts/frontier_koide_z3_joint_projector_identity.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-82cb6dae",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The combined singlet/doublet identities close algebraically, but the note's individual nontrivial-character formulas disagree with its own vector definitions and with the runner's conventions; the physical cross-lane identification is also unsupported by any supplied one-hop authority.",
   "claim_id": "koide_z3_joint_projector_identity_note_2026-04-19",
-  "claim_scope": null,
+  "claim_scope": "The exact DFT_3/C_3 singlet-doublet projector identities, their interpretation as a Koide/DM shared decomposition, and the claimed CKM/H_framework non-alignment boundary on the stated C^3 setup.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "needs_reaudit_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T21:56:51.429428+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because U_Z3 is DFT_3, its columns are precisely the C eigenvectors, therefore U_Z3 diag(1,0,0) U_Z3^dagger = Pi_triv and U_Z3 diag(0,1,1) U_Z3^dagger = Pi_om + Pi_ombar.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "0528f117017d2460070bb4428eb6cb1e54d5b7244a599b44e554745fc22f1c20",
   "note_path": "docs/KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit the corrected character labels against the source equations, verify that the runner uses the same convention, and require explicit one-hop authorities for the Koide/DM carrier identification.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -194,15 +243,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:22.451664+00:00",
+      "archived_audit_sha256": "63b8418b575e12ab44a23569419eb75d75c116752d8dbc98d26a56c811587e42",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.535463+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 55,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 55
   },
   "runner_path": "scripts/frontier_koide_z3_joint_projector_identity.py",
   "title": "Koide / Z_3 Joint Projector Identity",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: With the note's stated C and vector definitions, C v_om = omega^* v_om and C v_ombar = omega v_ombar, so its displayed Pi_om/Pi_ombar Fourier formulas and U_Z3 column labels are swapped; the runner silently swaps the vector definitions and therefore does not test the note as written. Why this blocks: the source-runner convention drift invalidates part of the displayed derivation, the restricted packet supplies no one-hop authority establishing that these defined arrays are the projectors actually used by the Koide and DM lanes, and three H_framework samples do not establish the broader no-tracking boundary. Repair target: reconcile one convention across note and runner, add the exact Koide/DM definition dependencies, and for the asserted derived no-go boundary supply a complete N1-N8 stress test or narrow it to the executed finite checks. Claim boundary until fixed: Pi_Z3_singlet = Pi_triv and Pi_Z3_doublet = Pi_om + Pi_ombar = I - Pi_triv remain exact for the explicitly defined rank-one projectors because the nontrivial-label swap cancels in the sum."
 }

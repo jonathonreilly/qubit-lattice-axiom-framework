@@ -1,42 +1,91 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T10:16:28.943048+00:00",
+  "audit_invocation_history": [
+    "fb13e067b68b4e95a4e820ab6d905c45"
+  ],
+  "audit_invocation_id": "fb13e067b68b4e95a4e820ab6d905c45",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 2.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "f58f4ae9d15f285f4e7f593c523644f34a1d158614830523a9b288f42bac44ed",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "f58f4ae9d15f285f4e7f593c523644f34a1d158614830523a9b288f42bac44ed",
+    "runner_path": "scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 3
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-e892a1d5",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The core dimensional identity closes, but the source as a whole does not: negative mass dimension alone is not the supplied proof of the asserted perturbative nonrenormalizability and infinite-counterterm claims.",
   "claim_id": "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26",
-  "claim_scope": null,
+  "claim_scope": "The canonical Yang-Mills engineering-dimension identity [g_YM] = (4-d)/2 and its unique zero at d=4, together with the note's renormalizability classifications and d\u22655 no-go corollary.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T10:16:28.943048+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 2.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Requiring [g_YM] + 2[A_\u03bc] = d/2 with [A_\u03bc] = (d-2)/2 gives [g_YM] = (4-d)/2, which vanishes uniquely at d=4.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "0fd1fc837104da948a7ee370a0f209f59f61842c95a0d4119763afffb7079d6d",
   "note_path": "docs/YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: Narrow \u00a76 and the Y7 table labels to engineering-dimension relevance and marginality only, or supply a perturbative power-counting authority or proof, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -172,15 +221,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:31.869786+00:00",
+      "archived_audit_sha256": "01049e6b07517a350d83d79f1cf4d368e7f53af5a9e9ae9e2f9cc31c7601a2e9",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.854611+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 146,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 146
   },
   "runner_path": "scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py",
   "title": "Yang-Mills Bare Coupling Marginality `[g_YM] = 0` Forces `d = 4` Narrow Theorem",
   "transitive_descendants": 3,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely checks 146 class-(A) algebraic equalities, and an independent reconstruction confirms the identity and its unique zero. However, the labels \u201crenormalizable/non-renormalizable\u201d and the \u00a76 no-go assertion about infinitely many ultraviolet counterterms do not follow from engineering dimensions alone; they require perturbative power-counting and renormalization results absent from the packet. Because those statements are presented as derivable corollaries despite the later disclaimer, the note remains conditional until its scope is narrowed or the missing authority is supplied."
 }

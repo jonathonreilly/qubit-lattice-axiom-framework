@@ -1,31 +1,205 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T20:29:16.249677+00:00",
+  "audit_invocation_history": [
+    "45e920f9dd2642959120b8c38c199313"
+  ],
+  "audit_invocation_id": "45e920f9dd2642959120b8c38c199313",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_2026_04_19.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+      "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py": "f40f1b4dc97dd11cb68b3cdf614cece78ebdb89778b3f24d3bdb59a97a1746c2",
+      "scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py": "329c5d87ff01853834bf711b795c1933bd0234ad647bcc8aa20b5160bb694190",
+      "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py": "7ec4d6f6c683edd5680a30df740bb8c1e574bbff5831a6e4fe3ef96422521528",
+      "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py": "eb78ed21722a474a2ced8b831b2ba784b47f8f57a185d4e3c3d6deeba33daf10",
+      "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py": "7c6c379d4b6e70ad78607eb3c5655d241a9a0cb42a6a1dc54607b16afc529c22",
+      "scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py": "2b37764c11e2593c2d83fd346fc3b0a5a2ad81be7f9b5daaf7d18344217e8ab8",
+      "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py": "b24c8fc3c1dc0e0ff84f03cb512391c1b0d2bfc16a51760bb94d231d131764e7",
+      "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+      "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py": "4c9d592a7e85565d8af0220686451ebe5c38a553a0888807474c5ce8a1350e26",
+      "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+      "scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_2026_04_19.py": "fb09af2093f2b4a92e4c0b00003d4f7d0d121346d6b50cfbc90c4a2b3660b03e",
+      "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_j_iso_derivation_and_schur_isotropy_no_go_2026_04_19.py": "0a2352c116539e90a9822d7546f6e47f966f42c52408c158100fb6e2aa45360b",
+      "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_theorem_2026_04_19.py": "a761b4d56e3ff70c70325401a1efbd0a3f58b61dd698633c06ae5335dc3c0969",
+      "scripts/frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_2026_04_19.py": "15046b0bb9d2ed1c5b8477197f5defc64215dd2bae52226f2da92179241357cb",
+      "scripts/frontier_dm_wilson_direct_descendant_transport_fiber_spectral_completion_theorem_2026_04_19.py": "e42e2da6fd1e8046980696c5e7581f8268e42f23f30bfb7a99211f26d7f8ea7f"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/dm_leptogenesis_exact_common.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "f40f1b4dc97dd11cb68b3cdf614cece78ebdb89778b3f24d3bdb59a97a1746c2",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "329c5d87ff01853834bf711b795c1933bd0234ad647bcc8aa20b5160bb694190",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "7ec4d6f6c683edd5680a30df740bb8c1e574bbff5831a6e4fe3ef96422521528",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "eb78ed21722a474a2ced8b831b2ba784b47f8f57a185d4e3c3d6deeba33daf10",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "7c6c379d4b6e70ad78607eb3c5655d241a9a0cb42a6a1dc54607b16afc529c22",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "2b37764c11e2593c2d83fd346fc3b0a5a2ad81be7f9b5daaf7d18344217e8ab8",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "b24c8fc3c1dc0e0ff84f03cb512391c1b0d2bfc16a51760bb94d231d131764e7",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4c9d592a7e85565d8af0220686451ebe5c38a553a0888807474c5ce8a1350e26",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_2026_04_19.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "c9cfcf4bc0331919b66f837dcb07fdb737e4e5bd58e1ceb0d37ca271d3c30058",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_2026_04_19.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "fb09af2093f2b4a92e4c0b00003d4f7d0d121346d6b50cfbc90c4a2b3660b03e",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_j_iso_derivation_and_schur_isotropy_no_go_2026_04_19.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "0a2352c116539e90a9822d7546f6e47f966f42c52408c158100fb6e2aa45360b",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_theorem_2026_04_19.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "a761b4d56e3ff70c70325401a1efbd0a3f58b61dd698633c06ae5335dc3c0969",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_2026_04_19.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "15046b0bb9d2ed1c5b8477197f5defc64215dd2bae52226f2da92179241357cb",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_dm_wilson_direct_descendant_transport_fiber_spectral_completion_theorem_2026_04_19.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e42e2da6fd1e8046980696c5e7581f8268e42f23f30bfb7a99211f26d7f8ea7f",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "c9cfcf4bc0331919b66f837dcb07fdb737e4e5bd58e1ceb0d37ca271d3c30058",
+    "runner_path": "scripts/frontier_dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_2026_04_19.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-5d3ec8d6",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The computation depends on an imported fixed-seed surface, canonical transport column, observable map, and start packet for which the restricted packet supplies no cited retained-grade authorities. It also does not derive the maximin objective's claimed retained-law status from the framework baseline.",
   "claim_id": "dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19",
-  "claim_scope": null,
+  "claim_scope": "On the supplied fixed-seed canonical transport-column fiber and explicit W0/W1/W3/B_major/epsilon start packet, the numerical runs converge to the reported interior triplet/y maximin certificate and pure J_ctr boundary certificate; full-fiber global uniqueness and a microscopic-law derivation are excluded.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "needs_reaudit_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T20:29:16.249677+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/dm_leptogenesis_exact_common.py",
     "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
@@ -44,16 +218,22 @@
     "scripts/frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_2026_04_19.py",
     "scripts/frontier_dm_wilson_direct_descendant_transport_fiber_spectral_completion_theorem_2026_04_19.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "On the tested boundary-drift start packet, maximizing min(J_ctr, J_y) on the canonical transport-column fiber collapses to one common interior certificate with J_ctr = J_y = t_*.",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary",
+    "no_go_result"
+  ],
+  "no_go_discipline": null,
   "note_hash": "1b2add8328cb4d7651cdaba6680de81e3773c645d842cea9499f393ee03f3a43",
   "note_path": "docs/DM_WILSON_DIRECT_DESCENDANT_BOUNDARY_ARREST_TRIPLET_Y_MAXIMIN_NOTE_2026-04-19.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_dependency_edge: register and supply retained-grade one-hop authorities for the canonical fiber, fixed-seed surface, observable pack, and start packet, and derive or explicitly bound the status of the maximin law before re-audit.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -344,15 +524,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:17.180915+00:00",
+      "archived_audit_sha256": "83033f4ebe78b6a41c78086ad0d7a400e5b56a5028d3fed6ae604439bb11e707",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.380416+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 3,
+    "B": 12,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 15
   },
   "runner_path": "scripts/frontier_dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_2026_04_19.py",
   "title": "DM Wilson Direct-Descendant Boundary-Arrest Triplet/Y Maximin Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely performs the reported SLSQP calculations, but the load-bearing computation verifies behavior on a canonical fiber and fixed-seed surface imported through helper modules rather than deriving those inputs from the supplied axiom. The cubic uniqueness checks are algebraic, while the claimed retained-law status of the maximin objective remains unsupported by a cited dependency or bridge. N1-N2: the finite-start numerical route supports the two named boundary behaviors only on the sampled lane and does not exhaust alternative routes or prove wall independence; N3-N6: the source openly states its restrictions, but the packet supplies neither prior-residual matching nor a premise that repairs the missing input chain. N7-N8: common convergence is the strongest steelman, yet there is no independent authority resolving the imported dependencies or cross-cycle evidence sufficient to cement the negative subclaims."
 }

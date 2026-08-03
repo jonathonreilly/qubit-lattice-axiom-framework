@@ -1,42 +1,92 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T19:43:57.921425+00:00",
+  "audit_invocation_history": [
+    "b107d40925d94dd7af669089c6394585"
+  ],
+  "audit_invocation_id": "b107d40925d94dd7af669089c6394585",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 3,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/flavor_interacting_matter_build_2026_05_30.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/flavor_interacting_matter_build_2026_05_30.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "89568ad0aa6df57d8eb0e6c8b8b1b28783131dec606d7d04db3b7818e742eea0",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "89568ad0aa6df57d8eb0e6c8b8b1b28783131dec606d7d04db3b7818e742eea0",
+    "runner_path": "scripts/flavor_interacting_matter_build_2026_05_30.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-b29b9ceb",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The epsilon conclusions close by exhaustive finite enumeration, but the Q runner assumes real a=1 and b=sqrt(r) and samples only four r values; it does not establish the unrestricted exact identity written with |b|\u00b2. The first-principles interacting matter-action bridge also remains missing.",
   "claim_id": "flavor_interacting_matter_build_note_2026-05-30",
-  "claim_scope": null,
+  "claim_scope": "Audited the exhaustive hw=1 epsilon checks, the four real-parameter Q samples, and the narrowly conditional diagonal-C3 diagnostics; no global interaction result or matter-action closure was established.",
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "open_gate",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T19:43:57.921425+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "On the hw=1 triplet epsilon is constant and shifts the triplet to hw=2, while for F=aI+b(J-I) the source asserts Q(F)=1/3+(2/3)|b|\u00b2/a\u00b2.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "conditional_wall_rationale",
+    "stretch_attempt_negative"
+  ],
+  "no_go_discipline": null,
   "note_hash": "c09147c12cb84437b012ea60e0a31e354e5adc4458efb27558b3c8704be12ece",
   "note_path": "docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: restrict the Q identity to nonzero real a and real b, or replace the numerator by Tr(F\u2020F) for the complex case, add a symbolic identity check, and keep the interacting matter-action claim open until a first-principles runner derives it.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1468,15 +1518,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:19.118810+00:00",
+      "archived_audit_sha256": "79c81875cfa77e6360e447119f910a74bd9688f8e306411bce35ab2786aecbad",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.423015+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 9,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/flavor_interacting_matter_build_2026_05_30.py",
   "title": "Flavor \u2014 interacting-matter build: verified epsilon/Q algebra; C3-wall and interacting-dynamics claims conditional/open",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The epsilon portion is genuine exhaustive finite algebra, but the Q runner fixes a=1, takes nonnegative real b=sqrt(r), and checks only four inputs, so it does not certify the source\u2019s unrestricted exact formula involving |b|\u00b2. The interacting branches, coupling, and continuous r(g) curve are explicitly not derived, and no cited authority closes that dependency. Only the epsilon and diagonal-C3 alternatives were tested; other interaction channels and a complete N1\u2013N8 stress packet remain open, so the conditional negative diagnostics cannot be promoted into a broader result."
 }

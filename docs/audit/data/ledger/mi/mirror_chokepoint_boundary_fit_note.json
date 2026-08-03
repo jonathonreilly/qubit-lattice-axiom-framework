@@ -1,42 +1,91 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T01:24:23.953982+00:00",
+  "audit_invocation_history": [
+    "34af9cea292e4152b709e404a3e1cd14"
+  ],
+  "audit_invocation_id": "34af9cea292e4152b709e404a3e1cd14",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/mirror_chokepoint_boundary_fit_certificate.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 7.892,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/mirror_chokepoint_boundary_fit_certificate.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "6d2ef136e28c12ceddb74ab0aa6ef1becc08d7b0ebcb28c3132d543ab0134900",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "6d2ef136e28c12ceddb74ab0aa6ef1becc08d7b0ebcb28c3132d543ab0134900",
+    "runner_path": "scripts/mirror_chokepoint_boundary_fit_certificate.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 20
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-ac17c009",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The gate and OLS arithmetic close over the supplied replay stdout, but the physical chain does not: the companion runner that generates the Born, gravity, and purity values is executed as an opaque subprocess whose source is absent from the packet.",
   "claim_id": "mirror_chokepoint_boundary_fit_note",
-  "claim_scope": null,
+  "claim_scope": "The primary certificate correctly parses the supplied replay stdout, verifies the stated internal gates for N=40,60,80,100, identifies the printed N=120 zero-gravity row, and reproduces the quoted weak OLS fit; the underlying companion physics computation was not audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T01:24:23.953982+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 7.892,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The primary certificate replays the companion mirror runner and uses its rows to certify N=40,60,80,100 and the N=120 zero-gravity wall before fitting.",
+  "load_bearing_step_class": "B",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls"
+  ],
+  "no_go_discipline": null,
   "note_hash": "9d29b9427bcff5616b8db101f0bdbee17ca0e7458aed22c53b0800a745b0818a",
   "note_path": "docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: include the full source and helpers of scripts/mirror_chokepoint_joint.py in the restricted packet, then re-audit whether its Born, gravity, and purity columns are genuinely computed.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -270,15 +319,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:24.626233+00:00",
+      "archived_audit_sha256": "dd3d093f40ceaad28a9027872e52b9e73a4ee7ec47ad08f98dbe6dc351716975",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.575544+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 6,
+    "B": 22,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 28
   },
   "runner_path": "scripts/mirror_chokepoint_boundary_fit_certificate.py",
   "title": "Mirror Chokepoint Boundary Fit Note",
   "transitive_descendants": 20,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the primary runner recomputes the OLS arithmetic but obtains every physical row by executing scripts/mirror_chokepoint_joint.py, whose source is absent, so the packet cannot establish that Born, gravity, and pur_cl are genuinely computed. Why this blocks: the finite-window physics certificate and named N=120 gravity wall rest on an opaque companion, although independent arithmetic confirms the displayed gravity ratios, A, alpha, R\u00b2, and both extrapolations. N1 cannot close five distinct attacks to the named wall from the live evidence; N2 has one wall; N3's registered/canonical hits are non-load-bearing provenance; N4 has no prior witness; N5's negative language limits scope; N6-N8 supply no applicable closure of the opaque computation; and N7 remains unresolved. Repair target: expose the companion computation and its helpers; until then, only the certificate's arithmetic over supplied stdout is established."
 }

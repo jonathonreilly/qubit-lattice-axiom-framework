@@ -1,24 +1,84 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-30T01:34:53.439157+00:00",
+  "audit_invocation_history": [
+    "20520aeaa98b4f81807b1d990c96c6c3"
+  ],
+  "audit_invocation_id": "20520aeaa98b4f81807b1d990c96c6c3",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 19,
+        "B": 0,
+        "C": 1,
+        "D": 17
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/frontier_ckm_down_type_scale_convention_support.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+      "scale_reference_primitive": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null,
+      "scale_reference_primitive": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta",
+      "scale_reference_primitive": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta",
+      "scale_reference_primitive": "meta"
+    },
+    "deps": [
+      "minimal_axioms",
+      "scale_reference_primitive"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 8.644,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_ckm_down_type_scale_convention_support.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3d922cc99109cbd5426f66c50d24b422a5446519c8bcd5bb49d9c0423acfaf38",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "3d922cc99109cbd5426f66c50d24b422a5446519c8bcd5bb49d9c0423acfaf38",
+    "runner_path": "scripts/frontier_ckm_down_type_scale_convention_support.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 49
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260730-8b897b74",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The exact algebraic identities and explicit countermodel compute correctly, but clean certification also requires N1-N8 stress evidence for the asserted negative boundaries. The supplied runner lacks five distinct route tests and the required rhetoric-resolution execution lines.",
   "claim_id": "ckm_down_type_scale_convention_support_note_2026-04-22",
-  "claim_scope": null,
+  "claim_scope": "Exact determinant/Casimir identities, fixed-spectrum mixing countermodel, and shared-positive-T relative-deviation invariance, excluding certification that all scale-convention rescue routes are closed.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-30T01:34:53.439157+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +87,24 @@
     "scale_reference_primitive"
   ],
   "direct_in_degree": 6,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 8.644,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The spectrum of X_R gives det(X_R)=R^5 and Delta_6(X_R)=R^(5/6); the fixed-spectrum theta family varies |V_cb|; and the two-sided transport law factors through T_pred/T_obs.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "18171e0b4fe024a1f8c677d79833545a0addf5fbee29c8f2a0d1cf2cae316721",
   "note_path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: add a dedicated live N1-N8 stress runner with at least five distinct route calculations, all five rhetoric-resolution classes, an independent steelman resolution, and dispositions of the supplied partial-closure and cross-cycle candidates.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -423,12 +488,21 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:07.393755+00:00",
+      "archived_audit_sha256": "61c11056b6bae73dd4ea23843bf2f990272a066235d48e695acc0ecddd70a8b6",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.312620+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 34,
     "B": 0,
     "C": 0,
-    "D": 0,
-    "total_pass": 0
+    "D": 6,
+    "total_pass": 40
   },
   "runner_path": "scripts/frontier_ckm_down_type_scale_convention_support.py",
   "title": "CKM Down-Type Five-Sixths Algebra And Shared-Transport Covariance",
@@ -440,5 +514,5 @@
       "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
     }
   ],
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely verifies 34 class-A symbolic checks and six explicitly comparator-only class-D checks; the determinant, Casimir, counterfamily, and scalar-transport calculations are internally correct. The note nevertheless asserts bounded negative conclusions about spectrum-only mixing determination and scale selection. N1 and N7 have only the explicit theta-family attack and no five-route stress test or independent steelman resolution; N2-N4 expose named bridge boundaries but no prior residual-matching certificate. N5-N8 are incomplete because the runner supplies no per-element, per-site, per-mode, per-block, and lattice-wide resolution lines and the indexed partial-closure and cross-cycle candidates are not dispositioned."
 }

@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T02:55:46.612917+00:00",
+  "audit_invocation_history": [
+    "8dd1be9b67e44aaa92500c72fe665684"
+  ],
+  "audit_invocation_id": "8dd1be9b67e44aaa92500c72fe665684",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 9
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube."
+    },
+    "dep_claim_type": {
+      "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 6.307,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e30746e2ce2be1104ad6074c6854278227f98c18ccd6a4b9dccce06d220e71c7",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "e30746e2ce2be1104ad6074c6854278227f98c18ccd6a4b9dccce06d220e71c7",
+    "runner_path": "scripts/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 13
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-1dca5f4b",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite-momentum computation supports a strong numerical match, but it does not prove the exact k\u21920 coefficient or isotropy for arbitrary momentum directions. The clipped load-bearing stdout and retained authority also prevent independent clean closure.",
   "claim_id": "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
-  "claim_scope": null,
+  "claim_scope": "On the retained 3D cubic-Coxeter complex, the runner numerically compares the Regge and linearized Einstein-Hilbert second variations at k = 10^-3 along axis, face-diagonal, and body-diagonal directions and checks gauge, k=0, breathing, and channel properties.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T02:55:46.612917+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,23 @@
     "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 6.67,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "At small k, the metric-sector quadratic form satisfies Q_h(k) = c \u00b7 Q_EH(k) + O(k\u2074) with the single constant c = \u22121/2 in all three tested lattice directions, claimed as exact O(k\u00b2) isotropy.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "64170050f3719976e3528e76dab749bb0a20afe8cd3d1f7f1b54cc7059e877f2",
   "note_path": "docs/CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Supply unclipped runner stdout and retained-authority text together with a symbolic O(k\u00b2) expansion, or an independently certified limiting and angular argument, proving c = \u22121/2 and arbitrary-direction isotropy rather than testing one finite k in three directions.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -190,15 +247,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:16.455125+00:00",
+      "archived_audit_sha256": "f6037a769dc78f226b5613cea85a7e389981a5ea67fb5bae1c443a8f285b2093",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.347719+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 6,
+    "B": 1,
+    "C": 3,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 10
   },
   "runner_path": "scripts/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.py",
   "title": "The Second Variation of the Regge Action on the Retained Cubic-Coxeter Complex Equals the Linearized Einstein-Hilbert Second Variation at Leading Order \u2014 Exactly, Isotropically, with Derived Normalization",
   "transitive_descendants": 17,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner source genuinely constructs the Regge Hessian and continuum comparator from the supplied geometry, so the load-bearing calculation is class C rather than a renaming or imported match. However, R6 evaluates only k = 10^-3 in three directions and accepts numerical residuals, which cannot establish the claimed exact leading coefficient, the O(k\u2074) remainder, or isotropy over all directions; that missing limiting/angular argument is target-equivalent to the main theorem. The k=0 calculation does support the narrower derived boundary that the single non-metric complement there has nonzero quadratic weight, but not a broader lattice-wide exclusion. Packet clipping independently forbids an audited-clean result."
 }

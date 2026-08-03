@@ -1,47 +1,71 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-18T06:37:23.573913+00:00",
+  "audit_invocation_history": [
+    "2a11c82fdff8482bab7b1f3b271d1d91"
+  ],
+  "audit_invocation_id": "2a11c82fdff8482bab7b1f3b271d1d91",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/frontier_pmns_corner_transport_active_block.py": "fae2bb85913dda3d6deffc3abe20274bd5168258189b5352eeea60ac5bc47edd",
+      "scripts/frontier_pmns_lower_level_end_to_end_closure.py": "b02c46d593c30a3a667ac3c0467dba8893c5809d462fc7bb26853ba595d0c21e",
+      "scripts/frontier_pmns_transfer_operator_dominant_mode.py": "567a6d4d685e7af7801c1762f4c74d08f667c7fa0c409738c664727d94ad1b6f",
+      "scripts/pmns_lower_level_utils.py": "173bc6d96d2640f742e13fa915d5db141adccd5c4819d10833868f042846a583"
+    },
+    "load_bearing_score": 11.992,
+    "runner_hash": "34232b6e543efe5ae326194488051136a82963c94f0aa8d0ab238ffd6b793245",
+    "transitive_descendants": 719
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-loop-drain-ready-20260717-af2dd5dbb8b24beb9f6483d4946c3cdb-pmns_hw1_source_transfer-001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The algebraic chain closes on the explicitly supplied fixtures: column construction followed by inversion returns the Schur effective block, and identical downstream routines therefore return identical outputs. It does not close the broader axiom-first derivation of the fixtures or conventions.",
   "claim_id": "pmns_hw1_source_transfer_boundary_note",
-  "claim_scope": null,
+  "claim_scope": "On the supplied fixture sector operators and admitted probe/tau conventions, response-column inversion reproduces the direct Schur effective blocks and hence the same retained pair and shared downstream outputs.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-18T06:37:23.573913+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_pmns_corner_transport_active_block.py",
     "scripts/frontier_pmns_lower_level_end_to_end_closure.py",
     "scripts/frontier_pmns_transfer_operator_dominant_mode.py",
     "scripts/pmns_lower_level_utils.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 12.109,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Stacking the supplied response columns gives K = (I - lam * delta)^-1, so delta = (I - K^-1) / lam recovers the same effective block obtained directly by the Schur complement.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "51157f011bf76f4dc3b60170a0e04285445cadf506b63882aa6ceae2d1aa1c43",
   "note_path": "docs/PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation of the sector operators, tau classifier, probe weights, and response-column convention from accepted framework premises, then rerun the bridge check.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -553,17 +577,24 @@
       "invalidation_reason": "no_go_discipline_packet_missing",
       "restoration_policy": "restore_overaggressive_invalidation.v2",
       "restored_at": "2026-07-22T17:21:20.760745+00:00"
+    },
+    {
+      "archived_at": "2026-08-03T07:42:26.936822+00:00",
+      "archived_audit_sha256": "fa8bfc561df502684982bda19f6a8ac6ee8b375c6c13bd0ceb6ae2bb53f9cf2a",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.623151+00:00"
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 22,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 22
   },
   "runner_path": "scripts/frontier_pmns_hw1_source_transfer_boundary.py",
   "title": "PMNS HW1 Source-Transfer Boundary",
   "transitive_descendants": 780,
-  "verdict_rationale": null
+  "verdict_rationale": "Within the narrowed fixture-conditional scope, the Part 4 identity is valid and the completed runner reports agreement at numerical precision. The result remains conditional because the sector operators, tau classifier, probe weights, and response-column convention are admitted, while the runner constructs its fixtures from hard-coded active and passive blocks rather than deriving them from the accepted framework premises. N1: direct Schur evaluation is the only tested alternative route; N2: fixture selection and tau/probe conventions are independent walls; N3: the note exposes those admissions; N4: no prior retained residual witness is supplied; N5: negative language is bounded to transfer-only blindness and current-bank nonderivation; N6: indexed premises and reframes do not close the walls; N7: the direct Schur path is the strongest steelman; N8: the cross-cycle index supplies no applicable closure of the missing source-pack derivation."
 }

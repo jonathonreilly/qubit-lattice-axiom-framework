@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T12:54:26.374971+00:00",
+  "audit_invocation_history": [
+    "cd6261c108c142f8976f9efc8942f97d"
+  ],
+  "audit_invocation_id": "cd6261c108c142f8976f9efc8942f97d",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 22,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/mixed_entangled_os_transfer_representation_2026-05-30.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+    },
+    "dep_claim_type": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+    },
+    "deps": [
+      "staggered_only_det_positivity_case_a_note_2026-05-17"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 1.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/mixed_entangled_os_transfer_representation_2026-05-30.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "5c79d2398ebf5f212fe0b1cb65526be46abfdc3f03d213ea44c3218db99accac",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "5c79d2398ebf5f212fe0b1cb65526be46abfdc3f03d213ea44c3218db99accac",
+    "runner_path": "scripts/mixed_entangled_os_transfer_representation_2026-05-30.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-57a637e1",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The determinant weight and reflected correlator are not computed from the same finite Dirac matrix: the former uses a two-slice matrix while the latter uses a 28-slice temporal chain. The mixed-observable and C1 non-vacuity claims also rely on U-independent profiles and a basis-mismatched diagonal control.",
   "claim_id": "mixed_entangled_os_transfer_representation_bounded_note_2026-05-30",
-  "claim_scope": null,
+  "claim_scope": "Finite-carrier, finite-sample/quadrature gauge-fermion-entangled staggered 2-step transfer representation equality for single-creation Wilson-line-transported observables; no continuum, H1, or full interacting-RP closure.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T12:54:26.374971+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,24 @@
     "staggered_only_det_positivity_case_a_note_2026-05-17"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 1.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The det-weighted finite-sample/quadrature reflected Berezin correlator of the genuinely mixed observable equals the matching classically U-averaged fermion-Fock Gram.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "meta",
   "max_descendant_status_rank": 25,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary",
+    "no_go_result"
+  ],
+  "no_go_discipline": null,
   "note_hash": "481afbce4e9be4c64e0013afa0a702ff61d9d05092627315d6647ed47288a8e3",
   "note_path": "docs/MIXED_ENTANGLED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after the runner computes the determinant and full cross-contraction Gram from the same finite M[U], restricts the tested basis to genuinely U-dependent Wilson-line observables, replaces C1 with a basis-consistent control, and supplies unclipped load-bearing evidence.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -191,15 +249,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "clean",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:24.672259+00:00",
+      "archived_audit_sha256": "56d07629c4291c7eb8f75f29f8e09f5aad45b071c936358832f76808cd3458da",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.576633+00:00"
+    }
+  ],
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 3,
+    "B": 3,
+    "C": 21,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 27
   },
   "runner_path": "scripts/mixed_entangled_os_transfer_representation_2026-05-30.py",
   "title": "Gauge-Fermion-Entangled OS Transfer Representation Equality on a Finite 3+1 Staggered Carrier \u2014 Bounded Note",
   "transitive_descendants": 1,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: block_metric_per_mode inverts a 28-slice open temporal chain, but the determinant weight is obtained through det_M_finite with nt=1 from a two-slice matrix; C1 compares Q diag(kappa) Q\u2020 with diag(kappa) in the position basis, and the alleged genuinely mixed basis includes U-independent local creations. Why this blocks: the runner therefore does not compute the stated same-action Berezin expectation or establish the claimed mixed-observable non-vacuity, despite its internally passing scorecard; the clipped load-bearing evidence independently forbids a clean verdict. Repair target: compute both determinant and full reflected Gram from one finite M[U], test only genuinely U-dependent Wilson-line profiles, and use a basis-consistent per-mode control. Claim boundary until fixed: the runner shows only numerical agreement between its separately constructed modal block metric and Fock matrices; C3 remains a scoped derived single-step no-go boundary, while the other exclusions are coverage limits rather than additional walls."
 }

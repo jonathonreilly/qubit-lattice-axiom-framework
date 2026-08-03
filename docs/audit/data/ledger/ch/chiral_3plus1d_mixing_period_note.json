@@ -1,42 +1,92 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T05:36:22.228217+00:00",
+  "audit_invocation_history": [
+    "b5f0a6d57ed84f77b4c7c4fe3b5425db"
+  ],
+  "audit_invocation_id": "b5f0a6d57ed84f77b4c7c4fe3b5425db",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 3,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/frontier_chiral_3plus1d_decoherence_sweep.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.585,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_chiral_3plus1d_decoherence_sweep.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e998dc3061eb33c9feddf348beae7cca34e9b2177c6fe1cc5b57daa71771f84b",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "e998dc3061eb33c9feddf348beae7cca34e9b2177c6fe1cc5b57daa71771f84b",
+    "runner_path": "scripts/frontier_chiral_3plus1d_decoherence_sweep.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 5
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-28b9f1a3",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite arrays follow from the runner\u2019s definitions and printed signs, but the chain from accepted premises to those definitions remains open: neither the six-channel evolution and field coupling nor the toward-mass observable and decoherence identification is supplied. The runner also omits executable checks of the period and phase-fit diagnostics.",
   "claim_id": "chiral_3plus1d_mixing_period_note",
-  "claim_scope": null,
+  "claim_scope": "Conditional finite-model audit of the periodic 3+1D six-channel sweep at theta0=0.3, strength=5e-4, mass offset=3, n in {15,21,23,25,31}, and L in {12,14,16,18,20,28}, limited to n-dependent coherent signs and coincident classical/phase-kill AWAY cases; no predictive recurrence or universal phase-offset law is established.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-25T05:36:22.228217+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 3.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "With theta0 fixed, coherent AWAY windows vary with n, while the classical and phase-kill columns coincide and retain AWAY cases.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "d54c9a47aaa330c79abf0f06e4874cdc969e3a50e2e63adf26b95b2154505ebe",
   "note_path": "docs/CHIRAL_3PLUS1D_MIXING_PERIOD_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the six-channel carrier, coin/shift and field-coupling dynamics, and toward-mass/decoherence readout bridge, then add executable checks for the period and phase-fit diagnostics before re-audit.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1423,15 +1473,24 @@
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-08-03T07:42:07.272046+00:00",
+      "archived_audit_sha256": "22b41c97a4bfe1973904a1604cbd42903bd87b54c81423bd347ac69e4790e586",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.305211+00:00"
+    }
+  ],
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 3,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 3
   },
   "runner_path": "scripts/frontier_chiral_3plus1d_decoherence_sweep.py",
   "title": "3+1D Chiral Mixing Period Note",
   "transitive_descendants": 5,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The runner genuinely computes the three sampled tables, and an independent algebraic check confirms that the coded phase-kill update reproduces the classical probability update, but the source imports the six-channel coin/shift law, theta(field) coupling, and toward-mass readout without a cited derivation from the supplied premises; the runner also does not execute the displayed period/phase-fit diagnostics. Why this blocks: the accepted axioms explicitly supply neither dynamics nor an observable/decoherence bridge, so the model-internal finite result cannot support the broader framework-level resonance interpretation. N1-N8 judgment: N1 has fewer than five genuinely distinct attack routes; N2's theta-only and classicalization boundaries are logically independent; N3's \u201cboundary\u201d and \u201cregistered\u201d wording is scope/artifact bookkeeping rather than a hidden premise; N4 has no cited residual witness; N5 is tested only at a lattice-wide aggregate, not all five required resolutions; N6's supplied primitives do not close the chosen dynamics/readout; N7's finite-sampling/near-zero-threshold steelman remains viable; and N8 supplies no fully dispositioned applicable retirement mechanism for this exact finite model. Repair target: provide a retained carrier/dynamics/readout bridge and executable independent checks for the period/phase-offset claims; Claim boundary until fixed: only the finite table for the explicitly coded model and the exact equality of its phase-kill and classical updates are supported."
 }

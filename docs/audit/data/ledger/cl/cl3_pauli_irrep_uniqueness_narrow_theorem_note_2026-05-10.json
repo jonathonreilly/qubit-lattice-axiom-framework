@@ -1,45 +1,111 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T16:19:26.497247+00:00",
+  "audit_invocation_history": [
+    "c88080ee136c427fbbc7fb5ceaacb66e"
+  ],
+  "audit_invocation_id": "c88080ee136c427fbbc7fb5ceaacb66e",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/cl3_pauli_irrep_exact_support_2026_05_10.py": "879e3eac52cdd93d98ab2e63b23e01b65c535f48f7b1afecd74a99455af98a77",
+      "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f"
+    },
+    "load_bearing_score": 17.799,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "5f12d038e732b5f7db159466900c9f1f8e88c38fd8a1495989ffabfac93082b6",
+        "cache_runner_sha256": "fc7dd197d2a2ca6d3144391215ecb51a5fccac2e30cc7e135842947c2a350e2d",
+        "cache_status": "ok"
+      },
+      "scripts/cl3_pauli_irrep_exact_support_2026_05_10.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "fc7dd197d2a2ca6d3144391215ecb51a5fccac2e30cc7e135842947c2a350e2d",
+    "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1781
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260729-267bed5f",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebraic proof appears internally sound, but the clean audit chain cannot close because the mandatory N1/N7 live-evidence transport is incomplete: each live N1 route omits its route-specific attempt string.",
   "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-29T16:19:26.497247+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 14,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/cl3_pauli_irrep_exact_support_2026_05_10.py",
     "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 17.803,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The abstract matrix units in (12) satisfy E_ab^(s) E_cd^(s) = delta_bc E_ad^(s) and span each ideal, yielding A \u2245 M_2(C) \u2295 M_2(C) and the two-module classification.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
+  "no_go_discipline": null,
   "note_hash": "1b7ab477b36f65ce00d20239eda9300076274c3964c9f1ad1466e54224a0fe2a",
   "note_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: emit every live N1_ROUTE with its route-specific attempt field and an N7 steelman line containing both the selected mechanism and attempt, rerun the certificate, and validate the clean N1-N8 packet.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -2056,17 +2122,24 @@
       "invalidation_reason": "no_go_discipline_packet_missing",
       "restoration_policy": "restore_overaggressive_invalidation.v2",
       "restored_at": "2026-07-22T17:21:20.733482+00:00"
+    },
+    {
+      "archived_at": "2026-08-03T07:42:13.923724+00:00",
+      "archived_audit_sha256": "7b550d7dc6707261b0d6b7b50b21aa3e74a5438344ad9535ecd1a9d2becc7168",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-08-03T07:56:49.317728+00:00"
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 51,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 51
   },
   "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
   "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
   "transitive_descendants": 1786,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the source asserts derived nonfaithfulness and nonunitarity boundaries, but the live N1_ROUTE lines contain mechanism and outcome only, while the clean gate requires the route-specific attempt on that same live surface and requires N7 to quote a live line containing both mechanism and attempt. Why this blocks: source code contains the attempts, but the binding contract expressly forbids substituting source code for current-cycle stdout, so a validator-clean N1/N7 packet cannot be produced. Substantively, N1 presents five distinct exact routes; N2 separates the kernel and Hermiticity boundaries; N3 shows no load-bearing hidden premise; N4 has no prior witness; N5 covers all five resolutions; N6 supplies no closure of these exact boundaries; N7 independently resolves the faithful-direct-sum steelman; and N8 exposes no applicable retirement mechanism in this abstract scope. Repair target: add the omitted live attempt evidence and rerun; until then, the positive decomposition and module calculations remain strong exact support, but the row\u2019s derived negative boundaries cannot receive a clean audit verdict."
 }

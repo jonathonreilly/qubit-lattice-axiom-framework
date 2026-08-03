@@ -6261,7 +6261,8 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
     cases:
 
     - 'noop': the existing audit already qualifies, OR the verdict is
-      terminal-non-clean (cross-confirmation doesn't apply).
+      terminal-non-clean (a later criticality bump does not retroactively
+      synthesize a second seat for the older transaction).
     - 'soft_reset': audited_clean + non-weak independence + bump to
       critical without cross-confirmation. Mirrors apply_audit's
       first-pass flow: audit_in_progress + awaiting_cross_confirmation,

@@ -26,9 +26,10 @@ Triggers (any of):
          live as `cross_confirmation.first_audit`, the lane just waits
          for an independent second auditor). Audits with
          `independence == "weak"` are hard-invalidated. Audits already
-         cross-confirmed are no-ops. Terminal non-clean verdicts
-         (audited_conditional, audited_numerical_match, etc.) are also
-         no-ops — cross-confirmation does not apply to them.
+         cross-confirmed are no-ops. A later topology bump does not
+         retroactively invent a second seat for an older terminal non-clean
+         verdict, so those rows are also no-ops here. New paired high/critical
+         audits still preserve terminal-seat disagreement in `apply_audit.py`.
   5. The audited runner hash changed since audit time, or an
      audited_conditional `runner_artifact_issue` row that asked for a current
      runner/log now has a fresh OK cache matching the current runner source.
@@ -802,12 +803,11 @@ def _categorize_criticality_bump(row: dict, target_criticality: str) -> str:
     indep = row.get("independence")
 
     # Terminal non-clean verdicts (audited_conditional, audited_numerical_match,
-    # audited_renaming, audited_decoration, audited_failed) are already in
-    # their final state. Cross-confirmation does not apply to them
-    # (`apply_audit.py`'s cross-confirmation flow only fires for
-    # `verdict == "audited_clean"`). A criticality bump does not change
-    # whether the chain closed, so leave them alone — re-auditing under a
-    # stricter rule will produce the same terminal verdict.
+    # audited_renaming, audited_decoration, audited_failed) are already final
+    # for the earlier single-seat transaction. A later topology bump cannot
+    # reconstruct a simultaneous second seat, so it leaves them alone. This is
+    # distinct from a new paired high/critical transaction: `apply_audit.py`
+    # cross-confirms those terminal seats and preserves any disagreement.
     if audit_status != "audited_clean":
         return "noop"
 

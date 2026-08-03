@@ -1,0 +1,509 @@
+{
+  "claim_scope": "on fixed open cubic L2/L3 fixtures and the supplied Cycle870 embedding J, the literal returned-route word V;U_G;V^dagger is a recurrent raw-matter channel, restores the declared clean preparation state after each fixed unconditional invocation, and adds no M2 support",
+  "claim_type": "bounded_theorem",
+  "coin_QR": {
+    "QR_off_diagonal_residual": 9.058932439513524e-16,
+    "eliminations": 14,
+    "reconstruction_residual": 9.774239351035397e-16
+  },
+  "derived": [
+    "literal routed V dagger as the reverse-order canonical adjoint of every routed V gate",
+    "exact projective raw-domain G_native channel with the supplied clean embedding restored after every complete word",
+    "all nonnegative fixed unconditional invocation powers by operator induction on the returned clean domain",
+    "the unchanged Cycle870 carrier, auxiliary, and transit footprint",
+    "transported proper-cubic covariance under all 24 frames and 576 ordered products"
+  ],
+  "equation": "S=V^dagger U_G V and exp(-i*phi) S J = J G_native on the supplied clean embedding; E=VJ",
+  "failures": [],
+  "fixtures": [
+    {
+      "Cycle870_E_isometry_inherited_exact": true,
+      "Cycle870_E_isometry_recomputed_exact": true,
+      "Cycle870_all_vector_intertwiner_inherited_exact": true,
+      "Cycle870_all_vector_intertwiner_recomputed_exact": true,
+      "Cycle870_certificate_replay_match": true,
+      "Cycle870_intertwiner_exact": true,
+      "Cycle870_intertwiner_proof_obligations": {
+        "abstract_stabilizer_row_equality_failures": 0,
+        "abstract_update_preservation_failures": 0,
+        "lifted_stabilizer_row_equality_failures": 0,
+        "logical_XZ_lift_equality_failures": 0,
+        "logical_Z_equals_native_B_failures": 0,
+        "native_AB_generator_lift_equality_failures": 0,
+        "physical_update_preservation_failures": 0,
+        "root_logical_canonical_failures": 0,
+        "root_logical_stabilizer_commutator_failures": 0,
+        "rotation_generator_lift_equality_failures": 0,
+        "signed_repetition_lift_homomorphism_failures": 0
+      },
+      "E_equals_VJ_isometry_exact": true,
+      "G_primitive_auxiliary_endpoint_hits": 0,
+      "G_primitive_gates": 17048,
+      "G_restores_arbitrary_entangled_transit": true,
+      "G_route_return_failures": 0,
+      "G_routed_gates": 173352,
+      "G_routed_word_digest_match": true,
+      "G_site_matrix_sha256": "640d60cf42ae915447cdca57b0e9ea4597eb97b2538bb977abf57c76d47b16c6",
+      "G_stage_order": [
+        "onsite_coin_mass",
+        "onsite_reverse_fswap",
+        "directed_seam_fswap",
+        "onsite_contact"
+      ],
+      "S_primitive_gate_ledger": 24826,
+      "S_routed_gates": 271178,
+      "S_site_matrix_sha256": "912ff53ed3e29976b5f5127f9126faee6c7340b1342396a039b06bc76a80ded5",
+      "V_and_V_dagger_gate_count_equal": true,
+      "V_dagger_VJ_exact": true,
+      "V_dagger_V_J_identity_pass": true,
+      "V_dagger_V_full_register_exact": true,
+      "V_dagger_exact_touched_set_reuse": true,
+      "V_dagger_routed_gates": 48913,
+      "V_dagger_site_matrix_sha256": "078f298cf1d19e646f4ed3c045399cea12a937388b76f02eda34efa90e36ceef",
+      "V_dagger_stage_order": [
+        "logical_load",
+        "bond_correction",
+        "bond_syndrome",
+        "coarse_echo_correction_ack",
+        "coarse_syndrome",
+        "triangle_correction",
+        "triangle_syndrome"
+      ],
+      "V_dagger_touched_coordinate_sha256": "1929ffa2e6ae3beb22d7266a4fb09abbf2a38884e297e9368e969b9e6319cff0",
+      "V_gate_unitarity_failures": 0,
+      "V_primitive_gates": 3889,
+      "V_route_return_failures": 0,
+      "V_routed_gates": 48913,
+      "V_routed_word_digest_match": true,
+      "V_site_matrix_sha256": "0055e0d53264a9fc031d49391c744d9dd9449cc37a8c7427ef53545c39f5e6dd",
+      "V_stage_order": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ],
+      "V_touched_coordinate_sha256": "1929ffa2e6ae3beb22d7266a4fb09abbf2a38884e297e9368e969b9e6319cff0",
+      "actual_counts_match_landed_receipt": true,
+      "actual_counts_match_recomputed_certificate": true,
+      "all_nonnegative_fixed_invocation_powers_by_induction_pass": true,
+      "carrier_unique_vacuum_full_rank": true,
+      "coherent_control_over_invocation_count_in_scope": false,
+      "cold_live_and_landed_proof_surface_match": true,
+      "controlled_application_relative_phase_vector_residual": 0.9320457032293477,
+      "controlled_invocation_out_of_scope": true,
+      "controlled_invocation_without_compensation_equivalent": false,
+      "controlled_phase_control_active": true,
+      "controller_clean_execution_fields": {
+        "root_fresh_consumption_failures": 0,
+        "root_spent_epoch_failures": 0,
+        "router_return_failures": 0,
+        "token_return_failures": 0,
+        "value_work_failures": 0
+      },
+      "controller_clean_execution_pass": true,
+      "correct_one_epoch_phase_pass": true,
+      "correct_two_epoch_phase_pass": true,
+      "direct_G_routed_word_sha256": "164c0f74dbb5b10a1f684c96fd4350452d5a6d2bb2d16a7af4ae338cc623b768",
+      "direct_V_routed_word_sha256": "870bb9e40b94921770f4b6c188bb63882552b1d10874d4d067ab84e9ff43b7d1",
+      "direct_physical_support_coordinate_sha256": "1b203e81afcc16d557e0ff9eac1e72479638548a9dfb29f5a663c76ef7521f9c",
+      "direct_transit_coordinate_sha256": "f1ee99facf800ccc239492c1e26383114d30835388e2586a456f39bb33082532",
+      "dirty_carrier_X_witness": {
+        "maximum_violated_vacuum_rows": 12,
+        "minimum_violated_vacuum_rows": 1,
+        "single_carrier_X_accepted_by_all_vacuum_rows": 0,
+        "single_carrier_X_cases": 180,
+        "witness_statement": "every single-carrier X anticommutes with at least one independently reconstructed vacuum stabilizer; this rejects those dirty inputs but is not an admission circuit"
+      },
+      "dirty_controller_admission_guard_compiled": false,
+      "dirty_fault_repair_or_admission_claimed": false,
+      "dirty_root_patterns_accepted": 0,
+      "dirty_root_patterns_checked": 21,
+      "dirty_syndrome_action_failure_active": true,
+      "formal_phase_residual": 0.0,
+      "formal_phase_routed_gates": 0,
+      "forward_only_hostile_spent_replay_spent_failures": 3,
+      "forward_only_hostile_spent_replay_token_failures": 3,
+      "gate_unitarity_failures": 0,
+      "landed_G_routed_word_sha256": "164c0f74dbb5b10a1f684c96fd4350452d5a6d2bb2d16a7af4ae338cc623b768",
+      "landed_V_routed_word_sha256": "870bb9e40b94921770f4b6c188bb63882552b1d10874d4d067ab84e9ff43b7d1",
+      "landed_all_vector_equality_follows": true,
+      "landed_combined_support_M2": 5228,
+      "landed_physical_support_coordinate_sha256": "1b203e81afcc16d557e0ff9eac1e72479638548a9dfb29f5a663c76ef7521f9c",
+      "landed_transit_coordinate_sha256": "f1ee99facf800ccc239492c1e26383114d30835388e2586a456f39bb33082532",
+      "literal_V_dagger_inverse_kind_failures": 0,
+      "literal_V_dagger_inverse_pair_failures": 0,
+      "live_G_routed_word_sha256": "164c0f74dbb5b10a1f684c96fd4350452d5a6d2bb2d16a7af4ae338cc623b768",
+      "live_V_routed_word_sha256": "870bb9e40b94921770f4b6c188bb63882552b1d10874d4d067ab84e9ff43b7d1",
+      "live_all_vector_equality_follows": true,
+      "live_physical_support_coordinate_sha256": "1b203e81afcc16d557e0ff9eac1e72479638548a9dfb29f5a663c76ef7521f9c",
+      "live_transit_coordinate_sha256": "f1ee99facf800ccc239492c1e26383114d30835388e2586a456f39bb33082532",
+      "next_clean_domain_restored_pass": true,
+      "non_NN_failures": 0,
+      "observed_S_declared_support_M2": 5228,
+      "observed_S_touched_support_M2": 5202,
+      "one_epoch_correct_phase_residual": 0.0,
+      "one_epoch_formal_vector_representative_exact": true,
+      "one_epoch_returns_J_domain": true,
+      "one_epoch_vector_representative_pass": true,
+      "phase_angle": -168.20687791288861,
+      "physical_support_coordinate_match": true,
+      "proof_mode": "cold Cycle870 all-vector generator intertwiner plus literal V reverse-adjoint identity; no dense 2^(6N) operator is materialized",
+      "proof_provenance": {
+        "Cycle870_intertwiner": {
+          "claim_role": "inherited_Cycle870_premise",
+          "evidence_mode": "recomputed_via_cube_fixture_and_matched_to_pinned_receipt"
+        },
+        "V_dagger_VJ": {
+          "claim_role": "Cycle883_derived",
+          "evidence_mode": "recomputed_literal_word"
+        },
+        "one_and_two_epoch": {
+          "claim_role": "Cycle883_derived",
+          "evidence_mode": "algebraic_implication_from_all_vector_intertwiner_and_returned_J_domain"
+        }
+      },
+      "raw_logical_input_is_arbitrary_not_dirty": true,
+      "recomputed_combined_support_M2": 5228,
+      "recurrent_raw_domain_conclusion": "with J the supplied clean embedding and E=VJ, exp(-i*phi) V^dagger U_G V J = J G_native; fixed unconditional powers follow by induction",
+      "root_handshake_controls": {
+        "correct_reverse_adjoint_clean_domain_failures": 0,
+        "dirty_controller_patterns_not_prepared": 21,
+        "dirty_controller_patterns_per_root": 7,
+        "literal_event_chronology_failures": 0,
+        "root_groups": 3,
+        "same_order_adjoint_clean_domain_failures": 3,
+        "same_order_adjoint_fresh_failures": 3,
+        "same_order_adjoint_observed_states": [
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "same_order_adjoint_token_failures": 3,
+        "state_order": [
+          "fresh",
+          "token",
+          "spent"
+        ],
+        "whole_adjoint_deletion_fresh_failures": 3,
+        "whole_adjoint_deletion_next_domain_failures": 3,
+        "whole_adjoint_deletion_observed_states": [
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "whole_adjoint_deletion_spent_failures": 3
+      },
+      "same_order_V_dagger_pair_failures": 48888,
+      "selected_V_dagger_deletion_argument": "unitary prefix/suffix invariance reduces the full operator residual to the local omitted-gate residual",
+      "selected_V_dagger_deletion_operator_residual": 2.0,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "single_carrier_stabilizer_sign_flip_outside_declared_vacuum": true,
+      "support_reuse_without_new_M2": true,
+      "transit_coordinate_match": true,
+      "transit_state_is_arbitrary_or_entangled_not_dirty": true,
+      "two_epoch_correct_phase_residual": 0.0,
+      "two_epoch_formal_vector_representative_exact": true,
+      "two_epoch_induction_seed_pass": true,
+      "wrong_phase_sign_control_active": true,
+      "wrong_phase_sign_vector_residual": 1.9826877958702498
+    },
+    {
+      "Cycle870_E_isometry_inherited_exact": true,
+      "Cycle870_E_isometry_recomputed_exact": true,
+      "Cycle870_all_vector_intertwiner_inherited_exact": true,
+      "Cycle870_all_vector_intertwiner_recomputed_exact": true,
+      "Cycle870_certificate_replay_match": true,
+      "Cycle870_intertwiner_exact": true,
+      "Cycle870_intertwiner_proof_obligations": {
+        "abstract_stabilizer_row_equality_failures": 0,
+        "abstract_update_preservation_failures": 0,
+        "lifted_stabilizer_row_equality_failures": 0,
+        "logical_XZ_lift_equality_failures": 0,
+        "logical_Z_equals_native_B_failures": 0,
+        "native_AB_generator_lift_equality_failures": 0,
+        "physical_update_preservation_failures": 0,
+        "root_logical_canonical_failures": 0,
+        "root_logical_stabilizer_commutator_failures": 0,
+        "rotation_generator_lift_equality_failures": 0,
+        "signed_repetition_lift_homomorphism_failures": 0
+      },
+      "E_equals_VJ_isometry_exact": true,
+      "G_primitive_auxiliary_endpoint_hits": 0,
+      "G_primitive_gates": 61038,
+      "G_restores_arbitrary_entangled_transit": true,
+      "G_route_return_failures": 0,
+      "G_routed_gates": 703550,
+      "G_routed_word_digest_match": true,
+      "G_site_matrix_sha256": "08290dd3991322079e66f935499e69902eec2e1dccabf0d82c261b466ff4f40d",
+      "G_stage_order": [
+        "onsite_coin_mass",
+        "onsite_reverse_fswap",
+        "directed_seam_fswap",
+        "onsite_contact"
+      ],
+      "S_primitive_gate_ledger": 91984,
+      "S_routed_gates": 1117604,
+      "S_site_matrix_sha256": "7128f62fe2bda19ba951ece5ccd61cf848e0d6019b46decf1532d2f16ff2f5e8",
+      "V_and_V_dagger_gate_count_equal": true,
+      "V_dagger_VJ_exact": true,
+      "V_dagger_V_J_identity_pass": true,
+      "V_dagger_V_full_register_exact": true,
+      "V_dagger_exact_touched_set_reuse": true,
+      "V_dagger_routed_gates": 207027,
+      "V_dagger_site_matrix_sha256": "aec19a97f497cd05baa43188f901c4f08cefd33a8d8c62bdd33d3616c890f50e",
+      "V_dagger_stage_order": [
+        "logical_load",
+        "bond_correction",
+        "bond_syndrome",
+        "coarse_echo_correction_ack",
+        "coarse_syndrome",
+        "triangle_correction",
+        "triangle_syndrome"
+      ],
+      "V_dagger_touched_coordinate_sha256": "5c4f5ce8599a0b8090e04b924c96fca7eee27d8c0c2ea1f07cc21851257c13ce",
+      "V_gate_unitarity_failures": 0,
+      "V_primitive_gates": 15473,
+      "V_route_return_failures": 0,
+      "V_routed_gates": 207027,
+      "V_routed_word_digest_match": true,
+      "V_site_matrix_sha256": "0f44164b6900279b28fa6010ed9d53d54ca215bfb05bf3c77cc7e5d28be10a8d",
+      "V_stage_order": [
+        "triangle_syndrome",
+        "triangle_correction",
+        "coarse_syndrome",
+        "coarse_echo_correction_ack",
+        "bond_syndrome",
+        "bond_correction",
+        "logical_load"
+      ],
+      "V_touched_coordinate_sha256": "5c4f5ce8599a0b8090e04b924c96fca7eee27d8c0c2ea1f07cc21851257c13ce",
+      "actual_counts_match_landed_receipt": true,
+      "actual_counts_match_recomputed_certificate": true,
+      "all_nonnegative_fixed_invocation_powers_by_induction_pass": true,
+      "carrier_unique_vacuum_full_rank": true,
+      "coherent_control_over_invocation_count_in_scope": false,
+      "cold_live_and_landed_proof_surface_match": true,
+      "controlled_application_relative_phase_vector_residual": 1.0696518958403711,
+      "controlled_invocation_out_of_scope": true,
+      "controlled_invocation_without_compensation_equivalent": false,
+      "controlled_phase_control_active": true,
+      "controller_clean_execution_fields": {
+        "root_fresh_consumption_failures": 0,
+        "root_spent_epoch_failures": 0,
+        "router_return_failures": 0,
+        "token_return_failures": 0,
+        "value_work_failures": 0
+      },
+      "controller_clean_execution_pass": true,
+      "correct_one_epoch_phase_pass": true,
+      "correct_two_epoch_phase_pass": true,
+      "direct_G_routed_word_sha256": "52984a688bd4cf333d73b4bc8a3dc17c6235ccf978a573223fa509ebec8bdbe5",
+      "direct_V_routed_word_sha256": "89a33d0d87f715ac58426935a103a7c74ba3639383f72b972e44be1da7da3d68",
+      "direct_physical_support_coordinate_sha256": "80ade3a6e1d718d19d9cd43b45a9ed65de24cc84b026b87986c7f6a049ac9813",
+      "direct_transit_coordinate_sha256": "d54c55477a56a05128b22e931f2f34767c9597dd5cd11bb13d39ce7b7fa2da55",
+      "dirty_carrier_X_witness": {
+        "maximum_violated_vacuum_rows": 16,
+        "minimum_violated_vacuum_rows": 1,
+        "single_carrier_X_accepted_by_all_vacuum_rows": 0,
+        "single_carrier_X_cases": 648,
+        "witness_statement": "every single-carrier X anticommutes with at least one independently reconstructed vacuum stabilizer; this rejects those dirty inputs but is not an admission circuit"
+      },
+      "dirty_controller_admission_guard_compiled": false,
+      "dirty_fault_repair_or_admission_claimed": false,
+      "dirty_root_patterns_accepted": 0,
+      "dirty_root_patterns_checked": 56,
+      "dirty_syndrome_action_failure_active": true,
+      "formal_phase_residual": 0.0,
+      "formal_phase_routed_gates": 0,
+      "forward_only_hostile_spent_replay_spent_failures": 8,
+      "forward_only_hostile_spent_replay_token_failures": 8,
+      "gate_unitarity_failures": 0,
+      "landed_G_routed_word_sha256": "52984a688bd4cf333d73b4bc8a3dc17c6235ccf978a573223fa509ebec8bdbe5",
+      "landed_V_routed_word_sha256": "89a33d0d87f715ac58426935a103a7c74ba3639383f72b972e44be1da7da3d68",
+      "landed_all_vector_equality_follows": true,
+      "landed_combined_support_M2": 20138,
+      "landed_physical_support_coordinate_sha256": "80ade3a6e1d718d19d9cd43b45a9ed65de24cc84b026b87986c7f6a049ac9813",
+      "landed_transit_coordinate_sha256": "d54c55477a56a05128b22e931f2f34767c9597dd5cd11bb13d39ce7b7fa2da55",
+      "literal_V_dagger_inverse_kind_failures": 0,
+      "literal_V_dagger_inverse_pair_failures": 0,
+      "live_G_routed_word_sha256": "52984a688bd4cf333d73b4bc8a3dc17c6235ccf978a573223fa509ebec8bdbe5",
+      "live_V_routed_word_sha256": "89a33d0d87f715ac58426935a103a7c74ba3639383f72b972e44be1da7da3d68",
+      "live_all_vector_equality_follows": true,
+      "live_physical_support_coordinate_sha256": "80ade3a6e1d718d19d9cd43b45a9ed65de24cc84b026b87986c7f6a049ac9813",
+      "live_transit_coordinate_sha256": "d54c55477a56a05128b22e931f2f34767c9597dd5cd11bb13d39ce7b7fa2da55",
+      "next_clean_domain_restored_pass": true,
+      "non_NN_failures": 0,
+      "observed_S_declared_support_M2": 20138,
+      "observed_S_touched_support_M2": 20076,
+      "one_epoch_correct_phase_residual": 0.0,
+      "one_epoch_formal_vector_representative_exact": true,
+      "one_epoch_returns_J_domain": true,
+      "one_epoch_vector_representative_pass": true,
+      "phase_angle": -588.9039633677298,
+      "physical_support_coordinate_match": true,
+      "proof_mode": "cold Cycle870 all-vector generator intertwiner plus literal V reverse-adjoint identity; no dense 2^(6N) operator is materialized",
+      "proof_provenance": {
+        "Cycle870_intertwiner": {
+          "claim_role": "inherited_Cycle870_premise",
+          "evidence_mode": "recomputed_via_cube_fixture_and_matched_to_pinned_receipt"
+        },
+        "V_dagger_VJ": {
+          "claim_role": "Cycle883_derived",
+          "evidence_mode": "recomputed_literal_word"
+        },
+        "one_and_two_epoch": {
+          "claim_role": "Cycle883_derived",
+          "evidence_mode": "algebraic_implication_from_all_vector_intertwiner_and_returned_J_domain"
+        }
+      },
+      "raw_logical_input_is_arbitrary_not_dirty": true,
+      "recomputed_combined_support_M2": 20138,
+      "recurrent_raw_domain_conclusion": "with J the supplied clean embedding and E=VJ, exp(-i*phi) V^dagger U_G V J = J G_native; fixed unconditional powers follow by induction",
+      "root_handshake_controls": {
+        "correct_reverse_adjoint_clean_domain_failures": 0,
+        "dirty_controller_patterns_not_prepared": 56,
+        "dirty_controller_patterns_per_root": 7,
+        "literal_event_chronology_failures": 0,
+        "root_groups": 8,
+        "same_order_adjoint_clean_domain_failures": 8,
+        "same_order_adjoint_fresh_failures": 8,
+        "same_order_adjoint_observed_states": [
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "same_order_adjoint_token_failures": 8,
+        "state_order": [
+          "fresh",
+          "token",
+          "spent"
+        ],
+        "whole_adjoint_deletion_fresh_failures": 8,
+        "whole_adjoint_deletion_next_domain_failures": 8,
+        "whole_adjoint_deletion_observed_states": [
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "whole_adjoint_deletion_spent_failures": 8
+      },
+      "same_order_V_dagger_pair_failures": 207012,
+      "selected_V_dagger_deletion_argument": "unitary prefix/suffix invariance reduces the full operator residual to the local omitted-gate residual",
+      "selected_V_dagger_deletion_operator_residual": 2.0,
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "single_carrier_stabilizer_sign_flip_outside_declared_vacuum": true,
+      "support_reuse_without_new_M2": true,
+      "transit_coordinate_match": true,
+      "transit_state_is_arbitrary_or_entangled_not_dirty": true,
+      "two_epoch_correct_phase_residual": 0.0,
+      "two_epoch_formal_vector_representative_exact": true,
+      "two_epoch_induction_seed_pass": true,
+      "wrong_phase_sign_control_active": true,
+      "wrong_phase_sign_vector_residual": 1.9791101885206208
+    }
+  ],
+  "not_claimed": [
+    "circuit ordinals are not time",
+    "the formal representative scalar is not a gate, energy, or rate",
+    "the initial clean domain is supplied rather than autonomously formed or admitted",
+    "coherent control over differing invocation counts is excluded because the executable projective phase becomes relative",
+    "no translation-invariant all-volume controller, no no-go, no minimum-content result, and no axiom pressure"
+  ],
+  "one_particle_fixture": {
+    "analytic_mass": 0.4534056541748852,
+    "beta": -0.3,
+    "boundary": "inherited supplied numerical fixture; no parameter or law selection",
+    "g_contact": 0.37,
+    "pairwise_mass_residual": 1.1102230246251565e-16,
+    "rest_mass": 0.4534056541748851
+  },
+  "open": [
+    "intrinsic initial clean-domain genesis, dirty-input admission/fault repair, and physical occurrence/start trigger",
+    "a translation-compatible volume-independent local schedule for V and V dagger without the supplied serial forest order",
+    "noncubic and periodic topology, Wilson sectors, boundary/coframe selection, and numerical-law selection",
+    "persistent encoded-bank architecture between epochs; this construction returns matter to the raw logical bank",
+    "time, source/gravity, permanent Record, Born/history, and prediction bridges"
+  ],
+  "proper_cubic_covariance": {
+    "composition_argument": "signed A/B transport generates every root stabilizer/logical row and every native update row; coordinate transport carries the identical carrier/aux bank",
+    "joined_code_diagram_products": 576,
+    "native_G": {
+      "all_update_rotation_transport_failures": 0,
+      "carrier_set_transport_failures": 0,
+      "coframe": "supplied and transported; lab-fixed textual rebuild is not claimed",
+      "graph_generator_transport_failures": 0,
+      "ordered_frame_products": 576,
+      "physical_coordinate_product_failures": 0,
+      "proper_cubic_frames": 24,
+      "rotation_parameter_transport_failures": 0,
+      "signed_AB_generator_product_failures": 0,
+      "update_metadata_product_failures": 0
+    },
+    "root_carrier_aux_coordinate": {
+      "coframe_status": "supplied and transported",
+      "frame_injectivity_failures": 0,
+      "ordered_products": 576,
+      "product_diagram_failures": 0,
+      "proper_cubic_frames": 24
+    },
+    "root_signed_AB_semantic_E": {
+      "ordered_products": 576,
+      "port_order_gauge_status": "signed local chart gauge included",
+      "product_edge_failures": 0,
+      "product_generator_failures": 0,
+      "product_site_failures": 0,
+      "proper_cubic_frames": 24,
+      "semantic_generator_rows": 224,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "single_frame_edge_type_failures": 0,
+      "single_frame_generator_failures": 0,
+      "single_frame_placement_failures": 0
+    },
+    "shape": [
+      2,
+      2,
+      2
+    ]
+  },
+  "source_pins": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+    "docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md": "74beb1de39ea0e579b8c709fdb294602f8cb959f1283b7556eb4c62335fd2e2b",
+    "outputs/cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json": "d6be75419b1fab56853127d55730b63a23ef7d44205e66b7fa73c9f19aac8611",
+    "outputs/cycle870_openreference_recurrent_update_independent_receipt_2026_08_02.json": "f3fa00ade5696bf3061a2bedc776a910ad801e6bef28a7558f1a3f07ab7a813f",
+    "scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py": "1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd",
+    "scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py": "687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237",
+    "scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py": "64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2",
+    "scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_core_2026_08_03.py": "b21554d7689d8c5ad66dd1e4fa1bfad23c0928c402815111c0148b7a423b790b"
+  },
+  "status": "pass",
+  "supplied": [
+    "fixed finite open cubic L2/L3 boundary, spacing-16 origin, and transported coframe",
+    "arbitrary raw six-mode matter state tensor a once-supplied clean Cycle870 carrier/syndrome/controller/work domain",
+    "Cycle219 beta=-0.3, Cycle230 g_contact=0.37, and the Cycle870 serial E/G factor order",
+    "external application of the complete fixed composite word"
+  ],
+  "this_source_sha256": "053b0886a5de2b204bc004b0bd30b47e47fd0049ba80f11a8d9b7b4b24e04aa0"
+}

@@ -1,0 +1,40 @@
+{
+  "boundary": "cold execution, source/receipt pins, stdout equality, and receipt semantics only; no audit verdict or wider physics claim",
+  "claim_type": "package_acceptance",
+  "failures": [],
+  "runner_rows": [
+    {
+      "executed": true,
+      "expected_receipt_sha256": "d4643ba7f109595ac21199ad4985ec5dbe8ce6263ed8274a9b8c4a40d87e3791",
+      "expected_source_sha256": "053b0886a5de2b204bc004b0bd30b47e47fd0049ba80f11a8d9b7b4b24e04aa0",
+      "name": "primary",
+      "receipt": "outputs/cycle883_recurrent_encode_update_decode_sandwich_primary_receipt_2026_08_03.json",
+      "receipt_sha256": "d4643ba7f109595ac21199ad4985ec5dbe8ce6263ed8274a9b8c4a40d87e3791",
+      "returncode": 0,
+      "semantic_pass": true,
+      "source": "scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py",
+      "source_sha256": "053b0886a5de2b204bc004b0bd30b47e47fd0049ba80f11a8d9b7b4b24e04aa0",
+      "stdout_matches_receipt": true
+    },
+    {
+      "executed": true,
+      "expected_receipt_sha256": "b78d209e50fb7b60c5072e140f5debfae4a629de8776fa20b07b5db400c7cbc3",
+      "expected_source_sha256": "89b23e73d815c4c1c4c9ebc5a16b260331e153bd6267fed1289aa5b4ecaae5ba",
+      "name": "independent",
+      "receipt": "outputs/cycle883_recurrent_encode_update_decode_sandwich_independent_receipt_2026_08_03.json",
+      "receipt_sha256": "b78d209e50fb7b60c5072e140f5debfae4a629de8776fa20b07b5db400c7cbc3",
+      "returncode": 0,
+      "semantic_pass": true,
+      "source": "scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03.py",
+      "source_sha256": "89b23e73d815c4c1c4c9ebc5a16b260331e153bd6267fed1289aa5b4ecaae5ba",
+      "stdout_matches_receipt": true
+    }
+  ],
+  "static_audit_helper_modules": [
+    "frontier_cycle883_recurrent_encode_update_decode_sandwich_core_2026_08_03",
+    "frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03",
+    "frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03"
+  ],
+  "status": "pass",
+  "this_source_sha256": "b6f68d26814c86af8e74c66035721a4d973855fba2ac4e198ea50ad0a0d4c010"
+}

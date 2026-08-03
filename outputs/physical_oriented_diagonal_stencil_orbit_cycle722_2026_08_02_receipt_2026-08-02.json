@@ -1,0 +1,14 @@
+{
+  "fail": "0",
+  "line_labels": "4",
+  "line_stabilizer_48": "12",
+  "orbit_average_cost": "1.394925e+00",
+  "oriented_labels": "8",
+  "oriented_stabilizer_48": "6",
+  "pass": "51",
+  "static_form_scale": "2.945214e+01",
+  "static_labels_LT2": "4",
+  "static_labels_LT3": "4",
+  "stencil_separation": "2.789850e+00",
+  "temporal_drop_floor": "1.000000"
+}

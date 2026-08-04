@@ -1,0 +1,76 @@
+2 by 1 by 1 spatial block: two lattice cells side by side, carried through one tick
+PASS corner count  block 24 one cell 16
+PASS five-subset census  subsets 42504
+PASS volume spectrum  [(0, 13152), (1, 17280), (2, 9840), (3, 1472), (4, 680), (5, 64), (6, 16)]
+PASS minimal pieces  block 17280 one cell 2672
+PASS pieces per dissection  24 times the box volume 2 is 48
+two charges on one set of pieces
+PASS spatial adjacency charge range  (3, 9)
+PASS spatial adjacency spectrum  [(3, 128), (4, 768), (5, 2816), (6, 4928), (7, 5760), (8, 2608), (9, 272)]
+PASS transposed charge range  (3, 7)
+PASS transposed charge spectrum  [(3, 432), (4, 2592), (5, 7488), (6, 4896), (7, 1872)]
+PASS neither charge dominates the other  spatial is larger on 12208 pieces and smaller on 1952
+PASS the long direction costs when it is spatial  spatial reaches 9 where transposed stops at 7
+PASS trivial counting bounds  spatial 144 to 432, transposed 144 to 336
+the seam between the two cells
+PASS long-axis span charge range  (0, 4)
+PASS long-axis span spectrum  [(0, 5344), (1, 1744), (2, 4944), (3, 3040), (4, 2208)]
+PASS span is a sub-charge of adjacency  every counted long-axis pair is counted by adjacency as well
+PASS span zero means the piece sits in one closed cell  5344 pieces, agreeing pair by pair
+PASS every seam-crossing piece spans the block  least x zero and greatest x two on all 11936
+PASS slab-confined pieces are one-cell pieces  5344 = 2 times 2672, charge unchanged by the translation
+PASS slab-confined charge doubles the one-cell spectrum  [(3, 128), (4, 768), (5, 2304), (6, 1536), (7, 608)]
+PASS crossing the seam costs at least two  least charge 5 crossing against 3 confined
+box symmetry, used only to compress the certificate
+PASS proper cubic rotations  24
+PASS rotations preserving a 2 by 1 by 1 block  8
+PASS group order  8 rotations times the tick relabelling, 16 distinct corner permutations
+PASS piece orbits  1080 orbits, every one of size 16
+PASS both charges are constant on every orbit  one adjacency charge and one span charge per orbit
+sample points, generic by construction and verified generic
+PASS piece inverses are exact integer matrices  17280 block and 2672 one-cell inverses give the identity
+PASS barycentric integers are bounded  no corner sees a barycentric integer above 6 on a block piece
+PASS weights are generic by construction and near-uniform  block spread 1.142857, one-cell spread 1.285595
+PASS point family  one point per orbit carried around the group, 17280 distinct
+PASS points per orbit  every orbit carries 16 points
+PASS no sample point lands on a piece boundary  boundary incidences 0 over all 17280 pieces
+PASS membership is constant on every orbit  17280 rows carry 1060 distinct
+no dissection of the block carries the block symmetry
+PASS a symmetric dissection is a union of whole orbits  48 pieces over orbits of size 16 leaves 3 orbits
+PASS every orbit covers a point of its own orbit  the diagonal never vanishes, so an orbit is used at most once
+PASS an orbit meets a point as often as its representative does  orbit sums are 16 times the representative row
+PASS orbits that could appear at all  23 of 1080; the other 1057 already cover some sample point twice
+PASS triples of orbits covering every point exactly once  0
+one cell, measured here so nothing about it is a supplied number
+PASS one-cell minimal pieces  2672
+PASS one-cell charge range and spectrum  (3, 7) [(3, 64), (4, 384), (5, 1152), (6, 768), (7, 304)]
+PASS one-cell group order  24 rotations times the tick relabelling, 48 corner permutations
+PASS one-cell piece orbits  57
+PASS one-cell sample points  2736 distinct, boundary incidences 0
+PASS floor certificate holds on every one-cell piece  least slack 0, equality on 1984 of 2672
+PASS floor certificate value  24 times 9 over 2 is exactly 108.000000
+PASS ceiling certificate holds on every one-cell piece  least slack 0, equality on 944 of 2672
+PASS ceiling certificate value  24 times 16 over 3 is exactly 128.000000
+PASS one-cell witnesses at both ends are dissections  24 pieces each, 276 of 276 pairs separated both times
+PASS the one-cell bracket is exactly [108, 128]  certified at both ends and attained at both ends
+what respecting the seam forces
+PASS a seam-respecting dissection is a pair of cell dissections  span zero puts every piece inside one closed cell
+PASS seam-respecting cost bracket  between 216 and 256, from the certified one-cell bracket
+PASS least-charge stacked dissection  48 unit pieces, 1128 of 1128 pairs separated, charge 216, span zero
+PASS greatest seam-respecting dissection  48 unit pieces, 1128 of 1128 pairs separated, charge 256, span zero
+the dissection that refuses the seam
+PASS greatest-charge witness is a dissection  48 pieces, every one of volume one, volumes summing to the box
+PASS greatest-charge witness pieces are pairwise interior-disjoint  1128 of 1128 pairs separated
+PASS greatest-charge witness charge  spatial 318, transposed 238
+PASS greatest-charge witness crosses the seam  31 of its 48 pieces
+PASS the dearest dissection cannot respect the seam  318 above the seam-respecting ceiling 256
+PASS block ceiling holds on every piece  least slack 0, equality on 1200 of 17280
+PASS certified block ceiling  3888 over 12 is 324, and the witness reaches 318
+PASS denominators a block certificate value can use  216 needs an even one, 324 a multiple of four, and 12 serves
+what the cycle measures
+PASS one dissection carries the two charges far apart  318 against 238 on the same 48 pieces
+PASS the stencil uses every ordering of the four coordinates  the long spatial axis and the tick exchange freely
+PASS so the two charges agree on the stacked stencil  one cell 108 both ways, stacked 216 against 216
+PASS the dear one-cell dissection has no such symmetry  the swap moves it, and its charges read 128 against 116
+PASS measured span of the cost  216 at the least found and 318 at the greatest found, inside 144 and 432
+TOTAL: PASS=65 FAIL=0

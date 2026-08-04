@@ -441,3 +441,21 @@ registered-convention rows, science closed.
 - Cluster-cap (20th gravity-family PR): **OPEN** — target-status
   transformation + landed-wall correction + two discharges.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 898 escape census (blockG21, PR #5959) — 2026-08-04
+
+- Supervisor review: the adjudication's every-occurrence discipline
+  and the four kills verified in the receipt; the two checker-forced
+  repairs (third reading; bipartite universality) adopted and re-run
+  before certification; coverage bounds declared with the closed
+  regions proven bound-free by theorems.
+- Checker: 6/6 survive; the bounds attack surfaced exactly the
+  declared-out-of-scope class; 400/400 modulus cross-check; 8/8
+  teeth. New audit flag: 882 cert-E 13-vs-14 membership convention.
+- With 897: the bind-to-a-VALUE program is effectively closed (the
+  target is conditionally excluded AND every escape shape is killed,
+  sterile, or a tuned purchase). The FAMILY binding (899, running)
+  is the obligation's live question.
+- Cluster-cap (21st gravity-family PR): **OPEN** — coverage
+  completion with four kills + three theorems + exact pricing.
+- Local disposition: **pass** (bounded_theorem; audit pending).

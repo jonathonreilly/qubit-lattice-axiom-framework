@@ -687,3 +687,22 @@ census module lives on the Q1 lineage, so the join runs Born-ward).
   clean worktree verified) — the first of the campaign; recorded.
 - Cluster-cap (4th Q-family PR): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 908 intertwine discharge (blockQ5, PR #5971) — 2026-08-04
+
+- Supervisor review: the transport theorem's digest-wise + set-wise
+  verification; the phase-0 anchoring gate; the honest partial
+  double-build disclosure; the ledger renumbering (worker's BL9 ->
+  BL11, avoiding the 907 collision) applied at ship.
+- Checker: genuinely different construction (monitor-moving);
+  three full-horizon rebuilds reproduce exactly; zero disagreements;
+  8/8 teeth; three refinements adopted incl. the LATE-HORIZON M6
+  finding (M6 collapses to zero below the pinned horizon — carried
+  wherever the M6 branch is consumed).
+- BORN LEDGER after 905-908: BL7 CLOSED (reading-dependent, both
+  routes priced); P-INTERTWINE-878 DISCHARGED; BL11 filed (COV-EQV
+  free); P-856-SHAPE strengthened, undischarged; LIVE: BL9
+  (within-world distribution), BL10 (degree-2 carrier), BL6
+  (zero-mass commitment), BL4 (dynamics).
+- Cluster-cap (5th Q-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).

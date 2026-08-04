@@ -522,14 +522,19 @@ def main() -> int:
         "runner_under_test_matches_its_own_receipt": None,
         "blocked_modules_loaded": [n for n in BLOCKLISTED_MODULES
                                    if n in sys.modules],
-        "firewall_hits": list(FIREWALL.hits),
+        "firewall_hits_before_the_teeth": list(FIREWALL.hits),
+        "note_on_firewall_hits": (
+            "the LEAKED_RESOLUTION tooth deliberately attempts to import the"
+            " runner under test, so the run-end firewall count is expected to"
+            " be exactly 1; this certificate records the count BEFORE any"
+            " tooth fires, which must be 0"),
     }
     claim = json.loads(payloads[C906_RECEIPT].decode("utf-8"))
     cert_pins["runner_under_test_matches_its_own_receipt"] = (
         claim.get("self_sha256") == sha_rows[C906_PATH])
     cert_pins["pass"] = bool(
         not pin_mismatches and not cert_pins["blocked_modules_loaded"]
-        and not cert_pins["firewall_hits"]
+        and not cert_pins["firewall_hits_before_the_teeth"]
         and cert_pins["runner_under_test_matches_its_own_receipt"])
 
     receipt878 = json.loads(payloads[C878_RECEIPT].decode("utf-8"))
@@ -1055,7 +1060,10 @@ def main() -> int:
         "R4_general_theorem_status": cert_r4["general_theorem_status"],
         "R5_generous_filter_verdict": cert_r5["verdict"],
         "elapsed_sec": elapsed,
-        "firewall_hits": len(FIREWALL.hits),
+        "firewall_hits_before_the_teeth":
+            len(cert_pins["firewall_hits_before_the_teeth"]),
+        "firewall_hits_at_run_end_including_the_deliberate_leak_tooth":
+            len(FIREWALL.hits),
         "self_sha256": sha256(Path(__file__).read_bytes()).hexdigest(),
         "runner_under_test": {"path": C906_PATH, "sha256": sha_rows[C906_PATH]},
         "source_pins": [{"path": p, "sha256": sha_rows[p],

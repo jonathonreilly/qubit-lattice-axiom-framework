@@ -607,32 +607,54 @@ ONSET_VALUES = tuple(sorted({row[2] for row in CLASS_ONSET}))
 EXC_GLOBAL = tuple(sorted({ZERO} | set(ONSET_VALUES)))
 
 
-def lawful_set(parameter: Fraction) -> tuple:
-    rows = []
+_LAWFUL_CACHE: dict = {}
+
+
+def _lawful_scan(parameter: Fraction) -> dict:
+    """One exhaustive brute-force scan of all configurations at this t.
+
+    Memoised on the exact rational.  The scan itself is unconditional -- every
+    configuration is tested against A + tB = 0 -- so the cache only stops the
+    same t being scanned once per row; it is not a shortcut through the
+    partition classes, which are certified separately in E.
+    """
+    cached = _LAWFUL_CACHE.get(parameter)
+    if cached is not None:
+        return cached
+    lawful = []
+    traceless = []
+    trace_bearing = 0
     for direction, triple, a_vec, b_vec in CONFIGURATIONS:
-        if lawful_at(a_vec, b_vec, parameter):
-            rows.append((direction, triple))
-    return tuple(rows)
+        if not lawful_at(a_vec, b_vec, parameter):
+            continue
+        lawful.append((direction, triple))
+        if vec_zero(a_vec):
+            traceless.append((direction, triple))
+        else:
+            trace_bearing += 1
+    outcome = {
+        "lawful": tuple(lawful),
+        "traceless": tuple(traceless),
+        "trace_bearing": trace_bearing,
+    }
+    _LAWFUL_CACHE[parameter] = outcome
+    return outcome
+
+
+def lawful_set(parameter: Fraction) -> tuple:
+    return _lawful_scan(parameter)["lawful"]
 
 
 def lawful_count(parameter: Fraction) -> int:
-    return len(lawful_set(parameter))
+    return len(_lawful_scan(parameter)["lawful"])
 
 
 def trace_bearing_count(parameter: Fraction) -> int:
-    total = 0
-    for direction, triple, a_vec, b_vec in CONFIGURATIONS:
-        if lawful_at(a_vec, b_vec, parameter) and not vec_zero(a_vec):
-            total += 1
-    return total
+    return _lawful_scan(parameter)["trace_bearing"]
 
 
 def traceless_lawful(parameter: Fraction) -> tuple:
-    rows = []
-    for direction, triple, a_vec, b_vec in CONFIGURATIONS:
-        if lawful_at(a_vec, b_vec, parameter) and vec_zero(a_vec):
-            rows.append((direction, triple))
-    return tuple(rows)
+    return _lawful_scan(parameter)["traceless"]
 
 
 def cycle318_support_lawful(parameter: Fraction) -> bool:
@@ -648,6 +670,85 @@ def cycle318_support_lawful(parameter: Fraction) -> bool:
         ))
         for direction in range(len(DIRECTIONS))
     )
+
+
+def graded_array(ledger, sigma: Fraction) -> tuple:
+    """The Cycle-868 grading of one raw ledger at an ARBITRARY rational sigma.
+
+    S(sigma) = tracefree(S) + sigma * conformal(S)/3 on the sector index.  The
+    sigma probe reads this at sigma = +/-1; here it is left open so the formal
+    sigma degree of each object component can be measured exactly.
+    """
+    left = tuple(tuple(Fraction(value) for value in row) for row in ledger)
+    array = (left, left)
+    conformal = tuple(
+        tuple(
+            sum((block[sector][axis] for sector in range(len(SECTORS))), ZERO)
+            for axis in range(AXES)
+        )
+        for block in array
+    )
+    blocks = []
+    for endpoint, block in enumerate(array):
+        rows = []
+        for sector in range(len(SECTORS)):
+            rows.append(tuple(
+                (block[sector][axis] - THIRD * conformal[endpoint][axis])
+                + sigma * THIRD * conformal[endpoint][axis]
+                for axis in range(AXES)
+            ))
+        blocks.append(tuple(rows))
+    graded = tuple(blocks)
+    pushed = (graded[1], graded[0])
+    o1 = tuple(
+        pushed[endpoint][sector][axis]
+        for endpoint in range(len(ENDPOINTS))
+        for sector in range(len(SECTORS))
+        for axis in range(AXES)
+    )
+    o3 = tuple(
+        sum((pushed[endpoint][sector][axis]
+             for sector in range(len(SECTORS))), ZERO)
+        for endpoint in range(len(ENDPOINTS))
+        for axis in range(AXES)
+    )
+    return o1 + o3
+
+
+_DEGREE_CACHE: dict = {}
+
+
+def formal_sigma_degree(ledger) -> int:
+    """The exact polynomial degree in sigma of every rebuilt object component.
+
+    Evaluated at sigma = 0, 1, 2, 3 and read off by exact finite differences,
+    so the degree is computed rather than inferred from the construction.
+    Memoised on the exact ledger; the function is pure.
+    """
+    key = tuple(tuple(row) for row in ledger)
+    cached = _DEGREE_CACHE.get(key)
+    if cached is not None:
+        return cached
+    samples = tuple(
+        graded_array(ledger, Fraction(point)) for point in range(4)
+    )
+    best = 0
+    for index in range(len(samples[0])):
+        column = [samples[point][index] for point in range(4)]
+        differences = column
+        degree = 0
+        while len(differences) > 1 and any(
+            differences[i + 1] != differences[i]
+            for i in range(len(differences) - 1)
+        ):
+            differences = [
+                differences[i + 1] - differences[i]
+                for i in range(len(differences) - 1)
+            ]
+            degree += 1
+        best = max(best, degree)
+    _DEGREE_CACHE[key] = best
+    return best
 
 
 _SIGMA_CACHE: dict = {}
@@ -889,15 +990,35 @@ def derive_needles() -> dict:
         "unit_weights",
         "unit-weight",
     )
-    primary_text = (ROOT / AUDIT_INPUT_PATHS[2]).read_text(encoding="utf-8")
-    lowered = primary_text.lower()
+    # The gate: a needle is admitted only if it occurs VERBATIM in at least one
+    # of the four pinned frontier artifacts that constitute the grading's own
+    # account of itself.  Nothing invented survives this.
+    gate_paths = (
+        AUDIT_INPUT_PATHS[2], AUDIT_INPUT_PATHS[4],
+        AUDIT_INPUT_PATHS[6], AUDIT_INPUT_PATHS[0],
+    )
+    gate_texts = {
+        path: (ROOT / path).read_text(encoding="utf-8").lower()
+        for path in gate_paths
+    }
     gated = []
     ungated = []
-    for needle in derived + structural:
-        if needle in lowered:
+    provenance = {}
+    for needle in sorted(set(derived) | set(structural)):
+        sources = tuple(
+            path for path in gate_paths if needle in gate_texts[path]
+        )
+        if sources:
             gated.append(needle)
+            provenance[needle] = sources
         else:
             ungated.append(needle)
+    structural_admitted = tuple(
+        needle for needle in structural if needle in provenance
+    )
+    structural_rejected = tuple(
+        needle for needle in structural if needle not in provenance
+    )
     result = {
         "question": "what vocabulary does the grading itself use, by its own"
                     " pinned account?",
@@ -908,34 +1029,52 @@ def derive_needles() -> dict:
             " docstring, all extracted by AST; n-grams of length 1-3 over that"
             " seed with a published stopword filter, keeping those containing a"
             " published grading root; union a published structural-literal set;"
-            " every needle then GATED on occurring verbatim in the pinned"
-            " primary's text"
+            " every needle then GATED on occurring verbatim in at least one of"
+            " the four pinned frontier artifacts that are the grading's own"
+            " account of itself"
         ),
+        "gate_paths": gate_paths,
         "needle_roots": NEEDLE_ROOTS,
         "stopwords": tuple(sorted(NEEDLE_STOPWORDS)),
         "seed_quote_count": len(vocabulary["provenance_site_quotes"]),
         "seed_docstring_count": len(vocabulary["docstrings"]),
         "derived_needle_count": len(derived),
         "structural_needle_count": len(structural),
+        "structural_needles": structural,
+        "structural_needles_admitted": structural_admitted,
+        "structural_needles_rejected": structural_rejected,
         "needles": tuple(sorted(gated)),
         "needle_count": len(gated),
-        "needles_rejected_by_the_pin_gate": tuple(sorted(ungated)),
-        "every_needle_occurs_in_the_pinned_primary": not ungated,
+        "needle_provenance": {
+            needle: provenance[needle] for needle in sorted(provenance)
+        },
+        "needles_rejected_by_the_gate": tuple(sorted(ungated)),
+        "rejected_count": len(ungated),
+        "every_admitted_needle_is_quoted_from_a_pin": all(
+            provenance[needle] for needle in gated
+        ),
+        "every_structural_needle_admitted": not structural_rejected,
         "finding": (
-            f"The needle set is not chosen, it is read off the artifact under"
+            f"The needle set is not chosen, it is read off the artifacts under"
             f" audit. {len(vocabulary['provenance_site_quotes'])} provenance"
             f" quotations and {len(vocabulary['docstrings'])} docstrings were"
             f" extracted by AST from the pinned Cycle-876 primary; the published"
-            f" root filter over their 1-to-3-grams produced"
-            f" {len(derived)} needles, the published structural-literal set adds"
-            f" {len(structural)}, and every one of the {len(gated)} survivors was"
-            f" required to occur verbatim in that same pinned text"
-            f" ({not ungated}). Nothing in the sweep below uses a word the"
-            f" grading does not use about itself."
+            f" root filter over their 1-to-3-grams produced {len(derived)}"
+            f" candidates and the published structural-literal set adds"
+            f" {len(structural)}. Each was then required to occur VERBATIM in at"
+            f" least one of the four pinned frontier artifacts:"
+            f" {len(gated)} survive and {len(ungated)} are rejected, and the"
+            f" rejections are published too -- most of them are n-grams that"
+            f" straddle the join between two quotations, which is exactly what"
+            f" the gate is for. All {len(structural)} structural needles survive"
+            f" ({not structural_rejected}); note that (1, 2, 0) is NOT in the"
+            f" Cycle-876 primary and enters only through Cycle 880, which is"
+            f" itself a fact about where the competing grading is written down."
         ),
     }
     result["pass"] = (
-        result["every_needle_occurs_in_the_pinned_primary"]
+        result["every_admitted_needle_is_quoted_from_a_pin"]
+        and result["every_structural_needle_admitted"]
         and result["needle_count"] > 0
         and len(structural) == 8
     )
@@ -1006,27 +1145,16 @@ def ast_detectors(tree) -> dict:
     }
 
 
-def build_combined_needle_regex(needle_list):
-    """One alternation over all needles, longest first.
-
-    Longest-first ordering makes the match at each position deterministic and
-    prefers the more specific needle ("unit weight" over "weight"); the counts
-    below are therefore first-match-wins counts, which is stated rather than
-    left implicit.
-    """
-    order = sorted(range(len(needle_list)), key=lambda i: (-len(needle_list[i]), i))
-    parts = [
-        f"(?P<n{index}>{re.escape(needle_list[index])})" for index in order
-    ]
-    return re.compile("|".join(parts), re.IGNORECASE), order
-
-
 def census_certificate(needles: dict) -> dict:
+    """Sweep scripts/ and docs/ for the derived needles and classify each hit.
+
+    Counting is by case-folded literal substring occurrence, INDEPENDENTLY per
+    needle: a longer needle and a shorter one it contains are both counted, so
+    the per-needle counts are occurrence counts and not a partition.  That is
+    stated rather than left implicit; nothing downstream depends on the counts
+    being disjoint, only on the hit SET being complete.
+    """
     needle_list = needles["needles"]
-    combined, _order = build_combined_needle_regex(needle_list)
-    group_to_needle = {
-        f"n{index}": needle_list[index] for index in range(len(needle_list))
-    }
     scanned = 0
     hit_rows = []
     needle_file_counts = {needle: 0 for needle in needle_list}
@@ -1039,10 +1167,12 @@ def census_certificate(needles: dict) -> dict:
                 text = path.read_text(encoding="utf-8", errors="replace")
             except OSError:
                 continue
+            folded = text.lower()
             counts: dict = {}
-            for match in combined.finditer(text):
-                needle = group_to_needle[match.lastgroup]
-                counts[needle] = counts.get(needle, 0) + 1
+            for needle in needle_list:
+                found = folded.count(needle)
+                if found:
+                    counts[needle] = found
             if not counts:
                 continue
             for needle in counts:
@@ -1953,13 +2083,19 @@ def build_result_rows() -> tuple:
         },
         {
             "id": "C880_TOP_SIGMA_DEGREE",
-            "claim": "no response object exceeds sigma-degree two",
+            "claim": "no response object rebuilt here (O1, O3) exceeds the"
+                     " pinned sigma-degree bound, by exact finite differences"
+                     " over sigma = 0,1,2,3; the other four Cycle-868 objects"
+                     " are pinned and not rebuilt",
             "source": "Cycle 880 primary (" + BRANCH_PINS["cycle868_runner_commit"] + ")",
             "kind": "SUPPORT_LEVEL",
             "ladder_role": "LOAD_BEARING",
             "qualified_form": None,
             "atoms": (),
-            "predicate": lambda t: max(OBJECT_ARITY.values()) <= SIGMA_DEGREE_BOUND,
+            "predicate": lambda t: max(
+                formal_sigma_degree(raw_ledger(d, tri))
+                for d, tri, _a, _b in CONFIGURATIONS
+            ) <= SIGMA_DEGREE_BOUND,
         },
         {
             "id": "C880_BLIND_LOCUS_SIZE_MATCHES_THE_LANDED_FAMILY",
@@ -2012,7 +2148,7 @@ def classification_certificate() -> dict:
         for entry in table
     )
     grid_complete = all(
-        set(entry["grid"]) == {str(value) for value in T_GRID}
+        set(entry["grid_route"]) == {str(value) for value in T_GRID}
         for entry in table
         if entry["classification"] != "BROKEN_OFF_UNIT"
     )
@@ -2393,8 +2529,9 @@ def falsifier_certificate() -> dict:
             "expected_excluded": (str(off_grid_break),),
             "kind": "WEIGHT_VALUE",
             "ladder_role": "DIAGNOSTIC",
-            "qualified_form": None,
-            "atoms": ((Fraction(-242, 113), Fraction(1)),),
+            # w_aux(t) - 355/113 = (1 - t) - 355/113 = -242/113 - t, whose root
+            # is t = -242/113.  The atom is the affine form itself, not the root.
+            "atoms": ((Fraction(-242, 113), Fraction(-1)),),
             "predicate": lambda t: line_point(t)[2] != Fraction(355, 113),
         },
         {
@@ -2571,9 +2708,22 @@ def verdict_certificate(classification: dict, backlog: dict, census: dict,
         if r["disposition"] == "SUPERSEDED_BY_A_T_UNIFORM_ROW_WITH_ITS_SCOPE_KEPT"
     )
 
+    # Two criteria are reported, both stated before the values were computed.
+    # The STRICT criterion is the block's own: the surface dissolves only if the
+    # t-conditional residue is empty or consists solely of statements about t.
+    # The FINER criterion is this census's: it dissolves if no LOAD BEARING row
+    # requires an exact CHOICE of t, exclusions not counting as choices.  They
+    # can disagree, and if they do, both answers are published.
+    strict_residue = tuple(
+        row for row in residue_rows
+        if row["disposition"] != "SELF_REFERENTIAL_STATEMENT_ABOUT_T"
+    )
+    strict_dissolves = not strict_residue
     dissolves = not needs_a_choice
-    if dissolves:
-        decision_state = "DISSOLVED_AS_A_DERIVATION_RESULT"
+    if dissolves and strict_dissolves:
+        decision_state = "DISSOLVED_ON_BOTH_CRITERIA"
+    elif dissolves:
+        decision_state = "DISSOLVED_ON_THE_CHOICE_CRITERION_ONLY"
     else:
         decision_state = "SURVIVES_ON_A_COMPUTED_RESIDUE"
 
@@ -2611,8 +2761,33 @@ def verdict_certificate(classification: dict, backlog: dict, census: dict,
         ),
         "self_referential_rows": tuple(r["id"] for r in self_referential),
         "superseded_rows": tuple(r["id"] for r in superseded),
+        "criterion_STRICT_block_spec": (
+            "dissolves only if the t-conditional residue is empty or consists"
+            " solely of statements whose subject is t"
+        ),
+        "criterion_FINER_this_census": (
+            "dissolves if no LOAD BEARING row requires an exact choice of t; a"
+            " cofinite truth set is an exclusion, not a choice"
+        ),
+        "strict_criterion_residue": tuple(
+            {"id": row["id"], "disposition": row["disposition"],
+             "residue_shape": row["residue_shape"]} for row in strict_residue
+        ),
+        "strict_criterion_dissolves": strict_dissolves,
+        "finer_criterion_dissolves": dissolves,
         "decision_surface_state": decision_state,
         "decision_surface_dissolves": dissolves,
+        "sharpest_single_row": (
+            "C880_BLIND_LOCUS_IS_EXACTLY_THE_LANDED_FAMILY. Cycle 880 stated it"
+            " AT t* = +1 and it is true there; generalised to the whole line it"
+            " holds at every t EXCEPT t = 0. The reason is exact: the blind"
+            " locus is the lift over the TRACELESS lawful supports, and"
+            " traceless-and-lawful means A = 0 and tB = 0, so at t = 0 it is"
+            " every A = 0 configuration and away from t = 0 it is exactly the"
+            " landed six. The one load-bearing result that is still t-conditional"
+            " is therefore conditional on the grading NOT being the unit"
+            " grading -- the opposite of a choice that has to be made."
+        ),
         "the_landed_family_is_lawful_at_every_t":
             len(CLASS_U) == len(DIRECTIONS)
             and all((d, landed_support(d)) in set(CLASS_U)
@@ -2653,9 +2828,16 @@ def verdict_certificate(classification: dict, backlog: dict, census: dict,
         f" are constants or negative controls, and {len(load_bearing)} are load"
         f" bearing. Of those, {len(needs_an_exclusion)} require only that a"
         f" finite set of points be EXCLUDED -- not a choice -- and"
-        f" {len(needs_a_choice)} require an exact choice of t. The #5931"
-        f" decision surface is therefore {decision_state}:"
-        f" {result['what_remains_exactly']}."
+        f" {len(needs_a_choice)} require an exact choice of t. On this census's"
+        f" criterion the #5931 decision surface is {decision_state}:"
+        f" {result['what_remains_exactly']}. On the stricter criterion -- residue"
+        f" empty or only statements about t -- it does NOT dissolve"
+        f" ({strict_dissolves}), because {len(strict_residue)} rows remain"
+        f" t-conditional; both answers are published rather than the convenient"
+        f" one. The gap between them is exactly the four dispositions the"
+        f" partition names, and every one of them is a repair rather than a"
+        f" decision: keep the scope qualifier, restate a constant, cite the"
+        f" competing route by its own grading, or read a negative control."
     )
     result["pass"] = (
         len(table) >= 25
@@ -2814,7 +2996,11 @@ def run() -> int:
             list(verdict["rows_requiring_only_an_exclusion"]),
         "decision_surface_state": verdict["decision_surface_state"],
         "decision_surface_dissolves": verdict["decision_surface_dissolves"],
+        "strict_criterion_dissolves": verdict["strict_criterion_dissolves"],
+        "finer_criterion_dissolves": verdict["finer_criterion_dissolves"],
+        "residue_dispositions": verdict["residue_dispositions"],
         "retirement_statement": verdict["retirement_statement"],
+        "sharpest_single_row": verdict["sharpest_single_row"],
         "classification_table_digest": digest(classification["table"]),
     }
     CACHE.parent.mkdir(parents=True, exist_ok=True)

@@ -648,3 +648,22 @@ census module lives on the Q1 lineage, so the join runs Born-ward).
   joint-system construction as its potential theorem.
 - Cluster-cap: 2nd Q-family PR — below threshold, noted for the 3rd.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 906 covariance tension (blockQ3, PR #5969) — 2026-08-04
+
+- Supervisor review: the COV-INV derivation with the checker's
+  independent AST read agreeing (reading identifiability held); the
+  two-route ranks + the structural third route (M2-line vs
+  survivor-span — re-deriving 878 AND 905 in one stroke); the
+  demonstrated outcome-neutrality (counterfactual census, opposite
+  verdict, all gates passing — and it caught the dim-V keying bug);
+  the single-orbit scope note adopted.
+- Checker: CORROBORATES_WITH_REFINEMENT, 0 disagreements, 8/8 teeth.
+- Born ledger update: BL7 CLOSED (constructively; M6 exists, unique
+  up to scale; one-generator price). Selection now over {M3, M4, M5,
+  M6}. New premises filed: P-856-SHAPE, P-INTERTWINE-878. BL6
+  maximized under covariance (support 11 worlds).
+- Cluster-cap (3rd Q-family PR — evaluator required from here):
+  **OPEN** — tension resolution with impossibility theorem +
+  constructive object + scope result + filed premises.
+- Local disposition: **pass** (bounded_theorem; audit pending).

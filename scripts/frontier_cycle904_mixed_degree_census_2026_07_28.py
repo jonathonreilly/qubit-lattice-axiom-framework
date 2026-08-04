@@ -2342,7 +2342,17 @@ def run() -> int:
             science_a["D_CLOSURE_AND_BOUNDS"]["declared_bounds"],
         "closure_rules": science_a["D_CLOSURE_AND_BOUNDS"]["closure_rules"],
         "atom_count": science_a["C_GENERATOR_SPACE"]["atom_count"],
+        # The full atom table is published so an independent checker can
+        # rebuild the declared space atom for atom instead of taking the
+        # count on trust.
+        "atoms": science_a["C_GENERATOR_SPACE"]["atoms"],
+        "degree_graded_coefficient_sets":
+            science_a["C_GENERATOR_SPACE"]["degree_graded_coefficient_sets"],
         "atom_v3_range": science_a["C_GENERATOR_SPACE"]["v3_of_the_atom_set"],
+        "closure_growth_table":
+            science_a["D_CLOSURE_AND_BOUNDS"]["growth_table"],
+        "target_witness_count": len(
+            science_a["H_TARGET_ADJUDICATION"]["minimal_witnesses_for_2_27"]),
         "brief_v3_premise_holds":
             science_a["C_GENERATOR_SPACE"][
                 "brief_premise_native_v3_subset_of_minus1_0_1"],

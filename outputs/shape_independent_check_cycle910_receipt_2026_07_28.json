@@ -1,0 +1,726 @@
+{
+ "R0_pins": {
+  "axiom_exclusion_present": true,
+  "blocked_modules_loaded": [],
+  "check": "R0_PINS",
+  "firewall_hits": [],
+  "git_blobs": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "4a863da1f3f255354839277271a3a69a5c205133",
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md": "f819f5b31d442248fac255fcdf3b0139d6ba83f8",
+   "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "392cba199a75a14a8bb88808943c1259cbd7a94b",
+   "outputs/intertwine_discharge_cycle908_receipt_2026_07_28.json": "d6fcfc999e37f7a089cfe31123f61197ab4aa944",
+   "outputs/shape_discharge_cycle910_receipt_2026_07_28.json": "8b7dbcfc617342b9f404c0acc210bb66f182ff6c",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py": "fc873d0b1947866b238bbe5456ffe89fcd072a21",
+   "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+   "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+   "scripts/frontier_cycle910_shape_discharge_2026_07_28.py": "b2d0ff474f75c8c98ad7adb1033a143d1c55b7db"
+  },
+  "pass": true,
+  "paths": [
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py",
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+   "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+   "outputs/covariance_tension_cycle906_receipt_2026_07_28.json",
+   "outputs/intertwine_discharge_cycle908_receipt_2026_07_28.json",
+   "scripts/frontier_cycle910_shape_discharge_2026_07_28.py",
+   "outputs/shape_discharge_cycle910_receipt_2026_07_28.json",
+   "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "primary_receipt_sha256": "c38a7e1092af18b51f4c550572198d4bf9fde85653c63d0ec1919677098dd53e",
+  "primary_self_sha256_agrees": true,
+  "primary_source_sha256": "fb8540b7179725572da2cbce66bcfecd1759e39af1f203bf3b220e91b96c9c5e",
+  "sha256": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md": "7b6b73826ee397e66102994174d94e04c3f174761f00ffcfe0da2be97e72a545",
+   "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f",
+   "outputs/intertwine_discharge_cycle908_receipt_2026_07_28.json": "825ebf6866755364ba27c504080808539f8040759413f0fff8cc57cd21dcb7f4",
+   "outputs/shape_discharge_cycle910_receipt_2026_07_28.json": "c38a7e1092af18b51f4c550572198d4bf9fde85653c63d0ec1919677098dd53e",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py": "20bce7f6dab9d7755ddefc6e2000d501acb8572dc15f50981b65ba9f6e2a4f2b",
+   "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+   "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
+   "scripts/frontier_cycle910_shape_discharge_2026_07_28.py": "fb8540b7179725572da2cbce66bcfecd1759e39af1f203bf3b220e91b96c9c5e"
+  },
+  "spec_constants": {
+   "all_agree": true,
+   "by_source": {
+    "DEAD_CHUNK_ORBITS": {
+     "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": 512
+    },
+    "DEAD_ORBIT_ORBITS": {
+     "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": 4096
+    },
+    "FIXTURE_BANKS": {
+     "scripts/frontier_cycle856_record_covariance_2026_07_28.py": 2,
+     "scripts/frontier_cycle863_time_from_records_2026_07_28.py": 2
+    },
+    "HORIZON": {
+     "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": 16384
+    },
+    "MAX_SOURCES": {
+     "scripts/frontier_cycle856_record_covariance_2026_07_28.py": 5,
+     "scripts/frontier_cycle863_time_from_records_2026_07_28.py": 5
+    },
+    "MIN_SOURCES": {
+     "scripts/frontier_cycle856_record_covariance_2026_07_28.py": 2,
+     "scripts/frontier_cycle863_time_from_records_2026_07_28.py": 2
+    },
+    "REGISTER_CAP": {
+     "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": 64
+    },
+    "TRAJECTORY_HORIZON": {
+     "scripts/frontier_cycle856_record_covariance_2026_07_28.py": 51115,
+     "scripts/frontier_cycle863_time_from_records_2026_07_28.py": 51115
+    }
+   },
+   "cross_source_agreements": {
+    "FIXTURE_BANKS": true,
+    "MAX_SOURCES": true,
+    "MIN_SOURCES": true,
+    "TRAJECTORY_HORIZON": true
+   },
+   "values": {
+    "DEAD_CHUNK_ORBITS": 512,
+    "DEAD_ORBIT_ORBITS": 4096,
+    "FIXTURE_BANKS": 2,
+    "HORIZON": 16384,
+    "MAX_SOURCES": 5,
+    "MIN_SOURCES": 2,
+    "REGISTER_CAP": 64,
+    "TRAJECTORY_HORIZON": 51115
+   }
+  },
+  "upstream_blob_match": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": true,
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md": true,
+   "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": true,
+   "outputs/intertwine_discharge_cycle908_receipt_2026_07_28.json": true,
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": true,
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py": true,
+   "scripts/frontier_cycle863_time_from_records_2026_07_28.py": true,
+   "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": true
+  },
+  "upstream_sha_match": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": true,
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md": true,
+   "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": true,
+   "outputs/intertwine_discharge_cycle908_receipt_2026_07_28.json": true,
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": true,
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py": true,
+   "scripts/frontier_cycle863_time_from_records_2026_07_28.py": true,
+   "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": true
+  }
+ },
+ "R1_predicates": {
+  "878_escape_orbit_worlds": [
+   3,
+   4,
+   11,
+   12,
+   19,
+   20,
+   26,
+   27,
+   32,
+   33,
+   37
+  ],
+  "878_health": {
+   "bijection": true,
+   "init_failures": 0,
+   "mismatches": 0
+  },
+  "878_worlds_formed": 164,
+  "878_worlds_never_formed": 584,
+  "E1_count": 182,
+  "E1_key_sha256": "1901e01751642cf1cd04054ab011fe39b9d384488b07c419e7b9a7e041b7ce52",
+  "E2_count": 114,
+  "E2_key_sha256": "bea94bc5b3fb7e4d41cdaa32e565e8f659d40dae17c3c44934bb0ebd0da4181a",
+  "absolute_E1_count": 33,
+  "absolute_E1_worlds": [
+   3,
+   4,
+   11,
+   12,
+   19,
+   20,
+   26,
+   27,
+   32,
+   33,
+   37,
+   47,
+   48,
+   55,
+   56,
+   63,
+   64,
+   70,
+   71,
+   76,
+   77,
+   81,
+   91,
+   92,
+   99,
+   100,
+   107,
+   108,
+   114,
+   115,
+   120,
+   121,
+   125
+  ],
+  "absolute_routes_agree": true,
+  "census_digest": "c757e07e68eefd061a7a9d9c09d7350f27bdaee75278b964bac83cd48f418581",
+  "census_population": 748,
+  "check": "R1_BOTH_PREDICATES_REBUILT",
+  "determinism_mismatches": 0,
+  "dirty_count": 477,
+  "gate_counts": [
+   3106,
+   3106,
+   3106,
+   3106,
+   3106,
+   3106,
+   3106,
+   3106,
+   3106,
+   3106,
+   3106
+  ],
+  "implementation": "census, initial states, H-chunk schedules, dirty coordinates and the globally-clean test re-implemented on the Cycle-719 core in a REVERSED lane bit layout (lane l -> bit n-l)",
+  "orbit_structure_agrees": true,
+  "pass": true
+ },
+ "R2_correspondence": {
+  "attack_equivariant_relabelling": {
+   "construction": "swap the escape orbit with the event-1 absolute orbit, matched offset for offset along the monitor-phase action",
+   "is_equivariant_for_sigma": true,
+   "is_key_preserving": false,
+   "sends_escape_to_a_different_absolute_orbit": true,
+   "verdict": "NOT A LIVE AMBIGUITY.  The map is sigma-equivariant and does send the escape orbit onto a different absolute-record orbit, so equivariance ALONE would not pin the identification.  But there are not two label sets here to be matched: the empirical check above shows an 878 world label IS the census key it was built from, and the census is one shared tuple.  The primary's key-preserving licensing rule is therefore forced by the construction rather than chosen, and this relabelling is correctly rejected"
+  },
+  "check": "R2_CORRESPONDENCE_ATTACKED",
+  "checker_absolute_by_event": {
+   "0": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ],
+   "1": [
+    47,
+    48,
+    55,
+    56,
+    63,
+    64,
+    70,
+    71,
+    76,
+    77,
+    81
+   ],
+   "2": [
+    91,
+    92,
+    99,
+    100,
+    107,
+    108,
+    114,
+    115,
+    120,
+    121,
+    125
+   ]
+  },
+  "checker_absolute_worlds": [
+   3,
+   4,
+   11,
+   12,
+   19,
+   20,
+   26,
+   27,
+   32,
+   33,
+   37,
+   47,
+   48,
+   55,
+   56,
+   63,
+   64,
+   70,
+   71,
+   76,
+   77,
+   81,
+   91,
+   92,
+   99,
+   100,
+   107,
+   108,
+   114,
+   115,
+   120,
+   121,
+   125
+  ],
+  "checker_escape_worlds": [
+   3,
+   4,
+   11,
+   12,
+   19,
+   20,
+   26,
+   27,
+   32,
+   33,
+   37
+  ],
+  "checker_relation": "PROPER_SUBSET",
+  "different_substrates": false,
+  "empirical_world_label_check": {
+   "failures": [],
+   "holds": true,
+   "method": "extract lane l's packed initial state from the 878 columns and re-derive it semantically from census[l] with K.run_orbit; a mismatch would mean the world label is NOT the census index",
+   "sample": [
+    0,
+    1,
+    3,
+    34,
+    65,
+    96,
+    127,
+    158,
+    189,
+    220,
+    251,
+    282,
+    313,
+    344,
+    375,
+    406,
+    437,
+    468,
+    499,
+    530,
+    561,
+    592,
+    623,
+    654,
+    685,
+    716,
+    747
+   ]
+  },
+  "escape_equals_the_event_0_absolute_orbit": true,
+  "pass": true,
+  "primary_relation": "PROPER_SUBSET",
+  "relations_agree": true,
+  "type_blocked": false,
+  "verdict": "THE PRIMARY'S MAP SURVIVES.  It is not a map at all in the sense that could be got wrong: the two lineages share one census tuple, an 878 world label is empirically the census key, and this checker's from-scratch census reproduces it.  IDENTIFIED stands, and the inclusion is proper"
+ },
+ "R3_mechanism": {
+  "E1_only_count_agrees": true,
+  "E1_worlds_not_formed_by_the_878_horizon": 18,
+  "check": "R3_SHARED_MECHANISM_ATTACKED",
+  "checker_formation_ledger_identity": true,
+  "checker_formed_subset_of_E1": true,
+  "claim_under_attack": "856's E1 stamp and 878's formation ledger are the same globally-clean predicate read at two horizons",
+  "is_the_common_cause_load_bearing": {
+   "dropped_coordinates": [
+    40
+   ],
+   "load_bearing": true,
+   "one_coordinate_dropped_reproduces_the_ledger": false,
+   "unmutated_reproduces_the_ledger": true
+  },
+  "mismatched_worlds": [],
+  "pass": true,
+  "primary_claimed_E1_only_count": 18,
+  "stronger_test_every_boundary": {
+   "all_agree": true,
+   "method": "the primary compares the two predicates only at the FIRST clean boundary.  This is the complete clean-boundary set of a declared lane sample over the first 512 controller orbits, checked against the 878 ledger at horizon 1024",
+   "rows": {
+    "0": {
+     "878_ledger_inside_the_window": 9,
+     "878_ledger_value": 9,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 2,
+     "first_clean_boundary": 9
+    },
+    "1": {
+     "878_ledger_inside_the_window": 8,
+     "878_ledger_value": 8,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 3,
+     "first_clean_boundary": 8
+    },
+    "11": {
+     "878_ledger_inside_the_window": null,
+     "878_ledger_value": null,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 0,
+     "first_clean_boundary": null
+    },
+    "12": {
+     "878_ledger_inside_the_window": null,
+     "878_ledger_value": null,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 0,
+     "first_clean_boundary": null
+    },
+    "135": {
+     "878_ledger_inside_the_window": 6,
+     "878_ledger_value": 6,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 1280,
+     "first_clean_boundary": 6
+    },
+    "2": {
+     "878_ledger_inside_the_window": 7,
+     "878_ledger_value": 7,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 4,
+     "first_clean_boundary": 7
+    },
+    "3": {
+     "878_ledger_inside_the_window": 6,
+     "878_ledger_value": 6,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 5,
+     "first_clean_boundary": 6
+    },
+    "4": {
+     "878_ledger_inside_the_window": 5,
+     "878_ledger_value": 5,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 6,
+     "first_clean_boundary": 5
+    },
+    "47": {
+     "878_ledger_inside_the_window": null,
+     "878_ledger_value": null,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 0,
+     "first_clean_boundary": null
+    },
+    "747": {
+     "878_ledger_inside_the_window": null,
+     "878_ledger_value": null,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 0,
+     "first_clean_boundary": null
+    },
+    "91": {
+     "878_ledger_inside_the_window": null,
+     "878_ledger_value": null,
+     "agrees": true,
+     "clean_boundaries_in_the_sampled_window": 0,
+     "first_clean_boundary": null
+    }
+   },
+   "sample": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    11,
+    12,
+    47,
+    91,
+    135,
+    747
+   ]
+  },
+  "verdict": "THE SHARED-MECHANISM CLAIM SURVIVES, AND IT IS LOAD-BEARING.  Rebuilt from scratch in a reversed lane layout the first-clean profile reproduces the 878 formation ledger exactly; dropping a single dirty coordinate destroys the agreement, so the identity is a fact about the shared clean test and not an artifact of running the same trajectory"
+ },
+ "R4_horizon_window": {
+  "check": "R4_HORIZON_WINDOW_ATTACKED",
+  "checker_thresholds": [
+   14744,
+   33195,
+   51115
+  ],
+  "checker_window": [
+   14744,
+   33195
+  ],
+  "escape_orbits_at_short_horizon_predicted": 0,
+  "escape_orbits_at_short_horizon_recomputed": 0,
+  "margin_above_the_pinned_horizon": 16811,
+  "margin_below_the_pinned_horizon": 1640,
+  "pass": true,
+  "pinned_horizon": 16384,
+  "pinned_horizon_inside": true,
+  "primary_window": [
+   14744,
+   33195
+  ],
+  "short_horizon_agrees": true,
+  "verdict": "THE WINDOW SURVIVES, AND IT IS TIGHTER THAN THE PRIMARY'S PROSE SUGGESTS: the pinned horizon clears the lower endpoint by only 1640 controller orbits out of 16,384.  Any future block that shortens the horizon by more than that loses M6 entirely",
+  "windows_agree": true
+ },
+ "R5_teeth": {
+  "biting": 8,
+  "check": "R5_TEETH",
+  "pass": true,
+  "teeth": [
+   {
+    "bites": true,
+    "mutation": "flip one byte of the pinned Cycle-878 source",
+    "tooth": "T1_TAMPERED_PIN"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "escape_orbits_after_drop": 0,
+     "escape_orbits_all": 1
+    },
+    "mutation": "remove the escape orbit from the orbit scan and recount",
+    "tooth": "T2_DROPPED_ORBIT"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "checker": "d64a02d19321b539cf0b0a92a680edd6511b9a90cf3df1b43583debc71fc4f61",
+     "fabricated": "ea5bf39fbf93a8e528ae2011b1cc1922d2c4434efdcb2ad791ead5c5a5166933"
+    },
+    "mutation": "compare this checker's absolute-key digest against a fabricated one",
+    "tooth": "T3_HARDCODED_VERDICT"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "leak_tokens_found": [],
+     "planted_leak_detected": true,
+     "verdicts_recomputable_without_the_receipt": true
+    },
+    "mutation": "needles read from the primary's receipt at run time must not appear in this source, and a deliberately planted copy of the primary's verdict must be caught by the same audit",
+    "tooth": "T4_LEAKED_IDENTIFICATION"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "with_856_omitted": "UNDECIDABLE_ONE_PREDICATE_MISSING",
+     "with_both": "PROPER_SUBSET"
+    },
+    "mutation": "ask for the identification with the 856 side omitted; the comparison must refuse rather than default to a verdict",
+    "tooth": "T5_SKIPPED_PREDICATE"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "equivariant": true,
+     "identity_map_is_licensed": true,
+     "key_preserving": false,
+     "sends_escape_elsewhere": true
+    },
+    "mutation": "a sigma-equivariant relabelling that sends the escape orbit onto a DIFFERENT absolute orbit must be rejected as unlicensed, and the identity map must be accepted",
+    "tooth": "T6_PLANTED_MAP_BLINDNESS"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "profiles_differ": true
+    },
+    "mutation": "pack the lanes in the forward layout while reading them back in the reversed one; the first-clean profile must change, proving the reversed layout is a real re-indexing and not a no-op",
+    "tooth": "T7_MIS_REVERSED_LAYOUT"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "escape_orbits_at_the_short_horizon": 0,
+     "thresholds_inside_the_short_horizon": []
+    },
+    "mutation": "recompute the window at horizon 1024; the M6 branch must vanish rather than survive",
+    "tooth": "T8_HORIZON_TAMPER"
+   }
+  ],
+  "total": 8
+ },
+ "checks": {
+  "R0_pins": true,
+  "R1_predicates": true,
+  "R2_correspondence": true,
+  "R3_mechanism": true,
+  "R4_horizon_window": true,
+  "R5_teeth": true,
+  "no_disagreements": true
+ },
+ "comparison_with_the_primary": {
+  "absolute_E1_worlds": {
+   "agree": true,
+   "checker": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37,
+    47,
+    48,
+    55,
+    56,
+    63,
+    64,
+    70,
+    71,
+    76,
+    77,
+    81,
+    91,
+    92,
+    99,
+    100,
+    107,
+    108,
+    114,
+    115,
+    120,
+    121,
+    125
+   ],
+   "primary": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37,
+    47,
+    48,
+    55,
+    56,
+    63,
+    64,
+    70,
+    71,
+    76,
+    77,
+    81,
+    91,
+    92,
+    99,
+    100,
+    107,
+    108,
+    114,
+    115,
+    120,
+    121,
+    125
+   ]
+  },
+  "escape_is_one_absolute_orbit": {
+   "agree": true,
+   "checker": true,
+   "primary": true
+  },
+  "escape_orbit_worlds": {
+   "agree": true,
+   "checker": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ],
+   "primary": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ]
+  },
+  "formation_ledger_identity": {
+   "agree": true,
+   "checker": true,
+   "primary": true
+  },
+  "formed_subset_of_E1": {
+   "agree": true,
+   "checker": true,
+   "primary": true
+  },
+  "horizon_window": {
+   "agree": true,
+   "checker": [
+    14744,
+    33195
+   ],
+   "primary": [
+    14744,
+    33195
+   ]
+  },
+  "relation": {
+   "agree": true,
+   "checker": "PROPER_SUBSET",
+   "primary": "PROPER_SUBSET"
+  }
+ },
+ "cycle": 910,
+ "disagreements": [],
+ "elapsed_sec": 109.692,
+ "independence": "census, seeds, initial states, dirty coordinates, H-chunk schedules and the globally-clean test re-implemented from the Cycle-719 core in a reversed lane bit layout; absolute set computed by two routes neither of which uses the pinned frame_map; the 878 composed record-write construction lifted by AST as the object under test; the Cycle-910 primary blocklisted from import and read only as JSON at run time",
+ "jobs_elapsed_sec": 109.677,
+ "label_on_every_fraction": "bookkeeping fraction, not probability",
+ "parallel": true,
+ "primary_receipt_sha256": "c38a7e1092af18b51f4c550572198d4bf9fde85653c63d0ec1919677098dd53e",
+ "primary_source_sha256": "fb8540b7179725572da2cbce66bcfecd1759e39af1f203bf3b220e91b96c9c5e",
+ "refinements": [
+  "the horizon window's lower endpoint clears the pinned Cycle-878 horizon by only 1640 controller orbits (205/2048 of it, a bookkeeping fraction and not a probability); the primary states the window but does not state how little slack the landed lane actually has",
+  "the primary's licensing rule -- a world map is licensed only if it preserves the census key -- is not derived in the primary, it is declared.  This checker shows the declaration is forced: a sigma-equivariant relabelling DOES send the escape orbit onto the event-1 absolute orbit, so equivariance alone would leave the identification ambiguous, and what closes it is the empirical fact that an 878 world label is the census key it was built from.  The primary should carry that empirical check, not just the rule",
+  "the primary compares the two predicates at the FIRST clean boundary only; the complete clean-boundary sets agree too on the sampled lanes, which the primary does not establish"
+ ],
+ "role": "independent checker",
+ "runtime_budget_sec": 900,
+ "self_sha256": "a4d6d8e784ba78f480ea89754082e3005bda9bd6b665658350c4b7659d5a9383",
+ "spec": "REFUTE",
+ "teeth": "8/8",
+ "verdict": "CORROBORATES_WITH_REFINEMENT"
+}

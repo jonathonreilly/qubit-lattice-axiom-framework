@@ -292,3 +292,28 @@
   closure with sealed-holdout discipline and a strictly-generalizing
   law.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 892 GBW1b pricing (blockG15, PR #5952) — 2026-08-04
+
+- Supervisor review: the restriction gate (both parent receipts
+  value-for-value before any new claim), the vendoring deviation
+  (887 pins from the sibling ship commit, digests verified), and the
+  two in-the-open defect repairs (checker phantom refutation from a
+  shared fingerprint dict; the census-idempotency drift — 885's
+  repair-log item 9 recurring, now excluded by published path) all
+  verified in the commit trail.
+- The block's theorem: the quadratic gauge break with an exhibited
+  mechanism (expulsion + exact difference formula) — upgrading Q1
+  from a catalogue fact to a theorem with hypotheses. The kernel
+  reduction to one scalar is an exact Chebyshev identity.
+- Checker: pre-recorded predictions on three never-evaluated windows
+  (3/3); 7,192-window adversarial sweep; Born-vocabulary needle gate
+  on the interface derivation; planted-difference blindness tooth
+  (no blind spot in either direction); 8/8 teeth.
+- The conditionality (B(R)=supp(R), untested by 885 or 892) is at
+  the TOP of the note, not buried — it is now the single most
+  valuable open question on the gravity side.
+- Cluster-cap (15th gravity-family PR): **OPEN** — terminal-
+  obligation pricing with a gauge-breaking theorem and a derived
+  demand sheet.
+- Local disposition: **pass** (bounded_theorem; audit pending).

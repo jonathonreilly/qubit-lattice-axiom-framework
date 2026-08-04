@@ -8,7 +8,7 @@ interrupted: >
 restarted: 2026-08-03 18:10Z (24h window runs from restart; ends 2026-08-04 ~18:00Z)
 window_hours: 24
 mode: workhorse
-wave: 2
+wave: 4 (final)
 worktrees:
   c5-landing: blockP25 SHIPPED as PR #5924 — checker refuted v2's locality
     probe in-block; v3 repaired (robust firing / fragile content /
@@ -131,10 +131,17 @@ worktrees:
     stretch-local readings; the word-selection boundary stated); worker
     hypothesis corrected mid-block; checker first run HONEST_FAILed its
     own coverage gate (both disclosed)
-  c5-g15: G15 (Cycle 892, GBW1b pricing — the theorem question: is the
-    window extent still gauge at QUADRATIC (Z) order? (887's gauge theorem
-    was linear); + the GBW1b obligation map (window/kernel-theta/event-
-    space-interface/residual); stacked on G14 tip be17159a6b) — running
+  c5-g15: blockG15 SHIPPED as PR #5952 — Cycle 892 GBW1b PRICED at 7
+    dims: the extent is NOT gauge at quadratic order (1 linear class -> 8
+    quadratic classes, 35/36 pairs separate; Z exactly as fine as the
+    window set) via the amplitude-EXPULSION theorem + exact difference
+    formula; kernel = one scalar (Chebyshev in cos phi, 648 cells); five
+    interface requirements derived Born-vocabulary-free (IF1: linear
+    readout and quadratic weight on disjoint loci); the same clause hides
+    the window at first order and exposes it at second; ALL conditional
+    on B(R)=supp(R) (untested — the named open collapse route); 887 pins
+    vendored verbatim with digest verification (sibling-branch deviation
+    disclosed)
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

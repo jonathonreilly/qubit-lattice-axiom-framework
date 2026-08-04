@@ -1297,10 +1297,18 @@ RUBRIC = {
         "canonical", "rigid", "single", "more than one", "one fixed",
         "complete", "not arbitrary", "no more than",
     ),
-    "E3_LEVEL_the_decomposition_itself": (
-        "decomposition", "sector", "component", "multiplicity", "irreducible",
-        "isotype", "isotypic", "invariant", "complement", "subspace", "split",
-        "summand", "basis", "orbit",
+    # E3 is split because co-occurrence is not predication.  The property is
+    # about the DECOMPOSITION OF A REPRESENTATION into invariant pieces; nouns
+    # like "orbit", "sector" and "basis" name objects ADJACENT to that without
+    # naming it.  Only the STRONG family can carry an EXACT grade.
+    "E3_STRONG_the_decomposition_of_a_representation": (
+        "decomposition", "multiplicity", "irreducible", "isotype", "isotypic",
+        "invariant subspace", "invariant complement", "invariant piece",
+        "complement", "summand", "direct sum", "split into",
+    ),
+    "E3_WEAK_structurally_adjacent_nouns": (
+        "sector", "component", "subspace", "invariant", "split", "basis",
+        "orbit", "structure",
     ),
     "POLARITY_EXCLUDES_places_the_content_outside_the_axioms": (
         "downstream", "not generic axiom content", "must cite separate",
@@ -1319,12 +1327,20 @@ RUBRIC = {
         "POLARITY first: a sentence that places the content downstream, "
         "conditional, historical or outside axiom content CANNOT ground it, "
         "and grades NONE with class EXCLUSION_HIT no matter how many subject "
-        "markers it carries.  Otherwise EXACT requires all three of E1, E2, E3 "
-        "AND requires an E2 marker and an E3 marker to occur in the SAME "
-        "clause (comma/semicolon/colon delimited), so that the uniqueness is "
-        "predicated OF the decomposition rather than merely co-occurring with "
-        "it; exactly two of {E1, E2, E3} grades PARTIAL; anything less grades "
-        "NONE."
+        "markers it carries.  Otherwise EXACT requires E1 and E2 and a STRONG "
+        "E3 marker, with the E2 marker and the STRONG E3 marker occurring in "
+        "the SAME clause (comma/semicolon/colon delimited), so that the "
+        "uniqueness is predicated OF the decomposition rather than merely "
+        "co-occurring with it; exactly two of {E1, E2, E3-any} grades PARTIAL; "
+        "anything less grades NONE."
+    ),
+    "why_two_variants_are_run": (
+        "Variant v1_permissive lets the WEAK E3 nouns carry an EXACT; variant "
+        "v2_strict does not.  Both are computed and both distributions are "
+        "reported, because the difference between them IS the finding: it "
+        "shows exactly how thin any 'quotable' reading has to be.  The verdict "
+        "is taken from v2_strict, and every sentence the two variants grade "
+        "differently is quoted and adjudicated in the open."
     ),
     "price_registration_needles": (
         "A choice not fixed by the supplied structure remains a named "
@@ -1339,23 +1355,33 @@ def _markers_hit(lowered: str, family: tuple) -> list[str]:
     return sorted({m for m in family if m in lowered})
 
 
-def grade_sentence(text: str) -> dict:
+RUBRIC_VARIANTS = ("v2_strict", "v1_permissive")
+
+
+def grade_sentence(text: str, variant: str = "v2_strict") -> dict:
     lowered = norm(text).lower()
     e1 = _markers_hit(lowered, RUBRIC["E1_SUBJECT_the_readout_object"])
     e2 = _markers_hit(lowered, RUBRIC["E2_UNIQUENESS_no_free_parameter"])
-    e3 = _markers_hit(lowered, RUBRIC["E3_LEVEL_the_decomposition_itself"])
+    strong = RUBRIC["E3_STRONG_the_decomposition_of_a_representation"]
+    weak = RUBRIC["E3_WEAK_structurally_adjacent_nouns"]
+    e3_strong = _markers_hit(lowered, strong)
+    e3_weak = _markers_hit(lowered, weak)
+    e3 = sorted(set(e3_strong) | set(e3_weak))
     excl = _markers_hit(
         lowered,
         RUBRIC["POLARITY_EXCLUDES_places_the_content_outside_the_axioms"])
+    exact_family = tuple(strong) + (tuple(weak) if variant == "v1_permissive"
+                                    else ())
+    e3_for_exact = _markers_hit(lowered, exact_family)
     clauses = [c for c in re.split(r"[;:,]", lowered) if c.strip()]
     same_clause = any(
         any(m in c for m in RUBRIC["E2_UNIQUENESS_no_free_parameter"])
-        and any(m in c for m in RUBRIC["E3_LEVEL_the_decomposition_itself"])
+        and any(m in c for m in exact_family)
         for c in clauses)
     present = sum(1 for x in (e1, e2, e3) if x)
     if excl:
         grade, klass = "NONE", "EXCLUSION_HIT"
-    elif present == 3 and same_clause:
+    elif e1 and e2 and e3_for_exact and same_clause:
         grade, klass = "EXACT", "GROUNDING_CANDIDATE"
     elif present >= 2:
         grade, klass = "PARTIAL", "GROUNDING_CANDIDATE"
@@ -1367,7 +1393,8 @@ def grade_sentence(text: str) -> dict:
         reason = (
             "The sentence carries subject, uniqueness AND decomposition-level "
             "markers, with the uniqueness predicated of the decomposition "
-            f"inside one clause (subject {e1}; uniqueness {e2}; level {e3}). "
+            f"inside one clause (subject {e1}; uniqueness {e2}; level "
+            f"{e3_for_exact} under variant {variant}). "
             "The filter would need exactly this: that the readout "
             "representation's split into invariant pieces admits no free "
             "parameter."
@@ -1404,9 +1431,12 @@ def grade_sentence(text: str) -> dict:
     return {
         "grade": grade,
         "class": klass,
+        "rubric_variant": variant,
         "E1_subject_markers": e1,
         "E2_uniqueness_markers": e2,
         "E3_decomposition_level_markers": e3,
+        "E3_STRONG_markers": e3_strong,
+        "E3_WEAK_markers": e3_weak,
         "exclusion_markers": excl,
         "uniqueness_and_level_in_the_same_clause": same_clause,
         "registers_the_price_rather_than_grounding_it": registers_price,
@@ -1429,7 +1459,11 @@ def sweep_document(path: str) -> dict:
         if seg["kind"] == "SENTENCE":
             entry["byte_quoted_sentence"] = seg["text"]
             entry["normalized"] = norm(seg["text"])
-            entry.update(grade_sentence(seg["text"]))
+            entry.update(grade_sentence(seg["text"], "v2_strict"))
+            permissive = grade_sentence(seg["text"], "v1_permissive")
+            entry["grade_under_v1_permissive"] = permissive["grade"]
+            entry["variants_disagree"] = permissive["grade"] != entry["grade"]
+            entry["v1_permissive_reason"] = permissive["reason"]
             entry["what_the_sentence_says"] = norm(seg["text"])
             entry["what_the_filter_would_need_it_to_say"] = (
                 "that the decomposition of the readout representation into "
@@ -1446,7 +1480,10 @@ def sweep_document(path: str) -> dict:
         rows.append(entry)
     sentences = [r for r in rows if r["kind"] == "SENTENCE"]
     dist = {g: sum(1 for r in sentences if r["grade"] == g) for g in GRADES}
+    dist_v1 = {g: sum(1 for r in sentences
+                      if r["grade_under_v1_permissive"] == g) for g in GRADES}
     return {
+        "grade_distribution_under_v1_permissive": dist_v1,
         "path": path,
         "sha256": sha256(text.encode("utf-8")).hexdigest(),
         "file_bytes": len(text.encode("utf-8")),
@@ -2242,10 +2279,33 @@ def h2_certificate(sweeps) -> dict:
             if r["kind"] == "SENTENCE":
                 all_rows.append(dict(r, document=s["path"]))
     dist = {g: sum(1 for r in all_rows if r["grade"] == g) for g in GRADES}
+    dist_v1 = {g: sum(1 for r in all_rows
+                      if r["grade_under_v1_permissive"] == g) for g in GRADES}
     per_doc = {s["path"]: dict(s["grade_distribution"],
                                sentences=s["sentence_count"]) for s in sweeps}
     ceiling = ("EXACT" if dist["EXACT"] else
                "PARTIAL" if dist["PARTIAL"] else "NONE")
+    ceiling_v1 = ("EXACT" if dist_v1["EXACT"] else
+                  "PARTIAL" if dist_v1["PARTIAL"] else "NONE")
+    adjudication = [
+        {"document": r["document"],
+         "byte_start": r["byte_start"],
+         "byte_quoted_sentence": r["byte_quoted_sentence"],
+         "grade_under_v1_permissive": r["grade_under_v1_permissive"],
+         "grade_under_v2_strict": r["grade"],
+         "E1_subject_markers": r["E1_subject_markers"],
+         "E2_uniqueness_markers": r["E2_uniqueness_markers"],
+         "E3_STRONG_markers": r["E3_STRONG_markers"],
+         "E3_WEAK_markers": r["E3_WEAK_markers"],
+         "adjudication": (
+             "The permissive variant reaches this grade only through WEAK E3 "
+             f"nouns {r['E3_WEAK_markers']}, which name objects adjacent to "
+             "the decomposition without naming it, and only through "
+             "co-occurrence inside a clause rather than predication. The "
+             "filter needs the uniqueness asserted OF the decomposition of "
+             "the readout representation. The strict grade is the honest one."
+         )}
+        for r in all_rows if r["variants_disagree"]]
     best = sorted(
         (r for r in all_rows if r["grade"] in ("EXACT", "PARTIAL")),
         key=lambda r: (0 if r["grade"] == "EXACT" else 1,
@@ -2270,8 +2330,12 @@ def h2_certificate(sweeps) -> dict:
             "completeness is the claim."
         ),
         "rubric": RUBRIC,
+        "rubric_variants_computed": list(RUBRIC_VARIANTS),
         "sentences_swept": len(all_rows),
         "grade_distribution": dist,
+        "grade_distribution_under_the_permissive_variant": dist_v1,
+        "grade_ceiling_under_the_permissive_variant": ceiling_v1,
+        "sentences_the_two_variants_grade_differently": adjudication,
         "grade_distribution_by_document": per_doc,
         "grade_ceiling": ceiling,
         "class_distribution": {
@@ -2306,13 +2370,19 @@ def h2_certificate(sweeps) -> dict:
              "byte_quoted_sentence": r["byte_quoted_sentence"]}
             for r in price_rows],
         "every_sentence_graded": every_graded,
+        "both_rubric_variants_were_computed":
+            all("grade_under_v1_permissive" in r for r in all_rows),
         "finding": (
             f"{len(all_rows)} sentences swept across {len(sweeps)} pinned "
-            f"documents; grade distribution {dist}; ceiling {ceiling}; "
-            f"{len(exclusion_hits)} sentences name the property or its level "
-            f"only to place it downstream/conditional/outside axiom content."
+            f"documents; strict distribution {dist} (ceiling {ceiling}); "
+            f"permissive distribution {dist_v1} (ceiling {ceiling_v1}); "
+            f"{len(adjudication)} sentences graded differently by the two "
+            f"variants and adjudicated in the open; {len(exclusion_hits)} "
+            f"sentences name the property or its level only to place it "
+            f"downstream/conditional/outside axiom content."
         ),
-        "pass": every_graded and len(all_rows) > 0,
+        "pass": (every_graded and len(all_rows) > 0
+                 and all("grade_under_v1_permissive" in r for r in all_rows)),
     }
 
 
@@ -2328,16 +2398,29 @@ def verdict_certificate(h2, t3) -> dict:
         "multiplicity-free' -- with the T3 subset as its computed consequence "
         f"set: {t3['T3_SUBSET_scope_coherent']}."
     )
+    permissive_verdict = (
+        "QUOTABLE"
+        if h2["grade_distribution_under_the_permissive_variant"]["EXACT"] > 0
+        else "NOT_QUOTABLE")
     return {
         "statement": (
-            "THE VERDICT, AS DATA. QUOTABLE iff some sentence grades EXACT; "
-            "NOT_QUOTABLE iff the grade ceiling is PARTIAL or NONE. Both "
-            "outcomes are legal here and every gate in this runner passes "
-            "identically under either."
+            "THE VERDICT, AS DATA. QUOTABLE iff some sentence grades EXACT "
+            "under the strict rubric; NOT_QUOTABLE iff the grade ceiling is "
+            "PARTIAL or NONE. Both outcomes are legal here and every gate in "
+            "this runner passes identically under either. The permissive "
+            "rubric's verdict is reported alongside, with every disagreeing "
+            "sentence quoted and adjudicated, so the reader can see exactly "
+            "how much the answer depends on the reading."
         ),
         "outcome_classes_available": list(VERDICT_CLASSES),
         "grade_distribution": dist,
         "grade_ceiling": h2["grade_ceiling"],
+        "VERDICT_under_the_permissive_rubric": permissive_verdict,
+        "grade_ceiling_under_the_permissive_rubric":
+            h2["grade_ceiling_under_the_permissive_variant"],
+        "sentences_the_two_rubrics_grade_differently":
+            h2["sentences_the_two_variants_grade_differently"],
+        "verdicts_agree_across_the_two_rubrics": permissive_verdict == verdict,
         "VERDICT": verdict,
         "consequence": consequence,
         "one_clause_registration_text":
@@ -2611,6 +2694,12 @@ def summarize(payload: dict) -> dict:
         "T3_off_menu_counterfactual":
             t3["off_menu_classes_that_would_qualify_if_realizability_were_dropped"],
         "H2_grade_distribution": h2["grade_distribution"],
+        "H2_grade_distribution_under_the_permissive_rubric":
+            h2["grade_distribution_under_the_permissive_variant"],
+        "H2_grade_ceiling_under_the_permissive_rubric":
+            h2["grade_ceiling_under_the_permissive_variant"],
+        "H2_sentences_the_two_rubrics_grade_differently":
+            h2["sentences_the_two_variants_grade_differently"],
         "H2_grade_distribution_by_document": h2["grade_distribution_by_document"],
         "H2_grade_ceiling": h2["grade_ceiling"],
         "H2_sentences_swept": h2["sentences_swept"],
@@ -2635,6 +2724,7 @@ def summarize(payload: dict) -> dict:
         "DETAIL_axiom_memo_sentence_grades": [
             {"byte_start": r["byte_start"], "grade": r["grade"],
              "class": r["class"],
+             "grade_under_v1_permissive": r["grade_under_v1_permissive"],
              "byte_quoted_sentence": r["byte_quoted_sentence"],
              "reason": r["reason"]}
             for r in payload["sweeps"][0]["rows"] if r["kind"] == "SENTENCE"],
@@ -2666,6 +2756,11 @@ def summarize(payload: dict) -> dict:
             f"byte-exact reconstruction proof of completeness; grade ceiling "
             f"{h2['grade_ceiling']}; {h2['exclusion_hits_count']} sentences "
             "name the property or its level only to place it downstream.",
+            "The only sentence anywhere in the four documents that a "
+            "permissive reading can push to EXACT is a HISTORICAL sentence "
+            "about the SUPERSEDED 2026-06-05 memo whose own content makes the "
+            "readout context a SUPPLIED input -- quoted and adjudicated in "
+            "full. That is how thin any quotable reading has to be.",
         ],
         "next_attackable_question": (
             "The clause is now single and named. Either register 'the readout "

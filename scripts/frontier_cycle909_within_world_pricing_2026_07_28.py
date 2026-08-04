@@ -213,6 +213,17 @@ def lcm2(a: int, b: int) -> int:
     return a // gcd(a, b) * b if a and b else 0
 
 
+def fr_short(value: Fraction, cap: int = 72):
+    """Exact fraction if it is short enough to read; otherwise the exact
+    numerator and denominator digit counts.  Nothing is rounded."""
+    text = fr(value)
+    if len(text) <= cap:
+        return text
+    return (f"<{len(str(value.numerator))}-digit>/"
+            f"<{len(str(value.denominator))}-digit>"
+            "  (exact value held in full; equality is tested exactly)")
+
+
 def short(value: int, cap: int = 44) -> str:
     text = str(value)
     return text if len(text) <= cap else f"<{len(text)}-digit integer>"
@@ -994,7 +1005,7 @@ class ShapeTester:
         return {
             "block_masses": [short(v) for v in S],
             "total": short(T),
-            "orbit_profile": [fr(p) for p in prof] if prof else None,
+            "orbit_profile": [fr_short(p) for p in prof] if prof else None,
             "shape_holds": shape,
             "per_world_shape": self.per_world_shape(col, target),
             "nonnegative": all(v >= 0 for v in col),
@@ -1263,14 +1274,17 @@ def science(space, c878, c907, receipts) -> dict:
          2)
     gate("907_M6_is_not_the_pushforward", receipt907["Q1_M6_is_the_pushforward"],
          False)
-    slice_props = receipt907c["R2_BRIDGE_SEARCH"][
-        "primary_identification_reverified_by_substitution"]["slice_properties"]
+    reverify907 = receipt907c["certificates"]["R2_BRIDGE_SEARCH"][
+        "primary_identification_reverified_by_substitution"]
+    slice_props = reverify907["slice_properties"]
     gate("907_M7_total_209033", len(star) * obj["degree0_sum"],
          slice_props["0"]["total"])
     gate("907_M8_total_23100", len(star) * obj["degree2_sum"],
          slice_props["2"]["total"])
-    gate("907_checker_cells", 80, receipt907c["R2_BRIDGE_SEARCH"][
-        "primary_identification_reverified_by_substitution"]["cells"])
+    gate("907_checker_cells", 80, reverify907["cells"])
+    gate("907_checker_normalizer_N", f"1/{len(star)}",
+         reverify907["normalizer_N"])
+    gate("907_checker_verifies", reverify907["verifies"], True)
 
     cert_b = {"certificate": "B_RESTRICTION_GATE", "rows": gate_rows,
               "reproduce": sum(1 for r in gate_rows if r["match"]),
@@ -1486,6 +1500,11 @@ def recipe_census(facts, c907) -> dict:
     rows, headline, realizers0, realizers2 = [], [], [], []
     family_counts: dict = defaultdict(lambda: Counter())
     lemma_pass0 = lemma_pass2 = 0
+    lemma_ids0, lemma_ids2 = [], []
+    free_counts0, free_counts2 = Counter(), Counter()
+    free_realizers0, free_realizers2 = [], []
+    uniform_cone = None
+    world_constant_collapse = []
 
     for rec in recipes + plants:
         col = rec["values"]
@@ -1497,12 +1516,14 @@ def recipe_census(facts, c907) -> dict:
         lemma2 = bool(L) and L % scale2 == 0
         lemma_pass0 += int(lemma0)
         lemma_pass2 += int(lemma2)
+        if lemma0:
+            lemma_ids0.append(rec["id"])
+        if lemma2 and len(lemma_ids2) < 40:
+            lemma_ids2.append(rec["id"])
         row = {"id": rec["id"], "fam": rec["family"],
                "planted": rec.get("planted", False),
-               "instantiable_in_the_cone": cone is not None,
-               "raw_world_masses_equal": raw_cov,
-               "lcm_world_sums_divisible_by_19003": lemma0,
-               "lcm_world_sums_divisible_by_175": lemma2}
+               "cone": cone is not None, "raw_cov": raw_cov,
+               "lem0": lemma0, "lem2": lemma2}
         if cone is None:
             row["d0"] = row["d2"] = "NOT_INSTANTIABLE"
             row["free_d0"] = row["free_d2"] = "NOT_INSTANTIABLE"
@@ -1511,11 +1532,27 @@ def recipe_census(facts, c907) -> dict:
             a2 = tester.assess(cone, obj["degree2"], tester.ratio2)
             row["d0"] = "REALIZES" if a0["shape_holds"] else "FAILS"
             row["d2"] = "REALIZES" if a2["shape_holds"] else "FAILS"
-            row["orbit_profile"] = a0["orbit_profile"]
             fb0 = free_bridge_readings(c907, cone, tester.ratio0, support)
             fb2 = free_bridge_readings(c907, cone, tester.ratio2, support)
             row["free_d0"] = fb0["verdict"]
             row["free_d2"] = fb2["verdict"]
+            if not rec.get("planted"):
+                free_counts0[fb0["verdict"]] += 1
+                free_counts2[fb2["verdict"]] += 1
+                if fb0["verdict"] == "REALIZES":
+                    free_realizers0.append(rec["id"])
+                if fb2["verdict"] == "REALIZES" and len(free_realizers2) < 60:
+                    free_realizers2.append(rec["id"])
+            if rec["id"] == "G_ONE":
+                uniform_cone = cone
+            elif uniform_cone is not None and rec["family"] == "K1_IDENTITY" \
+                    and rec["id"] in ("G_OCC_GLOBAL", "G_OCC_BANK0",
+                                      "G_OCC_BANK1", "G_FORMED", "G_LIFETIME",
+                                      "G_WORLD_EVENTS"):
+                world_constant_collapse.append(
+                    {"field": rec["id"],
+                     "induces_the_same_within_world_split_as_uniform":
+                         cone == uniform_cone})
             if a0["shape_holds"] and not rec.get("planted"):
                 realizers0.append(rec["id"])
             if a2["shape_holds"] and not rec.get("planted"):
@@ -1603,8 +1640,39 @@ def recipe_census(facts, c907) -> dict:
         "native_degree2_realizers": realizers2,
         "native_pairs_realizing_the_interface_pair":
             [[a, b] for a in realizers0 for b in realizers2],
+        "free_bridge_axis": {
+            "what": ("the Cycle-907 certificate-D reduction, applied in its"
+                     " scale-invariant form: does ANY bridge of the declared"
+                     " family -- not only the exhibited one -- carry this"
+                     " weighting to the required ratio vector?"),
+            "degree0_verdict_counts": dict(free_counts0),
+            "degree2_verdict_counts": dict(free_counts2),
+            "degree0_free_bridge_realizers": free_realizers0,
+            "degree2_free_bridge_realizers_first_60": free_realizers2,
+            "disclosure": (
+                "UNDECIDED is reported, never converted to a negative.  The"
+                " degree-2 ratio vector [144, 22, 9, 0] has scale 175, small"
+                " enough for the equal-block sufficient witness to fire, so"
+                " some native weightings ARE degree-2 carriers under SOME"
+                " total bridge -- the Cycle-907 checker disclosed the same"
+                " fact for M6.  That does not make a PAIR: the interface"
+                " needs one bridge carrying BOTH slices, and no native"
+                " weighting is a degree-0 carrier under any bridge tested"),
+        },
+        "world_constant_collapse": {
+            "claim": ("every world-level census field is constant within a"
+                      " world, so after the covariance normalisation it"
+                      " induces exactly the uniform within-world split -- the"
+                      " Cycle-878 candidates M3, M4, M5 are one point of the"
+                      " within-world question, not three"),
+            "rows": world_constant_collapse,
+            "holds": all(r["induces_the_same_within_world_split_as_uniform"]
+                         for r in world_constant_collapse),
+        },
         "denominator_lemma": {
             "statement": denominator_lemma.__doc__,
+            "recipes_passing_the_degree0_filter": lemma_ids0,
+            "recipes_passing_the_degree2_filter_first_40": lemma_ids2,
             "degree0_scale": scale0,
             "degree0_scale_factorisation": {
                 str(k): v for k, v in factorize(scale0).items()},
@@ -1621,9 +1689,28 @@ def recipe_census(facts, c907) -> dict:
                 f" {scale0} | lcm(S_w)."),
         },
         "planted_realizer_detection": plant_check,
-        "rows": rows,
+        "verdict_table_columns": [
+            "id -- the recipe, its id IS its formula",
+            "fam -- which declared closure rule produced it",
+            "planted -- true only for the falsifier rules",
+            "cone -- instantiable in the Cycle-906 cone (no zero world sum)",
+            "raw_cov -- the RAW recipe already has equal world masses",
+            "lem0 -- its world sums admit the degree-0 denominator lemma",
+            "lem2 -- its world sums admit the degree-2 denominator lemma",
+            "d0 -- verdict against Q1's degree-0 constraint set",
+            "d2 -- verdict against Q1's degree-2 constraint set",
+            "free_d0 -- verdict under ANY bridge of the declared family",
+            "free_d2 -- likewise for the degree-2 ratio vector",
+        ],
+        "verdict_table": [
+            [r["id"], r["fam"], r["planted"], r["cone"], r["raw_cov"],
+             r["lem0"], r["lem2"], r["d0"], r["d2"], r["free_d0"],
+             r["free_d2"]] for r in rows],
         "headline": headline,
-        "pass": all(p["detected_correctly"] for p in plant_check),
+        "pass": bool(all(p["detected_correctly"] for p in plant_check)
+                     and world_constant_collapse
+                     and all(r["induces_the_same_within_world_split_as_uniform"]
+                             for r in world_constant_collapse)),
     }
 
 
@@ -1835,7 +1922,7 @@ def falsifiers(cert_b, cert_c, census_result, grav, facts, c907) -> dict:
         "rows": {"shape": [a, b], "free_bridge": [fb_a, fb_b]}})
 
     # T7 -- a dropped recipe family must be visible
-    fams = set(r["fam"] for r in census_result["rows"])
+    fams = set(r[1] for r in census_result["verdict_table"])
     teeth.append({
         "tooth": "T7_DROPPED_RECIPE_FAMILY",
         "what": "every declared closure rule must appear in the census rows",
@@ -1852,16 +1939,31 @@ def falsifiers(cert_b, cert_c, census_result, grav, facts, c907) -> dict:
         "detected": bool(grav["identity_reconstructs_the_table"]
                          and grav["site_counts_divide_both_columns"])})
 
-    # T9 -- a skipped escape world must be visible
-    short_col = list(facts["m7"])
+    # T9 -- a skipped escape world must be visible, on BOTH readings
+    dropped = list(facts["m7"])
     w0 = facts["per_world"][facts["star"][0]]
     for i in range(w0):
-        short_col[i] = 0
+        dropped[i] = 0
+    dropped_masses = tester.world_masses(dropped)
+    dropped_cone, _ = tester.cone_normalize(dropped)
+    # a whole world dropped keeps the block masses PROPORTIONAL (the witness is
+    # world-uniform), so the tooth is that it leaves the CONE: the world masses
+    # stop being equal and the cone normalisation refuses the column outright.
+    one_position = list(facts["m7"])
+    one_position[3] = 0            # position 3 of the first escape world only
+    partial = tester.assess(one_position, obj["degree0"],
+                            tester.ratio0)["shape_holds"]
     teeth.append({
         "tooth": "T9_SKIPPED_WORLD",
-        "what": "zeroing one escape world must break the constraint set",
-        "detected": not tester.assess(short_col, obj["degree0"],
-                                      tester.ratio0)["shape_holds"]})
+        "what": ("(a) dropping a whole escape world must leave the cone --"
+                 " unequal world masses, cone normalisation refuses it;"
+                 " (b) dropping ONE designated event of ONE world must break"
+                 " the constraint set"),
+        "detected": bool(len(set(dropped_masses)) != 1
+                         and dropped_cone is None and not partial),
+        "rows": {"world_masses_still_equal": len(set(dropped_masses)) == 1,
+                 "cone_accepts_the_dropped_column": dropped_cone is not None,
+                 "shape_survives_one_dropped_event": partial}})
 
     return {"certificate": "H_FALSIFIERS", "teeth": teeth,
             "tooth_count": len(teeth),
@@ -2068,7 +2170,10 @@ def main() -> int:
         "Q2_native_degree2_realizers": cert_e["native_degree2_realizers"],
         "Q2_native_pairs": cert_e["native_pairs_realizing_the_interface_pair"],
         "Q2_denominator_lemma": cert_e["denominator_lemma"],
-        "Q2_verdict_table": cert_e["rows"],
+        "Q2_free_bridge_axis": cert_e["free_bridge_axis"],
+        "Q2_world_constant_collapse": cert_e["world_constant_collapse"],
+        "Q2_verdict_table_columns": cert_e["verdict_table_columns"],
+        "Q2_verdict_table": cert_e["verdict_table"],
         "Q3_outcome": outcome,
         "Q3_gravity_terms_reading": grav,
         "Q3_degree_two_relationship": cert_g,
@@ -2245,6 +2350,19 @@ def main() -> int:
     w(f"      recipes whose world sums admit it:"
       f" {dl['recipes_whose_world_sums_admit_the_degree0_scale']} /"
       f" {cert_e['recipe_count'] + cert_e['planted_count']}\n")
+    w(f"      recipes passing the degree-0 filter:"
+      f" {dl['recipes_passing_the_degree0_filter']}\n")
+    fb = cert_e["free_bridge_axis"]
+    w(f"  FREE-BRIDGE AXIS (any bridge of the declared family, not only the"
+      f" exhibited one):\n")
+    w(f"      degree-0 verdicts {fb['degree0_verdict_counts']}\n")
+    w(f"      degree-2 verdicts {fb['degree2_verdict_counts']}\n")
+    w(f"      degree-0 free-bridge realizers:"
+      f" {fb['degree0_free_bridge_realizers']}\n")
+    wc = cert_e["world_constant_collapse"]
+    w(f"  WORLD-CONSTANT COLLAPSE holds={wc['holds']}:"
+      f" {[r['field'] for r in wc['rows']]} all induce the uniform"
+      f" within-world split\n")
     w(f"  native degree-0 realizers: {cert_e['native_degree0_realizers']}\n")
     w(f"  native degree-2 realizers: {cert_e['native_degree2_realizers']}\n")
     w("\nQ3 -- THE PRICING VERDICT\n")

@@ -65,7 +65,7 @@
   },
   "cycle": 892,
   "deterministic_double_build": true,
-  "elapsed_sec": 20.879,
+  "elapsed_sec": 20.902,
   "event_space_scan_hits": 0,
   "family_digest": "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e",
   "interface_requirements": [
@@ -129,9 +129,9 @@
     }
   ],
   "restriction_gate": "8/8 restriction checks reproduce.  885's 12 boundary-shell rows match value-for-value with 0 mismatches, its theta-dependence is 7/12 and its degenerate control 0/12; 887's readout gauge recomputes as 9 of 12; the family digest is 30edaa3d5ca03c24.",
-  "science_digest": "0457eb1d02301551d8778decd0a62c21d1558a544796864b4bd445291ef77f36",
+  "science_digest": "3fcc52b659c7cb35579b029380ba93acd4c19290166d2da393afb4b77c37a0ff",
   "scope": "One 12-configuration family (digest 30edaa3d5ca03c24) in a box of radius 4 with walk depth 4; one catalogue of 17 named window maps AST-extracted from the pinned 887 primary; one theta grid of 6 values plus a 27-value fine grid used only for the structure characterization; exact arithmetic throughout.",
-  "self_sha256": "eb82d1b4a7bab844223712728c782b1591079c5200a85ff85948202580795c3f",
+  "self_sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f",
   "source_pins": [
     {
       "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",

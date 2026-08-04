@@ -3,7 +3,7 @@ runner: scripts/frontier_cycle892_gbw1b_independent_check_2026_07_28.py
 runner_sha256: 140342fea4c183814ae12bf4c7938b5813d711e517158ececad7b537adc07625
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 11.294
+elapsed_sec: 11.611
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -12,8 +12,8 @@ CYCLE 892 INDEPENDENT CHECK -- attacking the GBW1b pricing
 
 [A_PINS]  pass=True
     pins:
-      - {"path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py", "sha256": "eb82d1b4a7bab844223712728c782b1591079c5200a85ff85948202580795c3f", "git_blob": "f798d0613a3316bef82f63ec668af44e2cb0e920", "brief_match": null}
-      - {"path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json", "sha256": "09dbfadb36e05b27bdd93137bf01fcd7a2f43e298899460c1a0a275072f815c2", "git_blob": "9b8d73eeafc1c5f191bc2e197b5c88d7c8871cb7", "brief_match": null}
+      - {"path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py", "sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f", "git_blob": "360eed9e17eab1af19ca03d7ea1161dafaf56da0", "brief_match": null}
+      - {"path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json", "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae", "git_blob": "722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2", "brief_match": null}
       - {"path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py", "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32", "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef", "brief_match": true}
       - {"path": "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json", "sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997", "git_blob": "553bba1fbd427f27c5606b6f27bd592a91e9c3c0", "brief_match": true}
       - {"path": "scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py", "sha256": "d98c0b43c0efa9ef33727180b109e74ffd34c4f805bf498f8cf3babb819c86b1", "git_blob": "00e66110f74051e13af8952d2cb79af214570474", "brief_match": null}
@@ -299,4 +299,4 @@ CYCLE 892 INDEPENDENT CHECK -- attacking the GBW1b pricing
 receipt: outputs/gbw1b_independent_check_cycle892_receipt_2026_07_28.json
 overall: ALL CLAIMS SURVIVE
 teeth: 8/8 bite
-elapsed_sec: 11.294
+elapsed_sec: 11.568

@@ -1240,21 +1240,46 @@ def kernel_certificate(cat: dict) -> dict:
 # I: the 878 event-space absence scan (883 discipline)
 # --------------------------------------------------------------------------
 def event_space_scan() -> dict:
+    # This cycle's OWN artifacts must not be counted: they land between the
+    # first run and any re-run, which would make the census -- and with it the
+    # science digest -- change without any physics changing.  The exclusion is
+    # by exact path and is published below, so nothing is hidden by it.
+    own = {SELF_REL,
+           "scripts/frontier_cycle892_gbw1b_independent_check_2026_07_28.py",
+           "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json",
+           "outputs/gbw1b_independent_check_cycle892_receipt_2026_07_28.json",
+           "logs/runner-cache/"
+           "frontier_cycle892_gbw1b_pricing_2026_07_28.txt",
+           "logs/runner-cache/"
+           "frontier_cycle892_gbw1b_independent_check_2026_07_28.txt"}
     scanned, hits = [], {}
+    excluded_seen = 0
     for glob in C878_SCAN_GLOBS:
         try:
             out = subprocess.run(["git", "ls-files", glob], cwd=str(ROOT),
                                  capture_output=True, text=True, timeout=60)
-            files = [f for f in out.stdout.split("\n") if f.strip()]
+            raw = [f for f in out.stdout.split("\n") if f.strip()]
         except Exception:
-            files = []
-        scanned.append({"glob": glob, "tracked_files": len(files)})
+            raw = []
+        files = [f for f in raw if f not in own]
+        excluded_seen += len(raw) - len(files)
+        scanned.append({"glob": glob, "tracked_files": len(files),
+                        "own_artifacts_excluded": len(raw) - len(files)})
         for probe in C878_PROBES:
             for f in files:
                 if probe in f:
                     hits.setdefault(probe, []).append(f)
     total = sum(s["tracked_files"] for s in scanned)
     return {
+        "census_is_idempotent": True,
+        "own_artifacts_excluded_by_exact_path": sorted(own),
+        "own_artifacts_seen_and_excluded_this_run": excluded_seen,
+        "idempotency_note": (
+            "Without this exclusion the census would count the cycle's own "
+            "scripts, receipts and run caches once they land, so a re-run "
+            "would report a different total and the science digest would "
+            "drift with no physics changing.  The exclusion list is by exact "
+            "path and is printed in full."),
         "role": (
             "883-discipline tracked-file scan.  The Cycle-878 composed-record "
             "event-space artifacts are the named import GBW1b's interface "

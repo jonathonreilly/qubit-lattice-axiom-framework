@@ -57,7 +57,7 @@
   "claims_refuted": [],
   "claims_survived": 8,
   "cycle": 892,
-  "elapsed_sec": 11.294,
+  "elapsed_sec": 11.568,
   "firewall_hits": 0,
   "generated_windows_swept": 7192,
   "independence": "The amplitude machinery in this file (STEPS, GRID, centroid, emitters, path_tally, circle_point, raise_power, field, norm_on) is written from scratch and enumerates paths by depth-first search.  The primary uses a length-layered dynamic program.  No primary function is imported, executed or AST-extracted; the primary is read as text and JSON only.",
@@ -129,14 +129,14 @@
   "self_sha256": "140342fea4c183814ae12bf4c7938b5813d711e517158ececad7b537adc07625",
   "source_pins": [
     {
-      "git_blob": "f798d0613a3316bef82f63ec668af44e2cb0e920",
+      "git_blob": "360eed9e17eab1af19ca03d7ea1161dafaf56da0",
       "path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py",
-      "sha256": "eb82d1b4a7bab844223712728c782b1591079c5200a85ff85948202580795c3f"
+      "sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f"
     },
     {
-      "git_blob": "9b8d73eeafc1c5f191bc2e197b5c88d7c8871cb7",
+      "git_blob": "722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2",
       "path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json",
-      "sha256": "09dbfadb36e05b27bdd93137bf01fcd7a2f43e298899460c1a0a275072f815c2"
+      "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae"
     },
     {
       "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",

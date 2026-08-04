@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle915_comparator_independent_check_2026_07_28.py
+runner_sha256: 4693ff6b14418b068b2b702cbd645f0105706900420bdf90e9bb419d324da2f5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 358
+status: ok
+----- stdout -----
+CHECK-A1 provenance=SURVIVES (agree=6 disagree=0, all-never-landed=True, wall=27.2s) CHECK-A2 theta-floor=SURVIVES (quotes-verbatim=True d1-states-theta=False definitions-differ=True) | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+CHECK-A3 C2[lambda=0.02]=SURVIVES first-hit=0.6 theta=0.5001041579430644 R_ind=6 in_W_full=True(primary True) rows=13 max-dev=1.442e-12 r_ind-mismatches=0 energy-dev=2.132e-14 | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+CHECK-A4 C3-spot[lambda=0.05,Jt=1.5]=SURVIVES checker-certified=False primary-certified=False dev={'chi_closed_five': '9.81e-14', 'chi_wedge_four': '7.92e-14', 'theta': '9.09e-14', 'H_Z': '2.54e-13'} persistence=DECAYS | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+TEETH 8/8 detected: tampered-pin=BIT-FLIPPED; fabricated-provenance=BIT-FLIPPED; hardcoded-certification=BIT-FLIPPED; leaked-verdict=BIT-FLIPPED; skipped-grid-point=BIT-FLIPPED; planted-early-certification-blindness=BIT-FLIPPED; tampered-committed-stream=BIT-FLIPPED; fabricated-theta-floor-quote=BIT-FLIPPED | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+TOTAL INDEPENDENT-CHECK-COMPLETE surviving=['pins', 'C1-provenance', 'theta-floor-fidelity', 'fragment-partition', 'sector-dimension', 'C2-lambda-0.02', 'C3-spot', 'restriction-gates', 'determinism', 'falsifier-visibility'] refuted=[] teeth=8/8 digest=4ae27084c6a9978e wall=358.2s rss=6.19GiB | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.

@@ -1,0 +1,545 @@
+{
+ "A1_agreement": {
+  "agree": [
+   "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+   "docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+   "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+   "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "scripts/d3_registration_onset_pilot_2026_07_09.py",
+   "scripts/d3_bar_location_measurement_2026_07_10.py"
+  ],
+  "all_never_landed": true,
+  "disagree": [],
+  "wall_s": 27.170954499975778
+ },
+ "A1_independent_provenance": {
+  "artifacts": {
+   "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md": {
+    "absent_because": "never-landed",
+    "add_commit": "44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea",
+    "add_commit_date": "2026-07-10 18:22:40 -0400",
+    "add_commit_subject": "d3-bar-location block04: full run \u2014 first certified registration onset; BAR-NOT-PINNED on frozen completeness gates",
+    "ancestor_of_main_via_merge_base": false,
+    "commands": [
+     "git cat-file -e HEAD:docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+     "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+     "git branch -r --contains 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea",
+     "git log --all --diff-filter=D --format=%H -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+     "git cat-file blob c63dd2fa17e1"
+    ],
+    "deleted_anywhere": false,
+    "ever_landed": false,
+    "landing_status_consistent": true,
+    "main_among_containing_remote_branches": false,
+    "n_add_records": 2,
+    "present_at_head": false,
+    "present_in_tree": false,
+    "recovered_bytes": 10157,
+    "recovered_sha256": "08a0716cc349b150f0ac84a16118154dc313eddc2ac8545bdf9766e5823c9393",
+    "remote_branches_containing": [],
+    "verdict": "FOUND"
+   },
+   "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md": {
+    "absent_because": "never-landed",
+    "add_commit": "9a91be0d6ead36ce773b497ef5ce7486bc600b50",
+    "add_commit_date": "2026-07-10 11:26:15 -0400",
+    "add_commit_subject": "d3 pilot block02: overnight full run \u2014 BAR-NOT-PINNED, bounded note + evidence streams",
+    "ancestor_of_main_via_merge_base": false,
+    "commands": [
+     "git cat-file -e HEAD:docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+     "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+     "git branch -r --contains 9a91be0d6ead36ce773b497ef5ce7486bc600b50",
+     "git log --all --diff-filter=D --format=%H -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+     "git cat-file blob 7d5a3696a8a0"
+    ],
+    "deleted_anywhere": false,
+    "ever_landed": false,
+    "landing_status_consistent": true,
+    "main_among_containing_remote_branches": false,
+    "n_add_records": 2,
+    "present_at_head": false,
+    "present_in_tree": false,
+    "recovered_bytes": 9689,
+    "recovered_sha256": "6424412e7c9e2455fe78ec610ec0873ea1e9977773709b0718c31113a1885a0a",
+    "remote_branches_containing": [],
+    "verdict": "FOUND"
+   },
+   "docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md": {
+    "absent_because": "never-landed",
+    "add_commit": "a68d73320540f952be9e92907bf0dde1ad8a22f6",
+    "add_commit_date": "2026-07-09 22:02:02 -0400",
+    "add_commit_subject": "d3-registration-pilot: campaign initialized, scout memo banked",
+    "ancestor_of_main_via_merge_base": false,
+    "commands": [
+     "git cat-file -e HEAD:docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+     "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+     "git branch -r --contains a68d73320540f952be9e92907bf0dde1ad8a22f6",
+     "git log --all --diff-filter=D --format=%H -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+     "git cat-file blob 15ef586b1f18"
+    ],
+    "deleted_anywhere": false,
+    "ever_landed": false,
+    "landing_status_consistent": true,
+    "main_among_containing_remote_branches": false,
+    "n_add_records": 2,
+    "present_at_head": false,
+    "present_in_tree": false,
+    "recovered_bytes": 30700,
+    "recovered_sha256": "b0a95a7cbff611ace567e06fd12092185aec7a8ba9fe136e38165d2dfe44f907",
+    "remote_branches_containing": [],
+    "verdict": "FOUND"
+   },
+   "docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md": {
+    "absent_because": "never-landed",
+    "add_commit": "8f75f76ca28b50748f2398f5339babf93c3fde19",
+    "add_commit_date": "2026-07-09 15:19:28 -0400",
+    "add_commit_subject": "physics-loop: record-deposition-rate block01 \u2014 kappa(theta) measured; recurrence floor; sparsity window non-empty",
+    "ancestor_of_main_via_merge_base": false,
+    "commands": [
+     "git cat-file -e HEAD:docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+     "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+     "git branch -r --contains 8f75f76ca28b50748f2398f5339babf93c3fde19",
+     "git log --all --diff-filter=D --format=%H -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+     "git cat-file blob 017353319be0"
+    ],
+    "deleted_anywhere": false,
+    "ever_landed": false,
+    "landing_status_consistent": true,
+    "main_among_containing_remote_branches": false,
+    "n_add_records": 2,
+    "present_at_head": false,
+    "present_in_tree": false,
+    "recovered_bytes": 2796,
+    "recovered_sha256": "3d7303ca4464f56e48c7f107b9d5cd6ef6d046a7a90a4fe13859affba3e42386",
+    "remote_branches_containing": [],
+    "verdict": "FOUND"
+   },
+   "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md": {
+    "absent_because": "never-landed",
+    "add_commit": "d18851afa90adc22c160a1b413fe01c30a470abd",
+    "add_commit_date": "2026-07-09 19:40:53 -0400",
+    "add_commit_subject": "registration-bar block01: bar shape exhibited, range blocked by d=1 geometry",
+    "ancestor_of_main_via_merge_base": false,
+    "commands": [
+     "git cat-file -e HEAD:docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+     "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+     "git branch -r --contains d18851afa90adc22c160a1b413fe01c30a470abd",
+     "git log --all --diff-filter=D --format=%H -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+     "git cat-file blob dd247a8494f1"
+    ],
+    "deleted_anywhere": false,
+    "ever_landed": false,
+    "landing_status_consistent": true,
+    "main_among_containing_remote_branches": false,
+    "n_add_records": 2,
+    "present_at_head": false,
+    "present_in_tree": false,
+    "recovered_bytes": 5230,
+    "recovered_sha256": "41b4f26af908a7b910fbb5683f9d50432f36328bced7cf107585f7f70771df04",
+    "remote_branches_containing": [],
+    "verdict": "FOUND"
+   },
+   "scripts/d3_bar_location_measurement_2026_07_10.py": {
+    "absent_because": "never-landed",
+    "add_commit": "6591b2360ea2ec0fed365110761e6b61cf1e1585",
+    "add_commit_date": "2026-07-10 13:21:17 -0400",
+    "add_commit_subject": "d3-bar-location block02: engine extensions + measurement runner, supervisor VALIDATION-PASS",
+    "ancestor_of_main_via_merge_base": false,
+    "commands": [
+     "git cat-file -e HEAD:scripts/d3_bar_location_measurement_2026_07_10.py",
+     "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- scripts/d3_bar_location_measurement_2026_07_10.py",
+     "git branch -r --contains 6591b2360ea2ec0fed365110761e6b61cf1e1585",
+     "git log --all --diff-filter=D --format=%H -- scripts/d3_bar_location_measurement_2026_07_10.py",
+     "git cat-file blob cf3a68459205"
+    ],
+    "deleted_anywhere": false,
+    "ever_landed": false,
+    "landing_status_consistent": true,
+    "main_among_containing_remote_branches": false,
+    "n_add_records": 2,
+    "present_at_head": false,
+    "present_in_tree": false,
+    "recovered_bytes": 126630,
+    "recovered_sha256": "d03efb510e9df743267b47a46b97b48964cf2d23a85cca3a9b1612084829f27a",
+    "remote_branches_containing": [],
+    "verdict": "FOUND"
+   },
+   "scripts/d3_registration_onset_pilot_2026_07_09.py": {
+    "absent_because": "never-landed",
+    "add_commit": "ce95a77e851be6e46851cf2e7f3a740b74e8b96a",
+    "add_commit_date": "2026-07-09 23:29:49 -0400",
+    "add_commit_subject": "d3 pilot block01b: onset pilot runner + detached launcher + resume brief",
+    "ancestor_of_main_via_merge_base": false,
+    "commands": [
+     "git cat-file -e HEAD:scripts/d3_registration_onset_pilot_2026_07_09.py",
+     "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+     "git branch -r --contains ce95a77e851be6e46851cf2e7f3a740b74e8b96a",
+     "git log --all --diff-filter=D --format=%H -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+     "git cat-file blob 8a17acb0906f"
+    ],
+    "deleted_anywhere": false,
+    "ever_landed": false,
+    "landing_status_consistent": true,
+    "main_among_containing_remote_branches": false,
+    "n_add_records": 2,
+    "present_at_head": false,
+    "present_in_tree": false,
+    "recovered_bytes": 95265,
+    "recovered_sha256": "791629a85e69a00f284f311d1ad81846e9a0fe046b62cfc5b000db7b202cacfa",
+    "remote_branches_containing": [],
+    "verdict": "FOUND"
+   }
+  },
+  "commands": [
+   "git cat-file -e HEAD:docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+   "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+   "git branch -r --contains d18851afa90adc22c160a1b413fe01c30a470abd",
+   "git cat-file -e HEAD:docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+   "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+   "git branch -r --contains a68d73320540f952be9e92907bf0dde1ad8a22f6",
+   "git cat-file -e HEAD:docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+   "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+   "git branch -r --contains 9a91be0d6ead36ce773b497ef5ce7486bc600b50",
+   "git cat-file -e HEAD:docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "git branch -r --contains 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea",
+   "git cat-file -e HEAD:scripts/d3_registration_onset_pilot_2026_07_09.py",
+   "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+   "git branch -r --contains ce95a77e851be6e46851cf2e7f3a740b74e8b96a",
+   "git cat-file -e HEAD:scripts/d3_bar_location_measurement_2026_07_10.py",
+   "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- scripts/d3_bar_location_measurement_2026_07_10.py",
+   "git branch -r --contains 6591b2360ea2ec0fed365110761e6b61cf1e1585",
+   "git cat-file -e HEAD:docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+   "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+   "git branch -r --contains 8f75f76ca28b50748f2398f5339babf93c3fde19",
+   "git cat-file -e HEAD:docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "git log --all --diff-filter=A --format=%H|%ci|%an|%s -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "git branch -r --contains 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea"
+  ],
+  "origin_main_tip": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+  "route": "path-scoped --diff-filter=A walk over --all; landing status cross-derived from merge-base AND remote-branch containment"
+ },
+ "A2_theta_floor_attack": {
+  "attacks": {
+   "all_quotes_verbatim": true,
+   "c914_label_present": true,
+   "c914_theta_floor_constant": true,
+   "d1_can_be_the_floor_source": false,
+   "d1_deferral_present": true,
+   "d1_states_a_theta_value": false,
+   "d1_theta_mentions": [
+    "theta*, its delta-insensitivity, its position vs the sparse windo",
+    "theta >= 0.2) is DEFERRED to a d >= 2 comparator and remains"
+   ],
+   "d3_theta_subtracts_trajectory_t0": true,
+   "dep_floor_is_measured_not_declared": true,
+   "dep_states_floor": true,
+   "deposition_theta_subtracts_ground_state_baseline": true,
+   "quotes_verbatim": {
+    "d1_deferral_quote": true,
+    "deposition_floor_quote": true,
+    "deposition_theta_definition_quote": true
+   },
+   "theta_definitions_differ": true,
+   "window_note_lists_floor_as_supplied_input": true
+  },
+  "d1_note_recovered": true,
+  "dep_note_recovered": true,
+  "independent_verdict": "The 0.20 comparison floor is NOT d=1-derived.  The d=1 registration note states no theta value and explicitly defers the comparison; the floor is measured in the 2026-07-08 record-deposition-rate comparator on a theta whose baseline is a per-bond interacting-ground-state subtraction, whereas the d=3 theta subtracts the trajectory's own t=0 value.  The frozen d=3 protocol imports 0.20 as a DECLARED comparison floor, which is exactly how the in-tree 2026-07-11 note books it.",
+  "primary_reading_survives": true
+ },
+ "A3_C2_independent": {
+  "checker_first_hit": {
+   "jt": 0.6,
+   "max_pair": 0.0011326954132324777,
+   "r_ind": 6,
+   "run": 4,
+   "subset": [
+    "+x",
+    "-x",
+    "+y",
+    "-y",
+    "+z",
+    "-z"
+   ],
+   "theta": 0.5001041579430644
+  },
+  "checker_lambda002_in_W_full": true,
+  "energy_conservation": {
+   "E0": -24.140000000000015,
+   "E_tmax": -24.140000000000036,
+   "abs_dev": 2.1316282072803006e-14
+  },
+  "jt_match": true,
+  "max_pair_abs_dev": 3.77866141154648e-15,
+  "per_delta_checker": {
+   "0.05": {
+    "jt": 0.7,
+    "r_ind": 6,
+    "run": 3
+   },
+   "0.1": {
+    "jt": 0.6,
+    "r_ind": 6,
+    "run": 4
+   },
+   "0.2": {
+    "jt": 0.6,
+    "r_ind": 6,
+    "run": 5
+   }
+  },
+  "primary_first_hit": {
+   "Q_quiet": 0.00012396560297500692,
+   "X_face": 0.03171434549180441,
+   "by_deadline": true,
+   "drift": 2.778335624187278e-05,
+   "jt": 0.6,
+   "max_pair": 0.0011326954132362564,
+   "pair_values": {
+    "minus-x-orthogonal": 0.0011326954132353084,
+    "opposite-44": 0.00016797639787379515,
+    "opposite-55": 0.0005174889596740555,
+    "plus-x-orthogonal": 0.0011326954132362564,
+    "transverse-orthogonal": 0.0010158916886128843
+   },
+   "r_ind": 6,
+   "run": 4,
+   "subset": [
+    "+x",
+    "-x",
+    "+y",
+    "-y",
+    "+z",
+    "-z"
+   ],
+   "theta": 0.5001041579430632
+  },
+  "primary_lambda002_in_W_full": true,
+  "propagator": {
+   "centre": 2.0,
+   "degree": 116,
+   "half_width": 56.54,
+   "matvecs": 116
+  },
+  "r_ind_match": true,
+  "r_ind_mismatches": [],
+  "row_max_abs_dev": {
+   "H_Z": 8.22675261247241e-14,
+   "chi_closed_five": 1.367711499611346e-12,
+   "chi_wedge_four": 1.4419299088075377e-12,
+   "pair_opposite_55": 1.7961977391567352e-14,
+   "theta": 2.531308496145357e-14
+  },
+  "rows_compared": 13,
+  "run_match": true,
+  "subset_match": true,
+  "theta_abs_dev": 1.2212453270876722e-15
+ },
+ "A4_C3_spot": {
+  "checker_certified": false,
+  "checker_chi_closed_five": 0.04139732703568999,
+  "checker_r_ind": {
+   "0.05": 0,
+   "0.1": 0,
+   "0.2": 0
+  },
+  "jt": 1.5,
+  "lambda": 0.05,
+  "max_abs_dev": {
+   "H_Z": 2.5368596112684827e-13,
+   "chi_closed_five": 9.81020820134404e-14,
+   "chi_wedge_four": 7.915890165577366e-14,
+   "theta": 9.092726571680032e-14
+  },
+  "primary_certified": false,
+  "primary_persistence_verdict": "DECAYS",
+  "primary_r_ind": {
+   "0.05": 0,
+   "0.1": 0,
+   "0.2": 0
+  },
+  "propagator": {
+   "centre": 2.0,
+   "degree": 140,
+   "half_width": 57.35,
+   "matvecs": 140
+  }
+ },
+ "boundary_sentences": [
+  "Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction.",
+  "No formation rule.",
+  "Sets no audit status."
+ ],
+ "cycle": 915,
+ "date": "2026-07-28",
+ "findings": [
+  {
+   "check": "pins",
+   "detail": "independent sha256 of every pinned file; the six cited-but-absent artifacts are confirmed absent from the working tree",
+   "survives": true
+  },
+  {
+   "check": "C1-provenance",
+   "detail": "independent path-scoped walk reproduces all six FOUND verdicts, all six recovered sha256 digests, and all six never-landed determinations (landing status cross-derived two ways and consistent in every case)",
+   "disagreements": [],
+   "survives": true
+  },
+  {
+   "check": "theta-floor-fidelity",
+   "detail": "The 0.20 comparison floor is NOT d=1-derived.  The d=1 registration note states no theta value and explicitly defers the comparison; the floor is measured in the 2026-07-08 record-deposition-rate comparator on a theta whose baseline is a per-bond interacting-ground-state subtraction, whereas the d=3 theta subtracts the trajectory's own t=0 value.  The frozen d=3 protocol imports 0.20 as a DECLARED comparison floor, which is exactly how the in-tree 2026-07-11 note books it.",
+   "survives": true
+  },
+  {
+   "check": "fragment-partition",
+   "detail": "the memo's six literal fragment lists agree with the memo's own tie-break algorithm, cover 26 sites, and are pairwise disjoint",
+   "survives": true
+  },
+  {
+   "check": "sector-dimension",
+   "detail": "MAX-canonical independent orbit sector has dimension 5605504 (memo-declared 5605504)",
+   "survives": true
+  },
+  {
+   "check": "C2-lambda-0.02",
+   "detail": "independent MAX-canonical / shifted-Chebyshev recomputation of all 13 executed rows reproduces the primary's lambda = 0.02 first hit (Jt = 0.6, R_ind = 6, subset of 6), every per-delta first hit, and the W_full membership; max row deviation 1.442e-12 bits",
+   "survives": true
+  },
+  {
+   "check": "C3-spot",
+   "detail": "independent recomputation at lambda = 0.05, Jt = 1.5 reproduces the primary's certification outcome (not certified) and R_ind ledger; the primary's persistence verdict for that lambda is DECAYS",
+   "survives": true
+  },
+  {
+   "check": "restriction-gates",
+   "detail": "the Cycle 914 headline rows the primary gates on are re-read from the 914 receipt and match value-for-value; the primary's own gate flag is True",
+   "survives": true
+  },
+  {
+   "check": "determinism",
+   "detail": "the primary requested one grid time twice in a single Chebyshev expansion; the two propagated states and their observable scalars are reported bitwise equal",
+   "survives": true
+  },
+  {
+   "check": "falsifier-visibility",
+   "detail": "the primary's gate machinery fires on a planted early row and refuses three near-miss rows; this checker re-tests the same property with its own r_ind in the teeth",
+   "survives": true
+  }
+ ],
+ "independent_machinery": {
+  "approach": "MAX-canonical orbit sector + shifted Chebyshev (non-zero spectral centre) + expand-table marginals -- structurally distinct from the primary's MIN-canonical / centred expansion",
+  "names": [
+   "CHK",
+   "CubeSector",
+   "Marginal",
+   "S_bits",
+   "_tab",
+   "chi_bits",
+   "cmi_bits",
+   "energy_expectation",
+   "expand_table",
+   "memo_fragments",
+   "r_ind",
+   "rotations24",
+   "shifted_chebyshev",
+   "tiebreak",
+   "tr1"
+  ],
+  "source": "scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py",
+  "source_sha256": "8ffd5436b5c506e9965a9a6f486f595531113aedef77cc2861114e87b362973f"
+ },
+ "numerics": {
+  "basis_wall_s": 21.63272287498694,
+  "c2_wall_s": 200.55351037500077,
+  "numpy": "2.4.1",
+  "peak_rss_gib": 6.1872406005859375,
+  "python": "3.12.8",
+  "sector_dim": 5605504,
+  "wall_s": 358.19105195999146
+ },
+ "pins": {
+  "absence_pins_hold": true,
+  "all_match": true,
+  "digests": {
+   "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e",
+   "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md": "74a0a4c0e40e78ec042824ba706389e53e8bde22443964388987557a1819552c",
+   "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad",
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+   "logs/runner-cache/d3_bar_window_checkpoints/lam_0p02_observables.jsonl": "9bf9282d477daf43635d29647ea0757fefb6105b755519c515539b3e28be3177",
+   "outputs/d3_bar_commission_cycle914_receipt_2026_07_28.json": "fba8a16ee811fa1729bc1cdb6988096193a7e14878e7a78380f4880120bf7223",
+   "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py": "fc7344a06503f9c159ea732cb6f622a23e61196e370914943ffd9a468fd592e4"
+  }
+ },
+ "primary_runner_sha256": "b1b575f58bd3af24705c1afbe74a4f1e2dfe8e02a251df642e44b7a4e4f4d06c",
+ "result_table_sha256": "4ae27084c6a9978e9704538ebdd323e849430afb6b67fd010472f6451a6e13f7",
+ "runner": "scripts/frontier_cycle915_comparator_independent_check_2026_07_28.py",
+ "schema": "frontier-cycle915-independent-check-v1",
+ "teeth": [
+  {
+   "detail": "single-byte flip in the parent memo changes its sha256 -> pin verification fails",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "tampered-pin"
+  },
+  {
+   "detail": "a fabricated path returns GENUINELY-ABSENT from the same walk that returns FOUND for all six real predecessors -- the walk is not a rubber stamp",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "fabricated-provenance"
+  },
+  {
+   "detail": "perturbing the primary's theta* by 1e-6 is caught by the independent theta recomputation at tolerance 1e-9 (true |dev| = 1.221e-15)",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "hardcoded-certification"
+  },
+  {
+   "detail": "R_ind is derived from the checker's own chi/C_ab: zeroing chi(+x) drops R_ind from 6 to 5",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "leaked-verdict"
+  },
+  {
+   "detail": "every one of the 13 frozen executed subgrid points is present in BOTH the primary's rows and this checker's independent rows (missing: checker [], primary [])",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "skipped-grid-point"
+  },
+  {
+   "detail": "a fabricated all-fragment row planted at the gate returns R_ind=6 through the same routine that returns no certification at Jt <= 0.3 in the measured data -- the routine is not blind to an early hit, the physics simply has none",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "planted-early-certification-blindness"
+  },
+  {
+   "detail": "a 1e-6 perturbation of the committed 2026-07-11 lambda=0.02 reference chi would be caught at 1e-9 (true max |dev| = 3.416e-12 over 13 rows)",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "tampered-committed-stream"
+  },
+  {
+   "detail": "a plausible-but-invented d=1 floor sentence is NOT found in the recovered bytes, so the verbatim-quote test can distinguish a real quote from a fabricated one",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "fabricated-theta-floor-quote"
+  }
+ ],
+ "verdict": {
+  "exit_is_independent_of_claim_survival": true,
+  "refuted_checks": [],
+  "surviving_checks": [
+   "pins",
+   "C1-provenance",
+   "theta-floor-fidelity",
+   "fragment-partition",
+   "sector-dimension",
+   "C2-lambda-0.02",
+   "C3-spot",
+   "restriction-gates",
+   "determinism",
+   "falsifier-visibility"
+  ],
+  "teeth_detected": 8,
+  "teeth_total": 8
+ }
+}

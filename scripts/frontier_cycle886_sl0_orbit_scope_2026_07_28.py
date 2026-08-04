@@ -65,8 +65,9 @@ AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
     "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
-    "outputs/record_weight_pair_cycle883_receipt_2026_07_28.json",
+    "logs/runner-cache/record_weight_pair_cycle883_receipt_2026_07_28.json",
     "docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "outputs/record_weight_pair_cycle883_receipt_2026_07_28.json",
 )
 
 import ast
@@ -95,16 +96,19 @@ EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[2]:
         "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a",
     AUDIT_INPUT_PATHS[3]:
-        "973d18d9aa2e05a2decac79ddd8a6f245d923e9a94d772baf80869228ca27d60",
+        "b12e382a4a408bd3fe518bb47aca83083a27e0180355128b3a76b5282accd511",
     AUDIT_INPUT_PATHS[4]:
-        "692a3ad36def7242845576b88b48ef1c44b7e9a11e97873952cb93f28729ffa5",
+        "d2f6544cbe9c4022a41b149e874b2507d0e59d3c5bf793b6c14941455b9c9b0f",
+    AUDIT_INPUT_PATHS[5]:
+        "973d18d9aa2e05a2decac79ddd8a6f245d923e9a94d772baf80869228ca27d60",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "4a863da1f3f255354839277271a3a69a5c205133",
     AUDIT_INPUT_PATHS[1]: "d563c2b9c2a261f44d7304baa51fdd3596188930",
     AUDIT_INPUT_PATHS[2]: "c13380757eae27bdee05bc0d4be65a40c2865585",
-    AUDIT_INPUT_PATHS[3]: "d4290cbe8cfedf965fad828dc673e8fee2e75cd5",
-    AUDIT_INPUT_PATHS[4]: "75d64abf2a4f5cc671e37ad271680c6e5c0f9ce1",
+    AUDIT_INPUT_PATHS[3]: "86e923ae910a02cad84eb756e5a255b97d820f0e",
+    AUDIT_INPUT_PATHS[4]: "fd5c708967c03fced5ff349b9636164861cd1c04",
+    AUDIT_INPUT_PATHS[5]: "d4290cbe8cfedf965fad828dc673e8fee2e75cd5",
 }
 
 # --------------------------------------------------------------------------
@@ -1017,6 +1021,15 @@ def c883_construction_certificate() -> dict:
     receipt = json.loads(_read_text(AUDIT_INPUT_PATHS[3]))
     landed_pair = tuple(receipt.get("derived_ordered_pair", []))
     landed_profile = tuple(receipt.get("two_adic_profile", []))
+    landed_successors = receipt.get("open_successors")
+
+    # The block ship receipt is pinned separately and must corroborate the
+    # runner receipt AND name SL0 as the open residual this cycle attacks.
+    ship = json.loads(_read_text(AUDIT_INPUT_PATHS[5]))
+    headline = ship.get("headline", "")
+    ship_names_the_pair = "(1,2)" in headline and "(0,1)" in headline
+    ship_names_sl0 = "SL0" in headline
+    ship_corroborates = ship_names_the_pair and ship_names_sl0
 
     # Independent reimplementation, then agreement against the pinned source's
     # OWN semantics for n = 2..8.
@@ -1056,7 +1069,7 @@ def c883_construction_certificate() -> dict:
         and has_plus_minus and returns_pair
         and neighbours is not None and len(neighbours) == 6
         and set(neighbours) == set(NEAREST_NEIGHBOURS)
-        and routes_agree and reproduces_883
+        and routes_agree and reproduces_883 and ship_corroborates
     )
     return {
         "statement": (
@@ -1081,6 +1094,11 @@ def c883_construction_certificate() -> dict:
             neighbours is not None and set(neighbours) == set(NEAREST_NEIGHBOURS),
         "cycle883_landed_receipt_pair": list(landed_pair),
         "cycle883_landed_receipt_profile": list(landed_profile),
+        "cycle883_landed_open_successors": landed_successors,
+        "cycle883_ship_receipt_headline": headline,
+        "ship_receipt_names_the_pair_and_profile": ship_names_the_pair,
+        "ship_receipt_names_SL0_as_open": ship_names_sl0,
+        "ship_receipt_corroborates_the_runner_receipt": ship_corroborates,
         "two_route_agreement_table": agreement,
         "both_routes_agree_everywhere": routes_agree,
         "reproduces_the_landed_cycle883_result": reproduces_883,

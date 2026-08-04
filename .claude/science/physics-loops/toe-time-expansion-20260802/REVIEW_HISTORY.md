@@ -526,3 +526,22 @@ exclusion are owner-surface rows with no derivation work left.
 - Cluster-cap (24th gravity-family PR): **OPEN** — repair closure
   with two strengthening theorems and honest accounting.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 903 sigma + theta (blockG26, PR #5964) — 2026-08-04
+
+- Supervisor review: the primitive-boundary fold verified from both
+  notes' bytes (the split is the block's sharpest computation); the
+  rank-sterility argument checked; the empty-core chain and the
+  out-of-family barrier attack verified in the receipt; four
+  self-found defects disclosed (incl. the plant-flattery repair and
+  the ablation hard-fail guard).
+- Checker: 5/5 survive; same 0-EXACT on an independent grader; 8/8
+  teeth.
+- Ledger impact: sigma's accounting improves by one dimension
+  (primitive consumption); the lane's supplied quantities are now
+  exactly TWO named numbers (sigma's dimensionless residue; mu) +
+  registered conventions. The barrier-conditionality of the theta
+  coupling must be carried into the G25 (P2) verdict when it lands.
+- Cluster-cap (25th gravity-family PR): **OPEN** — two-row closure
+  with a boundary split, a rank theorem, and an empty-core theorem.
+- Local disposition: **pass** (bounded_theorem; audit pending).

@@ -252,11 +252,15 @@ worktrees:
     solved as exact linear algebra; the bridge computation on the full
     892 grid; verdict INTERFACE-CONSTRUCTED / OBSTRUCTED / PARTIAL) —
     running
-  c5-g26: G26 (Cycle 903, two small ledger items — sigma: derivable /
-    inside the approved scale-reference primitive / terminal supplied
-    (fidelity sweep + boundary adjudication + bridge-involution census);
-    theta-incidence: the barrier-independent invariant core replacing
-    885's barrier-specific 7/12) — running
+  c5-g26: blockG26 SHIPPED as PR #5964 — Cycle 903 both rows CLOSE:
+    sigma = SPLIT_OUTSIDE (unit-conversion factor CONSUMES the approved
+    scale-reference primitive — one dimension discharged; dimensionless
+    residue = the lane's TERMINAL SUPPLIED SCALAR, named by the
+    primitive's own exclusion list; involution route sterile by RANK);
+    theta core EMPTY (chain 7 > 1 > 0; mechanism derived — two path
+    lengths + bipartite parity + step budget; 12-barrier attack incl. 8
+    out-of-family, no survivor) — 885's window-to-kernel coupling is
+    BARRIER-CONDITIONAL; consumer guidance emitted
   c5-g27: G27 (Cycle 904, the MIXED-DEGREE census — the last unpriced
     shape from 898: native generator space with declared bounds; the
     reachable-value set and its 3-adic structure (can any native relation

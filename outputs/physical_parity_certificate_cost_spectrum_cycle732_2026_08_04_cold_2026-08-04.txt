@@ -1,0 +1,59 @@
+
+the cell and its pieces of least volume
+PASS cell.pieces  4368 five-subsets of the 16 corners, 2672 of least volume
+PASS cell.charge  adjacency charge spectrum [(3, 64), (4, 384), (5, 1152), (6, 768), (7, 304)]
+PASS cell.inverse  every piece matrix inverts exactly over the integers
+
+the symmetry of the cell
+PASS sym.group  24 proper rotations kept, 48 elements once the tick flip is included
+PASS sym.orbits  57 piece orbits, sizes [16, 48], summing to 2672
+PASS sym.constant  adjacency charge is constant on every piece orbit
+
+sample points, none of them on a piece boundary
+PASS pts.weights  barycentric bound 3, superincreasing weight total 12810
+PASS pts.generic  2736 sample points, no collision, 0 lying on any piece boundary
+PASS pts.orbits  they fall into 57 orbits of the full symmetry, sizes [48], one orbit for each piece orbit
+PASS pts.incidence  points inside a piece range over (6, 409), pieces containing a point over (90, 224), so no row and no column of the incidence is empty
+
+the group table and the exact elimination used below
+PASS grp.table  the 48 elements act faithfully on the corners, compose, and share an identity
+
+how much of the symmetry a parity certificate can keep
+PASS lad.closed  closing every one-element extension to a fixpoint reaches 98 sets, each of them shut under composition, holding the identity, and of order dividing 48
+PASS lad.orders  subgroups of order at least 12, counted by order: [(48, 1), (24, 3), (16, 3), (12, 5)]
+PASS lad.unique  1 of the 12 subgroups of order at least 12 admits an invariant certificate
+PASS lad.index  all 7 subgroups of order above 12 fail and one of order 12 succeeds, so the symmetry drops by index 4 and no more
+PASS lad.rotations  the surviving subgroup carries the tick flip on 0 of its elements and has rotation traces [-1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+PASS lad.pointorbits  it splits the 2736 sample points into 228 orbits, sizes [12]
+
+the parity certificate
+PASS par.rows  the exhibited point set meets every one of the 2672 pieces in a number of points congruent to that piece's charge modulo 2
+PASS par.shift  the certificate carries no constant term, so the argument never uses how many pieces a dissection has
+PASS par.even  the point set has 228 points, an even number, which is what forces every cost to be even
+PASS par.orbits  it is a union of 19 orbits of the surviving subgroup, sizes [12]
+PASS par.stab  exactly 12 of the 48 symmetries of the cell fix the point set, and they are the surviving subgroup
+PASS par.point  moving any single one of the 2736 sample points into or out of the set breaks at least 90 of the 2672 rows
+PASS par.const  changing the constant term by one breaks every row
+PASS par.wrong  neither the complementary point set nor the set of all sample points certifies the same congruence
+
+no rule modulo three, exhibited on four pieces and confirmed twice over
+PASS cong.witness  four pieces inside the six corner set [0, 1, 3, 7, 8, 10], counted [1, 2, 2, 1] times over, cover 266 sample points three times each and the remaining 2470 not at all, and their multiplicities add to 6; their charges [4, 5, 6, 5] add to 31, which is 1 modulo 3
+PASS cong.local  of the 8008 six corner subsets of the cell, 1104 carry such an obstruction using their own pieces alone: 864 of them hold four pieces of least volume and 240 hold six
+PASS cong.mod3  eliminating the whole point level system agrees: rank 465 modulo 3 with an inconsistent row, so no certificate modulo 3 exists
+PASS cong.mod2  the same system has rank 465 modulo 2 and is consistent
+
+eleven dissections, one of each even cost
+PASS wit.dissect  all 11 pinned covers are dissections: 24 distinct pieces of least volume, pairwise disjoint by an exhibited direction, every sample point covered
+PASS wit.cost  their costs are [108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128]
+PASS wit.once  every sample point lies inside exactly one piece of each of them, which is the step that turns the row congruence into a claim about cost
+PASS wit.count  summing the point set over the pieces of each dissection returns 228 every time
+PASS wit.even  every exhibited cost is even, as the certificate requires
+PASS wit.sharp  the greatest common divisor of the cost differences is 2, so no modulus above 2 divides all of them
+
+the bounding certificates and the spectrum
+PASS cert.floor  the floor rows hold on all 2672 pieces and sum to 23328, which is 108 times 216
+PASS cert.ceil  the ceiling rows hold on all 2672 pieces and sum to 384, which is 128 times 3
+PASS cert.attain  the exhibited costs run from 108 to 128, so both bounds are attained
+PASS cert.spectrum  bounded below by 108, above by 128, even by the certificate, and every even value between attained: the cost spectrum of the cell is exactly [108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128]
+
+TOTAL: PASS=39 FAIL=0

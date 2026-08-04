@@ -1,0 +1,170 @@
+{
+ "cycle": 732,
+ "failures": 0,
+ "gates": 39,
+ "headline": "an exhibited set of 228 sample points meets every piece of least volume in a number of points congruent to that piece's adjacency charge modulo 2 and carries no constant term, so every dissection of the cell has even adjacency cost, and with the bounding certificates and eleven exhibited dissections the cost spectrum of the cell is exactly the eleven even integers from 108 to 128",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026-08-04.md",
+ "recorded_output": "outputs/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04_cold_2026-08-04.txt",
+ "results": {
+  "cell": {
+   "charge_spectrum": [
+    3,
+    64,
+    4,
+    384,
+    5,
+    1152,
+    6,
+    768,
+    7,
+    304
+   ],
+   "five_subsets": 4368,
+   "minimal_pieces": 2672
+  },
+  "certificates": {
+   "ceiling_cost": 128,
+   "ceiling_denominator": 3,
+   "ceiling_value": 384,
+   "floor_cost": 108,
+   "floor_denominator": 216,
+   "floor_rows_hold_on": 2672,
+   "floor_value": 23328,
+   "spectrum": [
+    108,
+    110,
+    112,
+    114,
+    116,
+    118,
+    120,
+    122,
+    124,
+    126,
+    128
+   ]
+  },
+  "congruence": {
+   "charge_sum": 31,
+   "charge_sum_mod_three": 1,
+   "multiplicity_sum": 6,
+   "of_those_holding_four_pieces": 864,
+   "of_those_holding_six_pieces": 240,
+   "points_covered_three_times": 266,
+   "points_not_covered": 2470,
+   "rank_mod_three": 465,
+   "rank_mod_two": 465,
+   "sets_carrying_an_obstruction": 1104,
+   "six_corner_sets": 8008,
+   "witness_charges": [
+    4,
+    5,
+    6,
+    5
+   ],
+   "witness_corner_set": [
+    0,
+    1,
+    3,
+    7,
+    8,
+    10
+   ],
+   "witness_multiplicities": [
+    1,
+    2,
+    2,
+    1
+   ]
+  },
+  "ladder": {
+   "candidates": 12,
+   "failing_above_twelve": 7,
+   "index_drop": 4,
+   "orders_at_least_twelve": [
+    48,
+    1,
+    24,
+    3,
+    16,
+    3,
+    12,
+    5
+   ],
+   "rotation_traces": [
+    -1,
+    -1,
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3
+   ],
+   "subgroups": 98,
+   "surviving": 1,
+   "survivor_point_orbits": 228,
+   "tick_flips_in_survivor": 0
+  },
+  "parity": {
+   "certificate_orbits": 19,
+   "certificate_points": 228,
+   "group_order": 48,
+   "rows": 2672,
+   "rows_broken_by_one_point": 90,
+   "stabiliser_order": 12
+  },
+  "points": {
+   "barycentric_bound": 3,
+   "pieces_containing_a_point": [
+    90,
+    224
+   ],
+   "point_orbit_sizes": [
+    48
+   ],
+   "point_orbits": 57,
+   "points_inside_a_piece": [
+    6,
+    409
+   ],
+   "points_on_a_boundary": 0,
+   "sample_points": 2736,
+   "weight_total": 12810
+  },
+  "symmetry": {
+   "group_order": 48,
+   "piece_orbit_sizes": [
+    16,
+    48
+   ],
+   "piece_orbits": 57,
+   "pieces_covered": 2672,
+   "proper_rotations": 24
+  },
+  "witnesses": {
+   "costs": [
+    108,
+    110,
+    112,
+    114,
+    116,
+    118,
+    120,
+    122,
+    124,
+    126,
+    128
+   ],
+   "dissections": 11,
+   "gcd_of_cost_differences": 2,
+   "pieces_each": 24,
+   "point_set_sum_over_each": 228
+  }
+ }
+}

@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); outcome-neutrality DEMONSTRATED by counterfactual census (which caught a real dim-V keying bug); supervisor line-by-line review",
+  "block": "toe-time-blockQ3-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 84.5s; CORROBORATES_WITH_REFINEMENT, 0 disagreements; own cold rebuild 7/7; 8/8 teeth",
+    "primary": "11/11 PASS, exit 0, 157.6s; restriction gates 26/26; counterfactual census reaches the OPPOSITE verdict through identical machinery"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 3rd Q-family PR this campaign (evaluator now required): resolves the lane's opening tension with an inside-span impossibility theorem, a constructive unique-up-to-scale object, a single-orbit scope result, and two filed premises; distinct claim type vs Q2's census certification; nothing corollary",
+  "cycles": [
+    906
+  ],
+  "files": {
+    "docs/COVARIANCE_TENSION_RESOLVED_M6_CYCLE906_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "5073a1354d956c35eeb09508ad01d8319dcc39cc",
+      "sha256": "a050e6fa95a73060ebdeeb2c452e745a8be35337c69424d73a5ee63b68b1a68e"
+    },
+    "logs/runner-cache/frontier_cycle906_covariance_tension_2026_07_28.txt": {
+      "git_blob": "069f575ce07c5b94115fc9c51c1a6f26d0d84430",
+      "sha256": "10b3fdfce4ec97e31b90823cf15827f10f2290ae3b80843a06508f8e69db1ea0"
+    },
+    "logs/runner-cache/frontier_cycle906_covariance_tension_independent_check_2026_07_28.txt": {
+      "git_blob": "32e4062957d140ad7321382d709980665ebe95d2",
+      "sha256": "ed2979d265b1922278507c8c1b6a4533f90ee646e4f8064fcb2a28ed5cab5f5d"
+    },
+    "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": {
+      "git_blob": "392cba199a75a14a8bb88808943c1259cbd7a94b",
+      "sha256": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f"
+    },
+    "outputs/covariance_tension_independent_check_cycle906_receipt_2026_07_28.json": {
+      "git_blob": "8356368295e390d074ba81bd378a9ab10b60e181",
+      "sha256": "3f88a2ff46a2fd1390ddbd25cce7aa0275b38518958e8536a24e7c348272c678"
+    },
+    "scripts/frontier_cycle906_covariance_tension_2026_07_28.py": {
+      "git_blob": "d7577bb2ac9f4cb7ee9d8abc5f19e9c7cf888df9",
+      "sha256": "9c6392d593c1bf37e70f84692732d1e5cfa3f4377393dab846a15789fc0ce008"
+    },
+    "scripts/frontier_cycle906_covariance_tension_independent_check_2026_07_28.py": {
+      "git_blob": "a69281272662fa6023aff28504d9dc1e18297255",
+      "sha256": "3b735312cee24f7d47cbe5ff905ca4a6463221ae822c159564067772d42700ba"
+    }
+  },
+  "headline": "BL7 RESOLVED BY ONE ORBIT: covariance is a CREDENTIAL not a law (0 requires-rows over 9,472 files); inside the 878 span the incompatibility is a THEOREM (covariant subspace = the M2 line; zero-mass subspace = the survivor span; intersection zero); over the generous base EXACTLY ONE solution exists and is exhibited \u2014 M6_ABSOLUTE_ORBIT_UNIFORM, uniform on the 11 worlds of the SINGLE orbit (of 68) missing the never-formed block, unique up to scale, price = one new generator (rank 5->6, extension 25->30); BL6 != BL7 but covariance maximizes BL6 (support 11 worlds); two premises FILED (P-856-SHAPE cross-lane shape match; P-INTERTWINE-878 \u2014 878's test is invariance, 856's theorem is intertwining, discharge priced ~850s); single-orbit scope must be re-derived at any horizon change",
+  "independence": "cross-context (independent AST read of the covariance expression \u2014 no reading disagreement; two-route ranks throughout + a structural third route; 8/8 teeth incl. fabricated-joint-solution)",
+  "note": "docs/COVARIANCE_TENSION_RESOLVED_M6_CYCLE906_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 84.5,
+    "primary": 157.6
+  }
+}

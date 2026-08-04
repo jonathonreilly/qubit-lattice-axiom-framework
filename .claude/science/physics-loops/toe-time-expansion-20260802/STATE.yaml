@@ -246,12 +246,15 @@ worktrees:
     cheaper Record-content premise; falsification pair C4 3/16-vs-5/16;
     BONUS: 883's five-fold ambiguity closes to ONE ((n-1)/n^2 the unique
     scope-invariant form); 899 rows rebuilt cross-branch, 0 disagreements
-  c5-g25: G25 (Cycle 902, the P2 KERNEL ATTACK — construct the minimal
-    kernel-argument extension of the 878 event space (dimension computed
-    from C892-T3's degree bound); per-requirement + JOINT satisfiability
-    solved as exact linear algebra; the bridge computation on the full
-    892 grid; verdict INTERFACE-CONSTRUCTED / OBSTRUCTED / PARTIAL) —
-    running
+  c5-g25: blockG25 SHIPPED as PR #5965 — Cycle 902 PARTIAL: P2 buys the
+    WHOLE bridge (12/12 jointly on IF2/3/4/6; exhibited object, residual
+    freedom 0 mod normalizer; 648/648 verified) and NOTHING of IF1 —
+    minimal obstructing subset = {IF1} alone (the readout-vs-seed gap is
+    theta-invariant); minimal fibre = 5, tight; support faithfulness
+    FAILS to lift (IF5's cost explained); with 903, IF1 is BARRIER-
+    SCOPED — the interface question is one sentence about the barrier;
+    methodological export: T9 solver self-validation (real Bareiss
+    rank-corruption bug caught and hardened)
   c5-g26: blockG26 SHIPPED as PR #5964 — Cycle 903 both rows CLOSE:
     sigma = SPLIT_OUTSIDE (unit-conversion factor CONSUMES the approved
     scale-reference primitive — one dimension discharged; dimensionless

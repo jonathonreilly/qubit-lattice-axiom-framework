@@ -545,3 +545,22 @@ exclusion are owner-surface rows with no derivation work left.
 - Cluster-cap (25th gravity-family PR): **OPEN** — two-row closure
   with a boundary split, a rank theorem, and an empty-core theorem.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 902 P2 kernel attack (blockG25, PR #5965) — 2026-08-04
+
+- Supervisor review: the rank/tightness computations, the generous-
+  base independence construction, and the exhibited object's
+  substitution verification checked in the receipt; the vendoring
+  digests verified pre-commit; the solver-soundness disclosure (the
+  checker's own Bareiss bug, caught by cross-comparison not by its
+  probes) recorded with the T9 export — PROPAGATE to sibling blocks
+  using fraction-free solvers.
+- Checker: all six headline claims corroborated with exact
+  rank/kernel agreement on independent machinery; 9/9 teeth.
+- Ledger impact: 894's ordering confirmed; the interface compresses
+  to {IF1} alone, barrier-scoped per 903. GBW1b's status: bridge
+  CONSTRUCTIBLE (freedom 0), interface = one barrier-scoped
+  obstruction + the registered conventions.
+- Cluster-cap (26th gravity-family PR): **OPEN** — route closure
+  with construction + compression + methodological export.
+- Local disposition: **pass** (bounded_theorem; audit pending).

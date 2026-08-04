@@ -1387,7 +1387,9 @@ def grade_sentence(text: str, variant: str = "v2_strict") -> dict:
         grade, klass = "PARTIAL", "GROUNDING_CANDIDATE"
     else:
         grade, klass = "NONE", "NO_BEARING"
-    registers_price = any(needle in text
+    # match on the whitespace-normalized form: these sentences wrap across
+    # source lines, so a raw substring test silently never fires.
+    registers_price = any(norm(needle) in norm(text)
                           for needle in RUBRIC["price_registration_needles"])
     if grade == "EXACT":
         reason = (
@@ -2386,8 +2388,15 @@ def h2_certificate(sweeps) -> dict:
             and r["E1_subject_markers"]][:10],
         "price_registration_sentences": [
             {"document": r["document"],
-             "byte_quoted_sentence": r["byte_quoted_sentence"]}
+             "byte_quoted_sentence": r["byte_quoted_sentence"],
+             "grade": r["grade"], "class": r["class"],
+             "why_it_matters": (
+                 "this sentence does not GROUND multiplicity-freeness -- it "
+                 "states the framework's own rule for what happens to a "
+                 "property the supplied structure does not fix, which is "
+                 "exactly the disposition this cycle's verdict triggers")}
             for r in price_rows],
+        "price_registration_sentences_found": len(price_rows),
         "every_sentence_graded": every_graded,
         "both_rubric_variants_were_computed":
             all("grade_under_v1_permissive" in r for r in all_rows),

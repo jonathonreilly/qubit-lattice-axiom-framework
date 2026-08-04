@@ -2342,6 +2342,7 @@
    "ORBIT_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": false,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      1,
      1
@@ -2362,12 +2363,19 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": false,
     "multiplicity_free_at_this_scope": true,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": true,
     "v2_datum_under_at_least_one_reading_at_this_scope": false
    },
    "SHELL_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": false,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      3,
      3
@@ -2392,6 +2400,12 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": false,
     "multiplicity_free_at_this_scope": false,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": false,
     "v2_datum_under_at_least_one_reading_at_this_scope": false
    },
@@ -2404,6 +2418,7 @@
    "ORBIT_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": false,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      1,
      1
@@ -2424,12 +2439,19 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": false,
     "multiplicity_free_at_this_scope": true,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": true,
     "v2_datum_under_at_least_one_reading_at_this_scope": false
    },
    "SHELL_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": false,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      4,
      2
@@ -2454,6 +2476,12 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": false,
     "multiplicity_free_at_this_scope": false,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": false,
     "v2_datum_under_at_least_one_reading_at_this_scope": true
    },
@@ -2466,6 +2494,7 @@
    "ORBIT_SCOPE": {
     "BOTH_at_this_scope": true,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": true,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      1,
      2
@@ -2488,12 +2517,19 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": true,
     "multiplicity_free_at_this_scope": true,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": true,
     "v2_datum_under_at_least_one_reading_at_this_scope": true
    },
    "SHELL_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": true,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": true,
     "coarse_pair": [
      2,
      4
@@ -2519,6 +2555,12 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": true,
     "multiplicity_free_at_this_scope": false,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": false,
     "v2_datum_under_at_least_one_reading_at_this_scope": true
    },
@@ -2531,6 +2573,7 @@
    "ORBIT_SCOPE": {
     "BOTH_at_this_scope": true,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": true,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      1,
      3
@@ -2554,12 +2597,19 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": true,
     "multiplicity_free_at_this_scope": true,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": true,
     "v2_datum_under_at_least_one_reading_at_this_scope": true
    },
    "SHELL_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": true,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      3,
      3
@@ -2585,6 +2635,12 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": true,
     "multiplicity_free_at_this_scope": false,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": false,
     "v2_datum_under_at_least_one_reading_at_this_scope": true
    },
@@ -2597,6 +2653,7 @@
    "ORBIT_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": true,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      1,
      5
@@ -2622,12 +2679,19 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": true,
     "multiplicity_free_at_this_scope": false,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": false,
     "v2_datum_under_at_least_one_reading_at_this_scope": true
    },
    "SHELL_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": true,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      1,
      5
@@ -2653,6 +2717,12 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": true,
     "multiplicity_free_at_this_scope": false,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": false,
     "v2_datum_under_at_least_one_reading_at_this_scope": true
    },
@@ -2665,6 +2735,7 @@
    "ORBIT_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": false,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": false,
     "coarse_pair": [
      1,
      3
@@ -2687,12 +2758,19 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": false,
     "multiplicity_free_at_this_scope": true,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": true,
     "v2_datum_under_at_least_one_reading_at_this_scope": false
    },
    "SHELL_SCOPE": {
     "BOTH_at_this_scope": false,
     "any_fine_dimension_supplies_a_v2_equals_1_datum": false,
+    "coarse_invariant_part_supplies_a_v2_equals_1_datum": true,
     "coarse_pair": [
      2,
      4
@@ -2717,12 +2795,18 @@
     ],
     "fine_top_reading_supplies_a_v2_equals_1_datum": false,
     "multiplicity_free_at_this_scope": false,
+    "readings_computed_at_this_scope": [
+     "coarse_complement",
+     "coarse_invariant_part",
+     "fine_top",
+     "fine_any"
+    ],
     "realization_forced_at_this_scope": false,
-    "v2_datum_under_at_least_one_reading_at_this_scope": false
+    "v2_datum_under_at_least_one_reading_at_this_scope": true
    },
    "class": "V_edge",
    "in_T3_orbit_scope_only": false,
-   "in_T3_scope_MISMATCHED_loosest": false,
+   "in_T3_scope_MISMATCHED_loosest": true,
    "in_T3_scope_coherent": false
   }
  ],
@@ -4335,9 +4419,10 @@
  "T3_SUBSET_scope_mismatched_loosest": [
   "C2_face",
   "C3_body",
-  "C4_face"
+  "C4_face",
+  "V_edge"
  ],
- "T3_answer": "menu ['C2_edge', 'C2_face', 'C3_body', 'C4_face', 'S3_body', 'V_edge']; T3 subset (orbit scope) ['C3_body', 'C4_face']; T3 subset (scope-coherent) ['C3_body', 'C4_face']; T3 subset under the loosened scope-MISMATCHED reading ['C2_face', 'C3_body', 'C4_face']; off-menu classes that would qualify if realizability were dropped ['A4_tetrahedral', 'O_full'].",
+ "T3_answer": "menu ['C2_edge', 'C2_face', 'C3_body', 'C4_face', 'S3_body', 'V_edge']; T3 subset (orbit scope) ['C3_body', 'C4_face']; T3 subset (scope-coherent) ['C3_body', 'C4_face']; T3 subset under the loosened scope-MISMATCHED reading ['C2_face', 'C3_body', 'C4_face', 'V_edge']; off-menu classes that would qualify if realizability were dropped ['A4_tetrahedral', 'O_full'].",
  "T3_off_menu_counterfactual": [
   "A4_tetrahedral",
   "O_full"
@@ -4390,9 +4475,9 @@
    "statement": "T2. Multiplicity-freeness AT THE SCOPE implies the SL1-type pair is forced: the subspace realizing the top rational irreducible is unique, so the pair carries no free parameter. Verified at every class with a free shell orbit; the three named witnesses are C3 and C4 (forced) and S3 (not forced)."
   },
   "I_T3_THE_LADDER_SUBSET": {
-   "finding": "menu ['C2_edge', 'C2_face', 'C3_body', 'C4_face', 'S3_body', 'V_edge']; T3 subset (orbit scope) ['C3_body', 'C4_face']; T3 subset (scope-coherent) ['C3_body', 'C4_face']; T3 subset under the loosened scope-MISMATCHED reading ['C2_face', 'C3_body', 'C4_face']; off-menu classes that would qualify if realizability were dropped ['A4_tetrahedral', 'O_full'].",
+   "finding": "menu ['C2_edge', 'C2_face', 'C3_body', 'C4_face', 'S3_body', 'V_edge']; T3 subset (orbit scope) ['C3_body', 'C4_face']; T3 subset (scope-coherent) ['C3_body', 'C4_face']; T3 subset under the loosened scope-MISMATCHED reading ['C2_face', 'C3_body', 'C4_face', 'V_edge']; off-menu classes that would qualify if realizability were dropped ['A4_tetrahedral', 'O_full'].",
    "pass": true,
-   "statement": "T3, THE LADDER SHARPENING. On the RECOMPUTED honest scope menu, the exact subset on which BOTH a v_2 = 1 datum exists under at least one reading AND the realization is forced. Computed four ways so nothing sneaks in under a skipped reading: at the orbit scope alone; scope-coherently (datum and forcedness at the SAME readout space, either scope); under the deliberately loosened scope-MISMATCHED reading (datum at any scope, forcedness at the orbit scope); and as an OFF-MENU counterfactual that shows what the realizability rule is doing."
+   "statement": "T3, THE LADDER SHARPENING. On the RECOMPUTED honest scope menu, the exact subset on which BOTH a v_2 = 1 datum exists under at least one reading AND the realization is forced. Computed four ways so nothing sneaks in under a skipped reading: at the orbit scope alone; scope-coherently (datum and forcedness at the SAME readout space, either scope); under the deliberately loosened scope-MISMATCHED reading (datum at any scope, forcedness at the orbit scope); and as an OFF-MENU counterfactual that shows what the realizability rule is doing. FOUR readings are computed at each scope -- the coarse complement, the coarse INVARIANT part, the fine top dimension and ANY fine dimension -- the second of which was added after the Cycle-890 checker's FIND-1 showed its omission undercounted the loosened subset by one class (V_edge)."
   },
   "J_H2_SENTENCE_SWEEP": {
    "finding": "355 sentences swept across 4 pinned documents; strict distribution {'EXACT': 0, 'PARTIAL': 19, 'NONE': 336} (ceiling PARTIAL); permissive distribution {'EXACT': 4, 'PARTIAL': 15, 'NONE': 336} (ceiling EXACT); 4 sentences graded differently by the two variants and adjudicated in the open; 42 sentences name the property or its level only to place it downstream/conditional/outside axiom content.",
@@ -4425,7 +4510,7 @@
  "consequence": "multiplicity-freeness is the ladder's TERMINAL SUPPLIED CLAUSE. The owner-surface registration is ONE clause -- 'the readout scope is multiplicity-free' -- with the T3 subset as its computed consequence set: ['C3_body', 'C4_face'].",
  "cycle": 890,
  "deterministic_double_build": true,
- "elapsed_sec_at_summary": 1.632,
+ "elapsed_sec_at_summary": 1.626,
  "next_attackable_question": "The clause is now single and named. Either register 'the readout scope is multiplicity-free' on the owner surface with ['C3_body', 'C4_face'] as its computed consequence set, or attack the remaining separation inside that set: C3 and C4 both survive T3, so a second clause is still needed to choose between them, and the orbit-scope coarse reading is the only one that separates them (C3 carries the v_2 = 1 datum coarsely, C4 only finely).",
  "one_clause_registration_text": "the readout scope is multiplicity-free",
  "question": "Cycle 888 proved SL1's 'no free parameter' IS multiplicity-freeness of the readout representation and named FIND-5: is that property quotable from any axiom sentence? Price it -- prove the equivalence over the full 30-subgroup census, compute the exact scope subset it selects, and sweep every sentence of the axiom memo and the lineage's notes for a grounding.",
@@ -4433,7 +4518,7 @@
  "sharpest_new_facts": [
   "T1 holds without exception on every realized class x scope row of the full census, with canonicity and multiplicity-freeness computed by non-communicating routes.",
   "At the SHELL scope exactly two classes are multiplicity-free -- A4_tetrahedral and O_full -- and NEITHER has a free orbit, so neither realizes the Cycle-883 readout at all.",
-  "The honest-menu T3 subset is scope-coherent and stable: ['C3_body', 'C4_face']. Loosening to a scope-MISMATCHED reading admits ['C2_face'], which is why the datum and the forcedness must be read at the same readout space.",
+  "The honest-menu T3 subset is scope-coherent and stable: ['C3_body', 'C4_face']. Loosening to a scope-MISMATCHED reading admits ['C2_face', 'V_edge'], which is why the datum and the forcedness must be read at the same readout space.",
   "Dropping the realizability rule would admit ['A4_tetrahedral', 'O_full'], so the free-orbit requirement is load-bearing for the endpoint.",
   "The H2 sweep covers 355 sentences with a byte-exact reconstruction proof of completeness; grade ceiling PARTIAL; 42 sentences name the property or its level only to place it downstream.",
   "The only sentence anywhere in the four documents that a permissive reading can push to EXACT is a HISTORICAL sentence about the SUPERSEDED 2026-06-05 memo whose own content makes the readout context a SUPPLIED input -- quoted and adjudicated in full. That is how thin any quotable reading has to be."

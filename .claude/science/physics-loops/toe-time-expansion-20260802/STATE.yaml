@@ -72,6 +72,13 @@ worktrees:
     determined window can be barrier-disjoint (theorem under declared REQ4,
     scope caveat noted); named next doors: a k=0 minimality principle,
     GBW1b (joint with kernel block)
+  c5-g11: G11 (Cycle 886, SL0 — derive or price the C3 orbit scope;
+    subgroup census of O_h+ with isotype signatures + axiom-grounded
+    selector filters; based on G10 tip 71c38480db) — running
+  c5-g12: G12 (Cycle 887, window-extent freedom — size the true surviving
+    map space beyond the dilation family (Minkowski structure theorem +
+    counterexample hunt) and test axiom-grounded selection of k=0; based
+    on G10 tip 71c38480db) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

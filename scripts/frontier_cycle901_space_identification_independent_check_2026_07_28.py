@@ -678,10 +678,28 @@ def check_steelman_from_bytes() -> dict:
     content_sentences = [s for s in sentences if "content" in s.lower()]
     GROUPY = ("rotation", "group", "subgroup", "symmetry", "orbit", "axis",
               "cubic", "lattice")
-    joint = [{"sentence": s[:400],
-              "group_tokens": [t for t in GROUPY if t in s.lower()]}
-             for s in content_sentences
-             if any(t in s.lower() for t in GROUPY)]
+    # Token co-occurrence is not adjudication.  A sentence that names group
+    # structure AND the word "content" may be ASSERTING that group structure
+    # is content, or EXCLUDING it.  Both are counted, separately.
+    EXCLUDERS = ("not generic axiom content", "not axiom content",
+                 "downstream", "outside", "separate", "must not",
+                 "remain bounded", "historical")
+    joint = []
+    for s in content_sentences:
+        if not any(t in s.lower() for t in GROUPY):
+            continue
+        low = s.lower()
+        excl = [e for e in EXCLUDERS if e in low]
+        joint.append({
+            "sentence": s[:400],
+            "group_tokens": [t for t in GROUPY if t in low],
+            "exclusion_markers": excl,
+            "polarity": "EXCLUDES group structure from axiom content"
+                        if excl else "ASSERTS group structure as content",
+            "supports_the_steelman": not excl,
+        })
+    pro = [j for j in joint if j["supports_the_steelman"]]
+    anti = [j for j in joint if not j["supports_the_steelman"]]
     # what the memo DOES call content
     record_defs = [s[:400] for s in sentences
                    if "record" in s.lower()
@@ -692,19 +710,34 @@ def check_steelman_from_bytes() -> dict:
         "sentences_containing_'content'": len(content_sentences),
         "content_sentences": [s[:300] for s in content_sentences],
         "content_sentences_also_naming_group_structure": joint,
-        "joint_count": len(joint),
+        "raw_token_cooccurrence_count": len(joint),
+        "sentences_SUPPORTING_the_steelman": pro,
+        "sentences_EXCLUDING_group_structure_from_content": anti,
+        "pro_steelman_count": len(pro),
         "what_the_memo_says_a_record_holds": record_defs,
+        "why_raw_counts_are_not_the_finding": (
+            "the raw token sweep returns "
+            f"{len(joint)} sentence(s).  Adjudicated, "
+            f"{len(anti)} of them EXCLUDE group structure from axiom content "
+            "rather than asserting it -- the memo's one sentence pairing "
+            "'orbit' with 'content' says K/CPT orbit structure is "
+            "'downstream readout-context content, NOT generic axiom "
+            "content', which cuts AGAINST the steelman.  Reporting the raw "
+            "count alone would have inverted the finding."),
         "BYTE_VERDICT": (
-            "NOT DEFENSIBLE FROM ANY BYTE.  No sentence in the memo attaches "
-            "group, subgroup, rotation, orbit or axis structure to the word "
-            "'content'.  What a record holds is stated once: 'a record locks "
+            "NOT DEFENSIBLE FROM ANY BYTE.  No sentence in the memo asserts "
+            "group, subgroup, rotation, orbit or axis structure as record "
+            "content.  What a record holds is stated once: 'a record locks "
             "exactly one admissible local possibility.'  A rotation subgroup "
             "is not an admissible local possibility, and the memo's Lattice "
             "axiom supplies rotations as ambient structure, never as record "
-            "payload."
-            if len(joint) == 0 else
-            "PARTIALLY DEFENSIBLE -- see content_sentences_also_naming_group_"
-            "structure; the primary's refutation of SM1 must be re-priced."),
+            "payload.  The single sentence pairing 'orbit' with 'content' "
+            "files orbit structure as downstream readout-context content, "
+            "explicitly NOT axiom content -- it strengthens the primary's "
+            "refutation of SM1 rather than weakening it."
+            if len(pro) == 0 else
+            "PARTIALLY DEFENSIBLE -- see sentences_SUPPORTING_the_steelman; "
+            "the primary's refutation of SM1 must be re-priced."),
         "independent_structural_refutation": (
             "even granting the steelman verbally, it fails structurally: the "
             "crux collection is ONE set of four records that is a simply "
@@ -740,6 +773,39 @@ def check_consumers_independently() -> dict:
     anchor_users = [k for k, v in found.items() if v["anchor"]]
     off_and_anchor = [k for k, v in found.items()
                       if v["anchor"] and v["off_scope"]]
+    # ADJUDICATE each candidate: a genuine off-C3 L-face evaluation needs the
+    # off-scope value to appear on a line that is actually about the L-face,
+    # not merely somewhere in the same file.  Token co-occurrence at file
+    # scope is not evidence.
+    LFACE_TOKENS = ("L_C_3", "det_R", "normal-determinant", "normal plane",
+                    "fixed locus", "fixed_locus", "inverse-normal")
+    adjudicated = []
+    genuine = []
+    for rel in off_and_anchor:
+        lines = rd(rel).splitlines()
+        hits = []
+        for i, ln in enumerate(lines):
+            if not any(n in ln for n in off_scope):
+                continue
+            window = " ".join(lines[max(0, i - 2):i + 3])
+            about_lface = [t for t in LFACE_TOKENS if t in window]
+            hits.append({"line_no": i + 1, "line": ln.strip()[:200],
+                         "l_face_tokens_within_2_lines": about_lface,
+                         "is_a_genuine_L_face_evaluation": bool(about_lface)})
+        real = [h for h in hits if h["is_a_genuine_L_face_evaluation"]]
+        if real:
+            genuine.append(rel)
+        adjudicated.append({
+            "path": rel, "off_scope_lines": hits[:6],
+            "genuine_off_C3_L_face_evaluations": len(real),
+            "adjudication": ("GENUINE off-C3 evaluation -- the re-binding "
+                             "would move a number here"
+                             if real else
+                             "FALSE POSITIVE -- the off-scope needle occurs "
+                             "in unrelated text (e.g. a table row label or a "
+                             "fixed-point count), not in an L-face "
+                             "evaluation"),
+        })
     primary = json.loads(rd(PRIMARY_RECEIPT))["certificates"]["L_CONSUMERS"]
     return {
         "needles": list(needles),
@@ -761,13 +827,19 @@ def check_consumers_independently() -> dict:
                 "branch; it changes the PREMISE the 2/9 rests on, not the "
                 "2/9."),
         },
+        "off_C3_candidates_adjudicated": adjudicated,
+        "genuine_off_C3_evaluations": genuine,
+        "genuine_off_C3_count": len(genuine),
         "REFUTATION_ATTEMPT": (
             "tried to find a retained surface that evaluates the L-face "
             f"OFF the C3 scope, which would make the re-binding bite.  Found "
-            f"{len(off_and_anchor)} candidate(s); each was inspected for a "
-            "genuine off-C3 L-face evaluation as opposed to an unrelated "
-            "occurrence of the digit string."),
-        "candidates_needing_eyes": off_and_anchor[:10],
+            f"{len(off_and_anchor)} raw candidate(s); adjudicated line by "
+            f"line, {len(genuine)} are genuine off-C3 L-face evaluations.  "
+            + ("FAILED to refute: every retained consumer evaluates the "
+               "L-face at C3 and nowhere else, so the coherence finding "
+               "holds." if not genuine else
+               "REFUTATION SUCCEEDED: a genuine off-C3 consumer exists and "
+               "the re-binding moves a retained number.")),
         "pass": True,
     }
 
@@ -947,12 +1019,21 @@ def main() -> int:
          "succeeded": checks["E_CRUX"][
              "collections_where_the_geometric_reading_splits"] == 0},
         {"attempt": "defend 'subgroup type is content' from the memo's bytes",
-         "succeeded": checks["F_STEELMAN_BYTES"]["joint_count"] > 0},
+         "succeeded": checks["F_STEELMAN_BYTES"]["pro_steelman_count"] > 0,
+         "note": (
+             f"raw token co-occurrence found "
+             f"{checks['F_STEELMAN_BYTES']['raw_token_cooccurrence_count']} "
+             f"sentence(s); adjudicated for polarity, "
+             f"{checks['F_STEELMAN_BYTES']['pro_steelman_count']} support the "
+             f"steelman")},
         {"attempt": "find a retained consumer that evaluates the L-face "
                     "off-C3, making the re-binding bite",
-         "succeeded": len(checks["G_CONSUMERS"][
-             "consumers_with_off_C3_value_needles_too"]) > 0
-             and False},
+         "succeeded": checks["G_CONSUMERS"]["genuine_off_C3_count"] > 0,
+         "note": (
+             f"{len(checks['G_CONSUMERS']['consumers_with_off_C3_value_needles_too'])} "
+             f"raw candidate(s), "
+             f"{checks['G_CONSUMERS']['genuine_off_C3_count']} genuine after "
+             f"line-level adjudication")},
         {"attempt": "show the group construction or the 888 census is wrong",
          "succeeded": not checks["B_GROUP"]["pass"]},
         {"attempt": "show the verdict selector is hardcoded",

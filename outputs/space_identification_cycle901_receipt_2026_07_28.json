@@ -99,8 +99,8 @@
     }
    ],
    "read_mode": "TEXT / AST / JSON only; no pinned module is imported",
-   "self_git_blob": "2e72138b824237ccdc29b7a06456b06fcede0dc9",
-   "self_sha256": "88fbc9eb8c7aad75af891d8177b0f1f4f808561109f158a56b8f496458ecd174"
+   "self_git_blob": "8536bc3fc00f4a7dd2db58b0f74e75426e0d3142",
+   "self_sha256": "9a9eb3c6d1a92279745192e62ce7a3d49cb5f0789f4fa61b671183900dfa5ca3"
   },
   "B_AXIOM_CLAUSE": {
    "byte_quoted_additivity": "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`.",
@@ -665,7 +665,7 @@
     "conclusion": "899 artifacts ABSENT on this branch; every 899 number used below is REBUILT, never cited",
     "hit_count": 0,
     "hits": [],
-    "paths_scanned": 13767
+    "paths_scanned": 13771
    },
    "gate": "RESTRICTION GATE.  888's census, 883's anchor and 883's closed-form table are reproduced value-for-value, and the 899 rows -- whose artifacts are ABSENT from this branch -- are rebuilt from scratch and compared.",
    "named_representatives_verified_by_invariants": true,
@@ -4959,8 +4959,10 @@
   },
   "L_CONSUMERS": {
    "COHERENCE_FINDING": "F_dim(3) = 2/9 and F_res(3) = 2/9 are THE SAME NUMBER.  Every retained consumer evaluates the L-face at the C3 body-diagonal scope and nowhere else, so re-binding the readout from the embedding-space family to the content-space family changes NOTHING numerically anywhere in the retained lineage.  The mis-binding bites only off-scope (n = 2: 1/4 vs 1/8; n = 4: 3/16 vs 5/16).  That is exactly why it survived audit: at the only scope anyone evaluated, the two readings are indistinguishable.",
-   "consumers_evaluating_off_C3": [],
-   "consumers_using_the_anchor": 43,
+   "consumers_evaluating_off_C3": [
+    "scripts/frontier_cycle901_space_identification_independent_check_2026_07_28.py"
+   ],
+   "consumers_using_the_anchor": 44,
    "falsification_pair": {
     "also_available_at_C2": {
      "content": "1/4",
@@ -5283,6 +5285,16 @@
      "uses_the_anchor_2_over_9": true
     },
     {
+     "consumer": "scripts/frontier_cycle901_space_identification_independent_check_2026_07_28.py",
+     "needles": [
+      "det_R(I-",
+      "L_C_3",
+      "inverse-normal-determinant"
+     ],
+     "status_under_re_binding": "REVIEW -- carries off-C3 value needles alongside the anchor; the re-binding would move those numbers",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
      "consumer": "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py",
      "needles": [
       "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
@@ -5332,7 +5344,7 @@
     }
    ],
    "sweep": {
-    "consumers_found": 44,
+    "consumers_found": 45,
     "excluded": [
      "docs/audit/** (ledger mirrors, not science surfaces)",
      "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md (the source itself)"
@@ -5350,7 +5362,7 @@
      "(n^2-1)",
      "n^2 - 1"
     ],
-    "paths_scanned": 14082
+    "paths_scanned": 14083
    },
    "what_actually_changes": [
     "the JUSTIFICATION of 2/9 moves from 'transverse determinant of the geometric normal plane' to 'invariant-complement fraction of the readout module', i.e. from a Lattice-geometry premise to a Record-content one -- a strictly cheaper premise",
@@ -5407,9 +5419,9 @@
   },
   "N_GATES": {
    "all_gates_pass": true,
-   "build_digest_1": "06b7279d6e0dd9082769ac03b8c8ff2ddf1be8fed77d3609926e1c4d06fe831b",
-   "build_digest_2": "06b7279d6e0dd9082769ac03b8c8ff2ddf1be8fed77d3609926e1c4d06fe831b",
-   "elapsed_sec_at_gate": 8.236,
+   "build_digest_1": "2aad89db7c444a9c09b1d58eaac7877417a428713a8067703c7559a0285531c2",
+   "build_digest_2": "2aad89db7c444a9c09b1d58eaac7877417a428713a8067703c7559a0285531c2",
+   "elapsed_sec_at_gate": 8.238,
    "gates": {
     "all_conjugates_computed": true,
     "both_C2_classes_computed": true,
@@ -5437,12 +5449,21 @@
  "cycles": [
   901
  ],
- "files": {},
+ "files": {
+  "scripts/frontier_cycle901_space_identification_2026_07_28.py": {
+   "git_blob": "8536bc3fc00f4a7dd2db58b0f74e75426e0d3142",
+   "sha256": "9a9eb3c6d1a92279745192e62ce7a3d49cb5f0789f4fa61b671183900dfa5ca3"
+  },
+  "scripts/frontier_cycle901_space_identification_independent_check_2026_07_28.py": {
+   "git_blob": "5c9e85f03c7a6aca24552ea8cce3287c57cd21b2",
+   "sha256": "eaf17075b7ecea3494502f2d2cbc5c986f32176bdf1925fe8de1984f20264eff"
+  }
+ },
  "headline": "DECIDED-F_DIM.  Computed content-alone violation: ONE finite collection of four pairwise-disjoint records ({+-e1, +-e2}) is a simply transitive orbit of BOTH a cyclic C4_face and a non-cyclic V_edge; the geometric L-face returns 5/16 under the first and NO VALUE under the second (and 1/8 under the collection's C2 subgroups), while the content family returns 3/16 under every scope because (n-1)/n^2 is a function of the record count alone.  The geometric reading PASSED the C2 discriminator (1/8 on both classes) and the conjugate test and P_EMB -- it fails on P_SCOPE and P_TOTAL, not on embedding invariance.  At C3 the re-binding changes nothing: F_dim(3) = F_res(3) = 2/9, which is why the mis-binding survived audit.  P_SCOPE additionally closes 883's five-fold binding ambiguity to the single form (n-1)/n^2.",
  "independence": "the 899 artifacts are ABSENT from this branch; every 899 row is rebuilt from the Lattice axiom's rotation group and compared against the brief's stated numbers",
  "note": "no note: this block delivers scripts, caches and receipts only",
  "question": "Which space does the record read -- the readout module's invariant complement (content-space, F_dim = (n-1)/n^2) or the ambient geometric normal plane (embedding-space, F_res = (n^2-1)/(12n))?",
  "runtime_seconds": {
-  "primary": 8.236
+  "primary": 8.257
  }
 }

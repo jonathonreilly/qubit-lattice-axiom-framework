@@ -2101,7 +2101,14 @@ def main() -> int:
             "audit.  P_SCOPE additionally closes 883's five-fold binding "
             "ambiguity to the single form (n-1)/n^2."),
         "certificates": certs,
-        "files": {},
+        "files": {
+            rel: {"sha256": hashlib.sha256(_read_bytes(rel)).hexdigest(),
+                  "git_blob": git_blob(rel)}
+            for rel in (SELF_REL,
+                        "scripts/frontier_cycle901_space_identification_"
+                        "independent_check_2026_07_28.py")
+            if (ROOT / rel).is_file()
+        },
         "runtime_seconds": {"primary": round(time.time() - START, 3)},
         "independence": (
             "the 899 artifacts are ABSENT from this branch; every 899 row is "

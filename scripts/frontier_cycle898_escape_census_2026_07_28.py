@@ -121,11 +121,11 @@ ADDITIVITY_SENTENCE = (
 CONTENT_ALONE_SENTENCE = (
     "A readout value is determined by record content\nalone."
 )
-ONE_RECORD_PER_SITE = "A site never carries more than one record"
+ONE_RECORD_PER_SITE = "A\nsite never carries more than one record"
 RECORD_LOCKS_ONE = "a record locks exactly one admissible local possibility"
 QUALIFICATION_CLAUSE = (
-    "A choice not fixed by the supplied structure remains a named conditional "
-    "or open dependency."
+    "A choice not fixed by the\nsupplied structure remains a named "
+    "conditional or open dependency."
 )
 LATTICE_ADJACENCY = "nearest-neighbor\nadjacency"
 PARAPHRASE_CLAUSE = "additivity over disjoint record collections"
@@ -1048,28 +1048,59 @@ def m4_enumeration() -> dict:
     values = list(range(-BOUND_DEFECT_VALUE, BOUND_DEFECT_VALUE + 1))
     family_size = len(values) ** n_free
 
-    # for every member, compute the induced constraint on alpha
+    # For every member, COMPUTE the induced constraint on alpha.  Nothing here
+    # is asserted: the solution set is solved for from the configuration
+    # equations, and the target's membership is tested against the answer.
+    #
+    #   configuration = a chain of n unit-content records along +x, which has
+    #   n records and n-1 adjacency interfaces, so
+    #       T_n(alpha) = n*alpha + (n-1)*D(1,1).
+    #   Purchase reading 1 says T_n(alpha) is in Z for every n in the declared
+    #   range.  Writing alpha = p/q in lowest terms, and noting every offset
+    #   (n-1)*D(1,1) is an integer because D is Z-valued, the condition is
+    #   q | n for every n in the range, i.e. q | gcd(range).
+    def _gcd(a: int, b: int) -> int:
+        while b:
+            a, b = b, a % b
+        return abs(a)
+
     chain_lengths = list(range(1, BOUND_CHAIN_LENGTH + 1))
+    allowed_denominator = 0
+    for n in chain_lengths:
+        allowed_denominator = _gcd(allowed_denominator, n)
     induced = {}
     members_examined = 0
+    offsets_all_integral = True
+    target_admitted_members = 0
+    probe_alphas = (TARGET_ALPHA, Fraction(1, 3), Fraction(1), Fraction(0),
+                    Fraction(2, 9), Fraction(1, 108))
+    probe_table = {q(a): 0 for a in probe_alphas}
     for assignment in product(values, repeat=n_free):
         members_examined += 1
         table = dict(zip(free_entries, assignment))
-        # chains of unit-content records along +x: n records, n-1 interfaces
         d11 = table[(1, 1)]
-        # the M4 purchase, reading 1: every finite configuration reads in Z.
-        # T_n = n*alpha + (n-1)*d11 in Z for every n in the declared range.
-        # n = 1 already forces alpha in Z, and every Z-valued defect is
-        # absorbed, so the induced set is Z for every family member.
-        constraints = [(n, d11 * (n - 1)) for n in chain_lengths]
-        # alpha must satisfy n*alpha + k_n in Z; since k_n in Z this is
-        # n*alpha in Z for all n, whose solution is alpha in Z (n=1 binds).
-        key = "Z"
+        offsets = [d11 * (n - 1) for n in chain_lengths]
+        if any(off != int(off) for off in offsets):
+            offsets_all_integral = False
+        # solve, do not assert: an alpha survives iff every T_n lands in Z
+        for a in probe_alphas:
+            if all((a * n + off).denominator == 1
+                   for n, off in zip(chain_lengths, offsets)):
+                probe_table[q(a)] += 1
+                if a == TARGET_ALPHA:
+                    target_admitted_members += 1
+        key = (f"(1/{allowed_denominator})Z" if allowed_denominator != 1
+               else "Z")
         induced[key] = induced.get(key, 0) + 1
-        del constraints
     induced_sets = induced
-    target_in_any = TARGET_ALPHA.denominator == 1
-    defect_contributes_denominator = False
+    target_in_any = target_admitted_members > 0
+    defect_contributes_denominator = allowed_denominator != 1
+    probe_survival = {
+        alpha: {"members_admitting": count,
+                "of_members": members_examined,
+                "survives_anywhere": count > 0}
+        for alpha, count in probe_table.items()
+    }
 
     # reading 2 of the purchase: configurations read in (1/M)Z for a purchased
     # modulus M.  A Z-valued defect lies in (1/M)Z already, so it changes the
@@ -1176,6 +1207,17 @@ def m4_enumeration() -> dict:
             "members_enumerated": members_examined,
             "exhaustive_within_bounds": members_examined == family_size,
             "induced_constraint_on_alpha_reading_1": induced_sets,
+            "induced_solution_set_solved_not_asserted": {
+                "allowed_denominator_gcd_of_chain_lengths":
+                    allowed_denominator,
+                "derivation": (
+                    "alpha = p/q in lowest terms survives iff q | n for every "
+                    "chain length n in the declared range, i.e. q | "
+                    f"gcd{tuple(chain_lengths)} = {allowed_denominator}"
+                ),
+                "all_defect_offsets_integral": offsets_all_integral,
+            },
+            "probe_alpha_survival": probe_survival,
             "induced_constraint_on_alpha_reading_2": reading2,
             "target_admitted_by_any_member": target_in_any,
             "defect_contributes_to_denominator":
@@ -1443,9 +1485,8 @@ def quadratic_normalization_solution_set(n_const: Fraction) -> dict:
     r = Fraction(1) / n_const
     wit = rational_square_witness(r)
     if wit["is_rational_square"]:
-        root = Fraction(wit["root"].split("/")[0],
-                        wit["root"].split("/")[1]) \
-            if "/" in wit["root"] else Fraction(wit["root"])
+        root = Fraction(wit["root"])
+        assert root * root == r, "rational square root failed to verify"
         return {"kind": "FINITE", "alpha_squared": q(r),
                 "solutions": [q(root), q(-root)],
                 "fixed_scale_over_Q": q(root),
@@ -2264,6 +2305,18 @@ def no_go_gate(adj, census, coverage) -> dict:
             "No axiom is added, no primitive is registered, no audit verdict "
             "is changed, and nothing here closes the R-eta obligation."
         ),
+        "finding": (
+            f"{len(routes)} routes carry a marker: "
+            f"{sum(1 for r in routes if r[2] == 'ATTEMPTED')} attacked here, "
+            f"{sum(1 for r in routes if r[2] == 'RULED-OUT-BY-PRIOR')} ruled "
+            f"out by pinned prior art, "
+            f"{sum(1 for r in routes if r[2] == 'NOT-ATTACKED')} declared "
+            f"open and not attacked. The steelman against the M4 adjudication "
+            f"is stated rather than rebutted, and answered on three "
+            f"independent grounds of which the third -- the target orbit has "
+            f"no adjacency interfaces -- is not an interpretive question at "
+            f"all."
+        ),
         "non_claims": [
             "this block does not close the readout obligation",
             "this block does not derive alpha = 2/27",
@@ -2379,7 +2432,9 @@ def render(certs: dict) -> str:
     rule = "-" * 78
     out = [bar, "CYCLE 898 -- THE M2 / M4 ESCAPE CENSUS", bar, ""]
     for label in LABELS:
-        cert = certs[label]
+        cert = certs.get(label)
+        if cert is None:      # M_CONTROLS is sealed after the transcript is
+            continue          # rendered; its verdict rides the trailer line
         out.append(f"[{'PASS' if cert['pass'] else 'FAIL'}] {label}")
         out.extend(wrap(cert.get("finding", "")))
         out.append("")

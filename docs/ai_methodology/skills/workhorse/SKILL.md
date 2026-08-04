@@ -22,21 +22,39 @@ Claude model is driving the conversation (e.g. Fable, or the strongest available
 Claude model at the time). It is not a separately pinned or named model; it
 follows the in-chat model.
 
-Two worker profiles are first-class (owner directive 2026-08-03, after the
-2026-08-03 campaign ran eleven Claude workers with zero failed deliveries and
-the checker lane refuting a supervisor-authored primary):
+Two worker profiles are first-class (owner directive 2026-08-03; the full
+2026-08 campaign window ran 20+ Claude workers across 23 shipped blocks with
+zero failed deliveries — the checker lane refuted a supervisor-authored
+primary, caught a verdict-flipping rubric defect in its own primary, and
+landed 3/3 pre-registered predictions on never-evaluated objects):
 
 - **Codex text-reasoning worker** — the local `codex exec` setup, preferred
   profile `gpt-5.6-sol` at `model_reasoning_effort=max` (owner directive
   2026-07-08; verify slug and effort live against the local install). Launch
   and reliability rules below.
 - **Claude worker** — a subagent of the host session (the Agent tool or
-  equivalent), running the strongest available Claude model at maximum
-  reasoning effort (farmed work runs at max — owner directive 2026-06-26;
-  subagents inherit the session's effort, so the session must be at max).
-  Launched as background workers, one per block, each in its own durable
-  worktree. The codex failure modes (stdin start-hang, context exhaustion
-  mid-delivery) do not apply; the bounded-read discipline still does.
+  equivalent), running the strongest available WORKER-TIER Claude model
+  (currently Opus 5 — the tier below the supervising frontier model) at
+  maximum reasoning effort (farmed work runs at max — owner directive
+  2026-06-26; subagents inherit the session's effort, so the session must
+  be at max). Launched as background workers, one per block, each in its
+  own durable worktree. The codex failure modes (stdin start-hang, context
+  exhaustion mid-delivery) do not apply; the bounded-read discipline still
+  does.
+
+  Worker-tier rationale (owner-ratified 2026-08-04): the frontier model is
+  NOT the default worker even though it is the strongest available Claude
+  model. The default split concentrates the frontier model where its
+  capability is load-bearing — spec judgment, line-by-line review, and
+  landing — and preserves the shared capacity pool across a long window
+  (parallel frontier workers would burn the window's budget on the lane
+  where discipline, not raw capability, carries robustness: the 2026-08
+  window shipped 23 blocks with zero failed worker deliveries, and every
+  defect that mattered was caught by the verification structure, including
+  two supervisor spec errors caught BY workers). The supervising agent MAY
+  escalate an individual block's worker or checker to the frontier model
+  when that block's difficulty warrants it; escalation is a profile fact
+  and is disclosed in the ship note like any other.
 
 Profile selection is the supervising agent's discretion, with one preference:
 when both lanes are available, pair them — primary from one family, checker

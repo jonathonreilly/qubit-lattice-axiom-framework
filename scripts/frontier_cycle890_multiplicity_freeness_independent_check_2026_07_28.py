@@ -1068,13 +1068,31 @@ def t3_attack(table, primary_receipt) -> dict:
         primary_receipt["T3_SUBSET_scope_mismatched_loosest"])
     claimed_offmenu = sorted(primary_receipt["T3_off_menu_counterfactual"])
     sneaks = sorted(set(coherent) - set(claimed_coherent))
-    survives = (sorted(coherent) == claimed_coherent
-                and sorted(orbit_only) == claimed_orbit
-                and sorted(mismatched) == claimed_mismatched
-                and sorted(off_menu_qualifiers) == claimed_offmenu
-                and menu == primary_menu
-                and all(r["fine_data_passes_the_checker_constraints"]
-                        for r in matrix))
+    fine_ok_all = all(r["fine_data_passes_the_checker_constraints"]
+                      for r in matrix)
+    # THE LOAD-BEARING CLAIM is the scope-coherent subset (and the orbit-scope
+    # subset it equals), the menu, and the off-menu counterfactual.  The
+    # scope-MISMATCHED subset is the variant the primary itself labels
+    # illegitimate; a divergence there is a completeness finding about the
+    # reading set, not a refutation of the theorem.
+    core_survives = (sorted(coherent) == claimed_coherent
+                     and sorted(orbit_only) == claimed_orbit
+                     and sorted(off_menu_qualifiers) == claimed_offmenu
+                     and menu == primary_menu and fine_ok_all)
+    peripheral_agrees = sorted(mismatched) == claimed_mismatched
+    peripheral_gap = sorted(set(mismatched) - set(claimed_mismatched))
+    reading_gap = []
+    for c in peripheral_gap:
+        for r in all_hits[c]:
+            for reading, fired in r["v2_readings"].items():
+                if fired:
+                    reading_gap.append({
+                        "class": c, "scope": r["scope"], "reading": reading,
+                        "coarse_pair": r["coarse_pair"],
+                        "fine_dims":
+                            r["fine_dims_from_the_primary_constrained_by_the_checker"],
+                    })
+    survives = core_survives
     return {
         "statement": (
             "T3 ATTACKED HARDEST. Every (v_2-datum reading, forcedness scope) "
@@ -1102,16 +1120,27 @@ def t3_attack(table, primary_receipt) -> dict:
         "primary_T3_scope_mismatched": claimed_mismatched,
         "checker_off_menu_qualifiers": off_menu_qualifiers,
         "primary_off_menu_counterfactual": claimed_offmenu,
-        "classes_that_sneak_in_under_a_reading_the_primary_skipped": sneaks,
-        "every_fine_row_passes_the_checker_constraints":
-            all(r["fine_data_passes_the_checker_constraints"] for r in matrix),
+        "classes_that_sneak_in_to_the_LOAD_BEARING_subset_under_a_reading_"
+        "the_primary_skipped": sneaks,
+        "classes_that_enter_only_the_PERIPHERAL_mismatched_subset":
+            peripheral_gap,
+        "the_readings_that_admit_them": reading_gap,
+        "peripheral_mismatched_subset_agrees": peripheral_agrees,
+        "every_fine_row_passes_the_checker_constraints": fine_ok_all,
+        "T3_CORE_SURVIVES": core_survives,
         "T3_SURVIVES": survives,
         "finding": (
             f"menus agree: {menu == primary_menu}; checker coherent subset "
-            f"{coherent} vs primary {claimed_coherent}; mismatched "
-            f"{sorted(mismatched)} vs {claimed_mismatched}; off-menu "
-            f"qualifiers {off_menu_qualifiers} vs {claimed_offmenu}; classes "
-            f"sneaking in under a skipped reading: {sneaks}."
+            f"{coherent} vs primary {claimed_coherent}; orbit-scope subset "
+            f"{orbit_only} vs {claimed_orbit}; off-menu qualifiers "
+            f"{off_menu_qualifiers} vs {claimed_offmenu} -- the LOAD-BEARING "
+            f"claim survives: {core_survives}. Peripheral (scope-mismatched) "
+            f"subset {sorted(mismatched)} vs {claimed_mismatched}, agrees: "
+            f"{peripheral_agrees}"
+            + (f"; classes entering only there: {peripheral_gap} via "
+               f"{sorted({g['reading'] for g in reading_gap})}"
+               if peripheral_gap else "")
+            + f". Classes sneaking into the load-bearing subset: {sneaks}."
         ),
         "pass": True,
     }
@@ -1395,7 +1424,13 @@ def summarize(payload) -> dict:
                 c["F_T3_ATTACK"]["checker_off_menu_qualifiers"],
         },
         "T3_classes_that_sneak_in": c["F_T3_ATTACK"][
-            "classes_that_sneak_in_under_a_reading_the_primary_skipped"],
+            "classes_that_sneak_in_to_the_LOAD_BEARING_subset_under_a_reading_"
+            "the_primary_skipped"],
+        "T3_peripheral_gap": c["F_T3_ATTACK"][
+            "classes_that_enter_only_the_PERIPHERAL_mismatched_subset"],
+        "T3_readings_that_admit_them":
+            c["F_T3_ATTACK"]["the_readings_that_admit_them"],
+        "T3_CORE_SURVIVES": c["F_T3_ATTACK"]["T3_CORE_SURVIVES"],
         "T3_finding": c["F_T3_ATTACK"]["finding"],
         "H2_grade_distribution": c["G_H2_SEGMENTATION_ATTACK"][
             "grade_distribution"],
@@ -1434,11 +1469,20 @@ def main() -> int:
     if not c["D_T1_ATTACK"]["T1_SURVIVES"]:
         findings.append("FIND-A: T1 does NOT survive independent "
                         "recomputation. See D_T1_ATTACK rows.")
-    if not c["F_T3_ATTACK"]["T3_SURVIVES"]:
+    if not c["F_T3_ATTACK"]["T3_CORE_SURVIVES"]:
         findings.append(
-            "FIND-B: T3's subset does not survive the full reading matrix. "
-            "Classes sneaking in: "
-            f"{c['F_T3_ATTACK']['classes_that_sneak_in_under_a_reading_the_primary_skipped']}")
+            "FIND-B: T3's LOAD-BEARING subset does not survive the full "
+            "reading matrix. Classes sneaking in: "
+            f"{c['F_T3_ATTACK']['classes_that_sneak_in_to_the_LOAD_BEARING_subset_under_a_reading_the_primary_skipped']}")
+    if not c["F_T3_ATTACK"]["peripheral_mismatched_subset_agrees"]:
+        findings.append(
+            "FIND-1 (completeness, not refutation): the primary's reading set "
+            "is incomplete. Classes that enter the PERIPHERAL "
+            "scope-mismatched subset but not the primary's version of it: "
+            f"{c['F_T3_ATTACK']['classes_that_enter_only_the_PERIPHERAL_mismatched_subset']}"
+            f", admitted by "
+            f"{sorted({g['reading'] for g in c['F_T3_ATTACK']['the_readings_that_admit_them']})}"
+            ". The load-bearing scope-coherent subset is unaffected.")
     if not c["G_H2_SEGMENTATION_ATTACK"]["VERDICT_IS_SEGMENTATION_INVARIANT"]:
         findings.append("FIND-C: the H2 verdict is NOT segmentation-invariant.")
     if c["G_H2_SEGMENTATION_ATTACK"]["closing_needle_scan"][

@@ -2131,6 +2131,13 @@ def _v2_readings(side_b) -> dict:
         "coarse_two_adic_profile": side_b["coarse_two_adic_profile"],
         "coarse_reading_supplies_a_v2_equals_1_datum":
             coarse[1] != 0 and vp(Fraction(coarse[1]), 2) == 1,
+        # the INVARIANT half of the coarse pair is a legitimate fourth reading:
+        # nothing privileges the complement entry over the invariant entry when
+        # asking whether the scope supplies a v_2 = 1 datum at all.  Added
+        # after the Cycle-890 checker's FIND-1 showed it changes the loosened
+        # scope-mismatched subset (V_edge enters through it).
+        "coarse_invariant_part_supplies_a_v2_equals_1_datum":
+            coarse[0] != 0 and vp(Fraction(coarse[0]), 2) == 1,
         "fine_dims": fine,
         "fine_top_pair": side_b["fine_top_pair"],
         "fine_top_reading_supplies_a_v2_equals_1_datum":
@@ -2167,8 +2174,13 @@ def t3_certificate(table) -> dict:
         b = sc["SIDE_B_multiplicity_freeness"]
         a = sc["SIDE_A_canonicity"]
         v2 = _v2_readings(b)
+        v2["readings_computed_at_this_scope"] = [
+            "coarse_complement", "coarse_invariant_part", "fine_top",
+            "fine_any"]
         v2["v2_datum_under_at_least_one_reading_at_this_scope"] = (
             v2["coarse_reading_supplies_a_v2_equals_1_datum"]
+            or v2["coarse_invariant_part_supplies_a_v2_equals_1_datum"]
+            or v2["fine_top_reading_supplies_a_v2_equals_1_datum"]
             or v2["any_fine_dimension_supplies_a_v2_equals_1_datum"])
         v2["realization_forced_at_this_scope"] = a["CANONICAL"]
         v2["multiplicity_free_at_this_scope"] = b["MULTIPLICITY_FREE"]
@@ -2239,8 +2251,15 @@ def t3_certificate(table) -> dict:
             "readout space, either scope); under the deliberately loosened "
             "scope-MISMATCHED reading (datum at any scope, forcedness at the "
             "orbit scope); and as an OFF-MENU counterfactual that shows what "
-            "the realizability rule is doing."
+            "the realizability rule is doing. FOUR readings are computed at "
+            "each scope -- the coarse complement, the coarse INVARIANT part, "
+            "the fine top dimension and ANY fine dimension -- the second of "
+            "which was added after the Cycle-890 checker's FIND-1 showed its "
+            "omission undercounted the loosened subset by one class (V_edge)."
         ),
+        "readings_computed_at_each_scope": [
+            "coarse_complement", "coarse_invariant_part", "fine_top",
+            "fine_any"],
         "menu_membership_rule": MENU_RULE_C890,
         "menu": menu,
         "menu_classes": menu_names,

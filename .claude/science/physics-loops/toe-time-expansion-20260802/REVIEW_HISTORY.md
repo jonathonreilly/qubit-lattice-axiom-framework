@@ -706,3 +706,22 @@ census module lives on the Q1 lineage, so the join runs Born-ward).
   (zero-mass commitment), BL4 (dynamics).
 - Cluster-cap (5th Q-family PR): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 910 shape discharge (blockQ7, PR #5972) — 2026-08-04
+
+- Supervisor review: the byte-level key-space identity, the
+  world-for-world ledger equality, and the window thresholds verified
+  in the receipt; the equivariant-ambiguity attack (the checker's
+  crown — equivariance alone would alias the orbits; the empirical
+  world-label check closes it) adopted into the primary; the
+  ledger renumbering (worker's BL10 -> BL12) applied at ship.
+- Checker: reversed-bit-layout from-scratch rebuild; zero
+  disagreements; 8/8 teeth.
+- NEW AUDIT FLAG (against the 856 lineage, from its own data): the
+  three-absolute-orbit count is horizon-critical by one boundary.
+- BORN LEDGER after 910: P-856-SHAPE CLOSED (identified); M6's
+  support now carries 856's full absoluteness credential; every
+  M6/M7/M8 statement horizon-indexed; BL12 open (blocked on the next
+  horizon choice); LIVE: BL9/BL10 (Cycle 909 in flight), BL6, BL4.
+- Cluster-cap (6th Q-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).

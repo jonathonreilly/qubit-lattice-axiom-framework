@@ -121,6 +121,10 @@ worktrees:
     terminal clause registered for the owner surface: 'the readout scope
     is multiplicity-free', consequence set {C3, C4}; one verdict-flipping
     rubric defect found and fixed in the open
+  c5-t5: T5 (Cycle 891, the even-complement mechanism derived 881-style
+    with a declared B=4/5-derive, B=6/7-holdout split + the non-two-run
+    dirt anatomy at B=7 with a k-run law attempt; stacked on T4 tip
+    2d3f825736) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

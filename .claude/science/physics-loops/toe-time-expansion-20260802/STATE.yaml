@@ -91,6 +91,11 @@ worktrees:
     gauge); minimality ABSENT from pinned texts; residual = no-interaction
     convention + structuring set + centre convention, re-addressed to the
     owner surface
+  c5-g13: G13 (Cycle 888, S3 scope pricing + scope-insensitivity test over
+    the full 30-subgroup lattice; stacked on G11 tip 5fcaa4fe04) — running
+  c5-t4: T4 (Cycle 889, DELTA-spectrum conjecture census at B=5/6/7 +
+    long-horizon alignment-contingency retirement at B=3/5; stacked on T3
+    tip 3177c9fbd5) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

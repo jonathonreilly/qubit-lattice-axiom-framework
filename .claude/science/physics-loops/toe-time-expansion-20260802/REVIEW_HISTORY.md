@@ -346,3 +346,22 @@ bridge scalar; (6) theta-incidence barrier question (small, from
 Registered-convention rows (scope clause, window conventions) are
 CLOSED as science pending owner registration — no derivation work
 remains on them.
+
+## Cycle 896 audit reconciliation (blockG19, PR #5956) — 2026-08-04
+
+- Both flags closed by computation; supervisor review of the clause
+  accounting and the conversion dictionary; the counter-hypothesis
+  test (readout-alone = 2) and the two-directional coordinate audit
+  verified in the receipt.
+- Checker: 0/20 refuted, 3 narrowed and folded back; discharge rows
+  audited against source receipts' own classification fields (all
+  supported); 8/8 teeth.
+- SUPERVISOR SUMMARY ERROR corrected (third of the campaign): the
+  pack's G12 line credited 887 with the extent discharge; 887's own
+  receipt is a widening NO-GO — the pricing belongs to 892. STATE
+  entry amended in this push. Pattern note: summary lines must be
+  written against the source receipt's classification field, not the
+  narrative arc.
+- Cluster-cap (18th gravity-family PR): **OPEN** — two flag closures
+  + the current-residual number + the attribution correction.
+- Local disposition: **pass** (bounded_theorem; audit pending).

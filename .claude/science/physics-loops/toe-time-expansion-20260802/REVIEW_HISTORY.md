@@ -226,3 +226,25 @@
 - Cluster-cap (13th gravity-family PR): **OPEN** — completeness-gate
   closure + transfer theorem + menu dissolution + parent corrections.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 889 DELTA spectrum (blockT4, PR #5948) — 2026-08-04
+
+- Supervisor review: alignment-law verification code read (exact
+  identity check, predicted-vs-measured on synthetic ideal words,
+  mismatches recorded, admissibility table computed); census gates and
+  the 881-reproduction control verified; detector controls incl.
+  falsifier-visibility (planted P=23) confirm the falsification is not
+  a blind-spot artifact.
+- The falsifier FIRED — the campaign's first outright conjecture
+  falsification, landed as spec'd (881 stated the falsifier; 889 ran
+  it; the report suppresses nothing). 881's theorem stands; its
+  conjecture dies; the law replaces it.
+- Checker: independent algorithm (backward scan + KMP), full B=5
+  agreement to the unit, declared 25% spot-verification at B=6/7,
+  2P+1 bound attacked and confirmed, 7/7 teeth;
+  findings_the_primary_did_not_report EMPTY — first block this
+  campaign where the checker added nothing.
+- Cluster-cap (4th T-family PR): **OPEN** — conjecture closure by
+  falsification + exact replacement law + two corollaries +
+  contingency adjudication + parent-tail repricing.
+- Local disposition: **pass** (bounded_theorem; audit pending).

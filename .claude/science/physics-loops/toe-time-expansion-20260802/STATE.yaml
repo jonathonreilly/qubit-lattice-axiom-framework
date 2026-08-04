@@ -101,9 +101,16 @@ worktrees:
     SL1's no-free-parameter IS multiplicity-freeness; scope-insensitivity
     MIXED (load-bearing, readings disagree); FIND-5 named next door: is
     multiplicity-freeness quotable?
-  c5-t4: T4 (Cycle 889, DELTA-spectrum conjecture census at B=5/6/7 +
-    long-horizon alignment-contingency retirement at B=3/5; stacked on T3
-    tip 3177c9fbd5) — running
+  c5-t4: blockT4 SHIPPED as PR #5948 — Cycle 889 DELTA-spectrum conjecture
+    FALSIFIED as stated (non-DELTA periods, horizon-closed witnesses at
+    every tier; falsifier-visibility control = no blind spot; 881's relay
+    theorem untouched); REPLACED by the exact alignment law I_max =
+    max(G-sigma, N-G-sigma) + 2P+1 stretch bound (3,860 cells incl. 1,200
+    out-of-family); corollaries: some DELTA members never align, DELTA=3
+    never fires (8-event floor), even complement family 8(e+1) all
+    observed — true spectrum strictly larger; B=5 contingency RETIRED,
+    B=3 NOT (A2, not alignment); tails repriced as horizon artifacts
+    (episode instrument supersedes); open: non-two-run dirt at B=7
   c5-g14: G14 (Cycle 890, multiplicity-freeness priced — the theorem half
     (canonicity IFF multiplicity-free over the full census; the T3 menu
     subset) + the FIND-5 sweep (is it quotable? full-memo fidelity grading);

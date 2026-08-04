@@ -1,0 +1,632 @@
+{
+ "R0_pins": {
+  "blocked_modules_loaded": [],
+  "check": "R0_PINS_AND_LEAKS",
+  "firewall_hits": [],
+  "git_blobs": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "4a863da1f3f255354839277271a3a69a5c205133",
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md": "f819f5b31d442248fac255fcdf3b0139d6ba83f8",
+   "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": "7094c986dc0560e8982507d8cc379f5c720b639f",
+   "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "392cba199a75a14a8bb88808943c1259cbd7a94b",
+   "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py": "fc873d0b1947866b238bbe5456ffe89fcd072a21",
+   "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+   "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+   "scripts/frontier_cycle906_covariance_tension_2026_07_28.py": "d7577bb2ac9f4cb7ee9d8abc5f19e9c7cf888df9",
+   "scripts/frontier_cycle908_intertwine_discharge_2026_07_28.py": "a32762df147312b150eee84b5311efa2476af677"
+  },
+  "git_blobs_all_match": true,
+  "leak_needle_rule": "every needle is read out of the primary's receipt at run time; none is a literal in this file, so the audit cannot pass by construction",
+  "leak_needles_checked": [
+   "primary_BL7_verdict",
+   "primary_VERDICT",
+   "primary_discharge_status",
+   "primary_phase0_event_space_digest",
+   "primary_science_digest"
+  ],
+  "leak_tokens_found": [],
+  "pass": true,
+  "primary_receipt_present": true,
+  "primary_receipt_sha256": "825ebf6866755364ba27c504080808539f8040759413f0fff8cc57cd21dcb7f4",
+  "sha256": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md": "7b6b73826ee397e66102994174d94e04c3f174761f00ffcfe0da2be97e72a545",
+   "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40",
+   "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f",
+   "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py": "20bce7f6dab9d7755ddefc6e2000d501acb8572dc15f50981b65ba9f6e2a4f2b",
+   "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+   "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
+   "scripts/frontier_cycle906_covariance_tension_2026_07_28.py": "9c6392d593c1bf37e70f84692732d1e5cfa3f4377393dab846a15789fc0ce008",
+   "scripts/frontier_cycle908_intertwine_discharge_2026_07_28.py": "287c98e690d6a707661e4daef0460f3c17944e3cc32b1a2c958d4e454c4677b8"
+  },
+  "sha256_all_match": true,
+  "unpinned_by_design": [
+   "outputs/intertwine_discharge_cycle908_receipt_2026_07_28.json"
+  ],
+  "verdict_tokens_absent_from_this_checker": true
+ },
+ "R1_independent_phase_composition": {
+  "check": "R1_INDEPENDENT_PHASE_COMPOSITION",
+  "construction": "lane l keeps census[l]; the monitor moves.  The engagement orbit is run with token positions advanced by m and every H-chunk schedule is assembled row by row from monitor_schedule_manifest(key, m, 11).  The primary instead relabels lane l to frame_map(census[l], m) and uses the phase-0 schedule.  These are DIFFERENT programs; agreement of their outputs is a result, not a tautology",
+  "full_horizon": 16384,
+  "full_horizon_digests_agree_with_primary": true,
+  "full_rows": [
+   {
+    "init_failures": 0,
+    "mismatches": 0,
+    "my_raw_event_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+    "my_sorted_event_digest": "e6a275009c7c5d472aa975e9d635984e9e23a0641228a25a692bc4f345e00aae",
+    "my_transport_identity_holds": true,
+    "n_events": 92260,
+    "phase": 0,
+    "primary_raw_event_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+    "raw_digests_agree": true,
+    "sorted_digests_agree": true,
+    "timing_sec": 120.328,
+    "transported_digest_agrees": true,
+    "worlds_formed": 164,
+    "worlds_never_formed": 584
+   },
+   {
+    "init_failures": 0,
+    "mismatches": 0,
+    "my_raw_event_digest": "a64eed88c7e278c977b603a1c802d02b6edcbd000acc2f6d565d6e1426ccc145",
+    "my_sorted_event_digest": "6495232267408e69fa3f1c3d976fff381334d7bd1d2843bd30fed203edb1a72d",
+    "my_transport_identity_holds": true,
+    "n_events": 92260,
+    "phase": 1,
+    "primary_raw_event_digest": "a64eed88c7e278c977b603a1c802d02b6edcbd000acc2f6d565d6e1426ccc145",
+    "raw_digests_agree": true,
+    "sorted_digests_agree": true,
+    "timing_sec": 120.631,
+    "transported_digest_agrees": true,
+    "worlds_formed": 164,
+    "worlds_never_formed": 584
+   },
+   {
+    "init_failures": 0,
+    "mismatches": 0,
+    "my_raw_event_digest": "e04480beeef41808d270a80da74d96f70f16beb6351f07102da14da71bd41909",
+    "my_sorted_event_digest": "67ee0a5744a45f404ac97fbb4c5725618a57d0adb1c896e9abd2c6408e0ce7a7",
+    "my_transport_identity_holds": true,
+    "n_events": 92260,
+    "phase": 7,
+    "primary_raw_event_digest": "e04480beeef41808d270a80da74d96f70f16beb6351f07102da14da71bd41909",
+    "raw_digests_agree": true,
+    "sorted_digests_agree": true,
+    "timing_sec": 121.17,
+    "transported_digest_agrees": true,
+    "worlds_formed": 164,
+    "worlds_never_formed": 584
+   }
+  ],
+  "orbit_size_histogram": {
+   "11": 68
+  },
+  "orbits_by_union_find": 68,
+  "pass": true,
+  "phases_recomputed_at_full_horizon": [
+   0,
+   1,
+   7
+  ],
+  "pool_error": null,
+  "selection_rule": "phase 0, because the identity phase IS the Cycle-878 construction and it carries every restriction gate; phase 1, because it is the group generator and every other phase is a composite of it, so a sign or composition error shows here first; and the LOAD-BEARING phase, computed as the phase the primary built only ONCE (outside its declared double-build subset) whose formation ledger is most rearranged relative to phase 0, ties broken by the largest index.  That rule selects 7 from singles=[2, 3, 4, 7, 8, 9, 10] with double_built=[0, 1, 5, 6]",
+  "spot_check_horizon": 1024,
+  "spot_phases": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "spot_rows": [
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 0,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 1,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 2,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 3,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 4,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 5,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 6,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 7,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 8,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 9,
+    "transport_identity_holds": true
+   },
+   {
+    "dead_wires_identical": true,
+    "horizon": 1024,
+    "lane_signature_is_the_tau_transport": true,
+    "n_events": 63953,
+    "occupation_is_the_tau_transport": true,
+    "phase": 10,
+    "transport_identity_holds": true
+   }
+  ],
+  "spot_scope": "all eleven phases are re-scanned at horizon 1024; this corroborates the phase-composition STRUCTURE and the transport identity at every phase, but only the three full-horizon phases test the primary's published horizon-16384 digests",
+  "spot_transport_identity_holds_at_every_phase": true
+ },
+ "R2_cov_eqv_derivation": {
+  "check": "R2_INDEPENDENT_COV_EQV_DERIVATION",
+  "cov_inv_is_the_constant_family": "substituting the constant family w_m = w_0 into the identity gives w_0(g.e) = w_0(e) for every g, which is exactly the pinned Cycle-878 orbit-constancy test.  COV-INV is therefore a special case of COV-EQV, never the other way round",
+  "derivation_here": "856 states stamped_m(g.key) == stamped_{g.m}(key) with g.m = (m + g) mod 11.  Replace the Boolean predicate 'stamped' by a Q-valued weighting and the same identity reads w_m(g.e) = w_{(m+g) mod 11}(e), with g acting on a realized record event through its world coordinate only.  Equivalently (set g = -m) w_m = w_0 o tau_m, the GENERATED form.  The two forms are logically equivalent only if tau is a group action; that is checked below on the actual permutations, and the two forms are then compared verdict by verdict on the checker's own eleven reduced-horizon censuses",
+  "generated_form_verdicts": {
+   "M1_COUNTING": true,
+   "M2_PER_WORLD_UNIFORM": true,
+   "M3_OCCUPATION_WEIGHTED": true,
+   "M4_FORMATION_LIFETIME": true,
+   "M5_FORMATION_MOMENT": true,
+   "M6_ABSOLUTE_ORBIT_UNIFORM": true
+  },
+  "identity_form_verdicts": {
+   "M1_COUNTING": true,
+   "M2_PER_WORLD_UNIFORM": true,
+   "M3_OCCUPATION_WEIGHTED": true,
+   "M4_FORMATION_LIFETIME": true,
+   "M5_FORMATION_MOMENT": true,
+   "M6_ABSOLUTE_ORBIT_UNIFORM": true
+  },
+  "pairs_tested_per_recipe": {
+   "M1_COUNTING": 121,
+   "M2_PER_WORLD_UNIFORM": 121,
+   "M3_OCCUPATION_WEIGHTED": 121,
+   "M4_FORMATION_LIFETIME": 121,
+   "M5_FORMATION_MOMENT": 121,
+   "M6_ABSOLUTE_ORBIT_UNIFORM": 121
+  },
+  "pass": true,
+  "read_out_of_the_856_source_by_ast": {
+   "identity": "stamped_m(g\u00b7key) == stamped_{g\u00b7m}(key)",
+   "monitor_action": "g\u00b7m = (m + g) mod 11"
+  },
+  "tau_is_a_group_action": true,
+  "tau_is_free": true,
+  "the_two_forms_agree": true
+ },
+ "R3_recipe_test_attacked": {
+  "M6_phase_behaviour": {
+   "HORIZON_DEPENDENCE_FOUND_BY_THIS_CHECKER": {
+    "M6_support_used_at_the_spot_horizon": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "empty_at_every_spot_phase": true,
+    "native_escape_orbit_at_the_spot_horizon": {
+     "0": [],
+     "1": [],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [],
+     "6": [],
+     "7": [],
+     "8": [],
+     "9": [],
+     "10": []
+    },
+    "reading": "M6's defining orbit is a FULL-HORIZON object.  Nine of its eleven worlds first reach a global-clean boundary only near the very end of the pinned horizon, so at horizon 1024 no orbit escapes the never-formed block and the M6 recipe is identically zero.  This checker therefore instantiates M6 at the spot phases from the FULL-horizon escape orbit and says so, rather than silently comparing two different objects.  It is a scope note on M6, not a disagreement with the primary, whose eleven scans are all at the full horizon"
+   },
+   "escape_orbit_by_phase_full_horizon": {
+    "0": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "1": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "7": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ]
+   },
+   "mechanism": "the escape set is by construction a union of tau-orbits (it is 'the orbits that miss the never-formed block'), so it cannot move unless the never-formed block fails to transport.  Computed at every full-horizon phase rather than argued",
+   "question": "does M6's defining orbit MOVE under phase composition?  This is exactly where a recipe-instantiation error would hide",
+   "the_escape_set_is_always_a_tau_orbit": true,
+   "the_orbit_moves": false
+  },
+  "all_five_reproduce": true,
+  "check": "R3_RECIPE_LEVEL_TEST_ATTACKED",
+  "own_definitions_reproduce_the_pinned_constructor": {
+   "M1_COUNTING": true,
+   "M2_PER_WORLD_UNIFORM": true,
+   "M3_OCCUPATION_WEIGHTED": true,
+   "M4_FORMATION_LIFETIME": true,
+   "M5_FORMATION_MOMENT": true
+  },
+  "pass": true,
+  "sensitivity_attack": {
+   "COV_EQV_holds_for_the_planted_recipe": false,
+   "planted_recipe": "BROKEN_M6: uniform over the escape orbit MINUS its largest world -- a support that is deliberately NOT tau-invariant",
+   "reading": "if the recipe-level test could not see a moved defining set, this planted recipe would pass; it must fail",
+   "support_size": 10,
+   "witness": {
+    "g": 1,
+    "left": "0",
+    "m": 0,
+    "right": "1/10",
+    "shifted": 37,
+    "world": 32
+   }
+  }
+ },
+ "R4_cov_eqv_versus_cov_inv": {
+  "COV_EQV_full_horizon_subgrid": {
+   "M1_COUNTING": true,
+   "M2_PER_WORLD_UNIFORM": true,
+   "M3_OCCUPATION_WEIGHTED": true,
+   "M4_FORMATION_LIFETIME": true,
+   "M5_FORMATION_MOMENT": true,
+   "M6_ABSOLUTE_ORBIT_UNIFORM": true
+  },
+  "COV_EQV_reduced_horizon": {
+   "M1_COUNTING": true,
+   "M2_PER_WORLD_UNIFORM": true,
+   "M3_OCCUPATION_WEIGHTED": true,
+   "M4_FORMATION_LIFETIME": true,
+   "M5_FORMATION_MOMENT": true,
+   "M6_ABSOLUTE_ORBIT_UNIFORM": true
+  },
+  "COV_INV_full_horizon": {
+   "M1_COUNTING": false,
+   "M2_PER_WORLD_UNIFORM": true,
+   "M3_OCCUPATION_WEIGHTED": false,
+   "M4_FORMATION_LIFETIME": false,
+   "M5_FORMATION_MOMENT": false,
+   "M6_ABSOLUTE_ORBIT_UNIFORM": true
+  },
+  "COV_INV_reduced_horizon": {
+   "M1_COUNTING": false,
+   "M2_PER_WORLD_UNIFORM": true,
+   "M3_OCCUPATION_WEIGHTED": false,
+   "M4_FORMATION_LIFETIME": false,
+   "M5_FORMATION_MOMENT": false,
+   "M6_ABSOLUTE_ORBIT_UNIFORM": true
+  },
+  "check": "R4_COV_EQV_VERSUS_COV_INV",
+  "mixed_orbits_full_horizon": 55,
+  "pass": true,
+  "recipes_where_the_two_conditions_differ": [
+   "M1_COUNTING",
+   "M3_OCCUPATION_WEIGHTED",
+   "M4_FORMATION_LIFETIME",
+   "M5_FORMATION_MOMENT"
+  ],
+  "reduced_and_full_horizon_agree": true,
+  "verdict": "DIFFER_WITH_WITNESS",
+  "witness": {
+   "COV_EQV": true,
+   "COV_INV": false,
+   "COV_INV_failure": {
+    "mass_a": "2/56841",
+    "mass_b": "0",
+    "shift": 1,
+    "world_a": 0,
+    "world_b": 8
+   },
+   "recipe": "M3_OCCUPATION_WEIGHTED"
+  },
+  "worlds_formed_full_horizon": 164,
+  "worlds_never_formed_full_horizon": 584
+ },
+ "R5_BL7": {
+  "check": "R5_BL7",
+  "pass": true,
+  "reading": "BL7 is the statement that no interface-surviving weighting is covariant.  Recomputed here under both readings: it is a theorem under one and vacuous under the other, so the ledger row is reading-dependent",
+  "survivors": [
+   "M3_OCCUPATION_WEIGHTED",
+   "M4_FORMATION_LIFETIME",
+   "M5_FORMATION_MOMENT"
+  ],
+  "survivors_satisfy_COV_EQV": {
+   "M3_OCCUPATION_WEIGHTED": true,
+   "M4_FORMATION_LIFETIME": true,
+   "M5_FORMATION_MOMENT": true
+  },
+  "survivors_satisfy_COV_INV": {
+   "M3_OCCUPATION_WEIGHTED": false,
+   "M4_FORMATION_LIFETIME": false,
+   "M5_FORMATION_MOMENT": false
+  },
+  "tension_arises_under_COV_EQV": false,
+  "tension_arises_under_COV_INV": true
+ },
+ "R6_teeth": {
+  "biting": 8,
+  "check": "R6_TEETH",
+  "pass": true,
+  "teeth": [
+   {
+    "bites": true,
+    "detail": null,
+    "mutation": "flip one byte of the pinned Cycle-878 source",
+    "tooth": "T1_TAMPERED_PIN"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "pairs_with_all_eleven": 121,
+     "pairs_with_ten": 100,
+     "verdict_unchanged_but_coverage_dropped": true
+    },
+    "mutation": "run the COV-EQV grid with phase 7 removed from the index set",
+    "tooth": "T2_DROPPED_PHASE"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "fabricated": "058a2e6afaec4854f1b7e4e0d40dc1acdefc80b8ac6a5a509e515a1e3665f029",
+     "my_phase0_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+     "primary_phase0_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074"
+    },
+    "mutation": "compare the primary's phase-0 digest against a fabricated one",
+    "tooth": "T3_HARDCODED_CENSUS_DIGEST"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "leak_tokens_found": [],
+     "planted_leak_detected": true,
+     "verdicts_recomputable_without_the_receipt": true
+    },
+    "mutation": "needles read from the primary's receipt at run time must not appear in this source; and a deliberately planted copy of the primary's verdict string must be caught by the same audit",
+    "tooth": "T4_LEAKED_VERDICT"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "escape_orbits_after_skip": 0,
+     "escape_orbits_all": 1
+    },
+    "mutation": "drop the escape orbit from the orbit scan and recount",
+    "tooth": "T5_SKIPPED_ORBIT"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "intertwining_plant_accepted": true,
+     "non_intertwining_plant_detected": true,
+     "witness": {
+      "g": 1,
+      "left": "0",
+      "m": 0,
+      "right": "2/56841",
+      "shifted": 8,
+      "world": 0
+     }
+    },
+    "mutation": "a constant family built from a NON-orbit-constant weighting must fail COV-EQV; a constant family built from an orbit-constant one must pass",
+    "tooth": "T6_PLANTED_INTERTWINER_BLINDNESS"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "BROKEN_M6_passes_COV_EQV": false,
+     "witness": {
+      "g": 1,
+      "left": "0",
+      "m": 0,
+      "right": "1/10",
+      "shifted": 37,
+      "world": 32
+     }
+    },
+    "mutation": "replace M6's support by a set that is not tau-invariant",
+    "tooth": "T7_M6_DEFINING_ORBIT_MOVED"
+   },
+   {
+    "bites": true,
+    "detail": {
+     "reading": "the wrong sign turns COV-EQV into COV-INV, because 2 generates Z_11; recipes that are orbit-constant survive it and the others do not, which is exactly the sensitivity the test needs",
+     "wrong_sign_verdicts": {
+      "M2_PER_WORLD_UNIFORM": true,
+      "M3_OCCUPATION_WEIGHTED": false,
+      "M6_ABSOLUTE_ORBIT_UNIFORM": true
+     }
+    },
+    "mutation": "run the intertwining test with tau_{-g} in place of tau_g",
+    "tooth": "T8_WRONG_SIGN_ACTION"
+   }
+  ],
+  "total": 8
+ },
+ "checks": {
+  "R0_PINS_AND_LEAKS": true,
+  "R1_INDEPENDENT_PHASE_COMPOSITION": true,
+  "R2_INDEPENDENT_COV_EQV_DERIVATION": true,
+  "R3_RECIPE_LEVEL_TEST_ATTACKED": true,
+  "R4_COV_EQV_VERSUS_COV_INV": true,
+  "R5_BL7": true,
+  "R6_TEETH": true
+ },
+ "comparison_with_the_primary": {
+  "cov_eqv_recipes": {
+   "agree": true,
+   "checker": [
+    "M1_COUNTING",
+    "M2_PER_WORLD_UNIFORM",
+    "M3_OCCUPATION_WEIGHTED",
+    "M4_FORMATION_LIFETIME",
+    "M5_FORMATION_MOMENT",
+    "M6_ABSOLUTE_ORBIT_UNIFORM"
+   ],
+   "primary": [
+    "M1_COUNTING",
+    "M2_PER_WORLD_UNIFORM",
+    "M3_OCCUPATION_WEIGHTED",
+    "M4_FORMATION_LIFETIME",
+    "M5_FORMATION_MOMENT",
+    "M6_ABSOLUTE_ORBIT_UNIFORM"
+   ]
+  },
+  "cov_inv_recipes": {
+   "agree": true,
+   "checker": [
+    "M2_PER_WORLD_UNIFORM",
+    "M6_ABSOLUTE_ORBIT_UNIFORM"
+   ],
+   "primary": [
+    "M2_PER_WORLD_UNIFORM",
+    "M6_ABSOLUTE_ORBIT_UNIFORM"
+   ]
+  },
+  "phase0_digest": {
+   "agree": true,
+   "checker": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+   "primary": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074"
+  },
+  "relationship": {
+   "agree": true,
+   "checker": "DIFFER_WITH_WITNESS",
+   "primary": "DIFFER_WITH_WITNESS"
+  },
+  "tension_under_cov_eqv": {
+   "agree": true,
+   "checker": false,
+   "primary": false
+  },
+  "transport_theorem": {
+   "agree": true,
+   "checker": true,
+   "primary": true
+  }
+ },
+ "cycle": 908,
+ "disagreements": [],
+ "elapsed_sec": 122.482,
+ "primary_receipt_sha256": "825ebf6866755364ba27c504080808539f8040759413f0fff8cc57cd21dcb7f4",
+ "refinements": [
+  "the primary's scan-level double build covers [0, 1, 5, 6]; this checker's full-horizon recomputation covers [0, 1, 7], so phases [2, 3, 4, 8, 9, 10] have been built exactly once at horizon 16384 and only spot-checked at horizon 1024",
+  "COV-EQV is satisfied by every recipe tested, including the negative-looking ones, which means it has no discriminating power; a reader could mistake 'the survivors are covariant' for evidence FOR the survivors.  It is not: it is evidence that this credential selects nothing",
+  "M6's defining orbit is a LATE-HORIZON object: nine of its eleven worlds first form only near the end of the pinned horizon, so at horizon 1024 no orbit escapes the never-formed block and M6 collapses to zero.  The primary's eleven scans are all at the full horizon so this does not touch its verdict, but any future block that shortens the horizon loses M6 entirely -- a scope note the primary does not carry"
+ ],
+ "role": "independent checker",
+ "runtime_budget_sec": 900,
+ "self_sha256": "1794cdeb3258f1fd8bb44e76293d638d1aaa76bb02bf7a421fdadff117d0f4bb",
+ "spec": "REFUTE",
+ "teeth": "8/8",
+ "verdict": "CORROBORATES_WITH_REFINEMENT"
+}

@@ -317,3 +317,32 @@
   obligation pricing with a gauge-breaking theorem and a derived
   demand sheet.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Window 2 wave 1 — Cycles 893 + 894 (blockG16 #5954, blockG17 #5955) — 2026-08-04
+
+- 893: supervisor review of the fate-map machinery and the homonym-
+  guard adjudication; checker refuted C6 (family completeness) in the
+  headline-strengthening direction — adopted per discipline. The
+  Admissibility-clause reading (possibility sets, not site sets) is
+  double-derived (fidelity + independent sort analysis). Ledger
+  re-pointing: gauge break needs NO barrier premise; expulsion needs
+  containment (GB-S2b supplied row); no new conditional created.
+- 894: the vendoring double-verified (blob equals the blob inside
+  878's own receipt); bridge-independence rests on an AST-verified
+  structural fact (checked); the planted survivor caught two real
+  verdict-cell bugs pre-commit (disclosed); checker's two adversarial
+  bridges reordered the residual (P2 irreducible) — adopted.
+- Cluster-cap: 16th and 17th gravity-family PRs, both **OPEN**
+  (parent-conditionality dissolution; first cross-lane no-go).
+- Local dispositions: both **pass** (bounded_theorem; audit pending).
+
+LANE-CLOSURE LEDGER (gravity, restated post-893/894): remaining
+between the lane and "closed from axioms up": (1) t-choice retirement
+(Cycle 895, launching); (2) audit-flag reconciliations 871-dim +
+chart counts (Cycle 896, launching); (3) SL1b new invariant (exercise
+protocol launching); (4) Gate-B harmonic repair attack; (5) the
+bridge scalar; (6) theta-incidence barrier question (small, from
+893); (7) P2 kernel-coordinate attack (from 894, feeds GBW1b).
+Registered-convention rows (scope clause, window conventions) are
+CLOSED as science pending owner registration — no derivation work
+remains on them.

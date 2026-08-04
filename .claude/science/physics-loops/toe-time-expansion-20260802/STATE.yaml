@@ -146,13 +146,22 @@ worktrees:
     on B(R)=supp(R) (untested — the named open collapse route); 887 pins
     vendored verbatim with digest verification (sibling-branch deviation
     disclosed)
-  c5-g16: G16 (Cycle 893, the barrier identification B(R)=supp(R) —
-    derive/price/refute; admissible barrier space + Admissibility-axiom
-    fidelity + per-barrier fate of the quadratic gauge break; stacked on
-    G15 tip 33d72586f4) — running
-  c5-g17: G17 (Cycle 894, the interface attack — vendor 878 event space
-    onto the G lineage; five admissible weightings vs the IF sheet;
-    SELECTION/NARROWING/NO-GO/TYPE-MISMATCH; stacked on G15 tip) — running
+  c5-g16: blockG16 SHIPPED as PR #5954 — Cycle 893: 892's conditionality
+    DISSOLVES (gauge break barrier-independent, 24/24 + all controls, never
+    inverts, inversion-visible); C893_T1 containment buys expulsion (the
+    identification's equality never used) — covered by supplied GB-S2b, NO
+    new conditional; axioms force nothing (106 units NONE; Admissibility
+    ranges over possibility sets); remaining purchase = 7/12 theta-incidence
+    (8/24 barriers); checker refuted family-completeness (closing/opening/
+    adaptive-dilation) — adopted, strengthens headline
+  c5-g17: blockG17 SHIPPED as PR #5955 — Cycle 894 CROSS-LANE NO-GO: none
+    of 878's five admissible weightings meets the IF sheet (25/25 cells,
+    bridge-INDEPENDENT via AST-verified structure; planted survivor 5/5 +
+    caught 2 real cell bugs pre-commit); Lagrange 11-vs-24 covariance
+    obstruction; residual = 5-property sheet ORDERED by the bridge hunt:
+    P2 kernel coordinate IRREDUCIBLE (P1 first buys nothing); Phi sized
+    540/4,260 rationals; caveat: 878 side consistency-rebuild (863 dep
+    absent), stated loudly
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

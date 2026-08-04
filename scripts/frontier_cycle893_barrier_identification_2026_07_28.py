@@ -1111,6 +1111,22 @@ MOVE_TERMS = (r"propagat", r"\bwalk", r"\bstep", r"transfer", r"path",
 BLOCK_TERMS = (r"\bblock", r"barrier", r"forbid", r"obstruct", r"unblocked",
                r"exclude", r"prohibit", r"impassab", r"impenetrab")
 RECORD_TERMS = (r"\brecord", r"registr", r"supp\(", r"support")
+
+# ---- HOMONYM GUARDS.  The first run of this sweep graded two units EXACT and
+# both were homonyms: "bounded-SUPPORT source bridge" (compact support of a
+# source field, not supp(R)) and "the BLOCKED audit lanes" (a workflow, not a
+# site).  A lens that cannot tell those apart cannot certify a NONE.  So the
+# senses are separated COMPUTATIONALLY and the homonym firings are published
+# rather than quietly dropped.
+RECORD_TERMS_STRICT = (r"\brecord", r"registr", r"supp\(R\)",
+                       r"\bsupport of the record", r"\brecord support")
+RECORD_HOMONYMS = (r"bounded-support", r"bounded support",
+                   r"\bsupport\b(?!\s+of\s+the\s+record)")
+BLOCK_HOMONYMS = (r"blocked audit", r"blocked lane", r"blocked audit lanes")
+# EXACT additionally requires the BLOCK term and the RECORD term to sit in the
+# SAME CLAUSE -- co-occurrence anywhere in a long table row is not a binding.
+CLAUSE_SPLIT = r"[.;:|]"
+BINDING_WINDOW = 120
 IDENTITY_TERMS = (r"\bis exactly\b", r"\bequals\b", r"\bis the set\b",
                   r"\bidentical to\b", r"\bis defined as\b", r"\bcoincid",
                   r"\bread off\b", r"\bis given by\b", r"\bis precisely\b")
@@ -1167,6 +1183,18 @@ def _which(pats, text) -> list:
     return [p for p in pats if re.search(p, text, re.IGNORECASE)]
 
 
+def _bound_in_same_clause(text: str, pats_a, pats_b) -> bool:
+    """Do a term from each group occur in the SAME clause, within the window?"""
+    for clause in re.split(CLAUSE_SPLIT, text):
+        for ma in (m for p in pats_a
+                   for m in re.finditer(p, clause, re.IGNORECASE)):
+            for mb in (m for p in pats_b
+                       for m in re.finditer(p, clause, re.IGNORECASE)):
+                if abs(ma.start() - mb.start()) <= BINDING_WINDOW:
+                    return True
+    return False
+
+
 def fidelity_certificate() -> dict:
     per_doc = {}
     graded = []
@@ -1184,30 +1212,36 @@ def fidelity_certificate() -> dict:
             nb = text.encode("utf-8")
             found = rawb.find(nb)
             has_move = _any(MOVE_TERMS, text)
-            has_block = _any(BLOCK_TERMS, text)
-            has_record = _any(RECORD_TERMS, text)
+            has_block_raw = _any(BLOCK_TERMS, text)
+            has_record_raw = _any(RECORD_TERMS, text)
             has_ident = _any(IDENTITY_TERMS, text)
             has_contain = _any(CONTAINMENT_TERMS, text)
             has_supplied = _any(SUPPLIED_TERMS, text)
 
+            # ---- homonym adjudication, computed
+            record_strict = _any(RECORD_TERMS_STRICT, text)
+            record_homonym_only = has_record_raw and not record_strict
+            block_homonym_only = (has_block_raw
+                                  and _any(BLOCK_HOMONYMS, text)
+                                  and not _any(
+                                      tuple(p for p in BLOCK_TERMS
+                                            if p != r"\bblock"), text))
+            has_block = has_block_raw and not block_homonym_only
+            has_record = record_strict
+            bound = _bound_in_same_clause(text, BLOCK_TERMS,
+                                          RECORD_TERMS_STRICT)
+
             # ---- the three routes, GRADED by computed lens
-            # route (i): is the barrier forced to be record-determined at all?
-            if has_move and has_block and has_record and has_ident:
-                g_i = "EXACT"
-            elif has_move and has_block and has_record:
-                g_i = "PARTIAL"
-            elif has_block and has_record:
-                g_i = "PARTIAL"
-            else:
-                g_i = "NONE"
-            # route (ii): forced to be EXACTLY supp(R)?
-            g_ii = ("EXACT" if (has_move and has_block and has_record
-                                and has_ident) else
+            # EXACT now requires: a MOVE, BLOCKING of it, the RECORD set in its
+            # STRICT sense, a binding connective, and block/record BOUND IN THE
+            # SAME CLAUSE.  PARTIAL drops the MOVE and the binding requirements.
+            core = has_move and has_block and has_record and bound
+            g_i = ("EXACT" if core and has_ident else
+                   "PARTIAL" if (has_block and has_record) else "NONE")
+            g_ii = ("EXACT" if core and has_ident else
                     "PARTIAL" if (has_block and has_record and has_ident)
                     else "NONE")
-            # route (iii): forced to be contained in / to contain supp(R)?
-            g_iii = ("EXACT" if (has_move and has_block and has_record
-                                 and has_contain) else
+            g_iii = ("EXACT" if core and has_contain else
                      "PARTIAL" if (has_block and has_record and has_contain)
                      else "NONE")
             row = {
@@ -1222,13 +1256,17 @@ def fidelity_certificate() -> dict:
                 "lens": {
                     "names_a_MOVE": has_move,
                     "names_BLOCKING": has_block,
-                    "names_the_RECORD_set": has_record,
+                    "names_the_RECORD_set_STRICT": has_record,
+                    "block_and_record_BOUND_in_one_clause": bound,
                     "binds_with_IDENTITY": has_ident,
                     "binds_with_CONTAINMENT": has_contain,
                     "declares_SUPPLIED_or_OPEN": has_supplied,
+                    "record_term_is_a_HOMONYM_only": record_homonym_only,
+                    "block_term_is_a_HOMONYM_only": block_homonym_only,
                     "move_terms_hit": _which(MOVE_TERMS, text),
                     "block_terms_hit": _which(BLOCK_TERMS, text),
-                    "record_terms_hit": _which(RECORD_TERMS, text),
+                    "record_terms_hit_raw": _which(RECORD_TERMS, text),
+                    "record_terms_hit_strict": _which(RECORD_TERMS_STRICT, text),
                 },
                 "grade_route_i_record_determined_at_all": g_i,
                 "grade_route_ii_exactly_supp": g_ii,
@@ -1263,6 +1301,17 @@ def fidelity_certificate() -> dict:
     supplied_rows = [
         r for r in graded
         if r["lens"]["names_BLOCKING"] and r["lens"]["declares_SUPPLIED_or_OPEN"]]
+
+    # ---- the homonym adjudication, published so the NONE is auditable
+    homonym_rows = [
+        r for r in graded
+        if r["lens"]["record_term_is_a_HOMONYM_only"]
+        or r["lens"]["block_term_is_a_HOMONYM_only"]]
+    near_miss_rows = [
+        r for r in graded
+        if (r["lens"]["record_term_is_a_HOMONYM_only"]
+            or r["lens"]["block_term_is_a_HOMONYM_only"])
+        and r["lens"]["names_a_MOVE"]]
 
     all_byte_exact = all(r["byte_exact_in_pinned_file"] for r in graded)
     return {
@@ -1318,6 +1367,30 @@ def fidelity_certificate() -> dict:
             {"path": r["path"], "line": r["line_start"], "quote": r["quote"]}
             for r in supplied_rows],
         "supplied_declaration_count": len(supplied_rows),
+        "HOMONYM_ADJUDICATION": {
+            "why": (
+                "The first pass of this sweep graded two units EXACT and both "
+                "were homonyms.  They are recorded here rather than silently "
+                "dropped, because a NONE verdict is only worth as much as the "
+                "adjudication that produced it."),
+            "units_firing_on_a_homonym_only": len(homonym_rows),
+            "near_misses_that_would_have_graded_EXACT_without_the_guard": [
+                {"path": r["path"], "line": r["line_start"],
+                 "quote": r["quote"],
+                 "why_it_is_a_homonym": (
+                     "'support' here is the bounded SUPPORT of a source field, "
+                     "not supp(R) the record set"
+                     if r["lens"]["record_term_is_a_HOMONYM_only"]
+                     else "'blocked' here describes AUDIT LANES, not sites")}
+                for r in near_miss_rows],
+            "near_miss_count": len(near_miss_rows),
+            "effect": (
+                "Both near misses survive as PARTIAL-or-NONE once the sense is "
+                "adjudicated.  Neither asserts anything about WHICH sites are "
+                "blocked: the GB-S2a row takes 'unblocked directed paths' as "
+                "GIVEN and derives only the recursion over them, which is the "
+                "opposite of forcing the blocked set."),
+        },
         "finding": (
             f"{len(graded)} propagation-relevant text units out of "
             f"{total_units} are byte-quoted and graded under a published "
@@ -2140,6 +2213,12 @@ def render(sci: dict) -> str:
     w(f"    supplied-declaration units: {D['supplied_declaration_count']}")
     for r in D["sentences_that_DECLARE_the_barrier_supplied"][:4]:
         w(f"      - {r['path']}:{r['line']}  {r['quote'][:110]}")
+    ha = D["HOMONYM_ADJUDICATION"]
+    w(f"    homonym-only firings: {ha['units_firing_on_a_homonym_only']}; "
+      f"near misses that the guard caught: {ha['near_miss_count']}")
+    for r in ha["near_misses_that_would_have_graded_EXACT_without_the_guard"]:
+        w(f"      ! {r['path']}:{r['line']}  {r['why_it_is_a_homonym']}")
+        w(f"        {r['quote'][:150]}")
 
     D2 = sci["D2_ADMISSIBILITY_DEEP_READ"]
     w("")

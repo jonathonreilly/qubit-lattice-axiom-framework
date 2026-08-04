@@ -802,3 +802,32 @@ the supervisor).
   correction; Cycle 912 = Route 3 + the A3 channel (the never-run
   closer) + the envariance-note recovery + the 613 residue-vector
   count. Measure-selection routes NOT pursued (provably trapped).
+
+## Cycles 911 + 912 (blockQ8 #5976, blockQ9 #5975) — 2026-08-04
+
+- THE BORN LANE RE-TYPES: the 748 census worlds are SETUPS (complete
+  branch matrix, zero branch pairs, dual no-coupling certification) —
+  the eight-block weighting program was aimed at initial-condition
+  apportionment, which the realized-state primitive forbids averaging
+  over. The interface constructions stand as cross-lane bookkeeping
+  identities. AND the occurrence question is REAL: |A|=2 at every
+  lock point (the exercise's vacuity prediction refuted); the first
+  genuine selection site exhibited.
+- THE GAP IS ONE SENTENCE: the A3 channel (never run before) forces
+  invisibility completely and frequencies not at all; the stranded
+  envariance note (Born form modulo A3, PASS=44 verified) never
+  landed; content-measurability crowns only the excluded M1.
+- Supervisor spec error (fourth of the campaign): the 912 brief
+  paraphrased a nonexistent memo sentence; the worker formalized the
+  actual bytes and flagged it. Pattern note holds: spec premises
+  minimal, data decides.
+- New audit flags: the 878 boundary-certificate misquote (reversed
+  target); the 863 certificate-A slicing artifact; the 909 "3 passes"
+  misreading (all plants); the stranded-note landing recommendation.
+- Cluster-cap (8th/9th Q-family PRs): both **OPEN**.
+- Local dispositions: both **pass** (bounded_theorem; audit pending).
+- AXIOM-ASK STATUS after the must-fail sweep: still NOT EARNED — and
+  now better-shaped: the candidate is A3-shaped, its correct arena is
+  the lock-point menus (not the census), and the menu-variation gap
+  must be attacked first. NEXT: Cycle 913 — the landed scan's
+  selection function at the 164 lock points (O2 as a computation).

@@ -7,6 +7,841 @@
     2,
     3
   ],
+  "atoms": [
+    {
+      "atom": "cubic_group_order",
+      "provenance": "order of the proper cubic rotation group, rebuilt and counted",
+      "v2": 3,
+      "v3": 1,
+      "value": "24/1"
+    },
+    {
+      "atom": "det(A)",
+      "provenance": "orbit-graph adjacency, 0/1 (Lattice: nearest-neighbour adjacency restricted to the orbit)",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "det(A^2)",
+      "provenance": "declared power closure: A to the power 2 (power cap 2)",
+      "v2": 2,
+      "v3": 0,
+      "value": "4/1"
+    },
+    {
+      "atom": "det(Cyc)",
+      "provenance": "the C_n generator's permutation action (Lattice: a body-diagonal proper cubic rotation)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "det(Cyc^2)",
+      "provenance": "declared power closure: Cyc to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "det(Deg)",
+      "provenance": "degree matrix of the orbit graph",
+      "v2": 3,
+      "v3": 0,
+      "value": "8/1"
+    },
+    {
+      "atom": "det(Deg^2)",
+      "provenance": "declared power closure: Deg to the power 2 (power cap 2)",
+      "v2": 6,
+      "v3": 0,
+      "value": "64/1"
+    },
+    {
+      "atom": "det(Id)",
+      "provenance": "identity on the orbit coefficient space",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "det(Id^2)",
+      "provenance": "declared power closure: Id to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "det(J)",
+      "provenance": "all-ones = the un-normalised group sum over C_n",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "det(J^2)",
+      "provenance": "declared power closure: J to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "det(L)",
+      "provenance": "graph Laplacian Deg - A (the 2, -1 pattern at n = 3)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "det(L^2)",
+      "provenance": "declared power closure: L to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "det(P)",
+      "provenance": "group-averaging (Reynolds) projector J/n, the 1/n pattern",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "det(P^2)",
+      "provenance": "declared power closure: P to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "det(Qp)",
+      "provenance": "Id - P: projector onto the non-invariant isotype, trace n - 1 (Cycle 883's isotype pair (1, n-1))",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "det(Qp^2)",
+      "provenance": "declared power closure: Qp to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "diag(A)",
+      "provenance": "orbit-graph adjacency, 0/1 (Lattice: nearest-neighbour adjacency restricted to the orbit)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "diag(A^2)",
+      "provenance": "declared power closure: A to the power 2 (power cap 2)",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "diag(Cyc)",
+      "provenance": "the C_n generator's permutation action (Lattice: a body-diagonal proper cubic rotation)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "diag(Cyc^2)",
+      "provenance": "declared power closure: Cyc to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "diag(Deg)",
+      "provenance": "degree matrix of the orbit graph",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "diag(Deg^2)",
+      "provenance": "declared power closure: Deg to the power 2 (power cap 2)",
+      "v2": 2,
+      "v3": 0,
+      "value": "4/1"
+    },
+    {
+      "atom": "diag(Id)",
+      "provenance": "identity on the orbit coefficient space",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "diag(Id^2)",
+      "provenance": "declared power closure: Id to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "diag(J)",
+      "provenance": "all-ones = the un-normalised group sum over C_n",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "diag(J^2)",
+      "provenance": "declared power closure: J to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "diag(L)",
+      "provenance": "graph Laplacian Deg - A (the 2, -1 pattern at n = 3)",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "diag(L^2)",
+      "provenance": "declared power closure: L to the power 2 (power cap 2)",
+      "v2": 1,
+      "v3": 1,
+      "value": "6/1"
+    },
+    {
+      "atom": "diag(P)",
+      "provenance": "group-averaging (Reynolds) projector J/n, the 1/n pattern",
+      "v2": 0,
+      "v3": -1,
+      "value": "1/3"
+    },
+    {
+      "atom": "diag(P^2)",
+      "provenance": "declared power closure: P to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": -1,
+      "value": "1/3"
+    },
+    {
+      "atom": "diag(Qp)",
+      "provenance": "Id - P: projector onto the non-invariant isotype, trace n - 1 (Cycle 883's isotype pair (1, n-1))",
+      "v2": 1,
+      "v3": -1,
+      "value": "2/3"
+    },
+    {
+      "atom": "diag(Qp^2)",
+      "provenance": "declared power closure: Qp to the power 2 (power cap 2)",
+      "v2": 1,
+      "v3": -1,
+      "value": "2/3"
+    },
+    {
+      "atom": "isotype_invariant_dim",
+      "provenance": "dimension of the invariant isotype (Cycle 883 pair (1, n-1))",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "lattice_dim",
+      "provenance": "the 3 of Z^3 (Lattice axiom)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "n",
+      "provenance": "orbit length = |C_n| = number of orbit sites",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "n_minus_1",
+      "provenance": "dimension of the non-invariant isotype (Cycle 883 pair (1, n-1))",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "neighbours",
+      "provenance": "nearest neighbours of a site in Z^3 = 2 * lattice_dim",
+      "v2": 1,
+      "v3": 1,
+      "value": "6/1"
+    },
+    {
+      "atom": "offdiag(A)",
+      "provenance": "orbit-graph adjacency, 0/1 (Lattice: nearest-neighbour adjacency restricted to the orbit)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "offdiag(A^2)",
+      "provenance": "declared power closure: A to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "offdiag(Cyc)",
+      "provenance": "the C_n generator's permutation action (Lattice: a body-diagonal proper cubic rotation)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "offdiag(Cyc^2)",
+      "provenance": "declared power closure: Cyc to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "offdiag(Deg)",
+      "provenance": "degree matrix of the orbit graph",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "offdiag(Deg^2)",
+      "provenance": "declared power closure: Deg to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "offdiag(Id)",
+      "provenance": "identity on the orbit coefficient space",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "offdiag(Id^2)",
+      "provenance": "declared power closure: Id to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "offdiag(J)",
+      "provenance": "all-ones = the un-normalised group sum over C_n",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "offdiag(J^2)",
+      "provenance": "declared power closure: J to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "offdiag(L)",
+      "provenance": "graph Laplacian Deg - A (the 2, -1 pattern at n = 3)",
+      "v2": 0,
+      "v3": 0,
+      "value": "-1/1"
+    },
+    {
+      "atom": "offdiag(L^2)",
+      "provenance": "declared power closure: L to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "-3/1"
+    },
+    {
+      "atom": "offdiag(P)",
+      "provenance": "group-averaging (Reynolds) projector J/n, the 1/n pattern",
+      "v2": 0,
+      "v3": -1,
+      "value": "1/3"
+    },
+    {
+      "atom": "offdiag(P^2)",
+      "provenance": "declared power closure: P to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": -1,
+      "value": "1/3"
+    },
+    {
+      "atom": "offdiag(Qp)",
+      "provenance": "Id - P: projector onto the non-invariant isotype, trace n - 1 (Cycle 883's isotype pair (1, n-1))",
+      "v2": 0,
+      "v3": -1,
+      "value": "-1/3"
+    },
+    {
+      "atom": "offdiag(Qp^2)",
+      "provenance": "declared power closure: Qp to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": -1,
+      "value": "-1/3"
+    },
+    {
+      "atom": "one",
+      "provenance": "the empty product / unit of the readout algebra",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rank(A)",
+      "provenance": "orbit-graph adjacency, 0/1 (Lattice: nearest-neighbour adjacency restricted to the orbit)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "rank(A^2)",
+      "provenance": "declared power closure: A to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "rank(Cyc)",
+      "provenance": "the C_n generator's permutation action (Lattice: a body-diagonal proper cubic rotation)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "rank(Cyc^2)",
+      "provenance": "declared power closure: Cyc to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "rank(Deg)",
+      "provenance": "degree matrix of the orbit graph",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "rank(Deg^2)",
+      "provenance": "declared power closure: Deg to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "rank(Id)",
+      "provenance": "identity on the orbit coefficient space",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "rank(Id^2)",
+      "provenance": "declared power closure: Id to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "rank(J)",
+      "provenance": "all-ones = the un-normalised group sum over C_n",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rank(J^2)",
+      "provenance": "declared power closure: J to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rank(L)",
+      "provenance": "graph Laplacian Deg - A (the 2, -1 pattern at n = 3)",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "rank(L^2)",
+      "provenance": "declared power closure: L to the power 2 (power cap 2)",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "rank(P)",
+      "provenance": "group-averaging (Reynolds) projector J/n, the 1/n pattern",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rank(P^2)",
+      "provenance": "declared power closure: P to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rank(Qp)",
+      "provenance": "Id - P: projector onto the non-invariant isotype, trace n - 1 (Cycle 883's isotype pair (1, n-1))",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "rank(Qp^2)",
+      "provenance": "declared power closure: Qp to the power 2 (power cap 2)",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "rowsum(A)",
+      "provenance": "orbit-graph adjacency, 0/1 (Lattice: nearest-neighbour adjacency restricted to the orbit)",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "rowsum(A^2)",
+      "provenance": "declared power closure: A to the power 2 (power cap 2)",
+      "v2": 2,
+      "v3": 0,
+      "value": "4/1"
+    },
+    {
+      "atom": "rowsum(Cyc)",
+      "provenance": "the C_n generator's permutation action (Lattice: a body-diagonal proper cubic rotation)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rowsum(Cyc^2)",
+      "provenance": "declared power closure: Cyc to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rowsum(Deg)",
+      "provenance": "degree matrix of the orbit graph",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "rowsum(Deg^2)",
+      "provenance": "declared power closure: Deg to the power 2 (power cap 2)",
+      "v2": 2,
+      "v3": 0,
+      "value": "4/1"
+    },
+    {
+      "atom": "rowsum(Id)",
+      "provenance": "identity on the orbit coefficient space",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rowsum(Id^2)",
+      "provenance": "declared power closure: Id to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rowsum(J)",
+      "provenance": "all-ones = the un-normalised group sum over C_n",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "rowsum(J^2)",
+      "provenance": "declared power closure: J to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 2,
+      "value": "9/1"
+    },
+    {
+      "atom": "rowsum(L)",
+      "provenance": "graph Laplacian Deg - A (the 2, -1 pattern at n = 3)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "rowsum(L^2)",
+      "provenance": "declared power closure: L to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "rowsum(P)",
+      "provenance": "group-averaging (Reynolds) projector J/n, the 1/n pattern",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rowsum(P^2)",
+      "provenance": "declared power closure: P to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "rowsum(Qp)",
+      "provenance": "Id - P: projector onto the non-invariant isotype, trace n - 1 (Cycle 883's isotype pair (1, n-1))",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "rowsum(Qp^2)",
+      "provenance": "declared power closure: Qp to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "totalsum(A)",
+      "provenance": "orbit-graph adjacency, 0/1 (Lattice: nearest-neighbour adjacency restricted to the orbit)",
+      "v2": 1,
+      "v3": 1,
+      "value": "6/1"
+    },
+    {
+      "atom": "totalsum(A^2)",
+      "provenance": "declared power closure: A to the power 2 (power cap 2)",
+      "v2": 2,
+      "v3": 1,
+      "value": "12/1"
+    },
+    {
+      "atom": "totalsum(Cyc)",
+      "provenance": "the C_n generator's permutation action (Lattice: a body-diagonal proper cubic rotation)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "totalsum(Cyc^2)",
+      "provenance": "declared power closure: Cyc to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "totalsum(Deg)",
+      "provenance": "degree matrix of the orbit graph",
+      "v2": 1,
+      "v3": 1,
+      "value": "6/1"
+    },
+    {
+      "atom": "totalsum(Deg^2)",
+      "provenance": "declared power closure: Deg to the power 2 (power cap 2)",
+      "v2": 2,
+      "v3": 1,
+      "value": "12/1"
+    },
+    {
+      "atom": "totalsum(Id)",
+      "provenance": "identity on the orbit coefficient space",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "totalsum(Id^2)",
+      "provenance": "declared power closure: Id to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "totalsum(J)",
+      "provenance": "all-ones = the un-normalised group sum over C_n",
+      "v2": 0,
+      "v3": 2,
+      "value": "9/1"
+    },
+    {
+      "atom": "totalsum(J^2)",
+      "provenance": "declared power closure: J to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 3,
+      "value": "27/1"
+    },
+    {
+      "atom": "totalsum(L)",
+      "provenance": "graph Laplacian Deg - A (the 2, -1 pattern at n = 3)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "totalsum(L^2)",
+      "provenance": "declared power closure: L to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "totalsum(P)",
+      "provenance": "group-averaging (Reynolds) projector J/n, the 1/n pattern",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "totalsum(P^2)",
+      "provenance": "declared power closure: P to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "totalsum(Qp)",
+      "provenance": "Id - P: projector onto the non-invariant isotype, trace n - 1 (Cycle 883's isotype pair (1, n-1))",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "totalsum(Qp^2)",
+      "provenance": "declared power closure: Qp to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "trace(A)",
+      "provenance": "orbit-graph adjacency, 0/1 (Lattice: nearest-neighbour adjacency restricted to the orbit)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "trace(A^2)",
+      "provenance": "declared power closure: A to the power 2 (power cap 2)",
+      "v2": 1,
+      "v3": 1,
+      "value": "6/1"
+    },
+    {
+      "atom": "trace(Cyc)",
+      "provenance": "the C_n generator's permutation action (Lattice: a body-diagonal proper cubic rotation)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "trace(Cyc^2)",
+      "provenance": "declared power closure: Cyc to the power 2 (power cap 2)",
+      "v2": null,
+      "v3": null,
+      "value": "0/1"
+    },
+    {
+      "atom": "trace(Deg)",
+      "provenance": "degree matrix of the orbit graph",
+      "v2": 1,
+      "v3": 1,
+      "value": "6/1"
+    },
+    {
+      "atom": "trace(Deg^2)",
+      "provenance": "declared power closure: Deg to the power 2 (power cap 2)",
+      "v2": 2,
+      "v3": 1,
+      "value": "12/1"
+    },
+    {
+      "atom": "trace(Id)",
+      "provenance": "identity on the orbit coefficient space",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "trace(Id^2)",
+      "provenance": "declared power closure: Id to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "trace(J)",
+      "provenance": "all-ones = the un-normalised group sum over C_n",
+      "v2": 0,
+      "v3": 1,
+      "value": "3/1"
+    },
+    {
+      "atom": "trace(J^2)",
+      "provenance": "declared power closure: J to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 2,
+      "value": "9/1"
+    },
+    {
+      "atom": "trace(L)",
+      "provenance": "graph Laplacian Deg - A (the 2, -1 pattern at n = 3)",
+      "v2": 1,
+      "v3": 1,
+      "value": "6/1"
+    },
+    {
+      "atom": "trace(L^2)",
+      "provenance": "declared power closure: L to the power 2 (power cap 2)",
+      "v2": 1,
+      "v3": 2,
+      "value": "18/1"
+    },
+    {
+      "atom": "trace(P)",
+      "provenance": "group-averaging (Reynolds) projector J/n, the 1/n pattern",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "trace(P^2)",
+      "provenance": "declared power closure: P to the power 2 (power cap 2)",
+      "v2": 0,
+      "v3": 0,
+      "value": "1/1"
+    },
+    {
+      "atom": "trace(Qp)",
+      "provenance": "Id - P: projector onto the non-invariant isotype, trace n - 1 (Cycle 883's isotype pair (1, n-1))",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    },
+    {
+      "atom": "trace(Qp^2)",
+      "provenance": "declared power closure: Qp to the power 2 (power cap 2)",
+      "v2": 1,
+      "v3": 0,
+      "value": "2/1"
+    }
+  ],
   "branch_pins": {
     "cycle882_runner_pinned_by_sha": true,
     "cycle883_runner_pinned_by_sha": true,
@@ -16,6 +851,29 @@
     "obligation_pinned_by_sha": true
   },
   "brief_v3_premise_holds": false,
+  "closure_growth_table": [
+    {
+      "distinct_atom_words": 17,
+      "distinct_coefficients_K": 115,
+      "height_bound_binds": false,
+      "max_height_in_K": 192,
+      "word_bound_W": 1
+    },
+    {
+      "distinct_atom_words": 76,
+      "distinct_coefficients_K": 559,
+      "height_bound_binds": false,
+      "max_height_in_K": 36864,
+      "word_bound_W": 2
+    },
+    {
+      "distinct_atom_words": 190,
+      "distinct_coefficients_K": 1249,
+      "height_bound_binds": false,
+      "max_height_in_K": 995328,
+      "word_bound_W": 3
+    }
+  ],
   "closure_rules": [
     "R1 SUMS: k1 alpha^d + k2 alpha^d = (k1 + k2) alpha^d, closed within a degree; at most T = 2 native summands inside one coefficient.",
     "R2 PRODUCTS: (k1 alpha^a)(k2 alpha^b) = k1 k2 alpha^(a+b), degree capped at D = 3.",
@@ -124,6 +982,251 @@
     "T_sum_arity": 2,
     "W_word_bound": 3,
     "matrix_power_cap": 2
+  },
+  "degree_graded_coefficient_sets": {
+    "0": {
+      "M_d": [
+        "-3/1",
+        "-1/1",
+        "-1/3",
+        "0/1",
+        "1/1",
+        "1/3",
+        "2/1",
+        "2/3",
+        "3/1",
+        "4/1",
+        "6/1",
+        "8/1",
+        "9/1",
+        "12/1",
+        "18/1",
+        "24/1",
+        "27/1",
+        "64/1"
+      ],
+      "justification": "native scalars: evaluations of declared functionals on the supplied matrices, plus the declared structural counts. No alpha.",
+      "size": 18,
+      "sources": [
+        "cubic_group_order",
+        "det(A)",
+        "det(A^2)",
+        "det(Cyc)",
+        "det(Cyc^2)",
+        "det(Deg)",
+        "det(Deg^2)",
+        "det(Id)",
+        "det(Id^2)",
+        "det(J)",
+        "det(J^2)",
+        "det(L)",
+        "det(L^2)",
+        "det(P)",
+        "det(P^2)",
+        "det(Qp)",
+        "det(Qp^2)",
+        "diag(A)",
+        "diag(A^2)",
+        "diag(Cyc)",
+        "diag(Cyc^2)",
+        "diag(Deg)",
+        "diag(Deg^2)",
+        "diag(Id)",
+        "diag(Id^2)",
+        "diag(J)",
+        "diag(J^2)",
+        "diag(L)",
+        "diag(L^2)",
+        "diag(P)",
+        "diag(P^2)",
+        "diag(Qp)",
+        "diag(Qp^2)",
+        "isotype_invariant_dim",
+        "lattice_dim",
+        "n",
+        "n_minus_1",
+        "neighbours",
+        "offdiag(A)",
+        "offdiag(A^2)",
+        "offdiag(Cyc)",
+        "offdiag(Cyc^2)",
+        "offdiag(Deg)",
+        "offdiag(Deg^2)",
+        "offdiag(Id)",
+        "offdiag(Id^2)",
+        "offdiag(J)",
+        "offdiag(J^2)",
+        "offdiag(L)",
+        "offdiag(L^2)",
+        "offdiag(P)",
+        "offdiag(P^2)",
+        "offdiag(Qp)",
+        "offdiag(Qp^2)",
+        "one",
+        "rank(A)",
+        "rank(A^2)",
+        "rank(Cyc)",
+        "rank(Cyc^2)",
+        "rank(Deg)",
+        "rank(Deg^2)",
+        "rank(Id)",
+        "rank(Id^2)",
+        "rank(J)",
+        "rank(J^2)",
+        "rank(L)",
+        "rank(L^2)",
+        "rank(P)",
+        "rank(P^2)",
+        "rank(Qp)",
+        "rank(Qp^2)",
+        "rowsum(A)",
+        "rowsum(A^2)",
+        "rowsum(Cyc)",
+        "rowsum(Cyc^2)",
+        "rowsum(Deg)",
+        "rowsum(Deg^2)",
+        "rowsum(Id)",
+        "rowsum(Id^2)",
+        "rowsum(J)",
+        "rowsum(J^2)",
+        "rowsum(L)",
+        "rowsum(L^2)",
+        "rowsum(P)",
+        "rowsum(P^2)",
+        "rowsum(Qp)",
+        "rowsum(Qp^2)",
+        "totalsum(A)",
+        "totalsum(A^2)",
+        "totalsum(Cyc)",
+        "totalsum(Cyc^2)",
+        "totalsum(Deg)",
+        "totalsum(Deg^2)",
+        "totalsum(Id)",
+        "totalsum(Id^2)",
+        "totalsum(J)",
+        "totalsum(J^2)",
+        "totalsum(L)",
+        "totalsum(L^2)",
+        "totalsum(P)",
+        "totalsum(P^2)",
+        "totalsum(Qp)",
+        "totalsum(Qp^2)",
+        "trace(A)",
+        "trace(A^2)",
+        "trace(Cyc)",
+        "trace(Cyc^2)",
+        "trace(Deg)",
+        "trace(Deg^2)",
+        "trace(Id)",
+        "trace(Id^2)",
+        "trace(J)",
+        "trace(J^2)",
+        "trace(L)",
+        "trace(L^2)",
+        "trace(P)",
+        "trace(P^2)",
+        "trace(Qp)",
+        "trace(Qp^2)"
+      ]
+    },
+    "1": {
+      "M_d": [
+        "0/1",
+        "1/1",
+        "2/1",
+        "3/1",
+        "4/1",
+        "6/1",
+        "9/1"
+      ],
+      "justification": "orbit readout sums. Record additivity plus C_n covariance force I(x) = alpha * sum_i w_i x_i for a native weight vector w, so every degree-1 quantity is (sum of w) * alpha. Native weight vectors are rows of the native matrices and subset indicators.",
+      "size": 7,
+      "sources": [
+        "rows of Id",
+        "rows of Cyc",
+        "rows of A",
+        "rows of Deg",
+        "rows of L",
+        "rows of J",
+        "rows of P",
+        "rows of Qp",
+        "rows of Id^2",
+        "rows of Cyc^2",
+        "rows of A^2",
+        "rows of Deg^2",
+        "rows of L^2",
+        "rows of J^2",
+        "rows of P^2",
+        "rows of Qp^2",
+        "subset of size 0",
+        "subset of size 1",
+        "subset of size 2",
+        "subset of size 3",
+        "full 6-neighbour record collection"
+      ]
+    },
+    "2": {
+      "M_d": [
+        "0/1",
+        "3/1",
+        "6/1",
+        "9/1",
+        "12/1",
+        "27/1"
+      ],
+      "justification": "quadratic forms 1^T G 1 with G = alpha^2 * g, g a C_n-invariant native matrix; value alpha^2 * (1^T g 1). At n = 3 the invariant family is 1^T g 1 = 3p + 6q with (p, q) the (diagonal, off-diagonal) entries of a native matrix. Also the orbit second moment sum_i I_i^2 = n alpha^2.",
+      "size": 6,
+      "sources": [
+        "1^T Id 1 (C_n-invariant)",
+        "1^T Cyc 1 (C_n-invariant)",
+        "1^T A 1 (C_n-invariant)",
+        "1^T Deg 1 (C_n-invariant)",
+        "1^T L 1 (C_n-invariant)",
+        "1^T J 1 (C_n-invariant)",
+        "1^T P 1 (C_n-invariant)",
+        "1^T Qp 1 (C_n-invariant)",
+        "1^T Id^2 1 (C_n-invariant)",
+        "1^T Cyc^2 1 (C_n-invariant)",
+        "1^T A^2 1 (C_n-invariant)",
+        "1^T Deg^2 1 (C_n-invariant)",
+        "1^T L^2 1 (C_n-invariant)",
+        "1^T J^2 1 (C_n-invariant)",
+        "1^T P^2 1 (C_n-invariant)",
+        "1^T Qp^2 1 (C_n-invariant)",
+        "orbit second moment sum_i I_i^2 = n alpha^2"
+      ]
+    },
+    "3": {
+      "M_d": [
+        "0/1",
+        "1/1",
+        "2/1",
+        "4/1",
+        "8/1",
+        "64/1"
+      ],
+      "justification": "the determinant / triple product native to an n = 3 orbit: det(alpha M) = alpha^3 det M, and the product of the three site readouts = alpha^3.",
+      "size": 6,
+      "sources": [
+        "det(Id)",
+        "det(Cyc)",
+        "det(A)",
+        "det(Deg)",
+        "det(L)",
+        "det(J)",
+        "det(P)",
+        "det(Qp)",
+        "det(Id^2)",
+        "det(Cyc^2)",
+        "det(A^2)",
+        "det(Deg^2)",
+        "det(L^2)",
+        "det(J^2)",
+        "det(P^2)",
+        "det(Qp^2)",
+        "product of the n site readouts = alpha^n"
+      ]
+    }
   },
   "falsifier_plants": [
     {
@@ -610,6 +1713,7 @@
   "target_minimal_word_length": 1,
   "target_reachable": true,
   "target_verdict": "REACHES -- UNIFORMLY -- BUT DOES NOT SELECT",
+  "target_witness_count": 19,
   "theorems": [
     "C904-T1 native quantities are monomials k alpha^d",
     "C904-T2 mixed-degree solution sets; nonzero singleton iff a nonzero native degree-0 term",

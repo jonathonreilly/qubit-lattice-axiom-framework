@@ -3,17 +3,17 @@ runner: scripts/frontier_cycle912_a3_channel_independent_check_2026_07_28.py
 runner_sha256: 72617e76f7bf6b1fa45ef99b551e77ca2f5d817f26273b576d800b055fb37070
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 79.313
+elapsed_sec: 79.412
 status: ok
 ----- stdout -----
 CYCLE912_A3_CHANNEL_INDEPENDENT_CHECK
 SPECIFIED_TO_REFUTE -- exit 0 regardless of claim survival
 
 CERTIFICATE X0_PINS PASS {"firewall_hits":[],"mismatches":[]}
-primary receipt sha256 0baaf10911312966
-primary runner sha256 fc14dd127e6b7ef4
+primary receipt sha256 817b9b938b901a8d
+primary runner sha256 42f22b1660b01fbb
 
-[event space rebuilt independently at 77.3s: 92260 events]
+[event space rebuilt independently at 77.5s: 92260 events]
 
 ==========================================================================
 X1 -- CONTENT-MEASURABILITY, REBUILT FROM DEFINITIONS
@@ -87,4 +87,4 @@ CERTIFICATE X_TEETH PASS  8/8 tampers caught
 CHECKER VERDICT: PRIMARY_SURVIVES_THIS_CHECK
 per-check: {"X1_CONTENT_MEASURABILITY":"PRIMARY_SURVIVES_THIS_CHECK","X2_A3_CHANNEL":"PRIMARY_SURVIVES_THIS_CHECK","X3_PROVENANCE":"PRIMARY_SURVIVES_THIS_CHECK","X4_RESIDUE_VECTORS":"PRIMARY_SURVIVES_THIS_CHECK"}
 receipt -> outputs/a3_channel_independent_check_cycle912_receipt_2026_07_28.json
-elapsed 78.8s
+elapsed 78.9s

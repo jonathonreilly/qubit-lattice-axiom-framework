@@ -260,10 +260,10 @@
     "X3_PROVENANCE": "PRIMARY_SURVIVES_THIS_CHECK",
     "X4_RESIDUE_VECTORS": "PRIMARY_SURVIVES_THIS_CHECK"
   },
-  "primary_receipt_sha256": "0baaf10911312966c9986adfaa70ae4ba6459a56b9536af2d8a22cc5fb175f04",
-  "primary_runner_sha256": "fc14dd127e6b7ef49f1e74b8e01f21fe865af4220f2d3a2e369bf9adca65033a",
+  "primary_receipt_sha256": "817b9b938b901a8d92a4dadbb0615243316dbd97a7325027e92a96506a365998",
+  "primary_runner_sha256": "42f22b1660b01fbb7aa315e3957bd5b43b75eee27aeb6fd24b3814f1fbe6f563",
   "role": "independent checker, specified to refute",
   "runner": "scripts/frontier_cycle912_a3_channel_independent_check_2026_07_28.py",
   "runner_sha256": "72617e76f7bf6b1fa45ef99b551e77ca2f5d817f26273b576d800b055fb37070",
-  "runtime_seconds": 78.783
+  "runtime_seconds": 78.947
 }

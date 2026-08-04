@@ -850,9 +850,14 @@ def restriction_gate_certificate() -> dict:
     v2 = lambda x: (0 if x % 2 else 1 + v2(x // 2)) if x else None
     profile883 = (v2(pair883[0]), v2(pair883[1]))
     anchor_rebuilt = L_face_geometric(C3)[0]
+    headline_pair_forms = ["(1,2)", "(1, 2)"]
+    headline_states_the_pair = any(f in headline883
+                                   for f in headline_pair_forms)
+    headline_states_the_profile = any(f in headline883
+                                      for f in ["(0,1)", "(0, 1)"])
     c3_ok = (pair883 == (1, 2) and profile883 == (0, 1)
              and anchor_rebuilt == ANCHOR
-             and "(1, 2)" in headline883)
+             and headline_states_the_pair and headline_states_the_profile)
 
     # --- verify the C883_FORMS transcription against the pinned AST ------
     tree = ast.parse(_read_text(C883_PRIMARY))
@@ -941,6 +946,8 @@ def restriction_gate_certificate() -> dict:
         "cycle883_isotype_pair_rebuilt": list(pair883),
         "cycle883_two_adic_profile_rebuilt": list(profile883),
         "cycle883_anchor_rebuilt_from_geometry": q(anchor_rebuilt),
+        "cycle883_headline_states_the_pair": headline_states_the_pair,
+        "cycle883_headline_states_the_profile": headline_states_the_profile,
         "cycle883_reproduced": c3_ok,
         "cycle883_form_names_found_in_pinned_ast": forms_ok,
         "cycle883_closed_form_table": form_rows,

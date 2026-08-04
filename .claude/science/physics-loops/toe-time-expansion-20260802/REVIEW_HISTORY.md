@@ -203,3 +203,26 @@
 - Cluster-cap (12th gravity-family PR): **OPEN** — named-residual
   closure with priced menu + two corrections + menu-changing discovery.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 888 S3 scope (blockG13, PR #5947) — 2026-08-04
+
+- Supervisor review: construction certificate (883 argument AST-
+  recovered, rebuilt cyclic-native AND group-theoretic, gated on
+  reproducing the landed T6 step) and the exact rational
+  irreducible-submodule search read; gates outcome-neutral incl. the
+  restriction gate (reproduce 886 before claiming anything new).
+- Checker: independent lattice + isotype machinery; all verdicts
+  SURVIVES; caught the V_edge peeling trap with the pair-orbit gate
+  (FIND-3, method-critical, adopted into the note); 8/8 teeth incl.
+  two checker-side traps invisible to primary gates by design.
+- Science movers vs 886: menu dissolved (0 non-circular isolating
+  clauses over the full lattice; SEL06 -> {S3}; SEL12 coded-filter
+  defect; R-B/R-D artifacts); the corrections adopted, not argued.
+- The block's theorem: SL1 transfer at S3 numerically transfers but
+  is not forced (multiplicity-2 P^1 family; character-rigid; isotypic
+  canonical) — multiplicity-freeness named as the entire C3-vs-S3
+  question (FIND-5, unpriced, next door).
+- Scope-insensitivity MIXED: load-bearing for T6; readings disagree.
+- Cluster-cap (13th gravity-family PR): **OPEN** — completeness-gate
+  closure + transfer theorem + menu dissolution + parent corrections.
+- Local disposition: **pass** (bounded_theorem; audit pending).

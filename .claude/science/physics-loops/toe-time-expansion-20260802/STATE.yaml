@@ -91,8 +91,16 @@ worktrees:
     gauge); minimality ABSENT from pinned texts; residual = no-interaction
     convention + structuring set + centre convention, re-addressed to the
     owner surface
-  c5-g13: G13 (Cycle 888, S3 scope pricing + scope-insensitivity test over
-    the full 30-subgroup lattice; stacked on G11 tip 5fcaa4fe04) — running
+  c5-g13: blockG13 SHIPPED as PR #5947 — Cycle 888 S3 priced, 886's menu
+    DISSOLVED: full 30-subgroup lattice census (restriction gate reproduces
+    886 exactly); zero non-circular clauses isolate C3 (freeness+maximality
+    selects S3 alone; SEL12 broken as coded; 886's empty rows were
+    restriction artifacts); S3 coarse (1,5)/(0,0) no v2=1 native, fine-top
+    (1,2)/(0,1) reachable; SL1 transfer NUMERICALLY_TRANSFERS_BUT_NOT_FORCED
+    (multiplicity-2 P^1 family, character-rigid, isotypic canonical) =>
+    SL1's no-free-parameter IS multiplicity-freeness; scope-insensitivity
+    MIXED (load-bearing, readings disagree); FIND-5 named next door: is
+    multiplicity-freeness quotable?
   c5-t4: T4 (Cycle 889, DELTA-spectrum conjecture census at B=5/6/7 +
     long-horizon alignment-contingency retirement at B=3/5; stacked on T3
     tip 3177c9fbd5) — running

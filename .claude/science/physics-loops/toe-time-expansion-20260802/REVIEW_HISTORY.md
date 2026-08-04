@@ -875,3 +875,21 @@ AUDIT-LANE ACCUMULATED FLAGS (window 2, Born side): the stranded
 envariance note's landing; the 878 boundary misquote; the 863
 cert-A slicing artifact; the 909 "3 passes" misreading; the 856
 three-orbit horizon-criticality; T7 mis-stated (gravity side).
+
+## Cycle 914 d=3 bar (blockM1, PR #5979) — 2026-08-04
+
+- MASS LANE OPENED. Supervisor review: the discovery (already-run,
+  unexecuted work order) verified against the ledger row's own
+  re-audit note; the reproduction credential (three no-shared-code
+  implementations at 1.9e-11 / 5.1e-12); the NOT-BLIND disclosure
+  and the exit-1-by-design wiring both stated in note and PR; the
+  deviation table (frozen 7.1h schedule vs the 900s cap) each row
+  reasoned.
+- Checker: CLAIM-SURVIVES; sector exactness verified against full
+  space; the baseline-anchoring necessity confirmed with the
+  non-converged Lanczos honestly reported; 8/8 teeth.
+- Memory correction queued: the mass-lane memory says the d=3
+  comparator was "named" — it was DESIGNED, FROZEN, AND RUN; what
+  was missing was the re-audit. (Fix at wind-down memory bank.)
+- Cluster-cap: 1st M-family PR — below threshold.
+- Local disposition: **pass** (bounded_theorem; audit pending).

@@ -91,18 +91,10 @@
   ],
   "geometric_vacuity_strengthened": {
     "checker_finds": "NO three sites anywhere in Z^3 are pairwise adjacent, so the vacuity holds for EVERY 3-record collection, not only for the target orbit",
-    "direction": "STRENGTHENS the primary",
-    "primary_claim": "the TARGET orbit has zero adjacency interfaces"
+    "direction": "ADOPTED -- the primary under check already states and verifies the bipartiteness form, and this checker reproduces it independently",
+    "primary_carries_the_universal_form": true
   },
-  "novel_disjointness_reading": {
-    "attribute": "locked content",
-    "cardinality": 1,
-    "disjointness_reading": "two records are disjoint iff their locked contents differ",
-    "memo_evidence": "'a record locks exactly ONE admissible local possibility' + 'A readout value is determined by record content alone'",
-    "present": true,
-    "set_valued": true,
-    "vacuous_for_distinct_records": false
-  },
+  "novel_disjointness_reading": null,
   "novel_reading_consequence": {
     "net_effect": "the content reading does not rescue M4 -- it makes the selection question strictly WORSE by adding a free parameter where the site reading had one constraint",
     "rows": [
@@ -137,22 +129,10 @@
     "unconstrained_class_contains_the_target": true
   },
   "refutations_landed": [
-    "the primary's Q1(a) decision procedure is INCOMPLETE: it tested site-support disjointness against non-adjacency and never considered content disjointness, which needs no foreign import and leaves the target's own equal-content configuration unconstrained. Verdict unchanged (that reading selects nothing -- 3 alpha + E = 2/9 is one equation in two unknowns), grounds incomplete.",
-    "the M4 CLOSED region's stated grounds therefore need a third clause naming the content reading."
+    "NONE outstanding. This checker's two standing objections -- that the disjointness adjudication was a two-way procedure missing content disjointness, and that the M4 CLOSED region's grounds therefore needed a third clause -- are both DISCHARGED by the primary under check, which tests 3 readings, adjudicates on three discriminants, and computes the content reading to be an anti-escape."
   ],
   "role": "independent check, specified to refute",
-  "secret_leaks": [
-    {
-      "closed_by": "this block's adjudication (D) and enumeration (E)",
-      "leak_audit": {
-        "declared_by_primary": false,
-        "family_left_open": "the content-disjointness reading of 'pairwise-disjoint', which the primary's decision procedure never tested",
-        "secret": true,
-        "selects_the_target": false
-      },
-      "region": "M4 via a two-record adjacency gluing defect"
-    }
-  ],
+  "secret_leaks": [],
   "source_pins": [
     {
       "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
@@ -170,28 +150,28 @@
       "sha256": "560f368d9d23144cb23a93e72a398d92f6fcb536c3363179b7853c09615211bb"
     },
     {
-      "git_blob": "4009a887e840610ca0d67ead14017d00b4d2ad67",
+      "git_blob": "dc33b23a7fd462cc1d9db90c9c11db7f8f1fa654",
       "path": "scripts/frontier_cycle898_escape_census_2026_07_28.py",
-      "sha256": "83c797501c6216700518618d91bfd35bb32dbea92dfc825ef592a9397423b0c6"
+      "sha256": "a319372d897c832c2e5156749c0b7dc2ec48bdd6f5f6e6c3f12fe9ce4c2bd312"
     },
     {
-      "git_blob": "71778127efd866a7be226b93d98a358472da189e",
+      "git_blob": "c7f9e18b19e107f602972465bf02ba315b389795",
       "path": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
-      "sha256": "d202848b8c3025d6c36f44102ed895f1b9abdd5613c88ea67950dac21961e598"
+      "sha256": "477b0a78f5bd28126711437f648e88b1a7a291cc106fbd1c3bfda7aaf74bf3ca"
     },
     {
-      "git_blob": "afe0acdadb608670595b3f7d87271706d4004e97",
+      "git_blob": "7af33df588e0e20e578cf6660e0c3ec147d8fd86",
       "path": "logs/runner-cache/frontier_cycle898_escape_census_2026_07_28.txt",
-      "sha256": "331352d5bd2454f75d362b7f5471887c09d373af48919a7e6321e9ced96a109c"
+      "sha256": "0cda960a8d953a4729493c7ed19ab32703a9ab33f479f29d68013ddf5a76c2c0"
     }
   ],
   "strengthenings_found": [
-    "geometric vacuity is UNIVERSAL, not orbit-specific: Z^3's nearest-neighbour graph is bipartite, so no three sites anywhere are pairwise adjacent and no 3-record collection can carry three adjacency interfaces."
+    "geometric vacuity is UNIVERSAL, not orbit-specific: Z^3's nearest-neighbour graph is bipartite, so no three sites anywhere are pairwise adjacent and no 3-record collection can carry three adjacency interfaces. Independently reproduced here; the primary under check carries it: True"
   ],
   "survivals": [
     {
       "claim": "K1/K2 the M4 adjudication and ROUTE_DIES verdict",
-      "qualification": "the completeness of the decision procedure is REFUTED: a third reading (content disjointness) was never tested. It does not rescue the route.",
+      "qualification": "the completeness objection is DISCHARGED: the primary tests all three byte-supported readings and computes the verdict to be reading-independent",
       "survives": true
     },
     {
@@ -201,7 +181,7 @@
     },
     {
       "claim": "geometric vacuity of the target orbit",
-      "qualification": "STRENGTHENED: bipartiteness of Z^3 makes it universal, not orbit-specific",
+      "qualification": "the checker's bipartiteness strengthening is CARRIED by the primary: the universal form is stated and verified there",
       "survives": true
     },
     {
@@ -216,7 +196,7 @@
     },
     {
       "claim": "the coverage map's CLOSED/OPEN partition",
-      "qualification": "1 undeclared leak in the M4 region's grounds; outcome unchanged",
+      "qualification": "0 undeclared leak in the M4 region's grounds; outcome unchanged",
       "survives": true
     }
   ],

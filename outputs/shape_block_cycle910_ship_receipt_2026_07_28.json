@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); one falsifier tooth retargeted after its first placement could not bite (disclosed); supervisor line-by-line review (ledger row renumbered BL10->BL12 to avoid the 907 collision)",
+  "block": "toe-time-blockQ7-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 109.7s; CORROBORATES_WITH_REFINEMENT; zero disagreements; 8/8 teeth; three refinements adopted",
+    "primary": "exit 0, 130.6s; restriction gates 43/43; falsifiers 10/10 incl. the planted relabelling rejected as unlicensed; FULL double build (stamp census twice from independent implementations; formation ledger triple-built)"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 6th Q-family PR: discharges a cross-lane premise with an identity theorem, a horizon window, and an audit flag against the source lineage; distinct claim type vs Q5; nothing corollary",
+  "cycles": [
+    910
+  ],
+  "files": {
+    "docs/SHAPE_IDENTIFIED_HORIZON_WINDOW_CYCLE910_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "a5288ef9afa5c612ce55a7f0eb4b5af1e27989fa",
+      "sha256": "5767c7376fe1302b11d9f9566b054bc8972e2f89173e9ea01e62575393808382"
+    },
+    "logs/runner-cache/frontier_cycle910_shape_discharge_2026_07_28.txt": {
+      "git_blob": "3fac5ae9ed1d52278355766c77097b07dfa237e4",
+      "sha256": "c27ed2f24c780f63d494fda06b268b6ef66d335b4ff5eca45246e92f70977319"
+    },
+    "logs/runner-cache/frontier_cycle910_shape_independent_check_2026_07_28.txt": {
+      "git_blob": "38093570e0868ce06dc33c46da112b9e2c0adda3",
+      "sha256": "17ee2fea08e7cb6d87f83d2bc1001774f5bac4b97807500097d4ef639b0730b3"
+    },
+    "outputs/shape_discharge_cycle910_receipt_2026_07_28.json": {
+      "git_blob": "8b7dbcfc617342b9f404c0acc210bb66f182ff6c",
+      "sha256": "c38a7e1092af18b51f4c550572198d4bf9fde85653c63d0ec1919677098dd53e"
+    },
+    "outputs/shape_independent_check_cycle910_receipt_2026_07_28.json": {
+      "git_blob": "3393501130fab11355d6d52aa9cb348572260dc1",
+      "sha256": "0797db244ed525566b57a63bad168200cb0b07b9f40754f40de4c84597266553"
+    },
+    "scripts/frontier_cycle910_shape_discharge_2026_07_28.py": {
+      "git_blob": "b2d0ff474f75c8c98ad7adb1033a143d1c55b7db",
+      "sha256": "fb8540b7179725572da2cbce66bcfecd1759e39af1f203bf3b220e91b96c9c5e"
+    },
+    "scripts/frontier_cycle910_shape_independent_check_2026_07_28.py": {
+      "git_blob": "9b48d89359e41dd2de9a5832326416eb1488c41f",
+      "sha256": "a4d6d8e784ba78f480ea89754082e3005bda9bd6b665658350c4b7659d5a9383"
+    }
+  },
+  "headline": "P-856-SHAPE DISCHARGED-IDENTIFIED: one object, two definitions \u2014 the escape orbit IS the event-0 absolute-record orbit (proper subset of the 33-world E1 set); the predicates are THE SAME predicate at different horizons (formation ledger = first-clean profile world-for-world, zero mismatches; ESCAPE implies ABSOLUTE as a theorem); shape origin = the balanced split of 11, necessary-not-sufficient; 908's phase-stationarity becomes a corollary; THE M6 WINDOW: [14744, 33195) \u2014 the pinned horizon inside with 1,640 orbits of clearance (906's uniqueness exactly right AS STATED), below it M6 = 0, above it 'the escape orbit' stops denoting; NEW: 856's own three-orbit count is horizon-critical by ONE boundary (562,264/562,265) \u2014 audit flag for the 856 lineage; every M6/M7/M8 statement now horizon-indexed",
+  "independence": "cross-context (from-scratch rebuild in a REVERSED lane bit layout; the absolute set by two routes neither using the frame map; the equivariant-ambiguity attack \u2014 an equivariant relabelling WOULD alias the orbits, closed only by the empirical world-label identity; 8/8 teeth)",
+  "note": "docs/SHAPE_IDENTIFIED_HORIZON_WINDOW_CYCLE910_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 109.7,
+    "primary": 130.6
+  }
+}

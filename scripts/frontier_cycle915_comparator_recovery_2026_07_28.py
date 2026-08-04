@@ -309,7 +309,7 @@ def extract_914_machinery():
     ast.fix_missing_locations(mod)
     extracted_src = "\n\n".join(ast.unparse(n) for n in keep)
     ns = {"np": np, "hashlib": hashlib, "itertools": itertools, "json": json,
-          "re": re, "jv": jv,
+          "re": re, "jv": jv, "sha256_bytes": sha256_bytes,
           # the frozen protocol constants the extracted routines close over
           "CENTER": CENTER, "LABELS": LABELS, "CONTENT_H_MIN": CONTENT_H_MIN,
           "EXCESS_MIN": EXCESS_MIN, "INDEP_MAX": INDEP_MAX}

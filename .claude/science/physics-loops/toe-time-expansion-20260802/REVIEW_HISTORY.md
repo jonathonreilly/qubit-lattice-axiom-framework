@@ -479,3 +479,32 @@ registered-convention rows, science closed.
   dissolution + binding table + space-level cause + decidable
   residual.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 901 space identification (blockG24, PR #5961) — 2026-08-04
+
+- Supervisor review: the formalization-stability check (the checker
+  REFUSED the primary's predicate split and the verdict held anyway)
+  is the block's strongest structural credential; the honest failed
+  embedding test reported as a theorem; the steelman polarity
+  adjudication verified; the exposed flank (anchor constant vs I(x))
+  carried in the receipt rather than argued away.
+- Checker: 8 refutation attempts 0 succeeded; 8/8 teeth; independent
+  L-face route; cross-branch 899-row rebuild (0 disagreements).
+- THE READOUT ARC IS COMPLETE as science: 882 wall -> 883 SL1 -> 886/
+  888/890 scope ladder -> 897 target excluded -> 898 escapes closed ->
+  899 family binding -> 901 space DECIDED (content, F_dim). Remaining
+  on the readout side: ONE unpriced shape (mixed-degree
+  non-involution) + audit-lane propagation of the re-binding (which is
+  numerically free — premise relabeling only).
+- Cluster-cap (23rd gravity-family PR): **OPEN** — the obligation's
+  last identification decided with a formalization-stable predicate
+  and a zero-cost re-binding.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
+LANE-CLOSURE LEDGER (gravity, restated post-901): remaining: (1) the
+harmonic repair (Cycle 900, RUNNING); (2) the bridge scalar (= sigma,
+shared per 896); (3) theta-incidence (small, from 893); (4) P2
+kernel-coordinate attack (feeds GBW1b's interface); (5) the one
+unpriced mixed-degree shape (from 898). The readout obligation's
+positive half is science-complete; registered conventions + the t!=0
+exclusion are owner-surface rows with no derivation work left.

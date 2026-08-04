@@ -226,12 +226,19 @@ worktrees:
     zero-parameter core built exactly; the consumer delta table (landed
     vs core); REPAIR-VIABLE-with-patch-list or REPAIR-BLOCKED-with-
     obstruction; the new kernel-shape residual) — running
-  c5-g24: G24 (Cycle 901, the SPACE IDENTIFICATION — decide from the
-    axioms which space the record reads (content-space F_dim vs
-    embedding-space F_res): the content-alone adjudication, the C2
-    discriminator (L-face at face-C2 vs edge-C2), the conjugate-C4 and
-    V_edge re-embedding tests, the consumer impact table with the
-    at-C3-nothing-changes coherence finding; stacked on G15 tip) — running
+  c5-g24: blockG24 SHIPPED as PR #5961 — Cycle 901 DECIDED-F_DIM: the
+    record reads CONTENT-SPACE. Embedding test honestly fails to convict
+    (C901-T2a: L-face embedding-invariant everywhere); the violation is
+    on SCOPE (the {+-e1,+-e2} collection is simply transitive under BOTH
+    C4_face and V_edge — geometric reading 5/16-vs-UNDEFINED on identical
+    records; content reading 3/16 under all nine scopes; survey 4-vs-0);
+    surviving steelman: L-face keeps its mathematics, loses the license
+    as THE readout (price: one supplied scope selector; no licensing
+    sentence exists); COHERENCE: 44 consumers all at C3 where both
+    families = 2/9 — re-binding numerically FREE, moves 2/9 to the
+    cheaper Record-content premise; falsification pair C4 3/16-vs-5/16;
+    BONUS: 883's five-fold ambiguity closes to ONE ((n-1)/n^2 the unique
+    scope-invariant form); 899 rows rebuilt cross-branch, 0 disagreements
 backlog: CLOSED by Cycle 895 (PR #5957) — all three grading-consuming
   scripts priced (316 BROKEN_OFF_UNIT; 325 structurally T_UNIFORM with one
   sensitive control; 876-checker forced-(1,2,0))

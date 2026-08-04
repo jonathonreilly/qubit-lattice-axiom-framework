@@ -156,3 +156,50 @@
   claim type vs G9 anatomy.
 - Local disposition: **pass** (ship as bounded_theorem with both
   checker narrowings adopted; independent audit still required).
+
+## Cycle 887 window freedom (blockG12, PR #5945) — 2026-08-04
+
+- Supervisor review: containment certificate (dichotomy derivation +
+  computational refutation of the disjoint branch) and selectors
+  certificate (byte quotes separated from computed filters, fidelity
+  verdicts honest) read line-by-line; one reporting-only verdict cert
+  has a hard-coded pass (all its data from upstream gated certs) —
+  minor style note, no smuggled outcome.
+- Checker: 14/14 claims survive; zero-overlap fresh 8-config family
+  transfer holds; found 4 new escape classes (rank/threshold filters —
+  infinite family with dilations as t=1; morphological closing with
+  its family-dependent-witness caveat REPORTED not absorbed; bitcount/
+  diameter keying) + the 511-witness containment generalization;
+  6/6 teeth incl. quote-needle tampering.
+- Science movers vs 885: residual re-priced (1023 windows in radius-2,
+  not a scale); 885's "permanence SELECTS the support" inference
+  corrected (retraction vs displacement); support containment DERIVED
+  from additivity; readout-gauge theorem. Extent re-addressed from
+  derivation lane to owner surface.
+- Cluster-cap (11th gravity-family PR): **OPEN** — structure theorems +
+  positive derivation + gauge theorem + parent-inference correction.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 886 SL0 (blockG11, PR #5946) — 2026-08-04
+
+- Supervisor review: selector table structure verified (quote / says /
+  computes / fidelity / grounded / survivors all separated); census
+  gates (Lagrange/Euler-phi, Burnside, dimension sums, triple-computed
+  multiplicities) outcome-neutral.
+- Checker: every certified number survives independent re-derivation
+  (full 30-subgroup lattice; divisibility characters; Smith-style
+  reachability); independent fidelity recomputation 0 over/under-
+  claims; 6 selector variants demonstrate fragility (C3->C4 flip on
+  dropping freeness); 8/8 teeth incl. the circularity trap that
+  by-design flips no primary gate and is caught checker-side only.
+- FIVE checker findings adopted into the note (S3 candidate; SEL06
+  fragility; near-tautological grounded conjunction; circularity
+  promoted to headline; the (2,4) shell pair row). FIND-1 is menu-
+  changing: the cyclic restriction was an unpriced choice; S3 must be
+  priced before the menu is complete.
+- Science movers vs 883: (1,2) uniqueness reading-dependent (C4 fine-
+  top also (1,2)); reachability scope-circular; SL1 stands at C3 with
+  scope now a named conditional.
+- Cluster-cap (12th gravity-family PR): **OPEN** — named-residual
+  closure with priced menu + two corrections + menu-changing discovery.
+- Local disposition: **pass** (bounded_theorem; audit pending).

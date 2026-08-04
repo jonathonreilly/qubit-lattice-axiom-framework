@@ -72,13 +72,25 @@ worktrees:
     determined window can be barrier-disjoint (theorem under declared REQ4,
     scope caveat noted); named next doors: a k=0 minimality principle,
     GBW1b (joint with kernel block)
-  c5-g11: G11 (Cycle 886, SL0 — derive or price the C3 orbit scope;
-    subgroup census of O_h+ with isotype signatures + axiom-grounded
-    selector filters; based on G10 tip 71c38480db) — running
-  c5-g12: G12 (Cycle 887, window-extent freedom — size the true surviving
-    map space beyond the dilation family (Minkowski structure theorem +
-    counterexample hunt) and test axiom-grounded selection of k=0; based
-    on G10 tip 71c38480db) — running
+  c5-g11: blockG11 SHIPPED as PR #5946 — Cycle 886 SL0 answered as PRICING:
+    0/16 routes axiom-grounded AND isolating (covariance sentence is an
+    anti-selector); scope-circularity headline (reachability survivor set
+    not rule-invariant); two corrections vs 883 ((1,2) reading-dependent —
+    C4 fine-top also (1,2); reachability scope-circular); checker FIND-1:
+    cyclic restriction unpriced — simply-transitive S3 class carries (1,2),
+    reaches 2/9, beats C3 on the desiderata; six-clause menu + S3 pricing
+    = the completeness gate; SL1 untouched at C3, scope now a named
+    conditional
+  c5-g12: blockG12 SHIPPED as PR #5945 — Cycle 887 window freedom SIZED:
+    Minkowski sufficiency + injectivity => 15/1023/2097151 admissible
+    windows by box radius (885's dilations are 3 of 1023); necessity
+    REFUTED (erosions, closings, rank filters, content-keyed); annular
+    chart coarser 1023->113; support containment DERIVED from additivity
+    (corrects 885: permanence forbids retraction, not displacement);
+    readout-gauge theorem (9/12 maps readout-identical — the extent is
+    gauge); minimality ABSENT from pinned texts; residual = no-interaction
+    convention + structuring set + centre convention, re-addressed to the
+    owner surface
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

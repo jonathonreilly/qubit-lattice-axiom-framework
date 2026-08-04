@@ -215,6 +215,14 @@ def digest(payload) -> str:
                    default=str).encode("utf-8")).hexdigest()
 
 
+def digest892(payload) -> str:
+    """892's digest convention VERBATIM (no separators argument), so the
+    recomputed family digest is comparable to the pinned one."""
+    return hashlib.sha256(
+        json.dumps(payload, sort_keys=True, default=str).encode("utf-8")
+    ).hexdigest()
+
+
 def q(v) -> str:
     f = Fraction(v)
     return f"{f.numerator}/{f.denominator}"
@@ -368,7 +376,7 @@ def family_fingerprint(fam) -> list:
              "depth": [[list(s), d] for s, d in c["depth"]]} for c in fam]
 
 
-FAMILY_DIGEST = digest(family_fingerprint(FAMILY))
+FAMILY_DIGEST = digest892(family_fingerprint(FAMILY))
 
 
 # --------------------------------------------------------------------------
@@ -646,20 +654,16 @@ def restriction_878() -> dict:
 # C: restriction gate -- 892 (fully live: 885 and 887 ARE on this branch)
 # --------------------------------------------------------------------------
 def containment_holding() -> list:
-    """Recompute the containment filter rather than trusting the pinned list."""
+    """Recompute BOTH filters 892 applies -- REQ1-REQ5 admissibility from
+    887's own harness, then containment on every configuration -- rather than
+    trusting the pinned name list."""
     holding = []
     for name, fn in CATALOGUE:
-        ok = True
-        for cfg in FAMILY:
-            try:
-                w = set(fn(cfg)["set"])
-            except Exception:
-                ok = False
-                break
-            if not set(cfg["sites"]) <= w:
-                ok = False
-                break
-        if ok:
+        ev = NS887["evaluate_map"](fn)
+        if not ev["admissible_REQ1_REQ5"]:
+            continue
+        cp = NS887["containment_profile"](fn)
+        if cp["supp_subset_W_on_all_configs"]:
             holding.append(name)
     return sorted(holding)
 
@@ -1146,7 +1150,13 @@ def verdict_table(zp: dict, mp: dict, planted: dict) -> dict:
                     " configuration and covers Z's range"),
             }
         if req == "IF3":
-            ok = (p["theta_arity"] > 0 and not unabsorbable)
+            # EITHER the weight carries the kernel coordinate itself (then no
+            # normalizer has to absorb anything), OR theta is absorbable by a
+            # theta-invariant normalizer.  892's IF3 states exactly this
+            # disjunction; the earlier conjunction here was a bug that made a
+            # kernel-carrying weight unable to pass, which the planted
+            # survivor exposed.
+            ok = (p["theta_arity"] > 0 or not unabsorbable)
             return {
                 "verdict": "PASS" if ok else "FAIL",
                 "test": ("either the weighting carries the kernel coordinate,"
@@ -1191,7 +1201,11 @@ def verdict_table(zp: dict, mp: dict, planted: dict) -> dict:
             }
         if req == "IF5":
             tolerates = p["zero_weight_atoms"] > 0
-            ok = tolerates and not both
+            # C894-T1 bites only on a CONFIG-FREE weight: a weight indexed by
+            # the record configuration assigns a different number to the same
+            # window on different configurations and so escapes it.
+            escapes_t1 = p.get("config_arity", 0) > 0 or not both
+            ok = tolerates and escapes_t1
             return {
                 "verdict": "PASS" if ok else "FAIL",
                 "test": ("the weight must vanish where Z provably vanishes"
@@ -1201,7 +1215,8 @@ def verdict_table(zp: dict, mp: dict, planted: dict) -> dict:
                 "sub_test_a_zero_weight_atoms": p["zero_weight_atoms"],
                 "sub_test_b_config_free_contradiction_windows":
                     [w["window"] for w in both],
-                "sub_test_b_passes": not both,
+                "sub_test_b_passes": escapes_t1,
+                "weighting_config_arity": p.get("config_arity", 0),
                 "why": (
                     ("sub-test (a) already fails: the weighting is strictly"
                      " positive on every atom, so mu(A) = 0 only for the"
@@ -1212,11 +1227,13 @@ def verdict_table(zp: dict, mp: dict, planted: dict) -> dict:
                      " vanish on a non-empty set.  ")
                     + ("sub-test (b) fails by C894-T1: "
                        f"{len(both)} holding windows both vanish and are"
-                       " positive across the family, and a config-free"
-                       " weighting assigns one fixed number to each window's"
-                       " preimage" if both else
-                       "sub-test (b) passes: no holding window is both"
-                       " vanishing and positive")
+                       " positive across the family, and this weighting has"
+                       " record-configuration arity"
+                       f" {p.get('config_arity', 0)}, so it assigns ONE fixed"
+                       " number to each window's preimage -- which cannot be"
+                       " both zero and positive"
+                       if not escapes_t1 else
+                       "sub-test (b) passes")
                     if not ok else
                     "the weight vanishes exactly on Z's vanishing cells"),
             }

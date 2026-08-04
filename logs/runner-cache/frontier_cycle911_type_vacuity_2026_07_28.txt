@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle911_type_vacuity_2026_07_28.py
-runner_sha256: 12ceaae0b2f0f030e7109df802728194461a58b5070783144d157648841884eb
+runner_sha256: 6474f1e919c97fcb3336a8cea480b5e824fe48f4ea5ce4592c1b75bc0b0007d1
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 102.071
+elapsed_sec: 104.922
 status: ok
 ----- stdout -----
 CYCLE 911 -- THE TYPE OF THE BORN LANE'S OBJECT, AND THE VACUITY QUESTION
@@ -11,7 +11,7 @@ CYCLE 911 -- THE TYPE OF THE BORN LANE'S OBJECT, AND THE VACUITY QUESTION
   every fraction below: bookkeeping fraction, not probability
 
 CERTIFICATE A_PINS PASS  (18 pinned inputs, firewall hits 0, blocked modules loaded [])
-CERTIFICATE B_RESTRICTION_GATE PASS  40/40 gates reproduce
+CERTIFICATE B_RESTRICTION_GATE PASS  41/41 gates reproduce
 
 C1 -- THE SAMPLE-SPACE PREMISE A-SAMPLE, NAMED AND TESTED
 ------------------------------------------------------------------------------
@@ -38,7 +38,8 @@ C2 -- SINGLETON AVAILABILITY AT FORMATION
   formation events: 164; lock boundaries [0, 162183]; locks at moment 0: 24
   |A| histogram OP_PREPARE     {2: 164}
   |A| histogram OP_ORBIT       {2: 164}
-  |A| histogram OP_SATURATION  {0: 161, 2: 3}   (constructor errors 0)
+  |A| histogram OP_SATURATION (corrected)  {0: 164}   as pinned-863 slices it {0: 161, 2: 3}   (constructor errors 0)
+  PINNED-863 CHUNK-SLICING DEFECT: word length 6212 over 11 stations, divisible=False, per-step gate counts [757, 861, 764, 861, 13, 504, 368, 605, 378, 598, 503]
   O3 vacuous on this census: False
   FIRST GENUINE SELECTION SITE: world 176 key (3, 0, (0, 2, 4)) at boundary 0, menu [(1, 0), (0, 1)] (orbit-consistent: [(1, 0), (0, 1)])
   restricted-menu falsifier detected: True
@@ -46,7 +47,7 @@ C2 -- SINGLETON AVAILABILITY AT FORMATION
       k=2  proper orbits   10  classes realized 3  class sizes {'0': 67, '1': 3, '2': 94}  achievable |A| assignments 27  distinct distributions 27
       k=3  proper orbits   57  classes realized 6  class sizes {'0': 67, '1': 2, '2': 1, '3': 45, '4': 48, '5': 1}  achievable |A| assignments 729  distinct distributions 378
       k=4  proper orbits  240  classes realized 7  class sizes {'0': 67, '1': 2, '2': 1, '4': 31, '5': 24, '6': 25, '8': 14}  achievable |A| assignments 2187  distinct distributions 1821
-  the pinned Cycle-863 saturation diagnostic returns |A| = 0 at 161 of 164 realized formation events.  A menu that is EMPTY at a realized record-write is a reductio on the diagnostic, not on the census: the one-chunk flags-clean test is a saturation probe, not the admissibility menu.  Formation-as-saturation is REFUTED at full census scale, extending the pinned Cycle-863 bounded sample
+  with the chunk boundaries corrected, the Cycle-863 saturation diagnostic returns |A| = 0 at 164 of 164 realized formation events; as the pinned Cycle-863 source actually slices the word it returns {0: 161, 2: 3}.  A menu that is EMPTY at a realized record-write is a reductio on the diagnostic, not on the census: the one-chunk flags-clean test is a saturation probe, not the admissibility menu.  Formation-as-saturation is REFUTED at full census scale under BOTH readings, extending the pinned Cycle-863 bounded sample
 
 C3 -- THE REALIZATION DILEMMA, AND THE O1 CORRECTION
 ------------------------------------------------------------------------------
@@ -88,7 +89,7 @@ CERTIFICATE G_FALSIFIERS PASS  (7 teeth)
       every_C1_verdict_class_reachable                 detected=True
       vacuity_verdict_is_data_driven_not_hardcoded     detected=True
 CERTIFICATE H_DOUBLE_BUILD PASS  A=9d8f035dfeef7e02 B=9d8f035dfeef7e02 identical=True pinned-prefix-identical=True slots-inert=True
-CERTIFICATE I_RUNTIME PASS  101.635s / 900s
+CERTIFICATE I_RUNTIME PASS  104.454s / 900s
 
 THEOREMS
 ------------------------------------------------------------------------------
@@ -96,7 +97,7 @@ THEOREMS
 
   C911-T2 THE MENU AT EVERY LOCK POINT HAS TWO ELEMENTS: O3 IS NOT VACUOUS.  At all 164 realized formation events the lock state is globally clean, so BOTH endpoint possibilities are constructible (|A| = 2 at 164/164 under OP_PREPARE) and BOTH complete a lawful orbit (|A| = 2 at 164/164 under OP_ORBIT), with zero constructor errors.  Every lock point is therefore a genuine selection site, and the earliest sits at boundary 0 in world 176, key (3, 0, (0, 2, 4)).  The prediction that |A| = 1 everywhere is REFUTED, and so is the vacuity route: the weight question has an object at every one of the 164 lock points.
 
-  C911-T3 FORMATION-AS-SATURATION IS REFUTED AT FULL CENSUS SCALE.  The pinned Cycle-863 certificate-A diagnostic (prepare, apply one chunk, demand all bank flags clean) returns |A| = 0 at 161 and |A| = 2 at 3 of the 164 realized formation events, and never 1.  An empty menu at a realized record-write is incoherent, so the diagnostic is a saturation probe rather than the admissibility menu; the pinned Cycle-863 bounded sample already showed the same shape.
+  C911-T3 FORMATION-AS-SATURATION IS REFUTED AT FULL CENSUS SCALE, AND THE PINNED DIAGNOSTIC HAS A CHUNK-SLICING DEFECT.  The Cycle-863 certificate-A diagnostic (prepare, apply one chunk, demand all bank flags clean) returns, with the chunk boundaries CORRECTED, {0: 164} over the 164 realized formation events; as the pinned source actually slices the word, {0: 161, 2: 3}.  Neither reading ever returns 1.  The defect is exact and disclosed: the pinned source takes per_chunk = len(word) // stations, but the per-step gate counts differ station by station and len(word) % stations = 8 != 0, so the pinned chunk is not a step.  An empty menu at a realized record-write is incoherent either way, so the diagnostic is a saturation probe rather than the admissibility menu.
 
   C911-T4 THE CLASSIFIED COVARIANT RULE SPACE CANNOT RESOLVE THE LOCK POINTS BEYOND A HANDFUL OF CONDITION CLASSES.  Under the declared condition embedding, the 164 formation contexts fall into 3 proper-cubic orbit classes at the openness alphabet k=2 (of 10 available), 6 at k=3 and 7 at k=4.  Every covariant rule is constant on a class, so the achievable menu-multiplicity spectrum is exactly the set of class-wise assignments of |A| in {0,1,2}: 27 rules at k=2 distinguishable at the level of |A|.  The landed operators sit at the constant-2 point of that spectrum.
 
@@ -109,4 +110,4 @@ THEOREMS
 VERDICT: RE-TYPED
 all_certificates_pass: True
 receipt: outputs/type_vacuity_cycle911_receipt_2026_07_28.json
-science_digest: fd0155c73a0533bf3c88a54806dbe663d200220ed79000bc0121c219c122990e
+science_digest: 7a988705c1bfe8af6e9074a16b990e97d264646a5bc72a6312e21d92f8abce94

@@ -161,6 +161,11 @@ def ast_extract(rel: str, wanted, seed: dict):
             if any(n in wanted for n in names):
                 body.append(node)
                 seen.update(n for n in names if n in wanted)
+        elif (isinstance(node, ast.AnnAssign)
+              and isinstance(node.target, ast.Name)
+              and node.target.id in wanted):
+            body.append(node)
+            seen.add(node.target.id)
     ns = dict(seed)
     exec(compile(ast.Module(body=body, type_ignores=[]),
                  filename=f"<chk:{rel}>", mode="exec"), ns)  # noqa: S102
@@ -609,8 +614,8 @@ def bridge_hunt(zp) -> dict:
                 " rational set function"),
             "what_it_defeats": (
                 "C894-T1 exactly: this bridge manufactures the"
-                " record-configuration arity the primary calls the master"
-                " obstruction, so C894-T1 no longer bites"),
+                " record-configuration arity whose absence C894-T1 rests on,"
+                " so C894-T1 no longer bites"),
             "per_config": a_rows,
             "succeeds_on": a_ok, "fails_on": a_bad,
             "verdict": "REFUTED" if a_bad else "SUCCEEDS",
@@ -641,14 +646,24 @@ def bridge_hunt(zp) -> dict:
         },
         "both_bridges_refuted": bool(a_bad) and bool(b_bad),
         "refinement_of_the_primary": (
-            "The primary presents the missing record-configuration arity"
-            " (C894-T1) as the master obstruction.  BRIDGE-A supplies that"
-            " arity for free and STILL fails.  So the primary's emphasis is"
-            " misplaced even though its verdict is right: the irreducible"
-            " obstruction is C894-T2, the kernel coordinate, not the"
-            " configuration index.  Property P2 of the primary's residual"
-            " sheet is load-bearing; property P1 is necessary but NOT"
-            " sufficient, and the primary does not say so."),
+            "The primary proves C894-T1 and C894-T2 and lists its residual"
+            " properties P1 (configuration arity) and P2 (kernel arity)"
+            " side by side, without ranking them: it never tests what happens"
+            " if P1 alone is supplied.  This checker does.  BRIDGE-A grants"
+            " the record-configuration arity for free -- defeating C894-T1"
+            " outright -- and the composition STILL fails, on exactly the"
+            " seven configurations where C894-T2 bites.  BRIDGE-B grants a"
+            " kernel argument in the only form 878's inventory can express"
+            " it, a product measure, and fails on the same seven.  So the two"
+            " properties are NOT co-equal: P1 is necessary but not"
+            " sufficient, P2 is the irreducible obstruction, and the five"
+            " configurations on which both bridges succeed are precisely the"
+            " frozen walks, where Z is theta-constant and there is nothing"
+            " left to obstruct.  The primary's verdict is right and its"
+            " property sheet is complete; what this refines is the ORDERING"
+            " of the residual -- a campaign that supplies P1 first buys"
+            " nothing, and one that supplies P2 first buys the whole"
+            " theta-moving two-thirds of the family."),
     }
 
 

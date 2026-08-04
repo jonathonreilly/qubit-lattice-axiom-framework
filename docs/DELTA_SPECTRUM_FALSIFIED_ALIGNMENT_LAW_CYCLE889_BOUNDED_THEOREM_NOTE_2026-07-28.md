@@ -58,9 +58,11 @@ tier: P=7 at B=3; P=16 at B=4; P=6 and 7 at B=5; P=6, 8, 9, 12, 13,
 clock, lane, sigma, and transient recorded per row. **The conjecture
 "the full non-orbit spectrum at every B is exactly the DELTA set" is
 FALSIFIED as stated.** Of the DELTA members themselves, only 11, 19,
-27 ever fire; **DELTA = 3 never fires at any B** — its firing window
-carries at most 2(3 - sigma) <= 4 clean ticks, below the detector's
-pinned 8-event floor, at every bank count.
+27 ever fire UNDER THE RELAY TWO-RUN MECHANISM (the B=7 episode
+census does show 35 and 43, from non-two-run dirt — see the caveat
+under the law's corollaries); **DELTA = 3 never fires at any B** —
+its firing window carries at most 2(3 - sigma) <= 4 clean ticks,
+below the detector's pinned 8-event floor, at every bank count.
 
 ## The alignment law (the replacement, derived and exact)
 

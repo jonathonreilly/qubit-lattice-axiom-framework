@@ -226,6 +226,12 @@ worktrees:
     zero-parameter core built exactly; the consumer delta table (landed
     vs core); REPAIR-VIABLE-with-patch-list or REPAIR-BLOCKED-with-
     obstruction; the new kernel-shape residual) — running
+  c5-g24: G24 (Cycle 901, the SPACE IDENTIFICATION — decide from the
+    axioms which space the record reads (content-space F_dim vs
+    embedding-space F_res): the content-alone adjudication, the C2
+    discriminator (L-face at face-C2 vs edge-C2), the conjugate-C4 and
+    V_edge re-embedding tests, the consumer impact table with the
+    at-C3-nothing-changes coherence finding; stacked on G15 tip) — running
 backlog: CLOSED by Cycle 895 (PR #5957) — all three grading-consuming
   scripts priced (316 BROKEN_OFF_UNIT; 325 structurally T_UNIFORM with one
   sensitive control; 876-checker forced-(1,2,0))

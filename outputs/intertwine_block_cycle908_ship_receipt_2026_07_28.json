@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); double-build coverage honestly partial and disclosed; supervisor line-by-line review (ledger row renumbered BL9->BL11 to avoid the 907 collision)",
+  "block": "toe-time-blockQ5-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 123.0s; CORROBORATES_WITH_REFINEMENT; zero disagreements; 8/8 teeth; three refinements adopted",
+    "primary": "12/12 PASS, exit 0, 255.9s; restriction gates 33/33; phase-0 digest = the pinned 878 census exactly"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 5th Q-family PR: discharges a filed premise with a transport theorem, prices BL7 both ways, demotes the covariance credential, and sharpens the M6 horizon scope; distinct claim type vs Q4; nothing corollary",
+  "cycles": [
+    908
+  ],
+  "files": {
+    "docs/INTERTWINE_DISCHARGED_TRANSPORT_THEOREM_CYCLE908_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "8687b735189a0bc3e2a4303e23fd17d920a988fd",
+      "sha256": "86f8651f5a0a5b9d000a7ad7e88403d61b625bfb975ed81d2c7320bce9a9fad0"
+    },
+    "logs/runner-cache/frontier_cycle908_intertwine_discharge_2026_07_28.txt": {
+      "git_blob": "56a18aeec9612fe861fbb11f5adad03c41998812",
+      "sha256": "19cb0936767de90a1b9d08344363bae7c000b2325e973ac2c41860b03437cd60"
+    },
+    "logs/runner-cache/frontier_cycle908_intertwine_independent_check_2026_07_28.txt": {
+      "git_blob": "eb9499495274b8cc85b32640900aa86b11392036",
+      "sha256": "a49d3eff32a20e9c55e87d4c60c6b7d634bc5e2aeba509c3499c1e7a493f81c5"
+    },
+    "outputs/intertwine_discharge_cycle908_receipt_2026_07_28.json": {
+      "git_blob": "d6fcfc999e37f7a089cfe31123f61197ab4aa944",
+      "sha256": "825ebf6866755364ba27c504080808539f8040759413f0fff8cc57cd21dcb7f4"
+    },
+    "outputs/intertwine_independent_check_cycle908_receipt_2026_07_28.json": {
+      "git_blob": "9ed7b6f506d30b53f289943aa47cc91df8cea1b5",
+      "sha256": "0112d6ca3c5d796a429d40e5811487c12aca6f652c967b356d89b9a681647c9c"
+    },
+    "scripts/frontier_cycle908_intertwine_discharge_2026_07_28.py": {
+      "git_blob": "a32762df147312b150eee84b5311efa2476af677",
+      "sha256": "287c98e690d6a707661e4daef0460f3c17944e3cc32b1a2c958d4e454c4677b8"
+    },
+    "scripts/frontier_cycle908_intertwine_independent_check_2026_07_28.py": {
+      "git_blob": "aca4f6148acf3a9657c85fcf36cde08a528d3c63",
+      "sha256": "1794cdeb3258f1fd8bb44e76293d638d1aaa76bb02bf7a421fdadff117d0f4bb"
+    }
+  },
+  "headline": "P-INTERTWINE-878 DISCHARGED: C908-T1 THE TRANSPORT THEOREM (the eleven phase censuses are ONE ledger in eleven world-labellings; phase-0 reproduces 878 exactly); COV-EQV derived (COV-INV = its constant-family specialization); the readings DIFFER (witness M3: intertwines but orbit-mates differ by 4 orders); BL7 IS READING-DEPENDENT \u2014 under COV-EQV the tension never arises (M3/M4/M5 all pass) \u2014 both resolutions priced; C908-T5 THE STING: every ledger-native weighting is COV-EQV, so the credential has NO discriminating power (BL11_COV_EQV_IS_FREE); the escape orbit is PHASE-STATIONARY (P-856-SHAPE strengthened, undischarged); LATE-HORIZON FINDING: M6's orbit forms near the boundary \u2014 below the pinned horizon M6 collapses to zero",
+  "independence": "cross-context (a genuinely different construction \u2014 the monitor moves, the lane keeps its census; three full-horizon phase rebuilds by published rule + all-11 spot-checks; union-find orbits; recipes from definitions; 8/8 teeth incl. wrong-sign-action)",
+  "note": "docs/INTERTWINE_DISCHARGED_TRANSPORT_THEOREM_CYCLE908_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 123.014,
+    "primary": 255.91
+  }
+}

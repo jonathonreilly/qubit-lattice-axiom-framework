@@ -1,0 +1,149 @@
+{
+ "all_certificates_pass": true,
+ "base_rank_routes": {
+  "integer_multiply_only": 5,
+  "modular": {
+   "1000003": 5,
+   "2000003": 5,
+   "999999937": 5
+  }
+ },
+ "block": "toe-time-blockQ2-20260802",
+ "checker_verdict": "CORROBORATES_WITH_REFINEMENT",
+ "checks": {
+  "A_PINS": true,
+  "B_INDEPENDENT_CENSUS": true,
+  "C_INDEPENDENT_RANK": true,
+  "D_EXCLUSION_ATTACK": true,
+  "E_PULLBACK_ATTACK": true,
+  "F_TEETH": true,
+  "G_RUNTIME": true
+ },
+ "claim_survival": {
+  "M3_M4_zero_sets_identical": true,
+  "Q2_outcome_class": true,
+  "base_rank": true,
+  "event_space_digest": true,
+  "exclusion_of_M1_M2": true,
+  "generator_relation_residual": true,
+  "priced_prime_targets": true
+ },
+ "cycle": 905,
+ "elapsed_sec": 76.455,
+ "event_space_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+ "exclusion_hunt_refutation_found": false,
+ "firewall_hits": 0,
+ "independence": "independently transcribed census / dead-wire rig / composed scan (no AST lift, no import of the 863, 878, 902 or 905 sources); plain Fraction weightings against the primary's integer-numerator arithmetic; integer multiply-only elimination and modular rank against the primary's Fraction elimination and Gram/Laplace minors; the mass-lattice formulation of the pullback invariant against the primary's total-numerator formulation",
+ "mass_lattice_L": {
+  "M1_COUNTING": 92260,
+  "M2_PER_WORLD_UNIFORM": 802813440,
+  "M3_OCCUPATION_WEIGHTED": 7012467735,
+  "M4_FORMATION_LIFETIME": 230706877245,
+  "M5_FORMATION_MOMENT": 17127729255
+ },
+ "primary_receipt_sha256": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40",
+ "role": "independent check, specified to refute",
+ "scope_condition_confirmed_load_bearing": true,
+ "self_sha256": "95743c60b8615424f8353d789274d2aef9c157b8284bebbf156b791248285001",
+ "separating_scales_that_DO_exist": [
+  {
+   "scale": 37,
+   "selects": "M3_OCCUPATION_WEIGHTED"
+  },
+  {
+   "scale": 59,
+   "selects": "M4_FORMATION_LIFETIME"
+  },
+  {
+   "scale": 163,
+   "selects": "M4_FORMATION_LIFETIME"
+  },
+  {
+   "scale": 2861,
+   "selects": "M4_FORMATION_LIFETIME"
+  },
+  {
+   "scale": 3229,
+   "selects": "M3_OCCUPATION_WEIGHTED"
+  },
+  {
+   "scale": 41687,
+   "selects": "M5_FORMATION_MOMENT"
+  }
+ ],
+ "teeth": [
+  {
+   "detected": true,
+   "exit_code": 2,
+   "gate": "gate_pins",
+   "mutation": "one byte of the vendored Cycle-902 receipt is flipped",
+   "tooth": "tampered_vendored_pin"
+  },
+  {
+   "detected": true,
+   "exit_code": 1,
+   "gate": "gate_headline (five weightings)",
+   "mutation": "M5_FORMATION_MOMENT is removed from the candidate set",
+   "tooth": "dropped_weighting"
+  },
+  {
+   "detected": true,
+   "exit_code": 1,
+   "gate": "gate_rank (two-route agreement)",
+   "mutation": "route 2 returns the literal 4 instead of computing",
+   "tooth": "hardcoded_rank"
+  },
+  {
+   "detected": true,
+   "exit_code": 1,
+   "gate": "classify",
+   "mutation": "a reading is fed a verdict vector in which exactly one candidate survives; a verdict that is announced rather than computed would still report STABLE",
+   "observed_outcome": "SEPARATED",
+   "tooth": "leaked_verdict"
+  },
+  {
+   "detected": true,
+   "exit_code": 1,
+   "gate": "gate_headline",
+   "mutation": "every F-tag (formation) event is dropped from the census",
+   "tooth": "skipped_event_class"
+  },
+  {
+   "detected": true,
+   "exit_code": 1,
+   "gate": "planted-survivor falsifier",
+   "mutation": "the ratio reading is stubbed to return False for everything; a weighting BUILT to carry the exhibited ratios must then stop surviving",
+   "planted_survivor_really_survives": true,
+   "stub_verdict": false,
+   "tooth": "planted_survivor_blindness"
+  },
+  {
+   "detected": true,
+   "exit_code": 1,
+   "gate": "gate_zero_counts",
+   "mutation": "one reported zero-weight-event count is increased by one",
+   "tooth": "tampered_zero_counts"
+  },
+  {
+   "detected": true,
+   "exit_code": 1,
+   "gate": "gate_headline",
+   "mutation": "every second event is silently dropped (no declaration)",
+   "tooth": "silent_subcensus"
+  }
+ ],
+ "unique_primes_recomputed": {
+  "M3_OCCUPATION_WEIGHTED": [
+   37,
+   3229
+  ],
+  "M4_FORMATION_LIFETIME": [
+   59,
+   163,
+   2861
+  ],
+  "M5_FORMATION_MOMENT": [
+   41687
+  ]
+ }
+}

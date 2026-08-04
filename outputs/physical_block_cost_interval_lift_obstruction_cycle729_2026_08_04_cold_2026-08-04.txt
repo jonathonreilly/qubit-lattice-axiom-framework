@@ -1,0 +1,51 @@
+the block: two lattice cells side by side, carried through one tick
+PASS block corners  3 by 2 by 2 spatial corners times 2 tick corners is 24
+PASS five-subset census  42504 subsets, volume spectrum [(0, 13152), (1, 17280), (2, 9840), (3, 1472), (4, 680), (5, 64), (6, 16)]
+PASS minimal pieces  17280 five-subsets of volume one twenty-fourth
+PASS piece inverses are exact integer matrices  all 17280 inverse matrices give back the identity
+PASS adjacency charge spectrum  [(3, 128), (4, 768), (5, 2816), (6, 4928), (7, 5760), (8, 2608), (9, 272)]
+PASS counting bounds  charging all 48 pieces the least or the most gives only 144 to 432
+sample points, and the certificate inequality they carry
+PASS block symmetry  8 proper rotations preserve the block, 16 corner permutations with the tick flip
+PASS piece orbits  1080 orbits, every one of size 16
+PASS adjacency is constant on every orbit  one charge per orbit, so the program has 1080 rows
+PASS generic weights  barycentric integers bounded by 6, weight spread under 1.15
+PASS sample points  17280 distinct points, exactly 16 in every orbit
+PASS no sample point lands on a piece boundary  boundary incidences 0 over all 17280 pieces
+PASS membership matrix  17280 by 1080, 1060 distinct rows, none empty
+PASS membership is constant on every orbit  the 1080 orbit rows reproduce all 17280 piece rows
+the floor: 216, certified and attained
+PASS floor certificate is valid  least slack 0 over all 1080 orbit rows, tight on 30
+PASS floor certificate checked on every piece  least slack 0 over all 17280 pieces matches the orbit program
+PASS floor bound  value 110144 over denominator 512 rounds up to 216
+PASS the stacked stencil is a dissection  48 pieces, volumes sum to the box volume, all 1128 pairs separated
+PASS the stacked stencil attains the floor  its adjacency cost is 216
+the ceiling: 320, certified and attained
+PASS ceiling certificate is valid  least slack 0 over all 1080 orbit rows, tight on 53
+PASS ceiling certificate checked on every piece  least slack 0 over all 17280 pieces matches the orbit program
+PASS ceiling bound  value 15728 over denominator 49 rounds down to 320
+PASS the dearest dissection is a dissection  48 pieces, volumes sum to the box volume, all 1128 pairs separated
+PASS it attains the ceiling  its adjacency cost is 320
+PASS the interval is pinned at both ends  cost lies in 216 to 320 and both ends are reached
+PASS the previously dearest dissection is passed  the earlier witness is a dissection of cost 318
+the dearest dissection is not the lower hull of any lift
+PASS it is not face-to-face  16 facets are carried by one piece and lie away from the boundary
+PASS the stacked stencil is a lower hull  an integer height clears all 912 lower-face inequalities, worst -16
+PASS the earlier witness is a lower hull  an integer height clears all 912 lower-face inequalities, worst -32
+PASS why a lift-based search stops at 318  lifts reach 216 and 318; the dissection costing 320 is not reachable that way
+controls: every gate above is made to fail on purpose
+PASS the floor certificate has no slack to give  raising weight 0 by one breaks it, least slack -3
+PASS the ceiling certificate has no slack to give  lowering weight 0 by one breaks it, least slack -3
+PASS the separation test is not automatic  swapping one piece leaves 1116 of 1128 pairs separated
+PASS a height is specific to its own dissection  the stencil height fails the dearest dissection's rows, worst 336
+PASS the facet count separates the objects  16 for the dearest dissection against 0 for the stencil
+computational identities
+PASS floor certificate scales by 2  denominator 1024 gives the same bound
+PASS floor certificate scales by 3  denominator 1536 gives the same bound
+PASS floor certificate scales by 5  denominator 2560 gives the same bound
+PASS ceiling certificate scales by 2  denominator 98 gives the same bound
+PASS ceiling certificate scales by 3  denominator 147 gives the same bound
+PASS ceiling certificate scales by 5  denominator 245 gives the same bound
+PASS the transposed charge agrees at the floor  swapping the long spatial axis for the tick axis leaves the stencil at 216
+PASS the arithmetic does not overflow  recomputing the tightest row in unbounded integers gives 0
+TOTAL: PASS=43 FAIL=0

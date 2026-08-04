@@ -1,0 +1,143 @@
+{
+  "box": {
+    "corners": 24,
+    "exact_integer_inverses": 17280,
+    "five_corner_subsets": 42504,
+    "minimal_pieces": 17280,
+    "pieces_per_dissection": 48,
+    "spatial_shape": [
+      3,
+      2,
+      2
+    ],
+    "tick_corners": 2,
+    "volume_spectrum": {
+      "0": 13152,
+      "1": 17280,
+      "2": 9840,
+      "3": 1472,
+      "4": 680,
+      "5": 64,
+      "6": 16
+    }
+  },
+  "certificates": {
+    "ceiling": {
+      "bound": 320,
+      "denominator": 49,
+      "least_slack": 0,
+      "least_slack_on_pieces": 0,
+      "orbit_rows": 1080,
+      "pieces": 17280,
+      "tight_rows": 53,
+      "value": 15728
+    },
+    "floor": {
+      "bound": 216,
+      "denominator": 512,
+      "least_slack": 0,
+      "least_slack_on_pieces": 0,
+      "orbit_rows": 1080,
+      "pieces": 17280,
+      "tight_rows": 30,
+      "value": 110144
+    }
+  },
+  "charge": {
+    "adjacency_range": [
+      3,
+      9
+    ],
+    "adjacency_spectrum": {
+      "3": 128,
+      "4": 768,
+      "5": 2816,
+      "6": 4928,
+      "7": 5760,
+      "8": 2608,
+      "9": 272
+    },
+    "counting_bounds": [
+      144,
+      432
+    ],
+    "transposed_charge_on_the_stencil": 216
+  },
+  "computational_identities": {
+    "ceiling_denominators_under_rescaling": [
+      98,
+      147,
+      245
+    ],
+    "floor_denominators_under_rescaling": [
+      1024,
+      1536,
+      2560
+    ],
+    "tightest_row_in_unbounded_integers": 0
+  },
+  "controls": {
+    "ceiling_certificate_least_slack_when_a_weight_is_lowered": -3,
+    "floor_certificate_least_slack_when_a_weight_is_raised": -3,
+    "pairs_separated_after_one_piece_is_swapped": 1116,
+    "pairs_total": 1128
+  },
+  "cost_interval": [
+    216,
+    320
+  ],
+  "gates": {
+    "fail": 0,
+    "pass": 43
+  },
+  "regularity": {
+    "lower_face_inequalities": 912,
+    "not_reachable_by_lifting": 320,
+    "reachable_by_lifting": [
+      216,
+      318
+    ],
+    "single_count_interior_facets_greatest": 16,
+    "single_count_interior_facets_least": 0,
+    "worst_margin_earlier": -32,
+    "worst_margin_least": -16,
+    "worst_when_the_least_height_is_applied_to_the_greatest": 336
+  },
+  "sample_points": {
+    "barycentric_bound": 6,
+    "boundary_incidences": 0,
+    "distinct_membership_rows": 1060,
+    "orbit_rows_reproducing_every_piece": 1080,
+    "pieces_reproduced": 17280,
+    "points": 17280,
+    "points_per_orbit": 16,
+    "weight_spread_bound": "1.15"
+  },
+  "symmetry": {
+    "group_order": 16,
+    "orbit_size": 16,
+    "piece_orbits": 1080,
+    "program_rows": 1080,
+    "rotations_keeping_the_block": 8
+  },
+  "witnesses": {
+    "earlier_witness": {
+      "charge": 318,
+      "piece_pairs": 1128,
+      "pieces": 48,
+      "separating_normals": 1128
+    },
+    "greatest": {
+      "charge": 320,
+      "piece_pairs": 1128,
+      "pieces": 48,
+      "separating_normals": 1128
+    },
+    "least": {
+      "charge": 216,
+      "piece_pairs": 1128,
+      "pieces": 48,
+      "separating_normals": 1128
+    }
+  }
+}

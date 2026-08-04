@@ -61,7 +61,14 @@ worktrees:
     orientation FORCED; landed kernel non-harmonic for every epsilon; honest
     residual 10+ (chart-coincidence of the 8 flagged); next door GBW1
   c5-g10: G10 (Cycle 885, GBW1 — the detector window is record-determined,
-    covers 5/10; stacked on G9) — running
+    covers 5/10; stacked on G9) — first worker STOPPED BY OWNER 2026-08-04
+    ~03:15Z mid-stress-test; owner then said "continue"; partial primary
+    (1,956 lines, one completed run: GBW1 misscoped — D gauge, barrier
+    derived, a/b existence-derived, N kernel-coupled => GBW1a/GBW1b split,
+    sixth coordinate centre exposed) committed as WIP f4533dd7bd and pushed;
+    finisher worker relaunched with two known defects to repair (884-receipt
+    pin path silently wrong; receipt written into logs/runner-cache instead
+    of outputs) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

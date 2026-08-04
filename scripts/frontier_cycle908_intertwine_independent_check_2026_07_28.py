@@ -224,7 +224,8 @@ C856_FUNCS = ("monitor_schedule_manifest", "frame_map")
 C878_FUNCS = ("lcm", "dead_wire_rig", "composed_scan", "build_candidates",
               "monitor_phase_action", "group_orbits")
 C878_CONSTS = ("HORIZON", "DEAD_CHUNK_ORBITS", "DEAD_ORBIT_ORBITS",
-               "REGISTER_CAP")
+               "REGISTER_CAP", "CANDIDATE_NAMES", "CONTROL_NAME",
+               "FAMILY_ORDER")
 
 _LIFT = None
 
@@ -386,9 +387,17 @@ def _job(spec):
 # R3: the six recipes, re-instantiated from their DEFINITIONS
 # ---------------------------------------------------------------------------
 
-def own_world_masses(model, orbits) -> dict:
+def own_world_masses(model, orbits, star_override=None) -> dict:
     """World masses as exact normalized Fractions, from the definitions --
-    not from the pinned constructor."""
+    not from the pinned constructor.
+
+    star_override supplies M6's defining orbit when the model's own
+    horizon is too short to produce one.  The escape orbit of the pinned
+    construction only forms at boundary ~162180 of 180224, so at any
+    reduced spot horizon NO orbit escapes the never-formed block and M6
+    would be identically zero.  The override is disclosed in the receipt;
+    the model's own escape set is always reported alongside it.
+    """
     n_worlds = model["n_worlds"]
     counts = model["per_world_counts"]
     occ = model["occ_global"]
@@ -397,7 +406,9 @@ def own_world_masses(model, orbits) -> dict:
     supported = set(model["supported"])
     never = {w for w in supported if w not in formed}
     escape = [orbit for orbit in orbits if not (set(orbit) & never)]
-    star = set(escape[0]) if escape else set()
+    native_star = sorted(escape[0]) if escape else []
+    star = set(star_override) if star_override is not None \
+        else set(native_star)
 
     coeff = {
         "M1_COUNTING": lambda w: counts[w],
@@ -419,6 +430,8 @@ def own_world_masses(model, orbits) -> dict:
                      "support": sorted(w for w in supported
                                        if masses[w] != 0)}
     out["_escape_orbit"] = sorted(star)
+    out["_native_escape_orbit"] = native_star
+    out["_star_overridden"] = star_override is not None
     out["_never_formed"] = len(never)
     return out
 
@@ -479,10 +492,19 @@ def main() -> int:
     primary = json.loads(receipt_bytes.decode("utf-8")) if receipt_present \
         else {}
     own_source = Path(__file__).read_text(encoding="utf-8")
-    leak_tokens = ("P_INTERTWINE_878_DISCHARGED", "DIFFER_WITH_WITNESS",
-                   "READING-DEPENDENT", "TRANSPORT_THEOREM",
-                   "PHASE-STATIONARY")
-    leak_hits = [t for t in leak_tokens if t in own_source]
+    # The leak needles are taken from the primary's receipt AT RUN TIME, so
+    # they cannot appear in this file as literals and the test cannot defeat
+    # itself the way a hand-typed token list would.
+    leak_needles = {
+        "primary_VERDICT": primary.get("VERDICT"),
+        "primary_science_digest": primary.get("science_digest"),
+        "primary_phase0_event_space_digest":
+            primary.get("Q1_phase0_event_space_digest"),
+        "primary_BL7_verdict": primary.get("Q2_BL7_verdict"),
+        "primary_discharge_status": primary.get("Q3_discharge_status"),
+    }
+    leak_hits = [k for k, v in leak_needles.items()
+                 if isinstance(v, str) and v and v in own_source]
     r0 = {
         "check": "R0_PINS_AND_LEAKS",
         "sha256": sha_rows,
@@ -492,6 +514,12 @@ def main() -> int:
         "unpinned_by_design": list(UNPINNED_BY_DESIGN),
         "primary_receipt_present": receipt_present,
         "primary_receipt_sha256": sha256(receipt_bytes).hexdigest(),
+        "leak_needle_rule": ("every needle is read out of the primary's"
+                             " receipt at run time; none is a literal in"
+                             " this file, so the audit cannot pass by"
+                             " construction"),
+        "leak_needles_checked": sorted(k for k, v in leak_needles.items()
+                                       if isinstance(v, str) and v),
         "verdict_tokens_absent_from_this_checker": not leak_hits,
         "leak_tokens_found": leak_hits,
         "firewall_hits": list(CHECKER_FIREWALL.hits),
@@ -689,8 +717,14 @@ def main() -> int:
                         identity_string = value_node.value
                     if key_node.value == "monitor_action":
                         action_string = value_node.value
-    # the two forms, tested against each other on OUR data
-    masses_spot = {m: own_world_masses(results_spot[m], orbits)
+    # the two forms, tested against each other on OUR data.  M6's defining
+    # orbit is a FULL-HORIZON object, so it is computed there and carried
+    # into the spot-horizon instances (disclosed in R3).
+    masses_full = {m: own_world_masses(results_full[m], orbits)
+                   for m in full_phases}
+    full_star = masses_full[0]["_escape_orbit"]
+    masses_spot = {m: own_world_masses(results_spot[m], orbits,
+                                       star_override=full_star)
                    for m in range(stations)}
     identity_form = {}
     generated_form = {}
@@ -768,19 +802,16 @@ def main() -> int:
         cross[name] = all(
             Fraction(acc[w], total) == mine[w] for w in range(n_worlds))
     # M6 under phase composition, computed independently at every phase
-    escape_by_phase = {m: masses_spot[m]["_escape_orbit"]
-                       for m in range(stations)}
-    masses_full = {m: own_world_masses(results_full[m], orbits)
-                   for m in full_phases}
     escape_full = {m: masses_full[m]["_escape_orbit"] for m in full_phases}
-    escape_moves = len({tuple(v) for v in escape_by_phase.values()}) != 1
+    escape_native_spot = {m: masses_spot[m]["_native_escape_orbit"]
+                          for m in range(stations)}
+    escape_moves = len({tuple(escape_full[m]) for m in full_phases}) != 1
     escape_is_a_tau_orbit = all(
-        sorted(escape_by_phase[m]) in orbits for m in range(stations)
-        if escape_by_phase[m])
-    escape_matches_full = all(
-        escape_full[m] == escape_by_phase[m] for m in full_phases)
+        escape_full[m] in orbits for m in full_phases if escape_full[m])
+    spot_escape_empty_everywhere = all(
+        not v for v in escape_native_spot.values())
     # the sensitivity attack: a recipe whose defining set is NOT tau-invariant
-    star0 = escape_by_phase[0]
+    star0 = full_star
     broken_star = set(star0[:-1]) if len(star0) > 1 else set(star0)
     broken = {}
     for m in range(stations):
@@ -804,16 +835,33 @@ def main() -> int:
             "question": ("does M6's defining orbit MOVE under phase"
                          " composition?  This is exactly where a"
                          " recipe-instantiation error would hide"),
-            "escape_orbit_by_phase_reduced_horizon": escape_by_phase,
             "escape_orbit_by_phase_full_horizon": escape_full,
-            "full_and_reduced_agree": escape_matches_full,
             "the_orbit_moves": escape_moves,
             "the_escape_set_is_always_a_tau_orbit": escape_is_a_tau_orbit,
             "mechanism": (
                 "the escape set is by construction a union of tau-orbits"
                 " (it is 'the orbits that miss the never-formed block'), so"
                 " it cannot move unless the never-formed block fails to"
-                " transport.  Computed at every phase rather than argued"),
+                " transport.  Computed at every full-horizon phase rather"
+                " than argued"),
+            "HORIZON_DEPENDENCE_FOUND_BY_THIS_CHECKER": {
+                "native_escape_orbit_at_the_spot_horizon":
+                    escape_native_spot,
+                "empty_at_every_spot_phase": spot_escape_empty_everywhere,
+                "reading": (
+                    "M6's defining orbit is a FULL-HORIZON object.  Nine of"
+                    " its eleven worlds first reach a global-clean boundary"
+                    " only near the very end of the pinned horizon, so at"
+                    f" horizon {SPOT_HORIZON} no orbit escapes the"
+                    " never-formed block and the M6 recipe is identically"
+                    " zero.  This checker therefore instantiates M6 at the"
+                    " spot phases from the FULL-horizon escape orbit and"
+                    " says so, rather than silently comparing two"
+                    " different objects.  It is a scope note on M6, not a"
+                    " disagreement with the primary, whose eleven scans"
+                    " are all at the full horizon"),
+                "M6_support_used_at_the_spot_horizon": full_star,
+            },
         },
         "sensitivity_attack": {
             "planted_recipe": ("BROKEN_M6: uniform over the escape orbit"
@@ -832,7 +880,7 @@ def main() -> int:
             "the escape orbit is NOT phase-stationary in this checker's"
             " own recomputation")
     r3["pass"] = bool(all(cross.values()) and escape_is_a_tau_orbit
-                      and escape_matches_full and not broken_holds)
+                      and not escape_moves and not broken_holds)
 
     # ---- R4: COV-EQV versus COV-INV, recomputed ---------------------------
     cov_inv_rows = {}
@@ -878,12 +926,15 @@ def main() -> int:
             and cov_inv_rows[n]["COV_INV"]
             == cov_eqv_full[n]["COV_INV_at_full_horizon"]
             for n in RECIPES),
-        "mixed_orbits_reduced_horizon": sum(
+        "mixed_orbits_full_horizon": sum(
             1 for orbit in orbits
             if 0 < sum(1 for w in orbit
-                       if w in {x for x in results_spot[0]["supported"]
-                                if str(x) not in results_spot[0]["formed"]})
+                       if w in {x for x in results_full[0]["supported"]
+                                if str(x) not in results_full[0]["formed"]})
             < stations),
+        "worlds_formed_full_horizon": results_full[0]["worlds_formed"],
+        "worlds_never_formed_full_horizon":
+            results_full[0]["worlds_never_formed"],
     }
     r4["pass"] = bool(r4["reduced_and_full_horizon_agree"])
 
@@ -953,18 +1004,28 @@ def main() -> int:
         "escape_moves": escape_moves,
         "differ": differ,
     }
+    # a live control: plant the primary's own verdict string into a copy of
+    # this source and confirm the audit would catch it
+    planted_leak_source = own_source + "\nLEAKED = " + repr(
+        primary.get("VERDICT") or "NO_PRIMARY_VERDICT") + "\n"
+    planted_caught = bool(
+        primary.get("VERDICT")
+        and primary["VERDICT"] in planted_leak_source
+        and primary["VERDICT"] not in own_source)
     tooth("T4_LEAKED_VERDICT",
-          "check that no primary verdict token appears in this source and"
-          " that every verdict is computed from the checker's own scans",
-          (not leak_hits) and all(
+          "needles read from the primary's receipt at run time must not"
+          " appear in this source; and a deliberately planted copy of the"
+          " primary's verdict string must be caught by the same audit",
+          (not leak_hits) and planted_caught and all(
               k in verdicts_without_primary
               for k in ("COV_EQV", "COV_INV", "escape_moves", "differ")),
           {"leak_tokens_found": leak_hits,
+           "planted_leak_detected": planted_caught,
            "verdicts_recomputable_without_the_receipt": True})
 
     skipped = [o for o in orbits if o != sorted(star0)]
-    never0 = {w for w in results_spot[0]["supported"]
-              if str(w) not in results_spot[0]["formed"]}
+    never0 = {w for w in results_full[0]["supported"]
+              if str(w) not in results_full[0]["formed"]}
     escapes_all = [o for o in orbits if not (set(o) & never0)]
     escapes_skipped = [o for o in skipped if not (set(o) & never0)]
     tooth("T5_SKIPPED_ORBIT",
@@ -1069,6 +1130,16 @@ def main() -> int:
         " power; a reader could mistake 'the survivors are covariant' for"
         " evidence FOR the survivors.  It is not: it is evidence that this"
         " credential selects nothing")
+    if spot_escape_empty_everywhere:
+        refinements.append(
+            "M6's defining orbit is a LATE-HORIZON object: nine of its"
+            " eleven worlds first form only near the end of the pinned"
+            f" horizon, so at horizon {SPOT_HORIZON} no orbit escapes the"
+            " never-formed block and M6 collapses to zero.  The primary's"
+            " eleven scans are all at the full horizon so this does not"
+            " touch its verdict, but any future block that shortens the"
+            " horizon loses M6 entirely -- a scope note the primary does"
+            " not carry")
 
     verdict = ("REFUTES" if disagreements else
                "CORROBORATES_WITH_REFINEMENT" if refinements else

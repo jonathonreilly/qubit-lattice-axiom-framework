@@ -1425,7 +1425,7 @@
       ],
       "assessment": {
         "RECOMMENDATION_FOR_THE_AUDIT_LANE": "land the note (and its runner and cache) into the audit lane so the A3 admission is citable from the landed tree.  This block does NOT restore the file -- no docs are written here; the recommendation is emitted as data for the lane that owns landing.",
-        "corpus_status": "the note is the tightest statement of the Born gap in the corpus and it is not in the landed tree: it sits on an unmerged branch with a runner whose PASS=44 FAIL=0 claim re-verifies",
+        "corpus_status": "the note is the tightest statement of the Born gap in the corpus and it is not in the landed tree: it sits on an unmerged branch with a runner whose PASS=44 FAIL=0 claim re-verifies (True)",
         "this_block_did_not_restore_the_file": true,
         "what_A3_is": "that a probability measure over outcomes exists and is a function of the state -- the occurrence-existence admission",
         "what_the_note_derives": "the Born FORM p_k = |a_k|^2 on the framework's own record state, by Zurek envariance with a Gleason/Busch backstop, MODULO one named admission A3",
@@ -1546,6 +1546,36 @@
       "refs_containing_the_note": [
         "remotes/origin/born-from-envariance-2026-06-05"
       ],
+      "rerun_of_the_recovered_runner": {
+        "DISCREPANCY_FOUND": "the committed cache is TRUNCATED relative to a live run: the re-run prints 46 [PASS] lines but the runner's own tally reports 44, because the final sympy exact cross-check block prints two checks it does not add to the counter, and the committed cache stops at 321 lines, before that block.  The PASS=44 FAIL=0 claim itself verifies exactly; the runner simply under-counts its own checks by two and the cache was captured mid-stream.",
+        "PASS_44_FAIL_0_CLAIM_VERIFIED": true,
+        "elapsed_seconds": 0.294,
+        "exit_code": 0,
+        "label_lines_identical_over_the_shared_prefix": true,
+        "labelled_checks_in_the_committed_cache": {
+          "FAIL": 0,
+          "PASS": 44
+        },
+        "labelled_checks_printed_by_the_rerun": {
+          "FAIL": 0,
+          "PASS": 46
+        },
+        "ran": true,
+        "ran_from": "a temporary copy outside the worktree; not committed",
+        "runner_sha256": "a45a7315a5815a578458248363eb73e00334df95c672aa52840a699f95a5eee1",
+        "self_check_lines_emitted": [
+          "SELF-CHECK: PASS=44 FAIL=0  ->  OK",
+          "SELF-CHECK: PASS=44 FAIL=0  ->  OK"
+        ],
+        "self_check_lines_in_the_committed_cache": [
+          "SELF-CHECK: PASS=44 FAIL=0  ->  OK",
+          "PASS=44 FAIL=0"
+        ],
+        "shared_label_lines_compared": 44,
+        "stderr": "",
+        "stdout_lines": 350,
+        "stdout_sha256": "ea4e42502b09ab9cea46e28a4bb8dfba1d353c04e7078b39f1121acce95140f6"
+      },
       "status": "RECOVERED"
     },
     "C4_RESIDUE_VECTORS": {
@@ -1838,6 +1868,6 @@
     "sha256_substituted_inside_878_namespace_for_the_A_CONTENT_probe": true
   },
   "runner": "scripts/frontier_cycle912_a3_channel_2026_07_28.py",
-  "runner_sha256": "fc14dd127e6b7ef49f1e74b8e01f21fe865af4220f2d3a2e369bf9adca65033a",
-  "runtime_seconds": 204.871
+  "runner_sha256": "42f22b1660b01fbb7aa315e3957bd5b43b75eee27aeb6fd24b3814f1fbe6f563",
+  "runtime_seconds": 208.993
 }

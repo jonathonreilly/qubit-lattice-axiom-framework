@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle912_a3_channel_2026_07_28.py
-runner_sha256: fc14dd127e6b7ef49f1e74b8e01f21fe865af4220f2d3a2e369bf9adca65033a
+runner_sha256: 42f22b1660b01fbb7aa315e3957bd5b43b75eee27aeb6fd24b3814f1fbe6f563
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 205.341
+elapsed_sec: 209.454
 status: ok
 ----- stdout -----
 CYCLE912_A3_CHANNEL_CONTENT_MEASURABILITY_ORPHANED_NOTE_AND_613_RESIDUES
@@ -12,8 +12,8 @@ NO_PROBABILITY_POSTULATE_IS_INTRODUCED_BY_THIS_BLOCK
 
 CERTIFICATE A_PINS PASS {"blocked_modules_loaded":[],"existing_worktree_relative":true,"firewall_hits":[],"git_blob_mismatches":[],"git_blobs_all_match":true,"literal_ok":true,"sha256_all_match":true,"sha256_mismatches":[]}
 
-[build 1 complete at 78.0s]
-[build 2 complete at 156.3s]
+[build 1 complete at 78.3s]
+[build 2 complete at 157.9s]
 CERTIFICATE D_DETERMINISM PASS {"identical":true,"science_digest":"628b2cca9bfdd050"}
 
 ==========================================================================
@@ -77,6 +77,14 @@ C3 -- THE ORPHANED ENVARIANCE NOTE
   outcomes **exists and is a function of the (record/quantum) state**.
   [A3_LEDGER_ROW @byte 4957] | A3 a probability measure **exists and is state-functional** | **admission** | **NO** |
 
+  re-run of the recovered runner (temp copy, not committed): exit=0 in 0.294s
+    self-check emitted : ['SELF-CHECK: PASS=44 FAIL=0  ->  OK', 'SELF-CHECK: PASS=44 FAIL=0  ->  OK']
+    committed cache    : ['SELF-CHECK: PASS=44 FAIL=0  ->  OK', 'PASS=44 FAIL=0']
+    PASS=44 FAIL=0 CLAIM VERIFIED: True
+    labelled checks    : re-run {'PASS': 46, 'FAIL': 0}, cache {'PASS': 44, 'FAIL': 0}
+    label lines identical over the shared prefix (44): True
+    the committed cache is TRUNCATED relative to a live run: the re-run prints 46 [PASS] lines but the runner's own tally reports 44, because the final sympy exact cross-check block prints two checks it does not add to the counter, and the committed cache stops at 321 lines, before that block.  The PASS=44 FAIL=0 claim itself verifies exactly; the runner simply under-counts its own checks by two and the cache was captured mid-stream.
+
   RECOMMENDATION: land the note (and its runner and cache) into the audit lane so the A3 admission is citable from the landed tree.  This block does NOT restore the file -- no docs are written here; the recommendation is emitted as data for the lane that owns landing.
 
 ==========================================================================
@@ -111,4 +119,4 @@ CERTIFICATE T_TEETH PASS  8/8 teeth fired
 
 receipt -> outputs/a3_channel_cycle912_receipt_2026_07_28.json
 all certificates pass: True
-elapsed 204.9s
+elapsed 209.0s

@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor line-by-line review",
+  "block": "toe-time-blockT4-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "9/9 gates PASS; full B=5 agreement on both instruments; 0 missed periods; findings_the_primary_did_not_report EMPTY; 154.9s",
+    "primary": "9/9 gates PASS; 389,304 clock readings, no sampling; B=4/8192 reproduces the pinned 881 census exactly; 574.9s"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 4th T-family PR: a stated conjecture closed by its own falsifier, an exact replacement law, two spectrum-shape corollaries, a contingency adjudication, and a repricing of the parent's tail readings; nothing corollary",
+  "cycles": [
+    889
+  ],
+  "files": {
+    "docs/DELTA_SPECTRUM_FALSIFIED_ALIGNMENT_LAW_CYCLE889_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "5f27e2456d8191a9d46f7859e0e9026441c195e9",
+      "sha256": "f96edeb5c63e30163d899f5b26d789616d2e47ebb9ca9d3f6a310165cd412509"
+    },
+    "logs/runner-cache/frontier_cycle889_delta_spectrum_2026_07_28.txt": {
+      "git_blob": "a1ac91d1ce89275f7034756fbb3b527a564e9738",
+      "sha256": "48c0bc663d2a5254947087003ece0b34dd730a291ccef2f1b007a5043ec2a5be"
+    },
+    "logs/runner-cache/frontier_cycle889_delta_spectrum_independent_check_2026_07_28.txt": {
+      "git_blob": "d46f2982b9a80688271e50caf321bb705242badd",
+      "sha256": "f28a427b70791f25f31dada9c46b6d535fefa6f31b37a096e4e1521ced91596e"
+    },
+    "outputs/delta_spectrum_cycle889_receipt_2026_07_28.json": {
+      "git_blob": "2191d809ff5b4b9f082d9f703969e05638e6e33e",
+      "sha256": "10840d84d3110fa192c28667334152da815f535f131d59e763dc64bf0aef3a72"
+    },
+    "outputs/delta_spectrum_independent_check_cycle889_receipt_2026_07_28.json": {
+      "git_blob": "ca6f8b2a18fab2b327f08fb1548de17943c8efbb",
+      "sha256": "1ef593d7fab537900eeef3a31bd97370791b9ba3715bf2fbb7646646a08a0ded"
+    },
+    "scripts/frontier_cycle889_delta_spectrum_2026_07_28.py": {
+      "git_blob": "f1bdf1f789a85213a0a854ab0bed45e6bf250fed",
+      "sha256": "c18ed0c49281fd2d54ad013ba12264b181d1720349ee002b144c028b521dd826"
+    },
+    "scripts/frontier_cycle889_delta_spectrum_independent_check_2026_07_28.py": {
+      "git_blob": "0f946f44c431c997410a08ec3e03ae2d26d89b8a",
+      "sha256": "19b38fb116bb8cb79cbb925df91456c5d08d899d4b56de301a9a673ec7dc3ec3"
+    }
+  },
+  "headline": "DELTA-spectrum conjecture FALSIFIED as stated (non-DELTA periods with horizon-closed witnesses at every tier; falsifier-visibility control proves no blind spot); 881's relay-gap theorem untouched; REPLACED by the exact alignment law I_max = max(G-sigma, N-G-sigma), G=(2*DELTA) mod N, with the 2P+1 stretch bound \u2014 3,860 cells exact incl. 1,200 outside the family; corollaries: some DELTA members NEVER align (19@B4, 27@B5, 35@B6...), DELTA=3 never fires (8-event floor), and the even ring-complement family 8(e+1) is equally admissible and ALL observed \u2014 the true spectrum is strictly larger; B=5 contingency RETIRED, B=3 NOT (A2 fails, not alignment); tail censuses repriced as horizon artifacts, episode instrument is the replacement",
+  "independence": "cross-context (independent detector algorithm \u2014 backward scan + KMP, never the bitmask; independent program reconstruction and tick generation; full B=5 recomputation; declared 25% spot-verification at B=6/7; 7/7 teeth)",
+  "note": "docs/DELTA_SPECTRUM_FALSIFIED_ALIGNMENT_LAW_CYCLE889_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 154.91,
+    "primary": 574.9
+  }
+}

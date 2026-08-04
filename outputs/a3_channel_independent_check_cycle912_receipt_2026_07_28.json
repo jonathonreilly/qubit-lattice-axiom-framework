@@ -1,0 +1,269 @@
+{
+  "certificates": {
+    "X0_PINS": {
+      "blocked_modules_loaded": [],
+      "certificate": "X0_PINS",
+      "firewall_hits": [],
+      "mismatches": [],
+      "pass": true,
+      "paths": [
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+        "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+        "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+        "outputs/covariance_tension_cycle906_receipt_2026_07_28.json",
+        "outputs/m6_identification_cycle907_receipt_2026_07_28.json",
+        "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py",
+        "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json",
+        "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "sha256": {
+        "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md": "d2a123540c5a892750e48f01a4d1bf9bfd33270cc7d9c9f39b8a8b82e1728a12",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+        "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f",
+        "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c",
+        "outputs/m6_identification_cycle907_receipt_2026_07_28.json": "d67a967a6226a4e1ed2e0bf1762cb3b544df87e1fe4b07d6399f13ec179086ca",
+        "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json": "9c91d740ce2188d8fd6c51947d63adec38abb8aa1c49eaaf1c2535b16e9bcc52",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+        "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
+        "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py": "b38862284c0287dc8b1f24f5af8bf014509e22377d341b9933a05b2183af0021"
+      }
+    },
+    "X1_CONTENT_MEASURABILITY": {
+      "S2_constraint_rank": 40242,
+      "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+      "all_six_present_in_primary": true,
+      "cell_count_agrees": true,
+      "certificate": "X1_CONTENT_MEASURABILITY",
+      "content_cells_by_union_find": 52018,
+      "content_cells_claimed_by_primary": 52018,
+      "disagreements": [],
+      "event_cardinality": 92260,
+      "pass": true,
+      "route": "weightings rebuilt from definitions; measurability decided as a functional dependency content -> weight; content-cell count derived by union-find over the equality edges",
+      "table": [
+        {
+          "is_content_measurable": true,
+          "n_violating_cells": 0,
+          "weighting": "M1_COUNTING"
+        },
+        {
+          "is_content_measurable": false,
+          "n_violating_cells": 85,
+          "weighting": "M2_PER_WORLD_UNIFORM"
+        },
+        {
+          "is_content_measurable": false,
+          "n_violating_cells": 1002,
+          "weighting": "M3_OCCUPATION_WEIGHTED"
+        },
+        {
+          "is_content_measurable": false,
+          "n_violating_cells": 2670,
+          "weighting": "M4_FORMATION_LIFETIME"
+        },
+        {
+          "is_content_measurable": false,
+          "n_violating_cells": 2670,
+          "weighting": "M5_FORMATION_MOMENT"
+        },
+        {
+          "is_content_measurable": false,
+          "n_violating_cells": 5,
+          "weighting": "M6_ABSOLUTE_ORBIT_UNIFORM"
+        }
+      ],
+      "weightings_agreeing": [
+        "M1_COUNTING",
+        "M2_PER_WORLD_UNIFORM",
+        "M3_OCCUPATION_WEIGHTED",
+        "M4_FORMATION_LIFETIME",
+        "M5_FORMATION_MOMENT",
+        "M6_ABSOLUTE_ORBIT_UNIFORM"
+      ]
+    },
+    "X2_A3_CHANNEL": {
+      "FORMALIZATION_IDENTIFIABILITY": "IDENTIFIED: two materially different encodings of the same landed sentences -- a per-content-cell model space and an explicit linear system decided by row-space membership -- return the same dimensions and the same verdict.  The channel's answer does not depend on which formalization is chosen.",
+      "P_A_forced_checker": true,
+      "P_B_forced_checker": false,
+      "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+      "certificate": "X2_A3_CHANNEL",
+      "checker_formalization": {
+        "S2_rank": 40242,
+        "admissible_probability_affine_dimension": 52017,
+        "content_preserving_pairs_tested": 17348,
+        "encoding": "explicit homogeneous linear system over the 92,260 event weights, one equation per content-equality edge; forcing decided by ROW-SPACE MEMBERSHIP",
+        "pairs_whose_difference_left_the_row_space": 0,
+        "readout_space_dimension": 52018
+      },
+      "checker_verdict": "PARTIALLY-FORCED",
+      "criterion_reading_note": "both formalizations read the memo's section-1 criterion as its own bytes state it -- a reality criterion about influence on record formation and frequencies.  Neither reads it as a regional locality sentence; no such sentence exists in the memo.  A formalization that assumed locality would be answering a different question, and the checker records that it did not.",
+      "material_differences": [],
+      "outcome_neutral": true,
+      "pass": true,
+      "primary_formalization": {
+        "admissible_probability_affine_dimension": 52017,
+        "encoding": "one free value per content cell; forcing decided by vanishing of the difference functional's coefficient vector",
+        "readout_space_dimension": 52018
+      },
+      "primary_verdict": "PARTIALLY-FORCED",
+      "verdict_classes_reachable_under_the_checker_formalization": [
+        "FORCED-AT-READOUT-GRADE",
+        "NOT-FORCED",
+        "PARTIALLY-FORCED"
+      ]
+    },
+    "X3_PROVENANCE": {
+      "A3_admission_present_in_the_recovered_note": true,
+      "PASS_44_claim_present_in_the_note": true,
+      "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+      "certificate": "X3_PROVENANCE",
+      "commits_resolved": {
+        "1c277078dd": "1c277078ddf53fffe49a2b17b8b6467f427f7433",
+        "a61fa74c3b": "a61fa74c3bda229ef90b6ef6e113168e93953af7"
+      },
+      "deletion_commits_reachable_from_HEAD": [],
+      "git_commands_run": [
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 rev-parse a61fa74c3b^{commit}",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 rev-parse 1c277078dd^{commit}",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 show 1c277078dd:docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 show 1c277078dd:scripts/frontier_born_from_envariance_2026_06_05.py",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 log HEAD --diff-filter=D --format=%H -- docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md scripts/frontier_born_from_envariance_2026_06_05.py",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 merge-base --is-ancestor a61fa74c3b HEAD",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 merge-base --is-ancestor 1c277078dd HEAD",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 for-each-ref --contains 1c277078dd --format=%(refname)"
+      ],
+      "is_ancestor_of_HEAD": {
+        "1c277078dd": false,
+        "a61fa74c3b": false
+      },
+      "mismatches_against_the_primary": [],
+      "note_sha256": "21c22981929f0304efbe15459fc2a9c43c3c4d2af2a69f06bd22d8efcfc2ccfd",
+      "orphan_mechanism_independently_confirmed": true,
+      "pass": true,
+      "refs_containing_the_note": [
+        "refs/remotes/origin/born-from-envariance-2026-06-05"
+      ],
+      "runner_sha256": "a45a7315a5815a578458248363eb73e00334df95c672aa52840a699f95a5eee1"
+    },
+    "X4_RESIDUE_VECTORS": {
+      "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+      "arity_prediction_matches": true,
+      "certificate": "X4_RESIDUE_VECTORS",
+      "closure_arities": {
+        "K1_IDENTITY": 30,
+        "K2_TAG_RESTRICTION": 180,
+        "K3_PAIRWISE_PRODUCT": 435,
+        "K4_INDEX_PROFILE": 36,
+        "K5_POSITION_ATOM": 129,
+        "K6_BOUNDED_SUM": 594
+      },
+      "degree0_filter_native": 0,
+      "degree2_filter_native": 188,
+      "distinct_raw_world_sum_vectors": 874,
+      "distinct_residue_vectors": {
+        "175": 816,
+        "19003": 874,
+        "25": 669,
+        "31": 671,
+        "5": 391,
+        "613": 853,
+        "7": 426
+      },
+      "independent_reading": "853 distinct residue vectors mod 613 across 1404 recipes (0.608), and 0 native recipes clear the degree-0 gate against 7.57 expected under the per-prime-power null.  The survey's independence is deflated but real; the no-realizer result is not an artifact of a collapsed family.",
+      "mismatches_against_the_primary": [],
+      "null_degree0_expected_passes": "7.57",
+      "null_degree0_per_prime_power": "0.00539",
+      "null_degree2_single_modulus_expected": "85.77",
+      "observed_by_family": {
+        "K1_IDENTITY": 30,
+        "K2_TAG_RESTRICTION": 180,
+        "K3_PAIRWISE_PRODUCT": 435,
+        "K4_INDEX_PROFILE": 36,
+        "K5_POSITION_ATOM": 129,
+        "K6_BOUNDED_SUM": 594
+      },
+      "pass": true,
+      "recipe_count_observed": 1404,
+      "recipe_count_predicted_from_closure_arities": 1404,
+      "route": "world sums by grouping on the world index; recipe count derived arithmetically from the declared closure arities",
+      "some_world_sum_divisible_by_31": 254,
+      "some_world_sum_divisible_by_613": 22,
+      "stated_0_00539_reproduced": true,
+      "stated_85_8_reproduced": true
+    },
+    "X_TEETH": {
+      "caught": 8,
+      "certificate": "X_TEETH",
+      "pass": true,
+      "rows": [
+        {
+          "caught": true,
+          "detail": "",
+          "tamper": "a byte flipped in the pinned axiom memo",
+          "tooth": "X_T1_TAMPERED_PIN"
+        },
+        {
+          "caught": true,
+          "detail": "primary carries 6 weightings",
+          "tamper": "M6 removed from the weighting table",
+          "tooth": "X_T2_DROPPED_WEIGHTING"
+        },
+        {
+          "caught": true,
+          "detail": "",
+          "tamper": "the verdict is a constant rather than a function of the model",
+          "tooth": "X_T3_HARDCODED_CHANNEL_VERDICT"
+        },
+        {
+          "caught": true,
+          "detail": "",
+          "tamper": "a sentence that forces nothing is reported as closing the channel",
+          "tooth": "X_T4_LEAKED_FORCING"
+        },
+        {
+          "caught": true,
+          "detail": "",
+          "tamper": "a counting sentence that genuinely forces must be seen as forcing",
+          "tooth": "X_T5_PLANTED_FORCING_BLINDNESS"
+        },
+        {
+          "caught": true,
+          "detail": "",
+          "tamper": "the recipe census is short of the closure's own arity",
+          "tooth": "X_T6_SKIPPED_RECIPE"
+        },
+        {
+          "caught": true,
+          "detail": "1 conflicts detected after the merge",
+          "tamper": "two content cells merged and one weight perturbed",
+          "tooth": "X_T7_PLANTED_CELL_MERGE"
+        },
+        {
+          "caught": true,
+          "detail": "2 -> 3 distinct vectors",
+          "tamper": "one world sum moved: the distinct-vector count must move",
+          "tooth": "X_T8_PLANTED_WORLD_SUM_PERTURBATION"
+        }
+      ],
+      "total": 8
+    }
+  },
+  "checker_verdict": "PRIMARY_SURVIVES_THIS_CHECK",
+  "cycle": 912,
+  "exit_is_independent_of_claim_survival": true,
+  "per_check_verdicts": {
+    "X1_CONTENT_MEASURABILITY": "PRIMARY_SURVIVES_THIS_CHECK",
+    "X2_A3_CHANNEL": "PRIMARY_SURVIVES_THIS_CHECK",
+    "X3_PROVENANCE": "PRIMARY_SURVIVES_THIS_CHECK",
+    "X4_RESIDUE_VECTORS": "PRIMARY_SURVIVES_THIS_CHECK"
+  },
+  "primary_receipt_sha256": "0baaf10911312966c9986adfaa70ae4ba6459a56b9536af2d8a22cc5fb175f04",
+  "primary_runner_sha256": "fc14dd127e6b7ef49f1e74b8e01f21fe865af4220f2d3a2e369bf9adca65033a",
+  "role": "independent checker, specified to refute",
+  "runner": "scripts/frontier_cycle912_a3_channel_independent_check_2026_07_28.py",
+  "runner_sha256": "72617e76f7bf6b1fa45ef99b551e77ca2f5d817f26273b576d800b055fb37070",
+  "runtime_seconds": 78.783
+}

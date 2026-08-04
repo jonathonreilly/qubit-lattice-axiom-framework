@@ -248,3 +248,26 @@
   falsification + exact replacement law + two corollaries +
   contingency adjudication + parent-tail repricing.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 890 multiplicity-freeness (blockG14, PR #5950) — 2026-08-04
+
+- Supervisor review: nine-commit trail read (incl. the mid-block
+  FIND-1 adoption and the two rubric-variant split); the H2 sweep's
+  completeness is a byte-exact reconstruction proof, not a coverage
+  assertion; gates outcome-neutral; the T1 honesty disclosure (the
+  equivalence is the classical semisimple fact — the certified content
+  is the census-wide two-route verification) carried in the receipt.
+- The worker found ITS OWN verdict-flipping defect (false EXACT on a
+  historical sentence) and fixed it with a principled rubric split,
+  both variants running, the gap disclosed as a finding. This is the
+  runner-honesty pattern working unprompted.
+- Checker: independent machinery throughout; segmentation-invariance;
+  FIND-1 adopted mid-block with commit trail; 8/8 teeth.
+- Ladder closed: 883 (SL1 derived at C3) -> 886 (scope not derivable,
+  cyclics) -> 888 (menu dissolves, property named) -> 890 (property
+  NOT quotable; terminal clause registered; endpoint {C3, C4}; last
+  separation = the orbit-scope coarse READING choice).
+- Cluster-cap (14th gravity-family PR): **OPEN** — ladder closure +
+  equivalence theorem + computed endpoint + reconstruction-proof
+  sweep.
+- Local disposition: **pass** (bounded_theorem; audit pending).

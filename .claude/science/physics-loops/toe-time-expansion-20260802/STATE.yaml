@@ -376,12 +376,16 @@ worktrees:
     exactness verified against full space; FIVE absent predecessors
     pinned incl. THE d=1 COMPARATOR NOTE (git recovery = next block);
     primary exit 1 BY DESIGN (parent wiring)
-  c5-m2: M2 (Cycle 915, the comparator recovery — the five absent
-    predecessors hunted in git history (priority: the d=1 comparator note
-    and its theta-floor provenance); the delta-memo lambda=0.02 run (the
-    window extends or a lower boundary brackets); the late-grid
-    persistence story at the certified lambdas; stacked on M1 tip) —
-    running
+  c5-m2: blockM2 SHIPPED as PR #5980 — Cycle 915 ALL SIX predecessors
+    RECOVERED (never-landed; the 07-19 landing carried only the window
+    layer; true absent set 8+; landing recs emitted, 2 HIGH); 914's
+    THETA-FLOOR CORRECTED (the d=1 note states NO theta — structural
+    negative, branching geometry required; the 0.20 floor = the
+    never-landed DEPOSITION comparator under a DIFFERENT baseline; THREE
+    theta conventions share one name; citation rule emitted);
+    lambda=0.02 CERTIFIES (R_ind=6, window extends, no lower boundary);
+    late grid DECAYS with THE measurement: theta returns to ~0.50 while
+    nothing certifies — THETA DOES NOT TRACK CERTIFICATION
 backlog: CLOSED by Cycle 895 (PR #5957) — all three grading-consuming
   scripts priced (316 BROKEN_OFF_UNIT; 325 structurally T_UNIFORM with one
   sensitive control; 876-checker forced-(1,2,0))

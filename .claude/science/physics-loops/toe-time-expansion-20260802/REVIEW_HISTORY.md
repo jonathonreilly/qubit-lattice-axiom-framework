@@ -893,3 +893,28 @@ three-orbit horizon-criticality; T7 mis-stated (gravity side).
   was missing was the re-audit. (Fix at wind-down memory bank.)
 - Cluster-cap: 1st M-family PR — below threshold.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 915 comparator recovery (blockM2, PR #5980) — 2026-08-04
+
+- Supervisor review: the dual-method provenance derivations; the
+  byte-quoted theta-floor correction (a real misattribution in the
+  914 stdout label — the ship note and PR carry the citation rule);
+  the triple-implemented lambda=0.02 agreement; the
+  theta-does-not-track measurement (computed, not asserted).
+- Checker: 10/10 survive; every recovered-byte quote verified
+  verbatim; 8/8 teeth.
+- Science movers: the d=1 geometric no-go confirmed at source
+  (branching environment geometry required — matches the lane
+  memory); the three-convention theta finding (a reconciliation
+  target, the 896 pattern); the window extension; the decay result.
+- MASS-LANE LEDGER after M1/M2: (1) the theta-convention
+  reconciliation (three conventions, one name); (2) tier-2 late
+  samples (Jt=5,10 — the only re-certification candidate, priced
+  ~500s/lambda); (3) the audit-lane landings (8 items, 2 HIGH); (4)
+  the deposition comparator's own never-landed chain. The lane's
+  registration story is now: measured (d=3 bar), reproduced
+  (three implementations), extended (lambda=0.02), decay-bounded,
+  with its comparator lineage recovered and its indicator honestly
+  decoupled from its bar.
+- Cluster-cap: 2nd M-family PR — below threshold.
+- Local disposition: **pass** (bounded_theorem; audit pending).

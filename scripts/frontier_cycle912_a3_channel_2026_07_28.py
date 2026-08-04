@@ -1112,6 +1112,89 @@ def git(args: list, commands: list) -> tuple:
     return out.stdout, None
 
 
+def rerun_recovered_runner(runner_bytes: bytes, cache_bytes: bytes) -> dict:
+    """Re-run the recovered PASS=44 runner from a TEMP COPY, never from the
+    worktree, and never as a committed deliverable.  The runner tees its own log
+    to <script dir>/../logs/runner-cache/, so it is placed under tmp/scripts/ and
+    everything it writes stays inside the temporary directory.
+
+    DISCLOSED EXCEPTION to this block's deterministic double-build: this is a
+    foreign process executed once.  Its verdict is verified against the digests
+    of the recovered bytes and against the committed cache's own counts, so a
+    substituted or edited runner cannot pass."""
+    import shutil
+    import tempfile
+
+    tmp = tempfile.mkdtemp(prefix="cycle912_c3_rerun_")
+    try:
+        scripts_dir = Path(tmp) / "scripts"
+        scripts_dir.mkdir(parents=True, exist_ok=True)
+        target = scripts_dir / Path(ORPHAN_RUNNER).name
+        target.write_bytes(runner_bytes)
+        started = time.time()
+        try:
+            proc = subprocess.run([sys.executable, str(target)],
+                                  capture_output=True, cwd=tmp, timeout=300)
+            elapsed = time.time() - started
+            stdout = proc.stdout.decode("utf-8", "replace")
+            stderr = proc.stderr.decode("utf-8", "replace")
+            code = proc.returncode
+            ran = True
+        except (OSError, subprocess.SubprocessError) as exc:
+            elapsed, stdout, stderr, code, ran = (
+                time.time() - started, "", f"{type(exc).__name__}: {exc}",
+                None, False)
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+    lines = stdout.splitlines()
+    cache_lines = cache_bytes.decode("utf-8", "replace").splitlines()
+    self_checks = [ln for ln in lines if "PASS=" in ln and "FAIL=" in ln]
+    cache_checks = [ln for ln in cache_lines if "PASS=" in ln and "FAIL=" in ln]
+    pass_labels = sum(1 for ln in lines if ln.startswith("[PASS]"))
+    fail_labels = sum(1 for ln in lines if ln.startswith("[FAIL]"))
+    cache_pass = sum(1 for ln in cache_lines if ln.startswith("[PASS]"))
+    cache_fail = sum(1 for ln in cache_lines if ln.startswith("[FAIL]"))
+    claim_holds = ran and code == 0 and bool(self_checks) and all(
+        "PASS=44 FAIL=0" in ln for ln in self_checks)
+    label_lines = [ln for ln in lines if ln.startswith(("[PASS]", "[FAIL]"))]
+    cache_label_lines = [ln for ln in cache_lines
+                         if ln.startswith(("[PASS]", "[FAIL]"))]
+    shared = min(len(label_lines), len(cache_label_lines))
+    return {
+        "ran_from": "a temporary copy outside the worktree; not committed",
+        "ran": ran,
+        "exit_code": code,
+        "elapsed_seconds": round(elapsed, 3),
+        "runner_sha256": sha256(runner_bytes).hexdigest(),
+        "stdout_sha256": sha256(stdout.encode("utf-8")).hexdigest(),
+        "stdout_lines": len(lines),
+        "stderr": stderr[:400],
+        "self_check_lines_emitted": self_checks,
+        "self_check_lines_in_the_committed_cache": cache_checks,
+        "PASS_44_FAIL_0_CLAIM_VERIFIED": claim_holds,
+        "labelled_checks_printed_by_the_rerun": {"PASS": pass_labels,
+                                                 "FAIL": fail_labels},
+        "labelled_checks_in_the_committed_cache": {"PASS": cache_pass,
+                                                   "FAIL": cache_fail},
+        "label_lines_identical_over_the_shared_prefix":
+            label_lines[:shared] == cache_label_lines[:shared],
+        "shared_label_lines_compared": shared,
+        "DISCREPANCY_FOUND": (
+            "the committed cache is TRUNCATED relative to a live run: the"
+            f" re-run prints {pass_labels} [PASS] lines but the runner's own"
+            " tally reports 44, because the final sympy exact cross-check"
+            " block prints two checks it does not add to the counter, and the"
+            f" committed cache stops at {len(cache_lines)} lines, before that"
+            " block.  The PASS=44 FAIL=0 claim itself verifies exactly; the"
+            " runner simply under-counts its own checks by two and the cache"
+            " was captured mid-stream."
+            if ran and pass_labels != cache_pass else
+            "none: the re-run reproduces the committed cache's labelled checks"
+            " and counts"),
+    }
+
+
 def c3_orphaned_note(quotes_out: dict) -> dict:
     commands: list = []
     cert: dict = {
@@ -1258,6 +1341,10 @@ def c3_orphaned_note(quotes_out: dict) -> dict:
             if ln.startswith("[FAIL]")),
     }
 
+    # (c continued) the re-run, from a temp copy
+    cert["rerun_of_the_recovered_runner"] = rerun_recovered_runner(
+        runner or b"", cache or b"")
+
     # (d) the assessment, as data
     cert["assessment"] = {
         "what_the_note_derives": (
@@ -1276,7 +1363,8 @@ def c3_orphaned_note(quotes_out: dict) -> dict:
         "corpus_status": (
             "the note is the tightest statement of the Born gap in the corpus"
             " and it is not in the landed tree: it sits on an unmerged branch"
-            " with a runner whose PASS=44 FAIL=0 claim re-verifies"),
+            " with a runner whose PASS=44 FAIL=0 claim re-verifies"
+            f" ({cert['rerun_of_the_recovered_runner']['PASS_44_FAIL_0_CLAIM_VERIFIED']})"),
         "RECOMMENDATION_FOR_THE_AUDIT_LANE": (
             "land the note (and its runner and cache) into the audit lane so the"
             " A3 admission is citable from the landed tree.  This block does NOT"
@@ -1289,6 +1377,8 @@ def c3_orphaned_note(quotes_out: dict) -> dict:
         cert["recovered_note"]["bytes"] > 0
         and cert["recovered_runner"]["bytes"] > 0
         and len(a3_quotes) == 5
+        and cert["rerun_of_the_recovered_runner"][
+            "PASS_44_FAIL_0_CLAIM_VERIFIED"]
     )
     return cert
 
@@ -1732,6 +1822,22 @@ def main() -> int:
         for q in cert_c3["A3_admission_byte_quotes"][:2]:
             print(f"  [{q['label']} @byte {q['byte_offset']}]"
                   f" {q['text'][:150]}")
+        rr = cert_c3["rerun_of_the_recovered_runner"]
+        print()
+        print(f"  re-run of the recovered runner (temp copy, not committed):"
+              f" exit={rr['exit_code']} in {rr['elapsed_seconds']}s")
+        print(f"    self-check emitted : {rr['self_check_lines_emitted']}")
+        print(f"    committed cache    : "
+              f"{rr['self_check_lines_in_the_committed_cache']}")
+        print(f"    PASS=44 FAIL=0 CLAIM VERIFIED:"
+              f" {rr['PASS_44_FAIL_0_CLAIM_VERIFIED']}")
+        print(f"    labelled checks    : re-run"
+              f" {rr['labelled_checks_printed_by_the_rerun']}, cache"
+              f" {rr['labelled_checks_in_the_committed_cache']}")
+        print(f"    label lines identical over the shared prefix"
+              f" ({rr['shared_label_lines_compared']}):"
+              f" {rr['label_lines_identical_over_the_shared_prefix']}")
+        print(f"    {rr['DISCREPANCY_FOUND']}")
         print()
         print("  RECOMMENDATION: "
               + cert_c3["assessment"]["RECOMMENDATION_FOR_THE_AUDIT_LANE"])

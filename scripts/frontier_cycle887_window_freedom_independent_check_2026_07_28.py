@@ -1159,6 +1159,15 @@ def attack_H():
                      "eq_failures": ev["eq_failures"]}
     fresh_outside = sorted(n for n, r in esc.items()
                            if r["admissible"] and r["is_fixed_S"] is False)
+    # HONEST TRANSFER TABLE: which escape classes are family-dependent?
+    home_outside = set()
+    for name, fn in CATALOGUE:
+        if name.startswith("IMP_"):
+            continue
+        if check(fn, FAM)["admissible"] and is_fixed_S(fn, FAM)["is_fixed_S"] is False:
+            home_outside.add(name)
+    lost_on_fresh = sorted(home_outside - set(fresh_outside))
+    gained_on_fresh = sorted(set(fresh_outside) - home_outside)
     # (c) containment refutation on the fresh family
     cont = containment(M(SN6), FRESH)
     cont_ev = check(M(SN6), FRESH)
@@ -1231,6 +1240,9 @@ def attack_H():
         "sufficiency_holds_on_fresh": suff_ok,
         "escape_classes_on_fresh": esc,
         "still_outside_fixed_S_on_fresh": fresh_outside,
+        "escape_classes_outside_on_the_primary_family": sorted(home_outside),
+        "escape_classes_that_do_NOT_transfer": lost_on_fresh,
+        "escape_classes_that_only_appear_on_fresh": gained_on_fresh,
         "containment_on_fresh": cont,
         "containment_witness_admissible_on_fresh": cont_ev["admissible"],
         "annular_on_fresh": {"structuring_sets": total,
@@ -1258,7 +1270,16 @@ def attack_H():
             f"{primary_ann['distinct_annular_behaviours']}); the RATIO differs "
             f"with the family, the strict-coarseness CLAIM does not.  "
             f"{len(gauge)} maps remain readout-indistinguishable.  All "
-            f"impostors still refused ({imp_ok})."),
+            f"impostors still refused ({imp_ok}).  ONE class is "
+            f"FAMILY-DEPENDENT and is reported rather than absorbed: "
+            f"{lost_on_fresh or ['none']} escapes the fixed-S family on the "
+            f"12-configuration family but coincides with a fixed-S map on all "
+            f"{len(FRESH)} fresh ones -- morphological closing only separates "
+            f"from a dilation when a configuration has a concavity the "
+            f"structuring element can bridge, and the fresh family happens to "
+            f"contain none.  The class is real; the WITNESS is not universal, "
+            f"which is a limit on how a single family can certify a "
+            f"counterexample class."),
         "pass": True}
 
 

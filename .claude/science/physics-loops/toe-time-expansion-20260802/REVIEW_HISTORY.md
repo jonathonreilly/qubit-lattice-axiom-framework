@@ -131,3 +131,28 @@
 - Local disposition: primary **pass**; checker (fresh context, spec'd
   to refute; includes an attack on the uniqueness-filter rule itself —
   REQ4 predates the filter in the WIP commit) launched.
+
+## Cycle 885 checker + ship (blockG10, PR #5944) — 2026-08-04
+
+- Checker (third context): C1/C2/C4/C5 CORROBORATED — C2 strengthened
+  (every depth, not sampled), C4 extended (six thetas, dual
+  implementations 48/48, interference mechanism). Zero mismatches on
+  25 comparable observations. Filter-rule provenance audit: REQ4
+  byte-identical in the WIP blob, predates the filter — NOT
+  outcome-motivated.
+- C3 NARROWED (checker find #1): every k-fold dilation of supp(R)
+  passes ALL declared requirements and moves (a,b) on 12/12 — the
+  primary's "only the centre convention survives" was an artifact of
+  sweeping three candidates. Extent residual re-priced as dilation
+  scale + centre convention. Adopted into the note, not argued away.
+- C6 UPGRADED (checker find #2): disjoint-window IMPOSSIBILITY theorem
+  under declared REQ4 (constructive 12/12; scope caveat: primary tests
+  REQ4 on truncation chains only). Carried to Gate-B repair lane.
+- Teeth 7/7 (checker's first run caught two of its own defective
+  mutations; repaired in dedicated commits before the final run).
+- Cluster-cap evaluation (10th gravity-family PR): **OPEN** — answers
+  the exact door G9 sized; new load-bearing content (permanence
+  refutation, impossibility theorem, GBW1a/GBW1b re-scope); distinct
+  claim type vs G9 anatomy.
+- Local disposition: **pass** (ship as bounded_theorem with both
+  checker narrowings adopted; independent audit still required).

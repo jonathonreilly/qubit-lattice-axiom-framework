@@ -60,24 +60,18 @@ worktrees:
   c5-g9: blockG9 SHIPPED as PR #5943 — GB-S2 anatomy: p=1 + TOWARD
     orientation FORCED; landed kernel non-harmonic for every epsilon; honest
     residual 10+ (chart-coincidence of the 8 flagged); next door GBW1
-  c5-g10: G10 (Cycle 885, GBW1 — the detector window is record-determined,
-    covers 5/10; stacked on G9) — first worker STOPPED BY OWNER 2026-08-04
-    ~03:15Z mid-stress-test; owner then said "continue"; partial primary
-    (1,956 lines, one completed run: GBW1 misscoped — D gauge, barrier
-    derived, a/b existence-derived, N kernel-coupled => GBW1a/GBW1b split,
-    sixth coordinate centre exposed) committed as WIP f4533dd7bd and pushed;
-    finisher worker DONE (commits 6f79f65fb4 + 1a63dcbdb1, pushed): the
-    supervisor's "wrong pin path" premise was itself wrong (two distinct 884
-    receipts share a basename; the pin was correct and the worker refused the
-    instructed repoint — recorded as supervisor spec error); real repairs:
-    receipt relocated to outputs/, preflight pin hard-fail (exit 2), uncapped
-    failure counts (landed barrier 6 -> 1152/1440), admissibility-filtered
-    uniqueness (boundary shell REFUTED by REQ4 24/35 retractions => support
-    window SELECTED, residual drops 4 -> 3 items), computed centre class
-    (splits 4/12), stress extended to all 5 verdict maps + move_site,
-    degenerate-window theta control, O_CONTROLS rendered, idempotent census;
-    15/15 certificates pass, classification counts unchanged (2 determined /
-    2 existence-only / 1 supplied); checker (fresh context) — running
+  c5-g10: blockG10 SHIPPED as PR #5944 — Cycle 885 GBW1 split and re-priced
+    (two-worker block: first stopped by owner mid-run, second reviewed-as-
+    untrusted + repaired 9 defects; supervisor pin-path spec error recorded);
+    barrier DERIVED (landed barrier refuted 1152/1440, all translational);
+    D GAUGE (every depth); boundary shell REFUTED by permanence 24/35 BUT
+    checker WIDENED the extent residual (every dilation of the support
+    passes all declared requirements => dilation scale + centre convention);
+    centre sixth coordinate (splits 4/12); N SUPPLIED theta-coupled 7/12 at
+    six thetas => GBW1a/GBW1b; checker UPGRADE: no non-empty record-
+    determined window can be barrier-disjoint (theorem under declared REQ4,
+    scope caveat noted); named next doors: a k=0 minimality principle,
+    GBW1b (joint with kernel block)
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

@@ -1192,12 +1192,21 @@ def reachable_set(n: int, w: int, sums: int = 1) -> set[Fraction]:
     return out
 
 
-def reachable_set_certificate() -> dict:
+def gap_reachable(base: set[Fraction], g: int) -> set[Fraction]:
+    """Values alpha != 0 with alpha^g in `base` -- i.e. reachable at gap g.
+
+    A gap-g two-term relation is k_a alpha^a = k_b alpha^b with a - b = g, so
+    alpha^g = k_b/k_a must lie in the coefficient quotient set `base`.  The SAME
+    `base` object is used by the reachable-set certificate and the v3 census, so
+    the two tables cannot drift apart.
+    """
+    return {a for a in base if a != 0 and a ** g in base}
+
+
+def reachable_set_certificate(r_by_w: dict[int, set[Fraction]]) -> dict:
     rows = []
-    r_by_w: dict[int, set[Fraction]] = {}
-    for w in (1, 2):
-        rset = reachable_set(PRIMARY_SCOPE, w)
-        r_by_w[w] = rset
+    for w in sorted(r_by_w):
+        rset = r_by_w[w]
         rows.append({
             "word_bound_W": w,
             "reachable_nonzero_values": len(rset),
@@ -1222,16 +1231,10 @@ def reachable_set_certificate() -> dict:
                 p += 1
             if x > 1:
                 primes.add(x)
-    # gap-g reach: which values survive as exact g-th roots.
+    # gap-g reach: alpha is reachable at gap g iff alpha^g lies in `base`.
     gap_rows = []
     for g in (1, 2, 3):
-        hits = set()
-        for c in base:
-            if c == 0:
-                continue
-            for cand in base:
-                if cand ** g == c:
-                    hits.add(cand)
+        hits = gap_reachable(base, g)
         gap_rows.append({
             "degree_gap_g": g,
             "values_reachable_as_exact_gth_roots": len(hits),
@@ -1277,12 +1280,13 @@ def reachable_set_certificate() -> dict:
 # ---------------------------------------------------------------------------
 # certificate G: the v3 census
 # ---------------------------------------------------------------------------
-def v3_census_certificate() -> dict:
+def v3_census_certificate(base: set[Fraction]) -> dict:
     """THEOREM C904-T4.  Exact enumeration of reachable 3-adic valuations."""
     atoms = native_atoms(PRIMARY_SCOPE)
     nz = {v for v, _ in atoms.values() if v != 0}
     atom_v3 = sorted({v3(v) for v in nz})
-    # word-level v3 reach: sums of at most w atom valuations, minus same.
+    # Coefficient-level bookkeeping: the v3 values an atom WORD can carry.
+    # This is the model; the gap table below is the realised computation.
     def v3_reach(w: int) -> set[int]:
         cur = {0}
         acc = {0}
@@ -1300,15 +1304,18 @@ def v3_census_certificate() -> dict:
             "v3_reach_max": max(reach),
             "minus_three_reachable": -3 in reach,
         })
-    # gap-g: alpha^g = c gives v3(alpha) = v3(c)/g, integral only.
+    # Realised gap table, computed on the SAME reachable set the F certificate
+    # uses, so the two tables agree by construction rather than by model.
     gap_rows = []
-    base_reach = v3_reach(1)
     for g in (1, 2, 3):
-        vals = sorted({c // g for c in base_reach if c % g == 0})
+        hits = gap_reachable(base, g)
+        vals = sorted({v3(a) for a in hits})
         gap_rows.append({
             "degree_gap_g": g,
             "reachable_v3_of_alpha": vals,
+            "values_at_this_gap": len(hits),
             "minus_three_reachable": -3 in vals,
+            "target_at_this_gap": TARGET_ALPHA in hits,
         })
     # The concrete witness at the tightest level.
     witness = None
@@ -1334,6 +1341,11 @@ def v3_census_certificate() -> dict:
         "brief_predicted_atom_v3": [-1, 0, 1],
         "brief_prediction_confirmed": set(atom_v3) <= {-1, 0, 1},
         "levels": rows,
+        "levels_are_a_model_not_a_computation": (
+            "the `levels` table describes which v3 values an atom WORD of "
+            "bound w can carry; the `gap_structure` table below is computed "
+            "on the realised reachable set, on the same object the "
+            "F_REACHABLE_SET certificate uses, so the two cannot drift"),
         "gap_structure": gap_rows,
         "the_minus_three_question": {
             "question": "can native mixed-degree relations produce v3 = -3, "
@@ -1596,10 +1608,9 @@ def fidelity_method_certificate(family: dict, target: dict) -> dict:
 # ---------------------------------------------------------------------------
 # certificate K: monotonicity -- why bound attacks cannot overturn the verdict
 # ---------------------------------------------------------------------------
-def monotonicity_certificate() -> dict:
+def monotonicity_certificate(r_by_w: dict[int, set[Fraction]]) -> dict:
     """THEOREM C904-T7.  The negative verdict is monotone in every bound."""
-    r1 = reachable_set(PRIMARY_SCOPE, 1)
-    r2 = reachable_set(PRIMARY_SCOPE, 2)
+    r1, r2 = r_by_w[1], r_by_w[2]
     nested = r1 <= r2
     # enlarge the atom set: add matrix powers up to 3 (beyond the declared cap)
     global MATRIX_POWER_CAP
@@ -1822,8 +1833,9 @@ SIBLING_HANDOFF = (
      "source": "Cycle 898, branch blockG21 (cross-branch)"},
     {"shape": "M3", "handoff_result": "AMPLIFIES ONLY",
      "source": "Cycle 898, branch blockG21 (cross-branch)"},
-    {"shape": "non-involution mixed-degree", "handoff_result":
-        "DECLARED UNPRICED -- the single remaining shape",
+    {"shape": "non-involution mixed-degree (handoff row: unpriced)",
+     "handoff_result": "DECLARED UNPRICED -- the single remaining shape; it "
+                       "is THIS block's subject and is priced below",
      "source": "Cycle 898, branch blockG21 (cross-branch)"},
 )
 
@@ -1834,16 +1846,28 @@ SCAN_NEEDLES = (
 )
 
 
+# This cycle's own deliverables mention the sibling's names, so they are
+# excluded from the scan by an explicit, disclosed rule.  Without this the scan
+# would report its own footprint as evidence that the sibling is present.
+SELF_EXCLUSION_TOKENS = ("cycle904", "904_mixed_degree", "mixed_degree_census",
+                         "mixed_degree_independent")
+
+
 def sibling_scan() -> dict:
     counts = {needle: 0 for needle in SCAN_NEEDLES}
     files = 0
     total_bytes = 0
+    excluded: list[str] = []
     for folder in ("scripts", "docs", "outputs", "logs"):
         base = ROOT / folder
         if not base.is_dir():
             continue
         for path in sorted(base.rglob("*")):
             if not path.is_file():
+                continue
+            rel = str(path.relative_to(ROOT))
+            if any(tok in rel for tok in SELF_EXCLUSION_TOKENS):
+                excluded.append(rel)
                 continue
             try:
                 raw = path.read_bytes()
@@ -1858,6 +1882,12 @@ def sibling_scan() -> dict:
     return {
         "files_scanned": files,
         "bytes_scanned": total_bytes,
+        "self_excluded_paths": sorted(excluded),
+        "self_exclusion_rule": (
+            "paths containing any of "
+            f"{list(SELF_EXCLUSION_TOKENS)} are this cycle's own deliverables "
+            "and are excluded; without the rule the scan counts its own "
+            "footprint as sibling evidence"),
         "needle_hit_counts": counts,
         "sibling_artifacts_present": any(
             counts[k] for k in
@@ -2076,12 +2106,15 @@ def build_science() -> dict:
     gen = generator_space_certificate()
     clo = closure_certificate()
     mixed = mixed_degree_solutions_certificate()
-    reach = reachable_set_certificate()
-    v3c = v3_census_certificate()
+    # ONE reachable set, computed once and shared, so every certificate that
+    # talks about reachability is talking about the same object.
+    r_by_w = {w: reachable_set(PRIMARY_SCOPE, w) for w in (1, 2)}
+    reach = reachable_set_certificate(r_by_w)
+    v3c = v3_census_certificate(r_by_w[1])
     fam = family_test()
     tgt = target_adjudication_certificate(fam)
     fid = fidelity_method_certificate(fam, tgt)
-    mono = monotonicity_certificate()
+    mono = monotonicity_certificate(r_by_w)
     fals = falsifier_certificate(fam)
     cov = coverage_certificate(tgt, fam, mixed)
     gate = no_go_gate(fam, tgt)

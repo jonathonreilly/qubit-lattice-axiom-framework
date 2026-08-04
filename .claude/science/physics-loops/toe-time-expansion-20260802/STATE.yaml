@@ -376,6 +376,12 @@ worktrees:
     exactness verified against full space; FIVE absent predecessors
     pinned incl. THE d=1 COMPARATOR NOTE (git recovery = next block);
     primary exit 1 BY DESIGN (parent wiring)
+  c5-m2: M2 (Cycle 915, the comparator recovery — the five absent
+    predecessors hunted in git history (priority: the d=1 comparator note
+    and its theta-floor provenance); the delta-memo lambda=0.02 run (the
+    window extends or a lower boundary brackets); the late-grid
+    persistence story at the certified lambdas; stacked on M1 tip) —
+    running
 backlog: CLOSED by Cycle 895 (PR #5957) — all three grading-consuming
   scripts priced (316 BROKEN_OFF_UNIT; 325 structurally T_UNIFORM with one
   sensitive control; 876-checker forced-(1,2,0))

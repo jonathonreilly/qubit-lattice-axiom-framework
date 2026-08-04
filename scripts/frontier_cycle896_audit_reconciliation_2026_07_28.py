@@ -1308,6 +1308,19 @@ def current_residual_certificate(charts: dict, maps: dict, disc: dict) -> dict:
     # unchanged except that the ONE angular coordinate c4 becomes the tower.
     o_current = free_now - 1 + ang_now
 
+    # Is the headline GB-S2's OWN new content?  The 884 primary's own witness
+    # for sigma is read here rather than paraphrased.
+    sigma_witness = read_json(C884_RECEIPT_RUNNER)["classification"]["sigma"]["witness"]
+    sigma_shared = ("shared with GB-S1" in sigma_witness
+                    or "not new to GB-S2" in sigma_witness)
+    net_of_shared = free_now - (1 if sigma_shared else 0)
+
+    # Is the window's "1" a continuum?  887's own counts decide.
+    kv887 = read_json(C887_RECEIPT)["science"]["K_VERDICT"]
+    win_members_r2 = kv887["Q1_annular_vs_set"]["distinct_set_valued_behaviours"]
+    win_annular_r2 = kv887["Q1_annular_vs_set"]["distinct_annular_behaviours"]
+    win_unbounded = "unbounded" in kv887["Q1_structure_result"]
+
     # the chart-invariant kernel: the coordinates that are free on every chart
     invariant = ["sigma", "theta", "mu", "g", "W (one window convention)"]
     angular_table = [
@@ -1351,6 +1364,29 @@ def current_residual_certificate(charts: dict, maps: dict, disc: dict) -> dict:
         "the_number_the_audit_lane_needs": free_now,
         "named_premises_attached_to_a_discharged_coordinate": premises_now,
         "named_convention_count": disc["named_convention_count"],
+        "sigma_is_shared_with_the_already_priced_bridge_scalar": sigma_shared,
+        "sigma_witness_verbatim_from_the_884_receipt": sigma_witness,
+        "current_residual_net_of_the_shared_bridge_scalar": net_of_shared,
+        "two_numbers_note": (
+            f"GB-S2 AS STATED carries {free_now} free dimensions. GB-S2's "
+            f"content NOT already owed by the already-priced source-action "
+            f"bridge carries {net_of_shared}, because the 884 primary's own "
+            f"witness records sigma as the SAME single scalar the bridge was "
+            f"priced to. A consumer must say which of the two it means."),
+        "the_window_entry_is_a_convention_not_a_continuum": {
+            "counted_as_dimensions": 1,
+            "distinct_admissible_members_inside_radius_2": win_members_r2,
+            "distinct_annular_readings_inside_radius_2": win_annular_r2,
+            "family_unbounded_overall": win_unbounded,
+            "note": (
+                f"Counting the window locus as 1 is right for a dimension "
+                f"tally and misleading as 'one real number to fix': Cycle 887 "
+                f"computes {win_members_r2} distinct admissible "
+                f"containment-holding windows inside a radius-2 box "
+                f"({win_annular_r2} under the annular chart) and an unbounded "
+                f"family overall. The entry is ONE CONVENTION with an "
+                f"unbounded value set."),
+        },
         "statement": (
             f"CURRENT GB-S2 RESIDUAL = {free_now} free dimensions on the "
             f"honest chart at the landed angular truncation "
@@ -1376,10 +1412,13 @@ def current_residual_certificate(charts: dict, maps: dict, disc: dict) -> dict:
         ),
         "finding": (
             f"The number the audit lane needs today is {free_now} on the "
-            f"honest chart (+{owed_now} owed interface properties), "
-            f"{o_current} on the orbit-indexed chart. The conversion "
-            f"dictionary is a single rule now: everything except the angular "
-            f"tower is chart-invariant."
+            f"honest chart (+{owed_now} owed interface properties), or "
+            f"{net_of_shared} if it wants GB-S2 content not already owed by "
+            f"the priced bridge; {o_current} on the orbit-indexed chart. The "
+            f"conversion dictionary is a single rule now: everything except "
+            f"the angular tower is chart-invariant. The window entry is one "
+            f"CONVENTION drawn from an unbounded family, not a one-parameter "
+            f"continuum."
         ),
         "pass": consistent,
     }
@@ -1430,6 +1469,17 @@ def honesty_gate_certificate(sci: dict) -> dict:
         {"check": "the_priced_size_is_reported_even_though_it_went_up",
          "ok": sci["H_CURRENT_RESIDUAL"]["net_movement_in_priced_units"] >= 0,
          "note": "discharges moved dimensions from free to owed, net +1"},
+        {"check": "the_shared_bridge_scalar_is_declared_so_two_numbers_are_quoted",
+         "ok": (sci["H_CURRENT_RESIDUAL"]
+                ["current_residual_net_of_the_shared_bridge_scalar"]
+                < sci["H_CURRENT_RESIDUAL"]["the_number_the_audit_lane_needs"]),
+         "note": "sigma is shared with the already-priced bridge; both the "
+                 "as-stated and the net-of-shared numbers are emitted"},
+        {"check": "the_window_entry_is_flagged_as_a_convention_not_a_continuum",
+         "ok": (sci["H_CURRENT_RESIDUAL"]
+                ["the_window_entry_is_a_convention_not_a_continuum"]
+                ["distinct_admissible_members_inside_radius_2"] > 1),
+         "note": "887's own count of the admissible window family is quoted"},
         {"check": "no_floating_point_in_any_certified_number",
          "ok": True,
          "note": "integer and Fraction arithmetic only"},
@@ -1575,6 +1625,14 @@ def main() -> int:
     emit(f"  THE NUMBER THE AUDIT LANE NEEDS TODAY: "
          f"{cur['the_number_the_audit_lane_needs']} free dimensions "
          f"(+{cur['owed_named_import_dimensions']} owed interface properties)")
+    emit(f"    ... or {cur['current_residual_net_of_the_shared_bridge_scalar']} "
+         f"for GB-S2 content NOT already owed by the priced bridge scalar "
+         f"(sigma is shared: "
+         f"{cur['sigma_is_shared_with_the_already_priced_bridge_scalar']})")
+    w = cur["the_window_entry_is_a_convention_not_a_continuum"]
+    emit(f"    ... and the window entry is ONE CONVENTION from an unbounded "
+         f"family ({w['distinct_admissible_members_inside_radius_2']} distinct "
+         f"members inside radius 2), not a continuum")
     emit()
 
     emit("-" * 78)
@@ -1649,6 +1707,10 @@ def main() -> int:
                 cur["current_GB_S2_residual_honest_chart"],
             "current_residual_orbit_chart":
                 cur["current_GB_S2_residual_orbit_chart"],
+            "current_residual_net_of_the_shared_bridge_scalar":
+                cur["current_residual_net_of_the_shared_bridge_scalar"],
+            "window_entry_is_a_convention_not_a_continuum":
+                cur["the_window_entry_is_a_convention_not_a_continuum"],
             "owed_named_import_dimensions": cur["owed_named_import_dimensions"],
             "angular_cutoff_table": cur["angular_cutoff_table"],
             "statement": cur["statement"],

@@ -2,12 +2,12 @@
  "absent_from_this_branch": {
   "cycle871": {
    "on_disk_hits": 0,
-   "tracked_files_scanned": 20947,
+   "tracked_files_scanned": 20950,
    "tracked_hits": 0
   },
   "cycle893": {
    "on_disk_hits": 0,
-   "tracked_files_scanned": 20947,
+   "tracked_files_scanned": 20950,
    "tracked_hits": 0
   }
  },
@@ -159,7 +159,7 @@
    "verdict_now": "UNTOUCHED -- still free"
   }
  ],
- "elapsed_sec": 1.448,
+ "elapsed_sec": 1.554,
  "flag_A": {
   "counter_hypothesis_supported": false,
   "exact_arithmetic": "1 + 1 = 2",
@@ -293,6 +293,7 @@
    }
   ],
   "current_residual_honest_chart": 6,
+  "current_residual_net_of_the_shared_bridge_scalar": 5,
   "current_residual_orbit_chart": 12,
   "eliminated_coordinates": [
    {
@@ -320,7 +321,14 @@
    "sigma"
   ],
   "owed_named_import_dimensions": 5,
-  "statement": "CURRENT GB-S2 RESIDUAL = 6 free dimensions on the honest chart at the landed angular truncation (sigma, theta, mu, c4, g, and ONE window convention), PLUS 5 owed interface properties (IF1, IF3, IF4, IF5, IF6) as a single named import, PLUS 3 named conventions/premises (of which 1 -- the barrier identification -- is what discharged a coordinate). On the orbit-indexed chart the same residual reads 12, the difference being exactly the angular tower (7 coefficients up to degree 12 against the landed chart's 1). Without an angular cutoff the residual is unbounded on both charts. The pre-discharge honest residual was 10: the discharges moved 4 free dimensions out and 5 owed interface dimensions in, so the PRICED size went UP by 1, not down."
+  "statement": "CURRENT GB-S2 RESIDUAL = 6 free dimensions on the honest chart at the landed angular truncation (sigma, theta, mu, c4, g, and ONE window convention), PLUS 5 owed interface properties (IF1, IF3, IF4, IF5, IF6) as a single named import, PLUS 3 named conventions/premises (of which 1 -- the barrier identification -- is what discharged a coordinate). On the orbit-indexed chart the same residual reads 12, the difference being exactly the angular tower (7 coefficients up to degree 12 against the landed chart's 1). Without an angular cutoff the residual is unbounded on both charts. The pre-discharge honest residual was 10: the discharges moved 4 free dimensions out and 5 owed interface dimensions in, so the PRICED size went UP by 1, not down.",
+  "window_entry_is_a_convention_not_a_continuum": {
+   "counted_as_dimensions": 1,
+   "distinct_admissible_members_inside_radius_2": 1023,
+   "distinct_annular_readings_inside_radius_2": 113,
+   "family_unbounded_overall": true,
+   "note": "Counting the window locus as 1 is right for a dimension tally and misleading as 'one real number to fix': Cycle 887 computes 1023 distinct admissible containment-holding windows inside a radius-2 box (113 under the annular chart) and an unbounded family overall. The entry is ONE CONVENTION with an unbounded value set."
+  }
  },
  "named_conventions": [
   {
@@ -345,24 +353,24 @@
    "absence_scan": {
     "cycle871": {
      "hit_paths": [],
-     "on_disk_files_scanned": 13751,
+     "on_disk_files_scanned": 13754,
      "on_disk_hits": 0,
      "present_on_this_branch": false,
      "probes": [
       "871"
      ],
-     "tracked_files_scanned": 20947,
+     "tracked_files_scanned": 20950,
      "tracked_hits": 0
     },
     "cycle893": {
      "hit_paths": [],
-     "on_disk_files_scanned": 13751,
+     "on_disk_files_scanned": 13754,
      "on_disk_hits": 0,
      "present_on_this_branch": false,
      "probes": [
       "893"
      ],
-     "tracked_files_scanned": 20947,
+     "tracked_files_scanned": 20950,
      "tracked_hits": 0
     }
    },
@@ -1254,9 +1262,10 @@
    ],
    "current_GB_S2_residual_honest_chart": 6,
    "current_GB_S2_residual_orbit_chart": 12,
+   "current_residual_net_of_the_shared_bridge_scalar": 5,
    "current_total_priced_units_honest_chart": 11,
    "cutoff_arithmetic_consistent": true,
-   "finding": "The number the audit lane needs today is 6 on the honest chart (+5 owed interface properties), 12 on the orbit-indexed chart. The conversion dictionary is a single rule now: everything except the angular tower is chart-invariant.",
+   "finding": "The number the audit lane needs today is 6 on the honest chart (+5 owed interface properties), or 5 if it wants GB-S2 content not already owed by the priced bridge; 12 on the orbit-indexed chart. The conversion dictionary is a single rule now: everything except the angular tower is chart-invariant. The window entry is one CONVENTION drawn from an unbounded family, not a one-parameter continuum.",
    "named_convention_count": 3,
    "named_premises_attached_to_a_discharged_coordinate": 1,
    "net_movement_in_free_dimensions": -4,
@@ -1265,9 +1274,19 @@
    "owed_named_import_identity": "the composed-record event space (Cycle 878 lineage), with required properties IF1, IF3, IF4, IF5, IF6; IF2 is already banked",
    "pass": true,
    "residual_before_the_discharges_honest_chart": 10,
+   "sigma_is_shared_with_the_already_priced_bridge_scalar": true,
+   "sigma_witness_verbatim_from_the_884_receipt": "the surviving product lambda*sigma; this is the SAME single scalar the source-action bridge was priced to, so it is shared with GB-S1 and not new to GB-S2",
    "statement": "CURRENT GB-S2 RESIDUAL = 6 free dimensions on the honest chart at the landed angular truncation (sigma, theta, mu, c4, g, and ONE window convention), PLUS 5 owed interface properties (IF1, IF3, IF4, IF5, IF6) as a single named import, PLUS 3 named conventions/premises (of which 1 -- the barrier identification -- is what discharged a coordinate). On the orbit-indexed chart the same residual reads 12, the difference being exactly the angular tower (7 coefficients up to degree 12 against the landed chart's 1). Without an angular cutoff the residual is unbounded on both charts. The pre-discharge honest residual was 10: the discharges moved 4 free dimensions out and 5 owed interface dimensions in, so the PRICED size went UP by 1, not down.",
    "the_number_the_audit_lane_needs": 6,
-   "the_only_remaining_chart_discrepancy": "the angular tower. After the window discharges the window block collapses to ONE convention on BOTH charts, so the entire honest-vs-orbit gap is now the angular truncation and nothing else."
+   "the_only_remaining_chart_discrepancy": "the angular tower. After the window discharges the window block collapses to ONE convention on BOTH charts, so the entire honest-vs-orbit gap is now the angular truncation and nothing else.",
+   "the_window_entry_is_a_convention_not_a_continuum": {
+    "counted_as_dimensions": 1,
+    "distinct_admissible_members_inside_radius_2": 1023,
+    "distinct_annular_readings_inside_radius_2": 113,
+    "family_unbounded_overall": true,
+    "note": "Counting the window locus as 1 is right for a dimension tally and misleading as 'one real number to fix': Cycle 887 computes 1023 distinct admissible containment-holding windows inside a radius-2 box (113 under the annular chart) and an unbounded family overall. The entry is ONE CONVENTION with an unbounded value set."
+   },
+   "two_numbers_note": "GB-S2 AS STATED carries 6 free dimensions. GB-S2's content NOT already owed by the already-priced source-action bridge carries 5, because the 884 primary's own witness records sigma as the SAME single scalar the bridge was priced to. A consumer must say which of the two it means."
   },
   "N_HONESTY": {
    "checks": [
@@ -1337,18 +1356,28 @@
      "ok": true
     },
     {
+     "check": "the_shared_bridge_scalar_is_declared_so_two_numbers_are_quoted",
+     "note": "sigma is shared with the already-priced bridge; both the as-stated and the net-of-shared numbers are emitted",
+     "ok": true
+    },
+    {
+     "check": "the_window_entry_is_flagged_as_a_convention_not_a_continuum",
+     "note": "887's own count of the admissible window family is quoted",
+     "ok": true
+    },
+    {
      "check": "no_floating_point_in_any_certified_number",
      "note": "integer and Fraction arithmetic only",
      "ok": true
     }
    ],
-   "checks_passed": 14,
-   "checks_total": 14,
-   "finding": "14/14 honesty checks hold. The gate is outcome-neutral: it verifies that both flags' statements were rebuilt, that all three charts were rebuilt, that the maps close in both directions, and that non-discharges and absences are reported -- not that any particular verdict landed.",
+   "checks_passed": 16,
+   "checks_total": 16,
+   "finding": "16/16 honesty checks hold. The gate is outcome-neutral: it verifies that both flags' statements were rebuilt, that all three charts were rebuilt, that the maps close in both directions, and that non-discharges and absences are reported -- not that any particular verdict landed.",
    "pass": true
   }
  },
- "science_digest": "a35cbc7ce6769f6a932177bfc2ea3bee73c5050db1c19c9ec84f8679360e3546",
+ "science_digest": "260db5d56ec1e58a24a1205704ca95e558ff53479270a92955ce7ebbbbf03bba",
  "source_pins": [
   {
    "git_blob": "9a449956422a5687b5b1346f428c9e4e35489038",

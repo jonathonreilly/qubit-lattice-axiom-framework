@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle896_audit_reconciliation_2026_07_28.py
-runner_sha256: 976e21bc652f068c591154a9127db621038938c8e5b42bcea242ac369782a71a
+runner_sha256: 0adb0a4051c6b880dff005c0a378e237eccc39c341952d34f49011eb746fd05a
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.493
+elapsed_sec: 1.598
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -75,12 +75,14 @@ CYCLE 896 -- AUDIT-LANE RECONCILIATION: the 871 pin discrepancy and
 
 [PASS] H_CURRENT_RESIDUAL
        The number the audit lane needs today is 6 on the honest chart (+5 owed
-       interface properties), 12 on the orbit-indexed chart. The conversion
+       interface properties), or 5 if it wants GB-S2 content not already owed by
+       the priced bridge; 12 on the orbit-indexed chart. The conversion
        dictionary is a single rule now: everything except the angular tower is
-       chart-invariant.
+       chart-invariant. The window entry is one CONVENTION drawn from an
+       unbounded family, not a one-parameter continuum.
 
 [PASS] N_HONESTY
-       14/14 honesty checks hold. The gate is outcome-neutral: it verifies that
+       16/16 honesty checks hold. The gate is outcome-neutral: it verifies that
        both flags' statements were rebuilt, that all three charts were rebuilt,
        that the maps close in both directions, and that non-discharges and
        absences are reported -- not that any particular verdict landed.
@@ -148,6 +150,8 @@ FLAG B -- RECONCILED DIMENSION STATEMENT + CONVERSION DICTIONARY
       cutoff None  angular unbounded  residual unbounded  no angular cutoff declared
 
   THE NUMBER THE AUDIT LANE NEEDS TODAY: 6 free dimensions (+5 owed interface properties)
+    ... or 5 for GB-S2 content NOT already owed by the priced bridge scalar (sigma is shared: True)
+    ... and the window entry is ONE CONVENTION from an unbounded family (1023 distinct members inside radius 2), not a continuum
 
 ------------------------------------------------------------------------------
 PER-CYCLE DISCHARGE ATTRIBUTION
@@ -189,7 +193,7 @@ PER-CYCLE DISCHARGE ATTRIBUTION
   893 present on this branch: False
 
 ------------------------------------------------------------------------------
-deterministic double build: True  digest a35cbc7ce6769f6a
+deterministic double build: True  digest 260db5d56ec1e58a
 all certificates pass: True
 receipt: outputs/audit_reconciliation_cycle896_receipt_2026_07_28.json
-elapsed_sec: 1.449
+elapsed_sec: 1.555

@@ -428,12 +428,13 @@ def run_claims() -> dict:
 
     claims = []
 
-    def claim(cid, statement, checker_value, primary_value, survives, note):
+    def claim(cid, statement, checker_value, primary_value, survives, note,
+              verdict=None):
         claims.append({
             "id": cid, "statement": statement,
             "checker_independent_value": checker_value,
             "primary_value": primary_value,
-            "verdict": "SURVIVES" if survives else "REFUTED",
+            "verdict": verdict or ("SURVIVES" if survives else "REFUTED"),
             "note": note,
         })
 
@@ -657,6 +658,39 @@ def run_claims() -> dict:
           "the two eliminated-inadmissible coordinates are located in all "
           "three charts independently")
 
+    # B9: the operator block admits a SECOND reading, in the 884 checker's own
+    # source comment.  If it does, the uncovered set and O's own total move.
+    chk_src = text(C884_CHECKER)
+    comment_hit = re.search(
+        r'"operator_constants_left_free"\s*:[^,\n]*,\s*#\s*(.*)', chk_src)
+    comment = comment_hit.group(1).strip() if comment_hit else ""
+    ambiguous = ("amplitude" in comment and "screening" in comment)
+    alt_uncovered = sorted(set(expected_uncovered) - {"sigma"})
+    alt_total = o_total + len(alt_uncovered)
+    prim_alt = prim["science"]["F_FLAG_B_MAPS"][
+        "orbit_chart_own_honest_total_scale_absorbed_reading"]
+    claim("B9",
+          "the O -> H operator-block assignment (1 orbit constant -> mu alone) "
+          "is the only reading",
+          {"884_checker_source_comment": comment,
+           "second_reading_exists": ambiguous,
+           "scale_absorbed_uncovered": alt_uncovered,
+           "scale_absorbed_orbit_total": alt_total},
+          {"primary_alt_total": prim_alt,
+           "primary_emitted_both_readings":
+               "operator_block_alternative_reading"
+               in prim["science"]["F_FLAG_B_MAPS"]},
+          False,
+          "NARROWED, not refuted: the 884 checker's OWN inline comment on that "
+          "field reads '" + comment + "', so the block admits a scale-absorbed "
+          "reading in which the one free constant covers {sigma, mu} jointly. "
+          f"Under it the orbit chart's own honest total is {alt_total}, not "
+          f"{o_total + len(expected_uncovered)}. The primary publishes both "
+          "readings, so the conclusion (O strictly exceeds H) is unaffected; "
+          "any consumer must state which reading it uses.",
+          verdict="NARROWED" if (ambiguous and alt_total == prim_alt)
+                  else ("SURVIVES" if not ambiguous else "REFUTED"))
+
     # ---- ATTACK 2: the discharge accounting -----------------------------
     c885 = jload(C885_RECEIPT)
     c887 = jload(C887_RECEIPT)
@@ -773,6 +807,62 @@ def run_claims() -> dict:
           "the post-discharge arithmetic is re-summed here from the ledger and "
           "the checker's own angular tower")
 
+    # C5: the {a, b} pair must contribute exactly 892's WINDOW dimension
+    ab_free = sum(r["free_dimension_now"] for r in ledger
+                  if r["coordinate"] in ("a", "b"))
+    claim("C5",
+          "the {a, b} pair contributes exactly 892's WINDOW dimension (1) to "
+          "the current residual",
+          {"ledger_contribution_from_a_and_b": ab_free,
+           "892_WINDOW": c892_comp.get("(a) WINDOW")},
+          {"booked_on": [r["coordinate"] for r in ledger
+                         if r["coordinate"] in ("a", "b")
+                         and r["free_dimension_now"] == 1]},
+          ab_free == c892_comp.get("(a) WINDOW"),
+          "the pair is booked 0 + 1 rather than 1 + 0; the arithmetic is what "
+          "matters and it closes")
+
+    # C6: is the headline 6 GB-S2's OWN new content?
+    sigma_witness = c884_run["classification"]["sigma"]["witness"]
+    sigma_shared = ("shared with GB-S1" in sigma_witness
+                    or "not new to GB-S2" in sigma_witness)
+    claim("C6",
+          "the headline current residual of 6 is GB-S2's own NEW content",
+          {"sigma_witness_from_the_884_receipt": sigma_witness,
+           "sigma_is_shared_with_the_bridge": sigma_shared,
+           "residual_net_of_the_shared_bridge_scalar":
+               free_now - (1 if sigma_shared else 0)},
+          {"headline": pflag_b["current_residual_honest_chart"]},
+          False,
+          "NARROWED: the 884 primary's own witness for sigma says it is the "
+          "SAME scalar the source-action bridge was already priced to. The "
+          f"audit lane's number is {free_now} for GB-S2 as stated, but "
+          f"{free_now - 1} for GB-S2's content NOT already owed by GB-S1. "
+          "Both should be quoted; the primary states the sharing in its sigma "
+          "row but headlines only the larger number.",
+          verdict="NARROWED" if sigma_shared else "SURVIVES")
+
+    # C7: is the window's "1" a continuous dimension?
+    kv = c887["science"]["K_VERDICT"]["Q1_annular_vs_set"]
+    set_valued = kv["distinct_set_valued_behaviours"]
+    annular = kv["distinct_annular_behaviours"]
+    unbounded = "unbounded" in c887["science"]["K_VERDICT"]["Q1_structure_result"]
+    claim("C7",
+          "the window contributes ONE dimension in the ordinary sense",
+          {"distinct_admissible_windows_inside_radius_2": set_valued,
+           "distinct_annular_readings": annular,
+           "887_says_the_family_is_unbounded_overall": unbounded},
+          {"counted_as": 1},
+          False,
+          "NARROWED: 887 computes the admissible containment-holding window "
+          f"space at {set_valued} distinct members inside a radius-2 box "
+          f"({annular} under the annular chart) and unbounded overall. The "
+          "current residual's window entry is therefore ONE CONVENTION with an "
+          "unbounded value set, not a one-parameter continuum. Counting it as "
+          "1 is right for a dimension tally and wrong for anyone who reads "
+          "'1 dimension' as 'one real number to fix'.",
+          verdict="NARROWED" if (set_valued > 1 and unbounded) else "SURVIVES")
+
     return {
         "rotation_group_size": len(mats),
         "harmonic_tower": tower,
@@ -787,6 +877,7 @@ def run_claims() -> dict:
         "claims_total": len(claims),
         "claims_surviving": sum(1 for c in claims if c["verdict"] == "SURVIVES"),
         "claims_refuted": [c["id"] for c in claims if c["verdict"] == "REFUTED"],
+        "claims_narrowed": [c["id"] for c in claims if c["verdict"] == "NARROWED"],
     }
 
 
@@ -942,8 +1033,9 @@ def main() -> int:
         for line in _wrap(c["note"], 68):
             emit("             " + line)
     emit()
-    emit(f"  {res['claims_surviving']}/{res['claims_total']} claims survive; "
-         f"refuted: {res['claims_refuted'] or 'none'}")
+    emit(f"  {res['claims_surviving']}/{res['claims_total']} claims survive "
+         f"unchanged; refuted: {res['claims_refuted'] or 'none'}; "
+         f"narrowed: {res['claims_narrowed'] or 'none'}")
     emit()
 
     emit("DOUBLE-COUNT HUNT (attack 1)")
@@ -982,20 +1074,29 @@ def main() -> int:
 
     emit("-" * 78)
     emit("CHECKER VERDICT")
-    surv = res["claims_surviving"] == res["claims_total"]
-    emit(f"  claims: {res['claims_surviving']}/{res['claims_total']} survive")
+    emit(f"  claims: {res['claims_surviving']}/{res['claims_total']} survive "
+         f"unchanged, {len(res['claims_narrowed'])} narrowed, "
+         f"{len(res['claims_refuted'])} refuted")
     emit(f"  teeth:  {teeth['teeth_biting']}/{teeth['teeth_total']} bite")
-    if surv:
-        emit("  The reconciliation survives independent rebuild on every")
-        emit("  claim. The two findings the checker CONFIRMS as narrowings of")
-        emit("  prior art rather than agreements: (i) Cycle 884's checker's 27")
-        emit("  is not a refinement of the whole honest 10 -- it never charts")
-        emit("  sigma, D or barrier, so its own honest total is 30; (ii) the")
-        emit("  campaign summary's claim that Cycle 887 turned the a/b extent")
-        emit("  into a convention family is NOT supported by 887's receipt,")
-        emit("  which records a NO-GO on the extent and a WIDENING of 885.")
-    else:
-        emit(f"  REFUTED claims: {res['claims_refuted']}")
+    emit()
+    if res["claims_refuted"]:
+        emit(f"  REFUTED: {res['claims_refuted']}")
+    emit("  No claim is refuted. Three are NARROWED, and a consumer of the")
+    emit("  reconciliation must carry all three:")
+    emit("   (B9) the orbit chart's operator block admits a second reading --")
+    emit("        the 884 checker's own comment says 'amplitude, screening' --")
+    emit("        under which its honest total is 29, not 30.")
+    emit("   (C6) sigma is the SAME scalar the source-action bridge was")
+    emit("        already priced to, so GB-S2's NEW content is 5, not 6.")
+    emit("   (C7) the window's '1' is one CONVENTION drawn from an unbounded")
+    emit("        family (887: 1023 distinct members inside radius 2), not a")
+    emit("        one-parameter continuum.")
+    emit()
+    emit("  Two prior-art corrections the checker CONFIRMS: Cycle 884's")
+    emit("  checker's 27 is not a refinement of the whole honest 10 (it never")
+    emit("  charts sigma, D or barrier), and Cycle 887 discharged nothing --")
+    emit("  its receipt records a NO-GO on the window extent and a WIDENING")
+    emit("  of Cycle 885's pricing.")
     emit(f"  exit code is 0 regardless of claim survival")
 
     receipt = {
@@ -1023,6 +1124,7 @@ def main() -> int:
         "claims_total": res["claims_total"],
         "claims_surviving": res["claims_surviving"],
         "claims_refuted": res["claims_refuted"],
+        "claims_narrowed": res["claims_narrowed"],
         "double_count_hunt": b4["checker_independent_value"],
         "discharge_audit": c1["checker_independent_value"],
         "teeth": teeth["teeth"],

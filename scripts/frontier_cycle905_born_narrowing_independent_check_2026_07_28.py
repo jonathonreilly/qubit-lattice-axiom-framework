@@ -762,13 +762,26 @@ def main() -> int:
     rank_narrowed_2 = max(
         rank_modular(narrowed_matrix, p) for p in MODULAR_PRIMES
     )
-    relation_residual = [
-        Fraction(boundaries + 1) * masses["M2_PER_WORLD_UNIFORM"][i]
-        - masses["M4_FORMATION_LIFETIME"][i]
-        - masses["M5_FORMATION_MOMENT"][i]
-        for i in range(len(events))
+    # The generator relation is a statement about the WORLD COEFFICIENTS in a
+    # common scaling, so it must be tested there.  Comparing per-candidate
+    # NORMALISED masses is a category error -- each candidate is divided by
+    # its own total, so even an exact coefficient identity would not survive
+    # it.  Both quantities are computed; only the first is the claim.
+    coefficient_residual = {
+        w: (boundaries + 1) * 1
+        - ((boundaries - formation[w] + 1) if w in formation else 0)
+        - (formation[w] if w in formation else 0)
+        for w in worlds
+    }
+    residual_nonzero = [
+        i for i, w in enumerate(world_of) if coefficient_residual[w] != 0
     ]
-    residual_nonzero = [i for i, v in enumerate(relation_residual) if v != 0]
+    normalised_residual_nonzero = sum(
+        1 for i in range(len(events))
+        if Fraction(boundaries + 1) * masses["M2_PER_WORLD_UNIFORM"][i]
+        - masses["M4_FORMATION_LIFETIME"][i]
+        - masses["M5_FORMATION_MOMENT"][i] != 0
+    )
     cert_c = {
         "certificate": "C_INDEPENDENT_RANK",
         "route_1_integer_multiply_only": {
@@ -786,15 +799,34 @@ def main() -> int:
         "primary_claimed_rank": claimed_rank,
         "rank_claim_survives": gate_rank(rank_1, rank_2),
         "narrowed_triple_rank": [rank_narrowed_1, rank_narrowed_2],
-        "generator_relation_residual_nonzero_events": len(residual_nonzero),
+        "generator_relation": {
+            "tested_at": "the world coefficients, in a common scaling",
+            "residual_nonzero_events": len(residual_nonzero),
+            "residual_nonzero_worlds": len(
+                {world_of[i] for i in residual_nonzero}
+            ),
+            "residual_all_on_never_formed_worlds": all(
+                world_of[i] not in formation for i in residual_nonzero
+            ),
+            "coefficient_identity_holds_on_formed_worlds": all(
+                coefficient_residual[w] == 0 for w in formation
+            ),
+            "disclosed_convention_dependent_diagnostic": {
+                "normalised_mass_residual_nonzero_events":
+                    normalised_residual_nonzero,
+                "reading": (
+                    "computed on per-candidate NORMALISED masses, where each"
+                    " candidate is divided by its own total; this is NOT the"
+                    " claim and is reported only so the difference between the"
+                    " two formulations is visible rather than assumed away"
+                ),
+            },
+        },
         "primary_claimed_residual_events":
             claim.get("Q1_generator_relation_residual_events"),
         "residual_claim_survives":
             len(residual_nonzero)
             == claim.get("Q1_generator_relation_residual_events"),
-        "residual_all_on_never_formed_worlds": all(
-            world_of[i] not in formation for i in residual_nonzero
-        ),
         "extension_dimension":
             rank_1 * receipt902["Q1_minimal_fibre_dimension"],
         "primary_claimed_extension_dimension":

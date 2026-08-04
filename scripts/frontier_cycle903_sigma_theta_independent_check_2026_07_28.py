@@ -191,14 +191,25 @@ def sentences(text: str) -> list:
 
 
 def grade_clausewise(s: str) -> str:
+    """Stricter than the primary: the NOUN and the GROUNDING VERB must occur
+    in the SAME clause, so a normalization named in one half of a sentence and
+    a verb sitting in the other no longer combine into a false grounding.
+
+    The determinate VALUE is required only somewhere in the sentence.  English
+    routinely places the value in the clause after the verb ('X is derived
+    from Y and equals 1/(4 pi)'), so demanding all three in one clause is not
+    strictness, it is blindness -- and it made this grader miss a planted
+    grounding sentence on the first run.
+    """
     low = s.lower()
     if not any(t in low for t in SCOPE_TOKENS):
         return "OUT_OF_SCOPE"
     clauses = [c.strip() for c in CLAUSE_SPLIT.split(low) if c.strip()]
+    has_value = bool(VALUE_RE.search(low))
     for c in clauses:
         if (any(n in c for n in NORM_NOUNS)
                 and any(v in c for v in GROUND_VERBS)
-                and VALUE_RE.search(c)
+                and has_value
                 and not any(n in c for n in NEGATORS)):
             return "EXACT"
     has_noun = any(n in low for n in NORM_NOUNS)
@@ -307,21 +318,29 @@ def independent_adjudication(primary: dict) -> dict:
 
     # ABLATION: delete each decisive clause and recompute.  A verdict that
     # does not move under ablation is not reading the bytes.
+    #
+    # Deletion is done on the NORMALIZED text, not the raw bytes: the notes
+    # are hard-wrapped, so a fragment written as one line never matches the
+    # file and the ablation silently becomes a no-op.  That exact mistake made
+    # this tooth report a false hole on the first run.
     ablations = []
     targets = [
         ("exclusion_clause_1",
-         "It carries zero\ndimensionless content: no mass ratio, coupling, "
-         "mixing angle, phase,\nselector, readout bridge, or empirical fit is "
+         "It carries zero dimensionless content: no mass ratio, coupling, "
+         "mixing angle, phase, selector, readout bridge, or empirical fit is "
          "supplied by it."),
         ("exclusion_clause_2",
          "It does not supply any dimensionless quantity."),
         ("admit_clause",
-         "The framework takes exactly one dimensionful reference: a scale that "
-         "converts\nthe framework's lattice-natural units to physical units."),
+         "The framework takes exactly one dimensionful reference: a scale "
+         "that converts the framework's lattice-natural units to physical "
+         "units."),
     ]
+    scale_n = norm(scale)
     for name, frag in targets:
-        present = frag in scale
-        mutated = scale.replace(frag, "") if present else scale
+        fragn = norm(frag)
+        present = fragn in scale_n
+        mutated = scale_n.replace(fragn, "") if present else scale_n
         v = adjudicate_from_text(mutated, iface)
         ablations.append({
             "ablated": name,
@@ -329,10 +348,15 @@ def independent_adjudication(primary: dict) -> dict:
             "verdict_after_ablation": v["verdict"],
             "verdict_moved": v["verdict"] != base["verdict"],
         })
+    if not all(a["fragment_present_in_pinned_bytes"] for a in ablations):
+        sys.stderr.write(
+            "FATAL: an ablation target is not present in the pinned bytes; "
+            "the ablation would be a silent no-op.\n")
+        raise SystemExit(2)
     # deleting BOTH exclusions must flip the dimensionless factor inside
-    both = scale
+    both = scale_n
     for _n, frag in targets[:2]:
-        both = both.replace(frag, "")
+        both = both.replace(norm(frag), "")
     v_both = adjudicate_from_text(both, iface)
     load_bearing = v_both["verdict"] != base["verdict"]
 
@@ -744,24 +768,29 @@ def teeth(primary: dict) -> dict:
                 "any science runs"),
     })
 
-    # T2 dropped sentence -- the adjudication must move
-    scale = _read(P_SCALE)
-    frag = "It does not supply any dimensionless quantity."
-    frag2 = ("It carries zero\ndimensionless content: no mass ratio, coupling, "
-             "mixing angle, phase,\nselector, readout bridge, or empirical fit "
-             "is supplied by it.")
-    dropped = scale.replace(frag, "").replace(frag2, "")
-    v_full = adjudicate_from_text(scale, _read(P_GBIFACE))["verdict"]
+    # T2 dropped sentence -- the adjudication must move.  Deletion is on the
+    # NORMALIZED text because the note is hard-wrapped.
+    scale_n = norm(_read(P_SCALE))
+    frag = norm("It does not supply any dimensionless quantity.")
+    frag2 = norm("It carries zero dimensionless content: no mass ratio, "
+                 "coupling, mixing angle, phase, selector, readout bridge, or "
+                 "empirical fit is supplied by it.")
+    both_present = frag in scale_n and frag2 in scale_n
+    dropped = scale_n.replace(frag, "").replace(frag2, "")
+    v_full = adjudicate_from_text(scale_n, _read(P_GBIFACE))["verdict"]
     v_drop = adjudicate_from_text(dropped, _read(P_GBIFACE))["verdict"]
     rows.append({
         "tooth": "T2_dropped_sentence",
         "corruption": "delete both exclusion clauses from the scale note",
+        "both_fragments_present_in_pinned_bytes": both_present,
         "verdict_with_bytes": v_full,
         "verdict_without_bytes": v_drop,
-        "detected": v_full != v_drop,
+        "detected": both_present and v_full != v_drop,
         "why": ("the OUTSIDE verdict is a function of those two clauses; "
                 "deleting them flips it, so the adjudication is reading the "
-                "bytes rather than reciting a conclusion"),
+                "bytes rather than reciting a conclusion.  The tooth also "
+                "asserts both fragments were actually present, so a "
+                "mis-quoted fragment cannot pass as a no-op deletion"),
     })
 
     # T3 hardcoded adjudication -- AST check on the primary

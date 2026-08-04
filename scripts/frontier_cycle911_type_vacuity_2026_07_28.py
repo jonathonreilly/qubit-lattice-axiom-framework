@@ -698,6 +698,32 @@ def pair_divergence_batches(c863, program, census, states, pairs,
 DIRECTIONS = ((1, 0), (0, 1))
 
 
+def synchronous_chunks(program, positions):
+    """The per-step gate chunks of one orbit, built the way the scan applies
+    them: at step t, the stations `positions + t (mod stations)` fire.
+
+    DISCLOSED DEFECT IN THE PINNED SOURCE.  The pinned Cycle-863
+    certificate-A slices the flat synchronous word with
+    `per_chunk = len(word) // stations`, which assumes every step contributes
+    the same number of gates.  It does not: the stations carry macros of very
+    different lengths, and len(word) is not even divisible by `stations`.  So
+    the pinned saturation diagnostic applies a MIS-SLICED chunk.  This runner
+    reports the pinned reading (for reproduction) and this corrected one (for
+    the finding), and never conflates them."""
+    stations = len(program)
+    pos = tuple(positions)
+    out = []
+    for _ in range(stations):
+        live = set(pos)
+        gates = []
+        for station, row in enumerate(program):
+            if station in live:
+                gates.extend(K.mapped_macro(row))
+        out.append(tuple(gates))
+        pos = tuple((p + 1) % stations for p in pos)
+    return tuple(out)
+
+
 def availability_operators(c863, program, snapshots, formed, census,
                            per_bank, restrict=None):
     """Three declared operators on the SAME menu of endpoint possibilities.
@@ -717,19 +743,22 @@ def availability_operators(c863, program, snapshots, formed, census,
     menu = tuple(d for d in DIRECTIONS
                  if restrict is None or d in restrict)
     word_cache: dict = {}
+    chunk_cache: dict = {}
     rows = []
     for world in sorted(formed):
         key = census[world]
         positions = key[2]
         if positions not in word_cache:
             word_cache[positions] = c863.synchronous_word(program, positions)
+            chunk_cache[positions] = synchronous_chunks(program, positions)
         word = word_cache[positions]
         per_chunk = len(word) // stations
         state = snapshots[world]
         first = formed[world]
         idx = first % stations
-        nxt = word[idx * per_chunk:(idx + 1) * per_chunk]
-        prep = orbit = sat = 0
+        sliced = word[idx * per_chunk:(idx + 1) * per_chunk]
+        exact = chunk_cache[positions][idx]
+        prep = orbit = sat863 = sat = 0
         prep_menu, orbit_menu, sat_menu = [], [], []
         prepare_errors = 0
         for v in menu:
@@ -740,8 +769,11 @@ def availability_operators(c863, program, snapshots, formed, census,
                 continue
             prep += 1
             prep_menu.append(v)
-            after = K.A.apply_semantic(sub, nxt)
-            if all(after[w] == 0 for bank in per_bank for w in bank):
+            if all(K.A.apply_semantic(sub, sliced)[w] == 0
+                   for bank in per_bank for w in bank):
+                sat863 += 1
+            if all(K.A.apply_semantic(sub, exact)[w] == 0
+                   for bank in per_bank for w in bank):
                 sat += 1
                 sat_menu.append(v)
             try:
@@ -756,9 +788,11 @@ def availability_operators(c863, program, snapshots, formed, census,
                 pass
         rows.append({
             "world": world, "key": key, "lock_boundary": first,
-            "A_prepare": prep, "A_orbit": orbit, "A_saturation": sat,
+            "A_prepare": prep, "A_orbit": orbit,
+            "A_saturation_corrected": sat,
+            "A_saturation_as_pinned_863_slices_it": sat863,
             "menu_prepare": prep_menu, "menu_orbit": orbit_menu,
-            "menu_saturation": sat_menu,
+            "menu_saturation_corrected": sat_menu,
             "prepare_errors": prepare_errors,
         })
     return rows
@@ -834,7 +868,8 @@ def rule_space_spectrum(cls, proper_perms, colorings, rows, alphabet,
         cid = cls_of[row["world"]]
         landed_prepare.setdefault(cid, set()).add(row["A_prepare"])
         landed_orbit.setdefault(cid, set()).add(row["A_orbit"])
-        landed_sat.setdefault(cid, set()).add(row["A_saturation"])
+        landed_sat.setdefault(cid, set()).add(
+            row["A_saturation_corrected"])
     achievable = set()
     enumerated = len(realized) <= 10
     if enumerated:
@@ -1214,6 +1249,9 @@ def main() -> int:
                                                        "full": 220}),
         ("classification_group_orders",
          [len(full_perms), len(proper_perms)], [48, 24]),
+        ("c863_synchronous_word_is_not_step_uniform",
+         len(c863.synchronous_word(program, census[0][2])) % stations == 0,
+         False),
         ("c863_initial_state_failures", init_failures, 0),
         ("c863_duplicate_lane_mismatches",
          build_fwd["duplicate_lane_mismatches"], 0),
@@ -1436,7 +1474,25 @@ def main() -> int:
         c863, program, snapshots, formed, census, per_bank)
     hist_prep = Counter(r["A_prepare"] for r in rows_avail)
     hist_orbit = Counter(r["A_orbit"] for r in rows_avail)
-    hist_sat = Counter(r["A_saturation"] for r in rows_avail)
+    hist_sat = Counter(r["A_saturation_corrected"] for r in rows_avail)
+    hist_sat863 = Counter(
+        r["A_saturation_as_pinned_863_slices_it"] for r in rows_avail)
+    sample_word = c863.synchronous_word(program, census[0][2])
+    slicing_defect = {
+        "pinned_863_slicing": "per_chunk = len(word) // stations",
+        "sample_positions": list(census[0][2]),
+        "sample_word_length": len(sample_word),
+        "stations": stations,
+        "length_is_divisible_by_stations": len(sample_word) % stations == 0,
+        "per_step_gate_counts": [len(c) for c in
+                                 synchronous_chunks(program, census[0][2])],
+        "finding": (
+            "the per-step gate counts are NOT equal and len(word) is not"
+            " divisible by the station count, so the pinned Cycle-863"
+            " certificate-A slicing applies a chunk that is neither one"
+            " step's gates nor aligned to a step boundary.  Both readings"
+            " are reported below; the corrected one is the finding"),
+    }
     prepare_errors = sum(r["prepare_errors"] for r in rows_avail)
 
     selection_sites = [r for r in rows_avail if r["A_prepare"] >= 2]
@@ -1474,13 +1530,18 @@ def main() -> int:
             "OP_ORBIT": "available iff the prepared possibility's own lawful"
                         " orbit completes consistently (rail_a == the token"
                         " indicator, rail_b silent)",
-            "OP_SATURATION": "the pinned Cycle-863 certificate-A diagnostic:"
+            "OP_SATURATION": "the Cycle-863 certificate-A diagnostic:"
                              " prepared, one chunk applied, all bank flags"
-                             " clean",
+                             " clean -- reported twice, once with the chunk"
+                             " boundaries CORRECTED and once exactly as the"
+                             " pinned Cycle-863 source slices the word",
         },
         "A_histogram_prepare": dict(sorted(hist_prep.items())),
         "A_histogram_orbit": dict(sorted(hist_orbit.items())),
-        "A_histogram_saturation": dict(sorted(hist_sat.items())),
+        "A_histogram_saturation_corrected": dict(sorted(hist_sat.items())),
+        "A_histogram_saturation_as_pinned_863_slices_it":
+            dict(sorted(hist_sat863.items())),
+        "pinned_863_chunk_slicing_defect": slicing_defect,
         "prepare_errors": prepare_errors,
         "lock_boundary_range": [min(r["lock_boundary"] for r in rows_avail),
                                 max(r["lock_boundary"] for r in rows_avail)],
@@ -1497,13 +1558,16 @@ def main() -> int:
             "O3 IS NOT VACUOUS: EVERY LOCK POINT IS A GENUINE SELECTION"
             " SITE"),
         "saturation_reading": (
-            "the pinned Cycle-863 saturation diagnostic returns |A| = 0 at"
-            f" {hist_sat.get(0, 0)} of {len(rows_avail)} realized formation"
-            " events.  A menu that is EMPTY at a realized record-write is a"
-            " reductio on the diagnostic, not on the census: the one-chunk"
-            " flags-clean test is a saturation probe, not the admissibility"
-            " menu.  Formation-as-saturation is REFUTED at full census"
-            " scale, extending the pinned Cycle-863 bounded sample"),
+            "with the chunk boundaries corrected, the Cycle-863 saturation"
+            f" diagnostic returns |A| = 0 at {hist_sat.get(0, 0)} of"
+            f" {len(rows_avail)} realized formation events; as the pinned"
+            " Cycle-863 source actually slices the word it returns"
+            f" {dict(sorted(hist_sat863.items()))}.  A menu that is EMPTY at"
+            " a realized record-write is a reductio on the diagnostic, not"
+            " on the census: the one-chunk flags-clean test is a saturation"
+            " probe, not the admissibility menu.  Formation-as-saturation is"
+            " REFUTED at full census scale under BOTH readings, extending"
+            " the pinned Cycle-863 bounded sample"),
     }
     cert_d["pass"] = bool(restriction_detected and prepare_errors == 0
                           and len(rows_avail) == 164)
@@ -1861,15 +1925,20 @@ def main() -> int:
         f" weight question has an object at every one of the {len(rows_avail)}"
         " lock points.",
 
-        "C911-T3 FORMATION-AS-SATURATION IS REFUTED AT FULL CENSUS SCALE."
-        "  The pinned Cycle-863 certificate-A diagnostic (prepare, apply one"
-        " chunk, demand all bank flags clean) returns |A| = 0 at"
-        f" {hist_sat.get(0, 0)} and |A| = 2 at {hist_sat.get(2, 0)} of the"
-        f" {len(rows_avail)}"
-        " realized formation events, and never 1.  An empty menu at a"
-        " realized record-write is incoherent, so the diagnostic is a"
-        " saturation probe rather than the admissibility menu; the pinned"
-        " Cycle-863 bounded sample already showed the same shape.",
+        "C911-T3 FORMATION-AS-SATURATION IS REFUTED AT FULL CENSUS SCALE,"
+        " AND THE PINNED DIAGNOSTIC HAS A CHUNK-SLICING DEFECT.  The"
+        " Cycle-863 certificate-A diagnostic (prepare, apply one chunk,"
+        " demand all bank flags clean) returns, with the chunk boundaries"
+        f" CORRECTED, {dict(sorted(hist_sat.items()))} over the"
+        f" {len(rows_avail)} realized formation events; as the pinned source"
+        f" actually slices the word, {dict(sorted(hist_sat863.items()))}."
+        "  Neither reading ever returns 1.  The defect is exact and"
+        " disclosed: the pinned source takes per_chunk = len(word) //"
+        " stations, but the per-step gate counts differ station by station"
+        f" and len(word) % stations = {len(sample_word) % stations} != 0, so"
+        " the pinned chunk is not a step.  An empty menu at a realized"
+        " record-write is incoherent either way, so the diagnostic is a"
+        " saturation probe rather than the admissibility menu.",
 
         "C911-T4 THE CLASSIFIED COVARIANT RULE SPACE CANNOT RESOLVE THE"
         " LOCK POINTS BEYOND A HANDFUL OF CONDITION CLASSES.  Under the"
@@ -2091,8 +2160,16 @@ def main() -> int:
       f" locks at moment 0: {cert_d['locks_at_moment_zero']}\n")
     w(f"  |A| histogram OP_PREPARE     {cert_d['A_histogram_prepare']}\n")
     w(f"  |A| histogram OP_ORBIT       {cert_d['A_histogram_orbit']}\n")
-    w(f"  |A| histogram OP_SATURATION  {cert_d['A_histogram_saturation']}"
+    w(f"  |A| histogram OP_SATURATION (corrected)"
+      f"  {cert_d['A_histogram_saturation_corrected']}"
+      f"   as pinned-863 slices it"
+      f" {cert_d['A_histogram_saturation_as_pinned_863_slices_it']}"
       f"   (constructor errors {cert_d['prepare_errors']})\n")
+    sd = cert_d["pinned_863_chunk_slicing_defect"]
+    w(f"  PINNED-863 CHUNK-SLICING DEFECT: word length"
+      f" {sd['sample_word_length']} over {sd['stations']} stations,"
+      f" divisible={sd['length_is_divisible_by_stations']}, per-step gate"
+      f" counts {sd['per_step_gate_counts']}\n")
     w(f"  O3 vacuous on this census: {cert_d['O3_vacuous_on_this_census']}\n")
     if first_site:
         w(f"  FIRST GENUINE SELECTION SITE: world {first_site['world']}"

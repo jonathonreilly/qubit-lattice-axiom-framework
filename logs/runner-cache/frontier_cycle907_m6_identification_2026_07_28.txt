@@ -1,0 +1,133 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle907_m6_identification_2026_07_28.py
+runner_sha256: cfc87a647a8fe87ed97289bb179d4919bb4801731393bbec33006c6cfe348d53
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 154.686
+status: ok
+----- stdout -----
+CYCLE 907 -- THE IDENTIFICATION QUESTION: IS THE GRAVITY-SIDE OBJECT THE PUSHFORWARD OF M6?
+==============================================================================
+  every fraction below: bookkeeping fraction, not probability
+
+A_PINS
+    scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py 0c0417912f35c369 c123b8d681c3
+    scripts/frontier_cycle863_time_from_records_2026_07_28.py                e5c16b86bf98187d 871b9e986ca5
+    scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py           6661955d91bd7321 af2e27c4a01b
+    outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json          4ef57b09238ed7b9 565faf0be5e6
+    scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py                 46d46db10258731b 3b43d97bbb60
+    outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json                91c5631415d02313 1fd7522ad2af
+    scripts/frontier_cycle905_born_narrowing_2026_07_28.py                   83429f35312e0df1 f9f2171602bd
+    outputs/born_narrowing_cycle905_receipt_2026_07_28.json                  4c42c3d175567455 7094c986dc05
+    scripts/frontier_cycle906_covariance_tension_2026_07_28.py               9c6392d593c1bf37 d7577bb2ac9f
+    outputs/covariance_tension_cycle906_receipt_2026_07_28.json              e4de35c272216e0a 392cba199a75
+    docs/MINIMAL_AXIOMS_2026-06-29.md                                        fc4d60cce8154cec 4a863da1f3f2
+    sha256 all match = True, git blobs all match = True, firewall hits = 0
+
+B_RESTRICTION_GATE  51/51 reproduce, constructor reproduces the pinned M2 = True
+    event space digest b21d67fd5d1b2da59013aa4eacad3273
+
+C_OBJECT_REBUILD -- the two objects
+    gravity side: config `single`, 4 atoms, 5 degrees
+      atom0 sites=12 meets_supp_R=False c = ['15600/1', '0/1', '1728/1', '0/1', '0/1']
+      atom1 sites= 6 meets_supp_R=False c = ['2910/1', '0/1', '264/1', '0/1', '0/1']
+      atom2 sites= 6 meets_supp_R=False c = ['492/1', '0/1', '108/1', '0/1', '0/1']
+      atom3 sites= 1 meets_supp_R=True  c = ['1/1', '0/1', '0/1', '0/1', '0/1']
+      degree-0 column [15600, 2910, 492, 1] sum 19003
+      degree-2 column [1728, 264, 108, 0] sum 2100
+      rank = 2 by both routes (elimination 2, gram/laplace 2), exhibited minor det = -910080
+    born side: M6_ABSOLUTE_ORBIT_UNIFORM
+      support 1419 events on 11 worlds [3, 4, 11, 12, 19, 20, 26, 27, 32, 33, 37]
+      every positive numerator = [8320], total 11806080, gcd 8320
+      zero-weight events 90841 of 92260
+
+D_BRIDGE_FAMILY
+    family B_894_902_INTEGRAL: phi: E -> atoms (+bottom in the non-exhaustive reading), N in Q*
+    cardinality 4^92260 -- searched ALGEBRAICALLY via the block-mass reduction, which is an equivalence
+    readings: P0 theta-free, P1 single weighting (x) fibre vector, P2 the full extension
+
+E_PUSHFORWARD_TEST -- Q1
+    VERDICT: the 902 object is NOT the pushforward of M6
+      [DEGREE / RANK (universal)] the target has rank 2; a single weighting's pushforward has rank <= 1
+      [DEGREE-0 EXHAUSTIVE (M6-specific)] the ratio scale 19003 = 31 * 613 does not divide M6's total 11806080; remainder 5217
+      [DEGREE-0 NON-EXHAUSTIVE (M6-specific)] M6's positive numerators are all equal to 8320, so its gcd is 8320 and the necessary capacity condition reads 19003 * 8320 = 158104960 <= 11806080, which is FALSE.  Equivalently: the ratio vector demands a block 15600 times the mass of the smallest block, i.e. at least 19003 quanta, and M6's support has only 1419 events
+    P0 theta-free holds = False (non-zero degrees [0, 2])
+    P1 rank condition holds = False
+    P1 degree-0 exhaustive = FAILS_DIVISIBILITY, non-exhaustive = FAILS_CAPACITY
+    capacity: 19003 * 8320 = 158104960 <= 11806080? False
+    fractional relaxation (OUTSIDE the family): degree-0 would pass, rank obstruction survives
+    covariant cone: degree-0 witness M7_ORBIT_RATIO_DEGREE0, degree-2 witness M8_ORBIT_RATIO_DEGREE2
+      exhibited bridge block sizes [92227, 11, 11, 11], N = 1/11
+      verification grid 80 cells (16 subsets x 5 degrees), 0 violations
+      M7_ORBIT_RATIO_DEGREE0: total 209033, covariant True, zero-on-block True, non-negative True
+      M8_ORBIT_RATIO_DEGREE2: total 23100, covariant True, zero-on-block True, non-negative True
+    pricing: gravity-side residual freedom 0, cone dimension 19009, identification residual freedom 19005
+    conditionality chain: P-NONEMPTY, the Cycle-903 barrier scope, the Cycle-906 single-orbit horizon scope, P-INTERTWINE-878, the Cycle-892 interface premises (IF1..IF6), P-EVENT-ORDER, P-856-SHAPE
+
+F_INTERFACE_SHEET -- Q2, M6 against every requirement
+    id    reading                                              verdict
+    IF1   WEAK (support overlap), config level                 PASS
+    IF1   STRONG (pointwise identification), config level      PASS
+    IF1   EVENT-LEVEL PULLBACK through M6's support (NEW, comp FAIL
+    IF2   single                                               PASS
+    IF3   single                                               FAIL on the target configuration
+    IF4   single                                               PASS (bridge-dependent; a separating bridge exists)
+    IF5   single                                               PASS, conditional on P-NONEMPTY
+    IF6   single                                               PASS, but vacuously
+    passes 6, fails 2 (failed ids ['IF1', 'IF3'])
+    IF1 event-level pullback, per candidate:
+      M1_COUNTING                exhaustive FAILS_DIVISIBILITY   non-exhaustive SURVIVES                 decided True
+      M2_PER_WORLD_UNIFORM       exhaustive FAILS_DIVISIBILITY   non-exhaustive SURVIVES                 decided True
+      M3_OCCUPATION_WEIGHTED     exhaustive FAILS_DIVISIBILITY   non-exhaustive UNDECIDED_BY_THIS_TEST   decided None
+      M4_FORMATION_LIFETIME      exhaustive FAILS_DIVISIBILITY   non-exhaustive UNDECIDED_BY_THIS_TEST   decided None
+      M5_FORMATION_MOMENT        exhaustive FAILS_DIVISIBILITY   non-exhaustive UNDECIDED_BY_THIS_TEST   decided None
+      M6_ABSOLUTE_ORBIT_UNIFORM  exhaustive FAILS_DIVISIBILITY   non-exhaustive FAILS_CAPACITY           decided False
+    YES.  At configuration level the gap is closed on the target for every weighting alike -- it is a barrier fact.  At event level the pullback splits the candidates: M1 and M2 are DECIDED POSITIVE, M3, M4 and M5 are UNDECIDED by exact test, and M6 is the only candidate DECIDED NEGATIVE.  So the gap that 902 closed at configuration level REOPENS at event level, and it reopens on M6's support specific
+
+G_SELECTION -- Q3 over {M3, M4, M5, M6}
+    reading                verdict vector over the family               separating
+    R_SUPPORT              ['True', 'True', 'True', 'True']             False
+    R_RATIO_EXHAUSTIVE     ['False', 'False', 'False', 'False']         False
+    R_RATIO_FREE           ['None', 'None', 'None', 'False']            True
+    COVARIANCE             ['False', 'False', 'False', 'True']          True
+    P1_RANK                ['False', 'False', 'False', 'False']         False
+    separating readings: ['R_RATIO_FREE', 'COVARIANCE']
+    intersection of covariance with the degree-0 pushforward over the named candidates: []
+    any candidate uniquely compatible: False
+    M6 total factorisation {'2': 7, '3': 1, '5': 1, '11': 1, '13': 1, '43': 1}, new prime [11]
+    ledger:
+      BL1_SELECTION                    OPEN over 4 and SHARPENED INTO A SPLIT.  No candidate is uniquely compatible with the full gravity-side structure.  The credentials that were expected
+      BL2_IF1_BARRIER                  OPEN and MOVED TO EVENT LEVEL.  902 proved IF1 is P2-invariant at configuration level and closed on `single`.  This block computes the event-level pul
+      BL5_ZERO_SET_DEGENERACY          OPEN and RE-PRICED.  905 priced the separating question as a divisibility question against the census mass spectrum.  That pricing is superseded: the 
+      BL7_COVARIANCE                   RESOLVED BY CONSTRUCTION (906) but the REPRESENTATIVE IS REFUTED as an interface object.  M6 is covariant and interface-zero-compatible, and it is NOT
+      BL9_WITHIN_WORLD_DISTRIBUTION    OPEN, premise P-EVENT-ORDER named and unpriced
+      BL10_DEGREE_TWO_COLUMN           OPEN, priced
+
+H_FALSIFIERS
+    PLANTED_PUSHFORWARD                as designed = True
+    PLANTED_RANK_OBSTRUCTION           as designed = True
+    PLANTED_CAPACITY_OBSTRUCTION       as designed = True
+    LEAKED_IDENTIFICATION_CONTROL      as designed = True
+    DROPPED_ATOM                       as designed = True
+    TAMPERED_PIN                       as designed = True
+    SKIPPED_REQUIREMENT                as designed = True
+    HARDCODED_VERDICT                  as designed = True
+
+I_DOUBLE_BUILD deterministic = True, M6 identical = True
+J_RUNTIME elapsed 154.686s of 900s, full census True
+
+THEOREMS
+  C907-T1 THE RANK OBSTRUCTION IS UNIVERSAL.  The Cycle-902 exhibited object's coefficient matrix over the (atom, degree) grid has exact rank 2 by two independent routes, with an exhibited 2x2 minor of determinant -910080.  The pushforward of ANY single weighting m under ANY bridge (phi, N) of the declared family, with ANY fibre vector lambda, has coefficient matrix lambda_d * m(phi^-1(A_i)) -- a rank-<= 1 matrix.  So the gravity-side object is the pushforward of NO single weighting: not M6, not one of the Cycle-878 five, not any element of the covariant compatible cone.  The obstruction survives the fractional relaxation of the family's integrality bound, and it is the Cycle-894 theta-free obstruction seen at event level: a degree-0-only weighting forces M_d = 0 for d >= 1, which `single` -- theta-moving -- refuses.
+
+  C907-T2 M6 FAILS EVEN AT DEGREE 0, AND THE REASON IS ITS QUANTUM.  Restricted to the degree-0 column the pushforward asks for disjoint blocks in the exact ratio [15600, 2910, 492, 1].  Under a TOTAL bridge this is Cycle 905's R_RATIO_EXHAUSTIVE and it fails: 19003 = 31 * 613 does not divide 11806080 (remainder 5217).  Under a PARTIAL bridge it is R_RATIO_FREE, and here the reading is DECIDED for the first time in the lane: M6's positive numerators are all equal to 8320, so every achievable block mass is a multiple of 8320, the ratio vector needs 19003 such quanta, and M6's support holds only 1419.  The necessary capacity condition 19003 * 8320 <= 11806080 is FALSE.
+
+  C907-T3 THE CONE IDENTIFIES; THE POINT DOES NOT.  Inside the covariant-and-interface-compatible cone that Cycle 906 computed, two weightings are exhibited -- M7_ORBIT_RATIO_DEGREE0 and M8_ORBIT_RATIO_DEGREE2 -- that are covariant, zero on the whole never-formed block, non-negative, normalizable and supported on the escape orbit, and whose pushforward under an explicit TOTAL bridge reproduces the Cycle-902 coefficient table on all 80 cells of the atom algebra x degree grid with 0 violations, at normalizer N = 1/11.  So the two lanes' constructions ARE compatible.  What fails is the identification with M6: M6 differs from the witness ONLY in its within-world split, which 906 chose uniformly and which no covariance or zero-mass equation constrains.
+
+  C907-T4 THE IDENTIFICATION IS UNDERDETERMINED, AND PRICED.  The gravity side pins its object to residual freedom 0 once the normalizer is fixed.  Its Born-side preimage does not: the covariant compatible cone has dimension 19009 (route A structural, gated against Cycle 906's own 19009; route B an exhibited 4x4 minor of determinant 14641), and imposing the whole interface object costs exactly 4 conditions per degree slice, leaving residual freedom 19005.  The interface object carries too little information to select a weighting; what it does instead is EXCLUDE, and it excludes every named candidate.
+
+  C907-T5 NO SELECTION OVER THE ENLARGED SET.  Over {M3, M4, M5, M6} the readings split rather than converge.  R_RATIO_EXHAUSTIVE kills all four.  COVARIANCE keeps M6 alone.  R_RATIO_FREE -- constant and undecided on {M3, M4, M5} in Cycle 905 -- becomes the lane's FIRST non-constant reading here, and it excludes M6.  The P1 rank obstruction kills all four.  The intersection of the covariance credential with the degree-0 pushforward credential over the named candidates is EMPTY, so no candidate is uniquely compatible and the framework's first selection does NOT occur.  The prime targets Cycle 905 named are superseded: they price the exhaustive reading, which separates nothing; the separating fact is the capacity condition, a statement about mass quantum against support size.
+
+CERTIFICATES  {"A_PINS":true,"B_RESTRICTION_GATE":true,"C_OBJECT_REBUILD":true,"D_BRIDGE_FAMILY":true,"E_PUSHFORWARD_TEST":true,"F_INTERFACE_SHEET":true,"G_SELECTION":true,"H_FALSIFIERS":true,"I_DOUBLE_BUILD":true,"J_RUNTIME":true,"K_LANE_LEDGER":true}
+science digest b010a91f1bd5dda2f8a75e87c6a22befb38018a09c76e9537a536ff183db88c7
+VERDICT: IDENTIFICATION_FAILS_FOR_M6_HOLDS_FOR_THE_CONE
+receipt: outputs/m6_identification_cycle907_receipt_2026_07_28.json

@@ -1851,8 +1851,15 @@ def main() -> int:
                                      obst_C)
     obst_detected = not obst_read["P1_SINGLE_WEIGHTING"]["identifies"]
 
-    # H3 PLANTED OBSTRUCTION (capacity): one more quantum than the support has
-    cap_counts = [1000, 300, 100, 20]
+    # H3 PLANTED OBSTRUCTION (capacity): a PRIMITIVE ratio vector -- gcd 1, so
+    # it cannot be reduced to a cheaper one -- whose scale exceeds the support
+    # by exactly two quanta.  The first draft of this plant used
+    # [1000, 300, 100, 20], and the machinery correctly ACCEPTED it: gcd 20
+    # reduces that vector to [50, 15, 5, 1] of scale 71, which M6 realizes
+    # easily.  The plant is recorded here in its repaired, primitive form and
+    # the near-miss is disclosed rather than deleted.
+    cap_counts = [1000, 300, 100, 21]
+    cap_gcd = gcd_all(cap_counts)
     cap_C = [[(1 if d == 0 else 0) * cap_counts[i] * m6_positive_min
               for d in range(obj["degrees"])] for i in range(obj["atoms"])]
     cap_read = pushforward_readings("PLANTED_CAPACITY_OBSTRUCTION", m6_nums,
@@ -1909,13 +1916,22 @@ def main() -> int:
              "observed_as_designed": bool(obst_detected)},
             {"falsifier": "PLANTED_CAPACITY_OBSTRUCTION",
              "modification": (
-                 f"a rank-1 degree-0 target needing {sum(cap_counts)} quanta"
-                 f" when the support has {len(star_events)}"),
+                 f"a rank-1 degree-0 target whose PRIMITIVE ratio vector"
+                 f" {cap_counts} (gcd {cap_gcd}) needs {sum(cap_counts)}"
+                 f" quanta when M6's support holds {len(star_events)} -- a"
+                 " near-miss of exactly two quanta"),
              "designed_outcome": "REJECTED on capacity, not on rank",
              "identified": cap_read["P1_SINGLE_WEIGHTING"]["identifies"],
              "target_rank": cap_read["target_rank_value"],
              "non_exhaustive_verdict":
                  cap_read["P1_SINGLE_WEIGHTING"]["non_exhaustive"]["verdict"],
+             "rejected_on_capacity_not_on_rank": bool(
+                 cap_read["target_rank_value"] <= 1 and cap_detected),
+             "first_draft_was_non_primitive_and_correctly_accepted": (
+                 "the ratio vector [1000, 300, 100, 20] has gcd 20 and"
+                 " reduces to [50, 15, 5, 1] of scale 71, which M6 realizes;"
+                 " the machinery accepted it, which is the right answer, so"
+                 " the plant was repaired rather than the machinery"),
              "observed_as_designed": bool(cap_detected)},
             {"falsifier": "LEAKED_IDENTIFICATION_CONTROL",
              "modification": "none -- the real 902 object through the same"

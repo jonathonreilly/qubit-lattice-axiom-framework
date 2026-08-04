@@ -1,0 +1,742 @@
+{
+ "Q1_M6_capacity_condition": {
+  "holds": false,
+  "quanta_required": 19003,
+  "quantum": 8320,
+  "scale_times_quantum": 158104960,
+  "support_events": 1419,
+  "total": 11806080
+ },
+ "Q1_M6_is_the_pushforward": false,
+ "Q1_M6_total": 11806080,
+ "Q1_M6_total_mod_ratio_scale": 5217,
+ "Q1_bridge_family": "B_894_902_INTEGRAL",
+ "Q1_bridge_family_bounds": {
+  "N_free": "N ranges over the non-zero rationals; nu = 1/N.",
+  "cardinality": "the family is not enumerable by brute force: |atoms|^|E| = 4^92260 maps in the exhaustive reading.  The search below is therefore ALGEBRAIC, via a reduction proved in certificate D, and is complete over the whole family -- never a sample.",
+  "phi_is_integral": "phi is a MAP: every event lands in exactly one atom.  The fractional relaxation -- a transport plan splitting one event's mass across several atoms -- is OUTSIDE this family because it is not a phi with a preimage, and the pinned 894/902 formulation is written with phi^-1.  Its consequences are computed and disclosed below rather than hidden.",
+  "phi_is_total": "two readings are computed and reported separately.  EXHAUSTIVE: phi is total on E, so the four atoms exhaust the census image -- this is Cycle 905's R_RATIO_EXHAUSTIVE.  NON-EXHAUSTIVE: a discard symbol is adjoined, phi: E -> atoms + {bottom}, so the atoms need only carry a sub-part of the census -- this is Cycle 905's R_RATIO_FREE."
+ },
+ "Q1_conditionality_chain": [
+  "P-NONEMPTY",
+  "the Cycle-903 barrier scope",
+  "the Cycle-906 single-orbit horizon scope",
+  "P-INTERTWINE-878",
+  "the Cycle-892 interface premises (IF1..IF6)",
+  "P-EVENT-ORDER",
+  "P-856-SHAPE"
+ ],
+ "Q1_cone_dimension": 19009,
+ "Q1_covariant_space_can_push_forward": true,
+ "Q1_degree0_ratio_scale": 19003,
+ "Q1_degree0_ratio_vector": [
+  15600,
+  2910,
+  492,
+  1
+ ],
+ "Q1_exhibited_identification": {
+  "block_sizes": [
+   92227,
+   11,
+   11,
+   11
+  ],
+  "degree0_slice": "M7_ORBIT_RATIO_DEGREE0",
+  "degree2_slice": "M8_ORBIT_RATIO_DEGREE2",
+  "grid_cells": 80,
+  "grid_violations": 0,
+  "normalizer_N": "1/11"
+ },
+ "Q1_identification_residual_freedom": 19005,
+ "Q1_obstruction_layers": [
+  "DEGREE / RANK (universal)",
+  "DEGREE-0 EXHAUSTIVE (M6-specific)",
+  "DEGREE-0 NON-EXHAUSTIVE (M6-specific)"
+ ],
+ "Q1_target_coefficient_rank": 2,
+ "Q1_target_rank_routes": {
+  "gram_laplace": 2,
+  "rational_elimination": 2
+ },
+ "Q2_IF1_event_level_decisions": {
+  "M1_COUNTING": true,
+  "M2_PER_WORLD_UNIFORM": true,
+  "M3_OCCUPATION_WEIGHTED": null,
+  "M4_FORMATION_LIFETIME": null,
+  "M5_FORMATION_MOMENT": null,
+  "M6_ABSOLUTE_ORBIT_UNIFORM": false
+ },
+ "Q2_IF1_gap_reopens_at_event_level": true,
+ "Q2_fail_count": 2,
+ "Q2_interface_sheet": [
+  {
+   "id": "IF1",
+   "reading": "WEAK (support overlap), config level",
+   "verdict": "PASS"
+  },
+  {
+   "id": "IF1",
+   "reading": "STRONG (pointwise identification), config level",
+   "verdict": "PASS"
+  },
+  {
+   "id": "IF1",
+   "reading": "EVENT-LEVEL PULLBACK through M6's support (NEW, computed here)",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "IF2",
+   "reading": "single",
+   "verdict": "PASS"
+  },
+  {
+   "id": "IF3",
+   "reading": "single",
+   "verdict": "FAIL on the target configuration"
+  },
+  {
+   "id": "IF4",
+   "reading": "single",
+   "verdict": "PASS (bridge-dependent; a separating bridge exists)"
+  },
+  {
+   "id": "IF5",
+   "reading": "single",
+   "verdict": "PASS, conditional on P-NONEMPTY"
+  },
+  {
+   "id": "IF6",
+   "reading": "single",
+   "verdict": "PASS, but vacuously"
+  }
+ ],
+ "Q2_pass_count": 6,
+ "Q3_M6_new_prime": [
+  11
+ ],
+ "Q3_any_candidate_uniquely_compatible": false,
+ "Q3_intersection_over_named_candidates": [],
+ "Q3_separating_readings": [
+  "R_RATIO_FREE",
+  "COVARIANCE"
+ ],
+ "Q3_separation": {
+  "COVARIANCE": [
+   "False",
+   "False",
+   "False",
+   "True"
+  ],
+  "P1_RANK": [
+   "False",
+   "False",
+   "False",
+   "False"
+  ],
+  "R_RATIO_EXHAUSTIVE": [
+   "False",
+   "False",
+   "False",
+   "False"
+  ],
+  "R_RATIO_FREE": [
+   "None",
+   "None",
+   "None",
+   "False"
+  ],
+  "R_SUPPORT": [
+   "True",
+   "True",
+   "True",
+   "True"
+  ]
+ },
+ "VERDICT": "IDENTIFICATION_FAILS_FOR_M6_HOLDS_FOR_THE_CONE",
+ "all_certificates_pass": true,
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockQ4-20260802",
+ "campaign": "campaign-5-born-lane-closure",
+ "checks": {
+  "A_PINS": true,
+  "B_RESTRICTION_GATE": true,
+  "C_OBJECT_REBUILD": true,
+  "D_BRIDGE_FAMILY": true,
+  "E_PUSHFORWARD_TEST": true,
+  "F_INTERFACE_SHEET": true,
+  "G_SELECTION": true,
+  "H_FALSIFIERS": true,
+  "I_DOUBLE_BUILD": true,
+  "J_RUNTIME": true,
+  "K_LANE_LEDGER": true
+ },
+ "claim_type": "bounded_theorem",
+ "cycle": 907,
+ "deterministic_double_build": true,
+ "elapsed_sec": 154.686,
+ "event_space_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+ "firewall_hits": 0,
+ "label_on_every_fraction": "bookkeeping fraction, not probability",
+ "ledger_rows": [
+  {
+   "blocked_on": "a rule that picks a within-world distribution",
+   "id": "BL1_SELECTION",
+   "status_before": "OPEN over 3: the narrowing to ['M3_OCCUPATION_WEIGHTED', 'M4_FORMATION_LIFETIME', 'M5_FORMATION_MOMENT'] is certified on",
+   "status_now": "OPEN over 4 and SHARPENED INTO A SPLIT.  No candidate is uniquely compatible with the full gravity-side structure.  The credentials that were expected to converge do not intersect over the named candidates, and the object that does identify lies in a 19009-dimensional cone that contains none of them"
+  },
+  {
+   "blocked_on": "an exact decision for M3, M4, M5",
+   "id": "BL2_IF1_BARRIER",
+   "status_before": "OPEN and BARRIER-SCOPED.  902 (C902-T3) proved IF1 is P2-invariant: the kernel fibre re-weights path lengths and cannot ",
+   "status_now": "OPEN and MOVED TO EVENT LEVEL.  902 proved IF1 is P2-invariant at configuration level and closed on `single`.  This block computes the event-level pullback and finds the gap REOPENS: M6 is decided negative, M1 and M2 decided positive, M3/M4/M5 undecided"
+  },
+  {
+   "blocked_on": "nothing; it is computed here",
+   "id": "BL5_ZERO_SET_DEGENERACY",
+   "status_now": "OPEN and RE-PRICED.  905 priced the separating question as a divisibility question against the census mass spectrum.  That pricing is superseded: the exhaustive reading kills every candidate including M6, so divisibility cannot separate.  The separating fact is the CAPACITY condition -- mass quantum against support size"
+  },
+  {
+   "blocked_on": "nothing on the Born side",
+   "id": "BL7_COVARIANCE",
+   "status_before": "RESOLVED BY CONSTRUCTION, OUTSIDE THE CYCLE-878 SPAN.  (1) Over the 25-dimensional minimal kernel-argument extension of ",
+   "status_now": "RESOLVED BY CONSTRUCTION (906) but the REPRESENTATIVE IS REFUTED as an interface object.  M6 is covariant and interface-zero-compatible, and it is NOT the pushforward of the gravity-side object under any bridge of the declared family.  906's resolution stands at the level of the cone; its exhibited point does not"
+  },
+  {
+   "id": "BL9_WITHIN_WORLD_DISTRIBUTION",
+   "obligation": "NEW, surfaced by this block.  906's uniform within-world split is a free choice that no covariance or zero-mass equation forces, and it is the SOLE reason M6 fails the degree-0 pushforward.  A different split in the same cone (M7_ORBIT_RATIO_DEGREE0) passes it exactly.  The selection question has therefore moved from 'which named weighting' to 'which within-world distribution', and nothing on the lane supplies one",
+   "status_now": "OPEN, premise P-EVENT-ORDER named and unpriced"
+  },
+  {
+   "id": "BL10_DEGREE_TWO_COLUMN",
+   "obligation": "NEW, surfaced by this block.  The gravity-side object has coefficient-matrix rank 2, so it cannot be the pushforward of ANY single weighting.  An identification requires an extension element with at least two linearly independent degree slices -- exhibited here as (M7_ORBIT_RATIO_DEGREE0, M8_ORBIT_RATIO_DEGREE2) -- which means the Born side must supply TWO objects, not one, and the lane has no rule that says what the second one is",
+   "status_now": "OPEN, priced"
+  }
+ ],
+ "named_premises": [
+  "P-NONEMPTY (named, undischarged)",
+  "the Cycle-903 barrier scope (named, undischarged, inherited)",
+  "the Cycle-906 single-orbit horizon scope (named, undischarged, inherited)",
+  "P-INTERTWINE-878 (named, undischarged, inherited)",
+  "the Cycle-892 interface premises (IF1..IF6) (named, undischarged, inherited)",
+  "P-EVENT-ORDER (named here, undischarged)",
+  "P-856-SHAPE (named, undischarged, inherited, unused)"
+ ],
+ "question": "Cycle 907 -- the identification question: is the gravity-side exhibited object the pushforward of M6?  Plus M6's full interface-sheet test and the selection status over {M3, M4, M5, M6}.",
+ "restriction_gate": "51/51 restriction gates reproduce",
+ "restriction_gate_rows": [
+  {
+   "computed": 92260,
+   "expected": 92260,
+   "gate": "878_event_cardinality",
+   "match": true
+  },
+  {
+   "computed": 748,
+   "expected": 748,
+   "gate": "878_worlds_with_events",
+   "match": true
+  },
+  {
+   "computed": 68,
+   "expected": 68,
+   "gate": "878_world_orbit_count",
+   "match": true
+  },
+  {
+   "computed": true,
+   "expected": true,
+   "gate": "878_action_is_a_census_bijection",
+   "match": true
+  },
+  {
+   "computed": true,
+   "expected": true,
+   "gate": "878_atoms_are_singletons",
+   "match": true
+  },
+  {
+   "computed": 92260,
+   "expected": 92260,
+   "gate": "905_total_M1_COUNTING",
+   "match": true
+  },
+  {
+   "computed": 0,
+   "expected": 0,
+   "gate": "905_zero_weight_events_M1_COUNTING",
+   "match": true
+  },
+  {
+   "computed": 802813440,
+   "expected": 802813440,
+   "gate": "905_total_M2_PER_WORLD_UNIFORM",
+   "match": true
+  },
+  {
+   "computed": 0,
+   "expected": 0,
+   "gate": "905_zero_weight_events_M2_PER_WORLD_UNIFORM",
+   "match": true
+  },
+  {
+   "computed": 897595870080,
+   "expected": 897595870080,
+   "gate": "905_total_M3_OCCUPATION_WEIGHTED",
+   "match": true
+  },
+  {
+   "computed": 73088,
+   "expected": 73088,
+   "gate": "905_zero_weight_events_M3_OCCUPATION_WEIGHTED",
+   "match": true
+  },
+  {
+   "computed": 29530480287360,
+   "expected": 29530480287360,
+   "gate": "905_total_M4_FORMATION_LIFETIME",
+   "match": true
+  },
+  {
+   "computed": 73088,
+   "expected": 73088,
+   "gate": "905_zero_weight_events_M4_FORMATION_LIFETIME",
+   "match": true
+  },
+  {
+   "computed": 2192349344640,
+   "expected": 2192349344640,
+   "gate": "905_total_M5_FORMATION_MOMENT",
+   "match": true
+  },
+  {
+   "computed": 76184,
+   "expected": 76184,
+   "gate": "905_zero_weight_events_M5_FORMATION_MOMENT",
+   "match": true
+  },
+  {
+   "computed": "single",
+   "expected": "single",
+   "gate": "902_exhibited_object_config",
+   "match": true
+  },
+  {
+   "computed": [
+    "single"
+   ],
+   "expected": [
+    "single"
+   ],
+   "gate": "902_joint_satisfiable_configs",
+   "match": true
+  },
+  {
+   "computed": [
+    0,
+    2
+   ],
+   "expected": [
+    0,
+    2
+   ],
+   "gate": "902_nonzero_degrees",
+   "match": true
+  },
+  {
+   "computed": 4,
+   "expected": 4,
+   "gate": "902_atom_count",
+   "match": true
+  },
+  {
+   "computed": [
+    12,
+    6,
+    6,
+    1
+   ],
+   "expected": [
+    12,
+    6,
+    6,
+    1
+   ],
+   "gate": "902_atom_sites",
+   "match": true
+  },
+  {
+   "computed": 1,
+   "expected": 1,
+   "gate": "902_atoms_meeting_supp_R",
+   "match": true
+  },
+  {
+   "computed": [
+    [
+     "15600/1",
+     "0/1",
+     "1728/1",
+     "0/1",
+     "0/1"
+    ],
+    [
+     "2910/1",
+     "0/1",
+     "264/1",
+     "0/1",
+     "0/1"
+    ],
+    [
+     "492/1",
+     "0/1",
+     "108/1",
+     "0/1",
+     "0/1"
+    ],
+    [
+     "1/1",
+     "0/1",
+     "0/1",
+     "0/1",
+     "0/1"
+    ]
+   ],
+   "expected": [
+    [
+     "15600/1",
+     "0/1",
+     "1728/1",
+     "0/1",
+     "0/1"
+    ],
+    [
+     "2910/1",
+     "0/1",
+     "264/1",
+     "0/1",
+     "0/1"
+    ],
+    [
+     "492/1",
+     "0/1",
+     "108/1",
+     "0/1",
+     "0/1"
+    ],
+    [
+     "1/1",
+     "0/1",
+     "0/1",
+     "0/1",
+     "0/1"
+    ]
+   ],
+   "gate": "902_coefficient_table_reread",
+   "match": true
+  },
+  {
+   "computed": 1,
+   "expected": 1,
+   "gate": "902_solution_space_dimension",
+   "match": true
+  },
+  {
+   "computed": 0,
+   "expected": 0,
+   "gate": "902_residual_freedom",
+   "match": true
+  },
+  {
+   "computed": 0,
+   "expected": 0,
+   "gate": "902_row_violations",
+   "match": true
+  },
+  {
+   "computed": 5,
+   "expected": 5,
+   "gate": "902_minimal_fibre_dimension",
+   "match": true
+  },
+  {
+   "computed": 0,
+   "expected": 0,
+   "gate": "902_bridge_violations",
+   "match": true
+  },
+  {
+   "computed": 50,
+   "expected": 50,
+   "gate": "902_row_system_shape_derived",
+   "match": true
+  },
+  {
+   "computed": 648,
+   "expected": 648,
+   "gate": "902_grid_points",
+   "match": true
+  },
+  {
+   "computed": 19003,
+   "expected": 19003,
+   "gate": "905_ratio_scale_19003",
+   "match": true
+  },
+  {
+   "computed": {
+    "31": 1,
+    "613": 1
+   },
+   "expected": {
+    "31": 1,
+    "613": 1
+   },
+   "gate": "905_ratio_scale_factorisation",
+   "match": true
+  },
+  {
+   "computed": [
+    "R_RATIO_EXHAUSTIVE"
+   ],
+   "expected": [
+    "R_RATIO_EXHAUSTIVE"
+   ],
+   "gate": "905_R_RATIO_EXHAUSTIVE_is_the_joint_obstruction",
+   "match": true
+  },
+  {
+   "computed": true,
+   "expected": true,
+   "gate": "905_R_RATIO_EXHAUSTIVE_fails_M1_COUNTING",
+   "match": true
+  },
+  {
+   "computed": true,
+   "expected": true,
+   "gate": "905_R_RATIO_EXHAUSTIVE_fails_M2_PER_WORLD_UNIFORM",
+   "match": true
+  },
+  {
+   "computed": true,
+   "expected": true,
+   "gate": "905_R_RATIO_EXHAUSTIVE_fails_M3_OCCUPATION_WEIGHTED",
+   "match": true
+  },
+  {
+   "computed": true,
+   "expected": true,
+   "gate": "905_R_RATIO_EXHAUSTIVE_fails_M4_FORMATION_LIFETIME",
+   "match": true
+  },
+  {
+   "computed": true,
+   "expected": true,
+   "gate": "905_R_RATIO_EXHAUSTIVE_fails_M5_FORMATION_MOMENT",
+   "match": true
+  },
+  {
+   "computed": 1419,
+   "expected": 1419,
+   "gate": "906_M6_support_events",
+   "match": true
+  },
+  {
+   "computed": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ],
+   "expected": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ],
+   "gate": "906_M6_support_worlds",
+   "match": true
+  },
+  {
+   "computed": 11806080,
+   "expected": 11806080,
+   "gate": "906_M6_total",
+   "match": true
+  },
+  {
+   "computed": 90841,
+   "expected": 90841,
+   "gate": "906_M6_zero_weight_events",
+   "match": true
+  },
+  {
+   "computed": [
+    8320
+   ],
+   "expected": [
+    8320
+   ],
+   "gate": "906_M6_event_numerator_uniform",
+   "match": true
+  },
+  {
+   "computed": 11806080,
+   "expected": 11806080,
+   "gate": "906_M6_quantum_times_support_is_the_total",
+   "match": true
+  },
+  {
+   "computed": true,
+   "expected": true,
+   "gate": "906_M6_zero_on_block",
+   "match": true
+  },
+  {
+   "computed": 1,
+   "expected": 1,
+   "gate": "906_world_mass_space_dimension",
+   "match": true
+  },
+  {
+   "computed": 19009,
+   "expected": 19009,
+   "gate": "906_generous_signed_solution_dimension",
+   "match": true
+  },
+  {
+   "computed": 1,
+   "expected": 1,
+   "gate": "906_escape_orbit_count",
+   "match": true
+  },
+  {
+   "computed": [
+    748,
+    164,
+    584,
+    73088,
+    92260
+   ],
+   "expected": [
+    748,
+    164,
+    584,
+    73088,
+    92260
+   ],
+   "gate": "905_mechanism_sentence_numbers",
+   "match": true
+  },
+  {
+   "computed": 584,
+   "expected": 584,
+   "gate": "905_worlds_never_formed",
+   "match": true
+  },
+  {
+   "computed": 73088,
+   "expected": 73088,
+   "gate": "905_events_on_never_formed_worlds",
+   "match": true
+  },
+  {
+   "computed": 164,
+   "expected": 164,
+   "gate": "905_worlds_formed",
+   "match": true
+  }
+ ],
+ "science_digest": "b010a91f1bd5dda2f8a75e87c6a22befb38018a09c76e9537a536ff183db88c7",
+ "scope": "the full realized record-write census of the pinned Cycle-878 construction at horizon 16384 orbits (92260 events over 748 worlds), rebuilt by AST lift from the pinned Cycle-863 and Cycle-878 sources (never imported); the gravity side enters ONLY through the vendored Cycle-902 artifacts, so the (window, theta) grid is INHERITED from Cycle 902's certificate G and is not recomputed here.  Exact rational arithmetic throughout; no probability, no occurrence rule, no update law is introduced.",
+ "self_sha256": "cfc87a647a8fe87ed97289bb179d4919bb4801731393bbec33006c6cfe348d53",
+ "source_pins": [
+  {
+   "bytes": 26046,
+   "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  {
+   "bytes": 23020,
+   "git_blob": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+   "path": "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+   "sha256": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62"
+  },
+  {
+   "bytes": 47315,
+   "git_blob": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+   "path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+   "sha256": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b"
+  },
+  {
+   "bytes": 7169,
+   "git_blob": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+   "path": "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+   "sha256": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c"
+  },
+  {
+   "bytes": 71823,
+   "git_blob": "3b43d97bbb604ea44ed06c87aa091c6aa9d8470b",
+   "path": "scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py",
+   "sha256": "46d46db10258731b986f3c639eedcf1ad3f968021f1efe30c88cc3e5e17b46c2"
+  },
+  {
+   "bytes": 16040,
+   "git_blob": "1fd7522ad2af152f2e13327e752e2eb9f37e67bb",
+   "path": "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json",
+   "sha256": "91c5631415d0231390fedbd0174f074de45cfa33b6dd4f706ed6fcdbf4dfd1d8"
+  },
+  {
+   "bytes": 75262,
+   "git_blob": "f9f2171602bddf7d6164261dc13a2ee4f7e3046c",
+   "path": "scripts/frontier_cycle905_born_narrowing_2026_07_28.py",
+   "sha256": "83429f35312e0df16d3d11e65685cb87b8e732b19299e1078ddaea1e1444afb3"
+  },
+  {
+   "bytes": 13116,
+   "git_blob": "7094c986dc0560e8982507d8cc379f5c720b639f",
+   "path": "outputs/born_narrowing_cycle905_receipt_2026_07_28.json",
+   "sha256": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40"
+  },
+  {
+   "bytes": 115209,
+   "git_blob": "d7577bb2ac9f4cb7ee9d8abc5f19e9c7cf888df9",
+   "path": "scripts/frontier_cycle906_covariance_tension_2026_07_28.py",
+   "sha256": "9c6392d593c1bf37e70f84692732d1e5cfa3f4377393dab846a15789fc0ce008"
+  },
+  {
+   "bytes": 17314,
+   "git_blob": "392cba199a75a14a8bb88808943c1259cbd7a94b",
+   "path": "outputs/covariance_tension_cycle906_receipt_2026_07_28.json",
+   "sha256": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f"
+  },
+  {
+   "bytes": 8846,
+   "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+  }
+ ],
+ "theorems": [
+  "C907-T1 THE RANK OBSTRUCTION IS UNIVERSAL.  The Cycle-902 exhibited object's coefficient matrix over the (atom, degree) grid has exact rank 2 by two independent routes, with an exhibited 2x2 minor of determinant -910080.  The pushforward of ANY single weighting m under ANY bridge (phi, N) of the declared family, with ANY fibre vector lambda, has coefficient matrix lambda_d * m(phi^-1(A_i)) -- a rank-<= 1 matrix.  So the gravity-side object is the pushforward of NO single weighting: not M6, not one of the Cycle-878 five, not any element of the covariant compatible cone.  The obstruction survives the fractional relaxation of the family's integrality bound, and it is the Cycle-894 theta-free obstruction seen at event level: a degree-0-only weighting forces M_d = 0 for d >= 1, which `single` -- theta-moving -- refuses.",
+  "C907-T2 M6 FAILS EVEN AT DEGREE 0, AND THE REASON IS ITS QUANTUM.  Restricted to the degree-0 column the pushforward asks for disjoint blocks in the exact ratio [15600, 2910, 492, 1].  Under a TOTAL bridge this is Cycle 905's R_RATIO_EXHAUSTIVE and it fails: 19003 = 31 * 613 does not divide 11806080 (remainder 5217).  Under a PARTIAL bridge it is R_RATIO_FREE, and here the reading is DECIDED for the first time in the lane: M6's positive numerators are all equal to 8320, so every achievable block mass is a multiple of 8320, the ratio vector needs 19003 such quanta, and M6's support holds only 1419.  The necessary capacity condition 19003 * 8320 <= 11806080 is FALSE.",
+  "C907-T3 THE CONE IDENTIFIES; THE POINT DOES NOT.  Inside the covariant-and-interface-compatible cone that Cycle 906 computed, two weightings are exhibited -- M7_ORBIT_RATIO_DEGREE0 and M8_ORBIT_RATIO_DEGREE2 -- that are covariant, zero on the whole never-formed block, non-negative, normalizable and supported on the escape orbit, and whose pushforward under an explicit TOTAL bridge reproduces the Cycle-902 coefficient table on all 80 cells of the atom algebra x degree grid with 0 violations, at normalizer N = 1/11.  So the two lanes' constructions ARE compatible.  What fails is the identification with M6: M6 differs from the witness ONLY in its within-world split, which 906 chose uniformly and which no covariance or zero-mass equation constrains.",
+  "C907-T4 THE IDENTIFICATION IS UNDERDETERMINED, AND PRICED.  The gravity side pins its object to residual freedom 0 once the normalizer is fixed.  Its Born-side preimage does not: the covariant compatible cone has dimension 19009 (route A structural, gated against Cycle 906's own 19009; route B an exhibited 4x4 minor of determinant 14641), and imposing the whole interface object costs exactly 4 conditions per degree slice, leaving residual freedom 19005.  The interface object carries too little information to select a weighting; what it does instead is EXCLUDE, and it excludes every named candidate.",
+  "C907-T5 NO SELECTION OVER THE ENLARGED SET.  Over {M3, M4, M5, M6} the readings split rather than converge.  R_RATIO_EXHAUSTIVE kills all four.  COVARIANCE keeps M6 alone.  R_RATIO_FREE -- constant and undecided on {M3, M4, M5} in Cycle 905 -- becomes the lane's FIRST non-constant reading here, and it excludes M6.  The P1 rank obstruction kills all four.  The intersection of the covariance credential with the degree-0 pushforward credential over the named candidates is EMPTY, so no candidate is uniquely compatible and the framework's first selection does NOT occur.  The prime targets Cycle 905 named are superseded: they price the exhaustive reading, which separates nothing; the separating fact is the capacity condition, a statement about mass quantum against support size."
+ ]
+}

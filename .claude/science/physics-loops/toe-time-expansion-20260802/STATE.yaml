@@ -175,9 +175,24 @@ worktrees:
     residual = 6 free + 5 owed IF properties (net-of-bridge 5); discharges
     convert free dims to NAMED IMPORTS (size up 1, honest); 887-attribution
     correction adopted pack-wide
-  exercise-sl1b: SL1b wall-breaking exercise (read-only generator per the
-    repo exercise skill; candidate routes for the binding invariant;
-    supervisor selects/kills post-exercise) — running
+  exercise-sl1b: DONE — the exercise's decisive finding is about the
+    TARGET, not the binding: Q=2/3 exact (the r=1/2 lane's conditional
+    selection theorem) + PDG (m_e, m_mu) fixes delta ~446 sigma from 2/9 —
+    the framework cannot hold both exact. Also: four-shape classification
+    (T1/T7 cover only M1-with-closure + scale-covariant; M2/M3/M4 never
+    attacked); the N=3 degeneracy is >=9 families deep (883's datum on
+    F_dim, the retained anchor on F_res — distinct families coinciding
+    only at scope); T7's "contains 1" premise is a design tautology
+    (symmetric windows); three bankable side theorems. Axiom-ask assessed
+    NOT EARNED (target-shaped wall). SUPERVISOR ROUTE SELECTION: Route 1
+    target-integrity fork FIRST (Cycle 897, launched); Route 2 M4
+    gluing-defect + Route 4 M2 involution census queued (Cycle 898);
+    Route 5 type-junction no-go later.
+  c5-g20: G20 (Cycle 897, the target-integrity fork — certified interval
+    arithmetic on Q=2/3 vs delta=2/9 both directions + tau row; the
+    N=3 degeneracy census; the T7 semigroup repair; two banked
+    discharges; admitted-observation inputs quarantined and disclosed;
+    stacked on G15 tip) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

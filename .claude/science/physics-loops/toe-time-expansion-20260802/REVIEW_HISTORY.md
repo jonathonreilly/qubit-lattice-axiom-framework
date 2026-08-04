@@ -365,3 +365,24 @@ remains on them.
 - Cluster-cap (18th gravity-family PR): **OPEN** — two flag closures
   + the current-residual number + the attribution correction.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## SL1b exercise (read-only generator) — 2026-08-04
+
+- Protocol followed per the repo exercise skill (freshness-checked;
+  refresher surfaces read and listed; five independent slices; network
+  literature verified/unverified split disclosed; Cycle-894 absence
+  from the read tree disclosed and not leaned on).
+- Decisive output: the TARGET-INTEGRITY fork (Q=2/3 exact excludes
+  delta=2/9 at ~446 sigma given PDG masses) — may retire SL1b as
+  wrongly-posed rather than close it. Supervisor selected it as Cycle
+  897 (launched) — shipped as a computed incompatibility, NOT an owner
+  ask (per the window-2 directive, only axiom additions are askable).
+- Generator also produced: M1-M4 shape classification with M2/M3/M4
+  unattacked; the >=9-family N=3 degeneracy account (extends the
+  2026-05-23 two-routes-distinct note); the T7 symmetric-window
+  tautology; the conjugate-pair discharge; the no-orientation lemma;
+  the 883 prose/runner five-vs-four discrepancy. All folded into the
+  897 spec as certified components.
+- Axiom-ask bar: the exercise itself assessed the ask NOT EARNED
+  (four route families, three never attempted, must fail first) —
+  consistent with the owner's required-and-minimal bar; on record.

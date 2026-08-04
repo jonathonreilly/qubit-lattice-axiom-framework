@@ -105,8 +105,7 @@ EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[4]: "6cd3fbdbe74e1231cd61222a798a7979bee922da",
     AUDIT_INPUT_PATHS[5]: "eefb1ac72326ae70073126198854dea5e26d1f01",
     AUDIT_INPUT_PATHS[6]: "1201ba9702ec8a0b81df0319a90a080549cfdd4a",
-    AUDIT_INPUT_PATHS[7]: "e3fa6c9e5eda1f95df4d0aa8f4fadfd6cb2e2ae1a4c50f3f"
-                          "2c4f0b5c9d3a1e7f",
+    AUDIT_INPUT_PATHS[7]: "8c977fc41a8bda871fd78a3b770945cfef830447",
 }
 
 BLOCKLISTED_MODULES = tuple(sorted({Path(p).stem for p in AUDIT_INPUT_PATHS}))
@@ -835,15 +834,20 @@ def identifiability_attack():
             v: fam_at_4[v] for v in c4 if v in fam_at_4},
         "example_forms_per_C4_value": {v: sorted(fs)[:3]
                                        for v, fs in sorted(c4.items())},
+        "shape_limitation_declared_honestly": (
+            "This shape is a MONOMIAL quotient, so it cannot express F_res "
+            "(which needs a (w1 + 2) factor) or F_ded (which needs (w1 - 1)). "
+            "Its C4 spread is therefore a LOWER bound on the true ambiguity, "
+            "not a measurement of it.  The primary's planted variants supply "
+            "the two missing families explicitly."),
         "what_this_means": (
             "Within 883's OWN seven enumerated forms the C4 value is unique, "
             "so 883's recipe is family-identified.  Within this much wider "
-            "declared shape it is NOT: several distinct C4 values are "
-            "reachable by forms that all return 2/9 at C3, and at least one "
-            "of them is F_res(4).  The primary's verdict therefore rests on "
-            "883 having WRITTEN a particular form set, not on 2/9 at C3 "
-            "forcing a family.  The primary says this in its own honest "
-            "residual; this certificate quantifies it."),
+            "declared shape it is NOT: many distinct C4 values are reachable "
+            "by forms that all return 2/9 at C3.  The primary's verdict "
+            "therefore rests on 883 having WRITTEN a particular form set, not "
+            "on 2/9 at C3 forcing a family.  The primary says this in its own "
+            "honest residual; this certificate quantifies it."),
     }
 
 
@@ -1244,18 +1248,12 @@ def pins():
         ex = f.exists()
         sha = sha256(f.read_bytes()).hexdigest() if ex else None
         blob = git_blob(p) if ex else None
-        # the primary is pinned by sha256 only: its git blob is recorded, not
-        # gated, because the checker is committed before the primary's final
-        # blob is known.
         sha_ok = ex and sha == EXPECTED_SHA256[p]
+        blob_ok = ex and blob == EXPECTED_GIT_BLOBS[p]
         rows.append({"path": p, "exists": ex, "sha256": sha,
                      "git_blob": blob, "sha256_matches_pin": sha_ok,
-                     "git_blob_expected": EXPECTED_GIT_BLOBS[p],
-                     "git_blob_gated": p != AUDIT_INPUT_PATHS[7],
-                     "git_blob_matches_pin":
-                         blob == EXPECTED_GIT_BLOBS[p]})
-        if not sha_ok or (p != AUDIT_INPUT_PATHS[7]
-                          and blob != EXPECTED_GIT_BLOBS[p]):
+                     "git_blob_matches_pin": blob_ok})
+        if not (sha_ok and blob_ok):
             bad.append(p)
     return {"rows": rows, "all_verified": not bad, "failures": bad,
             "import_firewall_hits": list(FIREWALL.hits),
@@ -1340,10 +1338,15 @@ def build():
                 f"attack finds "
                 f"{attack['distinct_C4_value_count']} distinct C4 values among "
                 f"{attack['forms_returning_the_anchor_at_C3']} closed forms of "
-                "a plain declared shape that all return 2/9 at C3, and the "
-                "named families are among them.  What is forced is narrower "
-                "and should be stated narrowly: THE FORM SET 883 ACTUALLY "
-                "WROTE is family-identified, and it identifies F_dim."),
+                "a plain declared shape that all return 2/9 at C3.  Of those "
+                "ten values exactly one is a named family (3/16 = F_dim(4)); "
+                "the declared shape is a monomial quotient and cannot reach "
+                "F_res or F_ded, which need the (w1 + 2) and (w1 - 1) factors "
+                "the primary's planted variants supply.  So the honest "
+                "statement is doubly narrow: 2/9 at C3 constrains almost "
+                "nothing, and what IS family-identified is THE FORM SET 883 "
+                "ACTUALLY WROTE, which identifies F_dim.  The primary states "
+                "this residual; this certificate quantifies it."),
         },
     }
 

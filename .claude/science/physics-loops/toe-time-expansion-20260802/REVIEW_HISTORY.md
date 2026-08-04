@@ -725,3 +725,40 @@ census module lives on the Q1 lineage, so the join runs Born-ward).
   horizon choice); LIVE: BL9/BL10 (Cycle 909 in flight), BL6, BL4.
 - Cluster-cap (6th Q-family PR): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 909 within-world pricing (blockQ6, PR #5973) — 2026-08-04
+
+- Supervisor review: the three-number constraint derivation with its
+  alternative witnesses; the arithmetic negative (the prime-613 reach
+  census — the block's decisive move beyond enumeration); the
+  spectrum identification's unconditional identity + the named
+  P-SITE-UNIFORM reading license; the inhomogeneity finding reported
+  against tidiness.
+- Checker: zero disagreements; the out-of-closure completeness attack
+  and the leaked-realization tooth (the lemma filter provably not
+  blind); 9/9 + 8/8 teeth.
+- Cluster-cap (7th Q-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
+# BORN LANE TRAJECTORY ASSESSMENT — 2026-08-04 ~15:30 EDT
+
+The MEASUREMENT-SELECTION question is TERMINAL after Q2-Q7 (Cycles
+905-910): the narrowing certified with its mechanism; the survivors
+proven discrimination twins; covariance priced both ways and demoted
+(free under the intertwining reading); the tension resolved by one
+orbit whose absoluteness is now a cross-lineage identity theorem;
+the lanes proven compatible with no single carrier (rank 2); the
+within-world carrier priced as PURCHASE with an arithmetic negative;
+the degree-2 carrier independent. REGISTERED/PRICED: P-NONEMPTY,
+P-SITE-UNIFORM, P-WITHIN-WORLD (x2), the horizon-window scope
+(BL12), the reading choice (COV-INV vs COV-EQV, neither
+axiom-required). NO axiom ask earned on the selection side — every
+route priced as purchase or exiled content.
+
+REMAINING GENUINELY OPEN: **BL4 — the composed-record dynamics (the
+occurrence rule)** — the one item 878's open gate named missing, the
+906 sweep showed the axioms exile, and the 909 verdict routes every
+future selection through. This is a WALL in the directive's sense:
+the exercise protocol runs BEFORE any axiom-ask consideration.
+Exercise launched (read-only generator; route selection stays with
+the supervisor).

@@ -314,12 +314,17 @@ worktrees:
     power (BL11); escape orbit PHASE-STATIONARY (P-856-SHAPE
     strengthened); LATE-HORIZON: M6 collapses to zero below the pinned
     horizon (scope sharper than 906/907 stated)
-  c5-q6: Q6 (Cycle 909, BL9+BL10 PRICED JOINTLY — the required
-    within-world constraint set extracted from the 907 witness pair; the
-    native recipe census (uniform/occupation/formation-order/content/
-    moment/tag-structured) tested against it; verdict native-realization
-    / purchase-with-gravity-spectrum-import / partial; the degree-2
-    column's independence computed; stacked on Q4 tip) — running
+  c5-q6: blockQ6 SHIPPED as PR #5973 — Cycle 909 BL9 PRICED AS PURCHASE:
+    the constraint = THREE orbit-aggregate numbers (residual freedom
+    1,406; 907's zero-elsewhere was a choice); ZERO native realizers
+    (1,404 + 3,220 out-of-closure) with the negative ARITHMETIC
+    (C909-T3: the denominator needs prime 613 and no census field
+    reaches it; C909-T2: all six world-level fields collapse to one
+    column); the numbers ARE the walk's two-layer spectrum (p^2+q^2 /
+    2pq at (36,2),(22,1),(9,1),(1,0); ratio-1 = the linear readout) —
+    import P-WITHIN-WORLD twice; BL10 independent (six-fold ambiguity;
+    the walk picks); escape orbit INHOMOGENEOUS (2 early / 9 late);
+    future selection needs a NEW constraint
   c5-q7: blockQ7 SHIPPED as PR #5972 — Cycle 910 P-856-SHAPE
     DISCHARGED-IDENTIFIED: one object, two definitions (byte-identical
     748-key spaces; escape orbit = the event-0 absolute orbit; the

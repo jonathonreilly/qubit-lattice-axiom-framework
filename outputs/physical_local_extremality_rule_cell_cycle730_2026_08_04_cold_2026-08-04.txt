@@ -1,0 +1,62 @@
+the cell and its minimal pieces
+PASS the minimal pieces are counted  4368 five-subsets of the 16 corners, 2672 of volume 1/24
+PASS no five-subset beats the minimal volume  nonzero scaled volumes take the values [1, 2, 3], so volume 1/24 is the floor
+PASS the adjacency spectrum of the minimal pieces  charge to count [(3, 64), (4, 384), (5, 1152), (6, 768), (7, 304)]
+PASS charging every piece its cheapest or dearest is weak  counting alone gives only the interval 72 to 168 against the measured 108 to 128
+PASS each piece carries an exact integer inverse  all 2672 rounded inverses multiply back to the identity
+
+the symmetry of the cell
+PASS the cell keeps every proper rotation  24 rotations kept, 48 group elements with the tick flip
+PASS the pieces fall into orbits  57 orbits of sizes [16, 48] summing to 2672
+PASS adjacency charge is constant on orbits  every orbit has a single charge, so the program may be written per orbit
+
+generic sample points, none on a piece boundary
+PASS the weights are chosen past the barycentric bound  corner coordinates bounded by 3, weight total 12810
+PASS the sample is group-closed and interior  2736 points, no orbit collision, 0 on a piece boundary
+PASS point counts are the program coefficients, not orbit sizes  point stabilizers can be smaller than piece stabilizers, so the two vectors differ
+
+two zero-gap certificates, verified over every piece in integers
+PASS the floor certificate holds and has zero gap  denominator 24, value 2592 = 108 * 24, so cost is at least 108
+PASS the ceiling certificate holds and has zero gap  denominator 6, value 768 = 128 * 6, so cost is at most 128
+PASS the tight rows are the local rule  2416 pieces sit on a tight floor row, 1040 on a tight ceiling row
+PASS the two certificates round to the measured interval  the value divided by its denominator gives 108 below and 128 above
+PASS the floor certificate scales by 2  denominator 48 gives the same bound
+PASS the floor certificate scales by 3  denominator 72 gives the same bound
+PASS the floor certificate scales by 5  denominator 120 gives the same bound
+PASS the arithmetic does not overflow  recomputing the tightest row in unbounded integers gives 0
+PASS a single bumped weight breaks the floor certificate  raising one live weight on a tight row makes the inequality fail somewhere
+PASS a single corrupted membership count breaks the floor certificate  adding one point to a live column of a tight row makes that row violate the bound
+
+the local rule and what it excludes
+PASS the two rules cover every piece  floor rule 2416 in 51 orbits, ceiling rule 1040 in 23 orbits, 784 in both, none in neither
+PASS rule membership is constant on orbits  the local test never splits an orbit, as the certificate is orbit-indexed
+PASS the floor rule excludes two recognisable shapes  6 orbits, 256 pieces: 4 carry a pure-tick edge, 2 carry a body diagonal
+
+dissections found without any cost objective
+PASS cover search over the floor rule pool  the first dissection it returns has 24 pieces and cost 108
+PASS the slack identity holds on that dissection  floor slack 0 = 24 * (cost - 108), ceiling slack 120 = 6 * (128 - cost)
+PASS the cheapest dissection is entirely on the rule  no cost objective was used anywhere in the search
+PASS cover search over the ceiling rule pool  the first dissection it returns has 24 pieces and cost 128
+PASS the slack identity holds on that dissection  floor slack 480 = 24 * (cost - 108), ceiling slack 0 = 6 * (128 - cost)
+PASS cover search over the any piece pool  the first dissection it returns has 24 pieces and cost 114
+PASS the slack identity holds on that dissection  floor slack 144 = 24 * (cost - 108), ceiling slack 84 = 6 * (128 - cost)
+PASS the monotone stencil attains the floor  the 24 monotone corner paths dissect the cell at cost 108, all on the rule
+PASS one off-rule piece costs exactly its own excess  cost 110, a single off-rule piece, its slack 48 = 24 * (110 - 108)
+
+the rule is necessary and not sufficient
+PASS the floor support is exhibited by enumeration  200000 dissections drawn from the rule use 38 of its 51 orbits
+PASS the whole search comes back empty on those floor pieces  9 orbits, 432 pieces: forcing any one in leaves the search empty
+PASS the same search never empties on a piece of an exhibited floor dissection  each of its 24 pieces forced in turn: 22 return a dissection at cost 108, 0 return the empty answer
+PASS the ceiling support is exhibited by enumeration  200000 dissections drawn from the rule use 21 of its 23 orbits
+PASS the whole search comes back empty on those ceiling pieces  2 orbits, 96 pieces: forcing any one in leaves the search empty
+PASS the same search never empties on a piece of an exhibited ceiling dissection  each of its 24 pieces forced in turn: 24 return a dissection at cost 128, 0 return the empty answer
+
+one deduction step, and the point that can then no longer be covered
+PASS every floor piece the step rules out goes at the first round  624 of its 2416 pieces go, in 13 orbits, with no branching anywhere
+PASS the two routes cut the floor rule in the same place  the step rules out 13 orbits, enumeration exhibits 38, and 51 is the whole rule
+PASS at the ceiling the same step returns no verdict  0 of its 1040 pieces go, so that end rests on the whole search instead
+PASS the stranded point is nameable and is covered in a dissection already exhibited  76 rule pieces hold it and all 76 overlap the forced piece, which does not hold it; exactly one piece of the exhibited dissection does
+PASS the floor support is settled completely  38 of the 51 floor-rule orbits occur and the other 13 cannot
+PASS the ceiling support is settled completely  21 of the 23 ceiling-rule orbits occur and the other 2 cannot
+
+TOTAL: PASS=45 FAIL=0

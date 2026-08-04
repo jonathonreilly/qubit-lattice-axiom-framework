@@ -1,0 +1,190 @@
+{
+  "certificates": {
+    "ceiling": {
+      "bound": 128,
+      "denominator": 6,
+      "tight_pieces": 1040,
+      "value": 768
+    },
+    "discriminating": [
+      "a single bumped live weight on a tight row",
+      "a single corrupted membership count on a tight row"
+    ],
+    "floor": {
+      "bound": 108,
+      "denominator": 24,
+      "tight_pieces": 2416,
+      "value": 2592
+    },
+    "floor_rescalings": [
+      48,
+      72,
+      120
+    ],
+    "unbounded_integer_recheck": 0
+  },
+  "deduction_step": {
+    "branching": false,
+    "ceiling_pool": 1040,
+    "ceiling_ruled_out_pieces": 0,
+    "floor_pool": 2416,
+    "floor_ruled_out_orbits": 13,
+    "floor_ruled_out_pieces": 624,
+    "rounds": 1,
+    "routes_cut_in_the_same_place": [
+      13,
+      38,
+      51
+    ],
+    "witness_of_those_overlapping_the_forced_piece": 76,
+    "witness_pieces_of_an_exhibited_dissection_over_it": 1,
+    "witness_rule_pieces_over_the_stranded_point": 76
+  },
+  "dissections_no_cost_objective": {
+    "any_piece_pool": {
+      "ceiling_slack": 84,
+      "cost": 114,
+      "floor_slack": 144,
+      "pieces": 24
+    },
+    "ceiling_rule_pool": {
+      "ceiling_slack": 0,
+      "cost": 128,
+      "floor_slack": 480,
+      "pieces": 24
+    },
+    "floor_rule_pool": {
+      "ceiling_slack": 120,
+      "cost": 108,
+      "floor_slack": 0,
+      "pieces": 24
+    },
+    "monotone_stencil": {
+      "cost": 108,
+      "off_rule_pieces": 0,
+      "pieces": 24
+    },
+    "one_off_rule_piece": {
+      "cost": 110,
+      "denominator": 24,
+      "excess": 2,
+      "its_slack": 48,
+      "off_rule_pieces": 1
+    }
+  },
+  "local_rule": {
+    "ceiling_orbits": 23,
+    "ceiling_pieces": 1040,
+    "excluded_with_a_body_diagonal": 2,
+    "excluded_with_a_pure_tick_edge": 4,
+    "floor_excluded_orbits": 6,
+    "floor_excluded_pieces": 256,
+    "floor_orbits": 51,
+    "floor_pieces": 2416,
+    "on_both": 784,
+    "on_neither": 0
+  },
+  "note": "docs/PHYSICAL_LOCAL_EXTREMALITY_RULE_CELL_CYCLE730_NOTE_2026-08-04.md",
+  "object": {
+    "charge_spectrum": [
+      [
+        3,
+        64
+      ],
+      [
+        4,
+        384
+      ],
+      [
+        5,
+        1152
+      ],
+      [
+        6,
+        768
+      ],
+      [
+        7,
+        304
+      ]
+    ],
+    "counting_interval": [
+      72,
+      168
+    ],
+    "exact_inverses": 2672,
+    "five_subsets": 4368,
+    "measured_interval": [
+      108,
+      128
+    ],
+    "minimal_pieces": 2672,
+    "nonzero_scaled_volumes": [
+      1,
+      2,
+      3
+    ],
+    "pieces_per_dissection": 24
+  },
+  "recorded_output": "outputs/physical_local_extremality_rule_cell_cycle730_2026_08_04_cold_2026-08-04.txt",
+  "runner": "scripts/physical_local_extremality_rule_cell_cycle730_2026_08_04.py",
+  "sample": {
+    "barycentric_bound": 3,
+    "points": 2736,
+    "points_on_a_boundary": 0,
+    "weight_total": 12810
+  },
+  "support": {
+    "ceiling_absent_by_search": {
+      "orbits": 2,
+      "pieces": 96
+    },
+    "ceiling_control": {
+      "at_cost": 128,
+      "empty": 0,
+      "forced": 24,
+      "returned_a_dissection": 24
+    },
+    "ceiling_realized_orbits": 21,
+    "ceiling_rule_orbits": 23,
+    "ceiling_settled": {
+      "cannot": 2,
+      "occur": 21,
+      "of": 23
+    },
+    "draws": 200000,
+    "floor_absent_by_search": {
+      "orbits": 9,
+      "pieces": 432
+    },
+    "floor_control": {
+      "at_cost": 108,
+      "empty": 0,
+      "forced": 24,
+      "returned_a_dissection": 22
+    },
+    "floor_realized_orbits": 38,
+    "floor_rule_orbits": 51,
+    "floor_settled": {
+      "cannot": 13,
+      "occur": 38,
+      "of": 51
+    }
+  },
+  "symmetry": {
+    "charge_constant_on_orbits": true,
+    "group_order": 48,
+    "orbit_sizes": [
+      16,
+      48
+    ],
+    "orbit_sum": 2672,
+    "orbits": 57,
+    "rotations_kept": 24
+  },
+  "totals": {
+    "fail": 0,
+    "pass": 45,
+    "sections": 8
+  }
+}

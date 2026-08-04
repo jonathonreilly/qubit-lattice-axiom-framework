@@ -156,7 +156,8 @@ C884_PRIMARY_NEEDLES = {
     "r3_mu_free":
         "What is NOT forced is the screening mass mu^2 = alpha/gamma",
     "r2_degree_four":
-        "the first non-radial invariant harmonic appears at degree 4",
+        "The non-radial invariants of lowest degree, e2 and e1^2, have the "
+        "SAME homogeneity degree 4",
     "kernel_form":
         "phi_GB(x) = strength / (r(x, mass) + 0.1)",
 }
@@ -672,12 +673,27 @@ def rationalized_condition(site):
 
 
 def cond_sign_at(cond, t: Fraction) -> int:
+    """-1 / +1 when the enclosure is separated from zero, 0 otherwise.
+
+    A returned 0 is AMBIGUOUS (either a true root or an enclosure too coarse to
+    separate), so callers must never read it as `is a root`; use
+    `cond_is_exact_zero` for that.
+    """
     lo, hi = mq_eval_enclosure(cond, t)
     if lo > 0:
         return 1
     if hi < 0:
         return -1
-    return 0 if lo == hi == 0 else 0
+    return 0
+
+
+def cond_is_exact_zero(cond, t: Fraction) -> bool:
+    """True only when every component of the multiquadratic value vanishes.
+
+    Distinct square roots of squarefree integers are linearly independent over
+    Q, so the element is zero exactly when each component polynomial is.
+    """
+    return all(peval(v, t) == 0 for v in cond.values())
 
 
 def isolate_root(cond, lo: Fraction, hi: Fraction, steps: int = 48):
@@ -709,6 +725,7 @@ def restriction_gate_certificate() -> dict:
         iv = isolate_root(cond, Fraction(1, 1000), Fraction(4))
         intervals.append(iv)
         sgn = cond_sign_at(cond, LANDED_EPS)
+        exact_zero = cond_is_exact_zero(cond, LANDED_EPS)
         rows.append({
             "site": list(site),
             "neighbour_squared_distances": n2s,
@@ -720,7 +737,8 @@ def restriction_gate_certificate() -> dict:
             "isolating_interval_for_epsilon":
                 [q(iv[0]), q(iv[1])] if iv else None,
             "residual_sign_at_landed_epsilon_one_tenth": sgn,
-            "landed_epsilon_satisfies_this_site": sgn == 0,
+            "enclosure_separated_from_zero_at_landed_epsilon": sgn != 0,
+            "landed_epsilon_satisfies_this_site": exact_zero,
         })
 
     g = pgcd(polys[0], polys[1])
@@ -730,6 +748,8 @@ def restriction_gate_certificate() -> dict:
                 and (intervals[0][0] > intervals[1][1]
                      or intervals[1][0] > intervals[0][1]))
     landed_satisfies_any = any(r["landed_epsilon_satisfies_this_site"] for r in rows)
+    landed_separated_everywhere = all(
+        r["enclosure_separated_from_zero_at_landed_epsilon"] for r in rows)
 
     # the 1/6 normalization, rebuilt from the lattice with no fitting at all
     core_step = Fraction(1, 6)
@@ -739,6 +759,8 @@ def restriction_gate_certificate() -> dict:
         "gcd_string_matches_receipt":
             gcd_str == receipt["epsilon_gcd_over_Q"],
         "landed_epsilon_satisfies_no_tested_site": not landed_satisfies_any,
+        "landed_epsilon_residual_certifiably_nonzero_at_every_tested_site":
+            landed_separated_everywhere,
         "isolating_intervals_disjoint": disjoint,
         "core_step_matches_receipt":
             q(core_step) == receipt["exact_core_step_G0_minus_Ge1"],
@@ -775,11 +797,15 @@ def restriction_gate_certificate() -> dict:
         "checks": checks,
         "route_note": (
             "The rationalization route here differs from 884's: 884 built the "
-            "residual as (U + V sqrt D)/W in ONE quadratic field per site and "
-            "took U^2 - D V^2.  This runner clears denominators in the full "
+            "residual as (U + V sqrt D)/W in ONE quadratic field per site, "
+            "divided out the shared pole factor, and took U^2 - D V^2, landing "
+            "on degree 6.  This runner clears denominators in the full "
             "multiquadratic ring and takes the FIELD NORM over every sign "
-            "character.  The two routes agree on what matters and are gated "
-            "against 884's published values, not against its intermediate "
+            "character, WITHOUT dividing out the poles, landing on degree 9 "
+            "and 10.  The extra factors are the pole factors t = -|y|; keeping "
+            "them can only make the GCD LARGER, never smaller, so a UNIT GCD "
+            "on this route is a strictly stronger statement than 884's.  The "
+            "gate is against 884's published values, not its intermediate "
             "polynomials."
         ),
         "finding": (
@@ -1328,11 +1354,12 @@ def window_certificate() -> dict:
 
     # the lambda*sigma-INVARIANT observable: shape ratios.  These are exactly
     # what the 871 stabilizer cannot move, so a delta here is a real delta.
-    def landed_ratio(n2a: int, n2b: int):
-        la, ha = sqrt_enclosure(n2a)
-        lb, hb = sqrt_enclosure(n2b)
-        return ((lb + LANDED_EPS) / (ha + LANDED_EPS),
-                (hb + LANDED_EPS) / (la + LANDED_EPS))
+    def landed_ratio(n2_num: int, n2_den: int):
+        """Enclosure of phi_landed(num)/phi_landed(den) = (r_den+e)/(r_num+e)."""
+        ln, hn = sqrt_enclosure(n2_num)
+        ld, hd = sqrt_enclosure(n2_den)
+        return ((ld + LANDED_EPS) / (hn + LANDED_EPS),
+                (hd + LANDED_EPS) / (ln + LANDED_EPS))
 
     ratio_rows = []
     for (ka, kb) in (((2, 0, 0), (1, 0, 0)), ((3, 0, 0), (1, 0, 0)),
@@ -1341,7 +1368,7 @@ def window_certificate() -> dict:
         n2a = sum(v * v for v in ka)
         n2b = sum(v * v for v in kb)
         core_r = sol[ka] / sol[kb]
-        l_lo, l_hi = landed_ratio(n2b, n2a)   # (|b|+e)/(|a|+e)
+        l_lo, l_hi = landed_ratio(n2a, n2b)
         separated = (core_r < l_lo) or (core_r > l_hi)
         ratio_rows.append({
             "numerator_class": list(ka),
@@ -1356,7 +1383,11 @@ def window_certificate() -> dict:
 
     # the sharpest gauge-invariant separator: equal Euclidean radius, r^2 = 9
     equal_r = sol[(3, 0, 0)] - sol[(2, 2, 1)]
-    landed_equal_r_ratio_is_one = True   # both sit at r = 3 exactly
+    # COMPUTED, not asserted: the landed (radial) kernel's ratio at r^2 = 9 is
+    # pinned to 1 by the same enclosure machinery that prices every other row.
+    eq_lo, eq_hi = landed_ratio(9, 9)
+    landed_equal_r_ratio_is_one = (eq_lo <= 1 <= eq_hi
+                                   and eq_hi - eq_lo < Fraction(1, 10 ** 12))
 
     return {
         "window_declaration": {
@@ -1371,8 +1402,11 @@ def window_certificate() -> dict:
         "landed_window_sum_enclosure_at_unit_strength": [q(lo), q(hi)],
         "landed_window_sum_decimal": f"{float(lo):.12f}",
         "window_sum_is_NOT_a_gauge_invariant":
-            "the overall scale is absorbed by the lambda*sigma stabilizer, so "
-            "the raw sums are reported as data only",
+            "the two raw sums are NOT comparable: each is quoted at unit "
+            "strength in its own normalization, and the lambda*sigma "
+            "stabilizer moves either one to the other.  They are reported as "
+            "data only; every comparison this cycle rests on is a "
+            "stabilizer-invariant SHAPE ratio below",
         "gauge_invariant_shape_ratios": ratio_rows,
         "equal_radius_separator": {
             "sites": [[3, 0, 0], [2, 2, 1]],
@@ -1380,6 +1414,7 @@ def window_certificate() -> dict:
             "core_difference_exact_on_the_cube_solve": q(equal_r),
             "core_difference_decimal": f"{float(equal_r):.12f}",
             "core_separates_them": equal_r != 0,
+            "landed_ratio_enclosure_at_equal_radius": [q(eq_lo), q(eq_hi)],
             "any_radial_kernel_gives_ratio_exactly_one":
                 landed_equal_r_ratio_is_one,
             "status": (
@@ -1402,7 +1437,7 @@ def window_certificate() -> dict:
             f"{float(equal_r):.6g} while ANY radial kernel gives ratio exactly "
             f"one."
         ),
-        "pass": (equal_r != 0
+        "pass": (equal_r != 0 and landed_equal_r_ratio_is_one
                  and all(r["core_and_landed_certifiably_separated"]
                          for r in ratio_rows)),
     }

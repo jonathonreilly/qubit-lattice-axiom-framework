@@ -1,0 +1,4193 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle888_s3_scope_independent_check_2026_07_28.py
+runner_sha256: 940c816bcb8ea8c7e3fc9fd2f1bac62cce0a8674cf9c7529549de59a21e503d1
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 38.041
+status: ok
+----- stdout -----
+CYCLE 888 -- INDEPENDENT CHECK OF THE S3 SCOPE PRICING
+
+[PASS] A_PINS
+    finding: 7/7 pins round-trip; the run cache declares the pinned runner digest and exit 0.
+
+[PASS] B_INDEPENDENT_GROUP  verdict=SURVIVES
+    finding: The orthogonality construction returns the same 24 matrices with order profile {1: 1, 2: 9, 3: 8, 4: 6}; the primary's group claim SURVIVES.
+
+[PASS] C_INDEPENDENT_LATTICE  verdict=SURVIVES
+    finding: 30 subgroups in 11 classes by iterated extension, identical to the subset-closure route (True); the class equation holds on every class and the Sylow congruences hold (n_2 = 3, n_3 = 4); the primary's lattice SURVIVES.
+
+[PASS] D_INDEPENDENT_ISOTYPE  verdict=SURVIVES
+    finding: All 11 class signatures reproduce by the independent route (SURVIVES); coarse (1,2) at ['C3_body'], fine (1,2) at ['C3_body', 'C4_face', 'S3_body'].
+
+[PASS] E_INDEPENDENT_SELECTORS  verdict=SURVIVES
+    finding: 16/16 selector survivor sets reproduce over the full lattice and 16/16 reproduce under the 886 restriction; C3 is isolated by ['SEL07_coarse_pair_v2_equals_one', 'SEL08_reachability_R1_orbit_scope'] and S3 by ['SEL06_maximal_free_shell_orbit'].
+
+[PASS] F_INDEPENDENT_REACHABILITY  verdict=SURVIVES
+    finding: the solver passes 6/6 self-tests and the survivor sets reproduce: R1_orbit_scope_coarse -> ['C3_body']; R2_shell_scope_coarse -> ['C2_edge', 'C3_body', 'V_face']; R3_orbit_scope_fine -> ['C3_body', 'S3_body']; R4_shell_scope_fine -> ['A4_tetrahedral', 'C3_body', 'O_full', 'S3_body']
+
+[PASS] G_SL1_TRANSFER_ATTACK  verdict=SURVIVES
+    finding: independent S3 multiplicities [[1, 1], [1, 1], [2, 2]]; 6 distinct 2-dimensional submodules found, all with the same character (True), so no readout with a different pair exists; the isotypic level is canonical (True); C3/C4 multiplicity-free and S3 not (True); the transfer claim SURVIVES.
+
+[PASS] H_INDEPENDENT_SCOPE_INSENSITIVITY  verdict=SURVIVES
+    finding: independent menu ['C2_edge', 'C2_face', 'C3_body', 'C4_face', 'S3_body', 'V_edge']; ORBIT_SCOPE_coarse -> SCOPE_SENSITIVE ['C3_body']; ORBIT_SCOPE_fine -> SCOPE_SENSITIVE ['C3_body', 'S3_body']; SHELL_SCOPE_coarse -> SCOPE_SENSITIVE ['C2_edge', 'C3_body']; SHELL_SCOPE_fine -> SCOPE_SENSITIVE ['C3_body', 'S3_body']; OVERALL MIXED (primary said MIXED)
+
+[PASS] I_UPSTREAM_PIN_FIDELITY  verdict=SURVIVES
+    finding: 16/16 quoted sentences and 16/16 fidelity grades are byte-identical to Cycle 886; the survivor expressions round-trip (True) and Cycle 883's defeat condition is present in its source (True).
+
+[PASS] J_REFUTATION_ATTEMPTS
+    finding: 0 of 9 attempts landed; every recomputation of a certified quantity reproduced the primary.
+
+[PASS] K_TEETH
+    finding: 8/8 teeth bite: T1=BITE, T2=BITE, T3=BITE, T4=BITE, T5=BITE, T6=BITE, T7=BITE, T8=BITE
+
+[PASS] L_FINDINGS
+    finding: 5 findings, 0 of which refute a certified number.
+
+[PASS] M_VERDICT
+    finding: no certificate refutes a computed number; 8 teeth bite.
+
+{
+ "A_PINS": {
+  "finding": "7/7 pins round-trip; the run cache declares the pinned runner digest and exit 0.",
+  "pass": true,
+  "rows": [
+   {
+    "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g13/scripts/frontier_cycle888_s3_scope_pricing_2026_07_28.py",
+    "exists": true,
+    "git_blob": "c3de02c94b8a11a930ad6ff8817975b118bc776d",
+    "git_blob_matches_pin": true,
+    "path": "scripts/frontier_cycle888_s3_scope_pricing_2026_07_28.py",
+    "sha256": "f57fda877d35d49953c3b6a34293ab0cc6a87781ceb9d158b9c9abb5abd4bb3f",
+    "sha256_matches_pin": true
+   },
+   {
+    "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g13/outputs/s3_scope_pricing_cycle888_receipt_2026_07_28.json",
+    "exists": true,
+    "git_blob": "3e18ad52f50e72b83c56da72c31f25d104b5c830",
+    "git_blob_matches_pin": true,
+    "path": "outputs/s3_scope_pricing_cycle888_receipt_2026_07_28.json",
+    "sha256": "8a540201a84a6b8cb6868d431216718a27f200e45d6ceeb771d858e9a54280cd",
+    "sha256_matches_pin": true
+   },
+   {
+    "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g13/logs/runner-cache/frontier_cycle888_s3_scope_pricing_2026_07_28.txt",
+    "exists": true,
+    "git_blob": "6cd3fbdbe74e1231cd61222a798a7979bee922da",
+    "git_blob_matches_pin": true,
+    "path": "logs/runner-cache/frontier_cycle888_s3_scope_pricing_2026_07_28.txt",
+    "sha256": "5e4fc183efda55d1f3fbd5413bd2fe985ed5732b7ffbc8bd489296e7b22c2c84",
+    "sha256_matches_pin": true
+   },
+   {
+    "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g13/docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "exists": true,
+    "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+    "git_blob_matches_pin": true,
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+    "sha256_matches_pin": true
+   },
+   {
+    "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g13/scripts/frontier_cycle886_sl0_orbit_scope_2026_07_28.py",
+    "exists": true,
+    "git_blob": "f4493d787ffb6edc50e9dd13d37ba1cd1dd4d24a",
+    "git_blob_matches_pin": true,
+    "path": "scripts/frontier_cycle886_sl0_orbit_scope_2026_07_28.py",
+    "sha256": "1dfa47a86de8cab5a91cd33a022beb845d918e2f93ceb58f360b2708a44d02a2",
+    "sha256_matches_pin": true
+   },
+   {
+    "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g13/outputs/sl0_orbit_scope_cycle886_receipt_2026_07_28.json",
+    "exists": true,
+    "git_blob": "4d9999c241b19b2670a51c809e3e39fb0d339f10",
+    "git_blob_matches_pin": true,
+    "path": "outputs/sl0_orbit_scope_cycle886_receipt_2026_07_28.json",
+    "sha256": "74d64090515cf7f7c5ad5f8e6347f7d2f81a9c1cf0b41e9ec7726ad30a62d69d",
+    "sha256_matches_pin": true
+   },
+   {
+    "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g13/scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+    "exists": true,
+    "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+    "git_blob_matches_pin": true,
+    "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+    "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c",
+    "sha256_matches_pin": true
+   }
+  ],
+  "run_cache_declares_the_pinned_runner_digest": true,
+  "run_cache_records_exit_zero": true,
+  "statement": "The primary, its receipt, its run cache and every upstream artifact it read are pinned twice over."
+ },
+ "B_INDEPENDENT_GROUP": {
+  "candidates_scanned": 19683,
+  "closed": true,
+  "element_order_counts": {
+   "1": 1,
+   "2": 9,
+   "3": 8,
+   "4": 6
+  },
+  "finding": "The orthogonality construction returns the same 24 matrices with order profile {1: 1, 2: 9, 3: 8, 4: 6}; the primary's group claim SURVIVES.",
+  "group_order": 24,
+  "orthogonality_construction_equals_signed_permutation_construction": true,
+  "pass": true,
+  "primary_claim_reproduced": true,
+  "statement": "The rotation group rebuilt from the orthogonality condition M M^T = I with det = +1 over 19683 integer matrices -- a different construction from the primary's signed-permutation enumeration.",
+  "verdict": "SURVIVES"
+ },
+ "C_INDEPENDENT_LATTICE": {
+  "class_equation_rows": [
+   {
+    "class": "E_trivial",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 24,
+    "independent_size": 1,
+    "primary_size": 1,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "C2_face",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 8,
+    "independent_size": 3,
+    "primary_size": 3,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "C2_edge",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 4,
+    "independent_size": 6,
+    "primary_size": 6,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "C3_body",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 6,
+    "independent_size": 4,
+    "primary_size": 4,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "V_face",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 24,
+    "independent_size": 1,
+    "primary_size": 1,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "V_edge",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 8,
+    "independent_size": 3,
+    "primary_size": 3,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "C4_face",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 8,
+    "independent_size": 3,
+    "primary_size": 3,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "S3_body",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 6,
+    "independent_size": 4,
+    "primary_size": 4,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "D4_face",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 8,
+    "independent_size": 3,
+    "primary_size": 3,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "A4_tetrahedral",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 24,
+    "independent_size": 1,
+    "primary_size": 1,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   },
+   {
+    "class": "O_full",
+    "equals_the_group_order": true,
+    "independent_normalizer_order": 24,
+    "independent_size": 1,
+    "primary_size": 1,
+    "size_times_normalizer": 24,
+    "sizes_agree": true
+   }
+  ],
+  "conjugacy_classes": 11,
+  "finding": "30 subgroups in 11 classes by iterated extension, identical to the subset-closure route (True); the class equation holds on every class and the Sylow congruences hold (n_2 = 3, n_3 = 4); the primary's lattice SURVIVES.",
+  "pass": true,
+  "primary_claim_reproduced": true,
+  "primary_claimed_by_name": {
+   "A4_tetrahedral": 1,
+   "C2_edge": 6,
+   "C2_face": 3,
+   "C3_body": 4,
+   "C4_face": 3,
+   "D4_face": 3,
+   "E_trivial": 1,
+   "O_full": 1,
+   "S3_body": 4,
+   "V_edge": 3,
+   "V_face": 1
+  },
+  "statement": "The subgroup lattice rebuilt by ITERATED EXTENSION -- close <H, g> for every found H and every group element until the family is stable -- then cross-checked against a third route (closure of every subset of size <= 3), the class equation and the Sylow congruences. A dropped class cannot survive three routes.",
+  "subgroups_by_derived_name": {
+   "A4_tetrahedral": 1,
+   "C2_edge": 6,
+   "C2_face": 3,
+   "C3_body": 4,
+   "C4_face": 3,
+   "D4_face": 3,
+   "E_trivial": 1,
+   "O_full": 1,
+   "S3_body": 4,
+   "V_edge": 3,
+   "V_face": 1
+  },
+  "subgroups_found": 30,
+  "sylow_2_count": 3,
+  "sylow_3_count": 4,
+  "sylow_congruences_hold": true,
+  "third_route_subset_closure_agrees": true,
+  "verdict": "SURVIVES"
+ },
+ "D_INDEPENDENT_ISOTYPE": {
+  "classes_carrying_1_2_coarse_at_the_orbit_scope": [
+   "C3_body"
+  ],
+  "classes_carrying_1_2_fine_at_the_orbit_scope": [
+   "C3_body",
+   "C4_face",
+   "S3_body"
+  ],
+  "finding": "All 11 class signatures reproduce by the independent route (SURVIVES); coarse (1,2) at ['C3_body'], fine (1,2) at ['C3_body', 'C4_face', 'S3_body'].",
+  "pass": true,
+  "primary_claim_reproduced": true,
+  "rows": [
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": null,
+    "independent_orbit_isotypes": null,
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      2,
+      3
+     ],
+     "coarse_pair": [
+      1,
+      5
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      2,
+      3
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 3,
+     "fine_top_pair": [
+      1,
+      3
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": true,
+     "ok": true,
+     "orbit_count_on_the_product_set": 4,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 4
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 2,
+      "irreducible_degree_over_Q": 2,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 3,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 3,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     }
+    ],
+    "name": "A4_tetrahedral",
+    "own_gates_hold": true,
+    "primary_orbit_pair": null,
+    "primary_shell_pair": [
+     1,
+     5
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": {
+     "block_dimensions": [
+      1,
+      1
+     ],
+     "coarse_pair": [
+      1,
+      1
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 1,
+     "fine_top_pair": [
+      1,
+      1
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": true,
+     "ok": true,
+     "orbit_count_on_the_product_set": 2,
+     "pair_identity_holds": true,
+     "space_dimension": 2,
+     "sum_m_squared_field_degree": 2
+    },
+    "independent_orbit_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     }
+    ],
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "coarse_pair": [
+      3,
+      3
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 1,
+     "fine_top_pair": [
+      3,
+      1
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 3,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 18,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 18
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 3,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 3
+     },
+     {
+      "component_dimension": 3,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 3
+     }
+    ],
+    "name": "C2_edge",
+    "own_gates_hold": true,
+    "primary_orbit_pair": [
+     1,
+     1
+    ],
+    "primary_shell_pair": [
+     3,
+     3
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": {
+     "block_dimensions": [
+      1,
+      1
+     ],
+     "coarse_pair": [
+      1,
+      1
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 1,
+     "fine_top_pair": [
+      1,
+      1
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": true,
+     "ok": true,
+     "orbit_count_on_the_product_set": 2,
+     "pair_identity_holds": true,
+     "space_dimension": 2,
+     "sum_m_squared_field_degree": 2
+    },
+    "independent_orbit_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     }
+    ],
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "coarse_pair": [
+      4,
+      2
+     ],
+     "coarse_two_adic_profile": [
+      2,
+      1
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 1,
+     "fine_top_pair": [
+      4,
+      1
+     ],
+     "fine_top_two_adic_profile": [
+      2,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 4,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 20,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 20
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 2
+     },
+     {
+      "component_dimension": 4,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 4
+     }
+    ],
+    "name": "C2_face",
+    "own_gates_hold": true,
+    "primary_orbit_pair": [
+     1,
+     1
+    ],
+    "primary_shell_pair": [
+     4,
+     2
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": {
+     "block_dimensions": [
+      1,
+      2
+     ],
+     "coarse_pair": [
+      1,
+      2
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      1
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      2
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 2,
+     "fine_top_pair": [
+      1,
+      2
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      1
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": true,
+     "ok": true,
+     "orbit_count_on_the_product_set": 3,
+     "pair_identity_holds": true,
+     "space_dimension": 3,
+     "sum_m_squared_field_degree": 3
+    },
+    "independent_orbit_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 2,
+      "irreducible_degree_over_Q": 2,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     }
+    ],
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      1,
+      2,
+      2
+     ],
+     "coarse_pair": [
+      2,
+      4
+     ],
+     "coarse_two_adic_profile": [
+      1,
+      2
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      2,
+      2
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 2,
+     "fine_top_pair": [
+      2,
+      2
+     ],
+     "fine_top_two_adic_profile": [
+      1,
+      1
+     ],
+     "invariant_multiplicity_by_orbit_count": 2,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 12,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 12
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 2
+     },
+     {
+      "component_dimension": 4,
+      "endomorphism_field_degree": 2,
+      "irreducible_degree_over_Q": 2,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 2
+     }
+    ],
+    "name": "C3_body",
+    "own_gates_hold": true,
+    "primary_orbit_pair": [
+     1,
+     2
+    ],
+    "primary_shell_pair": [
+     2,
+     4
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": {
+     "block_dimensions": [
+      1,
+      1,
+      2
+     ],
+     "coarse_pair": [
+      1,
+      3
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      2
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 2,
+     "fine_top_pair": [
+      1,
+      2
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      1
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": true,
+     "ok": true,
+     "orbit_count_on_the_product_set": 4,
+     "pair_identity_holds": true,
+     "space_dimension": 4,
+     "sum_m_squared_field_degree": 4
+    },
+    "independent_orbit_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 2,
+      "irreducible_degree_over_Q": 2,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     }
+    ],
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      2
+     ],
+     "coarse_pair": [
+      3,
+      3
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      2
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 2,
+     "fine_top_pair": [
+      3,
+      2
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      1
+     ],
+     "invariant_multiplicity_by_orbit_count": 3,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 12,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 12
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 3,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 3
+     },
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 2,
+      "irreducible_degree_over_Q": 2,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     }
+    ],
+    "name": "C4_face",
+    "own_gates_hold": true,
+    "primary_orbit_pair": [
+     1,
+     3
+    ],
+    "primary_shell_pair": [
+     3,
+     3
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": null,
+    "independent_orbit_isotypes": null,
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      2
+     ],
+     "coarse_pair": [
+      2,
+      4
+     ],
+     "coarse_two_adic_profile": [
+      1,
+      2
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      2
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 2,
+     "fine_top_pair": [
+      2,
+      2
+     ],
+     "fine_top_two_adic_profile": [
+      1,
+      1
+     ],
+     "invariant_multiplicity_by_orbit_count": 2,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 7,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 7
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 2
+     },
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 2,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     }
+    ],
+    "name": "D4_face",
+    "own_gates_hold": true,
+    "primary_orbit_pair": null,
+    "primary_shell_pair": [
+     2,
+     4
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": {
+     "block_dimensions": [
+      1
+     ],
+     "coarse_pair": [
+      1,
+      0
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      null
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 1,
+     "fine_top_pair": [
+      1,
+      1
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": true,
+     "ok": true,
+     "orbit_count_on_the_product_set": 1,
+     "pair_identity_holds": true,
+     "space_dimension": 1,
+     "sum_m_squared_field_degree": 1
+    },
+    "independent_orbit_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     }
+    ],
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "coarse_pair": [
+      6,
+      0
+     ],
+     "coarse_two_adic_profile": [
+      1,
+      null
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 1,
+     "fine_top_pair": [
+      6,
+      1
+     ],
+     "fine_top_two_adic_profile": [
+      1,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 6,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 36,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 36
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 6,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 6
+     }
+    ],
+    "name": "E_trivial",
+    "own_gates_hold": true,
+    "primary_orbit_pair": [
+     1,
+     0
+    ],
+    "primary_shell_pair": [
+     6,
+     0
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": null,
+    "independent_orbit_isotypes": null,
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      2,
+      3
+     ],
+     "coarse_pair": [
+      1,
+      5
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      2,
+      3
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 3,
+     "fine_top_pair": [
+      1,
+      3
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": true,
+     "ok": true,
+     "orbit_count_on_the_product_set": 3,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 3
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 2,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 3,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 3,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     }
+    ],
+    "name": "O_full",
+    "own_gates_hold": true,
+    "primary_orbit_pair": null,
+    "primary_shell_pair": [
+     1,
+     5
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": {
+     "block_dimensions": [
+      1,
+      1,
+      2,
+      2
+     ],
+     "coarse_pair": [
+      1,
+      5
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      2,
+      2
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 2,
+     "fine_top_pair": [
+      1,
+      2
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      1
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 6,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 6
+    },
+    "independent_orbit_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 4,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 2,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 2
+     }
+    ],
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      1,
+      2,
+      2
+     ],
+     "coarse_pair": [
+      1,
+      5
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      2,
+      2
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 2,
+     "fine_top_pair": [
+      1,
+      2
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      1
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 6,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 6
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 4,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 2,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 2
+     }
+    ],
+    "name": "S3_body",
+    "own_gates_hold": true,
+    "primary_orbit_pair": [
+     1,
+     5
+    ],
+    "primary_shell_pair": [
+     1,
+     5
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": {
+     "block_dimensions": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "coarse_pair": [
+      1,
+      3
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 1,
+     "fine_top_pair": [
+      1,
+      1
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 1,
+     "isotypic_decomposition_is_unique": true,
+     "ok": true,
+     "orbit_count_on_the_product_set": 4,
+     "pair_identity_holds": true,
+     "space_dimension": 4,
+     "sum_m_squared_field_degree": 4
+    },
+    "independent_orbit_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     }
+    ],
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "coarse_pair": [
+      2,
+      4
+     ],
+     "coarse_two_adic_profile": [
+      1,
+      2
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 1,
+     "fine_top_pair": [
+      2,
+      1
+     ],
+     "fine_top_two_adic_profile": [
+      1,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 2,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 10,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 10
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 2
+     },
+     {
+      "component_dimension": 2,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 2
+     }
+    ],
+    "name": "V_edge",
+    "own_gates_hold": true,
+    "primary_orbit_pair": [
+     1,
+     3
+    ],
+    "primary_shell_pair": [
+     2,
+     4
+    ]
+   },
+   {
+    "agrees_with_the_primary": true,
+    "independent_orbit": null,
+    "independent_orbit_isotypes": null,
+    "independent_shell": {
+     "block_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "coarse_pair": [
+      3,
+      3
+     ],
+     "coarse_two_adic_profile": [
+      0,
+      0
+     ],
+     "every_block_has_no_proper_submodule": true,
+     "fine_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "fine_sums_to_the_space": true,
+     "fine_top": 1,
+     "fine_top_pair": [
+      3,
+      1
+     ],
+     "fine_top_two_adic_profile": [
+      0,
+      0
+     ],
+     "invariant_multiplicity_by_orbit_count": 3,
+     "isotypic_decomposition_is_unique": false,
+     "ok": true,
+     "orbit_count_on_the_product_set": 12,
+     "pair_identity_holds": true,
+     "space_dimension": 6,
+     "sum_m_squared_field_degree": 12
+    },
+    "independent_shell_isotypes": [
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 1,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": false,
+      "multiplicity": 1
+     },
+     {
+      "component_dimension": 3,
+      "endomorphism_field_degree": 1,
+      "irreducible_degree_over_Q": 1,
+      "is_the_trivial_isotype": true,
+      "multiplicity": 3
+     }
+    ],
+    "name": "V_face",
+    "own_gates_hold": true,
+    "primary_orbit_pair": null,
+    "primary_shell_pair": [
+     3,
+     3
+    ]
+   }
+  ],
+  "statement": "Every isotype number rebuilt by MINIMAL CYCLIC SUBMODULES and orthogonal complements, with block characters used to group blocks into isotypes -- no enveloping algebra, no centre, no minimal polynomial, no cyclotomics. Each block additionally carries an irreducibility certificate (no proper submodule is found by either of two routes) and the decomposition is gated against the orbit count on X x X.",
+  "verdict": "SURVIVES"
+ },
+ "E_INDEPENDENT_SELECTORS": {
+  "finding": "16/16 selector survivor sets reproduce over the full lattice and 16/16 reproduce under the 886 restriction; C3 is isolated by ['SEL07_coarse_pair_v2_equals_one', 'SEL08_reachability_R1_orbit_scope'] and S3 by ['SEL06_maximal_free_shell_orbit'].",
+  "independent_survivors_per_selector": {
+   "SEL01_free_on_shell": [
+    "C2_edge",
+    "C3_body",
+    "E_trivial",
+    "S3_body"
+   ],
+   "SEL02_transitive_on_shell": [
+    "A4_tetrahedral",
+    "O_full",
+    "S3_body"
+   ],
+   "SEL03_multiplicity_one_orbit_scope": [
+    "C2_edge",
+    "C2_face",
+    "C3_body",
+    "C4_face",
+    "E_trivial",
+    "S3_body",
+    "V_edge"
+   ],
+   "SEL04_multiplicity_one_shell_scope": [
+    "A4_tetrahedral",
+    "O_full",
+    "S3_body"
+   ],
+   "SEL05_minimal_shell_invariant_multiplicity": [
+    "A4_tetrahedral",
+    "O_full",
+    "S3_body"
+   ],
+   "SEL06_maximal_free_shell_orbit": [
+    "S3_body"
+   ],
+   "SEL07_coarse_pair_v2_equals_one": [
+    "C3_body"
+   ],
+   "SEL08_reachability_R1_orbit_scope": [
+    "C3_body"
+   ],
+   "SEL09_reachability_R2_shell_scope": [
+    "C2_edge",
+    "C3_body",
+    "V_face"
+   ],
+   "SEL10_fine_top_pair_is_the_target": [
+    "C3_body",
+    "C4_face",
+    "S3_body"
+   ],
+   "SEL11_transitive_on_coordinate_axes": [
+    "A4_tetrahedral",
+    "C3_body",
+    "O_full",
+    "S3_body"
+   ],
+   "SEL12_odd_order": [
+    "C3_body",
+    "E_trivial"
+   ],
+   "SEL13_count_once": [
+    "A4_tetrahedral",
+    "C2_edge",
+    "C2_face",
+    "C3_body",
+    "C4_face",
+    "D4_face",
+    "E_trivial",
+    "O_full",
+    "S3_body",
+    "V_edge",
+    "V_face"
+   ],
+   "SEL14_content_only_readout": [
+    "A4_tetrahedral",
+    "C2_edge",
+    "C2_face",
+    "C3_body",
+    "C4_face",
+    "D4_face",
+    "E_trivial",
+    "O_full",
+    "S3_body",
+    "V_edge",
+    "V_face"
+   ],
+   "SEL15_admissibility_covariance": [
+    "A4_tetrahedral",
+    "C2_edge",
+    "C2_face",
+    "C3_body",
+    "C4_face",
+    "D4_face",
+    "E_trivial",
+    "O_full",
+    "S3_body",
+    "V_edge",
+    "V_face"
+   ],
+   "SEL16_no_site_privileged_read_literally": [
+    "A4_tetrahedral",
+    "C2_edge",
+    "C2_face",
+    "C3_body",
+    "C4_face",
+    "D4_face",
+    "E_trivial",
+    "O_full",
+    "S3_body",
+    "V_edge",
+    "V_face"
+   ]
+  },
+  "pass": true,
+  "primary_claim_reproduced": true,
+  "restriction_reproduces_cycle886_independently": true,
+  "restriction_rows": [
+   {
+    "cycle886": [
+     "C2_edge",
+     "C3_body"
+    ],
+    "id": "SEL01_free_on_shell",
+    "identical": true,
+    "independent_restricted": [
+     "C2_edge",
+     "C3_body"
+    ]
+   },
+   {
+    "cycle886": [],
+    "id": "SEL02_transitive_on_shell",
+    "identical": true,
+    "independent_restricted": []
+   },
+   {
+    "cycle886": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ],
+    "id": "SEL03_multiplicity_one_orbit_scope",
+    "identical": true,
+    "independent_restricted": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ]
+   },
+   {
+    "cycle886": [],
+    "id": "SEL04_multiplicity_one_shell_scope",
+    "identical": true,
+    "independent_restricted": []
+   },
+   {
+    "cycle886": [
+     "C3_body"
+    ],
+    "id": "SEL05_minimal_shell_invariant_multiplicity",
+    "identical": true,
+    "independent_restricted": [
+     "C3_body"
+    ]
+   },
+   {
+    "cycle886": [
+     "C3_body"
+    ],
+    "id": "SEL06_maximal_free_shell_orbit",
+    "identical": true,
+    "independent_restricted": [
+     "C3_body"
+    ]
+   },
+   {
+    "cycle886": [
+     "C3_body"
+    ],
+    "id": "SEL07_coarse_pair_v2_equals_one",
+    "identical": true,
+    "independent_restricted": [
+     "C3_body"
+    ]
+   },
+   {
+    "cycle886": [
+     "C3_body"
+    ],
+    "id": "SEL08_reachability_R1_orbit_scope",
+    "identical": true,
+    "independent_restricted": [
+     "C3_body"
+    ]
+   },
+   {
+    "cycle886": [
+     "C2_edge",
+     "C3_body"
+    ],
+    "id": "SEL09_reachability_R2_shell_scope",
+    "identical": true,
+    "independent_restricted": [
+     "C2_edge",
+     "C3_body"
+    ]
+   },
+   {
+    "cycle886": [
+     "C3_body",
+     "C4_face"
+    ],
+    "id": "SEL10_fine_top_pair_is_the_target",
+    "identical": true,
+    "independent_restricted": [
+     "C3_body",
+     "C4_face"
+    ]
+   },
+   {
+    "cycle886": [
+     "C3_body"
+    ],
+    "id": "SEL11_transitive_on_coordinate_axes",
+    "identical": true,
+    "independent_restricted": [
+     "C3_body"
+    ]
+   },
+   {
+    "cycle886": [
+     "C3_body"
+    ],
+    "id": "SEL12_odd_order",
+    "identical": true,
+    "independent_restricted": [
+     "C3_body"
+    ]
+   },
+   {
+    "cycle886": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ],
+    "id": "SEL13_count_once",
+    "identical": true,
+    "independent_restricted": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ]
+   },
+   {
+    "cycle886": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ],
+    "id": "SEL14_content_only_readout",
+    "identical": true,
+    "independent_restricted": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ]
+   },
+   {
+    "cycle886": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ],
+    "id": "SEL15_admissibility_covariance",
+    "identical": true,
+    "independent_restricted": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ]
+   },
+   {
+    "cycle886": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ],
+    "id": "SEL16_no_site_privileged_read_literally",
+    "identical": true,
+    "independent_restricted": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face"
+    ]
+   }
+  ],
+  "rows": [
+   {
+    "id": "SEL01_free_on_shell",
+    "identical": true,
+    "independent_survivors": [
+     "C2_edge",
+     "C3_body",
+     "E_trivial",
+     "S3_body"
+    ],
+    "primary_survivors": [
+     "C2_edge",
+     "C3_body",
+     "E_trivial",
+     "S3_body"
+    ]
+   },
+   {
+    "id": "SEL02_transitive_on_shell",
+    "identical": true,
+    "independent_survivors": [
+     "A4_tetrahedral",
+     "O_full",
+     "S3_body"
+    ],
+    "primary_survivors": [
+     "A4_tetrahedral",
+     "O_full",
+     "S3_body"
+    ]
+   },
+   {
+    "id": "SEL03_multiplicity_one_orbit_scope",
+    "identical": true,
+    "independent_survivors": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "E_trivial",
+     "S3_body",
+     "V_edge"
+    ],
+    "primary_survivors": [
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "E_trivial",
+     "S3_body",
+     "V_edge"
+    ]
+   },
+   {
+    "id": "SEL04_multiplicity_one_shell_scope",
+    "identical": true,
+    "independent_survivors": [
+     "A4_tetrahedral",
+     "O_full",
+     "S3_body"
+    ],
+    "primary_survivors": [
+     "A4_tetrahedral",
+     "O_full",
+     "S3_body"
+    ]
+   },
+   {
+    "id": "SEL05_minimal_shell_invariant_multiplicity",
+    "identical": true,
+    "independent_survivors": [
+     "A4_tetrahedral",
+     "O_full",
+     "S3_body"
+    ],
+    "primary_survivors": [
+     "A4_tetrahedral",
+     "O_full",
+     "S3_body"
+    ]
+   },
+   {
+    "id": "SEL06_maximal_free_shell_orbit",
+    "identical": true,
+    "independent_survivors": [
+     "S3_body"
+    ],
+    "primary_survivors": [
+     "S3_body"
+    ]
+   },
+   {
+    "id": "SEL07_coarse_pair_v2_equals_one",
+    "identical": true,
+    "independent_survivors": [
+     "C3_body"
+    ],
+    "primary_survivors": [
+     "C3_body"
+    ]
+   },
+   {
+    "id": "SEL08_reachability_R1_orbit_scope",
+    "identical": true,
+    "independent_survivors": [
+     "C3_body"
+    ],
+    "primary_survivors": [
+     "C3_body"
+    ]
+   },
+   {
+    "id": "SEL09_reachability_R2_shell_scope",
+    "identical": true,
+    "independent_survivors": [
+     "C2_edge",
+     "C3_body",
+     "V_face"
+    ],
+    "primary_survivors": [
+     "C2_edge",
+     "C3_body",
+     "V_face"
+    ]
+   },
+   {
+    "id": "SEL10_fine_top_pair_is_the_target",
+    "identical": true,
+    "independent_survivors": [
+     "C3_body",
+     "C4_face",
+     "S3_body"
+    ],
+    "primary_survivors": [
+     "C3_body",
+     "C4_face",
+     "S3_body"
+    ]
+   },
+   {
+    "id": "SEL11_transitive_on_coordinate_axes",
+    "identical": true,
+    "independent_survivors": [
+     "A4_tetrahedral",
+     "C3_body",
+     "O_full",
+     "S3_body"
+    ],
+    "primary_survivors": [
+     "A4_tetrahedral",
+     "C3_body",
+     "O_full",
+     "S3_body"
+    ]
+   },
+   {
+    "id": "SEL12_odd_order",
+    "identical": true,
+    "independent_survivors": [
+     "C3_body",
+     "E_trivial"
+    ],
+    "primary_survivors": [
+     "C3_body",
+     "E_trivial"
+    ]
+   },
+   {
+    "id": "SEL13_count_once",
+    "identical": true,
+    "independent_survivors": [
+     "A4_tetrahedral",
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "D4_face",
+     "E_trivial",
+     "O_full",
+     "S3_body",
+     "V_edge",
+     "V_face"
+    ],
+    "primary_survivors": [
+     "A4_tetrahedral",
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "D4_face",
+     "E_trivial",
+     "O_full",
+     "S3_body",
+     "V_edge",
+     "V_face"
+    ]
+   },
+   {
+    "id": "SEL14_content_only_readout",
+    "identical": true,
+    "independent_survivors": [
+     "A4_tetrahedral",
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "D4_face",
+     "E_trivial",
+     "O_full",
+     "S3_body",
+     "V_edge",
+     "V_face"
+    ],
+    "primary_survivors": [
+     "A4_tetrahedral",
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "D4_face",
+     "E_trivial",
+     "O_full",
+     "S3_body",
+     "V_edge",
+     "V_face"
+    ]
+   },
+   {
+    "id": "SEL15_admissibility_covariance",
+    "identical": true,
+    "independent_survivors": [
+     "A4_tetrahedral",
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "D4_face",
+     "E_trivial",
+     "O_full",
+     "S3_body",
+     "V_edge",
+     "V_face"
+    ],
+    "primary_survivors": [
+     "A4_tetrahedral",
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "D4_face",
+     "E_trivial",
+     "O_full",
+     "S3_body",
+     "V_edge",
+     "V_face"
+    ]
+   },
+   {
+    "id": "SEL16_no_site_privileged_read_literally",
+    "identical": true,
+    "independent_survivors": [
+     "A4_tetrahedral",
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "D4_face",
+     "E_trivial",
+     "O_full",
+     "S3_body",
+     "V_edge",
+     "V_face"
+    ],
+    "primary_survivors": [
+     "A4_tetrahedral",
+     "C2_edge",
+     "C2_face",
+     "C3_body",
+     "C4_face",
+     "D4_face",
+     "E_trivial",
+     "O_full",
+     "S3_body",
+     "V_edge",
+     "V_face"
+    ]
+   }
+  ],
+  "selectors_isolating_C3_body": [
+   "SEL07_coarse_pair_v2_equals_one",
+   "SEL08_reachability_R1_orbit_scope"
+  ],
+  "selectors_isolating_S3_body": [
+   "SEL06_maximal_free_shell_orbit"
+  ],
+  "statement": "All sixteen selector survivor sets recomputed over all thirty subgroups from the checker's own signatures, and the Cycle-886 restriction independently re-derived and compared against the pinned 886 receipt.",
+  "verdict": "SURVIVES"
+ },
+ "F_INDEPENDENT_REACHABILITY": {
+  "finding": "the solver passes 6/6 self-tests and the survivor sets reproduce: R1_orbit_scope_coarse -> ['C3_body']; R2_shell_scope_coarse -> ['C2_edge', 'C3_body', 'V_face']; R3_orbit_scope_fine -> ['C3_body', 'S3_body']; R4_shell_scope_fine -> ['A4_tetrahedral', 'C3_body', 'O_full', 'S3_body']",
+  "independent_survivors_by_rule": {
+   "R1_orbit_scope_coarse": [
+    "C3_body"
+   ],
+   "R2_shell_scope_coarse": [
+    "C2_edge",
+    "C3_body",
+    "V_face"
+   ],
+   "R3_orbit_scope_fine": [
+    "C3_body",
+    "S3_body"
+   ],
+   "R4_shell_scope_fine": [
+    "A4_tetrahedral",
+    "C3_body",
+    "O_full",
+    "S3_body"
+   ]
+  },
+  "pass": true,
+  "primary_claim_reproduced": true,
+  "primary_survivors_by_rule": {
+   "R1_orbit_scope_coarse": [
+    "C3_body"
+   ],
+   "R2_shell_scope_coarse": [
+    "C2_edge",
+    "C3_body",
+    "V_face"
+   ],
+   "R3_orbit_scope_fine": [
+    "C3_body",
+    "S3_body"
+   ],
+   "R4_shell_scope_fine": [
+    "A4_tetrahedral",
+    "C3_body",
+    "O_full",
+    "S3_body"
+   ]
+  },
+  "reading_dependence_present": true,
+  "rows": [
+   {
+    "name": "E_trivial",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       6
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C2_edge",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C2_edge",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C2_edge",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C2_edge",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C2_edge",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C2_edge",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C2_face",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C2_face",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C2_face",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C3_body",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3,
+       4
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     }
+    }
+   },
+   {
+    "name": "C3_body",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3,
+       4
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     }
+    }
+   },
+   {
+    "name": "C3_body",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3,
+       4
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     }
+    }
+   },
+   {
+    "name": "C3_body",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3,
+       4
+      ],
+      "reachable": true
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     }
+    }
+   },
+   {
+    "name": "C4_face",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       3,
+       4
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       3,
+       4
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C4_face",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       3,
+       4
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       3,
+       4
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "C4_face",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       3,
+       4
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       3,
+       4
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "V_edge",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       3,
+       4
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       4
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "V_edge",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       3,
+       4
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       4
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "V_edge",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       3,
+       4
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       4
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "V_face",
+    "per_rule": {
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       3
+      ],
+      "reachable": true
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "S3_body",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       6
+      ],
+      "reachable": true
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       6
+      ],
+      "reachable": true
+     }
+    }
+   },
+   {
+    "name": "S3_body",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       6
+      ],
+      "reachable": true
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       6
+      ],
+      "reachable": true
+     }
+    }
+   },
+   {
+    "name": "S3_body",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       6
+      ],
+      "reachable": true
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       6
+      ],
+      "reachable": true
+     }
+    }
+   },
+   {
+    "name": "S3_body",
+    "per_rule": {
+     "R1_orbit_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R2_shell_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R3_orbit_scope_fine": {
+      "generators": [
+       2,
+       6
+      ],
+      "reachable": true
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       6
+      ],
+      "reachable": true
+     }
+    }
+   },
+   {
+    "name": "D4_face",
+    "per_rule": {
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "D4_face",
+    "per_rule": {
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "D4_face",
+    "per_rule": {
+     "R2_shell_scope_coarse": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       4
+      ],
+      "reachable": false
+     }
+    }
+   },
+   {
+    "name": "A4_tetrahedral",
+    "per_rule": {
+     "R2_shell_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       3,
+       6
+      ],
+      "reachable": true
+     }
+    }
+   },
+   {
+    "name": "O_full",
+    "per_rule": {
+     "R2_shell_scope_coarse": {
+      "generators": [
+       5,
+       6
+      ],
+      "reachable": false
+     },
+     "R4_shell_scope_fine": {
+      "generators": [
+       2,
+       3,
+       6
+      ],
+      "reachable": true
+     }
+    }
+   }
+  ],
+  "scope_circularity_still_present": true,
+  "solver_self_test_passed": true,
+  "solver_self_tests": [
+   {
+    "computed": false,
+    "expected": false,
+    "matrix": [
+     [
+      1
+     ],
+     [
+      0
+     ]
+    ],
+    "ok": true,
+    "target": [
+     1,
+     -2
+    ]
+   },
+   {
+    "computed": true,
+    "expected": true,
+    "matrix": [
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "ok": true,
+    "target": [
+     1,
+     -2
+    ]
+   },
+   {
+    "computed": false,
+    "expected": false,
+    "matrix": [
+     [
+      2,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "ok": true,
+    "target": [
+     1,
+     -2
+    ]
+   },
+   {
+    "computed": true,
+    "expected": true,
+    "matrix": [
+     [
+      2,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "ok": true,
+    "target": [
+     4,
+     -2
+    ]
+   },
+   {
+    "computed": true,
+    "expected": true,
+    "matrix": [
+     [
+      0
+     ],
+     [
+      1
+     ]
+    ],
+    "ok": true,
+    "target": [
+     0,
+     5
+    ]
+   },
+   {
+    "computed": true,
+    "expected": true,
+    "matrix": [
+     [
+      1,
+      1
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "ok": true,
+    "target": [
+     1,
+     -2
+    ]
+   }
+  ],
+  "statement": "Multiplicative reachability of 2/9 re-decided by Smith-style diagonalization with a tracked left transform, self-tested on six lattices with known answers before it is trusted.",
+  "verdict": "SURVIVES"
+ },
+ "G_SL1_TRANSFER_ATTACK": {
+  "attack_1_second_readout_with_a_different_pair": {
+   "a_readout_with_a_DIFFERENT_pair_exists": false,
+   "achievable_fine_top_pairs": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "all_top_degree_submodules_are_isomorphic": true,
+   "distinct_characters_by_degree": {
+    "1": 2,
+    "2": 1
+   },
+   "distinct_submodules_found_by_degree": {
+    "1": 2,
+    "2": 6
+   },
+   "distinct_top_degree_submodules": 6,
+   "irreducible_degrees_present": [
+    1,
+    2
+   ],
+   "result": "the pair (1, 2) is stable across every readout choice, so the NUMBER transfers -- the primary's claim survives this attack",
+   "sample_top_degree_submodules": [
+    {
+     "basis": [
+      [
+       "1/1",
+       "0/1",
+       "-1/1",
+       "1/1",
+       "0/1",
+       "-1/1"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "-1/1",
+       "1/1",
+       "-1/1",
+       "0/1"
+      ]
+     ],
+     "character": [
+      "0/1",
+      "0/1",
+      "0/1",
+      "-1/1",
+      "-1/1",
+      "2/1"
+     ],
+     "generator": [
+      "-1/1",
+      "0/1",
+      "1/1",
+      "-1/1",
+      "0/1",
+      "1/1"
+     ]
+    },
+    {
+     "basis": [
+      [
+       "1/1",
+       "0/1",
+       "-1/1",
+       "1/1",
+       "-1/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "-1/1",
+       "0/1",
+       "-1/1",
+       "1/1"
+      ]
+     ],
+     "character": [
+      "0/1",
+      "0/1",
+      "0/1",
+      "-1/1",
+      "-1/1",
+      "2/1"
+     ],
+     "generator": [
+      "-1/1",
+      "0/1",
+      "1/1",
+      "-1/1",
+      "1/1",
+      "0/1"
+     ]
+    },
+    {
+     "basis": [
+      [
+       "1/1",
+       "0/1",
+       "-1/1",
+       "0/1",
+       "1/1",
+       "-1/1"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "-1/1",
+       "1/1",
+       "0/1",
+       "-1/1"
+      ]
+     ],
+     "character": [
+      "0/1",
+      "0/1",
+      "0/1",
+      "-1/1",
+      "-1/1",
+      "2/1"
+     ],
+     "generator": [
+      "-1/1",
+      "0/1",
+      "1/1",
+      "0/1",
+      "-1/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  "attack_2_is_the_isotypic_component_canonical": {
+   "isotypic_level_is_canonical": true,
+   "result": "the isotypic decomposition IS forced while the split into irreducibles is NOT -- exactly the distinction the primary draws",
+   "span_of_all_top_degree_submodules": 4,
+   "top_isotypic_component_dimension": 4
+  },
+  "attack_3_peer_comparison": {
+   "C3_and_C4_are_multiplicity_free_and_S3_is_not": true,
+   "peers": [
+    {
+     "class": "C3_body",
+     "free_orbit_length": 3,
+     "independent_coarse_pair": [
+      1,
+      2
+     ],
+     "independent_decomposition_is_unique": true,
+     "independent_fine_dims": [
+      1,
+      2
+     ],
+     "independent_fine_top_pair": [
+      1,
+      2
+     ],
+     "independent_multiplicities": [
+      1,
+      1
+     ]
+    },
+    {
+     "class": "C4_face",
+     "free_orbit_length": 4,
+     "independent_coarse_pair": [
+      1,
+      3
+     ],
+     "independent_decomposition_is_unique": true,
+     "independent_fine_dims": [
+      1,
+      1,
+      2
+     ],
+     "independent_fine_top_pair": [
+      1,
+      2
+     ],
+     "independent_multiplicities": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "class": "S3_body",
+     "free_orbit_length": 6,
+     "independent_coarse_pair": [
+      1,
+      5
+     ],
+     "independent_decomposition_is_unique": false,
+     "independent_fine_dims": [
+      1,
+      1,
+      2,
+      2
+     ],
+     "independent_fine_top_pair": [
+      1,
+      2
+     ],
+     "independent_multiplicities": [
+      1,
+      1,
+      2
+     ]
+    }
+   ],
+   "result": "the peer comparison stands"
+  },
+  "coarse_pair_agrees": true,
+  "finding": "independent S3 multiplicities [[1, 1], [1, 1], [2, 2]]; 6 distinct 2-dimensional submodules found, all with the same character (True), so no readout with a different pair exists; the isotypic level is canonical (True); C3/C4 multiplicity-free and S3 not (True); the transfer claim SURVIVES.",
+  "fine_top_pair_agrees": true,
+  "independent_S3_isotypes": [
+   {
+    "component_dimension": 1,
+    "endomorphism_field_degree": 1,
+    "irreducible_degree_over_Q": 1,
+    "is_the_trivial_isotype": true,
+    "multiplicity": 1
+   },
+   {
+    "component_dimension": 1,
+    "endomorphism_field_degree": 1,
+    "irreducible_degree_over_Q": 1,
+    "is_the_trivial_isotype": false,
+    "multiplicity": 1
+   },
+   {
+    "component_dimension": 4,
+    "endomorphism_field_degree": 1,
+    "irreducible_degree_over_Q": 2,
+    "is_the_trivial_isotype": false,
+    "multiplicity": 2
+   }
+  ],
+  "independent_S3_signature": {
+   "block_dimensions": [
+    1,
+    1,
+    2,
+    2
+   ],
+   "coarse_pair": [
+    1,
+    5
+   ],
+   "coarse_two_adic_profile": [
+    0,
+    0
+   ],
+   "every_block_has_no_proper_submodule": true,
+   "fine_dimensions": [
+    1,
+    1,
+    2,
+    2
+   ],
+   "fine_sums_to_the_space": true,
+   "fine_top": 2,
+   "fine_top_pair": [
+    1,
+    2
+   ],
+   "fine_top_two_adic_profile": [
+    0,
+    1
+   ],
+   "invariant_multiplicity_by_orbit_count": 1,
+   "isotypic_decomposition_is_unique": false,
+   "ok": true,
+   "orbit_count_on_the_product_set": 6,
+   "pair_identity_holds": true,
+   "space_dimension": 6,
+   "sum_m_squared_field_degree": 6
+  },
+  "independent_multiplicities": [
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    2
+   ]
+  ],
+  "independent_verdict": "NUMERICALLY_TRANSFERS_BUT_THE_SUBSPACE_IS_NOT_FORCED",
+  "pass": true,
+  "primary_verdict": "NUMERICALLY_TRANSFERS_BUT_THE_SUBSPACE_IS_NOT_FORCED",
+  "statement": "THE SL1-TRANSFER CLAIM, ATTACKED. The primary says the S3 readout's fine-top pair (1, 2) transfers as a NUMBER but not as a forced subspace. Refuting that requires either (i) a second inequivalent readout construction at S3 scope carrying a DIFFERENT pair, or (ii) showing the S3 decomposition is in fact unique, or (iii) breaking the peer comparison at C3 and C4. All three are attempted here.",
+  "verdict": "SURVIVES",
+  "verdicts_agree": true
+ },
+ "H_INDEPENDENT_SCOPE_INSENSITIVITY": {
+  "finding": "independent menu ['C2_edge', 'C2_face', 'C3_body', 'C4_face', 'S3_body', 'V_edge']; ORBIT_SCOPE_coarse -> SCOPE_SENSITIVE ['C3_body']; ORBIT_SCOPE_fine -> SCOPE_SENSITIVE ['C3_body', 'S3_body']; SHELL_SCOPE_coarse -> SCOPE_SENSITIVE ['C2_edge', 'C3_body']; SHELL_SCOPE_fine -> SCOPE_SENSITIVE ['C3_body', 'S3_body']; OVERALL MIXED (primary said MIXED)",
+  "independent_menu": [
+   "C2_edge",
+   "C2_face",
+   "C3_body",
+   "C4_face",
+   "S3_body",
+   "V_edge"
+  ],
+  "independent_overall_verdict": "MIXED",
+  "menus_agree": true,
+  "overall_verdicts_agree": true,
+  "pass": true,
+  "per_reading_comparison": [
+   {
+    "identical": true,
+    "independent_verdict": "SCOPE_SENSITIVE",
+    "independent_working_set": [
+     "C3_body"
+    ],
+    "primary_verdict": "SCOPE_SENSITIVE",
+    "primary_working_set": [
+     "C3_body"
+    ],
+    "reading": "ORBIT_SCOPE_coarse_reading"
+   },
+   {
+    "identical": true,
+    "independent_verdict": "SCOPE_SENSITIVE",
+    "independent_working_set": [
+     "C3_body",
+     "S3_body"
+    ],
+    "primary_verdict": "SCOPE_SENSITIVE",
+    "primary_working_set": [
+     "C3_body",
+     "S3_body"
+    ],
+    "reading": "ORBIT_SCOPE_fine_reading"
+   },
+   {
+    "identical": true,
+    "independent_verdict": "SCOPE_SENSITIVE",
+    "independent_working_set": [
+     "C2_edge",
+     "C3_body"
+    ],
+    "primary_verdict": "SCOPE_SENSITIVE",
+    "primary_working_set": [
+     "C2_edge",
+     "C3_body"
+    ],
+    "reading": "SHELL_SCOPE_coarse_reading"
+   },
+   {
+    "identical": true,
+    "independent_verdict": "SCOPE_SENSITIVE",
+    "independent_working_set": [
+     "C3_body",
+     "S3_body"
+    ],
+    "primary_verdict": "SCOPE_SENSITIVE",
+    "primary_working_set": [
+     "C3_body",
+     "S3_body"
+    ],
+    "reading": "SHELL_SCOPE_fine_reading"
+   }
+  ],
+  "primary_claim_reproduced": true,
+  "primary_menu": [
+   "C2_edge",
+   "C2_face",
+   "C3_body",
+   "C4_face",
+   "S3_body",
+   "V_edge"
+  ],
+  "primary_overall_verdict": "MIXED",
+  "rows": [
+   {
+    "ORBIT_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "ORBIT_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "SHELL_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": true,
+     "widened_reachable": true
+    },
+    "SHELL_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "scope_class": "C2_edge"
+   },
+   {
+    "ORBIT_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "ORBIT_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "SHELL_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "SHELL_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "scope_class": "C2_face"
+   },
+   {
+    "ORBIT_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": true,
+     "widened_reachable": true
+    },
+    "ORBIT_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": true,
+     "widened_reachable": true
+    },
+    "SHELL_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": true,
+     "widened_reachable": true
+    },
+    "SHELL_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": true,
+     "widened_reachable": true
+    },
+    "scope_class": "C3_body"
+   },
+   {
+    "ORBIT_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "ORBIT_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "SHELL_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "SHELL_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "scope_class": "C4_face"
+   },
+   {
+    "ORBIT_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "ORBIT_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": true,
+     "widened_reachable": true
+    },
+    "SHELL_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "SHELL_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": true,
+     "widened_reachable": true
+    },
+    "scope_class": "S3_body"
+   },
+   {
+    "ORBIT_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "ORBIT_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "SHELL_SCOPE_coarse_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "SHELL_SCOPE_fine_reading": {
+     "base_reachable": false,
+     "defeats_C882_T6": false,
+     "widened_reachable": false
+    },
+    "scope_class": "V_edge"
+   }
+  ],
+  "statement": "The scope-insensitivity verdicts recomputed from scratch: the menu membership rule re-applied to the checker's own orbit structures, Cycle 883's widening step re-evaluated at every menu scope under both readings at both scopes, and the verdicts re-derived.",
+  "verdict": "SURVIVES"
+ },
+ "I_UPSTREAM_PIN_FIDELITY": {
+  "cycle883_defeat_condition": "defeated = (not old_reach) and new_reach",
+  "cycle883_defeat_condition_present_in_883_source": true,
+  "fidelity_grades_carried_unchanged": true,
+  "finding": "16/16 quoted sentences and 16/16 fidelity grades are byte-identical to Cycle 886; the survivor expressions round-trip (True) and Cycle 883's defeat condition is present in its source (True).",
+  "grade_rows": [
+   {
+    "carried_fidelity": "NONE",
+    "carried_grounded": false,
+    "cycle886_fidelity": "NONE",
+    "cycle886_grounded": false,
+    "id": "SEL01_free_on_shell",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "NONE",
+    "carried_grounded": false,
+    "cycle886_fidelity": "NONE",
+    "cycle886_grounded": false,
+    "id": "SEL02_transitive_on_shell",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "NONE",
+    "carried_grounded": false,
+    "cycle886_fidelity": "NONE",
+    "cycle886_grounded": false,
+    "id": "SEL03_multiplicity_one_orbit_scope",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "NONE",
+    "carried_grounded": false,
+    "cycle886_fidelity": "NONE",
+    "cycle886_grounded": false,
+    "id": "SEL04_multiplicity_one_shell_scope",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "NONE",
+    "carried_grounded": false,
+    "cycle886_fidelity": "NONE",
+    "cycle886_grounded": false,
+    "id": "SEL05_minimal_shell_invariant_multiplicity",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "NONE",
+    "carried_grounded": false,
+    "cycle886_fidelity": "NONE",
+    "cycle886_grounded": false,
+    "id": "SEL06_maximal_free_shell_orbit",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "EXACT",
+    "carried_grounded": false,
+    "cycle886_fidelity": "EXACT",
+    "cycle886_grounded": false,
+    "id": "SEL07_coarse_pair_v2_equals_one",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "PARTIAL",
+    "carried_grounded": false,
+    "cycle886_fidelity": "PARTIAL",
+    "cycle886_grounded": false,
+    "id": "SEL08_reachability_R1_orbit_scope",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "PARTIAL",
+    "carried_grounded": false,
+    "cycle886_fidelity": "PARTIAL",
+    "cycle886_grounded": false,
+    "id": "SEL09_reachability_R2_shell_scope",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "NONE",
+    "carried_grounded": false,
+    "cycle886_fidelity": "NONE",
+    "cycle886_grounded": false,
+    "id": "SEL10_fine_top_pair_is_the_target",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "PARTIAL",
+    "carried_grounded": false,
+    "cycle886_fidelity": "PARTIAL",
+    "cycle886_grounded": false,
+    "id": "SEL11_transitive_on_coordinate_axes",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "NONE",
+    "carried_grounded": false,
+    "cycle886_fidelity": "NONE",
+    "cycle886_grounded": false,
+    "id": "SEL12_odd_order",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "EXACT",
+    "carried_grounded": true,
+    "cycle886_fidelity": "EXACT",
+    "cycle886_grounded": true,
+    "id": "SEL13_count_once",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "EXACT",
+    "carried_grounded": true,
+    "cycle886_fidelity": "EXACT",
+    "cycle886_grounded": true,
+    "id": "SEL14_content_only_readout",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "EXACT",
+    "carried_grounded": true,
+    "cycle886_fidelity": "EXACT",
+    "cycle886_grounded": true,
+    "id": "SEL15_admissibility_covariance",
+    "identical": true
+   },
+   {
+    "carried_fidelity": "EXACT",
+    "carried_grounded": true,
+    "cycle886_fidelity": "EXACT",
+    "cycle886_grounded": true,
+    "id": "SEL16_no_site_privileged_read_literally",
+    "identical": true
+   }
+  ],
+  "pass": true,
+  "primary_claim_reproduced": true,
+  "quote_rows": [
+   {
+    "id": "SEL01_free_on_shell",
+    "in_axiom_memo": true,
+    "ok": true,
+    "quoted": "No site is privileged. Sites are distinguished by the suppli...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL02_transitive_on_shell",
+    "in_axiom_memo": true,
+    "ok": true,
+    "quoted": "No site is privileged. Sites are distinguished by the suppli...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL03_multiplicity_one_orbit_scope",
+    "in_axiom_memo": true,
+    "ok": true,
+    "quoted": "For any finite collection of pairwise-disjoint records, scal...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL04_multiplicity_one_shell_scope",
+    "in_axiom_memo": true,
+    "ok": true,
+    "quoted": "For any finite collection of pairwise-disjoint records, scal...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL05_minimal_shell_invariant_multiplicity",
+    "in_axiom_memo": null,
+    "ok": true,
+    "quoted": null,
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL06_maximal_free_shell_orbit",
+    "in_axiom_memo": null,
+    "ok": true,
+    "quoted": null,
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL07_coarse_pair_v2_equals_one",
+    "in_axiom_memo": false,
+    "ok": true,
+    "quoted": "A Record-facing datum with v_2 = 1 must enter. Concretely: d...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL08_reachability_R1_orbit_scope",
+    "in_axiom_memo": false,
+    "ok": true,
+    "quoted": "A Record-facing datum with v_2 = 1 must enter. Concretely: d...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL09_reachability_R2_shell_scope",
+    "in_axiom_memo": false,
+    "ok": true,
+    "quoted": "A Record-facing datum with v_2 = 1 must enter. Concretely: d...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL10_fine_top_pair_is_the_target",
+    "in_axiom_memo": null,
+    "ok": true,
+    "quoted": null,
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL11_transitive_on_coordinate_axes",
+    "in_axiom_memo": true,
+    "ok": true,
+    "quoted": "Physical sites are the points of the cubic lattice `Z^3`, wi...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL12_odd_order",
+    "in_axiom_memo": null,
+    "ok": true,
+    "quoted": null,
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL13_count_once",
+    "in_axiom_memo": true,
+    "ok": true,
+    "quoted": "A site never carries more than one record; records are perma...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL14_content_only_readout",
+    "in_axiom_memo": true,
+    "ok": true,
+    "quoted": "Only records are readable. A readout value is determined by ...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL15_admissibility_covariance",
+    "in_axiom_memo": true,
+    "ok": true,
+    "quoted": "There is one fixed nearest-neighbor admissibility rule, cova...",
+    "verbatim_in_886_source": true
+   },
+   {
+    "id": "SEL16_no_site_privileged_read_literally",
+    "in_axiom_memo": true,
+    "ok": true,
+    "quoted": "No site is privileged. Sites are distinguished by the suppli...",
+    "verbatim_in_886_source": true
+   }
+  ],
+  "quoted_sentences_are_verbatim_886_material": true,
+  "statement": "Everything the primary CARRIED OVER as a pin from Cycle 886 and Cycle 883 is verified byte-identical against the pinned sources here: the byte-quoted sentences, the fidelity grades, the grounding flags, the survivor expressions the primary re-implemented, and Cycle 883's defeat condition.",
+  "survivor_expressions_are_verbatim_886_source": true,
+  "verdict": "SURVIVES"
+ },
+ "J_REFUTATION_ATTEMPTS": {
+  "attempts": [
+   {
+    "attack": "the 24-element group is wrong",
+    "method": "rebuilt from M M^T = I over 19683 integer matrices",
+    "n": 1,
+    "result": "SURVIVES"
+   },
+   {
+    "attack": "a subgroup or a whole conjugacy class was dropped from the 30-member lattice",
+    "method": "iterated extension <H, g>, cross-checked against closure of every subset of size <= 3, the class equation and the Sylow congruences",
+    "n": 2,
+    "result": "SURVIVES"
+   },
+   {
+    "attack": "a fine decomposition is wrong -- in particular the S3 multiplicity ledger",
+    "method": "minimal cyclic submodules and orthogonal complements with block characters; no enveloping algebra, no centre, no minimal polynomial",
+    "n": 3,
+    "result": "SURVIVES"
+   },
+   {
+    "attack": "a selector survivor set over the full lattice is wrong, or the restriction to the 886 census does not really reproduce 886",
+    "method": "all sixteen recomputed over all thirty subgroups from the checker's own signatures, then restricted and compared against the pinned 886 receipt",
+    "n": 4,
+    "result": "SURVIVES"
+   },
+   {
+    "attack": "an unreachability verdict is a window artifact",
+    "method": "Smith-style diagonalization, self-tested on six lattices",
+    "n": 5,
+    "result": "SURVIVES"
+   },
+   {
+    "attack": "the SL1-transfer claim is wrong: either a second readout at S3 carries a DIFFERENT pair, or the S3 decomposition is actually forced, or the C3/C4 peer comparison breaks",
+    "method": "every irreducible submodule of each degree enumerated and characterised; the span of the top-degree submodules compared against the isotypic component; C3 and C4 multiplicity ledgers recomputed",
+    "n": 6,
+    "result": "SURVIVES"
+   },
+   {
+    "attack": "the scope-insensitivity verdict is wrong or was leaked rather than computed",
+    "method": "menu rule re-applied, Cycle 883's widening step re-evaluated at every menu scope under both readings at both scopes, verdicts re-derived",
+    "n": 7,
+    "result": "SURVIVES"
+   },
+   {
+    "attack": "the 886/883 material the primary carried over as pins was altered",
+    "method": "byte comparison of every quoted sentence, fidelity grade, grounding flag and survivor expression against the pinned 886 and 883 sources",
+    "n": 8,
+    "result": "SURVIVES"
+   },
+   {
+    "attack": "the primary imported or executed a pinned artifact",
+    "method": "meta-path firewall plus module-table inspection here, and the primary's own firewall record",
+    "n": 9,
+    "result": "SURVIVES: no pinned module is loadable in this process either"
+   }
+  ],
+  "attempts_that_landed": [],
+  "attempts_that_landed_count": 0,
+  "finding": "0 of 9 attempts landed; every recomputation of a certified quantity reproduced the primary.",
+  "no_computed_number_was_refuted": true,
+  "pass": true,
+  "statement": "Nine numbered refutation attempts against the block."
+ },
+ "K_TEETH": {
+  "all_teeth_bite": true,
+  "finding": "8/8 teeth bite: T1=BITE, T2=BITE, T3=BITE, T4=BITE, T5=BITE, T6=BITE, T7=BITE, T8=BITE",
+  "pass": true,
+  "rows": [
+   {
+    "bites": true,
+    "expected_exit": 2,
+    "expected_failing_certificate": null,
+    "id": "T1_tampered_pin",
+    "observed_exit": 2,
+    "observed_failing_certificates": [],
+    "patch_applied_exactly_once": true,
+    "patch_sites_found": 1,
+    "stderr_head": [
+     "PREFLIGHT HARD FAIL: pin digest mismatch: docs/MINIMAL_AXIOMS_2026-06-29.md sha256 fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697 != 0000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "target_certificate_or_gate": "preflight pin digest check"
+   },
+   {
+    "bites": true,
+    "expected_exit": 1,
+    "expected_failing_certificate": "D_SUBGROUP_LATTICE",
+    "id": "T2_dropped_subgroup_class",
+    "observed_exit": 1,
+    "observed_failing_certificates": [
+     "D_SUBGROUP_LATTICE",
+     "O_IMPOSTOR_STRESS"
+    ],
+    "patch_applied_exactly_once": true,
+    "patch_sites_found": 1,
+    "stderr_head": [],
+    "target_certificate_or_gate": "the 30-subgroup / 11-class census and the class equation"
+   },
+   {
+    "bites": true,
+    "expected_exit": 1,
+    "expected_failing_certificate": "D_SUBGROUP_LATTICE",
+    "id": "T3_broken_class_equation",
+    "observed_exit": 1,
+    "observed_failing_certificates": [
+     "D_SUBGROUP_LATTICE"
+    ],
+    "patch_applied_exactly_once": true,
+    "patch_sites_found": 1,
+    "stderr_head": [],
+    "target_certificate_or_gate": "class_equation_holds_on_every_class"
+   },
+   {
+    "bites": true,
+    "expected_exit": 1,
+    "expected_failing_certificate": "G_ISOTYPE_SIGNATURES",
+    "id": "T4_broken_dimension_sum",
+    "observed_exit": 1,
+    "observed_failing_certificates": [
+     "G_ISOTYPE_SIGNATURES",
+     "H_CLASS_INVARIANCE",
+     "L_RESTRICTION_GATE",
+     "M_S3_PRICING_ROW",
+     "O_IMPOSTOR_STRESS"
+    ],
+    "patch_applied_exactly_once": true,
+    "patch_sites_found": 1,
+    "stderr_head": [],
+    "target_certificate_or_gate": "fine_decomposition_sums_to_the_space"
+   },
+   {
+    "bites": true,
+    "expected_exit": 1,
+    "expected_failing_certificate": "L_RESTRICTION_GATE",
+    "id": "T5_hardcoded_selector_row",
+    "observed_exit": 1,
+    "observed_failing_certificates": [
+     "L_RESTRICTION_GATE"
+    ],
+    "patch_applied_exactly_once": true,
+    "patch_sites_found": 1,
+    "stderr_head": [],
+    "target_certificate_or_gate": "byte-level reproduction of the pinned Cycle-886 receipt"
+   },
+   {
+    "bites": true,
+    "expected_exit": 1,
+    "expected_failing_certificate": "N_SCOPE_INSENSITIVITY",
+    "id": "T6_skipped_scope",
+    "observed_exit": 1,
+    "observed_failing_certificates": [
+     "N_SCOPE_INSENSITIVITY"
+    ],
+    "patch_applied_exactly_once": true,
+    "patch_sites_found": 1,
+    "stderr_head": [],
+    "target_certificate_or_gate": "table_is_complete over the whole menu"
+   },
+   {
+    "bites": true,
+    "checker_verdict_on_the_trapped_receipt": "REFUTED",
+    "id": "T7_hardcoded_S3_transfer_row_on_the_checker",
+    "independent_verdict": "NUMERICALLY_TRANSFERS_BUT_THE_SUBSPACE_IS_NOT_FORCED",
+    "method": "the primary's receipt is mutated in memory so the S3 transfer row declares the decomposition FORCED -- the reading that would make S3 a clean SL1 transfer. No primary gate can see this, by design: the primary's gates are outcome-neutral. Only the independent recomputation catches it.",
+    "target_certificate_or_gate": "G_SL1_TRANSFER_ATTACK / verdicts_agree"
+   },
+   {
+    "bites": true,
+    "checker_verdict_on_the_trapped_receipt": "REFUTED",
+    "id": "T8_leaked_scope_insensitivity_verdict_on_the_checker",
+    "independent_overall_verdict": "MIXED",
+    "method": "the primary's receipt is mutated in memory to declare the downstream obligation SCOPE_INSENSITIVE -- the verdict that would drop the menu price to zero. Again invisible to every outcome-neutral gate and caught only by recomputation.",
+    "target_certificate_or_gate": "H_INDEPENDENT_SCOPE_INSENSITIVITY / overall_verdicts_agree"
+   }
+  ],
+  "statement": "Eight deliberate mutations. Six patch the primary and must flip a NAMED certificate or the preflight; two are traps on this checker -- a hardcoded S3 transfer row and a leaked scope-insensitivity verdict -- which no outcome-neutral primary gate can catch and which must be caught by independent recomputation.",
+  "teeth_that_bite": 8
+ },
+ "L_FINDINGS": {
+  "finding": "5 findings, 0 of which refute a certified number.",
+  "findings": [
+   {
+    "does_it_refute_a_number": false,
+    "id": "FIND-1",
+    "severity": "adopted from the primary, confirmed",
+    "text": "The odd-order clause -- Cycle 886's cheapest non-circular pin for C3 -- admits ['C3_body', 'E_trivial'] once the trivial subgroup enters the census, because the filter Cycle 886 actually coded is `order % 2 == 1` while its demand string said 'greater than 1'. The primary flags this; the checker confirms it independently. Consequence: over the full lattice ZERO of Cycle 886's six menu clauses is both non-circular and isolating as coded."
+   },
+   {
+    "does_it_refute_a_number": false,
+    "id": "FIND-2",
+    "severity": "sharpening",
+    "text": "The primary reports S3's non-uniqueness by exhibiting submodules. The checker shows the stronger statement: the top-degree irreducible submodules of the S3 readout span EXACTLY the 4-dimensional isotypic component and all carry the SAME character. So the ambiguity is exactly a P^1 of isomorphic copies -- the isotypic level is canonical, the irreducible level is not, and no readout with a different pair exists. That is a cleaner statement of the transfer failure than 'the subspace is not unique'."
+   },
+   {
+    "does_it_refute_a_number": false,
+    "id": "FIND-3",
+    "severity": "method note",
+    "text": "A naive minimal-cyclic-submodule decomposition is NOT safe on this lattice: at V_edge the first peeled block is 2-dimensional and reducible, and a checker that trusted it would report fine dimensions [1,1,1,1,2] instead of the correct six 1-dimensional blocks. The checker's own pair-orbit gate caught this before any comparison was made. Any future re-derivation of these signatures should carry the same gate."
+   },
+   {
+    "does_it_refute_a_number": false,
+    "id": "FIND-4",
+    "severity": "scope note",
+    "text": "The MIXED scope-insensitivity verdict is driven by ONE class: S3 defeats C882-T6 under the fine reading and fails under the coarse reading. Every other menu member gives the same answer under both readings at the orbit scope. So the reading-dependence Cycle 886 discovered at C4 reappears at S3 in a load-bearing place: it decides menu membership for the downstream consumer, not just a signature entry."
+   },
+   {
+    "does_it_refute_a_number": false,
+    "id": "FIND-5",
+    "severity": "open",
+    "text": "Neither runner asks whether MULTIPLICITY-FREENESS of the readout -- the property that separates C3 and C4 from S3 -- is quotable from any axiom sentence. It is the smallest clause that would restore SL1's uniqueness at a chosen scope, and it is unpriced. Named here, not answered."
+   }
+  ],
+  "findings_that_refute_a_number": [],
+  "pass": true,
+  "statement": "What the primary should have done and did not, plus what the checker learned that the primary could not."
+ },
+ "M_VERDICT": {
+  "all_teeth_bite": true,
+  "any_certified_number_refuted": false,
+  "certificates_that_refute": [],
+  "finding": "no certificate refutes a computed number; 8 teeth bite.",
+  "overall": "BLOCK SURVIVES INDEPENDENT CHECK",
+  "pass": true,
+  "statement": "The independent check's overall verdict on the Cycle-888 block.",
+  "teeth_that_bite": 8,
+  "verdict_by_certificate": {
+   "B_INDEPENDENT_GROUP": "SURVIVES",
+   "C_INDEPENDENT_LATTICE": "SURVIVES",
+   "D_INDEPENDENT_ISOTYPE": "SURVIVES",
+   "E_INDEPENDENT_SELECTORS": "SURVIVES",
+   "F_INDEPENDENT_REACHABILITY": "SURVIVES",
+   "G_SL1_TRANSFER_ATTACK": "SURVIVES",
+   "H_INDEPENDENT_SCOPE_INSENSITIVITY": "SURVIVES",
+   "I_UPSTREAM_PIN_FIDELITY": "SURVIVES"
+  },
+  "what_survives": "The 30-subgroup / 11-class lattice with the class equation and the Sylow congruences; every signature at both scopes under both readings; all sixteen selector survivor sets over the full lattice AND under the 886 restriction; the reachability survivors under all four rules; the S3 pricing row; the SL1-transfer verdict NUMERICALLY_TRANSFERS_BUT_THE_SUBSPACE_IS_NOT_FORCED; and the MIXED scope-insensitivity verdict with its working sets."
+ }
+}
+
+controls: runtime=33.574s stdout=95349B teeth=8/8 overall=BLOCK SURVIVES INDEPENDENT CHECK

@@ -762,3 +762,43 @@ future selection through. This is a WALL in the directive's sense:
 the exercise protocol runs BEFORE any axiom-ask consideration.
 Exercise launched (read-only generator; route selection stays with
 the supervisor).
+
+## BL4 occurrence-rule exercise (read-only generator) — 2026-08-04
+
+- Protocol followed (refresher surfaces listed; five independent
+  slices; first-hand vs sub-agent citation split disclosed).
+- STRUCTURAL CORRECTION: the wall was misnamed — BL4 splits into O1
+  actuality (ALREADY axiom content via the 2026-07-04 "Records form."
+  append; 878's boundary certificate mis-lists it as open — audit
+  flag), O2 formation rule (open), O3 weight (open).
+- THE FOUR-WAY CONVERGENCE (new horn): IF1, max likelihood, symmetry,
+  and the readout functional all select M1_COUNTING; the interface
+  excludes exactly M1/M2 purely for having no zeros. One of {the
+  interface premises, the weightings-are-occurrence-weights reading}
+  must go.
+- A-SAMPLE named: the 878 space is an ensemble of 748 SETUPS (lanes =
+  initial conditions per the 863 note's own words) — the lane may be
+  answering an initial-condition question, not a Born question. Never
+  in any conditionality chain.
+- Literature: Gleason FAILS over rational fields (Meyer/Godsil-Zaks;
+  CFMR's POVM version survives) — the framework's rationality is not
+  neutral; every corpus derivation derives the FORM given existence.
+- Envariance route: clean negative with exact price (COV-EQV is empty
+  by bijection — stronger than 908; no label-permutation symmetry can
+  be transitive; covariance = 0.737% of dimensions).
+- AXIOM-SHAPE VERDICT: NOT YET DEMONSTRATED — 12-item must-fail-first
+  list; the repo's own named closing channel (A3 from the readout
+  sentences) never run; the orphaned envariance note (Born form
+  modulo admission A3, PASS=44) exists only in git history; the
+  "Records form." certification is audited_failed with both
+  defeating refutations unproved.
+- WORKING-RECORD CORRECTIONS adopted: the Koide Class B adoption was
+  WITHDRAWN 2026-07-11 (memory fixed); 906's sweep was 4 docs not
+  corpus; the one-site Born chain has no working foundation
+  (audited_failed rows); 909's empirical half has unmeasured
+  evidential weight (cheap decisive artifact named).
+- SUPERVISOR ROUTE SELECTION: Cycle 911 = Routes 1+4+2 (type,
+  vacuity, consistency — the trap-escaping routes) + the O1
+  correction; Cycle 912 = Route 3 + the A3 channel (the never-run
+  closer) + the envariance-note recovery + the 613 residue-vector
+  count. Measure-selection routes NOT pursued (provably trapped).

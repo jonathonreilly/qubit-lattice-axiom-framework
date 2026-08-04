@@ -1,0 +1,177 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle897_target_integrity_2026_07_28.py
+runner_sha256: 01c8e95bf73408f9f3fb2386b93f3281ef3a2d948a26e772a1cdce91cf159cec
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 6.04
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 897 -- TARGET INTEGRITY: Q = 2/3 VERSUS delta = 2/9
+==============================================================================
+
+[PASS] A_PINS
+       finding: All 15 pinned artifacts matched sha256 and git blob, all 19
+       verbatim needles resolved, and the import firewall recorded 0 hits.
+
+[PASS] B_INTERVAL_KERNEL
+       finding: All 23 interval-kernel self-tests passed; every bound is verified
+       in exact rational arithmetic and the window guard fires on out-of-range
+       arguments.
+
+[PASS] C_ADMITTED_OBSERVATIONS
+       finding: 3 admitted observations declared in a single quarantined block
+       with exact rational values, exact sigmas and source strings; C2/C3/C4 are
+       empirically clean.
+
+[PASS] D_RESTRICTION_GATE
+       finding: All 9 restriction gates passed: 882's primary sweep replays to 42
+       libraries with the identity in every one and zero unique selections, 882's
+       checker sweep replays to 200, and 883's certificate M replays to 5 of 7
+       forms returning 2/9.
+
+[PASS] E_PARAMETERIZATION_C1
+       finding: The retained parameterization is rebuilt symbolically with delta
+       free; Q(c) = 1/3 + c^2/6 exactly, so Q = 2/3 iff c^2 = 2. The exercise's
+       coefficient 2 yields Q = 1 and is refuted.
+
+[PASS] F_TARGET_INTEGRITY_FORK_C1
+       finding: Both directions of the fork land INCOMPATIBLE at several hundred
+       sigma; the tau row lands COMPATIBLE inside one sigma, which is exactly
+       where the framework's Q = 2/3 has been hiding.
+
+[PASS] G_FALSIFIER_VISIBILITY
+       finding: The synthetic compatible world returns COMPATIBLE in both
+       directions through the identical pipeline, and a world displaced by 1e-3
+       MeV returns INCOMPATIBLE-AT-SIGMA-428. The verdict function is
+       demonstrably two-sided.
+
+[PASS] H_FAMILY_CENSUS_C2
+       finding: All three families return 2/9 at N = 3; the three pairwise
+       agreement sets are exactly {-4, 1, 3}, {-1, 1, 3} and {1, 3} as claimed,
+       verified by exact rational-root factorisation of the cleared numerators
+       and cross-checked by direct evaluation; the N = 4 discriminator separates
+       all three.
+
+[PASS] I_GREEN_IDENTIFICATIONS_C2
+       finding: Both Green functions were rebuilt exactly from Laplacian
+       pseudoinverses and match their closed forms on every N tested (11
+       complete-graph rows, 10 cycle rows); the N = 3 coincidence is the identity
+       K_3 = C_3.
+
+[PASS] J_883_RECOUNT_C2
+       finding: 5 of 7 closed forms return 2/9, confirming the runner's computed
+       row and contradicting the prose count of four in both the landed note and
+       the runner docstring.
+
+[PASS] K_T7_PREMISE_REPAIR_C3
+       finding: T7's identity premise is a design consequence of symmetric and
+       nonnegative exponent windows. Re-run over strictly positive windows, 264
+       of 276 libraries are identity-free and 3 uniquely select the target; the
+       wall is confined to identity-containing libraries.
+
+[PASS] L_ONE_EXCLUSION_CENSUS_C3
+       finding: 103 of 106 declared rational families that return 2/9 at N = 3
+       never take the value 1 (97.16%), so 1-exclusion is nearly free; but that
+       bears on functional binding, not on library selection.
+
+[PASS] M_CONJUGATE_PAIR_DISCHARGE_C4
+       finding: All 8 order-3 proper cubic rotations have characteristic
+       polynomial x^3 - 1 with transverse factor x^2 + x + 1 of discriminant -3;
+       the transverse weight pair is forced conjugate and (1,1) is impossible
+       over R.
+
+[PASS] N_NO_ORIENTATION_LEMMA_C4
+       finding: The normalizer has order 6 with element orders [1, 2, 2, 2, 3, 3]
+       (S3, not Z6), 3 of them inverting the generator; the Sylow cross-check
+       gives 4 conjugate C3 subgroups at index 4.
+
+[PASS] O_CONTROLS
+       finding: 8 of 8 controls held.
+
+------------------------------------------------------------------------------
+C1  THE TARGET-INTEGRITY FORK
+------------------------------------------------------------------------------
+  retained form   : sqrt(m_k) = v_0 (1 + sqrt(2) cos(delta + 2 pi k / 3))
+  exercise's form : sqrt(m_k) = sqrt(M) (1 + 2 cos(delta + 2 pi k / 3))   <-- REFUTED (gives Q = 1)
+  Q(c)            = 1/3 + c^2/6   ==>   Q = 2/3  iff  c^2 = 2
+
+  (a) delta from (m_e, m_mu) at Q = 2/3
+      enclosure   : [0.222222047073817229, 0.222222047073817230]
+      2/9         : 0.222222222222222222
+      |offset|    : [0.0000001751484049929930, 0.0000001751484049929931]
+      sigma(delta): [0.0000000003933014260016, 0.0000000003933014260017]
+      n_sigma     : [445.328680, 445.328681]
+      VERDICT     : INCOMPATIBLE-AT-SIGMA-445
+
+  (b) m_mu from delta = 2/9 at Q = 2/3
+      implied m_mu: [105.65941449590446, 105.65941449590447] MeV
+      admitted    : 105.6583755000 +/- 0.0000023000 MeV
+      n_sigma     : [451.690624, 451.690625]
+      VERDICT     : INCOMPATIBLE-AT-SIGMA-451
+      implied m_tau at 2/9: [1776.9849708134, 1776.9849708135] MeV
+
+  (c) tau consistency row
+      implied m_tau: [1776.9690272931, 1776.9690272932] MeV
+      admitted     : 1776.9300 +/- 0.0900 MeV
+      n_sigma      : [0.433636, 0.433637]
+      VERDICT      : COMPATIBLE
+
+  delta forced by (m_e, m_mu) at Q = 2/3 is [0.222222047073817229,
+  0.222222047073817230], which sits 445.328680 sigma below 2/9. Verdict
+  INCOMPATIBLE-AT-SIGMA-445. In reverse, delta = 2/9 forces m_mu =
+  [105.65941449590446, 105.65941449590447] MeV against an admitted
+  105.6583755000 +/- 0.0000023000: 451.690624 sigma. The tau row is
+  COMPATIBLE at 0.433637 sigma.
+
+------------------------------------------------------------------------------
+C2  N = 3 DEGENERACY CENSUS
+------------------------------------------------------------------------------
+  F_dim(N) = (N-1)/N^2          N=3: 2/9    N=4: 3/16
+  F_res(N) = (N^2-1)/(12N)      N=3: 2/9    N=4: 5/16
+  F_ded(N) = (N-1)(N-2)/(3N)    N=3: 2/9    N=4: 1/2
+  F_dim = F_res    -> {-4, 1, 3}   claimed {-4, 1, 3}  match=True
+  F_dim = F_ded    -> {-1, 1, 3}   claimed {-1, 1, 3}  match=True
+  F_res = F_ded    -> {1, 3}   claimed {1, 3}  match=True
+  K_3 and C_3 are the SAME graph (adjacency matrices identical: True); K_4
+  and C_4 are not (True). The agreement of F_dim and F_res at N = 3 is
+  therefore not numerology but the triangle being simultaneously the
+  complete graph and the cycle. It is exactly this that makes 2/9 reachable
+  from two unrelated readings, and exactly this that fails at every other N.
+
+------------------------------------------------------------------------------
+C3  T7 PREMISE REPAIR
+------------------------------------------------------------------------------
+  libraries (strictly positive windows) : 276
+  identity-free                          : 264
+  reaching the target                    : 5
+  uniquely selecting (882 checker pred)  : 3
+  uniquely selecting (882 primary pred)  : 0
+  WHAT THE WALL ACTUALLY COVERS: multiplicatively closed anchor libraries
+  that CONTAIN THE IDENTITY (monoids). On those the argument is sound -- 1
+  in the library forces alpha = 1/3 into the survivor set alongside the
+  target, so no monoid selects. WHAT IT NEVER COVERED: identity-free
+  multiplicative semigroups. The enumeration could not produce one, and the
+  checker scored their absence as a PASS. DOES THE FAILURE PERSIST THERE?
+  NO. Of 276 strictly-positive-exponent libraries, 264 are identity-free, 5
+  reach the target and 3 uniquely select it. The cyclic semigroup <2/9>
+  selects on its own. So the T7 sentence 'every multiplicatively closed
+  anchor library contains 1' is FALSE as a general statement and true only
+  of the enumerated monoid family; the wall terminates the monoid subclass,
+  not the route class.
+
+------------------------------------------------------------------------------
+C4  DISCHARGES
+------------------------------------------------------------------------------
+  The open import was the assumption that the transverse weight pairing on
+  the C3-invariant 2-plane is conjugate. It is not an import: it is forced
+  by realness of the rotation, computed here for all 8 order-3 elements of
+  the proper cubic rotation group.
+  N_G(C3) = S3 of order 6 inside the 24 proper cubic rotations, and 3 of its
+  6 elements send the generator P to P^2 = P^{-1}. The Lattice axiom
+  supplies the whole rotation group, so it supplies these inverting elements
+  too. There is therefore NO axiom-level distinction between the generator
+  and its inverse: the axioms supply no orientation of a free C3 orbit.
+
+receipt: outputs/target_integrity_cycle897_receipt_2026_07_28.json
+all_pass: True   determinism: True   elapsed: 5s

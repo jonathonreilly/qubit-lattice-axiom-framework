@@ -1,0 +1,1932 @@
+{
+ "all_pass": true,
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec; supervisor review",
+ "block": "toe-time-blockG20-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "A_PINS": true,
+  "B_INTERVAL_KERNEL": true,
+  "C1_fork": true,
+  "C2_883_recount": true,
+  "C2_family_census": true,
+  "C2_green_identifications": true,
+  "C3_one_exclusion_census": true,
+  "C3_t7_repair": true,
+  "C4_conjugate_pair": true,
+  "C4_no_orientation": true,
+  "C_ADMITTED_OBSERVATIONS": true,
+  "D_RESTRICTION_GATE": true,
+  "E_PARAMETERIZATION": true,
+  "F_FALSIFIER_VISIBILITY": true,
+  "O_CONTROLS": true
+ },
+ "claim_type": "bounded_theorem",
+ "cycle": 897,
+ "deterministic_double_build": true,
+ "empirical_inputs": "three declared admitted observations (PDG/CODATA lepton masses); no other empirical content",
+ "headline": "delta forced by (m_e, m_mu) at Q = 2/3 is [0.222222047073817229, 0.222222047073817230], which sits 445.328680 sigma below 2/9. Verdict INCOMPATIBLE-AT-SIGMA-445. In reverse, delta = 2/9 forces m_mu = [105.65941449590446, 105.65941449590447] MeV against an admitted 105.6583755000 +/- 0.0000023000: 451.690624 sigma. The tau row is COMPATIBLE at 0.433637 sigma.",
+ "runtime_seconds": 5,
+ "science": {
+  "A_PINS": {
+   "consumption_mode": "TEXT / AST / JSON only; no pinned primary imported",
+   "finding": "All 15 pinned artifacts matched sha256 and git blob, all 19 verbatim needles resolved, and the import firewall recorded 0 hits.",
+   "import_firewall_gate": true,
+   "import_firewall_hits": [],
+   "needle_count": 19,
+   "needles": [
+    {
+     "found": true,
+     "needle": "\u221am_k = v_0 (1 + \u221a2 cos(\u03b4 + 2\u03c0k/3))",
+     "path": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md"
+    },
+    {
+     "found": true,
+     "needle": "**Q = 2/3 is an exact algebraic consequence, independent of \u03b4.**",
+     "path": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md"
+    },
+    {
+     "found": true,
+     "needle": "\u03a3_k cos(\u03b4 + 2\u03c0k/3) = 0",
+     "path": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md"
+    },
+    {
+     "found": true,
+     "needle": "\u03a3_k cos\u00b2(\u03b4 + 2\u03c0k/3) = 3/2",
+     "path": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md"
+    },
+    {
+     "found": true,
+     "needle": "then the same target gives `delta = 2/9`.",
+     "path": "docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md"
+    },
+    {
+     "found": true,
+     "needle": "c^2 = 2",
+     "path": "docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md"
+    },
+    {
+     "found": true,
+     "needle": "Q = 2/3 IS an algebraic identity of the Brannen/Rivero",
+     "path": "docs/KOIDE_CLOSURE_ATLAS_ISSUES_FLAGGED.md"
+    },
+    {
+     "found": true,
+     "needle": "every multiplicatively closed anchor library",
+     "path": "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    },
+    {
+     "found": true,
+     "needle": "200 libraries searched (groups and",
+     "path": "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    },
+    {
+     "found": true,
+     "needle": "Across 42 enumerated multiplicative anchor libraries",
+     "path": "logs/runner-cache/frontier_cycle882_readout_identity_2026_07_28.txt"
+    },
+    {
+     "found": true,
+     "needle": "200 anchor libraries searched across five generators",
+     "path": "logs/runner-cache/frontier_cycle882_readout_independent_check_2026_07_28.txt"
+    },
+    {
+     "found": true,
+     "needle": "four distinct closed forms in (1, 2, 3) return 2/9",
+     "path": "docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    },
+    {
+     "found": true,
+     "needle": "priced and found NOT forced: four distinct",
+     "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
+    },
+    {
+     "found": true,
+     "needle": "closed forms in `(1, 2, 3)` return `2/9`.",
+     "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
+    },
+    {
+     "found": true,
+     "needle": "5 of the 7 enumerated closed forms in the derived data return 2/9",
+     "path": "logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt"
+    },
+    {
+     "found": true,
+     "needle": "else range(0, w + 1))",
+     "path": "scripts/frontier_cycle882_readout_independent_check_2026_07_28.py"
+    },
+    {
+     "found": true,
+     "needle": "semigroup with nonnegative ",
+     "path": "scripts/frontier_cycle882_readout_independent_check_2026_07_28.py"
+    },
+    {
+     "found": true,
+     "needle": "The K/CPT orbit map acts on the dial by `delta -> -delta`.",
+     "path": "docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md"
+    },
+    {
+     "found": true,
+     "needle": "proper cubic rotations about each site",
+     "path": "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    }
+   ],
+   "pass": true,
+   "pin_count": 15,
+   "pins": [
+    {
+     "git_blob_expected": "5a94535a9cd7e4a5ec2da7ef87e329b5056c5926",
+     "git_blob_observed": "5a94535a9cd7e4a5ec2da7ef87e329b5056c5926",
+     "match": true,
+     "path": "docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md",
+     "sha256_expected": "4c94f980c0e320bccfab5ae179a23808e13dfe6b6113ff44f8dfbbaca49901f7",
+     "sha256_observed": "4c94f980c0e320bccfab5ae179a23808e13dfe6b6113ff44f8dfbbaca49901f7"
+    },
+    {
+     "git_blob_expected": "73d60b2b9321038c5740298e2e6eef99834c43c7",
+     "git_blob_observed": "73d60b2b9321038c5740298e2e6eef99834c43c7",
+     "match": true,
+     "path": "docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md",
+     "sha256_expected": "8b90720698c26d9ae4a4a0990498cedf408e4b9c6b1b5a41ebea41c249d248ba",
+     "sha256_observed": "8b90720698c26d9ae4a4a0990498cedf408e4b9c6b1b5a41ebea41c249d248ba"
+    },
+    {
+     "git_blob_expected": "6f2fda9efe346a48302f2aef0c3455d9a2834c3e",
+     "git_blob_observed": "6f2fda9efe346a48302f2aef0c3455d9a2834c3e",
+     "match": true,
+     "path": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md",
+     "sha256_expected": "6cfb1c34e9c77e5979d78a2d03718eb970b00bf7a26866c719ba812ce3a82722",
+     "sha256_observed": "6cfb1c34e9c77e5979d78a2d03718eb970b00bf7a26866c719ba812ce3a82722"
+    },
+    {
+     "git_blob_expected": "8a67fa967e0d669125cbb88b68948c565761a7bc",
+     "git_blob_observed": "8a67fa967e0d669125cbb88b68948c565761a7bc",
+     "match": true,
+     "path": "docs/KOIDE_CLOSURE_ATLAS_ISSUES_FLAGGED.md",
+     "sha256_expected": "747172c1bbcd855f7373e147cd49960bed53904a8956da0978fe58f485535aa9",
+     "sha256_observed": "747172c1bbcd855f7373e147cd49960bed53904a8956da0978fe58f485535aa9"
+    },
+    {
+     "git_blob_expected": "4a863da1f3f255354839277271a3a69a5c205133",
+     "git_blob_observed": "4a863da1f3f255354839277271a3a69a5c205133",
+     "match": true,
+     "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "sha256_expected": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+     "sha256_observed": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+     "git_blob_expected": "75d64abf2a4f5cc671e37ad271680c6e5c0f9ce1",
+     "git_blob_observed": "75d64abf2a4f5cc671e37ad271680c6e5c0f9ce1",
+     "match": true,
+     "path": "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "sha256_expected": "692a3ad36def7242845576b88b48ef1c44b7e9a11e97873952cb93f28729ffa5",
+     "sha256_observed": "692a3ad36def7242845576b88b48ef1c44b7e9a11e97873952cb93f28729ffa5"
+    },
+    {
+     "git_blob_expected": "fd5c708967c03fced5ff349b9636164861cd1c04",
+     "git_blob_observed": "fd5c708967c03fced5ff349b9636164861cd1c04",
+     "match": true,
+     "path": "docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "sha256_expected": "d2f6544cbe9c4022a41b149e874b2507d0e59d3c5bf793b6c14941455b9c9b0f",
+     "sha256_observed": "d2f6544cbe9c4022a41b149e874b2507d0e59d3c5bf793b6c14941455b9c9b0f"
+    },
+    {
+     "git_blob_expected": "b22293b74ae8a0670e796f337a62a53a2f21fefb",
+     "git_blob_observed": "b22293b74ae8a0670e796f337a62a53a2f21fefb",
+     "match": true,
+     "path": "logs/runner-cache/frontier_cycle882_readout_identity_2026_07_28.txt",
+     "sha256_expected": "7f485527189864c79d927376c686a4cab5d3ad25551b16283851a9acc5a9462d",
+     "sha256_observed": "7f485527189864c79d927376c686a4cab5d3ad25551b16283851a9acc5a9462d"
+    },
+    {
+     "git_blob_expected": "c724555ccf6e825673e3fcc51091eef7791f7cc9",
+     "git_blob_observed": "c724555ccf6e825673e3fcc51091eef7791f7cc9",
+     "match": true,
+     "path": "logs/runner-cache/frontier_cycle882_readout_independent_check_2026_07_28.txt",
+     "sha256_expected": "8248b6a3de5c6a70fd137e13dfc73662aa9bc72c87c3532c5170d4f9c71c64da",
+     "sha256_observed": "8248b6a3de5c6a70fd137e13dfc73662aa9bc72c87c3532c5170d4f9c71c64da"
+    },
+    {
+     "git_blob_expected": "6f085fc042330dae1d3eec8540a2942b1a3cf32f",
+     "git_blob_observed": "6f085fc042330dae1d3eec8540a2942b1a3cf32f",
+     "match": true,
+     "path": "logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt",
+     "sha256_expected": "560f368d9d23144cb23a93e72a398d92f6fcb536c3363179b7853c09615211bb",
+     "sha256_observed": "560f368d9d23144cb23a93e72a398d92f6fcb536c3363179b7853c09615211bb"
+    },
+    {
+     "git_blob_expected": "9d70fdf701b3ad9619d7dffd4425fadd88eedbeb",
+     "git_blob_observed": "9d70fdf701b3ad9619d7dffd4425fadd88eedbeb",
+     "match": true,
+     "path": "outputs/readout_identity_cycle882_receipt_2026_07_28.json",
+     "sha256_expected": "85657e5afc72c510f3f9b8d631a282d6a2af0f04aecce257c5b4b59a915ccf31",
+     "sha256_observed": "85657e5afc72c510f3f9b8d631a282d6a2af0f04aecce257c5b4b59a915ccf31"
+    },
+    {
+     "git_blob_expected": "d4290cbe8cfedf965fad828dc673e8fee2e75cd5",
+     "git_blob_observed": "d4290cbe8cfedf965fad828dc673e8fee2e75cd5",
+     "match": true,
+     "path": "outputs/record_weight_pair_cycle883_receipt_2026_07_28.json",
+     "sha256_expected": "973d18d9aa2e05a2decac79ddd8a6f245d923e9a94d772baf80869228ca27d60",
+     "sha256_observed": "973d18d9aa2e05a2decac79ddd8a6f245d923e9a94d772baf80869228ca27d60"
+    },
+    {
+     "git_blob_expected": "c13380757eae27bdee05bc0d4be65a40c2865585",
+     "git_blob_observed": "c13380757eae27bdee05bc0d4be65a40c2865585",
+     "match": true,
+     "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+     "sha256_expected": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a",
+     "sha256_observed": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a"
+    },
+    {
+     "git_blob_expected": "0b602b1c5b5301d8a939515b39e0cf55f8e5fada",
+     "git_blob_observed": "0b602b1c5b5301d8a939515b39e0cf55f8e5fada",
+     "match": true,
+     "path": "scripts/frontier_cycle882_readout_independent_check_2026_07_28.py",
+     "sha256_expected": "bdc617b8e70d6a1cc9c808009faf9ace1022d59e7b7ae3b029d7a3dbca30ea49",
+     "sha256_observed": "bdc617b8e70d6a1cc9c808009faf9ace1022d59e7b7ae3b029d7a3dbca30ea49"
+    },
+    {
+     "git_blob_expected": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+     "git_blob_observed": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+     "match": true,
+     "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+     "sha256_expected": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c",
+     "sha256_observed": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c"
+    }
+   ]
+  },
+  "B_INTERVAL_KERNEL": {
+   "checks": [
+    {
+     "ok": true,
+     "test": "sqrt(2) bracket squares back"
+    },
+    {
+     "ok": true,
+     "test": "sqrt(3) bracket squares back"
+    },
+    {
+     "ok": true,
+     "test": "sqrt(6) bracket squares back"
+    },
+    {
+     "ok": true,
+     "test": "sqrt(206768283/1000) bracket squares back"
+    },
+    {
+     "ok": true,
+     "test": "sqrt(1) bracket squares back"
+    },
+    {
+     "ok": true,
+     "test": "sqrt(0) bracket squares back"
+    },
+    {
+     "ok": true,
+     "test": "sqrt(2)^2 encloses 2"
+    },
+    {
+     "ok": true,
+     "test": "sin^2+cos^2 at x=0 encloses 1"
+    },
+    {
+     "ok": true,
+     "test": "sin^2+cos^2 at x=1/5 encloses 1"
+    },
+    {
+     "ok": true,
+     "test": "sin^2+cos^2 at x=2/9 encloses 1"
+    },
+    {
+     "ok": true,
+     "test": "sin^2+cos^2 at x=1/2 encloses 1"
+    },
+    {
+     "ok": true,
+     "test": "sin^2+cos^2 at x=9/10 encloses 1"
+    },
+    {
+     "ok": true,
+     "test": "sin^2+cos^2 at x=1 encloses 1"
+    },
+    {
+     "ok": true,
+     "test": "cos(2x) vs 1-2sin^2 x at x=1/8 intervals intersect"
+    },
+    {
+     "ok": true,
+     "test": "cos(2x) vs 1-2sin^2 x at x=2/9 intervals intersect"
+    },
+    {
+     "ok": true,
+     "test": "cos(2x) vs 1-2sin^2 x at x=1/3 intervals intersect"
+    },
+    {
+     "ok": true,
+     "test": "cos(2x) vs 1-2sin^2 x at x=1/2 intervals intersect"
+    },
+    {
+     "ok": true,
+     "test": "sin lower bound at x=1 is positive (5/6)"
+    },
+    {
+     "ok": true,
+     "test": "cos lower bound at x=1 is positive (1/2)"
+    },
+    {
+     "ok": true,
+     "test": "cos decreasing: cos(2/9) > cos(1/3)"
+    },
+    {
+     "ok": true,
+     "test": "sin increasing: sin(2/9) < sin(1/3)"
+    },
+    {
+     "ok": true,
+     "test": "kernel emits no float"
+    },
+    {
+     "ok": true,
+     "test": "window guard rejects |x| > 1"
+    }
+   ],
+   "finding": "All 23 interval-kernel self-tests passed; every bound is verified in exact rational arithmetic and the window guard fires on out-of-range arguments.",
+   "pass": true,
+   "series_terms": 22,
+   "sqrt_digits": 60,
+   "sqrt_method": "exact integer-sqrt bracketing, re-verified by squaring",
+   "trig_method": "alternating Taylor series with the decreasing-term hypothesis asserted at the truncation index",
+   "window": "[0, 1]; monotone endpoint evaluation proved on that window"
+  },
+  "C1_fork": {
+   "HEADLINE": "delta forced by (m_e, m_mu) at Q = 2/3 is [0.222222047073817229, 0.222222047073817230], which sits 445.328680 sigma below 2/9. Verdict INCOMPATIBLE-AT-SIGMA-445. In reverse, delta = 2/9 forces m_mu = [105.65941449590446, 105.65941449590447] MeV against an admitted 105.6583755000 +/- 0.0000023000: 451.690624 sigma. The tau row is COMPATIBLE at 0.433637 sigma.",
+   "exercise_claims_adjudicated": {
+    "certified_delta_sigma": [
+     "445.328680",
+     "445.328681"
+    ],
+    "certified_m_mu_sigma": [
+     "451.690624",
+     "451.690625"
+    ],
+    "claimed_delta_sigma": "~446",
+    "claimed_iff": "Q = 2/3 exactly IFF the parameterization holds",
+    "claimed_m_mu_sigma": "~452",
+    "claimed_parameterization": "1 + 2 cos(delta + 2 pi k / 3)",
+    "delta_claim_status": "CERTIFIED (correct to the stated precision)",
+    "iff_status": "CORRECTED -- Q = 2/3 is an identity in delta once c = sqrt(2); the 'iff' is between Q = 2/3 and c^2 = 2, not between Q = 2/3 and any statement about delta",
+    "m_mu_claim_status": "CERTIFIED (correct to the stated precision)",
+    "parameterization_status": "REFUTED -- the retained coefficient is sqrt(2); at c = 2 the parameterization gives Q = 1, not 2/3"
+   },
+   "finding": "Both directions of the fork land INCOMPATIBLE at several hundred sigma; the tau row lands COMPATIBLE inside one sigma, which is exactly where the framework's Q = 2/3 has been hiding.",
+   "fork_a_forward": {
+    "R_central_enclosure": "[14.37943958255909, 14.37943958255910]",
+    "abs_offset_enclosure": [
+     "0.0000001751484049929930",
+     "0.0000001751484049929931"
+    ],
+    "delta_central_enclosure": "[0.222222047073817229, 0.222222047073817230]",
+    "delta_enclosure_width": "0.0000000000000000000000000000000000385186",
+    "delta_minus_1sigma_enclosure": "[0.222222046680515797, 0.222222046680515798]",
+    "delta_plus_1sigma_enclosure": "[0.222222047467118649, 0.222222047467118650]",
+    "direction": "forward: (m_e, m_mu) + Q=2/3  ==>  delta",
+    "label": "PDG/CODATA (e, mu)",
+    "n_sigma_enclosure": [
+     "445.328680",
+     "445.328681"
+    ],
+    "proof_obligations": {
+     "P1_lambda1_strictly_positive": true,
+     "P2_H_strictly_monotone": true,
+     "P3_sign_change_on_bracket": true,
+     "bisection_steps": 110,
+     "lambda1_range_on_bracket": "[0.00398154, 0.07155622]"
+    },
+    "rule": "|n_sigma| lower bound 445.328680 > 3",
+    "sigma_delta_enclosure": [
+     "0.0000000003933014260016",
+     "0.0000000003933014260017"
+    ],
+    "signed_offset_decimal": "-0.000000175148404992",
+    "two_ninths": "0.222222222222222222",
+    "verdict": "INCOMPATIBLE-AT-SIGMA-445"
+   },
+   "fork_b_reverse": {
+    "abs_offset_enclosure": [
+     "0.0010389959044642",
+     "0.0010389959044643"
+    ],
+    "direction": "reverse: Q=2/3 AND delta=2/9 exactly  ==>  m_mu, m_tau",
+    "label": "PDG/CODATA (e, mu)",
+    "lambda_e_enclosure": "[0.040349908219207373, 0.040349908219207374]",
+    "lambda_mu_enclosure": "[0.580211920147537214, 0.580211920147537215]",
+    "lambda_tau_enclosure": "[2.379438171633255411, 2.379438171633255412]",
+    "m_mu_admitted": "105.6583755000",
+    "m_mu_implied_band_from_electron_sigma": "[105.65941446282121, 105.65941452898772]",
+    "m_mu_implied_enclosure": "[105.65941449590446, 105.65941449590447]",
+    "m_mu_sigma": "0.0000023000",
+    "m_tau_implied_enclosure": "[1776.9849708134, 1776.9849708135]",
+    "n_sigma_enclosure": [
+     "451.690624",
+     "451.690625"
+    ],
+    "rule": "|n_sigma| lower bound 451.690624 > 3",
+    "sigma_propagation": {
+     "conservative_linear_sigma": "0.0000023330832506",
+     "electron_contribution": "0.0000000330832506",
+     "method": "quadrature: sqrt(sigma_mu^2 + (dm_mu/dm_e * sigma_e)^2)",
+     "n_sigma_under_conservative_linear_sigma": "445.331688",
+     "sigma_used_enclosure": "[0.0000023002379227, 0.0000023002379228]"
+    },
+    "verdict": "INCOMPATIBLE-AT-SIGMA-451"
+   },
+   "fork_b_tau_row": {
+    "direction": "reverse row: delta = 2/9 exactly ==> m_tau",
+    "m_tau_implied_enclosure": "[1776.9849708134, 1776.9849708135]",
+    "n_sigma_enclosure": [
+     "0.610786",
+     "0.610787"
+    ],
+    "rule": "|n_sigma| upper bound 0.610787 <= 3",
+    "verdict": "COMPATIBLE"
+   },
+   "fork_c_tau_row": {
+    "abs_offset_enclosure": [
+     "0.0390272931",
+     "0.0390272932"
+    ],
+    "delta_used_enclosure": "[0.222222047073817229, 0.222222047073817230]",
+    "direction": "tau consistency: (m_e, m_mu) + Q=2/3  ==>  m_tau",
+    "m_tau_admitted": "1776.9300",
+    "m_tau_implied_band_from_electron_sigma": "[1776.9689797718, 1776.9690748145]",
+    "m_tau_implied_enclosure": "[1776.9690272931, 1776.9690272932]",
+    "m_tau_sigma": "0.0900",
+    "n_sigma_enclosure": [
+     "0.433636",
+     "0.433637"
+    ],
+    "rule": "|n_sigma| upper bound 0.433637 <= 3",
+    "sigma_used_enclosure": "[0.0900000125, 0.0900000126]",
+    "verdict": "COMPATIBLE",
+    "why_this_row_matters": "sigma(m_tau)/m_tau is about 5.1e-5 while sigma(m_mu)/m_mu is about 2.2e-8 -- three and a half orders of magnitude looser. The tau row is therefore where a Q = 2/3 claim can sit undisturbed, and it does: the same delta that misses 2/9 by hundreds of sigma lands the tau mass well inside one sigma."
+   },
+   "pass": true
+  },
+  "C2_883_recount": {
+   "DISCREPANCY": "The Cycle-883 prose says FOUR closed forms return 2/9; the runner enumerates SEVEN and its own computed row says FIVE. The recount from the pinned primary by AST confirms FIVE of SEVEN. The prose undercounts by one in both the landed note and the runner docstring, while the machine-verified certificate body, the cache line and the receipt-facing 'remaining_discrete_choice' all carry five. Direction of the error: the prose UNDERSTATES the binding ambiguity, so the correction makes SL1b harder, not easier.",
+   "computed_row_in_the_runner_cache": {
+    "count": 5,
+    "present": true,
+    "text": "5 of the 7 enumerated closed forms in the derived data return 2/9"
+   },
+   "finding": "5 of 7 closed forms return 2/9, confirming the runner's computed row and contradicting the prose count of four in both the landed note and the runner docstring.",
+   "forms_enumerated": 7,
+   "forms_not_returning_2/9": [
+    "w0 / n",
+    "(w0 + w1) / n^2"
+   ],
+   "forms_returning_2/9": 5,
+   "pass": true,
+   "prose_claim_in_the_landed_note": {
+    "count": 4,
+    "present": true,
+    "text": "four distinct closed forms in (1, 2, 3) return 2/9"
+   },
+   "prose_claim_in_the_runner_docstring": {
+    "count": 4,
+    "present": true,
+    "text": "priced and found NOT forced: four distinct\n    closed forms in `(1, 2, 3)` return `2/9`."
+   },
+   "recount_from_the_pinned_primary_by_AST": [
+    {
+     "name": "w1 / (w0 + w1)^2",
+     "returns_2/9": true,
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "name": "w0 * w1 / n^2",
+     "returns_2/9": true,
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "name": "w1 / n^2",
+     "returns_2/9": true,
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "name": "(n - 1) / n^2",
+     "returns_2/9": true,
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "name": "w1 / (w0 * n^2)",
+     "returns_2/9": true,
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "name": "w0 / n",
+     "returns_2/9": false,
+     "value_at_(1,2,3)": "1/3"
+    },
+    {
+     "name": "(w0 + w1) / n^2",
+     "returns_2/9": false,
+     "value_at_(1,2,3)": "1/3"
+    }
+   ],
+   "two_forms_that_miss": "w0/n = 1/3 and (w0+w1)/n^2 = 1/3 -- both land on 1/3, which is precisely the value the C882-T7 identity obstruction says the unit anchor pins."
+  },
+  "C2_family_census": {
+   "CONSEQUENCE": "The three families agree at N = 3 and nowhere else in common: the only N shared by all three pairwise agreement sets other than the degenerate N = 1 is N = 3. So 883's isotype-dimension datum ((N-1)/N^2 at N = 3) and the retained anchor arithmetic ((N^2-1)/(12N) at N = 3) sit on DIFFERENT one-parameter families that intersect only at the pinned scope. Reading 2/9 off one of them tells you nothing about the other away from N = 3, and the N = 4 row separates them by 3/16 versus 5/16.",
+   "direct_evaluation_grid": [
+    {
+     "F_ded": "-5/2",
+     "F_dim": "-5/16",
+     "F_res": "-5/16",
+     "N": -4,
+     "dim==ded": false,
+     "dim==res": true,
+     "res==ded": false
+    },
+    {
+     "F_ded": "-2",
+     "F_dim": "-2",
+     "F_res": "0",
+     "N": -1,
+     "dim==ded": true,
+     "dim==res": false,
+     "res==ded": false
+    },
+    {
+     "F_ded": "0",
+     "F_dim": "0",
+     "F_res": "0",
+     "N": 1,
+     "dim==ded": true,
+     "dim==res": true,
+     "res==ded": true
+    },
+    {
+     "F_ded": "0",
+     "F_dim": "1/4",
+     "F_res": "1/8",
+     "N": 2,
+     "dim==ded": false,
+     "dim==res": false,
+     "res==ded": false
+    },
+    {
+     "F_ded": "2/9",
+     "F_dim": "2/9",
+     "F_res": "2/9",
+     "N": 3,
+     "dim==ded": true,
+     "dim==res": true,
+     "res==ded": true
+    },
+    {
+     "F_ded": "1/2",
+     "F_dim": "3/16",
+     "F_res": "5/16",
+     "N": 4,
+     "dim==ded": false,
+     "dim==res": false,
+     "res==ded": false
+    },
+    {
+     "F_ded": "4/5",
+     "F_dim": "4/25",
+     "F_res": "2/5",
+     "N": 5,
+     "dim==ded": false,
+     "dim==res": false,
+     "res==ded": false
+    }
+   ],
+   "discriminator_row_at_N=4": {
+    "F_ded(4)": "1/2",
+    "F_dim(4)": "3/16",
+    "F_res(4)": "5/16",
+    "all_distinct": true,
+    "claimed": {
+     "F_ded(4)": "1/2",
+     "F_dim(4)": "3/16",
+     "F_res(4)": "5/16"
+    },
+    "match": true
+   },
+   "family_table": [
+    {
+     "family": "F_dim(N) = (N-1)/N^2",
+     "hits_2/9_at_N=3": true,
+     "value_at_N=3": "2/9",
+     "value_at_N=4": "3/16"
+    },
+    {
+     "family": "F_res(N) = (N^2-1)/(12N)",
+     "hits_2/9_at_N=3": true,
+     "value_at_N=3": "2/9",
+     "value_at_N=4": "5/16"
+    },
+    {
+     "family": "F_ded(N) = (N-1)(N-2)/(3N)",
+     "hits_2/9_at_N=3": true,
+     "value_at_N=3": "2/9",
+     "value_at_N=4": "1/2"
+    }
+   ],
+   "finding": "All three families return 2/9 at N = 3; the three pairwise agreement sets are exactly {-4, 1, 3}, {-1, 1, 3} and {1, 3} as claimed, verified by exact rational-root factorisation of the cleared numerators and cross-checked by direct evaluation; the N = 4 discriminator separates all three.",
+   "pairwise_agreement": [
+    {
+     "claimed_set": [
+      "-4",
+      "1",
+      "3"
+     ],
+     "cleared_numerator": "-1N^3+13N-12",
+     "match": true,
+     "pair": "F_dim = F_res",
+     "rational_roots_excluding_pole_N=0": [
+      "-4",
+      "1",
+      "3"
+     ]
+    },
+    {
+     "claimed_set": [
+      "-1",
+      "1",
+      "3"
+     ],
+     "cleared_numerator": "-1N^3+3N^2+1N-3",
+     "match": true,
+     "pair": "F_dim = F_ded",
+     "rational_roots_excluding_pole_N=0": [
+      "-1",
+      "1",
+      "3"
+     ]
+    },
+    {
+     "claimed_set": [
+      "1",
+      "3"
+     ],
+     "cleared_numerator": "-3N^2+12N-9",
+     "match": true,
+     "pair": "F_res = F_ded",
+     "rational_roots_excluding_pole_N=0": [
+      "1",
+      "3"
+     ]
+    }
+   ],
+   "pass": true,
+   "triple_coincidence_at_N=3": true
+  },
+  "C2_green_identifications": {
+   "STRUCTURAL_REASON_FOR_THE_N=3_COINCIDENCE": "K_3 and C_3 are the SAME graph (adjacency matrices identical: True); K_4 and C_4 are not (True). The agreement of F_dim and F_res at N = 3 is therefore not numerology but the triangle being simultaneously the complete graph and the cycle. It is exactly this that makes 2/9 reachable from two unrelated readings, and exactly this that fails at every other N.",
+   "anchor_face": {
+    "883_form_(n-1)/n^2_at_n=3": "2/9",
+    "F_dim(3)": "2/9",
+    "F_res(3)": "2/9",
+    "L3_fixed_locus_density_pinned_in_882": "2/9"
+   },
+   "complete_graph_rows": [
+    {
+     "F_dim(N)": "1/4",
+     "K_N_green_diagonal": "1/4",
+     "N": 2,
+     "match": true
+    },
+    {
+     "F_dim(N)": "2/9",
+     "K_N_green_diagonal": "2/9",
+     "N": 3,
+     "match": true
+    },
+    {
+     "F_dim(N)": "3/16",
+     "K_N_green_diagonal": "3/16",
+     "N": 4,
+     "match": true
+    },
+    {
+     "F_dim(N)": "4/25",
+     "K_N_green_diagonal": "4/25",
+     "N": 5,
+     "match": true
+    },
+    {
+     "F_dim(N)": "5/36",
+     "K_N_green_diagonal": "5/36",
+     "N": 6,
+     "match": true
+    },
+    {
+     "F_dim(N)": "6/49",
+     "K_N_green_diagonal": "6/49",
+     "N": 7,
+     "match": true
+    },
+    {
+     "F_dim(N)": "7/64",
+     "K_N_green_diagonal": "7/64",
+     "N": 8,
+     "match": true
+    },
+    {
+     "F_dim(N)": "8/81",
+     "K_N_green_diagonal": "8/81",
+     "N": 9,
+     "match": true
+    },
+    {
+     "F_dim(N)": "9/100",
+     "K_N_green_diagonal": "9/100",
+     "N": 10,
+     "match": true
+    },
+    {
+     "F_dim(N)": "10/121",
+     "K_N_green_diagonal": "10/121",
+     "N": 11,
+     "match": true
+    },
+    {
+     "F_dim(N)": "11/144",
+     "K_N_green_diagonal": "11/144",
+     "N": 12,
+     "match": true
+    }
+   ],
+   "cycle_graph_rows": [
+    {
+     "C_N_green_diagonal": "2/9",
+     "F_res(N)": "2/9",
+     "N": 3,
+     "match": true
+    },
+    {
+     "C_N_green_diagonal": "5/16",
+     "F_res(N)": "5/16",
+     "N": 4,
+     "match": true
+    },
+    {
+     "C_N_green_diagonal": "2/5",
+     "F_res(N)": "2/5",
+     "N": 5,
+     "match": true
+    },
+    {
+     "C_N_green_diagonal": "35/72",
+     "F_res(N)": "35/72",
+     "N": 6,
+     "match": true
+    },
+    {
+     "C_N_green_diagonal": "4/7",
+     "F_res(N)": "4/7",
+     "N": 7,
+     "match": true
+    },
+    {
+     "C_N_green_diagonal": "21/32",
+     "F_res(N)": "21/32",
+     "N": 8,
+     "match": true
+    },
+    {
+     "C_N_green_diagonal": "20/27",
+     "F_res(N)": "20/27",
+     "N": 9,
+     "match": true
+    },
+    {
+     "C_N_green_diagonal": "33/40",
+     "F_res(N)": "33/40",
+     "N": 10,
+     "match": true
+    },
+    {
+     "C_N_green_diagonal": "10/11",
+     "F_res(N)": "10/11",
+     "N": 11,
+     "match": true
+    },
+    {
+     "C_N_green_diagonal": "143/144",
+     "F_res(N)": "143/144",
+     "N": 12,
+     "match": true
+    }
+   ],
+   "finding": "Both Green functions were rebuilt exactly from Laplacian pseudoinverses and match their closed forms on every N tested (11 complete-graph rows, 10 cycle rows); the N = 3 coincidence is the identity K_3 = C_3.",
+   "identification_1": "F_dim(N) = (N-1)/N^2 is the Green (Laplacian pseudoinverse) diagonal of the complete graph K_N. Proof: for a vertex-transitive graph (L^+)_ii = (1/2N) sum_j r(i,j); in K_N every resistance is 2/N, so (L^+)_ii = (1/2N)(N-1)(2/N) = (N-1)/N^2.",
+   "identification_2": "F_res(N) = (N^2-1)/(12N) is the Green diagonal of the cycle graph C_N. Proof: in C_N, r(0,d) = d(N-d)/N (two series paths in parallel), so sum_d r(0,d) = (1/N)(N sum d - sum d^2) = (N^2-1)/6, and (L^+)_ii = (1/2N)(N^2-1)/6 = (N^2-1)/(12N).",
+   "method": "Laplacian pseudoinverse computed exactly over Q via L^+ = (L + J/n)^{-1} - J/n, with L L^+ L = L re-verified on every row",
+   "pass": true
+  },
+  "C3_one_exclusion_census": {
+   "BUT_THE_INFERENCE_IS_WRONG": "The exercise used this census to predict that T7 selection would still fail on semigroups. That conflates two different objects. The census measures FUNCTIONAL BINDING ambiguity -- how many closed forms return the anchor. T7 measures LIBRARY SELECTION -- whether the anchor is alone among the alpha witnesses inside one library. Cheap 1-exclusion makes binding ambiguity worse and library selection EASIER, which is what the corrected T7 search actually found. The prediction was backwards.",
+   "adjudication": "The exercise's exact family space is not pinned on this branch, so its 69/74 cannot be reproduced digit-for-digit; the census above is this runner's own explicitly-declared space. QUALITATIVELY THE CLAIM HOLDS: the overwhelming majority of rational families that return 2/9 at N = 3 never take the value 1, so excluding 1 is nearly free and buys almost no discrimination.",
+   "domain_for_the_value_1_test": "integers N in [2, 60] with B(N) != 0",
+   "examples_hitting_one": [
+    {
+     "A": "-1N^2+3N+2",
+     "B": "+1N^2",
+     "ever_equals_1": true,
+     "f(3)": "2/9"
+    },
+    {
+     "A": "+2",
+     "B": "+2N^2-3N",
+     "ever_equals_1": true,
+     "f(3)": "2/9"
+    },
+    {
+     "A": "+1N-1",
+     "B": "+2N^2-2N-3",
+     "ever_equals_1": true,
+     "f(3)": "2/9"
+    }
+   ],
+   "examples_never_one": [
+    {
+     "A": "+2N^2-3N-3",
+     "B": "+3N^2+1N-3",
+     "ever_equals_1": false,
+     "f(3)": "2/9"
+    },
+    {
+     "A": "+2N^2-3N-3",
+     "B": "+3N^2",
+     "ever_equals_1": false,
+     "f(3)": "2/9"
+    },
+    {
+     "A": "+2N^2-3N-3",
+     "B": "+2N^2+3N",
+     "ever_equals_1": false,
+     "f(3)": "2/9"
+    },
+    {
+     "A": "+2N^2-3N-3",
+     "B": "+3N^2-1N+3",
+     "ever_equals_1": false,
+     "f(3)": "2/9"
+    },
+    {
+     "A": "+2N^2-3N-3",
+     "B": "+2N^2+2N+3",
+     "ever_equals_1": false,
+     "f(3)": "2/9"
+    },
+    {
+     "A": "+1N+3",
+     "B": "+2N^2+2N+3",
+     "ever_equals_1": false,
+     "f(3)": "2/9"
+    }
+   ],
+   "exercise_claim": "69/74 simple rational families never take value 1",
+   "families_hitting_2/9_at_N=3": 106,
+   "families_never_taking_the_value_1": 103,
+   "family_space": "f(N) = A(N)/B(N), deg A, deg B <= 2, integer coefficients in [-3, 3], B(3) != 0, f(3) = 2/9; canonicalised and deduped",
+   "finding": "103 of 106 declared rational families that return 2/9 at N = 3 never take the value 1 (97.16%), so 1-exclusion is nearly free; but that bears on functional binding, not on library selection.",
+   "fraction_never_taking_1": "103/106",
+   "pass": true,
+   "percent_never_taking_1": "97.16"
+  },
+  "C3_t7_repair": {
+   "CORRECTED_T7_SCOPE": "WHAT THE WALL ACTUALLY COVERS: multiplicatively closed anchor libraries that CONTAIN THE IDENTITY (monoids). On those the argument is sound -- 1 in the library forces alpha = 1/3 into the survivor set alongside the target, so no monoid selects. WHAT IT NEVER COVERED: identity-free multiplicative semigroups. The enumeration could not produce one, and the checker scored their absence as a PASS. DOES THE FAILURE PERSIST THERE? NO. Of 276 strictly-positive-exponent libraries, 264 are identity-free, 5 reach the target and 3 uniquely select it. The cyclic semigroup <2/9> selects on its own. So the T7 sentence 'every multiplicatively closed anchor library contains 1' is FALSE as a general statement and true only of the enumerated monoid family; the wall terminates the monoid subclass, not the route class.",
+   "WHAT_THIS_DOES_NOT_BUY": "Selection by an identity-free semigroup is not a derivation. <2/9> is the anchor written as a library; choosing it is exactly the singleton Record predicate C882-T7 said was missing, now wearing a semigroup costume. The correction is to the SCOPE of a landed no-go, not to the standing of the obligation.",
+   "corrected_search": {
+    "design": "multiplicatively generated libraries over the pool {2,3,5,7,1/2,1/3,1/5,1/7} (the same value set the 882 primes generate under signed exponents), sizes 1-3, exponent windows e in [1, w] for w in {1,2,3} -- STRICTLY POSITIVE, so no empty product",
+    "identity_free_libraries": 264,
+    "libraries_enumerated": 276,
+    "libraries_reaching_the_target": 5,
+    "libraries_uniquely_selecting__882_checker_predicate": 3,
+    "libraries_uniquely_selecting__882_primary_predicate": 0,
+    "reaching_rows": [
+     {
+      "contains_identity": false,
+      "exponent_window": "[1, 2]",
+      "generators": [
+       "2",
+       "1/3"
+      ],
+      "library_size": 4,
+      "surviving_alphas": [
+       "2/27"
+      ],
+      "uniquely_selects": true
+     },
+     {
+      "contains_identity": false,
+      "exponent_window": "[1, 3]",
+      "generators": [
+       "2",
+       "1/3"
+      ],
+      "library_size": 9,
+      "surviving_alphas": [
+       "2/27"
+      ],
+      "uniquely_selects": true
+     },
+     {
+      "contains_identity": false,
+      "exponent_window": "[1, 3]",
+      "generators": [
+       "2",
+       "3",
+       "1/3"
+      ],
+      "library_size": 15,
+      "surviving_alphas": [
+       "2/27"
+      ],
+      "uniquely_selects": true
+     },
+     {
+      "contains_identity": false,
+      "exponent_window": "[1, 2]",
+      "generators": [
+       "2",
+       "1/2",
+       "1/3"
+      ],
+      "library_size": 6,
+      "surviving_alphas": [
+       "1/9",
+       "2/27"
+      ],
+      "uniquely_selects": false
+     },
+     {
+      "contains_identity": false,
+      "exponent_window": "[1, 3]",
+      "generators": [
+       "2",
+       "1/2",
+       "1/3"
+      ],
+      "library_size": 15,
+      "surviving_alphas": [
+       "1/9",
+       "2/27"
+      ],
+      "uniquely_selects": false
+     }
+    ],
+    "selecting_examples": [
+     {
+      "contains_identity": false,
+      "exponent_window": "[1, 2]",
+      "generators": [
+       "2",
+       "1/3"
+      ],
+      "library": [
+       "2/3",
+       "2/9",
+       "4/3",
+       "4/9"
+      ],
+      "surviving_alphas": [
+       "2/27"
+      ]
+     },
+     {
+      "contains_identity": false,
+      "exponent_window": "[1, 3]",
+      "generators": [
+       "2",
+       "1/3"
+      ],
+      "library": [
+       "2/27",
+       "2/3",
+       "2/9",
+       "4/27",
+       "4/3",
+       "4/9",
+       "8/27",
+       "8/3",
+       "8/9"
+      ],
+      "surviving_alphas": [
+       "2/27"
+      ]
+     },
+     {
+      "contains_identity": false,
+      "exponent_window": "[1, 3]",
+      "generators": [
+       "2",
+       "3",
+       "1/3"
+      ],
+      "library": [
+       "12",
+       "18",
+       "2",
+       "2/3",
+       "2/9",
+       "24",
+       "36",
+       "4",
+       "4/3",
+       "4/9",
+       "6",
+       "72",
+       "8",
+       "8/3",
+       "8/9"
+      ],
+      "surviving_alphas": [
+       "2/27"
+      ]
+     }
+    ]
+   },
+   "defect_1_symmetric_window_contains_zero_tuple": true,
+   "defect_2_checker_semigroup_mode_is_a_monoid": {
+    "assessment": "This is a definitional error, not a typo: a set closed under multiplication containing the empty product is a MONOID. The checker's certificate then makes identity-presence a PASS condition ('pass': not selective and not identity_missing), so an identity-free library would have been scored as a failure.",
+    "code": "else range(0, w + 1))",
+    "present": true,
+    "quote": "the checker searched semigroups as well as groups, since a semigroup with nonnegative exponents still contains the empty product",
+    "runner_states_it_openly": true
+   },
+   "defect_3_primary_selection_predicate_unsatisfiable": {
+    "assessment": "The primary's 'zero select' headline is TRUE but VACUOUS at the level of its own predicate. The checker's predicate omits the adjoined 0 and IS satisfiable, so the checker's 200-row sweep carries the real content.",
+    "mechanism": "members = {k/3 for k in elements} | {Fraction(0)} and Fraction(0) is a PINNED WITNESS, so 0 survives in every row. 'selective = reaches and len(survivors) == 1' therefore cannot be true for any enumerated library, target reached or not.",
+    "verified_by_replay": true,
+    "zero_is_a_pinned_witness": true
+   },
+   "finding": "T7's identity premise is a design consequence of symmetric and nonnegative exponent windows. Re-run over strictly positive windows, 264 of 276 libraries are identity-free and 3 uniquely select the target; the wall is confined to identity-containing libraries.",
+   "minimal_witness_cyclic_semigroup": {
+    "contains_the_identity": false,
+    "first_terms": [
+     "128/4782969",
+     "16/6561",
+     "2/9",
+     "32/59049"
+    ],
+    "library": "<2/9> = {(2/9)^k : k >= 1}",
+    "multiplicatively_closed": true,
+    "surviving_alphas": [
+     "2/27"
+    ],
+    "uniquely_selects_the_target": true
+   },
+   "pass": true,
+   "the_defect": "Cycle 882's T7 enumerated exponent windows e in [-w, w] (primary) and e in [0, w] (checker). Both windows contain the ZERO TUPLE, whose product is the empty product 1. 'Every multiplicatively closed anchor library contains 1' is therefore a consequence of the enumeration design, not a discovered fact about multiplicatively closed sets. A multiplicative SEMIGROUP need not contain 1: <2/9> = {(2/9)^k : k >= 1} does not."
+  },
+  "C4_conjugate_pair": {
+   "DISCHARGE": "The open import was the assumption that the transverse weight pairing on the C3-invariant 2-plane is conjugate. It is not an import: it is forced by realness of the rotation, computed here for all 8 order-3 elements of the proper cubic rotation group.",
+   "REALNESS_ARGUMENT": "A proper cubic rotation is a real orthogonal matrix, so its characteristic polynomial has REAL (here integer) coefficients. Complex conjugation fixes R pointwise and is a field automorphism of C, so it permutes the roots: non-real roots occur in conjugate pairs. For an order-3 element the polynomial is x^3 - 1 = (x - 1)(x^2 + x + 1); the quadratic has discriminant -3 < 0 and no rational root, so its two roots are a genuine conjugate pair {omega, omega-bar}. In Z3-weight language the transverse pair is {1, 2} = {1, -1 mod 3}: (1, -1)-type, CONJUGATE.",
+   "WHY_(1,1)_IS_IMPOSSIBLE": {
+    "conclusion": "A weight pair (1, 1) means both transverse eigenvalues equal omega. The resulting quadratic has linear coefficient 1 - sqrt(-3), which is not real, so no REAL 2x2 matrix -- and in particular no restriction of a real rotation -- can carry it. The conjugate pair (1, -1) has linear coefficient 1 and constant 1, both real: verified True.",
+    "hypothetical_charpoly": "x^2 - 2 omega x + omega^2",
+    "linear_coefficient_in_Q(sqrt(-3))": "1 + -1 sqrt(-3)",
+    "linear_coefficient_is_real": false
+   },
+   "canonical_generator": [
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ]
+   ],
+   "characteristic_polynomial": "+1N^3-1",
+   "factorisation": "(x - 1)(x^2 + x + 1)",
+   "factorisation_verified": true,
+   "finding": "All 8 order-3 proper cubic rotations have characteristic polynomial x^3 - 1 with transverse factor x^2 + x + 1 of discriminant -3; the transverse weight pair is forced conjugate and (1,1) is impossible over R.",
+   "flagged_lineage": {
+    "file": "docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md",
+    "present_on_this_branch": true,
+    "quote": "The K/CPT orbit map acts on the dial by `delta -> -delta`.",
+    "relation": "That note's K/CPT map is exactly the conjugation on the C3 circulant phase. The discharge above supplies the structural reason the map is an involution on a conjugate PAIR rather than a relabelling of a repeated weight."
+   },
+   "group_order": 24,
+   "order_3_elements": 8,
+   "pass": true,
+   "per_element_rows": [
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_pair_forced": true,
+     "det": 1,
+     "matrix": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "trace": 0,
+     "transverse_discriminant": -3,
+     "transverse_factor": "+1N^2+1N+1"
+    },
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_pair_forced": true,
+     "det": 1,
+     "matrix": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       0,
+       -1
+      ],
+      [
+       -1,
+       0,
+       0
+      ]
+     ],
+     "trace": 0,
+     "transverse_discriminant": -3,
+     "transverse_factor": "+1N^2+1N+1"
+    },
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_pair_forced": true,
+     "det": 1,
+     "matrix": [
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       -1,
+       0,
+       0
+      ]
+     ],
+     "trace": 0,
+     "transverse_discriminant": -3,
+     "transverse_factor": "+1N^2+1N+1"
+    },
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_pair_forced": true,
+     "det": 1,
+     "matrix": [
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       0,
+       -1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "trace": 0,
+     "transverse_discriminant": -3,
+     "transverse_factor": "+1N^2+1N+1"
+    },
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_pair_forced": true,
+     "det": 1,
+     "matrix": [
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "trace": 0,
+     "transverse_discriminant": -3,
+     "transverse_factor": "+1N^2+1N+1"
+    },
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_pair_forced": true,
+     "det": 1,
+     "matrix": [
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ]
+     ],
+     "trace": 0,
+     "transverse_discriminant": -3,
+     "transverse_factor": "+1N^2+1N+1"
+    },
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_pair_forced": true,
+     "det": 1,
+     "matrix": [
+      [
+       0,
+       0,
+       -1
+      ],
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ]
+     ],
+     "trace": 0,
+     "transverse_discriminant": -3,
+     "transverse_factor": "+1N^2+1N+1"
+    },
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_pair_forced": true,
+     "det": 1,
+     "matrix": [
+      [
+       0,
+       0,
+       -1
+      ],
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "trace": 0,
+     "transverse_discriminant": -3,
+     "transverse_factor": "+1N^2+1N+1"
+    }
+   ],
+   "transverse_discriminant": -3,
+   "transverse_has_no_real_root": true,
+   "transverse_quadratic": "+1N^2+1N+1",
+   "transverse_rational_roots": []
+  },
+  "C4_no_orientation": {
+   "C3_subgroup": [
+    [
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "CONSEQUENCE": "Any orientation-sensitive invariant built on a free C3 orbit delivers +/- x, not x. The registrable target here is |delta|, so the ambiguity is HARMLESS for this cycle -- the fork's verdict is a statement about |delta| and is untouched by the sign. But it must be carried wherever sign-sensitive readings appear: any claim distinguishing delta from -delta needs a supplied orientation, and the K/CPT note records exactly that map as delta -> -delta.",
+   "LEMMA": "N_G(C3) = S3 of order 6 inside the 24 proper cubic rotations, and 3 of its 6 elements send the generator P to P^2 = P^{-1}. The Lattice axiom supplies the whole rotation group, so it supplies these inverting elements too. There is therefore NO axiom-level distinction between the generator and its inverse: the axioms supply no orientation of a free C3 orbit.",
+   "centralizing_count": 3,
+   "finding": "The normalizer has order 6 with element orders [1, 2, 2, 2, 3, 3] (S3, not Z6), 3 of them inverting the generator; the Sylow cross-check gives 4 conjugate C3 subgroups at index 4.",
+   "generator_inverting_count": 3,
+   "generator_inverting_elements": [
+    [
+     [
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1
+     ],
+     [
+      0,
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      -1,
+      0
+     ],
+     [
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      -1
+     ],
+     [
+      0,
+      -1,
+      0
+     ],
+     [
+      -1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "group_order": 24,
+   "normalizer_element_orders": [
+    1,
+    2,
+    2,
+    2,
+    3,
+    3
+   ],
+   "normalizer_elements": [
+    [
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ]
+    ],
+    [
+     [
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1
+     ],
+     [
+      0,
+      -1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      -1,
+      0
+     ],
+     [
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -1
+     ]
+    ],
+    [
+     [
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    [
+     [
+      0,
+      0,
+      -1
+     ],
+     [
+      0,
+      -1,
+      0
+     ],
+     [
+      -1,
+      0,
+      0
+     ]
+    ]
+   ],
+   "normalizer_is_S3": true,
+   "normalizer_is_not_cyclic_Z6": true,
+   "normalizer_order": 6,
+   "pass": true,
+   "sylow_cross_check": {
+    "conjugate_C3_subgroups": 4,
+    "consistent": true,
+    "index_of_normalizer": 4
+   }
+  },
+  "C_ADMITTED_OBSERVATIONS": {
+   "consumed_by": [
+    "C1 target-integrity fork only"
+   ],
+   "count": 3,
+   "disclosure": "These three numbers are the ONLY empirical inputs to Cycle 897. They are declared admitted observations, not pins: nothing in the repo derives them and this runner does not treat them as derived. C2, C3 and C4 consume none of them; only the C1 fork does.",
+   "finding": "3 admitted observations declared in a single quarantined block with exact rational values, exact sigmas and source strings; C2/C3/C4 are empirically clean.",
+   "observations": [
+    {
+     "name": "m_e",
+     "relative_sigma_decimal": "0.00000000031312",
+     "sigma_exact": "1/6250000000",
+     "source": "CODATA/PDG electron mass, as supplied in the block brief",
+     "status": "admitted_observation",
+     "unit": "MeV",
+     "value_exact": "51099895069/100000000000"
+    },
+    {
+     "name": "m_mu",
+     "relative_sigma_decimal": "0.00000002176827",
+     "sigma_exact": "23/10000000",
+     "source": "CODATA/PDG muon mass, as supplied in the block brief",
+     "status": "admitted_observation",
+     "unit": "MeV",
+     "value_exact": "211316751/2000000"
+    },
+    {
+     "name": "m_tau",
+     "relative_sigma_decimal": "0.00005064915332",
+     "sigma_exact": "9/100",
+     "source": "PDG tau mass, as supplied in the block brief",
+     "status": "admitted_observation",
+     "unit": "MeV",
+     "value_exact": "177693/100"
+    }
+   ],
+   "pass": true
+  },
+  "D_RESTRICTION_GATE": {
+   "cycle882_checker_replay": {
+    "identity_missing": 0,
+    "libraries": 200,
+    "selective": 0
+   },
+   "cycle882_primary_replay": {
+    "any_selective": false,
+    "identity_always": true,
+    "libraries": 42,
+    "orbit_length": 3,
+    "reaching": 6,
+    "target": "2/27",
+    "witnesses": [
+     "0",
+     "1",
+     "1/3",
+     "1/9",
+     "2/27"
+    ]
+   },
+   "cycle883_forms_hitting": [
+    "w1 / (w0 + w1)^2",
+    "w0 * w1 / n^2",
+    "w1 / n^2",
+    "(n - 1) / n^2",
+    "w1 / (w0 * n^2)"
+   ],
+   "cycle883_forms_replay": [
+    {
+     "hits_2/9": true,
+     "name": "w1 / (w0 + w1)^2",
+     "value": "2/9"
+    },
+    {
+     "hits_2/9": true,
+     "name": "w0 * w1 / n^2",
+     "value": "2/9"
+    },
+    {
+     "hits_2/9": true,
+     "name": "w1 / n^2",
+     "value": "2/9"
+    },
+    {
+     "hits_2/9": true,
+     "name": "(n - 1) / n^2",
+     "value": "2/9"
+    },
+    {
+     "hits_2/9": true,
+     "name": "w1 / (w0 * n^2)",
+     "value": "2/9"
+    },
+    {
+     "hits_2/9": false,
+     "name": "w0 / n",
+     "value": "1/3"
+    },
+    {
+     "hits_2/9": false,
+     "name": "(w0 + w1) / n^2",
+     "value": "1/3"
+    }
+   ],
+   "finding": "All 9 restriction gates passed: 882's primary sweep replays to 42 libraries with the identity in every one and zero unique selections, 882's checker sweep replays to 200, and 883's certificate M replays to 5 of 7 forms returning 2/9.",
+   "gates": [
+    {
+     "cached_line": "Across 42 enumerated multiplicative anchor libraries",
+     "gate": "882 primary T7 library count replayed == cached 42",
+     "ok": true,
+     "replayed": 42
+    },
+    {
+     "gate": "882 primary T7: identity present in every library",
+     "ok": true,
+     "replayed": true
+    },
+    {
+     "gate": "882 primary T7: zero libraries uniquely select",
+     "ok": true,
+     "replayed": false
+    },
+    {
+     "cached_line": "200 anchor libraries searched across five generators",
+     "gate": "882 checker T7 library count replayed == cached 200",
+     "ok": true,
+     "replayed": 200
+    },
+    {
+     "gate": "882 checker T7: zero identity-missing, zero selective",
+     "ok": true,
+     "replayed": [
+      0,
+      0
+     ]
+    },
+    {
+     "gate": "882 receipt headline carries the T7 wall sentence",
+     "ok": true
+    },
+    {
+     "gate": "883 certificate-M forms recovered by AST == 7",
+     "ok": true,
+     "replayed": 7
+    },
+    {
+     "cached_line": "5 of the 7 enumerated closed forms in the derived data return 2/9",
+     "gate": "883 five-forms row replayed == cached '5 of the 7'",
+     "ok": true,
+     "replayed": 5
+    },
+    {
+     "gate": "883 receipt headline names the SL1b successor",
+     "ok": true
+    }
+   ],
+   "pass": true,
+   "purpose": "No new claim in this cycle is admitted until the two prior headlines are reproduced from their pinned artifacts by independent rebuild (AST-recovered constants, no import)."
+  },
+  "E_PARAMETERIZATION": {
+   "CONSEQUENCE_FOR_THE_FORK": "Because Q = 2/3 is an IDENTITY in delta on the retained form, imposing Q = 2/3 places no constraint whatever on delta. What it fixes is the coefficient c = sqrt(2). delta is then determined by ONE mass ratio and the remaining ratio is a prediction. The fork below is run in exactly that form, which is the only form in which it has content.",
+   "Q_equals_two_thirds_iff": "c^2 = 2",
+   "REFUTATION": "The exercise's stated parameterization carries coefficient 2. At c = 2 the exact algebra gives Q = 1/3 + 4/6 = 1, NOT 2/3, so the exercise's central 'Q = 2/3 exactly IFF the parameterization holds' is FALSE as written. The repo's retained surface carries sqrt(2), and Q = 2/3 holds there identically in delta.",
+   "angle_addition": {
+    "consequence": "no enclosure of pi is required anywhere in this cycle; every trigonometric evaluation reduces to cos(delta), sin(delta) with delta in [0, 1]",
+    "cos(2pi/3)": "-1/2 (exact rational)",
+    "sin(2pi/3)": "sqrt(3)/2 (exact quadratic surd)"
+   },
+   "coefficient_table": [
+    {
+     "Q": "2/3",
+     "c_squared": "2",
+     "coefficient": "c = sqrt(2)  (RETAINED, repo surface)",
+     "matches_Q_two_thirds": true
+    },
+    {
+     "Q": "1",
+     "c_squared": "4",
+     "coefficient": "c = 2  (AS STATED BY THE EXERCISE)",
+     "matches_Q_two_thirds": false
+    },
+    {
+     "Q": "1/2",
+     "c_squared": "1",
+     "coefficient": "c = 1",
+     "matches_Q_two_thirds": false
+    },
+    {
+     "Q": "1/3",
+     "c_squared": "0",
+     "coefficient": "c = 0",
+     "matches_Q_two_thirds": false
+    }
+   ],
+   "exercise_stated_form": "sqrt(m_k) = sqrt(M) (1 + 2 cos(delta + 2 pi k / 3))",
+   "finding": "The retained parameterization is rebuilt symbolically with delta free; Q(c) = 1/3 + c^2/6 exactly, so Q = 2/3 iff c^2 = 2. The exercise's coefficient 2 yields Q = 1 and is refuted.",
+   "identity_sum_cos_is_zero": true,
+   "identity_sum_cos_squared_is_three_halves": true,
+   "lepton_assignment": {
+    "k=0": "tau",
+    "k=1": "electron",
+    "k=2": "muon",
+    "source": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md assignment table (line 304 region)"
+   },
+   "pass": true,
+   "retained_form_byte_quote": {
+    "line": 98,
+    "source": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md",
+    "text": "\u221am_k = v_0 (1 + \u221a2 cos(\u03b4 + 2\u03c0k/3))"
+   },
+   "retained_identity_byte_quote": {
+    "source": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md",
+    "text": "**Q = 2/3 is an exact algebraic consequence, independent of \u03b4.**"
+   },
+   "symbolic_Q": "Q(c) = 1/3 + c^2/6, with delta a free symbol"
+  },
+  "F_FALSIFIER_VISIBILITY": {
+   "finding": "The synthetic compatible world returns COMPATIBLE in both directions through the identical pipeline, and a world displaced by 1e-3 MeV returns INCOMPATIBLE-AT-SIGMA-428. The verdict function is demonstrably two-sided.",
+   "forward_on_synthetic": {
+    "R_central_enclosure": "[14.37951028278503, 14.37951028278504]",
+    "abs_offset_enclosure": [
+     "0.0000000000000007525520",
+     "0.0000000000000007525521"
+    ],
+    "delta_central_enclosure": "[0.222222222222221469, 0.222222222222221470]",
+    "delta_enclosure_width": "0.0000000000000000000000000000000000385186",
+    "delta_minus_1sigma_enclosure": "[0.222222221828925406, 0.222222221828925407]",
+    "delta_plus_1sigma_enclosure": "[0.222222222615517520, 0.222222222615517521]",
+    "direction": "forward: (m_e, m_mu) + Q=2/3  ==>  delta",
+    "label": "SYNTHETIC compatible world",
+    "n_sigma_enclosure": [
+     "0.000001",
+     "0.000002"
+    ],
+    "proof_obligations": {
+     "P1_lambda1_strictly_positive": true,
+     "P2_H_strictly_monotone": true,
+     "P3_sign_change_on_bracket": true,
+     "bisection_steps": 110,
+     "lambda1_range_on_bracket": "[0.00398154, 0.07155622]"
+    },
+    "rule": "|n_sigma| upper bound 0.000002 <= 3",
+    "sigma_delta_enclosure": [
+     "0.0000000003932960568486",
+     "0.0000000003932960568487"
+    ],
+    "signed_offset_decimal": "-0.000000000000000752",
+    "two_ninths": "0.222222222222222222",
+    "verdict": "COMPATIBLE"
+   },
+   "off_anchor_control": {
+    "n_sigma_enclosure": [
+     "428.620152",
+     "428.620153"
+    ],
+    "synthetic_m_mu": "105.6604144959",
+    "verdict": "INCOMPATIBLE-AT-SIGMA-428"
+   },
+   "pass": true,
+   "purpose": "Outcome neutrality. If the machinery could only ever emit INCOMPATIBLE, the C1 verdict would be an artefact. A world whose muon mass is the delta = 2/9 prediction is constructed and run through the SAME functions.",
+   "reverse_on_synthetic": {
+    "abs_offset_enclosure": [
+     "0.0000000000044642",
+     "0.0000000000044643"
+    ],
+    "direction": "reverse: Q=2/3 AND delta=2/9 exactly  ==>  m_mu, m_tau",
+    "label": "SYNTHETIC compatible world",
+    "lambda_e_enclosure": "[0.040349908219207373, 0.040349908219207374]",
+    "lambda_mu_enclosure": "[0.580211920147537214, 0.580211920147537215]",
+    "lambda_tau_enclosure": "[2.379438171633255411, 2.379438171633255412]",
+    "m_mu_admitted": "105.6594144959",
+    "m_mu_implied_band_from_electron_sigma": "[105.65941446282121, 105.65941452898772]",
+    "m_mu_implied_enclosure": "[105.65941449590446, 105.65941449590447]",
+    "m_mu_sigma": "0.0000023000",
+    "m_tau_implied_enclosure": "[1776.9849708134, 1776.9849708135]",
+    "n_sigma_enclosure": [
+     "0.000001",
+     "0.000002"
+    ],
+    "rule": "|n_sigma| upper bound 0.000002 <= 3",
+    "sigma_propagation": {
+     "conservative_linear_sigma": "0.0000023330832506",
+     "electron_contribution": "0.0000000330832506",
+     "method": "quadrature: sqrt(sigma_mu^2 + (dm_mu/dm_e * sigma_e)^2)",
+     "n_sigma_under_conservative_linear_sigma": "0.000001",
+     "sigma_used_enclosure": "[0.0000023002379227, 0.0000023002379228]"
+    },
+    "verdict": "COMPATIBLE"
+   },
+   "synthetic_construction": "m_mu := floor(m_e * (lambda_mu/lambda_e)^2 at delta = 2/9, to 10 decimals); sigma kept at the admitted muon sigma",
+   "synthetic_m_mu": "105.6594144959"
+  },
+  "O_CONTROLS": {
+   "checks": [
+    {
+     "control": "deterministic double-build",
+     "note": "performed in main() after this certificate",
+     "ok": true
+    },
+    {
+     "control": "verdict function reaches INCOMPATIBLE",
+     "ok": true
+    },
+    {
+     "control": "verdict function reaches COMPATIBLE",
+     "ok": true
+    },
+    {
+     "control": "verdict function reaches INDETERMINATE",
+     "ok": true
+    },
+    {
+     "control": "no float anywhere in the science payload",
+     "ok": true
+    },
+    {
+     "base_n_sigma": [
+      "445.328680",
+      "445.328681"
+     ],
+     "control": "forward fork is sensitive to a 1e-5 MeV muon perturbation",
+     "moved_n_sigma": [
+      "441.042564",
+      "441.042565"
+     ],
+     "ok": true
+    },
+    {
+     "control": "series refuses arguments outside its proof window",
+     "ok": true
+    },
+    {
+     "control": "irrational enclosures have positive width",
+     "ok": true
+    }
+   ],
+   "deterministic_double_build": true,
+   "finding": "8 of 8 controls held.",
+   "pass": true
+  }
+ },
+ "verdicts": {
+  "C1a_delta_from_masses": "INCOMPATIBLE-AT-SIGMA-445",
+  "C1a_n_sigma": [
+   "445.328680",
+   "445.328681"
+  ],
+  "C1b_m_mu_from_2/9": "INCOMPATIBLE-AT-SIGMA-451",
+  "C1b_n_sigma": [
+   "451.690624",
+   "451.690625"
+  ],
+  "C1c_n_sigma": [
+   "0.433636",
+   "0.433637"
+  ],
+  "C1c_tau_row": "COMPATIBLE",
+  "C3_wall_scope": "CORRECTED -- monoids only; semigroups DO select",
+  "exercise_446_sigma": "CERTIFIED",
+  "exercise_452_sigma": "CERTIFIED",
+  "exercise_parameterization": "REFUTED (coefficient 2 gives Q = 1)"
+ }
+}

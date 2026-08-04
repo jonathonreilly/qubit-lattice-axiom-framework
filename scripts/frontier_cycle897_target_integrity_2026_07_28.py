@@ -171,7 +171,9 @@ NEEDLES: list[tuple[str, str]] = [
     ("docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md",
      "four distinct closed forms in (1, 2, 3) return 2/9"),
     ("scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
-     "four distinct closed forms in `(1, 2, 3)` return `2/9`"),
+     "priced and found NOT forced: four distinct"),
+    ("scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+     "closed forms in `(1, 2, 3)` return `2/9`."),
     ("logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt",
      "5 of the 7 enumerated closed forms in the derived data return 2/9"),
     ("scripts/frontier_cycle882_readout_independent_check_2026_07_28.py",
@@ -1012,8 +1014,8 @@ def certificate_parameterization() -> dict:
     src_note = "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md"
 
     ok = (id_zero_sum and id_sq_sum
-          and q_at(Fraction(2)) == Fraction(1)
-          and q_at_sqrt2 == Fraction(2, 3)
+          and q_from_c2(Fraction(4)) == Fraction(1)
+          and q_from_c2(Fraction(2)) == Fraction(2, 3)
           and residual_at_target.t != {}
           and quote_form in read_text(src_note)
           and quote_ident in read_text(src_note)
@@ -1218,15 +1220,24 @@ def reverse_fork(m_e: Fraction, s_e: Fraction,
     l0, l1, l2 = lambdas(dv)
     if not l1.strictly_positive():
         raise AssertionError("lambda_1 not certified positive at delta = 2/9")
-    me_iv = Iv(m_e - s_e, m_e + s_e)
-    mmu_imp = me_iv * (l2 / l1) ** 2
-    mtau_imp = me_iv * (l0 / l1) ** 2
-    # conservative effective sigma: measurement sigma plus the propagated
-    # half-width of the implied value (linear, i.e. an over-estimate).
-    eff_sigma = s_mu + mmu_imp.width() / 2
-    dist_lo, dist_hi = _dist_to(m_mu, mmu_imp)
-    n_lo = dist_lo / eff_sigma
-    n_hi = dist_hi / s_mu
+    ratio_mu = (l2 / l1) ** 2
+    ratio_tau = (l0 / l1) ** 2
+    # central prediction (the electron mass entered as a point) ...
+    mmu_c = Iv(m_e) * ratio_mu
+    mtau_c = Iv(m_e) * ratio_tau
+    # ... and the band the electron-mass sigma alone opens around it.
+    mmu_band = Iv(m_e - s_e, m_e + s_e) * ratio_mu
+    w_e = mmu_band.width() / 2
+    # STANDARD propagation: sigma^2 = sigma_mu^2 + (dm_mu/dm_e sigma_e)^2, the
+    # square root taken as a certified enclosure.
+    s_quad = certified_sqrt(s_mu * s_mu + w_e * w_e)
+    # CONSERVATIVE alternative: linear addition, an over-estimate of sigma and
+    # therefore an under-estimate of n_sigma.
+    s_lin = s_mu + w_e
+    dist_lo, dist_hi = _dist_to(m_mu, mmu_c)
+    n_lo = dist_lo / s_quad.hi
+    n_hi = dist_hi / s_quad.lo
+    n_conservative = dist_lo / s_lin
     v = verdict_from_nsigma(n_lo, n_hi)
     return {
         "label": label,
@@ -1234,37 +1245,53 @@ def reverse_fork(m_e: Fraction, s_e: Fraction,
         "lambda_tau_enclosure": ivs(l0, 18),
         "lambda_e_enclosure": ivs(l1, 18),
         "lambda_mu_enclosure": ivs(l2, 18),
-        "m_mu_implied_enclosure": ivs(mmu_imp, 14),
+        "m_mu_implied_enclosure": ivs(mmu_c, 14),
+        "m_mu_implied_band_from_electron_sigma": ivs(mmu_band, 14),
         "m_mu_admitted": dec(m_mu, 10, "down"),
         "m_mu_sigma": dec(s_mu, 10, "down"),
         "abs_offset_enclosure": [dec(dist_lo, 16, "down"),
                                  dec(dist_hi, 16, "up")],
-        "effective_sigma_used": dec(eff_sigma, 16, "up"),
+        "sigma_propagation": {
+            "method": "quadrature: sqrt(sigma_mu^2 + (dm_mu/dm_e * sigma_e)^2)",
+            "electron_contribution": dec(w_e, 16, "up"),
+            "sigma_used_enclosure": ivs(s_quad, 16),
+            "conservative_linear_sigma": dec(s_lin, 16, "up"),
+            "n_sigma_under_conservative_linear_sigma":
+                dec(n_conservative, 6, "down"),
+        },
         "n_sigma_enclosure": [dec(n_lo, 6, "down"), dec(n_hi, 6, "up")],
-        "m_tau_implied_enclosure": ivs(mtau_imp, 10),
-        "_m_tau_implied": mtau_imp,
+        "m_tau_implied_enclosure": ivs(mtau_c, 10),
+        "_m_tau_implied": mtau_c,
         **v,
     }
 
 
-def tau_row(delta_enc: Iv, m_e: Fraction, s_e: Fraction) -> dict:
+def tau_row(delta_enc: Iv, delta_band: Iv,
+            m_e: Fraction, s_e: Fraction) -> dict:
     """(c) With (m_e, m_mu) and Q = 2/3, the implied m_tau versus PDG."""
     l0, l1, _ = lambdas(delta_enc)
     if not l1.strictly_positive():
         raise AssertionError("lambda_1 not certified positive on delta")
-    me_iv = Iv(m_e - s_e, m_e + s_e)
-    mtau_imp = me_iv * (l0 / l1) ** 2
+    ratio = (l0 / l1) ** 2
+    mtau_imp = Iv(m_e) * ratio
+    b0, b1, _ = lambdas(delta_band)
+    if not b1.strictly_positive():
+        raise AssertionError("lambda_1 not certified positive on the band")
+    mtau_band = Iv(m_e - s_e, m_e + s_e) * (b0 / b1) ** 2
+    w_e = mtau_band.width() / 2
     m_tau = ADMITTED_OBSERVATIONS["m_tau"]["value"]
     s_tau = ADMITTED_OBSERVATIONS["m_tau"]["sigma"]
-    eff_sigma = s_tau + mtau_imp.width() / 2
+    s_quad = certified_sqrt(s_tau * s_tau + w_e * w_e)
     dist_lo, dist_hi = _dist_to(m_tau, mtau_imp)
-    n_lo = dist_lo / eff_sigma
-    n_hi = dist_hi / s_tau
+    n_lo = dist_lo / s_quad.hi
+    n_hi = dist_hi / s_quad.lo
     v = verdict_from_nsigma(n_lo, n_hi)
     return {
         "direction": "tau consistency: (m_e, m_mu) + Q=2/3  ==>  m_tau",
         "delta_used_enclosure": ivs(delta_enc, 18),
         "m_tau_implied_enclosure": ivs(mtau_imp, 10),
+        "m_tau_implied_band_from_electron_sigma": ivs(mtau_band, 10),
+        "sigma_used_enclosure": ivs(s_quad, 10),
         "m_tau_admitted": dec(m_tau, 4, "down"),
         "m_tau_sigma": dec(s_tau, 4, "down"),
         "abs_offset_enclosure": [dec(dist_lo, 10, "down"),
@@ -1290,7 +1317,10 @@ def certificate_fork() -> dict:
 
     R_c = certified_sqrt(m_mu / m_e)
     d_c = solve_delta(R_c)["enclosure"]
-    tau = tau_row(d_c, m_e, s_e)
+    d_band = Iv(
+        solve_delta(certified_sqrt((m_mu - s_mu) / (m_e + s_e)))["enclosure"].lo,
+        solve_delta(certified_sqrt((m_mu + s_mu) / (m_e - s_e)))["enclosure"].hi)
+    tau = tau_row(d_c, d_band, m_e, s_e)
     mtau_at_29 = rev.pop("_m_tau_implied")
     m_tau = obs["m_tau"]["value"]
     s_tau = obs["m_tau"]["sigma"]
@@ -1709,7 +1739,8 @@ def certificate_883_recount() -> dict:
     cache = read_text(
         "logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt")
     prose_note = "four distinct closed forms in (1, 2, 3) return 2/9"
-    prose_src = "four distinct closed forms in `(1, 2, 3)` return `2/9`"
+    prose_src = ("priced and found NOT forced: four distinct\n"
+                 "    closed forms in `(1, 2, 3)` return `2/9`.")
     computed = "5 of the 7 enumerated closed forms in the derived data return 2/9"
     return {
         "recount_from_the_pinned_primary_by_AST": [

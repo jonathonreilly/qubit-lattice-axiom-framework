@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py
+runner_sha256: 8ffd5436b5c506e9965a9a6f486f595531113aedef77cc2861114e87b362973f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 680.01
+status: ok
+----- stdout -----
+Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction.
+No formation rule.
+Sets no audit status.
+PINS ok
+ATTACK    pin-verification                               PASS
+ATTACK    fragment-partition-vs-memo-tiebreak-bytes      PASS
+ATTACK    pair-class-rotation-closure                    PASS
+ATTACK    sector-reduction-exactness-full-space          PASS
+CHECK     sector-dimension                               PASS
+ATTACK    raw-formula-vs-sector-matvec                   PASS
+ATTACK    propagator-semigroup-and-conservation          PASS
+ATTACK    baseline-re-anchoring                          PASS
+CHECK     primary-vs-independent-recomputation           PASS
+ATTACK    no-undisclosed-sampling                        PASS
+TOOTH     tampered-pin                                   BIT-FLIPPED
+TOOTH     dropped-fragment-site                          BIT-FLIPPED
+TOOTH     hardcoded-bar-location                         BIT-FLIPPED
+TOOTH     leaked-verdict                                 BIT-FLIPPED
+TOOTH     skipped-lambda                                 BIT-FLIPPED
+TOOTH     planted-certification-blindness                BIT-FLIPPED
+TOOTH     tampered-committed-stream                      BIT-FLIPPED
+TOOTH     sector-table-tamper                            BIT-FLIPPED
+CHECKER-EVENTS {'0.05': "t=0.6/theta*=0.500751527281/R=2/subset=['+x', '-x']/run=4", '0.1': "t=0.7/theta*=0.504730776868/R=2/subset=['+x', '-x']/run=3", '0.2': None}
+CHECKER-WINDOW W_full=[0.05, 0.1] boundary=(0.1, 0.2)
+PRIMARY-COMPARISON {"receipt_found": true, "max_abs_dev": {"chi5": 3.142819338108893e-12, "chi4": 5.1280091284411355e-12, "theta": 9.026113190202523e-13, "pair": 1.9415025143132425e-14}, "r_ind_mismatches": 0, "verdict_parent": "BAR-NOT-PINNED", "verdict_delta": "BAR-DERIVED-EFFECTIVE", "primary_window": [0.05, 0.1], "checker_window": [0.05, 0.1], "window_agrees": true}
+TOTAL INDEPENDENT-CHECK CLAIM-SURVIVES teeth=8/8 wall=679.7s rss=6.56GiB digest=05286b8bd9de8b0f Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. No formation rule. Sets no audit status.

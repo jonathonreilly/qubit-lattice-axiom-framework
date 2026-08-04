@@ -2830,6 +2830,9 @@ def run() -> int:
                 science_a["B_RESTRICTION_GATE"]["T7_882_headline"][
                     "cycle_897_scan"],
         },
+        "geometric_vacuity_universal_form":
+            science_a["E_M4_ENUMERATION_AND_COUNTERFACTUAL"][
+                "C898_T3_geometric_vacuity"]["universal_form"],
         "declared_bounds":
             science_a["E_M4_ENUMERATION_AND_COUNTERFACTUAL"][
                 "declared_bounds"],

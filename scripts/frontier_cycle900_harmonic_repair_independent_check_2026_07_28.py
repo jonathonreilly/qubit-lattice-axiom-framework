@@ -260,11 +260,13 @@ def fourier_relation(v, mu2_symbol: bool = False):
         # the screened symbol adds (mu^2/2) * m[v]; carried by the caller
         pass
     rhs = Fraction(1) if tuple(v) == (0, 0, 0) else Fraction(0)
-    # rewrite in G = m/2 : m = 2G, then scale by -2 to match Delta G = -delta
+    # m = 2G turns  3 m[v] - (1/2) sum_e m[v+e] = delta  into
+    # 6 G[v] - sum_e G[v+e] = delta; negating puts it in the Delta G = -delta
+    # form the real-space route uses.  Net factor on the m-coefficients: -2.
     out = {}
     for k, c in terms.items():
-        out[k] = out.get(k, Fraction(0)) + c * Fraction(2) * Fraction(-2)
-    return out, rhs * Fraction(-2)
+        out[k] = out.get(k, Fraction(0)) + c * Fraction(-2)
+    return out, rhs * Fraction(-1)
 
 
 def fourier_relation_table(shell: int):
@@ -511,10 +513,6 @@ def independent_core_certificate() -> dict:
             "matches_prediction": good,
             "distance_from_one_sixth": q(Fraction(1, 6) - d),
         })
-    converges = all(
-        Fraction(1, 6) - Fraction(step_rows[i]["G0_minus_Ge1_exact"].split("/")[0],
-                                 ) == 0 or True
-        for i in range(len(step_rows)))
     limit_ok = (step_rows[-1]["distance_from_one_sixth"]
                 == q(Fraction(1, 6 * TORUS_SIZES[-1] ** 3)))
     primary_step = receipt["core_normalization_G0_minus_Ge1"]
@@ -750,9 +748,11 @@ def mu_attack_certificate() -> dict:
 def screened_epsilon_attack_certificate() -> dict:
     receipt = json.loads(_read_text(AUDIT_INPUT_PATHS[1]))
     # DIFFERENT axis sites and a DIFFERENT elimination order from the primary
-    # (the primary used pairs (1,2),(1,3),(2,3),(1,4); this uses (2,5),(3,4),
-    #  (4,5) and also the non-axis site (1,1,1) against (2,0,0)).
-    pairs = ((2, 5), (3, 4), (4, 5))
+    # (the primary used pairs (1,2),(1,3),(2,3),(1,4)).  These pairs are chosen
+    # so that every field stays at most bi-quadratic -- (7,0,0) has neighbour
+    # distance sqrt(50) = 5 sqrt(2), so the pair (1,7) lives in Q(sqrt 2)
+    # alone -- which keeps the norm degrees and hence the GCDs tractable.
+    pairs = ((1, 7), (2, 4), (4, 6))
     polys, rows = [], []
     for (n, m) in pairs:
         num_n, den_n = screened_M((n, 0, 0))
@@ -829,8 +829,11 @@ def screened_epsilon_attack_certificate() -> dict:
 # certificate F: attack the consumer census with strictly broader needles
 # --------------------------------------------------------------------------
 BROAD_FAMILIES = {
+    # bounded and non-greedy on purpose: a balanced-paren pattern of the form
+    # (?:[^()]|\([^()]*\))* backtracks catastrophically on this corpus, so the
+    # multi-line reach is bought with a length bound instead.
     "B1_multiline_euclidean_plus_tenth":
-        r"math\.sqrt\((?:[^()]|\([^()]*\))*\)\s*\+\s*0\.1\b",
+        r"math\.sqrt\(.{0,300}?\)\s*\+\s*0\.1\b",
     "B2_any_inverse_regulated_radius":
         r"/\s*\(\s*r\w*\s*\+\s*(?:0\.\d+|EPS\w*|eps\w*|epsilon)\s*\)",
     "B3_phi_GB_symbol": r"phi_GB",

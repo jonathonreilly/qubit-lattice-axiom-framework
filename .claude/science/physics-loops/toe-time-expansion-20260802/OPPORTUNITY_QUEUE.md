@@ -62,3 +62,38 @@ independence from just-blocked lanes.
 - Cycle 870 blockN1 -> PR #5921 (general-n census law; bounded theorem).
 - Cycle 868 blockG1 -> PR #5923 (response-surface sign no-go).
 - 866/867 v2 recovery + v3 repair; finale blockP25 ship in flight.
+
+## WINDOW 2 QUEUE (built 2026-08-04 ~07:50 EDT; gravity-lane closure ranked)
+
+1. **Cycle 893 — the barrier identification** (blockG16): derive / price /
+   refute B(R) = supp(R). Everything in GBW1b conditions on it (892 named it
+   the most valuable open question). Attack: admissible barrier maps under
+   axiom-grounded requirements (the 885/887 machinery applied to barriers);
+   the 892 expulsion computation parameterized by barrier; fidelity sweep on
+   the registration/readability clauses; per-candidate fate of the quadratic
+   gauge break.
+2. **Cycle 894 — the interface attack** (blockG17): vendor the Cycle-878
+   event-space artifacts onto the G lineage (as 892 vendored 887) and test
+   Q1's five admissible weightings against IF1/IF3-IF6. Either gravity's Z
+   constrains the Born selection (first cross-lane constraint) or an exact
+   no-go prices the interface import.
+3. **Cycle 895 — retire-by-generalization** (blockG18): derive the ladder's
+   grading-dependent results at general t so the #5931 t-choice dissolves as
+   a decision (the surface's cheapest branch, executed as derivation).
+4. **Cycle 896 — SL1b via exercise skill**: the readout obligation's
+   blocked-equivalent family needs a NEW invariant; run the exercise
+   protocol (assumption table, reduction, literature, math-sector search,
+   reframing), then kill-pass and probe the candidates.
+5. **Audit-flag reconciliation block**: the 871 readout-dim pin (1 vs 2) and
+   the chart counts (8/10/27) — computed reconciliations, closes two flags.
+6. **Gate-B harmonic repair attack**: 884 proved the forced harmonic core
+   has ZERO parameters (G(0)-G(e1) = 1/6); attack whether the landed
+   construction can be lawfully replaced by the forced core (was "owner's
+   lane"; now attacked as derivation).
+7. **The bridge scalar** (G2's one dimension): derivation attempt; if walled,
+   exercise skill.
+
+Lane-closure ledger to maintain: after each ship, restate what remains
+between the gravity lane and "closed from axioms up". When the list empties,
+move to the next-furthest lane (candidates: causal-time, mass, Born — pick
+by retention-map gap count at that moment).

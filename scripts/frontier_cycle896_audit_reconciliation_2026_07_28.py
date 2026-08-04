@@ -1173,60 +1173,62 @@ def discharge_certificate(charts: dict) -> dict:
     # ---- the per-coordinate current status ------------------------------
     status = []
 
-    def row(name, verdict, free_now, owed, cycles, evidence):
+    def row(name, verdict, free_now, owed_import, premises, cycles, evidence):
         status.append({
             "coordinate": name,
             "free_dimension_before_discharges": 1,
             "verdict_now": verdict,
             "free_dimension_now": free_now,
-            "named_imports_or_premises_now": owed,
+            "owed_import_dimensions_now": owed_import,
+            "named_premises_now": premises,
             "attributed_to_cycles": cycles,
             "evidence_from_the_source_receipt": evidence,
         })
 
     row("sigma", "UNTOUCHED -- still free (and shared with the GB-S1 bridge "
-        "scalar, so it is not new GB-S2 content)", 1, 0, [],
+        "scalar, so it is not new GB-S2 content)", 1, 0, 0, [],
         "no discharge receipt on this branch mentions the source strength")
     row("theta", "SHARPENED, NOT DISCHARGED -- exactly one scalar, cos phi = "
-        "(1-theta^2)/(1+theta^2)", 1, 0, [892],
+        "(1-theta^2)/(1+theta^2)", 1, 0, 0, [892],
         f"892 component (b) KERNEL = {c892_kernel} dimension, verdict "
         f"'LOAD-BEARING, but exactly one scalar'")
-    row("mu", "UNTOUCHED -- still free", 1, 0, [],
+    row("mu", "UNTOUCHED -- still free", 1, 0, 0, [],
         "no discharge receipt addresses the screening mass")
-    row("c4", "UNTOUCHED -- still free", 1, 0, [],
+    row("c4", "UNTOUCHED -- still free", 1, 0, 0, [],
         "no discharge receipt addresses the angular coefficient")
     row("a", "MERGED -- absorbed into the joint window convention, which is "
-        "counted once on the pair {a, b} (booked on b below)", 0, 0,
+        "counted once on the pair {a, b} (booked on b below)", 0, 0, 0,
         [885, 887, 892],
         f"885 classifies a as {c885_class.get('a')}; 887's Q2 outcome is "
         f"'{q2_outcome}'; 892 component (a) WINDOW = {c892_window} dimension")
     row("b", "MERGED -- carries the ONE window convention for the pair "
         "{a, b}: which member of 887's admissible containment-holding window "
         "space is the detector window",
-        1, 0, [885, 887, 892],
+        1, 0, 0, [885, 887, 892],
         f"885 classifies b as {c885_class.get('b')}; 892 prices the whole "
         f"window locus at {c892_window} convention")
-    row("D", "DISCHARGED -- determined as a GAUGE CLASS", 0, 0, [885],
+    row("D", "DISCHARGED -- determined as a GAUGE CLASS", 0, 0, 0, [885],
         f"885 classifies D as {c885_class.get('D')} with residual premise "
         f"'{c885_premise.get('D')}'")
     row("barrier", "DISCHARGED as a free dimension -- DERIVED B(R) = supp(R), "
-        "modulo one named identification premise", 0, 1, [885],
+        "modulo one named identification premise", 0, 0, 1, [885],
         f"885 classifies barrier as {c885_class.get('barrier')} with residual "
         f"premise '{c885_premise.get('barrier')}'")
     row("N", "RESOLVED -- not an independent free scalar; it decomposes into "
         "the window convention (already counted), the kernel scalar (already "
-        "counted), and the owed event-space interface", 0, c892_interface,
+        "counted), and the owed event-space interface", 0, c892_interface, 0,
         [885, 892],
         f"885 classifies N as {c885_class.get('N')} and re-scopes GBW1; 892 "
         f"prices GBW1b at {c892_residual} = {c892_window} window + "
         f"{c892_kernel} kernel + {c892_interface} owed interface properties")
-    row("g", "UNTOUCHED -- still free", 1, 0, [],
+    row("g", "UNTOUCHED -- still free", 1, 0, 0, [],
         "no discharge receipt addresses the F~M calibration gain")
 
     covered = sorted(r["coordinate"] for r in status)
     all_covered = covered == sorted(H_free)
     free_now = sum(r["free_dimension_now"] for r in status)
-    owed_now = sum(r["named_imports_or_premises_now"] for r in status)
+    owed_now = sum(r["owed_import_dimensions_now"] for r in status)
+    premises_now = sum(r["named_premises_now"] for r in status)
 
     # conventions that are NOT free dimensions but ARE owed
     conventions = [
@@ -1274,8 +1276,10 @@ def discharge_certificate(charts: dict) -> dict:
         "per_coordinate_status": status,
         "every_honest_free_coordinate_accounted": all_covered,
         "free_dimensions_now": free_now,
-        "named_imports_now": owed_now,
+        "owed_import_dimensions_now": owed_now,
+        "named_premises_attached_to_a_discharged_coordinate": premises_now,
         "named_conventions": conventions,
+        "named_convention_count": len(conventions),
         "finding": (
             f"Discharge accounting over the {len(H_free)} honest free "
             f"coordinates, complete and per-cycle attributed. 885 discharges D "
@@ -1297,7 +1301,8 @@ def current_residual_certificate(charts: dict, maps: dict, disc: dict) -> dict:
     ang_now = O["components"]["angular_coefficients_free_up_to_degree_12"]
 
     free_now = disc["free_dimensions_now"]
-    owed_now = disc["named_imports_now"]
+    owed_now = disc["owed_import_dimensions_now"]
+    premises_now = disc["named_premises_attached_to_a_discharged_coordinate"]
 
     # the same residual re-expressed on the orbit-indexed chart: everything is
     # unchanged except that the ONE angular coordinate c4 becomes the tower.
@@ -1344,12 +1349,17 @@ def current_residual_certificate(charts: dict, maps: dict, disc: dict) -> dict:
         "angular_cutoff_table": angular_table,
         "cutoff_arithmetic_consistent": consistent,
         "the_number_the_audit_lane_needs": free_now,
+        "named_premises_attached_to_a_discharged_coordinate": premises_now,
+        "named_convention_count": disc["named_convention_count"],
         "statement": (
             f"CURRENT GB-S2 RESIDUAL = {free_now} free dimensions on the "
             f"honest chart at the landed angular truncation "
             f"(sigma, theta, mu, c4, g, and ONE window convention), PLUS "
-            f"{owed_now} owed interface properties as a named import, PLUS "
-            f"{len(disc['named_conventions'])} named conventions. On the "
+            f"{owed_now} owed interface properties (IF1, IF3, IF4, IF5, IF6) "
+            f"as a single named import, PLUS "
+            f"{disc['named_convention_count']} named conventions/premises (of "
+            f"which {premises_now} -- the barrier identification -- is what "
+            f"discharged a coordinate). On the "
             f"orbit-indexed chart the same residual reads {o_current}, the "
             f"difference being exactly the angular tower "
             f"({ang_now} coefficients up to degree 12 against the landed "
@@ -1515,10 +1525,10 @@ def main() -> int:
         emit("  " + line)
     emit()
     emit(f"  exact arithmetic: {m['exact_arithmetic']}")
-    emit(f"  bookkeeping A ({m['bookkeeping_A_dimension']}): "
-         f"{m['bookkeeping_A']}")
-    emit(f"  bookkeeping B ({m['bookkeeping_B_dimension']}): "
-         f"{m['bookkeeping_B']}")
+    emit(f"  bookkeeping A ({m['bookkeeping_A_dimension']}, "
+         f"{m['bookkeeping_A_scope']}): {m['bookkeeping_A_the_880_pin']}")
+    emit(f"  bookkeeping B ({m['bookkeeping_B_dimension']}, "
+         f"{m['bookkeeping_B_scope']}): {m['bookkeeping_B_the_871_report']}")
     emit(f"  injective={m['map_is_injective']} "
          f"no_double_count={m['no_element_double_counted']} "
          f"covers_B={m['map_covers_B_completely']}")
@@ -1571,8 +1581,9 @@ def main() -> int:
     emit("PER-CYCLE DISCHARGE ATTRIBUTION")
     emit("-" * 78)
     for r in sci["G_DISCHARGES"]["per_coordinate_status"]:
-        emit(f"  {r['coordinate']:<8} now={r['free_dimension_now']} "
-             f"owed={r['named_imports_or_premises_now']:<2} "
+        emit(f"  {r['coordinate']:<8} free_now={r['free_dimension_now']} "
+             f"owed_import={r['owed_import_dimensions_now']} "
+             f"premises={r['named_premises_now']} "
              f"cycles={r['attributed_to_cycles']}")
         for line in _wrap(r["verdict_now"], 68):
             emit("      " + line)

@@ -793,12 +793,30 @@ def recover_883_recipe() -> dict:
                 and node.targets[0].id == "L3_FIXED_LOCUS_DENSITY":
             anchor = _eval_form(node.value, {})
 
-    # (4) the COARSE reading, recovered from C883-T6's own words and formula
+    # (4) the COARSE reading, recovered from C883-T6's own theorem statement.
+    #     Adjacent string literals are joined by the parser, so the sentence
+    #     is recovered as one constant and never as a line-wrapped grep.
+    t6 = next((node for node in ast.walk(tree)
+               if isinstance(node, ast.FunctionDef)
+               and node.name == "discrimination_certificate"), None)
+    t6_theorem = None
+    if t6 is not None:
+        for node in ast.walk(t6):
+            if not (isinstance(node, ast.Return)
+                    and isinstance(node.value, ast.Dict)):
+                continue
+            for key, value in zip(node.value.keys, node.value.values):
+                if isinstance(key, ast.Constant) and key.value == "theorem":
+                    try:
+                        t6_theorem = ast.literal_eval(value)
+                    except Exception:
+                        t6_theorem = None
     src = _read_text(AUDIT_INPUT_PATHS[1])
-    coarse_sentence = ("it is (1, 1) at\n"
-                       "    n = 2 and (1, 3) at n = 4")
     coarse_key_present = "matches_the_formula_1_n_minus_1" in src
-    coarse_words_present = coarse_sentence in src
+    coarse_words_present = bool(
+        t6_theorem
+        and "the ordered isotype pair is exactly (1, n - 1)" in t6_theorem
+        and "(1, 3) at n = 4" in t6_theorem)
 
     ok = (binding is not None and len(forms) == 7 and anchor == TARGET_ANCHOR
           and consts.get("ORBIT_LENGTH") == DECLARED_883_ORBIT_LENGTH
@@ -825,6 +843,7 @@ def recover_883_recipe() -> dict:
         ),
         "coarse_sentence_found_verbatim": coarse_words_present,
         "coarse_formula_key_found": coarse_key_present,
+        "recovered_C883_T6_theorem_statement": t6_theorem,
         "_forms": forms,
     }
 
@@ -967,24 +986,46 @@ SCOPE_ORDER = ["C2_face", "C2_edge", "C3_body", "C4_face", "V_edge",
                "S3_body"]
 
 
+def hecke_algebra_basis(subgroup, points):
+    """Basis of End_H(M): all matrices commuting with every rho(h).  Its
+    dimension is the number of H-orbits on X x X (the FIND-3 identity)."""
+    n = len(points)
+    mats = [permutation_matrix(g, points) for g in sorted(subgroup)]
+    rows = []
+    for m in mats:
+        for i in range(n):
+            for j in range(n):
+                row = [Fraction(0)] * (n * n)
+                for k in range(n):
+                    row[i * n + k] += m[k][j]        # (A rho)_{ij}
+                    row[k * n + j] -= m[i][k]        # (rho A)_{ij}
+                rows.append(row)
+    flat = kernel_basis(rows, n * n)
+    return [[[v[i * n + j] for j in range(n)] for i in range(n)]
+            for v in flat]
+
+
 def readout_decomposition(scope) -> dict:
-    """Fine rational decomposition of the readout (permutation) module, by
-    cyclotomic kernels for cyclic scopes and by simultaneous eigenlines for
-    the elementary-abelian one, with the FIND-3 pair-orbit identity as gate."""
+    """The readout (permutation) module of the free orbit.  The COARSE split
+    comes from 888's group-theoretic route.  MULTIPLICITY-FREENESS is decided
+    by the standard exact criterion -- the module is multiplicity-free iff its
+    Hecke algebra End_H(M) is commutative -- with the FIND-3 pair-orbit
+    identity as an independent dimension gate.  Fine rational dimensions are
+    computed by cyclotomic kernels where a single generator exists and by
+    simultaneous sign eigenspaces for the elementary-abelian scope; where
+    neither route applies the field is reported as null rather than guessed."""
     h, points = scope["subgroup"], scope["points"]
     n = len(points)
     gens = [g for g in sorted(h) if g != IDENT and element_order(g) == len(h)]
+    dec, route = None, None
     if gens:
         mat = permutation_matrix(gens[0], points)
         dec = cyclotomic_fine_dims(mat, element_order(gens[0]))
         route = "cyclotomic_kernels_of_a_generator"
-    else:
-        # elementary abelian: split by the simultaneous +/-1 eigenlines
+    elif all(element_order(g) <= 2 for g in h):
         mats = [permutation_matrix(g, points) for g in sorted(h)]
-        dims, blocks = [], []
-        seen_dim = 0
-        signs = list(product((1, -1), repeat=len(mats)))
-        for sign in signs:
+        dims, blocks, seen_dim = [], [], 0
+        for sign in product((1, -1), repeat=len(mats)):
             rows = []
             for s, m in zip(sign, mats):
                 rows.extend(mat_sub(m, [[Fraction(s) if i == j else Fraction(0)
@@ -996,26 +1037,31 @@ def readout_decomposition(scope) -> dict:
                                "component_dimension": len(ker)})
                 dims.extend([1] * len(ker))
                 seen_dim += len(ker)
-        dec = ({"minimal_polynomial": None, "isotypes": blocks,
-                "fine_dims": sorted(dims), "space_dimension": n,
-                "multiplicity_free": all(b["component_dimension"] == 1
-                                         for b in blocks)}
-               if seen_dim == n else None)
         route = "simultaneous_sign_eigenspaces"
-    if dec is None:
-        return {"ok": False, "route": route}
-    coarse = group_pair(h, points)
-    sum_m2_f = pair_orbit_identity(h, points)
+        if seen_dim == n:
+            dec = {"minimal_polynomial": None, "isotypes": blocks,
+                   "fine_dims": sorted(dims), "space_dimension": n}
+    else:
+        route = "no_single_generator_and_not_elementary_abelian"
+
+    hecke = hecke_algebra_basis(h, points)
+    commutes = all(mat_mul(a, b) == mat_mul(b, a)
+                   for a in hecke for b in hecke)
+    pair_orbits = pair_orbit_identity(h, points)
     return {
         "ok": True,
         "route": route,
         "space_dimension": n,
-        "coarse_pair": list(coarse),
-        "fine_dims": dec["fine_dims"],
-        "multiplicity_free": dec["multiplicity_free"],
-        "pair_orbit_identity_orbits_on_X_times_X": sum_m2_f,
-        "FIND3_safety_gate": sum_m2_f == len(h),
-        "minimal_polynomial_of_a_generator": dec["minimal_polynomial"],
+        "coarse_pair": list(group_pair(h, points)),
+        "fine_dims": dec["fine_dims"] if dec else None,
+        "multiplicity_free": commutes,
+        "multiplicity_freeness_route":
+            "End_H(M) is commutative (Hecke-algebra criterion)",
+        "hecke_algebra_dimension": len(hecke),
+        "pair_orbit_identity_orbits_on_X_times_X": pair_orbits,
+        "FIND3_safety_gate": len(hecke) == pair_orbits == len(h),
+        "minimal_polynomial_of_a_generator":
+            dec["minimal_polynomial"] if dec else None,
     }
 
 
@@ -1211,7 +1257,7 @@ def l_face_certificate() -> dict:
             continue
         h = scope["subgroup"]
         order = len(h)
-        non_identity = [(f"g^{i}", g) for i, g in
+        non_identity = [(f"h{i}_order{element_order(g)}", g) for i, g in
                         enumerate(sorted(h)) if g != IDENT]
 
         geo = geometric_transverse(scope)
@@ -1231,6 +1277,11 @@ def l_face_certificate() -> dict:
         mats = [(lbl, permutation_matrix(g, points)) for lbl, g in
                 non_identity]
         read_l = l_face_on(complement, mats, order)
+        red_fine = readout_decomposition(scope)["fine_dims"]
+        transverse_fine = None
+        if red_fine is not None:
+            transverse_fine = sorted(red_fine)
+            transverse_fine.remove(1)          # drop the invariant line
 
         rows.append({
             "scope": name,
@@ -1247,7 +1298,8 @@ def l_face_certificate() -> dict:
             },
             "readout_transverse_space": {
                 "dimension": n - 1,
-                "fine_dims": readout_decomposition(scope)["fine_dims"],
+                "readout_module_fine_dims": red_fine,
+                "transverse_fine_dims": transverse_fine,
                 "L_face": {k: v for k, v in read_l.items()
                            if not k.startswith("_")},
             },
@@ -1452,8 +1504,21 @@ def q3_certificate() -> dict:
                              for p in range(1, MOBIUS_BOUND + 1)
                              for r in range(1, MOBIUS_BOUND + 1)})
     tau = None
+    degenerate_constants_inside = []
     for a, b, c, d in tuples:
         if d == 0:
+            # M(F) = (aF + b) / (cF).  If b == 0 this is the constant a/c;
+            # otherwise |M(F)| >= (|b| - |a|F)/(|c|F), which exceeds the
+            # enclosure once F < |b| / (|a| + hi*|c|).  Both branches are
+            # computed, not asserted.
+            if b == 0:
+                const = Fraction(a, c)
+                if lo <= const <= hi:
+                    degenerate_constants_inside.append(q(const))
+                continue
+            bound = Fraction(abs(b), 1) / (Fraction(abs(a)) + hi * abs(c))
+            if tau is None or bound < tau:
+                tau = bound
             continue
         r = Fraction(b, d)
         delta = (Fraction(0) if lo <= r <= hi
@@ -1572,6 +1637,10 @@ def q3_certificate() -> dict:
             "largest_N_still_above_the_threshold_per_base_family": n0,
             "finite_scan_covers_the_whole_tail": tail_covered,
             "limit_point_count": len(limit_points),
+            "degenerate_d_equals_zero_constants_inside_the_enclosure":
+                degenerate_constants_inside,
+            "no_degenerate_constant_is_inside":
+                not degenerate_constants_inside,
         },
         "finding": (
             f"{len(inside)} of the {len(base) * len(cd_pairs)} scanned "
@@ -1581,7 +1650,8 @@ def q3_certificate() -> dict:
             f"bare family value is 2/9 at distance "
             f"{float(min(abs(Fraction(2, 9) - lo), abs(Fraction(2, 9) - hi))):.6e}."
         ),
-        "pass": (len(inside) == 0 and tail_covered and dist > 0),
+        "pass": (len(inside) == 0 and tail_covered and dist > 0
+                 and not degenerate_constants_inside),
     }
 
 
@@ -1714,9 +1784,11 @@ def table_certificate(native: dict, lface: dict) -> dict:
             "MULTIPLICITY TWO (fine dims [1, 1, 2, 2]), so the split is a P^1 "
             "family and the construction is not canonical there.  It is "
             "listed for completeness and excluded from the binding table.  "
-            "Its retained L-face is also undefined: the three order-2 "
-            "elements act on the body-diagonal normal plane as reflections, "
-            "so det_R(I - h) = 0."),
+            "Its retained L-face is also undefined, and for a computed "
+            "reason: the three order-2 elements of the body-diagonal S3 "
+            "REVERSE the body diagonal, so the subgroup's common fixed space "
+            "is 0-dimensional and the note's fixed-locus / normal-plane split "
+            "does not exist at all.  Same for V_edge."),
         "E_trivial_note": (
             "The trivial subgroup has free orbit length 1, coarse pair "
             "(1, 0), and every family degenerates: F_dim(1) = 0, F_res(1) = "

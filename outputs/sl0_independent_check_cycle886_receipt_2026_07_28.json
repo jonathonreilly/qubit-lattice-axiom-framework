@@ -1,0 +1,1122 @@
+{
+  "cycle": 886,
+  "fidelity_rows": [
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL01_free_on_shell",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "fix",
+        "free",
+        "orbit",
+        "stabiliz",
+        "invariant point"
+      ],
+      "primary_fidelity": "NONE",
+      "primary_grounded": false,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": true,
+      "sentence_can_express_the_filter": false,
+      "vocabulary_terms_the_sentence_actually_contains": []
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL02_transitive_on_shell",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "transitive",
+        "orbit",
+        "single orbit",
+        "acts on"
+      ],
+      "primary_fidelity": "NONE",
+      "primary_grounded": false,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": true,
+      "sentence_can_express_the_filter": false,
+      "vocabulary_terms_the_sentence_actually_contains": []
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": true,
+      "id": "SEL03_multiplicity_one_orbit_scope",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "multiplicity",
+        "invariant",
+        "dimension",
+        "isotype"
+      ],
+      "primary_fidelity": "NONE",
+      "primary_grounded": false,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": true,
+      "sentence_can_express_the_filter": false,
+      "vocabulary_terms_the_sentence_actually_contains": []
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL04_multiplicity_one_shell_scope",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "multiplicity",
+        "invariant",
+        "dimension",
+        "isotype"
+      ],
+      "primary_fidelity": "NONE",
+      "primary_grounded": false,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": true,
+      "sentence_can_express_the_filter": false,
+      "vocabulary_terms_the_sentence_actually_contains": []
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL05_minimal_shell_invariant_multiplicity",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "minim",
+        "fewest",
+        "multiplicity"
+      ],
+      "primary_fidelity": "NONE",
+      "primary_grounded": false,
+      "primary_isolates_C3": true,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": false,
+      "sentence_can_express_the_filter": false,
+      "vocabulary_terms_the_sentence_actually_contains": []
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL06_maximal_free_shell_orbit",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "maxim",
+        "largest",
+        "orbit",
+        "free"
+      ],
+      "primary_fidelity": "NONE",
+      "primary_grounded": false,
+      "primary_isolates_C3": true,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": false,
+      "sentence_can_express_the_filter": false,
+      "vocabulary_terms_the_sentence_actually_contains": []
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL07_coarse_pair_v2_equals_one",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "v_2",
+        "weight pair",
+        "(1, 2)"
+      ],
+      "primary_fidelity": "EXACT",
+      "primary_grounded": false,
+      "primary_isolates_C3": true,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": false,
+      "sentence_can_express_the_filter": true,
+      "vocabulary_terms_the_sentence_actually_contains": [
+        "v_2",
+        "weight pair",
+        "(1, 2)"
+      ]
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL08_reachability_R1_orbit_scope",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "multiplicative",
+        "reach",
+        "2/9",
+        "v_2"
+      ],
+      "primary_fidelity": "PARTIAL",
+      "primary_grounded": false,
+      "primary_isolates_C3": true,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": false,
+      "sentence_can_express_the_filter": true,
+      "vocabulary_terms_the_sentence_actually_contains": [
+        "v_2"
+      ]
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL09_reachability_R2_shell_scope",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "multiplicative",
+        "reach",
+        "2/9",
+        "v_2"
+      ],
+      "primary_fidelity": "PARTIAL",
+      "primary_grounded": false,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": false,
+      "sentence_can_express_the_filter": true,
+      "vocabulary_terms_the_sentence_actually_contains": [
+        "v_2"
+      ]
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL10_fine_top_pair_is_the_target",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "irreducible",
+        "rational",
+        "weight pair"
+      ],
+      "primary_fidelity": "NONE",
+      "primary_grounded": false,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": false,
+      "sentence_can_express_the_filter": false,
+      "vocabulary_terms_the_sentence_actually_contains": []
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL11_transitive_on_coordinate_axes",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "transitive",
+        "axis",
+        "axes",
+        "permute",
+        "cycle"
+      ],
+      "primary_fidelity": "PARTIAL",
+      "primary_grounded": false,
+      "primary_isolates_C3": true,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": true,
+      "sentence_can_express_the_filter": false,
+      "vocabulary_terms_the_sentence_actually_contains": []
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": false,
+      "id": "SEL12_odd_order",
+      "independent_grounding_verdict": false,
+      "operative_vocabulary_the_filter_needs": [
+        "odd",
+        "parity",
+        "order of"
+      ],
+      "primary_fidelity": "NONE",
+      "primary_grounded": false,
+      "primary_isolates_C3": true,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": false,
+      "sentence_can_express_the_filter": false,
+      "vocabulary_terms_the_sentence_actually_contains": []
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": true,
+      "id": "SEL13_count_once",
+      "independent_grounding_verdict": true,
+      "operative_vocabulary_the_filter_needs": [
+        "record",
+        "site",
+        "more than one",
+        "permanent"
+      ],
+      "primary_fidelity": "EXACT",
+      "primary_grounded": true,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": true,
+      "sentence_can_express_the_filter": true,
+      "vocabulary_terms_the_sentence_actually_contains": [
+        "record",
+        "site",
+        "more than one",
+        "permanent"
+      ]
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": true,
+      "id": "SEL14_content_only_readout",
+      "independent_grounding_verdict": true,
+      "operative_vocabulary_the_filter_needs": [
+        "readout",
+        "record content",
+        "readable"
+      ],
+      "primary_fidelity": "EXACT",
+      "primary_grounded": true,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": true,
+      "sentence_can_express_the_filter": true,
+      "vocabulary_terms_the_sentence_actually_contains": [
+        "readout",
+        "record content",
+        "readable"
+      ]
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": true,
+      "id": "SEL15_admissibility_covariance",
+      "independent_grounding_verdict": true,
+      "operative_vocabulary_the_filter_needs": [
+        "covariant",
+        "rotations",
+        "rule"
+      ],
+      "primary_fidelity": "EXACT",
+      "primary_grounded": true,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": true,
+      "sentence_can_express_the_filter": true,
+      "vocabulary_terms_the_sentence_actually_contains": [
+        "covariant",
+        "rotations",
+        "rule"
+      ]
+    },
+    {
+      "OVER_CLAIMED_grounding": false,
+      "UNDER_CLAIMED_grounding": false,
+      "fidelity_grade_unsupported": false,
+      "filter_is_non_discriminating": true,
+      "id": "SEL16_no_site_privileged_read_literally",
+      "independent_grounding_verdict": true,
+      "operative_vocabulary_the_filter_needs": [
+        "privileged",
+        "distinguished",
+        "lattice structure"
+      ],
+      "primary_fidelity": "EXACT",
+      "primary_grounded": true,
+      "primary_isolates_C3": false,
+      "quoted_sentence_present_in_the_cycle882_primary": false,
+      "quoted_sentence_present_in_the_pinned_AXIOM_memo": true,
+      "sentence_can_express_the_filter": true,
+      "vocabulary_terms_the_sentence_actually_contains": [
+        "privileged",
+        "distinguished",
+        "lattice structure"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "does_it_refute_a_number": false,
+      "id": "FIND-1",
+      "severity": "scope gap",
+      "text": "The CYCLIC restriction on the census is an unpriced supplied choice. The full subgroup lattice contains order-6 subgroups isomorphic to S3 that act SIMPLY TRANSITIVELY on the 6-neighbour shell. On that scope the shell is one free orbit and the invariant multiplicity is exactly 1 -- so the primary's SEL02 and SEL04 'empty' rows, and route refusals R-B and R-D that rest on them, are artifacts of the restriction. The priced menu should read 'four cyclic classes PLUS the simply-transitive S3 class'."
+    },
+    {
+      "does_it_refute_a_number": false,
+      "id": "FIND-2",
+      "severity": "fragility not shown",
+      "text": "SEL06 (freeness + maximal orbit length) is the most fragile entry in the menu and the primary did not show it. Dropping the freeness conjunct moves the survivor set from {C3_body} to {C4_face}, because the longest shell orbit in the whole group has length 4. The primary graded the selector ungrounded but never exhibited the movement."
+    },
+    {
+      "does_it_refute_a_number": false,
+      "id": "FIND-3",
+      "severity": "presentation",
+      "text": "The independently-grounded selector set coincides exactly with the set of trivially-satisfied filters, so the headline 'the axiom-grounded conjunction admits all four classes' is nearly a restatement of the primary's own measurement that the axiom memo contains zero subgroup vocabulary. The load-bearing content is the per-row fidelity grading of the six DISCRIMINATING selectors, and that should be the headline."
+    },
+    {
+      "does_it_refute_a_number": false,
+      "id": "FIND-4",
+      "severity": "understated result",
+      "text": "The scope-circularity of the reachability selector is the strongest anti-derivation argument in the block and it is buried in a 'what_moves' string. Recomputed here independently: R1 gives {C3_body}, R2 gives {C2_edge, C3_body}. A selector whose verdict depends on the scope cannot fix the scope, and that alone forecloses route R-H without any fidelity argument."
+    },
+    {
+      "does_it_refute_a_number": false,
+      "id": "FIND-5",
+      "severity": "missing computation",
+      "text": "The primary never computed what a v_2 = 1 datum would look like at a scope that is NOT a single orbit -- for instance the two-orbit C3 shell scope, where the pair is (2, 4) and BOTH entries have nonzero 2-adic valuation. That row exists in the primary's shell-scope table but is never brought to the T6 question in its own right."
+    }
+  ],
+  "independent_census": {
+    "C1_identity": 1,
+    "C2_edge": 6,
+    "C2_face": 3,
+    "C3_body": 4,
+    "C4_face": 3
+  },
+  "independent_group_order": 24,
+  "independent_reachability": {
+    "R1_orbit_scope_coarse": [
+      "C3_body"
+    ],
+    "R2_shell_scope_coarse": [
+      "C2_edge",
+      "C3_body"
+    ],
+    "R3_orbit_scope_fine": [
+      "C3_body"
+    ],
+    "R4_shell_scope_fine": [
+      "C3_body"
+    ]
+  },
+  "independent_signatures": [
+    {
+      "label": "C2_edge",
+      "orbit": {
+        "coarse_pair": [
+          1,
+          1
+        ],
+        "coarse_two_adic_profile": [
+          0,
+          0
+        ],
+        "complex_multiplicities": {
+          "1": {
+            "multiplicity_each": 1,
+            "primitive_roots": 1
+          },
+          "2": {
+            "multiplicity_each": 1,
+            "primitive_roots": 1
+          }
+        },
+        "complex_sum": 2,
+        "fine_dimensions": [
+          1,
+          1
+        ],
+        "fine_sum": 2,
+        "fine_sums_to_the_space": true,
+        "fine_top": 1,
+        "fine_top_pair": [
+          1,
+          1
+        ],
+        "orbit_lengths": [
+          2
+        ],
+        "space_dimension": 2
+      },
+      "shell": {
+        "coarse_pair": [
+          3,
+          3
+        ],
+        "coarse_two_adic_profile": [
+          0,
+          0
+        ],
+        "complex_multiplicities": {
+          "1": {
+            "multiplicity_each": 3,
+            "primitive_roots": 1
+          },
+          "2": {
+            "multiplicity_each": 3,
+            "primitive_roots": 1
+          }
+        },
+        "complex_sum": 6,
+        "fine_dimensions": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "fine_sum": 6,
+        "fine_sums_to_the_space": true,
+        "fine_top": 1,
+        "fine_top_pair": [
+          3,
+          1
+        ],
+        "orbit_lengths": [
+          2,
+          2,
+          2
+        ],
+        "space_dimension": 6
+      }
+    },
+    {
+      "label": "C2_face",
+      "orbit": {
+        "coarse_pair": [
+          1,
+          1
+        ],
+        "coarse_two_adic_profile": [
+          0,
+          0
+        ],
+        "complex_multiplicities": {
+          "1": {
+            "multiplicity_each": 1,
+            "primitive_roots": 1
+          },
+          "2": {
+            "multiplicity_each": 1,
+            "primitive_roots": 1
+          }
+        },
+        "complex_sum": 2,
+        "fine_dimensions": [
+          1,
+          1
+        ],
+        "fine_sum": 2,
+        "fine_sums_to_the_space": true,
+        "fine_top": 1,
+        "fine_top_pair": [
+          1,
+          1
+        ],
+        "orbit_lengths": [
+          2
+        ],
+        "space_dimension": 2
+      },
+      "shell": {
+        "coarse_pair": [
+          4,
+          2
+        ],
+        "coarse_two_adic_profile": [
+          2,
+          1
+        ],
+        "complex_multiplicities": {
+          "1": {
+            "multiplicity_each": 4,
+            "primitive_roots": 1
+          },
+          "2": {
+            "multiplicity_each": 2,
+            "primitive_roots": 1
+          }
+        },
+        "complex_sum": 6,
+        "fine_dimensions": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "fine_sum": 6,
+        "fine_sums_to_the_space": true,
+        "fine_top": 1,
+        "fine_top_pair": [
+          4,
+          1
+        ],
+        "orbit_lengths": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "space_dimension": 6
+      }
+    },
+    {
+      "label": "C3_body",
+      "orbit": {
+        "coarse_pair": [
+          1,
+          2
+        ],
+        "coarse_two_adic_profile": [
+          0,
+          1
+        ],
+        "complex_multiplicities": {
+          "1": {
+            "multiplicity_each": 1,
+            "primitive_roots": 1
+          },
+          "3": {
+            "multiplicity_each": 1,
+            "primitive_roots": 2
+          }
+        },
+        "complex_sum": 3,
+        "fine_dimensions": [
+          1,
+          2
+        ],
+        "fine_sum": 3,
+        "fine_sums_to_the_space": true,
+        "fine_top": 2,
+        "fine_top_pair": [
+          1,
+          2
+        ],
+        "orbit_lengths": [
+          3
+        ],
+        "space_dimension": 3
+      },
+      "shell": {
+        "coarse_pair": [
+          2,
+          4
+        ],
+        "coarse_two_adic_profile": [
+          1,
+          2
+        ],
+        "complex_multiplicities": {
+          "1": {
+            "multiplicity_each": 2,
+            "primitive_roots": 1
+          },
+          "3": {
+            "multiplicity_each": 2,
+            "primitive_roots": 2
+          }
+        },
+        "complex_sum": 6,
+        "fine_dimensions": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "fine_sum": 6,
+        "fine_sums_to_the_space": true,
+        "fine_top": 2,
+        "fine_top_pair": [
+          2,
+          2
+        ],
+        "orbit_lengths": [
+          3,
+          3
+        ],
+        "space_dimension": 6
+      }
+    },
+    {
+      "label": "C4_face",
+      "orbit": {
+        "coarse_pair": [
+          1,
+          3
+        ],
+        "coarse_two_adic_profile": [
+          0,
+          0
+        ],
+        "complex_multiplicities": {
+          "1": {
+            "multiplicity_each": 1,
+            "primitive_roots": 1
+          },
+          "2": {
+            "multiplicity_each": 1,
+            "primitive_roots": 1
+          },
+          "4": {
+            "multiplicity_each": 1,
+            "primitive_roots": 2
+          }
+        },
+        "complex_sum": 4,
+        "fine_dimensions": [
+          1,
+          1,
+          2
+        ],
+        "fine_sum": 4,
+        "fine_sums_to_the_space": true,
+        "fine_top": 2,
+        "fine_top_pair": [
+          1,
+          2
+        ],
+        "orbit_lengths": [
+          4
+        ],
+        "space_dimension": 4
+      },
+      "shell": {
+        "coarse_pair": [
+          3,
+          3
+        ],
+        "coarse_two_adic_profile": [
+          0,
+          0
+        ],
+        "complex_multiplicities": {
+          "1": {
+            "multiplicity_each": 3,
+            "primitive_roots": 1
+          },
+          "2": {
+            "multiplicity_each": 1,
+            "primitive_roots": 1
+          },
+          "4": {
+            "multiplicity_each": 1,
+            "primitive_roots": 2
+          }
+        },
+        "complex_sum": 6,
+        "fine_dimensions": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "fine_sum": 6,
+        "fine_sums_to_the_space": true,
+        "fine_top": 2,
+        "fine_top_pair": [
+          3,
+          2
+        ],
+        "orbit_lengths": [
+          1,
+          1,
+          4
+        ],
+        "space_dimension": 6
+      }
+    }
+  ],
+  "noncyclic_attack": {
+    "finding": "The proper cubic rotation group DOES contain subgroups acting simply transitively on the 6-neighbour shell, and they are not cyclic -- they are the order-6 subgroups isomorphic to S3, the stabilizers of a body diagonal. On such a scope the readout space is the regular representation: the shell is a SINGLE FREE ORBIT, the invariant multiplicity is EXACTLY ONE, and the complex irreducible dimensions are 1, 1, 2. So the two selectors the primary reported as COMPUTATIONALLY EMPTY -- SEL02 shell transitivity and SEL04 shell multiplicity-one -- are not empty at all once 'cyclic' is dropped. They are satisfied, uniquely, by a NON-cyclic scope.",
+    "simply_transitive_subgroups": [
+      {
+        "acts_freely": true,
+        "acts_transitively": true,
+        "coarse_pair_on_the_shell": [
+          1,
+          5
+        ],
+        "complex_irreducible_dimensions": [
+          1,
+          1,
+          2
+        ],
+        "conjugacy_classes": 3,
+        "dimension_solution_is_unique": true,
+        "fine_top_if_dims_known": 2,
+        "invariant_multiplicity_on_the_shell": 1,
+        "is_cyclic": false,
+        "label": "NONCYCLIC_order6",
+        "order": 6,
+        "reaches_2_9_regular_rep_fine": true,
+        "reaches_2_9_shell_coarse": false,
+        "shell_orbit_lengths": [
+          6
+        ],
+        "simply_transitive": true
+      },
+      {
+        "acts_freely": true,
+        "acts_transitively": true,
+        "coarse_pair_on_the_shell": [
+          1,
+          5
+        ],
+        "complex_irreducible_dimensions": [
+          1,
+          1,
+          2
+        ],
+        "conjugacy_classes": 3,
+        "dimension_solution_is_unique": true,
+        "fine_top_if_dims_known": 2,
+        "invariant_multiplicity_on_the_shell": 1,
+        "is_cyclic": false,
+        "label": "NONCYCLIC_order6",
+        "order": 6,
+        "reaches_2_9_regular_rep_fine": true,
+        "reaches_2_9_shell_coarse": false,
+        "shell_orbit_lengths": [
+          6
+        ],
+        "simply_transitive": true
+      },
+      {
+        "acts_freely": true,
+        "acts_transitively": true,
+        "coarse_pair_on_the_shell": [
+          1,
+          5
+        ],
+        "complex_irreducible_dimensions": [
+          1,
+          1,
+          2
+        ],
+        "conjugacy_classes": 3,
+        "dimension_solution_is_unique": true,
+        "fine_top_if_dims_known": 2,
+        "invariant_multiplicity_on_the_shell": 1,
+        "is_cyclic": false,
+        "label": "NONCYCLIC_order6",
+        "order": 6,
+        "reaches_2_9_regular_rep_fine": true,
+        "reaches_2_9_shell_coarse": false,
+        "shell_orbit_lengths": [
+          6
+        ],
+        "simply_transitive": true
+      },
+      {
+        "acts_freely": true,
+        "acts_transitively": true,
+        "coarse_pair_on_the_shell": [
+          1,
+          5
+        ],
+        "complex_irreducible_dimensions": [
+          1,
+          1,
+          2
+        ],
+        "conjugacy_classes": 3,
+        "dimension_solution_is_unique": true,
+        "fine_top_if_dims_known": 2,
+        "invariant_multiplicity_on_the_shell": 1,
+        "is_cyclic": false,
+        "label": "NONCYCLIC_order6",
+        "order": 6,
+        "reaches_2_9_regular_rep_fine": true,
+        "reaches_2_9_shell_coarse": false,
+        "shell_orbit_lengths": [
+          6
+        ],
+        "simply_transitive": true
+      }
+    ]
+  },
+  "outcome_class_verdict": "The primary's outcome class (b) PRICING SURVIVES. The derivation route (a) is independently refused: no selector whose sentence is in the pinned axiom memo AND whose sentence can express its own filter isolates C3_body. The enumerated-route no-go half is confirmed. The pricing menu is INCOMPLETE -- it omits the non-cyclic simply-transitive scope -- which widens the priced question without changing its class.",
+  "over_claimed_grounding": [],
+  "per_claim_verdicts": {
+    "B_INDEPENDENT_GROUP": "SURVIVES",
+    "C_INDEPENDENT_CENSUS": "SURVIVES",
+    "D_INDEPENDENT_ISOTYPE": "SURVIVES",
+    "E_INDEPENDENT_REACHABILITY": "SURVIVES",
+    "F_QUOTE_FIDELITY_ATTACK": "SURVIVES"
+  },
+  "refutation_attempts": [
+    {
+      "attack": "the 24-element group is wrong or incomplete",
+      "method": "rebuilt from M M^T = I over 19683 integer matrices",
+      "n": 1,
+      "result": "SURVIVES"
+    },
+    {
+      "attack": "a cyclic subgroup was dropped from the census",
+      "method": "closure of every subset of size <= 2 plus every union of found subgroups, then filtered for cyclicity",
+      "n": 2,
+      "result": "SURVIVES"
+    },
+    {
+      "attack": "an isotype decomposition is wrong",
+      "method": "orbit-length divisibility characters, no cyclotomics",
+      "n": 3,
+      "result": "SURVIVES"
+    },
+    {
+      "attack": "an unreachability verdict is a window artifact",
+      "method": "Smith-style diagonalization, self-tested on six lattices",
+      "n": 4,
+      "result": "SURVIVES"
+    },
+    {
+      "attack": "a selector's byte-quoted sentence does not say what its filter computes, or a grounding grade is over-claimed",
+      "method": "independent presence test against the pinned axiom memo plus operative-vocabulary coverage",
+      "n": 5,
+      "result": "SURVIVES"
+    },
+    {
+      "attack": "the survivor sets are fragile under selector weakening, so the pricing menu is illusory",
+      "method": "six variants the primary did not run",
+      "n": 6,
+      "result": "PARTIALLY LANDS: V1 moves the survivor set from {C3_body} to {C4_face}; the menu entries are individually fragile, which STRENGTHENS the pricing outcome (b) and further weakens any reading of the block as a derivation"
+    },
+    {
+      "attack": "the outcome class is wrong -- this is really (a) or really (c)",
+      "method": "recomputed grounded conjunction and route ledger",
+      "n": 7,
+      "result": "(a) stays refused: no independently-grounded selector isolates C3. (c) is the established half, and the primary labels it as such. (b) stands, with the menu shown to be incomplete by attempt 8."
+    },
+    {
+      "attack": "the CYCLIC restriction on the census is itself an unpriced choice",
+      "method": "full subgroup lattice enumerated; simply-transitive subgroups identified",
+      "n": 8,
+      "result": "LANDS: non-cyclic simply-transitive scopes exist, so two of the primary's 'empty selector' rows are artifacts and the priced menu is incomplete"
+    },
+    {
+      "attack": "the primary imported or executed a pinned artifact",
+      "method": "meta-path firewall plus module-table inspection here, and the primary's own firewall record in its receipt",
+      "n": 9,
+      "result": "SURVIVES: no pinned module is loadable in this process either"
+    }
+  ],
+  "role": "independent adversarial checker for the SL0 orbit-scope block",
+  "selector_variants": [
+    {
+      "isolates_C3": false,
+      "moves_away_from_C3": true,
+      "survivors": [
+        "C4_face"
+      ],
+      "variant": "V1_drop_freeness_from_maximality"
+    },
+    {
+      "isolates_C3": true,
+      "moves_away_from_C3": false,
+      "survivors": [
+        "C3_body"
+      ],
+      "variant": "V2_weaken_multiplicity_one_to_at_most_two"
+    },
+    {
+      "isolates_C3": false,
+      "moves_away_from_C3": true,
+      "survivors": [
+        "C2_edge",
+        "C3_body",
+        "C4_face"
+      ],
+      "variant": "V3_weaken_multiplicity_one_to_at_most_three"
+    },
+    {
+      "isolates_C3": false,
+      "moves_away_from_C3": true,
+      "survivors": [
+        "C2_edge"
+      ],
+      "variant": "V4_freeness_plus_MINIMAL_orbit_length"
+    },
+    {
+      "isolates_C3": false,
+      "moves_away_from_C3": true,
+      "survivors": [
+        "C3_body",
+        "C4_face"
+      ],
+      "variant": "V5_v2_equals_one_anywhere_in_the_fine_dimensions"
+    },
+    {
+      "isolates_C3": false,
+      "moves_away_from_C3": true,
+      "survivors": [],
+      "variant": "V6_reachability_from_the_orbit_cardinality_alone"
+    }
+  ],
+  "source_pins": [
+    {
+      "git_blob": "f4493d787ffb6edc50e9dd13d37ba1cd1dd4d24a",
+      "path": "scripts/frontier_cycle886_sl0_orbit_scope_2026_07_28.py",
+      "sha256": "1dfa47a86de8cab5a91cd33a022beb845d918e2f93ceb58f360b2708a44d02a2"
+    },
+    {
+      "git_blob": "4d9999c241b19b2670a51c809e3e39fb0d339f10",
+      "path": "outputs/sl0_orbit_scope_cycle886_receipt_2026_07_28.json",
+      "sha256": "74d64090515cf7f7c5ad5f8e6347f7d2f81a9c1cf0b41e9ec7726ad30a62d69d"
+    },
+    {
+      "git_blob": "ccac4b6423921c36d7e2c0574d95668a72fe6ef6",
+      "path": "logs/runner-cache/frontier_cycle886_sl0_orbit_scope_2026_07_28.txt",
+      "sha256": "fed2ed4b65fa7a4c474d943dc521eca80515e9c3644441d072f29bcf33aec306"
+    },
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+      "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+      "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c"
+    },
+    {
+      "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
+      "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+      "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a"
+    }
+  ],
+  "spec": "REFUTE",
+  "teeth": [
+    {
+      "bites": true,
+      "expected_exit": 2,
+      "expected_failing_certificate": null,
+      "id": "T1_tampered_pin",
+      "observed_exit": 2,
+      "observed_failing_certificates": [],
+      "patch_applied_exactly_once": true,
+      "patch_sites_found": 1,
+      "stderr_head": [
+        "PREFLIGHT HARD FAIL: pin digest mismatch: docs/MINIMAL_AXIOMS_2026-06-29.md sha256 fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697 != 0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "target_certificate_or_gate": "preflight pin digest check"
+    },
+    {
+      "bites": true,
+      "expected_exit": 1,
+      "expected_failing_certificate": "D_CYCLIC_SUBGROUP_CENSUS",
+      "id": "T2_dropped_subgroup",
+      "observed_exit": 1,
+      "observed_failing_certificates": [
+        "D_CYCLIC_SUBGROUP_CENSUS",
+        "M_PRICE"
+      ],
+      "patch_applied_exactly_once": true,
+      "patch_sites_found": 1,
+      "stderr_head": [],
+      "target_certificate_or_gate": "the Lagrange / Euler-phi census identity"
+    },
+    {
+      "bites": true,
+      "expected_exit": 1,
+      "expected_failing_certificate": "I_SELECTOR_TABLE",
+      "id": "T3_hardcoded_survivor_set",
+      "observed_exit": 1,
+      "observed_failing_certificates": [
+        "I_SELECTOR_TABLE"
+      ],
+      "patch_applied_exactly_once": true,
+      "patch_sites_found": 1,
+      "stderr_head": [],
+      "target_certificate_or_gate": "every_survivor_set_is_a_subset_of_the_census"
+    },
+    {
+      "bites": true,
+      "expected_exit": 1,
+      "expected_failing_certificate": "G_ISOTYPE_SIGNATURES",
+      "id": "T4_broken_isotype_decomposition",
+      "observed_exit": 1,
+      "observed_failing_certificates": [
+        "G_ISOTYPE_SIGNATURES",
+        "N_IMPOSTOR_STRESS"
+      ],
+      "patch_applied_exactly_once": true,
+      "patch_sites_found": 1,
+      "stderr_head": [],
+      "target_certificate_or_gate": "fine_decomposition_sums_to_the_space"
+    },
+    {
+      "bites": true,
+      "expected_exit": 1,
+      "expected_failing_certificate": "C_ROTATION_GROUP",
+      "id": "T5_falsified_burnside_count",
+      "observed_exit": 1,
+      "observed_failing_certificates": [
+        "C_ROTATION_GROUP"
+      ],
+      "patch_applied_exactly_once": true,
+      "patch_sites_found": 1,
+      "stderr_head": [],
+      "target_certificate_or_gate": "burnside_agrees_with_direct_count"
+    },
+    {
+      "bites": true,
+      "expected_exit": 1,
+      "expected_failing_certificate": "K_ANCHOR_REACHABILITY",
+      "id": "T6_reachability_always_true",
+      "observed_exit": 1,
+      "observed_failing_certificates": [
+        "K_ANCHOR_REACHABILITY"
+      ],
+      "patch_applied_exactly_once": true,
+      "patch_sites_found": 1,
+      "stderr_head": [],
+      "target_certificate_or_gate": "windowed_scan_corroborates_every_reachable_verdict"
+    },
+    {
+      "bites": true,
+      "expected_exit": 1,
+      "expected_failing_certificate": "F_C883_CONSTRUCTION_REBUILT",
+      "id": "T7_falsified_construction_rebuild",
+      "observed_exit": 1,
+      "observed_failing_certificates": [
+        "F_C883_CONSTRUCTION_REBUILT"
+      ],
+      "patch_applied_exactly_once": true,
+      "patch_sites_found": 1,
+      "stderr_head": [],
+      "target_certificate_or_gate": "reproduces_the_landed_cycle883_result"
+    },
+    {
+      "bites": true,
+      "checker_verdict_on_the_trapped_receipt": "REFUTED",
+      "id": "T8_circularity_trap_on_the_checker",
+      "method": "the primary's receipt is mutated in memory so that the target-facing C882-T6 selector is declared axiom-GROUNDED -- the exact circularity that would upgrade the block to outcome (a) -- and the checker's own grading is re-run",
+      "note": "This mutation flips NO primary gate, by design: the primary's gates are outcome-neutral. It is caught only by the independent grounding recomputation, which is why that recomputation is the checker's top target.",
+      "over_claimed_grounding_detected": [
+        "SEL07_coarse_pair_v2_equals_one"
+      ],
+      "target_certificate_or_gate": "F_QUOTE_FIDELITY_ATTACK / over_claimed_grounding"
+    }
+  ],
+  "teeth_that_bite": 8,
+  "under_claimed_grounding": []
+}

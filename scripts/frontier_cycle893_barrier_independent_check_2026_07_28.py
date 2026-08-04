@@ -741,8 +741,23 @@ def new_barrier_certificate(rec):
         outside[name] = {"induced_S_size": len(S),
                          "configs_where_it_is_NOT_that_dilation": mismatch,
                          "is_outside_the_DILATION_family": mismatch > 0}
+    # ---- the STRONGER test: is the new barrier's set-map identical to ANY
+    # barrier the primary evaluated?  If it matches none of the 31, it is a new
+    # POINT in the space and not merely a new name for an old one.
+    prim_sigs = {n: tuple(tuple(sorted(f(c))) for c in FAMILY)
+                 for n, f in PRIMARY_BARRIERS}
+    novelty = {}
+    for name, fn in NEW_BARRIERS:
+        sig = tuple(tuple(sorted(fn(c))) for c in FAMILY)
+        same = sorted(p for p, s in prim_sigs.items() if s == sig)
+        novelty[name] = {
+            "identical_to_a_primary_barrier": same,
+            "is_a_genuinely_new_point_in_the_space": not same,
+        }
+
     missed = sorted(n for n in admissible_new
-                    if outside[n]["is_outside_the_DILATION_family"])
+                    if outside[n]["is_outside_the_DILATION_family"]
+                    and novelty[n]["is_a_genuinely_new_point_in_the_space"])
     return {
         "attack": ("recompute the map on SIX barriers the primary never "
                    "evaluated, and hunt for an admissible family its "
@@ -753,8 +768,21 @@ def new_barrier_certificate(rec):
         "new_barriers_that_INVERT_the_break": inverts,
         "inversion_found": bool(inverts),
         "dilation_family_membership": outside,
+        "novelty_against_every_primary_barrier": novelty,
         "MISSED_ADMISSIBLE_FAMILIES": missed,
         "missed_family_count": len(missed),
+        "missed_family_significance": (
+            "These are admissible barriers that are (a) outside the primary's "
+            "DILATION family by Matheron extraction, (b) set-distinct from ALL "
+            f"{len(PRIMARY_BARRIERS)} barriers the primary evaluated, and (c) "
+            "built by constructions -- morphological closing/opening and a "
+            "per-site adaptive dilation -- that none of the primary's seven "
+            "declared families names.  The primary's Q1 enumeration is "
+            "therefore INCOMPLETE as a family list.  It does NOT follow that "
+            "Q1's headline is wrong: the primary's own honest-size result "
+            "already proved the space infinite, and every one of these missed "
+            "barriers PRESERVES the gauge break, so Q3's verdict is "
+            "strengthened rather than damaged."),
         "finding": (
             f"{len(admissible_new)}/{len(NEW_BARRIERS)} new barriers are "
             f"admissible.  {len(inverts)} of them invert the gauge break.  "

@@ -121,10 +121,16 @@ worktrees:
     terminal clause registered for the owner surface: 'the readout scope
     is multiplicity-free', consequence set {C3, C4}; one verdict-flipping
     rubric defect found and fixed in the open
-  c5-t5: T5 (Cycle 891, the even-complement mechanism derived 881-style
-    with a declared B=4/5-derive, B=6/7-holdout split + the non-two-run
-    dirt anatomy at B=7 with a k-run law attempt; stacked on T4 tip
-    2d3f825736) — running
+  c5-t5: blockT5 SHIPPED as PR #5951 — Cycle 891 both 889 open questions
+    CLOSED: complement mechanism derived (transport = 4 rows of an incident
+    edge incl. HANDOFF; three shapes; DELTA is an EDGE property, the
+    complement a BANK property b=B-2-e) with SEALED holdout (B=6 exact;
+    B=7 value 4/4, carrier 3/4 — P=32 miss reported; 40/48 residuals 2
+    episodes each anatomized); k-run law derived exactly (6,148 cells, 0
+    mismatches; 889's law = the k=2 sub-case; all four B=7 anomalies =
+    stretch-local readings; the word-selection boundary stated); worker
+    hypothesis corrected mid-block; checker first run HONEST_FAILed its
+    own coverage gate (both disclosed)
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

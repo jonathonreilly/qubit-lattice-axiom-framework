@@ -271,3 +271,24 @@
   equivalence theorem + computed endpoint + reconstruction-proof
   sweep.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 891 complement mechanism (blockT5, PR #5951) — 2026-08-04
+
+- Supervisor review: seal implementation verified in source (digest
+  computed and printed before any holdout corpus; build-log
+  holdout-freedom gated); note carries both process disclosures
+  (worker's refuted first hypothesis; checker's HONEST_FAIL on its
+  own coverage gate) and the carrier-level miss as data.
+- Checker: 10/10 gates; holdout audited from the rule's STATED TEXT
+  alone (text determinate); interval-algebra detector; 2,553
+  out-of-family law-attack cells 0 mismatches; all witness anatomies
+  register-verified with a second tick generator; 7/7 teeth;
+  findings_the_primary_did_not_report EMPTY.
+- Post-ship note edit on T4 (2e0926ec45): the "ever fire" sentence
+  scoped to the two-run mechanism after the T4 worker's post-
+  completion audit flagged it as the block's most misreadable line;
+  ship-receipt pin refreshed.
+- Cluster-cap (5th T-family PR): **OPEN** — dual named-question
+  closure with sealed-holdout discipline and a strictly-generalizing
+  law.
+- Local disposition: **pass** (bounded_theorem; audit pending).

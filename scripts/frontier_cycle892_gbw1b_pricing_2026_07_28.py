@@ -939,8 +939,8 @@ def q1_certificate(cat: dict, orders: dict) -> dict:
         if not all(set(sets[a][i]) <= set(sets[b][i])
                    for i in range(len(FAMILY))):
             continue
-        for c in FAMILY:
-            extra = set(sets[b][FAMILY.index(c)]) - set(sets[a][FAMILY.index(c)])
+        for i, c in enumerate(FAMILY):
+            extra = set(sets[b][i]) - set(sets[a][i])
             for t in THETA_GRID:
                 diff_checks += 1
                 lhs = zs[(b, c["name"], q(t))] - zs[(a, c["name"], q(t))]
@@ -1506,11 +1506,19 @@ def stress_certificate(cat: dict) -> dict:
                 "of": cp["configs"],
                 "in_the_partition": name in holding,
             })
-    # ---- a PLANTED containment breaker built here, not borrowed
+    # ---- a PLANTED containment breaker built here, not borrowed.  It is
+    #      deliberately ADMISSIBLE, so that only the CONTAINMENT filter can
+    #      catch it: a breaker that admissibility already refuses would not
+    #      test the containment filter at all.
+    S_DIAG = tuple(sorted(x for x in product((-1, 0, 1), repeat=3)
+                          if sum(c * c for c in x) == 2))
+
     def planted_breaker(cfg):
-        """supp(R) shifted by one lattice step: equivariant, monotone, and
-        it drops the support on every configuration."""
-        st = {(s[0] + 2, s[1], s[2]) for s in cfg["sites"]}
+        """supp(R) dilated by the 12 face-diagonal offsets.  The structuring
+        set is rotation-invariant and the map is a Minkowski sum, so it is
+        equivariant and monotone -- admissible -- but it does NOT contain the
+        origin offset, so it displaces the window off the support."""
+        st = NS887["minkowski"](cfg["sites"], S_DIAG)
         return NS887["packaged"](st, NS887["barycentre"](cfg))
 
     pb_ev = NS887["evaluate_map"](planted_breaker)
@@ -1529,38 +1537,60 @@ def stress_certificate(cat: dict) -> dict:
             "entered_the_partition": name in holding,
         })
 
-    # ---- (3) FALSIFIER VISIBILITY: a planted Z-difference must be DETECTED
-    #      and, symmetrically, a planted Z-EQUALITY must be detected too.
-    def sig(name, mutate=None):
+    # ---- (3) FALSIFIER VISIBILITY: a planted Z-difference must be DETECTED,
+    #      a null perturbation must NOT be, and two windows that really are
+    #      the same must still land in the same class.
+    def sig(name, mutate=Fraction(0)):
+        """The window's Z signature, optionally with an amplitude perturbation
+        planted at a site that is INSIDE the window and already carries
+        amplitude -- so the plant is guaranteed visible to Z if the partition
+        can see anything at all."""
         out = []
         for cfg in FAMILY:
+            W = window_of(name, cfg)
             for t in THETA_GRID:
-                W = window_of(name, cfg)
-                if mutate is None:
-                    out.append(q(Z(cfg, t, W)))
-                else:
-                    amp = dict(amp_field(cfg, t))
-                    for x in list(amp)[:1]:
-                        amp[x] = cadd(amp[x], (Fraction(mutate), Fraction(0)))
-                    out.append(q(sum((cabs2(amp[x]) for x in W if x in amp
-                                      and x in INBOX), Fraction(0))))
+                amp = amp_field(cfg, t)
+                if mutate:
+                    live = sorted(x for x in W
+                                  if x in amp and x in INBOX
+                                  and amp[x] != ZERO_C)
+                    if live:
+                        amp = dict(amp)
+                        amp[live[0]] = cadd(amp[live[0]],
+                                            (Fraction(mutate), Fraction(0)))
+                out.append(q(sum((cabs2(amp[x]) for x in W
+                                  if x in amp and x in INBOX), Fraction(0))))
         return tuple(out)
 
-    probe = sorted(holding)[0]
-    clean = sig(probe)
-    planted = sig(probe, mutate=Fraction(1, 1000))
-    planted_seen = clean != planted
+    plant_rows = []
+    for name in sorted(holding):
+        clean = sig(name)
+        planted = sig(name, mutate=Fraction(1, 1000))
+        carries = any(v != q(Fraction(0)) for v in clean)
+        plant_rows.append({
+            "window": name,
+            "window_carries_amplitude_somewhere": carries,
+            "planted_difference_detected": clean != planted,
+            "detection_required": carries,
+        })
+    planted_missed = [r["window"] for r in plant_rows
+                      if r["detection_required"]
+                      and not r["planted_difference_detected"]]
+    planted_seen = not planted_missed and any(
+        r["planted_difference_detected"] for r in plant_rows)
 
-    # ---- a NULL control: the partition must NOT invent a difference
-    null_seen = sig(probe) != sig(probe)
+    # ---- NULL control: an unperturbed re-read must NOT invent a difference
+    null_seen = any(sig(n) != sig(n) for n in sorted(holding))
 
-    # ---- a positive control: two windows KNOWN to be set-identical must
-    #      land in the SAME class, so the partition is not merely hashing names
-    set_identical_same_class = True
-    for cls in cat.get("_unused", []):
-        pass
-    supp_name = "minkowski_S_zero__the_885_support_window"
-    self_same = _z_signature(supp_name) == _z_signature(supp_name)
+    # ---- POSITIVE control: windows that are SET-IDENTICAL on this family
+    #      must land in the SAME Z class, so the partition keys on Z and not
+    #      on the map's name.
+    sets = {n: tuple(tuple(sorted(window_of(n, c))) for c in FAMILY)
+            for n in holding}
+    identical_pairs = [[a, b] for a, b in combinations(sorted(holding), 2)
+                       if sets[a] == sets[b]]
+    identical_same_class = all(_z_signature(a) == _z_signature(b)
+                               for a, b in identical_pairs)
 
     return {
         "stress_1_containment_breakers_excluded": {
@@ -1568,11 +1598,19 @@ def stress_certificate(cat: dict) -> dict:
             "all_excluded_from_the_partition": all(
                 not b["in_the_partition"] for b in breakers),
             "planted_breaker": {
-                "construction": "supp(R) translated by (2,0,0)",
+                "construction":
+                    "supp(R) dilated by the 12 face-diagonal offsets "
+                    "(rotation-invariant, origin absent)",
                 "admissible_REQ1_REQ5": pb_ev["admissible_REQ1_REQ5"],
+                "equivariance_failures": pb_ev["equivariance_failures"],
+                "permanence_failures": pb_ev["permanence_failures"],
                 "contains_support_on": pb_cp["contains_support"],
                 "of": pb_cp["configs"],
                 "excluded_by_the_containment_filter": pb_excluded,
+                "why_this_construction":
+                    "it is deliberately ADMISSIBLE, so only the containment "
+                    "filter can catch it; a breaker that REQ1-REQ5 already "
+                    "refuses would not test the containment filter at all",
             },
         },
         "stress_2_non_admissible_refused": {
@@ -1581,32 +1619,49 @@ def stress_certificate(cat: dict) -> dict:
                 not r["entered_the_partition"] for r in refused),
         },
         "stress_3_falsifier_visibility": {
-            "probe_window": probe,
-            "planted_amplitude_perturbation": "1/1000 added at one site",
+            "planted_amplitude_perturbation":
+                "1/1000 added at one window site that already carries "
+                "amplitude, so the plant is guaranteed to be inside the "
+                "quantity under test",
+            "per_window": plant_rows,
+            "windows_where_detection_was_required":
+                sum(1 for r in plant_rows if r["detection_required"]),
+            "windows_that_MISSED_a_planted_difference": planted_missed,
             "planted_difference_DETECTED_by_the_partition": planted_seen,
             "null_control_invents_a_difference": null_seen,
-            "self_comparison_is_stable": self_same,
+            "set_identical_window_pairs": identical_pairs,
+            "set_identical_pairs_land_in_the_same_class":
+                identical_same_class,
             "reading": (
-                "The partition is shown to be capable of seeing a difference "
-                "that is planted and of NOT seeing one that is not.  A "
-                "partition that could only ever report 'all the same' would "
-                "make Q1's verdict vacuous; this rules that out in both "
-                "directions."),
+                "Three-way control.  The partition SEES a planted difference "
+                "on every window that carries any amplitude; it does NOT "
+                "invent one on an unperturbed re-read; and it puts windows "
+                "that really are the same set into the same class rather than "
+                "keying on the map's name.  A partition that could only ever "
+                "report 'all the same' -- or only ever 'all different' -- "
+                "would make Q1's verdict vacuous; both failure modes are "
+                "ruled out."),
         },
         "finding": (
             f"{len(breakers)} admissible catalogue maps break containment and "
             f"{sum(1 for b in breakers if b['in_the_partition'])} of them "
             f"entered the partition; the independently planted breaker is "
-            f"admissible={pb_ev['admissible_REQ1_REQ5']} and excluded="
-            f"{pb_excluded}.  {len(refused)} non-admissible maps are refused "
-            f"and {sum(1 for r in refused if r['entered_the_partition'])} "
-            f"entered.  A planted amplitude difference is detected="
-            f"{planted_seen} with null-control false alarm={null_seen}."),
+            f"admissible={pb_ev['admissible_REQ1_REQ5']}, contains the support "
+            f"on {pb_cp['contains_support']}/{pb_cp['configs']} configurations "
+            f"and is excluded={pb_excluded}.  {len(refused)} non-admissible "
+            f"maps are refused and "
+            f"{sum(1 for r in refused if r['entered_the_partition'])} entered. "
+            f"A planted amplitude difference is detected on every window that "
+            f"carries amplitude ({len(planted_missed)} misses), the null "
+            f"control raises no false alarm ({null_seen}), and set-identical "
+            f"pairs share a class ({identical_same_class})."),
         "pass": (all(not b["in_the_partition"] for b in breakers)
-                 and len(breakers) > 0 and pb_excluded
+                 and len(breakers) > 0
+                 and pb_ev["admissible_REQ1_REQ5"] and pb_excluded
                  and all(not r["entered_the_partition"] for r in refused)
                  and len(refused) > 0
-                 and planted_seen and not null_seen and self_same),
+                 and planted_seen and not planted_missed and not null_seen
+                 and identical_same_class),
     }
 
 
@@ -1627,7 +1682,8 @@ def obligation_map(cat, orders, q1, kern, iface, scan) -> dict:
          "dimensions": window_dims,
          "computed_evidence": (
              f"{len(holding)} containment-holding admissible windows fall into "
-             f"{q1['quadratic_classes']} Z classes; "
+             f"{orders['LINEAR_order']['classes']} class at LINEAR order and "
+             f"{q1['quadratic_classes']} classes under Z; "
              f"{q1['pairs_that_separate']} of {q1['pairs_compared']} pairs "
              f"separate; the only non-separating pair is set-identical."),
          "named_convention_if_load_bearing": (
@@ -1827,20 +1883,25 @@ def honesty_certificate(sci: dict) -> dict:
 # N: controls
 # --------------------------------------------------------------------------
 def controls_certificate(sci: dict, elapsed: float, double_ok: bool) -> dict:
+    def got(label, key):
+        """A skipped certificate reads as a FAILED control, never a missing
+        one: a restriction-gate abort must not silently drop a gate."""
+        return bool(sci.get(label, {}).get(key, False))
+
     checks = {
         "exact_arithmetic_only": True,
         "no_floating_point_in_certified_values": True,
         "deterministic_double_build": double_ok,
         "runtime_within_cap": elapsed <= RUNTIME_CAP_SEC,
         "firewall_hits_zero": len(FIREWALL.hits) == 0,
-        "theta_grid_complete": sci["F_BOTH_ORDERS"][
-            "theta_grid_contains_the_six_required"],
-        "catalogue_complete": sci["D_CATALOGUE"]["every_named_map_evaluated"],
-        "both_orders_present": sci["F_BOTH_ORDERS"]["both_orders_computed"],
-        "restriction_gate_reproduced": sci["B_RESTRICTION_GATE"][
-            "all_reproduced"],
-        "family_digest_matches_887": sci["C_FAMILY"][
-            "family_digest_matches_887"],
+        "theta_grid_complete": got("F_BOTH_ORDERS",
+                                   "theta_grid_contains_the_six_required"),
+        "catalogue_complete": got("D_CATALOGUE", "every_named_map_evaluated"),
+        "both_orders_present": got("F_BOTH_ORDERS", "both_orders_computed"),
+        "restriction_gate_reproduced": got("B_RESTRICTION_GATE",
+                                           "all_reproduced"),
+        "family_digest_matches_887": got("C_FAMILY",
+                                         "family_digest_matches_887"),
     }
     return {
         "checks": checks,

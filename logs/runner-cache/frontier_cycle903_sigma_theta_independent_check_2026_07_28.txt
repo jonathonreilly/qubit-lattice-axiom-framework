@@ -3,7 +3,7 @@ runner: scripts/frontier_cycle903_sigma_theta_independent_check_2026_07_28.py
 runner_sha256: 6c5c3d9e3fede36e7b10be23c493f69002ee6093b9d6d1feafc03dbe9827bcaa
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.499
+elapsed_sec: 1.496
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -86,5 +86,5 @@ CLAIM SURVIVAL
    SURVIVES  B2_invariant_core_empty
    5/5 claims survive independent attack
 
-elapsed_sec: 1.447
+elapsed_sec: 1.445
 receipt: outputs/sigma_theta_independent_check_cycle903_receipt_2026_07_28.json

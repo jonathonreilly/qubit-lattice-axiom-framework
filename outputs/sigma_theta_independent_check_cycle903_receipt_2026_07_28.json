@@ -75,7 +75,7 @@
   "claims_surviving": 5,
   "claims_total": 5,
   "cycle": 903,
-  "elapsed_sec": 1.447,
+  "elapsed_sec": 1.445,
   "firewall_hits": [],
   "independent_adjudication": {
     "ablations": [
@@ -387,7 +387,7 @@
   "pins": {
     "all_ok": true,
     "pass": true,
-    "primary_receipt_sha256": "75a3fcbee832554a1aec61077f4a54b623d72b4b11398e01b48ab0d7d945f6c1",
+    "primary_receipt_sha256": "e0465028fa576e3e60e4ba24ca9540dddf0302f8a18edd8e696ad3101735b863",
     "primary_sha256": "4dccf702456a972f35b83262d470e63456b6d98f0eeb2a0fad3393b3f1d4afe4",
     "rows": [
       {

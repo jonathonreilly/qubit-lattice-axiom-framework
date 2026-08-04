@@ -3,7 +3,7 @@ runner: scripts/frontier_cycle903_sigma_theta_2026_07_28.py
 runner_sha256: 4dccf702456a972f35b83262d470e63456b6d98f0eeb2a0fad3393b3f1d4afe4
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 2.896
+elapsed_sec: 2.806
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -31,13 +31,13 @@ PINNED INPUTS (path / sha256 / git blob)
     blob   553bba1fbd427f27c5606b6f27bd592a91e9c3c0  ok=True
 
 871-LINEAGE DISCOVERY (absence disclosed with scan counts)
-  files scanned: 9801 across {'scripts': 5506, 'outputs': 356, 'logs/runner-cache': 3939}
+  files scanned: 9805 across {'scripts': 5507, 'outputs': 357, 'logs/runner-cache': 3941}
     probe cycle871               present=False  matches=0
     probe blockG2                present=False  matches=0
     probe bridge_pricing         present=False  matches=0
     probe source_action_bridge   present=True  matches=3
-    probe sigma                  present=True  matches=40
-  The cycle-871 / blockG2 bridge-pricing artifact is NOT on this branch.  9801 filenames were scanned across 3 directories.  The three IDENTIFYING probes (cycle871, blockG2, bridge_pricing) returned 0 hits in total.  The two GENERIC probes did match files, and every one of them belongs to a different lane (the yt operational source-action attempt, and dm/sigma-hierarchy runners) or is this runner itself -- none is the 871 bridge pricing.  The dimension statement this cycle needs is therefore REBUILT from the Gate-B notes' own rows (certificate E), not inherited, and nothing downstream of this runner cites 871 as a source.
+    probe sigma                  present=True  matches=44
+  The cycle-871 / blockG2 bridge-pricing artifact is NOT on this branch.  9805 filenames were scanned across 3 directories.  The three IDENTIFYING probes (cycle871, blockG2, bridge_pricing) returned 0 hits in total.  The two GENERIC probes did match files, and every one of them belongs to a different lane (the yt operational source-action attempt, and dm/sigma-hierarchy runners) or is this runner itself -- none is the 871 bridge pricing.  The dimension statement this cycle needs is therefore REBUILT from the Gate-B notes' own rows (certificate E), not inherited, and nothing downstream of this runner cites 871 as a source.
 
 RESTRICTION GATE (Gate-B rows): 15 needles byte-verified, all_found=True
 RESTRICTION GATE (885 N-certificate): pinned 7/12  recomputed 7/12  match=True
@@ -125,5 +125,5 @@ GATES
   determinism: True   firewall hits: 0   blocklisted loaded: []
 
 ALL GATES PASS: True
-elapsed_sec: 2.839
+elapsed_sec: 2.75
 receipt: outputs/sigma_theta_cycle903_receipt_2026_07_28.json

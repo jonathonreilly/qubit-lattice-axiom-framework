@@ -18,17 +18,17 @@
   "certificates": {
     "A_PINS_AND_871_LINEAGE": {
       "all_pins_verified": true,
-      "disclosure": "The cycle-871 / blockG2 bridge-pricing artifact is NOT on this branch.  9801 filenames were scanned across 3 directories.  The three IDENTIFYING probes (cycle871, blockG2, bridge_pricing) returned 0 hits in total.  The two GENERIC probes did match files, and every one of them belongs to a different lane (the yt operational source-action attempt, and dm/sigma-hierarchy runners) or is this runner itself -- none is the 871 bridge pricing.  The dimension statement this cycle needs is therefore REBUILT from the Gate-B notes' own rows (certificate E), not inherited, and nothing downstream of this runner cites 871 as a source.",
+      "disclosure": "The cycle-871 / blockG2 bridge-pricing artifact is NOT on this branch.  9805 filenames were scanned across 3 directories.  The three IDENTIFYING probes (cycle871, blockG2, bridge_pricing) returned 0 hits in total.  The two GENERIC probes did match files, and every one of them belongs to a different lane (the yt operational source-action attempt, and dm/sigma-hierarchy runners) or is this runner itself -- none is the 871 bridge pricing.  The dimension statement this cycle needs is therefore REBUILT from the Gate-B notes' own rows (certificate E), not inherited, and nothing downstream of this runner cites 871 as a source.",
       "generic_probe_matches": {
         "sigma": [
           "scripts/audit_companion_dm_sigma_hier_h_intrinsic_no_go_criticality_hygiene_2026_06_04.py",
           "scripts/frontier_cycle903_sigma_theta_2026_07_28.py",
+          "scripts/frontier_cycle903_sigma_theta_independent_check_2026_07_28.py",
           "scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py",
           "scripts/frontier_dm_sigma_hier_upper_octant_selector_theorem_2026_04_20.py",
           "scripts/frontier_dm_sigma_v_lattice.py",
           "scripts/frontier_hadron_lane1_sqrt_sigma_b2_gate_repair.py",
-          "scripts/frontier_hadron_lane1_sqrt_sigma_b2_gate_repair_audit_note_2026-04-30_hostile_audit_findings.py",
-          "scripts/frontier_hadron_lane1_sqrt_sigma_b2_static_energy_bridge.py"
+          "scripts/frontier_hadron_lane1_sqrt_sigma_b2_gate_repair_audit_note_2026-04-30_hostile_audit_findings.py"
         ],
         "source_action_bridge": [
           "scripts/frontier_yt_operational_source_action_bridge_theorem_attempt.py",
@@ -42,7 +42,7 @@
         "blockG2",
         "bridge_pricing"
       ],
-      "lineage_files_scanned": 9801,
+      "lineage_files_scanned": 9805,
       "lineage_probes": [
         {
           "label": "871 primary",
@@ -82,16 +82,16 @@
         },
         {
           "label": "sigma-named artifact",
-          "match_count": 40,
+          "match_count": 44,
           "matches": [
             "scripts/audit_companion_dm_sigma_hier_h_intrinsic_no_go_criticality_hygiene_2026_06_04.py",
             "scripts/frontier_cycle903_sigma_theta_2026_07_28.py",
+            "scripts/frontier_cycle903_sigma_theta_independent_check_2026_07_28.py",
             "scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py",
             "scripts/frontier_dm_sigma_hier_upper_octant_selector_theorem_2026_04_20.py",
             "scripts/frontier_dm_sigma_v_lattice.py",
             "scripts/frontier_hadron_lane1_sqrt_sigma_b2_gate_repair.py",
-            "scripts/frontier_hadron_lane1_sqrt_sigma_b2_gate_repair_audit_note_2026-04-30_hostile_audit_findings.py",
-            "scripts/frontier_hadron_lane1_sqrt_sigma_b2_static_energy_bridge.py"
+            "scripts/frontier_hadron_lane1_sqrt_sigma_b2_gate_repair_audit_note_2026-04-30_hostile_audit_findings.py"
           ],
           "present": true,
           "probe": "sigma",
@@ -99,9 +99,9 @@
         }
       ],
       "lineage_scan_dirs": {
-        "logs/runner-cache": 3939,
-        "outputs": 356,
-        "scripts": 5506
+        "logs/runner-cache": 3941,
+        "outputs": 357,
+        "scripts": 5507
       },
       "name": "A_PINS_AND_871_LINEAGE",
       "pass": true,
@@ -2617,8 +2617,8 @@
       "slit_incidence_between_k1_and_k0": true
     },
     "L_DETERMINISM": {
-      "digest_build_1": "b49b8822403f1b2ecde81f95aec79c13f2a74aa840eaef00206151ec7c358b80",
-      "digest_build_2": "b49b8822403f1b2ecde81f95aec79c13f2a74aa840eaef00206151ec7c358b80",
+      "digest_build_1": "ec8855c728dea312ad377a5ceb48edb9e6b8d53853c22299e13583b6f2dc1668",
+      "digest_build_2": "ec8855c728dea312ad377a5ceb48edb9e6b8d53853c22299e13583b6f2dc1668",
       "identical": true,
       "name": "L_DETERMINISM",
       "pass": true,
@@ -2636,7 +2636,7 @@
     }
   },
   "cycle": 903,
-  "elapsed_sec": 2.84,
+  "elapsed_sec": 2.751,
   "lineage_absent_from_this_worktree": [
     "cycle871",
     "blockG2",

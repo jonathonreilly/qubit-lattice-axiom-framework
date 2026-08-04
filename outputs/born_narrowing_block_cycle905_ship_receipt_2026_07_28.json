@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the 902 pair vendored with pre-commit digest verification; the checker's category-error first run disclosed with its fix commit; T9 propagated as mandated",
+  "block": "toe-time-blockQ2-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 77.0s; CORROBORATES_WITH_REFINEMENT (7/7 rows); 8/8 teeth",
+    "primary": "10/10 PASS, exit 0, 164.4s, FULL census (no sub-census needed); restriction gates 15/15 incl. the 878 digest rebuilt from the census"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "2nd Q-family PR this campaign (after #5932) \u2014 below the evaluator threshold; noted for the 3rd",
+  "cycles": [
+    905
+  ],
+  "files": {
+    "docs/BORN_NARROWING_CERTIFIED_LEDGER_OPENED_CYCLE905_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "96d8cfd2e1f686d37c74f377fbbc2667da5490a1",
+      "sha256": "8a8f724a1be93f368c89b90bedae97777bcae3fb6991367228a2ff85d014fec8"
+    },
+    "logs/runner-cache/frontier_cycle905_born_narrowing_2026_07_28.txt": {
+      "git_blob": "b35c35f99bc1fb01dc46ebb4cf20c2ae081dcc8c",
+      "sha256": "2a5bad392927ed3b5a294980eb168f761a646d285735f39e322f135394fb843a"
+    },
+    "logs/runner-cache/frontier_cycle905_born_narrowing_independent_check_2026_07_28.txt": {
+      "git_blob": "8d53bfb516f7d4993f40d96c931b78d6dbe70189",
+      "sha256": "b014002717db15d6e5c12f790603af2b7ef1e672e50fcc55bd342c1a24be9ea9"
+    },
+    "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": {
+      "git_blob": "7094c986dc0560e8982507d8cc379f5c720b639f",
+      "sha256": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40"
+    },
+    "outputs/born_narrowing_independent_check_cycle905_receipt_2026_07_28.json": {
+      "git_blob": "a50dedc8ff124b544e3452b357fd6797b96c0d2a",
+      "sha256": "be726163cfc84d63610daec7c90c5b29c6139dd4d2bfa42a628f17bdf652018d"
+    },
+    "scripts/frontier_cycle905_born_narrowing_2026_07_28.py": {
+      "git_blob": "f9f2171602bddf7d6164261dc13a2ee4f7e3046c",
+      "sha256": "83429f35312e0df16d3d11e65685cb87b8e732b19299e1078ddaea1e1444afb3"
+    },
+    "scripts/frontier_cycle905_born_narrowing_independent_check_2026_07_28.py": {
+      "git_blob": "e3c94f578ef775939ea3051f42aea3d74f2f0726",
+      "sha256": "95743c60b8615424f8353d789274d2aef9c157b8284bebbf156b791248285001"
+    }
+  },
+  "headline": "THE BORN LANE OPENS: the gravity-side narrowing CERTIFIED at the true census (5 -> {M3,M4,M5}; mechanism = the never-formed block, 584 worlds / 73,088 events; conditional on declared P-NONEMPTY); true base rank = 5 (extension dim collapses to 25; 902's generator relation TRUE AND USELESS); Q2 STABLE \u2014 the survivors are discrimination TWINS (identical differing cells on every family; C905-T3: M3/M4 zero sets SET-IDENTICAL \u2014 no support requirement can ever separate them); the residual priced to a divisibility obligation with named primes (M3 {37,3229}, M4 {59,163,2861}, M5 {41687}; non-vacuous, scales exhibited); LEDGER OPENED (7 rows) incl. BL6 (79% of events zero-mass under all survivors) and BL7 THE TENSION: the only monitor-phase-covariant candidate is exactly the one the interface excludes \u2014 no survivor is covariant",
+  "independence": "cross-context (five agreeing rank routes incl. modular rank over 3 primes and an exhibited nonsingular minor; exhaustive exclusion-witness hunt; the lattice refinement adopted; 8/8 teeth)",
+  "note": "docs/BORN_NARROWING_CERTIFIED_LEDGER_OPENED_CYCLE905_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 77.0,
+    "primary": 164.4
+  }
+}

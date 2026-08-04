@@ -1,0 +1,1202 @@
+{
+ "Q1_absolute_E1_worlds": [
+  3,
+  4,
+  11,
+  12,
+  19,
+  20,
+  26,
+  27,
+  32,
+  33,
+  37,
+  47,
+  48,
+  55,
+  56,
+  63,
+  64,
+  70,
+  71,
+  76,
+  77,
+  81,
+  91,
+  92,
+  99,
+  100,
+  107,
+  108,
+  114,
+  115,
+  120,
+  121,
+  125
+ ],
+ "Q1_absolute_E1_worlds_by_event": {
+  "0": [
+   3,
+   4,
+   11,
+   12,
+   19,
+   20,
+   26,
+   27,
+   32,
+   33,
+   37
+  ],
+  "1": [
+   47,
+   48,
+   55,
+   56,
+   63,
+   64,
+   70,
+   71,
+   76,
+   77,
+   81
+  ],
+  "2": [
+   91,
+   92,
+   99,
+   100,
+   107,
+   108,
+   114,
+   115,
+   120,
+   121,
+   125
+  ]
+ },
+ "Q1_common_indexing": "NOT type-blocked and NOT a chosen correspondence.  Cycle 856 (derive_scope) and Cycle 863 (derive_census) BOTH build tuple(sorted(...)) of the SAME generated key set -- (k, event, positions) for k in 2..5, positions a pairwise-separated combination of the 11 stations, event one of the four seeds -- from the same Cycle-719 core, and the two tuples are byte-identical.  Cycle 878 labels a world by its LANE INDEX into exactly that tuple.  The correspondence is therefore the IDENTITY ON A SHARED OBJECT: world w is the key census[w].  There is no free relabelling parameter to choose, and no map to license",
+ "Q1_escape_is_exactly_one_absolute_orbit": true,
+ "Q1_escape_orbit_worlds": [
+  3,
+  4,
+  11,
+  12,
+  19,
+  20,
+  26,
+  27,
+  32,
+  33,
+  37
+ ],
+ "Q1_relation_escape_to_absolute_E1": "PROPER_SUBSET",
+ "Q1_verdict": "IDENTIFIED.  The escape orbit is not merely shaped like Cycle 856's absolute-record orbits -- it IS one of them, world for world, on the canonical common indexing.  It is the event-0 member of the three; the event-1 and event-2 absolute orbits are absolute under 856's E1 stamp but are NOT escape orbits of the Cycle-878 ledger, so the inclusion is PROPER: escape (11 worlds) is a proper subset of absolute_E1 (33 worlds), and the 878 formation predicate is STRICTLY STRONGER on this census than the 856 E1 stamp predicate",
+ "Q2_E1_worlds_not_formed_by_the_878_horizon": 18,
+ "Q2_formation_ledger_identity": true,
+ "Q2_formed_subset_of_E1": true,
+ "Q2_mechanism_verdict": "SHARED CAUSE EXHIBITED, AND IT IS AN IDENTITY, NOT AN ANALOGY.  The two predicates are the same globally-clean test on the same 477 dirty coordinates of the same Cycle-719 trajectory, read at two horizons; the Cycle-878 record writes are inert with respect to it.  P-856-SHAPE therefore discharges POSITIVELY: the shapes match because the same substrate fact produces both",
+ "Q2_phase_stationarity_explanation": "with the identification in hand the 908 stationarity is a corollary rather than a separate fact: the escape orbit is an absolute-record orbit, and 856's absolute set is by construction the INTERSECTION over all eleven monitor placements, hence monitor-independent; and it is a union of frame orbits, hence closed under the very relabelling that the phase composition applies.  The 908 transport theorem and this absoluteness are two readings of one fact",
+ "Q2_shape_origin": "the shape is not a label, it is a necessary condition.  On the 11-station ring a k=2 setup at separations 5/6 is the unique pairwise-separated 2-source configuration whose two ring gaps are both maximal (5 and 6, the balanced split of 11), and EVERY orbit that goes fully clean inside 51,115 orbits sits at that maximum.  It is necessary and NOT sufficient: the four max-gap orbits are the four event labels, and the event-3 orbit never goes fully clean within the horizon, which is exactly why Cycle 856 reports three absolute orbits and not four.  Both lineages inherit the shape from the same substrate fact and neither chooses it; the event label does the remaining discrimination in both",
+ "Q3_856_absolute_count_is_horizon_critical": {
+  "856_total_boundaries": 562265,
+  "last_absolute_orbit_full_clean_boundary": 562264,
+  "reading": "Cycle 856's headline count of THREE absolute-record orbits is itself horizon-critical: the last of the three completes one boundary before 856's own trajectory ends.  Had Cycle 856 stopped two boundaries earlier it would have reported two absolute orbits and 22 absolute setups, not three and 33.  This is a scope note the 856 lineage does not carry, and it is surfaced here because the identification makes both lineages' counts horizon-indexed quantities",
+  "slack_boundaries": 1
+ },
+ "Q3_M6_branch_scope": "M6 -- and any successor construction M7/M8 built on 'the escape orbit' -- is scoped to the horizon window [14744, 33195) controller orbits.  The pinned Cycle-878 horizon 16384 lies inside it, so Cycle 906's exhibited solution and its uniqueness-up-to-scale claim are correct AS STATED at the pinned horizon.  Below the window M6 collapses to the zero weighting (no orbit escapes the never-formed block); at or above the upper endpoint a SECOND orbit escapes, the world-mass solution space stops being one-dimensional, and 'the escape orbit' stops denoting.  The scope note is therefore not relaxed by the identification -- it is sharpened into an interval, and the interval is a property of the 878 horizon choice, not of the orbit",
+ "Q3_M6_horizon_window": [
+  14744,
+  33195
+ ],
+ "Q3_late_horizon_caveat_status": "REAL AND SHARPENED, NOT AN ARTIFACT.  The 908 checker's observation stands on recomputation: the escape orbit's own worlds first go clean deep inside the pinned horizon, so at short horizons no orbit escapes and M6 is the zero weighting.  But the identification turns a soft caveat into an exact two-sided window: M6 exists only above the first full-formation threshold, and M6's DEFINING ORBIT IS UNIQUE only below the second.  Both endpoints are now computed",
+ "Q3_pinned_horizon_inside_the_window": true,
+ "VERDICT": "P_856_SHAPE_DISCHARGED__ESCAPE_ORBIT_IS_AN_856_ABSOLUTE_RECORD_ORBIT__SHARED_PREDICATE_EXHIBITED__M6_SCOPED_TO_A_HORIZON_WINDOW",
+ "all_certificates_pass": true,
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockQ7-20260802",
+ "campaign": "campaign-5-born-lane-closure",
+ "checks": {
+  "A_PINS": true,
+  "B_RESTRICTION_GATES": true,
+  "C_PREDICATE_856_ABSOLUTE_RECORDS": true,
+  "D_PREDICATE_878_FORMATION_LEDGER": true,
+  "E_COMMON_INDEXING": true,
+  "F_WORLD_SET_COMPARISON": true,
+  "G_SHARED_MECHANISM": true,
+  "H_M6_BRANCH_SCOPE": true,
+  "I_FALSIFIERS": true,
+  "J_DETERMINISTIC_DOUBLE_BUILD": true,
+  "K_RUNTIME": true,
+  "L_DISCHARGE_AND_LEDGER": true
+ },
+ "claim_type": "bounded_theorem",
+ "cycle": 910,
+ "deterministic_double_build": "FULL.  Every heavy build in this block is built twice: the horizon-51,115 stamp census by two independently pinned implementations, and the horizon-16,384 composed scan by replay in an independent process.  Every analysis quantity is built by a second, structurally different route",
+ "discharge": "DISCHARGED_POSITIVELY__IDENTIFIED",
+ "discovery_sweep": {
+  "absolute_orbit_identifiers_source": "RECOMPUTED here from the pinned Cycle-856 primary by AST lift (base_stamp_census machinery + monitor_stamp_sets + frozenset.intersection over the eleven monitors).  The cached 856 stdout, which contains the absolute key list verbatim, is deliberately NOT an input: reading it would make the identification a transcription rather than a recomputation",
+  "hit_count": 6,
+  "hits": [
+   {
+    "bytes": 38006,
+    "path": "scripts/frontier_cycle856_covariance_independent_check_2026_07_28.py",
+    "pinned": true,
+    "sha256": "6c9cec748a8fb1c39080167aaadc8e352ef61bf6d37fb1e775b71f021f35bc7c"
+   },
+   {
+    "bytes": 33640,
+    "path": "scripts/frontier_cycle856_record_covariance_2026_07_28.py",
+    "pinned": true,
+    "sha256": "20bce7f6dab9d7755ddefc6e2000d501acb8572dc15f50981b65ba9f6e2a4f2b"
+   },
+   {
+    "bytes": 3783,
+    "path": "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "pinned": true,
+    "sha256": "7b6b73826ee397e66102994174d94e04c3f174761f00ffcfe0da2be97e72a545"
+   },
+   {
+    "bytes": 2181,
+    "path": "outputs/record_covariance_cycle856_receipt_2026_07_28.json",
+    "pinned": true,
+    "sha256": "b578ae13bd10a947f90177936912bef792e3f8060149e1f48bae41c9f17aa235"
+   },
+   {
+    "bytes": 17116,
+    "path": "logs/runner-cache/frontier_cycle856_covariance_independent_check_2026_07_28.txt",
+    "pinned": false,
+    "sha256": "a89b28d560c1784bde563add2a0c044af0219765bd74306bd82decd6a698f8cf"
+   },
+   {
+    "bytes": 28175,
+    "path": "logs/runner-cache/frontier_cycle856_record_covariance_2026_07_28.txt",
+    "pinned": false,
+    "sha256": "4fc90636e22e52d2d2ad2adf9cd75366a4e37e28356896a8740aa3b58763fffd"
+   }
+  ],
+  "not_pinned_and_why": {
+   "logs/runner-cache/frontier_cycle856_covariance_independent_check_2026_07_28.txt": "runner cache -- a run log, not a construction input",
+   "logs/runner-cache/frontier_cycle856_record_covariance_2026_07_28.txt": "runner cache -- a run log, not a construction input"
+  },
+  "pass": true,
+  "pinned": [
+   "scripts/frontier_cycle856_covariance_independent_check_2026_07_28.py",
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py",
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "outputs/record_covariance_cycle856_receipt_2026_07_28.json"
+  ],
+  "rule": "basename contains '856' (case-insensitive) under scripts/, docs/, outputs/, logs/runner-cache/"
+ },
+ "double_build_rows": {
+  "composed_replay_agrees": true,
+  "formation_ledger_triple_built": true,
+  "stamp_routes_agree": true
+ },
+ "elapsed_sec": 130.594,
+ "falsifiers": [
+  {
+   "bites": true,
+   "detail": {
+    "first_key_disagreement": [
+     3,
+     [
+      2,
+      1,
+      [
+       0,
+       5
+      ]
+     ],
+     [
+      2,
+      0,
+      [
+       0,
+       5
+      ]
+     ]
+    ],
+    "licensed_by_the_census_key_test": false,
+    "the_relabelling_would_make_the_sets_coincide": true
+   },
+   "detected": true,
+   "expected_detected": true,
+   "falsifier": "F1_PLANTED_WORLD_RELABELLING",
+   "mutation": "swap the escape orbit's worlds with the event-1 absolute orbit's worlds, which WOULD make the two sets coincide"
+  },
+  {
+   "bites": true,
+   "detected": false,
+   "expected_detected": false,
+   "falsifier": "F2_IDENTITY_RELABELLING_positive_control",
+   "mutation": "the identity map on worlds must be licensed"
+  },
+  {
+   "bites": true,
+   "detail": {
+    "orbits_with_that_shape_at_event_0": [
+     3
+    ]
+   },
+   "detected": false,
+   "expected_detected": false,
+   "falsifier": "F3_SHAPE_IS_NOT_AMBIGUOUS",
+   "mutation": "count the orbits with the byte-quoted 856 shape at event 0 -- more than one would mean the shape match under-determines the set"
+  },
+  {
+   "bites": true,
+   "detail": {
+    "escape_orbits_after_drop": 0,
+    "escape_orbits_all": 1
+   },
+   "detected": true,
+   "expected_detected": true,
+   "falsifier": "F4_DROPPED_ORBIT",
+   "mutation": "remove the escape orbit from the orbit scan and recount"
+  },
+  {
+   "bites": true,
+   "detail": {
+    "fabricated": "ea5bf39fbf93a8e528ae2011b1cc1922d2c4434efdcb2ad791ead5c5a5166933",
+    "recomputed": "d64a02d19321b539cf0b0a92a680edd6511b9a90cf3df1b43583debc71fc4f61"
+   },
+   "detected": true,
+   "expected_detected": true,
+   "falsifier": "F5_HARDCODED_ABSOLUTE_SET",
+   "mutation": "compare the recomputed absolute-E1 key digest against a fabricated one"
+  },
+  {
+   "bites": true,
+   "detail": {
+    "absolute_E2_count": 0,
+    "relation": "NOT_A_SUBSET"
+   },
+   "detected": true,
+   "expected_detected": true,
+   "falsifier": "F6_PREDICATE_SWAP_E2_FOR_E1",
+   "mutation": "re-run the identification against 856's E2 reading, which has no absolute records at all"
+  },
+  {
+   "bites": true,
+   "detail": {
+    "broken_set": [
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37,
+     747
+    ]
+   },
+   "detected": true,
+   "expected_detected": true,
+   "falsifier": "F7_PERTURBED_ESCAPE_SET",
+   "mutation": "replace one world of the escape orbit with a foreign world -- the containment in the absolute set must break"
+  },
+  {
+   "bites": true,
+   "detail": {
+    "horizon": 256,
+    "perturbed_formed_worlds": 134,
+    "perturbed_tag": [
+     "B0",
+     0
+    ],
+    "unperturbed_formed_worlds": 126
+   },
+   "detected": true,
+   "expected_detected": true,
+   "falsifier": "F8_NON_PERTURBATION_IS_NOT_VACUOUS",
+   "mutation": "re-point the composed B0 record slot at a coordinate that IS in the global dirty set and re-run the short scan; the formation ledger must change, proving the inert-slot fact is load-bearing rather than vacuous"
+  },
+  {
+   "bites": true,
+   "detail": {
+    "dropped_coordinates": [
+     40
+    ],
+    "horizon": 256,
+    "mutated_reproduces_the_ledger": false,
+    "unmutated_reproduces_the_ledger": true
+   },
+   "detected": true,
+   "expected_detected": true,
+   "falsifier": "F8b_DIRTY_SET_IS_LOAD_BEARING",
+   "mutation": "drop one coordinate from the dirty set and rebuild the first-clean profile at the short horizon; it must STOP reproducing the composed scan's formation ledger, while the unmutated profile still reproduces it"
+  },
+  {
+   "bites": true,
+   "detail": {
+    "escape_orbits_at_pinned_horizon": 1,
+    "escape_orbits_at_short_horizon": 0
+   },
+   "detected": true,
+   "expected_detected": true,
+   "falsifier": "F9_HORIZON_TRUNCATION",
+   "mutation": "recompute the escape count at horizon 1024; the M6 branch must vanish"
+  }
+ ],
+ "firewall_hits": 0,
+ "independent_audit_still_required": true,
+ "label_on_every_fraction": "bookkeeping fraction, not probability",
+ "ledger_rows": [
+  {
+   "blocked_on": "nothing",
+   "id": "BL8_ESCAPE_ORBIT_STATUS",
+   "status_before": "OPEN, but tested from a new direction: the escape orbit is PHASE-STATIONARY across the whole monitor-phase group and its k=2 / separations-5,6 shape is phase-constant, which is the same invariance Cycle 856's ABSOLUTE-record orbits carry by definition.  The predicates still differ, so P-856-SHAPE is not discharged",
+   "status_now": "CLOSED.  P-856-SHAPE is DISCHARGED POSITIVELY.  The escape orbit is not shaped like one of Cycle 856's absolute-record orbits -- it IS one of them, world for world, on a common indexing that is the identity on a shared census rather than a chosen map.  The cause is an identity of predicates: 856's E1 stamp and 878's formation ledger are the same globally-clean test on the same 477 dirty coordinates of the same Cycle-719 trajectory, read at 51,115 and 16,384 orbits respectively, with the composed record writes inert.  ESCAPE implies ABSOLUTE as a theorem; the converse fails only by horizon"
+  },
+  {
+   "blocked_on": "the lane -- whoever next chooses a horizon",
+   "id": "BL10_M6_HORIZON_WINDOW",
+   "obligation": "NEW, surfaced by this block: 'the escape orbit' denotes only inside the horizon window [14744, 33195) controller orbits.  Below it M6 is the zero weighting; at or above the upper endpoint a second orbit escapes and the one-dimensional world-mass solution space of Cycle 906 becomes at least two-dimensional",
+   "status_now": "COMPUTED AND CLOSED AS A FACT, OPEN AS A SCOPE QUESTION: the pinned Cycle-878 horizon 16,384 sits inside the window, so every landed M6 statement is correct as stated; but no M6/M7/M8 construction may be read as horizon-independent"
+  },
+  {
+   "blocked_on": "an owner choice between two priced readings",
+   "id": "BL7_COVARIANCE",
+   "status_before": "READING-DEPENDENT, AND NOW PRICED BOTH WAYS.  Under COV-INV the 906 resolution stands: M6 is the unique world-mass solution.  Under COV-EQV -- the intertwining Cycle 856 actually landed -- the tension DOES NOT ARISE: all three interface survivors ['M3_OCCUPATION_WEIGHTED', 'M4_FORMATION_LIFETIME', 'M5_FORMATION_MOMENT'] satisfy COV-EQV, at no cost on the 878 span.  M6 is therefore one of TWO lawful resolutions, and the axioms require neither reading",
+   "status_now": "UNCHANGED BY THIS BLOCK on the reading question, but M6's standing is now better understood: under COV-INV the Cycle-906 resolution stands and its support is an absolute-record orbit in Cycle 856's exact sense, which is a stronger credential than 'the orbit that happens to miss the block'.  It remains a credential, not a law, and the owner choice between the COV-INV and COV-EQV readings is untouched"
+  }
+ ],
+ "named_premises": [
+  "P-NONEMPTY (inherited from Cycle 905, untouched)",
+  "P-856-SHAPE (DISCHARGED by this block)"
+ ],
+ "provenance": {
+  "constants_856": {
+   "FIXTURE_BANKS": 2,
+   "MAX_SOURCES": 5,
+   "MIN_SOURCES": 2,
+   "TRAJECTORY_HORIZON": 51115
+  },
+  "constants_863": {
+   "FIXTURE_BANKS": 2,
+   "MAX_SOURCES": 5,
+   "MIN_SOURCES": 2,
+   "TRAJECTORY_HORIZON": 51115
+  },
+  "constants_878": {
+   "CANDIDATE_NAMES": [
+    "M1_COUNTING",
+    "M2_PER_WORLD_UNIFORM",
+    "M3_OCCUPATION_WEIGHTED",
+    "M4_FORMATION_LIFETIME",
+    "M5_FORMATION_MOMENT"
+   ],
+   "CONTROL_NAME": "M0_CONTENT_DIVERSITY",
+   "DEAD_CHUNK_ORBITS": 512,
+   "DEAD_ORBIT_ORBITS": 4096,
+   "DETERMINISM_ORBITS": 192,
+   "FAMILY_ORDER": [
+    "F_WORLD",
+    "F_TAG",
+    "F_TAG_ORDINAL",
+    "F_MOMENT",
+    "F_ORBIT",
+    "F_CONTENT",
+    "F_WORLD_TAG",
+    "F_ATOM"
+   ],
+   "HORIZON": 16384,
+   "REGISTER_CAP": 64
+  },
+  "import_of_852_856_863_878_902_905_906_908": false,
+  "lifted_from_856": [
+   "pairwise_separated",
+   "derive_event_seeds",
+   "frame_map",
+   "derive_scope",
+   "watched_registers",
+   "dirty_global_indices",
+   "synchronous_word",
+   "build_initial_states",
+   "pack_states",
+   "compile_masked_gate",
+   "masked_h_schedules",
+   "compile_fast_schedules",
+   "clean_mask",
+   "lane_numbers",
+   "monitor_schedule_manifest"
+  ],
+  "lifted_from_863": [
+   "pairwise_separated",
+   "derive_event_seeds",
+   "derive_census",
+   "watched_registers",
+   "dirty_partition",
+   "synchronous_word",
+   "build_initial_states",
+   "pack_lanes",
+   "compile_masked_gate",
+   "masked_h_schedules",
+   "compile_fast",
+   "mask_over",
+   "lanes_of",
+   "lane_state"
+  ],
+  "lifted_from_878": [
+   "lcm",
+   "dead_wire_rig",
+   "composed_scan",
+   "family_keys",
+   "cells_of",
+   "refines",
+   "monitor_phase_action",
+   "group_orbits",
+   "build_candidates"
+  ]
+ },
+ "question": "Cycle 910 -- discharge P-856-SHAPE: are the escape orbit's worlds and Cycle 856's absolute-record orbits the same object under two predicates, or a shape coincidence?",
+ "restriction_gate": "43/43 restriction gates reproduce",
+ "restriction_gate_rows": [
+  {
+   "expected": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ],
+   "gate": "906_escape_orbit_worlds",
+   "observed": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ],
+   "reproduced": true,
+   "source": "906 receipt Q3_exhibited_solution.support_worlds"
+  },
+  {
+   "expected": "M6_ABSOLUTE_ORBIT_UNIFORM",
+   "gate": "906_M6_name",
+   "observed": "M6_ABSOLUTE_ORBIT_UNIFORM",
+   "reproduced": true,
+   "source": "906 receipt Q3_exhibited_solution.name"
+  },
+  {
+   "expected": false,
+   "gate": "906_every_orbit_meets_the_block",
+   "observed": false,
+   "reproduced": true,
+   "source": "906 receipt Q4_every_orbit_meets_the_block"
+  },
+  {
+   "expected": {
+    "0": 1,
+    "1": 1,
+    "10": 17,
+    "11": 12,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 5,
+    "7": 2,
+    "8": 11,
+    "9": 15
+   },
+   "gate": "906_orbit_meeting_histogram",
+   "observed": {
+    "0": 1,
+    "1": 1,
+    "10": 17,
+    "11": 12,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 5,
+    "7": 2,
+    "8": 11,
+    "9": 15
+   },
+   "reproduced": true,
+   "source": "906 receipt Q4_orbit_meeting_histogram"
+  },
+  {
+   "expected": true,
+   "gate": "906_856_absolute_shape_match_claimed",
+   "observed": true,
+   "reproduced": true,
+   "source": "906 receipt Q4_856_absolute_shape_match"
+  },
+  {
+   "expected": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+   "gate": "906_event_space_digest",
+   "observed": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+   "reproduced": true,
+   "source": "906 receipt event_space_digest"
+  },
+  {
+   "expected": 1419,
+   "gate": "906_M6_support_events",
+   "observed": 1419,
+   "reproduced": true,
+   "source": "906 receipt Q3_exhibited_solution.support_events"
+  },
+  {
+   "expected": 90841,
+   "gate": "906_M6_zero_weight_events",
+   "observed": 90841,
+   "reproduced": true,
+   "source": "906 receipt Q3_exhibited_solution.zero_weight_events"
+  },
+  {
+   "expected": [
+    73088,
+    90841
+   ],
+   "gate": "906_BL6_zero_events_before_and_after",
+   "observed": [
+    73088,
+    90841
+   ],
+   "reproduced": true,
+   "source": "906 receipt Q4_BL6_zero_events_before_and_after"
+  },
+  {
+   "expected": 1,
+   "gate": "906_world_mass_space_dimension_claim",
+   "observed": 1,
+   "reproduced": true,
+   "source": "906 receipt Q3_world_mass_space_dimension"
+  },
+  {
+   "expected": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ],
+   "gate": "908_phase0_escape_orbit_worlds",
+   "observed": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ],
+   "reproduced": true,
+   "source": "908 receipt Q1_phase_rows[0].escape_orbit_worlds"
+  },
+  {
+   "expected": 92260,
+   "gate": "908_phase0_n_events",
+   "observed": 92260,
+   "reproduced": true,
+   "source": "908 receipt Q1_phase_rows[0].n_events"
+  },
+  {
+   "expected": 164,
+   "gate": "908_phase0_worlds_formed",
+   "observed": 164,
+   "reproduced": true,
+   "source": "908 receipt Q1_phase_rows[0].worlds_formed"
+  },
+  {
+   "expected": 584,
+   "gate": "908_phase0_worlds_never_formed",
+   "observed": 584,
+   "reproduced": true,
+   "source": "908 receipt Q1_phase_rows[0].worlds_never_formed"
+  },
+  {
+   "expected": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+   "gate": "908_phase0_raw_event_digest",
+   "observed": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+   "reproduced": true,
+   "source": "908 receipt Q1_phase_rows[0].raw_event_digest"
+  },
+  {
+   "expected": 55,
+   "gate": "908_phase0_orbits_mixed",
+   "observed": 55,
+   "reproduced": true,
+   "source": "908 receipt Q1_phase_rows[0].orbits_mixed"
+  },
+  {
+   "expected": {
+    "0": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "1": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "10": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "2": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "3": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "4": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "5": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "6": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "7": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "8": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "9": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ]
+   },
+   "gate": "908_phase_stationarity_rows_all_equal_phase0",
+   "observed": {
+    "0": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "1": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "10": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "2": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "3": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "4": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "5": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "6": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "7": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "8": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ],
+    "9": [
+     3,
+     4,
+     11,
+     12,
+     19,
+     20,
+     26,
+     27,
+     32,
+     33,
+     37
+    ]
+   },
+   "reproduced": true,
+   "source": "908 receipt Q1_phase_rows[*].escape_orbit_worlds"
+  },
+  {
+   "expected": 11,
+   "gate": "908_eleven_phase_rows",
+   "observed": 11,
+   "reproduced": true,
+   "source": "908 receipt Q1_phase_rows length"
+  },
+  {
+   "expected": true,
+   "gate": "908_transport_theorem",
+   "observed": true,
+   "reproduced": true,
+   "source": "908 receipt Q1_transport_theorem_holds"
+  },
+  {
+   "expected": 11,
+   "gate": "908_distinct_raw_event_digests",
+   "observed": 11,
+   "reproduced": true,
+   "source": "908 receipt Q1_distinct_raw_event_digests"
+  },
+  {
+   "expected": true,
+   "gate": "908_P_856_SHAPE_left_open",
+   "observed": true,
+   "reproduced": true,
+   "source": "908 receipt Q3_P_856_SHAPE_status"
+  },
+  {
+   "expected": "CORROBORATES_WITH_REFINEMENT",
+   "gate": "908_checker_verdict",
+   "observed": "CORROBORATES_WITH_REFINEMENT",
+   "reproduced": true,
+   "source": "908 checker receipt verdict"
+  },
+  {
+   "expected": 1,
+   "gate": "908_checker_late_horizon_refinement_present",
+   "observed": 1,
+   "reproduced": true,
+   "source": "908 checker receipt refinements"
+  },
+  {
+   "expected": 16384,
+   "gate": "878_horizon",
+   "observed": 16384,
+   "reproduced": true,
+   "source": "878 source HORIZON literal"
+  },
+  {
+   "expected": 748,
+   "gate": "878_census_population",
+   "observed": 748,
+   "reproduced": true,
+   "source": "878/863 census population"
+  },
+  {
+   "expected": true,
+   "gate": "878_event_count_headline",
+   "observed": true,
+   "reproduced": true,
+   "source": "878 receipt headline"
+  },
+  {
+   "expected": 51115,
+   "gate": "856_horizon",
+   "observed": 51115,
+   "reproduced": true,
+   "source": "856 source TRAJECTORY_HORIZON literal"
+  },
+  {
+   "expected": "20bce7f6dab9d7755ddefc6e2000d501acb8572dc15f50981b65ba9f6e2a4f2b",
+   "gate": "856_receipt_file_digest_of_the_856_primary",
+   "observed": "20bce7f6dab9d7755ddefc6e2000d501acb8572dc15f50981b65ba9f6e2a4f2b",
+   "reproduced": true,
+   "source": "856 ship receipt files map"
+  },
+  {
+   "expected": "7b6b73826ee397e66102994174d94e04c3f174761f00ffcfe0da2be97e72a545",
+   "gate": "856_receipt_file_digest_of_the_856_note",
+   "observed": "7b6b73826ee397e66102994174d94e04c3f174761f00ffcfe0da2be97e72a545",
+   "reproduced": true,
+   "source": "856 ship receipt files map"
+  },
+  {
+   "expected": 1,
+   "gate": "856_verdict_absolute_records_line",
+   "observed": 1,
+   "reproduced": true,
+   "source": "856 ship receipt verdicts"
+  },
+  {
+   "expected": 73088,
+   "gate": "905_never_formed_block_size",
+   "observed": 73088,
+   "reproduced": true,
+   "source": "905->906 carried BL6 block size"
+  },
+  {
+   "expected": 905,
+   "gate": "905_receipt_is_the_born_narrowing_block",
+   "observed": 905,
+   "reproduced": true,
+   "source": "905 receipt cycle"
+  },
+  {
+   "expected": true,
+   "gate": "856_E1_digest_literal_in_source",
+   "observed": true,
+   "reproduced": true,
+   "source": "recomputed E1 digest must appear as a literal in the 856 source"
+  },
+  {
+   "expected": true,
+   "gate": "856_E2_digest_literal_in_source",
+   "observed": true,
+   "reproduced": true,
+   "source": "recomputed E2 digest must appear as a literal in the 856 source"
+  },
+  {
+   "expected": true,
+   "gate": "856_state_catalog_literal_in_source",
+   "observed": true,
+   "reproduced": true,
+   "source": "recomputed state catalog digest must appear in the 856 source"
+  },
+  {
+   "expected": 182,
+   "gate": "856_E1_stamped_count",
+   "observed": 182,
+   "reproduced": true,
+   "source": "856 source pass-gate literal len(e1) == 182"
+  },
+  {
+   "expected": 114,
+   "gate": "856_E2_stamped_count",
+   "observed": 114,
+   "reproduced": true,
+   "source": "856 source pass-gate literal len(e2) == 114"
+  },
+  {
+   "expected": 5815,
+   "gate": "856_state_bits",
+   "observed": 5815,
+   "reproduced": true,
+   "source": "856 source pass-gate literal state_bits == 5815"
+  },
+  {
+   "expected": 477,
+   "gate": "856_dirty_coordinate_count",
+   "observed": 477,
+   "reproduced": true,
+   "source": "856 source pass-gate literal dirty_coordinate_count == 477"
+  },
+  {
+   "expected": [
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106
+   ],
+   "gate": "856_masked_schedule_gate_counts",
+   "observed": [
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106,
+    3106
+   ],
+   "reproduced": true,
+   "source": "856 source pass-gate literal masked_schedule_gate_counts"
+  },
+  {
+   "expected": "c757e07e68eefd061a7a9d9c09d7350f27bdaee75278b964bac83cd48f418581",
+   "gate": "856_census_equals_863_census",
+   "observed": "c757e07e68eefd061a7a9d9c09d7350f27bdaee75278b964bac83cd48f418581",
+   "reproduced": true,
+   "source": "856 derive_scope census vs 863 derive_census"
+  },
+  {
+   "expected": 68,
+   "gate": "856_orbit_count",
+   "observed": 68,
+   "reproduced": true,
+   "source": "856 derive_scope orbit count"
+  },
+  {
+   "expected": 68,
+   "gate": "878_orbit_count",
+   "observed": 68,
+   "reproduced": true,
+   "source": "878 group_orbits count"
+  }
+ ],
+ "science_digest": "8d43a9aedfa092f948aa33245377aad2f82349f97cacf253ab0f9952d970aa28",
+ "scope": "the Cycle-863/856 census (748 worlds, 11 stations, 68 frame orbits), the Cycle-856 E1/E2 stamp census at TRAJECTORY_HORIZON 51,115, and the Cycle-878 composed-record event space at HORIZON 16,384, all rebuilt by AST lift from their pinned sources (never imported).  NO probability postulate, NO Born rule, NO selection",
+ "self_sha256": "fb8540b7179725572da2cbce66bcfecd1759e39af1f203bf3b220e91b96c9c5e",
+ "source_pins": {
+  "git_blobs": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "4a863da1f3f255354839277271a3a69a5c205133",
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md": "f819f5b31d442248fac255fcdf3b0139d6ba83f8",
+   "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": "7094c986dc0560e8982507d8cc379f5c720b639f",
+   "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "392cba199a75a14a8bb88808943c1259cbd7a94b",
+   "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+   "outputs/intertwine_discharge_cycle908_receipt_2026_07_28.json": "d6fcfc999e37f7a089cfe31123f61197ab4aa944",
+   "outputs/intertwine_independent_check_cycle908_receipt_2026_07_28.json": "9ed7b6f506d30b53f289943aa47cc91df8cea1b5",
+   "outputs/record_covariance_cycle856_receipt_2026_07_28.json": "5f3e9e0a4038dcc0f8c0520ac3f1637bfa3a5d1c",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "scripts/frontier_cycle856_covariance_independent_check_2026_07_28.py": "4b0be60ee56a64eaa184de761989386a8f2dde19",
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py": "fc873d0b1947866b238bbe5456ffe89fcd072a21",
+   "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+   "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+   "scripts/frontier_cycle906_covariance_tension_2026_07_28.py": "d7577bb2ac9f4cb7ee9d8abc5f19e9c7cf888df9",
+   "scripts/frontier_cycle908_intertwine_discharge_2026_07_28.py": "a32762df147312b150eee84b5311efa2476af677"
+  },
+  "sha256": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+   "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md": "7b6b73826ee397e66102994174d94e04c3f174761f00ffcfe0da2be97e72a545",
+   "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40",
+   "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f",
+   "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c",
+   "outputs/intertwine_discharge_cycle908_receipt_2026_07_28.json": "825ebf6866755364ba27c504080808539f8040759413f0fff8cc57cd21dcb7f4",
+   "outputs/intertwine_independent_check_cycle908_receipt_2026_07_28.json": "0112d6ca3c5d796a429d40e5811487c12aca6f652c967b356d89b9a681647c9c",
+   "outputs/record_covariance_cycle856_receipt_2026_07_28.json": "b578ae13bd10a947f90177936912bef792e3f8060149e1f48bae41c9f17aa235",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+   "scripts/frontier_cycle856_covariance_independent_check_2026_07_28.py": "6c9cec748a8fb1c39080167aaadc8e352ef61bf6d37fb1e775b71f021f35bc7c",
+   "scripts/frontier_cycle856_record_covariance_2026_07_28.py": "20bce7f6dab9d7755ddefc6e2000d501acb8572dc15f50981b65ba9f6e2a4f2b",
+   "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+   "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
+   "scripts/frontier_cycle906_covariance_tension_2026_07_28.py": "9c6392d593c1bf37e70f84692732d1e5cfa3f4377393dab846a15789fc0ce008",
+   "scripts/frontier_cycle908_intertwine_discharge_2026_07_28.py": "287c98e690d6a707661e4daef0460f3c17944e3cc32b1a2c958d4e454c4677b8"
+  }
+ },
+ "teeth": "10/10",
+ "theorems": [
+  "C910-T1 THE COMMON INDEXING IS FORCED.  Cycle 856's key space and the Cycle-863/878 census worlds are the same object: derive_scope and derive_census independently build tuple(sorted(.)) of the same 748 keys from the same Cycle-719 core and the two tuples are byte-identical, while a Cycle-878 world label IS the lane index into that tuple.  The correspondence has no free parameter; a world permutation is licensed only if it preserves the census key, which forces the identity.",
+  "C910-T2 THE IDENTIFICATION.  The escape orbit [3, 4, 11, 12, 19, 20, 26, 27, 32, 33, 37] is exactly the event-0 member of Cycle 856's three ABSOLUTE-record orbits under E1.  The inclusion is proper: absolute_E1 has 33 setups in three orbits (events 0, 1, 2 at k=2, separations 5/6) and the escape set has 11.  The 878 formation predicate is strictly stronger on this census than the 856 E1 stamp predicate.",
+  "C910-T3 THE PREDICATES ARE ONE PREDICATE.  856's E1 stamp and 878's formation ledger are the same globally-clean test on the same 477 dirty packed-state coordinates of the same trajectory: the instrumented first-clean boundary of the 856 rebuild equals the 878 formation ledger world for world inside the 878 horizon, and the never-formed block is exactly the set of worlds whose first-clean boundary lies beyond it.  The composed record writes are inert with respect to the test (disjoint from the dirty coordinates, neither gate inputs nor targets), and the tooth confirms the inertness is load-bearing rather than vacuous.",
+  "C910-T4 ESCAPE IMPLIES ABSOLUTE.  The clean-union mask is monotone in the horizon, so FORMED (16,384) is contained in E1 (51,115); an orbit disjoint from the never-formed block is therefore an orbit entirely inside E1, i.e. an absolute-record orbit.  The converse fails only by horizon: 18 E1 worlds have not formed by the 878 horizon.",
+  "C910-T5 THE SHAPE IS FORCED BY THE SUBSTRATE, AS A NECESSARY CONDITION.  Every orbit that goes fully clean within 51,115 orbits sits at the maximum minimum ring gap -- k=2 at separations 5/6, the unique balanced split of the 11-station ring.  The condition is necessary and not sufficient: all four event labels share the shape and the event-3 orbit never goes fully clean, which is why 856 reports three absolute orbits and not four.  Neither lineage chooses the shape; both inherit it.",
+  "C910-T6 THE M6 HORIZON WINDOW.  'The escape orbit' denotes only for horizons in [14744, 33195) controller orbits.  The pinned horizon 16,384 lies inside it.  Below the window no orbit escapes and M6 is the zero weighting; at or above the upper endpoint a second orbit escapes and Cycle 906's one-dimensional world-mass solution space is no longer one-dimensional."
+ ]
+}

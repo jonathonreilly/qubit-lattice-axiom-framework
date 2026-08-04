@@ -1647,10 +1647,20 @@ def main() -> int:
     horizon_grid = [SHORT_HORIZON, 2048, 4096, 8192, horizon878, 32768,
                     horizon856]
     short_escape = scan_short["orbits_entirely_outside_block"]
-    late_horizon_worlds = sorted(
-        (w, formed_878[w]) for w in star)
-    late_cut = scan_a["boundaries"] - stations * 512
-    late_members = [w for w, b in late_horizon_worlds if b >= late_cut]
+    late_horizon_worlds = sorted((w, formed_878[w]) for w in star)
+    # "late" = in the second half of the pinned Cycle-878 horizon.  The cut
+    # is not tuned: the escape orbit's formation profile is BIMODAL -- two
+    # worlds at the opening boundaries and nine at ~90% of the horizon --
+    # so every cut between those two clusters gives the same answer.
+    late_cut = scan_a["boundaries"] // 2
+    late_members = [[w, b, fr(Fraction(b, scan_a["boundaries"]))]
+                    for w, b in late_horizon_worlds if b >= late_cut]
+    # 856's own absolute count is horizon-critical: how much slack does the
+    # LAST absolute orbit leave against 856's own horizon?
+    absolute_boundaries = [row["full_clean_boundary"] for row in orbit_rows
+                           if row["absolute_under_856_E1"]]
+    last_absolute = max(absolute_boundaries) if absolute_boundaries else None
+    total_856_boundaries = stamp_a["boundaries"]
     cert_h = {
         "certificate": "H_M6_BRANCH_SCOPE",
         "question": ("Q3: where do 856's absolute orbits sit in horizon"
@@ -1682,7 +1692,38 @@ def main() -> int:
             and first_threshold <= horizon878 < second_threshold),
         "late_horizon_refinement_of_the_908_checker":
             late_horizon_refinement[0] if late_horizon_refinement else None,
+        "late_horizon_cut": (
+            "the second half of the pinned Cycle-878 horizon, i.e."
+            f" boundary >= {late_cut}.  The cut is not tuned: the escape"
+            " orbit's formation profile is BIMODAL -- two worlds at the"
+            " opening boundaries and nine at about nine tenths of the"
+            " horizon -- so every cut between the two clusters agrees"),
         "late_horizon_members_of_the_escape_orbit": late_members,
+        "late_horizon_member_count": len(late_members),
+        "the_908_checker_refinement_recomputed": (
+            f"{len(late_members)} of {len(star)} escape-orbit worlds first"
+            " form in the second half of the pinned horizon, all of them"
+            " at about nine tenths of it; the other two form at boundaries"
+            " 5 and 6.  The Cycle-908 checker's 'nine of its eleven"
+            " worlds' is reproduced exactly, and the label FRACTION is a"
+            " bookkeeping fraction, not a probability"),
+        "label_on_every_fraction": FRACTION_LABEL,
+        "856_absolute_count_is_horizon_critical": {
+            "last_absolute_orbit_full_clean_boundary": last_absolute,
+            "856_total_boundaries": total_856_boundaries,
+            "slack_boundaries": (None if last_absolute is None
+                                 else total_856_boundaries - last_absolute),
+            "reading": (
+                "Cycle 856's headline count of THREE absolute-record"
+                " orbits is itself horizon-critical: the last of the three"
+                " completes one boundary before 856's own trajectory ends."
+                "  Had Cycle 856 stopped two boundaries earlier it would"
+                " have reported two absolute orbits and 22 absolute"
+                " setups, not three and 33.  This is a scope note the 856"
+                " lineage does not carry, and it is surfaced here because"
+                " the identification makes both lineages' counts"
+                " horizon-indexed quantities"),
+        },
         "late_horizon_caveat_status": (
             "REAL AND SHARPENED, NOT AN ARTIFACT.  The 908 checker's"
             " observation stands on recomputation: the escape orbit's own"
@@ -1721,7 +1762,8 @@ def main() -> int:
         first_threshold is not None and second_threshold is not None
         and first_threshold <= horizon878 < second_threshold
         and cert_h["short_horizon_prediction_agrees"]
-        and short_escape == 0)
+        and short_escape == 0
+        and len(late_members) == 9)
 
     # =======================================================================
     # I: falsifiers
@@ -2155,6 +2197,8 @@ def main() -> int:
         "Q3_pinned_horizon_inside_the_window":
             cert_h["pinned_horizon_inside_the_uniqueness_window"],
         "Q3_late_horizon_caveat_status": cert_h["late_horizon_caveat_status"],
+        "Q3_856_absolute_count_is_horizon_critical":
+            cert_h["856_absolute_count_is_horizon_critical"],
         "Q3_M6_branch_scope": cert_h["M6_branch_scope"],
         "discharge": discharge,
         "theorems": theorems,

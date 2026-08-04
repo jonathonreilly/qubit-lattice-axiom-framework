@@ -247,6 +247,15 @@
     "planted_selector_detected": true,
     "planted_selector_pins_target": true
   },
+  "geometric_vacuity_universal_form": {
+    "box_checked": "[-2,2]^3",
+    "consequence": "the geometric vacuity is UNIVERSAL, not a property of the target orbit: no 3-record collection anywhere on Z^3 can carry three adjacency interfaces, and the target orbit carries none at all",
+    "edges_checked": 300,
+    "every_edge_flips_parity": true,
+    "holds": true,
+    "theorem": "No three sites of Z^3 are pairwise nearest-neighbour adjacent. The nearest-neighbour graph is bipartite -- every edge changes the parity of the coordinate sum -- so it contains no odd cycle and in particular no triangle.",
+    "triangles_found": 0
+  },
   "new_theorems": [
     "C898-T1 the disjointness adjudication: of the three readings the memo's bytes admit, 'pairwise-disjoint' reads as disjoint site supports (2 discriminants to 1 over content disjointness, with non-adjacency unlicensed), so Record additivity covers adjacent records and a nonzero gluing defect contradicts the axiom -- and the ROUTE_DIES verdict is reading-independent",
     "C898-T2 the content-alone kill: a position-dependent gluing defect contradicts 'a readout value is determined by record content alone' under every reading of the disjointness qualifier",

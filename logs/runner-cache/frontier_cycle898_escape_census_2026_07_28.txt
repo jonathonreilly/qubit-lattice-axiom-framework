@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle898_escape_census_2026_07_28.py
-runner_sha256: 057010272fb24b413a049f42faf4f154be769a4b7b29a1886c3a8154f35e4a7f
+runner_sha256: a319372d897c832c2e5156749c0b7dc2ec48bdd6f5f6e6c3f12fe9ce4c2bd312
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 3.388
+elapsed_sec: 3.412
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -295,4 +295,4 @@ OUTCOME
 CYCLE 898 CERTIFICATES: ALL PASS
 ==============================================================================
 
-controls: deterministic=True runtime_under_limit=True stdout=16402B receipt=1fac436697122a7d
+controls: deterministic=True runtime_under_limit=True stdout=16402B receipt=477b0a78f5bd2812

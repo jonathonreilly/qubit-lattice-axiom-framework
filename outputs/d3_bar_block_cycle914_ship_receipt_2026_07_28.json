@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); NOT BLIND (reproduction test \u2014 the committed streams were read for budget scoping; stated); primary exits 1 BY DESIGN (the parent-wiring BAR-NOT-PINNED verdict); supervisor line-by-line review",
+  "block": "toe-time-blockM1-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 680.0s; CLAIM-SURVIVES; 10/10 attacks pass; 8/8 teeth",
+    "primary": "exit 1 BY DESIGN (parent wiring), 584.5s; the delta wiring BAR-DERIVED-EFFECTIVE; executed grid = the disclosed certification subset (13/17 points, whole headline window); double-run bit-identical"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "first M-family PR this campaign \u2014 below the evaluator threshold; noted for the 3rd",
+  "cycles": [
+    914
+  ],
+  "files": {
+    "docs/D3_BAR_REAUDIT_REPRODUCED_CYCLE914_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "376c8a347469e76142a4df45e8e4adc85ab18926",
+      "sha256": "4b6aeca73c03fe0c2e3301600dd72ad37ceac99ea6c9410a5a9466b63e0ff181"
+    },
+    "logs/runner-cache/frontier_cycle914_d3_bar_commission_2026_07_28.txt": {
+      "git_blob": "b01abbbb5c383459e5177b8d60d23c89ce7c6bba",
+      "sha256": "6d10f592a9ad6e1b3cfa92dee8588d3e1dc7e1b8e6a739d477524a02bc8a8dc9"
+    },
+    "logs/runner-cache/frontier_cycle914_d3_bar_independent_check_2026_07_28.txt": {
+      "git_blob": "6cecbded31491e95da1046d88ce6e604c788f514",
+      "sha256": "0e4f6b1e6b6b795f42c262e59bc1673b37d544672fce189ca1c3ab79f8c980e3"
+    },
+    "outputs/d3_bar_commission_cycle914_receipt_2026_07_28.json": {
+      "git_blob": "cabb1bef15221b5fca61ffc7c50f8ec18452893d",
+      "sha256": "fba8a16ee811fa1729bc1cdb6988096193a7e14878e7a78380f4880120bf7223"
+    },
+    "outputs/d3_bar_independent_check_cycle914_receipt_2026_07_28.json": {
+      "git_blob": "d0f874fb6da8d137a61fbed1d493eb7944e832b5",
+      "sha256": "90b12afccaccbd92226d4b7aafca93531cfaf2f4e0ae83e40a3fe17c6cdd2868"
+    },
+    "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py": {
+      "git_blob": "e0639e0b5d1ebdd995c4c7ec3255f8daeeb4fe0c",
+      "sha256": "fc7344a06503f9c159ea732cb6f622a23e61196e370914943ffd9a468fd592e4"
+    },
+    "scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py": {
+      "git_blob": "ca26ecbec850b785b8b4228b46ab56c9f5e97831",
+      "sha256": "8ffd5436b5c506e9965a9a6f486f595531113aedef77cc2861114e87b362973f"
+    }
+  },
+  "headline": "MASS LANE OPENS with a discovery: route C was ALREADY RUN (twice; the window row is audited_conditional behind an unexecuted re-audit work order \u2014 this block IS that evidence). The measurement REPRODUCED to 1.9e-11 bits, zero certification mismatches: d=3 bar at Jt=0.6/0.7 (lambda 0.05/0.10; theta* ~ 0.50, ~2.5x the d=1-derived floor, inside), NO certification at lambda=0.20 by the design's own predicted SEAM-LEAKAGE mechanism (C=0.060395, committed figure to 6 digits); boundary bracket (0.10, 0.20); the primary expected witness (the disjoint five-qubit opposite pair) is what fires; sector reduction (5,605,504 states, memo-matching) verified exact against full space; the t=0 anchor exactly 0; FIVE cited-but-absent predecessors pinned incl. THE d=1 COMPARATOR NOTE \u2014 its git-history recovery is the next block",
+  "independence": "three implementations with no shared code (the committed 2026-07-11 run; this primary from the memos' equations; the checker with MAX-canonical reduction + shifted Chebyshev) agreeing at 1.9e-11 / 5.1e-12; full-space sector-exactness verification; 8/8 teeth incl. sector-table tamper",
+  "note": "docs/D3_BAR_REAUDIT_REPRODUCED_CYCLE914_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 680.01,
+    "primary": 584.53
+  }
+}

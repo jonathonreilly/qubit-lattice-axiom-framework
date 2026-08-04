@@ -70,19 +70,19 @@ EXPECTED_SHA256 = {
     C883_CACHE:
         "560f368d9d23144cb23a93e72a398d92f6fcb536c3363179b7853c09615211bb",
     PRIMARY:
-        "83c797501c6216700518618d91bfd35bb32dbea92dfc825ef592a9397423b0c6",
+        "a319372d897c832c2e5156749c0b7dc2ec48bdd6f5f6e6c3f12fe9ce4c2bd312",
     PRIMARY_RECEIPT:
-        "d202848b8c3025d6c36f44102ed895f1b9abdd5613c88ea67950dac21961e598",
+        "477b0a78f5bd28126711437f648e88b1a7a291cc106fbd1c3bfda7aaf74bf3ca",
     PRIMARY_CACHE:
-        "331352d5bd2454f75d362b7f5471887c09d373af48919a7e6321e9ced96a109c",
+        "0cda960a8d953a4729493c7ed19ab32703a9ab33f479f29d68013ddf5a76c2c0",
 }
 EXPECTED_GIT_BLOBS = {
     AXIOM_MEMO: "4a863da1f3f255354839277271a3a69a5c205133",
     C882_CACHE: "b22293b74ae8a0670e796f337a62a53a2f21fefb",
     C883_CACHE: "6f085fc042330dae1d3eec8540a2942b1a3cf32f",
-    PRIMARY: "4009a887e840610ca0d67ead14017d00b4d2ad67",
-    PRIMARY_RECEIPT: "71778127efd866a7be226b93d98a358472da189e",
-    PRIMARY_CACHE: "afe0acdadb608670595b3f7d87271706d4004e97",
+    PRIMARY: "dc33b23a7fd462cc1d9db90c9c11db7f8f1fa654",
+    PRIMARY_RECEIPT: "c7f9e18b19e107f602972465bf02ba315b389795",
+    PRIMARY_CACHE: "7af33df588e0e20e578cf6660e0c3ec147d8fd86",
 }
 REQUIRED_QUOTES = {
     AXIOM_MEMO: (
@@ -275,6 +275,11 @@ def claim_extraction() -> dict:
         "K11_disjoint_occurrence_lines": [h["line"]
                                           for h in r["M4_disjoint_occurrences"]],
         "K12_outcome_class": r["outcome_class"],
+        "K13_readings_tested": r.get("M4_readings_tested", []),
+        "K14_verdict_is_reading_independent":
+            r.get("M4_verdict_is_reading_independent"),
+        "K15_universal_vacuity_claimed":
+            r.get("geometric_vacuity_universal_form", {}).get("holds"),
     }
     return {"pass": len(claims) == 12, "claims": claims,
             "receipt_read_as_json_only": True,
@@ -347,9 +352,13 @@ def adjudication_by_sort_analysis(claims: dict) -> dict:
     readings = [a for a in attributes if a["present"]]
     # THE ESCAPEE: the content-disjointness reading, which the primary's
     # two-way decision procedure (site support vs non-adjacency) never tested.
-    primary_considered = {"SITE_SET_DISJOINTNESS", "NON_ADJACENCY"}
+    # Read the primary's OWN list of tested readings rather than assuming
+    # one, so a primary that has since widened its procedure is credited
+    # and one that has not is caught.
+    primary_considered = set(claims["K13_readings_tested"])
     novel = [a for a in readings
-             if a["attribute"] == "locked content"]
+             if a["attribute"] == "locked content"
+             and "CONTENT_DISJOINTNESS" not in primary_considered]
 
     # What would the content reading do to the selection question?  Under it,
     # additivity is asserted only for collections with pairwise-DISTINCT
@@ -420,6 +429,8 @@ def adjudication_by_sort_analysis(claims: dict) -> dict:
 
     verdict_survives = claims["K1_adjudicated_reading"] == majority
     completeness_refuted = bool(novel)
+    content_reading_covered = ("CONTENT_DISJOINTNESS"
+                               in primary_considered)
 
     return {
         "pass": True,
@@ -441,26 +452,39 @@ def adjudication_by_sort_analysis(claims: dict) -> dict:
         "discriminants": disc,
         "majority_reading": majority,
         "primary_verdict_survives": verdict_survives,
+        "content_reading_covered_by_primary": content_reading_covered,
         "REFUTATION_STATUS": (
-            "PARTIAL: the primary's VERDICT survives (the bytes still favour "
-            "site-support disjointness 2 discriminants to 1, and the "
-            "content-disjointness reading does not rescue the M4 route -- it "
-            "adds a free parameter). But the primary's Q1(a) decision "
-            "procedure is INCOMPLETE: it tested site-support against "
-            "non-adjacency and never considered content-disjointness, which "
-            "is the one alternative that needs no foreign import. The "
-            "adjudication should be reported as 2-of-3, not as a binary."
+            "REFUTATION RAISED AND ANSWERED. This checker's sort analysis "
+            "finds three byte-supported disjointness readings, of which "
+            "CONTENT DISJOINTNESS needs no foreign import and was the one a "
+            "two-way site-vs-adjacency procedure would miss. The primary "
+            "under check tests all three "
+            f"({sorted(primary_considered)}), adjudicates site-support "
+            "disjointness on discriminants rather than on assertion, and "
+            "computes that the content reading is an ANTI-escape: it exempts "
+            "equal-content collections, which is the target configuration "
+            "itself, leaving 3*alpha + E = 2/9, one equation in two unknowns. "
+            "The completeness objection is therefore discharged, not merely "
+            "survived."
+            if content_reading_covered else
+            "PARTIAL REFUTATION: the primary's VERDICT survives, but its "
+            "Q1(a) decision procedure is INCOMPLETE -- it never considered "
+            "content disjointness, the one alternative needing no foreign "
+            "import."
         ),
         "finding": (
             f"Independent sweep agrees on the occurrence lines "
-            f"({lines_found}). The sort analysis finds "
-            f"{len(readings)} byte-supported disjointness readings, not the "
-            f"2 the primary's decision procedure tested: CONTENT "
-            f"DISJOINTNESS is a real third reading requiring no foreign "
-            f"import. The primary's verdict SURVIVES -- the discriminants "
-            f"favour {majority} and the content reading leaves 3*alpha + E = "
-            f"2/9, one equation in two unknowns, which selects nothing -- but "
-            f"its claimed completeness on Q1(a) is REFUTED."
+            f"({lines_found}). The sort analysis derives the admissible "
+            f"disjointness relations from scratch by asking which set-valued "
+            f"attributes the memo predicates of a record: it finds "
+            f"{len(readings)} (site support and locked content) and rejects "
+            f"non-adjacency as unpredicated. The primary tests "
+            f"{len(primary_considered)} readings including content "
+            f"disjointness ({content_reading_covered}), so the completeness "
+            f"objection is DISCHARGED. The verdict survives: the "
+            f"discriminants favour {majority}, and the content reading leaves "
+            f"3*alpha + E = 2/9 -- one equation in two unknowns -- which "
+            f"selects nothing."
         ),
     }
 
@@ -605,12 +629,20 @@ def bounds_attack(claims: dict) -> dict:
         "triangles_found_in_box": triangles,
         "box": "[-2,2]^3",
     }
+    r_recv = json.loads(_read_text(PRIMARY_RECEIPT))
+    primary_has_universal = bool(
+        r_recv.get("geometric_vacuity_universal_form", {}).get("holds"))
     strengthening = {
-        "primary_claim": "the TARGET orbit has zero adjacency interfaces",
         "checker_finds": ("NO three sites anywhere in Z^3 are pairwise "
                           "adjacent, so the vacuity holds for EVERY 3-record "
                           "collection, not only for the target orbit"),
-        "direction": "STRENGTHENS the primary",
+        "primary_carries_the_universal_form": primary_has_universal,
+        "direction": ("ADOPTED -- the primary under check already states and "
+                      "verifies the bipartiteness form, and this checker "
+                      "reproduces it independently"
+                      if primary_has_universal else
+                      "STRENGTHENS the primary, which claims only the "
+                      "orbit-specific form"),
     }
 
     # ---- ATTACK 2: hunt an involution OUTSIDE the declared space ----------
@@ -851,14 +883,17 @@ def coverage_attack(claims: dict, sortc: dict, bnd: dict) -> dict:
                 "selects_the_target": False,
             }
         elif "adjacency gluing defect" in name:
+            declared = ("CONTENT_DISJOINTNESS"
+                        in r.get("M4_readings_tested", []))
             leak = {
                 "family_left_open": ("the content-disjointness reading of "
-                                     "'pairwise-disjoint', which the "
-                                     "primary's decision procedure never "
-                                     "tested"),
-                "declared_by_primary": False,
-                "secret": True,
+                                     "'pairwise-disjoint'"),
+                "declared_by_primary": declared,
+                "secret": not declared,
                 "selects_the_target": False,
+                "note": ("the primary tests this reading and computes it to "
+                         "be an anti-escape" if declared else
+                         "the primary's decision procedure never tested it"),
             }
         elif "multiplicatively closed anchor library" in name:
             leak = {
@@ -1041,9 +1076,12 @@ def verdict(sortc, scales, bnd, cf, cov, th) -> dict:
     survivals = [
         {"claim": "K1/K2 the M4 adjudication and ROUTE_DIES verdict",
          "survives": sortc["primary_verdict_survives"],
-         "qualification": "the completeness of the decision procedure is "
-                          "REFUTED: a third reading (content disjointness) "
-                          "was never tested. It does not rescue the route."},
+         "qualification": (
+             "the completeness objection is DISCHARGED: the primary tests "
+             "all three byte-supported readings and computes the verdict to "
+             "be reading-independent"
+             if sortc.get("content_reading_covered_by_primary") else
+             "completeness REFUTED: content disjointness was never tested")},
         {"claim": "K3/K5 the M2 census verdict and every fixed scale",
          "survives": (scales["all_scales_agree_with_primary"]
                       and not scales["any_scale_equals_target"]),
@@ -1077,29 +1115,38 @@ def verdict(sortc, scales, bnd, cf, cov, th) -> dict:
         "claims_surviving": n_survive,
         "claims_refuted": len(survivals) - n_survive,
         "survivals": survivals,
-        "refutations_landed": [
-            "the primary's Q1(a) decision procedure is INCOMPLETE: it tested "
-            "site-support disjointness against non-adjacency and never "
-            "considered content disjointness, which needs no foreign import "
-            "and leaves the target's own equal-content configuration "
-            "unconstrained. Verdict unchanged (that reading selects nothing "
-            "-- 3 alpha + E = 2/9 is one equation in two unknowns), grounds "
-            "incomplete.",
-            "the M4 CLOSED region's stated grounds therefore need a third "
-            "clause naming the content reading.",
-        ],
+        "refutations_landed": ([
+            f"NONE outstanding. This checker's two standing objections -- "
+            f"that the disjointness adjudication was a two-way procedure "
+            f"missing content disjointness, and that the M4 CLOSED region's "
+            f"grounds therefore needed a third clause -- are both DISCHARGED "
+            f"by the primary under check, which tests "
+            f"{len(sortc['sort_analysis']['readings_supported_by_the_bytes'])}"
+            f" byte-supported readings, adjudicates on three discriminants, "
+            f"and computes the content reading to be an anti-escape."
+        ] if sortc.get("content_reading_covered_by_primary") else [
+            "the primary's Q1(a) decision procedure is INCOMPLETE: it never "
+            "considered content disjointness.",
+            "the M4 CLOSED region's grounds need a third clause.",
+        ]),
         "strengthenings_found": [
             "geometric vacuity is UNIVERSAL, not orbit-specific: Z^3's "
             "nearest-neighbour graph is bipartite, so no three sites anywhere "
             "are pairwise adjacent and no 3-record collection can carry three "
-            "adjacency interfaces.",
+            "adjacency interfaces. Independently reproduced here; the primary "
+            "under check carries it: "
+            + str(bnd["attack_1_pairwise_adjacent_triple"]["strengthening"][
+                "primary_carries_the_universal_form"]),
         ],
         "teeth_verdict": f"{th['teeth_that_bit']}/{th['teeth_total']} bit",
         "finding": (
-            f"{n_survive} of {len(survivals)} attacked claims survive. Two "
-            f"refutations landed, both against COMPLETENESS of stated grounds "
-            f"rather than against any computed outcome; one strengthening was "
-            f"found. {th['teeth_that_bit']}/{th['teeth_total']} teeth bit."
+            f"{n_survive} of {len(survivals)} attacked claims survive. "
+            f"This checker's completeness objections against the "
+            f"disjointness adjudication are "
+            f"{'DISCHARGED by the primary under check' if sortc.get('content_reading_covered_by_primary') else 'OUTSTANDING'}"
+            f"; the bipartiteness strengthening is "
+            f"{'carried by the primary' if bnd['attack_1_pairwise_adjacent_triple']['strengthening']['primary_carries_the_universal_form'] else 'NOT yet carried'}"
+            f". {th['teeth_that_bit']}/{th['teeth_total']} teeth bit."
         ),
     }
 

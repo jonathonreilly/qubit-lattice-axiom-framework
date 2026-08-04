@@ -1,0 +1,433 @@
+{
+ "Q1_certification_matches_878": true,
+ "Q1_condition_rank_routes": {
+  "gram_laplace": 680,
+  "rational_elimination": 680
+ },
+ "Q1_covariance_condition": "a weighting w: E -> Q is monitor-phase covariant iff its pushforward to the F_WORLD partition is CONSTANT ON THE ORBITS of the monitor-phase group; equivalently, for every orbit O and every pair x, y in O, sum_{e: world(e)=x} w(e) = sum_{e: world(e)=y} w(e)",
+ "Q1_group_structure": {
+  "acts_freely": true,
+  "is_a_group": true,
+  "isomorphism_class": "Z_11",
+  "lifts_to_the_event_space": false,
+  "orbit_size": 11,
+  "orbits": 68
+ },
+ "Q1_second_reading": "COV-EQV (the landed intertwining)",
+ "Q2_discovered_surfaces": [
+  "docs/BORN_NARROWING_CERTIFIED_LEDGER_OPENED_CYCLE905_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md",
+  "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "scripts/frontier_cycle856_covariance_independent_check_2026_07_28.py",
+  "scripts/frontier_cycle856_record_covariance_2026_07_28.py",
+  "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+  "scripts/frontier_cycle878_event_space_independent_check_2026_07_28.py",
+  "scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py",
+  "scripts/frontier_cycle905_born_narrowing_2026_07_28.py",
+  "scripts/frontier_cycle906_covariance_tension_2026_07_28.py"
+ ],
+ "Q2_fidelity_verdict": "COVARIANCE IS A CREDENTIAL, NOT A LAW",
+ "Q2_requires_count": 0,
+ "Q2_surfaces_swept": [
+  "docs/MINIMAL_AXIOMS_2026-06-29.md",
+  "docs/BORN_NARROWING_CERTIFIED_LEDGER_OPENED_CYCLE905_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md",
+  "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+ ],
+ "Q3_exhibited_solution": {
+  "base_rank_with_it": 6,
+  "covariant": true,
+  "denominator": 11806080,
+  "extension_dimension_with_it": 30,
+  "name": "M6_ABSOLUTE_ORBIT_UNIFORM",
+  "support_events": 1419,
+  "support_worlds": [
+   3,
+   4,
+   11,
+   12,
+   19,
+   20,
+   26,
+   27,
+   32,
+   33,
+   37
+  ],
+  "total": 11806080,
+  "zero_on_block": true,
+  "zero_weight_events": 90841
+ },
+ "Q3_extension_25_joint_rank": 5,
+ "Q3_extension_25_routes": {
+  "gram_laplace": 5,
+  "rational_elimination": 5
+ },
+ "Q3_extension_25_solutions_exist": false,
+ "Q3_generous_base_normalizable_solutions_exist": true,
+ "Q3_generous_base_routes_agree": true,
+ "Q3_generous_base_signed_dimension_route_2": 19009,
+ "Q3_generous_base_signed_solution_dimension": 19009,
+ "Q3_resolution_class": "RESOLVED BY CONSTRUCTION, OUTSIDE THE CYCLE-878 SPAN",
+ "Q3_world_mass_solution_unique_up_to_scale": true,
+ "Q3_world_mass_space_dimension": 1,
+ "Q4_856_absolute_shape_match": true,
+ "Q4_BL6_identification_holds": false,
+ "Q4_BL6_zero_events_before_and_after": [
+  73088,
+  90841
+ ],
+ "Q4_every_orbit_meets_the_block": false,
+ "Q4_general_theorem_verdict": "FAILS, AND BY EXACTLY ONE ORBIT: the orbit-structure argument would give the general theorem if every one of the 68 orbits met the block, and 67 of them do -- but 1 orbit(s) lie entirely outside it, and that orbit is the whole escape hatch",
+ "Q4_orbit_meeting_histogram": {
+  "0": 1,
+  "1": 1,
+  "2": 1,
+  "3": 1,
+  "4": 1,
+  "5": 1,
+  "6": 5,
+  "7": 2,
+  "8": 11,
+  "9": 15,
+  "10": 17,
+  "11": 12
+ },
+ "VERDICT": "TENSION_RESOLVED_CONSTRUCTIVELY_OUTSIDE_THE_878_SPAN",
+ "all_certificates_pass": true,
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockQ3-20260802",
+ "campaign": "campaign-5-born-lane-closure",
+ "checks": {
+  "A_PINS": true,
+  "B_RESTRICTION_GATE": true,
+  "C_COVARIANCE_CONDITION_DERIVED": true,
+  "D_FIDELITY_AXIOM_GROUNDING": true,
+  "E_JOINT_SYSTEM": true,
+  "F_ORBIT_MEETING_AND_BL6": true,
+  "G_EXHIBITED_SOLUTION_DOWNSTREAM": true,
+  "H_FALSIFIERS": true,
+  "I_DOUBLE_BUILD": true,
+  "J_RUNTIME": true,
+  "K_LANE_LEDGER": true
+ },
+ "claim_type": "bounded_theorem",
+ "cycle": 906,
+ "deterministic_double_build": true,
+ "elapsed_sec": 157.183,
+ "event_space_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+ "firewall_hits": 0,
+ "label_on_every_fraction": "bookkeeping fraction, not probability",
+ "ledger_rows": [
+  {
+   "blocked_on": "nothing on the Born side",
+   "id": "BL7_COVARIANCE",
+   "status_before": "OPEN and SHARPENED INTO A TENSION: the gravity interface excludes M2_PER_WORLD_UNIFORM (certificate D), and 878 certifie",
+   "status_now": "RESOLVED BY CONSTRUCTION, OUTSIDE THE CYCLE-878 SPAN.  (1) Over the 25-dimensional minimal kernel-argument extension of the Cycle-878 span the two demands are JOINTLY UNSATISFIABLE (joint rank 5 on 5 unknowns by two routes, plus a third structural route: the intersection of 878's covariant line with 905's surviving 3-space).  (2) Over Cycle 902's own generous base the joint system has a normalizable solution, its world-mass space has dimension 1, and the exhibited representative is M6_ABSOLUTE_ORBIT_UNIFORM.  (3) The axiom baseline REQUIRES covariance nowhere (0 REQUIRES rows over 4 surfaces), so the credential was never a law; keeping it costs one new generator outside the 878 five"
+  },
+  {
+   "blocked_on": "the lane",
+   "id": "BL6_NEVER_FORMED_BLOCK",
+   "status_before": "OPEN.  73088 of 92260 events carry zero mass under all three survivors; any future selection therefore assigns zero book",
+   "status_now": "OPEN and SHARPENED.  BL6 and BL7 are NOT the same fact: 67 of 68 covariance orbits meet the never-formed block, not all of them.  But covariance drives BL6 to its maximum: a jointly-satisfying weighting assigns zero mass to 90841 of 92260 realized record events and is supported on 11 of 748 worlds"
+  },
+  {
+   "blocked_on": "a recomputation of the 856 stamps on this lineage",
+   "id": "BL8_ESCAPE_ORBIT_STATUS",
+   "obligation": "NEW, surfaced by this block: the escape orbit's census shape is k=[2], event=[0], separations [(5,), (6,)] -- exactly the shape Cycle 856 names for its ABSOLUTE-record orbits",
+   "status_now": "OPEN, premise P-856-SHAPE named and unpriced"
+  }
+ ],
+ "named_premises": [
+  "P-NONEMPTY (inherited from Cycle 905)",
+  "P-INTERTWINE-878 (named here, undischarged)",
+  "P-856-SHAPE (named here, undischarged)"
+ ],
+ "question": "Cycle 906 -- resolve or price BL7: is there any weighting that is both monitor-phase covariant and compatible with the gravity interface's zero-mass requirement?",
+ "restriction_gate": "26/26 restriction gates reproduce",
+ "restriction_gate_rows": [
+  {
+   "computed": 92260,
+   "expected": 92260,
+   "gate": "878_event_cardinality",
+   "match": true
+  },
+  {
+   "computed": 748,
+   "expected": 748,
+   "gate": "878_worlds_with_events",
+   "match": true
+  },
+  {
+   "computed": 68,
+   "expected": 68,
+   "gate": "878_world_orbit_count",
+   "match": true
+  },
+  {
+   "computed": {
+    "11": 68
+   },
+   "expected": {
+    "11": 68
+   },
+   "gate": "878_world_orbit_size_histogram",
+   "match": true
+  },
+  {
+   "computed": true,
+   "expected": true,
+   "gate": "878_action_is_a_census_bijection",
+   "match": true
+  },
+  {
+   "computed": 0,
+   "expected": 0,
+   "gate": "878_zero_weight_events_M1_COUNTING",
+   "match": true
+  },
+  {
+   "computed": 92260,
+   "expected": 92260,
+   "gate": "905_total_M1_COUNTING",
+   "match": true
+  },
+  {
+   "computed": 0,
+   "expected": 0,
+   "gate": "878_zero_weight_events_M2_PER_WORLD_UNIFORM",
+   "match": true
+  },
+  {
+   "computed": 802813440,
+   "expected": 802813440,
+   "gate": "905_total_M2_PER_WORLD_UNIFORM",
+   "match": true
+  },
+  {
+   "computed": 73088,
+   "expected": 73088,
+   "gate": "878_zero_weight_events_M3_OCCUPATION_WEIGHTED",
+   "match": true
+  },
+  {
+   "computed": 897595870080,
+   "expected": 897595870080,
+   "gate": "905_total_M3_OCCUPATION_WEIGHTED",
+   "match": true
+  },
+  {
+   "computed": 73088,
+   "expected": 73088,
+   "gate": "878_zero_weight_events_M4_FORMATION_LIFETIME",
+   "match": true
+  },
+  {
+   "computed": 29530480287360,
+   "expected": 29530480287360,
+   "gate": "905_total_M4_FORMATION_LIFETIME",
+   "match": true
+  },
+  {
+   "computed": 76184,
+   "expected": 76184,
+   "gate": "878_zero_weight_events_M5_FORMATION_MOMENT",
+   "match": true
+  },
+  {
+   "computed": 2192349344640,
+   "expected": 2192349344640,
+   "gate": "905_total_M5_FORMATION_MOMENT",
+   "match": true
+  },
+  {
+   "computed": [
+    748,
+    164,
+    584,
+    73088,
+    92260
+   ],
+   "expected": [
+    748,
+    164,
+    584,
+    73088,
+    92260
+   ],
+   "gate": "905_mechanism_sentence_numbers",
+   "match": true
+  },
+  {
+   "computed": 584,
+   "expected": 584,
+   "gate": "905_worlds_never_formed",
+   "match": true
+  },
+  {
+   "computed": 73088,
+   "expected": 73088,
+   "gate": "905_events_on_never_formed_worlds",
+   "match": true
+  },
+  {
+   "computed": 164,
+   "expected": 164,
+   "gate": "905_worlds_formed",
+   "match": true
+  },
+  {
+   "computed": 748,
+   "expected": 748,
+   "gate": "905_worlds_total",
+   "match": true
+  },
+  {
+   "computed": 92260,
+   "expected": 92260,
+   "gate": "905_events_total",
+   "match": true
+  },
+  {
+   "computed": 5,
+   "expected": 5,
+   "gate": "905_base_rank",
+   "match": true
+  },
+  {
+   "computed": 25,
+   "expected": 25,
+   "gate": "905_extension_dimension",
+   "match": true
+  },
+  {
+   "computed": 5,
+   "expected": 5,
+   "gate": "902_minimal_fibre_dimension",
+   "match": true
+  },
+  {
+   "computed": [
+    "M1_COUNTING",
+    "M2_PER_WORLD_UNIFORM"
+   ],
+   "expected": [
+    "M1_COUNTING",
+    "M2_PER_WORLD_UNIFORM"
+   ],
+   "gate": "905_excluded_set",
+   "match": true
+  },
+  {
+   "computed": [
+    "M3_OCCUPATION_WEIGHTED",
+    "M4_FORMATION_LIFETIME",
+    "M5_FORMATION_MOMENT"
+   ],
+   "expected": [
+    "M3_OCCUPATION_WEIGHTED",
+    "M4_FORMATION_LIFETIME",
+    "M5_FORMATION_MOMENT"
+   ],
+   "gate": "905_surviving_set",
+   "match": true
+  }
+ ],
+ "science_digest": "bc7855879cbb1207f725b28d44a171099a3b190376636421a27ff025fba11c96",
+ "scope": "the full realized record-write census of the pinned Cycle-878 construction at horizon 16384 orbits (92260 events over 748 worlds), rebuilt by AST lift from the pinned Cycle-863 and Cycle-878 sources (never imported); the gravity side enters ONLY through the vendored Cycle-902 artifacts and the Cycle-905 receipt.  Exact rational arithmetic throughout; no probability, no occurrence rule, no update law is introduced.",
+ "self_sha256": "9c6392d593c1bf37e70f84692732d1e5cfa3f4377393dab846a15789fc0ce008",
+ "source_pins": [
+  {
+   "bytes": 26046,
+   "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  {
+   "bytes": 23020,
+   "git_blob": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+   "path": "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+   "sha256": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62"
+  },
+  {
+   "bytes": 47315,
+   "git_blob": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+   "path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+   "sha256": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b"
+  },
+  {
+   "bytes": 7169,
+   "git_blob": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+   "path": "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+   "sha256": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c"
+  },
+  {
+   "bytes": 71823,
+   "git_blob": "3b43d97bbb604ea44ed06c87aa091c6aa9d8470b",
+   "path": "scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py",
+   "sha256": "46d46db10258731b986f3c639eedcf1ad3f968021f1efe30c88cc3e5e17b46c2"
+  },
+  {
+   "bytes": 16040,
+   "git_blob": "1fd7522ad2af152f2e13327e752e2eb9f37e67bb",
+   "path": "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json",
+   "sha256": "91c5631415d0231390fedbd0174f074de45cfa33b6dd4f706ed6fcdbf4dfd1d8"
+  },
+  {
+   "bytes": 75262,
+   "git_blob": "f9f2171602bddf7d6164261dc13a2ee4f7e3046c",
+   "path": "scripts/frontier_cycle905_born_narrowing_2026_07_28.py",
+   "sha256": "83429f35312e0df16d3d11e65685cb87b8e732b19299e1078ddaea1e1444afb3"
+  },
+  {
+   "bytes": 13116,
+   "git_blob": "7094c986dc0560e8982507d8cc379f5c720b639f",
+   "path": "outputs/born_narrowing_cycle905_receipt_2026_07_28.json",
+   "sha256": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40"
+  },
+  {
+   "bytes": 3742,
+   "git_blob": "c098209994af7b77de90717eaaf288bdf2ce7196",
+   "path": "outputs/born_narrowing_block_cycle905_ship_receipt_2026_07_28.json",
+   "sha256": "9a35f2161bbabdbb0579a01f9984381ef74995261dbb6a76e65c678896c833df"
+  },
+  {
+   "bytes": 33640,
+   "git_blob": "fc873d0b1947866b238bbe5456ffe89fcd072a21",
+   "path": "scripts/frontier_cycle856_record_covariance_2026_07_28.py",
+   "sha256": "20bce7f6dab9d7755ddefc6e2000d501acb8572dc15f50981b65ba9f6e2a4f2b"
+  },
+  {
+   "bytes": 3783,
+   "git_blob": "f819f5b31d442248fac255fcdf3b0139d6ba83f8",
+   "path": "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "sha256": "7b6b73826ee397e66102994174d94e04c3f174761f00ffcfe0da2be97e72a545"
+  },
+  {
+   "bytes": 6224,
+   "git_blob": "8fd212e96748064c40be670e491474e14dae28b6",
+   "path": "docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md",
+   "sha256": "007bbaa2ae70afad7fcb761d3f3912edb1b3f1c893a439a9e4d815abe335428c"
+  },
+  {
+   "bytes": 9445,
+   "git_blob": "96d8cfd2e1f686d37c74f377fbbc2667da5490a1",
+   "path": "docs/BORN_NARROWING_CERTIFIED_LEDGER_OPENED_CYCLE905_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "sha256": "8a8f724a1be93f368c89b90bedae97777bcae3fb6991367228a2ff85d014fec8"
+  },
+  {
+   "bytes": 8846,
+   "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+  }
+ ],
+ "theorems": [
+  "C906-T1 THE COVARIANCE CONDITION IS ORBIT-CONSTANCY OF WORLD MASS. The landed monitor-phase family is a group: it is closed, has an identity and inverses, is cyclic of order 11 generated by the m=1 shift, and acts FREELY on the 748-world census with 68 orbits of size 11.  It does NOT lift to a permutation of the 92260-event space -- orbit-mates carry different (tag, ordinal) atom shapes -- so covariance cannot be event-wise constancy.  The condition the pinned Cycle-878 test actually computes (byte-quoted) is that the pushforward to the F_WORLD partition be constant on orbits: a linear condition of exact rank 680 by two routes, cutting the covariant subspace of Q^E to dimension 91580.  Every Cycle-878 covariance verdict reproduces value-for-value from it.",
+  "C906-T2 COVARIANCE IS A CREDENTIAL, NOT A LAW. A fidelity sweep over 4 doc surfaces -- the pinned axiom baseline plus every monitor/phase-relevant surface discovered on this branch by a published rule (9472 files scanned) -- finds 0 sentences that REQUIRE the measurement weighting to be monitor-phase covariant.  The baseline's only covariance sentence is about the nearest-neighbor admissibility rule under lattice translations and cubic rotations, and its exclusion list places Born weights and probability rules outside axiom content altogether.",
+  "C906-T3 INSIDE THE 25-DIMENSIONAL EXTENSION THE TENSION IS A THEOREM.  Over the minimal kernel-argument extension of the Cycle-878 span -- where covariance lifts unchanged because the fibre carries no world index -- monitor-phase covariance and the interface's zero-mass requirement on the never-formed block are JOINTLY UNSATISFIABLE: the joint constraint matrix has rank 5 on 5 unknowns by both routes, so the base solution space has dimension 0 and the extension's joint solution space is 0-dimensional.  Structurally: the covariant subspace of the span is exactly the M2 line (dimension 1), the zero-mass subspace is exactly the M3/M4/M5 span (dimension 3), and they intersect in zero.  This holds under all three declared readings of the zero-mass requirement, because the covariant line has minimum event numerator 8320 > 0 and so vanishes nowhere.",
+  "C906-T4 THE SCOPE OF THE OBSTRUCTION, FROM ORBIT STRUCTURE. The orbit-meeting computation is decisive: 67 of the 68 covariance orbits meet the never-formed block (12 lie entirely inside it, 55 are mixed), and exactly 1 lie entirely outside.  So the orbit-structure argument does NOT give a general theorem: it fails by exactly 1 orbit(s).  Over Cycle 902's own generous base the joint system has a NORMALIZABLE solution; the raw linear solution space has dimension 19009 by two independent routes, of which 19008 directions carry zero total mass, and the world-mass space has dimension 1: every jointly-satisfying weighting is supported on the 11 worlds of the escape orbit(s).  The exhibited representative M6_ABSOLUTE_ORBIT_UNIFORM is finitely additive, normalizable, non-negative, covariant, zero on the whole never-formed block, and hosts the interface's vanishing cells.",
+  "C906-T5 THE PRICE. The jointly-satisfying weighting is linearly independent of the Cycle-878 five (base rank 5 -> 6), so keeping covariance moves the minimal kernel-argument extension from 25 to 30 dimensions.  Its second price is BL6: the zero set grows from 73088 to 90841 of 92260 realized record events, and the support shrinks from 164 formed worlds to 11.  BL6 and BL7 are NOT the same fact, but covariance drives BL6 to its maximum."
+ ]
+}

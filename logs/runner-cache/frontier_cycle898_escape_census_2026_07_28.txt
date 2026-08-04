@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle898_escape_census_2026_07_28.py
-runner_sha256: 83c797501c6216700518618d91bfd35bb32dbea92dfc825ef592a9397423b0c6
+runner_sha256: 057010272fb24b413a049f42faf4f154be769a4b7b29a1886c3a8154f35e4a7f
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 3.507
+elapsed_sec: 3.388
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -18,7 +18,7 @@ CYCLE 898 -- THE M2 / M4 ESCAPE CENSUS
        882's T1 dichotomy reproduces on all 14 reparsed homogeneous rows, 882's
        T7 closed-library wall reproduces at 42 primary / 200 receipt libraries,
        883's normal-form row reproduces, and 3 * 2/27 = 2/9 exactly. Cycle 897 is
-       ABSENT from this branch (13768 entries scanned), so 882's original T7
+       ABSENT from this branch (13771 entries scanned), so 882's original T7
        scope is the one cited.
 
 [PASS] C_DISJOINTNESS_SWEEP
@@ -28,25 +28,30 @@ CYCLE 898 -- THE M2 / M4 ESCAPE CENSUS
        0 'disjoint' sentence(s) carrying any adjacency or separation qualifier.
 
 [PASS] D_M4_ADJUDICATION
-       Adjudicated reading: SITE_SET_DISJOINTNESS. A record's support is a single
-       site (E2+E3), so 'pairwise-disjoint' is automatically satisfied by any
-       finite collection of distinct records and the additivity clause covers
-       ADJACENT records. The memo defines record disjointness nowhere (0 hits),
-       no 'disjoint' sentence carries an adjacency qualifier (0 hits), and the
-       memo's sole adjacency word sits in the Lattice section, not in Record.
-       Verdict ROUTE_DIES: any nonzero adjacency gluing defect contradicts the
-       axiom, and the content-alone sentence kills it a second time under every
-       reading.
+       Three readings tested, not two. Adjudicated reading:
+       SITE_SET_DISJOINTNESS, carried 2 discriminants to 1. A record's support is
+       a single site (E2+E3), so 'pairwise-disjoint' is automatically satisfied
+       by any finite collection of distinct records and the additivity clause
+       covers ADJACENT records. The memo defines record disjointness nowhere (0
+       hits), no 'disjoint' sentence carries an adjacency qualifier (0 hits), and
+       the memo's sole adjacency word sits in the Lattice section, not in Record.
+       Verdict ROUTE_DIES, and it is READING-INDEPENDENT: R1 kills by
+       contradiction, R3 by the content-alone clause on top of being unlicensed,
+       and R4 kills itself by exempting the very equal-content configuration
+       whose readout must equal 2/9.
 
 [PASS] E_M4_ENUMERATION_AND_COUNTERFACTUAL
        The M4 adjacency route dies a third, geometry-only death: the target C3
        orbit [[1, 0, 0], [0, 1, 0], [0, 0, 1]] has 0 adjacency interfaces (all
-       pairwise squared distances are 2), so no adjacency defect can reach it.
-       The counterfactual enumeration over all 343 members of the forbidden
-       family leaves the induced solution set at Z in every case: the axiom
-       clause buys zero selection power. The purchased-modulus branch shows the
-       whole singleton rests on odd_part(M) = 27, hit by 4 moduli in the scanned
-       range with odd parts [27].
+       pairwise squared distances are 2), so no adjacency defect can reach it --
+       and the fact is UNIVERSAL, not orbit-specific: Z^3's nearest-neighbour
+       graph is bipartite (300 edges checked, every one parity-flipping), so it
+       has 0 triangles and NO three sites anywhere are pairwise adjacent. The
+       counterfactual enumeration over all 343 members of the forbidden family
+       leaves the induced solution set at Z in every case: the axiom clause buys
+       zero selection power. The purchased-modulus branch shows the whole
+       singleton rests on odd_part(M) = 27, hit by 4 moduli in the scanned range
+       with odd parts [27].
 
 [PASS] F_M4_INGREDIENT_DERIVABILITY
        Every M4 ingredient is a purchase or is derived for a different object.
@@ -91,12 +96,12 @@ CYCLE 898 -- THE M2 / M4 ESCAPE CENSUS
 
 [PASS] L_OUTCOME_AND_PRICE
        The block returns the exhaustive negative it was specified to return, plus
-       more coverage than expected: M4's adjacency mechanism dies three
-       independent deaths (one of them pure geometry, so it is immune to the
-       interpretive dispute), the M2 involution census closes at degree 1 by
-       theorem rather than by enumeration, and the single unpriced open shape in
-       the whole four-shape classification is a non-involution mixed-degree
-       relation.
+       more coverage than expected: M4's adjacency mechanism dies four
+       independent deaths across all three readings the memo's bytes admit (one
+       of them pure geometry, so it is immune to the interpretive dispute
+       entirely), the M2 involution census closes at degree 1 by theorem rather
+       than by enumeration, and the single unpriced open shape in the whole
+       four-shape classification is a non-involution mixed-degree relation.
 
 ------------------------------------------------------------------------------
 EVERY 'disjoint' OCCURRENCE IN THE PINNED AXIOM MEMO
@@ -116,7 +121,10 @@ EVERY 'disjoint' OCCURRENCE IN THE PINNED AXIOM MEMO
 ------------------------------------------------------------------------------
 THE M4 ADJUDICATION
 ------------------------------------------------------------------------------
+  readings tested     : ['SITE_SET_DISJOINTNESS', 'NON_ADJACENCY', 'CONTENT_DISJOINTNESS']
+  discriminant tally  : {'SITE_SET_DISJOINTNESS': 2, 'CONTENT_DISJOINTNESS': 1}
   adjudicated reading : SITE_SET_DISJOINTNESS
+  reading-independent : True
   covers adjacent     : True
   VERDICT             : ROUTE_DIES
 
@@ -210,12 +218,16 @@ THE COVERAGE THEOREM: CLOSED vs OPEN
     structures built from the supplied structure -- NO native involution pins
     alpha = 2/27 (equivalently the orbit to 2/9)
     [this block's adjudication (D) and enumeration (E)] M4 via a two-record
-    adjacency gluing defect -- dies three independent deaths: (1) the
+    adjacency gluing defect -- dies four independent deaths: (1) the
     additivity clause covers adjacent site-distinct records, so a nonzero
     defect contradicts the axiom; (2) the content-alone clause forbids a
     position-dependent defect under EVERY reading of 'pairwise-disjoint'; (3)
-    the target C3 orbit contains zero adjacency interfaces, so no defect can
-    reach it
+    no three sites of Z^3 are pairwise adjacent (the nearest-neighbour graph
+    is bipartite) and the target C3 orbit contains zero adjacency interfaces,
+    so no defect can reach it; (4) the one import-free alternative reading --
+    content disjointness -- exempts equal-content collections, which is the
+    target configuration itself, and so adds a free parameter rather than
+    removing one
     [this block's C898-T6] M3 alone (an order / fundamental-domain condition)
     -- a Q-line has no least positive element and the scaling action is
     transitive on it, so an order condition alone selects nothing
@@ -251,20 +263,25 @@ THE COVERAGE THEOREM: CLOSED vs OPEN
 OUTCOME
 ------------------------------------------------------------------------------
   class: EXHAUSTIVE_NO_GO_PLUS_COMPLETED_COVERAGE
-  M4: ROUTE_DIES (3 independent kills); ingredients PRICED with 3 named purchases
+  M4: ROUTE_DIES (4 independent kills); ingredients PRICED with 3 named purchases
   M2: NO native involution pins alpha = 2/27 (equivalently the orbit to 2/9) over 10 census entries
   M3: amplifier, not an escape
   coverage: 5 closed / 5 open
 
   new theorems:
-    - C898-T1 the disjointness adjudication: 'pairwise-disjoint' reads as
-    disjoint site supports, so Record additivity covers adjacent records and a
-    nonzero gluing defect contradicts the axiom
+    - C898-T1 the disjointness adjudication: of the three readings the memo's
+    bytes admit, 'pairwise-disjoint' reads as disjoint site supports (2
+    discriminants to 1 over content disjointness, with non-adjacency
+    unlicensed), so Record additivity covers adjacent records and a nonzero
+    gluing defect contradicts the axiom -- and the ROUTE_DIES verdict is
+    reading-independent
     - C898-T2 the content-alone kill: a position-dependent gluing defect
     contradicts 'a readout value is determined by record content alone' under
     every reading of the disjointness qualifier
-    - C898-T3 geometric vacuity: the target free C3 orbit contains zero
-    adjacency interfaces, so no adjacency defect can constrain alpha
+    - C898-T3 geometric vacuity, universal form: the nearest-neighbour graph
+    on Z^3 is bipartite, so no three sites anywhere are pairwise adjacent and
+    the target free C3 orbit contains zero adjacency interfaces; no adjacency
+    defect can constrain alpha
     - C898-T4 the linear dichotomy: for EVERY Q-linear map the self-duality
     condition is homogeneous in alpha, so the whole involution/self-duality
     shape is degree-1 sterile
@@ -278,4 +295,4 @@ OUTCOME
 CYCLE 898 CERTIFICATES: ALL PASS
 ==============================================================================
 
-controls: deterministic=True runtime_under_limit=True stdout=15129B receipt=d202848b8c3025d6
+controls: deterministic=True runtime_under_limit=True stdout=16402B receipt=1fac436697122a7d

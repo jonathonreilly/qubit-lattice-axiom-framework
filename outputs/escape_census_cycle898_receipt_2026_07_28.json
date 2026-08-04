@@ -117,6 +117,10 @@
   },
   "M2_verdict": "NO native involution pins alpha = 2/27 (equivalently the orbit to 2/9)",
   "M4_adjudicated_reading": "SITE_SET_DISJOINTNESS",
+  "M4_discriminant_tally": {
+    "CONTENT_DISJOINTNESS": 1,
+    "SITE_SET_DISJOINTNESS": 2
+  },
   "M4_disjoint_occurrences": [
     {
       "byte_offset": 2452,
@@ -131,7 +135,30 @@
   ],
   "M4_ingredient_verdict": "PRICED",
   "M4_named_purchases": 3,
+  "M4_readings_tested": [
+    "SITE_SET_DISJOINTNESS",
+    "NON_ADJACENCY",
+    "CONTENT_DISJOINTNESS"
+  ],
   "M4_verdict": "ROUTE_DIES",
+  "M4_verdict_is_reading_independent": true,
+  "M4_verdict_per_reading": {
+    "R1_site_support": {
+      "computed": true,
+      "route": "DIES",
+      "why": "additivity covers adjacent site-distinct records, so a nonzero defect contradicts the axiom"
+    },
+    "R3_non_adjacency": {
+      "computed": true,
+      "route": "DIES",
+      "why": "unlicensed by the bytes, and even if granted the content-alone clause forbids a position-dependent defect"
+    },
+    "R4_content_disjointness": {
+      "computed": true,
+      "route": "DIES",
+      "why": "licensed but self-defeating: it exempts equal-content collections, which is exactly the target configuration, leaving one equation in two unknowns"
+    }
+  },
   "coverage_closed": [
     {
       "closed_by": "C882-T1 (homogeneous dichotomy), restated and reproduced here",
@@ -155,8 +182,8 @@
     {
       "closed_by": "this block's adjudication (D) and enumeration (E)",
       "region": "M4 via a two-record adjacency gluing defect",
-      "scope": "kills (1) and (2) are byte-adjudications of the pinned axiom memo; kill (3) is a bound-free lattice geometry fact; the counterfactual enumeration is exhaustive inside its declared bounds",
-      "statement": "dies three independent deaths: (1) the additivity clause covers adjacent site-distinct records, so a nonzero defect contradicts the axiom; (2) the content-alone clause forbids a position-dependent defect under EVERY reading of 'pairwise-disjoint'; (3) the target C3 orbit contains zero adjacency interfaces, so no defect can reach it"
+      "scope": "kills (1), (2) and (4) are byte-adjudications of the pinned axiom memo across all three readings tested; kill (3) is a bound-free lattice geometry fact; the counterfactual enumeration is exhaustive inside its declared bounds",
+      "statement": "dies four independent deaths: (1) the additivity clause covers adjacent site-distinct records, so a nonzero defect contradicts the axiom; (2) the content-alone clause forbids a position-dependent defect under EVERY reading of 'pairwise-disjoint'; (3) no three sites of Z^3 are pairwise adjacent (the nearest-neighbour graph is bipartite) and the target C3 orbit contains zero adjacency interfaces, so no defect can reach it; (4) the one import-free alternative reading -- content disjointness -- exempts equal-content collections, which is the target configuration itself, and so adds a free parameter rather than removing one"
     },
     {
       "closed_by": "this block's C898-T6",
@@ -221,9 +248,9 @@
     "planted_selector_pins_target": true
   },
   "new_theorems": [
-    "C898-T1 the disjointness adjudication: 'pairwise-disjoint' reads as disjoint site supports, so Record additivity covers adjacent records and a nonzero gluing defect contradicts the axiom",
+    "C898-T1 the disjointness adjudication: of the three readings the memo's bytes admit, 'pairwise-disjoint' reads as disjoint site supports (2 discriminants to 1 over content disjointness, with non-adjacency unlicensed), so Record additivity covers adjacent records and a nonzero gluing defect contradicts the axiom -- and the ROUTE_DIES verdict is reading-independent",
     "C898-T2 the content-alone kill: a position-dependent gluing defect contradicts 'a readout value is determined by record content alone' under every reading of the disjointness qualifier",
-    "C898-T3 geometric vacuity: the target free C3 orbit contains zero adjacency interfaces, so no adjacency defect can constrain alpha",
+    "C898-T3 geometric vacuity, universal form: the nearest-neighbour graph on Z^3 is bipartite, so no three sites anywhere are pairwise adjacent and the target free C3 orbit contains zero adjacency interfaces; no adjacency defect can constrain alpha",
     "C898-T4 the linear dichotomy: for EVERY Q-linear map the self-duality condition is homogeneous in alpha, so the whole involution/self-duality shape is degree-1 sterile",
     "C898-T5 the quadratic free parameter: C3-invariant quadratic normalizations form a 2-parameter family, so they select nothing without a further purchase",
     "C898-T6 order alone selects nothing: a Q-line has no least positive element and its scaling action is transitive"
@@ -235,7 +262,7 @@
     "T1_reproduced": true,
     "T7_reproduced": true,
     "cycle_897_scan": {
-      "entries_scanned": 13768,
+      "entries_scanned": 13771,
       "hits": [],
       "verdict": "ABSENT"
     }

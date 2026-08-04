@@ -1,0 +1,706 @@
+{
+ "CHECKER_VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+ "block": "toe-time-blockQ4-20260802",
+ "campaign": "campaign-5-born-lane-closure",
+ "certificates": {
+  "PINS": {
+   "certificate": "PINS",
+   "firewall_hits_before_the_teeth": [],
+   "git_blobs": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "4a863da1f3f255354839277271a3a69a5c205133",
+    "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": "7094c986dc0560e8982507d8cc379f5c720b639f",
+    "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "392cba199a75a14a8bb88808943c1259cbd7a94b",
+    "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+    "outputs/m6_identification_cycle907_receipt_2026_07_28.json": "e7eef6eeeb62aeddcdb12417ccd8ec871b9d87a7",
+    "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json": "1fd7522ad2af152f2e13327e752e2eb9f37e67bb",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+    "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+    "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+    "scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py": "3b43d97bbb604ea44ed06c87aa091c6aa9d8470b",
+    "scripts/frontier_cycle907_m6_identification_2026_07_28.py": "70fad3ab7996926a7b543af64f0449a92a9868cd"
+   },
+   "note": "the primary and its receipt are pinned by presence and hashed here, but their hashes are NOT hardcoded: the checker must run against whatever the primary emitted",
+   "pass": true,
+   "primary_present": true,
+   "primary_receipt_present": true,
+   "sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+    "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40",
+    "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f",
+    "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c",
+    "outputs/m6_identification_cycle907_receipt_2026_07_28.json": "d67a967a6226a4e1ed2e0bf1762cb3b544df87e1fe4b07d6399f13ec179086ca",
+    "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json": "91c5631415d0231390fedbd0174f074de45cfa33b6dd4f706ed6fcdbf4dfd1d8",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+    "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+    "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
+    "scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py": "46d46db10258731b986f3c639eedcf1ad3f968021f1efe30c88cc3e5e17b46c2",
+    "scripts/frontier_cycle907_m6_identification_2026_07_28.py": "cfc87a647a8fe87ed97289bb179d4919bb4801731393bbec33006c6cfe348d53"
+   },
+   "upstream_pins_match_the_checkers_own_expectations": true
+  },
+  "R1_OBJECTS_REBUILT": {
+   "M6_gcd": 8320,
+   "M6_matches_the_pinned_906_receipt": true,
+   "M6_positive_values": [
+    8320
+   ],
+   "M6_support_events": 1419,
+   "M6_support_worlds": [
+    3,
+    4,
+    11,
+    12,
+    19,
+    20,
+    26,
+    27,
+    32,
+    33,
+    37
+   ],
+   "M6_total": 11806080,
+   "M6_zero_events": 90841,
+   "born_side_common_denominator_by_lcm": 1073280,
+   "born_side_common_denominator_pinned": 1073280,
+   "certificate": "R1_OBJECTS_REBUILT",
+   "common_denominator_agrees": true,
+   "degree0": [
+    15600,
+    2910,
+    492,
+    1
+   ],
+   "degree0_primitive_ratio": [
+    15600,
+    2910,
+    492,
+    1
+   ],
+   "degree0_sum": 19003,
+   "degree2": [
+    1728,
+    264,
+    108,
+    0
+   ],
+   "event_cardinality": 92260,
+   "event_cardinality_matches_878": true,
+   "gravity_side_regex_reader": {
+    "C": [
+     [
+      15600,
+      0,
+      1728,
+      0,
+      0
+     ],
+     [
+      2910,
+      0,
+      264,
+      0,
+      0
+     ],
+     [
+      492,
+      0,
+      108,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "atoms": 4,
+    "coefficients_are_integers": true,
+    "degrees": 5,
+    "meets_supp_R": [
+     false,
+     false,
+     false,
+     true
+    ],
+    "sites": [
+     12,
+     6,
+     6,
+     1
+    ]
+   },
+   "json_reader_table": [
+    [
+     15600,
+     0,
+     1728,
+     0,
+     0
+    ],
+    [
+     2910,
+     0,
+     264,
+     0,
+     0
+    ],
+    [
+     492,
+     0,
+     108,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "pass": true,
+   "rank_matches_the_primary": true,
+   "rank_minor_witness": {
+    "cols": [
+     0,
+     2
+    ],
+    "det": -910080,
+    "rows": [
+     0,
+     1
+    ]
+   },
+   "rank_route_minor_hunt": 2,
+   "rank_route_reversed_elimination": 2,
+   "rank_routes_agree": true,
+   "ratio_scale_factorisation": {
+    "31": 1,
+    "613": 1
+   },
+   "readers_agree": true
+  },
+  "R2_BRIDGE_SEARCH": {
+   "M6_exhaustive": {
+    "class_size": 1419,
+    "decided": true,
+    "enumeration_upper_bound": 0,
+    "quanta_required_per_unit": 19003,
+    "single_value_class": 8320,
+    "verdict": "IMPOSSIBLE",
+    "why": "one value class of size 1419: a block mass is v * k, so proportionality to a primitive ratio vector forces k = s * r and sum(k) = s * 19003 <= 1419; the loop over s is therefore complete",
+    "witness": null
+   },
+   "M6_non_exhaustive": {
+    "class_size": 1419,
+    "decided": true,
+    "enumeration_upper_bound": 0,
+    "quanta_required_per_unit": 19003,
+    "single_value_class": 8320,
+    "verdict": "IMPOSSIBLE",
+    "why": "one value class of size 1419: a block mass is v * k, so proportionality to a primitive ratio vector forces k = s * r and sum(k) = s * 19003 <= 1419; the loop over s is therefore complete",
+    "witness": null
+   },
+   "certificate": "R2_BRIDGE_SEARCH",
+   "checker_parameterization": "the COUNT MATRIX x[i][j] = number of events of value class j landing in atom i, a bounded integer program -- not the primary's block-mass vector",
+   "checker_verdict_no_bridge": true,
+   "exhaustive_hunt_over_the_proportionality_unit": {
+    "any_s_found": null,
+    "complete": true,
+    "quanta_needed_per_unit": 19003,
+    "support_events": 1419,
+    "upper_bound_on_s": 0,
+    "why_complete": "M6 has ONE positive value class, so every achievable block mass is a multiple of the quantum and proportionality to a primitive ratio vector forces the counts to be s * ratios; s ranges over 1..0 and that range is empty"
+   },
+   "existence_verdicts_agree": true,
+   "pass": true,
+   "primary_identification_reverified_by_substitution": {
+    "block_sizes_agree": true,
+    "cells": 80,
+    "cells_agree_with_the_receipt": true,
+    "normalizer_N": "1/11",
+    "slice_properties": {
+     "0": {
+      "covariant": true,
+      "non_negative": true,
+      "total": 209033,
+      "zero_on_block": true
+     },
+     "2": {
+      "covariant": true,
+      "non_negative": true,
+      "total": 23100,
+      "zero_on_block": true
+     }
+    },
+    "slices_lawful": true,
+    "verifies": true,
+    "violation_exhibits": [],
+    "violations": 0
+   },
+   "primary_verdict_no_bridge": true,
+   "relaxations_outside_the_declared_family": [
+    {
+     "declared_by_the_primary": true,
+     "degree0_admits_a_solution": true,
+     "full_object_admits_a_solution": false,
+     "refutes_the_family_bound": false,
+     "relaxation": "FRACTIONAL (transport plan, phi not a map)",
+     "where_declared": "Q1_bridge_family_bounds.phi_is_integral",
+     "why": "the rank bound C = lambda (x) S is untouched by how S is produced, so the degree-2 column still cannot be reached"
+    },
+    {
+     "declared_by_the_primary": false,
+     "degree0_admits_a_solution": false,
+     "full_object_admits_a_solution": false,
+     "refutes_the_family_bound": false,
+     "relaxation": "NON-DISJOINT (overlapping atom preimages)",
+     "why": "dropping disjointness only removes the sum constraint; each block still obeys S_i <= T, and the largest ratio needs 15600 * 8320 = 129792000 <= 11806080, which is False.  M6 fails here too, so the primary's NO is robust to this relaxation"
+    },
+    {
+     "declared_by_the_primary": false,
+     "degree0_admits_a_solution": false,
+     "degree2_admits_a_solution": true,
+     "full_object_admits_a_solution": false,
+     "refutes_the_family_bound": false,
+     "relaxation": "DEGREE-DEPENDENT (a different phi for each degree)",
+     "why": "with one phi per degree the rank bound disappears, so this is the sharpest relaxation available inside integrality.  The degree-2 column alone IS realizable by M6 (ratio [144, 22, 9, 0], scale 175), but the degree-0 column is not, so the identification still fails"
+    },
+    {
+     "declared_by_the_primary": false,
+     "finding": "BOUND DISCLOSURE GAP, not a refutation.  The primary's family DEFINITION excludes a degree-dependent bridge -- it writes a single phi -- but its `bounds` block names only integrality and totality, not degree-uniformity.  The verdict is unaffected: M6 fails under each relaxation taken singly",
+     "full_object_admits_a_solution": true,
+     "refutes_the_family_bound": false,
+     "relaxation": "FRACTIONAL and DEGREE-DEPENDENT together",
+     "why": "under the conjunction every coefficient table is reachable and the test has NO content at all.  This is a boundary statement about the test, not a solution: it shows the whole content of the pushforward question lives in (integrality AND degree-uniformity of the bridge)"
+    }
+   ],
+   "undeclared_relaxations_that_admit_a_solution": [
+    "FRACTIONAL and DEGREE-DEPENDENT together"
+   ]
+  },
+  "R3_INTERFACE_SHEET": {
+   "IF4_two_routes_agree": true,
+   "certificate": "R3_INTERFACE_SHEET",
+   "coverage_complete": true,
+   "coverage_ids_in_the_902_receipt": [
+    "IF1",
+    "IF2",
+    "IF3",
+    "IF4",
+    "IF5",
+    "IF6"
+   ],
+   "coverage_ids_on_the_sheet": [
+    "IF1",
+    "IF2",
+    "IF3",
+    "IF4",
+    "IF5",
+    "IF6"
+   ],
+   "pass": true,
+   "requirement_statements": {
+    "IF1": "amplitude support must overlap supp(R) so that the linear readout and the quadratic weight can be identified",
+    "IF2": "finite additivity over disjoint window pieces",
+    "IF3": "a theta-invariant normalizer, or theta declared observable",
+    "IF4": "the window must be an argument of the weight",
+    "IF5": "vanishing Z on admissible windows must be tolerated",
+    "IF6": "the identification must be with a degree-<= D polynomial in cos phi"
+   },
+   "rows": [
+    {
+     "agree": true,
+     "checker_verdict": "PASS",
+     "primary_verdict": "PASS",
+     "requirement": "IF1_weak",
+     "witness": {
+      "target_in_list": true,
+      "weak_count": 7
+     }
+    },
+    {
+     "agree": true,
+     "checker_verdict": "PASS",
+     "primary_verdict": "PASS",
+     "requirement": "IF1_strong",
+     "witness": {
+      "strong_count": 1
+     }
+    },
+    {
+     "agree": true,
+     "checker_verdict": "FAIL",
+     "primary_verdict": "FAIL",
+     "requirement": "IF1_event_level",
+     "witness": {
+      "class_size": 1419,
+      "decided": true,
+      "enumeration_upper_bound": 0,
+      "quanta_required_per_unit": 19003,
+      "single_value_class": 8320,
+      "verdict": "IMPOSSIBLE",
+      "why": "one value class of size 1419: a block mass is v * k, so proportionality to a primitive ratio vector forces k = s * r and sum(k) = s * 19003 <= 1419; the loop over s is therefore complete",
+      "witness": null
+     }
+    },
+    {
+     "agree": true,
+     "checker_verdict": "PASS",
+     "primary_verdict": "PASS",
+     "requirement": "IF2",
+     "witness": {
+      "atoms_are_singletons": true
+     }
+    },
+    {
+     "agree": true,
+     "checker_verdict": "FAIL",
+     "primary_verdict": "FAIL on the target configuration",
+     "requirement": "IF3",
+     "witness": {
+      "lists_are_complementary": true,
+      "target_is_theta_moving": true,
+      "theta_free_list": [
+       "shell1",
+       "ball1",
+       "annulus_1_4",
+       "hollow_annulus",
+       "offcentre_ball"
+      ]
+     }
+    },
+    {
+     "agree": true,
+     "checker_verdict": "PASS",
+     "primary_verdict": "PASS (bridge-dependent; a separating bridge exists)",
+     "requirement": "IF4",
+     "witness": {
+      "enumeration_route": true,
+      "routes_agree": true,
+      "superincreasing": true
+     }
+    },
+    {
+     "agree": true,
+     "checker_verdict": "PASS",
+     "primary_verdict": "PASS, conditional on P-NONEMPTY",
+     "requirement": "IF5",
+     "witness": {
+      "vanishing_cells": 42,
+      "zero_weight_events": 90841
+     }
+    },
+    {
+     "agree": true,
+     "checker_verdict": "PASS",
+     "primary_verdict": "PASS, but vacuously",
+     "requirement": "IF6",
+     "witness": {
+      "bound_D": 4,
+      "pushforward_degree": 0,
+      "vacuous_because": "degree 0 is what fails IF3"
+     }
+    }
+   ]
+  },
+  "R4_CONDITIONALITY_CHAIN": {
+   "byte_quotes": {
+    "902_atoms_generate_the_window_lattice": {
+     "path": "scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py",
+     "present_byte_for_byte": true,
+     "quote": "\"\"\"Atoms of the Boolean algebra generated by the containment-holding\n    windows together with supp(R).  These are the finest sets the interface\n    equations can distinguish, so they are exactly the right unknowns.\"\"\""
+    },
+    "902_bridge_equation": {
+     "path": "scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py",
+     "present_byte_for_byte": true,
+     "quote": "# single coefficient-matching system:  c_d(phi^-1(W)) = M_d(W) * nu."
+    }
+   },
+   "certificate": "R4_CONDITIONALITY_CHAIN",
+   "consumed_by_this_checker": [
+    {
+     "consumed_here_for": "the ratio-1 block is non-empty, which is what forces t >= the minimum positive numerator",
+     "listed_by_the_primary": true,
+     "premise": "P-NONEMPTY"
+    },
+    {
+     "consumed_here_for": "IF1's readout-versus-seed-mass comparison",
+     "listed_by_the_primary": true,
+     "premise": "the Cycle-903 barrier scope"
+    },
+    {
+     "consumed_here_for": "that exactly one orbit misses the block at the pinned horizon",
+     "listed_by_the_primary": true,
+     "premise": "the Cycle-906 single-orbit horizon scope"
+    },
+    {
+     "consumed_here_for": "the covariance condition's second reading",
+     "listed_by_the_primary": true,
+     "premise": "P-INTERTWINE-878"
+    },
+    {
+     "consumed_here_for": "every row of R3",
+     "listed_by_the_primary": true,
+     "premise": "the Cycle-892 interface premises (IF1..IF6)"
+    },
+    {
+     "consumed_here_for": "the within-world order used to build the exhibited degree slices",
+     "listed_by_the_primary": true,
+     "premise": "P-EVENT-ORDER"
+    },
+    {
+     "assessment": "NOT a premise: it is a definitional fact of the pinned 902 atoms_of construction, quoted here byte for byte.  The primary asserts it in prose without the quote, which is a REFINEMENT, not a refutation",
+     "consumed_here_for": "the claim that the atom-algebra grid is finer than the window grid",
+     "licensed_instead_by_a_byte_quote_of_the_pinned_902_source": true,
+     "listed_by_the_primary": false,
+     "premise": "that every containment-holding window is a union of the four atoms"
+    }
+   ],
+   "inherited_grid_disclosed_in_the_primary_scope": true,
+   "pass": true,
+   "premises_consumed_but_unlisted": [],
+   "primary_named_premises": [
+    "P-856-SHAPE",
+    "P-EVENT-ORDER",
+    "P-INTERTWINE-878",
+    "P-NONEMPTY",
+    "the Cycle-892 interface premises (IF1..IF6)",
+    "the Cycle-903 barrier scope",
+    "the Cycle-906 single-orbit horizon scope"
+   ]
+  },
+  "R5_SELECTION": {
+   "M6_new_prime": [
+    11
+   ],
+   "certificate": "R5_SELECTION",
+   "checker_finds_no_uniquely_compatible_candidate": true,
+   "family": [
+    "M3_OCCUPATION_WEIGHTED",
+    "M4_FORMATION_LIFETIME",
+    "M5_FORMATION_MOMENT",
+    "M6_ABSOLUTE_ORBIT_UNIFORM"
+   ],
+   "non_exhaustive_reading_separates": true,
+   "pass": true,
+   "primary_finds_no_uniquely_compatible_candidate": true,
+   "primary_lists_R_RATIO_FREE_as_separating": true,
+   "selection_verdicts_agree": true,
+   "separation_verdicts_agree": true,
+   "table": {
+    "M3_OCCUPATION_WEIGHTED": {
+     "covariant": false,
+     "exhaustive_divides": false,
+     "non_exhaustive": "UNDECIDED",
+     "total": 897595870080,
+     "zero_events": 73088
+    },
+    "M4_FORMATION_LIFETIME": {
+     "covariant": false,
+     "exhaustive_divides": false,
+     "non_exhaustive": "UNDECIDED",
+     "total": 29530480287360,
+     "zero_events": 73088
+    },
+    "M5_FORMATION_MOMENT": {
+     "covariant": false,
+     "exhaustive_divides": false,
+     "non_exhaustive": "UNDECIDED",
+     "total": 2192349344640,
+     "zero_events": 76184
+    },
+    "M6_ABSOLUTE_ORBIT_UNIFORM": {
+     "covariant": true,
+     "exhaustive_divides": false,
+     "non_exhaustive": "IMPOSSIBLE",
+     "total": 11806080,
+     "zero_events": 90841
+    }
+   }
+  },
+  "R6_TEETH": {
+   "all_bit": true,
+   "bit": 8,
+   "certificate": "R6_TEETH",
+   "of": 8,
+   "pass": true,
+   "teeth": [
+    {
+     "bit": true,
+     "designed": "the pin sha256 must change and the gate must fail",
+     "mutation": "one coefficient byte changed in the vendored 902 receipt",
+     "tooth": "TAMPERED_PIN"
+    },
+    {
+     "bit": true,
+     "designed": "the ratio scale must move off 19003",
+     "mutation": "the atom meeting supp(R) dropped from the table",
+     "scale_after": 19002,
+     "scale_before": 19003,
+     "tooth": "DROPPED_ATOM"
+    },
+    {
+     "bit": true,
+     "designed": "the planted target that IS M6's pushforward must then be missed",
+     "honest_verdict": "REALIZABLE",
+     "mutated_verdict": "IMPOSSIBLE",
+     "mutation": "the decision procedure replaced by a constant IMPOSSIBLE",
+     "tooth": "HARDCODED_BRIDGE_VERDICT_NO"
+    },
+    {
+     "bit": true,
+     "designed": "the real 902 object must then be wrongly identified",
+     "honest_verdict": "IMPOSSIBLE",
+     "mutated_verdict": "REALIZABLE",
+     "mutation": "the decision procedure replaced by a constant REALIZABLE",
+     "tooth": "LEAKED_IDENTIFICATION_YES"
+    },
+    {
+     "bit": true,
+     "coverage_after": false,
+     "coverage_before": true,
+     "designed": "the coverage test must fail",
+     "mutation": "IF3 removed from the checker's own sheet",
+     "tooth": "SKIPPED_REQUIREMENT"
+    },
+    {
+     "bit": true,
+     "designed": "the mutant must flip M6's verdict, proving the inequality is load-bearing",
+     "faulty_capacity_holds": true,
+     "honest_capacity_holds": false,
+     "mutation": "the capacity inequality mis-signed (>= for <=)",
+     "tooth": "PLANTED_PUSHFORWARD_BLINDNESS"
+    },
+    {
+     "agreement_after": false,
+     "agreement_before": true,
+     "bit": true,
+     "designed": "the checker's agreement test must fail",
+     "mutation": "the primary receipt's Q1 verdict flipped to True",
+     "tooth": "TAMPERED_PRIMARY_VERDICT"
+    },
+    {
+     "bit": true,
+     "designed": "the single-value-class argument must lose its completeness, so the decision must degrade",
+     "mutation": "one M6 event numerator raised by 1",
+     "tooth": "MUTATED_QUANTUM",
+     "value_classes_after": 2,
+     "value_classes_before": 1,
+     "verdict_after": "IMPOSSIBLE",
+     "verdict_before": "IMPOSSIBLE"
+    }
+   ]
+  }
+ },
+ "checks": {
+  "PINS": true,
+  "R1_OBJECTS_REBUILT": true,
+  "R2_BRIDGE_SEARCH": true,
+  "R3_INTERFACE_SHEET": true,
+  "R4_CONDITIONALITY_CHAIN": true,
+  "R5_SELECTION": true,
+  "R6_TEETH": true
+ },
+ "cycle": 907,
+ "disagreements": [],
+ "elapsed_sec": 97.436,
+ "firewall_hits": 0,
+ "independent_bridge_search": {
+  "M6_verdict_exhaustive": "IMPOSSIBLE",
+  "M6_verdict_non_exhaustive": "IMPOSSIBLE",
+  "bridges_found_outside_the_declared_family": [
+   "FRACTIONAL and DEGREE-DEPENDENT together"
+  ],
+  "parameterization": "the COUNT MATRIX x[i][j] = number of events of value class j landing in atom i, a bounded integer program -- not the primary's block-mass vector",
+  "relaxations_probed": [
+   "FRACTIONAL (transport plan, phi not a map)",
+   "NON-DISJOINT (overlapping atom preimages)",
+   "DEGREE-DEPENDENT (a different phi for each degree)",
+   "FRACTIONAL and DEGREE-DEPENDENT together"
+  ],
+  "search_is_complete_for_M6": true
+ },
+ "primary_receipt_sha256": "d67a967a6226a4e1ed2e0bf1762cb3b544df87e1fe4b07d6399f13ec179086ca",
+ "primary_sha256": "cfc87a647a8fe87ed97289bb179d4919bb4801731393bbec33006c6cfe348d53",
+ "refinements": [
+  "R2 the primary's declared bounds do not name the relaxation 'FRACTIONAL and DEGREE-DEPENDENT together'; under it the test loses content, though the M6 verdict is unchanged",
+  "R4 the primary asserts that the windows are unions of the atoms without a byte-quote; the checker supplies the quote from the pinned 902 atoms_of docstring"
+ ],
+ "role": "independent checker",
+ "self_sha256": "c1e63e43ef4fe4ff4d03412f6c333d5bdf85e71199c8fda41e528376b1194d9b",
+ "source_pins": [
+  {
+   "bytes": 26046,
+   "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  {
+   "bytes": 23020,
+   "git_blob": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+   "path": "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+   "sha256": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62"
+  },
+  {
+   "bytes": 47315,
+   "git_blob": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+   "path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+   "sha256": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b"
+  },
+  {
+   "bytes": 7169,
+   "git_blob": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+   "path": "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+   "sha256": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c"
+  },
+  {
+   "bytes": 71823,
+   "git_blob": "3b43d97bbb604ea44ed06c87aa091c6aa9d8470b",
+   "path": "scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py",
+   "sha256": "46d46db10258731b986f3c639eedcf1ad3f968021f1efe30c88cc3e5e17b46c2"
+  },
+  {
+   "bytes": 16040,
+   "git_blob": "1fd7522ad2af152f2e13327e752e2eb9f37e67bb",
+   "path": "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json",
+   "sha256": "91c5631415d0231390fedbd0174f074de45cfa33b6dd4f706ed6fcdbf4dfd1d8"
+  },
+  {
+   "bytes": 13116,
+   "git_blob": "7094c986dc0560e8982507d8cc379f5c720b639f",
+   "path": "outputs/born_narrowing_cycle905_receipt_2026_07_28.json",
+   "sha256": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40"
+  },
+  {
+   "bytes": 17314,
+   "git_blob": "392cba199a75a14a8bb88808943c1259cbd7a94b",
+   "path": "outputs/covariance_tension_cycle906_receipt_2026_07_28.json",
+   "sha256": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f"
+  },
+  {
+   "bytes": 116092,
+   "git_blob": "70fad3ab7996926a7b543af64f0449a92a9868cd",
+   "path": "scripts/frontier_cycle907_m6_identification_2026_07_28.py",
+   "sha256": "cfc87a647a8fe87ed97289bb179d4919bb4801731393bbec33006c6cfe348d53"
+  },
+  {
+   "bytes": 22689,
+   "git_blob": "e7eef6eeeb62aeddcdb12417ccd8ec871b9d87a7",
+   "path": "outputs/m6_identification_cycle907_receipt_2026_07_28.json",
+   "sha256": "d67a967a6226a4e1ed2e0bf1762cb3b544df87e1fe4b07d6399f13ec179086ca"
+  },
+  {
+   "bytes": 8846,
+   "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+  }
+ ],
+ "spec": "SPECIFIED TO REFUTE",
+ "teeth": "8/8"
+}

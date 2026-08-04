@@ -1,19 +1,35 @@
 {
   "consumer_census": {
-    "distinct_files_hit": 311,
-    "files_swept": 14190,
+    "distinct_files_hit": 469,
+    "files_swept": 14191,
     "gate_b_lane_files_hit": [
       "docs/GATE_B_DYNAMICS_NOTE.md",
+      "docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
       "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
       "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "docs/audit/data/ledger/ga/gate_b_context_independence_no_go_note_2026-06-17.json",
+      "docs/audit/data/ledger/ga/gate_b_dynamics_note.json",
       "docs/audit/data/ledger/ga/gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18.json",
       "docs/audit/data/ledger/ga/gate_b_weak_field_source_action_interface_note_2026-06-16.json",
       "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
       "scripts/gate_b_complex_action_falsifier.py",
       "scripts/gate_b_connectivity_tolerance.py",
       "scripts/gate_b_context_independence_no_go_2026_06_17.py",
+      "scripts/gate_b_farfield_harness.py",
       "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
+      "scripts/gate_b_grown_distance_law.py",
+      "scripts/gate_b_grown_propagating_field_probe.py",
+      "scripts/gate_b_grown_propagating_field_radical.py",
+      "scripts/gate_b_grown_propagating_field_v2.py",
+      "scripts/gate_b_grown_propagating_field_v3.py",
+      "scripts/gate_b_grown_trapping_frontier_probe.py",
+      "scripts/gate_b_grown_trapping_frontier_v2.py",
+      "scripts/gate_b_grown_trapping_frontier_v3.py",
+      "scripts/gate_b_grown_trapping_transport_probe.py",
       "scripts/gate_b_grown_wavefield_companion.py",
+      "scripts/gate_b_h025_distance_law.py",
+      "scripts/gate_b_h025_farfield.py",
+      "scripts/gate_b_no_restore_farfield.py",
       "scripts/gate_b_nonlabel_connectivity_v1.py",
       "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
       "scripts/gate_b_nonlabel_connectivity_v1_h025.py",
@@ -27,11 +43,11 @@
     "needle_families": [
       {
         "family": "F1_euclidean_plus_one_tenth",
-        "hit_count": 223
+        "hit_count": 240
       },
       {
         "family": "F2_named_epsilon_regulator",
-        "hit_count": 80
+        "hit_count": 126
       },
       {
         "family": "F3_screened_yukawa_kernel",
@@ -44,6 +60,18 @@
       {
         "family": "F5_published_note_kernel_form",
         "hit_count": 7
+      },
+      {
+        "family": "F6_named_regulator_constant",
+        "hit_count": 87
+      },
+      {
+        "family": "F7_named_screening_mass_constant",
+        "hit_count": 85
+      },
+      {
+        "family": "F8_phi_GB_symbol",
+        "hit_count": 11
       }
     ]
   },
@@ -249,8 +277,8 @@
   "cycle": 900,
   "cycle896_receipt_present_on_this_branch": false,
   "delta_status_counts": {
-    "BREAKS": 4,
-    "CHANGES": 11,
+    "BREAKS": 5,
+    "CHANGES": 13,
     "SURVIVES-UNCHANGED": 19
   },
   "delta_table": [
@@ -541,7 +569,7 @@
       "under_LANDED_kernel": "FREE"
     },
     {
-      "consumer_row": "F1 euclidean r + 0.1 (223 files)",
+      "consumer_row": "F1 euclidean r + 0.1 (240 files)",
       "exact_delta": "every F1 consumer changes value; none BREAKS, because the regulator's only job was to keep r = 0 finite and G(0) is already finite on the lattice",
       "obstruction": null,
       "planted": false,
@@ -552,7 +580,7 @@
       "under_LANDED_kernel": "regulated Euclidean distance"
     },
     {
-      "consumer_row": "F2 named epsilon regulator (80 files)",
+      "consumer_row": "F2 named epsilon regulator (126 files)",
       "exact_delta": "the coordinate dissolves; 884 already showed nothing lawful consumed it, since no epsilon was ever admissible",
       "obstruction": null,
       "planted": false,
@@ -594,6 +622,39 @@
       "status": "CHANGES",
       "under_FORCED_CORE": "restated as the lattice Green function",
       "under_LANDED_kernel": "verbatim `phi_GB(x) = strength / (r(x, mass) + 0.1)`"
+    },
+    {
+      "consumer_row": "F6 declared regulator constant (87 files)",
+      "exact_delta": "the declaration dissolves along with the coordinate; same reasoning as F2, reached by a different needle",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "census family",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "no such constant exists",
+      "under_LANDED_kernel": "a module-level EPS/EPSILON constant"
+    },
+    {
+      "consumer_row": "F7 declared screening mass (85 files)",
+      "exact_delta": "same obstruction as F3, reached by the declaration rather than the kernel expression",
+      "obstruction": "the massless-vs-screened branch, which 884's R3 left FREE; repairable by the screened lattice Green function",
+      "planted": false,
+      "repairable_by_restatement": true,
+      "source": "census family",
+      "status": "BREAKS",
+      "under_FORCED_CORE": "the harmonic core is the mu = 0 slice",
+      "under_LANDED_kernel": "a module-level MU constant on the mu != 0 branch"
+    },
+    {
+      "consumer_row": "F8 phi_GB symbol (11 files)",
+      "exact_delta": "a definitional patch, not a structural one",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "census family",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "the symbol survives; its definition is replaced",
+      "under_LANDED_kernel": "the Gate-B scalar named by its published symbol"
     },
     {
       "consumer_row": "P1 (must BREAK): a consumer that asserts phi is a function of the Euclidean radius alone",
@@ -720,12 +781,12 @@
       "status": "CHANGES"
     },
     {
-      "consumer_row": "F1 euclidean r + 0.1 (223 files)",
+      "consumer_row": "F1 euclidean r + 0.1 (240 files)",
       "new_value_or_statement": "lattice Green function value",
       "status": "CHANGES"
     },
     {
-      "consumer_row": "F2 named epsilon regulator (80 files)",
+      "consumer_row": "F2 named epsilon regulator (126 files)",
       "new_value_or_statement": "no regulator",
       "status": "CHANGES"
     },
@@ -738,12 +799,28 @@
       "consumer_row": "F5 published note kernel form (7 files)",
       "new_value_or_statement": "restated as the lattice Green function",
       "status": "CHANGES"
+    },
+    {
+      "consumer_row": "F6 declared regulator constant (87 files)",
+      "new_value_or_statement": "no such constant exists",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "F7 declared screening mass (85 files)",
+      "new_value_or_statement": "the harmonic core is the mu = 0 slice",
+      "status": "BREAKS"
+    },
+    {
+      "consumer_row": "F8 phi_GB symbol (11 files)",
+      "new_value_or_statement": "the symbol survives; its definition is replaced",
+      "status": "CHANGES"
     }
   ],
   "question": "Can the landed Gate-B kernel construction be lawfully REPLACED by the forced harmonic core, and what exactly breaks?",
   "real_breaking_rows": [
     "GB-S1b-a: the finite runner scalar is positive, finite, RADIALLY MONOTONE in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the normalization",
-    "F3 screened exp(-mu r)/r (33 files)"
+    "F3 screened exp(-mu r)/r (33 files)",
+    "F7 declared screening mass (85 files)"
   ],
   "residual_accounting": {
     "basis": "884's OWN chart, read off the pinned receipt.  The Cycle-896 receipt named by the brief is NOT present on this branch and is NOT reconstructed from memory.",

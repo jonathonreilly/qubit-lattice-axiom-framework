@@ -1447,14 +1447,22 @@ def window_certificate() -> dict:
 # certificate G: the consumer census (published needles)
 # --------------------------------------------------------------------------
 NEEDLE_FAMILIES = {
+    # NARROWING APPLIED (found by this cycle's independent check): the landed
+    # kernel is routinely written across three source lines, so a single-line
+    # `math.sqrt(...)+0.1` needle misses a slab of the Gate-B lane.  The
+    # pattern is bounded and non-greedy on purpose -- a balanced-paren
+    # alternative backtracks catastrophically on this corpus.
     "F1_euclidean_plus_one_tenth": (
-        r"math\.sqrt\([^\n]*\)\s*\+\s*0\.1\b",
-        "the landed Gate-B kernel's regulated Euclidean distance r + 0.1",
+        r"math\.sqrt\(.{0,300}?\)\s*\+\s*0\.1\b",
+        "the landed Gate-B kernel's regulated Euclidean distance r + 0.1, "
+        "single-line or wrapped across lines",
     ),
     "F2_named_epsilon_regulator": (
         r"/\s*\(\s*(?:r|radius|distance\([^\n]*?\))\s*\+\s*"
-        r"(?:EPSILON|epsilon|eps|EPS)\b",
-        "a named finite-core regulator inserted in the same place as epsilon",
+        r"(?:EPSILON|epsilon|eps|EPS|0\.\d+)\b",
+        "a finite-core regulator, named or literal, inserted in the same "
+        "place as epsilon -- including the prose form `STRENGTH / (r + 0.1)` "
+        "the Gate-B notes use",
     ),
     "F3_screened_yukawa_kernel": (
         r"math\.exp\(\s*-\s*\w*MU\w*\s*\*\s*r\s*\)\s*/\s*r",
@@ -1467,6 +1475,20 @@ NEEDLE_FAMILIES = {
     "F5_published_note_kernel_form": (
         r"phi_GB\(x\)\s*=\s*strength\s*/\s*\(r\(x,\s?mass\)\s*\+\s*0\.1\)",
         "the verbatim published kernel form from the interface note",
+    ),
+    "F6_named_regulator_constant": (
+        r"^\s*\w*(?:EPS|EPSILON)\w*\s*=\s*0?\.\d+",
+        "a module-level finite-core regulator constant: an epsilon that a "
+        "consumer declares rather than inlines",
+    ),
+    "F7_named_screening_mass_constant": (
+        r"^\s*\w*MU\w*\s*=\s*0?\.\d+",
+        "a module-level screening-mass constant: a consumer on the mu != 0 "
+        "branch",
+    ),
+    "F8_phi_GB_symbol": (
+        r"phi_GB",
+        "the Gate-B scalar named by its published symbol",
     ),
 }
 
@@ -1486,7 +1508,7 @@ def census_certificate() -> dict:
 
     fam_hits, all_hits = {}, set()
     for name, (pat, _why) in NEEDLE_FAMILIES.items():
-        rx = re.compile(pat)
+        rx = re.compile(pat, re.S | re.M)
         hits = sorted(str(p.relative_to(ROOT)) for p, t in texts.items()
                       if rx.search(t))
         fam_hits[name] = hits
@@ -1518,7 +1540,7 @@ def census_certificate() -> dict:
     # idempotency: re-run the sweep and demand the identical hit set
     rerun = set()
     for name, (pat, _why) in NEEDLE_FAMILIES.items():
-        rx = re.compile(pat)
+        rx = re.compile(pat, re.S | re.M)
         rerun |= {str(p.relative_to(ROOT)) for p, t in texts.items()
                   if rx.search(t)}
     idempotent = (rerun == all_hits)
@@ -1743,6 +1765,29 @@ def delta_table_certificate(core: dict, forcings: dict, window: dict,
         "restated as the lattice Green function",
         "CHANGES",
         "a text patch in each of the note rows enumerated above")
+    add("census family",
+        f"F6 declared regulator constant ({fam['F6_named_regulator_constant']['hit_count']} files)",
+        "a module-level EPS/EPSILON constant", "no such constant exists",
+        "CHANGES",
+        "the declaration dissolves along with the coordinate; same reasoning "
+        "as F2, reached by a different needle")
+    add("census family",
+        f"F7 declared screening mass ({fam['F7_named_screening_mass_constant']['hit_count']} files)",
+        "a module-level MU constant on the mu != 0 branch",
+        "the harmonic core is the mu = 0 slice",
+        "BREAKS",
+        "same obstruction as F3, reached by the declaration rather than the "
+        "kernel expression",
+        obstruction=("the massless-vs-screened branch, which 884's R3 left "
+                     "FREE; repairable by the screened lattice Green "
+                     "function"),
+        repairable=True)
+    add("census family",
+        f"F8 phi_GB symbol ({fam['F8_phi_GB_symbol']['hit_count']} files)",
+        "the Gate-B scalar named by its published symbol",
+        "the symbol survives; its definition is replaced",
+        "CHANGES",
+        "a definitional patch, not a structural one")
 
     # ---- PLANTED rows: falsifier visibility --------------------------------
     add("PLANTED", "P1 (must BREAK): a consumer that asserts phi is a function "
@@ -1773,8 +1818,16 @@ def delta_table_certificate(core: dict, forcings: dict, window: dict,
     real_breaks = [r for r in rows if r["status"] == "BREAKS" and not r["planted"]]
     unrepairable = [r for r in real_breaks if r["repairable_by_restatement"] is False]
 
+    # every needle family the census swept must carry a family-level verdict,
+    # so that no census hit is left unpriced
+    family_rows = {r["consumer_row"].split()[0] for r in rows
+                   if r["source"] == "census family"}
+    families_priced = {f.split("_")[0] for f in NEEDLE_FAMILIES} <= family_rows
+
     return {
         "rows": rows,
+        "every_needle_family_has_a_rollup_verdict": families_priced,
+        "family_rollup_labels": sorted(family_rows),
         "row_count": len(rows),
         "status_counts": counts,
         "real_breaking_rows": [r["consumer_row"] for r in real_breaks],
@@ -1792,7 +1845,7 @@ def delta_table_certificate(core: dict, forcings: dict, window: dict,
             f"{len(unrepairable)} are unrepairable; the rest of the breaks are "
             f"the planted falsifiers, which the same machinery flags."
         ),
-        "pass": planted_ok and core_not_radial,
+        "pass": planted_ok and core_not_radial and families_priced,
     }
 
 

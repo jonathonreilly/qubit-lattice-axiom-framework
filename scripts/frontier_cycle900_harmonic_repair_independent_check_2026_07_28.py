@@ -843,17 +843,23 @@ BROAD_FAMILIES = {
     "B6_graph_laplacian_green_phrase": r"graph-Laplacian Green",
 }
 
-PRIMARY_FAMILIES = {
-    "F1_euclidean_plus_one_tenth": r"math\.sqrt\([^\n]*\)\s*\+\s*0\.1\b",
-    "F2_named_epsilon_regulator":
-        r"/\s*\(\s*(?:r|radius|distance\([^\n]*?\))\s*\+\s*"
-        r"(?:EPSILON|epsilon|eps|EPS)\b",
-    "F3_screened_yukawa_kernel":
-        r"math\.exp\(\s*-\s*\w*MU\w*\s*\*\s*r\s*\)\s*/\s*r",
-    "F4_power_law_field": r"/\s*\(\s*r\s*\*\*\s*\w*POWER\w*\s*\)",
-    "F5_published_note_kernel_form":
-        r"phi_GB\(x\)\s*=\s*strength\s*/\s*\(r\(x,\s?mass\)\s*\+\s*0\.1\)",
-}
+def primary_families() -> dict:
+    """AST-extract the primary's NEEDLE_FAMILIES from the pinned source.
+
+    Reading them rather than keeping a copy means this check can never grade
+    the primary against a stale version of its own needles -- a hazard that
+    would silently manufacture or hide a census gap.
+    """
+    tree = ast.parse(_read_text(AUDIT_INPUT_PATHS[0]))
+    for node in ast.walk(tree):
+        if (isinstance(node, ast.Assign)
+                and any(getattr(t, "id", None) == "NEEDLE_FAMILIES"
+                        for t in node.targets)):
+            out = {}
+            for k, v in zip(node.value.keys, node.value.values):
+                out[ast.literal_eval(k)] = ast.literal_eval(v)[0]
+            return out
+    return {}
 
 
 def _sweep(patterns: dict, texts: dict) -> set:
@@ -876,7 +882,8 @@ def census_attack_certificate() -> dict:
                     texts[str(p.relative_to(ROOT))] = p.read_text(encoding="utf-8")
                 except (UnicodeDecodeError, OSError):
                     continue
-    narrow = _sweep(PRIMARY_FAMILIES, texts)
+    fams = primary_families()
+    narrow = _sweep(fams, texts)
     broad = _sweep(BROAD_FAMILIES, texts)
     missed = sorted(broad - narrow)
     missed_gate_b = sorted(
@@ -890,13 +897,15 @@ def census_attack_certificate() -> dict:
                     or "GATE_B" in Path(m).name}
     gate_b_gap = sorted(found_gate_b - reported_gate_b)
 
-    census_complete = not gate_b_gap
+    census_complete = not gate_b_gap and bool(fams)
     return {
         "method": (
             "re-sweep with strictly broader needles -- notably a MULTI-LINE "
             "tolerant version of the Euclidean-plus-0.1 pattern, since the "
             "landed kernel is frequently written across three source lines"),
         "broad_family_patterns": list(BROAD_FAMILIES),
+        "primary_families_read_by_AST_from_the_pinned_source": list(fams),
+        "primary_family_count": len(fams),
         "files_swept": len(texts),
         "narrow_hits": len(narrow),
         "broad_hits": len(broad),

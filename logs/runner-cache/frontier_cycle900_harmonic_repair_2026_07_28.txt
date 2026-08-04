@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle900_harmonic_repair_2026_07_28.py
-runner_sha256: 2f1ef276ad9d66481a3573617b3eaba084a26a22a0004569bbbf4e37585fceda
+runner_sha256: 79d4c6ecb2b8307a5022f1a4ec5b09001923cc25fffae1687f264b578d76da9e
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 17.481
+elapsed_sec: 26.399
 status: ok
 ----- stdout -----
 CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
@@ -27,13 +27,13 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
     finding: Under 884's own sharp-indicator window (62 sites) the core and the landed kernel differ in every gauge-invariant shape ratio tested, and they differ irreducibly at equal Euclidean radius: the core separates (3,0,0) from (2,2,1) by 0.00136788 while ANY radial kernel gives ratio exactly one.
 
 [PASS] G_CONSUMER_CENSUS
-    finding: 311 distinct files carry at least one published needle for the landed kernel form, of which 20 are gate_b_* runners; all 5 families are non-empty, classified, and the sweep is idempotent.
+    finding: 469 distinct files carry at least one published needle for the landed kernel form, of which 36 are gate_b_* runners; all 8 families are non-empty, classified, and the sweep is idempotent.
 
 [PASS] H_DELTA_TABLE
-    finding: 34 consumer rows priced: 19 survive unchanged, 11 change with a computed delta, 4 break.  Of the breaks, 2 are real consumers and 0 are unrepairable; the rest of the breaks are the planted falsifiers, which the same machinery flags.
+    finding: 37 consumer rows priced: 19 survive unchanged, 13 change with a computed delta, 5 break.  Of the breaks, 3 are real consumers and 0 are unrepairable; the rest of the breaks are the planted falsifiers, which the same machinery flags.
 
 [PASS] I_REPAIR_VERDICT
-    finding: REPAIR-VIABLE: 13 consumer rows need patching and 0 are unrepairable.  Against 884's own chart the repair takes the chart from 15 to 13 coordinates and the residual from 10 to 9, with the kernel-shape sub-block going 4 -> 3.
+    finding: REPAIR-VIABLE: 16 consumer rows need patching and 0 are unrepairable.  Against 884's own chart the repair takes the chart from 15 to 13 coordinates and the residual from 10 to 9, with the kernel-shape sub-block going 4 -> 3.
 
 [PASS] J_FALSIFIER_VISIBILITY
     finding: The harmonicity gate catches a deliberately broken core; the two planted consumers that must break DO break through the same delta machinery as the real rows; the planted control survives; and the verdict certificate passes regardless of which verdict it reaches.
@@ -2257,23 +2257,39 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
     "window_sum_is_NOT_a_gauge_invariant": "the two raw sums are NOT comparable: each is quoted at unit strength in its own normalization, and the lambda*sigma stabilizer moves either one to the other.  They are reported as data only; every comparison this cycle rests on is a stabilizer-invariant SHAPE ratio below"
   },
   "G_CONSUMER_CENSUS": {
-    "distinct_files_hit": 311,
+    "distinct_files_hit": 469,
     "every_family_classified": true,
     "every_family_nonempty": true,
-    "files_swept": 14190,
-    "finding": "311 distinct files carry at least one published needle for the landed kernel form, of which 20 are gate_b_* runners; all 5 families are non-empty, classified, and the sweep is idempotent.",
+    "files_swept": 14191,
+    "finding": "469 distinct files carry at least one published needle for the landed kernel form, of which 36 are gate_b_* runners; all 8 families are non-empty, classified, and the sweep is idempotent.",
     "gate_b_lane_files_hit": [
       "docs/GATE_B_DYNAMICS_NOTE.md",
+      "docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
       "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
       "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "docs/audit/data/ledger/ga/gate_b_context_independence_no_go_note_2026-06-17.json",
+      "docs/audit/data/ledger/ga/gate_b_dynamics_note.json",
       "docs/audit/data/ledger/ga/gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18.json",
       "docs/audit/data/ledger/ga/gate_b_weak_field_source_action_interface_note_2026-06-16.json",
       "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
       "scripts/gate_b_complex_action_falsifier.py",
       "scripts/gate_b_connectivity_tolerance.py",
       "scripts/gate_b_context_independence_no_go_2026_06_17.py",
+      "scripts/gate_b_farfield_harness.py",
       "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
+      "scripts/gate_b_grown_distance_law.py",
+      "scripts/gate_b_grown_propagating_field_probe.py",
+      "scripts/gate_b_grown_propagating_field_radical.py",
+      "scripts/gate_b_grown_propagating_field_v2.py",
+      "scripts/gate_b_grown_propagating_field_v3.py",
+      "scripts/gate_b_grown_trapping_frontier_probe.py",
+      "scripts/gate_b_grown_trapping_frontier_v2.py",
+      "scripts/gate_b_grown_trapping_frontier_v3.py",
+      "scripts/gate_b_grown_trapping_transport_probe.py",
       "scripts/gate_b_grown_wavefield_companion.py",
+      "scripts/gate_b_h025_distance_law.py",
+      "scripts/gate_b_h025_farfield.py",
+      "scripts/gate_b_no_restore_farfield.py",
       "scripts/gate_b_nonlabel_connectivity_v1.py",
       "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
       "scripts/gate_b_nonlabel_connectivity_v1_h025.py",
@@ -2284,7 +2300,7 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
       "scripts/gate_b_weak_connectivity_harness.py",
       "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py"
     ],
-    "gate_b_lane_hit_count": 20,
+    "gate_b_lane_hit_count": 36,
     "needle_families": [
       {
         "family": "F1_euclidean_plus_one_tenth",
@@ -2293,6 +2309,11 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
           "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
           "scripts/gate_b_complex_action_falsifier.py",
           "scripts/gate_b_connectivity_tolerance.py",
+          "scripts/gate_b_farfield_harness.py",
+          "scripts/gate_b_grown_distance_law.py",
+          "scripts/gate_b_h025_distance_law.py",
+          "scripts/gate_b_h025_farfield.py",
+          "scripts/gate_b_no_restore_farfield.py",
           "scripts/gate_b_nonlabel_connectivity_v1.py",
           "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
           "scripts/gate_b_nonlabel_connectivity_v1_h025.py",
@@ -2301,7 +2322,7 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
           "scripts/gate_b_operator_cauchy.py",
           "scripts/gate_b_weak_connectivity_harness.py"
         ],
-        "hit_count": 223,
+        "hit_count": 240,
         "sample_hits": [
           "docs/ASYMMETRY_PERSISTENCE_PILOT_NOTE.md",
           "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md",
@@ -2312,30 +2333,33 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
           "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
           "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py"
         ],
-        "what_it_finds": "the landed Gate-B kernel's regulated Euclidean distance r + 0.1"
+        "what_it_finds": "the landed Gate-B kernel's regulated Euclidean distance r + 0.1, single-line or wrapped across lines"
       },
       {
         "family": "F2_named_epsilon_regulator",
         "gate_b_lane_hits": [
+          "docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
+          "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
           "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+          "docs/audit/data/ledger/ga/gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18.json",
           "scripts/gate_b_context_independence_no_go_2026_06_17.py",
           "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
           "scripts/gate_b_grown_wavefield_companion.py",
           "scripts/gate_b_poisson_self_gravity_probe.py",
           "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py"
         ],
-        "hit_count": 80,
+        "hit_count": 126,
         "sample_hits": [
+          "docs/CHIRAL_LAYER_OSCILLATION_2026-04-09.md",
+          "docs/DIRAC_FIELD_SMOOTHING_NOTE.md",
+          "docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
+          "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
           "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
-          "docs/PERSISTENT_OBJECT_ADAPTIVE_READOUT_NOTE.md",
-          "docs/PERSISTENT_OBJECT_BLENDED_READOUT_TRANSFER_SWEEP_NOTE_2026-04-16.md",
-          "docs/PERSISTENT_OBJECT_COMPACT_INERTIAL_PROBE_NOTE_2026-04-16.md",
-          "docs/PERSISTENT_OBJECT_COMPACT_UPDATE_NOTE.md",
-          "docs/PERSISTENT_OBJECT_GREEN_SCOUT_NOTE.md",
-          "docs/PERSISTENT_OBJECT_READOUT_LOCALIZATION_NOTE.md",
-          "docs/PERSISTENT_OBJECT_READOUT_TAPER_NOTE.md"
+          "docs/LATTICE_NN_HIGH_PRECISION_NOTE.md",
+          "docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md",
+          "docs/PERSISTENT_OBJECT_ADAPTIVE_READOUT_NOTE.md"
         ],
-        "what_it_finds": "a named finite-core regulator inserted in the same place as epsilon"
+        "what_it_finds": "a finite-core regulator, named or literal, inserted in the same place as epsilon -- including the prose form `STRENGTH / (r + 0.1)` the Gate-B notes use"
       },
       {
         "family": "F3_screened_yukawa_kernel",
@@ -2393,6 +2417,77 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
           "scripts/frontier_cycle900_harmonic_repair_2026_07_28.py"
         ],
         "what_it_finds": "the verbatim published kernel form from the interface note"
+      },
+      {
+        "family": "F6_named_regulator_constant",
+        "gate_b_lane_hits": [
+          "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
+          "scripts/gate_b_grown_propagating_field_probe.py",
+          "scripts/gate_b_grown_propagating_field_radical.py",
+          "scripts/gate_b_grown_propagating_field_v2.py",
+          "scripts/gate_b_grown_propagating_field_v3.py",
+          "scripts/gate_b_grown_trapping_frontier_probe.py",
+          "scripts/gate_b_grown_trapping_frontier_v2.py",
+          "scripts/gate_b_grown_trapping_frontier_v3.py",
+          "scripts/gate_b_grown_trapping_transport_probe.py",
+          "scripts/gate_b_grown_wavefield_companion.py",
+          "scripts/gate_b_poisson_self_gravity_probe.py"
+        ],
+        "hit_count": 87,
+        "sample_hits": [
+          "scripts/audit_companion_source_resolved_propagating_green_pocket_kernel_display_reconcile.py",
+          "scripts/causal_cone_speed_map.py",
+          "scripts/causal_distance_tail_probe.py",
+          "scripts/causal_field_portability_probe.py",
+          "scripts/causal_impact_parameter_probe.py",
+          "scripts/causal_propagating_field.py",
+          "scripts/causal_source_placement_robustness.py",
+          "scripts/cl3_lattice_physical_matching_2026_05_10_match.py"
+        ],
+        "what_it_finds": "a module-level finite-core regulator constant: an epsilon that a consumer declares rather than inlines"
+      },
+      {
+        "family": "F7_named_screening_mass_constant",
+        "gate_b_lane_hits": [
+          "scripts/gate_b_grown_wavefield_companion.py",
+          "scripts/gate_b_poisson_self_gravity_probe.py"
+        ],
+        "hit_count": 85,
+        "sample_hits": [
+          "scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py",
+          "scripts/audit_companion_source_resolved_propagating_green_pocket_kernel_display_reconcile.py",
+          "scripts/carried_relative_extended_green_branch_hunt_2026_07_17.py",
+          "scripts/carried_relative_frozen_branch_observable_cycle300_2026_07_17.py",
+          "scripts/frontier_anderson_phase_unscreened_periodic.py",
+          "scripts/frontier_bmv_entanglement.py",
+          "scripts/frontier_bmv_threebody.py",
+          "scripts/frontier_born_rule_alpha.py"
+        ],
+        "what_it_finds": "a module-level screening-mass constant: a consumer on the mu != 0 branch"
+      },
+      {
+        "family": "F8_phi_GB_symbol",
+        "gate_b_lane_hits": [
+          "docs/GATE_B_DYNAMICS_NOTE.md",
+          "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+          "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+          "docs/audit/data/ledger/ga/gate_b_context_independence_no_go_note_2026-06-17.json",
+          "docs/audit/data/ledger/ga/gate_b_dynamics_note.json",
+          "docs/audit/data/ledger/ga/gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18.json",
+          "docs/audit/data/ledger/ga/gate_b_weak_field_source_action_interface_note_2026-06-16.json"
+        ],
+        "hit_count": 11,
+        "sample_hits": [
+          "docs/GATE_B_DYNAMICS_NOTE.md",
+          "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+          "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+          "docs/audit/data/ledger/ga/gate_b_context_independence_no_go_note_2026-06-17.json",
+          "docs/audit/data/ledger/ga/gate_b_dynamics_note.json",
+          "docs/audit/data/ledger/ga/gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18.json",
+          "docs/audit/data/ledger/ga/gate_b_weak_field_source_action_interface_note_2026-06-16.json",
+          "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py"
+        ],
+        "what_it_finds": "the Gate-B scalar named by its published symbol"
       }
     ],
     "pass": true,
@@ -2401,7 +2496,18 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
   },
   "H_DELTA_TABLE": {
     "core_is_not_radial": true,
-    "finding": "34 consumer rows priced: 19 survive unchanged, 11 change with a computed delta, 4 break.  Of the breaks, 2 are real consumers and 0 are unrepairable; the rest of the breaks are the planted falsifiers, which the same machinery flags.",
+    "every_needle_family_has_a_rollup_verdict": true,
+    "family_rollup_labels": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "finding": "37 consumer rows priced: 19 survive unchanged, 13 change with a computed delta, 5 break.  Of the breaks, 3 are real consumers and 0 are unrepairable; the rest of the breaks are the planted falsifiers, which the same machinery flags.",
     "pass": true,
     "planted_row_outcomes": {
       "P1": "BREAKS",
@@ -2411,9 +2517,10 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
     "planted_rows_behave_as_specified": true,
     "real_breaking_rows": [
       "GB-S1b-a: the finite runner scalar is positive, finite, RADIALLY MONOTONE in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the normalization",
-      "F3 screened exp(-mu r)/r (33 files)"
+      "F3 screened exp(-mu r)/r (33 files)",
+      "F7 declared screening mass (85 files)"
     ],
-    "row_count": 34,
+    "row_count": 37,
     "rows": [
       {
         "consumer_row": "GB-S1a: linear test-action form S = L(1 - phi)",
@@ -2702,7 +2809,7 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
         "under_LANDED_kernel": "FREE"
       },
       {
-        "consumer_row": "F1 euclidean r + 0.1 (223 files)",
+        "consumer_row": "F1 euclidean r + 0.1 (240 files)",
         "exact_delta": "every F1 consumer changes value; none BREAKS, because the regulator's only job was to keep r = 0 finite and G(0) is already finite on the lattice",
         "obstruction": null,
         "planted": false,
@@ -2713,7 +2820,7 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
         "under_LANDED_kernel": "regulated Euclidean distance"
       },
       {
-        "consumer_row": "F2 named epsilon regulator (80 files)",
+        "consumer_row": "F2 named epsilon regulator (126 files)",
         "exact_delta": "the coordinate dissolves; 884 already showed nothing lawful consumed it, since no epsilon was ever admissible",
         "obstruction": null,
         "planted": false,
@@ -2757,6 +2864,39 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
         "under_LANDED_kernel": "verbatim `phi_GB(x) = strength / (r(x, mass) + 0.1)`"
       },
       {
+        "consumer_row": "F6 declared regulator constant (87 files)",
+        "exact_delta": "the declaration dissolves along with the coordinate; same reasoning as F2, reached by a different needle",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "census family",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "no such constant exists",
+        "under_LANDED_kernel": "a module-level EPS/EPSILON constant"
+      },
+      {
+        "consumer_row": "F7 declared screening mass (85 files)",
+        "exact_delta": "same obstruction as F3, reached by the declaration rather than the kernel expression",
+        "obstruction": "the massless-vs-screened branch, which 884's R3 left FREE; repairable by the screened lattice Green function",
+        "planted": false,
+        "repairable_by_restatement": true,
+        "source": "census family",
+        "status": "BREAKS",
+        "under_FORCED_CORE": "the harmonic core is the mu = 0 slice",
+        "under_LANDED_kernel": "a module-level MU constant on the mu != 0 branch"
+      },
+      {
+        "consumer_row": "F8 phi_GB symbol (11 files)",
+        "exact_delta": "a definitional patch, not a structural one",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "census family",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "the symbol survives; its definition is replaced",
+        "under_LANDED_kernel": "the Gate-B scalar named by its published symbol"
+      },
+      {
         "consumer_row": "P1 (must BREAK): a consumer that asserts phi is a function of the Euclidean radius alone",
         "exact_delta": "equal-radius separator G(3,0,0) - G(2,2,1) = 31615903082781646390086315478519155169393/23113081988708457571415679082231952046540108 != 0",
         "obstruction": "degree-4 cubic anisotropy",
@@ -2792,15 +2932,15 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
     ],
     "screened_epsilon_elimination_holds": true,
     "status_counts": {
-      "BREAKS": 4,
-      "CHANGES": 11,
+      "BREAKS": 5,
+      "CHANGES": 13,
       "SURVIVES-UNCHANGED": 19
     },
     "unrepairable_breaking_rows": []
   },
   "I_REPAIR_VERDICT": {
     "decision_rule_declared_in_advance": "REPAIR-BLOCKED iff some real (non-planted) consumer row BREAKS and is not repairable by restatement; REPAIR-VIABLE otherwise.  The rule is evaluated on the delta table, which contains planted rows designed to break -- so the verdict CAN land BLOCKED.",
-    "finding": "REPAIR-VIABLE: 13 consumer rows need patching and 0 are unrepairable.  Against 884's own chart the repair takes the chart from 15 to 13 coordinates and the residual from 10 to 9, with the kernel-shape sub-block going 4 -> 3.",
+    "finding": "REPAIR-VIABLE: 16 consumer rows need patching and 0 are unrepairable.  Against 884's own chart the repair takes the chart from 15 to 13 coordinates and the residual from 10 to 9, with the kernel-shape sub-block going 4 -> 3.",
     "obstruction_provenance": {
       "F3 screened consumers": "SUPPLIED obstruction: the massless/screened branch of the forced operator.  Repairable by taking the SCREENED lattice Green function; the epsilon elimination is computed here to survive that generalization.",
       "GB-S1b-a radial monotonicity": "DERIVED obstruction: 884's R2 proved covariance does not force radial-only and that the first admissible anisotropy is degree 4 and unsuppressed.  The core realizes it.  The row is repairable by restating it as cubic-covariant positivity and decay instead of Euclidean-radial monotonicity."
@@ -2853,12 +2993,12 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
         "status": "CHANGES"
       },
       {
-        "consumer_row": "F1 euclidean r + 0.1 (223 files)",
+        "consumer_row": "F1 euclidean r + 0.1 (240 files)",
         "new_value_or_statement": "lattice Green function value",
         "status": "CHANGES"
       },
       {
-        "consumer_row": "F2 named epsilon regulator (80 files)",
+        "consumer_row": "F2 named epsilon regulator (126 files)",
         "new_value_or_statement": "no regulator",
         "status": "CHANGES"
       },
@@ -2871,9 +3011,24 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
         "consumer_row": "F5 published note kernel form (7 files)",
         "new_value_or_statement": "restated as the lattice Green function",
         "status": "CHANGES"
+      },
+      {
+        "consumer_row": "F6 declared regulator constant (87 files)",
+        "new_value_or_statement": "no such constant exists",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "F7 declared screening mass (85 files)",
+        "new_value_or_statement": "the harmonic core is the mu = 0 slice",
+        "status": "BREAKS"
+      },
+      {
+        "consumer_row": "F8 phi_GB symbol (11 files)",
+        "new_value_or_statement": "the symbol survives; its definition is replaced",
+        "status": "CHANGES"
       }
     ],
-    "patch_list_size": 13,
+    "patch_list_size": 16,
     "residual_accounting": {
       "basis": "884's OWN chart, read off the pinned receipt.  The Cycle-896 receipt named by the brief is NOT present on this branch and is NOT reconstructed from memory.",
       "chart_coordinates_removed": [
@@ -2955,5 +3110,5 @@ CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
   }
 }
 
-VERDICT: REPAIR-VIABLE  patch_rows=13  residual 10 -> 9  kernel_shape 4 -> 3
-controls: deterministic=True runtime=17.434068s stdout=101059B receipt=cc8430a295cbe6fd
+VERDICT: REPAIR-VIABLE  patch_rows=16  residual 10 -> 9  kernel_shape 4 -> 3
+controls: deterministic=True runtime=26.355221s stdout=108887B receipt=d7249e7cf0756f18

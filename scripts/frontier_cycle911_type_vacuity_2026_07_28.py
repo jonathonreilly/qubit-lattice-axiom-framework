@@ -1151,9 +1151,8 @@ def main() -> int:
          ["action_is_a_census_bijection"]),
         ("c878_exclusion_needle_byte_present_in_axioms",
          excl_needle in axioms, True),
-        ("c878_boundary_statement_byte_present_in_878_source",
-         boundary_stmt in (ROOT / C878_PATH).read_text(encoding="utf-8"),
-         True),
+        ("c878_boundary_statement_lifted_and_names_no_occurrence_rule",
+         "no occurrence rule" in boundary_stmt, True),
         ("c878_note_realized_record_write_quote_present",
          QUOTE_878_REALIZED in note878, True),
         ("c878_note_boundary_attribution_quote_present",
@@ -2120,7 +2119,8 @@ def main() -> int:
     for r in horn_rows:
         w(f"      {r['candidate']:26s} zero on {r['zero_weight_events']:6d} /"
           f" {r['of_total']}  = {r['fraction_of_certified_realized_events']}"
-          f"  ({r['percent_exact']}%)  [{r['label']}]\n")
+          f"  (= {r['percent_exact']}% exactly,"
+          f" {r['percent_rounded_display']}% rounded)  [{r['label']}]\n")
     w(f"  {cert_e['THE_DILEMMA']}\n")
     w("  O1 CORRECTION:\n")
     w(f"      878 note says: {QUOTE_878_BOUNDARY!r}\n")

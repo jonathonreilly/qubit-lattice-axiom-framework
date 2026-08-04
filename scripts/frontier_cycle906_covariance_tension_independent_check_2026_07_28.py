@@ -286,7 +286,8 @@ def build_space():
     c863 = SimpleNamespace(**{n: ns863[n] for n in C863_FUNCS})
     ns878, consts = lift(
         C878_PATH, C878_FUNCS,
-        ("HORIZON", "DEAD_CHUNK_ORBITS", "DEAD_ORBIT_ORBITS", "REGISTER_CAP"),
+        ("HORIZON", "DEAD_CHUNK_ORBITS", "DEAD_ORBIT_ORBITS", "REGISTER_CAP",
+         "CANDIDATE_NAMES", "CONTROL_NAME"),
         {"C863": c863, "Counter": Counter, "sha256": sha256, "gcd": gcd,
          "Fraction": Fraction, "json": json})
     c878 = SimpleNamespace(**{n: ns878[n] for n in C878_FUNCS})

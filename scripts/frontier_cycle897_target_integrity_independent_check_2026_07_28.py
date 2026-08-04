@@ -254,15 +254,25 @@ def nsqrt(q: Fraction, steps: int = 200) -> I:
 def _base_sin_cos(y: Fraction) -> tuple[I, I]:
     """Bounds for sin y, cos y for 0 <= y <= 1, by INTEGRATION BOOTSTRAP.
 
-        cos t <= 1                     ==> sin y <= y
-        sin t <= t                     ==> cos y >= 1 - y^2/2
-        cos t >= 1 - t^2/2             ==> sin y >= y - y^3/6
-        sin t >= t - t^3/6             ==> cos y <= 1 - y^2/2 + y^4/24
-        cos t <= 1 - t^2/2 + t^4/24    ==> sin y <= y - y^3/6 + y^5/120
-        sin t <= y - t^3/6 + t^5/120   ==> cos y >= 1 - y^2/2 + y^4/24 - y^6/720
+    Ten steps, each a termwise integration of the previous inequality over
+    [0, y] with y >= 0, using sin y = int_0^y cos t dt and
+    cos y = 1 - int_0^y sin t dt:
 
-    Each step is a termwise integration of the previous one on [0, y] with
-    y >= 0.  No series-truncation or alternation hypothesis is used.
+      1  cos t <= 1                          ==> sin y <= y
+      2  sin t <= t                          ==> cos y >= 1 - y^2/2
+      3  cos t >= 1 - t^2/2                  ==> sin y >= y - y^3/6
+      4  sin t >= t - t^3/6                  ==> cos y <= 1 - y^2/2 + y^4/24
+      5  cos t <= (step 4)                   ==> sin y <= y - y^3/6 + y^5/120
+      6  sin t <= (step 5)                   ==> cos y >= (step 4) - y^6/720
+      7  cos t >= (step 6)                   ==> sin y >= (step 5) - y^7/5040
+      8  sin t >= (step 7)                   ==> cos y <= (step 6) + y^8/40320
+      9  cos t <= (step 8)                   ==> sin y <= (step 7) + y^9/362880
+     10  sin t <= (step 9)                   ==> cos y >= (step 8) - y^10/3628800
+
+    NO series-truncation or alternating-series hypothesis is used anywhere; the
+    whole chain rests on cos <= 1 and monotonicity of the integral.  This is the
+    point of divergence from the primary, which bounds the same quantities by
+    alternating Taylor remainders.
     """
     if not (0 <= y <= 1):
         raise ValueError("base bounds require 0 <= y <= 1")
@@ -271,13 +281,20 @@ def _base_sin_cos(y: Fraction) -> tuple[I, I]:
     y4 = y2 * y2
     y5 = y4 * y
     y6 = y4 * y2
-    s_lo = y - y3 / 6
-    s_hi = y - y3 / 6 + y5 / 120
-    c_lo = 1 - y2 / 2 + y4 / 24 - y6 / 720
-    c_hi = 1 - y2 / 2 + y4 / 24
+    y7 = y6 * y
+    y8 = y4 * y4
+    y9 = y8 * y
+    y10 = y8 * y2
+    s_lo = y - y3 / 6 + y5 / 120 - y7 / 5040                     # step 7
+    s_hi = s_lo + y9 / 362880                                    # step 9
+    c_hi = 1 - y2 / 2 + y4 / 24 - y6 / 720 + y8 / 40320          # step 8
+    c_lo = c_hi - y10 / 3628800                                  # step 10
     if s_lo > s_hi or c_lo > c_hi:
         raise AssertionError("base bound ordering violated")
     return I(s_lo, s_hi), I(c_lo, c_hi)
+
+
+_SC_CACHE: dict[Fraction, tuple["I", "I"]] = {}
 
 
 def sin_cos(x: Fraction) -> tuple[I, I]:
@@ -287,6 +304,8 @@ def sin_cos(x: Fraction) -> tuple[I, I]:
     are exact identities."""
     if not (0 <= x <= 1):
         raise ValueError("sin_cos window is [0, 1]")
+    if x in _SC_CACHE:
+        return _SC_CACHE[x]
     y = x / (2 ** HALVINGS)
     S, C = _base_sin_cos(y)
     for _ in range(HALVINGS):
@@ -300,6 +319,8 @@ def sin_cos(x: Fraction) -> tuple[I, I]:
     # final sanity: the Pythagorean identity must hold on the result
     if not (S.sq() + C.sq()).has(1):
         raise AssertionError("sin^2 + cos^2 does not enclose 1")
+    S, C = outward(S), outward(C)
+    _SC_CACHE[x] = (S, C)
     return S, C
 
 
@@ -416,12 +437,12 @@ def Halg(dv: I, R: I) -> I:
     """The ALGEBRAICALLY REARRANGED residual, not the primary's form:
         H = (1-R)(1 - (sqrt2/2) cos d) + (sqrt6/2)(1+R) sin d."""
     S, C = sin_cos_iv(dv)
-    return (I(1) - R) * (I(1) - H2 * C) + H6 * (I(1) + R) * S
+    return outward((I(1) - R) * (I(1) - H2 * C) + H6 * (I(1) + R) * S)
 
 
 def Hprime(dv: I, R: I) -> I:
     S, C = sin_cos_iv(dv)
-    return H2 * (I(1) - R) * S + H6 * (I(1) + R) * C
+    return outward(H2 * (I(1) - R) * S + H6 * (I(1) + R) * C)
 
 
 def newton_delta(R: I, rounds: int = 12) -> dict:
@@ -447,8 +468,8 @@ def newton_delta(R: I, rounds: int = 12) -> dict:
             raise AssertionError("interval Newton lost the root")
         if N.inside(X):
             contained_once = True
-        X = X.cap(N)
-        if X.w() < Fraction(1, 10 ** 45):
+        X = outward(X.cap(N))
+        if X.w() < Fraction(1, 10 ** 38):
             break
     # cross-check: the primary's residual form must vanish on the same interval
     _, l1x, l2x = lam(X)
@@ -712,12 +733,15 @@ def laplacian(adj):
 
 def resistance(adj, i, j):
     """r(i,j) from an exact linear solve with the sum-zero gauge."""
+    if i == j:
+        return Fraction(0)
     n = len(adj)
     L = laplacian(adj)
     A = [row[:] for row in L]
     b = [Fraction(0)] * n
     b[i] = Fraction(1)
     b[j] = Fraction(-1)
+    b_orig = list(b)
     # replace the last equation by the gauge sum(x) = 0
     A[n - 1] = [Fraction(1)] * n
     b[n - 1] = Fraction(0)
@@ -725,8 +749,7 @@ def resistance(adj, i, j):
     # verify the discarded equation is satisfied (consistency of the gauge)
     row = L[n - 1]
     lhs = sum(row[k] * x[k] for k in range(n))
-    rhs = (Fraction(1) if n - 1 == i else Fraction(0)) - \
-          (Fraction(1) if n - 1 == j else Fraction(0))
+    rhs = b_orig[n - 1]
     if lhs != rhs:
         raise AssertionError("gauge-substituted solve is inconsistent")
     return x[i] - x[j]
@@ -1110,20 +1133,31 @@ def teeth() -> list[dict]:
 
     # T4b -- the trig recursion must reject a corrupted base bound.
     def t4b():
+        """Drop the -y^3/6 term from the sin lower bound, i.e. assert the FALSE
+        inequality sin y >= y, and push it through the same recursion.  The two
+        cosine forms and the Pythagorean identity must catch it."""
         y = Fraction(1, 2 ** HALVINGS)
-        S, C = _base_sin_cos(y)
-        bad_S = I(S.lo + Fraction(1, 10 ** 30), S.hi)
-        # a too-tight sin bound breaks the Pythagorean check downstream
+        _, C = _base_sin_cos(y)
+        bad_S = I(y, y + y ** 5 / 120)          # invalid: true sin y < y
+        caught = False
         try:
             for _ in range(HALVINGS):
                 S2 = outward(2 * bad_S * C)
-                C2 = outward(I(1) - 2 * bad_S.sq())
-                bad_S, C = S2, C2
+                Ca = I(1) - 2 * bad_S.sq()
+                Cb = 2 * C.sq() - I(1)
+                if not Ca.meets(Cb):
+                    caught = True
+                    break
+                bad_S, C = S2, outward(Ca.cap(Cb))
         except Exception:
-            return True
-        return not (bad_S.sq() + C.sq()).has(1) or True
+            caught = True
+        if not caught:
+            caught = not (bad_S.sq() + C.sq()).has(1)
+        return caught
     out.append({"tooth": "T4b corrupted trig base bound",
-                "expectation": "the identity self-check must notice",
+                "expectation": "an invalid sin lower bound must be caught by "
+                               "the double-angle cross-check or the "
+                               "Pythagorean identity",
                 "bit": t4b()})
 
     # T5 -- skipped family.

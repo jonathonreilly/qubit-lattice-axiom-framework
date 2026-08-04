@@ -1,0 +1,877 @@
+{
+ "block": "toe-time-blockG20-20260802",
+ "claims_compared": 15,
+ "claims_refuted": 0,
+ "claims_survived": 15,
+ "cycle": 897,
+ "detail": {
+  "comparisons": [
+   {
+    "agree": true,
+    "checker": "[0.222222047073817229, 0.222222047073817230]",
+    "claim": "C1a delta enclosure",
+    "primary": "[0.222222047073817229, 0.222222047073817230]"
+   },
+   {
+    "agree": true,
+    "checker": [
+     "445.328680",
+     "445.328681"
+    ],
+    "claim": "C1a n_sigma",
+    "primary": [
+     "445.328680",
+     "445.328681"
+    ]
+   },
+   {
+    "agree": true,
+    "checker": "INCOMPATIBLE-AT-SIGMA-445",
+    "claim": "C1a verdict",
+    "primary": "INCOMPATIBLE-AT-SIGMA-445"
+   },
+   {
+    "agree": true,
+    "checker": "[105.65941449590446, 105.65941449590447]",
+    "claim": "C1b m_mu implied",
+    "primary": "[105.65941449590446, 105.65941449590447]"
+   },
+   {
+    "agree": true,
+    "checker": [
+     "451.690624",
+     "451.690625"
+    ],
+    "claim": "C1b n_sigma",
+    "primary": [
+     "451.690624",
+     "451.690625"
+    ]
+   },
+   {
+    "agree": true,
+    "checker": "INCOMPATIBLE-AT-SIGMA-451",
+    "claim": "C1b verdict",
+    "primary": "INCOMPATIBLE-AT-SIGMA-451"
+   },
+   {
+    "agree": true,
+    "checker": [
+     "0.433636",
+     "0.433637"
+    ],
+    "claim": "C1c tau n_sigma",
+    "primary": [
+     "0.433636",
+     "0.433637"
+    ]
+   },
+   {
+    "agree": true,
+    "checker": "COMPATIBLE",
+    "claim": "C1c tau verdict",
+    "primary": "COMPATIBLE"
+   },
+   {
+    "agree": true,
+    "checker": [
+     [
+      -4,
+      1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "claim": "C2 pairwise sets",
+    "primary": [
+     [
+      "-4",
+      "1",
+      "3"
+     ],
+     [
+      "-1",
+      "1",
+      "3"
+     ],
+     [
+      "1",
+      "3"
+     ]
+    ]
+   },
+   {
+    "agree": true,
+    "checker": 5,
+    "claim": "C2 883 recount",
+    "primary": 5
+   },
+   {
+    "agree": true,
+    "checker": 3,
+    "claim": "C3 semigroup selecting count",
+    "primary": 3
+   },
+   {
+    "agree": true,
+    "checker": 264,
+    "claim": "C3 identity-free count",
+    "primary": 264
+   },
+   {
+    "agree": true,
+    "checker": 8,
+    "claim": "C4a order-3 element count",
+    "primary": 8
+   },
+   {
+    "agree": true,
+    "checker": 6,
+    "claim": "C4b normalizer order",
+    "primary": 6
+   },
+   {
+    "agree": true,
+    "checker": 3,
+    "claim": "C4b inverting elements",
+    "primary": 3
+   }
+  ],
+  "conjugate_pair": {
+   "all_rows_conjugate_forced": true,
+   "group_order": 24,
+   "omega_cubed_is_one": true,
+   "order3_count": 8,
+   "pass": true,
+   "rows": [
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_forced": true,
+     "discriminant": -3,
+     "remainder": 0,
+     "transverse": "+1N^2+1N+1"
+    },
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_forced": true,
+     "discriminant": -3,
+     "remainder": 0,
+     "transverse": "+1N^2+1N+1"
+    },
+    {
+     "charpoly": "+1N^3-1",
+     "conjugate_forced": true,
+     "discriminant": -3,
+     "remainder": 0,
+     "transverse": "+1N^2+1N+1"
+    }
+   ],
+   "weight_pair_(1,-1)_coefficients_are_real": true,
+   "weight_pair_(1,1)_linear_coefficient_is_nonreal": true
+  },
+  "family_census": {
+   "N=4_discriminator": {
+    "F_ded(4)": "1/2",
+    "F_dim(4)": "3/16",
+    "F_res(4)": "5/16"
+   },
+   "N=4_matches_claim": true,
+   "all_hit_2/9_at_N=3": true,
+   "integers_where_all_three_agree": [
+    1,
+    3
+   ],
+   "pairs": [
+    {
+     "claimed": [
+      -4,
+      1,
+      3
+     ],
+     "degree": 3,
+     "degree_bound_closes_the_search": true,
+     "families_agree_at_every_root": true,
+     "integer_roots_in_[-500,500]": [
+      -4,
+      1,
+      3
+     ],
+     "match": true,
+     "numerator": "-1N^3+13N-12",
+     "pair": "F_dim = F_res"
+    },
+    {
+     "claimed": [
+      -1,
+      1,
+      3
+     ],
+     "degree": 3,
+     "degree_bound_closes_the_search": true,
+     "families_agree_at_every_root": true,
+     "integer_roots_in_[-500,500]": [
+      -1,
+      1,
+      3
+     ],
+     "match": true,
+     "numerator": "-1N^3+3N^2+1N-3",
+     "pair": "F_dim = F_ded"
+    },
+    {
+     "claimed": [
+      1,
+      3
+     ],
+     "degree": 2,
+     "degree_bound_closes_the_search": true,
+     "families_agree_at_every_root": true,
+     "integer_roots_in_[-500,500]": [
+      1,
+      3
+     ],
+     "match": true,
+     "numerator": "-3N^2+12N-9",
+     "pair": "F_res = F_ded"
+    }
+   ],
+   "pass": true,
+   "table": {
+    "F_ded": {
+     "N=3": "2/9",
+     "N=4": "1/2"
+    },
+    "F_dim": {
+     "N=3": "2/9",
+     "N=4": "3/16"
+    },
+    "F_res": {
+     "N=3": "2/9",
+     "N=4": "5/16"
+    }
+   }
+  },
+  "fork_forward": {
+   "delta": "[0.222222047073817229, 0.222222047073817230]",
+   "n_sigma": [
+    "445.328680",
+    "445.328681"
+   ],
+   "offset": [
+    "0.0000001751484049929930",
+    "0.0000001751484049929931"
+   ],
+   "sigma": [
+    "0.0000000003933014260016",
+    "0.0000000003933014260017"
+   ],
+   "uniqueness_established": true,
+   "verdict": "INCOMPATIBLE-AT-SIGMA-445"
+  },
+  "fork_reverse": {
+   "m_mu_implied": "[105.65941449590446, 105.65941449590447]",
+   "m_tau_implied": "[1776.9849708134, 1776.9849708135]",
+   "n_sigma": [
+    "451.690624",
+    "451.690625"
+   ],
+   "offset": [
+    "0.0010389959044642",
+    "0.0010389959044643"
+   ],
+   "verdict": "INCOMPATIBLE-AT-SIGMA-451"
+  },
+  "green": {
+   "C_resistance_is_d(N-d)/N": true,
+   "K3_equals_C3": true,
+   "K4_differs_from_C4": true,
+   "K_resistance_is_2/N": true,
+   "pass": true,
+   "rows": [
+    {
+     "closed_form": "1/4",
+     "graph": "K_2",
+     "green": "1/4",
+     "match": true
+    },
+    {
+     "closed_form": "2/9",
+     "graph": "K_3",
+     "green": "2/9",
+     "match": true
+    },
+    {
+     "closed_form": "2/9",
+     "graph": "C_3",
+     "green": "2/9",
+     "match": true
+    },
+    {
+     "closed_form": "3/16",
+     "graph": "K_4",
+     "green": "3/16",
+     "match": true
+    },
+    {
+     "closed_form": "5/16",
+     "graph": "C_4",
+     "green": "5/16",
+     "match": true
+    },
+    {
+     "closed_form": "4/25",
+     "graph": "K_5",
+     "green": "4/25",
+     "match": true
+    },
+    {
+     "closed_form": "2/5",
+     "graph": "C_5",
+     "green": "2/5",
+     "match": true
+    },
+    {
+     "closed_form": "5/36",
+     "graph": "K_6",
+     "green": "5/36",
+     "match": true
+    },
+    {
+     "closed_form": "35/72",
+     "graph": "C_6",
+     "green": "35/72",
+     "match": true
+    },
+    {
+     "closed_form": "6/49",
+     "graph": "K_7",
+     "green": "6/49",
+     "match": true
+    },
+    {
+     "closed_form": "4/7",
+     "graph": "C_7",
+     "green": "4/7",
+     "match": true
+    },
+    {
+     "closed_form": "7/64",
+     "graph": "K_8",
+     "green": "7/64",
+     "match": true
+    },
+    {
+     "closed_form": "21/32",
+     "graph": "C_8",
+     "green": "21/32",
+     "match": true
+    },
+    {
+     "closed_form": "8/81",
+     "graph": "K_9",
+     "green": "8/81",
+     "match": true
+    },
+    {
+     "closed_form": "20/27",
+     "graph": "C_9",
+     "green": "20/27",
+     "match": true
+    },
+    {
+     "closed_form": "9/100",
+     "graph": "K_10",
+     "green": "9/100",
+     "match": true
+    },
+    {
+     "closed_form": "33/40",
+     "graph": "C_10",
+     "green": "33/40",
+     "match": true
+    }
+   ]
+  },
+  "kernel": {
+   "checks": [
+    {
+     "ok": true,
+     "t": "nsqrt(4) brackets by squaring"
+    },
+    {
+     "ok": true,
+     "t": "nsqrt(2) brackets by squaring"
+    },
+    {
+     "ok": true,
+     "t": "nsqrt(3) brackets by squaring"
+    },
+    {
+     "ok": true,
+     "t": "nsqrt(6) brackets by squaring"
+    },
+    {
+     "ok": true,
+     "t": "nsqrt(9/4) brackets by squaring"
+    },
+    {
+     "ok": true,
+     "t": "nsqrt(206768283/1000000) brackets by squaring"
+    },
+    {
+     "ok": true,
+     "t": "nsqrt(4) encloses 2"
+    },
+    {
+     "ok": true,
+     "t": "nsqrt(2) width below 1e-80"
+    },
+    {
+     "ok": true,
+     "t": "sin(0)=0, cos(0)=1"
+    },
+    {
+     "ok": true,
+     "t": "sin^2+cos^2 at 1/7"
+    },
+    {
+     "ok": true,
+     "t": "sin(x)=2 sin(x/2)cos(x/2) at 1/7"
+    },
+    {
+     "ok": true,
+     "t": "sin^2+cos^2 at 2/9"
+    },
+    {
+     "ok": true,
+     "t": "sin(x)=2 sin(x/2)cos(x/2) at 2/9"
+    },
+    {
+     "ok": true,
+     "t": "sin^2+cos^2 at 1/2"
+    },
+    {
+     "ok": true,
+     "t": "sin(x)=2 sin(x/2)cos(x/2) at 1/2"
+    },
+    {
+     "ok": true,
+     "t": "sin^2+cos^2 at 3/4"
+    },
+    {
+     "ok": true,
+     "t": "sin(x)=2 sin(x/2)cos(x/2) at 3/4"
+    },
+    {
+     "ok": true,
+     "t": "sin^2+cos^2 at 1"
+    },
+    {
+     "ok": true,
+     "t": "sin(x)=2 sin(x/2)cos(x/2) at 1"
+    },
+    {
+     "ok": true,
+     "t": "cos strictly decreasing on samples"
+    },
+    {
+     "ok": true,
+     "t": "sin strictly increasing on samples"
+    },
+    {
+     "ok": true,
+     "t": "trig enclosure width below 1e-40"
+    },
+    {
+     "ok": true,
+     "t": "trig window guard fires"
+    },
+    {
+     "ok": true,
+     "t": "sqrt sign guard fires"
+    }
+   ],
+   "count": 24,
+   "pass": true
+  },
+  "orientation": {
+   "element_orders": [
+    1,
+    2,
+    2,
+    2,
+    3,
+    3
+   ],
+   "generator_inverting_elements": 3,
+   "group_order": 24,
+   "is_S3_not_Z6": true,
+   "orbit_size_number_of_C3_subgroups": 4,
+   "orbit_stabilizer_identity_holds": true,
+   "pass": true,
+   "stabilizer_order": 6
+  },
+  "parameterization": {
+   "Q_at_c2_equals_2": "2/3",
+   "Q_at_c2_equals_4": "1",
+   "exercise_form_refuted": true,
+   "numeric_probe_at_c=2": "[0.999999999999999999999999999999, 1.000000000000000000000000000001]",
+   "numeric_probe_at_c=2_encloses_1": true,
+   "numeric_probe_at_c=sqrt2_over_four_deltas": [
+    "[0.666666666666666666666666666666, 0.666666666666666666666666666667]",
+    "[0.666666666666666666666666666666, 0.666666666666666666666666666667]",
+    "[0.666666666666666666666666666666, 0.666666666666666666666666666667]",
+    "[0.666666666666666666666666666666, 0.666666666666666666666666666667]"
+   ],
+   "numeric_probe_encloses_2/3_every_time": true,
+   "pass": true
+  },
+  "pins": {
+   "firewall_hits": [],
+   "pass": true,
+   "primary_present": true,
+   "primary_receipt_present": true,
+   "primary_sha256": "01c8e95bf73408f9f3fb2386b93f3281ef3a2d948a26e772a1cdce91cf159cec",
+   "rows": [
+    {
+     "match": true,
+     "observed": "8b90720698c26d9ae4a4a0990498cedf408e4b9c6b1b5a41ebea41c249d248ba",
+     "path": "docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md"
+    },
+    {
+     "match": true,
+     "observed": "6cfb1c34e9c77e5979d78a2d03718eb970b00bf7a26866c719ba812ce3a82722",
+     "path": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md"
+    },
+    {
+     "match": true,
+     "observed": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+     "path": "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    },
+    {
+     "match": true,
+     "observed": "7f485527189864c79d927376c686a4cab5d3ad25551b16283851a9acc5a9462d",
+     "path": "logs/runner-cache/frontier_cycle882_readout_identity_2026_07_28.txt"
+    },
+    {
+     "match": true,
+     "observed": "560f368d9d23144cb23a93e72a398d92f6fcb536c3363179b7853c09615211bb",
+     "path": "logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt"
+    },
+    {
+     "match": true,
+     "observed": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a",
+     "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py"
+    },
+    {
+     "match": true,
+     "observed": "bdc617b8e70d6a1cc9c808009faf9ace1022d59e7b7ae3b029d7a3dbca30ea49",
+     "path": "scripts/frontier_cycle882_readout_independent_check_2026_07_28.py"
+    },
+    {
+     "match": true,
+     "observed": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c",
+     "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py"
+    }
+   ]
+  },
+  "recount_883": {
+   "cache_says_5_of_7": true,
+   "forms": 7,
+   "hit_names": [
+    "w1 / (w0 + w1)^2",
+    "w0 * w1 / n^2",
+    "w1 / n^2",
+    "(n - 1) / n^2",
+    "w1 / (w0 * n^2)"
+   ],
+   "hits": 5,
+   "names": [
+    "w1 / (w0 + w1)^2",
+    "w0 * w1 / n^2",
+    "w1 / n^2",
+    "(n - 1) / n^2",
+    "w1 / (w0 * n^2)",
+    "w0 / n",
+    "(w0 + w1) / n^2"
+   ],
+   "pass": true,
+   "prose_says_four_in_runner": true,
+   "values": [
+    "2/9",
+    "2/9",
+    "2/9",
+    "2/9",
+    "2/9",
+    "1/3",
+    "1/3"
+   ]
+  },
+  "t7": {
+   "cyclic_semigroup_2_9": {
+    "contains_identity": false,
+    "first_terms": [
+     "128/4782969",
+     "16/6561",
+     "2/9",
+     "256/43046721"
+    ],
+    "surviving_alphas": [
+     "2/27"
+    ],
+    "uniquely_selects": true
+   },
+   "monoid_claim_holds": true,
+   "nonnegative_windows_monoids": {
+    "examples": [],
+    "identity_free": 0,
+    "libraries": 276,
+    "reaching": 14,
+    "selecting": 0
+   },
+   "pass": true,
+   "semigroup_claim_holds": true,
+   "strictly_positive_windows_semigroups": {
+    "examples": [
+     {
+      "contains_identity": false,
+      "generators": [
+       "2",
+       "1/3"
+      ],
+      "library": [
+       "2/3",
+       "2/9",
+       "4/3",
+       "4/9"
+      ],
+      "window": "[1, 2]"
+     },
+     {
+      "contains_identity": false,
+      "generators": [
+       "2",
+       "1/3"
+      ],
+      "library": [
+       "2/27",
+       "2/3",
+       "2/9",
+       "4/27",
+       "4/3",
+       "4/9",
+       "8/27",
+       "8/3",
+       "8/9"
+      ],
+      "window": "[1, 3]"
+     },
+     {
+      "contains_identity": false,
+      "generators": [
+       "2",
+       "3",
+       "1/3"
+      ],
+      "library": [
+       "12",
+       "18",
+       "2",
+       "2/3",
+       "2/9",
+       "24",
+       "36",
+       "4",
+       "4/3",
+       "4/9",
+       "6",
+       "72",
+       "8",
+       "8/3",
+       "8/9"
+      ],
+      "window": "[1, 3]"
+     }
+    ],
+    "identity_free": 264,
+    "libraries": 276,
+    "reaching": 5,
+    "selecting": 3
+   },
+   "wider_stress_window_to_4": {
+    "examples": [
+     {
+      "contains_identity": false,
+      "generators": [
+       "2",
+       "1/3"
+      ],
+      "library": [
+       "2/3",
+       "2/9",
+       "4/3",
+       "4/9"
+      ],
+      "window": "[1, 2]"
+     },
+     {
+      "contains_identity": false,
+      "generators": [
+       "2",
+       "1/3"
+      ],
+      "library": [
+       "2/27",
+       "2/3",
+       "2/9",
+       "4/27",
+       "4/3",
+       "4/9",
+       "8/27",
+       "8/3",
+       "8/9"
+      ],
+      "window": "[1, 3]"
+     },
+     {
+      "contains_identity": false,
+      "generators": [
+       "2",
+       "1/3"
+      ],
+      "library": [
+       "16/27",
+       "16/3",
+       "16/81",
+       "16/9",
+       "2/27",
+       "2/3",
+       "2/81",
+       "2/9",
+       "4/27",
+       "4/3",
+       "4/81",
+       "4/9",
+       "8/27",
+       "8/3",
+       "8/81",
+       "8/9"
+      ],
+      "window": "[1, 4]"
+     },
+     {
+      "contains_identity": false,
+      "generators": [
+       "2",
+       "3",
+       "1/3"
+      ],
+      "library": [
+       "12",
+       "18",
+       "2",
+       "2/3",
+       "2/9",
+       "24",
+       "36",
+       "4",
+       "4/3",
+       "4/9",
+       "6",
+       "72",
+       "8",
+       "8/3",
+       "8/9"
+      ],
+      "window": "[1, 3]"
+     }
+    ],
+    "identity_free": 352,
+    "libraries": 368,
+    "reaching": 8,
+    "selecting": 5
+   }
+  },
+  "tau_row": {
+   "m_tau_implied": "[1776.9690272931, 1776.9690272932]",
+   "n_sigma": [
+    "0.433636",
+    "0.433637"
+   ],
+   "verdict": "COMPATIBLE"
+  },
+  "teeth": [
+   {
+    "bit": true,
+    "expectation": "pin comparison must fail",
+    "tooth": "T1 tampered pin digest"
+   },
+   {
+    "bit": true,
+    "expectation": "a 1e-6 MeV shift must move n_sigma",
+    "tooth": "T2 perturbed mass value undisclosed"
+   },
+   {
+    "bit": true,
+    "expectation": "a constant verdict must disagree with the pipeline on a compatible world",
+    "tooth": "T3 hardcoded verdict"
+   },
+   {
+    "bit": true,
+    "expectation": "squaring re-verification must reject a narrowed sqrt bracket",
+    "tooth": "T4 broken enclosure bound"
+   },
+   {
+    "bit": true,
+    "expectation": "an invalid sin lower bound must be caught by the double-angle cross-check or the Pythagorean identity",
+    "tooth": "T4b corrupted trig base bound"
+   },
+   {
+    "bit": true,
+    "expectation": "dropping F_ded must change the all-agree set",
+    "tooth": "T5 skipped family"
+   },
+   {
+    "bit": true,
+    "expectation": "a world built to satisfy delta = 2/9 must be seen as COMPATIBLE in both directions",
+    "tooth": "T6 planted-compatibility blindness"
+   },
+   {
+    "bit": true,
+    "expectation": "re-admitting exponent 0 must destroy both the identity-free population and every selection",
+    "tooth": "T7 identity leak (exponent 0 re-admitted)"
+   },
+   {
+    "bit": true,
+    "expectation": "c^2 = 4 must give Q = 1, refuting the exercise's stated form",
+    "tooth": "T8 wrong Brannen coefficient (c = 2)"
+   }
+  ]
+ },
+ "enclosure_attack": {
+  "double_angle_forms_cross_checked_and_intersected": true,
+  "every_sqrt_bracket_reverified_by_squaring": true,
+  "every_trig_bound_derived_without_alternating_series": true,
+  "interval_newton_containment_proves_uniqueness": true,
+  "kernel_all_passed": true,
+  "kernel_selftests": 24,
+  "primary_residual_form_vanishes_on_checker_enclosure": true,
+  "pythagorean_identity_enforced_on_every_evaluation": true,
+  "verdict": "NO UNPROVEN BOUND FOUND"
+ },
+ "independence": "different sqrt (Newton vs integer bracketing), different trig (integration-bootstrap base bounds plus double-angle recursion with outward rounding vs direct alternating Taylor series), different root finder (interval Newton vs bisection), different residual algebra, different Green-function route (effective resistance vs pseudoinverse formula), different char-poly route (cofactor expansion vs trace/e2/det), different group construction (closure of generators vs signed-permutation filter), different normalizer route (orbit-stabilizer vs direct conjugation test), different library arithmetic (integer valuation vectors vs Fractions), different 883 extraction (regex vs AST)",
+ "primary": "scripts/frontier_cycle897_target_integrity_2026_07_28.py",
+ "primary_sha256": "01c8e95bf73408f9f3fb2386b93f3281ef3a2d948a26e772a1cdce91cf159cec",
+ "role": "independent checker, spec'd to refute",
+ "runtime_seconds": 0,
+ "teeth_bit": 9,
+ "teeth_total": 9
+}

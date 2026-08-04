@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle897_target_integrity_independent_check_2026_07_28.py
+runner_sha256: 4ab24d5f1d6d6605120b61ce207583990614f860e1c5e6d2c8ce00badbe1001e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.68
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 897 -- INDEPENDENT CHECK (spec'd to refute)
+==============================================================================
+
+[PASS] CA_PINS
+[PASS] CB_INDEPENDENT_KERNEL
+[PASS] CC_PARAMETERIZATION
+[PASS] CD_FAMILY_CENSUS
+[PASS] CE_GREEN_DIAGONALS
+[PASS] CF_883_RECOUNT
+[PASS] CG_T7_SEMIGROUP_SEARCH
+[PASS] CH_CONJUGATE_PAIR
+[PASS] CI_NO_ORIENTATION
+
+------------------------------------------------------------------------------
+INDEPENDENT RECOMPUTATION OF THE FORK  (interval Newton, bootstrap trig)
+------------------------------------------------------------------------------
+  delta          : [0.222222047073817229, 0.222222047073817230]
+  uniqueness     : interval-Newton containment established = True
+  sigma(delta)   : [0.0000000003933014260016, 0.0000000003933014260017]
+  n_sigma        : [445.328680, 445.328681]  -> INCOMPATIBLE-AT-SIGMA-445
+  m_mu at 2/9    : [105.65941449590446, 105.65941449590447] MeV
+  n_sigma        : [451.690624, 451.690625]  -> INCOMPATIBLE-AT-SIGMA-451
+  m_tau implied  : [1776.9690272931, 1776.9690272932] MeV
+  n_sigma        : [0.433636, 0.433637]  -> COMPATIBLE
+
+------------------------------------------------------------------------------
+CLAIM-BY-CLAIM AGREEMENT WITH THE PRIMARY
+------------------------------------------------------------------------------
+  [AGREE] C1a delta enclosure
+  [AGREE] C1a n_sigma
+  [AGREE] C1a verdict
+  [AGREE] C1b m_mu implied
+  [AGREE] C1b n_sigma
+  [AGREE] C1b verdict
+  [AGREE] C1c tau n_sigma
+  [AGREE] C1c tau verdict
+  [AGREE] C2 pairwise sets
+  [AGREE] C2 883 recount
+  [AGREE] C3 semigroup selecting count
+  [AGREE] C3 identity-free count
+  [AGREE] C4a order-3 element count
+  [AGREE] C4b normalizer order
+  [AGREE] C4b inverting elements
+
+  15 of 15 claims survived independent recomputation.
+
+------------------------------------------------------------------------------
+TEETH
+------------------------------------------------------------------------------
+  [BITES] T1 tampered pin digest
+          pin comparison must fail
+  [BITES] T2 perturbed mass value undisclosed
+          a 1e-6 MeV shift must move n_sigma
+  [BITES] T3 hardcoded verdict
+          a constant verdict must disagree with the pipeline on a compatible
+          world
+  [BITES] T4 broken enclosure bound
+          squaring re-verification must reject a narrowed sqrt bracket
+  [BITES] T4b corrupted trig base bound
+          an invalid sin lower bound must be caught by the double-angle
+          cross-check or the Pythagorean identity
+  [BITES] T5 skipped family
+          dropping F_ded must change the all-agree set
+  [BITES] T6 planted-compatibility blindness
+          a world built to satisfy delta = 2/9 must be seen as COMPATIBLE in
+          both directions
+  [BITES] T7 identity leak (exponent 0 re-admitted)
+          re-admitting exponent 0 must destroy both the identity-free population
+          and every selection
+  [BITES] T8 wrong Brannen coefficient (c = 2)
+          c^2 = 4 must give Q = 1, refuting the exercise's stated form
+
+  9 of 9 teeth bit.
+
+receipt: outputs/target_integrity_independent_check_cycle897_receipt_2026_07_28.json
+claims survived: 15/15   teeth bit: 9/9   elapsed: 0s

@@ -1,0 +1,114 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle912_a3_channel_2026_07_28.py
+runner_sha256: fc14dd127e6b7ef49f1e74b8e01f21fe865af4220f2d3a2e369bf9adca65033a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 205.341
+status: ok
+----- stdout -----
+CYCLE912_A3_CHANNEL_CONTENT_MEASURABILITY_ORPHANED_NOTE_AND_613_RESIDUES
+EVERY_EMITTED_FRACTION_IS_A_BOOKKEEPING_FRACTION_NOT_A_PROBABILITY
+NO_PROBABILITY_POSTULATE_IS_INTRODUCED_BY_THIS_BLOCK
+
+CERTIFICATE A_PINS PASS {"blocked_modules_loaded":[],"existing_worktree_relative":true,"firewall_hits":[],"git_blob_mismatches":[],"git_blobs_all_match":true,"literal_ok":true,"sha256_all_match":true,"sha256_mismatches":[]}
+
+[build 1 complete at 78.0s]
+[build 2 complete at 156.3s]
+CERTIFICATE D_DETERMINISM PASS {"identical":true,"science_digest":"628b2cca9bfdd050"}
+
+==========================================================================
+CERTIFICATE B_RESTRICTION_GATE PASS  23/23 gates reproduce value-for-value
+
+==========================================================================
+C1 -- CONTENT-MEASURABILITY OF THE WEIGHTINGS (ROUTE 3)
+==========================================================================
+  Record axiom: "A readout value is determined by record content
+alone."
+  event space 92260 events in 52018 F_CONTENT cells; 17348 cells cross more than one world
+  A-CONTENT probe: 92260 content_of calls, 52018 distinct raw lane states behind 52018 content values, 0 collisions
+  -> truncation injective on this census: True
+
+  weighting                   content-measurable   violating cells
+  M1_COUNTING                 True                 0
+  M2_PER_WORLD_UNIFORM        False                85
+  M3_OCCUPATION_WEIGHTED      False                1002
+  M4_FORMATION_LIFETIME       False                2670
+  M5_FORMATION_MOMENT         False                2670
+  M6_ABSOLUTE_ORBIT_UNIFORM   False                5
+
+  of the six weightings on the lane, 1 is/are constant on record content (M1_COUNTING) and 5 is/are not (M2_PER_WORLD_UNIFORM, M3_OCCUPATION_WEIGHTED, M4_FORMATION_LIFETIME, M5_FORMATION_MOMENT, M6_ABSOLUTE_ORBIT_UNIFORM); a weighting that is not content-measurable cannot serve as the Record axiom's readout I
+
+==========================================================================
+C2 -- THE A3 CHANNEL (first run of the repo's own named closer)
+==========================================================================
+  claim under test: "Its candidate channels are (a) a bounded derivation note from the landed
+readout sentences — "Only records are readable." and "A readout value is
+determined by record content alone"
+  criterion: "**Pre-record structure is real exactly to the extent it influences which
+records form and with what frequencies.**"
+  model: additivity gives 92260 free event weights; content determination collapses that to 52018
+  P_A invisibility  forced = True  (17348 content-preserving pairs, complete)
+  P_B frequencies   forced = False  (admissible probabilities form an affine simplex of dimension 52017)
+  falsifier planted_forcing_sentence               must=FORCED-AT-READOUT-GRADE  got=FORCED-AT-READOUT-GRADE  ok=True
+  falsifier planted_nonnegativity_only             must=PARTIALLY-FORCED         got=PARTIALLY-FORCED         ok=True
+  falsifier planted_drop_of_content_determination  must=NOT-FORCED               got=NOT-FORCED               ok=True
+  verdict classes reachable: ['FORCED-AT-READOUT-GRADE', 'NOT-FORCED', 'PARTIALLY-FORCED']
+
+  VERDICT: PARTIALLY-FORCED
+  forced      : P_A, invisibility: every readout satisfying the landed sentences is a function of the record content multiset alone.  Structure that changes no record content changes no readout value.  This half of the section-1 criterion IS forced at readout grade, and it is forced by S2 and S3 together -- dropping either breaks it.
+  not forced  : P_B, frequency-faithfulness: the landed sentences leave an affine 52017-dimensional simplex of admissible probability readouts and select none of them.  'with what frequencies' is not expressible in the constraint language the sentences supply: additivity plus content determination fix the SHAPE of a readout, not its VALUES, and nothing in them makes a readout a frequency at all.
+  missing     : exactly the existence-and-state-functionality of a probability measure over outcomes -- the admission the recovered 2026-06-05 envariance note names A3.  Adding a sentence that selects one normalized non-negative readout collapses the simplex to a point and the verdict to FORCED, as the planted-forcing test above demonstrates; the landed sentences contain no such sentence.
+
+==========================================================================
+C3 -- THE ORPHANED ENVARIANCE NOTE
+==========================================================================
+  status: RECOVERED
+  a61fa74c3b Fri Jun 5 17:27:52 2026 -0400 Claude Opus
+      born-from-envariance: conditional on state-functional probability (A3), no-go intact
+  1c277078dd Fri Jun 5 17:31:29 2026 -0400 Claude Opus
+      born-envariance: reconcile with prior QD basis-not-weight result (envariance = swap-symmetry fixes weight, distinct from redundancy fixing basis; A3 = the measure-selection gap pinned)
+  present in HEAD tree: {'docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md': False, 'scripts/frontier_born_from_envariance_2026_06_05.py': False, 'logs/runner-cache/frontier_born_from_envariance_2026_06_05.txt': False}
+  deletion commits    : NONE
+  ancestor of HEAD    : {'a61fa74c3b': False, '1c277078dd': False}
+  refs containing it  : ['remotes/origin/born-from-envariance-2026-06-05']
+  the note was NEVER DELETED and no deletion commit exists.  It was added on an unmerged side branch and that branch was never merged into the landed lineage: ['remotes/origin/born-from-envariance-2026-06-05'].  'Orphaned' here means STRANDED ON AN UNMERGED BRANCH, not added-then-removed -- a materially different provenance story, and a correctable one.
+
+  [A3_ADMISSION_PROSE @byte 1453] The **single residual admission** is `A3`: that a probability measure over
+  outcomes **exists and is a function of the (record/quantum) state**.
+  [A3_LEDGER_ROW @byte 4957] | A3 a probability measure **exists and is state-functional** | **admission** | **NO** |
+
+  RECOMMENDATION: land the note (and its runner and cache) into the audit lane so the A3 admission is citable from the landed tree.  This block does NOT restore the file -- no docs are written here; the recommendation is emitted as data for the lane that owns landing.
+
+==========================================================================
+C4 -- THE 613 RESIDUE-VECTOR COUNT
+==========================================================================
+  1404 recipes over 11 escape worlds x [129] events
+  distinct RAW world-sum vectors : 874
+  distinct residue vectors mod 613   : 853
+  distinct residue vectors mod 31    : 671
+  distinct residue vectors mod 19003 : 874
+  distinct residue vectors mod 175   : 816
+  distinct residue vectors mod 5     : 391
+  distinct residue vectors mod 7     : 426
+  distinct residue vectors mod 25    : 669
+  native recipes passing degree-0 (19003 | lcm): 0
+  native recipes passing degree-2 (175 | lcm)  : 188
+  some world sum divisible by 613 / 31         : 22 / 254
+  stated checks: {"DISCREPANCY":"the two stated null numbers do not come from one model.  0.00539 is the PER-PRIME-POWER model at degree 0; 85.8 is the SINGLE-MODULUS model at degree 2.  Applied consistently, model A expects 414.72 degree-2 passes (observed 188 native), which is an UNDER-hit, not an over-hit; model B expects 0.81 degree-0 passes.  The '189-vs-85.8 over-hit' is an artifact of mixing models.","degree2_85_8_reproduced_by":"model_B_single_modulus at degree 2 = 85.77","exercise_stated_degree2_over_hit":"189 vs 85.8","exercise_stated_per_recipe_pass_probability":"0.00539","matches":true,"matches_85_8":true,"reproduced_by":"model_A_per_prime_power at degree 0 = 0.00539"}
+
+  THE EVIDENCE IS REAL BUT DEFLATED: the 1404 recipes realize 853 distinct residue vectors mod 613 (0.608 of the headline count), so the survey made roughly that many genuinely independent tries at the 613 gate -- not 1,404, but not a handful either.  The empirical arm of 909's claim survives at reduced strength; it is not the load-bearing arm.  Decisively, ZERO of the 1,404 native recipes pass the degree-0 filter (observed 0 against 7.57 expected under the per-prime-power null), so the survey found no realizer not because it got lucky but because the arithmetic gate is genuinely hard to hit; and since the lemma depends only on the world sums, it kills every profile built on those sums whether or not it lies in the declared closure.  The lemma, not the survey, is what makes further search useless.
+
+==========================================================================
+CERTIFICATE T_TEETH PASS  8/8 teeth fired
+  T1_TAMPERED_PIN                   True   tampered sha256 aa3dace5e72728e9 != pinned
+  T2_DROPPED_WEIGHTING              True   6 of 6 weightings present
+  T3_HARDCODED_CHANNEL_VERDICT      True   all three verdict classes reached by the same code path: FORCED-AT-READOUT-GRADE, NOT-FORCED, PARTIALLY-FORCED
+  T4_LEAKED_FORCING                 True   detected as PARTIALLY-FORCED
+  T5_PLANTED_FORCING_BLINDNESS      True   detected as FORCED-AT-READOUT-GRADE
+  T6_SKIPPED_RECIPE                 True   recipe_count 1404
+  T7_VACUOUS_MEASURABILITY          True   40242 events beyond the cell count; 21 multi-event cell sizes present
+  T8_TRUNCATION_BLINDNESS           True   92260 content_of calls instrumented, 52018 raw preimages behind 52018 content values
+
+receipt -> outputs/a3_channel_cycle912_receipt_2026_07_28.json
+all certificates pass: True
+elapsed 204.9s

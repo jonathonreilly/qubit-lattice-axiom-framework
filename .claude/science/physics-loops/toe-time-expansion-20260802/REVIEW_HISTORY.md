@@ -831,3 +831,47 @@ the supervisor).
   the lock-point menus (not the census), and the menu-variation gap
   must be attacked first. NEXT: Cycle 913 — the landed scan's
   selection function at the 164 lock points (O2 as a computation).
+
+## Cycle 913 selection function (blockQ10, PR #5977) — 2026-08-04
+
+- Supervisor review: the quadruple-read agreement, the compile-level
+  reads-never-writes lemma, the radius-1 exhaustion argument, and the
+  vacuity-trap flags verified in the receipt; outcome-neutrality
+  demonstrated in both directions.
+- Checker: 31/0; the fingerprint attack under two further encodings;
+  146 semantic replays; 8/8 teeth.
+- Cluster-cap (10th Q-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
+# BORN LANE WINDOW-2 CLOSURE ASSESSMENT — 2026-08-04 ~17:00 EDT
+
+The lane is AS CLOSED AS THIS SUBSTRATE ALLOWS. The arc (Q2-Q10,
+Cycles 905-913): the census weighting program RE-TYPED (worlds are
+setups; the weightings are apportionment; the interface constructions
+stand as cross-lane bookkeeping identities); O1 actuality CLOSED
+(axiom content since 2026-07-04; two boundary-certificate corrections
+emitted); O2 MEASURED (supplied — event-parity transport; not
+derivable on this substrate); O3 TERMINAL (no non-forbidden
+realization here; the A3 arena located at the 328 site-possibility
+pairs; the gap provably ONE SENTENCE with the A3 channel half-forced
+and the stranded envariance note carrying the other half).
+
+REGISTERED/PRICED: P-SAMPLE-SPACE; P-WITHIN-WORLD (x2);
+P-SITE-UNIFORM; P-NONEMPTY; P-CONDITION-MAP; the horizon-window scope
+(BL12); the reading choice (COV-INV/COV-EQV, neither required).
+
+AXIOM ASK: NOT EARNED — and now PRECISELY SHAPED: the candidate is
+the A3 sentence, its arena the lock-point menus; but the honest next
+step is the NAMED SUCCESSOR SUBSTRATE (endpoint content as a gate
+target) — an engineering/derivation object, not a sentence. Asking
+for A3 before building that substrate would purchase a weight over
+alternatives the landed dynamics provably does not generate.
+
+NEXT LANE (furthest from complete): MASS — its named successor (the
+d=3 registration comparator on Z^3, per the owner's earlier
+direction) has never been started.
+
+AUDIT-LANE ACCUMULATED FLAGS (window 2, Born side): the stranded
+envariance note's landing; the 878 boundary misquote; the 863
+cert-A slicing artifact; the 909 "3 passes" misreading; the 856
+three-orbit horizon-criticality; T7 mis-stated (gravity side).

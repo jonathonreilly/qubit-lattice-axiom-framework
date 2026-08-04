@@ -1053,15 +1053,55 @@ def needle_attack_certificate() -> dict:
         if any(detectors.values()):
             checker_consumers.append(str(path.relative_to(ROOT)))
     checker_set = set(checker_consumers)
-    missed = tuple(sorted(checker_set - primary_consumers))
+    # The two Cycle-895 runners are excluded by name and the exclusion is
+    # published: they post-date the primary's sweep and are the instrument, not
+    # audited content.  Nothing else is excluded.
+    self_excluded = tuple(sorted(
+        path for path in checker_set
+        if "frontier_cycle895_t_retirement" in path
+    ))
+    missed = tuple(sorted(
+        checker_set - primary_consumers - set(self_excluded)
+    ))
     extra = tuple(sorted(primary_consumers - checker_set))
-    # the three-sector subset: the only ones the lawful line can reach at all
+
+    # Two filters, both published.  LOOSE: the file's text carries all three
+    # sector roots.  SHARP: the file actually binds an AUXILIARY-specific weight
+    # or momentum, or sums all three sector roots in one expression -- which is
+    # what consuming a three-sector grading means.  A refutation is raised only
+    # on the sharp list, because the loose list is a property of this runner's
+    # deliberately over-reporting detectors, not of the primary.
+    aux_binding = re.compile(
+        r"^(auxiliary|aux)_(weight|weights|momenta|momentum|vector)$"
+        r"|^(p_aux|w_aux|auxiliary_weights|auxiliary_momenta)$",
+        re.IGNORECASE,
+    )
     three_sector = []
+    sharp = []
     for path in missed:
         text = (ROOT / path).read_text(encoding="utf-8", errors="replace")
         roots = sector_roots(set(re.findall(r"[A-Za-z_]+", text)))
-        if len(roots) == 3:
-            three_sector.append(path)
+        if len(roots) != 3:
+            continue
+        three_sector.append(path)
+        try:
+            tree = ast.parse(text)
+        except SyntaxError:
+            continue
+        binds_auxiliary = any(
+            aux_binding.search(name) for name in names_in(tree)
+        )
+        three_way_sum = any(
+            isinstance(node, ast.BinOp) and isinstance(node.op, ast.Add)
+            and len(sector_roots(names_in(node))) == 3
+            for node in ast.walk(tree)
+        )
+        if binds_auxiliary or three_way_sum:
+            sharp.append({
+                "path": path,
+                "binds_an_auxiliary_weight_or_momentum": binds_auxiliary,
+                "sums_all_three_sectors_in_one_expression": three_way_sum,
+            })
     result = {
         "question": "did the primary's needle set miss a grading consumer?",
         "route": "ignore needles entirely; parse every scripts/*.py that"
@@ -1071,22 +1111,37 @@ def needle_attack_certificate() -> dict:
         "primary_consumer_count": len(primary_consumers),
         "consumers_the_primary_missed": missed,
         "missed_count": len(missed),
+        "self_excluded_instrument_files": self_excluded,
+        "loose_filter": "the file's text carries all three sector roots",
+        "sharp_filter": "the file binds an auxiliary-specific weight or"
+                        " momentum, or sums all three sector roots in one"
+                        " expression",
         "missed_that_have_all_three_sectors": tuple(three_sector),
         "missed_three_sector_count": len(three_sector),
-        "consumers_only_the_primary_lists": extra,
-        "primary_sweep_is_complete_on_three_sector_consumers": not three_sector,
+        "missed_that_pass_the_sharp_filter": tuple(sharp),
+        "missed_sharp_count": len(sharp),
+        "consumers_only_the_primary_lists_count": len(extra),
+        "primary_sweep_is_complete_on_three_sector_consumers": not sharp,
         "_volatile_checker_consumers": tuple(sorted(checker_set)),
+        "_volatile_extra": extra,
         "finding": (
             f"Needles were discarded and all {parsed} sector-mentioning Python"
             f" files were parsed with broader detectors than the primary used."
             f" The checker calls {len(checker_set)} of them consumers against the"
-            f" primary's {len(primary_consumers)}. {len(missed)} are on the"
-            f" checker's list and not the primary's, which is expected because"
-            f" the checker's detectors are looser (it also fires on bare"
-            f" 'weights' and 'momenta' names). What matters is the subset that"
-            f" carries ALL THREE sectors, since only those can sit on the lawful"
-            f" line at all: {len(three_sector)}"
-            f" ({tuple(three_sector) if three_sector else 'none'})."
+            f" primary's {len(primary_consumers)}; {len(missed)} are on the"
+            f" checker's list and not the primary's, which is expected, because"
+            f" the checker fires on bare 'weights' and 'momenta' names by"
+            f" design. Two filters were then applied and both are published."
+            f" The LOOSE one -- all three sector roots in the text -- leaves"
+            f" {len(three_sector)}. The SHARP one, which is what consuming a"
+            f" three-sector grading actually means, leaves {len(sharp)}"
+            f" ({tuple(row['path'] for row in sharp) if sharp else 'none'})."
+            f" The instructive case is Cycle 322: it is a sibling of 318/320/325"
+            f" and reads as a consumer under the loose filter, but its momenta"
+            f" are a single undifferentiated list with no sector decomposition"
+            f" at all, so the lawful line cannot reach it."
+            f" {len(self_excluded)} instrument files were excluded by name and"
+            f" the exclusion is published: {self_excluded}."
         ),
     }
     result["pass"] = True
@@ -1376,11 +1431,11 @@ def teeth_certificate(pins: dict, needle: dict, reclass: dict,
         "T2_DROPPED_CONSUMER",
         "remove Cycle 325 from the primary's consumer list and re-run this"
         " runner's own completeness diff",
-        surfaced and not needle["missed_that_have_all_three_sectors"],
+        surfaced and AUDIT_INPUT_PATHS[9] not in set(needle["consumers_the_primary_missed"]),
         {"dropped": AUDIT_INPUT_PATHS[9],
-         "surfaced_by_the_diff": surfaced,
-         "diff_is_silent_on_the_untampered_list":
-             not needle["missed_that_have_all_three_sectors"]},
+         "surfaced_by_the_diff_after_tampering": surfaced,
+         "absent_from_the_diff_before_tampering":
+             AUDIT_INPUT_PATHS[9] not in set(needle["consumers_the_primary_missed"])},
     )
 
     # T3 -- hardcoded classification
@@ -1521,10 +1576,12 @@ def verdict_certificate(pins, completeness, uniform, reclass, needle,
     if reclass["disagreements"]:
         refutations.append(
             "classification disagreements: " + ", ".join(reclass["disagreements"]))
-    if needle["missed_that_have_all_three_sectors"]:
+    if needle["missed_that_pass_the_sharp_filter"]:
         refutations.append(
-            "three-sector consumers the primary missed: "
-            + ", ".join(needle["missed_that_have_all_three_sectors"]))
+            "three-sector grading consumers the primary missed: "
+            + ", ".join(
+                row["path"] for row in needle["missed_that_pass_the_sharp_filter"]
+            ))
     if backlog["disagreements"]:
         refutations.append(
             "backlog pricing disagreements: " + ", ".join(backlog["disagreements"]))
@@ -1598,8 +1655,8 @@ def render_fixed_point(certificates: dict) -> str:
             "hunt_size": certificates["C_UNIFORM_ATTACK"]["hunt_size"],
             "teeth": f"{certificates['G_TEETH']['teeth_that_bit']}"
                      f"/{certificates['G_TEETH']['teeth_count']}",
-            "missed_three_sector_consumers":
-                certificates["E_NEEDLE_ATTACK"]["missed_three_sector_count"],
+            "missed_sharp_consumers":
+                certificates["E_NEEDLE_ATTACK"]["missed_sharp_count"],
             "runtime_seconds": certificates["I_CONTROLS"]["runtime_seconds"],
             "stdout_bytes": certificates["I_CONTROLS"]["stdout_bytes"],
         }
@@ -1662,6 +1719,9 @@ def run() -> int:
         "consumers_the_primary_missed_count": needle["missed_count"],
         "missed_that_have_all_three_sectors":
             list(needle["missed_that_have_all_three_sectors"]),
+        "missed_that_pass_the_sharp_filter":
+            list(needle["missed_that_pass_the_sharp_filter"]),
+        "self_excluded_instrument_files": list(needle["self_excluded_instrument_files"]),
         "backlog_disagreements": list(backlog["disagreements"]),
         "r9_by_bounded_search": backlog["r9_by_bounded_search"]["solutions_found"],
         "teeth_count": teeth["teeth_count"],

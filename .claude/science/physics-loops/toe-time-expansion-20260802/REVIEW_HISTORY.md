@@ -417,3 +417,27 @@ barrier question (small); (6) P2 kernel-coordinate attack (feeds
 GBW1b's interface). The former owner surfaces: #5931 -> one exclusion
 (t != 0), science closed; scope clause + window conventions ->
 registered-convention rows, science closed.
+
+## Cycle 897 target integrity (blockG20, PR #5958) — 2026-08-04
+
+- Supervisor review: the conditionality structure (parameterization +
+  Q=2/3 + quarantined observations) stated in status fields, not
+  buried; the exercise-formula refutation (sqrt(2) vs 2) verified
+  against the pinned Koide note's own line; the falsifier-visibility
+  control (synthetic COMPATIBLE world) present; the T7 defects
+  reproduced from the pinned 882 primaries, not asserted.
+- Checker: 15/15 survive; NO unproven bound found in the enclosure
+  attack; every route algorithmically independent; 9/9 teeth.
+- AUDIT-LANE FLAG RAISED (new): the landed 882/#5939 T7 sentence
+  ("every multiplicatively closed anchor library contains 1") is
+  FALSE as stated — sound only for monoid libraries; the 882
+  primary's selection predicate is structurally unsatisfiable
+  (headline vacuous at its own predicate; content was the checker's);
+  the landed "200 libraries" is the checker's count (primary: 42).
+  Correction emitted as data; landed surfaces not modified.
+- SL1b: the 2/9 target is conditionally excluded; the obligation's
+  live successor is the FAMILY binding. The exercise -> certification
+  pipeline (generator, then full discipline) worked as designed.
+- Cluster-cap (20th gravity-family PR): **OPEN** — target-status
+  transformation + landed-wall correction + two discharges.
+- Local disposition: **pass** (bounded_theorem; audit pending).

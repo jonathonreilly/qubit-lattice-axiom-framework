@@ -3970,7 +3970,22 @@
   "NONE": 336,
   "PARTIAL": 15
  },
- "H2_price_registration_sentences": [],
+ "H2_price_registration_sentences": [
+  {
+   "byte_quoted_sentence": "Further physical\nstructure requires a retained derivation or bridge, or explicit approved-\nprimitive registration, before use as a premise.",
+   "class": "EXCLUSION_HIT",
+   "document": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "grade": "NONE",
+   "why_it_matters": "this sentence does not GROUND multiplicity-freeness -- it states the framework's own rule for what happens to a property the supplied structure does not fix, which is exactly the disposition this cycle's verdict triggers"
+  },
+  {
+   "byte_quoted_sentence": "A choice not fixed by the\nsupplied structure remains a named conditional or open dependency.",
+   "class": "EXCLUSION_HIT",
+   "document": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "grade": "NONE",
+   "why_it_matters": "this sentence does not GROUND multiplicity-freeness -- it states the framework's own rule for what happens to a property the supplied structure does not fix, which is exactly the disposition this cycle's verdict triggers"
+  }
+ ],
  "H2_rubric": {
   "E1_SUBJECT_the_readout_object": [
    "readout",
@@ -4510,7 +4525,7 @@
  "consequence": "multiplicity-freeness is the ladder's TERMINAL SUPPLIED CLAUSE. The owner-surface registration is ONE clause -- 'the readout scope is multiplicity-free' -- with the T3 subset as its computed consequence set: ['C3_body', 'C4_face'].",
  "cycle": 890,
  "deterministic_double_build": true,
- "elapsed_sec_at_summary": 1.626,
+ "elapsed_sec_at_summary": 1.623,
  "next_attackable_question": "The clause is now single and named. Either register 'the readout scope is multiplicity-free' on the owner surface with ['C3_body', 'C4_face'] as its computed consequence set, or attack the remaining separation inside that set: C3 and C4 both survive T3, so a second clause is still needed to choose between them, and the orbit-scope coarse reading is the only one that separates them (C3 carries the v_2 = 1 datum coarsely, C4 only finely).",
  "one_clause_registration_text": "the readout scope is multiplicity-free",
  "question": "Cycle 888 proved SL1's 'no free parameter' IS multiplicity-freeness of the readout representation and named FIND-5: is that property quotable from any axiom sentence? Price it -- prove the equivalence over the full 30-subgroup census, compute the exact scope subset it selects, and sweep every sentence of the axiom memo and the lineage's notes for a grounding.",

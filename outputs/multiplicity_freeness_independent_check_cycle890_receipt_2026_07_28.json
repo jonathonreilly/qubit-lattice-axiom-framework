@@ -1215,7 +1215,7 @@
  },
  "cycle": 890,
  "deterministic_double_build": true,
- "elapsed_sec": 9.405,
+ "elapsed_sec": 9.421,
  "every_claim_survives": true,
  "role": "independent adversarial checker",
  "teeth": [

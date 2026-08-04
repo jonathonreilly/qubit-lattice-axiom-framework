@@ -564,3 +564,69 @@ exclusion are owner-surface rows with no derivation work left.
 - Cluster-cap (26th gravity-family PR): **OPEN** — route closure
   with construction + compression + methodological export.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 904 mixed-degree census (blockG27, PR #5966) — 2026-08-04
+
+- Supervisor review: the anti-purchase rule (R3) verified as the
+  block's structural spine; both against-interest findings checked in
+  the receipt (the false v3 premise; the honest native hit
+  contradicting 898's prediction); the two bound refutations adopted
+  with the widening direction computation-verified.
+- Checker: central verdict intact under both refutations; 8/8 teeth;
+  all five falsifier plants correctly classified.
+- Cluster-cap (27th gravity-family PR): **OPEN** — final-shape
+  pricing with a direction-inverting result + the completed map.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
+# GRAVITY LANE CLOSURE ASSESSMENT — 2026-08-04 ~11:30 EDT
+
+Standard (window-2 directive): closed from axioms up = every lane
+obligation DERIVED, a REGISTERED priced convention, or a NO-GO with
+escapes priced — nothing in pending-decision limbo.
+
+DERIVED (this window + window 1): tracelessness = conservation
+defect; SL1 (the (1,2) pair); support containment (additivity);
+D gauge; the affine lawfulness law (t-partition 6/84/60/1146); the
+blind-locus theorem at every t != 0; the quadratic gauge break
+(barrier-independent, inversion-visible); amplitude expulsion (from
+containment); the kernel's one-scalar Chebyshev reduction; the
+forced harmonic core + viable repair (16-row patch list); the space
+identification (DECIDED-F_DIM: the record reads content); the family
+binding (F_dim; the five-fold ambiguity a phantom); canonicity iff
+multiplicity-freeness; the conjugate pair; the no-orientation lemma;
+the bridge constructed (freedom 0 mod normalizer).
+
+REGISTERED / PRICED (the owner surface — registrations, not asks):
+the terminal scope clause ("the readout scope is multiplicity-free",
+{C3, C4}) + the orbit-scope coarse reading choice; the window
+conventions (no-interaction + structuring set + centre); sigma's
+dimensionless residue (TERMINAL supplied scalar; its unit-conversion
+half DISCHARGED onto the approved scale-reference primitive); mu
+(free exactly as R3 left it); the t != 0 exclusion; the pre-existing
+GB-S2b supplied-barrier row; IF1's barrier-scoped identification
+premise.
+
+NO-GO with escapes priced: the sign wall (exact t-scope); response-
+surface blindness; the 2/9 target exclusion (conditional, quarantined
+observations, falsifier-visible); the disjoint-window impossibility;
+the cross-lane weighting no-go (interface = {IF1} alone); the
+readout-selection question TERMINALLY covered (11 shapes, 0 unpriced;
+reachability generic, discrimination absent; successor = a
+schema-ranking principle that the memo's own exile sentence places
+outside axiom content).
+
+AXIOM ASKS: NONE EARNED. Every wall priced as either an owner-surface
+convention or content the framework's own text exiles; the one
+candidate sentence the exercise produced died with its target (897).
+
+VERDICT: **THE GRAVITY LANE IS CLOSED FROM AXIOMS UP** in the
+directive's sense. Remaining non-derivation work: independent audits
+(the review/audit lanes' job) and owner-surface registrations
+(decisions, not derivations, not askable). 
+
+NEXT LANE (furthest from complete): BORN/MEASUREMENT — its central
+question (weighting selection) is entirely open; the window's own
+results supply its opening constraints (902's failed support-
+faithfulness lift narrows the five weightings to three as interface
+carriers; IF1 is the barrier-scoped interface obstruction; the 863
+census module lives on the Q1 lineage, so the join runs Born-ward).

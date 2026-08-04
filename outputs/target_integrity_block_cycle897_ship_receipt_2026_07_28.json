@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the exercise's central formula refuted and corrected before certification; supervisor line-by-line review",
+  "block": "toe-time-blockG20-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 0.7s; 15/15 claims survive; enclosure attack found NO unproven bound; 9/9 teeth",
+    "primary": "all_pass True, exit 0, 6.0s; restriction gate 9/9 (42-vs-200 provenance recorded); enclosure obligations discharged before every solve"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 20th gravity-family PR: transforms a standing obligation's target-status with certified enclosures, corrects a landed block's wall with three reproduced defects, and banks two discharges; nothing corollary",
+  "cycles": [
+    897
+  ],
+  "files": {
+    "docs/TARGET_INTEGRITY_FORK_CERTIFIED_CYCLE897_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "aa5ccafeb40b61e627c2fd44fe8d730be02b9bf6",
+      "sha256": "e40003f770c92fbb050165d04f916e44de90ccef1318f2225f99c4a1d1af28f0"
+    },
+    "logs/runner-cache/frontier_cycle897_target_integrity_2026_07_28.txt": {
+      "git_blob": "91ac6d898359cbc483b9f99a97d9c1ceda3cf4dd",
+      "sha256": "ceef0bf03c4cb0c87c900b81ea873b09688ff77d6ce28b24ece88ae461939220"
+    },
+    "logs/runner-cache/frontier_cycle897_target_integrity_independent_check_2026_07_28.txt": {
+      "git_blob": "797a56b563f7e7c0071b80c1f5b04c7cbe244710",
+      "sha256": "00c8f9bd5debff91285da029dd324344771a6bc2ec78e62cb55267a48168897b"
+    },
+    "outputs/target_integrity_cycle897_receipt_2026_07_28.json": {
+      "git_blob": "ce638ae1ae15ae0335909248f1e2cf787d5a74b0",
+      "sha256": "4e0c08fc8bc248f392ef0e30da570ab4dc736dfa4cfcc07617b26130d1d834fe"
+    },
+    "outputs/target_integrity_independent_check_cycle897_receipt_2026_07_28.json": {
+      "git_blob": "e0402b01fb19fd8ff6601877fb518337620123af",
+      "sha256": "46505229430c3bb84fc3ff0edf593931280183290c05c261fd56260975b3ba35"
+    },
+    "scripts/frontier_cycle897_target_integrity_2026_07_28.py": {
+      "git_blob": "40f06693bdcd364682f811647de1f94c920af828",
+      "sha256": "01c8e95bf73408f9f3fb2386b93f3281ef3a2d948a26e772a1cdce91cf159cec"
+    },
+    "scripts/frontier_cycle897_target_integrity_independent_check_2026_07_28.py": {
+      "git_blob": "8066c3a95bd3ea5aa1b5e60adcba3e2e95b02113",
+      "sha256": "4ab24d5f1d6d6605120b61ce207583990614f860e1c5e6d2c8ce00badbe1001e"
+    }
+  },
+  "headline": "THE FORK CERTIFIED: under the retained circulant parameterization (sqrt(2), not the exercise's 2 \u2014 Q=2/3 is an IDENTITY in delta) + PDG masses (3 quarantined admitted observations), delta is determined by the e/mu ratio and 2/9 is INCOMPATIBLE at 445.33 sigma (reverse: implied m_mu off 451.69 sigma); tau rows compatible (0.43/0.61 sigma) \u2014 the tau error bar is where Q=2/3 lives; falsifier-visibility proved (synthetic world returns COMPATIBLE). PLUS: T7 MIS-STATED in the landed 882 block (windows force the identity; the checker's semigroup mode is a monoid; the primary's selection predicate structurally unsatisfiable \u2014 headline vacuous; 42-vs-200 provenance) \u2014 corrected scope: wall = closure-WITH-IDENTITY only; identity-free semigroups DO select (<2/9> alone; buys no derivation). N=3 degeneracy census certified with the structural cause K_3 = C_3; 883 recount 5-of-7 (prose said four); two discharges (conjugate pair FORCED; no orientation, normalizer = S3). SL1b's live successor = the FAMILY binding",
+  "independence": "cross-context and algorithmic on every route (integration-bootstrap trig vs Taylor remainders; interval Newton vs bisection; effective resistances vs pseudoinverses; 9/9 teeth incl. identity-leak and wrong-coefficient)",
+  "note": "docs/TARGET_INTEGRITY_FORK_CERTIFIED_CYCLE897_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 0.68,
+    "primary": 6.04
+  }
+}

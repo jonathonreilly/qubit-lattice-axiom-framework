@@ -66,9 +66,18 @@ worktrees:
     (1,956 lines, one completed run: GBW1 misscoped — D gauge, barrier
     derived, a/b existence-derived, N kernel-coupled => GBW1a/GBW1b split,
     sixth coordinate centre exposed) committed as WIP f4533dd7bd and pushed;
-    finisher worker relaunched with two known defects to repair (884-receipt
-    pin path silently wrong; receipt written into logs/runner-cache instead
-    of outputs) — running
+    finisher worker DONE (commits 6f79f65fb4 + 1a63dcbdb1, pushed): the
+    supervisor's "wrong pin path" premise was itself wrong (two distinct 884
+    receipts share a basename; the pin was correct and the worker refused the
+    instructed repoint — recorded as supervisor spec error); real repairs:
+    receipt relocated to outputs/, preflight pin hard-fail (exit 2), uncapped
+    failure counts (landed barrier 6 -> 1152/1440), admissibility-filtered
+    uniqueness (boundary shell REFUTED by REQ4 24/35 retractions => support
+    window SELECTED, residual drops 4 -> 3 items), computed centre class
+    (splits 4/12), stress extended to all 5 verdict maps + move_site,
+    degenerate-window theta control, O_CONTROLS rendered, idempotent census;
+    15/15 certificates pass, classification counts unchanged (2 determined /
+    2 existence-only / 1 supplied); checker (fresh context) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

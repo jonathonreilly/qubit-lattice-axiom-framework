@@ -100,3 +100,34 @@
   the checker's independent numbers.
 - Checker reconciled to v3 (pins, claims, corroboration + v2
   regression record) by supervisor edit, disclosed; rerun in flight.
+
+## Cycle 885 GBW1 (blockG10) — 2026-08-04
+
+- First worker STOPPED BY OWNER mid-stress-test; owner then said
+  "continue". Partial (near-complete primary + one completed run)
+  secured as WIP f4533dd7bd before relaunch.
+- SUPERVISOR SPEC ERROR (second of the campaign, after Cycle 880): the
+  relaunch spec asserted the 884-receipt pin path was wrong and
+  instructed a repoint to outputs/. False: two DISTINCT 884 receipts
+  share the basename (primary receipt in logs/runner-cache/, block-note
+  receipt in outputs/); the pin was correct, by full path + sha256 +
+  git blob. The finisher worker verified digests, REFUSED the
+  instructed repoint, and hardened preflight instead (missing pin =>
+  exit 2). Worker's refusal was correct; recorded as the spec error it
+  caught.
+- Finisher's genuine finds beyond the brief (8): capped exhibit lists
+  reported as counts (landed barrier 6 -> 1152/1440); uniqueness
+  counted a rival its own certificate refuted (boundary shell fails
+  REQ4, 24/35 retractions — science mover: support window SELECTED by
+  permanence, residual 4 -> 3); hard-coded centre class (now computed,
+  splits 4/12); hand-listed residual (now built from computed facts);
+  O_CONTROLS never rendered; non-idempotent census; dead verdict
+  params; N theta-dependence needed a degenerate-locus control (added:
+  support locus theta-independent 12/12, degenerate seed).
+- Supervisor line-by-line review of the 627-line repair diff: gates
+  outcome-neutral throughout; N_HONESTY_GATE correctly disclosed as a
+  prose lint, not a computation; receipt written before cache digest
+  (no self-reference); N's boundary-locus conditionality disclosed.
+- Local disposition: primary **pass**; checker (fresh context, spec'd
+  to refute; includes an attack on the uniqueness-filter rule itself —
+  REQ4 predates the filter in the WIP commit) launched.

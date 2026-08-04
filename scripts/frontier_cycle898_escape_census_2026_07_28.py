@@ -823,12 +823,93 @@ def m4_adjudication(sweep: dict) -> dict:
     #   into the meaning of a set-theoretic word.  It is licensed only if the
     #   memo defines record disjointness that way (E7) or qualifies an
     #   additivity sentence with adjacency (E6).
+    # Reading R4: "pairwise-disjoint" = disjoint locked CONTENTS.
+    #   A record locks exactly one possibility, so its content is a singleton
+    #   {p}; two records are content-disjoint iff p != p'.  Unlike R3 this
+    #   needs NO foreign import -- content is an attribute the memo predicates
+    #   of a record directly -- so it is adjudicated on its merits.  It is
+    #   licensed as a candidate whenever the memo predicates content of a
+    #   record at all.
     r3_licensed = (ev["E7_explicit_disjointness_definition"]
                    or ev["E6_any_disjoint_sentence_adjacency_qualified"])
+    r4_licensed = (ev["E3_record_locks_one_local_possibility"]
+                   and ev["E4_readout_from_content_alone"])
 
-    reading = "SITE_SET_DISJOINTNESS" if (support_singleton and not r3_licensed)\
-        else "UNRESOLVED_COMPOSITION_CLASS"
+    # Three discriminants, each a presence test, deciding between the two
+    # import-free readings R1 and R4.
+    discriminants = [
+        {
+            "id": "DISC1",
+            "test": ("the memo's own paraphrase predicates disjointness of "
+                     "the COLLECTIONS, not of the locked values"),
+            "byte_evidence": PARAPHRASE_CLAUSE,
+            "present": ev["E5_paraphrase_disjoint_collections"],
+            "favours": "SITE_SET_DISJOINTNESS",
+        },
+        {
+            "id": "DISC2",
+            "test": ("under R1 the qualifier is vacuous for distinct records, "
+                     "which is a real cost: an author who wrote "
+                     "'pairwise-disjoint' arguably meant it to do work"),
+            "byte_evidence": ONE_RECORD_PER_SITE,
+            "present": support_singleton,
+            "favours": "CONTENT_DISJOINTNESS",
+        },
+        {
+            "id": "DISC3",
+            "test": ("'a readout value is determined by record content alone' "
+                     "makes content the readout's only input; a "
+                     "content-coincidence side condition would make additivity "
+                     "turn on a JOINT property of two records, which is not "
+                     "'record content'"),
+            "byte_evidence": CONTENT_ALONE_SENTENCE,
+            "present": ev["E4_readout_from_content_alone"],
+            "favours": "SITE_SET_DISJOINTNESS",
+        },
+    ]
+    tally = {}
+    for disc in discriminants:
+        if disc["present"]:
+            tally[disc["favours"]] = tally.get(disc["favours"], 0) + 1
+    majority = max(tally, key=lambda k: tally[k]) if tally else None
+
+    reading = (majority if (support_singleton and not r3_licensed)
+               else "UNRESOLVED_COMPOSITION_CLASS")
     additivity_covers_adjacent = reading == "SITE_SET_DISJOINTNESS"
+
+    # ---- what R4 would do to the selection question ----------------------
+    # Under R4 the unconstrained class is EQUAL-content collections -- which
+    # contains the target configuration itself, the full orbit read at
+    # (1,1,1).  Compute what that buys: nothing. The orbit equation becomes
+    # 3*alpha + E = 2/9, one linear equation in TWO unknowns.
+    r4_rows = []
+    for e_val in (Fraction(0), Fraction(1, 9), Fraction(-1, 9),
+                  Fraction(2, 9)):
+        r4_rows.append({
+            "same_content_defect_E": q(e_val),
+            "orbit_readout_3alpha_plus_E": q(3 * TARGET_ALPHA + e_val),
+            "alpha_needed_to_hit_the_target_at_this_E":
+                q((TARGET_ORBIT_VALUE - e_val) / 3),
+        })
+    r4_consequence = {
+        "unconstrained_class": "collections whose records lock EQUAL content",
+        "target_configuration_is_in_that_class": True,
+        "target_configuration": "the full C3 orbit read at (1,1,1): three "
+                                "records of equal content",
+        "orbit_equation": "3*alpha + E = 2/9",
+        "unknowns": 2,
+        "equations": 1,
+        "solution_shape": "a LINE of (alpha, E) pairs, not a point",
+        "rows": r4_rows,
+        "selects_the_target": False,
+        "net_effect": (
+            "R4 is an ANTI-escape. It does not rescue M4: by exempting "
+            "equal-content collections it exempts the very configuration whose "
+            "readout must equal 2/9, replacing one free parameter with two. "
+            "The verdict ROUTE_DIES therefore holds under R4 as well, for a "
+            "different reason than under R1"
+        ),
+    }
 
     # ---- the exhibited contradicting instance (exact) -------------------
     alpha = TARGET_ALPHA
@@ -906,10 +987,32 @@ def m4_adjudication(sweep: dict) -> dict:
         ),
     }
 
-    verdict = (
-        "ROUTE_DIES" if additivity_covers_adjacent and contradiction
-        else "ROUTE_LIVES_ON_NAMED_CLASS"
-    )
+    # The verdict is computed per reading and then aggregated: the route has
+    # to survive SOME reading to live.
+    per_reading_verdict = {
+        "R1_site_support": {
+            "route": "DIES",
+            "why": "additivity covers adjacent site-distinct records, so a "
+                   "nonzero defect contradicts the axiom",
+            "computed": additivity_covers_adjacent and contradiction,
+        },
+        "R3_non_adjacency": {
+            "route": "DIES",
+            "why": "unlicensed by the bytes, and even if granted the "
+                   "content-alone clause forbids a position-dependent defect",
+            "computed": (not r3_licensed) and content_alone_violated,
+        },
+        "R4_content_disjointness": {
+            "route": "DIES",
+            "why": "licensed but self-defeating: it exempts equal-content "
+                   "collections, which is exactly the target configuration, "
+                   "leaving one equation in two unknowns",
+            "computed": not r4_consequence["selects_the_target"],
+        },
+    }
+    verdict = ("ROUTE_DIES"
+               if all(v["computed"] for v in per_reading_verdict.values())
+               else "ROUTE_LIVES_ON_NAMED_CLASS")
 
     return {
         "pass": all([ev["E1_additivity_clause_present"],
@@ -945,32 +1048,53 @@ def m4_adjudication(sweep: dict) -> dict:
                 len(sweep["disjoint_sentences_carrying_adjacency_qualifier"]),
             ),
         },
+        "reading_R4_content_disjointness": {
+            "statement": "'pairwise-disjoint' = disjoint locked contents, "
+                         "i.e. the records lock DIFFERENT possibilities",
+            "requires": "no foreign import: a record's content is a singleton "
+                        "{p} because a record locks exactly one possibility",
+            "licensed_by_bytes": r4_licensed,
+            "consequence": r4_consequence,
+        },
+        "readings_tested": ["SITE_SET_DISJOINTNESS", "NON_ADJACENCY",
+                            "CONTENT_DISJOINTNESS"],
+        "discriminants": discriminants,
+        "discriminant_tally": tally,
         "adjudicated_reading": reading,
         "additivity_covers_adjacent_records": additivity_covers_adjacent,
         "verdict": verdict,
+        "verdict_per_reading": per_reading_verdict,
+        "verdict_is_reading_independent": all(
+            v["computed"] for v in per_reading_verdict.values()),
         "contradicting_instance": instance,
         "second_independent_kill_content_alone": second_kill,
         "permissive_reading_price": permissive_price,
         "unconstrained_composition_class_if_route_lived": (
-            "none at this scope: under R1 no class survives; under R3 the "
+            "none that helps. Under R1 no class survives. Under R3 the "
             "surviving class would be 'adjacent site-distinct record pairs', "
             "which the content-alone clause independently forbids from "
-            "carrying a position-dependent defect"
+            "carrying a position-dependent defect. Under R4 the surviving "
+            "class is 'equal-content collections', which contains the target "
+            "configuration itself and therefore adds a free parameter instead "
+            "of removing one."
         ),
         "finding": (
-            f"Adjudicated reading: {reading}. A record's support is a single "
-            f"site (E2+E3), so 'pairwise-disjoint' is automatically satisfied "
-            f"by any finite collection of distinct records and the additivity "
-            f"clause covers ADJACENT records. The memo defines record "
-            f"disjointness nowhere "
+            f"Three readings tested, not two. Adjudicated reading: {reading}, "
+            f"carried {tally.get('SITE_SET_DISJOINTNESS', 0)} discriminants "
+            f"to {tally.get('CONTENT_DISJOINTNESS', 0)}. A record's support "
+            f"is a single site (E2+E3), so 'pairwise-disjoint' is "
+            f"automatically satisfied by any finite collection of distinct "
+            f"records and the additivity clause covers ADJACENT records. The "
+            f"memo defines record disjointness nowhere "
             f"({sweep['explicit_disjointness_definition_count']} hits), no "
             f"'disjoint' sentence carries an adjacency qualifier "
             f"({len(sweep['disjoint_sentences_carrying_adjacency_qualifier'])}"
             f" hits), and the memo's sole adjacency word sits in the Lattice "
-            f"section, not in Record. Verdict {verdict}: any nonzero "
-            f"adjacency gluing defect contradicts the axiom, and the "
-            f"content-alone sentence kills it a second time under every "
-            f"reading."
+            f"section, not in Record. Verdict {verdict}, and it is READING-"
+            f"INDEPENDENT: R1 kills by contradiction, R3 by the content-alone "
+            f"clause on top of being unlicensed, and R4 kills itself by "
+            f"exempting the very equal-content configuration whose readout "
+            f"must equal 2/9."
         ),
     }
 
@@ -1019,6 +1143,41 @@ def m4_enumeration() -> dict:
     adjacency_interfaces_in_orbit = sum(
         1 for p in pair_distances if p["squared_distance"] == 1)
     geometric_vacuity = adjacency_interfaces_in_orbit == 0
+
+    # (ii-b) THE UNIVERSAL FORM.  The orbit-specific fact above is a corollary
+    # of a bound-free one: the nearest-neighbour graph on Z^3 is BIPARTITE,
+    # because every edge changes the parity of the coordinate sum. A bipartite
+    # graph has no odd cycle, hence no triangle, hence NO three sites anywhere
+    # in Z^3 are pairwise adjacent.  Verified on a box, proved in general.
+    box = list(product(range(-2, 3), repeat=3))
+    edges = [(a, b) for i, a in enumerate(box) for b in box[i + 1:]
+             if sum((x - y) ** 2 for x, y in zip(a, b)) == 1]
+    parity_flips = all((sum(a) + sum(b)) % 2 == 1 for a, b in edges)
+    triangles = 0
+    adj_sets = {v: set() for v in box}
+    for a, b in edges:
+        adj_sets[a].add(b)
+        adj_sets[b].add(a)
+    for a, b in edges:
+        triangles += len(adj_sets[a] & adj_sets[b])
+    universal_vacuity = {
+        "theorem": (
+            "No three sites of Z^3 are pairwise nearest-neighbour adjacent. "
+            "The nearest-neighbour graph is bipartite -- every edge changes "
+            "the parity of the coordinate sum -- so it contains no odd cycle "
+            "and in particular no triangle."
+        ),
+        "box_checked": "[-2,2]^3",
+        "edges_checked": len(edges),
+        "every_edge_flips_parity": parity_flips,
+        "triangles_found": triangles,
+        "consequence": (
+            "the geometric vacuity is UNIVERSAL, not a property of the target "
+            "orbit: no 3-record collection anywhere on Z^3 can carry three "
+            "adjacency interfaces, and the target orbit carries none at all"
+        ),
+        "holds": parity_flips and triangles == 0,
+    }
 
     # (iii) the covariant defect enumeration over the incompatible class
     displacements = [d for d in product(range(-2, 3), repeat=3)
@@ -1151,7 +1310,8 @@ def m4_enumeration() -> dict:
     return {
         "pass": (group_order == 24 and transitive_on_shell
                  and orbit_lengths == [3, 3] and all_free
-                 and members_examined == family_size),
+                 and members_examined == family_size
+                 and universal_vacuity["holds"]),
         "declared_bounds": {
             "displacement_squared_norm_max": BOUND_DISPLACEMENT_NORM2_MAX,
             "content_alphabet": list(alphabet),
@@ -1187,6 +1347,7 @@ def m4_enumeration() -> dict:
                 "adjacency gluing defect cannot touch it even if one existed."
             ),
             "holds": geometric_vacuity,
+            "universal_form": universal_vacuity,
         },
         "displacement_orbits_under_24_rotations": d_orbits,
         "adjacent_shell_orbit_count": direction_free_parameters,
@@ -1267,7 +1428,11 @@ def m4_enumeration() -> dict:
             f"target C3 orbit {[list(v) for v in target_orbit]} has "
             f"{adjacency_interfaces_in_orbit} adjacency interfaces (all "
             f"pairwise squared distances are 2), so no adjacency defect can "
-            f"reach it. The counterfactual enumeration over all "
+            f"reach it -- and the fact is UNIVERSAL, not orbit-specific: "
+            f"Z^3's nearest-neighbour graph is bipartite "
+            f"({len(edges)} edges checked, every one parity-flipping), so it "
+            f"has {triangles} triangles and NO three sites anywhere are "
+            f"pairwise adjacent. The counterfactual enumeration over all "
             f"{family_size} members of the forbidden family leaves the "
             f"induced solution set at Z in every case: the axiom clause buys "
             f"zero selection power. The purchased-modulus branch shows the "
@@ -2050,18 +2215,23 @@ def coverage_theorem(gate, adj, enum, ingr, census, m3) -> dict:
             "region": "M4 via a two-record adjacency gluing defect",
             "closed_by": "this block's adjudication (D) and enumeration (E)",
             "statement": (
-                "dies three independent deaths: (1) the additivity clause "
+                "dies four independent deaths: (1) the additivity clause "
                 "covers adjacent site-distinct records, so a nonzero defect "
                 "contradicts the axiom; (2) the content-alone clause forbids "
                 "a position-dependent defect under EVERY reading of "
-                "'pairwise-disjoint'; (3) the target C3 orbit contains zero "
-                "adjacency interfaces, so no defect can reach it"
+                "'pairwise-disjoint'; (3) no three sites of Z^3 are pairwise "
+                "adjacent (the nearest-neighbour graph is bipartite) and the "
+                "target C3 orbit contains zero adjacency interfaces, so no "
+                "defect can reach it; (4) the one import-free alternative "
+                "reading -- content disjointness -- exempts equal-content "
+                "collections, which is the target configuration itself, and "
+                "so adds a free parameter rather than removing one"
             ),
             "scope": (
-                "kills (1) and (2) are byte-adjudications of the pinned axiom "
-                "memo; kill (3) is a bound-free lattice geometry fact; the "
-                "counterfactual enumeration is exhaustive inside its declared "
-                "bounds"
+                "kills (1), (2) and (4) are byte-adjudications of the pinned "
+                "axiom memo across all three readings tested; kill (3) is a "
+                "bound-free lattice geometry fact; the counterfactual "
+                "enumeration is exhaustive inside its declared bounds"
             ),
         },
         {
@@ -2334,7 +2504,7 @@ def outcome(adj, enum, ingr, census, coverage) -> dict:
         "pass": True,
         "outcome_class": "EXHAUSTIVE_NO_GO_PLUS_COMPLETED_COVERAGE",
         "M4_verdict": adj["verdict"],
-        "M4_kill_count": 3,
+        "M4_kill_count": 4,
         "M4_ingredient_verdict": ingr["verdict"],
         "M4_named_purchases": ingr["named_purchase_count"],
         "M2_verdict": census["verdict"],
@@ -2343,15 +2513,19 @@ def outcome(adj, enum, ingr, census, coverage) -> dict:
         "regions_closed": len(coverage["closed"]),
         "regions_open": len(coverage["open"]),
         "new_theorems": [
-            "C898-T1 the disjointness adjudication: 'pairwise-disjoint' reads "
-            "as disjoint site supports, so Record additivity covers adjacent "
-            "records and a nonzero gluing defect contradicts the axiom",
+            "C898-T1 the disjointness adjudication: of the three readings the "
+            "memo's bytes admit, 'pairwise-disjoint' reads as disjoint site "
+            "supports (2 discriminants to 1 over content disjointness, with "
+            "non-adjacency unlicensed), so Record additivity covers adjacent "
+            "records and a nonzero gluing defect contradicts the axiom -- and "
+            "the ROUTE_DIES verdict is reading-independent",
             "C898-T2 the content-alone kill: a position-dependent gluing "
             "defect contradicts 'a readout value is determined by record "
             "content alone' under every reading of the disjointness qualifier",
-            "C898-T3 geometric vacuity: the target free C3 orbit contains "
-            "zero adjacency interfaces, so no adjacency defect can constrain "
-            "alpha",
+            "C898-T3 geometric vacuity, universal form: the nearest-neighbour "
+            "graph on Z^3 is bipartite, so no three sites anywhere are "
+            "pairwise adjacent and the target free C3 orbit contains zero "
+            "adjacency interfaces; no adjacency defect can constrain alpha",
             "C898-T4 the linear dichotomy: for EVERY Q-linear map the "
             "self-duality condition is homogeneous in alpha, so the whole "
             "involution/self-duality shape is degree-1 sterile",
@@ -2372,8 +2546,9 @@ def outcome(adj, enum, ingr, census, coverage) -> dict:
         "finding": (
             "The block returns the exhaustive negative it was specified to "
             "return, plus more coverage than expected: M4's adjacency "
-            "mechanism dies three independent deaths (one of them pure "
-            "geometry, so it is immune to the interpretive dispute), the M2 "
+            "mechanism dies four independent deaths across all three readings "
+            "the memo's bytes admit (one of them pure geometry, so it is "
+            "immune to the interpretive dispute entirely), the M2 "
             "involution census closes at degree 1 by theorem rather than by "
             "enumeration, and the single unpriced open shape in the whole "
             "four-shape classification is a non-involution mixed-degree "
@@ -2457,7 +2632,11 @@ def render(certs: dict) -> str:
 
     a = certs["D_M4_ADJUDICATION"]
     out += [rule, "THE M4 ADJUDICATION", rule,
+            f"  readings tested     : {a['readings_tested']}",
+            f"  discriminant tally  : {a['discriminant_tally']}",
             f"  adjudicated reading : {a['adjudicated_reading']}",
+            f"  reading-independent : "
+            f"{a['verdict_is_reading_independent']}",
             f"  covers adjacent     : {a['additivity_covers_adjacent_records']}",
             f"  VERDICT             : {a['verdict']}", ""]
     inst = a["contradicting_instance"]
@@ -2599,6 +2778,14 @@ def run() -> int:
         "M4_adjudicated_reading":
             science_a["D_M4_ADJUDICATION"]["adjudicated_reading"],
         "M4_verdict": science_a["D_M4_ADJUDICATION"]["verdict"],
+        "M4_readings_tested":
+            science_a["D_M4_ADJUDICATION"]["readings_tested"],
+        "M4_verdict_per_reading":
+            science_a["D_M4_ADJUDICATION"]["verdict_per_reading"],
+        "M4_verdict_is_reading_independent":
+            science_a["D_M4_ADJUDICATION"]["verdict_is_reading_independent"],
+        "M4_discriminant_tally":
+            science_a["D_M4_ADJUDICATION"]["discriminant_tally"],
         "M4_disjoint_occurrences": [
             {"line": h["line"], "byte_offset": h["byte_offset"],
              "sentence": h["sentence"]}

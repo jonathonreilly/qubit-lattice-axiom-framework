@@ -379,8 +379,15 @@ def mat_total(m: Mat) -> Fraction:
 # ---------------------------------------------------------------------------
 # the supplied structure on a free C_n orbit, rebuilt (never recalled)
 # ---------------------------------------------------------------------------
-def native_matrices(n: int) -> list[tuple[str, Mat, str]]:
-    """(name, matrix, provenance) for the base native matrix library."""
+def native_matrices(n: int, power_cap: int = MATRIX_POWER_CAP
+                    ) -> list[tuple[str, Mat, str]]:
+    """(name, matrix, provenance) for the base native matrix library.
+
+    `power_cap` is a PARAMETER, never a mutated global: the monotonicity
+    certificate widens it by passing a different value, so the declared bound
+    in the receipt is always the module-level constant and an AST reader can
+    verify that without tracking assignments.
+    """
     ident = [[Fraction(int(i == j)) for j in range(n)] for i in range(n)]
     cyc = [[Fraction(int((i + 1) % n == j)) for j in range(n)]
            for i in range(n)]
@@ -409,12 +416,12 @@ def native_matrices(n: int) -> list[tuple[str, Mat, str]]:
     powered: list[tuple[str, Mat, str]] = list(base)
     for name, mat, _prov in base:
         cur = mat
-        for k in range(2, MATRIX_POWER_CAP + 1):
+        for k in range(2, power_cap + 1):
             cur = mat_mul(cur, mat)
             powered.append((
                 f"{name}^{k}", [row[:] for row in cur],
                 f"declared power closure: {name} to the power {k} "
-                f"(power cap {MATRIX_POWER_CAP})",
+                f"(power cap {power_cap})",
             ))
     return powered
 
@@ -480,10 +487,11 @@ def structural_scalars(n: int) -> list[tuple[str, Fraction, str]]:
     ]
 
 
-def native_atoms(n: int) -> dict[str, tuple[Fraction, str]]:
+def native_atoms(n: int, power_cap: int = MATRIX_POWER_CAP
+                 ) -> dict[str, tuple[Fraction, str]]:
     """The declared atom set at scope n: name -> (exact value, provenance)."""
     atoms: dict[str, tuple[Fraction, str]] = {}
-    for name, mat, prov in native_matrices(n):
+    for name, mat, prov in native_matrices(n, power_cap):
         for func in FUNCTIONALS:
             atoms[f"{func}({name})"] = (evaluate(func, mat, n), prov)
     for name, value, prov in structural_scalars(n):
@@ -984,9 +992,10 @@ def word_products(values: list[Fraction], w: int,
 
 
 def coefficient_set(n: int, w: int, sums: int = 1,
-                    cap: int = HEIGHT_BOUND_H) -> set[Fraction]:
+                    cap: int = HEIGHT_BOUND_H,
+                    power_cap: int = MATRIX_POWER_CAP) -> set[Fraction]:
     """K(w): quotients of length-<=w atom words, optionally plus binary sums."""
-    atoms = native_atoms(n)
+    atoms = native_atoms(n, power_cap)
     nonzero = sorted({v for v, _ in atoms.values() if v != 0},
                      key=lambda f: (f.numerator, f.denominator))
     prods = word_products(nonzero, w, cap)
@@ -1172,7 +1181,8 @@ def mixed_degree_solutions_certificate() -> dict:
 # ---------------------------------------------------------------------------
 # certificate F: the reachable value set
 # ---------------------------------------------------------------------------
-def reachable_set(n: int, w: int, sums: int = 1) -> set[Fraction]:
+def reachable_set(n: int, w: int, sums: int = 1,
+                  power_cap: int = MATRIX_POWER_CAP) -> set[Fraction]:
     """THEOREM C904-T3.  R = K(w) / K(w) \\ {0}, exactly.
 
     A gap-1 two-term relation k1 alpha = k0 pins alpha = k0/k1, so every
@@ -1181,7 +1191,7 @@ def reachable_set(n: int, w: int, sums: int = 1) -> set[Fraction]:
     of the lowest nonzero coefficient and q dividing the numerator of the
     leading one, hence lies in that quotient set after clearing denominators.
     """
-    ks = coefficient_set(n, w, sums)
+    ks = coefficient_set(n, w, sums, power_cap=power_cap)
     nz = [k for k in ks if k != 0]
     out = set()
     for a in nz:
@@ -1612,13 +1622,12 @@ def monotonicity_certificate(r_by_w: dict[int, set[Fraction]]) -> dict:
     """THEOREM C904-T7.  The negative verdict is monotone in every bound."""
     r1, r2 = r_by_w[1], r_by_w[2]
     nested = r1 <= r2
-    # enlarge the atom set: add matrix powers up to 3 (beyond the declared cap)
-    global MATRIX_POWER_CAP
-    saved = MATRIX_POWER_CAP
-    MATRIX_POWER_CAP = 3
-    r1_big = reachable_set(PRIMARY_SCOPE, 1)
-    atoms_big = len({v for v, _ in native_atoms(PRIMARY_SCOPE).values()})
-    MATRIX_POWER_CAP = saved
+    # Enlarge the atom set by PASSING a wider power cap.  No global is
+    # mutated: the declared bound in the receipt stays the module constant.
+    widened = MATRIX_POWER_CAP + 1
+    r1_big = reachable_set(PRIMARY_SCOPE, 1, power_cap=widened)
+    atoms_big = len({
+        v for v, _ in native_atoms(PRIMARY_SCOPE, widened).values()})
     atoms_small = len({v for v, _ in native_atoms(PRIMARY_SCOPE).values()})
     atom_nested = r1 <= r1_big
     return {
@@ -1635,8 +1644,10 @@ def monotonicity_certificate(r_by_w: dict[int, set[Fraction]]) -> dict:
             "R_at_W1": len(r1),
             "R_at_W2": len(r2),
             "R_W1_subset_of_R_W2": nested,
-            "atoms_at_power_cap_2": atoms_small,
-            "atoms_at_power_cap_3": atoms_big,
+            "atoms_at_the_declared_power_cap": atoms_small,
+            "declared_power_cap": MATRIX_POWER_CAP,
+            "atoms_at_the_widened_power_cap": atoms_big,
+            "widened_power_cap": MATRIX_POWER_CAP + 1,
             "R_at_W1_with_bigger_atom_set": len(r1_big),
             "R_W1_subset_of_enlarged": atom_nested,
         },

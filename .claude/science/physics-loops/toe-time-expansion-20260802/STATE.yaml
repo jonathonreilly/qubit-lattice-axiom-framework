@@ -104,6 +104,10 @@ worktrees:
   c5-t4: T4 (Cycle 889, DELTA-spectrum conjecture census at B=5/6/7 +
     long-horizon alignment-contingency retirement at B=3/5; stacked on T3
     tip 3177c9fbd5) — running
+  c5-g14: G14 (Cycle 890, multiplicity-freeness priced — the theorem half
+    (canonicity IFF multiplicity-free over the full census; the T3 menu
+    subset) + the FIND-5 sweep (is it quotable? full-memo fidelity grading);
+    stacked on G13 tip c00b3de3d4) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

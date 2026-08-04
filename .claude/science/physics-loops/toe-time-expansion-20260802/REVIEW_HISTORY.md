@@ -630,3 +630,21 @@ results supply its opening constraints (902's failed support-
 faithfulness lift narrows the five weightings to three as interface
 carriers; IF1 is the barrier-scoped interface obstruction; the 863
 census module lives on the Q1 lineage, so the join runs Born-ward).
+
+## Cycle 905 Born narrowing (blockQ2, PR #5967) — 2026-08-04
+
+- BORN LANE OPENED post gravity closure. Supervisor review: the
+  five-route rank agreement, the event-level exclusion witnesses,
+  the census-rebuilt 878 digest (upgrading 894's AST license to
+  computation), and the falsifier-visible pullback harness verified
+  in the receipt; the checker's category-error first run disclosed
+  with its dedicated fix commit.
+- Checker: CORROBORATES_WITH_REFINEMENT (the T/128 mass lattice; odd
+  prime targets unchanged); exhaustive exclusion-witness hunt found
+  no refutation; 8/8 teeth.
+- Lane ledger: 7 rows. BL7 (no survivor is covariant — the only
+  covariant candidate is the excluded one) is the sharpest; BL6 (79%
+  zero-mass commitment) second. Cycle 906 launched on BL7 with the
+  joint-system construction as its potential theorem.
+- Cluster-cap: 2nd Q-family PR — below threshold, noted for the 3rd.
+- Local disposition: **pass** (bounded_theorem; audit pending).

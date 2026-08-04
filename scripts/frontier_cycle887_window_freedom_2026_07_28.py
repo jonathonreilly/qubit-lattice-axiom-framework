@@ -72,10 +72,12 @@ C885_PRIMARY = "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py"
 C885_CHECKER = "scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py"
 C885_RECEIPT = "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json"
 C885_CACHE = "logs/runner-cache/frontier_cycle885_gbw1_record_window_2026_07_28.txt"
+C885_CHECK_CACHE = (
+    "logs/runner-cache/frontier_cycle885_gbw1_independent_check_2026_07_28.txt")
 
 AUDIT_INPUT_PATHS = [
     AXIOMS_MD, DYNAMICS_MD, WEAKFIELD_MD, C885_NOTE_MD,
-    C885_PRIMARY, C885_CHECKER, C885_RECEIPT, C885_CACHE,
+    C885_PRIMARY, C885_CHECKER, C885_RECEIPT, C885_CACHE, C885_CHECK_CACHE,
 ]
 
 # sha256 values supplied by the block spec; a mismatch is a hard preflight fail
@@ -872,15 +874,25 @@ def family_certificate() -> dict:
     d_theirs = digest(theirs)
 
     # cross-check the per-configuration rows against the PINNED 885 primary
-    # runner cache, which carries the 885 family certificate verbatim.
+    # runner cache, which carries the 885 E_CONFIG_FAMILY certificate verbatim.
+    # The cache is parsed as JSON (not scraped by regex), and EVERY field the
+    # 885 certificate reports is recomputed here and compared.
     cache = read_text(C885_CACHE)
-    row_re = re.compile(
-        r'"boundary_shell_size":\s*(\d+),.*?"name":\s*"([a-z0-9_]+)".*?'
-        r'"records":\s*(\d+)', re.S)
-    cached_rows = {}
-    for m in row_re.finditer(cache):
-        cached_rows[m.group(2)] = {"boundary_shell_size": int(m.group(1)),
-                                   "records": int(m.group(3))}
+    start = cache.index("\n{\n") + 1
+    depth_lvl = 0
+    end = None
+    for i in range(start, len(cache)):
+        ch = cache[i]
+        if ch == "{":
+            depth_lvl += 1
+        elif ch == "}":
+            depth_lvl -= 1
+            if depth_lvl == 0:
+                end = i + 1
+                break
+    cached_certs = json.loads(cache[start:end])
+    cached_rows = {r["name"]: r
+                   for r in cached_certs["E_CONFIG_FAMILY"]["rows"]}
     mismatches = []
     for cfg in FAMILY:
         supp = set(cfg["sites"])
@@ -890,14 +902,27 @@ def family_certificate() -> dict:
                 t = (s[0] + nb[0], s[1] + nb[1], s[2] + nb[2])
                 if t not in supp:
                     bd.add(t)
+        c = barycentre(cfg)
+        lo, hi = radii2(cfg["sites"], c)
+        mine = {
+            "name": cfg["name"],
+            "records": len(supp),
+            "readout_I_with_883_weights": readout(cfg),
+            "barycentre": [q(x) for x in c],
+            "inner_radius_squared": q(lo),
+            "outer_radius_squared": q(hi),
+            "depth_levels": len(set(d for _, d in cfg["depth"])),
+            "boundary_shell_size": len(bd),
+        }
         want = cached_rows.get(cfg["name"])
         if want is None:
-            mismatches.append({"config": cfg["name"], "reason": "absent_in_885_cache"})
-        elif (want["records"] != len(supp)
-              or want["boundary_shell_size"] != len(bd)):
-            mismatches.append({"config": cfg["name"], "cached": want,
-                               "rebuilt": {"records": len(supp),
-                                           "boundary_shell_size": len(bd)}})
+            mismatches.append({"config": cfg["name"],
+                               "reason": "absent_in_885_cache"})
+        else:
+            diff = {k: {"cached": want.get(k), "rebuilt": v}
+                    for k, v in mine.items() if want.get(k) != v}
+            if diff:
+                mismatches.append({"config": cfg["name"], "fields": diff})
 
     # numbers the 885 RECEIPT itself states, recomputed here on the rebuilt family
     receipt = json.loads(read_text(C885_RECEIPT))
@@ -929,11 +954,22 @@ def family_certificate() -> dict:
     }
     repro_ok = all(a == b for a, b in reproduced.values())
     stated = all(str(b) in claim or True for _, b in reproduced.items())
+    # third, convention-dependent cross-check: the digest the Cycle-885 CHECKER
+    # published for the same family.  Agreement here also requires the same
+    # fingerprint convention, so it is reported as a lineage check, not as the
+    # independent one -- the site-for-site AST comparison above is that.
+    chk_cache = read_text(C885_CHECK_CACHE)
+    m = re.search(r'"family_digest_mine":\s*"([0-9a-f]{64})"', chk_cache)
+    published = m.group(1) if m else None
+
     return {
         "family_size": len(FAMILY),
         "family_digest_mine": d_mine,
         "family_digest_885_ast": d_theirs,
         "family_digests_match": d_mine == d_theirs,
+        "family_digest_published_by_885_checker": published,
+        "matches_885_checker_published_digest": published == d_mine,
+        "published_digest_check_is_convention_dependent": True,
         "ast_nodes_extracted": ext["nodes_extracted"],
         "ast_all_required_found": ext["all_required_found"],
         "cached_row_cross_check_mismatches": mismatches,
@@ -948,14 +984,18 @@ def family_certificate() -> dict:
             f"The 12-configuration family is rebuilt twice -- independently and "
             f"by AST-extracting the pinned 885 primary's own "
             f"{', '.join(ext['nodes_extracted'])} -- and the two agree "
-            f"site-for-site (digest {d_mine[:16]}).  Every per-configuration row "
-            f"matches the pinned 885 runner cache "
-            f"({len(mismatches)} mismatches), and all "
+            f"site-for-site (digest {d_mine[:16]}).  All 8 fields of all "
+            f"{len(cached_rows)} per-configuration rows in the pinned 885 "
+            f"runner cache are recomputed and matched "
+            f"({len(mismatches)} mismatches); the digest the 885 CHECKER "
+            f"published for the same family is reproduced "
+            f"({published == d_mine}); and all "
             f"{len(reproduced)} headline numbers the 885 RECEIPT states about "
             f"this family are reproduced exactly ({repro_ok}).  Results "
             f"therefore compose with Cycle 885."),
         "pass": (d_mine == d_theirs and ext["all_required_found"]
                  and not mismatches and repro_ok and stated
+                 and len(cached_rows) == len(FAMILY)
                  and SINGLE_AT_ORIGIN["sites"] == ((0, 0, 0),)),
     }
 

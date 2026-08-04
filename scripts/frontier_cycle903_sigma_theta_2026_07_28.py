@@ -218,13 +218,23 @@ def pins_certificate() -> dict:
             for tag, _label in LINEAGE_PROBES:
                 if tag.lower() in low:
                     hits[tag].append(f"{d}/{n}")
+    # The three IDENTIFYING probes are the ones that would find the 871
+    # artifact.  The two GENERIC probes are kept because they would catch a
+    # differently-named bridge-pricing artifact; their matches are reported in
+    # full so the reader can see they are other lanes, not this lineage.
+    IDENTIFYING = {"cycle871", "blockG2", "bridge_pricing"}
     lineage = [{
         "probe": tag,
         "label": label,
+        "role": "identifying" if tag in IDENTIFYING else "generic",
         "present": bool(hits[tag]),
         "matches": hits[tag][:8],
         "match_count": len(hits[tag]),
     } for tag, label in LINEAGE_PROBES]
+    ident_hits = sum(len(hits[t]) for t, _ in LINEAGE_PROBES
+                     if t in IDENTIFYING)
+    generic_hits = {t: hits[t] for t, _ in LINEAGE_PROBES
+                    if t not in IDENTIFYING}
 
     return {
         "name": "A_PINS_AND_871_LINEAGE",
@@ -234,14 +244,20 @@ def pins_certificate() -> dict:
         "lineage_files_scanned": total,
         "lineage_probes": lineage,
         "lineage_absent": [r["probe"] for r in lineage if not r["present"]],
+        "identifying_probe_hits": ident_hits,
+        "generic_probe_matches": {k: v[:8] for k, v in generic_hits.items()},
         "disclosure": (
             "The cycle-871 / blockG2 bridge-pricing artifact is NOT on this "
-            f"branch: {total} filenames were scanned across "
-            f"{len(scan_dirs)} directories and no probe matched a 871/blockG2 "
-            "bridge-pricing runner or receipt.  The dimension statement this "
-            "cycle needs is therefore REBUILT from the Gate-B notes' own "
-            "rows (certificate G), not inherited.  Nothing downstream of this "
-            "runner cites 871 as a source."),
+            f"branch.  {total} filenames were scanned across "
+            f"{len(scan_dirs)} directories.  The three IDENTIFYING probes "
+            f"(cycle871, blockG2, bridge_pricing) returned {ident_hits} hits "
+            "in total.  The two GENERIC probes did match files, and every one "
+            "of them belongs to a different lane (the yt operational "
+            "source-action attempt, and dm/sigma-hierarchy runners) or is "
+            "this runner itself -- none is the 871 bridge pricing.  The "
+            "dimension statement this cycle needs is therefore REBUILT from "
+            "the Gate-B notes' own rows (certificate E), not inherited, and "
+            "nothing downstream of this runner cites 871 as a source."),
         "pass": (not bad) and total > 0,
     }
 
@@ -1299,14 +1315,21 @@ def planted_barrier_certificate(inc: dict) -> dict:
               if r["barrier"] == "dilate_k1"][0]["theta_dependent_configs"])
     slit_set = set(out[0]["theta_dependent_configs"])
     design_met = slit_set > k1          # strictly richer than dilate_k1
-    core_intact = len(k0 & k1 & slit_set & set(
-        out[1]["theta_dependent_configs"])) == 0
+    # The core must be recomputed over the FULL declared containment family
+    # PLUS the plants -- intersecting only a subset would flatter the claim.
+    cont_sets = [set(r["theta_dependent_configs"]) for r in inc["rows"]
+                 if r["is_containment_barrier"]]
+    plant_sets = [set(p["theta_dependent_configs"]) for p in out
+                  if p["is_containment_barrier"]]
+    extended_core = set.intersection(*(cont_sets + plant_sets))
+    core_intact = len(extended_core) == 0
     return {
         "name": "K_PLANTED_BARRIER_FALSIFIER",
         "plants": out,
         "slit_design_intent": "strictly richer incidence than dilate_k1",
         "slit_design_met": design_met,
         "slit_incidence_between_k1_and_k0": k1 <= slit_set <= k0,
+        "extended_core_over_family_plus_plants": sorted(extended_core),
         "invariant_core_survives_the_plants": core_intact,
         "finding": (
             f"The slit barrier -- a containment barrier OUTSIDE the declared "

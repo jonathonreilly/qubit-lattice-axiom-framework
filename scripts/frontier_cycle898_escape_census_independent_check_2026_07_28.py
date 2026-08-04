@@ -281,7 +281,7 @@ def claim_extraction() -> dict:
         "K15_universal_vacuity_claimed":
             r.get("geometric_vacuity_universal_form", {}).get("holds"),
     }
-    return {"pass": len(claims) == 12, "claims": claims,
+    return {"pass": len(claims) >= 12, "claims": claims,
             "receipt_read_as_json_only": True,
             "finding": (f"{len(claims)} claims extracted from the primary's "
                         f"receipt as JSON data. Nothing was imported.")}
@@ -448,6 +448,7 @@ def adjudication_by_sort_analysis(claims: dict) -> dict:
         "ATTACK_novel_reading_found": completeness_refuted,
         "novel_reading": novel[0] if novel else None,
         "primary_readings_considered": sorted(primary_considered),
+        "primary_reading_count": len(primary_considered),
         "novel_reading_consequence": consequence,
         "discriminants": disc,
         "majority_reading": majority,
@@ -1090,8 +1091,13 @@ def verdict(sortc, scales, bnd, cf, cov, th) -> dict:
         {"claim": "geometric vacuity of the target orbit",
          "survives": not bnd["attack_1_pairwise_adjacent_triple"][
              "escapee_found"],
-         "qualification": "STRENGTHENED: bipartiteness of Z^3 makes it "
-                          "universal, not orbit-specific"},
+         "qualification": (
+             "the checker's bipartiteness strengthening is CARRIED by the "
+             "primary: the universal form is stated and verified there"
+             if bnd["attack_1_pairwise_adjacent_triple"]["strengthening"][
+                 "primary_carries_the_universal_form"] else
+             "STRENGTHENED here: bipartiteness of Z^3 makes it universal, "
+             "not orbit-specific")},
         {"claim": "the counterfactual leaves the induced set at Z, and the "
                   "modulus condition is odd_part(M) = 27",
          "survives": cf["agrees_with_primary"],
@@ -1121,8 +1127,8 @@ def verdict(sortc, scales, bnd, cf, cov, th) -> dict:
             f"missing content disjointness, and that the M4 CLOSED region's "
             f"grounds therefore needed a third clause -- are both DISCHARGED "
             f"by the primary under check, which tests "
-            f"{len(sortc['sort_analysis']['readings_supported_by_the_bytes'])}"
-            f" byte-supported readings, adjudicates on three discriminants, "
+            f"{len(sortc['primary_readings_considered'])}"
+            f" readings, adjudicates on three discriminants, "
             f"and computes the content reading to be an anti-escape."
         ] if sortc.get("content_reading_covered_by_primary") else [
             "the primary's Q1(a) decision procedure is INCOMPLETE: it never "

@@ -5,7 +5,11 @@ interrupted: >
   desktop session, its background runners, and the tmp scratchpad worktrees.
   The 866/867 v2 repairs (owner review 2026-08-02) and all wave-1 worker
   specs were recovered from the desktop session transcript on 2026-08-03.
-restarted: 2026-08-03 18:10Z (24h window runs from restart; ends 2026-08-04 ~18:00Z)
+restarted: 2026-08-03 18:10Z (window 1; wound down 2026-08-04 ~08:45Z with
+  queue exhausted)
+window2: 2026-08-04 ~11:45Z -> 2026-08-05 ~11:45Z (owner directive: self-
+  replenishing queue, gravity-lane closure then next-furthest lane, exercise
+  skill on walls, only askable decision = axiom additions at a high bar)
 window_hours: 24
 mode: workhorse
 wave: 4 (final)
@@ -142,6 +146,13 @@ worktrees:
     on B(R)=supp(R) (untested — the named open collapse route); 887 pins
     vendored verbatim with digest verification (sibling-branch deviation
     disclosed)
+  c5-g16: G16 (Cycle 893, the barrier identification B(R)=supp(R) —
+    derive/price/refute; admissible barrier space + Admissibility-axiom
+    fidelity + per-barrier fate of the quadratic gauge break; stacked on
+    G15 tip 33d72586f4) — running
+  c5-g17: G17 (Cycle 894, the interface attack — vendor 878 event space
+    onto the G lineage; five admissible weightings vs the IF sheet;
+    SELECTION/NARROWING/NO-GO/TYPE-MISMATCH; stacked on G15 tip) — running
 backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
   the 876 checker) — commits-only or next campaign; not PR-worthy alone per
   cluster-cap doctrine

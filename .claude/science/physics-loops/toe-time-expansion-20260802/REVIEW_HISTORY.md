@@ -386,3 +386,34 @@ remains on them.
 - Axiom-ask bar: the exercise itself assessed the ask NOT EARNED
   (four route families, three never attempted, must fail first) —
   consistent with the owner's required-and-minimal bar; on record.
+
+## Cycle 895 t-retirement (blockG18, PR #5957) — 2026-08-04
+
+- Supervisor review: the affine structural theorem makes the census
+  exact; the verdict publishes BOTH criteria (dissolved on choice,
+  not on the stricter one) and the worker did not force it; the four
+  self-found primary defects (incl. the falsifier's inverted sign)
+  recorded in a dedicated commit.
+- Checker: ZERO refutations; the dangerous-direction attack (retired
+  rows off-grid, 1,098 new rationals to denominator 3,607) broke
+  nothing; needle attack adjudicated 304 loose extras to zero; 8/8
+  teeth.
+- Science movers: the landed family IS the always-lawful six (t-
+  independent by construction); 880's blind-locus theorem grows to
+  every t != 0; the two {+1}-only rows re-addressed to the 318
+  route's ledger; (1,2,0) provenance corrected (enters via 880, not
+  876). The #5931 owner surface reduces to the exclusion t != 0.
+- BACKLOG CLOSED (the three grading-consuming scripts priced).
+- Cluster-cap (19th gravity-family PR): **OPEN** — decision-surface
+  dissolution + backlog closure + theorem growth.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
+LANE-CLOSURE LEDGER (gravity, restated post-895/896): remaining:
+(1) the 897 target-integrity fork (RUNNING) — may retire SL1b as
+wrongly-posed; (2) the 898 M2+M4 escape census (RUNNING) — completes
+the selection question's coverage; (3) Gate-B harmonic repair attack;
+(4) the bridge scalar (= sigma, shared per 896); (5) theta-incidence
+barrier question (small); (6) P2 kernel-coordinate attack (feeds
+GBW1b's interface). The former owner surfaces: #5931 -> one exclusion
+(t != 0), science closed; scope clause + window conventions ->
+registered-convention rows, science closed.

@@ -163,10 +163,15 @@ worktrees:
     P2 kernel coordinate IRREDUCIBLE (P1 first buys nothing); Phi sized
     540/4,260 rationals; caveat: 878 side consistency-rebuild (863 dep
     absent), stated loudly
-  c5-g18: G18 (Cycle 895, t-choice RETIREMENT as derivation — complete
-    grading-consumer census + exact t-dependence classification over the
-    lawful segment; prices the three backlog scripts too; stacked on G15
-    tip) — running
+  c5-g18: blockG18 SHIPPED as PR #5957 — Cycle 895 the t-CHOICE DISSOLVES
+    (choice criterion; both criteria published): lawfulness exactly AFFINE
+    (A + tB, A = sector trace; partition 6/84/60/1146, always-lawful six =
+    the landed family); 29 rows -> 19 retired / 10 sensitive (exact
+    witness sets) / 1 broken; rows_requiring_an_exact_choice_of_t EMPTY —
+    residue = the EXCLUSION t != 0 on two rows; backlog CLOSED (316
+    BROKEN_OFF_UNIT / 325 structurally T_UNIFORM / 876-checker priced);
+    880's blind-locus theorem GROWS to all t != 0; #5931 surface now
+    carries one exclusion, not a menu
   c5-g19: blockG19 SHIPPED as PR #5956 — Cycle 896 both audit flags
     CLOSED: Flag A = clause-label slip (bijection; readout-half dim 1
     recomputed; counter-hypothesis unsupported); Flag B = three-chart
@@ -193,9 +198,14 @@ worktrees:
     N=3 degeneracy census; the T7 semigroup repair; two banked
     discharges; admitted-observation inputs quarantined and disclosed;
     stacked on G15 tip) — running
-backlog: the three unpriced grading-consuming scripts (cycle316, cycle325,
-  the 876 checker) — commits-only or next campaign; not PR-worthy alone per
-  cluster-cap doctrine
+  c5-g21: G21 (Cycle 898, the M2+M4 escape census — the two families
+    T1/T7 never covered: the additivity-disjointness adjudication from
+    bytes + the gluing-defect ideal or its counterfactual price + the
+    exhaustive native-involution census + the coverage theorem; stacked
+    on G15 tip) — running
+backlog: CLOSED by Cycle 895 (PR #5957) — all three grading-consuming
+  scripts priced (316 BROKEN_OFF_UNIT; 325 structurally T_UNIFORM with one
+  sensitive control; 876-checker forced-(1,2,0))
   c5-baxis: blockB1 SHIPPED as PR #5930 — B-AXIS discharge map (6 at-scope /
     5 open / 1 permanent); premise NOT promoted; full-corpus law 1328/1328
     with residue 229 named; hermetic double-pinned evidence

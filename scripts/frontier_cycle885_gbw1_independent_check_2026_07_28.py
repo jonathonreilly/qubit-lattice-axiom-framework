@@ -336,6 +336,27 @@ def family_fingerprint(fam) -> list:
 GENERATOR_NODES = ("_lcg", "make_config", "build_family")
 
 
+def requirements_dict(tree) -> dict:
+    """The REQUIREMENTS mapping of a parsed runner, read off the AST.
+
+    Values are implicitly-concatenated string literals, so they never appear
+    verbatim in the raw source; they have to be read as AST constants on BOTH
+    sides for a wording comparison to mean anything.
+    """
+    out = {}
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.Assign):
+            continue
+        for t in node.targets:
+            if isinstance(t, ast.Name) and t.id == "REQUIREMENTS" and \
+                    isinstance(node.value, ast.Dict):
+                for k, v in zip(node.value.keys, node.value.values):
+                    if isinstance(k, ast.Constant) and isinstance(v,
+                                                                  ast.Constant):
+                        out[k.value] = v.value
+    return out
+
+
 def extract_primary_family() -> dict:
     src = read_text(PRIMARY_PATH)
     tree = ast.parse(src, filename=PRIMARY_PATH)
@@ -785,30 +806,28 @@ def attack_B(fam) -> dict:
                 and audit["wip_sha256"] == WIP_BLOB_SHA256)
             text = data.decode("utf-8")
             tree = ast.parse(text)
-            declared, harness_computes, req4_text = [], False, None
-            for node in ast.walk(tree):
-                if isinstance(node, ast.Assign):
-                    for t in node.targets:
-                        if isinstance(t, ast.Name) and t.id == "REQUIREMENTS" \
-                                and isinstance(node.value, ast.Dict):
-                            declared = [k.value for k in node.value.keys
-                                        if isinstance(k, ast.Constant)]
-                            for k, v in zip(node.value.keys, node.value.values):
-                                if isinstance(k, ast.Constant) and \
-                                        k.value == "REQ4_permanence_monotone" \
-                                        and isinstance(v, ast.Constant):
-                                    req4_text = v.value
-                if isinstance(node, ast.Constant) and \
-                        node.value == "REQ4_permanence_monotone":
-                    harness_computes = True
+            wip_reqs = requirements_dict(tree)
+            landed_reqs = requirements_dict(
+                ast.parse(read_text(PRIMARY_PATH), filename=PRIMARY_PATH))
+            declared = sorted(wip_reqs)
+            harness_computes = any(
+                isinstance(n, ast.Constant)
+                and n.value == "REQ4_permanence_monotone"
+                for n in ast.walk(tree))
+            req4_text = wip_reqs.get("REQ4_permanence_monotone")
             audit["wip_REQUIREMENTS_keys"] = declared
+            audit["landed_REQUIREMENTS_keys"] = sorted(landed_reqs)
             audit["REQ4_declared_in_wip_requirements"] = (
-                "REQ4_permanence_monotone" in declared)
+                "REQ4_permanence_monotone" in wip_reqs)
             audit["REQ4_evaluated_by_wip_harness"] = harness_computes
             audit["wip_REQ4_declaration_text"] = req4_text
             audit["wip_REQ4_text_identical_to_landed"] = (
                 req4_text is not None
-                and req4_text in read_text(PRIMARY_PATH))
+                and req4_text == landed_reqs.get("REQ4_permanence_monotone"))
+            audit["requirement_keys_identical_wip_vs_landed"] = (
+                declared == sorted(landed_reqs))
+            audit["requirement_texts_identical_wip_vs_landed"] = (
+                wip_reqs == landed_reqs)
             # the FILTER itself (admissible/refuted rivals) -- present in WIP?
             audit["filter_symbols_in_wip"] = sorted(
                 s for s in ("admissible_rivals", "refuted_rivals",
@@ -824,18 +843,27 @@ def attack_B(fam) -> dict:
         audit["git_show_ok"] = False
         audit["error"] = repr(exc)
     audit["verdict"] = (
-        "REQ4 was a DECLARED requirement in the interrupted draft, with the "
-        "identical wording, and the draft's own harness already computed it; "
-        "what the repair commit added was the FILTER that acts on the already-"
-        "computed result. The requirement is therefore NOT outcome-motivated. "
-        "The draft's PROSE, however, asserted both rivals were "
-        "permanence-monotone while its own harness said otherwise, and the "
-        "draft capped the retraction count at 6, so the 24/35 number only "
-        "became visible after the repair."
+        "NOT OUTCOME-MOTIVATED.  REQ4 is a DECLARED requirement of the "
+        "interrupted draft (draft requirement keys: "
+        f"{audit.get('wip_REQUIREMENTS_keys')}), its wording is byte-identical "
+        f"to the landed one (identical="
+        f"{audit.get('wip_REQ4_text_identical_to_landed')}; whole requirement "
+        f"set identical={audit.get('requirement_texts_identical_wip_vs_landed')}"
+        "), and the draft's own harness already computed it.  None of the "
+        "filter's symbols "
+        f"({audit.get('filter_symbols_in_wip')} found) existed in the draft, so "
+        "what the repair added was the FILTER acting on an already-declared, "
+        "already-computed requirement -- not the requirement.  Two caveats "
+        "stated exactly: the draft's PROSE asserted both rivals satisfied every "
+        "requirement including permanence-monotonicity "
+        f"(observed={audit.get('wip_prose_called_both_rivals_monotone')}) while "
+        "its own harness said otherwise, and the draft capped the retraction "
+        f"count at {audit.get('wip_capped_req4_count_at')}, so the 24/35 figure "
+        "only became visible once the cap was lifted."
         if audit.get("REQ4_declared_in_wip_requirements")
-        else "REQ4 does NOT appear in the draft's declared requirements: the "
-             "filter rule is OUTCOME-MOTIVATED and the boundary-shell "
-             "refutation must be discounted.")
+        else "OUTCOME-MOTIVATED.  REQ4 does NOT appear in the draft's declared "
+             "requirements, so it first appears with the filter that kills the "
+             "rival; the boundary-shell refutation must be discounted.")
 
     row("C3", "B", "req4_nested_pairs", pairs)
     row("C3", "B", "w1_req4_failures", w1["req4_failures"])

@@ -1249,6 +1249,7 @@ def reachable_set_certificate(r_by_w: dict[int, set[Fraction]]) -> dict:
             "degree_gap_g": g,
             "values_reachable_as_exact_gth_roots": len(hits),
             "target_reachable_at_this_gap": TARGET_ALPHA in hits,
+            "bound_relative": True,
         })
     return {
         "theorem": (
@@ -1326,6 +1327,17 @@ def v3_census_certificate(base: set[Fraction]) -> dict:
             "values_at_this_gap": len(hits),
             "minus_three_reachable": -3 in vals,
             "target_at_this_gap": TARGET_ALPHA in hits,
+            # Every reachability answer at a gap is relative to the declared
+            # alphabet.  A NEGATIVE row here says "not reachable within the
+            # declared alphabet", never "not reachable".  A wider alphabet can
+            # only ADD reachable values, so negatives here are the fragile
+            # rows and are flagged as such rather than stated as structural.
+            "bound_relative": True,
+            "scope_of_this_row": (
+                f"within the declared alphabet only: atom set at matrix power "
+                f"cap {MATRIX_POWER_CAP}, word bound {WORD_BOUND_W}, height "
+                f"bound {HEIGHT_BOUND_H}. A negative on this row is NOT a "
+                f"structural impossibility claim."),
         })
     # The concrete witness at the tightest level.
     witness = None
@@ -1374,6 +1386,13 @@ def v3_census_certificate(base: set[Fraction]) -> dict:
                 f"{witness[0]} = {witness[1]} over {witness[2]} = "
                 f"{witness[3]}" if witness else None),
         },
+        "negative_rows_are_bound_relative": (
+            "Every 'not reachable at gap g' row above holds WITHIN THE "
+            "DECLARED ALPHABET and nowhere else. The independent checker "
+            "widens the alphabet and finds the target reachable at gap 3 as "
+            "well; that is expected and it moves the census's verdict further "
+            "negative, not less. No row here should be read as a structural "
+            "impossibility."),
         "consequence_for_the_census": (
             "The 3-adic route does NOT close the shape. This is emitted "
             "whether or not it flatters the block: the expected sharpest "

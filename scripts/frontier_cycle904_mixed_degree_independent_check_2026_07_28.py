@@ -449,6 +449,7 @@ def generators_certificate(receipt: dict) -> dict:
         "values_the_primary_does_not_have": [q(v) for v in new_values[:40]],
         "values_the_primary_does_not_have_count": len(new_values),
         "example_atoms_carrying_them": new_named[:24],
+        "refuted": refutes_bound,
         "verdict": (
             "BOUND REFUTED -- the primary's declared native space is strictly "
             "smaller than a justifiable reading of the same supplied "
@@ -567,6 +568,7 @@ def reachable_certificate(receipt: dict) -> dict:
         "primary_target_claim": levels.get(1, {}).get("target_2_27_reachable"),
         "target_claim_agrees": (
             target_in_mine == levels.get(1, {}).get("target_2_27_reachable")),
+        "refuted": not (agree and target_in_mine),
         "verdict": (
             "NOT REFUTED -- an independent algorithm reproduces the count and "
             "the target membership exactly"
@@ -623,6 +625,7 @@ def height_bound_attack(receipt: dict) -> dict:
             found[0]["power_cap"] if found else None),
         "new_values_reachable_count": len(new_values),
         "new_values_sample": [q(v) for v in new_values[:24]],
+        "refuted": bool(found and new_values),
         "verdict": (
             "H REFUTED AS A UNIVERSAL BOUND -- native evaluations above H "
             "exist at higher matrix powers and they reach values the "
@@ -680,6 +683,11 @@ def v3_attack(receipt: dict) -> dict:
         })
     primary_gap = {row["degree_gap_g"]: row
                    for row in receipt.get("v3_gap_structure", [])}
+    # A numeric disagreement on a NEGATIVE row is expected whenever the
+    # checker widens the alphabet -- reachability only grows.  What matters is
+    # whether the primary stated the row as bound-relative or as structural.
+    unqualified_rows = [
+        g for g, row in primary_gap.items() if not row.get("bound_relative")]
     disagreements = []
     for row in gap_rows:
         g = row["gap"]
@@ -721,29 +729,40 @@ def v3_attack(receipt: dict) -> dict:
         "checker_gap_table": gap_rows,
         "disagreements_with_the_primary_gap_table": gap_disagreements,
         "core_v3_claims_hold": core_claims_hold,
+        "primary_gap_rows_not_marked_bound_relative": unqualified_rows,
+        "statement_error": bool(unqualified_rows and gap_disagreements),
+        "refuted": (not core_claims_hold) or bool(
+            unqualified_rows and gap_disagreements),
         "verdict": (
-            "V3 CORE CLAIMS NOT REFUTED; GAP-3 SUB-CLAIM REFUTED"
-            if core_claims_hold and gap_disagreements else
-            ("V3 CLAIM NOT REFUTED -- independent valuation bookkeeping "
-             "agrees on every row"
-             if core_claims_hold else
-             "V3 CLAIM REFUTED -- the core claims did not survive")),
+            "V3 CLAIMS REFUTED -- the core claims did not survive"
+            if not core_claims_hold else
+            ("V3 STATEMENT ERROR -- a gap row disagrees and the primary did "
+             "not mark it bound-relative"
+             if unqualified_rows and gap_disagreements else
+             ("V3 CLAIMS NOT REFUTED -- the core claims survive and every "
+              "numeric gap disagreement falls on a row the primary correctly "
+              "marked bound-relative"
+              if gap_disagreements else
+              "V3 CLAIMS NOT REFUTED -- independent bookkeeping agrees on "
+              "every row"))),
         "what_survives": (
             "Both core claims survive and get harder under the checker's "
             f"reading: the atom v3 range widens to {my_v3}, so the brief's "
             "{-1, 0, 1} premise is not merely false but badly false, and "
             "v3 = -3 is reachable at word length 1 with many witnesses."
         ),
-        "what_is_refuted": (
-            "The primary's gap-3 row says the target is NOT reachable at "
-            "degree gap 3 and that v3 = -3 is out of reach there. Under the "
-            "checker's wider atom set both become reachable: alpha^3 = "
-            "(2/27)^3 needs a coefficient of valuation -9, which the wider "
-            "set supplies. The primary stated a BOUND-RELATIVE fact as though "
-            "it were structural. It should be restated as 'not reachable at "
-            "gap 3 WITHIN THE DECLARED ALPHABET'. The correction runs in the "
-            "widening direction, so it strengthens the census's negative -- "
-            "but it is a genuine error of statement and is logged as one."
+        "the_numeric_disagreement": (
+            "The primary's gap-3 row reports the target NOT reachable at "
+            "degree gap 3 and v3 = -3 out of reach there. Under the checker's "
+            "wider atom set both become reachable: alpha^3 = (2/27)^3 needs a "
+            "coefficient of valuation -9, which the wider set supplies. This "
+            "is the expected direction: widening only adds reachable values. "
+            "It is a REFUTATION only if the primary stated the row as "
+            "structural rather than bound-relative -- which is exactly what "
+            "the `bound_relative` flag on each gap row is checked for. On the "
+            "primary's first draft the flag was absent and this checker "
+            "logged a statement error; the primary now marks every gap row "
+            "bound-relative and names the negative rows as the fragile ones."
         ),
         "residual_negative_that_does_survive": (
             "For every gap g the constraint v3(alpha) = v3(c)/g with v3(c) "
@@ -839,6 +858,7 @@ def fidelity_audit(receipt: dict) -> dict:
         "fdim_family_schema_count": len(fams.get(fdim_fam, [])),
         "target_smuggling_literals_in_census_machinery": suspicious,
         "smuggling_found": bool(suspicious),
+        "refuted": not (hit_ok and not suspicious),
         "verdict": (
             "FIDELITY ADJUDICATION UPHELD -- the hit survives two extra "
             "scopes (n = 5, 6), the competing-family count survives with a "
@@ -908,6 +928,7 @@ def minimality_attack(receipt: dict) -> dict:
         "rows": rows,
         "claims_broken": len(broken),
         "broken": broken,
+        "refuted": bool(broken),
         "verdict": (
             "MINIMALITY CLAIMS NOT REFUTED -- every one recomputed to the "
             "primary's published value"
@@ -1232,6 +1253,7 @@ def teeth_certificate(receipt: dict) -> dict:
         "teeth_count": len(teeth),
         "teeth_that_bit": bit,
         "teeth_blind": len(teeth) - bit,
+        "refuted": bit != len(teeth),
         "verdict": (
             f"{bit}/{len(teeth)} teeth bit"
             if bit == len(teeth) else
@@ -1268,6 +1290,7 @@ def pins_certificate(receipt: dict) -> dict:
         "upstream_pins_cross_checked": sum(
             1 for r in rows if r["published_by_the_primary"]),
         "any_disagreement": not ok,
+        "refuted": not ok,
         "verdict": ("PINS AGREE" if ok else "PIN DISAGREEMENT -- REFUTATION"),
         "pass": True,
     }
@@ -1352,8 +1375,16 @@ def render(certs: dict) -> str:
         out.append(f"    gap {row['gap']}: v3 range {row['v3_values']}  "
                    f"-3={row['minus_three_reachable']}  target="
                    f"{row['target_at_this_gap']}")
-    out.append(f"  disagreements: {ce['disagreements_with_the_primary_gap_table']}")
-    for line in _wrap(ce["sharpening_the_primary_missed"], 72):
+    out.append(f"  disagreements: "
+               f"{ce['disagreements_with_the_primary_gap_table']}")
+    out.append("  WHAT SURVIVES:")
+    for line in _wrap(ce["what_survives"], 70):
+        out.append(f"    {line}")
+    out.append("  THE NUMERIC DISAGREEMENT:")
+    for line in _wrap(ce["the_numeric_disagreement"], 70):
+        out.append(f"    {line}")
+    out.append("  RESIDUAL NEGATIVE:")
+    for line in _wrap(ce["residual_negative_that_does_survive"], 70):
         out.append(f"    {line}")
     out.append("")
 
@@ -1433,15 +1464,28 @@ def run() -> int:
         "CG_MINIMALITY": certs["CG_MINIMALITY_ATTACK"]["verdict"],
         "CH_TEETH": certs["CH_TEETH"]["verdict"],
     }
-    refuted = [k for k, v in ledger.items() if "REFUTED" in v
-               and "NOT REFUTED" not in v]
+    # Classification comes from each certificate's own computed `refuted`
+    # flag, never from sniffing its verdict string.
+    flag_by_key = {
+        "CA_PIN_AGREEMENT": "CA_PINS",
+        "CB_GENERATOR_BOUND": "CB_INDEPENDENT_GENERATORS",
+        "CC_REACHABLE_SET": "CC_INDEPENDENT_REACHABLE_SET",
+        "CD_HEIGHT_BOUND": "CD_HEIGHT_BOUND_ATTACK",
+        "CE_V3_THEOREM": "CE_V3_ATTACK",
+        "CF_FIDELITY": "CF_FIDELITY_AUDIT",
+        "CG_MINIMALITY": "CG_MINIMALITY_ATTACK",
+        "CH_TEETH": "CH_TEETH",
+    }
+    refuted = sorted(k for k, cert_key in flag_by_key.items()
+                     if certs[cert_key].get("refuted"))
     certs["CI_LEDGER"] = {
         "ledger": ledger,
         "claims_refuted": refuted,
         "claims_refuted_count": len(refuted),
         "central_verdict_survives": True,
         "summary": (
-            "Two bound claims are REFUTED and the central verdict is not. The "
+            f"{len(refuted)} claim(s) REFUTED and the central verdict is not. "
+            "The "
             "primary's declared generator space is strictly smaller than a "
             "justifiable reading of the same supplied structure "
             f"({certs['CB_INDEPENDENT_GENERATORS']['checker_atom_count']} "

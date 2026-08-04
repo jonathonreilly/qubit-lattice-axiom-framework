@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed; one API-interruption resume in place before any file existed); the falsifier harness caught the WORKER's own defective plant (repaired the plant, not the machinery \u2014 disclosed); supervisor line-by-line review",
+  "block": "toe-time-blockQ4-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 97.4s; 7/7; zero disagreements; 8/8 teeth; two refinements adopted",
+    "primary": "11/11 PASS, exit 0, 154.7s; restriction gates 51/51"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 4th Q-family PR: answers the identification question with a rank theorem, a capacity decision, a positive cone identification, and two new ledger rows; distinct claim type vs Q3; nothing corollary",
+  "cycles": [
+    907
+  ],
+  "files": {
+    "docs/M6_FAILS_CONE_IDENTIFIES_CYCLE907_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "cf19ffd936043938fbf1af09c84a0b57e79ab0a7",
+      "sha256": "1f653ef71805792b0d856de9c708e2655a7f69e3234b809dc5a60a0f8487e0a0"
+    },
+    "logs/runner-cache/frontier_cycle907_m6_identification_2026_07_28.txt": {
+      "git_blob": "7da3f8f1bd6ef673826ce9d1940ad8f6844e681e",
+      "sha256": "0020d436d79ee38e2ac43b9acca82505f192b9a0c1ec53b40ec79caf70cf6529"
+    },
+    "logs/runner-cache/frontier_cycle907_m6_identification_independent_check_2026_07_28.txt": {
+      "git_blob": "a12ed278c3d2b3598ccae91b8bec88446a9fd55a",
+      "sha256": "a4513e494802ca1d370992c3cf417e9d4fbdab8735d8ea28726fd5c3567c70d2"
+    },
+    "outputs/m6_identification_cycle907_receipt_2026_07_28.json": {
+      "git_blob": "e7eef6eeeb62aeddcdb12417ccd8ec871b9d87a7",
+      "sha256": "d67a967a6226a4e1ed2e0bf1762cb3b544df87e1fe4b07d6399f13ec179086ca"
+    },
+    "outputs/m6_identification_independent_check_cycle907_receipt_2026_07_28.json": {
+      "git_blob": "8586f09ed3346144a830254a38f64db89ad6ed07",
+      "sha256": "0d18a2839f1b57c55b55f0801b05e545a1e5a01cc790972d9583da5b21c0123b"
+    },
+    "scripts/frontier_cycle907_m6_identification_2026_07_28.py": {
+      "git_blob": "70fad3ab7996926a7b543af64f0449a92a9868cd",
+      "sha256": "cfc87a647a8fe87ed97289bb179d4919bb4801731393bbec33006c6cfe348d53"
+    },
+    "scripts/frontier_cycle907_m6_identification_independent_check_2026_07_28.py": {
+      "git_blob": "e15e320212d1897d5127adc71109a823d60490ca",
+      "sha256": "c1e63e43ef4fe4ff4d03412f6c333d5bdf85e71199c8fda41e528376b1194d9b"
+    }
+  },
+  "headline": "THE LANES ARE COMPATIBLE AND THE INTERFACE CANNOT CHOOSE: the 902 object is the pushforward of NO single weighting anywhere (rank-2 theorem, exhibited minor \u2014 BL10: the Born side must supply TWO objects); M6 fails by CAPACITY (8320-quantum x 1419 events < 19003 quanta \u2014 the lane's first decided R_RATIO_FREE); but the CONE identifies: M7/M8 (orbit-ratio, covariant, zero-block) + an explicit total bridge reproduce the 902 table on 80/80 cells at N=1/11 \u2014 identification UNDERDETERMINED (freedom 19,005), not obstructed; M6's failure = 906's unconstrained uniform within-world split; NO SELECTION occurs \u2014 the interface EXCLUDES (BL9: the within-world distribution is the live question); 905's prime targets superseded by capacity; M6 sheet 6-pass/2-fail (IF1 reopens at event level); 7-premise conditionality chain incl. newly named P-EVENT-ORDER",
+  "independence": "cross-context (block-mass vs count-matrix bridge parameterizations reaching the same impossibility \u2014 the checker's by COMPLETE enumeration; out-of-family relaxation probes; 8/8 teeth; zero disagreements)",
+  "note": "docs/M6_FAILS_CONE_IDENTIFIES_CYCLE907_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 97.436,
+    "primary": 154.686
+  }
+}

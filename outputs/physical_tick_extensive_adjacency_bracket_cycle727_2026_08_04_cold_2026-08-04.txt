@@ -1,0 +1,57 @@
+two-tick box: one lattice cell carried through two ticks
+PASS corner count  two-tick 24 one-tick 16
+PASS five-subset census  subsets 42504
+PASS volume spectrum  [(0, 13152), (1, 17280), (2, 9840), (3, 1472), (4, 680), (5, 64), (6, 16)]
+PASS minimal pieces  two-tick 17280 one-tick 2672
+PASS pieces per dissection  24 * boxvol = 48
+charges
+PASS adjacency charge range  (3, 7)
+PASS adjacency spectrum  [(3, 432), (4, 2592), (5, 7488), (6, 4896), (7, 1872)]
+PASS trivial counting bounds  floor 144 ceiling 336
+PASS tick-span charge range  (0, 4)
+PASS tick-span spectrum  [(0, 5344), (1, 1744), (2, 4944), (3, 3040), (4, 2208)]
+PASS tick-span is new at two ticks  identically zero on the one-tick box
+PASS slab-confined count  5344 = 2 * 2672
+PASS seam-crossing count  11936
+PASS slab-confined charge doubles the one-tick spectrum  [(3, 128), (4, 768), (5, 2304), (6, 1536), (7, 608)]
+PASS seam pieces reach the same least charge  least charge 3 on both sides of the split
+PASS tick-span splits along the seam  zero exactly on the slab-confined pieces
+box symmetry, used only to compress the certificate
+PASS proper cubic rotations  24
+PASS group order  24 rotations times the tick relabelling, 48 distinct corner permutations
+PASS piece orbits  364 orbits, 6 of size 16 and 358 of size 48
+PASS adjacency charge is constant on every orbit  one charge per orbit
+sample points, generic by construction and verified generic
+PASS barycentric integers are bounded  no corner sees a barycentric integer above 6 on any minimal piece
+PASS weights are generic by construction and near-uniform  spread 1.142857 below 1.15
+PASS point family  one point per orbit carried around the group, 17472 distinct
+PASS points per orbit  every orbit carries 48 points
+PASS no sample point lands on a piece boundary  boundary incidences 0 over all 17280 pieces
+PASS membership is constant on every orbit  17280 rows carry 342 distinct
+witnesses, certified piece by piece with exhibited separating normals
+PASS least-charge witness is a dissection  48 pieces, every one of volume one, volumes summing to the box
+PASS least-charge witness pieces are pairwise interior-disjoint  1128 of 1128 pairs carry an exhibited separating normal
+PASS least-charge witness charge  adjacency charge 216
+PASS least-charge witness respects the seam  tick-span charge zero on every piece
+PASS greatest-charge witness is a dissection  48 pieces, every one of volume one, volumes summing to the box
+PASS greatest-charge witness pieces are pairwise interior-disjoint  1128 of 1128 pairs carry an exhibited separating normal
+PASS greatest-charge witness charge  adjacency charge 256
+PASS greatest-charge witness respects the seam  tick-span charge zero on every piece
+the one-tick box, measured here so the doubling is not a supplied number
+PASS one-tick least-charge witness is a dissection  24 pieces, every one of volume one, volumes summing to the box
+PASS one-tick least-charge witness pieces are pairwise interior-disjoint  276 of 276 pairs carry an exhibited separating normal
+PASS one-tick least-charge witness charge  adjacency charge 108
+PASS one-tick greatest-charge witness is a dissection  24 pieces, every one of volume one, volumes summing to the box
+PASS one-tick greatest-charge witness pieces are pairwise interior-disjoint  276 of 276 pairs carry an exhibited separating normal
+PASS one-tick greatest-charge witness charge  adjacency charge 128
+PASS the tick-span charge vanishes identically on the one-tick box  zero on all 2672 minimal one-tick pieces
+PASS both ends of the bracket double  216 and 256 against 108 and 128
+integer certificates, arithmetic over every one of the 17280 minimal pieces
+PASS floor certificate holds on every minimal piece  least slack 0, equality on 13392 of 17280
+PASS floor certificate value  48 times 9 over 2 is exactly 216.000000
+PASS ceiling certificate holds on every minimal piece  least slack 0, equality on 6336 of 17280
+PASS ceiling certificate value  48 times 1536 over 288 is exactly 256.000000
+PASS the denominator law the two ends obey  48 points per orbit, so 216 wants an even denominator and 256 a multiple of three
+PASS both certificates are met by a witness  the bracket over all minimal-volume corner dissections is exactly [216, 256]
+PASS the bracket sits strictly inside the counting bounds  144 below and 336 above
+TOTAL: PASS=49 FAIL=0

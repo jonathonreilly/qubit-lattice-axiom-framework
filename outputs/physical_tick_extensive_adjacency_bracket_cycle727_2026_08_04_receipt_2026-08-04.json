@@ -1,0 +1,131 @@
+{
+  "box": {
+    "corners_one_tick": 16,
+    "corners_two_tick": 24,
+    "five_corner_subsets": 42504,
+    "minimal_pieces_one_tick": 2672,
+    "minimal_pieces_two_tick": 17280,
+    "pieces_per_dissection": 48,
+    "volume_spectrum": {
+      "0": 13152,
+      "1": 17280,
+      "2": 9840,
+      "3": 1472,
+      "4": 680,
+      "5": 64,
+      "6": 16
+    }
+  },
+  "bracket_one_tick": [
+    108,
+    128
+  ],
+  "bracket_two_tick": [
+    216,
+    256
+  ],
+  "certificates": {
+    "ceiling": {
+      "denominator": 288,
+      "equality_pieces": 6336,
+      "least_slack": 0,
+      "numerator_total": 1536,
+      "pieces": 17280,
+      "value": "256.000000"
+    },
+    "floor": {
+      "denominator": 2,
+      "equality_pieces": 13392,
+      "least_slack": 0,
+      "numerator_total": 9,
+      "pieces": 17280,
+      "value": "216.000000"
+    }
+  },
+  "charges": {
+    "adjacency_range": [
+      3,
+      7
+    ],
+    "adjacency_spectrum": {
+      "3": 432,
+      "4": 2592,
+      "5": 7488,
+      "6": 4896,
+      "7": 1872
+    },
+    "counting_bounds": [
+      144,
+      336
+    ],
+    "tick_span_range": [
+      0,
+      4
+    ],
+    "tick_span_spectrum": {
+      "0": 5344,
+      "1": 1744,
+      "2": 4944,
+      "3": 3040,
+      "4": 2208
+    }
+  },
+  "gates": {
+    "fail": 0,
+    "pass": 49
+  },
+  "sample_points": {
+    "barycentric_bound": 6,
+    "boundary_incidences": 0,
+    "distinct_membership_rows": 342,
+    "points": 17472,
+    "points_per_orbit": 48,
+    "weight_spread": "1.142857"
+  },
+  "seam_split": {
+    "seam_crossing": 11936,
+    "slab_confined": 5344,
+    "slab_confined_adjacency_spectrum": {
+      "3": 128,
+      "4": 768,
+      "5": 2304,
+      "6": 1536,
+      "7": 608
+    }
+  },
+  "symmetry": {
+    "group_order": 48,
+    "orbit_sizes": {
+      "16": 6,
+      "48": 358
+    },
+    "piece_orbits": 364,
+    "proper_cubic_rotations": 24
+  },
+  "witnesses": {
+    "one_tick_greatest": {
+      "charge": 128,
+      "piece_pairs": 276,
+      "pieces": 24,
+      "separating_normals": 276
+    },
+    "one_tick_least": {
+      "charge": 108,
+      "piece_pairs": 276,
+      "pieces": 24,
+      "separating_normals": 276
+    },
+    "two_tick_greatest": {
+      "charge": 256,
+      "piece_pairs": 1128,
+      "pieces": 48,
+      "separating_normals": 1128
+    },
+    "two_tick_least": {
+      "charge": 216,
+      "piece_pairs": 1128,
+      "pieces": 48,
+      "separating_normals": 1128
+    }
+  }
+}

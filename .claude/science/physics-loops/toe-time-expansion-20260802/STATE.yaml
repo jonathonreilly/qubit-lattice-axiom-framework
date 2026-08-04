@@ -213,11 +213,15 @@ worktrees:
     anchor); M3 = an amplifier (C898-T6); coverage 5 closed / 5 open,
     ONE unpriced shape (non-involution mixed-degree); every M4
     ingredient PRICED; 882 cert-E 13-vs-14 flagged for audit
-  c5-g22: G22 (Cycle 899, the FAMILY BINDING — SL1b's live successor:
-    the construction's native K at C3 AND C4 via 888's group-theoretic
-    route; the retained L-face arithmetic at C4; the discriminating
-    verdict (F_dim 3/16 vs F_res 5/16 at C4); the fitted-value family
-    scan; the off-endpoint completeness table) — running
+  c5-g22: blockG22 SHIPPED as PR #5960 — Cycle 899 the FAMILY BINDING
+    answered: 883's five-fold ambiguity is a PHANTOM (all five forms =
+    (n-1)/n^2 on the locus); the construction binds to F_dim (complete
+    table; K(C4)=3/16; n=2 already discriminates); the retained L-face
+    is F_res (derived); the divergence = WHICH SPACE the record reads
+    (N=3 the unique isomorphic length) — ONE identification, decidable
+    at C4, falsification route named; no-family result quantified
+    (denominator >= 7e8); checker honesty bound: 402 forms hit 2/9 at
+    C3 with 10 distinct C4 values
   c5-g23: G23 (Cycle 900, the Gate-B HARMONIC REPAIR attack — the forced
     zero-parameter core built exactly; the consumer delta table (landed
     vs core); REPAIR-VIABLE-with-patch-list or REPAIR-BLOCKED-with-

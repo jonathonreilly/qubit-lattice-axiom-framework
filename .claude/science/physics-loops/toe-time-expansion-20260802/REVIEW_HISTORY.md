@@ -459,3 +459,23 @@ registered-convention rows, science closed.
 - Cluster-cap (21st gravity-family PR): **OPEN** — coverage
   completion with four kills + three theorems + exact pricing.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 899 family binding (blockG22, PR #5960) — 2026-08-04
+
+- Supervisor review: the phantom-ambiguity identity checked (an exact
+  locus identity, the block's load-bearing simplification); the
+  space-level cause (prime-length definedness; the N=3 isomorphism)
+  verified in the receipt; the honesty bound adopted into the claim
+  scope.
+- Checker: 12/12 survive; the recipe-identifiability attack (the
+  crux) independently recovered the same seven expressions; 9/9
+  teeth; the 402-form bound is the sharpest adversarial output.
+- The readout obligation's positive half now rests on ONE
+  identification (which space the record reads), decidable at C4.
+  With 897 + 898 + 899: target excluded, escapes closed/priced,
+  binding answered-up-to-one-identification. SL1b as originally
+  posed is fully transformed.
+- Cluster-cap (22nd gravity-family PR): **OPEN** — phantom
+  dissolution + binding table + space-level cause + decidable
+  residual.
+- Local disposition: **pass** (bounded_theorem; audit pending).

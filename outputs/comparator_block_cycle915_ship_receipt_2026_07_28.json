@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); C2 machinery AST-extracted from the verified 914 primary (declared); C3 scope disclosed (tier 1; tier 2 priced); supervisor line-by-line review",
+  "block": "toe-time-blockM2-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 358s; 10/10 survive, 0 refuted; 8/8 teeth",
+    "primary": "exit 0, 550s; restriction gates value-for-value incl. the C=0.060394807 figure and the CHECK-02 panel to 1e-18; falsifier probe passes"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "2nd M-family PR \u2014 below the evaluator threshold; noted for the 3rd",
+  "cycles": [
+    915
+  ],
+  "files": {
+    "docs/COMPARATOR_RECOVERED_THETA_MISATTRIBUTED_CYCLE915_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "39dec3ca9035590a63f032fe2e9b6f51c560a89f",
+      "sha256": "9ca5c99cc7f5b761ef27fbcf56ce7ad9fa1ef49709019bc47224d8f982dcbe06"
+    },
+    "logs/runner-cache/frontier_cycle915_comparator_independent_check_2026_07_28.txt": {
+      "git_blob": "cea682c3a8ef0f11937b34d49ea8e42b1e0cdfe8",
+      "sha256": "63a117b7ab8cfa2de9c11fa7ac0d7e4da6ab009f57712babcb58808af64d92a2"
+    },
+    "logs/runner-cache/frontier_cycle915_comparator_recovery_2026_07_28.txt": {
+      "git_blob": "d8ccce36f4a7c890364ba9db28aa7f86a0859a79",
+      "sha256": "4b9fb330005b721bae1c8495e6c0fa88842b9b31de2e07f0b55d46c132d79009"
+    },
+    "outputs/comparator_independent_check_cycle915_receipt_2026_07_28.json": {
+      "git_blob": "e9523a193148caefc55a501caa9fa939365c2238",
+      "sha256": "9fb3b2d6e494767ab81354f0163580b5d2e5718e3c81f201bd1dae7d067c0156"
+    },
+    "outputs/comparator_recovery_cycle915_receipt_2026_07_28.json": {
+      "git_blob": "9931c298a5917eb90de290cbb82c237508c9e692",
+      "sha256": "d7d27ce19d231624415db1e71ee77eae16b5175dd403b403c254b38fb171b0a7"
+    },
+    "scripts/frontier_cycle915_comparator_independent_check_2026_07_28.py": {
+      "git_blob": "9b220084386105c415ec87f947ea52cc0b630f12",
+      "sha256": "4693ff6b14418b068b2b702cbd645f0105706900420bdf90e9bb419d324da2f5"
+    },
+    "scripts/frontier_cycle915_comparator_recovery_2026_07_28.py": {
+      "git_blob": "94bd41b8486b9af2ab96a4781dc729df0b888e1f",
+      "sha256": "b1b575f58bd3af24705c1afbe74a4f1e2dfe8e02a251df642e44b7a4e4f4d06c"
+    }
+  },
+  "headline": "ALL SIX absent predecessors RECOVERED (never-landed \u2014 the 2026-07-19 landing carried only the window layer; absent set actually 8+; landing recommendations emitted, 2 HIGH); 914's THETA-FLOOR LABEL CORRECTED (the d=1 note states NO theta \u2014 it is the structural negative 'branching environment geometry required'; the 0.20 floor is from the never-landed 2026-07-08 DEPOSITION comparator under a DIFFERENT baseline; THREE theta conventions share one name; citation rule emitted); lambda=0.02 CERTIFIES (Jt=0.6, R_ind=6 \u2014 all six fragments; window extends below 0.05; no lower boundary; one-step-margin caveat); late grid DECAYS (R_ind=0 at Jt=1.5/2.0 both lambdas) with THE measurement: at Jt=2.0 theta RETURNS to ~0.50 while nothing certifies \u2014 THETA ALONE DOES NOT TRACK CERTIFICATION",
+  "independence": "cross-context (dual-method landing status on all six recoveries; every theta-floor quote checker-verified verbatim in recovered bytes; the 13-row lambda=0.02 table triple-implemented at 2e-12/1.4e-12; 8/8 teeth incl. fabricated-provenance and fabricated-quote)",
+  "note": "docs/COMPARATOR_RECOVERED_THETA_MISATTRIBUTED_CYCLE915_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 358,
+    "primary": 550
+  }
+}

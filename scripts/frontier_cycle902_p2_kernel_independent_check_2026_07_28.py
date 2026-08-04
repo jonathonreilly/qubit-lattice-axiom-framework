@@ -11,8 +11,11 @@ deliberately different means:
     the Chebyshev polynomials itself, and does all linear algebra there.  A
     rank that is an artifact of one basis will not survive the other.
   * DIFFERENT ELIMINATION.  The primary uses reduced row echelon form over Q.
-    This checker uses BAREISS fraction-free Gaussian elimination over Z, after
-    clearing denominators.  No rational division occurs in the pivot loop.
+    This checker clears denominators once and then runs FRACTION-FREE integer
+    Gaussian elimination with content removal: no rational division ever
+    occurs in the pivot loop, no pivot is normalized to 1, and there is no
+    back-substitution.  A rank that depends on rational normalization will not
+    survive it.
   * DIFFERENT UNKNOWN ORDER.  nu is the FIRST unknown here and the atoms and
     degrees are indexed in reverse.  Pivot order therefore differs throughout.
   * DIFFERENT LATTICE ALGORITHM.  The atoms of the window lattice are built by
@@ -34,7 +37,7 @@ ATTACKS
   A3  BRIDGE.  Every grid point is re-derived from the amplitude field itself,
       never from a spectrum.
 
-TEETH.  Eight deliberately planted defects, each of which MUST be caught.  A
+TEETH.  Nine deliberately planted defects, each of which MUST be caught.  A
 tooth that fails to bite is reported as a checker defect.
 
 The checker exits 0 whether or not the primary's claims survive.  Its verdict
@@ -339,14 +342,21 @@ def _gcd(a, b):
     return abs(a)
 
 
-def bareiss_rank(rows, ncols) -> int:
-    """Fraction-free Gaussian elimination.  No rational division in the pivot
-    loop: every intermediate stays an exact integer."""
+def fraction_free_rank(rows, ncols) -> int:
+    """Fraction-free Gaussian elimination over Z with CONTENT REMOVAL.
+
+    Denominators are cleared once, up front; after that the pivot loop is pure
+    integer cross-multiplication, and each new row is divided by the gcd of its
+    own entries.  No rational division ever occurs, and no divisibility is
+    assumed -- dividing a row by its own content is exact by construction and
+    preserves rank.  This is deliberately NOT the primary's rational reduced
+    row echelon form: it never normalizes a pivot to 1, it never
+    back-substitutes, and it eliminates downward only.
+    """
     M = _to_integer_rows([r[:ncols] for r in rows])
     if not M:
         return 0
     nrows = len(M)
-    prev = 1
     r = 0
     for col in range(ncols):
         p = None
@@ -364,19 +374,50 @@ def bareiss_rank(rows, ncols) -> int:
             if factor == 0:
                 continue
             row_i, row_r = M[i], M[r]
-            # Bareiss: the division by the previous pivot is always exact
-            M[i] = [(pivot * row_i[j] - factor * row_r[j]) // prev
-                    for j in range(ncols)]
-        prev = pivot
+            new = [pivot * row_i[j] - factor * row_r[j] for j in range(ncols)]
+            g = 0
+            for x in new:
+                g = _gcd(g, x)
+            if g > 1:
+                new = [x // g for x in new]
+            M[i] = new
         r += 1
         if r == nrows:
             break
     return r
 
 
+def rational_rref_rank(rows, ncols) -> int:
+    """A SECOND, deliberately different rank route, used only to validate this
+    checker's own fraction-free solver on the real system matrices.  A rank
+    routine that is quietly wrong -- for example one whose divisions are not
+    exact -- disagrees with this immediately."""
+    M = [[Fraction(x) for x in r[:ncols]] for r in rows]
+    r = 0
+    for col in range(ncols):
+        p = None
+        for i in range(r, len(M)):
+            if M[i][col] != 0:
+                p = i
+                break
+        if p is None:
+            continue
+        M[r], M[p] = M[p], M[r]
+        pv = M[r][col]
+        M[r] = [x / pv for x in M[r]]
+        for i in range(len(M)):
+            if i != r and M[i][col] != 0:
+                f = M[i][col]
+                M[i] = [M[i][j] - f * M[r][j] for j in range(ncols)]
+        r += 1
+        if r == len(M):
+            break
+    return r
+
+
 def stats(rows, nunk) -> dict:
-    ra = bareiss_rank([r[:nunk] for r in rows], nunk)
-    rg = bareiss_rank([r[:nunk + 1] for r in rows], nunk + 1)
+    ra = fraction_free_rank([r[:nunk] for r in rows], nunk)
+    rg = fraction_free_rank([r[:nunk + 1] for r in rows], nunk + 1)
     return {"rank": ra, "augmented_rank": rg, "consistent": ra == rg,
             "kernel_dimension": nunk - ra}
 
@@ -529,7 +570,7 @@ def rebuild() -> dict:
 def minimality_attack(primary_claim: int) -> dict:
     """A1.  Hunt a SMALLER fibre.  Two hunts, reported separately."""
     rows_M = [spec_win(cfg, n) for n in HOLDING for cfg in FAMILY]
-    rank_family = bareiss_rank(rows_M, D + 1)
+    rank_family = fraction_free_rank(rows_M, D + 1)
 
     # hunt 1: family-wide -- does any proper subset of the degrees carry the
     # whole realized family?  Every subset is tried, smallest first.
@@ -552,7 +593,7 @@ def minimality_attack(primary_claim: int) -> dict:
     if surv:
         sub_rows = [spec_win(cfg, n) for n in HOLDING for cfg in FAMILY
                     if cfg["name"] in surv]
-        sub_rank = bareiss_rank(sub_rows, D + 1)
+        sub_rank = fraction_free_rank(sub_rows, D + 1)
         for k in range(1, D + 2):
             for sub in combinations(range(D + 1), k):
                 if all(all(r[d] == 0 for d in range(D + 1) if d not in sub)
@@ -752,7 +793,7 @@ def teeth(tables, mono_rank) -> list:
     # 3 hardcoded rank
     probes = [([[1, 0], [0, 1]], 2), ([[1, 2], [2, 4]], 1),
               ([[0, 0], [0, 0]], 0), ([[3, 1, 4], [1, 5, 9], [2, 6, 5]], 3)]
-    got = [bareiss_rank(m, len(m[0])) for m, _ in probes]
+    got = [fraction_free_rank(m, len(m[0])) for m, _ in probes]
     out.append({"tooth": "T3_HARDCODED_RANK",
                 "planted": "rank probes of known rank 2, 1, 0, 3",
                 "expected": [e for _, e in probes], "observed": got,
@@ -844,6 +885,29 @@ def teeth(tables, mono_rank) -> list:
                 "mismatched_configs": mism,
                 "detected": not mism,
                 "exit_if_live": 1})
+
+    # 9 solver self-validation on the REAL system matrices
+    solver_mism = []
+    for c in FAMILY:
+        for use in ({"BRIDGE"}, {"BRIDGE", "IF1", "IF5"}):
+            rws, nunk, _, _, _ = build(c, use)
+            a = fraction_free_rank([r[:nunk] for r in rws], nunk)
+            b = rational_rref_rank(rws, nunk)
+            if a != b:
+                solver_mism.append({"config": c["name"],
+                                    "fraction_free": a, "rref": b})
+    out.append({"tooth": "T9_SOLVER_SELF_VALIDATION",
+                "planted": ("every real system matrix ranked twice, by this "
+                            "checker's fraction-free elimination and by an "
+                            "independent rational RREF route"),
+                "systems_cross_ranked": 2 * len(FAMILY),
+                "mismatches": solver_mism,
+                "detected": not solver_mism,
+                "note": ("this tooth exists because a rank routine whose "
+                         "divisions are not exact reports a SMALLER rank and "
+                         "silently manufactures kernel dimensions; probes of "
+                         "small known-rank matrices do not catch it"),
+                "exit_if_live": 1})
     return out
 
 
@@ -854,7 +918,7 @@ def run() -> int:
     prim = json.loads(read_text(PRIMARY_RECEIPT))
     tables = rebuild()
     rows_M = [spec_win(cfg, n) for n in HOLDING for cfg in FAMILY]
-    mono_rank = bareiss_rank(rows_M, D + 1)
+    mono_rank = fraction_free_rank(rows_M, D + 1)
 
     a1 = minimality_attack(prim["Q1_minimal_fibre_dimension"])
     a2 = opposite_direction_attack(prim["Q2_joint_satisfiable_configs"],
@@ -911,8 +975,9 @@ def run() -> int:
         },
         "blocklist_hits": len(BLOCK.hits),
         "independence": (
-            "monomial basis against the primary's Chebyshev basis; Bareiss "
-            "fraction-free integer elimination against its rational RREF; nu "
+            "monomial basis against the primary's Chebyshev basis; "
+            "fraction-free integer elimination with content removal against "
+            "its rational reduced row echelon form; nu "
             "indexed first and atoms/degrees reversed, so pivot order "
             "differs throughout; window-lattice atoms built by iterative "
             "block refinement rather than signature bucketing; path-length "
@@ -955,7 +1020,7 @@ def run() -> int:
         print(f"  {'OK ' if c['agree'] else 'BAD'} {c['claim']:<42} "
               f"primary={c['primary']}  checker={c['checker']}")
 
-    print(f"\nPER-CONFIG RANKS / KERNELS (Bareiss, monomial basis)")
+    print(f"\nPER-CONFIG RANKS / KERNELS (fraction-free, monomial basis)")
     print(f"  {'config':<16} {'BRIDGE rank/ker':>18} "
           f"{'ALL_FIVE rank/ker':>19} {'nu!=0':>7}")
     b = {r["config"]: r for r in tables["BRIDGE_ONLY"]["rows"]}

@@ -473,11 +473,21 @@ def tail_periods(mask, periods, min_events=MIN_STABLE_EVENTS,
         # clear the repeat floor, so the sweep is complete.  This prunes work, it
         # never narrows the search: the pruned periods are exactly the ones the
         # repeat test below would reject unconditionally.
-        if min_repeats * period > last:
+        need = min_repeats * period
+        if need > last:
             break
-        span = last - period
-        if span < 0:
+        # Cheap exact prefilter.  A surviving reading needs transient <= last -
+        # 2P, which is the same statement as "no shift-exactness break anywhere
+        # in [last - 2P, last - P]".  That is decided inside a window of 2P + 1
+        # ticks, so it costs O(P) rather than O(last).  This is a speed-up, not a
+        # narrowing: the full least-transient computation below is still run,
+        # unchanged, on every candidate that clears it, and the prefilter rejects
+        # exactly the candidates that computation would have rejected.
+        low = last - need
+        window = (mask >> low) & ((1 << (need + 1)) - 1)
+        if (window ^ (window >> period)) & ((1 << (period + 1)) - 1):
             continue
+        span = last - period
         broken = (mask ^ (mask >> period)) & ((1 << (span + 1)) - 1)
         transient = broken.bit_length()
         if last - transient < min_repeats * period:

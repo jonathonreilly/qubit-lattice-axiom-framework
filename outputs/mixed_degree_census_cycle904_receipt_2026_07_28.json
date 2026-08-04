@@ -970,7 +970,8 @@
       "toe-time-blockG21": 0
     },
     "self_excluded_paths": [
-      "scripts/frontier_cycle904_mixed_degree_census_2026_07_28.py"
+      "scripts/frontier_cycle904_mixed_degree_census_2026_07_28.py",
+      "scripts/frontier_cycle904_mixed_degree_independent_check_2026_07_28.py"
     ],
     "self_exclusion_rule": "paths containing any of ['cycle904', '904_mixed_degree', 'mixed_degree_census', 'mixed_degree_independent'] are this cycle's own deliverables and are excluded; without the rule the scan counts its own footprint as sibling evidence",
     "sibling_artifacts_present": false
@@ -1727,6 +1728,7 @@
   "title": "the mixed-degree census: pricing the last unpriced shape",
   "v3_gap_structure": [
     {
+      "bound_relative": true,
       "degree_gap_g": 1,
       "minus_three_reachable": true,
       "reachable_v3_of_alpha": [
@@ -1748,10 +1750,12 @@
         7,
         8
       ],
+      "scope_of_this_row": "within the declared alphabet only: atom set at matrix power cap 2, word bound 3, height bound 1000000. A negative on this row is NOT a structural impossibility claim.",
       "target_at_this_gap": true,
       "values_at_this_gap": 558
     },
     {
+      "bound_relative": true,
       "degree_gap_g": 2,
       "minus_three_reachable": true,
       "reachable_v3_of_alpha": [
@@ -1765,10 +1769,12 @@
         3,
         4
       ],
+      "scope_of_this_row": "within the declared alphabet only: atom set at matrix power cap 2, word bound 3, height bound 1000000. A negative on this row is NOT a structural impossibility claim.",
       "target_at_this_gap": true,
       "values_at_this_gap": 154
     },
     {
+      "bound_relative": true,
       "degree_gap_g": 3,
       "minus_three_reachable": false,
       "reachable_v3_of_alpha": [
@@ -1778,6 +1784,7 @@
         1,
         2
       ],
+      "scope_of_this_row": "within the declared alphabet only: atom set at matrix power cap 2, word bound 3, height bound 1000000. A negative on this row is NOT a structural impossibility claim.",
       "target_at_this_gap": false,
       "values_at_this_gap": 70
     }

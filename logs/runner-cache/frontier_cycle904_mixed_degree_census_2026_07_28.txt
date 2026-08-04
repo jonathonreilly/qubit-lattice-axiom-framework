@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle904_mixed_degree_census_2026_07_28.py
-runner_sha256: 3795fba88c67c8ce82a22864dfe691360ef6fcdac55dbd841b4c16795c6375da
+runner_sha256: f1f20266fafac80686310630933a7a0e78d97740152086b009053599460818f6
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 4.862
+elapsed_sec: 4.29
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -384,4 +384,4 @@ SIBLING (CYCLE 898) HANDOFF -- CROSS-BRANCH, NOT VERIFIED HERE
 CYCLE 904 CERTIFICATES: ALL PASS
 ==============================================================================
 
-controls: deterministic=True runtime_under_limit=True stdout=22156B cache=121e0bdd4ced6a7f
+controls: deterministic=True runtime_under_limit=True stdout=22156B cache=eca423d5358ea518

@@ -64,6 +64,30 @@ WHAT IS ATTACKED, IN ORDER.
 
 This checker exits 0 whether or not the primary's claims survive.  Its job is
 to report, not to gate.
+
+REPAIR LOG.  The first full run of this checker reported C892-T2 REFUTED, with
+42 violations of the form "same amplitude intersection, different Z", all on
+the configuration `sparse_b`.  Both defects were in the CHECKER, and both were
+found by reading its own output rather than by trusting it:
+
+  1.  CROSS-CONFIGURATION KEY COLLISION.  The generated sweep's fingerprint
+      dictionary was created once, OUTSIDE the loop over configurations, so an
+      amplitude intersection arising on a late configuration collided with an
+      identical intersection from an earlier one and compared their Z values
+      -- two different configurations, therefore two legitimately different
+      Z's.  The 42 "violations" were phantom: the fingerprint is only ever
+      claimed to determine Z AT FIXED R.  Keyed per configuration, the same
+      7192 generated windows produce ZERO violations.  This is recorded rather
+      than quietly corrected because a refutation that dissolves under repair
+      is exactly the kind of result that should stay visible.
+
+  2.  FIXED-BOX SCAN IN THE RANK FILTER.  The new rank/threshold window
+      scanned the fixed amplitude grid for candidate sites, so a configuration
+      translated near the grid wall had its window clipped and the map failed
+      equivariance -- an artifact of the SCAN, not of the map, which made the
+      window non-admissible and therefore untestable.  The scan now runs over
+      the support's own unit dilation, which provably contains every site with
+      three record neighbours.
 """
 
 from __future__ import annotations
@@ -580,14 +604,20 @@ def w_rank_filter(cfg):
     The neighbour count is a content-only, rotation-invariant local statistic;
     thresholding a monotone statistic is monotone; the explicit union with the
     support makes containment structural.
+
+    The candidate set is the support's own unit dilation, NOT the fixed
+    amplitude grid: a site with three record neighbours is necessarily within
+    one step of a record, so this loses nothing -- and scanning a FIXED box
+    would silently clip the window whenever a translated configuration left
+    the box, which shows up as an equivariance failure that is an artifact of
+    the scan rather than of the map.  See the repair log.
     """
     supp = set(cfg["sites"])
-    extra = set()
-    for x in GRID:
-        c = sum(1 for st in STEPS
-                if (x[0] + st[0], x[1] + st[1], x[2] + st[2]) in supp)
-        if c >= 3:
-            extra.add(x)
+    cand = {(s[0] + st[0], s[1] + st[1], s[2] + st[2])
+            for s in supp for st in STEPS} | supp
+    extra = {x for x in cand
+             if sum(1 for st in STEPS
+                    if (x[0] + st[0], x[1] + st[1], x[2] + st[2]) in supp) >= 3}
     return N887["packaged"](supp | extra, N887["barycentre"](cfg))
 
 
@@ -794,10 +824,15 @@ def adversarial_cert(part):
         if failed:
             live_bad.append(c["name"])
 
-    # ---- (iii) a generated sweep of containment-holding windows
+    # ---- (iii) a generated sweep of containment-holding windows.
+    #      The amplitude-intersection fingerprint is keyed PER CONFIGURATION.
+    #      Keying it globally would compare Z values from different
+    #      configurations and manufacture 42 phantom violations -- see the
+    #      repair log at the foot of this file.
     generated, gen_viol, gen_collide = 0, [], []
-    seen: dict = {}
+    intersection_classes = 0
     for c in FAM:
+        seen: dict = {}
         base = set(supp_map(c)["set"])
         live = sorted(amplitude_support(c) - base)
         pool = live[:12] + sorted(GRID - set(live) - base)[:6]
@@ -808,26 +843,28 @@ def adversarial_cert(part):
                 key = tuple(sorted(W & amplitude_support(c)))
                 zsig = tuple(q(norm_on(c, t, W)) for t in THETAS)
                 if key in seen and seen[key] != zsig:
-                    gen_viol.append({"config": c["name"],
-                                     "same_amplitude_intersection_different_Z":
-                                         True})
-                if key not in seen:
-                    seen[key] = zsig
+                    gen_viol.append({
+                        "config": c["name"],
+                        "kind": "same amplitude intersection, different Z",
+                        "intersection_size": len(key)})
+                seen.setdefault(key, zsig)
                 for t in THETAS[:2]:
                     if norm_on(c, t, W) < norm_on(c, t, base):
                         gen_viol.append({"config": c["name"], "theta": q(t),
                                          "kind": "monotonicity"})
-            if generated > 40000:
-                break
-
-    # collisions: DIFFERENT amplitude intersection but IDENTICAL Z signature
-    inv: dict = {}
-    for k, v in seen.items():
-        inv.setdefault(v, []).append(k)
-    for v, ks in inv.items():
-        if len(ks) > 1:
-            gen_collide.append({"distinct_intersections_sharing_a_Z_signature":
-                                len(ks)})
+        intersection_classes += len(seen)
+        # collisions WITHIN this configuration: DIFFERENT amplitude
+        # intersection but IDENTICAL Z signature.  Not a refutation -- Z is a
+        # sum, so distinct site sets can share a total -- but it bounds how
+        # much of the intersection the Z signature actually resolves.
+        inv: dict = {}
+        for k, v in seen.items():
+            inv.setdefault(v, []).append(k)
+        for v, ks in inv.items():
+            if len(ks) > 1:
+                gen_collide.append({
+                    "config": c["name"],
+                    "distinct_intersections_sharing_a_Z_signature": len(ks)})
 
     # ---- (iv) C892-T1: hunt amplitude inside supp(R) beyond the seed
     t1_bad = []
@@ -868,9 +905,10 @@ def adversarial_cert(part):
             "windows_generated": generated,
             "violations": gen_viol[:EXHIBIT_CAP],
             "violation_count": len(gen_viol),
-            "distinct_intersection_classes": len(seen),
-            "Z_signature_collisions_across_distinct_intersections":
+            "distinct_intersection_classes": intersection_classes,
+            "Z_signature_collisions_within_a_configuration":
                 len(gen_collide),
+            "collision_exhibits": gen_collide[:EXHIBIT_CAP],
             "reading": (
                 "Every generated window contains supp(R), so every one is "
                 "containment-holding by construction.  The sweep looks for "

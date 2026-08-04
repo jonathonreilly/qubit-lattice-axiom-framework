@@ -222,10 +222,17 @@ worktrees:
     at C4, falsification route named; no-family result quantified
     (denominator >= 7e8); checker honesty bound: 402 forms hit 2/9 at
     C3 with 10 distinct C4 values
-  c5-g23: G23 (Cycle 900, the Gate-B HARMONIC REPAIR attack — the forced
-    zero-parameter core built exactly; the consumer delta table (landed
-    vs core); REPAIR-VIABLE-with-patch-list or REPAIR-BLOCKED-with-
-    obstruction; the new kernel-shape residual) — running
+  c5-g23: blockG23 SHIPPED as PR #5963 — Cycle 900 REPAIR-VIABLE (16-row
+    patch list, 0 unrepairable): the core certified as exact algebra
+    (1/6 at every radius; 119-site harmonicity; unique over Q); THEOREM:
+    the 1/6 IS mu=0 (the core is the massless slice — the repair
+    presupposes mu, residual 10 -> 9 only); epsilon elimination
+    STRENGTHENS (no (epsilon, mu^2) pair rescues the landed ansatz);
+    radial monotonicity DIES (the core is not a function of r — the
+    derived anisotropy is real; repairs by restatement); screened
+    consumers repair via the screened lattice Green function;
+    kernel-shape now [mu, sigma, theta]; checker landed a real
+    census-blindness refutation mid-cycle (applied)
   c5-g24: blockG24 SHIPPED as PR #5961 — Cycle 901 DECIDED-F_DIM: the
     record reads CONTENT-SPACE. Embedding test honestly fails to convict
     (C901-T2a: L-face embedding-invariant everywhere); the violation is

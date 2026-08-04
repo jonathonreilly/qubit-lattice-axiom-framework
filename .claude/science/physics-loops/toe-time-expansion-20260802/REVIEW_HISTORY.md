@@ -508,3 +508,21 @@ kernel-coordinate attack (feeds GBW1b's interface); (5) the one
 unpriced mixed-degree shape (from 898). The readout obligation's
 positive half is science-complete; registered conventions + the t!=0
 exclusion are owner-surface rows with no derivation work left.
+
+## Cycle 900 harmonic repair (blockG23, PR #5963) — 2026-08-04
+
+- Supervisor review: the exact-algebra layer verified (three
+  construction routes agreeing; transcendental absolutes explicitly
+  fenced); the mu theorem's screened-solve verification at four
+  masses; the census repair (311 -> 469 after the checker's real
+  refutation) disclosed with the anti-staleness fix.
+- Checker: 7/7 survive on two fully independent routes; the torus
+  normalization identity at every L; 8/8 teeth incl. the
+  mu-overcredit trap.
+- Science movers: 884's "zero-parameter" core re-priced (massless by
+  fiat — R3's mu freedom stands); the landed ansatz closed for good
+  (unit GCD without harmonicity); the radial-form row corrected (the
+  lattice is not round — 884's derived anisotropy is real).
+- Cluster-cap (24th gravity-family PR): **OPEN** — repair closure
+  with two strengthening theorems and honest accounting.
+- Local disposition: **pass** (bounded_theorem; audit pending).

@@ -65,6 +65,58 @@ All cited primaries are SHA-256 and git-blob pinned, read as text/AST/JSON only,
 and blocked from import by a meta-path firewall.  Every certified number is
 rebuilt here with stdlib exact arithmetic; no floating point enters any
 certified quantity.
+
+(E) REPAIR LOG (review pass on the interrupted draft; all defects found by
+    re-reading the file against its own outputs):
+
+    1.  RECEIPT LOCATION.  The receipt is written to `outputs/`; the draft
+        wrote it to `logs/runner-cache/`, which is reserved for run caches.
+
+    2.  PIN INTEGRITY.  `preflight_pins()` now runs before any science and
+        exits 2 naming any pinned path that does not resolve, and every pins
+        row carries an `exists` flag that the A_PINS gate requires.  A pinned
+        input can no longer be silently skipped.  Each row also reports
+        `same_basename_elsewhere_in_tree`, because two DISTINCT artifacts on
+        this branch share the basename `gbs2_kernel_window_cycle884_
+        receipt_2026_07_28.json`: the Cycle 884 PRIMARY receipt in
+        `logs/runner-cache/` (pinned here, and the only one carrying the
+        `sharpest_missing_lemma` / chart-dimension fields this cycle reads)
+        and a Cycle 884 block-note receipt in `outputs/`.  The pin is by full
+        path plus sha256 plus git blob, never by basename.
+
+    3.  UNCAPPED FAILURE COUNTS.  `evaluate_map` used the capped exhibit list
+        as its failure COUNT, so any map with more than six failures was
+        reported as having exactly six.  Counts are now complete and only the
+        exhibit lists are capped, with the cap reported.
+
+    4.  ADMISSIBILITY-FILTERED UNIQUENESS.  The draft counted the boundary-
+        shell reading as a rival witnessing non-uniqueness while its own REQ4
+        evaluation refuted it.  A rival now witnesses non-uniqueness only if
+        it satisfies every declared requirement; the boundary shell RETRACTS
+        under permanence and is refuted, which SELECTS the support window and
+        removes the binary locus choice from the residual.
+
+    5.  COMPUTED CENTRE CLASS.  The centre coordinate's classification was a
+        hard-coded literal; it is now computed from whether two admissible
+        equivariant centre conventions actually split.
+
+    6.  STRESS COVERAGE.  Every map that feeds the verdict is stressed (W1c
+        and W2 were previously unstressed), and a cardinality-PRESERVING
+        `move_site` perturbation was added: add/drop perturbations can be
+        refused on a counting argument alone.
+
+    7.  N ROBUSTNESS.  A degenerate-window control reads the same terminal
+        normalization on the support locus, which IS the barrier, showing the
+        readout collapses to a theta-independent seed there -- so the
+        theta-dependence is not an artifact of the locus choice.
+
+    8.  CONTROLS VISIBLE.  `O_CONTROLS` gated the exit code but was never
+        rendered and never recorded; it is now a printed certificate, and the
+        receipt carries the per-certificate pass map.
+
+    9.  IDEMPOTENT CENSUS.  The lineage census excluded nothing, so its count
+        changed between a first run and a re-run once the receipt existed; it
+        now excludes the runner's own receipt and publishes its scan globs.
 """
 from __future__ import annotations
 
@@ -94,9 +146,34 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-CACHE = ROOT / "logs" / "runner-cache" / "gbw1_record_window_cycle885_receipt_2026_07_28.json"
+# Receipts live in outputs/.  logs/runner-cache/ is reserved for run caches.
+CACHE = ROOT / "outputs" / "gbw1_record_window_cycle885_receipt_2026_07_28.json"
+CACHE_BASENAME = CACHE.name
 
 BLOCKLISTED_MODULES = tuple(Path(path).stem for path in AUDIT_INPUT_PATHS)
+
+# Directories scanned for basename collisions among pinned inputs, and for the
+# lineage census in certificate C.
+SCAN_DIRS = (
+    ("scripts", "*.py"),
+    ("docs", "*.md"),
+    ("logs/runner-cache", "*"),
+    ("outputs", "*.json"),
+)
+
+
+def preflight_pins() -> None:
+    """Every pinned input must EXIST before any science runs.
+
+    A silently skipped pin is the failure mode this guard exists to prevent:
+    the run must die loudly, with a nonzero exit, naming the missing path.
+    """
+    missing = [p for p in AUDIT_INPUT_PATHS if not (ROOT / p).is_file()]
+    if missing:
+        sys.stderr.write(
+            "FATAL: pinned input(s) missing; refusing to run.\n"
+            + "".join(f"  MISSING PIN: {p}\n" for p in missing))
+        raise SystemExit(2)
 
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
@@ -502,17 +579,40 @@ def map_IMPOSTOR_fixed_annulus(cfg) -> dict:
 # --------------------------------------------------------------------------
 # certificate A: pins
 # --------------------------------------------------------------------------
+def _basename_collisions(path: str) -> list:
+    """Other files in the scanned tree carrying the SAME basename.
+
+    Two distinct artifacts on this branch share the basename
+    `gbs2_kernel_window_cycle884_receipt_2026_07_28.json` -- the Cycle 884
+    PRIMARY receipt (in logs/runner-cache/) and the Cycle 884 block-note
+    receipt (in outputs/).  Only the former carries the fields this cycle
+    reads.  The collision is reported as data so no reader can mistake one for
+    the other, and the pin is by full path + sha256 + git blob, never basename.
+    """
+    name = Path(path).name
+    out = []
+    for sub, pat in SCAN_DIRS:
+        for p in (ROOT / sub).glob(pat):
+            rel = str(p.relative_to(ROOT))
+            if p.name == name and rel != path:
+                out.append(rel)
+    return sorted(out)
+
+
 def pins_certificate() -> dict:
     rows = []
     for path in AUDIT_INPUT_PATHS:
+        exists = (ROOT / path).is_file()
         data = _read_bytes(path)
         rows.append({
             "path": path,
+            "exists": exists,
             "bytes": len(data),
             "sha256": sha256(data).hexdigest(),
             "sha256_matches": sha256(data).hexdigest() == EXPECTED_SHA256[path],
             "git_blob": git_blob_sha1(path),
             "git_blob_matches": git_blob_sha1(path) == EXPECTED_GIT_BLOBS[path],
+            "same_basename_elsewhere_in_tree": _basename_collisions(path),
         })
 
     axioms = norm(_read_text(AUDIT_INPUT_PATHS[0]))
@@ -537,13 +637,21 @@ def pins_certificate() -> dict:
     gbw1_declared = any("GBW1_record_determined_window" == c for c in consts)
 
     ok = (
-        all(r["sha256_matches"] and r["git_blob_matches"] for r in rows)
+        len(rows) == len(AUDIT_INPUT_PATHS)
+        and all(r["exists"] for r in rows)
+        and all(r["sha256_matches"] and r["git_blob_matches"] for r in rows)
         and all(axiom_hits.values()) and all(dyn_hits.values())
         and all(iface_hits.values()) and c883_hit
         and all(c884_hits.values()) and window_matches and gbw1_declared
     )
     return {
         "rows": rows,
+        "all_pins_present": all(r["exists"] for r in rows),
+        "pinned_input_count": len(AUDIT_INPUT_PATHS),
+        "missing_pins_are_fatal": (
+            "preflight_pins() runs before any science and exits 2 naming any "
+            "pinned path that does not resolve; a pin can never be silently "
+            "skipped, and every row's existence is additionally gated here"),
         "axiom_needles_present": axiom_hits,
         "dynamics_needles_present": dyn_hits,
         "interface_needles_present": iface_hits,
@@ -681,12 +789,13 @@ def formalization_certificate() -> dict:
 # certificate C: which record-facing primaries are actually on this branch
 # --------------------------------------------------------------------------
 def lineage_certificate() -> dict:
+    # The runner's OWN receipt is excluded from its own census, so the census
+    # does not change between a first run and a re-run of the same commit.
     tracked = sorted(
         str(p.relative_to(ROOT))
-        for p in list((ROOT / "scripts").glob("*.py"))
-        + list((ROOT / "docs").glob("*.md"))
-        + list((ROOT / "logs" / "runner-cache").glob("*"))
-        + list((ROOT / "outputs").glob("*.json"))
+        for sub, pat in SCAN_DIRS
+        for p in (ROOT / sub).glob(pat)
+        if p.name != CACHE_BASENAME
     )
     rows = []
     for label, tag in LINEAGE_PROBES:
@@ -719,6 +828,8 @@ def lineage_certificate() -> dict:
     }
     return {
         "tracked_file_count_scanned": len(tracked),
+        "scan_globs": [f"{sub}/{pat}" for sub, pat in SCAN_DIRS],
+        "self_excluded_from_census": CACHE_BASENAME,
         "rows": rows,
         "present": present,
         "absent": absent,
@@ -830,10 +941,30 @@ def _shift_point(p, shift):
     return tuple(p[i] + shift[i] for i in range(3))
 
 
+EXHIBIT_CAP = 6
+
+
 def evaluate_map(fn, has_centre: bool, has_radii: bool) -> dict:
-    """Run REQ2/REQ3/REQ4/REQ5-nonconstancy on a candidate map, exactly."""
-    equivariance_failures = []
+    """Run REQ2/REQ3/REQ4/REQ5-nonconstancy on a candidate map, exactly.
+
+    The failure COUNTS are complete.  Only the exhibit LISTS are capped, and
+    the cap is reported alongside them, so `..._failures` always means "how
+    many failures there are" and never "how many were kept".
+    """
+    equivariance_failures = 0
+    equivariance_exhibits = []
     checked = 0
+
+    def _note(kind, cfg, mat, shift):
+        nonlocal equivariance_failures
+        equivariance_failures += 1
+        if len(equivariance_exhibits) < EXHIBIT_CAP:
+            equivariance_exhibits.append({
+                "config": cfg["name"], "kind": kind,
+                "rotation": [list(r) for r in mat],
+                "shift": list(shift),
+            })
+
     for cfg in FAMILY:
         base = fn(cfg)
         for mat in ROT24:
@@ -844,34 +975,21 @@ def evaluate_map(fn, has_centre: bool, has_radii: bool) -> dict:
                 want_set = tuple(sorted(
                     _shift_point(apply_mat(mat, s), shift) for s in base["set"]))
                 if tuple(sorted(moved["set"])) != want_set:
-                    if len(equivariance_failures) < 6:
-                        equivariance_failures.append({
-                            "config": cfg["name"], "kind": "set",
-                            "rotation": [list(r) for r in mat],
-                            "shift": list(shift),
-                        })
+                    _note("set", cfg, mat, shift)
                     continue
                 if has_centre:
                     want_c = _shift_point(
                         apply_mat_frac(mat, base["centre"]), shift)
                     if tuple(moved["centre"]) != tuple(want_c):
-                        if len(equivariance_failures) < 6:
-                            equivariance_failures.append({
-                                "config": cfg["name"], "kind": "centre",
-                                "rotation": [list(r) for r in mat],
-                                "shift": list(shift),
-                            })
+                        _note("centre", cfg, mat, shift)
                         continue
                 if has_radii:
                     if (moved["a2"], moved["b2"]) != (base["a2"], base["b2"]):
-                        if len(equivariance_failures) < 6:
-                            equivariance_failures.append({
-                                "config": cfg["name"], "kind": "radii",
-                                "rotation": [list(r) for r in mat],
-                                "shift": list(shift),
-                            })
+                        _note("radii", cfg, mat, shift)
     # REQ4: permanence monotonicity along the depth filtration
-    monotone_failures = []
+    monotone_failures = 0
+    monotone_exhibits = []
+    monotone_checks = 0
     for cfg in FAMILY:
         levels = sorted(set(d for _, d in cfg["depth"]))
         prev = None
@@ -879,12 +997,15 @@ def evaluate_map(fn, has_centre: bool, has_radii: bool) -> dict:
             sub_sites = [s for s, d in cfg["depth"] if d <= lv]
             sub = make_config(cfg["name"] + f"@{lv}", sub_sites)
             cur = set(fn(sub)["set"])
-            if prev is not None and not prev <= cur:
-                if len(monotone_failures) < 6:
-                    monotone_failures.append({
-                        "config": cfg["name"], "level": lv,
-                        "lost_sites": len(prev - cur),
-                    })
+            if prev is not None:
+                monotone_checks += 1
+                if not prev <= cur:
+                    monotone_failures += 1
+                    if len(monotone_exhibits) < EXHIBIT_CAP:
+                        monotone_exhibits.append({
+                            "config": cfg["name"], "level": lv,
+                            "lost_sites": len(prev - cur),
+                        })
             prev = cur
     # REQ5 non-constancy
     distinct_sets = len(set(tuple(sorted(fn(cfg)["set"])) for cfg in FAMILY))
@@ -894,15 +1015,21 @@ def evaluate_map(fn, has_centre: bool, has_radii: bool) -> dict:
             (fn(cfg)["a2"], fn(cfg)["b2"]) for cfg in FAMILY))
     return {
         "equivariance_checks": checked,
-        "equivariance_failures": len(equivariance_failures),
-        "equivariance_failure_exhibits": equivariance_failures,
-        "REQ2_REQ3_equivariant": not equivariance_failures,
-        "permanence_monotonicity_failures": len(monotone_failures),
-        "permanence_monotonicity_exhibits": monotone_failures,
-        "REQ4_permanence_monotone": not monotone_failures,
+        "equivariance_failures": equivariance_failures,
+        "equivariance_failure_exhibits": equivariance_exhibits,
+        "equivariance_exhibits_capped_at": EXHIBIT_CAP,
+        "REQ2_REQ3_equivariant": equivariance_failures == 0,
+        "permanence_monotonicity_checks": monotone_checks,
+        "permanence_monotonicity_failures": monotone_failures,
+        "permanence_monotonicity_exhibits": monotone_exhibits,
+        "permanence_monotonicity_exhibits_capped_at": EXHIBIT_CAP,
+        "REQ4_permanence_monotone": monotone_failures == 0,
         "distinct_set_values_across_family": distinct_sets,
         "distinct_radius_pairs_across_family": distinct_radii,
         "REQ5_nonconstant": distinct_sets > 1,
+        "admissible_REQ2_REQ5": (equivariance_failures == 0
+                                 and monotone_failures == 0
+                                 and distinct_sets > 1),
     }
 
 
@@ -914,7 +1041,31 @@ def W1_certificate() -> dict:
     bdry = evaluate_map(map_W1b_boundary, has_centre=True, has_radii=True)
     altc = evaluate_map(map_W1c_altcentre, has_centre=True, has_radii=True)
 
-    # Do the admissible candidates AGREE?  Uniqueness is the second half.
+    # ---- Which rivals are ADMISSIBLE?  A map that fails a declared
+    # requirement is REFUTED and cannot witness non-uniqueness.  This is
+    # computed, never assumed: the rival's own REQ2-REQ5 evaluation decides.
+    rival_eval = {
+        "W1b_boundary_shell": bdry,
+        "W1c_alternate_centre": altc,
+    }
+    rival_failed_requirements = {}
+    for rname, ev in rival_eval.items():
+        failed = [req for req, okflag in (
+            ("REQ2_REQ3_equivariance", ev["REQ2_REQ3_equivariant"]),
+            ("REQ4_permanence_monotone", ev["REQ4_permanence_monotone"]),
+            ("REQ5_nonconstant", ev["REQ5_nonconstant"]),
+        ) if not okflag]
+        rival_failed_requirements[rname] = failed
+    admissible_rivals = sorted(
+        r for r, f in rival_failed_requirements.items() if not f)
+    refuted_rivals = sorted(
+        r for r, f in rival_failed_requirements.items() if f)
+
+    # Do the candidates AGREE?  Uniqueness is the second half.
+    RIVAL_OF_PAIR = {
+        "supp_vs_boundary": "W1b_boundary_shell",
+        "centre_convention": "W1c_alternate_centre",
+    }
     disagreements = []
     for cfg in FAMILY:
         s, b_, a_ = map_W1_support(cfg), map_W1b_boundary(cfg), map_W1c_altcentre(cfg)
@@ -926,6 +1077,18 @@ def W1_certificate() -> dict:
             disagreements.append({"config": cfg["name"], "pair": "centre_convention",
                                   "supp": [q(s["a2"]), q(s["b2"])],
                                   "other": [q(a_["a2"]), q(a_["b2"])]})
+    live = [d for d in disagreements
+            if RIVAL_OF_PAIR[d["pair"]] in admissible_rivals]
+    dead = [d for d in disagreements
+            if RIVAL_OF_PAIR[d["pair"]] in refuted_rivals]
+
+    # The centre coordinate on its own: do the two equivariant centre
+    # conventions ever differ as POINTS (not merely through the radii)?
+    centre_splits = [
+        cfg["name"] for cfg in FAMILY
+        if tuple(barycentre(cfg)) != tuple(circum_like_centre(cfg))]
+    centre_rival_admissible = "W1c_alternate_centre" in admissible_rivals
+    centre_conventions_agree = not (centre_splits and centre_rival_admissible)
 
     # Does supp(R) actually FILL the annulus its own (a, b) denote?
     fills = []
@@ -968,16 +1131,39 @@ def W1_certificate() -> dict:
                 "is such a function, computed above."),
         },
         "uniqueness": {
-            "candidates_agree": not disagreements,
-            "disagreement_count": len(disagreements),
-            "disagreement_exhibits": disagreements[:6],
+            "rival_failed_requirements": rival_failed_requirements,
+            "admissible_rivals": admissible_rivals,
+            "refuted_rivals": refuted_rivals,
+            "candidates_agree": not live,
+            "disagreement_count": len(live),
+            "disagreement_exhibits": live[:6],
+            "disagreements_with_refuted_rivals_not_counted": len(dead),
+            "refuted_rival_disagreement_exhibits": dead[:3],
+            "centre_convention_splits_on_configs": centre_splits,
+            "centre_conventions_agree": centre_conventions_agree,
             "why_it_fails": (
-                "TWO distinct maps satisfy every requirement and disagree: the "
-                "support reading and the boundary-shell reading, which are "
-                "both equivariant, both content-only, both permanence-"
-                "monotone, and both non-constant.  A third disagreement comes "
-                "from the centre convention (barycentre vs extremal-shell "
-                "barycentre).  Existence is derived; uniqueness is not."),
+                f"Uniqueness is decided ONLY against rivals that themselves "
+                f"satisfy every declared requirement.  Admissible rivals: "
+                f"{admissible_rivals or ['none']}.  Refuted rivals (and the "
+                f"requirement each fails): "
+                f"{ {r: rival_failed_requirements[r] for r in refuted_rivals} }."
+                f"  {len(live)} disagreement(s) survive that filter and "
+                f"{len(dead)} are discarded as disagreements with a refuted "
+                f"map.  The surviving split is the CENTRE convention "
+                f"(barycentre vs extremal-shell barycentre), which differs as "
+                f"a point on {len(centre_splits)}/{len(FAMILY)} "
+                f"configurations.  Existence is derived; uniqueness is not, "
+                f"but the residual is one convention, not a menu."),
+            "boundary_shell_rival_status": (
+                f"REFUTED by REQ4.  The site-boundary shell is equivariant and "
+                f"content-only, but it RETRACTS under permanence: as records "
+                f"accumulate, former boundary sites are absorbed into the "
+                f"support, so W(R) is not contained in W(R') for R contained "
+                f"in R'.  Computed: {bdry['permanence_monotonicity_failures']} "
+                f"failures out of {bdry['permanence_monotonicity_checks']} "
+                f"nested pairs.  Permanence therefore SELECTS the support "
+                f"reading over the boundary-shell reading -- a strictly "
+                f"sharper outcome than 'two admissible windows disagree'."),
         },
         "annulus_fill": {
             "rows": fills,
@@ -995,16 +1181,31 @@ def W1_certificate() -> dict:
         "finding": (
             f"W1 EXISTS: the support reading is equivariant on "
             f"{supp['equivariance_checks']} group elements x configurations "
-            f"with {supp['equivariance_failures']} failures, non-constant with "
-            f"{supp['distinct_set_values_across_family']} distinct values.  It "
-            f"is NOT UNIQUE: {len(disagreements)} computed disagreements with "
-            f"two rival admissible maps.  And the support fills its own "
-            f"annulus in only {filled} of {len(FAMILY)} configurations, so the "
-            f"(a, b) parameterization is strictly weaker than the set."),
-        # gate: the candidate was fully evaluated, not that it succeeded
-        "pass": all(k in supp for k in (
-            "REQ2_REQ3_equivariant", "REQ4_permanence_monotone",
-            "REQ5_nonconstant")) and len(fills) == len(FAMILY),
+            f"with {supp['equivariance_failures']} failures, permanence-"
+            f"monotone on {supp['permanence_monotonicity_checks']} nested "
+            f"pairs with {supp['permanence_monotonicity_failures']} failures, "
+            f"and non-constant with "
+            f"{supp['distinct_set_values_across_family']} distinct values.  Of "
+            f"the two rivals, {len(refuted_rivals)} is REFUTED "
+            f"({', '.join(refuted_rivals) or 'none'}: the boundary shell "
+            f"retracts under permanence, "
+            f"{bdry['permanence_monotonicity_failures']} failures) and "
+            f"{len(admissible_rivals)} survives "
+            f"({', '.join(admissible_rivals) or 'none'}).  Uniqueness still "
+            f"FAILS, but only through the centre convention: {len(live)} "
+            f"surviving disagreements on {len(centre_splits)}/{len(FAMILY)} "
+            f"configurations.  And the support fills its own annulus in only "
+            f"{filled} of {len(FAMILY)} configurations, so the (a, b) "
+            f"parameterization is strictly weaker than the set."),
+        # gate: the candidate and BOTH rivals were fully evaluated against every
+        # declared requirement -- not that any of them succeeded.
+        "pass": (
+            all(all(k in ev for k in ("REQ2_REQ3_equivariant",
+                                      "REQ4_permanence_monotone",
+                                      "REQ5_nonconstant"))
+                for ev in (supp, bdry, altc))
+            and len(fills) == len(FAMILY)
+            and set(rival_failed_requirements) == set(rival_eval)),
     }
 
 
@@ -1138,13 +1339,32 @@ def W4_certificate() -> dict:
             "disjoint": not (b & w),
         })
     disjoint_count = sum(1 for c in collisions if c["disjoint"])
-    # the repair: the boundary shell is record-determined AND disjoint
+    # the candidate repair: the boundary shell is record-determined AND
+    # disjoint from the barrier -- but is it ADMISSIBLE?  Computed, not assumed.
     repair = []
     for cfg in FAMILY:
         b = set(map_W4_barrier(cfg)["set"])
         w = set(map_W1b_boundary(cfg)["set"])
         repair.append({"config": cfg["name"], "disjoint": not (b & w)})
     repair_ok = sum(1 for r in repair if r["disjoint"])
+    boundary_eval = evaluate_map(map_W1b_boundary, has_centre=True,
+                                 has_radii=True)
+    # every ADMISSIBLE window candidate, and whether any is barrier-disjoint
+    admissible_windows = {}
+    for wname, wfn in (("W1_support", map_W1_support),
+                       ("W1b_boundary_shell", map_W1b_boundary),
+                       ("W1c_alternate_centre", map_W1c_altcentre)):
+        ev = evaluate_map(wfn, has_centre=True, has_radii=True)
+        disjoint_all = all(
+            not (set(map_W4_barrier(cfg)["set"]) & set(wfn(cfg)["set"]))
+            for cfg in FAMILY)
+        admissible_windows[wname] = {
+            "admissible_REQ2_REQ5": ev["admissible_REQ2_REQ5"],
+            "disjoint_from_barrier_on_every_config": disjoint_all,
+        }
+    admissible_and_disjoint = sorted(
+        w for w, r in admissible_windows.items()
+        if r["admissible_REQ2_REQ5"] and r["disjoint_from_barrier_on_every_config"])
     return {
         "candidate": "W4 -- the barrier is record-carried configuration",
         "derived_map": "B(R) = supp(R), the locked-site set",
@@ -1183,16 +1403,32 @@ def W4_certificate() -> dict:
                 "is not axiom content; it is an extra identification -- a "
                 "PROPAGATION barrier read off the REGISTRATION-blocked set."),
         },
-        "repair_that_survives": {
+        "attempted_repair": {
             "map": "window = the support's site-boundary shell (W1b)",
             "configs_disjoint_from_the_barrier": repair_ok,
             "of": len(FAMILY),
+            "boundary_shell_admissible": boundary_eval["admissible_REQ2_REQ5"],
+            "boundary_shell_permanence_failures":
+                boundary_eval["permanence_monotonicity_failures"],
+            "boundary_shell_permanence_checks":
+                boundary_eval["permanence_monotonicity_checks"],
+            "windows_admissible_and_barrier_disjoint": admissible_and_disjoint,
+            "window_admissibility_vs_disjointness": admissible_windows,
             "note": (
-                "W1b is equivariant, content-only and disjoint from B(R) by "
-                "construction, so a disjoint barrier/window pair IS available "
-                "from record content alone.  It is a second admissible map, "
-                "not a unique one, which is why the a/b residual is a CHOICE "
-                "rather than a hole."),
+                f"The repair FAILS, and its failure is load-bearing.  W1b is "
+                f"equivariant, content-only and disjoint from B(R) on "
+                f"{repair_ok}/{len(FAMILY)} configurations, but it is NOT "
+                f"admissible: it retracts under permanence "
+                f"({boundary_eval['permanence_monotonicity_failures']} "
+                f"failures on "
+                f"{boundary_eval['permanence_monotonicity_checks']} nested "
+                f"pairs).  Of the window candidates evaluated here, "
+                f"{len(admissible_and_disjoint)} are BOTH admissible AND "
+                f"disjoint from the barrier on every configuration.  So no "
+                f"record-determined window in this sweep separates from the "
+                f"blocked set, and the landed model's barrier/window "
+                f"disjointness stays a named identification premise rather "
+                f"than a derivable arrangement."),
         },
         "finding": (
             f"The barrier is the one window coordinate the axioms name "
@@ -1200,13 +1436,17 @@ def W4_certificate() -> dict:
             f"{derived['equivariance_checks']} tests with "
             f"{derived['equivariance_failures']} failures and monotone under "
             f"permanence.  The landed fixed central barrier fails equivariance "
-            f"({landed['equivariance_failures']} failures) and is refuted.  "
+            f"on {landed['equivariance_failures']} of "
+            f"{landed['equivariance_checks']} checks and is refuted.  "
             f"The cost: the axiom-forced barrier and the axiom-forced readable "
-            f"set coincide ({disjoint_count}/{len(FAMILY)} disjoint), so the "
+            f"set coincide ({disjoint_count}/{len(FAMILY)} disjoint), and "
+            f"{len(admissible_and_disjoint)} of the three swept window "
+            f"candidates is both admissible and barrier-disjoint, so the "
             f"landed barrier/window separation needs one named identification."),
         "pass": ("REQ2_REQ3_equivariant" in derived
                  and "REQ2_REQ3_equivariant" in landed
-                 and len(collisions) == len(FAMILY)),
+                 and len(collisions) == len(FAMILY)
+                 and len(admissible_windows) == 3),
     }
 
 
@@ -1341,12 +1581,48 @@ def N_certificate() -> dict:
             if (r["additive_readout_I"] == s["additive_readout_I"]
                     and r["Z_by_theta"] != s["Z_by_theta"]):
                 sep.append([r["config"], s["config"], r["additive_readout_I"]])
+
+    # ---- CONTROL: read the SAME normalization on the support window, which is
+    # exactly the barrier.  No propagated amplitude can reach a blocked site, so
+    # this window is degenerate -- computed here rather than asserted.
+    supp_rows = []
+    for cfg in FAMILY:
+        zs = {q(t): q(amplitude_normalization(cfg, t, "support")) for t in thetas}
+        supp_rows.append({
+            "config": cfg["name"],
+            "Z_by_theta": zs,
+            "Z_depends_on_theta": len(set(zs.values())) > 1,
+        })
+    supp_theta_dependent = sum(1 for r in supp_rows if r["Z_depends_on_theta"])
     return {
         "coordinate": "N -- the terminal detector-distribution normalization",
         "theta_values_swept": [q(t) for t in thetas],
+        "window_locus_used": (
+            "the support's site-boundary shell -- the record-determined locus "
+            "DISJOINT from the barrier B(R) = supp(R).  Certificate F refutes "
+            "this locus as a WINDOW under REQ4, so N's evaluation is stated as "
+            "conditional on the same barrier/window identification premise the "
+            "verdict already names; the degenerate-window control below shows "
+            "the alternative is not a window at all."),
         "rows": rows,
         "configs_whose_Z_moves_with_theta": theta_dependent,
         "of": len(FAMILY),
+        "degenerate_window_control": {
+            "window_locus": "supp(R) -- identical to the barrier B(R)",
+            "rows": supp_rows,
+            "configs_whose_Z_moves_with_theta": supp_theta_dependent,
+            "of": len(FAMILY),
+            "reading": (
+                f"With the window taken to BE the barrier, Z moves with theta "
+                f"on {supp_theta_dependent}/{len(FAMILY)} configurations: the "
+                f"walk cannot step onto a blocked site, so the only amplitude "
+                f"on the window is the theta-independent seed.  The terminal "
+                f"distribution is therefore degenerate, not theta-free.  This "
+                f"is the computed cost of the barrier/readable-set collision, "
+                f"and it is why the theta-dependence measured on the disjoint "
+                f"locus is the load-bearing reading rather than an artifact of "
+                f"the locus choice."),
+        },
         "separating_pairs_equal_readout_different_Z": sep[:6],
         "separating_pair_count": len(sep),
         "what_IS_record_determined": (
@@ -1373,6 +1649,7 @@ def N_certificate() -> dict:
             f"cycle's sharpest negative -- it re-prices GBW1 itself."),
         "pass": (len(rows) == len(FAMILY)
                  and all("Z_by_theta" in r for r in rows)
+                 and len(supp_rows) == len(FAMILY)
                  and len(thetas) >= 2),
     }
 
@@ -1382,15 +1659,21 @@ def N_certificate() -> dict:
 # --------------------------------------------------------------------------
 def stress_certificate() -> dict:
     """Adversarial: perturbed tuples the claimed maps must REFUSE."""
+    # EVERY map that feeds the verdict is stressed -- including W1c, the
+    # admissible rival that carries the surviving centre residual, and W2,
+    # whose footprint the verdict cites as set-equal to W1's.
     claimed = {
         "W1_support": (map_W1_support, True),
         "W1b_boundary": (map_W1b_boundary, True),
+        "W1c_altcentre": (map_W1c_altcentre, True),
+        "W2_projection": (map_W2_projection, False),
         "W4_barrier": (map_W4_barrier, False),
     }
     results = {}
     for name, (fn, has_radii) in claimed.items():
         accepted, tested, exhibits = 0, 0, []
         control_tested, control_passed = 0, 0
+        kinds = {}
         for cfg in FAMILY:
             base = fn(cfg)
             s = set(base["set"])
@@ -1408,8 +1691,16 @@ def stress_certificate() -> dict:
                 wrong.append(("add_site", tuple(sorted(s | {outside}))))
             if len(s) > 1:
                 wrong.append(("drop_site", tuple(sorted(s - {sorted(s)[0]}))))
+            # a CARDINALITY-PRESERVING wrong window: add/drop can be refused on
+            # a counting argument alone, so the battery would be vacuous
+            # without a perturbation that a group image could in principle
+            # match.  move_site keeps |W| fixed and changes the shape.
+            if outside is not None and len(s) > 1:
+                wrong.append(("move_site", tuple(sorted(
+                    (s - {sorted(s)[0]}) | {outside}))))
             for tag, ps in wrong:
                 tested += 1
+                kinds[tag] = kinds.get(tag, 0) + 1
                 hit = tuple(sorted(base["set"])) == ps
                 if not hit:
                     for mat in ROT24:
@@ -1441,6 +1732,7 @@ def stress_certificate() -> dict:
                         ("a_plus_1", base["a2"] + 1, base["b2"]),
                         ("b_minus_1", base["a2"], base["b2"] - 1)):
                     tested += 1
+                    kinds[tag] = kinds.get(tag, 0) + 1
                     if (base["a2"], base["b2"]) == (pa, pb):
                         accepted += 1
                         if len(exhibits) < 4:
@@ -1448,6 +1740,7 @@ def stress_certificate() -> dict:
                                 {"config": cfg["name"], "perturbation": tag})
         results[name] = {
             "wrong_windows_tested": tested,
+            "perturbation_kinds_tested": dict(sorted(kinds.items())),
             "perturbations_wrongly_accepted": accepted,
             "refusal_rate": q(Fraction(tested - accepted, tested)),
             "acceptance_exhibits": exhibits,
@@ -1495,7 +1788,8 @@ def stress_certificate() -> dict:
         "maps_claimed_derived_that_accept_a_wrong_window": inconsistent,
         "maps_that_failed_the_displacement_control": control_failures,
         "finding": (
-            "Every claimed map was stressed with added sites, dropped sites "
+            f"All {len(claimed)} maps that feed the verdict were stressed with "
+            "added sites, dropped sites, cardinality-preserving moved sites "
             "and perturbed radii, and each wrong window was checked against "
             "the map's output on the configuration AND on all "
             f"{len(ROT24)} x {len(TEST_SHIFTS)} group images of it, so a map "
@@ -1522,6 +1816,11 @@ def verdict_certificate(w1: dict, w2: dict, w3: dict, w4: dict,
                         dep: dict, ncert: dict, stress: dict) -> dict:
     existence_a_b = w1["existence"]["at_least_one_admissible_map"]
     unique_a_b = w1["uniqueness"]["candidates_agree"]
+    centre_agree = w1["uniqueness"]["centre_conventions_agree"]
+    centre_splits = w1["uniqueness"]["centre_convention_splits_on_configs"]
+    admissible_rivals = w1["uniqueness"]["admissible_rivals"]
+    refuted_rivals = w1["uniqueness"]["refuted_rivals"]
+    boundary_rival_admissible = "W1b_boundary_shell" in admissible_rivals
     barrier_ok = (w4["evaluation"]["REQ2_REQ3_equivariant"]
                   and w4["evaluation"]["REQ4_permanence_monotone"]
                   and w4["evaluation"]["REQ5_nonconstant"])
@@ -1553,20 +1852,29 @@ def verdict_certificate(w1: dict, w2: dict, w3: dict, w4: dict,
     ab_class = ("DERIVED" if (existence_a_b and unique_a_b)
                 else "EXISTENCE_DERIVED_UNIQUENESS_OPEN" if existence_a_b
                 else "SUPPLIED")
+    ab_residual = []
+    if boundary_rival_admissible:
+        ab_residual.append(
+            "one binary locus choice (support vs boundary shell)")
+    if not centre_agree:
+        ab_residual.append(
+            "one centre convention (barycentre vs extremal-shell barycentre)")
+    ab_residual.append(
+        "the annular (a, b) reading additionally needs the support to fill its "
+        "own annulus, which holds on "
+        f"{w1['annulus_fill']['configs_whose_support_fills_its_own_annulus']}"
+        f"/{w1['annulus_fill']['of']} configurations")
     for coord in ("a", "b"):
         classification[coord] = {
             "class": ab_class,
             "witness": (
                 "Record's content-only clause FORCES the window to be a "
-                "function of R; supp(R) and its boundary shell are both "
-                "admissible equivariant realizations"),
-            "residual_premise": (
-                "one binary choice (support vs boundary shell) plus one centre "
-                "convention (barycentre vs extremal-shell barycentre); the "
-                "annular (a, b) reading additionally needs the support to fill "
-                "its own annulus, which holds on "
-                f"{w1['annulus_fill']['configs_whose_support_fills_its_own_annulus']}"
-                f"/{w1['annulus_fill']['of']} configurations"),
+                "function of R; supp(R) is admissible on every declared "
+                "requirement, while the boundary-shell rival is refuted by "
+                f"REQ4 (permanence retraction) -- refuted rivals: "
+                f"{refuted_rivals or ['none']}, surviving rivals: "
+                f"{admissible_rivals or ['none']}"),
+            "residual_premise": "; ".join(ab_residual),
         }
     classification["N"] = {
         "class": "SUPPLIED" if not n_content_only else "DERIVED",
@@ -1581,13 +1889,19 @@ def verdict_certificate(w1: dict, w2: dict, w3: dict, w4: dict,
             "identification (the composed-record event-space step, absent from "
             "this worktree)"),
     }
+    # COMPUTED, not asserted: the centre's class follows from whether two
+    # admissible equivariant centre conventions actually split.
     classification["centre"] = {
-        "class": "EXISTENCE_DERIVED_UNIQUENESS_OPEN",
+        "class": "DERIVED" if centre_agree else "EXISTENCE_DERIVED_UNIQUENESS_OPEN",
         "witness": (
             "'No site is privileged' forbids a supplied centre and forces an "
-            "equivariant one; at least two inequivalent equivariant centres "
-            "exist (barycentre, extremal-shell barycentre)"),
-        "residual_premise": "one centre convention",
+            "equivariant one; the barycentre and the extremal-shell barycentre "
+            "are both equivariant and both belong to admissible maps, and they "
+            f"differ as points on {len(centre_splits)}/{len(FAMILY)} "
+            f"configurations ({', '.join(centre_splits) or 'none'})"),
+        "residual_premise": (
+            "one centre convention" if not centre_agree
+            else "none; the equivariant centre conventions coincide"),
     }
 
     determined = sorted(c for c in WINDOW_COORDS
@@ -1600,11 +1914,13 @@ def verdict_certificate(w1: dict, w2: dict, w3: dict, w4: dict,
     partition_ok = (len(determined) + len(partial) + len(supplied)
                     == len(WINDOW_COORDS))
 
+    # The residual is BUILT from the computed facts, never listed by hand.
     residual_items = []
-    if partial:
+    if boundary_rival_admissible:
         residual_items.append(
             "one binary window choice: the record support itself vs its "
-            "site-boundary shell (both fully admissible)")
+            "site-boundary shell (both admissible)")
+    if not centre_agree:
         residual_items.append(
             "one centre convention, needed only by the ANNULAR reading of the "
             "window; the SET-valued window needs no centre")
@@ -1612,12 +1928,34 @@ def verdict_certificate(w1: dict, w2: dict, w3: dict, w4: dict,
         residual_items.append(
             "one cross-block coupling: N depends on the kernel phase gain "
             "theta, so it cannot be closed inside the window block")
-    residual_items.append(
-        "one identification premise: propagation barrier = registration-"
-        "blocked set")
+    if w4["barrier_readable_collision"][
+            "configs_where_barrier_and_readable_set_are_disjoint"] < len(FAMILY):
+        residual_items.append(
+            "one identification premise: propagation barrier = registration-"
+            "blocked set")
 
     return {
         "classification": classification,
+        "uniqueness_filter": {
+            "rule": (
+                "a rival can witness non-uniqueness only if it satisfies every "
+                "declared requirement; a rival that fails one is REFUTED and "
+                "its disagreements are discarded"),
+            "admissible_rivals": admissible_rivals,
+            "refuted_rivals": refuted_rivals,
+            "rival_failed_requirements":
+                w1["uniqueness"]["rival_failed_requirements"],
+            "disagreements_counted": w1["uniqueness"]["disagreement_count"],
+            "disagreements_discarded":
+                w1["uniqueness"]["disagreements_with_refuted_rivals_not_counted"],
+        },
+        "W2_adds_no_window_coordinate": w2["collapses_into_W1"],
+        "stress_soundness": {
+            "maps_claimed_derived_that_accept_a_wrong_window":
+                stress["maps_claimed_derived_that_accept_a_wrong_window"],
+            "maps_that_failed_the_displacement_control":
+                stress["maps_that_failed_the_displacement_control"],
+        },
         "window_coordinates_determined": determined,
         "window_coordinates_existence_only": partial,
         "window_coordinates_supplied": supplied,
@@ -1635,21 +1973,25 @@ def verdict_certificate(w1: dict, w2: dict, w3: dict, w4: dict,
             "GBW1a (the window LOCUS: centre, a, b, D, barrier -- attacked "
             "here) and GBW1b (the terminal normalization, which is a "
             "kernel-window joint obligation)."),
+        "moment_count_is_G_invariant": w3["moment_count_is_G_invariant"],
         "each_remaining_dimension_vs_GBW1": {
-            "a": "inside GBW1a; residual is a choice, not a hole",
-            "b": "inside GBW1a; residual is a choice, not a hole",
+            "a": f"inside GBW1a; residual is {'; '.join(ab_residual[:-1]) or 'no free choice'}",
+            "b": f"inside GBW1a; residual is {'; '.join(ab_residual[:-1]) or 'no free choice'}",
             "N": "OUTSIDE GBW1a; belongs to a joint kernel-window lemma GBW1b",
             "barrier": "inside GBW1a and DERIVED, modulo one identification",
             "D": "inside GBW1a and GAUGE",
-            "centre": "inside GBW1a; newly exposed; residual is one convention",
+            "centre": ("inside GBW1a; newly exposed; residual is "
+                       + ("one convention" if not centre_agree else "none")),
         },
         "strength_vs_884": (
-            "Cycle 884 classified all five WINDOW coordinates FREE.  This "
+            f"Cycle 884 classified all five WINDOW coordinates FREE.  This "
             f"cycle removes {len(determined)} of them outright (barrier "
-            "DERIVED, D GAUGE), reduces two more to a single binary choice "
-            "plus a convention, exposes a sixth coordinate the landed chart "
-            "never carried, and shows the fifth is not a window coordinate at "
-            "all."),
+            f"DERIVED, D GAUGE), reduces two more to "
+            f"{len(ab_residual) - 1} residual item(s) "
+            f"({'; '.join(ab_residual[:-1]) or 'none'}) after permanence "
+            f"REFUTES the boundary-shell rival, exposes a sixth coordinate the "
+            f"landed chart never carried, and shows the fifth is not a window "
+            f"coordinate at all."),
         "finding": (
             f"Of the five landed WINDOW coordinates, {len(determined)} are "
             f"determined ({', '.join(determined) or 'none'}), "
@@ -1738,7 +2080,9 @@ LABELS = (
     "L_WRONG_WINDOW_STRESS",
     "M_VERDICT",
     "N_HONESTY_GATE",
+    "O_CONTROLS",
 )
+SCIENCE_LABELS = tuple(l for l in LABELS if l != "O_CONTROLS")
 
 
 def build_science() -> dict:
@@ -1775,26 +2119,28 @@ def build_science() -> dict:
     return science
 
 
-def render(certs: dict) -> str:
-    out = ["CYCLE 885 -- GBW1: IS THE DETECTOR WINDOW RECORD-DETERMINED?", ""]
-    for label in LABELS:
+def render(certs: dict, labels, header: str = "") -> str:
+    out = [header, ""] if header else []
+    for label in labels:
         cert = certs[label]
         out.append(f"[{'PASS' if cert['pass'] else 'FAIL'}] {label}")
         finding = cert.get("finding")
         if finding:
             out.append(f"    finding: {finding}")
         out.append("")
-    out.append(json.dumps(certs, indent=2, sort_keys=True, default=str))
+    out.append(json.dumps({l: certs[l] for l in labels},
+                          indent=2, sort_keys=True, default=str))
     return "\n".join(out) + "\n"
 
 
 def run() -> int:
+    preflight_pins()
     started = monotonic()
     science_a = build_science()
     science_b = build_science()
     deterministic = digest(science_a) == digest(science_b)
 
-    certificates = {label: science_a[label] for label in LABELS}
+    certificates = {label: science_a[label] for label in SCIENCE_LABELS}
     verdict = science_a["M_VERDICT"]
 
     receipt = {
@@ -1837,16 +2183,28 @@ def run() -> int:
             "whose window is not record-determined is not determined by record "
             "content alone.  GBW1's EXISTENCE half is therefore an axiom "
             "consequence, not a conjecture.",
-            "C885-T2 the barrier is DERIVED: B(R) = supp(R) is the unique "
-            "equivariant, permanence-monotone, record-carried blocked set, and "
-            "the landed fixed central barrier is refuted by translation "
-            "equivariance.",
+            "C885-T2 the barrier is DERIVED: B(R) = supp(R) is equivariant, "
+            "permanence-monotone and non-constant on every test here, its "
+            "uniqueness is argued in the stated forcing chain (B smaller than "
+            "supp(R) contradicts count-once, B larger blocks an unoccupied "
+            "site and needs a law), and the landed fixed central barrier is "
+            "refuted by translation equivariance on "
+            f"{science_a['I_W4_BARRIER']['landed_fixed_barrier_impostor']['evaluation']['equivariance_failures']}"
+            " computed collisions.",
             "C885-T3 the readout depth D is GAUGE: permanence makes the "
             "depth-indexed readout stationary above the last formation depth, "
             "so every admissible D gives the identical readout.",
-            "C885-T4 GBW1's UNIQUENESS half FAILS: the record support and its "
-            "site-boundary shell are both fully admissible windows and "
-            "disagree, as do two equivariant centre conventions.",
+            "C885-T4 permanence REFUTES the boundary-shell window: it retracts "
+            "under the filtration on "
+            f"{science_a['F_W1_SUPPORT_EXTENT']['W1b_boundary_shell_reading']['permanence_monotonicity_failures']}"
+            " of "
+            f"{science_a['F_W1_SUPPORT_EXTENT']['W1b_boundary_shell_reading']['permanence_monotonicity_checks']}"
+            " nested pairs and so cannot witness non-uniqueness.  GBW1's "
+            "UNIQUENESS half still FAILS, but through exactly one surviving "
+            "split -- the equivariant CENTRE convention (barycentre vs "
+            "extremal-shell barycentre), which differs as a point on "
+            f"{len(science_a['F_W1_SUPPORT_EXTENT']['uniqueness']['centre_convention_splits_on_configs'])}"
+            f"/{len(FAMILY)} configurations.",
             "C885-T5 the landed 5-coordinate window chart is scalar-only and "
             "cannot state the equivariance requirement; a constant annulus "
             "passes it.  The honest window chart carries a sixth coordinate, "
@@ -1861,9 +2219,14 @@ def run() -> int:
             "the landed window chart is scalar-only, so it cannot even state "
             "GBW1's covariance requirement",
             "the axiom-forced barrier and the axiom-forced readable set "
-            "COINCIDE, while the landed model needs them disjoint",
+            "COINCIDE, while the landed model needs them disjoint -- and no "
+            "swept window candidate is both admissible and barrier-disjoint, "
+            "so the separation has no record-determined realization here",
             "GBW1 as declared by Cycle 884 cannot be settled inside the window "
             "block",
+            "with the window taken to BE the barrier the terminal distribution "
+            "is degenerate (theta-independent seed only), which is the "
+            "computed cost of that collision",
         ],
         "load_bearing_positives": [
             "GBW1 existence is forced by Record's content-only clause",
@@ -1871,7 +2234,11 @@ def run() -> int:
             "D is GAUGE by permanence",
             "W2 (the payload projection) adds no window coordinate: it is "
             "set-equal to the record support",
+            "permanence SELECTS the support window over the boundary-shell "
+            "window: the boundary shell retracts under the filtration and is "
+            "refuted, removing the binary locus choice from the residual",
         ],
+        "uniqueness_filter": verdict["uniqueness_filter"],
         "exact_scope": science_a["N_HONESTY_GATE"]["Q2_exact_scope"],
         "steelman": science_a["N_HONESTY_GATE"]["Q3_steelman"],
         "cycle884_GBW1_statement": science_a["A_PINS"]["cycle884_GBW1_statement"],
@@ -1882,13 +2249,9 @@ def run() -> int:
             for r in science_a["A_PINS"]["rows"]
         ],
     }
-    CACHE.parent.mkdir(parents=True, exist_ok=True)
-    CACHE.write_text(
-        json.dumps(receipt, indent=2, sort_keys=True, default=str) + "\n",
-        encoding="utf-8")
-    cache_digest = sha256(CACHE.read_bytes()).hexdigest()
-
-    text = render(certificates)
+    text = render(
+        certificates, SCIENCE_LABELS,
+        "CYCLE 885 -- GBW1: IS THE DETECTOR WINDOW RECORD-DETERMINED?")
     stdout_bytes = len(text.encode("utf-8"))
     elapsed = monotonic() - started
 
@@ -1907,11 +2270,14 @@ def run() -> int:
             "science_digest": digest(science_a),
         },
         "cache_path": str(CACHE.relative_to(ROOT)),
-        "cache_sha256": cache_digest,
+        "cache_sha256": None,   # filled after the receipt is written
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
         "runtime_under_limit": elapsed < AUDIT_TIMEOUT_SEC,
-        "stdout_bytes": stdout_bytes,
+        "stdout_bytes_science_payload": stdout_bytes,
+        "stdout_bytes_note": (
+            "measured on the science payload; this controls block is appended "
+            "after the measurement, so the figure is not self-referential"),
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "stdout_under_limit": stdout_bytes < STDOUT_LIMIT_BYTES,
         "floating_point_in_certified_quantities": False,
@@ -1929,10 +2295,15 @@ def run() -> int:
             "SUPPLIED; M on the classification partitioning the five "
             "coordinates exactly.  The determined/supplied counts are "
             "reported as data, including the fact that one of the five is "
-            "shown to lie outside the window block entirely."),
+            "shown to lie outside the window block entirely.  The one gate "
+            "that is NOT a pure computation is N_HONESTY_GATE: it is a static "
+            "lint over literal closure phrases, none of which any computed "
+            "value can produce, so it constrains this file's prose and not "
+            "the science."),
         "finding": (
             "All cited artifacts stayed text/AST/JSON-only behind the import "
-            "firewall, the whole science payload rebuilt digest for digest, "
+            "firewall, every pinned path was checked to exist before any "
+            "science ran, the whole science payload rebuilt digest for digest, "
             "and the runtime and stdout caps were respected."),
     }
     controls["pass"] = (
@@ -1944,11 +2315,25 @@ def run() -> int:
     )
     certificates["O_CONTROLS"] = controls
 
+    receipt["certificate_pass"] = {
+        label: bool(certificates[label]["pass"]) for label in LABELS}
+    receipt["all_certificates_pass"] = all(
+        receipt["certificate_pass"].values())
+
+    CACHE.parent.mkdir(parents=True, exist_ok=True)
+    CACHE.write_text(
+        json.dumps(receipt, indent=2, sort_keys=True, default=str) + "\n",
+        encoding="utf-8")
+    controls["cache_sha256"] = sha256(CACHE.read_bytes()).hexdigest()
+
+    tail = render(certificates, ("O_CONTROLS",))
     sys.stdout.write(text)
+    sys.stdout.write(tail)
     sys.stdout.write(
         f"\ncontrols: deterministic={deterministic} "
         f"runtime_under_limit={controls['runtime_under_limit']} "
-        f"stdout={stdout_bytes}B cache={controls['cache_sha256'][:16]}\n")
+        f"stdout={stdout_bytes}B receipt={controls['cache_path']} "
+        f"cache={controls['cache_sha256'][:16]}\n")
     return 0 if all(c["pass"] for c in certificates.values()) else 1
 
 

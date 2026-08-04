@@ -243,10 +243,14 @@ def fr(value: Fraction) -> str:
 
 
 def as_decimal(value: Fraction, places: int = 8) -> str:
-    """Exact rational rendered to a fixed number of places, for reading only.
-    Nothing downstream consumes this string."""
+    """Exact rational rendered to a fixed number of places, ROUNDED half-up, for
+    reading only.  Nothing downstream computes on this string; it exists so the
+    exercise's stated decimals can be compared at the precision they were
+    stated to.  Rounding, not truncation: 0.0053866... is 0.00539 at five
+    places, and truncating it to 0.00538 would report a successful
+    reproduction as a miss."""
     scaled = value * (10 ** places)
-    whole = scaled.numerator // scaled.denominator
+    whole = (2 * scaled.numerator + scaled.denominator) // (2 * scaled.denominator)
     text = str(whole).rjust(places + 1, "0")
     return f"{text[:-places] or '0'}.{text[-places:]}"
 

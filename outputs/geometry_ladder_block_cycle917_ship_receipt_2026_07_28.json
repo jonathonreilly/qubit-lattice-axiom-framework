@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the G3 spec inconsistency resolved by running BOTH readings; the xi_reg receipt-key overstatement corrected by the checker; supervisor line-by-line review",
+  "block": "toe-time-blockM4-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 6s; 12/12 claims survive, zero disagreements; 10/10 teeth",
+    "primary": "exit 0, 116s; restriction gates PASS (the imported cube row value-for-value; 21/21 frozen constants byte-verified; orbit exactness at 1e-12)"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 4th M-family PR: falsifies a recovered no-go's geometric mechanism while confirming its home-system validity, replaces the slogan with three measured laws, and names the bracket's successor; nothing corollary",
+  "cycles": [
+    917
+  ],
+  "files": {
+    "docs/GEOMETRY_LADDER_CHAIN_CERTIFIES_CYCLE917_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "6311514dcd9a97f1a14b0ba7249b7570baeaff14",
+      "sha256": "b424c3aaf684015f6ca08e81446df58c2d85a1c4e981a8c220be165989d057d4"
+    },
+    "logs/runner-cache/frontier_cycle917_geometry_independent_check_2026_07_28.txt": {
+      "git_blob": "2a2ca16c9beb03c4ee6c5be2037c6566ac456110",
+      "sha256": "7358bdd1fda2f5ae5c92fd1b4c6c5de71cc271435c9b31fa475b676393f7b541"
+    },
+    "logs/runner-cache/frontier_cycle917_geometry_ladder_2026_07_28.txt": {
+      "git_blob": "47ee48cac7107061567708d92cb4ee3ae8ec2146",
+      "sha256": "84873768ec947fb7ebac9b2d00d284bfd7d35c1dcbbad0bf77cf2c017d313048"
+    },
+    "outputs/geometry_independent_check_cycle917_receipt_2026_07_28.json": {
+      "git_blob": "1a3299702c7dce132360ce26af61ee89ccb2021c",
+      "sha256": "fe8a30918b543ecb440665adbec237ca4e5efd7db47b1951983226a8479fbc10"
+    },
+    "outputs/geometry_ladder_cycle917_receipt_2026_07_28.json": {
+      "git_blob": "11e336cf0a86c46492f6ccf03b13963357840b71",
+      "sha256": "37568809db0d5f319b6fe9a41962cc58c8215ade2c4b9acb24eab4b665535240"
+    },
+    "scripts/frontier_cycle917_geometry_independent_check_2026_07_28.py": {
+      "git_blob": "1726563c9468b78d1bf9678f43c944087ee63358",
+      "sha256": "208c8da9480894ad7a7c1248567ffcf0ff792fdfd812e01bfd45c220445d35c6"
+    },
+    "scripts/frontier_cycle917_geometry_ladder_2026_07_28.py": {
+      "git_blob": "b70ad19d4cc11265c465aea1bb4b2d6e5605ca5e",
+      "sha256": "eb119f3bba365461274df51e0bdafc4a2047634863ef48b2662dcf7d3b61fb05"
+    }
+  },
+  "headline": "THE CHAIN CERTIFIES: the geometry the recovered d=1 no-go declares impossible reaches permanence-grade redundancy at lambda=0.05 (R_ind=2 over its two arms; the no-go-inconsistency detector fires on the REAL row with the planted control proving it works); xi_reg = 1 on EVERY geometry certifying or not \u2014 the no-go's mechanism is comparator-specific and its geometric generalization is FALSIFIED (the no-go stands in its own Schwinger system); the measured replacement laws: R_ind ceiling = pointer degree (all 7 at 0.05; loop-free at 0.10), LOOPS COST REDUNDANCY, the field ceiling is graded in degree with the threshold BRACKETED (4, 6]; confound analysis: four features collapse to one statistic, size excluded, three of four NOs are one-sample misses (tightest 0.00078 bits); 10 YES / 4 NO across 14 cells; the degree-5 successor named",
+  "independence": "cross-context (fully independent Hamiltonians/Holevo/partitions from the memo's bytes; agreement at 1e-13; route A vs B at 4.5e-14; 10/10 teeth incl. a planted under-converged propagator proving the numerics are guarded)",
+  "note": "docs/GEOMETRY_LADDER_CHAIN_CERTIFIES_CYCLE917_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 6,
+    "primary": 116
+  }
+}

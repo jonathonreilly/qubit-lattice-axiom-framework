@@ -1483,6 +1483,33 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Cluster-cap (G-family): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
 
+## Cycle 938 reclassification refuted (blockAC3, PR #6004) — 2026-08-05
+
+- Supervisor review: the minimal-premise rule's biggest test this
+  window — the SUPERVISOR'S OWN exercise route declared a
+  non-premise and refuted by the worker with a prior-art discovery
+  (the 07-05 value-face note the exercise pass missed). The
+  refutation shipped as the result; the exercise packet carries a
+  dated addendum with the protocol lesson: the assumptions table
+  gains a mandatory prior-art sweep row (the 5592 lesson recurring
+  at exercise scale).
+- Verdicts: the obligation is TYPE-shaped and registration-immune;
+  route 4's price stands; THE SPACE GAP is the wall's sharpest
+  form (one matrix, two supplied spaces — the carrier question);
+  the SIGN conditionality of the 7.4e-6 exactness adopted onto the
+  claim surface; the FOLD correction (six preimages).
+- Checker: seven refutations mounted, all holding; the failed
+  attacks disclosed; the primary's slot claim tightened mid-block.
+- Audit rows: the gitignored-ledger cold-run breakage (process —
+  affects every fresh-worktree cycle that runs the no-go runner);
+  the 07-05 runner's text-provenance PASS drift (pinned to its
+  superseded sentence).
+- Cluster-cap (3rd AC-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Consequence for the queue: Cycle 939 (the arrow reclassification)
+  is DOWNGRADED pending its own prior-art sweep; wall 1's R1-A3
+  remains live behind Cycle 936's freedom count.
+
 # SUPERVISOR PERSONAL LANE REVIEWS — 2026-08-05 ~04:40 EDT (owner-directed)
 
 Fresh-eyes line-by-line pass over each lane's full window output by the

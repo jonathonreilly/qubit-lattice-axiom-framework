@@ -1457,3 +1457,33 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
   (named).
 - Cluster-cap (12th M-family PR): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 933 s(k) shape (blockM13, PR #6002) — 2026-08-05
+
+- Supervisor review: the derivation-plus-no-go pairing (the
+  structural Hankel form exact at the pinned grade AND the S5
+  proof that no elementary formula exists — the strongest
+  possible answer in both directions); the no-CAS Galois
+  confirmation; the mechanism ablated to EXACT zero with the
+  algebraic witness; the sealed off-grid cash-out (T(13..15), the
+  d=13 ladder, lambda*(d)) under the hard no-pre-evaluation
+  guard; the spec-framing correction disclosed (product branch
+  predicts zero); the third occurrence of the timing-leak trap
+  class, now hard-guarded with a payload scan.
+- Verdicts: s(k) DERIVED (Sym^d membership at 6e-17; the Hankel
+  spectrum; reflection = transposition); the Galois no-go (retire
+  the formula hunt); the baseline table, the ladder, the dilution
+  law, and the independence-gate crossings now THEOREMS for
+  stars. Composed with 932: THE STAR CERTIFICATION STRUCTURE IS
+  DERIVED END TO END at the stated grid-phase scope. The
+  non-overreach sentence carried (s(k) does not decide the
+  pointer-side gates — the 0.36-bit witness).
+- Checker: SUPPORTED, 15/15 teeth, ZERO refutations, ZERO
+  findings (the window's only clean sweep); two checker-side
+  instrumentation bugs self-caught and disclosed.
+- Cluster-cap (13th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 934 (the
+  pointer-side gates, blockM14 — the capstone: if chi/excess/
+  t_open derive in the same reduction, the complete star
+  certification theorem closes).

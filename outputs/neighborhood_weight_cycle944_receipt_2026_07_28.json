@@ -14,6 +14,8 @@
   "verbatim": "I believe the neighborhood map not only modulates the available possibilities, but their probabilities.",
   "DRAFT_A": "each admissible possibility at a site carries a weight, and the weights are a lawful function of the site's neighborhood map.",
   "DRAFT_B": "the neighborhood map determines both which possibilities are admissible at a site and the weight each carries",
+  "DRAFT_D_RAW_owner": "For each site, the available possibilities and the likelyhood of forming a record are determined by, and vary with, the nearest-neighbor conditions.",
+  "DRAFT_D_II_TIGHTENED_supervisor": "For each site, the likelihood that a record forms locking each local possibility is determined by, and varies with, the nearest-neighbor conditions; the available possibilities are those of nonzero likelihood.",
   "DRAFT_C_RAW_owner": "Each available possibility carries a weight - the likelihood with which a forming record locks it - determined by, and varying with, the same nearest-neighbor conditions.",
   "DRAFT_C_CORRECTED_supervisor": "For each site, each local possibility carries a weight - the likelihood with which a forming record locks it - determined by, and varying with, the nearest-neighbor conditions; the available possibilities are those of nonzero weight.",
   "the_sentence_draft_C_replaces": "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions."
@@ -1320,7 +1322,7 @@
     },
     "status": "PROVED for the trivial half (both drafts); PROVED for the non-trivial half under DRAFT B ONLY, from ADM_RULE's own covariance predicate; NOT DERIVED under Draft A."
    },
-   "ii_draft_B_covariant_collapse": {
+   "ii_draft_B_covariant_collapse_cubic_half": {
     "k=2": {
      "formalization": "F5_CUBIC_COLOURING_ON_THE_DECLARED_EMBEDDING",
      "classes_realized_by_the_formation_contexts": 3,
@@ -1373,6 +1375,21 @@
      "freedom_under_draft_A_at_F5": "NOT PUBLISHED.  Cycle 913 reports the number of realized ORBIT classes but not the number of distinct realized COLOURINGS, which is the Draft-A (no-covariance) baseline at F5.  Bounded only by 3/6/7 <= N <= 164.  AN HONEST GAP -- the size of Draft B's purchase at F5 is bounded below by 1 and is not otherwise measured.",
      "freedom_under_bare_A3": 164
     }
+   },
+   "ii_draft_B_covariant_collapse_TRANSLATION_half": {
+    "the_axiom_names_two_groups": "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
+    "the_landed_translation_action": {
+     "group": "the Cycle-878 monitor-phase Z_11",
+     "group_order": 11,
+     "action_is_a_census_bijection": true,
+     "census_orbits_total": 68,
+     "census_orbits_meeting_the_lock_set": 56,
+     "lock_set_is_closed_under_the_action": false
+    },
+    "what_it_forces_under_draft_B": "Draft B's inherited covariance is covariance under BOTH named groups.  So the weight must also be constant on the orbits of the translation action, not only on proper-cubic classes.  On the control arena the lock set meets 56 orbits of the Z_11 action.",
+    "the_resulting_freedom_count": "THE JOIN of the neighbourhood-class partition and the orbit partition -- strictly coarser than either, hence a freedom count at or below both.  NOT COMPUTED: Cycle 913's receipt publishes orbit COUNTS but not per-world orbit membership, so the join cannot be formed from pinned bytes.  Named as an honest gap and as the next block's cheapest measurement.",
+    "direction_of_the_error_this_repairs": "every freedom count this block reports for Draft B is therefore an UPPER BOUND.  Draft B's purchase is at least as large as stated and possibly larger.  No number reported elsewhere in this receipt becomes false; they become bounds.",
+    "caveat": "the lock set is NOT closed under the action (False), so the orbit partition is a partition of the census, not of the lock set; forming the join needs the restriction to be taken with care.  Flagged, not hand-waved."
    },
    "ii_draft_B_purchase_in_words": "STATED CAREFULLY, BECAUSE AN EARLIER DRAFT OF THIS BLOCK OVERSTATED IT.  Two separate results, on two DIFFERENT formalizations:  (1) At the SUBSTRATE formalizations, bare A3 leaves 164 free numbers on the control arena and either draft leaves 54 at F3 (52 of 134 on the M_A arena).  Covariance adds nothing here that this block can measure, because the pinned bytes publish no cubic coarsening of the record-content partition.  (2) At the AXIOM formalization F5 -- the six-slot colouring of the declared Z^3 embedding, the only reading that matches the geometry the axiom's covariance group acts on -- Draft B's inherited covariance leaves exactly 3, 6 or 7 free numbers at condition alphabet k = 2, 3, 4.  Draft A leaves the number of distinct realized colourings, which Cycle 913 does not publish.  So Draft B's covariance purchase is REAL and is bought entirely by WHERE the sentence is written rather than by WHAT it says -- but its SIZE is measured only as an upper bound on the survivor count (3/6/7), not as a ratio.  The honest headline is the absolute number, not the collapse factor.",
    "iii_freedom_comparison": {
@@ -1707,6 +1724,243 @@
    "sentence_being_replaced": "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.",
    "pass_": true
   },
+  "QD_DRAFT_D_THE_SIMPLIFICATION": {
+   "spelling": {
+    "as_written": "likelyhood",
+    "correct": "likelihood",
+    "why_it_matters_here": "axiom text is machine-needled across this repo (runners grep the memo for exact clause bytes).  A misspelling in axiom text would silently break every needle that quotes the sentence.  Flagged as a typo, not as content."
+   },
+   "THE_CONJUNCTIVE_STRUCTURE": {
+    "finding": "DRAFT D-RAW KEEPS THE AVAILABILITY CLAUSE.  Its subject is 'the available possibilities AND the likelyhood of forming a record', both 'determined by, and vary with, the nearest-neighbor conditions'.  The replaced sentence's own content survives verbatim as the first conjunct.",
+    "consequence": "D-RAW REPAIRS DRAFT C'S MEASURED REGRESSION.  Draft C derived availability as the weight's support and thereby dropped the vacuous-rule exclusion; D-raw retains availability as an independent conjunct, so the exclusion the 2026-07-02 ruling attributes to the current sentence survives intact.",
+    "the_ordering_this_creates": "D-raw is STRICTLY STRONGER than the current sentence (it entails it as a conjunct and adds content).  Draft C was INCOMPARABLE with it.  That is a real advantage of D's shape over C's, and it costs nothing.",
+    "the_tradeoff": "the supervisor's tightened D-ii wording re-derives availability from the likelihood's support ('the available possibilities are those of nonzero likelihood') and therefore RE-INTRODUCES exactly the regression D-raw had repaired.  The two virtues -- unification into one quantity, and preservation of the vacuous-rule exclusion -- pull in opposite directions in these two wordings.  Structural observation only."
+   },
+   "READING_D_i_PER_SITE_SCALAR": {
+    "gloss": "one scalar per site: the likelihood that A record forms there.  A RATE.  No per-possibility structure.",
+    "is_this_the_natural_reading_of_the_owners_words": "YES.  'the likelyhood of forming a record' is a single definite noun phrase with no per-possibility quantifier.  Read as English, D-raw IS D-i.  The per-possibility reading requires the tightened wording to be made visible.",
+    "DOES_IT_SUPPLY_THE_BORN_CONTENT": "NO.  CONFIRMED PLAINLY.",
+    "the_argument": "the Born content is a weight ON THE ALTERNATIVES at a site -- Cycle 925's reduction, Cycle 913's arena (328 site-possibility pairs), Cycle 936's freedom count (one number per site IN THE MENU sense).  A single per-site scalar has no index running over possibilities, so it assigns nothing to any alternative.  Under D-i the menu's two items remain exactly as unweighted as they are today, and Cycle 936's measured freedom count is UNCHANGED at 6 on the declared arena.",
+    "which_open_gate_it_DOES_touch": "the FOURTH conjunct of the Open Gates formation-rule parenthesis -- 'or at what rate' -- and only that one.  It leaves 'with what weight' exactly where it is.",
+    "THE_DECISIVE_ASYMMETRY_FOR_THE_OWNER": "D-i PAYS THE FULL CONSTITUTIONAL PRICE AND BUYS NONE OF THE BORN CONTENT.  It still puts a probability word inside Admissibility, so it still contradicts the no-weights fence and the binding No-laundering clause ('define probabilities' is named there explicitly, and a formation likelihood is a probability).  It still requires the Open Gates parenthesis to be edited.  And in exchange it supplies no weight on any alternative.  Of the five objects priced in this block, D-i has the worst ratio of cost to purchase.",
+    "freedom_count_effect": {
+     "C936_SIX_SITES": "unchanged at 6",
+     "C913_CONTROL_164": "unchanged at 164",
+     "note": "D-i adds a NEW per-site quantity (the rate) with its own class-equality law, so it adds free numbers rather than removing them -- one rate per neighbourhood class."
+    }
+   },
+   "READING_D_ii_PER_POSSIBILITY": {
+    "gloss": "for each local possibility p at a site, the likelihood that a record forms LOCKING p.  One function lambda(p, site).",
+    "THE_UNIFICATION": {
+     "claim_tested": "lambda is ONE object subsuming the menu (its support), the Born weights (its normalized restriction) and the formation rate (its total mass).",
+     "verdict": "CONFIRMED, and it is the strongest structural result in this block.",
+     "the_three_readings_off_one_object": {
+      "availability": "supp(lambda) -- the possibilities of nonzero likelihood.  Carries the owner ratification 'probability zero is unavailable'.",
+      "the_Born_weights": "lambda(.|site) normalized by its total mass -- the conditional distribution over WHICH possibility locks, GIVEN that one does.",
+      "the_formation_rate": "the total mass sum_p lambda(p, site) -- the likelihood that ANY record forms, which is exactly reading D-i."
+     },
+     "so_D_ii_entails_D_i": true
+    },
+    "THE_OPEN_GATES_BYTE_RELATIONSHIP": {
+     "the_gate": "context selection, measurement basis selection, Born weights, probability rules, update laws, decoherence mechanisms, and formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate);",
+     "its_four_conjuncts": [
+      "which admissible possibility a new record locks",
+      "at which site",
+      "with what weight",
+      "or at what rate"
+     ],
+     "what_D_ii_supplies_per_conjunct": {
+      "which admissible possibility a new record locks": "the normalized restriction (the weight on alternatives)",
+      "at which site": "the per-site quantification ('For each site')",
+      "with what weight": "the normalized restriction again -- this IS the weight conjunct",
+      "or at what rate": "the total mass"
+     },
+     "VERDICT": "D-ii SUPPLIES ALL FOUR CONJUNCTS OF THE FORMATION-RULE GATE FROM ONE QUANTITY.  Where Drafts A, B and C re-partition the gate (moving the weight conjunct's ARGUMENT inward and leaving the rest outside), D-ii CLOSES IT.  The whole parenthesis would leave the Open Gates list, not just a phrase within it.",
+     "the_price_of_that": "this is the largest constitutional move of any draft priced here.  It is also the cleanest: one sentence, one quantity, one gate closed, no residue.  Both facts are the owner's to weigh."
+    },
+    "NEW_CONFLICT_SURFACE_GRADING_FORMATION_ITSELF": {
+     "what_changed_vs_draft_C": "Draft C's weight was the likelihood with which A FORMING record locks a possibility -- CONDITIONED on formation, and rate-silent.  D-ii grades FORMATION ITSELF: the likelihood that a record forms at all is now axiom content.",
+     "the_Record_axiom_test": {
+      "quote": "Records form.",
+      "the_tension": "Record asserts formation categorically: 'Records form.'  D-ii makes formation graded.  A total mass below unity says a record MIGHT not form.",
+      "reading_1_generic": "'Records form.' is a generic/existential occurrence sentence -- records are the kind of thing that forms, as against a framework in which nothing ever locks.  A graded per-site likelihood is then its quantification and there is NO CONFLICT; D-ii is the natural completion of the 2026-07-04 revision.",
+      "reading_2_categorical": "'Records form.' is read per-site and unconditional.  Then any total mass below unity CONTRADICTS it, and D-ii would force the total mass to be identically one -- which collapses D-ii back to Draft C (rate content becomes vacuous, only the normalized weights survive).",
+      "VERDICT": "BOTH READINGS ARE LIVE AND THEY GIVE DIFFERENT AXIOMS.  Under reading 1 D-ii is strictly stronger than C; under reading 2 D-ii IS C with extra words.  The owner would need to say which, and the memo's current text does not decide it: 'Records form.' stands alone as a two-word sentence with no quantifier."
+     },
+     "landed_consumers_of_formation": {
+      "the_substrate_fact": "on every current arena formation is a DETERMINISTIC PREDICATE, not a rate: Cycle 911/913 lock at the first globally clean boundary (164 lock points), Cycle 918's battery preserves 'formation by the same global-clean predicate', and Cycle 936 preserves it on all 256 branches.",
+      "consequence": "D-ii's RATE content is DEGENERATE on every substrate this lane has built: the total mass is an indicator (formed / not formed), so the rate carries no information the predicate did not already carry.  D-ii's weight content is non-degenerate; its rate content is not testable here.",
+      "is_that_a_conflict": "NO -- a deterministic predicate is the degenerate case of a graded rate, so nothing breaks.  But it means the extra content D-ii buys over Draft C is UNMEASURABLE on current arenas, while its extra constitutional cost is immediate.",
+      "the_913_911_formation_facts_survive": true,
+      "the_918_battery_predicate_survives": true
+     }
+    },
+    "inherits_from_C": [
+     "the well-foundedness precondition (the record-content reading of 'nearest-neighbor conditions')",
+     "the existential/functional hostage (D reuses the ruled-on words 'determined by, and vary with' verbatim, so the 2026-07-02 ruling applies DIRECTLY -- and under the incumbent existential reading D-ii yields no class-equality law either)",
+     "the vacuous-rule regression, but ONLY in the tightened wording; D-raw's conjunctive form repairs it"
+    ]
+   },
+   "THE_COMPLETE_STRENGTH_LATTICE": {
+    "primitives": {
+     "A3_bare": "weights exist on the alternatives at each site",
+     "LOC": "the weight assignment is a function of the neighbourhood map",
+     "COV": "that function is equivariant under the admissibility rule's two named covariance groups",
+     "FUNC": "the menu clause read functionally rather than existentially",
+     "SUPP": "availability IS the support (probability zero is unavailable -- owner ratification carried)",
+     "RATE": "the likelihood that a record forms at all is supplied"
+    },
+    "decompositions": {
+     "DRAFT_A": "A3_bare + LOC + FUNC",
+     "DRAFT_B": "A3_bare + LOC + FUNC + COV",
+     "DRAFT_C": "A3_bare + LOC + FUNC + COV + SUPP  (minus the replaced sentence's vacuous-rule exclusion)",
+     "DRAFT_D_i": "RATE only.  Contains NO A3_bare -- no weight on any alternative.",
+     "DRAFT_D_ii_raw_conjunctive": "A3_bare + LOC + FUNC + COV + RATE, with availability RETAINED as a conjunct (so the vacuous-rule exclusion survives and SUPP is not asserted)",
+     "DRAFT_D_ii_tightened": "A3_bare + LOC + FUNC + COV + SUPP + RATE"
+    },
+    "the_ordering": [
+     "D-i is INCOMPARABLE with A, B and C: it supplies a conjunct none of them supplies (RATE) and omits the one they all supply (A3_bare).  It is not weaker or stronger; it is about a different object.",
+     "A < B < C  (each strictly stronger, under the functional reading)",
+     "C < D-ii-tightened  (D-ii adds RATE)",
+     "D-ii-raw-conjunctive and C are INCOMPARABLE: D-ii-raw adds RATE and keeps the vacuous-rule exclusion but does not assert SUPP; C asserts SUPP but loses the exclusion.",
+     "D-ii-tightened is the STRONGEST object priced in this block, and the only one that closes the Open Gates formation-rule parenthesis entirely.",
+     "under the EXISTENTIAL reading of 'determined by, and vary with', C and both D-ii forms lose LOC and therefore lose the class-equality law -- collapsing toward bare existence plus RATE."
+    ],
+    "the_one_line_the_owner_needs": "D-i and D-ii are not two phrasings of one idea; they are different axioms.  D-i supplies a rate and no Born content.  D-ii supplies the menu, the Born weights and the rate as one quantity and closes the whole formation gate.  The owner's written words are naturally D-i."
+   },
+   "CONFLICT_CHECKS": {
+    "CC1_no_weights_fence": "CONFLICT for both readings.  D-i is not rescued by having no per-item weights: the fence's companion policy clause names 'define probabilities' separately from 'assign weights', and a formation likelihood is a probability.",
+    "CC7_binding_policy": "CONFLICT for both readings, for the same reason.  D-ii additionally 'assigns weights'.",
+    "CC2_open_gates": "D-i touches the 'at what rate' conjunct; D-ii closes all four.  Both require the parenthesis to be edited; D-ii requires it to be DELETED.",
+    "CC3_record": "THE NEW SURFACE.  See NEW_CONFLICT_SURFACE_GRADING_FORMATION_ITSELF.  Draft C was rate-silent and therefore never touched 'Records form.'; D grades it.",
+    "CC4_realized_state_primitive": "NO CONFLICT under the primitive's own scoping, as for A/B/C.  The no-averaging clause still forbids cashing D's likelihoods against the census.",
+    "CC6_936_normalization": "D-ii RESOLVES a gap the other drafts leave: Cycle 936 measured normalization as forced per choice node, and no other draft states it.  D-ii's normalized restriction is normalized by construction, and its total mass carries the residue.  A genuine tidiness purchase."
+   },
+   "certificate": "QD_DRAFT_D_THE_SIMPLIFICATION",
+   "draft_D_raw": "For each site, the available possibilities and the likelyhood of forming a record are determined by, and vary with, the nearest-neighbor conditions.",
+   "draft_D_ii_tightened": "For each site, the likelihood that a record forms locking each local possibility is determined by, and varies with, the nearest-neighbor conditions; the available possibilities are those of nonzero likelihood.",
+   "pass_": true
+  },
+  "QS_SUPP_CONSUMER_SWEEP": {
+   "what_SUPP_is": "the identification 'the available possibilities are those of nonzero weight' -- availability becomes the weight function's SUPPORT rather than a primitive set.  Carried by DRAFT C and by the TIGHTENED D-ii.  NOT carried by Draft A, Draft B, or D-raw's conjunctive form.",
+   "why_it_is_swept_separately": "SUPP is the only clause in this block that RETYPES an object the whole repo already consumes.  Weights are new content and break nothing by existing; retyping availability from a SET to the SUPPORT OF A FUNCTION reaches every landed result that does set algebra on menus.",
+   "HARD_BREAKS": [
+    {
+     "id": "S1_GRADED_CONSTRAINT_COEXISTENCE_LOSES_ITS_SUBJECT",
+     "quotes": [
+      {
+       "source": "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md",
+       "quote": "Availability is binary.",
+       "byte_present": true
+      },
+      {
+       "source": "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md",
+       "quote": "availability filters outcomes, never weights",
+       "byte_present": true
+      },
+      {
+       "source": "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md",
+       "quote": "the conditional is undefined rather than silently normalized",
+       "byte_present": true
+      }
+     ],
+     "what_breaks": "the landed N1-v2 coexistence result is the theorem that grading and availability COEXIST because they are different interface objects.  SUPP fuses them, so the theorem loses its subject.  Sharper: the note's named ZERO-AVAILABLE-TOTAL BOUNDARY -- the case where the available elements have total weight zero -- becomes VACUOUS under SUPP, because an available element cannot have weight zero by definition.  A named boundary the repo deliberately kept explicit is deleted by definition rather than resolved.",
+     "severity": "HARD"
+    },
+    {
+     "id": "S2_FINITE_COVARIANT_RULE_SPACE_BECOMES_CONTINUOUS",
+     "quotes": [
+      {
+       "source": "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+       "quote": "The site's available subset is one of",
+       "byte_present": true
+      },
+      {
+       "source": "docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md",
+       "quote": "number that actually vary with neighbors",
+       "byte_present": true
+      }
+     ],
+     "what_breaks": "two landed classification theorems count RULES AS SET-VALUED MAPS.  The informative-fraction note's rule space is the four subsets {empty, {0}, {1}, {0,1}} per orbit; the extensional probe counts 3^24 - 1 covariant label-equivariant tables.  Under SUPP a rule is a weight function, the rule space is CONTINUOUS, and both counts cease to be counts of anything.  The k/64 quantization result rests on the finite space.",
+     "severity": "HARD"
+    },
+    {
+     "id": "S3_TYPE_LEVEL_INDEPENDENCE_WITNESS_IS_RETYPED",
+     "quotes": [
+      {
+       "source": "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md",
+       "quote": "Availability is a set-valued static relation.",
+       "byte_present": true
+      }
+     ],
+     "what_breaks": "a landed independence theorem is explicitly TYPED: it argues that a set-valued static relation cannot uniquely define a relation among states.  SUPP performs exactly the retyping the argument holds fixed, so the witness must be re-derived on the new type.",
+     "severity": "HARD"
+    },
+    {
+     "id": "S4_SET_EQUIVARIANCE_IS_WEAKER_THAN_WEIGHT_EQUIVARIANCE",
+     "quotes": [
+      {
+       "source": "docs/EMPTY_STATE_BOOTSTRAP_ALL_OPEN_AVAILABILITY_ORBIT_DICHOTOMY_DEGREE_NINE_CHIRALITY_WALL_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+       "quote": "proper-cubic-invariant as a set",
+       "byte_present": true
+      }
+     ],
+     "what_breaks": "THE ONE THAT BEARS ON THIS BLOCK'S OWN COVARIANCE RESULT.  The bootstrap/chirality theorems derive g.A0 = A0 -- invariance of the availability SET.  A weight function requires w o g = w, which is STRICTLY STRONGER: a flip-symmetric SUPPORT can carry a flip-odd WEIGHT.  So SUPP does not merely preserve these theorems' inputs, it under-determines their conclusions: the degree-nine chirality wall and the orbit dichotomy would have to be re-derived on the weight.  This also SHARPENS this block's COV finding -- Draft B/C/D's inherited covariance is a constraint on the WEIGHT, and is therefore strictly stronger than the set-covariance the current axiom carries.",
+     "severity": "HARD"
+    },
+    {
+     "id": "S5_ZERO_WEIGHT_MENU_MEMBERS_ARE_EXPLICITLY_ALLOWED_TODAY",
+     "quotes": [
+      {
+       "source": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+       "quote": "zero outcomes and repeated outcomes",
+       "byte_present": true
+      }
+     ],
+     "what_breaks": "a landed Born-form theorem carries an explicit finite-menu convention admitting ZERO OUTCOMES as menu members.  SUPP makes 'zero-weight member of a menu' a contradiction in terms.  The convention is load-bearing there for a ternary-to-binary collapse.",
+     "severity": "HARD"
+    },
+    {
+     "id": "S6_THE_911_913_925_ARENA_TRIO",
+     "quotes": [
+      {
+       "source": "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+       "quote": "164 realized and 164 counterfactual",
+       "byte_present": true
+      }
+     ],
+     "what_breaks": "the lane's own arena is 328 site-possibility pairs, half of them COUNTERFACTUAL -- available but unrealized.  Cycle 911 computes |A| = 2 as a SET CARDINALITY at every lock point and holds O2 (which possibility) and O3 (with what weight) apart as separate open questions.  SUPP merges them.  The counterfactual half of the arena is exactly what a weight-zero assignment would delete, and every freedom count in THIS BLOCK is computed over that arena.",
+     "severity": "HARD -- and it is self-referential: it is this block's own arena"
+    }
+   ],
+   "MECHANICAL_BLOCKER": {
+    "finding": "the axiom memo's OWN primary runner byte-asserts the sentence Drafts C and D would replace.",
+    "runner": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
+    "assertions_in_that_runner": 2,
+    "runner_scripts_byte_quoting_the_sentence": 23,
+    "consequence": "replacing the sentence is not a documentation edit.  It breaks a byte-level guard in the axiom set's own companion runner and invalidates every runner needle that quotes the clause.  Additionally the sentence is carried verbatim in the machine registry (docs/audit/data/axiom_premise_nodes.json) and in the controlled vocabulary, and the registry is premise-hash guarded -- the 2026-07-02 precedent records that a wording update 'invalidates prior direct minimal_axioms audits; the independent audit lane re-audits'.",
+    "note": "counted mechanically by this runner, not quoted from the sweep."
+   },
+   "THE_NEAREST_PRECEDENT": {
+    "quote": {
+     "source": "docs/work_history/repo/review_feedback/CONSTITUTIONAL_LOWER_BOUND_CLOSURE_AND_CLAUSE_DELETION_CYCLE31_NOTE_2026-07-14.md",
+     "quote": "positive-support or allowed-successor projection",
+     "byte_present": true
+    },
+    "surface_class": "REVIEW-FEEDBACK WORK HISTORY, not a landed doc and not authoritative -- recorded as precedent shape only.",
+    "finding": "the closest thing to SUPP already written in the repo: a constitutional-closure exercise contemplated deriving the available possibilities as the POSITIVE-SUPPORT projection of a fuller law object.  It was an exercise entry, not a landed adoption, and it is the only prior occurrence of the support reading found."
+   },
+   "VERDICT": "SUPP IS THE MOST EXPENSIVE CLAUSE PRICED IN THIS BLOCK, AND ITS COST IS ALMOST ENTIRELY INVISIBLE FROM THE AXIOM TEXT.  Adding weights breaks nothing by existing; RETYPING AVAILABILITY reaches at least six landed results that do set algebra on menus -- a coexistence theorem whose named zero-total boundary it deletes, two finite rule-space classifications it makes continuous, a typed independence witness it retypes, a chirality wall whose set-equivariance it strengthens without re-deriving, a Born-form convention it contradicts, and THIS BLOCK'S OWN ARENA, half of which is counterfactual.  Drafts A, B and D-raw do not pay this cost.  Drafts C and the tightened D-ii do.  The owner should know that the difference between 'the available possibilities are those of nonzero weight' and simply keeping the availability conjunct is the difference between a one-sentence edit and a re-derivation programme.",
+   "WHICH_DRAFTS_PAY": {
+    "DRAFT_A": "does not pay -- availability untouched",
+    "DRAFT_B": "does not pay -- availability untouched",
+    "DRAFT_C": "PAYS IN FULL",
+    "DRAFT_D_raw_conjunctive": "does not pay -- availability retained as a conjunct",
+    "DRAFT_D_ii_tightened": "PAYS IN FULL"
+   },
+   "certificate": "QS_SUPP_CONSUMER_SWEEP",
+   "pass_": true
+  },
   "Q3_THE_REQUIRED_AND_MINIMAL_DOSSIER": {
    "certificate": "Q3_THE_REQUIRED_AND_MINIMAL_DOSSIER",
    "a_requiredness": {
@@ -1787,9 +2041,10 @@
      "COV": "that function is equivariant under the covariance group of the admissibility rule (lattice translations and proper cubic rotations).",
      "ADM2": "the neighborhood map determines which possibilities are admissible at a site -- ALREADY AN AXIOM (ADM_VARY)."
     },
-    "draft_A_decomposed": "A3_bare AND LOC  (reading R2).  Draft A does not restate ADM2 and does not carry COV.",
-    "draft_B_decomposed": "ADM2 AND A3_bare AND LOC AND COV.  ADM2 is already an axiom, so ON TOP OF THE EXISTING AXIOM SET Draft B == A3_bare + LOC + COV.",
-    "is_B_exactly_A3_plus_locality": "NO -- IT IS A3 + LOCALITY + COVARIANCE.  The spec's proposed lattice ('B = A3 + locality') UNDERSTATES Draft B by one conjunct.  The covariance rider is not written in Draft B's words; it is INHERITED, because Draft B places the weight inside a rule the axiom's first sentence already declares covariant.  This is the block's correction to the spec's own framing and it is the difference between 54 free numbers and 3 on the control arena.",
+    "draft_A_decomposed": "A3_bare AND LOC  (reading R2).  Draft A does not restate ADM2 and does not carry COV -- but it still needs FUNC (below) for its class-equality content to be well defined.",
+    "FUNC": "the menu clause read as a per-site FUNCTION of the neighbourhood rather than existentially.  THE CURRENT AXIOM DOES NOT SUPPLY THIS: the 2026-07-02 owner ruling fixes 'vary with' as existential.",
+    "draft_B_decomposed": "ADM2-as-FUNC AND A3_bare AND LOC AND COV.  CORRECTED AFTER A CHECKER REFUTATION: an earlier version of this lattice said ADM2 'is already an axiom' and therefore dropped it, giving B == A3_bare + LOC + COV.  That is WRONG, and it contradicted this block's own Q1 passenger finding.  ADM2 is an axiom only in its EXISTENTIAL form; Draft B's first conjunct states it FUNCTIONALLY.  So on top of the existing axiom set, Draft B == A3_bare + LOC + COV + FUNC, and Draft B's first conjunct is not redundant -- it IS the existential-to-functional upgrade, written out.  Draft A carries the same FUNC upgrade silently.",
+    "is_B_exactly_A3_plus_locality": "NO -- IT IS A3 + LOCALITY + COVARIANCE + THE EXISTENTIAL-TO-FUNCTIONAL UPGRADE OF THE MENU CLAUSE.  The spec's proposed lattice ('B = A3 + locality') UNDERSTATES Draft B by one conjunct.  The covariance rider is not written in Draft B's words; it is INHERITED, because Draft B places the weight inside a rule the axiom's first sentence already declares covariant.  This is the block's correction to the spec's own framing and it is the difference between 54 free numbers and 3 on the control arena.",
     "the_lattice": [
      {
       "level": 0,
@@ -1804,14 +2059,20 @@
       "note": "existence only; NO class law; weights may vary freely across same-neighbourhood sites"
      },
      {
+      "level": "1.5",
+      "content": "FUNC alone (the menu clause upgraded from existential to functional)",
+      "freedom_on_C913_CONTROL": 164,
+      "note": "no weight content at all; listed because BOTH drafts carry it as a passenger and neither names it"
+     },
+     {
       "level": 2,
-      "content": "A3_bare + LOC  (= DRAFT A, reading R2)",
+      "content": "A3_bare + LOC + FUNC  (= DRAFT A, reading R2)",
       "freedom_on_C913_CONTROL": 54,
       "note": "class-equality law at the chosen formalization"
      },
      {
       "level": 3,
-      "content": "A3_bare + LOC + COV  (= DRAFT B)",
+      "content": "A3_bare + LOC + COV + FUNC  (= DRAFT B)",
       "freedom_on_C913_CONTROL": "54 at the substrate formalization F3 (covariance adds nothing measurable there); 3 / 6 / 7 at the AXIOM formalization F5 at k = 2 / 3 / 4",
       "note": "class-equality law, plus equivariance -- which bites only at F5, the six-slot colouring the cubic group acts on"
      },
@@ -1977,10 +2238,50 @@
      "tooth": "T21_strength_ordering_is_reading_dependent",
      "fired": true,
      "detail": "C > B under the functional reading; weaker than B under the existential reading -- the ordering is not unconditional"
+    },
+    {
+     "tooth": "T22_D_i_detected_as_supplying_no_Born_content",
+     "fired": true,
+     "detail": "the owner's written D-raw has no per-possibility quantifier; the tightened D-ii does"
+    },
+    {
+     "tooth": "T23_D_raw_retains_availability_conjunct",
+     "fired": true,
+     "detail": "D-raw keeps the replaced sentence's content as a conjunct; C derives it and loses the vacuous-rule exclusion"
+    },
+    {
+     "tooth": "T24_D_ii_gate_closure_is_checked_against_the_byte_quoted_gate",
+     "fired": true,
+     "detail": "all four conjuncts byte-present and all four accounted for by D-ii"
+    },
+    {
+     "tooth": "T25_spelling_defect_caught",
+     "fired": true,
+     "detail": "axiom text is machine-needled; a misspelling breaks needles"
+    },
+    {
+     "tooth": "T26_records_form_tension_is_reading_dependent",
+     "fired": true,
+     "detail": "under the generic reading there is no conflict; under the categorical reading D-ii collapses to Draft C"
+    },
+    {
+     "tooth": "T27_supp_sweep_quotes_are_byte_verified",
+     "fired": true,
+     "detail": "every SUPP-sweep quote is checked against its own source file"
+    },
+    {
+     "tooth": "T28_supp_cost_mapping_discriminates",
+     "fired": true,
+     "detail": "only C and the tightened D-ii assert the support identification"
+    },
+    {
+     "tooth": "T29_mechanical_blocker_is_counted",
+     "fired": true,
+     "detail": "the byte-guard count is computed by reading the scripts directory"
     }
    ],
-   "fired": 21,
-   "total": 21,
+   "fired": 29,
+   "total": 29,
    "pass": true
   },
   "H_DOUBLE_RUN": {
@@ -2083,28 +2384,56 @@
     "draft_C_subsumes_replaced_sentence": false,
     "draft_C_strictly_stronger_than_B_functional_reading": true,
     "draft_C_incomparable_with_current_axiom_set": true,
+    "supp_hard_breaks": [
+     "S1_GRADED_CONSTRAINT_COEXISTENCE_LOSES_ITS_SUBJECT",
+     "S2_FINITE_COVARIANT_RULE_SPACE_BECOMES_CONTINUOUS",
+     "S3_TYPE_LEVEL_INDEPENDENCE_WITNESS_IS_RETYPED",
+     "S4_SET_EQUIVARIANCE_IS_WEAKER_THAN_WEIGHT_EQUIVARIANCE",
+     "S5_ZERO_WEIGHT_MENU_MEMBERS_ARE_EXPLICITLY_ALLOWED_TODAY",
+     "S6_THE_911_913_925_ARENA_TRIO"
+    ],
+    "supp_paid_by": [
+     "DRAFT_C",
+     "DRAFT_D_ii_tightened"
+    ],
+    "draft_D_i_supplies_born_content": false,
+    "draft_D_ii_closes_all_four_formation_conjuncts": true,
+    "draft_D_raw_retains_availability_conjunct": true,
     "draft_C_raw_defects": [
      "dangling_same",
      "undefined_available",
      "circular_with_the_support_identification"
     ]
    },
-   "science_digest": "5cc0f4d4509bd1d36bc313a8230b2e5ae15529bd7eaf5b8d27b594e030f37ab1",
+   "science_digest": "950fbab8c0857a96f0780b5d796d8b76f5ad81862fcb5f8b00917885f1a5f2aa",
    "timing_free": true,
    "pass": true
   },
   "I_RUNTIME": {
    "certificate": "I_RUNTIME",
-   "elapsed_s": 0.17,
+   "elapsed_s": 0.286,
    "limit_s": 900,
    "pass": true
   }
  },
  "all_certificates_pass": true,
  "failures": [],
- "gates_total": 90,
- "gates_passed": 90,
- "science_digest": "5cc0f4d4509bd1d36bc313a8230b2e5ae15529bd7eaf5b8d27b594e030f37ab1",
+ "gates_total": 99,
+ "gates_passed": 99,
+ "science_digest": "950fbab8c0857a96f0780b5d796d8b76f5ad81862fcb5f8b00917885f1a5f2aa",
+ "checker_findings_adopted": [
+  {
+   "refutation": "NATURALITY_COROLLARY_IS_INCOMPLETE",
+   "adopted": "the translation half of ADM_RULE's covariance group is now computed and reported (TRANSLATION_HALF).  Every Draft-B freedom count in this receipt is restated as an UPPER BOUND.  The join itself is not computable from pinned bytes and is named as a gap."
+  },
+  {
+   "refutation": "STRENGTH_LATTICE_INTERNALLY_INCONSISTENT",
+   "adopted": "the lattice no longer treats Draft B's first conjunct as redundant.  FUNC is named as its own level and both drafts are shown to carry it.  This removes a real contradiction between the lattice and this block's own Q1 finding."
+  },
+  {
+   "probe_defect_found_in_the_CHECKER_not_the_primary": "POLICY_CLAUSE_MAY_BE_SUPERSEDED was a false positive of a crude proximity probe over a chronological log.  Made precise, it CONFIRMS the clause is current, owner-approved and binding."
+  }
+ ],
  "provenance": {
   "method": "PINNED-BYTES ONLY.  The substrate is not re-run; every neighbourhood datum is read from Cycle 913's published per-lock-point rows and Cycle 913/918's published context ladders.  Declared cost choice.",
   "worker": "Claude Opus 5 worker under supervisor spec (substitution disclosed).",

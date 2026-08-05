@@ -7,14 +7,16 @@ PASS Q0_PRIOR_ART_SWEEP
 PASS Q1_THE_NEIGHBORHOOD_MAP_FORMALIZED
 PASS Q2_WHAT_THE_CLAUSE_FORCES
 PASS QC_DRAFT_C_THE_REPLACEMENT_WORDING
+PASS QD_DRAFT_D_THE_SIMPLIFICATION
+PASS QS_SUPP_CONSUMER_SWEEP
 PASS Q3_THE_REQUIRED_AND_MINIMAL_DOSSIER
 PASS F_PARAMETRIC_FIREWALL
 PASS G_FALSIFIERS
 PASS H_DOUBLE_RUN
 PASS I_RUNTIME
 restriction gates: 45/45
-all gates: 90/90
-teeth fired: 21/21
+all gates: 99/99
+teeth fired: 29/29
 same-class site pairs exist: True
 936 six-site classes (F3): [[254, 540, 558], [450, 475], [715]]
 913 control 164 sites -> classes by formalization: {'F0_EMPTY': 1, 'F1_OPENNESS': 4, 'F2_ORDINALS': 51, 'F3_NN_RECORD_CONTENT': 54, 'F4_SITE_NAMING': 164}
@@ -26,8 +28,10 @@ conflicts: CC1 Draft-B-only TEXTUAL (memo); CC7 Draft-B-only TEXTUAL (OWNER-APPR
 prior art: graded_constraint v1+v2 (2026-07-04) proposed a nearest-neighbour-conditioned weight function and were NEVER REGISTERED; the FUSION of availability and weight is the novel content
 passenger cost (BOTH drafts): silently upgrades the Admissibility menu clause from EXISTENTIAL to FUNCTIONAL
 DRAFT C (replacement): well founded ONLY under the record-content reading of 'nearest-neighbor conditions'; does NOT subsume the replaced sentence (loses the vacuous-rule exclusion); strictly stronger than B under the functional reading, weaker under the existential one; C-raw defective (dangling 'the same', undefined 'available')
-science digest: 5cc0f4d4509bd1d36bc313a8230b2e5ae15529bd7eaf5b8d27b594e030f37ab1
-receipt sha256: aabff6733be96e55b2f641eb3f9436331f92e3aeb42267eabd9291810223b7cc
-elapsed: 0.170s / 900s
+DRAFT D-i (the owner's literal words): a per-site RATE only -- supplies NO Born content, and still pays the full constitutional price (worst cost/purchase ratio of the five objects priced).  DRAFT D-ii: ONE quantity subsuming menu (support) + Born weights (normalized) + rate (total mass), closing ALL FOUR Open-Gates formation conjuncts; grades 'Records form.' (new conflict surface, reading-dependent); rate content DEGENERATE on every current arena
+SUPP (availability := nonzero weight, asserted by C and tightened D-ii ONLY): 6 byte-verified HARD BREAKS in landed results, plus a byte-guard in the axiom memo's own companion runner and 23 runner scripts quoting the replaced sentence.  A, B and D-raw do not pay it.
+science digest: 950fbab8c0857a96f0780b5d796d8b76f5ad81862fcb5f8b00917885f1a5f2aa
+receipt sha256: 15d2bc8f63ee181bf8897584df0b2668cbfd7e8f21f79ea98deaa3c2712dc8ad
+elapsed: 0.286s / 900s
 ALL CERTIFICATES PASS: True
 ===== end runner cache =====

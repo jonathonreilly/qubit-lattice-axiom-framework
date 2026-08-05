@@ -1,0 +1,424 @@
+{
+ "block": "cycle944_neighborhood_weight_independent_check",
+ "role": "independent checker, spec'd to refute",
+ "cycles": [
+  944
+ ],
+ "authority": "none",
+ "audit": "unset",
+ "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK_WITH_FINDINGS",
+ "headline": "THE PRIMARY'S LOAD-BEARING NUMBERS ALL REPRODUCE UNDER INDEPENDENT MECHANISMS (union-find partitions, a second normalization for every byte-quote, and Cycle 913's own independent-checker ladder), AND THE PRIMARY'S SELF-CAUGHT COVARIANCE CORRECTION IS CONFIRMED AT THE SOURCE LEVEL.  TWO REAL DEFECTS FOUND: the naturality corollary is INCOMPLETE (ADM_RULE names two covariance groups and the primary computed only the cubic one, understating Draft B), and the strength lattice is INTERNALLY INCONSISTENT with the primary's own passenger finding (Draft B's first conjunct is not redundant -- it IS the existential-to-functional upgrade).  Draft C's regression is confirmed by explicit construction.  No refutation touches a partition, a quote, a conflict verdict, or the firewall.",
+ "checks": [
+  {
+   "check": "A0_all_quotes_verified_under_an_independent_normalization",
+   "pass": true,
+   "detail": "failures: []"
+  },
+  {
+   "check": "A1_no_formalization_reads_an_outcome_or_weight_field",
+   "pass": true,
+   "detail": "circular: {}"
+  },
+  {
+   "check": "A1b_context_fingerprint_definition_located",
+   "pass": true,
+   "detail": "definitions found: 2"
+  },
+  {
+   "check": "A1c_context_fingerprint_is_not_built_from_the_selection",
+   "pass": true,
+   "detail": "defs: ['sha256(', 'r[\"context_fingerprint\"]']"
+  },
+  {
+   "check": "A2_partitions_agree_with_the_primary",
+   "pass": true,
+   "detail": "mine vs primary: all agree"
+  },
+  {
+   "check": "A2b_partitions_agree_with_913s_INDEPENDENT_CHECKER",
+   "pass": true,
+   "detail": "mine vs 913-checker: all agree"
+  },
+  {
+   "check": "A2c_six_site_partition_reproduced",
+   "pass": true,
+   "detail": "mine=[[254, 540, 558], [450, 475], [715]] primary=[[254, 540, 558], [450, 475], [715]]"
+  },
+  {
+   "check": "A2d_same_class_pairs_genuinely_exist",
+   "pass": true,
+   "detail": "largest classes: {'F0_EMPTY': 164, 'F1_OPENNESS': 94, 'F2_ORDINALS': 67, 'F3_NN_RECORD_CONTENT': 30, 'F4_SITE_NAMING': 1}"
+  },
+  {
+   "check": "A3_cubic_uses_the_colouring_not_the_fingerprint",
+   "pass": true,
+   "detail": "context_colorings=True context_fingerprint=False"
+  },
+  {
+   "check": "A4_translation_action_is_a_real_landed_symmetry",
+   "pass": true,
+   "detail": "Z_11, 56 orbits meet the lock set"
+  },
+  {
+   "check": "A4b_CE_is_stated_as_definitional_not_derived",
+   "pass": true,
+   "detail": "CE must not claim to be derived from anything"
+  },
+  {
+   "check": "A5_scoping_phrases_are_byte_present",
+   "pass": true,
+   "detail": "{'is supplied by it': True, 'It does not supply': True, 'Nothing more is supplied': True}"
+  },
+  {
+   "check": "A5b_no_prohibitive_sentence_in_the_primitive",
+   "pass": true,
+   "detail": "prohibitive sentences found: []"
+  },
+  {
+   "check": "A5c_no_averaging_clause_present_and_carried",
+   "pass": true,
+   "detail": "the primary must carry the no-averaging cost"
+  },
+  {
+   "check": "A5d_record_axiom_has_no_non_supply_clause",
+   "pass": true,
+   "detail": "found: []"
+  },
+  {
+   "check": "A5e_binding_policy_says_admissibility_does_not_assign_weights",
+   "pass": true,
+   "detail": "assign weights=True subject=True"
+  },
+  {
+   "check": "A5f_policy_clause_governs_the_CURRENT_axiom_set",
+   "pass": true,
+   "detail": "governing dated bullet=2026-06-29 names_current_source=True memo_points_here=True"
+  },
+  {
+   "check": "A6_strength_lattice_is_internally_consistent",
+   "pass": true,
+   "detail": "passenger=True FUNC_named_in_decomposition=True FUNC_on_lattice=True"
+  },
+  {
+   "check": "A6b_B_stronger_than_A3_witness_is_real",
+   "pass": true,
+   "detail": "largest F3 class recomputed = 30"
+  },
+  {
+   "check": "A7_the_2026_07_02_ruling_is_byte_present",
+   "pass": true,
+   "detail": "the ruling Draft C inherits"
+  },
+  {
+   "check": "A7b_draft_C_vacuous_rule_regression_is_real",
+   "pass": true,
+   "detail": "varies=True all_positive=True availability_vacuous=True"
+  },
+  {
+   "check": "A7c_draft_C_wellfoundedness_claim_reproduced",
+   "pass": true,
+   "detail": "loop closes only under the availability reading"
+  },
+  {
+   "check": "A7d_qubit_supplies_the_independent_domain",
+   "pass": true,
+   "detail": "the corrected form's quantifier needs this axiom to be well formed"
+  },
+  {
+   "check": "A7e_C_entails_B_only_under_both_premises",
+   "pass": true,
+   "detail": "the entailment needs BOTH the functional reading and the support identification"
+  },
+  {
+   "check": "A7f_likelihood_vocabulary_collision_is_real",
+   "pass": true,
+   "detail": "realized-state primitive names: ['probability rule', 'weighting', 'measure']"
+  },
+  {
+   "check": "A10_D_raw_likelihood_phrase_has_no_per_item_quantifier",
+   "pass": true,
+   "detail": "phrase='likelyhood of forming a record are determined by, and vary with, the nearest-neighbor conditions' quantifier_found=False"
+  },
+  {
+   "check": "A10b_D_ii_binds_the_possibility_variable",
+   "pass": true,
+   "detail": "the tightened wording must differ from D-raw in exactly this way"
+  },
+  {
+   "check": "A10c_D_raw_retains_availability_D_ii_derives_it",
+   "pass": true,
+   "detail": "retains=True derives=True"
+  },
+  {
+   "check": "A10d_D_ii_four_conjunct_closure_verified_against_the_gate_bytes",
+   "pass": true,
+   "detail": "gate_present=True conjuncts_in_gate=True all_mapped=True"
+  },
+  {
+   "check": "A10e_records_form_is_an_unquantified_two_word_sentence",
+   "pass": true,
+   "detail": "present=True quantified=False"
+  },
+  {
+   "check": "A10f_formation_is_a_deterministic_predicate_on_current_arenas",
+   "pass": true,
+   "detail": "936 PRESERVED_BATTERY carries the global-clean formation predicate (True); 913 has 164 deterministic lock points"
+  },
+  {
+   "check": "A8_no_weight_value_emitted_as_law_content",
+   "pass": true,
+   "detail": "hits: []"
+  },
+  {
+   "check": "A8b_no_adoption_recommendation",
+   "pass": true,
+   "detail": "hits: []"
+  },
+  {
+   "check": "A8c_no_protected_surface_touched",
+   "pass": true,
+   "detail": "changed: ['logs/runner-cache/frontier_cycle944_neighborhood_weight_2026_07_28.txt', 'outputs/neighborhood_weight_cycle944_receipt_2026_07_28.json', 'scripts/frontier_cycle944_neighborhood_weight_2026_07_28.py'] | protected: []"
+  },
+  {
+   "check": "A8d_no_docs_note_written",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "RG_936_sites",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_936_freedom_per_site",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_936_freedom_per_occasion",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_936_leaves",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_940_no_swap",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_940_menu_sites",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_940_A1",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_940_A2",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_913_locks",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_913_contexts",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "RG_918_MA_locks",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "A9_all_restriction_gates",
+   "pass": true,
+   "detail": "11/11"
+  }
+ ],
+ "counts": {
+  "checks": 47,
+  "passed": 47,
+  "failed": 0,
+  "teeth": 17,
+  "teeth_fired": 17,
+  "refutations": 0
+ },
+ "teeth": [
+  {
+   "tooth": "T1_quote_machinery_rejects_a_corrupted_quote",
+   "fired": true,
+   "detail": "one-token corruption (neighbour/neighbor) is rejected"
+  },
+  {
+   "tooth": "T2_circularity_probe_fires_on_a_planted_outcome_field",
+   "fired": true,
+   "detail": "planted 'selected_item' in a neighborhood definition is caught"
+  },
+  {
+   "tooth": "T3_partition_machinery_detects_a_planted_merge",
+   "fired": true,
+   "detail": "truncating the fingerprint merges classes and is detected"
+  },
+  {
+   "tooth": "T4_source_level_probe_would_catch_the_opposite",
+   "fired": true,
+   "detail": "the probe reads real structure, not a comment"
+  },
+  {
+   "tooth": "T5_uncovered_symmetry_hunt_is_discriminating",
+   "fired": true,
+   "detail": "the probe flags a receipt lacking the translation half and clears the corrected primary that carries it"
+  },
+  {
+   "tooth": "T14_governing_bullet_probe_is_discriminating",
+   "fired": true,
+   "detail": "the probe locates a real dated governing bullet rather than matching any nearby date token"
+  },
+  {
+   "tooth": "T6_conflict_machinery_fires_on_a_planted_prohibition",
+   "fired": true,
+   "detail": "a planted prohibitive sentence is detected by the same regex"
+  },
+  {
+   "tooth": "T7_policy_probe_fires_on_a_planted_negation",
+   "fired": true,
+   "detail": "removing the phrase changes the verdict"
+  },
+  {
+   "tooth": "T8_lattice_probe_fires_on_a_lattice_that_omits_FUNC",
+   "fired": true,
+   "detail": "the substance probe catches an omitting lattice and clears the corrected one"
+  },
+  {
+   "tooth": "T9_regression_model_is_discriminating",
+   "fired": true,
+   "detail": "a model with a zero weight is correctly NOT vacuous"
+  },
+  {
+   "tooth": "T10_draft_C_attacks_are_discriminating",
+   "fired": true,
+   "detail": "the Draft C probes separate the readings rather than passing everything"
+  },
+  {
+   "tooth": "T15_D_reading_probe_is_discriminating",
+   "fired": true,
+   "detail": "the probe separates the owner's wording from the tightened one"
+  },
+  {
+   "tooth": "T16_gate_closure_probe_fires_on_a_short_mapping",
+   "fired": true,
+   "detail": "a mapping covering only two conjuncts would be caught"
+  },
+  {
+   "tooth": "T17_records_form_probe_fires_on_a_planted_quantifier",
+   "fired": true,
+   "detail": "a planted quantifier would change the verdict"
+  },
+  {
+   "tooth": "T11_firewall_probe_fires_on_a_planted_value",
+   "fired": true,
+   "detail": "a planted law-content value is caught by the same regex"
+  },
+  {
+   "tooth": "T12_protected_surface_probe_is_live",
+   "fired": true,
+   "detail": "the diff probe actually sees this block's own commits (3 files)"
+  },
+  {
+   "tooth": "T13_restriction_gate_probe_would_catch_drift",
+   "fired": true,
+   "detail": "a drifted 936 freedom count would fail"
+  }
+ ],
+ "REFUTATIONS": [],
+ "FINDINGS": [
+  {
+   "finding": "PRIMARY_SELF_CORRECTION_CONFIRMED",
+   "detail": "the primary's disclosed self-caught correction is right at the source level: cubic_covariance() consumes context_colorings(...alphabet) and never touches the record-content fingerprint, so the 3/6/7 counts are NOT a coarsening of the 54."
+  },
+  {
+   "finding": "NATURALITY_COMPLETENESS_CONFIRMED",
+   "detail": "the primary adopted this checker's earlier NATURALITY_COROLLARY_IS_INCOMPLETE refutation: ADM_RULE's translation half is now computed and reported, every Draft-B freedom count is restated as an upper bound, and the uncomputable join is named as a gap."
+  },
+  {
+   "finding": "PRIMITIVE_READING_SURVIVES",
+   "detail": "the realized-state primitive contains no prohibitive sentence at all -- every non-supply clause is scoped to what the primitive itself carries.  The primary's reading survives an adversarial hunt for imperatives."
+  },
+  {
+   "finding": "POLICY_CLAUSE_CONFIRMED_CURRENT_AND_BINDING",
+   "detail": "an earlier proximity probe in this checker flagged the No-laundering clause as possibly superseded; that was a FALSE POSITIVE of the probe, not a defect in the primary.  Made precise: the clause is governed by the '2026-06-29 -- Foundation reset' bullet, which names docs/MINIMAL_AXIOMS_2026-06-29.md -- the current axiom source -- and it sits in section 6, the very section the axiom memo cites as its own status authority.  The primary's sharpest discriminator STRENGTHENS: the clause is current, owner-approved, and binding.  Checker-side probe fixed and disclosed."
+  },
+  {
+   "finding": "STRENGTH_LATTICE_CORRECTION_CONFIRMED",
+   "detail": "the primary adopted this checker's earlier refutation: Draft B's decomposition now names FUNC (the existential-to-functional upgrade) as a conjunct and the lattice carries it as its own level.  The residual 'already an axiom' string in the primary is inside its disclosure of the fix, not in an assertion -- an earlier substring version of this probe false-positived on it and has been made a substance test."
+  },
+  {
+   "finding": "DRAFT_C_REGRESSION_CONFIRMED",
+   "detail": "an explicit two-condition model satisfies Draft C in full (the weight varies with the conditions) while making the available set the FULL local domain under every condition -- the vacuous rule the 2026-07-02 ruling says the CURRENT sentence excludes.  The primary's claim that Draft C does not subsume the replaced sentence is CONFIRMED by construction, not merely argued."
+  },
+  {
+   "finding": "DRAFT_C_ORDERING_IS_DOUBLY_CONDITIONAL",
+   "detail": "the primary states C > B 'under the functional reading'.  The entailment in fact needs TWO premises: the functional reading AND the availability-is-support identification.  The primary carries the second implicitly.  Not an error -- an under-statement of the conditions."
+  },
+  {
+   "finding": "D_I_READING_CONFIRMED_STRUCTURALLY",
+   "detail": "the likelihood phrase in the owner's written wording is 'likelyhood of forming a record are determined by, and vary with, the nearest-neighbor conditions' -- a single definite noun phrase with no quantifier over possibilities.  The primary's claim that D-raw naturally reads as D-i (a per-site rate, no Born content) is confirmed by structure, not by taste."
+  },
+  {
+   "finding": "D_SHAPE_TRADEOFF_CONFIRMED",
+   "detail": "D-raw keeps availability as a conjunct (so the vacuous-rule exclusion survives) while the tightened D-ii derives it from the support (re-introducing Draft C's regression).  The primary's claim that D's two wordings trade unification against the exclusion is confirmed textually."
+  },
+  {
+   "finding": "RECORDS_FORM_AMBIGUITY_IS_REAL",
+   "detail": "'Records form.' appears in the Record axiom as a bare two-word sentence with no quantifier.  The primary's finding that D-ii's grading of formation is reading-dependent -- no conflict under the generic reading, collapse to Draft C under the categorical one -- rests on a genuine textual ambiguity, not a manufactured one."
+  },
+  {
+   "finding": "D_II_RATE_CONTENT_IS_UNTESTABLE_HERE",
+   "detail": "Cycle 936's own receipt byte-carries 'formation by the same global-clean predicate' among its PRESERVED_BATTERY items.  Formation is a predicate on every arena this lane has built, so D-ii's total-mass (rate) content is degenerate and untestable here while its constitutional cost is immediate.  The primary's asymmetry claim is confirmed from a pinned note."
+  }
+ ],
+ "independent_reconstruction": {
+  "mechanism": "union-find over raw per-lock-point rows (the primary used dict grouping); a second whitespace normalization that strips markdown blockquote markers before collapsing (the primary collapsed directly); source-level inspection of Cycle 913's cubic_covariance() rather than its prose; and cross-checking against Cycle 913's INDEPENDENT CHECKER receipt, which the primary never reads.",
+  "classes_recomputed": {
+   "F0_EMPTY": 1,
+   "F1_OPENNESS": 4,
+   "F2_ORDINALS": 51,
+   "F3_NN_RECORD_CONTENT": 54,
+   "F4_SITE_NAMING": 164
+  },
+  "largest_class_recomputed": {
+   "F0_EMPTY": 164,
+   "F1_OPENNESS": 94,
+   "F2_ORDINALS": 67,
+   "F3_NN_RECORD_CONTENT": 30,
+   "F4_SITE_NAMING": 1
+  },
+  "six_site_partition_recomputed": [
+   [
+    254,
+    540,
+    558
+   ],
+   [
+    450,
+    475
+   ],
+   [
+    715
+   ]
+  ],
+  "quotes_reverified": 33
+ },
+ "elapsed_sec": 0.039,
+ "runtime_budget_sec": 900
+}

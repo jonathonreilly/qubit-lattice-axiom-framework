@@ -1776,6 +1776,43 @@ def main() -> int:
             "by nothing by one X gate per boundary with a compile-time "
             "constant mask.  R1 adds no coordinate the pair does not already "
             "have; it renames one.",
+        "FINDING_the_918_dynamical_branch_pair_quantity_is_coordinate_list_relative": {
+            "pinned_918_M_A_dynamical_branch_pairs":
+                m918["M_A"]["BRANCH_PAIRS_dynamical"]["DYNAMICAL_BRANCH_PAIRS"],
+            "R1a_tape_dynamical_branch_pairs":
+                r1a_dyn["DYNAMICAL_BRANCH_PAIRS"],
+            "R1a_tape_candidate_pairs":
+                r1a_dyn["candidate_pairs_among_the_lock_points"],
+            "R1a_tape_literal_911_BRANCH_PAIRS": r1a_lit["BRANCH_PAIRS"],
+            "pinned_918_M_A_literal_911_BRANCH_PAIRS":
+                c5_918["determinism_lemma"][
+                    "literal_branch_pairs_per_modification"]["M_A"],
+            "reading":
+                "the Cycle-918 DYNAMICAL BRANCH PAIR quantity counts lock-point "
+                "pairs that agree on a DECLARED LIST of setup coordinates -- "
+                "the token positions and the prepared endpoint direction -- and "
+                "realize different menu items.  It is therefore relative to that "
+                "list, not to determinism.  R1a exhibits the consequence "
+                "concretely: a TAPE, which this certificate proves is a "
+                "re-labeling of (schedule, tick-0 state) and not a new kind of "
+                "law at all, raises the count from the pinned 3 under M_A to "
+                f"{r1a_dyn['DYNAMICAL_BRANCH_PAIRS']}, purely because each "
+                "splitting pair differs in a THIRD setup coordinate that the "
+                "declared list does not name.  The determinism-relevant "
+                "quantity -- the Cycle-911 CLASS_BRANCH, which demands the FULL "
+                "tick-0 state be shared -- stays 0 under the tape exactly as it "
+                "does under M_A and under every gate set.  No Cycle-918 verdict "
+                "changes.  What this shows is that the dynamical-branch-pair "
+                "count SIZES AN ARENA RELATIVE TO A DECLARED COORDINATE LIST "
+                "and must always be quoted with that list attached -- which is "
+                "why Cycle 918 called it a DECLARED quantity, and why any "
+                "consumer must not read it as a measure of indeterminism.",
+            "consequence_for_this_block":
+                "it makes the classification sharper, not weaker: 'more "
+                "dynamical branch pairs' is cheap and buys nothing, because a "
+                "re-labeling can manufacture them.  The wall is the functional "
+                "form of law, and only R2 touches it.",
+        },
         "honest_caveat_the_comparator_proxy":
             "the absorption is into the SEMANTIC schedule (the full "
             "per-boundary masked gate list).  The pinned Cycle-911 comparator "
@@ -2279,6 +2316,15 @@ def main() -> int:
         "price": "exactly one sentence, of exactly the A3 shape, unchanged in "
                  "content from what Cycle 913 located and Cycle 918 deferred.  "
                  "Nothing here adopts it.",
+        "a_pinned_quantity_this_block_had_to_qualify":
+            "Cycle 918's DYNAMICAL BRANCH PAIR count is relative to a declared "
+            "list of setup coordinates, not to determinism.  This block's own "
+            "R1 representative -- a tape, proven to be a re-labeling -- raises "
+            f"it from the pinned 3 to "
+            f"{r1a_dyn['DYNAMICAL_BRANCH_PAIRS']} while the Cycle-911 branch "
+            "class stays 0.  918's verdicts are untouched; the number must be "
+            "quoted with its coordinate list attached, and never read as a "
+            "measure of indeterminism.  Full statement in C2.",
         "what_this_block_did_NOT_do":
             "it did not build the successor substrate.  It classified and "
             "priced the space of ways one could be built, and found that space "
@@ -2584,6 +2630,17 @@ def main() -> int:
           f"per boundary ({c['window_boundaries']} boundaries):")
     print(f"      bit-identical = {c['BIT_IDENTICAL_ON_EVERY_PINNED_WIRE']}; "
           f"formation identical = {c['formation_identical']}")
+    inflate = cert_c2[
+        "FINDING_the_918_dynamical_branch_pair_quantity_is_coordinate_list_"
+        "relative"]
+    print(f"  FINDING: a tape -- a proven RE-LABELING -- raises the Cycle-918 "
+          f"dynamical branch pair count from the pinned "
+          f"{inflate['pinned_918_M_A_dynamical_branch_pairs']} (M_A) to "
+          f"{inflate['R1a_tape_dynamical_branch_pairs']}, while the "
+          f"determinism-relevant Cycle-911 branch class stays "
+          f"{inflate['R1a_tape_literal_911_BRANCH_PAIRS']}.  The 918 quantity "
+          f"is relative to its DECLARED coordinate list and is not a measure "
+          f"of indeterminism.")
     cap = cert_c2["capacity_boundary_stated_honestly"]
     print(f"  capacity: {cap['free_state_bits_per_lane']} free state bits per "
           f"lane vs {cap['boundaries_at_the_landed_horizon']} boundaries -- an "

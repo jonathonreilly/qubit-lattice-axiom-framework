@@ -1224,6 +1224,93 @@ def main() -> int:
           pc["I_RUNTIME"]["elapsed_sec"] <= 900,
           {"elapsed": pc["I_RUNTIME"]["elapsed_sec"]})
 
+    # ---- K8: the primary's own caveat, verified independently -------------
+    # The primary reports that Cycle 918's DYNAMICAL BRANCH PAIR count is
+    # relative to a declared coordinate list, and that a tape -- a proven
+    # re-labeling -- inflates it while the 911 branch class stays empty.
+    # A caveat a runner raises against a pinned number is exactly the kind of
+    # claim a checker must not take on trust.
+    def own_dyn(formed, snaps):
+        groups: dict = {}
+        sel = {}
+        for w in formed:
+            rd = c913.read_state_direction(snaps[w])
+            sel[w] = tuple(rd) if rd else None
+            groups.setdefault(
+                (tuple(census[w][2]), setup_direction[census[w][1]]),
+                []).append(w)
+        cand = split = 0
+        for members in groups.values():
+            if len(members) < 2:
+                continue
+            for u, v in combinations(sorted(members), 2):
+                if sel[u] is None or sel[v] is None:
+                    continue
+                cand += 1
+                split += int(sel[u] != sel[v])
+        return {"candidate_pairs": cand, "DYNAMICAL_BRANCH_PAIRS": split}
+
+    def own_literal_branch(formed):
+        per_state: dict = {}
+        for w, s in enumerate(states):
+            per_state.setdefault(s, []).append(w)
+        sid = {}
+        for i, (_s, lanes) in enumerate(per_state.items()):
+            for w in lanes:
+                sid[w] = i
+        matrix = Counter()
+        for u, v in combinations(range(n), 2):
+            matrix[c911.classify_pair(census[u], census[v], sid[u], sid[v],
+                                      formed.get(u),
+                                      formed.get(v))["verdict"]] += 1
+        return matrix[classes["CLASS_BRANCH"]]
+
+    TAPE_C = sum(1 << b for b in range(n + 1) if b % 3 == 0)
+    tape_full_src, _c, _p = texts(
+        sim_fwd, ((KIND_CNOT, TAPE_W, left_w, 0),
+                  (KIND_CNOT, TAPE_W, right_w, 0)))
+    t0 = monotonic()
+    tape_full = own_scan(c863, program, census, states, FULL,
+                         compile_texts(tape_full_src), False, register_cap,
+                         tick0_extra={TAPE_W: TAPE_C}, exclude=(TAPE_W,))
+    t_tape = round(monotonic() - t0, 3)
+    tape_dyn = own_dyn(tape_full["formed"], tape_full["snapshots"])
+    tape_lit = own_literal_branch(tape_full["formed"])
+    ma_dyn = own_dyn(ma_full["formed"], ma_full["snapshots"])
+    ma_lit = own_literal_branch(ma_full["formed"])
+    prim_finding = pc["C2_R1_THE_TAPE"][
+        "FINDING_the_918_dynamical_branch_pair_quantity_is_coordinate_list_"
+        "relative"]
+    check("K8_M_A_dynamical_branch_pairs_reproduced_from_the_pinned_918",
+          ma_dyn["DYNAMICAL_BRANCH_PAIRS"]
+          == m918["M_A"]["BRANCH_PAIRS_dynamical"]["DYNAMICAL_BRANCH_PAIRS"]
+          and ma_dyn["candidate_pairs"] == m918["M_A"][
+              "BRANCH_PAIRS_dynamical"]["candidate_pairs_among_the_lock_points"],
+          {"checker": ma_dyn, "pinned_918": m918["M_A"][
+              "BRANCH_PAIRS_dynamical"]["DYNAMICAL_BRANCH_PAIRS"]})
+    check("K8_the_tape_really_does_inflate_the_918_quantity",
+          tape_dyn["DYNAMICAL_BRANCH_PAIRS"]
+          > ma_dyn["DYNAMICAL_BRANCH_PAIRS"]
+          and tape_dyn["DYNAMICAL_BRANCH_PAIRS"]
+          == prim_finding["R1a_tape_dynamical_branch_pairs"],
+          {"checker_tape": tape_dyn["DYNAMICAL_BRANCH_PAIRS"],
+           "checker_M_A": ma_dyn["DYNAMICAL_BRANCH_PAIRS"],
+           "primary_tape": prim_finding["R1a_tape_dynamical_branch_pairs"]})
+    check("K8_the_911_branch_class_stays_empty_under_the_tape_and_under_M_A",
+          tape_lit == 0 and ma_lit == 0,
+          {"tape": tape_lit, "M_A": ma_lit})
+    check("K8_the_caveat_is_therefore_correct_as_the_primary_states_it",
+          tape_dyn["DYNAMICAL_BRANCH_PAIRS"]
+          > ma_dyn["DYNAMICAL_BRANCH_PAIRS"] and tape_lit == 0,
+          {"reading":
+           "confirmed independently on the checker's own splice, own scan and "
+           "own pair machinery: the DECLARED dynamical-branch-pair count rises "
+           f"from {ma_dyn['DYNAMICAL_BRANCH_PAIRS']} to "
+           f"{tape_dyn['DYNAMICAL_BRANCH_PAIRS']} under a law that this block "
+           "proves is a re-labeling, while the determinism-relevant Cycle-911 "
+           "class stays 0.  The Cycle-918 quantity is coordinate-list-relative "
+           "and is not a measure of indeterminism."})
+
     # ---- G: the checker's own teeth ---------------------------------------
     teeth = []
 
@@ -1368,6 +1455,19 @@ def main() -> int:
             "pass": all(c["pass"] for c in checks
                         if c["check"].startswith("K7_")),
         },
+        "K8_THE_PRIMARYS_CAVEAT_VERIFIED": {
+            "certificate": "K8_THE_PRIMARYS_CAVEAT_VERIFIED",
+            "M_A_dynamical_branch_pairs": ma_dyn,
+            "tape_dynamical_branch_pairs": tape_dyn,
+            "M_A_literal_911_branch_pairs": ma_lit,
+            "tape_literal_911_branch_pairs": tape_lit,
+            "tape_full_horizon_seconds": t_tape,
+            "verdict":
+                "the primary's caveat on the pinned Cycle-918 quantity is "
+                "CORRECT and is confirmed here on an independent path.",
+            "pass": all(c["pass"] for c in checks
+                        if c["check"].startswith("K8_")),
+        },
         "G_TEETH": {"certificate": "G_TEETH", "teeth": teeth,
                     "tooth_count": len(teeth),
                     "pass": all(t["detected"] for t in teeth)},
@@ -1439,6 +1539,19 @@ def main() -> int:
     for r in unswept_rows:
         print(f"  {r['coordinate']:42s} {r['VERDICT']}")
         print(f"      {r['why'][:220]}")
+    print()
+    print("-" * W)
+    print("K8  THE PRIMARY'S CAVEAT ON A PINNED 918 QUANTITY, VERIFIED")
+    print("-" * W)
+    print(f"  M_A   dynamical branch pairs {ma_dyn['DYNAMICAL_BRANCH_PAIRS']:3d}"
+          f"  (pinned 918: "
+          f"{m918['M_A']['BRANCH_PAIRS_dynamical']['DYNAMICAL_BRANCH_PAIRS']})"
+          f"   literal 911 branch pairs {ma_lit}")
+    print(f"  TAPE  dynamical branch pairs "
+          f"{tape_dyn['DYNAMICAL_BRANCH_PAIRS']:3d}  (a proven RE-LABELING)"
+          f"           literal 911 branch pairs {tape_lit}")
+    print("  the DECLARED quantity is coordinate-list-relative; the "
+          "determinism-relevant class is not moved.")
     print()
     print("-" * W)
     print(f"G_TEETH  {'PASS' if certificates['G_TEETH']['pass'] else 'FAIL'}"

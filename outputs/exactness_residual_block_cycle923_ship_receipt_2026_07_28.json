@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); novelty boundary disclosed (the inverse identity previously published in the durability note); supervisor line-by-line review",
+  "block": "toe-time-blockR1-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 0.27s; 83/83 PASS; 12/12 teeth; tables reproduced at 60 dps zero mismatches; step counts confirmed not off-by-one",
+    "primary": "exit 0, 0.32s; 190/190 PASS; 27 source values reproduced before any new number; 12/12 teeth incl. planted-selector firewall tooth; double-run byte-identical"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "n/a \u2014 1st R-family PR (cap evaluation begins at the 3rd)",
+  "cycles": [
+    923
+  ],
+  "files": {
+    "docs/EXACTNESS_RESIDUAL_PRICED_ARROW_IS_LANE_DATA_CYCLE923_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "2b69293741794760cadb3b66b442b615f4c4a401",
+      "sha256": "14fb9631f17ddd010505757117936da0469fb6bf9082bbc5d919789b61a85391"
+    },
+    "logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt": {
+      "git_blob": "be6d3ffe4cb1e4236bbea617c708ffc2730a528a",
+      "sha256": "da37104fb632c908e88daccd235d2cb5f7f8af4c4e033e9c2c8e035017fb5106"
+    },
+    "logs/runner-cache/frontier_cycle923_exactness_residual_independent_check_2026_07_28.txt": {
+      "git_blob": "b8f54b4658eaa36193b89fd21ee67d3d76b689ad",
+      "sha256": "e2399220392b617982a63f82ce313e2829c9d580cff69a1120ef7671b3ef1125"
+    },
+    "outputs/exactness_residual_cycle923_receipt_2026_07_28.json": {
+      "git_blob": "08dd6e8e3ee65f817a50ad7e7c7ab8166cdd952e",
+      "sha256": "5bdeca39e99eeac21f8f0de2d28cc4a6b5e12bc6aa3d7d928dd13e7570411a29"
+    },
+    "outputs/exactness_residual_independent_check_cycle923_receipt_2026_07_28.json": {
+      "git_blob": "a85e2e74851384e7250acd005386e9563faeaa38",
+      "sha256": "7181e27cfb017509b8b04b7496249a30df792d7ddb391d3329623a4d38d15ea0"
+    },
+    "scripts/frontier_cycle923_exactness_residual_2026_07_28.py": {
+      "git_blob": "e023c8c03359c3a5d606da758a5cb8ef17c03d05",
+      "sha256": "9c03a600e3963bfbc169cc8238744b91aae333d5f668a0e83f371c22ea206366"
+    },
+    "scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28.py": {
+      "git_blob": "2612bf213ad7c041abf104c147e2dea70afe3857",
+      "sha256": "363079f5be4cbee9a4bac0b28c2e95f553ae929eae3530563df53e18922255ee"
+    }
+  },
+  "headline": "THE EXACTNESS RESIDUAL PRICED AND SPLIT: the separatrix-vs-attractor tension DISSOLVES (g(r)=sqrt(r/2) is exactly f^{-1} of f(r)=2r^2; reciprocal multipliers 2 and 1/2 forced by the inverse-function rule; S2 is the Lyapunov function orienting the pair; the S6 sentence a compression artefact); coincidence DEFLATED (fixed-point/uniform/max-entropy/equipartition = ONE fact \u2014 singly distinguished); verdict UNEXPLAINED-BECAUSE-ARROW-CONDITIONAL (no dynamics is derived; GENERIC under g \u2014 ratio 1/2, 17 steps, entire-half-line basin; positively surprising under retained-anchored f; NEUTRAL under balanced alternation \u2014 verdict set by arrow balance 2^(n_f-n_g)); NEW arrow-universality no-go (stability alternates for increasing maps with Fix {0,1/2,1}; no arrow concentrates on 1/2 AND preserves the other lanes; escape = unregistered extra cells) \u2014 exactness accounts are LANE-CONDITIONAL, the (i-realization) frontier's content is the ARROW-ASSIGNMENT; the residual splits: supported half measure-free (no deficit), surprise half UNSTATABLE without a measure the primitive forbids; c1 one-sentence lane-conditional arrow priced (alone moves verdict to GENERIC); audit row: the ~3e-6 comparator digit is tau-mass-convention dependent (zero at 1776.96903 MeV) \u2014 the <1e-5 GATE is robust; cite the gate, not the digit; firewall exhibit: each registered setting uniquely maximizes a DIFFERENT functional (r=0 has the stronger exactness story) \u2014 extremality cannot select a lane",
+  "independence": "checker on independent symbolic + 60-dps machinery; 83/83 checks, 12/12 teeth, zero refutations; six findings adopted incl. the NEUTRAL cell, the determinacy attack, and the comparator-digit convention dependence",
+  "note": "docs/EXACTNESS_RESIDUAL_PRICED_ARROW_IS_LANE_DATA_CYCLE923_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 0.27,
+    "primary": 0.32
+  }
+}

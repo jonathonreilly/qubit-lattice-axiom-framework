@@ -776,15 +776,20 @@ delta; not a discharge):
     landing PR thread; the record does not land without it.
 
 - **2026-08-05 -- Admissibility second sentence: availability replaced by
-  likelihood (owner-approved, 2026-08-05).** The Admissibility axiom's second
-  sentence is edited in place to: "For each site, the likelihood of each
-  possibility is determined by, and varies with, the nearest-neighbor
-  conditions." Content notes: the determination of likelihood becomes named
-  axiom content; availability/admissibility becomes the likelihood's support
-  (zero likelihood is unavailability -- forced by composition with Record, no
-  stipulation needed); site normalization follows from Record's "locks
-  exactly one"; the likelihood function's form and values, the site question,
-  and the rate question remain downstream supplier content. Owner reading
+  the probability distribution (owner-approved, 2026-08-05).** The
+  Admissibility axiom's second sentence is edited in place to: "For each
+  site, the probability distribution over the possibilities is determined
+  by, and varies with, the nearest-neighbor conditions." Content notes: the
+  determination of the distribution becomes named axiom content;
+  availability/admissibility becomes the distribution's support (on finite
+  menus, exactly nonzero probability -- probability zero is unavailable --
+  forced by composition with Record, no stipulation needed; the
+  measure/support formulation adopted on independent review, since per-point
+  likelihood under-specifies an atomless law on the continuous one-site
+  domain); site normalization is carried by the term "probability
+  distribution" and by Record's "locks exactly one"; the distribution's form
+  and values, the site question, and the rate question remain downstream
+  supplier content. Owner reading
   ruling on the section-1 fence and the memo's dynamics fence: "define
   probabilities / assign weights / supply transition probabilities" means
   supplying values or selections; establishing that likelihoods are

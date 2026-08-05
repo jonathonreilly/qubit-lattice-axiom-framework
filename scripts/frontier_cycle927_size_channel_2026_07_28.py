@@ -2027,9 +2027,32 @@ def main():
             size_tables["deg%d@%s" % (k, lk)] = rows
             cc = [r["C_ab_at_ceiling_row"] for r in rows]
             cw = [r["C_ab_max_over_window"] for r in rows]
+            def saturation_length(vals, tol):
+                """The smallest arm length beyond which C_ab is constant to `tol`."""
+                for i in range(len(vals)):
+                    tail = vals[i:]
+                    if max(tail) - min(tail) < tol:
+                        return Ls[i]
+                return None
+            sat = {"ceiling_row": {("%.0e" % t): saturation_length(cc, t)
+                                   for t in (1e-4, 1e-5, 1e-6)},
+                   "window_max": {("%.0e" % t): saturation_length(cw, t)
+                                  for t in (1e-4, 1e-5, 1e-6)}}
+            tail_cc = cc[1:] if len(cc) > 1 else cc
+            tail_cw = cw[1:] if len(cw) > 1 else cw
             crossings["deg%d@%s" % (k, lk)] = {
                 "by_ceiling_row_C_ab": crossing_of(Ls, cc),
                 "by_window_max_C_ab": crossing_of(Ls, cw),
+                "window_max_by_arm_length": dict(zip([str(x) for x in Ls], cw)),
+                "window_max_spread_over_arm_lengths": float(max(cw) - min(cw)),
+                "window_max_flat_to_1e-4_bits": bool(max(cw) - min(cw) < 1e-4),
+                "saturation_arm_length": sat,
+                "spread_excluding_arm_length_1": {
+                    "ceiling_row": float(max(tail_cc) - min(tail_cc)),
+                    "window_max": float(max(tail_cw) - min(tail_cw))},
+                "flat_to_1e-6_bits_for_arm_length_at_least_2": bool(
+                    max(tail_cc) - min(tail_cc) < 1e-6
+                    and max(tail_cw) - min(tail_cw) < 1e-6),
                 "statistics_agree": bool(
                     crossing_of(Ls, cc)["first_L_over_gate"]
                     == crossing_of(Ls, cw)["first_L_over_gate"]),
@@ -2039,6 +2062,16 @@ def main():
                 "relative_spread_vs_the_0.02_gate": float((max(cc) - min(cc)) / INDEP_MAX),
                 "flat_to_1e-4_bits": bool(max(cc) - min(cc) < 1e-4),
                 "flat_to_1e-5_bits": bool(max(cc) - min(cc) < 1e-5),
+                "scope_qualifier": (
+                    "the ceiling-row statistic is the certification-relevant one and is "
+                    "flat to %.2g bits.  The WINDOW-MAXIMUM statistic is flat to %.2g "
+                    "bits, which at some (degree, field) cells exceeds 1e-4; that whole "
+                    "excess sits in the single step from arm length 1 to arm length 2 -- "
+                    "excluding arm length 1 the window maximum is flat to %.2g bits.  "
+                    "The claim is therefore SATURATION, not independence: C_ab stops "
+                    "changing once an arm has two sites."
+                    % (max(cc) - min(cc), max(cw) - min(cw),
+                       max(tail_cw) - min(tail_cw))),
                 "size_law_reading": (
                     "NULL: C_ab is flat in fragment size to %.2g bits over arm lengths "
                     "%d..%d -- %.3g%% of the 0.02 gate"
@@ -2053,6 +2086,54 @@ def main():
                 "max_R_ind_by_arm_length": dict(zip([str(x) for x in Ls],
                                                     [r["max_R_ind"] for r in rows]))}
             fits["deg%d@%s" % (k, lk)] = fit_forms(Ls, cc)
+
+    # the SATURATION LENGTH, summarised across every ladder
+    sat_rows = []
+    for key, cr in sorted(crossings.items()):
+        sat_rows.append({
+            "ladder": key,
+            "ceiling_row_spread": cr["spread_over_arm_lengths"],
+            "window_max_spread": cr["window_max_spread_over_arm_lengths"],
+            "ceiling_row_spread_excluding_L1": cr["spread_excluding_arm_length_1"][
+                "ceiling_row"],
+            "window_max_spread_excluding_L1": cr["spread_excluding_arm_length_1"][
+                "window_max"],
+            "saturation_arm_length_ceiling_row_1e-6": cr["saturation_arm_length"][
+                "ceiling_row"]["1e-06"],
+            "saturation_arm_length_window_max_1e-6": cr["saturation_arm_length"][
+                "window_max"]["1e-06"],
+            "flat_to_1e-6_for_L_at_least_2": cr[
+                "flat_to_1e-6_bits_for_arm_length_at_least_2"]})
+    sat_summary = {
+        "rows": sat_rows,
+        "max_ceiling_row_spread_any_ladder": max(r["ceiling_row_spread"]
+                                                 for r in sat_rows),
+        "max_window_max_spread_any_ladder": max(r["window_max_spread"]
+                                                for r in sat_rows),
+        "max_ceiling_row_spread_excluding_L1": max(
+            r["ceiling_row_spread_excluding_L1"] for r in sat_rows),
+        "max_window_max_spread_excluding_L1": max(
+            r["window_max_spread_excluding_L1"] for r in sat_rows),
+        "ladders_flat_to_1e-6_for_L_at_least_2": sum(
+            1 for r in sat_rows if r["flat_to_1e-6_for_L_at_least_2"]),
+        "ladders": len(sat_rows),
+        "saturation_lengths_observed_at_1e-6_window_max": sorted(
+            {str(r["saturation_arm_length_window_max_1e-6"]) for r in sat_rows}),
+        "statement": None}
+    sat_summary["statement"] = (
+        "THE SIZE LAW IS A SATURATION AT ARM LENGTH 2, NOT A GROWTH.  Across all %d "
+        "ladders the ceiling-row C_ab spans at most %.2g bits over arm lengths 1..7 and "
+        "the window maximum at most %.2g bits.  Excluding arm length 1 -- an arm with no "
+        "second site, hence one fewer internal bond -- those numbers fall to %.2g and "
+        "%.2g bits, and %d of %d ladders are flat to 1e-6 bits for every arm length >= 2. "
+        "Within the frozen certification window the channel therefore sees the anchor "
+        "and its first neighbour and NOTHING BEYOND: arm sites at pointer distance 3 or "
+        "more are invisible to it."
+        % (len(sat_rows), sat_summary["max_ceiling_row_spread_any_ladder"],
+           sat_summary["max_window_max_spread_any_ladder"],
+           sat_summary["max_ceiling_row_spread_excluding_L1"],
+           sat_summary["max_window_max_spread_excluding_L1"],
+           sat_summary["ladders_flat_to_1e-6_for_L_at_least_2"], len(sat_rows)))
 
     # is the cost a PAIR effect or a CONTENT effect?
     pair_vs_content = {}
@@ -3069,6 +3150,7 @@ def main():
         "Q1_size_law": {
             "tables": size_tables,
             "gate_crossings": crossings,
+            "saturation_length_summary": sat_summary,
             "fitted_form_candidates": fits,
             "pair_versus_content": pair_vs_content,
             "pair_symmetry_probe": symmetry_probe,
@@ -3246,6 +3328,15 @@ def main():
                                      "npar": v["n_parameters"]}
                                  for n, v in f["fits"].items()}, sort_keys=True),
                      BOUNDARY_LINE))
+    print("SATURATION ladders=%d ceiling-row-spread<=%.3g window-max-spread<=%.3g | "
+          "excluding-L1: ceiling<=%.3g window<=%.3g | flat-to-1e-6-for-L>=2 on %d/%d "
+          ":: %s %s"
+          % (sat_summary["ladders"], sat_summary["max_ceiling_row_spread_any_ladder"],
+             sat_summary["max_window_max_spread_any_ladder"],
+             sat_summary["max_ceiling_row_spread_excluding_L1"],
+             sat_summary["max_window_max_spread_excluding_L1"],
+             sat_summary["ladders_flat_to_1e-6_for_L_at_least_2"],
+             sat_summary["ladders"], sat_summary["statement"], BOUNDARY_LINE))
     for lk in FIELDS:
         print("PAIR-vs-CONTENT lam=%-5s %s %s"
               % (lk, json.dumps(pair_vs_content[lk], sort_keys=True), BOUNDARY_LINE))

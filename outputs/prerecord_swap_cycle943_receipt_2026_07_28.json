@@ -1273,32 +1273,53 @@
           },
           "fired": true,
           "tooth": "T12_orientation_divergence_must_track_the_genuine_menu_atoms"
+        },
+        {
+          "detail": {
+            "clean": {
+              "THE_MENU_SWAP_IS_AN_EXACT_SYMMETRY_OF_THESE_GATES": true,
+              "all_pairs_well_formed": true,
+              "malformed_pairs": 0,
+              "net_contribution_is_ctrl_AND_mask_AND_LEFT_XOR_RIGHT": true,
+              "pairs_found": 11
+            },
+            "planted": {
+              "THE_MENU_SWAP_IS_AN_EXACT_SYMMETRY_OF_THESE_GATES": false,
+              "all_pairs_well_formed": false,
+              "malformed_pairs": 11,
+              "net_contribution_is_ctrl_AND_mask_AND_LEFT_XOR_RIGHT": false,
+              "pairs_found": 11
+            },
+            "why": "the exact menu-symmetry of the source-pointer gates is load-bearing for the headline (the dynamics reads the endpoints only through LEFT XOR RIGHT).  A test that cannot fail would be worthless, so a broken pairing is planted and must be rejected."
+          },
+          "fired": true,
+          "tooth": "T13_planted_broken_source_pointer_pairing_must_be_caught"
         }
       ],
-      "teeth_fired": 12,
-      "teeth_total": 12
+      "teeth_fired": 13,
+      "teeth_total": 13
     },
     "H_DOUBLE_RUN": {
       "certificate": "H_DOUBLE_RUN",
       "digest_is_timing_free": true,
       "identical": true,
       "pass": true,
-      "pass1_digest": "5a9a59dee63015db618b86fbba8c7af7c08c453e5c48712297e08db2bdc4eea9",
-      "pass2_digest": "5a9a59dee63015db618b86fbba8c7af7c08c453e5c48712297e08db2bdc4eea9"
+      "pass1_digest": "ee2e5ce38f24f371df3a90800bb3b4fe6eb5b0f3ce54f65931e157b0850a4da2",
+      "pass2_digest": "ee2e5ce38f24f371df3a90800bb3b4fe6eb5b0f3ce54f65931e157b0850a4da2"
     },
     "I_RUNTIME": {
       "budget_sec": 900,
       "certificate": "I_RUNTIME",
-      "elapsed_sec": 250.578,
+      "elapsed_sec": 249.971,
       "pass": true,
       "timings": {
         "Q0": 0.008,
-        "restriction/colour_refine": 0.725,
-        "restriction/per_atom_scan": 13.693,
-        "restriction/tree_936": 48.15,
-        "science/pass1": 63.139,
-        "science/pass2": 63.15,
-        "setup": 13.346
+        "restriction/colour_refine": 0.718,
+        "restriction/per_atom_scan": 13.703,
+        "restriction/tree_936": 47.942,
+        "science/pass1": 63.587,
+        "science/pass2": 63.163,
+        "setup": 13.254
       },
       "within_budget": true
     },
@@ -2334,8 +2355,15 @@
       ],
       "breaking_gate_classes": {
         "ALL_TARGETS_ARE_RECORD_MACHINERY": true,
+        "MECHANICAL_VERIFICATION": {
+          "THE_MENU_SWAP_IS_AN_EXACT_SYMMETRY_OF_THESE_GATES": true,
+          "all_pairs_well_formed": true,
+          "malformed_pairs": 0,
+          "net_contribution_is_ctrl_AND_mask_AND_LEFT_XOR_RIGHT": true,
+          "pairs_found": 11
+        },
         "READING": "the endpoints are controls of nothing but the record apparatus: the source pointer and the two bank-0 U_TO_V / V_TO_U channels.  The bulk dynamics never reads them.  This is the structural fact behind everything below.",
-        "THE_SOURCE_POINTER_PAIR_IS_EXACTLY_MENU_SYMMETRIC": "the two gates targeting the source pointer contribute c[131] & <mask> & (c[LEFT] XOR c[RIGHT]) in combination, and the simultaneous endpoint flip PRESERVES LEFT XOR RIGHT -- which is exactly the on-menu indicator.  So the menu swap is an exact symmetry of the source-pointer gates.",
+        "THE_SOURCE_POINTER_PAIR_IS_EXACTLY_MENU_SYMMETRIC": "the two gates targeting the source pointer contribute c[131] & <mask> & (c[LEFT] XOR c[RIGHT]) in combination, and the simultaneous endpoint flip PRESERVES LEFT XOR RIGHT -- which is exactly the on-menu indicator.  So the menu swap is an exact symmetry of the source-pointer gates.  This is not left as prose: the pairing structure and the algebraic identity are both checked mechanically below.",
         "the_only_target_names": [
           "BANK0.U_TO_V",
           "BANK0.V_TO_U",
@@ -3444,6 +3472,6 @@
     },
     "worker": "Claude Opus 5 worker under supervisor spec"
   },
-  "science_digest": "5a9a59dee63015db618b86fbba8c7af7c08c453e5c48712297e08db2bdc4eea9",
-  "self_sha256": "943c7ae5f4356d60ef2eec14a0c472ab03bb493a7ec3bdba3c40b9f3517f053b"
+  "science_digest": "ee2e5ce38f24f371df3a90800bb3b4fe6eb5b0f3ce54f65931e157b0850a4da2",
+  "self_sha256": "e736055f9be16851c7f228914a5ec2ed82fa4093f0dfccb71f165d32aa078b67"
 }

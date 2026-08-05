@@ -400,6 +400,62 @@ def pseudo_states(proto, count, touched):
     return out
 
 
+def source_pointer_pair_identity(schedules, M, left_w, right_w, src_w,
+                                 lanes, break_pairing=False):
+    """THE MENU-SYMMETRY OF THE SOURCE-POINTER GATES, mechanically.
+
+    The claim under test: the two TOF gates that write the source pointer from
+    an endpoint occur as an ADJACENT PAIR sharing their other control and their
+    mask, one reading LEFT and one reading RIGHT, with nothing between them
+    writing any wire they read.  Their net contribution to c[src] is therefore
+        c[other_control] & mask & (c[LEFT] XOR c[RIGHT])
+    and the simultaneous endpoint flip preserves LEFT XOR RIGHT exactly -- so
+    the menu swap is an EXACT symmetry of these gates.  Both the structural
+    pairing and the algebraic identity are checked; `break_pairing` plants a
+    defect so the checker can be shown to fire."""
+    pairs, malformed, identity_ok = 0, 0, True
+    for si, s in enumerate(schedules):
+        sp = [i for i, g in enumerate(s)
+              if g[0] == M.KIND_TOF and g[3] == src_w
+              and (g[1] in (left_w, right_w) or g[2] in (left_w, right_w))]
+        for a, b in zip(sp[::2], sp[1::2]):
+            if break_pairing:
+                # plant a real defect: pair the LEFT-reading gate with itself,
+                # so the pair no longer spans both endpoints and the net
+                # contribution collapses to zero instead of LEFT XOR RIGHT.
+                b = a
+            pairs += 1
+            ga, gb = s[a], s[b]
+            ctrl, mask = ga[1], ga[4]
+            well_formed = (b == a + 1 and ga[1] == gb[1] and ga[4] == gb[4]
+                           and {ga[2], gb[2]} == {left_w, right_w}
+                           and all(M.gate_target(*s[i][:4])
+                                   not in (ga[1], left_w, right_w, src_w)
+                                   for i in range(a + 1, b)))
+            if not well_formed:
+                malformed += 1
+            for trial in range(4):
+                h = int.from_bytes(
+                    sha256(f"cycle943/sp/{si}/{a}/{trial}".encode("ascii")
+                           ).digest(), "big")
+                cl = h & lanes
+                cr = (h >> 7) & lanes
+                cc = (h >> 13) & lanes
+                base = (h >> 19) & lanes
+                cols = {left_w: cl, right_w: cr, ctrl: cc, src_w: base}
+                got = base
+                for g in (ga, gb):
+                    got ^= cols.get(g[1], 0) & cols.get(g[2], 0) & g[4]
+                if got != base ^ (cc & mask & (cl ^ cr)):
+                    identity_ok = False
+    return {"pairs_found": pairs, "malformed_pairs": malformed,
+            "all_pairs_well_formed": malformed == 0,
+            "net_contribution_is_ctrl_AND_mask_AND_LEFT_XOR_RIGHT":
+                identity_ok,
+            "THE_MENU_SWAP_IS_AN_EXACT_SYMMETRY_OF_THESE_GATES":
+                malformed == 0 and identity_ok}
+
+
 def theta_apply(cols, lane, flips, swaps):
     """A lane-local value map: flip the lane bit of each wire in `flips`, and
     exchange the lane bits of each pair in `swaps`."""
@@ -932,7 +988,11 @@ def main() -> int:
                 "c[131] & <mask> & (c[LEFT] XOR c[RIGHT]) in combination, and "
                 "the simultaneous endpoint flip PRESERVES LEFT XOR RIGHT -- "
                 "which is exactly the on-menu indicator.  So the menu swap is "
-                "an exact symmetry of the source-pointer gates.",
+                "an exact symmetry of the source-pointer gates.  This is not "
+                "left as prose: the pairing structure and the algebraic "
+                "identity are both checked mechanically below.",
+            "MECHANICAL_VERIFICATION": source_pointer_pair_identity(
+                mine_sched, M, left_w, right_w, src_w, env["uni_sim"]),
         }
 
         # ---- Q1c: per-F commutation table (criterion + semantics) --------
@@ -1392,6 +1452,8 @@ def main() -> int:
             all(r["SYMMETRY_BREAKS_BEFORE_THE_LOCK"] for r in genuine_rows),
         "pass": bool(S["no_F_is_a_law_commuting_menu_swap"]
                      and S["criterion_semantics_agreement"]
+                     and S["breaking_gate_classes"]["MECHANICAL_VERIFICATION"][
+                         "THE_MENU_SWAP_IS_AN_EXACT_SYMMETRY_OF_THESE_GATES"]
                      and S["THE_DIVERGENCE_IS_CONFINED"][
                          "EVERY_DIVERGENT_WIRE_IS_AN_ENDPOINT_OR_RECORD_"
                          "MACHINERY"]
@@ -1787,6 +1849,20 @@ def main() -> int:
           {"why": "if the orientation wires diverged at a lock-timing atom "
                   "too, the headline reading (the orientation field is the "
                   "item carrier) would be wrong"})
+
+    sp_ok = S["breaking_gate_classes"]["MECHANICAL_VERIFICATION"]
+    sp_broken = source_pointer_pair_identity(
+        mine_sched, M, left_w, right_w, src_w, env["uni_sim"],
+        break_pairing=True)
+    tooth("T13_planted_broken_source_pointer_pairing_must_be_caught",
+          (not sp_broken["THE_MENU_SWAP_IS_AN_EXACT_SYMMETRY_OF_THESE_GATES"])
+          and sp_ok["THE_MENU_SWAP_IS_AN_EXACT_SYMMETRY_OF_THESE_GATES"],
+          {"clean": sp_ok, "planted": sp_broken,
+           "why": "the exact menu-symmetry of the source-pointer gates is "
+                  "load-bearing for the headline (the dynamics reads the "
+                  "endpoints only through LEFT XOR RIGHT).  A test that "
+                  "cannot fail would be worthless, so a broken pairing is "
+                  "planted and must be rejected."})
 
     falsifiers = {
         "certificate": "G_FALSIFIERS",

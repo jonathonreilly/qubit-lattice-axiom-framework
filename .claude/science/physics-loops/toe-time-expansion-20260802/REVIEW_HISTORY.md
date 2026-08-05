@@ -1083,3 +1083,36 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
   occurrence-lane event-rate route + the alpha menu under the
   priced bridge, blockAC1 — the retention map's highest-leverage
   gap attacked through post-no-go surface).
+
+## Cycle 923 exactness residual (blockR1, PR #5988) — 2026-08-05
+
+- Supervisor review: the source-first discipline (27 published
+  values reproduced before any new number); the map forms stated
+  per the checker's determinacy finding (the multiplier sentence
+  alone admits a counterexample map fixing r=1); the novelty
+  boundary disclosed (the inverse identity previously published in
+  the durability note); the mechanical firewall (planted-selector
+  tooth).
+- Verdicts: the S6 tension DISSOLVED (g = f^{-1}; forced reciprocal
+  multipliers; Lyapunov orientation); coincidence DEFLATED (singly
+  distinguished); exactness UNEXPLAINED-BECAUSE-ARROW-CONDITIONAL
+  (GENERIC/surprising/NEUTRAL by arrow; MARGINAL falsified — both
+  branches geometric, split in the SIGN); the arrow-universality
+  no-go derived with constructive escape; the residual SPLIT
+  (supported half measure-free; surprise half UNSTATABLE without a
+  measure the primitive forbids — the deepest result).
+- Checker (83/83, 12/12 teeth, zero refutations): six findings
+  adopted, incl. the NEUTRAL cell (verdict set by arrow balance),
+  the determinacy attack, and the comparator-digit convention
+  dependence (~3e-6 is tau-mass-convention dependent, exactly zero
+  at 1776.96903 MeV; the <1e-5 GATE robust) — audit row: cite the
+  gate, not the digit; the PDG-uncertainty implication flagged
+  unverified with the in-repo check named.
+- The (i-realization) frontier sharpened: its content is the
+  ARROW-ASSIGNMENT, not only the grain. Cheapest closure priced:
+  the c1 lane-conditional arrow sentence (unadopted).
+- Cluster-cap: n/a (1st R-family PR).
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 925 (the
+  law-relaxation classification, blockQ12 — 918's determinism
+  lemma one level up).

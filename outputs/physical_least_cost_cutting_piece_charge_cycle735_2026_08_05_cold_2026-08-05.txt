@@ -1,0 +1,38 @@
+
+the cuttings of the cell at the floor of the cost
+PASS base.cell  4368 five-subsets of the 16 corners give 2672 pieces of least volume, carrying 2736 sample points with no collision and 0 on a boundary; the cell has 48 symmetries and the pieces 57 orbits
+PASS base.floor  a complete search over the 400 pieces of least cost 6 visits 502838 nodes and finds 15800 cuttings of 24 pieces each, between them using 192 pieces
+PASS base.region  the smallest move replaces four pieces and occurs in 46128 ways; those recut 120 regions, each holding exactly two cuts at the floor, and the two cuts of a region share no piece
+
+how many of those switches a cutting offers at once
+PASS sw.count  the number of regions a cutting fills runs [(0, 144), (1, 192), (2, 624), (3, 1600), (4, 2304), (5, 1920), (6, 4448), (7, 1344), (8, 672), (9, 1728), (10, 192), (12, 432), (15, 192), (24, 8)], over all cuttings 92256 times, twice the 46128 smallest moves
+PASS sw.match  cutting by cutting that number is exactly the number of smallest moves out of it, and no cutting holds both cuts of any region
+
+the switches are not independent
+PASS grp.count  under the smallest move the 15800 cuttings fall into 349 groups of sizes [(1, 144), (2, 96), (4, 36), (7, 48), (236, 24), (9320, 1)]
+PASS grp.cube  276 of those groups are cubes on their switches, covering 480 cuttings; every one has dimension [0, 1, 2], and no other group has a number of cuttings that is a power of two at all
+PASS grp.seven  the smallest group whose switches interact holds 7 cuttings over 4 regions with 8 moves, one cutting meeting 4 of them and the rest 2, against the 16 that four free switches would give
+PASS grp.share  of the 273936 pairs of switches a cutting offers at once 54912 share a piece and so cannot both be thrown; the cuttings with no sharing pair number 8880
+PASS grp.giant  the largest group holds 9320 of the 15800 cuttings with 33216 moves between them, the farthest 16 moves from the first
+PASS grp.orbit  the 349 groups fall into 14 orbits of the cell symmetry; the 144 cuttings with no smallest move at all lie in 6 of them, and the largest group is carried to itself by all 48
+
+a label on the pieces
+PASS lab.one  asking that the sum of the label over a cutting reverse under every smallest move is 120 demands of rank 86 on the 192 pieces in play; they are consistent, leave 106 weights free, and the labels reach 2 to the power 2
+PASS lab.two  asking as well that it hold under every move on six pieces raises the rank to 87, leaves 105 free, and cuts the labels to 2 to the power 1
+PASS lab.core  no single one of the 120 region demands is needed: drop any one of them and the rank stays 86; but the regions fall into 5 families under the cell symmetry, and size against rank on dropping a whole family runs [(12, 84), (12, 84), (24, 75), (24, 83), (48, 64)]
+PASS lab.same  the two labels differ on every one of the 15800 cuttings, so they name the same two sided split, of sizes [7704, 8096]
+PASS lab.show  one such label sits on 56 of the 192 pieces and puts the two cuts of all 120 regions on opposite sides; drop any single piece from it and at least one region is left unsplit, the best such attempt reaching 115
+PASS lab.move  the label read back off the pieces meets both demands: every one of the 46128 smallest moves reverses it and none of the 31968 moves on six pieces does
+PASS lab.keep  on larger moves it does both: 26880 of 60096 moves on seven pieces reverse it and 28608 of 151704 on eight, so it is not reversed by every move
+PASS lab.flip  asking instead that the move on six pieces reverse the label gives a system with no solution over the field with two elements, so no label read off the pieces does that
+PASS lab.bare  dropping the demand that the label be read off the pieces, the same two demands leave one free sign for each of the 157 groups under moves on four and six pieces, that is 2 to the power 157 labellings
+PASS lab.sym  all 48 symmetries of the cell carry the label to itself, and the 157 groups fall into 5 orbits under them
+PASS lab.local  no label constant on the 4 families of pieces will do: over all 16 of them the best separates 48 of the 120 regions, and the 5 labels read from the parity of a coordinate sum separate 0
+PASS lab.split  inside each group the label splits the cuttings as [(1, 0, 144), (2, 1, 96), (4, 2, 36), (7, 3, 48), (236, 104, 24), (9320, 4616, 1)], written as the size of the group, the smaller side, and how many groups do that
+
+the next move up, and the cuttings that cannot move at all
+PASS six.split  of the 31968 moves on six pieces 21696 stay inside one group of the smallest move, and every one of those joins two cuttings exactly two smallest moves apart; the other 10272 join two different groups
+PASS six.ladder  allowing moves on four up to ten pieces the cuttings join into [349, 349, 157, 61, 61, 13, 1] groups, of which [144, 144, 48, 48, 48, 0, 0] hold a single cutting
+PASS six.frozen  48 cuttings admit no cost keeping move on eight pieces or fewer and form a single orbit of the cell symmetry; of the 144 with no smallest move 96 gain one at six pieces, and over those 144 the moves on ten pieces or fewer run [(20, 48), (60, 48), (80, 48)]; all 48 sit on the smaller side of the label
+
+TOTAL: PASS=26 FAIL=0

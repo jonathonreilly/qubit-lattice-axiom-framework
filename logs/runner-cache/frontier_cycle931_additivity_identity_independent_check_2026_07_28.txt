@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle931_additivity_identity_independent_check_2026_07_28.py
+cycle: 931  block: toe-time-blockM11-20260802  head: bdb0cef41d
+target: outputs/additivity_identity_cycle931_receipt_2026_07_28.json (sha256 89699b750d39e6bbf1b953e4abc34a71784344b89012be31226acb6ccfd97b46)
+
+-- INDEPENDENCE --
+  propagators: own Lanczos/Krylov + scipy expm_multiply (primary: Chebyshev, Taylor, dense eigh -- no route shared)
+  ordering: REVERSED   entropies: SVD singular values, ln -> bits
+  symbolics: exact rationals + GF(2^61-1), NO CAS (primary: sympy)
+  arbitrary precision: mpmath, 50 decimal digits
+
+-- C1  THE 929 LADDER ON DISJOINT MACHINERY --
+  28 rungs, max abs deviation 8.318e-14
+-- C2  THE DERIVED LAW --
+  G_d(m) = s(m)+s(1)-s(m+1) vs the pinned rungs: max abs deviation 8.323e-14
+  d3@0.05   exch. spread 0.00e+00   reflection |s(k)-s(d-k)| 7.85e-17
+  d3@0.1    exch. spread 0.00e+00   reflection |s(k)-s(d-k)| 1.73e-18
+  d4@0.05   exch. spread 0.00e+00   reflection |s(k)-s(d-k)| 1.13e-17
+  d4@0.1    exch. spread 0.00e+00   reflection |s(k)-s(d-k)| 9.02e-17
+  d5@0.05   exch. spread 0.00e+00   reflection |s(k)-s(d-k)| 7.72e-17
+  d5@0.1    exch. spread 0.00e+00   reflection |s(k)-s(d-k)| 8.67e-18
+  d6@0.05   exch. spread 0.00e+00   reflection |s(k)-s(d-k)| 1.73e-18
+  d6@0.1    exch. spread 0.00e+00   reflection |s(k)-s(d-k)| 7.11e-17
+
+-- C3  ATTACK ON THE HYPOTHESES --
+  1000 random PURE, PERMUTATION-SYMMETRIC states (H1+H4, no frozen dynamics)
+  max additivity residual over all of them: 1.998e-15  -> NO COUNTEREXAMPLE
+  control with H4 dropped: 0.7628 bit -> the test can see a violation
+
+-- C4  COUNTEREXAMPLE HUNT OFF THE MEASURED GRID --
+  500 cells (476 off the 929 grid): degrees 2..12, fields 0.02..5.0, Jt 0.05..5.0,
+  pure stars, isomorphic-arm spiders (path and claw), the frozen preparation variant.
+  violations: 0      worst residual: 2.026e-15 at {'family': 'pure star', 'd': 10, 'field': 5.0, 'Jt': 0.3}
+  SCOPE FINDING (positive): the identity EXTENDS to every isomorphic-arm spider tested,
+  i.e. beyond the pure stars 929 measured -- exactly as hypothesis H4 predicts.
+  loop-carrying probe (H4 FAILS by construction): residual 1.945e+00
+  loop-carrying probe (H4 FAILS by construction): residual 1.915e+00
+  pair-complement identity (needs only H1-H3) across all families: max 4.441e-16
+
+-- C5  THE SEAL --
+  digest recomputes: True   every input is a pinned 929 value: True
+  independent inversion (linear solve, not recursion): max dev 1.608e-13
+  the primary's both-merged measurements, recomputed: max dev 9.111e-14
+
+-- C6  CANDIDATE VERDICTS, RECOMPUTED --
+  SSA equality case: min I(A:R|B) = 0.004484 bit (Markov needs 0); |I(A:R|B)-I(A:R)| = 1.60e-16
+  agrees with the primary: True
+  strong coupling: statistic up to 1.2862 bit, residual 6.11e-16
+  exchangeable-but-mixed: residual 6.284e-03
+
+-- C7  ARBITRARY PRECISION (50 digits) --
+  d=3 lam=0.10 Jt=0.7  max residual 4.2998102e-49
+  d=4 lam=0.05 Jt=0.7  max residual 7.5806289e-49
+  d=4 lam=0.10 Jt=0.7  max residual 4.2655654e-49
+
+-- C8  EXACT SYMBOLICS (no CAS) --
+  L1 eigenvector transfer over GF(2^61-1): all shapes hold
+  L2 Sylvester char-poly over exact rationals: all shapes hold; a wrong padding exponent is caught
+  L3 exchangeability => size-only reduced states: exact, d=3,4,5
+  L4 I(A:B)+I(R:B)-2S(B) = 0 under purity, exactly; I(A:R|B) = 1*S_A + -1*S_B + 1*S_AB
+  THM exact over the rationals for d = 3..12; without the reflection it breaks
+
+-- C9  THE PRIMARY'S PUBLISHED ARITHMETIC --
+  law rows self-consistent to 0.00e+00; identity rows with an inconsistent published residual: 0
+  s(k) concave on every certified cell: True
+
+-- TEETH (15/15 fire) --
+  K10_arbitrary_precision_confirmation                     True
+  K11_seal_holdout_free_and_tamper_evident                 True
+  K12_euler_guard                                          True
+  K13_exact_symbolics_have_teeth                           True
+  K14_t0_and_zero_field_anchors                            True
+  K15_counterexample_hunt_is_wide                          True
+  K1_planted_identity_break_is_caught                      True
+  K2_hypothesis_attack                                     True
+  K3_purity_break_breaks_additivity                        True
+  K4_exchangeability_break_separates_the_two_identities    True
+  K5_route_cross_check_lanczos_vs_expm_multiply            True
+  K6_reversed_ordering_reproduces_the_pinned_ladder        True
+  K7_determinism                                           True
+  K8_tampered_pin_is_caught                                True
+  K9_tampered_statistic_definition_is_caught               True
+
+-- FINDINGS --
+  * none beyond the scope notes recorded below
+-- REFUTATIONS --
+  none
+
+VERDICT: SUPPORTED
+runtime: 1.2 s (limit 900 s)
+receipt: outputs/additivity_identity_independent_check_cycle931_receipt_2026_07_28.json
+receipt sha256: 56e6e5badeae9fc8ce8a70ac11347d26474a30962497da78cd759944728814b2
+===== runner cache v1 =====

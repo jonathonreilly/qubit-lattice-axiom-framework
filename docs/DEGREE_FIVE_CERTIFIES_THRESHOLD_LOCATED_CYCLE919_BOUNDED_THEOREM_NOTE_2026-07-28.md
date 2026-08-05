@@ -81,7 +81,19 @@ re-scopes the carrying statistic: certification at the 0.10 field
 follows the unique conjunction "pointer degree >= 5 AND fragment
 count >= 3", with degree and fragment count co-varying on this
 note's family. The margin honesty below was the right instinct;
-the band is now exact. See the Cycle-926 note.]
+the band is now exact. See the Cycle-926 note.] [Second
+qualification 2026-08-05, Cycle 932: the located threshold also
+carries a GRID-PHASE scope — it holds at the frozen sample grid
+Jt = 0.0(0.1)1.2 at phase 0. Phase-invariant content: degree <= 2
+fails and degree >= 5 certifies at every grid phase; degrees 3-4
+are decided by the phase (their certifiable windows are WIDER than
+the span three samples need, opening ~0.006 after the Jt = 0.6
+grid point); a grid shifted +0.010 moves the threshold to 3, and
+over 401 offsets the frozen answer (5) is the least common of the
+three possible answers (modal: 4). The frozen verdicts reproduce
+exactly and are explained, not re-graded; the persistence
+d-conjunct is now DERIVED from the two window edges. See the
+Cycle-932 note.]
 
 **The ceiling law confirmed at degree 5**: max R_ind = 5 on all
 three loop-free geometries at all three fields, and on the loopy H4

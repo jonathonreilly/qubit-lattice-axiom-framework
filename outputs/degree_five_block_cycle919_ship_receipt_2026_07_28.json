@@ -15,8 +15,8 @@
   ],
   "files": {
     "docs/DEGREE_FIVE_CERTIFIES_THRESHOLD_LOCATED_CYCLE919_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "143364f6deac206ac54ae1053e3eae4ca89e6408",
-      "sha256": "234e7b5bd3823132e4925e323489a2dbb47ce3da3aba7270e45f59ca680a8a04"
+      "git_blob": "1fd359136bcf78d0d23bfbdd557051b5b62afff7",
+      "sha256": "6fbd3f42f4fd3c57784dbb06e53a2a820554cbcac92b47f51d0d9360a2fc92a2"
     },
     "logs/runner-cache/frontier_cycle919_degree_five_2026_07_28.txt": {
       "git_blob": "0424ee81cef16c95193708f8f270eb154cdc6fe0",
@@ -51,6 +51,11 @@
       "authority": "supervisor post-ship precision edit (the T4/916/918 pattern); no claim strengthened",
       "date": "2026-08-05",
       "edit": "Cycle-926 qualification: the located threshold is gate-fragile (exact band [0.0191673, 0.0207835), 6/32 combos) and the carrying statistic re-scopes to the conjunction d>=5 AND f>=3. Bracketed dated qualification added; note pin refreshed."
+    },
+    {
+      "authority": "supervisor post-ship precision edit (the standing pattern); no claim strengthened",
+      "date": "2026-08-05",
+      "edit": "Cycle-932 grid-phase qualification: the threshold holds at the frozen grid phase 0 (d=3-4 phase-decided; the frozen answer least-common across offsets; d-conjunct derived from window edges). Bracketed dated qualification added; note pin refreshed."
     }
   ],
   "runtime_seconds": {

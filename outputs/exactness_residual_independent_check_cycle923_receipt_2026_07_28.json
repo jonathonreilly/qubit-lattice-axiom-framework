@@ -1,0 +1,863 @@
+{
+  "block": "blockR1",
+  "campaign": "toe-time-expansion-20260802",
+  "checks": [
+    {
+      "detail": "sha256=a0ca7dfc976ffc11..",
+      "name": "pin: outputs/exactness_residual_cycle923_receipt_2026_07_28.json",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "sha256=9c03a600e3963bfb..",
+      "name": "pin: scripts/frontier_cycle923_exactness_residual_2026_07_28.py",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "sha256=8d744fc272d8dab8..",
+      "name": "pin: logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "sha256=d95cdf68285242a8..",
+      "name": "pin: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "sha256=5a72dfb482e8898e..",
+      "name": "pin: docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "sha256=32f4a0e27172c86f..",
+      "name": "pin: docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "sha256=91b708236784a039..",
+      "name": "pin: docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "sha256=755cfd4492443946..",
+      "name": "pin: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "sha256=d352c069a5c8fa96..",
+      "name": "pin: docs/KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "stable_sha256=1db681b63888f14cafc93a0845da9dbd98b0d181e155213af5de75ad1882dfcd",
+      "name": "primary receipt has a runtime-independent stable content digest (durable pin)",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "status=pass",
+      "name": "primary receipt parses and reports status=pass",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "",
+      "name": "primary receipt declares its interpretation firewall",
+      "ok": true,
+      "section": "K0"
+    },
+    {
+      "detail": "solve -> [0, 1/2]",
+      "name": "sympy solve: Fix(f) for f(r)=2r^2 is {0, 1/2}",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "solve -> [0, 1/2]",
+      "name": "sympy solve: Fix(g) for g(r)=sqrt(r/2) is {0, 1/2}",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "f'=4*r, f'(1/2)=2",
+      "name": "sympy diff: f'(r) = 4r, so f'(1/2) = 2 EXACTLY",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "g'=sqrt(2)/(4*sqrt(r)), g'(1/2)=1/2",
+      "name": "sympy diff: g'(1/2) = 1/2 EXACTLY",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "",
+      "name": "sympy: f'(0) = 0 (superstable / quadratic)",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "",
+      "name": "sympy: g'(r) -> +oo as r -> 0+ (r=0 repels under g)",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "-> 0",
+      "name": "sympy simplify: g(f(r)) - r == 0 identically on r>0",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "-> 0",
+      "name": "sympy simplify: f(g(r)) - r == 0 identically on r>0",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "2 * 1/2 = 1",
+      "name": "sympy: the multiplier product f'(1/2)*g'(1/2) == 1 EXACTLY",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "verified as an identity of the inverse-function rule",
+      "name": "LEMMA (general, not map-specific): differentiating h^{-1}(h(x)) = x gives (h^{-1})'(h(x)) h'(x) = 1; at a fixed point h(xs)=xs this is (h^{-1})'(xs) = 1/h'(xs). The 'unstable vs attracting' pair is therefore FORCED for ANY invertible map, not special to 2r^2.",
+      "ok": true,
+      "section": "K1-symbolic"
+    },
+    {
+      "detail": "solve -> [1/2]; dS2/dr = -log((2*r)**(2/(4*r**2 + 4*r + 1)))",
+      "name": "sympy: dS2/dr = 0 has the unique positive solution r = 1/2",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "",
+      "name": "sympy: S2(1/2) = log 2 EXACTLY",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "S2''(1/2) = -1",
+      "name": "sympy: S2''(1/2) = -1 EXACTLY in nats (independent of the primary's finite difference)",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "deficit = 4.500000e-12 nats",
+      "name": "corollary: S2(r) = log2 - (1/2)(r-1/2)^2 + O((r-1/2)^3), so the entropy deficit at |r-1/2| = 3e-6 is 4.5e-12 nats",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "solve -> [1]",
+      "name": "sympy: the 3-real-DOF entropy S3 is stationary at r = 1 (and only there, on r>0)",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "",
+      "name": "sympy: S3(1) = log 3 EXACTLY",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "dS_spec/dx = 2*log(1 - xx)/3 - 2*log(2*xx + 1)/3",
+      "name": "sympy: the spectral entropy (delta=0), in x = sqrt(r), is stationary at x = 0 i.e. r = 0",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "S_spec''(0) = -2",
+      "name": "sympy: S_spec''(x=0) = -2 < 0 (a maximum), so S_spec ~ log3 - r near r=0 and the gradient flow in r ARRIVES at r=0 in finite time (dr/dt -> -1)",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "",
+      "name": "INDEPENDENT CONFIRMATION of the primary's anti-diagonal: S_spec peaks at r=0, S2 at r=1/2, S3 at r=1 -- each registered setting maximizes a different derived functional",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "solve -> [0, 1/2, 1]",
+      "name": "sympy: for a 2-outcome split, p -> p^2/Z fixes p iff p in {0, 1/2, 1}. This CONFIRMS the primary's COINCIDENCE-DEFLATION: interior sharpening-fixed-point = uniform = max-S2 = HS equipartition is ONE fact, not three independent ones.",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "21 cells re-derived; mismatches=[]",
+      "name": "TABLE A: every entry-step count under g reproduces at 60 dps (independent iteration)",
+      "ok": true,
+      "section": "K3-mpmath"
+    },
+    {
+      "detail": "7 cells re-derived; mismatches=[]",
+      "name": "TABLE B: every residence-step count under f reproduces at 60 dps",
+      "ok": true,
+      "section": "K3-mpmath"
+    },
+    {
+      "detail": "real-valued n = 16.81784402; ceil = 17; iterated = 17",
+      "name": "3e-6 ENDPOINT, attacked directly: n = log2( ln2 / ln(1+6e-6) ) = 16.8175..., so the ceiling is 17 and the primary's 17 is correct (not an off-by-one)",
+      "ok": true,
+      "section": "K3-mpmath"
+    },
+    {
+      "detail": "n_exit(3e-6 -> 1e-1) = 15",
+      "name": "3e-6 endpoint, the OTHER direction: a pattern at |r-1/2|=3e-6 leaves the 1e-1 window under f in 15 steps",
+      "ok": true,
+      "section": "K3-mpmath"
+    },
+    {
+      "detail": "n = 27 steps from 1e300",
+      "name": "basin claim attacked at the extreme: from r0 = 1e300, g still reaches 3e-6 in a small number of steps (log-log convergence), confirming basin(g,1/2) = (0,inf)",
+      "ok": true,
+      "section": "K3-mpmath"
+    },
+    {
+      "detail": "",
+      "name": "basin claim attacked at the other extreme: r0 = 0 EXACTLY is a fixed point of g and never enters any window around 1/2 -- the primary's 'excludes exactly one point' is correct",
+      "ok": true,
+      "section": "K3-mpmath"
+    },
+    {
+      "detail": "",
+      "name": "sympy: f(g(r)) = r identically, so a BALANCED alternation of the two supplied arrows is EXACTLY the identity map on r",
+      "ok": true,
+      "section": "K4-degeneracy"
+    },
+    {
+      "detail": "worked example n_f = n_g = 2 gives multiplier exactly 1",
+      "name": "sympy: the composition with n_f sharpenings and n_g thermalizations has multiplier 2^(n_f - n_g) at r=1/2, which is >1, =1 or <1 according to the arrow balance",
+      "ok": true,
+      "section": "K4-degeneracy"
+    },
+    {
+      "detail": "verdicts found = ['CRITERIAL', 'GENERIC', 'GENERIC if n_g > n_f, UNEXPLAINED if n_f > n_g, NEUTRAL iff n_f = n_g', 'NEUTRAL', 'UNEXPLAINED']",
+      "name": "MODEL DEGENERACY IS REAL: the readings available on this surface produce more than two distinct verdicts",
+      "ok": true,
+      "section": "K4-degeneracy"
+    },
+    {
+      "detail": "primary headline = UNEXPLAINED on the current surface",
+      "name": "the primary's headline verdict survives the degeneracy hunt (the hunt adds a verdict, it does not remove the reason for the headline)",
+      "ok": true,
+      "section": "K4-degeneracy"
+    },
+    {
+      "detail": "",
+      "name": "REFUTATION CHECK: no reading was found under which the exactness is GENERIC *and* the arrow is derived rather than supplied",
+      "ok": true,
+      "section": "K4-degeneracy"
+    },
+    {
+      "detail": "c = -4, min h' on [0,1] = 0.534392",
+      "name": "constructed a STRICTLY INCREASING map h with Fix(h) exactly {0, 1/2, 1} and h'(1/2) = 2 (same local data as the supplied f) -- this is precisely the map that could break the no-go",
+      "ok": true,
+      "section": "K5-nogo-attack"
+    },
+    {
+      "detail": "multipliers = {0: 0.986524, 1/2: 2.000000, 1: 0.986524}",
+      "name": "for the constructed h, 1/2 REPELS (h'=2) and 0 and 1 ATTRACT -- so h preserves both other lanes but does NOT concentrate onto 1/2",
+      "ok": true,
+      "section": "K5-nogo-attack"
+    },
+    {
+      "detail": "inverse multipliers = {0: 1.013660, 1/2: 0.500000, 1: 1.013660}",
+      "name": "for its inverse h^{-1}, 1/2 ATTRACTS (multiplier 1/2) but 0 and 1 REPEL -- so h^{-1} concentrates onto 1/2 but destroys both other lanes",
+      "ok": true,
+      "section": "K5-nogo-attack"
+    },
+    {
+      "detail": "rows = {'h': {'concentrates_on_half': False, 'preserves_0': True, 'preserves_1': True}, 'h^{-1}': {'concentrates_on_half': True, 'preserves_0': False, 'preserves_1': False}}",
+      "name": "THE NO-GO SURVIVES the constructed attack: computed row by row, neither h nor h^{-1} satisfies all three requirements simultaneously",
+      "ok": true,
+      "section": "K5-nogo-attack"
+    },
+    {
+      "detail": "multipliers at 0, 1/2, 1 = [0.990625, 0.998437, 0.990625]; extra fixed points at 1/4 and 3/4",
+      "name": "the primary's NAMED ESCAPE is real: a map with EXTRA fixed points at 1/4 and 3/4 makes all three registered settings attracting simultaneously",
+      "ok": true,
+      "section": "K5-nogo-attack"
+    },
+    {
+      "detail": "",
+      "name": "the primary's Q1 statement text asserts: g is f-inverse",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "",
+      "name": "the primary's Q1 statement text asserts: shared fixed points",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "",
+      "name": "the primary's Q1 statement text asserts: f' = 2",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "",
+      "name": "the primary's Q1 statement text asserts: g' = 1/2",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "",
+      "name": "the primary's Q1 statement text asserts: product 1",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "",
+      "name": "the primary's Q1 statement text asserts: S2 Lyapunov",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "",
+      "name": "the primary's Q1 statement text asserts: static extremum",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "",
+      "name": "every numeric claim in the Q1 statement text is independently TRUE under sympy",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "",
+      "name": "DETERMINACY, local: the stated text fixes the LOCAL picture uniquely -- any invertible map with a fixed point of multiplier 2 has an inverse with multiplier 1/2 there (the K1 lemma), so no second local reading is consistent with the text",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "so 'r=1 runs away' is a property of the specific supplied map 2r^2, not a consequence of the reconciliation",
+      "name": "DETERMINACY, global: the stated text does NOT fix the GLOBAL picture. The K5 construction is an invertible map satisfying every numeric claim in the Q1 statement, yet it FIXES r=1 instead of sending it to infinity.",
+      "ok": true,
+      "section": "K6-determinacy"
+    },
+    {
+      "detail": "violations=[]",
+      "name": "primary firewall reports zero violations",
+      "ok": true,
+      "section": "K7-firewall"
+    },
+    {
+      "detail": "",
+      "name": "primary firewall's admissible family spans {0, 1/2, 1}",
+      "ok": true,
+      "section": "K7-firewall"
+    },
+    {
+      "detail": "",
+      "name": "primary firewall reports all three lanes well-formed",
+      "ok": true,
+      "section": "K7-firewall"
+    },
+    {
+      "detail": "",
+      "name": "no primary check asserting 'designates a unique r -> carries a supplied element' failed",
+      "ok": true,
+      "section": "K7-firewall"
+    },
+    {
+      "detail": "",
+      "name": "independent scan of the priced list for adoption language finds none",
+      "ok": true,
+      "section": "K7-firewall"
+    },
+    {
+      "detail": "15 steps re-scanned independently; violations=[]",
+      "name": "INDEPENDENT re-scan of the primary's published firewall step table using a re-implemented rule: no unconditional step designates a unique r",
+      "ok": true,
+      "section": "K7-firewall"
+    },
+    {
+      "detail": "unique-r designators = ['S2_argmax', 'S3_argmax', 'S_spec_argmax', 'attractor_of_g', 'attractor_of_f', 'swap_fixed_point']",
+      "name": "every unique-r designator in the primary's table carries a NAMED supplied element",
+      "ok": true,
+      "section": "K7-firewall"
+    },
+    {
+      "detail": "designated settings across all steps = [0.0, 0.5, 1.0]",
+      "name": "the registered dial {0, 1/2, 1} is jointly covered by the primary's designators, so no single setting is singled out across the runner as a whole",
+      "ok": true,
+      "section": "K7-firewall"
+    },
+    {
+      "detail": "mpmath=3.304878249737395e-6 primary=3.304878249732468e-06 diff=4.927e-18",
+      "name": "comparator |r_PDG - 1/2| reproduces at 60 dps (the primary's float64 value carries an absolute error of order 1e-16 from the 0.5 cancellation, so ~10 significant digits of the deviation are trustworthy)",
+      "ok": true,
+      "section": "K7-comparator"
+    },
+    {
+      "detail": "",
+      "name": "comparator is below the reduction note's published 1e-5 bound",
+      "ok": true,
+      "section": "K7-comparator"
+    },
+    {
+      "detail": "1776.93 (reduction runner) -> 3.305e-06; 1776.86 (PDG central, other tables) -> 9.233e-06; 1776.99 -> 1.776e-06; 1777.00 -> 2.623e-06",
+      "name": "TAU-MASS SENSITIVITY SCAN of the comparator",
+      "ok": true,
+      "section": "K7-comparator"
+    },
+    {
+      "detail": "step counts across the scan = [16, 17, 18]",
+      "name": "the tau-mass sensitivity changes NO Q2 verdict: the g-branch step count moves by at most 2 steps across the whole scan (the tables are logarithmic in eps)",
+      "ok": true,
+      "section": "K7-comparator"
+    },
+    {
+      "detail": "sympy gives f'(1/2) = 2, not 5/2",
+      "name": "K-T1 FIRED: a planted multiplier f'(1/2)=5/2 is rejected by the symbolic derivative",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "residual = 1/1000",
+      "name": "K-T2 FIRED: a planted non-inverse reverse map g + 1/1000 is rejected: g_bad(f(r)) - r does not simplify to 0",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "sympy gives S2''(1/2) = -1",
+      "name": "K-T3 FIRED: a planted curvature S2''(1/2) = -2 is rejected by the symbolic second derivative",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "solve(dS3/dr) = [1]",
+      "name": "K-T4 FIRED: a planted claim 'S3 peaks at r=1/2' is rejected by the symbolic stationarity solve",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "solve -> [1/3]",
+      "name": "K-T5 FIRED: a planted 2-sector weight (1, 3r) moves the entropy maximum to r=1/3, off the sharpening fixed point -- so the deflation is contentful, not a tautology",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "mpmath ceil(log2(ln2/ln(1+6e-6))) = 17",
+      "name": "K-T6 FIRED: a planted step count of 10 at the 3e-6 endpoint is rejected by the 60-dps closed form (true 17)",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "from 1e300, g reaches 3e-6 of 1/2 in 27 steps",
+      "name": "K-T7 FIRED: a planted basin claim 'basin(g) = (0,1)' is rejected: r0 = 1e300 still converges to 1/2",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "",
+      "name": "K-T8 FIRED: the no-go search HAS POWER: a planted omnipotent candidate is correctly flagged as breaking the no-go, so a real counterexample would not have been missed",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "",
+      "name": "K-T9 FIRED: a planted unconditional unique-r law step is caught by an INDEPENDENT re-implementation of the firewall rule",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "9.2328e-06 vs 3.3049e-06",
+      "name": "K-T10 FIRED: a planted comparator (m_tau = 1776.86) yields a materially different deviation, proving the checker is actually sensitive to the mass inputs",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "S2(g(0.9)) = 0.682466 > S2(0.9) = 0.651757",
+      "name": "K-T11 FIRED: a planted 'the reverse map decreases S2' claim is refuted symbolically at r=9/10",
+      "ok": true,
+      "section": "K-teeth"
+    },
+    {
+      "detail": "",
+      "name": "K-T12 FIRED: the determinacy attack HAS POWER: it did in fact find a map satisfying the Q1 statement's numerics with different global behaviour, so a determinacy failure would not have been missed",
+      "ok": true,
+      "section": "K-teeth"
+    }
+  ],
+  "claim_scope": "independent symbolic and high-precision refutation attempt against the cycle923 primary",
+  "comparator_recheck": {
+    "abs_dev_r_60dps": "3.3048782497373952069e-6",
+    "masses_MeV": {
+      "m_e": "0.51099895",
+      "m_mu": "105.6583755",
+      "m_tau": "1776.93"
+    },
+    "tau_mass_sensitivity_scan": {
+      "1776.86 (PDG central, other tables)": 9.232783921641718e-06,
+      "1776.93 (reduction runner)": 3.304878249737395e-06,
+      "1776.99": 1.7759902486587803e-06,
+      "1777.00": 2.6227842999614616e-06
+    }
+  },
+  "cycle": 923,
+  "date_label": "2026-07-28",
+  "determinism_digest_sha256": "261278b00eb43d94824a9657cd4c05c6b8c59cb080ae800437e34569da4c90c6",
+  "epsilon_window_recheck": {
+    "3e-6_endpoint_ceiling": 17,
+    "3e-6_endpoint_iterated": 17,
+    "3e-6_endpoint_real_valued_n": "16.8178440237324",
+    "from_1e300": 27,
+    "residence_3e-6_to_1e-1": 15,
+    "table_A_mismatches": [],
+    "table_B_mismatches": []
+  },
+  "failures": [],
+  "findings": [
+    {
+      "kind": "DEGENERACY",
+      "text": "The Q2 verdict is NOT binary. Beyond the primary's GENERIC/UNEXPLAINED split there is a third, structurally natural reading -- a BALANCED alternation of the two supplied arrows -- under which f o g is EXACTLY the identity, so a registered pattern neither concentrates nor disperses. Its verdict is NEUTRAL: persistence with no rate. More generally the multiplier is 2^(n_f - n_g), so the verdict is set by the ARROW BALANCE, not by the map algebra.",
+      "witness": "sympy: f(g(r)) - r simplifies to 0 identically; multiplier of f^2 o g^2 at r=1/2 is exactly 1"
+    },
+    {
+      "kind": "CONFIRMATION",
+      "text": "This degeneracy does NOT overturn the primary's headline verdict. It sharpens it: the primary says the surface is UNEXPLAINED because the arrow is not derived, and the balanced-alternation reading is one more underived arrow with its own verdict. The three-way split strengthens the primary's claim that the undischarged element is the ARROW, not the exponent.",
+      "witness": "the primary's headline is 'UNEXPLAINED on the current surface' with 'the arrow is the undischarged element'"
+    },
+    {
+      "kind": "CONFIRMATION",
+      "text": "The primary's ARROW-UNIVERSALITY NO-GO withstands a targeted construction attack. A strictly increasing map with fixed-point set exactly {0, 1/2, 1} and multiplier 2 at 1/2 does exist (so the no-go is not vacuously true for lack of candidates), but it and its inverse split exactly as the alternation theorem requires: one preserves the outer lanes without concentrating, the other concentrates while destroying them. No map on the hypothesis does both.",
+      "witness": "h(x) = x + c*x(x-1/2)(x-1)*exp(-20(x-1/2)^2) with c = -4.000000; min h' = 0.534392 > 0"
+    },
+    {
+      "kind": "CONFIRMATION",
+      "text": "The primary's named escape from its own no-go is genuine and correctly priced: allowing fixed points at 1/4 and 3/4 does make all three registered settings simultaneously attracting, at the stated cost of two distinguished cells the dial does not register.",
+      "witness": "h(x) = x - (1/10) x(x-1/4)(x-1/2)(x-3/4)(x-1); all three multipliers have modulus < 1"
+    },
+    {
+      "kind": "DETERMINACY",
+      "text": "The primary's Q1 statement determines the reconciliation LOCALLY but not GLOBALLY. Read as a standalone sentence it does not entail the r=1 behaviour that the S4 no-go's f-row uses: the K5 map satisfies every numeric claim in the statement while fixing r=1. The primary's own runner does use the explicit global forms 2r^2 and sqrt(r/2), so the no-go is sound as computed; but any downstream consumer quoting only the Q1 sentence would not be entitled to the r=1 row. Recommended framing for the supervisor's note: state the global map forms alongside the reconciliation, not the multipliers alone.",
+      "witness": "K5 map h fixes 0, 1/2 and 1 with h'(1/2)=2, satisfying the Q1 statement's numerics; f(1)=2 does not"
+    },
+    {
+      "kind": "CAVEAT",
+      "text": "The headline '~3e-6' is not a stable number: it is strongly sensitive to the tau-mass convention. With m_tau = 1776.93 MeV (the value the reduction note's own runner uses) the deviation is 3.305e-06; with m_tau = 1776.86 MeV it is 9.233e-06, a factor of 2.79. The note's own published GATE (|r_PDG - 1/2| < 1e-5) is robust across all scanned conventions, but the hostile-guard's quoted '~3e-6' is a single-convention figure. Since the Q2 epsilon tables are logarithmic in eps, this moves the g-branch step count by at most 2 steps and changes no verdict -- but any downstream text that leans on the specific value 3e-6 should quote the convention with it.",
+      "witness": "1776.93 (reduction runner) -> 3.3049e-06; 1776.86 (PDG central, other tables) -> 9.2328e-06; 1776.99 -> 1.7760e-06; 1777.00 -> 2.6228e-06"
+    }
+  ],
+  "independence_statement": "This checker imports nothing from the primary. All algebra is sympy-symbolic and all window arithmetic is mpmath at 60 decimal digits. The primary receipt is read only as a source of CLAIMS to be attacked.",
+  "interpretation_firewall": "Nothing here derives, forces or prefers r = 1/2 as any lane's setting. PDG values are a labeled comparator and feed no derivation. No audit status is asserted.",
+  "model_degeneracy_readings": [
+    {
+      "kind": "discrete map",
+      "multiplier_or_rate": 2.0,
+      "note": "repelling; the operative fixed point is the separatrix; exactness amplified x2 per step",
+      "reading": "f: sharpening (records/Luders), discrete",
+      "verdict": "UNEXPLAINED"
+    },
+    {
+      "kind": "discrete map",
+      "multiplier_or_rate": 0.5,
+      "note": "contracting geometrically; basin (0,inf); 17 steps from r=1 to 3e-6",
+      "reading": "g = f^{-1}: thermalizing reverse, discrete",
+      "verdict": "GENERIC"
+    },
+    {
+      "kind": "continuous flow",
+      "multiplier_or_rate": -1.0,
+      "note": "linearization -1; 12.02 e-folds from |delta|=0.5 to 3e-6",
+      "reading": "S2-gradient flow in the r coordinate",
+      "verdict": "GENERIC"
+    },
+    {
+      "kind": "continuous flow",
+      "multiplier_or_rate": -4.0,
+      "note": "linearization -4; 3.01 e-folds; RATE is metric-dependent, SIGN is not",
+      "reading": "S2-gradient flow in the p coordinate",
+      "verdict": "GENERIC"
+    },
+    {
+      "kind": "continuous flow",
+      "multiplier_or_rate": "-rho(1/2) < 0",
+      "note": "for ANY positive metric the sign is negative, so the verdict is metric-invariant; only the e-fold count moves",
+      "reading": "S2-gradient flow in a general positive metric rho(r)",
+      "verdict": "GENERIC"
+    },
+    {
+      "kind": "discrete map",
+      "multiplier_or_rate": "2^k",
+      "note": "amplification compounds",
+      "reading": "f composed k times",
+      "verdict": "UNEXPLAINED"
+    },
+    {
+      "kind": "discrete map",
+      "multiplier_or_rate": "2^{-k}",
+      "note": "contraction compounds",
+      "reading": "g composed k times",
+      "verdict": "GENERIC"
+    },
+    {
+      "kind": "discrete composition",
+      "multiplier_or_rate": 1.0,
+      "note": "f o g = identity EXACTLY, so r never moves: the pattern PERSISTS at wherever it was registered, with no concentration and no dispersion. This is a THIRD verdict, and it is neither GENERIC nor UNEXPLAINED",
+      "reading": "balanced alternation (f then g, equal counts)",
+      "verdict": "NEUTRAL"
+    },
+    {
+      "kind": "discrete composition",
+      "multiplier_or_rate": "2^(n_f - n_g)",
+      "note": "the verdict is a function of the arrow BALANCE, not of the map algebra",
+      "reading": "biased alternation (n_f sharpenings per n_g thermalizations)",
+      "verdict": "GENERIC if n_g > n_f, UNEXPLAINED if n_f > n_g, NEUTRAL iff n_f = n_g"
+    },
+    {
+      "kind": "criterion, not a flow",
+      "multiplier_or_rate": "n/a",
+      "note": "selects Fix = {0, 1/2}; exactness without attraction and without a rate",
+      "reading": "durability / fixedness under re-registration",
+      "verdict": "CRITERIAL"
+    }
+  ],
+  "no_go_attack": {
+    "c_value": -4.0,
+    "constructed_map": "h(x) = x + c*x(x-1/2)(x-1)*exp(-20(x-1/2)^2), c chosen so h'(1/2)=2",
+    "multipliers": {
+      "0.0": 0.986524106001829,
+      "0.5": 2.0,
+      "1.0": 0.986524106001829
+    },
+    "named_escape_verified": true,
+    "no_go_survives": true,
+    "strictly_increasing": true
+  },
+  "overall_verdict": "The primary's Q1 reconciliation and Q2 headline verdict SURVIVE independent symbolic re-derivation. No refutation of a primary claim was found. Three material additions are reported: (1) a THIRD verdict cell (NEUTRAL) from the balanced-alternation reading, which strengthens rather than weakens the primary's 'the arrow is the undischarged element'; (2) the Q1 statement is locally determinate but globally underdeterminate, so the r=1 row of the no-go must be sourced from the explicit map forms, not from the reconciliation sentence; (3) the '~3e-6' figure is tau-mass-convention dependent (3.30e-6 vs 8.02e-6), though the published <1e-5 gate and every Q2 verdict are robust to it.",
+  "provenance": {
+    "pin_note": "the primary receipt embeds runtime_sec, so its raw file sha256 varies across re-runs by construction; the stable digest above is the durable cross-reference",
+    "pins": {
+      "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md": {
+        "bytes": 23111,
+        "git_blob_sha1": "ed574c9b402328189b0e185ae17308c2dcb17166",
+        "present": true,
+        "sha256": "d95cdf68285242a8ab45dbdbde9adf23b20400c14ec7d991908424d51f0a1b62"
+      },
+      "docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md": {
+        "bytes": 5178,
+        "git_blob_sha1": "59810648f9064f706f925295abd0cae5a128a8e5",
+        "present": true,
+        "sha256": "91b708236784a0393aa6295fd54cca2ed6efc92d57b3a92925e01d224bfb9dcb"
+      },
+      "docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md": {
+        "bytes": 5759,
+        "git_blob_sha1": "ac5375a9009bffab98aa2ec9057f38ce7b25c120",
+        "present": true,
+        "sha256": "5a72dfb482e8898e3d043e5b91df6dcd065a182fe063ca92afc41ec2254ba46a"
+      },
+      "docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md": {
+        "bytes": 5568,
+        "git_blob_sha1": "6228b2daaa45fc6adf6d09b79cd96fe336d5e1af",
+        "present": true,
+        "sha256": "32f4a0e27172c86f5130fdc155bbed072519aaa7ebb80b7d4e53ca7b8065fe64"
+      },
+      "docs/KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md": {
+        "bytes": 11613,
+        "git_blob_sha1": "bd32f384d2739cc3b5e990e93ebd020e69837838",
+        "present": true,
+        "sha256": "d352c069a5c8fa96b79c9b24b04a63124829b388e05a7b1348c0da6b418b8916"
+      },
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+        "bytes": 5313,
+        "git_blob_sha1": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+        "present": true,
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      "logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt": {
+        "bytes": 37445,
+        "git_blob_sha1": "a83f88e606398d07112ace2cef4c9deace58e58b",
+        "present": true,
+        "sha256": "8d744fc272d8dab80214ffe6ce84b61ab990c3cad8a04a78a766d1516cf0be37"
+      },
+      "outputs/exactness_residual_cycle923_receipt_2026_07_28.json": {
+        "bytes": 90627,
+        "git_blob_sha1": "d35cec66d786f3bf7fd63dc451be8fbcb5b8cf3d",
+        "present": true,
+        "sha256": "a0ca7dfc976ffc11330ab093438d7c01f20435826798ea445d14b89e6517086d"
+      },
+      "scripts/frontier_cycle923_exactness_residual_2026_07_28.py": {
+        "bytes": 76797,
+        "git_blob_sha1": "e023c8c03359c3a5d606da758a5cb8ef17c03d05",
+        "present": true,
+        "sha256": "9c03a600e3963bfbc169cc8238744b91aae333d5f668a0e83f371c22ea206366"
+      }
+    },
+    "primary_receipt_sha256": "a0ca7dfc976ffc11330ab093438d7c01f20435826798ea445d14b89e6517086d",
+    "primary_receipt_stable_sha256_runtime_excluded": "1db681b63888f14cafc93a0845da9dbd98b0d181e155213af5de75ad1882dfcd",
+    "runner_sha256": "05b6fa02c36011b35d0697e7f2ed160b56749d4cbf8fa788bc35977f274d9b06"
+  },
+  "role": "independent_checker",
+  "runner": "scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28.py",
+  "runtime_sec": 0.274,
+  "schema": "cycle923-exactness-residual-independent-check-v1",
+  "scorecard": {
+    "fail": 0,
+    "pass": 82,
+    "per_section": {
+      "K-teeth": {
+        "fail": 0,
+        "pass": 12
+      },
+      "K0": {
+        "fail": 0,
+        "pass": 12
+      },
+      "K1-symbolic": {
+        "fail": 0,
+        "pass": 10
+      },
+      "K2-symbolic": {
+        "fail": 0,
+        "pass": 10
+      },
+      "K3-mpmath": {
+        "fail": 0,
+        "pass": 6
+      },
+      "K4-degeneracy": {
+        "fail": 0,
+        "pass": 5
+      },
+      "K5-nogo-attack": {
+        "fail": 0,
+        "pass": 5
+      },
+      "K6-determinacy": {
+        "fail": 0,
+        "pass": 10
+      },
+      "K7-comparator": {
+        "fail": 0,
+        "pass": 4
+      },
+      "K7-firewall": {
+        "fail": 0,
+        "pass": 8
+      }
+    },
+    "teeth_fired": 12,
+    "teeth_total": 12
+  },
+  "status": "pass",
+  "symbolic_results": {
+    "Fix_f": [
+      "0",
+      "1/2"
+    ],
+    "Fix_g": [
+      "0",
+      "1/2"
+    ],
+    "S2_second_derivative_at_half": "-1",
+    "S2_stationary_points": [
+      "1/2"
+    ],
+    "S3_stationary_points": [
+      "1"
+    ],
+    "S_spec_second_derivative_at_x0": "-2",
+    "dS2_dr": "-log((2*r)**(2/(4*r**2 + 4*r + 1)))",
+    "f_prime": "4*r",
+    "f_prime_half": "2",
+    "g_prime": "sqrt(2)/(4*sqrt(r))",
+    "g_prime_half": "1/2",
+    "multiplier_product": "1",
+    "sharpening_fixed_p": [
+      "0",
+      "1/2",
+      "1"
+    ]
+  },
+  "teeth": [
+    {
+      "description": "a planted multiplier f'(1/2)=5/2 is rejected by the symbolic derivative",
+      "detail": "sympy gives f'(1/2) = 2, not 5/2",
+      "fired": true,
+      "id": "K-T1"
+    },
+    {
+      "description": "a planted non-inverse reverse map g + 1/1000 is rejected: g_bad(f(r)) - r does not simplify to 0",
+      "detail": "residual = 1/1000",
+      "fired": true,
+      "id": "K-T2"
+    },
+    {
+      "description": "a planted curvature S2''(1/2) = -2 is rejected by the symbolic second derivative",
+      "detail": "sympy gives S2''(1/2) = -1",
+      "fired": true,
+      "id": "K-T3"
+    },
+    {
+      "description": "a planted claim 'S3 peaks at r=1/2' is rejected by the symbolic stationarity solve",
+      "detail": "solve(dS3/dr) = [1]",
+      "fired": true,
+      "id": "K-T4"
+    },
+    {
+      "description": "a planted 2-sector weight (1, 3r) moves the entropy maximum to r=1/3, off the sharpening fixed point -- so the deflation is contentful, not a tautology",
+      "detail": "solve -> [1/3]",
+      "fired": true,
+      "id": "K-T5"
+    },
+    {
+      "description": "a planted step count of 10 at the 3e-6 endpoint is rejected by the 60-dps closed form (true 17)",
+      "detail": "mpmath ceil(log2(ln2/ln(1+6e-6))) = 17",
+      "fired": true,
+      "id": "K-T6"
+    },
+    {
+      "description": "a planted basin claim 'basin(g) = (0,1)' is rejected: r0 = 1e300 still converges to 1/2",
+      "detail": "from 1e300, g reaches 3e-6 of 1/2 in 27 steps",
+      "fired": true,
+      "id": "K-T7"
+    },
+    {
+      "description": "the no-go search HAS POWER: a planted omnipotent candidate is correctly flagged as breaking the no-go, so a real counterexample would not have been missed",
+      "detail": "",
+      "fired": true,
+      "id": "K-T8"
+    },
+    {
+      "description": "a planted unconditional unique-r law step is caught by an INDEPENDENT re-implementation of the firewall rule",
+      "detail": "",
+      "fired": true,
+      "id": "K-T9"
+    },
+    {
+      "description": "a planted comparator (m_tau = 1776.86) yields a materially different deviation, proving the checker is actually sensitive to the mass inputs",
+      "detail": "9.2328e-06 vs 3.3049e-06",
+      "fired": true,
+      "id": "K-T10"
+    },
+    {
+      "description": "a planted 'the reverse map decreases S2' claim is refuted symbolically at r=9/10",
+      "detail": "S2(g(0.9)) = 0.682466 > S2(0.9) = 0.651757",
+      "fired": true,
+      "id": "K-T11"
+    },
+    {
+      "description": "the determinacy attack HAS POWER: it did in fact find a map satisfying the Q1 statement's numerics with different global behaviour, so a determinacy failure would not have been missed",
+      "detail": "",
+      "fired": true,
+      "id": "K-T12"
+    }
+  ]
+}

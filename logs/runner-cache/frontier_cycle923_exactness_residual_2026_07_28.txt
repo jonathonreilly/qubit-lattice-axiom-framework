@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle923_exactness_residual_2026_07_28.py
-runner_sha256: 06d887d9d9197517f9d7b3735ea4a9fa25a7ab7630504764d25b6e9044d9be06
+runner_sha256: 9c03a600e3963bfbc169cc8238744b91aae333d5f668a0e83f371c22ea206366
 timeout_sec: 900
 exit_code: 0
 elapsed_sec: 0.39
@@ -326,7 +326,7 @@ TEETH: 12/12 FIRED
 ============================================================================================
 receipt: outputs/exactness_residual_cycle923_receipt_2026_07_28.json
 determinism_digest_sha256: 55500ff5a0dd576844ec4bd42a991e2834a573b1328adbe0a8d844579f960346
-runtime_sec: 0.309
+runtime_sec: 0.318
 
 DECLARATION: no lane's r is derived, forced or preferred; the Q2 verdict is reported as arrow-conditional;
 nothing is recommended for adoption.

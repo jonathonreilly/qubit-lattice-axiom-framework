@@ -1293,14 +1293,14 @@
   "symbolics": "NO CAS -- exact Fraction Faddeev-LeVerrier charpoly in an integer basis, hand-written F_p distinct-degree factorisation, Dedekind's theorem"
  },
  "findings": [],
- "primary_receipt_file_sha256": "46cac3668d72cf4d3f0d0c20ae01f2334dedacecdd7a06485637b1c315bf7b83",
- "primary_timing_free_digest": "7f4fe37710a15d99ebd822d391ae7a075a25a82b7d6c3dd38a247ed85ff17156",
+ "primary_receipt_file_sha256": "5a7e7ab80e2a9cb34cf4a7fc2b720d4d9fda25cefaa0574df71ae3d8a7181297",
+ "primary_timing_free_digest": "c111eae86bf1c381ff990d4376e97be3fd2186d9b72f927efd82c9df9abac5bc",
  "refutations": [],
  "role": "independent checker",
  "runner": "frontier_cycle933_sk_shape_independent_check_2026_07_28.py",
  "runner_sha256": "ed391f7bc0c5c88c61e47898f8343d4809c65b99f157c7139499ddfc36748cc7",
  "runtime_limit_seconds": 900.0,
- "runtime_seconds": 9.640824791014893,
+ "runtime_seconds": 9.514586374978535,
  "runtime_within_limit": true,
  "schema": "frontier_cycle933_sk_shape_independent_check_v1",
  "teeth": {
@@ -1394,6 +1394,6 @@
   "n_firing": 15,
   "n_teeth": 15
  },
- "timing_free_digest": "db6a9112c220d0b3f1b3d5b145e878c982ca8e71fa491f27e7d82bbf924e1740",
+ "timing_free_digest": "054a3a685229301da77df73bdcef2014f4de1c230d577c8511ba5559c0d54e69",
  "verdict": "SUPPORTED"
 }

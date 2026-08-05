@@ -51,7 +51,7 @@ WHAT THIS RUNNER FINDS
 DISCIPLINE.  Restriction gates first and at deviation EXACTLY zero: the 929
 multiplicity ladder (28 rungs / 8 cells), its additivity residuals and
 last-step law, the 927/929 T(d) baseline table (16 rows), the 931 s(k) table
-(36 values) and the 931 identity residuals (28 rows).  21/21 frozen constants
+(44 values) and the 931 identity residuals (28 rows).  21/21 frozen constants
 byte-verified SEVEN-way.  Four propagator routes, two of them structurally
 disjoint (full 2^(d+1) Chebyshev vs the 2(d+1) collective reduction).  Fifteen
 teeth.  A seal built from the derived reduction alone and verified afterwards

@@ -1364,3 +1364,34 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Successor launched into the freed slot: Cycle 931 (the
   additivity-identity derivation attempt, blockM11 — the lane's
   best mechanism handle).
+
+## Cycle 931 pair-complement theorem (blockM11, PR #5999) — 2026-08-05
+
+- Supervisor review: the structure-first discipline (Q1 computed
+  the state's actual properties before any derivation attempt —
+  the mechanism was a FOURTH structure, not one of the spec's
+  three candidates; the minimal-premise rule worked); the seal
+  built from pinned bytes with zero new cells at seal time and the
+  reflection left as a PREDICTION; the hypothesis-ablation set
+  (nine constructions, each failing — the hypotheses are
+  load-bearing); the three self-caught traps disclosed for
+  re-implementers (the int8-cast idiom flagged).
+- Verdict: DERIVED — the pair-complement theorem (branch-by-branch
+  purity identity; the exchangeable collapse to one sequence with
+  reflection). 929's identity, exhausting rung, and last-step law
+  are now corollaries; the "unexplained" flag RETIRES. The
+  refutations are computational (SSA-equality; perturbative;
+  exchangeability-as-sufficient). The sealed both-merged closure
+  reached the region 929 declared unconstructible (state-level,
+  9.7e-15). The honest residue named: the s(k) shape stays
+  empirical; the theorem fixes relations, not values.
+- Checker: SUPPORTED, 15/15 teeth, ZERO refutations, on disjoint
+  machinery incl. no-CAS symbolics; the 1000-random-state
+  hypothesis test with a violating ablated control; the 50-digit
+  confirmation (7.6e-49). Positive scope: isomorphic-arm spiders;
+  the two identities separate cleanly.
+- Cluster-cap (11th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 932 (the
+  persistence razor, blockM12 — the lane's last unexplained
+  mechanism, attacked through the theorem's own s(k,t) reduction).

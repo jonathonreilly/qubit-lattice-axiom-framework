@@ -1,0 +1,70 @@
+{
+  "authorship": {
+    "primary_and_checker": "Claude Opus 5 worker under supervisor spec (substitution disclosed; codex exhausted until 2026-08-08)",
+    "supervisor": "Claude Fable 5 (spec, line-review, note, ship)"
+  },
+  "block": "blockQ17",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "automorphism": "L1 multiset EXACT, L2 commutation EXACT, L3 semantic 0-vs-139 breaking wires, L4 940's own colour refinement EXACT, L5 trace-instrument false alarm measured",
+    "axiom_vendor_read": {
+      "git_blob": "02ab79ec08f0b29d1922c1f628d0d0389ddd2c99",
+      "sha256": "638b2b2c134cd04a61addb46caeb86516ffd976f8432001dab78fa8cbebf15e8",
+      "source": "origin/axioms/admissibility-likelihood-20260805:docs/MINIMAL_AXIOMS_2026-06-29.md"
+    },
+    "defect_census": "12 distinct gates / 220 occurrences of 34188; independently reproduced by a different algorithm",
+    "derivation": "Route B under H0..H5; Route A rejected on the axiom's bytes; conditions measurement splits atoms 4/4 across seven pre-fixed formalizations with a computed admissibility predicate",
+    "determinism": "double-run digest identical in-process and byte-identical across separate processes",
+    "parametric_firewall": "zero float literals; zero weight-shaped rationals outside a conditional fence (checker-swept); conditional value only under CONDITIONAL_* key paths",
+    "restriction_gates": "78/78 before construction (936 tree+battery, 940 colour refinement, 943 localisation value-for-value)",
+    "science_digest": "497a3c75b328748c3b3c27bbd386c8a6112b26befff42f25a11d3222cb08879f",
+    "seal_digest": "7ab2eb2d88ef2b6513a47295854df1691c7bd55d03daae42ae2f49207153dfaa",
+    "sealed_table": "4/5 \u2014 S2 128/128 and S3 verified forward; S1/S5 re-verifications disclosed; S4 REFUTED and shipped (record-indistinguishability follows menu-hood; 64 -> 8 observables)"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": {
+    "cap_state": "within per-block bounds; primary 255s + checker 107s, both under 900s",
+    "cluster": "born-lane blockQ17",
+    "escalation": "none"
+  },
+  "cycles": [
+    946
+  ],
+  "files": {
+    "docs/MIRROR_PARTNERED_KERNEL_TWELVE_GATE_DEFECT_CYCLE946_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "9060d56baa0e0a26c660b321c0a3cc946a8de6de",
+      "sha256": "b688fa8bb16058d02470f049cf1722c0e9a908d1df0a525213dfc1f52c4ea4fc"
+    },
+    "logs/runner-cache/frontier_cycle946_mirror_kernel_2026_07_28.txt": {
+      "git_blob": "9c37d434af18099a5a819cd0658227bf2556b66b",
+      "sha256": "5eaf5a17152ed57796cd01012f0c115db0b370844489090b7a5c517522facebf"
+    },
+    "logs/runner-cache/frontier_cycle946_mirror_kernel_independent_check_2026_07_28.txt": {
+      "git_blob": "b7d3c2e41829fd813adfb5dad3681312008e07d7",
+      "sha256": "1ee1ba4332eb6433b136e0c00138619e4603d057ff6ccd4c148662cb92f49055"
+    },
+    "outputs/mirror_kernel_cycle946_receipt_2026_07_28.json": {
+      "git_blob": "c74aceddb1cb30d797aed447961a819732a0dd67",
+      "sha256": "b9d8263f7b180cb5973acefeb7379272ed0994ec146fdba2023fb8e2c9536cb5"
+    },
+    "outputs/mirror_kernel_independent_check_cycle946_receipt_2026_07_28.json": {
+      "git_blob": "ddc4ff30af66b25d4fd2728209cf53606ef0f3d4",
+      "sha256": "cc58f5f736fbacb94285e5d69cc7d0003581e174d8d9d90bbfbf4b980c2d8912"
+    },
+    "scripts/frontier_cycle946_mirror_kernel_2026_07_28.py": {
+      "git_blob": "2beaafb471ab2a5b28185d92de8c8481bfd50905",
+      "sha256": "e393c882c3f0ea745190aeb36faf3f02c958537185210f5b8715e7b2bce465d7"
+    },
+    "scripts/frontier_cycle946_mirror_kernel_independent_check_2026_07_28.py": {
+      "git_blob": "6f56a805d98cea88f0677a42b0f525fed744df04",
+      "sha256": "264aa838141212dd9c0e28a9192fa2a7f4376307fc4c189f7794df543a4dfe74"
+    }
+  },
+  "headline": "The mirror partner is twelve gates, and it buys three sites: the menu swap is an EXACT automorphism of the partnered law (940's negative is model-contingent), and CONDITIONAL ON PR #6011 AND the undischarged H0 import, the adopted Admissibility clause plus Qubit no-privilege DERIVES the symmetric two-item weight at 3 of 5 genuine menus, per occasion.",
+  "independence": "checker spec'd to REFUTE with its own splice algorithm, instruments, and tree; 14/14 teeth; five refutations adopted incl. the unnamed H0 import",
+  "note": "docs/MIRROR_PARTNERED_KERNEL_TWELVE_GATE_DEFECT_CYCLE946_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 107.3,
+    "primary": 255.07
+  }
+}

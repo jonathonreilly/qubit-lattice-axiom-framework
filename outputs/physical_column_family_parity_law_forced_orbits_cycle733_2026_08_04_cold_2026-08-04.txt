@@ -1,0 +1,67 @@
+
+the cell and its pieces of least volume
+PASS cell.pieces  4368 five-subsets of the 16 corners, 2672 of least volume
+PASS cell.charge  adjacency charge spectrum [(3, 64), (4, 384), (5, 1152), (6, 768), (7, 304)]
+PASS cell.inverse  every piece matrix inverts exactly over the integers
+
+the symmetry of the cell
+PASS sym.group  24 proper rotations kept, 48 elements once the tick flip is included
+PASS sym.orbits  57 piece orbits, sizes [16, 48], summing to 2672
+PASS sym.constant  adjacency charge is constant on every piece orbit
+
+sample points, none of them on a piece boundary
+PASS pts.weights  barycentric bound 3, superincreasing weight total 12810
+PASS pts.generic  2736 sample points, no collision, 0 lying on any piece boundary
+PASS pts.orbits  they fall into 57 orbits of the full symmetry, sizes [48], one orbit for each piece orbit
+PASS pts.incidence  points inside a piece range over (6, 409), pieces containing a point over (90, 224), so no row and no column of the incidence is empty
+
+the exhibited dissections, including the monotone stencil
+PASS wit.valid  12 exhibited lists and the monotone stencil, one piece per ordering of the four columns, each cut the cell into 24 pieces of least volume
+
+the family of nearest neighbour costs
+PASS fam.trivial  of 15 column sets the 4 single columns give the zero cost, leaving 11
+PASS fam.monotone  cost never drops when a column is added, on all 15 sets
+PASS fam.classes  the 11 split by spatial count and tick into 5 classes of sizes [1, 1, 3, 3, 3]
+PASS fam.permute  each of the 48 symmetries permutes the 2672 pieces
+PASS fam.symmetry  all 29 ordered pairs inside a class are joined by an exhibited symmetry
+PASS fam.invariant  exactly 2 of the 11 are constant on the 57 piece orbits, [(0, 1, 2), (0, 1, 2, 3)]
+
+no cost in the family is blind to the cut
+PASS cut.varies  every one of the 11 takes at least two values on the 13 dissections
+
+parity is a law for the ten proper column sets
+PASS par.certs  each of the 10 proper sets carries a weighting over the field with two elements and the full set carries none
+PASS par.rows  the weightings reproduce the cost of every one of the 2672 pieces, wrong rows 0
+PASS par.even  every support is even, and the piece count 24 is even too, so the constant drops out of the total: supports [234, 232, 212, 210, 214, 234, 168, 238, 270, 246]
+PASS par.law  cost agrees with support modulo two on all 13 dissections
+PASS par.unique  a second weighting found by eliminating in the opposite order differs on 10 of the 10 sets, yet always has the same support parity, so the law does not depend on which weighting is picked
+
+the parity law breaks exactly at the full column set
+PASS brk.odd  the full cost takes both parities on exhibited dissections: [144, 163, 164, 165, 167, 168, 170]
+PASS brk.dual  4 pieces cover 228 points exactly twice and the rest not at all, with odd cost sum 25
+PASS brk.minimal  dropping any one of the 4 destroys the even cover
+
+where the odd part of the full cost lives
+PASS spl.exact  the full cost is the spatial cost plus the count of pairs that step in the tick and in one lattice direction, on all 2672 pieces
+PASS spl.needed  without that second term the identity survives on only 64 pieces
+PASS spl.carries  the spatial cost is even on every exhibited dissection, so the parity of the full cost is carried entirely by the second term
+
+the floor of the full cost is exact, with no certificate needed
+PASS flo.least  the cost of a single piece runs over [(6, 400), (7, 1216), (8, 864), (9, 192)]
+PASS flo.bound  no piece costs under 6, so no dissection costs under 144; what is measured here is that 144 is reached, by the monotone stencil
+
+the minimum principle forces four orbits of pieces
+PASS for.count  a complete search over the 400 pieces of least cost visits 502838 nodes and finds 15800 dissections
+PASS for.orbits  they fall into 391 orbits of sizes [8, 12, 24, 48], covering all 15800
+PASS for.pool  the pieces they use are 4 whole orbits, 192 pieces; the other 208 pieces of least cost are never used
+PASS for.needed  and every one of the four is needed: drop any one and the remaining 352 pieces of least cost admit no dissection at all
+PASS for.stencil  the monotone stencil takes six pieces from each of those 4
+PASS for.split  every one of them splits as spatial 108 and second term 36, and every piece it uses sits on the exhibited spatial floor support of 1792
+PASS for.rigid  the 2672 footprints are distinct, and of the 379200 holes made by removing one piece each is filled by the piece just removed and by no other
+
+what can see which pieces the minimum principle keeps out
+PASS sep.blind  the pair of costs that the symmetries keep fixed is blind to the exclusion; kept [((4, 2), 96), ((5, 1), 96)], left out [((3, 3), 64), ((4, 2), 96), ((5, 1), 48)]
+PASS sep.sharp  the whole family is not blind: 12 cost vectors on the kept pieces, 13 on those left out, 0 in common
+PASS sep.level  so the kept pieces are exactly a union of level sets of the family, 12 of the 25 carried by any piece of least cost; three other splits into the same two sizes share [25, 12, 6] vectors, so a clean separation is not automatic
+
+TOTAL: PASS=41 FAIL=0

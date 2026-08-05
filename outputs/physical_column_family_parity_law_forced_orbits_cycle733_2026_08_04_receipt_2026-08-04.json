@@ -1,0 +1,185 @@
+{
+ "cycle": 733,
+ "failures": 0,
+ "gates": 41,
+ "headline": "of the 15 sets of columns of the cell, 4 give the zero cost and 11 do not; each of the 10 proper sets among them carries an exhibited weighting over the field with two elements that reproduces the cost of all 2672 pieces with even support, so every dissection has even cost under each, while the full four-column cost has no such weighting, refuted by 4 pieces covering 228 sample points exactly twice with odd cost sum 25; the full cost splits on every piece as the spatial cost plus the count of pairs stepping in the tick and in one lattice direction, its floor of 144 is exact with no certificate, and a complete search finds 15800 dissections of least full cost drawing on 4 whole piece orbits, 192 pieces, each orbit needed",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md",
+ "recorded_output": "outputs/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04_cold_2026-08-04.txt",
+ "results": {
+  "break_at_the_full_set": {
+   "costs_on_dissections": [
+    144,
+    163,
+    164,
+    165,
+    167,
+    168,
+    170
+   ],
+   "dual_pieces": 4,
+   "minimal_dual": 4,
+   "odd_cost_sum": 25,
+   "points_covered_twice": 228
+  },
+  "cell": {
+   "five_subsets": 4368,
+   "minimal_pieces": 2672,
+   "spatial_charge_spectrum": [
+    3,
+    64,
+    4,
+    384,
+    5,
+    1152,
+    6,
+    768,
+    7,
+    304
+   ]
+  },
+  "dissections": {
+   "pieces_each": 24,
+   "pinned_lists": 12,
+   "total_used": 13
+  },
+  "family": {
+   "class_sizes": [
+    1,
+    1,
+    3,
+    3,
+    3
+   ],
+   "column_sets": 15,
+   "monotone_over_sets": 15,
+   "none_blind_to_the_cut": 11,
+   "nontrivial_sets": 11,
+   "orbit_constant_costs": 2,
+   "ordered_pairs_joined": 29,
+   "symmetries_permuting_pieces": 48,
+   "symmetry_classes": 5,
+   "trivial_sets": 4
+  },
+  "floor": {
+   "floor": 144,
+   "floor_attained": 144,
+   "least_piece_cost": 6,
+   "piece_cost_spectrum": [
+    6,
+    400,
+    7,
+    1216,
+    8,
+    864,
+    9,
+    192
+   ]
+  },
+  "forced_pieces": {
+   "dissections_after_dropping_one": 0,
+   "distinct_footprints": 2672,
+   "forced_orbits": 4,
+   "forced_pieces": 192,
+   "holes_tested": 379200,
+   "left_after_dropping_one": 352,
+   "minimiser_orbit_sizes": [
+    8,
+    12,
+    24,
+    48
+   ],
+   "minimiser_orbits": 391,
+   "minimisers": 15800,
+   "never_used": 208,
+   "pool_searched": 400,
+   "search_nodes": 502838,
+   "second_term": 36,
+   "spatial_floor_support": 1792,
+   "spatial_part": 108,
+   "stencil_pieces_per_orbit": 6
+  },
+  "parity_law": {
+   "law_on_dissections": 13,
+   "piece_count_even": 24,
+   "pieces_checked": 2672,
+   "proper_sets_certified": 10,
+   "second_weighting_differs_on": 10,
+   "supports": [
+    234,
+    232,
+    212,
+    210,
+    214,
+    234,
+    168,
+    238,
+    270,
+    246
+   ],
+   "wrong_rows": 0
+  },
+  "sample_points": {
+   "barycentric_bound": 3,
+   "on_a_boundary": 0,
+   "pieces_per_point": [
+    90,
+    224
+   ],
+   "point_orbit_sizes": [
+    48
+   ],
+   "point_orbits": 57,
+   "points": 2736,
+   "points_per_piece": [
+    6,
+    409
+   ],
+   "weight_total": 12810
+  },
+  "symmetry": {
+   "group_order": 48,
+   "piece_orbit_sizes": [
+    16,
+    48
+   ],
+   "piece_orbits": 57,
+   "pieces_covered": 2672,
+   "proper_rotations": 24
+  },
+  "what_sees_the_exclusion": {
+   "control_splits_share": [
+    25,
+    12,
+    6
+   ],
+   "kept_costs": [
+    4,
+    2,
+    96,
+    5,
+    1,
+    96
+   ],
+   "left_out_costs": [
+    3,
+    3,
+    64,
+    4,
+    2,
+    96,
+    5,
+    1,
+    48
+   ],
+   "vectors_in_common": 0,
+   "vectors_on_all_least_cost": 25,
+   "vectors_on_kept": 12,
+   "vectors_on_left_out": 13
+  },
+  "where_the_odd_part_lives": {
+   "split_holds_on": 2672,
+   "without_second_term": 64
+  }
+ }
+}

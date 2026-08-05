@@ -1458,6 +1458,31 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Cluster-cap (12th M-family PR): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
 
+## Cycle 935 bridge-cashing scope no-go (blockG28, PR #6003) — 2026-08-05
+
+- Supervisor review: the premise-falsification discipline (the
+  owner's registry pointer tested against the primitive's OWN bytes
+  and falling on the "coupling" collision — the honest outcome
+  shipped as the result); the checker's lane-conditional finding
+  adopted as the stronger ground; the git-ancestry holdout proof
+  (a new hardening of the seal pattern — keep it); the bijection
+  theorem re-proven CAS-free.
+- Verdicts: SCOPE NO-GO — the registration is a gauge move; the
+  bridge scalar is DIMENSIONLESS and ruler-immune. THE CASHING
+  RULE exported (a ruler cashes iff the dimensionless side has
+  free dim 0). The landed Gate-B pair pinned as an exact t=2
+  stabilizer step. G_Newton non-derivation with every blocker
+  named; the circular shortcut refuted.
+- CORRECTION TO THE SUPERVISOR'S OWN TOE-MAP READING (04:00): item
+  2 is NOT discharged by the Planck registration — the map's
+  remaining scalar is re-characterized in its true currency
+  (dimensionless; closes only by retained-grade theorems).
+  Reported to the owner plainly.
+- Audit rows: the 871 hand-authored receipt (runner emits stdout
+  only); the EQUIVALENT-tag alias softness.
+- Cluster-cap (G-family): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
 # SUPERVISOR PERSONAL LANE REVIEWS — 2026-08-05 ~04:40 EDT (owner-directed)
 
 Fresh-eyes line-by-line pass over each lane's full window output by the

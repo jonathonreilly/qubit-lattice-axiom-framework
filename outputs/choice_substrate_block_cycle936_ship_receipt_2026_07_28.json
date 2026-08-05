@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); both readings of the ambiguous site index MEASURED (the substrate decides: worlds); the extensional residual disclosed; the parametric firewall mechanical and over-broad by design",
+  "block": "toe-time-blockQ13-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 252.6s; PRIMARY_SURVIVES_THIS_CHECK; the 918 facts reproduced independently; per-leaf table 256/256 row-for-row",
+    "primary": "exit 0, 276.5s; 12/12 certificates, 54/54 restriction gates (918 digests + 925 sweep value-for-value), 15/15 teeth incl. the planted P2 tape, the planted mu-privileging step, both slot-indexing breaks, and the planted hidden-state choice; zero float literals; exact rationals end to end"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 12th Born-family PR: executes the lane's engineering successor at measured price, exhibits the first genuine same-world branch pairs, and converts the A3 sentence's arena from prose into a constructed object with a forced index set and a measured freedom count; nothing corollary",
+  "cycles": [
+    936
+  ],
+  "files": {
+    "docs/CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "ffc0e6d1c3527ef75286abc0e50de0a3a3588f53",
+      "sha256": "6cdec178602e936a07a86c43627b431527a5d328c2b269d0edd594d245831eac"
+    },
+    "logs/runner-cache/frontier_cycle936_choice_substrate_2026_07_28.txt": {
+      "git_blob": "8926140d897a849b220f53ce50a57575e508bf53",
+      "sha256": "d2d744108c7cd9c581bdeaff07be89dae516055f158e4b940fc5a0213060ea12"
+    },
+    "logs/runner-cache/frontier_cycle936_choice_substrate_independent_check_2026_07_28.txt": {
+      "git_blob": "3a800ef2f5610b74b44ad972d7334be09f2782a6",
+      "sha256": "2c9176168bf1e7f7604908db61b53fe9cc4e547d90072ca9bc957a17f9a68819"
+    },
+    "outputs/choice_substrate_cycle936_receipt_2026_07_28.json": {
+      "git_blob": "d7b786fccc0435d139339c141dbad75c9f8d799b",
+      "sha256": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028"
+    },
+    "outputs/choice_substrate_independent_check_cycle936_receipt_2026_07_28.json": {
+      "git_blob": "d35533b4193336e248be1fc2931baadd6224e5bd",
+      "sha256": "d9d6759e40b8c63f48f40f1c31c2c39ba421d4871b540f61f996fc17706588a8"
+    },
+    "scripts/frontier_cycle936_choice_substrate_2026_07_28.py": {
+      "git_blob": "75cb05ffb9456691747a67ed5227f3db589f95c4",
+      "sha256": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d"
+    },
+    "scripts/frontier_cycle936_choice_substrate_independent_check_2026_07_28.py": {
+      "git_blob": "5ca6ce5a2d9957daeb78ed7d415c1609767cae0c",
+      "sha256": "d764b713bc2fbe9a55f3a63557368d8be25239246e2c6d516edb6121b13f7fae"
+    }
+  },
+  "headline": "THE CHOICE SUBSTRATE IS BUILT AND PRICED (mu strictly parametric \u2014 NOTHING picks a value; A3 exactly as unadopted as before): ONE template + ONE AST node type + ONE type change (compile -> TREE) buys semantic P3 (M1-M5 = the exact negation of 918's determinism lemma; non-anticipation 0 violations), BIT-IDENTICAL backward compatibility (the pinned 918 build digests reproduce, both layouts); the full 256-leaf tree over ONE (schedule, tick-0 state) exact and double-run; THE 918 BATTERY SURVIVES ON EVERY BRANCH; SIX GENUINE SAME-WORLD BRANCH PAIRS (three sharing a lock boundary with flipped menu items \u2014 the article the census never had); THE WEIGHT ALGEBRA DOES NOT COLLAPSE (freedom: 8 per occasion / 6 per site / 1 global; normalization forced per node; one identification per duplicated site; factorization forbids cross-site relations; no value forced); THE INDEX SET IS FORCED: slot-indexing breaks layout independence AND duplicate-lane consistency (digest witnesses); world-indexing preserves both \u2014 a MEASURED CONSTRAINT ON THE A3 SENTENCE'S WORDING (weights attach to sites in the world sense, the object Admissibility already quantifies over); 17/17 sealed predictions; audit row: the 918 receipt key is a PARITY histogram",
+  "independence": "checker 64/64, 13/13 teeth, ZERO refutations \u2014 bytecode-identity compatibility, content-verified splice, snapshot-free replay of all 256 assignment vectors, degree-sized determining-grid weight recomputation, independent non-anticipation theorem (0 violations)",
+  "note": "docs/CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 252.6,
+    "primary": 276.5
+  }
+}

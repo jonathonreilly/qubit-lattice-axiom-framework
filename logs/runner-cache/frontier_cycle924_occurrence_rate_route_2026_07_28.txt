@@ -107,8 +107,8 @@ CYCLE 924 -- R-eta LIVE ROUTE 3 (occurrence-lane event-rate route)
 [PASS] F0                               all falsifier teeth fire
          9/9
 [PASS] Z-RUNTIME                        runtime within budget
-         2.8s / 900.0s
+         3.1s / 900.0s
 
 TOTAL: PASS=65 FAIL=0
 VERDICT: PASS
-runtime_seconds=2.8 budget=900.0
+runtime_seconds=3.1 budget=900.0

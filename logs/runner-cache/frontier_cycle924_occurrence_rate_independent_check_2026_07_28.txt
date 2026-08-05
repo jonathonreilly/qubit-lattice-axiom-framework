@@ -64,10 +64,10 @@ CYCLE 924 INDEPENDENT CHECKER -- spec'd to refute
 [PASS] T8e            the primary writes to no axiom / registry / audit surface
         []
 [PASS] T-RUNTIME      runtime within budget
-        7.6s / 900.0s
+        7.5s / 900.0s
 
 REFUTATIONS FOUND: 0
 
 TOTAL: PASS=35 FAIL=0
 VERDICT: PRIMARY_SURVIVES_THIS_CHECK
-runtime_seconds=7.6
+runtime_seconds=7.5

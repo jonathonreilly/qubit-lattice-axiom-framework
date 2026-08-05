@@ -214,13 +214,13 @@
       "what": "the primary writes to no axiom / registry / audit surface"
     },
     {
-      "detail": "7.6s / 900.0s",
+      "detail": "7.5s / 900.0s",
       "id": "T-RUNTIME",
       "pass": true,
       "what": "runtime within budget"
     }
   ],
-  "runtime_seconds": 7.6,
+  "runtime_seconds": 7.5,
   "teeth": 35,
   "totals": {
     "fail": 0,

@@ -1793,8 +1793,37 @@ def main() -> int:
         else:
             why = ("the selection moved off its setup value but no "
                    "same-setup-coordinate pair split")
+        cov_ok = bool(cov["translation_invariant"])
         verdicts[name] = {
             "VERDICT": verdict,
+            "declared_constraint_a_record_machinery_met": bool(
+                not m["write_once_violations"]
+                and not m["record_slot_activation_conflicts"]
+                and not m["slot_wires_that_became_gate_wires"]
+                and m["lock_points"] > 0),
+            "declared_constraint_b_certified_vocabulary_met":
+                design["kinds_in_the_certified_vocabulary"],
+            "declared_constraint_c_monitor_phase_Z11_met": cov_ok,
+            "declared_constraint_c_detail": {
+                "in_set_image_checks": cov.get("translation_violations")
+                is not None,
+                "selection_violations_under_translation":
+                    cov["translation_violations"],
+                "reading":
+                    "the modification itself is station-anchored and travels "
+                    "with the controller token exactly as every kernel macro "
+                    "does, so the LAW is phase-covariant by construction.  "
+                    "What the test measures is whether the REALIZED selection "
+                    "is invariant under the landed monitor-phase Z_11 action "
+                    "on the census.  On the control it is, trivially, because "
+                    "the selection is a frozen setup constant that the action "
+                    "preserves.  Once the selection becomes a function of the "
+                    "trajectory it stops being invariant, because the lock "
+                    "TICK is not phase-invariant and the number of endpoint "
+                    "writes before the lock therefore is not either.  That is "
+                    "not an artefact: it is the price of making the selection "
+                    "dynamical on this substrate, and it is charged here.",
+            },
             "endpoint_is_now_a_gate_target": bool(
                 ew["LEFT_is_now_a_gate_target"]
                 and ew["RIGHT_is_now_a_gate_target"]),
@@ -1836,6 +1865,14 @@ def main() -> int:
                      not design["kinds_in_the_certified_vocabulary"]),
                     ("setups-are-worlds: worlds now read each other",
                      not m["ast_lane_locality"]),
+                    ("the landed monitor-phase Z_11 invariance of the "
+                     "REALIZED selection: the lock tick is not phase-"
+                     "invariant, so a trajectory-dependent selection cannot "
+                     "be either", not cov_ok),
+                    ("the control's lock-point set: "
+                     f"{len(set(ctl['formed']) - set(builds[name]['formed']))}"
+                     " worlds stop forming inside the landed horizon",
+                     m["lock_points"] != len(ctl["formed"])),
                 ) if broken],
             "price":
                 "the supplement is exactly one added sentence of law, and "
@@ -2185,13 +2222,23 @@ def main() -> int:
         + "; ".join(f"{n} {v['VERDICT']}" for n, v in verdicts.items())
         + ".  " + (
             "The door Cycle 913 specified opens for "
-            + ", ".join(born) + ": the selection becomes dynamical and "
+            + ", ".join(born) + ": the selection becomes dynamical at "
+            + ", ".join(str(analysis[n]["SELECTION"][
+                "lock_points_where_RD_STATE_disagrees_with_RD_SETUP"])
+                for n in born)
+            + " lock points and "
             + str(sum(analysis[n]["BRANCH_PAIRS_dynamical"][
                 "DYNAMICAL_BRANCH_PAIRS"] for n in born))
-            + " dynamical branch pairs appear, while the Cycle-911 branch "
-              "class stays empty for every candidate -- so a writable "
-              "endpoint buys a dynamical selection but not an indeterministic "
-              "one."
+            + " dynamical branch pairs appear -- but at three measured "
+              "prices: the Cycle-913 transport theorem is supplemented, the "
+              "monitor-phase Z_11 invariance of the realized selection is "
+              "lost (the lock tick is not phase-invariant), and "
+            + ", ".join(str(analysis[n]["FORMATION"][
+                "worlds_that_stopped_forming_count"]) for n in born)
+            + " worlds stop forming inside the landed horizon.  The "
+              "Cycle-911 branch class stays empty for every candidate, so a "
+              "writable endpoint buys a dynamical selection but not an "
+              "indeterministic one."
             if born else
             "No candidate is Born-capable.  Making the endpoint a gate target "
             "is necessary but not sufficient: the selection can be moved into "
@@ -2254,17 +2301,22 @@ def main() -> int:
     print("-" * W)
     print("C2  THE MEASUREMENT")
     print("-" * W)
-    print(f"  {'candidate':9s} {'locks':>6s} {'bmoved':>7s} {'ep-writes':>10s} "
-          f"{'lk-writ':>8s} {'sel!=setup':>11s} {'offmenu':>8s} {'dynbr':>6s}")
+    print(f"  {'candidate':9s} {'locks':>6s} {'lost':>5s} {'gain':>5s} "
+          f"{'bmoved':>7s} {'ep-writes':>10s} {'lk-writ':>8s} "
+          f"{'sel!=setup':>11s} {'offmenu':>8s} {'dynbr':>6s} {'Z11':>4s}")
     for name, row in analysis.items():
         f, s, e = row["FORMATION"], row["SELECTION"], row["ENDPOINT_WRITES"]
+        z11 = row["COVARIANCE_AND_STRUCTURE"]["translation_invariant"]
         print(f"  {name:9s} {f['lock_points']:6d} "
+              f"{f['worlds_that_stopped_forming_count']:5d} "
+              f"{f['worlds_that_started_forming_count']:5d} "
               f"{f['lock_points_whose_boundary_moved']:7d} "
               f"{e['total_LEFT_write_events_over_all_worlds'] + e['total_RIGHT_write_events_over_all_worlds']:10d} "
               f"{e['lock_points_whose_endpoint_changed_before_the_lock']:8d} "
               f"{s['lock_points_where_RD_STATE_disagrees_with_RD_SETUP']:11d} "
               f"{s['off_menu_endpoint_content_at_the_lock']:8d} "
-              f"{row['BRANCH_PAIRS_dynamical']['DYNAMICAL_BRANCH_PAIRS']:6d}")
+              f"{row['BRANCH_PAIRS_dynamical']['DYNAMICAL_BRANCH_PAIRS']:6d} "
+              f"{str(z11):>4s}")
     print()
     for name, row in analysis.items():
         e, c, d = (row["ENDPOINT_WRITES"], row["COVARIANCE_AND_STRUCTURE"],
@@ -2319,6 +2371,15 @@ def main() -> int:
     for name, v in verdicts.items():
         print(f"  {name:6s} {v['VERDICT']}")
         print(f"         {v['why']}")
+        print(f"         declared constraints met: "
+              f"(a) record machinery="
+              f"{v['declared_constraint_a_record_machinery_met']}  "
+              f"(b) certified vocabulary="
+              f"{v['declared_constraint_b_certified_vocabulary_met']}  "
+              f"(c) monitor-phase Z_11="
+              f"{v['declared_constraint_c_monitor_phase_Z11_met']} "
+              f"({v['declared_constraint_c_detail']['selection_violations_under_translation']}"
+              f" violations)")
         print(f"         preserved: "
               f"{'; '.join(v['structures_preserved']) or 'none'}")
         if v["structures_supplemented"]:

@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); one checker-found primary shortfall amended (the fourth void site); one post-specified band disclosed as deviation; supervisor line-by-line review",
+  "block": "toe-time-blockM3-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 738.8s; all claims survive; failed-claims=1 (the fourth void site \u2014 amended); 8/8 teeth",
+    "primary": "exit 0, 873.8s; restriction gates value-for-value (914/915 figures to full precision; recovered chi_GS to 4 decimals; B's crossing counts)"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 3rd M-family PR (evaluator required from here): a reconciliation dictionary with computed conversions and a priced no-conversion, a void-comparison census, the closure of the frozen design's last tier, and three audit rows; nothing corollary",
+  "cycles": [
+    916
+  ],
+  "files": {
+    "docs/THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "2939c2b04d55b0efc9c5c77544319443c8d0a35b",
+      "sha256": "e9921c10d626c608e55bba16751c0b65e5035648f813f7fb50650f38dda79ef4"
+    },
+    "logs/runner-cache/frontier_cycle916_theta_independent_check_2026_07_28.txt": {
+      "git_blob": "ac321bbdc8e2b26394ccc0e3c3439338bcc9d962",
+      "sha256": "175b414baa1ecd333cc94f2b4545ac5aa2cb4f416a366009b720bbaf8b9e0e25"
+    },
+    "logs/runner-cache/frontier_cycle916_theta_reconciliation_2026_07_28.txt": {
+      "git_blob": "f2aefc508cc50d8fc81bc1ac5753ebac33d91c9e",
+      "sha256": "a3f903d9199616b5f5c86f46fc0c9dc449a6b5757ea07dc4775661ad811bdce6"
+    },
+    "outputs/theta_independent_check_cycle916_receipt_2026_07_28.json": {
+      "git_blob": "7a7c924d11c79f5c08c458aec610f0ba90a4a6f9",
+      "sha256": "b64942ac28a5d4c04b75d6ddb1e4903c7bcfebb69fb997e49b3152853f064f30"
+    },
+    "outputs/theta_reconciliation_cycle916_receipt_2026_07_28.json": {
+      "git_blob": "2923533ed245312d1011c7217c92c5f18eef1185",
+      "sha256": "4a3e390bbc9e9ba21dd3b87feef5db0171d33c8ddc5187314125300cedb8419c"
+    },
+    "scripts/frontier_cycle916_theta_independent_check_2026_07_28.py": {
+      "git_blob": "2545e1768ab51a061ea5b33b52f4ae0aa02e21f9",
+      "sha256": "4bcf77deae0c8577bfabe4dc9f3816b61abdf5ebd6bdf7bd69213a7c1c90e9fe"
+    },
+    "scripts/frontier_cycle916_theta_reconciliation_2026_07_28.py": {
+      "git_blob": "bd02476a97539594c9186a196fc0a3fe158404af",
+      "sha256": "3fa7f1d86c0443f055ec5a946176ab8261e6b66d87979dc299e5e6296a06f6d6"
+    }
+  },
+  "headline": "THE THETA DICTIONARY: A-to-C exact and Jt-independent BUT convention-two-valued (mixed doublet 0.5 vs symmetry-broken 1e-9 \u2014 the pilot escaped the freeze's objection only via a symmetry-breaking eigensolver); A-to-B = NO CONVERSION without a five-premise bridge (the floor sits at 95.9% of B's own attainable range \u2014 the checker's sharpening); CHECK-05 is VOID as stated (the same-shape X is two-valued, 7.5e-4 vs 0.50, on OPPOSITE sides of the floor) \u2014 theta* ~ 0.50 survives as a correct A-value, only the comparison dies; four void-comparison sites censused; B RUNS ONLY FROM HISTORY (its in-tree API no longer exposes its imports). TIER 2: DECAY HOLDS (reframed as reproduction \u2014 the landed streams already covered Jt<=10; 1e-12 agreement; no revival; the persistence story closes); 915's theta-prediction PART-REFUTED (theta drifts UP to 0.72 with R_ind = 0 \u2014 the indicator decoupling extended)",
+  "independence": "cross-context (independent four-axis definition classification \u2014 no materially different reading; offset reproduced at 5e-15 on MAX-canonical + shifted-Chebyshev + dual sector filters; tier-2 recomputed per lambda; three candidate bridges constructed incl. one the primary missed; 8/8 teeth)",
+  "note": "docs/THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 738.8,
+    "primary": 873.8
+  }
+}

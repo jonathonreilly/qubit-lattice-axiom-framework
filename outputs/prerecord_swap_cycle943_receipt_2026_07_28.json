@@ -1,4 +1,14 @@
 {
+  "INDEPENDENT_CHECKER_ADOPTIONS": {
+    "R1_the_commutation_IFF_was_only_an_IF": "the criterion chi[w] & CTRLMASK[w] == 0 was published as an IFF and 'a COMPLETE characterisation, not a search'.  It is SUFFICIENT ONLY.  Palindromic compute/uncompute ladders let a full-control-mask wire commute anyway; wire 47 is carried in the per-F table as the exhibited counterexample.  The endpoint negatives were and remain settled SEMANTICALLY, so nothing load-bearing rested on the false half.  The COUNT of such wires is ensemble-dependent and is reported, not proved: this runner and the checker measure different numbers and neither is a theorem.",
+    "R2_the_wire_census_counted_a_phantom": "546 touched wires with 'wire 0 never a control' was an artefact of not dispatching on gate kind.  Correct: 545 touched, 545 controls, ZERO never a control -- strictly stronger than the claim it replaces.  The positive-control F and tooth T3, which had used wire 0, are restated over a genuinely untouched wire.",
+    "R3_the_eight_wire_support_is_a_UNION": "per-atom supports are four, six or eight wires; eight is the union over the eight atoms.  The per-atom rows always carried the right numbers; the summary prose did not.",
+    "R4_the_timing_glosses_were_overstated": "'about five boundaries after the choice', 'roughly fifteen hundred boundaries before the lock' and 'before the first bank settle event on the lane' were all falsified as universal statements.  The last is FALSE on most atoms and is WITHDRAWN.  Measured per-atom gaps are now published in TIMING_AGGREGATES, and the only universal timing claim kept is that every atom breaks strictly before its lock.",
+    "R5_the_declared_scope_limit_was_understated_and_is_now_occupied": "the checker crossed the gap this block declared: an AFFINE map over GF(2) on about 36 lane-local wires reproduces the branch relation at every boundary, at all eight atoms, validated out of sample at four times the window.  It is NOT a law symmetry (it fails to commute off the orbit), so it licenses no weight equality and the physics conclusion stands -- but the honest statement is now 'no LAW-COMMUTING value symmetry swaps the menu', not 'no map relates the branches'.",
+    "R6_the_axiom_argument_overreached_and_a_better_quote_exists": "the offered dichotomy about 'A law privileges no states' missed a third reading (the automorphism group of the supplied structure, which is how the sibling Lattice and Qubit clauses read).  Corrected.  And the memo's 'Open Gates Outside The Axioms' section names formation rules -- WHICH admissible possibility a record locks and WITH WHAT WEIGHT -- as outside axiom content, which settles Q3 by quotation rather than by argument.  Adopted as the primary support.",
+    "WHAT_SURVIVED_UNCHANGED": "the 940-family delta; the six endpoint TOF patterns and their record-only targets; the source-pointer pair identity (which survived a harder embedded test than this block applied); the wire identities and the orientation split; the full Theta table value-for-value; the locks, events and items; both non-existence routes; and A2-is-gauge.",
+    "disclosure": "the independent checker refuted several published claims of the first version of this block.  Every refutation was re-verified here independently and ADOPTED; nothing was argued away.  The physics conclusion is unchanged, but three claims were overstated and are now corrected, and the scope of the negative is narrower and better named."
+  },
   "VERDICT": "940's negative EXTENDS to value-space maps on this substrate, and 940's SCOPE is corrected: A2 was gauge, the family was relabelling-only, and the axioms are item-symmetric.  No ask is made and the A3 sentence is untouched.",
   "all_certificates_pass": true,
   "audit": "unset",
@@ -1145,11 +1155,12 @@
         },
         {
           "detail": {
-            "why_this_must_fire": "if a never-control wire did not commute the criterion would be wrong and every negative in this block would be an artefact of a broken instrument",
-            "wire": 0
+            "correction": "the first version used wire 0 as 'the only touched wire that is never a control'; the independent checker showed wire 0 was a census phantom, so the control is restated over a genuinely untouched wire",
+            "why_this_must_fire": "if a wire no gate reads or writes did not commute, the instrument would be broken and every negative here would be an artefact",
+            "wire": 394
           },
           "fired": true,
-          "tooth": "T3_POSITIVE_CONTROL_flip_on_a_never_control_wire_MUST_commute"
+          "tooth": "T3_POSITIVE_CONTROL_flip_on_an_UNTOUCHED_wire_MUST_commute"
         },
         {
           "detail": {
@@ -1294,32 +1305,45 @@
           },
           "fired": true,
           "tooth": "T13_planted_broken_source_pointer_pairing_must_be_caught"
+        },
+        {
+          "detail": {
+            "dispatched_count": 545,
+            "naive_count": 546,
+            "never_a_control_dispatched": [],
+            "phantom": [
+              0
+            ],
+            "why": "the first version of this block published 546 touched wires with wire 0 never a control.  The independent checker showed both figures were artefacts of reading {a,b,c3} without dispatching on gate kind.  This tooth keeps the corrected census honest."
+          },
+          "fired": true,
+          "tooth": "T14_undispatched_wire_census_must_be_caught_as_a_phantom"
         }
       ],
-      "teeth_fired": 13,
-      "teeth_total": 13
+      "teeth_fired": 14,
+      "teeth_total": 14
     },
     "H_DOUBLE_RUN": {
       "certificate": "H_DOUBLE_RUN",
       "digest_is_timing_free": true,
       "identical": true,
       "pass": true,
-      "pass1_digest": "ee2e5ce38f24f371df3a90800bb3b4fe6eb5b0f3ce54f65931e157b0850a4da2",
-      "pass2_digest": "ee2e5ce38f24f371df3a90800bb3b4fe6eb5b0f3ce54f65931e157b0850a4da2"
+      "pass1_digest": "b444a144088c0f97dc9878cf0ad06f73dd0f07726b1a092ce63a5516dbe45a5f",
+      "pass2_digest": "b444a144088c0f97dc9878cf0ad06f73dd0f07726b1a092ce63a5516dbe45a5f"
     },
     "I_RUNTIME": {
       "budget_sec": 900,
       "certificate": "I_RUNTIME",
-      "elapsed_sec": 249.971,
+      "elapsed_sec": 263.68,
       "pass": true,
       "timings": {
         "Q0": 0.008,
-        "restriction/colour_refine": 0.718,
-        "restriction/per_atom_scan": 13.703,
-        "restriction/tree_936": 47.942,
-        "science/pass1": 63.587,
-        "science/pass2": 63.163,
-        "setup": 13.254
+        "restriction/colour_refine": 0.737,
+        "restriction/per_atom_scan": 13.495,
+        "restriction/tree_936": 46.987,
+        "science/pass1": 70.908,
+        "science/pass2": 71.137,
+        "setup": 13.033
       },
       "within_budget": true
     },
@@ -1356,10 +1380,10 @@
     "Q1_THE_VALUE_SPACE_SYMMETRY_FAMILY": {
       "NO_F_COMMUTES_AND_SWAPS_THE_MENU": true,
       "THE_ANSWER_TO_THE_OWNERS_QUESTION": {
-        "AND_IT_IS_THE_RIGHT_WIRE": "the orientation wires diverge at EXACTLY the three genuine-menu sites and NEVER at the three lock-timing sites.  The one datum that breaks the symmetry is the one whose job is to record WHICH of the two possibilities obtains.",
-        "REFUTED_IN_TIMING": "the owner's 'before the record' does NOT hold as a time window.  The divergence enters the record channels one boundary after the choice, and the symmetry breaks about five boundaries after the choice -- roughly fifteen hundred boundaries BEFORE the formation lock, and before the first bank settle event on the lane.  There is no extended pre-record segment carrying the symmetry: the record apparatus starts distinguishing the branches immediately.",
+        "AND_IT_IS_THE_RIGHT_WIRE": "the orientation wires diverge at EXACTLY the five genuine-menu ATOMS (three distinct sites) and NEVER at the three lock-timing atoms.  The one datum that breaks the symmetry is the one whose job is to record WHICH of the two possibilities obtains.",
+        "REFUTED_IN_TIMING": "the owner's 'before the record' does NOT hold as a time window.  The divergence enters the record channels within a few boundaries of the choice, and the symmetry breaks while the formation lock is still far away -- see TIMING_AGGREGATES for the measured per-atom gaps, which vary widely and are NOT the single round numbers the first version of this block quoted.  What survives as a universal statement is only this: at EVERY atom the symmetry breaks strictly before that site's lock.  The stronger gloss 'and before the first bank settle event on the lane' is FALSE on most atoms -- the lane has usually already had a bank settle event long before the choice occasion even arrives -- and is withdrawn.  There is no extended pre-record segment carrying the symmetry: the record apparatus starts distinguishing the branches almost immediately.",
         "THE_EXACT_OBSTRUCTION": "the composite map that flips the two endpoint bits and EXCHANGES the two U_TO_V / V_TO_U channels in both banks relates the branches exactly, until the divergence reaches the record cell's ORIENTATION field.  The mirror-paired record channels are handled by the swap; the orientation field has NO MIRROR PARTNER, and it is the sole obstruction.",
-        "VINDICATED_IN_STRUCTURE": "the owner is RIGHT that the asymmetry is a RECORD fact and not a dynamics fact, and the measurement is sharper than the intuition.  Over the whole declared window and all eight choice atoms the two branches differ on EIGHT WIRES out of 5815, and on NO OTHER LANE AT ALL.  Every one of those eight is an endpoint wire or record-bank machinery.  The controller's bulk dynamics is exactly menu-swap invariant: it never reads the endpoints except through the record apparatus, and the source-pointer gates depend on the endpoints only through LEFT XOR RIGHT, which the swap preserves exactly."
+        "VINDICATED_IN_STRUCTURE": "the owner is RIGHT that the asymmetry is a RECORD fact and not a dynamics fact, and the measurement is sharper than the intuition.  Over the whole declared window, the UNION over all eight choice atoms of the wires on which the two branches ever differ is EIGHT WIRES out of 5815, and no atom ever contaminates a lane other than its own.  Per atom the support is smaller -- four, six or eight wires (see the per-atom rows; the eight-wire figure is a UNION, not a per-atom fact, a distinction the independent checker required be made explicit).  Every wire in that union is an endpoint wire or record-bank machinery.  The controller's bulk dynamics is exactly menu-swap invariant: it never reads the endpoints except through the record apparatus, and the source-pointer gates depend on the endpoints only through LEFT XOR RIGHT, which the swap preserves exactly."
       },
       "THE_DIVERGENCE_IS_CONFINED": {
         "EVERY_DIVERGENT_WIRE_IS_AN_ENDPOINT_OR_RECORD_MACHINERY": true,
@@ -1417,6 +1441,8 @@
             "BANK1.U_TO_V",
             "BANK1.V_TO_U"
           ],
+          "first_bank0_settle_on_this_lane": 6,
+          "first_bank1_settle_on_this_lane": 312,
           "first_boundary_after_the_choice": 301,
           "first_boundary_divergence_leaves_the_endpoints": 302,
           "full_column_ill_definedness_witness": null,
@@ -1427,6 +1453,7 @@
           "occasion_application": 300,
           "orientation_wires_diverge": true,
           "site_world": 715,
+          "symmetry_breaks_before_the_first_bank_settle_on_this_lane": false,
           "theta_first_failure": {
             "flip_endpoints_only": {
               "boundary": 302,
@@ -1548,6 +1575,8 @@
             "BANK1.U_TO_V",
             "BANK1.V_TO_U"
           ],
+          "first_bank0_settle_on_this_lane": 69,
+          "first_bank1_settle_on_this_lane": 227,
           "first_boundary_after_the_choice": 701,
           "first_boundary_divergence_leaves_the_endpoints": 706,
           "full_column_ill_definedness_witness": null,
@@ -1558,6 +1587,7 @@
           "occasion_application": 700,
           "orientation_wires_diverge": true,
           "site_world": 475,
+          "symmetry_breaks_before_the_first_bank_settle_on_this_lane": false,
           "theta_first_failure": {
             "flip_endpoints_only": {
               "boundary": 706,
@@ -1670,6 +1700,8 @@
             "BANK0.U_TO_V",
             "BANK0.V_TO_U"
           ],
+          "first_bank0_settle_on_this_lane": 1076,
+          "first_bank1_settle_on_this_lane": null,
           "first_boundary_after_the_choice": 701,
           "first_boundary_divergence_leaves_the_endpoints": 702,
           "full_column_ill_definedness_witness": null,
@@ -1680,6 +1712,7 @@
           "occasion_application": 700,
           "orientation_wires_diverge": false,
           "site_world": 540,
+          "symmetry_breaks_before_the_first_bank_settle_on_this_lane": true,
           "theta_first_failure": {
             "flip_endpoints_only": {
               "boundary": 702,
@@ -1762,6 +1795,8 @@
             "BANK0.U_TO_V",
             "BANK0.V_TO_U"
           ],
+          "first_bank0_settle_on_this_lane": 1439,
+          "first_bank1_settle_on_this_lane": null,
           "first_boundary_after_the_choice": 703,
           "first_boundary_divergence_leaves_the_endpoints": 705,
           "full_column_ill_definedness_witness": null,
@@ -1772,6 +1807,7 @@
           "occasion_application": 702,
           "orientation_wires_diverge": false,
           "site_world": 254,
+          "symmetry_breaks_before_the_first_bank_settle_on_this_lane": true,
           "theta_first_failure": {
             "flip_endpoints_only": {
               "boundary": 705,
@@ -1861,6 +1897,8 @@
             "BANK1.U_TO_V",
             "BANK1.V_TO_U"
           ],
+          "first_bank0_settle_on_this_lane": 71,
+          "first_bank1_settle_on_this_lane": 229,
           "first_boundary_after_the_choice": 703,
           "first_boundary_divergence_leaves_the_endpoints": 708,
           "full_column_ill_definedness_witness": null,
@@ -1871,6 +1909,7 @@
           "occasion_application": 702,
           "orientation_wires_diverge": true,
           "site_world": 450,
+          "symmetry_breaks_before_the_first_bank_settle_on_this_lane": false,
           "theta_first_failure": {
             "flip_endpoints_only": {
               "boundary": 708,
@@ -1992,6 +2031,8 @@
             "BANK1.U_TO_V",
             "BANK1.V_TO_U"
           ],
+          "first_bank0_settle_on_this_lane": 6,
+          "first_bank1_settle_on_this_lane": 312,
           "first_boundary_after_the_choice": 703,
           "first_boundary_divergence_leaves_the_endpoints": 705,
           "full_column_ill_definedness_witness": null,
@@ -2002,6 +2043,7 @@
           "occasion_application": 702,
           "orientation_wires_diverge": true,
           "site_world": 715,
+          "symmetry_breaks_before_the_first_bank_settle_on_this_lane": false,
           "theta_first_failure": {
             "flip_endpoints_only": {
               "boundary": 705,
@@ -2120,6 +2162,8 @@
             "BANK1.U_TO_V",
             "BANK1.V_TO_U"
           ],
+          "first_bank0_settle_on_this_lane": 41,
+          "first_bank1_settle_on_this_lane": 44,
           "first_boundary_after_the_choice": 1101,
           "first_boundary_divergence_leaves_the_endpoints": 1102,
           "full_column_ill_definedness_witness": null,
@@ -2130,6 +2174,7 @@
           "occasion_application": 1100,
           "orientation_wires_diverge": false,
           "site_world": 558,
+          "symmetry_breaks_before_the_first_bank_settle_on_this_lane": false,
           "theta_first_failure": {
             "flip_endpoints_only": {
               "boundary": 1102,
@@ -2253,6 +2298,8 @@
             "BANK1.U_TO_V",
             "BANK1.V_TO_U"
           ],
+          "first_bank0_settle_on_this_lane": 6,
+          "first_bank1_settle_on_this_lane": 312,
           "first_boundary_after_the_choice": 1101,
           "first_boundary_divergence_leaves_the_endpoints": 1103,
           "full_column_ill_definedness_witness": null,
@@ -2263,6 +2310,7 @@
           "occasion_application": 1100,
           "orientation_wires_diverge": true,
           "site_world": 715,
+          "symmetry_breaks_before_the_first_bank_settle_on_this_lane": false,
           "theta_first_failure": {
             "flip_endpoints_only": {
               "boundary": 1103,
@@ -2353,6 +2401,44 @@
           }
         }
       ],
+      "TIMING_AGGREGATES": {
+        "CORRECTION_ADOPTED_FROM_THE_INDEPENDENT_CHECKER": "the first version of this block asserted the break happens 'about five boundaries after the choice', 'roughly fifteen hundred boundaries before the lock', and 'before the first bank settle event on the lane'.  The checker falsified all three as universal statements and the falsification reproduces here: the choice-to-break gap ranges widely across atoms, the break-to-lock gap likewise, and on most atoms the lane has ALREADY had a bank settle event long before the choice occasion.  Only the weaker universal claim survives: every atom breaks strictly before its lock.",
+        "EVERY_ATOM_BREAKS_STRICTLY_BEFORE_ITS_LOCK": true,
+        "atoms_where_the_break_precedes_the_first_bank_settle": [
+          [
+            700,
+            540
+          ],
+          [
+            702,
+            254
+          ]
+        ],
+        "boundaries_from_choice_to_symmetry_break_per_atom": [
+          6,
+          61,
+          2,
+          3,
+          61,
+          4,
+          2,
+          13
+        ],
+        "boundaries_from_symmetry_break_to_lock_per_atom": [
+          1505,
+          1045,
+          374,
+          734,
+          1045,
+          1105,
+          323,
+          698
+        ],
+        "max_break_to_lock": 1505,
+        "max_choice_to_break": 61,
+        "min_break_to_lock": 323,
+        "min_choice_to_break": 2
+      },
       "breaking_gate_classes": {
         "ALL_TARGETS_ARE_RECORD_MACHINERY": true,
         "MECHANICAL_VERIFICATION": {
@@ -2440,17 +2526,36 @@
       },
       "certificate": "Q1_THE_VALUE_SPACE_SYMMETRY_FAMILY",
       "commutant": {
-        "CONSEQUENCE": "every wire touched by the program except one is a control on EVERY lane, and both endpoint wires are among them.  So NO nonzero value flip on an endpoint commutes with a full pass of the compiled cycle -- on any lane.",
+        "CONSEQUENCE": "EVERY wire the program touches is a control on EVERY lane, the endpoints among them.  The criterion therefore certifies no endpoint flip, and -- this is the part that matters and the part that is settled SEMANTICALLY rather than by the criterion -- the endpoint flips measurably do NOT commute, on any lane, and no wire in the divergence support commutes either.",
+        "CORRECTION_ADOPTED_FROM_THE_INDEPENDENT_CHECKER": "the first version of this block asserted an IFF and called it 'a COMPLETE characterisation, not a search'.  The checker refuted it and the refutation reproduces here.  The compiled macros are PALINDROMIC compute/uncompute ladders, so a wire can be a control on every lane and still have its flip undone downstream by a gate with identical operands and mask.  The criterion over-excludes.",
         "CTRLMASK_left_is_full": true,
         "CTRLMASK_right_is_full": true,
-        "STATEMENT": "X_chi commutes with the compiled law IFF chi[w] & CTRLMASK[w] == 0 for every wire w.  The condition is linear, so the commuting flips form a GROUP and this is a COMPLETE characterisation, not a search.",
-        "wires_that_are_never_a_control": [
-          0
-        ],
-        "wires_touched_by_any_gate": 546,
-        "wires_whose_control_mask_is_the_FULL_lane_universe": 545
+        "HOW_MANY_IS_ENSEMBLE_DEPENDENT": "this count depends on the state ensemble it is measured over and is REPORTED, NOT PROVED.  Under this runner's aggressive ensemble (every touched wire randomised on every lane) it is small; the independent checker, using a milder ensemble and far more trials, measured roughly 309 of 545.  The two numbers disagree and neither is a theorem.  What both agree on, and what this block actually leans on, is the sign: the criterion is sufficient and not necessary, and NO divergence-support wire commutes under either.",
+        "STATEMENT": "chi[w] & CTRLMASK[w] == 0 for every wire w is SUFFICIENT for X_chi to commute with the compiled law.  It is NOT necessary.  The condition is linear, so the flips it admits form a group, but that group is a SUBSET of the commutant, not the commutant.",
+        "the_exhibited_counterexample": {
+          "SEMANTICS_SAY_IT_COMMUTES": true,
+          "control_mask_is_the_full_lane_universe": true,
+          "criterion_says_commutes": false,
+          "so_the_criterion_is_not_necessary": true,
+          "wire": 47
+        },
+        "wire_census_DISPATCHED_ON_GATE_KIND": {
+          "CORRECTION_ADOPTED_FROM_THE_INDEPENDENT_CHECKER": "the first version reported 546 touched wires with wire 0 'never a control'.  That was a census bug: X gates are (KIND_X, target, 0, 0, mask) and CNOTs leave c3 = 0, so reading {a, b, c3} without dispatching on kind injects a phantom wire 0.  Nothing reads or writes wire 0.  Dispatched: 545 touched, 545 controls, ZERO never a control -- STRICTLY STRONGER than the claim it replaces.",
+          "controls": 545,
+          "naive_undispatched_count": 546,
+          "never_a_control": [],
+          "phantom_wires_the_naive_count_adds": [
+            0
+          ],
+          "targets": 537,
+          "touched": 545
+        },
+        "wires_with_a_FULL_control_mask_whose_flip_nonetheless_commutes": 18
       },
-      "criterion_and_semantics_agree_on_every_F": true,
+      "criterion_is_NOT_NECESSARY_exhibits": [
+        "F_palindrome_wire_47_criterion_counterexample"
+      ],
+      "criterion_is_SOUND_where_it_certifies": true,
       "every_genuine_atom_breaks_before_its_lock": true,
       "genuine_menu_atoms": [
         [
@@ -2491,6 +2596,8 @@
       "non_existence_routes": {
         "EVERY_ATOM_IS_KILLED_BY_AT_LEAST_ONE_ROUTE": true,
         "HONEST_SCOPE_LIMIT": {
+          "BUT_IT_IS_NOT_A_SYMMETRY_AND_THAT_IS_THE_POINT": "the checker also measured that the affine intertwiner FAILS to commute with the law off the orbit (most random states, and even some one-bit perturbations of on-orbit states, break it).  So it is an ORBIT-SPECIFIC INTERTWINER, not a law automorphism: it relates these two trajectories without being a symmetry of the dynamics, and it therefore licenses no invariance argument and no weight equality.  The physics conclusion is unchanged; the SCOPE of the negative is narrowed, and correctly so.  What this block may claim is: no law-commuting value symmetry swaps the menu.  What it may NOT claim is that no map whatever relates the branches -- one does.",
+          "THE_LIMIT_IS_OCCUPIED_AND_THE_CHECKER_FOUND_ITS_TENANT": "the independent checker crossed this exact gap.  Widen the map from the 8-wire divergence support to about 36 lane-local wires and an AFFINE map over GF(2) DOES reproduce the branch relation at every boundary of the declared window, at all eight atoms, and continues to do so out of sample at four times the window (thousands of distinct, non-repeating branch-0 states).  On that map the two U_TO_V / V_TO_U pairs are exactly swaps -- as this block found -- but each ORIENTATION bit flips by a linear functional of the wider lane state, which is precisely the degree of freedom the support-local family here could not express, and precisely where this block's best candidate broke.",
           "full_column_phase_matched_duplicates_found": 0,
           "reading": "the FULL-column phase-matched search finds ZERO duplicate branch-0 states, so route B proves non-existence for maps that are a function of the divergence SUPPORT, not for arbitrary global state maps.  Stated as a limit, not hidden."
         },
@@ -3243,19 +3350,37 @@
           ]
         },
         {
-          "F": "F_pure_target_wire_positive_control",
+          "F": "F_untouched_wire_positive_control",
           "IS_A_LAW_COMMUTING_MENU_SWAP": false,
           "criterion_and_semantics_AGREE": true,
           "criterion_breaking_wires": [],
           "criterion_says_commutes": true,
-          "declared_expectation_before_the_check": "MUST commute -- if it does not, the criterion is broken",
+          "declared_expectation_before_the_check": "MUST commute -- if it does not, the instrument is broken",
           "family": "value_space_bit_flip",
-          "purpose": "POSITIVE CONTROL FOR THE CRITERION: a wire that is never a control must be freely flippable",
+          "purpose": "POSITIVE CONTROL: a wire no gate reads or writes must be freely flippable.  (The first version of this block used 'wire 0, the only touched wire that is never a control' -- but that wire was a census phantom, so the control is restated over a genuinely untouched wire.)",
           "semantic_breaking_wires": [],
           "semantic_says_commutes": true,
           "swaps_the_menu_items": false,
           "wires_flipped": [
-            0
+            394
+          ]
+        },
+        {
+          "F": "F_palindrome_wire_47_criterion_counterexample",
+          "IS_A_LAW_COMMUTING_MENU_SWAP": false,
+          "criterion_and_semantics_AGREE": false,
+          "criterion_breaking_wires": [
+            47
+          ],
+          "criterion_says_commutes": false,
+          "declared_expectation_before_the_check": "criterion says NO, semantics say YES -- the two MUST disagree here, which is what refutes the IFF",
+          "family": "value_space_bit_flip",
+          "purpose": "the checker's counterexample: full control mask, yet the compute/uncompute ladder undoes the flip",
+          "semantic_breaking_wires": [],
+          "semantic_says_commutes": true,
+          "swaps_the_menu_items": false,
+          "wires_flipped": [
+            47
           ]
         },
         {
@@ -3397,10 +3522,12 @@
         "THE_AXIOMS_DO_NOT_DISTINGUISH_THE_TWO_ITEMS": true
       },
       "THE_NATURALITY_ANTECEDENT_FOR_STATE_SPACE_MAPS": {
+        "THE_DECISIVE_CLAUSE_IS_NOT_AN_ARGUMENT_AT_ALL_BUT_A_QUOTE": "the axiom memo's own 'Open Gates Outside The Axioms' section settles this without any interpretive step: it lists 'context selection, measurement basis selection, Born weights, probability rules, update laws, decoherence mechanisms, and formation rules (which admissible possibility, at which site, with what weight, or at what rate)' as remaining OUTSIDE axiom content.  Which admissible possibility a record locks, and with what weight, is named in the axiom set as an OPEN GATE.  That is a stronger and cleaner negative than any argument from the non-privilege clauses, and this block adopts it as the primary support (credit: found by the independent checker).",
+        "THREE_READINGS_OF_THE_LAW_CLAUSE_NOT_TWO": "the first version of this block offered a dichotomy -- either 'A law privileges no states' means invariance under ALL state maps (fatal for every law) or it means uniformity (supplying no naturality).  The checker showed the dichotomy is incomplete.  A THIRD reading is available and is the one the memo's sibling clauses actually use: Lattice and Qubit both say their objects are 'distinguished by the supplied structure alone', which names the AUTOMORPHISM GROUP OF THE SUPPLIED STRUCTURE, not the full symmetric group.  Under that reading the clause DOES supply a naturality requirement.  It does not change the outcome here -- the menu-swap map would still have to commute with the law, and it measurably does not -- but the argument as first stated overreached and is corrected.",
         "VERDICT_STILL_NOT_DERIVABLE": true,
         "the_new_candidate_ground": "for a VALUE-space family the relevant clause is not Qubit's 'no possibility is privileged' (which 940 tested for relabellings) but the Qualification's 'A law privileges no states.'  This block tests it, because it reads differently for state-space maps.",
         "this_sharpens_rather_than_repeats_940": "940 found its candidate clause SELF-DEFEATING (the supplied structure does distinguish the items, so reading it as naturality would make the substrate violate its own axiom).  The state-space clause fails for a DIFFERENT and stronger reason: the invariance reading is vacuous-or-fatal for every possible law, not just this one.",
-        "why": "read as an INVARIANCE requirement -- that the law commute with every state transformation -- the clause is not merely unsatisfied here, it is unsatisfiable by ANY non-trivial dynamics: a law commuting with all state maps is constant on orbits and can compute nothing.  Adopting that reading would forbid every substrate the framework has ever built, including the pinned kernel.  Read in its own context -- 'Its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer' -- it is a UNIFORMITY and TOTALITY clause: the law may not carve out exceptional states.  Uniformity does not imply invariance.  So the clause does not supply naturality for state-space maps, and the antecedent remains an import."
+        "why_the_all_state_maps_reading_is_still_fatal": "read as an INVARIANCE requirement -- that the law commute with every state transformation -- the clause is not merely unsatisfied here, it is unsatisfiable by ANY non-trivial dynamics: a law commuting with all state maps is constant on orbits and can compute nothing.  Adopting that reading would forbid every substrate the framework has ever built, including the pinned kernel.  Read in its own context -- 'Its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer' -- it is a UNIFORMITY and TOTALITY clause: the law may not carve out exceptional states.  Uniformity does not imply invariance.  So the clause does not supply naturality for state-space maps, and the antecedent remains an import."
       },
       "all_quotes_verbatim": true,
       "byte_quotes": {
@@ -3411,6 +3538,11 @@
         "Admissibility_one_fixed_rule": {
           "text": "There is one fixed nearest-neighbor admissibility rule, covariant under lattice\ntranslations and proper cubic rotations.",
           "verbatim_in_the_axiom_memo": true
+        },
+        "Open_Gates_formation_rules_are_OUTSIDE_axiom_content": {
+          "text": "context selection, measurement basis selection, Born weights, probability\n  rules, update laws, decoherence mechanisms, and formation rules (which\n  admissible possibility a new record locks, at which site, with what weight,\n  or at what rate);",
+          "verbatim_in_the_axiom_memo": true,
+          "why_this_is_the_decisive_quote": "it names WHICH admissible possibility a new record locks, and WITH WHAT WEIGHT, as an OPEN GATE outside axiom content.  The axioms therefore do not merely fail to order the two menu items -- they explicitly disclaim the question.  Found by the independent checker and adopted."
         },
         "Qualification_a_law_privileges_no_states": {
           "text": "A law privileges no states. Its domain is a supplied condition, and at every\nstate where the condition holds it gives exactly one answer.",
@@ -3472,6 +3604,6 @@
     },
     "worker": "Claude Opus 5 worker under supervisor spec"
   },
-  "science_digest": "ee2e5ce38f24f371df3a90800bb3b4fe6eb5b0f3ce54f65931e157b0850a4da2",
-  "self_sha256": "e736055f9be16851c7f228914a5ec2ed82fa4093f0dfccb71f165d32aa078b67"
+  "science_digest": "b444a144088c0f97dc9878cf0ad06f73dd0f07726b1a092ce63a5516dbe45a5f",
+  "self_sha256": "8dbd076ecc156be8659bb0270c93e1917915371db80e0c47cd6d3edcb389f349"
 }

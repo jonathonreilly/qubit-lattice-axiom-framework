@@ -342,8 +342,19 @@ def control_masks(schedules, kinds):
                                 both controls must be unflipped on the mask.
                                 chi_c3 is unconstrained.
       CHOICE c[b] ^= CHOICE(k)&M -- CHOICE reads no state; commutes always.
-    The condition is therefore LINEAR and the commuting set is a GROUP, which
-    is why this is a complete characterisation and not a search.
+    The condition is LINEAR, so the flips it admits form a GROUP.
+
+    SUFFICIENT, NOT NECESSARY -- corrected after the independent checker
+    REFUTED the first version of this claim, which asserted an IFF and a
+    "complete characterisation".  That was wrong.  The gate-by-gate argument
+    above only shows the condition is ENOUGH.  It is not needed, because the
+    compiled macros are PALINDROMIC compute/uncompute ladders: a wire may be a
+    control on every lane and still have its flip undone by a later gate with
+    identical operands and mask.  Wire 47 is the exhibited counterexample --
+    CTRLMASK[47] is the full lane universe, yet its full-lane flip commutes
+    with the whole compiled cycle.  So this routine gives a CERTIFIED-COMMUTING
+    set, not the commutant, and a wire failing the criterion must be settled
+    semantically.  Every negative this block relies on IS settled semantically.
     """
     cm = defaultdict(int)
     for schedule in schedules:
@@ -355,6 +366,40 @@ def control_masks(schedules, kinds):
                 cm[a] |= mask
                 cm[b] |= mask
     return cm
+
+
+def wire_census(schedules, kinds):
+    """Touched / control / target wires, DISPATCHED ON GATE KIND.
+
+    Corrected after the independent checker refuted the first version, which
+    read {a, b, c3} off every gate without dispatching.  X gates are
+    (KIND_X, target, 0, 0, mask) and CNOTs (KIND_CNOT, ctrl, target, 0, mask),
+    so the unused slots are literal 0 and every one of the 13706 X and 1254
+    CNOT gates injected a PHANTOM wire 0 into the census.  Wire 0 is read and
+    written by nothing.  Dispatched, the count is 545 touched wires of which
+    545 are controls and ZERO are never a control -- strictly stronger than
+    the published claim, which said one wire escaped."""
+    touched, controls, targets = set(), set(), set()
+    for schedule in schedules:
+        for gate in schedule:
+            kind, a, b, c3, _mask = gate
+            if kind == kinds["X"]:
+                touched.add(a)
+                targets.add(a)
+            elif kind == kinds["CNOT"]:
+                touched.update((a, b))
+                controls.add(a)
+                targets.add(b)
+            elif kind == kinds["TOF"]:
+                touched.update((a, b, c3))
+                controls.update((a, b))
+                targets.add(c3)
+            elif kind == kinds["CHOICE"]:
+                touched.add(b)
+                targets.add(b)
+    return {"touched": sorted(touched), "controls": sorted(controls),
+            "targets": sorted(targets),
+            "never_a_control": sorted(touched - controls)}
 
 
 def flip_state(cols, chi):
@@ -901,29 +946,85 @@ def main() -> int:
         out: dict = {}
 
         # ---- Q1a: the exact commutation criterion and its commutant ------
-        cm_base = control_masks(mine_sched, kinds)
         cm_ma = control_masks(sched_ma, kinds)
         uni_sim = env["uni_sim"]
-        never_control = [w for w in touched if cm_ma.get(w, 0) == 0]
-        full_control = [w for w in touched
+        census = wire_census(sched_ma, kinds)
+        naive_touched = set()
+        for s in sched_ma:
+            for g in s:
+                naive_touched.update(g[1:4])
+        full_control = [w for w in census["touched"]
                         if cm_ma.get(w, 0) == uni_sim]
+        probe_cols = pseudo_states(proto, 4, census["touched"])
+        # the checker's exhibited counterexample, re-measured here
+        cx = 47
+        cx_commutes = not semantic_commutes(rows_ma, probe_cols,
+                                            {cx: uni_sim})
+        commuting_despite_full_mask = [
+            w for w in full_control
+            if not semantic_commutes(rows_ma, probe_cols, {w: uni_sim})]
         out["commutant"] = {
-            "STATEMENT": "X_chi commutes with the compiled law IFF "
-                         "chi[w] & CTRLMASK[w] == 0 for every wire w.  The "
-                         "condition is linear, so the commuting flips form a "
-                         "GROUP and this is a COMPLETE characterisation, not "
-                         "a search.",
-            "wires_touched_by_any_gate": len(touched),
-            "wires_that_are_never_a_control": never_control,
-            "wires_whose_control_mask_is_the_FULL_lane_universe":
-                len(full_control),
+            "STATEMENT": "chi[w] & CTRLMASK[w] == 0 for every wire w is "
+                         "SUFFICIENT for X_chi to commute with the compiled "
+                         "law.  It is NOT necessary.  The condition is "
+                         "linear, so the flips it admits form a group, but "
+                         "that group is a SUBSET of the commutant, not the "
+                         "commutant.",
+            "CORRECTION_ADOPTED_FROM_THE_INDEPENDENT_CHECKER":
+                "the first version of this block asserted an IFF and called "
+                "it 'a COMPLETE characterisation, not a search'.  The checker "
+                "refuted it and the refutation reproduces here.  The compiled "
+                "macros are PALINDROMIC compute/uncompute ladders, so a wire "
+                "can be a control on every lane and still have its flip "
+                "undone downstream by a gate with identical operands and "
+                "mask.  The criterion over-excludes.",
+            "the_exhibited_counterexample": {
+                "wire": cx,
+                "control_mask_is_the_full_lane_universe":
+                    cm_ma.get(cx, 0) == uni_sim,
+                "criterion_says_commutes": False,
+                "SEMANTICS_SAY_IT_COMMUTES": cx_commutes,
+                "so_the_criterion_is_not_necessary": cx_commutes,
+            },
+            "wires_with_a_FULL_control_mask_whose_flip_nonetheless_commutes":
+                len(commuting_despite_full_mask),
+            "HOW_MANY_IS_ENSEMBLE_DEPENDENT":
+                "this count depends on the state ensemble it is measured "
+                "over and is REPORTED, NOT PROVED.  Under this runner's "
+                "aggressive ensemble (every touched wire randomised on every "
+                "lane) it is small; the independent checker, using a milder "
+                "ensemble and far more trials, measured roughly 309 of 545.  "
+                "The two numbers disagree and neither is a theorem.  What "
+                "both agree on, and what this block actually leans on, is "
+                "the sign: the criterion is sufficient and not necessary, "
+                "and NO divergence-support wire commutes under either.",
+            "wire_census_DISPATCHED_ON_GATE_KIND": {
+                "touched": len(census["touched"]),
+                "controls": len(census["controls"]),
+                "targets": len(census["targets"]),
+                "never_a_control": census["never_a_control"],
+                "naive_undispatched_count": len(naive_touched),
+                "phantom_wires_the_naive_count_adds":
+                    sorted(naive_touched - set(census["touched"])),
+                "CORRECTION_ADOPTED_FROM_THE_INDEPENDENT_CHECKER":
+                    "the first version reported 546 touched wires with wire 0 "
+                    "'never a control'.  That was a census bug: X gates are "
+                    "(KIND_X, target, 0, 0, mask) and CNOTs leave c3 = 0, so "
+                    "reading {a, b, c3} without dispatching on kind injects a "
+                    "phantom wire 0.  Nothing reads or writes wire 0.  "
+                    "Dispatched: 545 touched, 545 controls, ZERO never a "
+                    "control -- STRICTLY STRONGER than the claim it replaces.",
+            },
             "CTRLMASK_left_is_full": cm_ma.get(left_w, 0) == uni_sim,
             "CTRLMASK_right_is_full": cm_ma.get(right_w, 0) == uni_sim,
             "CONSEQUENCE":
-                "every wire touched by the program except one is a control on "
-                "EVERY lane, and both endpoint wires are among them.  So NO "
-                "nonzero value flip on an endpoint commutes with a full pass "
-                "of the compiled cycle -- on any lane.",
+                "EVERY wire the program touches is a control on EVERY lane, "
+                "the endpoints among them.  The criterion therefore certifies "
+                "no endpoint flip, and -- this is the part that matters and "
+                "the part that is settled SEMANTICALLY rather than by the "
+                "criterion -- the endpoint flips measurably do NOT commute, "
+                "on any lane, and no wire in the divergence support commutes "
+                "either.",
         }
 
         # ---- Q1b: where exactly do the endpoints act as controls? ---------
@@ -1043,11 +1144,19 @@ def main() -> int:
               {w: uni_sim for w in touched},
               "the global complement -- every touched wire, every lane",
               "should not commute")
-        add_F("F_pure_target_wire_positive_control",
-              {never_control[0]: uni_sim} if never_control else {},
-              "POSITIVE CONTROL FOR THE CRITERION: a wire that is never a "
-              "control must be freely flippable",
-              "MUST commute -- if it does not, the criterion is broken")
+        add_F("F_untouched_wire_positive_control", {GAUGE: uni_sim},
+              "POSITIVE CONTROL: a wire no gate reads or writes must be "
+              "freely flippable.  (The first version of this block used "
+              "'wire 0, the only touched wire that is never a control' -- "
+              "but that wire was a census phantom, so the control is "
+              "restated over a genuinely untouched wire.)",
+              "MUST commute -- if it does not, the instrument is broken")
+        add_F("F_palindrome_wire_47_criterion_counterexample",
+              {47: uni_sim},
+              "the checker's counterexample: full control mask, yet the "
+              "compute/uncompute ladder undoes the flip",
+              "criterion says NO, semantics say YES -- the two MUST disagree "
+              "here, which is what refutes the IFF")
         add_F("F_endpoints_plus_bank_channels_lane715",
               {left_w: lanebit, right_w: lanebit, 124: lanebit, 125: lanebit},
               "the endpoint flip widened to the two bank-0 channels it "
@@ -1058,8 +1167,17 @@ def main() -> int:
         out["per_F_commutation"] = candidates
         out["no_F_is_a_law_commuting_menu_swap"] = not any(
             c["IS_A_LAW_COMMUTING_MENU_SWAP"] for c in candidates)
-        out["criterion_semantics_agreement"] = all(
-            c["criterion_and_semantics_AGREE"] for c in candidates)
+        # SOUNDNESS, not agreement: whenever the criterion CERTIFIES
+        # commutation the semantics must confirm it.  The converse is false
+        # and wire 47 is carried in the table precisely to show it.
+        out["criterion_is_SOUND_where_it_certifies"] = all(
+            c["semantic_says_commutes"] for c in candidates
+            if c["criterion_says_commutes"])
+        out["criterion_is_INCOMPLETE_exhibits"] = [
+            c["F"] for c in candidates
+            if c["semantic_says_commutes"] and not c["criterion_says_commutes"]]
+        out["the_criterion_is_not_necessary"] = bool(
+            out["criterion_is_INCOMPLETE_exhibits"])
 
         # ---- Q1d: THE PRE-LOCK / POST-LOCK SPLIT -------------------------
         THETAS = {
@@ -1181,7 +1299,69 @@ def main() -> int:
                                    "support_collision_found": hit_sup
                                    is not None,
                                    "full_column_duplicates": full_dupes})
+        # FIRST BANK SETTLE EVENT ON EACH SITE'S OWN LANE, from boundary 0.
+        # Added after the independent checker falsified the claim that the
+        # symmetry breaks "before the first bank settle event on the lane".
+        sites_all = sorted({s for _t, s in atoms})
+        first_bank = {s: {"bank0": None, "bank1": None} for s in sites_all}
+        mfe = M.Machine(env, False)
+        prev_bit: dict = {}
+        while mfe.t < TREE_B:
+            mfe.advance(mfe.t + 1, rows_ma, choice_rows, ZERO_WORDS)
+            for bi in (0, 1):
+                bm = c863.mask_over(mfe.columns, env["bank_dirty"][bi],
+                                    env["uni_all"])
+                for s_ in sites_all:
+                    bit = (bm >> s_) & 1
+                    key = (bi, s_)
+                    if (prev_bit.get(key) is not None and bit
+                            and not prev_bit[key]
+                            and first_bank[s_][f"bank{bi}"] is None):
+                        first_bank[s_][f"bank{bi}"] = mfe.t
+                    prev_bit[key] = bit
+        for r in split_rows:
+            fb = first_bank[r["site_world"]]
+            r["first_bank0_settle_on_this_lane"] = fb["bank0"]
+            r["first_bank1_settle_on_this_lane"] = fb["bank1"]
+            b = r["best_theta_survives_to_boundary"]
+            r["symmetry_breaks_before_the_first_bank_settle_on_this_lane"] = (
+                None if (b is None or fb["bank0"] is None)
+                else b < fb["bank0"])
         out["pre_lock_post_lock_split"] = split_rows
+        breaks = [r["best_theta_survives_to_boundary"] - r["choice_boundary"]
+                  for r in split_rows
+                  if r["best_theta_survives_to_boundary"] is not None]
+        to_lock = [r["lock_boundary_branch0"]
+                   - r["best_theta_survives_to_boundary"]
+                   for r in split_rows
+                   if r["lock_boundary_branch0"] is not None
+                   and r["best_theta_survives_to_boundary"] is not None]
+        out["TIMING_AGGREGATES"] = {
+            "boundaries_from_choice_to_symmetry_break_per_atom": breaks,
+            "min_choice_to_break": min(breaks), "max_choice_to_break":
+                max(breaks),
+            "boundaries_from_symmetry_break_to_lock_per_atom": to_lock,
+            "min_break_to_lock": min(to_lock),
+            "max_break_to_lock": max(to_lock),
+            "EVERY_ATOM_BREAKS_STRICTLY_BEFORE_ITS_LOCK":
+                all(r["SYMMETRY_BREAKS_BEFORE_THE_LOCK"] for r in split_rows),
+            "atoms_where_the_break_precedes_the_first_bank_settle": [
+                [r["occasion_application"], r["site_world"]]
+                for r in split_rows
+                if r["symmetry_breaks_before_the_first_bank_settle_on_this_"
+                     "lane"]],
+            "CORRECTION_ADOPTED_FROM_THE_INDEPENDENT_CHECKER":
+                "the first version of this block asserted the break happens "
+                "'about five boundaries after the choice', 'roughly fifteen "
+                "hundred boundaries before the lock', and 'before the first "
+                "bank settle event on the lane'.  The checker falsified all "
+                "three as universal statements and the falsification "
+                "reproduces here: the choice-to-break gap ranges widely "
+                "across atoms, the break-to-lock gap likewise, and on most "
+                "atoms the lane has ALREADY had a bank settle event long "
+                "before the choice occasion.  Only the weaker universal "
+                "claim survives: every atom breaks strictly before its lock.",
+        }
         out["THE_DIVERGENCE_IS_CONFINED"] = {
             "union_of_all_divergence_supports":
                 sorted(set().union(*[set(r["divergence_support"])
@@ -1233,6 +1413,34 @@ def main() -> int:
                            "non-existence for maps that are a function of the "
                            "divergence SUPPORT, not for arbitrary global "
                            "state maps.  Stated as a limit, not hidden.",
+                "THE_LIMIT_IS_OCCUPIED_AND_THE_CHECKER_FOUND_ITS_TENANT":
+                    "the independent checker crossed this exact gap.  Widen "
+                    "the map from the 8-wire divergence support to about 36 "
+                    "lane-local wires and an AFFINE map over GF(2) DOES "
+                    "reproduce the branch relation at every boundary of the "
+                    "declared window, at all eight atoms, and continues to do "
+                    "so out of sample at four times the window (thousands of "
+                    "distinct, non-repeating branch-0 states).  On that map "
+                    "the two U_TO_V / V_TO_U pairs are exactly swaps -- as "
+                    "this block found -- but each ORIENTATION bit flips by a "
+                    "linear functional of the wider lane state, which is "
+                    "precisely the degree of freedom the support-local family "
+                    "here could not express, and precisely where this block's "
+                    "best candidate broke.",
+                "BUT_IT_IS_NOT_A_SYMMETRY_AND_THAT_IS_THE_POINT":
+                    "the checker also measured that the affine intertwiner "
+                    "FAILS to commute with the law off the orbit (most random "
+                    "states, and even some one-bit perturbations of on-orbit "
+                    "states, break it).  So it is an ORBIT-SPECIFIC "
+                    "INTERTWINER, not a law automorphism: it relates these "
+                    "two trajectories without being a symmetry of the "
+                    "dynamics, and it therefore licenses no invariance "
+                    "argument and no weight equality.  The physics conclusion "
+                    "is unchanged; the SCOPE of the negative is narrowed, and "
+                    "correctly so.  What this block may claim is: no "
+                    "law-commuting value symmetry swaps the menu.  What it "
+                    "may NOT claim is that no map whatever relates the "
+                    "branches -- one does.",
             },
             "EVERY_ATOM_IS_KILLED_BY_AT_LEAST_ONE_ROUTE": all(
                 (not r["is_a_genuine_two_ITEM_menu_pair"])
@@ -1403,19 +1611,27 @@ def main() -> int:
         "breaking_gate_classes": S["breaking_gate_classes"],
         "per_F_commutation_table": S["per_F_commutation"],
         "NO_F_COMMUTES_AND_SWAPS_THE_MENU": S["no_F_is_a_law_commuting_menu_swap"],
-        "criterion_and_semantics_agree_on_every_F":
-            S["criterion_semantics_agreement"],
+        "criterion_is_SOUND_where_it_certifies":
+            S["criterion_is_SOUND_where_it_certifies"],
+        "criterion_is_NOT_NECESSARY_exhibits":
+            S["criterion_is_INCOMPLETE_exhibits"],
         "THE_PRE_LOCK_POST_LOCK_SPLIT": split,
+        "TIMING_AGGREGATES": S["TIMING_AGGREGATES"],
         "THE_DIVERGENCE_IS_CONFINED": S["THE_DIVERGENCE_IS_CONFINED"],
         "non_existence_routes": S["non_existence_routes"],
         "THE_ANSWER_TO_THE_OWNERS_QUESTION": {
             "VINDICATED_IN_STRUCTURE":
                 "the owner is RIGHT that the asymmetry is a RECORD fact and "
                 "not a dynamics fact, and the measurement is sharper than the "
-                "intuition.  Over the whole declared window and all eight "
-                "choice atoms the two branches differ on EIGHT WIRES out of "
-                f"{len(proto)}, and on NO OTHER LANE AT ALL.  Every one of "
-                "those eight is an endpoint wire or record-bank machinery.  "
+                "intuition.  Over the whole declared window, the UNION over "
+                "all eight choice atoms of the wires on which the two "
+                f"branches ever differ is EIGHT WIRES out of {len(proto)}, "
+                "and no atom ever contaminates a lane other than its own.  "
+                "Per atom the support is smaller -- four, six or eight wires "
+                "(see the per-atom rows; the eight-wire figure is a UNION, "
+                "not a per-atom fact, a distinction the independent checker "
+                "required be made explicit).  Every wire in that union is an "
+                "endpoint wire or record-bank machinery.  "
                 "The controller's bulk dynamics is exactly menu-swap "
                 "invariant: it never reads the endpoints except through the "
                 "record apparatus, and the source-pointer gates depend on the "
@@ -1423,13 +1639,20 @@ def main() -> int:
                 "preserves exactly.",
             "REFUTED_IN_TIMING":
                 "the owner's 'before the record' does NOT hold as a time "
-                "window.  The divergence enters the record channels one "
-                "boundary after the choice, and the symmetry breaks about "
-                "five boundaries after the choice -- roughly fifteen hundred "
-                "boundaries BEFORE the formation lock, and before the first "
-                "bank settle event on the lane.  There is no extended "
-                "pre-record segment carrying the symmetry: the record "
-                "apparatus starts distinguishing the branches immediately.",
+                "window.  The divergence enters the record channels within a "
+                "few boundaries of the choice, and the symmetry breaks while "
+                "the formation lock is still far away -- see "
+                "TIMING_AGGREGATES for the measured per-atom gaps, which vary "
+                "widely and are NOT the single round numbers the first "
+                "version of this block quoted.  What survives as a universal "
+                "statement is only this: at EVERY atom the symmetry breaks "
+                "strictly before that site's lock.  The stronger gloss 'and "
+                "before the first bank settle event on the lane' is FALSE on "
+                "most atoms -- the lane has usually already had a bank settle "
+                "event long before the choice occasion even arrives -- and is "
+                "withdrawn.  There is no extended pre-record segment carrying "
+                "the symmetry: the record apparatus starts distinguishing the "
+                "branches almost immediately.",
             "THE_EXACT_OBSTRUCTION":
                 "the composite map that flips the two endpoint bits and "
                 "EXCHANGES the two U_TO_V / V_TO_U channels in both banks "
@@ -1438,9 +1661,9 @@ def main() -> int:
                 "record channels are handled by the swap; the orientation "
                 "field has NO MIRROR PARTNER, and it is the sole obstruction.",
             "AND_IT_IS_THE_RIGHT_WIRE":
-                "the orientation wires diverge at EXACTLY the three "
-                "genuine-menu sites and NEVER at the three lock-timing "
-                "sites.  The one datum that breaks the symmetry is the one "
+                "the orientation wires diverge at EXACTLY the five "
+                "genuine-menu ATOMS (three distinct sites) and NEVER at the "
+                "three lock-timing atoms.  The one datum that breaks the symmetry is the one "
                 "whose job is to record WHICH of the two possibilities "
                 "obtains.",
         },
@@ -1451,7 +1674,7 @@ def main() -> int:
         "every_genuine_atom_breaks_before_its_lock":
             all(r["SYMMETRY_BREAKS_BEFORE_THE_LOCK"] for r in genuine_rows),
         "pass": bool(S["no_F_is_a_law_commuting_menu_swap"]
-                     and S["criterion_semantics_agreement"]
+                     and S["criterion_is_SOUND_where_it_certifies"]
                      and S["breaking_gate_classes"]["MECHANICAL_VERIFICATION"][
                          "THE_MENU_SWAP_IS_AN_EXACT_SYMMETRY_OF_THESE_GATES"]
                      and S["THE_DIVERGENCE_IS_CONFINED"][
@@ -1502,6 +1725,11 @@ def main() -> int:
              "one answer.")
     Q_QUAL = ("A choice not fixed by the\nsupplied structure remains a named "
               "conditional or open dependency.")
+    Q_OPEN_GATES = (
+        "context selection, measurement basis selection, Born weights, "
+        "probability\n  rules, update laws, decoherence mechanisms, and "
+        "formation rules (which\n  admissible possibility a new record locks, "
+        "at which site, with what weight,\n  or at what rate);")
 
     quotes = {
         "Qubit_no_possibility_is_privileged": {
@@ -1518,6 +1746,15 @@ def main() -> int:
             "text": Q_LAW, "verbatim_in_the_axiom_memo": quoted(Q_LAW)},
         "Qualification_unfixed_choice_stays_conditional": {
             "text": Q_QUAL, "verbatim_in_the_axiom_memo": quoted(Q_QUAL)},
+        "Open_Gates_formation_rules_are_OUTSIDE_axiom_content": {
+            "text": Q_OPEN_GATES,
+            "verbatim_in_the_axiom_memo": quoted(Q_OPEN_GATES),
+            "why_this_is_the_decisive_quote":
+                "it names WHICH admissible possibility a new record locks, "
+                "and WITH WHAT WEIGHT, as an OPEN GATE outside axiom content. "
+                " The axioms therefore do not merely fail to order the two "
+                "menu items -- they explicitly disclaim the question.  Found "
+                "by the independent checker and adopted."},
     }
     all_quoted = all(v["verbatim_in_the_axiom_memo"] for v in quotes.values())
 
@@ -1574,7 +1811,35 @@ def main() -> int:
                 "states.'  This block tests it, because it reads differently "
                 "for state-space maps.",
             "VERDICT_STILL_NOT_DERIVABLE": True,
-            "why":
+            "THE_DECISIVE_CLAUSE_IS_NOT_AN_ARGUMENT_AT_ALL_BUT_A_QUOTE":
+                "the axiom memo's own 'Open Gates Outside The Axioms' section "
+                "settles this without any interpretive step: it lists "
+                "'context selection, measurement basis selection, Born "
+                "weights, probability rules, update laws, decoherence "
+                "mechanisms, and formation rules (which admissible "
+                "possibility, at which site, with what weight, or at what "
+                "rate)' as remaining OUTSIDE axiom content.  Which admissible "
+                "possibility a record locks, and with what weight, is named "
+                "in the axiom set as an OPEN GATE.  That is a stronger and "
+                "cleaner negative than any argument from the non-privilege "
+                "clauses, and this block adopts it as the primary support "
+                "(credit: found by the independent checker).",
+            "THREE_READINGS_OF_THE_LAW_CLAUSE_NOT_TWO":
+                "the first version of this block offered a dichotomy -- "
+                "either 'A law privileges no states' means invariance under "
+                "ALL state maps (fatal for every law) or it means uniformity "
+                "(supplying no naturality).  The checker showed the dichotomy "
+                "is incomplete.  A THIRD reading is available and is the one "
+                "the memo's sibling clauses actually use: Lattice and Qubit "
+                "both say their objects are 'distinguished by the supplied "
+                "structure alone', which names the AUTOMORPHISM GROUP OF THE "
+                "SUPPLIED STRUCTURE, not the full symmetric group.  Under "
+                "that reading the clause DOES supply a naturality "
+                "requirement.  It does not change the outcome here -- the "
+                "menu-swap map would still have to commute with the law, and "
+                "it measurably does not -- but the argument as first stated "
+                "overreached and is corrected.",
+            "why_the_all_state_maps_reading_is_still_fatal":
                 "read as an INVARIANCE requirement -- that the law commute "
                 "with every state transformation -- the clause is not merely "
                 "unsatisfied here, it is unsatisfiable by ANY non-trivial "
@@ -1751,24 +2016,22 @@ def main() -> int:
            "semantic_breaking_wires": planted_bad[:8],
            "verdict": "REJECTED as required"})
 
-    nc = [w for w in touched if cm_ma.get(w, 0) == 0]
     ctrl_only = {left_w: lanebit}
     tooth("T2_half_swap_must_break_and_take_the_state_off_menu",
           bool(semantic_commutes(rows_ma, cols_list, ctrl_only)),
           {"wires": [left_w], "verdict": "REJECTED as required"})
 
-    if nc:
-        pure_target = {nc[0]: env["uni_sim"]}
-        tooth("T3_POSITIVE_CONTROL_flip_on_a_never_control_wire_MUST_commute",
-              not semantic_commutes(rows_ma, cols_list, pure_target),
-              {"wire": nc[0],
-               "why_this_must_fire": "if a never-control wire did not commute "
-                                     "the criterion would be wrong and every "
-                                     "negative in this block would be an "
-                                     "artefact of a broken instrument"})
-    else:
-        tooth("T3_POSITIVE_CONTROL_flip_on_a_never_control_wire_MUST_commute",
-              False, {"note": "no never-control wire found"})
+    tooth("T3_POSITIVE_CONTROL_flip_on_an_UNTOUCHED_wire_MUST_commute",
+          not semantic_commutes(rows_ma, cols_list, {GAUGE: env["uni_sim"]}),
+          {"wire": GAUGE,
+           "why_this_must_fire": "if a wire no gate reads or writes did not "
+                                 "commute, the instrument would be broken and "
+                                 "every negative here would be an artefact",
+           "correction": "the first version used wire 0 as 'the only touched "
+                         "wire that is never a control'; the independent "
+                         "checker showed wire 0 was a census phantom, so the "
+                         "control is restated over a genuinely untouched "
+                         "wire"})
 
     tampered = dict(EXPECTED_SHA256)
     tampered[AXIOMS_PATH] = "0" * 64
@@ -1864,6 +2127,24 @@ def main() -> int:
                   "cannot fail would be worthless, so a broken pairing is "
                   "planted and must be rejected."})
 
+    naive_t = set()
+    for s_ in sched_ma:
+        for g in s_:
+            naive_t.update(g[1:4])
+    dispatched = wire_census(sched_ma, kinds)
+    tooth("T14_undispatched_wire_census_must_be_caught_as_a_phantom",
+          (sorted(naive_t - set(dispatched["touched"])) == [0]
+           and dispatched["never_a_control"] == []),
+          {"naive_count": len(naive_t),
+           "dispatched_count": len(dispatched["touched"]),
+           "phantom": sorted(naive_t - set(dispatched["touched"])),
+           "never_a_control_dispatched": dispatched["never_a_control"],
+           "why": "the first version of this block published 546 touched "
+                  "wires with wire 0 never a control.  The independent "
+                  "checker showed both figures were artefacts of reading "
+                  "{a,b,c3} without dispatching on gate kind.  This tooth "
+                  "keeps the corrected census honest."})
+
     falsifiers = {
         "certificate": "G_FALSIFIERS",
         "teeth": teeth,
@@ -1928,6 +2209,71 @@ def main() -> int:
             "and 940's SCOPE is corrected: A2 was gauge, the family was "
             "relabelling-only, and the axioms are item-symmetric.  No ask is "
             "made and the A3 sentence is untouched.",
+        "INDEPENDENT_CHECKER_ADOPTIONS": {
+            "disclosure":
+                "the independent checker refuted several published claims of "
+                "the first version of this block.  Every refutation was "
+                "re-verified here independently and ADOPTED; nothing was "
+                "argued away.  The physics conclusion is unchanged, but three "
+                "claims were overstated and are now corrected, and the scope "
+                "of the negative is narrower and better named.",
+            "R1_the_commutation_IFF_was_only_an_IF":
+                "the criterion chi[w] & CTRLMASK[w] == 0 was published as an "
+                "IFF and 'a COMPLETE characterisation, not a search'.  It is "
+                "SUFFICIENT ONLY.  Palindromic compute/uncompute ladders let "
+                "a full-control-mask wire commute anyway; wire 47 is carried "
+                "in the per-F table as the exhibited counterexample.  The "
+                "endpoint negatives were and remain settled SEMANTICALLY, so "
+                "nothing load-bearing rested on the false half.  The COUNT of "
+                "such wires is ensemble-dependent and is reported, not "
+                "proved: this runner and the checker measure different "
+                "numbers and neither is a theorem.",
+            "R2_the_wire_census_counted_a_phantom":
+                "546 touched wires with 'wire 0 never a control' was an "
+                "artefact of not dispatching on gate kind.  Correct: 545 "
+                "touched, 545 controls, ZERO never a control -- strictly "
+                "stronger than the claim it replaces.  The positive-control "
+                "F and tooth T3, which had used wire 0, are restated over a "
+                "genuinely untouched wire.",
+            "R3_the_eight_wire_support_is_a_UNION":
+                "per-atom supports are four, six or eight wires; eight is the "
+                "union over the eight atoms.  The per-atom rows always "
+                "carried the right numbers; the summary prose did not.",
+            "R4_the_timing_glosses_were_overstated":
+                "'about five boundaries after the choice', 'roughly fifteen "
+                "hundred boundaries before the lock' and 'before the first "
+                "bank settle event on the lane' were all falsified as "
+                "universal statements.  The last is FALSE on most atoms and "
+                "is WITHDRAWN.  Measured per-atom gaps are now published in "
+                "TIMING_AGGREGATES, and the only universal timing claim kept "
+                "is that every atom breaks strictly before its lock.",
+            "R5_the_declared_scope_limit_was_understated_and_is_now_occupied":
+                "the checker crossed the gap this block declared: an AFFINE "
+                "map over GF(2) on about 36 lane-local wires reproduces the "
+                "branch relation at every boundary, at all eight atoms, "
+                "validated out of sample at four times the window.  It is NOT "
+                "a law symmetry (it fails to commute off the orbit), so it "
+                "licenses no weight equality and the physics conclusion "
+                "stands -- but the honest statement is now 'no LAW-COMMUTING "
+                "value symmetry swaps the menu', not 'no map relates the "
+                "branches'.",
+            "R6_the_axiom_argument_overreached_and_a_better_quote_exists":
+                "the offered dichotomy about 'A law privileges no states' "
+                "missed a third reading (the automorphism group of the "
+                "supplied structure, which is how the sibling Lattice and "
+                "Qubit clauses read).  Corrected.  And the memo's 'Open Gates "
+                "Outside The Axioms' section names formation rules -- WHICH "
+                "admissible possibility a record locks and WITH WHAT WEIGHT "
+                "-- as outside axiom content, which settles Q3 by quotation "
+                "rather than by argument.  Adopted as the primary support.",
+            "WHAT_SURVIVED_UNCHANGED":
+                "the 940-family delta; the six endpoint TOF patterns and "
+                "their record-only targets; the source-pointer pair identity "
+                "(which survived a harder embedded test than this block "
+                "applied); the wire identities and the orientation split; the "
+                "full Theta table value-for-value; the locks, events and "
+                "items; both non-existence routes; and A2-is-gauge.",
+        },
         "science_digest": science_digest,
         "certificates": certificates,
         "all_certificates_pass": all_pass,

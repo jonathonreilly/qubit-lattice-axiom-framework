@@ -12,7 +12,7 @@ PASS G_FALSIFIERS
 PASS H_DOUBLE_RUN
 PASS I_RUNTIME
 restriction gates: 67/67
-teeth fired: 13/13
+teeth fired: 14/14
 940 family: ['relabelling'] -- ZERO value-space maps tested there
 law-commuting menu swap exists: False
 divergence support (all atoms): [1, 6, 124, 125, 202, 236, 255, 256]
@@ -30,7 +30,7 @@ A2 escaped by the two-nonzero-word encoding: True
 symmetric-encoding leaf digests byte-identical: True
 axioms distinguish the two items: False
 940's negative is model-contingent: True
-science digest: ee2e5ce38f24f371df3a90800bb3b4fe6eb5b0f3ce54f65931e157b0850a4da2
-elapsed: 249.971s / 900s
+science digest: b444a144088c0f97dc9878cf0ad06f73dd0f07726b1a092ce63a5516dbe45a5f
+elapsed: 263.68s / 900s
 ALL CERTIFICATES PASS: True
 ===== end runner cache =====

@@ -720,12 +720,10 @@ def main():
     b916 = receipt916["C1_convention_B"]
     gates = {}
     g_once = {}
-    for gk, cases in b916["cases"].items():
-        for pk, row in cases.items():
-            key = "%s/%s" % (gk, pk)
-            want = cache["cases"][key]["N_once"]
-            got = list(row["once_counts"])
-            g_once[key] = {"c916": got, "cache_bytes": want, "ok": got == want}
+    for key, row in b916["cases"].items():
+        want = cache["cases"][key]["N_once"]
+        got = list(row["once_counts"])
+        g_once[key] = {"c916": got, "cache_bytes": want, "ok": got == want}
     gates["c916_once_counts_match_cache_bytes"] = all(v["ok"] for v in g_once.values())
     gates["c916_once_counts"] = g_once
     gs_lo_916 = b916["gs_baseline_range"][0]

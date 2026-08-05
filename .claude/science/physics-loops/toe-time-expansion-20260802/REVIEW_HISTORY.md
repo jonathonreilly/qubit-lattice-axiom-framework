@@ -1427,3 +1427,33 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Local disposition: **pass** (bounded_theorem; audit pending).
 - Successor launched into the freed slot: Cycle 933 (the s(k)
   shape, blockM13 — the mass lane's remaining empirical object).
+
+## Cycle 932 persistence razor (blockM12, PR #6001) — 2026-08-05
+
+- Supervisor review: the frozen-grid-is-the-claim-surface
+  discipline held exactly (all continuous/offset results
+  diagnostic-grade; the frozen verdicts reproduced at zero and
+  EXPLAINED, never re-graded); the certification code executed
+  verbatim from pinned 919 bytes; the seal's hard
+  no-pre-evaluation guard; the deciding structure (grid phase)
+  found outside the spec's candidates — the minimal-premise rule's
+  fourth win this window.
+- Verdicts: THE RAZOR IS A RULER — one monotone window per cell;
+  persistence counts grid points; degrees 3-4 phase-decided with
+  windows wider than needed; THE SCOPE QUALIFIER carried
+  unsoftened (the frozen answer is the least common across
+  phases — a favourable accident, not a derivation); the
+  d-conjunct DERIVED from two edges with 29/29 sealed
+  out-of-grid predictions; 926's persistence and deadline axes
+  re-derived.
+- Follow-ups executed: grid-phase qualifications on the 919 and
+  926 notes (pins refreshed; #5986/#5993 update).
+- Checker: SUPPORTED, 17/17 teeth, zero refutations; 50-digit
+  edge; rivals beaten quantitatively; both findings adopted (the
+  phase histogram; the d=2-exception statistic-dependence).
+- The mass lane's remaining inputs after this block: the
+  amplitude law C_ab(d, lambda) (= 927's baseline = the s(k)
+  shape, Cycle 933 running) and the t_open(lambda) regularity
+  (named).
+- Cluster-cap (12th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).

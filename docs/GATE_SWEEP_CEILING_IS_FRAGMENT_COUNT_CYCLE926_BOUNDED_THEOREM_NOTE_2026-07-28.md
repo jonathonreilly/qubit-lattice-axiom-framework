@@ -134,7 +134,17 @@ family and a non-star control.
   dependent), every degree failure at sufficient fragments is a
   PERSISTENCE failure. One law needs two statistics because two
   different gates do the killing. Carries the Q1 fragility
-  qualifier verbatim.
+  qualifier verbatim. [Qualification 2026-08-05, Cycle 932: the
+  d-conjunct (the persistence side) is now DERIVED — persistence
+  counts frozen grid points inside a single monotone certifiable
+  window, and the conjunct carries a GRID-PHASE scope: degrees
+  3-4 are decided by the grid phase (windows wider than three
+  samples need, opening ~0.006 after a grid point); over 401
+  offsets the frozen answer (threshold 5) is the least common of
+  the three possible (modal: 4). This note's persistence and
+  deadline axes are re-derived from the two window edges. The
+  frozen verdicts are explained, not re-graded. See the Cycle-932
+  note.]
 - Diagnostic-grade: the field ceiling is a single-valued function
   of the PAIR (degree, fragment count) — and of neither alone —
   across all 12 populated cells (none if f <= 1; 0.05 if f = 2;

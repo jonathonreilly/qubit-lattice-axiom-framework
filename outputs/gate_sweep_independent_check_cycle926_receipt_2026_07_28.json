@@ -1,0 +1,1730 @@
+{
+ "attacks": {
+  "i_claim_boundaries": {
+   "ceiling_equals_FRAGMENT_COUNT_at_0.05_on_all_29": {
+    "band": [
+     0.011998307823701353,
+     0.08
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": false,
+     "at_upper_endpoint": null
+    },
+    "probes": {
+     "just_above_upper": null,
+     "just_below_lower": false,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "ceiling_equals_POINTER_DEGREE_at_0.05_on_all_29": {
+    "band": null,
+    "checked": false,
+    "note": "the primary reports no band containing the frozen gate"
+   },
+   "ceiling_law_at_0.05": {
+    "band": [
+     0.01141565793407899,
+     0.08
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": false,
+     "at_upper_endpoint": null
+    },
+    "probes": {
+     "just_above_upper": null,
+     "just_below_lower": false,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "ceiling_law_at_0.05_vs_fragments": {
+    "band": [
+     0.01141565793407899,
+     0.08
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": false,
+     "at_upper_endpoint": null
+    },
+    "probes": {
+     "just_above_upper": null,
+     "just_below_lower": false,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "chain_certifies_at_0.05": {
+    "band": [
+     0.010497692233725528,
+     0.08
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": true,
+     "at_upper_endpoint": null
+    },
+    "probes": {
+     "just_above_upper": null,
+     "just_below_lower": false,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "degree_five_all_yes_at_0.10": {
+    "band": [
+     0.01916731445106878,
+     0.08
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": true,
+     "at_upper_endpoint": null
+    },
+    "probes": {
+     "just_above_upper": null,
+     "just_below_lower": false,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "degree_four_all_no_at_0.10": {
+    "band": [
+     0.005,
+     0.020783463422780327
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": true,
+     "at_upper_endpoint": false
+    },
+    "probes": {
+     "just_above_upper": false,
+     "just_below_lower": null,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "loop_cost_at_0.10": {
+    "band": [
+     0.012635378588828133,
+     0.029268536435889423
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": true,
+     "at_upper_endpoint": false
+    },
+    "probes": {
+     "just_above_upper": false,
+     "just_below_lower": false,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "threshold_conjunction_degree5_AND_three_fragments": {
+    "band": [
+     0.01916731445106878,
+     0.020738548117588462
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": true,
+     "at_upper_endpoint": false
+    },
+    "probes": {
+     "just_above_upper": false,
+     "just_below_lower": false,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "threshold_exists_and_is_clean": {
+    "band": [
+     0.01916731445106878,
+     0.020783463422780327
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": true,
+     "at_upper_endpoint": false
+    },
+    "probes": {
+     "just_above_upper": false,
+     "just_below_lower": false,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "threshold_is_degree_5": {
+    "band": [
+     0.01916731445106878,
+     0.020783463422780327
+    ],
+    "boundary_is_tight": true,
+    "checked": true,
+    "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+    "exact_endpoint_knife_edge": {
+     "at_lower_endpoint": true,
+     "at_upper_endpoint": false
+    },
+    "probes": {
+     "just_above_upper": false,
+     "just_below_lower": false,
+     "strictly_inside": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "threshold_tracks_FRAGMENT_COUNT_alone": {
+    "band": null,
+    "checked": false,
+    "note": "the primary reports no band containing the frozen gate"
+   },
+   "threshold_tracks_POINTER_DEGREE_alone": {
+    "band": null,
+    "checked": false,
+    "note": "the primary reports no band containing the frozen gate"
+   }
+  },
+  "ii_family_separation": {
+   "A1": {
+    "branch_count_at_pointer": 5,
+    "components_of_G_minus_S": 5,
+    "max_degree": 5,
+    "n_fragments": 5,
+    "pointer_degree": 5,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": false
+   },
+   "A2": {
+    "branch_count_at_pointer": 5,
+    "components_of_G_minus_S": 5,
+    "max_degree": 5,
+    "n_fragments": 4,
+    "pointer_degree": 5,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": true,
+    "separates_maxdeg_from_degree": false
+   },
+   "A3": {
+    "branch_count_at_pointer": 5,
+    "components_of_G_minus_S": 5,
+    "max_degree": 5,
+    "n_fragments": 3,
+    "pointer_degree": 5,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": true,
+    "separates_maxdeg_from_degree": false
+   },
+   "A4": {
+    "branch_count_at_pointer": 5,
+    "components_of_G_minus_S": 5,
+    "max_degree": 5,
+    "n_fragments": 2,
+    "pointer_degree": 5,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": true,
+    "separates_maxdeg_from_degree": false
+   },
+   "A5": {
+    "branch_count_at_pointer": 5,
+    "components_of_G_minus_S": 5,
+    "max_degree": 5,
+    "n_fragments": 1,
+    "pointer_degree": 5,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": true,
+    "separates_maxdeg_from_degree": false
+   },
+   "A6": {
+    "branch_count_at_pointer": 6,
+    "components_of_G_minus_S": 6,
+    "max_degree": 6,
+    "n_fragments": 6,
+    "pointer_degree": 6,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": false
+   },
+   "A7": {
+    "branch_count_at_pointer": 6,
+    "components_of_G_minus_S": 6,
+    "max_degree": 6,
+    "n_fragments": 4,
+    "pointer_degree": 6,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": true,
+    "separates_maxdeg_from_degree": false
+   },
+   "A8": {
+    "branch_count_at_pointer": 6,
+    "components_of_G_minus_S": 6,
+    "max_degree": 6,
+    "n_fragments": 2,
+    "pointer_degree": 6,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": true,
+    "separates_maxdeg_from_degree": false
+   },
+   "B1": {
+    "branch_count_at_pointer": 4,
+    "components_of_G_minus_S": 4,
+    "max_degree": 4,
+    "n_fragments": 4,
+    "pointer_degree": 4,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": false
+   },
+   "B2": {
+    "branch_count_at_pointer": 3,
+    "components_of_G_minus_S": 3,
+    "max_degree": 3,
+    "n_fragments": 3,
+    "pointer_degree": 3,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": false
+   },
+   "B3": {
+    "branch_count_at_pointer": 2,
+    "components_of_G_minus_S": 2,
+    "max_degree": 4,
+    "n_fragments": 2,
+    "pointer_degree": 2,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": true
+   },
+   "B4": {
+    "branch_count_at_pointer": 1,
+    "components_of_G_minus_S": 1,
+    "max_degree": 5,
+    "n_fragments": 1,
+    "pointer_degree": 1,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": true
+   },
+   "C1": {
+    "branch_count_at_pointer": 2,
+    "components_of_G_minus_S": 2,
+    "max_degree": 6,
+    "n_fragments": 2,
+    "pointer_degree": 2,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": true
+   },
+   "C2": {
+    "branch_count_at_pointer": 2,
+    "components_of_G_minus_S": 2,
+    "max_degree": 4,
+    "n_fragments": 2,
+    "pointer_degree": 2,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": true
+   },
+   "C3": {
+    "branch_count_at_pointer": 4,
+    "components_of_G_minus_S": 4,
+    "max_degree": 6,
+    "n_fragments": 4,
+    "pointer_degree": 4,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": true
+   },
+   "D1": {
+    "branch_count_at_pointer": 5,
+    "components_of_G_minus_S": 1,
+    "max_degree": 5,
+    "n_fragments": 5,
+    "pointer_degree": 5,
+    "separates_components_from_degree": true,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": false
+   },
+   "E1": {
+    "branch_count_at_pointer": 5,
+    "components_of_G_minus_S": 5,
+    "max_degree": 5,
+    "n_fragments": 4,
+    "pointer_degree": 5,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": true,
+    "separates_maxdeg_from_degree": false
+   },
+   "E2": {
+    "branch_count_at_pointer": 4,
+    "components_of_G_minus_S": 4,
+    "max_degree": 4,
+    "n_fragments": 4,
+    "pointer_degree": 4,
+    "separates_components_from_degree": false,
+    "separates_fragments_from_degree": false,
+    "separates_maxdeg_from_degree": false
+   }
+  },
+  "iii_model_degeneracy": {
+   "agrees_on_ceiling": true,
+   "agrees_on_threshold": true,
+   "ceiling_best": {
+    "0.05": "n_fragments",
+    "0.1": "n_fragments"
+   },
+   "ceiling_fit": {
+    "0.05": {
+     "branch_count_at_pointer": 0.758621,
+     "components_of_G_minus_S": 0.586207,
+     "max_degree": 0.586207,
+     "n_fragments": 1.0,
+     "pointer_degree": 0.758621
+    },
+    "0.1": {
+     "branch_count_at_pointer": 0.448276,
+     "components_of_G_minus_S": 0.448276,
+     "max_degree": 0.37931,
+     "n_fragments": 0.62069,
+     "pointer_degree": 0.448276
+    }
+   },
+   "fires": true,
+   "primary_says_ceiling_carrier": "n_fragments",
+   "primary_says_threshold_carrier": "pointer_degree",
+   "rival_fits_equally_well": true,
+   "threshold_best": "pointer_degree",
+   "threshold_fit": {
+    "branch_count_at_pointer": {
+     "accuracy": 0.896552,
+     "counterexamples": [
+      "A4",
+      "A5",
+      "A8"
+     ],
+     "cut": 5
+    },
+    "components_of_G_minus_S": {
+     "accuracy": 0.758621,
+     "counterexamples": [
+      "A4",
+      "A5",
+      "A8",
+      "D1",
+      "G5",
+      "G6",
+      "H4"
+     ],
+     "cut": 5
+    },
+    "max_degree": {
+     "accuracy": 0.793103,
+     "counterexamples": [
+      "A4",
+      "A5",
+      "A8",
+      "B4",
+      "C1",
+      "C3"
+     ],
+     "cut": 5
+    },
+    "n_fragments": {
+     "accuracy": 0.862069,
+     "counterexamples": [
+      "A2",
+      "A3",
+      "A7",
+      "E1"
+     ],
+     "cut": 5
+    },
+    "pointer_degree": {
+     "accuracy": 0.896552,
+     "counterexamples": [
+      "A4",
+      "A5",
+      "A8"
+     ],
+     "cut": 5
+    }
+   },
+   "ties": {
+    "ceiling_ties_at_0.05": [
+     "n_fragments"
+    ],
+    "ceiling_ties_at_0.10": [
+     "n_fragments"
+    ],
+    "threshold_ties": [
+     "branch_count_at_pointer",
+     "pointer_degree"
+    ]
+   }
+  }
+ },
+ "boundary_sentences": [
+  "Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction.",
+  "No formation rule.",
+  "Sets no audit status."
+ ],
+ "checks_receipt": "outputs/gate_sweep_separation_cycle926_receipt_2026_07_28.json",
+ "cycle": 926,
+ "date": "2026-07-28",
+ "findings": [
+  "TIE BY IDENTITY (not a degeneracy): the single-statistic fit is tied between ['branch_count_at_pointer', 'pointer_degree'], which the frozen rule defines to be the same variable; no geometry can separate them and the primary reports them as an identity"
+ ],
+ "independence": [
+  "sparse Pauli-kronecker Hamiltonians",
+  "expm_multiply interval propagation",
+  "tensordot reduced states",
+  "scipy eigvalsh('ev') spectra",
+  "bitmask maximum-clique R_ind",
+  "geometries rebuilt from the block spec, statistics from adjacency",
+  "the partition rule re-derived from the frozen memo's bytes",
+  "the G6 pair-class map read out of the 914 source bytes"
+ ],
+ "numerics": {
+  "max_abs_dev_vs_pinned_rows": {
+   "C": 5.6210027951641983e-14,
+   "chi": 2.6229018956769323e-14
+  },
+  "numpy": "2.4.1",
+  "peak_rss_gib": 0.2385711669921875,
+  "python": "3.12.8",
+  "wall_s": 5.46506000001682
+ },
+ "primary_git_blob": "40c5e71080f864db8545676b1d02f9a5e4d4b17f",
+ "primary_sha256": "3ca9053caf419b8e549c1395acd9b568495745ac703a508dffce75ca8f136d8a",
+ "receipt_sha256": "59d24f68b7bdd3ba8fa2e446a2e381c4c5dd97443915bf38b0823556369a4c07",
+ "runner": "scripts/frontier_cycle926_gate_sweep_independent_check_2026_07_28.py",
+ "schema": "gate-sweep-independent-check-cycle926-v1",
+ "teeth": {
+  "T10_matched_pairs_recomputed": {
+   "fires": true,
+   "per_pair": {
+    "A2_vs_B1": {
+     "agrees_with_primary": true,
+     "fragment_sizes_matched": true,
+     "independent": {
+      "0.05": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        4
+       ],
+       "low": [
+        "YES",
+        4
+       ],
+       "verdicts_agree": true
+      },
+      "0.075": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        4
+       ],
+       "low": [
+        "YES",
+        4
+       ],
+       "verdicts_agree": true
+      },
+      "0.1": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        4
+       ],
+       "low": [
+        "NO",
+        4
+       ],
+       "verdicts_agree": false
+      }
+     }
+    },
+    "A3_vs_B2": {
+     "agrees_with_primary": true,
+     "fragment_sizes_matched": true,
+     "independent": {
+      "0.05": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        3
+       ],
+       "low": [
+        "YES",
+        3
+       ],
+       "verdicts_agree": true
+      },
+      "0.075": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        3
+       ],
+       "low": [
+        "YES",
+        3
+       ],
+       "verdicts_agree": true
+      },
+      "0.1": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        3
+       ],
+       "low": [
+        "NO",
+        3
+       ],
+       "verdicts_agree": false
+      }
+     }
+    },
+    "A4_vs_B3": {
+     "agrees_with_primary": true,
+     "fragment_sizes_matched": true,
+     "independent": {
+      "0.05": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        2
+       ],
+       "low": [
+        "YES",
+        2
+       ],
+       "verdicts_agree": true
+      },
+      "0.075": {
+       "ceilings_agree": true,
+       "high": [
+        "NO",
+        2
+       ],
+       "low": [
+        "NO",
+        2
+       ],
+       "verdicts_agree": true
+      },
+      "0.1": {
+       "ceilings_agree": true,
+       "high": [
+        "NO",
+        1
+       ],
+       "low": [
+        "NO",
+        1
+       ],
+       "verdicts_agree": true
+      }
+     }
+    },
+    "A5_vs_B4": {
+     "agrees_with_primary": true,
+     "fragment_sizes_matched": true,
+     "independent": {
+      "0.05": {
+       "ceilings_agree": true,
+       "high": [
+        "NO",
+        1
+       ],
+       "low": [
+        "NO",
+        1
+       ],
+       "verdicts_agree": true
+      },
+      "0.075": {
+       "ceilings_agree": true,
+       "high": [
+        "NO",
+        1
+       ],
+       "low": [
+        "NO",
+        1
+       ],
+       "verdicts_agree": true
+      },
+      "0.1": {
+       "ceilings_agree": true,
+       "high": [
+        "NO",
+        1
+       ],
+       "low": [
+        "NO",
+        1
+       ],
+       "verdicts_agree": true
+      }
+     }
+    },
+    "E1_vs_E2": {
+     "agrees_with_primary": true,
+     "fragment_sizes_matched": true,
+     "independent": {
+      "0.05": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        4
+       ],
+       "low": [
+        "YES",
+        4
+       ],
+       "verdicts_agree": true
+      },
+      "0.075": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        4
+       ],
+       "low": [
+        "YES",
+        4
+       ],
+       "verdicts_agree": true
+      },
+      "0.1": {
+       "ceilings_agree": true,
+       "high": [
+        "YES",
+        4
+       ],
+       "low": [
+        "NO",
+        4
+       ],
+       "verdicts_agree": false
+      }
+     }
+    }
+   }
+  },
+  "T11_planted_wrong_boundary": {
+   "claimed": "threshold_is_degree_5 still holds",
+   "clean": false,
+   "fires": true,
+   "independent_threshold": 5,
+   "planted_gate": 0.02278346342278033,
+   "refuted": true
+  },
+  "T12_planted_wrong_carrying_statistic": {
+   "best_accuracy": 0.7931034482758621,
+   "counterexamples": [
+    "A4",
+    "A5",
+    "A8",
+    "B4",
+    "C1",
+    "C3"
+   ],
+   "fires": true,
+   "planted": "max_degree",
+   "refuted": true
+  },
+  "T13_G6_expansion_from_the_914_source_bytes": {
+   "fires": true,
+   "ledger_reproduced": [
+    true,
+    true
+   ],
+   "pair_class_map_size": 15
+  },
+  "T14_non_monotonicity_independently_reproduced": {
+   "agree": true,
+   "fires": true,
+   "independent_non_monotone_cells": [],
+   "primary_non_monotone_cells": []
+  },
+  "T15_separation_family_cells_reproduced": {
+   "cells": 54,
+   "disagreements": [],
+   "fires": true
+  },
+  "T16_conjunctive_law_and_its_degeneracy": {
+   "agrees_with_primary": true,
+   "conjunction_fits_all": true,
+   "conjunction_tested": "pointer_degree >= 5 AND n_fragments >= 3",
+   "fires": true,
+   "independent_counterexamples": [],
+   "n_distinct_patterns_at_100_percent": 1,
+   "n_distinct_patterns_searched": 71,
+   "n_geometries": 29,
+   "perfect_pattern_descriptions": [
+    "pointer_degree>=5 AND n_fragments>=3"
+   ],
+   "primary_perfect_models": [
+    "pointer_degree>=5 AND n_fragments>=3"
+   ],
+   "unique_model": true
+  },
+  "T17_ceiling_equals_fragment_count_not_degree": {
+   "fires": true,
+   "fragment_count_exact_hits": 29,
+   "fragment_count_misses": [],
+   "n_cells": 29,
+   "pointer_degree_exact_hits": 22,
+   "pointer_degree_misses": [
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A7",
+    "A8",
+    "E1"
+   ],
+   "separation_is_decisive": true
+  },
+  "T1_frozen_rule_rebuilt_from_memo_bytes_reproduces_the_cube": {
+   "clauses_parsed": {
+    "clause1": true,
+    "clause2": true,
+    "clause3": true,
+    "deadline": 1.0,
+    "indep_max": 0.02,
+    "persist_is_three": true,
+    "r_ind_def": true
+   },
+   "fires": true,
+   "ok": true
+  },
+  "T2_statistics_recomputed_from_adjacency": {
+   "disagreements": [],
+   "fires": true,
+   "geometries_checked": 28,
+   "per_geometry": {
+    "A1": {
+     "agrees": true,
+     "components_of_G_minus_S": 5,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 5,
+      "max_degree": 5,
+      "n_fragments": 5,
+      "pointer_degree": 5
+     }
+    },
+    "A2": {
+     "agrees": true,
+     "components_of_G_minus_S": 5,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 5,
+      "max_degree": 5,
+      "n_fragments": 4,
+      "pointer_degree": 5
+     }
+    },
+    "A3": {
+     "agrees": true,
+     "components_of_G_minus_S": 5,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 5,
+      "max_degree": 5,
+      "n_fragments": 3,
+      "pointer_degree": 5
+     }
+    },
+    "A4": {
+     "agrees": true,
+     "components_of_G_minus_S": 5,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 5,
+      "max_degree": 5,
+      "n_fragments": 2,
+      "pointer_degree": 5
+     }
+    },
+    "A5": {
+     "agrees": true,
+     "components_of_G_minus_S": 5,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 5,
+      "max_degree": 5,
+      "n_fragments": 1,
+      "pointer_degree": 5
+     }
+    },
+    "A6": {
+     "agrees": true,
+     "components_of_G_minus_S": 6,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 6,
+      "max_degree": 6,
+      "n_fragments": 6,
+      "pointer_degree": 6
+     }
+    },
+    "A7": {
+     "agrees": true,
+     "components_of_G_minus_S": 6,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 6,
+      "max_degree": 6,
+      "n_fragments": 4,
+      "pointer_degree": 6
+     }
+    },
+    "A8": {
+     "agrees": true,
+     "components_of_G_minus_S": 6,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 6,
+      "max_degree": 6,
+      "n_fragments": 2,
+      "pointer_degree": 6
+     }
+    },
+    "B1": {
+     "agrees": true,
+     "components_of_G_minus_S": 4,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 4,
+      "max_degree": 4,
+      "n_fragments": 4,
+      "pointer_degree": 4
+     }
+    },
+    "B2": {
+     "agrees": true,
+     "components_of_G_minus_S": 3,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 3,
+      "max_degree": 3,
+      "n_fragments": 3,
+      "pointer_degree": 3
+     }
+    },
+    "B3": {
+     "agrees": true,
+     "components_of_G_minus_S": 2,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 2,
+      "max_degree": 4,
+      "n_fragments": 2,
+      "pointer_degree": 2
+     }
+    },
+    "B4": {
+     "agrees": true,
+     "components_of_G_minus_S": 1,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 1,
+      "max_degree": 5,
+      "n_fragments": 1,
+      "pointer_degree": 1
+     }
+    },
+    "C1": {
+     "agrees": true,
+     "components_of_G_minus_S": 2,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 2,
+      "max_degree": 6,
+      "n_fragments": 2,
+      "pointer_degree": 2
+     }
+    },
+    "C2": {
+     "agrees": true,
+     "components_of_G_minus_S": 2,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 2,
+      "max_degree": 4,
+      "n_fragments": 2,
+      "pointer_degree": 2
+     }
+    },
+    "C3": {
+     "agrees": true,
+     "components_of_G_minus_S": 4,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 4,
+      "max_degree": 6,
+      "n_fragments": 4,
+      "pointer_degree": 4
+     }
+    },
+    "D1": {
+     "agrees": true,
+     "components_of_G_minus_S": 1,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 5,
+      "max_degree": 5,
+      "n_fragments": 5,
+      "pointer_degree": 5
+     }
+    },
+    "E1": {
+     "agrees": true,
+     "components_of_G_minus_S": 5,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 5,
+      "max_degree": 5,
+      "n_fragments": 4,
+      "pointer_degree": 5
+     }
+    },
+    "E2": {
+     "agrees": true,
+     "components_of_G_minus_S": 4,
+     "differences": {},
+     "four_statistics": {
+      "branch_count_at_pointer": 4,
+      "max_degree": 4,
+      "n_fragments": 4,
+      "pointer_degree": 4
+     }
+    }
+   },
+   "statistics_compared": [
+    "n_sites",
+    "n_bonds",
+    "pointer_degree",
+    "max_degree",
+    "branch_count_at_pointer",
+    "components_of_G_minus_S",
+    "depth_eccentricity_from_pointer",
+    "cyclomatic_number_loops",
+    "loop_free",
+    "n_fragments",
+    "fragment_sizes"
+   ]
+  },
+  "T3_partitions_rederived_from_the_frozen_rule": {
+   "disagreements": [],
+   "fires": true,
+   "geometries": 18
+  },
+  "T4_26_cell_frozen_table_on_independent_machinery": {
+   "cells": 26,
+   "disagreements": [],
+   "fires": true,
+   "max_abs_dev_vs_pinned_rows": {
+    "C": 5.6210027951641983e-14,
+    "chi": 2.6229018956769323e-14
+   }
+  },
+  "T5_claim_boundary_values_recomputed_independently": {
+   "all_tight": true,
+   "fires": true,
+   "per_claim": {
+    "ceiling_equals_FRAGMENT_COUNT_at_0.05_on_all_29": {
+     "band": [
+      0.011998307823701353,
+      0.08
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": false,
+      "at_upper_endpoint": null
+     },
+     "probes": {
+      "just_above_upper": null,
+      "just_below_lower": false,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "ceiling_equals_POINTER_DEGREE_at_0.05_on_all_29": {
+     "band": null,
+     "checked": false,
+     "note": "the primary reports no band containing the frozen gate"
+    },
+    "ceiling_law_at_0.05": {
+     "band": [
+      0.01141565793407899,
+      0.08
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": false,
+      "at_upper_endpoint": null
+     },
+     "probes": {
+      "just_above_upper": null,
+      "just_below_lower": false,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "ceiling_law_at_0.05_vs_fragments": {
+     "band": [
+      0.01141565793407899,
+      0.08
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": false,
+      "at_upper_endpoint": null
+     },
+     "probes": {
+      "just_above_upper": null,
+      "just_below_lower": false,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "chain_certifies_at_0.05": {
+     "band": [
+      0.010497692233725528,
+      0.08
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": true,
+      "at_upper_endpoint": null
+     },
+     "probes": {
+      "just_above_upper": null,
+      "just_below_lower": false,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "degree_five_all_yes_at_0.10": {
+     "band": [
+      0.01916731445106878,
+      0.08
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": true,
+      "at_upper_endpoint": null
+     },
+     "probes": {
+      "just_above_upper": null,
+      "just_below_lower": false,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "degree_four_all_no_at_0.10": {
+     "band": [
+      0.005,
+      0.020783463422780327
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": true,
+      "at_upper_endpoint": false
+     },
+     "probes": {
+      "just_above_upper": false,
+      "just_below_lower": null,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "loop_cost_at_0.10": {
+     "band": [
+      0.012635378588828133,
+      0.029268536435889423
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": true,
+      "at_upper_endpoint": false
+     },
+     "probes": {
+      "just_above_upper": false,
+      "just_below_lower": false,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "threshold_conjunction_degree5_AND_three_fragments": {
+     "band": [
+      0.01916731445106878,
+      0.020738548117588462
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": true,
+      "at_upper_endpoint": false
+     },
+     "probes": {
+      "just_above_upper": false,
+      "just_below_lower": false,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "threshold_exists_and_is_clean": {
+     "band": [
+      0.01916731445106878,
+      0.020783463422780327
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": true,
+      "at_upper_endpoint": false
+     },
+     "probes": {
+      "just_above_upper": false,
+      "just_below_lower": false,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "threshold_is_degree_5": {
+     "band": [
+      0.01916731445106878,
+      0.020783463422780327
+     ],
+     "boundary_is_tight": true,
+     "checked": true,
+     "endpoint_note": "the endpoints are measured C_ab values; at exactly the endpoint the two implementations can differ because their C_ab agree only to ~1e-13, so only the strict interior is a claim",
+     "exact_endpoint_knife_edge": {
+      "at_lower_endpoint": true,
+      "at_upper_endpoint": false
+     },
+     "probes": {
+      "just_above_upper": false,
+      "just_below_lower": false,
+      "strictly_inside": [
+       true,
+       true,
+       true
+      ]
+     }
+    },
+    "threshold_tracks_FRAGMENT_COUNT_alone": {
+     "band": null,
+     "checked": false,
+     "note": "the primary reports no band containing the frozen gate"
+    },
+    "threshold_tracks_POINTER_DEGREE_alone": {
+     "band": null,
+     "checked": false,
+     "note": "the primary reports no band containing the frozen gate"
+    }
+   }
+  },
+  "T6_threshold_boundary_and_where_it_moves": {
+   "agrees_above": true,
+   "agrees_below": true,
+   "fires": true,
+   "independent": {
+    "at_lower": [
+     5,
+     true
+    ],
+    "at_upper": [
+     5,
+     false
+    ],
+    "far_above": [
+     1,
+     true
+    ],
+    "far_below": [
+     7,
+     true
+    ],
+    "inside": [
+     5,
+     true
+    ],
+    "just_below_lower": [
+     6,
+     false
+    ]
+   },
+   "primary_band": [
+    0.01916731445106878,
+    0.020783463422780327
+   ],
+   "primary_threshold_just_above": 5,
+   "primary_threshold_just_below": 6
+  },
+  "T7_separation_family_actually_separates": {
+   "branch_count_identity_confirmed_in_the_919_source_bytes": true,
+   "fires": true,
+   "geometries_separating_branch_count_from_pointer_degree": [],
+   "geometries_separating_components_from_pointer_degree": [
+    "D1"
+   ],
+   "geometries_separating_max_degree_from_pointer_degree": [
+    "B3",
+    "B4",
+    "C1",
+    "C2",
+    "C3"
+   ],
+   "geometries_separating_n_fragments_from_pointer_degree": [
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A7",
+    "A8",
+    "E1"
+   ],
+   "per_geometry": {
+    "A1": {
+     "branch_count_at_pointer": 5,
+     "components_of_G_minus_S": 5,
+     "max_degree": 5,
+     "n_fragments": 5,
+     "pointer_degree": 5,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": false
+    },
+    "A2": {
+     "branch_count_at_pointer": 5,
+     "components_of_G_minus_S": 5,
+     "max_degree": 5,
+     "n_fragments": 4,
+     "pointer_degree": 5,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": true,
+     "separates_maxdeg_from_degree": false
+    },
+    "A3": {
+     "branch_count_at_pointer": 5,
+     "components_of_G_minus_S": 5,
+     "max_degree": 5,
+     "n_fragments": 3,
+     "pointer_degree": 5,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": true,
+     "separates_maxdeg_from_degree": false
+    },
+    "A4": {
+     "branch_count_at_pointer": 5,
+     "components_of_G_minus_S": 5,
+     "max_degree": 5,
+     "n_fragments": 2,
+     "pointer_degree": 5,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": true,
+     "separates_maxdeg_from_degree": false
+    },
+    "A5": {
+     "branch_count_at_pointer": 5,
+     "components_of_G_minus_S": 5,
+     "max_degree": 5,
+     "n_fragments": 1,
+     "pointer_degree": 5,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": true,
+     "separates_maxdeg_from_degree": false
+    },
+    "A6": {
+     "branch_count_at_pointer": 6,
+     "components_of_G_minus_S": 6,
+     "max_degree": 6,
+     "n_fragments": 6,
+     "pointer_degree": 6,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": false
+    },
+    "A7": {
+     "branch_count_at_pointer": 6,
+     "components_of_G_minus_S": 6,
+     "max_degree": 6,
+     "n_fragments": 4,
+     "pointer_degree": 6,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": true,
+     "separates_maxdeg_from_degree": false
+    },
+    "A8": {
+     "branch_count_at_pointer": 6,
+     "components_of_G_minus_S": 6,
+     "max_degree": 6,
+     "n_fragments": 2,
+     "pointer_degree": 6,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": true,
+     "separates_maxdeg_from_degree": false
+    },
+    "B1": {
+     "branch_count_at_pointer": 4,
+     "components_of_G_minus_S": 4,
+     "max_degree": 4,
+     "n_fragments": 4,
+     "pointer_degree": 4,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": false
+    },
+    "B2": {
+     "branch_count_at_pointer": 3,
+     "components_of_G_minus_S": 3,
+     "max_degree": 3,
+     "n_fragments": 3,
+     "pointer_degree": 3,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": false
+    },
+    "B3": {
+     "branch_count_at_pointer": 2,
+     "components_of_G_minus_S": 2,
+     "max_degree": 4,
+     "n_fragments": 2,
+     "pointer_degree": 2,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": true
+    },
+    "B4": {
+     "branch_count_at_pointer": 1,
+     "components_of_G_minus_S": 1,
+     "max_degree": 5,
+     "n_fragments": 1,
+     "pointer_degree": 1,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": true
+    },
+    "C1": {
+     "branch_count_at_pointer": 2,
+     "components_of_G_minus_S": 2,
+     "max_degree": 6,
+     "n_fragments": 2,
+     "pointer_degree": 2,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": true
+    },
+    "C2": {
+     "branch_count_at_pointer": 2,
+     "components_of_G_minus_S": 2,
+     "max_degree": 4,
+     "n_fragments": 2,
+     "pointer_degree": 2,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": true
+    },
+    "C3": {
+     "branch_count_at_pointer": 4,
+     "components_of_G_minus_S": 4,
+     "max_degree": 6,
+     "n_fragments": 4,
+     "pointer_degree": 4,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": true
+    },
+    "D1": {
+     "branch_count_at_pointer": 5,
+     "components_of_G_minus_S": 1,
+     "max_degree": 5,
+     "n_fragments": 5,
+     "pointer_degree": 5,
+     "separates_components_from_degree": true,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": false
+    },
+    "E1": {
+     "branch_count_at_pointer": 5,
+     "components_of_G_minus_S": 5,
+     "max_degree": 5,
+     "n_fragments": 4,
+     "pointer_degree": 5,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": true,
+     "separates_maxdeg_from_degree": false
+    },
+    "E2": {
+     "branch_count_at_pointer": 4,
+     "components_of_G_minus_S": 4,
+     "max_degree": 4,
+     "n_fragments": 4,
+     "pointer_degree": 4,
+     "separates_components_from_degree": false,
+     "separates_fragments_from_degree": false,
+     "separates_maxdeg_from_degree": false
+    }
+   }
+  },
+  "T8_A_family_controls_reproduce_the_pinned_stars": {
+   "all_identical": true,
+   "fires": true,
+   "per_control": {
+    "A1_vs_H1": {
+     "0.05": {
+      "ceilings": [
+       5,
+       5
+      ],
+      "identical": true,
+      "max_abs_dev": 0.0,
+      "verdicts": [
+       "YES",
+       "YES"
+      ]
+     },
+     "0.1": {
+      "ceilings": [
+       5,
+       5
+      ],
+      "identical": true,
+      "max_abs_dev": 0.0,
+      "verdicts": [
+       "YES",
+       "YES"
+      ]
+     }
+    },
+    "A6_vs_G2": {
+     "0.05": {
+      "ceilings": [
+       6,
+       6
+      ],
+      "identical": true,
+      "max_abs_dev": 0.0,
+      "verdicts": [
+       "YES",
+       "YES"
+      ]
+     },
+     "0.1": {
+      "ceilings": [
+       6,
+       6
+      ],
+      "identical": true,
+      "max_abs_dev": 0.0,
+      "verdicts": [
+       "YES",
+       "YES"
+      ]
+     }
+    }
+   }
+  },
+  "T9_model_degeneracy_of_the_carrying_statistic": {
+   "agrees_on_ceiling": true,
+   "agrees_on_threshold": true,
+   "ceiling_best": {
+    "0.05": "n_fragments",
+    "0.1": "n_fragments"
+   },
+   "ceiling_fit": {
+    "0.05": {
+     "branch_count_at_pointer": 0.758621,
+     "components_of_G_minus_S": 0.586207,
+     "max_degree": 0.586207,
+     "n_fragments": 1.0,
+     "pointer_degree": 0.758621
+    },
+    "0.1": {
+     "branch_count_at_pointer": 0.448276,
+     "components_of_G_minus_S": 0.448276,
+     "max_degree": 0.37931,
+     "n_fragments": 0.62069,
+     "pointer_degree": 0.448276
+    }
+   },
+   "fires": true,
+   "primary_says_ceiling_carrier": "n_fragments",
+   "primary_says_threshold_carrier": "pointer_degree",
+   "rival_fits_equally_well": true,
+   "threshold_best": "pointer_degree",
+   "threshold_fit": {
+    "branch_count_at_pointer": {
+     "accuracy": 0.896552,
+     "counterexamples": [
+      "A4",
+      "A5",
+      "A8"
+     ],
+     "cut": 5
+    },
+    "components_of_G_minus_S": {
+     "accuracy": 0.758621,
+     "counterexamples": [
+      "A4",
+      "A5",
+      "A8",
+      "D1",
+      "G5",
+      "G6",
+      "H4"
+     ],
+     "cut": 5
+    },
+    "max_degree": {
+     "accuracy": 0.793103,
+     "counterexamples": [
+      "A4",
+      "A5",
+      "A8",
+      "B4",
+      "C1",
+      "C3"
+     ],
+     "cut": 5
+    },
+    "n_fragments": {
+     "accuracy": 0.862069,
+     "counterexamples": [
+      "A2",
+      "A3",
+      "A7",
+      "E1"
+     ],
+     "cut": 5
+    },
+    "pointer_degree": {
+     "accuracy": 0.896552,
+     "counterexamples": [
+      "A4",
+      "A5",
+      "A8"
+     ],
+     "cut": 5
+    }
+   },
+   "ties": {
+    "ceiling_ties_at_0.05": [
+     "n_fragments"
+    ],
+    "ceiling_ties_at_0.10": [
+     "n_fragments"
+    ],
+    "threshold_ties": [
+     "branch_count_at_pointer",
+     "pointer_degree"
+    ]
+   }
+  }
+ }
+}

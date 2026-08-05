@@ -1,0 +1,130 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle925_law_relaxation_independent_check_2026_07_28.py
+runner_sha256: 7567af96c91df6f3f95111d949fe5c6185935389eabd0fd5f0c40bc3ba2a3acb
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 137.362
+status: ok
+----- stdout -----
+CYCLE 925 INDEPENDENT CHECK -- SPECIFIED TO REFUTE
+==============================================================================
+  own splice: content-addressed cut + source-TEXT insertion
+  own sweep: AST node-type census + BYTECODE census + container type check
+  own windows: sweep 137, tape 71, slow replay 13 orbits; CONTROL and M_A at the full 16384-orbit horizon
+
+  [x] K1_empty_splice_reproduces_the_pinned_compile_fast_text
+  [x] K1_content_addressed_cut_found_in_every_chunk
+  [x] K1_splice_adds_exactly_two_statements_per_chunk
+  [x] K1_gate_totals_match_the_pinned_913_lemma_and_the_918_count
+  [x] K2_no_node_type_outside_the_declared_allow_list
+  [x] K2_no_free_name_in_the_pinned_sources
+  [x] K2_no_non_literal_state_address
+  [x] K2_no_choice_node_type_present
+  [x] K2_bytecode_reaches_no_external_datum
+  [x] K2_state_container_is_a_plain_list_of_plain_ints
+  [x] K2_kernel_macros_emit_only_the_three_compiled_forms
+  [x] K2_statement_count_agrees_with_the_primary_and_with_918
+  [x] K2_no_GENUINE_fifth_provenance_class_found
+  [x] K2_every_planted_category_caught_by_the_checkers_own_mechanisms
+  [x] K3_control_full_horizon_digest_matches_the_pinned_913_build
+  [x] K3_control_lock_points_match_911
+  [x] K3_M_A_full_horizon_digest_matches_the_pinned_918_build
+  [x] K3_M_A_lock_points_match_918
+  [x] K3_slow_semantic_replay_reproduces_the_packed_run
+  [x] K5_no_surviving_indexical_among_the_coordinates_the_primary_missed
+  [x] K5_primary_lane_bit_parity_verdict_reproduced
+  [x] K5_the_shift_is_caught_by_the_checkers_own_node_type_census
+  [x] K5_the_shift_law_is_layout_dependent_at_run_time
+  [x] K5_the_certification_battery_is_jointly_needed
+  [x] K6_the_A3_channel_wording_is_byte_present_in_the_pinned_913_receipt
+  [x] K6_the_axiom_memo_places_that_content_outside_the_four_axioms
+  [x] K6_no_multi_valued_node_is_reachable_in_the_compiled_law
+  [x] K7_primary_reports_R1_as_a_relabeling
+  [x] K7_primary_R1a_bit_identity_claim_is_reproduced_here
+  [x] K7_primary_P2_and_P3_emptiness_reproduced
+  [x] K7_primary_three_statement_templates_reproduced
+  [x] K7_primary_found_no_surviving_indexical
+  [x] K7_primary_and_checker_agree_on_the_sole_genuine_relaxation
+  [x] K7_primary_restriction_gate_passed_all_rows
+  [x] K7_primary_all_teeth_fired
+  [x] K7_primary_runtime_within_budget
+  [x] K8_M_A_dynamical_branch_pairs_reproduced_from_the_pinned_918
+  [x] K8_the_tape_really_does_inflate_the_918_quantity
+  [x] K8_the_911_branch_class_stays_empty_under_the_tape_and_under_M_A
+  [x] K8_the_caveat_is_therefore_correct_as_the_primary_states_it
+
+------------------------------------------------------------------------------
+K2  THE HUNT FOR A FIFTH PROVENANCE CLASS
+------------------------------------------------------------------------------
+  [absent ] a global/free name delivering an oracle value
+            would be: P2
+  [absent ] a call or branch inside a gate
+            would be: P3
+  [absent ] a state address computed at run time
+            would be: would be a NEW class (an address is neither a datum nor a mask)
+  [absent ] the state container's own __getitem__ (a datum that appears in no source and no bytecode)
+            would be: would be a GENUINE FIFTH CLASS -- provenance outside the compiled law entirely
+            FINDING: THIS IS A REAL GAP IN THE PRIMARY'S ARGUMENT AS WRITTEN.  The primary's kernel-level lemma is a SOURCE-level sweep and a source-level sweep cannot see a container that answers differently on two identical reads.  The premise holds here (plain list of plain ints) but the primary does not state it.  Recorded as an ADDED PREMISE the classification needs, not as a refutation of the classification.
+  [absent ] the scan loop's own choice of which chunk to run
+            would be: P4 (the schedule)
+            FINDING: the primary swept the CHUNKS and left the SCAN LOOP implicit.  Swept here: the pinned scan selects a chunk by boundary index and consults no other datum, so it is P4 and adds no class.  Recorded as a completeness item the primary should have stated.
+  [PRESENT] the AugAssign TARGET's own previous value
+            would be: P1 (a state read the primary's value-expression sweep does not count)
+            FINDING: the primary's 'distinct addresses read' counts only the value expression and therefore UNDERCOUNTS P1 by the target reads.  This makes its P1 set smaller, never larger, so it cannot manufacture a missing class; the shape check still forces every target to be c[literal].  Recorded as an arithmetic caveat on one reported number, not a refutation.
+
+------------------------------------------------------------------------------
+K4  ATTACKS ON THE R1 RE-LABELING PROOF
+------------------------------------------------------------------------------
+  PRIMARY CONFIRMED                  reproduce the primary's constant-tape equivalence on the checker's own splice and its own window
+  PRIMARY CONFIRMED AND STRENGTHENED a stream injected into a wire the PINNED GATES THEMSELVES WRITE -- the case the primary explicitly excluded, where its 'previous value is compile-time known' argument does NOT apply
+      the primary proved schedule-absorption only for a carrier written by nothing, because it used a one-gate XOR whose mask needs the previous value.  The restriction is unnecessary: a two-gate clear-then-set absorbs an injection into ANY wire, live or dead, with compile-time constant masks throughout.  R1's re-labeling is therefore broader than the primary claimed, not narrower.
+  NO REFUTATION                      a stream longer than the horizon
+      a stream longer than the run is a stream whose tail is never consulted.  Schedule-absorption is per-boundary, so only the first (boundaries) entries can matter and the construction above covers them.  The primary's capacity remark is about the STATE route only and is correctly scoped there.
+  NO REFUTATION                      a 'stream' delivered by swapping which compiled chunk OBJECT runs at each boundary, so no source mentions it
+      choosing which chunk runs at which boundary IS the schedule, by the primary's own P4 definition.  The construction is a schedule of period 11 with two different chunk bodies, and it is deterministic and reproducible.  It adds no provenance class.
+
+------------------------------------------------------------------------------
+K5  INDEXICAL COORDINATES THE PRIMARY DID NOT SWEEP
+------------------------------------------------------------------------------
+  limb_index_bit_position_mod_64             STRUCTURALLY DEAD
+      bookkeeping-slot coordinate; layout-independent=False, duplicate-lane clean=False
+  bit_distance_to_the_duplicate_lane         STRUCTURALLY DEAD
+      bookkeeping-slot coordinate; layout-independent=False, duplicate-lane clean=False
+  gate_ordinal_within_the_chunk              ABSORBED (not a relaxation)
+      the gate ordinal is where a statement sits in the chunk; it is part of the chunk, i.e. part of the schedule, and it is identical for every world.  It distinguishes no occasion from another and cannot be read by a law as 
+  final_orbit_flag_horizon_relative_time     STRUCTURALLY DEAD
+      a law that reads 'how far from the end' needs the horizon to be part of the law.  The horizon is a runner parameter, not a property of any world: extending the run by one orbit changes which boundary is 'final' and there
+  census_size_parity_a_global_constant       ABSORBED (not a relaxation)
+      a global constant is the same for every world and every layout, so a law reading it is part of the common law -- the schedule.  It distinguishes nothing.
+
+------------------------------------------------------------------------------
+K8  THE PRIMARY'S CAVEAT ON A PINNED 918 QUANTITY, VERIFIED
+------------------------------------------------------------------------------
+  M_A   dynamical branch pairs   3  (pinned 918: 3)   literal 911 branch pairs 0
+  TAPE  dynamical branch pairs  12  (a proven RE-LABELING)           literal 911 branch pairs 0
+  the DECLARED quantity is coordinate-list-relative; the determinism-relevant class is not moved.
+
+------------------------------------------------------------------------------
+G_TEETH  PASS  (17 teeth)
+    [x] planted_free_name_caught_by_the_checkers_own_census
+    [x] planted_call_caught_by_the_checkers_own_census
+    [x] planted_ifexp_caught_by_the_checkers_own_census
+    [x] planted_plain_assignment_caught_by_the_checkers_own_census
+    [x] planted_computed_address_caught_by_the_checkers_own_census
+    [x] planted_walrus_caught_by_the_checkers_own_census
+    [x] planted_shift_caught_by_the_checkers_own_census
+    [x] planted_container_with_a_custom_getitem_would_be_caught
+    [x] planted_break_in_the_live_wire_equivalence_detected
+    [x] tampered_pin_detected
+    [x] dropped_splice_line_detected
+    [x] wrong_cut_position_changes_the_result
+    [x] slow_replay_disagreement_would_be_caught
+    [x] deterministic_double_run_identical
+    [x] control_cannot_leak_a_relaxation_verdict
+    [x] a_corrupted_primary_receipt_value_would_break_K7
+    [x] planted_surviving_indexical_would_be_reported
+
+==============================================================================
+CHECKS 40/40   TEETH 17/17   RUNTIME 136.819s / 900s
+RESULT: PRIMARY_SURVIVES_THIS_CHECK
+receipt: outputs/law_relaxation_independent_check_cycle925_receipt_2026_07_28.json

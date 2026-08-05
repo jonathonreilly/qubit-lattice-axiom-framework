@@ -1,0 +1,132 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle925_law_relaxation_2026_07_28.py
+runner_sha256: b5ddffd78a8c77318228f47e6c898ef726d4b787c901de82d5f49a75cb74eeb2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 369.797
+status: ok
+----- stdout -----
+CYCLE 925 -- THE LAW-RELAXATION SPACE, CLASSIFIED AND PRICED
+==============================================================================
+  every fraction below: bookkeeping fraction, not probability
+  scope: FULL CENSUS 748 worlds; flagship results at the landed 16384-orbit horizon (180224 boundaries), both lane layouts; declared sub-horizon windows: coordinate sweep 96 orbits, arbitrary-tape equivalence 64 orbits, pinned-scan cross-check 128 orbits
+
+A_PINS                      PASS  (17 pinned; sha256+git-blob; firewall hits 0)
+B_RESTRICTION_GATE          PASS  (87/87 reproduce)
+
+------------------------------------------------------------------------------
+C1  THE INPUT-PROVENANCE PARTITION  (Q1: the lemma at kernel level)
+------------------------------------------------------------------------------
+  compiler statement templates (3): [' c[{}] ^= {}', ' c[{}] ^= c[{}] & {}', ' c[{}] ^= c[{}] & c[{}] & {}']
+  pinned substrate: 34166 statements, 545 addresses read, 535 written
+    P1_DECLARED_STATE                      39688
+    P4_INDEX_OR_BOOKKEEPING_COORDINATE     34166
+  P2 empty=True  P3 empty=True  unclassified empty=True
+  planted fifth-category probes:
+    [x] free_name_oracle           -> ['P1_DECLARED_STATE', 'P2_DECLARED_NON_STATE_INPUT_STREAM']
+    [x] oracle_call                -> ['P1_DECLARED_STATE', 'P2_DECLARED_NON_STATE_INPUT_STREAM', 'P3_LAW_INTERNAL_CHOICE_POINT', 'P4_INDEX_OR_BOOKKEEPING_COORDINATE']
+    [x] conditional_expression     -> ['P1_DECLARED_STATE', 'P3_LAW_INTERNAL_CHOICE_POINT', 'P4_INDEX_OR_BOOKKEEPING_COORDINATE']
+    [x] attribute_lookup           -> ['P1_DECLARED_STATE', 'P2_DECLARED_NON_STATE_INPUT_STREAM', 'UNCLASSIFIED_FIFTH_CATEGORY']
+    [x] comparison                 -> ['P1_DECLARED_STATE', 'P3_LAW_INTERNAL_CHOICE_POINT', 'P4_INDEX_OR_BOOKKEEPING_COORDINATE', 'UNCLASSIFIED_FIFTH_CATEGORY']
+    [x] non_literal_address        -> ['P1_DECLARED_STATE', 'P4_INDEX_OR_BOOKKEEPING_COORDINATE', 'UNCLASSIFIED_FIFTH_CATEGORY']
+    [x] cross_lane_shift           -> ['P1_DECLARED_STATE', 'P4_INDEX_OR_BOOKKEEPING_COORDINATE']
+    [x] boolean_shortcircuit       -> ['P1_DECLARED_STATE', 'P3_LAW_INTERNAL_CHOICE_POINT', 'P4_INDEX_OR_BOOKKEEPING_COORDINATE', 'UNCLASSIFIED_FIFTH_CATEGORY']
+
+------------------------------------------------------------------------------
+C2  R1  THE TAPE  (P2)
+------------------------------------------------------------------------------
+  R1a constant per-lane tape, FULL horizon: tick-0-state form vs pure-X-schedule form
+      bit-identical on every pinned wire = True; build digests identical = True; locks 150 (control 164)
+  R1b chunk-phase tape: oracle and schedule forms compile to the same rows = True
+  R1c arbitrary stream written mid-run BY NOTHING vs one X gate per boundary (704 boundaries):
+      bit-identical = True; formation identical = True
+  FINDING: a tape -- a proven RE-LABELING -- raises the Cycle-918 dynamical branch pair count from the pinned 3 (M_A) to 12, while the determinism-relevant Cycle-911 branch class stays 0.  The 918 quantity is relative to its DECLARED coordinate list and is not a measure of indeterminism.
+  capacity: 5039 free state bits per lane vs 180224 boundaries -- an arbitrary tape does NOT fit tick-0 state (True); it fits the SCHEDULE, and R1c builds that route
+  VERDICT: RE-LABELING
+
+------------------------------------------------------------------------------
+C3  R2  THE CHOICE POINT  (P3)
+------------------------------------------------------------------------------
+  constructible against the pinned compiler: NO -- P3 empty in the admitted grammar
+    selection_register_written_from_STATE        -> the register is filled from a declared state wire -- P1, i.e
+    selection_register_written_from_A_TAPE       -> the register is filled from a declared non-state stream -- P
+    selection_register_written_from_AN_INDEX     -> the register is filled from a compile-time constant -- P4, i
+  the A3-shaped sentence (pinned, Cycle 913): A weight there is exactly the A3-shaped sentence (a weight on the available possibilities at a site).
+  VERDICT: THE SOLE GENUINE RELAXATION, PRICED AT EXACTLY THE A3-SHAPED SENTENCE
+
+------------------------------------------------------------------------------
+C4  R3  THE INDEXICALS  (P4)
+------------------------------------------------------------------------------
+  coordinate                           derivation             verdict                          failed
+  lane_bit_position_via_a_shift        bookkeeping_slot       STRUCTURALLY DEAD                ast_lane_locality,census_layout_independence,duplicate_lane_run_consistency,runtime_lane_locality
+  lane_bit_literal_block               bookkeeping_slot       STRUCTURALLY DEAD                census_layout_independence,duplicate_lane_law_consistency,duplicate_lane_run_consistency,law_is_layout_invariant_per_world
+  lane_bit_parity                      bookkeeping_slot       STRUCTURALLY DEAD                census_layout_independence,law_is_layout_invariant_per_world
+  duplicate_lane_slot                  bookkeeping_slot       STRUCTURALLY DEAD                duplicate_lane_law_consistency,duplicate_lane_run_consistency
+  frozen_world_mask                    bookkeeping_slot       STRUCTURALLY DEAD                census_layout_independence,duplicate_lane_law_consistency,duplicate_lane_run_consistency,law_is_layout_invariant_per_world
+  station_index                        supplied_world_data    ABSORBED (not a relaxation)      -
+  chunk_phase                          supplied_world_data    ABSORBED (not a relaxation)      -
+  monitor_phase_orbit_label            supplied_world_data    ABSORBED (not a relaxation)      -
+  world_census_index                   supplied_world_data    ABSORBED (not a relaxation)      -
+  orbit_index_global_clock             supplied_world_data    ABSORBED (not a relaxation)      -
+  wire_index                           supplied_world_data    ABSORBED (not a relaxation)      -
+  DEAD: ['lane_bit_position_via_a_shift', 'lane_bit_literal_block', 'lane_bit_parity', 'duplicate_lane_slot', 'frozen_world_mask']
+  ABSORBED: ['station_index', 'chunk_phase', 'monitor_phase_orbit_label', 'world_census_index', 'orbit_index_global_clock', 'wire_index']
+  SURVIVING GENUINE INDEXICAL: none
+
+------------------------------------------------------------------------------
+C5  R4  THE CONTROL  (P1)
+------------------------------------------------------------------------------
+    control_lock_points                                  164
+    control_dynamical_candidate_pairs                    39
+    control_dynamical_branch_pairs                       0
+    M_A_lock_points                                      134
+    M_A_candidate_pairs                                  27
+    M_A_dynamical_branch_pairs                           3
+    M_A_branch_pairs                                     [[253, 407], [520, 630], [533, 643]]
+    literal_911_branch_pairs_control                     0
+    literal_911_branch_pairs_M_A                         0
+    census_pairs_sharing_tick0_state                     5168
+    census_pairs_sharing_tick0_state_AND_schedule        0
+
+------------------------------------------------------------------------------
+C6  THE CLASSIFICATION THEOREM
+------------------------------------------------------------------------------
+    R1_P2_the_tape             RE-LABELING
+    R2_P3_the_choice_point     THE SOLE GENUINE RELAXATION, PRICED AT EXACTLY THE A3-SHAPED SENTENCE
+    R3_P4_the_indexical        STRUCTURALLY DEAD per bookkeeping-slot coordinate; ABSORBED per supplied-data coordinate; NO SURVIVING GENUINE INDEXICAL
+    R4_P1_the_control          THE BANKED RE-TYPING (the function's argument, not a relaxation of its form)
+  sole genuine relaxation: R2 (P3)
+  exhaustive relative to:
+    - the syntactic categories the PINNED compiler admits: the 3 statement templates read off the pinned compile_fast AST, and the expression grammar of their leaves.  A different compiler is outside the argument.
+    - the swept coordinate list: lane_bit_position_via_a_shift, lane_bit_literal_block, lane_bit_parity, duplicate_lane_slot, frozen_world_mask, station_index, chunk_phase, monitor_phase_orbit_label, world_census_index, orbit_index_global_clock, wire_index.  A coordinate nobody named is not covered; the checker is specified to hunt for one.
+    - the declared ansatz: station-anchored splices into the composed scan, both lane layouts, at the landed 16,384-orbit horizon for the flagship results and at declared sub-horizon windows (96 orbits for the coordinate sweep, 64 for the arbitrary-tape equivalence, 128 for the pinned-scan cross-check) elsewhere.
+    - the census: 748 worlds with zero pairs sharing token positions AND tick-0 state.  Two absorptions (the census index; the comparator's schedule proxy) are contingent on that fact and are flagged where they occur.
+
+------------------------------------------------------------------------------
+G_FALSIFIERS                PASS  (19 teeth)
+    [x] planted_fifth_provenance_category_caught__free_name_oracle
+    [x] planted_fifth_provenance_category_caught__oracle_call
+    [x] planted_fifth_provenance_category_caught__conditional_expression
+    [x] planted_fifth_provenance_category_caught__attribute_lookup
+    [x] planted_fifth_provenance_category_caught__comparison
+    [x] planted_fifth_provenance_category_caught__non_literal_address
+    [x] planted_fifth_provenance_category_caught__cross_lane_shift
+    [x] planted_fifth_provenance_category_caught__boolean_shortcircuit
+    [x] planted_surviving_indexical_caught_by_the_layout_certification
+    [x] planted_duplicate_lane_law_caught_by_the_duplicate_lane_test
+    [x] planted_break_in_the_tape_equivalence_detected
+    [x] tampered_pin_detected
+    [x] corrupted_selection_table_breaks_the_c913_gate
+    [x] corrupted_918_control_facts_break_their_gates
+    [x] planted_synthetic_branch_pair_detected
+    [x] control_cannot_leak_a_relaxation_verdict
+    [x] the_pinned_substrate_admits_exactly_three_statement_templates
+    [x] a_shift_is_classified_as_a_lane_index_read_not_as_state
+    [x] deterministic_double_run_identical
+H_DOUBLE_BUILD              PASS
+I_RUNTIME                   PASS  (369.31s / 900s)
+
+==============================================================================
+VERDICT: LAW-RELAXATION SPACE CLASSIFIED: R2 = THE A3 SENTENCE IS THE SOLE GENUINE RELAXATION
+HEADLINE: the pinned substrate's law is a pure function of (schedule, tick-0 state) at kernel level: all 34166 compiled statements consult only declared state reads (P1) and compile-time integer literals (P4), with zero free names, zero calls and zero conditionals.  The four-class relaxation space is classified: R1 (a declared non-state tape) is a RE-LABELING -- even an arbitrary per-boundary stream written mid-run by nothing is reproduced bit for bit by one X gate per boundary with a compile-time constant mask; R3 (an indexical) splits into 6 coordinates already inside the pair and 5 bookkeeping-slot coordinates that each fail a certification with an exhibited witness, with none surviving; R4 is the banked Cycle-911 re-typing.  R2 (a law-internal choice point) is the SOLE GENUINE RELAXATION and is not constructible against this compiler at all -- its minimal specification is exactly the A3-shaped sentence, byte-matched to the Cycle-913 receipt and to the axiom memo's own Open Gates list.  The successor substrate's design space is one sentence wide.
+receipt: outputs/law_relaxation_cycle925_receipt_2026_07_28.json

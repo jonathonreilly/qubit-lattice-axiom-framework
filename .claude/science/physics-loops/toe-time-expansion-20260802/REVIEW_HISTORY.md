@@ -1334,3 +1334,33 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Local disposition: **pass** (bounded_theorem; audit pending).
 - Successor launched into the freed slot: Cycle 930 (the
   never-firing third pair + RC-3, blockT7).
+
+## Cycle 929 arity variable (blockM10, PR #5997) — 2026-08-05
+
+- Supervisor review: the source-branch digest authority on the 926
+  vendoring (a tampered local copy cannot certify itself — new
+  hardening of the vendoring pattern, keep it); the four-parent
+  zero-deviation gate (926 fully recomputed, never imported); the
+  identity argument as the verdict's spine (same-Hamiltonian
+  stars); both discrimination plants firing; the checker's two
+  degeneracy findings ADOPTED on the claim surface (f<=d collapse;
+  the star-grid n=d+1 scope note).
+- Verdicts: the arity variable is RAW DEGREE; the second variable
+  is ANCHOR MULTIPLICITY (size was its proxy — the 921->927->929
+  correction chain completes); A4 re-explained (multiplicity +
+  pair exhaustion; the parent inference refuted, the datum
+  vindicated); 926's ceiling law and conjunction SURVIVE both
+  directions on two grids; the two-gate anatomy confirmed sharply;
+  E1 de-singletoned; the structural lemma ({m,1^(f-1)} only; the
+  A6 cap removed); the additivity identity published
+  diagnostic-grade at 8e-14, unexplained.
+- Follow-up executed: the 927 multiplicity-one scope
+  qualification (blockM9 branch, pin refreshed, #5994 updates).
+- Checker: SUPPORTED WITH FINDINGS, no refutation, 15/15 teeth;
+  91/91 partitions from memo bytes; the 86-geometry conjunction
+  grid independent.
+- Cluster-cap (10th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 931 (the
+  additivity-identity derivation attempt, blockM11 — the lane's
+  best mechanism handle).

@@ -975,13 +975,31 @@ def main():
             "statistic on the pooled population, so it is not separating on "
             "equality -- it is riding a width statistic that needs no equality "
             "at all.")
-    if best == "tail_window_P_exact":
+    if best and best != "equal_width":
         findings.append(
-            "The best rival discriminator on the pooled population is "
-            "tail_window_P_exact (F1 %.4f), which is the primary's own R3 "
-            "component -- confirming the primary's reading that the binding "
-            "constraint is the TAIL, not the width."
-            % pooled_scores[best]["f1"])
+            "RANKING THE PRIMARY DID NOT REPORT: its named statistic is not the "
+            "best simple discriminator on this population.  '%s' scores F1 "
+            "%.4f against equal_width's %.4f.  equal_width has high recall "
+            "(%.4f -- most reading stretches really do carry an equal-width "
+            "entry-gap pair) but low precision (%.4f: %d stretches carry one "
+            "and do NOT read P).  This strengthens the primary's 'RC-3 does "
+            "not close' verdict rather than weakening it, but the ranking "
+            "belongs on the record."
+            % (best, pooled_scores[best]["f1"], eq.get("f1", 0),
+               eq.get("recall", 0), eq.get("precision", 0), eq.get("fp", 0)))
+    tail = pooled_scores.get("tail_window_P_exact", {})
+    if tail and tail.get("f1", 1) < 0.5:
+        findings.append(
+            "QUALIFICATION ON THE PRIMARY'S 'BINDING COMPONENT'.  The primary "
+            "calls R3 (the terminal 2P+1 ticks failing to be P-exact) the "
+            "binding component.  As a REFUSAL DECOMPOSITION that survives this "
+            "check untouched.  It is NOT the claim that tail-exactness "
+            "PREDICTS a reading: measured as a predictor over this "
+            "%d-stretch population, tail_window_P_exact scores F1 %.4f with "
+            "precision %.4f.  Both statements are true and they are different; "
+            "the primary's wording can be read as the stronger one, and only "
+            "the weaker one is supported."
+            % (len(pooled), tail["f1"], tail["precision"]))
     f_ok = len(pooled) > 0 and best is not None
     results["F_RC3_DEGENERACY"] = gate("F_RC3_DEGENERACY", f_ok, {
         "attack": "score five rival stretch-configuration discriminators plus a "

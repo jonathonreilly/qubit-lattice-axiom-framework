@@ -208,7 +208,10 @@ THE HASH-PIN GUARD CLASS discovered (140 files; 2 scripts repaired; 134
 audit-ledger rows correctly LEFT for the audit lane per the 07-02
 precedent); registry note updated per section 6's mandate; 5 red
 runners are PRE-EXISTING (stale needles from an EARLIER Tier-A axiom
-edit — OPEN-4, audit lane). OWNER ITEM PENDING (OPEN-6): a one-line
-section-6 reading ruling on the distribution's domain (the S3 contest
-turns on it); recommended wording: the distribution is over the site's
-full one-site possibility domain, availability = its support.
+edit — OPEN-4, audit lane). OPEN-6 DISSOLVED BY COMPOSITION (owner, 2026-08-05): section-6
+entries carry no interpretive weight by their own preamble, and no
+ruling is needed — Qubit defines "the possibilities" of a site, so the
+distribution's domain is forced (the available-only reading is
+circular since availability = the support). Argument posted on PR
+#6013 for the S3 adjudication and the audit lane. NO OWNER ITEMS
+PENDING.

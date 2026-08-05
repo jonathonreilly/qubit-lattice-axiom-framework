@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: frontier_cycle943_prerecord_swap_2026_07_28.py
+receipt: outputs/prerecord_swap_cycle943_receipt_2026_07_28.json
+PASS A_PINS
+PASS B_RESTRICTION_GATE
+PASS Q0_THE_940_FAMILY_DELTA
+PASS Q1_THE_VALUE_SPACE_SYMMETRY_FAMILY
+PASS Q2_THE_SYMMETRIC_ENCODING
+PASS Q3_AXIOM_POSEDNESS_AND_THE_CLASS_QUESTION
+PASS F_PARAMETRIC_FIREWALL
+PASS G_FALSIFIERS
+PASS H_DOUBLE_RUN
+PASS I_RUNTIME
+restriction gates: 67/67
+teeth fired: 12/12
+940 family: ['relabelling'] -- ZERO value-space maps tested there
+law-commuting menu swap exists: False
+divergence support (all atoms): [1, 6, 124, 125, 202, 236, 255, 256]
+divergence names: ['BANK0.U_TO_V', 'BANK0.V_TO_U', 'BANK1.U_TO_V', 'BANK1.V_TO_U', 'BANK1.cell0.orientation', 'BANK1.cell1.orientation', 'LEFT_ENDPOINT', 'RIGHT_ENDPOINT']
+wires in the machine: 5815; other-lane contamination: False
+  atom 300/715 MENU  choice@300 lock@1811/1811 best_theta=flip_endpoints_plus_swap_BOTH_bank_UV survives_to=306 breaks_on=['BANK1.cell0.orientation']
+  atom 700/475 MENU  choice@700 lock@1806/1806 best_theta=flip_endpoints_plus_swap_BOTH_bank_UV survives_to=761 breaks_on=['BANK1.cell0.orientation']
+  atom 700/540 TIMING choice@700 lock@1076/719 best_theta=flip_endpoints_only survives_to=702 breaks_on=['BANK0.U_TO_V', 'BANK0.V_TO_U']
+  atom 702/254 TIMING choice@702 lock@1439/743 best_theta=flip_endpoints_only survives_to=705 breaks_on=['BANK0.U_TO_V', 'BANK0.V_TO_U']
+  atom 702/450 MENU  choice@702 lock@1808/1808 best_theta=flip_endpoints_plus_swap_BOTH_bank_UV survives_to=763 breaks_on=['BANK1.cell0.orientation']
+  atom 702/715 MENU  choice@702 lock@1811/1811 best_theta=flip_endpoints_plus_swap_bank1_UV survives_to=706 breaks_on=['BANK0.U_TO_V', 'BANK0.V_TO_U', 'BANK1.cell1.orientation']
+  atom 1100/558 TIMING choice@1100 lock@1425/1135 best_theta=flip_endpoints_only survives_to=1102 breaks_on=['BANK0.U_TO_V', 'BANK0.V_TO_U']
+  atom 1100/715 MENU  choice@1100 lock@1811/1811 best_theta=flip_endpoints_plus_swap_BOTH_bank_UV survives_to=1113 breaks_on=['BANK1.cell0.orientation']
+A2 escaped by the two-nonzero-word encoding: True
+symmetric-encoding leaf digests byte-identical: True
+axioms distinguish the two items: False
+940's negative is model-contingent: True
+science digest: 5a9a59dee63015db618b86fbba8c7af7c08c453e5c48712297e08db2bdc4eea9
+elapsed: 250.578s / 900s
+ALL CERTIFICATES PASS: True
+===== end runner cache =====

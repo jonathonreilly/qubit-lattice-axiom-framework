@@ -413,15 +413,30 @@ window2b: REOPENED 2026-08-04 ~22:00 EDT on owner correction (the stop
     the branch matrix; verdict BORN-CAPABLE / STERILE / DESTRUCTIVE per
     candidate; the first branch pair in the framework's history is the
     hunted object) — running
-  c5-m5: M5 (Cycle 919, THE DEGREE-5 MEASUREMENT — the 917 bracket's
-    interior: K_{1,5} + a degree-5 tree at {0.05, 0.075, 0.10}; the
-    threshold located one notch tighter; the R_ind-ceiling law tested at
-    degree 5) — running
-  c5-m6: M6 (Cycle 920, THE DEPOSITION RE-AUDIT — the 914 pattern applied
-    to the never-checked comparator that supplied the lineage's 0.20
-    floor; independent reimplementation from the note's equations; the
-    floor's robustness (grid/convention/parameter); the lineage verdict)
-    — running
+  c5-m5: blockM5 SHIPPED as PR #5986 — Cycle 919 THE THRESHOLD IS
+    DEGREE 5: all twelve degree-5 cells YES incl. the frozen 0.10 field
+    (star / two tree readings / cube-minus-a-face; n 6-16, loops 0-4 —
+    degree isolated from every named confound); (4,5] = {5} on integers,
+    LOCATED not bracketed; ceiling law confirmed (loopy H4 drops 5->3
+    above the low field while still certifying); margin honesty: the
+    boundary decided by ~8e-4 bits; checker: 0.075 NOT load-bearing
+    (threshold decided at frozen 0.10 — strengthens), grade split,
+    cross-degree controls exclude size and loops
+  c5-m6: blockM6 SHIPPED as PR #5985 — Cycle 920 THE DEPOSITION
+    RE-AUDIT: measurement REPRODUCED exactly (22/22, three
+    implementations) — and the 0.20 floor is a GRID ARTIFACT (true
+    crossing theta=0.1405 bisected to 1e-14; the namesake quantity
+    CANCELS out of its own criterion — fill = N/12 identically; 11 of 12
+    gated cells structurally zero; mass moves the true crossing +32%
+    while the grid floor never moves); NOT convention (baselines coincide
+    at 3e-16) — 916's B2 premise CORRECTED to a preparation difference
+    (follow-up edit executed); grid mislabel OUTCOME-BEARING at source;
+    the 0.20 citation dead from both sides
+  c5-m7: M7 (Cycle 921, THE LOOP-COST MECHANISM — why loops tax max
+    R_ind above the low field (measured 917, confirmed 919, unexplained):
+    >= 4 candidate mechanisms with discriminating predictions;
+    fixed-degree loop creation/deletion families; loop count/length/
+    position axes; checker attacks the surviving mechanism) — running
 backlog: CLOSED by Cycle 895 (PR #5957) — all three grading-consuming
   scripts priced (316 BROKEN_OFF_UNIT; 325 structurally T_UNIFORM with one
   sensitive control; 876-checker forced-(1,2,0))

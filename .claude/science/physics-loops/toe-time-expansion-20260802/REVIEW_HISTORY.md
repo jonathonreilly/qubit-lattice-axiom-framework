@@ -1000,3 +1000,51 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
    open).
 7. The retention map's remaining derivation gaps (consult the
    toe-close blockA branches).
+
+## Cycle 920 deposition re-audit (blockM6, PR #5985) — 2026-08-04
+
+- Supervisor review: the vendored-recovery discipline (all recovered
+  artifacts digest-verified against the 916 record; commands
+  disclosed); zero engine imports (primary from the note's equations;
+  the checker a genuinely THIRD construction, nnz entrywise); the
+  bisected true crossing (0.140516818611) vs the swept-grid floor;
+  the cancellation identity (fill = N/12 — the namesake quantity
+  divides out of its own criterion); the one-event support census.
+- Verdicts: Q1 REPRODUCED exactly (22/22; the historical measurement
+  is correct as published). Q2 the floor is a GRID ARTIFACT (x1.42
+  overshoot; nothing in (0.1, 0.2) ever examined; mass moves the
+  true crossing +32% while the grid floor never moves). Q3 the 0.20
+  citation dead from both sides (916's category error + the source
+  grid artifact); the grid mislabel confirmed OUTCOME-BEARING.
+- The 916 B2 premise corrected (preparation, not baseline-kind) —
+  follow-up edit on the blockM3 branch, receipt pin refreshed, the
+  T4 post-ship-edit pattern.
+- Cluster-cap (5th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 919 degree five (blockM5, PR #5986) — 2026-08-04
+
+- Supervisor review: the design-inheritance gates (21/21 constants
+  quote-identical to the pinned 917 receipt; 917 reproduced
+  value-for-value, 156 rows at deviation exactly 0, before any new
+  number); the four-geometry isolation of degree from n/depth/loops;
+  the both-extremes tree family; the under-converged-propagator
+  guard firing.
+- Verdict: degree 5 certifies at the frozen 0.10 field on all four
+  geometries — on integer degrees the 917 bracket's interior is
+  exhausted: THE THRESHOLD IS LOCATED AT DEGREE 5. Ceiling law
+  confirmed at degree 5; loop cost reproduced (H4 5->3 above the
+  low field, still certifying).
+- Checker (13/13, 11/11): three findings ADOPTED — the 0.075
+  extension is not load-bearing (the primary's "discriminating
+  cell" rationale was WRONG; the threshold is decided at the frozen
+  0.10 field; strengthens); the grade split (threshold frozen-grade,
+  ceiling table diagnostic-grade); the cross-degree controls
+  (H3-vs-G3a, H4-vs-G4: neither size nor loops carries the split).
+- Margin honesty carried on the claim surface: the boundary is
+  decided by 0.00078/0.00083 bits; ~2e-3-bit gate shift moves it;
+  gate-robustness sweep named.
+- Cluster-cap (6th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched from the block's own opens: Cycle 921 (the
+  loop-cost mechanism, blockM7).

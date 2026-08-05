@@ -30,8 +30,8 @@ NOTE = REVIEW / "POST_CYCLE132_MINIMUM_AXIOM_AND_COMPILER_CAMPAIGN_CYCLE133_NOTE
 C126_NOTE = REVIEW / "POST_CYCLE124_MINIMUM_AXIOM_AND_COMPILER_DELTA_CYCLE126_NOTE_2026-07-15.md"
 
 FOUNDATIONS = {
-    ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
-    ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md": "814691ce9cc87652feaee7883237ba494314cbbfafccdb0f169d1a5fc2a9a1be",
+    ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md": "638b2b2c134cd04a61addb46caeb86516ffd976f8432001dab78fa8cbebf15e8",
+    ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md": "026bb1b49bb577687c386c713010ec64e42d945315b2f4ce24c65b6b5d053495",
     ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
     ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
@@ -106,7 +106,7 @@ def foundation_contract() -> None:
     check(
         "A Admissibility still supplies one fixed covariant local-rule slot",
         "there is one fixed nearest-neighbor admissibility rule" in axioms
-        and "probability distribution over the possibilities is\ndetermined by, and varies with, the nearest-neighbor conditions"
+        and "probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions"
         in axioms,
     )
 

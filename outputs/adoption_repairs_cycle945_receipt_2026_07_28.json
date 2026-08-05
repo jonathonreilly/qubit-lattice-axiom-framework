@@ -1,0 +1,904 @@
+{
+ "block": "adoption-repair-cycle945",
+ "campaign": "toe-time-expansion-20260802",
+ "cycles": [
+  945
+ ],
+ "claim_type": "repair_sweep",
+ "authority": "none. This block edits no axiom text and sets no audit verdict. It repairs runner needles and adds dated scope annotations to landed notes.",
+ "audit": "none",
+ "date": "2026-08-05",
+ "worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-rep1",
+ "branch": "axioms/admissibility-likelihood-repairs-20260805",
+ "THE_TWO_WORDING_STAGES": {
+  "why_two": "The owner-approved sentence changed twice on 2026-08-05. This block executed a full repair against stage 1, then retargeted every repair to stage 2 after an independent review refined the wording. Both stages are preserved as separate commits so the repair provenance is auditable.",
+  "stage_0_pre_revision": "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.",
+  "stage_1_likelihood": {
+   "commit": "9e9a740d5e",
+   "sentence": "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions.",
+   "availability": "the likelihood's support (zero likelihood is unavailability)",
+   "repairs_made_against_it": [
+    "8f084ac354",
+    "cd8199bfdd",
+    "973a68b6ad"
+   ]
+  },
+  "stage_2_distribution_FINAL": {
+   "commit": "b3f76d6f58",
+   "sentence": "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
+   "memo_wrap_bytes": "For each site, the probability distribution over the possibilities is\\ndetermined by, and varies with, the nearest-neighbor conditions.",
+   "availability": "the distribution's support -- on finite menus, exactly the possibilities of nonzero probability (probability zero is unavailable)",
+   "reviewer_finding_adopted": "per-point likelihood under-specifies an atomless law on the continuous one-site domain M_2(C); the governing object is the probability distribution",
+   "retarget_commit": "2e97c113c4",
+   "all_verification_in_this_receipt_is_against_stage_2": true
+  }
+ },
+ "COMPANION_RUNNER": {
+  "runner": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
+  "before_repair": {
+   "exit": 1,
+   "PASS": 66,
+   "FAIL": 2,
+   "failing_checks": [
+    "Admissibility local-constraint clause is present",
+    "Open gates outside axioms include context selection and formation rules"
+   ],
+   "note": "exactly the 2 byte-guards cycle 944 predicted"
+  },
+  "needles_repaired": [
+   {
+    "check": "Admissibility local-constraint clause is present",
+    "operator": "contains() -- whitespace-normalizing",
+    "old": "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.",
+    "new": "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions."
+   },
+   {
+    "check": "Open gates outside axioms include context selection and formation rules",
+    "operator": "raw 'in note' with pinned wrap -- deliberately NOT relaxed to contains(), to avoid weakening",
+    "old": "formation rules (which\\n  admissible possibility a new record locks, at which site, with what weight,\\n  or at what rate)",
+    "new": "formation rules (the distribution's form and\\n  values, at which site, and at what rate)"
+   }
+  ],
+  "check_added": {
+   "name": "Policy records 2026-08-05 Admissibility likelihood revision",
+   "rationale": "the file already carries a 'Policy records <date>' check for every prior policy addition; this tracks the section-6 adoption itself",
+   "beyond_minimal_scope": true
+  },
+  "after_repair": {
+   "exit": 0,
+   "PASS": 69,
+   "FAIL": 0
+  },
+  "arithmetic": "66 passing + 2 repaired + 1 added = 69"
+ },
+ "QUOTE_SCRIPT_SPLIT": {
+  "corpus_enumeration": "rg -Ul --no-heading 'available\\s+possibilities\\s+are\\s+determined\\s+by' scripts/  -- multiline, so line-wrapped and implicit-concatenated forms are caught",
+  "scripts_quoting_the_old_sentence": 21,
+  "independently_corroborated": "an independent sweep agent, using a different method (multiline rg with \\s+ between every word, --hidden, --no-ignore), returned the same 21 scripts",
+  "split": {
+   "a_FRESHNESS_NEEDLE": {
+    "count": 20,
+    "definition": "asserts that the memo (and sometimes the note) contains specific axiom text, to detect drift",
+    "operational_test": "every one of the 20 exited 1 against the revised memo and exits 0 after retargeting -- the failure itself proves the quote was a live needle",
+    "all_repaired": true
+   },
+   "b_LOAD_BEARING_SCIENCE": {
+    "count": 0,
+    "finding": "NO script consumed the availability semantics as a proof step. Every scripts/ quote was a needle. The load-bearing consumption of availability lives in the docs notes, which is what the six-breaks analysis below covers, not in runner code."
+   },
+   "c_NEITHER_reported_as_OPEN": {
+    "count": 1,
+    "script": "scripts/render_controlled_vocabulary.py",
+    "role": "documentation GENERATOR -- its string literal is the source text rendered into docs/repo/CONTROLLED_VOCABULARY.md",
+    "status": "exits 0 both before and after the revision, because it is self-consistent with the doc it generates; both are now stale with respect to the memo",
+    "why_not_repaired": "this is neither a needle nor a proof step; the controlled vocabulary is an authoritative restatement surface and was outside the (a)/(b) scope handed to this block. Reported as OPEN."
+   }
+  }
+ },
+ "SIX_HARD_BREAKS": [
+  {
+   "id": "S1_GRADED_CONSTRAINT_COEXISTENCE",
+   "note": "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md",
+   "944_claim": "SUPP fuses grading and availability, so the coexistence theorem loses its subject; the named zero-available-total boundary becomes vacuous",
+   "verdict": "REPAIRED by scope annotation; 944's claim is narrowed",
+   "finding": "the note's `w` is the graded-constraint v2 grading on the full projection lattice -- a named conditional premise -- NOT the Admissibility distribution. The two objects are not fused by the revision. The zero-available-total boundary stays non-vacuous exactly because `w` may vanish where the Admissibility distribution does not.",
+   "what_is_now_open": "whether `w` and the Admissibility distribution must share a support. If they were identified the boundary WOULD go vacuous; nothing performs that identification.",
+   "verification": {
+    "runner": "scripts/graded_constraint_interface_consistency_2026_07_04.py",
+    "exit": 0,
+    "PASS": 7,
+    "FAIL": 0
+   }
+  },
+  {
+   "id": "S2_FINITE_COVARIANT_RULE_SPACE",
+   "notes": [
+    "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+    "docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md"
+   ],
+   "944_claim": "two landed classification theorems count rules as set-valued maps; under SUPP the rule space is continuous and both counts cease to be counts of anything; k/64 rests on the finite space",
+   "verdict": "REPAIRED by scope annotation",
+   "finding": "the four-subset space and the 3^24/3^24-1 tables are spaces of SUPPORT maps. They remain correct counts of support maps, and k/64 stands as a theorem about the support-level baseline. What is lost is only the claim that this baseline exhausts the axiom's rule content: the distribution refines the support map, so an informative fraction computed on the distribution need not be quantized as k/64. That computation is open and was not performed.",
+   "verification": {
+    "runners": [
+     {
+      "runner": "scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py",
+      "exit": 0,
+      "PASS": 70,
+      "FAIL": 0
+     },
+     {
+      "runner": "scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py",
+      "exit": 0,
+      "PASS": 61,
+      "FAIL": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "S3_TYPE_LEVEL_INDEPENDENCE_WITNESS",
+   "note": "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md",
+   "944_claim": "the witness is explicitly typed on a set-valued static relation; SUPP performs exactly that retyping, so the witness must be re-derived",
+   "verdict": "CONTESTED -- claims NOT edited",
+   "finding": "this is stronger than a retyping. The witness needs ONE availability rule to carry both a branch-complete and a singleton-support expansion. With exactly one recorded neighbor the witness rule gives the menu {0,1}, so post-revision both values carry nonzero probability. The singleton-support expansion locks the other value in no continuation, giving it probability zero, hence unavailability -- contradicting the menu {0,1} the same rule asserts. On the locking reading the singleton-support expansion is inadmissible and the independence conclusion FAILS rather than re-scoping.",
+   "why_contested_not_false": "the locking reading is stated in reading note (2), which the memo declares interpretive and non-governing, and is pointed to by section 6 carrying site normalization via 'probability distribution' plus Record's 'locks exactly one'. Under a reading on which the distribution is over something other than the locked possibility, the witness survives. Two readings disagree about a landed conclusion, so this is an owner/audit question.",
+   "stage_2_effect": "the refinement from likelihood to probability distribution NARROWS the escape, because normalization is now explicit in the governing term",
+   "action_taken": "dated CONTESTED bracket added at the section head; no claim, count or conclusion altered; frontmatter claim_scope deliberately untouched",
+   "verification": {
+    "runner": "scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py",
+    "exit": 0,
+    "PASS": 75,
+    "FAIL": 0
+   }
+  },
+  {
+   "id": "S4_SET_VS_WEIGHT_EQUIVARIANCE",
+   "note": "docs/EMPTY_STATE_BOOTSTRAP_ALL_OPEN_AVAILABILITY_ORBIT_DICHOTOMY_DEGREE_NINE_CHIRALITY_WALL_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+   "944_claim": "the theorems derive g.A0 = A0 (set invariance); a distribution requires mu o g = mu, strictly stronger, so the chirality wall and orbit dichotomy must be re-derived",
+   "verdict": "REPAIRED by scope annotation; 944 is right that it is strictly stronger, and right that it under-determines, but no theorem is false",
+   "finding": "every theorem is stated on A0 as a SET and each remains true: the support of a proper-cubic-invariant distribution is a proper-cubic-invariant set. The revision changes two things, both toward strength and neither used by the note: covariance now constrains the distribution itself (mu o g = mu), and consequently the degree-nine wall is a wall on SET-content chirality only -- a cubic-invariant support can carry a non-invariant distribution, so a first-step law can be chiral in its weights while A0 is achiral. The weighted dichotomy, wall, and orientation-bit cost are open.",
+   "verification": {
+    "runner": "scripts/empty_state_bootstrap_orbit_dichotomy_degree_nine_wall_2026_07_04.py",
+    "exit": 0,
+    "PASS": 13,
+    "FAIL": 0
+   }
+  },
+  {
+   "id": "S5_ZERO_WEIGHT_MENU_MEMBERS",
+   "note": "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+   "944_claim": "a landed Born-form theorem admits zero outcomes as menu members; SUPP makes 'zero-weight member of a menu' a contradiction in terms",
+   "verdict": "DOWNGRADED -- NOT A BREAK. 944's call is over-broad.",
+   "finding": "the menus here are EFFECT PARTITIONS on the explicitly supplied finite carrier E(H_Lambda); a zero outcome is the zero effect carrying w(0)=0 inside a conditional grading surface the note's own N3 scan already records as not derived from the minimal axioms. It is not a probability-zero member of an Admissibility availability menu. The revision retypes the axiom's availability; it does not govern effect-partition conventions in a conditional Born-form bridge.",
+   "action_taken": "a clarifying dated bracket was still added, solely to block the post-adoption misreading that 'zero-weight menu member' has become a contradiction in terms",
+   "verification": {
+    "runner": "scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py",
+    "exit": 0,
+    "PASS": 48,
+    "FAIL": 0
+   }
+  },
+  {
+   "id": "S6_THE_911_913_925_ARENA_TRIO",
+   "note": "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "verdict": "DEFERRED -- cannot be repaired on this branch",
+   "blocking_fact": "the note does not exist on this branch, is not an ancestor of HEAD, and is NOT on main or origin/main. It was added by commit b4a87e7b8d (2026-08-04) which lives only on the campaign block branches physics-loop/toe-time-blockQ10..Q16-20260802. It is unlanded science.",
+   "assessment_offered_not_applied": "on reading, 944's S6 worry looks over-stated in the same way S5's did. The arena's 164 counterfactual pairs are 'available but unrealized'. Under the revision, available means NONZERO probability, so a counterfactual pair is a positive-probability possibility that was not the one realized -- which is exactly what counterfactual means once the law supplies odds and the realized state supplies the pick. A probability-zero assignment would delete them; availability=support does not. What DOES need saying there is that O2 (which possibility) and O3 (with what weight) are no longer independent open questions in the way the note holds them apart, since the axiom now supplies the distribution.",
+   "handoff": "the S6 annotation must ride with whichever PR lands the cycle-913 note, or be applied immediately after it lands.",
+   "verification": "none possible on this branch"
+  }
+ ],
+ "SCOPE_NOTES_STEP_4": {
+  "sweep_performed": "grep for 'never chooses|does not choose|dynamics never|substrate never|nothing chooses', then a targeted second sweep for 'not a probability measure|supplies no probability|does not supply probability|transition probabilities or weights'",
+  "carpet_bombing_avoided": true,
+  "O3_terminal_family": "NOT PRESENT IN TREE. The SELECTION_IS_TRANSPORT_O3_TERMINAL note is unlanded (see S6). No landed note was found asserting that selection or chance cannot exist.",
+  "not_annotated_and_why": [
+   {
+    "family": "'Record supplies no probability/weighting/normalization/dynamics'",
+    "files_seen": [
+     "RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md",
+     "POST_RECORD_* firewalls",
+     "OBSERVABLE_PRINCIPLE_P1_* notes"
+    ],
+    "reason": "still TRUE. Record is untouched by the revision."
+   },
+   {
+    "family": "notes quoting the memo's old dynamics fence 'supply transition probabilities or weights' verbatim",
+    "count_seen": 8,
+    "reason": "stale bytes, but the fence's MEANING is preserved -- the memo now says 'transition-probability or weight values' and the section-6 ruling states the fence means values or selections. Annotating all eight would be carpet-bombing; the section-6 ruling already governs."
+   },
+   {
+    "family": "'does not choose, recommend, or prewrite an audit verdict' review-loop boilerplate",
+    "reason": "about audit authority, not about substrate selection. Unrelated."
+   }
+  ],
+  "annotated": [
+   {
+    "file": "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+    "stale_sentence": "It supplies nearest-neighbor dependence, not a probability measure.",
+    "why_annotated": "post-revision this reads FALSE, not merely stale: the axiom now supplies exactly a nearest-neighbor-determined probability distribution",
+    "verification": {
+     "exit": 0,
+     "PASS": 70,
+     "FAIL": 0
+    }
+   },
+   {
+    "file": "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+    "stale_sentence": "Admissibility supplies no probability or menu-selection rule",
+    "why_annotated": "the probability half no longer holds. The menu-selection half and the route's ATTEMPTED verdict are unaffected, and the bracket says so explicitly.",
+    "verification": {
+     "exit": 0,
+     "PASS": 60,
+     "FAIL": 0
+    }
+   }
+  ]
+ },
+ "PINS": {
+  "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md": {
+   "sha256_before": "d22a7ec84c3ffc8a57f46d9d2353d47837aad19d3ea6a041836f9e5334d314d9",
+   "sha256_after": "9f9fd888ed52599817b259c7cfcc0383bf1d89fa99c2604eb813bb139f713d52",
+   "changed": true
+  },
+  "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md": {
+   "sha256_before": "8af33477099cabc2e260d278bb7fb9db2d384fd0533e36a236af112c6f55b0d3",
+   "sha256_after": "0eadc9384f401d982d350ec3f307633690c98e1f33338dc328698fcbbf1f83a3",
+   "changed": true
+  },
+  "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md": {
+   "sha256_before": "6cc8d8c3be876f4c1b53b3da7fa418a5b75449b8e987507a8de9cfa8a562d24f",
+   "sha256_after": "bfbf0550c028dce98e17320a1839e0f44dcd1d8c072290697d7e15e5db37468b",
+   "changed": true
+  },
+  "docs/EMPTY_STATE_BOOTSTRAP_ALL_OPEN_AVAILABILITY_ORBIT_DICHOTOMY_DEGREE_NINE_CHIRALITY_WALL_BOUNDED_THEOREM_NOTE_2026-07-04.md": {
+   "sha256_before": "0b4d8af5a284c4d28b8630d05b776697336464a8a045ad64c514b26140970e62",
+   "sha256_after": "527689a7056e0eca8a97beb265eda64aa8bdb67a68ab622a34ff5ad8f2d055b3",
+   "changed": true
+  },
+  "docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md": {
+   "sha256_before": "d623639fce2577a012f065b0c61c5cabfb817b2ce263c3340a9d779f18e7a3c5",
+   "sha256_after": "9d8842c2a7cb5b06482a5ccc0edad0f61fd70dce05798f571a713936360df9e8",
+   "changed": true
+  },
+  "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md": {
+   "sha256_before": "da3a6209b88567461b9711fbbc8b243fa5001b5546fdb5588b0f1b99cdeee583",
+   "sha256_after": "1f2561149f82352b62bfbdbecbf96c295a6a3a45fbf6d089c79f9319f1793fbc",
+   "changed": true
+  },
+  "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md": {
+   "sha256_before": "3ac4bd6220689c590609dc589b584ab1496aaa2450cc2de8e56d3413ec18ac98",
+   "sha256_after": "6e203cd6cd3a81b9011303d5e0c18d88b2b9d66502fb19ace4807ae38e45dff7",
+   "changed": true
+  },
+  "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+   "sha256_before": "ca1f2c4f95186a2055e676091702094a755b02e243389f59e0cb6e8b5a345b01",
+   "sha256_after": "638b2b2c134cd04a61addb46caeb86516ffd976f8432001dab78fa8cbebf15e8",
+   "changed": true
+  },
+  "docs/PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md": {
+   "sha256_before": "56c6fa6a2b2703733b5d2ef325bb9cea973b20e8978eea697e76edaefb88fb34",
+   "sha256_after": "4eb4e378761006b530bca4cc72bb5864bd8d7385fa6a1beed7aeab518562e3c8",
+   "changed": true
+  },
+  "docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md": {
+   "sha256_before": "ce37ba34b093896ec16eb096c9802ae49439bd9d2d80858524e73d5cd786e89d",
+   "sha256_after": "4240d986641c28013e8b900429afd795dfb34c4d2d745d3cd86fe9ae38774504",
+   "changed": true
+  },
+  "docs/STAGGERED_DIRAC_PKIN_SUBTREE_CURRENT_SURFACE_RESTATEMENT_NOTE_2026-07-03.md": {
+   "sha256_before": "8328bf7df8fc489edb17ae585b8aeba40c2c5929138598de3192b8710e344cac",
+   "sha256_after": "0ad7c5221d052e70364461eb837395d31b935a282492ea17128bdb0472af4d61",
+   "changed": true
+  },
+  "docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md": {
+   "sha256_before": "bbd7605e23654b769287b4c2f7de35411cd90ee057c3e6638a2ecc1c237d6c92",
+   "sha256_after": "c52909a90260dd7ee31b64051919024d0c56fa0d6076b034f5d853f5a26b301c",
+   "changed": true
+  },
+  "docs/audit/AXIOM_MINIMALITY_POLICY.md": {
+   "sha256_before": "426871677ab824cd8c13c30c73031fdba10864bf478c8176c0458ab8d16dd931",
+   "sha256_after": "026bb1b49bb577687c386c713010ec64e42d945315b2f4ce24c65b6b5d053495",
+   "changed": true
+  },
+  "scripts/admissibility_symbol_definability_exact_law_reference_probe_2026_07_14.py": {
+   "sha256_before": "19586c32f36a56789638e724b1f7608369db5c7d61af7eec6d1e9fff6cd9e4a5",
+   "sha256_after": "695d27f024a3debf7390af4fa40c23325ebb46e01f176cea12ed1f77a338b163",
+   "changed": true
+  },
+  "scripts/audit_companion_minimal_axioms_clean_base_exact.py": {
+   "sha256_before": "c0d08cc6206d969ede83f555e65bfd4e3b045e98bd34008f2c98af77d2382d2e",
+   "sha256_after": "340587aef0eb92d75def0d116ad51de41511c8a01f40d9d2a353f55e738da36c",
+   "changed": true
+  },
+  "scripts/color_arena_bonded_pair_admissibility_cross_site_2026_07_06.py": {
+   "sha256_before": "ecd97bb9a58b5dea484209a08c7d21fb1953d6ad7e851892478a56c84fd0b817",
+   "sha256_after": "919a87417371e2ef5578aa7b309f999778e1360e9bd3b46b2b8ce04605e378fd",
+   "changed": true
+  },
+  "scripts/exact_law_constitutional_placement_schema_probe_2026_07_14.py": {
+   "sha256_before": "f846b7fbcc3e2402b94bb2e1b1def84a4dab2a24194133ed45d4dfbf8c6008a0",
+   "sha256_after": "61846073a5ef8912496eb3c32f1d9f81476683223d5c1298772404ed3e052889",
+   "changed": true
+  },
+  "scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py": {
+   "sha256_before": "e14b91d9b6479589c18697eb9628302e329bf536a92b511d873f2f4d89ef5c13",
+   "sha256_after": "9a1d18ce9219d4724d74cbaa82c76f8a890b1feec125904529f6106c69b12886",
+   "changed": true
+  },
+  "scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py": {
+   "sha256_before": "6e16cf6c717002aa18f9e517b4281bdb6d575f958297f255eaf43f80e14d3ffe",
+   "sha256_after": "115a259d1669e4935d6f3c7308c1d847efcd50af6e7258e9d8652758e49cf610",
+   "changed": true
+  },
+  "scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py": {
+   "sha256_before": "21bb7c276bfb2524d144f2a151b9e6a70f3ce6ea1bd3adb0702c94906f320feb",
+   "sha256_after": "f18b35efed3cf97c97a38543b3198e25ebebbd1c8dfe9cfcebe8141e0bfb594c",
+   "changed": true
+  },
+  "scripts/frontier_frozen_region_saturation_finality_2026_07_03.py": {
+   "sha256_before": "dbd808b8f0047d6fd7d6340496dd1fdd525778b00f7782d595af10bafc1f1dc1",
+   "sha256_after": "9f4da56cce7b9ab5a37d65ff6044a304e2470d88f79700c2eb99006d534229bd",
+   "changed": true
+  },
+  "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py": {
+   "sha256_before": "d1cd6f366f8e0888adb05e5953ce4391c94f81e0c137295336844bf00836b92e",
+   "sha256_after": "81247f3f5714afc4ec414b1565304dd1c91bc3ad9e1352ff6c20d54fb877de2a",
+   "changed": true
+  },
+  "scripts/frontier_theta_defect_closure_admissibility_2026_07_03.py": {
+   "sha256_before": "b729ee177a8ddf08857778a82b4732d8fd9097bb3e2d45e01168920257375b73",
+   "sha256_after": "be188d35621dbc5864cc4acd316d552585855d315d01bb26de706bc86975824a",
+   "changed": true
+  },
+  "scripts/graded_constraint_interface_consistency_2026_07_04.py": {
+   "sha256_before": "551c1f5405a252ec051f749f7645c745d9ae2c48204c8447d75376ba0b251d56",
+   "sha256_after": "1db153e4670225a67b6d3deaa609c43710230376fcf3d0027ebd344dfdd23c02",
+   "changed": true
+  },
+  "scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py": {
+   "sha256_before": "7983c728a9f5402f49816ed739e4bb4a4b4a6e37377ea2192d967a0d6eb2c3f5",
+   "sha256_after": "482cb760635f14a6daa3f545f52aa03fc0ba30444182883b80154ef53484602b",
+   "changed": true
+  },
+  "scripts/matter_realization_arena_split_preservation_axis_frames_2026_07_06.py": {
+   "sha256_before": "03835ee7122bf13efbdace97a45921cb7409126171364516baacaf22895bbbe8",
+   "sha256_after": "4637efcef2897a8d2ca1aa4be5335d31d33a1eba0a0a24d41a59a865f27d27f3",
+   "changed": true
+  },
+  "scripts/matter_realization_qubit_bilinear_from_k1_2026_07_06.py": {
+   "sha256_before": "f402fc80ba5461a7dfc689c25ce6d86e3579ddec1ccb3cfaf4d965728daad7e4",
+   "sha256_after": "882ccc313f8fa0b0d33f92f82e8e3eac77ac9e3627e955e3455d4c4335314730",
+   "changed": true
+  },
+  "scripts/post_cycle124_minimum_axiom_and_compiler_delta_cycle126_2026_07_15.py": {
+   "sha256_before": "61e73ae41ef80498226883f29740b3e751568f01f04d74bbaf7f2dd3ccc2df16",
+   "sha256_after": "ef1c230436aff61da96a5cfd1f32613145f7291da73b56cb131b0d9e0758c901",
+   "changed": true
+  },
+  "scripts/post_cycle132_minimum_axiom_and_compiler_campaign_cycle133_2026_07_15.py": {
+   "sha256_before": "9add08a09538396ea9516fb25ac3688654dd1e0d931116a671ba8aa27a066cf1",
+   "sha256_after": "7143fbe56bb776fb8efc386812e754549402703a42039ad69a9489205efcce85",
+   "changed": true
+  },
+  "scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py": {
+   "sha256_before": "63bc7ea5aea0f8cde13152dfb01e72c5525c3b6c709de96e45f6f47eeac094d4",
+   "sha256_after": "1edfc97e354264efa9e3806f93fb7a6dbd0aaf73548f95e4d1e4e154f4b14980",
+   "changed": true
+  },
+  "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py": {
+   "sha256_before": "4275cb30e2a8ae7bcfe9d4d5f32b87c81dd9934eaa3bf6fbbd4537c1da83e3c1",
+   "sha256_after": "b2411ffdbc7a0e28074f08301e5889dc1ca04d06a1082bffed05de6c1d0dac8c",
+   "changed": true
+  },
+  "scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py": {
+   "sha256_before": "6011c59f12ba1062e7fa62e2091b5367e546a4796b673c48a34339ecf3dbcc7f",
+   "sha256_after": "aad25f1204b2df79e07807e85ecc25c6fe92b5b7ad5d81be142f32440ebab270",
+   "changed": true
+  },
+  "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py": {
+   "sha256_before": "91c60a02617cecaa9188bba7ba374925872974ac0383a03d9fe89cd882e9ee3a",
+   "sha256_after": "72630e48b2d63a7f3847c10a6de1194c3f10e01c9f6771ade6b99d19c139c34f",
+   "changed": true
+  }
+ },
+ "pins_count": 33,
+ "THE_HASH_PIN_DISCOVERY": {
+  "what": "A class of freshness guard this block was not briefed on and cycle 944 did not enumerate: runners and ledger rows that pin the axiom memo by sha256 CONTENT HASH rather than by quoted sentence. A text sweep cannot find these.",
+  "how_found": "post_cycle124 failed on 'A foundation hash MINIMAL_AXIOMS_2026-06-29.md' after its text needle was already repaired. Swept by grepping the repo for the pre-revision digests.",
+  "pre_revision_digests": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+   "docs/audit/AXIOM_MINIMALITY_POLICY.md": "814691ce9cc87652feaee7883237ba494314cbbfafccdb0f169d1a5fc2a9a1be"
+  },
+  "post_revision_digests": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "638b2b2c134cd04a61addb46caeb86516ffd976f8432001dab78fa8cbebf15e8",
+   "docs/audit/AXIOM_MINIMALITY_POLICY.md": "026bb1b49bb577687c386c713010ec64e42d945315b2f4ce24c65b6b5d053495"
+  },
+  "files_pinning_the_stale_memo_digest": {
+   "total": 140,
+   "audit_ledger_rows": 134,
+   "runner_scripts": 2,
+   "runner_cache_logs": 4
+  },
+  "disposition": {
+   "runner_scripts_2": "REPAIRED here (post_cycle124, post_cycle132). A content pin on the memo is the same class of object as a text needle: its job is to track the current memo.",
+   "audit_ledger_rows_134": "NOT TOUCHED -- OPEN, for the audit lane. These are the premise-hash guards cycle 944 flagged. The 2026-07-02 precedent recorded in the policy is that an axiom wording update invalidates prior direct minimal_axioms audits and the independent audit lane re-audits. Rewriting 134 note_hash fields would silently re-validate audits that were performed against different axiom text. That is an audit-lane action, not a repair-sweep action.",
+   "runner_cache_logs_4": "NOT TOUCHED. Historical records of past runs; editing them would falsify the log."
+  }
+ },
+ "THE_REGISTRY_DIVERGENCE": {
+  "file": "docs/audit/data/axiom_premise_nodes.json",
+  "state": "the machine registry's minimal_axioms note still carries the PRE-REVISION sentence verbatim ('...the available possibilities are determined by, and vary with, the nearest-neighbor conditions at each site')",
+  "structural_gap_found": "the companion runner's check 'Registry note records Admissibility and downstream-boundary firewall' PASSES anyway, because it validates the registry note against a hard-coded copy of the old sentence rather than against the memo. The guard therefore cannot detect memo/registry divergence -- which is exactly the divergence that now exists.",
+  "not_repaired_because": "the registry is itself content-pinned (its digest b73431384495... is pinned in the two campaign runners and is currently still valid). Editing the registry changes that digest and, per the same 2026-07-02 precedent, bears on prior minimal_axioms audits. Reported as OPEN rather than guessed at.",
+  "recommendation_not_applied": "either update the registry note to the distribution sentence and let the audit lane re-audit, or re-point the companion check at the memo so the guard can see divergence in future. Both are owner/audit calls."
+ },
+ "COMPLETENESS_ARGUMENT": {
+  "corpus": {
+   "tracked_files": 21050,
+   "scripts_py": 5517,
+   "docs_md": 4686,
+   "audit_data_json": 4015
+  },
+  "patterns_and_hits": [
+   {
+    "id": "P1",
+    "pattern": "rg -Ul 'available\\s+possibilities\\s+are\\s+determined\\s+by' scripts/",
+    "scope": "scripts/",
+    "hits": 21,
+    "purpose": "enumerate quote scripts",
+    "disposition": "20 repaired as needles, 1 reported OPEN (doc generator)"
+   },
+   {
+    "id": "P2",
+    "pattern": "multiline rg with \\s+ between every word, --hidden, --no-ignore, whole repo",
+    "scope": "repo",
+    "hits": 80,
+    "purpose": "independent second enumeration by a separate agent using a different method",
+    "disposition": "20 needle scripts + 1 generator = same 21 scripts as P1; plus 8 prose, 3 json, 49 science notes"
+   },
+   {
+    "id": "P3",
+    "pattern": "rg -l <pre-revision memo sha256>",
+    "scope": "repo",
+    "hits": 140,
+    "purpose": "content-hash pins that no text sweep can find",
+    "disposition": "2 scripts repaired; 134 ledger rows OPEN; 4 cache logs untouched"
+   },
+   {
+    "id": "P4",
+    "pattern": "rg -l <pre-revision policy sha256>",
+    "scope": "repo",
+    "hits": 2,
+    "purpose": "policy content pins",
+    "disposition": "both repaired (same 2 scripts)"
+   },
+   {
+    "id": "P5",
+    "pattern": "'not a probability measure|supplies no probability|does not supply probabilit|transition probabilities or weights'",
+    "scope": "docs/*.md",
+    "hits": 19,
+    "purpose": "step-4 misread sweep",
+    "disposition": "2 annotated (now-false prose); 8 historical memo quotes left; 9 Record-scoped and still true"
+   },
+   {
+    "id": "P6",
+    "pattern": "'never chooses|does not choose|dynamics never|substrate never|nothing chooses'",
+    "scope": "docs/*.md",
+    "hits": "~25",
+    "purpose": "step-4 'substrate never chooses' family",
+    "disposition": "none annotated -- all hits were audit-verdict boilerplate or bridge-specific; the O3-terminal family is unlanded and absent from this branch"
+   }
+  ],
+  "two_independent_enumerations_agree": "P1 (mine, mechanical) and P2 (separate agent, different method and tooling) both return the same 21 scripts. P2 additionally found 14 files a naive single-line grep misses (hidden .claude/ tree and mid-phrase wraps), which is why the sweep was run multiline.",
+  "known_incompleteness": [
+   "The text sweep alone would have missed the 140 content-hash pins entirely. They were found only because a repaired runner still failed. There may be other guard classes keyed on neither the sentence nor the digest; none were observed, but the sweep cannot rule them out.",
+   "S6's note is unlanded and therefore outside any sweep of this branch.",
+   "The 49 Group-D science notes were NOT individually re-derived. Cycle 944's six hard breaks were treated as the authoritative list of load-bearing consumers, and each was read and adjudicated; the remaining 43 quote the sentence as a premise without the set-algebra dependence that defines a break. This is the block's main residual risk and is stated as such."
+  ]
+ },
+ "GATE_SUITE": {
+  "all_runs_are_stage_2": true,
+  "targets_from_the_brief": {
+   "companion_runner": {
+    "expected": "clean",
+    "exit": 0,
+    "PASS": 69,
+    "FAIL": 0,
+    "met": true
+   },
+   "AC_i_runner": {
+    "script": "scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py",
+    "expected_PASS": 25,
+    "exit": 0,
+    "PASS": 25,
+    "FAIL": 0,
+    "met": true
+   },
+   "angle_native_no_go": {
+    "script": "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py",
+    "expected_PASS": 128,
+    "exit": 0,
+    "PASS": 128,
+    "FAIL": 0,
+    "met": true,
+    "note": "required the gitignored 75MB docs/audit/data/audit_ledger.json; symlinked read-only from the primary checkout per the standing pattern. The symlink is gitignored and produces no tree change."
+   }
+  },
+  "runners_touched_in_step_2": {
+   "total": 21,
+   "pass": 16,
+   "fail": 5,
+   "every_failure_is_pre_existing": true,
+   "results": [
+    {
+     "runner": "admissibility_symbol_definability_exact_law_reference_probe_2026_07_14.py",
+     "exit": 0,
+     "PASS": 70,
+     "FAIL": 0
+    },
+    {
+     "runner": "audit_companion_minimal_axioms_clean_base_exact.py",
+     "exit": 0,
+     "PASS": 69,
+     "FAIL": 0
+    },
+    {
+     "runner": "color_arena_bonded_pair_admissibility_cross_site_2026_07_06.py",
+     "exit": 0,
+     "PASS": 33,
+     "FAIL": 0
+    },
+    {
+     "runner": "exact_law_constitutional_placement_schema_probe_2026_07_14.py",
+     "exit": 0,
+     "PASS": 57,
+     "FAIL": 0
+    },
+    {
+     "runner": "extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py",
+     "exit": 0,
+     "PASS": 61,
+     "FAIL": 0
+    },
+    {
+     "runner": "frontier_admissibility_record_continuation_refinement_2026_07_13.py",
+     "exit": 0,
+     "PASS": 75,
+     "FAIL": 0
+    },
+    {
+     "runner": "frontier_frozen_region_saturation_finality_2026_07_03.py",
+     "exit": 0,
+     "PASS": 33,
+     "FAIL": 0
+    },
+    {
+     "runner": "frontier_record_local_finite_atom_availability_2026_06_17.py",
+     "exit": 0,
+     "PASS": 58,
+     "FAIL": 0
+    },
+    {
+     "runner": "frontier_theta_defect_closure_admissibility_2026_07_03.py",
+     "exit": 0,
+     "PASS": 12,
+     "FAIL": 0
+    },
+    {
+     "runner": "graded_constraint_interface_consistency_2026_07_04.py",
+     "exit": 0,
+     "PASS": 7,
+     "FAIL": 0
+    },
+    {
+     "runner": "informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py",
+     "exit": 0,
+     "PASS": 70,
+     "FAIL": 0
+    },
+    {
+     "runner": "protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py",
+     "exit": 0,
+     "PASS": 30,
+     "FAIL": 0
+    },
+    {
+     "runner": "render_controlled_vocabulary.py",
+     "exit": 0,
+     "note": "unchanged; reported OPEN"
+    },
+    {
+     "runner": "tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py",
+     "exit": 0,
+     "PASS": 23,
+     "FAIL": 0
+    },
+    {
+     "runner": "frontier_dynamics_sort_records_accumulate_2026_07_03.py",
+     "exit": 1,
+     "PASS": 38,
+     "FAIL": 1,
+     "pre_existing": true,
+     "cause": "stale Qualification sentence QU2 from the earlier Tier-A admission-authority commits (4782c62a51/eb45a84b2e), not from this revision"
+    },
+    {
+     "runner": "matter_realization_arena_split_preservation_axis_frames_2026_07_06.py",
+     "exit": 1,
+     "PASS": 7,
+     "FAIL": 1,
+     "pre_existing": true,
+     "cause": "same stale Qualification sentence in SOURCE_QUOTES"
+    },
+    {
+     "runner": "matter_realization_qubit_bilinear_from_k1_2026_07_06.py",
+     "exit": 1,
+     "PASS": 0,
+     "FAIL": 1,
+     "pre_existing": true,
+     "cause": "same stale Qualification sentence; runner raises on first missing quote"
+    },
+    {
+     "runner": "record_comparability_import_discipline_support_fork_arrow_2026_07_07.py",
+     "exit": 1,
+     "PASS": 80,
+     "FAIL": 2,
+     "pre_existing": true,
+     "cause": "two stale Qualification/law-dependence needles"
+    },
+    {
+     "runner": "staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py",
+     "exit": 1,
+     "PASS": 36,
+     "FAIL": 3,
+     "pre_existing": true,
+     "cause": "G1.1/G1.2 ledger-state (claim_scope null, status unaudited) + G2.5 stale downstream-content clause from the same earlier commit"
+    },
+    {
+     "runner": "post_cycle124_minimum_axiom_and_compiler_delta_cycle126_2026_07_15.py",
+     "exit": 0,
+     "PASS": 38,
+     "FAIL": 0,
+     "before": {
+      "exit": 1,
+      "PASS": 35,
+      "FAIL": 3,
+      "failing": [
+       "A foundation hash MINIMAL_AXIOMS_2026-06-29.md",
+       "A foundation hash AXIOM_MINIMALITY_POLICY.md",
+       "A Admissibility still carries one fixed covariant nearest-neighbour rule"
+      ]
+     },
+     "runtime_s": 284,
+     "note": "its needle is read through normalized() which lowercases AND collapses whitespace, so the needle must be flat and lowercase -- a pinned-wrap form fails here. Constitutional delta moved UNRESOLVED -> ZERO_NOW and CLOSED moved FAIL -> BOUNDED_READ_SELECT_WRITE_SUCCESSOR_CHAIN."
+    },
+    {
+     "runner": "post_cycle132_minimum_axiom_and_compiler_campaign_cycle133_2026_07_15.py",
+     "exit": 0,
+     "PASS": 37,
+     "FAIL": 0,
+     "before": {
+      "exit": 1,
+      "failing": [
+       "same three guards as post_cycle124"
+      ]
+     },
+     "runtime_s": 216
+    }
+   ],
+   "pre_existing_proof": "the five residual failures were reproduced with identical PASS/FAIL counts by extracting the tree at 9e9a740d5e^ (pre-revision memo AND pre-revision scripts) and running the originals there. The repairs restored them exactly to their pre-revision state; nothing regressed. They are OUT OF SCOPE for this block and are reported, not fixed."
+  },
+  "notes_annotated_runner_reverification": [
+   {
+    "runner": "empty_state_bootstrap_orbit_dichotomy_degree_nine_wall_2026_07_04.py",
+    "exit": 0,
+    "PASS": 13,
+    "FAIL": 0
+   },
+   {
+    "runner": "born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py",
+    "exit": 0,
+    "PASS": 48,
+    "FAIL": 0
+   },
+   {
+    "runner": "born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py",
+    "exit": 0,
+    "PASS": 60,
+    "FAIL": 0
+   }
+  ]
+ },
+ "COMMITS": [
+  {
+   "sha": "8f084ac354",
+   "subject": "cycle945: companion runner needles tracked to the revised Admissibility memo",
+   "group": "companion"
+  },
+  {
+   "sha": "cd8199bfdd",
+   "subject": "cycle945: dated scope brackets on the six SUPP-affected landed results",
+   "group": "six annotations"
+  },
+  {
+   "sha": "973a68b6ad",
+   "subject": "cycle945: retarget stale axiom needles to the revised memo (stage 1, likelihood wording)",
+   "group": "needles stage 1"
+  },
+  {
+   "sha": "3d6d97b949",
+   "subject": "Merge commit 'b3f76d6f58' into axioms/admissibility-likelihood-repairs-20260805",
+   "group": "merge of owner refinement"
+  },
+  {
+   "sha": "2e97c113c4",
+   "subject": "cycle945: retarget every repair to the final probability-distribution wording (stage 2)",
+   "group": "needles+notes stage 2 + scope notes"
+  }
+ ],
+ "NO_SCIENCE_DELETED": {
+  "test": "git diff 9e9a740d5e --numstat -- docs/  excluding the owner-approved memo and policy",
+  "insertions": 180,
+  "deletions": 0,
+  "meaning": "across the entire cycle, not one line of landed docs was removed or rewritten. Every note change is a dated bracketed addition.",
+  "script_changes": "line-balanced in-place needle text replacement only; no check deleted, loosened, or-ed, wrapped in try/except, or made trivial. One needle was strengthened (frontier_admissibility A2 now pins the full sentence at the memo's wrap)."
+ },
+ "MU_PARAMETRIC_FIREWALL": {
+  "declaration": "no probability VALUE appears as law content anywhere in this block's edits",
+  "checked": "the annotations and needles reference the distribution structurally (support, invariance mu o g = mu, nonzero probability) and never assign or assert a numeric probability",
+  "float_literals_introduced": 0,
+  "pass": true
+ },
+ "OPEN": [
+  {
+   "id": "OPEN-1",
+   "title": "134 audit-ledger rows pin the pre-revision memo digest",
+   "detail": "docs/audit/data/ledger/**/*.json carry note_hash = fc4d60cc... for minimal_axioms. The owner-approved revision changed the memo, so every one of these premise-hash guards is now stale. Per the 2026-07-02 precedent recorded in AXIOM_MINIMALITY_POLICY, an axiom wording update invalidates prior direct minimal_axioms audits and the independent audit lane re-audits.",
+   "why_not_acted_on": "rewriting note_hash fields would silently re-validate audits performed against different axiom text. That is an audit-lane decision, and audit work is currently stopped.",
+   "owner": "audit lane"
+  },
+  {
+   "id": "OPEN-2",
+   "title": "The machine registry still states the old axiom",
+   "detail": "docs/audit/data/axiom_premise_nodes.json's minimal_axioms note carries the pre-revision sentence verbatim. Worse, the companion runner's registry check passes anyway because it compares the registry against a hard-coded copy of the old sentence rather than against the memo, so the guard is structurally blind to memo/registry divergence.",
+   "why_not_acted_on": "the registry is itself content-pinned and bears on prior audits; and the fix has two defensible forms (update the registry, or re-point the check at the memo). Not guessed at.",
+   "owner": "owner / audit lane"
+  },
+  {
+   "id": "OPEN-3",
+   "title": "The controlled vocabulary still states the old axiom",
+   "detail": "docs/repo/CONTROLLED_VOCABULARY.md and its generator scripts/render_controlled_vocabulary.py both carry the pre-revision sentence. They are mutually consistent, so the generator exits 0 and nothing flags it. This is an authoritative restatement surface that now contradicts the memo.",
+   "why_not_acted_on": "neither a freshness needle nor a proof step, so outside the (a)/(b) split this block was scoped to; and a controlled vocabulary is an axiom-adjacent surface.",
+   "owner": "owner"
+  },
+  {
+   "id": "OPEN-4",
+   "title": "Five runners carry stale needles from an EARLIER memo edit",
+   "detail": "frontier_dynamics_sort_records_accumulate, matter_realization_arena_split_preservation_axis_frames, matter_realization_qubit_bilinear_from_k1, record_comparability_import_discipline_support_fork_arrow, staggered_dirac_pkin_subtree_current_surface_restatement_check all fail on the Qualification sentence and the law-dependence sentence, which were changed by the Tier-A admission-authority commits (4782c62a51/eb45a84b2e), not by 2026-08-05. They were already red before this campaign.",
+   "why_not_acted_on": "out of scope; and it is a real finding that the repo carried unrepaired needles from a prior axiom edit for weeks. Each is a one-line honest retarget.",
+   "owner": "campaign supervisor"
+  },
+  {
+   "id": "OPEN-5",
+   "title": "S6 cannot be repaired on this branch",
+   "detail": "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md is unlanded -- added by b4a87e7b8d on the campaign block branches only, absent from main and from this base. The S6 annotation must ride with whichever PR lands it.",
+   "owner": "campaign supervisor"
+  },
+  {
+   "id": "OPEN-6",
+   "title": "S3 is a live contradiction between two readings of a landed conclusion",
+   "detail": "Under the locking reading of the distribution, the same-rule independence witness is foreclosed, not re-scoped -- a landed conditional theorem's conclusion fails. Under a non-locking reading it survives. This needs an owner ruling on what the distribution is a distribution OVER, which the governing sentence does not say and the reading notes are declared non-governing about.",
+   "owner": "owner"
+  },
+  {
+   "id": "OPEN-7",
+   "title": "43 science notes quoting the sentence were not individually re-derived",
+   "detail": "The repo-wide sweep found 49 science notes consuming the sentence. Cycle 944's six hard breaks were treated as the authoritative list of load-bearing consumers and each was adjudicated. The other 43 quote the sentence as a premise without the set-algebra dependence that defines a break, but this was not proved note by note. Main residual risk of the block.",
+   "owner": "campaign supervisor"
+  },
+  {
+   "id": "OPEN-8",
+   "title": "Guard classes keyed on neither sentence nor digest",
+   "detail": "The text sweep alone would have missed all 140 content-hash pins; they surfaced only because an already-repaired runner still failed. No third guard class was observed, but the sweep cannot rule one out.",
+   "owner": "campaign supervisor"
+  }
+ ],
+ "RUNTIMES": {
+  "companion_runner_s": 0.1,
+  "AC_i_runner_s": 0.2,
+  "angle_native_no_go_s": 0.8,
+  "frontier_theta_defect_closure_s": 5.8,
+  "protocol_admissibility_3d_s": 2.6,
+  "post_cycle124_s": 284,
+  "post_cycle132_s": 216,
+  "all_other_touched_runners_s": "<1 each",
+  "note": "wall-clock only; no timing value enters any digest or any check"
+ },
+ "science_digest": "f27f4238b034cf155840a53d8dac0fb79b7797aeca0cb1ad3e63e298b231290d",
+ "science_digest_inputs": {
+  "final_sentence": "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
+  "availability": "the distribution's support; on finite menus exactly nonzero probability",
+  "quote_scripts": 21,
+  "needles_a": 20,
+  "science_b": 0,
+  "generator_open": 1,
+  "six_breaks": {
+   "S1": "REPAIRED_SCOPE",
+   "S2": "REPAIRED_SCOPE",
+   "S3": "CONTESTED",
+   "S4": "REPAIRED_SCOPE",
+   "S5": "DOWNGRADED_NOT_A_BREAK",
+   "S6": "DEFERRED_UNLANDED"
+  },
+  "scope_notes_added": 2,
+  "hash_pins_stale": {
+   "total": 140,
+   "ledger": 134,
+   "scripts": 2,
+   "cache_logs": 4
+  },
+  "gates": {
+   "companion": [
+    69,
+    0
+   ],
+   "AC_i": [
+    25,
+    0
+   ],
+   "angle_native": [
+    128,
+    0
+   ],
+   "pc124": [
+    38,
+    0
+   ],
+   "pc132": [
+    37,
+    0
+   ]
+  },
+  "residual_failures_all_pre_existing": 5,
+  "docs_insertions": 180,
+  "docs_deletions": 0,
+  "pins": {
+   "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md": "9f9fd888ed52599817b259c7cfcc0383bf1d89fa99c2604eb813bb139f713d52",
+   "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md": "0eadc9384f401d982d350ec3f307633690c98e1f33338dc328698fcbbf1f83a3",
+   "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md": "bfbf0550c028dce98e17320a1839e0f44dcd1d8c072290697d7e15e5db37468b",
+   "docs/EMPTY_STATE_BOOTSTRAP_ALL_OPEN_AVAILABILITY_ORBIT_DICHOTOMY_DEGREE_NINE_CHIRALITY_WALL_BOUNDED_THEOREM_NOTE_2026-07-04.md": "527689a7056e0eca8a97beb265eda64aa8bdb67a68ab622a34ff5ad8f2d055b3",
+   "docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md": "9d8842c2a7cb5b06482a5ccc0edad0f61fd70dce05798f571a713936360df9e8",
+   "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md": "1f2561149f82352b62bfbdbecbf96c295a6a3a45fbf6d089c79f9319f1793fbc",
+   "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md": "6e203cd6cd3a81b9011303d5e0c18d88b2b9d66502fb19ace4807ae38e45dff7",
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "638b2b2c134cd04a61addb46caeb86516ffd976f8432001dab78fa8cbebf15e8",
+   "docs/PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md": "4eb4e378761006b530bca4cc72bb5864bd8d7385fa6a1beed7aeab518562e3c8",
+   "docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md": "4240d986641c28013e8b900429afd795dfb34c4d2d745d3cd86fe9ae38774504",
+   "docs/STAGGERED_DIRAC_PKIN_SUBTREE_CURRENT_SURFACE_RESTATEMENT_NOTE_2026-07-03.md": "0ad7c5221d052e70364461eb837395d31b935a282492ea17128bdb0472af4d61",
+   "docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md": "c52909a90260dd7ee31b64051919024d0c56fa0d6076b034f5d853f5a26b301c",
+   "docs/audit/AXIOM_MINIMALITY_POLICY.md": "026bb1b49bb577687c386c713010ec64e42d945315b2f4ce24c65b6b5d053495",
+   "scripts/admissibility_symbol_definability_exact_law_reference_probe_2026_07_14.py": "695d27f024a3debf7390af4fa40c23325ebb46e01f176cea12ed1f77a338b163",
+   "scripts/audit_companion_minimal_axioms_clean_base_exact.py": "340587aef0eb92d75def0d116ad51de41511c8a01f40d9d2a353f55e738da36c",
+   "scripts/color_arena_bonded_pair_admissibility_cross_site_2026_07_06.py": "919a87417371e2ef5578aa7b309f999778e1360e9bd3b46b2b8ce04605e378fd",
+   "scripts/exact_law_constitutional_placement_schema_probe_2026_07_14.py": "61846073a5ef8912496eb3c32f1d9f81476683223d5c1298772404ed3e052889",
+   "scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py": "9a1d18ce9219d4724d74cbaa82c76f8a890b1feec125904529f6106c69b12886",
+   "scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py": "115a259d1669e4935d6f3c7308c1d847efcd50af6e7258e9d8652758e49cf610",
+   "scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py": "f18b35efed3cf97c97a38543b3198e25ebebbd1c8dfe9cfcebe8141e0bfb594c",
+   "scripts/frontier_frozen_region_saturation_finality_2026_07_03.py": "9f4da56cce7b9ab5a37d65ff6044a304e2470d88f79700c2eb99006d534229bd",
+   "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py": "81247f3f5714afc4ec414b1565304dd1c91bc3ad9e1352ff6c20d54fb877de2a",
+   "scripts/frontier_theta_defect_closure_admissibility_2026_07_03.py": "be188d35621dbc5864cc4acd316d552585855d315d01bb26de706bc86975824a",
+   "scripts/graded_constraint_interface_consistency_2026_07_04.py": "1db153e4670225a67b6d3deaa609c43710230376fcf3d0027ebd344dfdd23c02",
+   "scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py": "482cb760635f14a6daa3f545f52aa03fc0ba30444182883b80154ef53484602b",
+   "scripts/matter_realization_arena_split_preservation_axis_frames_2026_07_06.py": "4637efcef2897a8d2ca1aa4be5335d31d33a1eba0a0a24d41a59a865f27d27f3",
+   "scripts/matter_realization_qubit_bilinear_from_k1_2026_07_06.py": "882ccc313f8fa0b0d33f92f82e8e3eac77ac9e3627e955e3455d4c4335314730",
+   "scripts/post_cycle124_minimum_axiom_and_compiler_delta_cycle126_2026_07_15.py": "ef1c230436aff61da96a5cfd1f32613145f7291da73b56cb131b0d9e0758c901",
+   "scripts/post_cycle132_minimum_axiom_and_compiler_campaign_cycle133_2026_07_15.py": "7143fbe56bb776fb8efc386812e754549402703a42039ad69a9489205efcce85",
+   "scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py": "1edfc97e354264efa9e3806f93fb7a6dbd0aaf73548f95e4d1e4e154f4b14980",
+   "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py": "b2411ffdbc7a0e28074f08301e5889dc1ca04d06a1082bffed05de6c1d0dac8c",
+   "scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py": "aad25f1204b2df79e07807e85ecc25c6fe92b5b7ad5d81be142f32440ebab270",
+   "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py": "72630e48b2d63a7f3847c10a6de1194c3f10e01c9f6771ade6b99d19c139c34f"
+  }
+ },
+ "timing_free": true,
+ "determinism": "all checks are exact string/hash comparisons over committed bytes; no sampling, no randomness, no timing value in any digest"
+}

@@ -491,16 +491,35 @@ for label, mt in tau_variants.items():
 spread = max(tau_scan.values()) / max(min(tau_scan.values()), 1e-30)
 check("K7-comparator", "TAU-MASS SENSITIVITY SCAN of the comparator", True,
       "; ".join(f"{k} -> {v:.3e}" for k, v in tau_scan.items()))
+
+
+def dev_at(mt):
+    rr = [mp.sqrt(mp_masses["m_e"]), mp.sqrt(mp_masses["m_mu"]), mp.sqrt(mp.mpf(mt))]
+    Qv = sum(v * v for v in rr) / (sum(rr) ** 2)
+    return (3 * Qv - 1) / 2 - mp.mpf("0.5")
+
+
+# the scan is NON-MONOTONIC, so the signed deviation has a zero crossing: find it exactly.
+m_tau_zero = mp.findroot(dev_at, mp.mpf("1776.96"))
+check("K7-comparator", "the signed deviation r_PDG - 1/2 CHANGES SIGN inside the plausible tau-mass window, so "
+      "there is a tau mass at which the charged-lepton lane sits EXACTLY on the distinguished cell",
+      dev_at("1776.93") * dev_at("1777.00") < 0 and abs(dev_at(m_tau_zero)) < mp.mpf("1e-40"),
+      f"exact crossing at m_tau = {mp.nstr(m_tau_zero, 12)} MeV, i.e. {float(m_tau_zero - mp.mpf('1776.93')):.4f} MeV "
+      f"above the reduction runner's value")
 finding("CAVEAT",
-        "The headline '~3e-6' is not a stable number: it is strongly sensitive to the tau-mass convention. With "
-        f"m_tau = 1776.93 MeV (the value the reduction note's own runner uses) the deviation is {tau_scan['1776.93 (reduction runner)']:.3e}; "
-        f"with m_tau = 1776.86 MeV it is {tau_scan['1776.86 (PDG central, other tables)']:.3e}, a factor of "
-        f"{tau_scan['1776.86 (PDG central, other tables)']/tau_scan['1776.93 (reduction runner)']:.2f}. The note's own "
-        "published GATE (|r_PDG - 1/2| < 1e-5) is robust across all scanned conventions, but the hostile-guard's "
-        "quoted '~3e-6' is a single-convention figure. Since the Q2 epsilon tables are logarithmic in eps, this "
-        "moves the g-branch step count by at most 2 steps and changes no verdict -- but any downstream text that "
-        "leans on the specific value 3e-6 should quote the convention with it.",
-        "; ".join(f"{k} -> {v:.4e}" for k, v in tau_scan.items()))
+        "The headline '~3e-6' is not a stable number: it is strongly sensitive to the tau-mass convention, and the "
+        "signed deviation CHANGES SIGN inside the plausible window. With m_tau = 1776.93 MeV (the value the "
+        f"reduction note's own runner uses) the deviation is {tau_scan['1776.93 (reduction runner)']:.3e}; with "
+        f"m_tau = 1776.86 MeV it is {tau_scan['1776.86 (PDG central, other tables)']:.3e} (a factor of "
+        f"{tau_scan['1776.86 (PDG central, other tables)']/tau_scan['1776.93 (reduction runner)']:.2f}); and at "
+        f"m_tau = {mp.nstr(m_tau_zero, 9)} MeV it is EXACTLY ZERO. So across a ~0.15 MeV tau window the deviation "
+        "sweeps the whole range from 0 to about 9e-6. The reduction note's published GATE (|r_PDG - 1/2| < 1e-5) is "
+        "robust across every scanned convention, and because the Q2 epsilon tables are logarithmic in eps this moves "
+        "the g-branch step count by at most 2 steps and changes NO verdict. But the hostile-guard's quoted '~3e-6' "
+        "is a single-convention figure, and no downstream text should treat that specific value as the thing to be "
+        "explained: the explanandum is the GATE, not the digit.",
+        "; ".join(f"{k} -> {v:.4e}" for k, v in tau_scan.items())
+        + f"; exact zero crossing at m_tau = {mp.nstr(m_tau_zero, 12)} MeV")
 check("K7-comparator", "the tau-mass sensitivity changes NO Q2 verdict: the g-branch step count moves by at most 2 "
       "steps across the whole scan (the tables are logarithmic in eps)",
       max(abs(n_enter(1.0, v)[1] - 17) for v in tau_scan.values()) <= 2,
@@ -576,8 +595,10 @@ verdict = ("The primary's Q1 reconciliation and Q2 headline verdict SURVIVE inde
            "cell (NEUTRAL) from the balanced-alternation reading, which strengthens rather than weakens the "
            "primary's 'the arrow is the undischarged element'; (2) the Q1 statement is locally determinate but "
            "globally underdeterminate, so the r=1 row of the no-go must be sourced from the explicit map forms, not "
-           "from the reconciliation sentence; (3) the '~3e-6' figure is tau-mass-convention dependent (3.30e-6 vs "
-           "8.02e-6), though the published <1e-5 gate and every Q2 verdict are robust to it.")
+           "from the reconciliation sentence; (3) the '~3e-6' figure is tau-mass-convention dependent, sweeping 0 to "
+           f"about 9e-6 across a ~0.15 MeV tau window (it is EXACTLY zero at m_tau = {mp.nstr(m_tau_zero, 9)} MeV), "
+           "though the published <1e-5 gate and every Q2 verdict are robust to it. The explanandum is the GATE, not "
+           "the digit.")
 
 payload = {
     "schema": "cycle923-exactness-residual-independent-check-v1",

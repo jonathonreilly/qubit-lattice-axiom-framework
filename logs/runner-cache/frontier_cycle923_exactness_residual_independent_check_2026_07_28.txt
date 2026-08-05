@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28.py
-runner_sha256: 05b6fa02c36011b35d0697e7f2ed160b56749d4cbf8fa788bc35977f274d9b06
+runner_sha256: 363079f5be4cbee9a4bac0b28c2e95f553ae929eae3530563df53e18922255ee
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 
 --------------------------------------------------------------------------------------------
 K0 -- pins; the primary receipt is loaded as a CLAIM SOURCE only
 --------------------------------------------------------------------------------------------
-[PASS] [K0] pin: outputs/exactness_residual_cycle923_receipt_2026_07_28.json | sha256=a0ca7dfc976ffc11..
+[PASS] [K0] pin: outputs/exactness_residual_cycle923_receipt_2026_07_28.json | sha256=5bdeca39e99eeac2..
 [PASS] [K0] pin: scripts/frontier_cycle923_exactness_residual_2026_07_28.py | sha256=9c03a600e3963bfb..
-[PASS] [K0] pin: logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt | sha256=8d744fc272d8dab8..
+[PASS] [K0] pin: logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt | sha256=da37104fb632c908..
 [PASS] [K0] pin: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md | sha256=d95cdf68285242a8..
 [PASS] [K0] pin: docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md | sha256=5a72dfb482e8898e..
 [PASS] [K0] pin: docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md | sha256=32f4a0e27172c86f..
@@ -117,8 +117,9 @@ K7 -- independent firewall re-check and independent comparator arithmetic
 [PASS] [K7-comparator] comparator |r_PDG - 1/2| reproduces at 60 dps (the primary's float64 value carries an absolute error of order 1e-16 from the 0.5 cancellation, so ~10 significant digits of the deviation are trustworthy) | mpmath=3.304878249737395e-6 primary=3.304878249732468e-06 diff=4.927e-18
 [PASS] [K7-comparator] comparator is below the reduction note's published 1e-5 bound
 [PASS] [K7-comparator] TAU-MASS SENSITIVITY SCAN of the comparator | 1776.93 (reduction runner) -> 3.305e-06; 1776.86 (PDG central, other tables) -> 9.233e-06; 1776.99 -> 1.776e-06; 1777.00 -> 2.623e-06
-  >>> CAVEAT: The headline '~3e-6' is not a stable number: it is strongly sensitive to the tau-mass convention. With m_tau = 1776.93 MeV (the value the reduction note's own runner uses) the deviation is 3.305e-06; with m_tau = 1776.86 MeV it is 9.233e-06, a factor of 2.79. The note's own published GATE (|r_PDG - 1/2| < 1e-5) is robust across all scanned conventions, but the hostile-guard's quoted '~3e-6' is a single-convention figure. Since the Q2 epsilon tables are logarithmic in eps, this moves the g-branch step count by at most 2 steps and changes no verdict -- but any downstream text that leans on the specific value 3e-6 should quote the convention with it.
-      witness: 1776.93 (reduction runner) -> 3.3049e-06; 1776.86 (PDG central, other tables) -> 9.2328e-06; 1776.99 -> 1.7760e-06; 1777.00 -> 2.6228e-06
+[PASS] [K7-comparator] the signed deviation r_PDG - 1/2 CHANGES SIGN inside the plausible tau-mass window, so there is a tau mass at which the charged-lepton lane sits EXACTLY on the distinguished cell | exact crossing at m_tau = 1776.96902708 MeV, i.e. 0.0390 MeV above the reduction runner's value
+  >>> CAVEAT: The headline '~3e-6' is not a stable number: it is strongly sensitive to the tau-mass convention, and the signed deviation CHANGES SIGN inside the plausible window. With m_tau = 1776.93 MeV (the value the reduction note's own runner uses) the deviation is 3.305e-06; with m_tau = 1776.86 MeV it is 9.233e-06 (a factor of 2.79); and at m_tau = 1776.96903 MeV it is EXACTLY ZERO. So across a ~0.15 MeV tau window the deviation sweeps the whole range from 0 to about 9e-6. The reduction note's published GATE (|r_PDG - 1/2| < 1e-5) is robust across every scanned convention, and because the Q2 epsilon tables are logarithmic in eps this moves the g-branch step count by at most 2 steps and changes NO verdict. But the hostile-guard's quoted '~3e-6' is a single-convention figure, and no downstream text should treat that specific value as the thing to be explained: the explanandum is the GATE, not the digit.
+      witness: 1776.93 (reduction runner) -> 3.3049e-06; 1776.86 (PDG central, other tables) -> 9.2328e-06; 1776.99 -> 1.7760e-06; 1777.00 -> 2.6228e-06; exact zero crossing at m_tau = 1776.96902708 MeV
 [PASS] [K7-comparator] the tau-mass sensitivity changes NO Q2 verdict: the g-branch step count moves by at most 2 steps across the whole scan (the tables are logarithmic in eps) | step counts across the scan = [16, 17, 18]
 
 --------------------------------------------------------------------------------------------
@@ -148,20 +149,20 @@ K4-degeneracy      PASS=5     FAIL=0
 K5-nogo-attack     PASS=5     FAIL=0
 K6-determinacy     PASS=10    FAIL=0
 K7-firewall        PASS=8     FAIL=0
-K7-comparator      PASS=4     FAIL=0
+K7-comparator      PASS=5     FAIL=0
 K-teeth            PASS=12    FAIL=0
 
 ============================================================================================
-TOTAL: PASS=82 FAIL=0
+TOTAL: PASS=83 FAIL=0
 TEETH: 12/12 FIRED
 FINDINGS: 6 (0 refutations, 1 caveats, 1 degeneracies, 1 determinacy, 3 confirmations)
 ============================================================================================
 
-OVERALL VERDICT: The primary's Q1 reconciliation and Q2 headline verdict SURVIVE independent symbolic re-derivation. No refutation of a primary claim was found. Three material additions are reported: (1) a THIRD verdict cell (NEUTRAL) from the balanced-alternation reading, which strengthens rather than weakens the primary's 'the arrow is the undischarged element'; (2) the Q1 statement is locally determinate but globally underdeterminate, so the r=1 row of the no-go must be sourced from the explicit map forms, not from the reconciliation sentence; (3) the '~3e-6' figure is tau-mass-convention dependent (3.30e-6 vs 8.02e-6), though the published <1e-5 gate and every Q2 verdict are robust to it.
+OVERALL VERDICT: The primary's Q1 reconciliation and Q2 headline verdict SURVIVE independent symbolic re-derivation. No refutation of a primary claim was found. Three material additions are reported: (1) a THIRD verdict cell (NEUTRAL) from the balanced-alternation reading, which strengthens rather than weakens the primary's 'the arrow is the undischarged element'; (2) the Q1 statement is locally determinate but globally underdeterminate, so the r=1 row of the no-go must be sourced from the explicit map forms, not from the reconciliation sentence; (3) the '~3e-6' figure is tau-mass-convention dependent, sweeping 0 to about 9e-6 across a ~0.15 MeV tau window (it is EXACTLY zero at m_tau = 1776.96903 MeV), though the published <1e-5 gate and every Q2 verdict are robust to it. The explanandum is the GATE, not the digit.
 
 receipt: outputs/exactness_residual_independent_check_cycle923_receipt_2026_07_28.json
 determinism_digest_sha256: 261278b00eb43d94824a9657cd4c05c6b8c59cb080ae800437e34569da4c90c6
-runtime_sec: 0.274
+runtime_sec: 0.252
 CYCLE923_INDEPENDENT_CHECK_PASS
 
 ----- stderr -----

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py
-runner_sha256: 63bc7ea5aea0f8cde13152dfb01e72c5525c3b6c709de96e45f6f47eeac094d4
-timeout_sec: 180
+runner_sha256: 94a808330d82bb7c999b4341fbeee075067424818bfd52a25300089f11cbc61b
+input_fingerprint_sha256: 5917bab6c1c83a96ae9fc403f887603954dcc0883419fefe46026e62787778b7
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.76
+elapsed_sec: 3.53
 status: ok
 ----- stdout -----
 
@@ -48,7 +49,7 @@ Decorated-word normal form, support law, and dispersiveness dichotomy
 Source-note quote pins and claim-boundary checks
 ================================================================================================
   [PASS] both admissibility clause sentences are present verbatim in the axioms file  --  axiom clauses anchored
-  [PASS] the note quotes both axiom clauses and frames its results as conditional algebraic consequences  --  note clauses + framing present
+  [PASS] the note quotes both axiom clauses and makes support variation an extra conditional premise  --  note clauses + framing present
   [PASS] the two supplied-input fragments appear in the note and are anchored verbatim in the parent selection note  --  supplied inputs anchored in parent
   [PASS] the note is free of forbidden status/framing/nondeterminism language  --  clean
 

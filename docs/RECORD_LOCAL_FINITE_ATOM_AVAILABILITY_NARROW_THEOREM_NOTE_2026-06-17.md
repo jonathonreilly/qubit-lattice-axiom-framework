@@ -246,5 +246,5 @@ The runner verifies:
   and one whose available set varies with the neighbor conditions;
 - the presence-conditional reading: the live Record axiom's admissible-lock
   wording is pinned from the memo text;
-- production, probability, physical context selection, clock/rate, dial
+- production, Born-rule identification or values, physical context selection, clock/rate, dial
   selection, and admissibility-instance selection remain open gates.

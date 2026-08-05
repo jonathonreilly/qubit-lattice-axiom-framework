@@ -62,6 +62,10 @@ import os
 import re
 import sys
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+)
+
 # ---------------------------------------------------------------------------
 # check harness -- "CHECK NN: PASS/FAIL -- desc", TOTAL line, nonzero exit on FAIL
 # ---------------------------------------------------------------------------
@@ -178,8 +182,8 @@ def quote_guards():
     rec = ("When present, a record locks exactly one admissible local "
            "possibility. A site never carries more than one record; records "
            "are permanent.")   # CURRENT landed Record section (7950d9202c + 50f0db6187)
-    adm = ("the available possibilities are determined by, and vary with, the "
-           "nearest-neighbor conditions")
+    adm = ("the probability distribution over the possibilities is determined by, and varies "
+           "with, the nearest-neighbor conditions")
     stt = "A state is a configuration of records."
     lat = ("Physical sites are the points of the cubic lattice `Z^3`, with "
            "nearest-neighbor adjacency, standard translations, and proper cubic "
@@ -197,7 +201,7 @@ def quote_guards():
           "one-per-site (commit 7950d9202c, PR #4879) and permanence (commit "
           "50f0db6187) are authoritative",
           txt is not None and rec in txt)
-    check("quote guard: Admissibility 'determined by, and vary with, the "
+    check("quote guard: Admissibility 'determined by, and varies with, the "
           "nearest-neighbor conditions' present verbatim",
           txt is not None and adm in txt)
     check("quote guard: 'A state is a configuration of records.' present "

@@ -62,6 +62,15 @@ def check(ok, desc):
 # collapsed) so quoted sentences can be checked as LIVE substrings of the files.
 # ----------------------------------------------------------------------------
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md",
+    "docs/DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md",
+    "docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md",
+    "docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md",
+    "docs/DYNAMICS_CONTENT_SORT_ORDERING_DERIVED_ACCUMULATION_IRREDUCIBLE_BOUNDED_NOTE_2026-07-03.md",
+)
+
 DOCS_DIR = Path(__file__).resolve().parent.parent / "docs"
 NOTE_NAME = ("DYNAMICS_CONTENT_SORT_ORDERING_DERIVED_ACCUMULATION_"
              "IRREDUCIBLE_BOUNDED_NOTE_2026-07-03.md")
@@ -124,8 +133,8 @@ SENTENCES = [
     # Admissibility / Local Constraint
     ("A1", "There is one fixed nearest-neighbor admissibility rule, covariant under "
            "lattice translations and proper cubic rotations."),
-    ("A2", "For each site, the available possibilities are determined by, and vary "
-           "with, the nearest-neighbor conditions."),
+    ("A2", "For each site, the probability distribution over the possibilities is determined by, and "
+           "varies with, the nearest-neighbor conditions."),
     # Record / Fixed Reality
     ("R1", "When present, a record locks exactly one admissible local possibility."),
     ("R2", "A site never carries more than one record; records are permanent."),
@@ -135,8 +144,8 @@ SENTENCES = [
            "I is additive, with I(empty)=0."),
     # Qualification
     ("QU1", "These axioms state only their named primitive content."),
-    ("QU2", "Further physical structure requires derivation, bridge, explicit "
-            "admission, or approved primitive registration before use as a premise."),
+    ("QU2", "Further physical structure requires a retained derivation or bridge, "
+            "or explicit approved- primitive registration, before use as a premise."),
     ("QU3", "A state is a configuration of records."),
     ("QU4", "A law privileges no states."),
     ("QU5", "Its domain is a supplied condition, and at every state where the "

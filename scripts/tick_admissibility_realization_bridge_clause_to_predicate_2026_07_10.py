@@ -20,6 +20,12 @@ from typing import Callable
 import numpy as np
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md",
+)
+
+
 TOL = 1e-12
 L_DEFAULT = 6
 L_MIN = 4
@@ -534,8 +540,8 @@ def main() -> int:
         "lattice translations and proper cubic rotations."
     )
     clause2 = (
-        "For each site, the available possibilities are determined by, and vary "
-        "with, the nearest-neighbor conditions."
+        "For each site, the probability distribution over the possibilities is determined by, and "
+        "varies with, the nearest-neighbor conditions."
     )
     check(
         "source-clause-translation",
@@ -556,6 +562,12 @@ def main() -> int:
         "scope-support-phrase",
         "note contains the support phrase",
         "off-site tick support" in normalized_note,
+    )
+    check(
+        "scope-support-variation-boundary",
+        "note makes support variation an extra premise",
+        "explicit support-variation premise" in normalized_note
+        and "does not imply support variation" in normalized_note,
     )
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

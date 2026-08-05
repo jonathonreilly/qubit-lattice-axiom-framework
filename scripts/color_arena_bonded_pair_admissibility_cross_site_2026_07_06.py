@@ -11,6 +11,12 @@ import sys
 import numpy as np
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/EDGE_TWO_SITE_FRAMING_SUPPLIES_NO_NATIVE_COLOR_ROUTE_RECORD_TEXT_NARROW_NO_GO_NOTE_2026-06-08.md",
+)
+
+
 ROOT = Path(__file__).resolve().parents[1]
 AXIOM_FILE = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 JUNE8_FILE = (
@@ -337,7 +343,7 @@ def main():
     axiom_text = read_text_file(AXIOM_FILE)
     june8_text = read_text_file(JUNE8_FILE)
     admissibility_sentence = (
-        "For each site, the available possibilities are determined by, and vary with, "
+        "For each site, the probability distribution over the possibilities is determined by, and varies with, "
         "the nearest-neighbor conditions."
     )
     reopening_sentence = (

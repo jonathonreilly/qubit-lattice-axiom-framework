@@ -52,15 +52,16 @@ reproduced here.
   coin partitions and do not force. No ternary scaled-projector sufficiency or
   exact scaled outcome-count threshold is proved here.
 
-No statement derives a grading, a physical menu selector, record formation,
-probabilities, or frequencies.
+No statement derives an effect grading, a physical effect-menu selector,
+record formation, a Born-form bridge or its values, or frequencies.
 
 ## Import And Support Inventory
 
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the
   one-site `M_2(C)` possibility domain and the Record statement that a readout
   value is determined by record content. It supplies no finite-region tensor
-  carrier, effect grading, probability, eligible-menu family, or selector.
+  carrier, effect grading, eligible effect-menu family or selector, or bridge
+  identifying those conditional structures with the Admissibility distribution.
 - The finite-region carrier `H_Λ = ⊗_{x∈Λ} C^2`, its effect algebra, finite
   dimensionality, and all grading and normalization conditions below are
   explicit conditional mathematical inputs.
@@ -357,6 +358,23 @@ as a borrowed audit verdict.
 
 No countable extension, composite mixed-projective class, empirical value,
 frequency interpretation, or physical selection is hidden.
+
+> **Scope note (2026-08-05, adoption repair).** The 2026-08-05 owner-approved
+> Admissibility revision makes availability the support of a probability distribution, so
+> that on a finite atomic menu an element of zero probability is unavailable.
+> (A supported point in an atomless continuous law may still have zero
+> singleton measure.) This note's
+> "zero outcomes" convention is **not** an instance of that and is not
+> disturbed by the revision: the menus here are effect partitions on the
+> explicitly supplied finite carrier `E(H_Lambda)`, and a zero outcome is the
+> zero effect carrying `w(0)=0` inside a conditional grading surface that the
+> N3 scan already records as not derived from the minimal axioms. It is not a
+> probability-zero member of an Admissibility availability menu, and the
+> ternary-to-binary collapse that consumes it is a statement about effect
+> partitions, not about which local possibilities a site makes available. The
+> note is recorded here only because a post-revision reader may otherwise take
+> "zero-weight menu member" to have become a contradiction in terms. In this
+> note's menu class it has not.
 
 ### N4 — source residual matching
 

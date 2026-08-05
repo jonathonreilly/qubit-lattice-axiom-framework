@@ -15,6 +15,15 @@ from fractions import Fraction
 from pathlib import Path
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+    "scripts/matter_realization_qubit_bilinear_from_k1_2026_07_06.py",
+)
+
+
 ROOT = Path(__file__).resolve().parents[1]
 
 SOURCE_FILES = {
@@ -32,11 +41,10 @@ SOURCE_FILES = {
 
 QUOTES = {
     "axioms": [
-        "For each site, the available possibilities are determined by, "
-        "and vary with, the nearest-neighbor conditions.",
-        "Further physical structure requires derivation, bridge, explicit "
-        "admission, or approved primitive registration before use as a "
-        "premise.",
+        "For each site, the probability distribution over the possibilities is determined by, "
+        "and varies with, the nearest-neighbor conditions.",
+        "Further physical structure requires a retained derivation or bridge, "
+        "or explicit approved- primitive registration, before use as a premise.",
     ],
     "selected": [
         "K0: phi=+1, representative t == 1 (scalar tight-binding; "

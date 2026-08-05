@@ -21,6 +21,15 @@ from pathlib import Path
 import numpy as np
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+    "scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
+    "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+)
+
+
 PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
@@ -323,6 +332,11 @@ def sign_change_roots(coeffs, target):
 
 def run_group_and_orbit_checks():
     print("\nSECTION A - group and orbit classification")
+    support_codomain = (frozenset({0}), frozenset({1}), frozenset({0, 1}))
+    require(
+        "A0 probability-support codomain has exactly three nonempty binary supports",
+        len(support_codomain) == 3 and all(support_codomain),
+    )
     proper = signed_permutation_matrices(det_wanted=1)
     all_signed = signed_permutation_matrices(det_wanted=None)
     proper_set = set(proper)
@@ -483,8 +497,8 @@ def run_source_boundary_guards():
 
     dep_markers = (
         ("F dep marker axioms covariance", axioms_text, "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations."),
-        ("F dep marker axioms available-subset clause", axioms_text, "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions."),
-        ("F dep marker axioms no weights", axioms_text, "transition probabilities or weights"),
+        ("F dep marker axioms distribution clause", axioms_text, "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions."),
+        ("F dep marker axioms no transition-weight values", axioms_text, "transition-probability or weight values"),
         ("F dep marker axioms no privileged possibility", axioms_text, "No possibility is privileged."),
         ("F dep marker rigidity normalization", rigidity_text, "no independent scalar-normalization freedom"),
         ("F dep marker semigroup boundary", semigroup_text, "continuous Markov semigroups live on the probability/ensemble"),

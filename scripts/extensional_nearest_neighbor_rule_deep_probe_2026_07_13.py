@@ -19,10 +19,21 @@ from __future__ import annotations
 
 from itertools import permutations, product
 from pathlib import Path
+from fractions import Fraction
 import json
 import math
 
 import sympy as sp
+
+
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md",
+    "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md",
+    "docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md",
+    "docs/RECORD_PRODUCTION_KERNEL_BOUNDARY_2026-06-06.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -110,6 +121,16 @@ def flip_menu(menu: frozenset[int]) -> frozenset[int]:
     return frozenset(1 - value for value in menu)
 
 
+def uniform_on_support(menu: frozenset[int]) -> tuple[Fraction, Fraction]:
+    """Canonical distribution lift for the finite binary support witness."""
+    mass = Fraction(1, len(menu))
+    return tuple(mass if value in menu else Fraction(0) for value in VALUES)  # type: ignore[return-value]
+
+
+def flip_distribution(distribution: tuple[Fraction, Fraction]) -> tuple[Fraction, Fraction]:
+    return distribution[1], distribution[0]
+
+
 def majority_availability(profile: tuple[int, ...]) -> frozenset[int]:
     count0 = profile.count(0)
     count1 = profile.count(1)
@@ -138,7 +159,7 @@ def source_contract() -> None:
 
     for needle in (
         "There is one fixed nearest-neighbor admissibility rule",
-        "available possibilities are determined by, and vary with",
+        "probability distribution over the possibilities is\ndetermined by, and varies with",
         "Records form.",
         "A state is a configuration of records.",
         "Admissibility is not a dynamics axiom.",
@@ -148,8 +169,8 @@ def source_contract() -> None:
     continuation_flat = " ".join(continuation.lower().split())
     tensor_nogo_flat = " ".join(tensor_nogo.lower().split())
     check(
-        "A continuation theorem keeps physical successor support underived",
-        "does not say that every menu item has a physical successor" in continuation_flat,
+        "A continuation theorem keeps the physical state-successor lift underived",
+        "do not separately define item 2 as a physical state relation" in continuation_flat,
     )
     check(
         "A tensor no-go keeps composition independent",
@@ -195,7 +216,7 @@ def rule_space_census() -> None:
     check("B no-privilege covariant rule count is 3^24", equivariant_rules == 282_429_536_481)
     count_matches = varying_equivariant_rules == 282_429_536_480
     check("B neighbor variation leaves 282,429,536,480 rules", count_matches)
-    check("B the live structural clauses do not select one table", count_matches and varying_equivariant_rules > 1)
+    check("B support census injects into distinct distribution rules", count_matches and varying_equivariant_rules > 1)
 
     menus = {majority_availability(profile) for profile in profiles}
     check("B majority/tie witness is nonempty everywhere", all(majority_availability(profile) for profile in profiles))
@@ -214,6 +235,27 @@ def rule_space_census() -> None:
         all(
             majority_availability(flip_profile(profile))
             == flip_menu(majority_availability(profile))
+            for profile in profiles
+        ),
+    )
+    check(
+        "B uniform-on-support lift is normalized everywhere",
+        all(sum(uniform_on_support(majority_availability(profile))) == 1 for profile in profiles),
+    )
+    check(
+        "B uniform-on-support lift is proper-cubic covariant",
+        all(
+            uniform_on_support(majority_availability(rotate_profile(profile, rotation)))
+            == uniform_on_support(majority_availability(profile))
+            for profile in profiles
+            for rotation in ROTATIONS
+        ),
+    )
+    check(
+        "B uniform-on-support lift is label-equivariant",
+        all(
+            uniform_on_support(majority_availability(flip_profile(profile)))
+            == flip_distribution(uniform_on_support(majority_availability(profile)))
             for profile in profiles
         ),
     )
@@ -345,11 +387,13 @@ def append_rule_theorem() -> None:
     descendants_one = {future for future in future_values if extends(one, future)}
     check("C conflicting same-site branches have disjoint append-only futures", not descendants_zero & descendants_one)
 
-    weights_a = {successor: sp.Rational(1, len(append_successors(empty, side))) for successor in append_successors(empty, side)}
-    weighted = list(append_successors(empty, side))
-    weights_b = {successor: sp.Rational(2 if i == 0 else 1, len(weighted) + 1) for i, successor in enumerate(weighted)}
-    check("C one support relation accepts different normalized measures", sum(weights_a.values()) == sum(weights_b.values()) == 1 and weights_a != weights_b)
-    check("C append relation itself selects no realized member", len(append_successors(empty, side)) > 1)
+    local_support = majority_availability((OPEN,) * 6)
+    local_rule = uniform_on_support(local_support)
+    alternative_rule = (Fraction(2, 3), Fraction(1, 3))
+    check("C finite support lift gives normalized local lock-outcome odds", sum(local_rule) == 1 and local_rule == (Fraction(1, 2), Fraction(1, 2)))
+    check("C same support can project from distinct distribution-valued rules", sum(alternative_rule) == 1 and local_rule != alternative_rule and all(local_rule[i] > 0 and alternative_rule[i] > 0 for i in VALUES))
+    check("C distinct weights are distinct A rules, not completions of one A", local_rule != alternative_rule)
+    check("C distribution rule itself selects no realized member", len(local_support) > 1)
 
 
 def vec_pair(left: sp.Matrix, right: sp.Matrix) -> sp.Matrix:

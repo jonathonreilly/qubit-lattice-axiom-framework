@@ -16,7 +16,8 @@ The rule fence is:
 
 > "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations."
 
-It fixes the covariance class of the rule, not the selected rule. The available-subset fence is quoted in the current source wording:
+It fixes the covariance class of the rule, not the selected rule. The
+distribution/support fence is quoted in the current source wording:
 
 > "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions."
 
@@ -24,13 +25,28 @@ It supplies nearest-neighbor dependence, not a probability measure. The no-weigh
 
 > "transition probabilities or weights"
 
-The bounded answer is: in the recorded-neighborhood baseline, the covariant rule space is finite and exactly classified; under the iid-uniform no-information occupancy baseline, `p` is quantized as `k/64`; the unit-variance point `p*` is off-lattice; and the remaining mismatch is an occupancy residual, quantified by an iid-density deformation.
+> **Scope note (2026-08-05, adoption repair).** Both quotations above are the
+> pre-revision memo wording and are retained as what this note consumed when it
+> landed. Under the 2026-08-05 owner-approved revision the sentence "It supplies
+> nearest-neighbor dependence, not a probability measure" no longer holds: the
+> axiom now supplies exactly a nearest-neighbor-determined probability
+> distribution over the possibilities, and the fence quoted above now reads
+> "transition-probability or weight values" -- it withholds values and
+> selections, not the structural fact that the distribution is
+> nearest-neighbor-determined. See the fuller scope note under Theorem 1 for
+> what this does and does not do to the `k/64` result.
+
+The bounded answer is: in the recorded-neighborhood baseline, the covariant
+support-map space is finite and exactly classified; under the iid-uniform
+no-information occupancy baseline, the support-level fraction `p` is quantized
+as `k/64`; the unit-variance point `p*` is off-lattice; and the remaining
+mismatch is an occupancy residual, quantified by an iid-density deformation.
 
 Neighboring surfaces are named only for orientation: `GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md` - not a citation-graph dependency; `NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md` - not a citation-graph dependency; `GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md` - not a citation-graph dependency. The runner recomputes `p*` in-packet from the Haar integral.
 
 ## Supplied surfaces (cited at audited scope)
 
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the covariance clause, available-subset clause, and no-weights clause quoted in the theorems.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the covariance clause, distribution/support clause, and the boundary withholding specific transition-weight values quoted in the theorems.
 - [`G_BARE_RIGIDITY_THEOREM_NOTE.md`](G_BARE_RIGIDITY_THEOREM_NOTE.md) supplies canonical normalization and the zero-sum logarithm-branch surface for the in-packet `p*` recomputation.
 - [`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md`](RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md) is respected: this note makes no dynamics or stationary-measure existence claim.
 
@@ -38,15 +54,44 @@ Neighboring surfaces are named only for orientation: `GAUGE_LINK_BINARY_REGISTRA
 
 The recorded-neighborhood baseline is a named model. The six nearest neighbors are ordered as `+x`, `-x`, `+y`, `-y`, `+z`, `-z`; each carries a binary locked record, so a local neighbor pattern is a word in `{0,1}^6`.
 
-The site's available subset is one of `empty`, `{0}`, `{1}`, `{0,1}`. The informative available subset is `{0,1}`. A rule in this baseline is an orbit-map from binary neighbor patterns to those four available subsets.
+The site's support is one of the three nonempty sets `{0}`, `{1}`, `{0,1}`;
+the empty set cannot support a probability distribution. The informative
+support is `{0,1}`. A support map in this baseline is an orbit-map from binary
+neighbor patterns to those three supports.
+
+> **Scope note (2026-08-05, adoption repair).** The Admissibility sentence
+> quoted above under "the available-subset fence" was replaced on 2026-08-05
+> by owner-approved revision. The current sentence reads: "For each site, the
+> probability distribution over the possibilities is determined by, and varies with, the
+> nearest-neighbor conditions." Availability is now the distribution's support,
+> and the memo's no-weights fence now excludes weight *values* rather than
+> weights outright. Consequence for this note: an Admissibility rule is a map
+> to probability distributions, and the space of such maps is not finite. The
+> finite three-support space classified here is the space of the induced
+> **support** maps. Theorem 1's orbit classification and Theorem 2's `k/64`
+> result remain valid for the explicitly defined support-level fraction: every
+> orbit may be assigned full support `{0,1}` or a noninformative singleton
+> support, so the old proof never needs the now-forbidden empty support. This
+> does not classify the axiom's distribution-valued rules. In particular, a
+> rule may vary its probabilities while retaining full support at every
+> neighborhood; any weight-sensitive informative fraction requires a new
+> definition and proof and is open here.
 
 Translation covariance removes site labels. Proper cubic rotation covariance makes the rule constant on proper-rotation orbits of the six neighbor slots.
 
-The iid-uniform no-information occupancy baseline is a named model in which each binary recorded-neighbor pattern has probability `1/64`. It is motivated by the no-weights fence, but not derived from the axiom. The iid-density deformation is the one-parameter model in which each neighbor independently carries value `1` with density `q` and value `0` with density `1-q`. That deformation locates the occupancy residual; it does not select a physical `q`.
+The iid-uniform no-information occupancy baseline is a named model in which
+each binary recorded-neighbor pattern has probability `1/64`; it is not derived
+from the axiom. The iid-density deformation is the one-parameter model in which
+each neighbor independently carries value `1` with density `q` and value `0`
+with density `1-q`. That deformation locates the occupancy residual; it does
+not select a physical `q`.
 
-## Theorem 1 (finite covariant classification)
+## Theorem 1 (finite covariant support classification)
 
-The covariance clause makes the recorded-neighborhood rule space finite. The proper cubic rotation group has 24 elements, inducing 24 distinct permutations of the six directed neighbor slots.
+The covariance clause makes the recorded-neighborhood support-map quotient
+finite. The probability-distribution rule space remains continuous. The proper
+cubic rotation group has 24 elements, inducing 24 distinct permutations of the
+six directed neighbor slots.
 
 The 64 binary neighbor patterns split into exactly 10 orbits, with sorted sizes:
 
@@ -75,7 +120,9 @@ The Burnside cross-check is exact:
 (1/24) sum_g 2^cycles(g) = 10
 ```
 
-Thus a covariant rule in this model is a map from the 10 orbits to `empty`, `{0}`, `{1}`, or `{0,1}`. This classifies the rule space; it does not select a rule.
+Thus a covariant support map in this model is a map from the 10 orbits to
+`{0}`, `{1}`, or `{0,1}`. This classifies the support-map space; it neither
+classifies nor selects a probability-distribution rule.
 
 ## Theorem 2 (quantization under the no-information baseline)
 
@@ -91,9 +138,14 @@ The runner enumerates all subset sums of the 10 orbit sizes. Every `k` in `{0,..
 p in {k/64 : 0 <= k <= 64}
 ```
 
-The informative fraction is quantized by covariance in this named baseline.
+The support-level informative fraction is quantized by covariance in this
+named baseline.
 
-Endpoint caveat (2026-07-02 axiom wording): the current available-subset clause reads "determined by, and vary with, the nearest-neighbor conditions." The `k = 64` endpoint is attainable only by the constant all-informative rule, whose availability does not vary with neighbor conditions; that endpoint is therefore plausibly excluded by the vary-with wording. The interior of the attainable set, and every bracketing value used below, is unaffected.
+Endpoint repair (2026-08-05): `k = 64` means constant full **support**, not a
+constant distribution. The current axiom permits neighbor-varying probability
+weights with full support everywhere, so the endpoint is no longer excluded by
+the variation sentence. The support-level attainable set is the full displayed
+`{k/64 : 0 <= k <= 64}` set.
 
 The value-flip-covariant refinement identifies a pattern with its global `0<->1` complement. The Qubit axiom now states:
 
@@ -176,12 +228,16 @@ q* = 0.512443603
 
 The runner gates sign changes before bisection. Each displayed root is interior to `(0,1)`, reproduces `p*` within `1e-8`, and differs from the uniform baseline `q = 1/2` by at least `1e-3`.
 
-The residual between the axiom-quantized baseline and the unit point is therefore exactly an occupancy-statistics datum in the framework's recognized occupancy/readout admission territory. It is quantified as a fraction-of-a-pattern deviation from uniform neighbor statistics. Nothing selects a rule or a `q`; the dial remains registered, and `p*` and `q*` are located, never forced.
+The residual between this support-quantized baseline and the unit point is
+therefore an occupancy-statistics datum in the named model. It is quantified
+as a fraction-of-a-pattern deviation from uniform neighbor statistics. Nothing
+selects a distribution-valued rule or a `q`; `p*` and `q*` are located, never
+forced.
 
 ## Boundary
 
 - This note does not derive the admissibility rule. The axiom fixes the covariance class of the rule, quoted above, not the selected rule.
-- This note does not derive occupancy statistics or any value of `q`. The no-weights clause is quoted above, and the iid models are named baselines or deformations.
+- This note does not derive occupancy statistics, distribution values, or any value of `q`. The iid models are named baselines or deformations.
 - This note does not claim: the recorded-neighborhood model is the unique reading. Partially-recorded neighborhoods remain an open refinement.
 - This note does not claim: it derives `p` or `p*`; the runner locates `p*` and classifies attainable baseline `p` values.
 - This note does not claim: the Theorem 3 negative statement holds outside the named baseline, named model, and named reading.
@@ -228,7 +284,7 @@ Section F source-boundary guards:
 
 - files must exist for this note, the runner, and the three supplied dependency notes
 - the axioms dependency must contain the covariance clause
-- the axioms dependency must contain the current available-subset clause
+- the axioms dependency must contain the current distribution clause
 - the axioms dependency must contain the no-weights phrase
 - the rigidity dependency must contain `no independent scalar-normalization freedom`
 - the semigroup dependency must contain `continuous Markov semigroups live on the probability/ensemble`

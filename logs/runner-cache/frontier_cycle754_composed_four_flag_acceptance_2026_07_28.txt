@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle754_composed_four_flag_acceptance_2026_07_28.py
+runner_sha256: 48358cefb7bd1377b14497e3e3128619e17a925a4460efc1ee4fbded308fc520
+input_fingerprint_sha256: 8e5ed6e94766f26b30151a192314e67d4e42fa2a1bac27d34b0aafb7645a4320
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.76
+status: ok
+----- stdout -----
+PASS A_exact_note_contract :: {"exists": true, "missing": []}
+PASS B_declared_mutable_input_closure :: {"contains_cycle747": true, "contains_cycle751": true, "declared": 86, "missing": [], "unique": 86}
+PASS C_exact_cartesian_domain :: {"endpoint_rows": 4, "input_rows_by_endpoint": [64, 64, 64, 64], "rows": 256}
+PASS D_current_dependency_API_values :: {"binder_values": [1, 1, 1, 1], "receiver_successes_by_endpoint": [1, 1, 1, 1]}
+PASS E_exact_lower_case_status_census :: {"admitted": 4, "refused_supplied": 252}
+PASS F_runtime_repository_imports_are_declared :: {"loaded": 79, "undeclared": []}
+PASS G_honest_software_API_boundary :: {"common_event_map_claimed": false, "framework_admissibility_claimed": false, "framework_binder_claimed": false, "framework_law_claimed": false, "objective_actuality_claimed": false, "physical_occurrence_claimed": false, "record_claimed": false, "retained_grade_claimed": false}
+PASS H_runtime_within_declared_timeout :: {"runtime_sec": 0.128008, "timeout_sec": 900}
+{"boundary":{"common_event_map_claimed":false,"framework_admissibility_claimed":false,"framework_binder_claimed":false,"framework_law_claimed":false,"objective_actuality_claimed":false,"physical_occurrence_claimed":false,"record_claimed":false,"retained_grade_claimed":false},"bounded":true,"checks":{"A_exact_note_contract":true,"B_declared_mutable_input_closure":true,"C_exact_cartesian_domain":true,"D_current_dependency_API_values":true,"E_exact_lower_case_status_census":true,"F_runtime_repository_imports_are_declared":true,"G_honest_software_API_boundary":true,"H_runtime_within_declared_timeout":true},"checks_failed":0,"checks_passed":8,"claim":"finite receiver/endpoint lower-case API composition","cycle":754,"pass":true,"result":{"binder_values":[1,1,1,1],"endpoint_rows":4,"input_rows_by_endpoint":[64,64,64,64],"receiver_successes_by_endpoint":[1,1,1,1],"rows":256,"status_counts":{"admitted":4,"refused_supplied":252}},"runtime_sec":0.128008,"supplied_one_bits":{"actuality":1,"certificate":1,"law_domain":1},"terminal":"CYCLE754_FINITE_API_COMPOSITION_PASS"}
+CYCLE754_FINITE_API_COMPOSITION_PASS
+
+----- stderr -----
+

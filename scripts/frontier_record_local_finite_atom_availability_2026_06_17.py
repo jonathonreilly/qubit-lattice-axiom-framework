@@ -17,7 +17,8 @@ This runner checks the exact finite algebra behind the source-side repair:
 * the finite Boolean unit-count functional is additive on disjoint support
   tags;
 * the result is availability/readout-context algebra only, not production,
-  probability, physical context selection, clock/rate, or dial selection.
+  Born-rule identification or values, physical context selection, clock/rate,
+  or dial selection.
 """
 
 from __future__ import annotations
@@ -28,6 +29,13 @@ from itertools import permutations
 from pathlib import Path
 
 import sympy as sp
+
+
+AUDIT_INPUT_PATHS = (
+    "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
+)
 
 
 PASS = 0
@@ -247,10 +255,10 @@ def main() -> int:
     check("A1 live Lattice axiom exposes cubic Z^3 sites", "Physical sites are the points of the cubic lattice `Z^3`" in minimal_flat)
     check("A2 live Qubit axiom exposes one-site M_2(C)", "The full one-site possibility domain has algebraic presentation `M_2(C)`." in minimal_flat)
     check("A3 live Admissibility axiom names one fixed covariant NN rule", "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations." in minimal_flat)
-    check("A4 live Admissibility axiom requires neighbor-varying availability", "the available possibilities are determined by, and vary with, the nearest-neighbor conditions" in minimal_flat)
+    check("A4 live Admissibility axiom requires neighbor-varying availability", "the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions" in minimal_flat)
     check("A5 live Record axiom locks one admissible possibility", "a record locks exactly one admissible local possibility" in minimal_flat)
-    check("A6 live memo leaves formation-rule details downstream", "formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate)" in minimal_flat)
-    check("A7 live memo keeps downstream bridges open", "Probability, dynamics, readout contexts, and physical observable bridges remain downstream." in minimal_flat)
+    check("A6 live memo leaves formation-rule details downstream", "the remaining formation rules (the distribution's form and values, at which site, and at what rate)" in minimal_flat)
+    check("A7 live memo keeps downstream bridges open", "The distribution's form and values, dynamics, readout contexts, and physical observable bridges remain downstream." in minimal_flat)
     check("A8 narrowed no-go withholds the formation rule/process/state/site/weight/rate", "It does not supply the formation rule/process/state/site/weight/rate." in nogo_flat)
     check("A9 theorem boundary explicitly does not derive production", "record production or realization dynamics" in note)
     check("A10 theorem names the declared availability premise and record eligibility", "declared admissibility-instance premise" in note_flat and "record-eligible" in note)
@@ -397,7 +405,7 @@ def main() -> int:
         print(
             "VERDICT: exact finite local readout-atom/context availability closes only under the "
             "declared admissibility instance, diagonal readout context, K/conjugation context, "
-            "and unit-count normalization; selection of those inputs, production, probability, "
+            "and unit-count normalization; selection of those inputs, production, Born-rule values, "
             "clock/rate, and dial selection remain open."
         )
         return 0

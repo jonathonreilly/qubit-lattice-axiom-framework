@@ -4,8 +4,8 @@
 This runner separates three propositions that ordinary language can easily
 collapse:
 
-1. an availability rule gives a menu of locally available possibilities;
-2. a continuation law supplies one or more successors for that menu; and
+1. the Admissibility distribution gives conditional lock-outcome support;
+2. a physical continuation model supplies state successors for those outcomes; and
 3. under declared site-tagged immutable-extension semantics, distinct
    same-site record successors cannot acquire a common syntactic extension.
 
@@ -24,6 +24,22 @@ import json
 import math
 
 import numpy as np
+
+
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md",
+    "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+    "docs/RECORD_SATURATION_AVAILABILITY_CENSUS_BOUNDED_NOTE_2026-07-08.md",
+    "docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md",
+    "docs/PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md",
+    "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+    "docs/BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -124,7 +140,7 @@ def source_contract() -> None:
 
     needles = (
         "There is one fixed nearest-neighbor admissibility rule, covariant under lattice",
-        "For each site, the available possibilities are determined by, and vary with,",
+        "For each site, the probability distribution over the possibilities is\ndetermined by, and varies with, the nearest-neighbor conditions.",
         "Records form.",
         "site never carries more than one record; records are permanent.",
         "A state is a configuration of records.",
@@ -256,10 +272,12 @@ def full_branch_support(pattern: tuple[int, ...]) -> frozenset[int]:
 
 
 def copy_law_support(pattern: tuple[int, ...]) -> frozenset[int]:
-    """Local covariant singleton support on the common one-neighbor domain.
+    """Conditional singleton continuation map on the one-neighbor domain.
 
     It retains the recorded neighbor's value even though both values are
-    available. Other patterns are outside both continuation maps' domain.
+    available. It is a mathematical comparator, not a realization of the
+    current probability-distribution axiom. Other patterns are outside both
+    continuation maps' domain.
     """
     if not formation_domain(pattern):
         return frozenset()
@@ -273,7 +291,7 @@ def formation_domain(pattern: tuple[int, ...]) -> bool:
 
 
 def local_rule_classification() -> None:
-    section("B - Exact local-rule and continuation-support separation")
+    section("B - Historical set-valued comparator and current-rule rejector")
     patterns = list(product((OPEN, 0, 1), repeat=6))
     outputs = {availability(pattern) for pattern in patterns}
 
@@ -294,7 +312,7 @@ def local_rule_classification() -> None:
     )
     common_domain = [pattern for pattern in patterns if formation_domain(pattern)]
     outside_domain = [pattern for pattern in patterns if not formation_domain(pattern)]
-    check("B6 full branch support equals the availability menu on the common domain", all(full_branch_support(pattern) == availability(pattern) for pattern in common_domain))
+    check("B6 historical branch-complete map equals the support table on the common domain", all(full_branch_support(pattern) == availability(pattern) for pattern in common_domain))
     check("B7 copy-law outputs are always available", all(copy_law_support(pattern) <= availability(pattern) for pattern in patterns))
     check("B8 singleton-support law gives exactly one successor on the common domain", all(len(copy_law_support(pattern)) == 1 for pattern in common_domain))
     check(
@@ -314,11 +332,15 @@ def local_rule_classification() -> None:
     check("B11 one-neighbor contexts leave both possibilities available", all(availability(pattern) == frozenset({0, 1}) for pattern in one_neighbor_patterns))
     check("B12 the same contexts have one copy-law successor", all(len(copy_law_support(pattern)) == 1 for pattern in one_neighbor_patterns))
     check(
-        "B13 one fixed availability rule admits branch-complete and singleton-support expansions on one domain",
+        "B13 a separately supplied set-valued interface admits distinct branch-complete and singleton-support expansions",
         any(full_branch_support(pattern) != copy_law_support(pattern) for pattern in one_neighbor_patterns),
     )
-    check("B14 both continuation maps have nonempty candidate-successor support throughout the common domain", all(full_branch_support(pattern) and copy_law_support(pattern) for pattern in common_domain))
+    check("B14 both historical set-valued maps are nonempty throughout the common domain", all(full_branch_support(pattern) and copy_law_support(pattern) for pattern in common_domain))
     check("B15 both continuation maps have exactly the same supplied domain", all(not full_branch_support(pattern) and not copy_law_support(pattern) for pattern in outside_domain))
+    check(
+        "B16 the current probability-distribution axiom rejects the singleton expansion because it omits supported outcomes",
+        all(copy_law_support(pattern) != availability(pattern) for pattern in one_neighbor_patterns),
+    )
 
 
 Config = tuple[int, ...]
@@ -617,7 +639,7 @@ def final_classification() -> None:
     partitions = [partition_for_prefix(4, count) for count in range(5)]
     check("G3 record-content classes refine in the independent full-support model", [len(partition) for partition in partitions] == [1, 2, 4, 8, 16])
     one_neighbor = (0, OPEN, OPEN, OPEN, OPEN, OPEN)
-    check("G4 branch completeness is not fixed by the availability table", full_branch_support(one_neighbor) != copy_law_support(one_neighbor))
+    check("G4 the historical set-valued comparator differs from the axiom-compatible support", full_branch_support(one_neighbor) != copy_law_support(one_neighbor))
 
     x1, z1 = np.kron(X, I2), np.kron(Z, I2)
     x2, z2 = np.kron(I2, X), np.kron(I2, Z)
@@ -630,13 +652,13 @@ def final_classification() -> None:
                 unit = np.zeros((4, 4), dtype=complex)
                 unit[row, column] = 1.0
                 block_basis.append(unit)
-    check("G5 the availability table alone does not specify an operation algebra in these constructions", full_dimension == 1 and commutant_dimension(block_basis) == 2)
+    check("G5 the probability rule does not specify an operation algebra in these constructions", full_dimension == 1 and commutant_dimension(block_basis) == 2)
     axiom = AXIOM.read_text()
     flat_axiom = " ".join(axiom.split())
     note = NOTE.read_text()
     check(
-        "G6 selection, weights, rate, metric, and capacity renewal remain outside this probe",
-        "with what weight, or at what rate" in flat_axiom
+        "G6 the realized draw, formation site/rate, metric, and capacity renewal remain outside this probe",
+        "the distribution's form and values, at which site, and at what rate" in flat_axiom
         and "time metric" in flat_axiom
         and "physical persistence dynamics" in flat_axiom
         and "support renewal" in note,
@@ -645,8 +667,9 @@ def final_classification() -> None:
     print("\nDECISIVE RESULT")
     print("  DERIVED IN THE SITE-TAGGED IMMUTABLE-HISTORY MODEL: local nonreconnection")
     print("  and fixed-schedule monotone refinement, conditional on distinct formation successors.")
-    print("  NOT DERIVED FROM ADMISSIBILITY: counterfactual branch support or the")
-    print("  post-record physical operation-algebra restriction/activation.")
+    print("  SUPPLIED BY ADMISSIBILITY+RECORD: supported lock outcomes conditional on formation.")
+    print("  NOT DERIVED: a physical state-successor graph or the post-record")
+    print("  physical operation-algebra restriction/activation.")
     print("  CHECKED AUTHORITY BOUNDARY: one fixed rule is named but the checked")
     print("  foundation/adjacent surfaces provide no extensional table or dynamics bridge.")
 

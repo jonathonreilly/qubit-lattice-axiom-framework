@@ -124,8 +124,9 @@ local possibilities with full one-site algebraic presentation `M_2(ℂ)`;
 possibility is privileged; possibilities are distinguished by the supplied
 algebraic structure alone.
 Admissibility is one fixed finite-neighborhood rule, the same at every lattice
-translate; for each site, the available possibilities are determined by, and
-vary with, the nearest-neighbor conditions, consistent with local records. A
+translate; for each site, the probability distribution over the possibilities
+is determined by, and varies with, the nearest-neighbor conditions;
+availability is its support. A
 record, when present, locks exactly one admissible local possibility. A site
 never carries more than one record; records are permanent. Only records are
 readable; a readout value is
@@ -135,9 +136,9 @@ collections. A state is a configuration of records. A law privileges no states:
 its domain is a supplied condition, and where that condition holds it gives
 exactly one answer. Additional
 structures such as readout-context selection, decomposition, `K`/CPT
-structure, sector-generation rules, weighting, normalization, probability,
+structure, sector-generation rules, specific probability-distribution values,
 measurement/decoherence dynamics, record-production dynamics, physical
-persistence dynamics, occurrence rules, update laws, time metric,
+persistence dynamics, formation-site and formation-rate rules, update laws, time metric,
 within-sector data, occupancy rules, P2/modulus, log-det readouts,
 source/action bridges, scale, local observability, law-admissibility or
 transition relations, kinetic-branch selection, or arbitrary observable

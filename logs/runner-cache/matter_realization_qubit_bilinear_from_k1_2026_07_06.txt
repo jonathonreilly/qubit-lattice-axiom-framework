@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/matter_realization_qubit_bilinear_from_k1_2026_07_06.py
-runner_sha256: f402fc80ba5461a7dfc689c25ce6d86e3579ddec1ccb3cfaf4d965728daad7e4
+runner_sha256: 3a7ba53f2796d7cf8b5673da30649f1ce86d7a24c17fab61de523558610b5936
+input_fingerprint_sha256: 6cd3eb9258c65de059a626afb7306bfc9c58c2e3644dd8c22dcd3797335e0f9e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 [PASS] normalized text audits for quoted source sentences

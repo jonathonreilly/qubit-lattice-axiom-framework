@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Type and placement gate for a future exact-law constitutional reference.
 
-This runner is read-only with respect to live foundation surfaces.  It checks
-that availability alone does not identify prediction and that the placement
-note keeps zero-edit, four-name retyping, and five-name Law routes distinct.
+This runner is read-only with respect to live foundation surfaces. It checks
+that support alone does not identify a probability distribution, that the
+current Admissibility rule includes both support and lock-outcome statistics,
+and that the placement note keeps the remaining dynamics routes distinct.
 """
 
 from __future__ import annotations
@@ -11,6 +12,14 @@ from __future__ import annotations
 from fractions import Fraction
 import json
 from pathlib import Path
+
+
+AUDIT_INPUT_PATHS = (
+    "docs/work_history/repo/review_feedback/EXACT_LAW_CONSTITUTIONAL_PLACEMENT_SCHEMA_PROBE_NOTE_2026-07-14.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/work_history/repo/review_feedback/CANONICAL_LAW_COMPLETENESS_CONTRACT_NOTE_2026-07-13.md",
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -78,7 +87,7 @@ def source_contract() -> None:
     check("A note disclaims an axiom proposal", "not an axiom proposal" in note)
     check("A note changes no live surface", "changes no live foundation" in note)
     check("A live memo still names four axioms", all(f"### {name}" in axioms for name in ("Lattice", "Qubit", "Admissibility", "Record")))
-    check("A Admissibility remains a menu rule", "nearest-neighbor admissibility rule" in axioms and "available possibilities are determined by" in axioms)
+    check("A Admissibility is a distribution-valued rule", "nearest-neighbor admissibility rule" in axioms and "probability distribution over the possibilities is determined by" in axioms)
     check("A live memo explicitly rejects dynamics reading", "Admissibility is not a dynamics axiom." in axioms)
     check("A live Record remains unchanged", "Records form." in axioms and "records are permanent." in axioms)
     check("A registry still has only approved ids", set(registry["canonical_ids"]) == {"minimal_axioms", "scale_reference_primitive", "kinetic_isotropy_primitive", "realized_state_primitive"})
@@ -86,7 +95,7 @@ def source_contract() -> None:
 
 
 def availability_prediction_separation() -> None:
-    section("B - Same availability, different prediction")
+    section("B - Same support, different distribution-valued rules")
     neighborhoods = tuple(range(3**6))
     availability = {n: frozenset((0, 1)) for n in neighborhoods}
     law_a = {n: (Fraction(1, 2), Fraction(1, 2)) for n in neighborhoods}
@@ -96,23 +105,23 @@ def availability_prediction_separation() -> None:
     check("B law A normalizes everywhere", all(sum(law_a[n]) == 1 for n in neighborhoods))
     check("B law B normalizes everywhere", all(sum(law_b[n]) == 1 for n in neighborhoods))
     check("B both laws have the same full support", all({i for i, p in enumerate(law_a[n]) if p} == availability[n] == {i for i, p in enumerate(law_b[n]) if p} for n in neighborhoods))
-    check("B laws predict different readable records", law_a[0] != law_b[0])
-    check("B availability identity does not imply law identity", availability == availability and law_a != law_b)
+    check("B rules assign different lock-outcome probabilities", law_a[0] != law_b[0])
+    check("B support identity does not imply distribution-rule identity", law_a != law_b)
 
 
 def placement_matrix() -> None:
     section("C - Ten-field placement matrix")
     complete_reference = frozenset(FIELDS)
-    current_admissibility = frozenset(("AVAILABILITY",))
-    record_trigger = frozenset(("AVAILABILITY", "RECORD"))
+    current_admissibility = frozenset(("AVAILABILITY", "STATISTICS"))
+    record_trigger = frozenset(("AVAILABILITY", "STATISTICS", "RECORD"))
     retyped_admissibility = complete_reference
     separate_law = complete_reference
     qualification_reference = complete_reference
 
-    check("C current Admissibility closes availability only", current_admissibility == {"AVAILABILITY"})
+    check("C current Admissibility closes support and conditional lock-outcome statistics", current_admissibility == {"AVAILABILITY", "STATISTICS"})
     check("C generous Record trigger remains incomplete", record_trigger < complete_reference)
     check("C Record trigger omits atomic law", "ATOMIC_LAW" not in record_trigger)
-    check("C Record trigger omits statistics", "STATISTICS" not in record_trigger)
+    check("C Record trigger retains Admissibility statistics", "STATISTICS" in record_trigger)
     check("C retyped complete-law reference can cover all fields", retyped_admissibility == complete_reference)
     check("C separate Law reference can cover all fields", separate_law == complete_reference)
     check("C Qualification reference can carry content but has a placement defect", qualification_reference == complete_reference)

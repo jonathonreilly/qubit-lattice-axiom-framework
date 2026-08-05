@@ -13,6 +13,12 @@ from pathlib import Path
 import sys
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md",
+)
+
+
 ROOT = Path(__file__).resolve().parents[1]
 AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 NOTE_PATH = (
@@ -38,15 +44,16 @@ V2_CORE = """**graded_constraint v2 (candidate, unregistered).** A weight functi
 nearest-neighbor composite, with `w(0) = 0`, `w(identity) = 1`, additive
 over all orthogonal pairs, non-contextual, and dependent on the
 surrounding record configuration through the nearest-neighbor channel.
-Formation statistics on a record-conditioned menu of available
-possibilities are `w` conditioned on that menu: the available elements'
-weights renormalized by their total. If the available total is zero the
-conditional is undefined — a named boundary, not hidden. No rate,
+The auxiliary menu grading is `w` conditioned on the Admissibility support:
+the supported elements' `w`-values renormalized by their total. If that total
+is zero the auxiliary conditional is undefined — a named mathematical
+boundary, not hidden. This conditional is not a formation-statistics law
+unless a separate bridge relates `w` to the Admissibility distribution. No rate,
 propagation rule, orientation, scale, or record-production rule is
 supplied."""
 
 AXIOM_NEEDLES = [
-    "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.",
+    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
     "Records form.",
     "When present, a record locks exactly one admissible local possibility.",
     "Only records are readable.",
@@ -54,13 +61,13 @@ AXIOM_NEEDLES = [
 ]
 
 NOTE_NEEDLES = [
-    "the v1 core as literally worded is **DEFECTIVE**",
+    "The v1 core is defective whenever a mixed-support",
     "landed pager's core text (v1) is superseded by v2",
     "the pager amendment travels separately",
-    "availability filters outcomes, never weights",
+    "availability is the support of the axiom's distribution",
     "zero-available-total boundary",
-    "Record frequencies can read `w` in aggregate",
-    "two states with identical records do not differ in `w`",
+    "No readable or frequency consequence of `w` follows without a bridge",
+    "two states with identical records do not differ",
     "TOTAL: PASS=7 FAIL=0",
 ]
 
@@ -366,9 +373,9 @@ def check_defect_exhibit() -> Result:
         and available_element_present
     )
     return Result(
-        "Defect exhibit: v1 mixed identity resolution",
+        "Conditional defect exhibit: v1 mixed identity resolution",
         ok,
-        "orthogonal identity resolution normalizes while containing unavailable ZA1",
+        "supplied mixed-support resolution normalizes while containing unsupported ZA1",
     )
 
 
@@ -408,9 +415,9 @@ def check_n1_v2_coexistence() -> Result:
         ]
     )
     return Result(
-        "N1 v2: coexistence and conditioning separation",
+        "N1 v2: auxiliary-grading coexistence and conditioning separation",
         ok,
-        "availability and w remain distinct; conditioning excludes unavailable outcomes",
+        "Admissibility support and auxiliary w remain distinct",
     )
 
 
@@ -462,7 +469,7 @@ def check_n2_v2_channel() -> Result:
         ]
     )
     return Result(
-        "N2 v2: record-independent shapes, record-dependent menus",
+        "N2 v2: record-independent shapes, fixture-dependent menus and auxiliary grading",
         ok,
         "shape function receives records but derives shapes from algebra dimension",
     )
@@ -535,7 +542,7 @@ def check_needles() -> Result:
     return Result(
         "Needle: prose premises and status discipline",
         axiom_ok and note_quotes_ok and core_ok and note_ok,
-        "v1/v2 text, landed sentences, boundary, aggregate-readability, measured total",
+        "v1/v2 text, landed sentences, auxiliary boundary, no-readability fence, measured total",
     )
 
 

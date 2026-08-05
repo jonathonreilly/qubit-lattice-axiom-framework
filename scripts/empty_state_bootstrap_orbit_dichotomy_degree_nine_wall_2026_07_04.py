@@ -6,10 +6,11 @@ B - model availability sets and the pair.
 C - the degree-nine detection wall.
 D - the selector and the readout face.
 
-Expected close: TOTAL: PASS=13 FAIL=0
+Expected close: TOTAL: PASS=20 FAIL=0
 """
 
 import itertools
+import math
 
 import numpy as np
 
@@ -50,6 +51,68 @@ def signed_permutation_matrices():
         if not any(np.array_equal(m, n) for n in unique):
             unique.append(m)
     return unique
+
+
+def permutation_sign(perm):
+    inversions = sum(
+        perm[i] > perm[j]
+        for i in range(len(perm))
+        for j in range(i + 1, len(perm))
+    )
+    return -1 if inversions % 2 else 1
+
+
+# Exact integer presentation of the same 48-element group.  Here
+# (perm, signs) acts by (g x)_i = signs[i] x_{perm[i]}.
+integer_group = [
+    (perm, signs, permutation_sign(perm) * math.prod(signs))
+    for perm in itertools.permutations(range(3))
+    for signs in itertools.product((-1, 1), repeat=3)
+]
+
+
+def monomial_action(exponent, perm, signs):
+    """Return coefficient and exponent of x^exponent after x -> g x."""
+    image = [0, 0, 0]
+    coefficient = 1
+    for i, power in enumerate(exponent):
+        image[perm[i]] += power
+        coefficient *= signs[i] ** power
+    return coefficient, tuple(image)
+
+
+def rank_mod_prime(rows, prime=1_000_003):
+    """Exact finite-field rank; full rank here certifies full rank over Q."""
+    if not rows:
+        return 0
+    matrix = [[entry % prime for entry in row] for row in rows]
+    n_rows = len(matrix)
+    n_cols = len(matrix[0])
+    pivot_row = 0
+    for col in range(n_cols):
+        pivot = next(
+            (row for row in range(pivot_row, n_rows) if matrix[row][col]),
+            None,
+        )
+        if pivot is None:
+            continue
+        matrix[pivot_row], matrix[pivot] = matrix[pivot], matrix[pivot_row]
+        inverse = pow(matrix[pivot_row][col], prime - 2, prime)
+        matrix[pivot_row] = [
+            (entry * inverse) % prime for entry in matrix[pivot_row]
+        ]
+        for row in range(n_rows):
+            if row == pivot_row or matrix[row][col] == 0:
+                continue
+            scale = matrix[row][col]
+            matrix[row] = [
+                (left - scale * right) % prime
+                for left, right in zip(matrix[row], matrix[pivot_row])
+            ]
+        pivot_row += 1
+        if pivot_row == n_rows:
+            break
+    return pivot_row
 
 
 mats = signed_permutation_matrices()
@@ -401,6 +464,200 @@ check(
     "C5 pointwise Psi9-zero iff improper-stabilized",
     c5_mismatches == 0,
     f"cases={len(c5_points)} mismatches={c5_mismatches}",
+)
+
+
+def homogeneous_polynomial_character(degree, perm, signs):
+    """Trace of p(x) -> p(gx) on homogeneous degree-degree polynomials."""
+    trace = 0
+    for exponent in exact_degree_exponents(degree):
+        coefficient, image = monomial_action(exponent, perm, signs)
+        if image == exponent:
+            trace += coefficient
+    return trace
+
+
+polynomial_multiplicity_numerators = []
+for degree in range(11):
+    numerator = sum(
+        determinant * homogeneous_polynomial_character(degree, perm, signs)
+        for perm, signs, determinant in integer_group
+    )
+    polynomial_multiplicity_numerators.append(numerator)
+polynomial_multiplicities = [
+    numerator // len(integer_group)
+    for numerator in polynomial_multiplicity_numerators
+]
+check(
+    "C6 full-polynomial character wall",
+    all(numerator % len(integer_group) == 0 for numerator in polynomial_multiplicity_numerators)
+    and polynomial_multiplicities[:9] == [0] * 9
+    and polynomial_multiplicities[9] == 1,
+    f"multiplicities_d0..10={polynomial_multiplicities}",
+)
+
+
+constraint_generators = [
+    ((0, 1, 2), (-1, 1, 1), -1),
+    ((0, 1, 2), (1, -1, 1), -1),
+    ((0, 1, 2), (1, 1, -1), -1),
+    ((1, 0, 2), (1, 1, 1), -1),
+    ((0, 2, 1), (1, 1, 1), -1),
+]
+
+
+def det_constraint_rows(degree):
+    """Coefficient equations for p(gx)=det(g)p(x) on B3 generators."""
+    exponents = exact_degree_exponents(degree)
+    index = {exponent: i for i, exponent in enumerate(exponents)}
+    rows = []
+    for perm, signs, determinant in constraint_generators:
+        block = [[0] * len(exponents) for _ in exponents]
+        for source, exponent in enumerate(exponents):
+            coefficient, image = monomial_action(exponent, perm, signs)
+            block[index[image]][source] += coefficient
+        for i in range(len(exponents)):
+            block[i][i] -= determinant
+        rows.extend(row for row in block if any(row))
+    return exponents, rows
+
+
+constraint_nullities = []
+for degree in range(10):
+    degree_exponents, degree_rows = det_constraint_rows(degree)
+    constraint_nullities.append(
+        len(degree_exponents) - rank_mod_prime(degree_rows)
+    )
+check(
+    "C7 generator-constraint coefficient kernels",
+    constraint_nullities[:9] == [0] * 9 and constraint_nullities[9] == 1,
+    f"nullities_d0..9_mod_1000003={constraint_nullities}",
+)
+
+
+def det_reynolds_numerator(exponent, degree_exponents, exponent_index):
+    """Exact numerator of the det-weighted Reynolds projection of a monomial."""
+    projected = [0] * len(degree_exponents)
+    for perm, signs, determinant in integer_group:
+        coefficient, image = monomial_action(exponent, perm, signs)
+        projected[exponent_index[image]] += determinant * coefficient
+    return projected
+
+
+def canonical_integer_vector(vector):
+    divisor = 0
+    for entry in vector:
+        divisor = math.gcd(divisor, abs(entry))
+    if divisor == 0:
+        return tuple(vector)
+    reduced = [entry // divisor for entry in vector]
+    first = next(entry for entry in reduced if entry)
+    if first < 0:
+        reduced = [-entry for entry in reduced]
+    return tuple(reduced)
+
+
+reynolds_low_zero = True
+for degree in range(9):
+    degree_exponents = exact_degree_exponents(degree)
+    exponent_index = {exponent: i for i, exponent in enumerate(degree_exponents)}
+    for exponent in degree_exponents:
+        if any(det_reynolds_numerator(exponent, degree_exponents, exponent_index)):
+            reynolds_low_zero = False
+
+degree9_exponents = exact_degree_exponents(9)
+degree9_index = {exponent: i for i, exponent in enumerate(degree9_exponents)}
+degree9_projections = [
+    det_reynolds_numerator(exponent, degree9_exponents, degree9_index)
+    for exponent in degree9_exponents
+]
+degree9_nonzero = [vector for vector in degree9_projections if any(vector)]
+degree9_directions = {
+    canonical_integer_vector(vector) for vector in degree9_nonzero
+}
+check(
+    "C8 exhaustive exact Reynolds operator",
+    reynolds_low_zero and bool(degree9_nonzero) and len(degree9_directions) == 1,
+    f"all_monomials_d0..8_zero={reynolds_low_zero} "
+    f"d9_nonzero_columns={len(degree9_nonzero)} "
+    f"d9_image_directions={len(degree9_directions)}",
+)
+
+
+reflection_normals = [
+    (1, 0, 0),
+    (0, 1, 0),
+    (0, 0, 1),
+    (1, -1, 0),
+    (1, 1, 0),
+    (1, 0, -1),
+    (1, 0, 1),
+    (0, 1, -1),
+    (0, 1, 1),
+]
+reflection_matrices = []
+for normal in reflection_normals:
+    n = np.array(normal, dtype=float)
+    reflection_matrices.append(np.eye(3) - 2.0 * np.outer(n, n) / float(n @ n))
+reflection_group_members = all(
+    any(np.array_equal(reflection, matrix) for matrix in mats)
+    and det_int(reflection) == -1
+    and int(round(float(np.trace(reflection)))) == 1
+    for reflection in reflection_matrices
+)
+check(
+    "C9 reflection-hyperplane divisibility floor",
+    len(reflection_matrices) == 9
+    and reflection_group_members
+    and len({tuple(normal) for normal in reflection_normals}) == 9,
+    "nine distinct B3 reflection hyperplanes force nine distinct linear "
+    "divisors on any det-relative polynomial",
+)
+
+
+alternant_seeds = []
+for degree in range(10):
+    seeds = {
+        tuple(sorted(exponent))
+        for exponent in exact_degree_exponents(degree)
+        if all(power % 2 == 1 for power in exponent)
+        and len(set(exponent)) == 3
+    }
+    alternant_seeds.append(sorted(seeds))
+check(
+    "C10 sign-flip and permutation alternant floor",
+    alternant_seeds[:9] == [[] for _ in range(9)]
+    and alternant_seeds[9] == [(1, 3, 5)],
+    f"det-compatible odd-distinct exponent seeds d0..9={alternant_seeds}",
+)
+
+
+coordinate_probe = np.array((2.0, 3.0, 5.0))
+swap_yz = np.array(((1.0, 0.0, 0.0), (0.0, 0.0, 1.0), (0.0, 1.0, 0.0)))
+coordinate_value = float(coordinate_probe[0])
+coordinate_swapped = float((swap_yz @ coordinate_probe)[0])
+check(
+    "C11 direction-dependent linear hostile candidate rejected",
+    det_int(swap_yz) == -1
+    and coordinate_swapped == coordinate_value
+    and coordinate_swapped != -coordinate_value,
+    "the coordinate x is degree one but is unchanged by the improper y-z "
+    "swap, so it does not satisfy the det-character obligation",
+)
+
+
+triad = np.array(((1.0, 2.0, 0.0), (0.0, 1.0, 3.0), (2.0, 0.0, 1.0))).T
+triad_det = det_int(triad)
+triad_covariant = all(
+    det_int(matrix @ triad) == determinant * triad_det
+    for matrix, determinant in zip(mats, dets)
+)
+collapsed_triad = np.column_stack((coordinate_probe, coordinate_probe, coordinate_probe))
+check(
+    "C12 multi-content triple-product hostile candidate typed",
+    triad_det != 0 and triad_covariant and det_int(collapsed_triad) == 0,
+    "the degree-(1,1,1) determinant is a valid three-content pseudoscalar "
+    "but collapses to zero on one repeated content and is not a one-content polynomial",
 )
 
 

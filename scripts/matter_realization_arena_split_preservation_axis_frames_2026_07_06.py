@@ -12,6 +12,14 @@ from fractions import Fraction
 from pathlib import Path
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+    "docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+)
+
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -249,8 +257,8 @@ def norm_text(s):
 SOURCE_QUOTES = {
     "docs/MINIMAL_AXIOMS_2026-06-29.md": [
         "The full one-site possibility domain has algebraic presentation `M_2(C)`.",
-        "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.",
-        "Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration before use as a premise.",
+        "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
+        "Further physical structure requires a retained derivation or bridge, or explicit approved- primitive registration, before use as a premise.",
     ],
     "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md": [
         "P-SD: a *site-local unitary* scalarization `T(x)` is supplied; alternatives that bypass spin diagonalization (for example a 2-component naive operator) are outside this local theorem unless separately mapped into P-SD",

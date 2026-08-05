@@ -109,8 +109,9 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   possibilities are distinguished by the supplied algebraic structure alone.
   Admissibility is one
   fixed finite-neighborhood rule, the same at every lattice translate; for
-  each site, the available possibilities are determined by, and vary with,
-  the nearest-neighbor conditions, consistent with local records.
+  each site, the probability distribution over the possibilities is determined
+  by, and varies with, the nearest-neighbor conditions; availability is its
+  support.
   A record, when present, locks exactly one admissible local possibility. A
   site never carries more than one record; records are permanent. Only records
   are readable; a readout value is determined by record content alone;
@@ -120,8 +121,9 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   that condition holds it gives exactly one answer.
   Downstream
   structures such as context selection, decomposition, `K`/CPT structure,
-  sector-generation rules, weighting, normalization, probability, occurrence
-  rules, update laws, measurement/decoherence dynamics, record-production
+  sector-generation rules, specific probability-distribution values,
+  formation-site and formation-rate rules, update laws,
+  measurement/decoherence dynamics, record-production
   dynamics, physical persistence dynamics, time metric, within-sector data,
   occupancy rules, P2/modulus, log-det readouts,
   source/action bridges, scale, local observability, law-admissibility or

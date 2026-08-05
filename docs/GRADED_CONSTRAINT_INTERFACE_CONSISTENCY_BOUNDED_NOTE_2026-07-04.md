@@ -1,7 +1,7 @@
 ---
 claim_id: graded_constraint_interface_consistency_bounded_note_2026-07-04
 claim_type: bounded_theorem
-claim_scope: "Defect exhibit for graded_constraint v1, plus N1-N3 interface results conditional on graded_constraint v2 as an unregistered repaired premise."
+claim_scope: "Conditional defect exhibit for graded_constraint v1 when a mixed-support context is separately supplied, plus N1-N3 algebraic interface results for an auxiliary grading w conditional on graded_constraint v2 as an unregistered repaired premise; no identification of w with the Admissibility distribution or formation statistics is made."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/graded_constraint_interface_consistency_2026_07_04.py
@@ -13,8 +13,9 @@ runner: scripts/graded_constraint_interface_consistency_2026_07_04.py
 
 **Date:** 2026-07-04
 **Type:** bounded_theorem
-**Authority:** conditional note only. It records a v1 defect exhibit and proves
-interface claims only against the named v2 conditional premise below.
+**Authority:** conditional note only. It records a v1 defect exhibit under a
+separately supplied mixed-support context and proves algebraic interface claims
+only against the named v2 conditional premise below.
 **Audit-status authority:** independent audit lane only. This note sets no
 audit verdict and makes no audit forecast.
 **Primary runner:**
@@ -30,8 +31,10 @@ replacement interface mechanically.
 
 ## Premise Profile
 
-- **Defect exhibit premise profile:** the v1 core text below plus the landed
-  Admissibility variation sentence only.
+- **Defect exhibit premise profile:** the v1 core text below plus a separately
+  supplied mixed-support context. The revised Admissibility variation sentence
+  alone does not force support variation; probabilities may vary at fixed
+  support.
 - **N1-N3 premise profile:** conditional on `graded_constraint v2 (candidate,
   unregistered)` as the named repaired premise, together with the quoted
   landed Record and Admissibility sentences where each result names them.
@@ -48,6 +51,12 @@ From [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
 - "Only records are readable."
 - "A readout value is determined by record content alone."
 
+> **Scope note (2026-08-05, adoption repair).** The Admissibility second
+> sentence quoted above was replaced by owner-approved revision on 2026-08-05.
+> It now reads: "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions."
+> Availability is the distribution's support. The quotation above is retained as
+> the wording this note consumed when it landed.
+
 ## Superseded v1 Core Text
 
 **graded_constraint v1 (superseded core text).** For record-conditioned
@@ -61,15 +70,15 @@ supplied.
 
 ## Defect Exhibit: v1 Is Defective
 
-**Verdict.** the v1 core as literally worded is **DEFECTIVE**.
+**Conditional verdict.** The v1 core is defective whenever a mixed-support
+context is supplied. The current axiom does not by itself establish that such a
+context occurs.
 
-The collision is unconditional. v1 says `w` is normalized on each menu and also
+The collision is conditional on mixed support. v1 says `w` is normalized on each menu and also
 says every finite orthogonal resolution of the composite identity is
-menu-eligible. The landed Admissibility sentence says available possibilities
-are determined by, and vary with, nearest-neighbor conditions. Therefore there
-can be a record context in which an orthogonal identity resolution is mixed:
-one element is available and another element is unavailable in that record
-context.
+menu-eligible. Supply a record context in which an orthogonal identity
+resolution is mixed: one element lies in the Admissibility distribution's
+support and another does not.
 
 v1 still makes that mixed resolution menu-eligible, so v1 forces it to
 normalize as a physical menu. That is the defect. An unavailable element cannot
@@ -77,9 +86,9 @@ simultaneously be an unavailable outcome under Admissibility and a physical
 menu alternative under the literal v1 menu sentence. No physical reading exists
 for that mixed normalized menu.
 
-This exhibit does not use Record, observed facts, Born assumptions, or any
-repairing interpretation. It cites only the v1 text above and the Admissibility
-variation sentence.
+This exhibit does not use Record, observed facts, or Born assumptions. It uses
+the v1 text plus the named mixed-support condition; it is not an axiom-text
+consequence.
 
 ## Named Conditional Premise: v2
 
@@ -88,31 +97,53 @@ variation sentence.
 nearest-neighbor composite, with `w(0) = 0`, `w(identity) = 1`, additive
 over all orthogonal pairs, non-contextual, and dependent on the
 surrounding record configuration through the nearest-neighbor channel.
-Formation statistics on a record-conditioned menu of available
-possibilities are `w` conditioned on that menu: the available elements'
-weights renormalized by their total. If the available total is zero the
-conditional is undefined — a named boundary, not hidden. No rate,
+The auxiliary menu grading is `w` conditioned on the Admissibility support:
+the supported elements' `w`-values renormalized by their total. If that total
+is zero the auxiliary conditional is undefined — a named mathematical
+boundary, not hidden. This conditional is not a formation-statistics law
+unless a separate bridge relates `w` to the Admissibility distribution. No rate,
 propagation rule, orientation, scale, or record-production rule is
 supplied.
 
 The structural change is narrow. Full-lattice additivity is explicit, so the
 frame-function strength needed by a later Born-form bridge is preserved. Menus
-no longer carry normalization as an axiom; conditioning does; availability filters outcomes, never weights. Mixed resolutions still normalize mathematically by lattice additivity, while unavailable elements cannot be locked and drop out of formation statistics through conditioning.
+no longer carry `w`-normalization as a premise; auxiliary conditioning does;
+availability is the support of the axiom's distribution. Mixed resolutions
+still normalize mathematically by lattice additivity, while unsupported
+elements drop out of the auxiliary conditioned grading.
 
 ## N1 v2: Coexistence
 
 **Verdict.** Conditional on v2, grading and availability coexist because they
 are different interface objects.
 
-Availability is binary. It is supplied by the landed nearest-neighbor
-admissibility rule and governs what can be locked. The weight function `w` is
-law-side grading data on the full projection lattice. Formation statistics are
-obtained by conditioning `w` on the available elements of the record-conditioned
-menu.
+> **Scope note (2026-08-05, adoption repair).** The 2026-08-05 owner-approved
+> Admissibility revision makes availability the support of a law-level
+> distribution rather than a separately supplied primitive set. That does not
+> merge the two objects this section holds apart: `w` here is the
+> graded-constraint v2 grading on the full projection lattice, a named
+> conditional premise, and it is not the Admissibility distribution. It is an
+> auxiliary nonphysical grading until a bridge supplies a relation to that
+> distribution. Read
+> post-revision, "availability is binary" is a statement about the support
+> predicate (in/out), not about how availability is supplied; the coexistence
+> result stands for `w` against availability. The zero-available-total
+> boundary remains non-vacuous only as a boundary on the auxiliary grading: it
+> is a boundary on the
+> available elements' total `w`-weight, and `w` may vanish where the
+> Admissibility distribution does not. This note supplies no relation between
+> `w` and the Admissibility distribution. If `w` were identified with that
+> distribution, the zero-available-total boundary would be vacuous and the
+> conditioned values would merely reproduce the axiom's probabilities.
+
+Availability is the binary support predicate of the landed nearest-neighbor
+probability rule and governs what can be locked. The weight function `w` is
+auxiliary grading data on the full projection lattice. Its conditioned values
+are mathematical interface data, not formation statistics.
 
 The conditioning map never alters availability: it reads the available set,
 renormalizes the weights of the available elements by their available total,
-and returns statistics or the named undefined boundary. Availability never
+and returns an auxiliary grading or the named undefined boundary. Availability never
 alters `w`: unavailable projections still have full-lattice values, and
 orthogonal resolution sums still obey additivity. The zero-available-total
 boundary is explicit: when the available elements have total `w`-weight zero,
@@ -121,7 +152,7 @@ the conditional is undefined rather than silently normalized.
 ## N2 v2: Conditioning Channel
 
 **Verdict.** Conditional on v2, candidate resolution shapes are
-record-independent, while physical menu status and conditioned statistics are
+record-independent, while physical menu status and the conditioned auxiliary grading are
 record-dependent.
 
 The prior draft's "eligibility invariance" label was wrong. The invariant
@@ -129,13 +160,12 @@ object is only the algebraic candidate shape of a finite resolution, such as a
 local `Z` resolution, a local `X` resolution, or an entangled/complement
 resolution in the nearest-neighbor composite. Whether all elements of such a
 shape are available is a physical menu-status question and varies with the
-neighbor records. The conditioned statistics vary as well, because both
-availability and `w` are record-conditioned through the nearest-neighbor
-channel named by v2.
+neighbor records. The conditioned auxiliary grading varies as well, because
+both support and `w` are record-conditioned in the named v2 fixtures.
 
-This variation is not a defect. It is exactly the landed Admissibility sentence
-showing through: available possibilities are determined by, and vary with, the
-nearest-neighbor conditions.
+This variation is not a defect, but it is fixture content rather than a
+consequence of distribution variation alone: the axiom allows probabilities to
+vary while support remains constant.
 
 ## N3 v2: Narrow Record Interface
 
@@ -150,29 +180,49 @@ The two claims are only these:
 2. No readout value queries `w` directly: "Only records are readable. A readout
    value is determined by record content alone."
 
-The sharpened ontology is that `w`, given the records, is law-side data. It is
-the law's one answer at that state; distribution-valued answers are still one
-answer. It is not extra state content: two states with identical records do not differ in `w`.
+The conditional premise makes `w`, given the records, auxiliary law-side data.
+It is not extra state content: two states with identical records do not differ
+in `w`.
 
-This is not a claim that `w` has no readable consequences. Record frequencies can read `w` in aggregate; that is its point. The claim is only that an individual readout value is fixed by record content alone and that no entangled projection becomes lockable content.
+No readable or frequency consequence of `w` follows without a bridge to the
+Admissibility distribution or another operational rule. The claim here is only
+that an individual readout value is fixed by record content alone and that no
+entangled projection becomes lockable content.
 
 ## No-Go Discipline Gate
 
-- **N1 route enumeration:** the v1 defect is not repaired by deriving weights
-  from Admissibility. Admissibility supplies availability, not a full-lattice
-  weight.
+- **N1 route enumeration:**
+  - Route 1, identify `w` with the Admissibility distribution (ATTEMPTED):
+    removes object coexistence but makes the zero-supported-total boundary
+    vacuous and does not supply a full projection-lattice grading.
+  - Route 2, restrict `w` to the Admissibility support (ATTEMPTED): avoids
+    mixed unsupported terms only by abandoning v1's full-lattice domain and
+    additivity premise.
+  - Route 3, require every orthogonal resolution to lie wholly in support
+    (ATTEMPTED): repairs v1 only under an extra support-closure premise that
+    the current distribution-variation axiom does not supply.
+  - Route 4, retain unsupported projections as physical menu alternatives
+    (ATTEMPTED): contradicts the forced reading of admissible/available as
+    distribution support.
+  - Route 5, condition an independent full-lattice auxiliary grading on
+    support (ATTEMPTED): succeeds conditionally as v2 and keeps the two typed
+    objects distinct; the runner checks coexistence and conditioning.
+  - Route 6, normalize a zero-total supported grading (ATTEMPTED): the
+    denominator is exactly zero, so the attempted conditional law is
+    undefined; v2 exposes this boundary rather than silently assigning it a
+    probability distribution.
 - **N2 premise separation:** v2 is a named conditional premise. This note does
   not register it, approve it, or treat it as landed axiom text.
 - **N3 hidden-wall scan:** the full-lattice/additivity surface, mixed
   available/unavailable resolutions, the zero-available-total boundary, and the
-  aggregate-readability of `w` through record frequencies are explicit.
+  absence of an operational bridge for `w` are explicit.
 - **N4 residual matching:** v2 supplies no rate, propagation rule, orientation,
   scale, or record-production rule. Those remain outside this note.
 - **N5 rhetoric audit:** "coexistence", "conditioning channel", and "narrow
   record interface" are conditional interface results, not derivations of Born
   values or dynamics.
 - **N6 partial-closure path scan:** the note closes only the v2 interface
-  checks it states. It does not close probability, measurement-context,
+  checks it states. It does not close a Born-form bridge, probability values, measurement-context,
   dynamics, or readout-context gates.
 - **N7 steelman:** an objector can reject v1 literally, and this note agrees.
   The repaired claim is v2 only: normalization is by conditioning, not by
@@ -185,7 +235,7 @@ This is not a claim that `w` has no readable consequences. Record frequencies ca
 
 - Does **not** claim v1 is consistent.
 - Does **not** register, approve, or claim v2 as a framework primitive.
-- Does **not** derive Born weights.
+- Does **not** derive Born weights or identify `w` with the Admissibility distribution.
 - Does **not** supply propagation, stability, rate, scale, orientation, or
   record production.
 - Does **not** set or forecast any audit verdict.
@@ -197,12 +247,12 @@ This is not a claim that `w` has no readable consequences. Record frequencies ca
 Measured runner output:
 
 ```text
-CHECK 01: PASS - Defect exhibit: v1 mixed identity resolution :: orthogonal identity resolution normalizes while containing unavailable ZA1
-CHECK 02: PASS - N1 v2: coexistence and conditioning separation :: availability and w remain distinct; conditioning excludes unavailable outcomes
+CHECK 01: PASS - Conditional defect exhibit: v1 mixed identity resolution :: supplied mixed-support resolution normalizes while containing unsupported ZA1
+CHECK 02: PASS - N1 v2: auxiliary-grading coexistence and conditioning separation :: Admissibility support and auxiliary w remain distinct
 CHECK 03: PASS - N1 v2: zero-available-total boundary :: conditional is undefined while full-lattice additivity remains intact
-CHECK 04: PASS - N2 v2: record-independent shapes, record-dependent menus :: shape function receives records but derives shapes from algebra dimension
+CHECK 04: PASS - N2 v2: record-independent shapes, fixture-dependent menus and auxiliary grading :: shape function receives records but derives shapes from algebra dimension
 CHECK 05: PASS - N3 v2: local locking and record-only readout :: entangled projection not lockable; identical-record different-w state rejected
 CHECK 06: PASS - Rejectors: additivity, conditioning, readout mutations caught :: same projections and states fail under three genuine mutations
-CHECK 07: PASS - Needle: prose premises and status discipline :: v1/v2 text, landed sentences, boundary, aggregate-readability, measured total
+CHECK 07: PASS - Needle: prose premises and status discipline :: v1/v2 text, landed sentences, auxiliary boundary, no-readability fence, measured total
 TOTAL: PASS=7 FAIL=0
 ```

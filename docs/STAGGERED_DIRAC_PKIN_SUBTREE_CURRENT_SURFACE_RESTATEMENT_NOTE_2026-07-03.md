@@ -1,7 +1,7 @@
 ---
 claim_id: staggered_dirac_pkin_subtree_current_surface_restatement_note_2026-07-03
 claim_type: bounded_theorem
-claim_scope: "Against the current minimal-axiom text (MINIMAL_AXIOMS_2026-06-29.md as amended through the one-record-per-site restoration), this note restates the premise surface of the P-KIN subtree (the union of ledger rows transitively downstream of the Kawamoto-Smit forcing theorem and the kinetic-class forcing theorem, 1450 rows at drafting time) so the independent audit lane can re-grade it against the current derivation surface. Content: (i) P-KIN and P-SD are supplied surface declarations, consistent with the axiom note's explicit non-selection clause and its downstream-content clause, both quoted verbatim; (ii) the current Admissibility wording contains the variation clause that the realized-kinetic-branch chain consumes, quoted verbatim; (iii) the ledger claim_scope of the Kawamoto-Smit row and the claim-scope first sentences of the kinetic-class note, the five realized-kinetic-branch notes, and the class-coupling transposition note are quoted verbatim with their ledger statuses at drafting time; (iv) the representative-level facts the chain rests on are independently re-verified by the paired runner (plaquette-flux dichotomy, Clifford -1 cocycle anticommutation, per-direction coefficient-algebra dimension dichotomy [1,1,1] versus [2,2,2], the exact sqrt(2) anticommuting pair gap, and the spectral zero-set dichotomy anchors). This restatement does not itself select K1 over K0 and proposes no Tier-A status movement; no audit grades are authored or predicted; the Kawamoto-Smit note is not edited."
+claim_scope: "Against the current minimal-axiom text, this note restates the premise surface of the P-KIN subtree and re-verifies representative-level algebra only. The current axiom supplies variation of a probability distribution, not necessarily variation of support or kinetic coefficients; the historical realized-kinetic-branch selection scopes therefore require an additional support- or weight-to-coefficient bridge and are quoted only for provenance. The finite checks cover the plaquette-flux dichotomy, Clifford -1 cocycle anticommutation, coefficient-algebra dimensions, the exact sqrt(2) pair gap, and spectral zero-set anchors. This restatement does not select K1 over K0, move a Tier-A status, author an audit grade, or edit the Kawamoto-Smit note."
 upstream_dependencies:
   - minimal_axioms
   - staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07
@@ -61,7 +61,7 @@ P-KIN, the declared nearest-neighbor kinetic form, and P-SD, site-local unitary
 scalarization, are supplied surface declarations, not axiom content. The current
 axiom note licenses that distinction through its downstream-content clause:
 
-> A realized kinetic branch, if proposed, is downstream content: it needs derivation, bridge, explicit admission, or approved primitive registry update before audit rows may use it as load-bearing content.
+> A realized kinetic branch, if proposed, is downstream content: it needs a retained derivation or bridge, or an approved-primitive registry update, before audit rows may use it as load-bearing content.
 
 The Kawamoto-Smit ledger row's claim_scope, authority
 `rows["staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"]["claim_scope"]`
@@ -79,25 +79,33 @@ per-site `M_2(C)` possibility algebra, and site-local frames.
 
 ## 3. Axiom-text correspondence: the load-bearing clauses
 
-The current axiom text supplies the variation clause consumed by the
-realized-kinetic-branch chain:
+The current axiom text supplies a distribution-variation clause:
 
-> the available possibilities are determined by, and vary with, the nearest-neighbor conditions
+> the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions
 
 The same text gives the full non-selection sentence:
 
-> It does not choose a Hamiltonian or transfer operator, supply transition probabilities or weights, select a scalar or nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or provide a record-production process or physical persistence dynamics.
+> It does not choose a Hamiltonian or transfer operator, supply transition-probability or weight values, select a scalar or nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or provide a record-production process or physical persistence dynamics.
 
 It also states the record-permanence clause:
 
 > When present, a record locks exactly one admissible local possibility. A site never carries more than one record; records are permanent.
 
+Distribution variation does not imply variation of its support and does not,
+without a bridge, imply variation of a kinetic coefficient or availability
+selector. Therefore the current axiom does **not** supply the historical
+support-variation premise consumed by the realized-kinetic-branch selection
+chain. The scopes quoted in section 4 are preserved as historical statements;
+their selection conclusions are conditional on an additional support- or
+weight-to-coefficient bridge. This restatement's representative-level algebra
+checks do not provide that bridge.
+
 Axiom-level non-selection of a kinetic branch and licensed-surface downstream
-selection theorems are consistent readings: the axiom text supplies the
-variation premise and explicitly declines to select; the realized-kinetic-branch
-notes consume the variation premise on a supplied licensed surface and are
-downstream content by the axiom note's own clause. The auditor grades the chain;
-this note maps the premises.
+conditional theorems are consistent readings only after the extra bridge is
+named. The axiom supplies probability-distribution variation and explicitly
+declines to select a kinetic branch; it does not by itself supply the older
+availability/coefficient variation premise. The auditor grades the chain; this
+note maps the historical premises without ratifying that identification.
 
 ## 4. Chain state map: verbatim scopes and drafting-time statuses
 

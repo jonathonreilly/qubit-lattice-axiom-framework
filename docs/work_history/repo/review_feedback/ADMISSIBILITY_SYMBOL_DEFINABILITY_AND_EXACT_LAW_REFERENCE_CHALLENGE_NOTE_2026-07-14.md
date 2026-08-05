@@ -28,6 +28,19 @@ The answer depends on which job the document is meant to do: define a
 framework schema, state a theory of our universe, or describe one instantiated
 model.
 
+> **Current-reading annotation (2026-08-05).** The adopted Admissibility rule
+> is now distribution-valued:
+> `A : nearest-neighbor condition -> probability measure on the full one-site
+> possibility domain`; its availability menu is the support projection. This
+> annotation controls every historical menu-valued formula below. The paired
+> majority/minority tables remain valid as distinct finite distribution-valued
+> rules by assigning unit mass to the displayed singleton and `(1/2,1/2)` on
+> a tie. However, two different probability measures on one support are now
+> two different interpretations of `A`, not two statistical completions of
+> one fixed `A`. The surviving complete-law gap holds the whole distribution
+> rule fixed and varies formation site/rate, continuation, concurrency, or
+> other dynamics. No governing axiom sentence is changed by this annotation.
+
 ## Result Up Front
 
 The challenge changes the constitutional conclusion, but it does not erase the

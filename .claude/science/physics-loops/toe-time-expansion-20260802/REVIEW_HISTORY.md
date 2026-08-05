@@ -1151,3 +1151,33 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Successor launched into the freed slot: Cycle 926 (the
   gate-robustness sweep + the separation family, blockM8 — 919's
   two named hardenings).
+
+## Cycle 921 loop cost (blockM7, PR #5991) — 2026-08-05
+
+- Supervisor review: the pre-registration discipline (every
+  predictor an integer function of the graph computed before any
+  propagator ran); the double zero-deviation reproduction (917 AND
+  919, 156 rows each) before any new number; the matched-pair
+  design (two pairs identical on every tracked statistic, split
+  4v3 — excluding all counting mechanisms at once); both
+  loop-count readings run; the pair-key ordering defect documented
+  with the canonical-comparison verification.
+- Verdict: THE PAIR-CYCLE LAW (three-tier grading by shortest
+  pointer-through cycle length; ceiling = independence number of
+  survivors). Loop-count phrasing dies — audit-lane propagation
+  flag: retire "loops cost redundancy" as a count statement
+  wherever cited; the law subsumes 917's degree reading and
+  explains 917's high-field failures exactly.
+- Checker (12/12 teeth, SUPPORTED, zero disagreements): the
+  adversarial hunt (120/120 on 60 out-of-roster cube sub-lattices)
+  and the 102-geometry model-degeneracy attack (no rival within 8
+  cells) are the strongest external-validity sweep of the lane so
+  far.
+- The exception honestly promoted: G1 at 0.10 (predicted 2,
+  measured 1) = a second size-driven channel -> Cycle 927 launched
+  with the unification question (is the 919 degree grading really
+  a size grading?).
+- Scope rules carried: d=2 constructible only in cube coordinates
+  under the frozen tie-break; the l=3 +X/+X forcing.
+- Cluster-cap (7th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).

@@ -508,14 +508,30 @@ window2b: REOPENED 2026-08-04 ~22:00 EDT on owner correction (the stop
     lambda*(d)); non-overreach explicit (s(k) does not decide the
     pointer-side gates — 0.36-bit witness); checker ZERO refutations
     ZERO findings
-  c5-m14: M14 (Cycle 934, THE POINTER-SIDE GATES — the capstone:
-    chi/excess/H_Z/content-gate derived in the same 2(d+1) reduction;
-    t_open(lambda) derived and its degree-independence explained
-    (back-action order); t_close where content clips; THE COMPLETE
-    STAR CERTIFICATION THEOREM composed and sealed (full verdict
-    tables from the reduction alone vs pinned full-space verdicts;
-    sealed d=9/10 + a never-used field); honest split if any
-    component resists) — running
+  c5-m14: blockM14 SHIPPED as PR #6005 — Cycle 934 THE CAPSTONE: the
+    pointer-side gates DERIVED (H_Z = 1 bit EXACTLY — the X-flip
+    lemma; excess = chi identically; the content gate = the single-arm
+    Holevo threshold; t_open closed-form at zero pointer field with
+    the EXACT degree-independence explanation — THE ONE-TERM
+    MECHANISM: the pointer's transverse term runs BOTH the arm
+    entanglement (933) and the gate's degree-dependence, bound
+    spread <= 0.315 lambda^2); the content gate is PERIODIC pi/2
+    (second lobe holds zero grid points); EVERY 932 EDGE DERIVED
+    (clip switch 21/21); THE COMPOSED STAR CERTIFICATION THEOREM
+    (11 exact hypotheses; 78 verdict rows + 741 per-sample
+    comparisons EXACT; 10-cell seal incl. THREE corpus-absent
+    fields); restriction 2,262 + 8,606 values at exactly 0;
+    constants NINE-way; checker rebuilt the reduction from
+    full-space symmetrisation (4.4e-16), zero refutations; the grid
+    phase stays imported with the 932 qualifier re-derived
+  c5-ac4: AC4 (Cycle 939, THE SPACE-GAP CARRIER SWEEP — Q0 mandatory
+    prior-art sweep FIRST (incl. the gravity 901 space-identification
+    block and the species-bridge obligation); the two carriers from
+    their own bytes; THE GAUGE TEST (does ANY observable consume both
+    carriers jointly? none -> the gap is a pseudo-question at the
+    current surface; one -> the carrier sentence's exact content);
+    the 938 refutation not to be weakened; route-4 price updated
+    without overreach) — running
 owner_directive_0400: >
   2026-08-05 ~04:00 EDT — the owner: (1) Planck IS in the primitive
   registry (the scale-reference primitive; corroborated in-repo) — the

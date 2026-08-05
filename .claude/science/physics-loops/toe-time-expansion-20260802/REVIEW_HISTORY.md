@@ -1483,6 +1483,32 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Cluster-cap (G-family): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
 
+## Cycle 934 pointer gates capstone (blockM14, PR #6005) — 2026-08-05
+
+- Supervisor review: the lemma-grade symmetry work (H_Z = 1 with
+  commutator and fixed-point defects EXACTLY zero — promoting
+  932's disclosure); the gate reduction (excess = chi; the
+  single-arm Holevo threshold); the one-term mechanism unifying
+  933's entanglement source with the gate's degree-dependence; the
+  checker's reduction-rebuild-by-symmetrisation (the primary's
+  Dicke elements themselves under test); the honest holdout split
+  on the seal (frozen-field cells NOT claimed); both spec
+  discrepancies resolved by the stronger reading (the nine-way
+  count was the supervisor's arithmetic slip, published).
+- Verdict: THE COMPLETE STAR CERTIFICATION THEOREM CLOSES —
+  931 relations + 932 counting (lobe-scope-corrected) + 933
+  amplitudes + 934 gates = every star verdict from the frozen
+  protocol at the stated grid phase; 78 rows / 741 samples EXACT;
+  sealed at corpus-absent fields. A star's certificate is now a
+  computation. Remaining imports: the protocol itself, the grid
+  phase, non-star geometries (937).
+- The lobe finding adopted (period pi/2; zero grid points in the
+  second lobe — no verdict affected; H10 corrected).
+- Cluster-cap (14th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 939 (the space-gap
+  carrier sweep, blockAC4, with the mandatory prior-art sweep).
+
 ## Cycle 938 reclassification refuted (blockAC3, PR #6004) — 2026-08-05
 
 - Supervisor review: the minimal-premise rule's biggest test this

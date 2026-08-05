@@ -1,0 +1,1873 @@
+{
+  "all_certificates_pass": true,
+  "authority": "source note only; no audit verdict is set or predicted by this block",
+  "block": "A3_CHANNEL_CONTENT_MEASURABILITY_ORPHANED_NOTE_AND_613_RESIDUES",
+  "certificates": {
+    "A_PINS": {
+      "AUDIT_INPUT_PATHS": [
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+        "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+        "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+        "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json",
+        "scripts/frontier_cycle905_born_narrowing_2026_07_28.py",
+        "outputs/born_narrowing_cycle905_receipt_2026_07_28.json",
+        "scripts/frontier_cycle906_covariance_tension_2026_07_28.py",
+        "outputs/covariance_tension_cycle906_receipt_2026_07_28.json",
+        "outputs/m6_identification_cycle907_receipt_2026_07_28.json",
+        "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py",
+        "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json",
+        "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "blocked_modules_loaded": [],
+      "bytes": {
+        "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md": 11492,
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": 8846,
+        "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": 13116,
+        "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": 17314,
+        "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": 7169,
+        "outputs/m6_identification_cycle907_receipt_2026_07_28.json": 22689,
+        "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json": 16040,
+        "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json": 387139,
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": 26046,
+        "scripts/frontier_cycle863_time_from_records_2026_07_28.py": 23020,
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": 47315,
+        "scripts/frontier_cycle905_born_narrowing_2026_07_28.py": 75262,
+        "scripts/frontier_cycle906_covariance_tension_2026_07_28.py": 115209,
+        "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py": 114818
+      },
+      "certificate": "A_PINS",
+      "existing_worktree_relative": true,
+      "firewall_hits": [],
+      "git_blob_mismatches": [],
+      "git_blobs": {
+        "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md": "473f094d05d4118d5e44bd29f1d9aec950c1c088",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "4a863da1f3f255354839277271a3a69a5c205133",
+        "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": "7094c986dc0560e8982507d8cc379f5c720b639f",
+        "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "392cba199a75a14a8bb88808943c1259cbd7a94b",
+        "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+        "outputs/m6_identification_cycle907_receipt_2026_07_28.json": "e7eef6eeeb62aeddcdb12417ccd8ec871b9d87a7",
+        "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json": "1fd7522ad2af152f2e13327e752e2eb9f37e67bb",
+        "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json": "4843b2ca7dd5af0ee1c67ff11aa4e47d7cb22976",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+        "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+        "scripts/frontier_cycle905_born_narrowing_2026_07_28.py": "f9f2171602bddf7d6164261dc13a2ee4f7e3046c",
+        "scripts/frontier_cycle906_covariance_tension_2026_07_28.py": "d7577bb2ac9f4cb7ee9d8abc5f19e9c7cf888df9",
+        "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py": "359b5a502fd9cbd05653f33e0b7931caaf868a25"
+      },
+      "git_blobs_all_match": true,
+      "literal_ok": true,
+      "modes": {
+        "ast_only": [
+          "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+          "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+          "scripts/frontier_cycle905_born_narrowing_2026_07_28.py",
+          "scripts/frontier_cycle906_covariance_tension_2026_07_28.py",
+          "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py"
+        ],
+        "imported": [
+          "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+        ],
+        "json_only": [
+          "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+          "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json",
+          "outputs/born_narrowing_cycle905_receipt_2026_07_28.json",
+          "outputs/covariance_tension_cycle906_receipt_2026_07_28.json",
+          "outputs/m6_identification_cycle907_receipt_2026_07_28.json",
+          "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json"
+        ],
+        "text_only": [
+          "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md"
+        ]
+      },
+      "pass": true,
+      "sha256": {
+        "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md": "d2a123540c5a892750e48f01a4d1bf9bfd33270cc7d9c9f39b8a8b82e1728a12",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+        "outputs/born_narrowing_cycle905_receipt_2026_07_28.json": "4c42c3d1755674552c5928016d54cfb2c666103781e96581f4291b5634a82d40",
+        "outputs/covariance_tension_cycle906_receipt_2026_07_28.json": "e4de35c272216e0aace2585bdc2e5db198788752d63c11b0dc9ebc67146e7a3f",
+        "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c",
+        "outputs/m6_identification_cycle907_receipt_2026_07_28.json": "d67a967a6226a4e1ed2e0bf1762cb3b544df87e1fe4b07d6399f13ec179086ca",
+        "outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json": "91c5631415d0231390fedbd0174f074de45cfa33b6dd4f706ed6fcdbf4dfd1d8",
+        "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json": "9c91d740ce2188d8fd6c51947d63adec38abb8aa1c49eaaf1c2535b16e9bcc52",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+        "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
+        "scripts/frontier_cycle905_born_narrowing_2026_07_28.py": "83429f35312e0df16d3d11e65685cb87b8e732b19299e1078ddaea1e1444afb3",
+        "scripts/frontier_cycle906_covariance_tension_2026_07_28.py": "9c6392d593c1bf37e70f84692732d1e5cfa3f4377393dab846a15789fc0ce008",
+        "scripts/frontier_cycle909_within_world_pricing_2026_07_28.py": "b38862284c0287dc8b1f24f5af8bf014509e22377d341b9933a05b2183af0021"
+      },
+      "sha256_all_match": true,
+      "sha256_mismatches": []
+    },
+    "B_RESTRICTION_GATE": {
+      "certificate": "B_RESTRICTION_GATE",
+      "event_space_digest": "b21d67fd5d1b2da59013aa4eacad327378b379c53fbb0c6b77bda83818001074",
+      "pass": true,
+      "reproduce": 23,
+      "rows": [
+        {
+          "computed": 92260,
+          "expected": 92260,
+          "gate": "878_event_cardinality",
+          "match": true
+        },
+        {
+          "computed": 52018,
+          "expected": 52018,
+          "gate": "878_F_CONTENT_cells",
+          "match": true
+        },
+        {
+          "computed": 92260,
+          "expected": 92260,
+          "gate": "878_F_ATOM_cells",
+          "match": true
+        },
+        {
+          "computed": true,
+          "expected": true,
+          "gate": "878_atoms_are_singletons",
+          "match": true
+        },
+        {
+          "computed": 748,
+          "expected": 748,
+          "gate": "878_worlds_with_events",
+          "match": true
+        },
+        {
+          "computed": 68,
+          "expected": 68,
+          "gate": "878_world_orbit_count",
+          "match": true
+        },
+        {
+          "computed": true,
+          "expected": true,
+          "gate": "878_action_is_a_census_bijection",
+          "match": true
+        },
+        {
+          "computed": {
+            "B0": 47872,
+            "B1": 44224,
+            "F": 164
+          },
+          "expected": {
+            "B0": 47872,
+            "B1": 44224,
+            "F": 164
+          },
+          "gate": "878_events_by_tag",
+          "match": true
+        },
+        {
+          "computed": 17,
+          "expected": 17,
+          "gate": "878_crossing_pair_count",
+          "match": true
+        },
+        {
+          "computed": true,
+          "expected": true,
+          "gate": "878_F_CONTENT_and_F_WORLD_cross",
+          "match": true
+        },
+        {
+          "computed": 1419,
+          "expected": 1419,
+          "gate": "906_M6_support_events",
+          "match": true
+        },
+        {
+          "computed": [
+            3,
+            4,
+            11,
+            12,
+            19,
+            20,
+            26,
+            27,
+            32,
+            33,
+            37
+          ],
+          "expected": [
+            3,
+            4,
+            11,
+            12,
+            19,
+            20,
+            26,
+            27,
+            32,
+            33,
+            37
+          ],
+          "gate": "906_M6_support_worlds",
+          "match": true
+        },
+        {
+          "computed": 11806080,
+          "expected": 11806080,
+          "gate": "906_M6_total",
+          "match": true
+        },
+        {
+          "computed": 1,
+          "expected": 1,
+          "gate": "906_escape_orbit_count",
+          "match": true
+        },
+        {
+          "computed": 19003,
+          "expected": 19003,
+          "gate": "907_degree0_ratio_scale",
+          "match": true
+        },
+        {
+          "computed": 19003,
+          "expected": 19003,
+          "gate": "909_degree0_scale",
+          "match": true
+        },
+        {
+          "computed": {
+            "31": 1,
+            "613": 1
+          },
+          "expected": {
+            "31": 1,
+            "613": 1
+          },
+          "gate": "909_degree0_scale_factorisation",
+          "match": true
+        },
+        {
+          "computed": {
+            "31": 1,
+            "613": 1
+          },
+          "expected": {
+            "31": 1,
+            "613": 1
+          },
+          "gate": "909_degree0_scale_is_31_times_613",
+          "match": true
+        },
+        {
+          "computed": 175,
+          "expected": 175,
+          "gate": "909_degree2_scale",
+          "match": true
+        },
+        {
+          "computed": 1404,
+          "expected": 1404,
+          "gate": "909_recipe_count_expected",
+          "match": true
+        },
+        {
+          "computed": 129,
+          "expected": 129,
+          "gate": "909_escape_events_per_world",
+          "match": true
+        },
+        {
+          "computed": 1419,
+          "expected": 1419,
+          "gate": "909_escape_support_events",
+          "match": true
+        },
+        {
+          "computed": [
+            3,
+            4,
+            11,
+            12,
+            19,
+            20,
+            26,
+            27,
+            32,
+            33,
+            37
+          ],
+          "expected": [
+            3,
+            4,
+            11,
+            12,
+            19,
+            20,
+            26,
+            27,
+            32,
+            33,
+            37
+          ],
+          "gate": "909_escape_worlds",
+          "match": true
+        }
+      ],
+      "total": 23
+    },
+    "C1_CONTENT_MEASURABILITY": {
+      "A_CONTENT_caveat": {
+        "disclosure": "the census content field is not the record content itself but a TRUNCATED sha256 of the packed lane state; its provenance is the pinned Cycle-878 source, byte-quoted here",
+        "probe": {
+          "content_of_calls": 92260,
+          "content_values_with_more_than_one_raw_preimage": 0,
+          "distinct_content_values": 52018,
+          "distinct_raw_lane_state_preimages": 52018,
+          "meaning": "the 16-hex content field is INJECTIVE on the realized lane states of this census (measured, not assumed), so the F_CONTENT partition IS the true record-content partition and both the PASS and the FAIL measurability verdicts below are exact for record content",
+          "truncation_is_injective_on_this_census": true,
+          "what_the_field_is": "sha256(bytes(lane_state)).hexdigest()[:16]",
+          "worst_preimage_multiplicity": 1
+        },
+        "provenance_byte_quote": {
+          "byte_length": 69,
+          "byte_offset": 12563,
+          "label": "A_CONTENT_FIELD",
+          "occurrences_in_file": 1,
+          "sha256_of_quote": "6390eba5784455b273ccc3dc9a9e7178d1afdac617bfdf2e1622b0eecf8d8da1",
+          "text": "return sha256(bytes(C863.lane_state(columns, lane))).hexdigest()[:16]"
+        },
+        "well_posedness": "the measurability question is well posed regardless of the field's cryptographic nature: F_CONTENT is a partition of the event space and constancy on its cells is a definite property of a weighting"
+      },
+      "cell_size_histogram": {
+        "1": 34670,
+        "10": 5,
+        "11": 64,
+        "12": 127,
+        "13": 2,
+        "14": 4,
+        "15": 29,
+        "17": 1,
+        "2": 8474,
+        "20": 64,
+        "23": 1,
+        "24": 1,
+        "29": 1,
+        "3": 4256,
+        "4": 1843,
+        "46": 1,
+        "5": 713,
+        "6": 585,
+        "7": 534,
+        "8": 395,
+        "9": 247,
+        "92": 1
+      },
+      "certificate": "C1_CONTENT_MEASURABILITY",
+      "content_cells_crossing_more_than_one_world": 17348,
+      "content_measurable_weightings": [
+        "M1_COUNTING"
+      ],
+      "event_cardinality": 92260,
+      "finding": "of the six weightings on the lane, 1 is/are constant on record content (M1_COUNTING) and 5 is/are not (M2_PER_WORLD_UNIFORM, M3_OCCUPATION_WEIGHTED, M4_FORMATION_LIFETIME, M5_FORMATION_MOMENT, M6_ABSOLUTE_ORBIT_UNIFORM); a weighting that is not content-measurable cannot serve as the Record axiom's readout I",
+      "n_content_cells": 52018,
+      "non_content_measurable_weightings": [
+        "M2_PER_WORLD_UNIFORM",
+        "M3_OCCUPATION_WEIGHTED",
+        "M4_FORMATION_LIFETIME",
+        "M5_FORMATION_MOMENT",
+        "M6_ABSOLUTE_ORBIT_UNIFORM"
+      ],
+      "pass": true,
+      "question": "does the weighting take a value determined by record content alone -- i.e. is it constant on every F_CONTENT cell?  Any weighting that fails CANNOT be the readout I of the Record axiom (the IF1-strong identification).",
+      "record_axiom_sentence": {
+        "byte_length": 54,
+        "byte_offset": 2359,
+        "label": "R2_CONTENT_ALONE",
+        "occurrences_in_file": 1,
+        "sha256_of_quote": "9f42db3f41cdea4ccb423adfd334f03c1c2e69420f61cbd2e5714d6c41144350",
+        "text": "A readout value is determined by record content\nalone."
+      },
+      "table": [
+        {
+          "definition": "w(e) = 1 for every realized record-write event",
+          "is_content_measurable": true,
+          "n_cells_tested": 52018,
+          "n_multi_event_cells": 17348,
+          "n_violating_cells": 0,
+          "violating_witnesses": [],
+          "weighting": "M1_COUNTING"
+        },
+        {
+          "definition": "each world carrying at least one event gets equal mass 1/|supported worlds|, spread uniformly over its own events",
+          "is_content_measurable": false,
+          "n_cells_tested": 52018,
+          "n_multi_event_cells": 17348,
+          "n_violating_cells": 85,
+          "violating_witnesses": [
+            {
+              "cell_size": 3,
+              "content": "00d35444b105808e",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    92,
+                    4,
+                    "B1",
+                    0,
+                    "00d35444b105808e"
+                  ],
+                  "moment": 4,
+                  "ordinal": 0,
+                  "tag": "B1",
+                  "weight_numerator": 8320,
+                  "world": 92
+                },
+                {
+                  "event": [
+                    91,
+                    5,
+                    "B1",
+                    0,
+                    "00d35444b105808e"
+                  ],
+                  "moment": 5,
+                  "ordinal": 0,
+                  "tag": "B1",
+                  "weight_numerator": 8320,
+                  "world": 91
+                },
+                {
+                  "event": [
+                    88,
+                    12,
+                    "B1",
+                    0,
+                    "00d35444b105808e"
+                  ],
+                  "moment": 12,
+                  "ordinal": 0,
+                  "tag": "B1",
+                  "weight_numerator": 8385,
+                  "world": 88
+                }
+              ]
+            },
+            {
+              "cell_size": 11,
+              "content": "0336056c3bf0faba",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    503,
+                    1084,
+                    "B0",
+                    32,
+                    "0336056c3bf0faba"
+                  ],
+                  "moment": 1084,
+                  "ordinal": 32,
+                  "tag": "B0",
+                  "weight_numerator": 16512,
+                  "world": 503
+                },
+                {
+                  "event": [
+                    501,
+                    1085,
+                    "B0",
+                    32,
+                    "0336056c3bf0faba"
+                  ],
+                  "moment": 1085,
+                  "ordinal": 32,
+                  "tag": "B0",
+                  "weight_numerator": 16512,
+                  "world": 501
+                },
+                {
+                  "event": [
+                    502,
+                    1085,
+                    "B0",
+                    32,
+                    "0336056c3bf0faba"
+                  ],
+                  "moment": 1085,
+                  "ordinal": 32,
+                  "tag": "B0",
+                  "weight_numerator": 16512,
+                  "world": 502
+                },
+                {
+                  "event": [
+                    496,
+                    1086,
+                    "B0",
+                    32,
+                    "0336056c3bf0faba"
+                  ],
+                  "moment": 1086,
+                  "ordinal": 32,
+                  "tag": "B0",
+                  "weight_numerator": 16512,
+                  "world": 496
+                }
+              ]
+            },
+            {
+              "cell_size": 20,
+              "content": "04034c61c1f0648d",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    217,
+                    4,
+                    "B0",
+                    1,
+                    "04034c61c1f0648d"
+                  ],
+                  "moment": 4,
+                  "ordinal": 1,
+                  "tag": "B0",
+                  "weight_numerator": 8320,
+                  "world": 217
+                },
+                {
+                  "event": [
+                    248,
+                    4,
+                    "B0",
+                    1,
+                    "04034c61c1f0648d"
+                  ],
+                  "moment": 4,
+                  "ordinal": 1,
+                  "tag": "B0",
+                  "weight_numerator": 8385,
+                  "world": 248
+                },
+                {
+                  "event": [
+                    251,
+                    4,
+                    "B0",
+                    1,
+                    "04034c61c1f0648d"
+                  ],
+                  "moment": 4,
+                  "ordinal": 1,
+                  "tag": "B0",
+                  "weight_numerator": 8385,
+                  "world": 251
+                },
+                {
+                  "event": [
+                    240,
+                    5,
+                    "B0",
+                    1,
+                    "04034c61c1f0648d"
+                  ],
+                  "moment": 5,
+                  "ordinal": 1,
+                  "tag": "B0",
+                  "weight_numerator": 8385,
+                  "world": 240
+                }
+              ]
+            }
+          ],
+          "weighting": "M2_PER_WORLD_UNIFORM"
+        },
+        {
+          "definition": "world mass proportional to its clean-dwell occupation count, uniform within the world",
+          "is_content_measurable": false,
+          "n_cells_tested": 52018,
+          "n_multi_event_cells": 17348,
+          "n_violating_cells": 1002,
+          "violating_witnesses": [
+            {
+              "cell_size": 9,
+              "content": "0013b8b48399aecf",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    37,
+                    3122,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3122,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 49920,
+                  "world": 37
+                },
+                {
+                  "event": [
+                    32,
+                    3123,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3123,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 49920,
+                  "world": 32
+                },
+                {
+                  "event": [
+                    33,
+                    3123,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3123,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 41600,
+                  "world": 33
+                },
+                {
+                  "event": [
+                    26,
+                    3124,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3124,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 49920,
+                  "world": 26
+                }
+              ]
+            },
+            {
+              "cell_size": 2,
+              "content": "003ba0796d4be58d",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    91,
+                    32,
+                    "B1",
+                    3,
+                    "003ba0796d4be58d"
+                  ],
+                  "moment": 32,
+                  "ordinal": 3,
+                  "tag": "B1",
+                  "weight_numerator": 41600,
+                  "world": 91
+                },
+                {
+                  "event": [
+                    92,
+                    32,
+                    "B1",
+                    3,
+                    "003ba0796d4be58d"
+                  ],
+                  "moment": 32,
+                  "ordinal": 3,
+                  "tag": "B1",
+                  "weight_numerator": 49920,
+                  "world": 92
+                }
+              ]
+            },
+            {
+              "cell_size": 2,
+              "content": "00654b83888b4699",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    135,
+                    263,
+                    "B1",
+                    23,
+                    "00654b83888b4699"
+                  ],
+                  "moment": 263,
+                  "ordinal": 23,
+                  "tag": "B1",
+                  "weight_numerator": 340787200,
+                  "world": 135
+                },
+                {
+                  "event": [
+                    136,
+                    263,
+                    "B1",
+                    23,
+                    "00654b83888b4699"
+                  ],
+                  "moment": 263,
+                  "ordinal": 23,
+                  "tag": "B1",
+                  "weight_numerator": 408944640,
+                  "world": 136
+                }
+              ]
+            }
+          ],
+          "weighting": "M3_OCCUPATION_WEIGHTED"
+        },
+        {
+          "definition": "formation-moment weighting, LIFETIME reading: world mass proportional to (total boundaries - formation moment + 1), the number of horizon moments in which the world is already formed; uniform within the world; never-formed worlds get zero",
+          "is_content_measurable": false,
+          "n_cells_tested": 52018,
+          "n_multi_event_cells": 17348,
+          "n_violating_cells": 2670,
+          "violating_witnesses": [
+            {
+              "cell_size": 2,
+              "content": "0009befbdd9c6e69",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    453,
+                    5641,
+                    "B1",
+                    14,
+                    "0009befbdd9c6e69"
+                  ],
+                  "moment": 5641,
+                  "ordinal": 14,
+                  "tag": "B1",
+                  "weight_numerator": 1494155520,
+                  "world": 453
+                },
+                {
+                  "event": [
+                    432,
+                    5642,
+                    "B1",
+                    14,
+                    "0009befbdd9c6e69"
+                  ],
+                  "moment": 5642,
+                  "ordinal": 14,
+                  "tag": "B1",
+                  "weight_numerator": 1494147200,
+                  "world": 432
+                }
+              ]
+            },
+            {
+              "cell_size": 9,
+              "content": "0013b8b48399aecf",
+              "distinct_weight_values": 5,
+              "events": [
+                {
+                  "event": [
+                    37,
+                    3122,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3122,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 150142720,
+                  "world": 37
+                },
+                {
+                  "event": [
+                    32,
+                    3123,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3123,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 150134400,
+                  "world": 32
+                },
+                {
+                  "event": [
+                    33,
+                    3123,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3123,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 150134400,
+                  "world": 33
+                },
+                {
+                  "event": [
+                    26,
+                    3124,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3124,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 150126080,
+                  "world": 26
+                }
+              ]
+            },
+            {
+              "cell_size": 2,
+              "content": "003ba0796d4be58d",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    91,
+                    32,
+                    "B1",
+                    3,
+                    "003ba0796d4be58d"
+                  ],
+                  "moment": 32,
+                  "ordinal": 3,
+                  "tag": "B1",
+                  "weight_numerator": 1060766720,
+                  "world": 91
+                },
+                {
+                  "event": [
+                    92,
+                    32,
+                    "B1",
+                    3,
+                    "003ba0796d4be58d"
+                  ],
+                  "moment": 32,
+                  "ordinal": 3,
+                  "tag": "B1",
+                  "weight_numerator": 1060775040,
+                  "world": 92
+                }
+              ]
+            }
+          ],
+          "weighting": "M4_FORMATION_LIFETIME"
+        },
+        {
+          "definition": "formation-moment weighting, ELAPSED reading: world mass proportional to the formation moment itself; uniform within the world; worlds formed at moment 0 and never-formed worlds get zero",
+          "is_content_measurable": false,
+          "n_cells_tested": 52018,
+          "n_multi_event_cells": 17348,
+          "n_violating_cells": 2670,
+          "violating_witnesses": [
+            {
+              "cell_size": 2,
+              "content": "0009befbdd9c6e69",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    453,
+                    5641,
+                    "B1",
+                    14,
+                    "0009befbdd9c6e69"
+                  ],
+                  "moment": 5641,
+                  "ordinal": 14,
+                  "tag": "B1",
+                  "weight_numerator": 5316480,
+                  "world": 453
+                },
+                {
+                  "event": [
+                    432,
+                    5642,
+                    "B1",
+                    14,
+                    "0009befbdd9c6e69"
+                  ],
+                  "moment": 5642,
+                  "ordinal": 14,
+                  "tag": "B1",
+                  "weight_numerator": 5324800,
+                  "world": 432
+                }
+              ]
+            },
+            {
+              "cell_size": 9,
+              "content": "0013b8b48399aecf",
+              "distinct_weight_values": 5,
+              "events": [
+                {
+                  "event": [
+                    37,
+                    3122,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3122,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 1349329280,
+                  "world": 37
+                },
+                {
+                  "event": [
+                    32,
+                    3123,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3123,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 1349337600,
+                  "world": 32
+                },
+                {
+                  "event": [
+                    33,
+                    3123,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3123,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 1349337600,
+                  "world": 33
+                },
+                {
+                  "event": [
+                    26,
+                    3124,
+                    "B0",
+                    17,
+                    "0013b8b48399aecf"
+                  ],
+                  "moment": 3124,
+                  "ordinal": 17,
+                  "tag": "B0",
+                  "weight_numerator": 1349345920,
+                  "world": 26
+                }
+              ]
+            },
+            {
+              "cell_size": 2,
+              "content": "003ba0796d4be58d",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    91,
+                    32,
+                    "B1",
+                    3,
+                    "003ba0796d4be58d"
+                  ],
+                  "moment": 32,
+                  "ordinal": 3,
+                  "tag": "B1",
+                  "weight_numerator": 438705280,
+                  "world": 91
+                },
+                {
+                  "event": [
+                    92,
+                    32,
+                    "B1",
+                    3,
+                    "003ba0796d4be58d"
+                  ],
+                  "moment": 32,
+                  "ordinal": 3,
+                  "tag": "B1",
+                  "weight_numerator": 438696960,
+                  "world": 92
+                }
+              ]
+            }
+          ],
+          "weighting": "M5_FORMATION_MOMENT"
+        },
+        {
+          "definition": "uniform absolute mass on the escape orbit: every world of the free (never-formed-free) orbit gets equal mass, spread uniformly over its own events; every other world gets zero",
+          "is_content_measurable": false,
+          "n_cells_tested": 52018,
+          "n_multi_event_cells": 17348,
+          "n_violating_cells": 5,
+          "violating_witnesses": [
+            {
+              "cell_size": 20,
+              "content": "04034c61c1f0648d",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    217,
+                    4,
+                    "B0",
+                    1,
+                    "04034c61c1f0648d"
+                  ],
+                  "moment": 4,
+                  "ordinal": 1,
+                  "tag": "B0",
+                  "weight_numerator": 0,
+                  "world": 217
+                },
+                {
+                  "event": [
+                    248,
+                    4,
+                    "B0",
+                    1,
+                    "04034c61c1f0648d"
+                  ],
+                  "moment": 4,
+                  "ordinal": 1,
+                  "tag": "B0",
+                  "weight_numerator": 0,
+                  "world": 248
+                },
+                {
+                  "event": [
+                    251,
+                    4,
+                    "B0",
+                    1,
+                    "04034c61c1f0648d"
+                  ],
+                  "moment": 4,
+                  "ordinal": 1,
+                  "tag": "B0",
+                  "weight_numerator": 0,
+                  "world": 251
+                },
+                {
+                  "event": [
+                    240,
+                    5,
+                    "B0",
+                    1,
+                    "04034c61c1f0648d"
+                  ],
+                  "moment": 5,
+                  "ordinal": 1,
+                  "tag": "B0",
+                  "weight_numerator": 0,
+                  "world": 240
+                }
+              ]
+            },
+            {
+              "cell_size": 29,
+              "content": "1f7d30be18fcd984",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    176,
+                    0,
+                    "F",
+                    0,
+                    "1f7d30be18fcd984"
+                  ],
+                  "moment": 0,
+                  "ordinal": 0,
+                  "tag": "F",
+                  "weight_numerator": 0,
+                  "world": 176
+                },
+                {
+                  "event": [
+                    177,
+                    0,
+                    "F",
+                    0,
+                    "1f7d30be18fcd984"
+                  ],
+                  "moment": 0,
+                  "ordinal": 0,
+                  "tag": "F",
+                  "weight_numerator": 0,
+                  "world": 177
+                },
+                {
+                  "event": [
+                    178,
+                    0,
+                    "F",
+                    0,
+                    "1f7d30be18fcd984"
+                  ],
+                  "moment": 0,
+                  "ordinal": 0,
+                  "tag": "F",
+                  "weight_numerator": 0,
+                  "world": 178
+                },
+                {
+                  "event": [
+                    179,
+                    0,
+                    "F",
+                    0,
+                    "1f7d30be18fcd984"
+                  ],
+                  "moment": 0,
+                  "ordinal": 0,
+                  "tag": "F",
+                  "weight_numerator": 0,
+                  "world": 179
+                }
+              ]
+            },
+            {
+              "cell_size": 92,
+              "content": "5dea29a07fb8362c",
+              "distinct_weight_values": 2,
+              "events": [
+                {
+                  "event": [
+                    202,
+                    2,
+                    "B0",
+                    0,
+                    "5dea29a07fb8362c"
+                  ],
+                  "moment": 2,
+                  "ordinal": 0,
+                  "tag": "B0",
+                  "weight_numerator": 0,
+                  "world": 202
+                },
+                {
+                  "event": [
+                    207,
+                    2,
+                    "B0",
+                    0,
+                    "5dea29a07fb8362c"
+                  ],
+                  "moment": 2,
+                  "ordinal": 0,
+                  "tag": "B0",
+                  "weight_numerator": 0,
+                  "world": 207
+                },
+                {
+                  "event": [
+                    211,
+                    2,
+                    "B0",
+                    0,
+                    "5dea29a07fb8362c"
+                  ],
+                  "moment": 2,
+                  "ordinal": 0,
+                  "tag": "B0",
+                  "weight_numerator": 0,
+                  "world": 211
+                },
+                {
+                  "event": [
+                    214,
+                    2,
+                    "B0",
+                    0,
+                    "5dea29a07fb8362c"
+                  ],
+                  "moment": 2,
+                  "ordinal": 0,
+                  "tag": "B0",
+                  "weight_numerator": 0,
+                  "world": 214
+                }
+              ]
+            }
+          ],
+          "weighting": "M6_ABSOLUTE_ORBIT_UNIFORM"
+        }
+      ]
+    },
+    "C2_A3_CHANNEL": {
+      "P_A_result": {
+        "complete_not_sampled": true,
+        "content_preserving_pairs_tested": 17348,
+        "forced": true,
+        "violations_under_the_landed_sentences": 0,
+        "why": "additivity makes I a sum of event weights; content determination makes the weight a function of the content cell; so I(A) = sum over cells c of n_A(c) * w(c), which depends on A only through its content multiset.  The difference functional I(A) - I(B) for a content-preserving pair has an identically zero coefficient vector, checked exhaustively over every multi-event content cell."
+      },
+      "P_B_result": {
+        "admissible_probability_affine_dimension": 52017,
+        "forced": false,
+        "two_distinct_admissible_probabilities": {
+          "region_on_which_they_disagree": {
+            "I_w1": "1/52018",
+            "I_w2": "23/23065",
+            "content": "5dea29a07fb8362c",
+            "label": "bookkeeping fraction, not probability",
+            "region_size_events": 92,
+            "they_differ": true
+          },
+          "w1_uniform_over_content_cells": {
+            "content_measurable": true,
+            "definition": "w(cell) = 1/(n_cells * |cell|)",
+            "nonnegative": true,
+            "normalized": true
+          },
+          "w2_uniform_over_record_events": {
+            "content_measurable": true,
+            "definition": "w(cell) = 1/n_events",
+            "nonnegative": true,
+            "normalized": true
+          }
+        },
+        "why_not": "the landed sentences constrain the SHAPE of a readout (additive, content-determined) but select no particular one.  The admissible probabilities form a simplex of affine dimension 52017, so the record frequencies are not fixed by the sentences."
+      },
+      "VERDICT": "PARTIALLY-FORCED",
+      "certificate": "C2_A3_CHANNEL",
+      "consequence_for_the_memo": "the section-1 sufficiency claim -- that the landed readout sentences 'appear sufficient to force it at readout grade' -- is REFUTED AS STATED and CONFIRMED IN HALF.  The channel closes the invisibility half and cannot close the frequency half.  This is the first time the repo's own named closing channel has been run.",
+      "falsifier_visibility": {
+        "outcome_neutral": true,
+        "planted_drop_of_content_determination": {
+          "detected_as": "NOT-FORCED",
+          "must_be_detected_as": "NOT-FORCED",
+          "ok": true,
+          "sentence": "PLANTED: the content sentence S2 is removed",
+          "separating_readout_witness": {
+            "A": {
+              "event": [
+                110,
+                7691,
+                "B0",
+                59,
+                "00070ad36e83deca"
+              ],
+              "world": 110
+            },
+            "B": {
+              "event": [
+                102,
+                7692,
+                "B0",
+                59,
+                "00070ad36e83deca"
+              ],
+              "world": 102
+            },
+            "I_of_A": 1,
+            "I_of_B": 0,
+            "content": "00070ad36e83deca",
+            "readout": "w(e) = 1 on the single event A, 0 elsewhere -- additive with I(empty)=0, defined on records only, but NOT content-determined",
+            "separates_a_content_preserving_pair": true
+          },
+          "violations_found": 17348
+        },
+        "planted_forcing_sentence": {
+          "detected_as": "FORCED-AT-READOUT-GRADE",
+          "must_be_detected_as": "FORCED-AT-READOUT-GRADE",
+          "ok": true,
+          "sentence": "PLANTED, not landed: 'the readout assigns the same value to every record' (a counting sentence)"
+        },
+        "planted_nonnegativity_only": {
+          "detected_as": "PARTIALLY-FORCED",
+          "must_be_detected_as": "PARTIALLY-FORCED",
+          "ok": true,
+          "sentence": "PLANTED: 'the readout is non-negative'"
+        },
+        "verdict_classes_reachable": [
+          "FORCED-AT-READOUT-GRADE",
+          "NOT-FORCED",
+          "PARTIALLY-FORCED"
+        ]
+      },
+      "formalization": {
+        "P_A_invisibility": "for all A, B with the same content multiset, I(A) = I(B)",
+        "P_B_frequency_faithfulness": "the admissible probability readout is UNIQUE (non-negative, normalized, and fixed by the record frequencies)",
+        "S1_only_records_readable": {
+          "formal": "dom(I) is contained in the subsets of E; I takes no pre-record argument",
+          "kind": "domain restriction; adds no linear constraint",
+          "quote": {
+            "byte_length": 26,
+            "byte_offset": 2332,
+            "label": "R1_ONLY_RECORDS",
+            "occurrences_in_file": 1,
+            "sha256_of_quote": "54d99a99d65dce5bc0d685bc6bd7f220ee7ab6afe6ac6de10a0e265d9cc7e936",
+            "text": "Only records are readable."
+          }
+        },
+        "S2_content_determines_the_value": {
+          "formal": "content(e) = content(e') implies I({e}) = I({e'})",
+          "kind": "measurability constraint; collapses the model space from 92260 to 52018 free values",
+          "quote": {
+            "byte_length": 54,
+            "byte_offset": 2359,
+            "label": "R2_CONTENT_ALONE",
+            "occurrences_in_file": 1,
+            "sha256_of_quote": "9f42db3f41cdea4ccb423adfd334f03c1c2e69420f61cbd2e5714d6c41144350",
+            "text": "A readout value is determined by record content\nalone."
+          }
+        },
+        "S3_additive_with_empty_zero": {
+          "formal": "I(A u B) = I(A) + I(B) for disjoint A, B and I(empty) = 0, hence I(A) = sum of w(e) over A",
+          "kind": "representation constraint; makes I an event weighting",
+          "quote": {
+            "byte_length": 106,
+            "byte_offset": 2414,
+            "label": "R3_ADDITIVE",
+            "occurrences_in_file": 1,
+            "sha256_of_quote": "0543b0caec1615947dd1e61535204d3f5031a750a7b71be643f06f693cc3193b",
+            "text": "For any finite collection of pairwise-disjoint records, scalar readout\n`I` is additive, with `I(empty)=0`."
+          }
+        },
+        "content_cells": 52018,
+        "event_cardinality": 92260,
+        "forcing_rule": "a predicate is FORCED by a sentence set exactly when no admissible model of the sentences violates it",
+        "readout_objects": "E = the realized record-write events of the pinned Cycle-878 census; F_ATOM cells are singletons (gated), so every subset of E is a finite collection of pairwise-disjoint records -- exactly the objects the additivity clause quantifies over"
+      },
+      "model_dimensions": {
+        "S3_alone_free_values_per_event": 92260,
+        "S3_and_S2_free_values_per_content_cell": 52018,
+        "admissible_probability_affine_dimension_if_the_readout_must_count": 0,
+        "admissible_probability_affine_dimension_under_the_landed_sentences": 52017
+      },
+      "note_on_the_criterion_as_written": "the memo's section 1 criterion is a REALITY criterion about influence on record formation and frequencies.  It is NOT the regional-locality sentence ('the readout of a region depends only on records in that region') that the block spec paraphrased; that sentence appears nowhere in the memo.  The formalization below follows the memo's own bytes, as instructed, and the divergence is disclosed here rather than silently resolved.",
+      "pass": true,
+      "status": "FIRST RUN -- this channel has never been attempted",
+      "the_claim_being_tested": {
+        "byte_length": 231,
+        "byte_offset": 2531,
+        "label": "SUFFICIENCY_CLAIM",
+        "occurrences_in_file": 1,
+        "sha256_of_quote": "dc9f3fad3c855dd111af75c86c6935f764abfe263becddfaeca9f078e584d92d",
+        "text": "Its candidate channels are (a) a bounded derivation note from the landed\nreadout sentences \u2014 \"Only records are readable.\" and \"A readout value is\ndetermined by record content alone.\" appear sufficient to force it at readout\ngrade"
+      },
+      "the_criterion": {
+        "byte_length": 114,
+        "byte_offset": 1281,
+        "label": "CRITERION",
+        "occurrences_in_file": 1,
+        "sha256_of_quote": "94cecff32528bba6a551b64988827fd2fd5a7c7351bc1f85a6d580a58f798aad",
+        "text": "**Pre-record structure is real exactly to the extent it influences which\nrecords form and with what frequencies.**"
+      },
+      "the_missing_premise": "exactly the existence-and-state-functionality of a probability measure over outcomes -- the admission the recovered 2026-06-05 envariance note names A3.  Adding a sentence that selects one normalized non-negative readout collapses the simplex to a point and the verdict to FORCED, as the planted-forcing test above demonstrates; the landed sentences contain no such sentence.",
+      "what_is_forced": "P_A, invisibility: every readout satisfying the landed sentences is a function of the record content multiset alone.  Structure that changes no record content changes no readout value.  This half of the section-1 criterion IS forced at readout grade, and it is forced by S2 and S3 together -- dropping either breaks it.",
+      "what_is_not_forced": "P_B, frequency-faithfulness: the landed sentences leave an affine 52017-dimensional simplex of admissible probability readouts and select none of them.  'with what frequencies' is not expressible in the constraint language the sentences supply: additivity plus content determination fix the SHAPE of a readout, not its VALUES, and nothing in them makes a readout a frequency at all."
+    },
+    "C3_ORPHANED_ENVARIANCE_NOTE": {
+      "A3_admission_byte_quotes": [
+        {
+          "byte_length": 145,
+          "byte_offset": 1453,
+          "label": "A3_ADMISSION_PROSE",
+          "occurrences_in_file": 1,
+          "sha256_of_quote": "c37a615d03f3929667465d4b63f2574a9f3d73de9b13efbcf93e9bb535394687",
+          "text": "The **single residual admission** is `A3`: that a probability measure over\n  outcomes **exists and is a function of the (record/quantum) state**."
+        },
+        {
+          "byte_length": 88,
+          "byte_offset": 4957,
+          "label": "A3_LEDGER_ROW",
+          "occurrences_in_file": 1,
+          "sha256_of_quote": "820cca0866b6a6d84c66b609b2c1af6bd8e4209c9d1edee471900a1aaf62ed17",
+          "text": "| A3 a probability measure **exists and is state-functional** | **admission** | **NO** |"
+        },
+        {
+          "byte_length": 52,
+          "byte_offset": 1910,
+          "label": "A3_NOT_CONTAINED",
+          "occurrences_in_file": 1,
+          "sha256_of_quote": "6cbeb6fba01e35a014f3f52072c7f6f59316e2c0224157c9e1a86f3a34759358",
+          "text": "So `A3` is **not** contained in\n  {Quantum, Record}."
+        },
+        {
+          "byte_length": 99,
+          "byte_offset": 2090,
+          "label": "A3_VERDICT",
+          "occurrences_in_file": 1,
+          "sha256_of_quote": "a6b68225455b217dd7a5a6769c1f5d3a58501ba582bb12cd386e301ac22ecc49",
+          "text": "Envariance gives a **genuine, non-circular** derivation of\n`p_k = |a_k|^2` **conditional on `A3`**."
+        },
+        {
+          "byte_length": 17,
+          "byte_offset": 617,
+          "label": "PASS_44_CLAIM",
+          "occurrences_in_file": 1,
+          "sha256_of_quote": "58b6c368780f9b94549405daba64ff560d4f3ae79a8afa629eda0540be453e18",
+          "text": "(PASS=44, FAIL=0)"
+        }
+      ],
+      "assessment": {
+        "RECOMMENDATION_FOR_THE_AUDIT_LANE": "land the note (and its runner and cache) into the audit lane so the A3 admission is citable from the landed tree.  This block does NOT restore the file -- no docs are written here; the recommendation is emitted as data for the lane that owns landing.",
+        "corpus_status": "the note is the tightest statement of the Born gap in the corpus and it is not in the landed tree: it sits on an unmerged branch with a runner whose PASS=44 FAIL=0 claim re-verifies (True)",
+        "this_block_did_not_restore_the_file": true,
+        "what_A3_is": "that a probability measure over outcomes exists and is a function of the state -- the occurrence-existence admission",
+        "what_the_note_derives": "the Born FORM p_k = |a_k|^2 on the framework's own record state, by Zurek envariance with a Gleason/Busch backstop, MODULO one named admission A3",
+        "why_it_matters_here": "A3 is exactly the premise this block's C2 computation independently identifies as the one thing the landed readout sentences cannot supply.  Two unrelated routes -- a 2026-06-05 envariance derivation and a 2026-08 constraint-system computation over the Cycle-878 census -- converge on the same single missing sentence."
+      },
+      "certificate": "C3_ORPHANED_ENVARIANCE_NOTE",
+      "commit_objects": {
+        "1c277078dd": "commit",
+        "a61fa74c3b": "commit"
+      },
+      "deletion_commits_reachable_from_HEAD": [],
+      "git_commands_run": [
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 cat-file -t a61fa74c3b",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 cat-file -t 1c277078dd",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 log -1 --format=%H%n%an%n%ae%n%ad%n%s a61fa74c3b",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 show --stat --format= a61fa74c3b",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 log -1 --format=%H%n%an%n%ae%n%ad%n%s 1c277078dd",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 show --stat --format= 1c277078dd",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 log --all --diff-filter=A --name-only --format=%H -- *ENVARIANCE* *envariance*",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 ls-tree -r HEAD --name-only",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 log HEAD --diff-filter=D --format=%H -- docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md scripts/frontier_born_from_envariance_2026_06_05.py logs/runner-cache/frontier_born_from_envariance_2026_06_05.txt",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 merge-base --is-ancestor a61fa74c3b HEAD",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 merge-base --is-ancestor 1c277078dd HEAD",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 branch -a --contains 1c277078dd",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 merge-base HEAD 1c277078dd",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 show 1c277078dd:docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 show 1c277078dd:scripts/frontier_born_from_envariance_2026_06_05.py",
+        "git -C /Users/jonBridger/Toy Physics/.claude/worktrees/c5-q9 show 1c277078dd:logs/runner-cache/frontier_born_from_envariance_2026_06_05.txt"
+      ],
+      "is_ancestor_of_HEAD": {
+        "1c277078dd": false,
+        "a61fa74c3b": false
+      },
+      "merge_base_with_HEAD": "fd96addc802a72a664cea0ece983e09263db7665",
+      "named_commits": [
+        "a61fa74c3b",
+        "1c277078dd"
+      ],
+      "orphan_mechanism": {
+        "finding": "the note was NEVER DELETED and no deletion commit exists.  It was added on an unmerged side branch and that branch was never merged into the landed lineage: ['remotes/origin/born-from-envariance-2026-06-05'].  'Orphaned' here means STRANDED ON AN UNMERGED BRANCH, not added-then-removed -- a materially different provenance story, and a correctable one.",
+        "is_it_on_the_HEAD_lineage": false,
+        "was_it_deleted": false
+      },
+      "pass": true,
+      "paths_added_anywhere_in_history": [
+        "docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md",
+        "logs/runner-cache/frontier_born_from_envariance_2026_06_05.txt",
+        "scripts/frontier_born_from_envariance_2026_06_05.py"
+      ],
+      "present_in_HEAD_tree": {
+        "docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md": false,
+        "logs/runner-cache/frontier_born_from_envariance_2026_06_05.txt": false,
+        "scripts/frontier_born_from_envariance_2026_06_05.py": false
+      },
+      "provenance": {
+        "1c277078dd": {
+          "author": "Claude Opus",
+          "date": "Fri Jun 5 17:31:29 2026 -0400",
+          "email": "noreply@anthropic.com",
+          "files_touched": [
+            "...L_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md | 17 +++++++++++++++++",
+            "1 file changed, 17 insertions(+)"
+          ],
+          "full_sha": "1c277078ddf53fffe49a2b17b8b6467f427f7433",
+          "subject": "born-envariance: reconcile with prior QD basis-not-weight result (envariance = swap-symmetry fixes weight, distinct from redundancy fixing basis; A3 = the measure-selection gap pinned)"
+        },
+        "a61fa74c3b": {
+          "author": "Claude Opus",
+          "date": "Fri Jun 5 17:27:52 2026 -0400",
+          "email": "noreply@anthropic.com",
+          "files_touched": [
+            "...STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md | 149 ++++",
+            ".../frontier_born_from_envariance_2026_06_05.txt   | 321 +++++++++",
+            ".../frontier_born_from_envariance_2026_06_05.py    | 790 +++++++++++++++++++++",
+            "3 files changed, 1260 insertions(+)"
+          ],
+          "full_sha": "a61fa74c3bda229ef90b6ef6e113168e93953af7",
+          "subject": "born-from-envariance: conditional on state-functional probability (A3), no-go intact"
+        }
+      },
+      "read_only": true,
+      "recovered_committed_cache": {
+        "bytes": 19217,
+        "fail_labels_in_cache": 0,
+        "lines": 321,
+        "pass_labels_in_cache": 44,
+        "path": "logs/runner-cache/frontier_born_from_envariance_2026_06_05.txt",
+        "self_check_lines": [
+          "SELF-CHECK: PASS=44 FAIL=0  ->  OK",
+          "PASS=44 FAIL=0"
+        ],
+        "sha256": "ef68c761b417f89674a0d6925cfbe93e80e31adb791942433c1d7eb9191f50ac"
+      },
+      "recovered_note": {
+        "bytes": 9585,
+        "git_blob": "64b24361f2237d01f079e16b306b5d04e01de7c2",
+        "lines": 166,
+        "path": "docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md",
+        "read_from_commit": "1c277078dd",
+        "sha256": "21c22981929f0304efbe15459fc2a9c43c3c4d2af2a69f06bd22d8efcfc2ccfd"
+      },
+      "recovered_runner": {
+        "bytes": 34655,
+        "git_blob": "e47afb019ecc8539193cd8b77b3e889d1ba59831",
+        "imports": [
+          "from __future__ import annotations",
+          "from fractions import Fraction",
+          "import io",
+          "import numpy as np",
+          "import os",
+          "import sympy as sp",
+          "import sys"
+        ],
+        "lines": 790,
+        "path": "scripts/frontier_born_from_envariance_2026_06_05.py",
+        "sha256": "a45a7315a5815a578458248363eb73e00334df95c672aa52840a699f95a5eee1"
+      },
+      "refs_containing_the_note": [
+        "remotes/origin/born-from-envariance-2026-06-05"
+      ],
+      "rerun_of_the_recovered_runner": {
+        "DISCREPANCY_FOUND": "the committed cache is TRUNCATED relative to a live run: the re-run prints 46 [PASS] lines but the runner's own tally reports 44, because the final sympy exact cross-check block prints two checks it does not add to the counter, and the committed cache stops at 321 lines, before that block.  The PASS=44 FAIL=0 claim itself verifies exactly; the runner simply under-counts its own checks by two and the cache was captured mid-stream.",
+        "PASS_44_FAIL_0_CLAIM_VERIFIED": true,
+        "elapsed_seconds": 0.294,
+        "exit_code": 0,
+        "label_lines_identical_over_the_shared_prefix": true,
+        "labelled_checks_in_the_committed_cache": {
+          "FAIL": 0,
+          "PASS": 44
+        },
+        "labelled_checks_printed_by_the_rerun": {
+          "FAIL": 0,
+          "PASS": 46
+        },
+        "ran": true,
+        "ran_from": "a temporary copy outside the worktree; not committed",
+        "runner_sha256": "a45a7315a5815a578458248363eb73e00334df95c672aa52840a699f95a5eee1",
+        "self_check_lines_emitted": [
+          "SELF-CHECK: PASS=44 FAIL=0  ->  OK",
+          "SELF-CHECK: PASS=44 FAIL=0  ->  OK"
+        ],
+        "self_check_lines_in_the_committed_cache": [
+          "SELF-CHECK: PASS=44 FAIL=0  ->  OK",
+          "PASS=44 FAIL=0"
+        ],
+        "shared_label_lines_compared": 44,
+        "stderr": "",
+        "stdout_lines": 350,
+        "stdout_sha256": "ea4e42502b09ab9cea46e28a4bb8dfba1d353c04e7078b39f1121acce95140f6"
+      },
+      "status": "RECOVERED"
+    },
+    "C4_RESIDUE_VECTORS": {
+      "base_field_count": 30,
+      "certificate": "C4_RESIDUE_VECTORS",
+      "distinct_raw_world_sum_vectors": 874,
+      "distinct_residue_vectors": {
+        "175": 816,
+        "19003": 874,
+        "25": 669,
+        "31": 671,
+        "5": 391,
+        "613": 853,
+        "7": 426
+      },
+      "effective_independence_at_613": {
+        "as_decimal": "0.6075",
+        "distinct_vectors_mod_613": 853,
+        "fraction": "853/1404",
+        "label": "bookkeeping fraction, not probability",
+        "of_recipes": 1404
+      },
+      "escape_events_per_world": [
+        129
+      ],
+      "escape_support_events": 1419,
+      "escape_worlds": 11,
+      "lemma_filters_native_recipes_only": {
+        "degree0_19003_divides_lcm_of_world_sums": 0,
+        "degree2_175_divides_lcm_of_world_sums": 188,
+        "some_world_sum_divisible_by_31": 254,
+        "some_world_sum_divisible_by_613": 22
+      },
+      "null_models": {
+        "model_A_per_prime_power": {
+          "definition": "the lemma needs each prime power of the scale to divide some world sum; independent uniform residues per prime power",
+          "degree0_expected_passes": "7.57",
+          "degree0_per_recipe": "0.00538956",
+          "degree2_expected_passes": "414.72",
+          "degree2_per_recipe": "0.29538534"
+        },
+        "model_B_single_modulus": {
+          "definition": "the whole scale must divide a single world sum; one uniform residue modulo the scale",
+          "degree0_expected_passes": "0.81",
+          "degree0_per_recipe": "0.00057870",
+          "degree2_expected_passes": "85.77",
+          "degree2_per_recipe": "0.06109166"
+        }
+      },
+      "pass": true,
+      "pinned_909_counts_include_the_planted_recipes": {
+        "difference_is_the_plants": "the pinned counts are taken over recipes PLUS the planted falsifiers; recomputed over the 1,404 native recipes alone, degree 0 gives 0 and degree 2 gives 188",
+        "native_degree0_recomputed_here": 0,
+        "native_degree2_recomputed_here": 188,
+        "receipt_degree0": 3,
+        "receipt_degree2": 189
+      },
+      "question": "how many DISTINCT residue vectors do the 1,404 recipes' escape-world sum vectors take?  That number, not 1404, is the effective count of independent tries the survey made at the denominator lemma's arithmetic gate.",
+      "recipe_count": 1404,
+      "stated_checks": {
+        "DISCREPANCY": "the two stated null numbers do not come from one model.  0.00539 is the PER-PRIME-POWER model at degree 0; 85.8 is the SINGLE-MODULUS model at degree 2.  Applied consistently, model A expects 414.72 degree-2 passes (observed 188 native), which is an UNDER-hit, not an over-hit; model B expects 0.81 degree-0 passes.  The '189-vs-85.8 over-hit' is an artifact of mixing models.",
+        "degree2_85_8_reproduced_by": "model_B_single_modulus at degree 2 = 85.77",
+        "exercise_stated_degree2_over_hit": "189 vs 85.8",
+        "exercise_stated_per_recipe_pass_probability": "0.00539",
+        "matches": true,
+        "matches_85_8": true,
+        "reproduced_by": "model_A_per_prime_power at degree 0 = 0.00539"
+      },
+      "what_this_does_to_909s_empirical_claim": "THE EVIDENCE IS REAL BUT DEFLATED: the 1404 recipes realize 853 distinct residue vectors mod 613 (0.608 of the headline count), so the survey made roughly that many genuinely independent tries at the 613 gate -- not 1,404, but not a handful either.  The empirical arm of 909's claim survives at reduced strength; it is not the load-bearing arm.  Decisively, ZERO of the 1,404 native recipes pass the degree-0 filter (observed 0 against 7.57 expected under the per-prime-power null), so the survey found no realizer not because it got lucky but because the arithmetic gate is genuinely hard to hit; and since the lemma depends only on the world sums, it kills every profile built on those sums whether or not it lies in the declared closure.  The lemma, not the survey, is what makes further search useless."
+    },
+    "D_DETERMINISM": {
+      "certificate": "D_DETERMINISM",
+      "double_build": true,
+      "facts_digest_1": "3a361df93f22c9012cfea2ca3efc8126c2918690567979c359743a3bb611c833",
+      "facts_digest_2": "3a361df93f22c9012cfea2ca3efc8126c2918690567979c359743a3bb611c833",
+      "pass": true,
+      "science_digest_1": "628b2cca9bfdd0506c852f6056dbce58ffa26cb91122ebb5214607c6a440f0b2",
+      "science_digest_2": "628b2cca9bfdd0506c852f6056dbce58ffa26cb91122ebb5214607c6a440f0b2"
+    },
+    "T_TEETH": {
+      "certificate": "T_TEETH",
+      "fired": 8,
+      "pass": true,
+      "rows": [
+        {
+          "detail": "tampered sha256 aa3dace5e72728e9 != pinned",
+          "detected": true,
+          "tooth": "T1_TAMPERED_PIN",
+          "what_it_plants": "one byte flipped in the pinned axiom memo"
+        },
+        {
+          "detail": "6 of 6 weightings present",
+          "detected": true,
+          "tooth": "T2_DROPPED_WEIGHTING",
+          "what_it_plants": "the C1 table silently omits one of M1..M6"
+        },
+        {
+          "detail": "all three verdict classes reached by the same code path: FORCED-AT-READOUT-GRADE, NOT-FORCED, PARTIALLY-FORCED",
+          "detected": true,
+          "tooth": "T3_HARDCODED_CHANNEL_VERDICT",
+          "what_it_plants": "the C2 verdict is written down rather than computed"
+        },
+        {
+          "detail": "detected as PARTIALLY-FORCED",
+          "detected": true,
+          "tooth": "T4_LEAKED_FORCING",
+          "what_it_plants": "non-negativity alone is reported as closing the channel"
+        },
+        {
+          "detail": "detected as FORCED-AT-READOUT-GRADE",
+          "detected": true,
+          "tooth": "T5_PLANTED_FORCING_BLINDNESS",
+          "what_it_plants": "a counting sentence that genuinely forces the criterion"
+        },
+        {
+          "detail": "recipe_count 1404",
+          "detected": true,
+          "tooth": "T6_SKIPPED_RECIPE",
+          "what_it_plants": "the recipe census is short of the pinned 1,404"
+        },
+        {
+          "detail": "40242 events beyond the cell count; 21 multi-event cell sizes present",
+          "detected": true,
+          "tooth": "T7_VACUOUS_MEASURABILITY",
+          "what_it_plants": "every content cell is a singleton, making C1 vacuous"
+        },
+        {
+          "detail": "92260 content_of calls instrumented, 52018 raw preimages behind 52018 content values",
+          "detected": true,
+          "tooth": "T8_TRUNCATION_BLINDNESS",
+          "what_it_plants": "the probe cannot distinguish a merged content cell from a real one"
+        }
+      ],
+      "total": 8
+    }
+  },
+  "claim_type": "computation (four bounded components)",
+  "cycle": 912,
+  "fraction_label": "bookkeeping fraction, not probability",
+  "headline": {
+    "C1": "of the six weightings on the lane, 1 is/are constant on record content (M1_COUNTING) and 5 is/are not (M2_PER_WORLD_UNIFORM, M3_OCCUPATION_WEIGHTED, M4_FORMATION_LIFETIME, M5_FORMATION_MOMENT, M6_ABSOLUTE_ORBIT_UNIFORM); a weighting that is not content-measurable cannot serve as the Record axiom's readout I",
+    "C2": "PARTIALLY-FORCED",
+    "C3": "RECOVERED",
+    "C4": "THE EVIDENCE IS REAL BUT DEFLATED: the 1404 recipes realize 853 distinct residue vectors mod 613 (0.608 of the headline count), so the survey made roughly that many genuinely independent tries at the 613 gate -- not 1,404, but not a handful either.  The empirical arm of 909's claim survives at reduced strength; it is not the load-bearing arm.  Decisively, ZERO of the 1,404 native recipes pass the degree-0 filter (observed 0 against 7.57 expected under the per-prime-power null), so the survey found no realizer not because it got lucky but because the arithmetic gate is genuinely hard to hit; and since the lemma depends only on the world sums, it kills every profile built on those sums whether or not it lies in the declared closure.  The lemma, not the survey, is what makes further search useless."
+  },
+  "machinery_provenance": {
+    "constants_863": {
+      "FIXTURE_BANKS": 2,
+      "MAX_SOURCES": 5,
+      "MIN_SOURCES": 2
+    },
+    "constants_878": {
+      "CANDIDATE_NAMES": [
+        "M1_COUNTING",
+        "M2_PER_WORLD_UNIFORM",
+        "M3_OCCUPATION_WEIGHTED",
+        "M4_FORMATION_LIFETIME",
+        "M5_FORMATION_MOMENT"
+      ],
+      "CONTROL_NAME": "M0_CONTENT_DIVERSITY",
+      "DEAD_CHUNK_ORBITS": 512,
+      "DEAD_ORBIT_ORBITS": 4096,
+      "DETERMINISM_ORBITS": 192,
+      "FAMILY_ORDER": [
+        "F_WORLD",
+        "F_TAG",
+        "F_TAG_ORDINAL",
+        "F_MOMENT",
+        "F_ORBIT",
+        "F_CONTENT",
+        "F_WORLD_TAG",
+        "F_ATOM"
+      ],
+      "HORIZON": 16384,
+      "REGISTER_CAP": 64
+    },
+    "constants_909": {
+      "AFFINE_COEFFS": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "GEOMETRIC_RATIOS": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "POWER_EXPONENTS": [
+        2,
+        3,
+        4
+      ],
+      "SUM_COEFFS": [
+        1,
+        2,
+        3
+      ]
+    },
+    "import_of_863_878_902_905_906_907_909": false,
+    "lifted_from_863": [
+      "pairwise_separated",
+      "derive_event_seeds",
+      "derive_census",
+      "watched_registers",
+      "dirty_partition",
+      "build_initial_states",
+      "pack_lanes",
+      "compile_masked_gate",
+      "masked_h_schedules",
+      "compile_fast",
+      "mask_over",
+      "lanes_of",
+      "lane_state"
+    ],
+    "lifted_from_878": [
+      "lcm",
+      "dead_wire_rig",
+      "composed_scan",
+      "family_keys",
+      "cells_of",
+      "refines",
+      "monitor_phase_action",
+      "group_orbits",
+      "build_candidates"
+    ],
+    "lifted_from_909": [
+      "base_fields",
+      "generate_recipes"
+    ],
+    "sha256_substituted_inside_878_namespace_for_the_A_CONTENT_probe": true
+  },
+  "runner": "scripts/frontier_cycle912_a3_channel_2026_07_28.py",
+  "runner_sha256": "42f22b1660b01fbb7aa315e3957bd5b43b75eee27aeb6fd24b3814f1fbe6f563",
+  "runtime_seconds": 208.993
+}

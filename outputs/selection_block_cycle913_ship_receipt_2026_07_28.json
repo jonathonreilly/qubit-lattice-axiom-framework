@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); both runners flag the fingerprint-vacuity trap; supervisor line-by-line review",
+  "block": "toe-time-blockQ10-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 53.0s; 31 pass / 0 fail; PRIMARY_SURVIVES_THIS_CHECK; 8/8 teeth",
+    "primary": "11/11 PASS, exit 0, 75.7s; restriction gates 39/39 incl. 911's menus recomputed from its own AST-lifted operators; 9 falsifiers all detected"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 10th Q-family PR: closes the lane's correctly-typed remainder with a compile-level structural lemma, an exhaustive dependence analysis, and the terminal O3 statement with the successor substrate named; nothing corollary",
+  "cycles": [
+    913
+  ],
+  "files": {
+    "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "7b60ee552d8346840ee1dfeec0800079e3981362",
+      "sha256": "43769f08abee65bc535147ad8cf52018c3a71d8afa40af19ddddb00e5cd3315a"
+    },
+    "logs/runner-cache/frontier_cycle913_selection_function_2026_07_28.txt": {
+      "git_blob": "8da0d6592d98fb9aa184ff00be0eba9c2b8c027c",
+      "sha256": "724f2cdf1f0a2e49ff041d1c6ac2fc326bb44f5da29e598704438a5b889d0697"
+    },
+    "logs/runner-cache/frontier_cycle913_selection_independent_check_2026_07_28.txt": {
+      "git_blob": "a4fc8b63769aff0183f67e6228ef5b7277a19c49",
+      "sha256": "6f28070615404f05d6fcb461d0bee7fda455a974ecd92cf1e8cd4b126e2afd48"
+    },
+    "outputs/selection_function_cycle913_receipt_2026_07_28.json": {
+      "git_blob": "5ac6a40c316c7a90bcf867eb6507518ba976169b",
+      "sha256": "0de8d785c2139126b813166e090493d65cb289508b46de7f928b440facb82ecd"
+    },
+    "outputs/selection_independent_check_cycle913_receipt_2026_07_28.json": {
+      "git_blob": "40e78e760ec31e176c94bf1d5c7db833f4a996bd",
+      "sha256": "9b6f5279f2a96257cfd6cd626811f54c31d33424afee2b6a09dbe1cbd94f2042"
+    },
+    "scripts/frontier_cycle913_selection_function_2026_07_28.py": {
+      "git_blob": "2093b687713eb12b462532761092d90d40bed718",
+      "sha256": "b349f873aa1e88558fcd63fc432a6edd249f48f103ecbd3d28fd62d070e689ef"
+    },
+    "scripts/frontier_cycle913_selection_independent_check_2026_07_28.py": {
+      "git_blob": "bdf1e92b5d7bd3304b7c973028b3a06ae34bdbb3",
+      "sha256": "b076183107c50ae097db0567a435de808178a088f13fb34f92f4bf0201a6ea87"
+    }
+  },
+  "headline": "THE DYNAMICS NEVER CHOOSES: the lock-point selection is the transport of ONE setup coordinate (event parity) on wires 1/6 \u2014 which all 34,166 compiled gates READ and none ever WRITES (compile-level lemma); NOT local (30-point collision class, witness exhibited, substrate exhausted at radius 1), NOT content (67 record-free locks still split); minimal determining context = exactly the endpoint pair (exhaustive over 5,815 wires + 3,655 pairs); O2 SUPPLIED not derivable (not in the classified rule space; per-sector it is the constant rule with the sector bit imported); O3 TERMINAL on this substrate \u2014 the counterfactual-menu weight IS a setup weight under another name (the realized-state primitive's forbidden operation); the A3 arena = 328 site-possibility pairs; NAMED SUCCESSOR: a substrate where endpoint content is a gate target",
+  "independence": "cross-context (four agreeing selection readouts; the fingerprint attack under a second and third encoding; 146 semantic replays from tick 0; own lane permutation and chunk compiler; 9/9 + 8/8 teeth incl. outcome-neutrality both ways)",
+  "note": "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 53.0,
+    "primary": 75.7
+  }
+}

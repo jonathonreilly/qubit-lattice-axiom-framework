@@ -57,8 +57,18 @@ algebraic structure alone.
 There is one fixed nearest-neighbor admissibility rule, covariant under lattice
 translations and proper cubic rotations.
 
-For each site, the available possibilities are determined by, and vary with,
-the nearest-neighbor conditions.
+For each site, the likelihood of each possibility is determined by, and varies
+with, the nearest-neighbor conditions.
+
+*Reading notes (interpretive, non-governing).* (1) The likelihood is
+law-level: the general substrate is the weighted-branching realization, with
+deterministic substrates as boundary realizations -- the law supplies the
+odds; the realized state supplies the pick. (2) Read with Record, a
+possibility's likelihood concerns its being locked; the conditional and joint
+readings coincide whenever formation rate is itself
+nearest-neighbor-determined. (3) Zero likelihood is unavailability:
+"available"/"admissible" denotes the likelihood's support. For any future
+rule assigning continuous spread, likelihood reads as density.
 
 ### Record / Fixed Reality
 
@@ -102,11 +112,11 @@ scientific dependency must be retained-derived or remain conditional/open.
 
 ## Relation To Dynamics And Kinetic Branch Selection
 
-Admissibility is not a dynamics axiom. It determines availability by a
-nearest-neighbor rule: for each site, the available possibilities are
-determined by, and vary with, the nearest-neighbor conditions. It does not
-choose a Hamiltonian or transfer operator, supply transition probabilities or
-weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
+Admissibility is not a dynamics axiom. It determines local likelihood by a
+nearest-neighbor rule: for each site, the likelihood of each possibility is
+determined by, and varies with, the nearest-neighbor conditions. It does not
+choose a Hamiltonian or transfer operator, supply transition-probability or
+weight values, select a scalar or nonzero kinetic branch, assert a Dirac-square
 carrier, define a time metric, or provide a record-production process or
 physical persistence dynamics.
 
@@ -144,7 +154,7 @@ readout structure:
 - Qubit names the domain of local possibilities and its full one-site algebraic
   presentation.
 - Admissibility names the nearest-neighbor rule by which, for each site, the
-  available possibilities are determined by, and vary with, the
+  likelihood of each possibility is determined by, and varies with, the
   nearest-neighbor conditions.
 - Record names the fixed locking of one admissible local possibility,
   one-record-per-site uniqueness, permanence, and finite scalar readout
@@ -161,10 +171,10 @@ gates. In particular, the following remain outside axiom content:
 - the staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`;
 - the strong-CP theta gauge and mass-side derivation obligations;
 - P2/modulus/phase-blindness and any log-det readout theorem;
-- context selection, measurement basis selection, Born weights, probability
-  rules, update laws, decoherence mechanisms, and formation rules (which
-  admissible possibility a new record locks, at which site, with what weight,
-  or at what rate);
+- context selection, measurement basis selection, Born weight values,
+  probability rules beyond the likelihood clause, update laws, decoherence
+  mechanisms, and the remaining formation rules (the likelihood function's
+  form and values, at which site, and at what rate);
 - arrow, record-production dynamics, physical persistence dynamics, time metric,
   and local observability of records;
 - source/action and physical-observable identification;
@@ -185,9 +195,20 @@ formation rule (which admissible possibility, at which site, with what weight,
 at what rate) remained downstream supplier content. The file path was kept
 unchanged so existing runner needles and links continue to resolve.
 
+The 2026-08-05 owner-approved revision replaced Admissibility's availability
+sentence with the likelihood sentence: for each site, the likelihood of each
+possibility is determined by, and varies with, the nearest-neighbor
+conditions. The determination of likelihood became named axiom content;
+availability became the likelihood's support (zero likelihood is
+unavailability); the likelihood function's form and values, the site
+question, and the rate question remain downstream supplier content. The file
+path was again kept unchanged so existing runner needles and links continue
+to resolve.
+
 This memo exposes the remaining minimal ontology needed by the blocked audit
 lanes: records are not arbitrary mosaics. The admissibility rule determines the
-available possibilities at each site from the nearest-neighbor conditions, and
-those available possibilities vary with those conditions, before a record can
-lock one available local possibility. Probability, dynamics, readout contexts,
-and physical observable bridges remain downstream.
+likelihood of each possibility at each site from the nearest-neighbor
+conditions, and those likelihoods vary with those conditions, before a record
+can lock one available local possibility. The likelihood function's form and
+values, dynamics, readout contexts, and physical observable bridges remain
+downstream.

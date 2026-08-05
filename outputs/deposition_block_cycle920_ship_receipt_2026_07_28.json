@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); zero imports from the historical engine; supervisor line-by-line review",
+  "block": "toe-time-blockM6-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 21s; 6/6 claims survive; the system attacked against the note's/runner's/engine's own bytes; 11/11 teeth",
+    "primary": "exit 0, 27s; restriction gates hard-fail vs recovered cache bytes \u2014 all pass; falsifiers all fire; double-run bitwise"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 5th M-family PR: vindicates a never-checked measurement while retiring its reading, with an exact cancellation identity, a bisected true crossing, and a corrected sibling premise; nothing corollary",
+  "cycles": [
+    920
+  ],
+  "files": {
+    "docs/DEPOSITION_REPRODUCED_FLOOR_GRID_ARTIFACT_CYCLE920_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "690197848d7625d109b735f5844969551ef86842",
+      "sha256": "7d635142e8c4beaf66ca360fbae05f8db69910d94e68ea21b575055e7c7c7dce"
+    },
+    "logs/runner-cache/frontier_cycle920_deposition_independent_check_2026_07_28.txt": {
+      "git_blob": "a955189285527107662cdd06ce282e41ccb6e903",
+      "sha256": "c948927b8355f65f0507d2c4812ce5a069ec1b48996056885704a79516c10012"
+    },
+    "logs/runner-cache/frontier_cycle920_deposition_reaudit_2026_07_28.txt": {
+      "git_blob": "c893a58e14b3b0cf491637b3780159eb8a173d7d",
+      "sha256": "35e8d8ac5c30fd6c8f9fd4a3876d5ed7dce413dbda9b2034bc388ae685640e52"
+    },
+    "outputs/deposition_independent_check_cycle920_receipt_2026_07_28.json": {
+      "git_blob": "f87620410f1f4af5b8d93e1d564e32bc842e0cf0",
+      "sha256": "58207dde60e97ba61dc13f7dc3394a3bddef5cbfb09f018ace3d6f84a9781e4c"
+    },
+    "outputs/deposition_reaudit_cycle920_receipt_2026_07_28.json": {
+      "git_blob": "57418ff72a874104e1dfa1770da23152efa3d83d",
+      "sha256": "1b6d643b30fca987b9831a6d46b785e98456365da51c5434519de1518119065d"
+    },
+    "scripts/frontier_cycle920_deposition_independent_check_2026_07_28.py": {
+      "git_blob": "1f4a50fc74e6f62e5c3bf5264b83053498b47ac8",
+      "sha256": "8001203398f2aded4e42bff088d0ff3677162f926cc94a0188a0311557eefa8f"
+    },
+    "scripts/frontier_cycle920_deposition_reaudit_2026_07_28.py": {
+      "git_blob": "020472e1cdb5a91f83451693d58c82b767f11f56",
+      "sha256": "7615c1cc5aa77df5f14898d72042cb5b9955e6bc8f02397bfc358ab645ea9132"
+    }
+  },
+  "headline": "THE DEPOSITION COMPARATOR RE-AUDITED: the measurement REPRODUCES exactly (22/22 quantities) \u2014 and the 0.20 floor is a GRID ARTIFACT: the true crossing is theta = 0.1405 (bisected to 1e-14; the declared floor overshoots x1.42 and is just the smallest swept point above it); the namesake quantity CANCELS out of its own criterion (fill = N/12 identically); 11 of 12 gated cells are zero by construction (one-event support); mass moves the true crossing +32% while the grid floor never moves; NOT a convention artifact (baselines coincide bond-by-bond at 3e-16 \u2014 CORRECTING 916's B2 premise from baseline-kind to preparation); the grid mislabel confirmed OUTCOME-BEARING at source; the 0.20 citation is dead from both sides",
+  "independence": "three genuinely independent implementations (historical + primary-from-equations + checker's full operator algebra, nnz matching entrywise; crossings at 9e-14); 11/11 teeth",
+  "note": "docs/DEPOSITION_REPRODUCED_FLOOR_GRID_ARTIFACT_CYCLE920_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 21,
+    "primary": 27
+  }
+}

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py
-runner_sha256: 16030d4597997b4ae54088cd9b3f43997236ef6c8973082b0bf1d508083d1890
-input_fingerprint_sha256: cb49d2855ddfde562f1b96405871293f4ed9db9ee4cbf045b73514f4839758df
+runner_sha256: db9825a2c10482fecfa04c005b20a73ead43f5f411ed6a720527273a6d18128e
+input_fingerprint_sha256: 833c059e6a97dcd98a2393ae50fd5102e3888131e1a575f511f49081be250340
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 
@@ -31,14 +31,14 @@ PASS A17 approved primitive sources are limited to units, kinetic-form isotropy,
 PASS A18 bootstrap continuation source keeps its rule toy and formation selection downstream
 
 ===============================================================================
-B - Exact local-rule and continuation-support separation
+B - Historical set-valued comparator and current-rule rejector
 ===============================================================================
 PASS B1 proper cubic rotation group has 24 elements
 PASS B2 witness availability is nonempty on every neighbor pattern
 PASS B3 witness availability varies with neighbor conditions
 PASS B4 witness availability is exhaustively proper-cubic covariant
 PASS B5 witness availability is label-equivariant (no binary label privilege)
-PASS B6 full branch support equals the availability menu on the common domain
+PASS B6 historical branch-complete map equals the support table on the common domain
 PASS B7 copy-law outputs are always available
 PASS B8 singleton-support law gives exactly one successor on the common domain
 PASS B9 copy-law support is exhaustively proper-cubic covariant
@@ -46,7 +46,7 @@ PASS B10 copy-law support is label-equivariant
 PASS B11 one-neighbor contexts leave both possibilities available
 PASS B12 the same contexts have one copy-law successor
 PASS B13 a separately supplied set-valued interface admits distinct branch-complete and singleton-support expansions
-PASS B14 both continuation maps have nonempty candidate-successor support throughout the common domain
+PASS B14 both historical set-valued maps are nonempty throughout the common domain
 PASS B15 both continuation maps have exactly the same supplied domain
 PASS B16 the current probability-distribution axiom rejects the singleton expansion because it omits supported outcomes
 
@@ -109,14 +109,15 @@ PASS G1 site-tagged history nonreconnection closes once distinct immutable succe
 PASS G2 local separation closes by a one-site conflict certificate
 PASS G3 record-content classes refine in the independent full-support model
 PASS G4 the historical set-valued comparator differs from the axiom-compatible support
-PASS G5 the availability table alone does not specify an operation algebra in these constructions
-PASS G6 selection, weights, rate, metric, and capacity renewal remain outside this probe
+PASS G5 the probability rule does not specify an operation algebra in these constructions
+PASS G6 the realized draw, formation site/rate, metric, and capacity renewal remain outside this probe
 
 DECISIVE RESULT
   DERIVED IN THE SITE-TAGGED IMMUTABLE-HISTORY MODEL: local nonreconnection
   and fixed-schedule monotone refinement, conditional on distinct formation successors.
-  NOT DERIVED FROM ADMISSIBILITY: counterfactual branch support or the
-  post-record physical operation-algebra restriction/activation.
+  SUPPLIED BY ADMISSIBILITY+RECORD: supported lock outcomes conditional on formation.
+  NOT DERIVED: a physical state-successor graph or the post-record
+  physical operation-algebra restriction/activation.
   CHECKED AUTHORITY BOUNDARY: one fixed rule is named but the checked
   foundation/adjacent surfaces provide no extensional table or dynamics bridge.
 

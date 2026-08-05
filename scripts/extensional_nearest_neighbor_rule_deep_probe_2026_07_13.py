@@ -169,8 +169,8 @@ def source_contract() -> None:
     continuation_flat = " ".join(continuation.lower().split())
     tensor_nogo_flat = " ".join(tensor_nogo.lower().split())
     check(
-        "A continuation theorem keeps physical successor support underived",
-        "does not say that every menu item has a physical successor" in continuation_flat,
+        "A continuation theorem keeps the physical state-successor lift underived",
+        "do not separately define item 2 as a physical state relation" in continuation_flat,
     )
     check(
         "A tensor no-go keeps composition independent",

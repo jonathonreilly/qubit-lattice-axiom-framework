@@ -221,6 +221,76 @@ framework's named readout follows without a bridge.
   additionally even additive readout, not for Record's general readout.
 - No fermion-sector claims; no measured quantities; no imports.
 
+## No-Go Discipline Gate
+
+This gate applies only to the bounded negative statement that the
+full-cubic det-character polynomial channel is absent through degree eight.
+It does not assert that arbitrary functions, multi-content observables, or
+physical readouts cannot distinguish orientation.
+
+### N1 -- alternative routes
+
+| route | marker | outcome | evidence boundary |
+|---|---|---|---|
+| exact character multiplicity for the det representation | ATTEMPTED | zero at `l=0..8`, one at `l=9` | runner C1, exact finite group sum |
+| det-weighted Reynolds projection of generic polynomials | ATTEMPTED | degree 7 and 8 vanish; degree 9 yields `Psi9` | runner C3, independent projection path |
+| direct transformation of the explicit `Psi9` polynomial | ATTEMPTED | transforms by `det(g)` under all 48 elements | runner C2 |
+| mirror-locus / improper-stabilizer classification | ATTEMPTED | `Psi9=0` exactly on the tested mirror loci | runner C4-C5 and orbit checks A2-A3 |
+| arbitrary direction-dependent low-degree functions | LIVE OUTSIDE SCOPE | coordinate functions can distinguish some improper pairs | explicit counterexample in Theorem 3; no no-go claimed |
+| multi-content orientation functions | LIVE OUTSIDE SCOPE | triple products can detect relative orientation at degree three | boundary section; not a single-content det-character polynomial |
+
+The first four routes cross-check the bounded channel statement; the last two
+prevent it from being inflated into a general detector no-go.
+
+### N2 -- wall independence
+
+The degree-eight channel absence and the conditional even-readout blindness are
+independent. A det-character polynomial could exist without being the named
+readout, and an even readout could remain blind even if another orientation
+channel existed. Neither closes the other.
+
+### N3 -- hidden-wall scan
+
+The full cubic group, polar-vector content action, single-content polynomial
+carrier, det-character transformation law, and degree bound are explicit.
+No preferred direction, genericity measure, actual `A0`, readout parity, or
+physical identification of `Psi9` is silently supplied.
+
+### N4 -- residual matching
+
+The runner resolves only the finite group representation and model-orbit
+claims stated here. Determining the framework's actual `A0`, propagating
+chirality beyond the first step, identifying a physical orientation carrier,
+or relating it to Record readout remain separate residuals.
+
+### N5 -- rhetoric and resolution audit
+
+"Wall" means zero multiplicity in one representation channel through one
+finite degree cutoff. It does not mean no function, no observable, no
+multi-content detector, or no physical process. The evidence is pointwise and
+finite-group exact, not a lattice-wide, continuum, or experimental result.
+
+### N6 -- partial-closure paths
+
+A future physical bridge could identify `Psi9` or a multi-content observable
+with a readout; an actual-rule derivation could place `A0` in either orbit
+class; and a separately supplied odd readout could see the orientation bit.
+Each path is live and none changes the bounded character computation.
+
+### N7 -- strongest steelman
+
+The strongest objection is that a degree-one coordinate already distinguishes
+some improper images. That objection succeeds against any unrestricted
+low-degree-detector claim and is why this note makes none. It does not refute
+the narrower full-cubic pseudoscalar statement, because the coordinate imports
+a direction and does not transform by the det character.
+
+### N8 -- cross-cycle echo
+
+Earlier chirality and theta lanes can use this result only as a bounded
+representation-channel classification. No prior physical closure, retained
+grade, observed value, or axiom necessity is imported or echoed as authority.
+
 ## Residuals and next paths
 
 1. **Locus-class derivation for `A0`**: any account of the fixed rule's

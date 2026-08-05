@@ -3,7 +3,7 @@ runner: scripts/empty_state_bootstrap_orbit_dichotomy_degree_nine_wall_2026_07_0
 runner_sha256: da3fc3be638c7de090a0533ece5ab18435836dffe87379a9a29dc091519c669e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 PASS: S0 group machinery and orbit sizes | unique=48 proper=24 improper=24 orbit_sizes={'axis': 6, 'corner': 8, 'edge': 12, 'mirror': 24, 'generic': 24}

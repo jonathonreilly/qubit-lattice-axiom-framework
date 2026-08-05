@@ -191,9 +191,24 @@ entangled projection becomes lockable content.
 
 ## No-Go Discipline Gate
 
-- **N1 route enumeration:** the conditional v1 defect is not repaired by
-  conflating the Admissibility distribution with a full projection-lattice
-  grading.
+- **N1 route enumeration:**
+  - Route 1, identify `w` with the Admissibility distribution (ATTEMPTED):
+    removes object coexistence but makes the zero-supported-total boundary
+    vacuous and does not supply a full projection-lattice grading.
+  - Route 2, restrict `w` to the Admissibility support (ATTEMPTED): avoids
+    mixed unsupported terms only by abandoning v1's full-lattice domain and
+    additivity premise.
+  - Route 3, require every orthogonal resolution to lie wholly in support
+    (ATTEMPTED): repairs v1 only under an extra support-closure premise that
+    the current distribution-variation axiom does not supply.
+  - Route 4, retain unsupported projections as physical menu alternatives
+    (ATTEMPTED): contradicts the forced reading of admissible/available as
+    distribution support.
+  - Route 5, condition an independent full-lattice auxiliary grading on
+    support (ATTEMPTED): succeeds conditionally as v2 and keeps the two typed
+    objects distinct; the runner checks coexistence and conditioning.
+  - Route 6, silently normalize a zero-total supported grading (REJECTED): is
+    undefined rather than a probability law; v2 exposes this boundary.
 - **N2 premise separation:** v2 is a named conditional premise. This note does
   not register it, approve it, or treat it as landed axiom text.
 - **N3 hidden-wall scan:** the full-lattice/additivity surface, mixed

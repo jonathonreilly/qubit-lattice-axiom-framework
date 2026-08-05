@@ -1,13 +1,13 @@
 ---
 claim_id: record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07
 claim_type: bounded_theorem
-claim_scope: "Scope-pinned bounded note: conditional on the audit judgment that countermodel furniture is load-bearing use-as-a-premise under the Qualification, the joint evaluation of Record uniqueness and permanence is supported from the landed sentences; the same-site fork model is finitely exhibited and inadmissible under that judgment by an unregistered-structure inventory; agreement-on-overlap and finite one-realized-configuration follow under the supported evaluation; causal-order consequences follow only given a supplied acyclic nearest-neighbor formation-event dependency relation."
+claim_scope: "Scope-pinned bounded note: the Admissibility distribution and Record permit mutually exclusive same-site successor states carrying different supported outcomes; uniqueness and permanence are state-relative and do not imply agreement on overlap, a conflict-free union of alternative states, or global comparability. Inside one separately supplied immutable formation history, causal-order consequences follow only given an acyclic nearest-neighbor event-dependency relation."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py
 ---
 
-# Record Comparability: Import-Discipline Support, Fork Exhibit, And Conditional Arrow Substrate
+# Record Comparability: Supported-Outcome Fork Counterexample And Conditional Within-History Order
 
 **Date:** 2026-07-07
 **Type:** bounded_theorem
@@ -32,14 +32,14 @@ consumed. Either the landed sentences support a conclusion or they do not;
 this note argues entirely from the landed sentences and finite exhibits that
 any reader can check.
 
-The conclusion, typed at its honest strength: conditional on ONE explicit
-audit judgment (stated below), the joint evaluation of Record uniqueness and
-permanence -- one record per site, over everything realized -- is supported
-from the landed text, because the only countermodel consumes physical
-structure the axioms do not name. Under the supported evaluation,
-agreement-on-overlap and finite one-realized-configuration follow. The
-judgment point and its documented fallback are stated in the open, and this
-note requests no ruling on either.
+The conclusion, typed at its honest strength: the probability distribution
+supplies alternative supported lock outcomes conditional on formation, while
+Record realizes exactly one outcome in each resulting state. Uniqueness and
+permanence are therefore state-relative. They do not force distinct possible
+states to agree at a shared site, make their union a realized configuration,
+or impose global comparability. A monotone event order survives only inside a
+separately supplied immutable formation history with an acyclic dependency
+relation.
 
 ## Landed premises
 
@@ -98,19 +98,19 @@ readout value is determined by record content alone; scalar readout `I` is
 additive over finite pairwise-disjoint record collections with
 `I(empty) = 0`); states, as configurations of records; and law-form: a law
 privileges no states, its domain is a supplied condition, and at every state
-where the condition holds it gives exactly one answer. Nothing else is
-named. In particular, NO landed sentence names: a family of co-realized
-incomparable alternatives, a branch or world index, a formation-successor
-relation, or a relativization of record presence to any such structure.
+where the condition holds it gives exactly one answer. Nothing else is named.
+In particular, no landed sentence turns distinct possible successor states
+into jointly co-realized records, supplies a branch or world ontology, or
+defines a temporal formation-successor relation.
 
-## Result F: the fork exhibit and its inventory
+## Result F: the supported-outcome fork is admissible
 
-The availability rule used in both finite checks is nonconstant and
-nearest-neighbor covariant: a possibility is unavailable at a site exactly
-when a nearest neighbor already carries a record locking that same
-possibility; otherwise it is available. This rule is expressed only in terms
-of nearest-neighbor incidence and record content, so translations and proper
-cubic rotations preserve it, and it varies with nearest-neighbor conditions.
+The support rule used in both finite checks is nonconstant, nonempty, and
+nearest-neighbor covariant: start from `{red, blue}`, remove values carried by
+nearest-neighbor records, and restore the full pair if removal would empty the
+support. This rule is expressed only in terms of nearest-neighbor incidence
+and record content, so translations and proper cubic rotations preserve it,
+and it varies with nearest-neighbor conditions.
 The finite realization assigns the uniform probability distribution on each
 nonempty support, so the probability rule has the same covariance and
 variation.
@@ -134,83 +134,41 @@ sentence passes: each of `B0`, `B1`, `B2` is a configuration of records; each
 declared state carries at most one record at `s`; no declared succession
 removes a record. The finite check is mechanical and the runner performs it.
 
-### The inventory (why Model B is not a countermodel)
+### Why the alternatives are not co-realized records
 
-To exist at all, Model B consumes two objects beyond the named signature:
+At `B0`, the finite distribution is uniform on support `{red, blue}`. Under the
+forced reading of Admissibility with Record, `B1` and `B2` are mutually
+exclusive supported outcomes conditional on formation. Exactly one is the
+realized successor in any actual occurrence. The set `{B1, B2}` describes
+alternatives in the law; it is not a state containing both records.
 
-```text
-IMPORT 1: CO-REALIZATION of incomparable alternatives -- B1 and B2, neither
-          extending the other, treated as JOINTLY realized. (Presence of a
-          record relative to a state is licensed: "A state is a
-          configuration of records." What no landed sentence licenses is
-          the co-realized incomparable FAMILY itself.)
-IMPORT 2: a formation-successor relation F_B among states.
-```
+The displayed `F_B` is a separately supplied state-successor representation,
+because the axioms do not define temporal successor edges. It is required only
+to exhibit the conditional histories. It does not convert the two outcomes
+into jointly co-realized records or violate the one-record-per-site clause.
 
-Each import is physical structure. Neither is named by any landed sentence
-(see The Named Signature). Neither is derived, bridged, or registered as an
-approved primitive. Under the quoted supply discipline -- "Further physical
-structure requires a retained derivation or bridge, or explicit approved-
-primitive registration, before use as a premise" -- these imports are not
-available for load-bearing use. A countermodel offered against a
-derivability claim is load-bearing use: the model's furniture is the premise
-set of the argument "the sentences do not force the conclusion."
+**Result F verdict:** the fork is an admissible conditional realization of a
+two-point distribution. It disproves the former global reading under which
+per-site uniqueness was applied across distinct possible states.
 
-Without the imports, the fork cannot be stated: `r_red` and `r_blue` are then
-two formed records at one site simpliciter, and the quoted sentence "A site
-never carries more than one record" fails directly. The runner verifies the
-minimal-signature evaluation (Model W): the same construction, with record
-presence unindexed, violates per-site uniqueness on the one stock of formed
-records.
+## Result A: consequences of the corrected state-relative reading
 
-### The auditor judgment point (stated, not hidden)
+### A1: agreement on overlap is not derived
 
-The chain above requires one judgment: that countermodel furniture counts
-as "use as a premise" under the Qualification sentence. The text-side
-reason is that the fork's extra furniture is exactly what lets the
-countermodel function against the conclusion.
+Model B is a direct counterexample. `B1` and `B2` both carry a record at `s`
+but lock different supported outcomes. Each state separately obeys per-site
+uniqueness. The Record clause does not compare records across mutually
+exclusive possible states, so overlap agreement requires an additional common-
+history or single-realization premise.
 
-If a fresh-context audit refuses this judgment, the documented fallback is
-axiom-text clarification through the standard blind-panel in-place-edit
-route, using the reserve wording recorded below -- an owner surface, exercised
-then, not now, and not by this note. This note makes no ruling and requests
-none.
+### A2: one global realized configuration is not derived
 
-**Result F verdict:** the fork model is finitely exhibited; its imports are
-inventoried; conditional on the stated judgment it is not an admissible
-countermodel; and with the co-realization furniture removed, the same
-construction is one stock of formed records and fails per-site uniqueness
-directly.
-
-## Result A: theorems under the supported evaluation
-
-Result A consumes the joint evaluation supported by Result F, and therefore
-carries Result F's conditionality: everything in A1 and A2 is conditional on
-the stated judgment point. Under that evaluation, uniqueness and permanence
-range over formed records simpliciter.
-
-### A1: agreement on overlap
-
-Any two states agree wherever both carry records. If two states both carry a
-record at site `s`, those records are formed records at `s`; per-site
-uniqueness over formed records makes them the same record. A record is
-individuated by its site and its locked possibility, so same-site
-different-content records would be two records at one site, which the
-sentence bars.
-
-### A2: one realized configuration
-
-The union of any finite collection of states is well-defined and
-conflict-free: by A1 the formed-record collection is a partial function from
-sites to locked possibilities, so finite unions are configurations and every
-state in the collection is a subconfiguration of the union. For infinite
-collections the same partial-function argument gives conflict-freeness
-sitewise; whether the full union is itself a realized configuration is a
-closure question left open here (a union-closure lemma target, not assumed).
-
-Plainly: the earlier candidate sentence "There is one configuration of
-records." is supported here in finite form conditional on Result F's audit
-judgment, not supplied.
+The union `B1 union B2 = {r_red, r_blue}` is not a configuration because it
+contains two records at one site. That union does not describe what is jointly
+realized; it merely collapses mutually exclusive outcomes into one set. A
+conflict-free union theorem remains valid inside one supplied immutable
+history whose states are nested, but it does not extend across alternative
+successor histories.
 
 ### A3: chain ordering, conditional on a supplied dependency relation
 
@@ -221,9 +179,10 @@ axiom content, and which formation conditioned which is formation-rule
 territory. A3 is therefore conditional: GIVEN an acyclic nearest-neighbor
 dependency relation among realized formation events -- to be supplied by the
 formation rule -- its transitive closure strictly orders the events of each
-dependency chain: each formation adds a record; permanence keeps earlier
-records present; joint uniqueness forbids reversal, overwrite, and
-re-formation at the same site. No recurrence is available along any chain.
+dependency chain: each formation adds a record; permanence and per-state
+uniqueness forbid reversal, overwrite, and re-formation at the same site
+within that history. No recurrence is available
+along any such chain.
 
 Acyclicity is a hypothesis on the supplied relation, not a theorem here. If
 the supplied relation is grounded so that `e` depends on `f` only when `f`'s
@@ -234,14 +193,12 @@ vocabulary, so that discharge belongs to the supplier's certification, not
 to this note.
 
 Explicit non-goal: no global total order among causally disconnected events
-is claimed, needed, or implied. Joint uniqueness supplies consistency, not
-simultaneity. This is order-only: no rate, metric, or clock is supplied.
+is claimed, needed, or implied. This is order-only: no rate, metric, or clock
+is supplied.
 
-**Result A verdict:** A1 and A2 (finite form) are theorems under the
-supported joint evaluation. A3 holds conditionally on a supplied acyclic
-dependency relation. What closes outright is the arrow's substrate --
-consistency and irreversibility; the ordering content joins the
-formation-rule contract.
+**Result A verdict:** A1 and A2 are not consequences of the current axioms. A3
+holds only inside one supplied immutable history with an acyclic dependency
+relation. No global comparability or one-configuration theorem closes here.
 
 ## Wording-history exhibits (context only; nothing here is a premise)
 
@@ -258,8 +215,8 @@ hold incomparable subconfigurations:
 empty, {x}, {y}, {x,y}
 ```
 
-All four sit inside `{x,y}`, but `{x}` and `{y}` are incomparable. (Its
-finite-form content is what A2 derives.)
+All four sit inside `{x,y}`, but `{x}` and `{y}` are incomparable. This remains
+a wording-history exhibit only; A2 is not derived.
 
 v2:
 
@@ -270,9 +227,8 @@ Of any two states, one extends the other.
 v2 is totality overreach. A global order among disconnected events is
 structure no landed sentence supplies and no Result A claim uses.
 
-Reserve wording (the documented fallback of the auditor judgment point; NOT
-promoted, NOT a premise; the runner guards it as absent from the axiom
-file):
+Rejected historical reserve wording (not promoted and not a premise; the
+runner guards it as absent from the axiom file):
 
 ```text
 At each site, at most one record ever forms.
@@ -282,14 +238,13 @@ At each site, at most one record ever forms.
 
 - No owner-selected semantics, scope record, premise-node annotation, or
   policy entry is used or created anywhere in this note.
-- No axiom text is edited here. The reserve wording is recorded only as a
-  contingent fallback if a future fresh-context audit refuses the judgment
-  point; it is not current premise content and no ruling is requested.
-- Result F is a finite exhibit plus an inventory argument under the quoted
-  supply discipline; its single judgment point is stated above.
-- No formation rule, site-selection rule, possibility-selection rule, rate,
-  clock, metric, probability, Hamiltonian, transfer operator, or dynamics is
-  supplied.
+- No axiom text is edited here. The reserve wording is historical only; the
+  corrected probability/support reading removes the premise for promoting it.
+- Result F is a finite admissible fork exhibit. It does not co-realize
+  alternative records.
+- The finite uniform distribution is fixture data, not an identification of
+  the framework's fixed rule. No formation site/rate, realized-draw selector,
+  clock, metric, Hamiltonian, transfer operator, or dynamics is supplied.
 - The possibility side, including superposition before records, is untouched:
   everything here concerns formed records, not possibilities.
 - No audit verdict is set or forecast.
@@ -299,65 +254,54 @@ At each site, at most one record ever forms.
 This is Class C runner-carried source material with no premise weight before
 audit ratification; after ratification, citation is at the audited
 claim_scope exactly. Within that gate: downstream rows may cite the fork
-exhibit with its import inventory, the conditional Result F verdict (always
-with its judgment point), and A1/A2 as conditional consequences under the
-supported evaluation. Downstream rows may NOT cite: this note's title,
+exhibit as a counterexample to global agreement/comparability and the
+conditional within-history ordering result. Downstream rows may NOT cite: this note's title,
 summary, or prose as premises; the wording-history exhibits or the reserve
 wording as premises or as pending edits; the runner cache text as a premise
-surface; comparability as unconditionally derived; or any resolution of the
-judgment point itself, which belongs to the audit lane.
+surface; agreement on overlap, a conflict-free union of alternative states, or
+global comparability as derived.
 
 ## No-Go Discipline Gate
 
 - **N1 route enumeration:**
-  - Route 1, per-state fork countermodel (ATTEMPTED): succeeds only with the
-    co-realized incomparable-family import and the formation-successor
-    relation import; without those imports, the same stock fails per-site
-    uniqueness.
-  - Route 2, minimal-signature collapsed stock (ATTEMPTED): treats formed
-    records as unindexed by alternative families; the fork then has two
-    records at one site and is barred directly by Record uniqueness.
-  - Route 3, final-container reading of v1 (ATTEMPTED): one final
-    configuration can contain incomparable substages, so v1 is not used as an
-    axiom-text premise; A2 keeps only the finite union consequence.
-  - Route 4, total-comparability reading of v2 (ATTEMPTED): disconnected
-    events would be globally ordered by stipulation; that is overreach and is
-    not used by A1, A2, or A3.
-  - Route 5, arrow-ordering from formation dependencies (ATTEMPTED):
-    ordering closes only after an acyclic nearest-neighbor dependency relation
-    is supplied; the relation and its acyclicity are hypothesis data, not an
-    axiom-derived theorem here.
-- **N2 wall independence:** the wall set collapses to two independent
-  conditionals: Result F's audit judgment about countermodel furniture as
-  load-bearing premise use, and A3's supplied acyclic dependency relation.
-  Closing either does not close the other. v1, v2, and the reserve wording are
-  not walls or premises; they are wording-history exhibits and a documented
-  fallback only.
-- **N3 hidden-wall scan:** no global order imported; no rate/clock; no
-  dynamics, probability, update law, site-selection rule, possibility-selection
-  rule, or formation rule imported. The joint evaluation is argued from the
-  landed supply discipline, not supplied as external semantics.
-- **N4 residual matching:** the closed/residual split is explicit:
-  consistency of record content closes only under Result F's judgment point;
-  finite union is all A2 claims; global simultaneity, metrics, rates,
-  dynamics, infinite union-closure, and formation-rule certification remain
-  residual structure.
+  - Route 1, per-state fork (ATTEMPTED): succeeds and is the corrected model;
+    the two outcomes are mutually exclusive, not co-realized records.
+  - Route 2, collapse alternative states into one record stock (ATTEMPTED):
+    fails because union is not the semantics of mutually exclusive outcomes.
+  - Route 3, final-container reading of v1 (ATTEMPTED): a single supplied
+    history may have a final container, but that does not contain alternative
+    histories or establish a universal configuration.
+  - Route 4, total-comparability reading of v2 (ATTEMPTED): disconnected or
+    alternative histories are globally ordered only by an extra stipulation.
+  - Route 5, arrow-ordering from formation dependencies (ATTEMPTED): ordering
+    closes only inside a supplied immutable history with an acyclic dependency
+    relation.
+- **N2 wall independence:** two independent residuals remain: a physical
+  formation-successor/history relation and its acyclic dependency relation.
+  Neither supplies the other. The historical v1, v2, and reserve wording are
+  not premises.
+- **N3 hidden-wall scan:** no global order, co-realization ontology,
+  rate/clock, update law, site-selection rule, realized-draw selector, or
+  formation rule is imported. Model B's successor edges are explicit
+  conditional fixture data.
+- **N4 residual matching:** per-state uniqueness and along-history permanence
+  match the axiom. Agreement across alternatives, their union, global
+  simultaneity, metrics, rates, dynamics, and history certification remain
+  residual or are explicitly not derived.
 - **N5 rhetoric audit:** "state" means a configuration of records. "Extends"
   means set inclusion of record configurations. "Ordering" means transitive
   closure of a supplied dependency relation. None of these words supplies a
   clock tick, duration, metric, dynamics, or global chronology.
-- **N6 partial-closure path scan:** the standard in-place axiom-clarification
-  route remains the documented fallback if the audit judgment is refused, but
-  it is not exercised here. The conditional causal order closes only order
-  along supplied dependency chains and does not close formation rules, weights,
-  rates, probabilities, or dynamics.
-- **N7 steelman:** the strongest defense of the fork model is that stative
-  "carries" invites per-state evaluation. The response is not a counter-
-  reading but the inventory: per-state evaluation of formed-record existence
-  requires IMPORT 1's co-realized family, and the discipline sentence bars the
-  import unless independently supplied. The strongest v1 reading is the
-  final-container reading; the exhibit `empty, {x}, {y}, {x,y}` shows why v1
-  fails as text while A2 holds as theorem.
+- **N6 partial-closure path scan:** the conditional causal order closes only
+  order along supplied dependency chains. It does not close formation rules,
+  the realized draw, formation site/rate, or dynamics; no axiom clarification
+  is requested.
+- **N7 steelman:** the strongest global-comparability defense treats all
+  records appearing in any possible state as one realized stock. That move is
+  exactly what the probability/support reading rejects: alternative supported
+  outcomes are possible locks, while Record realizes one. A common immutable
+  history can recover nested comparability locally, but cannot globalize it to
+  mutually exclusive histories.
 - **N8 cross-cycle echo:** this note records bounded analysis only. It does
   not edit primitives, alter the audit ledger, set verdicts, forecast audit
   status, or promote v1, v2, or the reserve wording. Prior wording-based
@@ -367,12 +311,11 @@ judgment point itself, which belongs to the audit lane.
 
 Verdicts in prose; runner mechanical. The companion runner checks textual
 needles (including the admission-discipline sentences and the reserve-wording
-absence guard), the fork model's sentence-by-sentence finite pass under its
-declared imports, the import inventory against the named-signature object
-list, the minimal-signature evaluation barring the same construction, A1/A2
-on a finite joint model with a disconnected event and an influence chain, the
+absence guard), the fork model's sentence-by-sentence finite pass, its
+state-relative uniqueness and permanence, failure of global overlap agreement
+and union consistency across alternative outcomes, an immutable-history
+fixture with a disconnected event and an influence chain, the
 explicit non-goal that disconnected events remain unordered, a supplied-cycle
 exhibit showing acyclicity is hypothesis data, and smoke rejectors. The
 smoke rejectors test that the verifier functions have teeth (mutated inputs
-fail); they do not and cannot test the admissibility judgment point, which
-is prose-level and audit-owned.
+fail).

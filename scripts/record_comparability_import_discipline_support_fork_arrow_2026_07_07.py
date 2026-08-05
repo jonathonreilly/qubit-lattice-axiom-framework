@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""Mechanical checks for the 2026-07-07 record comparability recut note.
+"""Mechanical checks for the corrected record-comparability bounded note.
 
-Verdicts live in the prose note. This runner checks textual needles and
-finite exhibits for the import-discipline derivation: the fork model passes
-per-state evaluation only by consuming declared imports; the minimal-
-signature evaluation bars it; the joint consequences follow. No owner
-semantics, scope record, policy entry, or premise-node annotation is
-consumed or checked for -- their ABSENCE is guarded.
+The finite fork represents mutually exclusive supported lock outcomes.  It
+passes Record state by state and refutes global agreement/union claims; it does
+not co-realize two records.  A separate immutable-history fixture checks only
+the conditional event-order result.  Verdicts remain in prose.
 """
 
 from __future__ import annotations
@@ -39,15 +37,15 @@ LAW_DEPENDENCE_SENTENCE = (
     "A choice not fixed by the supplied structure remains a named conditional "
     "or open dependency."
 )
-IMPORT_NEEDLES = [
-    "IMPORT 1: CO-REALIZATION of incomparable alternatives",
-    "IMPORT 2: a formation-successor relation F_B among states.",
-    "What no landed sentence licenses is",
+FORK_NEEDLES = [
+    "mutually exclusive supported outcomes conditional on formation",
+    "not co-realized records",
+    "separately supplied state-successor representation",
 ]
 MINIMAL_AXIOM_LINK = "[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)"
 NO_GO_ROUTE_NEEDLES = [
-    "Route 1, per-state fork countermodel",
-    "Route 2, minimal-signature collapsed stock",
+    "Route 1, per-state fork",
+    "Route 2, collapse alternative states into one record stock",
     "Route 3, final-container reading of v1",
     "Route 4, total-comparability reading of v2",
     "Route 5, arrow-ordering from formation dependencies",
@@ -145,11 +143,27 @@ def rotate_config(config: Config, rotation: str) -> Config:
     return frozenset(Record(rotate_site(record.site, rotation), record.possibility) for record in config)
 
 
-def available(site: Coord, possibility: str, context: Config) -> bool:
-    return not any(
-        is_nearest_neighbor(site, record.site) and record.possibility == possibility
-        for record in context
+def support(site: Coord, context: Config) -> frozenset[str]:
+    values = frozenset(
+        possibility
+        for possibility in ("red", "blue")
+        if not any(
+            is_nearest_neighbor(site, record.site)
+            and record.possibility == possibility
+            for record in context
+        )
     )
+    return values or frozenset({"red", "blue"})
+
+
+def distribution(site: Coord, context: Config) -> dict[str, float]:
+    supported = support(site, context)
+    weight = 1.0 / len(supported)
+    return {possibility: weight for possibility in supported}
+
+
+def available(site: Coord, possibility: str, context: Config) -> bool:
+    return possibility in support(site, context)
 
 
 def constant_available(site: Coord, possibility: str, context: Config) -> bool:
@@ -159,8 +173,8 @@ def constant_available(site: Coord, possibility: str, context: Config) -> bool:
 def rule_varies(rule) -> bool:
     site = (0, 0, 0)
     clear: Config = frozenset()
-    blocked: Config = frozenset({Record((1, 0, 0), "up")})
-    return rule(site, "up", clear) != rule(site, "up", blocked)
+    blocked: Config = frozenset({Record((1, 0, 0), "red")})
+    return rule(site, "red", clear) != rule(site, "red", blocked)
 
 
 def rule_is_covariant(rule) -> bool:
@@ -169,7 +183,7 @@ def rule_is_covariant(rule) -> bool:
     shift = (7, -3, 2)
     rotations = ("identity", "cycle_xyz", "cycle_xzy", "half_turn_z", "quarter_turn_z")
 
-    for possibility in ("up", "down", "red"):
+    for possibility in ("red", "blue"):
         if rule(site, possibility, context) != rule(
             add_site(site, shift),
             possibility,
@@ -227,7 +241,7 @@ def added_records_are_available(model: BranchModel) -> bool:
     )
 
 
-def narrow_reading_passes(model: BranchModel) -> bool:
+def state_relative_model_passes(model: BranchModel) -> bool:
     records = [record for config in model.states for record in config]
     return all(
         (
@@ -315,9 +329,9 @@ def main() -> int:
 
     groups: list[tuple[str, list[tuple[str, bool]]]] = [
         ("text needles and absence guards", []),
-        ("Result F Model B: narrow same-site branching model", []),
-        ("Result F import inventory and co-realization-collapse bar", []),
-        ("Result A1/A2: overlap agreement and one realized configuration", []),
+        ("Result F Model B: supported mutually exclusive outcomes", []),
+        ("Global agreement and union claims are rejected", []),
+        ("One supplied immutable history remains internally compatible", []),
         ("Result A3/non-goal: influence order without global totality", []),
         ("smoke rejectors fail the required surfaces (not same-verifier mutations)", []),
     ]
@@ -334,11 +348,10 @@ def main() -> int:
     check(0, "note quotes the supply-discipline sentence", contains_needle(note_text, DISCIPLINE_SENTENCE))
     check(0, "axiom contains the law-dependence sentence", contains_needle(axiom_text, LAW_DEPENDENCE_SENTENCE))
     check(0, "note quotes the law-dependence sentence", contains_needle(note_text, LAW_DEPENDENCE_SENTENCE))
-    for needle in IMPORT_NEEDLES:
-        check(0, f"note inventories: {needle[:40]}", contains_needle(note_text, needle))
-    check(0, "note states the fork consumes exactly two extra objects", "consumes two objects beyond the named signature" in note_text)
-    check(0, "stale three-object inventory wording is absent", "consumes three objects beyond the named signature" not in note_text)
-    check(0, "stale IMPORT 3 reference is absent", "IMPORT 3" not in note_text)
+    for needle in FORK_NEEDLES:
+        check(0, f"note states corrected fork semantics: {needle[:40]}", contains_needle(note_text, needle))
+    check(0, "stale co-realization imports are absent", "IMPORT 1" not in note_text and "IMPORT 2" not in note_text)
+    check(0, "stale audit-judgment gate is absent", "audit judgment" not in note_text and "judgment point" not in note_text)
     for needle in NO_GO_ROUTE_NEEDLES:
         check(0, f"note records no-go route: {needle}", contains_needle(note_text, needle))
     for forbidden in OWNER_SEMANTICS_FORBIDDEN:
@@ -362,7 +375,7 @@ def main() -> int:
         successors=frozenset({(empty, red_state), (empty, blue_state)}),
     )
 
-    check(1, "same-site branch has two alternatives", len(model_b.states) == 3)
+    check(1, "same-site branch has two alternative successor states", len(model_b.states) == 3)
     check(1, "alternatives lock different possibilities at the same site", red_record.site == blue_record.site and red_record != blue_record)
     check(1, "nonconstant availability rule varies with neighbor context", rule_varies(available))
     check(1, "availability rule is translation and proper-rotation covariant", rule_is_covariant(available))
@@ -372,25 +385,25 @@ def main() -> int:
     check(1, "each formed record locks exactly one possibility", all(locks_exactly_one(record) for config in model_b.states for record in config))
     check(1, "formed records are admissible in predecessor contexts", added_records_are_available(model_b))
     check(1, "permanence holds per declared succession", permanence(model_b.successors))
+    empty_distribution = distribution(same_site, empty)
+    check(1, "the predecessor distribution is normalized", abs(sum(empty_distribution.values()) - 1.0) < 1.0e-12)
+    check(1, "both alternative lock outcomes have positive probability", empty_distribution == {"red": 0.5, "blue": 0.5})
     check(1, "law-form sentence has no supplied law object to exclude", len(model_b.laws) == 0)
-    check(1, "narrow translation accepts Model B", narrow_reading_passes(model_b))
+    check(1, "state-relative reading accepts Model B", state_relative_model_passes(model_b))
 
-    # The operational content of the import inventory: the fork passes ONLY
-    # via its declared extra structure (a co-realized state family plus a
-    # successor relation with indexed presence); evaluated on the one stock
-    # of formed records -- the named signature, no imports -- the same
-    # construction fails per-site uniqueness directly.
-    check(2, "fork passes per-state evaluation only WITH its declared imports", narrow_reading_passes(model_b))
-    check(2, "IMPORT 1/2 are load-bearing: the fork declares a co-realized family and successor relation", len(model_b.states) == 3 and len(model_b.successors) == 2)
+    # Collapsing mutually exclusive outcomes into one stock is deliberately
+    # rejected: it is not the semantics of a probability distribution.
+    check(2, "fork passes state-relative evaluation", state_relative_model_passes(model_b))
+    check(2, "the fixture declares two alternative successor edges", len(model_b.states) == 3 and len(model_b.successors) == 2)
     joint_stock = frozenset().union(*model_b.states)
-    check(2, "co-realization collapse: without the family furniture the construction is one stock of formed records and fails per-site uniqueness", not per_state_uniqueness(joint_stock))
-    check(2, "equivalently, joint uniqueness over the declared family detects the same-site conflict", not joint_uniqueness(model_b.states))
-    check(2, "overlap agreement fails for the same-site alternatives", not agreement_on_overlap(model_b.states))
-    check(2, "availability rule remains nonconstant under the minimal-signature evaluation", rule_varies(available))
+    check(2, "collapsing alternatives produces a non-state with two same-site records", not per_state_uniqueness(joint_stock))
+    check(2, "global uniqueness across alternative states is false", not joint_uniqueness(model_b.states))
+    check(2, "overlap agreement fails for the alternative states", not agreement_on_overlap(model_b.states))
+    check(2, "the probability support rule remains nonconstant", rule_varies(available))
     check(
         2,
-        "the bar is explained in the note",
-        contains_needle(note_text, "violates per-site uniqueness on the one stock of formed records"),
+        "the corrected boundary is explained in the note",
+        contains_needle(note_text, "The union `B1 union B2 = {r_red, r_blue}` is not a configuration"),
     )
 
     e0 = Event("e0", Record((0, 0, 0), "down"))
@@ -406,14 +419,14 @@ def main() -> int:
     s_all: Config = frozenset({e0.record, e1.record, e2.record, q0.record})
     states_a = frozenset({s0, s_e0, s_e01, s_e012, s_q, s_all})
     successors_a = frozenset({(s0, s_e0), (s_e0, s_e01), (s_e01, s_e012), (s0, s_q), (s_e012, s_all)})
-    realized_union = union_config(states_a)
+    history_states = frozenset({s0, s_e0, s_e01, s_e012})
+    history_union = union_config(history_states)
 
-    check(3, "A model satisfies joint uniqueness", joint_uniqueness(states_a))
-    check(3, "A1 overlap agreement holds", agreement_on_overlap(states_a))
-    check(3, "union of all realized records is conflict-free", per_state_uniqueness(realized_union))
-    check(3, "every state is a subconfiguration of the union", all(state.issubset(realized_union) for state in states_a))
-    check(3, "derived union contains all four realized records", realized_union == s_all)
-    check(3, "note types the one-configuration sentence as conditionally supported, not supplied", "supported here in finite form conditional on Result F's audit" in note_text)
+    check(3, "one supplied nested history satisfies cross-stage agreement", agreement_on_overlap(history_states))
+    check(3, "the nested history has a conflict-free union", per_state_uniqueness(history_union))
+    check(3, "every stage is a subconfiguration of the history union", all(state.issubset(history_union) for state in history_states))
+    check(3, "the history union is its final displayed stage", history_union == s_e012)
+    check(3, "the note confines the union theorem to one supplied immutable history", "valid inside one supplied immutable\nhistory" in note_text)
 
     edges = influence_edges(events)
     order = transitive_closure(edges)
@@ -434,8 +447,8 @@ def main() -> int:
 
     removal_sequence = [s0, s_e0, s0, s_e0]
     removal_successors = frozenset({(s_e0, s0)})
-    check(5, "smoke rejector: dropping joint uniqueness lets Model B pass narrow readings", narrow_reading_passes(model_b))
-    check(5, "smoke rejector: dropping joint uniqueness makes A1 agreement fail", not agreement_on_overlap(model_b.states))
+    check(5, "control: state-relative Model B passes", state_relative_model_passes(model_b))
+    check(5, "rejector: global overlap agreement fails on Model B", not agreement_on_overlap(model_b.states))
     check(5, "smoke rejector: dropping permanence permits a removal edge", not permanence(removal_successors))
     check(5, "smoke rejector: dropping permanence permits recurrence in a finite sequence", not no_recurrence_sequence(removal_sequence))
     check(5, "smoke rejector: constant availability rule fails vary-with", not rule_varies(constant_available))

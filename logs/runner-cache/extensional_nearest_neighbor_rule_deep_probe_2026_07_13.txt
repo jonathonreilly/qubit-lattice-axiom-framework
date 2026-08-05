@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py
-runner_sha256: b6a57bef91e6542d5f2797b9bcc90393dd10d370ee61325491b44b3245186c44
-input_fingerprint_sha256: fba83d578316e1b3c0df42b7ee809ed2fb5eea6d39f8505cd2c287ff689e2baf
+runner_sha256: f90db72fd8c7c7c3de2f119f40a28b417e1e61679a3abf02da7e65368b6f12ec
+input_fingerprint_sha256: 28d7abedd2f03ee247ccf37bf8afe8dac3345fb9a05fc50d7695778f0203a6ec
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 
@@ -17,7 +17,7 @@ PASS A live axiom needle: Records form.
 PASS A live axiom needle: A state is a configuration of records.
 PASS A live axiom needle: Admissibility is not a dynamics axiom.
 PASS A live axiom contains no extensional rule table
-PASS A continuation theorem keeps physical successor support underived
+PASS A continuation theorem keeps the physical state-successor lift underived
 PASS A tensor no-go keeps composition independent
 PASS A producer boundary keeps the next-token law separate
 PASS A only four approved premise nodes exist

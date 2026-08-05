@@ -4,8 +4,8 @@
 This runner separates three propositions that ordinary language can easily
 collapse:
 
-1. an availability rule gives a menu of locally available possibilities;
-2. a continuation law supplies one or more successors for that menu; and
+1. the Admissibility distribution gives conditional lock-outcome support;
+2. a physical continuation model supplies state successors for those outcomes; and
 3. under declared site-tagged immutable-extension semantics, distinct
    same-site record successors cannot acquire a common syntactic extension.
 
@@ -291,7 +291,7 @@ def formation_domain(pattern: tuple[int, ...]) -> bool:
 
 
 def local_rule_classification() -> None:
-    section("B - Exact local-rule and continuation-support separation")
+    section("B - Historical set-valued comparator and current-rule rejector")
     patterns = list(product((OPEN, 0, 1), repeat=6))
     outputs = {availability(pattern) for pattern in patterns}
 
@@ -312,7 +312,7 @@ def local_rule_classification() -> None:
     )
     common_domain = [pattern for pattern in patterns if formation_domain(pattern)]
     outside_domain = [pattern for pattern in patterns if not formation_domain(pattern)]
-    check("B6 full branch support equals the availability menu on the common domain", all(full_branch_support(pattern) == availability(pattern) for pattern in common_domain))
+    check("B6 historical branch-complete map equals the support table on the common domain", all(full_branch_support(pattern) == availability(pattern) for pattern in common_domain))
     check("B7 copy-law outputs are always available", all(copy_law_support(pattern) <= availability(pattern) for pattern in patterns))
     check("B8 singleton-support law gives exactly one successor on the common domain", all(len(copy_law_support(pattern)) == 1 for pattern in common_domain))
     check(
@@ -335,7 +335,7 @@ def local_rule_classification() -> None:
         "B13 a separately supplied set-valued interface admits distinct branch-complete and singleton-support expansions",
         any(full_branch_support(pattern) != copy_law_support(pattern) for pattern in one_neighbor_patterns),
     )
-    check("B14 both continuation maps have nonempty candidate-successor support throughout the common domain", all(full_branch_support(pattern) and copy_law_support(pattern) for pattern in common_domain))
+    check("B14 both historical set-valued maps are nonempty throughout the common domain", all(full_branch_support(pattern) and copy_law_support(pattern) for pattern in common_domain))
     check("B15 both continuation maps have exactly the same supplied domain", all(not full_branch_support(pattern) and not copy_law_support(pattern) for pattern in outside_domain))
     check(
         "B16 the current probability-distribution axiom rejects the singleton expansion because it omits supported outcomes",
@@ -652,12 +652,12 @@ def final_classification() -> None:
                 unit = np.zeros((4, 4), dtype=complex)
                 unit[row, column] = 1.0
                 block_basis.append(unit)
-    check("G5 the availability table alone does not specify an operation algebra in these constructions", full_dimension == 1 and commutant_dimension(block_basis) == 2)
+    check("G5 the probability rule does not specify an operation algebra in these constructions", full_dimension == 1 and commutant_dimension(block_basis) == 2)
     axiom = AXIOM.read_text()
     flat_axiom = " ".join(axiom.split())
     note = NOTE.read_text()
     check(
-        "G6 selection, weights, rate, metric, and capacity renewal remain outside this probe",
+        "G6 the realized draw, formation site/rate, metric, and capacity renewal remain outside this probe",
         "the distribution's form and values, at which site, and at what rate" in flat_axiom
         and "time metric" in flat_axiom
         and "physical persistence dynamics" in flat_axiom
@@ -667,8 +667,9 @@ def final_classification() -> None:
     print("\nDECISIVE RESULT")
     print("  DERIVED IN THE SITE-TAGGED IMMUTABLE-HISTORY MODEL: local nonreconnection")
     print("  and fixed-schedule monotone refinement, conditional on distinct formation successors.")
-    print("  NOT DERIVED FROM ADMISSIBILITY: counterfactual branch support or the")
-    print("  post-record physical operation-algebra restriction/activation.")
+    print("  SUPPLIED BY ADMISSIBILITY+RECORD: supported lock outcomes conditional on formation.")
+    print("  NOT DERIVED: a physical state-successor graph or the post-record")
+    print("  physical operation-algebra restriction/activation.")
     print("  CHECKED AUTHORITY BOUNDARY: one fixed rule is named but the checked")
     print("  foundation/adjacent surfaces provide no extensional table or dynamics bridge.")
 

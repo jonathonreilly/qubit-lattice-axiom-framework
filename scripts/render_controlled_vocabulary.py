@@ -36,6 +36,12 @@ from pathlib import Path
 
 import yaml
 
+AUDIT_INPUT_PATHS = (
+    "docs/repo/controlled_vocabulary.yaml",
+    "scripts/templates/CONTROLLED_VOCABULARY.md.template",
+    "scripts/templates/KEY_TERMINOLOGY.md.template",
+)
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 YAML_PATH = REPO_ROOT / "docs" / "repo" / "controlled_vocabulary.yaml"
 TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"

@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the supervisor's exercise route declared a non-premise and REFUTED \u2014 the honest outcome shipped; the primary's D3 tightened mid-block rather than over-claiming",
+  "block": "toe-time-blockAC3-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 0.75s; 26/26; seven holding refutations; independent payload-wide firewall with positive control",
+    "primary": "exit 0, 1.79s; 48/48; four restriction runners reproduced first (25/128/9 + the drift pinned); 10 teeth; four-run identical science digest"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 3rd AC-family PR: refutes the supervisor's best remaining route with a prior-art discovery, sharpens the lane's wall into its carrier-language form, and conditionalizes the flagship exactness on its sign convention; nothing corollary",
+  "cycles": [
+    938
+  ],
+  "files": {
+    "docs/RETA_RECLASSIFICATION_REFUTED_SPACE_GAP_CYCLE938_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "7ef0a0a58efa1b4f8764c3e3539911d5763a156c",
+      "sha256": "70c4f6e478096ee8219f5a10403a74ba0428f81b0416d72ef7495f9b7e8ed4b0"
+    },
+    "logs/runner-cache/frontier_cycle938_reta_reclassification_2026_07_28.txt": {
+      "git_blob": "84daaa25a948c770858ee2ee8ebb029ffd2b67d8",
+      "sha256": "d7f1f281f6cfc8bdbf11878f9920b794ece69715a9b38f56f80b64ecf5ef805a"
+    },
+    "logs/runner-cache/frontier_cycle938_reta_reclassification_independent_check_2026_07_28.txt": {
+      "git_blob": "63190c8683b5fd456115b69eb651d8b4a7f1afb1",
+      "sha256": "bd66ed722edf339b83cca54956eb9d5c517a544a511f3f3781819f9ea67a5634"
+    },
+    "outputs/reta_reclassification_cycle938_receipt_2026_07_28.json": {
+      "git_blob": "6f58bfe35f78ae74d025f292efa6c2d660159c1f",
+      "sha256": "0ff8c7e4fc6e1bf145f7cd931ccd1dd1e82a605ec2bf2d9ed721d30504a50c01"
+    },
+    "outputs/reta_reclassification_independent_check_cycle938_receipt_2026_07_28.json": {
+      "git_blob": "bd4f29b05a8e980b693528c6b2b0c168921d1b6d",
+      "sha256": "7d71b11a709457452739006779b41bb752799d86e30142c9b67e6af547f6d544"
+    },
+    "scripts/frontier_cycle938_reta_reclassification_2026_07_28.py": {
+      "git_blob": "adfce58d87bab93ddc92219e0b0fa170df7b8aff",
+      "sha256": "d39974d731b671e4bb259c7e485645525012701cdc20d32080b86a036591894c"
+    },
+    "scripts/frontier_cycle938_reta_reclassification_independent_check_2026_07_28.py": {
+      "git_blob": "0a6c3a6d42a733114a5dadb93629f41160d56c42",
+      "sha256": "b1094b23a60428f2f2fb435f9fcc668b163a8ea5d71e4b6178907a435efa9619"
+    }
+  },
+  "headline": "THE RECLASSIFICATION ROUTE REFUTED TWICE + THE WALL'S SHARPEST NAME: the delta value-face move is PRIOR ART (landed 2026-07-05: (ii) = (ii-value) + (ii-exactness)) and CANNOT dissolve the obligation \u2014 it is TYPE-shaped (h-class map + h-unit conversion) and registration supplies VALUES, not MAPS (exact witness: the whole alpha family satisfies every structural constraint with different readouts; a registered delta cannot select \u2014 N8 verbatim); ROUTE 4's PRICE UNCHANGED; NEW: THE SPACE GAP \u2014 the slot (generation 3-space) and the cell (the Z^3 lattice rotation's normal plane) are ONE matrix on TWO supplied spaces, their identification being the open carrier question (the 928 type gap sharpened, registration-immune); SIGN: the 7.4e-6 exactness is CONVENTION-CONDITIONAL (all-positive signed-root cone; next-nearest assignment 3000x worse \u2014 916-dictionary pattern, carried on the sleeve); FOLD: delta has six mass-multiset preimages (only the folded angle is a functional); the value-face facts VERIFIED and supporting the landed 07-05 decomposition as it stands; audit rows: the gitignored-75MB-ledger cold-run breakage (process), the 07-05 runner's text-provenance PASS drift (pinned to its superseded sentence)",
+  "independence": "checker fully independent (own algebra; seven refutations mounted, ALL HOLDING; the failed attacks \u2014 the counterfactual test's validity, the non-dissolution steelman \u2014 disclosed); 26/26 checks, 10 teeth each runner",
+  "note": "docs/RETA_RECLASSIFICATION_REFUTED_SPACE_GAP_CYCLE938_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 0.75,
+    "primary": 1.79
+  }
+}

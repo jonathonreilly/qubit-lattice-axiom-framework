@@ -1246,3 +1246,32 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Local disposition: **pass** (bounded_theorem; audit pending).
 - Successor launched into the freed slot: Cycle 928 (the route-1
   sweep on the new surfaces, blockAC2).
+
+## Cycle 927 size channel (blockM9, PR #5994) — 2026-08-05
+
+- Supervisor review: the four zero-deviation restriction surfaces
+  (917, 919, 921's full 832-row designed set, the G1 exception
+  cell to full precision); the pre-registered predictor
+  discipline; the checker's saturation scope finding adopted
+  mid-block (an unqualified null would be false); the two-sided
+  tooth adaptation reasoned in-receipt; the declared Gram route
+  with pinned cells on the unmodified path.
+- Verdict: THE PREMISE FALSIFIED (the honest outcome) — the second
+  channel is ARITY DILUTION, a per-pair tax in (degree, field)
+  alone, flat in size beyond arm-length-2 saturation,
+  independence-gate-only; only degree 2 crosses at 0.10 — the
+  complete G1 explanation. Q3 resolves OPPOSITE to the suspicion:
+  degree carries the grading; THE 919 THRESHOLD HARDENS (with the
+  926 gate-fragility axis explicitly distinguished and standing).
+  The field ceiling splits into TWO mechanisms (independence wall
+  at degree 2; persistence razor at degrees 3-4).
+- Follow-up executed: 921's "grows with fragment size" corrected
+  on the blockM7 branch, pin refreshed (#5991 updates).
+- Checker: SUPPORTED-WITH-FINDINGS, 205 cells at zero
+  disagreement, 13/13 teeth; the form-degeneracy attack bounds the
+  claim to the table and the monotone fall.
+- Named joint open -> Cycle 929 launched (blockM10): the arity
+  variable under 926's fragment/degree separation (A4 points at
+  fragment count); the two-gate anatomy test; E1 de-singletoned.
+- Cluster-cap (9th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).

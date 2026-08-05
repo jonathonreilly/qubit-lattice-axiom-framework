@@ -1,0 +1,347 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle935_bridge_cashed_2026_07_28.py
+runner_sha256: 742b547584c90595d6bde0244e1ff5a3c7eb42a17ed5c0ad98383ef1326fa11a
+input_fingerprint_sha256: a4afca23bb0e6e991e136f0275a31638cd4d516ad5cd069813f94ad17ff63040
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 935 -- THE SOURCE-ACTION BRIDGE CASHED? (871 structure theorem
+             composed with the registered scale-reference primitive)
+==============================================================================
+
+MINIMAL-PREMISE RULE: the owner's pointer to the registry is the REASON for
+this block; the primitive's OWN TEXT decides scope. This runner applies the
+primitive's dichotomy sentence as a decision procedure and reports whatever
+verdict follows -- it does not assume the composition closes.
+
+-- CERT-PIN: pinned inputs (871 bytes + landed Gate-B + main-side notes) ------
+  OK  docs/SOURCE_ACTION_BRIDGE_PRICING_CYCLE871_BOUNDED_THEOREM_NOTE_2026-07-28.md
+      sha256=c666f500518ce1b6 exact=True  blob=2cac419f992a exact=True
+  OK  scripts/frontier_cycle871_source_action_bridge_pricing_2026_07_28.py
+      sha256=e27b91b699917aea exact=True  blob=b0515ad74f0a exact=True
+  OK  scripts/frontier_cycle871_bridge_independent_check_2026_07_28.py
+      sha256=3a2c7e8d8015984d exact=True  blob=11e36191d892 exact=True
+  OK  logs/runner-cache/frontier_cycle871_source_action_bridge_pricing_2026_07_28.txt
+      sha256=bf1e493cff5775bf exact=True  blob=d491b5f42ab1 exact=True
+  OK  logs/runner-cache/frontier_cycle871_bridge_independent_check_2026_07_28.txt
+      sha256=76e8142d113fc6d7 exact=True  blob=983fe2e71c7b exact=True
+  OK  docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+      sha256=e7e75a36bd16094c exact=True  blob=a74392f6939b exact=True
+  OK  docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md
+      sha256=e12615aebebd7535 exact=True  blob=ba64460ec9ca exact=True
+  OK  scripts/gate_b_weak_field_source_action_interface_2026_06_16.py
+      sha256=ac9ea8b6b7556ce8 exact=True  blob=d604bc5f180e exact=True
+  OK  outputs/source_action_bridge_pricing_cycle871_receipt_2026_07_28.json  sha256=a909447b15eda1b7
+      DISCLOSURE: the 871 receipt is a hand-authored artifact -- the 871 runner
+      emits NO json (its only output is stdout). The stronger restriction below
+      is therefore taken against the runner-EMITTED cache bytes, not the receipt.
+  OK  origin/main blob SCALE_REFERENCE_PRIMITIVE_NOTE.md: a74392f6939b identical=True
+  OK  origin/main blob MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SI: ba64460ec9ca identical=True
+      VENDORING: both main-side notes were already in-tree at blobs byte-identical
+      to origin/main; NO `git checkout origin/main -- <path>` was required.
+
+-- CERT-QUOTE: byte-verified clauses from the primitive's OWN text ------------
+  OK  SUPPLY_1_one_reference
+      offset_expected=449 offset_found=449 byte_exact=True
+        | The framework takes exactly one dimensionful reference: a scale that converts
+        | the framework's lattice-natural units to physical units. The chosen reference
+        | is the Planck mass scale, `a^{-1} = M_Pl`.
+  OK  EXCLUSION_1_zero_dimensionless_content
+      offset_expected=649 offset_found=649 byte_exact=True
+        | This is a units conversion, not a physics axiom. It carries zero dimensionless
+        | content: no mass ratio, coupling, mixing angle, phase, selector, readout
+        | bridge, or empirical fit is supplied by it.
+  OK  DICHOTOMY_the_scope_test
+      offset_expected=1151 offset_found=1151 byte_exact=True
+        | Quantities on the
+        | structural surface remain dimensionless or carry a power of the lattice
+        | spacing `[a]^n` until that reference is supplied.
+  OK  EXCLUSION_2_no_derivation_of_scale
+      offset_expected=1291 offset_found=1291 byte_exact=True
+        | No derivation of the chosen
+        | physical scale is claimed here.
+  OK  EXCLUSION_3_not_a_over_lP_equals_one
+      offset_expected=1675 offset_found=1675 byte_exact=True
+        | It does not assert `a/l_P = 1` as a derived theorem. The self-consistency
+        |   question that the framework's natural unit equals the Planck length remains
+        |   a separate open gravity derivation.
+  OK  EXCLUSION_4_no_dimensionless_quantity
+      offset_expected=1867 offset_found=1867 byte_exact=True
+        | It does not supply any dimensionless quantity. Dimensionless physics must
+        |   derive from retained-grade framework content or remain conditional/open.
+  OK  871 names its free scalar: ['one real scalar', 'the overall coupling', 'normalization'] present=True
+
+-- CERT-COLLISION: does the exclusion list name the bridge scalar's own term? -
+  exclusion list recovered verbatim: ['mass ratio', 'coupling', 'mixing angle', 'phase', 'selector', 'readout bridge', 'empirical fit']
+  871's own words for the free scalar: 'the overall coupling / normalization'
+  >>> COLLISION: the primitive's exclusion list explicitly names 'coupling' -> True
+  NOTE: the block spec anticipated only 'mixing angle' and 'phase' in this list
+  and reasoned the scalar was safe as a normalization. The list ALSO names
+  'coupling' -- the exact word 871 uses for the scalar. That is load-bearing.
+
+-- CERT-871: restriction gate -- re-derive 871's tables from scratch ----------
+  parsed 16 dimension rows out of the pinned 871 cache bytes
+  patch        sites  unknowns    rank  full  struct  agree   | mine: unk/rank/full/struct  dev
+  (2,)             2         4       3     1       1    True   | 4/3/1/1  dev=0
+  (3,)             3         8       7     1       1    True   | 8/7/1/1  dev=0
+  (4,)             4        16      15     1       1    True   | 16/15/1/1  dev=0
+  (5,)             5        32      31     1       1    True   | 32/31/1/1  dev=0
+  (6,)             6        64      63     1       1    True   | 64/63/1/1  dev=0
+  (2, 2)           4        16      15     1       1    True   | 16/15/1/1  dev=0
+  (2, 3)           6        64      63     1       1    True   | 64/63/1/1  dev=0
+  (7,)             7         0       0    -1       1    None   | 0/0/-1/1  dev=0
+  (8,)             8         0       0    -1       1    None   | 0/0/-1/1  dev=0
+  (10,)           10         0       0    -1       1    None   | 0/0/-1/1  dev=0
+  (12,)           12         0       0    -1       1    None   | 0/0/-1/1  dev=0
+  (3, 3)           9         0       0    -1       1    None   | 0/0/-1/1  dev=0
+  (2, 2, 2)        8         0       0    -1       1    None   | 0/0/-1/1  dev=0
+  (2, 2, 3)       12         0       0    -1       1    None   | 0/0/-1/1  dev=0
+  (4, 4)          16         0       0    -1       1    None   | 0/0/-1/1  dev=0
+  (3, 3, 3)       27         0       0    -1       1    None   | 0/0/-1/1  dev=0
+  patches=16 all_struct_dim_1=True cross_checked=7 routes_agree=True
+  DIMENSION-TABLE DEVIATION FROM PINNED 871 CACHE BYTES = 0
+
+  axiom ablation ladder (re-solved; pinned prices from the 871 cache):
+    patch (3,)   : REC0 removes 1 (pinned 1), REC1 removes 2 (pinned 2), LAT removes 2 (pinned 2), residual 1 (pinned 1)  dev=0
+    patch (4,)   : REC0 removes 1 (pinned 1), REC1 removes 4 (pinned 4), LAT removes 3 (pinned 3), residual 1 (pinned 1)  dev=0
+    patch (2, 2) : REC0 removes 1 (pinned 1), REC1 removes 5 (pinned 5), LAT removes 3 (pinned 3), residual 1 (pinned 1)  dev=0
+  ABLATION DEVIATION FROM PINNED 871 CACHE BYTES = 0
+
+  obligation map tally: pinned_cache=(1, 2, 5) mine=(1, 2, 5) dev=0
+  obligation map in receipt headline: ('1', '2', '5') dev=0
+    stronger clause finite_core_vs_green_kernel          dim=5 present_in_pinned_cache=True
+    stronger clause GB_S2_kernel_plus_window             dim=8 present_in_pinned_cache=True
+    stronger clause GB_S3_connectivity                   dim=4 present_in_pinned_cache=True
+    stronger clause signed_gravity_locked_term           dim=2 present_in_pinned_cache=True
+    stronger clause hclass_to_angle_readout_identity     dim=2 present_in_pinned_cache=True
+  871 certificates: [('frontier_cycle871_bridge_independe', {'fail': 0, 'pass': 8}), ('frontier_cycle871_source_action_br', {'fail': 0, 'pass': 8})] clean=True
+  >>> TOTAL 871 RESTRICTION DEVIATION = 0 (required: 0)
+
+-- CERT-COMPOSE: does registering the ruler reduce the free dimension? --------
+  Model: the primitive supplies ruler u (a^{-1} = M_Pl). IF the bridge scalar
+  carried engineering dimension [a]^n, the physical-frame action would be the
+  lattice-frame action rescaled by t = u^n. We RE-SOLVE the whole constraint
+  family in the rescaled frame for a grid of (patch, u, n) -- no assumption.
+  rescaled-frame exact solves: 90 (3 patches x 5 rulers x 6 exponents)
+  distinct composed free dimensions observed: [1]
+  >>> composed free dimension = 1
+  >>> reduction bought by registering the scale = 1 - 1 = 0
+  REASON: the constraint family is homogeneous and linear, so a units
+  registration is a global rescaling by a NONZERO t -- a bijection of the
+  solution space. A bijection cannot reduce a dimension. Registering a ruler
+  is a CHANGE OF COORDINATES on the one-dimensional free ray, not a reduction
+  of it. The ruler tells you what to CALL the scalar, never what it IS.
+
+-- CERT-GAUGE: the Q2 exhibit vs the LANDED Gate-B constants ------------------
+  871 AST-verified the landed form but pinned NONE of its numbers. This block
+  pins them. Landed check, verbatim from
+  scripts/gate_b_weak_field_source_action_interface_2026_06_16.py lines 135-144:
+      r = 4.0 ; eps = 0.1 ; length = math.sqrt(2.0)
+      base     = length * (1.0 - 1.0 * gate_b_phi(5.0e-5, r, eps))
+      rescaled = length * (1.0 - 2.0 * gate_b_phi(2.5e-5, r, eps))
+      check(... abs(base - rescaled) < 1.0e-15 ...)
+  with gate_b_phi(strength, r, epsilon) = strength / (r + epsilon)
+  AST: gate_b_phi & gate_b_action present=True; body form byte-exact=True; landed constants byte-recovered=True
+
+  THE GAUGE POINT, IDENTIFIED. The landed pair is EXACTLY a product-one
+  stabilizer step with t = 2:
+    G0 (landed base):     lambda=1  sigma=1/20000 (= 5.0e-5)
+    G1 (landed rescaled): lambda=2  sigma=1/40000 (= 2.5e-5)
+    t = lambda1/lambda0 = 2;  sigma1 == sigma0/t -> True
+    product lambda*sigma:  G0=1/20000  G1=1/20000  equal=True
+    -> the landed 1e-15 float check is one instance of the exact product-one
+       gauge freedom; in exact rationals its residual is identically 0.
+    exact rational residual base-rescaled = 0 -> True
+    float replay: base=1.414196315866237e+00 rescaled=1.414196315866237e+00 |diff|=0.000e+00 < 1e-15 -> True
+
+  NOW THE COMPOSITION. A registered ruler acts as t = u^n. Exhibit,
+  value-for-value, on the LANDED gauge point:
+       t = u^n |   lambda_new |        sigma_new |    lam*sig | action at r=4
+           1/4 |          1/4 |           1/5000 |    1/20000 | 81999/41000
+           1/2 |          1/2 |          1/10000 |    1/20000 | 81999/41000
+             2 |            2 |          1/40000 |    1/20000 | 81999/41000
+             4 |            4 |          1/80000 |    1/20000 | 81999/41000
+           4/9 |          4/9 |          9/80000 |    1/20000 | 81999/41000
+           2/3 |          2/3 |          3/40000 |    1/20000 | 81999/41000
+           3/2 |          3/2 |          1/30000 |    1/20000 | 81999/41000
+           9/4 |          9/4 |          1/45000 |    1/20000 | 81999/41000
+  stabilizer elements applied: 12 (each t = u^n -- EXACTLY a units registration)
+  in-scope observables per point: 22 (values, pairwise differences, ratios)
+  product lambda*sigma invariant across all of them: True
+  >>> observables SEPARATING the pre- and post-registration gauge points: 0
+
+  UNCONDITIONAL GROUP CHECK (strengthening 871, whose closure/inverse checks
+  were grid-restricted implications): the product-one family is the image of
+  the multiplicative group of nonzero rationals under t -> (t*lam, sig/t).
+    elements tested=28 pairs=784; closure=True identity=True inverses=True
+  VERDICT: the landed runner's convention is ONE gauge choice of the composed
+  object, and the composed object at any registered ruler is connected to it by
+  the product-one element t = u^n. But that element lies INSIDE the stabilizer
+  871 already quotiented by, so the registration selects NO point on the orbit:
+  it moves ALONG the gauge orbit and changes zero observables.
+
+-- CERT-SCOPE: the primitive's dichotomy applied as a decision procedure ------
+  (1) does 871 derive an engineering dimension [a]^n for its free scalar? False
+      871 characterizes the scalar ONLY as 'one real scalar' / 'one real
+      normalization constant'. Its word 'dimension' always means vector-space
+      dimension (a count of free parameters), never engineering dimension.
+  (2) is the dimensionless part kappa_hat forced by structure?             False
+      871's headline is free dimension = 1 -- kappa_hat is exactly what is FREE.
+  (3) does the primitive supply dimensionless content?                    False
+      verbatim: 'It does not supply any dimensionless quantity.'
+  >>> SCOPE VERDICT: NO_GO_DIMENSIONLESS_RESIDUE_NOT_SUPPLIED
+
+  BOTH READINGS ON THE AMBIGUITY (minimal-premise rule):
+   READING A (restrictive): 871's scalar is a dimensionless coupling. The
+     primitive's exclusion list names 'coupling' and its closing clause says it
+     supplies no dimensionless quantity.            -> NOT in scope. NO-GO.
+   READING B (permissive -- the block's own premise): the scalar is a
+     'normalization', a units-like object, so the units conversion covers it.
+     TESTED, and it FAILS on the primitive's own text by a dilemma:
+       horn 1: if hbar = 1 (action dimensionless) the scalar is dimensionless,
+               and 'It does not supply any dimensionless quantity' bites directly;
+       horn 2: if hbar != 1 (action dimensionful) then converting an ACTION
+               normalization needs an action unit, but the primitive supplies
+               'exactly one dimensionful reference' (a MASS scale), and hbar is
+               not among the four registered premise nodes -- it could enter only
+               as a NAMED unit-conversion import.
+     Either horn leaves the dimensionless residue unsupplied. READING B does not
+     rescue the composition. THE TWO READINGS AGREE ON THE VERDICT.
+
+-- CERT-HYP: the composition's hypothesis list, enumerated honestly -----------
+  [SUPPLIED    ] H1: 871 declared ansatz: scalar action functionals on record configurations of a finite lattice torus patch, weak-field linear order
+  [SUPPLIED    ] H2: Record axiom, empty-record clause (REC0): A(empty) = 0
+  [SUPPLIED    ] H3: Record axiom, count-once additivity (REC1): A(a u b) = A(a) + A(b), a,b disjoint
+  [SUPPLIED    ] H4: Lattice axiom, translation covariance (LAT) along the generators; the patch is a torus so the translation action is transitive (exactly one singleton orbit)
+  [SUPPLIED    ] H5: scale_reference_primitive: exactly one dimensionful reference, a^{-1} = M_Pl, units conversion only (registered in axiom_premise_nodes.json, owner-approved per AXIOM_MINIMALITY_POLICY section 6)
+  [NOT_SUPPLIED] H6: an engineering dimension for the bridge scalar: a specific exponent n with kappa ~ [a]^n. Cycle 871 derives NO physical dimension for its free scalar (verified: zero occurrences of hbar/G/M_Pl/SI/[a]^n as a dimension assignment anywhere in the 871 package), so the primitive's conversion has no exponent to act on
+  [NOT_SUPPLIED] H7: the dimensionless part kappa_hat of the bridge scalar. The primitive's own text refuses this: 'It does not supply any dimensionless quantity.'
+  [NOT_SUPPLIED] H8: an action unit (hbar) and any further SI conversion. hbar is NOT among the four registered premise nodes (minimal_axioms, scale_reference_primitive, kinetic_isotropy_primitive, realized_state_primitive); it could enter only as a NAMED unit-conversion import -- the precedent being the Planck-time note's explicit SI c = 299792458 m/s certificate
+  supplied=5  NOT_SUPPLIED=3
+  The composition is BLOCKED precisely at H6 and H7 (H8 is needed only for SI).
+
+-- CERT-NONCLAIM: the five STRONGER obligations are NOT discharged ------------
+  NOT DISCHARGED: finite_core_vs_green_kernel            871 free dim 5 (strictly > the bridge's 1)
+  NOT DISCHARGED: GB_S2_kernel_plus_window               871 free dim 8 (strictly > the bridge's 1)
+  NOT DISCHARGED: GB_S3_connectivity                     871 free dim 4 (strictly > the bridge's 1)
+  NOT DISCHARGED: signed_gravity_locked_term             871 free dim 2 (strictly > the bridge's 1)
+  NOT DISCHARGED: hclass_to_angle_readout_identity       871 free dim 2 (strictly > the bridge's 1)
+  composition claims scanned=4 stronger-obligation leaks=0
+  The composition makes no kernel, window, connectivity, readout-identity or
+  locked-term claim. Discharging the bridge would not unblock gravity anyway.
+
+-- CERT-Q3: what becomes predictable that was not before? --------------------
+  (a) the dimensionful normalization of the weak-field coupling in lattice units.
+      871 classifies 'physical Newton constant / SI normalization' as EQUIVALENT
+      to the bridge: free dim 1, THE SAME uniform-scale generator. Equivalent
+      clauses inherit the scope verdict, so:
+      >>> does G_Newton/SI normalization DERIVE on the registered scale? False
+      It does NOT. The registration fixes the RULER, not the NUMBER.
+      What would still be needed, each NAMED:
+        (i)   an engineering exponent n for the bridge scalar     [NOT SUPPLIED -- H6]
+        (ii)  the dimensionless coefficient kappa_hat             [REFUSED by the primitive -- H7]
+        (iii) an action unit hbar as a named conversion certificate [NOT REGISTERED -- H8]
+        (iv)  GB-S2 kernel+window, to connect kappa*|S| to a curvature
+              integral                                            [STRICTLY STRONGER, dim 8, OPEN]
+        (v)   GB-S3 connectivity                                  [STRICTLY STRONGER, dim 4, OPEN]
+        (vi)  a/l_P = 1, which the primitive explicitly does NOT assert
+              ('remains a separate open gravity derivation')      [OPEN]
+      The tempting chain 'kappa = 1/(16 pi G); register a^-1 = M_Pl; done' is
+      CIRCULAR and overreaching: identifying kappa with 1/(16 pi G) IS the
+      source-action bridge, and connecting kappa*|S| to the Einstein-Hilbert
+      integral requires GB-S2 and GB-S3 -- both undischarged, both strictly
+      stronger than the bridge. The factor 1/(16 pi) is dimensionless and so is
+      refused by the primitive outright.
+      PROVENANCE CAVEAT: 871's EQUIVALENT tag for the G_Newton/SI row is not an
+      independent solve -- its free_dim is an alias to the bridge dimension and
+      its 'uniform-scale' generator tag is a hand-written literal. The inheritance
+      conclusion does not depend on that tag (the primitive's exclusion is
+      independent of it), but the tag itself is 871's softest joint.
+  (b) Gate-B-side dimensionful quantity becoming a prediction rather than a
+      convention: NONE. Every Gate-B observable is stabilizer-invariant
+      (CERT-GAUGE: separating observables = 0 of 22 per point), so no
+      Gate-B number changes status from convention to prediction under the
+      registration.
+  CONTRAST -- why the Planck-time composition DID cash and this one does not:
+      there the dimensionless structure was already closed to a POINT (one tick =
+      one edge; the ratio a_tau/a_s fixed on a retained-bounded surface), so the
+      only residue was a unit and the single ruler cashed it. Here the
+      dimensionless residue IS the entire remaining content.
+      GENERAL RULE THIS BLOCK ESTABLISHES: the registered ruler cashes a
+      composition exactly when the DIMENSIONLESS side has free dimension 0.
+      871's dimensionless side has free dimension 1. Hence no cash.
+
+-- CERT-SEAL: pre-registered predictions verified -----------------------------
+  OK  P1_composed_free_dimension
+      computed: composed_free_dimension=1
+      digest=d1851e436358c1d64160d60bab24a047  sealed=d1851e436358c1d64160d60bab24a047  match=True
+  OK  P2_reduction_from_registration
+      computed: free_dimension_reduction_from_registration=0
+      digest=cd4d5c4ec52e4ce657ac9c02994498c4  sealed=cd4d5c4ec52e4ce657ac9c02994498c4  match=True
+  OK  P3_observables_separating_gauge_points
+      computed: observables_separating_pre_and_post_registration_gauge_points=0
+      digest=bf3c1ec326e9aeb903e06f1703407f8d  sealed=bf3c1ec326e9aeb903e06f1703407f8d  match=True
+  OK  P4_deviation_from_871_rows
+      computed: deviation_from_cycle871_receipt_rows=0
+      digest=78753e3bdaaa320503bb2feea1cb66ce  sealed=78753e3bdaaa320503bb2feea1cb66ce  match=True
+  OK  P5_scope_verdict
+      computed: scope_verdict=NO_GO_DIMENSIONLESS_RESIDUE_NOT_SUPPLIED
+      digest=11dbb404d96f8000a4088eae730bfb20  sealed=11dbb404d96f8000a4088eae730bfb20  match=True
+  OK  P6_gnewton_derives
+      computed: g_newton_si_normalization_derives_from_registered_scale=False
+      digest=6e4c1f6a1ee1dc48d715ffea99d3743f  sealed=6e4c1f6a1ee1dc48d715ffea99d3743f  match=True
+  holdout-free build log: seal committed at 33bd21dfb7d5 in its own commit,
+  before this runner's first commit (uncommitted).
+
+-- CERT-TEETH: falsifiers that must FIRE --------------------------------------
+  FIRED   T1/planted-out-of-scope-primitive-clause-caught-by-quote-gate
+  FIRED   T2a/planted-second-free-dimension-detected-structurally
+  FIRED   T2b/planted-second-free-dimension-breaks-the-composition
+  FIRED   T3/tampered-pin-detected
+  FIRED   T4/wall-clock-leak-scanner-fires
+  FIRED   T5/planted-seal-mismatch-detected
+  FIRED   T6/planted-stronger-obligation-use-caught
+  FIRED   T7/planted-stabilizer-violation-breaks-product-one
+  FIRED   T8/scope-gate-is-sensitive-not-hardcoded-to-NO-GO
+  FIRED   T9/planted-dimension-table-drift-caught-by-restriction-gate
+  teeth=10 fired=10 all_fired=True
+
+-- CERT-DET: determinism + wall-clock leak guard ------------------------------
+  timing-free digest run1=a4afca23bb0e6e991e136f0275a31638cd4d516ad5cd069813f94ad17ff63040
+  timing-free digest run2=a4afca23bb0e6e991e136f0275a31638cd4d516ad5cd069813f94ad17ff63040
+  stable=True   payload_bytes=3093
+  wall-clock leak scan over the DIGEST PAYLOAD: patterns=13 hits=0
+  (the payload carries no runtime/timestamp/elapsed/epoch field by construction;
+   the scanner proves it. NOTE: the v1 cache header legitimately carries
+   elapsed_sec per RUNNER_CACHE_POLICY -- that field is OUTSIDE the digest.)
+
+-- CERTIFICATES ---------------------------------------------------------------
+  PASS  CERT-PIN/pinned-inputs                           rows=8 all_exact=True main_side_identical_to_origin_main=True
+  PASS  CERT-QUOTE/byte-verified-clauses                 clauses=6 byte_exact=True scalar_term_recovered=True
+  PASS  CERT-COLLISION/exclusion-names-coupling          terms_recovered=7/7 coupling_excluded=True
+  PASS  CERT-871/restriction-deviation-zero              deviation=0 all_dim_1=True routes_agree=True cross=7
+  PASS  CERT-COMPOSE/free-dimension-unchanged            composed_dim=1 reduction=0 solves=90
+  PASS  CERT-GAUGE/registration-is-a-stabilizer-element  separating=0 obs_per_point=22 product_invariant=True landed_constants_pinned=True group_unconditional=True
+  PASS  CERT-SCOPE/verdict-from-primitive-own-text       verdict=NO_GO_DIMENSIONLESS_RESIDUE_NOT_SUPPLIED both_readings_agree=True
+  PASS  CERT-HYP/unsupplied-hypotheses-named             total=8 unsupplied=3
+  PASS  CERT-NONCLAIM/no-stronger-obligation-used        stronger=5 leaks=0
+  PASS  CERT-Q3/no-dimensionful-prediction-follows       g_newton_derives=False new_gate_b_predictions=0
+  PASS  CERT-SEAL/pre-registered-predictions             sealed=6 matched=6
+  PASS  CERT-TEETH/all-falsifiers-fire                   teeth=10 fired=10
+  PASS  CERT-DET/deterministic-and-leak-free             digest_stable=True payload_leaks=0
+  PASS  CERT-BUDGET/runtime                              elapsed_s=0.7 budget_s=900.0
+
+TOTAL: PASS=14 FAIL=0
+VERDICT: PASS
+
+HEADLINE: the registered scale-reference primitive does NOT cash the source-action
+bridge. Its supply lies entirely INSIDE the product-one stabilizer 871 already
+quotiented by, so it separates 0 observables and reduces the bridge's free
+dimension by exactly 0. The bridge's residue is dimensionless, and the primitive's
+own text refuses dimensionless content -- its exclusion list names 'coupling', the
+very word 871 uses for the scalar. SCOPE NO-GO, with both readings agreeing.
+----- stderr -----
+

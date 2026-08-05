@@ -1235,15 +1235,21 @@ def main():
         or abs(float(gd2.max()) - float(systems[0.6]["gs_baseline"].max())) > GATE_TOL)
     fals["holonomy_free_energy"] = float(E2)
     del H2, sets2
-    # (3) a planted extra crossing must move the counts and the floor
+    # (3) a planted registration cascade must move the counts AND the floor.
+    #     The criterion is N_rearm <= 3 out of 12, so the plant has to put more
+    #     than three re-arming crossings above the largest swept threshold.
     planted = systems[1.0]["preps"]["a"]["excess_gs"].copy()
-    planted[50:53, 3] = 0.45
+    for bond in (2, 3, 4, 5):
+        for k in range(6):
+            planted[40 + 2 * k, bond] = 0.45
+            planted[41 + 2 * k, bond] = 0.0
     fals["planted_crossing_detected"] = bool(
         count_vector(planted, False) != cases["1/a"]["N_once"])
-    planted_counts = [count_vector(planted, True),
-                      count_vector(systems[0.6]["preps"]["a"]["excess_gs"], True)]
-    fals["planted_crossing_moves_the_floor"] = bool(
-        suffix_floor(joint_sparse_mask(planted_counts, prep_a_A[::-1])) != floor)
+    planted_counts = [count_vector(systems[0.6]["preps"]["a"]["excess_gs"], True),
+                      count_vector(planted, True)]
+    planted_floor = suffix_floor(joint_sparse_mask(planted_counts, prep_a_A))
+    fals["planted_cascade_floor"] = planted_floor
+    fals["planted_crossing_moves_the_floor"] = bool(planted_floor != floor)
     # (4) the agreement table must be able to say REFUTED
     fake = [dict(r) for r in table]
     fake[0] = dict(fake[0], agrees=False)
@@ -1257,7 +1263,16 @@ def main():
     lo_f, hi_f = refine_crossing([planted, series_a[0]], 0.002, 0.6)
     fals["grid_closure_relocates_under_a_planted_series"] = bool(
         hi_f is not None and abs(hi_f - theta_cross) > 1e-6)
-    fals["ok"] = all(v for k, v in fals.items() if k != "ok" and isinstance(v, bool))
+    fals["ok"] = all(v for k, v in fals.items()
+                     if k != "ok" and isinstance(v, (bool, np.bool_)))
+    fals["meaning"] = (
+        "a wrong Hamiltonian (perturbed mass, or the declared boundary "
+        "holonomy removed) moves both the ground energy and the per-bond "
+        "baseline past the gate tolerance; a planted registration cascade "
+        "moves the crossing counts and relocates the floor; a single "
+        "disagreement in the agreement table flips the Q1 verdict to REFUTED; "
+        "a planted baseline offset is seen by the convention test.  A real "
+        "divergence could not have been missed.")
 
     # ============================================ deterministic double-run ====
     repeat = measure_system(MASS, COUPLINGS[0], W_MAX, 0)

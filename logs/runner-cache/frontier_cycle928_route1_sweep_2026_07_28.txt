@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: frontier_cycle928_route1_sweep_2026_07_28.py
+
+PASS A1_SOURCE_NOTES_PINNED :: ['docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md', 'docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md', 'docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md', 'docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md']
+PASS A2_VENDORED_DIGESTS_MATCH_THEIR_SHIP_RECEIPTS :: {'verified': 90, 'mismatched': 0}
+PASS A3_VENDORED_COVERAGE :: {'ship_receipt_verified': 90, 'no_ship_receipt_exists': 19}
+PASS A4_MISSING_SHIP_RECEIPTS_DISCLOSED :: cycles 872/876/882/883 ship without a ship receipt -- AUDIT ROW
+PASS A5_FIREWALL_NO_PDG_LITERAL_IN_OWN_ARTIFACTS :: []
+PASS A6_QUARANTINED_PACKAGES_NOT_VENDORED :: {'quarantined': [897, 923], 'absent_from_tree': [897, 923]}
+PASS B1_ANGLE_NATIVE_NO_GO_REPRODUCED :: TOTAL: PASS=128 FAIL=0
+PASS B2_STRETCH_NO_GO_REPRODUCED_924_AUDIT_ROW_1_CONFIRMED :: {'observed': 'PASS=113 FAIL=0', 'note_claims': 'PASS>=120 FAIL=0'}
+PASS B3_CYCLE924_SHIP_RECEIPT_DIGESTS_VERIFIED :: {'files': 7, 'bad': []}
+PASS B4_CYCLE924_SCIENCE_DIGEST_VERIFIED :: ccd98a3916cc40d54478078de9b70bbac79424941aebe9d3d72de6e716cd92f1
+PASS B5_ROUTE_3_PRICED_SHUT_CARRIED_FORWARD :: 924: any_licensed = False
+PASS C_ANCHOR_C899-SUM :: {'source': 'outputs/family_binding_cycle899_receipt_2026_07_28.json', 'anchor': '"sum_of_inverse_determinants": "2/3"'}
+PASS C_ANCHOR_C899-FDIM :: {'source': 'docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md', 'anchor': '(n-1)/n^2'}
+PASS C_ANCHOR_C904-DIAGQP :: {'source': 'logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt', 'anchor': 'diag(Qp)'}
+PASS C_ANCHOR_C904-NATIVE227 :: {'source': 'outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json', 'anchor': '2/27 REACHABLE at word length 1'}
+PASS C_ANCHOR_C898-TRACE :: {'source': 'outputs/escape_census_cycle898_receipt_2026_07_28.json', 'anchor': 'RATIONAL BUT WRONG'}
+PASS C_ANCHOR_C903-SIGMA :: {'source': 'outputs/sigma_theta_cycle903_receipt_2026_07_28.json', 'anchor': 'This is a units conversion, not a physics axiom.'}
+PASS C_ANCHOR_C903-THETA :: {'source': 'outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json', 'anchor': 'the barrier-independent invariant core is EMPTY'}
+PASS C_ANCHOR_C900-MU :: {'source': 'outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json', 'anchor': 'G(0)-G(e1)=1/6 IS the statement mu=0'}
+PASS C_ANCHOR_C895-AFFINE :: {'source': 'outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json', 'anchor': 'lawfulness is exactly AFFINE'}
+PASS C_ANCHOR_C883-WEIGHTPAIR :: {'source': 'docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md', 'anchor': '(1, 2)'}
+PASS C_ANCHOR_C882-ALPHA :: {'source': 'docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md', 'anchor': 'the license RESTATED, not derived'}
+PASS C_ANCHOR_C901-FDIM :: {'source': 'outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json', 'anchor': 'F_dim(3)=F_res(3)=2/9'}
+PASS C_ANCHOR_C891-PERIOD :: {'source': 'outputs/complement_block_cycle891_ship_receipt_2026_07_28.json', 'anchor': 'complement'}
+PASS C_ANCHOR_C916-THETA :: {'source': 'outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json', 'anchor': 'convention-two-valued'}
+PASS C_ANCHOR_C876-GRADING :: {'source': 'logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt', 'anchor': 'Outright forcing: NONE'}
+PASS C_ANCHOR_C921-CYCLE :: {'source': 'outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json', 'anchor': 'THE PAIR-CYCLE LAW'}
+PASS C_ANCHOR_C872-SIGMA :: {'source': 'logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt', 'anchor': 'escape_b_shaped_count'}
+PASS C_RADIAN_SCAN_ZERO_ACROSS_THE_WHOLE_NEW_SURFACE :: {'radian_or_radians_occurrences': 0, 'packages_scanned': 17}
+PASS C_REFERENT_IS_PRESENT_UNLIKE_THE_OCCURRENCE_SURFACE :: {'packages_carrying_a_charged-lepton/fixed-locus referent': [882, 883, 886, 888, 890, 895, 898, 899, 901]}
+PASS C_NO_DERIVED_ANGLE_OBJECT_ON_THE_NEW_SURFACE :: {'angle_word_occurrences': 20, 'kinds': ['CITATION of the July no-go note itself', 'CODE SIGNATURE quoted as provenance, not a derived object', 'EXCLUSION CLAUSE -- the primitive refuses to supply an angle', 'OTHER']}
+PASS D_NO_ROUTE_1_SURVIVOR :: {'survivors': []}
+PASS D_TYPE_GAP_IS_THE_DECISIVE_BIN :: {'candidates_that_are_exactly_2/3_AND_carry_the_referent': ['C899-SUM', 'C898-TRACE', 'C897-Q'], 'all_stopped_by_the_type_gap': True, 'counts_by_bin': {'BIN 7 TYPE GAP (NEW this block, and the decisive one here)': 3, 'BIN 1 misses the target': 5, 'BIN 5 no referent': 10}}
+PASS D_BIN_5_IS_NOT_DECISIVE_HERE_UNLIKE_924 :: {'bin_5_count': 10, 'total': 18}
+PASS E_PRIMITIVE_EXCLUSION_CLAUSE_NAMES_AN_ANGLE :: This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.
+PASS F_T1_NUMEROLOGY_PLANT :: planted a synthetic object equal to 2/3 on a referent-carrying surface; it is still rejected, and rejected by the TYPE GAP gate specifically -> BIN 7 TYPE GAP (NEW this block, and the decisive one her
+PASS F_T2_TAMPERED_PIN :: appending one byte to docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md gives digest 477d0779154468a7 != pinned 3cffb593cf379f68; section A2 compares exactly this
+PASS F_T3_SURVIVOR_PATH_LIGHTS_UP :: a synthetic candidate that IS radian-typed, referent-carrying, exactly 2/3, scope-forced, three-fold and derivably identified is ACCEPTED by the same code path -> SURVIVOR.  The sweep's emptiness is a
+PASS F_T4_RADIAN_SCAN_IS_NOT_BLIND :: the same scanner finds 'radian' in a positive-control string, so the zero over 99 vendored files is a fact about the corpus, not a broken scan
+PASS F_T5_FAKE_GATE_RESULT :: the B1 gate compares the literal string 'TOTAL: PASS=128 FAIL=0'; a perturbed count does not match
+PASS F_T6_SCOPE_GATE_IS_FALSIFIABLE :: bin 8 rests on three pinned verdicts; had ANY of them isolated C3, bin 8 would not apply and the scope selection would be forced.  All three are read from the pinned ship receipts, not asserted
+PASS F_T7_EXACT_MISS_ARITHMETIC :: 924's most natural occurrence candidate misses by 2/3 - 21/41 = 19/123 exactly; reproduced here in rational arithmetic with no floats
+PASS F_T8_ENUMERATION_COMPLETENESS :: independent regex pass for a bare 2/3 over every package NOT already in the candidate pool found 0 file(s): [].  Any cycle listed here is a gap in the enumeration and is reported as such
+PASS F_T9_MISSING_SHIP_RECEIPTS_DETECTED :: the corpus scan detects that cycles [872, 876, 882, 883] have no ship receipt anywhere in the campaign; they are pinned against their originating branch blob and the gap is emitted as audit row 3 rath
+PASS F_T10_REFERENT_GATE_STILL_DISCRIMINATES :: 9 of 17 packages carry a charged-lepton/fixed-locus referent -- the gate separates them, so its non-firing on the AC-lane packages is a property of those packages, not a disabled gate
+PASS Z_RUNTIME_WITHIN_BUDGET :: 2.57s / 900.0s
+
+science_digest=23e65049900519d92eb7eedd39ccdb7c4bf97590f031e95aadf348c5b665feed
+TOTAL: PASS=46 FAIL=0
+VERDICT: PASS
+runtime_seconds=2.57 budget=900.0

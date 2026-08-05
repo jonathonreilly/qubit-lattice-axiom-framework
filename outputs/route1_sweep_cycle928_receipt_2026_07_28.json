@@ -1,0 +1,2057 @@
+{
+ "A_pins_and_firewall": {
+  "firewall_offenders": [],
+  "no_ship_receipt_file_count": 19,
+  "ship_receipt_verified_count": 90,
+  "source_note_pins": {
+   "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md": {
+    "git_blob": "92553eb71833303c5d5f0fa74af6511108a8e54b",
+    "sha256": "83f4ab11435b7f5224c1013768dc56c28dfb56f0ab3fdd5811f9b06251dde665"
+   },
+   "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md": {
+    "git_blob": "e2ca96d22c95e991b76d9ec999f12726398bc3df",
+    "sha256": "08c15bdc0c2fc2ccd750ca2752260ae02ec2521a70bc0307103c42058a63ed09"
+   },
+   "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {
+    "git_blob": "1201ba9702ec8a0b81df0319a90a080549cfdd4a",
+    "sha256": "3c7a33c8abac8e70bdcf2e8b9db5d917c0b2cee6fc7cc0ec91c6d803bbb230d2"
+   },
+   "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "git_blob": "dde715275e34d6d4ab92fcd22627d753be442f1d",
+    "sha256": "0afef517c334e061fbdaf9b84d49c05719bf486803d924b33da2d51ee8694801"
+   }
+  },
+  "vendor_disclosure": {
+   "firewall_quarantine_pinned_but_NOT_vendored": {
+    "897": "blockG20 target_integrity -- all 7 files carry PDG mass literals by the package's own declaration ('3 quarantined admitted observations').  Swept from typing sentences only; no numeric literal imported.",
+    "923": "blockR1 exactness_residual -- all 7 files carry PDG mass literals.  Same treatment."
+   },
+   "method": "git checkout <branch pin> -- <ship receipt> <every file the ship receipt lists>, run in this worktree; then each vendored file's sha256 AND git blob compared against that ship receipt's own entry for it.",
+   "oversize_pinned_but_not_vendored": {
+    "outputs/loop_cost_cycle921_receipt_2026_07_28.json": "3599 KiB; package swept via its note, ship receipt and caches"
+   },
+   "packages_with_NO_ship_receipt_anywhere_in_the_campaign": [
+    872,
+    876,
+    882,
+    883
+   ],
+   "packages_with_no_ship_receipt_verified_against": "their originating branch blob instead",
+   "spec_placement_errors_found_and_corrected": [
+    "SPEC SAID: the theta-core/sigma-split package (Cycle 903) is on blockG20 'or a nearby G-branch'.  VERIFIED FALSE: Cycle 903 is on blockG26 and its ship receipt records block toe-time-blockG26-20260802.  blockG20 carries Cycle 897 instead.",
+    "SPEC SAID: the unit-grading/owner-surface package is 'Cycle 883-ish'.  VERIFIED FALSE: Cycle 883 is the RECORD WEIGHT PAIR package; the unit-grading package is Cycle 876.  Both are distinct packages on blockG8 and both are vendored.",
+    "SPEC IMPLIED a G-branch chain.  VERIFIED FALSE: G8 IS an ancestor of G9/G10, but G17 is not an ancestor of G18, G22 not of G23, G25 not of G26, G26 not of G27.  Late G-branches are siblings off a shared base, so every source was checked out from its OWN branch pin."
+   ]
+  },
+  "vendored_pins": {
+   "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 891,
+    "git_blob": "235965affc47ce7745327ef194e7c0ae31e6a6c8",
+    "sha256": "5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c",
+    "ship_receipt": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json"
+   },
+   "docs/ESCAPE_CENSUS_COVERAGE_CYCLE898_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 898,
+    "git_blob": "146229934cac7b4d3430bb58a9516bb5cc97b429",
+    "sha256": "6a56273c76ec5ce13565afea001484770d375a4e8a7080dd5a681e92985822de",
+    "ship_receipt": "outputs/escape_census_block_cycle898_ship_receipt_2026_07_28.json"
+   },
+   "docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 899,
+    "git_blob": "32792768b2f9183574998a7da38c310d877368d2",
+    "sha256": "3cffb593cf379f680b68be1af1f5c947f19a6d25480c918aee4f40d9ab1a0408",
+    "ship_receipt": "outputs/family_binding_block_cycle899_ship_receipt_2026_07_28.json"
+   },
+   "docs/HARMONIC_REPAIR_VIABLE_CYCLE900_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 900,
+    "git_blob": "895d47287a956bb77bc56af4b11567255f16fd8a",
+    "sha256": "5419b0f460002e4a1f353bccaa7ce2c1efe2d0270855cd5dc9a9afc1c19c2d84",
+    "ship_receipt": "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json"
+   },
+   "docs/LOOP_COST_PAIR_CYCLE_LAW_CYCLE921_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 921,
+    "git_blob": "69866c618441585072ab1df72c68c857799a7171",
+    "sha256": "36b70f78959ae0a739aca76355b6390022113a43967566b727b91363bece22a6",
+    "ship_receipt": "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json"
+   },
+   "docs/MIXED_DEGREE_REACHES_NOT_SELECTS_CYCLE904_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 904,
+    "git_blob": "db9a3aefa8bfc6563f236863708a25cbc6444e90",
+    "sha256": "51eaf0f471421a1479ad04ab9d9fb228fafa741ed76fab218c249338e4a4db36",
+    "ship_receipt": "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json"
+   },
+   "docs/MULTIPLICITY_FREENESS_TERMINAL_CLAUSE_CYCLE890_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 890,
+    "git_blob": "b307667794328114c37a41ee5d9d35d0e931dc19",
+    "sha256": "845ced2f76aedc0e6711c26408e794a8d42f42444fe177ec00e60c1fce0f5851",
+    "ship_receipt": "outputs/multiplicity_freeness_block_cycle890_ship_receipt_2026_07_28.json"
+   },
+   "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md": {
+    "cycle": 872,
+    "git_blob": "e1699e4ad604f12bb337917e04495f9a4c43a0aa",
+    "sha256": "dd218e18d3a24506b11db9fdbad909f899187eeda5bf579a2b1a984afd10c8f7",
+    "ship_receipt": null
+   },
+   "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 882,
+    "git_blob": "75d64abf2a4f5cc671e37ad271680c6e5c0f9ce1",
+    "sha256": "692a3ad36def7242845576b88b48ef1c44b7e9a11e97873952cb93f28729ffa5",
+    "ship_receipt": null
+   },
+   "docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 883,
+    "git_blob": "fd5c708967c03fced5ff349b9636164861cd1c04",
+    "sha256": "d2f6544cbe9c4022a41b149e874b2507d0e59d3c5bf793b6c14941455b9c9b0f",
+    "ship_receipt": null
+   },
+   "docs/S3_SCOPE_PRICED_MENU_DISSOLVED_CYCLE888_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 888,
+    "git_blob": "dfd80b753b9e1142166ec9fa84f9c22ea3f6f421",
+    "sha256": "a7372ce901de72215e221d2f3604c78070bb3e5d8781b8117809a7ad3217c7d8",
+    "ship_receipt": "outputs/s3_scope_block_cycle888_ship_receipt_2026_07_28.json"
+   },
+   "docs/SIGMA_LINEAR_ADMISSIBILITY_CLASSIFICATION_CYCLE872_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 872,
+    "git_blob": "5f3e44324afbc9c67a98557f531ba65c9bd99757",
+    "sha256": "e6ab9e8451bdfcf10d7d66b4e704d69ab52906a93821d8965e3016d139d2e2aa",
+    "ship_receipt": null
+   },
+   "docs/SIGMA_TERMINAL_THETA_CORE_EMPTY_CYCLE903_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 903,
+    "git_blob": "850dc6fa74c32d21f2673c1f6ae47a0eb8ffdd07",
+    "sha256": "192356d379c33bbb9769b869d1524b2c925f36a95633cf4c044e71bc5455255b",
+    "ship_receipt": "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json"
+   },
+   "docs/SL0_ORBIT_SCOPE_PRICED_CYCLE886_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 886,
+    "git_blob": "a917c36b5a022dc60bd40d206e7c8ec2845c56c0",
+    "sha256": "706fef512ed20ed6e084f71d14683eb82e56159b10d1183db1c5c1b907b587c1",
+    "ship_receipt": "outputs/sl0_block_cycle886_ship_receipt_2026_07_28.json"
+   },
+   "docs/SPACE_IDENTIFICATION_DECIDED_FDIM_CYCLE901_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 901,
+    "git_blob": "ed75a8a5a823011ff142d075c0be0e15e1058c5f",
+    "sha256": "3e037137a39acf4c1f747b2bf44a3e8dacbaaa72f50cb1e7c2b4a3872954102c",
+    "ship_receipt": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json"
+   },
+   "docs/THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 916,
+    "git_blob": "82d4d23c2675ebe072f44fff599276e8e984d8cf",
+    "sha256": "4ca0987bb1f28e5256ad235f22af589a38abe58a65ef4479fbf29b35176dc86c",
+    "ship_receipt": "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json"
+   },
+   "docs/T_CHOICE_RETIRED_AFFINE_LAW_CYCLE895_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 895,
+    "git_blob": "dc85290e3c16229bd2b3f55772eeec16081ec6d7",
+    "sha256": "a379da33de523eb2d98a5567a295aaee1b5322221a64aaed7efced4b512bbe17",
+    "ship_receipt": "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json"
+   },
+   "docs/UNIT_GRADING_PROVENANCE_CYCLE876_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "cycle": 876,
+    "git_blob": "a6cdfcfa613b0e04fbc654059d782cdf5f9ddf61",
+    "sha256": "d357c45ce0b98566ec892e7c253995d8524722e9a15ed5a19dfa10bbcf8f6125",
+    "ship_receipt": null
+   },
+   "logs/runner-cache/frontier_cycle872_admissibility_independent_check_2026_07_28.txt": {
+    "cycle": 872,
+    "git_blob": "86efcd102842fd1cc4744bd7e11228f18def555e",
+    "sha256": "4cdaa35c9a8a330f6f468ea40644d35b9277a5e93140193f00dd74ee5430a7b5",
+    "ship_receipt": null
+   },
+   "logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt": {
+    "cycle": 872,
+    "git_blob": "ed9b54a9dbae1649eaacbd03525cc2eb9d529b42",
+    "sha256": "f0d8b6928c7661280627016950ae7f27228513ff8b690db555734b6eefa6896a",
+    "ship_receipt": null
+   },
+   "logs/runner-cache/frontier_cycle876_grading_independent_check_2026_07_28.txt": {
+    "cycle": 876,
+    "git_blob": "ad0e9968e5f88dc0435a009843d858e885f25804",
+    "sha256": "e051260402f128217cf9ab0ab93a41b62bc6fc1aa76ffdeafa96d6caa7ef2078",
+    "ship_receipt": null
+   },
+   "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt": {
+    "cycle": 876,
+    "git_blob": "7da6d729c1abc6ad3bb17c019cbb2efa67b0f69e",
+    "sha256": "80a7698ef64e3bd1e3a45ed37eed784cf004cbfdad244f3d5bf8a7343f9b107f",
+    "ship_receipt": null
+   },
+   "logs/runner-cache/frontier_cycle882_readout_identity_2026_07_28.txt": {
+    "cycle": 882,
+    "git_blob": "b22293b74ae8a0670e796f337a62a53a2f21fefb",
+    "sha256": "7f485527189864c79d927376c686a4cab5d3ad25551b16283851a9acc5a9462d",
+    "ship_receipt": null
+   },
+   "logs/runner-cache/frontier_cycle882_readout_independent_check_2026_07_28.txt": {
+    "cycle": 882,
+    "git_blob": "c724555ccf6e825673e3fcc51091eef7791f7cc9",
+    "sha256": "8248b6a3de5c6a70fd137e13dfc73662aa9bc72c87c3532c5170d4f9c71c64da",
+    "ship_receipt": null
+   },
+   "logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt": {
+    "cycle": 883,
+    "git_blob": "6f085fc042330dae1d3eec8540a2942b1a3cf32f",
+    "sha256": "560f368d9d23144cb23a93e72a398d92f6fcb536c3363179b7853c09615211bb",
+    "ship_receipt": null
+   },
+   "logs/runner-cache/frontier_cycle883_weight_pair_independent_check_2026_07_28.txt": {
+    "cycle": 883,
+    "git_blob": "a009ebf7ff4b940e646cca98fb3e69f737607fa0",
+    "sha256": "448555aa01902a206dde0ce3e566fcf52726d73d634104c085bd0390c1ed644b",
+    "ship_receipt": null
+   },
+   "logs/runner-cache/frontier_cycle886_sl0_independent_check_2026_07_28.txt": {
+    "cycle": 886,
+    "git_blob": "102fdb0fae2fc1b20566678cf77f23a39ec49ddc",
+    "sha256": "0cc06bc01927c36b867a68952c6991c2f3b002f99ea909fa56b0726886aee2be",
+    "ship_receipt": "outputs/sl0_block_cycle886_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle886_sl0_orbit_scope_2026_07_28.txt": {
+    "cycle": 886,
+    "git_blob": "ccac4b6423921c36d7e2c0574d95668a72fe6ef6",
+    "sha256": "fed2ed4b65fa7a4c474d943dc521eca80515e9c3644441d072f29bcf33aec306",
+    "ship_receipt": "outputs/sl0_block_cycle886_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle888_s3_scope_independent_check_2026_07_28.txt": {
+    "cycle": 888,
+    "git_blob": "e6880c8df765fddef6d538ae82df87bd59591e1c",
+    "sha256": "2442e8d4548141bce7fa84065b8c88e545e0b16e7798a5a508e23f123f2284c0",
+    "ship_receipt": "outputs/s3_scope_block_cycle888_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle888_s3_scope_pricing_2026_07_28.txt": {
+    "cycle": 888,
+    "git_blob": "6cd3fbdbe74e1231cd61222a798a7979bee922da",
+    "sha256": "5e4fc183efda55d1f3fbd5413bd2fe985ed5732b7ffbc8bd489296e7b22c2c84",
+    "ship_receipt": "outputs/s3_scope_block_cycle888_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle890_multiplicity_freeness_2026_07_28.txt": {
+    "cycle": 890,
+    "git_blob": "274f0def7f8a39dada9c6c9b04461f42d612843d",
+    "sha256": "c653e28e494d243e3cf070fa17dfae175ffe552d80a28627f2bb8f4e96314029",
+    "ship_receipt": "outputs/multiplicity_freeness_block_cycle890_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28.txt": {
+    "cycle": 890,
+    "git_blob": "cb8f78fa64fa66a0edda637a01e72ec8a2d62d2a",
+    "sha256": "8f828fe91fbaee45396fae5b3a3bf6947048088d5cbbe5d4878fb7bb0dffa425",
+    "ship_receipt": "outputs/multiplicity_freeness_block_cycle890_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle891_complement_independent_check_2026_07_28.txt": {
+    "cycle": 891,
+    "git_blob": "7f2f15677a906c638d526389318568dec33360f8",
+    "sha256": "2372d2d55c386ff05af6cee8126469ca5baad6d49fc3a60bbf93b6c064df1061",
+    "ship_receipt": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt": {
+    "cycle": 891,
+    "git_blob": "7099e5ece90f4b59acec9bf27af29468c4e6b746",
+    "sha256": "47b07a1f1428e50bab41890dff77345130cfa9456b887bafbb00df360027409c",
+    "ship_receipt": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle895_t_retirement_2026_07_28.txt": {
+    "cycle": 895,
+    "git_blob": "cc0ee5a10ac510c7cbd5ce117ed0d0dc06dd4bd4",
+    "sha256": "d7405a69ce5b4f38eda1d233128f9ed56cb85969a1e5fe26540662f89a155410",
+    "ship_receipt": "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle895_t_retirement_independent_check_2026_07_28.txt": {
+    "cycle": 895,
+    "git_blob": "5ac86dac4413e708dbea3ad9b8f0d187163f973d",
+    "sha256": "e5046d0a9e7e85ae0032ab76cb561b94365593dcb8b949c012639d06d15aab9b",
+    "ship_receipt": "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle898_escape_census_2026_07_28.txt": {
+    "cycle": 898,
+    "git_blob": "7af33df588e0e20e578cf6660e0c3ec147d8fd86",
+    "sha256": "0cda960a8d953a4729493c7ed19ab32703a9ab33f479f29d68013ddf5a76c2c0",
+    "ship_receipt": "outputs/escape_census_block_cycle898_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle898_escape_census_independent_check_2026_07_28.txt": {
+    "cycle": 898,
+    "git_blob": "cd5630bd30bd75c13a2ef30e42a2afe2a0591f6d",
+    "sha256": "4ef3ef93e44da1571de82322fb9b435666eaf7732b5881981025aabca3227fbb",
+    "ship_receipt": "outputs/escape_census_block_cycle898_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle899_family_binding_2026_07_28.txt": {
+    "cycle": 899,
+    "git_blob": "9035f264b59bd4fb5652f3707f51bd0db42d9842",
+    "sha256": "335ae06e1664e65b6b09f6cd49e367271d40e627821bc07600ceaeaff8bfc6e2",
+    "ship_receipt": "outputs/family_binding_block_cycle899_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle899_family_binding_independent_check_2026_07_28.txt": {
+    "cycle": 899,
+    "git_blob": "af35ff129a550b1d286eaf785f0b5e24f32e82c9",
+    "sha256": "d91d0b5a5973b33ddce552f1debb17493cba545fa8c25cd78e7e4dc9e47a948d",
+    "ship_receipt": "outputs/family_binding_block_cycle899_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle900_harmonic_repair_2026_07_28.txt": {
+    "cycle": 900,
+    "git_blob": "484f7ccb73c2b0ebc141a0b99adf6f9a9ca035de",
+    "sha256": "1463cd191b70d48c5d36c565ba22c08b2273a363c001a807532d3cab36f7e185",
+    "ship_receipt": "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle900_harmonic_repair_independent_check_2026_07_28.txt": {
+    "cycle": 900,
+    "git_blob": "21071ef98feae75ddcc0de65f309d858672b6eff",
+    "sha256": "65b6c1a402c680c33d809a614cc4998e1dde6b1c3663c5dc91311efd0e6a9c9a",
+    "ship_receipt": "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt": {
+    "cycle": 901,
+    "git_blob": "80d830fb0fe29dab6dc8347d9adef62688a1c750",
+    "sha256": "7b22310df7df82e5357976cd378b745a497aae8c690d3cff36a53a525774b151",
+    "ship_receipt": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle901_space_identification_independent_check_2026_07_28.txt": {
+    "cycle": 901,
+    "git_blob": "9f0077c58b3d2706f4630160a8f73923ef66f171",
+    "sha256": "f22cf98ba4ab6b2c4dd58e801bda4e018611332182623c8368c04ad9a28bed76",
+    "ship_receipt": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle903_sigma_theta_2026_07_28.txt": {
+    "cycle": 903,
+    "git_blob": "b476699ea295bf169e849e0000482825d63f4602",
+    "sha256": "0bb4bd2f2a2bdb214848c7e7a3ce60134bce3bfea86351c83f931a0e3d2d50a6",
+    "ship_receipt": "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle903_sigma_theta_independent_check_2026_07_28.txt": {
+    "cycle": 903,
+    "git_blob": "293287a61696bc75c2ff506f2ac441857e2dc1ce",
+    "sha256": "f731a8a5583741a4d20b7197fff8a26195bb8d57af28a412bad358a9ea314cfd",
+    "ship_receipt": "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt": {
+    "cycle": 904,
+    "git_blob": "32d9d44ed9ef3936356f6cf12ff0c4e5bfbfdd65",
+    "sha256": "d30176be8c917c5c2692a5740b46810a250fb819e7c69d7ac70728bbf2f5c2e2",
+    "ship_receipt": "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle904_mixed_degree_independent_check_2026_07_28.txt": {
+    "cycle": 904,
+    "git_blob": "0e5a9b35b50083778896e4d5d89171a89ee12a49",
+    "sha256": "026d0c83ed7ce3564810c7c53f648a8293224c396ca4692718ffbf945413d6c2",
+    "ship_receipt": "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle916_theta_independent_check_2026_07_28.txt": {
+    "cycle": 916,
+    "git_blob": "ac321bbdc8e2b26394ccc0e3c3439338bcc9d962",
+    "sha256": "175b414baa1ecd333cc94f2b4545ac5aa2cb4f416a366009b720bbaf8b9e0e25",
+    "ship_receipt": "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle916_theta_reconciliation_2026_07_28.txt": {
+    "cycle": 916,
+    "git_blob": "f2aefc508cc50d8fc81bc1ac5753ebac33d91c9e",
+    "sha256": "a3f903d9199616b5f5c86f46fc0c9dc449a6b5757ea07dc4775661ad811bdce6",
+    "ship_receipt": "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle921_loop_cost_2026_07_28.txt": {
+    "cycle": 921,
+    "git_blob": "cbd2a6db89d4f0e7e526dc8a6fed85b1da6f7b7a",
+    "sha256": "d326f1dcaad650cfc61df5abe7bb84ac0c06ff114497063215dfc6d7bf676503",
+    "ship_receipt": "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json"
+   },
+   "logs/runner-cache/frontier_cycle921_loop_cost_independent_check_2026_07_28.txt": {
+    "cycle": 921,
+    "git_blob": "7aeae778a16c7cdd6c89c8c1f5129774ee64ff3d",
+    "sha256": "b9689120c681e75d1e162d3f06688a64a6d547724df18b1ac8fd158989d3aeb4",
+    "ship_receipt": "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json"
+   },
+   "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json": {
+    "cycle": 891,
+    "git_blob": "4d1366da9325d69bb5bfc9d9604e9e02cf894d9d",
+    "sha256": "9d1ac3b6b8189dcac29c7dc78e786967ead4474fc2d8f24b0853ffb27bee8137",
+    "ship_receipt": "self"
+   },
+   "outputs/complement_independent_check_cycle891_receipt_2026_07_28.json": {
+    "cycle": 891,
+    "git_blob": "478f19642c1d66a6e1575798f9974b645c9f9a18",
+    "sha256": "cb2f6badda7315725f5f33c5aad89e7e37cf9201472362e0af3a16c4225fae8f",
+    "ship_receipt": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json"
+   },
+   "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json": {
+    "cycle": 891,
+    "git_blob": "f537715a927b00b817f8de2569953d78929c86db",
+    "sha256": "f8e30d50a50e39a13f8f968b2ae21991885b6c858c6c96439ed733fc8514bacd",
+    "ship_receipt": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json"
+   },
+   "outputs/escape_census_block_cycle898_ship_receipt_2026_07_28.json": {
+    "cycle": 898,
+    "git_blob": "59ba04694dc1e620061e9456141ea7675863f8db",
+    "sha256": "99a9388ff789efc49deadaba533b3e22f989cc3af4cf22f4fd45a7da18f4d831",
+    "ship_receipt": "self"
+   },
+   "outputs/escape_census_cycle898_receipt_2026_07_28.json": {
+    "cycle": 898,
+    "git_blob": "c7f9e18b19e107f602972465bf02ba315b389795",
+    "sha256": "477b0a78f5bd28126711437f648e88b1a7a291cc106fbd1c3bfda7aaf74bf3ca",
+    "ship_receipt": "outputs/escape_census_block_cycle898_ship_receipt_2026_07_28.json"
+   },
+   "outputs/escape_census_independent_check_cycle898_receipt_2026_07_28.json": {
+    "cycle": 898,
+    "git_blob": "9331297f6b3091a0c365d817256ec4c4c91c3019",
+    "sha256": "26b165efc3d392dd6223567c7f7ca0a0e2de2ce75cf3550df3d73ea76bbaf8cb",
+    "ship_receipt": "outputs/escape_census_block_cycle898_ship_receipt_2026_07_28.json"
+   },
+   "outputs/family_binding_block_cycle899_ship_receipt_2026_07_28.json": {
+    "cycle": 899,
+    "git_blob": "0a3d3fd6823f91269cc5d17e12513c4987f5bdb0",
+    "sha256": "495e4c0504b49e08a804be92c9fb981d2fcda979d06e3594634b70e6d77da968",
+    "ship_receipt": "self"
+   },
+   "outputs/family_binding_cycle899_receipt_2026_07_28.json": {
+    "cycle": 899,
+    "git_blob": "7918256017952bfef87b25ebc32267d82375b13f",
+    "sha256": "90dbda0357f9f0d09d437eddbad353b08a4e917a91b519f2639cc9a4327f7c56",
+    "ship_receipt": "outputs/family_binding_block_cycle899_ship_receipt_2026_07_28.json"
+   },
+   "outputs/family_binding_independent_check_cycle899_receipt_2026_07_28.json": {
+    "cycle": 899,
+    "git_blob": "e27b7728a9132e22b537e49e3618d063bb5585da",
+    "sha256": "0b591f47e9cdc834eb151894130bbc30a5546ee0a2d0c18e4722d3d509e951b8",
+    "ship_receipt": "outputs/family_binding_block_cycle899_ship_receipt_2026_07_28.json"
+   },
+   "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json": {
+    "cycle": 900,
+    "git_blob": "9e0c3291be3042717647d7c9a6502cfa94f73204",
+    "sha256": "ee11f84d9e64458c38f9e7054dc262164264779f2caaadca576b44cc9c51e1e0",
+    "ship_receipt": "self"
+   },
+   "outputs/harmonic_repair_cycle900_receipt_2026_07_28.json": {
+    "cycle": 900,
+    "git_blob": "87053a3c316b3776b4e8d1b679181ba95ecfaa1d",
+    "sha256": "d7249e7cf0756f18e7f13241b1c34ad21006692b509a1d99a599b101cbcb1530",
+    "ship_receipt": "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json"
+   },
+   "outputs/harmonic_repair_independent_check_cycle900_receipt_2026_07_28.json": {
+    "cycle": 900,
+    "git_blob": "9078a359a3f2ca1f766d7fb330cb2659ad66d2fc",
+    "sha256": "c33201f8dd06655ba548b8b1a66a6f80815045849096a61501d075ebcf50fe42",
+    "ship_receipt": "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json"
+   },
+   "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json": {
+    "cycle": 921,
+    "git_blob": "4c99b70e0deb1c05db0df4ae0236500366c0dc96",
+    "sha256": "f8319ba38428995cf19e4ae93f7a2c72bff388a6a70cd96bd57bc3d5670a6c4f",
+    "ship_receipt": "self"
+   },
+   "outputs/loop_cost_independent_check_cycle921_receipt_2026_07_28.json": {
+    "cycle": 921,
+    "git_blob": "abb45f90685a29a4d4cbfd1d5966e36d3bf34bd9",
+    "sha256": "75d9808b0385fbe83d78f832ad70fee092ebb94c64cc4ef672742b013d8cbdd3",
+    "ship_receipt": "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json"
+   },
+   "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json": {
+    "cycle": 904,
+    "git_blob": "0fb934ec5df7ad48a3b09215d90666da44647537",
+    "sha256": "dbfd6288581c19e065a8b2f2ba63462d7d1da571f061db859a8b2584acf3d80a",
+    "ship_receipt": "self"
+   },
+   "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json": {
+    "cycle": 904,
+    "git_blob": "6b57125ae1b87f82bcdeba39813ccdcdd647d145",
+    "sha256": "eca423d5358ea5184bc8b8f720d30708a047e3d5454c0152aeaccd75af1c2323",
+    "ship_receipt": "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json"
+   },
+   "outputs/mixed_degree_independent_check_cycle904_receipt_2026_07_28.json": {
+    "cycle": 904,
+    "git_blob": "dc723b42799e9b46182adf82fff0cf813176127b",
+    "sha256": "e2dbba1f92d32a3412357c17150961fe56c956c939b1af281877c4616e84a926",
+    "ship_receipt": "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json"
+   },
+   "outputs/multiplicity_freeness_block_cycle890_ship_receipt_2026_07_28.json": {
+    "cycle": 890,
+    "git_blob": "34e1fc0179c86c4c1c09656545cc3b610dde3a64",
+    "sha256": "ff67d8a2e9bcaa5660ed2925d039979496c732dbd2a5d6c55df25b7ec474d8b1",
+    "ship_receipt": "self"
+   },
+   "outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json": {
+    "cycle": 890,
+    "git_blob": "eefb1ac72326ae70073126198854dea5e26d1f01",
+    "sha256": "a366a726c34308260dcf153ff74619238347de5996463a7c5a5792bdcd01617e",
+    "ship_receipt": "outputs/multiplicity_freeness_block_cycle890_ship_receipt_2026_07_28.json"
+   },
+   "outputs/multiplicity_freeness_independent_check_cycle890_receipt_2026_07_28.json": {
+    "cycle": 890,
+    "git_blob": "bbe2efa5bb49c01c87737462694de8f51d73ec6a",
+    "sha256": "50abb63b942e9cacc5fbfd75b1722b2fd679b9e4e33fd03a444fb4e7727d6b85",
+    "ship_receipt": "outputs/multiplicity_freeness_block_cycle890_ship_receipt_2026_07_28.json"
+   },
+   "outputs/readout_identity_cycle882_independent_check_2026_07_28.json": {
+    "cycle": 882,
+    "git_blob": "33c99a99178316b1eee2414bcbfafa8298088b57",
+    "sha256": "3f595f40771eb6b01717c69a5bac275cb933ead7169b5fb6b3b98c841c3a2e88",
+    "ship_receipt": null
+   },
+   "outputs/readout_identity_cycle882_receipt_2026_07_28.json": {
+    "cycle": 882,
+    "git_blob": "9d70fdf701b3ad9619d7dffd4425fadd88eedbeb",
+    "sha256": "85657e5afc72c510f3f9b8d631a282d6a2af0f04aecce257c5b4b59a915ccf31",
+    "ship_receipt": null
+   },
+   "outputs/record_weight_pair_cycle883_receipt_2026_07_28.json": {
+    "cycle": 883,
+    "git_blob": "d4290cbe8cfedf965fad828dc673e8fee2e75cd5",
+    "sha256": "973d18d9aa2e05a2decac79ddd8a6f245d923e9a94d772baf80869228ca27d60",
+    "ship_receipt": null
+   },
+   "outputs/s3_scope_block_cycle888_ship_receipt_2026_07_28.json": {
+    "cycle": 888,
+    "git_blob": "620814167e533a5fa246670cd4cca4e9b5fc7299",
+    "sha256": "7d4336d935f1adb2d9fd3a8da9a801a5ef323ad6380e05d3ebc9a27b1a8c691b",
+    "ship_receipt": "self"
+   },
+   "outputs/s3_scope_independent_check_cycle888_receipt_2026_07_28.json": {
+    "cycle": 888,
+    "git_blob": "54e58b22107696edc4ccca0eebb8a5d62ab14805",
+    "sha256": "f689f85a29c9c67f3c32984d8db9f8a0ffa8c277164549a5d1fea1b6481e727d",
+    "ship_receipt": "outputs/s3_scope_block_cycle888_ship_receipt_2026_07_28.json"
+   },
+   "outputs/s3_scope_pricing_cycle888_receipt_2026_07_28.json": {
+    "cycle": 888,
+    "git_blob": "3e18ad52f50e72b83c56da72c31f25d104b5c830",
+    "sha256": "8a540201a84a6b8cb6868d431216718a27f200e45d6ceeb771d858e9a54280cd",
+    "ship_receipt": "outputs/s3_scope_block_cycle888_ship_receipt_2026_07_28.json"
+   },
+   "outputs/sigma_linear_admissibility_cycle872_receipt_2026_07_28.json": {
+    "cycle": 872,
+    "git_blob": "96174ab9f4dc13fd6e839705792e9a3fc29ee295",
+    "sha256": "37574db42d60b9829f4c7b85d5e01f20c288540ba5e7e5815923617c431219ac",
+    "ship_receipt": null
+   },
+   "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json": {
+    "cycle": 903,
+    "git_blob": "6e18ece0109e7c1b3d43dee4aff09e04d47e2c67",
+    "sha256": "bd1a650190bbdd9ac2f042daaf9092f089782dd59550145bf7669f14ef303fcc",
+    "ship_receipt": "self"
+   },
+   "outputs/sigma_theta_cycle903_receipt_2026_07_28.json": {
+    "cycle": 903,
+    "git_blob": "b2833863dc52d8fda5f50397eb201b4a41744978",
+    "sha256": "e0465028fa576e3e60e4ba24ca9540dddf0302f8a18edd8e696ad3101735b863",
+    "ship_receipt": "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json"
+   },
+   "outputs/sigma_theta_independent_check_cycle903_receipt_2026_07_28.json": {
+    "cycle": 903,
+    "git_blob": "87d0d99ef08d9391f3ad8a83fdf41f0d5293bfad",
+    "sha256": "a1a0122e6e76dc2d25005d386a8393bee6e9bced7211781db7ecf1ccf20cc6e2",
+    "ship_receipt": "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json"
+   },
+   "outputs/sl0_block_cycle886_ship_receipt_2026_07_28.json": {
+    "cycle": 886,
+    "git_blob": "55dcde504d94c8d11aa7d2c688387a2f1e8a8b1f",
+    "sha256": "593dbe33ecd56a2db68c381f91288151966b93d22cf663531615ead85f9cdd82",
+    "ship_receipt": "self"
+   },
+   "outputs/sl0_independent_check_cycle886_receipt_2026_07_28.json": {
+    "cycle": 886,
+    "git_blob": "1680a44f70cda252e8edb71f0ed95837a5e5dcb4",
+    "sha256": "80e85dbaebd2e031669bf17622d11325be66f47128cc3494e90c9b65396d7aed",
+    "ship_receipt": "outputs/sl0_block_cycle886_ship_receipt_2026_07_28.json"
+   },
+   "outputs/sl0_orbit_scope_cycle886_receipt_2026_07_28.json": {
+    "cycle": 886,
+    "git_blob": "4d9999c241b19b2670a51c809e3e39fb0d339f10",
+    "sha256": "74d64090515cf7f7c5ad5f8e6347f7d2f81a9c1cf0b41e9ec7726ad30a62d69d",
+    "ship_receipt": "outputs/sl0_block_cycle886_ship_receipt_2026_07_28.json"
+   },
+   "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json": {
+    "cycle": 901,
+    "git_blob": "3448d4911151bbdeacbf70a1582c5b0f024814cd",
+    "sha256": "2530a4181418ec6a3859a58ff8d5eef514fc3b63bc3b688693d9e4b9a4760243",
+    "ship_receipt": "self"
+   },
+   "outputs/space_identification_cycle901_receipt_2026_07_28.json": {
+    "cycle": 901,
+    "git_blob": "b51c0984951aa3c37260fe1172f5ea18325e207a",
+    "sha256": "629c4bb97bcec03671109647f2f464482b512bbce506d87773251fe9d3d1369a",
+    "ship_receipt": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json"
+   },
+   "outputs/space_identification_independent_check_cycle901_receipt_2026_07_28.json": {
+    "cycle": 901,
+    "git_blob": "0cc8f30b2be090d6f1619d28dd0bd2de6685a3e5",
+    "sha256": "f2e22f8ab243b3568319fa256d66f64adbeb62004b3b85ab8ba1f5701bde31b9",
+    "ship_receipt": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json"
+   },
+   "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json": {
+    "cycle": 895,
+    "git_blob": "e49a8c26ee5454d6b0848011bd9dacb678c1d9ad",
+    "sha256": "a32f81e66d011d09904f3d2ae3fc49d2a1019a03ee1d59dc57084187c50e272d",
+    "ship_receipt": "self"
+   },
+   "outputs/t_retirement_cycle895_receipt_2026_07_28.json": {
+    "cycle": 895,
+    "git_blob": "6b40708359632e1fc18ccc70b1bb0d420e707767",
+    "sha256": "67b41b08cad33a0ed0750e1122f63b956b0dc93a7efa6dc2b26272f0729e9a1a",
+    "ship_receipt": "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json"
+   },
+   "outputs/t_retirement_independent_check_cycle895_receipt_2026_07_28.json": {
+    "cycle": 895,
+    "git_blob": "95a328ea0cb00eaafdde67026501d60bfdf7a6b7",
+    "sha256": "b45bbad7bdb5d075d14e03706d03bdf197e96fc43d416f4e29c0b1ea19d3d6be",
+    "ship_receipt": "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json"
+   },
+   "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json": {
+    "cycle": 916,
+    "git_blob": "420e6cef7c660b03bdca1c0172d4becddabd17e8",
+    "sha256": "f2f693ad62cd7150aa72d311dceb6f6ad5a5377cb20a365e23c448008cbe8a29",
+    "ship_receipt": "self"
+   },
+   "outputs/theta_independent_check_cycle916_receipt_2026_07_28.json": {
+    "cycle": 916,
+    "git_blob": "7a7c924d11c79f5c08c458aec610f0ba90a4a6f9",
+    "sha256": "b64942ac28a5d4c04b75d6ddb1e4903c7bcfebb69fb997e49b3152853f064f30",
+    "ship_receipt": "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json"
+   },
+   "outputs/theta_reconciliation_cycle916_receipt_2026_07_28.json": {
+    "cycle": 916,
+    "git_blob": "2923533ed245312d1011c7217c92c5f18eef1185",
+    "sha256": "4a3e390bbc9e9ba21dd3b87feef5db0171d33c8ddc5187314125300cedb8419c",
+    "ship_receipt": "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json"
+   },
+   "outputs/unit_grading_independent_check_cycle876_receipt_2026_07_28.json": {
+    "cycle": 876,
+    "git_blob": "4345656b18b6958f536b1b593ecf9889a127d6a5",
+    "sha256": "9fff8cf30d152f91abea56ce6d91568ee3d7a19cf7c6d03269cff198a0578ce6",
+    "ship_receipt": null
+   },
+   "outputs/unit_grading_provenance_cycle876_receipt_2026_07_28.json": {
+    "cycle": 876,
+    "git_blob": "bb49938e1fa9552b2d8d55f62032e710b454f58b",
+    "sha256": "338f7e085473e87192acf9b881978939b08a5a52d3d63442e3647b022ea18b78",
+    "ship_receipt": null
+   },
+   "scripts/frontier_cycle886_sl0_independent_check_2026_07_28.py": {
+    "cycle": 886,
+    "git_blob": "c3a3785a758123d95b8506d34d143420765ed15e",
+    "sha256": "3a666e41a59a51e3d5f182578e71c0d91e2b6a386b1c92105b06c01a97d6693f",
+    "ship_receipt": "outputs/sl0_block_cycle886_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle886_sl0_orbit_scope_2026_07_28.py": {
+    "cycle": 886,
+    "git_blob": "f4493d787ffb6edc50e9dd13d37ba1cd1dd4d24a",
+    "sha256": "1dfa47a86de8cab5a91cd33a022beb845d918e2f93ceb58f360b2708a44d02a2",
+    "ship_receipt": "outputs/sl0_block_cycle886_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle888_s3_scope_independent_check_2026_07_28.py": {
+    "cycle": 888,
+    "git_blob": "37bb3bc9f1168f2ddf17a7c7cf558555bc7192ab",
+    "sha256": "940c816bcb8ea8c7e3fc9fd2f1bac62cce0a8674cf9c7529549de59a21e503d1",
+    "ship_receipt": "outputs/s3_scope_block_cycle888_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle888_s3_scope_pricing_2026_07_28.py": {
+    "cycle": 888,
+    "git_blob": "c3de02c94b8a11a930ad6ff8817975b118bc776d",
+    "sha256": "f57fda877d35d49953c3b6a34293ab0cc6a87781ceb9d158b9c9abb5abd4bb3f",
+    "ship_receipt": "outputs/s3_scope_block_cycle888_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle890_multiplicity_freeness_2026_07_28.py": {
+    "cycle": 890,
+    "git_blob": "307f4e7640a1a9b5b3365d70ebc857a9c9488beb",
+    "sha256": "b7d2e9c2c540fc35ca461af10c4ce6b455269503c6027b3f0b4d5036566d867b",
+    "ship_receipt": "outputs/multiplicity_freeness_block_cycle890_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28.py": {
+    "cycle": 890,
+    "git_blob": "99d2a2cd15f95c4f5dccdf364c90d42919964a0a",
+    "sha256": "eef18eaecc0f2726fdf43fa487f0490f3fc1f97a67a4ca7a2623b7d79cbb73f9",
+    "ship_receipt": "outputs/multiplicity_freeness_block_cycle890_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle891_complement_independent_check_2026_07_28.py": {
+    "cycle": 891,
+    "git_blob": "53f5cf560f6dfad20dc6b4b91b0c003c848c6bea",
+    "sha256": "f2e9ca32b7d3f863822126c05fbf6a3b637164e8969e5ec7c6c04f15cd89e568",
+    "ship_receipt": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": {
+    "cycle": 891,
+    "git_blob": "a1bbd49ffbe970193cc79054fb7219732f7c9873",
+    "sha256": "3d260f6641d05a22aee092145ea3e5c3b29f3a6882b4cbd9ae966424458afbb7",
+    "ship_receipt": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle895_t_retirement_2026_07_28.py": {
+    "cycle": 895,
+    "git_blob": "2bbeec472505d9bfb16beb74ffabd863d7c01a74",
+    "sha256": "f36fbebb52948e354e803dec2f1f7aecf2d04de7a8e2b4a83871ac9696e8eca4",
+    "ship_receipt": "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle895_t_retirement_independent_check_2026_07_28.py": {
+    "cycle": 895,
+    "git_blob": "675d0423834b97fdf6d42d4a035f8e1baccc4e3d",
+    "sha256": "0436df6e58cc6c46888de3929c2288e8bf678c0ca5abb19d515fbfe532f7c588",
+    "ship_receipt": "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle898_escape_census_2026_07_28.py": {
+    "cycle": 898,
+    "git_blob": "dc33b23a7fd462cc1d9db90c9c11db7f8f1fa654",
+    "sha256": "a319372d897c832c2e5156749c0b7dc2ec48bdd6f5f6e6c3f12fe9ce4c2bd312",
+    "ship_receipt": "outputs/escape_census_block_cycle898_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle898_escape_census_independent_check_2026_07_28.py": {
+    "cycle": 898,
+    "git_blob": "e474551c00bac2832b4ac144fd370fb7044adf3c",
+    "sha256": "d192aaf3802cbcaafb41f65a52fbe08190bdd4d78ef2caf21b999551cb901c9b",
+    "ship_receipt": "outputs/escape_census_block_cycle898_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle899_family_binding_2026_07_28.py": {
+    "cycle": 899,
+    "git_blob": "8c977fc41a8bda871fd78a3b770945cfef830447",
+    "sha256": "a8e08e1e86d93bd3cb6ffda181ee403685ebdc36df906e7b31950cd8428965f3",
+    "ship_receipt": "outputs/family_binding_block_cycle899_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle899_family_binding_independent_check_2026_07_28.py": {
+    "cycle": 899,
+    "git_blob": "6e2873990a418076594b07cff0128b71f73dd19d",
+    "sha256": "5ba3f0c3e37613017504b27ea83be7976e1553275dfe2896a967679a6d399227",
+    "ship_receipt": "outputs/family_binding_block_cycle899_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle900_harmonic_repair_2026_07_28.py": {
+    "cycle": 900,
+    "git_blob": "8dc3b63b8b05332ab8c701915d62092a5cce38c9",
+    "sha256": "79d4c6ecb2b8307a5022f1a4ec5b09001923cc25fffae1687f264b578d76da9e",
+    "ship_receipt": "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle900_harmonic_repair_independent_check_2026_07_28.py": {
+    "cycle": 900,
+    "git_blob": "fd07e945845d4bf2d1335cd29c765cfec372c9f1",
+    "sha256": "3176d3c21d249c656cd78833daf249ae3d3ab99f54d94fa1a63408fcf212fc01",
+    "ship_receipt": "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle901_space_identification_2026_07_28.py": {
+    "cycle": 901,
+    "git_blob": "8536bc3fc00f4a7dd2db58b0f74e75426e0d3142",
+    "sha256": "9a9eb3c6d1a92279745192e62ce7a3d49cb5f0789f4fa61b671183900dfa5ca3",
+    "ship_receipt": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle901_space_identification_independent_check_2026_07_28.py": {
+    "cycle": 901,
+    "git_blob": "5c9e85f03c7a6aca24552ea8cce3287c57cd21b2",
+    "sha256": "eaf17075b7ecea3494502f2d2cbc5c986f32176bdf1925fe8de1984f20264eff",
+    "ship_receipt": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle903_sigma_theta_2026_07_28.py": {
+    "cycle": 903,
+    "git_blob": "ac68130068030fe2bfc9de3e69e39a001f0e65cc",
+    "sha256": "4dccf702456a972f35b83262d470e63456b6d98f0eeb2a0fad3393b3f1d4afe4",
+    "ship_receipt": "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle903_sigma_theta_independent_check_2026_07_28.py": {
+    "cycle": 903,
+    "git_blob": "13480026526d7bde439b7c53b3726a883c560db6",
+    "sha256": "6c5c3d9e3fede36e7b10be23c493f69002ee6093b9d6d1feafc03dbe9827bcaa",
+    "ship_receipt": "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle904_mixed_degree_census_2026_07_28.py": {
+    "cycle": 904,
+    "git_blob": "296e019c3b8eddc273f5e8bb3112d8df71cc6f99",
+    "sha256": "f1f20266fafac80686310630933a7a0e78d97740152086b009053599460818f6",
+    "ship_receipt": "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle904_mixed_degree_independent_check_2026_07_28.py": {
+    "cycle": 904,
+    "git_blob": "eabc742bf42eb9c73f97d8d239e7d78b9b88b70a",
+    "sha256": "5b7e283bdc3e39adee478957f6482915f81b1489a28a1205849480072c3841f5",
+    "ship_receipt": "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle916_theta_independent_check_2026_07_28.py": {
+    "cycle": 916,
+    "git_blob": "2545e1768ab51a061ea5b33b52f4ae0aa02e21f9",
+    "sha256": "4bcf77deae0c8577bfabe4dc9f3816b61abdf5ebd6bdf7bd69213a7c1c90e9fe",
+    "ship_receipt": "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle916_theta_reconciliation_2026_07_28.py": {
+    "cycle": 916,
+    "git_blob": "bd02476a97539594c9186a196fc0a3fe158404af",
+    "sha256": "3fa7f1d86c0443f055ec5a946176ab8261e6b66d87979dc299e5e6296a06f6d6",
+    "ship_receipt": "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle921_loop_cost_2026_07_28.py": {
+    "cycle": 921,
+    "git_blob": "55710d560dd948e2ccc053c3b7eb09d0d523d6a4",
+    "sha256": "fbde9f1a62e33e1e7fb9a440658ed23821a0f0c577fb8b798f707e23118ffc11",
+    "ship_receipt": "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json"
+   },
+   "scripts/frontier_cycle921_loop_cost_independent_check_2026_07_28.py": {
+    "cycle": 921,
+    "git_blob": "e14176a65f39d84dd77839ff4a714347707910f9",
+    "sha256": "0251ea95e8723df2fa9f6f081e73022aa09097bb7a4da3b3648c4dffd00734b9",
+    "ship_receipt": "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json"
+   }
+  }
+ },
+ "B_restriction_gates": {
+  "angle_native_no_go": "TOTAL: PASS=128 FAIL=0",
+  "cycle924_science_digest": "ccd98a3916cc40d54478078de9b70bbac79424941aebe9d3d72de6e716cd92f1",
+  "cycle924_ship_receipt_files_verified": 7,
+  "stretch_no_go_observed": "PASS=113 FAIL=0"
+ },
+ "C_Q1_angle_object_enumeration": {
+  "angle_word_context_kinds": [
+   "CITATION of the July no-go note itself",
+   "CODE SIGNATURE quoted as provenance, not a derived object",
+   "EXCLUSION CLAUSE -- the primitive refuses to supply an angle",
+   "OTHER"
+  ],
+  "angle_word_contexts": [
+   {
+    "cycle": 872,
+    "file": "logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 20,
+    "text": "PASS J_CONTROLS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle868_response_sign_census_2026_07_28.py\",\"logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt\",\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/two_cell_two_source_recoil_reciprocity_cycle322_"
+   },
+   {
+    "cycle": 876,
+    "file": "outputs/unit_grading_provenance_cycle876_receipt_2026_07_28.json",
+    "kind": "CODE SIGNATURE quoted as provenance, not a derived object",
+    "line": 108,
+    "text": "\"verbatim\": \"angle: float, mediator_weight: float = 2.0\""
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 2,
+    "text": "PASS A_PINS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py\",\"scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\",\"scripts/frontier_cycle868_response_sign_census_20"
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 2,
+    "text": "PASS A_PINS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py\",\"scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\",\"scripts/frontier_cycle868_response_sign_census_20"
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "CODE SIGNATURE quoted as provenance, not a derived object",
+    "line": 4,
+    "text": "PASS B_PROVENANCE_SWEEP :: {\"_volatile_scripts_scanned_as_text\":5479,\"all_quotes_located\":true,\"approved_premise_node_count\":4,\"approved_premise_node_ids\":[\"minimal_axioms\",\"scale_reference_primitive\",\"kinetic_isotropy_primitive\",\"realized_state_primitive\"],\"axiom_node_disclaims_weighting_and_normal"
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "CODE SIGNATURE quoted as provenance, not a derived object",
+    "line": 4,
+    "text": "PASS B_PROVENANCE_SWEEP :: {\"_volatile_scripts_scanned_as_text\":5479,\"all_quotes_located\":true,\"approved_premise_node_count\":4,\"approved_premise_node_ids\":[\"minimal_axioms\",\"scale_reference_primitive\",\"kinetic_isotropy_primitive\",\"realized_state_primitive\"],\"axiom_node_disclaims_weighting_and_normal"
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 16,
+    "text": "PASS H_CONTROLS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py\",\"scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\",\"scripts/frontier_cycle868_response_sign_censu"
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 16,
+    "text": "PASS H_CONTROLS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py\",\"scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\",\"scripts/frontier_cycle868_response_sign_censu"
+   },
+   {
+    "cycle": 882,
+    "file": "outputs/readout_identity_cycle882_independent_check_2026_07_28.json",
+    "kind": "CITATION of the July no-go note itself",
+    "line": 188,
+    "text": "\"path\": \"docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md\","
+   },
+   {
+    "cycle": 890,
+    "file": "outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json",
+    "kind": "CITATION of the July no-go note itself",
+    "line": 3521,
+    "text": "\"docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md\","
+   },
+   {
+    "cycle": 890,
+    "file": "logs/runner-cache/frontier_cycle890_multiplicity_freeness_2026_07_28.txt",
+    "kind": "CITATION of the July no-go note itself",
+    "line": 3529,
+    "text": "\"docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md\","
+   },
+   {
+    "cycle": 895,
+    "file": "logs/runner-cache/frontier_cycle895_t_retirement_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 12,
+    "text": "PASS B_NEEDLES :: {\"derivation_rule\":\"seed = the Cycle-876 primary's provenance-site quote arguments and the docstrings of line_point / balance_residual / normal_form / sigma_response / consequence_certificate plus its module docstring, all extracted by AST; n-grams of length 1-3 over that seed with"
+   },
+   {
+    "cycle": 901,
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "kind": "CITATION of the July no-go note itself",
+    "line": 5020,
+    "text": "\"consumer\": \"docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md\","
+   },
+   {
+    "cycle": 901,
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "kind": "OTHER",
+    "line": 5060,
+    "text": "\"consumer\": \"docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md\","
+   },
+   {
+    "cycle": 901,
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "kind": "CITATION of the July no-go note itself",
+    "line": 5213,
+    "text": "\"consumer\": \"scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py\","
+   },
+   {
+    "cycle": 901,
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "kind": "CITATION of the July no-go note itself",
+    "line": 157,
+    "text": "rows: [{\"consumer\": \"docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md\", \"needles\": [\"KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05\", \"L_C_3\"], \"uses_the_anchor_2_over_9\": true, \"status_under_re_binding\": \"UNCHANGED -- consumes the value only at the C3 scope"
+   },
+   {
+    "cycle": 901,
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "kind": "CITATION of the July no-go note itself",
+    "line": 157,
+    "text": "rows: [{\"consumer\": \"docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md\", \"needles\": [\"KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05\", \"L_C_3\"], \"uses_the_anchor_2_over_9\": true, \"status_under_re_binding\": \"UNCHANGED -- consumes the value only at the C3 scope"
+   },
+   {
+    "cycle": 903,
+    "file": "outputs/sigma_theta_cycle903_receipt_2026_07_28.json",
+    "kind": "EXCLUSION CLAUSE -- the primitive refuses to supply an angle",
+    "line": 361,
+    "text": "\"exclude_clause_1\": \"This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.\","
+   },
+   {
+    "cycle": 903,
+    "file": "outputs/sigma_theta_cycle903_receipt_2026_07_28.json",
+    "kind": "EXCLUSION CLAUSE -- the primitive refuses to supply an angle",
+    "line": 376,
+    "text": "\"mixing angle\","
+   },
+   {
+    "cycle": 903,
+    "file": "logs/runner-cache/frontier_cycle903_sigma_theta_2026_07_28.txt",
+    "kind": "EXCLUSION CLAUSE -- the primitive refuses to supply an angle",
+    "line": 56,
+    "text": "exclude #1 : This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it."
+   }
+  ],
+  "candidate_count": 18,
+  "candidates": [
+   {
+    "anchor": "\"sum_of_inverse_determinants\": \"2/3\"",
+    "anchor_found": true,
+    "angle_of": "the C3 fixed locus (the three-element body-diagonal orbit)",
+    "cycle": 899,
+    "id": "C899-SUM",
+    "object": "sum_of_inverse_determinants on the C3 geometric normal space",
+    "source": "outputs/family_binding_cycle899_receipt_2026_07_28.json",
+    "status": "derived (recomputed in 899 from the retained note's own recipe, N=2..12 table)",
+    "typing_sentence_byte_quoted": "\"sum_of_inverse_determinants\": \"2/3\"",
+    "typing_sentence_file": "outputs/family_binding_cycle899_receipt_2026_07_28.json",
+    "typing_sentence_line": 629,
+    "value": "2/3"
+   },
+   {
+    "anchor": "(n-1)/n^2",
+    "anchor_found": true,
+    "angle_of": "the content-space density of the C_n free orbit",
+    "cycle": 899,
+    "id": "C899-FDIM",
+    "object": "F_dim(n) = (n-1)/n^2, the scope-invariant family form",
+    "source": "docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "status": "derived theorem (883's five-fold ambiguity shown to be a phantom)",
+    "typing_sentence_byte_quoted": "the scope, (n-1)/n^2.** The five-fold ambiguity was a choice of",
+    "typing_sentence_file": "docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "typing_sentence_line": 46,
+    "value": "2/9 at n=3"
+   },
+   {
+    "anchor": "diag(Qp)",
+    "anchor_found": true,
+    "angle_of": "the C3 regular representation's non-invariant complement",
+    "cycle": 904,
+    "id": "C904-DIAGQP",
+    "object": "diag(Qp), Qp = projector onto the non-invariant subspace",
+    "source": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "status": "derived (native atom table, published so the checker can rebuild it)",
+    "typing_sentence_byte_quoted": "diag(Qp) 2/3 v3= -1 Id - P: projector onto the non-inv",
+    "typing_sentence_file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "typing_sentence_line": 119,
+    "value": "2/3"
+   },
+   {
+    "anchor": "2/27 REACHABLE at word length 1",
+    "anchor_found": true,
+    "angle_of": "the C3 orbit, at word length 1",
+    "cycle": 904,
+    "id": "C904-NATIVE227",
+    "object": "the native scope-uniform relation (n-1)/n^3 reaching 2/27",
+    "source": "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json",
+    "status": "derived, and reported AGAINST INTEREST (contradicts 898's prediction)",
+    "typing_sentence_byte_quoted": "\"headline\": \"The LAST shape prices BACKWARDS: the mixed-degree escape is real and complete (C904-T2 zero-expulsion singletons); the brief's v3 premise FALSE (native atoms reach v3=3 \\u2014 reported against interest); 2/27 REACHABLE at word length 1 by an honest native relation ((n-1)/n^3 scope-uniform, no smuggling \\u2014 contradicting 898's target-tuned prediction, reported as contradiction); and selection STILL fails by DISCRIMINATION: 442 scope-uniform families, 115 distinct values \\u2014 the purchase is the CHOICE OF SCHEMA, not a constant; coverage map COMPLETE (11 shapes, 0 unpriced); te",
+    "typing_sentence_file": "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json",
+    "typing_sentence_line": 46,
+    "value": "2/27 at n=3"
+   },
+   {
+    "anchor": "RATIONAL BUT WRONG",
+    "anchor_found": true,
+    "angle_of": "a degree-2 native involution on the C3 orbit",
+    "cycle": 898,
+    "id": "C898-TRACE",
+    "object": "per-vertex trace of the C3-commuting Q-linear involution M2-06",
+    "source": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+    "status": "derived, and REJECTED BY ITS OWN SOURCE",
+    "typing_sentence_byte_quoted": "\"verdict\": \"RATIONAL BUT WRONG: the only rational fixed scale in the whole native degree-2 list. w = 1/3 exactly, per-vertex trace 2/3, nonzero eigenvalue 1. None of the three readings is 2/27, and none of their orbit values is 2/9\"",
+    "typing_sentence_file": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+    "typing_sentence_line": 19,
+    "value": "2/3"
+   },
+   {
+    "anchor": "This is a units conversion, not a physics axiom.",
+    "anchor_found": true,
+    "angle_of": "the source/action bridge scalar",
+    "cycle": 903,
+    "id": "C903-SIGMA",
+    "object": "sigma, split into a unit-conversion factor and a dimensionless residue",
+    "source": "outputs/sigma_theta_cycle903_receipt_2026_07_28.json",
+    "status": "derived theorem (the primitive's own exclusion list adjudicates it)",
+    "typing_sentence_byte_quoted": "\"exclude_clause_1\": \"This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.\",",
+    "typing_sentence_file": "outputs/sigma_theta_cycle903_receipt_2026_07_28.json",
+    "typing_sentence_line": 361,
+    "value": "SPLIT_OUTSIDE (unit half discharged; dimensionless half is the lane's terminal supplied scalar)"
+   },
+   {
+    "anchor": "the barrier-independent invariant core is EMPTY",
+    "anchor_found": true,
+    "angle_of": "the theta parameter of the gravity-lane kernel",
+    "cycle": 903,
+    "id": "C903-THETA",
+    "object": "the barrier-independent invariant core of theta",
+    "source": "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json",
+    "status": "derived theorem (12-barrier attack, 8 out of family, no survivor)",
+    "typing_sentence_byte_quoted": "\"headline\": \"Both small ledger rows CLOSE: sigma = SPLIT_OUTSIDE \\u2014 the unit-conversion factor CONSUMES the approved scale-reference primitive (one dimension discharged) while the dimensionless residue is the lane's TERMINAL SUPPLIED SCALAR (the primitive's own exclusion list names 'coupling'); involution route sterile by RANK THEOREM; theta: the barrier-independent invariant core is EMPTY (incidence chain 7 > 1 > 0; mechanism derived \\u2014 interference needs two path lengths, bipartite parity, dilation exceeds the step budget; 12-barrier attack incl. 8 out-of-family finds no survivor) \\u",
+    "typing_sentence_file": "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json",
+    "typing_sentence_line": 46,
+    "value": "EMPTY (incidence chain 7 > 1 > 0)"
+   },
+   {
+    "anchor": "G(0)-G(e1)=1/6 IS the statement mu=0",
+    "anchor_found": true,
+    "angle_of": "the lattice Green-function kernel at the origin",
+    "cycle": 900,
+    "id": "C900-MU",
+    "object": "G(0)-G(e1) = 1/6, shown to BE the statement mu = 0",
+    "source": "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json",
+    "status": "derived theorem (exact algebra, unique over Q)",
+    "typing_sentence_byte_quoted": "\"headline\": \"REPAIR-VIABLE, 16-row patch list, 0 unrepairable obstructions \\u2014 but the repair buys ONE coordinate not two: G(0)-G(e1)=1/6 IS the statement mu=0 (the forced core is the massless slice of the family R3 left free \\u2014 the repair presupposes mu); epsilon elimination STRENGTHENS (no (epsilon, mu^2) pair rescues the landed ansatz \\u2014 unit GCD without the harmonicity premise); real breaks: radial monotonicity dies (the core separates same-Euclidean-radius sites \\u2014 the derived anisotropy is real; repairs by restatement) + the screened consumers (repair via the screened latt",
+    "typing_sentence_file": "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json",
+    "typing_sentence_line": 46,
+    "value": "1/6"
+   },
+   {
+    "anchor": "lawfulness is exactly AFFINE",
+    "anchor_found": true,
+    "angle_of": "the unit-grading parameter of the response law",
+    "cycle": 895,
+    "id": "C895-AFFINE",
+    "object": "the affine t-law: lawfulness is exactly A + tB",
+    "source": "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json",
+    "status": "derived theorem; the t-CHOICE DISSOLVES",
+    "typing_sentence_byte_quoted": "\"headline\": \"The t-CHOICE DISSOLVES (on the choice criterion; both criteria published): lawfulness is exactly AFFINE (A + tB, A = the sector trace) partitioning 1,296 configs 6/84/60/1146 with the always-lawful six = the landed family; 29 priced rows -> 19 retired / 10 sensitive (exact witness sets) / 1 broken; rows_requiring_an_exact_choice_of_t EMPTY \\u2014 the honest residue is the EXCLUSION t != 0 on two load-bearing rows; backlog CLOSED (cycle316 BROKEN_OFF_UNIT, cycle325 structurally T_UNIFORM, 876-checker forced-(1,2,0)); the 880 blind-locus theorem GROWS (exact for every t != 0); (1,2,",
+    "typing_sentence_file": "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json",
+    "typing_sentence_line": 46,
+    "value": "t free (1,296 configs partitioned 6/84/60/1146)"
+   },
+   {
+    "anchor": "(1, 2)",
+    "anchor_found": true,
+    "angle_of": "the C3 fixed locus transverse weights",
+    "cycle": 883,
+    "id": "C883-WEIGHTPAIR",
+    "object": "the Record-carried weight pair (1, 2)",
+    "source": "docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "status": "derived from Lattice + Record (SL1, the weaker successor named by 882)",
+    "typing_sentence_byte_quoted": "readout space carries the ordered weight pair (1, 2) \u2014 2-adic profile",
+    "typing_sentence_file": "docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "typing_sentence_line": 36,
+    "value": "(1, 2)"
+   },
+   {
+    "anchor": "the license RESTATED, not derived",
+    "anchor_found": true,
+    "angle_of": "the Record-facing scalar readout coefficient",
+    "cycle": 882,
+    "id": "C882-ALPHA",
+    "object": "the alpha witness family and the k = 2/9 anchor",
+    "source": "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "status": "derived (T1-T7); the k = 2/9 row is the license RESTATED, not derived",
+    "typing_sentence_byte_quoted": "alone \u2014 and that row is the license RESTATED, not derived. The",
+    "typing_sentence_file": "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "typing_sentence_line": 93,
+    "value": "{0, 1/9, 1/3, 1, 2/27}; only k = 2/9 keeps 2/27 alone"
+   },
+   {
+    "anchor": "F_dim(3)=F_res(3)=2/9",
+    "anchor_found": true,
+    "angle_of": "the record's content-space reading of the C3 orbit",
+    "cycle": 901,
+    "id": "C901-FDIM",
+    "object": "F_dim(3) = F_res(3) = 2/9 after the content-space re-binding",
+    "source": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json",
+    "status": "derived (DECIDED-F_DIM; 44 consumers, 0 off-C3)",
+    "typing_sentence_byte_quoted": "\"headline\": \"DECIDED-F_DIM: the record reads CONTENT-SPACE. The embedding test honestly fails to convict (C901-T2a: the L-face is embedding-invariant everywhere); the violation is on SCOPE \\u2014 the {+-e1,+-e2} collection is simply transitive under BOTH C4_face and V_edge, where the geometric reading gives 5/16-vs-UNDEFINED on identical records and the content reading gives 3/16 under all nine preserving scopes (multi-scope survey: 4 collections split geometric, 0 split content); surviving steelman: the L-face keeps its mathematics, loses the license as THE readout (price: one supplied scope ",
+    "typing_sentence_file": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json",
+    "typing_sentence_line": 46,
+    "value": "2/9"
+   },
+   {
+    "anchor": "complement",
+    "anchor_found": true,
+    "angle_of": "readable episodes of the complement mechanism",
+    "cycle": 891,
+    "id": "C891-PERIOD",
+    "object": "the readable episode period family (the k-run/period instrument)",
+    "source": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json",
+    "status": "sealed-holdout derived; carried by 924 as its sharpest same-artifact candidate",
+    "typing_sentence_byte_quoted": "\"logs/runner-cache/frontier_cycle891_complement_independent_check_2026_07_28.txt\": {",
+    "typing_sentence_file": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json",
+    "typing_sentence_line": 21,
+    "value": "period family incl. the 16/24 = 2/3 pair 924 used"
+   },
+   {
+    "anchor": "convention-two-valued",
+    "anchor_found": true,
+    "angle_of": "the theta parameter across two baselines",
+    "cycle": 916,
+    "id": "C916-THETA",
+    "object": "the theta dictionary A-to-C map",
+    "source": "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json",
+    "status": "derived, but CONVENTION-CARRIED by its own label",
+    "typing_sentence_byte_quoted": "\"headline\": \"THE THETA DICTIONARY: A-to-C exact and Jt-independent BUT convention-two-valued (mixed doublet 0.5 vs symmetry-broken 1e-9 \\u2014 the pilot escaped the freeze's objection only via a symmetry-breaking eigensolver); A-to-B = NO CONVERSION without a five-premise bridge (the floor sits at 95.9% of B's own attainable range \\u2014 the checker's sharpening); CHECK-05 is VOID as stated (the same-shape X is two-valued, 7.5e-4 vs 0.50, on OPPOSITE sides of the floor) \\u2014 theta* ~ 0.50 survives as a correct A-value, only the comparison dies; four void-comparison sites censused; B RUNS ONL",
+    "typing_sentence_file": "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json",
+    "typing_sentence_line": 46,
+    "value": "convention-two-valued (0.5 vs 1e-9)"
+   },
+   {
+    "anchor": "Outright forcing: NONE",
+    "anchor_found": true,
+    "angle_of": "the unit grading of the response law",
+    "cycle": 876,
+    "id": "C876-GRADING",
+    "object": "the unit-grading provenance verdict",
+    "source": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "status": "derived negative (5 routes attempted against axioms+primitives only)",
+    "typing_sentence_byte_quoted": "FINDING D_DERIVATION_ROUTES :: All 5 routes were attempted against the axioms and approved primitives only, with no new axiom or primitive introduced. Outright forcing: NONE. Forcing conditional on a named new premise: ('R2_SECTOR_RELABELLING_COVARIANCE',). Not forcing: ('R1_COUNT_ONCE_ADDITIVE_READOUT', 'R3_OVERALL_NORMALISATION_GAUGE', 'R4_LANDED_IDENTITY_CONSISTENCY', 'R5_ADMISSIBILITY'). The routes are not equally empty. R1 with the Lattice axiom's proper-cubic covariance is a genuine partial derivation -- it forces the SHAPE of the grading (18 free coefficients per sector down to 1, so th",
+    "typing_sentence_file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "typing_sentence_line": 7,
+    "value": "Outright forcing: NONE"
+   },
+   {
+    "anchor": "THE PAIR-CYCLE LAW",
+    "anchor_found": true,
+    "angle_of": "fragment-pair anchors, as a CYCLE LENGTH (an integer), not an angle",
+    "cycle": 921,
+    "id": "C921-CYCLE",
+    "object": "the pair-cycle law: tax graded by shortest pointer-through cycle length",
+    "source": "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json",
+    "status": "derived theorem",
+    "typing_sentence_byte_quoted": "\"headline\": \"THE LOOP COST EXPLAINED \\u2014 THE PAIR-CYCLE LAW: the tax is per fragment-pair, graded by the shortest pointer-through cycle joining the pair's anchors (length 3 kills content at every field; length 4 kills pair-independence at lambda >= 0.075 but not 0.05; length >= 5 is FREE) and max R_ind = the independence number of what survives (loop-free => pointer degree = 917's reading; 917's high-field failures are exactly its d=2 pairs); loop COUNT REFUTED in both readings (ten loops can cost nothing; six fixed-pair ladders never move the ceiling); POSITION reduces to the binary throug",
+    "typing_sentence_file": "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json",
+    "typing_sentence_line": 46,
+    "value": "length 3 and length 4 thresholds"
+   },
+   {
+    "anchor": "escape_b_shaped_count",
+    "anchor_found": true,
+    "angle_of": "the response object's linear sector",
+    "cycle": 872,
+    "id": "C872-SIGMA",
+    "object": "the sigma linear-admissibility classification",
+    "source": "logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt",
+    "status": "derived classification",
+    "typing_sentence_byte_quoted": "PASS G_ESCAPE_B :: {\"M1_as_stated_at_868_covers_every_quadratic\":false,\"escape_b_as_named_by_868\":\"a response object linear in the endpoint exchange R rather than factoring through R*R, and not a sector-orthogonal contraction\",\"escape_b_shaped_count\":162,\"escape_b_shaped_fraction_of_admissible\":\"162/344\",\"escape_b_shaped_sample\":[\"LIN[I+R|G^1|axis]\",\"LIN[I+R|G^1|endpoint.axis]\",\"LIN[I+R|G^1|endpoint.sector.axis]\",\"LIN[I+R|G^1|endpoint.sector]\",\"LIN[I+R|G^1|endpoint]\",\"LIN[I+R|G^1|none]\",\"LIN[I+R|G^1|sector.axis]\",\"LIN[I+R|G^1|sector]\",\"LIN[I-R|G^1|axis]\",\"LIN[I-R|G^1|none]\",\"LIN[I-R|G^1|sector",
+    "typing_sentence_file": "logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt",
+    "typing_sentence_line": 14,
+    "value": "escape-B shaped count 162"
+   },
+   {
+    "anchor": null,
+    "anchor_found": null,
+    "angle_of": "the retained circulant parameterization's Koide ratio",
+    "cycle": 897,
+    "id": "C897-Q",
+    "object": "Q = 2/3 as an IDENTITY in delta (FIREWALL-QUARANTINED PACKAGE)",
+    "source": null,
+    "status": "derived identity, but the package's OWN declaration quarantines 3 admitted observations; not vendored, pinned by digest, swept from typing text only",
+    "typing_sentence_byte_quoted": "NOT VENDORED -- FIREWALL QUARANTINE.  Typing taken from the package's own ship-receipt headline, which contains no numeric mass literal.",
+    "value": "2/3"
+   }
+  ],
+  "other_kind_angle_contexts": [
+   {
+    "cycle": 872,
+    "file": "logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 20,
+    "text": "PASS J_CONTROLS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle868_response_sign_census_2026_07_28.py\",\"logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt\",\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/two_cell_two_source_recoil_reciprocity_cycle322_"
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 2,
+    "text": "PASS A_PINS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py\",\"scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\",\"scripts/frontier_cycle868_response_sign_census_20"
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 2,
+    "text": "PASS A_PINS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py\",\"scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\",\"scripts/frontier_cycle868_response_sign_census_20"
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 16,
+    "text": "PASS H_CONTROLS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py\",\"scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\",\"scripts/frontier_cycle868_response_sign_censu"
+   },
+   {
+    "cycle": 876,
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 16,
+    "text": "PASS H_CONTROLS :: {\"AUDIT_INPUT_PATHS\":[\"scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py\",\"scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py\",\"scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\",\"scripts/frontier_cycle868_response_sign_censu"
+   },
+   {
+    "cycle": 895,
+    "file": "logs/runner-cache/frontier_cycle895_t_retirement_2026_07_28.txt",
+    "kind": "OTHER",
+    "line": 12,
+    "text": "PASS B_NEEDLES :: {\"derivation_rule\":\"seed = the Cycle-876 primary's provenance-site quote arguments and the docstrings of line_point / balance_residual / normal_form / sigma_response / consequence_certificate plus its module docstring, all extracted by AST; n-grams of length 1-3 over that seed with"
+   },
+   {
+    "cycle": 901,
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "kind": "OTHER",
+    "line": 5060,
+    "text": "\"consumer\": \"docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md\","
+   }
+  ],
+  "packages_carrying_the_referent": [
+   882,
+   883,
+   886,
+   888,
+   890,
+   895,
+   898,
+   899,
+   901
+  ],
+  "per_cycle_typing_scan": {
+   "872": {
+    "angle_word_hits": 1,
+    "files": 5,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 0
+    },
+    "referent_present": false
+   },
+   "876": {
+    "angle_word_hits": 7,
+    "files": 5,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 0
+    },
+    "referent_present": false
+   },
+   "882": {
+    "angle_word_hits": 1,
+    "files": 5,
+    "holonomy_hits": 2,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 1,
+     "fixed_locus": 5,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 1,
+     "r_eta": 2,
+     "s_sum": 0
+    },
+    "referent_present": true
+   },
+   "883": {
+    "angle_word_hits": 0,
+    "files": 4,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 5,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 1
+    },
+    "referent_present": true
+   },
+   "886": {
+    "angle_word_hits": 0,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 11,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 11,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 99
+    },
+    "referent_present": true
+   },
+   "888": {
+    "angle_word_hits": 0,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 7,
+     "fixed_locus": 8,
+     "koide": 0,
+     "lepton": 7,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 63
+    },
+    "referent_present": true
+   },
+   "890": {
+    "angle_word_hits": 2,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 2,
+     "fixed-locus": 2,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 4,
+     "s_sum": 3
+    },
+    "referent_present": true
+   },
+   "891": {
+    "angle_word_hits": 0,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 0
+    },
+    "referent_present": false
+   },
+   "895": {
+    "angle_word_hits": 1,
+    "files": 6,
+    "holonomy_hits": 4,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 19,
+     "lepton": 1,
+     "r-eta": 0,
+     "r_eta": 1,
+     "s_sum": 0
+    },
+    "referent_present": true
+   },
+   "898": {
+    "angle_word_hits": 0,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 1,
+     "r_eta": 0,
+     "s_sum": 0
+    },
+    "referent_present": true
+   },
+   "899": {
+    "angle_word_hits": 0,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 12,
+     "fixed_locus": 12,
+     "koide": 11,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 12
+    },
+    "referent_present": true
+   },
+   "900": {
+    "angle_word_hits": 0,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 0
+    },
+    "referent_present": false
+   },
+   "901": {
+    "angle_word_hits": 5,
+    "files": 6,
+    "holonomy_hits": 5,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 78,
+     "koide": 82,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 17,
+     "s_sum": 0
+    },
+    "referent_present": true
+   },
+   "903": {
+    "angle_word_hits": 3,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 0
+    },
+    "referent_present": false
+   },
+   "904": {
+    "angle_word_hits": 0,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 0
+    },
+    "referent_present": false
+   },
+   "916": {
+    "angle_word_hits": 0,
+    "files": 6,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 0
+    },
+    "referent_present": false
+   },
+   "921": {
+    "angle_word_hits": 0,
+    "files": 5,
+    "holonomy_hits": 0,
+    "radian_hits": 0,
+    "referent_hits": {
+     "ac_phi": 0,
+     "fixed-locus": 0,
+     "fixed_locus": 0,
+     "koide": 0,
+     "lepton": 0,
+     "r-eta": 0,
+     "r_eta": 0,
+     "s_sum": 0
+    },
+    "referent_present": false
+   }
+  },
+  "radian_occurrences_across_the_entire_new_surface": 0
+ },
+ "D_Q2_route1_bin_census": {
+  "any_licensed": false,
+  "bin_definitions": {
+   "BIN 1 misses the target": "The object's exact value is not 2/3.  Rational arithmetic, no floats.",
+   "BIN 2 cannot pin a nonzero member": "Inherited from the July no-go and computed by 924: the readout constraint family is HOMOGENEOUS, so its solution set is a line closed under rescale, of dimension exactly 1.  A homogeneous map never isolates the nonzero off-locus member.",
+   "BIN 3 restates the license": "The object hits 2/3 only because the fixed-locus rational is inserted as an angle-valued source.  This is the unlicensed alpha = 1 map -- R-eta in new coordinates.",
+   "BIN 4 free-selection hit": "The value is reached only by selecting one member out of a family of admissible ones; the selecting sentence is itself the license.",
+   "BIN 5 no referent": "The home surface has no charged-lepton / holonomy / fixed-locus vocabulary at all, so the identification sentence cannot even be STATED there.  This was 924's decisive bin on the occurrence surface.",
+   "BIN 6 arity mismatch": "R-eta's target is a C3 THREE-fold unaveraged sum; the candidate's arena is not three-fold.",
+   "BIN 7 TYPE GAP (NEW this block, and the decisive one here)": "The object is DERIVED and its value may be exactly 2/3, but no source on the entire new surface types any object in radians -- the corpus contains ZERO occurrences of 'radian'.  Every derived object is a density, a weight, a count, a determinant sum, a dimension or a ratio.  Converting any of them into an angle on the charged-lepton cycle is not a step the surface licenses; it IS the h-unit angle scale that Cycle 924 computed as the one missing dimension.  The identification sentence can be stated here (unlike bin 5) -- it just cannot be derived.",
+   "BIN 8 SCOPE GAP (NEW this block, structural)": "The value exists only at a scope -- C3, or n = 3, or one schema out of many -- that the SAME campaign's own theorems prove is not isolated: Cycle 886 finds 0 of 16 routes grounded-and-isolating for C3, Cycle 888 finds freeness+maximality selects S3 alone over the full 30-subgroup lattice, Cycle 890 leaves the ladder endpoint at {C3, C4}, and Cycle 904 finds 442 scope-uniform families reaching 115 distinct values.  Even granting the type conversion, picking the scope that yields 2/3 is an unlicensed selection."
+  },
+  "counts_by_bin": {
+   "BIN 1 misses the target": 5,
+   "BIN 5 no referent": 10,
+   "BIN 7 TYPE GAP (NEW this block, and the decisive one here)": 3
+  },
+  "route_1_verdict": "ROUTE 1 IS SWEPT EMPTY on every surface this campaign built.  The sweep found what 924's occurrence sweep could not: derived objects whose exact value IS 2/3, on surfaces that DO carry the charged-lepton referent (cycle 899's sum_of_inverse_determinants = 2/3 over the C3 fixed locus is the sharpest).  Bin 5, which was decisive for route 3, does NOT fire here.  What blocks route 1 instead is the TYPE GAP: no artifact anywhere on the new surface types any object in radians (zero occurrences of 'radian' across 99 vendored files in 17 packages), so every candidate is a density, a determinant sum, a weight, a count or a dimension, and declaring it the charged-lepton cycle ANGLE is precisely the unpriced h-unit angle scale that Cycle 924 computed as the one missing dimension.  Granting the type conversion for free, the SCOPE GAP blocks it a second time: the 2/3 lives only at C3 / n = 3, and this campaign's own theorems (886, 888, 890, 904) prove that scope is not isolated.",
+  "verdicts": [
+   {
+    "angle_of": "the C3 fixed locus (the three-element body-diagonal orbit)",
+    "bin": "BIN 7 TYPE GAP (NEW this block, and the decisive one here)",
+    "cycle": 899,
+    "derivation_status": "derived (recomputed in 899 from the retained note's own recipe, N=2..12 table)",
+    "exact_check": "the object is derived and exactly 2/3, but its own source types it as 'sum_of_inverse_determinants on the C3 geometric normal space' and NOT as an angle; the whole new surface contains zero occurrences of 'radian'.  Typing it as the charged-lepton cycle angle is the h-unit license itself",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": true,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": true,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": true
+    },
+    "id": "C899-SUM",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals sum_of_inverse_determinants on the C3 geometric normal space (cycle 899), read in radians",
+    "object": "sum_of_inverse_determinants on the C3 geometric normal space",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 8 SCOPE GAP -- granting the angle typing for free, the 2/3 still exists only at the C3 / n = 3 scope, and cycles 886 (0/16 routes grounded-and-isolating), 888 (freeness+maximality selects S3 alone) and 890 (ladder endpoint {C3, C4}) prove this campaign does not isolate that scope; cycle 904 reaches 115 distinct values over 442 scope-uniform families.",
+    "value": "2/3"
+   },
+   {
+    "angle_of": "the content-space density of the C_n free orbit",
+    "bin": "BIN 1 misses the target",
+    "cycle": 899,
+    "derivation_status": "derived theorem (883's five-fold ambiguity shown to be a phantom)",
+    "exact_check": "exact value is 2/9 at n=3, not 2/3",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": true,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C899-FDIM",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals F_dim(n) = (n-1)/n^2, the scope-invariant family form (cycle 899), read in radians",
+    "object": "F_dim(n) = (n-1)/n^2, the scope-invariant family form",
+    "secondary_bin_if_the_type_gap_were_granted": null,
+    "value": "2/9 at n=3"
+   },
+   {
+    "angle_of": "the C3 regular representation's non-invariant complement",
+    "bin": "BIN 5 no referent",
+    "cycle": 904,
+    "derivation_status": "derived (native atom table, published so the checker can rebuild it)",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": true,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": true
+    },
+    "id": "C904-DIAGQP",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals diag(Qp), Qp = projector onto the non-invariant subspace (cycle 904), read in radians",
+    "object": "diag(Qp), Qp = projector onto the non-invariant subspace",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  This candidate's exact value IS 2/3, so the referent is the only thing standing between it and bin 7.",
+    "value": "2/3"
+   },
+   {
+    "angle_of": "the C3 orbit, at word length 1",
+    "bin": "BIN 5 no referent",
+    "cycle": 904,
+    "derivation_status": "derived, and reported AGAINST INTEREST (contradicts 898's prediction)",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C904-NATIVE227",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the native scope-uniform relation (n-1)/n^3 reaching 2/27 (cycle 904), read in radians",
+    "object": "the native scope-uniform relation (n-1)/n^3 reaching 2/27",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
+    "value": "2/27 at n=3"
+   },
+   {
+    "angle_of": "a degree-2 native involution on the C3 orbit",
+    "bin": "BIN 7 TYPE GAP (NEW this block, and the decisive one here)",
+    "cycle": 898,
+    "derivation_status": "derived, and REJECTED BY ITS OWN SOURCE",
+    "exact_check": "the object is derived and exactly 2/3, but its own source types it as 'per-vertex trace of the C3-commuting Q-linear involution M2-06' and NOT as an angle; the whole new surface contains zero occurrences of 'radian'.  Typing it as the charged-lepton cycle angle is the h-unit license itself",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": true,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": true,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C898-TRACE",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals per-vertex trace of the C3-commuting Q-linear involution M2-06 (cycle 898), read in radians",
+    "object": "per-vertex trace of the C3-commuting Q-linear involution M2-06",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 8 SCOPE GAP -- granting the angle typing for free, the 2/3 still exists only at the C3 / n = 3 scope, and cycles 886 (0/16 routes grounded-and-isolating), 888 (freeness+maximality selects S3 alone) and 890 (ladder endpoint {C3, C4}) prove this campaign does not isolate that scope; cycle 904 reaches 115 distinct values over 442 scope-uniform families.",
+    "value": "2/3"
+   },
+   {
+    "angle_of": "the source/action bridge scalar",
+    "bin": "BIN 5 no referent",
+    "cycle": 903,
+    "derivation_status": "derived theorem (the primitive's own exclusion list adjudicates it)",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C903-SIGMA",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals sigma, split into a unit-conversion factor and a dimensionless residue (cycle 903), read in radians",
+    "object": "sigma, split into a unit-conversion factor and a dimensionless residue",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
+    "value": "SPLIT_OUTSIDE (unit half discharged; dimensionless half is the lane's terminal supplied scalar)"
+   },
+   {
+    "angle_of": "the theta parameter of the gravity-lane kernel",
+    "bin": "BIN 5 no referent",
+    "cycle": 903,
+    "derivation_status": "derived theorem (12-barrier attack, 8 out of family, no survivor)",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C903-THETA",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the barrier-independent invariant core of theta (cycle 903), read in radians",
+    "object": "the barrier-independent invariant core of theta",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
+    "value": "EMPTY (incidence chain 7 > 1 > 0)"
+   },
+   {
+    "angle_of": "the lattice Green-function kernel at the origin",
+    "bin": "BIN 5 no referent",
+    "cycle": 900,
+    "derivation_status": "derived theorem (exact algebra, unique over Q)",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C900-MU",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals G(0)-G(e1) = 1/6, shown to BE the statement mu = 0 (cycle 900), read in radians",
+    "object": "G(0)-G(e1) = 1/6, shown to BE the statement mu = 0",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
+    "value": "1/6"
+   },
+   {
+    "angle_of": "the unit-grading parameter of the response law",
+    "bin": "BIN 1 misses the target",
+    "cycle": 895,
+    "derivation_status": "derived theorem; the t-CHOICE DISSOLVES",
+    "exact_check": "exact value is t free (1,296 configs partitioned 6/84/60/1146), not 2/3",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": true,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C895-AFFINE",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the affine t-law: lawfulness is exactly A + tB (cycle 895), read in radians",
+    "object": "the affine t-law: lawfulness is exactly A + tB",
+    "secondary_bin_if_the_type_gap_were_granted": null,
+    "value": "t free (1,296 configs partitioned 6/84/60/1146)"
+   },
+   {
+    "angle_of": "the C3 fixed locus transverse weights",
+    "bin": "BIN 1 misses the target",
+    "cycle": 883,
+    "derivation_status": "derived from Lattice + Record (SL1, the weaker successor named by 882)",
+    "exact_check": "exact value is (1, 2), not 2/3",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": true,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C883-WEIGHTPAIR",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the Record-carried weight pair (1, 2) (cycle 883), read in radians",
+    "object": "the Record-carried weight pair (1, 2)",
+    "secondary_bin_if_the_type_gap_were_granted": null,
+    "value": "(1, 2)"
+   },
+   {
+    "angle_of": "the Record-facing scalar readout coefficient",
+    "bin": "BIN 1 misses the target",
+    "cycle": 882,
+    "derivation_status": "derived (T1-T7); the k = 2/9 row is the license RESTATED, not derived",
+    "exact_check": "exact value is {0, 1/9, 1/3, 1, 2/27}; only k = 2/9 keeps 2/27 alone, not 2/3",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": true,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C882-ALPHA",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the alpha witness family and the k = 2/9 anchor (cycle 882), read in radians",
+    "object": "the alpha witness family and the k = 2/9 anchor",
+    "secondary_bin_if_the_type_gap_were_granted": null,
+    "value": "{0, 1/9, 1/3, 1, 2/27}; only k = 2/9 keeps 2/27 alone"
+   },
+   {
+    "angle_of": "the record's content-space reading of the C3 orbit",
+    "bin": "BIN 1 misses the target",
+    "cycle": 901,
+    "derivation_status": "derived (DECIDED-F_DIM; 44 consumers, 0 off-C3)",
+    "exact_check": "exact value is 2/9, not 2/3",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": true,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C901-FDIM",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals F_dim(3) = F_res(3) = 2/9 after the content-space re-binding (cycle 901), read in radians",
+    "object": "F_dim(3) = F_res(3) = 2/9 after the content-space re-binding",
+    "secondary_bin_if_the_type_gap_were_granted": null,
+    "value": "2/9"
+   },
+   {
+    "angle_of": "readable episodes of the complement mechanism",
+    "bin": "BIN 5 no referent",
+    "cycle": 891,
+    "derivation_status": "sealed-holdout derived; carried by 924 as its sharpest same-artifact candidate",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C891-PERIOD",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the readable episode period family (the k-run/period instrument) (cycle 891), read in radians",
+    "object": "the readable episode period family (the k-run/period instrument)",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
+    "value": "period family incl. the 16/24 = 2/3 pair 924 used"
+   },
+   {
+    "angle_of": "the theta parameter across two baselines",
+    "bin": "BIN 5 no referent",
+    "cycle": 916,
+    "derivation_status": "derived, but CONVENTION-CARRIED by its own label",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C916-THETA",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the theta dictionary A-to-C map (cycle 916), read in radians",
+    "object": "the theta dictionary A-to-C map",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
+    "value": "convention-two-valued (0.5 vs 1e-9)"
+   },
+   {
+    "angle_of": "the unit grading of the response law",
+    "bin": "BIN 5 no referent",
+    "cycle": 876,
+    "derivation_status": "derived negative (5 routes attempted against axioms+primitives only)",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C876-GRADING",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the unit-grading provenance verdict (cycle 876), read in radians",
+    "object": "the unit-grading provenance verdict",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
+    "value": "Outright forcing: NONE"
+   },
+   {
+    "angle_of": "fragment-pair anchors, as a CYCLE LENGTH (an integer), not an angle",
+    "bin": "BIN 5 no referent",
+    "cycle": 921,
+    "derivation_status": "derived theorem",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C921-CYCLE",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the pair-cycle law: tax graded by shortest pointer-through cycle length (cycle 921), read in radians",
+    "object": "the pair-cycle law: tax graded by shortest pointer-through cycle length",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
+    "value": "length 3 and length 4 thresholds"
+   },
+   {
+    "angle_of": "the response object's linear sector",
+    "bin": "BIN 5 no referent",
+    "cycle": 872,
+    "derivation_status": "derived classification",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": false,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C872-SIGMA",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the sigma linear-admissibility classification (cycle 872), read in radians",
+    "object": "the sigma linear-admissibility classification",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
+    "value": "escape-B shaped count 162"
+   },
+   {
+    "angle_of": "the retained circulant parameterization's Koide ratio",
+    "bin": "BIN 7 TYPE GAP (NEW this block, and the decisive one here)",
+    "cycle": 897,
+    "derivation_status": "derived identity, but the package's OWN declaration quarantines 3 admitted observations; not vendored, pinned by digest, swept from typing text only",
+    "exact_check": "the object is derived and exactly 2/3, but its own source types it as 'Q = 2/3 as an IDENTITY in delta (FIREWALL-QUARANTINED PACKAGE)' and NOT as an angle; the whole new surface contains zero occurrences of 'radian'.  Typing it as the charged-lepton cycle angle is the h-unit license itself",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": true,
+     "R2_source_types_it_as_an_angle": false,
+     "R3_referent_present_on_the_home_surface": true,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C897-Q",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals Q = 2/3 as an IDENTITY in delta (FIREWALL-QUARANTINED PACKAGE) (cycle 897), read in radians",
+    "object": "Q = 2/3 as an IDENTITY in delta (FIREWALL-QUARANTINED PACKAGE)",
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 8 SCOPE GAP -- granting the angle typing for free, the 2/3 still exists only at the C3 / n = 3 scope, and cycles 886 (0/16 routes grounded-and-isolating), 888 (freeness+maximality selects S3 alone) and 890 (ladder endpoint {C3, C4}) prove this campaign does not isolate that scope; cycle 904 reaches 115 distinct values over 442 scope-uniform families.",
+    "value": "2/3"
+   }
+  ]
+ },
+ "E_Q3_consolidated_license": {
+  "audit_rows": [
+   {
+    "carried_from": "cycle 924, unchanged",
+    "row": 1,
+    "text": "The stretch no-go's Verification section claims 'PASS>=120 FAIL=0'; its committed runner produces PASS=113 FAIL=0.  FAIL=0 either way.  RE-CONFIRMED independently this cycle (section B2)."
+   },
+   {
+    "carried_from": "cycle 924, unchanged",
+    "row": 2,
+    "text": "The Cycle-912 package's branch placement (blockQ9, sibling of blockQ10) -- recorded so future vendoring does not repeat the supervisor's error."
+   },
+   {
+    "carried_from": "NEW this cycle",
+    "row": 3,
+    "text": "FOUR campaign packages ship with NO SHIP RECEIPT anywhere in the campaign: cycles 872, 876, 882 and 883.  Their artifacts therefore cannot be digest-verified against a declared manifest; this cycle pinned them against their originating branch blob instead (blockG3 for 872, blockG8 for 876/882/883).  Cycle 883 additionally has receipt JSON files misplaced into logs/runner-cache/ as well as outputs/."
+   },
+   {
+    "carried_from": "NEW this cycle",
+    "row": 4,
+    "text": "Supervisor spec placement errors, verified false and corrected: Cycle 903 is on blockG26 (not blockG20 'or nearby'); the unit-grading package is Cycle 876, not 'Cycle 883-ish'.  Recorded so future vendoring does not repeat them."
+   },
+   {
+    "carried_from": "NEW this cycle",
+    "row": 5,
+    "text": "Cycle 904 reports AGAINST INTEREST that it contradicts Cycle 898's target-tuned prediction (2/27 IS reachable at word length 1 by a native scope-uniform relation).  The contradiction is between two landed campaign packages and is reported, not adjudicated."
+   },
+   {
+    "carried_from": "NEW this cycle",
+    "row": 6,
+    "text": "Cycle 882 emits an unresolved pin discrepancy: the on-branch Cycle-871 statement records the readout clause at free dimension 1 while the 871 report's obligation map says 2.  Cycle 924 later computes the free dimension as exactly 1 and decomposes the readout as 2 = 1 (bridge) + 1 (angle scale), which RECONCILES the discrepancy as a one-clause vs two-clause decomposition difference -- exactly as 882 conjectured.  Reported for the audit lane."
+   }
+  ],
+  "consolidated_license_statement": "THE R-ETA OBLIGATION'S FULL CURRENT PRICE, IN ONE PLACE.  What remains unbought is exactly ONE homogeneous dimension: the h-unit ANGLE SCALE -- the identification that reads the C3 fixed-locus density sum S_sum = 3 * L3(1,2) = 2/3 as an angle in radians on the registered charged-lepton cycle.  Its four routes now stand as follows.  ROUTE 2 (record-facing inhomogeneous readout theorem) is CLOSED by the July stretch no-go and walled again by Cycle 882: nothing homogeneous, comparative, intensive, orbit-multiplicative or algebraically closed leaves the target member standing alone (200 closed libraries, zero select), and LEMMA-882 is EQUIVALENT to the obligation itself.  ROUTE 3 (occurrence-lane event-rate) is PRICED SHUT by Cycle 924: referent gap, arity mismatch and terminality, each a theorem.  ROUTE 1 (the licensed angle-native theorem) is SWEPT EMPTY by this block over the enumerated artifacts: 18 candidates over 17 vendored packages, 99 files, zero survivors -- and the blocking obstruction is NEW.  Route 3 died of a referent gap; route 1 does not, because these surfaces DO speak the charged-lepton/fixed-locus language and DO derive objects worth exactly 2/3.  Route 1 dies of a TYPE GAP: the entire new surface contains ZERO occurrences of the word 'radian', every derived object is a density, determinant sum, weight, count or dimension, and no artifact supplies a sentence converting any of them into an angle.  That missing sentence IS the h-unit license.  It is also, independently, what the only approved dimensionful primitive explicitly refuses to sell: its own exclusion clause reads -- byte-quoted from the pinned Cycle-903 receipt -- \"This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.\" -- naming a mixing angle and a phase among the things it does not supply.  ROUTE 4 (approve a narrow readout primitive) is governance, not derivation, and is out of scope here; note only that route 4 would now have to introduce a NEW primitive, because the existing scale-reference primitive disclaims exactly this content.  SECOND OBSTRUCTION, held in reserve: even if the type conversion were granted for free, the 2/3 exists only at the C3 / n = 3 scope, and this campaign's own theorems prove that scope is unselected -- Cycle 886 (0 of 16 routes grounded-and-isolating for C3), Cycle 888 (freeness + maximality selects S3 alone over the full 30-subgroup lattice), Cycle 890 (ladder endpoint {C3, C4}), Cycle 904 (442 scope-uniform families, 115 distinct values).  WHAT THE CAMPAIGN DID BUY on the density side, for contrast, is real: Cycle 883 derived the Record-carried weight pair (1, 2) from Lattice + Record; Cycle 899 dissolved its five-fold ambiguity to the single scope-invariant form (n-1)/n^2; Cycle 901 re-bound the 2/9 anchor to Record content-space at zero numerical cost across 44 consumers; Cycle 904 reached 2/27 natively at word length 1.  Every one of those advances is on h-class -- the density half.  The angle half did not move by one step.  HONEST SCOPE: this sweep covers the enumerated artifacts named in this receipt -- 17 vendored packages plus 2 firewall-quarantined packages pinned by digest, on the toe-time-expansion-20260802 campaign branches, at the branch pins recorded in section A.  It is not a statement about all future mathematics, nor about campaign artifacts not enumerated here, nor about surfaces built after these pins.  A future artifact that types an object in radians on a charged-lepton cycle would move candidates out of bin 7 and would have to be swept afresh.",
+  "primitive_exclusion_clause_byte_quoted": "This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.",
+  "route_status": {
+   "route_1_licensed_angle_native_theorem": "SWEPT EMPTY over the enumerated artifacts (this block)",
+   "route_2_record_facing_inhomogeneous_readout": "CLOSED (July stretch no-go; walled again by Cycle 882)",
+   "route_3_occurrence_lane_event_rate": "PRICED SHUT (Cycle 924)",
+   "route_4_approved_primitive": "GOVERNANCE, out of scope; would now require a NEW primitive since the existing one disclaims the content"
+  }
+ },
+ "F_falsifiers": {
+  "fired": 10,
+  "teeth": [
+   {
+    "detail": "planted a synthetic object equal to 2/3 on a referent-carrying surface; it is still rejected, and rejected by the TYPE GAP gate specifically -> BIN 7 TYPE GAP (NEW this block, and the decisive one here)",
+    "fired": true,
+    "tooth": "T1_NUMEROLOGY_PLANT"
+   },
+   {
+    "detail": "appending one byte to docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md gives digest 477d0779154468a7 != pinned 3cffb593cf379f68; section A2 compares exactly this",
+    "fired": true,
+    "tooth": "T2_TAMPERED_PIN"
+   },
+   {
+    "detail": "a synthetic candidate that IS radian-typed, referent-carrying, exactly 2/3, scope-forced, three-fold and derivably identified is ACCEPTED by the same code path -> SURVIVOR.  The sweep's emptiness is a finding, not a constant function",
+    "fired": true,
+    "tooth": "T3_SURVIVOR_PATH_LIGHTS_UP"
+   },
+   {
+    "detail": "the same scanner finds 'radian' in a positive-control string, so the zero over 99 vendored files is a fact about the corpus, not a broken scan",
+    "fired": true,
+    "tooth": "T4_RADIAN_SCAN_IS_NOT_BLIND"
+   },
+   {
+    "detail": "the B1 gate compares the literal string 'TOTAL: PASS=128 FAIL=0'; a perturbed count does not match",
+    "fired": true,
+    "tooth": "T5_FAKE_GATE_RESULT"
+   },
+   {
+    "detail": "bin 8 rests on three pinned verdicts; had ANY of them isolated C3, bin 8 would not apply and the scope selection would be forced.  All three are read from the pinned ship receipts, not asserted",
+    "fired": true,
+    "tooth": "T6_SCOPE_GATE_IS_FALSIFIABLE"
+   },
+   {
+    "detail": "924's most natural occurrence candidate misses by 2/3 - 21/41 = 19/123 exactly; reproduced here in rational arithmetic with no floats",
+    "fired": true,
+    "tooth": "T7_EXACT_MISS_ARITHMETIC"
+   },
+   {
+    "detail": "independent regex pass for a bare 2/3 over every package NOT already in the candidate pool found 0 file(s): [].  Any cycle listed here is a gap in the enumeration and is reported as such",
+    "fired": true,
+    "stray_hits": [],
+    "tooth": "T8_ENUMERATION_COMPLETENESS"
+   },
+   {
+    "detail": "the corpus scan detects that cycles [872, 876, 882, 883] have no ship receipt anywhere in the campaign; they are pinned against their originating branch blob and the gap is emitted as audit row 3 rather than silently treated as verified",
+    "fired": true,
+    "tooth": "T9_MISSING_SHIP_RECEIPTS_DETECTED"
+   },
+   {
+    "detail": "9 of 17 packages carry a charged-lepton/fixed-locus referent -- the gate separates them, so its non-firing on the AC-lane packages is a property of those packages, not a disabled gate",
+    "fired": true,
+    "tooth": "T10_REFERENT_GATE_STILL_DISCRIMINATES"
+   }
+  ],
+  "total": 10
+ },
+ "VERDICT": "PASS",
+ "adopts": "nothing",
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockAC2-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "claim_type": "bounded_theorem",
+ "cycle": 928,
+ "runtime_seconds": 2.57,
+ "science_digest": "23e65049900519d92eb7eedd39ccdb7c4bf97590f031e95aadf348c5b665feed",
+ "target": "R-eta route 1 (the licensed angle-native theorem) -- swept over every angle-valued and scale-carrying object on the surfaces built since the 2026-07-04 angle-native no-go",
+ "totals": {
+  "FAIL": 0,
+  "PASS": 46
+ }
+}

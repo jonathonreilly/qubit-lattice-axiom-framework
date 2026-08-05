@@ -1,0 +1,325 @@
+{
+ "ADVERSARIAL_REREADINGS_OF_THE_ANTECEDENT": [
+  {
+   "attack": "read 'No possibility is privileged' as a NATURALITY sentence in disguise -- i.e. as forbidding any weight that distinguishes the two items",
+   "primary_too_quick": false,
+   "test": "if that reading were right, the clause would already be VIOLATED by the substrate itself, independently of any weight: Theorem A1 (re-verified above by two independent invariants) shows the compiled law distinguishes the two menu items causally.  A reading on which the supplied structure violates its own axiom is not available.",
+   "verdict": "the primary's reading survives; the clause's own qualifier 'distinguished by the supplied algebraic structure alone' is satisfied, not breached"
+  },
+  {
+   "attack": "concede that no VALUE is axiom-supplied but argue an INVARIANCE could still be",
+   "primary_too_quick": false,
+   "quote_present": true,
+   "test": "the memo's own scope line is about the formation rule as a whole -- 'which admissible possibility a new record locks, at which site, with what weight, or at what rate' -- and an invariance is a predicate OF that rule.  Independently, the Gleason-bridge R4 already names a full-symmetry premise and records it as not derived from the minimal axioms; that is the same shape of sentence.",
+   "verdict": "the primary's negative holds, and is corroborated by a landed row rather than resting on this block's reading"
+  },
+  {
+   "attack": "check the primary did not overstate the imported lemma in its own favour",
+   "primary_too_quick": false,
+   "test": "the landed corollary says invariance forces uniformity on a TRANSITIVE (single-orbit) menu and relates nothing across orbits.  The primary uses exactly that, and uses it AGAINST itself -- it is what makes the block's own conditional theorem vacuous rather than what makes its negative easy.",
+   "verdict": "not overstated"
+  },
+  {
+   "attack": "argue naturality could REPLACE A3 rather than presuppose it",
+   "primary_too_quick": false,
+   "test": "an invariance sentence is satisfied vacuously when there is no weight at all, so it has no existential import.  The dominant prior art's own accounting agrees, in a setting where the symmetry DOES have purchase.",
+   "verdict": "naturality cannot replace A3; the primary's logical independence claim is sound"
+  }
+ ],
+ "CHECKER_SIDE_BUGS_FOUND_AND_FIXED_IN_THIS_CHECKER": [
+  {
+   "bug": "the semantic automorphism test was a tautology",
+   "detail": "the first version ran the RELABELLED program on the RELABELLED initial state and un-permuted the result. For ANY permutation pi, (pi.P.pi^-1)(pi(s)) = pi(P(s)), so the test passed everything and tested nothing -- including the planted non-automorphism.",
+   "effect_on_the_primary": "none; the bug was entirely in this checker and the corrected test agrees with the primary",
+   "fix": "test the real condition -- that pi COMMUTES with the dynamics: run the ORIGINAL program on the permuted state and compare against permuting the original run's result",
+   "how_it_was_caught": "the sensitivity tooth, which requires a planted bad relabelling to FAIL the test, did not fire"
+  }
+ ],
+ "CLOSURE_SEARCH_OUTCOME": {
+  "contradiction": null,
+  "converged_to_a_map_of_size": 2,
+  "first_gate_the_converged_map_breaks": {
+   "gate": [
+    2,
+    40,
+    1,
+    124
+   ],
+   "multiplicity_image": 1,
+   "multiplicity_original": 0,
+   "station": 0
+  },
+  "reading": "the closure was seeded ONLY on LEFT->RIGHT and allowed to grow without bound.  It is a genuine attempt to construct the automorphism the primary says does not exist; it fails, and the gate it fails on is reported so the failure can be inspected rather than taken on trust.",
+  "seeded_on": {
+   "LEFT": 1,
+   "RIGHT": 6
+  },
+  "terminated_with_a_contradiction": false,
+  "the_converged_map_is_an_automorphism": false
+ },
+ "FINDINGS": [
+  {
+   "adopted_by_the_primary": true,
+   "bears_on": "the primary's POSITIVE CONTROL, whose role is to show the LOOSEST candidate notion of automorphism is non-trivially inhabited so that the negative at that level is not an artefact of an over-strict definition.  That role is untouched.  Theorem A1 is established at the loose end and therefore holds A FORTIORI at every stricter end, so this finding SHRINKS the automorphism group further and strengthens the block's negative.",
+   "changed_the_science_digest": false,
+   "finding": "MULTISET PRESERVATION IS NOT SUFFICIENT FOR A SYMMETRY OF THE LAW.  The involution built from the refinement's own colour classes preserves every station's gate multiset but does not commute with the dynamics, because gates inside a station do not commute.",
+   "moved_wires": 131,
+   "raised_by": "this checker",
+   "refutes_a_load_bearing_claim": false
+  }
+ ],
+ "INDEPENDENCE": {
+  "automorphism_verification": "own gate-image comparison PLUS a semantic COMMUTATION test that executes the program on permuted and unpermuted columns and diffs the full state",
+  "non_existence": "four routes the primary did not use (exhaustive transposition sweep, closure search, reachability profile, dynamical distinguishability)",
+  "quotes": "re-read from the pinned files and from the git object store directly, not from the primary's receipt",
+  "refinement": "own algorithm -- explicit incidence graph plus iterated signature HASHING, versus the primary's dict-keyed canonical relabelling",
+  "weight_algebra": "determining-grid exact rational evaluation, no symbolic polynomials"
+ },
+ "REACHABILITY_PROFILES": {
+  "LEFT": [
+   2,
+   5,
+   22,
+   43
+  ],
+  "RIGHT": [
+   2,
+   7,
+   23,
+   48
+  ]
+ },
+ "REFUTATIONS": [],
+ "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+ "all_checks_pass": true,
+ "audit": "unset",
+ "authority": "none",
+ "block": "cycle940_symmetric_weights_independent_check",
+ "budget_sec": 900,
+ "campaign": "toe-time-expansion-20260802",
+ "checks": [
+  {
+   "check": "primary_receipt_self_sha256_matches_the_primary_file",
+   "detail": "the receipt names the bytes that produced it",
+   "pass": true
+  },
+  {
+   "check": "primary_reports_all_certificates_pass",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "endpoint_wires_agree_with_the_primary",
+   "detail": "LEFT=1 RIGHT=6 SOURCE=40",
+   "pass": true
+  },
+  {
+   "check": "compiled_gate_total_independently_recomputed",
+   "detail": "34166",
+   "pass": true
+  },
+  {
+   "check": "checker_refinement_reproduces_the_class_COUNT",
+   "detail": "checker 32 vs primary 32 (independent algorithm: signature hashing, 64 rounds)",
+   "pass": true
+  },
+  {
+   "check": "checker_rebuilds_the_positive_control_with_the_same_support",
+   "detail": "64 wires vs primary 64",
+   "pass": true
+  },
+  {
+   "check": "positive_control_ordered_reading_agrees",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "positive_control_multiset_reading_agrees",
+   "detail": "",
+   "pass": true
+  },
+  {
+   "check": "primary_correctly_reports_the_positive_control_does_NOT_commute",
+   "detail": "checker finds pi.P disagrees with P.pi on 131 wires; the primary reports commutes=False and 131 failing wires",
+   "pass": true
+  },
+  {
+   "check": "checker_and_primary_agree_on_the_failing_wire_COUNT",
+   "detail": "checker 131 vs primary 131",
+   "pass": true
+  },
+  {
+   "check": "positive_control_leaves_the_endpoint_wires_untouched",
+   "detail": "hunting a moved quantity among the named-fixed observables: none",
+   "pass": true
+  },
+  {
+   "check": "exhaustive_single_transposition_sweep_finds_no_endpoint_swap",
+   "detail": "swept 1088 transpositions moving an endpoint wire; automorphisms found: []",
+   "pass": true
+  },
+  {
+   "check": "closure_search_seeded_on_LEFT_to_RIGHT_finds_no_automorphism",
+   "detail": "closure converged to a map of size 2 which is NOT an automorphism; first broken gate {\"gate\":[2,40,1,124],\"multiplicity_image\":1,\"multiplicity_original\":0,\"station\":0}",
+   "pass": true
+  },
+  {
+   "check": "reachability_profiles_of_LEFT_and_RIGHT_differ",
+   "detail": "LEFT [2, 5, 22, 43] vs RIGHT [2, 7, 23, 48] -- a refinement-FREE invariant that independently forbids any automorphism mapping one to the other",
+   "pass": true
+  },
+  {
+   "check": "the_two_menu_items_are_DYNAMICALLY_distinguishable",
+   "detail": "flipping the menu item at one lane changes 5 wires after 88 chunks -- the items are not interchangeable even semantically, corroborating the structural negative",
+   "pass": true
+  },
+  {
+   "check": "branch_1_words_are_all_nonzero_and_branch_0_is_zero",
+   "detail": "branch identity is the choice word; branch 0 is the empty word 0",
+   "pass": true
+  },
+  {
+   "check": "every_sampled_bit_position_permutation_fixes_the_zero_word",
+   "detail": "64 random permutations of the n+1 lane positions",
+   "pass": true
+  },
+  {
+   "check": "the_stranded_envariance_note_retrieves_and_its_blob_verifies",
+   "detail": "9585 bytes out of the object store",
+   "pass": true
+  },
+  {
+   "check": "the_no_privilege_clause_is_quoted_correctly_and_in_full",
+   "detail": "the primary quoted only the first sentence-and-a-half; the FULL clause including 'algebraic structure alone' is present and is what carries its reading",
+   "pass": true
+  },
+  {
+   "check": "open_gates_line_quoted_correctly",
+   "detail": "quoted across the file's own line wrap, so the needle cannot pass by matching a reflowed paraphrase",
+   "pass": true
+  },
+  {
+   "check": "the_menu_uniformity_corollary_says_what_the_primary_says_it_says",
+   "detail": "the imported general lemma is byte-present in the landed note",
+   "pass": true
+  },
+  {
+   "check": "envariance_note_supports_the_no_existential_import_reading",
+   "detail": "A4 (symmetry => equality) is DERIVED but only once A3 grants that a state-functional weight exists -- exactly the primary's claim that an invariance constrains a measure and cannot supply one",
+   "pass": true
+  },
+  {
+   "check": "no_quoted_ground_actually_grounds_naturality",
+   "detail": "four adversarial re-readings, none of which rescues the antecedent",
+   "pass": true
+  },
+  {
+   "check": "weight_sum_identity_reverified_by_grid_evaluation",
+   "detail": "200 random exact-rational assignments over 6 site symbols; the leaf weights sum to exactly 1 every time -- no polynomial algebra used",
+   "pass": true
+  },
+  {
+   "check": "freedom_count_is_six_sites_independently",
+   "detail": "6 distinct sites among 8 declared atoms",
+   "pass": true
+  },
+  {
+   "check": "invariance_adds_no_equation_because_every_orbit_is_a_singleton",
+   "detail": "the orbit structure is what makes the conditional theorem vacuous, and the orbit structure follows from the non-existence just re-verified by four independent routes",
+   "pass": true
+  },
+  {
+   "check": "only_three_of_six_sites_are_genuine_menu_pairs",
+   "detail": "recomputed from the primary's own per-site table and cross-read against the pinned 936 witness list",
+   "pass": true
+  },
+  {
+   "check": "the_third_negative_matches_the_pinned_936_arena",
+   "detail": "936 itself records 3 same-lock/different-item pairs, so the other three declared sites were never menu pairs -- the primary's unanticipated finding is visible in the pinned receipt and had simply not been read that way",
+   "pass": true
+  },
+  {
+   "check": "no_unfenced_weight_value_in_the_primary_receipt",
+   "detail": "scanned the whole receipt independently; leaks: []",
+   "pass": true
+  },
+  {
+   "check": "no_stray_float_outside_the_runtime_certificate",
+   "detail": "[]",
+   "pass": true
+  },
+  {
+   "check": "primary_has_zero_float_literals",
+   "detail": "0 float literals in the primary's source",
+   "pass": true
+  }
+ ],
+ "checks_passed": 31,
+ "checks_total": 31,
+ "claim_type": "independent_check",
+ "cycles": [
+  940
+ ],
+ "elapsed_sec": 20.914,
+ "headline": "PRIMARY SURVIVES.  The menu-swap non-existence is re-derived by FOUR independent routes the primary did not use: an exhaustive single-transposition sweep over every wire, a closure search seeded on LEFT->RIGHT and allowed to grow arbitrarily, a refinement-FREE reachability-profile invariant, and a purely SEMANTIC test that ignores the gate list and shows the two menu items are dynamically distinguishable.  The claimed positive control was attacked by executing the relabelled program against the original on real columns and diffing the FULL state.  The vacuity was recomputed by determining-grid rational evaluation with no polynomial algebra.  The antecedent analysis survived four adversarial re-readings.  Zero refutations.",
+ "self_sha256": "3b2ceb26fc0e20aa3ce0f7d28bddf4d686ce65f76b58ed85762d78adcd66ea42",
+ "teeth": [
+  {
+   "detail": "caught ['/Q_LAW/the_weight_at_site_450']; the fenced twin was correctly ignored",
+   "fired": true,
+   "tooth": "firewall_catches_a_planted_unfenced_value"
+  },
+  {
+   "detail": "a planted non-automorphism (LEFT<->SOURCE_POINTER) makes pi.P disagree with P.pi on 138 wires, so the positive control's clean pass is a real result and not a test that passes everything.  THIS TOOTH ALREADY EARNED ITS KEEP: it caught a tautological first version of the commutation test in this very checker, which was rewritten and the bug disclosed",
+   "fired": true,
+   "tooth": "the_commutation_test_is_SENSITIVE_and_catches_a_bad_relabelling"
+  },
+  {
+   "detail": "a relabelling exchanging LEFT with the source pointer must fail the gate-image test",
+   "fired": true,
+   "tooth": "planted_false_automorphism_is_rejected"
+  },
+  {
+   "detail": "the identity must be accepted, or the acceptance test is broken",
+   "fired": true,
+   "tooth": "planted_TRUE_automorphism_is_accepted"
+  },
+  {
+   "detail": "32 non-singleton classes under the checker's own algorithm; a discrete refinement would separate LEFT from RIGHT for free",
+   "fired": true,
+   "tooth": "checker_refinement_is_not_vacuously_discrete"
+  },
+  {
+   "detail": "one appended byte breaks the receipt's self-hash",
+   "fired": true,
+   "tooth": "tampered_primary_receipt_would_be_caught"
+  },
+  {
+   "detail": "if flipping the menu item changed nothing, the whole arena would be degenerate and every verdict vacuous",
+   "fired": true,
+   "tooth": "the_menu_flip_actually_moves_the_state"
+  },
+  {
+   "detail": "1088 transpositions tested against 34166 gates",
+   "fired": true,
+   "tooth": "single_transposition_sweep_actually_ran"
+  },
+  {
+   "detail": "closure outcome recorded: {\"contradiction\":null,\"converged_to_a_map_of_size\":2,\"first_gate_the_converged_map_breaks\":{\"gate\":[2,40,1,124],\"multiplicity_image\":1,\"multiplicity_original\":0,\"station\":0},\"reading\":\"the closure was seeded ONLY on LEFT->RIGHT and allowed ",
+   "fired": true,
+   "tooth": "closure_search_terminates_with_a_reason"
+  },
+  {
+   "detail": "exact rational arithmetic is live; a float pipeline would not satisfy this identity for all grids",
+   "fired": true,
+   "tooth": "grid_evaluation_would_detect_a_broken_sum"
+  },
+  {
+   "detail": "every disagreement found is reported as a finding or a refutation below, never absorbed",
+   "fired": true,
+   "tooth": "primary_and_checker_disagree_nowhere_silently"
+  }
+ ],
+ "teeth_fired": 11,
+ "teeth_total": 11
+}

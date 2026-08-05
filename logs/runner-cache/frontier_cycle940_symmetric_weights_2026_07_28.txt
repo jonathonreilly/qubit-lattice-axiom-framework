@@ -12,7 +12,7 @@ PASS G_FALSIFIERS
 PASS H_DOUBLE_RUN
 PASS I_RUNTIME
 restriction gates: 42/42
-teeth fired: 12/12
+teeth fired: 13/13
 LEFT/RIGHT separated under every label: True
 sites declared: [254, 450, 475, 540, 558, 715]
 genuine two-ITEM menu sites: [450, 475, 715]
@@ -22,6 +22,6 @@ freedom count before/after invariance: 6/6
 antecedent derivable: False
 Q3 shape: (c)
 science digest: 6e82c6e898302f99c155bcba0288586c86798513004cf40816428538d9dbc0ac
-elapsed: 182.652s / 900s
+elapsed: 179.928s / 900s
 ALL CERTIFICATES PASS: True
 ===== end runner cache =====

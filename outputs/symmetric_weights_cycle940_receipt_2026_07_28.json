@@ -504,7 +504,7 @@
   },
   "G_FALSIFIERS": {
    "certificate": "G_FALSIFIERS",
-   "fired": 12,
+   "fired": 13,
    "pass": true,
    "teeth": [
     {
@@ -563,12 +563,17 @@
      "tooth": "the_routine_finds_a_genuine_nontrivial_automorphism"
     },
     {
+     "detail": "the multiset-level automorphism fails to commute with the law on 131 wires, so multiset preservation is demonstrably not sufficient for a symmetry of the dynamics.  This is the checker's mid-block finding, adopted: it is recorded as a fact about the reading, and the block's negative is proved at the loose end so it survives a fortiori",
+     "fired": true,
+     "tooth": "the_multiset_reading_is_shown_to_be_TOO_WEAK"
+    },
+    {
      "detail": "the one genuine automorphism found fixes LEFT and RIGHT, so it cannot be miscounted as a menu swap",
      "fired": true,
      "tooth": "the_positive_control_does_not_move_the_menu"
     }
    ],
-   "tooth_count": 12
+   "tooth_count": 13
   },
   "H_DOUBLE_RUN": {
    "certificate": "H_DOUBLE_RUN",
@@ -580,15 +585,15 @@
   "I_RUNTIME": {
    "budget_sec": 900,
    "certificate": "I_RUNTIME",
-   "elapsed_sec": 182.652,
+   "elapsed_sec": 179.928,
    "pass": true,
    "per_run_seconds": {
-    "CONTROL/fwd": 35.916,
-    "M_A/fwd": 36.225,
-    "Q1/refinement_and_candidates": 1.054,
-    "TREE/double-run": 47.6,
-    "TREE/fwd": 47.818,
-    "setup": 13.004
+    "CONTROL/fwd": 35.26,
+    "M_A/fwd": 35.611,
+    "Q1/refinement_and_candidates": 1.243,
+    "TREE/double-run": 47.125,
+    "TREE/fwd": 47.02,
+    "setup": 12.65
    }
   },
   "Q0_PRIOR_ART_SWEEP": {
@@ -1450,9 +1455,13 @@
     ],
     "statement": "no relabelling automorphism -- of wires, of lanes, of stations, or any composite -- can swap the two branches at ANY site.  Branch identity at an occasion is the CHOICE WORD delivered there, drawn from {0, S_k}; a relabelling acts on lane words by a permutation of bit positions; every such map fixes the all-zero word.  So branch 0 is a FIXED POINT of the entire relabelling group and cannot be exchanged with branch 1."
    },
+   "THE_NEGATIVE_IS_PROVED_AT_THE_LOOSEST_END": "candidate notions of 'automorphism' form a spectrum: loosest is per-station gate-MULTISET preservation with lane- and station-invariant labels; strictest is a bit-identical ordered compile that also fixes the tick-0 state and commutes with the law.  Theorem A1's separation is established at the LOOSEST end, so it holds a fortiori at every stricter one.  The loose end is shown to be non-trivially inhabited (THE_POSITIVE_CONTROL), so the negative there is a real result; and the loose end is also shown to be TOO WEAK to be the right definition, since its inhabitant does not commute with the law.  Both facts point the same way.",
    "THE_POSITIVE_CONTROL": {
-    "WHAT_IT_ESTABLISHES": "the routine is not vacuously negative: a genuinely non-trivial relabelling of this substrate IS certified as a program automorphism under the per-station multiset reading (and is reported as NOT one under the strict ordered reading, because gate order inside a station is part of a bit-identical compile).  It fixes both endpoint wires -- Theorem A1 corroborated from the opposite direction: the symmetries this substrate HAS are symmetries of the record cells, and none of them touches the menu.",
+    "AND_WHAT_IT_DOES_NOT_ESTABLISH": "this map is NOT a symmetry of the law.  It fails the strict ordered reading, it does not fix the tick-0 state, and -- the finding the independent checker contributed and this block adopts -- it does NOT COMMUTE WITH THE DYNAMICS on real columns.  Preserving a station's gate MULTISET is insufficient, because gates inside a station do not commute.  So the multiset reading is too weak to be the definition of a substrate automorphism, and is retained here only as the LOOSE END of the spectrum.",
+    "WHAT_IT_ESTABLISHES": "THE LOOSEST CANDIDATE NOTION OF AUTOMORPHISM IS NON-TRIVIALLY INHABITED, which is exactly what makes the negative at that level a real result rather than an artefact of an over-strict definition.  A genuinely non-trivial relabelling IS certified under the per-station multiset reading -- and it fixes both endpoint wires, so Theorem A1 is corroborated from the opposite direction: the symmetries this substrate has are symmetries of the record cells, and none of them touches the menu.",
+    "WHY_THIS_STRENGTHENS_RATHER_THAN_WEAKENS_THE_BLOCK": "Theorem A1 is proved at the LOOSEST end -- colour refinement separates LEFT from RIGHT under labels invariant under every lane and every station permutation, with gate order ignored.  A negative established for the loosest notion holds A FORTIORI for every stricter one.  Tightening the definition (ordered compile, tick-0 fixing, commutation with the law) can only shrink the group further, and the checker's finding shows it does: the strict automorphism group does not even contain this map.  Symmetry has less purchase here, not more.",
     "candidate": "REFINEMENT_CLASS_INVOLUTION",
+    "commutes_with_the_law_on_real_columns": false,
     "example_classes": [
      [
       41,
@@ -1494,7 +1503,8 @@
      78
     ],
     "transpositions": 32,
-    "wires_moved": 64
+    "wires_moved": 64,
+    "wires_where_it_fails_to_commute": 131
    },
    "THE_REPAIR_CHAIN_AND_WHERE_IT_TERMINATES": {
     "reading": "the menu swap is repaired step by step and the chain is followed to its irreducible obstruction, so the negative is not a first-order accident of the encoding.",
@@ -1923,5 +1933,5 @@
   "single_disclosed_import": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
  },
  "science_digest": "6e82c6e898302f99c155bcba0288586c86798513004cf40816428538d9dbc0ac",
- "self_sha256": "3cc5956c9bfdd44e0708e08a42feec08cd20e9d72dc2acc19f5673ed338dae0e"
+ "self_sha256": "7c7400984e573dc446330f20423cce5045138682781716ed13ba89bfe877e124"
 }

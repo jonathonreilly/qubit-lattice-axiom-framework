@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: frontier_cycle940_symmetric_weights_independent_check_2026_07_28.py
+receipt: outputs/symmetric_weights_independent_check_cycle940_receipt_2026_07_28.json
+VERDICT: PRIMARY_SURVIVES_THIS_CHECK
+checks: 31/31
+teeth:  11/11
+refutations: 0
+findings: 1
+  FINDING MULTISET PRESERVATION IS NOT SUFFICIENT FOR A SYMMETRY OF THE LAW.  The involution built from the refinement's own colou
+LEFT reachability [2, 5, 22, 43] vs RIGHT [2, 7, 23, 48]
+single-transposition endpoint swaps found: 0
+closure search: no automorphism
+elapsed: 20.914s / 900s
+ALL CHECKS PASS: True
+===== end runner cache =====

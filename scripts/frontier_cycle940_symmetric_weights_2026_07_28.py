@@ -1107,6 +1107,30 @@ def main() -> int:
         return (not moved), moved[:8]
 
     refine_t0_ok, refine_t0_moved = fixes_tick0(refine_pi)
+
+    # ADOPTED FROM THE INDEPENDENT CHECKER (mid-block finding, disclosed).
+    # Preserving the gate MULTISET is not sufficient for a symmetry of the
+    # dynamics, because gates inside a station do not commute.  The real
+    # semantic condition is that the relabelling COMMUTES with the law.  It is
+    # tested here on real columns.
+    def commutes_with_the_law(pi, nsteps):
+        fns = M.compile_schedules(M.build_schedules(c863, program, sim_fwd,
+                                                    0, ()))
+        def run(cols):
+            c = list(cols)
+            for t in range(nsteps):
+                fns[t % len(fns)](c)
+            return c
+        permuted = list(proto)
+        for x, y in pi.items():
+            permuted[y] = proto[x]
+        got, want = run(permuted), run(proto)
+        expect = list(want)
+        for x, y in pi.items():
+            expect[y] = want[x]
+        return [w for w in range(len(got)) if got[w] != expect[w]]
+
+    refine_commute_moved = commutes_with_the_law(refine_pi, stations * 3)
     positive_control = {
         "candidate": "REFINEMENT_CLASS_INVOLUTION",
         "transpositions": len(refine_classes),
@@ -1118,19 +1142,39 @@ def main() -> int:
             candidates[-2]["verdict"]["per_station_multiset_preserved"],
         "fixes_the_tick0_state": refine_t0_ok,
         "tick0_wires_it_moves": refine_t0_moved,
+        "commutes_with_the_law_on_real_columns": not refine_commute_moved,
+        "wires_where_it_fails_to_commute": len(refine_commute_moved),
         "fixes_LEFT_and_RIGHT": (refine_pi.get(left_w, left_w) == left_w
                                  and refine_pi.get(right_w, right_w)
                                  == right_w),
         "WHAT_IT_ESTABLISHES":
-            "the routine is not vacuously negative: a genuinely non-trivial "
-            "relabelling of this substrate IS certified as a program "
-            "automorphism under the per-station multiset reading (and is "
-            "reported as NOT one under the strict ordered reading, because "
-            "gate order inside a station is part of a bit-identical compile). "
-            " It fixes both endpoint wires -- Theorem A1 corroborated from the "
-            "opposite direction: the symmetries this substrate HAS are "
-            "symmetries of the record cells, and none of them touches the "
-            "menu.",
+            "THE LOOSEST CANDIDATE NOTION OF AUTOMORPHISM IS NON-TRIVIALLY "
+            "INHABITED, which is exactly what makes the negative at that "
+            "level a real result rather than an artefact of an over-strict "
+            "definition.  A genuinely non-trivial relabelling IS certified "
+            "under the per-station multiset reading -- and it fixes both "
+            "endpoint wires, so Theorem A1 is corroborated from the opposite "
+            "direction: the symmetries this substrate has are symmetries of "
+            "the record cells, and none of them touches the menu.",
+        "AND_WHAT_IT_DOES_NOT_ESTABLISH":
+            "this map is NOT a symmetry of the law.  It fails the strict "
+            "ordered reading, it does not fix the tick-0 state, and -- the "
+            "finding the independent checker contributed and this block "
+            "adopts -- it does NOT COMMUTE WITH THE DYNAMICS on real columns. "
+            " Preserving a station's gate MULTISET is insufficient, because "
+            "gates inside a station do not commute.  So the multiset reading "
+            "is too weak to be the definition of a substrate automorphism, "
+            "and is retained here only as the LOOSE END of the spectrum.",
+        "WHY_THIS_STRENGTHENS_RATHER_THAN_WEAKENS_THE_BLOCK":
+            "Theorem A1 is proved at the LOOSEST end -- colour refinement "
+            "separates LEFT from RIGHT under labels invariant under every "
+            "lane and every station permutation, with gate order ignored.  A "
+            "negative established for the loosest notion holds A FORTIORI for "
+            "every stricter one.  Tightening the definition (ordered "
+            "compile, tick-0 fixing, commutation with the law) can only "
+            "shrink the group further, and the checker's finding shows it "
+            "does: the strict automorphism group does not even contain this "
+            "map.  Symmetry has less purchase here, not more.",
     }
     timings["Q1/refinement_and_candidates"] = round(monotonic() - t0, 3)
 
@@ -1211,6 +1255,18 @@ def main() -> int:
             "the per-station gate multiset, with neither privileged -- and "
             "(b) the tick-0 state is invariant.  Such a map carries "
             "trajectories to trajectories and therefore acts on the tree.",
+        "THE_NEGATIVE_IS_PROVED_AT_THE_LOOSEST_END":
+            "candidate notions of 'automorphism' form a spectrum: loosest is "
+            "per-station gate-MULTISET preservation with lane- and "
+            "station-invariant labels; strictest is a bit-identical ordered "
+            "compile that also fixes the tick-0 state and commutes with the "
+            "law.  Theorem A1's separation is established at the LOOSEST end, "
+            "so it holds a fortiori at every stricter one.  The loose end is "
+            "shown to be non-trivially inhabited (THE_POSITIVE_CONTROL), so "
+            "the negative there is a real result; and the loose end is also "
+            "shown to be TOO WEAK to be the right definition, since its "
+            "inhabitant does not commute with the law.  Both facts point the "
+            "same way.",
         "METHOD_IS_A_THEOREM_NOT_A_SEARCH":
             "the negative rests on 1-WL colour refinement, which is STABLE "
             "under every automorphism of the labelled structure.  Two wires "
@@ -1835,6 +1891,15 @@ def main() -> int:
           "certified a program automorphism under the multiset reading -- so "
           "the menu-swap negative is not a search that finds nothing.  It "
           "fixes both endpoint wires, corroborating Theorem A1")
+
+    tooth("the_multiset_reading_is_shown_to_be_TOO_WEAK",
+          len(refine_commute_moved) > 0,
+          f"the multiset-level automorphism fails to commute with the law on "
+          f"{len(refine_commute_moved)} wires, so multiset preservation is "
+          "demonstrably not sufficient for a symmetry of the dynamics.  This "
+          "is the checker's mid-block finding, adopted: it is recorded as a "
+          "fact about the reading, and the block's negative is proved at the "
+          "loose end so it survives a fortiori")
 
     tooth("the_positive_control_does_not_move_the_menu",
           positive_control["fixes_LEFT_and_RIGHT"],

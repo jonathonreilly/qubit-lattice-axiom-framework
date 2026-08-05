@@ -183,3 +183,18 @@ values remain downstream (constrained by the same-neighborhood law:
 164->54 and 6->3 on current arenas). Cycle 945 = the repair block
 (six SUPP-reliant results; ~23 verbatim-quote scripts; scope notes;
 the companion gate suite), stacked on #6011.
+
+### Adoption revision — 2026-08-05 (independent review; owner-approved)
+
+The reviewer FAILed the per-point likelihood form (on the continuous
+one-site domain M_2(C), an atomless law has all point masses zero — two
+different laws indistinguishable, so the sentence under-specified the
+object). Owner approved the fix: the governing sentence is now "For each
+site, the probability distribution over the possibilities is determined
+by, and varies with, the nearest-neighbor conditions." Availability =
+the distribution's SUPPORT (finite menus: exactly nonzero probability —
+"probability zero is unavailable" is the discrete case verbatim). PR
+#6011 amended in one revision (memo, reading notes, restatements,
+section-6 record); the 945 repair worker re-targeted to the final
+bytes. The owner also confirmed "likelihood distribution" -> "probability
+distribution" (standard term; normalization on its face).

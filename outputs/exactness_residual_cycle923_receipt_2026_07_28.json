@@ -1950,7 +1950,7 @@
   },
   "role": "primary",
   "runner": "scripts/frontier_cycle923_exactness_residual_2026_07_28.py",
-  "runtime_sec": 0.318,
+  "runtime_sec": 0.307,
   "schema": "cycle923-exactness-residual-v1",
   "scorecard": {
     "fail": 0,

@@ -3,7 +3,7 @@
   "campaign": "toe-time-expansion-20260802",
   "checks": [
     {
-      "detail": "sha256=a0ca7dfc976ffc11..",
+      "detail": "sha256=5bdeca39e99eeac2..",
       "name": "pin: outputs/exactness_residual_cycle923_receipt_2026_07_28.json",
       "ok": true,
       "section": "K0"
@@ -15,7 +15,7 @@
       "section": "K0"
     },
     {
-      "detail": "sha256=8d744fc272d8dab8..",
+      "detail": "sha256=da37104fb632c908..",
       "name": "pin: logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt",
       "ok": true,
       "section": "K0"
@@ -417,6 +417,12 @@
       "section": "K7-comparator"
     },
     {
+      "detail": "exact crossing at m_tau = 1776.96902708 MeV, i.e. 0.0390 MeV above the reduction runner's value",
+      "name": "the signed deviation r_PDG - 1/2 CHANGES SIGN inside the plausible tau-mass window, so there is a tau mass at which the charged-lepton lane sits EXACTLY on the distinguished cell",
+      "ok": true,
+      "section": "K7-comparator"
+    },
+    {
       "detail": "step counts across the scan = [16, 17, 18]",
       "name": "the tau-mass sensitivity changes NO Q2 verdict: the g-branch step count moves by at most 2 steps across the whole scan (the tables are logarithmic in eps)",
       "ok": true,
@@ -551,8 +557,8 @@
     },
     {
       "kind": "CAVEAT",
-      "text": "The headline '~3e-6' is not a stable number: it is strongly sensitive to the tau-mass convention. With m_tau = 1776.93 MeV (the value the reduction note's own runner uses) the deviation is 3.305e-06; with m_tau = 1776.86 MeV it is 9.233e-06, a factor of 2.79. The note's own published GATE (|r_PDG - 1/2| < 1e-5) is robust across all scanned conventions, but the hostile-guard's quoted '~3e-6' is a single-convention figure. Since the Q2 epsilon tables are logarithmic in eps, this moves the g-branch step count by at most 2 steps and changes no verdict -- but any downstream text that leans on the specific value 3e-6 should quote the convention with it.",
-      "witness": "1776.93 (reduction runner) -> 3.3049e-06; 1776.86 (PDG central, other tables) -> 9.2328e-06; 1776.99 -> 1.7760e-06; 1777.00 -> 2.6228e-06"
+      "text": "The headline '~3e-6' is not a stable number: it is strongly sensitive to the tau-mass convention, and the signed deviation CHANGES SIGN inside the plausible window. With m_tau = 1776.93 MeV (the value the reduction note's own runner uses) the deviation is 3.305e-06; with m_tau = 1776.86 MeV it is 9.233e-06 (a factor of 2.79); and at m_tau = 1776.96903 MeV it is EXACTLY ZERO. So across a ~0.15 MeV tau window the deviation sweeps the whole range from 0 to about 9e-6. The reduction note's published GATE (|r_PDG - 1/2| < 1e-5) is robust across every scanned convention, and because the Q2 epsilon tables are logarithmic in eps this moves the g-branch step count by at most 2 steps and changes NO verdict. But the hostile-guard's quoted '~3e-6' is a single-convention figure, and no downstream text should treat that specific value as the thing to be explained: the explanandum is the GATE, not the digit.",
+      "witness": "1776.93 (reduction runner) -> 3.3049e-06; 1776.86 (PDG central, other tables) -> 9.2328e-06; 1776.99 -> 1.7760e-06; 1777.00 -> 2.6228e-06; exact zero crossing at m_tau = 1776.96902708 MeV"
     }
   ],
   "independence_statement": "This checker imports nothing from the primary. All algebra is sympy-symbolic and all window arithmetic is mpmath at 60 decimal digits. The primary receipt is read only as a source of CLAIMS to be attacked.",
@@ -641,7 +647,7 @@
     "no_go_survives": true,
     "strictly_increasing": true
   },
-  "overall_verdict": "The primary's Q1 reconciliation and Q2 headline verdict SURVIVE independent symbolic re-derivation. No refutation of a primary claim was found. Three material additions are reported: (1) a THIRD verdict cell (NEUTRAL) from the balanced-alternation reading, which strengthens rather than weakens the primary's 'the arrow is the undischarged element'; (2) the Q1 statement is locally determinate but globally underdeterminate, so the r=1 row of the no-go must be sourced from the explicit map forms, not from the reconciliation sentence; (3) the '~3e-6' figure is tau-mass-convention dependent (3.30e-6 vs 8.02e-6), though the published <1e-5 gate and every Q2 verdict are robust to it.",
+  "overall_verdict": "The primary's Q1 reconciliation and Q2 headline verdict SURVIVE independent symbolic re-derivation. No refutation of a primary claim was found. Three material additions are reported: (1) a THIRD verdict cell (NEUTRAL) from the balanced-alternation reading, which strengthens rather than weakens the primary's 'the arrow is the undischarged element'; (2) the Q1 statement is locally determinate but globally underdeterminate, so the r=1 row of the no-go must be sourced from the explicit map forms, not from the reconciliation sentence; (3) the '~3e-6' figure is tau-mass-convention dependent, sweeping 0 to about 9e-6 across a ~0.15 MeV tau window (it is EXACTLY zero at m_tau = 1776.96903 MeV), though the published <1e-5 gate and every Q2 verdict are robust to it. The explanandum is the GATE, not the digit.",
   "provenance": {
     "pin_note": "the primary receipt embeds runtime_sec, so its raw file sha256 varies across re-runs by construction; the stable digest above is the durable cross-reference",
     "pins": {
@@ -683,15 +689,15 @@
       },
       "logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt": {
         "bytes": 37445,
-        "git_blob_sha1": "a83f88e606398d07112ace2cef4c9deace58e58b",
+        "git_blob_sha1": "be6d3ffe4cb1e4236bbea617c708ffc2730a528a",
         "present": true,
-        "sha256": "8d744fc272d8dab80214ffe6ce84b61ab990c3cad8a04a78a766d1516cf0be37"
+        "sha256": "da37104fb632c908e88daccd235d2cb5f7f8af4c4e033e9c2c8e035017fb5106"
       },
       "outputs/exactness_residual_cycle923_receipt_2026_07_28.json": {
         "bytes": 90627,
-        "git_blob_sha1": "d35cec66d786f3bf7fd63dc451be8fbcb5b8cf3d",
+        "git_blob_sha1": "08dd6e8e3ee65f817a50ad7e7c7ab8166cdd952e",
         "present": true,
-        "sha256": "a0ca7dfc976ffc11330ab093438d7c01f20435826798ea445d14b89e6517086d"
+        "sha256": "5bdeca39e99eeac21f8f0de2d28cc4a6b5e12bc6aa3d7d928dd13e7570411a29"
       },
       "scripts/frontier_cycle923_exactness_residual_2026_07_28.py": {
         "bytes": 76797,
@@ -700,17 +706,17 @@
         "sha256": "9c03a600e3963bfbc169cc8238744b91aae333d5f668a0e83f371c22ea206366"
       }
     },
-    "primary_receipt_sha256": "a0ca7dfc976ffc11330ab093438d7c01f20435826798ea445d14b89e6517086d",
+    "primary_receipt_sha256": "5bdeca39e99eeac21f8f0de2d28cc4a6b5e12bc6aa3d7d928dd13e7570411a29",
     "primary_receipt_stable_sha256_runtime_excluded": "1db681b63888f14cafc93a0845da9dbd98b0d181e155213af5de75ad1882dfcd",
-    "runner_sha256": "05b6fa02c36011b35d0697e7f2ed160b56749d4cbf8fa788bc35977f274d9b06"
+    "runner_sha256": "363079f5be4cbee9a4bac0b28c2e95f553ae929eae3530563df53e18922255ee"
   },
   "role": "independent_checker",
   "runner": "scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28.py",
-  "runtime_sec": 0.274,
+  "runtime_sec": 0.252,
   "schema": "cycle923-exactness-residual-independent-check-v1",
   "scorecard": {
     "fail": 0,
-    "pass": 82,
+    "pass": 83,
     "per_section": {
       "K-teeth": {
         "fail": 0,
@@ -746,7 +752,7 @@
       },
       "K7-comparator": {
         "fail": 0,
-        "pass": 4
+        "pass": 5
       },
       "K7-firewall": {
         "fail": 0,

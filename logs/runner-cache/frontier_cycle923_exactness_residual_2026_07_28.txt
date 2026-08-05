@@ -326,7 +326,7 @@ TEETH: 12/12 FIRED
 ============================================================================================
 receipt: outputs/exactness_residual_cycle923_receipt_2026_07_28.json
 determinism_digest_sha256: 55500ff5a0dd576844ec4bd42a991e2834a573b1328adbe0a8d844579f960346
-runtime_sec: 0.318
+runtime_sec: 0.307
 
 DECLARATION: no lane's r is derived, forced or preferred; the Q2 verdict is reported as arrow-conditional;
 nothing is recommended for adoption.

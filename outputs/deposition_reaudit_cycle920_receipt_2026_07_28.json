@@ -1,0 +1,2018 @@
+{
+ "Q1_reimplementation": {
+  "agreement_table": [
+   {
+    "abs_dev": 0,
+    "agrees": true,
+    "quantity": "N_once  0.6/a",
+    "reimplemented": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "source": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "abs_dev": 0,
+    "agrees": true,
+    "quantity": "N_rearm 0.6/a",
+    "reimplemented": [
+     27,
+     16,
+     4,
+     0,
+     0,
+     0
+    ],
+    "source": [
+     27,
+     16,
+     4,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "abs_dev": 1.0390136296223318e-05,
+    "agrees": true,
+    "quantity": "A       0.6/a",
+    "reimplemented": 19.148710390136298,
+    "source": 19.1487
+   },
+   {
+    "abs_dev": 3.5187194863395277e-07,
+    "agrees": true,
+    "quantity": "k_once  0.6/a",
+    "reimplemented": [
+     0.6266740556158459,
+     0.41778270374389725,
+     0.20889135187194863,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "source": [
+     0.626674,
+     0.417783,
+     0.208891,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "abs_dev": 0,
+    "agrees": true,
+    "quantity": "N_once  0.6/b",
+    "reimplemented": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "source": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "abs_dev": 0,
+    "agrees": true,
+    "quantity": "N_rearm 0.6/b",
+    "reimplemented": [
+     39,
+     21,
+     1,
+     0,
+     0,
+     0
+    ],
+    "source": [
+     39,
+     21,
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "abs_dev": 4.2588489819195274e-06,
+    "agrees": true,
+    "quantity": "A       0.6/b",
+    "reimplemented": 23.023704258848984,
+    "source": 23.0237
+   },
+   {
+    "abs_dev": 3.071272114407719e-08,
+    "agrees": true,
+    "quantity": "k_once  0.6/b",
+    "reimplemented": [
+     0.5212019692872789,
+     0.3474679795248526,
+     0.043433497440606574,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "source": [
+     0.521202,
+     0.347468,
+     0.0434335,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "abs_dev": 0,
+    "agrees": true,
+    "quantity": "N_once  1/a",
+    "reimplemented": [
+     10,
+     6,
+     4,
+     1,
+     0,
+     0
+    ],
+    "source": [
+     10,
+     6,
+     4,
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "abs_dev": 0,
+    "agrees": true,
+    "quantity": "N_rearm 1/a",
+    "reimplemented": [
+     22,
+     16,
+     8,
+     2,
+     0,
+     0
+    ],
+    "source": [
+     22,
+     16,
+     8,
+     2,
+     0,
+     0
+    ]
+   },
+   {
+    "abs_dev": 1.9300304106906196e-05,
+    "agrees": true,
+    "quantity": "A       1/a",
+    "reimplemented": 22.481819300304107,
+    "source": 22.4818
+   },
+   {
+    "abs_dev": 4.5608180415657174e-07,
+    "agrees": true,
+    "quantity": "k_once  1/a",
+    "reimplemented": [
+     0.4448038597954896,
+     0.2668823158772938,
+     0.17792154391819584,
+     0.04448038597954896,
+     0.0,
+     0.0
+    ],
+    "source": [
+     0.444804,
+     0.266882,
+     0.177922,
+     0.0444804,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "abs_dev": 0,
+    "agrees": true,
+    "quantity": "N_once  1/b",
+    "reimplemented": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "source": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "abs_dev": 0,
+    "agrees": true,
+    "quantity": "N_rearm 1/b",
+    "reimplemented": [
+     32,
+     24,
+     6,
+     0,
+     0,
+     0
+    ],
+    "source": [
+     32,
+     24,
+     6,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "abs_dev": 4.958608549543442e-05,
+    "agrees": true,
+    "quantity": "A       1/b",
+    "reimplemented": 31.344350413914505,
+    "source": 31.3444
+   },
+   {
+    "abs_dev": 4.0799081324482955e-07,
+    "agrees": true,
+    "quantity": "k_once  1/b",
+    "reimplemented": [
+     0.3828441119862198,
+     0.25522940799081323,
+     0.12761470399540661,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "source": [
+     0.382844,
+     0.255229,
+     0.127615,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "abs_dev": 0.0,
+    "agrees": true,
+    "quantity": "GS baseline range (6-digit, cache)",
+    "reimplemented": [
+     0.271746,
+     0.487698
+    ],
+    "source": [
+     0.271746,
+     0.487698
+    ]
+   },
+   {
+    "abs_dev": 1.3603562720732043e-12,
+    "agrees": true,
+    "quantity": "GS baseline range (full, c916)",
+    "reimplemented": [
+     0.2717457768013958,
+     0.4876980204118553
+    ],
+    "source": [
+     0.2717457768013888,
+     0.48769802041321564
+    ]
+   },
+   {
+    "abs_dev": 2.4868995751603507e-14,
+    "agrees": true,
+    "quantity": "E_ground g=0.6",
+    "reimplemented": -4.087304735182456,
+    "source": -4.087304735182431
+   },
+   {
+    "abs_dev": 8.881784197001252e-15,
+    "agrees": true,
+    "quantity": "E_ground g=1",
+    "reimplemented": -3.725174177974675,
+    "source": -3.725174177974684
+   },
+   {
+    "abs_dev": 3.50266559978607e-07,
+    "agrees": true,
+    "quantity": "median log-log exponent",
+    "reimplemented": -0.80730364973344,
+    "source": -0.807304
+   },
+   {
+    "abs_dev": 0.0,
+    "agrees": true,
+    "quantity": "declared floor (joint sparse, rearm, prep a)",
+    "reimplemented": 0.2,
+    "source": 0.2
+   }
+  ],
+  "cases": {
+   "0.6/a": {
+    "N_once": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "N_once_half": [
+     8,
+     6,
+     4,
+     0,
+     0,
+     0
+    ],
+    "N_once_lastq": [
+     10,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "N_rearm": [
+     27,
+     16,
+     4,
+     0,
+     0,
+     0
+    ],
+    "activity_half": 9.602763533020847,
+    "activity_total": 19.148710390136298,
+    "coupling": 0.6,
+    "excess_range": [
+     -0.14609314685560115,
+     0.17953013247062355
+    ],
+    "fill_once": [
+     1.0,
+     0.6666666666666667,
+     0.33333333333333337,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "fill_rearm": [
+     2.25,
+     1.3333333333333335,
+     0.33333333333333337,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "k_once": [
+     0.6266740556158459,
+     0.41778270374389725,
+     0.20889135187194863,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "k_rearm": [
+     1.4100166251356532,
+     0.8355654074877945,
+     0.20889135187194863,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "once_fit": {
+     "n": 3,
+     "p": -0.6700518337479573,
+     "rms": 0.10337860926824735
+    },
+    "preparation": "a",
+    "raw_range": [
+     0.27268289254436506,
+     0.6672281528824788
+    ]
+   },
+   "0.6/b": {
+    "N_once": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "N_once_half": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "N_once_lastq": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "N_rearm": [
+     39,
+     21,
+     1,
+     0,
+     0,
+     0
+    ],
+    "activity_half": 13.827402838806215,
+    "activity_total": 23.023704258848984,
+    "coupling": 0.6,
+    "excess_range": [
+     -0.11349765397222766,
+     0.14315582413483985
+    ],
+    "fill_once": [
+     1.0,
+     0.6666666666666667,
+     0.08333333333333334,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "fill_rearm": [
+     3.25,
+     1.7500000000000002,
+     0.08333333333333334,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "k_once": [
+     0.5212019692872789,
+     0.3474679795248526,
+     0.043433497440606574,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "k_rearm": [
+     1.6939064001836563,
+     0.9121034462527381,
+     0.043433497440606574,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "once_fit": {
+     "n": 3,
+     "p": -1.4863663149725086,
+     "rms": 0.47424826474163073
+    },
+    "preparation": "b",
+    "raw_range": [
+     0.2828786467670985,
+     0.6308538445466951
+    ]
+   },
+   "1/a": {
+    "N_once": [
+     10,
+     6,
+     4,
+     1,
+     0,
+     0
+    ],
+    "N_once_half": [
+     6,
+     6,
+     4,
+     1,
+     0,
+     0
+    ],
+    "N_once_lastq": [
+     8,
+     6,
+     4,
+     1,
+     0,
+     0
+    ],
+    "N_rearm": [
+     22,
+     16,
+     8,
+     2,
+     0,
+     0
+    ],
+    "activity_half": 9.293003564274523,
+    "activity_total": 22.481819300304107,
+    "coupling": 1.0,
+    "excess_range": [
+     -0.20298947592961114,
+     0.20849531272265764
+    ],
+    "fill_once": [
+     0.8333333333333334,
+     0.5,
+     0.33333333333333337,
+     0.08333333333333334,
+     0.0,
+     0.0
+    ],
+    "fill_rearm": [
+     1.8333333333333333,
+     1.3333333333333335,
+     0.6666666666666667,
+     0.16666666666666669,
+     0.0,
+     0.0
+    ],
+    "k_once": [
+     0.4448038597954896,
+     0.2668823158772938,
+     0.17792154391819584,
+     0.04448038597954896,
+     0.0,
+     0.0
+    ],
+    "k_rearm": [
+     0.9785684915500771,
+     0.7116861756727834,
+     0.3558430878363917,
+     0.08896077195909792,
+     0.0,
+     0.0
+    ],
+    "once_fit": {
+     "n": 4,
+     "p": -0.9445554657189227,
+     "rms": 0.28904658280253415
+    },
+    "preparation": "a",
+    "raw_range": [
+     0.14043262968736847,
+     0.6050771997991164
+    ]
+   },
+   "1/b": {
+    "N_once": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "N_once_half": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "N_once_lastq": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "N_rearm": [
+     32,
+     24,
+     6,
+     0,
+     0,
+     0
+    ],
+    "activity_half": 14.050555688511196,
+    "activity_total": 31.344350413914505,
+    "coupling": 1.0,
+    "excess_range": [
+     -0.1536828352847842,
+     0.15805933077951817
+    ],
+    "fill_once": [
+     1.0,
+     0.6666666666666667,
+     0.33333333333333337,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "fill_rearm": [
+     2.666666666666667,
+     2.0,
+     0.5,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "k_once": [
+     0.3828441119862198,
+     0.25522940799081323,
+     0.12761470399540661,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "k_rearm": [
+     1.020917631963253,
+     0.7656882239724396,
+     0.1914220559931099,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "once_fit": {
+     "n": 3,
+     "p": -0.6700518337479572,
+     "rms": 0.10337860926824718
+    },
+    "preparation": "b",
+    "raw_range": [
+     0.16492017604319031,
+     0.554641217855977
+    ]
+   }
+  },
+  "divergences": [],
+  "ground_states": {
+   "0.6": {
+    "baseline_per_bond": [
+     0.3369741850141743,
+     0.33697418501417264,
+     0.3369741850141743,
+     0.33697418501417253,
+     0.3369741850141743,
+     0.3369741850141734,
+     0.33697418501417464,
+     0.33697418501417264,
+     0.33697418501417453,
+     0.3369741850141732,
+     0.33697418501417453,
+     0.4876980204118553
+    ],
+    "energy": -4.087304735182456,
+    "gershgorin": [
+     -7.8,
+     73.75999999999999
+    ],
+    "residual": 4.0344948661922376e-14,
+    "spectral_gap": 0.9687046491138713
+   },
+   "1": {
+    "baseline_per_bond": [
+     0.27174577680139667,
+     0.27174577680139744,
+     0.2717457768013972,
+     0.27174577680139744,
+     0.271745776801397,
+     0.2717457768013988,
+     0.271745776801396,
+     0.2717457768013981,
+     0.2717457768013958,
+     0.27174577680139866,
+     0.27174577680139667,
+     0.3965818870764588
+    ],
+    "energy": -3.725174177974675,
+    "gershgorin": [
+     -7.8,
+     204.0
+    ],
+    "residual": 1.4081045678839428e-13,
+    "spectral_gap": 1.3284640788368
+   }
+  },
+  "gs_baseline_range": [
+   0.2717457768013958,
+   0.4876980204118553
+  ],
+  "median_loglog_exponent": -0.80730364973344,
+  "reconstructed_floor": 0.2,
+  "route": "own charge-sector Fock x rotor basis, own Hamiltonian from the declared equations with Jordan-Wigner signs derived here, own Lanczos ground state with full reorthogonalization, own Chebyshev propagator on a Gershgorin enclosure, own bond observables in closed form from the block structure of the declared reduction; ZERO imports from the historical engine, witnesses module or runner",
+  "system": {
+   "charge_sector": 0,
+   "couplings": [
+    0.6,
+    1.0
+   ],
+   "hamiltonian_nnz": 62244,
+   "hilbert_dimension": 8316,
+   "kicks": "a: exp(+i 0.7 n_0) ; b: exp(+i 0.5 (n_0 + n_6))",
+   "mass": 0.3,
+   "n_sites": 12,
+   "swept_thresholds": [
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4
+   ],
+   "times": "0 : 0.1 : 10 (101 samples)",
+   "w_max": 4
+  },
+  "verdict": "REPRODUCED"
+ },
+ "Q2_floor_robustness": {
+  "a_parameter_sensitivity": {
+   "distinct_grid_floors": [
+    0.2
+   ],
+   "engine_declared_alternatives": {
+    "couplings": [
+     0.0,
+     0.6,
+     1.0
+    ],
+    "masses": [
+     0.3,
+     0.6
+    ],
+    "source": "scripts/gauged_schwinger_staggered_ed_engine_2026_07_08.py (pinned; read as bytes, never imported)",
+    "w_max": [
+     2,
+     3,
+     4
+    ]
+   },
+   "grid_floor_is_parameter_insensitive": true,
+   "note_declared_point": {
+    "charge_sector": 0,
+    "couplings": [
+     0.6,
+     1.0
+    ],
+    "mass": 0.3,
+    "w_max": 4
+   },
+   "reading": "the 0.20 label does not move across any declared alternative, but the threshold it labels does: the grid is too coarse to see the parameter dependence it is hiding",
+   "rows": [
+    {
+     "N_rearm_prep_a": {
+      "0.6": [
+       27,
+       16,
+       4,
+       0,
+       0,
+       0
+      ],
+      "1": [
+       22,
+       16,
+       8,
+       2,
+       0,
+       0
+      ]
+     },
+     "couplings": [
+      0.6,
+      1.0
+     ],
+     "declared_floor_on_the_swept_grid": 0.2,
+     "dim": 4620,
+     "ground_energies": {
+      "0.6": -4.087304735182454,
+      "1": -3.725174177974674
+     },
+     "gs_baseline_range": [
+      0.2717457768013971,
+      0.4876980204118553
+     ],
+     "is_the_note_declared_point": false,
+     "mass": 0.3,
+     "max_attainable_excess": 0.20849531272265442,
+     "true_crossing": 0.14051681861094403,
+     "w_max": 2
+    },
+    {
+     "N_rearm_prep_a": {
+      "0.6": [
+       24,
+       12,
+       6,
+       1,
+       0,
+       0
+      ],
+      "1": [
+       24,
+       18,
+       10,
+       1,
+       0,
+       0
+      ]
+     },
+     "couplings": [
+      0.6,
+      1.0
+     ],
+     "declared_floor_on_the_swept_grid": 0.2,
+     "dim": 4620,
+     "ground_energies": {
+      "0.6": -5.282703354489086,
+      "1": -5.060485970264811
+     },
+     "gs_baseline_range": [
+      0.18299146398254074,
+      0.3323004824020598
+     ],
+     "is_the_note_declared_point": false,
+     "mass": 0.6,
+     "max_attainable_excess": 0.21108181451222252,
+     "true_crossing": 0.18486960017005763,
+     "w_max": 2
+    },
+    {
+     "N_rearm_prep_a": {
+      "0.6": [
+       27,
+       16,
+       4,
+       0,
+       0,
+       0
+      ],
+      "1": [
+       22,
+       16,
+       8,
+       2,
+       0,
+       0
+      ]
+     },
+     "couplings": [
+      0.6,
+      1.0
+     ],
+     "declared_floor_on_the_swept_grid": 0.2,
+     "dim": 6468,
+     "ground_energies": {
+      "0.6": -4.087304735182451,
+      "1": -3.725174177974671
+     },
+     "gs_baseline_range": [
+      0.27174577680139755,
+      0.48769802041185617
+     ],
+     "is_the_note_declared_point": false,
+     "mass": 0.3,
+     "max_attainable_excess": 0.2084953127226583,
+     "true_crossing": 0.14051681861098966,
+     "w_max": 3
+    },
+    {
+     "N_rearm_prep_a": {
+      "0.6": [
+       24,
+       12,
+       6,
+       1,
+       0,
+       0
+      ],
+      "1": [
+       24,
+       18,
+       10,
+       1,
+       0,
+       0
+      ]
+     },
+     "couplings": [
+      0.6,
+      1.0
+     ],
+     "declared_floor_on_the_swept_grid": 0.2,
+     "dim": 6468,
+     "ground_energies": {
+      "0.6": -5.282703354489081,
+      "1": -5.060485970264807
+     },
+     "gs_baseline_range": [
+      0.18299146398254162,
+      0.33230048240206
+     ],
+     "is_the_note_declared_point": false,
+     "mass": 0.6,
+     "max_attainable_excess": 0.2110818145122243,
+     "true_crossing": 0.18486960017006973,
+     "w_max": 3
+    },
+    {
+     "N_rearm_prep_a": {
+      "0.6": [
+       27,
+       16,
+       4,
+       0,
+       0,
+       0
+      ],
+      "1": [
+       22,
+       16,
+       8,
+       2,
+       0,
+       0
+      ]
+     },
+     "couplings": [
+      0.6,
+      1.0
+     ],
+     "declared_floor_on_the_swept_grid": 0.2,
+     "dim": 8316,
+     "ground_energies": {
+      "0.6": -4.087304735182456,
+      "1": -3.725174177974675
+     },
+     "gs_baseline_range": [
+      0.2717457768013958,
+      0.4876980204118553
+     ],
+     "is_the_note_declared_point": true,
+     "mass": 0.3,
+     "max_attainable_excess": 0.20849531272265764,
+     "true_crossing": 0.14051681861097978,
+     "w_max": 4
+    },
+    {
+     "N_rearm_prep_a": {
+      "0.6": [
+       24,
+       12,
+       6,
+       1,
+       0,
+       0
+      ],
+      "1": [
+       24,
+       18,
+       10,
+       1,
+       0,
+       0
+      ]
+     },
+     "couplings": [
+      0.6,
+      1.0
+     ],
+     "declared_floor_on_the_swept_grid": 0.2,
+     "dim": 8316,
+     "ground_energies": {
+      "0.6": -5.282703354489088,
+      "1": -5.060485970264809
+     },
+     "gs_baseline_range": [
+      0.18299146398253907,
+      0.3323004824020608
+     ],
+     "is_the_note_declared_point": false,
+     "mass": 0.6,
+     "max_attainable_excess": 0.21108181451221553,
+     "true_crossing": 0.18486960016988488,
+     "w_max": 4
+    }
+   ],
+   "the_note_names_no_parameter_alternatives": true,
+   "true_crossing_range": [
+    0.14051681861094403,
+    0.18486960017006973
+   ],
+   "true_crossing_spread_ratio": 1.3156403767005818,
+   "w_max_is_converged": true,
+   "zero_coupling_probe": {
+    "engine_declared_coupling_alternative": 0.0,
+    "ground_energy": -4.351264225012207,
+    "reading": "at g = 0 the electric term vanishes and the low spectrum collapses to a near-degenerate band, so a per-bond interacting-ground-state baseline is not well defined there; the floor is not computed at this point",
+    "residual": 6.993660501740008e-15,
+    "spectral_gap": 0.000803655668662806,
+    "usable_as_a_comparator_point": false
+   }
+  },
+  "b_grid_closure": {
+   "bisection_bracket": [
+    0.14051681861097975,
+    0.14051681861097978
+   ],
+   "c916_bracket": "(0.1, 0.2]",
+   "declared_floor": 0.2,
+   "declared_floor_over_true_crossing": 1.4233171657102426,
+   "fill_on_the_swept_grid": [
+    2.25,
+    1.3333333333333333,
+    0.6666666666666666,
+    0.16666666666666666,
+    0.0,
+    0.0
+   ],
+   "fine_bracket": [
+    0.1404,
+    0.1406
+   ],
+   "fine_sweep_points": 1282,
+   "grid_neighbour_below": 0.1,
+   "joint_fill_is_monotone_in_theta": true,
+   "reading": "the criterion is an INTEGER event count divided by 12, so it changes only at the finitely many theta where a crossing disappears; the true suffix crossing is resolved here to machine precision",
+   "swept_grid": [
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4
+   ],
+   "theta_crossing_bisected": 0.14051681861097978
+  },
+  "c_baseline_convention": {
+   "A_style_convention": "per bond, subtract the SAME TRAJECTORY's t = 0 value (the frozen d=3 protocol's baseline rule)",
+   "B_style_convention": "per bond, subtract the interacting ground state's value (the deposition note's baseline rule)",
+   "floor_under_the_t0_convention": 0.2,
+   "max_abs_difference_over_all_cases_and_times": 3.3306690738754696e-16,
+   "per_case": {
+    "0.6/a": {
+     "N_once_gs_baseline": [
+      12,
+      8,
+      4,
+      0,
+      0,
+      0
+     ],
+     "N_once_t0_baseline": [
+      12,
+      8,
+      4,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_gs_baseline": [
+      27,
+      16,
+      4,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_t0_baseline": [
+      27,
+      16,
+      4,
+      0,
+      0,
+      0
+     ],
+     "gs_baseline_minus_trajectory_t0": 3.3306690738754696e-16,
+     "max_abs_difference_of_the_two_conventions": 3.3306690738754696e-16
+    },
+    "0.6/b": {
+     "N_once_gs_baseline": [
+      12,
+      8,
+      1,
+      0,
+      0,
+      0
+     ],
+     "N_once_t0_baseline": [
+      12,
+      8,
+      1,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_gs_baseline": [
+      39,
+      21,
+      1,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_t0_baseline": [
+      39,
+      21,
+      1,
+      0,
+      0,
+      0
+     ],
+     "gs_baseline_minus_trajectory_t0": 2.220446049250313e-16,
+     "max_abs_difference_of_the_two_conventions": 2.220446049250313e-16
+    },
+    "1/a": {
+     "N_once_gs_baseline": [
+      10,
+      6,
+      4,
+      1,
+      0,
+      0
+     ],
+     "N_once_t0_baseline": [
+      10,
+      6,
+      4,
+      1,
+      0,
+      0
+     ],
+     "N_rearm_gs_baseline": [
+      22,
+      16,
+      8,
+      2,
+      0,
+      0
+     ],
+     "N_rearm_t0_baseline": [
+      22,
+      16,
+      8,
+      2,
+      0,
+      0
+     ],
+     "gs_baseline_minus_trajectory_t0": 1.1102230246251565e-16,
+     "max_abs_difference_of_the_two_conventions": 1.1102230246251565e-16
+    },
+    "1/b": {
+     "N_once_gs_baseline": [
+      12,
+      8,
+      4,
+      0,
+      0,
+      0
+     ],
+     "N_once_t0_baseline": [
+      12,
+      8,
+      4,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_gs_baseline": [
+      32,
+      24,
+      6,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_t0_baseline": [
+      32,
+      24,
+      6,
+      0,
+      0,
+      0
+     ],
+     "gs_baseline_minus_trajectory_t0": 3.3306690738754696e-16,
+     "max_abs_difference_of_the_two_conventions": 3.3306690738754696e-16
+    }
+   },
+   "the_two_conventions_coincide_on_B": true,
+   "true_crossing_under_the_t0_convention": 0.1405168186109799,
+   "why": "both kicks are DIAGONAL in the occupation basis, so on every bond the kick acts as (unitary on the 4-dimensional bond factor) tensor (unitary on the environment).  Bond purity is invariant under that, so the kicked state's t = 0 per-bond 1 - Tr rho^2 EQUALS the interacting ground state's, bond by bond, to machine precision.  On B's own system the choice of baseline convention is not a choice at all."
+  },
+  "printed_grid_vs_executed_grid": {
+   "executed_grid": "t=0:0.1:10 (101 samples)",
+   "floor_on_the_printed_grid": 0.2,
+   "mislabel_confirmed_at_source": true,
+   "mislabel_is_outcome_bearing_for_the_counts": true,
+   "mislabel_is_outcome_bearing_for_the_floor": false,
+   "printed_grid": "t=0:0.1:6 (61 samples)",
+   "printed_setup_line": "SETUP N=12 m=0.3 g=[0.6,1] Q=0 Wmax=4 t=0:0.1:6 kick=a:exp(+i0.7n0),b:exp(+i0.5(n0+n6)); site-x=periodic-bond-(x,x+1); c",
+   "rows": {
+    "0.6/a": {
+     "N_once_as_published": [
+      12,
+      8,
+      4,
+      0,
+      0,
+      0
+     ],
+     "N_once_on_the_printed_grid": [
+      10,
+      6,
+      4,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_as_published": [
+      27,
+      16,
+      4,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_on_the_printed_grid": [
+      14,
+      10,
+      4,
+      0,
+      0,
+      0
+     ],
+     "identical": false
+    },
+    "0.6/b": {
+     "N_once_as_published": [
+      12,
+      8,
+      1,
+      0,
+      0,
+      0
+     ],
+     "N_once_on_the_printed_grid": [
+      12,
+      8,
+      1,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_as_published": [
+      39,
+      21,
+      1,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_on_the_printed_grid": [
+      24,
+      16,
+      1,
+      0,
+      0,
+      0
+     ],
+     "identical": false
+    },
+    "1/a": {
+     "N_once_as_published": [
+      10,
+      6,
+      4,
+      1,
+      0,
+      0
+     ],
+     "N_once_on_the_printed_grid": [
+      8,
+      6,
+      4,
+      1,
+      0,
+      0
+     ],
+     "N_rearm_as_published": [
+      22,
+      16,
+      8,
+      2,
+      0,
+      0
+     ],
+     "N_rearm_on_the_printed_grid": [
+      12,
+      10,
+      6,
+      1,
+      0,
+      0
+     ],
+     "identical": false
+    },
+    "1/b": {
+     "N_once_as_published": [
+      12,
+      8,
+      4,
+      0,
+      0,
+      0
+     ],
+     "N_once_on_the_printed_grid": [
+      12,
+      8,
+      1,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_as_published": [
+      32,
+      24,
+      6,
+      0,
+      0,
+      0
+     ],
+     "N_rearm_on_the_printed_grid": [
+      20,
+      16,
+      2,
+      0,
+      0,
+      0
+     ],
+     "identical": false
+    }
+   },
+   "runner_literal_present": true,
+   "runner_t_final_literal": true,
+   "source_of_the_executed_grid": "T_FINAL = 10.0 and N_TIMES = int(round(T_FINAL/DT)) + 1 in the recovered runner; the SETUP string is a literal that was never updated"
+  },
+  "reading": "0.20 is not a measured threshold of B's system.  It is the smallest point of a six-point hand-chosen grid at which an integer crossing-count criterion holds; the criterion's actual suffix crossing sits at 0.140516819, and the criterion itself is activity-free and quantized to multiples of 1/12.",
+  "saturation": {
+   "c916_saturation_ratio_reproduced": true,
+   "declared_floor": 0.2,
+   "floor_over_max_attainable": 0.9592541788507343,
+   "gated_cells_total": 12,
+   "gated_cells_with_any_event": [
+    {
+     "N_once": 1,
+     "N_once_lastq": 1,
+     "case": "1/a",
+     "theta": 0.2
+    }
+   ],
+   "gated_cells_with_zero_events": 11,
+   "max_attainable_excess_over_all_cases": 0.20849531272265764,
+   "reading": "the transient-completeness gate CHECK-04 compares N_once_lastq to N_once on theta >= 0.2; two of the three gated thresholds exceed the largest excess the comparator can produce, so those cells are 0 == 0 by construction",
+   "swept_thetas_above_the_attainable_maximum": [
+    0.3,
+    0.4
+   ]
+  },
+  "status": "GRID-ARTIFACT",
+  "the_activity_cancels": {
+   "attainable_fill_values": [
+    0.0,
+    0.08333333333333333,
+    0.16666666666666666,
+    0.25,
+    0.3333333333333333,
+    0.4166666666666667
+   ],
+   "consequence": "the integrated bond activity A cancels EXACTLY; the comparator-unit fill translation carries no activity information at all, and the wake-bound comparison is a pure crossing-count criterion",
+   "criterion_is_equivalent_to": "N_rearm <= 3 on every gated case",
+   "identity": "fill = kappa * (A/N_sites) = (N/A) * (A/N_sites) = N/12",
+   "limit": 0.3,
+   "limits_giving_the_identical_floor": [
+    0.25,
+    0.3333333333333333
+   ],
+   "max_abs_deviation_from_the_identity": 4.440892098500626e-16,
+   "slack": "any wake bound in [0.25, 0.3333) selects the same floor; the campaign-6 value 0.3 is quantized away"
+  }
+ },
+ "Q3_lineage_verdict": {
+  "corrected_statement": "0.20 is a GRID LABEL, not a measured threshold.  The measured suffix crossing of the same criterion on the same system is theta = 0.140516819; 0.20 overshoots it by a factor 1.4233.  The floor is the smallest point of the swept grid ABOVE the crossing, and the grid's next point down is 0.1, so nothing between 0.1 and 0.2 was ever examined.",
+  "recoverability": "the note, its runner and its cache remain recoverable and now also REIMPLEMENTED; but the in-tree witnesses module still does not expose the API the runner imports, so the historical runner itself continues to execute only from history",
+  "the_activity_does_not_enter": "the integrated bond activity A cancels EXACTLY; the comparator-unit fill translation carries no activity information at all, and the wake-bound comparison is a pure crossing-count criterion",
+  "the_baseline_kind_was_never_the_difference": "Cycle 916 priced bridge premise B2 as a baseline-KIND mismatch (A absolute vs B excess-over-ground-state).  On B's own system the two baselines are the same number bond by bond (max difference 3.3e-16), because B's preparation is a bond-diagonal unitary on the ground state and bond purity is invariant under it.  B is trajectory-t0-relative exactly as A is; what differs is the PREPARATION (product quench vs local kick on an entangled ground state), not the baseline convention.  B2 should be restated as a preparation premise; B1, B3, B4, B5 are untouched.",
+  "the_window_is_mostly_unreachable": "the largest excess this comparator produces anywhere is 0.208495, so two of the three gated thresholds (0.3, 0.4) lie ABOVE it and cannot fire at all; at 0.20 exactly one bond of one of the four (coupling, preparation) cells ever crosses.  The `non-empty sparse window` and the `transient-complete cascade` above the floor rest on that single event plus 11 cells that are zero by construction.",
+  "verdict": "the d=3 lineage's 0.20 citation was resting on a grid label of a single-event, activity-independent count criterion measured on a different system under a preparation-specific convention -- reproduced here to the digit, and worth exactly what a grid label is worth",
+  "what_it_actually_is": "the smallest of six hand-chosen swept thresholds at which the count of re-arm crossings of the per-bond excess purity deficit, on the N=12 gauged staggered-Schwinger rotor comparator under one of two local kicks, first falls to 3 or fewer out of 12 bonds -- jointly over g = 0.6 and g = 1.0 -- and stays there",
+  "what_the_lineage_cites": "`theta >= 0.2` as a `sparse window` / `declared comparison floor`, carried into docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md (CHECK-05) and docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md's import inventory"
+ },
+ "api_drift": {
+  "api_present_in_history_blob": [
+   "build_bond_trace_groups",
+   "gauged_bond_activities",
+   "gauged_local_arrays",
+   "periodic_bond_distances",
+   "reduced_density"
+  ],
+  "api_present_in_tree": [],
+  "api_the_runner_imports": [
+   "build_bond_trace_groups",
+   "gauged_bond_activities",
+   "gauged_local_arrays",
+   "periodic_bond_distances",
+   "reduced_density"
+  ],
+  "b_runs_only_from_history": true,
+  "history_commit": "edf69d3c70eb06ecbe5744c974bfefc6b1bbf1b0",
+  "path": "scripts/activity_energy_bound_witnesses_2026_07_08.py"
+ },
+ "audit_rows": [
+  {
+   "finding": "all 22 compared quantities agree; the historical measurement is correct as published",
+   "id": "C920-R1",
+   "row": "independent reimplementation of convention B",
+   "status": "REPRODUCED"
+  },
+  {
+   "finding": "declared 0.20; measured suffix crossing 0.140516819; ratio 1.4233",
+   "id": "C920-R2",
+   "row": "the floor's true location",
+   "status": "GRID-ARTIFACT"
+  },
+  {
+   "finding": "fill = N/12 identically (max deviation 4.4e-16); the integrated activity cancels and plays no role in the floor",
+   "id": "C920-R3",
+   "row": "the activity proxy in the floor",
+   "status": "ALGEBRAIC-IDENTITY"
+  },
+  {
+   "finding": "the interacting-ground-state and trajectory-t0 baselines coincide on B to 3.3e-16; the floor is convention-independent on B's own system",
+   "id": "C920-R4",
+   "row": "baseline-convention sensitivity",
+   "status": "NOT-A-CONVENTION-ARTIFACT"
+  },
+  {
+   "finding": "in-tree exposes 0/5 of the imported API; the 2026-07-09 history blob exposes 5/5",
+   "id": "C920-R5",
+   "row": "in-tree API drift (B-runs-only-from-history)",
+   "status": "RE-VERIFIED"
+  },
+  {
+   "finding": "the cache prints t=0:0.1:6 while the runner executes t=0:0.1:10 (101 samples); on the PRINTED grid 4 of 4 cases would publish different counts, though the floor is unchanged",
+   "id": "C920-R6",
+   "row": "the SETUP grid mislabel",
+   "status": "CONFIRMED-AT-SOURCE"
+  },
+  {
+   "finding": "the note names no parameter alternative; across the engine's own declared alternatives the grid floor never moves but the true crossing spans [0.140517, 0.18487]",
+   "id": "C920-R7",
+   "row": "parameter pinning",
+   "status": "PARAMETER-PINNED"
+  },
+  {
+   "finding": "max attainable excess 0.208495; swept thresholds above it: [0.3, 0.4]; gated cells that are zero by construction: 11 of 12",
+   "id": "C920-R8",
+   "row": "reachability of the swept grid",
+   "status": "SATURATED"
+  }
+ ],
+ "boundary_sentences": [
+  "Declared comparators only; no formation rule, threshold value, or axiom content is chosen.",
+  "The comparator's bond reduction is the declared occupation-basis partition, not a fermionic mode reduction; the proxy is 1 - Tr(rho^2), not an operational trace distance.",
+  "Finite volume, finite time, sampled crossings; counts are finite-sample, never permanence.",
+  "Sets no audit status."
+ ],
+ "cycle": 920,
+ "date": "2026-07-28",
+ "deviations": [
+  {
+   "id": "ENGINE-ALTERNATIVES-NOT-NOTE-ALTERNATIVES",
+   "what": "the parameter scan uses m in {0.3,0.6}, W_max in {2,3,4}, g in {0.0,0.6,1.0}",
+   "why": "the note itself names NO alternative; these are the alternatives its Hamiltonian's declaring source exercises, and they are labelled as such"
+  },
+  {
+   "id": "G0-NOT-SWEPT",
+   "what": "the engine-declared coupling g = 0.0 is probed for its ground state but no floor is computed there",
+   "why": "the g = 0 low spectrum is near-degenerate, so a per-bond interacting-ground-state baseline is not well defined"
+  },
+  {
+   "id": "SIX-DIGIT-CACHE",
+   "what": "the historical cache prints six significant figures, so activity totals and kappa values are compared at that precision; crossing counts are integers and compared exactly",
+   "why": "the cache is the published artifact; nothing finer exists"
+  }
+ ],
+ "double_run": {
+  "baseline_bitwise_identical": true,
+  "counts_identical": true,
+  "energy_bitwise_identical": true,
+  "excess_bitwise_identical": true,
+  "ok": true
+ },
+ "falsifier_visibility": {
+  "convention_test_detects_a_planted_offset": true,
+  "grid_closure_relocates_under_a_planted_series": true,
+  "holonomy_free_construction_is_rejected": true,
+  "holonomy_free_energy": -4.0023886531047115,
+  "meaning": "a wrong Hamiltonian (perturbed mass, or the declared boundary holonomy removed) moves both the ground energy and the per-bond baseline past the gate tolerance; a planted registration cascade moves the crossing counts and relocates the floor; a single disagreement in the agreement table flips the Q1 verdict to REFUTED; a planted baseline offset is seen by the convention test.  A real divergence could not have been missed.",
+  "ok": true,
+  "planted_cascade_floor": null,
+  "planted_crossing_detected": true,
+  "planted_crossing_moves_the_floor": true,
+  "planted_mass_perturbation_moves_the_baseline": true,
+  "planted_mass_perturbation_moves_the_energy": true,
+  "verdict_function_flips_on_a_single_disagreement": true
+ },
+ "git_commands": [
+  {
+   "cmd": "git rev-parse HEAD",
+   "out": "df0354dc824b7a00ae1bce93f77ce28ab9a5ae64",
+   "rc": 0
+  },
+  {
+   "cmd": "git status --porcelain --untracked-files=no",
+   "out": "",
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 017353319be0167651d81fcae20505e284837f22",
+   "out_bytes": 2796,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 722d9c0f2c27c3d3f5211a98c394b79c20926f3e",
+   "out_bytes": 4802,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 6eb8510116fd7958a7b4435a3477139f77a46d81",
+   "out_bytes": 29824,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 8833e731251d799ecf5a6f43e833836377f0bbf7",
+   "out_bytes": 2968,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 4415dd17c81fd2e8f519267f86cbb794034ca717",
+   "out_bytes": 26660,
+   "rc": 0
+  }
+ ],
+ "history_artifacts": {
+  "docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md": {
+   "bytes": 4802,
+   "digest_source": "cycle-916-receipt",
+   "git_blob": "722d9c0f2c27c3d3f5211a98c394b79c20926f3e",
+   "present_in_tree_at_this_path": false,
+   "role": "the campaign's own restatement of the floor",
+   "sha256": "191c1ed76082d6e885cb6bc2063dbadd51c375149cd186b357094fd09974d38e",
+   "verified": true
+  },
+  "docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md": {
+   "bytes": 2796,
+   "digest_source": "cycle-916-receipt",
+   "git_blob": "017353319be0167651d81fcae20505e284837f22",
+   "present_in_tree_at_this_path": false,
+   "role": "THE SOURCE OF THE 0.20 FLOOR",
+   "sha256": "3d7303ca4464f56e48c7f107b9d5cd6ef6d046a7a90a4fe13859affba3e42386",
+   "verified": true
+  },
+  "logs/runner-cache/deposition_per_activity_kappa_2026_07_08.txt": {
+   "bytes": 2968,
+   "digest_source": "cycle-916-receipt",
+   "git_blob": "8833e731251d799ecf5a6f43e833836377f0bbf7",
+   "present_in_tree_at_this_path": false,
+   "role": "the note's committed runner cache",
+   "sha256": "b09f2b11512eb552f57f2d9d7c5c145c35b64cedcf5920af58b4a65a541acf17",
+   "verified": true
+  },
+  "scripts/activity_energy_bound_witnesses_2026_07_08.py@edf69d3c": {
+   "bytes": 26660,
+   "digest_source": "cycle-916-receipt",
+   "git_blob": "4415dd17c81fd2e8f519267f86cbb794034ca717",
+   "present_in_tree_at_this_path": true,
+   "role": "the ONLY blob of this path carrying the API the runner imports",
+   "sha256": "0601e139f9e1b81a17ceac1ab6fe0807ca4ad6cb5ebde3b3c09307f1ea7d9370",
+   "verified": true
+  },
+  "scripts/deposition_per_activity_kappa_2026_07_08.py": {
+   "bytes": 29824,
+   "digest_source": "cycle-916-receipt",
+   "git_blob": "6eb8510116fd7958a7b4435a3477139f77a46d81",
+   "present_in_tree_at_this_path": false,
+   "role": "the note's primary runner",
+   "sha256": "477bdcdd697ed673c179af8815cdfb9d84c021d423b0c3e45f4aee904453f1da",
+   "verified": true
+  }
+ },
+ "numerics": {
+  "lanczos_iters": 320,
+  "lanczos_seed": 20260708,
+  "machinery": {
+   "cheb_tail": 9.29665261209763e-16,
+   "fill_identity": 4.440892098500626e-16,
+   "ground_residual": 1.4081045678839428e-13,
+   "hermiticity": 0.0,
+   "norm_error": 4.085620730620576e-14,
+   "trace_error": 8.282263763703668e-14
+  },
+  "machinery_ok": true,
+  "numpy": "2.4.1",
+  "peak_rss_gib": 0.8679351806640625,
+  "python": "3.12.8",
+  "q1_wall_s": 4.835782624984859,
+  "q2_wall_s": 18.32267533399863,
+  "scipy_used_for": "sparse containers and Bessel J_k only",
+  "wall_s": 28.377412250003545
+ },
+ "pins": {
+  "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": {
+   "bytes": 49165,
+   "git_blob": "5dff1d8b1692099cd86b53959834b6bcb5865a71",
+   "pinned_value_declared": true,
+   "sha256": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e"
+  },
+  "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md": {
+   "bytes": 6705,
+   "git_blob": "5f056aa69d1cc06dbfa2dc9ed6804df40c7b39fe",
+   "pinned_value_declared": true,
+   "sha256": "74a0a4c0e40e78ec042824ba706389e53e8bde22443964388987557a1819552c"
+  },
+  "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md": {
+   "bytes": 9340,
+   "git_blob": "d5b36708949d06bf619b2452e8f2897468e51194",
+   "pinned_value_declared": true,
+   "sha256": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad"
+  },
+  "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+   "bytes": 8846,
+   "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+   "pinned_value_declared": true,
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+  },
+  "outputs/d3_bar_commission_cycle914_receipt_2026_07_28.json": {
+   "bytes": 112360,
+   "git_blob": "cabb1bef15221b5fca61ffc7c50f8ec18452893d",
+   "pinned_value_declared": true,
+   "sha256": "fba8a16ee811fa1729bc1cdb6988096193a7e14878e7a78380f4880120bf7223"
+  },
+  "outputs/theta_reconciliation_cycle916_receipt_2026_07_28.json": {
+   "bytes": 52243,
+   "git_blob": "2923533ed245312d1011c7217c92c5f18eef1185",
+   "pinned_value_declared": false,
+   "sha256": "4a3e390bbc9e9ba21dd3b87feef5db0171d33c8ddc5187314125300cedb8419c"
+  },
+  "scripts/activity_energy_bound_witnesses_2026_07_08.py": {
+   "bytes": 11929,
+   "git_blob": "424f4d9242de72a1fdd05e989f3cb0a62e4d6d65",
+   "pinned_value_declared": true,
+   "sha256": "f91246325209109045acd6a95190426c2f10b97ca124438630bbdae07f4dd3c3"
+  },
+  "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py": {
+   "bytes": 54983,
+   "git_blob": "e0639e0b5d1ebdd995c4c7ec3255f8daeeb4fe0c",
+   "pinned_value_declared": true,
+   "sha256": "fc7344a06503f9c159ea732cb6f622a23e61196e370914943ffd9a468fd592e4"
+  },
+  "scripts/frontier_cycle916_theta_reconciliation_2026_07_28.py": {
+   "bytes": 78518,
+   "git_blob": "bd02476a97539594c9186a196fc0a3fe158404af",
+   "pinned_value_declared": true,
+   "sha256": "3fa7f1d86c0443f055ec5a946176ab8261e6b66d87979dc299e5e6296a06f6d6"
+  },
+  "scripts/gauged_schwinger_staggered_ed_engine_2026_07_08.py": {
+   "bytes": 24059,
+   "git_blob": "4b22c526b417508fce63f4db934c34b397917b06",
+   "pinned_value_declared": true,
+   "sha256": "c1d7b43f1a6a6916c265445c2c96f9019fab531adaba688799ab145575b430ed"
+  }
+ },
+ "recovered_cache_parse": {
+  "cases": {
+   "0.6/a": {
+    "A": 19.1487,
+    "N_once": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "N_rearm": [
+     27,
+     16,
+     4,
+     0,
+     0,
+     0
+    ],
+    "k_once": [
+     0.626674,
+     0.417783,
+     0.208891,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "k_rearm": [
+     1.41002,
+     0.835565,
+     0.208891,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "0.6/b": {
+    "A": 23.0237,
+    "N_once": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "N_rearm": [
+     39,
+     21,
+     1,
+     0,
+     0,
+     0
+    ],
+    "k_once": [
+     0.521202,
+     0.347468,
+     0.0434335,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "k_rearm": [
+     1.69391,
+     0.912103,
+     0.0434335,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "1/a": {
+    "A": 22.4818,
+    "N_once": [
+     10,
+     6,
+     4,
+     1,
+     0,
+     0
+    ],
+    "N_rearm": [
+     22,
+     16,
+     8,
+     2,
+     0,
+     0
+    ],
+    "k_once": [
+     0.444804,
+     0.266882,
+     0.177922,
+     0.0444804,
+     0.0,
+     0.0
+    ],
+    "k_rearm": [
+     0.978568,
+     0.711686,
+     0.355843,
+     0.0889608,
+     0.0,
+     0.0
+    ]
+   },
+   "1/b": {
+    "A": 31.3444,
+    "N_once": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "N_rearm": [
+     32,
+     24,
+     6,
+     0,
+     0,
+     0
+    ],
+    "k_once": [
+     0.382844,
+     0.255229,
+     0.127615,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "k_rearm": [
+     1.02092,
+     0.765688,
+     0.191422,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "exponent": -0.807304,
+  "floor": 0.2,
+  "gs_range": [
+   0.271746,
+   0.487698
+  ],
+  "joint_floor": 0.2,
+  "setup_declared_grid": {
+   "dt": 0.1,
+   "t_final": 6.0
+  },
+  "setup_line": "SETUP N=12 m=0.3 g=[0.6,1] Q=0 Wmax=4 t=0:0.1:6 kick=a:exp(+i0.7n0),b:exp(+i0.5(n0+n6)); site-x=periodic-bond-(x,x+1); crossing=upward-between-samples,initial-level-excluded,N_once<=1/site,N_rearm-reset@d<0.8theta",
+  "thetas": [
+   0.02,
+   0.05,
+   0.1,
+   0.2,
+   0.3,
+   0.4
+  ],
+  "window": {
+   "0.6": {
+    "A_per_site_dwell": 1.59573,
+    "fill_once": [
+     1.0,
+     0.666667,
+     0.333333,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "fill_rearm": [
+     2.25,
+     1.33333,
+     0.333333,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "sparse_once": ">=0.2",
+    "sparse_rearm": ">=0.2"
+   },
+   "1": {
+    "A_per_site_dwell": 1.87348,
+    "fill_once": [
+     0.833333,
+     0.5,
+     0.333333,
+     0.0833333,
+     0.0,
+     0.0
+    ],
+    "fill_rearm": [
+     1.83333,
+     1.33333,
+     0.666667,
+     0.166667,
+     0.0,
+     0.0
+    ],
+    "sparse_once": ">=0.2",
+    "sparse_rearm": ">=0.2"
+   }
+  }
+ },
+ "repo_head": "df0354dc824b7a00ae1bce93f77ce28ab9a5ae64",
+ "restriction_gates": {
+  "c916_bracket_recorded": "(0.1, 0.2]",
+  "c916_floor_recorded": true,
+  "c916_gs_range_matches_cache_bytes": true,
+  "c916_once_counts": {
+   "0.6/a": {
+    "c916": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "cache_bytes": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "ok": true
+   },
+   "0.6/b": {
+    "c916": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "cache_bytes": [
+     12,
+     8,
+     1,
+     0,
+     0,
+     0
+    ],
+    "ok": true
+   },
+   "1/a": {
+    "c916": [
+     10,
+     6,
+     4,
+     1,
+     0,
+     0
+    ],
+    "cache_bytes": [
+     10,
+     6,
+     4,
+     1,
+     0,
+     0
+    ],
+    "ok": true
+   },
+   "1/b": {
+    "c916": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "cache_bytes": [
+     12,
+     8,
+     4,
+     0,
+     0,
+     0
+    ],
+    "ok": true
+   }
+  },
+  "c916_once_counts_match_cache_bytes": true
+ },
+ "runner": "scripts/frontier_cycle920_deposition_reaudit_2026_07_28.py",
+ "schema": "frontier-cycle920-deposition-reaudit-v1",
+ "verdict": {
+  "Q1": "REPRODUCED",
+  "Q2": "GRID-ARTIFACT",
+  "Q3": "GRID-LABEL-NOT-A-MEASURED-THRESHOLD",
+  "total": "DEPOSITION-REAUDITED/REPRODUCED/GRID-ARTIFACT"
+ }
+}

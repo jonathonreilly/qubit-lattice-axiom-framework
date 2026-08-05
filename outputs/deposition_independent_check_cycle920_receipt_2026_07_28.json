@@ -1,0 +1,927 @@
+{
+ "activity_identity_deviation": 2.220446049250313e-16,
+ "boundary_sentences": [
+  "Independent check only; sets no audit status and chooses no threshold.",
+  "Third implementation of one declared comparator; agreement is evidence about the implementations, not about the comparator's physical relevance.",
+  "Finite volume, finite time, sampled crossings.",
+  "Exit code is independent of claim survival."
+ ],
+ "checks_the_receipt": "outputs/deposition_reaudit_cycle920_receipt_2026_07_28.json",
+ "claims": {
+  "Q1_REPRODUCED": true,
+  "Q2_GRID_ARTIFACT": true,
+  "floor_is_activity_free": true,
+  "floor_is_convention_independent_on_B": true,
+  "grid_floor_parameter_insensitive_true_crossing_is_not": true,
+  "printed_grid_mislabel": true
+ },
+ "claims_survived": 6,
+ "claims_total": 6,
+ "convention_deviation": 2.55351295663786e-15,
+ "counts": {
+  "0.6/a": {
+   "N_once": [
+    12,
+    8,
+    4,
+    0,
+    0,
+    0
+   ],
+   "N_once_interval_union": [
+    12,
+    8,
+    4,
+    0,
+    0,
+    0
+   ],
+   "N_rearm": [
+    27,
+    16,
+    4,
+    0,
+    0,
+    0
+   ],
+   "activity_abs_dev": 5.542233338928781e-13,
+   "activity_total": 19.148710390135744,
+   "activity_vs_cache_abs_dev": 1.0390135741999984e-05,
+   "cache_N_once": [
+    12,
+    8,
+    4,
+    0,
+    0,
+    0
+   ],
+   "cache_N_rearm": [
+    27,
+    16,
+    4,
+    0,
+    0,
+    0
+   ],
+   "cache_activity_total": 19.1487,
+   "receipt_N_once": [
+    12,
+    8,
+    4,
+    0,
+    0,
+    0
+   ],
+   "receipt_N_rearm": [
+    27,
+    16,
+    4,
+    0,
+    0,
+    0
+   ],
+   "receipt_activity_total": 19.148710390136298
+  },
+  "0.6/b": {
+   "N_once": [
+    12,
+    8,
+    1,
+    0,
+    0,
+    0
+   ],
+   "N_once_interval_union": [
+    12,
+    8,
+    1,
+    0,
+    0,
+    0
+   ],
+   "N_rearm": [
+    39,
+    21,
+    1,
+    0,
+    0,
+    0
+   ],
+   "activity_abs_dev": 5.400124791776761e-13,
+   "activity_total": 23.023704258849524,
+   "activity_vs_cache_abs_dev": 4.258849521932007e-06,
+   "cache_N_once": [
+    12,
+    8,
+    1,
+    0,
+    0,
+    0
+   ],
+   "cache_N_rearm": [
+    39,
+    21,
+    1,
+    0,
+    0,
+    0
+   ],
+   "cache_activity_total": 23.0237,
+   "receipt_N_once": [
+    12,
+    8,
+    1,
+    0,
+    0,
+    0
+   ],
+   "receipt_N_rearm": [
+    39,
+    21,
+    1,
+    0,
+    0,
+    0
+   ],
+   "receipt_activity_total": 23.023704258848984
+  },
+  "1/a": {
+   "N_once": [
+    10,
+    6,
+    4,
+    1,
+    0,
+    0
+   ],
+   "N_once_interval_union": [
+    10,
+    6,
+    4,
+    1,
+    0,
+    0
+   ],
+   "N_rearm": [
+    22,
+    16,
+    8,
+    2,
+    0,
+    0
+   ],
+   "activity_abs_dev": 1.0125233984581428e-12,
+   "activity_total": 22.48181930030512,
+   "activity_vs_cache_abs_dev": 1.9300305119429595e-05,
+   "cache_N_once": [
+    10,
+    6,
+    4,
+    1,
+    0,
+    0
+   ],
+   "cache_N_rearm": [
+    22,
+    16,
+    8,
+    2,
+    0,
+    0
+   ],
+   "cache_activity_total": 22.4818,
+   "receipt_N_once": [
+    10,
+    6,
+    4,
+    1,
+    0,
+    0
+   ],
+   "receipt_N_rearm": [
+    22,
+    16,
+    8,
+    2,
+    0,
+    0
+   ],
+   "receipt_activity_total": 22.481819300304107
+  },
+  "1/b": {
+   "N_once": [
+    12,
+    8,
+    4,
+    0,
+    0,
+    0
+   ],
+   "N_once_interval_union": [
+    12,
+    8,
+    4,
+    0,
+    0,
+    0
+   ],
+   "N_rearm": [
+    32,
+    24,
+    6,
+    0,
+    0,
+    0
+   ],
+   "activity_abs_dev": 6.998845947236987e-13,
+   "activity_total": 31.344350413915205,
+   "activity_vs_cache_abs_dev": 4.958608479554982e-05,
+   "cache_N_once": [
+    12,
+    8,
+    4,
+    0,
+    0,
+    0
+   ],
+   "cache_N_rearm": [
+    32,
+    24,
+    6,
+    0,
+    0,
+    0
+   ],
+   "cache_activity_total": 31.3444,
+   "receipt_N_once": [
+    12,
+    8,
+    4,
+    0,
+    0,
+    0
+   ],
+   "receipt_N_rearm": [
+    32,
+    24,
+    6,
+    0,
+    0,
+    0
+   ],
+   "receipt_activity_total": 31.344350413914505
+  }
+ },
+ "cycle": 920,
+ "date": "2026-07-28",
+ "declared_system_from_source_bytes": {
+  "couplings": [
+   0.6,
+   1.0
+  ],
+  "dt": 0.1,
+  "fill_limit": 0.3,
+  "mass": 0.3,
+  "n_sites": 12,
+  "reset_fraction": 0.8,
+  "t_final": 10.0,
+  "thetas": [
+   0.02,
+   0.05,
+   0.1,
+   0.2,
+   0.3,
+   0.4
+  ],
+  "w_max": 4
+ },
+ "engine_declared_terms": {
+  "boundary_holonomy": true,
+  "charge_sector_rule": true,
+  "electric_integers": true,
+  "electric_law": true,
+  "hop_backward_coefficient": true,
+  "hop_forward_coefficient": true,
+  "index_layout": true,
+  "mass_sign": true,
+  "rotor_width": true,
+  "staggered_background": true
+ },
+ "floor": {
+  "floor": 0.2,
+  "receipt_floor": 0.2,
+  "receipt_theta_crossing": 0.14051681861097978,
+  "theta_crossing": 0.1405168186108873
+ },
+ "git_commands": [
+  {
+   "cmd": "git cat-file blob 017353319be0167651d81fcae20505e284837f22",
+   "out_bytes": 2796,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 6eb8510116fd7958a7b4435a3477139f77a46d81",
+   "out_bytes": 29824,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 8833e731251d799ecf5a6f43e833836377f0bbf7",
+   "out_bytes": 2968,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 4415dd17c81fd2e8f519267f86cbb794034ca717",
+   "out_bytes": 26660,
+   "rc": 0
+  }
+ ],
+ "independence": {
+  "crossings": "event-driven index merge; interval-union once-count",
+  "ground_state": "scipy ARPACK eigsh",
+  "hamiltonian": "full 2^12 Fock operator algebra + rotor Kronecker factor + charge-zero projection",
+  "imports_from_the_historical_sources": "none (bytes only)",
+  "imports_from_the_primary": "none",
+  "observables": "assembled 4x4 reduced densities; eigvalsh activity",
+  "propagator": "Krylov subspace exponential with substepping"
+ },
+ "note_prose_checks": {
+  "N_12": true,
+  "couplings": true,
+  "excess_baseline": true,
+  "floor_02": true,
+  "two_local_kicks": true,
+  "wake_bound": true
+ },
+ "numerics": {
+  "ground_state_wall_s": 0.10864424999454059,
+  "hamiltonian_wall_s": 0.1136400830000639,
+  "numpy": "2.4.1",
+  "python": "3.12.8",
+  "spot_check_wall_s": 6.709400416992139,
+  "trajectory_wall_s": 13.401761458982946,
+  "wall_s": 20.553757415997097
+ },
+ "parameter_spot_check": {
+  "abs_dev": 8.282263763703668e-14,
+  "floor": 0.2,
+  "mass": 0.6,
+  "receipt_floor": 0.2,
+  "receipt_true_crossing": 0.18486960016988488,
+  "true_crossing": 0.18486960016980206,
+  "w_max": 4
+ },
+ "primary_sha256": "7615c1cc5aa77df5f14898d72042cb5b9955e6bc8f02397bfc358ab645ea9132",
+ "receipt_sha256": "1b6d643b30fca987b9831a6d46b785e98456365da51c5434519de1518119065d",
+ "runner": "scripts/frontier_cycle920_deposition_independent_check_2026_07_28.py",
+ "schema": "frontier-cycle920-deposition-independent-check-v1",
+ "teeth": [
+  {
+   "detail": {
+    "engine_verified": true,
+    "history_blobs_verified": true,
+    "primary_sha256": "7615c1cc5aa77df5f14898d72042cb5b9955e6bc8f02397bfc358ab645ea9132",
+    "receipt_schema": "frontier-cycle920-deposition-reaudit-v1"
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T1-digests"
+  },
+  {
+   "detail": {
+    "engine_terms": {
+     "boundary_holonomy": true,
+     "charge_sector_rule": true,
+     "electric_integers": true,
+     "electric_law": true,
+     "hop_backward_coefficient": true,
+     "hop_forward_coefficient": true,
+     "index_layout": true,
+     "mass_sign": true,
+     "rotor_width": true,
+     "staggered_background": true
+    },
+    "kicks_lifted": {
+     "a": true,
+     "b": true
+    },
+    "lifted_from_the_runner": {
+     "couplings": [
+      0.6,
+      1.0
+     ],
+     "dt": 0.1,
+     "fill_limit": 0.3,
+     "mass": 0.3,
+     "n_sites": 12,
+     "reset_fraction": 0.8,
+     "t_final": 10.0,
+     "thetas": [
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.4
+     ],
+     "w_max": 4
+    },
+    "note_prose": {
+     "N_12": true,
+     "couplings": true,
+     "excess_baseline": true,
+     "floor_02": true,
+     "two_local_kicks": true,
+     "wake_bound": true
+    },
+    "receipt_system": {
+     "charge_sector": 0,
+     "couplings": [
+      0.6,
+      1.0
+     ],
+     "hamiltonian_nnz": 62244,
+     "hilbert_dimension": 8316,
+     "kicks": "a: exp(+i 0.7 n_0) ; b: exp(+i 0.5 (n_0 + n_6))",
+     "mass": 0.3,
+     "n_sites": 12,
+     "swept_thresholds": [
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.4
+     ],
+     "times": "0 : 0.1 : 10 (101 samples)",
+     "w_max": 4
+    }
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T2-declared-system-vs-source-bytes"
+  },
+  {
+   "detail": {
+    "declared_ground_energy": -4.087304735182456,
+    "declared_holonomy_is_load_bearing": true,
+    "dim": 8316,
+    "hermiticity": 0.0,
+    "holonomy_free_differing_entries": 8568,
+    "holonomy_free_ground_energy": -4.002388653104711,
+    "holonomy_free_max_entry_difference": 0.5,
+    "nnz": 62244,
+    "receipt_nnz": 62244,
+    "route": "full 2^12 Fock operator algebra + rotor Kronecker factor + charge-zero projection"
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T3-hamiltonian-third-construction"
+  },
+  {
+   "detail": {
+    "arpack_residuals": {
+     "0.6": 2.2455634728566e-12,
+     "1": 4.864303005843976e-13
+    },
+    "max_baseline_deviation": 9.170442183403793e-14,
+    "max_energy_deviation": 3.2862601528904634e-14
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T4-ground-state-arpack-vs-lanczos"
+  },
+  {
+   "detail": {
+    "max_norm_deviation": 2.0872192862952943e-14,
+    "max_trace_deviation": 4.241051954068098e-14,
+    "route": "Krylov propagator + assembled 4x4 reduced densities + event-driven crossings + interval-union once-count",
+    "rows": {
+     "0.6/a": {
+      "N_once": [
+       12,
+       8,
+       4,
+       0,
+       0,
+       0
+      ],
+      "N_once_interval_union": [
+       12,
+       8,
+       4,
+       0,
+       0,
+       0
+      ],
+      "N_rearm": [
+       27,
+       16,
+       4,
+       0,
+       0,
+       0
+      ],
+      "activity_abs_dev": 5.542233338928781e-13,
+      "activity_total": 19.148710390135744,
+      "activity_vs_cache_abs_dev": 1.0390135741999984e-05,
+      "cache_N_once": [
+       12,
+       8,
+       4,
+       0,
+       0,
+       0
+      ],
+      "cache_N_rearm": [
+       27,
+       16,
+       4,
+       0,
+       0,
+       0
+      ],
+      "cache_activity_total": 19.1487,
+      "receipt_N_once": [
+       12,
+       8,
+       4,
+       0,
+       0,
+       0
+      ],
+      "receipt_N_rearm": [
+       27,
+       16,
+       4,
+       0,
+       0,
+       0
+      ],
+      "receipt_activity_total": 19.148710390136298
+     },
+     "0.6/b": {
+      "N_once": [
+       12,
+       8,
+       1,
+       0,
+       0,
+       0
+      ],
+      "N_once_interval_union": [
+       12,
+       8,
+       1,
+       0,
+       0,
+       0
+      ],
+      "N_rearm": [
+       39,
+       21,
+       1,
+       0,
+       0,
+       0
+      ],
+      "activity_abs_dev": 5.400124791776761e-13,
+      "activity_total": 23.023704258849524,
+      "activity_vs_cache_abs_dev": 4.258849521932007e-06,
+      "cache_N_once": [
+       12,
+       8,
+       1,
+       0,
+       0,
+       0
+      ],
+      "cache_N_rearm": [
+       39,
+       21,
+       1,
+       0,
+       0,
+       0
+      ],
+      "cache_activity_total": 23.0237,
+      "receipt_N_once": [
+       12,
+       8,
+       1,
+       0,
+       0,
+       0
+      ],
+      "receipt_N_rearm": [
+       39,
+       21,
+       1,
+       0,
+       0,
+       0
+      ],
+      "receipt_activity_total": 23.023704258848984
+     },
+     "1/a": {
+      "N_once": [
+       10,
+       6,
+       4,
+       1,
+       0,
+       0
+      ],
+      "N_once_interval_union": [
+       10,
+       6,
+       4,
+       1,
+       0,
+       0
+      ],
+      "N_rearm": [
+       22,
+       16,
+       8,
+       2,
+       0,
+       0
+      ],
+      "activity_abs_dev": 1.0125233984581428e-12,
+      "activity_total": 22.48181930030512,
+      "activity_vs_cache_abs_dev": 1.9300305119429595e-05,
+      "cache_N_once": [
+       10,
+       6,
+       4,
+       1,
+       0,
+       0
+      ],
+      "cache_N_rearm": [
+       22,
+       16,
+       8,
+       2,
+       0,
+       0
+      ],
+      "cache_activity_total": 22.4818,
+      "receipt_N_once": [
+       10,
+       6,
+       4,
+       1,
+       0,
+       0
+      ],
+      "receipt_N_rearm": [
+       22,
+       16,
+       8,
+       2,
+       0,
+       0
+      ],
+      "receipt_activity_total": 22.481819300304107
+     },
+     "1/b": {
+      "N_once": [
+       12,
+       8,
+       4,
+       0,
+       0,
+       0
+      ],
+      "N_once_interval_union": [
+       12,
+       8,
+       4,
+       0,
+       0,
+       0
+      ],
+      "N_rearm": [
+       32,
+       24,
+       6,
+       0,
+       0,
+       0
+      ],
+      "activity_abs_dev": 6.998845947236987e-13,
+      "activity_total": 31.344350413915205,
+      "activity_vs_cache_abs_dev": 4.958608479554982e-05,
+      "cache_N_once": [
+       12,
+       8,
+       4,
+       0,
+       0,
+       0
+      ],
+      "cache_N_rearm": [
+       32,
+       24,
+       6,
+       0,
+       0,
+       0
+      ],
+      "cache_activity_total": 31.3444,
+      "receipt_N_once": [
+       12,
+       8,
+       4,
+       0,
+       0,
+       0
+      ],
+      "receipt_N_rearm": [
+       32,
+       24,
+       6,
+       0,
+       0,
+       0
+      ],
+      "receipt_activity_total": 31.344350413914505
+     }
+    }
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T5-observables-and-counts-third-implementation"
+  },
+  {
+   "detail": {
+    "abs_dev": 9.248157795127554e-14,
+    "fill_on_the_swept_grid": [
+     2.25,
+     1.3333333333333333,
+     0.6666666666666666,
+     0.16666666666666666,
+     0.0,
+     0.0
+    ],
+    "floor": 0.2,
+    "receipt_floor": 0.2,
+    "receipt_theta_crossing": 0.14051681861097978,
+    "theta_crossing": 0.1405168186108873
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T6-floor-and-grid-closure"
+  },
+  {
+   "detail": {
+    "any_limit_in_bracket_agrees": true,
+    "criterion": "N_rearm <= 3 of 12",
+    "limit": 0.3,
+    "max_deviation_from_fill_equals_N_over_12": 2.220446049250313e-16,
+    "quantization_bracket": [
+     0.25,
+     0.3333333333333333
+    ],
+    "receipt_value": 4.440892098500626e-16
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T7-activity-cancels-and-criterion-is-quantized"
+  },
+  {
+   "detail": {
+    "max_abs_difference_of_the_two_baselines": 2.55351295663786e-15,
+    "per_case": {
+     "0.6/a": 9.992007221626409e-16,
+     "0.6/b": 1.9984014443252818e-15,
+     "1/a": 1.1102230246251565e-15,
+     "1/b": 2.55351295663786e-15
+    },
+    "reason": "the kicks are diagonal in the occupation basis, hence a unitary on each bond factor; bond purity is invariant",
+    "receipt_value": 3.3306690738754696e-16
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T8-baseline-conventions-coincide-on-B"
+  },
+  {
+   "detail": {
+    "abs_dev": 8.282263763703668e-14,
+    "floor": 0.2,
+    "mass": 0.6,
+    "receipt_floor": 0.2,
+    "receipt_true_crossing": 0.18486960016988488,
+    "true_crossing": 0.18486960016980206,
+    "w_max": 4
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T9-parameter-spot-check-m0.6"
+  },
+  {
+   "detail": {
+    "cases_whose_counts_would_differ": 4,
+    "executed": "t=0:0.1:10 (101 samples)",
+    "printed": "t=0:0.1:6 (61 samples)",
+    "receipt_count": 4,
+    "rows": {
+     "0.6/a": {
+      "identical": false,
+      "printed_grid_N_once": [
+       10,
+       6,
+       4,
+       0,
+       0,
+       0
+      ],
+      "printed_grid_N_rearm": [
+       14,
+       10,
+       4,
+       0,
+       0,
+       0
+      ]
+     },
+     "0.6/b": {
+      "identical": false,
+      "printed_grid_N_once": [
+       12,
+       8,
+       1,
+       0,
+       0,
+       0
+      ],
+      "printed_grid_N_rearm": [
+       24,
+       16,
+       1,
+       0,
+       0,
+       0
+      ]
+     },
+     "1/a": {
+      "identical": false,
+      "printed_grid_N_once": [
+       8,
+       6,
+       4,
+       1,
+       0,
+       0
+      ],
+      "printed_grid_N_rearm": [
+       12,
+       10,
+       6,
+       1,
+       0,
+       0
+      ]
+     },
+     "1/b": {
+      "identical": false,
+      "printed_grid_N_once": [
+       12,
+       8,
+       1,
+       0,
+       0,
+       0
+      ],
+      "printed_grid_N_rearm": [
+       20,
+       16,
+       2,
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T10-printed-grid-mislabel"
+  },
+  {
+   "detail": {
+    "a_floor_claim_of_0.20_as_the_true_crossing_is_caught": true,
+    "corrupted_count_row_is_caught": true,
+    "two_couplings_give_different_hamiltonians": true
+   },
+   "fired": true,
+   "refutes_the_block": false,
+   "tooth": "T11-teeth-bite"
+  }
+ ],
+ "teeth_fired": 11,
+ "teeth_refuting": [],
+ "teeth_total": 11,
+ "verdict": "ALL-CLAIMS-SURVIVE"
+}

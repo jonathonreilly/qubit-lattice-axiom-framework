@@ -71,7 +71,17 @@ checker named. The graded field ceiling is now complete and
 non-decreasing — **degree 2 -> 0.05; degrees 3-4 -> 0.075;
 degrees 5-6 -> 0.10** — with its one jump between degree 4 and
 degree 5. On integer degrees, (4, 5] is the singleton {5}: **the
-threshold is located, not bracketed.**
+threshold is located, not bracketed.** [Qualification 2026-08-05,
+Cycle 926: the located threshold is GATE-FRAGILE — it survives only
+for the C_ab gate in [0.0191673, 0.0207835) (relative half-width
+3.92%) and 6 of 32 persistence/deadline combinations; just below
+the band the threshold is 6, and at the upper endpoint the
+degree-4/degree-5 cut stops being clean. The exact sweep also
+re-scopes the carrying statistic: certification at the 0.10 field
+follows the unique conjunction "pointer degree >= 5 AND fragment
+count >= 3", with degree and fragment count co-varying on this
+note's family. The margin honesty below was the right instinct;
+the band is now exact. See the Cycle-926 note.]
 
 **The ceiling law confirmed at degree 5**: max R_ind = 5 on all
 three loop-free geometries at all three fields, and on the loopy H4

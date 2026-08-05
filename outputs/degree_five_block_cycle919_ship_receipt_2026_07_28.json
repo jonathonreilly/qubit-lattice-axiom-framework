@@ -15,8 +15,8 @@
   ],
   "files": {
     "docs/DEGREE_FIVE_CERTIFIES_THRESHOLD_LOCATED_CYCLE919_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "cfeed45cb2c9b269e7a64e4777ecfbe94f7691ea",
-      "sha256": "1ff7389686d3bf7472d42fdc79c3edee292929b92821c4043432460eeedeb7ab"
+      "git_blob": "143364f6deac206ac54ae1053e3eae4ca89e6408",
+      "sha256": "234e7b5bd3823132e4925e323489a2dbb47ce3da3aba7270e45f59ca680a8a04"
     },
     "logs/runner-cache/frontier_cycle919_degree_five_2026_07_28.txt": {
       "git_blob": "0424ee81cef16c95193708f8f270eb154cdc6fe0",
@@ -46,6 +46,13 @@
   "headline": "THE FIELD-CEILING THRESHOLD IS DEGREE 5: all twelve degree-5 cells YES incl. the frozen 0.10 field (star/two trees/cube-minus-a-face; n 6-16, loops 0-4 \u2014 degree isolated from every named confound); on integer degrees (4,5] = {5} so the 917 bracket's interior is exhausted \u2014 LOCATED not bracketed; ceiling law confirmed at degree 5 (max R_ind = 5 loop-free; the loopy H4 drops to 3 above the low field while still certifying); graded ceiling complete: 2->0.05, 3-4->0.075, 5-6->0.10; margin honesty: the boundary is decided by 0.00078/0.00083 bits (a ~2e-3-bit gate shift moves it); checker: 0.075 NOT load-bearing (threshold decided at frozen 0.10 \u2014 strengthens), grade split flagged, cross-degree controls exclude size and loops",
   "independence": "checker on fully independent machinery (sparse Pauli-kron, expm_multiply, own MIS/partitions from spec bytes); max deviation vs primary 2e-13; 13/13 claims, 11/11 teeth",
   "note": "docs/DEGREE_FIVE_CERTIFIES_THRESHOLD_LOCATED_CYCLE919_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "post_ship_edits": [
+    {
+      "authority": "supervisor post-ship precision edit (the T4/916/918 pattern); no claim strengthened",
+      "date": "2026-08-05",
+      "edit": "Cycle-926 qualification: the located threshold is gate-fragile (exact band [0.0191673, 0.0207835), 6/32 combos) and the carrying statistic re-scopes to the conjunction d>=5 AND f>=3. Bracketed dated qualification added; note pin refreshed."
+    }
+  ],
   "runtime_seconds": {
     "checker": 9.1,
     "primary": 8.0

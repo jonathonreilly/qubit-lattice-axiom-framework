@@ -103,3 +103,127 @@ minimal; let the data decide.
 - NO axiom/primitive moves anywhere. Every integrity gate outcome-neutral
   (two checker-side traps in 888 exist precisely because primary gates
   cannot see leaked verdicts — by design).
+
+════════════════════════════════════════════════════════════════════
+
+# WINDOW 2 HANDOFF — 2026-08-04 ~07:45 EDT -> wound down ~21:45 EDT
+
+Directive: 24 more hours; self-replenishing queue; lane closure then
+next-furthest; exercise skill on walls; ONLY askable decision = axiom
+additions at a required-and-minimal bar. Wound down ~10h early: the
+queue's remaining items are all audit-lane or next-campaign scale —
+the same closure-by-quality standard as window 1.
+
+## Scoreboard: 32 blocks across THREE lanes (PRs #5954-#5984)
+
+**GRAVITY — CLOSED FROM AXIOMS UP** (12 blocks): the barrier
+identification dissolved (the gauge break is barrier-independent;
+containment is the real premise, already supplied); the cross-lane
+interface no-go then the P2 construction (the bridge constructible at
+zero freedom; the interface = {IF1} alone, barrier-scoped); the
+t-choice dissolved by the affine law (residue: the t != 0 exclusion);
+the SL1b arc TERMINAL (the 2/9 target excluded at 445 sigma with
+certified enclosures; T7 mis-stated in landed 882 — audit flag; the
+family binding F_dim; the space identification DECIDED content-side;
+eleven escape shapes covered — reachability generic, discrimination
+absent; the successor = a schema-ranking principle the memo itself
+exiles); the harmonic repair VIABLE (the 1/6 IS mu = 0); sigma SPLIT
+(half onto the approved primitive; the dimensionless residue
+terminal); the audit flags closed by computation (the current GB-S2
+residual: 6 free + 5 owed).
+
+**BORN — CLOSED AT SUBSTRATE SCOPE** (9 blocks): the lane RE-TYPED
+(the 748 census worlds are SETUPS — zero branch pairs; the weighting
+program was apportionment, the averaging the realized-state primitive
+forbids); O1 actuality already axiom content (two boundary-certificate
+corrections); the covariance story priced both ways (the transport
+theorem; COV-EQV free); the lanes PROVEN COMPATIBLE (the cone
+identification; rank 2 — two carriers needed); the within-world
+carrier a PURCHASE (the prime-613 arithmetic negative; the numbers ARE
+the walk's spectrum); the A3 channel half-forced (the gap = ONE
+SENTENCE; the stranded envariance note recovered); O2 MEASURED (the
+selection is event-parity transport on never-written wires — supplied,
+not derivable); O3 TERMINAL (no non-forbidden realization; the A3
+arena = 328 site-possibility pairs; THE NAMED SUCCESSOR: a substrate
+where endpoint content is a gate target).
+
+**MASS — REGISTRATION STORY COMPLETE AT WINDOW SCOPE** (4 blocks):
+the d=3 bar REPRODUCED (route C was already run — the re-audit work
+order executed; three no-shared-code implementations at 1e-11/1e-12);
+the comparator lineage RECOVERED (6+ never-landed artifacts; the
+theta-floor misattribution corrected; three theta conventions
+reconciled into one dictionary; the CHECK-05 comparison VOID); the
+window EXTENDED (lambda = 0.02 certifies) and DECAY-BOUNDED (closes
+for good; theta drifts while the bar stays dead); and the GEOMETRY
+LADDER: **the chain certifies** — the d=1 no-go's "branching
+required" slogan falsified as a generalization (the no-go stands at
+home); the replacement laws measured (R_ind ceiling = pointer degree;
+loops cost redundancy; the field ceiling graded, threshold bracketed
+(4, 6]).
+
+## The two exercises — the generator -> certification pipeline, validated twice
+
+SL1b: produced the target-integrity fork (897 certified it at 445
+sigma), the four-shape escape classification (898/904 completed the
+coverage), and the N=3 degeneracy account (899/901 resolved it into
+the family binding + the space identification). BL4/occurrence:
+RENAMED the wall (O1 was closed all along), produced the must-fail
+list (911-913 ran it to termination), and ended with the gap provably
+one sentence and the successor an engineering object. BOTH exercises'
+axiom-ask assessments (not earned) were CONFIRMED by subsequent
+computation.
+
+## NO AXIOM ASK EARNED — the window's deepest fact
+
+Three lanes, two exercise protocols, every wall attacked to
+termination: every one priced out as an owner-surface convention,
+content the memo's own sentences exile, or a named engineering
+successor. The axiom set survived a deliberate 24-hour siege intact.
+
+## The owner surface (registrations, not asks)
+
+Gravity: the terminal scope clause + the coarse-reading choice; the
+window conventions (with quadratic consequences); sigma's
+dimensionless residue; mu; the t != 0 exclusion. Born:
+P-SAMPLE-SPACE; P-WITHIN-WORLD (x2); P-SITE-UNIFORM; P-NONEMPTY;
+P-CONDITION-MAP; the COV reading choice; the A3 sentence IF ever
+wanted (correctly deferred behind the successor substrate). Mass:
+the theta-convention registration; the 0.20-floor citation rule.
+
+## The audit-lane docket (both windows)
+
+HIGH: the stranded envariance note's landing; the mass lane's 8+
+never-landed artifacts (2 HIGH). Standard: T7 mis-stated in landed
+882 (three reproduced defects); the 878 boundary misquote; the 863
+cert-A slicing artifact; the 909 "3 passes" misreading; 856's
+one-boundary horizon criticality; B-runs-only-from-history; the
+deposition grid mislabel; the four void-comparison sites; the
+branching-required propagation flag; 882 cert-E 13-vs-14; the M6
+horizon-window scope rule. Plus the review-loop sweep of ~36 open
+campaign PRs.
+
+## Supervisor error record (window 2): five, all caught
+
+The 887-attribution summary line (896); the 912 brief's nonexistent
+sentence; the 917 G3 arithmetic; (window 1's two carried forward).
+Every one caught by a refute-spec'd worker or checker. The pattern
+holds: minimal spec premises; the data decides; summary lines written
+against source receipts.
+
+## Methodology exports
+
+T9 solver self-validation (902 -> propagated); the fingerprint-
+vacuity flag (913); the pre-registered-protocol execution pattern
+(914); demonstrated outcome-neutrality via counterfactual census
+(906); the citation-rule pattern (915/916); the both-readings rule
+for inconsistent specs (917).
+
+## Named successors (the next campaign's queue)
+
+1. BORN: the successor substrate (endpoint content as a gate target)
+   — the Born-capable substrate's engineering spec, the campaign's
+   single most consequential open object.
+2. MASS: the degree-5 geometry (the bracket's interior); the
+   loop-cost mechanism; the deposition chain re-audit.
+3. GRAVITY: audit lane only.
+4. The audit docket above; the owner-surface registrations.

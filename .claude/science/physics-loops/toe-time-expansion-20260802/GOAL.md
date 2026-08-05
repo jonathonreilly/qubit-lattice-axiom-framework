@@ -103,3 +103,34 @@ Operating consequences:
      parametric mu — the branch-tree census).
   9. Audit-docket work orders that are science-runnable (the
      receipt-less-package facts stay audit-lane).
+
+
+## OWNER AXIOM-SURFACE STATEMENT — 2026-08-05 ~07:30 EDT (verbatim)
+
+"also our TOE being blocked can certainly FORCE an axiom update. is the
+point of 'the possibilities carry weight' to make it really clear that
+some outcomes are more probable than others? because thats the whole
+point of that axiom and if that isnt clear and the lack of clarity is
+the main blocker we can and should make it clear - I believe the
+neighborhood map not only modulates the available possibilities, but
+their probabilities (or at least thats my strong gut on the axiom
+setup)"
+
+Operating consequences:
+- The owner confirms a blocked TOE can force the axiom update and
+  proposes the CANDIDATE FORM: the Born content as an ADMISSIBILITY
+  EXTENSION (the neighborhood map determines both the menu AND the
+  weights) rather than bare A3.
+- Cycle 944 (blockQ16) launched: the candidate priced — both drafts
+  (B: the Admissibility extension; A: standalone two-clause), the
+  neighborhood formalizations and class partitions, the conditional
+  theorems (class-equality; the naturality corollary that would
+  SUBSUME 940's underivable principle), conflict checks vs Record
+  non-supply and the realized-state primitive, the freedom-count
+  comparison, and the required-and-minimal dossier. NO adoption —
+  the dossier informs the owner's decision.
+- Cycle 943 (in flight) is COMPLEMENTARY: its pre-lock/post-lock
+  symmetry split feeds the dossier (pre-record symmetry would give
+  the class-equality law derived instances).
+- The decision remains the owner's; the axiom set is the only ruling
+  surface.

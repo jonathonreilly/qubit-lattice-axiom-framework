@@ -1181,3 +1181,68 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
   under the frozen tie-break; the l=3 +X/+X forcing.
 - Cluster-cap (7th M-family PR): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 925 law relaxation (blockQ12, PR #5992) — 2026-08-05
+
+- Supervisor review: the mechanical exhaustiveness defense (the
+  partition read off the compiler's own three-template grammar
+  with a fifth-category detector, checked by THREE independent
+  provenance sweeps incl. bytecode); the full-horizon full-census
+  bit-identity for the flagship R1 claim; the non-redundancy proof
+  on the certification set; the container premise surfaced by the
+  checker now stated in the theorem.
+- Spec inconsistency (the "912 wording" premise — error #7's
+  placement fact; the spec predated the 924 correction's arrival):
+  handled by both-readings; the worker substituted the pinned 913
+  A3-arena statement (equal or greater authority) and reinforced
+  with the Admissibility axiom and the memo's own Open Gates list.
+- Verdict: THE CLASSIFICATION THEOREM — R1 re-labeling (broadened
+  by the checker), R3 dead-or-absorbed (16 coordinates), R4 the
+  banked argument; R2 alone genuine, not constructible against the
+  pinned compiler, priced at exactly the A3 sentence. THE BORN
+  SUCCESSOR LINE TERMINATES: one sentence wide. NO AXIOM ASK
+  EARNED — the block prices, it does not propose.
+- Follow-up executed: the 918 branch-pair-count qualification
+  (blockQ11 branch, pin refreshed — the count is
+  coordinate-list-relative, never a measure of indeterminism);
+  the semantic-schedule sharpening recorded.
+- Checker: PRIMARY_SURVIVES_THIS_CHECK, 40/40, 17/17 teeth, zero
+  refutations; the R1 attack STRENGTHENED the theorem
+  (clear-then-set); five extra coordinates hunted, all dead or
+  absorbed.
+- Cluster-cap (11th Born-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- NOTE: the stranded-envariance-note row stays with the AUDIT lane
+  (a landing action, not a science gap — 912 already recovered and
+  verified it; the trace says "land via the audit lane").
+
+## Cycle 926 gate sweep + separation (blockM8, PR #5993) — 2026-08-05
+
+- Supervisor review: the exact-sweep architecture (piecewise-
+  constant decomposition at measured breakpoints, dense-grid
+  cross-check at zero mismatches); the double zero-deviation
+  reproduction; the G6 lossless expansion gated against the pinned
+  914 ledger; the A-family design (one Hamiltonian, five
+  partitions); the disclosed anchor-collision fix proven a no-op.
+- Verdicts: SPLIT — 917 headlines GATE-ROBUST; the 919 threshold
+  GATE-FRAGILE in the strict sense (the honest direction: a
+  shipped headline re-graded with an exact certificate). THE
+  CEILING IS THE FRAGMENT COUNT (pointer-degree refuted everywhere
+  in the swept region); THE THRESHOLD is the unique d>=5 AND f>=3
+  conjunction, its conjuncts failing through different gates. The
+  926 findings COMPOSE with 921 (one law at two tiers) — three
+  blocks' laws unify under surviving-fragment counting.
+- Follow-ups executed: the 917 loop-free-equality prose correction
+  (its own receipt data showed G1's failure) and the 919
+  gate-fragility qualification — both as dated edits with pins
+  refreshed (PRs #5984/#5986 update).
+- Checker: 17/17 teeth, no refutation; every claim boundary
+  verified tight from both sides; the same unique conjunction
+  found independently; four self-caught checker bugs fixed and
+  disclosed.
+- Named opens: the E1 single-witness dependence; the persist-axis
+  fragility; promoting the (d,f) law to claim grade.
+- Cluster-cap (8th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 928 (the route-1
+  sweep on the new surfaces, blockAC2).

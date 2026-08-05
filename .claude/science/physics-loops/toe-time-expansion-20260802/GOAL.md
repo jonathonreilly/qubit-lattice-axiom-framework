@@ -161,3 +161,25 @@ conflict checks + the class partitions; Cycle 943's pre/post-lock split
 as context. Adoption itself = the owner's explicit approval recorded
 per AXIOM_MINIMALITY_POLICY (the 2026-06-29 reset precedent); no memo
 edit until then.
+
+
+## THE ADOPTION — 2026-08-05 (owner-approved; PR #6011)
+
+After the full wording iteration (owner-led; every package item argued
+down to its floor: the with-Record reading closing the scope gloss, the
+forced availability-support argument closing the terminology row, the
+fence reading ruling replacing the fence amendment, the reading notes
+confirmed non-governing), the owner approved: "reading notes are not
+governing though right? just 2x checking - if thats correct this is
+approved, please make the PR."
+
+ADMISSIBILITY'S SECOND SENTENCE IS NOW (PR #6011, in-place edit per the
+07-04 precedent): "For each site, the likelihood of each possibility is
+determined by, and varies with, the nearest-neighbor conditions."
+Availability = the likelihood's support (zero likelihood is
+unavailability). Approval + fence ruling recorded in
+AXIOM_MINIMALITY_POLICY section 6. The likelihood function's form and
+values remain downstream (constrained by the same-neighborhood law:
+164->54 and 6->3 on current arenas). Cycle 945 = the repair block
+(six SUPP-reliant results; ~23 verbatim-quote scripts; scope notes;
+the companion gate suite), stacked on #6011.

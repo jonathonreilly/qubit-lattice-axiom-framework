@@ -2242,6 +2242,16 @@ def main():
         "LATE-GRID: only the certification subgrid Jt in {0.0,...,1.2} is executed.",
         "NO-LAZY-PAIR-RULE: every fragment pair is evaluated at every executed time on "
         "every geometry.",
+        "PAIR-KEY CONVENTIONS (raised by this block's independent checker): fragment "
+        "pairs appear under TWO key orderings in this receipt.  stats.seam_pairs is keyed "
+        "by Python string order because that is how the pinned 917 receipt published it "
+        "and the value-for-value restriction gate compares against those exact strings; "
+        "anchor_distance_in_G_minus_S, C_ab and the dependence-structure blocks are keyed "
+        "by the declared LABEL order.  The two differ on pairs such as {+y,-x}, which "
+        "appear as '+y|-x' in the first and '-x|+y' in the second.  The CONTENT is "
+        "identical -- the checker verified this by comparing unordered pairs on all 42 "
+        "geometries -- but any downstream reader must key on the unordered pair and not "
+        "on the string.",
         "G6-NOT-RE-RUN: the 3x3x3 cube is built only to verify the partition rule against "
         "the memo's own six published fragment lists; its dynamics are not recomputed "
         "here, and its 917 ceiling row is quoted from the pinned receipt in the discussion "

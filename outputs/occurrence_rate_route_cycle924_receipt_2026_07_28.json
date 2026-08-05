@@ -1492,7 +1492,7 @@
       "what": "all falsifier teeth fire"
     },
     {
-      "detail": "2.8s / 900.0s",
+      "detail": "3.1s / 900.0s",
       "id": "Z-RUNTIME",
       "pass": true,
       "what": "runtime within budget"
@@ -1500,7 +1500,7 @@
   ],
   "claim_type": "bounded_theorem",
   "cycle": 924,
-  "runtime_seconds": 2.8,
+  "runtime_seconds": 3.1,
   "science_digest": "ccd98a3916cc40d54478078de9b70bbac79424941aebe9d3d72de6e716cd92f1",
   "target": "the R-eta obligation's live route 3: 'Supply an occurrence theorem whose event-rate ratio licenses the same value without importing it.' The value is Phi_target = S_sum = 3 * L3(1,2) = 2/3.",
   "totals": {

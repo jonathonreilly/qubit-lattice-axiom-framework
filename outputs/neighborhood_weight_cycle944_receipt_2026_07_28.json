@@ -1,0 +1,1958 @@
+{
+ "block": "cycle944_neighborhood_weight",
+ "campaign": "toe-time-expansion-20260802",
+ "cycles": [
+  944
+ ],
+ "claim_type": "bounded_theorem",
+ "authority": "none",
+ "audit": "unset",
+ "fraction_label": "bookkeeping count, not probability",
+ "headline": "THE OWNER'S CLAUSE IS PRICED, BOTH DRAFTS, AND IT HAS IMMEDIATE TESTABLE CONTENT: same-neighbourhood site pairs EXIST on every current arena (164 control sites fall into 54 classes with a largest class of 30; 134 M_A sites into 52; Cycle 936's six sites into THREE -- {254,540,558} | {450,475} | {715}), so the class-equality law is non-vacuous where Cycle 940's symmetry route was vacuous.  Draft B is NOT 'A3 + locality': it is A3 + locality + COVARIANCE, inherited free from the Admissibility axiom's own first sentence, which collapses the control arena's freedom from 164 to 3/6/7 rather than to 54.  Draft B also carries a textual conflict Draft A does not (the memo's own 'It does not ... supply transition probabilities or weights'), and Draft A carries a wording defect Draft B does not (a reading that forces uniform menus).  Neither draft supplies the function.",
+ "VERDICT": "PRICED, NOT PROPOSED.  The clause buys a class-equality law whose bite is entirely carried by a formalization the axiom memo does not supply (from 1 class to 164 on the control arena, depending on the reading); buys covariance for free in Draft B's placement and not at all in Draft A's; subsumes Cycle 936's measured world-indexing constraint and the ACROSS-SITE half of the naturality question Cycle 940 could not derive, while remaining silent about the WITHIN-MENU asymmetry that was 940's actual subject; conflicts with no primitive and no axiom text except the Admissibility non-supply sentence (Draft B only) and the Open Gates parenthesis (both drafts); and supplies no number.  NO RECOMMENDATION.",
+ "THE_OWNERS_CANDIDATE": {
+  "verbatim": "I believe the neighborhood map not only modulates the available possibilities, but their probabilities.",
+  "DRAFT_A": "each admissible possibility at a site carries a weight, and the weights are a lawful function of the site's neighborhood map.",
+  "DRAFT_B": "the neighborhood map determines both which possibilities are admissible at a site and the weight each carries"
+ },
+ "certificates": {
+  "A_PINS": {
+   "certificate": "A_PINS",
+   "pins": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+     "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+     "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+     "bytes": 8846
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+     "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+     "git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+     "bytes": 5313
+    },
+    "docs/RETYPED_WORLDS_ARE_SETUPS_SELECTION_SITES_EXIST_CYCLE911_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "sha256": "40c80402e2dfd283a4309433cfa48705c45567efadf43107e074332f1cbf5ff0",
+     "git_blob": "53a229b4143f59f5f8c12ccb9f488682bdc2714c",
+     "bytes": 10369
+    },
+    "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "sha256": "43769f08abee65bc535147ad8cf52018c3a71d8afa40af19ddddb00e5cd3315a",
+     "git_blob": "7b60ee552d8346840ee1dfeec0800079e3981362",
+     "bytes": 10613
+    },
+    "docs/WRITABLE_ENDPOINT_BORN_CAPABLE_FIRST_BRANCH_PAIRS_CYCLE918_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "sha256": "40333f3bb83f77a3e7c89eb232bbe24c01885cdcfdcab7888ae319419c1efaee",
+     "git_blob": "186af20c471f8cbb4e9c9871fc2ee652d813e348",
+     "bytes": 12839
+    },
+    "docs/LAW_RELAXATION_CLASSIFIED_A3_SOLE_RELAXATION_CYCLE925_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "sha256": "ed36a7afb889a45ccde08a4f5d6735fa028a12e4aaa9edda3348ab687678c676",
+     "git_blob": "37f5bad6f1ef329890e7cebee97ba99a5f699356",
+     "bytes": 15787
+    },
+    "docs/CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "sha256": "6cdec178602e936a07a86c43627b431527a5d328c2b269d0edd594d245831eac",
+     "git_blob": "ffc0e6d1c3527ef75286abc0e50de0a3a3588f53",
+     "bytes": 12537
+    },
+    "docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "sha256": "a89185085032947c4fcc34fd99b1507307f70cbaf82dd82e569a37562114ef11",
+     "git_blob": "69e712e1b8f9ecee3488f8698cfe577fac415c07",
+     "bytes": 11042
+    },
+    "outputs/type_vacuity_cycle911_receipt_2026_07_28.json": {
+     "sha256": "90d1fb2a3ac31065f75345ac1e98520622aa6302c50dcf4a8a11f44a1cde11b0",
+     "git_blob": "af51342a72c56db8e562e1f1a607f207508b42ed",
+     "bytes": 159020
+    },
+    "outputs/selection_function_cycle913_receipt_2026_07_28.json": {
+     "sha256": "0de8d785c2139126b813166e090493d65cb289508b46de7f928b440facb82ecd",
+     "git_blob": "5ac6a40c316c7a90bcf867eb6507518ba976169b",
+     "bytes": 366721
+    },
+    "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json": {
+     "sha256": "849ad2bbb4abc8c9eda5541246784e2bdb69feaf423aac7c6f3aff83f6062bbd",
+     "git_blob": "5704619b21d9a3af312956580355d6dd5a303f53",
+     "bytes": 695475
+    },
+    "outputs/law_relaxation_cycle925_receipt_2026_07_28.json": {
+     "sha256": "f4fabe50ed8b775f2f1288380824ae04f0129f4f136e3b338bafd05647031757",
+     "git_blob": "fed1b28e9e5cfe731a541645dce705541d69c967",
+     "bytes": 364478
+    },
+    "outputs/choice_substrate_cycle936_receipt_2026_07_28.json": {
+     "sha256": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028",
+     "git_blob": "d7b786fccc0435d139339c141dbad75c9f8d799b",
+     "bytes": 328031
+    },
+    "outputs/symmetric_weights_cycle940_receipt_2026_07_28.json": {
+     "sha256": "08888bf454a7f3c803f5c373d7688d67a9f0d974259f3e455c139d6c78e288cf",
+     "git_blob": "a24af8e08cc090b39802265d8b8d5ea3d1495d53",
+     "bytes": 81823
+    },
+    "docs/audit/AXIOM_MINIMALITY_POLICY.md": {
+     "sha256": "814691ce9cc87652feaee7883237ba494314cbbfafccdb0f169d1a5fc2a9a1be",
+     "git_blob": "e83fee386be2bd36da97fc33a2f5febf9dc068fd",
+     "bytes": 50303
+    },
+    "docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md": {
+     "sha256": "61447acfffc011effac5928c42874b76910604ff54817e21a02fec150e7b2f0b",
+     "git_blob": "a0c61dfc7b12086b301fa4832216d56bf0862796",
+     "bytes": 8226
+    },
+    "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md": {
+     "sha256": "da3a6209b88567461b9711fbbc8b243fa5001b5546fdb5588b0f1b99cdeee583",
+     "git_blob": "f6181e4e9b70e870aedd096cfd017829d7d97060",
+     "bytes": 10992
+    },
+    "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md": {
+     "sha256": "3ac4bd6220689c590609dc589b584ab1496aaa2450cc2de8e56d3413ec18ac98",
+     "git_blob": "cb84603f2568b81eae44a68e1153444386cbec14",
+     "bytes": 13075
+    }
+   },
+   "quotes": {
+    "ADM_RULE": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
+     "role": "the axiom's sentence 1: the rule's existence AND its covariance group",
+     "byte_present": true
+    },
+    "ADM_VARY": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.",
+     "role": "the axiom's sentence 2: the determination clause -- the ONLY 'neighborhood map' structure the axiom itself supplies",
+     "byte_present": true
+    },
+    "ADM_NOT_DYNAMICS": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "Admissibility is not a dynamics axiom.",
+     "role": "the non-supply paragraph's subject line",
+     "byte_present": true
+    },
+    "ADM_NONSUPPLY": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "It does not choose a Hamiltonian or transfer operator, supply transition probabilities or weights, select a scalar or nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or provide a record-production process or physical persistence dynamics.",
+     "role": "THE DECISIVE NON-SUPPLY CLAUSE: its subject is Admissibility itself",
+     "byte_present": true
+    },
+    "ADM_RESTATE": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "The admissibility rule determines the available possibilities at each site from the nearest-neighbor conditions, and those available possibilities vary with those conditions, before a record can lock one available local possibility.",
+     "role": "the memo's own closing restatement of the determination clause",
+     "byte_present": true
+    },
+    "LATTICE_NOPRIV": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "No site is privileged. Sites are distinguished by the supplied lattice structure alone.",
+     "role": "the no-privilege idiom, site version",
+     "byte_present": true
+    },
+    "QUBIT_NOPRIV": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "No possibility is privileged. Possibilities are distinguished by the supplied algebraic structure alone.",
+     "role": "the no-privilege idiom, possibility version (Cycle 940's self-defeating clause, here re-used as a SHAPE precedent, not as a naturality ground)",
+     "byte_present": true
+    },
+    "RECORD_FORM": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "Records form.",
+     "role": "the 2026-07-04 occurrence sentence",
+     "byte_present": true
+    },
+    "RECORD_LOCK": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "When present, a record locks exactly one admissible local possibility. A site never carries more than one record; records are permanent.",
+     "role": "Record's locking clause -- the A3 sentence's structural housing",
+     "byte_present": true
+    },
+    "RECORD_READ": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "Only records are readable. A readout value is determined by record content alone.",
+     "role": "Record's readability clause -- tested against neighbourhood formalizations that read non-record wires",
+     "byte_present": true
+    },
+    "QUAL_ONLY_NAMED": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "These axioms state only their named primitive content.",
+     "role": "the Qualification's opening -- why an unstated weight clause is not latent",
+     "byte_present": true
+    },
+    "QUAL_STATE": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "A state is a configuration of records.",
+     "role": "the state definition -- makes the neighbourhood map STATE-VALUED",
+     "byte_present": true
+    },
+    "QUAL_LAW": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "A law privileges no states. Its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer.",
+     "role": "the law clause -- the weight FUNCTION is tested against it",
+     "byte_present": true
+    },
+    "OPEN_GATES_FORMATION": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "context selection, measurement basis selection, Born weights, probability rules, update laws, decoherence mechanisms, and formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate);",
+     "role": "THE GATE: 'with what weight' is one of four named formation-rule conjuncts held OUTSIDE axiom content",
+     "byte_present": true
+    },
+    "HIST_PRECEDENT": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "The 2026-07-04 owner-approved revision appended the formation sentence \"Records form.\" to the Record axiom: occurrence became named axiom content, while every formation rule (which admissible possibility, at which site, with what weight, at what rate) remained downstream supplier content.",
+     "role": "THE PRECEDENT: the identical move, executed once before, on the OCCURRENCE conjunct",
+     "byte_present": true
+    },
+    "BORN_WEIGHTS_CITE": {
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "Born weights, readout-context selection, central-sector decomposition",
+     "role": "'Born weights' named a third time as content requiring a separate retained authority",
+     "byte_present": true
+    },
+    "RSP_LAWS_STATE": {
+     "source": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+     "quote": "The laws do not pick the state; the world does, among the states the laws permit.",
+     "role": "the laws/state split -- the primitive's core sentence",
+     "byte_present": true
+    },
+    "RSP_POINTWISE": {
+     "source": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+     "quote": "Derivations may evaluate at the realized state, pointwise.",
+     "role": "the licence the weight FUNCTION would be evaluated under",
+     "byte_present": true
+    },
+    "RSP_NOTHING_MORE": {
+     "source": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+     "quote": "Nothing more is supplied: no averaging over alternatives, no typical or generic claim, and no quoting a number that would differ had another law-admissible state been realized.",
+     "role": "THE NO-AVERAGING CLAUSE -- the standing block on cashing weights as census frequencies",
+     "byte_present": true
+    },
+    "RSP_ZERO_CONTENT": {
+     "source": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+     "quote": "It carries zero state-contingent content: no state, averaging over alternatives, measure, weighting, probability rule, typicality claim, genericity claim, preferred state, default state, boundary condition, normalization rule, or value is supplied by it.",
+     "role": "THE NON-SUPPLY CLAUSE -- note the operative words 'supplied by it'",
+     "byte_present": true
+    },
+    "RSP_FUNCTIONAL": {
+     "source": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+     "quote": "A row may evaluate an already-defined state functional at the supplied realized state. A value that would change under a different law-admissible realized state is registered data, not derivation output.",
+     "role": "THE TEMPLATE the owner's clause fits: supply the functional as law, evaluate pointwise",
+     "byte_present": true
+    },
+    "RSP_NOT_DO": {
+     "source": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+     "quote": "It does not supply a state, state-selection rule, averaging over alternatives, measure, weighting, probability rule, typicality claim, genericity claim, preferred state, default state, boundary condition, normalization rule, or state-contingent value.",
+     "role": "the primitive's own 'What This Does Not Do' list",
+     "byte_present": true
+    },
+    "C925_ONE_SENTENCE": {
+     "source": "docs/LAW_RELAXATION_CLASSIFIED_A3_SOLE_RELAXATION_CYCLE925_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "quote": "The successor substrate's design space is one sentence wide.",
+     "role": "the classification theorem's headline -- the requiredness anchor",
+     "byte_present": true
+    },
+    "C918_ADM_SHAPE_ABSENT": {
+     "source": "docs/WRITABLE_ENDPOINT_BORN_CAPABLE_FIRST_BRANCH_PAIRS_CYCLE918_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "quote": "The write moved the selection from SETUP COORDINATE to TRAJECTORY HISTORY, not to neighbourhood conditions; the Admissibility-sentence-shaped dependence is still absent.",
+     "role": "the measured absence of neighbourhood dependence for the REALIZED value -- the clause's nearest measured tension",
+     "byte_present": true
+    },
+    "C911_MENU_GAP": {
+     "source": "docs/RETYPED_WORLDS_ARE_SETUPS_SELECTION_SITES_EXIST_CYCLE911_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "quote": "which is weaker than",
+     "role": "the menu-variation gap: the menu does not vary with neighbour conditions on this substrate",
+     "byte_present": true
+    },
+    "C940_INDEPENDENT": {
+     "source": "docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "quote": "they are LOGICALLY INDEPENDENT",
+     "role": "naturality and A3 are logically independent (Cycle 940)",
+     "byte_present": true
+    },
+    "POLICY_NO_LAUNDERING": {
+     "source": "docs/audit/AXIOM_MINIMALITY_POLICY.md",
+     "quote": "**No laundering.** Admissibility does not choose the readout context, select a measurement basis, provide a formation rule, define probabilities, assign weights, normalize readouts, specify an update law, provide measurement/decoherence dynamics, define time metric or arrow, choose a Hamiltonian or transfer operator, select a kinetic branch, or identify physical observables.",
+     "role": "THE DECISIVE SURFACE.  Owner-approved BINDING policy.  'assign weights' is a standalone item with no 'transition' qualifier, so it closes the one parse under which Draft B escaped the axiom memo's own non-supply sentence.",
+     "byte_present": true
+    },
+    "POLICY_VARY_WITH_EXISTENTIAL": {
+     "source": "docs/audit/AXIOM_MINIMALITY_POLICY.md",
+     "quote": "\"Vary with\" is existential, not per-neighborhood: availability is not constant across nearest-neighbor conditions; under most conditions the full domain may remain available.",
+     "role": "THE 2026-07-02 OWNER RULING.  The determination clause is EXISTENTIAL.  Both drafts read it as a per-site FUNCTION -- a silent strengthening of the existing axiom, priced in Q1.",
+     "byte_present": true
+    },
+    "POLICY_PANEL_UNIFORM": {
+     "source": "docs/audit/AXIOM_MINIMALITY_POLICY.md",
+     "quote": "a set-level reading would make the sentence itself name a weighting (uniform), contradicting this section's certification that the 2026-07-02 sentences name no weighting or value",
+     "role": "INDEPENDENT CORROBORATION of this block's reading-R1 finding: a five-seat blind panel already rejected a reading that would make an axiom sentence name a UNIFORM weighting.",
+     "byte_present": true
+    },
+    "FENCE_NAME": {
+     "source": "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+     "quote": "The no-weights fence says Admissibility does not supply:",
+     "role": "the repo's canonical name for the surface both drafts cross",
+     "byte_present": true
+    },
+    "GC1_COEXISTENCE": {
+     "source": "docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md",
+     "quote": "possibility is in no menu; availability (Admissibility) is untouched;",
+     "role": "THE PRIOR PROPOSAL'S OWN SEPARATION CLAUSE -- graded_constraint v1 kept the two halves APART on purpose.",
+     "byte_present": true
+    },
+    "GC2_FILTERS": {
+     "source": "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md",
+     "quote": "availability filters outcomes, never weights",
+     "role": "graded_constraint v2's sharpest statement of the boundary the owner's clause fuses across",
+     "byte_present": true
+    },
+    "GC2_CHANNEL": {
+     "source": "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md",
+     "quote": "dependent on the surrounding record configuration through the nearest-neighbor channel",
+     "role": "the NEAREST-NEIGHBOUR CONDITIONING the prior proposal already carried -- the owner's clause is not novel in this respect",
+     "byte_present": true
+    }
+   },
+   "pass": true
+  },
+  "B_RESTRICTION_GATE": {
+   "certificate": "B_RESTRICTION_GATE",
+   "gates": [
+    {
+     "gate": "R936_sites",
+     "pass": true,
+     "detail": "[254, 450, 475, 540, 558, 715]"
+    },
+    {
+     "gate": "R936_site_count",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_atom_count",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_occasion_count",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_occasions",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_atoms",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_leaves",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_branch_nodes",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_depth",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_branching",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_distinct_observables",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_atoms_effective",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_freedom_per_site",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_freedom_per_occasion",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_freedom_global",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_forced_identifications",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_no_collapse",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R936_factorizes",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_sites_declared",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_no_swap",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_genuine_menu_sites",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_timing_only",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_A1_holds",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_A2_holds",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_LR_separated",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_refine_bare_colours",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_refine_bare_LR",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_refine_bare_share",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_refine_popcount_colours",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_refine_popcount_LR",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_refine_popcount_share",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_refine_exact_colours",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_refine_exact_LR",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_refine_exact_share",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R940_coverage_zero",
+     "pass": true,
+     "detail": "coverage 0/6 marker"
+    },
+    {
+     "gate": "R940_freedom_unchanged",
+     "pass": true,
+     "detail": "freedom 6 -> 6 marker"
+    },
+    {
+     "gate": "R913_lock_points",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R913_split",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R913_nn_contexts",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R913_cubic_classes",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R913_menu_everywhere",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R918_MA_locks",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R918_MA_pairs",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R918_MA_branch_pairs",
+     "pass": true,
+     "detail": ""
+    },
+    {
+     "gate": "R918_MA_poss",
+     "pass": true,
+     "detail": ""
+    }
+   ],
+   "spec_inconsistency_disclosed": {
+    "spec_text": "918's M_A arena (the 134 lock sites / 328 pairs)",
+    "pinned_918_M_A": {
+     "lock_points": 134,
+     "site_possibility_pairs": 268
+    },
+    "pinned_913_CONTROL": {
+     "lock_points": 164,
+     "site_possibility_pairs": 328
+    },
+    "resolution": "both arenas are carried separately and labelled; the spec conflated the M_A lock count with the CONTROL pair count.  No result depends on the conflation."
+   },
+   "pass": true
+  },
+  "Q0_PRIOR_ART_SWEEP": {
+   "certificate": "Q0_PRIOR_ART_SWEEP",
+   "verdict": "A NEIGHBOURHOOD-CONDITIONED WEIGHT CLAUSE HAS BEEN PROPOSED BEFORE, TWICE, AND WAS NEVER REGISTERED: graded_constraint v1 and v2 (2026-07-04) both put a weight function on menus of admissible possibilities, conditioned 'through the nearest-neighbor channel'.  The owner's candidate is therefore NOT novel in its neighbourhood conditioning.  What IS novel is the FUSION: every prior version keeps availability and weight apart on purpose ('availability (Admissibility) is untouched'; 'availability filters outcomes, never weights'), and the owner's clause makes one rule do both jobs.  Against that, the repo carries FIVE separate non-supply surfaces naming exactly this content as excluded -- the Open Gates list, the Admissibility non-supply sentence ('the no-weights fence', which has a repo name), the 'Born weights' citation rule, and the owner-approved BINDING 'No laundering' clause in the audit policy -- plus one precedent for the shape of such an edit (the 2026-07-04 occurrence revision) and one prior panel ruling against a reading that would make an axiom name a uniform weighting.",
+   "the_open_gates_relationship": {
+    "question": "is Draft B the Open-Gates formation-rule sentence made specific?",
+    "answer": "PARTIALLY -- and the part matters.",
+    "the_gate_byte_quoted": "context selection, measurement basis selection, Born weights, probability rules, update laws, decoherence mechanisms, and formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate);",
+    "the_gate_has_four_conjuncts": [
+     "which admissible possibility a new record locks",
+     "at which site",
+     "with what weight",
+     "or at what rate"
+    ],
+    "which_conjuncts_draft_B_touches": [
+     "with what weight"
+    ],
+    "which_conjuncts_draft_B_leaves_open": [
+     "which admissible possibility a new record locks",
+     "at which site",
+     "or at what rate"
+    ],
+    "the_precise_relationship": "Draft B is NOT the Open-Gates sentence made specific.  It is ONE of that sentence's four conjuncts, and it specifies that conjunct's DETERMINATION RELATION rather than its value: the gate asks 'with what weight', and Draft B answers 'with whatever weight the neighborhood map assigns' -- which names the argument of the weight function and leaves the function itself unnamed.  Adopting either draft therefore does NOT close the formation-rule gate; it re-partitions it, moving the weight conjunct's ARGUMENT inside the axioms while leaving the weight conjunct's VALUE, and all three other conjuncts, outside.",
+    "consequence_for_the_memo_text": "both drafts require the Open Gates list to be edited: the parenthesis '(which admissible possibility a new record locks, at which site, with what weight, or at what rate)' would no longer be wholly outside axiom content.  That edit is a cost BOTH drafts carry."
+   },
+   "hits": [
+    {
+     "id": "PA0a_GRADED_CONSTRAINT_V1",
+     "source": "docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md",
+     "quote": "possibility is in no menu; availability (Admissibility) is untouched;",
+     "class": "(a) SAME CLAUSE, PROPOSED BEFORE -- and NEVER REGISTERED",
+     "finding": "graded_constraint v1 (2026-07-04) proposed a weight function on menus of admissible possibilities whose domain is 'every nearest-neighbor composite' and whose conditioning runs 'through the nearest-neighbor channel'.  IT IS THE OWNER'S CLAUSE ALREADY DRAFTED ONCE.  It was filed as a Class D primitive-registration proposal, marked NOT AT APPROVAL GRADE, and never approved.  THE DIFFERENCE THAT MATTERS: v1 deliberately kept the two halves APART -- its own 'coexistence' bullet says 'availability (Admissibility) is untouched'.  The owner's candidate FUSES them into one sentence.  The fusion, not the neighbourhood-conditioning, is the novel content."
+    },
+    {
+     "id": "PA0b_GRADED_CONSTRAINT_V2",
+     "source": "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md",
+     "quote": "availability filters outcomes, never weights",
+     "class": "(a) SAME CLAUSE, v2 candidate -- unregistered",
+     "finding": "the repaired candidate carries the same nearest-neighbour conditioning (GC2_CHANNEL) and states the boundary the owner's clause crosses in five words: 'availability filters outcomes, never weights'.  Every prior version of this idea in the repo holds that line; the owner's candidate is the first to cross it."
+    },
+    {
+     "id": "PA0c_POLICY_NO_LAUNDERING",
+     "source": "docs/audit/AXIOM_MINIMALITY_POLICY.md",
+     "quote": "**No laundering.** Admissibility does not choose the readout context, select a measurement basis, provide a formation rule, define probabilities, assign weights, normalize readouts, specify an update law, provide measurement/decoherence dynamics, define time metric or arrow, choose a Hamiltonian or transfer operator, select a kinetic branch, or identify physical observables.",
+     "class": "(c) NON-SUPPLY -- OWNER-APPROVED AND BINDING",
+     "finding": "THE HARDEST SURFACE IN THE SWEEP.  'Admissibility does not ... define probabilities, assign weights' is owner-approved binding audit policy, and 'assign weights' stands alone with no 'transition' qualifier.  This CLOSES the strained parse that let Draft B escape the axiom memo's own non-supply sentence.  Draft B contradicts TWO surfaces, one of them binding policy; Draft A contradicts NEITHER."
+    },
+    {
+     "id": "PA0d_VARY_WITH_EXISTENTIAL",
+     "source": "docs/audit/AXIOM_MINIMALITY_POLICY.md",
+     "quote": "\"Vary with\" is existential, not per-neighborhood: availability is not constant across nearest-neighbor conditions; under most conditions the full domain may remain available.",
+     "class": "(c) SCOPE RULING that both drafts silently strengthen",
+     "finding": "the 2026-07-02 owner ruling fixes 'vary with' as EXISTENTIAL -- availability is merely not constant across neighbour conditions.  Both drafts speak of the neighborhood map DETERMINING things, i.e. a per-site function.  Adopting either would therefore also convert the existing menu clause from an existential to a functional reading -- a second, unadvertised strengthening.  Priced in Q1."
+    },
+    {
+     "id": "PA0e_PANEL_UNIFORM",
+     "source": "docs/audit/AXIOM_MINIMALITY_POLICY.md",
+     "quote": "a set-level reading would make the sentence itself name a weighting (uniform), contradicting this section's certification that the 2026-07-02 sentences name no weighting or value",
+     "class": "(a) PRIOR RULING directly on this block's reading R1",
+     "finding": "a five-seat blind physicist panel already considered and rejected a reading under which an axiom sentence would 'name a weighting (uniform)'.  That is exactly the failure mode this block independently derives for Draft A's reading R1.  The finding is corroborated, not novel."
+    },
+    {
+     "id": "PA0f_FENCE_NAME",
+     "source": "docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md",
+     "quote": "The no-weights fence says Admissibility does not supply:",
+     "class": "(c) NON-SUPPLY -- the surface has a repo name",
+     "finding": "'the no-weights fence'.  The clause both drafts cross is named, quoted and machine-needled across the repo."
+    },
+    {
+     "id": "PA1_OPEN_GATES",
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "context selection, measurement basis selection, Born weights, probability rules, update laws, decoherence mechanisms, and formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate);",
+     "class": "(c) NON-SUPPLY / the clause's own gate",
+     "finding": "the exact content the owner's clause would move inward, named as OUTSIDE the four axioms.  One of four conjuncts."
+    },
+    {
+     "id": "PA2_ADM_NONSUPPLY",
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "It does not choose a Hamiltonian or transfer operator, supply transition probabilities or weights, select a scalar or nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or provide a record-production process or physical persistence dynamics.",
+     "class": "(c) NON-SUPPLY -- and DIRECTLY CONTRADICTED BY DRAFT B",
+     "finding": "the subject of this sentence is Admissibility itself.  Draft B makes the neighborhood map -- Admissibility's own object -- determine the weight, which this sentence denies.  Draft B cannot be added without amending or deleting the phrase 'supply transition probabilities or weights'.  Draft A, being standalone, leaves the sentence TRUE (Admissibility alone still supplies no weight; a separate clause does).  THIS IS THE SHARPEST PRICING DIFFERENCE BETWEEN THE TWO DRAFTS."
+    },
+    {
+     "id": "PA3_HIST_PRECEDENT",
+     "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "quote": "The 2026-07-04 owner-approved revision appended the formation sentence \"Records form.\" to the Record axiom: occurrence became named axiom content, while every formation rule (which admissible possibility, at which site, with what weight, at what rate) remained downstream supplier content.",
+     "class": "(a) SAME MOVE, executed once before on a DIFFERENT conjunct",
+     "finding": "on 2026-07-04 the owner moved the OCCURRENCE conjunct into axiom content ('Records form.') and explicitly left the four formation-rule conjuncts outside.  The current candidate is the same move, one conjunct later.  There is a precedent for the SHAPE of the edit; there is no prior proposal of THIS conjunct."
+    },
+    {
+     "id": "PA4_C925_REDUCTION",
+     "source": "docs/LAW_RELAXATION_CLASSIFIED_A3_SOLE_RELAXATION_CYCLE925_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "quote": "The residual specification is therefore a sentence about the available possibilities at a site and nothing else",
+     "class": "(b) ADJACENT -- the A3 shape, with no neighbourhood clause",
+     "finding": "Cycle 925 reduced the whole relaxation space to ONE sentence and quoted its shape from three pinned texts.  None of the three carries a neighbourhood-functional rider.  The owner's clause is therefore a STRENGTHENING of the reduced sentence, not the reduced sentence."
+    },
+    {
+     "id": "PA5_C913_ARENA",
+     "source": "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "quote": "a weight over the counterfactual menu is a weight over setups UNDER ANOTHER NAME",
+     "class": "(b) ADJACENT -- the arena, no neighbourhood clause",
+     "finding": "the A3 arena statement Cycle 925 anchored its reduction on."
+    },
+    {
+     "id": "PA6_C918_ABSENCE",
+     "source": "docs/WRITABLE_ENDPOINT_BORN_CAPABLE_FIRST_BRANCH_PAIRS_CYCLE918_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "quote": "The write moved the selection from SETUP COORDINATE to TRAJECTORY HISTORY, not to neighbourhood conditions; the Admissibility-sentence-shaped dependence is still absent.",
+     "class": "(c) MEASURED ABSENCE -- the clause's nearest measured tension",
+     "finding": "Cycle 918 measured that the REALIZED selection is not a function of neighbourhood conditions on this substrate.  That is a fact about which item occurs (state content), not about the weight (law content), so it does not refute the clause -- but it is the strongest evidence in the repo that Admissibility-shaped dependence is absent where anyone has looked for it."
+    },
+    {
+     "id": "PA7_C911_MENU_GAP",
+     "source": "docs/RETYPED_WORLDS_ARE_SETUPS_SELECTION_SITES_EXIST_CYCLE911_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "quote": "it does not VARY with nearest-neighbour conditions on this substrate, which is weaker than the Admissibility sentence asserts",
+     "class": "(c) MEASURED ABSENCE -- the menu-variation gap",
+     "finding": "the substrate does not even realise the FIRST half of Draft B (menu variation with neighbourhood).  Draft B's first conjunct is therefore already an unmet axiom obligation on this substrate, independent of the weight half."
+    },
+    {
+     "id": "PA8_C940_NEGATIVE",
+     "source": "docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "quote": "the naturality antecedent is NOT DERIVABLE",
+     "class": "(b) ADJACENT -- the negative the clause converts into a feature",
+     "finding": "Cycle 940 proved weight-naturality underivable AS A SEPARATE IMPORT and logically independent of A3.  The owner's clause does not derive naturality either; it makes a RESTRICTED form of it definitional (see Q2 ii)."
+    }
+   ],
+   "pass": true
+  },
+  "Q1_THE_NEIGHBORHOOD_MAP_FORMALIZED": {
+   "certificate": "Q1_THE_NEIGHBORHOOD_MAP_FORMALIZED",
+   "the_axiom_never_says_neighborhood_map": {
+    "the_axioms_own_phrase": "the nearest-neighbor conditions",
+    "quotes": [
+     "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.",
+     "The admissibility rule determines the available possibilities at each site from the nearest-neighbor conditions, and those available possibilities vary with those conditions, before a record can lock one available local possibility."
+    ],
+    "consequence": "formalizing the owner's term is a decision the axiom does not make for us, and the clause's entire content depends on it."
+   },
+   "THE_EXISTENTIAL_VS_FUNCTIONAL_FINDING": {
+    "the_ruling": "\"Vary with\" is existential, not per-neighborhood: availability is not constant across nearest-neighbor conditions; under most conditions the full domain may remain available.",
+    "what_it_settles": "the existing Admissibility determination clause is EXISTENTIAL: it says availability is not constant across neighbour conditions, and excludes only the vacuous rule and the neighbour-independent constant rule.  It does NOT assert that the neighbourhood determines the menu as a function of each site's own conditions.",
+    "what_both_drafts_assume": "a per-site FUNCTION.  Draft B says the map 'determines' the menu and the weight; Draft A's class-equality content is meaningless unless the map fixes the menu pointwise.  The neighbourhood CLASSES this block computes are only well defined under the functional reading.",
+    "the_cost_this_exposes": "ADOPTING EITHER DRAFT SILENTLY UPGRADES AN EXISTING AXIOM CLAUSE FROM EXISTENTIAL TO FUNCTIONAL.  That is a second constitutional change riding inside the first, it was not named in either draft, and it is not reversible by wording: a weight that is a function of the neighbourhood presupposes a menu that is a function of the neighbourhood.  The owner should know the clause carries this passenger.",
+    "who_pays_more": "Draft B pays it explicitly (its first conjunct RESTATES the menu clause in functional form, visibly).  Draft A pays it silently (it never mentions the menu clause but cannot be read without strengthening it).  On this axis Draft B is the HONEST one -- the reverse of the CC1/CC7 axis.",
+    "corroboration": "Cycle 911's adopted checker caveat measured the same gap from the other side: the menu is 2 at every globally clean boundary and 'does not VARY with nearest-neighbour conditions on this substrate, which is weaker than the Admissibility sentence asserts'."
+   },
+   "formalizations": {
+    "F0_EMPTY": {
+     "definition": "the neighborhood map is trivial -- every site has the same (empty) neighbourhood.",
+     "axiom_warrant": "NONE.  Included as the coarsest endpoint of the lattice: it is what the clause degenerates to if 'neighborhood map' is read as carrying no information.",
+     "circular": false,
+     "vacuous": false,
+     "note": "forces ONE weight for the whole substrate -- exactly Cycle 936's 'reading_global' count of 1."
+    },
+    "F1_OPENNESS": {
+     "definition": "the neighborhood map is the k=2 condition alphabet: for each nearest neighbour, recorded or open.",
+     "axiom_warrant": "STRONG.  Record supplies exactly one bit per site ('When present, a record locks...'), and 'A state is a configuration of records' makes presence the minimal state-valued neighbour condition.",
+     "circular": false,
+     "vacuous": false,
+     "note": "the coarsest NON-trivial reading that uses only Record's own vocabulary."
+    },
+    "F2_ORDINALS": {
+     "definition": "the neighborhood map is the pair of nearest-neighbour record ordinals (record counts) at the lock tick.",
+     "axiom_warrant": "MODERATE.  Counts are readout-shaped ('scalar readout I is additive'), so this reading is Record-legible; but it imports counting structure the Admissibility sentence does not name.",
+     "circular": false,
+     "vacuous": false,
+     "note": ""
+    },
+    "F3_NN_RECORD_CONTENT": {
+     "definition": "the neighborhood map is the full nearest-neighbour record content at the lock tick (Cycle 913's context fingerprint; Cycle 918's ladder entry R1_nearest_neighbour_record_content).",
+     "axiom_warrant": "STRONGEST.  Cycle 918's own gloss calls this rung 'the Admissibility sentence's own vocabulary under the Cycle 911 declared embedding'.  This is the block's PRIMARY formalization.",
+     "circular": false,
+     "vacuous": false,
+     "note": ""
+    },
+    "F4_SITE_NAMING": {
+     "definition": "the neighborhood map is taken to include coordinates that NAME the site (token positions / absolute lock tick).",
+     "axiom_warrant": "NONE, and Cycle 913 already flagged the failure mode: a fingerprint that 'names the site rather than describing its conditions' is DETERMINATION-IS-VACUOUS.",
+     "circular": false,
+     "vacuous": true,
+     "note": "the vacuity endpoint: every site is its own class, the class-equality law is empty, and the clause buys nothing."
+    }
+   },
+   "rejected_circular_formalization": {
+    "id": "F5_CIRCULAR_PROBE",
+    "definition": "the neighborhood map is taken to include the realized menu item at the site.",
+    "why_rejected": "CIRCULAR: the realized item is what the weight is a weight ON.  Defining the neighborhood map to include it makes the clause self-referential (the weight would be a function of the outcome it weighs) and additionally imports state content the site itself carries, which is not a NEIGHBOUR condition at all.  Rejected before any partition is computed; retained here as a named dead formalization and as tooth T5."
+   },
+   "class_partitions_by_arena": {
+    "C913_CONTROL_164": {
+     "F0_EMPTY": {
+      "classes": 1,
+      "sites": 164,
+      "largest_class": 164,
+      "class_size_histogram": {
+       "164": 1
+      },
+      "same_class_pairs_exist": true,
+      "number_of_same_class_pairs": 13366,
+      "freedom_bare_A3": 164,
+      "freedom_under_the_clause": 1,
+      "equations_the_clause_contributes": 163
+     },
+     "F1_OPENNESS": {
+      "classes": 4,
+      "sites": 164,
+      "largest_class": 94,
+      "class_size_histogram": {
+       "94": 1,
+       "67": 1,
+       "2": 1,
+       "1": 1
+      },
+      "same_class_pairs_exist": true,
+      "number_of_same_class_pairs": 6583,
+      "freedom_bare_A3": 164,
+      "freedom_under_the_clause": 4,
+      "equations_the_clause_contributes": 160
+     },
+     "F2_ORDINALS": {
+      "classes": 51,
+      "sites": 164,
+      "largest_class": 67,
+      "class_size_histogram": {
+       "67": 1,
+       "9": 1,
+       "7": 1,
+       "6": 1,
+       "5": 1,
+       "4": 3,
+       "3": 3,
+       "2": 9,
+       "1": 31
+      },
+      "same_class_pairs_exist": true,
+      "number_of_same_class_pairs": 2329,
+      "freedom_bare_A3": 164,
+      "freedom_under_the_clause": 51,
+      "equations_the_clause_contributes": 113
+     },
+     "F3_NN_RECORD_CONTENT": {
+      "classes": 54,
+      "sites": 164,
+      "largest_class": 30,
+      "class_size_histogram": {
+       "30": 1,
+       "29": 1,
+       "9": 2,
+       "8": 1,
+       "6": 1,
+       "5": 2,
+       "4": 1,
+       "3": 3,
+       "2": 8,
+       "1": 34
+      },
+      "same_class_pairs_exist": true,
+      "number_of_same_class_pairs": 999,
+      "freedom_bare_A3": 164,
+      "freedom_under_the_clause": 54,
+      "equations_the_clause_contributes": 110
+     },
+     "F4_SITE_NAMING": {
+      "classes": 164,
+      "sites": 164,
+      "largest_class": 1,
+      "class_size_histogram": {
+       "1": 164
+      },
+      "same_class_pairs_exist": false,
+      "number_of_same_class_pairs": 0,
+      "freedom_bare_A3": 164,
+      "freedom_under_the_clause": 164,
+      "equations_the_clause_contributes": 0
+     }
+    },
+    "C918_M_A_134": {
+     "F0_EMPTY": {
+      "classes": 1,
+      "sites": 134,
+      "largest_class": 134,
+      "same_class_pairs_exist": true,
+      "freedom_bare_A3": 134,
+      "freedom_under_the_clause": 1,
+      "equations_the_clause_contributes": 133,
+      "source": "PINNED LADDER SUMMARY (no per-lock rows are published in the 918 receipt for M_A; class sizes beyond the largest are therefore not reconstructible here -- declared)."
+     },
+     "F1_OPENNESS": {
+      "classes": 2,
+      "sites": 134,
+      "largest_class": 77,
+      "same_class_pairs_exist": true,
+      "freedom_bare_A3": 134,
+      "freedom_under_the_clause": 2,
+      "equations_the_clause_contributes": 132,
+      "source": "PINNED LADDER SUMMARY (no per-lock rows are published in the 918 receipt for M_A; class sizes beyond the largest are therefore not reconstructible here -- declared)."
+     },
+     "F2_ORDINALS": {
+      "classes": 50,
+      "sites": 134,
+      "largest_class": 57,
+      "same_class_pairs_exist": true,
+      "freedom_bare_A3": 134,
+      "freedom_under_the_clause": 50,
+      "equations_the_clause_contributes": 84,
+      "source": "PINNED LADDER SUMMARY (no per-lock rows are published in the 918 receipt for M_A; class sizes beyond the largest are therefore not reconstructible here -- declared)."
+     },
+     "F3_NN_RECORD_CONTENT": {
+      "classes": 52,
+      "sites": 134,
+      "largest_class": 15,
+      "same_class_pairs_exist": true,
+      "freedom_bare_A3": 134,
+      "freedom_under_the_clause": 52,
+      "equations_the_clause_contributes": 82,
+      "source": "PINNED LADDER SUMMARY (no per-lock rows are published in the 918 receipt for M_A; class sizes beyond the largest are therefore not reconstructible here -- declared)."
+     },
+     "F4_SITE_NAMING": {
+      "classes": 134,
+      "sites": 134,
+      "largest_class": 0,
+      "same_class_pairs_exist": false,
+      "freedom_bare_A3": 134,
+      "freedom_under_the_clause": 134,
+      "equations_the_clause_contributes": 0,
+      "source": "PINNED LADDER SUMMARY (no per-lock rows are published in the 918 receipt for M_A; class sizes beyond the largest are therefore not reconstructible here -- declared)."
+     }
+    },
+    "C936_SIX_SITES": {
+     "F0_EMPTY": {
+      "classes": 1,
+      "sites": 6,
+      "partition": [
+       [
+        254,
+        450,
+        475,
+        540,
+        558,
+        715
+       ]
+      ],
+      "largest_class": 6,
+      "same_class_pairs_exist": true,
+      "number_of_same_class_pairs": 15,
+      "freedom_bare_A3_per_site": 6,
+      "freedom_under_the_clause": 1,
+      "equations_the_clause_contributes": 5
+     },
+     "F1_OPENNESS": {
+      "classes": 3,
+      "sites": 6,
+      "partition": [
+       [
+        254,
+        540
+       ],
+       [
+        450,
+        475,
+        715
+       ],
+       [
+        558
+       ]
+      ],
+      "largest_class": 3,
+      "same_class_pairs_exist": true,
+      "number_of_same_class_pairs": 4,
+      "freedom_bare_A3_per_site": 6,
+      "freedom_under_the_clause": 3,
+      "equations_the_clause_contributes": 3
+     },
+     "F2_ORDINALS": {
+      "classes": 4,
+      "sites": 6,
+      "partition": [
+       [
+        254,
+        540
+       ],
+       [
+        450,
+        475
+       ],
+       [
+        558
+       ],
+       [
+        715
+       ]
+      ],
+      "largest_class": 2,
+      "same_class_pairs_exist": true,
+      "number_of_same_class_pairs": 2,
+      "freedom_bare_A3_per_site": 6,
+      "freedom_under_the_clause": 4,
+      "equations_the_clause_contributes": 2
+     },
+     "F3_NN_RECORD_CONTENT": {
+      "classes": 3,
+      "sites": 6,
+      "partition": [
+       [
+        254,
+        540,
+        558
+       ],
+       [
+        450,
+        475
+       ],
+       [
+        715
+       ]
+      ],
+      "largest_class": 3,
+      "same_class_pairs_exist": true,
+      "number_of_same_class_pairs": 4,
+      "freedom_bare_A3_per_site": 6,
+      "freedom_under_the_clause": 3,
+      "equations_the_clause_contributes": 3
+     },
+     "F4_SITE_NAMING": {
+      "classes": 6,
+      "sites": 6,
+      "partition": [
+       [
+        254
+       ],
+       [
+        450
+       ],
+       [
+        475
+       ],
+       [
+        540
+       ],
+       [
+        558
+       ],
+       [
+        715
+       ]
+      ],
+      "largest_class": 1,
+      "same_class_pairs_exist": false,
+      "number_of_same_class_pairs": 0,
+      "freedom_bare_A3_per_site": 6,
+      "freedom_under_the_clause": 6,
+      "equations_the_clause_contributes": 0
+     }
+    }
+   },
+   "six_site_detail": {
+    "254": {
+     "census_key": [
+      3,
+      1,
+      [
+       0,
+       2,
+       5
+      ]
+     ],
+     "control_lock_boundary": 39,
+     "nn_record_content_fingerprint": "37cf0b68631c097a",
+     "neighbour_ordinals": [
+      0,
+      0
+     ],
+     "openness": [
+      0,
+      0
+     ],
+     "cycle940_kind": "LOCK_TIMING_ONLY"
+    },
+    "450": {
+     "census_key": [
+      3,
+      3,
+      [
+       2,
+       4,
+       7
+      ]
+     ],
+     "control_lock_boundary": 4682,
+     "nn_record_content_fingerprint": "387174913ed71070",
+     "neighbour_ordinals": [
+      540,
+      6
+     ],
+     "openness": [
+      1,
+      1
+     ],
+     "cycle940_kind": "GENUINE_TWO_ITEM_MENU_PAIR"
+    },
+    "475": {
+     "census_key": [
+      3,
+      3,
+      [
+       4,
+       6,
+       9
+      ]
+     ],
+     "control_lock_boundary": 4680,
+     "nn_record_content_fingerprint": "387174913ed71070",
+     "neighbour_ordinals": [
+      540,
+      6
+     ],
+     "openness": [
+      1,
+      1
+     ],
+     "cycle940_kind": "GENUINE_TWO_ITEM_MENU_PAIR"
+    },
+    "540": {
+     "census_key": [
+      4,
+      1,
+      [
+       0,
+       2,
+       4,
+       7
+      ]
+     ],
+     "control_lock_boundary": 26,
+     "nn_record_content_fingerprint": "37cf0b68631c097a",
+     "neighbour_ordinals": [
+      0,
+      0
+     ],
+     "openness": [
+      0,
+      0
+     ],
+     "cycle940_kind": "LOCK_TIMING_ONLY"
+    },
+    "558": {
+     "census_key": [
+      4,
+      1,
+      [
+       0,
+       5,
+       7,
+       9
+      ]
+     ],
+     "control_lock_boundary": 35,
+     "nn_record_content_fingerprint": "37cf0b68631c097a",
+     "neighbour_ordinals": [
+      1,
+      0
+     ],
+     "openness": [
+      1,
+      0
+     ],
+     "cycle940_kind": "LOCK_TIMING_ONLY"
+    },
+    "715": {
+     "census_key": [
+      5,
+      1,
+      [
+       0,
+       2,
+       4,
+       6,
+       8
+      ]
+     ],
+     "control_lock_boundary": 12547,
+     "nn_record_content_fingerprint": "4cef997d0152875d",
+     "neighbour_ordinals": [
+      2172,
+      124
+     ],
+     "openness": [
+      1,
+      1
+     ],
+     "cycle940_kind": "GENUINE_TWO_ITEM_MENU_PAIR"
+    }
+   },
+   "six_site_scope_caveat": "The six sites' neighbourhood data are read from Cycle 913's CONTROL per-lock-point rows.  Cycle 936's substrate is M_A + the choice node, whose lock boundaries move; the neighbourhood a 936 site presents AT ITS OWN CHOICE OCCASION is therefore not guaranteed identical to its control context.  The 918 receipt publishes no per-lock rows for M_A, so this block cannot close the gap from pinned bytes.  Every 936-arena class statement below is CONTROL-CONTEXT-RELATIVE and is labelled as such.  The 164- and 134-site arena results carry no such caveat: each is computed on its own substrate's own data.",
+   "same_class_pair_verdict": {
+    "C913_CONTROL_164": {
+     "formalizations_with_same_class_pairs": [
+      "F0_EMPTY",
+      "F1_OPENNESS",
+      "F2_ORDINALS",
+      "F3_NN_RECORD_CONTENT"
+     ],
+     "formalizations_where_every_site_is_its_own_class": [
+      "F4_SITE_NAMING"
+     ],
+     "verdict": "YES -- the current substrate CONTAINS same-class site pairs under every non-vacuous formalization"
+    },
+    "C918_M_A_134": {
+     "formalizations_with_same_class_pairs": [
+      "F0_EMPTY",
+      "F1_OPENNESS",
+      "F2_ORDINALS",
+      "F3_NN_RECORD_CONTENT"
+     ],
+     "formalizations_where_every_site_is_its_own_class": [
+      "F4_SITE_NAMING"
+     ],
+     "verdict": "YES -- the current substrate CONTAINS same-class site pairs under every non-vacuous formalization"
+    },
+    "C936_SIX_SITES": {
+     "formalizations_with_same_class_pairs": [
+      "F0_EMPTY",
+      "F1_OPENNESS",
+      "F2_ORDINALS",
+      "F3_NN_RECORD_CONTENT"
+     ],
+     "formalizations_where_every_site_is_its_own_class": [
+      "F4_SITE_NAMING"
+     ],
+     "verdict": "YES -- the current substrate CONTAINS same-class site pairs under every non-vacuous formalization"
+    }
+   },
+   "THE_KEY_MEASUREMENT": "YES.  Same-neighbourhood site pairs EXIST, abundantly, on every current arena and under every formalization except the one Cycle 913 already flagged as vacuous.  On the 164-site control arena the primary formalization F3 gives 54 classes with a largest class of 30; on the 134-site M_A arena, 52 classes with a largest class of 15; on Cycle 936's six sites, THREE classes -- {254,540,558} | {450,475} | {715}.  The owner's clause therefore has IMMEDIATE, NON-LATENT testable content: it forces equal weights at those pairs, and bare A3 does not.",
+   "largest_class": {
+    "formalization": "F3_NN_RECORD_CONTENT",
+    "arena": "C913_CONTROL_164",
+    "fingerprint": "37cf0b68631c097a",
+    "size": 30,
+    "worlds": [
+     51,
+     95,
+     253,
+     254,
+     255,
+     256,
+     257,
+     258,
+     335,
+     340,
+     344,
+     347,
+     349,
+     350,
+     540,
+     541,
+     542,
+     550,
+     551,
+     556,
+     558,
+     597,
+     606,
+     608,
+     609,
+     611,
+     612,
+     613,
+     716,
+     730
+    ],
+    "realized_item_counts": {
+     "[0, 1]": 15,
+     "[1, 0]": 15
+    },
+    "what_the_clause_forces_here": "one weight assignment for all 30 sites -- 30 free numbers become 1.",
+    "AVERAGING_GUARD": "the 15/15 split is NOT evidence about the weight and is NOT quoted as a frequency.  These are 30 DISTINCT SETUPS each locking once under a deterministic scan; the realized-state primitive forbids averaging over alternatives verbatim (RSP_NOTHING_MORE).  The number is reported only to show that the class is not degenerate in its realized content.",
+    "label": "bookkeeping count, not probability"
+   },
+   "pass": true
+  },
+  "Q2_WHAT_THE_CLAUSE_FORCES": {
+   "certificate": "Q2_WHAT_THE_CLAUSE_FORCES",
+   "readings": {
+    "R1_MAP_ALONE": {
+     "gloss": "the weight is a function of the neighborhood map ALONE: w(p, s) = f(N(s)), with no dependence on the possibility p.",
+     "who_admits_it": "DRAFT A only.  Draft A's second clause reads 'the weights are a lawful function of the site's neighborhood map'; taken distributively over 'the weights', each weight is f(N(s)) and p drops out.  DRAFT B EXCLUDES THIS READING by construction: 'the weight each carries' indexes the weight by the possibility.",
+     "consequence": "CATASTROPHIC AND IMMEDIATE.  If the weight does not depend on the possibility, then all admissible possibilities at a site carry equal weight.  With normalization (forced per node by Cycle 936), the distribution on every menu is the counting measure.  That is a UNIFORMITY THEOREM: the clause would derive a specific distribution on every menu in the framework, and any Born-like law with unequal amplitudes would be inconsistent with the axioms.",
+     "verdict": "Draft A carries a degenerate reading that is strictly stronger than intended and that a |psi|^2-analog would contradict.  This is a WORDING DEFECT in Draft A, not a defect in the owner's idea.  It is repaired by writing 'the weight each possibility carries' -- i.e. by adopting Draft B's own phrasing for the indexing.",
+     "firewall_note": "no value is asserted here.  The statement is conditional and structural: reading R1 forces EQUALITY across a menu, and this block does not compute, adopt or prefer what that equal value is."
+    },
+    "R2_ASSIGNMENT": {
+     "gloss": "the whole weight ASSIGNMENT on the site's menu is a function of the neighborhood map: (p |-> w(p, s)) = F(N(s)).",
+     "who_admits_it": "BOTH drafts.  This is Draft B's literal reading and Draft A's intended one.",
+     "consequence": "the class-equality law CE, with no uniformity consequence.  This is the reading under which every result below is stated unless marked otherwise.",
+     "verdict": "the load-bearing reading."
+    }
+   },
+   "i_class_equality_law": {
+    "statement": "CONDITIONAL THEOREM CE.  Assume Draft A or Draft B under reading R2 (below), and fix a formalization N of the neighborhood map.  Then for any two sites s, s' with N(s) = N(s'), the weight assignments on their menus are equal (after the canonical menu identification, which is supplied for free -- see MENU_IDENTIFICATION).",
+    "proof": "immediate from the clause's own form: the clause says the weight assignment IS a function of N.  Equal arguments, equal values.  The theorem is definitional, which is exactly why it is cheap and exactly why its BITE is entirely carried by the choice of N.",
+    "bite_per_formalization": {
+     "C913_CONTROL_164": {
+      "F0_EMPTY": 163,
+      "F1_OPENNESS": 160,
+      "F2_ORDINALS": 113,
+      "F3_NN_RECORD_CONTENT": 110,
+      "F4_SITE_NAMING": 0
+     },
+     "C918_M_A_134": {
+      "F0_EMPTY": 133,
+      "F1_OPENNESS": 132,
+      "F2_ORDINALS": 84,
+      "F3_NN_RECORD_CONTENT": 82,
+      "F4_SITE_NAMING": 0
+     },
+     "C936_SIX_SITES": {
+      "F0_EMPTY": 5,
+      "F1_OPENNESS": 3,
+      "F2_ORDINALS": 2,
+      "F3_NN_RECORD_CONTENT": 3,
+      "F4_SITE_NAMING": 0
+     }
+    },
+    "status": "PROVED (conditional on the clause and on N)"
+   },
+   "menu_identification": {
+    "problem": "CE compares weight assignments at two different sites.  That presupposes their menus are identified.",
+    "resolution_draft_B": "FREE.  Draft B's first conjunct says the neighborhood map determines WHICH possibilities are admissible; equal maps therefore give literally the same menu, and the identification is the identity.",
+    "resolution_draft_A": "ALSO FREE, but by borrowing: Draft A does not itself say the map determines the menu -- the Admissibility axiom's own sentence 2 does (ADM_VARY).  So Draft A inherits the identification from the existing axiom rather than supplying it.",
+    "residual": "both resolutions assume the menu is a set of LOCAL possibilities in the site-independent Qubit domain (M_2(C)), which the Qubit axiom supplies.  No extra structure is needed.  Verified against the pinned arenas: the menu is [[1,0],[0,1]] at every one of the 164 lock points (R913_menu_everywhere), so the identification is not merely available -- it is trivial here."
+   },
+   "ii_naturality_corollary": {
+    "target": "under Draft A/B, any law symmetry that preserves neighborhood maps preserves weights.",
+    "proof_sketch": "let g be a symmetry of the supplied structure carrying site s to site g.s.  If N(g.s) = N(s) then F(N(g.s)) = F(N(s)), so the weight assignment is preserved.  This is the trivial half and it holds under BOTH drafts, unconditionally, because it is just CE applied to the pair (s, g.s).",
+    "status_trivial_half": "PROVED, both drafts.",
+    "THE_NON_TRIVIAL_HALF": {
+     "target": "the symmetry EQUIVARIANTLY transports neighborhood maps -- N(g.s) = g.N(s) -- and the weight function is invariant under the group action on maps, so weights are preserved even when N(g.s) != N(s) as raw data.",
+     "why_it_is_the_one_that_matters": "the trivial half only bites when two sites have LITERALLY equal neighbourhoods.  The non-trivial half is what makes the weight law covariant -- the property the Admissibility axiom demands of itself in its FIRST sentence.",
+     "DRAFT_B": {
+      "status": "DERIVED -- FOR FREE, FROM THE AXIOM'S OWN FIRST SENTENCE.",
+      "argument": "ADM_RULE byte-quotes: 'There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.'  Draft B makes the weight part of what THE RULE determines.  The covariance predicate attaches to the rule, so it attaches to the weight along with the menu.  No new principle is imported.",
+      "consequence": "weights are constant on the proper-cubic orbit classes of the neighbour colouring -- a strictly coarser partition than CE's, computed below."
+     },
+     "DRAFT_A": {
+      "status": "NOT DERIVED.",
+      "argument": "Draft A is standalone.  Nothing in it, and nothing in the Qualification's law clause (QUAL_LAW, byte-quoted: 'A law privileges no states. Its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer.'), asserts covariance.  The word 'lawful' in Draft A buys single-valuedness and a supplied domain -- NOT equivariance.  To get the non-trivial half, Draft A must either name the covariance group itself or be read as implicitly inheriting Admissibility's, which is precisely the inheritance Draft A's standalone form was chosen to avoid.",
+      "consequence": "Draft A buys CE and nothing more.  The 3/6/7-class collapse below is a DRAFT-B-ONLY purchase."
+     }
+    },
+    "RELATION_TO_CYCLE_940": {
+     "what_940_proved": "no substrate automorphism swaps the two menu items at any of the six sites (A1); one menu item is the update's additive identity (A2); the conditional theorem is vacuous at coverage 0/6; and the naturality antecedent is not derivable, with A3 and naturality logically independent.",
+     "does_the_clause_SUBSUME_940s_naturality_principle": "PARTIALLY, AND THE PART IT DOES NOT SUBSUME IS THE PART 940 KILLED.  940's naturality was WITHIN-SITE (swap the two items at one site and demand the weights follow).  The clause says nothing whatever about within-site item swaps -- under reading R2 the assignment F(N(s)) may be as asymmetric across the menu as it likes.  What the clause makes definitional is ACROSS-SITE naturality: sites with equal (Draft A) or equivalent (Draft B) neighbourhoods carry equal weights.  940's negative and the clause are therefore COMPLEMENTARY, not overlapping.",
+     "the_supervisor_framing_tested_and_CORRECTED": "the spec proposed that '940's negative becomes a feature -- asymmetric menus have distinguishable neighbourhoods, so unequal weights are natural, and equal weights are FORCED exactly where neighbourhoods are symmetric'.  The first half does NOT survive contact with the pinned bytes.  940's A1/A2 asymmetry is an asymmetry BETWEEN THE TWO ITEMS OF ONE MENU (the LEFT/RIGHT endpoint wires, separated two gates deep), not an asymmetry between two sites' NEIGHBOURHOODS.  The neighbourhood map of a site is one object; it does not have a 'per item' part for the clause to hang item-asymmetry on.  So the clause does not explain or license within-menu weight inequality at all -- it is silent there, and that silence is a COST reported in the dossier, not a purchase.  The second half survives exactly: equal weights are forced where neighbourhoods coincide, and that is CE.",
+     "the_one_genuine_subsumption": "940 had to ASK whether a symmetry-based equal-weight principle was derivable, and answer no.  Under either draft that question does not arise for the across-site case: equality at equal neighbourhoods is not derived from a symmetry principle, it is what the clause SAYS.  The clause removes the need for the import 940 could not obtain -- for across-site equality only."
+    },
+    "status": "PROVED for the trivial half (both drafts); PROVED for the non-trivial half under DRAFT B ONLY, from ADM_RULE's own covariance predicate; NOT DERIVED under Draft A."
+   },
+   "ii_draft_B_covariant_collapse": {
+    "k=2": {
+     "classes_realized_by_the_formation_contexts": 3,
+     "class_sizes": {
+      "0": 67,
+      "1": 3,
+      "2": 94
+     },
+     "proper_orbits_total": 10,
+     "chiral_pairs": 0,
+     "freedom_under_draft_B": 3,
+     "freedom_under_draft_A_at_F3": 54,
+     "freedom_under_bare_A3": 164
+    },
+    "k=3": {
+     "classes_realized_by_the_formation_contexts": 6,
+     "class_sizes": {
+      "0": 67,
+      "1": 2,
+      "2": 1,
+      "3": 45,
+      "4": 48,
+      "5": 1
+     },
+     "proper_orbits_total": 57,
+     "chiral_pairs": 1,
+     "freedom_under_draft_B": 6,
+     "freedom_under_draft_A_at_F3": 54,
+     "freedom_under_bare_A3": 164
+    },
+    "k=4": {
+     "classes_realized_by_the_formation_contexts": 7,
+     "class_sizes": {
+      "0": 67,
+      "1": 2,
+      "2": 1,
+      "4": 31,
+      "5": 24,
+      "6": 25,
+      "8": 14
+     },
+     "proper_orbits_total": 240,
+     "chiral_pairs": 20,
+     "freedom_under_draft_B": 7,
+     "freedom_under_draft_A_at_F3": 54,
+     "freedom_under_bare_A3": 164
+    }
+   },
+   "ii_draft_B_purchase_in_words": "On the 164-site control arena: bare A3 leaves 164 free numbers.  Draft A at the primary formalization F3 leaves 54.  Draft B additionally inherits ADM_RULE's covariance and leaves 3, 6 or 7 -- one per proper cubic class of the neighbour colouring at condition alphabet k = 2, 3, 4 respectively.  That is the single largest structural purchase measured in this block, and it is bought entirely by WHERE the sentence is written (inside the covariant rule) rather than by WHAT it says.",
+   "iii_freedom_comparison": {
+    "C936_SIX_SITES": {
+     "cycle936_measured_bare_A3": {
+      "per_occasion": 8,
+      "per_site": 6,
+      "global": 1
+     },
+     "under_the_clause_by_formalization": {
+      "F0_EMPTY": 1,
+      "F1_OPENNESS": 3,
+      "F2_ORDINALS": 4,
+      "F3_NN_RECORD_CONTENT": 3,
+      "F4_SITE_NAMING": 6
+     },
+     "partitions": {
+      "F0_EMPTY": [
+       [
+        254,
+        450,
+        475,
+        540,
+        558,
+        715
+       ]
+      ],
+      "F1_OPENNESS": [
+       [
+        254,
+        540
+       ],
+       [
+        450,
+        475,
+        715
+       ],
+       [
+        558
+       ]
+      ],
+      "F2_ORDINALS": [
+       [
+        254,
+        540
+       ],
+       [
+        450,
+        475
+       ],
+       [
+        558
+       ],
+       [
+        715
+       ]
+      ],
+      "F3_NN_RECORD_CONTENT": [
+       [
+        254,
+        540,
+        558
+       ],
+       [
+        450,
+        475
+       ],
+       [
+        715
+       ]
+      ],
+      "F4_SITE_NAMING": [
+       [
+        254
+       ],
+       [
+        450
+       ],
+       [
+        475
+       ],
+       [
+        540
+       ],
+       [
+        558
+       ],
+       [
+        715
+       ]
+      ]
+     },
+     "reading_note": "Cycle 936 measured that the occasions at one site are NOT interchangeable (an early flip moves the lock and a later flip meets a different history).  The clause as worded attaches the weight to THE SITE's neighborhood map.  Under a STATIC reading of that map the clause forces one weight per site-class and therefore collapses 936's per-occasion reading (8) into the per-site reading (6) and then into classes.  Under a TIME-INDEXED reading (the map evaluated at the choice occasion) the classes must be computed on (site, occasion) pairs, which the pinned bytes do not publish.  BOTH READINGS CARRIED; the time-indexed one is the physically apt one given 936's non-interchangeability finding, and it is NOT computable from pinned data -- an honest gap.",
+     "scope": "The six sites' neighbourhood data are read from Cycle 913's CONTROL per-lock-point rows.  Cycle 936's substrate is M_A + the choice node, whose lock boundaries move; the neighbourhood a 936 site presents AT ITS OWN CHOICE OCCASION is therefore not guaranteed identical to its control context.  The 918 receipt publishes no per-lock rows for M_A, so this block cannot close the gap from pinned bytes.  Every 936-arena class statement below is CONTROL-CONTEXT-RELATIVE and is labelled as such.  The 164- and 134-site arena results carry no such caveat: each is computed on its own substrate's own data."
+    },
+    "C913_CONTROL_164": {
+     "bare_A3": 164,
+     "under_the_clause_by_formalization": {
+      "F0_EMPTY": 1,
+      "F1_OPENNESS": 4,
+      "F2_ORDINALS": 51,
+      "F3_NN_RECORD_CONTENT": 54,
+      "F4_SITE_NAMING": 164
+     },
+     "under_draft_B_with_inherited_covariance": {
+      "k=2": 3,
+      "k=3": 6,
+      "k=4": 7
+     }
+    },
+    "C918_M_A_134": {
+     "bare_A3": 134,
+     "under_the_clause_by_formalization": {
+      "F0_EMPTY": 1,
+      "F1_OPENNESS": 2,
+      "F2_ORDINALS": 50,
+      "F3_NN_RECORD_CONTENT": 52,
+      "F4_SITE_NAMING": 134
+     },
+     "under_draft_B_with_inherited_covariance": "not published for M_A in the pinned receipt (the cubic covariance certificate is a CONTROL-arena object); declared not computed."
+    }
+   },
+   "iv_conflict_checks": {
+    "CC1_ADMISSIBILITY_NON_SUPPLY": {
+     "surface": "the axiom memo's Relation-To-Dynamics paragraph",
+     "quote": "It does not choose a Hamiltonian or transfer operator, supply transition probabilities or weights, select a scalar or nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or provide a record-production process or physical persistence dynamics.",
+     "subject_of_the_quote": "Admissibility ('It' = 'Admissibility is not a dynamics axiom.', the preceding sentence, byte-quoted as ADM_NOT_DYNAMICS)",
+     "reading_1_two_items": {
+      "parse": "'supply [transition probabilities] or [weights]' -- 'weights' is a standalone excluded item.",
+      "draft_B": "DIRECT CONFLICT.  Draft B makes Admissibility's own object determine weights; the sentence says Admissibility does not supply weights.  Adopting Draft B REQUIRES amending or deleting this phrase.",
+      "draft_A": "NO CONFLICT.  Admissibility alone still supplies no weight; a separate clause supplies it, using Admissibility's object as its argument.  The sentence remains literally true."
+     },
+     "reading_2_one_item": {
+      "parse": "'supply transition [probabilities or weights]' -- both nouns are transition-typed, and a FORMATION weight is not a transition weight.",
+      "draft_B": "NO CONFLICT under this parse.",
+      "draft_A": "NO CONFLICT.",
+      "assessment": "THE PARSE IS AVAILABLE HERE BUT IT IS CLOSED ELSEWHERE.  The surrounding list items ('choose a Hamiltonian or transfer operator', 'select a scalar or nonzero kinetic branch') are dynamics-typed, which supports the strained parse for THIS sentence.  But the owner-approved binding policy states the same exclusion with no qualifier at all: 'Admissibility does not ... define probabilities, assign weights' (CC7).  'assign weights' is a standalone item.  The escape parse rescues Draft B from one sentence and not from the surface that governs it."
+     },
+     "verdict": "DRAFT B CARRIES A TEXTUAL CONFLICT THAT DRAFT A DOES NOT, AND THE CONFLICT SURVIVES ITS OWN ESCAPE PARSE.  Under either parse of the memo sentence, the binding policy's 'assign weights' closes the gap.  The owner's literal form cannot be added without amending at least two non-adjacent surfaces, one of them owner-approved binding policy.  This is the block's sharpest discriminator between the drafts.",
+     "conflict_detected": true
+    },
+    "CC7_POLICY_NO_LAUNDERING": {
+     "surface": "docs/audit/AXIOM_MINIMALITY_POLICY.md -- OWNER-APPROVED, BINDING.  READ AND CITED ONLY; this block touches no policy surface.",
+     "quote": "**No laundering.** Admissibility does not choose the readout context, select a measurement basis, provide a formation rule, define probabilities, assign weights, normalize readouts, specify an update law, provide measurement/decoherence dynamics, define time metric or arrow, choose a Hamiltonian or transfer operator, select a kinetic branch, or identify physical observables.",
+     "draft_B": "DIRECT CONFLICT, UNAMBIGUOUS.  Draft B predicates weight-determination of Admissibility; the policy says Admissibility does not assign weights.  There is no parse under which both stand.",
+     "draft_A": "NO CONFLICT.  Admissibility still assigns no weight; a separate clause does.  The policy sentence remains true verbatim.",
+     "the_asymmetry_in_one_line": "the owner's literal wording is the one the repo's binding policy already forbids by name; the standalone paraphrase is not.  If the owner wants this content, Draft A's SHAPE costs strictly less text-surgery than Draft B's, and buys strictly less (no inherited covariance).  That trade is the whole decision and it is the owner's.",
+     "conflict_detected": true
+    },
+    "CC2_OPEN_GATES": {
+     "surface": "the axiom memo's Open Gates list",
+     "quote": "context selection, measurement basis selection, Born weights, probability rules, update laws, decoherence mechanisms, and formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate);",
+     "draft_A": "CONFLICT (shared).  'with what weight' is named as outside axiom content; Draft A moves its determination inside.",
+     "draft_B": "CONFLICT (shared), identically.",
+     "verdict": "BOTH drafts require the Open Gates parenthesis to be edited.  Neither draft is a pure addition to the memo.",
+     "conflict_detected": true
+    },
+    "CC3_RECORD_NON_SUPPLY": {
+     "question": "does Record forbid supplying weights?",
+     "quotes": [
+      "Records form.",
+      "When present, a record locks exactly one admissible local possibility. A site never carries more than one record; records are permanent.",
+      "Only records are readable. A readout value is determined by record content alone."
+     ],
+     "finding": "NO.  The Record axiom contains no non-supply clause at all.  Its three sentences assert formation, locking/uniqueness/permanence, and readout additivity.  The weight content is held out of Record not by Record's own text but by the memo's Open Gates list and by the Historical Context sentence (HIST_PRECEDENT), both of which are memo prose ABOUT the axioms rather than axiom text.",
+     "consequence": "the A3 admission's own housing is Record-compatible: 'When present, a record locks exactly one admissible local possibility' supplies the event the weight would weigh, and supplies it without prejudice as to weight.  No conflict.",
+     "secondary_test_readability": {
+      "quote": "Only records are readable. A readout value is determined by record content alone.",
+      "risk": "formalizations F2/F3 read neighbour REGISTER content; Cycle 913 measured that the selection lives on wires that are not records at all.  If a neighborhood map includes non-record wires, does 'Only records are readable' bite?",
+      "verdict": "NO.  The clause governs READABILITY (what a readout may return), not what a law may depend on.  Admissibility itself already depends on 'the nearest-neighbor conditions', which include the availability structure of sites carrying no record.  A weight law of the same argument inherits the same licence.",
+      "residual": "but the QUAL_STATE clause ('A state is a configuration of records.') means that a neighborhood map with non-record content is not a function of the STATE.  Under Draft A's word 'lawful' plus QUAL_LAW ('Its domain is a supplied condition'), a weight function whose argument is not state-valued has a domain that is not a state condition.  F3 as mechanised in this substrate reads register content; whether that content is record content is a substrate question the pinned bytes answer only partially.  FLAGGED AS AN OPEN TENSION, not a conflict."
+     },
+     "conflict_detected": false
+    },
+    "CC4_REALIZED_STATE_PRIMITIVE": {
+     "question": "the clause supplies a weight FUNCTION as law while the state supplies which site occurs -- is that consistent with the primitive's laws/state split?",
+     "quotes": [
+      "The laws do not pick the state; the world does, among the states the laws permit.",
+      "It carries zero state-contingent content: no state, averaging over alternatives, measure, weighting, probability rule, typicality claim, genericity claim, preferred state, default state, boundary condition, normalization rule, or value is supplied by it.",
+      "A row may evaluate an already-defined state functional at the supplied realized state. A value that would change under a different law-admissible realized state is registered data, not derivation output.",
+      "Nothing more is supplied: no averaging over alternatives, no typical or generic claim, and no quoting a number that would differ had another law-admissible state been realized."
+     ],
+     "reading_1_prohibition": {
+      "parse": "read RSP_ZERO_CONTENT and RSP_NOT_DO as PROHIBITIONS: the framework supplies no measure, weighting or probability rule.",
+      "verdict": "CONFLICT.  Under this parse any weight clause whatever -- bare A3 included -- contradicts the primitive.",
+      "assessment": "THIS PARSE IS REFUTED BY THE PRIMITIVE'S OWN BYTES.  Both sentences are scoped by 'supplied by it' / 'It does not supply', whose subject is the primitive.  They are declarations of what the PRIMITIVE carries, not prohibitions on the axiom set.  The escape condition is stated in the clause itself."
+     },
+     "reading_2_declaration": {
+      "parse": "the operative scoping is 'supplied by it'; the primitive declines to supply a weight and forbids nothing.",
+      "verdict": "NO CONFLICT -- and better than that, THE CLAUSE FITS THE PRIMITIVE'S OWN TEMPLATE.  RSP_FUNCTIONAL byte-quotes: 'A row may evaluate an already-defined state functional at the supplied realized state.'  The owner's clause defines exactly such a functional: the neighborhood map is state-valued (QUAL_STATE), so the weight is a state functional, supplied as law and evaluated pointwise at the realized state.  The laws/state split is respected exactly: the FUNCTION is law, the ARGUMENT is state, the REALIZED BRANCH is the world's."
+     },
+     "the_no_preferred_state_test": {
+      "quote": "The laws do not pick the state; the world does, among the states the laws permit.",
+      "test": "does supplying a weight amount to the laws picking the state?",
+      "verdict": "NO, and Cycle 936 is the constructive demonstration: the law returns a TREE, every branch satisfies the whole battery, and the weights label branches without selecting one.  A weight is not a selector.  The primitive's sentence is untouched.",
+      "adversarial_residual": "a weight of extreme value would make one branch overwhelmingly likely, which some readers would call the law leaning on the world's choice.  The primitive's sentence is about PICKING, not about leaning, and this block asserts no value -- so the residual is noted and not adjudicated."
+     },
+     "THE_REAL_COST": {
+      "quote": "Nothing more is supplied: no averaging over alternatives, no typical or generic claim, and no quoting a number that would differ had another law-admissible state been realized.",
+      "finding": "THE NO-AVERAGING CLAUSE SURVIVES THE CLAUSE INTACT AND KEEPS BITING.  Adopting either draft supplies weights; it does NOT license averaging them over the census.  Every cross-world split in the lane -- Cycle 913's 84/80, Cycle 918's 78/56, the 15/15 inside the 30-site class computed below -- remains a bookkeeping count over ALTERNATIVE SETUPS and remains forbidden as a frequency estimate.  The clause supplies the frame; the primitive still forbids the one operation that would let anyone check the numbers on the current census.  Within-world branch frequencies (the 936 tree) are a different object and are NOT forbidden -- that is where the clause is testable."
+     },
+     "conflict_detected": false
+    },
+    "CC5_QUALIFICATION_LAW_CLAUSE": {
+     "quote": "A law privileges no states. Its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer.",
+     "reading_1_functional": "the weight function gives exactly one answer (an assignment) at every state where its domain condition holds.  CONSISTENT.",
+     "reading_2_privilege": "'A law privileges no states.'  Does an unequal weight privilege a state?  Under the memo's own idiom -- LATTICE_NOPRIV and QUBIT_NOPRIV both gloss non-privilege as 'distinguished by the supplied structure alone' -- privileging means distinguishing WITHOUT supplied grounds.  The owner's clause grounds every weight difference in the supplied neighbourhood structure, so unequal weights are not privileging.  CONSISTENT, and notably MORE consistent than bare A3.",
+     "the_finding": "BARE A3 IS THE ONE IN TENSION HERE, NOT THE OWNER'S CLAUSE.  A bare existence sentence ('a measure exists, state-functional') permits a weight assignment that distinguishes two possibilities the supplied structure does not distinguish -- which QUBIT_NOPRIV forbids in its own words.  The owner's clause is exactly the rider that removes that tension, because it makes the weight a function of supplied structure by construction.  This is the block's strongest MINIMALITY finding and it runs in the clause's favour.",
+     "counterweight": "Cycle 940 found the QUBIT_NOPRIV clause SELF-DEFEATING when used as a naturality ground (the supplied structure DOES distinguish the substrate's two menu items).  That finding is not contradicted here: 940 used the clause to try to FORCE equality and failed; this block uses it only as a CONSISTENCY constraint on what a weight law may depend on.  Different job, same bytes, no collision.",
+     "conflict_detected": false
+    },
+    "CC6_936_FORCED_RESULTS": {
+     "worlds_indexing": {
+      "pinned": "Cycle 936 measured that a slot-indexed weight breaks layout independence AND duplicate-lane consistency, with digest witnesses; world-indexing preserves both.",
+      "test": "is the clause compatible with world-indexing?",
+      "verdict": "COMPATIBLE, AND IT STRENGTHENS THE CASE.  The neighborhood map is a property of a site in the world sense (its neighbours' conditions), not of a bookkeeping slot.  A clause that makes the weight a function of the neighbourhood therefore CANNOT be slot-indexed: slots have no neighbours.  936 had to MEASURE the forced index set; under the owner's clause it would be forced by the sentence's own grammar.  A second genuine subsumption.",
+      "conflict_detected": false
+     },
+     "normalization": {
+      "pinned": "normalization is forced per choice node (weights on a menu sum to one); leaf weights sum identically to one under every grouping.",
+      "test": "is the clause consistent with forced normalization?",
+      "verdict": "CONSISTENT.  Normalization is a constraint on the assignment F(N(s)) for each s; the clause constrains WHICH assignment, not whether it normalises.  The two compose.  Note the interaction: under CE, two same-class sites share one assignment, so normalization is imposed once per CLASS rather than once per site -- the constraint count falls with the freedom count, and the ratio is unchanged.",
+      "conflict_detected": false
+     },
+     "factorization": {
+      "pinned": "the leaf observable factorizes over sites; no cross-site relation among the weights can be forced by any observable the substrate exposes.",
+      "test": "CE IS a cross-site relation.  Does it contradict 936?",
+      "verdict": "NO, AND THIS IS THE SUBTLEST CHECK IN THE BLOCK.  936's result is that no cross-site relation is FORCED BY THE SUBSTRATE'S OBSERVABLES.  CE is not forced by an observable; it is IMPOSED BY THE SENTENCE.  The two are compatible precisely because 936's finding is a non-derivability result and CE is an axiom-side stipulation.  The honest gloss: the substrate will never tell you the weights at two same-class sites are equal, and the clause says they are anyway -- which is exactly what makes the clause CONTENT rather than bookkeeping, and exactly what makes it FALSIFIABLE.",
+      "conflict_detected": false
+     }
+    }
+   },
+   "pass": true
+  },
+  "Q3_THE_REQUIRED_AND_MINIMAL_DOSSIER": {
+   "certificate": "Q3_THE_REQUIRED_AND_MINIMAL_DOSSIER",
+   "a_requiredness": {
+    "statement": "NO WEAKER SUPPLIED CONTENT YIELDS ANY PROBABILITY FACT on the current substrates.",
+    "support": "seven independent route closures, above, each with a pinned citation.  The classification theorem is the load-bearing one: it is one sentence wide by construction, so the question is not WHICH sentence but WHETHER one is taken.",
+    "scope": "the statement is substrate-relative in exactly the way its sources are: Cycle 925's exhaustiveness is relative to the pinned compiler's three-template grammar and sixteen swept coordinates; Cycle 940's negative is relative to the six declared sites.  'No route survives' is not 'no route exists'.",
+    "the_one_live_narrowing": {
+     "cycle": 943,
+     "object": "pre-record symmetry (value-space symmetries), in flight on the blockQ15 branch at the time of writing.",
+     "status": "IN FLIGHT -- this block has NOT read its results and makes no prediction about them.",
+     "how_its_outcomes_would_modify_this_dossier": {
+      "if_pre_record_symmetry_EXISTS": "the class-equality law gains DERIVED instances: sites related by such a symmetry would carry equal weights on symmetry grounds alone, without the clause.  That REDUCES the clause's marginal content by exactly the number of site pairs the symmetry relates, and leaves the rest.  COMPLEMENTARY, NOT COMPETING: a symmetry constrains a weight, it never creates one (the envariance lesson, settled at substrate level by Cycle 940), so no outcome of 943 can supply the existential import that both drafts carry.",
+      "if_pre_record_symmetry_DOES_NOT_EXIST": "the dossier is unchanged and the requiredness statement gains an eighth closed route."
+     }
+    }
+   },
+   "a_dead_route_inventory": [
+    {
+     "route": "the classification theorem (Cycle 925)",
+     "closure": "every relaxation of 'the law is a function of (schedule, tick-0 state)' falls into four classes; R1 is a re-labeling proven bit-identically, R3 is dead or absorbed over sixteen swept coordinates, R4 is the function's argument -- leaving R2, the law-internal choice point, priced at exactly one A3-shaped sentence.",
+     "citation": "The successor substrate's design space is one sentence wide."
+    },
+    {
+     "route": "O2 as a computation (Cycle 913)",
+     "closure": "the landed dynamics never chooses; the selection is the transport of one setup coordinate on wires that every gate reads and none writes.  O2 is supplied, not derivable.",
+     "citation": "the landed scan never chooses"
+    },
+    {
+     "route": "O3 on the landed substrate (Cycle 913)",
+     "closure": "each world locks exactly once, so no weight is estimable inside a world, and the cross-world split is an average over setups -- the operation the realized-state primitive forbids.",
+     "citation": "O3 has no non-forbidden realization on this substrate."
+    },
+    {
+     "route": "the census as an arena of alternatives (Cycle 911)",
+     "closure": "zero branch pairs among 279,378 world pairs; the 748 worlds are alternative initial conditions, so weighting them is the forbidden averaging.",
+     "citation": "the census weightings were never occurrence weights"
+    },
+    {
+     "route": "symmetry / naturality (Cycle 940)",
+     "closure": "no swap automorphism at any of the six sites (non-existence by colour refinement at the coarsest labelling); the menu is asymmetric by grammar; three of six sites are not menus at all; the conditional theorem is vacuous at coverage 0/6 and the antecedent is underivable.",
+     "citation": "they are LOGICALLY INDEPENDENT"
+    },
+    {
+     "route": "envariance (the stranded note, pinned by Cycle 940)",
+     "closure": "its own text concedes that the only premise outside {Quantum, Record} is A3 itself, and its symmetry step is forced only ONCE A3 IS GRANTED.  A symmetry principle constrains a weight; it never creates one.",
+     "citation": "carried from Cycle 940's prior-art sweep (the note is unlanded and was pinned there BY BLOB; this block cites 940 rather than re-pinning the blob)"
+    },
+    {
+     "route": "the Gleason bridge (landed, pinned by Cycle 940)",
+     "closure": "the antecedent was already decided negative on a different arena.",
+     "citation": "carried from Cycle 940's prior-art sweep"
+    }
+   ],
+   "b_minimality": {
+    "what_each_draft_adds_beyond_bare_A3": {
+     "DRAFT_A": [
+      "the class-equality law CE at a chosen formalization",
+      "falsifiability (a same-class pair with unequal required weights refutes it)",
+      "consistency with QUBIT_NOPRIV, which bare A3 strains (see CC5)"
+     ],
+     "DRAFT_B": [
+      "everything Draft A adds",
+      "the covariance rider, inherited free from ADM_RULE",
+      "the forced world-indexing, inherited free from the sentence's grammar (a slot has no neighbours) -- which Cycle 936 had to measure",
+      "the canonical menu identification, supplied rather than borrowed"
+     ]
+    },
+    "what_weaker_sentences_fail_to_buy": {
+     "bare_A3": "no class law: the weight may vary freely across same-neighbourhood sites, and the substrate contains 110 same-class site-collapses on the control arena at F3 that bare A3 leaves entirely free.",
+     "naturality_alone": "no existential import (Cycle 940) -- it constrains a weight it cannot create.",
+     "A3_plus_naturality": "on the 936 arena, exactly A3: Cycle 940 measured coverage 0/6 and freedom 6 -> 6."
+    }
+   },
+   "b_strength_lattice": {
+    "definitions": {
+     "A3_bare": "there EXISTS a weight assignment on the admissible possibilities at each site, state-functional, normalised per site.",
+     "LOC": "the weight assignment at a site is a function of that site's neighborhood map (no dependence on anything else).",
+     "COV": "that function is equivariant under the covariance group of the admissibility rule (lattice translations and proper cubic rotations).",
+     "ADM2": "the neighborhood map determines which possibilities are admissible at a site -- ALREADY AN AXIOM (ADM_VARY)."
+    },
+    "draft_A_decomposed": "A3_bare AND LOC  (reading R2).  Draft A does not restate ADM2 and does not carry COV.",
+    "draft_B_decomposed": "ADM2 AND A3_bare AND LOC AND COV.  ADM2 is already an axiom, so ON TOP OF THE EXISTING AXIOM SET Draft B == A3_bare + LOC + COV.",
+    "is_B_exactly_A3_plus_locality": "NO -- IT IS A3 + LOCALITY + COVARIANCE.  The spec's proposed lattice ('B = A3 + locality') UNDERSTATES Draft B by one conjunct.  The covariance rider is not written in Draft B's words; it is INHERITED, because Draft B places the weight inside a rule the axiom's first sentence already declares covariant.  This is the block's correction to the spec's own framing and it is the difference between 54 free numbers and 3 on the control arena.",
+    "the_lattice": [
+     {
+      "level": 0,
+      "content": "nothing",
+      "freedom_on_C913_CONTROL": 164,
+      "note": "no probability fact of any kind"
+     },
+     {
+      "level": 1,
+      "content": "A3_bare",
+      "freedom_on_C913_CONTROL": 164,
+      "note": "existence only; NO class law; weights may vary freely across same-neighbourhood sites"
+     },
+     {
+      "level": 2,
+      "content": "A3_bare + LOC  (= DRAFT A, reading R2)",
+      "freedom_on_C913_CONTROL": 54,
+      "note": "class-equality law at the chosen formalization"
+     },
+     {
+      "level": 3,
+      "content": "A3_bare + LOC + COV  (= DRAFT B)",
+      "freedom_on_C913_CONTROL": "3 / 6 / 7 at k = 2 / 3 / 4",
+      "note": "class-equality law coarsened to proper-cubic orbits"
+     },
+     {
+      "level": "off-lattice",
+      "content": "DRAFT A under reading R1",
+      "freedom_on_C913_CONTROL": "1 per site-class, with the menu forced uniform",
+      "note": "STRICTLY STRONGER THAN INTENDED -- a uniformity theorem; see READINGS.R1_MAP_ALONE"
+     }
+    ],
+    "naturality_alone": {
+     "content": "COV without A3_bare",
+     "buys": "NOTHING.  Cycle 940 proved it: naturality has no existential import and is vacuously satisfiable with no weight at all.  It cannot replace A3.",
+     "freedom_on_C913_CONTROL": "undefined -- there is no weight to count"
+    },
+    "is_B_strictly_stronger_than_A3": true,
+    "is_B_strictly_stronger_than_A": true,
+    "witness_B_stronger_than_A3": "A3 permits weights varying freely across the 30 sites of the largest F3 class; both drafts forbid it.  The 30-site class is exhibited (LARGEST_CLASS).",
+    "witness_B_stronger_than_A": "Draft A permits a weight function that is not equivariant, hence weights differing between two sites in one proper-cubic orbit class; Draft B forbids it.  On the control arena that is the gap between 54 and 3/6/7."
+   },
+   "c_falsifiability": {
+    "the_shape": "two sites in the same neighbourhood class requiring different weights refutes the clause.",
+    "what_would_count": [
+     "a WITHIN-WORLD branch-frequency measurement at two same-class sites returning different splits.  This is the only shape the realized-state primitive permits: it is not an average over alternatives, it is one world's own branching.  Cycle 936's tree is the object; a larger window would give the statistics.",
+     "a derivation elsewhere in the framework that FORCES unequal weights at two sites the neighbourhood map cannot distinguish -- e.g. a Born-form bridge whose amplitudes depend on site data outside the neighbourhood.  This is the likelier refutation route and it is internal, not empirical."
+    ],
+    "what_would_NOT_count": "any cross-world split on the current census -- 84/80, 78/56, 15/15.  Forbidden as evidence by RSP_NOTHING_MORE, in both directions.",
+    "the_clause_sticks_its_neck_out": true,
+    "bare_A3_does_not": "bare A3 is unfalsifiable on any current arena: any observed pattern of weights is consistent with 'a measure exists'.",
+    "candidate_test_pairs_available_today": {
+     "C913_CONTROL_164_at_F3": 999,
+     "C936_SIX_SITES_at_F3": 4
+    }
+   },
+   "d_honest_costs": {
+    "THE_HEADLINE_COST": "THE CLAUSE IS THE FRAME, NOT THE NUMBERS.  Neither draft supplies the function f itself.  After adopting either one, the framework knows that weights exist and what they may depend on, and knows nothing whatever about what they ARE.  A Born-form result (a |psi|^2-analog) would still require a separate derivation or an approved-primitive registration ON TOP.  The clause reduces the free numbers on the control arena from 164 to 54 (Draft A) or to 3/6/7 (Draft B); it does not reduce them to zero, and nothing in it ever could.",
+    "the_formalization_is_load_bearing_and_unsupplied": "the axiom memo never uses the words 'neighborhood map'.  Its phrase is 'the nearest-neighbor conditions'.  This block computed the clause's bite under five formalizations and it ranges from TOTAL (F0: one weight for the whole framework) to NIL (F4: every site its own class, the clause vacuous).  A clause adopted without fixing the formalization has undetermined content.  Either draft would need to say which structure it means -- and the cheapest fix is to use the axiom's own words, since 'the nearest-neighbor conditions' is already defined and already covariant.",
+    "draft_A_wording_defect": "reading R1 (the weight a function of the map ALONE) forces uniform menus.  Draft A admits that reading; Draft B does not.",
+    "draft_B_textual_cost": "conflicts with the Admissibility non-supply sentence (CC1) AND with the owner-approved binding 'No laundering' clause in the audit policy (CC7), which names 'assign weights' with no qualifier and so closes CC1's escape parse.  Adopting Draft B means amending at least two non-adjacent surfaces, one of them binding policy.  Draft A amends neither.",
+    "the_passenger_cost_BOTH_drafts_carry": "both drafts silently upgrade the existing Admissibility menu clause from EXISTENTIAL to FUNCTIONAL.  The 2026-07-02 owner ruling fixes 'vary with' as existential; the neighbourhood CLASSES this block computes -- and therefore the class-equality law itself -- are only well defined under the functional reading.  A second constitutional change rides inside the first.  Draft B pays it visibly; Draft A pays it silently.",
+    "the_clause_is_not_novel": "graded_constraint v1 and v2 (2026-07-04) already proposed a nearest-neighbour-conditioned weight function and were never registered.  What is novel is the FUSION of availability and weight into one rule; every prior version held them apart deliberately.",
+    "shared_textual_cost": "both drafts require the Open Gates parenthesis to be edited (CC2).  Neither is a pure addition.",
+    "the_measured_tension": "Cycle 918 measured that the realized selection is NOT a function of neighbourhood conditions on this substrate, and Cycle 911 measured that the MENU does not vary with them either -- 'weaker than the Admissibility sentence asserts'.  The existing axiom's own first half is already unmet here.  A clause that extends that half to weights extends an obligation the substrate has not yet discharged.  This is not a conflict; it is a standing debt the clause would enlarge.",
+    "the_no_averaging_residual": "THE NO-AVERAGING CLAUSE SURVIVES THE CLAUSE INTACT AND KEEPS BITING.  Adopting either draft supplies weights; it does NOT license averaging them over the census.  Every cross-world split in the lane -- Cycle 913's 84/80, Cycle 918's 78/56, the 15/15 inside the 30-site class computed below -- remains a bookkeeping count over ALTERNATIVE SETUPS and remains forbidden as a frequency estimate.  The clause supplies the frame; the primitive still forbids the one operation that would let anyone check the numbers on the current census.  Within-world branch frequencies (the 936 tree) are a different object and are NOT forbidden -- that is where the clause is testable.",
+    "the_time_indexing_gap": "936 measured that a site's occasions are not interchangeable; the clause attaches weights to a site's map.  Whether the map is static or evaluated at the occasion changes the freedom count, and the pinned bytes do not publish per-occasion neighbourhood data.  Unresolved.",
+    "the_open_tension_from_CC3": "but the QUAL_STATE clause ('A state is a configuration of records.') means that a neighborhood map with non-record content is not a function of the STATE.  Under Draft A's word 'lawful' plus QUAL_LAW ('Its domain is a supplied condition'), a weight function whose argument is not state-valued has a domain that is not a state condition.  F3 as mechanised in this substrate reads register content; whether that content is record content is a substrate question the pinned bytes answer only partially.  FLAGGED AS AN OPEN TENSION, not a conflict."
+   },
+   "no_recommendation": "This block makes NO recommendation on adoption.  It reports structure, prices and consequences.  The axiom set is the owner's only ruling surface and no part of this package asks for, implies, or prepares a ruling.",
+   "pass": true
+  },
+  "F_PARAMETRIC_FIREWALL": {
+   "declaration": "no weight VALUE is output anywhere as law content.  All weights are symbols; all freedom counts are counts of free numbers, never their values.  The mu-parametric discipline is inherited from Cycles 936 and 940 and is enforced here by a float-literal ban plus an emitted-value scan.",
+   "float_literals_in_this_module": [],
+   "arithmetic": "integers and fractions.Fraction only",
+   "sample_fraction_check": "1/2",
+   "certificate": "F_PARAMETRIC_FIREWALL",
+   "pass_": true
+  },
+  "G_FALSIFIERS": {
+   "certificate": "G_FALSIFIERS",
+   "teeth": [
+    {
+     "tooth": "T1_class_equality_catches_unequal_same_class_pair",
+     "fired": true,
+     "detail": "planted unequal weight at site 540 (class-mate of 254, 558)"
+    },
+    {
+     "tooth": "T2_non_supply_conflict_detector_fires",
+     "fired": true,
+     "detail": "Draft B flagged against ADM_NONSUPPLY; a control sentence is not"
+    },
+    {
+     "tooth": "T3_firewall_catches_planted_weight_value",
+     "fired": true,
+     "detail": "emitted-value scanner"
+    },
+    {
+     "tooth": "T4_tampered_pin_detected",
+     "fired": true,
+     "detail": "one-token tamper in the determination clause"
+    },
+    {
+     "tooth": "T5_circularity_probe_fires",
+     "fired": true,
+     "detail": "a neighborhood map including the realized item is rejected"
+    },
+    {
+     "tooth": "T6_vacuity_flag_fires",
+     "fired": true,
+     "detail": "site-naming formalization contributes zero equations"
+    },
+    {
+     "tooth": "T7_partition_crosscheck_catches_a_merge",
+     "fired": true,
+     "detail": "merging two classes breaks agreement with the pinned ladder"
+    },
+    {
+     "tooth": "T8_freedom_invariant_fires",
+     "fired": true,
+     "detail": "classes must lie in [1, sites]"
+    },
+    {
+     "tooth": "T9_covariance_provenance_fires",
+     "fired": true,
+     "detail": "Draft A cannot inherit ADM_RULE's covariance predicate"
+    },
+    {
+     "tooth": "T10_restriction_drift_detected",
+     "fired": true,
+     "detail": "936 per-site freedom pinned at 6"
+    },
+    {
+     "tooth": "T11_uniformity_misreading_detected_in_A_only",
+     "fired": true,
+     "detail": "reading R1 is available in Draft A's wording, not Draft B's"
+    },
+    {
+     "tooth": "T12_averaging_guard_fires",
+     "fired": true,
+     "detail": "cross-world splits may not be quoted as frequencies"
+    },
+    {
+     "tooth": "T13_spec_lattice_claim_corrected",
+     "fired": true,
+     "detail": "B = A3 + locality + COVARIANCE, not A3 + locality"
+    },
+    {
+     "tooth": "T14_binding_policy_conflict_detected_for_B_only",
+     "fired": true,
+     "detail": "'assign weights' in owner-approved binding policy; Draft B predicates weight-determination of Admissibility, Draft A does not"
+    },
+    {
+     "tooth": "T15_existential_to_functional_upgrade_detected",
+     "fired": true,
+     "detail": "both drafts presuppose a functional menu clause; the byte-quoted axiom sentence is existential (2026-07-02 owner ruling)"
+    }
+   ],
+   "fired": 15,
+   "total": 15,
+   "pass": true
+  },
+  "H_DOUBLE_RUN": {
+   "certificate": "H_DOUBLE_RUN",
+   "science": {
+    "quotes_present": [
+     "ADM_NONSUPPLY",
+     "ADM_NOT_DYNAMICS",
+     "ADM_RESTATE",
+     "ADM_RULE",
+     "ADM_VARY",
+     "BORN_WEIGHTS_CITE",
+     "C911_MENU_GAP",
+     "C918_ADM_SHAPE_ABSENT",
+     "C925_ONE_SENTENCE",
+     "C940_INDEPENDENT",
+     "FENCE_NAME",
+     "GC1_COEXISTENCE",
+     "GC2_CHANNEL",
+     "GC2_FILTERS",
+     "HIST_PRECEDENT",
+     "LATTICE_NOPRIV",
+     "OPEN_GATES_FORMATION",
+     "POLICY_NO_LAUNDERING",
+     "POLICY_PANEL_UNIFORM",
+     "POLICY_VARY_WITH_EXISTENTIAL",
+     "QUAL_LAW",
+     "QUAL_ONLY_NAMED",
+     "QUAL_STATE",
+     "QUBIT_NOPRIV",
+     "RECORD_FORM",
+     "RECORD_LOCK",
+     "RECORD_READ",
+     "RSP_FUNCTIONAL",
+     "RSP_LAWS_STATE",
+     "RSP_NOTHING_MORE",
+     "RSP_NOT_DO",
+     "RSP_POINTWISE",
+     "RSP_ZERO_CONTENT"
+    ],
+    "arenas": {
+     "C913_CONTROL_164": {
+      "F0_EMPTY": 1,
+      "F1_OPENNESS": 4,
+      "F2_ORDINALS": 51,
+      "F3_NN_RECORD_CONTENT": 54,
+      "F4_SITE_NAMING": 164
+     },
+     "C918_M_A_134": {
+      "F0_EMPTY": 1,
+      "F1_OPENNESS": 2,
+      "F2_ORDINALS": 50,
+      "F3_NN_RECORD_CONTENT": 52,
+      "F4_SITE_NAMING": 134
+     },
+     "C936_SIX_SITES": {
+      "F0_EMPTY": 1,
+      "F1_OPENNESS": 3,
+      "F2_ORDINALS": 4,
+      "F3_NN_RECORD_CONTENT": 3,
+      "F4_SITE_NAMING": 6
+     }
+    },
+    "six_site_partition_F3": [
+     [
+      254,
+      540,
+      558
+     ],
+     [
+      450,
+      475
+     ],
+     [
+      715
+     ]
+    ],
+    "cubic_collapse": {
+     "k=2": 3,
+     "k=3": 6,
+     "k=4": 7
+    },
+    "largest_class_size": 30,
+    "naturality_status": "PROVED for the trivial half (both drafts); PROVED for the non-trivial half under DRAFT B ONLY, from ADM_RULE's own covariance predicate; NOT DERIVED under Draft A.",
+    "conflicts": {
+     "CC1_ADMISSIBILITY_NON_SUPPLY": true,
+     "CC7_POLICY_NO_LAUNDERING": true,
+     "CC2_OPEN_GATES": true,
+     "CC3_RECORD_NON_SUPPLY": false,
+     "CC4_REALIZED_STATE_PRIMITIVE": false,
+     "CC5_QUALIFICATION_LAW_CLAUSE": false,
+     "CC6_936_FORCED_RESULTS": {
+      "worlds_indexing": false,
+      "normalization": false,
+      "factorization": false
+     }
+    },
+    "is_B_strictly_stronger_than_A3": true
+   },
+   "science_digest": "2d356808d71127e7f0242cf3280f0794ec74d07c7d3bdad59d2a05596af0d642",
+   "timing_free": true,
+   "pass": true
+  },
+  "I_RUNTIME": {
+   "certificate": "I_RUNTIME",
+   "elapsed_s": 0.175,
+   "limit_s": 900,
+   "pass": true
+  }
+ },
+ "all_certificates_pass": true,
+ "failures": [],
+ "gates_total": 90,
+ "gates_passed": 90,
+ "science_digest": "2d356808d71127e7f0242cf3280f0794ec74d07c7d3bdad59d2a05596af0d642",
+ "provenance": {
+  "method": "PINNED-BYTES ONLY.  The substrate is not re-run; every neighbourhood datum is read from Cycle 913's published per-lock-point rows and Cycle 913/918's published context ladders.  Declared cost choice.",
+  "worker": "Claude Opus 5 worker under supervisor spec (substitution disclosed).",
+  "both_readings_rule": "applied to the two drafts, to the two readings of the weight's indexing (R1/R2), to the two parses of the Admissibility non-supply sentence, to the two readings of the realized-state primitive's non-supply clauses, to the static/time-indexed neighbourhood map, and to the spec's own arena-size inconsistency."
+ }
+}

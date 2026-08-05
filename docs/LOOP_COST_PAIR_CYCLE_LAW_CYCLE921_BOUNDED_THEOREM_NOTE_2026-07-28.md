@@ -133,7 +133,14 @@ no cost — the drop comes from a SECOND, loop-independent channel
 that grows with fragment size and field (the 4-site arms reach
 C_ab = 0.0217, just over the 0.02 gate). This block does not
 explain that channel; it is the named successor (running as Cycle
-927).
+927). [Correction 2026-08-05, Cycle 927: "grows with fragment
+size" is WRONG — the channel is flat in size beyond a saturation
+step at arm length 2 (a 3-site and a 15-site chain agree to six
+decimals); it grows with field and FALLS with pointer degree
+(arity dilution), and only degree 2 crosses the 0.02 gate at the
+high field — which fully explains this exception. The pair-cycle
+law itself is untouched (this block's full designed set reproduces
+at deviation exactly 0 in Cycle 927). See the Cycle-927 note.]
 
 ## Scope findings (structural, disclosed)
 

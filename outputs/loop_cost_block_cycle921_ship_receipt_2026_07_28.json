@@ -15,8 +15,8 @@
   ],
   "files": {
     "docs/LOOP_COST_PAIR_CYCLE_LAW_CYCLE921_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "69866c618441585072ab1df72c68c857799a7171",
-      "sha256": "36b70f78959ae0a739aca76355b6390022113a43967566b727b91363bece22a6"
+      "git_blob": "ecaddf1ebb718f1f731023181e7093ff3f3d05f3",
+      "sha256": "be3e307488e0eda72686a8520fc5bbcd1ebe23538d12020ce55e10cec18fb3b3"
     },
     "logs/runner-cache/frontier_cycle921_loop_cost_2026_07_28.txt": {
       "git_blob": "cbd2a6db89d4f0e7e526dc8a6fed85b1da6f7b7a",
@@ -46,6 +46,13 @@
   "headline": "THE LOOP COST EXPLAINED \u2014 THE PAIR-CYCLE LAW: the tax is per fragment-pair, graded by the shortest pointer-through cycle joining the pair's anchors (length 3 kills content at every field; length 4 kills pair-independence at lambda >= 0.075 but not 0.05; length >= 5 is FREE) and max R_ind = the independence number of what survives (loop-free => pointer degree = 917's reading; 917's high-field failures are exactly its d=2 pairs); loop COUNT REFUTED in both readings (ten loops can cost nothing; six fixed-pair ladders never move the ceiling); POSITION reduces to the binary through-pointer gate; discrimination 42/42, 42/42, 41/42 vs best rival 34/42 (a degeneracy probe); margins WIDE (+0.016 / -0.010 bits \u2014 not a persistence razor); matched pairs identical on EVERY tracked statistic still split 4 vs 3, excluding all counting mechanisms at once; crossover field monotone in d (probe-grade ladder); THE ONE EXCEPTION reported not absorbed: G1 chain at 0.10 (a second, size-driven, loop-independent channel \u2014 the named successor); scope rules: d=2 constructible only in cube coordinates under the frozen tie-break; l=3 forces +X/+X",
   "independence": "checker fully independent (Floyd-Warshall partitions from memo bytes, Pauli-Kron Hamiltonians, Lanczos/Krylov vs Pade, opposite site-ordering, Bron-Kerbosch MIS); SUPPORTED, zero disagreements; 12/12 teeth; 120/120 adversarial cells; 102-geometry degeneracy attack, no rival within 8",
   "note": "docs/LOOP_COST_PAIR_CYCLE_LAW_CYCLE921_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "post_ship_edits": [
+    {
+      "authority": "supervisor post-ship precision edit (the standing pattern); no claim strengthened",
+      "date": "2026-08-05",
+      "edit": "Cycle-927 correction: the second channel's 'grows with fragment size' attribution is wrong (flat in size beyond arm-length-2 saturation; falls with pointer degree \u2014 arity dilution; only degree 2 crosses the gate). Bracketed dated correction added; note pin refreshed."
+    }
+  ],
   "runtime_seconds": {
     "checker": 11.6,
     "primary": 218.5

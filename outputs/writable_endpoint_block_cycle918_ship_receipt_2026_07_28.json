@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); splice-only discipline (the pinned kernel never edited); supervisor line-by-line review",
+  "block": "toe-time-blockQ11-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 386s; 38/38 checks; 8/8 teeth (tampered pin, dropped modification, hardcoded verdict, leaked born-capable, skipped world, planted-branch blindness, planted write-once breach, planted dead-slot corruption)",
+    "primary": "exit 0, 324s; restriction gates 41/41 (control digest-identical to the pinned 913 build in BOTH layouts; 911/913/878 surfaces value-for-value); 14/14 teeth; all three verdict classes reachable by synthetic probe"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 10th Born-family PR: the lane's named successor EXECUTED (not deferred) with the framework's first branch pairs, a structural verdict per design axis, and the O3 obstruction relocated by lemma; nothing corollary",
+  "cycles": [
+    918
+  ],
+  "files": {
+    "docs/WRITABLE_ENDPOINT_BORN_CAPABLE_FIRST_BRANCH_PAIRS_CYCLE918_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "186af20c471f8cbb4e9c9871fc2ee652d813e348",
+      "sha256": "40333f3bb83f77a3e7c89eb232bbe24c01885cdcfdcab7888ae319419c1efaee"
+    },
+    "logs/runner-cache/frontier_cycle918_writable_endpoint_2026_07_28.txt": {
+      "git_blob": "ee6b4fbd31efee01d6d7f3341a4dc572eb3d8940",
+      "sha256": "4ef2fb55b29d38feef8b3f079193ff47d5cc8a89b25faee6d7315f068f60470a"
+    },
+    "logs/runner-cache/frontier_cycle918_writable_independent_check_2026_07_28.txt": {
+      "git_blob": "15cd12ed275b79f139bdbf2953d7fde4e1b10f3d",
+      "sha256": "0dc7a0ff70e1170085c2099525ba957a8cea4569bba91a693ddfc2a6aa3cba60"
+    },
+    "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json": {
+      "git_blob": "5704619b21d9a3af312956580355d6dd5a303f53",
+      "sha256": "849ad2bbb4abc8c9eda5541246784e2bdb69feaf423aac7c6f3aff83f6062bbd"
+    },
+    "outputs/writable_independent_check_cycle918_receipt_2026_07_28.json": {
+      "git_blob": "f881977d6da6c6285829da0b60b347e29b27d059",
+      "sha256": "f08b411637a1e83c8bd91022339e938813f40e9c3c6085f0e330f4d71f11d8b0"
+    },
+    "scripts/frontier_cycle918_writable_endpoint_2026_07_28.py": {
+      "git_blob": "b5a1a5643abe87ab4a92fd86e8c0007e8f26539a",
+      "sha256": "0ef019ef77cf3ff33c7e6c29ac31d1cd53945bd5f505f1fd4b3387e74017289d"
+    },
+    "scripts/frontier_cycle918_writable_independent_check_2026_07_28.py": {
+      "git_blob": "6238bb5c1cd9e4dc3e76e672efe5a7db8594d61b",
+      "sha256": "4244a7ca72549f0930d4ed1be97dec83adaca8cc1e4ccd0ed9ed74be9bb7bdec"
+    }
+  },
+  "headline": "THE WRITABLE-ENDPOINT DESIGN SPACE MAPPED (748 worlds, 180,224 boundaries, both layouts): record-driven M_A = BORN-CAPABLE \u2014 37 lock points realize an item their setup did not prepare and the FIRST THREE DYNAMICAL BRANCH PAIRS in the framework's history exist ([253,407],[520,630],[533,643]); priced by the monitor-phase Z11 loss (124 violations) and 32 unformed worlds; cross-lane M_B = DESTRUCTIVE (the neighbour is a bookkeeping artefact \u2014 the law is not well defined); local-content M_C = STERILE (fires only in even numbers before every lock); NECESSARY-NOT-SUFFICIENT: the 911 branch class stays EMPTY for every gate set (census fact + determinism lemma) \u2014 O3's obstruction relocates to 'the law is a function of (schedule, tick-0 state)'; selection still lives on wires [1,6] (trajectory history, not neighbourhood); the M_A constraint-(c) tension emitted as a registration-shaped owner surface",
+  "independence": "checker on an independent splice mechanism (pinned 863 compiler schedules, computed-offset splice, never a rebuild; own scan/counters/Z11 action); PRIMARY_SURVIVES_THIS_CHECK, 38/38 checks, 8/8 teeth; the checker closed the one gap it found (dead-wire rig re-derived under each modification)",
+  "note": "docs/WRITABLE_ENDPOINT_BORN_CAPABLE_FIRST_BRANCH_PAIRS_CYCLE918_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 386,
+    "primary": 324
+  }
+}

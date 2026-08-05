@@ -1,0 +1,105 @@
+{
+  "file_count": 14,
+  "files": [
+    {
+      "git_blob": "bc2b934af79184780811b9859fc6f92ab79038b3",
+      "head_sha": "7d917fcdf93fcacc63fedcb2e516022593b1759e",
+      "original_path": "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+      "pr_number": 5922,
+      "sha256": "37bf888a461aac7f3929d0126a7a2b4c21f4fd01cc8e299ff6f8b42eba88e67f"
+    },
+    {
+      "git_blob": "fe63c75ccbb684c60e6553c7bb00f9b66006cbaf",
+      "head_sha": "c28a1e42f7441f98ceced0c41f348ebf15ef3dd2",
+      "original_path": "docs/PHYSICAL_SCALE_FREE_ADJACENCY_DISSECTION_BRACKET_CYCLE724_NOTE_2026-08-03.md",
+      "pr_number": 5933,
+      "sha256": "18d228717a4ccf0bb9d3a3ac0d240b47e53d9f4de3d1794ef21354aa6e10ecab"
+    },
+    {
+      "git_blob": "bf4399b63fb61983645ff8e705546ac5ea64595e",
+      "head_sha": "40ebd54aa0f4950a5dcc57b4445b07559bb31f33",
+      "original_path": "docs/RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+      "pr_number": 5940,
+      "sha256": "ce4a2c0032c841f17f0e634af918cdfcb3825718997cc8e54ee567bfd11f0931"
+    },
+    {
+      "git_blob": "c064d9ad16c754e86785e7c7cfc13b5426437e5b",
+      "head_sha": "c25aa5c81edcf5f7e9399ffc6805fcae9bbdb478",
+      "original_path": "docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md",
+      "pr_number": 5942,
+      "sha256": "8515a32e306e60b0299ee1b1bf60cd03389c047422171d894fea1220596a8d14"
+    },
+    {
+      "git_blob": "887aa5c0e046658587d01138e4312e481397d070",
+      "head_sha": "e4e1aad7bb0af416f9dd68ebe18e27b136d70189",
+      "original_path": "docs/PHYSICAL_FACET_CHARGE_TICK_MIXED_SPLIT_CYCLE726_NOTE_2026-08-04.md",
+      "pr_number": 5949,
+      "sha256": "f3018c65c37c7afec675a219709eda8749266ef7ec8244d8a31f9db8d196edda"
+    },
+    {
+      "git_blob": "ac24d4cbb54f53de5d11f2527bd29dd4a26c7a88",
+      "head_sha": "6b45fe0b1bf2694fe83b39ebbad5d912c46ae733",
+      "original_path": "docs/PHYSICAL_TICK_EXTENSIVE_ADJACENCY_BRACKET_CYCLE727_NOTE_2026-08-04.md",
+      "pr_number": 5953,
+      "sha256": "92b0962e77832b19e39bc15138f46991c3d965ea2c8190de2cf80356fd9ceb84"
+    },
+    {
+      "git_blob": "aa53038d890a0d4c121e7a09bb6c1722241f2d8c",
+      "head_sha": "39cb871b807bccd101eca0280ba496fc8dde702a",
+      "original_path": "docs/PHYSICAL_SPATIAL_BLOCK_SEAM_DICHOTOMY_CYCLE728_NOTE_2026-08-04.md",
+      "pr_number": 5962,
+      "sha256": "5f95b988bd7f5357e39e399e4add0ad0be099dfe4610a255460b1f511e031f59"
+    },
+    {
+      "git_blob": "d0933e09b6b7015d810b9894223e21f1ef8dcc88",
+      "head_sha": "8ca899138d7a5c1370e02cfe30660073b0db6103",
+      "original_path": "docs/PHYSICAL_BLOCK_COST_INTERVAL_LIFT_OBSTRUCTION_CYCLE729_NOTE_2026-08-04.md",
+      "pr_number": 5968,
+      "sha256": "340aa16ee7eac96b4d67c13431e51b55ca67310bf1e033af675a29f6e0089f5d"
+    },
+    {
+      "git_blob": "de1ea819655f5c4f436ca636f44fab9e5e43302f",
+      "head_sha": "46a6ae3b445417edc36c4163f8551ea753214bcc",
+      "original_path": "docs/PHYSICAL_LOCAL_EXTREMALITY_RULE_CELL_CYCLE730_NOTE_2026-08-04.md",
+      "pr_number": 5974,
+      "sha256": "48adf847d87cc142d2685897afa9e8e61f6d09853c79ce5ee05cc6741dd1da96"
+    },
+    {
+      "git_blob": "f279b9c2aa096619252882ecb295350623eb73bb",
+      "head_sha": "7d067735492c0775eebb02e2e9b0db29e059a0c6",
+      "original_path": "docs/PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md",
+      "pr_number": 5978,
+      "sha256": "6ff14a265fb97744da85889f47921d40fb1fa7579908bc6e4815280fb248a752"
+    },
+    {
+      "git_blob": "5e8ddac6e8a66d8256cc15313480f0f6b42fff22",
+      "head_sha": "c1e6e249073a1b9b909228545bbff199b6dfc4f9",
+      "original_path": "docs/PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026-08-04.md",
+      "pr_number": 5981,
+      "sha256": "e56bb2cd7e9654255d1469bbb4315d92ca5dd3461d837df67386a9e492216b09"
+    },
+    {
+      "git_blob": "5ff655c72b45bee5f8e5dfa89b7a1d6d90af495e",
+      "head_sha": "1f4f4c1ea7734ba89852b09e5042b4ad5bc2592a",
+      "original_path": "docs/PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md",
+      "pr_number": 5983,
+      "sha256": "94656ee9fb9e53f34fc7739e76b333e340185adf273c8004e565638cc6d58480"
+    },
+    {
+      "git_blob": "1eef4287ac8ec6c2dd2d8386d8ce8247fe8b4271",
+      "head_sha": "b480d7684c6a9e50cd7947f3e482b238c6eeb2ad",
+      "original_path": "docs/PHYSICAL_LEAST_COST_CUTTING_FLIP_AND_MOVE_LADDER_CYCLE734_NOTE_2026-08-04.md",
+      "pr_number": 5990,
+      "sha256": "b3b73b7ba07df7770ab6d2227f51a9e1da2c84d712ac013d90c7355063f67400"
+    },
+    {
+      "git_blob": "71a0eb0fac7ff62e7e40acf551f9831aafa089fb",
+      "head_sha": "2d1e2c0f8a612ee984d04c31b80c570fe8577e47",
+      "original_path": "docs/PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026-08-05.md",
+      "pr_number": 5998,
+      "sha256": "be17fcbb6ef21172213d4429a3245158e0235074f86cfa119d49d8cfd1ec17d0"
+    }
+  ],
+  "pr_count": 14,
+  "rescue_date": "2026-08-05"
+}

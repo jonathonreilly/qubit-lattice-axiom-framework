@@ -1275,3 +1275,35 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
   fragment count); the two-gate anatomy test; E1 de-singletoned.
 - Cluster-cap (9th M-family PR): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 928 route-1 sweep (blockAC2, PR #5995) — 2026-08-05
+
+- Supervisor review: the declared-fallible source list WORKED as
+  designed — the worker verified every placement and corrected
+  three (903 on blockG26 not G20; unit grading is 876 not 883;
+  four G-branch adjacencies are not ancestries) with zero wasted
+  premises; the multi-modal search record (59 branches, 19,971
+  rows) is the widest provenance sweep of the campaign; the
+  checker's self-refutation episode (counting its own output)
+  disclosed with the fix asserted as a check; the PDG firewall
+  quarantine enforced (897, 923 swept from typing text only).
+- Verdict: route 1 SWEPT EMPTY (zero survivors of 20 enumerated
+  candidates) and the obstruction RENAMED — the TYPE GAP: the new
+  surfaces hold the exact number (three 2/3-valued objects with
+  genuine charged-lepton referents; sharpest = 899's fixed-locus
+  inverse-determinant sum) but type nothing as an angle, and their
+  one genuine angle (901's 2pi/3) is closed-bin and unbridgeable
+  by pi-rationality. The joining sentence IS the h-unit license,
+  now exhibited from both sides of the wall.
+- The consolidated four-route statement stands in one place;
+  route 4 measured to need a NEW primitive (the scale-reference
+  primitive's own exclusion clause). NO AXIOM ASK EARNED — the
+  sweep's emptiness is a pricing, not a petition. **THE AC LANE IS
+  TERMINAL AT CAMPAIGN SCOPE.**
+- Audit rows (9): the four receipt-less window-1 campaign packages
+  (872/876/882/883 — a process gap in OUR OWN window-1 shipping,
+  flagged for the audit lane, not silently backfilled); the 903
+  note/receipt count discrepancy; the ten unswept cycles (scope);
+  924's two carried forward.
+- Cluster-cap: n/a (2nd AC-family PR).
+- Local disposition: **pass** (bounded_theorem; audit pending).

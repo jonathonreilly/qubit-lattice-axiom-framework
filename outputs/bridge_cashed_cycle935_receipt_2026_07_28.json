@@ -101,7 +101,7 @@
     "ok": true
    },
    {
-    "detail": "elapsed_s=0.7 budget_s=900.0",
+    "detail": "elapsed_s=0.5 budget_s=900.0",
     "name": "CERT-BUDGET/runtime",
     "ok": true
    }
@@ -237,7 +237,7 @@
   "empirical fit"
  ],
  "restriction_deviation_from_871": 0,
- "runtime_seconds": 0.67,
+ "runtime_seconds": 0.54,
  "scope_verdict": "NO_GO_DIMENSIONLESS_RESIDUE_NOT_SUPPLIED",
  "seal": {
   "all_matched": true,

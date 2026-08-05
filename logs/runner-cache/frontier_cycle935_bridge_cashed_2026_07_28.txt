@@ -4,7 +4,7 @@ runner_sha256: 742b547584c90595d6bde0244e1ff5a3c7eb42a17ed5c0ad98383ef1326fa11a
 input_fingerprint_sha256: a4afca23bb0e6e991e136f0275a31638cd4d516ad5cd069813f94ad17ff63040
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -294,7 +294,7 @@ verdict follows -- it does not assume the composition closes.
       computed: g_newton_si_normalization_derives_from_registered_scale=False
       digest=6e4c1f6a1ee1dc48d715ffea99d3743f  sealed=6e4c1f6a1ee1dc48d715ffea99d3743f  match=True
   holdout-free build log: seal committed at 33bd21dfb7d5 in its own commit,
-  before this runner's first commit (uncommitted).
+  before this runner's first commit (3c5a967ad291).
 
 -- CERT-TEETH: falsifiers that must FIRE --------------------------------------
   FIRED   T1/planted-out-of-scope-primitive-clause-caught-by-quote-gate
@@ -332,7 +332,7 @@ verdict follows -- it does not assume the composition closes.
   PASS  CERT-SEAL/pre-registered-predictions             sealed=6 matched=6
   PASS  CERT-TEETH/all-falsifiers-fire                   teeth=10 fired=10
   PASS  CERT-DET/deterministic-and-leak-free             digest_stable=True payload_leaks=0
-  PASS  CERT-BUDGET/runtime                              elapsed_s=0.7 budget_s=900.0
+  PASS  CERT-BUDGET/runtime                              elapsed_s=0.5 budget_s=900.0
 
 TOTAL: PASS=14 FAIL=0
 VERDICT: PASS

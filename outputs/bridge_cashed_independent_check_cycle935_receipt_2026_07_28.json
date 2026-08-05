@@ -1,0 +1,217 @@
+{
+ "attacks": {
+  "i_supply_scope": {
+   "decisive_clauses": {
+    "does_not_assert_a_over_lP": true,
+    "excludes_coupling": true,
+    "lane_sentence_conditional": true,
+    "refuses_dimensionless": true
+   },
+   "pro_supply_probes": 4,
+   "survived": 0
+  },
+  "ii_overreach": {
+   "count": 0,
+   "smuggled_tokens": [],
+   "stronger_still_open": 5
+  },
+  "iii_sealed": {
+   "fp_rows": 8,
+   "holdout_proved_from_git": true,
+   "matched": 6,
+   "of": 6,
+   "primary_first_commit": "3c5a967ad2915a37e09c8f36979db7bc548ac3f6",
+   "seal_commit": "33bd21dfb7d55fc5b8c495d4b2b591887aac843d"
+  },
+  "iv_gauge": {
+   "hunt_fixed_with_product_not_one": 0,
+   "hunt_moving_with_product_one": 0,
+   "hunt_trials": 4000,
+   "product_equal": true,
+   "sigma_law": true,
+   "t": "2"
+  }
+ },
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockG28-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "checker_finding_strengthening_the_primary": "the primitive's sentence 'The units reference is an approved primitive, so it does not bound lanes whose dimensionless content is otherwise closed.' is an explicit CONDITIONAL. The bridge fails its antecedent (871 free dimension 1 means the dimensionless content is exactly what is NOT closed), so the primitive's own scope sentence excludes this case by construction. The primary rested on the weaker clauses and did not invoke this one.",
+ "checks": {
+  "fail": 0,
+  "pass": 8,
+  "rows": [
+   {
+    "detail": "pro_supply_probes=4 survived=0 decisive_clauses=4/4",
+    "name": "CHK-i/supply-scope-adversarial",
+    "ok": true
+   },
+   {
+    "detail": "overreach=0 stronger_still_open=5 unsupplied=3",
+    "name": "CHK-ii/no-overreach",
+    "ok": true
+   },
+   {
+    "detail": "matched=6/6 fp_rows=8 bfs_all_one=True holdout_proved=True",
+    "name": "CHK-iii/sealed-predictions-independent",
+    "ok": true
+   },
+   {
+    "detail": "t=2 sigma_law=True product_equal=True matches_primary=True hunt_moving=0 hunt_fixed=0",
+    "name": "CHK-iv/gauge-exhibit-recomputed",
+    "ok": true
+   },
+   {
+    "detail": "dimensionless_structure=True zero_new=True ratio=True",
+    "name": "CHK-v/planck-precedent-contrast-honest",
+    "ok": true
+   },
+   {
+    "detail": "teeth=10 fired=10",
+    "name": "CHK-TEETH/all-mutations-fire",
+    "ok": true
+   },
+   {
+    "detail": "stable=True leaks=0",
+    "name": "CHK-DET/deterministic-and-leak-free",
+    "ok": true
+   },
+   {
+    "detail": "elapsed_s=0.6 budget_s=900.0",
+    "name": "CHK-BUDGET/runtime",
+    "ok": true
+   }
+  ]
+ },
+ "cycle": 935,
+ "fp_solution_counting": [
+  {
+   "composed_dim": 1,
+   "composed_solutions": 2,
+   "implied_dim": 1,
+   "p": 2,
+   "patch": "(2,)",
+   "solutions": 2
+  },
+  {
+   "composed_dim": 1,
+   "composed_solutions": 3,
+   "implied_dim": 1,
+   "p": 3,
+   "patch": "(2,)",
+   "solutions": 3
+  },
+  {
+   "composed_dim": 1,
+   "composed_solutions": 5,
+   "implied_dim": 1,
+   "p": 5,
+   "patch": "(2,)",
+   "solutions": 5
+  },
+  {
+   "composed_dim": 1,
+   "composed_solutions": 7,
+   "implied_dim": 1,
+   "p": 7,
+   "patch": "(2,)",
+   "solutions": 7
+  },
+  {
+   "composed_dim": 1,
+   "composed_solutions": 2,
+   "implied_dim": 1,
+   "p": 2,
+   "patch": "(3,)",
+   "solutions": 2
+  },
+  {
+   "composed_dim": 1,
+   "composed_solutions": 3,
+   "implied_dim": 1,
+   "p": 3,
+   "patch": "(3,)",
+   "solutions": 3
+  },
+  {
+   "composed_dim": 1,
+   "composed_solutions": 2,
+   "implied_dim": 1,
+   "p": 2,
+   "patch": "(4,)",
+   "solutions": 2
+  },
+  {
+   "composed_dim": 1,
+   "composed_solutions": 2,
+   "implied_dim": 1,
+   "p": 2,
+   "patch": "(2, 2)",
+   "solutions": 2
+  }
+ ],
+ "headline": "independent routes CONFIRM the scope no-go and strengthen it: the primitive's lane sentence is an explicit conditional whose antecedent the bridge fails; four pro-supply readings mounted, four died on the primitive's own text",
+ "independence": "F_p brute-force solution counting (no linear algebra) vs the primary's exact Gaussian elimination; BFS orbits vs union-find; seeded randomized stabilizer hunt vs an exact enumerated grid; adversarial sentence re-reading vs fixed byte offsets; git-ancestry holdout proof vs assertion",
+ "independent_prediction_preimages": {
+  "P1_composed_free_dimension": "composed_free_dimension=1",
+  "P2_reduction_from_registration": "free_dimension_reduction_from_registration=0",
+  "P3_observables_separating_gauge_points": "observables_separating_pre_and_post_registration_gauge_points=0",
+  "P4_deviation_from_871_rows": "deviation_from_cycle871_receipt_rows=0",
+  "P5_scope_verdict": "scope_verdict=NO_GO_DIMENSIONLESS_RESIDUE_NOT_SUPPLIED",
+  "P6_gnewton_derives": "g_newton_si_normalization_derives_from_registered_scale=False"
+ },
+ "pins": {
+  "docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md": {
+   "git_blob": "ba64460ec9ca2ee3ad6e778603be550b053cc352",
+   "sha256": "e12615aebebd7535a4cc5c5a446bf1ba731f656d4de91744818b51edeb7ec047"
+  },
+  "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+   "git_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+   "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+  },
+  "docs/SOURCE_ACTION_BRIDGE_PRICING_CYCLE871_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "2cac419f992adcfffa8a48e3af7febad68714ce2",
+   "sha256": "c666f500518ce1b67745c63e65b63656d905d1c70ed04ee566827e2628575100"
+  },
+  "logs/runner-cache/frontier_cycle871_source_action_bridge_pricing_2026_07_28.txt": {
+   "git_blob": "d491b5f42ab1186bd8eb952583304c5d6769d7ac",
+   "sha256": "bf1e493cff5775bfba10e4f293ffe794c09cfe8448b3b5c4103e61d82ceb3ad8"
+  },
+  "outputs/bridge_cashed_cycle935_receipt_2026_07_28.json": {
+   "git_blob": "30e25fbd6d878194067684598394d85daec6408d",
+   "sha256": "3a20e6167428a7ddf9588915829c3769c9e57b73298d33f62752780ed9fb093f"
+  },
+  "outputs/bridge_cashed_cycle935_seal_2026_07_28.json": {
+   "git_blob": "3bd4e7ca20fd724ec063f771ce2100c5923ce4fd",
+   "sha256": "2e1f65ee506d5fd2855ae26ec9a87697c686119eca9c0502973a64767888e813"
+  },
+  "scripts/frontier_cycle935_bridge_cashed_2026_07_28.py": {
+   "git_blob": "da20d6eb04c72a1dab2ce14c83b516219eea9d3a",
+   "sha256": "742b547584c90595d6bde0244e1ff5a3c7eb42a17ed5c0ad98383ef1326fa11a"
+  },
+  "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py": {
+   "git_blob": "d604bc5f180e87844f477d52f82376df61e0134e",
+   "sha256": "ac9ea8b6b7556ce8679d734e98a152bf3af7a9988d9f72f5722ad4c8f7ec9453"
+  }
+ },
+ "refutations": [],
+ "role": "independent checker, spec'd to refute",
+ "runtime_seconds": 0.58,
+ "teeth": {
+  "count": 10,
+  "fired": 10,
+  "names": [
+   "CT1/granting-dimensionless-content-flips-the-scope-verdict",
+   "CT2/free-dimension-0-plus-known-exponent-would-let-the-ruler-cash",
+   "CT3/product-one-violation-produces-separating-observables",
+   "CT4/tampered-seal-digest-detected",
+   "CT5/Fp-solution-count-is-load-bearing",
+   "CT6/dropping-translation-generators-breaks-dimension-1",
+   "CT7/planted-stronger-obligation-token-caught",
+   "CT8/reversed-commit-order-would-break-holdout-freedom",
+   "CT9/wall-clock-leak-detectable-in-a-payload",
+   "CT10/hypothesis-list-tampering-detectable"
+  ]
+ },
+ "timing_free_digest": "7a8dc2c8adaffccce831d41c22813039126a095483ef390fa544a761e88288ff"
+}

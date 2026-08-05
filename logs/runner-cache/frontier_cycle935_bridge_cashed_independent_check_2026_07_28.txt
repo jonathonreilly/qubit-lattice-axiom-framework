@@ -1,0 +1,182 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle935_bridge_cashed_independent_check_2026_07_28.py
+runner_sha256: fd09da40e1d98c97192af7aa863d8a5ac94a801e4dc7fbfd6a8a663152c675bb
+input_fingerprint_sha256: 7a8dc2c8adaffccce831d41c22813039126a095483ef390fa544a761e88288ff
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 935 -- INDEPENDENT CHECKER, SPECIFIED TO REFUTE
+==============================================================================
+
+Routes deliberately disjoint from the primary: F_p solution counting (no
+linear algebra), BFS orbits, seeded randomized stabilizer hunt, adversarial
+sentence-by-sentence re-reading, git-ancestry holdout proof.
+
+-- ATTACK (i): is the bridge scalar inside the primitive's supply scope? -----
+  Mounting the STRONGEST pro-supply readings and testing each to destruction.
+
+  [P-A] the ruler-use sentence: quote verbatim in the primitive = True; SURVIVES its own test = False
+        "A row whose only otherwise non-retained dependency is this scale-referen..."
+        Reads as: 'using the ruler is free, so the bridge may use it freely.' RE
+        SOLUTION: this sentence governs AUDIT STATUS of a row, not what the prim
+        itive SUPPLIES. It says a row is not bounded for using a ruler; it does 
+        not say the ruler supplies a number. Does not grant the scalar.
+
+  [P-B] the lane sentence: quote verbatim in the primitive = True; SURVIVES its own test = False
+        "The units reference is an approved primitive, so it does not bound lanes..."
+        Reads as: 'the primitive unblocks lanes.' RESOLUTION: the sentence is CO
+        NDITIONAL -- 'whose dimensionless content is OTHERWISE CLOSED'. The brid
+        ge's dimensionless content is precisely NOT closed (871 free dim 1), so 
+        the antecedent FAILS. This sentence argues AGAINST supply, not for it.
+
+  [P-C] the [a]^n sentence: quote verbatim in the primitive = True; SURVIVES its own test = False
+        "Quantities on the structural surface remain dimensionless or carry a pow..."
+        Reads as: 'the scalar carries [a]^n, so the ruler converts it.' RESOLUTI
+        ON: this requires knowing n. 871 derives NO engineering dimension for it
+        s scalar, so the disjunct that applies is the FIRST one ('remain dimensi
+        onless') -- which the primitive does not supply.
+
+  [P-D] the Planck-scale precedent: quote verbatim in the primitive = True; SURVIVES its own test = False
+        "The chosen reference is the Planck mass scale, `a^{-1} = M_Pl`...."
+        Reads as: 'M_Pl is exactly the gravitational coupling scale, so register
+        ing it fixes G.' RESOLUTION: fixing the SCALE is not fixing the COEFFICI
+        ENT. G = 1/M_Pl^2 in natural units only up to a dimensionless factor, an
+        d the primitive refuses dimensionless factors. Also the primitive explic
+        itly does NOT assert a/l_P = 1.
+
+  871's bridge free dimension re-read from its note: 1
+
+  decisive clause A -- refuses dimensionless content:      True
+  decisive clause B -- exclusion list names 'coupling':    True
+  decisive clause C -- lane sentence is CONDITIONAL on the
+                       dimensionless content being closed: True
+  decisive clause D -- does NOT assert a/l_P = 1:          True
+
+  CHECKER FINDING (strengthens the primary rather than refuting it): the
+  primary rested on clauses A and B. Clause C is STRONGER still and the
+  primary did not use it -- 'it does not bound lanes whose dimensionless
+  content is otherwise closed' is an explicit CONDITIONAL, and the bridge
+  fails its antecedent by 871's own headline (free dimension 1, i.e. the
+  dimensionless content is exactly what is NOT closed). The primitive's own
+  scope sentence therefore excludes this case by construction.
+
+  pro-supply readings that SURVIVED their own text: 0 of 4
+  VERDICT ON ATTACK (i): the scalar is NOT inside the primitive's supply
+  scope. The primary's scope verdict is CONFIRMED, by a stronger clause.
+
+-- ATTACK (ii): overreach hunt on the composition's hypothesis list ----------
+  declared hypotheses: 8 (SUPPLIED=5, NOT_SUPPLIED=3)
+  stronger-obligation tokens inside SUPPLIED hypotheses: 0 []
+  stronger-obligation tokens inside the primary's claim fields: 0
+  stronger obligations still declared NOT discharged: 5 ['GB_S2_kernel_plus_window', 'GB_S3_connectivity', 'finite_core_vs_green_kernel', 'hclass_to_angle_readout_identity', 'signed_gravity_locked_term']
+  871 ansatz declared as a hypothesis (not hidden): True
+  primary IMPORTS the blocklisted landed Gate-B primary: False (must be False)
+  primary's G_Newton-derives claim: False (an overreach would be True)
+  primary discloses that 871's EQUIVALENT tag is an alias, not a solve: True
+  >>> TOTAL OVERREACH COUNT = 0 (required: 0)
+  VERDICT ON ATTACK (ii): the composition does not silently claim any of the
+  five stronger obligations, and it names its own unsupplied hypotheses.
+
+-- ATTACK (iii): recompute every sealed prediction by an INDEPENDENT route ---
+  free dimension by BRUTE-FORCE SOLUTION COUNTING over F_p (no linear algebra)
+  patch     p   solutions  implied_dim   composed_solutions  composed_dim  agree
+  (2,)      2           2            1                    2             1  True
+  (2,)      3           3            1                    3             1  True
+  (2,)      5           5            1                    5             1  True
+  (2,)      7           7            1                    7             1  True
+  (3,)      2           2            1                    2             1  True
+  (3,)      3           3            1                    3             1  True
+  (4,)      2           2            1                    2             1  True
+  (2, 2)    2           2            1                    2             1  True
+  (composed = every constraint rescaled by the units factor t; the solution
+   COUNT is unchanged, which re-proves 'reduction = 0' with no linear algebra)
+  BFS translation orbits on all 16 patches all equal 1: True
+
+  OK  P1_composed_free_dimension: independent='composed_free_dimension=1' match=True
+  OK  P2_reduction_from_registration: independent='free_dimension_reduction_from_registration=0' match=True
+  OK  P3_observables_separating_gauge_points: independent='observables_separating_pre_and_post_registration_gauge_points=0' match=True
+  OK  P4_deviation_from_871_rows: independent='deviation_from_cycle871_receipt_rows=0' match=True
+  OK  P5_scope_verdict: independent='scope_verdict=NO_GO_DIMENSIONLESS_RESIDUE_NOT_SUPPLIED' match=True
+  OK  P6_gnewton_derives: independent='g_newton_si_normalization_derives_from_registered_scale=False' match=True
+
+  HOLDOUT-FREEDOM, PROVED FROM GIT ANCESTRY (not from assertion):
+    seal commit                          = 33bd21dfb7d5
+    primary's first commit               = 3c5a967ad291
+    seal is a strict git ANCESTOR        = True
+    primary ABSENT from the tree at seal = True
+    -> the sealed digests could not have been fitted to a computed result.
+  VERDICT ON ATTACK (iii): all six sealed predictions reproduce by independent
+  routes, and holdout-freedom is provable from git ancestry.
+
+-- ATTACK (iv): recompute the gauge transformation from the LANDED bytes -----
+  re-extracted from scripts/gate_b_weak_field_source_action_interface_2026_06_16.py:
+    r=4.0 eps=0.1 length=sqrt(2.0)
+    base:     lambda=1.0 sigma=5.0e-5
+    rescaled: lambda=2.0 sigma=2.5e-5
+    tolerance=1.0e-15
+  independently derived t = lambda1/lambda0 = 2
+  does sigma obey sigma1 = sigma0/t ?  True
+  product lambda*sigma: base=1/20000 rescaled=1/20000 equal=True
+  primary's exhibit reproduces value-for-value: True
+
+  RANDOMIZED STABILIZER REFUTATION HUNT (seeded, 4000 trials):
+    rescalings with product == 1 that MOVED an observable:      0
+    rescalings with product != 1 that LEFT the action fixed:    0
+    observable family: values, pairwise differences, ratios, squares
+  VERDICT ON ATTACK (iv): the gauge connection is exactly the product-one
+  element t = 2 in the landed case, and the general characterization survives
+  4000 randomized attempts to break it.
+
+-- CHK-v: is the primary's 'why Planck-time cashed' contrast honest? ---------
+  Planck note says the records supply the dimensionless structure: True
+  Planck note says 'Zero new dimensionless content.':              True
+  Planck note says the tick/edge tie fixes the RATIO:              True
+  -> the precedent cashed because its dimensionless side was closed to a POINT
+     (a fixed ratio) leaving only a unit. The primary's contrast is accurate.
+  This also yields the general rule INDEPENDENTLY: the registered ruler cashes
+  a composition exactly when the dimensionless side has free dimension 0.
+
+-- CHK-TEETH: mutation harness -- every tooth must FIRE ----------------------
+  FIRED   CT1/granting-dimensionless-content-flips-the-scope-verdict
+  FIRED   CT2/free-dimension-0-plus-known-exponent-would-let-the-ruler-cash
+  FIRED   CT3/product-one-violation-produces-separating-observables
+  FIRED   CT4/tampered-seal-digest-detected
+  FIRED   CT5/Fp-solution-count-is-load-bearing
+  FIRED   CT6/dropping-translation-generators-breaks-dimension-1
+  FIRED   CT7/planted-stronger-obligation-token-caught
+  FIRED   CT8/reversed-commit-order-would-break-holdout-freedom
+  FIRED   CT9/wall-clock-leak-detectable-in-a-payload
+  FIRED   CT10/hypothesis-list-tampering-detectable
+  teeth=10 fired=10 all_fired=True
+
+-- CHK-DET: determinism + wall-clock leak guard ------------------------------
+  timing-free digest run1=7a8dc2c8adaffccce831d41c22813039126a095483ef390fa544a761e88288ff
+  timing-free digest run2=7a8dc2c8adaffccce831d41c22813039126a095483ef390fa544a761e88288ff
+  stable=True  payload_bytes=975  leak_hits=0
+
+-- REFUTATIONS ---------------------------------------------------------------
+  none. Every attack surface was probed and the primary's claims survived.
+
+-- CHECKS --------------------------------------------------------------------
+  PASS  CHK-i/supply-scope-adversarial           pro_supply_probes=4 survived=0 decisive_clauses=4/4
+  PASS  CHK-ii/no-overreach                      overreach=0 stronger_still_open=5 unsupplied=3
+  PASS  CHK-iii/sealed-predictions-independent   matched=6/6 fp_rows=8 bfs_all_one=True holdout_proved=True
+  PASS  CHK-iv/gauge-exhibit-recomputed          t=2 sigma_law=True product_equal=True matches_primary=True hunt_moving=0 hunt_fixed=0
+  PASS  CHK-v/planck-precedent-contrast-honest   dimensionless_structure=True zero_new=True ratio=True
+  PASS  CHK-TEETH/all-mutations-fire             teeth=10 fired=10
+  PASS  CHK-DET/deterministic-and-leak-free      stable=True leaks=0
+  PASS  CHK-BUDGET/runtime                       elapsed_s=0.6 budget_s=900.0
+
+TOTAL: PASS=8 FAIL=0  REFUTATIONS=0
+VERDICT: PASS
+
+CHECKER SUMMARY: the primary's SCOPE NO-GO is CONFIRMED by independent routes,
+and STRENGTHENED: the primitive's lane sentence ('does not bound lanes whose
+dimensionless content is otherwise closed') is an explicit conditional whose
+antecedent the bridge fails, which the primary did not invoke. Four pro-supply
+readings were mounted and all four died on the primitive's own text.
+----- stderr -----
+

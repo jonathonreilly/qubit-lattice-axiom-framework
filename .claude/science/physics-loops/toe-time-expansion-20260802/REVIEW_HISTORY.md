@@ -1499,6 +1499,36 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
   counted, symmetry refused, sentence owner-priced).
 - Cluster-cap (13th Born PR): OPEN. Disposition: pass.
 
+# THE ADOPTION + THE POST-ADOPTION ARC — 2026-08-05
+
+- THE AXIOM ADOPTED (PR #6011, owner-approved, revised once on
+  independent review): Admissibility's second sentence is now "For
+  each site, the probability distribution over the possibilities is
+  determined by, and varies with, the nearest-neighbor conditions."
+  Availability = the distribution's support (finite menus:
+  probability zero is unavailable). Approval + fence ruling in
+  policy section 6; reading notes non-governing; in-place edit per
+  the 07-04 precedent. The reviewer's measure/support finding
+  (atomless laws indistinguishable by per-point likelihood on the
+  continuous domain) was adopted with the owner's approval —
+  "probability distribution" as the standard term, owner-confirmed.
+- Cycle 945 (repairs, stacked on #6011): running — re-targeted to
+  the final wording after the revision.
+- **Cycle 943 SHIPPED as PR #6012** (14th Born PR, OPEN): THE
+  OWNER'S OBJECTION VINDICATED IN STRUCTURE — the menu asymmetry
+  is ONE WIRE wide (the orientation field, the only unpaired
+  record datum); the bulk dynamics is menu-swap invariant; 940 was
+  relabellings-only and its A2 is GAUGE; the axioms do not orient
+  the menu (940's negative model-contingent; the class question
+  open). Refuted in timing (every atom breaks before its lock).
+  Six checker refutations all adopted incl. two against the
+  primary's own claims. Disposition: pass.
+- **Cycle 946 LAUNCHED** (blockQ17): the mirror-partnered kernel —
+  build 943's named symmetriser; under the ADOPTED axiom, derive
+  w = 1/2 at symmetric sites (the neighborhood-equality route
+  preferred; conditional on #6011): THE FIRST DERIVED BORN VALUES
+  if it lands. Sealed-table discipline.
+
 ## Cycle 941 GB-S2 reconciled (blockG29, PR #6009) — 2026-08-05
 
 - Supervisor review: the byte-arithmetic reconciliation (871's 8 =

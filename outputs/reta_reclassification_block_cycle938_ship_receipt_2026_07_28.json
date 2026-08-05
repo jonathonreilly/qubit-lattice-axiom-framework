@@ -15,8 +15,8 @@
   ],
   "files": {
     "docs/RETA_RECLASSIFICATION_REFUTED_SPACE_GAP_CYCLE938_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "7ef0a0a58efa1b4f8764c3e3539911d5763a156c",
-      "sha256": "70c4f6e478096ee8219f5a10403a74ba0428f81b0416d72ef7495f9b7e8ed4b0"
+      "git_blob": "fa5f3af7ea5f119d291c76b13f979bc47b200eb1",
+      "sha256": "e36dc998c14ccc6b43be608bb62b74472e2b96d21c9b4cd1372e9a1ea4b302b1"
     },
     "logs/runner-cache/frontier_cycle938_reta_reclassification_2026_07_28.txt": {
       "git_blob": "84daaa25a948c770858ee2ee8ebb029ffd2b67d8",
@@ -46,6 +46,13 @@
   "headline": "THE RECLASSIFICATION ROUTE REFUTED TWICE + THE WALL'S SHARPEST NAME: the delta value-face move is PRIOR ART (landed 2026-07-05: (ii) = (ii-value) + (ii-exactness)) and CANNOT dissolve the obligation \u2014 it is TYPE-shaped (h-class map + h-unit conversion) and registration supplies VALUES, not MAPS (exact witness: the whole alpha family satisfies every structural constraint with different readouts; a registered delta cannot select \u2014 N8 verbatim); ROUTE 4's PRICE UNCHANGED; NEW: THE SPACE GAP \u2014 the slot (generation 3-space) and the cell (the Z^3 lattice rotation's normal plane) are ONE matrix on TWO supplied spaces, their identification being the open carrier question (the 928 type gap sharpened, registration-immune); SIGN: the 7.4e-6 exactness is CONVENTION-CONDITIONAL (all-positive signed-root cone; next-nearest assignment 3000x worse \u2014 916-dictionary pattern, carried on the sleeve); FOLD: delta has six mass-multiset preimages (only the folded angle is a functional); the value-face facts VERIFIED and supporting the landed 07-05 decomposition as it stands; audit rows: the gitignored-75MB-ledger cold-run breakage (process), the 07-05 runner's text-provenance PASS drift (pinned to its superseded sentence)",
   "independence": "checker fully independent (own algebra; seven refutations mounted, ALL HOLDING; the failed attacks \u2014 the counterfactual test's validity, the non-dissolution steelman \u2014 disclosed); 26/26 checks, 10 teeth each runner",
   "note": "docs/RETA_RECLASSIFICATION_REFUTED_SPACE_GAP_CYCLE938_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "post_ship_edits": [
+    {
+      "authority": "supervisor post-ship precision edit (the standing pattern); no claim strengthened",
+      "date": "2026-08-05",
+      "edit": "Cycle-939 corrections: the character pairing (regular rep vs doublet; the correct pairing is doublet-to-normal-plane) and the 901 re-binding of the normal-plane phrasing; the SPACE finding stands and splits per 939 (map gauge / structure-group cheap / value-type = the wall, wiring gap named). Bracketed dated correction added; note pin refreshed."
+    }
+  ],
   "runtime_seconds": {
     "checker": 0.75,
     "primary": 1.79

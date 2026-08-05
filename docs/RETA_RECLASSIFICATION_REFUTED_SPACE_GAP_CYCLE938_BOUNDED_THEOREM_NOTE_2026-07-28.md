@@ -100,7 +100,20 @@ a tokenizer-level source scan finds zero asserted equalities).
    different supplied spaces (generation space vs the lattice
    rotation's normal plane); identifying them IS the open carrier
    question. "Filling a slot in retained theory" holds for the
-   slot ONLY, not the slot-cell pair.
+   slot ONLY, not the slot-cell pair. [Correction 2026-08-05,
+   Cycle 939: two precisions. The character pairing — the
+   generation carrier is the REGULAR representation (3,0,0) and
+   the cell's home is the DOUBLET (2,-1,-1): the correct pairing
+   is singlet-line to fixed-line and doublet to normal plane, not
+   a 3-space to a 2-plane. And "the lattice rotation's normal
+   plane" as a premise description was re-bound by Cycle 901
+   (2/9 to Record content, nothing changing numerically). The
+   SPACE finding itself stands, and Cycle 939 splits it: the MAP
+   is gauge (eleven invariant observables), the structure-group
+   restriction is cheap content carrying the O_h trap, and the
+   value/type assertion is the wall — already minimally named
+   2026-06-11 as A_R-eta; the open carrier content narrows to
+   the WIRING gap. See the Cycle-939 note.]
 4. **ORIENTATION**: the forward-shift convention gives
    delta - 2 pi k/3; the sign of delta is itself convention.
 5. **FIREWALL**: the primary's hand-labelled scan was

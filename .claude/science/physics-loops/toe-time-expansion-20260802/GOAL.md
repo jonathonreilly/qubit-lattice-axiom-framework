@@ -134,3 +134,30 @@ Operating consequences:
   the class-equality law derived instances).
 - The decision remains the owner's; the axiom set is the only ruling
   surface.
+
+
+## OWNER AXIOM-SURFACE STATEMENTS 2 & 3 — 2026-08-05 (verbatim)
+
+Wording exchange on the Admissibility extension (Draft C, replacement
+form): "then I want to ask - if a neighborhood map curently constrains
+possibilities - doesnt that basically mean it has to already do the
+thing we need? We would replace the 2nd sentance with: Each available
+possibility carries a weight - the likelihood with which a forming
+record locks it - determined by, and varying with, the same
+nearest-neighbor conditions."
+
+And the owner RATIFIES Draft C's defining semantic commitment:
+"probability zero is unavailable."
+
+Operating consequences: Draft C (the corrected replacement — "For each
+site, each local possibility carries a weight — the likelihood with
+which a forming record locks it — determined by, and varying with, the
+nearest-neighbor conditions; the available possibilities are those of
+nonzero weight.") is the PRIMARY candidate with the availability ==
+nonzero-weight identification OWNER-ENDORSED. Remaining gates before
+the wording freezes: Cycle 944's consumer sweep (any landed reliance on
+availability independent of weight) + the Record/realized-state
+conflict checks + the class partitions; Cycle 943's pre/post-lock split
+as context. Adoption itself = the owner's explicit approval recorded
+per AXIOM_MINIMALITY_POLICY (the 2026-06-29 reset precedent); no memo
+edit until then.

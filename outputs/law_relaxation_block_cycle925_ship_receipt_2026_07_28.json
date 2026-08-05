@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the spec's 912-wording premise handled by both-readings (error #7's placement fact; a stronger pinned source used); supervisor line-by-line review",
+  "block": "toe-time-blockQ12-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 136.8s; 40/40 checks, 17/17 teeth; the R1 attack set strengthened the theorem; five extra coordinates hunted, none survives",
+    "primary": "exit 0, 369.3s; 87/87 gates, 19/19 teeth; splice-only, kernel never edited (AST-verified); nine full-horizon runs; deterministic double-run identical"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 11th Born-family PR: the lane's terminal classification theorem (a complete, mechanically defended partition with every class priced and the sole genuine relaxation reduced to a quoted sentence); nothing corollary",
+  "cycles": [
+    925
+  ],
+  "files": {
+    "docs/LAW_RELAXATION_CLASSIFIED_A3_SOLE_RELAXATION_CYCLE925_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "37f5bad6f1ef329890e7cebee97ba99a5f699356",
+      "sha256": "ed36a7afb889a45ccde08a4f5d6735fa028a12e4aaa9edda3348ab687678c676"
+    },
+    "logs/runner-cache/frontier_cycle925_law_relaxation_2026_07_28.txt": {
+      "git_blob": "de0be514e3f6a362264572aeed6721eae55a8da1",
+      "sha256": "595c2c033ebc0fea0baafdc71154bdb9d9e5fb911020368a6c05be3ad41858a3"
+    },
+    "logs/runner-cache/frontier_cycle925_law_relaxation_independent_check_2026_07_28.txt": {
+      "git_blob": "5d11323bcca2a78d6849406be5e514a76fed6d1f",
+      "sha256": "7e52caf9b44d77afc9b68c5300f343719310ae3690cc6c16b95b2bb14875c631"
+    },
+    "outputs/law_relaxation_cycle925_receipt_2026_07_28.json": {
+      "git_blob": "fed1b28e9e5cfe731a541645dce705541d69c967",
+      "sha256": "f4fabe50ed8b775f2f1288380824ae04f0129f4f136e3b338bafd05647031757"
+    },
+    "outputs/law_relaxation_independent_check_cycle925_receipt_2026_07_28.json": {
+      "git_blob": "5ab0d0d814a0f48dcf8c49ccdba15c4d29d6d27f",
+      "sha256": "f91af68359713365d220a0bed33a1e2df10e438d6aa39128fb4b6c8357a04e2d"
+    },
+    "scripts/frontier_cycle925_law_relaxation_2026_07_28.py": {
+      "git_blob": "5dc5151b726817593bbde4d9cf488038af19584a",
+      "sha256": "b5ddffd78a8c77318228f47e6c898ef726d4b787c901de82d5f49a75cb74eeb2"
+    },
+    "scripts/frontier_cycle925_law_relaxation_independent_check_2026_07_28.py": {
+      "git_blob": "0432a008eb7907ddbffaee602450ff8b658711c8",
+      "sha256": "7567af96c91df6f3f95111d949fe5c6185935389eabd0fd5f0c40bc3ba2a3acb"
+    }
+  },
+  "headline": "THE LAW-RELAXATION SPACE CLASSIFIED \u2014 ONE SENTENCE WIDE: the input-provenance partition (state/tape/choice-point/index) read off the pinned compiler's own three-template grammar with a fifth-category detector finding nothing (34,166 statements; P1 39,688 reads; P4 one mask per statement; zero P2/P3); R1 (tape) = RE-LABELING proven BIT-IDENTICALLY at full horizon on the full census ('every tape is schedule or state'; the checker BROADENED it \u2014 even a stream into a gate-written wire absorbs via clear-then-set); R3 (indexicals) = 16 coordinates swept, 8 DEAD with witnesses (incl. horizon-relative time \u2014 the M_B obstruction in the time direction) and 8 ABSORBED, certifications proven non-redundant, NOTHING SURVIVES (M_B was never special: any slot-reading law dies the same way); R4 = the banked re-typing verified; R2 (a law-internal choice point) = THE SOLE GENUINE RELAXATION, not constructible against the pinned compiler (no grammar node can deliver two values at one occasion; all three register fillings collapse into the other classes), REDUCED by three independent pinned texts to exactly the A3-shaped sentence \u2014 the Born lane's successor line TERMINATES; findings not sent for: the 918 branch-pair count is coordinate-list-relative (tape raises declared 3 -> 12 while the 911 class stays 0 \u2014 never a measure of indeterminism; follow-up qualification executed on blockQ11) and the 918 lemma's 'schedule' must be read semantically; NO AXIOM ASK EARNED \u2014 the block prices, it does not propose",
+  "independence": "checker on fully independent mechanisms (content-addressed source-text splice; AST + bytecode + runtime-container provenance sweeps; semantic bit-vector replay on a different execution path); PRIMARY_SURVIVES_THIS_CHECK, 40/40, 17/17 teeth, 0 refutations; three findings adopted incl. the container premise",
+  "note": "docs/LAW_RELAXATION_CLASSIFIED_A3_SOLE_RELAXATION_CYCLE925_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 136.8,
+    "primary": 369.3
+  }
+}

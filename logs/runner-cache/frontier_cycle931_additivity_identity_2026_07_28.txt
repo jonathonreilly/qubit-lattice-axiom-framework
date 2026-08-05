@@ -1,0 +1,171 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle931_additivity_identity_2026_07_28.py
+cycle: 931  block: toe-time-blockM11-20260802  head: 7f8549e7d2
+
+-- RESTRICTION GATES (all before any new number) --
+  21/21 frozen constants byte-verified; quote-identical to the 917, 919,
+  921, 926, 927 AND 929 receipts: True
+  statistic definition read from the frozen memo bytes: `C_ab = sum_z p_z [S(rho_Fa^z)+S(rho_Fb^z)-S(rho_FaFb^z)]`
+  partition rule reproduces the memo's six cube lists: True
+  structural lemma verified on 343 pointers: True
+  929 multiplicity ladder: 28 rungs / 8 cells, max abs deviation 0.0
+  929 additivity residuals: max abs deviation 0.0
+  929 last-step relation:   max abs deviation 0.0
+  929 T(d) baseline table:  16 rows, max abs deviation 0.0
+  929 T13 exhausting departure (22 geometries rebuilt): max abs deviation 0.0
+  reproduced departure_from_linearity = 0.006286487147332 (pinned 0.006286487147332)
+  gate runtime: 0.47 s
+
+-- SEAL (pre-registered BEFORE any new number; inputs are pinned bytes only) --
+  seal_id:     cycle931-additivity-derivation-seal-1
+  seal sha256: 19da4e753bfd3b533ef5230d9d640e267d987f79d7ff156cee4262ff9cdbed3f
+  new cells evaluated at seal time: 0
+  propagator calls at seal time: A=74 B=0 C=0 (all reproducing pinned cells)
+  d3@0.05   s(k)=0.000000000000, 0.003731886084, 0.003731886084, -0.000000000000
+            P1 s(d)=-3.262e-15  P2 max|s(k)-s(d-k)|=3.262e-15  P4 2s(1)=0.007463772167276
+  d3@0.1    s(k)=0.000000000000, 0.012620718014, 0.012620718014, 0.000000000000
+            P1 s(d)=5.551e-16  P2 max|s(k)-s(d-k)|=5.551e-16  P4 2s(1)=0.025241436028031
+  d4@0.05   s(k)=0.000000000000, 0.003778272728, 0.004483861451, 0.003778272728, 0.000000000000
+            P1 s(d)=4.820e-15  P2 max|s(k)-s(d-k)|=4.820e-15  P4 2s(1)=0.007556545456707
+            P3 C(2|2) = 0.008967722902102
+  d4@0.1    s(k)=0.000000000000, 0.012771813530, 0.015122713903, 0.012771813530, 0.000000000000
+            P1 s(d)=3.293e-15  P2 max|s(k)-s(d-k)|=3.293e-15  P4 2s(1)=0.025543627060175
+            P3 C(2|2) = 0.030245427806897
+  d5@0.05   s(k)=0.000000000000, 0.003699819856, 0.004631645070, 0.004631645070, 0.003699819856, 0.000000000000
+            P1 s(d)=1.408e-14  P2 max|s(k)-s(d-k)|=1.408e-14  P4 2s(1)=0.007399639711783
+            P3 C(2|2) = 0.005563470283359
+            P3 C(2|3) = 0.009263290139251
+  d5@0.1    s(k)=0.000000000000, 0.012507929320, 0.015619717644, 0.015619717644, 0.012507929320, -0.000000000000
+            P1 s(d)=-7.789e-15  P2 max|s(k)-s(d-k)|=7.789e-15  P4 2s(1)=0.025015858639636
+            P3 C(2|2) = 0.018731505967450
+            P3 C(2|3) = 0.031239435287267
+  d6@0.05   s(k)=0.000000000000, 0.003588804983, 0.004601061060, 0.004856021061, 0.004601061060, 0.003588804983, -0.000000000000
+            P1 s(d)=-1.444e-13  P2 max|s(k)-s(d-k)|=1.444e-13  P4 2s(1)=0.007177609965688
+            P3 C(2|2) = 0.004601061060057
+            P3 C(2|3) = 0.005868277138506
+            P3 C(2|4) = 0.009202122120036
+            P3 C(3|3) = 0.009712042122589
+  d6@0.1    s(k)=0.000000000000, 0.012135216393, 0.015523054394, 0.016378081050, 0.015523054394, 0.012135216393, -0.000000000000
+            P1 s(d)=-1.608e-13  P2 max|s(k)-s(d-k)|=1.608e-13  P4 2s(1)=0.024270432786997
+            P3 C(2|2) = 0.015523054394006
+            P3 C(2|3) = 0.019765919050682
+            P3 C(2|4) = 0.031046108787925
+            P3 C(3|3) = 0.032756162100354
+
+-- Q1  THE STRUCTURE OF THE STATE --
+  memo definition:  `C_ab = I(F_a:F_b | Z_S)`
+  memo formula:     `C_ab = sum_z p_z [S(rho_Fa^z)+S(rho_Fb^z)-S(rho_FaFb^z)]`
+  memo dephasing:   Zero the off-diagonal `S` blocks before evaluating the formula
+  implementation quoted from the pinned 929 runner: cond_mi(), sha256 bf475971b3fbce017e62d2a0d99ec9301dda1a139bbb1bd6c8bd48c0e96468f4
+  cell        p_z drift    S(all leaves|z)   exch. spread    |s(k)-s(d-k)|   frozen-vs-derived
+  d3@0.05    1.11e-16     1.05e-14          0.00e+00        2.42e-16         8.07e-15
+  d3@0.1     0.00e+00     8.59e-15          7.32e-15        9.73e-16         6.57e-16
+  d4@0.05    5.55e-17     8.45e-15          0.00e+00        4.44e-15         5.72e-15
+  d4@0.1     0.00e+00     1.39e-14          0.00e+00        2.78e-17         5.63e-15
+  d5@0.05    0.00e+00     5.83e-15          0.00e+00        5.12e-15         8.72e-15
+  d5@0.1     5.55e-17     7.41e-15          7.04e-15        3.14e-15         6.55e-15
+  d6@0.05    5.55e-17     9.72e-14          3.94e-15        1.27e-14         9.63e-14
+  d6@0.1     0.00e+00     9.75e-14          7.10e-15        2.82e-15         8.84e-14
+  WHERE m ENTERS: only through the block sizes -- see the receipt.
+
+-- THE SYMBOLIC DERIVATION (sympy 1.14.0) --
+  L1  N(MN) = (NM)N holds identically for generic symbolic M (pxq), N (qxp) 
+      at shapes [[1, 2], [2, 2], [2, 4], [4, 4]].  Hence if MNv = c v with c != 
+      0 then NM(Nv) = c (Nv) and Nv != 0: MN and NM share every nonzero eigenval
+      ue.
+  L2  det(xI_p - MN) x^(q-p) = det(xI_q - NM) verified symbolically at shape
+      s [[1, 2], [2, 2], [2, 3], [2, 4]].  With M the Schmidt matrix of a pure s
+      tate under the split (X, X^c), rho_X = M M^dag and rho_{X^c} = (M^dag M)^T
+      , so the two reduced states have identical nonzero spectra WITH multiplici
+      ty: S(X) = S(X^c) EXACTLY, for every pure state and every bipartition.
+  L3  For a fully symbolic permutation-symmetric pure state (Dicke amplitude
+      s c_0..c_d, conjugates carried as independent symbols) the reduced density
+       matrix of a k-subset is IDENTICAL for every k-subset, at d = 3,4,5 and ev
+      ery k.  Hence S depends on the subset only through its SIZE: write s(k).
+  L4  For a PURE state on A u B u R purity gives S(R)=S(AB), S(RB)=S(A), S(A
+      R)=S(B), S(ABR)=0, hence identically I(A:B) + I(R:B) = 2 S(B) = I(AR:B).  
+      The same substitution gives I(A:R|B) - I(A:R) = 0 (a pure-tripartite ident
+      ity) while I(A:R|B) = S_A + S_R - S_B, which is NOT zero in general: the a
+      dditivity identity is NOT the strong-subadditivity equality case.
+  THM  G_d(m) := I(A_m : B_1) = s(m) + s(1) - s(m+1).  Substituting the refl
+      ection s(k) = s(d-k) (L2 inside the branch) into G_d(m) + G_d(d-1-m) colla
+      pses it to 2 s(1); and G_d(d-1) = s(d-1) + s(1) - s(d) = 2 s(1) because s(
+      d) = 0 (the branch is pure on all d leaves).  THE IDENTITY IS AN EQUALITY 
+      OF THE SAME EXPRESSION, not an approximation: sympy returns exactly 0.
+  transcript sha256: 3418c8839378959c5cffb8406e044f9a7e211b6d2208383dfa312518904a2158
+
+-- Q2  CANDIDATE VERDICTS --
+  (a) exchangeability/permutation ......... REFUTED AS SUFFICIENT (necessary, not sufficient)
+      exchangeable-but-mixed control: additivity residual 7.037e-03 bit
+  (b) information decomposition ........... SURVIVES IN CORRECTED FORM
+      the SSA equality case is REFUTED: I(A:R|B) >= 0.004484 bit (a Markov chain needs 0),
+      while I(A:R|B) - I(A:R) = 2.34e-14 (the pure-tripartite identity)
+  (c) first-order/perturbative ............ REFUTED
+      at lambda in {0.5,1.0,2.0} the statistic reaches 0.9883 bit and the residual is 5.76e-13
+  (d) PURITY of the pointer-conditioned state ... DERIVED -- the mechanism
+
+-- THE DERIVED LAW vs THE PINNED 929 LADDER --
+  G_d(m) = s(m) + s(1) - s(m+1) reproduces all 28 pinned rungs at max residual 9.10e-14
+
+-- SEAL VERIFICATION --
+  P1  s(d) = 0 from the pinned ladder alone ......... max 1.61e-13   True
+  P2  s(k) = s(d-k) from the pinned ladder alone .... max 1.61e-13   True
+  P3  both-merged pair values (14 predictions) ...... max 9.66e-15   True
+        d4@0.05   C(2|2) sealed 0.008967722902102  measured 0.008967722902104  res 1.58e-15
+        d4@0.1    C(2|2) sealed 0.030245427806897  measured 0.030245427806898  res 8.40e-16
+        d5@0.05   C(2|2) sealed 0.005563470283359  measured 0.005563470283358  res -9.47e-16
+        d5@0.05   C(2|3) sealed 0.009263290139251  measured 0.009263290139255  res 3.98e-15
+        d5@0.1    C(2|2) sealed 0.018731505967450  measured 0.018731505967444  res -5.60e-15
+        d5@0.1    C(2|3) sealed 0.031239435287267  measured 0.031239435287257  res -9.66e-15
+        d6@0.05   C(2|2) sealed 0.004601061060057  measured 0.004601061060063  res 6.11e-15
+        d6@0.05   C(2|3) sealed 0.005868277138506  measured 0.005868277138503  res -2.76e-15
+        d6@0.05   C(2|4) sealed 0.009202122120036  measured 0.009202122120037  res 6.02e-16
+        d6@0.05   C(3|3) sealed 0.009712042122589  measured 0.009712042122587  res -1.84e-15
+        d6@0.1    C(2|2) sealed 0.015523054394006  measured 0.015523054394005  res -1.03e-15
+        d6@0.1    C(2|3) sealed 0.019765919050682  measured 0.019765919050689  res 7.30e-15
+        d6@0.1    C(2|4) sealed 0.031046108787925  measured 0.031046108787926  res 8.53e-16
+        d6@0.1    C(3|3) sealed 0.032756162100354  measured 0.032756162100359  res 4.50e-15
+  P5  identity at 208 cells (200 off the 929 grid) .... max 5.76e-13   True
+  P6  hypotheses load-bearing ....................... True
+        MIX4_arms_112 (two singletons + one 2-path + one 3-path)   additivity residual 5.058e-07  FAILS=True
+        MIX5_arms_1112 (four singletons + one 2-path)              additivity residual 3.446e-06  FAILS=True
+        MIX5_arms_11122 (three singletons + two 2-paths)           additivity residual 4.566e-06  FAILS=True
+        PREPBRK5: star K_{1,5} with two leaves prepared in |0> ins additivity residual 3.890e-02  FAILS=True
+        PREPBRK6: star K_{1,6} with two leaves prepared in |0> ins additivity residual 3.230e-02  FAILS=True
+        SYNTH5: a Haar-like random PURE state on 5 qubits (seed 93 additivity residual 8.379e-02  FAILS=True
+        SYNTH6: a Haar-like random PURE state on 6 qubits (seed 93 additivity residual 1.134e-01  FAILS=True
+        d=4 block of a (d+1)=5 star (one leaf discarded)           additivity residual 6.284e-03  FAILS=True
+        d=5 block of a (d+1)=6 star (one leaf discarded)           additivity residual 7.037e-03  FAILS=True
+  P7  exhausting pairs anywhere (22 rows) ........... max 2.29e-13   True
+  ALL SEALED PREDICTIONS HOLD: True
+
+-- TEETH (15/15 fire) --
+  T10_t0_anchor                                        True
+  T11_zero_field_anchor                                True
+  T12_seal_is_holdout_free_and_tamper_evident          True
+  T13_reproduction_gate_has_teeth                      True
+  T14_reflection_needs_purity                          True
+  T15_no_median_artifact                               True
+  T1_planted_broken_identity_is_caught                 True
+  T2_exchangeability_hypothesis_is_load_bearing        True
+  T3_purity_hypothesis_is_load_bearing                 True
+  T4_euler_guard                                       True
+  T5_route_cross_validation                            True
+  T6_determinism_in_process_repeat                     True
+  T7_tampered_frozen_constant_is_caught                True
+  T8_tampered_pin_is_caught                            True
+  T9_tampered_statistic_definition_is_caught           True
+
+-- CAPS DECLARED --
+  * The both-merged pair values C(m_a,m_b) with m_a,m_b >= 2 are STATE-LEVEL diagnostics: 929's structural lemma shows the frozen labelling never produces two fragments of multiplicity >= 2 at one pointer, so no frozen geometry realises them.  They are predicted and verified as properties of the evolved state, and carry no certification.
+  * The strong fields lambda in {0.5, 1.0, 2.0} and the long time Jt = 3.0 are NON-CLAIM diagnostics whose only job is to refute the perturbative candidate.  Every claim-bearing number is at lambda in {0.05, 0.10}.
+  * Degrees 7..10 are evaluated as ABSTRACT stars (spiders with d unit arms). Whether the lattice + frozen labelling can realise an (m,1) profile at d >= 7 is a rule-constructibility question 929 already answered in the negative; it does not affect the state-level theorem.
+  * The symbolic Sylvester identity is machine-verified at matrix shapes up to (2,4) and the eigenvector-transfer identity up to (4,4); the general statement is the standard Sylvester determinant identity, and the numerical consequence S(X) = S(X^c) is verified directly on every certified cell at <= 1e-15.
+  * 921 is not re-run here; it enters only through the six-way frozen-constant cross-check.  Declared.
+  * runtime limit 900 s declared by the supervisor; this run used 4.2 s.
+
+runtime: 4.2 s (limit 900 s)
+timing-free digest: a4442ba6d063956511a8d49a055dd5408ecd5d59f02d36bc3bd0d88a3350da0a
+receipt: outputs/additivity_identity_cycle931_receipt_2026_07_28.json
+receipt sha256: eb36edbd6df8d1aee38ebdaa1d29e6dc9d1e72d1e1e6c55e1f02f8fcf1ecb731
+===== runner cache v1 =====

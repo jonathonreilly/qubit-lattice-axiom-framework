@@ -458,15 +458,25 @@ def main():
     dim_ok = H[0.6].shape[0] == claimed["hilbert_dimension"] == 8316
     nnz_ok = H[0.6].nnz == claimed["hamiltonian_nnz"]
     herm = float(max(abs(H[g] - H[g].getH()).max() for g in H))
-    # a construction WITHOUT the declared holonomy must differ
+    # A construction that DROPS the declared boundary holonomy must be a
+    # different system, and must be rejected by the same gates.
     H_no, _, _ = full_space_hamiltonian(N_SITES, 4, 0.3, 0.6, holonomy=False)
-    holo_matters = float(abs(H_no - H[0.6]).max()) > 0.5
-    del H_no
+    diff = (H_no - H[0.6]).tocoo()
+    holo_entries = int(np.count_nonzero(np.abs(diff.data) > 1e-12))
+    holo_max = float(np.abs(diff.data).max()) if diff.nnz else 0.0
+    E_no, _, _ = arpack_ground_state(H_no)
+    E_declared = receipt["Q1_reimplementation"]["ground_states"]["0.6"]["energy"]
+    holo_matters = holo_entries > 0 and abs(E_no - E_declared) > 1e-6
+    del H_no, diff
     tooth("T3-hamiltonian-third-construction",
           dim_ok and nnz_ok and herm < 1e-12 and holo_matters,
           {"dim": int(H[0.6].shape[0]), "nnz": int(H[0.6].nnz),
            "receipt_nnz": claimed["hamiltonian_nnz"], "hermiticity": herm,
            "declared_holonomy_is_load_bearing": holo_matters,
+           "holonomy_free_differing_entries": holo_entries,
+           "holonomy_free_max_entry_difference": holo_max,
+           "holonomy_free_ground_energy": E_no,
+           "declared_ground_energy": E_declared,
            "route": "full 2^12 Fock operator algebra + rotor Kronecker factor "
                     "+ charge-zero projection"}, refutes=True)
     h_wall = time.perf_counter() - t0

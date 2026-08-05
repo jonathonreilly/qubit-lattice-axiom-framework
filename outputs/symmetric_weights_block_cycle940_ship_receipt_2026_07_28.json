@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the prior-art sweep first (the stranded envariance note pinned BY BLOB and byte-quoted \u2014 its own concession that A3 is the only extra premise is the inherited lesson); one checker bug self-caught by a tooth failing to fire; one strengthening finding adopted with the science digest unchanged",
+  "block": "toe-time-blockQ14-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 20.9s; 31/31; the tautology bug caught by its own sensitivity tooth and rewritten to real commutation",
+    "primary": "exit 0, 177.7s; 10/10 certificates, 42/42 restriction gates, 13/13 teeth; mu parametric, zero float literals; science digest identical across 4 runs"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 13th Born-family PR: answers the lane's decisive remaining question with a non-existence proof, a grammar theorem, and an exact logical placement of naturality vs A3, closing the exercise's wall-1 program; nothing corollary",
+  "cycles": [
+    940
+  ],
+  "files": {
+    "docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "69e712e1b8f9ecee3488f8698cfe577fac415c07",
+      "sha256": "a89185085032947c4fcc34fd99b1507307f70cbaf82dd82e569a37562114ef11"
+    },
+    "logs/runner-cache/frontier_cycle940_symmetric_weights_2026_07_28.txt": {
+      "git_blob": "852fb556ad36bc0a26237796aed6e8aeac08faa6",
+      "sha256": "77cf8ae9878197d3a70779740d48291f3792b04bd37e4e8cd9d91dcb7ef7159e"
+    },
+    "logs/runner-cache/frontier_cycle940_symmetric_weights_independent_check_2026_07_28.txt": {
+      "git_blob": "da93f20d2d39e879a6536d0322403cf8de770376",
+      "sha256": "7e4624791d31a7f2e93ecb9dd3ee6354fc825bd63abc7a1463660d44a748c8d4"
+    },
+    "outputs/symmetric_weights_cycle940_receipt_2026_07_28.json": {
+      "git_blob": "a24af8e08cc090b39802265d8b8d5ea3d1495d53",
+      "sha256": "08888bf454a7f3c803f5c373d7688d67a9f0d974259f3e455c139d6c78e288cf"
+    },
+    "outputs/symmetric_weights_independent_check_cycle940_receipt_2026_07_28.json": {
+      "git_blob": "79f056fe7c8888c22fca1dee19a14975cdabfc87",
+      "sha256": "39114105ba2add462ffc37ed3fefad654b35f3b626857b7e3a57ba203583085a"
+    },
+    "scripts/frontier_cycle940_symmetric_weights_2026_07_28.py": {
+      "git_blob": "ae09b548aff71354b9942904bc0b2824d7e755ac",
+      "sha256": "7c7400984e573dc446330f20423cce5045138682781716ed13ba89bfe877e124"
+    },
+    "scripts/frontier_cycle940_symmetric_weights_independent_check_2026_07_28.py": {
+      "git_blob": "5ba0c5c2d77719d08ac116094641a8a0a3601212",
+      "sha256": "3b2ceb26fc0e20aa3ce0f7d28bddf4d686ce65f76b58ed85762d78adcd66ea42"
+    }
+  },
+  "headline": "R1-A3 ANSWERED NEGATIVE, THREE WAYS \u2014 A3 STANDS UNCHANGED AT ITS MEASURED PRICE: Theorem A1 \u2014 NO substrate automorphism swaps the menu items at ANY of the six sites (a NON-EXISTENCE PROOF: 1-WL colour refinement separates LEFT/RIGHT under the COARSEST labelling invariant under all lane and station permutations; the mirror is one-gate-deep only, asymmetric two deep; the repair chain irreducible with breaking gates exhibited; the one genuine multiset involution FIXES both endpoints; transfers verbatim to the 918 M_A arena); Theorem A2 \u2014 the GRAMMAR itself makes menus asymmetric (branch identity = the choice word; one menu item IS the update's identity; relabellings fix 0); THIRD NEGATIVE: only 3 of 6 sites are menu-item pairs at all (the others are lock-TIMING choices \u2014 the question ill-posed there); the conditional theorem VACUOUS (coverage 0/6; zero equations; freedom 6->6 exact); the NATURALITY antecedent NOT DERIVABLE (every candidate ground fails on its own bytes \u2014 the closest clause is SELF-DEFEATING since the supplied structure provably distinguishes the items) and LOGICALLY INDEPENDENT of A3 (no existential import; A3 + naturality = A3 on this arena); PRIOR ART DOMINANT (the envariance note: symmetry constrains, never creates, a weight \u2014 confirmed at substrate level; the r-lane uniqueness checked and EXCLUDED as zero-symmetry; the repo's own 05-20 note already repaired once for this exact premise); VERDICT SHAPE (c): the ask-bar's required artifact HAS RUN \u2014 the A3 ask remains unearned AND unnarrowed; the named re-opener: a future genuinely-orbit-symmetric arena (none exists in current substrates)",
+  "independence": "checker 31/31, 11/11 teeth, ZERO refutations \u2014 four independent routes (exhaustive transposition sweep 1088 maps; unbounded closure search converging to a non-automorphism with its breaking gate; refinement-free reachability profiles; real-commutation semantics); the antecedent survived four adversarial re-readings",
+  "note": "docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 20.9,
+    "primary": 177.7
+  }
+}

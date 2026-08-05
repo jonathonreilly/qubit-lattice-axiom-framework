@@ -1,0 +1,336 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle923_exactness_residual_2026_07_28.py
+runner_sha256: 06d887d9d9197517f9d7b3735ea4a9fa25a7ab7630504764d25b6e9044d9be06
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+============================================================================================
+cycle923 / blockR1 -- THE EXACTNESS RESIDUAL: geometry and dynamics of the distinguished point
+campaign toe-time-expansion-20260802
+============================================================================================
+FIREWALL: nothing below derives, forces or prefers r = 1/2 as any lane's setting.
+PDG values are a labeled comparator only and feed no derivation (proved mechanically by tooth T5).
+
+--------------------------------------------------------------------------------------------
+S0 -- provenance pins (sha256 + git blob sha1) for sources and inherited artifacts
+--------------------------------------------------------------------------------------------
+[PASS] [S0] pin present: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md | sha256=d95cdf68285242a8.. blob=ed574c9b40232818..
+[PASS] [S0] pin present: docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md | sha256=5a72dfb482e8898e.. blob=ac5375a9009bffab..
+[PASS] [S0] pin present: docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md | sha256=32f4a0e27172c86f.. blob=6228b2daaa45fc6a..
+[PASS] [S0] pin present: docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md | sha256=91b708236784a039.. blob=59810648f9064f70..
+[PASS] [S0] pin present: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md | sha256=755cfd4492443946.. blob=5acb4643882438f8..
+[PASS] [S0] pin present: docs/KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md | sha256=d352c069a5c8fa96.. blob=bd32f384d2739cc3..
+[PASS] [S0] pin present: docs/FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md | sha256=19fd7e0770fe0400.. blob=3ae6d9b5f99072f7..
+[PASS] [S0] pin present: docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md | sha256=d4ce8d7b07766e0d.. blob=6a95ca2ee50293eb..
+[PASS] [S0] pin present: docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md | sha256=b9ef043d6503f970.. blob=532a2c3095188609..
+[PASS] [S0] pin present: docs/MINIMAL_AXIOMS_2026-06-29.md | sha256=fc4d60cce8154cec.. blob=4a863da1f3f25535..
+[PASS] [S0] pin present: scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py | sha256=2ce99b206d0112ec.. blob=a9c2afe0d520ce44..
+[PASS] [S0] pin present: scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py | sha256=bd114ae01808ec8e.. blob=a83a24d4fd26ddf7..
+[PASS] [S0] pin present: scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py | sha256=85c0d8a5eb226af0.. blob=1f65ba5f103bb019..
+[PASS] [S0] pin present: scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py | sha256=d411eb0cce830128.. blob=8f38a6f00631e6ca..
+[PASS] [S0] pin present: scripts/frontier_koide_r_half_durability_stationarity_chain_2026_06_11.py | sha256=72d179f5bb08374a.. blob=917d9871597c1b10..
+[PASS] [S0] pin present: logs/runner-cache/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.txt | sha256=d42eb1be045617e4.. blob=4d102f278ffe35cd..
+
+--------------------------------------------------------------------------------------------
+S1 -- RESTRICTION GATES: source values reproduced value-for-value (source runners' own grids and tolerances where published)
+--------------------------------------------------------------------------------------------
+[PASS] [S1-text] [ACPHILAMBDA_OCCUPANCY_SE] verbatim: `r → 2r²` has fixed points
+[PASS] [S1-text] [ACPHILAMBDA_OCCUPANCY_SE] verbatim: maximized exactly at `r = 1/2` (thermalizing attractor)
+[PASS] [S1-text] [ACPHILAMBDA_OCCUPANCY_SE] verbatim: exactness residual
+[PASS] [S1-text] [ACPHILAMBDA_OCCUPANCY_SE] verbatim: *derived distinguished cell* to `~3×10⁻⁶`
+[PASS] [S1-text] [ACPHILAMBDA_OCCUPANCY_SE] verbatim: |r_PDG − 1/2| < 10⁻⁵
+[PASS] [S1-text] [ACPHILAMBDA_OCCUPANCY_SE] verbatim: Nothing here derives, forces, or prefers `r = 1/2`
+[PASS] [S1-text] [FLAVOR_R_HALF_IS_THE_REC] verbatim: r=1/2` is the unstable separatrix of `r→2r²`
+[PASS] [S1-text] [FLAVOR_R_HALF_IS_THE_REC] verbatim: `r=0` (`f'=0`, **stable**
+[PASS] [S1-text] [FLAVOR_R_HALF_IS_THE_REC] verbatim: `r=1/2` (`f'=2`, **unstable separatrix**
+[PASS] [S1-text] [FLAVOR_R_HALF_IS_THE_REC] verbatim: Finite `r=1` is **not** a fixed point of this map
+[PASS] [S1-text] [FLAVOR_R_HALF_IS_THE_REC] verbatim: durably stationary
+[PASS] [S1-text] [FLAVOR_R_HALF_STABLE_UND] verbatim: g(r) = sqrt(r/2),
+[PASS] [S1-text] [FLAVOR_R_HALF_STABLE_UND] verbatim: `g'(1/2)=1/2<1`
+[PASS] [S1-text] [FLAVOR_R_HALF_STABLE_UND] verbatim: multiplier `S'(1/2)=2>1`
+[PASS] [S1-text] [FLAVOR_R_HALF_STABLE_UND] verbatim: the instability claim is not map-invariant
+[PASS] [S1-text] [FLAVOR_R_HALF_STABLE_UND] verbatim: does **not** derive that charged-lepton `r` physically evolves
+[PASS] [S1-text] [FLAVOR_R_HALF_IS_A_STATI] verbatim: `dS/dr=0` there,
+[PASS] [S1-text] [FLAVOR_R_HALF_IS_A_STATI] verbatim: fixed point of the r→1−r swap
+[PASS] [S1-text] [REALIZED_STATE_PRIMITIVE] verbatim: no averaging over alternatives, no typical or generic claim
+[PASS] [S1-text] [REALIZED_STATE_PRIMITIVE] verbatim: The laws do not pick the state; the world does
+[PASS] [S1-restriction] [separatrix runner] sharpening p->p^2/Z on the 2-sector split reduces EXACTLY to r->2r^2 (source seeds [0.1,0.3,0.49,0.5,0.7,1.0], source tol 1e-12) | max dev=2.220e-16
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_THE_RECOR] fixed points {0, 1/2} of r -> 2r^2 | published=[0.0, 0.5] recomputed=[0.0, 0.5]
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_THE_RECOR] f'(r) = 4r ; f'(0) = 0 (stable) | published=0.0 recomputed=0.0 tol=1e-15
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_THE_RECOR] f'(1/2) = 2 (unstable separatrix) | published=2.0 recomputed=2.0 tol=1e-15
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_THE_RECOR] Q = 1/3 at r = 0 (singlet-collapse, degenerate) | published=0.3333333333333333 recomputed=0.3333333333333333 tol=1e-15
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_THE_RECOR] Q = 2/3 at r = 1/2 | published=0.6666666666666666 recomputed=0.6666666666666666 tol=1e-15
+[PASS] [S1-restriction] [separatrix] for r>1/2 the coordinate runs away (r_n -> inf) | r_40(0.51)=inf
+[PASS] [S1-restriction] [separatrix] finite r=1 is NOT a fixed point of r->2r^2 | f(1)=2.0
+[PASS] [S1-restriction] [separatrix runner] S2 peaks at r=1/2 (source grid linspace(0.02,4,4000), source tol 0.02) | argmax=0.499710
+[PASS] [S1-restriction] [separatrix runner] S3 (3-real-DOF) peaks at r=1 (source grid, source tol 0.02) | argmax=1.000320
+[PASS] [S1-restriction] [separatrix runner] check(4): S2(0.5)>S2(0.4), S2(0.5)>S2(0.6), 2*0.6^2>0.6, 2*0.4^2<0.4
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] g'(1/2) = 1/2 (< 1) | published=0.5 recomputed=0.5 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] sharpening multiplier S'(1/2) = 2 (> 1) | published=2.0 recomputed=2.0 tol=1e-12
+[PASS] [S1-restriction] [thermalizing runner] r=1/2 attracts every source seed [0.05,0.25,0.49,0.51,0.9,5.0] in the source's 80 iterations (source tol 1e-6) | max|r_80-1/2|=5.551e-17
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] HS equipartition: ||aI||^2 = 3a^2 equals ||bC+b*C^2||^2 = 6|b|^2 iff r=1/2 | published=3.0 recomputed=3.0 tol=1e-09
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] S2 maximum value = ln 2 | published=0.6931471805599453 recomputed=0.6931471805599453 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] r=0 spectrum [1,1,1] | published=[1.0, 1.0, 1.0] recomputed=[1.0, 1.0, 1.0]
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] r=1 spectrum [0,0,3] (two massless) | published=[0.0, 0.0, 3.0] recomputed=[0.0, -0.0, 3.0]
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] r=1/2 spectrum [2.41,0.29,0.29] | published=[2.41, 0.29, 0.29] recomputed=[2.41, 0.29, 0.29]
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] sigma involution r<->1-r CHANGES Tr H^2 : value 4.2 at r=0.2 | published=4.2 recomputed=4.2 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] sigma involution r<->1-r CHANGES Tr H^2 : value 7.8 at r=0.8 | published=7.8 recomputed=7.800000000000001 tol=1e-12
+[PASS] [S1-restriction] [thermalizing runner] S2 peaks at r~0.5 (source grid linspace(0.01,3,1500), source tol 0.03) | argmax=0.500687
+[PASS] [S1-restriction] [thermalizing runner] 3-eigenvalue SPECTRAL entropy peaks near r=0 (source criterion r_spec<0.2) | argmax=0.010000
+[PASS] [S1-restriction] [stationarity runner] sector entropy peaks at r=1/2 (source grid linspace(0.01,4,2000), source tol 0.01) | argmax=0.499020
+[PASS] [S1-restriction] [stationarity runner] dS/dr = 0 at r=1/2 (source h=1e-6, source tol 1e-5) | dS=0.000e+00
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] S(1/2) = log 2 (source tol 1e-12) | published=0.6931471805599453 recomputed=0.6931471805599453 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] power imbalance |3a^2 - 6|b|^2| trough = 0 at r=1/2 (source tol 1e-12) | published=0.0 recomputed=0.0 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] r=1/2 is the fixed point of the r -> 1-r swap (source tol 1e-12) | published=0.0 recomputed=0.0 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] three-lane lever Q(0.0) = 0.333333 (source tol 1e-12) | published=0.3333333333333333 recomputed=0.3333333333333333 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] three-lane lever Q(0.5) = 0.666667 (source tol 1e-12) | published=0.6666666666666666 recomputed=0.6666666666666666 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] three-lane lever Q(1.0) = 1.000000 (source tol 1e-12) | published=1.0 recomputed=1.0 tol=1e-12
+[PASS] [S1-restriction] [KOIDE_R_HALF_DURABILITY_ST] complete stationary set on the CLOSED 2-sector simplex is {0, 1/2, inf}: f | published=[0.0, 0.5] recomputed=[0.0, 0.5]
+[PASS] [S1-restriction] [durability] r=inf is stationary on the closed simplex and is excluded on the unsigned branch because it forces sum(lambda) = 3a = 0 | a=0 => sum(lambda)=0
+[PASS] [S1-restriction] [durability] r=1 is NOT records-stationary: f(1) = 2 != 1
+[PASS] [S1-restriction] [durability] the maximally mixed I/3 gives p=(1/3,2/3) i.e. r=1
+[PASS] [S1-restriction] [durability runner] exactly at r=1/2 the orbit NEVER leaves (n hits the 200 cap) | n_exact=200
+[PASS] [S1-restriction] [durability runner] offset 1e-5 leaves in 10 < n < 40 (note text: '~14 records-flow steps') | n_plus=14 n_minus=14
+[PASS] [S1-restriction] [durability runner] ERASURE-HONESTY, ALREADY PUBLISHED: g(f(r)) = r exactly; g(r)=sqrt(r/2) is the exact functional inverse of f(r)=2r^2 | max|g(f(r))-r|=0.000e+00
+[PASS] [S1-restriction] [ACPHILAMBDA_OCCUPANCY_SELE] dial setting r=0.0 carries Q=0.333333 | published=0.3333333333333333 recomputed=0.3333333333333333 tol=1e-15
+[PASS] [S1-restriction] [ACPHILAMBDA_OCCUPANCY_SELE] dial setting r=0.5 carries Q=0.666667 | published=0.6666666666666666 recomputed=0.6666666666666666 tol=1e-15
+[PASS] [S1-restriction] [ACPHILAMBDA_OCCUPANCY_SELE] dial setting r=1.0 carries Q=1.000000 | published=1.0 recomputed=1.0 tol=1e-15
+[PASS] [S1-restriction] [reduction S2] lever Q = 1/3+(2/3)r holds exactly on 200 random circulants (seed 20260728) | max|dQ|=1.776e-14
+[PASS] [S1-restriction] [reduction S4] masses->r functional round-trips on the admissible family {0,0.3,0.5,1,2} | max|dr|=1.776e-15
+[PASS] [S1-restriction] [ACPHILAMBDA_OCCUPANCY_SELE] r=0 degenerate spectrum [1,1,1] | published=[1.0, 1.0, 1.0] recomputed=[1.0, 1.0, 1.0]
+[PASS] [S1-restriction] [ACPHILAMBDA_OCCUPANCY_SELE] r=1, delta=0 two-massless spectrum [3,0,0] | published=[3.0, 0.0, 0.0] recomputed=[3.0, 0.0, -0.0]
+[PASS] [S1-restriction] [ACPHILAMBDA_OCCUPANCY_SELE] r=1/2 HS equipartition 3a^2 = 6|b|^2 | published=3.0 recomputed=3.0 tol=1e-15
+
+--------------------------------------------------------------------------------------------
+S2 -- Q1: reconciling the separatrix fact and the attractor fact
+--------------------------------------------------------------------------------------------
+[PASS] [S2-Q1] R1: g = f^{-1} exactly on (0,10] -- g(f(r))=r AND f(g(r))=r | max|g(f(r))-r|=0.000e+00 max|f(g(r))-r|=1.776e-15
+[PASS] [S2-Q1] R1-provenance: this identity is NOT new here -- it is published in the durability note's erasure-honesty item (2026-06-11). What is new is using it to dissolve the S6 tension. | durability note carries the inverse identity
+[PASS] [S2-Q1] R2a: Fix(f) == Fix(g) == {0, 1/2} | Fix(f)=[0.0, 0.5] Fix(g)=[0.0, 0.5]
+[PASS] [S2-Q1] R2b: the multipliers at r=1/2 are RECIPROCAL: f'(1/2) * g'(1/2) = 2 * 1/2 = 1 | f'(1/2)=2.0 g'(1/2)=0.5 product=1.0
+[PASS] [S2-Q1] R2c: at r=0 the same relation degenerates: f'(0)=0 (superstable) so g'(0)=+inf (repelling) | g'(r)=1/(2 sqrt(2r)) -> +inf as r->0+
+[PASS] [S2-Q1] R3a: S2 strictly DECREASES under f -- sharpening is entropy-decreasing (measurement arrow) | 1999/1999 strict
+[PASS] [S2-Q1] R3b: S2 strictly INCREASES under g -- the reverse map is entropy-increasing (thermalizing arrow) | 1999/1999 strict
+[PASS] [S2-Q1] R3c: S2 is stationary at r=1/2 under BOTH (it is the shared fixed point)
+[PASS] [S2-Q1] R4 COINCIDENCE-DEFLATION: for a 2-outcome split, p->p^2/Z fixes p iff p is uniform or degenerate. So 'interior fixed point of sharpening' = 'maximum of S2' = 'HS equipartition 3a^2=6|b|^2' is ONE fact in three costumes, NOT three independent characterisations. | 999/999 agree over p in (0,1)
+[PASS] [S2-Q1] R5: the r <-> 1-r swap fixed point is a genuinely separate but ARITHMETIC fact (x = 1-x), carrying no entropy or flow content; the thermalizing note itself corrects it from 'symmetry protection' to 'a relabelling'
+[PASS] [S2-Q1] R6a: the reduction note S6 calls the S2 maximum a 'thermalizing attractor'
+[PASS] [S2-Q1] R6b: the reduction note NEVER names g(r)=sqrt(r/2), the map that actually supplies the attraction
+[PASS] [S2-Q1] R6c: the thermalizing SOURCE note does name g(r)=sqrt(r/2) as the attracting map
+[PASS] [S2-Q1] R7: cross-note apparent conflict DISSOLVED -- 'S3 peaks at r=1' (separatrix note) and 'spectral entropy peaks at r=0' (thermalizing note) are DIFFERENT functionals, both reproduced in S1; no inconsistency
+
+Q1 VERDICT: CONSISTENT -- the two source facts are not in tension; no inconsistency between source notes was found
+
+--------------------------------------------------------------------------------------------
+S3 -- Q2: what exactness does the geometry buy (rates and bounds, every claim a number)
+--------------------------------------------------------------------------------------------
+[PASS] [S3-Q2] linearization under f: f'(0)=0 (superstable, QUADRATIC), f'(1/2)=2 (repelling), r=1 not fixed
+[PASS] [S3-Q2] linearization under g: g'(1/2)=1/2 (contracting), g'(0)=+inf (repelling), r=1 not fixed
+[PASS] [S3-Q2] EXACT CONJUGACY u = 2r: f is u->u^2 and g is u->sqrt(u); hence ln u_n = 2^{+/-n} ln u_0 in CLOSED FORM, so every rate below is exact, not asymptotic
+[PASS] [S3-Q2] closed-form orbit r_n = exp(2^{-n} ln 2r_0)/2 matches iteration under g to 25 steps | max err=1.110e-16
+[PASS] [S3-Q2] curvature of S2 at its maximum: S2''(1/2) = -1 EXACTLY in nats (= -1/ln2 = -1.442695 bits) | numeric=-1.000000083 analytic=-1.0
+[PASS] [S3-Q2] entropy deficit at |r-1/2| = 3e-6 is 4.5e-12 nats below S2max = ln2 = 0.6931472 | dS=4.500000e-12 nats; at 1e-5: 5.000000e-11 nats
+[PASS] [S3-Q2] basin(f, r=0) = [0, 1/2): every tested seed below 1/2 collapses to 0 | seeds 1e-6,0.1,0.25,0.4,0.49,0.4999
+[PASS] [S3-Q2] basin(f, +inf) = (1/2, inf): every tested seed above 1/2 runs away (projective doublet collapse) | seeds 0.5001,0.51,0.9,1.0,2.0,5.0
+[PASS] [S3-Q2] basin(g, r=1/2) = (0, inf) ENTIRE -- proven by the exact conjugacy, verified over 600 decades | 11 seeds from 1e-300 to 1e300
+[PASS] [S3-Q2] basin(g) excludes exactly ONE point, r=0 (fixed and repelling)
+
+  TABLE A -- ENTRY under g (thermalizing arrow): steps to reach |r-1/2| <= eps
+  eps        from r=1       from r=0.05      from r=5       closed-form vs iterated
+  0.1        2              4                4              agree
+[PASS] [S3-Q2] TABLE A closed form agrees with iteration at eps=0.1 (all three starts, |diff|<=1)
+  0.01       6              7                7              agree
+[PASS] [S3-Q2] TABLE A closed form agrees with iteration at eps=0.01 (all three starts, |diff|<=1)
+  0.001      9              11               11             agree
+[PASS] [S3-Q2] TABLE A closed form agrees with iteration at eps=0.001 (all three starts, |diff|<=1)
+  0.0001     12             14               14             agree
+[PASS] [S3-Q2] TABLE A closed form agrees with iteration at eps=0.0001 (all three starts, |diff|<=1)
+  1e-05      16             17               17             agree
+[PASS] [S3-Q2] TABLE A closed form agrees with iteration at eps=1e-05 (all three starts, |diff|<=1)
+  3e-06      17             19               19             agree
+[PASS] [S3-Q2] TABLE A closed form agrees with iteration at eps=3e-06 (all three starts, |diff|<=1)
+  1e-06      19             21               21             agree
+[PASS] [S3-Q2] TABLE A closed form agrees with iteration at eps=1e-06 (all three starts, |diff|<=1)
+
+  TABLE B -- RESIDENCE under f (sharpening arrow): steps from |r-1/2|=eps0 until the orbit leaves 1e-1
+  eps0=0.1        steps_to_exit_1e-1 = 1    (closed form 0)
+[PASS] [S3-Q2] TABLE B closed form agrees with iteration at eps0=0.1 | cf=0 it=1
+  eps0=0.01       steps_to_exit_1e-1 = 4    (closed form 4)
+[PASS] [S3-Q2] TABLE B closed form agrees with iteration at eps0=0.01 | cf=4 it=4
+  eps0=0.001      steps_to_exit_1e-1 = 7    (closed form 7)
+[PASS] [S3-Q2] TABLE B closed form agrees with iteration at eps0=0.001 | cf=7 it=7
+  eps0=0.0001     steps_to_exit_1e-1 = 10   (closed form 10)
+[PASS] [S3-Q2] TABLE B closed form agrees with iteration at eps0=0.0001 | cf=10 it=10
+  eps0=1e-05      steps_to_exit_1e-1 = 14   (closed form 14)
+[PASS] [S3-Q2] TABLE B closed form agrees with iteration at eps0=1e-05 | cf=14 it=14
+  eps0=3e-06      steps_to_exit_1e-1 = 15   (closed form 15)
+[PASS] [S3-Q2] TABLE B closed form agrees with iteration at eps0=3e-06 | cf=15 it=15
+  eps0=1e-06      steps_to_exit_1e-1 = 17   (closed form 17)
+[PASS] [S3-Q2] TABLE B closed form agrees with iteration at eps0=1e-06 | cf=17 it=17
+
+  TABLE C -- BACKWARD TUNING under f: the |delta_0| needed to still be within eps after N steps
+  eps=0.1       N=0:1.0000e-01  N=5:2.8569e-03  N=10:8.9032e-05  N=20:8.6938e-08  N=50:0.0000e+00  N=100:0.0000e+00
+  eps=1e-05     N=0:1.0000e-05  N=5:3.1250e-07  N=10:9.7655e-09  N=20:9.5366e-12  N=50:0.0000e+00  N=100:0.0000e+00
+  eps=3e-06     N=0:3.0000e-06  N=5:9.3750e-08  N=10:2.9297e-09  N=20:2.8609e-12  N=50:0.0000e+00  N=100:0.0000e+00
+  eps=1e-06     N=0:1.0000e-06  N=5:3.1250e-08  N=10:9.7656e-10  N=20:9.5357e-13  N=50:0.0000e+00  N=100:0.0000e+00
+[PASS] [S3-Q2] under f the admitted initial set halves EXACTLY once per registration step (Lebesgue length of f^{-N} of the 3e-6 window) | N=0:6.000e-06 N=5:1.875e-07 N=20:5.722e-12 N=50:5.551e-17
+[PASS] [S3-Q2] AUX (constructed here, NOT source content): the S2-gradient flow in r linearizes to -1 (e-fold time 1) | -1.000000063
+[PASS] [S3-Q2] AUX: the SAME flow written in p linearizes to -4 -- the RATE is metric/coordinate dependent, the SIGN and the exponential character are not; the Q2 verdict depends only on the sign | -4.000000053
+[PASS] [S3-Q2] AUX: time to reach 3e-6 from |delta|=0.5 is 12.02 e-folds (r-metric) or 3.01 (p-metric): log(1/eps), never tuned | t_r=12.0238 t_p=3.0059
+
+Q2 HEADLINE VERDICT: UNEXPLAINED on the current surface
+
+--------------------------------------------------------------------------------------------
+S4 -- dial geometry at ALL registered settings {0, 1/2, 1} (doubles as the firewall exhibit)
+--------------------------------------------------------------------------------------------
+  r         Q         spectrum(delta=0)        S2          S3          S_spec     
+  r=0.0     0.333333  [1.0, 1.0, 1.0]          0.000000    0.000000    1.098612   
+  r=0.5     0.666667  [2.414214, 0.292893, 0.292893] 0.693147    1.039721    0.629109   
+  r=1.0     1.000000  [3.0, 0.0, -0.0]         0.636514    1.098612    0.000000   
+[PASS] [S4-dial] S2 (2-isotype-sector) is maximized at r=1/2 | argmax=0.500001, max=0.693147=ln2
+[PASS] [S4-dial] S3 (3-real-DOF / dimension-Plancherel) is maximized at r=1 | argmax=1.000001, max=1.098612=ln3
+[PASS] [S4-dial] S_spec (3-eigenvalue spectral, delta=0) is maximized at r=0 | argmax=0.000000, max=1.098612=ln3
+[PASS] [S4-dial] FIREWALL EXHIBIT 1: EACH registered setting {0, 1/2, 1} is the unique maximum of a DIFFERENT derived functional (S_spec, S2, S3 respectively) -- so extremality cannot select a lane; it returns whichever setting matches the functional you asked about
+[PASS] [S4-dial] HONEST ASYMMETRY: S2 and S3 are functions of r ALONE; S_spec is a function of (r, delta). The sources' quoted spectra are all at delta=0, the standing G2 / K-reality (delta=0) pin, which this block does not touch. | S_spec(1,0)=0.000000 vs S_spec(1,pi/3)=1.054920; spectrum(1,pi/3)=[2.0, -1.0, 2.0], Q unchanged = 1.0
+[PASS] [S4-dial] AUX gradient flow of S2 from r0=0.9 lands on r=1/2 | dest=0.500000000
+[PASS] [S4-dial] AUX gradient flow of S3 from r0=0.4 lands on r=1 | dest=0.999967237
+[PASS] [S4-dial] AUX gradient flow of S_spec from r0=0.4 lands on r=0 in FINITE TIME (S_spec ~ ln3 - r near 0, so rdot -> -1 and the flow ARRIVES rather than converging) | dest=0.000e+00
+[PASS] [S4-dial] FIREWALL EXHIBIT 2: on this surface the r=0 setting has the STRONGEST exactness story -- finite-time arrival under its own functional's gradient flow, and quadratic (superstable) convergence under the RETAINED-ANCHORED map f. Run as an argument, the geometry favours r=0, not r=1/2.
+[PASS] [S4-dial] ARROW-UNIVERSALITY NO-GO (candidate sweep): NO candidate available on the current surface both concentrates onto r=1/2 AND leaves the r=0 and r=1 lanes persistent | 6 candidates swept, 0 satisfy both requirements
+[PASS] [S4-dial] ARROW-UNIVERSALITY NO-GO (theorem): for a C^1 strictly increasing map h with Fix(h) exactly {0, 1/2, 1}, stability ALTERNATES, so the three registered settings CANNOT all be asymptotically stable. Proof: on (0,1/2) the sign of h(x)-x is constant, so exactly one endpoint of that interval attracts. | 8/8 constructed monotone maps confirm the alternation
+[PASS] [S4-dial] NAMED ESCAPE (honest): the theorem's hypothesis is Fix(h) == {0,1/2,1}. A map with EXTRA fixed points inside (0,1/2) or (1/2,1) CAN make all three registered settings attracting -- at the price of predicting additional distinguished cells that the dial does not register. That price is falsifiable.
+
+--------------------------------------------------------------------------------------------
+S5 -- FIREWALL check (mechanical)
+--------------------------------------------------------------------------------------------
+[PASS] [S5-firewall] admissible family exhibited at r in {0, 0.3, 0.5, 1, 2}: circulant + Hermitian, identical structural constraints, masses->r round-trips | 5/5
+[PASS] [S5-firewall] the admissible family SPANS the registered dial {0, 1/2, 1}
+[PASS] [S5-firewall] H = aI + bC + conj(b)C^2 has a real spectrum for every (r, delta) tested -> Hermitian; NO constraint excludes any dial setting | max|Im lambda|=0.0e+00
+[PASS] [S5-firewall] no UNCONDITIONAL step designates a unique r as law content | 15 steps scanned, 0 violations
+[PASS] [S5-firewall] step 'S2_argmax' designates a unique r -> must carry a named supplied element | supplied=the 2-isotype-sector coarse-graining (undischarged partition gate)
+[PASS] [S5-firewall] step 'S3_argmax' designates a unique r -> must carry a named supplied element | supplied=the 3-real-DOF / Plancherel coarse-graining
+[PASS] [S5-firewall] step 'S_spec_argmax' designates a unique r -> must carry a named supplied element | supplied=the eigenvalue coarse-graining plus the delta=0 pin
+[PASS] [S5-firewall] step 'attractor_of_g' designates a unique r -> must carry a named supplied element | supplied=the supplied two-sector reverse map (arrow not derived)
+[PASS] [S5-firewall] step 'attractor_of_f' designates a unique r -> must carry a named supplied element | supplied=the supplied Luders/records sharpening map (arrow not derived)
+[PASS] [S5-firewall] step 'swap_fixed_point' designates a unique r -> must carry a named supplied element | supplied=the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)
+[PASS] [S5-firewall] all three registered lanes remain WELL-FORMED after every step above (Q = 1/3, 2/3, 1 with real 3-spectra)
+
+--------------------------------------------------------------------------------------------
+S6 -- falsifier teeth (each must FIRE)
+--------------------------------------------------------------------------------------------
+[PASS] [S6-teeth] T1 FIRED: a perturbed reverse map g+1e-3 BREAKS the reconciliation: 1/2 is no longer fixed and g is no longer f^{-1} | g_bad(1/2)-1/2=1.000e-03; g_bad(f(1/2))-1/2=1.000e-03. NOTE the multiplier alone is NOT a witness here (it stays 1/2) -- fixedness and the inverse identity are the witnesses
+[PASS] [S6-teeth] T1b FIRED: a perturbed sharpening map 2r^2+1e-3 fails the S1 restriction gate (1/2 no longer fixed) | f_bad(1/2)-1/2=1.000e-03
+[PASS] [S6-teeth] T2 FIRED: a planted wrong exponent FLIPS the Q2 branch verdict: multiplier 1.0 never reaches 3e-6, and a polynomial (marginal) contraction needs orders of magnitude more steps than the true geometric rate 1/2 | marginal n>=5000 (never); polynomial n=333319; true geometric n=17
+
+--------------------------------------------------------------------------------------------
+S5 -- FIREWALL check (mechanical)
+--------------------------------------------------------------------------------------------
+[PASS] [S5-firewall] admissible family exhibited at r in {0, 0.3, 0.5, 1, 2}: circulant + Hermitian, identical structural constraints, masses->r round-trips | 5/5
+[PASS] [S5-firewall] the admissible family SPANS the registered dial {0, 1/2, 1}
+[PASS] [S5-firewall] H = aI + bC + conj(b)C^2 has a real spectrum for every (r, delta) tested -> Hermitian; NO constraint excludes any dial setting | max|Im lambda|=0.0e+00
+[PASS] [S5-firewall] no UNCONDITIONAL step designates a unique r as law content | 15 steps scanned, 0 violations
+[PASS] [S5-firewall] step 'S2_argmax' designates a unique r -> must carry a named supplied element | supplied=the 2-isotype-sector coarse-graining (undischarged partition gate)
+[PASS] [S5-firewall] step 'S3_argmax' designates a unique r -> must carry a named supplied element | supplied=the 3-real-DOF / Plancherel coarse-graining
+[PASS] [S5-firewall] step 'S_spec_argmax' designates a unique r -> must carry a named supplied element | supplied=the eigenvalue coarse-graining plus the delta=0 pin
+[PASS] [S5-firewall] step 'attractor_of_g' designates a unique r -> must carry a named supplied element | supplied=the supplied two-sector reverse map (arrow not derived)
+[PASS] [S5-firewall] step 'attractor_of_f' designates a unique r -> must carry a named supplied element | supplied=the supplied Luders/records sharpening map (arrow not derived)
+[PASS] [S5-firewall] step 'swap_fixed_point' designates a unique r -> must carry a named supplied element | supplied=the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)
+[PASS] [S5-firewall] all three registered lanes remain WELL-FORMED after every step above (Q = 1/3, 2/3, 1 with real 3-spectra)
+
+--------------------------------------------------------------------------------------------
+S5 -- FIREWALL check (mechanical)   [PLANTED-VIOLATION RUN -- failures below are tooth T3 evidence]
+--------------------------------------------------------------------------------------------
+[PLANT-PASS] [S5-firewall] admissible family exhibited at r in {0, 0.3, 0.5, 1, 2}: circulant + Hermitian, identical structural constraints, masses->r round-trips | 5/5
+[PLANT-PASS] [S5-firewall] the admissible family SPANS the registered dial {0, 1/2, 1}
+[PLANT-PASS] [S5-firewall] H = aI + bC + conj(b)C^2 has a real spectrum for every (r, delta) tested -> Hermitian; NO constraint excludes any dial setting | max|Im lambda|=0.0e+00
+[PLANT-FAIL] [S5-firewall] no UNCONDITIONAL step designates a unique r as law content | VIOLATIONS=['PLANTED_law_level_selector']
+[PLANT-PASS] [S5-firewall] step 'S2_argmax' designates a unique r -> must carry a named supplied element | supplied=the 2-isotype-sector coarse-graining (undischarged partition gate)
+[PLANT-PASS] [S5-firewall] step 'S3_argmax' designates a unique r -> must carry a named supplied element | supplied=the 3-real-DOF / Plancherel coarse-graining
+[PLANT-PASS] [S5-firewall] step 'S_spec_argmax' designates a unique r -> must carry a named supplied element | supplied=the eigenvalue coarse-graining plus the delta=0 pin
+[PLANT-PASS] [S5-firewall] step 'attractor_of_g' designates a unique r -> must carry a named supplied element | supplied=the supplied two-sector reverse map (arrow not derived)
+[PLANT-PASS] [S5-firewall] step 'attractor_of_f' designates a unique r -> must carry a named supplied element | supplied=the supplied Luders/records sharpening map (arrow not derived)
+[PLANT-PASS] [S5-firewall] step 'swap_fixed_point' designates a unique r -> must carry a named supplied element | supplied=the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)
+[PLANT-FAIL] [S5-firewall] step 'PLANTED_law_level_selector' designates a unique r -> must carry a named supplied element | supplied=None
+[PLANT-PASS] [S5-firewall] all three registered lanes remain WELL-FORMED after every step above (Q = 1/3, 2/3, 1 with real 3-spectra)
+[PASS] [S6-teeth] T3 FIRED: a planted UNCONDITIONAL law-level selector (designates {1/2}, no supplied element) makes the S5 firewall check FAIL | clean_run=True planted_run=False
+[PASS] [S6-teeth] T4 FIRED: the restriction gate hard-fails a planted wrong published value (f'(1/2)=3 instead of 2) | |3 - 2| = 1 exceeds the 1e-15 gate by 15 orders
+[PASS] [S6-teeth] T5 FIRED: COMPARATOR ISOLATION: poisoning the PDG comparator to NaN leaves EVERY derived result bit-identical | derived payload identical under the poisoned comparator
+[PASS] [S6-teeth] T6 FIRED: a planted 1e-4 offset in the inverse identity is caught by the S2-R1 tolerance of 1e-12 | the planted offset exceeds the gate tolerance by 8 orders of magnitude
+[PASS] [S6-teeth] T7 FIRED: a planted anti-Lyapunov claim ('the reverse map decreases S2') is refuted at r=0.9 | S2(g(0.9))=0.682466 > S2(0.9)=0.651757
+[PASS] [S6-teeth] T8 FIRED: DETERMINISM: two independent builds of the derived payload are byte-identical | sha256=55500ff5a0dd576844ec4bd42a991e28..
+[PASS] [S6-teeth] T9 FIRED: a planted omnipotent candidate arrow (concentrates on 1/2 AND preserves both other lanes) BREAKS the arrow-universality no-go, so the no-go has content and is not vacuous | the no-go correctly reports FALSE for the planted candidate
+[PASS] [S6-teeth] T10 FIRED: a planted 2-sector weight (1, 3r) moves the entropy maximum OFF the sharpening fixed point, so the coincidence-deflation is contentful rather than tautological | planted argmax=0.333300 != 0.5 (true weight (1,2r) gives 0.5)
+[PASS] [S6-teeth] T11 FIRED: the r=1 lane is NOT preserved by either supplied map -- the load-bearing input to the arrow-universality no-go is itself falsifiable and here it fires | f(1)=2.0, g(1)=0.707107
+
+--------------------------------------------------------------------------------------------
+S7 -- comparator (LABELED; feeds no derivation; tooth T5 proves the isolation)
+--------------------------------------------------------------------------------------------
+  PDG masses (MeV, verbatim from the reduction runner): {'m_e': 0.51099895, 'm_mu': 105.6583755, 'm_tau': 1776.93}
+  Q_pdg  = 0.6666644634145001
+  r_pdg  = 0.49999669512175027
+  |Q_pdg - 2/3| = 2.203252166488312e-06
+  |r_pdg - 1/2| = 3.304878249732468e-06
+[PASS] [S7-comparator] comparator reproduces the reduction note's published bound |r_PDG - 1/2| < 1e-5 | |r_pdg-1/2|=3.304878e-06
+[PASS] [S7-comparator] comparator reproduces the hostile-guard (b) figure ~3e-6 to one significant figure | recomputed 3.304878e-06 vs note's ~3e-6
+[PASS] [S7-comparator] the two routes to r agree exactly: (3Q-1)/2 and the S4.3 signed-root functional
+[PASS] [S7-comparator] |Q - 2/3| = (2/3)|r - 1/2| exactly (the lever, applied to the comparator only)
+  entropy deficit of the comparator below S2max=ln2: 5.461110e-12 nats
+
+--------------------------------------------------------------------------------------------
+S8 -- Q3: the residual priced (price only; nothing recommended for adoption)
+--------------------------------------------------------------------------------------------
+[PASS] [S8-priced] (a) DERIVES is non-empty | 11 items
+[PASS] [S8-priced] (b) item 1 names a discriminating measurement AND what it would decide | Which arrow is operative on the charged-lepton lane (sharpening f 
+[PASS] [S8-priced] (b) item 2 names a discriminating measurement AND what it would decide | Whether the other registered lanes also sit on their distinguished
+[PASS] [S8-priced] (b) item 3 names a discriminating measurement AND what it would decide | N, the number of re-registration events in the lane's realized his
+[PASS] [S8-priced] (b) item 4 names a discriminating measurement AND what it would decide | Which partition the physical record basis implements (2 isotype se
+[PASS] [S8-priced] (c) item 1 carries a minimal sentence and a named existing surface | surface=lane_conditional_derivation_route
+[PASS] [S8-priced] (c) item 1 FIREWALL: its minimal sentence does not designate a unique r | On the charged-lepton lane, re-registration moves the two-sector p
+[PASS] [S8-priced] (c) item 2 carries a minimal sentence and a named existing surface | surface=measure_side_i_realization_frontier
+[PASS] [S8-priced] (c) item 2 FIREWALL: its minimal sentence does not designate a unique r | The physical record basis on the C3 generation sector is the 2-iso
+[PASS] [S8-priced] (c) item 3 carries a minimal sentence and a named existing surface | surface=new_premise
+[PASS] [S8-priced] (c) item 3 FIREWALL: its minimal sentence does not designate a unique r | Law-admissible realized states carry a measure mu, with respect to
+[PASS] [S8-priced] (c) item 4 carries a minimal sentence and a named existing surface | surface=new_premise
+[PASS] [S8-priced] (c) item 4 FIREWALL: its minimal sentence does not designate a unique r | A registered pattern is retained only if it is unchanged under re-
+[PASS] [S8-priced] (c) item 5 carries a minimal sentence and a named existing surface | surface=realized_state_registration
+[PASS] [S8-priced] (c) item 5 FIREWALL: its minimal sentence does not designate a unique r | The realized history's initial registration on the charged-lepton 
+[PASS] [S8-priced] PRICE ONLY: no recommendation verb anywhere in the priced list | scanned 8678 chars against 7 verbs
+
+  (a) DERIVES: 11   (b) MEASURABLE-BUT-UNMEASURED: 4   (c) UNDERIVABLE: 5
+
+  Q2 does NOT land on GENERIC unconditionally, so the residual does NOT dissolve into 'persistence at an attractor'.
+  It dissolves ONLY on the g-branch, and that branch is blocked twice: the arrow is not derived as physical, and as lane-universal law content it is refuted by the arrow-universality no-go.
+  On the f-branch -- the branch carrying the retained anchor -- the operative fixed point IS the separatrix and the exactness is positively surprising.
+  If item (c1) were ever supplied lane-conditionally, then and only then would the remaining content reduce to why the initial registration was in the basin, and that basin is (0, inf), which the primitive already assigns to the world rather than the laws (item c5)..
+
+--------------------------------------------------------------------------------------------
+SCORECARD
+--------------------------------------------------------------------------------------------
+S0                 PASS=16    FAIL=0
+S1-text            PASS=20    FAIL=0
+S1-restriction     PASS=46    FAIL=0
+S2-Q1              PASS=14    FAIL=0
+S3-Q2              PASS=28    FAIL=0
+S4-dial            PASS=12    FAIL=0
+S5-firewall        PASS=22    FAIL=0
+S6-teeth           PASS=12    FAIL=0
+S7-comparator      PASS=4     FAIL=0
+S8-priced          PASS=16    FAIL=0
+
+============================================================================================
+TOTAL: PASS=190 FAIL=0
+PLANTED-VIOLATION RUN (excluded from the scorecard by construction): 12 checks, 2 deliberate failures = tooth T3 evidence
+TEETH: 12/12 FIRED
+============================================================================================
+receipt: outputs/exactness_residual_cycle923_receipt_2026_07_28.json
+determinism_digest_sha256: 55500ff5a0dd576844ec4bd42a991e2834a573b1328adbe0a8d844579f960346
+runtime_sec: 0.309
+
+DECLARATION: no lane's r is derived, forced or preferred; the Q2 verdict is reported as arrow-conditional;
+nothing is recommended for adoption.
+CYCLE923_EXACTNESS_RESIDUAL_PASS
+
+----- stderr -----
+

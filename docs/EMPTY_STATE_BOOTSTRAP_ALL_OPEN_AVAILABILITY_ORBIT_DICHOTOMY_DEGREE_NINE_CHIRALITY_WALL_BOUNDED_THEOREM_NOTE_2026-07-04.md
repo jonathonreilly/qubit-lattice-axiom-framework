@@ -21,6 +21,23 @@ banks a bounded empty-state bootstrap classification and orientation-channel
 cross-check only; it does not reopen, modify, or supply authority for the
 theta retirement record, registry, or physical `theta_bar` value.
 
+> **Scope note (2026-08-05, adoption repair).** The 2026-08-05 owner-approved
+> Admissibility revision makes the rule a likelihood rule and availability its
+> support. Every theorem below is stated on `A0` as a **set** of contents, and
+> each remains true as such: the support of a proper-cubic-invariant likelihood
+> is a proper-cubic-invariant set, so Theorem 1's bootstrap constraint survives,
+> and the orbit dichotomy and the degree-nine detector are exact statements
+> about set-content chirality. Two things change, both in the direction of
+> strength, and neither is used below. First, rule covariance now constrains
+> the likelihood itself (`mu` composed with `g` equals `mu`), which is strictly
+> stronger than invariance of `A0` as a set. Second, and consequently, the
+> degree-nine wall is a wall on set-content chirality only: a cubic-invariant
+> support can carry a non-invariant likelihood, so a first-step law can be
+> chiral in its weights while `A0` is achiral, and the detector statements here
+> would not see it. The orientation-bit accounting is likewise set-level. The
+> weighted versions of the dichotomy, the wall, and the bit cost are open and
+> are not derived here.
+
 ## Question
 
 Under the records-only reading, the physical content alphabet is the set

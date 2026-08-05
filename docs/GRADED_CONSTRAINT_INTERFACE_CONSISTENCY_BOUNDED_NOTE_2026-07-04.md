@@ -104,6 +104,23 @@ no longer carry normalization as an axiom; conditioning does; availability filte
 **Verdict.** Conditional on v2, grading and availability coexist because they
 are different interface objects.
 
+> **Scope note (2026-08-05, adoption repair).** The 2026-08-05 owner-approved
+> Admissibility revision makes availability the support of a law-level
+> likelihood rather than a separately supplied primitive set. That does not
+> merge the two objects this section holds apart: `w` here is the
+> graded-constraint v2 grading on the full projection lattice, a named
+> conditional premise, and it is not the Admissibility likelihood. Read
+> post-revision, "availability is binary" is a statement about the support
+> predicate (in/out), not about how availability is supplied; the coexistence
+> result stands for `w` against availability. The zero-available-total
+> boundary likewise remains non-vacuous, because it is a boundary on the
+> available elements' total `w`-weight, and `w` may vanish where the
+> Admissibility likelihood does not. What this note does not address, and what
+> is now open, is the relation between `w` and the Admissibility likelihood --
+> in particular whether the two are required to share a support. If they were
+> identified, the zero-available-total boundary would become vacuous; nothing
+> in this note or in the revised axiom performs that identification.
+
 Availability is binary. It is supplied by the landed nearest-neighbor
 admissibility rule and governs what can be locked. The weight function `w` is
 law-side grading data on the full projection lattice. Formation statistics are

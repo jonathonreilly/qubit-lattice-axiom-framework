@@ -266,6 +266,32 @@ require a compatibility or causal-order law as well.
 
 ## Same-Rule Independence Witness
 
+> **CONTESTED (2026-08-05, adoption repair). This section's claims are not
+> edited here; they are flagged as contested under the revised axiom, for the
+> owner and the audit lane to settle.** The 2026-08-05 owner-approved
+> Admissibility revision replaces the availability sentence with a likelihood
+> sentence and makes availability the likelihood's support (zero likelihood is
+> unavailability). The witness below is not merely retyped by that revision --
+> it may be foreclosed by it. The witness needs one availability rule to carry
+> **both** expansions. With exactly one recorded neighbor the witness rule gives
+> the menu `{0,1}`, so post-revision both `0` and `1` carry positive
+> likelihood. The singleton-support expansion supplies a successor only for the
+> recorded neighbor's content, so the other value is locked in no continuation.
+> If likelihood is read as likelihood of being locked -- the reading the
+> section-6 approval record uses when it derives site normalization from
+> Record's "locks exactly one" -- then that other value has likelihood zero and
+> is therefore unavailable, contradicting the menu `{0,1}` the same rule
+> asserts. On that reading the singleton-support expansion is not admissible on
+> this rule, only the branch-complete one is, and the independence conclusion
+> ("the availability rule does not determine branch completeness") fails rather
+> than being re-scoped. The contrary reading is available and is why this is
+> marked contested rather than false: the memo's reading notes are declared
+> interpretive and non-governing, and the governing sentence alone does not
+> gloss "likelihood" as likelihood-of-being-locked. Under a bare reading the
+> witness survives unchanged. The two readings disagree about a landed
+> conclusion, so this is an owner/audit question, not a repair. Nothing below
+> has been altered.
+
 The runner exhausts all `3^6 = 729` nearest-neighbor patterns over the alphabet
 `{open,0,1}` and all 24 proper cubic rotations. It uses one site-independent
 availability rule:

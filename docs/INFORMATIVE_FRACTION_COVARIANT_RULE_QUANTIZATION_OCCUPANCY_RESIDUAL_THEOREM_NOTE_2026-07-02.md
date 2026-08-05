@@ -40,6 +40,23 @@ The recorded-neighborhood baseline is a named model. The six nearest neighbors a
 
 The site's available subset is one of `empty`, `{0}`, `{1}`, `{0,1}`. The informative available subset is `{0,1}`. A rule in this baseline is an orbit-map from binary neighbor patterns to those four available subsets.
 
+> **Scope note (2026-08-05, adoption repair).** The Admissibility sentence
+> quoted above under "the available-subset fence" was replaced on 2026-08-05
+> by owner-approved revision. The current sentence reads: "For each site, the
+> likelihood of each possibility is determined by, and varies with, the
+> nearest-neighbor conditions." Availability is now the likelihood's support,
+> and the memo's no-weights fence now excludes weight *values* rather than
+> weights outright. Consequence for this note: an Admissibility rule is a map
+> to likelihoods, and the space of such maps is not finite. The finite
+> four-subset rule space classified here is the space of the induced
+> **support** maps. Theorem 1's classification and the `k/64` quantization of
+> Theorem 2 are therefore results about the support-level baseline, and as
+> such they are unaffected -- the counts remain correct counts of support
+> maps. What no longer follows is that this baseline exhausts the axiom's rule
+> content: the likelihood refines the support map, so an informative-step
+> fraction computed on the likelihood need not be quantized as `k/64`. That
+> computation is open and is not performed here.
+
 Translation covariance removes site labels. Proper cubic rotation covariance makes the rule constant on proper-rotation orbits of the six neighbor slots.
 
 The iid-uniform no-information occupancy baseline is a named model in which each binary recorded-neighbor pattern has probability `1/64`. It is motivated by the no-weights fence, but not derived from the axiom. The iid-density deformation is the one-parameter model in which each neighbor independently carries value `1` with density `q` and value `0` with density `1-q`. That deformation locates the occupancy residual; it does not select a physical `q`.

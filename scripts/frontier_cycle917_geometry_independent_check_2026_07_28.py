@@ -163,7 +163,6 @@ def memo_tiebreak_from_bytes(memo):
                    r"`\(-,\+\)->\+z`, `\(-,-\)->-y`, and `\(\+,-\)->-z`\.", memo)
     if not (c2 and c3):
         return None, None
-    mapping = dict(re.findall(r"`\(([+-]),([+-])\)->([+-][xyz])`", c3.group(0)))
     m2 = {}
     for a, b, t in re.findall(r"`\(([+-]),([+-])\)->([+-][xyz])`", c3.group(0)):
         m2[(1 if a == "+" else -1, 1 if b == "+" else -1)] = t
@@ -252,7 +251,13 @@ def reduce_to(psi, n, sites):
     keep = [n - 1 - s for s in sites]
     comp = [a for a in range(n) if a not in keep]
     R = np.tensordot(T, T.conj(), axes=(comp, comp))
-    return R.reshape(1 << len(sites), 1 << len(sites))
+    # tensordot leaves the surviving axes in ASCENDING original order (twice over);
+    # permute them into the requested `sites` order
+    k = len(sites)
+    asc = sorted(keep)
+    perm = [asc.index(a) for a in keep]
+    R = np.transpose(R, perm + [k + p for p in perm])
+    return R.reshape(1 << k, 1 << k)
 
 
 def ent(rho):
@@ -653,12 +658,22 @@ def main():
                                                   >= (1 - HEADLINE) * r["H"]),
             }
         else:
-            best = min((min(r["C"].values()) for r in rows if r["jt"] <= DEADLINE + 1e-12))
+            # for a no-hit cell the meaningful number is the independence gap on the rows
+            # where content is actually available: an empty content window is a different
+            # failure from a content window closed by conditional dependence
+            live = [r for r in rows if r["jt"] <= DEADLINE + 1e-12
+                    and sum(1 for L in r["chi"]
+                            if r["chi"][L] >= (1 - HEADLINE) * r["H"]
+                            and r["exc"][L] >= EXCESS_MIN) >= 2]
+            best = min((min(r["C"].values()) for r in live), default=None)
             marginality["%s@%s" % (key, lk)] = {
                 "reason": info.get("reason"),
-                "min_C_ab_within_deadline": best,
+                "rows_with_two_or_more_content_passes": [r["jt"] for r in live],
+                "min_C_ab_on_those_rows": best,
                 "gate": INDEP_MAX,
-                "shortfall_bits": best - INDEP_MAX}
+                "shortfall_bits": (best - INDEP_MAX) if best is not None else None,
+                "failure_mode": ("empty content window" if best is None
+                                 else "content window closed by conditional dependence")}
 
     # (c) the SIZE-MATCHED control: fragment size forced to 1 on every geometry
     size_ctrl = {}
@@ -723,6 +738,23 @@ def main():
         "chain_is_the_worst_on_C_ab_frozen": chain_worst_frozen,
         "chain_is_the_worst_on_C_ab_size_matched": chain_worst_ctrl,
         "lambda_boundary_diagnostic_NON_CLAIM": boundary,
+        "lambda_ceiling_vs_pointer_degree_NON_CLAIM": {
+            "table": {g: {"pointer_degree": ST[g]["pointer_degree"],
+                          "loops": ST[g]["cyclomatic_number_loops"],
+                          "certifies_up_to_lambda": boundary[g]["certifies_up_to"]}
+                      for g in sorted(boundary)},
+            "monotone_in_pointer_degree": bool(all(
+                (ST[a]["pointer_degree"] <= ST[b]["pointer_degree"]) ==
+                ((boundary[a]["certifies_up_to"] or 0) <= (boundary[b]["certifies_up_to"] or 0))
+                for a in boundary for b in boundary
+                if ST[a]["pointer_degree"] != ST[b]["pointer_degree"])),
+            "reading": "the threshold is not a YES/NO cliff in geometry: it is a graded "
+                       "CEILING on the transverse field, and that ceiling rises with the "
+                       "pointer degree.  Loops do not move the ceiling (the degree-4 "
+                       "plaquette matches the degree-4 tree) but they do lower max R_ind.",
+            "status": "DECLARED NON-CLAIM DIAGNOSTIC -- computed outside the frozen "
+                      "commissioned field set; not part of the ladder's claim surface",
+        },
     }
 
     # the confound verdicts
@@ -896,10 +928,31 @@ def main():
     fabricated = "the register range is xi_reg <= 3 links at every point"
     tooth("fabricated-d1-quote", fabricated not in " ".join(d1t.split()),
           "a fabricated xi_reg quote is not present in the recovered note's bytes")
-    # T10 route-swap: does the primary's verdict survive a different propagator?
-    tooth("propagator-dependence", not disagree,
-          "the ladder is unchanged under a completely different propagator "
-          "(expm_multiply vs Chebyshev/eigendecomposition)")
+    # T10 planted under-converged propagator: a crude first-order step must be caught
+    key = "G1"
+    sites, bonds, pointer = specs[key]
+    idx, adj = adjacency(sites, bonds)
+    nn = len(sites)
+    SS = idx[pointer]
+    rs = sorted(adj[SS])
+    dSS = bfs(adj, SS)
+    fr, _ = derive_partition(sites, bonds, pointer, tb)
+    lb = sorted(fr)
+    fi = {L: ([idx[s] for s in fr[L] if idx[s] in rs]
+              + sorted(idx[s] for s in fr[L] if idx[s] not in rs)) for L in lb}
+    Hc = build_H(nn, [(idx[a], idx[b]) for (a, b) in bonds], 0.05)
+    p0 = prep(nn, set([SS] + rs))
+    crude = []
+    for t in TIMES:
+        v = p0 - 1j * t * (Hc @ p0)          # first-order Euler: deliberately wrong
+        crude.append(v / np.linalg.norm(v))
+    bad_rows = measure(nn, SS, lb, fi, dSS, crude)
+    bad_v, _ = verdict(bad_rows)
+    good_v = mine_ladder[("G1", "0.05")]["verdict"]
+    tooth("planted-under-converged-propagator", bad_v != good_v,
+          "a deliberately first-order (Euler) propagator on G1@0.05 gives verdict %s against "
+          "the converged %s -- the ladder is propagator-sensitive and the check detects it"
+          % (bad_v, good_v))
 
     survived = sum(1 for c in claims if c["verdict"] == "SURVIVES")
     out.update({
@@ -919,9 +972,19 @@ def main():
             "python": platform.python_version(), "numpy": np.__version__,
         },
     })
+    def jsonable(o):
+        if isinstance(o, dict):
+            return {("|".join(map(str, k)) if isinstance(k, tuple) else str(k)): jsonable(v)
+                    for k, v in o.items()}
+        if isinstance(o, (list, tuple)):
+            return [jsonable(v) for v in o]
+        if isinstance(o, (np.floating, np.integer)):
+            return float(o)
+        return o
+
     outp = os.path.join(ROOT, "outputs/geometry_independent_check_cycle917_receipt_2026_07_28.json")
     with open(outp, "w") as f:
-        json.dump(out, f, indent=1, sort_keys=True, default=float)
+        json.dump(jsonable(out), f, indent=1, sort_keys=True, default=float)
 
     print("SETUP independent-check cycle=917 pins=%d route=sparse-Pauli/expm_multiply/"
           "tensordot/eigvalsh-ev/bitmask-MIS geometries-rebuilt-from-spec=%d %s"
@@ -952,9 +1015,16 @@ def main():
                          for f, v in sep_table["0.1"]["features"].items()}, sort_keys=True),
              BOUNDARY_LINE))
     print("LAMBDA-BOUNDARY (declared NON-CLAIM diagnostic, outside the frozen field set) %s %s"
-          % (json.dumps({g: {"certifies_up_to": boundary[g]["certifies_up_to"],
+          % (json.dumps({g: {"deg(S)": ST[g]["pointer_degree"],
+                             "loops": ST[g]["cyclomatic_number_loops"],
+                             "certifies_up_to": boundary[g]["certifies_up_to"],
                              "bracket": boundary[g]["bracket"]} for g in sorted(boundary)},
                         sort_keys=True), BOUNDARY_LINE))
+    print("LAMBDA-CEILING monotone-in-pointer-degree=%s :: %s %s"
+          % (threshold_attack["lambda_ceiling_vs_pointer_degree_NON_CLAIM"]
+             ["monotone_in_pointer_degree"],
+             threshold_attack["lambda_ceiling_vs_pointer_degree_NON_CLAIM"]["reading"],
+             BOUNDARY_LINE))
     print("XI-REG-PROVENANCE definition-from=frozen-memo d1-note-has-formula=%s "
           "commensurability=IMPORT-not-derivation %s"
           % (has_formula, BOUNDARY_LINE))

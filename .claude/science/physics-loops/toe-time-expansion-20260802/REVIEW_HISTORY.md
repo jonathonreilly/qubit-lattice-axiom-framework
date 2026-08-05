@@ -1395,3 +1395,35 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Successor launched into the freed slot: Cycle 932 (the
   persistence razor, blockM12 — the lane's last unexplained
   mechanism, attacked through the theorem's own s(k,t) reduction).
+
+## Cycle 930 third pair + RC-3 (blockT7, PR #6000) — 2026-08-05
+
+- Supervisor review: the derivation/measurement grade split
+  carried exactly (TP-1..3 derived, exhaustive B=3..24; TP-4 the
+  zero sealed at measured grade with the non-blindness of B=8/9
+  disclosed BEYOND the spec's ask — first blind tier B>=10,
+  unbuilt, left undone with the budget reason stated); the worker
+  over-claim caught by the block's own gate and corrected on
+  record (the TP-3 exception); both readings of the ambiguous
+  discriminator run.
+- Verdicts: THE UNIT-GAP SHADOW (the busiest silence — the pair
+  forms constantly, its terminal always one tick downstream of
+  another row of its own bank); the exception cells unify with
+  922's label-theft cells from the geometry side; RC-3 DOES NOT
+  CLOSE — neither necessary nor sufficient, the failing cell
+  refuses 8 full configurations, and the binding component is the
+  tail's P-exactness: 891's dynamical boundary. The realization
+  law's sufficiency side is stretch dynamics, not arithmetic.
+- Checker: SUPPORTED_WITH_FINDINGS, both findings ADOPTED (the
+  discriminator ranking; decomposition-not-predictor); the
+  widened hunt (4,576 occurrences, zero episodes incl. B=9); 20/20
+  teeth across runners.
+- **T-LANE TERMINAL AT WINDOW SCOPE**: k-run law, complement
+  mechanism, RC-1, RC-2 (fitted-sealed, dominance), the shadow —
+  all derived; RC-3 honestly open ON the named dynamical boundary
+  (closing it = predicting stretch tails, which 891 deliberately
+  declined). Cheap successor: the B>=10 blind seal verification.
+- Cluster-cap (4th T-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 933 (the s(k)
+  shape, blockM13 — the mass lane's remaining empirical object).

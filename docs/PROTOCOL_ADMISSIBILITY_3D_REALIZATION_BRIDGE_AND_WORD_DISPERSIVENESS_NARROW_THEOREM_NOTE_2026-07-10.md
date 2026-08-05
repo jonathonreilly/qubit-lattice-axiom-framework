@@ -88,13 +88,20 @@ The two clause sentences, quoted verbatim from the linked axioms note, are:
 > Availability is the distribution's support. The quotation above is kept as the
 > wording this note consumed when it landed.
 
-Their formalizations on the availability-rule model are:
+The revised sentence does not imply that the support varies: distributions
+can vary while retaining identical full support. Accordingly `V(B) != empty`
+below is now an explicit support-variation premise, not a formalization or
+consequence of the current axiom. Every support-transport and all-axis result
+in this note is conditional on that extra premise. No distribution-weight-to-
+coefficient bridge is supplied here.
+
+The historical support-model formalizations used by the finite lemma are:
 
 - **Clause 1, translation part.** The table `B` is site-independent (one fixed
   rule).
 - **Clause 1, rotation part.** `B(c o R) = B(c)` for every proper cubic
   rotation `R`, where the 24-element rotation group acts on the `N6` slots.
-- **Clause 2, variation part.** `V(B)` is nonempty.
+- **Extra support-variation premise (formerly Clause 2).** `V(B)` is nonempty.
 
 ## The 3D Protocol-Realization Conditions
 
@@ -162,8 +169,9 @@ this theorem.
 ## Rotation Transport And All-Axis Factor Support Theorem
 
 **Statement.** The 24 proper cubic rotations act transitively on the six
-nearest-neighbor offsets. Hence Clause 1 (rotation part) together with Clause 2
-(some variation offset `d0`) implies that `V(B)` contains all six offsets, and,
+nearest-neighbor offsets. Hence Clause 1 (rotation part) together with the
+extra support-variation premise (some variation offset `d0`) implies that
+`V(B)` contains all six offsets, and,
 combined with the axis-faithful factor condition, the constituent-factor
 support vector is `(1,1,1)`.
 

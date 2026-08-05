@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py
 runner_sha256: 821e480d042daa111da4be5a3fcdf1ee0bba7bbd7900770501e05d07ebebe04c
-input_fingerprint_sha256: 014ff252260ce9d6bdae92f8775315414cc7ed2c11392f27229d4941020b929e
+input_fingerprint_sha256: 2e456d6cb120c9085a2c2a0fd33f317cda5084c2a46a05914acb1706487d15ed
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 11.71
+elapsed_sec: 14.93
 status: ok
 ----- stdout -----
 PASS independent inputs mechanically contain the complete primary declaration

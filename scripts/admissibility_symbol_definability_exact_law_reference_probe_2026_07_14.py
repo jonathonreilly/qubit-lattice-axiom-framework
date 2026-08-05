@@ -17,6 +17,21 @@ from pathlib import Path
 from typing import Callable
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/work_history/repo/review_feedback/ADMISSIBILITY_SYMBOL_DEFINABILITY_AND_EXACT_LAW_REFERENCE_CHALLENGE_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/EXISTENCE_UNIQUENESS_AND_EXACT_LAW_REFERENCE_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/EXACT_LAW_CONSTITUTIONAL_PLACEMENT_SCHEMA_PROBE_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/BLIND_RESIDUAL_ATOM_PACKING_AND_ONE_LAW_CONSTITUTIONAL_SCHEMA_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/QUALITATIVE_SUBSTRATE_EXACT_LAW_SELECTION_NOTE_2026-07-14.md",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+)
+
+
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = (
     ROOT
@@ -70,6 +85,7 @@ FAIL = 0
 
 Bit = int
 Condition = tuple[Bit, Bit, Bit, Bit, Bit, Bit]
+Distribution = tuple[Fraction, Fraction]
 Menu = frozenset[Bit]
 Vector = tuple[int, int, int]
 
@@ -135,57 +151,67 @@ def rotate_condition(condition: Condition, rotation: dict[Vector, Vector]) -> Co
     return tuple(new[direction] for direction in DIRECTIONS)  # type: ignore[return-value]
 
 
-def majority_menu(condition: Condition) -> Menu:
+def majority_distribution(condition: Condition) -> Distribution:
     zeros = condition.count(0)
     ones = condition.count(1)
     if zeros == ones:
-        return frozenset((0, 1))
-    return frozenset((0 if zeros > ones else 1,))
+        return Fraction(1, 2), Fraction(1, 2)
+    return (Fraction(1), Fraction(0)) if zeros > ones else (Fraction(0), Fraction(1))
 
 
-def minority_menu(condition: Condition) -> Menu:
+def minority_distribution(condition: Condition) -> Distribution:
     zeros = condition.count(0)
     ones = condition.count(1)
     if zeros == ones:
-        return frozenset((0, 1))
-    return frozenset((1 if zeros > ones else 0,))
+        return Fraction(1, 2), Fraction(1, 2)
+    return (Fraction(0), Fraction(1)) if zeros > ones else (Fraction(1), Fraction(0))
 
 
 @dataclass(frozen=True)
 class Rule:
     name: str
-    evaluator: Callable[[Condition], Menu]
+    evaluator: Callable[[Condition], Distribution]
 
-    def menu(self, condition: Condition) -> Menu:
+    def distribution(self, condition: Condition) -> Distribution:
         return self.evaluator(condition)
 
-    def table(self) -> tuple[tuple[Condition, tuple[Bit, ...]], ...]:
-        return tuple((condition, tuple(sorted(self.menu(condition)))) for condition in CONDITIONS)
+    def menu(self, condition: Condition) -> Menu:
+        return frozenset(bit for bit, probability in enumerate(self.distribution(condition)) if probability > 0)
+
+    def table(self) -> tuple[tuple[Condition, tuple[tuple[int, int], ...]], ...]:
+        return tuple(
+            (
+                condition,
+                tuple((probability.numerator, probability.denominator) for probability in self.distribution(condition)),
+            )
+            for condition in CONDITIONS
+        )
 
 
-MAJORITY = Rule("majority", majority_menu)
-MINORITY = Rule("minority", minority_menu)
+MAJORITY = Rule("majority", majority_distribution)
+MINORITY = Rule("minority", minority_distribution)
 RULES = (MAJORITY, MINORITY)
 
 
-def label_swap_menu(menu: Menu) -> Menu:
-    return frozenset(1 - bit for bit in menu)
+def label_swap_distribution(distribution: Distribution) -> Distribution:
+    return distribution[1], distribution[0]
 
 
 def is_fixed_covariant_varying(rule: Rule) -> bool:
-    fixed = all(rule.menu(condition) == rule.menu(tuple(condition)) for condition in CONDITIONS)
-    nonempty = all(rule.menu(condition) for condition in CONDITIONS)
+    fixed = all(rule.distribution(condition) == rule.distribution(tuple(condition)) for condition in CONDITIONS)
+    normalized = all(sum(rule.distribution(condition)) == 1 for condition in CONDITIONS)
     spatial = all(
-        rule.menu(rotate_condition(condition, rotation)) == rule.menu(condition)
+        rule.distribution(rotate_condition(condition, rotation)) == rule.distribution(condition)
         for condition in CONDITIONS
         for rotation in ROTATIONS
     )
     label_covariant = all(
-        rule.menu(tuple(1 - bit for bit in condition)) == label_swap_menu(rule.menu(condition))
+        rule.distribution(tuple(1 - bit for bit in condition))
+        == label_swap_distribution(rule.distribution(condition))
         for condition in CONDITIONS
     )
-    varying = len({rule.menu(condition) for condition in CONDITIONS}) > 1
-    return fixed and nonempty and spatial and label_covariant and varying
+    varying = len({rule.distribution(condition) for condition in CONDITIONS}) > 1
+    return fixed and normalized and spatial and label_covariant and varying
 
 
 @dataclass(frozen=True)
@@ -266,17 +292,13 @@ def table_digest(rule: Rule) -> str:
 @dataclass(frozen=True)
 class CompleteRecordLaw:
     admissibility: Rule
-    zero_weight_at_tie: Fraction
+    formation_rate: Fraction
 
-    def next_record_weights(self, condition: Condition) -> tuple[Fraction, Fraction]:
-        menu = self.admissibility.menu(condition)
-        if menu == frozenset((0, 1)):
-            return self.zero_weight_at_tie, 1 - self.zero_weight_at_tie
-        bit = sole(menu)
-        return (Fraction(1), Fraction(0)) if bit == 0 else (Fraction(0), Fraction(1))
+    def next_record_weights(self, condition: Condition) -> Distribution:
+        return self.admissibility.distribution(condition)
 
     def digest(self) -> str:
-        payload = f"{table_digest(self.admissibility)}|{self.zero_weight_at_tie}"
+        payload = f"{table_digest(self.admissibility)}|formation_rate={self.formation_rate}"
         return "sha256:" + sha256(payload.encode("utf-8")).hexdigest()
 
 
@@ -289,7 +311,7 @@ def rule_symbol_and_same_reduct_probe() -> None:
     check("A each expansion contains exactly one interpretation of the named symbol", all(isinstance(e.admissibility_interpretation, Rule) for e in EXPANSIONS))
     check("A both expansions use the identical rule-free reduct object", EXPANSIONS[0].reduct is EXPANSIONS[1].reduct)
     check("A both expansions satisfy the displayed finite foundation fragment", all(e.satisfies_displayed_fragment() for e in EXPANSIONS))
-    check("A their extensional admissibility tables differ", MAJORITY.table() != MINORITY.table())
+    check("A their extensional distribution tables differ", MAJORITY.table() != MINORITY.table())
     check("A the current structural property has two witnesses, not unique existence", sum(is_fixed_covariant_varying(rule) for rule in RULES) == 2)
 
 
@@ -328,14 +350,14 @@ def unique_existence_parameter_probe() -> None:
 def exact_a_is_not_complete_law_probe() -> None:
     section("D - Extensional admissibility does not fill the complete predictive-law type")
     tie = REDUCT.existing_record_condition
-    half = CompleteRecordLaw(MAJORITY, Fraction(1, 2))
-    biased = CompleteRecordLaw(MAJORITY, Fraction(2, 3))
-    check("D both complete laws share the identical A object", half.admissibility is biased.admissibility)
+    fast = CompleteRecordLaw(MAJORITY, Fraction(1))
+    slow = CompleteRecordLaw(MAJORITY, Fraction(1, 2))
+    check("D both record-law completions share the identical A object", fast.admissibility is slow.admissibility)
     check("D shared A has both outcomes available at the tie", MAJORITY.menu(tie) == frozenset((0, 1)))
-    check("D complete laws normalize", all(sum(law.next_record_weights(tie)) == 1 for law in (half, biased)))
-    check("D complete laws disagree on record weights", half.next_record_weights(tie) != biased.next_record_weights(tie))
-    check("D exact A digest is identical", table_digest(half.admissibility) == table_digest(biased.admissibility))
-    check("D complete-law digests differ", half.digest() != biased.digest())
+    check("D shared A supplies one normalized lock-outcome distribution", all(sum(law.next_record_weights(tie)) == 1 for law in (fast, slow)) and fast.next_record_weights(tie) == slow.next_record_weights(tie))
+    check("D record-law completions disagree only on supplied formation rate", fast.formation_rate != slow.formation_rate)
+    check("D exact A digest is identical", table_digest(fast.admissibility) == table_digest(slow.admissibility))
+    check("D record-law completion digests differ", fast.digest() != slow.digest())
 
 
 def stable_artifact_probe() -> None:
@@ -347,10 +369,10 @@ def stable_artifact_probe() -> None:
     check("E resolving the stable identifier selects one exact A", selected.table() == MAJORITY.table())
     check("E adding that selection reduces two admissibility expansions to one", sum(rule.table() == selected.table() for rule in RULES) == 1)
     completions = (
+        CompleteRecordLaw(selected, Fraction(1)),
         CompleteRecordLaw(selected, Fraction(1, 2)),
-        CompleteRecordLaw(selected, Fraction(2, 3)),
     )
-    check("E an A-only artifact still admits two complete record laws", len({law.digest() for law in completions}) == 2)
+    check("E an A-only artifact still admits two formation-rate completions", len({law.digest() for law in completions}) == 2)
     exact_law_id = completions[0].digest()
     check("E a complete-law digest selects one complete law", sum(law.digest() == exact_law_id for law in completions) == 1)
 

@@ -17,6 +17,12 @@ from pathlib import Path
 import sys
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md",
+)
+
+
 ROOT = Path(__file__).resolve().parents[1]
 AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 NOTE_PATH = (
@@ -26,12 +32,12 @@ NOTE_PATH = (
 )
 
 DISCIPLINE_SENTENCE = (
-    "Further physical structure requires derivation, bridge, explicit "
-    "admission, or approved primitive registration before use as a premise."
+    "Further physical structure requires a retained derivation or bridge, or "
+    "explicit approved- primitive registration, before use as a premise."
 )
 LAW_DEPENDENCE_SENTENCE = (
-    "In particular, a law may not depend on a choice not fixed by the "
-    "supplied structure, unless that choice is admitted."
+    "A choice not fixed by the supplied structure remains a named conditional "
+    "or open dependency."
 )
 IMPORT_NEEDLES = [
     "IMPORT 1: CO-REALIZATION of incomparable alternatives",
@@ -324,8 +330,8 @@ def main() -> int:
         check(0, f"note quotes sentence: {quote}", contains_needle(note_text, quote))
 
     check(0, "note uses markdown link for minimal axioms dependency", MINIMAL_AXIOM_LINK in note_text)
-    check(0, "axiom contains the admission-discipline sentence", contains_needle(axiom_text, DISCIPLINE_SENTENCE))
-    check(0, "note quotes the admission-discipline sentence", contains_needle(note_text, DISCIPLINE_SENTENCE))
+    check(0, "axiom contains the supply-discipline sentence", contains_needle(axiom_text, DISCIPLINE_SENTENCE))
+    check(0, "note quotes the supply-discipline sentence", contains_needle(note_text, DISCIPLINE_SENTENCE))
     check(0, "axiom contains the law-dependence sentence", contains_needle(axiom_text, LAW_DEPENDENCE_SENTENCE))
     check(0, "note quotes the law-dependence sentence", contains_needle(note_text, LAW_DEPENDENCE_SENTENCE))
     for needle in IMPORT_NEEDLES:

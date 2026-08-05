@@ -17,7 +17,8 @@ This runner checks the exact finite algebra behind the source-side repair:
 * the finite Boolean unit-count functional is additive on disjoint support
   tags;
 * the result is availability/readout-context algebra only, not production,
-  probability, physical context selection, clock/rate, or dial selection.
+  Born-rule identification or values, physical context selection, clock/rate,
+  or dial selection.
 """
 
 from __future__ import annotations
@@ -28,6 +29,13 @@ from itertools import permutations
 from pathlib import Path
 
 import sympy as sp
+
+
+AUDIT_INPUT_PATHS = (
+    "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
+)
 
 
 PASS = 0
@@ -397,7 +405,7 @@ def main() -> int:
         print(
             "VERDICT: exact finite local readout-atom/context availability closes only under the "
             "declared admissibility instance, diagonal readout context, K/conjugation context, "
-            "and unit-count normalization; selection of those inputs, production, probability, "
+            "and unit-count normalization; selection of those inputs, production, Born-rule values, "
             "clock/rate, and dial selection remain open."
         )
         return 0

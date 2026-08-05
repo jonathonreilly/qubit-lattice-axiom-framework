@@ -782,14 +782,15 @@ delta; not a discharge):
   by, and varies with, the nearest-neighbor conditions." Content notes: the
   determination of the distribution becomes named axiom content;
   availability/admissibility becomes the distribution's support (on finite
-  menus, exactly nonzero probability -- probability zero is unavailable --
-  forced by composition with Record, no stipulation needed; the
+  menus, exactly the possibilities of nonzero probability; in an atomless law,
+  supported exact points may have zero singleton measure), forced by composition
+  with Record, no stipulation needed; the
   measure/support formulation adopted on independent review, since per-point
   likelihood under-specifies an atomless law on the continuous one-site
   domain); site normalization is carried by the term "probability
-  distribution" and by Record's "locks exactly one"; the distribution's form
-  and values, the site question, and the rate question remain downstream
-  supplier content. Owner reading
+  distribution," while Record identifies its realization as exactly one
+  locked possibility; the distribution's form and values, the site question,
+  and the rate question remain downstream supplier content. Owner reading
   ruling on the section-1 fence and the memo's dynamics fence: "define
   probabilities / assign weights / supply transition probabilities" means
   supplying values or selections; establishing that likelihoods are

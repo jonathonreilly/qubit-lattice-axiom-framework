@@ -261,24 +261,19 @@ Five distinct attacks on surface A were attempted in this cycle:
 These are self-contained candidate proofs plus executable checks, not
 borrowed audit verdicts. Their authority remains this reviewed source pending
 the independent audit lane. Five corresponding routes were also checked for
-surface B: Record/Qubit supplies the `M_2(C)` carrier but no weights;
-Admissibility supplies no probability or menu-selection rule; the approved
-primitive registry contains no grading/menu primitive; the landed parent
+surface B: Record/Qubit supplies the `M_2(C)` carrier but no effect grading;
+Admissibility supplies a lock-outcome probability distribution but no effect-
+menu grading or eligible-menu selector; the approved primitive registry
+contains no grading/menu primitive; the landed parent
 assumes rather than registers its grading domains and menus; and the
 composite/literature routes add separate operational or theorem inputs.
 All five are **ATTEMPTED** and leave physical registration open rather than
 establishing a no-go.
 
-> **Scope note (2026-08-05, adoption repair).** The clause "Admissibility
-> supplies no probability or menu-selection rule" is pre-revision wording. Under
-> the 2026-08-05 owner-approved revision Admissibility does supply a
-> nearest-neighbor-determined probability distribution over the possibilities,
-> with availability as its support. The menu-selection half of the clause is
-> unaffected, and so is this route's **ATTEMPTED** verdict: the axiom still
-> supplies no grading of the effect menus this note ranges over, and it fixes no
-> distribution values. What changed is that the absence of a probability rule can
-> no longer be asserted outright as a reason; it holds only for the values and
-> for the menu grading, not for the structural fact of the distribution.
+> **Scope note (2026-08-05, adoption repair).** The paragraph above is repaired
+> to the current distribution-valued reading. The route's **ATTEMPTED** verdict
+> concerns effect-menu grading and selection, not absence of the axiom's
+> lock-outcome probability rule.
 
 ### N2 — wall-independence audit
 

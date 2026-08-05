@@ -64,12 +64,13 @@ determined by, and varies with, the nearest-neighbor conditions.
 law-level: the general substrate is the weighted-branching realization, with
 deterministic substrates as boundary realizations -- the law supplies the
 odds; the realized state supplies the pick. (2) Read with Record, the
-distribution concerns which possibility a forming record locks; the
-conditional and joint readings coincide whenever formation rate is itself
-nearest-neighbor-determined. (3) The distribution is a probability measure on
+distribution concerns which possibility a forming record locks, conditional
+on formation at that site; it does not supply the formation site, probability,
+or rate. (3) The distribution is a probability measure on
 the local possibility domain; "available"/"admissible" denotes its support --
-on finite menus, exactly the possibilities of nonzero probability
-(probability zero is unavailable); Record locks a supported realization.
+on finite menus, exactly the possibilities of nonzero probability. On a
+continuous domain, a supported exact point may have zero singleton measure;
+Record locks a supported realization.
 
 ### Record / Fixed Reality
 
@@ -194,18 +195,20 @@ Record to durable realized-outcome registration in a supplied readout context.
 The 2026-07-04 owner-approved revision appended the formation sentence "Records
 form." to the Record axiom: occurrence became named axiom content, while every
 formation rule (which admissible possibility, at which site, with what weight,
-at what rate) remained downstream supplier content. The file path was kept
+at what rate) at that time remained downstream supplier content. The file path was kept
 unchanged so existing runner needles and links continue to resolve.
 
 The 2026-08-05 owner-approved revision replaced Admissibility's availability
 sentence with the distribution sentence: for each site, the probability
 distribution over the possibilities is determined by, and varies with, the
 nearest-neighbor conditions. The determination of the distribution became
-named axiom content; availability became the distribution's support (on
-finite menus, probability zero is unavailable); the distribution's form and
-values, the site question, and the rate question remain downstream supplier
-content. The measure/support formulation was adopted on independent review
-(per-point likelihood under-specifies an atomless law on the continuous
+named axiom content; availability became the distribution's support (on finite
+menus, exactly the possibilities of nonzero probability; in an atomless law,
+supported exact points may have zero singleton measure); the distribution's
+extensional form and values are not specified by this memo, and the formation
+site/rate and realized draw remain downstream supplier content. The
+measure/support formulation was adopted on independent
+review (per-point likelihood under-specifies an atomless law on the continuous
 one-site domain). The file
 path was again kept unchanged so existing runner needles and links continue
 to resolve.

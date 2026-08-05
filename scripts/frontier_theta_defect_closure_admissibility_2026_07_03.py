@@ -21,6 +21,13 @@ from pathlib import Path
 import sys
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+    "scripts/theta_4d_carrier_flux_cohomology_intersection_pairing_2026_07_02.py",
+)
+
+
 D = 4
 L = 2
 
@@ -249,6 +256,27 @@ def main() -> int:
         "counterexample is still on the parent branch object; no theta value is inferred",
         isinstance(witness_qraw, int),
         f"witness Q_raw={witness_qraw}; used only as object sanity, not as theta charge",
+    )
+
+    print(
+        f"per_element: checked — every one of {total_masks} condition masks was mapped to all "
+        f"{len(C2)} plaquette components and all {len(C3)} defect components."
+    )
+    print(
+        f"per_site: checked — all {len(SITES)} periodic T^4_2 anchor sites participate in "
+        "Encoding E1, including the explicit single-site witness."
+    )
+    print(
+        "per_mode: checked and not executed — this finite cochain claim has no Fourier-mode "
+        "reduction; the coboundary was evaluated directly in the cell basis."
+    )
+    print(
+        f"per_block: checked — all {len(C3)} oriented cube blocks were tested for dn on every "
+        "enumerated branch assignment."
+    )
+    print(
+        f"lattice_wide: checked — the full {len(SITES)}-site periodic lattice and all "
+        f"{total_masks} binary condition fields were exhausted; open={open_count}, closed={closed_count}."
     )
 
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

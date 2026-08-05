@@ -4,18 +4,31 @@
 This runner checks elementary algebra/notation facts plus source/registry
 firewalls for docs/MINIMAL_AXIOMS_2026-06-29.md. It does not derive the axioms
 and does not import context selection, formation rules, sector generation,
-log-det structure, P2/modulus, measurement, dynamics, normalization, scale,
-source/action, Born weights, occupancy, local observability, or observable
-identification.
+log-det structure, P2/modulus, measurement, dynamics, specific probability
+values, scale, source/action, Born weights, occupancy, local observability, or
+observable identification.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
+
+
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/audit/AXIOM_MINIMALITY_POLICY.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/audit/data/premise_decision_history.json",
+    "docs/audit/scripts/check_axiom_premise_clean.py",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -99,9 +112,26 @@ def record_functional(records: set[str], weights: dict[str, float]) -> float:
     return sum(weights[r] for r in records)
 
 
-def is_available(candidate: str, neighborhood_records: frozenset[str]) -> bool:
-    """Toy site-admission predicate: local records can make a candidate inadmissible."""
-    return not ("blocks_up" in neighborhood_records and candidate == "up")
+def local_distribution(neighborhood_records: frozenset[str]) -> dict[str, float]:
+    """Toy local probability rule; availability is its positive support."""
+    if "blocks_up" in neighborhood_records:
+        return {"up": 0.0, "down": 1.0}
+    return {"up": 0.5, "down": 0.5}
+
+
+def governing_admissibility_distribution_sentence(note: str) -> str:
+    """Extract the governing distribution sentence from the live memo."""
+    try:
+        section = note.split("### Admissibility / Local Constraint", 1)[1]
+        section = section.split("*Reading notes", 1)[0]
+    except IndexError:
+        return ""
+    match = re.search(
+        r"For each site,\s+the probability distribution over the possibilities is\s+"
+        r"determined by, and varies with, the nearest-neighbor conditions\.",
+        section,
+    )
+    return normalize(match.group(0)) if match else ""
 
 
 def source_boundary_checks() -> list[Check]:
@@ -114,6 +144,7 @@ def source_boundary_checks() -> list[Check]:
     legacy_ids = set(node.get("legacy_claim_ids") or [])
     derivation_targets = history.get("derivation_targets") or {}
     record_reclass = (history.get("reclassified_primitives") or {}).get("minimal_axioms_record", {})
+    governing_distribution_sentence = governing_admissibility_distribution_sentence(note)
 
     checks = [
         Check("Source note exists", NOTE.exists(), rel(NOTE)),
@@ -153,10 +184,20 @@ def source_boundary_checks() -> list[Check]:
         Check(
             "Registry note records Admissibility and downstream-boundary firewall",
             "Admissibility" in node.get("note", "")
-            and "the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions at each site" in node.get("note", "")
+            and bool(governing_distribution_sentence)
+            and governing_distribution_sentence in normalize(node.get("note", ""))
             and "context-selection rule" in node.get("note", "")
+            and "specific distribution form or values" in node.get("note", "")
+            and "realized-outcome selection" in node.get("note", "")
+            and "formation-site or formation-rate rule" in node.get("note", "")
             and "downstream theory consequence" in node.get("note", ""),
             "",
+        ),
+        Check(
+            "Registry note does not deny the adopted probability structure",
+            "weighting, normalization, probability" not in node.get("note", "")
+            and "which admissible possibility a new record locks" not in node.get("note", ""),
+            "distribution, normalization, and supported outcomes are axiom content",
         ),
         Check(
             "Registry note records 2026-07-02/03 no-privilege/readout/state/law/record wording",
@@ -199,7 +240,8 @@ def source_boundary_checks() -> list[Check]:
             "Policy records 2026-08-05 Admissibility likelihood revision",
             contains(policy, "2026-08-05 -- Admissibility second sentence: availability replaced by the probability distribution")
             and contains(policy, "availability/admissibility becomes the distribution's support")
-            and contains(policy, "probability zero is unavailable"),
+            and contains(policy, "on finite menus, exactly the possibilities of nonzero probability")
+            and contains(policy, "supported exact points may have zero singleton measure"),
             "",
         ),
         Check(
@@ -303,7 +345,7 @@ def source_boundary_checks() -> list[Check]:
             "Admissibility local-constraint clause is present",
             contains(note, "one fixed nearest-neighbor admissibility rule")
             and contains(note, "covariant under lattice translations and proper cubic rotations")
-            and contains(note, "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions."),
+            and bool(governing_distribution_sentence),
             "",
         ),
         Check(
@@ -396,11 +438,13 @@ def run_checks() -> list[Check]:
     )
 
     neighborhood_records = frozenset({"blocks_up"})
+    distribution = local_distribution(neighborhood_records)
+    support = {possibility for possibility, probability in distribution.items() if probability > 0}
     checks.append(
         Check(
-            "Admissibility: nearest-neighbor conditions can constrain possibility availability",
-            not is_available("up", neighborhood_records) and is_available("down", neighborhood_records),
-            "toy predicate only: neighbor conditions can make a candidate unavailable; no probability, transition, or dynamics is used",
+            "Admissibility: nearest-neighbor conditions determine a normalized distribution and support",
+            sum(distribution.values()) == 1.0 and support == {"down"},
+            "toy distribution only: local conditions set lock-outcome odds and support; no transition or dynamics is used",
         )
     )
 
@@ -482,7 +526,7 @@ def run_checks() -> list[Check]:
         Check(
             "Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion",
             True,
-            "script checks only algebraic notation, graph adjacency, local availability bookkeeping, fixed record readout, and finite additivity",
+            "script checks only algebraic notation, graph adjacency, local distribution/support bookkeeping, fixed record readout, and finite additivity",
         )
     )
     return checks

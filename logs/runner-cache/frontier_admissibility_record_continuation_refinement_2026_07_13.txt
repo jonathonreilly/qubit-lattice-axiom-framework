@@ -1,0 +1,128 @@
+===== runner cache v1 =====
+runner: scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py
+runner_sha256: 16030d4597997b4ae54088cd9b3f43997236ef6c8973082b0bf1d508083d1890
+input_fingerprint_sha256: cb49d2855ddfde562f1b96405871293f4ed9db9ee4cbf045b73514f4839758df
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+
+===============================================================================
+A - Source and wording contract
+===============================================================================
+PASS A1 canonical axiom boundary contains required needle
+PASS A2 canonical axiom boundary contains required needle
+PASS A3 canonical axiom boundary contains required needle
+PASS A4 canonical axiom boundary contains required needle
+PASS A5 canonical axiom boundary contains required needle
+PASS A6 canonical axiom boundary contains required needle
+PASS A7 locked target wording occurs exactly once in the theorem attempt
+PASS A8 locked target wording has not been inserted into the axiom
+PASS A9 note names the target as a condition, not an axiom edit
+PASS A10 note preserves bounded-theorem claim typing
+PASS A11 local-atom source says the fixed rule content is not supplied
+PASS A12 saturation source does not identify its models with the physical rule
+PASS A13 tick source keeps the physical realization bridge open
+PASS A14 protocol source keeps the rule-to-protocol identification open
+PASS A15 no-go discipline is visible in the theorem attempt
+PASS A16 adjacent record work keeps site immobility as an explicit representation condition
+PASS A17 approved primitive sources are limited to units, kinetic-form isotropy, and pointwise evaluation
+PASS A18 bootstrap continuation source keeps its rule toy and formation selection downstream
+
+===============================================================================
+B - Exact local-rule and continuation-support separation
+===============================================================================
+PASS B1 proper cubic rotation group has 24 elements
+PASS B2 witness availability is nonempty on every neighbor pattern
+PASS B3 witness availability varies with neighbor conditions
+PASS B4 witness availability is exhaustively proper-cubic covariant
+PASS B5 witness availability is label-equivariant (no binary label privilege)
+PASS B6 full branch support equals the availability menu on the common domain
+PASS B7 copy-law outputs are always available
+PASS B8 singleton-support law gives exactly one successor on the common domain
+PASS B9 copy-law support is exhaustively proper-cubic covariant
+PASS B10 copy-law support is label-equivariant
+PASS B11 one-neighbor contexts leave both possibilities available
+PASS B12 the same contexts have one copy-law successor
+PASS B13 a separately supplied set-valued interface admits distinct branch-complete and singleton-support expansions
+PASS B14 both continuation maps have nonempty candidate-successor support throughout the common domain
+PASS B15 both continuation maps have exactly the same supplied domain
+PASS B16 the current probability-distribution axiom rejects the singleton expansion because it omits supported outcomes
+
+===============================================================================
+C - Site-tagged immutable-extension theorem and local certificate
+===============================================================================
+PASS C1 declared one-record appends strictly extend their predecessor
+PASS C2 every sibling pair conflicts at exactly its newly recorded site
+PASS C3 distinct same-site records have no common site-tagged immutable extension
+PASS C4 sibling syntactic immutable-extension cones are disjoint on five sites
+PASS C5 the separation certificate is local to the conflicting site
+PASS C6 allowing overwrite reconnects the two values (negative control)
+PASS C7 site-tagged immutability, not availability covariance, is load-bearing
+PASS C8 two fixed compatible distinct-site appends have an order-independent union
+PASS C9 competing same-site appends are incompatible
+PASS C10 conflicting same-site contents remain separated when each event adds a collateral record
+
+===============================================================================
+D - Conditional refinement of record-content history classes
+===============================================================================
+PASS D1 independent binary full support gives 2^n potential content classes
+PASS D2 each new record strictly refines that independent full-support model
+PASS D3 the declared fixture label accumulates exactly one fact per append
+PASS D4 accumulated labels never discard or alter an older value
+PASS D5 a finite region saturates after one record per site
+PASS D6 refinement gives finer potential classes and one chosen fixture label
+PASS D7 local constraints can prevent per-record class doubling :: counts=[1, 2, 2, 2, 2, 2, 2]
+
+===============================================================================
+E - Separately supplied finite tensor-product operation-algebra comparator
+===============================================================================
+PASS E1 the comparator's full finite two-qubit matrix algebra has scalar commutant
+PASS E2 imposing preservation of one binary record creates two central blocks
+PASS E3 imposing preservation of two binary records creates four central blocks
+PASS E4 a supplied post-record block restriction is idempotent
+PASS E5 that restriction fixes the record projector
+PASS E6 that restriction removes cross-record interference
+PASS E7 supplied restriction is presentation-covariant when record content transforms
+PASS E8 supplied restrictions commute algebraically on disjoint tensor factors
+PASS E9 overlapping noncommuting restrictions require a compatibility/order law
+PASS E10 imposing the restriction before formation destroys pre-record interference
+PASS E11 the availability rule itself contains no operator-algebra argument
+PASS E12 a one-time block restriction does not forbid a later sector-changing unitary
+PASS E13 finite unitary conjugation preserves the scalar commutant of the full algebra
+
+===============================================================================
+F - Contextual-scope discriminator
+===============================================================================
+PASS F1 a single context-independent joint completion obeys CHSH <= 2
+PASS F2 context-indexed target probabilities are nonnegative
+PASS F3 every context-indexed target table normalizes
+PASS F4 context-indexed target is no-signaling
+PASS F5 context-indexed target reaches 2 sqrt(2)
+PASS F6 this target rejects deterministic local joint completions under the tested Bell premises
+
+===============================================================================
+G - Mechanical classification
+===============================================================================
+PASS G1 site-tagged history nonreconnection closes once distinct immutable successors exist
+PASS G2 local separation closes by a one-site conflict certificate
+PASS G3 record-content classes refine in the independent full-support model
+PASS G4 the historical set-valued comparator differs from the axiom-compatible support
+PASS G5 the availability table alone does not specify an operation algebra in these constructions
+PASS G6 selection, weights, rate, metric, and capacity renewal remain outside this probe
+
+DECISIVE RESULT
+  DERIVED IN THE SITE-TAGGED IMMUTABLE-HISTORY MODEL: local nonreconnection
+  and fixed-schedule monotone refinement, conditional on distinct formation successors.
+  NOT DERIVED FROM ADMISSIBILITY: counterfactual branch support or the
+  post-record physical operation-algebra restriction/activation.
+  CHECKED AUTHORITY BOUNDARY: one fixed rule is named but the checked
+  foundation/adjacent surfaces provide no extensional table or dynamics bridge.
+
+===============================================================================
+TOTAL: PASS=76 FAIL=0
+===============================================================================
+
+----- stderr -----
+

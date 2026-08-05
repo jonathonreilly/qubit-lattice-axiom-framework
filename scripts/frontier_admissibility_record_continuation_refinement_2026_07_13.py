@@ -26,6 +26,22 @@ import math
 import numpy as np
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md",
+    "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+    "docs/RECORD_SATURATION_AVAILABILITY_CENSUS_BOUNDED_NOTE_2026-07-08.md",
+    "docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md",
+    "docs/PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md",
+    "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+    "docs/BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+)
+
+
 ROOT = Path(__file__).resolve().parents[1]
 AXIOM = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 NOTE = (
@@ -256,10 +272,12 @@ def full_branch_support(pattern: tuple[int, ...]) -> frozenset[int]:
 
 
 def copy_law_support(pattern: tuple[int, ...]) -> frozenset[int]:
-    """Local covariant singleton support on the common one-neighbor domain.
+    """Conditional singleton continuation map on the one-neighbor domain.
 
     It retains the recorded neighbor's value even though both values are
-    available. Other patterns are outside both continuation maps' domain.
+    available. It is a mathematical comparator, not a realization of the
+    current probability-distribution axiom. Other patterns are outside both
+    continuation maps' domain.
     """
     if not formation_domain(pattern):
         return frozenset()
@@ -314,11 +332,15 @@ def local_rule_classification() -> None:
     check("B11 one-neighbor contexts leave both possibilities available", all(availability(pattern) == frozenset({0, 1}) for pattern in one_neighbor_patterns))
     check("B12 the same contexts have one copy-law successor", all(len(copy_law_support(pattern)) == 1 for pattern in one_neighbor_patterns))
     check(
-        "B13 one fixed availability rule admits branch-complete and singleton-support expansions on one domain",
+        "B13 a separately supplied set-valued interface admits distinct branch-complete and singleton-support expansions",
         any(full_branch_support(pattern) != copy_law_support(pattern) for pattern in one_neighbor_patterns),
     )
     check("B14 both continuation maps have nonempty candidate-successor support throughout the common domain", all(full_branch_support(pattern) and copy_law_support(pattern) for pattern in common_domain))
     check("B15 both continuation maps have exactly the same supplied domain", all(not full_branch_support(pattern) and not copy_law_support(pattern) for pattern in outside_domain))
+    check(
+        "B16 the current probability-distribution axiom rejects the singleton expansion because it omits supported outcomes",
+        all(copy_law_support(pattern) != availability(pattern) for pattern in one_neighbor_patterns),
+    )
 
 
 Config = tuple[int, ...]
@@ -617,7 +639,7 @@ def final_classification() -> None:
     partitions = [partition_for_prefix(4, count) for count in range(5)]
     check("G3 record-content classes refine in the independent full-support model", [len(partition) for partition in partitions] == [1, 2, 4, 8, 16])
     one_neighbor = (0, OPEN, OPEN, OPEN, OPEN, OPEN)
-    check("G4 branch completeness is not fixed by the availability table", full_branch_support(one_neighbor) != copy_law_support(one_neighbor))
+    check("G4 the historical set-valued comparator differs from the axiom-compatible support", full_branch_support(one_neighbor) != copy_law_support(one_neighbor))
 
     x1, z1 = np.kron(X, I2), np.kron(Z, I2)
     x2, z2 = np.kron(I2, X), np.kron(I2, Z)

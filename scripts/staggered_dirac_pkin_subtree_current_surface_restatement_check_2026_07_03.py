@@ -1,18 +1,28 @@
 #!/usr/bin/env python3
-import json
 import math
 import os
 import re
 import sys
-from collections import defaultdict, deque
 from pathlib import Path
 
 import numpy as np
 
+AUDIT_INPUT_PATHS = (
+    "docs/STAGGERED_DIRAC_PKIN_SUBTREE_CURRENT_SURFACE_RESTATEMENT_NOTE_2026-07-03.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md",
+    "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/STAGGERED_DIRAC_LINK_INTEGRATION_CLASS_COUPLING_TRANSPOSITION_NARROW_THEOREM_NOTE_2026-07-02.md",
+    "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
+)
+
 
 NOTE_PATH = Path("docs/STAGGERED_DIRAC_PKIN_SUBTREE_CURRENT_SURFACE_RESTATEMENT_NOTE_2026-07-03.md")
 AX_PATH = Path("docs/MINIMAL_AXIOMS_2026-06-29.md")
-LEDGER_PATH = Path("docs/audit/data/audit_ledger.json")
 
 KS_ID = "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
 KINETIC_ID = "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
@@ -43,7 +53,7 @@ NON_SELECTION_SENTENCE = (
 )
 DOWNSTREAM_CONTENT_CLAUSE = (
     "A realized kinetic branch, if proposed, is downstream content: it needs "
-    "derivation, bridge, explicit admission, or approved primitive registry update "
+    "a retained derivation or bridge, or an approved-primitive registry update, "
     "before audit rows may use it as load-bearing content."
 )
 RECORD_PERMANENCE_SENTENCE = (
@@ -276,58 +286,45 @@ def algebra_dimension(generator):
                 mats.append(a @ b)
 
 
-def run_text_and_ledger_gates(note_text, ax_text, ledger):
-    rows = ledger["rows"]
-    ks_row = rows.get(KS_ID)
+def run_text_gates(note_text, ax_text):
+    ks_text = read_text(KS_NOTE_PATH) if KS_NOTE_PATH.exists() else ""
     check(
         "G1.1",
-        "ledger contains Kawamoto-Smit row with non-null claim_scope",
-        bool(ks_row and ks_row.get("claim_scope")),
-        f"present={bool(ks_row)}",
+        "Kawamoto-Smit source remains authority-scoped and the restatement carries its historical scope",
+        "independent audit lane" in ks_text
+        and norm(EXPECTED_KS_SCOPE) in norm(note_text),
+        "source-based; no generated ledger consumed",
     )
-    ks_scope = ks_row.get("claim_scope") if ks_row else None
     check(
         "G1.2",
-        "Kawamoto-Smit ledger claim_scope equals expected pin",
-        ks_scope is not None and norm(ks_scope) == norm(EXPECTED_KS_SCOPE),
-        f"status={ks_row.get('effective_status') if ks_row else None}",
+        "current boundary rejects distribution variation as automatic support variation",
+        "does not imply variation of its support" in norm(note_text)
+        and "historical support-variation premise" in norm(note_text),
+        "",
     )
     check(
         "G1.3",
-        "note quotes the Kawamoto-Smit ledger claim_scope",
+        "note quotes the Kawamoto-Smit source claim scope",
         norm(EXPECTED_KS_SCOPE) in norm(note_text),
         "",
     )
-
-    reverse = defaultdict(list)
-    for row_id, row in rows.items():
-        for dep in row.get("deps") or []:
-            reverse[dep].append(row_id)
-
-    def closure(root):
-        seen = set()
-        queue = deque(reverse[root])
-        while queue:
-            row_id = queue.popleft()
-            if row_id in seen or row_id == root:
-                continue
-            seen.add(row_id)
-            queue.extend(reverse[row_id])
-        return seen
-
-    ks_closure = closure(KS_ID)
-    kinetic_closure = closure(KINETIC_ID)
-    union_count = len((ks_closure | kinetic_closure) - {KS_ID, KINETIC_ID})
-    status_bits = [f"{r}={rows.get(r, {}).get('effective_status')}" for r in [KS_ID, KINETIC_ID] + REALIZED_IDS]
     check(
         "G1.4",
-        "reverse-dependency transitive closure count from roots is at least 1000",
-        union_count >= 1000,
-        f"union={union_count}; statuses: {', '.join(status_bits)}",
+        "all named chain sources are present without importing audit status",
+        all(path.exists() for _, path, _ in CHAIN_SOURCES) and KS_NOTE_PATH.exists(),
+        "source inventory only",
     )
 
     check("G2.1", "variation clause present in axiom text", norm(VARIATION_CLAUSE) in norm(ax_text), "")
     check("G2.2", "variation clause present in note", norm(VARIATION_CLAUSE) in norm(note_text), "")
+    check(
+        "G2.2a",
+        "note rejects distribution variation as an automatic support/coefficient selector",
+        "does not imply variation of its support" in note_text
+        and "does not" in note_text
+        and "supply the historical" in note_text,
+        "",
+    )
     check("G2.3", "non-selection sentence present in axiom text", norm(NON_SELECTION_SENTENCE) in norm(ax_text), "")
     check("G2.4", "non-selection sentence present in note", norm(NON_SELECTION_SENTENCE) in norm(note_text), "")
     check("G2.5", "downstream-content clause present in axiom text", norm(DOWNSTREAM_CONTENT_CLAUSE) in norm(ax_text), "")
@@ -555,9 +552,7 @@ def run_language_and_link_gates(note_text):
 def main():
     note_text = read_text(NOTE_PATH)
     ax_text = read_text(AX_PATH)
-    ledger = json.loads(read_text(LEDGER_PATH))
-
-    run_text_and_ledger_gates(note_text, ax_text, ledger)
+    run_text_gates(note_text, ax_text)
     run_math_gates()
     run_language_and_link_gates(note_text)
 

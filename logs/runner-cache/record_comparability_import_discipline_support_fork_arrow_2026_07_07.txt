@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py
-runner_sha256: 4275cb30e2a8ae7bcfe9d4d5f32b87c81dd9934eaa3bf6fbbd4537c1da83e3c1
+runner_sha256: 5201f13b014ea39759acadcbcdd7b9eb51380fef789930ade3cfccfffe331f86
+input_fingerprint_sha256: ef3d16056845fa47813c9b9596fa79a662a4fc7ee0ef2f0db1bcc48407d00925
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 CHECK 1 PASS: text needles and absence guards (41/41)

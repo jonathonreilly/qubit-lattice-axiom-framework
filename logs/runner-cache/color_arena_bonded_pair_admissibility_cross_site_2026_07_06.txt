@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/color_arena_bonded_pair_admissibility_cross_site_2026_07_06.py
-runner_sha256: ecd97bb9a58b5dea484209a08c7d21fb1953d6ad7e851892478a56c84fd0b817
+runner_sha256: ceec01f5e74c67e34730ffbc132d03ddd2a2b937e28d1595add9df03d8e307d6
+input_fingerprint_sha256: cfd8eca8c129e062b696ebb9814b54966e7c917abb90226d5c37142c9276e727
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.10
 status: ok
 ----- stdout -----
 [PASS] SWAP squares to identity

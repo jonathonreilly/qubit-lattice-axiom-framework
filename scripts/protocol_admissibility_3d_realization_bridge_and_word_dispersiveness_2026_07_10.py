@@ -35,6 +35,12 @@ import sys
 
 import numpy as np
 
+AUDIT_INPUT_PATHS = (
+    "docs/PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md",
+)
+
 PASS, FAIL = 0, 0
 TOL = 1.0e-10
 L = 4
@@ -1020,9 +1026,11 @@ e2 = (
     _norm(CLAUSE_1) in note_norm
     and _norm(CLAUSE_2) in note_norm
     and "algebraic consequences" in note_norm
+    and "explicit support-variation premise" in note_norm
+    and "does not imply that the support varies" in note_norm
 )
 check(
-    "the note quotes both axiom clauses and frames its results as conditional algebraic consequences",
+    "the note quotes both axiom clauses and makes support variation an extra conditional premise",
     e2,
     "note clauses + framing present" if e2 else "MISSING note clause/framing",
 )

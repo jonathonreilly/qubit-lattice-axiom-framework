@@ -50,21 +50,14 @@ sentences quoted verbatim, non-contiguous, in document order:
 There is one fixed nearest-neighbor admissibility rule, covariant under lattice
 translations and proper cubic rotations.
 
-For each site, the available possibilities are determined by, and vary with,
-the nearest-neighbor conditions.
+For each site, the probability distribution over the possibilities is
+determined by, and varies with, the nearest-neighbor conditions.
 
 Records form.
 
 When present, a record locks exactly one admissible local possibility. A
 site never carries more than one record; records are permanent.
 ```
-
-> **Scope note (2026-08-05, adoption repair).** The Admissibility second
-> sentence quoted above was replaced by owner-approved revision on 2026-08-05.
-> It now reads:
-> "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions."
-> Availability is the distribution's support. The quotation above is retained as
-> the wording this note consumed when it landed.
 
 From the Qualification section, also quoted verbatim:
 
@@ -75,15 +68,14 @@ A law privileges no states. Its domain is a supplied condition, and at every
 state where the condition holds it gives exactly one answer.
 ```
 
-And the Qualification's admission discipline, quoted verbatim -- this is the
+And the Qualification's supply discipline, quoted verbatim -- this is the
 load-bearing decision rule of this note:
 
 ```text
 These axioms state only their named primitive content. Further physical
-structure requires derivation, bridge, explicit admission, or approved
-primitive registration before use as a premise. In particular, a law may not
-depend on a choice not fixed by the supplied structure, unless that choice is
-admitted.
+structure requires a retained derivation or bridge, or explicit approved-
+primitive registration, before use as a premise. A choice not fixed by the
+supplied structure remains a named conditional or open dependency.
 ```
 
 ## The named signature
@@ -97,8 +89,9 @@ domains with full one-site algebraic presentation `M_2(C)` (a
 further primitive structure), no possibility privileged, possibilities
 distinguished by the supplied algebraic structure alone; one fixed
 nearest-neighbor admissibility rule, covariant under lattice translations and
-proper cubic rotations, by which each site's available possibilities are
-determined by, and vary with, the nearest-neighbor conditions; records (they
+proper cubic rotations, by which each site's probability distribution over
+the possibilities is determined by, and varies with, the nearest-neighbor
+conditions, with availability as support; records (they
 form; each locks exactly one admissible local possibility; a site never
 carries more than one; they are permanent; only records are readable; a
 readout value is determined by record content alone; scalar readout `I` is
@@ -118,6 +111,9 @@ when a nearest neighbor already carries a record locking that same
 possibility; otherwise it is available. This rule is expressed only in terms
 of nearest-neighbor incidence and record content, so translations and proper
 cubic rotations preserve it, and it varies with nearest-neighbor conditions.
+The finite realization assigns the uniform probability distribution on each
+nonempty support, so the probability rule has the same covariance and
+variation.
 
 ### The fork model (Model B)
 
@@ -152,11 +148,11 @@ IMPORT 2: a formation-successor relation F_B among states.
 ```
 
 Each import is physical structure. Neither is named by any landed sentence
-(see The Named Signature). Neither is derived, bridged, explicitly admitted,
-or registered as a primitive. Under the quoted admission discipline -- "Further
-physical structure requires derivation, bridge, explicit admission, or
-approved primitive registration before use as a premise" -- these imports are
-not available for load-bearing use. A countermodel offered against a
+(see The Named Signature). Neither is derived, bridged, or registered as an
+approved primitive. Under the quoted supply discipline -- "Further physical
+structure requires a retained derivation or bridge, or explicit approved-
+primitive registration, before use as a premise" -- these imports are not
+available for load-bearing use. A countermodel offered against a
 derivability claim is load-bearing use: the model's furniture is the premise
 set of the argument "the sentences do not force the conclusion."
 
@@ -290,7 +286,7 @@ At each site, at most one record ever forms.
   contingent fallback if a future fresh-context audit refuses the judgment
   point; it is not current premise content and no ruling is requested.
 - Result F is a finite exhibit plus an inventory argument under the quoted
-  admission discipline; its single judgment point is stated above.
+  supply discipline; its single judgment point is stated above.
 - No formation rule, site-selection rule, possibility-selection rule, rate,
   clock, metric, probability, Hamiltonian, transfer operator, or dynamics is
   supplied.
@@ -340,7 +336,7 @@ judgment point itself, which belongs to the audit lane.
 - **N3 hidden-wall scan:** no global order imported; no rate/clock; no
   dynamics, probability, update law, site-selection rule, possibility-selection
   rule, or formation rule imported. The joint evaluation is argued from the
-  landed admission discipline, not supplied as external semantics.
+  landed supply discipline, not supplied as external semantics.
 - **N4 residual matching:** the closed/residual split is explicit:
   consistency of record content closes only under Result F's judgment point;
   finite union is all A2 claims; global simultaneity, metrics, rates,

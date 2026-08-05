@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/matter_realization_arena_split_preservation_axis_frames_2026_07_06.py
-runner_sha256: 03835ee7122bf13efbdace97a45921cb7409126171364516baacaf22895bbbe8
+runner_sha256: 786c5a8d4e1ba2cf8242d6be8e833aa4d244249c92e7bf746d0316c01b297710
+input_fingerprint_sha256: f3da7c96cce247eb09502419075d1201807cff5b813705c23e7c5d05796d261e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 [PASS] text audits: every source quote from files 1-4 is present

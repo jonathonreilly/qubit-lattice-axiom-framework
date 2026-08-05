@@ -118,8 +118,8 @@ Only the following current axiom content is load-bearing:
 There is one fixed nearest-neighbor admissibility rule, covariant under lattice
 translations and proper cubic rotations.
 
-For each site, the available possibilities are determined by, and vary with,
-the nearest-neighbor conditions.
+For each site, the probability distribution over the possibilities is
+determined by, and varies with, the nearest-neighbor conditions.
 
 Records form.
 
@@ -266,40 +266,18 @@ require a compatibility or causal-order law as well.
 
 ## Same-Rule Independence Witness
 
-> **CONTESTED (2026-08-05, adoption repair). This section's claims are not
-> edited here; they are flagged as contested under the revised axiom, for the
-> owner and the audit lane to settle.** The 2026-08-05 owner-approved
-> Admissibility revision replaces the availability sentence with: "For each
-> site, the probability distribution over the possibilities is determined by,
-> and varies with, the nearest-neighbor conditions." Availability becomes that
-> distribution's support -- on finite menus, exactly the possibilities of
-> nonzero probability. The witness below is not merely retyped by that
-> revision; it may be foreclosed by it. The witness needs one availability rule
-> to carry **both** expansions. With exactly one recorded neighbor the witness
-> rule gives the menu `{0,1}`, so post-revision both `0` and `1` carry nonzero
-> probability. The singleton-support expansion supplies a successor only for
-> the recorded neighbor's content, so the other value is locked in no
-> continuation. If the distribution is the distribution over which possibility
-> a forming record locks, that other value has probability zero and is
-> therefore unavailable, contradicting the menu `{0,1}` the same rule asserts.
-> On that reading the singleton-support expansion is not admissible on this
-> rule, only the branch-complete one is, and the independence conclusion ("the
-> availability rule does not determine branch completeness") fails rather than
-> being re-scoped.
->
-> This is marked contested rather than false only because the locking reading,
-> while strongly indicated, is not stated in the governing sentence itself. It
-> is stated in reading note (2) ("the distribution concerns which possibility a
-> forming record locks"), and the reading notes are declared interpretive and
-> non-governing; the section-6 approval record points the same way when it
-> carries site normalization by the term "probability distribution" together
-> with Record's "locks exactly one". Under a reading on which the distribution
-> is over something other than the locked possibility, the witness survives
-> unchanged. Note that the 2026-08-05 refinement from the earlier per-point
-> likelihood wording to the probability-distribution wording narrows that
-> escape rather than widening it, since normalization is now explicit in the
-> governing term. Two readings disagree about a landed conclusion, so this is
-> an owner/audit question, not a repair. Nothing below has been altered.
+> **Superseded boundary (2026-08-05, adoption repair).** This section's
+> same-rule independence conclusion does not hold under the revised axiom. The
+> probability distribution is over Qubit's one-site possibility domain and,
+> read with Record, governs which supported possibility a forming record locks.
+> In the finite witness below, support `{0,1}` therefore requires both values to
+> have nonzero probability. The proposed singleton-support expansion gives no
+> continuation locking one of them, so it cannot realize that same
+> distribution. The construction remains a conditional example for a separately
+> supplied set-valued availability rule, but it is not an independence witness
+> for the current Admissibility axiom. The section is retained to make the
+> superseded argument and its failure mode explicit; no audit verdict is set
+> here.
 
 The runner exhausts all `3^6 = 729` nearest-neighbor patterns over the alphabet
 `{open,0,1}` and all 24 proper cubic rotations. It uses one site-independent

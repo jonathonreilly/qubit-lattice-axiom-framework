@@ -91,6 +91,12 @@ The second is:
 > Availability is the distribution's support. The quotation above is retained as
 > the wording this note consumed when it landed.
 
+The revised sentence does not imply support variation: probability weights
+can vary with the same support. Thus the nonempty `V(A)` condition below is an
+explicit support-variation premise, not the current axiom's Clause 2. All
+tick-support conclusions remain conditional on that premise and on the named
+realization predicate; no distribution-weight-to-tick bridge is derived.
+
 The statements above belong to the full `Z^3` framework. The lemma below uses
 only their one-dimensional translation restriction; it does not derive the
 binary ring model or proper-cubic covariance from them.
@@ -108,7 +114,7 @@ A_{x+1}(shifted profile) = A_x(profile)
 ```
 
 for every `x` and every profile. It is one fixed rule, copied to every site.
-Clause 2 is formalized by requiring the variation set
+The extra support-variation premise is formalized by requiring the set
 
 ```text
 V(A) = { (x,y) : y is a nearest neighbor of x and there exist profiles c,c'

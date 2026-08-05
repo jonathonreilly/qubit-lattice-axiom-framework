@@ -1,0 +1,107 @@
+===== runner cache v1 =====
+runner: scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py
+runner_sha256: b6a57bef91e6542d5f2797b9bcc90393dd10d370ee61325491b44b3245186c44
+input_fingerprint_sha256: fba83d578316e1b3c0df42b7ee809ed2fb5eea6d39f8505cd2c287ff689e2baf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+
+===============================================================================
+A - Live-source and premise boundary
+===============================================================================
+PASS A live axiom needle: There is one fixed nearest-neighbor admissibi
+PASS A live axiom needle: probability distribution over the possibiliti
+PASS A live axiom needle: Records form.
+PASS A live axiom needle: A state is a configuration of records.
+PASS A live axiom needle: Admissibility is not a dynamics axiom.
+PASS A live axiom contains no extensional rule table
+PASS A continuation theorem keeps physical successor support underived
+PASS A tensor no-go keeps composition independent
+PASS A producer boundary keeps the next-token law separate
+PASS A only four approved premise nodes exist
+PASS A deep-probe note is authority-free
+PASS A deep-probe note contains N1-N8
+
+===============================================================================
+B - Exact rule-space census under covariance and no label privilege
+===============================================================================
+PASS B proper cubic rotation group has 24 elements
+PASS B ternary six-neighbor profiles number 729
+PASS B profiles have 57 proper-cubic orbits
+PASS B label flip fixes 9 profile orbits
+PASS B label flip pairs the other 48 orbits
+PASS B no-privilege covariant rule count is 3^24
+PASS B neighbor variation leaves 282,429,536,480 rules
+PASS B support census injects into distinct distribution rules
+PASS B majority/tie witness is nonempty everywhere
+PASS B majority/tie witness actually varies
+PASS B majority/tie witness is exhaustively proper-cubic covariant
+PASS B majority/tie witness is label-equivariant
+PASS B uniform-on-support lift is normalized everywhere
+PASS B uniform-on-support lift is proper-cubic covariant
+PASS B uniform-on-support lift is label-equivariant
+PASS B basis-free schema exhausts all 4^6 ternary-domain profiles
+PASS B copy-neighbor schema is exhaustively proper-cubic covariant
+PASS B copy-neighbor schema is equivariant under every value relabeling
+PASS B copy-neighbor schema gives exact maximum support without changing neighbors
+
+===============================================================================
+C - Explicit append relation closes the record layer by construction
+===============================================================================
+PASS C finite witness exhausts all 3^8 record configurations
+PASS C every one-step transition appends exactly one record
+PASS C every available value has a record-forming successor
+PASS C every transition preserves all old site/content pairs
+PASS C empty state has both values at every site as successors
+PASS C a finite fully recorded block is saturated
+PASS C conflicting same-site branches have disjoint append-only futures
+PASS C finite support lift gives normalized local lock-outcome odds
+PASS C same support can project from distinct distribution-valued rules
+PASS C distinct weights are distinct A rules, not completions of one A
+PASS C distribution rule itself selects no realized member
+
+===============================================================================
+D - The same extensional record rule fits inequivalent global algebras
+===============================================================================
+PASS D ordinary generated two-site product has rank 16
+PASS D duplicate-sector local products have the same rank 16
+PASS D duplicate composite contains an extra global observable
+PASS D full duplicate self-adjoint dimension is 32
+PASS D carrier choice leaves the record successor graph unchanged
+PASS D record-only rule cannot inspect the extra central sector
+
+===============================================================================
+E - Reversible-QCA and quantum-instrument route prices
+===============================================================================
+PASS E CNOT is a reversible local write
+PASS E applying the reversible write again erases the copied bit
+PASS E global reversible access therefore does not give absolute permanence
+PASS E ideal two-register copy is an isometry
+PASS E its Kraus blocks are the supplied pointer projectors
+PASS E pointer Kraus family is trace preserving
+PASS E nonselective instrument dephases but contains no realized label
+PASS E outcome weights use the trace pairing
+PASS E the isometry already presupposes system-register tensor composition
+PASS E repeated append-only writes require fresh capacity or export
+
+===============================================================================
+F - Deep-probe classification
+===============================================================================
+PASS F note carries boundary marker: 282,429,536,480
+PASS F note carries boundary marker: append-only cellular relation
+PASS F note carries boundary marker: reversible quantum cellular automaton
+PASS F note carries boundary marker: quantum instrument
+PASS F note carries boundary marker: select the physical rule
+PASS F note carries boundary marker: does not derive tensor composition
+PASS F note carries boundary marker: actualization remains
+PASS F note declares no axiom need
+
+===============================================================================
+TOTAL PASS=66 FAIL=0
+RESULT: PASS
+BOUNDARY: explicit finite rule-family probes; no physical rule is selected
+
+----- stderr -----
+

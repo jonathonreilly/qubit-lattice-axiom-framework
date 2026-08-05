@@ -86,18 +86,17 @@ This is a lower-bound witness, not an exhaustive count for the full
 > sentence was replaced on 2026-08-05 by owner-approved revision: for each
 > site, the probability distribution over the possibilities is determined by, and varies with,
 > the nearest-neighbor conditions, with availability the distribution's support.
-> Under that revision an extensional rule is a table of probability distributions, and the
-> table space is continuous rather than finite. The `3^24` and `3^24 - 1`
-> counts above are counts of covariant label-equivariant **support** tables.
-> They remain correct as such, and the non-entailment conclusions they witness
-> are unaffected -- a lower-bound witness survives a refinement of the object
-> being counted. What is no longer available from these counts is any claim
-> that they enumerate the axiom's rule content; the distribution carries strictly
-> more. Whether the label-equivariance and covariance arguments transfer to the
-> distribution, where the constraint is `mu` composed with `g` equals `mu` rather
-> than invariance of a set, is open and not settled here.
+> Under that revision an extensional rule is a table of probability
+> distributions, and the unrestricted table space is continuous rather than
+> finite. The `3^24` support tables have a canonical finite lift: put the
+> uniform probability distribution on each nonempty support. That lift is
+> injective, covariant, and label-equivariant, and every nonconstant support
+> table gives a neighbor-varying distribution rule. Thus `3^24 - 1` remains a
+> rigorous **lower bound** on the number of distribution-valued rules. It is
+> not an enumeration of the axiom's full rule content. The axiom's covariance
+> applies to the distribution, not merely its support.
 
-### Basis-free maximum-support schema
+### Basis-free maximum-support projection
 
 The strongest rule schema found without selecting a named possibility works
 on any one-site possibility set `D`. Let a record state be a partial map
@@ -111,20 +110,27 @@ A_C(x) = D                                      if no neighbor is recorded,
 An atomic successor appends `x -> p` for any `p in A_C(x)` and changes no old
 entry. Continuation is the reflexive-transitive closure of that relation.
 
-This schema is translation- and proper-cubic-covariant and equivariant under
-every relabeling of `D`; it selects no coordinate, basis, or named value. It
-proves continuation, menu-complete support, exact permanence, and sibling
-nonreconnection by construction. Reading `D=M_2(C)` follows the literal axiom
-but treats arbitrary matrices as possibilities; restricting `D` to rays or
-rank-one projectors adds exactly the operational-typing content isolated by
+As a **support projection**, this schema is translation- and
+proper-cubic-covariant and equivariant under every relabeling of `D`; it
+selects no coordinate, basis, or named value. It proves continuation,
+support-complete realization, exact permanence, and sibling nonreconnection
+by construction. For finite `D`, the uniform-on-support lift makes it a
+distribution-valued Admissibility rule. For the full continuous `M_2(C)`
+domain, however, the support formula alone does not supply a probability
+measure. In particular there is no normalized uniform measure on the entire
+noncompact domain. A full-domain rule therefore still needs a separately
+specified covariant probability measure with this support. Restricting `D` to
+rays or rank-one projectors adds the operational-typing content isolated by
 the companion probe.
 
 The schema is deliberately maximum-support and physically weak. It copies
 already represented neighboring values and makes the whole domain available
-in a blank neighborhood. It does not derive quantum interference, formation
-eligibility, probabilities, or composition. Its purpose is to prove that the
-candidate Admissibility/Record properties can be consequences of an exact,
-basis-neutral rule rather than independent clauses.
+in a blank neighborhood. On a finite domain its uniform lift supplies local
+lock-outcome probabilities; on the continuous full domain this support-only
+construction does not. It derives neither formation-site eligibility or rate,
+quantum interference, nor composition. Its purpose is to prove that the
+candidate Record properties can be consequences of an exact, basis-neutral
+rule rather than independent clauses.
 
 ## The Three Serious Rule Routes
 
@@ -146,7 +152,7 @@ It leaves:
 
 - which one of the hundreds of billions of local tables is physical;
 - simultaneous overlapping-event composition;
-- actualization and weights;
+- realized-outcome selection and the formation site/rate;
 - coherent pre-record evolution; and
 - the quantum state/effect/composite structure.
 
@@ -223,9 +229,11 @@ To retire a Qubit composition clause, the eventual rule must act on enough
 global operational structure to prove no-extra-global generation or local
 tomography.
 
-Actualization remains independent too: the append-only relation determines a
-set of successors, and the same set accepts different normalized measures and
-different realized-member selectors.
+Actualization remains independent too. The distribution-valued rule supplies
+the conditional odds for which supported possibility a forming record locks,
+but it does not supply the formation site/rate or the realized draw. Different
+normalized measures on the same support are different Admissibility rules,
+not different completions of one fixed current rule.
 
 ## Effect on Framework Axioms
 
@@ -279,8 +287,8 @@ explicit rule, the broader physical residual collapses to three walls.
 | pair | first closes second? | second closes first? | independent? |
 |---|---:|---:|---:|
 | physical rule selection / global algebra generation | no | no | yes |
-| physical rule selection / realized-member weighting or selection | no | no | yes |
-| global algebra generation / realized-member weighting or selection | no | no | yes |
+| physical rule selection / realized-member selection | no | no | yes |
+| global algebra generation / realized-member selection | no | no | yes |
 
 Reversible dynamics versus permanence and nonselective dynamics versus
 actualization are route-price examples, not additional independent walls of
@@ -305,8 +313,9 @@ the physical rule.
 | `scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py:160-205,284-386` | exact rule census, append construction, and duplicate-carrier comparison | finite census and carrier-pair existence results | yes; current unaudited compute, so it cannot make N1 pass |
 
 The generated-composition note and Schumacher-Werner QCA are comparison
-context, not prior no-go witnesses. Probability and actualization residuals
-concern weighting or selection and are dropped from the witness count.
+context, not prior no-go witnesses. The current Admissibility rule supplies
+conditional lock-outcome probability; actualization residuals concern the
+realized draw and formation site/rate and are dropped from the witness count.
 
 ### N5 -- resolution audit
 
@@ -341,7 +350,7 @@ axiom`. The nearest prior surfaces are:
 |---|---|---|---|
 | `docs/BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md` | availability was overread as complete continuation support | unaudited conditional propagation only | explicit append semantics is a constructed witness, not the physical rule |
 | `docs/GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md` | local copies were overread as the whole composite | current unaudited equivalence isolates generatedness | record-graph data are not used to retire that import |
-| `docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md` | occurrence/append typing was overread as a total formation law | unaudited bounded surface; site/value/weight/rate remain open | append construction here selects no realized member |
+| `docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md` | occurrence/append typing was overread as a total formation law | unaudited bounded surface; formation site/rate and realized draw remain open | append construction here selects no realized member |
 | `docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md` | locality was overread as composition | unaudited no-go; local-tomography route remains live | not counted as authority for carrier nonuniqueness |
 
 The same repair mechanisms—explicit construction, generated-domain theorem,

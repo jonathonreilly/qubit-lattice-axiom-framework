@@ -37,8 +37,8 @@ statuses all change; only current repo surfaces are authoritative.
   possibilities are distinguished by the supplied algebraic structure alone.
 - **Admissibility** — one fixed nearest-neighbor admissibility rule, covariant
   under lattice translations and proper cubic rotations; for each site, the
-  available possibilities are determined by, and vary with, the
-  nearest-neighbor conditions.
+  probability distribution over the possibilities is determined by, and
+  varies with, the nearest-neighbor conditions; availability is its support.
 - **Record** — a site need not carry a record; when present, a record locks
   exactly one available local possibility. Only records are readable; readout
   value is determined by record content alone; scalar readout is finitely
@@ -48,10 +48,11 @@ statuses all change; only current repo surfaces are authoritative.
   it gives exactly one answer.
 
 The minimal-axioms memo states explicitly what the axiom baseline does NOT
-supply (dynamics, Born rule, readout context, species identification, gauge
-group, time metric, unit conversion, ...). Treat those exclusion lists as
-binding: anything on them enters only through a named derivation lane with
-retained status or an approved primitive; otherwise it remains conditional/open.
+supply (specific distribution values, dynamics, readout context, species
+identification, gauge group, time metric, unit conversion, ...). Treat those
+exclusion lists as binding: anything on them enters only through a named
+derivation lane with retained status or an approved primitive; otherwise it
+remains conditional/open.
 
 ## Standing Discipline
 

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle747_receiver_success_gate_adapter_2026_07_30.py
+runner_sha256: a851b14e77c25b8d3da2519c52c6cec3e08b3b1e53af4b8c8c5ca738ca4563c2
+input_fingerprint_sha256: 97136afdd6c39906221a1c20e5c6740877f0f5272e5334c13f9c03fbcd2fe224
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+PASS A note binds the exact Boolean scope and semantic firewall :: {'exists': True, 'missing': [], 'forbidden': []}
+PASS B four load-bearing executable sources match their pins :: {'expected': {'scripts/physical_event_to_append_commit_candidate_cycle326_2026_07_18.py': '8762609f9e9e85fb9311ed467bbc91fd5905f2ac5d160997555e8623c5e7f44c', 'scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py': '36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac', 'scripts/physical_support_matcher_predecessor_controls_cycle329_2026_07_18.py': '2cf6370f72cd4025fcfba8f0edefff1c577ad2bf5c5b93f996ef23c5affbab0b', 'scripts/physical_transition_occurrence_close_tournament_cycle332_2026_07_18.py': 'de7883fe45ce248427e8e44294d77fce56394e5ed14724e9056a65b43e0a4415'}, 'observed': {'scripts/physical_event_to_append_commit_candidate_cycle326_2026_07_18.py': '8762609f9e9e85fb9311ed467bbc91fd5905f2ac5d160997555e8623c5e7f44c', 'scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py': '36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac', 'scripts/physical_support_matcher_predecessor_controls_cycle329_2026_07_18.py': '2cf6370f72cd4025fcfba8f0edefff1c577ad2bf5c5b93f996ef23c5affbab0b', 'scripts/physical_transition_occurrence_close_tournament_cycle332_2026_07_18.py': 'de7883fe45ce248427e8e44294d77fce56394e5ed14724e9056a65b43e0a4415'}, 'all_match': True}
+PASS C Cycle-332 boundary certificate remains the exact five-bit delegate :: {'path': 'scripts/physical_transition_occurrence_close_tournament_cycle332_2026_07_18.py', 'function': 'boundary_certificate', 'exact_delegate': True}
+PASS D complete six-bit receiver table equals the conjunction :: {'rows': 64, 'mismatches': 0, 'certificate_ones': 2, 'receiver_ones': 1, 'single_control_deletion_survivors': 0}
+PASS E Cycle-610 adapter and boundary controls match the named conditions :: {'two_rows': {'0': 'refused_supplied', '1': 'admitted'}, 'supplied_deletions': {'certificate': 'no_opportunity', 'binder': 'no_opportunity', 'actuality': 'refused_supplied', 'law_domain': 'refused_supplied'}, 'exhausted_capacity': 'exhausted', 'repeated_tick': ('admitted', 'refused_fresh'), 'all_match': True}
+PASS F every runtime-loaded repository module is cache-fingerprinted :: {'loaded_repository_modules': 41, 'declared_inputs': 46, 'undeclared': []}
+PASS G runtime remains within the declared audit timeout :: {'runtime_sec': 0.091958, 'timeout_sec': 120}
+SUMMARY_JSON {"adapter_rows":{"0":"refused_supplied","1":"admitted"},"all_pass":true,"audit_input_count":46,"fail":0,"pass":7,"receiver_mismatches":0,"receiver_rows":64,"receiver_successes":1,"runtime_loaded_repository_modules":41,"runtime_sec":0.091958,"scope":"finite Boolean receiver-success and conditional Cycle-610 gate adapter"}
+
+----- stderr -----
+

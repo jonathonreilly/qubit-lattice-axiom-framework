@@ -62,6 +62,10 @@ import os
 import re
 import sys
 
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+)
+
 # ---------------------------------------------------------------------------
 # check harness -- "CHECK NN: PASS/FAIL -- desc", TOTAL line, nonzero exit on FAIL
 # ---------------------------------------------------------------------------

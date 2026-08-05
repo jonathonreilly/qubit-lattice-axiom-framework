@@ -19,6 +19,17 @@ supplies the rest of physics?
 This question is prior to prose polish. A short sentence in the wrong type can
 be less honest than a longer sentence in the right place.
 
+> **Current-reading annotation (2026-08-05).** The adopted Admissibility rule
+> has type `nearest-neighbor condition -> probability measure on the full
+> one-site possibility domain`; availability is its support projection. Thus
+> current Admissibility already supplies the conditional distribution of the
+> possibility locked when a record forms at a given site. Historical text
+> below that types `A` as a menu, or uses two measures on one menu as two
+> completions of the same `A`, is superseded. Those measures are distinct
+> Admissibility rules. The remaining exact-law placement problem concerns
+> formation site/rate, realized selection, continuation, concurrency, and the
+> other dynamics fields while holding the complete distribution rule fixed.
+
 ## Result Up Front
 
 The scientific atom is still one exact referent, not a list of formation

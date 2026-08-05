@@ -971,3 +971,32 @@ No axiom ask arises anywhere in this lane.
   be cited outside the Schwinger comparator.
 - Cluster-cap (4th M-family PR): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+# WINDOW 2 REOPENED — 2026-08-04 ~22:00 EDT
+
+SUPERVISOR DIRECTIVE ERROR (#6, caught by the OWNER): the window was
+wound down ~10h early on a "queue exhausted at PR-worthy quality"
+judgment — but the directive said "Do not stop when the queue is dry,
+make a new queue. Do not stop early." The cluster-cap doctrine governs
+what ships, not whether to work. The stop was a substitution of the
+supervisor's criterion for the owner's. Resumed immediately on owner
+correction; runs to ~07:45 EDT.
+
+NEW QUEUE (window 2b — from the campaign's own named successors):
+1. Cycle 918 — THE WRITABLE-ENDPOINT KERNEL (the Born lane's named
+   successor, started not deferred): construct the minimal 719-kernel
+   modification making the endpoint wires gate targets; test whether
+   formation persists, menus become dynamical, and the axioms'
+   structure survives.
+2. Cycle 919 — THE DEGREE-5 GEOMETRY (917's bracket interior): locate
+   the field-ceiling threshold inside (4, 6].
+3. Cycle 920 — THE DEPOSITION CHAIN RE-AUDIT (the 914 pattern applied
+   to B's system: the never-landed 2026-07-08 comparator has never
+   been independently checked; B-runs-only-from-history makes it
+   urgent).
+4. The loop-cost mechanism (917 measured, unexplained).
+5. The P=32 carrier mechanism (T-lane, named by 891).
+6. The r=1/2 exactness residual (the realized-state reduction's named
+   open).
+7. The retention map's remaining derivation gaps (consult the
+   toe-close blockA branches).

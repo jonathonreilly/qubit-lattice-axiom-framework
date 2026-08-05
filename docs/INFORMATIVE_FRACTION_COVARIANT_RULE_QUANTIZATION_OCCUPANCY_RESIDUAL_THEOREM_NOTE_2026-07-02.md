@@ -24,6 +24,17 @@ It supplies nearest-neighbor dependence, not a probability measure. The no-weigh
 
 > "transition probabilities or weights"
 
+> **Scope note (2026-08-05, adoption repair).** Both quotations above are the
+> pre-revision memo wording and are retained as what this note consumed when it
+> landed. Under the 2026-08-05 owner-approved revision the sentence "It supplies
+> nearest-neighbor dependence, not a probability measure" no longer holds: the
+> axiom now supplies exactly a nearest-neighbor-determined probability
+> distribution over the possibilities, and the fence quoted above now reads
+> "transition-probability or weight values" -- it withholds values and
+> selections, not the structural fact that the distribution is
+> nearest-neighbor-determined. See the fuller scope note under Theorem 1 for
+> what this does and does not do to the `k/64` result.
+
 The bounded answer is: in the recorded-neighborhood baseline, the covariant rule space is finite and exactly classified; under the iid-uniform no-information occupancy baseline, `p` is quantized as `k/64`; the unit-variance point `p*` is off-lattice; and the remaining mismatch is an occupancy residual, quantified by an iid-density deformation.
 
 Neighboring surfaces are named only for orientation: `GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md` - not a citation-graph dependency; `NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md` - not a citation-graph dependency; `GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md` - not a citation-graph dependency. The runner recomputes `p*` in-packet from the Haar integral.
@@ -43,18 +54,18 @@ The site's available subset is one of `empty`, `{0}`, `{1}`, `{0,1}`. The inform
 > **Scope note (2026-08-05, adoption repair).** The Admissibility sentence
 > quoted above under "the available-subset fence" was replaced on 2026-08-05
 > by owner-approved revision. The current sentence reads: "For each site, the
-> likelihood of each possibility is determined by, and varies with, the
-> nearest-neighbor conditions." Availability is now the likelihood's support,
+> probability distribution over the possibilities is determined by, and varies with, the
+> nearest-neighbor conditions." Availability is now the distribution's support,
 > and the memo's no-weights fence now excludes weight *values* rather than
 > weights outright. Consequence for this note: an Admissibility rule is a map
-> to likelihoods, and the space of such maps is not finite. The finite
+> to probability distributions, and the space of such maps is not finite. The finite
 > four-subset rule space classified here is the space of the induced
 > **support** maps. Theorem 1's classification and the `k/64` quantization of
 > Theorem 2 are therefore results about the support-level baseline, and as
 > such they are unaffected -- the counts remain correct counts of support
 > maps. What no longer follows is that this baseline exhausts the axiom's rule
-> content: the likelihood refines the support map, so an informative-step
-> fraction computed on the likelihood need not be quantized as `k/64`. That
+> content: the distribution refines the support map, so an informative-step
+> fraction computed on the distribution need not be quantized as `k/64`. That
 > computation is open and is not performed here.
 
 Translation covariance removes site labels. Proper cubic rotation covariance makes the rule constant on proper-rotation orbits of the six neighbor slots.

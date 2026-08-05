@@ -359,14 +359,14 @@ No countable extension, composite mixed-projective class, empirical value,
 frequency interpretation, or physical selection is hidden.
 
 > **Scope note (2026-08-05, adoption repair).** The 2026-08-05 owner-approved
-> Admissibility revision makes availability the support of a likelihood, so
-> that a possibility of zero likelihood is unavailable. This note's
+> Admissibility revision makes availability the support of a probability distribution, so
+> that a possibility of probability zero is unavailable. This note's
 > "zero outcomes" convention is **not** an instance of that and is not
 > disturbed by the revision: the menus here are effect partitions on the
 > explicitly supplied finite carrier `E(H_Lambda)`, and a zero outcome is the
 > zero effect carrying `w(0)=0` inside a conditional grading surface that the
 > N3 scan already records as not derived from the minimal axioms. It is not a
-> zero-likelihood member of an Admissibility availability menu, and the
+> probability-zero member of an Admissibility availability menu, and the
 > ternary-to-binary collapse that consumes it is a statement about effect
 > partitions, not about which local possibilities a site makes available. The
 > note is recorded here only because a post-revision reader may otherwise take

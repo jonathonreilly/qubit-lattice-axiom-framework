@@ -138,7 +138,7 @@ def source_contract() -> None:
 
     for needle in (
         "There is one fixed nearest-neighbor admissibility rule",
-        "likelihood of each possibility is determined by, and varies with",
+        "probability distribution over the possibilities is\ndetermined by, and varies with",
         "Records form.",
         "A state is a configuration of records.",
         "Admissibility is not a dynamics axiom.",

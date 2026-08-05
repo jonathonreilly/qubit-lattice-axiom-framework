@@ -269,28 +269,37 @@ require a compatibility or causal-order law as well.
 > **CONTESTED (2026-08-05, adoption repair). This section's claims are not
 > edited here; they are flagged as contested under the revised axiom, for the
 > owner and the audit lane to settle.** The 2026-08-05 owner-approved
-> Admissibility revision replaces the availability sentence with a likelihood
-> sentence and makes availability the likelihood's support (zero likelihood is
-> unavailability). The witness below is not merely retyped by that revision --
-> it may be foreclosed by it. The witness needs one availability rule to carry
-> **both** expansions. With exactly one recorded neighbor the witness rule gives
-> the menu `{0,1}`, so post-revision both `0` and `1` carry positive
-> likelihood. The singleton-support expansion supplies a successor only for the
-> recorded neighbor's content, so the other value is locked in no continuation.
-> If likelihood is read as likelihood of being locked -- the reading the
-> section-6 approval record uses when it derives site normalization from
-> Record's "locks exactly one" -- then that other value has likelihood zero and
-> is therefore unavailable, contradicting the menu `{0,1}` the same rule
-> asserts. On that reading the singleton-support expansion is not admissible on
-> this rule, only the branch-complete one is, and the independence conclusion
-> ("the availability rule does not determine branch completeness") fails rather
-> than being re-scoped. The contrary reading is available and is why this is
-> marked contested rather than false: the memo's reading notes are declared
-> interpretive and non-governing, and the governing sentence alone does not
-> gloss "likelihood" as likelihood-of-being-locked. Under a bare reading the
-> witness survives unchanged. The two readings disagree about a landed
-> conclusion, so this is an owner/audit question, not a repair. Nothing below
-> has been altered.
+> Admissibility revision replaces the availability sentence with: "For each
+> site, the probability distribution over the possibilities is determined by,
+> and varies with, the nearest-neighbor conditions." Availability becomes that
+> distribution's support -- on finite menus, exactly the possibilities of
+> nonzero probability. The witness below is not merely retyped by that
+> revision; it may be foreclosed by it. The witness needs one availability rule
+> to carry **both** expansions. With exactly one recorded neighbor the witness
+> rule gives the menu `{0,1}`, so post-revision both `0` and `1` carry nonzero
+> probability. The singleton-support expansion supplies a successor only for
+> the recorded neighbor's content, so the other value is locked in no
+> continuation. If the distribution is the distribution over which possibility
+> a forming record locks, that other value has probability zero and is
+> therefore unavailable, contradicting the menu `{0,1}` the same rule asserts.
+> On that reading the singleton-support expansion is not admissible on this
+> rule, only the branch-complete one is, and the independence conclusion ("the
+> availability rule does not determine branch completeness") fails rather than
+> being re-scoped.
+>
+> This is marked contested rather than false only because the locking reading,
+> while strongly indicated, is not stated in the governing sentence itself. It
+> is stated in reading note (2) ("the distribution concerns which possibility a
+> forming record locks"), and the reading notes are declared interpretive and
+> non-governing; the section-6 approval record points the same way when it
+> carries site normalization by the term "probability distribution" together
+> with Record's "locks exactly one". Under a reading on which the distribution
+> is over something other than the locked possibility, the witness survives
+> unchanged. Note that the 2026-08-05 refinement from the earlier per-point
+> likelihood wording to the probability-distribution wording narrows that
+> escape rather than widening it, since normalization is now explicit in the
+> governing term. Two readings disagree about a landed conclusion, so this is
+> an owner/audit question, not a repair. Nothing below has been altered.
 
 The runner exhausts all `3^6 = 729` nearest-neighbor patterns over the alphabet
 `{open,0,1}` and all 24 proper cubic rotations. It uses one site-independent

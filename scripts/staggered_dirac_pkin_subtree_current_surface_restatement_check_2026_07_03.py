@@ -32,7 +32,7 @@ EXPECTED_KS_SCOPE = (
 )
 
 VARIATION_CLAUSE = (
-    "the likelihood of each possibility is determined by, and varies with, the "
+    "the probability distribution over the possibilities is determined by, and varies with, the "
     "nearest-neighbor conditions"
 )
 NON_SELECTION_SENTENCE = (

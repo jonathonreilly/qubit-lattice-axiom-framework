@@ -367,7 +367,7 @@ def source_and_documentation_contract() -> None:
     )
     check(
         "F exact availability sentence is live",
-        "likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions" in axioms,
+        "probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions" in axioms,
     )
     check("F live memo says Admissibility is not dynamics", "admissibility is not a dynamics axiom" in axioms)
     check("F live memo withholds transition weights", "supply transition-probability or weight values" in axioms)

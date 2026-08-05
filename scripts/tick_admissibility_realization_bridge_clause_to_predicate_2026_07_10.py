@@ -534,7 +534,7 @@ def main() -> int:
         "lattice translations and proper cubic rotations."
     )
     clause2 = (
-        "For each site, the likelihood of each possibility is determined by, and "
+        "For each site, the probability distribution over the possibilities is determined by, and "
         "varies with, the nearest-neighbor conditions."
     )
     check(

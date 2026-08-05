@@ -78,7 +78,7 @@ def source_contract() -> None:
     check("A note disclaims an axiom proposal", "not an axiom proposal" in note)
     check("A note changes no live surface", "changes no live foundation" in note)
     check("A live memo still names four axioms", all(f"### {name}" in axioms for name in ("Lattice", "Qubit", "Admissibility", "Record")))
-    check("A Admissibility remains a menu rule", "nearest-neighbor admissibility rule" in axioms and "likelihood of each possibility is determined by" in axioms)
+    check("A Admissibility remains a menu rule", "nearest-neighbor admissibility rule" in axioms and "probability distribution over the possibilities is determined by" in axioms)
     check("A live memo explicitly rejects dynamics reading", "Admissibility is not a dynamics axiom." in axioms)
     check("A live Record remains unchanged", "Records form." in axioms and "records are permanent." in axioms)
     check("A registry still has only approved ids", set(registry["canonical_ids"]) == {"minimal_axioms", "scale_reference_primitive", "kinetic_isotropy_primitive", "realized_state_primitive"})

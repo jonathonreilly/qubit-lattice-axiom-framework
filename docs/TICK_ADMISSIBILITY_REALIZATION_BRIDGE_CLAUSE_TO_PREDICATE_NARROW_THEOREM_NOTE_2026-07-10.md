@@ -87,8 +87,8 @@ The second is:
 > **Scope note (2026-08-05, adoption repair).** The Admissibility second
 > sentence quoted above was replaced by owner-approved revision on 2026-08-05.
 > It now reads:
-> "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions."
-> Availability is the likelihood's support. The quotation above is retained as
+> "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions."
+> Availability is the distribution's support. The quotation above is retained as
 > the wording this note consumed when it landed.
 
 The statements above belong to the full `Z^3` framework. The lemma below uses

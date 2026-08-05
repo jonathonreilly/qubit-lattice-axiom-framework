@@ -269,6 +269,17 @@ composite/literature routes add separate operational or theorem inputs.
 All five are **ATTEMPTED** and leave physical registration open rather than
 establishing a no-go.
 
+> **Scope note (2026-08-05, adoption repair).** The clause "Admissibility
+> supplies no probability or menu-selection rule" is pre-revision wording. Under
+> the 2026-08-05 owner-approved revision Admissibility does supply a
+> nearest-neighbor-determined probability distribution over the possibilities,
+> with availability as its support. The menu-selection half of the clause is
+> unaffected, and so is this route's **ATTEMPTED** verdict: the axiom still
+> supplies no grading of the effect menus this note ranges over, and it fixes no
+> distribution values. What changed is that the absence of a probability rule can
+> no longer be asserted outright as a reason; it holds only for the values and
+> for the menu grading, not for the structural fact of the distribution.
+
 ### N2 — wall-independence audit
 
 Surface A has one exact boundary: normalization on the finite paired

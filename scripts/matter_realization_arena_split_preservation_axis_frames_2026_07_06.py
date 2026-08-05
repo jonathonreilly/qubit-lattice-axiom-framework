@@ -249,7 +249,7 @@ def norm_text(s):
 SOURCE_QUOTES = {
     "docs/MINIMAL_AXIOMS_2026-06-29.md": [
         "The full one-site possibility domain has algebraic presentation `M_2(C)`.",
-        "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions.",
+        "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
         "Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration before use as a premise.",
     ],
     "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md": [

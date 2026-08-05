@@ -62,7 +62,7 @@ AXIOM_QUOTES = [
         "under lattice translations and proper cubic rotations."
     ),
     (
-        "For each site, the likelihood of each possibility is determined by, "
+        "For each site, the probability distribution over the possibilities is determined by, "
         "and varies with, the nearest-neighbor conditions."
     ),
     "Records form.",

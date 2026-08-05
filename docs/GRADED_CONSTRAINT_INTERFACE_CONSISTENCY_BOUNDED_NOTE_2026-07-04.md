@@ -50,8 +50,8 @@ From [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
 
 > **Scope note (2026-08-05, adoption repair).** The Admissibility second
 > sentence quoted above was replaced by owner-approved revision on 2026-08-05.
-> It now reads: "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions."
-> Availability is the likelihood's support. The quotation above is retained as
+> It now reads: "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions."
+> Availability is the distribution's support. The quotation above is retained as
 > the wording this note consumed when it landed.
 
 ## Superseded v1 Core Text
@@ -112,17 +112,17 @@ are different interface objects.
 
 > **Scope note (2026-08-05, adoption repair).** The 2026-08-05 owner-approved
 > Admissibility revision makes availability the support of a law-level
-> likelihood rather than a separately supplied primitive set. That does not
+> distribution rather than a separately supplied primitive set. That does not
 > merge the two objects this section holds apart: `w` here is the
 > graded-constraint v2 grading on the full projection lattice, a named
-> conditional premise, and it is not the Admissibility likelihood. Read
+> conditional premise, and it is not the Admissibility distribution. Read
 > post-revision, "availability is binary" is a statement about the support
 > predicate (in/out), not about how availability is supplied; the coexistence
 > result stands for `w` against availability. The zero-available-total
 > boundary likewise remains non-vacuous, because it is a boundary on the
 > available elements' total `w`-weight, and `w` may vanish where the
-> Admissibility likelihood does not. What this note does not address, and what
-> is now open, is the relation between `w` and the Admissibility likelihood --
+> Admissibility distribution does not. What this note does not address, and what
+> is now open, is the relation between `w` and the Admissibility distribution --
 > in particular whether the two are required to share a support. If they were
 > identified, the zero-available-total boundary would become vacuous; nothing
 > in this note or in the revised axiom performs that identification.

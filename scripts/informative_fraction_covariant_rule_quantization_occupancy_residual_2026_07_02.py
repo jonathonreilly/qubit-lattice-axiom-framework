@@ -483,7 +483,7 @@ def run_source_boundary_guards():
 
     dep_markers = (
         ("F dep marker axioms covariance", axioms_text, "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations."),
-        ("F dep marker axioms available-subset clause", axioms_text, "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions."),
+        ("F dep marker axioms available-subset clause", axioms_text, "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions."),
         ("F dep marker axioms no weights", axioms_text, "transition-probability or weight values"),
         ("F dep marker axioms no privileged possibility", axioms_text, "No possibility is privileged."),
         ("F dep marker rigidity normalization", rigidity_text, "no independent scalar-normalization freedom"),

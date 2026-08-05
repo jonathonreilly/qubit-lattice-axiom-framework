@@ -103,7 +103,7 @@ def foundation_contract() -> None:
     check(
         "A Admissibility still carries one fixed covariant nearest-neighbour rule",
         "there is one fixed nearest-neighbor admissibility rule" in axioms
-        and "available possibilities are determined by, and vary with, the nearest-neighbor conditions" in axioms,
+        and "probability distribution over the possibilities is\ndetermined by, and varies with, the nearest-neighbor conditions" in axioms,
     )
 
 

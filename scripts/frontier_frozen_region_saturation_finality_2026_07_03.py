@@ -178,7 +178,7 @@ def quote_guards():
     rec = ("When present, a record locks exactly one admissible local "
            "possibility. A site never carries more than one record; records "
            "are permanent.")   # CURRENT landed Record section (7950d9202c + 50f0db6187)
-    adm = ("the likelihood of each possibility is determined by, and varies "
+    adm = ("the probability distribution over the possibilities is determined by, and varies "
            "with, the nearest-neighbor conditions")
     stt = "A state is a configuration of records."
     lat = ("Physical sites are the points of the cubic lattice `Z^3`, with "

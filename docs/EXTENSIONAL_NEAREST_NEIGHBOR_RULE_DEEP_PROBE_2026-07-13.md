@@ -84,17 +84,17 @@ This is a lower-bound witness, not an exhaustive count for the full
 
 > **Scope note (2026-08-05, adoption repair).** The Admissibility second
 > sentence was replaced on 2026-08-05 by owner-approved revision: for each
-> site, the likelihood of each possibility is determined by, and varies with,
-> the nearest-neighbor conditions, with availability the likelihood's support.
-> Under that revision an extensional rule is a table of likelihoods, and the
+> site, the probability distribution over the possibilities is determined by, and varies with,
+> the nearest-neighbor conditions, with availability the distribution's support.
+> Under that revision an extensional rule is a table of probability distributions, and the
 > table space is continuous rather than finite. The `3^24` and `3^24 - 1`
 > counts above are counts of covariant label-equivariant **support** tables.
 > They remain correct as such, and the non-entailment conclusions they witness
 > are unaffected -- a lower-bound witness survives a refinement of the object
 > being counted. What is no longer available from these counts is any claim
-> that they enumerate the axiom's rule content; the likelihood carries strictly
+> that they enumerate the axiom's rule content; the distribution carries strictly
 > more. Whether the label-equivariance and covariance arguments transfer to the
-> likelihood, where the constraint is `mu` composed with `g` equals `mu` rather
+> distribution, where the constraint is `mu` composed with `g` equals `mu` rather
 > than invariance of a set, is open and not settled here.
 
 ### Basis-free maximum-support schema

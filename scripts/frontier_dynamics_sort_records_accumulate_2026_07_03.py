@@ -124,7 +124,7 @@ SENTENCES = [
     # Admissibility / Local Constraint
     ("A1", "There is one fixed nearest-neighbor admissibility rule, covariant under "
            "lattice translations and proper cubic rotations."),
-    ("A2", "For each site, the likelihood of each possibility is determined by, and "
+    ("A2", "For each site, the probability distribution over the possibilities is determined by, and "
            "varies with, the nearest-neighbor conditions."),
     # Record / Fixed Reality
     ("R1", "When present, a record locks exactly one admissible local possibility."),

@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+CYCLE 943 blockQ15 INDEPENDENT CHECK  elapsed=332.82s budget=900s
+science_digest pass1=9915189791141ee7d4982f225a89394cf783cdf443091b1fcb5532e59b4260ea
+science_digest pass2=9915189791141ee7d4982f225a89394cf783cdf443091b1fcb5532e59b4260ea  identical=True
+A_PINS                     pass=True
+B_SUBSTRATE                pass=True
+C_LANE_INDEPENDENCE        pass=True
+D_COMMUTATION              pass=True
+E_ENDPOINT_GATES           pass=True
+F_DIVERGENCE               pass=True
+G_LOCKS                    pass=True
+H_THETA_HUNT               pass=True
+I_NON_EXISTENCE            pass=True
+J_SYMMETRIC_ENCODING       pass=True
+K_AXIOMS                   pass=True
+L_940_FAMILY               pass=True
+M_PARAMETRIC_FIREWALL      pass=True
+N_TEETH                    pass=True
+O_DOUBLE_RUN               pass=True
+P_RUNTIME                  pass=True
+-- claim verdicts --
+C1_940s_family_is_relabelling_only               SURVIVES
+C2_the_commutation_IFF                           REFUTED TWICE.  The 'if' half is a theorem and the downstream corollary survives; the 'only if' half is FALSE, and the wire census is an artefact.
+C3_the_six_endpoint_TOF_patterns                 SURVIVES
+C3b_the_source_pointer_pair                      SURVIVES
+C4_divergence_is_eight_wires_one_lane            SURVIVES AS AN UPPER BOUND; THE PER-ATOM READING IS REFUTED
+C5_wire_identities_and_the_orientation_split     SURVIVES
+C6_the_theta_table                               TABLE REPRODUCED VALUE FOR VALUE; THE NEGATIVE'S SCOPE IS REFUTED
+C_PROSE_the_primarys_timing_sentence             ONE CLAUSE IS FALSE, TWO ARE LOOSE GLOSSES
+C7_locks_events_items                            SURVIVES
+C8_the_two_non_existence_routes                  BOTH ROUTES ARE CLEAN; THE DECLARED SCOPE LIMIT IS UNDERSTATED
+C9_A2_is_gauge                                   SURVIVES
+C10_the_axioms_do_not_orient_the_menu            SURVIVES; THE PRIMARY'S SUPPORTING ARGUMENT IS OVERREACHING
+-- teeth --
+  fired=True  T1_planted_chi_on_a_control_wire_must_not_commute
+  fired=True  T2_POSITIVE_CONTROL_untouched_wire_must_commute
+  fired=True  T3_planted_extra_divergent_wire_is_seen_by_the_support_scanner
+  fired=True  T4_tampered_lock_boundary_is_rejected
+  fired=True  T5_COCHOICE_at_a_LIVE_wire_breaks_the_battery
+  fired=True  T6_parametric_firewall_catches_an_unfenced_weight
+  fired=True  T7_tampered_pin_is_rejected
+  fired=True  T8_a_NON_phase_matched_collision_is_rejected_as_a_witness
+  fired=True  T9_planted_surviving_Theta_is_rejected_by_the_search
+  fired=True  T10_both_controls_of_one_TOF_do_not_cancel
+  fired=True  T11_planted_affine_defect_makes_the_fit_INCONSISTENT
+  fired=True  T12_a_live_wire_claimed_inert_is_rejected
+  fired=True  T13_a_planted_cross_lane_shift_is_caught
+  fired=True  T14_tampered_source_pointer_pair_is_rejected
+receipt -> outputs/prerecord_swap_independent_check_cycle943_receipt_2026_07_28.json
+===== end runner cache =====

@@ -1,0 +1,6049 @@
+{
+ "VERDICT": "C1 SURVIVES (with a loose source description corrected).  C2 IS REFUTED TWICE -- the IFF is only an IF, and the wire census counts a phantom -- while its load-bearing corollary survives.  C3, C3b, C5, C7, C9 SURVIVE.  C4 SURVIVES as an upper bound; its per-atom reading is REFUTED.  C6's table reproduces value for value but its NEGATIVE'S SCOPE is REFUTED by a surviving affine Theta.  C8's two routes are clean and kill exactly the atoms claimed, but its declared scope limit is UNDERSTATED.  C10 SURVIVES; the primary's law-invariance argument is OVERREACHING.",
+ "all_certificates_pass": true,
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-expansion-20260802/blockQ15",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "A_PINS": {
+   "AUDIT_INPUT_PATHS": [
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle936_choice_substrate_2026_07_28.py",
+    "outputs/choice_substrate_cycle936_receipt_2026_07_28.json",
+    "outputs/choice_substrate_block_cycle936_ship_receipt_2026_07_28.json",
+    "docs/CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "scripts/frontier_cycle940_symmetric_weights_2026_07_28.py",
+    "outputs/symmetric_weights_cycle940_receipt_2026_07_28.json",
+    "outputs/symmetric_weights_block_cycle940_ship_receipt_2026_07_28.json",
+    "docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json",
+    "outputs/law_relaxation_cycle925_receipt_2026_07_28.json",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+   ],
+   "THE_STRANDED_ENVARIANCE_NOTE": {
+    "blob_verifies": true,
+    "git_blob": "64b24361f2237d01f079e16b306b5d04e01de7c2",
+    "retrieval": "git -C <root> cat-file blob <sha>",
+    "retrieved_bytes": 9585,
+    "sha256": "21c22981929f0304efbe15459fc2a9c43c3c4d2af2a69f06bd22d8efcfc2ccfd"
+   },
+   "blocked_modules_loaded": [],
+   "certificate": "A_PINS",
+   "cross_checks_against_the_pinned_receipts": [
+    {
+     "cross_check": "c936_runner_self_sha256",
+     "pass": true,
+     "pinned": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d",
+     "value": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d"
+    },
+    {
+     "cross_check": "c940_runner_self_sha256",
+     "pass": true,
+     "pinned": "7c7400984e573dc446330f20423cce5045138682781716ed13ba89bfe877e124",
+     "value": "7c7400984e573dc446330f20423cce5045138682781716ed13ba89bfe877e124"
+    },
+    {
+     "cross_check": "ship936::CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md::sha256",
+     "pass": true,
+     "pinned": "6cdec178602e936a07a86c43627b431527a5d328c2b269d0edd594d245831eac",
+     "value": "6cdec178602e936a07a86c43627b431527a5d328c2b269d0edd594d245831eac"
+    },
+    {
+     "cross_check": "ship936::CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md::git_blob",
+     "pass": true,
+     "pinned": "ffc0e6d1c3527ef75286abc0e50de0a3a3588f53",
+     "value": "ffc0e6d1c3527ef75286abc0e50de0a3a3588f53"
+    },
+    {
+     "cross_check": "ship936::choice_substrate_cycle936_receipt_2026_07_28.json::sha256",
+     "pass": true,
+     "pinned": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028",
+     "value": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028"
+    },
+    {
+     "cross_check": "ship936::choice_substrate_cycle936_receipt_2026_07_28.json::git_blob",
+     "pass": true,
+     "pinned": "d7b786fccc0435d139339c141dbad75c9f8d799b",
+     "value": "d7b786fccc0435d139339c141dbad75c9f8d799b"
+    },
+    {
+     "cross_check": "ship940::R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md::sha256",
+     "pass": true,
+     "pinned": "a89185085032947c4fcc34fd99b1507307f70cbaf82dd82e569a37562114ef11",
+     "value": "a89185085032947c4fcc34fd99b1507307f70cbaf82dd82e569a37562114ef11"
+    },
+    {
+     "cross_check": "ship940::R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md::git_blob",
+     "pass": true,
+     "pinned": "69e712e1b8f9ecee3488f8698cfe577fac415c07",
+     "value": "69e712e1b8f9ecee3488f8698cfe577fac415c07"
+    },
+    {
+     "cross_check": "ship940::symmetric_weights_cycle940_receipt_2026_07_28.json::sha256",
+     "pass": true,
+     "pinned": "08888bf454a7f3c803f5c373d7688d67a9f0d974259f3e455c139d6c78e288cf",
+     "value": "08888bf454a7f3c803f5c373d7688d67a9f0d974259f3e455c139d6c78e288cf"
+    },
+    {
+     "cross_check": "ship940::symmetric_weights_cycle940_receipt_2026_07_28.json::git_blob",
+     "pass": true,
+     "pinned": "a24af8e08cc090b39802265d8b8d5ea3d1495d53",
+     "value": "a24af8e08cc090b39802265d8b8d5ea3d1495d53"
+    }
+   ],
+   "cross_checks_pass": true,
+   "existing_worktree_relative": true,
+   "firewall_hits": [],
+   "git_blobs_all_match": true,
+   "modification_mechanism": "READ ONLY.  Nothing in this checker writes to any file the primary owns.  The Cycle-936 substrate is AST-lifted by a node-by-node replay written here; the primary's runner is never read, imported or lifted.",
+   "pass": true,
+   "rows": {
+    "docs/CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "bytes": 12537,
+     "git_blob": "ffc0e6d1c3527ef75286abc0e50de0a3a3588f53",
+     "sha256": "6cdec178602e936a07a86c43627b431527a5d328c2b269d0edd594d245831eac"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+     "bytes": 8846,
+     "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+     "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "bytes": 11042,
+     "git_blob": "69e712e1b8f9ecee3488f8698cfe577fac415c07",
+     "sha256": "a89185085032947c4fcc34fd99b1507307f70cbaf82dd82e569a37562114ef11"
+    },
+    "outputs/choice_substrate_block_cycle936_ship_receipt_2026_07_28.json": {
+     "bytes": 4657,
+     "git_blob": "1421484631b06fc203405c0ffab3a715c979cbed",
+     "sha256": "9da5a559f4e87940560aaf75daaaa4332a228cc5ec2a7b50bf744a7cbb164f0a"
+    },
+    "outputs/choice_substrate_cycle936_receipt_2026_07_28.json": {
+     "bytes": 328031,
+     "git_blob": "d7b786fccc0435d139339c141dbad75c9f8d799b",
+     "sha256": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028"
+    },
+    "outputs/law_relaxation_cycle925_receipt_2026_07_28.json": {
+     "bytes": 364478,
+     "git_blob": "fed1b28e9e5cfe731a541645dce705541d69c967",
+     "sha256": "f4fabe50ed8b775f2f1288380824ae04f0129f4f136e3b338bafd05647031757"
+    },
+    "outputs/prerecord_swap_cycle943_receipt_2026_07_28.json": {
+     "bytes": 109130,
+     "git_blob": "cf5087b94825cd2b01a6e0f57b7674e52845bb3c",
+     "sha256": "fcb47534efdb0618ee1446574a9a4ecd442054a7b4c2f56f9d9c3463d96205cf"
+    },
+    "outputs/symmetric_weights_block_cycle940_ship_receipt_2026_07_28.json": {
+     "bytes": 5045,
+     "git_blob": "fa643ec30de44df8111c295225893ba7006d12a1",
+     "sha256": "83c90abbd2d4eba1715cd9ec7c9b25353a397e11ae6a3392d7087250e64f218f"
+    },
+    "outputs/symmetric_weights_cycle940_receipt_2026_07_28.json": {
+     "bytes": 81823,
+     "git_blob": "a24af8e08cc090b39802265d8b8d5ea3d1495d53",
+     "sha256": "08888bf454a7f3c803f5c373d7688d67a9f0d974259f3e455c139d6c78e288cf"
+    },
+    "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json": {
+     "bytes": 695475,
+     "git_blob": "5704619b21d9a3af312956580355d6dd5a303f53",
+     "sha256": "849ad2bbb4abc8c9eda5541246784e2bdb69feaf423aac7c6f3aff83f6062bbd"
+    },
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": {
+     "bytes": 26046,
+     "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+     "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+    },
+    "scripts/frontier_cycle936_choice_substrate_2026_07_28.py": {
+     "bytes": 153066,
+     "git_blob": "75cb05ffb9456691747a67ed5227f3db589f95c4",
+     "sha256": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d"
+    },
+    "scripts/frontier_cycle940_symmetric_weights_2026_07_28.py": {
+     "bytes": 105256,
+     "git_blob": "ae09b548aff71354b9942904bc0b2824d7e755ac",
+     "sha256": "7c7400984e573dc446330f20423cce5045138682781716ed13ba89bfe877e124"
+    }
+   },
+   "sha256_all_match": true
+  },
+  "B_SUBSTRATE": {
+   "certificate": "B_SUBSTRATE_RESTRICTION_GATES",
+   "lift_replay": {
+    "names_replayed": 102,
+    "nodes_skipped": []
+   },
+   "pass": true,
+   "passed": 19,
+   "rows": [
+    {
+     "gate": "stations",
+     "pass": true,
+     "pinned": 11,
+     "value": 11
+    },
+    {
+     "gate": "census_size_n",
+     "pass": true,
+     "pinned": 748,
+     "value": 748
+    },
+    {
+     "gate": "column_count",
+     "pass": true,
+     "pinned": 5815,
+     "value": 5815
+    },
+    {
+     "gate": "lane_bits_per_column",
+     "pass": true,
+     "pinned": 749,
+     "value": 749
+    },
+    {
+     "gate": "endpoint_wires",
+     "pass": true,
+     "pinned": [
+      1,
+      6,
+      40
+     ],
+     "value": [
+      1,
+      6,
+      40
+     ]
+    },
+    {
+     "gate": "REC_A",
+     "pass": true,
+     "pinned": 123,
+     "value": 123
+    },
+    {
+     "gate": "BANK_BASES_head",
+     "pass": true,
+     "pinned": [
+      41,
+      172,
+      303
+     ],
+     "value": [
+      41,
+      172,
+      303
+     ]
+    },
+    {
+     "gate": "base_compiled_gate_total",
+     "pass": true,
+     "pinned": 34166,
+     "value": 34166
+    },
+    {
+     "gate": "M_A_compiled_gate_total",
+     "pass": true,
+     "pinned": 34188,
+     "value": 34188
+    },
+    {
+     "gate": "TREE_B",
+     "pass": true,
+     "pinned": 1925,
+     "value": 1925
+    },
+    {
+     "gate": "TREE_ORBITS",
+     "pass": true,
+     "pinned": 175,
+     "value": 175
+    },
+    {
+     "gate": "CHOICE_ATOMS",
+     "pass": true,
+     "pinned": [
+      [
+       300,
+       715
+      ],
+      [
+       700,
+       475
+      ],
+      [
+       700,
+       540
+      ],
+      [
+       702,
+       254
+      ],
+      [
+       702,
+       450
+      ],
+      [
+       702,
+       715
+      ],
+      [
+       1100,
+       558
+      ],
+      [
+       1100,
+       715
+      ]
+     ],
+     "value": [
+      [
+       300,
+       715
+      ],
+      [
+       700,
+       475
+      ],
+      [
+       700,
+       540
+      ],
+      [
+       702,
+       254
+      ],
+      [
+       702,
+       450
+      ],
+      [
+       702,
+       715
+      ],
+      [
+       1100,
+       558
+      ],
+      [
+       1100,
+       715
+      ]
+     ]
+    },
+    {
+     "gate": "choice_occasions",
+     "pass": true,
+     "pinned": [
+      300,
+      700,
+      702,
+      1100
+     ],
+     "value": [
+      300,
+      700,
+      702,
+      1100
+     ]
+    },
+    {
+     "gate": "schedule_builder_reproduces_the_pinned_compiler",
+     "pass": true,
+     "pinned": "42e64fe0a53e13f9705be8ca60006b97650dc7cbc985964cd85ea143755420ce",
+     "value": "42e64fe0a53e13f9705be8ca60006b97650dc7cbc985964cd85ea143755420ce"
+    },
+    {
+     "gate": "c936_receipt_all_certificates_pass",
+     "pass": true,
+     "pinned": true,
+     "value": true
+    },
+    {
+     "gate": "c940_receipt_all_certificates_pass",
+     "pass": true,
+     "pinned": true,
+     "value": true
+    },
+    {
+     "gate": "wire_identities",
+     "pass": true,
+     "pinned": {
+      "BANK0.DIRECTION_OK": 131,
+      "BANK0.POINTER": 123,
+      "BANK0.U_TO_V": 124,
+      "BANK0.V_TO_U": 125,
+      "BANK1.U_TO_V": 255,
+      "BANK1.V_TO_U": 256,
+      "BANK1.cell0.orientation": 202,
+      "BANK1.cell1.orientation": 236,
+      "SOURCE_POINTER": 40
+     },
+     "value": {
+      "BANK0.DIRECTION_OK": 131,
+      "BANK0.POINTER": 123,
+      "BANK0.U_TO_V": 124,
+      "BANK0.V_TO_U": 125,
+      "BANK1.U_TO_V": 255,
+      "BANK1.V_TO_U": 256,
+      "BANK1.cell0.orientation": 202,
+      "BANK1.cell1.orientation": 236,
+      "SOURCE_POINTER": 40
+     }
+    },
+    {
+     "gate": "cell_orientation_offset_is_34i_plus_30",
+     "pass": true,
+     "pinned": [
+      30,
+      64
+     ],
+     "value": [
+      30,
+      64
+     ]
+    },
+    {
+     "gate": "c936_tree_structure_keys",
+     "pass": true,
+     "pinned": {
+      "branch_nodes": 75,
+      "depth_in_choice_occasions": 4,
+      "distinct_leaf_observables": 64,
+      "leaves": 256,
+      "leaves_enumerated": 256
+     },
+     "value": {
+      "branch_nodes": 75,
+      "depth_in_choice_occasions": 4,
+      "distinct_leaf_observables": 64,
+      "leaves": 256,
+      "leaves_enumerated": 256
+     }
+    }
+   ],
+   "total": 19,
+   "wire_names": {
+    "1": "LEFT_ENDPOINT",
+    "123": "BANK0.POINTER",
+    "124": "BANK0.U_TO_V",
+    "125": "BANK0.V_TO_U",
+    "131": "BANK0.DIRECTION_OK",
+    "202": "BANK1.cell0.orientation",
+    "236": "BANK1.cell1.orientation",
+    "255": "BANK1.U_TO_V",
+    "256": "BANK1.V_TO_U",
+    "40": "SOURCE_POINTER",
+    "6": "RIGHT_ENDPOINT"
+   }
+  },
+  "C_LANE_INDEPENDENCE": {
+   "AST_grammar_is_bitwise_only": true,
+   "READING": "every compiled gate is X / CNOT / TOF with a compile-time lane mask, so each lane bit evolves under its own copy of the same Boolean circuit and no lane can read another.  A divergence seeded in one lane is therefore CONFINED to that lane as a THEOREM, not as a measurement -- and the measurement below agrees.",
+   "SEMANTIC_LANE_INDEPENDENCE": true,
+   "certificate": "C_BITWISE_LANE_INDEPENDENCE",
+   "cross_lane_leakage_found": 0,
+   "emitted_AST_node_types_outside_the_bitwise_grammar": {},
+   "every_chunk_is_a_bijection": true,
+   "gates_whose_target_is_also_a_control": 0,
+   "kinds_present_in_the_compiled_cycle": [
+    0,
+    1,
+    2
+   ],
+   "lane_subsets_probed": 3,
+   "no_SHIFT_gate_anywhere": true,
+   "only_X_CNOT_TOF": true,
+   "pass": true,
+   "planted_shift_leak_is_caught_by_this_instrument": true
+  },
+  "D_COMMUTATION": {
+   "BOTH_CONTROLS_OF_ONE_TOF": {
+    "READING": "at c[a] = c[b] = 0 the residue of a double control flip is mask & chi_a & chi_b, which is the mask itself.  The two flips do NOT cancel.",
+    "cancels": false,
+    "commutes": false,
+    "gate": [
+     2,
+     40,
+     6,
+     124
+    ]
+   },
+   "COMMUTANT": "CTRLMASK[w] is the FULL 749-lane universe for EVERY one of the touched wires.  The primary reads off from that a causally trivial commutant.  The MEASURED commutant is much larger: all 5270 untouched wires PLUS about three hundred touched ones whose control incidences sit inside palindromic compute / uncompute ladders.  It is still causally trivial FOR THE MENU: no endpoint and no divergence-support wire is in it.",
+   "CTRLMASK_left_is_full": true,
+   "CTRLMASK_right_is_full": true,
+   "OVER_EXCLUSION_HUNT_on_the_real_trajectory": [
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 1
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 6
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 124
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 125
+    },
+    {
+     "commutes_on_the_real_trajectory": true,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": null,
+     "wire": 202
+    },
+    {
+     "commutes_on_the_real_trajectory": true,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": null,
+     "wire": 236
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 255
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 256
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 131
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 302,
+     "wire": 132
+    }
+   ],
+   "POSITIVE_CONTROL_untouched_wire_flips_commute": true,
+   "STATEMENT_UNDER_TEST": "X_chi commutes with the compiled law IFF chi[w] & CTRLMASK[w] == 0 for every wire w",
+   "THE_IFF_IS_REFUTED": {
+    "HONEST_LIMIT": "commutation for those wires is MEASURED, not proved: a closed-form replacement criterion is not constructed here.  The count falls monotonically as trials are added (367 at one trial, 334 at eight, 309 at sixty-four) and appears to settle just above three hundred.  Non-commuting wires fail on the FIRST trial in every case observed, so the surviving set is not an artefact of weak testing.",
+    "MECHANISM": {
+     "CTRLMASK_popcount": 749,
+     "MECHANISM": "the compiled macro is a compute / uncompute LADDER: the gate in which this wire is a control occurs twice, with identical operands and identical mask, and the whole block between the two occurrences is a palindrome.  The perturbation runs up the ladder and is undone coming back down, so the flip commutes with the full cycle even though the wire is a control on every lane.",
+     "control_incidences_in_chunk_0": [
+      56,
+      110
+     ],
+     "criterion_says_it_cannot_commute": true,
+     "the_block_between_them_is_a_PALINDROME": true,
+     "the_two_gates_are_identical": true,
+     "wire": 47
+    },
+    "NECESSITY_IS_FALSE": "commutation does NOT imply the criterion.  Hundreds of wires whose CTRLMASK is the full lane universe carry a commuting full-lane flip.  The primary calls its condition 'a COMPLETE characterisation, not a search'.  It is not: it is a SUFFICIENT condition that over-excludes by a factor of well over a hundred.",
+    "SUFFICIENCY_HOLDS": "chi[w] & CTRLMASK[w] == 0 for all w IMPLIES commutation -- that direction is a gate-by-gate theorem and no counterexample exists here.",
+    "engine_cross_checked_against_brute_force_semantics": true,
+    "every_one_of_them_is_EXCLUDED_by_the_criterion": true,
+    "independent_random_states_per_wire": 47936,
+    "protocol": "exact difference propagation for all 545 touched wires at once, against 64 independent full-width pseudo-random column vectors; each column carries 749 independent lanes, so each wire is tested on 47936 independent random states.",
+    "the_excluded_but_commuting_wires": [
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     91,
+     92,
+     139,
+     140,
+     141,
+     142,
+     143,
+     144,
+     145,
+     146,
+     147,
+     148,
+     149,
+     150,
+     151,
+     152,
+     153,
+     178,
+     179,
+     180,
+     181,
+     182,
+     183,
+     184,
+     185,
+     186,
+     187,
+     188,
+     189,
+     212,
+     213,
+     214,
+     215,
+     216,
+     217,
+     218,
+     219,
+     220,
+     221,
+     222,
+     223,
+     270,
+     271,
+     272,
+     273,
+     274,
+     275,
+     276,
+     277,
+     278,
+     279,
+     280,
+     281,
+     282,
+     283,
+     284,
+     285,
+     286,
+     287,
+     1614,
+     1615,
+     1616,
+     1617,
+     1618,
+     1619,
+     1620,
+     1621,
+     1622,
+     1623,
+     1624,
+     1625,
+     1626,
+     1627,
+     1628,
+     1629,
+     1630,
+     1631,
+     1632,
+     1633,
+     1634,
+     1635,
+     1636,
+     1637,
+     1638,
+     1639,
+     1640,
+     1641,
+     1642,
+     1643,
+     1644,
+     1645,
+     1646,
+     1647,
+     1648,
+     1649,
+     1650,
+     1651,
+     1652,
+     1653,
+     1654,
+     1655,
+     1656,
+     1657,
+     1658,
+     1659,
+     1660,
+     1661,
+     1662,
+     1663,
+     1664,
+     1665,
+     1666,
+     1667,
+     1668,
+     1669,
+     1670,
+     1671,
+     1672,
+     1673,
+     1674,
+     1675,
+     1676,
+     1677,
+     1678,
+     1679,
+     1680,
+     1681,
+     1682,
+     1683,
+     1684,
+     1685,
+     1686,
+     1687,
+     1688,
+     1689,
+     1690,
+     1691,
+     1692,
+     1693,
+     1694,
+     1695,
+     1696,
+     1697,
+     1698,
+     1699,
+     1700,
+     1701,
+     1702,
+     1703,
+     1704,
+     1705,
+     1706,
+     1707,
+     1708,
+     1709,
+     1710,
+     1711,
+     1712,
+     1713,
+     1714,
+     1715,
+     1716,
+     1717,
+     1718,
+     1719,
+     1720,
+     1721,
+     1722,
+     1723,
+     1724,
+     1725,
+     1726,
+     1727,
+     1728,
+     1729,
+     1730,
+     1731,
+     1732,
+     1733,
+     1734,
+     1735,
+     1736,
+     1737,
+     1738,
+     1739,
+     1740,
+     1741,
+     1742,
+     1743,
+     1744,
+     1745,
+     1746,
+     1747,
+     1748,
+     1749,
+     1750,
+     1751,
+     1767,
+     1768,
+     1769,
+     1770,
+     1771,
+     1772,
+     1773,
+     1774,
+     1775,
+     1776,
+     1777,
+     1778,
+     1779,
+     1780,
+     1805,
+     1806,
+     1807,
+     1808,
+     1809,
+     1810,
+     1811,
+     1812,
+     1813,
+     1814,
+     1815,
+     1816,
+     1817,
+     1818,
+     1819,
+     1820,
+     1821,
+     1822,
+     1823,
+     1824,
+     1825,
+     1826,
+     1827,
+     1828,
+     1829,
+     1830,
+     1831,
+     1832,
+     1833,
+     1834,
+     1835,
+     1836,
+     1837,
+     1838,
+     1839,
+     1840,
+     1841,
+     1842,
+     1843,
+     1844,
+     1845,
+     1846,
+     1847,
+     1848,
+     1849,
+     1850,
+     1851,
+     1852,
+     1853,
+     1854,
+     1855,
+     1856,
+     1857,
+     1858,
+     1859,
+     1860,
+     1861,
+     1862,
+     1863,
+     1864,
+     1865,
+     1866,
+     1867,
+     1868,
+     1869,
+     1870,
+     1871,
+     1872,
+     1873,
+     1874,
+     1875,
+     1876,
+     1877,
+     1878,
+     1879,
+     1880,
+     1881,
+     1882,
+     1884
+    ],
+    "trials": 64,
+    "wires_whose_FULL_LANE_FLIP_COMMUTES_with_the_whole_cycle": 309
+   },
+   "THE_LOAD_BEARING_COROLLARY_SURVIVES": {
+    "THE_ACTUAL_MENU_SWAP_FLIP_COMMUTES": false,
+    "any_divergence_support_wire_commutes": [],
+    "left_endpoint_flip_commutes": false,
+    "reading": "neither endpoint, and no wire of the divergence support, is in the commuting set, and the actual menu-swap flip (both endpoints, the site's own lane) does NOT commute.  So the primary's downstream conclusion is untouched by the refutation of its characterisation.",
+    "right_endpoint_flip_commutes": false
+   },
+   "certificate": "D_COMMUTATION_THEOREM",
+   "controls": 545,
+   "controls_whose_CTRLMASK_is_the_FULL_lane_universe": 545,
+   "criterion_and_semantics_disagreements": 0,
+   "exhaustive_single_wire_disagreements": [
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    1614,
+    1615,
+    1616,
+    1617,
+    1618,
+    1619,
+    1620,
+    1621,
+    1622,
+    1623,
+    1624,
+    1625,
+    1626,
+    1627,
+    1628,
+    1629,
+    1630,
+    1631,
+    1632,
+    1633,
+    1634,
+    1635,
+    1636,
+    1637,
+    1638,
+    1639,
+    1640,
+    1641,
+    1642,
+    1643,
+    1644,
+    1645,
+    1646,
+    1647,
+    1648,
+    1649,
+    1650,
+    1651,
+    1652,
+    1653,
+    1654,
+    1655,
+    1656,
+    1657,
+    1658,
+    1659,
+    1660,
+    1661,
+    1662,
+    1663,
+    1664,
+    1665,
+    1666,
+    1667,
+    1668,
+    1669,
+    1670,
+    1671,
+    1672,
+    1673,
+    1674,
+    1675,
+    1676,
+    1677,
+    1678,
+    1679,
+    1680,
+    1681,
+    1682,
+    1683,
+    1684,
+    1685,
+    1686,
+    1687,
+    1688,
+    1689,
+    1690,
+    1691,
+    1692,
+    1693,
+    1694,
+    1695,
+    1696,
+    1697,
+    1698,
+    1699,
+    1700,
+    1701,
+    1702,
+    1703,
+    1704,
+    1705,
+    1706,
+    1707,
+    1708,
+    1709,
+    1710,
+    1711,
+    1712,
+    1713,
+    1714,
+    1715,
+    1716,
+    1717,
+    1718,
+    1719,
+    1720,
+    1721,
+    1722,
+    1723,
+    1724,
+    1725,
+    1726,
+    1727,
+    1728,
+    1729,
+    1730,
+    1731,
+    1732,
+    1733,
+    1734,
+    1735,
+    1736,
+    1737,
+    1738,
+    1739,
+    1740,
+    1741,
+    1742,
+    1743,
+    1744,
+    1745,
+    1746,
+    1747,
+    1748,
+    1749,
+    1750,
+    1751,
+    1767,
+    1768,
+    1769,
+    1770,
+    1771,
+    1772,
+    1773,
+    1774,
+    1775,
+    1776,
+    1777,
+    1778,
+    1779,
+    1780,
+    1805,
+    1806,
+    1807,
+    1808,
+    1809,
+    1810,
+    1811,
+    1812,
+    1813,
+    1814,
+    1815,
+    1816,
+    1817,
+    1818,
+    1819,
+    1820,
+    1821,
+    1822,
+    1823,
+    1824,
+    1825,
+    1826,
+    1827,
+    1828,
+    1829,
+    1830,
+    1831,
+    1832,
+    1833,
+    1834,
+    1835,
+    1836,
+    1837,
+    1838,
+    1839,
+    1840,
+    1841,
+    1842,
+    1843,
+    1844,
+    1845,
+    1846,
+    1847,
+    1848,
+    1849,
+    1850,
+    1851,
+    1852,
+    1853,
+    1854,
+    1855,
+    1856,
+    1857,
+    1858,
+    1859,
+    1860,
+    1861,
+    1862,
+    1863,
+    1864,
+    1865,
+    1866,
+    1867,
+    1868,
+    1869,
+    1870,
+    1871,
+    1872,
+    1873,
+    1874,
+    1875,
+    1876,
+    1877,
+    1878,
+    1879,
+    1880,
+    1881,
+    1882,
+    1884
+   ],
+   "exhaustive_wires_tested": 545,
+   "pass": true,
+   "per_F_commutation_table": [
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 1",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 1
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 6",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 6
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 40",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 40
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 41",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 41
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 42",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 42
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 43",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 43
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 123",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 123
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 124",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 124
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 125",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 125
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 131",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 131
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 202",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 202
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 236",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 236
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 255",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 255
+    },
+    {
+     "CTRLMASK_popcount": 749,
+     "agree": true,
+     "chi": "full flip on wire 256",
+     "criterion_says_commutes": false,
+     "semantics_says_commutes": false,
+     "wire": 256
+    }
+   ],
+   "targets": 537,
+   "the_naive_union_minus_the_kind_dispatch": [
+    0
+   ],
+   "wires_that_are_never_a_control": [],
+   "wires_touched_BY_KIND_DISPATCH": 545,
+   "wires_touched_by_the_naive_union_of_a_b_c3": 546
+  },
+  "E_ENDPOINT_GATES": {
+   "C3b_SOURCE_POINTER_PAIRS": {
+    "EMBEDDED_IN_THE_FULL_CHUNK_the_flip_preserves_c40_on_menu": true,
+    "EMBEDDED_off_menu_the_flip_also_preserves_c40": true,
+    "ORDER_ANALYSIS": "the pair sits at the very END of every compiled chunk (indices len-3, len-2 of the station macro), so every reader of the source pointer in that chunk -- the gates targeting 123, 124, 125 and 132 -- reads the value from BEFORE the pair, never the value between the two gates.  The 'net contribution' reading is therefore not spoiled by the earlier readers: they are upstream of the write, not inside it.",
+    "all_adjacent": true,
+    "all_share_the_mask": true,
+    "all_share_the_other_control": true,
+    "malformed": [],
+    "net_contribution_is_ctrl_AND_mask_AND_LEFT_XOR_RIGHT": true,
+    "no_reader_of_the_source_pointer_between_them": true,
+    "nothing_between_them": true,
+    "pairs_found": 11,
+    "readers_of_the_source_pointer_AFTER_the_pair_per_chunk": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "readers_of_the_source_pointer_BEFORE_the_pair_per_chunk": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "rows": [
+     {
+      "adjacent": true,
+      "chunk": 0,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 1,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 2,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 3,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 4,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 5,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 6,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 7,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 8,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 9,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     },
+     {
+      "adjacent": true,
+      "chunk": 10,
+      "indices": [
+       3105,
+       3106
+      ],
+      "one_reads_LEFT_one_reads_RIGHT": true,
+      "readers_of_the_source_pointer_between": [],
+      "shared_mask": true,
+      "shared_other_control": 131,
+      "well_formed": true,
+      "wires_written_between": []
+     }
+    ]
+   },
+   "certificate": "E_ENDPOINT_CONTROL_GATES",
+   "endpoint_is_a_CNOT_control_anywhere": 0,
+   "pass": true,
+   "pattern_count": 6,
+   "six_TOF_patterns": {
+    "[131, 1, 40]": 11,
+    "[131, 6, 40]": 11,
+    "[132, 1, 125]": 11,
+    "[132, 6, 124]": 11,
+    "[40, 1, 125]": 11,
+    "[40, 6, 124]": 11
+   },
+   "targets_are_all_in_global_dirty": true,
+   "the_only_targets": [
+    40,
+    124,
+    125
+   ],
+   "total_gates_per_compiled_cycle": 66
+  },
+  "F_DIVERGENCE": {
+   "PER_ATOM_SUPPORT_IS_NOT_ALWAYS_EIGHT": [
+    4,
+    6,
+    8
+   ],
+   "READING": "the eight-wire figure is a UNION over the eight atoms, not a per-atom fact: two atoms move four wires, one moves six, five move eight.  The claim 'the branches differ only on eight wires' is true as an upper bound and is reported here as one.",
+   "UNION_SUPPORT_NAMES": [
+    "LEFT_ENDPOINT",
+    "RIGHT_ENDPOINT",
+    "BANK0.U_TO_V",
+    "BANK0.V_TO_U",
+    "BANK1.cell0.orientation",
+    "BANK1.cell1.orientation",
+    "BANK1.U_TO_V",
+    "BANK1.V_TO_U"
+   ],
+   "UNION_SUPPORT_OVER_ALL_EIGHT_ATOMS": [
+    1,
+    6,
+    124,
+    125,
+    202,
+    236,
+    255,
+    256
+   ],
+   "atoms_at_which_NO_orientation_wire_diverges": [
+    [
+     700,
+     540
+    ],
+    [
+     702,
+     254
+    ],
+    [
+     1100,
+     558
+    ]
+   ],
+   "atoms_at_which_an_ORIENTATION_wire_diverges": [
+    [
+     300,
+     715
+    ],
+    [
+     700,
+     475
+    ],
+    [
+     702,
+     450
+    ],
+    [
+     702,
+     715
+    ],
+    [
+     1100,
+     715
+    ]
+   ],
+   "certificate": "F_DIVERGENCE_SUPPORT",
+   "distinct_sites_with_orientation_divergence": [
+    450,
+    475,
+    715
+   ],
+   "distinct_sites_without": [
+    254,
+    540,
+    558
+   ],
+   "lanes_that_ever_differ_across_all_atoms": [
+    254,
+    450,
+    475,
+    540,
+    558,
+    715
+   ],
+   "pass": true,
+   "rows": [
+    {
+     "atom": [
+      300,
+      715
+     ],
+     "confined_to_the_sites_own_lane": true,
+     "divergence_support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "divergence_support_names": [
+      "LEFT_ENDPOINT",
+      "RIGHT_ENDPOINT",
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U",
+      "BANK1.cell0.orientation",
+      "BANK1.cell1.orientation",
+      "BANK1.U_TO_V",
+      "BANK1.V_TO_U"
+     ],
+     "full_column_sweep_at_the_last_boundary": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      255,
+      256
+     ],
+     "full_sweep_agrees_with_the_target_restricted_scan": true,
+     "lanes_that_ever_differ": [
+      715
+     ],
+     "orientation_wires_diverge": true,
+     "site_lane": 715
+    },
+    {
+     "atom": [
+      700,
+      475
+     ],
+     "confined_to_the_sites_own_lane": true,
+     "divergence_support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "divergence_support_names": [
+      "LEFT_ENDPOINT",
+      "RIGHT_ENDPOINT",
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U",
+      "BANK1.cell0.orientation",
+      "BANK1.cell1.orientation",
+      "BANK1.U_TO_V",
+      "BANK1.V_TO_U"
+     ],
+     "full_column_sweep_at_the_last_boundary": [
+      1,
+      6,
+      202,
+      255,
+      256
+     ],
+     "full_sweep_agrees_with_the_target_restricted_scan": true,
+     "lanes_that_ever_differ": [
+      475
+     ],
+     "orientation_wires_diverge": true,
+     "site_lane": 475
+    },
+    {
+     "atom": [
+      700,
+      540
+     ],
+     "confined_to_the_sites_own_lane": true,
+     "divergence_support": [
+      1,
+      6,
+      124,
+      125
+     ],
+     "divergence_support_names": [
+      "LEFT_ENDPOINT",
+      "RIGHT_ENDPOINT",
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U"
+     ],
+     "full_column_sweep_at_the_last_boundary": [
+      1,
+      6,
+      124,
+      125
+     ],
+     "full_sweep_agrees_with_the_target_restricted_scan": true,
+     "lanes_that_ever_differ": [
+      540
+     ],
+     "orientation_wires_diverge": false,
+     "site_lane": 540
+    },
+    {
+     "atom": [
+      702,
+      254
+     ],
+     "confined_to_the_sites_own_lane": true,
+     "divergence_support": [
+      1,
+      6,
+      124,
+      125
+     ],
+     "divergence_support_names": [
+      "LEFT_ENDPOINT",
+      "RIGHT_ENDPOINT",
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U"
+     ],
+     "full_column_sweep_at_the_last_boundary": [
+      1,
+      6,
+      124,
+      125
+     ],
+     "full_sweep_agrees_with_the_target_restricted_scan": true,
+     "lanes_that_ever_differ": [
+      254
+     ],
+     "orientation_wires_diverge": false,
+     "site_lane": 254
+    },
+    {
+     "atom": [
+      702,
+      450
+     ],
+     "confined_to_the_sites_own_lane": true,
+     "divergence_support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "divergence_support_names": [
+      "LEFT_ENDPOINT",
+      "RIGHT_ENDPOINT",
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U",
+      "BANK1.cell0.orientation",
+      "BANK1.cell1.orientation",
+      "BANK1.U_TO_V",
+      "BANK1.V_TO_U"
+     ],
+     "full_column_sweep_at_the_last_boundary": [
+      1,
+      6,
+      202,
+      255,
+      256
+     ],
+     "full_sweep_agrees_with_the_target_restricted_scan": true,
+     "lanes_that_ever_differ": [
+      450
+     ],
+     "orientation_wires_diverge": true,
+     "site_lane": 450
+    },
+    {
+     "atom": [
+      702,
+      715
+     ],
+     "confined_to_the_sites_own_lane": true,
+     "divergence_support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "divergence_support_names": [
+      "LEFT_ENDPOINT",
+      "RIGHT_ENDPOINT",
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U",
+      "BANK1.cell0.orientation",
+      "BANK1.cell1.orientation",
+      "BANK1.U_TO_V",
+      "BANK1.V_TO_U"
+     ],
+     "full_column_sweep_at_the_last_boundary": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "full_sweep_agrees_with_the_target_restricted_scan": true,
+     "lanes_that_ever_differ": [
+      715
+     ],
+     "orientation_wires_diverge": true,
+     "site_lane": 715
+    },
+    {
+     "atom": [
+      1100,
+      558
+     ],
+     "confined_to_the_sites_own_lane": true,
+     "divergence_support": [
+      1,
+      6,
+      124,
+      125,
+      255,
+      256
+     ],
+     "divergence_support_names": [
+      "LEFT_ENDPOINT",
+      "RIGHT_ENDPOINT",
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U",
+      "BANK1.U_TO_V",
+      "BANK1.V_TO_U"
+     ],
+     "full_column_sweep_at_the_last_boundary": [
+      1,
+      6,
+      124,
+      125
+     ],
+     "full_sweep_agrees_with_the_target_restricted_scan": true,
+     "lanes_that_ever_differ": [
+      558
+     ],
+     "orientation_wires_diverge": false,
+     "site_lane": 558
+    },
+    {
+     "atom": [
+      1100,
+      715
+     ],
+     "confined_to_the_sites_own_lane": true,
+     "divergence_support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "divergence_support_names": [
+      "LEFT_ENDPOINT",
+      "RIGHT_ENDPOINT",
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U",
+      "BANK1.cell0.orientation",
+      "BANK1.cell1.orientation",
+      "BANK1.U_TO_V",
+      "BANK1.V_TO_U"
+     ],
+     "full_column_sweep_at_the_last_boundary": [
+      1,
+      6,
+      124,
+      125,
+      255,
+      256
+     ],
+     "full_sweep_agrees_with_the_target_restricted_scan": true,
+     "lanes_that_ever_differ": [
+      715
+     ],
+     "orientation_wires_diverge": true,
+     "site_lane": 715
+    }
+   ],
+   "union_is_exactly_the_eight_claimed_wires": true,
+   "variants": [
+    {
+     "atom": [
+      300,
+      715
+     ],
+     "atom_is_eligible_under_this_layout": true,
+     "lanes": [
+      32
+     ],
+     "one_lane_only": true,
+     "site_lane": 32,
+     "support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "support_within_the_eight": true,
+     "variant": "REVERSE_LAYOUT"
+    },
+    {
+     "atom": [
+      300,
+      715
+     ],
+     "lanes": [
+      715
+     ],
+     "one_lane_only": true,
+     "site_lane": 715,
+     "support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "support_within_the_eight": true,
+     "variant": "M_A_FREE_CONTROL_PROGRAM"
+    },
+    {
+     "atom": [
+      700,
+      540
+     ],
+     "atom_is_eligible_under_this_layout": true,
+     "lanes": [
+      207
+     ],
+     "one_lane_only": true,
+     "site_lane": 207,
+     "support": [
+      1,
+      6,
+      124,
+      125
+     ],
+     "support_within_the_eight": true,
+     "variant": "REVERSE_LAYOUT"
+    },
+    {
+     "atom": [
+      700,
+      540
+     ],
+     "lanes": [
+      540
+     ],
+     "one_lane_only": true,
+     "site_lane": 540,
+     "support": [
+      1,
+      6,
+      124,
+      125
+     ],
+     "support_within_the_eight": true,
+     "variant": "M_A_FREE_CONTROL_PROGRAM"
+    },
+    {
+     "atom": [
+      300,
+      715
+     ],
+     "boundaries": 7400,
+     "lanes": [
+      715
+     ],
+     "one_lane_only": true,
+     "support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "support_within_the_eight": true,
+     "variant": "FOUR_TIMES_THE_DECLARED_WINDOW"
+    }
+   ]
+  },
+  "G_LOCKS": {
+   "MENU_ATOMS_share_lock_and_events_and_swap_the_item": true,
+   "TIMING_ATOMS_move_the_lock_and_the_event_count_and_keep_the_item": true,
+   "certificate": "G_LOCKS_EVENTS_ITEMS",
+   "control_lock_table_matches_the_claim": true,
+   "control_run_lock_boundaries": {
+    "254": 1439,
+    "450": 1808,
+    "475": 1806,
+    "540": 1076,
+    "558": 1425,
+    "715": 1811
+   },
+   "control_total_events": 18692,
+   "pass": true,
+   "rows": [
+    {
+     "atom": [
+      300,
+      715
+     ],
+     "branch0_item": [
+      1,
+      0
+     ],
+     "branch0_lane_events_MY_OWN": 223,
+     "branch0_lock_boundary_MACHINE": 1811,
+     "branch0_lock_boundary_MY_OWN_LANE_SCAN": 1811,
+     "branch0_total_events": 18692,
+     "branch1_item": [
+      0,
+      1
+     ],
+     "branch1_lane_events_MY_OWN": 223,
+     "branch1_lock_boundary_MACHINE": 1811,
+     "branch1_lock_boundary_MY_OWN_LANE_SCAN": 1811,
+     "branch1_total_events": 18692,
+     "event_counts_differ": false,
+     "first_bank0_event_on_the_lane": [
+      6,
+      6
+     ],
+     "first_bank1_event_on_the_lane": [
+      312,
+      312
+     ],
+     "item_differs": true,
+     "lane_event_counts_differ": false,
+     "my_scan_agrees_with_the_machine": true
+    },
+    {
+     "atom": [
+      700,
+      475
+     ],
+     "branch0_item": [
+      1,
+      0
+     ],
+     "branch0_lane_events_MY_OWN": 130,
+     "branch0_lock_boundary_MACHINE": 1806,
+     "branch0_lock_boundary_MY_OWN_LANE_SCAN": 1806,
+     "branch0_total_events": 18692,
+     "branch1_item": [
+      0,
+      1
+     ],
+     "branch1_lane_events_MY_OWN": 130,
+     "branch1_lock_boundary_MACHINE": 1806,
+     "branch1_lock_boundary_MY_OWN_LANE_SCAN": 1806,
+     "branch1_total_events": 18692,
+     "event_counts_differ": false,
+     "first_bank0_event_on_the_lane": [
+      69,
+      69
+     ],
+     "first_bank1_event_on_the_lane": [
+      227,
+      227
+     ],
+     "item_differs": true,
+     "lane_event_counts_differ": false,
+     "my_scan_agrees_with_the_machine": true
+    },
+    {
+     "atom": [
+      700,
+      540
+     ],
+     "branch0_item": [
+      0,
+      1
+     ],
+     "branch0_lane_events_MY_OWN": 1,
+     "branch0_lock_boundary_MACHINE": 1076,
+     "branch0_lock_boundary_MY_OWN_LANE_SCAN": 1076,
+     "branch0_total_events": 18692,
+     "branch1_item": [
+      0,
+      1
+     ],
+     "branch1_lane_events_MY_OWN": 36,
+     "branch1_lock_boundary_MACHINE": 719,
+     "branch1_lock_boundary_MY_OWN_LANE_SCAN": 719,
+     "branch1_total_events": 18727,
+     "event_counts_differ": true,
+     "first_bank0_event_on_the_lane": [
+      1076,
+      719
+     ],
+     "first_bank1_event_on_the_lane": [
+      null,
+      null
+     ],
+     "item_differs": false,
+     "lane_event_counts_differ": true,
+     "my_scan_agrees_with_the_machine": true
+    },
+    {
+     "atom": [
+      702,
+      254
+     ],
+     "branch0_item": [
+      0,
+      1
+     ],
+     "branch0_lane_events_MY_OWN": 1,
+     "branch0_lock_boundary_MACHINE": 1439,
+     "branch0_lock_boundary_MY_OWN_LANE_SCAN": 1439,
+     "branch0_total_events": 18692,
+     "branch1_item": [
+      0,
+      1
+     ],
+     "branch1_lane_events_MY_OWN": 26,
+     "branch1_lock_boundary_MACHINE": 743,
+     "branch1_lock_boundary_MY_OWN_LANE_SCAN": 743,
+     "branch1_total_events": 18717,
+     "event_counts_differ": true,
+     "first_bank0_event_on_the_lane": [
+      1439,
+      743
+     ],
+     "first_bank1_event_on_the_lane": [
+      null,
+      null
+     ],
+     "item_differs": false,
+     "lane_event_counts_differ": true,
+     "my_scan_agrees_with_the_machine": true
+    },
+    {
+     "atom": [
+      702,
+      450
+     ],
+     "branch0_item": [
+      1,
+      0
+     ],
+     "branch0_lane_events_MY_OWN": 130,
+     "branch0_lock_boundary_MACHINE": 1808,
+     "branch0_lock_boundary_MY_OWN_LANE_SCAN": 1808,
+     "branch0_total_events": 18692,
+     "branch1_item": [
+      0,
+      1
+     ],
+     "branch1_lane_events_MY_OWN": 130,
+     "branch1_lock_boundary_MACHINE": 1808,
+     "branch1_lock_boundary_MY_OWN_LANE_SCAN": 1808,
+     "branch1_total_events": 18692,
+     "event_counts_differ": false,
+     "first_bank0_event_on_the_lane": [
+      71,
+      71
+     ],
+     "first_bank1_event_on_the_lane": [
+      229,
+      229
+     ],
+     "item_differs": true,
+     "lane_event_counts_differ": false,
+     "my_scan_agrees_with_the_machine": true
+    },
+    {
+     "atom": [
+      702,
+      715
+     ],
+     "branch0_item": [
+      1,
+      0
+     ],
+     "branch0_lane_events_MY_OWN": 223,
+     "branch0_lock_boundary_MACHINE": 1811,
+     "branch0_lock_boundary_MY_OWN_LANE_SCAN": 1811,
+     "branch0_total_events": 18692,
+     "branch1_item": [
+      0,
+      1
+     ],
+     "branch1_lane_events_MY_OWN": 223,
+     "branch1_lock_boundary_MACHINE": 1811,
+     "branch1_lock_boundary_MY_OWN_LANE_SCAN": 1811,
+     "branch1_total_events": 18692,
+     "event_counts_differ": false,
+     "first_bank0_event_on_the_lane": [
+      6,
+      6
+     ],
+     "first_bank1_event_on_the_lane": [
+      312,
+      312
+     ],
+     "item_differs": true,
+     "lane_event_counts_differ": false,
+     "my_scan_agrees_with_the_machine": true
+    },
+    {
+     "atom": [
+      1100,
+      558
+     ],
+     "branch0_item": [
+      0,
+      1
+     ],
+     "branch0_lane_events_MY_OWN": 87,
+     "branch0_lock_boundary_MACHINE": 1425,
+     "branch0_lock_boundary_MY_OWN_LANE_SCAN": 1425,
+     "branch0_total_events": 18692,
+     "branch1_item": [
+      0,
+      1
+     ],
+     "branch1_lane_events_MY_OWN": 122,
+     "branch1_lock_boundary_MACHINE": 1135,
+     "branch1_lock_boundary_MY_OWN_LANE_SCAN": 1135,
+     "branch1_total_events": 18712,
+     "event_counts_differ": true,
+     "first_bank0_event_on_the_lane": [
+      41,
+      41
+     ],
+     "first_bank1_event_on_the_lane": [
+      44,
+      44
+     ],
+     "item_differs": false,
+     "lane_event_counts_differ": true,
+     "my_scan_agrees_with_the_machine": true
+    },
+    {
+     "atom": [
+      1100,
+      715
+     ],
+     "branch0_item": [
+      1,
+      0
+     ],
+     "branch0_lane_events_MY_OWN": 223,
+     "branch0_lock_boundary_MACHINE": 1811,
+     "branch0_lock_boundary_MY_OWN_LANE_SCAN": 1811,
+     "branch0_total_events": 18692,
+     "branch1_item": [
+      0,
+      1
+     ],
+     "branch1_lane_events_MY_OWN": 223,
+     "branch1_lock_boundary_MACHINE": 1811,
+     "branch1_lock_boundary_MY_OWN_LANE_SCAN": 1811,
+     "branch1_total_events": 18692,
+     "event_counts_differ": false,
+     "first_bank0_event_on_the_lane": [
+      6,
+      6
+     ],
+     "first_bank1_event_on_the_lane": [
+      312,
+      312
+     ],
+     "item_differs": true,
+     "lane_event_counts_differ": false,
+     "my_scan_agrees_with_the_machine": true
+    }
+   ]
+  },
+  "H_THETA_HUNT": {
+   "A_SURVIVING_THETA_THE_PRIMARY_MISSED": {
+    "BUT_IT_IS_NOT_A_LAW_SYMMETRY": {
+     "commutes_with_the_law_off_the_orbit": false,
+     "lane_evaluator_reproduces_the_machine": true,
+     "off_orbit_commutation_failures": 100,
+     "off_orbit_random_states_tested": 120,
+     "one_bit_perturbation_failures": 8,
+     "one_bit_perturbations_tested": 55
+    },
+    "FOUND": true,
+    "STRUCTURE": {
+     "bank0_UV_pair_is_EXACTLY_a_swap": true,
+     "bank1_UV_pair_is_EXACTLY_a_swap": true,
+     "endpoints_are_flipped_at_every_boundary": true,
+     "orientation_pair_is_a_swap": false
+    },
+    "affine_rank_at_4x": 37,
+    "affine_rank_in_window": 37,
+    "class": "lane-local AFFINE map over GF(2) on the gate-target wires of the site's own lane",
+    "out_of_sample_boundaries": 7400,
+    "out_of_sample_collisions": 0,
+    "out_of_sample_distinct_branch0_states": 6299,
+    "support_size_needed": 36,
+    "survives_FOUR_TIMES_the_declared_window": true,
+    "survives_the_declared_window": true
+   },
+   "FULL_COLUMN_DUPLICATE_HUNT": {
+    "atom": [
+     300,
+     715
+    ],
+    "boundaries": 1625,
+    "distinct_full_column_branch0_states": 1625,
+    "phase_free_duplicates": 0,
+    "phase_matched_duplicates": 0
+   },
+   "READING": "The primary's eight-candidate family is reproduced value for value and every row of its table is confirmed.  But the family is too narrow.  A lane-local map on the gate-target wires of the site's own lane DOES exist, is AFFINE over GF(2), reproduces the branch relation at every boundary of the declared window AND at four times the window (six thousand distinct branch-0 states, no repeat), and needs only about three dozen wires -- not the full column.  So 'no map of the divergence support survives' is TRUE, and 'no support-local map survives' is FALSE: the threshold sits between twelve wires and three dozen, not between eight wires and the whole state.  The surviving map is NOT a symmetry: it fails to commute with the compiled law at most random states and even at one-bit perturbations of states on the orbit.  It is an orbit-specific intertwiner, which is exactly what the primary's declared scope limit allows for -- but the limit has to be stated at three dozen wires, not at the full column.",
+   "THE_PRIMARYS_SWEPT_FAMILY_REBUILT_FROM_ITS_DESCRIPTION": [
+    {
+     "all_eight_candidates": [
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 302,
+       "last_holding_boundary": 301,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation",
+        "BANK1.cell1.orientation"
+       ],
+       "first_failure_boundary": 301,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 302,
+       "last_holding_boundary": 301,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation",
+        "BANK1.cell1.orientation"
+       ],
+       "first_failure_boundary": 301,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 303,
+       "last_holding_boundary": 302,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation",
+        "BANK1.cell1.orientation"
+       ],
+       "first_failure_boundary": 301,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation"
+       ],
+       "first_failure_boundary": 306,
+       "last_holding_boundary": 305,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation",
+        "BANK1.cell1.orientation"
+       ],
+       "first_failure_boundary": 301,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      }
+     ],
+     "atom": [
+      300,
+      715
+     ],
+     "best_candidate": {
+      "breaks_on": [
+       "BANK1.cell0.orientation"
+      ],
+      "first_failure_boundary": 306,
+      "last_holding_boundary": 305,
+      "swap_bank0_UV": 1,
+      "swap_bank1_UV": 1,
+      "swap_orientations": 0
+     },
+     "boundaries_from_the_break_to_the_branch0_lock": 1505,
+     "boundaries_from_the_choice_to_the_break": 6,
+     "break_is_before_the_first_bank_event_on_the_lane": false,
+     "break_is_before_the_lock": true,
+     "class": "MENU"
+    },
+    {
+     "all_eight_candidates": [
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 706,
+       "last_holding_boundary": 705,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 706,
+       "last_holding_boundary": 705,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 706,
+       "last_holding_boundary": 705,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 706,
+       "last_holding_boundary": 705,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 708,
+       "last_holding_boundary": 707,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 708,
+       "last_holding_boundary": 707,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation"
+       ],
+       "first_failure_boundary": 761,
+       "last_holding_boundary": 760,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell1.orientation"
+       ],
+       "first_failure_boundary": 761,
+       "last_holding_boundary": 760,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      }
+     ],
+     "atom": [
+      700,
+      475
+     ],
+     "best_candidate": {
+      "breaks_on": [
+       "BANK1.cell0.orientation"
+      ],
+      "first_failure_boundary": 761,
+      "last_holding_boundary": 760,
+      "swap_bank0_UV": 1,
+      "swap_bank1_UV": 1,
+      "swap_orientations": 0
+     },
+     "boundaries_from_the_break_to_the_branch0_lock": 1045,
+     "boundaries_from_the_choice_to_the_break": 61,
+     "break_is_before_the_first_bank_event_on_the_lane": false,
+     "break_is_before_the_lock": true,
+     "class": "MENU"
+    },
+    {
+     "all_eight_candidates": [
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 702,
+       "last_holding_boundary": 701,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 702,
+       "last_holding_boundary": 701,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 702,
+       "last_holding_boundary": 701,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 702,
+       "last_holding_boundary": 701,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 701,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 701,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 701,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 701,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      }
+     ],
+     "atom": [
+      700,
+      540
+     ],
+     "best_candidate": {
+      "breaks_on": [
+       "BANK0.U_TO_V",
+       "BANK0.V_TO_U"
+      ],
+      "first_failure_boundary": 702,
+      "last_holding_boundary": 701,
+      "swap_bank0_UV": 0,
+      "swap_bank1_UV": 0,
+      "swap_orientations": 0
+     },
+     "boundaries_from_the_break_to_the_branch0_lock": 374,
+     "boundaries_from_the_choice_to_the_break": 2,
+     "break_is_before_the_first_bank_event_on_the_lane": true,
+     "break_is_before_the_lock": true,
+     "class": "TIMING"
+    },
+    {
+     "all_eight_candidates": [
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 705,
+       "last_holding_boundary": 704,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 705,
+       "last_holding_boundary": 704,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 705,
+       "last_holding_boundary": 704,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 705,
+       "last_holding_boundary": 704,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 703,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 703,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 703,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 703,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      }
+     ],
+     "atom": [
+      702,
+      254
+     ],
+     "best_candidate": {
+      "breaks_on": [
+       "BANK0.U_TO_V",
+       "BANK0.V_TO_U"
+      ],
+      "first_failure_boundary": 705,
+      "last_holding_boundary": 704,
+      "swap_bank0_UV": 0,
+      "swap_bank1_UV": 0,
+      "swap_orientations": 0
+     },
+     "boundaries_from_the_break_to_the_branch0_lock": 734,
+     "boundaries_from_the_choice_to_the_break": 3,
+     "break_is_before_the_first_bank_event_on_the_lane": true,
+     "break_is_before_the_lock": true,
+     "class": "TIMING"
+    },
+    {
+     "all_eight_candidates": [
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 708,
+       "last_holding_boundary": 707,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 708,
+       "last_holding_boundary": 707,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 708,
+       "last_holding_boundary": 707,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 708,
+       "last_holding_boundary": 707,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 710,
+       "last_holding_boundary": 709,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 710,
+       "last_holding_boundary": 709,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation"
+       ],
+       "first_failure_boundary": 763,
+       "last_holding_boundary": 762,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell1.orientation"
+       ],
+       "first_failure_boundary": 763,
+       "last_holding_boundary": 762,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      }
+     ],
+     "atom": [
+      702,
+      450
+     ],
+     "best_candidate": {
+      "breaks_on": [
+       "BANK1.cell0.orientation"
+      ],
+      "first_failure_boundary": 763,
+      "last_holding_boundary": 762,
+      "swap_bank0_UV": 1,
+      "swap_bank1_UV": 1,
+      "swap_orientations": 0
+     },
+     "boundaries_from_the_break_to_the_branch0_lock": 1045,
+     "boundaries_from_the_choice_to_the_break": 61,
+     "break_is_before_the_first_bank_event_on_the_lane": false,
+     "break_is_before_the_lock": true,
+     "class": "MENU"
+    },
+    {
+     "all_eight_candidates": [
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 705,
+       "last_holding_boundary": 704,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 705,
+       "last_holding_boundary": 704,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U",
+        "BANK1.cell1.orientation"
+       ],
+       "first_failure_boundary": 706,
+       "last_holding_boundary": 705,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U",
+        "BANK1.cell0.orientation"
+       ],
+       "first_failure_boundary": 706,
+       "last_holding_boundary": 705,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 705,
+       "last_holding_boundary": 704,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 705,
+       "last_holding_boundary": 704,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell1.orientation"
+       ],
+       "first_failure_boundary": 706,
+       "last_holding_boundary": 705,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation"
+       ],
+       "first_failure_boundary": 706,
+       "last_holding_boundary": 705,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      }
+     ],
+     "atom": [
+      702,
+      715
+     ],
+     "best_candidate": {
+      "breaks_on": [
+       "BANK0.U_TO_V",
+       "BANK0.V_TO_U",
+       "BANK1.cell1.orientation"
+      ],
+      "first_failure_boundary": 706,
+      "last_holding_boundary": 705,
+      "swap_bank0_UV": 0,
+      "swap_bank1_UV": 1,
+      "swap_orientations": 0
+     },
+     "boundaries_from_the_break_to_the_branch0_lock": 1105,
+     "boundaries_from_the_choice_to_the_break": 4,
+     "break_is_before_the_first_bank_event_on_the_lane": false,
+     "break_is_before_the_lock": true,
+     "class": "MENU"
+    },
+    {
+     "all_eight_candidates": [
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1102,
+       "last_holding_boundary": 1101,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1102,
+       "last_holding_boundary": 1101,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1102,
+       "last_holding_boundary": 1101,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1102,
+       "last_holding_boundary": 1101,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1101,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1101,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1101,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1101,
+       "last_holding_boundary": null,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      }
+     ],
+     "atom": [
+      1100,
+      558
+     ],
+     "best_candidate": {
+      "breaks_on": [
+       "BANK0.U_TO_V",
+       "BANK0.V_TO_U"
+      ],
+      "first_failure_boundary": 1102,
+      "last_holding_boundary": 1101,
+      "swap_bank0_UV": 0,
+      "swap_bank1_UV": 0,
+      "swap_orientations": 0
+     },
+     "boundaries_from_the_break_to_the_branch0_lock": 323,
+     "boundaries_from_the_choice_to_the_break": 2,
+     "break_is_before_the_first_bank_event_on_the_lane": false,
+     "break_is_before_the_lock": true,
+     "class": "TIMING"
+    },
+    {
+     "all_eight_candidates": [
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1103,
+       "last_holding_boundary": 1102,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1103,
+       "last_holding_boundary": 1102,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1103,
+       "last_holding_boundary": 1102,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK0.U_TO_V",
+        "BANK0.V_TO_U"
+       ],
+       "first_failure_boundary": 1103,
+       "last_holding_boundary": 1102,
+       "swap_bank0_UV": 0,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 1104,
+       "last_holding_boundary": 1103,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.U_TO_V",
+        "BANK1.V_TO_U"
+       ],
+       "first_failure_boundary": 1104,
+       "last_holding_boundary": 1103,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 0,
+       "swap_orientations": 1
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation"
+       ],
+       "first_failure_boundary": 1113,
+       "last_holding_boundary": 1112,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 0
+      },
+      {
+       "breaks_on": [
+        "BANK1.cell0.orientation"
+       ],
+       "first_failure_boundary": 1113,
+       "last_holding_boundary": 1112,
+       "swap_bank0_UV": 1,
+       "swap_bank1_UV": 1,
+       "swap_orientations": 1
+      }
+     ],
+     "atom": [
+      1100,
+      715
+     ],
+     "best_candidate": {
+      "breaks_on": [
+       "BANK1.cell0.orientation"
+      ],
+      "first_failure_boundary": 1113,
+      "last_holding_boundary": 1112,
+      "swap_bank0_UV": 1,
+      "swap_bank1_UV": 1,
+      "swap_orientations": 0
+     },
+     "boundaries_from_the_break_to_the_branch0_lock": 698,
+     "boundaries_from_the_choice_to_the_break": 13,
+     "break_is_before_the_first_bank_event_on_the_lane": false,
+     "break_is_before_the_lock": true,
+     "class": "MENU"
+    }
+   ],
+   "THE_WIDER_HUNT": [
+    {
+     "EXACT_TIME_SHIFT_MAPS_THAT_SURVIVE": [],
+     "MINIMAL_SUPPORT_FOUND_BY_THE_AFFINE_PIVOTS": {
+      "A_LANE_LOCAL_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "count": 36,
+      "phase_free_collisions_on_the_pivot_set": 0,
+      "pivot_wires": [
+       6,
+       40,
+       124,
+       125,
+       131,
+       172,
+       180,
+       181,
+       183,
+       184,
+       185,
+       186,
+       202,
+       206,
+       214,
+       215,
+       216,
+       217,
+       218,
+       219,
+       220,
+       236,
+       239,
+       240,
+       246,
+       247,
+       248,
+       249,
+       251,
+       252,
+       253,
+       255,
+       256,
+       262,
+       263,
+       1804
+      ]
+     },
+     "W12_plus_40_123_131_132": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 1335,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 10,
+      "phase_free_collisions": 204,
+      "phase_free_keys": 355,
+      "phase_matched_collisions": 197,
+      "phase_matched_keys": 1286,
+      "phase_matched_witness": [
+       [
+        821,
+        4
+       ],
+       [
+        778,
+        810,
+        826
+       ]
+      ],
+      "wires": 12
+     },
+     "W8_divergence_support": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 1329,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 8,
+      "phase_free_collisions": 94,
+      "phase_free_keys": 110,
+      "phase_matched_collisions": 339,
+      "phase_matched_keys": 821,
+      "phase_matched_witness": [
+       [
+        25,
+        10
+       ],
+       [
+        6,
+        22
+       ]
+      ],
+      "wires": 8
+     },
+     "W_ALL_537_TARGETS_this_lane": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 37,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 1346,
+      "phase_matched_collisions": 0,
+      "wires": 537
+     },
+     "atom": [
+      300,
+      715
+     ]
+    },
+    {
+     "EXACT_TIME_SHIFT_MAPS_THAT_SURVIVE": [],
+     "MINIMAL_SUPPORT_FOUND_BY_THE_AFFINE_PIVOTS": {
+      "A_LANE_LOCAL_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "count": 39,
+      "phase_free_collisions_on_the_pivot_set": 0,
+      "pivot_wires": [
+       6,
+       40,
+       124,
+       125,
+       131,
+       172,
+       173,
+       180,
+       181,
+       183,
+       184,
+       185,
+       186,
+       202,
+       206,
+       207,
+       214,
+       215,
+       216,
+       217,
+       218,
+       219,
+       220,
+       236,
+       239,
+       240,
+       241,
+       246,
+       247,
+       248,
+       249,
+       251,
+       252,
+       253,
+       255,
+       256,
+       262,
+       263,
+       1804
+      ]
+     },
+     "W12_plus_40_123_131_132": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 777,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 10,
+      "phase_free_collisions": 121,
+      "phase_free_keys": 330,
+      "phase_matched_collisions": 98,
+      "phase_matched_keys": 1012,
+      "phase_matched_witness": [
+       [
+        805,
+        4
+       ],
+       [
+        794,
+        810
+       ]
+      ],
+      "wires": 12
+     },
+     "W8_divergence_support": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 777,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 8,
+      "phase_free_collisions": 92,
+      "phase_free_keys": 122,
+      "phase_matched_collisions": 253,
+      "phase_matched_keys": 714,
+      "phase_matched_witness": [
+       [
+        246,
+        2
+       ],
+       [
+        233,
+        249
+       ]
+      ],
+      "wires": 8
+     },
+     "W_ALL_537_TARGETS_this_lane": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 40,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 793,
+      "phase_matched_collisions": 0,
+      "wires": 537
+     },
+     "atom": [
+      700,
+      475
+     ]
+    },
+    {
+     "EXACT_TIME_SHIFT_MAPS_THAT_SURVIVE": [],
+     "MINIMAL_SUPPORT_FOUND_BY_THE_AFFINE_PIVOTS": {
+      "A_LANE_LOCAL_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "count": 26,
+      "phase_free_collisions_on_the_pivot_set": 0,
+      "pivot_wires": [
+       6,
+       40,
+       55,
+       75,
+       80,
+       84,
+       85,
+       86,
+       87,
+       88,
+       89,
+       108,
+       109,
+       114,
+       115,
+       116,
+       117,
+       118,
+       120,
+       121,
+       122,
+       123,
+       124,
+       125,
+       131,
+       132
+      ]
+     },
+     "W12_plus_40_123_131_132": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 8,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 16,
+      "phase_matched_collisions": 0,
+      "phase_matched_keys": 55,
+      "phase_matched_witness": null,
+      "wires": 12
+     },
+     "W8_divergence_support": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 4,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 4,
+      "phase_matched_collisions": 0,
+      "phase_matched_keys": 28,
+      "phase_matched_witness": null,
+      "wires": 8
+     },
+     "W_ALL_537_TARGETS_this_lane": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 27,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 781,
+      "phase_matched_collisions": 0,
+      "wires": 537
+     },
+     "atom": [
+      700,
+      540
+     ]
+    },
+    {
+     "EXACT_TIME_SHIFT_MAPS_THAT_SURVIVE": [],
+     "MINIMAL_SUPPORT_FOUND_BY_THE_AFFINE_PIVOTS": {
+      "A_LANE_LOCAL_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "count": 26,
+      "phase_free_collisions_on_the_pivot_set": 0,
+      "pivot_wires": [
+       6,
+       40,
+       55,
+       75,
+       80,
+       84,
+       85,
+       86,
+       87,
+       88,
+       89,
+       108,
+       109,
+       114,
+       115,
+       116,
+       117,
+       118,
+       120,
+       121,
+       122,
+       123,
+       124,
+       125,
+       131,
+       132
+      ]
+     },
+     "W12_plus_40_123_131_132": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 8,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 16,
+      "phase_matched_collisions": 0,
+      "phase_matched_keys": 64,
+      "phase_matched_witness": null,
+      "wires": 12
+     },
+     "W8_divergence_support": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 4,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 4,
+      "phase_matched_collisions": 0,
+      "phase_matched_keys": 36,
+      "phase_matched_witness": null,
+      "wires": 8
+     },
+     "W_ALL_537_TARGETS_this_lane": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 27,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 615,
+      "phase_matched_collisions": 0,
+      "wires": 537
+     },
+     "atom": [
+      702,
+      254
+     ]
+    },
+    {
+     "EXACT_TIME_SHIFT_MAPS_THAT_SURVIVE": [],
+     "MINIMAL_SUPPORT_FOUND_BY_THE_AFFINE_PIVOTS": {
+      "A_LANE_LOCAL_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "count": 39,
+      "phase_free_collisions_on_the_pivot_set": 0,
+      "pivot_wires": [
+       6,
+       40,
+       124,
+       125,
+       131,
+       172,
+       173,
+       180,
+       181,
+       183,
+       184,
+       185,
+       186,
+       202,
+       206,
+       207,
+       214,
+       215,
+       216,
+       217,
+       218,
+       219,
+       220,
+       236,
+       239,
+       240,
+       241,
+       246,
+       247,
+       248,
+       249,
+       251,
+       252,
+       253,
+       255,
+       256,
+       262,
+       263,
+       1804
+      ]
+     },
+     "W12_plus_40_123_131_132": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 777,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 10,
+      "phase_free_collisions": 121,
+      "phase_free_keys": 330,
+      "phase_matched_collisions": 96,
+      "phase_matched_keys": 1012,
+      "phase_matched_witness": [
+       [
+        805,
+        6
+       ],
+       [
+        794,
+        810
+       ]
+      ],
+      "wires": 12
+     },
+     "W8_divergence_support": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 777,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 8,
+      "phase_free_collisions": 92,
+      "phase_free_keys": 122,
+      "phase_matched_collisions": 253,
+      "phase_matched_keys": 714,
+      "phase_matched_witness": [
+       [
+        246,
+        4
+       ],
+       [
+        233,
+        249
+       ]
+      ],
+      "wires": 8
+     },
+     "W_ALL_537_TARGETS_this_lane": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 40,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 792,
+      "phase_matched_collisions": 0,
+      "wires": 537
+     },
+     "atom": [
+      702,
+      450
+     ]
+    },
+    {
+     "EXACT_TIME_SHIFT_MAPS_THAT_SURVIVE": [],
+     "MINIMAL_SUPPORT_FOUND_BY_THE_AFFINE_PIVOTS": {
+      "A_LANE_LOCAL_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "count": 36,
+      "phase_free_collisions_on_the_pivot_set": 0,
+      "pivot_wires": [
+       6,
+       40,
+       124,
+       125,
+       131,
+       172,
+       180,
+       181,
+       183,
+       184,
+       185,
+       186,
+       202,
+       206,
+       214,
+       215,
+       216,
+       217,
+       218,
+       219,
+       220,
+       236,
+       239,
+       240,
+       246,
+       247,
+       248,
+       249,
+       251,
+       252,
+       253,
+       255,
+       256,
+       262,
+       263,
+       1804
+      ]
+     },
+     "W12_plus_40_123_131_132": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 1158,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 10,
+      "phase_free_collisions": 162,
+      "phase_free_keys": 327,
+      "phase_matched_collisions": 109,
+      "phase_matched_keys": 1060,
+      "phase_matched_witness": [
+       [
+        1813,
+        2
+       ],
+       [
+        1834,
+        1850
+       ]
+      ],
+      "wires": 12
+     },
+     "W8_divergence_support": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 1158,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 8,
+      "phase_free_collisions": 88,
+      "phase_free_keys": 109,
+      "phase_matched_collisions": 232,
+      "phase_matched_keys": 742,
+      "phase_matched_witness": [
+       [
+        50,
+        10
+       ],
+       [
+        17,
+        33,
+        49
+       ]
+      ],
+      "wires": 8
+     },
+     "W_ALL_537_TARGETS_this_lane": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 37,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 1014,
+      "phase_matched_collisions": 0,
+      "wires": 537
+     },
+     "atom": [
+      702,
+      715
+     ]
+    },
+    {
+     "EXACT_TIME_SHIFT_MAPS_THAT_SURVIVE": [],
+     "MINIMAL_SUPPORT_FOUND_BY_THE_AFFINE_PIVOTS": {
+      "A_LANE_LOCAL_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "count": 36,
+      "phase_free_collisions_on_the_pivot_set": 0,
+      "pivot_wires": [
+       6,
+       40,
+       55,
+       75,
+       80,
+       84,
+       85,
+       86,
+       87,
+       88,
+       89,
+       108,
+       109,
+       114,
+       115,
+       116,
+       117,
+       118,
+       120,
+       121,
+       122,
+       123,
+       124,
+       125,
+       131,
+       132,
+       173,
+       240,
+       245,
+       247,
+       248,
+       249,
+       250,
+       262,
+       1613,
+       1804
+      ]
+     },
+     "W12_plus_40_123_131_132": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": true,
+      "affine_inconsistent_rows": 54,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 8,
+      "phase_free_collisions": 1,
+      "phase_free_keys": 16,
+      "phase_matched_collisions": 0,
+      "phase_matched_keys": 58,
+      "phase_matched_witness": null,
+      "wires": 12
+     },
+     "W8_divergence_support": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 54,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 4,
+      "phase_free_collisions": 1,
+      "phase_free_keys": 4,
+      "phase_matched_collisions": 3,
+      "phase_matched_keys": 28,
+      "phase_matched_witness": [
+       [
+        1,
+        8
+       ],
+       [
+        14,
+        194
+       ]
+      ],
+      "wires": 8
+     },
+     "W_ALL_537_TARGETS_this_lane": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 37,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 542,
+      "phase_matched_collisions": 0,
+      "wires": 537
+     },
+     "atom": [
+      1100,
+      558
+     ]
+    },
+    {
+     "EXACT_TIME_SHIFT_MAPS_THAT_SURVIVE": [],
+     "MINIMAL_SUPPORT_FOUND_BY_THE_AFFINE_PIVOTS": {
+      "A_LANE_LOCAL_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "count": 36,
+      "phase_free_collisions_on_the_pivot_set": 0,
+      "pivot_wires": [
+       6,
+       40,
+       124,
+       125,
+       131,
+       172,
+       180,
+       181,
+       183,
+       184,
+       185,
+       186,
+       202,
+       206,
+       214,
+       215,
+       216,
+       217,
+       218,
+       219,
+       220,
+       236,
+       239,
+       240,
+       246,
+       247,
+       248,
+       249,
+       251,
+       252,
+       253,
+       255,
+       256,
+       262,
+       263,
+       1804
+      ]
+     },
+     "W12_plus_40_123_131_132": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 542,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 10,
+      "phase_free_collisions": 75,
+      "phase_free_keys": 268,
+      "phase_matched_collisions": 20,
+      "phase_matched_keys": 776,
+      "phase_matched_witness": [
+       [
+        998,
+        6
+       ],
+       [
+        985,
+        1017
+       ]
+      ],
+      "wires": 12
+     },
+     "W8_divergence_support": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": false,
+      "ANY_PHASE_DEPENDENT_MAP_EXISTS": false,
+      "affine_inconsistent_rows": 542,
+      "affine_over_GF2_consistent": false,
+      "affine_rank": 8,
+      "phase_free_collisions": 61,
+      "phase_free_keys": 98,
+      "phase_matched_collisions": 86,
+      "phase_matched_keys": 590,
+      "phase_matched_witness": [
+       [
+        126,
+        6
+       ],
+       [
+        157,
+        189
+       ]
+      ],
+      "wires": 8
+     },
+     "W_ALL_537_TARGETS_this_lane": {
+      "ANY_MAP_OF_THIS_SUPPORT_EXISTS": true,
+      "affine_inconsistent_rows": 0,
+      "affine_over_GF2_consistent": true,
+      "affine_rank": 37,
+      "phase_free_collisions": 0,
+      "phase_free_keys": 670,
+      "phase_matched_collisions": 0,
+      "wires": 537
+     },
+     "atom": [
+      1100,
+      715
+     ]
+    }
+   ],
+   "certificate": "H_THETA_HUNT",
+   "pass": true
+  },
+  "I_NON_EXISTENCE": {
+   "EVERY_ATOM_KILLED_BY_AT_LEAST_ONE_ROUTE": true,
+   "MY_SCOPE_LIMIT_IS_TIGHTER_THAN_THE_PRIMARYS": "route B rules out maps that are a function of the eight-wire divergence support, even phase-dependent ones -- confirmed.  The primary then declares the limit at 'arbitrary global state maps'.  That understates it: a lane-local affine map on about three dozen wires already exists.  The correct limit is 'maps of the divergence support', with the next occupied rung about three dozen wires up.",
+   "ROUTE_A_CAVEAT": "the moved invariant is an EVENT COUNT, which is machine bookkeeping derived from the column trajectory, not a column-state function at a fixed boundary.  It rules out any relation that preserves the record bookkeeping.  A pure column-state map with no bookkeeping obligation is NOT ruled out by route A -- and indeed my lane-local affine map exists at the timing atoms too.  Both readings are carried.",
+   "ROUTE_A_kills_exactly_the_timing_atoms": true,
+   "ROUTE_A_moved_invariant_atoms": [
+    [
+     700,
+     540
+    ],
+    [
+     702,
+     254
+    ],
+    [
+     1100,
+     558
+    ]
+   ],
+   "ROUTE_B_every_witness_is_phase_matched": true,
+   "ROUTE_B_rows": [
+    {
+     "atom": [
+      300,
+      715
+     ],
+     "boundaries_are_phase_matched": true,
+     "collisions": 339,
+     "witness_boundaries": [
+      307,
+      648,
+      758
+     ],
+     "witness_branch0_pattern": 25,
+     "witness_branch1_patterns": [
+      6,
+      22
+     ],
+     "witness_phase": 10
+    },
+    {
+     "atom": [
+      700,
+      475
+     ],
+     "boundaries_are_phase_matched": true,
+     "collisions": 253,
+     "witness_boundaries": [
+      706,
+      1201
+     ],
+     "witness_branch0_pattern": 246,
+     "witness_branch1_patterns": [
+      233,
+      249
+     ],
+     "witness_phase": 2
+    },
+    {
+     "atom": [
+      702,
+      450
+     ],
+     "boundaries_are_phase_matched": true,
+     "collisions": 253,
+     "witness_boundaries": [
+      708,
+      1203
+     ],
+     "witness_branch0_pattern": 246,
+     "witness_branch1_patterns": [
+      233,
+      249
+     ],
+     "witness_phase": 4
+    },
+    {
+     "atom": [
+      702,
+      715
+     ],
+     "boundaries_are_phase_matched": true,
+     "collisions": 232,
+     "witness_boundaries": [
+      703,
+      835,
+      1759,
+      1781
+     ],
+     "witness_branch0_pattern": 50,
+     "witness_branch1_patterns": [
+      17,
+      33,
+      49
+     ],
+     "witness_phase": 10
+    },
+    {
+     "atom": [
+      1100,
+      558
+     ],
+     "boundaries_are_phase_matched": true,
+     "collisions": 3,
+     "witness_boundaries": [
+      1108,
+      1130,
+      1141,
+      1152
+     ],
+     "witness_branch0_pattern": 1,
+     "witness_branch1_patterns": [
+      14,
+      194
+     ],
+     "witness_phase": 8
+    },
+    {
+     "atom": [
+      1100,
+      715
+     ],
+     "boundaries_are_phase_matched": true,
+     "collisions": 86,
+     "witness_boundaries": [
+      1106,
+      1744
+     ],
+     "witness_branch0_pattern": 126,
+     "witness_branch1_patterns": [
+      157,
+      189
+     ],
+     "witness_phase": 6
+    }
+   ],
+   "certificate": "I_NON_EXISTENCE_ROUTES",
+   "pass": true
+  },
+  "J_SYMMETRIC_ENCODING": {
+   "MY_INDEPENDENTLY_CHOSEN_GAUGE_WIRE": 3295,
+   "SMUGGLING_AUDIT": {
+    "A_LIVE_GAUGE_WIRE_IS_NOT_AVAILABLE": "the tooth below instantiates COCHOICE at a LIVE wire and the battery BREAKS.  So the symmetric encoding exists only at inert wires: 'both words nonzero AND both live' is not reachable on this substrate.",
+    "BUT_THE_ESCAPE_IS_ITSELF_GAUGE": "the encoding makes branch 0's word nonzero by writing a wire that NO gate reads and NO readout counts.  A2's hypothesis is literally false under this encoding, which is the primary's point and it stands; the mirror reading is that the nonzero-ness bought is causally void.  Both readings agree that A2 carries no physical content, and both are carried here.",
+    "M1_M2_M3_M4_are_untouched": true,
+    "the_new_template_needs_only_a_compile_time_constant": "COCHOICE(k) = S_k XOR CHOICE(k).  S_k is the occasion's declared support word, fixed at compile time and equal on every branch, so the emitter carries no branch datum.  No tape, no per-branch state, no extra input stream."
+   },
+   "backward_compatibility_battery": {
+    "LEAF_DIGEST_LIST_IS_BYTE_IDENTICAL": true,
+    "M1_one_law_one_chunk_text_per_occasion": true,
+    "M4_children_from_identical_parent_state": true,
+    "branch_nodes": 75,
+    "branch_nodes_match": true,
+    "declared_window_boundaries": 1925,
+    "distinct_leaf_build_digests": 64,
+    "distinct_match": true,
+    "leaf_digest_list_sha256": "1cb586da212e2a6bab77ebb81cfcad53e05d7e1e8e1d71f1fd3d04d6fe5d7cc8",
+    "leaves": 256,
+    "leaves_match": true
+   },
+   "branch_words": {
+    "A2_HYPOTHESIS_IS_FALSE_UNDER_THIS_ENCODING": true,
+    "BOTH_BRANCH_WORDS_ARE_NONZERO": true,
+    "when_CHOICE_is_the_support": {
+     "endpoints": 172364133221937103085272756482216056112753534658909761028039668631756215232006744379020625060744018369805777923479247838020220755974022884986972234404720831691332769255536872593544438018353486799545737272878084128768,
+     "gauge": 0
+    },
+    "when_CHOICE_is_zero": {
+     "endpoints": 0,
+     "gauge": 172364133221937103085272756482216056112753534658909761028039668631756215232006744379020625060744018369805777923479247838020220755974022884986972234404720831691332769255536872593544438018353486799545737272878084128768
+    }
+   },
+   "certificate": "J_SYMMETRIC_ENCODING",
+   "divergence_under_the_symmetric_encoding": {
+    "equals_the_apply_or_dont_support_plus_the_gauge_wire": true,
+    "lanes": [
+     715
+    ],
+    "support": [
+     1,
+     6,
+     124,
+     125,
+     202,
+     236,
+     255,
+     256,
+     3295
+    ],
+    "the_gauge_wire_is_the_ONLY_addition": true
+   },
+   "eligible_inert_gauge_wires": 5039,
+   "gauge_wire_is_genuinely_inert": true,
+   "gauge_wire_is_inert": {
+    "appears_in_no_emitted_statement_of_the_plain_cycle": true,
+    "in_bank_dirty": false,
+    "in_global_dirty": false,
+    "in_slot_wires": false,
+    "tick0_value_is_zero": true,
+    "touched_by_any_gate": false
+   },
+   "pass": true,
+   "the_primarys_gauge_wire_394_is_in_my_eligible_set": true
+  },
+  "K_AXIOMS": {
+   "ATTACK_ON_THE_PRIMARYS_LAW_INVARIANCE_ARGUMENT": {
+    "BUT_IT_OVERREACHES": "the clause does not have to mean Sym(S).  The two twin clauses in Lattice and Qubit read 'distinguished by the supplied STRUCTURE alone', which names the automorphism group of the supplied structure, not all bijections.  Under that reading the clause DOES supply naturality -- with respect to structure automorphisms -- and the primary's dichotomy misses it.  A third reading is that the sentence is about DOMAIN TOTALITY, since its own second half is 'its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer'; on that reading it supplies no naturality at all, and the primary's conclusion is right for a better reason than the one it gives.",
+    "DOES_THIS_CHANGE_THE_SUBSTRATE_RESULT": "NO.  Under the structure-automorphism reading the map that would swap the menu still has to commute with the law, and I measured that it does not.  The refutation is of the primary's ARGUMENT, not of its conclusion.",
+    "the_argument_is_VALID_under_one_reading": "if 'privileges no states' means the law commutes with EVERY bijection of the state space, then for any law L and any x with L(x) = y != x, choose a transposition moving y and fixing x; commutation fails.  So L is the identity.  Correct, and I reproduce it.",
+    "the_primarys_argument_is_overreaching": true,
+    "the_primarys_claim": "that the invariance reading of 'A law privileges no states' is fatal for EVERY possible non-trivial law, hence the clause cannot supply naturality for state-space maps."
+   },
+   "THE_FINDING": "NONE of the four axioms orients the two menu items, and the pinned note says so EXPLICITLY rather than by omission: under 'Open Gates Outside The Axioms' it lists 'formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate)' as outside axiom content.  That is a stronger negative than any argument from the non-privilege clauses, and it is the clause the primary's re-read does not lean on.",
+   "THE_NEAREST_CANDIDATE_FOR_AN_ORIENTING_CLAUSE": {
+    "clause": "Admissibility",
+    "does_it_orient_the_menu": false,
+    "why_it_is_the_nearest": "'the available possibilities are determined by, and vary with, the nearest-neighbor conditions' does let a CONDITION make one of the two unavailable.  But that orients relative to a supplied neighborhood condition, which the axioms do not fix.  It is condition-relative, not intrinsic, so it cannot orient the menu as such."
+   },
+   "THE_QUBIT_CLAUSE_CUTS_THE_OTHER_WAY": {
+    "and_still_leaves_the_record_apparatus_free_to_orient": true,
+    "reading": "'No possibility is privileged.  Possibilities are distinguished by the supplied algebraic structure alone.'  The supplied structure is M_2(C), whose two menu items are exchanged by an INNER automorphism.  So the possibility domain supplies a swap and no orientation.  The substrate's asymmetry is therefore not a Qubit-axiom fact at all -- it lives in the record apparatus, which is Record-axiom territory, and Record says nothing about symmetry.",
+    "supports_the_owners_intuition_at_the_possibility_level": true
+   },
+   "VERDICT": "the four axioms do NOT distinguish the two menu items.  CONFIRMED, by an explicit exclusion clause the primary did not cite.",
+   "all_quotes_verbatim": true,
+   "byte_quotes": {
+    "Admissibility_available_possibilities": "For each site, the available possibilities are determined by, and vary with,\nthe nearest-neighbor conditions.",
+    "Lattice_no_site_is_privileged": "No site is privileged. Sites are distinguished by the supplied lattice\nstructure alone.",
+    "Open_gates_formation_rules_are_outside": "context selection, measurement basis selection, Born weights, probability\n  rules, update laws, decoherence mechanisms, and formation rules (which\n  admissible possibility a new record locks, at which site, with what weight,\n  or at what rate);",
+    "Qualification_a_law_privileges_no_states": "A law privileges no states. Its domain is a supplied condition, and at every\nstate where the condition holds it gives exactly one answer.",
+    "Qualification_a_state_is_a_configuration_of_records": "A state is a configuration of records.",
+    "Qubit_no_possibility_is_privileged": "No possibility is privileged. Possibilities are distinguished by the supplied\nalgebraic structure alone.",
+    "Record_locks_exactly_one": "When present, a record locks exactly one admissible local possibility. A\nsite never carries more than one record; records are permanent."
+   },
+   "certificate": "K_AXIOM_RE_READ",
+   "mechanical_orienting_word_scan": {
+    "asymmetr": 0,
+    "bias": 0,
+    "chirality": 0,
+    "default": 0,
+    "first": 0,
+    "handed": 0,
+    "left": 0,
+    "orient": 0,
+    "orientation": 0,
+    "prefer": 0,
+    "preferred": 0,
+    "privileged": 2,
+    "right": 0
+   },
+   "pass": true,
+   "quote_rows": [
+    {
+     "chars": 87,
+     "key": "Lattice_no_site_is_privileged",
+     "verbatim_in_the_pinned_axioms": true
+    },
+    {
+     "chars": 104,
+     "key": "Qubit_no_possibility_is_privileged",
+     "verbatim_in_the_pinned_axioms": true
+    },
+    {
+     "chars": 109,
+     "key": "Admissibility_available_possibilities",
+     "verbatim_in_the_pinned_axioms": true
+    },
+    {
+     "chars": 136,
+     "key": "Record_locks_exactly_one",
+     "verbatim_in_the_pinned_axioms": true
+    },
+    {
+     "chars": 137,
+     "key": "Qualification_a_law_privileges_no_states",
+     "verbatim_in_the_pinned_axioms": true
+    },
+    {
+     "chars": 38,
+     "key": "Qualification_a_state_is_a_configuration_of_records",
+     "verbatim_in_the_pinned_axioms": true
+    },
+    {
+     "chars": 244,
+     "key": "Open_gates_formation_rules_are_outside",
+     "verbatim_in_the_pinned_axioms": true
+    }
+   ]
+  },
+  "L_940_FAMILY": {
+   "EVERY_940_FAMILY_IS_relabelling": true,
+   "PRECISION_CORRECTION": {
+    "add_candidate_signature": [
+     "name",
+     "kind_",
+     "pi",
+     "purpose",
+     "expectation",
+     "notes"
+    ],
+    "the_primary_says": "family='relabelling' appears in 940's receipt AND in its source add_candidate() calls",
+    "what_940s_BYTES_actually_show": "the six add_candidate() calls pass the family as the SECOND POSITIONAL ARGUMENT (the parameter is named kind_); no call site spells the keyword 'family'.  The value reaching the receipt is 'relabelling' for all six, so the primary's CONCLUSION is right; its description of where the label sits in the source is loose."
+   },
+   "ZERO_VALUE_SPACE_MAPS_IN_940": true,
+   "add_candidate_call_count": 6,
+   "candidate_names_from_940s_SOURCE": [
+    "IDENTITY",
+    "LR_SWAP",
+    "LR_SWAP_PLUS_BANK_UV",
+    "LR_SWAP_PLUS_BANK_UV_AND_BANK1",
+    "REFINEMENT_CLASS_INVOLUTION",
+    "BANK_CELL_SWAP"
+   ],
+   "candidates_in_940s_receipt": [
+    "BANK_CELL_SWAP",
+    "IDENTITY",
+    "LR_SWAP",
+    "LR_SWAP_PLUS_BANK_UV",
+    "LR_SWAP_PLUS_BANK_UV_AND_BANK1",
+    "REFINEMENT_CLASS_INVOLUTION"
+   ],
+   "certificate": "L_THE_940_FAMILY",
+   "definition_of_a_substrate_automorphism": "a relabelling (pi on wire addresses, sigma on lane positions) such that (a) the compiled program is invariant -- reported under BOTH readings, the ordered per-station statement lists and the per-station gate multiset, with neither privileged -- and (b) the tick-0 state is invariant.  Such a map carries trajectories to trajectories and therefore acts on the tree.",
+   "envariance_note_mentions_a_swap": true,
+   "families_in_940s_receipt": [
+    "relabelling"
+   ],
+   "pass": true,
+   "the_definition_begins_with_a_relabelling": true
+  },
+  "M_PARAMETRIC_FIREWALL": {
+   "certificate": "M_PARAMETRIC_FIREWALL",
+   "float_literals_in_this_runner": 0,
+   "fraction_label": "bookkeeping fraction, not probability",
+   "no_unfenced_weight_value": true,
+   "no_weight_value_appears_at_all": true,
+   "pass": true,
+   "rule": "no weight value may appear as law content; any numeric weight must sit under a key path containing CONDITIONAL or HYPOTHETICAL.  Zero float literals in this runner; exact rationals only.",
+   "scope_note": "runtime timings are excluded from the science payload and from this scan; they are elapsed seconds, not law content.",
+   "weight_values_outside_a_conditional_fence": [],
+   "zero_float_literals": true
+  },
+  "N_TEETH": {
+   "certificate": "N_FALSIFIERS",
+   "pass": true,
+   "teeth": [
+    {
+     "detail": "chi = full flip on LEFT(1), a TOF control with a full CTRLMASK; the semantic test refuses it",
+     "fired": true,
+     "tooth": "T1_planted_chi_on_a_control_wire_must_not_commute"
+    },
+    {
+     "detail": "chi on untouched wires 0,9 commutes as it must; if this had failed the instrument would be broken",
+     "fired": true,
+     "tooth": "T2_POSITIVE_CONTROL_untouched_wire_must_commute"
+    },
+    {
+     "detail": "a divergence planted on wire 1000 is reported as [1000]",
+     "fired": true,
+     "tooth": "T3_planted_extra_divergent_wire_is_seen_by_the_support_scanner"
+    },
+    {
+     "detail": "the measured lock is 1811; the tampered value 1812 does not match the pinned 1811",
+     "fired": true,
+     "tooth": "T4_tampered_lock_boundary_is_rejected"
+    },
+    {
+     "detail": "gauge at the inert wire 394 reproduces the leaf digest list byte for byte; gauge at the LIVE wire 131 (BANK0.DIRECTION_OK) does not -- so the battery is sensitive",
+     "fired": true,
+     "tooth": "T5_COCHOICE_at_a_LIVE_wire_breaks_the_battery"
+    },
+    {
+     "detail": "unfenced planted weight flagged at ['/weights/mu']; the same value under a CONDITIONAL fence is not flagged",
+     "fired": true,
+     "tooth": "T6_parametric_firewall_catches_an_unfenced_weight"
+    },
+    {
+     "detail": "a one-bit flip in the pinned 936 runner breaks both the sha256 and the git blob",
+     "fired": true,
+     "tooth": "T7_tampered_pin_is_rejected"
+    },
+    {
+     "detail": "planted witness (210, [301, 666, 712]) spans several phases and is refused; the 339 genuine witnesses are phase matched",
+     "fired": true,
+     "tooth": "T8_a_NON_phase_matched_collision_is_rejected_as_a_witness"
+    },
+    {
+     "detail": "the constant-XOR map fitted at the first post-choice boundary is refused at boundary 302",
+     "fired": true,
+     "tooth": "T9_planted_surviving_Theta_is_rejected_by_the_search"
+    },
+    {
+     "detail": "TOF(40,6)->124 with both controls flipped does not commute",
+     "fired": true,
+     "tooth": "T10_both_controls_of_one_TOF_do_not_cancel"
+    },
+    {
+     "detail": "the clean relation is affine; flipping ONE bit of ONE branch-1 state makes the GF(2) system inconsistent, so the affine finding is not a vacuous fit",
+     "fired": true,
+     "tooth": "T11_planted_affine_defect_makes_the_fit_INCONSISTENT"
+    },
+    {
+     "detail": "394 passes the inertness predicate; 124 (BANK0.U_TO_V) and 131 (BANK0.DIRECTION_OK) do not",
+     "fired": true,
+     "tooth": "T12_a_live_wire_claimed_inert_is_rejected"
+    },
+    {
+     "detail": "a fabricated SHIFT-style gate moves a lane-254 difference into lane 253; the lane-confinement instrument sees it",
+     "fired": true,
+     "tooth": "T13_a_planted_cross_lane_shift_is_caught"
+    },
+    {
+     "detail": "inserting an X on wire 131 between the two source-pointer gates breaks both the adjacency test and the nothing-between test",
+     "fired": true,
+     "tooth": "T14_tampered_source_pointer_pair_is_rejected"
+    }
+   ],
+   "teeth_fired": 14,
+   "teeth_total": 14
+  },
+  "O_DOUBLE_RUN": {
+   "certificate": "O_DOUBLE_RUN",
+   "digest_is_timing_free": true,
+   "identical": true,
+   "pass": true,
+   "pass1_digest": "9915189791141ee7d4982f225a89394cf783cdf443091b1fcb5532e59b4260ea",
+   "pass2_digest": "9915189791141ee7d4982f225a89394cf783cdf443091b1fcb5532e59b4260ea"
+  },
+  "P_RUNTIME": {
+   "budget_sec": 900,
+   "certificate": "P_RUNTIME",
+   "elapsed_sec": 332.82,
+   "pass": true,
+   "timings": {
+    "lift_and_machinery": 0.057,
+    "science::B": 0.108,
+    "science::C": 0.499,
+    "science::D": 31.401,
+    "science::E": 0.071,
+    "science::F": 17.579,
+    "science::G": 0.556,
+    "science::H": 0.748,
+    "science::I": 0.011,
+    "science::J": 93.444,
+    "science::K": 0.0,
+    "science::L": 0.011,
+    "science_pass_1": 144.434,
+    "science_pass_2": 144.369,
+    "substrate": 13.56,
+    "teeth": 29.854
+   },
+   "within_budget": true
+  }
+ },
+ "claim_type": "bounded_theorem_check",
+ "claim_verdicts": {
+  "C10_the_axioms_do_not_orient_the_menu": {
+   "REFUTATION_OF_THE_LAW_INVARIANCE_ARGUMENT": {
+    "BUT_IT_OVERREACHES": "the clause does not have to mean Sym(S).  The two twin clauses in Lattice and Qubit read 'distinguished by the supplied STRUCTURE alone', which names the automorphism group of the supplied structure, not all bijections.  Under that reading the clause DOES supply naturality -- with respect to structure automorphisms -- and the primary's dichotomy misses it.  A third reading is that the sentence is about DOMAIN TOTALITY, since its own second half is 'its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer'; on that reading it supplies no naturality at all, and the primary's conclusion is right for a better reason than the one it gives.",
+    "DOES_THIS_CHANGE_THE_SUBSTRATE_RESULT": "NO.  Under the structure-automorphism reading the map that would swap the menu still has to commute with the law, and I measured that it does not.  The refutation is of the primary's ARGUMENT, not of its conclusion.",
+    "the_argument_is_VALID_under_one_reading": "if 'privileges no states' means the law commutes with EVERY bijection of the state space, then for any law L and any x with L(x) = y != x, choose a transposition moving y and fixing x; commutation fails.  So L is the identity.  Correct, and I reproduce it.",
+    "the_primarys_argument_is_overreaching": true,
+    "the_primarys_claim": "that the invariance reading of 'A law privileges no states' is fatal for EVERY possible non-trivial law, hence the clause cannot supply naturality for state-space maps."
+   },
+   "nearest_candidate": {
+    "clause": "Admissibility",
+    "does_it_orient_the_menu": false,
+    "why_it_is_the_nearest": "'the available possibilities are determined by, and vary with, the nearest-neighbor conditions' does let a CONDITION make one of the two unavailable.  But that orients relative to a supplied neighborhood condition, which the axioms do not fix.  It is condition-relative, not intrinsic, so it cannot orient the menu as such."
+   },
+   "qubit_clause": {
+    "and_still_leaves_the_record_apparatus_free_to_orient": true,
+    "reading": "'No possibility is privileged.  Possibilities are distinguished by the supplied algebraic structure alone.'  The supplied structure is M_2(C), whose two menu items are exchanged by an INNER automorphism.  So the possibility domain supplies a swap and no orientation.  The substrate's asymmetry is therefore not a Qubit-axiom fact at all -- it lives in the record apparatus, which is Record-axiom territory, and Record says nothing about symmetry.",
+    "supports_the_owners_intuition_at_the_possibility_level": true
+   },
+   "the_finding": "NONE of the four axioms orients the two menu items, and the pinned note says so EXPLICITLY rather than by omission: under 'Open Gates Outside The Axioms' it lists 'formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate)' as outside axiom content.  That is a stronger negative than any argument from the non-privilege clauses, and it is the clause the primary's re-read does not lean on.",
+   "verdict": "SURVIVES; THE PRIMARY'S SUPPORTING ARGUMENT IS OVERREACHING"
+  },
+  "C1_940s_family_is_relabelling_only": {
+   "evidence": {
+    "add_candidate_calls": 6,
+    "definition_begins_with_a_relabelling": true,
+    "families_in_the_receipt": [
+     "relabelling"
+    ]
+   },
+   "precision_correction": {
+    "add_candidate_signature": [
+     "name",
+     "kind_",
+     "pi",
+     "purpose",
+     "expectation",
+     "notes"
+    ],
+    "the_primary_says": "family='relabelling' appears in 940's receipt AND in its source add_candidate() calls",
+    "what_940s_BYTES_actually_show": "the six add_candidate() calls pass the family as the SECOND POSITIONAL ARGUMENT (the parameter is named kind_); no call site spells the keyword 'family'.  The value reaching the receipt is 'relabelling' for all six, so the primary's CONCLUSION is right; its description of where the label sits in the source is loose."
+   },
+   "verdict": "SURVIVES"
+  },
+  "C2_the_commutation_IFF": {
+   "REFUTATION_1_THE_IFF_IS_NOT_AN_IFF": {
+    "HONEST_LIMIT": "commutation for those wires is MEASURED, not proved: a closed-form replacement criterion is not constructed here.  The count falls monotonically as trials are added (367 at one trial, 334 at eight, 309 at sixty-four) and appears to settle just above three hundred.  Non-commuting wires fail on the FIRST trial in every case observed, so the surviving set is not an artefact of weak testing.",
+    "MECHANISM": {
+     "CTRLMASK_popcount": 749,
+     "MECHANISM": "the compiled macro is a compute / uncompute LADDER: the gate in which this wire is a control occurs twice, with identical operands and identical mask, and the whole block between the two occurrences is a palindrome.  The perturbation runs up the ladder and is undone coming back down, so the flip commutes with the full cycle even though the wire is a control on every lane.",
+     "control_incidences_in_chunk_0": [
+      56,
+      110
+     ],
+     "criterion_says_it_cannot_commute": true,
+     "the_block_between_them_is_a_PALINDROME": true,
+     "the_two_gates_are_identical": true,
+     "wire": 47
+    },
+    "NECESSITY_IS_FALSE": "commutation does NOT imply the criterion.  Hundreds of wires whose CTRLMASK is the full lane universe carry a commuting full-lane flip.  The primary calls its condition 'a COMPLETE characterisation, not a search'.  It is not: it is a SUFFICIENT condition that over-excludes by a factor of well over a hundred.",
+    "SUFFICIENCY_HOLDS": "chi[w] & CTRLMASK[w] == 0 for all w IMPLIES commutation -- that direction is a gate-by-gate theorem and no counterexample exists here.",
+    "engine_cross_checked_against_brute_force_semantics": true,
+    "every_one_of_them_is_EXCLUDED_by_the_criterion": true,
+    "independent_random_states_per_wire": 47936,
+    "protocol": "exact difference propagation for all 545 touched wires at once, against 64 independent full-width pseudo-random column vectors; each column carries 749 independent lanes, so each wire is tested on 47936 independent random states.",
+    "the_excluded_but_commuting_wires": [
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     91,
+     92,
+     139,
+     140,
+     141,
+     142,
+     143,
+     144,
+     145,
+     146,
+     147,
+     148,
+     149,
+     150,
+     151,
+     152,
+     153,
+     178,
+     179,
+     180,
+     181,
+     182,
+     183,
+     184,
+     185,
+     186,
+     187,
+     188,
+     189,
+     212,
+     213,
+     214,
+     215,
+     216,
+     217,
+     218,
+     219,
+     220,
+     221,
+     222,
+     223,
+     270,
+     271,
+     272,
+     273,
+     274,
+     275,
+     276,
+     277,
+     278,
+     279,
+     280,
+     281,
+     282,
+     283,
+     284,
+     285,
+     286,
+     287,
+     1614,
+     1615,
+     1616,
+     1617,
+     1618,
+     1619,
+     1620,
+     1621,
+     1622,
+     1623,
+     1624,
+     1625,
+     1626,
+     1627,
+     1628,
+     1629,
+     1630,
+     1631,
+     1632,
+     1633,
+     1634,
+     1635,
+     1636,
+     1637,
+     1638,
+     1639,
+     1640,
+     1641,
+     1642,
+     1643,
+     1644,
+     1645,
+     1646,
+     1647,
+     1648,
+     1649,
+     1650,
+     1651,
+     1652,
+     1653,
+     1654,
+     1655,
+     1656,
+     1657,
+     1658,
+     1659,
+     1660,
+     1661,
+     1662,
+     1663,
+     1664,
+     1665,
+     1666,
+     1667,
+     1668,
+     1669,
+     1670,
+     1671,
+     1672,
+     1673,
+     1674,
+     1675,
+     1676,
+     1677,
+     1678,
+     1679,
+     1680,
+     1681,
+     1682,
+     1683,
+     1684,
+     1685,
+     1686,
+     1687,
+     1688,
+     1689,
+     1690,
+     1691,
+     1692,
+     1693,
+     1694,
+     1695,
+     1696,
+     1697,
+     1698,
+     1699,
+     1700,
+     1701,
+     1702,
+     1703,
+     1704,
+     1705,
+     1706,
+     1707,
+     1708,
+     1709,
+     1710,
+     1711,
+     1712,
+     1713,
+     1714,
+     1715,
+     1716,
+     1717,
+     1718,
+     1719,
+     1720,
+     1721,
+     1722,
+     1723,
+     1724,
+     1725,
+     1726,
+     1727,
+     1728,
+     1729,
+     1730,
+     1731,
+     1732,
+     1733,
+     1734,
+     1735,
+     1736,
+     1737,
+     1738,
+     1739,
+     1740,
+     1741,
+     1742,
+     1743,
+     1744,
+     1745,
+     1746,
+     1747,
+     1748,
+     1749,
+     1750,
+     1751,
+     1767,
+     1768,
+     1769,
+     1770,
+     1771,
+     1772,
+     1773,
+     1774,
+     1775,
+     1776,
+     1777,
+     1778,
+     1779,
+     1780,
+     1805,
+     1806,
+     1807,
+     1808,
+     1809,
+     1810,
+     1811,
+     1812,
+     1813,
+     1814,
+     1815,
+     1816,
+     1817,
+     1818,
+     1819,
+     1820,
+     1821,
+     1822,
+     1823,
+     1824,
+     1825,
+     1826,
+     1827,
+     1828,
+     1829,
+     1830,
+     1831,
+     1832,
+     1833,
+     1834,
+     1835,
+     1836,
+     1837,
+     1838,
+     1839,
+     1840,
+     1841,
+     1842,
+     1843,
+     1844,
+     1845,
+     1846,
+     1847,
+     1848,
+     1849,
+     1850,
+     1851,
+     1852,
+     1853,
+     1854,
+     1855,
+     1856,
+     1857,
+     1858,
+     1859,
+     1860,
+     1861,
+     1862,
+     1863,
+     1864,
+     1865,
+     1866,
+     1867,
+     1868,
+     1869,
+     1870,
+     1871,
+     1872,
+     1873,
+     1874,
+     1875,
+     1876,
+     1877,
+     1878,
+     1879,
+     1880,
+     1881,
+     1882,
+     1884
+    ],
+    "trials": 64,
+    "wires_whose_FULL_LANE_FLIP_COMMUTES_with_the_whole_cycle": 309
+   },
+   "REFUTATION_2_THE_WIRE_CENSUS": {
+    "the_correct_statement_is_STRICTLY_STRONGER": "545 wires are touched; EVERY ONE of them is a control; and every one of their CTRLMASKs is the full 749-lane universe.  So the commutant of the compiled cycle inside the value-flip group is exactly the flips on wires the program never touches -- causally trivial.  The primary's own conclusion is not weakened; its census is wrong by one phantom wire.",
+    "the_primary_claims": "546 wires are touched by the program and exactly ONE of them (wire 0) is never a control",
+    "the_primarys_never_control": [
+     0
+    ],
+    "the_primarys_number": 546,
+    "we_agree_on_the_545": true,
+    "what_I_measure": {
+     "the_difference": [
+      0
+     ],
+     "touched_by_kind_dispatch": 545,
+     "touched_by_the_naive_union_of_a_b_c3": 546,
+     "wires_that_are_never_a_control": []
+    },
+    "why": "WIRE 0 IS NOT TOUCHED AT ALL.  It is the literal zero in the UNUSED operand slots of the compiled 5-tuple: an X gate is (KIND_X, target, 0, 0, mask) and a CNOT is (KIND_CNOT, ctrl, target, 0, mask).  Taking the union of {a,b,c3} without dispatching on the kind manufactures a phantom incidence on wire 0.  There are 13706 X gates and 1254 CNOTs in the compiled cycle, every one of which contributes the phantom.  No gate reads or writes wire 0."
+   },
+   "THE_LOAD_BEARING_COROLLARY_SURVIVES": {
+    "THE_ACTUAL_MENU_SWAP_FLIP_COMMUTES": false,
+    "any_divergence_support_wire_commutes": [],
+    "left_endpoint_flip_commutes": false,
+    "reading": "neither endpoint, and no wire of the divergence support, is in the commuting set, and the actual menu-swap flip (both endpoints, the site's own lane) does NOT commute.  So the primary's downstream conclusion is untouched by the refutation of its characterisation.",
+    "right_endpoint_flip_commutes": false
+   },
+   "both_controls_of_one_TOF_do_not_cancel": true,
+   "criterion_and_semantics_disagreements": 0,
+   "exhaustive_single_wire_disagreements_count": 309,
+   "over_exclusion_hunt": [
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 1
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 6
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 124
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 125
+    },
+    {
+     "commutes_on_the_real_trajectory": true,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": null,
+     "wire": 202
+    },
+    {
+     "commutes_on_the_real_trajectory": true,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": null,
+     "wire": 236
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 255
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 256
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 301,
+     "wire": 131
+    },
+    {
+     "commutes_on_the_real_trajectory": false,
+     "criterion_excludes": true,
+     "first_boundary_at_which_the_flip_stops_being_a_pure_flip": 302,
+     "wire": 132
+    }
+   ],
+   "positive_control": true,
+   "verdict": "REFUTED TWICE.  The 'if' half is a theorem and the downstream corollary survives; the 'only if' half is FALSE, and the wire census is an artefact."
+  },
+  "C3_the_six_endpoint_TOF_patterns": {
+   "endpoints_are_never_a_CNOT_control": true,
+   "gates_per_cycle": 66,
+   "only_targets": [
+    40,
+    124,
+    125
+   ],
+   "patterns": {
+    "[131, 1, 40]": 11,
+    "[131, 6, 40]": 11,
+    "[132, 1, 125]": 11,
+    "[132, 6, 124]": 11,
+    "[40, 1, 125]": 11,
+    "[40, 6, 124]": 11
+   },
+   "verdict": "SURVIVES"
+  },
+  "C3b_the_source_pointer_pair": {
+   "MY_ADDITIONAL_ATTACK": "the pair sits at the END of every chunk, so the three readers of the source pointer inside the chunk (targets 123, 124/125 and 132) all read the value from BEFORE the pair.  The order does NOT spoil the reading.  I also checked the identity EMBEDDED in the full chunk, not only in isolation: the simultaneous endpoint flip leaves c[40] unchanged after the whole chunk runs, on-menu AND off-menu -- the pair reads the endpoints only through LEFT XOR RIGHT, and flipping both preserves that regardless of the menu predicate.",
+   "rows": {
+    "EMBEDDED_IN_THE_FULL_CHUNK_the_flip_preserves_c40_on_menu": true,
+    "EMBEDDED_off_menu_the_flip_also_preserves_c40": true,
+    "ORDER_ANALYSIS": "the pair sits at the very END of every compiled chunk (indices len-3, len-2 of the station macro), so every reader of the source pointer in that chunk -- the gates targeting 123, 124, 125 and 132 -- reads the value from BEFORE the pair, never the value between the two gates.  The 'net contribution' reading is therefore not spoiled by the earlier readers: they are upstream of the write, not inside it.",
+    "all_adjacent": true,
+    "all_share_the_mask": true,
+    "all_share_the_other_control": true,
+    "malformed": [],
+    "net_contribution_is_ctrl_AND_mask_AND_LEFT_XOR_RIGHT": true,
+    "no_reader_of_the_source_pointer_between_them": true,
+    "nothing_between_them": true,
+    "pairs_found": 11,
+    "readers_of_the_source_pointer_AFTER_the_pair_per_chunk": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "readers_of_the_source_pointer_BEFORE_the_pair_per_chunk": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ]
+   },
+   "verdict": "SURVIVES"
+  },
+  "C4_divergence_is_eight_wires_one_lane": {
+   "REFUTATION": {
+    "per_atom_rows": [
+     {
+      "atom": [
+       300,
+       715
+      ],
+      "support": [
+       1,
+       6,
+       124,
+       125,
+       202,
+       236,
+       255,
+       256
+      ]
+     },
+     {
+      "atom": [
+       700,
+       475
+      ],
+      "support": [
+       1,
+       6,
+       124,
+       125,
+       202,
+       236,
+       255,
+       256
+      ]
+     },
+     {
+      "atom": [
+       700,
+       540
+      ],
+      "support": [
+       1,
+       6,
+       124,
+       125
+      ]
+     },
+     {
+      "atom": [
+       702,
+       254
+      ],
+      "support": [
+       1,
+       6,
+       124,
+       125
+      ]
+     },
+     {
+      "atom": [
+       702,
+       450
+      ],
+      "support": [
+       1,
+       6,
+       124,
+       125,
+       202,
+       236,
+       255,
+       256
+      ]
+     },
+     {
+      "atom": [
+       702,
+       715
+      ],
+      "support": [
+       1,
+       6,
+       124,
+       125,
+       202,
+       236,
+       255,
+       256
+      ]
+     },
+     {
+      "atom": [
+       1100,
+       558
+      ],
+      "support": [
+       1,
+       6,
+       124,
+       125,
+       255,
+       256
+      ]
+     },
+     {
+      "atom": [
+       1100,
+       715
+      ],
+      "support": [
+       1,
+       6,
+       124,
+       125,
+       202,
+       236,
+       255,
+       256
+      ]
+     }
+    ],
+    "per_atom_support_sizes": [
+     4,
+     6,
+     8
+    ],
+    "the_claim": "for all 8 atoms the two branches differ ONLY on the 8 wires and on NO other lane",
+    "what_I_measure": "the UNION over the eight atoms is exactly those eight wires and the lane confinement is exact, so the claim is true as stated.  But the per-atom supports are NOT eight: two atoms move FOUR wires {1,6,124,125}, one moves SIX {1,6,124,125,255,256}, and only five move all eight.  Anyone reading 'the two branches differ on eight wires' as a per-atom fact reads it wrong."
+   },
+   "lane_confinement_is_a_THEOREM_not_a_measurement": true,
+   "lanes": [
+    254,
+    450,
+    475,
+    540,
+    558,
+    715
+   ],
+   "union_support": [
+    1,
+    6,
+    124,
+    125,
+    202,
+    236,
+    255,
+    256
+   ],
+   "variants_all_agree": [
+    {
+     "atom": [
+      300,
+      715
+     ],
+     "atom_is_eligible_under_this_layout": true,
+     "lanes": [
+      32
+     ],
+     "one_lane_only": true,
+     "site_lane": 32,
+     "support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "support_within_the_eight": true,
+     "variant": "REVERSE_LAYOUT"
+    },
+    {
+     "atom": [
+      300,
+      715
+     ],
+     "lanes": [
+      715
+     ],
+     "one_lane_only": true,
+     "site_lane": 715,
+     "support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "support_within_the_eight": true,
+     "variant": "M_A_FREE_CONTROL_PROGRAM"
+    },
+    {
+     "atom": [
+      700,
+      540
+     ],
+     "atom_is_eligible_under_this_layout": true,
+     "lanes": [
+      207
+     ],
+     "one_lane_only": true,
+     "site_lane": 207,
+     "support": [
+      1,
+      6,
+      124,
+      125
+     ],
+     "support_within_the_eight": true,
+     "variant": "REVERSE_LAYOUT"
+    },
+    {
+     "atom": [
+      700,
+      540
+     ],
+     "lanes": [
+      540
+     ],
+     "one_lane_only": true,
+     "site_lane": 540,
+     "support": [
+      1,
+      6,
+      124,
+      125
+     ],
+     "support_within_the_eight": true,
+     "variant": "M_A_FREE_CONTROL_PROGRAM"
+    },
+    {
+     "atom": [
+      300,
+      715
+     ],
+     "boundaries": 7400,
+     "lanes": [
+      715
+     ],
+     "one_lane_only": true,
+     "support": [
+      1,
+      6,
+      124,
+      125,
+      202,
+      236,
+      255,
+      256
+     ],
+     "support_within_the_eight": true,
+     "variant": "FOUR_TIMES_THE_DECLARED_WINDOW"
+    }
+   ],
+   "verdict": "SURVIVES AS AN UPPER BOUND; THE PER-ATOM READING IS REFUTED"
+  },
+  "C5_wire_identities_and_the_orientation_split": {
+   "NOTE_ON_THE_PRIMARYS_PROSE": "the receipt's answer text says the orientation wires diverge at 'EXACTLY the three genuine-menu SITES'.  That is five ATOMS at three distinct SITES (715, 475, 450); the three lock-timing sites are 540, 254, 558.  Atom count and site count are both right in their own register; the two are not interchangeable and the receipt uses both.",
+   "atoms_with_orientation_divergence": [
+    [
+     300,
+     715
+    ],
+    [
+     700,
+     475
+    ],
+    [
+     702,
+     450
+    ],
+    [
+     702,
+     715
+    ],
+    [
+     1100,
+     715
+    ]
+   ],
+   "atoms_without": [
+    [
+     700,
+     540
+    ],
+    [
+     702,
+     254
+    ],
+    [
+     1100,
+     558
+    ]
+   ],
+   "verdict": "SURVIVES",
+   "wire_identity_gate": {
+    "gate": "wire_identities",
+    "pass": true,
+    "pinned": {
+     "BANK0.DIRECTION_OK": 131,
+     "BANK0.POINTER": 123,
+     "BANK0.U_TO_V": 124,
+     "BANK0.V_TO_U": 125,
+     "BANK1.U_TO_V": 255,
+     "BANK1.V_TO_U": 256,
+     "BANK1.cell0.orientation": 202,
+     "BANK1.cell1.orientation": 236,
+     "SOURCE_POINTER": 40
+    },
+    "value": {
+     "BANK0.DIRECTION_OK": 131,
+     "BANK0.POINTER": 123,
+     "BANK0.U_TO_V": 124,
+     "BANK0.V_TO_U": 125,
+     "BANK1.U_TO_V": 255,
+     "BANK1.V_TO_U": 256,
+     "BANK1.cell0.orientation": 202,
+     "BANK1.cell1.orientation": 236,
+     "SOURCE_POINTER": 40
+    }
+   }
+  },
+  "C6_the_theta_table": {
+   "MAJOR_FINDING": "A THETA THE PRIMARY MISSED DOES SURVIVE THE WHOLE WINDOW.  It is a lane-local AFFINE map over GF(2) on the gate-target wires of the site's own lane; about three dozen wires suffice (the affine pivots).  It reproduces the branch relation at EVERY boundary of the declared 1925-boundary window for EVERY one of the eight atoms, and at FOUR TIMES the window (7400 boundaries, 6299 distinct branch-0 states, no repeat).  Its structure is: flip both endpoints; EXCHANGE the two bank-0 U_TO_V/V_TO_U bits; EXCHANGE the two bank-1 bits; and flip each ORIENTATION bit by a LINEAR FUNCTIONAL of the wider lane state.  The primary's family could only EXCHANGE the two orientation bits with each other, which is why it broke there.  THE HONEST OTHER HALF: this map is NOT a symmetry.  It fails to commute with the compiled law at most random states and at one-bit perturbations of states on the orbit, so it is an orbit-specific intertwiner, not a law automorphism.  The primary's PHYSICS conclusion stands; its statement that no support-local map survives does not.",
+   "THE_BETTER_THETA_I_FOUND": {
+    "BUT_IT_IS_NOT_A_LAW_SYMMETRY": {
+     "commutes_with_the_law_off_the_orbit": false,
+     "lane_evaluator_reproduces_the_machine": true,
+     "off_orbit_commutation_failures": 100,
+     "off_orbit_random_states_tested": 120,
+     "one_bit_perturbation_failures": 8,
+     "one_bit_perturbations_tested": 55
+    },
+    "FOUND": true,
+    "STRUCTURE": {
+     "bank0_UV_pair_is_EXACTLY_a_swap": true,
+     "bank1_UV_pair_is_EXACTLY_a_swap": true,
+     "endpoints_are_flipped_at_every_boundary": true,
+     "orientation_pair_is_a_swap": false
+    },
+    "affine_rank_at_4x": 37,
+    "affine_rank_in_window": 37,
+    "class": "lane-local AFFINE map over GF(2) on the gate-target wires of the site's own lane",
+    "out_of_sample_boundaries": 7400,
+    "out_of_sample_collisions": 0,
+    "out_of_sample_distinct_branch0_states": 6299,
+    "support_size_needed": 36,
+    "survives_FOUR_TIMES_the_declared_window": true,
+    "survives_the_declared_window": true
+   },
+   "THE_SUPPORT_THRESHOLD_IS_ATOM_DEPENDENT": [
+    {
+     "affine_pivot_support_that_suffices": 36,
+     "atom": [
+      300,
+      715
+     ],
+     "eight_wire_map_exists": false,
+     "eight_wire_phase_dependent_map_exists": false,
+     "twelve_wire_phase_dependent_map_exists": false
+    },
+    {
+     "affine_pivot_support_that_suffices": 39,
+     "atom": [
+      700,
+      475
+     ],
+     "eight_wire_map_exists": false,
+     "eight_wire_phase_dependent_map_exists": false,
+     "twelve_wire_phase_dependent_map_exists": false
+    },
+    {
+     "affine_pivot_support_that_suffices": 26,
+     "atom": [
+      700,
+      540
+     ],
+     "eight_wire_map_exists": true,
+     "eight_wire_phase_dependent_map_exists": true,
+     "twelve_wire_phase_dependent_map_exists": true
+    },
+    {
+     "affine_pivot_support_that_suffices": 26,
+     "atom": [
+      702,
+      254
+     ],
+     "eight_wire_map_exists": true,
+     "eight_wire_phase_dependent_map_exists": true,
+     "twelve_wire_phase_dependent_map_exists": true
+    },
+    {
+     "affine_pivot_support_that_suffices": 39,
+     "atom": [
+      702,
+      450
+     ],
+     "eight_wire_map_exists": false,
+     "eight_wire_phase_dependent_map_exists": false,
+     "twelve_wire_phase_dependent_map_exists": false
+    },
+    {
+     "affine_pivot_support_that_suffices": 36,
+     "atom": [
+      702,
+      715
+     ],
+     "eight_wire_map_exists": false,
+     "eight_wire_phase_dependent_map_exists": false,
+     "twelve_wire_phase_dependent_map_exists": false
+    },
+    {
+     "affine_pivot_support_that_suffices": 36,
+     "atom": [
+      1100,
+      558
+     ],
+     "eight_wire_map_exists": false,
+     "eight_wire_phase_dependent_map_exists": false,
+     "twelve_wire_phase_dependent_map_exists": true
+    },
+    {
+     "affine_pivot_support_that_suffices": 36,
+     "atom": [
+      1100,
+      715
+     ],
+     "eight_wire_map_exists": false,
+     "eight_wire_phase_dependent_map_exists": false,
+     "twelve_wire_phase_dependent_map_exists": false
+    }
+   ],
+   "all_eight_rows_agree": true,
+   "table_agreement": [
+    {
+     "agree": true,
+     "atom": [
+      300,
+      715
+     ],
+     "my_best_swaps": [
+      1,
+      1,
+      0
+     ],
+     "my_breaks_on": [
+      "BANK1.cell0.orientation"
+     ],
+     "my_first_failure": 306,
+     "pinned_first_failure": 306
+    },
+    {
+     "agree": true,
+     "atom": [
+      700,
+      475
+     ],
+     "my_best_swaps": [
+      1,
+      1,
+      0
+     ],
+     "my_breaks_on": [
+      "BANK1.cell0.orientation"
+     ],
+     "my_first_failure": 761,
+     "pinned_first_failure": 761
+    },
+    {
+     "agree": true,
+     "atom": [
+      700,
+      540
+     ],
+     "my_best_swaps": [
+      0,
+      0,
+      0
+     ],
+     "my_breaks_on": [
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U"
+     ],
+     "my_first_failure": 702,
+     "pinned_first_failure": 702
+    },
+    {
+     "agree": true,
+     "atom": [
+      702,
+      254
+     ],
+     "my_best_swaps": [
+      0,
+      0,
+      0
+     ],
+     "my_breaks_on": [
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U"
+     ],
+     "my_first_failure": 705,
+     "pinned_first_failure": 705
+    },
+    {
+     "agree": true,
+     "atom": [
+      702,
+      450
+     ],
+     "my_best_swaps": [
+      1,
+      1,
+      0
+     ],
+     "my_breaks_on": [
+      "BANK1.cell0.orientation"
+     ],
+     "my_first_failure": 763,
+     "pinned_first_failure": 763
+    },
+    {
+     "agree": true,
+     "atom": [
+      702,
+      715
+     ],
+     "my_best_swaps": [
+      0,
+      1,
+      0
+     ],
+     "my_breaks_on": [
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U",
+      "BANK1.cell1.orientation"
+     ],
+     "my_first_failure": 706,
+     "pinned_first_failure": 706
+    },
+    {
+     "agree": true,
+     "atom": [
+      1100,
+      558
+     ],
+     "my_best_swaps": [
+      0,
+      0,
+      0
+     ],
+     "my_breaks_on": [
+      "BANK0.U_TO_V",
+      "BANK0.V_TO_U"
+     ],
+     "my_first_failure": 1102,
+     "pinned_first_failure": 1102
+    },
+    {
+     "agree": true,
+     "atom": [
+      1100,
+      715
+     ],
+     "my_best_swaps": [
+      1,
+      1,
+      0
+     ],
+     "my_breaks_on": [
+      "BANK1.cell0.orientation"
+     ],
+     "my_first_failure": 1113,
+     "pinned_first_failure": 1113
+    }
+   ],
+   "verdict": "TABLE REPRODUCED VALUE FOR VALUE; THE NEGATIVE'S SCOPE IS REFUTED"
+  },
+  "C7_locks_events_items": {
+   "control_lock_table": {
+    "254": 1439,
+    "450": 1808,
+    "475": 1806,
+    "540": 1076,
+    "558": 1425,
+    "715": 1811
+   },
+   "matches": true,
+   "menu_atoms_row": true,
+   "my_own_lane_bookkeeping_agrees_with_the_machine": true,
+   "timing_atoms_row": true,
+   "verdict": "SURVIVES"
+  },
+  "C8_the_two_non_existence_routes": {
+   "SCOPE_CORRECTION": "route B rules out maps that are a function of the eight-wire divergence support, even phase-dependent ones -- confirmed.  The primary then declares the limit at 'arbitrary global state maps'.  That understates it: a lane-local affine map on about three dozen wires already exists.  The correct limit is 'maps of the divergence support', with the next occupied rung about three dozen wires up.",
+   "did_the_primary_overclaim_past_its_limit": "NO -- it declares the limit explicitly and does not argue past it.  But the limit it declares is 'arbitrary global state maps', and the true next rung is about three dozen lane-local wires.  That gap is a real understatement of what route B does not cover.",
+   "every_atom_killed": true,
+   "full_column_duplicates": {
+    "atom": [
+     300,
+     715
+    ],
+    "boundaries": 1625,
+    "distinct_full_column_branch0_states": 1625,
+    "phase_free_duplicates": 0,
+    "phase_matched_duplicates": 0
+   },
+   "route_A": [
+    [
+     700,
+     540
+    ],
+    [
+     702,
+     254
+    ],
+    [
+     1100,
+     558
+    ]
+   ],
+   "route_A_caveat": "the moved invariant is an EVENT COUNT, which is machine bookkeeping derived from the column trajectory, not a column-state function at a fixed boundary.  It rules out any relation that preserves the record bookkeeping.  A pure column-state map with no bookkeeping obligation is NOT ruled out by route A -- and indeed my lane-local affine map exists at the timing atoms too.  Both readings are carried.",
+   "route_B_witnesses_are_phase_matched": true,
+   "verdict": "BOTH ROUTES ARE CLEAN; THE DECLARED SCOPE LIMIT IS UNDERSTATED"
+  },
+  "C9_A2_is_gauge": {
+   "battery": {
+    "LEAF_DIGEST_LIST_IS_BYTE_IDENTICAL": true,
+    "M1_one_law_one_chunk_text_per_occasion": true,
+    "M4_children_from_identical_parent_state": true,
+    "branch_nodes": 75,
+    "branch_nodes_match": true,
+    "declared_window_boundaries": 1925,
+    "distinct_leaf_build_digests": 64,
+    "distinct_match": true,
+    "leaf_digest_list_sha256": "1cb586da212e2a6bab77ebb81cfcad53e05d7e1e8e1d71f1fd3d04d6fe5d7cc8",
+    "leaves": 256,
+    "leaves_match": true
+   },
+   "divergence": {
+    "equals_the_apply_or_dont_support_plus_the_gauge_wire": true,
+    "lanes": [
+     715
+    ],
+    "support": [
+     1,
+     6,
+     124,
+     125,
+     202,
+     236,
+     255,
+     256,
+     3295
+    ],
+    "the_gauge_wire_is_the_ONLY_addition": true
+   },
+   "my_gauge_wire": 3295,
+   "primary_gauge_394_is_eligible": true,
+   "sensitivity": "T5 fires: COCHOICE at the LIVE wire 131 breaks the leaf digest list.",
+   "smuggling_audit": {
+    "A_LIVE_GAUGE_WIRE_IS_NOT_AVAILABLE": "the tooth below instantiates COCHOICE at a LIVE wire and the battery BREAKS.  So the symmetric encoding exists only at inert wires: 'both words nonzero AND both live' is not reachable on this substrate.",
+    "BUT_THE_ESCAPE_IS_ITSELF_GAUGE": "the encoding makes branch 0's word nonzero by writing a wire that NO gate reads and NO readout counts.  A2's hypothesis is literally false under this encoding, which is the primary's point and it stands; the mirror reading is that the nonzero-ness bought is causally void.  Both readings agree that A2 carries no physical content, and both are carried here.",
+    "M1_M2_M3_M4_are_untouched": true,
+    "the_new_template_needs_only_a_compile_time_constant": "COCHOICE(k) = S_k XOR CHOICE(k).  S_k is the occasion's declared support word, fixed at compile time and equal on every branch, so the emitter carries no branch datum.  No tape, no per-branch state, no extra input stream."
+   },
+   "verdict": "SURVIVES"
+  },
+  "C_PROSE_the_primarys_timing_sentence": {
+   "FALSE_CLAUSE": {
+    "clause": "'and before the first bank settle event on the lane'",
+    "measurement": [
+     {
+      "atom": [
+       300,
+       715
+      ],
+      "break": 306,
+      "break_is_before_the_first_bank_event_on_the_lane": false
+     },
+     {
+      "atom": [
+       700,
+       475
+      ],
+      "break": 761,
+      "break_is_before_the_first_bank_event_on_the_lane": false
+     },
+     {
+      "atom": [
+       700,
+       540
+      ],
+      "break": 702,
+      "break_is_before_the_first_bank_event_on_the_lane": true
+     },
+     {
+      "atom": [
+       702,
+       254
+      ],
+      "break": 705,
+      "break_is_before_the_first_bank_event_on_the_lane": true
+     },
+     {
+      "atom": [
+       702,
+       450
+      ],
+      "break": 763,
+      "break_is_before_the_first_bank_event_on_the_lane": false
+     },
+     {
+      "atom": [
+       702,
+       715
+      ],
+      "break": 706,
+      "break_is_before_the_first_bank_event_on_the_lane": false
+     },
+     {
+      "atom": [
+       1100,
+       558
+      ],
+      "break": 1102,
+      "break_is_before_the_first_bank_event_on_the_lane": false
+     },
+     {
+      "atom": [
+       1100,
+       715
+      ],
+      "break": 1113,
+      "break_is_before_the_first_bank_event_on_the_lane": false
+     }
+    ],
+    "per_atom_first_bank_events": [
+     {
+      "atom": [
+       300,
+       715
+      ],
+      "first_bank0_event_on_the_lane": [
+       6,
+       6
+      ],
+      "first_bank1_event_on_the_lane": [
+       312,
+       312
+      ]
+     },
+     {
+      "atom": [
+       700,
+       475
+      ],
+      "first_bank0_event_on_the_lane": [
+       69,
+       69
+      ],
+      "first_bank1_event_on_the_lane": [
+       227,
+       227
+      ]
+     },
+     {
+      "atom": [
+       700,
+       540
+      ],
+      "first_bank0_event_on_the_lane": [
+       1076,
+       719
+      ],
+      "first_bank1_event_on_the_lane": [
+       null,
+       null
+      ]
+     },
+     {
+      "atom": [
+       702,
+       254
+      ],
+      "first_bank0_event_on_the_lane": [
+       1439,
+       743
+      ],
+      "first_bank1_event_on_the_lane": [
+       null,
+       null
+      ]
+     },
+     {
+      "atom": [
+       702,
+       450
+      ],
+      "first_bank0_event_on_the_lane": [
+       71,
+       71
+      ],
+      "first_bank1_event_on_the_lane": [
+       229,
+       229
+      ]
+     },
+     {
+      "atom": [
+       702,
+       715
+      ],
+      "first_bank0_event_on_the_lane": [
+       6,
+       6
+      ],
+      "first_bank1_event_on_the_lane": [
+       312,
+       312
+      ]
+     },
+     {
+      "atom": [
+       1100,
+       558
+      ],
+      "first_bank0_event_on_the_lane": [
+       41,
+       41
+      ],
+      "first_bank1_event_on_the_lane": [
+       44,
+       44
+      ]
+     },
+     {
+      "atom": [
+       1100,
+       715
+      ],
+      "first_bank0_event_on_the_lane": [
+       6,
+       6
+      ],
+      "first_bank1_event_on_the_lane": [
+       312,
+       312
+      ]
+     }
+    ],
+    "why": "on six of the eight atoms the lane's FIRST bank-0 settle event happens at boundary 6, 41, 69 or 71 -- hundreds of boundaries BEFORE the choice occasion itself, let alone before the break.  Only the two atoms whose lane has no bank event until the lock (sites 540 and 254) satisfy the clause."
+   },
+   "LOOSE_GLOSS_1": {
+    "clause": "'the symmetry breaks about five boundaries after the choice'",
+    "measured_boundaries_from_the_choice_to_the_break": [
+     {
+      "atom": [
+       300,
+       715
+      ],
+      "delta": 6
+     },
+     {
+      "atom": [
+       700,
+       475
+      ],
+      "delta": 61
+     },
+     {
+      "atom": [
+       700,
+       540
+      ],
+      "delta": 2
+     },
+     {
+      "atom": [
+       702,
+       254
+      ],
+      "delta": 3
+     },
+     {
+      "atom": [
+       702,
+       450
+      ],
+      "delta": 61
+     },
+     {
+      "atom": [
+       702,
+       715
+      ],
+      "delta": 4
+     },
+     {
+      "atom": [
+       1100,
+       558
+      ],
+      "delta": 2
+     },
+     {
+      "atom": [
+       1100,
+       715
+      ],
+      "delta": 13
+     }
+    ],
+    "reading": "two, three, four, six and thirteen -- but SIXTY ONE at two of the atoms.  'About five' is the median, not the range."
+   },
+   "LOOSE_GLOSS_2": {
+    "clause": "'roughly fifteen hundred boundaries BEFORE the formation lock'",
+    "measured_break_to_lock": [
+     {
+      "atom": [
+       300,
+       715
+      ],
+      "delta": 1505
+     },
+     {
+      "atom": [
+       700,
+       475
+      ],
+      "delta": 1045
+     },
+     {
+      "atom": [
+       700,
+       540
+      ],
+      "delta": 374
+     },
+     {
+      "atom": [
+       702,
+       254
+      ],
+      "delta": 734
+     },
+     {
+      "atom": [
+       702,
+       450
+      ],
+      "delta": 1045
+     },
+     {
+      "atom": [
+       702,
+       715
+      ],
+      "delta": 1105
+     },
+     {
+      "atom": [
+       1100,
+       558
+      ],
+      "delta": 323
+     },
+     {
+      "atom": [
+       1100,
+       715
+      ],
+      "delta": 698
+     }
+    ],
+    "reading": "fifteen hundred holds for ONE atom.  The range is 323 to 1505.  The clause that DOES hold universally is the weaker one: the break is before the lock at every one of the eight atoms."
+   },
+   "WHAT_SURVIVES": "the load-bearing half of the sentence -- 'there is no extended pre-record segment carrying the symmetry' -- survives: at every atom the break precedes the formation lock, and at every atom the divergence enters the record channels one boundary after the choice.",
+   "the_primarys_sentence": "the owner's 'before the record' does NOT hold as a time window.  The divergence enters the record channels one boundary after the choice, and the symmetry breaks about five boundaries after the choice -- roughly fifteen hundred boundaries BEFORE the formation lock, and before the first bank settle event on the lane.  There is no extended pre-record segment carrying the symmetry: the record apparatus starts distinguishing the branches immediately.",
+   "verdict": "ONE CLAUSE IS FALSE, TWO ARE LOOSE GLOSSES"
+  }
+ },
+ "cycles": [
+  943
+ ],
+ "fraction_label": "bookkeeping fraction, not probability",
+ "headline": "THE PRIMARY'S MEASUREMENTS ALL REPRODUCE; THREE OF ITS GENERAL STATEMENTS DO NOT.  Its Theta table reproduces value for value on all eight atoms, as do its lock table, its event counts, its wire identities, its six endpoint TOF patterns, its source-pointer pair, its symmetric encoding and its axiom verdict.  REFUTATION 1: the commutation THEOREM is not an IFF.  The condition is SUFFICIENT, but 309 of the 545 touched wires -- every one of them excluded by the criterion -- carry a full-lane flip that commutes with the whole compiled cycle, because their control incidences sit inside palindromic compute/uncompute ladders.  The primary calls its condition 'a COMPLETE characterisation, not a search'; it is not.  Its DOWNSTREAM corollary survives: no endpoint, no divergence-support wire, and not the actual menu-swap flip, is in the commuting set.  REFUTATION 2: the wire census is off by a phantom.  Wire 0 is not touched at all -- it is the unused operand padding of the compiled 5-tuple -- so 545 wires are touched, not 546, and NONE of them is never-a-control.  REFUTATION 3: the eight-wire divergence support is a UNION over the eight atoms, not a per-atom fact; two atoms move four wires and one moves six.  MAJOR FINDING: a Theta the primary's family could not express DOES survive the entire window and four times beyond it -- a lane-local AFFINE map over GF(2) on about three dozen wires, whose orientation-wire correction is a LINEAR FUNCTIONAL rather than a pair exchange.  It is NOT a law symmetry: it fails to commute with the compiled law off the orbit.  So the physics conclusion stands and the negative's SCOPE does not.",
+ "provenance": {
+  "envariance_blob": "64b24361f2237d01f079e16b306b5d04e01de7c2",
+  "git_blobs": {
+   "docs/CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md": "ffc0e6d1c3527ef75286abc0e50de0a3a3588f53",
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "4a863da1f3f255354839277271a3a69a5c205133",
+   "docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md": "69e712e1b8f9ecee3488f8698cfe577fac415c07",
+   "outputs/choice_substrate_block_cycle936_ship_receipt_2026_07_28.json": "1421484631b06fc203405c0ffab3a715c979cbed",
+   "outputs/choice_substrate_cycle936_receipt_2026_07_28.json": "d7b786fccc0435d139339c141dbad75c9f8d799b",
+   "outputs/law_relaxation_cycle925_receipt_2026_07_28.json": "fed1b28e9e5cfe731a541645dce705541d69c967",
+   "outputs/symmetric_weights_block_cycle940_ship_receipt_2026_07_28.json": "fa643ec30de44df8111c295225893ba7006d12a1",
+   "outputs/symmetric_weights_cycle940_receipt_2026_07_28.json": "a24af8e08cc090b39802265d8b8d5ea3d1495d53",
+   "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json": "5704619b21d9a3af312956580355d6dd5a303f53",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "scripts/frontier_cycle936_choice_substrate_2026_07_28.py": "75cb05ffb9456691747a67ed5227f3db589f95c4",
+   "scripts/frontier_cycle940_symmetric_weights_2026_07_28.py": "ae09b548aff71354b9942904bc0b2824d7e755ac"
+  },
+  "pins": {
+   "docs/CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md": "6cdec178602e936a07a86c43627b431527a5d328c2b269d0edd594d245831eac",
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+   "docs/R1A3_NEGATIVE_NO_SWAP_AUTOMORPHISM_CYCLE940_BOUNDED_THEOREM_NOTE_2026-07-28.md": "a89185085032947c4fcc34fd99b1507307f70cbaf82dd82e569a37562114ef11",
+   "outputs/choice_substrate_block_cycle936_ship_receipt_2026_07_28.json": "9da5a559f4e87940560aaf75daaaa4332a228cc5ec2a7b50bf744a7cbb164f0a",
+   "outputs/choice_substrate_cycle936_receipt_2026_07_28.json": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028",
+   "outputs/law_relaxation_cycle925_receipt_2026_07_28.json": "f4fabe50ed8b775f2f1288380824ae04f0129f4f136e3b338bafd05647031757",
+   "outputs/symmetric_weights_block_cycle940_ship_receipt_2026_07_28.json": "83c90abbd2d4eba1715cd9ec7c9b25353a397e11ae6a3392d7087250e64f218f",
+   "outputs/symmetric_weights_cycle940_receipt_2026_07_28.json": "08888bf454a7f3c803f5c373d7688d67a9f0d974259f3e455c139d6c78e288cf",
+   "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json": "849ad2bbb4abc8c9eda5541246784e2bdb69feaf423aac7c6f3aff83f6062bbd",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+   "scripts/frontier_cycle936_choice_substrate_2026_07_28.py": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d",
+   "scripts/frontier_cycle940_symmetric_weights_2026_07_28.py": "7c7400984e573dc446330f20423cce5045138682781716ed13ba89bfe877e124"
+  },
+  "primary_receipt_sha256": "fcb47534efdb0618ee1446574a9a4ecd442054a7b4c2f56f9d9c3463d96205cf",
+  "primary_science_digest_at_read_time": "ee2e5ce38f24f371df3a90800bb3b4fe6eb5b0f3ce54f65931e157b0850a4da2"
+ },
+ "role": "INDEPENDENT CHECKER (spec'd to refute)",
+ "science_digest": "9915189791141ee7d4982f225a89394cf783cdf443091b1fcb5532e59b4260ea",
+ "self_sha256": "00f2f26fd5e89bf9ab21b42f90caca8c88152bf7bdb33df4e296e2f5a8009904",
+ "worker": "Claude Opus 5 independent checker under supervisor spec"
+}

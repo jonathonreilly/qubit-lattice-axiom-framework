@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); one spec-framing correction disclosed (a pure product branch predicts zero, not truncated linearity); the sympy galois_group flag trap corrected on record; the timing-leak trap class hard-guarded (third occurrence this window)",
+  "block": "toe-time-blockM13-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 9.6s; 15/15 teeth; the no-CAS no-go confirmation with explicit S5 witnesses; the 60-digit deep-field settlement of E_k (3.0e-16); the overreach audit finding none",
+    "primary": "exit 0, 5.0s; all restriction surfaces at deviation exactly 0 (929 ladder+additivity; 927/929 T(d); 931's 44 s(k) values + 28 identity rows); 21/21 constants seven-way; FOUR propagator routes; 15/15 teeth incl. the planted almost-fitting form (1e-9 caught at 1e-11), the planted product branch (12 orders), and the int8-underflow guard; deterministic across processes"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 13th M-family PR: derives the lane's last empirical values, proves the strongest possible negative alongside (no elementary form exists), ablates the mechanism to an exact zero, and cashes sealed off-grid predictions that complete the star lane's end-to-end derivation; nothing corollary",
+  "cycles": [
+    933
+  ],
+  "files": {
+    "docs/SK_SHAPE_DERIVED_HANKEL_GALOIS_NOGO_CYCLE933_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "99a7693c1756d50f303e8c0a1dce13423aa990a6",
+      "sha256": "53612778c108e55ac33c442dc18ee6a17a09b247ac02f76308cae36c3898a7f3"
+    },
+    "logs/runner-cache/frontier_cycle933_sk_shape_2026_07_28.txt": {
+      "git_blob": "293a05a31d58179d657b43e40dedbfc359f4a6cb",
+      "sha256": "047304b21a8b6ddf1ba1fe3d537066b7c7eadf7fd7e806c0e59d85e8e54b28a9"
+    },
+    "logs/runner-cache/frontier_cycle933_sk_shape_independent_check_2026_07_28.txt": {
+      "git_blob": "53dfbb67b121d409e4b4905c0bb88ee224491f51",
+      "sha256": "30282607cc3a02d8e3bd98c87c4cf369fa4e89b1d7d3754786ac094b48f4ee58"
+    },
+    "outputs/sk_shape_cycle933_receipt_2026_07_28.json": {
+      "git_blob": "3d35d0ffa6a9bc9077c7fa9b7af7e40f00c89c84",
+      "sha256": "5a7e7ab80e2a9cb34cf4a7fc2b720d4d9fda25cefaa0574df71ae3d8a7181297"
+    },
+    "outputs/sk_shape_independent_check_cycle933_receipt_2026_07_28.json": {
+      "git_blob": "2da7f8cc3c63974a0e679ae06cd43ebbc1c466a1",
+      "sha256": "d888524f92b524fbbb39ba4213a517725e9c7ac5b521975470bf44ca6feb27d6"
+    },
+    "scripts/frontier_cycle933_sk_shape_2026_07_28.py": {
+      "git_blob": "9d22268d214c59dd60b32cf7a2e6e67b457d78c8",
+      "sha256": "29ab80e096df2e62362a837426cbda0705f5c4f04726a237f092df1d740e966e"
+    },
+    "scripts/frontier_cycle933_sk_shape_independent_check_2026_07_28.py": {
+      "git_blob": "53d36d7f9ac124237203a89d049b5a798b3583bf",
+      "sha256": "ed391f7bc0c5c88c61e47898f8343d4809c65b99f157c7139499ddfc36748cc7"
+    }
+  },
+  "headline": "s(k) IS DERIVED + NO FORMULA WAS EVER POSSIBLE: the branch lies EXACTLY in Sym^d (6e-17) so s(k) = the entropy of squared singular values of a binomially-weighted HANKEL matrix from a 2(d+1)-dim linear problem \u2014 EXACT at the pinned grade (1.2e-14 over all 44 values); THE GALOIS NO-GO: at the frozen fields as exact rationals the d=4 collective blocks have group S5 \u2014 NOT SOLVABLE \u2014 so no elementary closed form exists for d>=4 (retire the hunt); THE MECHANISM: the pointer's OWN transverse term is the entire entanglement source (lambda_ptr=0 => every s(k) EXACTLY 0; algebraic witness [Z_0,H]=0); reflection s(k)=s(d-k) IS transposition (any symmetric branch, no dynamics); leading order lambda^2 log(1/lambda) NON-ANALYTIC with closed-form coefficients E_k (k-dependence NOT k(d-k) \u2014 10.7% to 76% off); every one-line k-law refuted at grade with the reflection degeneracy disclosed (d=3 fits anything; first genuine test d=6); CONSEQUENCES DERIVED FOR STARS: the full T(d) baseline table (16 rows, 3.0e-14), the 929 ladder (28 rungs, 8.4e-14), the dilution law, and the gate-crossing fields lambda*(d) (7e-15) \u2014 composed with 932, THE STAR CERTIFICATION STRUCTURE IS DERIVED END TO END at the stated grid-phase scope; SEALED: nine off-grid cells incl. T(13..15), the d=13 ladder, and lambda*(d) verified on the untouched full-space route under a hard no-pre-evaluation guard; NON-OVERREACH explicit: s(k) does not decide the pointer-side gates (0.36-bit witness) or non-isomorphic-arm geometries; candidate B kept as a controlled approximation with a DERIVED error law; named residuals: t_open(lambda) + pointer-side gates (the capstone question), the spider extension, the non-star territory",
+  "independence": "checker SUPPORTED, 15/15 teeth, ZERO refutations, ZERO findings \u2014 reversed site order, Krylov/Pade, SVD-only entropies, 50-60-digit mpmath, and a NO-CAS Galois confirmation (exact-Fraction Faddeev-LeVerrier, hand-written mod-p distinct-degree factorisation, Dedekind witnesses); the Sym^d hunt at 1.5e-16 with a working broken-symmetry control; two checker-side instrumentation bugs self-caught and disclosed",
+  "note": "docs/SK_SHAPE_DERIVED_HANKEL_GALOIS_NOGO_CYCLE933_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 9.6,
+    "primary": 5.0
+  }
+}

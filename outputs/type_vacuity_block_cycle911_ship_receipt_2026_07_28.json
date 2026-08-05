@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); a real pinned-artifact defect (the 863 slicing) found by the checker and disclosed in the primary pre-final-run; supervisor line-by-line review",
+  "block": "toe-time-blockQ8-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 49.7s; PASS=63 FAIL=0, PRIMARY_SURVIVES_THIS_CHECK; 85/85 lock states by semantic replay; 8/8 teeth",
+    "primary": "9/9 PASS, exit 0, 104.9s; restriction gates 40/40"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 9th Q-family PR: re-types the lane with a complete branch-matrix theorem, refutes the vacuity prediction with the first exhibited selection site, and relocates the occurrence question to its correct arena; nothing corollary",
+  "cycles": [
+    911
+  ],
+  "files": {
+    "docs/RETYPED_WORLDS_ARE_SETUPS_SELECTION_SITES_EXIST_CYCLE911_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "53a229b4143f59f5f8c12ccb9f488682bdc2714c",
+      "sha256": "40c80402e2dfd283a4309433cfa48705c45567efadf43107e074332f1cbf5ff0"
+    },
+    "logs/runner-cache/frontier_cycle911_type_vacuity_2026_07_28.txt": {
+      "git_blob": "35f84eff9fafe0828998050a63c32cf5dab176a8",
+      "sha256": "269115b5b39ceb8fdb7ac132ce02d7eaca060ac22414627cfd4e7cb571535a67"
+    },
+    "logs/runner-cache/frontier_cycle911_type_vacuity_independent_check_2026_07_28.txt": {
+      "git_blob": "a527c337a364502b11e931adcb7243e2ab73aa77",
+      "sha256": "14053f32681d18e29b451a6b949acaf96cd50e6727d32139fa1202cba45aceac"
+    },
+    "outputs/type_vacuity_cycle911_receipt_2026_07_28.json": {
+      "git_blob": "af51342a72c56db8e562e1f1a607f207508b42ed",
+      "sha256": "90d1fb2a3ac31065f75345ac1e98520622aa6302c50dcf4a8a11f44a1cde11b0"
+    },
+    "outputs/type_vacuity_independent_check_cycle911_receipt_2026_07_28.json": {
+      "git_blob": "c341274e869d09e1fc59fd4c8be3c9dda3a80511",
+      "sha256": "d2800b0a37dd92d7894db0d179aed532e52f94d5675683df7d7d05be32419bf0"
+    },
+    "scripts/frontier_cycle911_type_vacuity_2026_07_28.py": {
+      "git_blob": "3335e9dee5027b935d0eb3c814601b8f8e83b550",
+      "sha256": "6474f1e919c97fcb3336a8cea480b5e824fe48f4ea5ce4592c1b75bc0b0007d1"
+    },
+    "scripts/frontier_cycle911_type_vacuity_independent_check_2026_07_28.py": {
+      "git_blob": "80900cc9cb96f39df283da1d6293818d282587f6",
+      "sha256": "d35ef56622891737df18daebefb14f87503e417a2a332880425de3241cc24ea0"
+    }
+  },
+  "headline": "RE-TYPED: WORLDS-ARE-SETUPS (0 branch pairs among 279,378; the 5,168 tick-0-degenerate pairs differ in scan schedule; the census weightings are initial-condition apportionment \u2014 exactly the averaging the realized-state primitive forbids; P-SAMPLE-SPACE named) \u2014 AND the vacuity prediction REFUTED: |A| = 2 at ALL 164 lock points, the repo's FIRST GENUINE SELECTION SITE exhibited (world 176, boundary 0); the dilemma resolves via its first horn; the O1 correction REVERSES (878's note misquotes the memo, which made occurrence axiom content); the convergence honestly demotes 4-way -> 2-way (symmetry inapplicable; I-CONST conditional on P-PURITY, crack exhibited); the horn stands premise-level and dissolves under the re-typing; audit flags: the 878 misquote + the 863 chunk-slicing artifact; open: the menu-variation gap + O2/O3 at the lock points",
+  "independence": "cross-context (dual no-coupling certification \u2014 AST + runtime perturbation \u2014 with the checker's bipartition/isolation replication; the |A| attack at three offsets under both chunkings; exact rational Bloch/Q(i) arithmetic for the I-CONST crack; 7/7 + 8/8 teeth)",
+  "note": "docs/RETYPED_WORLDS_ARE_SETUPS_SELECTION_SITES_EXIST_CYCLE911_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 49.693,
+    "primary": 104.922
+  }
+}

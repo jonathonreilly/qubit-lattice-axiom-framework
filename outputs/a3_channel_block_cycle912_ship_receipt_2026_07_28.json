@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); one supervisor spec correction disclosed (a paraphrased sentence not in the memo \u2014 the worker formalized the actual bytes); supervisor line-by-line review",
+  "block": "toe-time-blockQ9-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 79.4s; PRIMARY_SURVIVES_THIS_CHECK on all four components; formalization IDENTIFIED; 8/8 teeth",
+    "primary": "exit 0, 209.5s; restriction gates 23/23; falsifier-visibility across all three channel classes"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 8th Q-family PR: first run of the repo's named closing channel, an exact one-sentence gap statement, a provenance correction with a verified recovery, and two corrections to a shipped block's empirical layer; nothing corollary",
+  "cycles": [
+    912
+  ],
+  "files": {
+    "docs/A3_CHANNEL_HALF_FORCED_CYCLE912_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "11bbac7d0af0deb913fc882d9d95e1cbdb34d9c1",
+      "sha256": "90e5eaecb702ddd0c65e380edaca6387c82386f54e81e00d6a7f5c5d4276ce9a"
+    },
+    "logs/runner-cache/frontier_cycle912_a3_channel_2026_07_28.txt": {
+      "git_blob": "f70ffc79172185721bfa8b02a2d72ff38eae16cd",
+      "sha256": "a5d7fc6994f9bbe5bece1c19bf06ab8762ff360c5f031ea7fff59b15038a0e1a"
+    },
+    "logs/runner-cache/frontier_cycle912_a3_channel_independent_check_2026_07_28.txt": {
+      "git_blob": "7bed0e23152ce1a303ad90e0217b3d1918b6424d",
+      "sha256": "4baaa8321c46658d4c81a8c87922b59b1ac104082fa959ff547992f64e9c7137"
+    },
+    "outputs/a3_channel_cycle912_receipt_2026_07_28.json": {
+      "git_blob": "c30da4add97cd238c42a74869b68b69c0ef49556",
+      "sha256": "817b9b938b901a8d92a4dadbb0615243316dbd97a7325027e92a96506a365998"
+    },
+    "outputs/a3_channel_independent_check_cycle912_receipt_2026_07_28.json": {
+      "git_blob": "83b9cc1073b24e565ef3659d61ad76439607d79a",
+      "sha256": "cf0f1cfe88f9d7c2f8160456208a42ef7948361acb8197c99785740246525462"
+    },
+    "scripts/frontier_cycle912_a3_channel_2026_07_28.py": {
+      "git_blob": "03909da2b3edb5a211ed2d652497de1deb687a53",
+      "sha256": "42f22b1660b01fbb7aa315e3957bd5b43b75eee27aeb6fd24b3814f1fbe6f563"
+    },
+    "scripts/frontier_cycle912_a3_channel_independent_check_2026_07_28.py": {
+      "git_blob": "3797e61049cb13baccb1e2cb882cb39898212239",
+      "sha256": "72617e76f7bf6b1fa45ef99b551e77ca2f5d817f26273b576d800b055fb37070"
+    }
+  },
+  "headline": "THE GAP IS ONE SENTENCE: the A3 channel (run for the FIRST time) is PARTIALLY-FORCED \u2014 invisibility forced completely (readouts are functions of content multisets; 92,260 -> 52,018), frequencies not at all (a 52,017-dim simplex, nothing selected); the missing premise is EXACTLY A3; content-measurability: ONLY M1 passes the Record axiom's own readout requirement (caveat DISSOLVED via preimage instrumentation, zero collisions) \u2014 the five-way convergence on the excluded weighting; the stranded envariance note was NEVER DELETED \u2014 never landed (unmerged branch; A3 byte-quoted; PASS=44 verified with an under-count disclosure; landing recommendation emitted); the 613 measurement: 853 effective tries, ZERO native passes (909's '3' were all plants \u2014 stronger than 909 reported), the lemma carries the weight, the exercise's over-hit was model-mixing",
+  "independence": "cross-context (the channel formalized two materially different ways \u2014 per-cell coefficient vectors vs row-space membership \u2014 same dimensions, same verdict: IDENTIFIED; independent preimage instrumentation; independent residue counts; 8/8 + 8/8 teeth)",
+  "note": "docs/A3_CHANNEL_HALF_FORCED_CYCLE912_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 79.4,
+    "primary": 209.5
+  }
+}

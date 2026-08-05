@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner=scripts/frontier_cycle939_carrier_sweep_2026_07_28.py
+cycle=939 block=toe-time-blockAC4-20260802
+PASS A1_SOURCE_NOTES_PINNED :: {'count': 21}
+PASS A2_VENDORED_RECEIPTS_PINNED :: {'count': 4}
+PASS A3_LEDGER_SYMLINK_DISCLOSED :: {'symlink': True, 'exists': True}
+PASS B1_938_RECEIPT_MATCHES_ITS_SHIP_RECEIPT :: {'pinned': '0ff8c7e4fc6e1bf145f7cd931ccd1dd1e82a605ec2bf2d9ed721d30504a50c01', 'observed': '0ff8c7e4fc6e1bf145f7cd931ccd1dd1e82a605ec2bf2d9ed721d30504a50c01'}
+PASS B1x_938_FILE_PINNED_frontier_cycle938_reta_recla :: {'sha256': 'd39974d731b671e4bb259c7e485645525012701cdc20d32080b86a036591894c'}
+PASS B1x_938_FILE_PINNED_RETA_RECLASSIFICATION_REFUTE :: {'sha256': '70c4f6e478096ee8219f5a10403a74ba0428f81b0416d72ef7495f9b7e8ed4b0'}
+PASS B2_938_SCIENCE_DIGEST_REPRODUCES :: {'published': '964b619175e9a325be5b181dd56ad9c028115018aaf8a0759dfbcd28f834d637', 'recomputed': '964b619175e9a325be5b181dd56ad9c028115018aaf8a0759dfbcd28f834d637'}
+PASS B3_938_TOTALS_REPRODUCE :: {'expected': 'TOTAL: PASS=48 FAIL=0', 'found': True}
+PASS B4_938_RECEIPT_RESTORED_BYTE_EXACT :: {'sha256': '0ff8c7e4fc6e1bf145f7cd931ccd1dd1e82a605ec2bf2d9ed721d30504a50c01'}
+PASS B5_938_D3_SPACE_FINDING_REPRODUCED :: {'line_present': True}
+PASS B6_ANGLE_NATIVE_NO_GO_REPRODUCED :: {'observed': 'TOTAL: PASS=128 FAIL=0', 'ledger': 'symlinked (disclosed)'}
+PASS B7_SPECIES_BRIDGE_RUNNER_REPRODUCED :: {'expected': 'TOTAL: PASS=10 FAIL=0', 'found': True}
+PASS B8_INVARIANT_RING_RUNNER_REPRODUCED :: {'expected': 'TOTAL: PASS=8 FAIL=0', 'found': True}
+PASS C1_CORPUS_SIZE :: {'docs_md': 4003}
+PASS C2_SWEEP_FINDS_DOCS_NAMING_BOTH_CARRIERS :: {'count': 46}
+PASS C3_EVERY_REPORTED_QUOTE_BYTE_VERIFIED :: {'quotes': 43, 'unverified': []}
+PASS C4_TOOTH_PLANTED_PRIOR_ART_QUOTE_IS_CAUGHT :: {'planted_quote_found_in_corpus': False, 'mechanism': "the same 'quote in body' test that clears the real table rejects a fabricated one"}
+PASS C5_TOOTH_SWEEP_POSITIVE_CONTROL_FIRES :: {'phrase': 'generation space minus the diagonal singlet', 'documents': ['FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md']}
+PASS C6_PRIOR_ART_IS_SUBSTANTIAL_NOT_INCIDENTAL :: {'prior_attempt': 10, 'blocking': 5, 'gauge': 3}
+PASS C7_NO_SPECIES_BRIDGE_OBLIGATION_IN_REGISTRY :: {'canonical_ids': ['ac_orbit_occupancy_statistical_grain_derivation_obligation', 'ac_reta_hclass_hunit_readout_derivation_obligation', 'theta_quark_determinant_cross_sector_readout_derivation_obligation']}
+PASS D1_ONE_MATRIX_TWO_ROLES :: {'P_cubed_is_I': True, 'orthogonal': True, 'det_one': True, 'fixed_line': True}
+PASS D2_RODRIGUES_GIVES_P :: {'angle': '2*pi/3', 'axis': '(1,1,1)/sqrt(3)'}
+PASS D3_FIXED_LOCUS_CELL_RECOMPUTED :: {'det_R(I-P^k|_N)': ['3', '3'], 'L_C3(N)': '2/9'}
+PASS D4_CIRCULANT_EIGENVALUES_CARRY_THE_C3_CHARACTERS :: {'shift_eigenvalues': ['1', 'omega^-1', 'omega^-2'], 'lambda_k_this_convention': 'a + 2 B cos(delta - 2 pi k/3)', 'published_convention': 'a + 2 B cos(delta + 2 pi k/3)', 'multiset_identical_via': 'k -> {0: 0, 1: 2, 2: 1}', 'note': "the 2 pi k/3 summands ARE the C3 characters of the carrier's own group action; the SIGN of the shift is the orientation convention (Cycle 938's ORIENTATION finding), and only the MULTISET is convention-free"}
+PASS D5_BOTH_AMBIENT_3_SPACES_ARE_THE_SAME_C3_REP :: {'P_in_Fourier_basis': 'diagonal', 'characters': ['1', 'omega', 'omega^2'], 'consequence': "the generation 3-space and the lattice's ambient coordinate 3-space are isomorphic as C3-reps (both the regular rep); the equivariant isomorphisms form (C*)^3 semidirect the normalizer (Z3 relabel x Z2 generator reversal)"}
+PASS D6_CELL_LIVES_ON_THE_DOUBLET_NOT_THE_WHOLE_3_SPACE :: {'generation_carrier_character': '(3,0,0) = chi_0 + chi_w + chi_w^2 (the REGULAR rep)', 'normal_plane_character': '(2,-1,-1) = chi_w + chi_w^2 (the DOUBLET)', 'recomputed_normal_trace': '-1', 'consequence': "the identification is NOT 'generation 3-space = normal plane'. It is 'generation R^3 = ambient R^3', singlet line <-> [111] fixed line, DOUBLET <-> normal plane. Cycle 938's one-line framing elides the singlet summand."}
+PASS D7_O_h_TRAP_THE_IDENTIFICATION_MUST_TRANSPORT_C3_ONLY :: {'commutant_dim_under_C3': 3, 'commutant_dim_under_signed_permutations_O_h': 1, 'reading': "C3 alone leaves the 3-parameter circulant dial (a, |b|, delta); the ambient lattice point group leaves only scalars -- the dial, and delta with it, is destroyed. So a carrier sentence CANNOT be a bare 'the two spaces are the same': it must transport the C3 subgroup ONLY. That restriction is CONTENT, not gauge."}
+PASS E1_NO_CORPUS_OBSERVABLE_IS_IDENTIFICATION_DEPENDENT :: {'tested': 11, 'identification_dependent': [], 'reading': 'every enumerated observable on BOTH sides is invariant under every re-choice of the carrier identification'}
+PASS E2_TOOTH_PLANTED_JOINT_CONSUMER_FLIPS_THE_VERDICT :: {'observable': 'T_PLANTED_axis_indexed_mass', 'witnesses': [{'gauge': 'schur_scalars', 'lattice_gen': 'P', 'normal_basis': 'v1v2', 'base': '24.56254886', 'moved_to': '5.67884258'}, {'gauge': 'schur_scalars', 'lattice_gen': 'P', 'normal_basis': 'skewed', 'base': '24.56254886', 'moved_to': '5.67884258'}, {'gauge': 'schur_scalars', 'lattice_gen': 'P^2', 'normal_basis': 'v1v2', 'base': '24.56254886', 'moved_to': '5.67884258'}], 'reading': "the test CAN detect a joint consumer; it finds none in the corpus's observable list"}
+PASS E2b_A_JOINT_CONSUMER_EXISTS_AND_ITS_CONTENT_IS_THE_EQUALITY :: {'note': 'docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md', 'premise_quote_verbatim': True, 'supplied_not_derived_verbatim': True}
+PASS E3_ANY_FUNCTION_OF_TWO_INVARIANTS_IS_INVARIANT :: {'argument': 'Phi is identification-invariant (A2) and L_C3(N) is identification-invariant (B1); therefore every function of the pair -- including the comparator |Phi - 2/9| -- is identification-invariant. A carrier map cannot be the content of an equation between two invariants.'}
+PASS E4_ASSERTED_VALUE_IS_OBSERVABLE_UNLIKE_THE_MAP :: {'candidates_in_domain': ['2/9', '1/9', '4/9', '2pi/9', '3/10'], 'distinct_mass_multisets': 5, 'reading': 'changing the ASSERTED VALUE moves an observable; changing the IDENTIFICATION MAP does not. The open content is a value/type assignment, not a carrier map.'}
+PASS E5_ALPHA_FAMILY_WITNESS_SURVIVES_THE_GAUGE_QUOTIENT :: {'readouts_I(1,1,1)': {'0': '0', '1/9': '1/3', '1/3': '1', '1': '3', '2/27': '2/9'}, 'fixed_locus_density_member': ['2/27'], 'reading': "the alpha family is defined ON THE SAME SUPPLIED FRAME (no-go's own words), i.e. AFTER any carrier identification. Identifying the carriers changes no member and selects none. A registered value still cannot select the readout -- Cycle 938's refutation is UNWEAKENED and in fact strengthened."}
+PASS F1_NO_OVERREACH_IN_THE_VERDICT_TEXT :: {'forbidden_phrases_found': []}
+PASS F2_VERDICT_CARRIES_ITS_OWN_NON_CLAIMS :: {'non_claim_present': True, 'route4_unchanged': True}
+PASS G_T1_TAMPERED_PIN_CAUGHT :: {'real_prefix': '2174772091b7d137', 'tampered': '0000000000000000'}
+PASS G_T2_FABRICATED_QUOTE_REJECTED :: {'found': False}
+PASS G_T3_GAUGE_TEST_IS_NOT_VACUOUS :: {'spectrum_delta_0.21': (1.66090595, 2.38303222, 4.95606183), 'spectrum_delta_0.35': (1.46671086, 2.65454371, 4.87874543), 'spectrum_non_circulant_perturbation': (1.76687713, 2.53089763, 5.10222524), 'commutator_norm_after_perturbation': 0.565685, 'reading': 'the observables are not constants: they move under a change of delta and under leaving the C3-covariant class. Their invariance under the identification group is therefore a real constraint, not an artifact.'}
+PASS G_T4_NO_SMUGGLING_2_OVER_9_IS_NOT_2PI_Q :: {'fact': '2/9 = 2*pi*q has no rational q'}
+PASS G_T5_CORPUS_HAS_NO_AXIS_INDEXED_MASS_OBSERVABLE :: {'probe': 'the mass of the generation on the x-axis', 'hits': []}
+PASS G_T6_938_SPACE_ANCHORS_UNCHANGED :: {'both_present': True}
+PASS G_T7_OBLIGATION_TEXT_UNEDITED :: {'sha256': '4d742bcc68a1e7cdb154b366e671f576e9b719b3206445b97666c812a790e58c', 'registry_action': 'NONE'}
+PASS G_T8_TIMING_GUARD_POSITIVE_CONTROL :: {'offenders': ['/runtime_seconds']}
+PASS G_T9_GUARD_IS_KEY_SEMANTIC_NOT_SUBSTRING :: {'payload_values_contain': ['second', 'wall_clock', 'timestamped'], 'offenders': [], 'reading': 'the guard reads KEY PATHS only (the 934 lesson)'}
+PASS G_T10_ALPHA_FAMILY_NOT_COLLAPSED :: {'distinct_readouts': 5, 'members': 5}
+PASS G_T11_PRIOR_ART_ATTRIBUTION_IS_TIGHT :: {'phrase_in_fixed_locus_note': False}
+PASS G_TEETH_COUNT :: {'count': 11}
+PASS Z1_DIGEST_PAYLOAD_IS_TIMING_FREE :: {'offending_key_paths': []}
+PASS Z2_RUNTIME_WITHIN_BUDGET :: 6.97s / 900.0s
+
+science_digest=d761befca2ae62e48ed214a87c2fa7ba83eb9aff7aa39c5a58962ebe2c92f418
+TOTAL: PASS=49 FAIL=0
+VERDICT: PASS
+runtime_seconds=6.97 budget=900.0

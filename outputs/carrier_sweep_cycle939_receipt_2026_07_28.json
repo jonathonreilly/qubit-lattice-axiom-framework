@@ -1,0 +1,805 @@
+{
+ "A_pins": {
+  "ledger_disclosure": {
+   "gitignored": true,
+   "path": "docs/audit/data/audit_ledger.json",
+   "process_row": "every cold-run worktree cycle must re-create this link (Cycle 938 audit row, reproduced here)",
+   "read_only_use": "read by the angle-native no-go restriction runner only",
+   "resolves": "/Users/jonBridger/Toy Physics/docs/audit/data/audit_ledger.json",
+   "symlink": true
+  },
+  "source_note_pins": {
+   "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md": {
+    "git_blob": "92553eb71833303c5d5f0fa74af6511108a8e54b",
+    "sha256": "83f4ab11435b7f5224c1013768dc56c28dfb56f0ab3fdd5811f9b06251dde665"
+   },
+   "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md": {
+    "git_blob": "e2ca96d22c95e991b76d9ec999f12726398bc3df",
+    "sha256": "08c15bdc0c2fc2ccd750ca2752260ae02ec2521a70bc0307103c42058a63ed09"
+   },
+   "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md": {
+    "git_blob": "8e15a34b23669c69cfbf26441061e9b15d3fff07",
+    "sha256": "0ae75b5474a626c08ac362db004a1613318922711ba794b98a020b4a36041e06"
+   },
+   "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md": {
+    "git_blob": "7488b3378bc715d8f3084312b255405051d9041c",
+    "sha256": "fb59f306588544e676e42224213fe7f866ed6028c911b83ef5629839bd6a944c"
+   },
+   "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md": {
+    "git_blob": "9a449956422a5687b5b1346f428c9e4e35489038",
+    "sha256": "4d742bcc68a1e7cdb154b366e671f576e9b719b3206445b97666c812a790e58c"
+   },
+   "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md": {
+    "git_blob": "8434def811cc0945fd44c69e7262460a5b1f4d98",
+    "sha256": "2174772091b7d137c10e8e5695099f7ff88ea370e25ea549c433b0252eb99ed0"
+   },
+   "docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md": {
+    "git_blob": "8f98943a549b1512c99063c99eda9e5db91b83f9",
+    "sha256": "72719808b3fffe2dcfd96704195b026cc41686bda1e9aca8fd1a5de9142fe3bf"
+   },
+   "docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "git_blob": "32792768b2f9183574998a7da38c310d877368d2",
+    "sha256": "3cffb593cf379f680b68be1af1f5c947f19a6d25480c918aee4f40d9ab1a0408"
+   },
+   "docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md": {
+    "git_blob": "45a124ab120e2aafd1684a07c51572647de0c0ee",
+    "sha256": "993f01403b36588bbf825140df73a073278529260946212c887f0060e17b148e"
+   },
+   "docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md": {
+    "git_blob": "176c60462aa278dabffd082f576d237151d675b9",
+    "sha256": "9309b0c71f8b48d8ae30fa44554479d0200520376ecf22cc7cbfa8df67ef3c30"
+   },
+   "docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md": {
+    "git_blob": "0e9622fb7206065d9d58ab42b8ba9d420af9193e",
+    "sha256": "f41f25af9831433b4783699a26156f7d03eb5a078754f9d1ef3bc04735456301"
+   },
+   "docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md": {
+    "git_blob": "d34a2311ac2c00b3664bbd46415845424063bb64",
+    "sha256": "a491578cf8bc5b7f6ef7cbdecd657acdd1a4b6e2abb17964e61cab3ccab6bd08"
+   },
+   "docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md": {
+    "git_blob": "676388f298ec471ab46a6328dfec8a7e409d660a",
+    "sha256": "e687f5cb2b3647003a290090aefe0662567484d755167b6061cf8882856e8e78"
+   },
+   "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {
+    "git_blob": "1201ba9702ec8a0b81df0319a90a080549cfdd4a",
+    "sha256": "3c7a33c8abac8e70bdcf2e8b9db5d917c0b2cee6fc7cc0ec91c6d803bbb230d2"
+   },
+   "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md": {
+    "git_blob": "23f052144fc81915f7ccb8e123182bf37c06ef3d",
+    "sha256": "abb3a3eb9d03acb781327b9ce93c6b943761e33a0519f8b29766854d7c00d502"
+   },
+   "docs/KOIDE_OCTAHEDRAL_OVERCONSTRAINS_VALUE_BIT_NARROW_NOTE_2026-06-02.md": {
+    "git_blob": "f1b7d7ba8a65dc7a2c9451d97ff1152c8e9628e3",
+    "sha256": "9725399e8ea683476432fac60380ee16dad81cac335a864c5fea8eadff8b61ee"
+   },
+   "docs/RETA_RECLASSIFICATION_REFUTED_SPACE_GAP_CYCLE938_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "git_blob": "7ef0a0a58efa1b4f8764c3e3539911d5763a156c",
+    "sha256": "70c4f6e478096ee8219f5a10403a74ba0428f81b0416d72ef7495f9b7e8ed4b0"
+   },
+   "docs/SPACE_IDENTIFICATION_DECIDED_FDIM_CYCLE901_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+    "git_blob": "ed75a8a5a823011ff142d075c0be0e15e1058c5f",
+    "sha256": "3e037137a39acf4c1f747b2bf44a3e8dacbaaa72f50cb1e7c2b4a3872954102c"
+   },
+   "docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md": {
+    "git_blob": "0531629f222a422e77f15ae6249e2d3e0fdb3fa6",
+    "sha256": "c0d589ca92eafb103204fcaf705b12b944b9bd340add90f4bec7eaa607a1bac0"
+   },
+   "docs/SPECIES_CARRIER_INVARIANT_RING_NO_ORBIT_SEPARATOR_EXACT_NOTE_2026-07-03.md": {
+    "git_blob": "10a175e401f0622220da190c14bd87444ed9d330",
+    "sha256": "36602130aa5b645c8f6b9557c07915b4be7085cb77090e4d813b646170c09dbd"
+   },
+   "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md": {
+    "git_blob": "a8cbd0b5fda73dd4137a8ec0531bc5d5bf376f65",
+    "sha256": "6d325d35f4da173d9af2e8eaf23c465f5c17adeaac400bd40af6874b11ae7ca7"
+   }
+  },
+  "vendored_pins": {
+   "outputs/reta_reclassification_block_cycle938_ship_receipt_2026_07_28.json": {
+    "git_blob": "8ecf0ade54f43457c65cf9d5d4dfed762612f354",
+    "sha256": "1adf800bc7ff1e2ed94757cbf39d66447ee018307f918e36896354f02b54e74f"
+   },
+   "outputs/reta_reclassification_cycle938_receipt_2026_07_28.json": {
+    "git_blob": "6f58bfe35f78ae74d025f292efa6c2d660159c1f",
+    "sha256": "0ff8c7e4fc6e1bf145f7cd931ccd1dd1e82a605ec2bf2d9ed721d30504a50c01"
+   },
+   "outputs/route1_sweep_cycle928_receipt_2026_07_28.json": {
+    "git_blob": "61a52e3f8eb45918a8ad5cf3656200257dc0093d",
+    "sha256": "7986e732c865aa6b20ee334ec6c0220b37f41c29ff5a5256ee9ac0ac23ef2445"
+   },
+   "outputs/space_identification_cycle901_receipt_2026_07_28.json": {
+    "git_blob": "b51c0984951aa3c37260fe1172f5ea18325e207a",
+    "sha256": "629c4bb97bcec03671109647f2f464482b512bbce506d87773251fe9d3d1369a"
+   }
+  }
+ },
+ "B_restriction_gates": {
+  "angle_native_no_go": "TOTAL: PASS=128 FAIL=0",
+  "c938_D3_space_finding": "reproduced",
+  "c938_receipt_sha_matches_ship_receipt": true,
+  "c938_science_digest": {
+   "published": "964b619175e9a325be5b181dd56ad9c028115018aaf8a0759dfbcd28f834d637",
+   "recomputed": "964b619175e9a325be5b181dd56ad9c028115018aaf8a0759dfbcd28f834d637"
+  },
+  "c938_totals": "TOTAL: PASS=48 FAIL=0",
+  "note": "the 938 runner rewrites its own receipt/cache; snapshotted and restored byte-exactly (B4 verifies)",
+  "species_bridge_minimum_decomposition": "TOTAL: PASS=10 FAIL=0",
+  "species_carrier_invariant_ring": "TOTAL: PASS=8 FAIL=0"
+ },
+ "C_Q0_prior_art": {
+  "ac_iii_species_bridge_obligation": {
+   "a_species_bridge_obligation_exists": false,
+   "canonical_ids": [
+    "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+    "ac_reta_hclass_hunit_readout_derivation_obligation",
+    "theta_quark_determinant_cross_sector_readout_derivation_obligation"
+   ],
+   "finding": "There is NO species_bridge derivation obligation in the registry. The three live obligations are occupancy-grain, R-eta h-class/h-unit, and theta cross-sector readout. AC(iii) (species bridge) is a HISTORICAL sub-admission label whose content was decomposed on 2026-06-13 into derived support + two proved vacuities + one C3-grade contentless identification -- it is not an open registry obligation.",
+   "third_obligation_is": "Derive whether the charged-lepton K/CPT occupancy carrier is the same physical channel that controls the quark determinant readout and whether that identification forces arg det(M_q)=0."
+  },
+  "classification_counts": {
+   "ARITHMETIC": 1,
+   "ASSUMES": 1,
+   "BEARING": 1,
+   "BLOCKING": 4,
+   "BLOCKING (template)": 1,
+   "CARRIER-A DEFINITION": 1,
+   "CARRIER-A SUPPLIER: assumed": 1,
+   "CARRIER-A SUPPLIER: declared an INPUT, not derived here": 1,
+   "CARRIER-B DEFINITION": 1,
+   "CARRIER-B SUPPLIER: the Lattice axiom (minimal-axiom memo)": 1,
+   "CARRIER-B: 2/9 is orientation-gauge-invariant (own bytes)": 1,
+   "CARRIER-B: explicit exclusion of the identification": 1,
+   "CARRIER-B: the normal plane, in REAL coordinate 3-space": 1,
+   "CARRIER-B: the note itself brackets axis selection": 1,
+   "CORRECTION": 1,
+   "GAUGE PRIOR ART": 2,
+   "GAUGE PRIOR ART (exhaustive)": 1,
+   "JOINT CONSUMER": 2,
+   "PARTIAL": 4,
+   "PRIOR-ATTEMPT": 6,
+   "PRIOR-ATTEMPT (gauge half)": 1,
+   "PRIOR-ATTEMPT (readout half)": 1,
+   "PRIOR-ATTEMPT (sharpest pre-938)": 1,
+   "PRIOR-ATTEMPT (the wall itself)": 1,
+   "ROUTE 4": 1,
+   "THE CLAIM UNDER TEST": 1,
+   "THE OBLIGATION": 2,
+   "THE WITNESS": 1,
+   "UNRELATED-BUT-NEARBY -> PARTIAL": 1
+  },
+  "docs_mentioning_BOTH_carriers": {
+   "count": 46,
+   "sample": [
+    "ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md",
+    "ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md",
+    "ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md",
+    "ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md",
+    "ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md",
+    "ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md",
+    "ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md",
+    "ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+    "ACPHILAMBDA_R_ETA_RECORD_FORMATION_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+    "ACTIVE_SECTOR_GROUNDED_BY_MASS_VS_K_DOMINANT_OPERATOR_SIEVE_NARROW_THEOREM_NOTE_2026-06-06.md",
+    "CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md",
+    "CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md",
+    "FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md",
+    "FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md",
+    "HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md",
+    "KCPT_CORNER_CARRIER_ANTILINEAR_NONHERMITIAN_KREAL_READOUT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+    "KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+    "KCPT_CORNER_CARRIER_TWO_PRESENTATION_SWAP_PROPER_ROTATION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+    "KCPT_KERNEL_KREAL_READOUT_FACE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+    "KOIDE_A1_O13_CHEEGER_SIMONS_RZ_NO_GO_NOTE_2026-04-24.md",
+    "KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md",
+    "KOIDE_BAE_PROBE_HW_SECTOR_IDENTIFICATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe27.md",
+    "KOIDE_QUBIT_LATTICE_DIM_ALGEBRAIC_CLOSURE_NOTE_2026-04-20.md",
+    "KOIDE_U_BAE_QUANTUM_DEFORMATION_NOTE_2026-05-08_probeU_bae_qdeformation.md",
+    "KOIDE_Y_BAE_TOPOLOGICAL_INDEX_KTHEORY_NOTE_2026-05-10_probeY_bae_topological.md"
+   ]
+  },
+  "prior_art_table": [
+   {
+    "chars": 189,
+    "file": "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "quote": "On the supplied C3[111] generation 3-space, a local Hermitian generator commuting with the [111] 3-fold rotation `C`, namely `[H,C]=0`, has the circulant form `H = a I + b C + conj(b) C^T`.",
+    "relation_to_space_gap": "CARRIER-A DEFINITION",
+    "tag": "A_SLOT_SPACE",
+    "verbatim": true
+   },
+   {
+    "chars": 136,
+    "file": "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "quote": "In this theorem, the C3[111] generation action and pointer are inputs, and the couplings `(a, |b|, delta)` are the supplied sector dial.",
+    "relation_to_space_gap": "CARRIER-A SUPPLIER: declared an INPUT, not derived here",
+    "tag": "A_SLOT_IS_INPUT",
+    "verbatim": true
+   },
+   {
+    "chars": 82,
+    "file": "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "quote": "The [111]-C3 generation action and the einselected pointer input are assumed here.",
+    "relation_to_space_gap": "CARRIER-A SUPPLIER: assumed",
+    "tag": "A_SLOT_ASSUMED",
+    "verbatim": true
+   },
+   {
+    "chars": 120,
+    "file": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "quote": "Take the proper cubic rotation by `2*pi/3` about the coordinate body diagonal spanned by `(1,1,1)` in the `Z^3` lattice.",
+    "relation_to_space_gap": "CARRIER-B DEFINITION",
+    "tag": "B_CELL_ROTATION",
+    "verbatim": true
+   },
+   {
+    "chars": 58,
+    "file": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "quote": "supplies the `Z^3` lattice and its proper cubic rotations.",
+    "relation_to_space_gap": "CARRIER-B SUPPLIER: the Lattice axiom (minimal-axiom memo)",
+    "tag": "B_CELL_AXIOM",
+    "verbatim": true
+   },
+   {
+    "chars": 29,
+    "file": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "quote": "N={(u,v,w) in R^3 : u+v+w=0}.",
+    "relation_to_space_gap": "CARRIER-B: the normal plane, in REAL coordinate 3-space",
+    "tag": "B_CELL_NORMAL_PLANE",
+    "verbatim": true
+   },
+   {
+    "chars": 103,
+    "file": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "quote": "Reversing the generator exchanges `P` and `P^2`, so the value is independent of orientation convention.",
+    "relation_to_space_gap": "CARRIER-B: 2/9 is orientation-gauge-invariant (own bytes)",
+    "tag": "B_CELL_ORIENT_FREE",
+    "verbatim": true
+   },
+   {
+    "chars": 52,
+    "file": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "quote": "physical-axis selection is a separate theorem target",
+    "relation_to_space_gap": "CARRIER-B: the note itself brackets axis selection",
+    "tag": "B_CELL_AXIS_SEPARATE",
+    "verbatim": true
+   },
+   {
+    "chars": 183,
+    "file": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "quote": "Physical identification with a charged-lepton angle, eta invariant, global APS index, probability, readout normalization, or registered-mass value belongs to separate theorem domains.",
+    "relation_to_space_gap": "CARRIER-B: explicit exclusion of the identification",
+    "tag": "B_CELL_EXCLUSION",
+    "verbatim": true
+   },
+   {
+    "chars": 246,
+    "file": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
+    "quote": "the induced `C3[111]` corner-cycling map on `H_hw=1`, obtained by restricting the exact full taste-space `C3[111]` operator (constructed directly from the retained-grade `Cl(3)` inputs by `S3_TASTE_CUBE`) to the three retained `hw=1` eigenspaces.",
+    "relation_to_space_gap": "PARTIAL -- derives the GENERATION C3 as an operator INDUCED FROM the lattice/Cl(3) surface: a landed link between the two spaces",
+    "tag": "P1_3GEN_INDUCED",
+    "verbatim": true
+   },
+   {
+    "chars": 103,
+    "file": "docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md",
+    "quote": "**G5** the generation C\u2083 is a **momentum permutation** of the three corners (cyclic, fixed-point-free).",
+    "relation_to_space_gap": "PARTIAL -- locates carrier A precisely: a MOMENTUM-space permutation of three lattice BZ corners",
+    "tag": "P2_CARRIER_G5",
+    "verbatim": true
+   },
+   {
+    "chars": 73,
+    "file": "docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md",
+    "quote": "the carrier is a *momentum-space* structure, not a position tensor factor",
+    "relation_to_space_gap": "BLOCKING -- carrier A is momentum-space; carrier B is the position-space normal plane; the naive position identification is refused",
+    "tag": "P3_CARRIER_G4",
+    "verbatim": true
+   },
+   {
+    "chars": 106,
+    "file": "docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md",
+    "quote": "a **local per-site** observable `P_site0` has **identical** expectation `1/8` across all three generations",
+    "relation_to_space_gap": "BLOCKING -- position-local observables are GENERATION-BLIND (a computed no-separator result on the position side)",
+    "tag": "P4_CARRIER_BLIND",
+    "verbatim": true
+   },
+   {
+    "chars": 109,
+    "file": "docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md",
+    "quote": "The carrier identification (input I of the two named flavor inputs) is a **structurally-isolated open input**",
+    "relation_to_space_gap": "PRIOR-ATTEMPT -- a dedicated 2026-05-31 attempt at THIS identification; verdict: open, delegation chain traced to a non-retained terminus",
+    "tag": "P5_CARRIER_ISOLATED",
+    "verbatim": true
+   },
+   {
+    "chars": 164,
+    "file": "docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
+    "quote": "So once the carrier is \"generation space minus the diagonal singlet,\" the transverse weights are **pinned to `(1,2)` \u2192 `2/9`** by the retained C\u2083 character pattern.",
+    "relation_to_space_gap": "ASSUMES -- names the lattice rotation's transverse plane AS 'generation space minus the diagonal singlet' and derives 2/9 from that reading",
+    "tag": "P6_ASYM_CARRIER",
+    "verbatim": true
+   },
+   {
+    "chars": 179,
+    "file": "docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
+    "quote": "**The radian `\u03b4=2/9` (CP channel) is a separate object** behind the retained_no_go radian bridge (\u03c0-transcendence) \u2014 must not be conflated with this dimensionless asymmetry-`2/9`.",
+    "relation_to_space_gap": "BLOCKING -- the corpus explicitly forbids conflating the RADIAN delta with the DIMENSIONLESS fixed-locus 2/9, citing a retained_no_go",
+    "tag": "P7_ASYM_NOCONFLATE",
+    "verbatim": true
+   },
+   {
+    "chars": 195,
+    "file": "docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md",
+    "quote": "the charged-lepton asymmetry observable is the single fixed-point local Lefschetz density `2/9`, not the vanishing global eta/equivariant invariant and not the extensive sum over all fixed sites.",
+    "relation_to_space_gap": "PRIOR-ATTEMPT (readout half) -- names the SAME open bridge as the obligation's h-class, independently, on 2026-05-31",
+    "tag": "P8_OPREAL_OPEN",
+    "verbatim": true
+   },
+   {
+    "chars": 91,
+    "file": "docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+    "quote": "**two provably-vacuous convention choices** (within-triplet naming; carrier-triplet choice)",
+    "relation_to_space_gap": "PRIOR-ATTEMPT (gauge half) -- the AC(iii) species bridge decomposition: two identification choices PROVED vacuous",
+    "tag": "P9_SPB_VACUITIES",
+    "verbatim": true
+   },
+   {
+    "chars": 104,
+    "file": "docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+    "quote": "The two carriers are unitarily equivalent as C\u2083-representations \u2014 same algebra, same 3-cycle orientation",
+    "relation_to_space_gap": "PARTIAL -- carrier-choice supplies no structural or numerical content",
+    "tag": "P10_SPB_EQUIV",
+    "verbatim": true
+   },
+   {
+    "chars": 53,
+    "file": "docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+    "quote": "So no C\u2083-equivariant functional separates the corners",
+    "relation_to_space_gap": "GAUGE PRIOR ART -- computed no-separator result on the generation side",
+    "tag": "P11_SPB_NOSEP",
+    "verbatim": true
+   },
+   {
+    "chars": 114,
+    "file": "docs/SPECIES_CARRIER_INVARIANT_RING_NO_ORBIT_SEPARATOR_EXACT_NOTE_2026-07-03.md",
+    "quote": "Therefore no invariant generator in this complete functional-grade set separates the three within-triplet corners.",
+    "relation_to_space_gap": "GAUGE PRIOR ART (exhaustive) -- Molien/Reynolds upgrade of the same no-separator result to the FULL Hermitian functional ring",
+    "tag": "P12_RING_NOSEP",
+    "verbatim": true
+   },
+   {
+    "chars": 128,
+    "file": "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+    "quote": "A_R-eta: the registered |delta| IS the AB/Lefschetz fixed-locus density of the realized C3[111] cycle, identity-read in radians.",
+    "relation_to_space_gap": "PRIOR-ATTEMPT (the wall itself) -- the residual named MINIMALLY on 2026-06-11, six weeks before Cycle 938's 'space gap'",
+    "tag": "P13_NARROW_ATOM",
+    "verbatim": true
+   },
+   {
+    "chars": 90,
+    "file": "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+    "quote": "the atom therefore carries **exactly one real parameter** of load: the value of `|delta|`.",
+    "relation_to_space_gap": "PRIOR-ATTEMPT -- the residual's load MEASURED: one real parameter, not a space identification",
+    "tag": "P14_NARROW_ONEPARAM",
+    "verbatim": true
+   },
+   {
+    "chars": 228,
+    "file": "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+    "quote": "five physically inequivalent hostile candidates (`2/9`, `1/9`, `4/9`, `2 pi/9`, `3/10`) all pass every forced constraint (in-domain, K-even registered surface, cos3delta channel) and give five distinct registered mass multisets.",
+    "relation_to_space_gap": "PRIOR-ATTEMPT -- the alpha-family analogue on the VALUE axis; different asserted values give DIFFERENT observable mass multisets",
+    "tag": "P15_NARROW_FIVE",
+    "verbatim": true
+   },
+   {
+    "chars": 207,
+    "file": "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+    "quote": "the fundamental-domain forcing uses the C3 relabeling fold of the unordered multiset \u2014 an auditor should confirm the relabeling is the vacuous naming freedom the registry already excludes from the admission.",
+    "relation_to_space_gap": "GAUGE PRIOR ART -- the relabeling freedom already declared vacuous",
+    "tag": "P16_NARROW_RELABEL",
+    "verbatim": true
+   },
+   {
+    "chars": 125,
+    "file": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+    "quote": "The physical identification of the formal `H(delta)` surface with the charged-lepton carrier remains the open/contextual part",
+    "relation_to_space_gap": "PRIOR-ATTEMPT -- the 07-05 landed note's own naming of the open carrier question (the one Cycle 938 cited)",
+    "tag": "P17_VF_CARRIER_OPEN",
+    "verbatim": true
+   },
+   {
+    "chars": 317,
+    "file": "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+    "quote": "But `alpha = 0`, `alpha = 1/9`, `alpha = 1/3`, `alpha = 1`, and `alpha = 2/27` all satisfy empty-record normalization, finite additivity, and C3 covariance on the same supplied frame. They give different scalar readouts. Only one of them is the fixed-locus-density member, and selecting it is exactly h-class content.",
+    "relation_to_space_gap": "THE WITNESS -- alpha family lives on the SAME supplied frame, i.e. AFTER any carrier identification",
+    "tag": "W_ALPHA_FAMILY",
+    "verbatim": true
+   },
+   {
+    "chars": 133,
+    "file": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+    "quote": "**Approved-primitive route.** Approve a narrow readout-selection primitive or premise explicitly. That is governance, not derivation.",
+    "relation_to_space_gap": "ROUTE 4 -- the price statement to be restated without overreach",
+    "tag": "W_ROUTE4",
+    "verbatim": true
+   },
+   {
+    "chars": 178,
+    "file": "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
+    "quote": "A closing theorem must provide a physical carrier/source-action bridge and either a native eta/holonomy identity or a genuinely inhomogeneous Record-facing normalization theorem.",
+    "relation_to_space_gap": "THE OBLIGATION -- its closure criterion names the carrier bridge AND a second, independent conjunct",
+    "tag": "W_OBLIGATION_CLOSURE",
+    "verbatim": true
+   },
+   {
+    "chars": 226,
+    "file": "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
+    "quote": "Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class `h`, identity-read in `h`-units as the eta angle, with no extra clock-rate, transport, or normalization factor.",
+    "relation_to_space_gap": "THE OBLIGATION -- the exact target",
+    "tag": "W_OBLIGATION_TARGET",
+    "verbatim": true
+   },
+   {
+    "chars": 225,
+    "file": "docs/RETA_RECLASSIFICATION_REFUTED_SPACE_GAP_CYCLE938_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "quote": "the slot (delta, on the C3 generation 3-space) and the cell (2/9, on the normal plane of a Z^3 LATTICE rotation) are the same 3x3 matrix living on DIFFERENT SUPPLIED SPACES \u2014 their identification IS the open carrier question.",
+    "relation_to_space_gap": "THE CLAIM UNDER TEST -- Cycle 938's SPACE GAP, verbatim",
+    "tag": "W_938_SPACEGAP",
+    "verbatim": true
+   },
+   {
+    "chars": 109,
+    "file": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+    "quote": "*The registered C\u2083-breaking phase magnitude is the fixed-locus spectral density, read directly as the angle:*",
+    "relation_to_space_gap": "JOINT CONSUMER -- a single functional assembled from BOTH carriers (E1 = the fixed-locus 2/9; E2 = the generation-space circulant H(delta))",
+    "tag": "J1_CHAIN_PREMISE",
+    "verbatim": true
+   },
+   {
+    "chars": 48,
+    "file": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+    "quote": "This identification is **supplied, not derived**",
+    "relation_to_space_gap": "JOINT CONSUMER -- the chain's own bytes declare the weld a SUPPLIED premise, i.e. the carrier sentence in its assembled form",
+    "tag": "J2_CHAIN_SUPPLIED",
+    "verbatim": true
+   },
+   {
+    "chars": 45,
+    "file": "docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md",
+    "quote": "That assertion is the carrier identification.",
+    "relation_to_space_gap": "PRIOR-ATTEMPT (sharpest pre-938) -- names the assertion that the observable is the intrinsic-R3/doublet-normal-bundle density AS the carrier identification",
+    "tag": "J3_GATE_ASSERTION",
+    "verbatim": true
+   },
+   {
+    "chars": 113,
+    "file": "docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md",
+    "quote": "It applies only if R\u00b3 is *embedded* into the lattice diagonal \u2014 and that embedding is, again, the carrier choice.",
+    "relation_to_space_gap": "PRIOR-ATTEMPT -- the embedding question, stated verbatim on 2026-05-31",
+    "tag": "J4_GATE_EMBED",
+    "verbatim": true
+   },
+   {
+    "chars": 68,
+    "file": "docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md",
+    "quote": "so the C\u2083 fixed locus is the **[111] *line***, not an isolated point",
+    "relation_to_space_gap": "CORRECTION -- the C3 fixed locus is a LINE; the 2/9 density lives strictly on the transverse doublet, not on the whole 3-space",
+    "tag": "J5_GATE_LINE",
+    "verbatim": true
+   },
+   {
+    "chars": 73,
+    "file": "docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md",
+    "quote": "the physical charged-lepton generation space is the `C3[111]` fixed locus",
+    "relation_to_space_gap": "PRIOR-ATTEMPT -- a dedicated 2026-05-31 note asking exactly whether this bridge is derivable; verdict: reduces to one named import",
+    "tag": "J6_GENBRIDGE",
+    "verbatim": true
+   },
+   {
+    "chars": 52,
+    "file": "docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md",
+    "quote": "the generation carrier is the regular representation",
+    "relation_to_space_gap": "ARITHMETIC -- the generation carrier is the 3-dim regular rep (singlet + doublet); the lattice normal plane is only the 2-dim doublet",
+    "tag": "K1_COLGEN_REG",
+    "verbatim": true
+   },
+   {
+    "chars": 73,
+    "file": "docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md",
+    "quote": "Therefore the two supplied carrier actions are distinct `Z_3` structures.",
+    "relation_to_space_gap": "BLOCKING (template) -- the corpus already refuses to collapse two supplied Z3 carrier actions into one without an identification",
+    "tag": "K2_COLGEN_DISTINCT",
+    "verbatim": true
+   },
+   {
+    "chars": 84,
+    "file": "docs/KOIDE_OCTAHEDRAL_OVERCONSTRAINS_VALUE_BIT_NARROW_NOTE_2026-06-02.md",
+    "quote": "any `O_h`-equivariant generation mass operator on `R^3` is scalar, hence degenerate;",
+    "relation_to_space_gap": "BLOCKING -- identifying the generation space with the LATTICE axis space would import the full point group O_h and collapse the carrier",
+    "tag": "K3_OCTA",
+    "verbatim": true
+   },
+   {
+    "chars": 153,
+    "file": "docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "quote": "N = 3 is the UNIQUE length where the geometric normal plane and the readout transverse space are isomorphic (both the 2-dimensional rational irrep of C3)",
+    "relation_to_space_gap": "PARTIAL -- the ONLY proved isomorphism between two candidate spaces in the corpus, and the structural template for this question",
+    "tag": "L1_899_UNIQUE",
+    "verbatim": true
+   },
+   {
+    "chars": 117,
+    "file": "docs/SPACE_IDENTIFICATION_DECIDED_FDIM_CYCLE901_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "quote": "does the record read the readout module's invariant complement (F_dim) or the ambient geometric normal plane (F_res)?",
+    "relation_to_space_gap": "UNRELATED-BUT-NEARBY -> PARTIAL -- Cycle 901 decided a DIFFERENT space identification, on the gravity/readout lane, on Record-axiom scope grounds; it is not this identification",
+    "tag": "L2_901_TARGET",
+    "verbatim": true
+   },
+   {
+    "chars": 75,
+    "file": "docs/SPACE_IDENTIFICATION_DECIDED_FDIM_CYCLE901_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "quote": "The re-binding changes nothing numerically anywhere in the retained lineage",
+    "relation_to_space_gap": "BEARING -- 901 moves 2/9's premise from Lattice-geometry to Record-content with zero numerical change, which DE-LICENSES 'the cell lives on the lattice normal plane' as a premise description",
+    "tag": "L3_901_NOCHANGE",
+    "verbatim": true
+   }
+  ],
+  "sweep_term_hits": {
+   "(1,1,1)": 85,
+   "BZ corner": 58,
+   "C3[111]": 27,
+   "C3\\[111\\]": 27,
+   "F_dim": 3,
+   "[111]": 173,
+   "abstract-to-physical": 3,
+   "abstract\u2192physical": 3,
+   "body diagonal": 10,
+   "body-diagonal": 35,
+   "carrier bridge": 25,
+   "carrier gate": 6,
+   "carrier identification": 60,
+   "carrier question": 10,
+   "carrier/source-action": 3,
+   "corner-cycling": 2,
+   "diagonal singlet": 2,
+   "family space": 1,
+   "fixed locus": 20,
+   "fixed-locus": 40,
+   "flavor index": 2,
+   "flavor space": 5,
+   "generation 3-space": 8,
+   "generation space": 17,
+   "generation-blind": 17,
+   "hw=1": 300,
+   "identification map": 2,
+   "identity-read": 7,
+   "internal space": 4,
+   "isomorphism class": 8,
+   "lattice direction": 17,
+   "momentum permutation": 1,
+   "naming vacuity": 4,
+   "no orbit-separator": 1,
+   "normal plane": 8,
+   "orthogonal complement": 14,
+   "readout identification": 46,
+   "root lattice": 1,
+   "space identification": 16,
+   "species bridge": 22,
+   "species_bridge": 9,
+   "sublattice": 98,
+   "transverse plane": 4,
+   "vacuous convention": 4,
+   "weight lattice": 3
+  }
+ },
+ "D_Q1_carriers": {
+  "A_slot": {
+   "carries": "delta (a free coupling of the sector dial)",
+   "index_set": "three generation sectors X1,X2,X3",
+   "name": "the supplied C3[111] generation 3-space",
+   "supplier": "declared an INPUT / assumed by the retained circulant note; located by prior art as the momentum-space hw=1 BZ-corner triplet of the Z^3 staggered surface"
+  },
+  "B_cell": {
+   "carries": "L_C3(N) = 2/9 (a dimensionless local density)",
+   "index_set": "three coordinate axes of Z^3",
+   "name": "the real 2-plane normal to the body diagonal (1,1,1) of Z^3",
+   "supplier": "the Lattice axiom (the minimal-axiom memo supplies the Z^3 lattice and its proper cubic rotations)"
+  },
+  "dimension_correction_to_938": "938's one-line framing ('the slot on the C3 generation 3-space and the cell on the normal plane') compares a 3-dim carrier with a 2-dim one. The cell lives on the DOUBLET summand; the correct pairing is generation R^3 <-> ambient R^3 with the singlet line matching the [111] fixed line (D6).",
+  "identification_data_would_be": "THREE separable pieces, not one. (1) A MAP: a C3-equivariant linear isomorphism phi between the two ambient 3-spaces. Both are the regular C3-rep, so such phi EXIST and form (C*)^3 semidirect (Z3 relabel x Z2 generator reversal); the choice among them is the only 'map' content. (2) A STRUCTURE-GROUP RESTRICTION: the transported group must be C3 ONLY. Transport the ambient point group O_h and the Hermitian commutant collapses from 3 real parameters to scalars -- delta ceases to exist (D7). (3) A VALUE/TYPE ASSERTION: that the dimensionless density L3(1,2) = 2/9 read off the doublet IS the radian magnitude |delta| carried by the dial. This is the assembled carrier sentence.",
+  "same_matrix": "the cyclic permutation [[0,0,1],[1,0,0],[0,1,0]] -- P on the lattice (Rodrigues, 2*pi/3 about (1,1,1)), C on the generation space (the [111] 3-fold rotation of the circulant form)",
+  "what_the_MAP_alone_would_NOT_supply": "the equality of a dimensionless DENSITY with a RADIAN angle. That is a type/unit assignment on functionals, not a map between carriers, and no choice of phi produces it."
+ },
+ "E_Q1b_gauge_test": {
+  "base_state": {
+   "B": 1.0,
+   "a": 3.0,
+   "delta": 0.21,
+   "spectrum": [
+    4.9560618294,
+    1.6609059474,
+    2.3830322232
+   ]
+  },
+  "gauge_group": "C3-equivariant isomorphisms of the shared carrier: (C*)^3 Schur scalars, semidirect the normalizer (Z3 cyclic relabel x Z2 generator reversal); plus the species-bridge unitary intertwiner (eps carrier swap); on the lattice side, generator reversal P<->P^2 and an arbitrary normal-plane basis change",
+  "observables": [
+   {
+    "consumes": "A",
+    "identification_dependent": false,
+    "observable": "A1_mass_multiset",
+    "witnesses": []
+   },
+   {
+    "consumes": "A",
+    "identification_dependent": false,
+    "observable": "A2_phi_folded",
+    "witnesses": []
+   },
+   {
+    "consumes": "A",
+    "identification_dependent": false,
+    "observable": "A3_symmetric_functions_e1e2e3",
+    "witnesses": []
+   },
+   {
+    "consumes": "A",
+    "identification_dependent": false,
+    "observable": "A4_koide_r",
+    "witnesses": []
+   },
+   {
+    "consumes": "A",
+    "identification_dependent": false,
+    "observable": "A5_koide_Q",
+    "witnesses": []
+   },
+   {
+    "consumes": "A",
+    "identification_dependent": false,
+    "observable": "A6_einselected_pointer_spectrum",
+    "witnesses": []
+   },
+   {
+    "consumes": "B",
+    "identification_dependent": false,
+    "observable": "B1_fixed_locus_density_L_C3",
+    "witnesses": []
+   },
+   {
+    "consumes": "B",
+    "identification_dependent": false,
+    "observable": "B2_normal_determinant",
+    "witnesses": []
+   },
+   {
+    "consumes": "B",
+    "identification_dependent": false,
+    "observable": "B3_normal_plane_angle",
+    "witnesses": []
+   },
+   {
+    "consumes": "B",
+    "identification_dependent": false,
+    "observable": "B4_transverse_weights",
+    "witnesses": []
+   },
+   {
+    "consumes": "A+B",
+    "identification_dependent": false,
+    "observable": "J1_comparator_absPhi_minus_L",
+    "witnesses": []
+   },
+   {
+    "consumes": "PLANTED",
+    "identification_dependent": true,
+    "observable": "T_PLANTED_axis_indexed_mass",
+    "witnesses": [
+     {
+      "base": "24.56254886",
+      "gauge": "schur_scalars",
+      "lattice_gen": "P",
+      "moved_to": "5.67884258",
+      "normal_basis": "v1v2"
+     },
+     {
+      "base": "24.56254886",
+      "gauge": "schur_scalars",
+      "lattice_gen": "P",
+      "moved_to": "5.67884258",
+      "normal_basis": "skewed"
+     },
+     {
+      "base": "24.56254886",
+      "gauge": "schur_scalars",
+      "lattice_gen": "P^2",
+      "moved_to": "5.67884258",
+      "normal_basis": "v1v2"
+     }
+    ]
+   }
+  ]
+ },
+ "E_Q1b_joint_consumer": {
+  "CONSEQUENCE": "Q1b's disjunction resolves to BOTH branches, on different objects. An observable consuming both carriers EXISTS, so the carrier sentence has exact content -- and that content is precisely the declared equality, not a space map. The equality's two relata are each identification-MAP-invariant (E1), so no choice of map produces or refutes it.",
+  "its_observable": "the comparator |Phi_fit - 2/9| = 7.4e-6 against the registered charged-lepton masses",
+  "its_own_status_words": "supplied, not derived",
+  "note": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+  "the_weld": "the declared premise R-eta: |delta| = L3(1,2)",
+  "what_it_consumes_from_carrier_A": "H(delta) = a I + B e^{i delta} C + B e^{-i delta} C^T on the generation 3-space; the registered |delta|",
+  "what_it_consumes_from_carrier_B": "L3(1,2) = 2/9, the fixed-locus density on the doublet/normal plane"
+ },
+ "F_Q2_verdict": {
+  "answer": "(d) HONEST SPLIT -- and the split is three-way, on three separable pieces of what '(the) identification' means: the MAP is (b) GAUGE; the STRUCTURE-GROUP RESTRICTION and the VALUE/TYPE ASSERTION are (c) CONTENT, with the joint consumer exhibited; and (a) PRIOR ART decides large parts of all three",
+  "part_0_the_joint_consumer": "An observable consuming BOTH carriers jointly EXISTS and is byte-cited: KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09 assembles E1 (the fixed-locus 2/9 on the doublet) with E2 (the generation-space circulant H(delta)) and publishes the comparator |Phi_fit - 2/9| = 7.4e-6. Per the spec, THAT observable is the carrier sentence's exact content -- and the chain's own bytes say what the content is: the declared premise 'the registered C3-breaking phase magnitude is the fixed-locus spectral density, read directly as the angle', flagged 'supplied, not derived'. The content is an EQUALITY BETWEEN TWO IDENTIFICATION-INVARIANT SCALARS -- i.e. exactly h-class + h-unit, not a space map.",
+  "part_1_prior_art": "The identification has been attempted before, repeatedly, and its pieces are already decided. (i) The two spaces are LINKED by landed content: the generation carrier's C3[111] is derived as the operator INDUCED from the lattice/Cl(3) taste-space C3[111] (THREE_GENERATION_OBSERVABLE_THEOREM_NOTE), and the carrier is located as a momentum permutation of three Z^3 BZ corners (FLAVOR_CARRIER_DELEGATION_TERMINUS, 2026-05-31, G5). (ii) The naming/labeling half of the identification is PROVED VACUOUS -- twice, the second time exhaustively (SPECIES_BRIDGE_MINIMUM_DECOMPOSITION 2026-06-13: 'two provably-vacuous convention choices'; SPECIES_CARRIER_INVARIANT_RING 2026-07-03: Molien/Reynolds, 'no invariant generator ... separates the three within-triplet corners'). (iii) The residual was already named MINIMALLY on 2026-06-11 as A_R-eta = h-class + h-unit carrying 'exactly one real parameter of load'.",
+  "part_2_gauge_but_only_the_map": "The MAP half of the identification is gauge at the current surface. The two ambient 3-spaces are the SAME C3-representation (the regular rep), so equivariant isomorphisms exist and form (C*)^3 semidirect (Z3 x Z2); the identification supplies a CHOICE, not an existence. Mechanically, every enumerated observable on both sides -- mass multiset, folded Phi, e1/e2/e3, Koide r and Q, pointer spectrum, L_C3(N), the normal determinant, the normal-plane angle, the transverse weights, and the joint comparator -- is invariant under every element of that group. A planted axis-indexed observable DOES move, proving the test has teeth; no observable of that shape appears in the corpus. This is corroborated by prior art that computed the same vacuity from the other side (no C3-equivariant functional separates the corners; no invariant generator in the full Hermitian functional ring separates them).",
+  "part_2b_NOT_gauge": "Two pieces are NOT gauge. (1) The STRUCTURE-GROUP RESTRICTION: an identification must transport the C3 subgroup ONLY. Computed here: the Hermitian commutant of C3 on the 3-space is 3-real-dimensional (the circulant dial that carries delta); the commutant of the ambient signed-permutation group O_h is 1-dimensional (scalars). So a bare 'the two spaces are the same' would destroy delta outright -- the corpus's own octahedral over-constraint no-go, reproduced. (2) The VALUE/TYPE ASSERTION, per part_0.",
+  "part_3_what_this_does_NOT_show": "It does NOT derive |delta| = 2/9 and does NOT dissolve the obligation. Two things survive the gauge quotient untouched: (a) h-class -- the alpha family satisfies every constraint 'on the same supplied frame' and gives different readouts, so no identification selects the fixed-locus member; (b) h-unit -- the equality of a dimensionless DENSITY with a RADIAN angle is a type assignment on functionals, not a map between carriers, and the corpus explicitly forbids conflating them (FLAVOR_ASYMMETRY 2026-05-31, citing the retained_no_go radian bridge / pi-transcendence).",
+  "part_4_the_correction": "Cycle 938's SPACE GAP naming is TOO STRONG as stated, on three counts. (1) It conflates the map (gauge), the structure-group restriction (content), and the readout type assignment (the actual wall). (2) Its one-line framing compares a 3-dim carrier with a 2-dim one: the cell lives on the DOUBLET summand, so the pairing is generation R^3 <-> ambient R^3 with the singlet line matching the [111] fixed line. (3) 'the cell, on the normal plane of a Z^3 LATTICE rotation' is a premise description the gravity lane has since re-bound: Cycle 901 decided the record reads the readout module's invariant complement rather than the ambient geometric normal plane, with F_dim(3) = F_res(3) = 2/9 and 'the re-binding changes nothing numerically anywhere in the retained lineage'. The wall's correct name is the one it already had on 2026-06-11 and again in Cycle 928: A_R-eta = h-class + h-unit.",
+  "part_5_the_901_relationship": "Cycle 901's SPACE_IDENTIFICATION_DECIDED_FDIM does NOT decide this identification and does not support it. It decided a different space question (F_dim vs F_res: which space the RECORD reads) on the gravity/readout lane, on Record-axiom scope grounds. Its bearing here is indirect and mildly ADVERSE to the 938 framing: it cheapens 2/9's premise from Lattice-geometry to Record-content, which de-licenses 'the cell lives on the lattice normal plane' as a premise description while changing no number. Its parent, Cycle 899, supplies the only proved space isomorphism in the corpus (N=3 is the unique length at which the geometric normal plane and the readout transverse space coincide) -- the structural template for what a carrier theorem would have to look like, on a different pair of spaces."
+ },
+ "F_route4_price": "ROUTE 4's PRICE, RESTATED (unchanged). 'Approved-primitive route. Approve a narrow readout-selection primitive or premise explicitly. That is governance, not derivation.' Cycle 939 changes the price NOT AT ALL. It sharpens WHAT would be bought: not a carrier map (gauge), and not a bare space identification (which would import O_h and destroy the dial), but exactly the readout-SELECTION content (h-class) plus the identity-reading (h-unit) -- the same one real parameter the 2026-06-11 narrowing measured. No axiom ask is earned here, nothing is adopted, and no registry text is edited.",
+ "F_updated_wall_statement": "THE WALL (updated, Cycle 939). The open content of the R-eta h-unit license is NOT one space-identification sentence. It separates into three pieces of unequal standing. (1) THE MAP -- gauge. The two ambient 3-spaces are the same C3 regular representation; equivariant identifications exist and form (C*)^3 semidirect (Z3 relabel x Z2 generator reversal), and NO observable in the corpus's enumeration has a value depending on which is chosen. Prior art computed the same vacuity twice from the other side (species bridge 2026-06-13; invariant ring 2026-07-03, exhaustive). (2) THE STRUCTURE-GROUP RESTRICTION -- content, and cheap. Any identification must transport the C3 subgroup ONLY: under the ambient point group O_h the Hermitian commutant collapses from 3 real parameters to scalars and delta ceases to exist. (3) THE VALUE/TYPE ASSERTION -- content, and it is the wall. A_R-eta = h-class + h-unit, carrying (per the 2026-06-11 narrowing) exactly one real parameter of load: (h-class) that the physical readout is the fixed-locus density member of the C3-covariant readout family at all -- unselected, with the alpha family {0, 1/9, 1/3, 1, 2/27} as the standing witness that a registered value cannot choose; and (h-unit) that a dimensionless density is read as a radian with conversion factor 1 -- against which the corpus carries a retained_no_go radian bridge (pi-transcendence) and an explicit instruction that the radian delta and the dimensionless 2/9 'must not be conflated'. The joint consumer that would test (3) already exists and is assembled (the 2026-06-09 density-readout chain); its own bytes call the weld 'supplied, not derived'. What remains genuinely open on the CARRIER side, as distinct from the readout side, is narrower than 938 stated: a WIRING gap. The retained circulant note declares its generation 3-space an INPUT and carries no dependency edge to the lattice-side hw=1 carrier chain that already derives the same C3 action; and the corpus's dedicated carrier note locates the carrier in MOMENTUM space while the cell's rotation is a POSITION-space object, naming the missing ingredient precisely as 'a momentum/spectral selection principle not present in the retained inventory'.",
+ "G_teeth": [
+  {
+   "fired": true,
+   "tooth": "T1_TAMPERED_PIN_CAUGHT"
+  },
+  {
+   "fired": true,
+   "tooth": "T2_FABRICATED_QUOTE_REJECTED"
+  },
+  {
+   "fired": "True",
+   "tooth": "T3_OBSERVABLES_CAN_MOVE_SO_INVARIANCE_IS_REAL"
+  },
+  {
+   "fired": true,
+   "tooth": "T4_RATIONAL_IS_NOT_A_RADIAN_MULTIPLE"
+  },
+  {
+   "fired": true,
+   "tooth": "T5_NO_AXIS_INDEXED_MASS_OBSERVABLE_IN_CORPUS"
+  },
+  {
+   "fired": true,
+   "tooth": "T6_938_ANCHORS_STILL_PRESENT"
+  },
+  {
+   "fired": true,
+   "tooth": "T7_OBLIGATION_UNEDITED"
+  },
+  {
+   "fired": true,
+   "tooth": "T8_PLANTED_TIMING_KEY_CAUGHT"
+  },
+  {
+   "fired": true,
+   "tooth": "T9_PHYSICS_WORDS_IN_VALUES_DO_NOT_TRIP"
+  },
+  {
+   "fired": true,
+   "tooth": "T10_ALPHA_FAMILY_STILL_MULTI_VALUED"
+  },
+  {
+   "fired": true,
+   "tooth": "T11_PRIOR_ART_NOT_OVER_ATTRIBUTED"
+  }
+ ],
+ "HEADLINE": "THE SPACE GAP IS NOT ONE QUESTION, AND THE MAP HALF IS NOT THE WALL. (0) A JOINT CONSUMER EXISTS: the 2026-06-09 density-readout chain welds the fixed-locus 2/9 to the generation-space circulant and publishes the 7.4e-6 comparator; its own bytes call the weld 'supplied, not derived'. Per the spec that observable IS the carrier sentence's content -- and the content is an EQUALITY BETWEEN TWO IDENTIFICATION-INVARIANT SCALARS, i.e. h-class + h-unit, not a space map. (1) PRIOR ART, dense: the identification was attempted head-on at least four times (2026-05-31 x3, 2026-06-11), its naming half was PROVED VACUOUS twice (species bridge 2026-06-13; invariant ring 2026-07-03, exhaustive Molien/Reynolds), and the residual was already named minimally on 2026-06-11 as A_R-eta carrying 'exactly one real parameter of load'. (2) GAUGE, for the map only: the two ambient 3-spaces are the same C3 regular rep, equivariant identifications form (C*)^3 x| (Z3 x Z2), and every enumerated observable is invariant under all of them (a planted axis-indexed observable moves, so the test has teeth). (3) CONTENT, twice: the identification must transport C3 ONLY -- under O_h the Hermitian commutant collapses 3 -> 1 and delta ceases to exist -- and the value/type assertion is the wall. (4) TWO CORRECTIONS TO 938: the cell lives on the 2-dim DOUBLET, not the 3-space (character arithmetic (3,0,0) vs (2,-1,-1)); and 'the lattice normal plane' is a premise description the gravity lane's Cycle 901 has since re-bound to Record-content at zero numerical change. 938's refutation is UNWEAKENED -- the alpha family survives the gauge quotient intact -- and route 4's price is UNCHANGED.",
+ "VERDICT": "PASS",
+ "adopts": "nothing",
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockAC4-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "claim_type": "bounded_theorem",
+ "cycle": 939,
+ "runtime_seconds": 6.97,
+ "science_digest": "d761befca2ae62e48ed214a87c2fa7ba83eb9aff7aa39c5a58962ebe2c92f418",
+ "target": "Does ANY retained or landed content link the slot's generation 3-space to the cell's lattice normal plane, and does any observable consume both carriers jointly?",
+ "totals": {
+  "FAIL": 0,
+  "PASS": 49
+ }
+}

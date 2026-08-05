@@ -198,3 +198,17 @@ the distribution's SUPPORT (finite menus: exactly nonzero probability —
 section-6 record); the 945 repair worker re-targeted to the final
 bytes. The owner also confirmed "likelihood distribution" -> "probability
 distribution" (standard term; normalization on its face).
+
+### Adoption repairs shipped — PR #6013 (stacked on #6011)
+
+Cycle 945 + supervisor OPEN-2 closure: companion 66/2 -> 69/0 (registry
+check now LIVE); 20 needles repaired, 0 load-bearing quotes; six breaks
+adjudicated (3 re-scoped, S5 not-a-break, S3 CONTESTED, S6 deferred);
+THE HASH-PIN GUARD CLASS discovered (140 files; 2 scripts repaired; 134
+audit-ledger rows correctly LEFT for the audit lane per the 07-02
+precedent); registry note updated per section 6's mandate; 5 red
+runners are PRE-EXISTING (stale needles from an EARLIER Tier-A axiom
+edit — OPEN-4, audit lane). OWNER ITEM PENDING (OPEN-6): a one-line
+section-6 reading ruling on the distribution's domain (the S3 contest
+turns on it); recommended wording: the distribution is over the site's
+full one-site possibility domain, availability = its support.

@@ -863,3 +863,16 @@ owner_thread_science_census_20260805: >
   unledgered index + fork-PR rescue into archive_unlanded/ on branch
   physics-loop/science-census-20260805 (supervisor reviews then
   ships; audit-lane options flagged not executed).
+
+census_shipped_20260805: >
+  The science-census closure SHIPPED as PR #6015 (branch
+  physics-loop/science-census-20260805, base main): 302-line census
+  (every count [verified]/[from-survey]-tagged; strata 252/32/3074/
+  228/14/21 = 3,621; registrar reach = docs/ only), machine-readable
+  index (3,621 items, 6 strata, 5 coverage gaps, deterministic), and
+  the 14 fork-PR-only notes rescued byte-exact into archive_unlanded/
+  with a hash manifest (spot-verified at ship). 12 spec-vs-data
+  corrections disclosed, data winning (branch-only 3,074 not 2,510;
+  QUARK_ROUTE2 111 not 76; open-PR tier 242 not 223). Audit-lane
+  options flagged, none executed. Supervisor edit at review: the
+  early-era no-PR fact re-tagged owner-attested.

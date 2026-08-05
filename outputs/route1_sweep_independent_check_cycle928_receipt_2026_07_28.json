@@ -1,0 +1,1009 @@
+{
+ "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+ "adopts": "nothing",
+ "angle_typing_hunt": {
+  "degrees": [
+   {
+    "cycle": 888,
+    "file": "outputs/s3_scope_independent_check_cycle888_receipt_2026_07_28.json"
+   },
+   {
+    "cycle": 888,
+    "file": "logs/runner-cache/frontier_cycle888_s3_scope_independent_check_2026_07_28.txt"
+   },
+   {
+    "cycle": 890,
+    "file": "outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json"
+   },
+   {
+    "cycle": 890,
+    "file": "logs/runner-cache/frontier_cycle890_multiplicity_freeness_2026_07_28.txt"
+   },
+   {
+    "cycle": 909,
+    "file": "docs/WITHIN_WORLD_PURCHASE_SPECTRUM_CYCLE909_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+   },
+   {
+    "cycle": 909,
+    "file": "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json"
+   },
+   {
+    "cycle": 921,
+    "file": "outputs/loop_cost_independent_check_cycle921_receipt_2026_07_28.json"
+   },
+   {
+    "cycle": 921,
+    "file": "logs/runner-cache/frontier_cycle921_loop_cost_independent_check_2026_07_28.txt"
+   }
+  ],
+  "e^{i": [
+   {
+    "cycle": 871,
+    "file": "docs/OPENREFERENCE_MATTER_ENDPOINT_CAUSAL_INTERVAL_PACKET_CYCLE871_BOUNDED_THEOREM_NOTE_2026-08-02.md"
+   }
+  ],
+  "polar": [
+   {
+    "cycle": 890,
+    "file": "outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json"
+   },
+   {
+    "cycle": 890,
+    "file": "logs/runner-cache/frontier_cycle890_multiplicity_freeness_2026_07_28.txt"
+   },
+   {
+    "cycle": 901,
+    "file": "docs/SPACE_IDENTIFICATION_DECIDED_FDIM_CYCLE901_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+   },
+   {
+    "cycle": 901,
+    "file": "outputs/space_identification_independent_check_cycle901_receipt_2026_07_28.json"
+   },
+   {
+    "cycle": 901,
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_independent_check_2026_07_28.txt"
+   },
+   {
+    "cycle": 913,
+    "file": "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+   }
+  ]
+ },
+ "audit": "unset",
+ "authority": "none",
+ "bins_rederived_from_the_no_go": {
+  "1": {
+   "found": true,
+   "text": "**Misses the target.** Periodic/torsion phases produce `q*pi` or `2*pi`-packaged rational phases. Canonical `U(1)` packaging of `L` gives `2*pi*L = 4*pi/9`, not `2/9` or `2/3`. Packaging `S_sum` gives `2*pi*S_sum = 4*pi/3`, not the target `2/3` radians. 2. **Cannot pin a nonzero member.** Homogeneous self-consistency/readout maps are closed under global rescale. A homogeneous fixed-point equation either",
+   "title": "Misses the target"
+  },
+  "2": {
+   "found": true,
+   "text": "**Cannot pin a nonzero member.** Homogeneous self-consistency/readout maps are closed under global rescale. A homogeneous fixed-point equation either forces the zero/on-locus member or leaves the whole line free. It never isolates the nonzero off-locus member `Phi = 2/3`. 3. **Restates the missing license.** The affine map `Phi = S_sum` hits the target exactly, but only because it inserts the fixed-locus",
+   "title": "Cannot pin a nonzero member"
+  },
+  "3": {
+   "found": true,
+   "text": "**Restates the missing license.** The affine map `Phi = S_sum` hits the target exactly, but only because it inserts the fixed-locus rational as an angle-valued source. Without an independent theorem licensing that insertion, this is R-eta in holonomy coordinates, not a derivation of it. ## Exact Checks The runner verifies: - `3 * (2/9) = 2/3`; - the target is strictly off the real/K-real holonomy locus:",
+   "title": "Restates the missing license"
+  },
+  "route_1_sentence": "1. **Licensed angle-native theorem.** Derive a same-surface eta/APS/holonomy identity whose output is the charged-lepton cycle angle `Phi = S_sum = 2/3`, not `2*pi*S_sum`, and not a restatement of R-eta. 2. **Record-facing inhomogeneous readout theorem.** Derive a scalar singleton readout c",
+  "target_block_present": true
+ },
+ "block": "toe-time-blockAC2-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "cycle": 928,
+ "independent_2_3_extraction": {
+  "876": [
+   {
+    "context": "PASS E_CONSEQUENCE_STRESS :: {\"adversarial_points_tested\":18,\"all_points_agree_with_the_primary\":true,\"attack\":\"CONSEQUENCE_FUNCTION_AT_RATIONAL_POINTS\",\"finding\":\"The consequence function was attacked at 18 adversarially chosen rationals, ",
+    "file": "logs/runner-cache/frontier_cycle876_grading_independent_check_2026_07_28.txt",
+    "line_no": 10
+   },
+   {
+    "context": "PASS D_DERIVATION_ROUTES :: {\"every_outcome_in_the_fixed_vocabulary\":true,\"every_route_attempted\":true,\"every_route_carries_an_exact_reason\":true,\"finding\":\"All 5 routes were attempted against the axioms and approved primitives only, with n",
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "line_no": 8
+   },
+   {
+    "context": "PASS E_CONSEQUENCE_FUNCTION :: {\"configurations_examined\":1296,\"family_rows\":[{\"lawful_supports\":6,\"sigma_visible\":false,\"t\":\"-4\",\"trace_bearing\":0,\"trace_bearing_with_matter_recoil\":0},{\"lawful_supports\":6,\"sigma_visible\":false,\"t\":\"-23/6\"",
+    "file": "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+    "line_no": 10
+   }
+  ],
+  "898": [
+   {
+    "context": "\"verdict\": \"RATIONAL BUT WRONG: the only rational fixed scale in the whole native degree-2 list. w = 1/3 exactly, per-vertex trace 2/3, nonzero eigenvalue 1. None of the three readings is 2/27, and none of their orbit values is 2/9\"",
+    "file": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+    "line_no": 19
+   },
+   {
+    "context": "\"id\": \"M2-06[-1/3,2/3,2/3]\",",
+    "file": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+    "line_no": 79
+   },
+   {
+    "context": "\"id\": \"M2-06[-1/3,2/3,2/3]\",",
+    "file": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+    "line_no": 79
+   },
+   {
+    "context": "\"name\": \"C3-commuting Q-linear involution (-1/3,2/3,2/3)\",",
+    "file": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+    "line_no": 81
+   },
+   {
+    "context": "\"name\": \"C3-commuting Q-linear involution (-1/3,2/3,2/3)\",",
+    "file": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+    "line_no": 81
+   },
+   {
+    "context": "\"outcome\": \"rational but wrong (w = 1/3, trace 2/3)\",",
+    "file": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+    "line_no": 307
+   },
+   {
+    "context": "\"recomputed_per_vertex_trace\": \"2/3\"",
+    "file": "outputs/escape_census_independent_check_cycle898_receipt_2026_07_28.json",
+    "line_no": 78
+   },
+   {
+    "context": "per-vertex trace 2/3; the Q[C3] primitive idempotent 1/3). 0 entries pin",
+    "file": "logs/runner-cache/frontier_cycle898_escape_census_2026_07_28.txt",
+    "line_no": 70
+   },
+   {
+    "context": "12 (1/12)Z 2 3 2/3 .",
+    "file": "logs/runner-cache/frontier_cycle898_escape_census_2026_07_28.txt",
+    "line_no": 151
+   },
+   {
+    "context": "M2-06[-1/3,2/3,2/3] 1 NONE (every alpha is fixed) ALL_Q",
+    "file": "logs/runner-cache/frontier_cycle898_escape_census_2026_07_28.txt",
+    "line_no": 175
+   },
+   {
+    "context": "M2-06[-1/3,2/3,2/3] 1 NONE (every alpha is fixed) ALL_Q",
+    "file": "logs/runner-cache/frontier_cycle898_escape_census_2026_07_28.txt",
+    "line_no": 175
+   }
+  ],
+  "899": [
+   {
+    "context": "\"sum_of_inverse_determinants\": \"2/3\"",
+    "file": "outputs/family_binding_cycle899_receipt_2026_07_28.json",
+    "line_no": 629
+   },
+   {
+    "context": "\"sum_of_inverse_determinants\": \"2/3\",",
+    "file": "outputs/family_binding_cycle899_receipt_2026_07_28.json",
+    "line_no": 914
+   },
+   {
+    "context": "\"sum_of_inverse_determinants\": \"2/3\",",
+    "file": "outputs/family_binding_cycle899_receipt_2026_07_28.json",
+    "line_no": 945
+   },
+   {
+    "context": "\"sum_of_inverse_determinants\": \"2/3\"",
+    "file": "logs/runner-cache/frontier_cycle899_family_binding_2026_07_28.txt",
+    "line_no": 637
+   },
+   {
+    "context": "\"sum_of_inverse_determinants\": \"2/3\",",
+    "file": "logs/runner-cache/frontier_cycle899_family_binding_2026_07_28.txt",
+    "line_no": 922
+   },
+   {
+    "context": "\"sum_of_inverse_determinants\": \"2/3\",",
+    "file": "logs/runner-cache/frontier_cycle899_family_binding_2026_07_28.txt",
+    "line_no": 953
+   }
+  ],
+  "901": [
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "line_no": 4090
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "line_no": 4096
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "line_no": 4129
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "line_no": 4135
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "line_no": 4168
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "line_no": 4174
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "line_no": 4207
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "line_no": 4213
+   },
+   {
+    "context": "rows: [{\"class\": \"C4_face\", \"axis\": [\"0/1\", \"0/1\", \"1/1\"], \"normal_plane\": [[\"1/1\", \"0/1\", \"0/1\"], [\"0/1\", \"1/1\", \"0/1\"]], \"L_face\": \"5/16\", \"K_native\": \"3/16\", \"free_orbit\": [[-1, 0, 0], [0, -1, 0], [0, 1, 0], [1, 0, 0]]}, {\"class\": \"C4_fa",
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "line_no": 98
+   },
+   {
+    "context": "rows: [{\"class\": \"C4_face\", \"axis\": [\"0/1\", \"0/1\", \"1/1\"], \"normal_plane\": [[\"1/1\", \"0/1\", \"0/1\"], [\"0/1\", \"1/1\", \"0/1\"]], \"L_face\": \"5/16\", \"K_native\": \"3/16\", \"free_orbit\": [[-1, 0, 0], [0, -1, 0], [0, 1, 0], [1, 0, 0]]}, {\"class\": \"C4_fa",
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "line_no": 98
+   },
+   {
+    "context": "rows: [{\"class\": \"C4_face\", \"axis\": [\"0/1\", \"0/1\", \"1/1\"], \"normal_plane\": [[\"1/1\", \"0/1\", \"0/1\"], [\"0/1\", \"1/1\", \"0/1\"]], \"L_face\": \"5/16\", \"K_native\": \"3/16\", \"free_orbit\": [[-1, 0, 0], [0, -1, 0], [0, 1, 0], [1, 0, 0]]}, {\"class\": \"C4_fa",
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "line_no": 98
+   },
+   {
+    "context": "rows: [{\"class\": \"C4_face\", \"axis\": [\"0/1\", \"0/1\", \"1/1\"], \"normal_plane\": [[\"1/1\", \"0/1\", \"0/1\"], [\"0/1\", \"1/1\", \"0/1\"]], \"L_face\": \"5/16\", \"K_native\": \"3/16\", \"free_orbit\": [[-1, 0, 0], [0, -1, 0], [0, 1, 0], [1, 0, 0]]}, {\"class\": \"C4_fa",
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "line_no": 98
+   },
+   {
+    "context": "rows: [{\"class\": \"C4_face\", \"axis\": [\"0/1\", \"0/1\", \"1/1\"], \"normal_plane\": [[\"1/1\", \"0/1\", \"0/1\"], [\"0/1\", \"1/1\", \"0/1\"]], \"L_face\": \"5/16\", \"K_native\": \"3/16\", \"free_orbit\": [[-1, 0, 0], [0, -1, 0], [0, 1, 0], [1, 0, 0]]}, {\"class\": \"C4_fa",
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "line_no": 98
+   },
+   {
+    "context": "rows: [{\"class\": \"C4_face\", \"axis\": [\"0/1\", \"0/1\", \"1/1\"], \"normal_plane\": [[\"1/1\", \"0/1\", \"0/1\"], [\"0/1\", \"1/1\", \"0/1\"]], \"L_face\": \"5/16\", \"K_native\": \"3/16\", \"free_orbit\": [[-1, 0, 0], [0, -1, 0], [0, 1, 0], [1, 0, 0]]}, {\"class\": \"C4_fa",
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "line_no": 98
+   },
+   {
+    "context": "rows: [{\"class\": \"C4_face\", \"axis\": [\"0/1\", \"0/1\", \"1/1\"], \"normal_plane\": [[\"1/1\", \"0/1\", \"0/1\"], [\"0/1\", \"1/1\", \"0/1\"]], \"L_face\": \"5/16\", \"K_native\": \"3/16\", \"free_orbit\": [[-1, 0, 0], [0, -1, 0], [0, 1, 0], [1, 0, 0]]}, {\"class\": \"C4_fa",
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "line_no": 98
+   },
+   {
+    "context": "rows: [{\"class\": \"C4_face\", \"axis\": [\"0/1\", \"0/1\", \"1/1\"], \"normal_plane\": [[\"1/1\", \"0/1\", \"0/1\"], [\"0/1\", \"1/1\", \"0/1\"]], \"L_face\": \"5/16\", \"K_native\": \"3/16\", \"free_orbit\": [[-1, 0, 0], [0, -1, 0], [0, 1, 0], [1, 0, 0]]}, {\"class\": \"C4_fa",
+    "file": "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+    "line_no": 98
+   }
+  ],
+  "904": [
+   {
+    "context": "\"value\": \"2/3\"",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 233
+   },
+   {
+    "context": "\"value\": \"2/3\"",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 240
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 997
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 1431
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 1454
+   },
+   {
+    "context": "\"numerator_value\": \"2/3\"",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 1599
+   },
+   {
+    "context": "\"numerator_value\": \"2/3\"",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 1607
+   },
+   {
+    "context": "\"numerator_value\": \"2/3\"",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 1615
+   },
+   {
+    "context": "\"numerator_value\": \"2/3\"",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 1623
+   },
+   {
+    "context": "\"numerator_value\": \"2/3\"",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 1631
+   },
+   {
+    "context": "\"numerator_value\": \"2/3\"",
+    "file": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+    "line_no": 1639
+   },
+   {
+    "context": "diag(Qp) 2/3 v3= -1 Id - P: projector onto the non-inv",
+    "file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "line_no": 119
+   },
+   {
+    "context": "diag(Qp^2) 2/3 v3= -1 declared power closure: Qp to the",
+    "file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "line_no": 120
+   },
+   {
+    "context": "-3/1, -1/1, -1/3, 0/1, 1/1, 1/3, 2/1, 2/3, 3/1, 4/1, 6/1, 8/1, 9/1, 12/1, 18/1, 24/1 ...",
+    "file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "line_no": 214
+   },
+   {
+    "context": "diag(Qp) = 2/3 / rowsum(J^2) = 9/1",
+    "file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "line_no": 283
+   },
+   {
+    "context": "diag(Qp) = 2/3 / totalsum(J) = 9/1",
+    "file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "line_no": 284
+   },
+   {
+    "context": "diag(Qp) = 2/3 / trace(J^2) = 9/1",
+    "file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "line_no": 285
+   },
+   {
+    "context": "diag(Qp^2) = 2/3 / rowsum(J^2) = 9/1",
+    "file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "line_no": 286
+   },
+   {
+    "context": "diag(Qp^2) = 2/3 / totalsum(J) = 9/1",
+    "file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "line_no": 287
+   },
+   {
+    "context": "diag(Qp^2) = 2/3 / trace(J^2) = 9/1",
+    "file": "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+    "line_no": 288
+   }
+  ],
+  "911": [
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/type_vacuity_cycle911_receipt_2026_07_28.json",
+    "line_no": 7704
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/type_vacuity_cycle911_receipt_2026_07_28.json",
+    "line_no": 7705
+   },
+   {
+    "context": "\"2/3\",",
+    "file": "outputs/type_vacuity_cycle911_receipt_2026_07_28.json",
+    "line_no": 7715
+   },
+   {
+    "context": "\"2/3\"",
+    "file": "outputs/type_vacuity_cycle911_receipt_2026_07_28.json",
+    "line_no": 7716
+   }
+  ],
+  "924": [
+   {
+    "context": "cycle angle 2/3 without importing it \u2014 is attacked with the",
+    "file": "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "line_no": 12
+   },
+   {
+    "context": "Nine exact hits at 2/3 exist among 1,369 ordered ratios over the",
+    "file": "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "line_no": 77
+   },
+   {
+    "context": "candidate (891's own period family, 16/24 = 2/3) belongs to a",
+    "file": "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "line_no": 90
+   },
+   {
+    "context": "candidate (891's own period family, 16/24 = 2/3) belongs to a",
+    "file": "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "line_no": 90
+   },
+   {
+    "context": "\"two of three occur\" reading of 2/3 has no realization anywhere",
+    "file": "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "line_no": 97
+   },
+   {
+    "context": "selection \u2014 is 21/41, missing 2/3 by exactly 19/123, and is",
+    "file": "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "line_no": 107
+   },
+   {
+    "context": "\"headline\": \"R-ETA ROUTE 3 PRICED SHUT ON THE CURRENT SURFACE: eleven derived rate-ratio objects, nine numerological 2/3 hits, ZERO licenses \\u2014 the referent gap is mechanical (no shared vocabulary between the occurrence and R-eta surfac",
+    "file": "outputs/occurrence_rate_route_block_cycle924_ship_receipt_2026_07_28.json",
+    "line_no": 46
+   },
+   {
+    "context": "\"headline\": \"R-ETA ROUTE 3 PRICED SHUT ON THE CURRENT SURFACE: eleven derived rate-ratio objects, nine numerological 2/3 hits, ZERO licenses \\u2014 the referent gap is mechanical (no shared vocabulary between the occurrence and R-eta surfac",
+    "file": "outputs/occurrence_rate_route_block_cycle924_ship_receipt_2026_07_28.json",
+    "line_no": 46
+   },
+   {
+    "context": "\"Phi_target\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 20
+   },
+   {
+    "context": "\"S_sum\": \"2/3\"",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 21
+   },
+   {
+    "context": "\"consequence_for_R_eta\": \"R-eta's target is a C3 (three-fold) object: Phi_target = S_sum = 3 * L3(1,2), the UNAVERAGED SUM over a three-element fixed locus. The most natural occurrence reading of 2/3 -- 'two of three outcomes occur' -- has ",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 222
+   },
+   {
+    "context": "\"BIN 1 misses the target\": \"The occurrence-typed frequencies miss. The realized share of the landed selection is 21/41, and 2/3 - 21/41 = 19/123 exactly. The within-world frequency is degenerate at 1. The A3-channel admissible probabilities",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 588
+   },
+   {
+    "context": "\"BIN 4 free-selection hit (NEW)\": \"The occurrence surface DOES contain ratios equal to 2/3 exactly. They arise only by selecting one (numerator, denominator) pair out of many admissible ones -- the model degeneracy is recorded per candidate",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 591
+   },
+   {
+    "context": "\"BIN 6 arity mismatch (NEW, structural)\": \"R-eta's target is a C3 (three-fold) object: Phi_target = S_sum = 3 * L3(1,2), the UNAVERAGED SUM over a three-element fixed locus. The most natural occurrence reading of 2/3 -- 'two of three outcom",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 593
+   },
+   {
+    "context": "\"route_3_verdict\": \"ROUTE 3 DOES NOT CLOSE, and it is now PRICED. To license Phi = S_sum = 2/3 the occurrence lane must supply, jointly: (1) an occurrence weight that exists at all -- which costs either the A3 import or the named successor ",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 601
+   },
+   {
+    "context": "\"why_the_secondary_census_matters\": \"G1 (the referent gate) fails first for every candidate, which would mask the remaining bins. Granting a referent for free -- the most generous possible reading -- the candidates STILL do not license: the",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 602
+   },
+   {
+    "context": "\"exact_ratio\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 619
+   },
+   {
+    "context": "\"exact_ratio\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 649
+   },
+   {
+    "context": "\"exact_ratio\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 679
+   },
+   {
+    "context": "\"exact_ratio\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 709
+   },
+   {
+    "context": "\"exact_ratio\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 739
+   },
+   {
+    "context": "\"exact_ratio\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 769
+   },
+   {
+    "context": "\"exact_ratio\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 799
+   },
+   {
+    "context": "\"exact_ratio\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 829
+   },
+   {
+    "context": "\"exact_ratio\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 859
+   },
+   {
+    "context": "\"target\": \"2/3\"",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 881
+   },
+   {
+    "context": "\"fixed_locus_density_member/one_ninth\": \"2/3\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1034
+   },
+   {
+    "context": "\"detail\": \"planted a synthetic 'occurrence rate' 2/3; it hits the target exactly and is still rejected by G1 (no charged-lepton referent anywhere on the occurrence surface) and by G3 (not typed as an occurrence weight)\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1056
+   },
+   {
+    "context": "\"detail\": \"2/3 - 84/164 = 19/123 exactly (rational arithmetic, no floats)\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1096
+   },
+   {
+    "context": "\"detail\": \"{'L3(1,2)': '2/9', 'S_sum': '2/3', 'Phi_target': '2/3'}\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1255
+   },
+   {
+    "context": "\"detail\": \"{'L3(1,2)': '2/9', 'S_sum': '2/3', 'Phi_target': '2/3'}\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1255
+   },
+   {
+    "context": "\"detail\": \"numerical hits at 2/3 = 9\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1333
+   },
+   {
+    "context": "\"what\": \"at least one pooled ratio hits 2/3 numerically (so the identification gate has something to bite on)\"",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1336
+   },
+   {
+    "context": "\"what\": \"NO numerical hit at 2/3 survives the identification-sentence gate\"",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1342
+   },
+   {
+    "context": "\"detail\": \"84/164 = 21/41; 2/3 - 21/41 = 19/123\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1345
+   },
+   {
+    "context": "\"what\": \"the single most natural candidate (the realized share of the landed selection) MISSES 2/3\"",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1348
+   },
+   {
+    "context": "\"detail\": \"{'fixed_locus_density_member/one_ninth': '2/3', 'fixed_locus_density_member/one_third': '2/9', 'fixed_locus_density_member/unit': '2/27', 'one_ninth/one_third': '1/3', 'one_ninth/unit': '1/9', 'one_third/unit': '1/3'}\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1393
+   },
+   {
+    "context": "\"detail\": \"planted a synthetic 'occurrence rate' 2/3; it hits the target exactly and is still rejected by G1 (no charged-lepton referent anywhere on the occurrence surface\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1435
+   },
+   {
+    "context": "\"detail\": \"2/3 - 84/164 = 19/123 exactly (rational arithmetic, no floats)\",",
+    "file": "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+    "line_no": 1483
+   },
+   {
+    "context": "\"what\": \"checker's hit count at 2/3 agrees with the primary's\"",
+    "file": "outputs/occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28.json",
+    "line_no": 88
+   },
+   {
+    "context": "\"what\": \"the period-ratio sentence family reaches many distinct values, of which 2/3 is only one\"",
+    "file": "outputs/occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28.json",
+    "line_no": 100
+   },
+   {
+    "context": "\"detail\": \"e.g. the same 'ratio of two readable periods' sentence yields ['1/2', '1/3', '1/4', '1/5', '1/6', '2', '2/3', '2/5'] ...\",",
+    "file": "outputs/occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28.json",
+    "line_no": 103
+   },
+   {
+    "context": "\"detail\": \"small-integer pool entries (disclosed, none is 2/3): []\",",
+    "file": "outputs/occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28.json",
+    "line_no": 115
+   },
+   {
+    "context": "[PASS] T4b checker's hit count at 2/3 agrees with the primary's",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.txt",
+    "line_no": 26
+   },
+   {
+    "context": "[PASS] T5a the period-ratio sentence family reaches many distinct values, of which 2/3 is only one",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.txt",
+    "line_no": 29
+   },
+   {
+    "context": "e.g. the same 'ratio of two readable periods' sentence yields ['1/2', '1/3', '1/4', '1/5', '1/6', '2', '2/3', '2/5'] ...",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.txt",
+    "line_no": 32
+   },
+   {
+    "context": "small-integer pool entries (disclosed, none is 2/3): []",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.txt",
+    "line_no": 36
+   },
+   {
+    "context": "{'L3(1,2)': '2/9', 'S_sum': '2/3', 'Phi_target': '2/3'}",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 33
+   },
+   {
+    "context": "{'L3(1,2)': '2/9', 'S_sum': '2/3', 'Phi_target': '2/3'}",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 33
+   },
+   {
+    "context": "[PASS] D4 at least one pooled ratio hits 2/3 numerically (so the identification gate has something to bite on)",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 56
+   },
+   {
+    "context": "numerical hits at 2/3 = 9",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 57
+   },
+   {
+    "context": "[PASS] D5 NO numerical hit at 2/3 survives the identification-sentence gate",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 58
+   },
+   {
+    "context": "[PASS] D6 the single most natural candidate (the realized share of the landed selection) MISSES 2/3",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 60
+   },
+   {
+    "context": "84/164 = 21/41; 2/3 - 21/41 = 19/123",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 61
+   },
+   {
+    "context": "{'fixed_locus_density_member/one_ninth': '2/3', 'fixed_locus_density_member/one_third': '2/9', 'fixed_locus_density_member/unit': '2/27', 'one_ninth/o",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 76
+   },
+   {
+    "context": "planted a synthetic 'occurrence rate' 2/3; it hits the target exactly and is still rejected by G1 (no charged-lepton referent anywhere on the occurren",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 90
+   },
+   {
+    "context": "2/3 - 84/164 = 19/123 exactly (rational arithmetic, no floats)",
+    "file": "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+    "line_no": 106
+   }
+  ]
+ },
+ "own_corpus": {
+  "857": [
+   "docs/CENSUS_THEOREM_CYCLE857_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle857_census_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle857_census_theorem_2026_07_28.txt",
+   "outputs/census_theorem_cycle857_receipt_2026_07_28.json"
+  ],
+  "864": [
+   "outputs/cycle864_dilated_midpoint_edge_service_base_cache_2026_08_01.json"
+  ],
+  "868": [
+   "docs/TRANSIENT_TWO_CELL_COMPANION_ENCODER_GLOBAL_ORDER_CHART_BOUNDARY_CYCLE868_BOUNDED_THEOREM_NOTE_2026-08-02.md",
+   "outputs/cycle868_transient_two_cell_companion_encoder_receipt_2026_08_02.json"
+  ],
+  "870": [
+   "docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md"
+  ],
+  "871": [
+   "docs/OPENREFERENCE_MATTER_ENDPOINT_CAUSAL_INTERVAL_PACKET_CYCLE871_BOUNDED_THEOREM_NOTE_2026-08-02.md",
+   "docs/SOURCE_ACTION_BRIDGE_PRICING_CYCLE871_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle871_bridge_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle871_source_action_bridge_pricing_2026_07_28.txt",
+   "outputs/source_action_bridge_pricing_cycle871_receipt_2026_07_28.json"
+  ],
+  "872": [
+   "docs/OPENREFERENCE_ALL_SEAM_SPATIAL_DIRECTION_PACKET_EPOCH_CYCLE872_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+   "docs/SIGMA_LINEAR_ADMISSIBILITY_CLASSIFICATION_CYCLE872_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle872_admissibility_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt",
+   "outputs/sigma_linear_admissibility_cycle872_receipt_2026_07_28.json"
+  ],
+  "876": [
+   "docs/UNIT_GRADING_PROVENANCE_CYCLE876_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle876_grading_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle876_unit_grading_provenance_2026_07_28.txt",
+   "outputs/unit_grading_independent_check_cycle876_receipt_2026_07_28.json",
+   "outputs/unit_grading_provenance_cycle876_receipt_2026_07_28.json"
+  ],
+  "882": [
+   "docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle882_readout_identity_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle882_readout_independent_check_2026_07_28.txt",
+   "outputs/readout_identity_cycle882_independent_check_2026_07_28.json",
+   "outputs/readout_identity_cycle882_receipt_2026_07_28.json"
+  ],
+  "883": [
+   "docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle883_weight_pair_independent_check_2026_07_28.txt",
+   "outputs/record_weight_pair_cycle883_receipt_2026_07_28.json"
+  ],
+  "886": [
+   "docs/SL0_ORBIT_SCOPE_PRICED_CYCLE886_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle886_sl0_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle886_sl0_orbit_scope_2026_07_28.txt",
+   "outputs/sl0_block_cycle886_ship_receipt_2026_07_28.json",
+   "outputs/sl0_independent_check_cycle886_receipt_2026_07_28.json",
+   "outputs/sl0_orbit_scope_cycle886_receipt_2026_07_28.json"
+  ],
+  "888": [
+   "docs/S3_SCOPE_PRICED_MENU_DISSOLVED_CYCLE888_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle888_s3_scope_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle888_s3_scope_pricing_2026_07_28.txt",
+   "outputs/s3_scope_block_cycle888_ship_receipt_2026_07_28.json",
+   "outputs/s3_scope_independent_check_cycle888_receipt_2026_07_28.json",
+   "outputs/s3_scope_pricing_cycle888_receipt_2026_07_28.json"
+  ],
+  "890": [
+   "docs/MULTIPLICITY_FREENESS_TERMINAL_CLAUSE_CYCLE890_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle890_multiplicity_freeness_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28.txt",
+   "outputs/multiplicity_freeness_block_cycle890_ship_receipt_2026_07_28.json",
+   "outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json",
+   "outputs/multiplicity_freeness_independent_check_cycle890_receipt_2026_07_28.json"
+  ],
+  "891": [
+   "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle891_complement_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt",
+   "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json",
+   "outputs/complement_independent_check_cycle891_receipt_2026_07_28.json",
+   "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json"
+  ],
+  "895": [
+   "docs/T_CHOICE_RETIRED_AFFINE_LAW_CYCLE895_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle895_t_retirement_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle895_t_retirement_independent_check_2026_07_28.txt",
+   "outputs/t_retirement_block_cycle895_ship_receipt_2026_07_28.json",
+   "outputs/t_retirement_cycle895_receipt_2026_07_28.json",
+   "outputs/t_retirement_independent_check_cycle895_receipt_2026_07_28.json"
+  ],
+  "898": [
+   "docs/ESCAPE_CENSUS_COVERAGE_CYCLE898_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle898_escape_census_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle898_escape_census_independent_check_2026_07_28.txt",
+   "outputs/escape_census_block_cycle898_ship_receipt_2026_07_28.json",
+   "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+   "outputs/escape_census_independent_check_cycle898_receipt_2026_07_28.json"
+  ],
+  "899": [
+   "docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle899_family_binding_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle899_family_binding_independent_check_2026_07_28.txt",
+   "outputs/family_binding_block_cycle899_ship_receipt_2026_07_28.json",
+   "outputs/family_binding_cycle899_receipt_2026_07_28.json",
+   "outputs/family_binding_independent_check_cycle899_receipt_2026_07_28.json"
+  ],
+  "900": [
+   "docs/HARMONIC_REPAIR_VIABLE_CYCLE900_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle900_harmonic_repair_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle900_harmonic_repair_independent_check_2026_07_28.txt",
+   "outputs/harmonic_repair_block_cycle900_ship_receipt_2026_07_28.json",
+   "outputs/harmonic_repair_cycle900_receipt_2026_07_28.json",
+   "outputs/harmonic_repair_independent_check_cycle900_receipt_2026_07_28.json"
+  ],
+  "901": [
+   "docs/SPACE_IDENTIFICATION_DECIDED_FDIM_CYCLE901_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle901_space_identification_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle901_space_identification_independent_check_2026_07_28.txt",
+   "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json",
+   "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+   "outputs/space_identification_independent_check_cycle901_receipt_2026_07_28.json"
+  ],
+  "903": [
+   "docs/SIGMA_TERMINAL_THETA_CORE_EMPTY_CYCLE903_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle903_sigma_theta_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle903_sigma_theta_independent_check_2026_07_28.txt",
+   "outputs/sigma_theta_block_cycle903_ship_receipt_2026_07_28.json",
+   "outputs/sigma_theta_cycle903_receipt_2026_07_28.json",
+   "outputs/sigma_theta_independent_check_cycle903_receipt_2026_07_28.json"
+  ],
+  "904": [
+   "docs/MIXED_DEGREE_REACHES_NOT_SELECTS_CYCLE904_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle904_mixed_degree_census_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle904_mixed_degree_independent_check_2026_07_28.txt",
+   "outputs/mixed_degree_block_cycle904_ship_receipt_2026_07_28.json",
+   "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+   "outputs/mixed_degree_independent_check_cycle904_receipt_2026_07_28.json"
+  ],
+  "909": [
+   "docs/WITHIN_WORLD_PURCHASE_SPECTRUM_CYCLE909_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle909_within_world_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle909_within_world_pricing_2026_07_28.txt",
+   "outputs/within_world_block_cycle909_ship_receipt_2026_07_28.json",
+   "outputs/within_world_independent_check_cycle909_receipt_2026_07_28.json",
+   "outputs/within_world_pricing_cycle909_receipt_2026_07_28.json"
+  ],
+  "911": [
+   "docs/RETYPED_WORLDS_ARE_SETUPS_SELECTION_SITES_EXIST_CYCLE911_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle911_type_vacuity_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle911_type_vacuity_independent_check_2026_07_28.txt",
+   "outputs/type_vacuity_block_cycle911_ship_receipt_2026_07_28.json",
+   "outputs/type_vacuity_cycle911_receipt_2026_07_28.json",
+   "outputs/type_vacuity_independent_check_cycle911_receipt_2026_07_28.json"
+  ],
+  "912": [
+   "docs/A3_CHANNEL_HALF_FORCED_CYCLE912_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle912_a3_channel_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle912_a3_channel_independent_check_2026_07_28.txt",
+   "outputs/a3_channel_block_cycle912_ship_receipt_2026_07_28.json",
+   "outputs/a3_channel_cycle912_receipt_2026_07_28.json",
+   "outputs/a3_channel_independent_check_cycle912_receipt_2026_07_28.json"
+  ],
+  "913": [
+   "docs/SELECTION_IS_TRANSPORT_O3_TERMINAL_CYCLE913_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle913_selection_function_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle913_selection_independent_check_2026_07_28.txt",
+   "outputs/selection_block_cycle913_ship_receipt_2026_07_28.json",
+   "outputs/selection_function_cycle913_receipt_2026_07_28.json",
+   "outputs/selection_independent_check_cycle913_receipt_2026_07_28.json"
+  ],
+  "916": [
+   "docs/THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle916_theta_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle916_theta_reconciliation_2026_07_28.txt",
+   "outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json",
+   "outputs/theta_independent_check_cycle916_receipt_2026_07_28.json",
+   "outputs/theta_reconciliation_cycle916_receipt_2026_07_28.json"
+  ],
+  "921": [
+   "docs/LOOP_COST_PAIR_CYCLE_LAW_CYCLE921_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle921_loop_cost_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle921_loop_cost_independent_check_2026_07_28.txt",
+   "outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json",
+   "outputs/loop_cost_independent_check_cycle921_receipt_2026_07_28.json"
+  ],
+  "924": [
+   "docs/OCCURRENCE_ROUTE_PRICED_ALPHA_FREEDOM_UNIFIED_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+   "logs/runner-cache/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.txt",
+   "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
+   "outputs/occurrence_rate_route_block_cycle924_ship_receipt_2026_07_28.json",
+   "outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json",
+   "outputs/occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28.json"
+  ]
+ },
+ "radian_total_independent": 0,
+ "refutations": [
+  {
+   "attack": "ENUMERATION_COMPLETENESS",
+   "detail": "no exact 2/3 found on a referent-carrying surface outside the primary's pool",
+   "overturns_the_conclusion": false,
+   "refutation_holds": false
+  },
+  {
+   "attack": "ANGLE_TYPING_EXISTS",
+   "detail": "17 independent angle-typing keywords tried (radian, arg(, exp(i, mod 2pi, atan2, U(1), winding, principal branch, degrees, polar, ...); the only hits are incidental substrings (['degrees', 'e^{i', 'polar']).  The primary's type-gap finding survives an independent keyword set.",
+   "overturns_the_conclusion": false,
+   "refutation_holds": false
+  },
+  {
+   "attack": "MISSES_IS_ACTUALLY_A_HIT_UNDER_THE_UNAVERAGED_SUM_CONVENTION",
+   "detail": "cycles [882] contribute a 2/9 candidate binned as 'misses the target', but under the no-go's OWN normalisation Phi = 3*L that object is worth exactly 2/3.  The 'miss' is an artefact of which normalisation the primary enumerated.  Adjudication: the conversion factor 3 is the unaveraging step, and it is not the disputed step -- the disputed step is reading the RESULT as radians, which is bin 7 either way.  So the bin label moves for these candidates while the route-1 verdict does not.",
+   "overturns_the_conclusion": false,
+   "refutation_holds": true
+  },
+  {
+   "attack": "RESTATES_IS_ACTUALLY_DERIVABLE",
+   "detail": "the 'restates' classification is not the sweep's editorial judgement -- cycle 882's own committed runner output says the anchor row whose constant is the fixed-locus arithmetic is 'the license restated, not derived'.  Attacking it would require overturning a landed package, not this sweep.",
+   "overturns_the_conclusion": false,
+   "refutation_holds": false
+  },
+  {
+   "attack": "SWEPT_EMPTY_OVERCLAIMS",
+   "detail": "cycles [857, 864, 868, 870, 871, 909, 911, 912, 913, 924] are present in this worktree in the campaign window but were not swept.  Any reading of 'route 1 swept empty' as a campaign-wide statement is unsupported.  Adjudication: the primary's HONEST SCOPE sentence explicitly limits the claim to the enumerated artifacts and disclaims artifacts not enumerated, so the receipt does not overclaim -- but a READER quoting the headline without the scope sentence would.",
+   "overturns_the_conclusion": false,
+   "refutation_holds": true
+  },
+  {
+   "attack": "REFERENT_PRESENCE_IS_THINNER_THAN_THE_PRIMARY_IMPLIES",
+   "detail": "cycles [886, 888] carry the charged-lepton referent in at most two DISTINCT sentences each -- and in 886/888 it is ONE sentence, imported verbatim from the cycle-882 primary and graded by those packages themselves as 'target-facing, not axiom-grounded' (they cite it as an example of a CIRCULAR selector).  So 'these surfaces speak the charged-lepton language' is weaker than it sounds: they QUOTE it, they do not derive in it.  Adjudication: this makes the primary's bin-7 finding NARROWER, not wrong -- the type gap is still what stops the candidates, and a thinner referent would only push candidates back toward bin 5, which is also a non-survivor bin.  The route-1 verdict is unchanged either way.",
+   "overturns_the_conclusion": false,
+   "refutation_holds": true
+  },
+  {
+   "attack": "C899_SUM_BINDING_IS_FORCED",
+   "detail": "attacked the sharpest candidate's forcedness and the attack CONFIRMS the primary: cycle 899's own independent checker records that 402 closed forms return 2/9 at C3 while taking 10 distinct values at C4, so the form that produces the 2/3 sum is not singled out by the data (bound present in the pinned receipt: True).  This is an INDEPENDENT bin-4 obstruction the primary did not cite; it strengthens the no-survivor verdict rather than weakening it.",
+   "overturns_the_conclusion": false,
+   "refutation_holds": false
+  },
+  {
+   "attack": "VENDORED_PINS_ARE_UNVERIFIED",
+   "detail": "recomputed the sha256 of outputs/family_binding_cycle899_receipt_2026_07_28.json from raw bytes with its own hasher and it matches the ship receipt entry",
+   "overturns_the_conclusion": false,
+   "refutation_holds": false
+  },
+  {
+   "attack": "THE_SWEEP_COULD_NEVER_HAVE_FOUND_A_SURVIVOR",
+   "detail": "reimplemented the survivor condition independently from the no-go's route-1 sentence; it accepts a fully-qualified candidate and rejects one that differs ONLY in angle typing.  The empty result is therefore a property of the corpus, not of the gate.",
+   "overturns_the_conclusion": false,
+   "refutation_holds": false
+  },
+  {
+   "attack": "PRIMARY_DIGEST_DOES_NOT_COVER_ITS_SCIENCE",
+   "detail": "recomputed the primary's science digest from its own six science sections with an independent hasher; it reproduces exactly, so the digest binds the reported content",
+   "overturns_the_conclusion": false,
+   "refutation_holds": false
+  }
+ ],
+ "refutations_that_hold": 3,
+ "refutations_that_overturn_the_conclusion": 0,
+ "role": "independent checker, spec'd to refute",
+ "runtime_seconds": 0.21,
+ "science_digest": "cb0b46a51162efb6fb755e8c0c753b5c7d7a36f2e3f0962afceeef9b4283dc52",
+ "scope_overclaim_attack": {
+  "campaign_cycles_present_in_this_worktree_but_NOT_swept": [
+   857,
+   864,
+   868,
+   870,
+   871,
+   909,
+   911,
+   912,
+   913,
+   924
+  ],
+  "has_honest_scope_sentence": true,
+  "names_the_limitation_explicitly": true,
+  "statement_length_chars": 3676,
+  "swept_count": 17,
+  "swept_cycles": [
+   872,
+   876,
+   882,
+   883,
+   886,
+   888,
+   890,
+   891,
+   895,
+   898,
+   899,
+   900,
+   901,
+   903,
+   904,
+   916,
+   921
+  ],
+  "uses_an_unqualified_universal": false
+ },
+ "totals": {
+  "FAIL": 0,
+  "PASS": 21
+ },
+ "unit_convention_attack": {
+  "L": "2/9",
+  "consequence": "Any object the primary binned as 'misses' at 2/9 is one multiplication away from the target.  The primary is only safe if, for every 2/9 object it enumerated, it ALSO enumerated the corresponding unaveraged sum as its own candidate.",
+  "convention": "Phi = 3 * L (the no-go's own unaveraged-sum normalisation)",
+  "the_convention_does_convert_2_9_into_2_3": true,
+  "three_times_L": "2/3"
+ }
+}

@@ -454,6 +454,21 @@ CANDIDATES = [
         "anchor": "F_dim(3)=F_res(3)=2/9",
     },
     {
+        # ADDED AFTER THE CHECKER'S ENUMERATION ATTACK.  The checker's independent
+        # exact-rational extraction found an exact 2/3 in cycle 901 that this
+        # pool did not anchor.  It is the diagonal of the projector onto the
+        # plane normal to the body diagonal -- the same kind of object as
+        # C904-DIAGQP but on a surface that DOES carry the referent in prose.
+        "id": "C901-PROJDIAG",
+        "cycle": 901,
+        "object": "diagonal entries of the C3 normal-plane projector (G_CONJUGATE rows)",
+        "value": "2/3",
+        "angle_of": "the plane normal to the (1,1,1) body diagonal, per conjugate class row",
+        "status": "derived (exact rational basis data in the conjugacy survey)",
+        "source": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+        "anchor": '"2/3",',
+    },
+    {
         "id": "C891-PERIOD",
         "cycle": 891,
         "object": "the readable episode period family (the k-run/period instrument)",
@@ -742,7 +757,8 @@ BINS = {
 
 # Candidates whose exact derived value is 2/3.  Each is anchored in section C
 # against its pinned receipt, so this set cannot drift from the sources.
-EXACTLY_TWO_THIRDS = {"C899-SUM", "C904-DIAGQP", "C898-TRACE", "C897-Q", "PLANT-NUMEROLOGY"}
+EXACTLY_TWO_THIRDS = {"C899-SUM", "C904-DIAGQP", "C898-TRACE", "C897-Q", "C901-PROJDIAG",
+                      "PLANT-NUMEROLOGY"}
 
 
 def exact(value: str) -> Fraction | None:
@@ -1030,6 +1046,23 @@ def section_e(a: dict, c: dict, d: dict) -> dict:
                     "target-tuned prediction (2/27 IS reachable at word length 1 by a native "
                     "scope-uniform relation).  The contradiction is between two landed campaign "
                     "packages and is reported, not adjudicated.",
+        },
+        {
+            "row": 7,
+            "carried_from": "NEW this cycle, found by this block's own checker",
+            "text": "Cycle 899's independent checker records an identifiability bound the "
+                    "R-eta lane should carry wherever the 2/9 anchor is cited: 402 closed forms "
+                    "return 2/9 at C3 while taking 10 distinct values at C4.  The anchor value "
+                    "at C3 therefore constrains almost nothing on its own.",
+        },
+        {
+            "row": 8,
+            "carried_from": "NEW this cycle, found by this block's own checker",
+            "text": "The charged-lepton referent on cycles 886 and 888 is ONE sentence, imported "
+                    "verbatim from the cycle-882 primary, which both packages themselves grade "
+                    "'target-facing, not axiom-grounded' and cite as an example of a CIRCULAR "
+                    "selector.  Anyone reading 'these surfaces carry the referent' as native "
+                    "vocabulary would be overreading; they quote it, they do not derive in it.",
         },
         {
             "row": 6,

@@ -2,17 +2,17 @@
 runner: frontier_cycle928_route1_sweep_independent_check_2026_07_28.py
 
 PASS CK1_OWN_CORPUS_DISCOVERED :: {'cycles': [857, 864, 868, 870, 871, 872, 876, 882, 883, 886, 888, 890, 891, 895, 898, 899, 900, 901, 903, 904, 909, 911, 912, 913, 916, 921, 924], 'files': 139}
-PASS CK2_PRIMARY_RECEIPT_READABLE :: {'FAIL': 0, 'PASS': 47}
+PASS CK2_PRIMARY_RECEIPT_READABLE :: {'FAIL': 0, 'PASS': 48}
 PASS CK3_INDEPENDENT_2_3_EXTRACTION :: {'cycles_with_an_exact_2/3': [876, 898, 899, 901, 904, 911, 924], 'primary_enumerated': [897, 898, 899, 901, 904], 'not_in_the_primary_pool': [876, 911, 924], 'of_those_on_a_referent_carrying_surface': []}
 PASS CK4_NO_ANGLE_TYPING_FOUND_BY_DIFFERENT_KEYWORDS :: {'keywords_tried': 17, 'angle_typing_keywords_that_hit': [], 'incidental_hits': ['degrees', 'e^{i', 'polar']}
 PASS CK5_BINS_REDERIVED_FROM_THE_NO_GO_TEXT :: {'1': 'Misses the target', '2': 'Cannot pin a nonzero member', '3': 'Restates the missing license'}
 PASS CK6_TARGET_COORDINATES_VERIFIED_FROM_SOURCE :: Phi_target := 3 delta_target = S_sum = 2/3
 PASS CK7_UNIT_CONVENTION_ATTACK :: {'convention': "Phi = 3 * L (the no-go's own unaveraged-sum normalisation)", 'L': '2/9', 'three_times_L': '2/3', 'the_convention_does_convert_2_9_into_2_3': True, 'consequence': "Any object the primary binned as 'misses' at 2/9 is one multiplication away from the target.  The primary is only safe if, for every 2/9 object it enumerated, it ALSO enumerated the corresponding unaveraged sum as its own candidate.", 'cycles_with_a_2/9_candidate': [882, 899, 901], 'cycles_whose_unaveraged_sum_is_ALSO_enumerated': [897, 898, 899, 901, 904], 'unpaired': [882]}
 PASS CK8_RESTATES_VERDICT_IS_THE_SOURCES_OWN_WORDS :: cycle 882's own runner cache calls the fixed-locus anchor row 'the license restated, not derived'
-PASS CK9_HONEST_SCOPE_SENTENCE_PRESENT :: {'swept_cycles': [872, 876, 882, 883, 886, 888, 890, 891, 895, 898, 899, 900, 901, 903, 904, 916, 921], 'swept_count': 17, 'campaign_cycles_present_in_this_worktree_but_NOT_swept': [857, 864, 868, 870, 871, 909, 911, 912, 913, 924], 'has_honest_scope_sentence': True, 'names_the_limitation_explicitly': True, 'uses_an_unqualified_universal': False, 'statement_length_chars': 3676}
+PASS CK9_HONEST_SCOPE_SENTENCE_PRESENT :: {'swept_cycles': [872, 876, 882, 883, 886, 888, 890, 891, 895, 898, 899, 900, 901, 903, 904, 916, 921], 'swept_count': 17, 'campaign_cycles_present_in_this_worktree_but_NOT_swept': [857, 864, 868, 870, 871, 909, 911, 912, 913, 924], 'has_honest_scope_sentence': True, 'names_the_limitation_explicitly': True, 'uses_an_unqualified_universal': False, 'statement_length_chars': 4473}
 PASS CK10_NO_UNQUALIFIED_UNIVERSAL :: the statement does not claim 'swept empty on all/every surface'
 PASS CK11_RADIAN_ZERO_REPRODUCED_INDEPENDENTLY :: {'own_corpus_files': 139, 'radian_occurrences': 0}
-PASS CK11b_EVERY_RADIAN_IN_THE_WINDOW_BELONGS_TO_THE_SWEEP_ITSELF :: {'radian_hits_by_cycle': {928: 83}, 'cycles_other_than_928_carrying_a_radian': {}, 'meaning': "the only artifacts in the campaign window that use the word 'radian' are cycle 928's own receipts and caches -- i.e. the sweep reporting the absence.  No surveyed package uses it."}
+PASS CK11b_EVERY_RADIAN_IN_THE_WINDOW_BELONGS_TO_THE_SWEEP_ITSELF :: {'radian_hits_by_cycle': {928: 84}, 'cycles_other_than_928_carrying_a_radian': {}, 'meaning': "the only artifacts in the campaign window that use the word 'radian' are cycle 928's own receipts and caches -- i.e. the sweep reporting the absence.  No surveyed package uses it."}
 PASS CK12_RADIAN_SCANNER_POSITIVE_CONTROL :: the holonomy is 2/3 radians
 PASS CK13_NO_SURVIVOR_CLAIMED :: primary reports any_licensed = False
 PASS CK14_RESTRICTION_GATE_NOT_RELAXED :: TOTAL: PASS=128 FAIL=0
@@ -20,8 +20,8 @@ PASS CK15_REFERENT_DEPTH_ATTACK :: {'distinct_charged_lepton_sentences_per_cycle
 PASS CK16_BINDING_FORCEDNESS_ATTACK :: {'cycle_899_own_identifiability_bound_present': True, 'claim': '402 closed forms return 2/9 at C3 while taking 10 distinct values at C4'}
 PASS CK17_VENDORED_PIN_REVERIFIED_INDEPENDENTLY :: {'file': 'outputs/family_binding_cycle899_receipt_2026_07_28.json', 'sha256': '90dbda0357f9f0d09d437edd'}
 PASS CK18_GATE_IS_NOT_A_CONSTANT_FUNCTION :: {'accepts_a_full_survivor': True, 'rejects_when_only_the_typing_is_missing': False}
-PASS CK19_PRIMARY_SCIENCE_DIGEST_RECOMPUTED :: {'recomputed': 'dd42a245fc3b962b4868b96f', 'recorded': 'dd42a245fc3b962b4868b96f'}
-PASS CKZ_RUNTIME :: 0.21s / 900.0s
+PASS CK19_PRIMARY_SCIENCE_DIGEST_RECOMPUTED :: {'recomputed': '047eeb95ead5e75b67f4fa3e', 'recorded': '047eeb95ead5e75b67f4fa3e'}
+PASS CKZ_RUNTIME :: 0.22s / 900.0s
 
 --- REFUTATION ATTEMPTS ---
 [FAILS] ENUMERATION_COMPLETENESS (overturns=False): no exact 2/3 found on a referent-carrying surface outside the primary's pool
@@ -35,8 +35,8 @@ PASS CKZ_RUNTIME :: 0.21s / 900.0s
 [FAILS] THE_SWEEP_COULD_NEVER_HAVE_FOUND_A_SURVIVOR (overturns=False): reimplemented the survivor condition independently from the no-go's route-1 sentence; it accepts a fully-qualified candidate and rejects one that differs ONLY in angle typing.  The empty result is therefore a property of the corpus, not of the gate.
 [FAILS] PRIMARY_DIGEST_DOES_NOT_COVER_ITS_SCIENCE (overturns=False): recomputed the primary's science digest from its own six science sections with an independent hasher; it reproduces exactly, so the digest binds the reported content
 
-science_digest=cb0b46a51162efb6fb755e8c0c753b5c7d7a36f2e3f0962afceeef9b4283dc52
+science_digest=1dd8244fb39cf24c531235d53f6f5b8d8ddb83a48278a1d8311c15c258b42923
 refutations_that_hold=3 overturning=0
 TOTAL: PASS=21 FAIL=0
 VERDICT: PRIMARY_SURVIVES_THIS_CHECK
-runtime_seconds=0.21 budget=900.0
+runtime_seconds=0.22 budget=900.0

@@ -933,7 +933,7 @@
     "text": "exclude #1 : This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it."
    }
   ],
-  "candidate_count": 19,
+  "candidate_count": 20,
   "candidates": [
    {
     "anchor": "\"sum_of_inverse_determinants\": \"2/3\"",
@@ -1102,6 +1102,20 @@
     "typing_sentence_file": "outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json",
     "typing_sentence_line": 46,
     "value": "2/9"
+   },
+   {
+    "anchor": "acts on the normal plane as a rotation by 2 pi k / n",
+    "anchor_found": true,
+    "angle_of": "the C3 body-diagonal cycle -- the registered charged-lepton cycle's own rotation",
+    "cycle": 901,
+    "id": "C901-ROTANGLE",
+    "object": "the C3 rotation angle 2 pi k / n by which a generator acts on the normal plane",
+    "source": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "status": "derived theorem (C901-T2a), and genuinely angle-typed by its own sentence",
+    "typing_sentence_byte_quoted": "\"theorem_a\": \"C901-T2a. For every cyclic rotation subgroup H <= O of order n, L_face(H) = (n^2 - 1) / (12 n), independent of which axis H rotates about. Reason: every non-identity element of a cyclic order-n rotation group acts on the normal plane as a rotation by 2 pi k / n, so det_R(I - h|_N) = 2 - 2 cos(2 pi k / n) depends on k and n alone. Verified here on all cyclic subgroups of O, all conjugates.\",",
+    "typing_sentence_file": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+    "typing_sentence_line": 933,
+    "value": "2*pi/3 at n=3, k=1"
    },
    {
     "anchor": "\"2/3\",",
@@ -1722,7 +1736,7 @@
    "BIN 8 SCOPE GAP (NEW this block, structural)": "The value exists only at a scope -- C3, or n = 3, or one schema out of many -- that the SAME campaign's own theorems prove is not isolated: Cycle 886 finds 0 of 16 routes grounded-and-isolating for C3, Cycle 888 finds freeness+maximality selects S3 alone over the full 30-subgroup lattice, Cycle 890 leaves the ladder endpoint at {C3, C4}, and Cycle 904 finds 442 scope-uniform families reaching 115 distinct values.  Even granting the type conversion, picking the scope that yields 2/3 is an unlicensed selection."
   },
   "counts_by_bin": {
-   "BIN 1 misses the target": 3,
+   "BIN 1 misses the target": 4,
    "BIN 5 no referent": 12,
    "BIN 7 TYPE GAP (NEW this block, and the decisive one here)": 4
   },
@@ -1981,6 +1995,27 @@
     "value": "2/9"
    },
    {
+    "angle_of": "the C3 body-diagonal cycle -- the registered charged-lepton cycle's own rotation",
+    "bin": "BIN 1 misses the target",
+    "cycle": 901,
+    "derivation_status": "derived theorem (C901-T2a), and genuinely angle-typed by its own sentence",
+    "exact_check": "THE DECISIVE NEAR-MISS.  This is the only genuinely angle-valued object on the entire new surface, and it sits on the right cycle -- but its value is 2*pi/3, a canonical 2*pi packaging of a rational, which is precisely the bin the July no-go already closed ('not 2*pi*S_sum').  The miss is exact and unbridgeable for the no-go's own reason: 2*pi/3 is irrational for rational 2/3, so no equality is possible at any k or n -- 2*pi*k/n = 2/3 would force pi = 1/k * n/3, rational.  The surface's one real angle is the C3 rotation angle, and the R-eta target is NOT that angle.",
+    "gates": {
+     "LICENSED": false,
+     "R1_value_is_exactly_2_over_3": false,
+     "R2_source_types_it_as_an_angle": true,
+     "R3_referent_present_on_the_home_surface": true,
+     "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
+     "R5_scope_is_isolated_by_the_surface": false,
+     "R6_arity_is_the_C3_threefold_unaveraged_sum": false
+    },
+    "id": "C901-ROTANGLE",
+    "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the C3 rotation angle 2 pi k / n by which a generator acts on the normal plane (cycle 901), read in radians",
+    "object": "the C3 rotation angle 2 pi k / n by which a generator acts on the normal plane",
+    "secondary_bin_if_the_type_gap_were_granted": null,
+    "value": "2*pi/3 at n=3, k=1"
+   },
+   {
     "angle_of": "the plane normal to the (1,1,1) body diagonal, per conjugate class row",
     "bin": "BIN 7 TYPE GAP (NEW this block, and the decisive one here)",
     "cycle": 901,
@@ -2157,6 +2192,11 @@
     "text": "Cycle 904 reports AGAINST INTEREST that it contradicts Cycle 898's target-tuned prediction (2/27 IS reachable at word length 1 by a native scope-uniform relation).  The contradiction is between two landed campaign packages and is reported, not adjudicated."
    },
    {
+    "carried_from": "NEW this cycle",
+    "row": 9,
+    "text": "Cycle 903's note claims its fidelity sweep returned '15 PARTIAL'; its own receipt and runner cache both record 10 (sigma_theta_cycle903_receipt: PARTIAL_count = 10). FAIL=0 either way and nothing in this block depends on the count. Reported, not repaired."
+   },
+   {
     "carried_from": "NEW this cycle, found by this block's own checker",
     "row": 7,
     "text": "Cycle 899's independent checker records an identifiability bound the R-eta lane should carry wherever the 2/9 anchor is cited: 402 closed forms return 2/9 at C3 while taking 10 distinct values at C4.  The anchor value at C3 therefore constrains almost nothing on its own."
@@ -2172,7 +2212,7 @@
     "text": "Cycle 882 emits an unresolved pin discrepancy: the on-branch Cycle-871 statement records the readout clause at free dimension 1 while the 871 report's obligation map says 2.  Cycle 924 later computes the free dimension as exactly 1 and decomposes the readout as 2 = 1 (bridge) + 1 (angle scale), which RECONCILES the discrepancy as a one-clause vs two-clause decomposition difference -- exactly as 882 conjectured.  Reported for the audit lane."
    }
   ],
-  "consolidated_license_statement": "THE R-ETA OBLIGATION'S FULL CURRENT PRICE, IN ONE PLACE.  What remains unbought is exactly ONE homogeneous dimension: the h-unit ANGLE SCALE -- the identification that reads the C3 fixed-locus density sum S_sum = 3 * L3(1,2) = 2/3 as an angle in radians on the registered charged-lepton cycle.  Its four routes now stand as follows.  ROUTE 2 (record-facing inhomogeneous readout theorem) is CLOSED by the July stretch no-go and walled again by Cycle 882: nothing homogeneous, comparative, intensive, orbit-multiplicative or algebraically closed leaves the target member standing alone (200 closed libraries, zero select), and LEMMA-882 is EQUIVALENT to the obligation itself.  ROUTE 3 (occurrence-lane event-rate) is PRICED SHUT by Cycle 924: referent gap, arity mismatch and terminality, each a theorem.  ROUTE 1 (the licensed angle-native theorem) is SWEPT EMPTY by this block over the enumerated artifacts: 18 candidates over 17 vendored packages, 99 files, zero survivors -- and the blocking obstruction is NEW.  Route 3 died of a referent gap; route 1 does not, because these surfaces DO speak the charged-lepton/fixed-locus language and DO derive objects worth exactly 2/3.  Route 1 dies of a TYPE GAP: the entire new surface contains ZERO occurrences of the word 'radian', every derived object is a density, determinant sum, weight, count or dimension, and no artifact supplies a sentence converting any of them into an angle.  That missing sentence IS the h-unit license.  It is also, independently, what the only approved dimensionful primitive explicitly refuses to sell: its own exclusion clause reads -- byte-quoted from the pinned Cycle-903 receipt -- \"This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.\" -- naming a mixing angle and a phase among the things it does not supply.  ROUTE 4 (approve a narrow readout primitive) is governance, not derivation, and is out of scope here; note only that route 4 would now have to introduce a NEW primitive, because the existing scale-reference primitive disclaims exactly this content.  SECOND OBSTRUCTION, held in reserve: even if the type conversion were granted for free, the 2/3 exists only at the C3 / n = 3 scope, and this campaign's own theorems prove that scope is unselected -- Cycle 886 (0 of 16 routes grounded-and-isolating for C3), Cycle 888 (freeness + maximality selects S3 alone over the full 30-subgroup lattice), Cycle 890 (ladder endpoint {C3, C4}), Cycle 904 (442 scope-uniform families, 115 distinct values).  WHAT THE CAMPAIGN DID BUY on the density side, for contrast, is real: Cycle 883 derived the Record-carried weight pair (1, 2) from Lattice + Record; Cycle 899 dissolved its five-fold ambiguity to the single scope-invariant form (n-1)/n^2; Cycle 901 re-bound the 2/9 anchor to Record content-space at zero numerical cost across 44 consumers; Cycle 904 reached 2/27 natively at word length 1.  Every one of those advances is on h-class -- the density half.  The angle half did not move by one step.  HONEST SCOPE: this sweep covers the enumerated artifacts named in this receipt -- 17 vendored packages plus 2 firewall-quarantined packages pinned by digest, on the toe-time-expansion-20260802 campaign branches, at the branch pins recorded in section A.  It is not a statement about all future mathematics, nor about campaign artifacts not enumerated here, nor about surfaces built after these pins.  A future artifact that types an object in radians on a charged-lepton cycle would move candidates out of bin 7 and would have to be swept afresh.",
+  "consolidated_license_statement": "THE R-ETA OBLIGATION'S FULL CURRENT PRICE, IN ONE PLACE.  What remains unbought is exactly ONE homogeneous dimension: the h-unit ANGLE SCALE -- the identification that reads the C3 fixed-locus density sum S_sum = 3 * L3(1,2) = 2/3 as an angle in radians on the registered charged-lepton cycle.  Its four routes now stand as follows.  ROUTE 2 (record-facing inhomogeneous readout theorem) is CLOSED by the July stretch no-go and walled again by Cycle 882: nothing homogeneous, comparative, intensive, orbit-multiplicative or algebraically closed leaves the target member standing alone (200 closed libraries, zero select), and LEMMA-882 is EQUIVALENT to the obligation itself.  ROUTE 3 (occurrence-lane event-rate) is PRICED SHUT by Cycle 924: referent gap, arity mismatch and terminality, each a theorem.  ROUTE 1 (the licensed angle-native theorem) is SWEPT EMPTY by this block over the enumerated artifacts: 18 candidates over 17 vendored packages, 99 files, zero survivors -- and the blocking obstruction is NEW.  Route 3 died of a referent gap; route 1 does not, because these surfaces DO speak the charged-lepton/fixed-locus language and DO derive objects worth exactly 2/3.  Route 1 dies of a TYPE GAP, and the gap has a sharp edge.  The surface contains ZERO occurrences of the word 'radian' across 99 vendored files, and every 2/3-valued object on it is a density, a determinant sum, a projector diagonal or a trace -- none typed as an angle.  There is EXACTLY ONE genuinely angle-valued derived object anywhere on the new surface, and it is worth stating precisely because it sits on the right cycle: cycle 901's C901-T2a derives that a generator of a cyclic order-n rotation group 'acts on the normal plane as a rotation by 2 pi k / n'.  At n = 3 that is 2*pi/3 -- the C3 body-diagonal rotation angle, on the very cycle R-eta is about.  And it MISSES: 2*pi/3 is a canonical 2*pi packaging of a rational, exactly the bin the July no-go already closed ('not 2*pi*S_sum'), and the miss is unbridgeable for the no-go's own reason -- 2*pi*k/n = 2/3 would force pi rational.  So the surface's one real angle is not the target, and the surface's objects that ARE worth 2/3 are not angles.  The sentence that would join those two facts is exactly the missing h-unit license.  It is also, independently, what the only approved dimensionful primitive explicitly refuses to sell: its own exclusion clause reads -- byte-quoted from the pinned Cycle-903 receipt -- \"This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.\" -- naming a mixing angle and a phase among the things it does not supply.  ROUTE 4 (approve a narrow readout primitive) is governance, not derivation, and is out of scope here; note only that route 4 would now have to introduce a NEW primitive, because the existing scale-reference primitive disclaims exactly this content.  SECOND OBSTRUCTION, held in reserve: even if the type conversion were granted for free, the 2/3 exists only at the C3 / n = 3 scope, and this campaign's own theorems prove that scope is unselected -- Cycle 886 (0 of 16 routes grounded-and-isolating for C3), Cycle 888 (freeness + maximality selects S3 alone over the full 30-subgroup lattice), Cycle 890 (ladder endpoint {C3, C4}), Cycle 904 (442 scope-uniform families, 115 distinct values).  WHAT THE CAMPAIGN DID BUY on the density side, for contrast, is real: Cycle 883 derived the Record-carried weight pair (1, 2) from Lattice + Record; Cycle 899 dissolved its five-fold ambiguity to the single scope-invariant form (n-1)/n^2; Cycle 901 re-bound the 2/9 anchor to Record content-space at zero numerical cost across 44 consumers; Cycle 904 reached 2/27 natively at word length 1.  Every one of those advances is on h-class -- the density half.  The angle half did not move by one step.  HONEST SCOPE: this sweep covers the enumerated artifacts named in this receipt -- 17 vendored packages plus 2 firewall-quarantined packages pinned by digest, on the toe-time-expansion-20260802 campaign branches, at the branch pins recorded in section A.  It is not a statement about all future mathematics, nor about campaign artifacts not enumerated here, nor about surfaces built after these pins.  A future artifact that types an object in radians on a charged-lepton cycle would move candidates out of bin 7 and would have to be swept afresh.",
   "primitive_exclusion_clause_byte_quoted": "This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.",
   "route_status": {
    "route_1_licensed_angle_native_theorem": "SWEPT EMPTY over the enumerated artifacts (this block)",
@@ -2246,11 +2286,11 @@
  "campaign": "toe-time-expansion-20260802",
  "claim_type": "bounded_theorem",
  "cycle": 928,
- "runtime_seconds": 2.73,
- "science_digest": "dd42a245fc3b962b4868b96fdcbc0a9f05832393437878b190b8e0f5981e11b2",
+ "runtime_seconds": 2.72,
+ "science_digest": "047eeb95ead5e75b67f4fa3e4c5b8516ed198217289ea1ddca325aaff8c7a301",
  "target": "R-eta route 1 (the licensed angle-native theorem) -- swept over every angle-valued and scale-carrying object on the surfaces built since the 2026-07-04 angle-native no-go",
  "totals": {
   "FAIL": 0,
-  "PASS": 47
+  "PASS": 48
  }
 }

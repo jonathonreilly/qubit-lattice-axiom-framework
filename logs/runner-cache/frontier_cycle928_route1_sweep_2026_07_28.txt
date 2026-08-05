@@ -24,6 +24,7 @@ PASS C_ANCHOR_C895-AFFINE :: {'source': 'outputs/t_retirement_block_cycle895_shi
 PASS C_ANCHOR_C883-WEIGHTPAIR :: {'source': 'docs/RECORD_WEIGHT_PAIR_DERIVED_CYCLE883_BOUNDED_THEOREM_NOTE_2026-07-28.md', 'anchor': '(1, 2)'}
 PASS C_ANCHOR_C882-ALPHA :: {'source': 'docs/READOUT_IDENTITY_CLOSED_LIBRARY_WALL_CYCLE882_BOUNDED_THEOREM_NOTE_2026-07-28.md', 'anchor': 'the license RESTATED, not derived'}
 PASS C_ANCHOR_C901-FDIM :: {'source': 'outputs/space_identification_block_cycle901_ship_receipt_2026_07_28.json', 'anchor': 'F_dim(3)=F_res(3)=2/9'}
+PASS C_ANCHOR_C901-ROTANGLE :: {'source': 'outputs/space_identification_cycle901_receipt_2026_07_28.json', 'anchor': 'acts on the normal plane as a rotation by 2 pi k / n'}
 PASS C_ANCHOR_C901-PROJDIAG :: {'source': 'outputs/space_identification_cycle901_receipt_2026_07_28.json', 'anchor': '"2/3",'}
 PASS C_ANCHOR_C891-PERIOD :: {'source': 'outputs/complement_block_cycle891_ship_receipt_2026_07_28.json', 'anchor': 'complement'}
 PASS C_ANCHOR_C916-THETA :: {'source': 'outputs/theta_dictionary_block_cycle916_ship_receipt_2026_07_28.json', 'anchor': 'convention-two-valued'}
@@ -34,8 +35,8 @@ PASS C_RADIAN_SCAN_ZERO_ACROSS_THE_WHOLE_NEW_SURFACE :: {'radian_or_radians_occu
 PASS C_REFERENT_IS_PRESENT_UNLIKE_THE_OCCURRENCE_SURFACE :: {'packages_carrying_the_referent_IN_PROSE': [882, 886, 888, 890, 898, 899, 901], 'packages_without_it': [872, 876, 883, 891, 895, 900, 903, 904, 916, 921], 'note': "raw substring counting would have inflated this list to 10 by counting corpus-scan file paths and the substring 's_sum' inside identifiers such as 'dimensions_sum_to_the_orbit_length'; those are classified out and reported"}
 PASS C_NO_DERIVED_ANGLE_OBJECT_ON_THE_NEW_SURFACE :: {'angle_word_occurrences': 20, 'kinds': ['CITATION of the July no-go note itself', 'CODE SIGNATURE quoted as provenance, not a derived object', 'EXCLUSION CLAUSE -- the primitive refuses to supply an angle', 'OTHER']}
 PASS D_NO_ROUTE_1_SURVIVOR :: {'survivors': []}
-PASS D_TYPE_GAP_IS_THE_DECISIVE_BIN :: {'candidates_that_are_exactly_2/3_AND_carry_the_referent': ['C899-SUM', 'C898-TRACE', 'C901-PROJDIAG', 'C897-Q'], 'all_stopped_by_the_type_gap': True, 'counts_by_bin': {'BIN 7 TYPE GAP (NEW this block, and the decisive one here)': 4, 'BIN 1 misses the target': 3, 'BIN 5 no referent': 12}}
-PASS D_BIN_5_IS_NOT_DECISIVE_HERE_UNLIKE_924 :: {'bin_5_count': 12, 'total': 19}
+PASS D_TYPE_GAP_IS_THE_DECISIVE_BIN :: {'candidates_that_are_exactly_2/3_AND_carry_the_referent': ['C899-SUM', 'C898-TRACE', 'C901-PROJDIAG', 'C897-Q'], 'all_stopped_by_the_type_gap': True, 'counts_by_bin': {'BIN 7 TYPE GAP (NEW this block, and the decisive one here)': 4, 'BIN 1 misses the target': 4, 'BIN 5 no referent': 12}}
+PASS D_BIN_5_IS_NOT_DECISIVE_HERE_UNLIKE_924 :: {'bin_5_count': 12, 'total': 20}
 PASS E_PRIMITIVE_EXCLUSION_CLAUSE_NAMES_AN_ANGLE :: This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.
 PASS F_T1_NUMEROLOGY_PLANT :: planted a synthetic object equal to 2/3 on a referent-carrying surface; it is still rejected, and rejected by the TYPE GAP gate specifically -> BIN 7 TYPE GAP (NEW this block, and the decisive one her
 PASS F_T2_TAMPERED_PIN :: appending one byte to docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md gives digest 477d0779154468a7 != pinned 3cffb593cf379f68; section A2 compares exactly this
@@ -47,9 +48,9 @@ PASS F_T7_EXACT_MISS_ARITHMETIC :: 924's most natural occurrence candidate misse
 PASS F_T8_ENUMERATION_COMPLETENESS :: independent regex pass for a bare 2/3 over every package NOT already in the candidate pool found 0 file(s): [].  Any cycle listed here is a gap in the enumeration and is reported as such
 PASS F_T9_MISSING_SHIP_RECEIPTS_DETECTED :: the corpus scan detects that cycles [872, 876, 882, 883] have no ship receipt anywhere in the campaign; they are pinned against their originating branch blob and the gap is emitted as audit row 3 rath
 PASS F_T10_REFERENT_GATE_STILL_DISCRIMINATES :: 7 of 17 packages carry a charged-lepton/fixed-locus referent -- the gate separates them, so its non-firing on the AC-lane packages is a property of those packages, not a disabled gate
-PASS Z_RUNTIME_WITHIN_BUDGET :: 2.73s / 900.0s
+PASS Z_RUNTIME_WITHIN_BUDGET :: 2.72s / 900.0s
 
-science_digest=dd42a245fc3b962b4868b96fdcbc0a9f05832393437878b190b8e0f5981e11b2
-TOTAL: PASS=47 FAIL=0
+science_digest=047eeb95ead5e75b67f4fa3e4c5b8516ed198217289ea1ddca325aaff8c7a301
+TOTAL: PASS=48 FAIL=0
 VERDICT: PASS
-runtime_seconds=2.73 budget=900.0
+runtime_seconds=2.72 budget=900.0

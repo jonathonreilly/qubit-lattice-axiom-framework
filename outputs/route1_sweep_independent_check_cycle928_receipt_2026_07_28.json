@@ -955,8 +955,8 @@
  "refutations_that_hold": 3,
  "refutations_that_overturn_the_conclusion": 0,
  "role": "independent checker, spec'd to refute",
- "runtime_seconds": 0.21,
- "science_digest": "cb0b46a51162efb6fb755e8c0c753b5c7d7a36f2e3f0962afceeef9b4283dc52",
+ "runtime_seconds": 0.22,
+ "science_digest": "1dd8244fb39cf24c531235d53f6f5b8d8ddb83a48278a1d8311c15c258b42923",
  "scope_overclaim_attack": {
   "campaign_cycles_present_in_this_worktree_but_NOT_swept": [
    857,
@@ -972,7 +972,7 @@
   ],
   "has_honest_scope_sentence": true,
   "names_the_limitation_explicitly": true,
-  "statement_length_chars": 3676,
+  "statement_length_chars": 4473,
   "swept_count": 17,
   "swept_cycles": [
    872,

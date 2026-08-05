@@ -454,6 +454,24 @@ CANDIDATES = [
         "anchor": "F_dim(3)=F_res(3)=2/9",
     },
     {
+        # THE ONLY GENUINELY ANGLE-VALUED OBJECT ON THE ENTIRE NEW SURFACE.
+        # Cycle 901's C901-T2a says every non-identity element of a cyclic
+        # order-n rotation group "acts on the normal plane as a rotation by
+        # 2 pi k / n".  That IS an angle, on the C3 body-diagonal cycle -- the
+        # very cycle R-eta is about.  It is therefore the sharpest possible test
+        # of route 1, and it must be adjudicated explicitly rather than swept up
+        # by the radian-token scan (which does not fire, because the source
+        # writes the angle without ever using the word "radian").
+        "id": "C901-ROTANGLE",
+        "cycle": 901,
+        "object": "the C3 rotation angle 2 pi k / n by which a generator acts on the normal plane",
+        "value": "2*pi/3 at n=3, k=1",
+        "angle_of": "the C3 body-diagonal cycle -- the registered charged-lepton cycle's own rotation",
+        "status": "derived theorem (C901-T2a), and genuinely angle-typed by its own sentence",
+        "source": "outputs/space_identification_cycle901_receipt_2026_07_28.json",
+        "anchor": "acts on the normal plane as a rotation by 2 pi k / n",
+    },
+    {
         # ADDED AFTER THE CHECKER'S ENUMERATION ATTACK.  The checker's independent
         # exact-rational extraction found an exact 2/3 in cycle 901 that this
         # pool did not anchor.  It is the diagonal of the projector onto the
@@ -760,6 +778,12 @@ BINS = {
 EXACTLY_TWO_THIRDS = {"C899-SUM", "C904-DIAGQP", "C898-TRACE", "C897-Q", "C901-PROJDIAG",
                       "PLANT-NUMEROLOGY"}
 
+# Candidates whose source genuinely types the object as an ANGLE, independently
+# of whether it happens to use the word "radian".  Exactly one exists on the new
+# surface, and it is graded angle-typed AGAINST this block's interest: crediting
+# it makes the type gap narrower, not wider.
+ANGLE_TYPED = {"C901-ROTANGLE"}
+
 
 def exact(value: str) -> Fraction | None:
     try:
@@ -787,7 +811,9 @@ def gate_candidate(cand: dict, typing_scan: dict, planted: dict | None = None) -
             # R1: is the exact value 2/3?
             "R1_value_is_exactly_2_over_3": val == Fraction(2, 3),
             # R2: does the source type it as an angle (radians)?
-            "R2_source_types_it_as_an_angle": (scan.get("radian_hits", 0) > 0),
+            "R2_source_types_it_as_an_angle": (
+                cand["id"] in ANGLE_TYPED or scan.get("radian_hits", 0) > 0
+            ),
             # R3: does the home surface carry a charged-lepton-cycle referent?
             # Cycle 897 is firewall-quarantined and therefore not vendored, so it
             # cannot be scanned in-tree.  Its referent status is declared TRUE on
@@ -821,6 +847,18 @@ def classify(cand: dict, g: dict) -> tuple[str, str]:
             "identification sentence cannot be stated there",
         )
     if not g["R1_value_is_exactly_2_over_3"]:
+        if cand["id"] in ANGLE_TYPED:
+            return (
+                "BIN 1 misses the target",
+                "THE DECISIVE NEAR-MISS.  This is the only genuinely angle-valued object on the "
+                "entire new surface, and it sits on the right cycle -- but its value is 2*pi/3, a "
+                "canonical 2*pi packaging of a rational, which is precisely the bin the July "
+                "no-go already closed ('not 2*pi*S_sum').  The miss is exact and unbridgeable for "
+                "the no-go's own reason: 2*pi/3 is irrational for rational 2/3, so no equality is "
+                "possible at any k or n -- 2*pi*k/n = 2/3 would force pi = 1/k * n/3, rational.  "
+                "The surface's one real angle is the C3 rotation angle, and the R-eta target is "
+                "NOT that angle.",
+            )
         return (
             "BIN 1 misses the target",
             f"exact value is {cand['value']}, not 2/3",
@@ -978,10 +1016,19 @@ def section_e(a: dict, c: dict, d: dict) -> dict:
         "candidates over 17 vendored packages, 99 files, zero survivors -- and the blocking "
         "obstruction is NEW.  Route 3 died of a referent gap; route 1 does not, because these "
         "surfaces DO speak the charged-lepton/fixed-locus language and DO derive objects worth "
-        "exactly 2/3.  Route 1 dies of a TYPE GAP: the entire new surface contains ZERO "
-        "occurrences of the word 'radian', every derived object is a density, determinant sum, "
-        "weight, count or dimension, and no artifact supplies a sentence converting any of them "
-        "into an angle.  That missing sentence IS the h-unit license.  It is also, "
+        "exactly 2/3.  Route 1 dies of a TYPE GAP, and the gap has a sharp edge.  The "
+        "surface contains ZERO occurrences of the word 'radian' across 99 vendored files, and "
+        "every 2/3-valued object on it is a density, a determinant sum, a projector diagonal or a "
+        "trace -- none typed as an angle.  There is EXACTLY ONE genuinely angle-valued derived "
+        "object anywhere on the new surface, and it is worth stating precisely because it sits on "
+        "the right cycle: cycle 901's C901-T2a derives that a generator of a cyclic order-n "
+        "rotation group 'acts on the normal plane as a rotation by 2 pi k / n'.  At n = 3 that is "
+        "2*pi/3 -- the C3 body-diagonal rotation angle, on the very cycle R-eta is about.  And it "
+        "MISSES: 2*pi/3 is a canonical 2*pi packaging of a rational, exactly the bin the July "
+        "no-go already closed ('not 2*pi*S_sum'), and the miss is unbridgeable for the no-go's "
+        "own reason -- 2*pi*k/n = 2/3 would force pi rational.  So the surface's one real angle "
+        "is not the target, and the surface's objects that ARE worth 2/3 are not angles.  The "
+        "sentence that would join those two facts is exactly the missing h-unit license.  It is also, "
         "independently, what the only approved dimensionful primitive explicitly refuses to "
         "sell: its own exclusion clause reads -- byte-quoted from the pinned Cycle-903 receipt "
         f"-- \"{exclusion}\" -- naming a mixing angle and a phase among the things it does not "
@@ -1046,6 +1093,14 @@ def section_e(a: dict, c: dict, d: dict) -> dict:
                     "target-tuned prediction (2/27 IS reachable at word length 1 by a native "
                     "scope-uniform relation).  The contradiction is between two landed campaign "
                     "packages and is reported, not adjudicated.",
+        },
+        {
+            "row": 9,
+            "carried_from": "NEW this cycle",
+            "text": "Cycle 903's note claims its fidelity sweep returned '15 PARTIAL'; its own "
+                    "receipt and runner cache both record 10 "
+                    "(sigma_theta_cycle903_receipt: PARTIAL_count = 10). FAIL=0 either way and "
+                    "nothing in this block depends on the count. Reported, not repaired.",
         },
         {
             "row": 7,

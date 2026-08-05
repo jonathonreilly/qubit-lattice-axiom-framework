@@ -47,7 +47,7 @@ Q2  THE 927 SATURATION, DERIVED
 Q3  THE DERIVED CORE'S NEW BOUNDARY
   pinned cells moved to DERIVED: 6  (G1, G2, G3a, G3b, H1, H2)
   still resists: G4, G5, G6, H3, H4
-  G1 CLOSURE: full-vs-reduced 2.13e-13 over 5 fields -- CLOSED
+  G1 CLOSURE: full-vs-reduced 2.12e-13 over 5 fields -- CLOSED
   L-ZERO past isomorphic arms: max deviation 4.30e-15 over 4 mixed spiders
 
 SEAL 33c61f67b211a103  (6 cells, all off every measured grid)
@@ -78,6 +78,6 @@ TEETH  15/15 fire
 VERDICT
   The collective reduction extends OFF THE STAR exactly.  For any spider with d pairwise-isomorphic arms the frozen preparation -- non-uniform along the arm, +X on the root and +Z below it -- is arm-INTRINSIC, so arm permutations remain symmetries and the evolved state lives in C^2 (x) Sym^d(H_arm) with dim 2*C(d+2^L-1,d): measured leakage 1.5e-14 on the full-space route, with a planted one-arm longitudinal field reading 7.5e-02 so the test can see a violation.  The reduced Hamiltonian is the second quantisation of two one-arm operators, verified SYMBOLICALLY in lambda ENTRY BY ENTRY against the explicitly symmetrised full-space Hamiltonian on four cases, and the Schmidt matrix is the MULTI-INDEX Hankel matrix T^(k)_{p,q} = sqrt(M_k(p)M_(d-k)(q)) f(p+q) -- 933's binomial Hankel form is its L = 1 case.  Two structurally disjoint routes agree on s(k) at 7.3e-14 and on C_ab at 2.0e-13 over 28 cells, and the reduced route reproduces the whole frozen certification predicate: the vendored 932 window edges for G1 come out of the reduced route and the full-space route at 2.3e-12 of each other.  927's saturation is DERIVED and the supervisor's light-cone candidate is not what carries it: at lambda_arm = 0 the arm-length effect is EXACTLY zero at every time (a two-sided diagonal unitary on the Hankel matrix -- proved and verified at 3.4e-14), and with the arm field on, the site at DEPTH m enters at order lambda^(2m), decisively demonstrated by the claw family whose added sites all sit at depth 2 and all score lambda^4 against the path family's 4, 6, 8.  The candidate's own scaling collapse fails by 3.3 orders at fixed lambda*t, and the saturation breaks entirely by Jt ~ 25 -- so saturation is a property of the certification row, stated with that scope.  The law predicts 927's own saturation-length column at every field.  Finally the 917 G1 exception cell closes: chain9 IS a d=2 spider with path arms of 4, and it is now computed from the reduction alone at all five fields.
 
-runtime 360.43 s (limit 900 s)
-timing-free digest 046b75ef7ab0f3eed6a60d6a7e894ac4ab2a2e99804b65992f8899462449020f
+runtime 354.84 s (limit 900 s)
+timing-free digest 6dcbc97d820ed8314dcbac5d19bcadd01889f5de882c9531be8e75aa3ed69670
 ===== runner cache v1 =====

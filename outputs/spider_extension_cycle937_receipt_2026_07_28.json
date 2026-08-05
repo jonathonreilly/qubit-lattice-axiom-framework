@@ -5531,17 +5531,19 @@
  "Q3_boundary_and_closure": {
   "G1_closure": {
    "claim": "917's G1 chain9 IS an isomorphic-arm spider (d=2, path arms of L=4), so the exception cell is inside the derived class",
-   "max_abs_dev_full_vs_reduced": 2.1275863015812746e-13,
-   "max_abs_dev_vs_pinned_927": 0.003022974959591306,
+   "max_abs_dev_full_vs_reduced": 2.1183749199238378e-13,
+   "max_abs_dev_vs_pinned_927": 1.5584755708175635e-14,
+   "row_selection_note": "each field is evaluated at ITS OWN pinned ceiling row; at lambda = 0.05 that row is Jt = 0.6, not the comparison row Jt = 0.7, and comparing at 0.7 would manufacture a 3.0e-3 false discrepancy",
    "rows": [
     {
-     "C_ab_full_space_G1_as_chain9": 0.006391418040671105,
-     "C_ab_reduced_as_spider_d2_L4": 0.006391418040883863,
-     "abs_dev": 2.1275863015812746e-13,
-     "abs_dev_vs_pinned": 0.003022974959591306,
+     "C_ab_full_space_G1_as_chain9": 0.003368443081080903,
+     "C_ab_reduced_as_spider_d2_L4": 0.003368443081287171,
+     "abs_dev": 2.0626816227276024e-13,
+     "abs_dev_vs_pinned": 1.1041514924592377e-15,
      "field": 0.05,
      "over_the_0.02_gate": false,
-     "pinned_927_SPk2L4_ceiling_row": 0.0033684430810797987
+     "pinned_927_SPk2L4_ceiling_row": 0.0033684430810797987,
+     "pinned_927_ceiling_jt": 0.6
     },
     {
      "C_ab_full_space_G1_as_chain9": 0.02168141014431258,
@@ -5550,7 +5552,8 @@
      "abs_dev_vs_pinned": 8.756884106730922e-15,
      "field": 0.1,
      "over_the_0.02_gate": true,
-     "pinned_927_SPk2L4_ceiling_row": 0.021681410144321338
+     "pinned_927_SPk2L4_ceiling_row": 0.021681410144321338,
+     "pinned_927_ceiling_jt": 0.7
     },
     {
      "C_ab_full_space_G1_as_chain9": 0.013109585337646782,
@@ -5559,7 +5562,8 @@
      "abs_dev_vs_pinned": 6.728992363314035e-15,
      "field": 0.075,
      "over_the_0.02_gate": false,
-     "pinned_927_SPk2L4_ceiling_row": 0.013109585337640053
+     "pinned_927_SPk2L4_ceiling_row": 0.013109585337640053,
+     "pinned_927_ceiling_jt": 0.7
     },
     {
      "C_ab_full_space_G1_as_chain9": 0.031877705470605804,
@@ -5568,7 +5572,8 @@
      "abs_dev_vs_pinned": 1.5584755708175635e-14,
      "field": 0.125,
      "over_the_0.02_gate": true,
-     "pinned_927_SPk2L4_ceiling_row": 0.03187770547059022
+     "pinned_927_SPk2L4_ceiling_row": 0.03187770547059022,
+     "pinned_927_ceiling_jt": 0.7
     },
     {
      "C_ab_full_space_G1_as_chain9": 0.04351050921593491,
@@ -5577,7 +5582,8 @@
      "abs_dev_vs_pinned": 4.6629367034256575e-15,
      "field": 0.15,
      "over_the_0.02_gate": true,
-     "pinned_927_SPk2L4_ceiling_row": 0.04351050921593025
+     "pinned_927_SPk2L4_ceiling_row": 0.04351050921593025,
+     "pinned_927_ceiling_jt": 0.7
     }
    ],
    "verdict": "CLOSED -- the G1 exception cell is now computed from the derived reduction alone at every certified and diagnostic field, agreeing with the untouched full-space route"
@@ -5838,7 +5844,7 @@
   "n_constants_933": 21,
   "ways": 8
  },
- "git_head": "2fd98343fc",
+ "git_head": "0e4f3be15f",
  "pins": {
   "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": {
    "blob": "5dff1d8b1692099cd86b53959834b6bcb5865a71",
@@ -6013,7 +6019,7 @@
   "sha256_matches_931_receipt": true,
   "sha256_matches_933_receipt": true
  },
- "restriction_gate_seconds": 1.8526583329949062,
+ "restriction_gate_seconds": 1.7748972499975935,
  "restriction_gates": {
   "c927_saturation_summary_reproduced": {
    "max_ceiling_row_spread_any_ladder_pinned": 2.1459715853364147e-05,
@@ -6417,9 +6423,9 @@
   "partition_rule_reproduces_memo_six_lists": true
  },
  "runner": "frontier_cycle937_spider_extension_2026_07_28.py",
- "runner_sha256": "a6d237b0b2e1fc2b4eb275b31972d601fd9a43a2e3dacbee11cd6a4e43851e86",
+ "runner_sha256": "8d356f5edd9c2147a263d8e1a9c86904f3e04213c53e1c9cb237b83fd1ea5705",
  "runtime_limit_seconds": 900.0,
- "runtime_seconds": 360.42635254201014,
+ "runtime_seconds": 354.8392933330033,
  "runtime_within_limit": true,
  "schema": "frontier_cycle937_spider_extension_v1",
  "seal": {
@@ -6749,7 +6755,7 @@
   "n_firing": 15,
   "n_teeth": 15
  },
- "timing_free_digest": "046b75ef7ab0f3eed6a60d6a7e894ac4ab2a2e99804b65992f8899462449020f",
+ "timing_free_digest": "6dcbc97d820ed8314dcbac5d19bcadd01889f5de882c9531be8e75aa3ed69670",
  "timing_free_digest_guard": {
   "declared_constant_whitelist": [
    "runtime_limit_seconds"
@@ -6762,7 +6768,7 @@
    "restriction_gate_seconds",
    "timing_free_digest"
   ],
-  "keys_scanned_recursively": 4726,
+  "keys_scanned_recursively": 4732,
   "leaks_found": 0,
   "note": "the guard walks EVERY key at EVERY depth of the serialised payload; it does not merely drop a list of known top-level keys (the trap class three earlier blocks in this campaign hit)"
  },

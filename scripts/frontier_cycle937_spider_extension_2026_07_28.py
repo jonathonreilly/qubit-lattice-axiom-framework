@@ -2191,21 +2191,23 @@ def main():
     g1_rows = []
     gG1 = geom_chain9()
     for lam in CLAIM_LAMBDAS + DIAG_LAMBDAS:
+        pinnedC, pinned_jt = None, COMPARISON_JT
+        tab = r927["Q1_size_law"]["tables"].get("deg2@%g" % lam)
+        if tab:
+            for row in tab:
+                if row["arm_length"] == 4:
+                    pinnedC = row["C_ab_at_ceiling_row"]
+                    pinned_jt = row["ceiling_jt"]
         diag = build_diag(gG1["n"], gG1["bonds"])
         psi0 = prep_state(gG1["n"], set([gG1["S"]] + gG1["recording"]))
         outs, _ = chebyshev(psi0, diag, gG1["n"], lam, T_EXEC)
-        a = outs[7]
+        ti = int(round(pinned_jt / 0.1))
+        a = outs[ti]
         La, Lb = gG1["labels"]
         Cfull = C_pair(a, gG1["n"], gG1["S"], gG1["frags"][La], gG1["frags"][Lb])
-        Cred = reduced_observables(2, ARMS["L4"], lam, COMPARISON_JT)["C_ab"]
-        pinnedC = None
-        for key in ("deg2@%g" % lam,):
-            tab = r927["Q1_size_law"]["tables"].get(key)
-            if tab:
-                for row in tab:
-                    if row["arm_length"] == 4:
-                        pinnedC = row["C_ab_at_ceiling_row"]
-        g1_rows.append({"field": lam, "C_ab_full_space_G1_as_chain9": Cfull,
+        Cred = reduced_observables(2, ARMS["L4"], lam, pinned_jt)["C_ab"]
+        g1_rows.append({"field": lam, "pinned_927_ceiling_jt": pinned_jt,
+                        "C_ab_full_space_G1_as_chain9": Cfull,
                         "C_ab_reduced_as_spider_d2_L4": Cred,
                         "abs_dev": abs(Cfull - Cred),
                         "pinned_927_SPk2L4_ceiling_row": pinnedC,
@@ -2246,7 +2248,12 @@ def main():
                  is not None], default=None),
             "verdict": "CLOSED -- the G1 exception cell is now computed from the "
                        "derived reduction alone at every certified and diagnostic "
-                       "field, agreeing with the untouched full-space route"}}
+                       "field, agreeing with the untouched full-space route",
+            "row_selection_note": "each field is evaluated at ITS OWN pinned "
+                                  "ceiling row; at lambda = 0.05 that row is "
+                                  "Jt = 0.6, not the comparison row Jt = 0.7, and "
+                                  "comparing at 0.7 would manufacture a 3.0e-3 "
+                                  "false discrepancy"}}
     # the bonus test: non-isomorphic arms at lambda_arm = 0
     mixed_rows = []
     for arms, nm in (([path_arm(1), path_arm(2)], "MIX d=2 arms 1,2"),

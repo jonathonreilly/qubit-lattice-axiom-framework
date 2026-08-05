@@ -1,0 +1,964 @@
+{
+ "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+ "audit": "unset",
+ "authority": "none",
+ "block": "cycle936_choice_substrate_independent_check",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "A_PINS": {
+   "AUDIT_INPUT_PATHS": [
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+    "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+    "scripts/frontier_cycle911_type_vacuity_2026_07_28.py",
+    "scripts/frontier_cycle913_selection_function_2026_07_28.py",
+    "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json",
+    "outputs/law_relaxation_cycle925_receipt_2026_07_28.json",
+    "scripts/frontier_cycle936_choice_substrate_2026_07_28.py",
+    "outputs/choice_substrate_cycle936_receipt_2026_07_28.json"
+   ],
+   "blocked_modules_loaded": [],
+   "certificate": "A_PINS",
+   "firewall_hits": [],
+   "independence": "the primary is read as TEXT and JSON only.  Its module is on the checker's import blocklist and its functions are never called.",
+   "pass": true,
+   "primary_receipt_self_sha256_matches_the_primary_file": true,
+   "sha256": {
+    "outputs/choice_substrate_cycle936_receipt_2026_07_28.json": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028",
+    "outputs/law_relaxation_cycle925_receipt_2026_07_28.json": "f4fabe50ed8b775f2f1288380824ae04f0129f4f136e3b338bafd05647031757",
+    "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json": "849ad2bbb4abc8c9eda5541246784e2bdb69feaf423aac7c6f3aff83f6062bbd",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+    "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+    "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
+    "scripts/frontier_cycle911_type_vacuity_2026_07_28.py": "6474f1e919c97fcb3336a8cea480b5e824fe48f4ea5ce4592c1b75bc0b0007d1",
+    "scripts/frontier_cycle913_selection_function_2026_07_28.py": "b349f873aa1e88558fcd63fc432a6edd249f48f103ecbd3d28fd62d070e689ef",
+    "scripts/frontier_cycle936_choice_substrate_2026_07_28.py": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d"
+   },
+   "shared_pins_match": true
+  },
+  "G_TEETH": {
+   "certificate": "G_TEETH",
+   "pass": true,
+   "teeth": [
+    {
+     "detail": "clause M2 (one setup) fails for any tape that needs wire 394",
+     "fired": true,
+     "tooth": "planted_tape_carrier_changes_the_tick0_fingerprint"
+    },
+    {
+     "detail": "a choice whose value secretly reads a LATER branch coordinate makes the state at occasion 1 depend on more than the bits already taken; the check fires on the plant and is silent on the real tree",
+     "fired": true,
+     "tooth": "planted_anticipating_choice_caught_by_non_anticipation"
+    },
+    {
+     "detail": "swapping the CNOT's control and target changes the compiled code object, so the bytecode comparison is not vacuous",
+     "fired": true,
+     "tooth": "bytecode_identity_catches_a_swapped_CNOT_operand"
+    },
+    {
+     "detail": "the two comparisons are complementary: bytecode catches meaning, text catches form; the primary compared text and this runner compares both",
+     "fired": true,
+     "tooth": "whitespace_only_change_is_bytecode_identical_and_text_different"
+    },
+    {
+     "detail": "off-menu lanes 0 -> 1",
+     "fired": true,
+     "tooth": "planted_single_wire_choice_breaks_the_menu"
+    },
+    {
+     "detail": "the all-zero leaf reproduces the plain M_A window exactly",
+     "fired": true,
+     "tooth": "dropping_the_choice_collapses_the_tree"
+    },
+    {
+     "detail": "",
+     "fired": true,
+     "tooth": "tampered_pin_detected"
+    },
+    {
+     "detail": "",
+     "fired": true,
+     "tooth": "a_corrupted_primary_leaf_count_would_break_K4"
+    },
+    {
+     "detail": "",
+     "fired": true,
+     "tooth": "planted_cross_site_coupling_caught_by_the_factorization_test"
+    },
+    {
+     "detail": "planted w(1) = 2*mu gives sum 65536/6561, the real algebra gives 1",
+     "fired": true,
+     "tooth": "planted_non_normalizing_weight_caught_by_the_grid"
+    },
+    {
+     "detail": "",
+     "fired": true,
+     "tooth": "full_tree_enumerated_not_sampled"
+    },
+    {
+     "detail": "",
+     "fired": true,
+     "tooth": "deterministic_double_run_identical"
+    },
+    {
+     "detail": "",
+     "fired": true,
+     "tooth": "checker_scan_distinguishes_the_control_from_M_A"
+    }
+   ],
+   "tooth_count": 13
+  },
+  "I_RUNTIME": {
+   "budget_sec": 900,
+   "certificate": "I_RUNTIME",
+   "dead_wire_rig_seconds": 9.274,
+   "elapsed_sec": 252.563,
+   "pass": true,
+   "per_run_seconds": {
+    "M_A_full_horizon": 34.953,
+    "control_full_horizon": 35.002,
+    "tree_independent_replay": 151.545
+   }
+  },
+  "K5_THE_P3_NOT_P2_ATTACK": {
+   "REFUTED": false,
+   "attack_a_one_law": {
+    "chunk_source_digest": "97920f841cd405553226f4e987fa13b60b723e5660be1eb5e35c2995041fb9fa",
+    "mechanism": "the tree walk reuses the identical compiled chunk objects on every branch; the branch coordinate never reaches the compiler",
+    "verified": true
+   },
+   "attack_b_one_setup": {
+    "no_carrier_wire": "the checker rebuilds the tick-0 columns from the pinned initial states for EVERY one of the 256 replays; a tape would need a carrier and the fingerprint would differ",
+    "reconstructed_identically": true,
+    "tick0_fingerprint": "9ef4d5e168ee9d8324308876fc0fbbf28a65b743cd2f61c5e5cebe6f3555dbff"
+   },
+   "attack_c_hidden_state": {
+    "classes_match": true,
+    "conclusion": "every branch entering an occasion with the same history enters from ONE machine state, so no function of anything the machine holds can return two values there.  The remaining escape would be a declared datum outside the machine; the namespace audit in K2 shows the chunks can see nothing but the CHOICE node itself.",
+    "non_anticipation_violations": 0,
+    "prefix_state_classes_expected": 75,
+    "prefix_state_classes_observed": 75
+   },
+   "attack_d_the_extensional_objection": {
+    "primary_discloses_the_same_residual": true,
+    "statement": "the SET of leaf trajectories of this tree is extensionally the same set a family of pre-written tapes would produce.  The checker confirms the primary does not claim otherwise.  What is checked is the intensional fact: ONE compiled text, ONE tick-0 state, ONE declared datum set, many trajectories -- which is exactly the negation of the Cycle-918 lemma and exactly what Cycle 925 said the pinned compiler could not express."
+   },
+   "certificate": "K5_THE_P3_NOT_P2_ATTACK"
+  },
+  "K6_THE_WEIGHT_ALGEBRA_RECOMPUTED": {
+   "FREEDOM_COUNT_RECOMPUTED": {
+    "agrees_with_the_primary": true,
+    "global": 1,
+    "observably_effective_atoms": 8,
+    "per_occasion": 8,
+    "per_site": 6
+   },
+   "atoms_observably_effective": 8,
+   "branches_pruned_by_the_battery": 0,
+   "certificate": "K6_THE_WEIGHT_ALGEBRA_RECOMPUTED",
+   "cross_site_dependencies": [],
+   "observable_response": [
+    {
+     "atom": 0,
+     "atom_spec": [
+      300,
+      715
+     ],
+     "contexts": 128,
+     "contexts_that_differ": 128,
+     "observably_effective": true
+    },
+    {
+     "atom": 1,
+     "atom_spec": [
+      700,
+      475
+     ],
+     "contexts": 128,
+     "contexts_that_differ": 128,
+     "observably_effective": true
+    },
+    {
+     "atom": 2,
+     "atom_spec": [
+      700,
+      540
+     ],
+     "contexts": 128,
+     "contexts_that_differ": 128,
+     "observably_effective": true
+    },
+    {
+     "atom": 3,
+     "atom_spec": [
+      702,
+      254
+     ],
+     "contexts": 128,
+     "contexts_that_differ": 128,
+     "observably_effective": true
+    },
+    {
+     "atom": 4,
+     "atom_spec": [
+      702,
+      450
+     ],
+     "contexts": 128,
+     "contexts_that_differ": 128,
+     "observably_effective": true
+    },
+    {
+     "atom": 5,
+     "atom_spec": [
+      702,
+      715
+     ],
+     "contexts": 128,
+     "contexts_that_differ": 128,
+     "observably_effective": true
+    },
+    {
+     "atom": 6,
+     "atom_spec": [
+      1100,
+      558
+     ],
+     "contexts": 128,
+     "contexts_that_differ": 128,
+     "observably_effective": true
+    },
+    {
+     "atom": 7,
+     "atom_spec": [
+      1100,
+      715
+     ],
+     "contexts": 128,
+     "contexts_that_differ": 128,
+     "observably_effective": true
+    }
+   ],
+   "pass": true,
+   "readings": {
+    "global": {
+     "determines_the_polynomial": "a polynomial of degree d_v in variable v is determined by its values on a product grid with d_v+1 distinct points per variable; the grid above meets that bound, so 'sum == 1 everywhere on the grid' is 'sum == 1 identically'",
+     "free_parameter_count": 1,
+     "grid_points_evaluated": 9,
+     "leaf_weight_sum_is_identically_one": true,
+     "per_variable_degree": [
+      8
+     ]
+    },
+    "per_occasion": {
+     "determines_the_polynomial": "a polynomial of degree d_v in variable v is determined by its values on a product grid with d_v+1 distinct points per variable; the grid above meets that bound, so 'sum == 1 everywhere on the grid' is 'sum == 1 identically'",
+     "free_parameter_count": 8,
+     "grid_points_evaluated": 256,
+     "leaf_weight_sum_is_identically_one": true,
+     "per_variable_degree": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "per_site": {
+     "determines_the_polynomial": "a polynomial of degree d_v in variable v is determined by its values on a product grid with d_v+1 distinct points per variable; the grid above meets that bound, so 'sum == 1 everywhere on the grid' is 'sum == 1 identically'",
+     "free_parameter_count": 6,
+     "grid_points_evaluated": 128,
+     "leaf_weight_sum_is_identically_one": true,
+     "per_variable_degree": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      3
+     ]
+    }
+   }
+  },
+  "K7_THE_FIREWALL_ATTACK": {
+   "certificate": "K7_THE_FIREWALL_ATTACK",
+   "execution_core_mu_references_recomputed": [],
+   "float_literals_in_the_primary": [],
+   "grid_invariance": [
+    {
+     "battery_verdict": true,
+     "branch_pairs": 3,
+     "mu": "0",
+     "sum": "1",
+     "sum_is_one": true
+    },
+    {
+     "battery_verdict": true,
+     "branch_pairs": 3,
+     "mu": "1/4",
+     "sum": "1",
+     "sum_is_one": true
+    },
+    {
+     "battery_verdict": true,
+     "branch_pairs": 3,
+     "mu": "1/3",
+     "sum": "1",
+     "sum_is_one": true
+    },
+    {
+     "battery_verdict": true,
+     "branch_pairs": 3,
+     "mu": "1/2",
+     "sum": "1",
+     "sum_is_one": true
+    },
+    {
+     "battery_verdict": true,
+     "branch_pairs": 3,
+     "mu": "2/3",
+     "sum": "1",
+     "sum_is_one": true
+    },
+    {
+     "battery_verdict": true,
+     "branch_pairs": 3,
+     "mu": "3/4",
+     "sum": "1",
+     "sum_is_one": true
+    },
+    {
+     "battery_verdict": true,
+     "branch_pairs": 3,
+     "mu": "1",
+     "sum": "1",
+     "sum_is_one": true
+    }
+   ],
+   "mu_selecting_functions": [
+    "_planted_privileged_mu",
+    "main"
+   ],
+   "pass": true,
+   "receipt_paths_binding_a_value_to_a_key_named_mu": [
+    "certificates.C5_THE_WEIGHT_ALGEBRA.PARAMETRIC_FIREWALL.grid_rows.0.mu",
+    "certificates.C5_THE_WEIGHT_ALGEBRA.PARAMETRIC_FIREWALL.grid_rows.1.mu",
+    "certificates.C5_THE_WEIGHT_ALGEBRA.PARAMETRIC_FIREWALL.grid_rows.2.mu",
+    "certificates.C5_THE_WEIGHT_ALGEBRA.PARAMETRIC_FIREWALL.grid_rows.3.mu",
+    "certificates.C5_THE_WEIGHT_ALGEBRA.PARAMETRIC_FIREWALL.grid_rows.4.mu",
+    "certificates.C5_THE_WEIGHT_ALGEBRA.PARAMETRIC_FIREWALL.grid_rows.5.mu",
+    "certificates.C5_THE_WEIGHT_ALGEBRA.PARAMETRIC_FIREWALL.grid_rows.6.mu"
+   ],
+   "stray_mu_values_outside_the_declared_grid": []
+  },
+  "K_CHECKS": {
+   "certificate": "K_CHECKS",
+   "pass": true,
+   "passed": 64,
+   "rows": [
+    {
+     "check": "K1_extended_emitter_bytecode_identical_to_the_pinned_compile_fast",
+     "got": true,
+     "note": "compiled code objects compared instruction for instruction and constant for constant; the primary compared TEXT, this compares the compiled artefact",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K1_extended_emitter_behaviourally_identical",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K1_statement_count",
+     "got": 34166,
+     "note": "",
+     "pass": true,
+     "want": 34166
+    },
+    {
+     "check": "K1_primary_claimed_bit_identity",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K1_stated_template_count",
+     "got": 4,
+     "note": "",
+     "pass": true,
+     "want": 4
+    },
+    {
+     "check": "K1_stated_new_template",
+     "got": " c[{}] ^= CHOICE({}) & {}",
+     "note": "",
+     "pass": true,
+     "want": " c[{}] ^= CHOICE({}) & {}"
+    },
+    {
+     "check": "K2_station0_macro_block_is_the_head_of_every_pinned_row",
+     "got": true,
+     "note": "the splice point is verified by CONTENT (the recompiled station-0 macro must equal the row's head), not taken from the primary",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K2_M_A_statement_count",
+     "got": 34188,
+     "note": "",
+     "pass": true,
+     "want": 34188
+    },
+    {
+     "check": "K2_exactly_one_new_AST_node_type",
+     "got": [
+      "Call"
+     ],
+     "note": "",
+     "pass": true,
+     "want": [
+      "Call"
+     ]
+    },
+    {
+     "check": "K2_primary_agrees_on_the_new_node_type",
+     "got": [
+      "Call"
+     ],
+     "note": "",
+     "pass": true,
+     "want": [
+      "Call"
+     ]
+    },
+    {
+     "check": "K2_P3_leaf_instances",
+     "got": 8,
+     "note": "two endpoint wires per occasion, sharing ONE choice value",
+     "pass": true,
+     "want": 8
+    },
+    {
+     "check": "K2_primary_P3_leaf_instances",
+     "got": 8,
+     "note": "",
+     "pass": true,
+     "want": 8
+    },
+    {
+     "check": "K2_compiled_chunks_see_nothing_but_the_CHOICE_node",
+     "got": true,
+     "note": "the chunk's global namespace is audited: any other binding could carry per-branch data and would make the node P2",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K3_control_lock_points",
+     "got": 164,
+     "note": "",
+     "pass": true,
+     "want": 164
+    },
+    {
+     "check": "K3_control_record_events",
+     "got": 92260,
+     "note": "",
+     "pass": true,
+     "want": 92260
+    },
+    {
+     "check": "K3_M_A_lock_points",
+     "got": 134,
+     "note": "",
+     "pass": true,
+     "want": 134
+    },
+    {
+     "check": "K3_M_A_record_events",
+     "got": 89864,
+     "note": "",
+     "pass": true,
+     "want": 89864
+    },
+    {
+     "check": "K3_M_A_write_once_violations",
+     "got": 0,
+     "note": "",
+     "pass": true,
+     "want": 0
+    },
+    {
+     "check": "K3_M_A_realized_split",
+     "got": {
+      "[0, 1]": 56,
+      "[1, 0]": 78
+     },
+     "note": "",
+     "pass": true,
+     "want": {
+      "[0, 1]": 56,
+      "[1, 0]": 78
+     }
+    },
+    {
+     "check": "K3_M_A_selection_differs_from_setup",
+     "got": 37,
+     "note": "",
+     "pass": true,
+     "want": 37
+    },
+    {
+     "check": "K3_M_A_dynamical_branch_pairs",
+     "got": [
+      [
+       253,
+       407
+      ],
+      [
+       520,
+       630
+      ],
+      [
+       533,
+       643
+      ]
+     ],
+     "note": "",
+     "pass": true,
+     "want": [
+      [
+       253,
+       407
+      ],
+      [
+       520,
+       630
+      ],
+      [
+       533,
+       643
+      ]
+     ]
+    },
+    {
+     "check": "K4_no_declared_site_sits_at_the_duplicated_slot",
+     "got": [],
+     "note": "slot 0 is the world the duplicate lane copies; a choice there would need the world-indexed mirror, which is exercised separately in K8",
+     "pass": true,
+     "want": []
+    },
+    {
+     "check": "K4_atom_count",
+     "got": 8,
+     "note": "",
+     "pass": true,
+     "want": 8
+    },
+    {
+     "check": "K4_predicted_leaf_count",
+     "got": 256,
+     "note": "",
+     "pass": true,
+     "want": 256
+    },
+    {
+     "check": "K4_leaves_enumerated",
+     "got": 256,
+     "note": "",
+     "pass": true,
+     "want": 256
+    },
+    {
+     "check": "K4_NON_ANTICIPATION_no_future_choice_leaks_backwards",
+     "got": 0,
+     "note": "the machine state at each choice occasion is a function of the choice bits ALREADY TAKEN.  A pre-written tape read in advance, or any dependence on a later choice, breaks this and would refute the P3 claim",
+     "pass": true,
+     "want": 0
+    },
+    {
+     "check": "K4_write_once_holds_on_every_branch",
+     "got": 0,
+     "note": "",
+     "pass": true,
+     "want": 0
+    },
+    {
+     "check": "K4_duplicate_lane_holds_on_every_branch",
+     "got": 0,
+     "note": "",
+     "pass": true,
+     "want": 0
+    },
+    {
+     "check": "K4_menu_holds_on_every_branch",
+     "got": 0,
+     "note": "",
+     "pass": true,
+     "want": 0
+    },
+    {
+     "check": "K4_record_slots_inert_on_every_branch",
+     "got": 0,
+     "note": "",
+     "pass": true,
+     "want": 0
+    },
+    {
+     "check": "K4_more_than_one_distinct_outcome",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K4_per_leaf_table_row_count",
+     "got": 256,
+     "note": "",
+     "pass": true,
+     "want": 256
+    },
+    {
+     "check": "K4_per_leaf_table_agrees_with_the_primary_row_for_row",
+     "got": [],
+     "note": "256 leaves compared row for row: lock counts and every choice site's (lock boundary, realized item), re-derived by independent replay",
+     "pass": true,
+     "want": []
+    },
+    {
+     "check": "K4_per_leaf_table_digest_agrees",
+     "got": "c9ec1b46818134e32ce53fa47439bdce107770a5e6e4893ed092bbc88c9e452d",
+     "note": "",
+     "pass": true,
+     "want": "c9ec1b46818134e32ce53fa47439bdce107770a5e6e4893ed092bbc88c9e452d"
+    },
+    {
+     "check": "K4_genuine_branch_pairs_same_lock_different_item_exist",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K5_P3_claim_survives_the_attack",
+     "got": false,
+     "note": "",
+     "pass": true,
+     "want": false
+    },
+    {
+     "check": "K5_primary_discloses_the_extensional_residual",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K6_per_occasion_leaf_weight_sum_is_one",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K6_per_occasion_free_parameter_count",
+     "got": 8,
+     "note": "",
+     "pass": true,
+     "want": 8
+    },
+    {
+     "check": "K6_per_site_leaf_weight_sum_is_one",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K6_per_site_free_parameter_count",
+     "got": 6,
+     "note": "",
+     "pass": true,
+     "want": 6
+    },
+    {
+     "check": "K6_global_leaf_weight_sum_is_one",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K6_global_free_parameter_count",
+     "got": 1,
+     "note": "",
+     "pass": true,
+     "want": 1
+    },
+    {
+     "check": "K6_every_declared_atom_is_observably_effective",
+     "got": 8,
+     "note": "",
+     "pass": true,
+     "want": 8
+    },
+    {
+     "check": "K6_no_site_outcome_depends_on_another_sites_choice",
+     "got": 0,
+     "note": "if a site's outcome depended on another site's choice bits, a cross-site relation between the weights could be forced by an observable; it does not, so none can",
+     "pass": true,
+     "want": 0
+    },
+    {
+     "check": "K6_no_branch_is_pruned_by_the_battery",
+     "got": 0,
+     "note": "a pruned branch would force the surviving weights to renormalize, which IS a forced constraint; none is pruned",
+     "pass": true,
+     "want": 0
+    },
+    {
+     "check": "K6_primary_freedom_count_per_site",
+     "got": 6,
+     "note": "",
+     "pass": true,
+     "want": 6
+    },
+    {
+     "check": "K7a_execution_core_contains_no_mu_reference_recomputed",
+     "got": [],
+     "note": "the checker re-runs the sweep on the primary's declared execution core instead of trusting the primary's report of it",
+     "pass": true,
+     "want": []
+    },
+    {
+     "check": "K7a_primary_reported_the_same",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K7b_no_mu_value_anywhere_outside_the_declared_diagnostic_grid",
+     "got": [],
+     "note": "the whole receipt is walked; a number bound to a key named 'mu' outside PARAMETRIC_FIREWALL.grid_rows would be an adopted value",
+     "pass": true,
+     "want": []
+    },
+    {
+     "check": "K7c_no_float_literals_anywhere_in_the_primary",
+     "got": [],
+     "note": "the weight algebra is exact rational arithmetic end to end; a float literal would be the first sign of a numeric commitment",
+     "pass": true,
+     "want": []
+    },
+    {
+     "check": "K7d_the_only_mu_selecting_function_is_the_planted_falsifier",
+     "got": [
+      "_planted_privileged_mu",
+      "main"
+     ],
+     "note": "`main` contains the planted falsifier's call site and the grid loop; `_planted_privileged_mu` is the plant itself and is declared as such in the teeth",
+     "pass": true,
+     "want": [
+      "_planted_privileged_mu",
+      "main"
+     ]
+    },
+    {
+     "check": "K7d_the_plant_is_named_as_a_tooth",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K7_primary_grid_shows_no_privileged_value",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K7_every_verdict_is_invariant_under_every_grid_value",
+     "got": 1,
+     "note": "",
+     "pass": true,
+     "want": 1
+    },
+    {
+     "check": "K7_primary_headline_claims_no_collapse",
+     "got": "NO COLLAPSE -- mu is a genuine free parameter",
+     "note": "",
+     "pass": true,
+     "want": "NO COLLAPSE -- mu is a genuine free parameter"
+    },
+    {
+     "check": "K8_primary_tree_depth",
+     "got": 4,
+     "note": "",
+     "pass": true,
+     "want": 4
+    },
+    {
+     "check": "K8_primary_nodes_by_level",
+     "got": [
+      1,
+      2,
+      8,
+      64,
+      256
+     ],
+     "note": "",
+     "pass": true,
+     "want": [
+      1,
+      2,
+      8,
+      64,
+      256
+     ]
+    },
+    {
+     "check": "K8_primary_seal_all_held",
+     "got": 17,
+     "note": "",
+     "pass": true,
+     "want": 17
+    },
+    {
+     "check": "K8_primary_all_teeth_fired",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K8_primary_slot_indexing_breaks_duplicate_lane",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K8_primary_slot_indexing_breaks_layout_independence",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K8_own_witness_slot_indexed_breaks_the_duplicate_lane",
+     "got": true,
+     "note": "",
+     "pass": true,
+     "want": true
+    },
+    {
+     "check": "K8_own_witness_world_indexed_preserves_the_duplicate_lane",
+     "got": 0,
+     "note": "",
+     "pass": true,
+     "want": 0
+    }
+   ],
+   "total": 64
+  }
+ },
+ "claim_type": "independent_check",
+ "cycles": [
+  936
+ ],
+ "genuine_branch_pairs_recomputed": [
+  {
+   "branch_a": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "branch_b": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "items": [
+    "[0,1]",
+    "[1,0]"
+   ],
+   "lock_boundary": 1808,
+   "site": 450
+  },
+  {
+   "branch_a": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "branch_b": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "items": [
+    "[0,1]",
+    "[1,0]"
+   ],
+   "lock_boundary": 1806,
+   "site": 475
+  },
+  {
+   "branch_a": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "branch_b": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "items": [
+    "[0,1]",
+    "[1,0]"
+   ],
+   "lock_boundary": 1811,
+   "site": 715
+  }
+ ],
+ "headline": "64/64 checks, 13/13 teeth, 0 refutations.  The tree was re-enumerated by independent replay of all 256 assignment vectors from tick 0 with no snapshots; backward compatibility was checked by bytecode identity against the pinned compile_fast; the weight algebra was recomputed without building a polynomial; and the primary's own source was swept for any step that privileges a value of mu.",
+ "leaf_table_rows": 256,
+ "refutations": []
+}

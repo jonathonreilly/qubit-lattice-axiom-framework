@@ -1,0 +1,158 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle936_choice_substrate_2026_07_28.py
+runner_sha256: ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 277.07
+status: ok
+----- stdout -----
+==============================================================================
+S_SEAL  (emitted BEFORE the tree is computed)
+==============================================================================
+  all_declared_atoms_are_effective                           True
+  at_least_one_genuine_branch_pair_exists                    True
+  branching_factor_by_occasion                               [2, 4, 8, 4]
+  every_branch_preserves_duplicate_lane_consistency          True
+  every_branch_preserves_the_menu                            True
+  every_branch_preserves_write_once                          True
+  leaf_weight_polynomial_sums_identically_to_one             True
+  no_certified_verdict_depends_on_the_value_of_mu            True
+  nodes_by_level                                             [1, 2, 8, 64, 256]
+  nominal_free_parameters_per_occasion_reading               8
+  nominal_free_parameters_per_site_reading                   6
+  sealed_before                                              the tree enumeration, the battery and the algebra
+  slot_indexed_choice_breaks_duplicate_lane_consistency      True
+  slot_indexed_choice_breaks_layout_independence             True
+  tree_depth_in_choice_occasions                             4
+  tree_leaf_count                                            256
+  tree_node_count                                            331
+  world_indexed_choice_preserves_layout_independence         True
+  SEAL DIGEST = d5ec09b583579bb6ce56dda6ff297d28149b51c1bceade03e453a690d000942a
+
+CYCLE 936 -- THE CHOICE SUBSTRATE: hosting a P3 node, and what it costs
+==============================================================================
+  every fraction below: bookkeeping fraction, not probability
+  scope: FULL CENSUS 748 worlds; restriction gates and the M_A reproduction at the landed 16384-orbit horizon (180224 boundaries), both layouts; the FULL tree (256 leaves, never sampled) on the declared 175-orbit window (1925 boundaries)
+
+A_PINS                      PASS  (16 pinned; sha256+git-blob; firewall hits 0)
+B_RESTRICTION_GATE          PASS  (54/54 reproduce)
+
+------------------------------------------------------------------------------
+C1  THE GRAMMAR DELTA  (Q1)
+------------------------------------------------------------------------------
+  pinned templates (3): [' c[{}] ^= {}', ' c[{}] ^= c[{}] & {}', ' c[{}] ^= c[{}] & c[{}] & {}']
+  NEW TEMPLATE (1):  ' c[{}] ^= CHOICE({}) & {}'
+  new AST node types: ['Call']   exactly one = True
+  extended sweep: 12440 statements  classes {'P1_DECLARED_STATE': 14440, 'P3_LAW_INTERNAL_CHOICE_POINT': 8, 'P4_INDEX_OR_BOOKKEEPING_COORDINATE': 12440}
+  distinct P3 node kinds: ['choice-node:CHOICE(<occasion-ordinal-literal>)']  -> exactly one = True
+  P3 leaf instances 8 (2 per choice occasion: the two endpoint wires share ONE choice value)
+  backward compatibility: 34166 statements compared, bit-identical = True
+    full-horizon control digest e8456a8f68d7ac3f == pinned 918 True; M_A digest a6b8ee4d8be74afa == pinned 918 True
+  declared atoms: 8 at 4 occasions over 6 sites; all eligible = True
+
+------------------------------------------------------------------------------
+C2  THE TREE AND THE MULTI-VALUEDNESS GATE  (Q1/Q2b)
+------------------------------------------------------------------------------
+  leaves 256 (enumerated 256, cap 4096); depth 4; branching [2, 4, 8, 4]; nodes by level [1, 2, 8, 64, 256]
+  distinct leaf observables: 64
+    M1_one_law_compiled_text_identical_on_every_branch             True
+    M2_one_setup_tick0_columns_identical_on_every_branch           True
+    M3_no_other_declared_datum_varies                              True
+    M4_children_entered_from_a_byte_identical_parent_state         True
+    M5_at_least_two_branches_diverge                               True
+    every branch node genuinely branches: True
+    VERDICT: P3 EARNED SEMANTICALLY
+
+------------------------------------------------------------------------------
+C3  THE PER-BRANCH BATTERY AND THE GENUINE BRANCH PAIRS  (Q2a/Q2b)
+------------------------------------------------------------------------------
+  branches 256: write-once True, duplicate lane True, record slots True, menu True
+  lock points per branch: [68, 68]; distinct realized splits 4
+  all declared atoms effective: True  (in every context: 8/8)
+  GENUINE BRANCH PAIRS exhibited: 6  (same lock boundary, different menu item: 3)
+     site 450: lock 1808 item [0, 1] vs [1, 0]  [[0, 0, 0, 0, 1, 0, 0, 0] vs [0, 0, 0, 0, 0, 0, 0, 0]]
+     site 475: lock 1806 item [0, 1] vs [1, 0]  [[0, 1, 0, 0, 0, 0, 0, 0] vs [0, 0, 0, 0, 0, 0, 0, 0]]
+     site 715: lock 1811 item [0, 1] vs [1, 0]  [[0, 0, 0, 0, 0, 0, 0, 1] vs [0, 0, 0, 0, 0, 0, 0, 0]]
+  observable factorizes over sites: True (0 violations)
+
+------------------------------------------------------------------------------
+C4  WHAT BREAKS  (Q2d)
+------------------------------------------------------------------------------
+    [BROKEN BY CONSTRUCTION            ] the law is a function of (schedule, tick-0 state)
+    [BROKEN BY CONSTRUCTION            ] P3 is empty in the substrate (Cycle 925 C1)
+    [BROKEN BY CONSTRUCTION (the semant] compilation is a function to ONE execution
+    [BROKEN AT THE SUBSTRATE LEVEL, PRE] deterministic double-run of the SUBSTRATE
+    [PRESERVED under world-indexed choi] layout independence
+    [PRESERVED under world-indexed choi] duplicate-lane consistency
+    [ALREADY BROKEN BEFORE THE CHOICE N] monitor-phase Z_11 covariance of the realized selection
+    [PRESERVED ON EVERY BRANCH         ] write-once / dead record slots / formation / menu
+    [EXTENDED, not broken: the choice s] the certified gate vocabulary (X / CNOT / TOF)
+  INDEXING IS FORCED: slot-indexed breaks duplicate lane = True, breaks layout independence = True
+                      world-indexed preserves both = True
+  tree layout independence (sub-tree, both layouts): True
+
+------------------------------------------------------------------------------
+C5  THE WEIGHT ALGEBRA  (Q2c/Q3)
+------------------------------------------------------------------------------
+  per_occasion   free parameters   8   leaf weight sum == 1 identically: True
+  per_site       free parameters   6   leaf weight sum == 1 identically: True
+  global         free parameters   1   leaf weight sum == 1 identically: True
+  distinct observables 64 over 256 leaves; observable weights sum to 1: True
+  forced-constraint hunt:
+    [FORCED] normalization at each choice node
+    [FORCED] the duplicate lane forces one value, not two
+    [  no  ] count-once / write-once prunes branches and forces a renormalization relation
+    [  no  ] a cross-site relation among the weights
+    [  no  ] occasions at one site are forced to share a weight
+    [  no  ] a unique VALUE for any mu
+  COLLAPSE CHECK: NO COLLAPSE -- mu is a genuine free parameter
+  PARAMETRIC FIREWALL: substrate never reads mu = True; no grid value privileged = True
+
+------------------------------------------------------------------------------
+S_SEAL  scored
+------------------------------------------------------------------------------
+    [x] all_declared_atoms_are_effective                           sealed True                   observed True
+    [x] at_least_one_genuine_branch_pair_exists                    sealed True                   observed True
+    [x] branching_factor_by_occasion                               sealed [2, 4, 8, 4]           observed [2, 4, 8, 4]
+    [x] every_branch_preserves_duplicate_lane_consistency          sealed True                   observed True
+    [x] every_branch_preserves_the_menu                            sealed True                   observed True
+    [x] every_branch_preserves_write_once                          sealed True                   observed True
+    [x] leaf_weight_polynomial_sums_identically_to_one             sealed True                   observed True
+    [x] no_certified_verdict_depends_on_the_value_of_mu            sealed True                   observed True
+    [x] nodes_by_level                                             sealed [1, 2, 8, 64, 256]     observed [1, 2, 8, 64, 256]
+    [x] nominal_free_parameters_per_occasion_reading               sealed 8                      observed 8
+    [x] nominal_free_parameters_per_site_reading                   sealed 6                      observed 6
+    [x] slot_indexed_choice_breaks_duplicate_lane_consistency      sealed True                   observed True
+    [x] slot_indexed_choice_breaks_layout_independence             sealed True                   observed True
+    [x] tree_depth_in_choice_occasions                             sealed 4                      observed 4
+    [x] tree_leaf_count                                            sealed 256                    observed 256
+    [x] tree_node_count                                            sealed 331                    observed 331
+    [x] world_indexed_choice_preserves_layout_independence         sealed True                   observed True
+  17/17 sealed predictions held; seal digest d5ec09b583579bb6
+
+------------------------------------------------------------------------------
+C6  THE PRICE SHEET  (Q3)
+------------------------------------------------------------------------------
+  one statement template, one AST node type, one type change on compile; three certified properties broken BECAUSE they ARE the purchase (the functional form of law, the emptiness of P3, the single-execution type of compile), one indexing discipline forced (worlds, not slots), one covariance already lost to M_A before the choice node existed; the whole Cycle-918 constraint battery preserved on all 256 branches; and 6 free numbers left for the sentence to supply on the declared arena.
+
+G_FALSIFIERS  PASS  (15/15 teeth)
+    [x] planted_P2_tape_masquerading_as_P3_caught_by_M2
+    [x] planted_prewritten_table_is_single_valued_caught_by_M5
+    [x] planted_mu_privileging_step_caught_by_the_firewall
+    [x] tampered_pin_detected
+    [x] dropping_the_choice_gate_collapses_the_tree_to_one_trajectory
+    [x] backward_compatibility_break_detected
+    [x] planted_slot_indexed_choice_breaks_duplicate_lane_consistency
+    [x] planted_slot_indexed_choice_breaks_layout_independence
+    [x] a_richer_choice_form_would_show_MORE_than_one_new_node_type
+    [x] planted_non_normalizing_weight_caught
+    [x] a_corrupted_pinned_918_value_would_break_the_restriction_gate
+    [x] planted_hidden_state_choice_is_P1_not_P3
+    [x] planted_single_wire_choice_breaks_the_MENU_and_is_caught
+    [x] digests_are_timing_free_and_stable
+    [x] deterministic_double_run_of_the_full_tree_identical
+
+==============================================================================
+CERTIFICATES 12/12   TEETH 15/15   RUNTIME 276.476s / 900s
+RESULT: ALL CERTIFICATES PASS
+receipt: outputs/choice_substrate_cycle936_receipt_2026_07_28.json

@@ -1,0 +1,114 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle936_choice_substrate_independent_check_2026_07_28.py
+runner_sha256: d764b713bc2fbe9a55f3a63557368d8be25239246e2c6d516edb6121b13f7fae
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 253.272
+status: ok
+----- stdout -----
+CYCLE 936 INDEPENDENT CHECK -- the choice substrate, attacked
+==============================================================================
+A_PINS  PASS   (9 pinned; primary read as text/JSON only)
+
+  [x] K1_extended_emitter_bytecode_identical_to_the_pinned_compile_fast got True
+  [x] K1_extended_emitter_behaviourally_identical                      got True
+  [x] K1_statement_count                                               got 34166
+  [x] K1_primary_claimed_bit_identity                                  got True
+  [x] K1_stated_template_count                                         got 4
+  [x] K1_stated_new_template                                           got  c[{}] ^= CHOICE({}) & {}
+  [x] K2_station0_macro_block_is_the_head_of_every_pinned_row          got True
+  [x] K2_M_A_statement_count                                           got 34188
+  [x] K2_exactly_one_new_AST_node_type                                 got ['Call']
+  [x] K2_primary_agrees_on_the_new_node_type                           got ['Call']
+  [x] K2_P3_leaf_instances                                             got 8
+  [x] K2_primary_P3_leaf_instances                                     got 8
+  [x] K2_compiled_chunks_see_nothing_but_the_CHOICE_node               got True
+  [x] K3_control_lock_points                                           got 164
+  [x] K3_control_record_events                                         got 92260
+  [x] K3_M_A_lock_points                                               got 134
+  [x] K3_M_A_record_events                                             got 89864
+  [x] K3_M_A_write_once_violations                                     got 0
+  [x] K3_M_A_realized_split                                            got {'[0, 1]': 56, '[1, 0]': 78}
+  [x] K3_M_A_selection_differs_from_setup                              got 37
+  [x] K3_M_A_dynamical_branch_pairs                                    got [[253, 407], [520, 630], [533, 643]]
+  [x] K4_no_declared_site_sits_at_the_duplicated_slot                  got []
+  [x] K4_atom_count                                                    got 8
+  [x] K4_predicted_leaf_count                                          got 256
+  [x] K4_leaves_enumerated                                             got 256
+  [x] K4_NON_ANTICIPATION_no_future_choice_leaks_backwards             got 0
+  [x] K4_write_once_holds_on_every_branch                              got 0
+  [x] K4_duplicate_lane_holds_on_every_branch                          got 0
+  [x] K4_menu_holds_on_every_branch                                    got 0
+  [x] K4_record_slots_inert_on_every_branch                            got 0
+  [x] K4_more_than_one_distinct_outcome                                got True
+  [x] K4_per_leaf_table_row_count                                      got 256
+  [x] K4_per_leaf_table_agrees_with_the_primary_row_for_row            got []
+  [x] K4_per_leaf_table_digest_agrees                                  got c9ec1b46818134e32ce53fa47439bdce107770a5
+  [x] K4_genuine_branch_pairs_same_lock_different_item_exist           got True
+  [x] K5_P3_claim_survives_the_attack                                  got False
+  [x] K5_primary_discloses_the_extensional_residual                    got True
+  [x] K6_per_occasion_leaf_weight_sum_is_one                           got True
+  [x] K6_per_occasion_free_parameter_count                             got 8
+  [x] K6_per_site_leaf_weight_sum_is_one                               got True
+  [x] K6_per_site_free_parameter_count                                 got 6
+  [x] K6_global_leaf_weight_sum_is_one                                 got True
+  [x] K6_global_free_parameter_count                                   got 1
+  [x] K6_every_declared_atom_is_observably_effective                   got 8
+  [x] K6_no_site_outcome_depends_on_another_sites_choice               got 0
+  [x] K6_no_branch_is_pruned_by_the_battery                            got 0
+  [x] K6_primary_freedom_count_per_site                                got 6
+  [x] K7a_execution_core_contains_no_mu_reference_recomputed           got []
+  [x] K7a_primary_reported_the_same                                    got True
+  [x] K7b_no_mu_value_anywhere_outside_the_declared_diagnostic_grid    got []
+  [x] K7c_no_float_literals_anywhere_in_the_primary                    got []
+  [x] K7d_the_only_mu_selecting_function_is_the_planted_falsifier      got ['_planted_privileged_mu', 'main']
+  [x] K7d_the_plant_is_named_as_a_tooth                                got True
+  [x] K7_primary_grid_shows_no_privileged_value                        got True
+  [x] K7_every_verdict_is_invariant_under_every_grid_value             got 1
+  [x] K7_primary_headline_claims_no_collapse                           got NO COLLAPSE -- mu is a genuine free para
+  [x] K8_primary_tree_depth                                            got 4
+  [x] K8_primary_nodes_by_level                                        got [1, 2, 8, 64, 256]
+  [x] K8_primary_seal_all_held                                         got 17
+  [x] K8_primary_all_teeth_fired                                       got True
+  [x] K8_primary_slot_indexing_breaks_duplicate_lane                   got True
+  [x] K8_primary_slot_indexing_breaks_layout_independence              got True
+  [x] K8_own_witness_slot_indexed_breaks_the_duplicate_lane            got True
+  [x] K8_own_witness_world_indexed_preserves_the_duplicate_lane        got 0
+
+K5  THE P3-NOT-P2 ATTACK
+    non-anticipation violations: 0
+    prefix state classes 75 (expected 75)
+    REFUTED = False
+
+K6  THE WEIGHT ALGEBRA, RECOMPUTED WITHOUT A POLYNOMIAL
+    per_occasion   vars  8  degrees [1, 1, 1, 1, 1, 1, 1, 1]  grid 256  sum==1 True
+    per_site       vars  6  degrees [1, 1, 1, 1, 1, 3]  grid 128  sum==1 True
+    global         vars  1  degrees [8]  grid 9  sum==1 True
+    observably effective atoms 8/8; cross-site dependencies 0; pruned branches 0
+
+K7  THE FIREWALL ATTACK
+    float literals in the primary: []
+    execution-core mu references (recomputed): []
+    mu-selecting functions: ['_planted_privileged_mu', 'main']
+    receipt keys named 'mu' outside the declared grid: []
+    every verdict invariant over the grid: True
+
+G_TEETH  PASS  (13/13)
+    [x] planted_tape_carrier_changes_the_tick0_fingerprint
+    [x] planted_anticipating_choice_caught_by_non_anticipation
+    [x] bytecode_identity_catches_a_swapped_CNOT_operand
+    [x] whitespace_only_change_is_bytecode_identical_and_text_different
+    [x] planted_single_wire_choice_breaks_the_menu
+    [x] dropping_the_choice_collapses_the_tree
+    [x] tampered_pin_detected
+    [x] a_corrupted_primary_leaf_count_would_break_K4
+    [x] planted_cross_site_coupling_caught_by_the_factorization_test
+    [x] planted_non_normalizing_weight_caught_by_the_grid
+    [x] full_tree_enumerated_not_sampled
+    [x] deterministic_double_run_identical
+    [x] checker_scan_distinguishes_the_control_from_M_A
+
+==============================================================================
+CHECKS 64/64   TEETH 13/13   RUNTIME 252.563s / 900s
+RESULT: PRIMARY_SURVIVES_THIS_CHECK
+receipt: outputs/choice_substrate_independent_check_cycle936_receipt_2026_07_28.json

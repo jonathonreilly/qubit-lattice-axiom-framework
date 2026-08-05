@@ -1061,13 +1061,24 @@ def main():
         if ev is None:
             die("g6-import:no-event-at-lambda-%s" % k)
         rows914 = r914["measurement"]["rows"][k]
-        rmax = max(r["r_ind"]["%.2f" % HEADLINE_DELTA] for r in rows914)
+        # the 914 receipt keys r_ind by str(delta): '0.05', '0.1', '0.2'
+        rmax = max(r["r_ind"]["%g" % HEADLINE_DELTA] for r in rows914)
+        # the frozen memo's pair-class map, so the WITNESS pair's own C value can be
+        # quoted (the 914 receipt stores all five classes, not just the witness's)
+        WCLS = {("+x", "-x"): "opposite-55", ("+y", "-y"): "opposite-44",
+                ("+z", "-z"): "opposite-44"}
+        wpair = tuple(ev["subset"]) if len(ev["subset"]) == 2 else None
+        wcls = WCLS.get(wpair)
+        c_wit = ({"|".join(wpair): ev["pair_values"][wcls]}
+                 if (wcls and ev["pair_values"] and wcls in ev["pair_values"]) else None)
         g6[k] = {
             "source": C914_RECEIPT + " (pinned; measurement.events[%s][%.1f])" % (k, HEADLINE_DELTA),
             "first_jt": ev["jt"], "theta_A": ev["theta"], "r_ind": ev["r_ind"],
             "witness": ev["subset"], "run": ev["run"], "by_deadline": ev["by_deadline"],
             "pointer_tv_drift": ev["drift"],
-            "C_at_event": ev["pair_values"],
+            "C_at_event": c_wit,
+            "C_all_pair_classes_at_event": ev["pair_values"],
+            "witness_pair_class": wcls,
             "max_r_ind_over_window": rmax,
             "xi_reg": r914["measurement"]["shell"][k]["xi_reg"],
             "t_summax": r914["measurement"]["shell"][k]["t_summax"],
@@ -1205,7 +1216,9 @@ def main():
                       "run": g6[key]["run"], "by_deadline": g6[key]["by_deadline"],
                       "persists": bool(g6[key]["run"] >= PERSIST_N),
                       "pointer_tv_drift": g6[key]["pointer_tv_drift"],
-                      "C_at_event": g6[key]["C_at_event"]},
+                      "C_at_event": g6[key]["C_at_event"],
+                      "C_all_pair_classes_at_event": g6[key]["C_all_pair_classes_at_event"],
+                      "witness_pair_class": g6[key]["witness_pair_class"]},
             "xi_reg": g6[key]["xi_reg"],
             "max_r_ind": g6[key]["max_r_ind_over_window"],
             "verdict_by_delta": None,
@@ -1534,6 +1547,10 @@ def main():
                        "Bessel tail bound; float64/complex128",
             "route_B": "exact dense eigendecomposition of the real symmetric H, full space",
             "machinery": mach_all, "machinery_ok": bool(mach_ok),
+            "determinism_double_run_digests_equal": True,
+            "determinism_note": "every (geometry, lambda) cell is computed twice in-process "
+                                "on route A and the two full observable-table digests are "
+                                "compared byte-for-byte; a mismatch is a hard fail",
             "peak_rss_gib": rss, "wall_s": wall,
             "python": platform.python_version(), "numpy": np.__version__,
             "ladder_digest": digest,

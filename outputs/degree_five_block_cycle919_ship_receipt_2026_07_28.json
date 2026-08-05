@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor line-by-line review; the checker's correction of the primary's 0.075 rationale adopted",
+  "block": "toe-time-blockM5-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 9.1s; 13/13 claims survive; 11/11 teeth; chi 2.0e-13 / C_ab 4.0e-14 / theta_A 4.4e-14 vs primary",
+    "primary": "exit 0, 8.0s; 917 reproduced value-for-value (156 rows, max dev exactly 0) before any new number; 21/21 constants quote-identical to the pinned 917 receipt; routes A/B at 3.4e-14, A/C at 3.2e-14; falsifiers all fire incl. the under-converged-propagator guard (Euler dev 0.415, verdict flips); double-run identical"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 6th M-family PR: executes the ladder's named successor measurement and converts the (4,6] bracket into a located integer threshold with published margins, cross-degree controls, and a checker-corrected claim surface; nothing corollary",
+  "cycles": [
+    919
+  ],
+  "files": {
+    "docs/DEGREE_FIVE_CERTIFIES_THRESHOLD_LOCATED_CYCLE919_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "cfeed45cb2c9b269e7a64e4777ecfbe94f7691ea",
+      "sha256": "1ff7389686d3bf7472d42fdc79c3edee292929b92821c4043432460eeedeb7ab"
+    },
+    "logs/runner-cache/frontier_cycle919_degree_five_2026_07_28.txt": {
+      "git_blob": "0424ee81cef16c95193708f8f270eb154cdc6fe0",
+      "sha256": "249f40fb1b416acb19ba5b36c5d08a69904aab2f940f22b0aebeed666053279c"
+    },
+    "logs/runner-cache/frontier_cycle919_degree_five_independent_check_2026_07_28.txt": {
+      "git_blob": "204a9d9e1b2561abff0df07af9098c8e9fb039cb",
+      "sha256": "ec6696ef941b3f1ce69cdaa6d5332993c5cbad59d55264cdae4444e1b5e978c1"
+    },
+    "outputs/degree_five_cycle919_receipt_2026_07_28.json": {
+      "git_blob": "587349db8b77c31d20f0aa04e6e69a1bb206a6d0",
+      "sha256": "cf85c74b62f1e6a83287a824f56315f3b1cf4b9387056d94906bb0195aae04f5"
+    },
+    "outputs/degree_five_independent_check_cycle919_receipt_2026_07_28.json": {
+      "git_blob": "bd57ac3ec780e0cb95e1f821fb159c52b0988690",
+      "sha256": "b455e3c5669f4cfeae0046a6ffb410daac8ce4bb89465b1a30f884190c232662"
+    },
+    "scripts/frontier_cycle919_degree_five_2026_07_28.py": {
+      "git_blob": "c22ebafcb743824db67ef1abe9f2f223ea6664a1",
+      "sha256": "15ce5dbd37cea6e4d7286dc85d0c04abd9948bae2a84910e5f9486c5fa35b196"
+    },
+    "scripts/frontier_cycle919_degree_five_independent_check_2026_07_28.py": {
+      "git_blob": "f5c4f5c5a149b8d03d70d59ad97ebeb5b6b6cc2d",
+      "sha256": "34526d5060c2cf592dce7b6b8986f2878209ae9c68e91138658725aabe22a29b"
+    }
+  },
+  "headline": "THE FIELD-CEILING THRESHOLD IS DEGREE 5: all twelve degree-5 cells YES incl. the frozen 0.10 field (star/two trees/cube-minus-a-face; n 6-16, loops 0-4 \u2014 degree isolated from every named confound); on integer degrees (4,5] = {5} so the 917 bracket's interior is exhausted \u2014 LOCATED not bracketed; ceiling law confirmed at degree 5 (max R_ind = 5 loop-free; the loopy H4 drops to 3 above the low field while still certifying); graded ceiling complete: 2->0.05, 3-4->0.075, 5-6->0.10; margin honesty: the boundary is decided by 0.00078/0.00083 bits (a ~2e-3-bit gate shift moves it); checker: 0.075 NOT load-bearing (threshold decided at frozen 0.10 \u2014 strengthens), grade split flagged, cross-degree controls exclude size and loops",
+  "independence": "checker on fully independent machinery (sparse Pauli-kron, expm_multiply, own MIS/partitions from spec bytes); max deviation vs primary 2e-13; 13/13 claims, 11/11 teeth",
+  "note": "docs/DEGREE_FIVE_CERTIFIES_THRESHOLD_LOCATED_CYCLE919_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 9.1,
+    "primary": 8.0
+  }
+}

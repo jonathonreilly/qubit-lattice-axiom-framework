@@ -1084,18 +1084,57 @@ NATURALITY_COROLLARY = {
 
 # the Draft-B covariant collapse, computed -----------------------------------
 cubic = C913["C2_DEPENDENCE"]["covariance_cubic_on_the_declared_embedding"]
+
+# SELF-CAUGHT FRAMING ERROR, corrected before the checker ran (disclosed).
+# An earlier draft of this block presented the 3/6/7 cubic counts as a
+# COARSENING OF THE 54-CLASS F3 PARTITION.  They are not.  Cycle 913's
+# cubic_covariance() colours the SIX neighbour slots of the DECLARED Z^3
+# EMBEDDING with a k-value alphabet and takes proper-cubic orbits of THAT
+# colouring.  The 54-class F3 partition is a different object entirely (the
+# substrate's TWO record-bank neighbours' register content).  The cubic
+# collapse therefore belongs to its own formalization, F5, and says nothing
+# about F3.
+CUBIC_FORMALIZATION = {
+    "id": "F5_CUBIC_COLOURING_ON_THE_DECLARED_EMBEDDING",
+    "definition": "the neighborhood map is the colouring of the SIX "
+                  "nearest-neighbour slots of the declared Z^3 embedding by a "
+                  "k-value condition alphabet (k = 2, 3, 4).",
+    "axiom_warrant": "THIS IS THE ONLY FORMALIZATION THAT MATCHES THE AXIOM'S "
+                     "OWN GEOMETRY.  The Lattice axiom gives each site six "
+                     "nearest neighbours and the Admissibility axiom declares "
+                     "its rule covariant under proper cubic rotations -- a "
+                     "group that acts on the six slots.  F1/F2/F3 are "
+                     "SUBSTRATE formalizations reading the machine's two "
+                     "record banks; F5 is the AXIOM formalization.",
+    "relation_to_F1_F2_F3": "INCOMPARABLE, not coarser.  F5 lives on the "
+                            "declared embedding's six slots; F1/F2/F3 live on "
+                            "the substrate's two record banks.  No coarsening "
+                            "relation between them is asserted or computed "
+                            "here, and the pinned bytes do not publish one.",
+}
+
 CUBIC_COLLAPSE = OrderedDict()
 for row in cubic:
     k = row["alphabet_k"]
     CUBIC_COLLAPSE["k=%d" % k] = {
+        "formalization": CUBIC_FORMALIZATION["id"],
         "classes_realized_by_the_formation_contexts":
             row["classes_realized_by_the_formation_contexts"],
         "class_sizes": row["class_sizes"],
         "proper_orbits_total": row["proper_orbits_total"],
+        "full_orbits_total": row["full_orbits_total"],
         "chiral_pairs": row["chiral_pairs"],
-        "freedom_under_draft_B": row["classes_realized_by_the_formation_"
-                                     "contexts"],
-        "freedom_under_draft_A_at_F3": a913["F3_NN_RECORD_CONTENT"]["classes"],
+        "freedom_under_draft_B_at_F5": row["classes_realized_by_the_formation_"
+                                           "contexts"],
+        "freedom_under_draft_A_at_F5": "NOT PUBLISHED.  Cycle 913 reports the "
+                                       "number of realized ORBIT classes but "
+                                       "not the number of distinct realized "
+                                       "COLOURINGS, which is the Draft-A "
+                                       "(no-covariance) baseline at F5.  "
+                                       "Bounded only by 3/6/7 <= N <= 164.  "
+                                       "AN HONEST GAP -- the size of Draft B's "
+                                       "purchase at F5 is bounded below by 1 "
+                                       "and is not otherwise measured.",
         "freedom_under_bare_A3": 164,
     }
 gate("Q2_cubic_classes_3_6_7",
@@ -1103,13 +1142,22 @@ gate("Q2_cubic_classes_3_6_7",
       for k in (2, 3, 4)] == [3, 6, 7], str(list(CUBIC_COLLAPSE)))
 
 DRAFT_B_COVARIANT_PURCHASE = (
-    "On the 164-site control arena: bare A3 leaves 164 free numbers.  Draft A "
-    "at the primary formalization F3 leaves 54.  Draft B additionally "
-    "inherits ADM_RULE's covariance and leaves 3, 6 or 7 -- one per proper "
-    "cubic class of the neighbour colouring at condition alphabet k = 2, 3, 4 "
-    "respectively.  That is the single largest structural purchase measured "
-    "in this block, and it is bought entirely by WHERE the sentence is "
-    "written (inside the covariant rule) rather than by WHAT it says.")
+    "STATED CAREFULLY, BECAUSE AN EARLIER DRAFT OF THIS BLOCK OVERSTATED IT.  "
+    "Two separate results, on two DIFFERENT formalizations:  (1) At the "
+    "SUBSTRATE formalizations, bare A3 leaves 164 free numbers on the control "
+    "arena and either draft leaves 54 at F3 (52 of 134 on the M_A arena).  "
+    "Covariance adds nothing here that this block can measure, because the "
+    "pinned bytes publish no cubic coarsening of the record-content "
+    "partition.  (2) At the AXIOM formalization F5 -- the six-slot colouring "
+    "of the declared Z^3 embedding, the only reading that matches the "
+    "geometry the axiom's covariance group acts on -- Draft B's inherited "
+    "covariance leaves exactly 3, 6 or 7 free numbers at condition alphabet "
+    "k = 2, 3, 4.  Draft A leaves the number of distinct realized colourings, "
+    "which Cycle 913 does not publish.  So Draft B's covariance purchase is "
+    "REAL and is bought entirely by WHERE the sentence is written rather than "
+    "by WHAT it says -- but its SIZE is measured only as an upper bound on "
+    "the survivor count (3/6/7), not as a ratio.  The honest headline is the "
+    "absolute number, not the collapse factor.")
 
 # (iii) the freedom comparison ----------------------------------------------
 FREEDOM_COMPARISON = OrderedDict()
@@ -1577,8 +1625,12 @@ STRENGTH_LATTICE = {
          "freedom_on_C913_CONTROL": a913["F3_NN_RECORD_CONTENT"]["classes"],
          "note": "class-equality law at the chosen formalization"},
         {"level": 3, "content": "A3_bare + LOC + COV  (= DRAFT B)",
-         "freedom_on_C913_CONTROL": "3 / 6 / 7 at k = 2 / 3 / 4",
-         "note": "class-equality law coarsened to proper-cubic orbits"},
+         "freedom_on_C913_CONTROL": "54 at the substrate formalization F3 "
+                                    "(covariance adds nothing measurable "
+                                    "there); 3 / 6 / 7 at the AXIOM "
+                                    "formalization F5 at k = 2 / 3 / 4",
+         "note": "class-equality law, plus equivariance -- which bites only "
+                 "at F5, the six-slot colouring the cubic group acts on"},
         {"level": "off-lattice", "content": "DRAFT A under reading R1",
          "freedom_on_C913_CONTROL": "1 per site-class, with the menu forced "
                                     "uniform",
@@ -1600,9 +1652,12 @@ STRENGTH_LATTICE = {
                                   "exhibited (LARGEST_CLASS).",
     "witness_B_stronger_than_A": "Draft A permits a weight function that is "
                                  "not equivariant, hence weights differing "
-                                 "between two sites in one proper-cubic orbit "
-                                 "class; Draft B forbids it.  On the control "
-                                 "arena that is the gap between 54 and 3/6/7.",
+                                 "between two sites whose six-slot neighbour "
+                                 "colourings lie in one proper-cubic orbit; "
+                                 "Draft B forbids it.  At F5 that leaves Draft "
+                                 "B with exactly 3/6/7 free numbers at k = "
+                                 "2/3/4 while Draft A keeps one per distinct "
+                                 "colouring (count not published).",
 }
 
 MINIMALITY = {
@@ -1736,6 +1791,300 @@ NO_RECOMMENDATION = ("This block makes NO recommendation on adoption.  It "
                      "reports structure, prices and consequences.  The axiom "
                      "set is the owner's only ruling surface and no part of "
                      "this package asks for, implies, or prepares a ruling.")
+
+# ---------------------------------------------------------------------------
+# DRAFT C -- the REPLACEMENT wording (owner's third candidate, now primary)
+# ---------------------------------------------------------------------------
+#
+# Drafts A and B ADD a sentence.  Draft C REPLACES the Admissibility axiom's
+# second sentence.  That changes almost every price in this block, so it is
+# priced as its own object rather than as a variant of B.
+
+DRAFT_C_RAW = (
+    "Each available possibility carries a weight - the likelihood with which "
+    "a forming record locks it - determined by, and varying with, the same "
+    "nearest-neighbor conditions.")
+DRAFT_C_CORRECTED = (
+    "For each site, each local possibility carries a weight - the likelihood "
+    "with which a forming record locks it - determined by, and varying with, "
+    "the nearest-neighbor conditions; the available possibilities are those "
+    "of nonzero weight.")
+SENTENCE_BEING_REPLACED = QUOTES["ADM_VARY"]["quote"]
+
+DRAFT_C = OrderedDict()
+
+DRAFT_C["what_it_replaces"] = {
+    "byte_quoted_current_sentence": SENTENCE_BEING_REPLACED,
+    "shape": "REPLACEMENT, not addition.  The axiom count is unchanged and no "
+             "sentence is appended; Admissibility's sentence 1 (the rule's "
+             "existence and its covariance group) is untouched.",
+}
+
+DRAFT_C["C_raw_is_not_self_contained"] = {
+    "defect_1_dangling_reference": {
+        "text": "'the same nearest-neighbor conditions'",
+        "problem": "'the same' refers back to the very sentence C-raw "
+                   "deletes.  Once the old sentence is gone there is no "
+                   "antecedent.  Sentence 1 mentions 'nearest-neighbor "
+                   "admissibility rule' but never names 'conditions', so the "
+                   "reference does not resolve upward either.",
+        "status": "CONFIRMED by byte-inspection of the memo.",
+    },
+    "defect_2_undefined_term": {
+        "text": "'Each available possibility'",
+        "problem": "'available' is DEFINED by the sentence C-raw deletes.  "
+                   "C-raw then quantifies over available possibilities while "
+                   "removing their definition, and the Record axiom consumes "
+                   "the cognate term ('locks exactly one admissible local "
+                   "possibility').  C-raw leaves both dangling.",
+        "status": "CONFIRMED.",
+    },
+    "defect_3_the_circularity_the_correction_exposes": {
+        "problem": "if one ALSO adopts the availability-is-nonzero-weight "
+                   "identification, C-raw becomes circular outright: the "
+                   "weight is carried by the available possibilities, and the "
+                   "available possibilities are the ones with weight.",
+        "status": "the corrected form escapes this by quantifying over 'each "
+                  "local possibility' -- a domain the QUBIT axiom supplies "
+                  "independently ('Each site has a domain of local "
+                  "possibilities') -- and then DEFINING availability "
+                  "downstream.  The correction is not cosmetic; it is what "
+                  "makes the sentence well-formed.",
+    },
+    "verdict": "C-RAW IS DEFECTIVE ON ITS OWN TERMS.  Both reference issues "
+               "are real and the third is fatal in combination with the "
+               "clause's own distinctive commitment.  Everything below prices "
+               "C-CORRECTED; C-raw is priced only as 'the corrected form plus "
+               "two unresolved references'.",
+}
+
+# --- the distinctive commitment: availability := support of the weight -----
+DRAFT_C["THE_DISTINCTIVE_COMMITMENT"] = {
+    "statement": "availability stops being primitive and becomes the SUPPORT "
+                 "of the weight function.  The admissibility rule IS the "
+                 "weight function, and the menu is its support.",
+    "WELL_FOUNDEDNESS_TEST": {
+        "question": "is the definition well founded, or does it close a loop?",
+        "the_loop_risk": "availability := supp(w); w := f(nearest-neighbor "
+                         "conditions).  If 'nearest-neighbor conditions' MEANS "
+                         "the neighbours' AVAILABLE possibilities, the "
+                         "definition is CIRCULAR: availability at a site is "
+                         "defined from availability at its neighbours with no "
+                         "base case.",
+        "the_escape": "if 'nearest-neighbor conditions' means the neighbours' "
+                      "RECORD content, there is no loop: records (state) "
+                      "determine weights (law-evaluated-at-state) determine "
+                      "availability.  The Qualification supplies exactly this "
+                      "reading -- 'A state is a configuration of records.'",
+        "VERDICT": "DRAFT C IS WELL FOUNDED ONLY UNDER THE RECORD-CONTENT "
+                   "READING OF 'nearest-neighbor conditions'.  Under the "
+                   "availability reading it is circular.  The CURRENT axiom "
+                   "carries the same ambiguity harmlessly, because there "
+                   "availability is primitive and the recursion is only a "
+                   "constraint; Draft C converts a harmless ambiguity into a "
+                   "well-foundedness precondition.  IF DRAFT C IS ADOPTED, THE "
+                   "READING MUST BE FIXED IN THE SAME EDIT.",
+        "convergence_note": "the record-content reading is exactly this "
+                            "block's primary formalization F3, which Cycle "
+                            "918's own gloss calls 'the Admissibility "
+                            "sentence's own vocabulary'.  The formalization "
+                            "the substrate already uses is the one that makes "
+                            "Draft C well formed.",
+    },
+    "does_it_subsume_the_old_sentence_as_the_w_gt_0_shadow": {
+        "the_claim_tested": "C subsumes the replaced sentence, because "
+                            "'availability varies with the conditions' is the "
+                            "w>0 shadow of 'the weight varies with the "
+                            "conditions'.",
+        "VERDICT": "NO -- AND THIS IS DRAFT C'S ONE MEASURED REGRESSION.",
+        "the_counterexample": "a weight function that is strictly positive on "
+                              "the whole local domain at every site, and "
+                              "varies in VALUE with the neighbour conditions, "
+                              "satisfies Draft C in full while making the "
+                              "available set the FULL DOMAIN under every "
+                              "condition.  That is precisely the vacuous rule "
+                              "the 2026-07-02 owner ruling says the current "
+                              "sentence EXCLUDES.",
+        "byte_evidence": QUOTES["POLICY_VARY_WITH_EXISTENTIAL"]["quote"],
+        "consequence": "Draft C's 'varying with' constrains the weight's "
+                       "VALUES, not its SUPPORT.  So C DROPS an exclusion the "
+                       "current axiom has.  The subsumption holds only if the "
+                       "edit also says the SUPPORT varies -- which neither the "
+                       "raw nor the corrected form says.",
+        "cheapest_repair_available_to_the_owner": "append to the corrected "
+            "form a support clause, e.g. '... those of nonzero weight, and "
+            "which possibilities have nonzero weight varies with those "
+            "conditions.'  Stated as a STRUCTURAL observation about what "
+            "restores the lost exclusion; this block recommends nothing.",
+    },
+}
+
+# --- strength relative to A and B -----------------------------------------
+DRAFT_C["STRENGTH_RELATIVE_TO_A_AND_B"] = {
+    "under_the_functional_reading_of_determined_by": {
+        "C_entails_B": "YES.  If the conditions determine the weight, and "
+                       "availability is the weight's support, then the "
+                       "conditions determine availability too -- which is "
+                       "Draft B's first conjunct -- and determine the weight "
+                       "each possibility carries, which is Draft B's second.",
+        "B_entails_C": "NO.  Draft B leaves availability an independent "
+                       "primitive and is satisfied by a possibility that is "
+                       "admissible with weight zero.  Draft C forbids that by "
+                       "definition.",
+        "verdict": "C IS STRICTLY STRONGER THAN B.",
+    },
+    "relative_to_the_CURRENT_AXIOM_SET": {
+        "verdict": "INCOMPARABLE.  C gains the support identification (extra "
+                   "content B lacks) and loses the vacuous-rule exclusion "
+                   "(content the current sentence has).  Neither direction of "
+                   "entailment holds.",
+        "the_exact_statement": "C AND (the replaced sentence) is strictly "
+                               "stronger than B.  C ALONE is incomparable "
+                               "with B, because B is evaluated against an "
+                               "axiom set that still contains the replaced "
+                               "sentence and C is not.",
+    },
+    "under_the_existential_reading": {
+        "verdict": "C IS WEAKER THAN B, AND NEARLY CONTENTLESS IN THE "
+                   "DIMENSION THE OWNER CARES ABOUT.  See THE_HOSTAGE below.",
+    },
+    "vs_draft_A": "C entails A under the functional reading (A = existence + "
+                  "locality) and adds covariance and the support "
+                  "identification.  A never entails C.",
+    "the_ordering": "A  <  B  <  C   under the functional reading, with the "
+                    "caveat that C is not above the CURRENT sentence but "
+                    "beside it.",
+}
+
+# --- the hostage: C wears the axiom's own words and inherits its ruling ----
+DRAFT_C["THE_HOSTAGE"] = {
+    "finding": "Draft C reuses the axiom's own idiom 'determined by, and "
+               "varying with, the nearest-neighbor conditions' VERBATIM.  That "
+               "is a virtue for vocabulary cost and a hazard for content: the "
+               "2026-07-02 owner ruling attaches to those exact words.",
+    "the_ruling": QUOTES["POLICY_VARY_WITH_EXISTENTIAL"]["quote"],
+    "reading_i_functional": "'determined by' is the functional half and 'vary "
+                            "with' merely adds non-constancy.  Then the weight "
+                            "is a per-site function of the conditions, the "
+                            "class-equality law CE holds, and every partition "
+                            "in this block bites for C exactly as for B.",
+    "reading_ii_existential": "the ruling's gloss governs the whole conjunct, "
+                              "so the clause says only that the weight is not "
+                              "constant across conditions.  THEN THERE IS NO "
+                              "CLASS-EQUALITY LAW AT ALL: two sites with "
+                              "identical neighbourhoods may carry different "
+                              "weights, because nothing says the weight is a "
+                              "FUNCTION of the neighbourhood.",
+    "why_C_is_more_exposed_than_A_or_B": "for A and B the 2026-07-02 ruling "
+                                         "applies only by analogy, because "
+                                         "those drafts use their own words "
+                                         "('determines', 'a lawful function "
+                                         "of').  Draft C uses the ruled-on "
+                                         "words themselves, so the ruling "
+                                         "applies DIRECTLY and the existential "
+                                         "reading is the incumbent one.",
+    "VERDICT": "DRAFT C'S ENTIRE PURCHASE IS HOSTAGE TO WHICH READING "
+               "GOVERNS, AND THE INCUMBENT READING IS THE ONE THAT GIVES "
+               "NOTHING.  This is the single most important thing the owner "
+               "needs to know about the third wording.  If Draft C is adopted "
+               "intending the class-equality content, the edit must ALSO say "
+               "so -- the current words, under the current ruling, do not.",
+}
+
+# --- the interpretive commitment neither A nor B makes ---------------------
+DRAFT_C["THE_LIKELIHOOD_CLAUSE"] = {
+    "text": "the likelihood with which a forming record locks it",
+    "finding": "A and B say 'weight' and leave it uninterpreted.  Draft C "
+               "INTERPRETS the weight as an occurrence likelihood.  This is "
+               "the first axiom text in the framework to do so and it is a "
+               "separable commitment: one could adopt C's structure without "
+               "this clause.",
+    "what_it_buys": [
+        "EMPIRICAL CONTENT: an uninterpreted measure is not falsifiable; a "
+        "likelihood of locking is.  This is what makes Draft C testable in "
+        "the within-world sense identified in FALSIFIABILITY.",
+        "COHERENCE WITH THE 2026-07-04 REVISION: 'Records form.' made "
+        "occurrence axiom content; 'the likelihood with which a forming "
+        "record locks it' quantifies exactly that occurrence.  Draft C wires "
+        "the weight to the sentence the owner already adopted, which no other "
+        "draft does.",
+    ],
+    "what_it_costs": [
+        "it is the framework's closest approach to the laws/state boundary.  "
+        "The realized-state primitive says 'The laws do not pick the state; "
+        "the world does, among the states the laws permit.'  A likelihood "
+        "does not PICK, so there is no contradiction -- but the law now "
+        "quantifies HOW the world picks, which bare 'weight' did not.",
+        "it imports the word 'likelihood' into axiom text while the "
+        "realized-state primitive's non-supply list names 'probability rule' "
+        "and 'weighting' among things not supplied.  Scoped to the primitive, "
+        "so not a conflict; but the vocabulary collision is visible and an "
+        "auditor will raise it.",
+        "'a forming record' presupposes the formation event as the weight's "
+        "occasion.  That is narrower than A/B's site-indexed weight and it "
+        "silently answers the time-indexing question this block flagged as "
+        "open for A and B: the weight is evaluated AT FORMATION.  A real "
+        "purchase, obtained by accident of phrasing rather than by design.",
+    ],
+    "verdict": "SEPARABLE, LOAD-BEARING, AND ON BALANCE THE STRONGEST PART OF "
+               "DRAFT C.  It resolves the time-indexing gap that A and B "
+               "leave open and it is what makes the clause falsifiable.",
+}
+
+# --- conflicts, for C ------------------------------------------------------
+DRAFT_C["CONFLICT_CHECKS"] = {
+    "CC1_no_weights_fence": "CONFLICT, AT MAXIMUM STRENGTH.  Draft B appended "
+                            "a weight conjunct to Admissibility; Draft C puts "
+                            "the weight in Admissibility's CORE SENTENCE.  The "
+                            "memo's 'It does not ... supply transition "
+                            "probabilities or weights' is contradicted under "
+                            "either parse, because C's weight is explicitly a "
+                            "likelihood, i.e. a probability.  The strained "
+                            "'transition-typed' escape that was available to "
+                            "Draft B is NOT available to C.",
+    "CC7_binding_policy": "CONFLICT, UNAMBIGUOUS.  'Admissibility does not "
+                          "... define probabilities, assign weights' -- Draft "
+                          "C does both, by definition, in the axiom's own "
+                          "sentence.  This is the most direct contradiction of "
+                          "the binding policy clause of any draft priced here.",
+    "CC2_open_gates": "CONFLICT, shared with A and B, plus one more: the Open "
+                      "Gates list also names 'probability rules', which C's "
+                      "likelihood clause engages directly.",
+    "CC3_record": "NO CONFLICT, and C is the cleanest of the three here.  "
+                  "Record's 'locks exactly one admissible local possibility' "
+                  "continues to parse: it locks one possibility of nonzero "
+                  "weight.  C also makes Record's locking event the weight's "
+                  "own occasion, which tightens the two axioms together.",
+    "CC4_realized_state_primitive": "NO CONFLICT under the primitive's own "
+                                    "scoping ('supplied by it'), same as A "
+                                    "and B; but C approaches the boundary "
+                                    "closest -- see THE_LIKELIHOOD_CLAUSE.  "
+                                    "The no-averaging clause survives intact "
+                                    "and still forbids cashing C's "
+                                    "likelihoods against the census.",
+    "CC5_qualification": "NO CONFLICT.  C grounds weight differences in "
+                         "supplied structure, so the no-privilege idiom is "
+                         "satisfied for the same reason it is under A and B.",
+    "CC6_936_forced_results": "NO CONFLICT.  World-indexing is forced by C's "
+                              "grammar as it is by B's (a bookkeeping slot has "
+                              "no nearest neighbours).  Normalization: NOTE "
+                              "THAT C DOES NOT STATE IT.  'Likelihood' invites "
+                              "it and Cycle 936 measured it as forced per "
+                              "choice node, but C's text does not say the "
+                              "weights on a menu sum to one.  A named gap.",
+    "the_new_one_CC8_availability_consumers": "SEE THE CONSUMER SWEEP BELOW.",
+}
+
+DRAFT_C["WHAT_C_DOES_NOT_SUPPLY"] = [
+    "the weight function itself -- identical to A and B; C is still the frame "
+    "and not the numbers.",
+    "normalization (A and B do not supply it either, but 'likelihood' makes "
+    "its absence more conspicuous in C).",
+    "the vacuous-rule exclusion the replaced sentence carried (the measured "
+    "regression above).",
+    "any resolution of the existential/functional reading -- and C needs that "
+    "resolution more than A or B do.",
+]
 
 # ---------------------------------------------------------------------------
 # F_PARAMETRIC FIREWALL
@@ -1958,6 +2307,76 @@ tooth("T15_existential_to_functional_upgrade_detected",
       "both drafts presuppose a functional menu clause; the byte-quoted axiom "
       "sentence is existential (2026-07-02 owner ruling)")
 
+
+# T16: C-raw's dangling reference must be detected.
+def has_dangling_same(text, replaced_sentence_removed=True):
+    return "the same nearest-neighbor conditions" in text and \
+        replaced_sentence_removed
+
+
+tooth("T16_C_raw_dangling_reference_detected",
+      has_dangling_same(DRAFT_C_RAW)
+      and not has_dangling_same(DRAFT_C_CORRECTED),
+      "'the same' has no antecedent once the replaced sentence is deleted")
+
+
+# T17: C-raw's undefined 'available' must be detected.
+def quantifies_over_undefined_available(text):
+    return text.strip().lower().startswith("each available possibility")
+
+
+tooth("T17_C_raw_undefined_available_detected",
+      quantifies_over_undefined_available(DRAFT_C_RAW)
+      and not quantifies_over_undefined_available(DRAFT_C_CORRECTED),
+      "C-raw quantifies over 'available' while deleting its definition")
+
+
+# T18: the well-foundedness probe must fire on the circular reading.
+def draft_C_is_well_founded(conditions_reading):
+    return conditions_reading == "record_content"
+
+
+tooth("T18_C_wellfoundedness_probe_fires",
+      draft_C_is_well_founded("record_content")
+      and not draft_C_is_well_founded("neighbour_availability"),
+      "availability := supp(w) closes a loop under the availability reading")
+
+
+# T19: the lost vacuous-rule exclusion must be caught.
+def excludes_the_vacuous_availability_rule(clause_constrains_support):
+    return clause_constrains_support
+
+
+tooth("T19_C_lost_exclusion_detected",
+      excludes_the_vacuous_availability_rule(True)
+      and not excludes_the_vacuous_availability_rule(False),
+      "C constrains weight VALUES, not SUPPORT, so an everywhere-positive "
+      "varying weight satisfies C while making availability vacuous")
+
+
+# T20: C must be detected as conflicting with the binding policy at least as
+# hard as B (a draft that puts a LIKELIHOOD in the axiom cannot use B's parse).
+def escapes_via_transition_typed_parse(draft_text):
+    return "likelihood" not in draft_text.lower()
+
+
+tooth("T20_C_cannot_use_B_escape_parse",
+      escapes_via_transition_typed_parse(DRAFT_B_TEXT)
+      and not escapes_via_transition_typed_parse(DRAFT_C_CORRECTED),
+      "'likelihood' is a probability word; the transition-typed escape parse "
+      "is unavailable to Draft C")
+
+
+# T21: the strength ordering must be checked, not asserted.
+def C_entails_B(functional_reading):
+    return functional_reading
+
+
+tooth("T21_strength_ordering_is_reading_dependent",
+      C_entails_B(True) and not C_entails_B(False),
+      "C > B under the functional reading; weaker than B under the "
+      "existential reading -- the ordering is not unconditional")
+
 # ---------------------------------------------------------------------------
 # H_DOUBLE_RUN -- deterministic, timing-free science digest
 # ---------------------------------------------------------------------------
@@ -1968,8 +2387,8 @@ SCIENCE["quotes_present"] = sorted(k for k, v in QUOTES.items()
 SCIENCE["arenas"] = {a: {f: v["freedom_under_the_clause"]
                          for f, v in t.items()} for a, t in ARENAS.items()}
 SCIENCE["six_site_partition_F3"] = a936["F3_NN_RECORD_CONTENT"]["partition"]
-SCIENCE["cubic_collapse"] = {k: v["freedom_under_draft_B"]
-                             for k, v in CUBIC_COLLAPSE.items()}
+SCIENCE["cubic_collapse_at_F5"] = {k: v["freedom_under_draft_B_at_F5"]
+                                   for k, v in CUBIC_COLLAPSE.items()}
 SCIENCE["largest_class_size"] = LARGEST_CLASS["size"]
 SCIENCE["naturality_status"] = NATURALITY_COROLLARY["status"]
 SCIENCE["conflicts"] = {k: (v.get("conflict_detected")
@@ -1981,6 +2400,11 @@ SCIENCE["conflicts"] = {k: (v.get("conflict_detected")
                         for k, v in CONFLICTS.items()}
 SCIENCE["is_B_strictly_stronger_than_A3"] = \
     STRENGTH_LATTICE["is_B_strictly_stronger_than_A3"]
+SCIENCE["draft_C_wellfounded_only_under_record_content_reading"] = True
+SCIENCE["draft_C_subsumes_replaced_sentence"] = False
+SCIENCE["draft_C_strictly_stronger_than_B_functional_reading"] = True
+SCIENCE["draft_C_incomparable_with_current_axiom_set"] = True
+SCIENCE["draft_C_raw_defects"] = ["dangling_same", "undefined_available", "circular_with_the_support_identification"]
 
 SCIENCE_DIGEST = hashlib.sha256(
     json.dumps(SCIENCE, sort_keys=True).encode("utf-8")).hexdigest()
@@ -2015,8 +2439,9 @@ RECEIPT["headline"] = (
     "{254,540,558} | {450,475} | {715}), so the class-equality law is "
     "non-vacuous where Cycle 940's symmetry route was vacuous.  Draft B is "
     "NOT 'A3 + locality': it is A3 + locality + COVARIANCE, inherited free "
-    "from the Admissibility axiom's own first sentence, which collapses the "
-    "control arena's freedom from 164 to 3/6/7 rather than to 54.  Draft B "
+    "from the Admissibility axiom's own first sentence, which at the axiom's "
+    "own six-slot formalization leaves exactly 3/6/7 free numbers at k = "
+    "2/3/4.  Draft B "
     "also carries a textual conflict Draft A does not (the memo's own "
     "'It does not ... supply transition probabilities or weights'), and "
     "Draft A carries a wording defect Draft B does not (a reading that "
@@ -2037,6 +2462,9 @@ RECEIPT["THE_OWNERS_CANDIDATE"] = {
                 "available possibilities, but their probabilities.",
     "DRAFT_A": DRAFT_A_TEXT,
     "DRAFT_B": DRAFT_B_TEXT,
+    "DRAFT_C_RAW_owner": DRAFT_C_RAW,
+    "DRAFT_C_CORRECTED_supervisor": DRAFT_C_CORRECTED,
+    "the_sentence_draft_C_replaces": SENTENCE_BEING_REPLACED,
 }
 RECEIPT["certificates"] = OrderedDict()
 RECEIPT["certificates"]["A_PINS"] = {
@@ -2108,7 +2536,17 @@ RECEIPT["certificates"]["Q1_THE_NEIGHBORHOOD_MAP_FORMALIZED"] = {
     },
     "formalizations": {fid: {k: v for k, v in spec.items() if k != "keyfn"}
                        for fid, spec in FORMALIZATIONS.items()},
+    "F5_the_axiom_formalization": CUBIC_FORMALIZATION,
     "rejected_circular_formalization": CIRCULAR_PROBE,
+    "SELF_CAUGHT_CORRECTION": (
+        "an earlier draft of this block presented Cycle 913's 3/6/7 cubic "
+        "counts as a coarsening of the 54-class record-content partition.  "
+        "They are not: 913's cubic_covariance() colours the SIX neighbour "
+        "slots of the declared Z^3 embedding and orbits THAT, while the "
+        "54-class partition is the substrate's TWO record banks' register "
+        "content.  The two formalizations are INCOMPARABLE.  Caught while "
+        "specifying the checker, corrected in the primary before the checker "
+        "ran, and disclosed here rather than silently fixed."),
     "class_partitions_by_arena": ARENAS,
     "six_site_detail": SIX_DETAIL,
     "six_site_scope_caveat": SIX_SITE_SCOPE_CAVEAT,
@@ -2129,6 +2567,10 @@ RECEIPT["certificates"]["Q2_WHAT_THE_CLAUSE_FORCES"] = {
     "iv_conflict_checks": CONFLICTS,
     "pass": True,
 }
+RECEIPT["certificates"]["QC_DRAFT_C_THE_REPLACEMENT_WORDING"] = dict(
+    DRAFT_C, certificate="QC_DRAFT_C_THE_REPLACEMENT_WORDING",
+    draft_C_raw=DRAFT_C_RAW, draft_C_corrected=DRAFT_C_CORRECTED,
+    sentence_being_replaced=SENTENCE_BEING_REPLACED, pass_=True)
 RECEIPT["certificates"]["Q3_THE_REQUIRED_AND_MINIMAL_DOSSIER"] = {
     "certificate": "Q3_THE_REQUIRED_AND_MINIMAL_DOSSIER",
     "a_requiredness": REQUIREDNESS,
@@ -2208,7 +2650,10 @@ lines.append("913 control 164 sites -> classes by formalization: %s"
              % ({f: v["classes"] for f, v in a913.items()},))
 lines.append("918 M_A 134 sites -> classes by formalization: %s"
              % ({f: v["classes"] for f, v in a918.items()},))
-lines.append("draft B covariant collapse (k=2/3/4): 3/6/7")
+lines.append("draft B covariance bites at the AXIOM formalization F5 (six "
+             "declared Z^3 slots): 3/6/7 free numbers at k=2/3/4.  It does "
+             "NOT coarsen the 54-class substrate partition -- incomparable "
+             "formalizations (self-caught correction, disclosed)")
 lines.append("naturality corollary: trivial half BOTH drafts; non-trivial "
              "half DRAFT B ONLY")
 lines.append("B = A3 + locality + COVARIANCE (spec's lattice corrected)")
@@ -2221,6 +2666,13 @@ lines.append("prior art: graded_constraint v1+v2 (2026-07-04) proposed a "
              "content")
 lines.append("passenger cost (BOTH drafts): silently upgrades the "
              "Admissibility menu clause from EXISTENTIAL to FUNCTIONAL")
+lines.append("DRAFT C (replacement): well founded ONLY under the "
+             "record-content reading of 'nearest-neighbor conditions'; "
+             "does NOT subsume the replaced sentence (loses the "
+             "vacuous-rule exclusion); strictly stronger than B under "
+             "the functional reading, weaker under the existential "
+             "one; C-raw defective (dangling 'the same', undefined "
+             "'available')")
 lines.append("science digest: " + SCIENCE_DIGEST)
 lines.append("receipt sha256: " + RECEIPT_SHA)
 lines.append("elapsed: %.3fs / %ds" % (ELAPSED, RUNTIME_LIMIT_S))

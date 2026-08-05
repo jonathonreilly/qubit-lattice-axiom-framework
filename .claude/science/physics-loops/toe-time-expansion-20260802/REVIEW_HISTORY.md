@@ -1307,3 +1307,30 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
   924's two carried forward.
 - Cluster-cap: n/a (2nd AC-family PR).
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 922 P=32 carrier (blockT6, PR #5996) — 2026-08-05
+
+- Supervisor review: the seal-honesty disclosure chain (the
+  label-level B=8 exposure named; the clock-local pre-registration
+  digest; the blind checker-built B=9 — the strongest holdout
+  discipline of the campaign); the 891 restriction gate at zero
+  failed checks; the over-budget first checker run preserved as
+  superseded rather than hidden; the spec's alignment-forbidden
+  guess declared non-premise and falsified (the data followed).
+- Verdicts: the miss CLOSED (owned-but-never-read; 276/276
+  episodes); THE LABEL THEFT found (two 891 carrier labels
+  corrected clock-locally; the value-level holdout stands; the
+  891 qualification executed on blockT5 with pin refreshed);
+  RC-1 derived (three pairs; the dominant handoff carrier the
+  swap-only census missed); RC-2 at fitted-then-sealed grade with
+  strict dominance and the model-degeneracy band reported; the
+  40/48 residuals dissolved (stretch-local complements — the
+  ones-and-twos law).
+- Checker: SUPPORTED_WITH_PART_REFUTATION carried on the claim
+  surface (the B=9 b=7 sufficiency failure — the pre-flagged
+  cell); tick-for-tick kernel validation; the rule determinate
+  from stated text alone.
+- Cluster-cap (3rd T-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 930 (the
+  never-firing third pair + RC-3, blockT7).

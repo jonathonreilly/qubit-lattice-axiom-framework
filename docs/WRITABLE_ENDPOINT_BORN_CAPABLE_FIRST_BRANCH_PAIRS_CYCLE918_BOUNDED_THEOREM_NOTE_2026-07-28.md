@@ -87,6 +87,14 @@ exactly why it is sterile.
   [520,630], [533,643]) out of 27 candidate pairs. It preserves
   write-once, the dead-wire slots, formation, the menu, lane
   locality, layout independence, and the certified vocabulary.
+  [Qualification 2026-08-05, Cycle 925: the dynamical-branch-pair
+  count is relative to this block's declared setup-coordinate list
+  (token positions + prepared endpoint direction) — a
+  proven-re-labeling tape raises the declared count from 3 to 12
+  while the determinism-relevant Cycle-911 branch class stays 0 for
+  every gate set; adding any unnamed setup coordinate inflates it.
+  No verdict changes, but the count must not be read as a measure
+  of indeterminism. See the Cycle-925 note.]
   **Price:** the 913 transport theorem is supplemented (not
   contradicted — the control reproduces it exactly); the
   monitor-phase Z11 invariance of the REALIZED selection is lost

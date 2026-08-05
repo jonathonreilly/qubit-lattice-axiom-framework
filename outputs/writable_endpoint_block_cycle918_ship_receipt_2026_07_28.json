@@ -15,8 +15,8 @@
   ],
   "files": {
     "docs/WRITABLE_ENDPOINT_BORN_CAPABLE_FIRST_BRANCH_PAIRS_CYCLE918_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "186af20c471f8cbb4e9c9871fc2ee652d813e348",
-      "sha256": "40333f3bb83f77a3e7c89eb232bbe24c01885cdcfdcab7888ae319419c1efaee"
+      "git_blob": "0626e1ced4fbb064cb2747b81675e4e49beacb84",
+      "sha256": "c93ee39fae4cf5cda1b6237759334ae1b0d3666d1d216956fc2cdbc81b00c715"
     },
     "logs/runner-cache/frontier_cycle918_writable_endpoint_2026_07_28.txt": {
       "git_blob": "ee6b4fbd31efee01d6d7f3341a4dc572eb3d8940",
@@ -46,6 +46,13 @@
   "headline": "THE WRITABLE-ENDPOINT DESIGN SPACE MAPPED (748 worlds, 180,224 boundaries, both layouts): record-driven M_A = BORN-CAPABLE \u2014 37 lock points realize an item their setup did not prepare and the FIRST THREE DYNAMICAL BRANCH PAIRS in the framework's history exist ([253,407],[520,630],[533,643]); priced by the monitor-phase Z11 loss (124 violations) and 32 unformed worlds; cross-lane M_B = DESTRUCTIVE (the neighbour is a bookkeeping artefact \u2014 the law is not well defined); local-content M_C = STERILE (fires only in even numbers before every lock); NECESSARY-NOT-SUFFICIENT: the 911 branch class stays EMPTY for every gate set (census fact + determinism lemma) \u2014 O3's obstruction relocates to 'the law is a function of (schedule, tick-0 state)'; selection still lives on wires [1,6] (trajectory history, not neighbourhood); the M_A constraint-(c) tension emitted as a registration-shaped owner surface",
   "independence": "checker on an independent splice mechanism (pinned 863 compiler schedules, computed-offset splice, never a rebuild; own scan/counters/Z11 action); PRIMARY_SURVIVES_THIS_CHECK, 38/38 checks, 8/8 teeth; the checker closed the one gap it found (dead-wire rig re-derived under each modification)",
   "note": "docs/WRITABLE_ENDPOINT_BORN_CAPABLE_FIRST_BRANCH_PAIRS_CYCLE918_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "post_ship_edits": [
+    {
+      "authority": "supervisor post-ship precision edit (the T4/916 pattern); no claim strengthened; verified independently by the Cycle-925 checker (K8)",
+      "date": "2026-08-05",
+      "edit": "Cycle-925 qualification: the dynamical-branch-pair count is relative to the declared setup-coordinate list (a proven-re-labeling tape raises the declared count 3 -> 12 while the 911 branch class stays 0); not a measure of indeterminism. Bracketed dated qualification added to the M_A verdict bullet; note pin refreshed."
+    }
+  ],
   "runtime_seconds": {
     "checker": 386,
     "primary": 324

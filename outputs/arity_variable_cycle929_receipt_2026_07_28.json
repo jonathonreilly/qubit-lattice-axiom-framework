@@ -38435,7 +38435,7 @@
    "tie_breaks_resolved": []
   }
  },
- "git_head": "ed24d45eff",
+ "git_head": "3c44630445",
  "new_cells": {
   "ALTd3f1@0.05": {
    "binding_gate": "content",
@@ -121902,8 +121902,8 @@
  "runner": "scripts/frontier_cycle929_arity_variable_2026_07_28.py",
  "runner_sha256": "626be10a174d9ff41f72daa97a7eddc403e5ce191aff56791b38d0cea740c08a",
  "runtime_limit_seconds": 900.0,
- "runtime_seconds": 7.089590416988358,
- "runtime_seconds_to_end_of_restriction_gates": 4.781637042004149,
+ "runtime_seconds": 7.135910792014329,
+ "runtime_seconds_to_end_of_restriction_gates": 4.81257216699305,
  "runtime_within_limit": true,
  "schema": "frontier_cycle929_arity_variable_v1",
  "structural_lemma": {

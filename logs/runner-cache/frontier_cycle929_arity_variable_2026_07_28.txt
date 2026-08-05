@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle929_arity_variable_2026_07_28.py
-cycle: 929  block: toe-time-blockM10-20260802  head: ed24d45eff
+cycle: 929  block: toe-time-blockM10-20260802  head: 3c44630445
 runtime: 7.1 s (limit 900 s)
 
 -- VENDORING (Cycle 926 package, from physics-loop/toe-time-blockM8-20260802 @ 017f28df6e) --
@@ -282,5 +282,5 @@ runtime: 7.1 s (limit 900 s)
   * diagnostic fields {0.075, 0.125, 0.15} are run on the SEP grid cells only and are labelled non-claim in every table.
 
 receipt: outputs/arity_variable_cycle929_receipt_2026_07_28.json
-receipt sha256: ad0bef911edf82de1822e33ff8a5ec97ebdaeb3541b2ff297b18e39bd1e275f9
+receipt sha256: 40440237f0af14882b06331a054c19f3da52f34e6e7b2cde846a0b390a3679a3
 ===== runner cache v1 =====

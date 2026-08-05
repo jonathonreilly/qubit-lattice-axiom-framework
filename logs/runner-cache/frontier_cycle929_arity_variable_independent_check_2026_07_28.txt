@@ -1,0 +1,110 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle929_arity_variable_independent_check_2026_07_28.py
+cycle: 929  position: SUPPORTED WITH FINDINGS  runtime: 5.1 s (limit 900 s)
+
+-- INDEPENDENT MACHINERY --
+  R_ind              Bron-Kerbosch with pivoting over the independence graph
+  entropies          from SINGULAR VALUES (np.linalg.svd); eigvalsh never called
+  partition_rule     parsed and re-implemented from the frozen memo bytes
+  propagation        Lanczos with full reorthogonalisation, adaptive substepping, symmetric-tridiagonal eigensolve
+  qubit_ordering     axis i <-> qubit i (opposite of the primary's reshape)
+  reduced_states     pointer projected FIRST, remaining tensor traced by np.einsum
+  second_route       scipy expm_multiply on a sparse Pauli-assembled H (DISCLOSED: 926's checker used this route; here it is a second opinion only)
+
+-- ATTACK (ii): every published partition re-derived FROM THE MEMO BYTES --
+  geometries checked: 91   mismatches: NONE
+  hand-labelled geometries the primary declared: ['A6']
+
+-- CROSS-CHECK vs the primary --
+  46 cells, 202 pairs; max |C_ab| deviation 8.350e-14 (tolerance 1e-09)
+  verdict mismatches: NONE
+  ledger  mismatches: NONE
+
+-- ATTACK (i): MODEL DEGENERACY on the Q1 verdict --
+  rival                              cells      max resid    median resid fits everywhere
+  M_d  = T(d)                        122        4.862e-06    1.598e-16    True
+  M_dplusf = T(d+f-max)              122        3.873e-03    3.047e-04    False
+  M_f  = T(f)                        122        3.873e-03    3.047e-04    False
+  M_max = T(max(d,f))                122        4.862e-06    1.598e-16    True
+  M_mean = (T(d)+T(f))/2             122        1.937e-03    1.523e-04    False
+  M_min = T(min(d,f))                122        3.873e-03    3.047e-04    False
+  M_n = T(n-1)                       120        4.739e-03    8.890e-17    False
+  M_size = T(max fragment size + 1)  118        1.380e-02    2.199e-03    False
+  rivals fitting the whole grid besides M_d (genuine alternatives): NONE
+  IDENTITY TIES that collapse onto M_d (not alternatives): ['M_max = T(max(d,f))']
+    reason: f <= d everywhere on the constructible grid (True), so max(d,f) IS d
+  other rivals fitting at least one discriminating cell: ['M_n = T(n-1)']
+
+-- ATTACK (iii): the unified law, HELD-OUT prediction --
+  train 415 pairs / test 415 pairs; 394 predictable; max |error| 8.187e-06
+  worst held-out cell: {'geometry': 'XH1', 'pair': '+x|+y', 'field': '0.1', 'd': 6, 'f': 3, 'm': [4, 1], 'sizes': [2, 6], 'observed': 0.015531241406201029, 'predicted': 0.015523054394009406, 'error': 8.18701219162249e-06}
+  f-blindness: 6 groups at fixed (d, field, multiplicities) contain more than one f
+    worst spread across f: 3.229e-15 at d=6 field=0.05 m=[1, 1]
+
+-- THRESHOLD AND TWO-GATE ANATOMY, on the checker's own grid --
+  86 loop-free geometries; 41 satisfy d>=5 AND f>=3, 45 violate it
+  sufficiency counterexamples: NONE
+  necessity  counterexamples: NONE
+  independence failures: f [2], d [2, 3, 4, 5, 6]   (independence side tracks f: True)
+  persistence  failures: f [3, 4], d [3, 4]   (persistence side tracks d: True)
+
+-- ATTACK (iv): Q3 large-fragment counterexample hunt --
+  XH1        d=6 f=3 maxsize=6 maxmult=4  verdict YES 
+  XH2        d=6 f=6 maxsize=4 maxmult=1  verdict YES 
+  XH3        d=5 f=3 maxsize=6 maxmult=3  verdict YES 
+  XW1        d=6 f=3 maxsize=4 maxmult=4  verdict YES 
+  XW2        d=6 f=4 maxsize=6 maxmult=3  verdict YES 
+  XW3        d=5 f=5 maxsize=4 maxmult=1  verdict YES 
+  XW4        d=5 f=3 maxsize=5 maxmult=3  verdict YES 
+  XW5        d=6 f=5 maxsize=4 maxmult=2  verdict YES 
+  Xd6f3      d=6 f=3 maxsize=4 maxmult=4  verdict YES 
+  counterexamples: NONE
+
+-- A4, re-explained and re-tested --
+  T(2)_the_f_equals_2_prediction                       0.021682125993982542
+  T(5)_the_pure_d_prediction                           0.009396140996004308
+  checker_A4_C_ab_at_Jt_0.7                            0.025015858639631947
+  cycle926_published_value                             0.025015858639633706
+  deviation_from_926                                   1.7590096046404824e-15
+  f_reading_within_927s_own_within_degree_spread       False
+  f_reading_wrong_by_this_many_927_spreads             138.88749831306106
+  over_the_0.02_gate                                   True
+  pair_exhausts_the_pointer                            True
+  residual_of_the_f_reading                            0.0033337326456494044
+  residual_of_the_pure_d_reading                       0.015619717643627639
+
+-- ADDITIVITY RELATION --
+  12 instances; max |residual| 1.0606099332122199e-14 (tolerance 1e-9)
+
+-- EMBEDDING SWEEP --
+  26 comparisons over 51 embeddings; max deviation 0.0
+
+-- TEETH --
+  C10_A4_reexplanation                                     FIRES
+  C11_additivity_relation_independently_confirmed          FIRES
+  C12_crippled_propagator_is_detected                      FIRES
+  C13_two_checker_routes_agree                             FIRES
+  C14_the_rule_is_read_from_the_memo_not_typed_in          FIRES
+  C15_checker_determinism                                  FIRES
+  C1_every_partition_follows_from_the_memo_bytes           FIRES
+  C2_independent_recomputation_agrees                      FIRES
+  C3_model_degeneracy_attack                               FIRES
+  C4_unified_law_held_out_prediction                       FIRES
+  C5_threshold_conjunction_on_the_checkers_own_grid        FIRES
+  C6_two_gate_anatomy_independently_reproduced             FIRES
+  C7_Q3_large_fragment_counterexample_hunt                 FIRES
+  C8_embedding_independence_broad_sweep                    FIRES
+  C9_structural_lemma_on_a_larger_box                      FIRES
+  15/15 teeth fire
+
+-- REFUTATIONS --
+  NONE.
+
+-- FINDINGS --
+  * DEGENERACY FINDING (identity, not an alternative): the rival(s) ['M_max = T(max(d,f))'] return the SAME NUMBER as M_d on every one of the 122 cells scored.  The reason is structural and checkable: the frozen rule can never produce more fragments than the pointer has neighbours, so f <= d everywhere on the constructible grid (verified: True), which makes max(d, f) literally equal to d.  These are not rival hypotheses and they do not weaken the Q1 verdict -- but the verdict should be stated as 'the arity variable is d' rather than 'd beats every function of (d, f)', because functions that COLLAPSE ONTO d cannot be told apart from d by any measurement on this grid.
+  * Q1 DEGENERACY FINDING (not a refutation): on 58 of 66 discriminating cells the rival(s) ['M_n = T(n-1)'] land inside 1e-05 bits.  The structural reason is that a coordinate STAR has n = d + 1, so on the 58 pure-star cells the system-size model T(n-1) IS T(d) and cannot be told apart from it.  The rival is nonetheless refuted overall -- it misses by up to 4.739e-03 bits on the SPIDER cells, where depth breaks n = d + 1.  Consequence for the scope of the Q1 verdict: the discrimination between POINTER DEGREE and SYSTEM SIZE rests entirely on the depth-carrying cells, not on the star grid.  (Cycle 927 had already separated the two on its own equal-n families; this is a scope note, not a new doubt.)
+
+POSITION: SUPPORTED WITH FINDINGS
+receipt: outputs/arity_variable_independent_check_cycle929_receipt_2026_07_28.json
+receipt sha256: c2825fab5490afc0528c3a45e28d390a112d5319f369c4da6d0e463e7605eb6d
+===== runner cache v1 =====

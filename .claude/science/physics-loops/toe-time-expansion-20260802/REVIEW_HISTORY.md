@@ -918,3 +918,38 @@ three-orbit horizon-criticality; T7 mis-stated (gravity side).
   decoupled from its bar.
 - Cluster-cap: 2nd M-family PR — below threshold.
 - Local disposition: **pass** (bounded_theorem; audit pending).
+
+## Cycle 916 theta dictionary (blockM3, PR #5982) — 2026-08-04
+
+- Supervisor review: the identifiability check on all three
+  definitions; the exactly-constant offset over the full committed
+  grid; the void verdict's two-valued exhibition; the tier-2
+  reframing (landed evidence already covered it — the fresh runs are
+  reproductions, correctly typed); the part-refutation of the
+  sibling prediction with its post-specification disclosed.
+- Checker: all claims survive; one primary shortfall (the fourth
+  void site) amended; the saturation-ratio bridge sharpening
+  adopted; 8/8 teeth.
+- Cluster-cap (3rd M-family PR, evaluator required): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+
+# MASS LANE WINDOW-2 TRAJECTORY ASSESSMENT — 2026-08-04 ~21:00 EDT
+
+The registration story is COMPLETE AT THIS WINDOW'S SCOPE: the d=3
+bar MEASURED (Jt = 0.6/0.7) and REPRODUCED (three no-shared-code
+implementations at 1e-11/1e-12); EXTENDED (lambda = 0.02 certifies;
+no lower boundary); DECAY-BOUNDED (the window closes; no revival to
+Jt = 10); its COMPARATOR LINEAGE RECOVERED (six-plus never-landed
+artifacts with the landing mechanism identified); its INDICATOR
+DECOUPLED from its bar (measured twice, to Jt = 10); and its
+CONVENTIONS RECONCILED (the dictionary; the void census; the
+citation rules). The d=1 geometric no-go confirmed at source.
+
+REMAINING (audit-lane / next-campaign): the 8+ landing
+recommendations (2 HIGH); the deposition chain's own re-audit; the
+GEOMETRY SUCCESSOR (the d=1 no-go's own sentence — branching
+environment geometry required: how much? the geometry-ladder
+measurement from chain to cube under the frozen certification
+gates); the theta-convention registration on the owner surface.
+
+No axiom ask arises anywhere in this lane.

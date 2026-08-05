@@ -386,12 +386,15 @@ worktrees:
     lambda=0.02 CERTIFIES (R_ind=6, window extends, no lower boundary);
     late grid DECAYS with THE measurement: theta returns to ~0.50 while
     nothing certifies — THETA DOES NOT TRACK CERTIFICATION
-  c5-m3: M3 (Cycle 916, the THETA RECONCILIATION (three conventions ->
-    one dictionary with computed conversions/offsets or a priced bridge;
-    the corrected CHECK-05 reading) + TIER-2 late samples (Jt=5,10 — the
-    re-certification question closing the frozen design's last tier; the
-    theta-prediction test at deep-late times); stacked on M2 tip) —
-    running
+  c5-m3: blockM3 SHIPPED as PR #5982 — Cycle 916 THE THETA DICTIONARY:
+    A-to-C exact but convention-two-valued (the pilot escaped via a
+    symmetry-breaking eigensolver); A-to-B = five-premise bridge (floor
+    at 95.9% of B's own range); CHECK-05 VOID as stated (X two-valued,
+    opposite sides of the floor) — theta* survives as an A-value; four
+    void sites censused; B RUNS ONLY FROM HISTORY; TIER 2 DECAY HOLDS
+    (reframed as 1e-12 reproduction of landed streams; no revival; the
+    window closes for good); 915's theta-prediction PART-REFUTED (theta
+    drifts to 0.72 with R_ind=0)
 backlog: CLOSED by Cycle 895 (PR #5957) — all three grading-consuming
   scripts priced (316 BROKEN_OFF_UNIT; 325 structurally T_UNIFORM with one
   sensitive control; 876-checker forced-(1,2,0))

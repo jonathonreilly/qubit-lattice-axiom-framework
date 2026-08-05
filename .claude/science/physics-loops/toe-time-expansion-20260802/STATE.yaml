@@ -876,3 +876,28 @@ census_shipped_20260805: >
   QUARK_ROUTE2 111 not 76; open-PR tier 242 not 223). Audit-lane
   options flagged, none executed. Supervisor edit at review: the
   early-era no-PR fact re-tagged owner-attested.
+
+c5_q18_cycle947_launched: >
+  2026-08-05 ~19:55 EDT — blockQ18 LAUNCHED (Cycle 947, worktree
+  c5-q18, branch physics-loop/toe-time-blockQ18-20260802 stacked on
+  Q17 tip b0626d59ac): the H0 DISCHARGE ATTEMPT, the Born lane's
+  wall. Spec: formalize H0 as clauses H0a site map (compiler-native,
+  not stipulated) / H0b locality-screening (backward causal-cone
+  containment at the choice boundary vs neighborhood wire sets) /
+  H0c possibility identification (menu items = Qubit possibilities,
+  availability = support, against the axiom's landed bytes) / H0d
+  symmetry transport (sigma respects site-map fibers, descends);
+  compute each, classify DERIVED/CONSUMED/RESIDUE, price any
+  residue, adversarial no-go search for a non-descending law
+  symmetry; discharge-by-stipulation forbidden (stipulation = named
+  residue). NOTE: since 946 shipped, #6011+#6013 LANDED — the
+  adopted sentence is on origin/main line 60 (sha256 53175250f0...,
+  blob 2f5fdd2689...); Cycle 947 pins the LANDED text, so the
+  conditional upgrades from conditional-on-PR-landing to
+  conditional-on-landed-axiom (+ whatever H0 residue survives).
+  Checker spec'd to REFUTE with disjoint machinery (forward
+  reachability, independent site-map reconstruction, mutation
+  probes >=12 teeth). Worker: Claude Opus worker-tier at max
+  (cross-context independence; codex exhausted until 2026-08-08 —
+  disclosed). Supervisor reviews, authors note, ships as PR
+  stacked on #6014.

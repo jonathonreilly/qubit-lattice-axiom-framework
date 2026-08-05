@@ -15,8 +15,8 @@
   ],
   "files": {
     "docs/THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "2939c2b04d55b0efc9c5c77544319443c8d0a35b",
-      "sha256": "e9921c10d626c608e55bba16751c0b65e5035648f813f7fb50650f38dda79ef4"
+      "git_blob": "82d4d23c2675ebe072f44fff599276e8e984d8cf",
+      "sha256": "4ca0987bb1f28e5256ad235f22af589a38abe58a65ef4479fbf29b35176dc86c"
     },
     "logs/runner-cache/frontier_cycle916_theta_independent_check_2026_07_28.txt": {
       "git_blob": "ac321bbdc8e2b26394ccc0e3c3439338bcc9d962",
@@ -46,6 +46,13 @@
   "headline": "THE THETA DICTIONARY: A-to-C exact and Jt-independent BUT convention-two-valued (mixed doublet 0.5 vs symmetry-broken 1e-9 \u2014 the pilot escaped the freeze's objection only via a symmetry-breaking eigensolver); A-to-B = NO CONVERSION without a five-premise bridge (the floor sits at 95.9% of B's own attainable range \u2014 the checker's sharpening); CHECK-05 is VOID as stated (the same-shape X is two-valued, 7.5e-4 vs 0.50, on OPPOSITE sides of the floor) \u2014 theta* ~ 0.50 survives as a correct A-value, only the comparison dies; four void-comparison sites censused; B RUNS ONLY FROM HISTORY (its in-tree API no longer exposes its imports). TIER 2: DECAY HOLDS (reframed as reproduction \u2014 the landed streams already covered Jt<=10; 1e-12 agreement; no revival; the persistence story closes); 915's theta-prediction PART-REFUTED (theta drifts UP to 0.72 with R_ind = 0 \u2014 the indicator decoupling extended)",
   "independence": "cross-context (independent four-axis definition classification \u2014 no materially different reading; offset reproduced at 5e-15 on MAX-canonical + shifted-Chebyshev + dual sector filters; tier-2 recomputed per lambda; three candidate bridges constructed incl. one the primary missed; 8/8 teeth)",
   "note": "docs/THETA_DICTIONARY_DECAY_HOLDS_CYCLE916_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "post_ship_edits": [
+    {
+      "authority": "supervisor post-ship precision edit (the T4 pattern); no claim strengthened beyond the Cycle-920 evidence",
+      "date": "2026-08-04",
+      "edit": "B2 premise corrected per the Cycle-920 deposition re-audit: the A-vs-B mismatch is a preparation difference, not a baseline-kind difference (baselines coincide bond-by-bond at 3.3e-16); grid-closure premise confirmed at source (true crossing theta=0.1405). Bracketed dated correction added to the A-to-B section; note pin refreshed."
+    }
+  ],
   "runtime_seconds": {
     "checker": 738.8,
     "primary": 873.8

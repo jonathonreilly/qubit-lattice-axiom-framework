@@ -74,7 +74,16 @@ evolution).
 floor itself; the doublet-convention fix B cannot supply; the
 comparator-independent normalization the landed note itself
 disclaims; grid closure — 0.20 is a swept point with the true
-crossing only bracketed). The checker's bridge attack constructed
+crossing only bracketed). [Correction 2026-08-04, Cycle 920: the
+baseline-kind premise (B2) is corrected — B's interacting-GS and
+trajectory-t0 baselines coincide bond-by-bond at 3.3e-16 on B's own
+system (both kicks are occupation-diagonal), so the A-vs-B mismatch
+is a PREPARATION difference (product quench vs local kick on an
+entangled ground state), not a baseline-kind difference. The bridge
+still needs five premises; B2's content changes. The grid-closure
+premise is meanwhile CONFIRMED at source: the true crossing is
+theta = 0.1405 (bisected), the 0.20 a grid label. See the Cycle-920
+note.] The checker's bridge attack constructed
 three candidate bridges giving three distinct answers — including
 the saturation-ratio bridge the primary missed, which SHARPENS the
 verdict: **0.20 sits at 95.9% of B's own attainable excess range**

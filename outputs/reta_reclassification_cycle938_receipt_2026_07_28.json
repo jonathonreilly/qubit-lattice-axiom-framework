@@ -1,0 +1,784 @@
+{
+ "A_pins": {
+  "gate_runner_pins": {
+   "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py": {
+    "git_blob": "c1a4d57fe4e41258d6988678aa996b1e7ea7d5f6",
+    "sha256": "7f0f9361a168da15c7d7e7ccea9268e4fa325afcdd570e6ef09c08be8884498b"
+   },
+   "scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py": {
+    "git_blob": "a9c2afe0d520ce44cdc7841088f53e9dfaf9760f",
+    "sha256": "2ce99b206d0112eca7b086148aa9c3e90ef46fe682b2633c665736a727a7d949"
+   },
+   "scripts/frontier_acphilambda_r_eta_value_face_registered_angle_2026_07_05.py": {
+    "git_blob": "a9c5587dd280afbcc6fe3a8ad9fc2a79467bb8ba",
+    "sha256": "142ec64ad8b6f943310d5c122879f11faf6f1cb55711ec725102828d17d8928f"
+   },
+   "scripts/frontier_record_preservation_conserves_within_sector_measure_2026_06_15.py": {
+    "git_blob": "80f0707f206e06c73677dc7ee163e8de0202904b",
+    "sha256": "650ca52480dd1744e7558742dbc6fedb02867fbe20aaa153a63c4e064b21109c"
+   }
+  },
+  "ledger_disclosure": {
+   "gitignored": true,
+   "path": "docs/audit/data/audit_ledger.json",
+   "symlink": true
+  },
+  "source_note_pins": {
+   "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md": {
+    "git_blob": "ed574c9b402328189b0e185ae17308c2dcb17166",
+    "sha256": "d95cdf68285242a8ab45dbdbde9adf23b20400c14ec7d991908424d51f0a1b62"
+   },
+   "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md": {
+    "git_blob": "92553eb71833303c5d5f0fa74af6511108a8e54b",
+    "sha256": "83f4ab11435b7f5224c1013768dc56c28dfb56f0ab3fdd5811f9b06251dde665"
+   },
+   "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md": {
+    "git_blob": "e2ca96d22c95e991b76d9ec999f12726398bc3df",
+    "sha256": "08c15bdc0c2fc2ccd750ca2752260ae02ec2521a70bc0307103c42058a63ed09"
+   },
+   "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md": {
+    "git_blob": "7488b3378bc715d8f3084312b255405051d9041c",
+    "sha256": "fb59f306588544e676e42224213fe7f866ed6028c911b83ef5629839bd6a944c"
+   },
+   "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md": {
+    "git_blob": "9a449956422a5687b5b1346f428c9e4e35489038",
+    "sha256": "4d742bcc68a1e7cdb154b366e671f576e9b719b3206445b97666c812a790e58c"
+   },
+   "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md": {
+    "git_blob": "8434def811cc0945fd44c69e7262460a5b1f4d98",
+    "sha256": "2174772091b7d137c10e8e5695099f7ff88ea370e25ea549c433b0252eb99ed0"
+   },
+   "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {
+    "git_blob": "1201ba9702ec8a0b81df0319a90a080549cfdd4a",
+    "sha256": "3c7a33c8abac8e70bdcf2e8b9db5d917c0b2cee6fc7cc0ec91c6d803bbb230d2"
+   },
+   "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+    "git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+    "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+   },
+   "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md": {
+    "git_blob": "6528269daa23db6fe483f4d9d02a521e8854c5ef",
+    "sha256": "b3e66feb4b331fd137c34c746d18a4d1fe3041905690ded243ebcd7b3df893db"
+   }
+  },
+  "vendored_pins": {
+   "outputs/route1_sweep_cycle928_receipt_2026_07_28.json": {
+    "git_blob": "61a52e3f8eb45918a8ad5cf3656200257dc0093d",
+    "sha256": "7986e732c865aa6b20ee334ec6c0220b37f41c29ff5a5256ee9ac0ac23ef2445"
+   },
+   "outputs/space_identification_cycle901_receipt_2026_07_28.json": {
+    "git_blob": "b51c0984951aa3c37260fe1172f5ea18325e207a",
+    "sha256": "629c4bb97bcec03671109647f2f464482b512bbce506d87773251fe9d3d1369a"
+   }
+  }
+ },
+ "B_restriction_gates": {
+  "aci_reduction_runner": "TOTAL: PASS=25 FAIL=0",
+  "angle_native_no_go": "TOTAL: PASS=128 FAIL=0",
+  "conservation_runner": "TOTAL: PASS=9 FAIL=0",
+  "value_face_prior_art_diagnosis": {
+   "cause": "the 2026-06-29 memo was reworded AFTER 2026-07-05; the value-face runner still pins the superseded sentence. The AC(i) runner (same memo, same section) pins the CURRENT wording and passes 25/25.",
+   "current_memo_wording_IS_PRESENT": true,
+   "failing_check": "S7.0",
+   "quote_the_0705_runner_demands_IS_PRESENT": false,
+   "science_impact": "none on this block: the drifted pin is a text provenance check, not a step in the delta functional, the counterfactual test, or the comparator.",
+   "second_sentence_q3_IS_PRESENT": true
+  },
+  "value_face_prior_art_runner": {
+   "note_publishes": "TOTAL: PASS=27 FAIL=0",
+   "observed": "TOTAL: PASS=26 FAIL=1",
+   "reproduces": false
+  }
+ },
+ "C_Q1_delta_functional_and_counterfactual": {
+  "comparator_LABELED": {
+   "Phi_PDG": 0.22222963148971578,
+   "abs_gap_to_2_over_9": 7.40926749356885e-06,
+   "derived_cell_2_over_9": 0.2222222222222222,
+   "gap_formatted": "7.409267493568850e-06",
+   "masses_MeV": {
+    "e": 0.51099895,
+    "mu": 105.6583755,
+    "tau": 1776.86
+   },
+   "note_published_Phi": "0.222229631489716",
+   "note_published_gap": "7.409267493568850e-06",
+   "reproduces": true,
+   "role": "labeled comparator; no derivation consumes it"
+  },
+  "conservation": {
+   "delta_drift_arbitrary_unitary_conjugation": 1.7812418207086012e-12,
+   "delta_drift_circulant_conjugation": 9.14379683081279e-13,
+   "delta_drift_non_circulant_form_perturbation": 0.6068869424004106,
+   "honest_mechanism": "spectrum invariance (stronger than, and not special to, record-preservation)",
+   "independent_block_weight_max_spread": 2.6645352591003757e-15,
+   "independent_control_max_spread": 0.8439358782976119,
+   "published_values_found_in_live_run": {
+    "D_S_within_doublet_max_delta": true,
+    "non_record_preserving_control_spread": true,
+    "raw_vs_finer_coherence": true
+   },
+   "retained_note_published": {
+    "D_S_within_doublet_max_delta": "1.11e-16",
+    "block_weight_max_spread_over_8_states": "6.44e-15",
+    "non_record_preserving_control_spread": "7.043e-01",
+    "observed_here_block_weight_spread": "8.10e-15",
+    "raw_vs_finer_coherence": [
+     "0.272",
+     "0.190"
+    ]
+   }
+  },
+  "counterfactual_exhibits": [
+   {
+    "B_gt_0": true,
+    "commutator_with_C": 0.0,
+    "commutator_with_S": 0.0,
+    "hermitian_residual": 0.0,
+    "law_admissible": true,
+    "registered_Phi": 0.0200000000000011,
+    "target_delta": 0.02
+   },
+   {
+    "B_gt_0": true,
+    "commutator_with_C": 0.0,
+    "commutator_with_S": 0.0,
+    "hermitian_residual": 0.0,
+    "law_admissible": true,
+    "registered_Phi": 0.049999999999998365,
+    "target_delta": 0.05
+   },
+   {
+    "B_gt_0": true,
+    "commutator_with_C": 0.0,
+    "commutator_with_S": 0.0,
+    "hermitian_residual": 0.0,
+    "law_admissible": true,
+    "registered_Phi": 0.22222222222222165,
+    "target_delta": 0.2222222222222222
+   },
+   {
+    "B_gt_0": true,
+    "commutator_with_C": 0.0,
+    "commutator_with_S": 0.0,
+    "hermitian_residual": 0.0,
+    "law_admissible": true,
+    "registered_Phi": 0.3000000000000002,
+    "target_delta": 0.3
+   },
+   {
+    "B_gt_0": true,
+    "commutator_with_C": 0.0,
+    "commutator_with_S": 0.0,
+    "hermitian_residual": 0.0,
+    "law_admissible": true,
+    "registered_Phi": 0.5000000000000006,
+    "target_delta": 0.5
+   },
+   {
+    "B_gt_0": true,
+    "commutator_with_C": 0.0,
+    "commutator_with_S": 0.0,
+    "hermitian_residual": 0.0,
+    "law_admissible": true,
+    "registered_Phi": 0.7999999999999983,
+    "target_delta": 0.8
+   },
+   {
+    "B_gt_0": true,
+    "commutator_with_C": 0.0,
+    "commutator_with_S": 0.0,
+    "hermitian_residual": 0.0,
+    "law_admissible": true,
+    "registered_Phi": 0.9971975511965967,
+    "target_delta": 0.9971975511965976
+   }
+  ],
+  "fold_ambiguity": {
+   "delta_values": [
+    0.19,
+    -0.19,
+    2.284395,
+    1.904395,
+    4.37879,
+    3.99879
+   ],
+   "preimages_per_multiset": 6
+  },
+  "quotes": {
+   "ACI_FUNCTIONAL": {
+    "chars": 90,
+    "file": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
+    "offset_in_normalized_text": 4885,
+    "present_verbatim": true
+   },
+   "ACI_GUARD_D": {
+    "chars": 126,
+    "file": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
+    "offset_in_normalized_text": 15152,
+    "present_verbatim": true
+   },
+   "ACI_NET": {
+    "chars": 77,
+    "file": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
+    "offset_in_normalized_text": 7981,
+    "present_verbatim": true
+   },
+   "ACI_SURVIVOR": {
+    "chars": 192,
+    "file": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
+    "offset_in_normalized_text": 6496,
+    "present_verbatim": true
+   },
+   "BRANNEN_DIAL": {
+    "chars": 66,
+    "file": "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "offset_in_normalized_text": 861,
+    "present_verbatim": true
+   },
+   "BRANNEN_FORM": {
+    "chars": 145,
+    "file": "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "offset_in_normalized_text": 689,
+    "present_verbatim": true
+   },
+   "BRANNEN_NOT_FORCED": {
+    "chars": 149,
+    "file": "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "offset_in_normalized_text": 2635,
+    "present_verbatim": true
+   },
+   "CONSERVE_COROLLARY": {
+    "chars": 157,
+    "file": "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "offset_in_normalized_text": 1790,
+    "present_verbatim": true
+   },
+   "CONSERVE_NOT_FORCED": {
+    "chars": 133,
+    "file": "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+    "offset_in_normalized_text": 3949,
+    "present_verbatim": true
+   },
+   "FIXED_LOCUS_EXCLUSION": {
+    "chars": 183,
+    "file": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "offset_in_normalized_text": 1231,
+    "present_verbatim": true
+   },
+   "FIXED_LOCUS_ROTATION": {
+    "chars": 120,
+    "file": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "offset_in_normalized_text": 628,
+    "present_verbatim": true
+   },
+   "FIXED_LOCUS_VALUE": {
+    "chars": 32,
+    "file": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "offset_in_normalized_text": 1138,
+    "present_verbatim": true
+   },
+   "HCLASS_HUNIT_SPLIT": {
+    "chars": 176,
+    "file": "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 1001,
+    "present_verbatim": true
+   },
+   "NOGO_BIN1": {
+    "chars": 253,
+    "file": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 3648,
+    "present_verbatim": true
+   },
+   "NOGO_BIN2": {
+    "chars": 107,
+    "file": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 3905,
+    "present_verbatim": true
+   },
+   "NOGO_BIN3": {
+    "chars": 167,
+    "file": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 4181,
+    "present_verbatim": true
+   },
+   "NOGO_COORDS": {
+    "chars": 98,
+    "file": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 1210,
+    "present_verbatim": true
+   },
+   "NOGO_LICENSE_FORM": {
+    "chars": 94,
+    "file": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 3486,
+    "present_verbatim": true
+   },
+   "NOGO_N8": {
+    "chars": 297,
+    "file": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 8904,
+    "present_verbatim": true
+   },
+   "NOGO_ROUTE4": {
+    "chars": 133,
+    "file": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 7011,
+    "present_verbatim": true
+   },
+   "OBLIGATION_CLOSURE": {
+    "chars": 178,
+    "file": "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
+    "offset_in_normalized_text": 771,
+    "present_verbatim": true
+   },
+   "OBLIGATION_NONCLAIM": {
+    "chars": 172,
+    "file": "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
+    "offset_in_normalized_text": 1764,
+    "present_verbatim": true
+   },
+   "OBLIGATION_TARGET": {
+    "chars": 226,
+    "file": "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
+    "offset_in_normalized_text": 305,
+    "present_verbatim": true
+   },
+   "PRIM_COUNTERFACTUAL_TEST": {
+    "chars": 116,
+    "file": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "offset_in_normalized_text": 1808,
+    "present_verbatim": true
+   },
+   "PRIM_LAWS_DO_NOT_PICK": {
+    "chars": 81,
+    "file": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "offset_in_normalized_text": 910,
+    "present_verbatim": true
+   },
+   "PRIM_NOTHING_MORE": {
+    "chars": 176,
+    "file": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "offset_in_normalized_text": 1051,
+    "present_verbatim": true
+   },
+   "PRIM_POINTWISE": {
+    "chars": 58,
+    "file": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "offset_in_normalized_text": 992,
+    "present_verbatim": true
+   },
+   "PRIM_REGISTER_ITEM4": {
+    "chars": 62,
+    "file": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "offset_in_normalized_text": 4504,
+    "present_verbatim": true
+   },
+   "STRETCH_ALPHA_FAMILY": {
+    "chars": 317,
+    "file": "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 4775,
+    "present_verbatim": true
+   },
+   "STRETCH_THEOREM": {
+    "chars": 64,
+    "file": "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+    "offset_in_normalized_text": 6369,
+    "present_verbatim": true
+   },
+   "VF_CLAIMED": {
+    "chars": 207,
+    "file": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+    "offset_in_normalized_text": 1094,
+    "present_verbatim": true
+   },
+   "VF_COMPARATOR": {
+    "chars": 99,
+    "file": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+    "offset_in_normalized_text": 5798,
+    "present_verbatim": true
+   },
+   "VF_EIGENVALUES": {
+    "chars": 52,
+    "file": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+    "offset_in_normalized_text": 2561,
+    "present_verbatim": true
+   },
+   "VF_INVERSION": {
+    "chars": 120,
+    "file": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+    "offset_in_normalized_text": 2822,
+    "present_verbatim": true
+   },
+   "VF_NET_DECOMPOSITION": {
+    "chars": 49,
+    "file": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+    "offset_in_normalized_text": 3425,
+    "present_verbatim": true
+   },
+   "VF_SIGNED_ROOT_CONVENTION": {
+    "chars": 133,
+    "file": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+    "offset_in_normalized_text": 5654,
+    "present_verbatim": true
+   },
+   "VF_SYMMETRIC_FUNCTIONS": {
+    "chars": 62,
+    "file": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+    "offset_in_normalized_text": 2709,
+    "present_verbatim": true
+   }
+  },
+  "round_trip": {
+   "draws": 500,
+   "max_abs_error": 2.1092308455372688e-11,
+   "max_abs_error_shuffled": 1.4741576015442348e-11,
+   "tol": 1e-10
+  },
+  "sign_convention_scan": [
+   {
+    "Phi": 0.22222963148971578,
+    "gap_to_2_over_9": 7.40926749356885e-06,
+    "signs": [
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "Phi": 0.875089988582269,
+    "gap_to_2_over_9": 0.6528677663600468,
+    "signs": [
+     1,
+     1,
+     -1
+    ]
+   },
+   {
+    "Phi": 0.20013899068357616,
+    "gap_to_2_over_9": 0.022083231538646053,
+    "signs": [
+     1,
+     -1,
+     1
+    ]
+   },
+   {
+    "Phi": 0.7977338047265363,
+    "gap_to_2_over_9": 0.5755115825043141,
+    "signs": [
+     1,
+     -1,
+     -1
+    ]
+   },
+   {
+    "Phi": 0.24946374647006125,
+    "gap_to_2_over_9": 0.027241524247839044,
+    "signs": [
+     -1,
+     1,
+     1
+    ]
+   },
+   {
+    "Phi": 0.8470585605130215,
+    "gap_to_2_over_9": 0.6248363382907993,
+    "signs": [
+     -1,
+     1,
+     -1
+    ]
+   },
+   {
+    "Phi": 0.1721075626143286,
+    "gap_to_2_over_9": 0.0501146596078936,
+    "signs": [
+     -1,
+     -1,
+     1
+    ]
+   },
+   {
+    "Phi": 0.8249679197068819,
+    "gap_to_2_over_9": 0.6027456974846597,
+    "signs": [
+     -1,
+     -1,
+     -1
+    ]
+   }
+  ],
+  "symbolic_derivation": {
+   "e1": "3*a",
+   "e2": "3*a**2 - 3*B**2",
+   "e3": "a**3 - 3*a*B**2 + 2*B**3*cos(3*delta)",
+   "matches_note_equations": true
+  }
+ },
+ "D_Q2_slot_and_no_conversion": {
+  "no_go_compatibility": {
+   "bin_subject": "candidate derivation routes on the angle-native surface",
+   "bins": [
+    "misses the target",
+    "cannot pin a nonzero member",
+    "restates the missing license"
+   ],
+   "no_go_superseded": false,
+   "reading": "re-slotting, not refutation",
+   "registration_is_binned": false
+  },
+  "no_smuggling": {
+   "identities": [
+    {
+     "id": "I1",
+     "lhs": "L3(1,2)",
+     "lhs_type": "rational_fixed_locus",
+     "relation": "=",
+     "rhs": "2/9",
+     "rhs_type": "rational_fixed_locus"
+    },
+    {
+     "id": "I2",
+     "lhs": "S_sum",
+     "lhs_type": "rational_fixed_locus",
+     "relation": "=",
+     "rhs": "3*L = 2/3",
+     "rhs_type": "rational_fixed_locus"
+    },
+    {
+     "id": "I3",
+     "lhs": "cos argument summand k",
+     "lhs_type": "two_pi_multiple",
+     "relation": "=",
+     "rhs": "2*pi*k/3",
+     "rhs_type": "two_pi_multiple"
+    },
+    {
+     "id": "I4",
+     "lhs": "Phi (folded dial coordinate)",
+     "lhs_type": "dial_coordinate",
+     "relation": "=",
+     "rhs": "(1/3) arccos(cos 3 delta)",
+     "rhs_type": "dial_coordinate"
+    },
+    {
+     "id": "I5",
+     "lhs": "2*pi*L",
+     "lhs_type": "two_pi_multiple",
+     "relation": "!=",
+     "rhs": "2/9",
+     "rhs_type": "rational_fixed_locus"
+    },
+    {
+     "id": "I6",
+     "lhs": "2*pi*S_sum",
+     "lhs_type": "two_pi_multiple",
+     "relation": "!=",
+     "rhs": "2/3",
+     "rhs_type": "rational_fixed_locus"
+    }
+   ],
+   "offenders": [],
+   "pi_transcendence_fact": "2/9 = 2*pi*q has no rational q"
+  },
+  "slot_decomposition": {
+   "argument": "delta + 2*pi*k/3",
+   "derived_summand": "2*pi*k/3  <-- the C3 rotation angle, separately derived",
+   "free_summand": "delta  <-- THE SLOT (retained: 'the COUPLINGS are not forced')",
+   "k_summand_values": [
+    "0",
+    "2*pi/3",
+    "4*pi/3"
+   ]
+  },
+  "source_scan": [
+   {
+    "asserts_equality": false,
+    "line": 885,
+    "text": "miss1 = abs(2 * math.pi * (2 / 9) - 2 / 9) > 1e-9"
+   },
+   {
+    "asserts_equality": false,
+    "line": 886,
+    "text": "miss2 = abs(2 * math.pi * (2 / 3) - 2 / 3) > 1e-9"
+   }
+  ]
+ },
+ "E_Q3_decomposition_firewall_dissolution": {
+  "both_readings": [
+   {
+    "claim": "if the value chain's only consumer of R-eta was the VALUE of delta, then once the value arrives by registration nothing consumes the license and the obligation is idle",
+    "name": "DISSOLUTION reading",
+    "supported": false,
+    "test": "does the obligation's own text quantify over a value?",
+    "verdict": "FAILS ON BYTES -- the obligation's target is 'the physical charged-lepton readout IS the fixed-locus density class h, identity-read in h-units as the eta angle'. That is a statement about the readout MAP, not about a value."
+   },
+   {
+    "claim": "the obligation is a type/class assignment on the readout map; registration is silent about maps, so the obligation survives the value-face reclassification untouched",
+    "name": "SURVIVAL reading",
+    "supported": true,
+    "test": "same bytes + the alpha-family witness + N8",
+    "verdict": "SUPPORTED -- and it is what the landed 07-05 note already concluded by naming (ii-exactness) as the survivor"
+   }
+  ],
+  "difference_list_vs_ACi_template": [
+   {
+    "AC(i) / r": "r has a RETAINED lever (Q = 1/3 + (2/3) r) and a RETAINED endpoint biconditional (Q = 2/3 <=> r = 1/2)",
+    "AC(ii) / delta": "delta has NO retained lever/biconditional pair. Its form note (Brannen circulant) and its conservation note are both 'source note awaiting independent audit handling' -- NOT retained.",
+    "axis": "retained support pair",
+    "materiality": "HIGH -- the AC(i) value chain rests on retained anchors; the delta chain's support is weaker-graded"
+   },
+   {
+    "AC(i) / r": "r = |b|^2/a^2 is a RATIONAL function of the multiset -- single-valued, no folding",
+    "AC(ii) / delta": "only cos(3 delta) is a function of the multiset; delta has 6 preimages per multiset (C3b). The functional is the FOLDED magnitude Phi in [0, pi/3], not delta.",
+    "axis": "functional single-valuedness",
+    "materiality": "HIGH -- the registration is of a folded quotient, so it carries the fold on its sleeve"
+   },
+   {
+    "AC(i) / r": "the AC(i) note discloses a doublet-convention two-valuedness and a signed-root honesty boundary",
+    "AC(ii) / delta": "the sign convention is LOAD-BEARING AT THE EXACTNESS SCALE: of 8 sign assignments only the all-positive one lands within 7.4e-6 of 2/9; the next lands 2.2e-2 away (C7)",
+    "axis": "convention dependence",
+    "materiality": "HIGH -- the exactness claim is convention-conditional"
+   },
+   {
+    "AC(i) / r": "the MEASURE-SIDE grain binary (which grain the matter action's statistics implements)",
+    "AC(ii) / delta": "the landed 07-05 note names the DELTA-SIDE EXACTNESS residual plus the physical carrier identification -- NOT the measure-side grain binary",
+    "axis": "the survivor",
+    "materiality": "HIGH -- the exercise expected the realization face to 'join' AC(i)'s measure-side frontier; the landed bytes say otherwise. It is a DIFFERENT survivor."
+   },
+   {
+    "AC(i) / r": "sub-admission (i) was rule-shaped: 'which occupancy rule' -- and the ontology has no rule slot, so the demand was pointed at state content",
+    "AC(ii) / delta": "the R-eta obligation is TYPE-shaped: 'the readout IS the density class h, identity-read in h-units'. A type assignment on the law-side readout map is not state content, so the same move does NOT reach it.",
+    "axis": "what the open obligation demands",
+    "materiality": "DECISIVE -- this is why the reclassification dissolves (i)'s demand but not (ii)'s"
+   },
+   {
+    "AC(i) / r": "the 2026-06-11 reduction note IS the template",
+    "AC(ii) / delta": "the value-face move for delta ALREADY LANDED on 2026-07-05 (VALUE_FACE note). This block is a verification + extension, not a discovery.",
+    "axis": "prior art",
+    "materiality": "HIGH -- the exercise finding is substantially prior art"
+   }
+  ],
+  "dissolution_test": {
+   "N8_agrees": "the residual is not the value `2/9`; it is the identification that licenses the fixed-locus rational as the angle",
+   "dissolves": false,
+   "obligation_demands": {
+    "h-class: that the PHYSICAL charged-lepton readout IS the fixed-locus density class h": false,
+    "h-unit: that the density is IDENTITY-READ in h-units as the eta angle": false,
+    "no extra clock-rate, transport, or normalization factor": false
+   },
+   "registration_supplies": {
+    "a VALUE of the folded dial functional Phi at the realized state": true,
+    "persistence of that value under record-preserving dynamics": true,
+    "that the value is state data, not derivation output": true
+   },
+   "witness": "the stretch no-go's alpha family: 5 coefficients satisfy every current constraint and give different readouts; only alpha = 2/27 reproduces 2/9, and nothing forces it"
+  },
+  "exactness_residual_split": {
+   "supported_half": {
+    "caveat": "CONVENTION-CONDITIONAL: true under the all-positive signed-root/cone convention only (C7)",
+    "figure": "7.409267493568850e-06",
+    "measure_free": true,
+    "statement": "the registered folded delta lies within the published comparator gap of the derived cell 2/9"
+   },
+   "surprise_half": {
+    "statable": false,
+    "statement": "that the registered value sits SO CLOSE to the derived cell is 'surprising'",
+    "why": "'surprising' needs a measure/typicality claim over law-admissible states, and the realized-state primitive forbids exactly that: 'no averaging over alternatives, no typical or generic claim'"
+   }
+  },
+  "firewall": {
+   "claims_scanned": 7,
+   "exhibited_delta_count": 7,
+   "offenders": []
+  },
+  "prior_art": {
+   "aci_decomposition": "(i) = (i-value) + (i-realization)",
+   "aci_survivor": "measure-side grain binary (which grain the matter action's statistics implements)",
+   "landed_decomposition": "sub-admission (ii) = (ii-value) + (ii-exactness)",
+   "note": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+   "reta_survivor": "the delta-side EXACTNESS residual + the physical carrier identification",
+   "survivors_differ": true
+  },
+  "route4_price": {
+   "does_it_dissolve": false,
+   "registry_action": "NONE. The obligation's registry text is not edited by this block. No reclassification is adopted; adoption is registry/owner territory.",
+   "route": "Approved-primitive route. Approve a narrow readout-selection primitive or premise explicitly. That is governance, not derivation.",
+   "therefore": "route 4's price is UNCHANGED by this block. The new-primitive demand is NOT rendered unnecessary, because the h-class/h-unit license is a law-side type assignment that the value-face reclassification does not reach.",
+   "would_become_unnecessary_if": "the license dissolved as law content"
+  }
+ },
+ "F_teeth": {
+  "all_fired": true,
+  "count": 10,
+  "teeth": [
+   {
+    "detail": "planted unique-delta selector rejected by firewall",
+    "fired": true,
+    "tooth": "T1"
+   },
+   {
+    "detail": "planted 2/9 == 2*pi*q conversion rejected",
+    "fired": true,
+    "tooth": "T2"
+   },
+   {
+    "detail": "one-phrase edit of the primitive's test is not found",
+    "fired": true,
+    "tooth": "T3"
+   },
+   {
+    "detail": "perturbing one root moves the recovered Phi",
+    "fired": true,
+    "tooth": "T4"
+   },
+   {
+    "detail": "literal gate string",
+    "fired": true,
+    "tooth": "T5"
+   },
+   {
+    "detail": "admissibility constraints are enforced, not assumed",
+    "fired": true,
+    "tooth": "T6"
+   },
+   {
+    "detail": "both conservation controls move their observable",
+    "fired": true,
+    "tooth": "T7"
+   },
+   {
+    "detail": "the 8 sign assignments are genuinely separated",
+    "fired": true,
+    "tooth": "T8"
+   },
+   {
+    "detail": "B=0 rejected",
+    "fired": true,
+    "tooth": "T9"
+   },
+   {
+    "detail": "the test can return dissolution; the bytes decide",
+    "fired": true,
+    "tooth": "T10"
+   }
+  ]
+ },
+ "HEADLINE": "NO -- it does not. The VALUE face of delta is registered data (verified; and already landed 2026-07-05), but the R-eta obligation is a TYPE assignment on the law-side readout map, which registration does not reach. Route 4's price is unchanged.",
+ "VERDICT": "PASS",
+ "adopts": "nothing",
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockAC3-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "claim_type": "bounded_theorem",
+ "cycle": 938,
+ "runtime_seconds": 1.79,
+ "science_digest": "964b619175e9a325be5b181dd56ad9c028115018aaf8a0759dfbcd28f834d637",
+ "target": "Does the AC(i) realized-state reclassification dissolve the R-eta (h-class/h-unit) obligation?",
+ "totals": {
+  "FAIL": 0,
+  "PASS": 48
+ }
+}

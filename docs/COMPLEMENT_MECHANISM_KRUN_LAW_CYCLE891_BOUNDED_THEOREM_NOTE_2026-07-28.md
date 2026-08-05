@@ -81,6 +81,24 @@ out of 3,711 — statistically marginal, real, horizon-closed, fully
 anatomized. The value-level holdout is exact; the carrier-level
 holdout is 3/4 at B=7; both facts are the result.
 
+[Qualification 2026-08-05, Cycle 922: the VALUE-level holdout
+stands untouched; the CARRIER-level labels need clock-local
+reading. This note's classifier is value-based with entry-gap
+priority, so wherever a bank's entry gap coincides with its own
+edge complement the ENTRY_GAP label is stolen: clock-locally the
+B=6 P=24 carrier has ZERO bank-owned entry-gap episodes (it is the
+same-edge complement of edge 2), B=8 P=32 likewise, and B=7 P=24
+splits (20 true entry-gap episodes; the rest complement). Also:
+the entry-gap census here was restricted to the two RELAY_SWAP
+rows per edge — Cycle 922's RC-1 derives that the entry-gap value
+is realised by exactly THREE ordered pairs, with the
+handoff-carrying pair f(b)->h_r(b-1) the dominant carrier at
+several B. The P=32 miss itself is predicted by the short-arc
+condition 2P < N (fitted-then-sealed grade), and the 40/48
+residuals are ordinary same-edge complements readable only
+stretch-locally (2P >= N) — not a fourth shape. See the Cycle-922
+note.]
+
 ## The k-run law (Q2, the named open question closed)
 
 For a word with ANY dirty-run structure W:

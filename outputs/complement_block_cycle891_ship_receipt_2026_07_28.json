@@ -15,8 +15,8 @@
   ],
   "files": {
     "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "235965affc47ce7745327ef194e7c0ae31e6a6c8",
-      "sha256": "5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c"
+      "git_blob": "3bc503adc7df7d459decd32679b0176b10aec46b",
+      "sha256": "a6ba4e8e71885af22d666f77d4934f98207cd091dc166596507a1fed5d16d376"
     },
     "logs/runner-cache/frontier_cycle891_complement_independent_check_2026_07_28.txt": {
       "git_blob": "7f2f15677a906c638d526389318568dec33360f8",
@@ -46,6 +46,13 @@
   "headline": "Both 889 open questions CLOSED: the complement mechanism derived (transport = the four rows of an incident edge incl. HANDOFF; three shapes; DELTA is an EDGE property, its complement a BANK property b=B-2-e) with a SEALED B=4/5-derive B=6/7-holdout (B=6 exact; B=7 value-level 4/4, carrier-level 3/4 \u2014 the P=32 carrier miss reported; 40/48 residuals 2 episodes each, anatomized); the k-run law derived exactly (I_max = max cyclic gap of W sym-diff (W-P) minus 1, + finite form): 6,148 cells zero mismatches, 889's law recovered as the k=2 sub-case, all four B=7 anomalies resolved as stretch-local readings with the honest boundary stated (which word a stretch carries is dynamical, not derived)",
   "independence": "cross-context and algorithmic (interval-algebra detector, bitmask never formed; independent program reconstruction; second tick generator; holdout audited from the rule's stated text alone; 7/7 teeth)",
   "note": "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "post_ship_edits": [
+    {
+      "authority": "supervisor post-ship precision edit (the standing pattern); no claim strengthened",
+      "date": "2026-08-05",
+      "edit": "Cycle-922 qualification: carrier-level labels at value-coincidence cells need clock-local reading (B=6 P=24 and B=8 P=32 are same-edge complements; B=7 P=24 splits); the entry-gap census was swap-row-only (RC-1: three pairs, handoff dominant); the P=32 miss predicted by the short-arc condition; the 40/48 residuals dissolve. Value-level holdout untouched. Bracketed dated qualification added; note pin refreshed."
+    }
+  ],
   "runtime_seconds": {
     "checker": 577,
     "primary": 299

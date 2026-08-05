@@ -1,0 +1,451 @@
+{
+ "VERDICT": "PASS",
+ "VERDICT_SUMMARY": {
+  "core_verdict": "the R-eta obligation does NOT dissolve under the realized-state reclassification",
+  "material_findings": [
+   "delta is NOT a functional of the registered multiset (6 preimages); only the folded Phi in [0, pi/3] is",
+   "the exactness is CONVENTION-CONDITIONAL on the all-positive signed-root choice (next-nearest sign assignment is ~3000x worse)",
+   "the slot (generation 3-space) and the derived cell (Z^3 normal plane) live on DIFFERENT supplied spaces; their identification is the open carrier question",
+   "the primary's firewall list is not exhaustive over its own checks (an independent payload-wide scan was run and is clean)",
+   "the landed 07-05 prior-art runner no longer reproduces its published total (stale memo pin); text-provenance only"
+  ],
+  "primary_core_verdict_survives": true,
+  "refutations_that_hold": [
+   "ATTACK-V-ORIENTATION",
+   "ATTACK-V-SPACE",
+   "ATTACK-I-FOLD",
+   "ATTACK-I-SIGN",
+   "ATTACK-III-HYGIENE",
+   "ATTACK-IV-FIREWALL",
+   "ATTACK-VII-UNITFACE"
+  ]
+ },
+ "adopts": "nothing",
+ "attack_i_functional": {
+  "comparator_independent": 0.22222963148971567,
+  "delta_is_a_functional_of_the_multiset": false,
+  "fold_group_order": 6,
+  "folded_Phi_is_a_functional": true,
+  "sign_convention_rows": [
+   {
+    "Phi": 0.22222963148971567,
+    "gap": 7.409267493457827e-06,
+    "signs": [
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "Phi": 0.8750899885822692,
+    "gap": 0.652867766360047,
+    "signs": [
+     1,
+     1,
+     -1
+    ]
+   },
+   {
+    "Phi": 0.2001389906835761,
+    "gap": 0.02208323153864611,
+    "signs": [
+     1,
+     -1,
+     1
+    ]
+   },
+   {
+    "Phi": 0.7977338047265363,
+    "gap": 0.5755115825043141,
+    "signs": [
+     1,
+     -1,
+     -1
+    ]
+   },
+   {
+    "Phi": 0.24946374647006125,
+    "gap": 0.027241524247839044,
+    "signs": [
+     -1,
+     1,
+     1
+    ]
+   },
+   {
+    "Phi": 0.8470585605130216,
+    "gap": 0.6248363382907994,
+    "signs": [
+     -1,
+     1,
+     -1
+    ]
+   },
+   {
+    "Phi": 0.17210756261432852,
+    "gap": 0.050114659607893686,
+    "signs": [
+     -1,
+     -1,
+     1
+    ]
+   },
+   {
+    "Phi": 0.824967919706882,
+    "gap": 0.6027456974846598,
+    "signs": [
+     -1,
+     -1,
+     -1
+    ]
+   }
+  ]
+ },
+ "attack_ii_counterfactual": {
+  "rebuilt": [
+   {
+    "B": 0.8999999999999998,
+    "Phi": 0.019999999999997395,
+    "cC": 0.0,
+    "cS": 0.0,
+    "delta": 0.02,
+    "herm": 0.0,
+    "matches_primary": true
+   },
+   {
+    "B": 0.8999999999999999,
+    "Phi": 0.050000000000001085,
+    "cC": 0.0,
+    "cS": 0.0,
+    "delta": 0.05,
+    "herm": 0.0,
+    "matches_primary": true
+   },
+   {
+    "B": 0.9000000000000002,
+    "Phi": 0.22222222222222165,
+    "cC": 0.0,
+    "cS": 0.0,
+    "delta": 0.2222222222222222,
+    "herm": 0.0,
+    "matches_primary": true
+   },
+   {
+    "B": 0.8999999999999999,
+    "Phi": 0.3000000000000002,
+    "cC": 0.0,
+    "cS": 0.0,
+    "delta": 0.3,
+    "herm": 0.0,
+    "matches_primary": true
+   },
+   {
+    "B": 0.8999999999999999,
+    "Phi": 0.5000000000000006,
+    "cC": 0.0,
+    "cS": 0.0,
+    "delta": 0.5,
+    "herm": 0.0,
+    "matches_primary": true
+   },
+   {
+    "B": 0.8999999999999999,
+    "Phi": 0.8000000000000012,
+    "cC": 0.0,
+    "cS": 0.0,
+    "delta": 0.8,
+    "herm": 0.0,
+    "matches_primary": true
+   },
+   {
+    "B": 0.8999999999999999,
+    "Phi": 0.9971975511966029,
+    "cC": 0.0,
+    "cS": 0.0,
+    "delta": 0.9971975511965976,
+    "herm": 0.0,
+    "matches_primary": true
+   }
+  ],
+  "valid": true
+ },
+ "attack_iii_no_go": {
+  "bin_freedom_is_conditional_on_no_identification_claim": true,
+  "bins_bin_derivation_routes": true,
+  "registration_binned": false,
+  "registration_outside_the_no_go_proof_hygiene_class": true
+ },
+ "attack_iv_firewall": {
+  "independent_payload_scan_clean": true,
+  "multi_lane_dial_survives": true,
+  "primary_firewall_coverage": "7/48",
+  "primary_firewall_is_exhaustive": false
+ },
+ "attack_v_slot": {
+  "same_matrix": true,
+  "same_space": false,
+  "slot_decomposition_verified": true,
+  "space_gap_is_the_open_carrier_question": true
+ },
+ "attack_vi_dissolution": {
+  "steelman": {
+   "argument": "If delta is registered state data, there is no 'readout map' left to derive -- the state simply HAS a delta, so the obligation asks for something that no longer exists.",
+   "byte_support": true,
+   "survives": false,
+   "why_it_fails": "The obligation is not about the dial coordinate of the generation-space circulant. It is about the PHYSICAL charged-lepton readout being the fixed-locus density class of the Z^3 lattice C3 cycle, identity-read in h-units. Registration hands you a number in the generation dial (V3: a DIFFERENT space); it does not hand you the identification of that number with the lattice fixed-locus density, nor the unit identity. Both remain law-side type assignments."
+  },
+  "verdict_survives": true
+ },
+ "attack_x_conversion": {
+  "conversion_asserted": false,
+  "pi_irrationality_used": true
+ },
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockAC3-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "cycle": 938,
+ "primary_receipt_sha256": "0ff8c7e4fc6e1bf145f7cd931ccd1dd1e82a605ec2bf2d9ed721d30504a50c01",
+ "primary_script_sha256": "d39974d731b671e4bb259c7e485645525012701cdc20d32080b86a036591894c",
+ "refutations": [
+  {
+   "attack": "ATTACK-V-ORIENTATION",
+   "evidence": {
+    "permutation": [
+     0,
+     2,
+     1
+    ]
+   },
+   "refutation_holds": true,
+   "statement": "A third convention layer, found only by rederiving: the retained argument `delta + 2 pi k/3` holds under one generator orientation; the forward-shift DFT derivation gives `delta - 2 pi k/3`. The eigenvalue MULTISET is invariant, so no registrable content changes, and the folded Phi is unaffected (cos is even). But it means the SIGN of delta is orientation convention, not physics -- consistent with the fixed-locus note's own 'Reversing the generator exchanges P and P^2, so the value is independent of orientation convention.'"
+  },
+  {
+   "attack": "ATTACK-V-SPACE",
+   "evidence": {
+    "carrier_identification_open_clause_present": true,
+    "fixed_locus_exclusion_clause_present": true
+   },
+   "refutation_holds": true,
+   "statement": "The 'slot exists in retained theory, so filling it is not bridge-building between foreign objects' framing is TOO STRONG. The slot (delta, generation 3-space) and the derived cell (2/9, normal plane of a Z^3 lattice rotation) are NOT established to live on the same space; the retained notes explicitly exclude that identification and the 07-05 note names it as open. The slot is native, but the CELL is not native to the slot's space."
+  },
+  {
+   "attack": "ATTACK-I-FOLD",
+   "evidence": {
+    "exact_symbolic": true,
+    "group_order": 6
+   },
+   "refutation_holds": true,
+   "statement": "'delta is an already-defined state functional of the registered masses' is FALSE AS STATED. delta is not a functional of the multiset at all -- it has 6 preimages. Only the folded magnitude Phi in [0, pi/3] is a functional. The landed 07-05 note is correct here (it defines Phi as the folded quantity); the loose phrasing 'the delta functional' is what fails."
+  },
+  {
+   "attack": "ATTACK-I-SIGN",
+   "evidence": {
+    "best": 7.409267493457827e-06,
+    "rows": [
+     {
+      "Phi": 0.22222963148971567,
+      "gap": 7.409267493457827e-06,
+      "signs": [
+       1,
+       1,
+       1
+      ]
+     },
+     {
+      "Phi": 0.8750899885822692,
+      "gap": 0.652867766360047,
+      "signs": [
+       1,
+       1,
+       -1
+      ]
+     },
+     {
+      "Phi": 0.2001389906835761,
+      "gap": 0.02208323153864611,
+      "signs": [
+       1,
+       -1,
+       1
+      ]
+     },
+     {
+      "Phi": 0.7977338047265363,
+      "gap": 0.5755115825043141,
+      "signs": [
+       1,
+       -1,
+       -1
+      ]
+     },
+     {
+      "Phi": 0.24946374647006125,
+      "gap": 0.027241524247839044,
+      "signs": [
+       -1,
+       1,
+       1
+      ]
+     },
+     {
+      "Phi": 0.8470585605130216,
+      "gap": 0.6248363382907994,
+      "signs": [
+       -1,
+       1,
+       -1
+      ]
+     },
+     {
+      "Phi": 0.17210756261432852,
+      "gap": 0.050114659607893686,
+      "signs": [
+       -1,
+       -1,
+       1
+      ]
+     },
+     {
+      "Phi": 0.824967919706882,
+      "gap": 0.6027456974846598,
+      "signs": [
+       -1,
+       -1,
+       -1
+      ]
+     }
+    ],
+    "second": 0.02208323153864611
+   },
+   "refutation_holds": true,
+   "statement": "The exactness is CONVENTION-CONDITIONAL. The registered masses are positive numbers; the functional consumes SIGNED roots, and the masses do not fix the signs. Of the 8 sign assignments exactly one (all-positive, the charged-lepton cone convention) lands within 7.4e-6 of the derived cell; the next-nearest misses by ~2.2e-2, a factor of ~3000 worse. So the headline 'the registered value sits on the derived cell' is a statement about masses PLUS a sign convention, and the convention is doing load-bearing work. This is the 916 dictionary pattern: the registration carries the convention on its sleeve."
+  },
+  {
+   "attack": "ATTACK-II",
+   "evidence": {
+    "all_valid": true,
+    "rebuilt_independently": 7
+   },
+   "refutation_holds": false,
+   "statement": "The counterfactual test is VALID. The exhibits are genuinely law-admissible (Hermitian, [H,C]=0, [H,S]=0, B>0), they differ ONLY in delta (a and B held fixed), and they register distinct Phi. The primitive's test is met on its own terms. No refutation."
+  },
+  {
+   "attack": "ATTACK-III-HYGIENE",
+   "evidence": {
+    "N3_present": true
+   },
+   "refutation_holds": true,
+   "statement": "A partial refutation of the compatibility framing: the no-go's own N3 hygiene clause states its proof 'imports no comparator, no fitted value, no state selection'. The registration route imports ALL THREE (a labeled comparator, registered mass values, and state data). That is not a contradiction -- the notes have different scopes -- but it means the registration route does NOT sit inside the no-go's proof hygiene class, so 'the no-go does not bin it' must not be read as 'the no-go endorses it'."
+  },
+  {
+   "attack": "ATTACK-IV-FIREWALL",
+   "evidence": {
+    "coverage": "7/48"
+   },
+   "refutation_holds": true,
+   "statement": "The primary's firewall_scan is SELF-CERTIFYING bookkeeping, not an exhaustive audit: it scans a hand-authored list of 7 claims with hand-set booleans, while the runner executes 48 checks. It can only catch what its author already labelled. It is a real gate against the ONE failure mode it models (a planted unique-delta selector, which it does catch), but it is not evidence that no check outputs a unique delta."
+  },
+  {
+   "attack": "ATTACK-VI-DISSOLUTION",
+   "evidence": {
+    "steelman_fails": true
+   },
+   "refutation_holds": false,
+   "statement": "The primary's verdict (the obligation does NOT dissolve) SURVIVES adversarial attack, and the independent space-gap finding (V3) makes it STRONGER than the primary states: not only is the obligation type-shaped rather than value-shaped, the registered value does not even live on the space where the derived cell is defined."
+  },
+  {
+   "attack": "ATTACK-VII-UNITFACE",
+   "evidence": {
+    "S4_present": true,
+    "number_to_number": true
+   },
+   "refutation_holds": true,
+   "statement": "The landed 07-05 note's S4 'unit-face dissolution' is arguably the TYPE GAP restated rather than dissolved. It dissolves the unit face by declaring both sides dimensionless pure numbers and comparing number-to-number. But the h-unit obligation demands precisely a DERIVATION that the density is identity-read as the angle -- i.e. that the two dimensionless numbers are the SAME quantity, not merely both dimensionless. Cycle 928 independently reached the same wall ('the TYPE GAP is the new wall'). So S4 does not reach h-unit, which is consistent with -- and reinforces -- the non-dissolution verdict."
+  }
+ ],
+ "refutations_that_hold": 7,
+ "role": "independent checker, spec'd to refute",
+ "runtime_seconds": 0.75,
+ "science_digest": "9c4cf982f812e80fe6e09f1ab40e79e7501f1f2a6d4eac1196ea5003d38d1d7d",
+ "teeth": {
+  "all_fired": true,
+  "count": 14,
+  "teeth": [
+   {
+    "detail": "slot decomposition survives independent derivation (multiset); orientation convention disclosed",
+    "fired": true,
+    "tooth": "V1"
+   },
+   {
+    "detail": "space gap between slot and cell established",
+    "fired": true,
+    "tooth": "V3"
+   },
+   {
+    "detail": "6-fold preimage established exactly",
+    "fired": true,
+    "tooth": "I1"
+   },
+   {
+    "detail": "sign convention load-bearing, independently",
+    "fired": true,
+    "tooth": "I2"
+   },
+   {
+    "detail": "comparator reproduced by an independent path",
+    "fired": true,
+    "tooth": "I4"
+   },
+   {
+    "detail": "exhibits independently rebuilt and validated",
+    "fired": true,
+    "tooth": "II1"
+   },
+   {
+    "detail": "constraint set is not vacuous",
+    "fired": true,
+    "tooth": "II2"
+   },
+   {
+    "detail": "no-go clauses byte-verified independently",
+    "fired": true,
+    "tooth": "III1"
+   },
+   {
+    "detail": "independent payload-wide firewall clean, scanner not blind",
+    "fired": true,
+    "tooth": "IV2"
+   },
+   {
+    "detail": "alpha family exact-rational recomputation",
+    "fired": true,
+    "tooth": "VI2"
+   },
+   {
+    "detail": "prior art byte-verified",
+    "fired": true,
+    "tooth": "VII1"
+   },
+   {
+    "detail": "PDG confined to labeled sections",
+    "fired": true,
+    "tooth": "VIII1"
+   },
+   {
+    "detail": "stale memo pin independently confirmed",
+    "fired": true,
+    "tooth": "IX2"
+   },
+   {
+    "detail": "no-conversion scan clean (context-classified), scanner not blind",
+    "fired": true,
+    "tooth": "X2"
+   }
+  ]
+ },
+ "totals": {
+  "FAIL": 0,
+  "PASS": 26
+ }
+}

@@ -1,0 +1,57 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the spec's premise (the registry pointer cashing the bridge) declared falsifiable and FALSIFIED by the primitive's own text; both type readings run and agreeing",
+  "block": "toe-time-blockG28-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 0.58s; 8/8; four pro-supply readings mounted and killed on mechanical survival tests; overreach hunt count 0 (the five stronger obligations untouched)",
+    "primary": "exit 0, 0.54s; 14/14 certificates; 871 restriction at total deviation 0 (cache bytes); 10 teeth; 0 wall-clock leaks (13 patterns scanned)"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 G-family PR: a scope no-go that corrects an owner-level reading with the primitive's own bytes, establishes the general cashing rule, pins the landed convention as an exact gauge step, and re-characterizes the TOE map's remaining scalar in its true currency; nothing corollary",
+  "cycles": [
+    935
+  ],
+  "files": {
+    "docs/BRIDGE_CASHING_SCOPE_NOGO_CYCLE935_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "dbb0e3557a7f24767087149fa4438986d556b83b",
+      "sha256": "62ab94d74a98272a18bd345e76c29c32f23581f1c51334a604947808b92b8041"
+    },
+    "logs/runner-cache/frontier_cycle935_bridge_cashed_2026_07_28.txt": {
+      "git_blob": "954ff92990c5b534aea0d511b420415b5ec54204",
+      "sha256": "bb12461009158c2ef9702c6535926bb1f13a9ce7562d5dc1dce3df7b41eec092"
+    },
+    "logs/runner-cache/frontier_cycle935_bridge_cashed_independent_check_2026_07_28.txt": {
+      "git_blob": "1a10fc131515da9a7a715489946fec8b9cde9bca",
+      "sha256": "2ca8e18f464b76accc96d3322c7f9d2ad5ef6f1d2baf558a1319ed4e7ea23fbc"
+    },
+    "outputs/bridge_cashed_cycle935_receipt_2026_07_28.json": {
+      "git_blob": "30e25fbd6d878194067684598394d85daec6408d",
+      "sha256": "3a20e6167428a7ddf9588915829c3769c9e57b73298d33f62752780ed9fb093f"
+    },
+    "outputs/bridge_cashed_cycle935_seal_2026_07_28.json": {
+      "git_blob": "3bd4e7ca20fd724ec063f771ce2100c5923ce4fd",
+      "sha256": "2e1f65ee506d5fd2855ae26ec9a87697c686119eca9c0502973a64767888e813"
+    },
+    "outputs/bridge_cashed_independent_check_cycle935_receipt_2026_07_28.json": {
+      "git_blob": "3c96dc4a1ba93cbb0f04b2e413630ef1bdd79087",
+      "sha256": "5197df21ea503322a1c0771fa4d3cbda907bc9865ca7a7d2e4f8188d14aa334b"
+    },
+    "scripts/frontier_cycle935_bridge_cashed_2026_07_28.py": {
+      "git_blob": "da20d6eb04c72a1dab2ce14c83b516219eea9d3a",
+      "sha256": "742b547584c90595d6bde0244e1ff5a3c7eb42a17ed5c0ad98383ef1326fa11a"
+    },
+    "scripts/frontier_cycle935_bridge_cashed_independent_check_2026_07_28.py": {
+      "git_blob": "0b1dbce6e781538745aea8879ced896ec7825440",
+      "sha256": "fd09da40e1d98c97192af7aa863d8a5ac94a801e4dc7fbfd6a8a663152c675bb"
+    }
+  },
+  "headline": "SCOPE NO-GO \u2014 THE RULER CANNOT BUY THE NUMBER: the registered scale-reference primitive does NOT cash the source-action bridge; its supply is a gauge move inside 871's product-one stabilizer (a bijection cannot reduce a dimension \u2014 90 exact re-solves, composed dimension 1 always; 0/22 observables separated; F_p re-proof with no linear algebra); the exclusion list names COUPLING (871's exact word) and the lane conditional's antecedent fails by 871's own headline; verdict NO_GO_DIMENSIONLESS_RESIDUE_NOT_SUPPLIED; THE GENERAL CASHING RULE established (a ruler cashes iff the dimensionless side has free dimension 0 \u2014 explains the Planck-time precedent exactly); the landed Gate-B pair PINNED as an exact t=2 stabilizer step (identically 0 in rationals); 871's group axioms strengthened to unconditional; G_Newton/SI does NOT derive (blockers named: exponent, refused coefficient, unregistered hbar, GB-S2/S3); the 'kappa=1/(16 pi G), register, done' chain refuted as circular on three counts; 6/6 sealed predictions with GIT-ANCESTRY-PROVED holdout-freedom; TOE-map consequence: the bridge scalar is DIMENSIONLESS and ruler-immune \u2014 retained-grade content or conditional forever",
+  "independence": "checker 8/8, 10/10 teeth, 0 refutations on disjoint routes (F_p counting with no linear algebra; BFS orbits; adversarial sentence re-reading vs byte offsets; git-ancestry holdout proof); the checker's lane-conditional finding STRENGTHENS the verdict",
+  "note": "docs/BRIDGE_CASHING_SCOPE_NOGO_CYCLE935_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 0.58,
+    "primary": 0.54
+  }
+}

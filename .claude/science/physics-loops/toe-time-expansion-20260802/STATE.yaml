@@ -807,3 +807,17 @@ worker_substitution: >
   contexts. Checker independence is cross-context, not cross-model, for
   this window; disclosed in ship notes. 866/867 v2 primaries reran clean
   before checker launch (866: 5/5 gates, 178s; 867: 4/4 gates, 140s).
+
+network_loss_recovery_20260805: >
+  Owner going offline ~07:45 EDT 2026-08-05 with NETWORK LOSS expected.
+  The supervisor and all workers are API-backed: the session PAUSES when
+  network drops; in-flight workers (942 blind tier c5-t8, 943 pre-record
+  swap c5-q15, 944 neighborhood-weight dossier c5-q16) die on their next
+  API call. NOTHING local is lost. ON RESUME (claude --resume in the
+  repo root): (1) check c5-t8/c5-q15/c5-q16 for committed cycle942/943/
+  944 results — ship any that completed; relaunch any that died from the
+  specs summarized in their STATE entries and the transcript; (2) push
+  any unpushed branches; (3) open any queued PRs; (4) window 3 runs to
+  2026-08-06 ~07:45 EDT — continue the GOAL.md queue. The axiom surface
+  stays frozen pending the owner's decision on the neighborhood-weight
+  candidate (dossier = 944's deliverable).

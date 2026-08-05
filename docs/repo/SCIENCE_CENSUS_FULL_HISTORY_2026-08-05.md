@@ -117,7 +117,8 @@ them sit 194 run logs first added in March [verified].
 - `theory-reviews/interference-geometry-sensitivity-2026-03-30.md` — tests how
   sensitive the interference pattern is to geometry.
 
-This era was pushed directly, without pull requests [from-survey].
+This era was pushed directly, without pull requests [owner-attested,
+2026-08-05].
 
 ### Stratum 2 — the pre-seeding mainline deletions
 

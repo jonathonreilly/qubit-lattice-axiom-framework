@@ -1483,6 +1483,41 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Cluster-cap (G-family): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
 
+## Cycle 941 GB-S2 reconciled (blockG29, PR #6009) — 2026-08-05
+
+- Supervisor review: the byte-arithmetic reconciliation (871's 8 =
+  the 884 landed chart, provenance established; every step an
+  identity); the vendor manifest discipline (104 files, 13
+  commits, zero mismatches); the no-kill honesty (the ledger
+  sharpened, not shortened — stated plainly); the checker's four
+  narrowings folded back; the independent-reproduction upgrades
+  (903's incidence map and 892's 8 classes value-for-value from a
+  rebuilt walk).
+- **DATED CORRECTION TO THIS PACK'S OWN TEXT**: the gravity-lane
+  closure assessment and the window-2 HANDOFF carry "current
+  GB-S2 residual: 6 free + 5 owed" — STALE at writing time's own
+  later results (Cycle 900 discharged c4; Cycle 902 compressed
+  the owed five to {IF1}). THE CURRENT FIGURE IS 5 FREE + 1 OWED
+  (obstruction reading; 2 on the property-cost reading). The
+  stale sentences are corrected BY THIS NOTE, not silently
+  edited. Also pinned: the quadratic-gauge-break block is PR
+  #5952 (the #5962 references in earlier supervisor prose are
+  wrong); "1023 windows" is the all-sets count (containment-
+  holding: 512). Lesson recorded: quote totals only with their
+  supersession checked — the stale-consumer-citation class joins
+  the code-path-naming class in the audit rows.
+- Verdicts: today's residual 5+1 with every survivor named and
+  attacked (sigma terminal; THETA BARRIER-CONDITIONAL — a gauge
+  direction unless the barrier is pinned; mu open with the
+  repair-presupposes-it sharpening; the window
+  registration-shaped; g NEVER ATTACKED — the honest gap); ALL
+  FIVE DIMENSIONLESS -> no registration can ever close GB-S2
+  (935's rule; future ruler proposals refuted in advance).
+- Cluster-cap (G-family): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched: Cycle 942 (the B>=10 blind seal
+  verification, blockT8 — the T-lane's named cheap closer).
+
 ## Cycles 936/939/937 shipped (window 3 batch) — 2026-08-05 ~05:15 EDT
 
 - **936 choice substrate (blockQ13, PR #6006)**: the engineering

@@ -2308,8 +2308,10 @@ def main():
         "certified cell at <= 1e-15.",
         "921 is not re-run here; it enters only through the six-way frozen-constant "
         "cross-check.  Declared.",
-        "runtime limit %.0f s declared by the supervisor; this run used %.1f s."
-        % (RUNTIME_LIMIT_SECONDS, runtime),
+        "runtime limit %.0f s declared by the supervisor.  The measured runtime is "
+        "published in runtime_seconds and is deliberately NOT repeated here, so "
+        "that the timing-free digest is a function of the payload alone."
+        % RUNTIME_LIMIT_SECONDS,
     ]
 
     receipt = {
@@ -2372,6 +2374,10 @@ def main():
     timing_free = json.loads(json.dumps(receipt, default=float))
     for k in ("runtime_seconds", "runtime_seconds_to_end_of_restriction_gates"):
         timing_free.pop(k, None)
+    # belt and braces: no string anywhere in the digested payload may carry a
+    # measured duration, or the digest stops being a function of the payload.
+    if any(re.search(r"this run used", json.dumps(v)) for v in timing_free.values()):
+        die("digest:timing-string-leaked-into-the-payload")
     receipt["timing_free_digest"] = sha256_obj(timing_free)
 
     outp = os.path.join(ROOT, "outputs",

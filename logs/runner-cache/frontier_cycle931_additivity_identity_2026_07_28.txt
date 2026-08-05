@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle931_additivity_identity_2026_07_28.py
-cycle: 931  block: toe-time-blockM11-20260802  head: 7f8549e7d2
+cycle: 931  block: toe-time-blockM11-20260802  head: bdb0cef41d
 
 -- RESTRICTION GATES (all before any new number) --
   21/21 frozen constants byte-verified; quote-identical to the 917, 919,
@@ -14,7 +14,7 @@ cycle: 931  block: toe-time-blockM11-20260802  head: 7f8549e7d2
   929 T(d) baseline table:  16 rows, max abs deviation 0.0
   929 T13 exhausting departure (22 geometries rebuilt): max abs deviation 0.0
   reproduced departure_from_linearity = 0.006286487147332 (pinned 0.006286487147332)
-  gate runtime: 0.47 s
+  gate runtime: 0.51 s
 
 -- SEAL (pre-registered BEFORE any new number; inputs are pinned bytes only) --
   seal_id:     cycle931-additivity-derivation-seal-1
@@ -162,10 +162,10 @@ cycle: 931  block: toe-time-blockM11-20260802  head: 7f8549e7d2
   * Degrees 7..10 are evaluated as ABSTRACT stars (spiders with d unit arms). Whether the lattice + frozen labelling can realise an (m,1) profile at d >= 7 is a rule-constructibility question 929 already answered in the negative; it does not affect the state-level theorem.
   * The symbolic Sylvester identity is machine-verified at matrix shapes up to (2,4) and the eigenvector-transfer identity up to (4,4); the general statement is the standard Sylvester determinant identity, and the numerical consequence S(X) = S(X^c) is verified directly on every certified cell at <= 1e-15.
   * 921 is not re-run here; it enters only through the six-way frozen-constant cross-check.  Declared.
-  * runtime limit 900 s declared by the supervisor; this run used 4.2 s.
+  * runtime limit 900 s declared by the supervisor.  The measured runtime is published in runtime_seconds and is deliberately NOT repeated here, so that the timing-free digest is a function of the payload alone.
 
 runtime: 4.2 s (limit 900 s)
-timing-free digest: a4442ba6d063956511a8d49a055dd5408ecd5d59f02d36bc3bd0d88a3350da0a
+timing-free digest: 058c1a773f39089edb0fc0c4abf2f58c7ace10146929178597a174951d4271f0
 receipt: outputs/additivity_identity_cycle931_receipt_2026_07_28.json
-receipt sha256: eb36edbd6df8d1aee38ebdaa1d29e6dc9d1e72d1e1e6c55e1f02f8fcf1ecb731
+receipt sha256: 89699b750d39e6bbf1b953e4abc34a71784344b89012be31226acb6ccfd97b46
 ===== runner cache v1 =====

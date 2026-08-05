@@ -4125,7 +4125,7 @@
   "Degrees 7..10 are evaluated as ABSTRACT stars (spiders with d unit arms). Whether the lattice + frozen labelling can realise an (m,1) profile at d >= 7 is a rule-constructibility question 929 already answered in the negative; it does not affect the state-level theorem.",
   "The symbolic Sylvester identity is machine-verified at matrix shapes up to (2,4) and the eigenvector-transfer identity up to (4,4); the general statement is the standard Sylvester determinant identity, and the numerical consequence S(X) = S(X^c) is verified directly on every certified cell at <= 1e-15.",
   "921 is not re-run here; it enters only through the six-way frozen-constant cross-check.  Declared.",
-  "runtime limit 900 s declared by the supervisor; this run used 4.2 s."
+  "runtime limit 900 s declared by the supervisor.  The measured runtime is published in runtime_seconds and is deliberately NOT repeated here, so that the timing-free digest is a function of the payload alone."
  ],
  "cycle": 931,
  "date": "2026-08-05",
@@ -4273,7 +4273,7 @@
   "n_constants_927": 21,
   "n_constants_929": 21
  },
- "git_head": "7f8549e7d2",
+ "git_head": "bdb0cef41d",
  "pins": {
   "docs/ARITY_IS_DEGREE_MULTIPLICITY_TAX_CYCLE929_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
    "blob": "0b316a500c4c6768b36651d71eb8702731d19f9e",
@@ -4428,10 +4428,10 @@
   }
  },
  "runner": "scripts/frontier_cycle931_additivity_identity_2026_07_28.py",
- "runner_sha256": "7a2045d81c604a7a8adc39b3b7ecde21ae1e0c43f08faa59ed14e5bf6ab706fc",
+ "runner_sha256": "9ec41f8cc7562026e86a5332819b56b860b1ee3f4a4ca21540f129623ec80371",
  "runtime_limit_seconds": 900.0,
- "runtime_seconds": 4.177564291021554,
- "runtime_seconds_to_end_of_restriction_gates": 0.4718442080193199,
+ "runtime_seconds": 4.221319834003225,
+ "runtime_seconds_to_end_of_restriction_gates": 0.5124051249877084,
  "runtime_within_limit": true,
  "schema": "cycle931-additivity-identity-v1",
  "seal": {
@@ -5472,7 +5472,7 @@
   "n_firing": 15,
   "n_teeth": 15
  },
- "timing_free_digest": "a4442ba6d063956511a8d49a055dd5408ecd5d59f02d36bc3bd0d88a3350da0a",
+ "timing_free_digest": "058c1a773f39089edb0fc0c4abf2f58c7ace10146929178597a174951d4271f0",
  "verdict": "THE ADDITIVITY IDENTITY IS DERIVED.  It is the pure-state pair-complement identity I(A:B) + I(R:B) = 2 S(B): the frozen statistic conditions on the pointer in the Z basis, the frozen partition exhausts every non-pointer site, so each branch is a PURE state on the fragment union; purity gives S(R) = S(AB) and S(RB) = S(A), the two mutual informations telescope, and arm exchangeability turns the complement pair into the measured (d-1-m, 1) pair.  The whole per-pair law collapses to one entropy sequence, C(m_a,m_b) = s(m_a) + s(m_b) - s(m_a+m_b) with s(k) = s(d-k) and s(0) = s(d) = 0.  The exhausting-pair departure is not a boundary term: G_d(d-1) = 2 s(1) is forced.  Candidate (a) is refuted as sufficient, (b) survives only as the pure-tripartite identity (the SSA-equality reading is refuted by computation), and (c) is refuted at lambda = 2.0 and Jt = 3.0.",
  "zero_field_anchor": [
   {

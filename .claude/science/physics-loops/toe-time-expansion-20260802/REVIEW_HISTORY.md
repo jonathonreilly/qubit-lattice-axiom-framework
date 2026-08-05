@@ -1483,6 +1483,22 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Cluster-cap (G-family): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
 
+## Cycle 940 R1-A3 negative (blockQ14, PR #6010) — 2026-08-05
+
+- Supervisor review: the by-blob pinning of the stranded envariance
+  note (dominant prior art; its own A3 concession the inherited
+  lesson); the non-existence proof at the coarsest labelling with
+  the irreducible repair chain; the identity-item grammar theorem;
+  the self-defeating-clause finding on the naturality antecedent;
+  the checker's tautology bug caught by a tooth FAILING to fire.
+- Verdict: R1-A3 NEGATIVE three ways; the conditional theorem
+  vacuous; naturality underivable and independent of A3; A3 stands
+  UNCHANGED at 936's price. THE EXERCISE'S WALL-1 PROGRAM CLOSES:
+  the ask-bar artifact has run — the ask is unearned AND
+  unnarrowed. The Born lane is fully terminal (arena built, freedom
+  counted, symmetry refused, sentence owner-priced).
+- Cluster-cap (13th Born PR): OPEN. Disposition: pass.
+
 ## Cycle 941 GB-S2 reconciled (blockG29, PR #6009) — 2026-08-05
 
 - Supervisor review: the byte-arithmetic reconciliation (871's 8 =

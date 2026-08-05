@@ -1,0 +1,1927 @@
+{
+ "VERDICT": "After this block, the A3 sentence's minimal required content is UNCHANGED: one sentence supplying a weight on the available possibilities at a site, with 936's measured freedom count (one free number per site in the world sense, 6 on the declared arena; normalisation forced per node, index set forced to worlds, no cross-site relation forced).  NO SYMMETRY HAS PURCHASE.  Naturality does not narrow A3's residue here, and it could not be adopted in A3's place in any case.",
+ "all_certificates_pass": true,
+ "audit": "unset",
+ "authority": "none",
+ "block": "cycle940_symmetric_weights",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "A_PINS": {
+   "AUDIT_INPUT_PATHS": [
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle936_choice_substrate_2026_07_28.py",
+    "outputs/choice_substrate_cycle936_receipt_2026_07_28.json",
+    "outputs/choice_substrate_block_cycle936_ship_receipt_2026_07_28.json",
+    "docs/CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json",
+    "outputs/law_relaxation_cycle925_receipt_2026_07_28.json",
+    "docs/WRITABLE_ENDPOINT_BORN_CAPABLE_FIRST_BRANCH_PAIRS_CYCLE918_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/LAW_RELAXATION_CLASSIFIED_A3_SOLE_RELAXATION_CYCLE925_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+    "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+    "docs/KOIDE_FORMATION_WEIGHT_CONDITIONAL_SELECTION_UNIQUE_REGISTRATION_COMPATIBLE_LAWFUL_WEIGHT_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+    "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
+    "docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md"
+   ],
+   "THE_STRANDED_ENVARIANCE_NOTE": {
+    "blob_verifies": true,
+    "git_blob": "64b24361f2237d01f079e16b306b5d04e01de7c2",
+    "path_on_branch": "docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md",
+    "retrieved_bytes": 9585,
+    "sha256": "21c22981929f0304efbe15459fc2a9c43c3c4d2af2a69f06bd22d8efcfc2ccfd",
+    "why_pinned_by_blob": "it is NOT in the worktree.  Cycle 912's C3 finding: the note and its runner sit on the unmerged branch born-from-envariance-2026-06-05; neither commit is an ancestor of HEAD.  It is the DOMINANT prior art for this block -- a symmetry-forces-equal-weights derivation with a published assumption table -- so it is pinned out of the object store and byte-quoted rather than paraphrased."
+   },
+   "blocked_modules_loaded": [],
+   "certificate": "A_PINS",
+   "existing_worktree_relative": true,
+   "firewall_hits": [],
+   "git_blobs_all_match": true,
+   "literal_ok": true,
+   "modification_mechanism": "WRAP, NEVER EDIT.  The pinned 936 runner is AST-LIFTED (selected top-level FunctionDef / ClassDef / Assign nodes replayed in source order) and never imported; its bytes are unchanged and hashed.  Nothing in this block writes to any pinned file.",
+   "pass": true,
+   "rows": {
+    "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md": {
+     "bytes": 11454,
+     "git_blob": "754e98cb997dcd667986fd3e35b36ad49320a72d",
+     "sha256": "bd019a4a2ba0827b428c4af6db1720b2a0f27f0b1a0aaf8f065d0f90fb69163f"
+    },
+    "docs/CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "bytes": 12537,
+     "git_blob": "ffc0e6d1c3527ef75286abc0e50de0a3a3588f53",
+     "sha256": "6cdec178602e936a07a86c43627b431527a5d328c2b269d0edd594d245831eac"
+    },
+    "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md": {
+     "bytes": 20529,
+     "git_blob": "c5c47a9f7c5d6dc211a91b197f10f89daee24055",
+     "sha256": "0e97919c4ea777f7d58f9185cece004832f86fe6ce508a6084a6e3090e4420f1"
+    },
+    "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md": {
+     "bytes": 8417,
+     "git_blob": "2c5f57df5e47b11897d9e938da70595895a89e3a",
+     "sha256": "4c1e0b71ff8ef9401a4e39774f66b4eb8ef362d361df9abdebdcf84d68532da0"
+    },
+    "docs/KOIDE_FORMATION_WEIGHT_CONDITIONAL_SELECTION_UNIQUE_REGISTRATION_COMPATIBLE_LAWFUL_WEIGHT_BOUNDED_THEOREM_NOTE_2026-07-12.md": {
+     "bytes": 28647,
+     "git_blob": "8a58c25513e39e781824e1a02e7048e820b051c1",
+     "sha256": "c6c87a19e844cabbad7c77bf6423eebab99de7afb4a51ce394d9d10127812ff3"
+    },
+    "docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md": {
+     "bytes": 11597,
+     "git_blob": "dd59f11fc15d4f91948b2372c49cd906daea20fa",
+     "sha256": "7122ca81975a9d0836885cbe6ca14ceb29cfb770a2bfc34c26f2a838d478a053"
+    },
+    "docs/LAW_RELAXATION_CLASSIFIED_A3_SOLE_RELAXATION_CYCLE925_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "bytes": 15787,
+     "git_blob": "37f5bad6f1ef329890e7cebee97ba99a5f699356",
+     "sha256": "ed36a7afb889a45ccde08a4f5d6735fa028a12e4aaa9edda3348ab687678c676"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+     "bytes": 8846,
+     "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+     "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "docs/WRITABLE_ENDPOINT_BORN_CAPABLE_FIRST_BRANCH_PAIRS_CYCLE918_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+     "bytes": 12839,
+     "git_blob": "186af20c471f8cbb4e9c9871fc2ee652d813e348",
+     "sha256": "40333f3bb83f77a3e7c89eb232bbe24c01885cdcfdcab7888ae319419c1efaee"
+    },
+    "outputs/choice_substrate_block_cycle936_ship_receipt_2026_07_28.json": {
+     "bytes": 4657,
+     "git_blob": "1421484631b06fc203405c0ffab3a715c979cbed",
+     "sha256": "9da5a559f4e87940560aaf75daaaa4332a228cc5ec2a7b50bf744a7cbb164f0a"
+    },
+    "outputs/choice_substrate_cycle936_receipt_2026_07_28.json": {
+     "bytes": 328031,
+     "git_blob": "d7b786fccc0435d139339c141dbad75c9f8d799b",
+     "sha256": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028"
+    },
+    "outputs/law_relaxation_cycle925_receipt_2026_07_28.json": {
+     "bytes": 364478,
+     "git_blob": "fed1b28e9e5cfe731a541645dce705541d69c967",
+     "sha256": "f4fabe50ed8b775f2f1288380824ae04f0129f4f136e3b338bafd05647031757"
+    },
+    "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json": {
+     "bytes": 695475,
+     "git_blob": "5704619b21d9a3af312956580355d6dd5a303f53",
+     "sha256": "849ad2bbb4abc8c9eda5541246784e2bdb69feaf423aac7c6f3aff83f6062bbd"
+    },
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": {
+     "bytes": 26046,
+     "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+     "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+    },
+    "scripts/frontier_cycle936_choice_substrate_2026_07_28.py": {
+     "bytes": 153066,
+     "git_blob": "75cb05ffb9456691747a67ed5227f3db589f95c4",
+     "sha256": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d"
+    }
+   },
+   "sha256_all_match": true
+  },
+  "B_RESTRICTION_GATE": {
+   "anchor_statement": "every pinned quantity this block leans on is recomputed here from the pinned bytes and compared value-for-value BEFORE any new analysis: the 936 package verified against its own SHIP receipt, the pinned compiler's schedule, the 918 CONTROL and M_A census rows at the FULL horizon, the 918 build digest, the 925 sweep anchor, and the whole 936 tree -- leaves, branch nodes, branching profile, the per-branch battery, the six genuine same-world pairs, and the exact symbolic weight-sum identity with its freedom counts.",
+   "battery_per_branch": {
+    "duplicate_lane_column_divergence": true,
+    "duplicate_lane_mismatches": true,
+    "off_menu_lane_count": true,
+    "record_slot_activation_conflicts": true,
+    "write_once_violations": true
+   },
+   "certificate": "B_RESTRICTION_GATE",
+   "lift_counts": {
+    "classes": 1,
+    "constants": 34,
+    "functions": 31
+   },
+   "pass": true,
+   "passed": 42,
+   "rows": [
+    {
+     "gate": "ship_receipt_sha256::CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "pass": true,
+     "pinned": "6cdec178602e936a07a86c43627b431527a5d328c2b269d0edd594d245831eac",
+     "value": "6cdec178602e936a07a86c43627b431527a5d328c2b269d0edd594d245831eac"
+    },
+    {
+     "gate": "ship_receipt_git_blob::CHOICE_SUBSTRATE_BUILT_TREE_PRICED_CYCLE936_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+     "pass": true,
+     "pinned": "ffc0e6d1c3527ef75286abc0e50de0a3a3588f53",
+     "value": "ffc0e6d1c3527ef75286abc0e50de0a3a3588f53"
+    },
+    {
+     "gate": "ship_receipt_sha256::choice_substrate_cycle936_receipt_2026_07_28.json",
+     "pass": true,
+     "pinned": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028",
+     "value": "4412ae9016df02546db26cdd87fa33ab68bf2a7370b27640e18d4d0e59132028"
+    },
+    {
+     "gate": "ship_receipt_git_blob::choice_substrate_cycle936_receipt_2026_07_28.json",
+     "pass": true,
+     "pinned": "d7b786fccc0435d139339c141dbad75c9f8d799b",
+     "value": "d7b786fccc0435d139339c141dbad75c9f8d799b"
+    },
+    {
+     "gate": "ship_receipt_names_this_block_as_the_successor",
+     "pass": true,
+     "pinned": true,
+     "value": true
+    },
+    {
+     "gate": "c936_receipt_all_certificates_pass",
+     "pass": true,
+     "pinned": true,
+     "value": true
+    },
+    {
+     "gate": "c936_self_sha256_matches_the_pinned_runner",
+     "pass": true,
+     "pinned": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d",
+     "value": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d"
+    },
+    {
+     "gate": "schedule_builder_reproduces_the_pinned_compiler",
+     "pass": true,
+     "pinned": "42e64fe0a53e13f9705be8ca60006b97650dc7cbc985964cd85ea143755420ce",
+     "value": "42e64fe0a53e13f9705be8ca60006b97650dc7cbc985964cd85ea143755420ce"
+    },
+    {
+     "gate": "compiled_gate_total",
+     "pass": true,
+     "pinned": 34166,
+     "value": 34166
+    },
+    {
+     "gate": "c936_pinned_template_count",
+     "pass": true,
+     "pinned": 3,
+     "value": 3
+    },
+    {
+     "gate": "c936_new_template_count",
+     "pass": true,
+     "pinned": 1,
+     "value": 1
+    },
+    {
+     "gate": "M_A_compiled_gate_total",
+     "pass": true,
+     "pinned": 34188,
+     "value": 34188
+    },
+    {
+     "gate": "CONTROL_lock_points",
+     "pass": true,
+     "pinned": 164,
+     "value": 164
+    },
+    {
+     "gate": "CONTROL_realized_split",
+     "pass": true,
+     "pinned": {
+      "[0, 1]": 80,
+      "[1, 0]": 84
+     },
+     "value": {
+      "[0, 1]": 80,
+      "[1, 0]": 84
+     }
+    },
+    {
+     "gate": "M_A_lock_points",
+     "pass": true,
+     "pinned": 134,
+     "value": 134
+    },
+    {
+     "gate": "M_A_realized_split",
+     "pass": true,
+     "pinned": {
+      "[0, 1]": 56,
+      "[1, 0]": 78
+     },
+     "value": {
+      "[0, 1]": 56,
+      "[1, 0]": 78
+     }
+    },
+    {
+     "gate": "M_A_sel_differs_from_setup",
+     "pass": true,
+     "pinned": 37,
+     "value": 37
+    },
+    {
+     "gate": "M_A_off_menu_at_the_lock",
+     "pass": true,
+     "pinned": 0,
+     "value": 0
+    },
+    {
+     "gate": "M_A_write_once_violations",
+     "pass": true,
+     "pinned": 0,
+     "value": 0
+    },
+    {
+     "gate": "M_A_duplicate_lane_mismatches",
+     "pass": true,
+     "pinned": 0,
+     "value": 0
+    },
+    {
+     "gate": "M_A_dynamical_branch_pairs",
+     "pass": true,
+     "pinned": 3,
+     "value": 3
+    },
+    {
+     "gate": "M_A_dynamical_branch_pair_identities",
+     "pass": true,
+     "pinned": [
+      [
+       253,
+       407
+      ],
+      [
+       520,
+       630
+      ],
+      [
+       533,
+       643
+      ]
+     ],
+     "value": [
+      [
+       253,
+       407
+      ],
+      [
+       520,
+       630
+      ],
+      [
+       533,
+       643
+      ]
+     ]
+    },
+    {
+     "gate": "M_A_candidate_pairs",
+     "pass": true,
+     "pinned": 27,
+     "value": 27
+    },
+    {
+     "gate": "M_A_build_digest_reproduces_the_pinned_918_scan",
+     "pass": true,
+     "pinned": "a6b8ee4d8be74afa3b3995560fd4494877840f9314c3b961ecce81a28ebbef07",
+     "value": "a6b8ee4d8be74afa3b3995560fd4494877840f9314c3b961ecce81a28ebbef07"
+    },
+    {
+     "gate": "c925_sweep_statements_anchor",
+     "pass": true,
+     "pinned": 34166,
+     "value": 34166
+    },
+    {
+     "gate": "c925_note_byte_quote_R2_is_the_sole_relaxation",
+     "pass": true,
+     "pinned": true,
+     "value": true
+    },
+    {
+     "gate": "tree_leaves",
+     "pass": true,
+     "pinned": 256,
+     "value": 256
+    },
+    {
+     "gate": "tree_leaves_enumerated",
+     "pass": true,
+     "pinned": 256,
+     "value": 256
+    },
+    {
+     "gate": "tree_branch_nodes",
+     "pass": true,
+     "pinned": 75,
+     "value": 75
+    },
+    {
+     "gate": "tree_depth_in_choice_occasions",
+     "pass": true,
+     "pinned": 4,
+     "value": 4
+    },
+    {
+     "gate": "tree_branching_factor_by_occasion",
+     "pass": true,
+     "pinned": [
+      2,
+      4,
+      8,
+      4
+     ],
+     "value": [
+      2,
+      4,
+      8,
+      4
+     ]
+    },
+    {
+     "gate": "tree_distinct_leaf_observables",
+     "pass": true,
+     "pinned": 64,
+     "value": 64
+    },
+    {
+     "gate": "tree_window_boundaries",
+     "pass": true,
+     "pinned": 1925,
+     "value": 1925
+    },
+    {
+     "gate": "battery_survives_on_every_branch",
+     "pass": true,
+     "pinned": true,
+     "value": true
+    },
+    {
+     "gate": "six_genuine_branch_pairs_reproduced",
+     "pass": true,
+     "pinned": [
+      [
+       254,
+       "DIFFERENT_LOCK_BOUNDARY"
+      ],
+      [
+       450,
+       "SAME_LOCK_DIFFERENT_ITEM"
+      ],
+      [
+       475,
+       "SAME_LOCK_DIFFERENT_ITEM"
+      ],
+      [
+       540,
+       "DIFFERENT_LOCK_BOUNDARY"
+      ],
+      [
+       558,
+       "DIFFERENT_LOCK_BOUNDARY"
+      ],
+      [
+       715,
+       "SAME_LOCK_DIFFERENT_ITEM"
+      ]
+     ],
+     "value": [
+      [
+       254,
+       "DIFFERENT_LOCK_BOUNDARY"
+      ],
+      [
+       450,
+       "SAME_LOCK_DIFFERENT_ITEM"
+      ],
+      [
+       475,
+       "SAME_LOCK_DIFFERENT_ITEM"
+      ],
+      [
+       540,
+       "DIFFERENT_LOCK_BOUNDARY"
+      ],
+      [
+       558,
+       "DIFFERENT_LOCK_BOUNDARY"
+      ],
+      [
+       715,
+       "SAME_LOCK_DIFFERENT_ITEM"
+      ]
+     ]
+    },
+    {
+     "gate": "declared_sites_are_six",
+     "pass": true,
+     "pinned": 6,
+     "value": 6
+    },
+    {
+     "gate": "declared_atoms_are_eight",
+     "pass": true,
+     "pinned": 8,
+     "value": 8
+    },
+    {
+     "gate": "pairs_with_SAME_lock_and_DIFFERENT_item",
+     "pass": true,
+     "pinned": 3,
+     "value": 3
+    },
+    {
+     "gate": "weight_sum_identity_per_site",
+     "pass": true,
+     "pinned": true,
+     "value": true
+    },
+    {
+     "gate": "weight_sum_identity_per_occasion",
+     "pass": true,
+     "pinned": true,
+     "value": true
+    },
+    {
+     "gate": "freedom_count_per_site",
+     "pass": true,
+     "pinned": 6,
+     "value": 6
+    },
+    {
+     "gate": "freedom_count_per_occasion",
+     "pass": true,
+     "pinned": 8,
+     "value": 8
+    }
+   ],
+   "total": 42
+  },
+  "F_PARAMETRIC_FIREWALL": {
+   "certificate": "F_PARAMETRIC_FIREWALL",
+   "float_literals_in_this_runner": 0,
+   "fraction_label": "bookkeeping fraction, not probability",
+   "freedom_count_unchanged_by_this_block": true,
+   "no_unfenced_weight_value": true,
+   "pass": true,
+   "rule": "mu stays PARAMETRIC.  Nothing outputs, prefers or adopts a weight value AS LAW CONTENT.  Exhibiting what a principle WOULD force is pricing, and every such exhibition must sit under a key path containing CONDITIONAL, HYPOTHETICAL or IF_.",
+   "the_real_arena_weight_algebra_is_symbolic": true,
+   "weight_values_outside_a_conditional_fence": [],
+   "zero_float_literals": true
+  },
+  "G_FALSIFIERS": {
+   "certificate": "G_FALSIFIERS",
+   "fired": 12,
+   "pass": true,
+   "teeth": [
+    {
+     "detail": "a relabelling exchanging the LEFT endpoint with the source pointer moves gates that the fixing check must reject; verdict False, witness {'station': 0, 'gate_present_in_the_original_only': [1, 1, 123, 0], 'multiplicity_original': 0, 'multiplicity_image': 1}",
+     "fired": true,
+     "tooth": "planted_false_automorphism_LEFT_to_SOURCE_POINTER"
+    },
+    {
+     "detail": "the identity IS an automorphism but does not move the endpoint pair, so it must not be scored as a menu swap",
+     "fired": true,
+     "tooth": "a_genuine_relabelling_that_does_not_move_the_menu_is_not_counted"
+    },
+    {
+     "detail": "a wire must share its own colour; a refinement that separates a wire from itself is broken",
+     "fired": true,
+     "tooth": "refinement_is_reflexive"
+    },
+    {
+     "detail": "the coarsest refinement leaves 32 non-singleton colour classes, so it is genuinely coarse; a refinement that made every wire its own colour would separate LEFT from RIGHT for free and the negative would be worthless",
+     "fired": true,
+     "tooth": "refinement_is_not_vacuously_discrete"
+    },
+    {
+     "detail": "a planted law-content weight value is detected at ['/Q9_PLANTED/the_weight_at_site_450']; the same rule found 0 in the real receipt",
+     "fired": true,
+     "tooth": "planted_unfenced_weight_value_is_caught"
+    },
+    {
+     "detail": "one appended byte changes the 936 note's git blob, so the pin check is live",
+     "fired": true,
+     "tooth": "tampered_pin_is_caught"
+    },
+    {
+     "detail": "256 leaf records for 256 assignment vectors -- every branch walked",
+     "fired": true,
+     "tooth": "tree_is_exact_not_sampled"
+    },
+    {
+     "detail": "A2 turns on ONE menu item being the additive identity.  A grammar delivering two DISTINCT NONZERO words would not be caught by A2 -- it would still have to face Theorem A1, but A2 alone would not settle it.  A2 is therefore a contingent fact about the 936 grammar, not a tautology, and it is reported as such",
+     "fired": true,
+     "tooth": "theorem_A2_has_a_real_edge_and_is_not_a_tautology"
+    },
+    {
+     "detail": "the digest is taken over key semantics only -- no runtime, no elapsed, no iteration counts (the 934 lesson)",
+     "fired": true,
+     "tooth": "science_digest_is_timing_free"
+    },
+    {
+     "detail": "site/kind pairs recomputed and compared to the pinned witnesses",
+     "fired": true,
+     "tooth": "six_pairs_reproduce_the_pinned_936_arena"
+    },
+    {
+     "detail": "the refinement-class involution moves 64 wires in 32 transpositions and IS certified a program automorphism under the multiset reading -- so the menu-swap negative is not a search that finds nothing.  It fixes both endpoint wires, corroborating Theorem A1",
+     "fired": true,
+     "tooth": "the_routine_finds_a_genuine_nontrivial_automorphism"
+    },
+    {
+     "detail": "the one genuine automorphism found fixes LEFT and RIGHT, so it cannot be miscounted as a menu swap",
+     "fired": true,
+     "tooth": "the_positive_control_does_not_move_the_menu"
+    }
+   ],
+   "tooth_count": 12
+  },
+  "H_DOUBLE_RUN": {
+   "certificate": "H_DOUBLE_RUN",
+   "pass": true,
+   "refinement_double_run_identical": true,
+   "science_digest": "6e82c6e898302f99c155bcba0288586c86798513004cf40816428538d9dbc0ac",
+   "tree_double_run_identical": true
+  },
+  "I_RUNTIME": {
+   "budget_sec": 900,
+   "certificate": "I_RUNTIME",
+   "elapsed_sec": 182.652,
+   "pass": true,
+   "per_run_seconds": {
+    "CONTROL/fwd": 35.916,
+    "M_A/fwd": 36.225,
+    "Q1/refinement_and_candidates": 1.054,
+    "TREE/double-run": 47.6,
+    "TREE/fwd": 47.818,
+    "setup": 13.004
+   }
+  },
+  "Q0_PRIOR_ART_SWEEP": {
+   "IS_THE_QUESTION_ALREADY_DECIDED": "PARTLY, AND THE PART THAT IS DECIDED DOMINATES THE METHOD.  The GENERAL lemma is landed (menu-uniformity corollary, 2026-07-11): invariance forces uniformity on a menu IFF its cells are one orbit.  The ANTECEDENT's status is landed in the negative twice (the Gleason-bridge R4 names the full-symmetry premise as not derived from the minimal axioms; the inner-automorphism note was REPAIRED to strip exactly that premise).  What is NOT decided, and is this block's whole content, is the substrate-specific question 936 named: does a swap automorphism EXIST here.",
+   "all_byte_quotes_present": true,
+   "certificate": "Q0_PRIOR_ART_SWEEP",
+   "pass": true,
+   "search_terms": [
+    "envariance",
+    "equal weights",
+    "symmetry argument",
+    "indifference",
+    "permutation invariance",
+    "Born",
+    "automorphism",
+    "naturality",
+    "orbit",
+    "w = 1/2",
+    "uniqueness",
+    "A3",
+    "menu swap"
+   ],
+   "table": [
+    {
+     "artefact": "docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md",
+     "assumption_structure": "A1 unitary invariance (physical); A2 locality of the undo (physical); A3 a probability measure EXISTS and is state-functional (ADMISSION, not in {Quantum, Record}); A4 symmetry => equal probability (= A1+A2+A3, DERIVED, not independent); A5 Record additivity (axiom); A6 fine-graining is a physical unitary embedding.",
+     "byte_quotes": [
+      {
+       "present": true,
+       "quote": "A4 symmetry \u21d2 equal probability | `= A1+A2+A3` | derived, not independent"
+      },
+      {
+       "present": true,
+       "quote": "The only premise not contained in {Quantum, Record} is **A3**"
+      },
+      {
+       "present": true,
+       "quote": "it is forced by A1+A2 **once A3 is granted**"
+      }
+     ],
+     "does_it_decide_this_block": "NO -- and it is the reason the question is worth asking precisely.  It decides the CONDITIONAL half: given A3 and a genuine state symmetry exchanging the branches, equal weight is forced and is not smuggled.  Its arena is a Hilbert-space bipartite record state, not this substrate.",
+     "location": "UNMERGED BRANCH born-from-envariance-2026-06-05; git blob 64b24361f2237d01f079e16b306b5d04e01de7c2; NOT in the worktree",
+     "status": "DOMINANT PRIOR ART; stranded by process, not by science",
+     "the_lesson_this_block_inherits": "a symmetry principle is a CONSTRAINT ON a weight function, never an EXISTENCE PROOF for one.  Any claim to derive a value from symmetry alone is, on this precedent, deriving A4 while silently assuming A3.",
+     "what_the_argument_is": "the canonical symmetry-forces-equal-weights derivation: a GHZ-type record state, a system swap undone by an environment swap, equal amplitudes shown to be the actual hinge, and the general case by fine-graining into equiprobable sub-records."
+    },
+    {
+     "artefact": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+     "assumption_structure": "pure group theory over a supplied automorphism group; the INVARIANCE REQUIREMENT on w is a hypothesis, not a theorem.",
+     "byte_quotes": [
+      {
+       "present": true,
+       "quote": "invariance by itself does not relate the weights of"
+      },
+      {
+       "present": true,
+       "quote": "when its cells are one orbit of the supplied structure; if the cells split"
+      }
+     ],
+     "does_it_decide_this_block": "IT DECIDES THE GENERAL FORM AND REDUCES THIS BLOCK TO ONE MECHANICAL QUESTION.  Uniformity at a site is forced IFF that site's two menu items are ONE ORBIT.  So Q1 -- does a swap automorphism exist -- is the entire remaining content.",
+     "location": "landed bounded_theorem in the worktree",
+     "status": "DOMINATES THE FRAMING; the orbit criterion is imported as settled and is what this block computes against",
+     "what_the_argument_is": "the GENERAL symmetry lemma, already decided: for a group G of automorphisms preserving menu eligibility under which w is required invariant, w is constant on each G-orbit of cells; a TRANSITIVE action on a menu's cells forces uniformity, and a multi-orbit menu gets nothing."
+    },
+    {
+     "artefact": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+     "assumption_structure": "the full-symmetry premise is NAMED, and named as underivable.",
+     "byte_quotes": [
+      {
+       "present": true,
+       "quote": "This full-symmetry premise is named"
+      },
+      {
+       "present": true,
+       "quote": "it is not derived from H1-H4 or from the minimal axioms"
+      }
+     ],
+     "does_it_decide_this_block": "it decides the ANTECEDENT's status in the negative, on a different arena: the invariance premise is not derivable from the minimal axioms.",
+     "location": "landed note in the worktree",
+     "status": "DIRECT PRIOR ART ON Q2's SECOND HALF",
+     "what_the_argument_is": "R4: under invariance of w under every unitary automorphism of the composite (scalar commutant), rho = I/d follows, and weights are uniform on symmetric menus."
+    },
+    {
+     "artefact": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
+     "assumption_structure": "the reference-state identification premise is separate and unsupplied.",
+     "byte_quotes": [
+      {
+       "present": true,
+       "quote": "is a separate physical/reference-state identification premise"
+      },
+      {
+       "present": true,
+       "quote": "it is not supplied by the current three-axiom"
+      }
+     ],
+     "does_it_decide_this_block": "PRECEDENT AGAINST A POSITIVE: the repo already tried once to land 'invariance => uniform' as physics and was forced to demote it to linear algebra plus an unsupplied hypothesis.",
+     "location": "landed narrow theorem in the worktree",
+     "status": "PRECEDENT",
+     "what_the_argument_is": "the pure invariance-forces-uniformity statement isolated as linear algebra, with the physical premise stripped out by a later repair."
+    },
+    {
+     "DOES_ITS_UNIQUENESS_ARGUMENT_TRANSFER": false,
+     "artefact": "docs/KOIDE_FORMATION_WEIGHT_CONDITIONAL_SELECTION_UNIQUE_REGISTRATION_COMPATIBLE_LAWFUL_WEIGHT_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+     "assumption_structure": "a finite pre-supplied lawful candidate set, a declared energy dictionary, spectral-to-registration bridges, an exact non-degeneracy comparator, and a note-owned open-pinned-Q criterion -- ten declared non-axiom premises.",
+     "byte_quotes": [
+      {
+       "present": true,
+       "quote": "unique lawful registration"
+      }
+     ],
+     "does_it_decide_this_block": "NO.",
+     "location": "landed bounded_theorem in the worktree",
+     "status": "CHECKED AND EXCLUDED -- does not transfer",
+     "what_the_argument_is": "the r-lane conditional selection theorem: w = 1/2 is the unique lawful registration-compatible formation weight on the positive branch.",
+     "why_not": "its mechanism is ELIMINATION FROM A FINITE LIST BY REGISTRATION-INCOMPATIBILITY.  There is no swap, no orbit and no invariance step anywhere in it, and it presupposes a spectral-registration structure (eigenvalues, masses, Q) that a bare two-item branch menu does not have.  It is a template for stating a conditional selection honestly, not a symmetry argument."
+    },
+    {
+     "artefact": "docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md",
+     "assumption_structure": "route-local, explicitly not exhaustive.",
+     "byte_quotes": [
+      {
+       "present": true,
+       "quote": "not fixed by"
+      }
+     ],
+     "does_it_decide_this_block": "NO -- different lane -- but it is a second recorded instance of a swap-symmetry route failing to fix a weight.",
+     "location": "landed narrow no-go in the worktree",
+     "status": "CORROBORATING NEGATIVE",
+     "what_the_argument_is": "r = 1/2 is not fixed by the tested symmetry-protection routes, including a unitary singlet/doublet swap."
+    },
+    {
+     "artefact": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "assumption_structure": "n/a -- this is the supply boundary itself.",
+     "byte_quotes": [
+      {
+       "present": true,
+       "quote": "Born weights, probability\n  rules, update laws, decoherence mechanisms, and formation rules"
+      },
+      {
+       "present": true,
+       "quote": "No possibility is privileged"
+      }
+     ],
+     "does_it_decide_this_block": "it decides that no weight VALUE is axiom-supplied; whether it supplies an INVARIANCE is exactly what Q2 tests.",
+     "location": "the pinned axiom memo",
+     "status": "THE SUPPLY BOUNDARY",
+     "what_the_argument_is": "the boundary rule: Born weights, probability rules and formation rules (which possibility, at which site, with what weight) are named OPEN GATES, outside axiom content."
+    }
+   ]
+  },
+  "Q1_THE_MENU_SWAP_AUTOMORPHISM": {
+   "A_THIRD_INDEPENDENT_NEGATIVE_FOUND_BY_THE_ARENA_ITSELF": {
+    "finding": "only 3 of the 6 declared sites are menu-item pairs at all.  At sites 254, 540 and 558 the two branches realize the SAME item at DIFFERENT lock boundaries -- the choice moves WHEN the record locks, not WHICH item it locks.  The symmetric-menu question is not merely unanswered at those three sites, it is ill-posed there: there is no pair of distinct menu items to swap.",
+    "genuine_menu_sites": [
+     450,
+     475,
+     715
+    ],
+    "per_atom_table_all_eight": [
+     {
+      "atom_index": 0,
+      "kind": "SAME_LOCK_DIFFERENT_ITEM",
+      "lock_boundary": [
+       1811,
+       1811
+      ],
+      "occasion_application": 300,
+      "realized_item": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "share_the_schedule": true,
+      "share_the_tick0_state": true,
+      "site_world": 715
+     },
+     {
+      "atom_index": 1,
+      "kind": "SAME_LOCK_DIFFERENT_ITEM",
+      "lock_boundary": [
+       1806,
+       1806
+      ],
+      "occasion_application": 700,
+      "realized_item": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "share_the_schedule": true,
+      "share_the_tick0_state": true,
+      "site_world": 475
+     },
+     {
+      "atom_index": 2,
+      "kind": "DIFFERENT_LOCK_BOUNDARY",
+      "lock_boundary": [
+       719,
+       1076
+      ],
+      "occasion_application": 700,
+      "realized_item": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "share_the_schedule": true,
+      "share_the_tick0_state": true,
+      "site_world": 540
+     },
+     {
+      "atom_index": 3,
+      "kind": "DIFFERENT_LOCK_BOUNDARY",
+      "lock_boundary": [
+       743,
+       1439
+      ],
+      "occasion_application": 702,
+      "realized_item": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "share_the_schedule": true,
+      "share_the_tick0_state": true,
+      "site_world": 254
+     },
+     {
+      "atom_index": 4,
+      "kind": "SAME_LOCK_DIFFERENT_ITEM",
+      "lock_boundary": [
+       1808,
+       1808
+      ],
+      "occasion_application": 702,
+      "realized_item": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "share_the_schedule": true,
+      "share_the_tick0_state": true,
+      "site_world": 450
+     },
+     {
+      "atom_index": 5,
+      "kind": "SAME_LOCK_DIFFERENT_ITEM",
+      "lock_boundary": [
+       1811,
+       1811
+      ],
+      "occasion_application": 702,
+      "realized_item": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "share_the_schedule": true,
+      "share_the_tick0_state": true,
+      "site_world": 715
+     },
+     {
+      "atom_index": 6,
+      "kind": "DIFFERENT_LOCK_BOUNDARY",
+      "lock_boundary": [
+       1135,
+       1425
+      ],
+      "occasion_application": 1100,
+      "realized_item": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "share_the_schedule": true,
+      "share_the_tick0_state": true,
+      "site_world": 558
+     },
+     {
+      "atom_index": 7,
+      "kind": "SAME_LOCK_DIFFERENT_ITEM",
+      "lock_boundary": [
+       1811,
+       1811
+      ],
+      "occasion_application": 1100,
+      "realized_item": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "share_the_schedule": true,
+      "share_the_tick0_state": true,
+      "site_world": 715
+     }
+    ],
+    "this_was_not_anticipated_by_the_spec": true,
+    "timing_only_sites": [
+     254,
+     540,
+     558
+    ]
+   },
+   "CANDIDATE_FAMILY": [
+    {
+     "IS_A_MENU_SWAP_AUTOMORPHISM": false,
+     "candidate": "IDENTITY",
+     "declared_expectation_before_the_check": "automorphism, moves nothing",
+     "family": "relabelling",
+     "moves_the_endpoint_pair": false,
+     "notes": "if this fails the whole routine is broken",
+     "purpose": "positive control -- the machinery must certify the trivial automorphism",
+     "verdict": {
+      "first_broken_gate_witness": null,
+      "global_multiset_preserved": true,
+      "is_an_automorphism": true,
+      "is_an_automorphism_multiset_reading": true,
+      "ordered_statement_lists_identical": true,
+      "per_station_multiset_preserved": true
+     }
+    },
+    {
+     "IS_A_MENU_SWAP_AUTOMORPHISM": false,
+     "candidate": "LR_SWAP",
+     "declared_expectation_before_the_check": "unknown before the check",
+     "family": "relabelling",
+     "moves_the_endpoint_pair": true,
+     "notes": "item_of reads the two endpoint wires, so swapping their columns is exactly the menu swap (0,1)<->(1,0)",
+     "purpose": "the direct menu swap: exchange the two endpoint wires, which exchanges the two menu items at EVERY site at once",
+     "verdict": {
+      "first_broken_gate_witness": {
+       "gate_present_in_the_original_only": [
+        2,
+        40,
+        1,
+        124
+       ],
+       "multiplicity_image": 1,
+       "multiplicity_original": 0,
+       "station": 0
+      },
+      "global_multiset_preserved": false,
+      "is_an_automorphism": false,
+      "is_an_automorphism_multiset_reading": false,
+      "ordered_statement_lists_identical": false,
+      "per_station_multiset_preserved": false
+     }
+    },
+    {
+     "IS_A_MENU_SWAP_AUTOMORPHISM": false,
+     "candidate": "LR_SWAP_PLUS_BANK_UV",
+     "declared_expectation_before_the_check": "unknown before the check",
+     "family": "relabelling",
+     "moves_the_endpoint_pair": true,
+     "notes": "the six gate shapes touching the endpoint wires ARE pairwise mirror-symmetric under this map; the question is whether the repair closes",
+     "purpose": "the menu swap composed with the obvious re-labelling that repairs its first-order breakage (the two direction wires the endpoints control)",
+     "verdict": {
+      "first_broken_gate_witness": {
+       "gate_present_in_the_original_only": [
+        1,
+        255,
+        124,
+        0
+       ],
+       "multiplicity_image": 0,
+       "multiplicity_original": 2,
+       "station": 0
+      },
+      "global_multiset_preserved": false,
+      "is_an_automorphism": false,
+      "is_an_automorphism_multiset_reading": false,
+      "ordered_statement_lists_identical": false,
+      "per_station_multiset_preserved": false
+     }
+    },
+    {
+     "IS_A_MENU_SWAP_AUTOMORPHISM": false,
+     "candidate": "LR_SWAP_PLUS_BANK_UV_AND_BANK1",
+     "declared_expectation_before_the_check": "unknown before the check",
+     "family": "relabelling",
+     "moves_the_endpoint_pair": true,
+     "notes": "widening the repair family, per the checker's mandate to hunt an automorphism the first pass missed",
+     "purpose": "the same repair extended to the mirror bank",
+     "verdict": {
+      "first_broken_gate_witness": {
+       "gate_present_in_the_original_only": [
+        2,
+        171,
+        124,
+        71
+       ],
+       "multiplicity_image": 0,
+       "multiplicity_original": 1,
+       "station": 0
+      },
+      "global_multiset_preserved": false,
+      "is_an_automorphism": false,
+      "is_an_automorphism_multiset_reading": false,
+      "ordered_statement_lists_identical": false,
+      "per_station_multiset_preserved": false
+     }
+    },
+    {
+     "IS_A_MENU_SWAP_AUTOMORPHISM": false,
+     "candidate": "REFINEMENT_CLASS_INVOLUTION",
+     "declared_expectation_before_the_check": "unknown before the check",
+     "family": "relabelling",
+     "moves_the_endpoint_pair": false,
+     "notes": "32 transpositions moving 64 wires; fixes LEFT and RIGHT by construction, since the refinement placed them in singleton classes -- which is Theorem A1 seen from the other side",
+     "purpose": "THE POSITIVE CONTROL FOR NON-TRIVIALITY: the involution built from the refinement's own non-singleton colour classes.  If this IS an automorphism then the routine demonstrably finds real symmetries, and the menu-swap negative cannot be blamed on a search that finds nothing.",
+     "verdict": {
+      "first_broken_gate_witness": null,
+      "global_multiset_preserved": true,
+      "is_an_automorphism": false,
+      "is_an_automorphism_multiset_reading": true,
+      "ordered_statement_lists_identical": false,
+      "per_station_multiset_preserved": true
+     }
+    },
+    {
+     "IS_A_MENU_SWAP_AUTOMORPHISM": false,
+     "candidate": "BANK_CELL_SWAP",
+     "declared_expectation_before_the_check": "unknown before the check",
+     "family": "relabelling",
+     "moves_the_endpoint_pair": false,
+     "notes": "swaps the two bank cells inside each of the first two banks; fixes the endpoint wires by construction",
+     "purpose": "POSITIVE CONTROL FOR NON-TRIVIALITY: a large, genuinely non-identity candidate drawn from the refinement's own non-singleton classes, so that a negative on the menu swap cannot be blamed on a search that finds nothing",
+     "verdict": {
+      "first_broken_gate_witness": {
+       "gate_present_in_the_original_only": [
+        0,
+        172,
+        0,
+        0
+       ],
+       "multiplicity_image": 2,
+       "multiplicity_original": 0,
+       "station": 0
+      },
+      "global_multiset_preserved": false,
+      "is_an_automorphism": false,
+      "is_an_automorphism_multiset_reading": false,
+      "ordered_statement_lists_identical": false,
+      "per_station_multiset_preserved": false
+     }
+    }
+   ],
+   "LEFT_AND_RIGHT_ARE_SEPARATED_UNDER_EVERY_LABEL": true,
+   "METHOD_IS_A_THEOREM_NOT_A_SEARCH": "the negative rests on 1-WL colour refinement, which is STABLE under every automorphism of the labelled structure.  Two wires in different stable colours cannot be exchanged by ANY structure-preserving relabelling.  This is a non-existence proof, not an exhausted search.",
+   "PER_SITE_AUTOMORPHISM_GROUPS": [
+    {
+     "automorphism_group_acting_on_this_branch_pair": "TRIVIAL",
+     "branch_pair_kind": "DIFFERENT_LOCK_BOUNDARY",
+     "is_a_genuine_two_ITEM_menu_pair": false,
+     "lock_boundary": [
+      743,
+      1439
+     ],
+     "occasion_application": 702,
+     "order_of_the_induced_group": 1,
+     "realized_item": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "site_world": 254,
+     "swap_automorphism_exists": false,
+     "why": "no relabelling of the compiled substrate maps LEFT to RIGHT (Theorem A1, refinement-separated under the COARSEST label), and no relabelling whatever can move the branch-0 choice word 0 to the branch-1 word (Theorem A2, because relabellings act on lane words by permutation and every permutation fixes the additive identity)"
+    },
+    {
+     "automorphism_group_acting_on_this_branch_pair": "TRIVIAL",
+     "branch_pair_kind": "SAME_LOCK_DIFFERENT_ITEM",
+     "is_a_genuine_two_ITEM_menu_pair": true,
+     "lock_boundary": [
+      1808,
+      1808
+     ],
+     "occasion_application": 702,
+     "order_of_the_induced_group": 1,
+     "realized_item": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     "site_world": 450,
+     "swap_automorphism_exists": false,
+     "why": "no relabelling of the compiled substrate maps LEFT to RIGHT (Theorem A1, refinement-separated under the COARSEST label), and no relabelling whatever can move the branch-0 choice word 0 to the branch-1 word (Theorem A2, because relabellings act on lane words by permutation and every permutation fixes the additive identity)"
+    },
+    {
+     "automorphism_group_acting_on_this_branch_pair": "TRIVIAL",
+     "branch_pair_kind": "SAME_LOCK_DIFFERENT_ITEM",
+     "is_a_genuine_two_ITEM_menu_pair": true,
+     "lock_boundary": [
+      1806,
+      1806
+     ],
+     "occasion_application": 700,
+     "order_of_the_induced_group": 1,
+     "realized_item": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     "site_world": 475,
+     "swap_automorphism_exists": false,
+     "why": "no relabelling of the compiled substrate maps LEFT to RIGHT (Theorem A1, refinement-separated under the COARSEST label), and no relabelling whatever can move the branch-0 choice word 0 to the branch-1 word (Theorem A2, because relabellings act on lane words by permutation and every permutation fixes the additive identity)"
+    },
+    {
+     "automorphism_group_acting_on_this_branch_pair": "TRIVIAL",
+     "branch_pair_kind": "DIFFERENT_LOCK_BOUNDARY",
+     "is_a_genuine_two_ITEM_menu_pair": false,
+     "lock_boundary": [
+      719,
+      1076
+     ],
+     "occasion_application": 700,
+     "order_of_the_induced_group": 1,
+     "realized_item": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "site_world": 540,
+     "swap_automorphism_exists": false,
+     "why": "no relabelling of the compiled substrate maps LEFT to RIGHT (Theorem A1, refinement-separated under the COARSEST label), and no relabelling whatever can move the branch-0 choice word 0 to the branch-1 word (Theorem A2, because relabellings act on lane words by permutation and every permutation fixes the additive identity)"
+    },
+    {
+     "automorphism_group_acting_on_this_branch_pair": "TRIVIAL",
+     "branch_pair_kind": "DIFFERENT_LOCK_BOUNDARY",
+     "is_a_genuine_two_ITEM_menu_pair": false,
+     "lock_boundary": [
+      1135,
+      1425
+     ],
+     "occasion_application": 1100,
+     "order_of_the_induced_group": 1,
+     "realized_item": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "site_world": 558,
+     "swap_automorphism_exists": false,
+     "why": "no relabelling of the compiled substrate maps LEFT to RIGHT (Theorem A1, refinement-separated under the COARSEST label), and no relabelling whatever can move the branch-0 choice word 0 to the branch-1 word (Theorem A2, because relabellings act on lane words by permutation and every permutation fixes the additive identity)"
+    },
+    {
+     "automorphism_group_acting_on_this_branch_pair": "TRIVIAL",
+     "branch_pair_kind": "SAME_LOCK_DIFFERENT_ITEM",
+     "is_a_genuine_two_ITEM_menu_pair": true,
+     "lock_boundary": [
+      1811,
+      1811
+     ],
+     "occasion_application": 1100,
+     "order_of_the_induced_group": 1,
+     "realized_item": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     "site_world": 715,
+     "swap_automorphism_exists": false,
+     "why": "no relabelling of the compiled substrate maps LEFT to RIGHT (Theorem A1, refinement-separated under the COARSEST label), and no relabelling whatever can move the branch-0 choice word 0 to the branch-1 word (Theorem A2, because relabellings act on lane words by permutation and every permutation fixes the additive identity)"
+    }
+   ],
+   "REFINEMENTS": {
+    "bare": {
+     "LEFT_and_RIGHT_share_a_colour": false,
+     "colour_classes": 514,
+     "colour_of_LEFT": 1,
+     "colour_of_RIGHT": 2,
+     "invariance_of_this_label": "invariant under every lane permutation AND every station (time) permutation",
+     "iterations": 5,
+     "non_singleton_classes": 32,
+     "wires": 546
+    },
+    "exact": {
+     "LEFT_and_RIGHT_share_a_colour": false,
+     "colour_classes": 514,
+     "colour_of_LEFT": 1,
+     "colour_of_RIGHT": 2,
+     "invariance_of_this_label": "fixes lanes and stations",
+     "iterations": 5,
+     "non_singleton_classes": 32,
+     "wires": 546
+    },
+    "popcount": {
+     "LEFT_and_RIGHT_share_a_colour": false,
+     "colour_classes": 514,
+     "colour_of_LEFT": 1,
+     "colour_of_RIGHT": 2,
+     "invariance_of_this_label": "invariant under EVERY lane (census/layout) permutation",
+     "iterations": 5,
+     "non_singleton_classes": 32,
+     "wires": 546
+    }
+   },
+   "THEOREM_A1": {
+    "THE_SEPARATING_WITNESS": {
+     "bank_cell_decode_of_the_extra_targets": {
+      "105": {
+       "cell_index": 1,
+       "cell_width": 34,
+       "offset_within_bank0": 64,
+       "offset_within_cell": 30
+      },
+      "255": {
+       "cell_index": 6,
+       "cell_width": 34,
+       "offset_within_bank0": 214,
+       "offset_within_cell": 10
+      },
+      "256": {
+       "cell_index": 6,
+       "cell_width": 34,
+       "offset_within_bank0": 215,
+       "offset_within_cell": 11
+      },
+      "71": {
+       "cell_index": 0,
+       "cell_width": 34,
+       "offset_within_bank0": 30,
+       "offset_within_cell": 30
+      }
+     },
+     "downstream_of_LEFT": [
+      131,
+      256
+     ],
+     "downstream_of_RIGHT": [
+      71,
+      105,
+      131,
+      255
+     ],
+     "in_words": "the endpoint pair is mirror-symmetric one gate deep and asymmetric two gates deep.  The wire the RIGHT endpoint controls fans out to strictly more of the record machinery than the wire the LEFT endpoint controls.  The two menu items therefore have different downstream causal roles in the compiled law -- they are distinguished by the supplied structure, not merely labelled differently.",
+     "targets_reachable_from_LEFT_but_not_from_RIGHT": [
+      256
+     ],
+     "targets_reachable_from_RIGHT_but_not_from_LEFT": [
+      71,
+      105,
+      255
+     ]
+    },
+    "depth_1_looks_symmetric": {
+     "LEFT_as_control": {
+      "c2->125": 22,
+      "c2->40": 11
+     },
+     "LEFT_as_target": {},
+     "RIGHT_as_control": {
+      "c2->124": 22,
+      "c2->40": 11
+     },
+     "RIGHT_as_target": {},
+     "reading": "both endpoint wires are TOF second-controls only and are NEVER written by the base program, with matching multiplicities -- at depth 1 the pair looks perfectly mirror-symmetric"
+    },
+    "depth_2_separates_them": {
+     "LEFT:wire_125": {
+      "bank_decode": {
+       "bank0_base": 41,
+       "named_offset": "A.V_TO_U",
+       "offset_within_bank0": 84
+      },
+      "fanout_multiset": {
+       "c1->131": 11,
+       "c2->256": 44
+      },
+      "fanout_targets_as_control": [
+       131,
+       256
+      ]
+     },
+     "RIGHT:wire_124": {
+      "bank_decode": {
+       "bank0_base": 41,
+       "named_offset": "A.U_TO_V",
+       "offset_within_bank0": 83
+      },
+      "fanout_multiset": {
+       "c1->131": 11,
+       "c2->105": 11,
+       "c2->255": 44,
+       "c2->71": 11
+      },
+      "fanout_targets_as_control": [
+       71,
+       105,
+       131,
+       255
+      ]
+     }
+    },
+    "endpoint_wires": {
+     "LEFT": 1,
+     "RIGHT": 6,
+     "SOURCE_POINTER": 40
+    },
+    "holds": true,
+    "statement": "no relabelling of the compiled substrate maps the LEFT endpoint wire to the RIGHT endpoint wire.  Therefore the global menu swap -- the only map in the relabelling family that changes any site's realized item -- is NOT a substrate automorphism."
+   },
+   "THEOREM_A2": {
+    "WHY_THIS_IS_A_STRUCTURAL_FACT_AND_NOT_AN_ENCODING_ACCIDENT": "the 936 grammar is ' c[t] ^= CHOICE(k) & M' with CHOICE(k) in {0, S_k}.  One menu item is the IDENTITY of the update and the other is not.  A menu whose two items are 'the node contributed nothing' and 'the node contributed S_k' is an ASYMMETRIC menu by construction, independently of what the compiled program happens to look like.  Theorem A1 and Theorem A2 are therefore two independent routes to the same negative: A1 is about this substrate's record machinery, A2 is about the shape of the choice grammar itself.",
+    "every_lane_permutation_fixes_the_branch_0_word": true,
+    "holds": true,
+    "lane_permutation_probe": [
+     {
+      "fixes_the_branch_0_word": true,
+      "image_of_the_branch_0_choice_word": 0,
+      "lane_permutation": "identity"
+     },
+     {
+      "fixes_the_branch_0_word": true,
+      "image_of_the_branch_0_choice_word": 0,
+      "lane_permutation": "layout_reversal"
+     },
+     {
+      "fixes_the_branch_0_word": true,
+      "image_of_the_branch_0_choice_word": 0,
+      "lane_permutation": "declared_rotation"
+     }
+    ],
+    "per_atom": [
+     {
+      "branch_0_choice_word_popcount": 0,
+      "branch_0_word_is_the_additive_identity": true,
+      "branch_1_choice_word_popcount": 1,
+      "branch_1_word_is_nonzero": true,
+      "occasion_application": 300,
+      "site_world": 715
+     },
+     {
+      "branch_0_choice_word_popcount": 0,
+      "branch_0_word_is_the_additive_identity": true,
+      "branch_1_choice_word_popcount": 1,
+      "branch_1_word_is_nonzero": true,
+      "occasion_application": 700,
+      "site_world": 475
+     },
+     {
+      "branch_0_choice_word_popcount": 0,
+      "branch_0_word_is_the_additive_identity": true,
+      "branch_1_choice_word_popcount": 1,
+      "branch_1_word_is_nonzero": true,
+      "occasion_application": 700,
+      "site_world": 540
+     },
+     {
+      "branch_0_choice_word_popcount": 0,
+      "branch_0_word_is_the_additive_identity": true,
+      "branch_1_choice_word_popcount": 1,
+      "branch_1_word_is_nonzero": true,
+      "occasion_application": 702,
+      "site_world": 254
+     },
+     {
+      "branch_0_choice_word_popcount": 0,
+      "branch_0_word_is_the_additive_identity": true,
+      "branch_1_choice_word_popcount": 1,
+      "branch_1_word_is_nonzero": true,
+      "occasion_application": 702,
+      "site_world": 450
+     },
+     {
+      "branch_0_choice_word_popcount": 0,
+      "branch_0_word_is_the_additive_identity": true,
+      "branch_1_choice_word_popcount": 1,
+      "branch_1_word_is_nonzero": true,
+      "occasion_application": 702,
+      "site_world": 715
+     },
+     {
+      "branch_0_choice_word_popcount": 0,
+      "branch_0_word_is_the_additive_identity": true,
+      "branch_1_choice_word_popcount": 1,
+      "branch_1_word_is_nonzero": true,
+      "occasion_application": 1100,
+      "site_world": 558
+     },
+     {
+      "branch_0_choice_word_popcount": 0,
+      "branch_0_word_is_the_additive_identity": true,
+      "branch_1_choice_word_popcount": 1,
+      "branch_1_word_is_nonzero": true,
+      "occasion_application": 1100,
+      "site_world": 715
+     }
+    ],
+    "statement": "no relabelling automorphism -- of wires, of lanes, of stations, or any composite -- can swap the two branches at ANY site.  Branch identity at an occasion is the CHOICE WORD delivered there, drawn from {0, S_k}; a relabelling acts on lane words by a permutation of bit positions; every such map fixes the all-zero word.  So branch 0 is a FIXED POINT of the entire relabelling group and cannot be exchanged with branch 1."
+   },
+   "THE_POSITIVE_CONTROL": {
+    "WHAT_IT_ESTABLISHES": "the routine is not vacuously negative: a genuinely non-trivial relabelling of this substrate IS certified as a program automorphism under the per-station multiset reading (and is reported as NOT one under the strict ordered reading, because gate order inside a station is part of a bit-identical compile).  It fixes both endpoint wires -- Theorem A1 corroborated from the opposite direction: the symmetries this substrate HAS are symmetries of the record cells, and none of them touches the menu.",
+    "candidate": "REFINEMENT_CLASS_INVOLUTION",
+    "example_classes": [
+     [
+      41,
+      75
+     ],
+     [
+      42,
+      76
+     ],
+     [
+      43,
+      77
+     ],
+     [
+      44,
+      78
+     ],
+     [
+      45,
+      79
+     ],
+     [
+      46,
+      80
+     ]
+    ],
+    "fixes_LEFT_and_RIGHT": true,
+    "fixes_the_tick0_state": false,
+    "is_a_program_automorphism_multiset_reading": true,
+    "is_a_program_automorphism_ordered_reading": false,
+    "tick0_wires_it_moves": [
+     41,
+     75,
+     42,
+     76,
+     43,
+     77,
+     44,
+     78
+    ],
+    "transpositions": 32,
+    "wires_moved": 64
+   },
+   "THE_REPAIR_CHAIN_AND_WHERE_IT_TERMINATES": {
+    "reading": "the menu swap is repaired step by step and the chain is followed to its irreducible obstruction, so the negative is not a first-order accident of the encoding.",
+    "steps": [
+     {
+      "breaks_at": {
+       "gate_present_in_the_original_only": [
+        2,
+        40,
+        1,
+        124
+       ],
+       "multiplicity_image": 1,
+       "multiplicity_original": 0,
+       "station": 0
+      },
+      "map": "LR_SWAP",
+      "reading": "first order: the two endpoints control DIFFERENT direction wires"
+     },
+     {
+      "breaks_at": {
+       "gate_present_in_the_original_only": [
+        1,
+        255,
+        124,
+        0
+       ],
+       "multiplicity_image": 0,
+       "multiplicity_original": 2,
+       "station": 0
+      },
+      "map": "LR_SWAP_PLUS_BANK_UV",
+      "reading": "repairing the bank-0 direction pair exposes the bank-1 mirror"
+     },
+     {
+      "breaks_at": {
+       "gate_present_in_the_original_only": [
+        2,
+        171,
+        124,
+        71
+       ],
+       "multiplicity_image": 0,
+       "multiplicity_original": 1,
+       "station": 0
+      },
+      "map": "LR_SWAP_PLUS_BANK_UV_AND_BANK1",
+      "reading": "THE IRREDUCIBLE OBSTRUCTION.  With both mirror pairs repaired, what remains is a TOF whose control is the direction wire the RIGHT endpoint feeds and whose target is a record cell the LEFT endpoint's side never reaches.  No further re-labelling can absorb it, which is exactly what the refinement proves."
+     }
+    ]
+   },
+   "VERDICT": "DECISIVE NEGATIVE.  No swap automorphism exists at any of the 6 sites, by two independent routes.  Symmetric-site envariance has NO PURCHASE on this substrate.",
+   "certificate": "Q1_THE_MENU_SWAP_AUTOMORPHISM",
+   "definition_of_a_substrate_automorphism": "a relabelling (pi on wire addresses, sigma on lane positions) such that (a) the compiled program is invariant -- reported under BOTH readings, the ordered per-station statement lists and the per-station gate multiset, with neither privileged -- and (b) the tick-0 state is invariant.  Such a map carries trajectories to trajectories and therefore acts on the tree.",
+   "pass": true,
+   "sites_declared": [
+    254,
+    450,
+    475,
+    540,
+    558,
+    715
+   ],
+   "sites_that_are_genuine_two_item_menu_pairs": [
+    450,
+    475,
+    715
+   ],
+   "sites_with_a_swap_automorphism": [],
+   "the_question": "at each of the 6 declared sites of 936's arena, does there EXIST a substrate automorphism that swaps the two menu items (1,0)<->(0,1) at that site while fixing everything else observable?"
+  },
+  "Q2_THE_CONDITIONAL_THEOREM_AND_ITS_ANTECEDENT": {
+   "HYPOTHETICAL_PRICING_OF_WHAT_THE_PRINCIPLE_WOULD_FORCE": {
+    "IF_the_antecedent_held_and_a_site_had_a_single_orbit_menu": {
+     "THIS_IS_PRICING_NOT_ADOPTION": "the antecedent is FALSE on this substrate at all 6 sites (Q1).  This row exhibits what a principle WOULD force in order to price it.  Nothing here supplies, prefers or adopts a value for mu, and the real arena's algebra below is untouched and symbolic.",
+     "invariance_would_add": "w_0 = w_1",
+     "normalisation_forced_by_the_substrate": "w_0 + w_1 = 1",
+     "the_unique_solution_in_exact_arithmetic": "1/2",
+     "verified_exactly": true
+    }
+   },
+   "THE_ANTECEDENTS_STATUS": {
+    "EXACT_LOGICAL_RELATIONSHIP_TO_A3": {
+     "A3_does_not_imply_naturality": "936 measured a full freedom count under A3-with-consistency alone -- one free number per site, no cross-site relation forced.  A measure can exist and be non-invariant.",
+     "A3_supplies": "EXISTENCE -- a measure over the available possibilities at a site exists (and, on 936's measured constraint, indexes worlds and normalises per node).",
+     "IS_NATURALITY_WEAKER_THAN_A3_AS_WRITTEN": "NOT COMPARABLE AS A SUBSTITUTE, and strictly WEAKER AS A SUPPLY.  It cannot be adopted INSTEAD of A3 (no existential import); adopted ALONGSIDE A3 it would narrow A3's residue only at single-orbit menus.  On this substrate there are none, so A3 + naturality has EXACTLY the same content as A3 alone -- the narrowing is empty.",
+     "naturality_does_not_imply_A3": "an invariance sentence has no existential import: it is vacuously satisfiable by there being no weight at all.  Naturality alone therefore supplies NOTHING and cannot replace A3.",
+     "naturality_supplies": "INVARIANCE -- a constraint on a measure already supplied.",
+     "so_they_are_LOGICALLY_INDEPENDENT": true,
+     "the_measured_consequence": "adding naturality to A3 changes the freedom count by 0 on the declared arena: 6 free numbers per site before, 6 after."
+    },
+    "IS_IT_A3_SHAPED": true,
+    "IS_IT_DERIVABLE": false,
+    "PRICED_IN_ONE_SENTENCE": "A naturality import would read: 'the weight on a site's available possibilities is invariant under every automorphism of the supplied structure.'",
+    "VERDICT": "NOT DERIVABLE FROM SUPPLIED CONTENT.  Every candidate ground fails, and the two closest fail in instructive opposite ways: the Open Gates boundary excludes weights from axiom content outright, and the no-privilege clause is SATISFIED by unequal weights here because its own escape condition -- distinction by the supplied structure -- is met by the measured LEFT/RIGHT asymmetry.",
+    "all_byte_quotes_present": true,
+    "candidate_grounds_tested": [
+     {
+      "analysis": "THE CLOSEST CANDIDATE, AND IT DEFEATS ITSELF HERE.  The clause does not say possibilities are indistinguishable; it says they are distinguished BY THE SUPPLIED STRUCTURE ALONE.  Q1's Theorem A1 measured that this substrate's supplied structure DOES distinguish the two menu items -- the wire the RIGHT endpoint controls fans out to strictly more record machinery than the LEFT's.  The clause is therefore SATISFIED by unequal weights at these menus: its own escape condition is met.  Read as a naturality principle it would also be self-undermining, since it would force weights to be constant on orbits that the supplied structure has already separated.",
+      "byte_quote": "No possibility is privileged. Possibilities are distinguished by the supplied",
+      "candidate_ground": "the Qubit axiom's no-privilege clause",
+      "does_it_ground_weight_automorphism_invariance": false,
+      "quote_present": true,
+      "source": "docs/MINIMAL_AXIOMS_2026-06-29.md"
+     },
+     {
+      "analysis": "a clause about a law's DOMAIN and single-valuedness ('at every state where the condition holds it gives exactly one answer'), not about any measure over branches.  On the 936 substrate the law is no longer single-valued at a choice node by construction, which is the R2 relaxation itself; the clause constrains the law's states, not the weights labelling its branches.",
+      "byte_quote": "A law privileges no states.",
+      "candidate_ground": "the Law clause",
+      "does_it_ground_weight_automorphism_invariance": false,
+      "quote_present": true,
+      "source": "docs/MINIMAL_AXIOMS_2026-06-29.md"
+     },
+     {
+      "analysis": "DECISIVE NEGATIVE ON DERIVABILITY.  Born weights, probability rules and formation rules -- 'which admissible possibility a new record locks, at which site, with what weight, or at what rate' -- are named as OUTSIDE axiom content.  An invariance requirement ON a weight is a statement about the weight; if the weight is not axiom-supplied then neither is a constraint on it.",
+      "byte_quote": "Born weights, probability",
+      "candidate_ground": "the Open Gates boundary",
+      "does_it_ground_weight_automorphism_invariance": false,
+      "quote_present": true,
+      "source": "docs/MINIMAL_AXIOMS_2026-06-29.md"
+     },
+     {
+      "analysis": "the 2026-07-04 revision made OCCURRENCE axiom content ('Records form.') while every formation RULE -- explicitly including 'with what weight' -- remained downstream supplier content.  Occurrence without a rule supplies no invariance.",
+      "byte_quote": "formation rule (which admissible possibility, at which site, with what weight",
+      "candidate_ground": "the Record axiom's formation sentence",
+      "does_it_ground_weight_automorphism_invariance": false,
+      "quote_present": true,
+      "source": "docs/MINIMAL_AXIOMS_2026-06-29.md"
+     },
+     {
+      "analysis": "the repo already tried once to land an invariance-forces-uniformity statement as physics and REPAIRED it on 2026-06-07 to strip the premise, leaving pure linear algebra plus an unsupplied hypothesis.  The same demotion would apply to a naturality sentence here.",
+      "byte_quote": "is a separate physical/reference-state identification premise",
+      "candidate_ground": "the inner-automorphism note's stripped premise",
+      "does_it_ground_weight_automorphism_invariance": false,
+      "quote_present": true,
+      "source": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md"
+     },
+     {
+      "analysis": "the repo has already NAMED the full-symmetry premise and recorded it as underivable, on an arena where it does have purchase.  That is the same premise this block would need.",
+      "byte_quote": "it is not derived from H1-H4 or from the minimal axioms",
+      "candidate_ground": "the Gleason-bridge R4 premise",
+      "does_it_ground_weight_automorphism_invariance": false,
+      "quote_present": true,
+      "source": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md"
+     },
+     {
+      "analysis": "the dominant prior art's own accounting: symmetry-implies-equality is DERIVED (A4 = A1+A2+A3) but only once A3 grants that a state-functional weight EXISTS.  An invariance has no existential import; it constrains a function already supplied.",
+      "byte_quote": "The only premise not contained in {Quantum, Record} is **A3**",
+      "candidate_ground": "the envariance note's A3 admission",
+      "does_it_ground_weight_automorphism_invariance": false,
+      "quote_present": true,
+      "source": "docs/BORN_FROM_ENVARIANCE_CONDITIONAL_ON_STATE_FUNCTIONAL_PROBABILITY_NOTE_2026-06-05.md"
+     }
+    ],
+    "the_antecedent": "branch weights are invariant under substrate automorphisms (a NATURALITY sentence)"
+   },
+   "THE_CONDITIONAL_THEOREM": {
+    "IT_IS_VACUOUS_ON_THIS_SUBSTRATE": true,
+    "coverage": "0 of 6",
+    "exact_verification": {
+     "arithmetic": "exact rationals; no float appears anywhere",
+     "equations_contributed_by_invariance_in_total": 0,
+     "free_parameters_after_invariance": 6,
+     "free_parameters_before_invariance": 6,
+     "matches_the_pinned_936_freedom_count": true,
+     "orbit_structure_per_site": [
+      {
+       "equations_contributed_by_invariance": 0,
+       "number_of_orbits": 2,
+       "orbits_of_the_two_menu_items_under_the_automorphism_group": [
+        [
+         0
+        ],
+        [
+         1
+        ]
+       ],
+       "single_orbit": false,
+       "site_world": 254
+      },
+      {
+       "equations_contributed_by_invariance": 0,
+       "number_of_orbits": 2,
+       "orbits_of_the_two_menu_items_under_the_automorphism_group": [
+        [
+         0
+        ],
+        [
+         1
+        ]
+       ],
+       "single_orbit": false,
+       "site_world": 450
+      },
+      {
+       "equations_contributed_by_invariance": 0,
+       "number_of_orbits": 2,
+       "orbits_of_the_two_menu_items_under_the_automorphism_group": [
+        [
+         0
+        ],
+        [
+         1
+        ]
+       ],
+       "single_orbit": false,
+       "site_world": 475
+      },
+      {
+       "equations_contributed_by_invariance": 0,
+       "number_of_orbits": 2,
+       "orbits_of_the_two_menu_items_under_the_automorphism_group": [
+        [
+         0
+        ],
+        [
+         1
+        ]
+       ],
+       "single_orbit": false,
+       "site_world": 540
+      },
+      {
+       "equations_contributed_by_invariance": 0,
+       "number_of_orbits": 2,
+       "orbits_of_the_two_menu_items_under_the_automorphism_group": [
+        [
+         0
+        ],
+        [
+         1
+        ]
+       ],
+       "single_orbit": false,
+       "site_world": 558
+      },
+      {
+       "equations_contributed_by_invariance": 0,
+       "number_of_orbits": 2,
+       "orbits_of_the_two_menu_items_under_the_automorphism_group": [
+        [
+         0
+        ],
+        [
+         1
+        ]
+       ],
+       "single_orbit": false,
+       "site_world": 715
+      }
+     ],
+     "the_freedom_count_is_unchanged": true
+    },
+    "provenance_of_the_general_form": "this is the landed menu-uniformity corollary (2026-07-11) instantiated on the 936 arena; it is imported, not re-derived.",
+    "sites_covered_on_the_936_arena": [],
+    "sites_not_covered": [
+     254,
+     450,
+     475,
+     540,
+     558,
+     715
+    ],
+    "statement": "IF branch weights are invariant under substrate automorphisms THEN the two weights at a site are equal at exactly those sites whose two menu items form a single orbit of the automorphism group."
+   },
+   "THE_REAL_ARENA_STAYS_SYMBOLIC": {
+    "example_leaf_weight_polynomial_unevaluated": "mu_site254*mu_site450*mu_site475*mu_site540*mu_site558*mu_site715^3 + -3*mu_site254*mu_site450*mu_site475*mu_site540*mu_site558*mu_site715^2 + 3*mu_site254*mu_site450*mu_site475*mu_site540*mu_site558*mu_site715 + -1*mu_site254*mu_site450*mu_site475*mu_site540*mu_site558 + -1*mu_site254*mu_site450*mu_site475*mu_site540*mu_site715^3 + 3*mu_site254*mu_site450*mu_site475*mu_site540*mu_site715^2 + -3*mu_site254*mu_site450*mu_site475*mu_site540*mu_site715 + mu_site254*mu_site450*mu_site475*mu_site540 + -1*mu_site254*mu_site450*mu_site475*mu_site558*mu_site715^3 + 3*mu_site254*mu_site450*mu_site475*mu_site558*mu_site715^2 + -3*mu_site254*mu_site450*mu_site475*mu_site558*mu_site715 + mu_site254*mu_site450*mu_site475*mu_site558 + mu_site254*mu_site450*mu_site475*mu_site715^3 + -3*mu_site254*mu_site450*mu_site475*mu_site715^2 + 3*mu_site254*mu_site450*mu_site475*mu_site715 + -1*mu_site254*mu_site450*mu_site475 + -1*mu_site254*mu_site450*mu_site540*mu_site558*mu_site715^3 + 3*mu_site254*mu_site450*mu_site540*mu_site558*mu_site715^2 + -3*mu_site254*mu_site450*mu_site540*mu_site558*mu_site715 + mu_site254*mu_site450*mu_site540*mu_site558 + mu_site254*mu_site450*mu_site540*mu_site715^3 + -3*mu_site254*mu_site450*mu_site540*mu_site715^2 + 3*mu_site254*mu_site450*mu_site540*mu_site715 + -1*mu_site254*mu_site450*mu_site540 + mu_site254*mu_site450*mu_site558*mu_site715^3 + -3*mu_site254*mu_site450*mu_site558*mu_site715^2 + 3*mu_site254*mu_site450*mu_site558*mu_site715 + -1*mu_site254*mu_site450*mu_site558 + -1*mu_site254*mu_site450*mu_site715^3 + 3*mu_site254*mu_site450*mu_site715^2 + -3*mu_site254*mu_site450*mu_site715 + mu_site254*mu_site450 + -1*mu_site254*mu_site475*mu_site540*mu_site558*mu_site715^3 + 3*mu_site254*mu_site475*mu_site540*mu_site558*mu_site715^2 + -3*mu_site254*mu_site475*mu_site540*mu_site558*mu_site715 + mu_site254*mu_site475*mu_site540*mu_site558 + mu_site254*mu_site475*mu_site540*mu_site715^3 + -3*mu_site254*mu_site475*mu_site540*mu_site715^2 + 3*mu_site254*mu_site475*mu_site540*mu_site715 + -1*mu_site254*mu_site475*mu_site540 + mu_site254*mu_site475*mu_site558*mu_site715^3 + -3*mu_site254*mu_site475*mu_site558*mu_site715^2 + 3*mu_site254*mu_site475*mu_site558*mu_site715 + -1*mu_site254*mu_site475*mu_site558 + -1*mu_site254*mu_site475*mu_site715^3 + 3*mu_site254*mu_site475*mu_site715^2 + -3*mu_site254*mu_site475*mu_site715 + mu_site254*mu_site475 + mu_site254*mu_site540*mu_site558*mu_site715^3 + -3*mu_site254*mu_site540*mu_site558*mu_site715^2 + 3*mu_site254*mu_site540*mu_site558*mu_site715 + -1*mu_site254*mu_site540*mu_site558 + -1*mu_site254*mu_site540*mu_site715^3 + 3*mu_site254*mu_site540*mu_site715^2 + -3*mu_site254*mu_site540*mu_site715 + mu_site254*mu_site540 + -1*mu_site254*mu_site558*mu_site715^3 + 3*mu_site254*mu_site558*mu_site715^2 + -3*mu_site254*mu_site558*mu_site715 + mu_site254*mu_site558 + mu_site254*mu_site715^3 + -3*mu_site254*mu_site715^2 + 3*mu_site254*mu_site715 + -1*mu_site254 + -1*mu_site450*mu_site475*mu_site540*mu_site558*mu_site715^3 + 3*mu_site450*mu_site475*mu_site540*mu_site558*mu_site715^2 + -3*mu_site450*mu_site475*mu_site540*mu_site558*mu_site715 + mu_site450*mu_site475*mu_site540*mu_site558 + mu_site450*mu_site475*mu_site540*mu_site715^3 + -3*mu_site450*mu_site475*mu_site540*mu_site715^2 + 3*mu_site450*mu_site475*mu_site540*mu_site715 + -1*mu_site450*mu_site475*mu_site540 + mu_site450*mu_site475*mu_site558*mu_site715^3 + -3*mu_site450*mu_site475*mu_site558*mu_site715^2 + 3*mu_site450*mu_site475*mu_site558*mu_site715 + -1*mu_site450*mu_site475*mu_site558 + -1*mu_site450*mu_site475*mu_site715^3 + 3*mu_site450*mu_site475*mu_site715^2 + -3*mu_site450*mu_site475*mu_site715 + mu_site450*mu_site475 + mu_site450*mu_site540*mu_site558*mu_site715^3 + -3*mu_site450*mu_site540*mu_site558*mu_site715^2 + 3*mu_site450*mu_site540*mu_site558*mu_site715 + -1*mu_site450*mu_site540*mu_site558 + -1*mu_site450*mu_site540*mu_site715^3 + 3*mu_site450*mu_site540*mu_site715^2 + -3*mu_site450*mu_site540*mu_site715 + mu_site450*mu_site540 + -1*mu_site450*mu_site558*mu_site715^3 + 3*mu_site450*mu_site558*mu_site715^2 + -3*mu_site450*mu_site558*mu_site715 + mu_site450*mu_site558 + mu_site450*mu_site715^3 + -3*mu_site450*mu_site715^2 + 3*mu_site450*mu_site715 + -1*mu_site450 + mu_site475*mu_site540*mu_site558*mu_site715^3 + -3*mu_site475*mu_site540*mu_site558*mu_site715^2 + 3*mu_site475*mu_site540*mu_site558*mu_site715 + -1*mu_site475*mu_site540*mu_site558 + -1*mu_site475*mu_site540*mu_site715^3 + 3*mu_site475*mu_site540*mu_site715^2 + -3*mu_site475*mu_site540*mu_site715 + mu_site475*mu_site540 + -1*mu_site475*mu_site558*mu_site715^3 + 3*mu_site475*mu_site558*mu_site715^2 + -3*mu_site475*mu_site558*mu_site715 + mu_site475*mu_site558 + mu_site475*mu_site715^3 + -3*mu_site475*mu_site715^2 + 3*mu_site475*mu_site715 + -1*mu_site475 + -1*mu_site540*mu_site558*mu_site715^3 + 3*mu_site540*mu_site558*mu_site715^2 + -3*mu_site540*mu_site558*mu_site715 + mu_site540*mu_site558 + mu_site540*mu_site715^3 + -3*mu_site540*mu_site715^2 + 3*mu_site540*mu_site715 + -1*mu_site540 + mu_site558*mu_site715^3 + -3*mu_site558*mu_site715^2 + 3*mu_site558*mu_site715 + -1*mu_site558 + -1*mu_site715^3 + 3*mu_site715^2 + -3*mu_site715 + 1",
+    "leaf_weights_sum_to_one_identically": true,
+    "no_value_substituted_anywhere_on_the_real_arena": true,
+    "per_occasion_free_parameters": 8,
+    "per_site_free_parameters": 6,
+    "weights_remain_formal_polynomials_in_mu": true
+   },
+   "WHAT_WOULD_HAVE_TO_CHANGE": {
+    "WHAT_WOULD_HAVE_TO_CHANGE_FOR_THE_THEOREM_TO_BITE": [
+     "a substrate whose endpoint machinery is MIRROR-SYMMETRIC: the depth-2 fan-out asymmetry (the extra record targets reachable from one endpoint only) removed, so that the two menu items are genuinely interchangeable in the compiled law;",
+     "modification atoms that act on the two menu items SYMMETRICALLY rather than as XOR with a value drawn from {0, S_k} -- because the identity element of the update can never be exchanged with a non-identity element by any relabelling (Theorem A2);",
+     "a menu whose two items form a SINGLE ORBIT of a genuine automorphism group -- the landed menu-uniformity corollary's criterion, which this substrate fails at every site;",
+     "and, separately from all of the above, a supplied naturality sentence, which the antecedent analysis finds is not derivable."
+    ],
+    "the_918_M_A_arena": {
+     "checked_against_pinned_918": true,
+     "does_it_carry_swap_automorphisms_at_ITS_sites": false,
+     "lock_points": 134,
+     "site_possibility_pairs": 268,
+     "why": "the M_A arena lives on the SAME compiled substrate and reads the SAME two endpoint wires (its modification is the CNOT pair REC_A -> LEFT, REC_A -> RIGHT).  Theorem A1's separating witness is a property of the pinned compiler's record machinery, not of the modification, so it applies verbatim: no relabelling maps LEFT to RIGHT there either.  Checked against the pinned 918 rows reproduced in B."
+    }
+   },
+   "certificate": "Q2_THE_CONDITIONAL_THEOREM_AND_ITS_ANTECEDENT",
+   "pass": true
+  },
+  "Q3_THE_VERDICT_FOR_THE_ASK_BAR": {
+   "EVERY_STEP_AND_ITS_EVIDENCE": [
+    {
+     "evidence": "menu-uniformity corollary 2026-07-11, byte-quoted in Q0; imported, not re-derived",
+     "step": "the general lemma is already landed: invariance forces uniformity IFF one orbit"
+    },
+    {
+     "evidence": "Q0's framing verdict; 936's own named successor",
+     "step": "so the whole question reduces to: does a swap automorphism exist on the 936 substrate"
+    },
+    {
+     "evidence": "Theorem A1 -- 1-WL colour refinement separates them under all three labels including the coarsest (kind+role only, invariant under every lane and station permutation); explicit depth-2 witness: targets [71, 105, 255] reachable from the RIGHT endpoint's downstream wire and from no LEFT counterpart",
+     "step": "no relabelling maps LEFT to RIGHT"
+    },
+    {
+     "evidence": "Theorem A2 -- branch identity is the choice word in {0, S_k}; relabellings permute bit positions; every permutation fixes 0",
+     "step": "and no relabelling whatever can swap a branch pair"
+    },
+    {
+     "evidence": "0 of 6 sites covered; invariance contributes 0 equations; freedom count 6 before and 6 after, exact",
+     "step": "so the conditional theorem is vacuous here"
+    },
+    {
+     "evidence": "six candidate grounds tested with byte quotes; the closest, the no-privilege clause, is SATISFIED by unequal weights because the supplied structure already distinguishes the two items",
+     "step": "and the antecedent is not derivable anyway"
+    }
+   ],
+   "NO_ASK_IS_MADE": true,
+   "SHAPE": "(c)",
+   "THE_BLOCK_PRICES_ONLY": "no axiom, primitive, registry, policy, queue or audit surface is touched; no weight value is adopted, preferred or output as law content; A3 is exactly as unadopted after this block as before it.",
+   "THE_STATEMENT": "After this block, the A3 sentence's minimal required content is UNCHANGED: one sentence supplying a weight on the available possibilities at a site, with 936's measured freedom count (one free number per site in the world sense, 6 on the declared arena; normalisation forced per node, index set forced to worlds, no cross-site relation forced).  NO SYMMETRY HAS PURCHASE.  Naturality does not narrow A3's residue here, and it could not be adopted in A3's place in any case.",
+   "WHY_NOT_SHAPE_A": "shape (a) -- 'naturality + the substrate derives symmetric-site values, A3's residue is asymmetric menus only' -- requires swap automorphisms to exist.  They do not, at any site, by two independent routes (Theorem A1: no relabelling maps LEFT to RIGHT, refinement-separated under the coarsest label; Theorem A2: no relabelling can move the branch-0 choice word off the additive identity).  Worse for shape (a) than expected: HALF the declared arena's sites are not menu-item pairs at all -- the choice there moves the lock boundary, not the item -- so at those sites the symmetric-menu question is ill-posed rather than merely negative.",
+   "WHY_NOT_SHAPE_B": "shape (b) -- 'naturality is itself underivable and equivalent-to or weaker-than A3' -- is HALF RIGHT and the correct half is recorded: naturality IS underivable (every candidate ground fails, with byte quotes).  But 'equivalent-to-or-weaker-than' mis-states the relation.  Naturality has no existential import, so it is not a substitute for A3 at any strength; and alongside A3 it is EMPTY on this arena.  The measured relation is: logically independent, and A3 + naturality = A3 in content here.",
+   "certificate": "Q3_THE_VERDICT_FOR_THE_ASK_BAR",
+   "pass": true
+  }
+ },
+ "claim_type": "bounded_theorem",
+ "cycles": [
+  940
+ ],
+ "fraction_label": "bookkeeping fraction, not probability",
+ "headline": "SYMMETRY HAS NO PURCHASE ON THE CHOICE SUBSTRATE.  No substrate automorphism swaps the two menu items at ANY of the 6 declared sites, by two independent routes: (A1) no relabelling maps the LEFT endpoint wire to the RIGHT one -- 1-WL colour refinement separates them under the COARSEST label, with an explicit depth-2 witness (the RIGHT endpoint's downstream wire fans out to record targets the LEFT's does not); (A2) no relabelling can swap ANY branch pair, because branch identity is a choice word in {0, S_k} and every relabelling fixes the additive identity.  A third negative the block was not sent to find: only 3 of the 6 sites are menu-item pairs at all -- at the other 3 the choice moves the LOCK BOUNDARY, not the item, so the symmetric-menu question is ill-posed there.  The conditional theorem 'IF weights are automorphism-invariant THEN w equal at single-orbit menus' is therefore VACUOUS here: 0 of 6 sites covered, 0 equations contributed, freedom count 6 before and 6 after (exact).  And the antecedent is NOT DERIVABLE: six candidate grounds tested with byte quotes, the closest -- 'No possibility is privileged. Possibilities are distinguished by the supplied algebraic structure alone' -- is SATISFIED by unequal weights, because Theorem A1 measured that the supplied structure DOES distinguish the two items.  A3 stands as one sentence with 936's freedom count; mu strictly parametric throughout.",
+ "provenance": {
+  "constants_863": {
+   "FIXTURE_BANKS": 2,
+   "MAX_SOURCES": 5,
+   "MIN_SOURCES": 2
+  },
+  "constants_878": {
+   "DEAD_CHUNK_ORBITS": 512,
+   "DEAD_ORBIT_ORBITS": 4096,
+   "HORIZON": 16384,
+   "REGISTER_CAP": 64
+  },
+  "constants_911": {
+   "CLASS_BRANCH": "BRANCH_PAIR",
+   "CLASS_IDENTICAL": "IDENTICAL_TRAJECTORIES",
+   "CLASS_NONBRANCH_DIVERGENCE": "DIVERGENCE_NOT_AT_A_SHARED_FORMATION_EVENT",
+   "CLASS_SETUP_SCHEDULE": "SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY",
+   "CLASS_SETUP_TICK0": "SETUP_DIFFERS_AT_TICK_0",
+   "DIRECTIONS": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "HORIZON": 16384,
+   "REGISTER_CAP": 64
+  },
+  "import_of_863_878_911_913_918_or_925": false,
+  "lifted_911_operator_tuples": {
+   "CROSS_LANE_OPS": [
+    "LShift",
+    "RShift",
+    "Add",
+    "Sub",
+    "Mult",
+    "Div",
+    "FloorDiv",
+    "Mod",
+    "Pow",
+    "MatMult"
+   ],
+   "POSITIONWISE_OPS": [
+    "BitXor",
+    "BitAnd",
+    "BitOr",
+    "Invert"
+   ]
+  },
+  "lifted_from_863": [
+   "pairwise_separated",
+   "derive_event_seeds",
+   "derive_census",
+   "watched_registers",
+   "dirty_partition",
+   "synchronous_word",
+   "build_initial_states",
+   "pack_lanes",
+   "compile_masked_gate",
+   "masked_h_schedules",
+   "compile_fast",
+   "mask_over",
+   "lanes_of",
+   "lane_state"
+  ],
+  "lifted_from_878": [
+   "lcm",
+   "dead_wire_rig",
+   "monitor_phase_action",
+   "group_orbits"
+  ],
+  "lifted_from_911": [
+   "snapshot_scan",
+   "classify_pair"
+  ],
+  "lifted_from_913": [
+   "endpoint_wires",
+   "read_state_direction",
+   "target_wire_sweep",
+   "hamming_readout",
+   "translation_covariance"
+  ],
+  "lifted_from_936": {
+   "classes": 1,
+   "constants": 34,
+   "functions": 31,
+   "mechanism": "AST lift of selected top-level nodes in source order; the module is never imported"
+  },
+  "single_disclosed_import": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+ },
+ "science_digest": "6e82c6e898302f99c155bcba0288586c86798513004cf40816428538d9dbc0ac",
+ "self_sha256": "3cc5956c9bfdd44e0708e08a42feec08cd20e9d72dc2acc19f5673ed338dae0e"
+}

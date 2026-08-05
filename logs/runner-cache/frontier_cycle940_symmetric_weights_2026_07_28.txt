@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: frontier_cycle940_symmetric_weights_2026_07_28.py
+receipt: outputs/symmetric_weights_cycle940_receipt_2026_07_28.json
+PASS A_PINS
+PASS B_RESTRICTION_GATE
+PASS Q0_PRIOR_ART_SWEEP
+PASS Q1_THE_MENU_SWAP_AUTOMORPHISM
+PASS Q2_THE_CONDITIONAL_THEOREM_AND_ITS_ANTECEDENT
+PASS Q3_THE_VERDICT_FOR_THE_ASK_BAR
+PASS F_PARAMETRIC_FIREWALL
+PASS G_FALSIFIERS
+PASS H_DOUBLE_RUN
+PASS I_RUNTIME
+restriction gates: 42/42
+teeth fired: 12/12
+LEFT/RIGHT separated under every label: True
+sites declared: [254, 450, 475, 540, 558, 715]
+genuine two-ITEM menu sites: [450, 475, 715]
+sites with a swap automorphism: []
+conditional theorem coverage: 0 of 6 -- VACUOUS
+freedom count before/after invariance: 6/6
+antecedent derivable: False
+Q3 shape: (c)
+science digest: 6e82c6e898302f99c155bcba0288586c86798513004cf40816428538d9dbc0ac
+elapsed: 182.652s / 900s
+ALL CERTIFICATES PASS: True
+===== end runner cache =====

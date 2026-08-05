@@ -1257,53 +1257,132 @@ def main() -> int:
             "N6_the_record_banks_and_links": set(global_dirty),
             "N7_the_sigma_support": set(SIG),
         }
+        # the parent state at each atom, computed ONCE
+        parents = {}
+        for (t, site) in atoms:
+            m = M.Machine(env, False)
+            m.advance(t, rows_p, choice_rows_p, ZERO_WORDS)
+            parents[(t, site)] = list(m.columns)
+
         nb_rows = {}
         for name, N in sorted(FORMALIZATIONS.items()):
             per = {}
             for (t, site) in atoms:
                 lane = site
-                m = M.Machine(env, False)
-                m.advance(t, rows_p, choice_rows_p, ZERO_WORDS)
-                cols = m.columns
+                cols = parents[(t, site)]
                 th = perm_apply_lane(cols, SIG, lane)
                 bad = [w for w in sorted(N)
                        if w not in (left_w, right_w)
                        and ((th[w] >> lane) & 1) != ((cols[w] >> lane) & 1)]
-                per[f"{t}/{site}"] = {"conditions_identical": not bad,
-                                      "differing_wires": bad[:8]}
-            nb_rows[name] = {"wires_in_the_formalization": len(N),
-                             "per_atom": per,
-                             "atoms_with_identical_conditions":
-                                 sorted(k for k, v in per.items()
-                                        if v["conditions_identical"])}
-        agree = {k: v["atoms_with_identical_conditions"]
+                per[f"{t}/{site}"] = {
+                    "conditions_are_sigma_invariant": not bad,
+                    "differing_wires": bad[:8]}
+            nb_rows[name] = {
+                "wires_in_the_formalization": len(N),
+                # ADMISSIBILITY IS STRUCTURAL, NOT SIZE-BASED.  The
+                # independent checker exhibited a formalization with 816
+                # wires that still answers wrong, because it excludes the
+                # bank direction rails: "the record cells only" contains
+                # every cell payload offset in all twelve banks and not one
+                # of the U_TO_V/V_TO_U wires.  Size is not the criterion.
+                # CONTAINMENT OF THE SIGMA SUPPORT is, and it is computed
+                # here rather than asserted, so no formalization is excluded
+                # by name or after seeing its answer.
+                "contains_the_sigma_support": set(SIG) <= N,
+                "per_atom": per,
+                "atoms_with_sigma_invariant_conditions":
+                    sorted(k for k, v in per.items()
+                           if v["conditions_are_sigma_invariant"])}
+        agree = {k: v["atoms_with_sigma_invariant_conditions"]
                  for k, v in nb_rows.items()}
+        admissible = {k for k, v in nb_rows.items()
+                      if v["contains_the_sigma_support"]}
         majority = agree["N2_every_wire_the_law_touches"]
+
+        # THE INSTANT.  The conditions are evaluated AT THE CHOICE
+        # OCCASION'S BOUNDARY.  The checker asked what happens at other
+        # boundaries, and the answer sharpens the claim rather than
+        # denting it, so it is measured and published here.
+        window = {}
+        for (t, site) in atoms:
+            lane = site
+            m = M.Machine(env, False)
+            m.advance(max(0, t - 40), rows_p, choice_rows_p, ZERO_WORDS)
+            breaks = checked = 0
+            while m.t < t:
+                cols = m.columns
+                th = perm_apply_lane(cols, SIG, lane)
+                if any(((th[w] >> lane) & 1) != ((cols[w] >> lane) & 1)
+                       for w in SIG if w not in (left_w, right_w)):
+                    breaks += 1
+                checked += 1
+                m.advance(m.t + 1, rows_p, choice_rows_p, ZERO_WORDS)
+            window[f"{t}/{site}"] = {
+                "boundaries_checked": checked,
+                "boundaries_where_the_conditions_are_NOT_sigma_invariant":
+                    breaks}
+
         out["Q2_NEIGHBORHOOD_EQUALITY"] = {
+            "WHAT_IS_MEASURED": {
+                "NOT_this": "'the two branches present identical "
+                            "nearest-neighbor conditions'.  That is TRIVIALLY "
+                            "TRUE and licenses nothing: the two branches "
+                            "share one parent state, so of course their "
+                            "conditions coincide.  The supervisor's route "
+                            "name and this block's first field names both "
+                            "said it, and the independent checker was right "
+                            "to refuse them.",
+                "BUT_this": "the conditions at the site are POINTWISE "
+                            "INVARIANT UNDER SIGMA.  That is a real, "
+                            "falsifiable property of one state, it is what "
+                            "the theorem text always said, and it is what is "
+                            "computed below.  Adopted from the checker; no "
+                            "number changed, every label did.",
+            },
             "formalizations": nb_rows,
             "FORMALIZATION_ROBUSTNESS": {
-                "formalizations_agreeing_with_N2":
-                    sorted(k for k, v in agree.items() if v == majority),
-                "formalizations_disagreeing":
-                    sorted(k for k, v in agree.items() if v != majority),
-                "the_disagreement":
-                    "N3 and N4 -- the endpoint read cone truncated at depth 1 "
-                    "and 2 -- report EVERY atom's conditions identical.  They "
-                    "are REJECTED as formalizations, on a stated ground and "
-                    "not on their answer: they contain 3 and 6 wires "
-                    "respectively and exclude the bank direction rails "
-                    "entirely, yet those rails are demonstrably read by the "
-                    "law inside the window and demonstrably carry the branch "
-                    "divergence.  A neighborhood that excludes wires the "
-                    "dynamics reads is not a neighborhood.  Every "
-                    "formalization that contains the sigma support -- N1, N2, "
-                    "N5, N6, N7, spanning 26 to 5815 wires -- gives the SAME "
-                    "answer, atom for atom.",
-                "the_conclusion_is_robust_across_every_admissible_"
-                "formalization":
-                    all(v == majority for k, v in agree.items()
-                        if k not in ("N3_endpoint_read_cone_depth_1",
-                                     "N4_endpoint_read_cone_depth_2")),
+                "admissible_formalizations": sorted(admissible),
+                "inadmissible_formalizations":
+                    sorted(set(nb_rows) - admissible),
+                "the_admissibility_criterion":
+                    "a formalization is admissible iff it CONTAINS THE SIGMA "
+                    "SUPPORT -- every wire the swap moves.  A neighborhood "
+                    "that omits a wire the swap acts on cannot see whether "
+                    "the swap fixes the conditions, so its answer is "
+                    "uninformative rather than wrong.  This is a structural "
+                    "test, computed, and it excludes N3 and N4 (3 and 6 "
+                    "wires, no rails) without reference to the answers they "
+                    "give.",
+                "every_admissible_formalization_agrees":
+                    all(agree[k] == majority for k in admissible),
+                "the_inadmissible_ones_do_disagree":
+                    any(agree[k] != majority
+                        for k in set(nb_rows) - admissible),
+                "SIZE_IS_NOT_THE_CRITERION":
+                    "the independent checker exhibited an 816-wire "
+                    "formalization ('the record cells only', every cell "
+                    "payload offset in all twelve banks) that reports every "
+                    "atom symmetric, because the U_TO_V/V_TO_U rails are "
+                    "bank-level fields and sit outside every cell payload.  "
+                    "Any criterion phrased as 'big enough' would have "
+                    "admitted it.  Containment is the criterion.",
+            },
+            "THE_CONDITIONS_ARE_EVALUATED_AT_THE_CHOICE_OCCASION": {
+                "per_atom_over_the_40_boundaries_before_the_choice": window,
+                "the_sharpening":
+                    "at the covered atoms the conditions are sigma-invariant "
+                    "AT THE CHOICE BOUNDARY and are NOT sigma-invariant at "
+                    "most of the boundaries just before it.  This does not "
+                    "dent the theorem -- the axiom evaluates the distribution "
+                    "against the conditions that obtain, and the conditions "
+                    "that obtain at a choice occasion are the ones at that "
+                    "occasion's boundary -- but it sharpens what is derived: "
+                    "THE EQUAL WEIGHT IS A PROPERTY OF THE OCCASION, NOT OF "
+                    "THE SITE.  The same site one boundary earlier has "
+                    "asymmetric conditions and the axiom forces nothing "
+                    "there, which is the 'varies with' clause behaving "
+                    "exactly as written.  Raised by the independent checker "
+                    "and adopted.",
             },
         }
 
@@ -1391,9 +1470,14 @@ def main() -> int:
                     "sigma_* of the local possibility domain that the rule "
                     "cannot distinguish from the identity by any datum the "
                     "rule is a function of.",
-                    "3.  By H3 (the Q2 measurement) the conditions at s are "
-                    "POINTWISE sigma-invariant.  Hence f is being evaluated "
-                    "at the SAME argument before and after sigma.",
+                        "3.  By H3 (the Q2 measurement) the conditions at s, AT "
+                    "THE BOUNDARY OF THE OCCASION IN QUESTION, are POINTWISE "
+                    "sigma-invariant.  Hence f is being evaluated at the SAME "
+                    "argument before and after sigma.  The instant matters "
+                    "and is part of the hypothesis: at most nearby boundaries "
+                    "the same site's conditions are NOT sigma-invariant, so "
+                    "what is derived is a property of the OCCASION, not a "
+                    "standing property of the site.",
                     "4.  By Qubit ('No possibility is privileged. "
                     "Possibilities are distinguished by the supplied "
                     "algebraic structure alone') the two possibilities u and "
@@ -1412,6 +1496,23 @@ def main() -> int:
                     "weight is fixed.",
                 ],
                 "HYPOTHESIS_CHAIN": {
+                    "H0": "IMPORT, UNDISCHARGED, AND THE MOST LOAD-BEARING "
+                          "LINE IN THIS BLOCK: the compiled substrate law is "
+                          "a realization of the axiom's nearest-neighbor "
+                          "admissibility rule, and a symmetry of the former "
+                          "is a symmetry of the latter.  H2 certifies a "
+                          "property of a 34,408-gate circuit on 5,815 wires "
+                          "over 749 census lanes.  The axiom speaks about a "
+                          "rule on Z^3.  Step 2 of the proof crosses that "
+                          "gap, and nothing in the 936/940/943/946 stack "
+                          "DERIVES the crossing -- it is inherited from the "
+                          "substrate's construction and is exactly as strong "
+                          "as that inheritance.  Named here because the "
+                          "independent checker found it unnamed and was "
+                          "right to: without H0 the theorem is a theorem "
+                          "about a circuit, not about the framework's "
+                          "Admissibility axiom.  IDENTIFYING THE GAP IS NOT "
+                          "CLOSING IT.",
                     "H1": "the ADOPTED Admissibility text, both sentences, "
                           "byte-quoted above.  CONDITIONAL ON PR #6011 "
                           "LANDING.",
@@ -2074,12 +2175,11 @@ def main() -> int:
 
     # T10: the covered/uncovered split must not be an artifact of one
     #      neighborhood formalization
-    agree_sets = {k: v["atoms_with_identical_conditions"]
-                  for k, v in S["Q2_NEIGHBORHOOD_EQUALITY"]
-                  ["formalizations"].items()}
+    _fz = S["Q2_NEIGHBORHOOD_EQUALITY"]["formalizations"]
+    agree_sets = {k: v["atoms_with_sigma_invariant_conditions"]
+                  for k, v in _fz.items()}
     admissible = {k: v for k, v in agree_sets.items()
-                  if k not in ("N3_endpoint_read_cone_depth_1",
-                               "N4_endpoint_read_cone_depth_2")}
+                  if _fz[k]["contains_the_sigma_support"]}
     tooth("T10_the_split_is_stable_across_every_admissible_formalization",
           len({tuple(v) for v in admissible.values()}) == 1
           and len({tuple(v) for v in agree_sets.values()}) > 1,
@@ -2109,7 +2209,7 @@ def main() -> int:
           len(unc) > 0
           and all(not S["Q2_NEIGHBORHOOD_EQUALITY"]["formalizations"]
                   ["N2_every_wire_the_law_touches"]["per_atom"][k]
-                  ["conditions_identical"]
+                  ["conditions_are_sigma_invariant"]
                   for k in unc
                   if k not in ("702/254",)),
           {"uncovered": unc,
@@ -2193,8 +2293,7 @@ def main() -> int:
                        "every_quote_verbatim_in_the_vendor_read_text"]
                    and S["Q2_NEIGHBORHOOD_EQUALITY"]
                    ["FORMALIZATION_ROBUSTNESS"][
-                       "the_conclusion_is_robust_across_every_admissible_"
-                       "formalization"]
+                       "every_admissible_formalization_agrees"]
                    and len(S["Q2_THE_THEOREM"]["COVERAGE"][
                        "sites_where_all_hypotheses_hold"]) > 0)}
     v = S["Q3_SEALED_TABLE"]["VERIFICATION"]
@@ -2291,6 +2390,55 @@ def main() -> int:
             "distribution is untouched; nothing transports to the "
             "unpartnered kernel.  No axiom surface is touched and no ask is "
             "made.",
+        "INDEPENDENT_CHECKER_ADOPTIONS": {
+            "R1_the_identical_conditions_framing_was_wrong":
+                "the checker refused the phrase 'the two branches present "
+                "identical nearest-neighbor conditions' as trivially true -- "
+                "the two branches share one parent state -- and therefore as "
+                "licensing nothing.  Correct.  What is measured, and what the "
+                "theorem text always said, is POINTWISE SIGMA-INVARIANCE of "
+                "the conditions.  Every field name is relabelled; no number "
+                "moved.",
+            "R2_an_unnamed_import_was_carrying_the_block":
+                "the checker found that nothing in the hypothesis chain "
+                "stated the identification of the compiled substrate law "
+                "with the axiom's nearest-neighbor admissibility rule, "
+                "although every proof step uses it.  ADOPTED as H0, an "
+                "explicit UNDISCHARGED IMPORT.  This is the block's largest "
+                "caveat and it is now in the chain rather than under it.",
+            "R3_the_robustness_criterion_was_post_hoc":
+                "the primary excluded two formalizations BY NAME.  The "
+                "checker exhibited an 816-wire formalization that answers "
+                "wrong (the record cell payloads exclude the bank direction "
+                "rails), showing that any size-based rule fails.  ADOPTED: "
+                "admissibility is now the computed structural predicate "
+                "'contains the sigma support', and nothing is excluded after "
+                "seeing its answer.",
+            "R4_the_conditions_are_occasion_specific_not_site_generic":
+                "the checker sampled the 40 boundaries before each choice "
+                "and found the conditions sigma-asymmetric at most of them, "
+                "including at the covered atoms.  ADOPTED as a SHARPENING: "
+                "the derived equal weight is a property of the OCCASION, not "
+                "a standing property of the site.  Measured and published in "
+                "Q2.",
+            "R5_a_wrong_involution_need_not_break":
+                "the checker's own control -- 'every deliberately wrong "
+                "involution must break commutation' -- FAILED on a pair of "
+                "inert wires, which commute trivially because nothing reads "
+                "or writes them.  The correct control is over LIVE wires.  "
+                "Recorded because it is the same class of error as a "
+                "palindromic false positive and would otherwise have made "
+                "the control toothless.",
+            "WHAT_SURVIVED_UNCHANGED":
+                "the defect census (220 occurrences, 12 distinct gates, "
+                "reproduced by a different matching algorithm); the "
+                "partnered gate total; zero semantic breaking wires against "
+                "139 for the baseline, on an ensemble extended with "
+                "degenerate and on-orbit states; the colour-refinement "
+                "merge; the covered-site list, unchanged at TWICE the "
+                "declared window; the battery on all 256 branches; the "
+                "sealed table's re-score including its refuted item.",
+        },
         "science_digest": science_digest,
         "seal_digest": seal_digest,
         "certificates": certificates,

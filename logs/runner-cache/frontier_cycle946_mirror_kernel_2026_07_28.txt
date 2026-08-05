@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle946_mirror_kernel_2026_07_28.py
-runner_sha256: 65b98fcbc7c5550af7ff14d7d1b5202addff95491b857222c986b5a7ad52b67b
+runner_sha256: e393c882c3f0ea745190aeb36faf3f02c958537185210f5b8715e7b2bce465d7
 receipt: outputs/mirror_kernel_cycle946_receipt_2026_07_28.json
 timeout_sec: 900
-elapsed_sec: 278.46
+elapsed_sec: 255.07
 status: ok
 ----- stdout -----
 PASS A_PINS
@@ -40,8 +40,8 @@ route A (covariance): REJECTED on the axiom's own bytes
 route B (neighborhood equality): ADOPTED
 seal verification: {"S1_all_covered_pairs_digest_identical":true,"S2_all_covered_atoms_endpoints_exchanged":true,"S3_covered_sites_unformed_or_locked_before_the_choice":true,"S4_IS_REFUTED_AND_HERE_IS_WHY":"S4 predicted that every UNCOVERED atom would still show a differing leaf digest on some pair.  It is FALSE, and the block's own seal is scored 4 of 5 rather than quietly restated.  The prediction assumed the observable collapse would follow COVERAGE; it follows MENU-HOOD instead.  In the partnered kernel the record stops distinguishing the two branches at every genuine two-item menu atom, covered or not -- only the three lock-timing atoms remain observable.  So the mirror closure buys record-indistinguishability of the two menu items MORE broadly than it buys the swap symmetry, and the two properties are not the same property.  That is a strictly more interesting fact than the one predicted, and it is the seal that found it.","S4_every_uncovered_atom_has_a_differing_pair":false,"S4_the_uncovered_atoms_that_refute_it":["300/715","1100/715"],"S5_observable_bits_are_exactly_the_lock_timing_atoms":true,"distinct_leaf_observables_baseline":64,"distinct_leaf_observables_partnered":8,"lock_timing_atoms_943":["700/540","702/254","1100/558"],"observable_bits":["700/540","702/254","1100/558"]}
 V1 near-miss coverage [[300, 715], [700, 475], [702, 450], [702, 715], [1100, 715]] but semantic breaks 139 -- licenses nothing
-science digest: 3804bb22e669888bf8bb72c146b55580127ba76ec6419b0d44b19e8fbe375187
+science digest: 497a3c75b328748c3b3c27bbd386c8a6112b26befff42f25a11d3222cb08879f
 seal digest: 7ab2eb2d88ef2b6513a47295854df1691c7bd55d03daae42ae2f49207153dfaa
-elapsed: 278.46s / 900s
+elapsed: 255.07s / 900s
 ALL CERTIFICATES PASS: True
 ===== end runner cache =====

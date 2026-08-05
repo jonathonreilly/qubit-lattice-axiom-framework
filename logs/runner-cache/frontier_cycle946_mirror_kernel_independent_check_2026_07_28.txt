@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle946_mirror_kernel_independent_check_2026_07_28.py
+runner_sha256: 264aa838141212dd9c0e28a9192fa2a7f4376307fc4c189f7794df543a4dfe74
+receipt: outputs/mirror_kernel_independent_check_cycle946_receipt_2026_07_28.json
+timeout_sec: 900
+elapsed_sec: 107.33
+status: ok
+----- stdout -----
+teeth fired: 14/14
+REFUTATIONS (1):
+  - B2_the_conditions_are_only_symmetric_at_the_sampled_instant
+  upheld   A1_defect_census_disagrees
+  upheld   A2_partnered_gate_total_disagrees
+  upheld   A3_symmetry_certificate_fails_on_the_checkers_ensemble
+  upheld   A4_the_instrument_accepts_a_wrong_involution_on_LIVE_wires
+  upheld   A5_sigma_is_trivial_on_the_menu
+  upheld   A6_colour_refinement_does_not_merge_LEFT_and_RIGHT
+  upheld   E1_coverage_disagrees_with_the_primary_at_the_declared_window
+  upheld   E2_coverage_collapses_at_a_longer_window
+  upheld   B1_the_neighborhood_split_is_formalization_dependent
+  REFUTED  B2_the_conditions_are_only_symmetric_at_the_sampled_instant
+  upheld   C1_a_byte_quote_is_not_in_the_adopted_text
+  upheld   C2_the_prose_says_identical_conditions_but_measures_sigma_invariance
+  upheld   C3_an_unnamed_bridge_hypothesis_identifies_the_substrate_law_with_the_axioms_rule
+  upheld   C4_the_determination_clause_alone_is_claimed_to_force_equality
+  upheld   C5_the_covariance_clause_is_used_after_being_rejected
+  upheld   C6_the_domain_of_the_distribution_is_assumed_not_argued
+  upheld   D1_the_sealed_table_rescores_differently
+  upheld   D2_the_primary_hid_a_refuted_seal_item
+  upheld   D3_the_battery_does_not_hold_on_every_branch
+  upheld   C7_an_unconditional_weight_value_appears_in_the_receipt
+checker defect: 220 occurrences / 12 distinct (primary 220/12)
+checker semantic breaking wires: partnered 0 / baseline 139
+wrong involutions (all must break): {'only_the_bank0_rails': 4, 'only_the_endpoints': 4, 'endpoints_plus_the_orientation_cell_swap': 139, 'two_LIVE_wires_with_no_mirror_relation': 139, 'the_full_sigma_minus_one_rail_pair': 4, 'two_INERT_wires_the_law_never_touches': 0}
+coverage declared window [[700, 475], [702, 450], [702, 715]]
+coverage 2x window       [[700, 475], [702, 450], [702, 715]]
+observable bits ['1100/558', '700/540', '702/254']; distinct leaf observables 8
+battery {'write_once': True, 'menu': True, 'dup_lane': True, 'slots': True, 'formation': True}
+elapsed: 107.33s / 900s
+ALL TEETH FIRED: True
+===== end runner cache =====

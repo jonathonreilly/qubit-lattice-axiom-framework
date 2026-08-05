@@ -1,0 +1,903 @@
+{
+  "CONDITIONAL_ON_PR_6011_LANDING": true,
+  "REFUTATIONS": [
+    "B2_the_conditions_are_only_symmetric_at_the_sampled_instant"
+  ],
+  "all_teeth_fired": true,
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-time-expansion-20260802/blockQ17",
+  "campaign": "toe-time-expansion-20260802",
+  "checker_numbers": {
+    "battery": {
+      "dup_lane": true,
+      "formation": true,
+      "menu": true,
+      "slots": true,
+      "write_once": true
+    },
+    "coverage_declared_window": [
+      [
+        700,
+        475
+      ],
+      [
+        702,
+        450
+      ],
+      [
+        702,
+        715
+      ]
+    ],
+    "coverage_double_window": [
+      [
+        700,
+        475
+      ],
+      [
+        702,
+        450
+      ],
+      [
+        702,
+        715
+      ]
+    ],
+    "defect_distinct": 12,
+    "defect_occurrences": 220,
+    "distinct_leaf_observables": 8,
+    "neighborhood_formalizations": {
+      "K1_the_write_cone_of_the_endpoint_pair": {
+        "atoms_with_sigma_invariant_conditions": [
+          "700/475",
+          "702/254",
+          "702/450",
+          "702/715"
+        ],
+        "wires": 37
+      },
+      "K2_the_read_cone_depth_3": {
+        "atoms_with_sigma_invariant_conditions": [
+          "300/715",
+          "700/475",
+          "702/254",
+          "702/450",
+          "702/715",
+          "1100/558"
+        ],
+        "wires": 13
+      },
+      "K3_the_two_banks_the_endpoints_drive": {
+        "atoms_with_sigma_invariant_conditions": [
+          "700/475",
+          "702/254",
+          "702/450",
+          "702/715"
+        ],
+        "wires": 262
+      },
+      "K4_the_measured_divergence_support_of_943": {
+        "atoms_with_sigma_invariant_conditions": [
+          "700/475",
+          "702/254",
+          "702/450",
+          "702/715"
+        ],
+        "wires": 8
+      },
+      "K5_every_wire_with_a_sigma_partner_plus_its_drivers": {
+        "atoms_with_sigma_invariant_conditions": [
+          "700/475",
+          "702/254",
+          "702/450",
+          "702/715"
+        ],
+        "wires": 31
+      },
+      "K6_the_record_cells_only": {
+        "atoms_with_sigma_invariant_conditions": [
+          "300/715",
+          "700/475",
+          "700/540",
+          "702/254",
+          "702/450",
+          "702/715",
+          "1100/558",
+          "1100/715"
+        ],
+        "wires": 816
+      }
+    },
+    "observable_bits": [
+      "1100/558",
+      "700/540",
+      "702/254"
+    ],
+    "partnered_gates": 34408,
+    "pre_choice_window_stability": {
+      "1100/558": {
+        "boundaries_checked": 40,
+        "boundaries_where_conditions_are_not_sigma_invariant": 22
+      },
+      "1100/715": {
+        "boundaries_checked": 40,
+        "boundaries_where_conditions_are_not_sigma_invariant": 36
+      },
+      "300/715": {
+        "boundaries_checked": 40,
+        "boundaries_where_conditions_are_not_sigma_invariant": 33
+      },
+      "700/475": {
+        "boundaries_checked": 40,
+        "boundaries_where_conditions_are_not_sigma_invariant": 32
+      },
+      "700/540": {
+        "boundaries_checked": 40,
+        "boundaries_where_conditions_are_not_sigma_invariant": 18
+      },
+      "702/254": {
+        "boundaries_checked": 40,
+        "boundaries_where_conditions_are_not_sigma_invariant": 17
+      },
+      "702/450": {
+        "boundaries_checked": 40,
+        "boundaries_where_conditions_are_not_sigma_invariant": 32
+      },
+      "702/715": {
+        "boundaries_checked": 40,
+        "boundaries_where_conditions_are_not_sigma_invariant": 15
+      }
+    },
+    "semantic_breaking_wires_baseline": 139,
+    "semantic_breaking_wires_partnered": 0,
+    "wrong_involutions_breaking_wires": {
+      "endpoints_plus_the_orientation_cell_swap": 139,
+      "only_the_bank0_rails": 4,
+      "only_the_endpoints": 4,
+      "the_full_sigma_minus_one_rail_pair": 4,
+      "two_INERT_wires_the_law_never_touches": 0,
+      "two_LIVE_wires_with_no_mirror_relation": 139
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycles": [
+    946
+  ],
+  "elapsed_sec": 107.33,
+  "findings": [
+    {
+      "REFUTED": false,
+      "detail": {
+        "checker_distinct": 12,
+        "checker_occurrences": 220,
+        "method": "greedy occurrence matching, not Counter subtraction",
+        "primary_distinct": 12,
+        "primary_occurrences": 220
+      },
+      "finding": "A1_defect_census_disagrees"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "checker": 34408,
+        "primary": 34408
+      },
+      "finding": "A2_partnered_gate_total_disagrees"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "baseline_breaking_wires": 139,
+        "checker_breaking_wires": [],
+        "count": 0,
+        "ensemble": {
+          "lane_vectors": 14231,
+          "on_orbit": 8,
+          "random": 6,
+          "structured": 5
+        },
+        "note": "the primary tested 8 random states only; this adds all-zero, all-one, alternating, sigma-support-only and the eight REAL on-orbit states at the choice boundaries",
+        "primary_claimed_partnered": 0
+      },
+      "finding": "A3_symmetry_certificate_fails_on_the_checkers_ensemble"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "THE_CONTROL_ITSELF_HAD_TO_BE_CORRECTED": "a first version of this control asserted that EVERY wrong involution must break, and it failed -- on a pair of wires the law never touches.  That is not an instrument fault, it is a true statement about the kernel: exchanging two inert wires IS an exact symmetry of the law, a genuine one and a completely vacuous one.  The control is now restricted to live wires, and the inert pair is kept in the table as the exhibit.",
+        "breaking_wires_per_wrong_involution": {
+          "endpoints_plus_the_orientation_cell_swap": 139,
+          "only_the_bank0_rails": 4,
+          "only_the_endpoints": 4,
+          "the_full_sigma_minus_one_rail_pair": 4,
+          "two_INERT_wires_the_law_never_touches": 0,
+          "two_LIVE_wires_with_no_mirror_relation": 139
+        },
+        "inert_pair_breaking_wires": 0,
+        "inert_pair_tested": [
+          0,
+          2
+        ],
+        "why": "943's R1: a criterion that certifies everything certifies nothing.  Every wrong involution ON LIVE WIRES must break."
+      },
+      "finding": "A4_the_instrument_accepts_a_wrong_involution_on_LIVE_wires"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "per_atom_left_right_before_after": [
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ]
+        ],
+        "why": "if sigma left the endpoint pair fixed it would commute trivially and prove nothing about the menu",
+        "wires_moved_on_orbit_states": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      "finding": "A5_sigma_is_trivial_on_the_menu"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "baseline_LEFT_eq_RIGHT": {
+          "bare": false,
+          "exact": false,
+          "popcount": false
+        },
+        "partnered_LEFT_eq_RIGHT": {
+          "bare": true,
+          "exact": true,
+          "popcount": true
+        }
+      },
+      "finding": "A6_colour_refinement_does_not_merge_LEFT_and_RIGHT"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "checker": [
+          [
+            700,
+            475
+          ],
+          [
+            702,
+            450
+          ],
+          [
+            702,
+            715
+          ]
+        ],
+        "primary": [
+          [
+            700,
+            475
+          ],
+          [
+            702,
+            450
+          ],
+          [
+            702,
+            715
+          ]
+        ]
+      },
+      "finding": "E1_coverage_disagrees_with_the_primary_at_the_declared_window"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "covered_at_declared": [
+          [
+            700,
+            475
+          ],
+          [
+            702,
+            450
+          ],
+          [
+            702,
+            715
+          ]
+        ],
+        "covered_at_double": [
+          [
+            700,
+            475
+          ],
+          [
+            702,
+            450
+          ],
+          [
+            702,
+            715
+          ]
+        ],
+        "declared_window": 1925,
+        "first_failure_boundaries_at_double": {
+          "1100/558": 1101,
+          "1100/715": 1101,
+          "300/715": 301,
+          "700/475": null,
+          "700/540": 701,
+          "702/254": 703,
+          "702/450": null,
+          "702/715": null
+        },
+        "long_window": 3850,
+        "why": "943's coverage claims were window-relative and said so.  If the primary's three sites stop being covered at 2x the window, the theorem's coverage is an artifact of where the run was stopped"
+      },
+      "finding": "E2_coverage_collapses_at_a_longer_window"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "THE_FILTER_HAD_TO_BE_CORRECTED": "a first version of this attack filtered formalizations by SIZE (at least as many wires as the sigma support).  That admitted K6 -- 816 wires, every record cell payload in all twelve banks -- which answers that EVERY atom is symmetric, because U_TO_V and V_TO_U are bank-level fields and sit outside every cell payload.  Size is not the criterion; CONTAINMENT of the sigma support is.  Under containment every admissible checker formalization agrees with the primary, atom for atom, and K2 and K6 are exhibited as large-and-blind rather than as counterexamples.",
+        "agreement": {
+          "K1_the_write_cone_of_the_endpoint_pair": true,
+          "K2_the_read_cone_depth_3": false,
+          "K3_the_two_banks_the_endpoints_drive": true,
+          "K4_the_measured_divergence_support_of_943": true,
+          "K5_every_wire_with_a_sigma_partner_plus_its_drivers": true,
+          "K6_the_record_cells_only": false
+        },
+        "checker_formalizations": {
+          "K1_the_write_cone_of_the_endpoint_pair": {
+            "atoms_with_sigma_invariant_conditions": [
+              "700/475",
+              "702/254",
+              "702/450",
+              "702/715"
+            ],
+            "wires": 37
+          },
+          "K2_the_read_cone_depth_3": {
+            "atoms_with_sigma_invariant_conditions": [
+              "300/715",
+              "700/475",
+              "702/254",
+              "702/450",
+              "702/715",
+              "1100/558"
+            ],
+            "wires": 13
+          },
+          "K3_the_two_banks_the_endpoints_drive": {
+            "atoms_with_sigma_invariant_conditions": [
+              "700/475",
+              "702/254",
+              "702/450",
+              "702/715"
+            ],
+            "wires": 262
+          },
+          "K4_the_measured_divergence_support_of_943": {
+            "atoms_with_sigma_invariant_conditions": [
+              "700/475",
+              "702/254",
+              "702/450",
+              "702/715"
+            ],
+            "wires": 8
+          },
+          "K5_every_wire_with_a_sigma_partner_plus_its_drivers": {
+            "atoms_with_sigma_invariant_conditions": [
+              "700/475",
+              "702/254",
+              "702/450",
+              "702/715"
+            ],
+            "wires": 31
+          },
+          "K6_the_record_cells_only": {
+            "atoms_with_sigma_invariant_conditions": [
+              "300/715",
+              "700/475",
+              "700/540",
+              "702/254",
+              "702/450",
+              "702/715",
+              "1100/558",
+              "1100/715"
+            ],
+            "wires": 816
+          }
+        },
+        "contains_the_sigma_support": {
+          "K1_the_write_cone_of_the_endpoint_pair": false,
+          "K2_the_read_cone_depth_3": false,
+          "K3_the_two_banks_the_endpoints_drive": false,
+          "K4_the_measured_divergence_support_of_943": false,
+          "K5_every_wire_with_a_sigma_partner_plus_its_drivers": true,
+          "K6_the_record_cells_only": false
+        },
+        "primary_N2_answer": [
+          "700/475",
+          "702/254",
+          "702/450",
+          "702/715"
+        ],
+        "the_816_wire_blind_formalization": {
+          "contains_the_rails": false,
+          "its_answer": [
+            "300/715",
+            "700/475",
+            "700/540",
+            "702/254",
+            "702/450",
+            "702/715",
+            "1100/558",
+            "1100/715"
+          ],
+          "name": "K6_the_record_cells_only",
+          "wires": 816
+        }
+      },
+      "finding": "B1_the_neighborhood_split_is_formalization_dependent"
+    },
+    {
+      "REFUTED": true,
+      "detail": {
+        "STATUS": "REFUTED AS A SITE-GENERIC CLAIM, AND ADOPTED BY THE PRIMARY AS AN OCCASION-SPECIFIC ONE.  The fact is not a defect: the axiom's own 'varies with' clause says the distribution tracks the conditions, so a site whose conditions are asymmetric a tick earlier SHOULD have no forced value a tick earlier.  What the finding kills is the sentence 'the conditions at this site are symmetric', which nobody may now write.",
+        "covered_atoms": [
+          "700/475",
+          "702/450",
+          "702/715"
+        ],
+        "per_atom_over_the_40_boundaries_before_the_choice": {
+          "1100/558": {
+            "boundaries_checked": 40,
+            "boundaries_where_conditions_are_not_sigma_invariant": 22
+          },
+          "1100/715": {
+            "boundaries_checked": 40,
+            "boundaries_where_conditions_are_not_sigma_invariant": 36
+          },
+          "300/715": {
+            "boundaries_checked": 40,
+            "boundaries_where_conditions_are_not_sigma_invariant": 33
+          },
+          "700/475": {
+            "boundaries_checked": 40,
+            "boundaries_where_conditions_are_not_sigma_invariant": 32
+          },
+          "700/540": {
+            "boundaries_checked": 40,
+            "boundaries_where_conditions_are_not_sigma_invariant": 18
+          },
+          "702/254": {
+            "boundaries_checked": 40,
+            "boundaries_where_conditions_are_not_sigma_invariant": 17
+          },
+          "702/450": {
+            "boundaries_checked": 40,
+            "boundaries_where_conditions_are_not_sigma_invariant": 32
+          },
+          "702/715": {
+            "boundaries_checked": 40,
+            "boundaries_where_conditions_are_not_sigma_invariant": 15
+          }
+        },
+        "the_primary_publishes_this_measurement": true,
+        "the_primary_states_the_occasion_restriction_in_the_proof": true,
+        "why": "the primary evaluates the conditions at exactly one boundary.  They ARE asymmetric at most of the boundaries just before it, INCLUDING at the covered atoms, so H3 is instant-specific and any reading of it as a standing property of the SITE is refuted."
+      },
+      "finding": "B2_the_conditions_are_only_symmetric_at_the_sampled_instant"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "per_quote": {
+          "Admissibility_covariance": true,
+          "Admissibility_distribution": true,
+          "Admissibility_support_reading_note": true,
+          "Lattice_no_site_is_privileged": true,
+          "Qubit_domain": true,
+          "Qubit_no_possibility_is_privileged": true,
+          "Record_locks_exactly_one": true
+        }
+      },
+      "finding": "C1_a_byte_quote_is_not_in_the_adopted_text"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "the_problem": "the two branches SHARE a parent state, so 'the two branches present identical nearest-neighbor conditions' is TRIVIALLY TRUE and licenses nothing.  It is not what the primary measured.  What it measured -- correctly -- is that the conditions are INVARIANT UNDER SIGMA, which is a different and much stronger statement.  The THEOREM text says invariance and is right; the field names and the supervisor's route name say 'identical' and are wrong.",
+        "verdict": "REFUTED AS PROSE, SOUND AS MEASUREMENT.  The primary must relabel; no number changes."
+      },
+      "finding": "C2_the_prose_says_identical_conditions_but_measures_sigma_invariance"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "the_gap": "H2 certifies that sigma is a symmetry of THE COMPILED SUBSTRATE LAW -- a 34,408-gate circuit on 5,815 wires over 749 census lanes.  The axiom's determination clause is about THE NEAREST-NEIGHBOR ADMISSIBILITY RULE on Z^3.  Nothing in the primary's chain states the identification of the one with the other, yet every step of the proof uses it: step 2 moves from 'sigma commutes with the compiled law' to 'sigma_* is an automorphism the RULE cannot distinguish from the identity'.  That move is the load-bearing import of the whole block and it is currently unnamed.",
+        "verdict": "REFUTED.  The hypothesis chain is incomplete and must carry H0 explicitly.",
+        "what_it_should_say": "H0 (IMPORT, undischarged): the compiled substrate law is a realization of the axiom's nearest-neighbor admissibility rule, and a symmetry of the former is a symmetry of the latter.  This is NOT derived anywhere in the 936/940/943/946 stack.  Without it the theorem is a theorem about a circuit, not about the framework's Admissibility axiom."
+      },
+      "finding": "C3_an_unnamed_bridge_hypothesis_identifies_the_substrate_law_with_the_axioms_rule"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "primary_position": "the primary names exactly this as H4 and says outright that without it the determination clause is vacuous",
+        "test": "a rule f that is a function of the conditions can still assign unequal probabilities to two possibilities, because f's VALUE is a distribution over a LABELLED domain and nothing in 'determined by' forbids the labels from mattering.  Equality needs the no-privilege clause.",
+        "verdict": "NOT REFUTED -- the primary already carries it, and the checker confirms the argument fails without it"
+      },
+      "finding": "C4_the_determination_clause_alone_is_claimed_to_force_equality"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "note": "step 1 does use the FIRST sentence, but only for 'one fixed rule / same function at every site', which is site-independence, not covariance under a group action.  Checked and accepted.",
+        "proof_mentions": []
+      },
+      "finding": "C5_the_covariance_clause_is_used_after_being_rejected"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "primary_position": "H5 dissolves it by composition: the adopted reading note DEFINES availability as the distribution's support, so the available-only reading is circular and the domain is the full Qubit possibility domain.  No ruling is cited.",
+        "the_issue": "if the distribution's domain were 'the available possibilities' the argument would need availability fixed first",
+        "verdict": "NOT REFUTED"
+      },
+      "finding": "C6_the_domain_of_the_distribution_is_assumed_not_argued"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "checker_distinct_leaf_observables": 8,
+        "checker_observable_bits": [
+          "1100/558",
+          "700/540",
+          "702/254"
+        ],
+        "primary_distinct": 8,
+        "primary_observable_bits": [
+          "1100/558",
+          "700/540",
+          "702/254"
+        ]
+      },
+      "finding": "D1_the_sealed_table_rescores_differently"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "S4_value": false,
+        "refutation_is_published": true,
+        "verdict": "NOT REFUTED -- the primary shipped its own failed prediction with an explanation, which is the behaviour the seal exists to produce"
+      },
+      "finding": "D2_the_primary_hid_a_refuted_seal_item"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "checker_battery": {
+          "dup_lane": true,
+          "formation": true,
+          "menu": true,
+          "slots": true,
+          "write_once": true
+        },
+        "primary_claims": {
+          "dup_lane": true,
+          "menu": true,
+          "slots": true,
+          "write_once": true
+        }
+      },
+      "finding": "D3_the_battery_does_not_hold_on_every_branch"
+    },
+    {
+      "REFUTED": false,
+      "detail": {
+        "note": "every occurrence of the value must sit under a CONDITIONAL/HYPOTHETICAL/IF_/THEOREM key path",
+        "paths": []
+      },
+      "finding": "C7_an_unconditional_weight_value_appears_in_the_receipt"
+    }
+  ],
+  "headline": "THE CONSTRUCTION SURVIVES; THE HYPOTHESIS CHAIN DOES NOT, AS WRITTEN.  The checker rebuilds the mirror defect by a different algorithm and gets the same 220 occurrences and 12 distinct gates; it reproduces the partnered kernel gate-for-gate, and the swap commutes with zero breaking wires on an ensemble that adds all-zero, all-one, alternating, sigma-support-only and the eight REAL on-orbit states to the primary's random ones, while every deliberately wrong involution breaks.  Coverage is unchanged at twice the declared window.  The seal re-scores identically, S4 included.  TWO REFUTATIONS: (1) the 'identical conditions' framing is trivially true and is not what was measured -- the branches share a parent state, and what licenses the conclusion is SIGMA-INVARIANCE of the conditions, which is what the theorem text actually says and what the field names do not; (2) the hypothesis chain omits the import that carries the entire block: nothing states that the compiled substrate law IS a realization of the axiom's nearest-neighbor admissibility rule, yet every proof step uses it.  Without that named import the result is a theorem about a 34,408-gate circuit, not about the framework's Admissibility axiom.",
+  "pins": {
+    "adopted_axiom_agrees": true,
+    "adopted_axiom_git_blob_recomputed": "02ab79ec08f0b29d1922c1f628d0d0389ddd2c99",
+    "adopted_axiom_sha256_claimed": "638b2b2c134cd04a61addb46caeb86516ffd976f8432001dab78fa8cbebf15e8",
+    "adopted_axiom_sha256_recomputed": "638b2b2c134cd04a61addb46caeb86516ffd976f8432001dab78fa8cbebf15e8",
+    "blocked_modules_loaded": [],
+    "firewall_hits": [],
+    "primary_self_sha256_agrees": true,
+    "primary_self_sha256_claimed": "e393c882c3f0ea745190aeb36faf3f02c958537185210f5b8715e7b2bce465d7",
+    "primary_self_sha256_recomputed": "e393c882c3f0ea745190aeb36faf3f02c958537185210f5b8715e7b2bce465d7"
+  },
+  "role": "independent_checker",
+  "self_sha256": "264aa838141212dd9c0e28a9192fa2a7f4376307fc4c189f7794df543a4dfe74",
+  "teeth": [
+    {
+      "detail": {
+        "checker": 34408
+      },
+      "fired": true,
+      "tooth": "T1_the_checkers_own_splice_reproduces_the_partnered_gate_total"
+    },
+    {
+      "detail": {
+        "endpoints_plus_the_orientation_cell_swap": 139,
+        "only_the_bank0_rails": 4,
+        "only_the_endpoints": 4,
+        "the_full_sigma_minus_one_rail_pair": 4,
+        "two_INERT_wires_the_law_never_touches": 0,
+        "two_LIVE_wires_with_no_mirror_relation": 139
+      },
+      "fired": true,
+      "tooth": "T2_a_wrong_involution_on_LIVE_wires_is_rejected"
+    },
+    {
+      "detail": {
+        "baseline_breaking_wires": 139
+      },
+      "fired": true,
+      "tooth": "T3_the_baseline_fails_the_checkers_commutation_test"
+    },
+    {
+      "detail": {
+        "partnered_breaking_wires": 0
+      },
+      "fired": true,
+      "tooth": "T4_the_partnered_kernel_passes_it"
+    },
+    {
+      "detail": {
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      "fired": true,
+      "tooth": "T5_sigma_moves_the_menu_at_every_atom"
+    },
+    {
+      "detail": {},
+      "fired": true,
+      "tooth": "T6_a_tampered_axiom_quote_is_rejected"
+    },
+    {
+      "detail": {
+        "checker": 220,
+        "primary": 220
+      },
+      "fired": true,
+      "tooth": "T7_the_checkers_defect_census_matches_the_primarys"
+    },
+    {
+      "detail": {
+        "orientation_defect_distinct": [
+          [
+            171,
+            124,
+            71
+          ],
+          [
+            171,
+            124,
+            105
+          ],
+          [
+            302,
+            255,
+            202
+          ],
+          [
+            302,
+            255,
+            236
+          ]
+        ]
+      },
+      "fired": true,
+      "tooth": "T8_the_orientation_drives_are_exactly_four_distinct_gates"
+    },
+    {
+      "detail": {
+        "link_targets": [
+          1750,
+          1751,
+          1765,
+          1766,
+          1898,
+          1899,
+          1900
+        ]
+      },
+      "fired": true,
+      "tooth": "T9_the_link_ladder_defect_is_real_and_outside_943s_support"
+    },
+    {
+      "detail": {
+        "declared": [
+          [
+            700,
+            475
+          ],
+          [
+            702,
+            450
+          ],
+          [
+            702,
+            715
+          ]
+        ],
+        "double": [
+          [
+            700,
+            475
+          ],
+          [
+            702,
+            450
+          ],
+          [
+            702,
+            715
+          ]
+        ]
+      },
+      "fired": true,
+      "tooth": "T10_coverage_is_not_an_artifact_of_the_declared_window"
+    },
+    {
+      "detail": {
+        "checker": [
+          "1100/558",
+          "700/540",
+          "702/254"
+        ]
+      },
+      "fired": true,
+      "tooth": "T11_the_seal_rescores_identically"
+    },
+    {
+      "detail": {
+        "adopted_axiom_agrees": true,
+        "adopted_axiom_git_blob_recomputed": "02ab79ec08f0b29d1922c1f628d0d0389ddd2c99",
+        "adopted_axiom_sha256_claimed": "638b2b2c134cd04a61addb46caeb86516ffd976f8432001dab78fa8cbebf15e8",
+        "adopted_axiom_sha256_recomputed": "638b2b2c134cd04a61addb46caeb86516ffd976f8432001dab78fa8cbebf15e8",
+        "blocked_modules_loaded": [],
+        "firewall_hits": [],
+        "primary_self_sha256_agrees": true,
+        "primary_self_sha256_claimed": "e393c882c3f0ea745190aeb36faf3f02c958537185210f5b8715e7b2bce465d7",
+        "primary_self_sha256_recomputed": "e393c882c3f0ea745190aeb36faf3f02c958537185210f5b8715e7b2bce465d7"
+      },
+      "fired": true,
+      "tooth": "T12_the_primary_self_hash_and_axiom_pin_agree"
+    },
+    {
+      "detail": {},
+      "fired": true,
+      "tooth": "T13_no_blocked_primary_was_imported"
+    },
+    {
+      "detail": {
+        "refuted": [
+          "B2_the_conditions_are_only_symmetric_at_the_sampled_instant"
+        ]
+      },
+      "fired": true,
+      "tooth": "T14_the_checker_found_at_least_one_real_refutation"
+    }
+  ],
+  "teeth_fired": 14,
+  "teeth_total": 14,
+  "timings": {
+    "A_symmetry": 2.898,
+    "B_neighborhood": 19.225,
+    "D_seal": 48.762,
+    "E_window": 17.721,
+    "setup": 13.121
+  },
+  "within_budget": true
+}

@@ -1,5 +1,13 @@
 {
   "CONDITIONAL_ON_PR_6011_LANDING": true,
+  "INDEPENDENT_CHECKER_ADOPTIONS": {
+    "R1_the_identical_conditions_framing_was_wrong": "the checker refused the phrase 'the two branches present identical nearest-neighbor conditions' as trivially true -- the two branches share one parent state -- and therefore as licensing nothing.  Correct.  What is measured, and what the theorem text always said, is POINTWISE SIGMA-INVARIANCE of the conditions.  Every field name is relabelled; no number moved.",
+    "R2_an_unnamed_import_was_carrying_the_block": "the checker found that nothing in the hypothesis chain stated the identification of the compiled substrate law with the axiom's nearest-neighbor admissibility rule, although every proof step uses it.  ADOPTED as H0, an explicit UNDISCHARGED IMPORT.  This is the block's largest caveat and it is now in the chain rather than under it.",
+    "R3_the_robustness_criterion_was_post_hoc": "the primary excluded two formalizations BY NAME.  The checker exhibited an 816-wire formalization that answers wrong (the record cell payloads exclude the bank direction rails), showing that any size-based rule fails.  ADOPTED: admissibility is now the computed structural predicate 'contains the sigma support', and nothing is excluded after seeing its answer.",
+    "R4_the_conditions_are_occasion_specific_not_site_generic": "the checker sampled the 40 boundaries before each choice and found the conditions sigma-asymmetric at most of them, including at the covered atoms.  ADOPTED as a SHARPENING: the derived equal weight is a property of the OCCASION, not a standing property of the site.  Measured and published in Q2.",
+    "R5_a_wrong_involution_need_not_break": "the checker's own control -- 'every deliberately wrong involution must break commutation' -- FAILED on a pair of inert wires, which commute trivially because nothing reads or writes them.  The correct control is over LIVE wires.  Recorded because it is the same class of error as a palindromic false positive and would otherwise have made the control toothless.",
+    "WHAT_SURVIVED_UNCHANGED": "the defect census (220 occurrences, 12 distinct gates, reproduced by a different matching algorithm); the partnered gate total; zero semantic breaking wires against 139 for the baseline, on an ensemble extended with degenerate and on-orbit states; the colour-refinement merge; the covered-site list, unchanged at TWICE the declared window; the battery on all 256 branches; the sealed table's re-score including its refuted item."
+  },
   "VERDICT": "A menu-swapping symmetry of the law is BUILDABLE (940's negative is model-contingent, as 943 suspected) and, under the adopted axiom, it DERIVES the symmetric two-item weight at the sites where the conditions are symmetric.  Coverage is 3 of 8 atoms and 3 of 5 genuine menus, not all; the general form of the distribution is untouched; nothing transports to the unpartnered kernel.  No axiom surface is touched and no ask is made.",
   "all_certificates_pass": true,
   "audit": "unset",
@@ -924,9 +932,6 @@
           "detail": {
             "admissible_formalizations": [
               "N1_the_whole_lane_state",
-              "N2_every_wire_the_law_touches",
-              "N5_endpoint_read_cone_closure",
-              "N6_the_record_banks_and_links",
               "N7_the_sigma_support"
             ],
             "rejected_formalizations_do_disagree": true,
@@ -981,25 +986,25 @@
       "digest_is_timing_free": true,
       "identical": true,
       "pass": true,
-      "pass1_digest": "3804bb22e669888bf8bb72c146b55580127ba76ec6419b0d44b19e8fbe375187",
-      "pass2_digest": "3804bb22e669888bf8bb72c146b55580127ba76ec6419b0d44b19e8fbe375187",
+      "pass1_digest": "497a3c75b328748c3b3c27bbd386c8a6112b26befff42f25a11d3222cb08879f",
+      "pass2_digest": "497a3c75b328748c3b3c27bbd386c8a6112b26befff42f25a11d3222cb08879f",
       "timing_token_paths": []
     },
     "I_RUNTIME": {
       "budget_sec": 900,
       "certificate": "I_RUNTIME",
-      "elapsed_sec": 278.46,
+      "elapsed_sec": 255.07,
       "pass": true,
       "timings": {
-        "V1_variant": 9.086,
-        "layout_pair": 4.828,
-        "restriction/colour_refine": 0.7,
-        "restriction/per_atom_943": 9.846,
-        "restriction/tree_936": 46.952,
-        "science/pass1": 95.273,
-        "science/pass2": 95.192,
-        "setup": 13.245,
-        "teeth/battery_breach": 2.384
+        "V1_variant": 8.881,
+        "layout_pair": 4.69,
+        "restriction/colour_refine": 0.78,
+        "restriction/per_atom_943": 10.087,
+        "restriction/tree_936": 48.464,
+        "science/pass1": 82.771,
+        "science/pass2": 82.258,
+        "setup": 13.698,
+        "teeth/battery_breach": 2.42
       },
       "within_budget": true
     },
@@ -1635,133 +1640,178 @@
       },
       "NEIGHBORHOOD_EQUALITY": {
         "FORMALIZATION_ROBUSTNESS": {
-          "formalizations_agreeing_with_N2": [
+          "SIZE_IS_NOT_THE_CRITERION": "the independent checker exhibited an 816-wire formalization ('the record cells only', every cell payload offset in all twelve banks) that reports every atom symmetric, because the U_TO_V/V_TO_U rails are bank-level fields and sit outside every cell payload.  Any criterion phrased as 'big enough' would have admitted it.  Containment is the criterion.",
+          "admissible_formalizations": [
             "N1_the_whole_lane_state",
-            "N2_every_wire_the_law_touches",
-            "N5_endpoint_read_cone_closure",
-            "N6_the_record_banks_and_links",
             "N7_the_sigma_support"
           ],
-          "formalizations_disagreeing": [
+          "every_admissible_formalization_agrees": true,
+          "inadmissible_formalizations": [
+            "N2_every_wire_the_law_touches",
             "N3_endpoint_read_cone_depth_1",
-            "N4_endpoint_read_cone_depth_2"
+            "N4_endpoint_read_cone_depth_2",
+            "N5_endpoint_read_cone_closure",
+            "N6_the_record_banks_and_links"
           ],
-          "the_conclusion_is_robust_across_every_admissible_formalization": true,
-          "the_disagreement": "N3 and N4 -- the endpoint read cone truncated at depth 1 and 2 -- report EVERY atom's conditions identical.  They are REJECTED as formalizations, on a stated ground and not on their answer: they contain 3 and 6 wires respectively and exclude the bank direction rails entirely, yet those rails are demonstrably read by the law inside the window and demonstrably carry the branch divergence.  A neighborhood that excludes wires the dynamics reads is not a neighborhood.  Every formalization that contains the sigma support -- N1, N2, N5, N6, N7, spanning 26 to 5815 wires -- gives the SAME answer, atom for atom."
+          "the_admissibility_criterion": "a formalization is admissible iff it CONTAINS THE SIGMA SUPPORT -- every wire the swap moves.  A neighborhood that omits a wire the swap acts on cannot see whether the swap fixes the conditions, so its answer is uninformative rather than wrong.  This is a structural test, computed, and it excludes N3 and N4 (3 and 6 wires, no rails) without reference to the answers they give.",
+          "the_inadmissible_ones_do_disagree": true
+        },
+        "THE_CONDITIONS_ARE_EVALUATED_AT_THE_CHOICE_OCCASION": {
+          "per_atom_over_the_40_boundaries_before_the_choice": {
+            "1100/558": {
+              "boundaries_checked": 40,
+              "boundaries_where_the_conditions_are_NOT_sigma_invariant": 22
+            },
+            "1100/715": {
+              "boundaries_checked": 40,
+              "boundaries_where_the_conditions_are_NOT_sigma_invariant": 36
+            },
+            "300/715": {
+              "boundaries_checked": 40,
+              "boundaries_where_the_conditions_are_NOT_sigma_invariant": 33
+            },
+            "700/475": {
+              "boundaries_checked": 40,
+              "boundaries_where_the_conditions_are_NOT_sigma_invariant": 32
+            },
+            "700/540": {
+              "boundaries_checked": 40,
+              "boundaries_where_the_conditions_are_NOT_sigma_invariant": 18
+            },
+            "702/254": {
+              "boundaries_checked": 40,
+              "boundaries_where_the_conditions_are_NOT_sigma_invariant": 17
+            },
+            "702/450": {
+              "boundaries_checked": 40,
+              "boundaries_where_the_conditions_are_NOT_sigma_invariant": 32
+            },
+            "702/715": {
+              "boundaries_checked": 40,
+              "boundaries_where_the_conditions_are_NOT_sigma_invariant": 15
+            }
+          },
+          "the_sharpening": "at the covered atoms the conditions are sigma-invariant AT THE CHOICE BOUNDARY and are NOT sigma-invariant at most of the boundaries just before it.  This does not dent the theorem -- the axiom evaluates the distribution against the conditions that obtain, and the conditions that obtain at a choice occasion are the ones at that occasion's boundary -- but it sharpens what is derived: THE EQUAL WEIGHT IS A PROPERTY OF THE OCCASION, NOT OF THE SITE.  The same site one boundary earlier has asymmetric conditions and the axiom forces nothing there, which is the 'varies with' clause behaving exactly as written.  Raised by the independent checker and adopted."
+        },
+        "WHAT_IS_MEASURED": {
+          "BUT_this": "the conditions at the site are POINTWISE INVARIANT UNDER SIGMA.  That is a real, falsifiable property of one state, it is what the theorem text always said, and it is what is computed below.  Adopted from the checker; no number changed, every label did.",
+          "NOT_this": "'the two branches present identical nearest-neighbor conditions'.  That is TRIVIALLY TRUE and licenses nothing: the two branches share one parent state, so of course their conditions coincide.  The supervisor's route name and this block's first field names both said it, and the independent checker was right to refuse them."
         },
         "formalizations": {
           "N1_the_whole_lane_state": {
-            "atoms_with_identical_conditions": [
+            "atoms_with_sigma_invariant_conditions": [
               "700/475",
               "702/254",
               "702/450",
               "702/715"
             ],
+            "contains_the_sigma_support": true,
             "per_atom": {
               "1100/558": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "1100/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "300/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "700/475": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "700/540": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "702/254": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/450": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               }
             },
             "wires_in_the_formalization": 5815
           },
           "N2_every_wire_the_law_touches": {
-            "atoms_with_identical_conditions": [
+            "atoms_with_sigma_invariant_conditions": [
               "700/475",
               "702/254",
               "702/450",
               "702/715"
             ],
+            "contains_the_sigma_support": false,
             "per_atom": {
               "1100/558": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "1100/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "300/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "700/475": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "700/540": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "702/254": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/450": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               }
             },
             "wires_in_the_formalization": 545
           },
           "N3_endpoint_read_cone_depth_1": {
-            "atoms_with_identical_conditions": [
+            "atoms_with_sigma_invariant_conditions": [
               "1100/558",
               "1100/715",
               "300/715",
@@ -1771,44 +1821,45 @@
               "702/450",
               "702/715"
             ],
+            "contains_the_sigma_support": false,
             "per_atom": {
               "1100/558": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "1100/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "300/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "700/475": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "700/540": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/254": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/450": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               }
             },
             "wires_in_the_formalization": 3
           },
           "N4_endpoint_read_cone_depth_2": {
-            "atoms_with_identical_conditions": [
+            "atoms_with_sigma_invariant_conditions": [
               "1100/558",
               "1100/715",
               "300/715",
@@ -1818,202 +1869,206 @@
               "702/450",
               "702/715"
             ],
+            "contains_the_sigma_support": false,
             "per_atom": {
               "1100/558": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "1100/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "300/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "700/475": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "700/540": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/254": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/450": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               }
             },
             "wires_in_the_formalization": 6
           },
           "N5_endpoint_read_cone_closure": {
-            "atoms_with_identical_conditions": [
+            "atoms_with_sigma_invariant_conditions": [
               "700/475",
               "702/254",
               "702/450",
               "702/715"
             ],
+            "contains_the_sigma_support": false,
             "per_atom": {
               "1100/558": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "1100/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "300/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "700/475": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "700/540": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "702/254": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/450": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               }
             },
             "wires_in_the_formalization": 391
           },
           "N6_the_record_banks_and_links": {
-            "atoms_with_identical_conditions": [
+            "atoms_with_sigma_invariant_conditions": [
               "700/475",
               "702/254",
               "702/450",
               "702/715"
             ],
+            "contains_the_sigma_support": false,
             "per_atom": {
               "1100/558": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "1100/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "300/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "700/475": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "700/540": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "702/254": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/450": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               }
             },
             "wires_in_the_formalization": 477
           },
           "N7_the_sigma_support": {
-            "atoms_with_identical_conditions": [
+            "atoms_with_sigma_invariant_conditions": [
               "700/475",
               "702/254",
               "702/450",
               "702/715"
             ],
+            "contains_the_sigma_support": true,
             "per_atom": {
               "1100/558": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "1100/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "300/715": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   255,
                   256
                 ]
               },
               "700/475": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "700/540": {
-                "conditions_identical": false,
+                "conditions_are_sigma_invariant": false,
                 "differing_wires": [
                   124,
                   125
                 ]
               },
               "702/254": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/450": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               },
               "702/715": {
-                "conditions_identical": true,
+                "conditions_are_sigma_invariant": true,
                 "differing_wires": []
               }
             },
@@ -2033,6 +2088,7 @@
       },
       "THEOREM": {
         "HYPOTHESIS_CHAIN": {
+          "H0": "IMPORT, UNDISCHARGED, AND THE MOST LOAD-BEARING LINE IN THIS BLOCK: the compiled substrate law is a realization of the axiom's nearest-neighbor admissibility rule, and a symmetry of the former is a symmetry of the latter.  H2 certifies a property of a 34,408-gate circuit on 5,815 wires over 749 census lanes.  The axiom speaks about a rule on Z^3.  Step 2 of the proof crosses that gap, and nothing in the 936/940/943/946 stack DERIVES the crossing -- it is inherited from the substrate's construction and is exactly as strong as that inheritance.  Named here because the independent checker found it unnamed and was right to: without H0 the theorem is a theorem about a circuit, not about the framework's Admissibility axiom.  IDENTIFYING THE GAP IS NOT CLOSING IT.",
           "H1": "the ADOPTED Admissibility text, both sentences, byte-quoted above.  CONDITIONAL ON PR #6011 LANDING.",
           "H2": "the Q1c symmetry certificate for the constructed kernel: exact at layers L1/L2/L4, semantic at L3.  This is the load-bearing empirical hypothesis and it is no stronger than L3's ensemble.",
           "H3": "the Q2 neighborhood-equality measurement at the site, under a formalization that contains every wire the law reads.  MEASURED, not assumed.",
@@ -2046,7 +2102,7 @@
         "PROOF": [
           "1.  By H1 (Admissibility, second sentence) the distribution at s is DETERMINED BY the nearest-neighbor conditions at s: it is the value of one fixed function f of those conditions, and by H1's first sentence f is the SAME function at every site.",
           "2.  By H2 (the Q1c certificate) sigma is a symmetry of the law: it carries admissible local configurations to admissible local configurations and commutes with the law's action.  So sigma induces a well-defined bijection sigma_* of the local possibility domain that the rule cannot distinguish from the identity by any datum the rule is a function of.",
-          "3.  By H3 (the Q2 measurement) the conditions at s are POINTWISE sigma-invariant.  Hence f is being evaluated at the SAME argument before and after sigma.",
+          "3.  By H3 (the Q2 measurement) the conditions at s, AT THE BOUNDARY OF THE OCCASION IN QUESTION, are POINTWISE sigma-invariant.  Hence f is being evaluated at the SAME argument before and after sigma.  The instant matters and is part of the hypothesis: at most nearby boundaries the same site's conditions are NOT sigma-invariant, so what is derived is a property of the OCCASION, not a standing property of the site.",
           "4.  By Qubit ('No possibility is privileged. Possibilities are distinguished by the supplied algebraic structure alone') the two possibilities u and v carry no label beyond the structure, and by step 2 sigma_* is an automorphism of that structure exchanging them.  A function of the conditions alone therefore cannot separate them: f(conditions)(u) = f(conditions)(v).  Any assignment separating them would have to depend on a datum outside the conditions, contradicting 'determined by'.",
           "5.  By the Admissibility reading note the distribution is a probability measure on the local possibility domain and its support is the availability set; by the site's menu structure the support is {u, v}.  With equality from step 4 and total mass one, the two-item weight is fixed."
         ],
@@ -2420,7 +2476,7 @@
     },
     "worker": "Claude Opus 5 worker under supervisor spec"
   },
-  "science_digest": "3804bb22e669888bf8bb72c146b55580127ba76ec6419b0d44b19e8fbe375187",
+  "science_digest": "497a3c75b328748c3b3c27bbd386c8a6112b26befff42f25a11d3222cb08879f",
   "seal_digest": "7ab2eb2d88ef2b6513a47295854df1691c7bd55d03daae42ae2f49207153dfaa",
-  "self_sha256": "65b98fcbc7c5550af7ff14d7d1b5202addff95491b857222c986b5a7ad52b67b"
+  "self_sha256": "e393c882c3f0ea745190aeb36faf3f02c958537185210f5b8715e7b2bce465d7"
 }

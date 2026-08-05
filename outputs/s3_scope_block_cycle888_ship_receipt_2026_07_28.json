@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor line-by-line review",
+  "block": "toe-time-blockG13-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0; all verdicts SURVIVES; 886-pin fidelity 16/16+16/16 byte-identical; 8/8 teeth; 38.0s",
+    "primary": "16/16 PASS incl. restriction gate reproducing the pinned 886 receipt; 8/8 impostors refused; 4.8s"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 13th gravity-family PR: closes 886's completeness gate with a menu-dissolving recomputation, a transfer theorem (P^1 family), a MIXED load-bearing verdict, and two corrections against the parent block; distinct claim type vs G11; nothing corollary",
+  "cycles": [
+    888
+  ],
+  "files": {
+    "docs/S3_SCOPE_PRICED_MENU_DISSOLVED_CYCLE888_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "dfd80b753b9e1142166ec9fa84f9c22ea3f6f421",
+      "sha256": "a7372ce901de72215e221d2f3604c78070bb3e5d8781b8117809a7ad3217c7d8"
+    },
+    "logs/runner-cache/frontier_cycle888_s3_scope_independent_check_2026_07_28.txt": {
+      "git_blob": "e6880c8df765fddef6d538ae82df87bd59591e1c",
+      "sha256": "2442e8d4548141bce7fa84065b8c88e545e0b16e7798a5a508e23f123f2284c0"
+    },
+    "logs/runner-cache/frontier_cycle888_s3_scope_pricing_2026_07_28.txt": {
+      "git_blob": "6cd3fbdbe74e1231cd61222a798a7979bee922da",
+      "sha256": "5e4fc183efda55d1f3fbd5413bd2fe985ed5732b7ffbc8bd489296e7b22c2c84"
+    },
+    "outputs/s3_scope_independent_check_cycle888_receipt_2026_07_28.json": {
+      "git_blob": "54e58b22107696edc4ccca0eebb8a5d62ab14805",
+      "sha256": "f689f85a29c9c67f3c32984d8db9f8a0ffa8c277164549a5d1fea1b6481e727d"
+    },
+    "outputs/s3_scope_pricing_cycle888_receipt_2026_07_28.json": {
+      "git_blob": "3e18ad52f50e72b83c56da72c31f25d104b5c830",
+      "sha256": "8a540201a84a6b8cb6868d431216718a27f200e45d6ceeb771d858e9a54280cd"
+    },
+    "scripts/frontier_cycle888_s3_scope_independent_check_2026_07_28.py": {
+      "git_blob": "37bb3bc9f1168f2ddf17a7c7cf558555bc7192ab",
+      "sha256": "940c816bcb8ea8c7e3fc9fd2f1bac62cce0a8674cf9c7529549de59a21e503d1"
+    },
+    "scripts/frontier_cycle888_s3_scope_pricing_2026_07_28.py": {
+      "git_blob": "c3de02c94b8a11a930ad6ff8817975b118bc776d",
+      "sha256": "f57fda877d35d49953c3b6a34293ab0cc6a87781ceb9d158b9c9abb5abd4bb3f"
+    }
+  },
+  "headline": "S3 priced, 886's menu DISSOLVED: over the full 30-subgroup lattice zero non-circular clauses isolate C3 (freeness+maximality now selects S3 alone; SEL12 was broken as coded; 886's empty rows were restriction artifacts); S3 = regular representation, coarse (1,5)/(0,0) \u2014 no v2=1 under 883's native reading \u2014 fine-top (1,2)/(0,1) reachable; SL1 transfer NUMERICALLY_TRANSFERS_BUT_NOT_FORCED (multiplicity-2 P^1 family; character-rigid; isotypic level canonical) => SL1's no-free-parameter IS multiplicity-freeness; scope-insensitivity MIXED (sensitive under every reading, readings disagree) \u2014 the scope is load-bearing; FIND-5 named: is multiplicity-freeness quotable?",
+  "independence": "cross-context (independent lattice construction; independent isotype machinery with the pair-orbit safety gate; two checker-side traps invisible to outcome-neutral primary gates; 8/8 teeth)",
+  "note": "docs/S3_SCOPE_PRICED_MENU_DISSOLVED_CYCLE888_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 38.0,
+    "primary": 4.8
+  }
+}

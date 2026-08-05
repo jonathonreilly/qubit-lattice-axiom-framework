@@ -1,0 +1,812 @@
+{
+ "boundary_sentences": [
+  "Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis.",
+  "No formation rule.",
+  "Sets no audit status."
+ ],
+ "bridge_attack": {
+  "a_bridge_the_primary_did_not_name": "SATURATION-RATIO BRIDGE",
+  "candidate_bridges": [
+   {
+    "constructible": true,
+    "content": "both comparators reduce to a 4-dimensional bond state, so 1 - purity lives in [0, 3/4] on BOTH sides; normalise theta by 3/4 to get a dimensionless mixedness fraction",
+    "name": "REDUCED-DIMENSION BRIDGE",
+    "numbers": {
+     "A_theta_star_normalised": 0.6676687030417775,
+     "B_floor_normalised": 0.26666666666666666
+    },
+    "verdict": "DOES NOT CLOSE THE GAP",
+    "what_it_discharges": "a scale convention nobody disputed (bridge item B1's dimension sub-item only)",
+    "what_it_leaves": "the absolute-vs-excess mismatch is untouched: both sides are rescaled by the same factor, so the comparison's sign is unchanged and still meaningless"
+   },
+   {
+    "constructible": true,
+    "content": "compare each comparator's theta to ITS OWN maximum attained value over its own declared run, turning theta into a dimensionless saturation fraction",
+    "name": "SATURATION-RATIO BRIDGE",
+    "numbers": {
+     "A_max_over_the_committed_grid": 0.7226216836808802,
+     "A_theta_star_over_A_max": 0.6929649892743489,
+     "B_floor_over_B_max_excess": 0.9592541788508967,
+     "B_max_excess": 0.20849531272262234
+    },
+    "verdict": "CONSTRUCTIBLE, AND IT MAKES THE PRIMARY'S POINT SHARPER",
+    "what_it_discharges": "B4 (a comparator-independent normalisation) by fiat",
+    "what_it_leaves": "it presumes the two comparators' DYNAMIC RANGES are the physically comparable quantity -- an unsupported premise that also depends on the arbitrary run length (A's maximum is still climbing at Jt = 10) -- and it produces a THIRD numerical answer, different from both of the primary's"
+   },
+   {
+    "constructible": true,
+    "content": "declare that `theta` always means excess over the interacting ground state; the d=3 side then reports C, not A",
+    "name": "BASELINE-KIND BRIDGE",
+    "numbers": {
+     "X_broken_member": 0.5007515264289187,
+     "X_mixed_doublet": 0.000751531142394346
+    },
+    "verdict": "UNDER-DETERMINED (confirms the primary)",
+    "what_it_discharges": "B2",
+    "what_it_leaves": "B3 -- and the two natural doublet conventions land on opposite sides of the floor"
+   }
+  ],
+  "claim_attacked": "NO CONVERSION WITHOUT A BRIDGE PREMISE",
+  "claim_survives": true,
+  "distinct_numerical_answers_produced": 3,
+  "reading": "the no-conversion-without-a-bridge claim SURVIVES and is strengthened: three constructible bridges give three different answers to the same question, and none of them is forced. The primary's enumeration of five required premises is sound but its list of CANDIDATE bridges was not exhaustive -- the saturation-ratio bridge is a fourth route, and it too is a choice."
+ },
+ "claims_that_failed": [
+  {
+   "detail": "sites the primary's note ledger did not flag: ['docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md']",
+   "kind": "census",
+   "name": "primary-named-every-void-site",
+   "ok": false
+  }
+ ],
+ "cross_theta_census": [
+  {
+   "reports_convention": "A",
+   "sentence": "Every fired event is `inside` the sparse window (theta* >= 0.2) with more than a factor of two of margin.",
+   "source": "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "verdict": "VOID -- a A value is compared against B's floor across comparators"
+  },
+  {
+   "reports_convention": "A",
+   "sentence": "50, inside the sparse window, tolerance-insensitive where all tolerances fire, resolution-converged.",
+   "source": "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "verdict": "VOID -- a A value is compared against B's floor across comparators"
+  },
+  {
+   "reports_convention": "A",
+   "sentence": "20` declared comparison floor; and - first-sampled-hit selection, the four-point field ladder, and one time-step-halving comparison.",
+   "source": "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md",
+   "verdict": "DECLARES-THE-FLOOR-AS-AN-IMPORT (sound)"
+  },
+  {
+   "reports_convention": "C",
+   "sentence": "The BAR-BELOW-WINDOW flag is NOT raised -- that flag requires an onset with theta* below the sparse window, and there was no onset.",
+   "source": "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+   "verdict": "DECLARES-THE-FLOOR-AS-AN-IMPORT (sound)"
+  },
+  {
+   "reports_convention": "C",
+   "sentence": "5 at every lambda -- well above the d = 1 sparse-window candidate theta >= 0.2 -- with strong finite-volume recurrences at lambda = 0.",
+   "source": "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+   "verdict": "VOID -- a C value is compared against B's floor across comparators"
+  },
+  {
+   "reports_convention": "B",
+   "sentence": "Below a threshold of about 0.2 the comparator never goes quiet -- everything registers everywhere, endlessly.",
+   "source": "docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+   "verdict": "INTERNAL-TO-B (the floor's own comparator; sound)"
+  },
+  {
+   "reports_convention": "B",
+   "sentence": "ile below it a closed coherent ring produces late first-crossings indefinitely (no quiescence exists -- the yield is well-defined only above a floor, itself a finding); and the DEPOSITION-SPARSE WINDOW IS NON-EMPTY: for theta >= 0.2 the translated fill-per-dwell falls below the campaign-6 wake bound 0.",
+   "source": "docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+   "verdict": "INTERNAL-TO-B (the floor's own comparator; sound)"
+  },
+  {
+   "reports_convention": "B",
+   "sentence": "- Supervisor-executed result: `TOTAL KAPPA-MEASURED failed=none` (checks: stationary control exact zero; locality of early events exact; monotone kappa(theta); sparse-window-theta >= 0.2).",
+   "source": "docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+   "verdict": "INTERNAL-TO-B (the floor's own comparator; sound)"
+  },
+  {
+   "reports_convention": "NONE",
+   "sentence": "At comparator level this is a consistency exhibit between the two axioms; the quantitative bar location (theta*, its delta-insensitivity, its position vs the sparse window theta >= 0.2) is DEFERRED to a d >= 2 comparator and remains unmeasured here.",
+   "source": "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+   "verdict": "DEFERS (no theta of its own; sound)"
+  },
+  {
+   "reports_convention": "B",
+   "sentence": "\"\"\" # Gate the ONCE convention only (one-registration-per-site is the # axiom-shaped counter), with CASCADE QUIESCENCE required on the # sparse-window thresholds (theta >= 0.2) where the constraint # conclusion lives.",
+   "source": "scripts/deposition_per_activity_kappa_2026_07_08.py",
+   "verdict": "INTERNAL-TO-B (the floor's own comparator; sound)"
+  },
+  {
+   "reports_convention": "B",
+   "sentence": "join(failed)} \" f\"exponent={fmt_number(exponent)} exponent-summary=N_once-median \" f\"sparse-window-theta>={sparse_floor} sparse-discrete={fmt_theta_window(joint_sparse_mask)} \" \"sparse-summary=prep-a,joint-g,N_rearm \" f\"elapsed={elapsed:.",
+   "source": "scripts/deposition_per_activity_kappa_2026_07_08.py",
+   "verdict": "INTERNAL-TO-B (the floor's own comparator; sound)"
+  },
+  {
+   "reports_convention": "A",
+   "sentence": "stdout label `d1-comparator-floor=%.2f(theta*>=floor:%s)`",
+   "source": "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py",
+   "verdict": "VOID -- an A value against B's floor, AND the floor is mislabelled as the d=1 note's (Cycle 915's misattribution finding)"
+  }
+ ],
+ "cycle": 916,
+ "findings": [
+  {
+   "detail": "c3e0b9162170f5e8",
+   "kind": "pin",
+   "name": "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md",
+   "ok": true
+  },
+  {
+   "detail": "9373dd8a9c8275b2",
+   "kind": "pin",
+   "name": "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md",
+   "ok": true
+  },
+  {
+   "detail": "74a0a4c0e40e78ec",
+   "kind": "pin",
+   "name": "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md",
+   "ok": true
+  },
+  {
+   "detail": "fc4d60cce8154cec",
+   "kind": "pin",
+   "name": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "ok": true
+  },
+  {
+   "detail": "6424412e7c9e2455",
+   "kind": "history-pin",
+   "name": "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+   "ok": true
+  },
+  {
+   "detail": "3d7303ca4464f56e",
+   "kind": "history-pin",
+   "name": "docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+   "ok": true
+  },
+  {
+   "detail": "08a0716cc349b150",
+   "kind": "history-pin",
+   "name": "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "ok": true
+  },
+  {
+   "detail": "477bdcdd697ed673",
+   "kind": "history-pin",
+   "name": "scripts/deposition_per_activity_kappa_2026_07_08.py",
+   "ok": true
+  },
+  {
+   "detail": "41b4f26af908a7b9",
+   "kind": "history-pin",
+   "name": "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+   "ok": true
+  },
+  {
+   "detail": "191c1ed76082d6e8",
+   "kind": "history-pin",
+   "name": "docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+   "ok": true
+  },
+  {
+   "detail": "checker classes: A=ABSOLUTE centre-bond mixedness B=EXCESS per-bond mixedness C=EXCESS centre-bond mixedness",
+   "kind": "identifiability",
+   "name": "three-definitions-identifiable",
+   "ok": true
+  },
+  {
+   "detail": "[]",
+   "kind": "identifiability",
+   "name": "no-axis-unresolved",
+   "ok": true
+  },
+  {
+   "detail": "12 comparison sites, 4 VOID",
+   "kind": "census",
+   "name": "cross-theta-sites-enumerated",
+   "ok": true
+  },
+  {
+   "detail": "sites the primary's note ledger did not flag: ['docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md']",
+   "kind": "census",
+   "name": "primary-named-every-void-site",
+   "ok": false
+  },
+  {
+   "detail": "5605504",
+   "kind": "machinery",
+   "name": "sector-dimension",
+   "ok": true
+  },
+  {
+   "detail": "['+x', '+y', '+z', '-x', '-y', '-z']",
+   "kind": "descriptor",
+   "name": "six-fragments-parsed",
+   "ok": true
+  },
+  {
+   "detail": "26 sites, centre excluded",
+   "kind": "descriptor",
+   "name": "partition-covers-26",
+   "ok": true
+  },
+  {
+   "detail": "{'+x': [(1, 0, 0)], '-x': [(-1, 0, 0)], '+y': [(0, 1, 0)], '-y': [(0, -1, 0)], '+z': [(0, 0, 1)], '-z': [(0, 0, -1)]}",
+   "kind": "descriptor",
+   "name": "one-axial-face-per-fragment",
+   "ok": true
+  },
+  {
+   "detail": "the frozen memo's own fragment list happens to start with the axial face site, which is what makes the Cycle 914 primary's `first site of F_+x` the centre-bond partner; the checker selects the face EXPLICITLY",
+   "kind": "disclosure",
+   "name": "primary-relies-on-face-first-ordering",
+   "ok": true
+  },
+  {
+   "detail": "primary=0.499999996139 checker=0.499999996139 dev=4.88e-15",
+   "kind": "offset",
+   "name": "delta-gs-lam-0.05",
+   "ok": true
+  },
+  {
+   "detail": "the doublet convention moves the offset by 0.500000",
+   "kind": "offset",
+   "name": "member-dependence-lam-0.05",
+   "ok": true
+  },
+  {
+   "detail": "max|rho_(S,+x) - rho_(S,+y)| = 8.94e-15",
+   "kind": "machinery",
+   "name": "centre-bonds-equal-lam-0.05",
+   "ok": true
+  },
+  {
+   "detail": "primary=0.499999938202 checker=0.499999938202 dev=2.22e-16",
+   "kind": "offset",
+   "name": "delta-gs-lam-0.1",
+   "ok": true
+  },
+  {
+   "detail": "the doublet convention moves the offset by 0.500000",
+   "kind": "offset",
+   "name": "member-dependence-lam-0.1",
+   "ok": true
+  },
+  {
+   "detail": "max|rho_(S,+x) - rho_(S,+y)| = 1.01e-14",
+   "kind": "machinery",
+   "name": "centre-bonds-equal-lam-0.1",
+   "ok": true
+  },
+  {
+   "detail": "4.441e-16",
+   "kind": "machinery",
+   "name": "prep-norm",
+   "ok": true
+  },
+  {
+   "detail": "dev=1.80e-13",
+   "kind": "tier2",
+   "name": "primary-agreement-lam-0.05",
+   "ok": true
+  },
+  {
+   "detail": "dev=1.11e-12",
+   "kind": "tier2",
+   "name": "committed-agreement-lam-0.05",
+   "ok": true
+  },
+  {
+   "detail": "R_ind={'0.05': 0, '0.1': 0, '0.2': 0} at Jt=5",
+   "kind": "tier2",
+   "name": "no-certification-lam-0.05",
+   "ok": true
+  },
+  {
+   "detail": "dev=5.48e-13",
+   "kind": "tier2",
+   "name": "primary-agreement-lam-0.1",
+   "ok": true
+  },
+  {
+   "detail": "dev=2.58e-12",
+   "kind": "tier2",
+   "name": "committed-agreement-lam-0.1",
+   "ok": true
+  },
+  {
+   "detail": "R_ind={'0.05': 0, '0.1': 0, '0.2': 0} at Jt=5",
+   "kind": "tier2",
+   "name": "no-certification-lam-0.1",
+   "ok": true
+  },
+  {
+   "detail": "checker=DECAY-HOLDS primary=DECAY-HOLDS",
+   "kind": "verdict",
+   "name": "c2-verdict-agrees",
+   "ok": true
+  },
+  {
+   "detail": "3 constructible bridges, 3 distinct numerical answers, none forced",
+   "kind": "attack",
+   "name": "no-conversion-claim-survives",
+   "ok": true
+  }
+ ],
+ "git_commands": [
+  {
+   "cmd": "git cat-file blob 7d5a3696a8a0df454151173b1968a74b05a5788c",
+   "out_bytes": 9689,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 017353319be0167651d81fcae20505e284837f22",
+   "out_bytes": 2796,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob c63dd2fa17e1fae95e3df822e6706d95f128d5c0",
+   "out_bytes": 10157,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 6eb8510116fd7958a7b4435a3477139f77a46d81",
+   "out_bytes": 29824,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob dd247a8494f171d4dcaf9a532a09491202b1f512",
+   "out_bytes": 5230,
+   "rc": 0
+  },
+  {
+   "cmd": "git cat-file blob 722d9c0f2c27c3d3f5211a98c394b79c20926f3e",
+   "out_bytes": 4802,
+   "rc": 0
+  }
+ ],
+ "history_pins": {
+  "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md": {
+   "bytes": 10157,
+   "git_blob": "c63dd2fa17e1fae95e3df822e6706d95f128d5c0",
+   "ok": true,
+   "sha256": "08a0716cc349b150f0ac84a16118154dc313eddc2ac8545bdf9766e5823c9393"
+  },
+  "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md": {
+   "bytes": 9689,
+   "git_blob": "7d5a3696a8a0df454151173b1968a74b05a5788c",
+   "ok": true,
+   "sha256": "6424412e7c9e2455fe78ec610ec0873ea1e9977773709b0718c31113a1885a0a"
+  },
+  "docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md": {
+   "bytes": 4802,
+   "git_blob": "722d9c0f2c27c3d3f5211a98c394b79c20926f3e",
+   "ok": true,
+   "sha256": "191c1ed76082d6e885cb6bc2063dbadd51c375149cd186b357094fd09974d38e"
+  },
+  "docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md": {
+   "bytes": 2796,
+   "git_blob": "017353319be0167651d81fcae20505e284837f22",
+   "ok": true,
+   "sha256": "3d7303ca4464f56e48c7f107b9d5cd6ef6d046a7a90a4fe13859affba3e42386"
+  },
+  "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md": {
+   "bytes": 5230,
+   "git_blob": "dd247a8494f171d4dcaf9a532a09491202b1f512",
+   "ok": true,
+   "sha256": "41b4f26af908a7b910fbb5683f9d50432f36328bced7cf107585f7f70771df04"
+  },
+  "scripts/deposition_per_activity_kappa_2026_07_08.py": {
+   "bytes": 29824,
+   "git_blob": "6eb8510116fd7958a7b4435a3477139f77a46d81",
+   "ok": true,
+   "sha256": "477bdcdd697ed673c179af8815cdfb9d84c021d423b0c3e45f4aee904453f1da"
+  }
+ },
+ "lift": {
+  "lifted_source_sha256": "d81895954195bba3bc245736a8f07fdf3a022d0ddd87bfdaa656ac81f58cd68a",
+  "names": [
+   "CHK",
+   "CubeSector",
+   "Marginal",
+   "S_bits",
+   "_tab",
+   "chi_bits",
+   "cmi_bits",
+   "energy_expectation",
+   "expand_table",
+   "r_ind",
+   "rotations24",
+   "shifted_chebyshev",
+   "tr1"
+  ],
+  "source_file": "scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py",
+  "source_sha256": "8ffd5436b5c506e9965a9a6f486f595531113aedef77cc2861114e87b362973f"
+ },
+ "numerics": {
+  "basis_wall_s": 21.74381754201022,
+  "ground_doublet_wall_s": 113.68578100000741,
+  "marginal_wall_s": 0.934563959017396,
+  "numpy": "2.4.1",
+  "peak_rss_gib": 5.186065673828125,
+  "python": "3.12.8",
+  "route": "MAX-canonical invariant-sector reduction + shifted Chebyshev (non-zero centre) + per-row expand-table marginals; ground doublet by two Z2-sector spectral filters on a different damping window",
+  "sector_dimension": 5605504,
+  "tier2_wall_s": 600.3956981250085,
+  "wall_s": 738.5790103329928
+ },
+ "offset_comparison": {
+  "0.05": {
+   "abs_dev": 4.884981308350689e-15,
+   "agrees": true,
+   "checker_broken": 8.524321248870592e-10,
+   "checker_chi_gs2": 0.9997003881046925,
+   "checker_mixed": 0.49999999613894364,
+   "primary_broken": 8.524143613186652e-10,
+   "primary_chi_gs2": 0.9997003881210388,
+   "primary_mixed": 0.49999999613893875
+  },
+  "0.1": {
+   "abs_dev": 2.220446049250313e-16,
+   "agrees": true,
+   "checker_broken": 1.3648979280134199e-08,
+   "checker_chi_gs2": 0.9989402394550583,
+   "checker_mixed": 0.49999993820192956,
+   "primary_broken": 1.3649004926286068e-08,
+   "primary_chi_gs2": 0.9989402394592202,
+   "primary_mixed": 0.49999993820192934
+  }
+ },
+ "offsets": {
+  "0.05": {
+   "E_even": -54.00879174542834,
+   "E_odd": -54.00879174542834,
+   "chi_gs2_bits": 0.9997003881046925,
+   "cross_bond_max_dev": 8.93729534823251e-15,
+   "delta_gs_broken_member": 8.524321248870592e-10,
+   "delta_gs_even_member": 0.49999999613894364,
+   "delta_gs_mixed_doublet": 0.49999999613894364,
+   "filter_steps": 32,
+   "filter_window": [
+    -47.0,
+    55.35
+   ],
+   "matvecs": 66,
+   "member_overlap_abs": 1.1102230246251565e-16,
+   "residual_even": 5.1621176991084685e-06,
+   "residual_odd": 5.1621176991084685e-06,
+   "splitting": 0.0
+  },
+  "0.1": {
+   "E_even": -54.035167926821316,
+   "E_odd": -54.035167926821316,
+   "chi_gs2_bits": 0.9989402394550583,
+   "cross_bond_max_dev": 1.0103029524088925e-14,
+   "delta_gs_broken_member": 1.3648979280134199e-08,
+   "delta_gs_even_member": 0.49999993820192956,
+   "delta_gs_mixed_doublet": 0.49999993820192956,
+   "filter_steps": 32,
+   "filter_window": [
+    -47.0,
+    56.7
+   ],
+   "matvecs": 66,
+   "member_overlap_abs": 5.551115123125783e-17,
+   "residual_even": 1.161632135894455e-05,
+   "residual_odd": 1.161632135894455e-05,
+   "splitting": 0.0
+  }
+ },
+ "own_reading": {
+  "A": {
+   "aggregation": "mean over the six centre bonds",
+   "classification": "ABSOLUTE centre-bond mixedness",
+   "doublet_explicitly_excluded_as_baseline": true,
+   "restated_in_landed_note": true,
+   "subtrahend_is_zero_by_construction": true,
+   "subtrahend_kind": "trajectory t=0",
+   "system": "open 3x3x3 transverse-field Ising qubit cube (declared comparator)",
+   "threshold_target": "none -- theta is read AT the first certified hit, never thresholded",
+   "unnormalized_unclipped": true
+  },
+  "B": {
+   "aggregation": "NONE -- each bond is thresholded separately",
+   "classification": "EXCESS per-bond mixedness",
+   "note_prose_agrees_with_the_code": true,
+   "subtrahend_kind": "interacting ground state, PER BOND",
+   "swept_threshold_grid": "0.02, 0.05, 0.1, 0.2, 0.3, 0.4",
+   "system": "N=12 staggered gauged Schwinger comparator, finite rotor cutoff",
+   "threshold_target": "the excess itself; upward crossing, once per site"
+  },
+  "C": {
+   "aggregation": "mean over the six centre bonds",
+   "baseline_self_declared_ambiguous": true,
+   "classification": "EXCESS centre-bond mixedness",
+   "preparation_differs_from_A": true,
+   "subtrahend_kind": "interacting ground state",
+   "system": "the SAME open 3x3x3 cube as A",
+   "threshold_target": "none -- theta is read at the (absent) onset"
+  }
+ },
+ "pins": {
+  "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": {
+   "bytes": 49165,
+   "ok": true,
+   "sha256": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e"
+  },
+  "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md": {
+   "bytes": 6705,
+   "ok": true,
+   "sha256": "74a0a4c0e40e78ec042824ba706389e53e8bde22443964388987557a1819552c"
+  },
+  "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md": {
+   "bytes": 9340,
+   "ok": true,
+   "sha256": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad"
+  },
+  "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+   "bytes": 8846,
+   "ok": true,
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+  }
+ },
+ "primary_receipt_sha256": "4a3e390bbc9e9ba21dd3b87feef5db0171d33c8ddc5187314125300cedb8419c",
+ "primary_runner_sha256": "3fa7f1d86c0443f055ec5a946176ab8261e6b66d87979dc299e5e6296a06f6d6",
+ "reading_comparison": {
+  "A": {
+   "checker_class": "ABSOLUTE centre-bond mixedness",
+   "materially_different": false,
+   "primary_class": "ABSOLUTE centre-bond mixedness",
+   "same_aggregation": true,
+   "same_baseline_kind": true,
+   "same_classification": true
+  },
+  "B": {
+   "checker_class": "EXCESS per-bond mixedness",
+   "materially_different": false,
+   "primary_class": "EXCESS bond mixedness",
+   "same_aggregation": true,
+   "same_baseline_kind": true,
+   "same_classification": true
+  },
+  "C": {
+   "checker_class": "EXCESS centre-bond mixedness",
+   "materially_different": false,
+   "primary_class": "EXCESS centre-bond mixedness",
+   "same_aggregation": true,
+   "same_baseline_kind": true,
+   "same_classification": true
+  },
+  "any_materially_different": false
+ },
+ "schema": "cycle916-theta-independent-check-v1",
+ "teeth": [
+  {
+   "detail": "one flipped byte of the frozen memo breaks the pin digest",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "tampered-pin"
+  },
+  {
+   "detail": "the dictionary completeness check requires all three conventions; dropping B leaves 2",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "dropped-convention"
+  },
+  {
+   "detail": "a fabricated Delta_GS = 0.25 is rejected against the measured 0.499999996139",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "hardcoded-offset"
+  },
+  {
+   "detail": "forcing R_ind = 4 into the checker's own late row flips the verdict to RE-CERTIFIES, so DECAY-HOLDS is measured, not wired in",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "leaked-re-certification-verdict"
+  },
+  {
+   "detail": "dropping lambda = 0.10's tier-2 sample leaves 1/2 lambdas covered",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "skipped-sample"
+  },
+  {
+   "detail": "a planted revival row certifies R_ind = 6 through the checker's OWN gate while a zero-excess control gives 0",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "planted-revival-blindness"
+  },
+  {
+   "detail": "a 1e-6 perturbation of the committed theta is caught by the 1e-9 reproduction gate",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "tampered-committed-stream"
+  },
+  {
+   "detail": "a single corrupted hop-table entry changes the propagator action by 5.62e-04",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "sector-table-tamper"
+  }
+ ],
+ "tier2": {
+  "0.05": {
+   "abs_dev_theta_vs_committed": 1.1085576900882188e-12,
+   "abs_dev_theta_vs_primary": 1.7974510768681284e-13,
+   "committed_r_ind": {
+    "0.05": 0,
+    "0.10": 0,
+    "0.20": 0
+   },
+   "committed_theta": 0.4546588150087526,
+   "primary_theta": 0.4546588150096814,
+   "propagator": {
+    "centre": 2.0,
+    "degree": 365,
+    "half_width": 57.35,
+    "matvecs": 365
+   },
+   "r_ind_agrees_with_committed": true,
+   "r_ind_agrees_with_primary": true,
+   "rows": [
+    {
+     "H_Z": 0.9999999999999999,
+     "chi_closed_five": 0.0,
+     "chi_wedge_four": 0.0,
+     "excess_closed_five": 0.0,
+     "jt": 0.0,
+     "lam": 0.05,
+     "norm_err": 4.440892098500626e-16,
+     "pair_values": null,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "raw_bond_one_minus_purity": -4.440892098500626e-16,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "theta": 0.0
+    },
+    {
+     "H_Z": 0.9999999886584883,
+     "chi_closed_five": 0.3463360228041914,
+     "chi_wedge_four": 0.2919400664390208,
+     "excess_closed_five": 0.3463360228041914,
+     "jt": 5.0,
+     "lam": 0.05,
+     "norm_err": 2.220446049250313e-15,
+     "pair_values": null,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "raw_bond_one_minus_purity": 0.4546588150098607,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "theta": 0.45465881500986116
+    }
+   ]
+  },
+  "0.1": {
+   "abs_dev_theta_vs_committed": 2.5759394617352882e-12,
+   "abs_dev_theta_vs_primary": 5.478950626525148e-13,
+   "committed_r_ind": {
+    "0.05": 0,
+    "0.10": 0,
+    "0.20": 0
+   },
+   "committed_theta": 0.5464851368866367,
+   "primary_theta": 0.5464851368886647,
+   "propagator": {
+    "centre": 2.0,
+    "degree": 372,
+    "half_width": 58.7,
+    "matvecs": 372
+   },
+   "r_ind_agrees_with_committed": true,
+   "r_ind_agrees_with_primary": true,
+   "rows": [
+    {
+     "H_Z": 0.9999999999999999,
+     "chi_closed_five": 0.0,
+     "chi_wedge_four": 0.0,
+     "excess_closed_five": 0.0,
+     "jt": 0.0,
+     "lam": 0.1,
+     "norm_err": 4.440892098500626e-16,
+     "pair_values": null,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "raw_bond_one_minus_purity": -4.440892098500626e-16,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "theta": 0.0
+    },
+    {
+     "H_Z": 0.9999994573502502,
+     "chi_closed_five": 0.24885392479255158,
+     "chi_wedge_four": 0.1631059215090711,
+     "excess_closed_five": 0.24885392479255158,
+     "jt": 5.0,
+     "lam": 0.1,
+     "norm_err": 4.551914400963142e-15,
+     "pair_values": null,
+     "r_ind": {
+      "0.05": 0,
+      "0.1": 0,
+      "0.2": 0
+     },
+     "raw_bond_one_minus_purity": 0.5464851368892122,
+     "singleton_passes": {
+      "0.05": [],
+      "0.1": [],
+      "0.2": []
+     },
+     "theta": 0.5464851368892126
+    }
+   ]
+  }
+ },
+ "verdict": {
+  "cross_theta_sites": 12,
+  "no_conversion_claim": "SURVIVES",
+  "offset_reproduced": true,
+  "teeth_fired": 8,
+  "teeth_total": 8,
+  "three_definitions_identifiable": true,
+  "tier2_agrees_with_primary": true,
+  "tier2_verdict": "DECAY-HOLDS",
+  "void_sites": 4,
+  "void_sites_missed_by_the_primary": [
+   "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md"
+  ]
+ },
+ "void_comparison_sites": [
+  {
+   "reports_convention": "A",
+   "sentence": "Every fired event is `inside` the sparse window (theta* >= 0.2) with more than a factor of two of margin.",
+   "source": "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "verdict": "VOID -- a A value is compared against B's floor across comparators"
+  },
+  {
+   "reports_convention": "A",
+   "sentence": "50, inside the sparse window, tolerance-insensitive where all tolerances fire, resolution-converged.",
+   "source": "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+   "verdict": "VOID -- a A value is compared against B's floor across comparators"
+  },
+  {
+   "reports_convention": "C",
+   "sentence": "5 at every lambda -- well above the d = 1 sparse-window candidate theta >= 0.2 -- with strong finite-volume recurrences at lambda = 0.",
+   "source": "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+   "verdict": "VOID -- a C value is compared against B's floor across comparators"
+  },
+  {
+   "reports_convention": "A",
+   "sentence": "stdout label `d1-comparator-floor=%.2f(theta*>=floor:%s)`",
+   "source": "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py",
+   "verdict": "VOID -- an A value against B's floor, AND the floor is mislabelled as the d=1 note's (Cycle 915's misattribution finding)"
+  }
+ ]
+}

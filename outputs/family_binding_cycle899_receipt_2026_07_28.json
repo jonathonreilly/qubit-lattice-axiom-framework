@@ -1,0 +1,1676 @@
+{
+ "all_certificates_pass": true,
+ "answer": "The construction binds to F_dim: its native K is 2/9 at C3 (the restriction gate) and 3/16 at C4.  The retained anchor arithmetic binds to F_res: 2/9 at C3 and 5/16 at C4.  They DISAGREE at C4, and the disagreement is a disagreement about which SPACE the record reads, not about which functional.",
+ "certificate_passes": {
+  "A_PINS": true,
+  "C_RESTRICTION_GATES": true,
+  "D_Q1_NATIVE_VALUE": true,
+  "E_Q2_RETAINED_L_FACE": true,
+  "F_Q3_FITTED_VALUE": true,
+  "G_FALSIFIER_VISIBILITY": true,
+  "H_Q4_COMPLETE_TABLE": true
+ },
+ "certificates": {
+  "A_PINS": {
+   "all_pins_verified": true,
+   "failures": [],
+   "finding": "10 pinned artifacts, 10 verified, 0 import-firewall hits.",
+   "import_firewall_blocklist": [
+    "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05",
+    "MINIMAL_AXIOMS_2026-06-29",
+    "frontier_cycle883_record_weight_pair_2026_07_28",
+    "frontier_cycle888_s3_scope_pricing_2026_07_28",
+    "frontier_cycle890_multiplicity_freeness_2026_07_28",
+    "multiplicity_freeness_cycle890_receipt_2026_07_28",
+    "record_weight_pair_cycle883_receipt_2026_07_28",
+    "s3_scope_pricing_cycle888_receipt_2026_07_28"
+   ],
+   "import_firewall_hit_count": 0,
+   "import_firewall_hits": [],
+   "import_firewall_zero_hits": true,
+   "pass": true,
+   "reading_discipline": "TEXT / AST / JSON only; no pinned artifact is imported as a module",
+   "rows": [
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "exists": true,
+     "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+     "git_blob_matches_pin": true,
+     "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+     "sha256_matches_pin": true
+    },
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+     "exists": true,
+     "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+     "git_blob_matches_pin": true,
+     "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+     "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c",
+     "sha256_matches_pin": true
+    },
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/outputs/record_weight_pair_cycle883_receipt_2026_07_28.json",
+     "exists": true,
+     "git_blob": "d4290cbe8cfedf965fad828dc673e8fee2e75cd5",
+     "git_blob_matches_pin": true,
+     "path": "outputs/record_weight_pair_cycle883_receipt_2026_07_28.json",
+     "sha256": "973d18d9aa2e05a2decac79ddd8a6f245d923e9a94d772baf80869228ca27d60",
+     "sha256_matches_pin": true
+    },
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt",
+     "exists": true,
+     "git_blob": "6f085fc042330dae1d3eec8540a2942b1a3cf32f",
+     "git_blob_matches_pin": true,
+     "path": "logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt",
+     "sha256": "560f368d9d23144cb23a93e72a398d92f6fcb536c3363179b7853c09615211bb",
+     "sha256_matches_pin": true
+    },
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/scripts/frontier_cycle888_s3_scope_pricing_2026_07_28.py",
+     "exists": true,
+     "git_blob": "c3de02c94b8a11a930ad6ff8817975b118bc776d",
+     "git_blob_matches_pin": true,
+     "path": "scripts/frontier_cycle888_s3_scope_pricing_2026_07_28.py",
+     "sha256": "f57fda877d35d49953c3b6a34293ab0cc6a87781ceb9d158b9c9abb5abd4bb3f",
+     "sha256_matches_pin": true
+    },
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/outputs/s3_scope_pricing_cycle888_receipt_2026_07_28.json",
+     "exists": true,
+     "git_blob": "3e18ad52f50e72b83c56da72c31f25d104b5c830",
+     "git_blob_matches_pin": true,
+     "path": "outputs/s3_scope_pricing_cycle888_receipt_2026_07_28.json",
+     "sha256": "8a540201a84a6b8cb6868d431216718a27f200e45d6ceeb771d858e9a54280cd",
+     "sha256_matches_pin": true
+    },
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/logs/runner-cache/frontier_cycle888_s3_scope_pricing_2026_07_28.txt",
+     "exists": true,
+     "git_blob": "6cd3fbdbe74e1231cd61222a798a7979bee922da",
+     "git_blob_matches_pin": true,
+     "path": "logs/runner-cache/frontier_cycle888_s3_scope_pricing_2026_07_28.txt",
+     "sha256": "5e4fc183efda55d1f3fbd5413bd2fe985ed5732b7ffbc8bd489296e7b22c2c84",
+     "sha256_matches_pin": true
+    },
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/scripts/frontier_cycle890_multiplicity_freeness_2026_07_28.py",
+     "exists": true,
+     "git_blob": "307f4e7640a1a9b5b3365d70ebc857a9c9488beb",
+     "git_blob_matches_pin": true,
+     "path": "scripts/frontier_cycle890_multiplicity_freeness_2026_07_28.py",
+     "sha256": "b7d2e9c2c540fc35ca461af10c4ce6b455269503c6027b3f0b4d5036566d867b",
+     "sha256_matches_pin": true
+    },
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json",
+     "exists": true,
+     "git_blob": "eefb1ac72326ae70073126198854dea5e26d1f01",
+     "git_blob_matches_pin": true,
+     "path": "outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json",
+     "sha256": "a366a726c34308260dcf153ff74619238347de5996463a7c5a5792bdcd01617e",
+     "sha256_matches_pin": true
+    },
+    {
+     "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/c5-g22/docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+     "exists": true,
+     "git_blob": "1201ba9702ec8a0b81df0319a90a080549cfdd4a",
+     "git_blob_matches_pin": true,
+     "path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+     "sha256": "3c7a33c8abac8e70bdcf2e8b9db5d917c0b2cee6fc7cc0ec91c6d803bbb230d2",
+     "sha256_matches_pin": true
+    }
+   ]
+  },
+  "B_RECIPE_RECOVERY": {
+   "coarse_formula_key_found": true,
+   "coarse_sentence_found_verbatim": true,
+   "ok": true,
+   "reading_is_COARSE_because": "C883-T6 states the pair in words -- '(1, 1) at n = 2 and (1, 3) at n = 4' -- and keys its own row check on matches_the_formula_1_n_minus_1.  So 883's (w0, w1) is the invariant/complement COARSE split, not the fine isotype list; at n = 4 it is (1, 3), never (1, 2).",
+   "recovered_C883_T6_theorem_statement": "C883-T6. For a record consisting of one free orbit of a cyclic group of order n, the ordered isotype pair is exactly (1, n - 1). Hence the pair is (1, 2) if and only if n = 3; it is (1, 1) at n = 2 and (1, 3) at n = 4, and the pair (2, 2) is the two-C2-orbit record. The pair is a FUNCTION of the record configuration.",
+   "recovered_anchor": "2/9",
+   "recovered_form_count": 7,
+   "recovered_forms": [
+    {
+     "expression_source": "Fraction(w1, (w0 + w1) ** 2)",
+     "name": "w1 / (w0 + w1)^2"
+    },
+    {
+     "expression_source": "Fraction(w0 * w1, n ** 2)",
+     "name": "w0 * w1 / n^2"
+    },
+    {
+     "expression_source": "Fraction(w1, n ** 2)",
+     "name": "w1 / n^2"
+    },
+    {
+     "expression_source": "Fraction(n - 1, n ** 2)",
+     "name": "(n - 1) / n^2"
+    },
+    {
+     "expression_source": "Fraction(w1, w0 * n ** 2)",
+     "name": "w1 / (w0 * n^2)"
+    },
+    {
+     "expression_source": "Fraction(w0, n)",
+     "name": "w0 / n"
+    },
+    {
+     "expression_source": "Fraction(w0 + w1, n ** 2)",
+     "name": "(w0 + w1) / n^2"
+    }
+   ],
+   "recovered_module_constants": {
+    "L3_FIXED_LOCUS_DENSITY": "Fraction(2, 9)",
+    "ORBIT_LENGTH": 3,
+    "TARGET_PAIR": [
+     1,
+     2
+    ]
+   },
+   "recovered_scope_binding_source": "w0, w1, n = (1, 2, ORBIT_LENGTH)",
+   "source_function": "binding_price_certificate"
+  },
+  "C_RESTRICTION_GATES": {
+   "finding": "883's anchor recomputes to 2/9 on 5 of its own seven forms, matching its pinned cache name-for-name; 888's two routes agree at C3 and are rebuilt here to the same pair [1, 2]; 890's census rows match value-for-value.",
+   "gate_1_cycle883_anchor_by_its_own_recipe": {
+    "count_in_the_pinned_883_cache": 5,
+    "count_recomputed_here": 5,
+    "docstring_discrepancy_found_in_the_pinned_883_primary": "883's module docstring says 'four distinct closed forms in (1, 2, 3) return 2/9'; its own certificate M computed and recorded FIVE, and five is what recomputes here.  The prose is stale, the computation is not; nothing downstream of the count changes.",
+    "evaluated_at_(w0, w1, n)": [
+     1,
+     2,
+     3
+    ],
+    "forms_returning_the_anchor_in_the_pinned_883_cache": [
+     "(n - 1) / n^2",
+     "w0 * w1 / n^2",
+     "w1 / (w0 * n^2)",
+     "w1 / (w0 + w1)^2",
+     "w1 / n^2"
+    ],
+    "forms_returning_the_anchor_recomputed_here": [
+     "(n - 1) / n^2",
+     "w0 * w1 / n^2",
+     "w1 / (w0 * n^2)",
+     "w1 / (w0 + w1)^2",
+     "w1 / n^2"
+    ],
+    "rows": [
+     {
+      "hits_the_anchor": true,
+      "name": "w1 / (w0 + w1)^2",
+      "value": "2/9"
+     },
+     {
+      "hits_the_anchor": true,
+      "name": "w0 * w1 / n^2",
+      "value": "2/9"
+     },
+     {
+      "hits_the_anchor": true,
+      "name": "w1 / n^2",
+      "value": "2/9"
+     },
+     {
+      "hits_the_anchor": true,
+      "name": "(n - 1) / n^2",
+      "value": "2/9"
+     },
+     {
+      "hits_the_anchor": true,
+      "name": "w1 / (w0 * n^2)",
+      "value": "2/9"
+     },
+     {
+      "hits_the_anchor": false,
+      "name": "w0 / n",
+      "value": "1/3"
+     },
+     {
+      "hits_the_anchor": false,
+      "name": "(w0 + w1) / n^2",
+      "value": "1/3"
+     }
+    ],
+    "value_for_value_match": true
+   },
+   "gate_2_cycle888_two_route_agreement_at_C3": {
+    "all_four_agree": true,
+    "cycle888_cache_says_both_routes_agree": true,
+    "cycle888_group_theoretic_route_pair": [
+     1,
+     2
+    ],
+    "rebuilt_here_cyclic_native": [
+     1,
+     2
+    ],
+    "rebuilt_here_group_theoretic": [
+     1,
+     2
+    ]
+   },
+   "gate_3_cycle890_census_rows": {
+    "C3_body": [
+     1,
+     2
+    ],
+    "C4_face_coarse": [
+     1,
+     3
+    ],
+    "C4_face_fine": [
+     1,
+     1,
+     2
+    ],
+    "S3_body_is_multiplicity_free": false,
+    "V_edge_coarse": [
+     1,
+     3
+    ],
+    "value_for_value_match": true
+   },
+   "pass": true
+  },
+  "D_Q1_NATIVE_VALUE": {
+   "family_comparison": {
+    "family_values_at_each_N": {
+     "3": {
+      "F_ded": "2/9",
+      "F_dim": "2/9",
+      "F_res": "2/9"
+     },
+     "4": {
+      "F_ded": "1/2",
+      "F_dim": "3/16",
+      "F_res": "5/16"
+     }
+    },
+    "matching_families": [
+     "F_dim"
+    ],
+    "observed": {
+     "3": "2/9",
+     "4": "3/16"
+    },
+    "verdict": "F_dim"
+   },
+   "family_verdict": "F_dim",
+   "finding": "The recovered recipe evaluates to 2/9 at C3 (the restriction gate) and 3/16 at C4; the family comparison returns F_dim.",
+   "native_K_at_C3": "2/9",
+   "native_K_at_C4": "3/16",
+   "pass": true,
+   "question": "Executing 883's own recipe on the construction's own decomposition, what does one full free orbit read at each scope?",
+   "recovered_recipe_count": 5,
+   "recovered_recipe_forms": [
+    "w1 / (w0 + w1)^2",
+    "w0 * w1 / n^2",
+    "w1 / n^2",
+    "(n - 1) / n^2",
+    "w1 / (w0 * n^2)"
+   ],
+   "restriction_gate_C3_reproduces_the_anchor": true,
+   "rows": [
+    {
+     "FIND3_safety_gate": true,
+     "canonical_scope_for_the_construction": true,
+     "coarse_pair_w0_w1": [
+      1,
+      1
+     ],
+     "fine_dims": [
+      1,
+      1
+     ],
+     "free_orbit_length": 2,
+     "group_order": 2,
+     "multiplicity_free": true,
+     "native_K": "1/4",
+     "readout_space_dimension": 2,
+     "recovered_recipe_forms_all_agree": true,
+     "recovered_recipe_values": {
+      "(n - 1) / n^2": "1/4",
+      "w0 * w1 / n^2": "1/4",
+      "w1 / (w0 * n^2)": "1/4",
+      "w1 / (w0 + w1)^2": "1/4",
+      "w1 / n^2": "1/4"
+     },
+     "scope": "C2_face"
+    },
+    {
+     "FIND3_safety_gate": true,
+     "canonical_scope_for_the_construction": true,
+     "coarse_pair_w0_w1": [
+      1,
+      1
+     ],
+     "fine_dims": [
+      1,
+      1
+     ],
+     "free_orbit_length": 2,
+     "group_order": 2,
+     "multiplicity_free": true,
+     "native_K": "1/4",
+     "readout_space_dimension": 2,
+     "recovered_recipe_forms_all_agree": true,
+     "recovered_recipe_values": {
+      "(n - 1) / n^2": "1/4",
+      "w0 * w1 / n^2": "1/4",
+      "w1 / (w0 * n^2)": "1/4",
+      "w1 / (w0 + w1)^2": "1/4",
+      "w1 / n^2": "1/4"
+     },
+     "scope": "C2_edge"
+    },
+    {
+     "FIND3_safety_gate": true,
+     "canonical_scope_for_the_construction": true,
+     "coarse_pair_w0_w1": [
+      1,
+      2
+     ],
+     "fine_dims": [
+      1,
+      2
+     ],
+     "free_orbit_length": 3,
+     "group_order": 3,
+     "multiplicity_free": true,
+     "native_K": "2/9",
+     "readout_space_dimension": 3,
+     "recovered_recipe_forms_all_agree": true,
+     "recovered_recipe_values": {
+      "(n - 1) / n^2": "2/9",
+      "w0 * w1 / n^2": "2/9",
+      "w1 / (w0 * n^2)": "2/9",
+      "w1 / (w0 + w1)^2": "2/9",
+      "w1 / n^2": "2/9"
+     },
+     "scope": "C3_body"
+    },
+    {
+     "FIND3_safety_gate": true,
+     "canonical_scope_for_the_construction": true,
+     "coarse_pair_w0_w1": [
+      1,
+      3
+     ],
+     "fine_dims": [
+      1,
+      1,
+      2
+     ],
+     "free_orbit_length": 4,
+     "group_order": 4,
+     "multiplicity_free": true,
+     "native_K": "3/16",
+     "readout_space_dimension": 4,
+     "recovered_recipe_forms_all_agree": true,
+     "recovered_recipe_values": {
+      "(n - 1) / n^2": "3/16",
+      "w0 * w1 / n^2": "3/16",
+      "w1 / (w0 * n^2)": "3/16",
+      "w1 / (w0 + w1)^2": "3/16",
+      "w1 / n^2": "3/16"
+     },
+     "scope": "C4_face"
+    },
+    {
+     "FIND3_safety_gate": true,
+     "canonical_scope_for_the_construction": true,
+     "coarse_pair_w0_w1": [
+      1,
+      3
+     ],
+     "fine_dims": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "free_orbit_length": 4,
+     "group_order": 4,
+     "multiplicity_free": true,
+     "native_K": "3/16",
+     "readout_space_dimension": 4,
+     "recovered_recipe_forms_all_agree": true,
+     "recovered_recipe_values": {
+      "(n - 1) / n^2": "3/16",
+      "w0 * w1 / n^2": "3/16",
+      "w1 / (w0 * n^2)": "3/16",
+      "w1 / (w0 + w1)^2": "3/16",
+      "w1 / n^2": "3/16"
+     },
+     "scope": "V_edge"
+    },
+    {
+     "FIND3_safety_gate": true,
+     "canonical_scope_for_the_construction": false,
+     "coarse_pair_w0_w1": [
+      1,
+      5
+     ],
+     "fine_dims": null,
+     "free_orbit_length": 6,
+     "group_order": 6,
+     "multiplicity_free": false,
+     "native_K": "5/36",
+     "readout_space_dimension": 6,
+     "recovered_recipe_forms_all_agree": true,
+     "recovered_recipe_values": {
+      "(n - 1) / n^2": "5/36",
+      "w0 * w1 / n^2": "5/36",
+      "w1 / (w0 * n^2)": "5/36",
+      "w1 / (w0 + w1)^2": "5/36",
+      "w1 / n^2": "5/36"
+     },
+     "scope": "S3_body"
+    }
+   ],
+   "the_883_ambiguity_is_a_phantom_at_the_family_level": {
+    "all_five_collapse_to_F_dim_on_every_orbit_length": true,
+    "rows": [
+     {
+      "coarse_pair": [
+       1,
+       1
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "1/4"
+      ],
+      "equals_F_dim": true,
+      "n": 2
+     },
+     {
+      "coarse_pair": [
+       1,
+       2
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "2/9"
+      ],
+      "equals_F_dim": true,
+      "n": 3
+     },
+     {
+      "coarse_pair": [
+       1,
+       3
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "3/16"
+      ],
+      "equals_F_dim": true,
+      "n": 4
+     },
+     {
+      "coarse_pair": [
+       1,
+       4
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "4/25"
+      ],
+      "equals_F_dim": true,
+      "n": 5
+     },
+     {
+      "coarse_pair": [
+       1,
+       5
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "5/36"
+      ],
+      "equals_F_dim": true,
+      "n": 6
+     },
+     {
+      "coarse_pair": [
+       1,
+       6
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "6/49"
+      ],
+      "equals_F_dim": true,
+      "n": 7
+     },
+     {
+      "coarse_pair": [
+       1,
+       7
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "7/64"
+      ],
+      "equals_F_dim": true,
+      "n": 8
+     },
+     {
+      "coarse_pair": [
+       1,
+       8
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "8/81"
+      ],
+      "equals_F_dim": true,
+      "n": 9
+     },
+     {
+      "coarse_pair": [
+       1,
+       9
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "9/100"
+      ],
+      "equals_F_dim": true,
+      "n": 10
+     },
+     {
+      "coarse_pair": [
+       1,
+       10
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "10/121"
+      ],
+      "equals_F_dim": true,
+      "n": 11
+     },
+     {
+      "coarse_pair": [
+       1,
+       11
+      ],
+      "collapse": true,
+      "distinct_values_among_the_recovered_forms": [
+       "11/144"
+      ],
+      "equals_F_dim": true,
+      "n": 12
+     }
+    ],
+    "the_honest_residual": "This closes SL1b only WITHIN 883's own enumerated form set.  Forms outside that set, in the same data, bind elsewhere -- the planted variants in certificate G exhibit two of them.  What is closed is: the recipe 883 actually wrote down is family-identified.  What is not closed is: that 883's enumeration was exhaustive.",
+    "what_883_priced": "883 recorded a five-fold DISCRETE CHOICE: five of its seven enumerated closed forms return 2/9 at (1, 2, 3), and it concluded 'nothing in the derivation picks one' (SL1b).",
+    "what_is_computed_here": "On the free-orbit locus w0 = 1, w1 = n - 1, w0 + w1 = n, so all five forms are the SAME FUNCTION OF THE SCOPE.  The five-fold choice is a choice of EXPRESSION, not of value: it induces a singleton on scopes."
+   }
+  },
+  "E_Q2_RETAINED_L_FACE": {
+   "abstract_cyclic_rows_from_the_notes_own_recipe": [
+    {
+     "L_face_value": "1/8",
+     "N": 2,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "1/4"
+    },
+    {
+     "L_face_value": "2/9",
+     "N": 3,
+     "equals_F_dim": true,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "2/3"
+    },
+    {
+     "L_face_value": "5/16",
+     "N": 4,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "5/4"
+    },
+    {
+     "L_face_value": "2/5",
+     "N": 5,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "2/1"
+    },
+    {
+     "L_face_value": "35/72",
+     "N": 6,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "35/12"
+    },
+    {
+     "L_face_value": "4/7",
+     "N": 7,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "4/1"
+    },
+    {
+     "L_face_value": "21/32",
+     "N": 8,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "21/4"
+    },
+    {
+     "L_face_value": "20/27",
+     "N": 9,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "20/3"
+    },
+    {
+     "L_face_value": "33/40",
+     "N": 10,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "33/4"
+    },
+    {
+     "L_face_value": "10/11",
+     "N": 11,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "10/1"
+    },
+    {
+     "L_face_value": "143/144",
+     "N": 12,
+     "equals_F_dim": false,
+     "equals_F_res": true,
+     "sum_of_inverse_determinants": "143/12"
+    }
+   ],
+   "all_three_families_coincide_only_at": [
+    3
+   ],
+   "family_pairwise_coincidences_over_N_in_2_to_2000": [
+    {
+     "N_where_equal": [
+      3
+     ],
+     "pair": [
+      "F_dim",
+      "F_res"
+     ]
+    },
+    {
+     "N_where_equal": [
+      3
+     ],
+     "pair": [
+      "F_dim",
+      "F_ded"
+     ]
+    },
+    {
+     "N_where_equal": [
+      3
+     ],
+     "pair": [
+      "F_res",
+      "F_ded"
+     ]
+    }
+   ],
+   "finding": "The retained L-face reads 2/9 at C3 and 5/16 at C4, binding to F_res; its transport onto the readout space is defined only at prime orbit length and there equals F_dim.  The C3 agreement is the module identification (geometric normal plane) == (readout transverse space), which holds at C3 and fails at C4.",
+   "geometric_L_face_at_C3": "2/9",
+   "geometric_L_face_at_C4": "5/16",
+   "geometric_family_comparison": {
+    "family_values_at_each_N": {
+     "3": {
+      "F_ded": "2/9",
+      "F_dim": "2/9",
+      "F_res": "2/9"
+     },
+     "4": {
+      "F_ded": "1/2",
+      "F_dim": "3/16",
+      "F_res": "5/16"
+     }
+    },
+    "matching_families": [
+     "F_res"
+    ],
+    "observed": {
+     "3": "2/9",
+     "4": "5/16"
+    },
+    "verdict": "F_res"
+   },
+   "geometric_family_verdict": "F_res",
+   "module_identification_that_collapses_the_two_readings": [
+    {
+     "geometric_normal_fine_dims": [
+      1,
+      1
+     ],
+     "readout_transverse_fine_dims": [
+      1
+     ],
+     "scope": "C2_face",
+     "the_two_spaces_are_isomorphic_as_H_modules": false
+    },
+    {
+     "geometric_normal_fine_dims": [
+      2
+     ],
+     "readout_transverse_fine_dims": [
+      2
+     ],
+     "scope": "C3_body",
+     "the_two_spaces_are_isomorphic_as_H_modules": true
+    },
+    {
+     "geometric_normal_fine_dims": [
+      2
+     ],
+     "readout_transverse_fine_dims": [
+      1,
+      2
+     ],
+     "scope": "C4_face",
+     "the_two_spaces_are_isomorphic_as_H_modules": false
+    }
+   ],
+   "pass": true,
+   "question": "The retained anchor arithmetic is the note's finite inverse-normal-determinant average.  What does IT read at the C4 analogue, from its own recipe?",
+   "readout_L_face_at_C3": "2/9",
+   "readout_L_face_at_C4_is_defined": false,
+   "recipe_as_written_in_the_pinned_note": "L_H(N) = (1/|H|) sum_{h != e} 1 / det_R(I - h|_N)",
+   "rows": [
+    {
+     "geometric_normal_space": {
+      "L_face": {
+       "group_order": 2,
+       "ok": true,
+       "rows": [
+        {
+         "det_R_I_minus_h": "4/1",
+         "element": "h0_order2"
+        }
+       ],
+       "sum_of_inverse_determinants": "1/4",
+       "value": "1/8"
+      },
+      "axis": [
+       0,
+       0,
+       1
+      ],
+      "axis_kind": "face",
+      "defined": true,
+      "dimension": 2,
+      "fine_dims": [
+       1,
+       1
+      ],
+      "reason_if_undefined": null
+     },
+     "group_order": 2,
+     "readout_transverse_space": {
+      "L_face": {
+       "group_order": 2,
+       "ok": true,
+       "rows": [
+        {
+         "det_R_I_minus_h": "2/1",
+         "element": "h0_order2"
+        }
+       ],
+       "sum_of_inverse_determinants": "1/2",
+       "value": "1/4"
+      },
+      "dimension": 1,
+      "readout_module_fine_dims": [
+       1,
+       1
+      ],
+      "transverse_fine_dims": [
+       1
+      ]
+     },
+     "scope": "C2_face"
+    },
+    {
+     "geometric_normal_space": {
+      "L_face": {
+       "group_order": 2,
+       "ok": true,
+       "rows": [
+        {
+         "det_R_I_minus_h": "4/1",
+         "element": "h0_order2"
+        }
+       ],
+       "sum_of_inverse_determinants": "1/4",
+       "value": "1/8"
+      },
+      "axis": [
+       0,
+       1,
+       -1
+      ],
+      "axis_kind": "edge",
+      "defined": true,
+      "dimension": 2,
+      "fine_dims": [
+       1,
+       1
+      ],
+      "reason_if_undefined": null
+     },
+     "group_order": 2,
+     "readout_transverse_space": {
+      "L_face": {
+       "group_order": 2,
+       "ok": true,
+       "rows": [
+        {
+         "det_R_I_minus_h": "2/1",
+         "element": "h0_order2"
+        }
+       ],
+       "sum_of_inverse_determinants": "1/2",
+       "value": "1/4"
+      },
+      "dimension": 1,
+      "readout_module_fine_dims": [
+       1,
+       1
+      ],
+      "transverse_fine_dims": [
+       1
+      ]
+     },
+     "scope": "C2_edge"
+    },
+    {
+     "geometric_normal_space": {
+      "L_face": {
+       "group_order": 3,
+       "ok": true,
+       "rows": [
+        {
+         "det_R_I_minus_h": "3/1",
+         "element": "h0_order3"
+        },
+        {
+         "det_R_I_minus_h": "3/1",
+         "element": "h1_order3"
+        }
+       ],
+       "sum_of_inverse_determinants": "2/3",
+       "value": "2/9"
+      },
+      "axis": [
+       1,
+       -1,
+       1
+      ],
+      "axis_kind": "body",
+      "defined": true,
+      "dimension": 2,
+      "fine_dims": [
+       2
+      ],
+      "reason_if_undefined": null
+     },
+     "group_order": 3,
+     "readout_transverse_space": {
+      "L_face": {
+       "group_order": 3,
+       "ok": true,
+       "rows": [
+        {
+         "det_R_I_minus_h": "3/1",
+         "element": "h0_order3"
+        },
+        {
+         "det_R_I_minus_h": "3/1",
+         "element": "h1_order3"
+        }
+       ],
+       "sum_of_inverse_determinants": "2/3",
+       "value": "2/9"
+      },
+      "dimension": 2,
+      "readout_module_fine_dims": [
+       1,
+       2
+      ],
+      "transverse_fine_dims": [
+       2
+      ]
+     },
+     "scope": "C3_body"
+    },
+    {
+     "geometric_normal_space": {
+      "L_face": {
+       "group_order": 4,
+       "ok": true,
+       "rows": [
+        {
+         "det_R_I_minus_h": "4/1",
+         "element": "h0_order2"
+        },
+        {
+         "det_R_I_minus_h": "2/1",
+         "element": "h1_order4"
+        },
+        {
+         "det_R_I_minus_h": "2/1",
+         "element": "h2_order4"
+        }
+       ],
+       "sum_of_inverse_determinants": "5/4",
+       "value": "5/16"
+      },
+      "axis": [
+       0,
+       0,
+       1
+      ],
+      "axis_kind": "face",
+      "defined": true,
+      "dimension": 2,
+      "fine_dims": [
+       2
+      ],
+      "reason_if_undefined": null
+     },
+     "group_order": 4,
+     "readout_transverse_space": {
+      "L_face": {
+       "ok": false,
+       "reason": "det_R(I - h) vanishes on at least one non-identity element, so the recipe divides by zero here",
+       "rows": [
+        {
+         "det_R_I_minus_h": "0/1",
+         "element": "h0_order2"
+        },
+        {
+         "det_R_I_minus_h": "4/1",
+         "element": "h1_order4"
+        },
+        {
+         "det_R_I_minus_h": "4/1",
+         "element": "h2_order4"
+        }
+       ],
+       "singular_elements": [
+        "h0_order2"
+       ]
+      },
+      "dimension": 3,
+      "readout_module_fine_dims": [
+       1,
+       1,
+       2
+      ],
+      "transverse_fine_dims": [
+       1,
+       2
+      ]
+     },
+     "scope": "C4_face"
+    },
+    {
+     "geometric_normal_space": {
+      "L_face": {
+       "ok": false,
+       "reason": "no one-dimensional common fixed line, so the note's fixed-locus / normal-space split does not exist at this scope"
+      },
+      "axis": null,
+      "axis_kind": null,
+      "defined": false,
+      "dimension": null,
+      "fine_dims": null,
+      "reason_if_undefined": "no one-dimensional common fixed line, so the note's fixed-locus / normal-space split does not exist at this scope"
+     },
+     "group_order": 4,
+     "readout_transverse_space": {
+      "L_face": {
+       "ok": false,
+       "reason": "det_R(I - h) vanishes on at least one non-identity element, so the recipe divides by zero here",
+       "rows": [
+        {
+         "det_R_I_minus_h": "0/1",
+         "element": "h0_order2"
+        },
+        {
+         "det_R_I_minus_h": "0/1",
+         "element": "h1_order2"
+        },
+        {
+         "det_R_I_minus_h": "0/1",
+         "element": "h2_order2"
+        }
+       ],
+       "singular_elements": [
+        "h0_order2",
+        "h1_order2",
+        "h2_order2"
+       ]
+      },
+      "dimension": 3,
+      "readout_module_fine_dims": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "transverse_fine_dims": [
+       1,
+       1,
+       1
+      ]
+     },
+     "scope": "V_edge"
+    },
+    {
+     "geometric_normal_space": {
+      "L_face": {
+       "ok": false,
+       "reason": "no one-dimensional common fixed line, so the note's fixed-locus / normal-space split does not exist at this scope"
+      },
+      "axis": null,
+      "axis_kind": null,
+      "defined": false,
+      "dimension": null,
+      "fine_dims": null,
+      "reason_if_undefined": "no one-dimensional common fixed line, so the note's fixed-locus / normal-space split does not exist at this scope"
+     },
+     "group_order": 6,
+     "readout_transverse_space": {
+      "L_face": {
+       "ok": false,
+       "reason": "det_R(I - h) vanishes on at least one non-identity element, so the recipe divides by zero here",
+       "rows": [
+        {
+         "det_R_I_minus_h": "0/1",
+         "element": "h0_order2"
+        },
+        {
+         "det_R_I_minus_h": "0/1",
+         "element": "h1_order2"
+        },
+        {
+         "det_R_I_minus_h": "0/1",
+         "element": "h2_order2"
+        },
+        {
+         "det_R_I_minus_h": "0/1",
+         "element": "h3_order3"
+        },
+        {
+         "det_R_I_minus_h": "0/1",
+         "element": "h4_order3"
+        }
+       ],
+       "singular_elements": [
+        "h0_order2",
+        "h1_order2",
+        "h2_order2",
+        "h3_order3",
+        "h4_order3"
+       ]
+      },
+      "dimension": 5,
+      "readout_module_fine_dims": null,
+      "transverse_fine_dims": null
+     },
+     "scope": "S3_body"
+    }
+   ],
+   "the_L_face_on_the_READOUT_space_at_prime_n_is_F_dim": {
+    "rows": [
+     {
+      "equals_F_dim": true,
+      "n": 2,
+      "value": "1/4"
+     },
+     {
+      "equals_F_dim": true,
+      "n": 3,
+      "value": "2/9"
+     },
+     {
+      "equals_F_dim": true,
+      "n": 5,
+      "value": "4/25"
+     },
+     {
+      "equals_F_dim": true,
+      "n": 7,
+      "value": "6/49"
+     }
+    ],
+    "why": "at prime p every non-identity element generates, so det_R(I - h) = p on the (p-1)-dimensional complement for all p-1 of them, giving (1/p)(p-1)(1/p) = (p-1)/p^2."
+   },
+   "the_notes_recipe_is_the_F_res_family": true,
+   "the_two_lineages_disagree_at_C4": true,
+   "why_the_readout_L_face_dies_off_prime_orbit_length": "det_R(I - h) on the readout complement vanishes exactly when h fixes a nonzero vector there, i.e. when h has order < n.  A free orbit of length n has such an h unless every non-identity element has order n -- that is, unless n is PRIME.  C3 is prime; C4 is not, and its square acts trivially on the [1] (sign) summand of the [1, 2] readout transverse decomposition, which is precisely the summand the geometric normal plane does not have."
+  },
+  "F_Q3_FITTED_VALUE": {
+   "count_inside_the_enclosure": 0,
+   "declared_transform_space": {
+    "N_range": [
+     2,
+     2000
+    ],
+    "base_values": "F_fam(N)^e, fam in {F_dim, F_res, F_ded}",
+    "exponents": [
+     1,
+     2
+    ],
+    "form": "(a*F + b) / (c*F + d)",
+    "honest_bound": "This space contains every rational scaling p/q with |p|,|q| <= 4, every integer and quarter-integer shift in that range, reciprocals, and their compositions of depth one.  It does NOT contain: transcendental transforms, products of two different families, transforms with coefficients above 4, or exponents outside {1, 2} and their reciprocals.  Nothing here rules those out.",
+    "integer_coefficient_bound": 4,
+    "negative_exponents": "subsumed: (a,b,c,d) = (0,1,1,0) is the reciprocal, so F^-1 and F^-2 are already in the image",
+    "nondegeneracy": "a*d - b*c != 0",
+    "size": {
+     "base_values": 11992,
+     "distinct_denominator_pairs": 80,
+     "mobius_tuples": 6016
+    }
+   },
+   "finding": "0 of the 959360 scanned (base value, denominator) cells put any representable member inside the enclosure.  The nearest member of the whole declared space is 142559/641516 at distance 1.947563e-09; the nearest bare family value is 2/9 at distance 1.751484e-07.",
+   "fitted_enclosure": [
+    "222222047073817229/1000000000000000000",
+    "22222204707381723/100000000000000000"
+   ],
+   "fitted_enclosure_decimal": [
+    "0.222222047073817229",
+    "0.222222047073817230"
+   ],
+   "headline_rows": [
+    {
+     "N": 2,
+     "distance_decimal": "2.777795e-02",
+     "exact_distance_to_the_enclosure": "2777795292618277/100000000000000000",
+     "family": "F_dim",
+     "value": "1/4"
+    },
+    {
+     "N": 3,
+     "distance_decimal": "1.751484e-07",
+     "exact_distance_to_the_enclosure": "157633564493/900000000000000000",
+     "family": "F_dim",
+     "value": "2/9"
+    },
+    {
+     "N": 4,
+     "distance_decimal": "3.472205e-02",
+     "exact_distance_to_the_enclosure": "34722047073817229/1000000000000000000",
+     "family": "F_dim",
+     "value": "3/16"
+    },
+    {
+     "N": 5,
+     "distance_decimal": "6.222205e-02",
+     "exact_distance_to_the_enclosure": "62222047073817229/1000000000000000000",
+     "family": "F_dim",
+     "value": "4/25"
+    },
+    {
+     "N": 6,
+     "distance_decimal": "8.333316e-02",
+     "exact_distance_to_the_enclosure": "749998423664355061/9000000000000000000",
+     "family": "F_dim",
+     "value": "5/36"
+    },
+    {
+     "N": 2,
+     "distance_decimal": "9.722205e-02",
+     "exact_distance_to_the_enclosure": "97222047073817229/1000000000000000000",
+     "family": "F_res",
+     "value": "1/8"
+    },
+    {
+     "N": 3,
+     "distance_decimal": "1.751484e-07",
+     "exact_distance_to_the_enclosure": "157633564493/900000000000000000",
+     "family": "F_res",
+     "value": "2/9"
+    },
+    {
+     "N": 4,
+     "distance_decimal": "9.027795e-02",
+     "exact_distance_to_the_enclosure": "9027795292618277/100000000000000000",
+     "family": "F_res",
+     "value": "5/16"
+    },
+    {
+     "N": 5,
+     "distance_decimal": "1.777780e-01",
+     "exact_distance_to_the_enclosure": "17777795292618277/100000000000000000",
+     "family": "F_res",
+     "value": "2/5"
+    },
+    {
+     "N": 6,
+     "distance_decimal": "2.638891e-01",
+     "exact_distance_to_the_enclosure": "237500157633564493/900000000000000000",
+     "family": "F_res",
+     "value": "35/72"
+    },
+    {
+     "N": 2,
+     "distance_decimal": "2.222220e-01",
+     "exact_distance_to_the_enclosure": "222222047073817229/1000000000000000000",
+     "family": "F_ded",
+     "value": "0/1"
+    },
+    {
+     "N": 3,
+     "distance_decimal": "1.751484e-07",
+     "exact_distance_to_the_enclosure": "157633564493/900000000000000000",
+     "family": "F_ded",
+     "value": "2/9"
+    },
+    {
+     "N": 4,
+     "distance_decimal": "2.777780e-01",
+     "exact_distance_to_the_enclosure": "27777795292618277/100000000000000000",
+     "family": "F_ded",
+     "value": "1/2"
+    },
+    {
+     "N": 5,
+     "distance_decimal": "5.777780e-01",
+     "exact_distance_to_the_enclosure": "57777795292618277/100000000000000000",
+     "family": "F_ded",
+     "value": "4/5"
+    },
+    {
+     "N": 6,
+     "distance_decimal": "8.888891e-01",
+     "exact_distance_to_the_enclosure": "800000157633564493/900000000000000000",
+     "family": "F_ded",
+     "value": "10/9"
+    }
+   ],
+   "members_inside_the_enclosure": [],
+   "nearest_member": {
+    "N": 396,
+    "distance_decimal": "1.947563e-09",
+    "exact_distance_to_the_enclosure": "31234826646983/16037900000000000000000",
+    "exponent": 1,
+    "family": "F_res",
+    "mobius_denominator_pair": [
+     -4,
+     -3
+    ],
+    "numerator": -142559,
+    "value": "142559/641516",
+    "value_decimal": "0.222222049021380597"
+   },
+   "pass": true,
+   "question": "Does any member of a declared, bounded transform space over the three families land inside the Cycle-897 fitted enclosure?",
+   "smallest_denominator_rational_inside_the_enclosure": {
+    "denominator": 700358457,
+    "value": "155635090/700358457",
+    "why_this_matters": "any rational at all inside the enclosure needs a denominator of at least 700358457; the three families produce denominators dividing N^2, 12N and 3N respectively, so a family value could only reach that height at an N far outside the range where the family is anywhere near the target."
+   },
+   "tail_lemma": {
+    "degenerate_d_equals_zero_constants_inside_the_enclosure": [],
+    "finite_scan_covers_the_whole_tail": true,
+    "largest_N_still_above_the_threshold_per_base_family": {
+     "F_ded^1": 140,
+     "F_ded^2": 23,
+     "F_dim^1": 44,
+     "F_dim^2": 5,
+     "F_res^1": 551,
+     "F_res^2": 81
+    },
+    "limit_point_count": 23,
+    "no_degenerate_constant_is_inside": true,
+    "statement": "for a Mobius tuple with d != 0, |M(F) - b/d| = |F||ad-bc| / (|d||cF+d|) <= |F||ad-bc| / (|d|(|d|-|c||F|)), so M(F) cannot reach the enclosure once |F| < delta*d^2 / (|ad-bc| + delta|d||c|) where delta is the distance from b/d to the enclosure; tuples with d = 0 send F -> 0 to infinity or to the constant a/c.  The same bound applies to F -> infinity after substituting G = 1/F.",
+    "tau_the_uniform_smallness_threshold": "2777795292618277/127777795292618277"
+   }
+  },
+  "G_FALSIFIER_VISIBILITY": {
+   "every_plant_returns_the_anchor_at_C3": true,
+   "finding": "Three planted recipes, all anchored at 2/9 at C3, bind to ['F_dim', 'F_res', 'F_ded'] respectively; the machinery also returns NONE for a recipe on no family.",
+   "pass": true,
+   "rows": [
+    {
+     "family_verdict_through_the_same_machinery": "F_dim",
+     "planted_recipe": "PLANT_dim  w1 / (w0 + w1)^2",
+     "returns_the_anchor_at_C3": true,
+     "value_at_C3": "2/9",
+     "value_at_C4": "3/16"
+    },
+    {
+     "family_verdict_through_the_same_machinery": "F_res",
+     "planted_recipe": "PLANT_res  w1 * (w1 + 2) / (12 * n)",
+     "returns_the_anchor_at_C3": true,
+     "value_at_C3": "2/9",
+     "value_at_C4": "5/16"
+    },
+    {
+     "family_verdict_through_the_same_machinery": "F_ded",
+     "planted_recipe": "PLANT_ded  w1 * (w1 - 1) / (3 * n)",
+     "returns_the_anchor_at_C3": true,
+     "value_at_C3": "2/9",
+     "value_at_C4": "1/2"
+    }
+   ],
+   "the_fine_reading_caveat": "890's census records C4_face with fine dims [1, 1, 2] and a 'fine top pair' [1, 2].  A recipe reading (w0, w1) off the FINE top pair instead of the coarse split would return 2/9 at C4 as well -- a constant, binding to NONE of the three families.  That reading is excluded here not by preference but by C883-T6's own words, which state the pair is (1, 3) at n = 4; and under the fine reading 883's five recovered forms no longer agree with each other at C4 (they split into 2/9, 1/8 and 3/16), so the fine reading also fails 883's own internal consistency.",
+   "the_machinery_can_also_answer_NONE": {
+    "recipe": "the constant 2/9 (the fine-top reading, see below)",
+    "verdict": "NONE"
+   },
+   "the_three_plants_span_the_three_families": true,
+   "verdicts": [
+    "F_dim",
+    "F_res",
+    "F_ded"
+   ],
+   "why_this_exists": "A family comparison that can only ever answer 'F_dim' is not a comparison.  Three recipes -- all functions of the SAME decomposition data (w0, w1, n), all returning the anchor 2/9 at C3 -- are pushed through the identical machinery."
+  },
+  "H_Q4_COMPLETE_TABLE": {
+   "E_trivial_note": "The trivial subgroup has free orbit length 1, coarse pair (1, 0), and every family degenerates: F_dim(1) = 0, F_res(1) = 0, F_ded(1) = 0.  It carries no readout complement and is excluded.",
+   "S3_note": "S3_body carries a free orbit of length 6 but its readout module contains the 2-dimensional rational irreducible with MULTIPLICITY TWO (fine dims [1, 1, 2, 2]), so the split is a P^1 family and the construction is not canonical there.  It is listed for completeness and excluded from the binding table.  Its retained L-face is also undefined, and for a computed reason: the three order-2 elements of the body-diagonal S3 REVERSE the body diagonal, so the subgroup's common fixed space is 0-dimensional and the note's fixed-locus / normal-plane split does not exist at all.  Same for V_edge.",
+   "finding": "5 scopes carry a canonical construction; the two lineages agree on 1 of them (['C3_body']); the native K follows F_dim on every row.",
+   "pass": true,
+   "rows": [
+    {
+     "F_ded": "0/1",
+     "F_dim": "1/4",
+     "F_res": "1/8",
+     "coarse_pair": [
+      1,
+      1
+     ],
+     "construction_is_canonical_here": true,
+     "free_orbit_length": 2,
+     "group_order": 2,
+     "multiplicity_free": true,
+     "native_K": "1/4",
+     "native_K_equals_F_dim_at_this_orbit_length": true,
+     "readout_fine_dims": [
+      1,
+      1
+     ],
+     "retained_L_face_geometric": "1/8",
+     "retained_L_face_geometric_defined": true,
+     "retained_L_face_readout_defined": true,
+     "scope": "C2_face",
+     "the_two_lineages_agree_here": false
+    },
+    {
+     "F_ded": "0/1",
+     "F_dim": "1/4",
+     "F_res": "1/8",
+     "coarse_pair": [
+      1,
+      1
+     ],
+     "construction_is_canonical_here": true,
+     "free_orbit_length": 2,
+     "group_order": 2,
+     "multiplicity_free": true,
+     "native_K": "1/4",
+     "native_K_equals_F_dim_at_this_orbit_length": true,
+     "readout_fine_dims": [
+      1,
+      1
+     ],
+     "retained_L_face_geometric": "1/8",
+     "retained_L_face_geometric_defined": true,
+     "retained_L_face_readout_defined": true,
+     "scope": "C2_edge",
+     "the_two_lineages_agree_here": false
+    },
+    {
+     "F_ded": "2/9",
+     "F_dim": "2/9",
+     "F_res": "2/9",
+     "coarse_pair": [
+      1,
+      2
+     ],
+     "construction_is_canonical_here": true,
+     "free_orbit_length": 3,
+     "group_order": 3,
+     "multiplicity_free": true,
+     "native_K": "2/9",
+     "native_K_equals_F_dim_at_this_orbit_length": true,
+     "readout_fine_dims": [
+      1,
+      2
+     ],
+     "retained_L_face_geometric": "2/9",
+     "retained_L_face_geometric_defined": true,
+     "retained_L_face_readout_defined": true,
+     "scope": "C3_body",
+     "the_two_lineages_agree_here": true
+    },
+    {
+     "F_ded": "1/2",
+     "F_dim": "3/16",
+     "F_res": "5/16",
+     "coarse_pair": [
+      1,
+      3
+     ],
+     "construction_is_canonical_here": true,
+     "free_orbit_length": 4,
+     "group_order": 4,
+     "multiplicity_free": true,
+     "native_K": "3/16",
+     "native_K_equals_F_dim_at_this_orbit_length": true,
+     "readout_fine_dims": [
+      1,
+      1,
+      2
+     ],
+     "retained_L_face_geometric": "5/16",
+     "retained_L_face_geometric_defined": true,
+     "retained_L_face_readout_defined": false,
+     "scope": "C4_face",
+     "the_two_lineages_agree_here": false
+    },
+    {
+     "F_ded": "1/2",
+     "F_dim": "3/16",
+     "F_res": "5/16",
+     "coarse_pair": [
+      1,
+      3
+     ],
+     "construction_is_canonical_here": true,
+     "free_orbit_length": 4,
+     "group_order": 4,
+     "multiplicity_free": true,
+     "native_K": "3/16",
+     "native_K_equals_F_dim_at_this_orbit_length": true,
+     "readout_fine_dims": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "retained_L_face_geometric": null,
+     "retained_L_face_geometric_defined": false,
+     "retained_L_face_readout_defined": false,
+     "scope": "V_edge",
+     "the_two_lineages_agree_here": false
+    },
+    {
+     "F_ded": "10/9",
+     "F_dim": "5/36",
+     "F_res": "35/72",
+     "coarse_pair": [
+      1,
+      5
+     ],
+     "construction_is_canonical_here": false,
+     "free_orbit_length": 6,
+     "group_order": 6,
+     "multiplicity_free": false,
+     "native_K": "5/36",
+     "native_K_equals_F_dim_at_this_orbit_length": true,
+     "readout_fine_dims": null,
+     "retained_L_face_geometric": null,
+     "retained_L_face_geometric_defined": false,
+     "retained_L_face_readout_defined": false,
+     "scope": "S3_body",
+     "the_two_lineages_agree_here": false
+    }
+   ],
+   "scopes_where_the_construction_is_canonical": [
+    "C2_face",
+    "C2_edge",
+    "C3_body",
+    "C4_face",
+    "V_edge"
+   ],
+   "scopes_where_the_two_lineages_agree": [
+    "C3_body"
+   ]
+  },
+  "I_FINE_READING_SPLIT": {
+   "distinct_values": [
+    "1/8",
+    "2/9",
+    "3/16"
+   ],
+   "reading": "fine top pair (w0, w1) = (1, 2) with n = 4",
+   "the_recovered_forms_disagree_under_this_reading": true,
+   "values": {
+    "(n - 1) / n^2": "3/16",
+    "w0 * w1 / n^2": "1/8",
+    "w1 / (w0 * n^2)": "1/8",
+    "w1 / (w0 + w1)^2": "2/9",
+    "w1 / n^2": "1/8"
+   }
+  }
+ },
+ "cycle": 899,
+ "deterministic_double_build": {
+  "byte_stable": true,
+  "first_digest": "1819c354e6d9d4432f18548e7bdc9e4c196b156108620b2d0074eb0c436a34b4",
+  "second_digest": "1819c354e6d9d4432f18548e7bdc9e4c196b156108620b2d0074eb0c436a34b4"
+ },
+ "next_attackable_question": "Which space does the Record axiom's readout live on: the geometric normal plane of the lattice rotation, or the invariant complement of the readout module?  Everything numerical is now settled on both sides; the residual is a single identification, and it is decidable at C4.",
+ "outcome": {
+  "Q1_the_constructions_native_value": {
+   "against": {
+    "F_ded(4)": "1/2",
+    "F_dim(4)": "3/16",
+    "F_res(4)": "5/16"
+   },
+   "family_verdict": "F_dim",
+   "native_K_at_C3": "2/9",
+   "native_K_at_C4": "3/16",
+   "recipe_recovered_by_AST": true,
+   "restriction_gate_reproduces_2_over_9": true
+  },
+  "Q2_the_retained_anchor_arithmetic": {
+   "family_verdict": "F_res",
+   "geometric_L_face_at_C3": "2/9",
+   "geometric_L_face_at_C4": "5/16",
+   "the_two_lineages_disagree_at_C4": true,
+   "verdict": "The framework's DERIVATION lineage and its RETAINED ANCHOR lineage bind to DIFFERENT families.  The disagreement is concrete at C4: the construction reads 3/16, the retained arithmetic reads 5/16.  At most one can be the record's readout.  The AXIOM-GROUNDED construction -- the one rebuilt here from 883's derivation via 888's group-theoretic route -- produces 3/16, i.e. F_dim.",
+   "why_they_agreed_at_C3": "Two independent collapses coincide at N = 3 and only there.  (i) The geometric normal plane of the body-diagonal rotation and the readout module's invariant complement are the SAME C3-module (both the unique 2-dimensional rational irreducible), so the note's determinant average does not care which space it is evaluated on; at C4 the readout transverse space is [1, 2] and the geometric normal plane is [2], and the extra [1] makes the note's recipe singular.  (ii) The three families are pairwise equal only at N = 3, computed exactly: F_dim = F_res forces 12 = N(N+1), F_dim = F_ded forces N(N-2) = 3, F_res = F_ded forces 3N = 9."
+  },
+  "Q3_the_fitted_values_family_status": {
+   "members_inside_the_enclosure": 0,
+   "nearest_member": "142559/641516",
+   "nearest_member_distance": "1.947563e-09",
+   "smallest_denominator_admitted_by_the_enclosure": 700358457,
+   "verdict": "No retained family, and no member of the declared transform space over them, explains the fitted number.  This is data for the obligation's future, not a claim about what should explain it."
+  },
+  "Q4_the_off_endpoint_rows": {
+   "canonical_scopes": [
+    "C2_face",
+    "C2_edge",
+    "C3_body",
+    "C4_face",
+    "V_edge"
+   ],
+   "scopes_where_the_lineages_agree": [
+    "C3_body"
+   ]
+  },
+  "what_this_does_to_SL1b": "SL1b asked which functional the record's readout is.  Within 883's own enumerated form set the question is now ANSWERED as a family question and was never open: all five forms that return 2/9 at C3 are the same function of the scope, namely F_dim.  What replaces SL1b is sharper and harder: the retained anchor note computes a DIFFERENT family, on a DIFFERENT space, and the two are distinguishable at C4.  The open item is no longer 'which functional' but 'which SPACE the record reads' -- the geometric normal plane of the lattice rotation, or the readout module's invariant complement.",
+  "what_would_falsify_this": "Exhibit a closed form in (w0, w1, n) that (a) 883's derivation actually licenses rather than merely permits, (b) returns 2/9 at C3, and (c) returns 5/16 at C4.  Certificate G's PLANT_res is exactly such a form for (b) and (c); what it lacks is (a).  Alternatively: show that the record reads the geometric normal plane rather than the readout module, which would flip the verdict to F_res without touching any computation here."
+ },
+ "question": "Which of the three N=3-degenerate families does the framework's own readout construction native-bind to, and is that binding testable at C4?",
+ "runtime_seconds": 25.671,
+ "sharpest_new_facts": [
+  "883's five-fold binding ambiguity is a phantom at the family level: on the free-orbit locus all five of its 2/9-returning forms are the identical function (n-1)/n^2 of the scope, so the recipe it wrote down IS family-identified even though the expression is not.",
+  "The construction's native K at C4 is 3/16 = F_dim(4); the retained L-face at C4 is 5/16 = F_res(4).  The two lineages bind to different families and the disagreement is concrete.",
+  "The retained L-face recipe, transported onto the readout module where the derivation lives, is DEFINED only at prime orbit length -- and there it equals F_dim, not F_res.  The F_res reading is a property of the geometric normal plane, not of the recipe.",
+  "N = 3 is the unique orbit length at which the geometric normal plane and the readout transverse space are the same module; at C4 the readout transverse space carries an extra 1-dimensional sign summand on which the note's determinant vanishes.",
+  "The three families are pairwise equal only at N = 3, forced by 12 = N(N+1), N(N-2) = 3 and 3N = 9 respectively.",
+  "The native K depends only on the free-orbit length, so C4_face and V_edge read identically (3/16) despite different fine decompositions ([1,1,2] vs [1,1,1,1]) -- while the retained L-face distinguishes them (5/16 vs undefined)."
+ ],
+ "source_pins": [
+  {
+   "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+  },
+  {
+   "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+   "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+   "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c"
+  },
+  {
+   "git_blob": "d4290cbe8cfedf965fad828dc673e8fee2e75cd5",
+   "path": "outputs/record_weight_pair_cycle883_receipt_2026_07_28.json",
+   "sha256": "973d18d9aa2e05a2decac79ddd8a6f245d923e9a94d772baf80869228ca27d60"
+  },
+  {
+   "git_blob": "6f085fc042330dae1d3eec8540a2942b1a3cf32f",
+   "path": "logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt",
+   "sha256": "560f368d9d23144cb23a93e72a398d92f6fcb536c3363179b7853c09615211bb"
+  },
+  {
+   "git_blob": "c3de02c94b8a11a930ad6ff8817975b118bc776d",
+   "path": "scripts/frontier_cycle888_s3_scope_pricing_2026_07_28.py",
+   "sha256": "f57fda877d35d49953c3b6a34293ab0cc6a87781ceb9d158b9c9abb5abd4bb3f"
+  },
+  {
+   "git_blob": "3e18ad52f50e72b83c56da72c31f25d104b5c830",
+   "path": "outputs/s3_scope_pricing_cycle888_receipt_2026_07_28.json",
+   "sha256": "8a540201a84a6b8cb6868d431216718a27f200e45d6ceeb771d858e9a54280cd"
+  },
+  {
+   "git_blob": "6cd3fbdbe74e1231cd61222a798a7979bee922da",
+   "path": "logs/runner-cache/frontier_cycle888_s3_scope_pricing_2026_07_28.txt",
+   "sha256": "5e4fc183efda55d1f3fbd5413bd2fe985ed5732b7ffbc8bd489296e7b22c2c84"
+  },
+  {
+   "git_blob": "307f4e7640a1a9b5b3365d70ebc857a9c9488beb",
+   "path": "scripts/frontier_cycle890_multiplicity_freeness_2026_07_28.py",
+   "sha256": "b7d2e9c2c540fc35ca461af10c4ce6b455269503c6027b3f0b4d5036566d867b"
+  },
+  {
+   "git_blob": "eefb1ac72326ae70073126198854dea5e26d1f01",
+   "path": "outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json",
+   "sha256": "a366a726c34308260dcf153ff74619238347de5996463a7c5a5792bdcd01617e"
+  },
+  {
+   "git_blob": "1201ba9702ec8a0b81df0319a90a080549cfdd4a",
+   "path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+   "sha256": "3c7a33c8abac8e70bdcf2e8b9db5d917c0b2cee6fc7cc0ec91c6d803bbb230d2"
+  }
+ ]
+}

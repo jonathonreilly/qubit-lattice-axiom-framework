@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the 926 package vendored with source-branch digest authority (a tampered local copy cannot certify itself); the checker's two degeneracy findings adopted on the claim surface",
+  "block": "toe-time-blockM10-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 5.1s; 15/15 teeth; no refutation; the 86-geometry conjunction grid and the nine large-fragment witnesses independent",
+    "primary": "exit 0, 7.1s; FOUR parents at deviation exactly 0.0 (917 156 rows; 919 156; 926 fully recomputed 702; 927 468); 21/21 constants five-way quote-identical; routes 1.1e-15/2.9e-15; 15/15 teeth incl. both discrimination plants and the source-branch pin tooth; cold double-run digest identical"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 10th M-family PR: closes the lane's joint open by identity argument, refutes a parent inference while vindicating both parents' laws, names the second variable with a measured ladder and an exact unexplained identity, and removes a declared cap; nothing corollary",
+  "cycles": [
+    929
+  ],
+  "files": {
+    "docs/ARITY_IS_DEGREE_MULTIPLICITY_TAX_CYCLE929_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "0b316a500c4c6768b36651d71eb8702731d19f9e",
+      "sha256": "b45a3f9014850af577a27c4206504f6935abaccd676166d58e4e8f4f966ed4a0"
+    },
+    "logs/runner-cache/frontier_cycle929_arity_variable_2026_07_28.txt": {
+      "git_blob": "422237bda3a2b6eb0e806d8f17ea5099c0e56d04",
+      "sha256": "002c63bd9406e643ed09216fd2fa8b4e7f1ece4e2d61bd0932025902c7100bd9"
+    },
+    "logs/runner-cache/frontier_cycle929_arity_variable_independent_check_2026_07_28.txt": {
+      "git_blob": "d33ae1901ae27ecf87aa7c42a87f09f93764c8cc",
+      "sha256": "00d7e1a59daad7b14de03fd797e5222efd0e72e5c4b7115d917e68d98075b8b8"
+    },
+    "outputs/arity_variable_cycle929_receipt_2026_07_28.json": {
+      "git_blob": "fc0080cc4c283d6dc440ac20a614ae187f7e488b",
+      "sha256": "40440237f0af14882b06331a054c19f3da52f34e6e7b2cde846a0b390a3679a3"
+    },
+    "outputs/arity_variable_independent_check_cycle929_receipt_2026_07_28.json": {
+      "git_blob": "7598212188d1ba5de6d42ae982ea70ea16c13207",
+      "sha256": "c2825fab5490afc0528c3a45e28d390a112d5319f369c4da6d0e463e7605eb6d"
+    },
+    "scripts/frontier_cycle929_arity_variable_2026_07_28.py": {
+      "git_blob": "1d629b43c4be15f4ffd7a2ac562ce8538088414e",
+      "sha256": "626be10a174d9ff41f72daa97a7eddc403e5ce191aff56791b38d0cea740c08a"
+    },
+    "scripts/frontier_cycle929_arity_variable_independent_check_2026_07_28.py": {
+      "git_blob": "429212195446c2b1213e54a9f0c6ebadf838f39a",
+      "sha256": "5a47544dbbc56ec4d128f1999f85746eaffea370279dcef2e6a28a3ef4ad5f14"
+    }
+  },
+  "headline": "THE JOINT CELL CLOSES \u2014 THE ARITY VARIABLE IS RAW POINTER DEGREE d (40/40 discriminating cells; residual 3.2e-6 vs 3.9e-3; IDENTITY ARGUMENT: same-Hamiltonian stars make the f-reading impossible for baseline pairs; stated with the f<=d degeneracy adopted); 926's A4 PREDICTION REFUTED and the datum RE-EXPLAINED \u2014 the second per-pair variable is ANCHOR MULTIPLICITY (339x vs size; the measured ladder G_d(m); the exhausting pair a distinct pure-state regime departing linearity by 0.0063 exactly as the tooth demands); UNIFIED PER-PAIR LAW C_ab = F(d, m_a, m_b, field, t) with fragment count inert per-pair \u2014 while 926's CEILING LAW (= f) SURVIVES (45/45 at 0.05; the 0.10 exceptions are exactly the f=2 merged-over-gate cells) and the CONJUNCTION d>=5 AND f>=3 SURVIVES BOTH DIRECTIONS on two grids (zero counterexamples); TWO-GATE ANATOMY CONFIRMED SHARPLY (independence tracks f blind to d; persistence tracks d blind to f); E1 DE-SINGLETONED (nine large-fragment geometries, zero counterexamples); STRUCTURAL LEMMA: the frozen rule only makes {m,1^(f-1)} profiles (both-merged unconstructible; the A6 hand-label cap removed); THE ADDITIVITY IDENTITY G_d(m)+G_d(d-1-m)=G_d(d-1) measured at 8e-14, diagnostic-grade, UNEXPLAINED \u2014 the lane's best mechanism handle; the 927 multiplicity-one scope qualification EXECUTED; sentence-meaning changes enumerated (merged pairs cross the gate at EVERY degree \u2014 the baseline table is multiplicity-one-scoped)",
+  "independence": "checker SUPPORTED WITH FINDINGS, no refutation, 15/15 teeth; independent machinery (Lanczos+tridiag, reversed ordering, pointer-projected einsum, SVD entropies, pivoting Bron-Kerbosch, partition re-implemented from memo bytes); 91/91 partitions from the memo at zero mismatches; 46 cells / 202 pairs at 8.4e-14; held-out prediction split at 8.2e-6",
+  "note": "docs/ARITY_IS_DEGREE_MULTIPLICITY_TAX_CYCLE929_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 5.1,
+    "primary": 7.1
+  }
+}

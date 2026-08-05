@@ -1,0 +1,26 @@
+{
+ "seal_version": "cycle935-v1",
+ "block": "toe-time-blockG28-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "cycle": 935,
+ "purpose": "Pre-registration of Cycle-935 predictions BEFORE the composition is computed on the landed 871 machinery. This file carries SHA-256 digests only; no preimage (i.e. no answer) is recorded here. The primary and checker runners recompute each prediction independently, canonicalize it under the sealed scheme, and must reproduce these digests exactly.",
+ "scheme": "digest = sha256(('cycle935|' + prediction_string).encode('utf-8')).hexdigest()",
+ "holdout_freedom": "This file is committed in its own commit BEFORE scripts/frontier_cycle935_bridge_cashed_2026_07_28.py and its checker exist in the tree. Git history is the build log: the seal commit precedes the computation commits, so no prediction can have been fitted to a computed result.",
+ "sealed_predictions": {
+  "P1_composed_free_dimension": "d1851e436358c1d64160d60bab24a04792484abb7cca80858bec6e8c494cd243",
+  "P2_reduction_from_registration": "cd4d5c4ec52e4ce657ac9c02994498c4acefd13b9110fa2835a02bca37bcdeea",
+  "P3_observables_separating_gauge_points": "bf3c1ec326e9aeb903e06f1703407f8d03f06c5199955ffcc93178f2ecea1207",
+  "P4_deviation_from_871_rows": "78753e3bdaaa320503bb2feea1cb66ce189df27750796577faa11520d08aa52f",
+  "P5_scope_verdict": "11dbb404d96f8000a4088eae730bfb202015af3e2b49c7e4a329a938303ad126",
+  "P6_gnewton_derives": "6e4c1f6a1ee1dc48d715ffea99d3743f41d1c4422c2863e40b8d5c2465e52fc2"
+ },
+ "prediction_semantics": {
+  "P1_composed_free_dimension": "free dimension of the source-action bridge AFTER composing the Cycle-871 structure theorem with the registered scale-reference primitive",
+  "P2_reduction_from_registration": "871 free dimension MINUS composed free dimension (how much the registration bought)",
+  "P3_observables_separating_gauge_points": "count of in-scope observables (values, pairwise differences, ratios) that separate the pre-registration gauge point from the post-registration gauge point",
+  "P4_deviation_from_871_rows": "total value-for-value deviation of replayed Cycle-871 receipt rows (dimension tables, ablation, stabilizer group, obligation map) from the pinned 871 bytes",
+  "P5_scope_verdict": "verdict token of the supply-scope test, decided by the scale-reference primitive's OWN text",
+  "P6_gnewton_derives": "whether the G_Newton/SI-normalization clause (871 Result 3, classified EQUIVALENT to the bridge) DERIVES once the scale reference is registered"
+ },
+ "honesty": "The sealed values were fixed from the reading of the primitive's own text and the 871 note, before any Cycle-935 computation was written or run. If a computation contradicts a seal, the seal FAILS loudly and the contradiction is the finding; seals are never rewritten to match results."
+}

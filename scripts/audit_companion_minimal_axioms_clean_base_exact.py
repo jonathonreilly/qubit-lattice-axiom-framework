@@ -196,6 +196,13 @@ def source_boundary_checks() -> list[Check]:
             "",
         ),
         Check(
+            "Policy records 2026-08-05 Admissibility likelihood revision",
+            contains(policy, "2026-08-05 -- Admissibility second sentence: availability replaced by likelihood")
+            and contains(policy, "availability/admissibility becomes the likelihood's support")
+            and contains(policy, "zero likelihood is unavailability"),
+            "",
+        ),
+        Check(
             "Policy records 2026-07-03 Record permanence restoration",
             "2026-07-03 -- Record permanence restoration" in policy
             and contains(policy, "records are permanent"),
@@ -296,7 +303,7 @@ def source_boundary_checks() -> list[Check]:
             "Admissibility local-constraint clause is present",
             contains(note, "one fixed nearest-neighbor admissibility rule")
             and contains(note, "covariant under lattice translations and proper cubic rotations")
-            and contains(note, "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions."),
+            and contains(note, "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions."),
             "",
         ),
         Check(
@@ -323,7 +330,7 @@ def source_boundary_checks() -> list[Check]:
         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
         Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
         Check("Open gates outside axioms include theta", "strong-CP theta gauge and mass-side derivation obligations" in note, ""),
-        Check("Open gates outside axioms include context selection and formation rules", "context selection" in note and "formation rules (which\n  admissible possibility a new record locks, at which site, with what weight,\n  or at what rate)" in note, ""),
+        Check("Open gates outside axioms include context selection and formation rules", "context selection" in note and "formation rules (the likelihood function's\n  form and values, at which site, and at what rate)" in note, ""),
         Check("Open gates outside axioms include physical persistence dynamics", "physical persistence dynamics" in note, ""),
         Check("Open gates outside axioms include g_bare", "`g_bare = 1` convention handling" in note, ""),
         Check("Open gates outside axioms include scale self-consistency", "natural unit equals the Planck length" in note, ""),

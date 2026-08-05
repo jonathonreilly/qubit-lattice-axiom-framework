@@ -427,6 +427,104 @@
     "declaration": "no step of this runner derives, forces or prefers r = 1/2 as any lane's setting",
     "lanes_well_formed": true,
     "spans_dial": true,
+    "steps": [
+      {
+        "designates": [],
+        "id": "lever_Q_eq_third_plus_two_thirds_r",
+        "supplied": null
+      },
+      {
+        "designates": [
+          0.5
+        ],
+        "id": "S2_argmax",
+        "supplied": "the 2-isotype-sector coarse-graining (undischarged partition gate)"
+      },
+      {
+        "designates": [
+          1.0
+        ],
+        "id": "S3_argmax",
+        "supplied": "the 3-real-DOF / Plancherel coarse-graining"
+      },
+      {
+        "designates": [
+          0.0
+        ],
+        "id": "S_spec_argmax",
+        "supplied": "the eigenvalue coarse-graining plus the delta=0 pin"
+      },
+      {
+        "designates": [
+          0.0,
+          0.5
+        ],
+        "id": "Fix_f",
+        "supplied": "the supplied Luders/records sharpening map"
+      },
+      {
+        "designates": [
+          0.0,
+          0.5
+        ],
+        "id": "Fix_g",
+        "supplied": "the supplied two-sector reverse map"
+      },
+      {
+        "designates": [
+          0.5
+        ],
+        "id": "attractor_of_g",
+        "supplied": "the supplied two-sector reverse map (arrow not derived)"
+      },
+      {
+        "designates": [
+          0.0
+        ],
+        "id": "attractor_of_f",
+        "supplied": "the supplied Luders/records sharpening map (arrow not derived)"
+      },
+      {
+        "designates": [
+          0.5
+        ],
+        "id": "swap_fixed_point",
+        "supplied": "the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)"
+      },
+      {
+        "designates": [
+          0.0,
+          0.5
+        ],
+        "id": "durability_fixedness",
+        "supplied": "the durability principle (not adopted; priced only)"
+      },
+      {
+        "designates": [],
+        "id": "arrow_universality_no_go",
+        "supplied": null
+      },
+      {
+        "designates": [],
+        "id": "reconciliation_Q1",
+        "supplied": null
+      },
+      {
+        "designates": [],
+        "id": "dial_geometry_table",
+        "supplied": null
+      },
+      {
+        "designates": [],
+        "id": "eps_window_tables",
+        "supplied": null
+      },
+      {
+        "designates": [],
+        "id": "comparator_S4_4",
+        "supplied": "PDG comparator (labeled; feeds no derivation)"
+      }
+    ],
     "steps_scanned": 15,
     "violations": []
   },
@@ -1848,11 +1946,11 @@
         "sha256": "72d179f5bb08374a8a2b88ac7d3b11d581c75d94cba5bc141a8ff41c5d1ee60b"
       }
     },
-    "runner_sha256": "06d887d9d9197517f9d7b3735ea4a9fa25a7ab7630504764d25b6e9044d9be06"
+    "runner_sha256": "9c03a600e3963bfbc169cc8238744b91aae333d5f668a0e83f371c22ea206366"
   },
   "role": "primary",
   "runner": "scripts/frontier_cycle923_exactness_residual_2026_07_28.py",
-  "runtime_sec": 0.309,
+  "runtime_sec": 0.318,
   "schema": "cycle923-exactness-residual-v1",
   "scorecard": {
     "fail": 0,

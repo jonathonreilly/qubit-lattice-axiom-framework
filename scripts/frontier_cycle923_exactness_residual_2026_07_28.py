@@ -880,7 +880,7 @@ def s5_firewall(planted_selector: bool = False) -> bool:
           "real 3-spectra)", lanes)
 
     if not planted_selector:
-        FIREWALL.update({"steps_scanned": len(steps), "violations": violations, "admissible_family": family,
+        FIREWALL.update({"steps": steps, "steps_scanned": len(steps), "violations": violations, "admissible_family": family,
                          "spans_dial": span, "lanes_well_formed": lanes,
                          "declaration": "no step of this runner derives, forces or prefers r = 1/2 as any lane's setting"})
     return ok and not violations

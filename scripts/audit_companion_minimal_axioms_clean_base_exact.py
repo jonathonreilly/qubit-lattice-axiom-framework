@@ -153,7 +153,7 @@ def source_boundary_checks() -> list[Check]:
         Check(
             "Registry note records Admissibility and downstream-boundary firewall",
             "Admissibility" in node.get("note", "")
-            and "the available possibilities are determined by, and vary with, the nearest-neighbor conditions at each site" in node.get("note", "")
+            and "the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions at each site" in node.get("note", "")
             and "context-selection rule" in node.get("note", "")
             and "downstream theory consequence" in node.get("note", ""),
             "",

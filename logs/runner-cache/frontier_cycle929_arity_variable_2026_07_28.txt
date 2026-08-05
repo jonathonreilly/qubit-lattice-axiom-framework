@@ -1,0 +1,286 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle929_arity_variable_2026_07_28.py
+cycle: 929  block: toe-time-blockM10-20260802  head: ed24d45eff
+runtime: 7.1 s (limit 900 s)
+
+-- VENDORING (Cycle 926 package, from physics-loop/toe-time-blockM8-20260802 @ 017f28df6e) --
+  logs/runner-cache/frontier_cycle926_gate_sweep_independent_check_2026_07_28.txt OK
+  logs/runner-cache/frontier_cycle926_gate_sweep_separation_2026_07_28.txt OK
+  outputs/gate_sweep_block_cycle926_ship_receipt_2026_07_28.json           OK
+  outputs/gate_sweep_independent_check_cycle926_receipt_2026_07_28.json    OK
+  outputs/gate_sweep_separation_cycle926_receipt_2026_07_28.json           OK
+  scripts/frontier_cycle926_gate_sweep_independent_check_2026_07_28.py     OK
+  scripts/frontier_cycle926_gate_sweep_separation_2026_07_28.py            OK
+  authority: ship receipt READ FROM THE SOURCE BRANCH, sha256 82b109a844966649f51e176d2e3cc9f3eb8ca45a39fbef39488964711905b015
+
+-- RESTRICTION GATES (all before any new number) --
+  21/21 frozen constants byte-verified; quote-identical to the 917, 919,
+  921, 926 AND 927 receipts: True
+  partition rule reproduces the memo's six cube lists: True
+  structural lemma (exactly one merged block) verified on 343 pointers: True
+  cycle917: 12 cells, 156 rows, max abs deviation 0.0
+  cycle919: 12 cells, 156 rows, max abs deviation 0.0
+  cycle926: 54 cells, 702 rows, max abs deviation 0.0
+  cycle927: 36 cells, 468 rows, max abs deviation 0.0
+
+-- Q1: THE ARITY VARIABLE (baseline multiplicity-1 pairs, loop-free) --
+  reading at_Jt_0.7: THE ARITY VARIABLE IS THE RAW POINTER DEGREE d
+    discriminating cells (d != f): 40; favouring M_d 40, favouring M_f 0
+    max |residual| M_d 3.173e-06   M_f 3.873e-03   min discrimination margin 1.914e-04
+  reading at_own_ceiling_row: THE ARITY VARIABLE IS THE RAW POINTER DEGREE d
+    discriminating cells (d != f): 40; favouring M_d 40, favouring M_f 0
+    max |residual| M_d 3.173e-06   M_f 3.873e-03   min discrimination margin 1.122e-04
+
+  cell             d   f  observed     M_d pred     M_f pred     wins  
+  A1@0.05          5   5  0.00276799   0.00276799   0.00276799   tie   
+  A1@0.1           5   5  0.00939614   0.00939614   0.00939614   tie   
+  A2@0.05          5   4  0.00276799   0.00276799   0.00307268   M_d   
+  A2@0.1           5   4  0.00939614   0.00939614   0.01042091   M_d   
+  A3@0.05          5   3  0.00276799   0.00276799   0.00373189   M_d   
+  A3@0.1           5   3  0.00939614   0.00939614   0.01262072   M_d   
+  A6@0.05          6   6  0.00257655   0.00257655   0.00257655   tie   
+  A6@0.1           6   6  0.00874738   0.00874738   0.00874738   tie   
+  A7@0.05          6   4  0.00257655   0.00257655   0.00307268   M_d   
+  A7@0.1           6   4  0.00874738   0.00874738   0.01042091   M_d   
+  ALTd3f3@0.05     3   3  0.00373189   0.00373189   0.00373189   tie   
+  ALTd3f3@0.1      3   3  0.01262072   0.01262072   0.01262072   tie   
+  ALTd4f3@0.05     4   3  0.00307268   0.00307268   0.00373189   M_d   
+  ALTd4f3@0.1      4   3  0.01042091   0.01042091   0.01262072   M_d   
+  ALTd4f4@0.05     4   4  0.00307268   0.00307268   0.00307268   tie   
+  ALTd4f4@0.1      4   4  0.01042091   0.01042091   0.01042091   tie   
+  ALTd5f3@0.05     5   3  0.00276799   0.00276799   0.00373189   M_d   
+  ALTd5f3@0.1      5   3  0.00939614   0.00939614   0.01262072   M_d   
+  ALTd5f4@0.05     5   4  0.00276799   0.00276799   0.00307268   M_d   
+  ALTd5f4@0.1      5   4  0.00939614   0.00939614   0.01042091   M_d   
+  ALTd5f5@0.05     5   5  0.00276799   0.00276799   0.00276799   tie   
+  ALTd5f5@0.1      5   5  0.00939614   0.00939614   0.00939614   tie   
+  ALTd6f3@0.05     6   3  0.00257655   0.00257655   0.00373189   M_d   
+  ALTd6f3@0.1      6   3  0.00874738   0.00874738   0.01262072   M_d   
+  ALTd6f4@0.05     6   4  0.00257655   0.00257655   0.00307268   M_d   
+  ALTd6f4@0.1      6   4  0.00874738   0.00874738   0.01042091   M_d   
+  ALTd6f5@0.05     6   5  0.00257655   0.00257655   0.00276799   M_d   
+  ALTd6f5@0.1      6   5  0.00874738   0.00874738   0.00939614   M_d   
+  AR3m1@0.05       3   3  0.00373223   0.00373189   0.00373189   tie   
+  AR3m1@0.1        3   3  0.01262526   0.01262072   0.01262072   tie   
+  AR3m3@0.05       5   5  0.00276823   0.00276799   0.00276799   tie   
+  AR3m3@0.1        5   5  0.00939930   0.00939614   0.00939614   tie   
+  AS3L3@0.05       3   3  0.00373195   0.00373189   0.00373189   tie   
+  AS3L3@0.1        3   3  0.01262155   0.01262072   0.01262072   tie   
+  AS3L4@0.05       3   3  0.00373195   0.00373189   0.00373189   tie   
+  AS3L4@0.1        3   3  0.01262155   0.01262072   0.01262072   tie   
+  B1@0.05          4   4  0.00307281   0.00307268   0.00307268   tie   
+  B1@0.1           4   4  0.01042254   0.01042091   0.01042091   tie   
+  B2@0.05          3   3  0.00373232   0.00373189   0.00373189   tie   
+  B2@0.1           3   3  0.01262648   0.01262072   0.01262072   tie   
+  B3@0.05          2   2  0.00639303   0.00639147   0.00639147   tie   
+  B3@0.1           2   2  0.02170277   0.02168213   0.02168213   tie   
+  C1@0.05          2   2  0.00639488   0.00639147   0.00639147   tie   
+  C1@0.1           2   2  0.02172750   0.02168213   0.02168213   tie   
+  C2@0.05          2   2  0.00639322   0.00639147   0.00639147   tie   
+  C2@0.1           2   2  0.02170541   0.02168213   0.02168213   tie   
+  C3@0.05          4   4  0.00307403   0.00307268   0.00307268   tie   
+  C3@0.1           4   4  0.01043885   0.01042091   0.01042091   tie   
+  E1@0.05          5   4  0.00276812   0.00276799   0.00307268   M_d   
+  E1@0.1           5   4  0.00939784   0.00939614   0.01042091   M_d   
+  E2@0.05          4   4  0.00307289   0.00307268   0.00307268   tie   
+  E2@0.1           4   4  0.01042366   0.01042091   0.01042091   tie   
+  MS5C4@0.05       5   5  0.00276888   0.00276799   0.00276799   tie   
+  MS5C4@0.1        5   5  0.00940798   0.00939614   0.00939614   tie   
+  MS5L1@0.05       5   5  0.00276799   0.00276799   0.00276799   tie   
+  MS5L1@0.1        5   5  0.00939614   0.00939614   0.00939614   tie   
+  MS5L2@0.05       5   5  0.00276817   0.00276799   0.00276799   tie   
+  MS5L2@0.1        5   5  0.00939846   0.00939614   0.00939614   tie   
+  MS5L3@0.05       5   5  0.00276817   0.00276799   0.00276799   tie   
+  MS5L3@0.1        5   5  0.00939846   0.00939614   0.00939614   tie   
+  MS5L4@0.05       5   5  0.00276817   0.00276799   0.00276799   tie   
+  MS5L4@0.1        5   5  0.00939846   0.00939614   0.00939614   tie   
+  SEPd3f3@0.05     3   3  0.00373189   0.00373189   0.00373189   tie   
+  SEPd3f3@0.1      3   3  0.01262072   0.01262072   0.01262072   tie   
+  SEPd4f3@0.05     4   3  0.00307268   0.00307268   0.00373189   M_d   
+  SEPd4f3@0.1      4   3  0.01042091   0.01042091   0.01262072   M_d   
+  SEPd4f4@0.05     4   4  0.00307268   0.00307268   0.00307268   tie   
+  SEPd4f4@0.1      4   4  0.01042091   0.01042091   0.01042091   tie   
+  SEPd5f3@0.05     5   3  0.00276799   0.00276799   0.00373189   M_d   
+  SEPd5f3@0.1      5   3  0.00939614   0.00939614   0.01262072   M_d   
+  SEPd5f4@0.05     5   4  0.00276799   0.00276799   0.00307268   M_d   
+  SEPd5f4@0.1      5   4  0.00939614   0.00939614   0.01042091   M_d   
+  SEPd5f5@0.05     5   5  0.00276799   0.00276799   0.00276799   tie   
+  SEPd5f5@0.1      5   5  0.00939614   0.00939614   0.00939614   tie   
+  SEPd6f3@0.05     6   3  0.00257655   0.00257655   0.00373189   M_d   
+  SEPd6f3@0.1      6   3  0.00874738   0.00874738   0.01262072   M_d   
+  SEPd6f4@0.05     6   4  0.00257655   0.00257655   0.00307268   M_d   
+  SEPd6f4@0.1      6   4  0.00874738   0.00874738   0.01042091   M_d   
+  SEPd6f5@0.05     6   5  0.00257655   0.00257655   0.00276799   M_d   
+  SEPd6f5@0.1      6   5  0.00874738   0.00874738   0.00939614   M_d   
+  SEPd6f6@0.05     6   6  0.00257655   0.00257655   0.00257655   tie   
+  SEPd6f6@0.1      6   6  0.00874738   0.00874738   0.00874738   tie   
+  SH2C4@0.05       2   2  0.00639322   0.00639147   0.00639147   tie   
+  SH2C4@0.1        2   2  0.02170541   0.02168213   0.02168213   tie   
+  SH2Y3@0.05       2   2  0.00639178   0.00639147   0.00639147   tie   
+  SH2Y3@0.1        2   2  0.02168626   0.02168213   0.02168213   tie   
+  SPk2L1@0.05      2   2  0.00639147   0.00639147   0.00639147   tie   
+  SPk2L1@0.1       2   2  0.02168213   0.02168213   0.02168213   tie   
+  SPk2L3@0.05      2   2  0.00639142   0.00639147   0.00639147   tie   
+  SPk2L3@0.1       2   2  0.02168141   0.02168213   0.02168213   tie   
+  SPk2L4@0.05      2   2  0.00639142   0.00639147   0.00639147   tie   
+  SPk2L4@0.1       2   2  0.02168141   0.02168213   0.02168213   tie   
+  SPk3L1@0.05      3   3  0.00373189   0.00373189   0.00373189   tie   
+  SPk3L1@0.1       3   3  0.01262072   0.01262072   0.01262072   tie   
+  SPk3L2@0.05      3   3  0.00373225   0.00373189   0.00373189   tie   
+  SPk3L2@0.1       3   3  0.01262558   0.01262072   0.01262072   tie   
+  SPk4L1@0.05      4   4  0.00307268   0.00307268   0.00307268   tie   
+  SPk4L1@0.1       4   4  0.01042091   0.01042091   0.01042091   tie   
+  SPk4L2@0.05      4   4  0.00307285   0.00307268   0.00307268   tie   
+  SPk4L2@0.1       4   4  0.01042315   0.01042091   0.01042091   tie   
+  SPk5L1@0.05      5   5  0.00276799   0.00276799   0.00276799   tie   
+  SPk5L1@0.1       5   5  0.00939614   0.00939614   0.00939614   tie   
+  SPk6L2@0.05      6   6  0.00257671   0.00257655   0.00257655   tie   
+  SPk6L2@0.1       6   6  0.00874953   0.00874738   0.00874738   tie   
+  STk10@0.05      10  10  0.00215040   0.00215040   0.00215040   tie   
+  STk10@0.1       10  10  0.00729130   0.00729130   0.00729130   tie   
+  STk12@0.05      12  12  0.00201754   0.00201754   0.00201754   tie   
+  STk12@0.1       12  12  0.00683436   0.00683436   0.00683436   tie   
+  STk8@0.05        8   8  0.00232404   0.00232404   0.00232404   tie   
+  STk8@0.1         8   8  0.00788634   0.00788634   0.00788634   tie   
+  W1merge6@0.05    6   3  0.00257655   0.00257655   0.00373189   M_d   
+  W1merge6@0.1     6   3  0.00874738   0.00874738   0.01262072   M_d   
+  W2merge6d2@0.05   6   4  0.00257679   0.00257655   0.00307268   M_d   
+  W2merge6d2@0.1   6   4  0.00875055   0.00874738   0.01042091   M_d   
+  W3depth5@0.05    5   5  0.00276817   0.00276799   0.00276799   tie   
+  W3depth5@0.1     5   5  0.00939846   0.00939614   0.00939614   tie   
+  W4merge5d3@0.05   5   3  0.00276817   0.00276799   0.00373189   M_d   
+  W4merge5d3@0.1   5   3  0.00939846   0.00939614   0.01262072   M_d   
+  W5claw6@0.05     6   5  0.00257668   0.00257655   0.00276799   M_d   
+  W5claw6@0.1      6   5  0.00874918   0.00874738   0.00939614   M_d   
+
+-- Q1 WITHIN-PAIR: multiplicity vs size --
+  max spread across DIFFERENT SIZES at fixed (d, field, mult sum, rest): 4.608744744950821e-05
+  multiplicity shifts at fixed pair size:
+    d=4 lam=0.05 size_sum=3: msum 2 -> 3 moves C_ab 0.00307276 -> 0.00448386 (shift +0.00141111)
+    d=4 lam=0.05 size_sum=4: msum 2 -> 4 moves C_ab 0.00307285 -> 0.00755655 (shift +0.00448370)
+    d=4 lam=0.10 size_sum=3: msum 2 -> 3 moves C_ab 0.01042188 -> 0.01512271 (shift +0.00470083)
+    d=4 lam=0.10 size_sum=4: msum 2 -> 4 moves C_ab 0.01042315 -> 0.02554363 (shift +0.01512048)
+    d=5 lam=0.05 size_sum=3: msum 2 -> 3 moves C_ab 0.00276807 -> 0.00369982 (shift +0.00093175)
+    d=5 lam=0.05 size_sum=4: msum 2 -> 4 moves C_ab 0.00276823 -> 0.00463165 (shift +0.00186341)
+    d=5 lam=0.05 size_sum=5: msum 2 -> 5 moves C_ab 0.00276807 -> 0.00739964 (shift +0.00463157)
+    d=5 lam=0.05 size_sum=5: msum 2 -> 3 moves C_ab 0.00276807 -> 0.00369987 (shift +0.00093179)
+    d=5 lam=0.05 size_sum=5: msum 3 -> 5 moves C_ab 0.00369987 -> 0.00739964 (shift +0.00369977)
+    d=5 lam=0.05 size_sum=6: msum 2 -> 3 moves C_ab 0.00276815 -> 0.00370028 (shift +0.00093213)
+    d=5 lam=0.05 size_sum=6: msum 2 -> 4 moves C_ab 0.00276815 -> 0.00463191 (shift +0.00186376)
+    d=5 lam=0.05 size_sum=6: msum 3 -> 4 moves C_ab 0.00370028 -> 0.00463191 (shift +0.00093163)
+
+  VERDICT: THE ARITY VARIABLE IS THE RAW POINTER DEGREE d, NOT THE FRAGMENT COUNT f. On the 40 loop-free discriminating cells (d != f) the baseline multiplicity-one pair sits on T(d) with |residual| at most 3.173e-06 bits, while the f-indexed model T(f) is wrong by up to 3.873e-03 bits; the smallest discrimination margin |T(d) - T(f)| anywhere on the grid is 1.914e-04 bits, so the two models are separated by at least a factor of 60 everywhere.  926's A4 prediction -- that a (d=5, f=2) geometry carries the f=2 tax -- is REFUTED: see Q2's restatement for A4's correct explanation.
+
+-- THE PURE-STAR MULTIPLICITY LADDER  G_d(m) = C_ab of an (m,1) pair --
+  d3@0.05    G(m): m=1:0.003731886  m=2:0.007463772
+             exhausting rung m=2; |last step - G(1)| = 6.523427631410783e-15; max additivity residual 6.523427631410783e-15
+  d3@0.1     G(m): m=1:0.012620718  m=2:0.025241436
+             exhausting rung m=2; |last step - G(1)| = 1.1102230246251565e-15; max additivity residual 1.1102230246251565e-15
+  d4@0.05    G(m): m=1:0.003072684  m=2:0.004483861  m=3:0.007556545
+             exhausting rung m=3; |last step - G(1)| = 4.81906181626357e-15; max additivity residual 4.81906181626357e-15
+  d4@0.1     G(m): m=1:0.010420913  m=2:0.015122714  m=3:0.025543627
+             exhausting rung m=3; |last step - G(1)| = 3.29250515740398e-15; max additivity residual 3.29250515740398e-15
+  d5@0.05    G(m): m=1:0.002767995  m=2:0.003699820  m=3:0.004631645  m=4:0.007399640
+             exhausting rung m=4; |last step - G(1)| = 1.3461454173580023e-14; max additivity residual 1.3461454173580023e-14
+  d5@0.1     G(m): m=1:0.009396141  m=2:0.012507929  m=3:0.015619718  m=4:0.025015859
+             exhausting rung m=4; |last step - G(1)| = 6.7671562797855245e-15; max additivity residual 6.765421556309548e-15
+  d6@0.05    G(m): m=1:0.002576549  m=2:0.003333845  m=3:0.003843765  m=4:0.004601061  m=5:0.007177610
+             exhausting rung m=5; |last step - G(1)| = 7.018170766759368e-14; max additivity residual 7.42565731126632e-14
+  d6@0.1     G(m): m=1:0.008747378  m=2:0.011280190  m=3:0.012990243  m=4:0.015523054  m=5:0.024270433
+             exhausting rung m=5; |last step - G(1)| = 7.830541770559307e-14; max additivity residual 8.253120409307257e-14
+  additivity: on the constructible grid, with G_d(m) the per-pair C_ab of an (m, 1) pair at pointer degree d, the EXHAUSTING pair satisfies G_d(m) + G_d(d-1-m) = G_d(d-1) for every m -- and in particular the last rung exceeds the previous one by exactly the BASELINE G_d(1) = T(d).
+  grade: DIAGNOSTIC-GRADE STRUCTURAL RELATION -- a measured identity with its residuals published, NOT a derived functional form and NOT a claim about the mechanism.
+  WITHIN-PAIR VERDICT: THE TAX IS SET BY THE FRAGMENT'S ANCHOR MULTIPLICITY, NOT BY ITS SIZE. At fixed pointer degree, field and pair-size profile, raising a fragment's anchor multiplicity moves its pairs' C_ab by up to 1.562e-02 bits, while at fixed multiplicity the spread across every different fragment SIZE measured is 4.609e-05 bits -- a factor of 339.
+
+-- Q2: the unified law on the new grid --
+  ceiling = fragment count at 0.05: 45/45;  at 0.10: 37/45
+  threshold conjunction d>=5 AND f>=3 at 0.10: sufficient True, necessary True
+  two-gate anatomy:
+    content        n= 8  f values [1]  d values [3, 4, 5, 6]
+    independence   n= 8  f values [2]  d values [3, 4, 5, 6]
+    persistence    n= 6  f values [3, 4]  d values [3, 4]
+    BOTH CONJUNCTS VINDICATED AS DIFFERENT MECHANISMS.  Every independence failure on the grid has f <= 2 and they occur at EVERY degree measured (d = [3, 4, 5, 6]), so the independence side tracks the FRAGMENT COUNT and is blind to the degree.  Every persistence failure has d <= 4 and they occur at f >= 3 (f = [3, 4]), so the persistence side tracks the RAW DEGREE and is blind to the fragment count.  The conjunction does NOT dissolve into a single statistic.
+
+-- Q2 RESTATEMENT: the unified law and every re-indexed sentence --
+  LAW: On a LOOP-FREE geometry the per-pair dependence tax is C_ab = F(d, m_a, m_b, lambda, t) where d is the RAW POINTER DEGREE and m_a, m_b are the two fragments' ANCHOR MULTIPLICITIES (how many pointer-neighbours each fragment swallowed under the frozen labelling). The FRAGMENT COUNT f is NOT a variable of the per-pair law: at fixed (d, m_a, m_b, lambda) it is inert.  Fragment SIZE is inert as well (927's null, re-confirmed here at the separated cells).  927's monotone table is the RESTRICTION of F to baseline pairs, T(d) = F(d, 1, 1), and it is correctly indexed by d exactly as 927 wrote it.
+  927's table needs re-indexing: True
+
+   [Cycle 927 note and receipt] CORRECTLY INDEXED, BUT INCOMPLETE
+     sentence : per-pair C_ab on loop-free geometries is a function of POINTER DEGREE and FIELD alone
+     changes  : the variable is right -- d, not f, confirmed on 40 discriminating cells where d != f.  What is incomplete is 'alone': on 927's own families every fragment had anchor multiplicity 1, so the law it measured is the BASELINE restriction T(d) = F(d,1,1).  Once the frozen rule merges anchors, a second per-pair variable appears and C_ab rises well above T(d) -- up to 0.025016 bits at d = 5.  The sentence should read: a function of pointer degree and field alone AT ANCHOR MULTIPLICITY ONE.
+
+   [Cycle 927 note] TRUE OF THE BASELINE TABLE, FALSE OF THE FULL LAW
+     sentence : at lambda = 0.10 only degree 2 exceeds the 0.02 gate
+     changes  : true for baseline pairs at every degree measured; but merged pairs cross the gate at EVERY degree on this grid (the f = 2 cells at d = 3, 4, 5 and 6 all fail the independence gate).  The complete statement of the G1 exception is unaffected: G1 has no merged anchors.
+
+   [Cycle 926 note (Q2/Q3) and its receipt] REFUTED AS AN INFERENCE; THE DATUM ITSELF REPRODUCES EXACTLY
+     sentence : A4 -- a degree-5 geometry with two fragments carrying a degree-2-LIKE per-pair tax -- points at fragment count
+     changes  : A4's pair is 0.025015859 bits at Jt = 0.7 (reproduced here at deviation exactly 0).  The f = 2 reading predicts T(2) = 0.021682126, which is WRONG BY 0.003334 bits -- about 139 times the largest within-degree spread in 927's own table.  The pure d = 5 reading predicts T(5) = 0.009396141, wrong by 0.015620.  Neither single statistic explains it.  THE CORRECT EXPLANATION: A4's only pair has anchor multiplicities (4, 1) and rest = 0, i.e. it EXHAUSTS the pointer's neighbourhood, which is a distinct regime -- the pair's union plus the pointer is the whole system, so conditioning on the pointer leaves a pure state.  A4 is over gate because of anchor multiplicity and pair exhaustion, NOT because f = 2 makes it behave like degree 2.
+
+   [Cycle 926 note] SURVIVES, AND IS RE-CONFIRMED ON A WHOLLY NEW GRID
+     sentence : the ceiling equals the FRAGMENT COUNT (29/29); the pointer-degree reading is refuted
+     changes  : nothing.  This block adds 45 independently constructed loop-free cells: at the frozen low field the ceiling equals f on ALL of them.  Note the two laws really do track different statistics -- the CEILING tracks f, the PER-PAIR TAX tracks d.  That is not a contradiction: R_ind is bounded by the number of fragments by construction, while C_ab is a property of the state.
+
+   [Cycle 926 note] SURVIVES ON THE NEW GRID, BOTH DIRECTIONS
+     sentence : a geometry certifies at the 0.10 field IFF pointer degree >= 5 AND fragment count >= 3
+     changes  : necessary and sufficient on all 45 loop-free grid cells at 0.10 (23 satisfy the conjunction and all certify; 22 violate it and none certify).  The conjunct that looked like it might dissolve does not: the two conjuncts are guarded by different mechanisms (see the two-gate anatomy) and neither is redundant.
+
+   [Cycle 921 note (already corrected by 927 on the size axis)] STILL WRONG ON SIZE; THIS BLOCK NAMES WHAT IT GROWS WITH
+     sentence : a SECOND, loop-independent channel that grows with fragment size and field
+     changes  : 927 corrected 'size' to 'falls with pointer degree'.  This block adds the missing rising variable: the channel GROWS with the fragment's ANCHOR MULTIPLICITY. A fragment of four sites at multiplicity one is inert (it sits on T(d)); a fragment of four sites at multiplicity four is far over the gate.  'Size' was a proxy that happened to co-vary with multiplicity in the geometries 921 looked at.
+
+  A coordinate star at pointer degree d IS the graph K_{1,d} whatever the frozen rule calls its fragments: SEPd5f3, SEPd5f4, SEPd5f5, A1, A2, A3 and the 927 control SPk5L1 all carry the SAME Hamiltonian, the SAME preparation and the SAME evolved state.  A pair of multiplicity-one fragments is a pair of single leaves, so its C_ab is a functional of that one state and cannot depend on how many labels the rule hands out elsewhere.  The measurement confirms it to the last digit: every such pair at d = 5 reads 0.009396141 at Jt = 0.7 regardless of f.  The f-indexed reading of 927's table is therefore not merely disfavoured for baseline pairs -- it is impossible.
+
+-- Q3: large-fragment witnesses --
+  E1           d=5 f=4 maxsize=4  merge + depth          verdict YES  meets requirement True
+  W1merge6     d=6 f=3 maxsize=4  pure merge (no depth)  verdict YES  meets requirement True
+  W2merge6d2   d=6 f=4 maxsize=6  merge + depth          verdict YES  meets requirement True
+  W3depth5     d=5 f=5 maxsize=4  depth only (no merge)  verdict YES  meets requirement True
+  W4merge5d3   d=5 f=3 maxsize=5  merge + depth          verdict YES  meets requirement True
+  W5claw6      d=6 f=5 maxsize=4  merge + depth          verdict YES  meets requirement True
+  witnesses meeting the requirement: 6 across 3 shape classes; distinct NEW geometries beyond E1: 4; E1 de-singletoned: True
+  disclosure: W1merge6 IS THE GRID CELL SEPd6f3 under a second key -- the same pointer, sites and bonds.  It is listed here because it is the cleanest PURE-MERGE witness (a size-4 fragment with no depth at all), but it is NOT counted as an independent new geometry.  Excluding it and E1, this block adds 4 distinct new large-fragment witnesses.
+  size inertness on the witnesses: max spread across sizes at fixed multiplicity 4.608744744950821e-05 vs multiplicity shift 0.015618650406055692
+
+-- TEETH --
+  T10_tampered_frozen_constant_is_caught                   FIRES
+  T11_planted_conjunction_counterexample_breaks_sufficiency FIRES
+  T12_reproduction_gate_has_teeth                          FIRES
+  T13_pair_exhaustion_is_a_distinct_regime                 FIRES
+  T14_embedding_independence                               FIRES
+  T1a_planted_d_tracking_data_selects_d                    FIRES
+  T1b_planted_f_tracking_data_FLIPS_the_verdict            FIRES
+  T2_tampered_vendored_pin_is_caught                       FIRES
+  T3_under_converged_propagator_euler_guard                FIRES
+  T4_determinism_double_run                                FIRES
+  T5_tampered_partition_is_caught                          FIRES
+  T6_modified_labelling_rule_changes_the_partition         FIRES
+  T7_route_cross_validation                                FIRES
+  T8_structural_lemma_rejects_two_merged_blocks            FIRES
+  T9_size_driven_plant_flips_the_within_pair_verdict       FIRES
+  15/15 teeth fire
+
+-- NUMERICS --
+  all_guards_pass                        True
+  machine_tolerance                      1e-09
+  max_chebyshev_tail_bound               1.67809969801882e-18
+  max_entropy_bound_violation            0.0
+  max_hermiticity_defect                 1.3100631690576847e-14
+  max_negativity                         7.231966066707309e-16
+  max_norm_defect                        1.1102230246251565e-13
+  max_t0_anchor                          8.301999986586705e-14
+  max_taylor_substep_remainder           1.1561266928148266e-19
+  route_A_vs_B_max_abs_dev               1.0492424431275898e-15
+  route_A_vs_C_max_abs_dev               2.8519191602130565e-15
+
+-- CAPS DECLARED --
+  * 917 G6 (the 3x3x3 cube, n=27) is NOT evolved -- it is used only as the partition-rule verification instance, exactly as 917/919/926 used it.  No claim here rests on a G6 cell.
+  * 919's two DIAGNOSTIC fields (0.125, 0.15) are not re-run in the reproduction gate; the three fields the 917/919 gates compare on (0.05, 0.075, 0.10) are.  Declared.
+  * 927's two n=16 geometries (SPk3L5, SPk5L3) are NOT re-run (the 2^16 cell costs dominate the budget and they carry no pointer degree the reproduced subset misses: degrees 2,3,4,5,6,8,10,12 are all covered).  Declared; 18 of 35 927 geometries reproduced.
+  * runtime limit 900 s declared by the supervisor; this run used 7.1 s.
+  * the (d,f) grid is built from COORDINATE STARS and coordinate spiders only.  The structural lemma (verified exhaustively) shows the frozen rule NEVER produces two fragments of anchor multiplicity >= 2 at one pointer, so profiles such as {2,2,1} are NOT CONSTRUCTIBLE and the multiplicity profile on the grid is FORCED to {d-f+1, 1^(f-1)}.  This is reported as a limit of the frozen rule's design space; no modified labelling is used anywhere.
+  * diagnostic fields {0.075, 0.125, 0.15} are run on the SEP grid cells only and are labelled non-claim in every table.
+
+receipt: outputs/arity_variable_cycle929_receipt_2026_07_28.json
+receipt sha256: ad0bef911edf82de1822e33ff8a5ec97ebdaeb3541b2ff297b18e39bd1e275f9
+===== runner cache v1 =====

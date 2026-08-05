@@ -131,3 +131,27 @@ exercise output:
 - Do not re-attack RC-3 with (B,b) arithmetic (930 located it on the
   dynamical boundary; it needs stretch-tail dynamics or nothing).
 - Do not hunt an elementary s(k) formula (the Galois no-go).
+
+
+---
+
+## ADDENDUM (2026-08-05 ~04:45 EDT): R1-Reta RAN AND WAS REFUTED
+
+Cycle 938 (blockAC3, PR #6004) tested the wall-2 route and refuted it
+twice: (1) PRIOR ART — the delta value-face move landed 2026-07-05
+((ii) = (ii-value) + (ii-exactness)); the exercise pass missed it, and
+it did not dissolve the obligation then; (2) TYPE-SHAPE — the
+obligation assigns a readout class and an identity conversion;
+registration supplies values, not maps (the alpha-family witness). The
+wall's sharpest form is now THE SPACE GAP (one matrix, two supplied
+spaces — the carrier question), registration-immune; route 4's price
+stands. Bonus findings: the 7.4e-6 exactness is SIGN-convention-
+conditional (all-positive cone; next-nearest 3000x worse); delta has
+six mass-multiset preimages (only the folded angle is a functional).
+Correction to this packet's wall-2 section accordingly — and a lesson
+for the exercise protocol itself: the assumptions table must include
+"has this route already been run?" as an explicit prior-art sweep row
+(the 5592 lesson recurring at exercise scale). Wall 1's R1-A3 remains
+live and unrun (Cycle 936's freedom count first); wall 3's route is
+downgraded from "plausibly dissolves" to "must be tested against the
+07-05-pattern prior art before launch" (same lesson).

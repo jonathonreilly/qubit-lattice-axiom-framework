@@ -953,3 +953,21 @@ measurement from chain to cube under the frozen certification
 gates); the theta-convention registration on the owner surface.
 
 No axiom ask arises anywhere in this lane.
+
+## Cycle 917 geometry ladder (blockM4, PR #5984) — 2026-08-04
+
+- Supervisor review: the design-inheritance verification (21/21
+  frozen constants; the partition rule reproducing the memo's own
+  cube fragments); the falsification's dual control (the planted
+  chain certification AND the real row both firing the detector);
+  the confound collapse and the margin honesty; both G3 readings run
+  (the spec inconsistency mine — fifth supervisor error, caught and
+  neutralized by the worker running both).
+- Checker: 12/12 survive at 1e-13 on independent machinery; 10/10
+  teeth incl. the under-converged-propagator tooth.
+- The mine-no-go-proofs discipline's biggest catch: the recovered
+  no-go's headline slogan dies as a generalization while the no-go
+  survives at home. Propagation flag: "branching required" must not
+  be cited outside the Schwinger comparator.
+- Cluster-cap (4th M-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).

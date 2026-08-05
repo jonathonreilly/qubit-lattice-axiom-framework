@@ -1,0 +1,1464 @@
+{
+  "VERDICT": "PRIMARY_SURVIVES_THIS_CHECK",
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-time-blockQ11-20260802",
+  "campaign": "campaign-5-born-lane-closure",
+  "certificates": {
+    "A_PINS": {
+      "AUDIT_INPUT_PATHS": [
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+        "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+        "scripts/frontier_cycle863_time_from_records_2026_07_28.py",
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+        "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+        "scripts/frontier_cycle911_type_vacuity_2026_07_28.py",
+        "outputs/type_vacuity_cycle911_receipt_2026_07_28.json",
+        "scripts/frontier_cycle913_selection_function_2026_07_28.py",
+        "outputs/selection_function_cycle913_receipt_2026_07_28.json",
+        "scripts/frontier_cycle918_writable_endpoint_2026_07_28.py",
+        "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "blocked_modules_loaded": [],
+      "certificate": "A_PINS",
+      "existing_worktree_relative": true,
+      "firewall_hits": [],
+      "git_blobs": {
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "4a863da1f3f255354839277271a3a69a5c205133",
+        "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+        "outputs/selection_function_cycle913_receipt_2026_07_28.json": "5ac6a40c316c7a90bcf867eb6507518ba976169b",
+        "outputs/type_vacuity_cycle911_receipt_2026_07_28.json": "af51342a72c56db8e562e1f1a607f207508b42ed",
+        "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json": "5704619b21d9a3af312956580355d6dd5a303f53",
+        "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py": "3add288d1b7de5bcc45f5ef8f88f3cfb98105b8f",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+        "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "871b9e986ca5e684ceadce25ff3e03164ef26c98",
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+        "scripts/frontier_cycle911_type_vacuity_2026_07_28.py": "3335e9dee5027b935d0eb3c814601b8f8e83b550",
+        "scripts/frontier_cycle913_selection_function_2026_07_28.py": "2093b687713eb12b462532761092d90d40bed718",
+        "scripts/frontier_cycle918_writable_endpoint_2026_07_28.py": "b5a1a5643abe87ab4a92fd86e8c0007e8f26539a"
+      },
+      "git_blobs_all_match": true,
+      "mismatched_paths": [],
+      "pass": true,
+      "sha256": {
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+        "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c",
+        "outputs/selection_function_cycle913_receipt_2026_07_28.json": "0de8d785c2139126b813166e090493d65cb289508b46de7f928b440facb82ecd",
+        "outputs/type_vacuity_cycle911_receipt_2026_07_28.json": "90d1fb2a3ac31065f75345ac1e98520622aa6302c50dcf4a8a11f44a1cde11b0",
+        "outputs/writable_endpoint_cycle918_receipt_2026_07_28.json": "849ad2bbb4abc8c9eda5541246784e2bdb69feaf423aac7c6f3aff83f6062bbd",
+        "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py": "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+        "scripts/frontier_cycle863_time_from_records_2026_07_28.py": "e5c16b86bf98187d1440a56e1ce5d91c2d655ed08b5c7c65c0585bf30608fe62",
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
+        "scripts/frontier_cycle911_type_vacuity_2026_07_28.py": "6474f1e919c97fcb3336a8cea480b5e824fe48f4ea5ce4592c1b75bc0b0007d1",
+        "scripts/frontier_cycle913_selection_function_2026_07_28.py": "b349f873aa1e88558fcd63fc432a6edd249f48f103ecbd3d28fd62d070e689ef",
+        "scripts/frontier_cycle918_writable_endpoint_2026_07_28.py": "0ef019ef77cf3ff33c7e6c29ac31d1cd53945bd5f505f1fd4b3387e74017289d"
+      },
+      "sha256_all_match": true
+    },
+    "G_TEETH": {
+      "all_fired": true,
+      "certificate": "G_TEETH",
+      "pass": true,
+      "teeth": [
+        {
+          "detail": null,
+          "fired": true,
+          "tooth": "tampered_pin_detected"
+        },
+        {
+          "detail": {
+            "designs": [
+              "CONTROL",
+              "M_A",
+              "M_B",
+              "M_C"
+            ],
+            "verdicts": [
+              "M_A",
+              "M_B",
+              "M_C"
+            ]
+          },
+          "fired": true,
+          "tooth": "dropped_modification_detected"
+        },
+        {
+          "detail": {
+            "probe_verdict": "STERILE"
+          },
+          "fired": true,
+          "tooth": "hardcoded_verdict_detected"
+        },
+        {
+          "detail": {
+            "control_candidate_pairs": 39
+          },
+          "fired": true,
+          "tooth": "leaked_born_capable_detected"
+        },
+        {
+          "detail": {
+            "difference_after_the_drop": [
+              0
+            ],
+            "difference_before_the_drop": [],
+            "dropped_world": 0
+          },
+          "fired": true,
+          "tooth": "skipped_world_detected"
+        },
+        {
+          "detail": {
+            "planted_world": 253
+          },
+          "fired": true,
+          "tooth": "planted_branch_blindness_detected"
+        },
+        {
+          "detail": null,
+          "fired": true,
+          "tooth": "planted_write_once_breach_detected"
+        },
+        {
+          "detail": {
+            "removed_slot": 0
+          },
+          "fired": true,
+          "tooth": "planted_dead_slot_corruption_detected"
+        }
+      ],
+      "tooth_count": 8
+    },
+    "I_RUNTIME": {
+      "budget_sec": 900,
+      "certificate": "I_RUNTIME",
+      "elapsed_sec": 385.199,
+      "forward_scan_seconds": {
+        "CONTROL": 33.689,
+        "M_A": 39.391,
+        "M_B": 38.912,
+        "M_C": 38.484
+      },
+      "pass": true,
+      "reversed_scans_seconds": 155.589
+    },
+    "K1_SPLICE": {
+      "certificate": "K1_SPLICE",
+      "mechanism": "the pinned Cycle-863 masked_h_schedules output with the extra gates inserted at an offset computed from the station macro lengths.  The primary rebuilds the schedule from the program; this runner never does.",
+      "pass": true,
+      "rows": [
+        {
+          "LEFT_target": false,
+          "RIGHT_target": false,
+          "gates": 34166,
+          "gates_agree": true,
+          "modification": "CONTROL",
+          "primary_LEFT_target": false,
+          "primary_RIGHT_target": false,
+          "primary_gates": 34166,
+          "primary_reads_never_writes": true,
+          "reads_never_writes": true,
+          "target_claims_agree": true
+        },
+        {
+          "LEFT_target": true,
+          "RIGHT_target": true,
+          "gates": 34188,
+          "gates_agree": true,
+          "modification": "M_A",
+          "primary_LEFT_target": true,
+          "primary_RIGHT_target": true,
+          "primary_gates": 34188,
+          "primary_reads_never_writes": false,
+          "reads_never_writes": false,
+          "target_claims_agree": true
+        },
+        {
+          "LEFT_target": true,
+          "RIGHT_target": true,
+          "gates": 34188,
+          "gates_agree": true,
+          "modification": "M_B",
+          "primary_LEFT_target": true,
+          "primary_RIGHT_target": true,
+          "primary_gates": 34188,
+          "primary_reads_never_writes": false,
+          "reads_never_writes": false,
+          "target_claims_agree": true
+        },
+        {
+          "LEFT_target": true,
+          "RIGHT_target": true,
+          "gates": 34188,
+          "gates_agree": true,
+          "modification": "M_C",
+          "primary_LEFT_target": true,
+          "primary_RIGHT_target": true,
+          "primary_gates": 34188,
+          "primary_reads_never_writes": false,
+          "reads_never_writes": false,
+          "target_claims_agree": true
+        }
+      ]
+    },
+    "K2_RECORD_MACHINERY_ATTACK": {
+      "certificate": "K2_RECORD_MACHINERY_ATTACK",
+      "gap_attacked": "the primary derived the Cycle-878 dead-wire safe pool once, from the control, and then only monitored those slots.  This runner re-derives the whole rig under every modification at the pinned 878 window.",
+      "pass": true,
+      "rig_under_each_modification": [
+        {
+          "control_slots_still_dead": true,
+          "control_slots_still_safe": true,
+          "dead_count": 5668,
+          "modification": "CONTROL",
+          "safe_count": 5270,
+          "slot_map_would_be_identical": true
+        },
+        {
+          "control_dead_count": 5668,
+          "control_safe_count": 5270,
+          "control_slots_still_dead": true,
+          "control_slots_still_safe": true,
+          "dead_count": 5668,
+          "modification": "M_A",
+          "safe_count": 5270,
+          "slot_map_would_be_identical": true,
+          "slots_that_stopped_being_dead": []
+        },
+        {
+          "control_dead_count": 5668,
+          "control_safe_count": 5270,
+          "control_slots_still_dead": true,
+          "control_slots_still_safe": true,
+          "dead_count": 5668,
+          "modification": "M_B",
+          "safe_count": 5270,
+          "slot_map_would_be_identical": true,
+          "slots_that_stopped_being_dead": []
+        },
+        {
+          "control_dead_count": 5668,
+          "control_safe_count": 5270,
+          "control_slots_still_dead": true,
+          "control_slots_still_safe": true,
+          "dead_count": 5668,
+          "modification": "M_C",
+          "safe_count": 5270,
+          "slot_map_would_be_identical": true,
+          "slots_that_stopped_being_dead": []
+        }
+      ],
+      "write_once_second_route": {
+        "CONTROL": {
+          "gapped_ordinal_sequences": 0,
+          "non_monotone_ordinal_sequences": 0,
+          "repeated_examples": [],
+          "repeated_triples": 0,
+          "slot_write_triples": 92260,
+          "write_once_holds": true
+        },
+        "M_A": {
+          "gapped_ordinal_sequences": 0,
+          "non_monotone_ordinal_sequences": 0,
+          "repeated_examples": [],
+          "repeated_triples": 0,
+          "slot_write_triples": 89864,
+          "write_once_holds": true
+        },
+        "M_B": {
+          "gapped_ordinal_sequences": 0,
+          "non_monotone_ordinal_sequences": 0,
+          "repeated_examples": [],
+          "repeated_triples": 0,
+          "slot_write_triples": 95146,
+          "write_once_holds": true
+        },
+        "M_C": {
+          "gapped_ordinal_sequences": 0,
+          "non_monotone_ordinal_sequences": 0,
+          "repeated_examples": [],
+          "repeated_triples": 0,
+          "slot_write_triples": 90924,
+          "write_once_holds": true
+        }
+      }
+    },
+    "K3_COVARIANCE_ATTACK": {
+      "certificate": "K3_COVARIANCE_ATTACK",
+      "pass": true,
+      "reading": "the added law is exactly as phase-covariant as the station it rides -- verified structurally at every step -- while the REALIZED selection stops being Z_11 invariant as soon as it becomes trajectory-dependent, because the lock tick is not phase-invariant.  The primary's pricing of this is confirmed, not refuted.",
+      "rows": [
+        {
+          "added_gates_carry_the_anchor_station_mask_at_every_step": true,
+          "agrees": true,
+          "modification": "CONTROL",
+          "primary_says": true,
+          "primary_violations": 0,
+          "realized_selection_is_Z11_invariant": true,
+          "violation_counts_agree": true,
+          "violations": 0
+        },
+        {
+          "added_gates_carry_the_anchor_station_mask_at_every_step": true,
+          "agrees": true,
+          "modification": "M_A",
+          "primary_says": false,
+          "primary_violations": 124,
+          "realized_selection_is_Z11_invariant": false,
+          "violation_counts_agree": true,
+          "violations": 124
+        },
+        {
+          "added_gates_carry_the_anchor_station_mask_at_every_step": true,
+          "agrees": true,
+          "modification": "M_B",
+          "primary_says": false,
+          "primary_violations": 78,
+          "realized_selection_is_Z11_invariant": false,
+          "violation_counts_agree": true,
+          "violations": 78
+        },
+        {
+          "added_gates_carry_the_anchor_station_mask_at_every_step": true,
+          "agrees": true,
+          "modification": "M_C",
+          "primary_says": true,
+          "primary_violations": 0,
+          "realized_selection_is_Z11_invariant": true,
+          "violation_counts_agree": true,
+          "violations": 0
+        }
+      ]
+    },
+    "K4_VERDICT_ATTACK": {
+      "certificate": "K4_VERDICT_ATTACK",
+      "hardcoded_verdict_ast_sweep": {
+        "dict_literals_mapping_a_candidate_to_a_verdict": [],
+        "functions_returning_a_verdict_string": [
+          "classify_candidate"
+        ]
+      },
+      "pass": true,
+      "rows": [
+        {
+          "agrees_on_both_routes": true,
+          "checker_verdict_from_the_checkers_own_numbers": "BORN-CAPABLE",
+          "checker_verdict_from_the_primarys_published_numbers": "BORN-CAPABLE",
+          "modification": "M_A",
+          "primary_verdict": "BORN-CAPABLE"
+        },
+        {
+          "agrees_on_both_routes": true,
+          "checker_verdict_from_the_checkers_own_numbers": "DESTRUCTIVE",
+          "checker_verdict_from_the_primarys_published_numbers": "DESTRUCTIVE",
+          "modification": "M_B",
+          "primary_verdict": "DESTRUCTIVE"
+        },
+        {
+          "agrees_on_both_routes": true,
+          "checker_verdict_from_the_checkers_own_numbers": "STERILE",
+          "checker_verdict_from_the_primarys_published_numbers": "STERILE",
+          "modification": "M_C",
+          "primary_verdict": "STERILE"
+        }
+      ]
+    },
+    "R_RECOMPUTATION": {
+      "certificate": "R_RECOMPUTATION",
+      "pass": true,
+      "per_modification": {
+        "CONTROL": {
+          "ast_cross_lane": {
+            "cross_lane_operator_sites": 0,
+            "kinds": [],
+            "lane_local": true
+          },
+          "ast_lane_locality_agrees": true,
+          "branch_pairs": [],
+          "branch_pairs_agree": true,
+          "candidate_pairs": 39,
+          "dependence_agrees": true,
+          "dependence_primary": {
+            "determining_single_wires": [
+              1,
+              6
+            ],
+            "endpoint_wires_only": true,
+            "nn_ordinals": false,
+            "nn_record_content": false,
+            "setup_parity": true
+          },
+          "dependence_recomputed": {
+            "determining_single_wires": [
+              1,
+              6
+            ],
+            "endpoint_wires_only": true,
+            "nn_ordinals": false,
+            "nn_record_content": false,
+            "setup_parity": true
+          },
+          "duplicate_lane_mismatches": 0,
+          "dynamical_agrees": true,
+          "dynamical_branch_pairs": 0,
+          "gate_total": 34166,
+          "layout_independent": true,
+          "literal_911_branch_matrix": {
+            "SETUP_DIFFERS_AT_TICK_0": 274210,
+            "SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY": 5168
+          },
+          "literal_911_branch_pairs_recomputed": 0,
+          "lock_points": 164,
+          "lock_points_agree": true,
+          "off_menu": 0,
+          "off_menu_agrees": true,
+          "primary_ast_lane_locality": true,
+          "primary_dynamical_branch_pairs": 0,
+          "primary_layout_independent": true,
+          "primary_literal_911_branch_pairs": 0,
+          "primary_lock_points": 164,
+          "primary_off_menu": 0,
+          "primary_runtime_lane_locality": true,
+          "primary_selection_dynamical_at": 0,
+          "primary_total_endpoint_writes": 0,
+          "primary_write_once_violations": 0,
+          "primary_z11_invariant": true,
+          "primary_z11_violations": 0,
+          "runtime_lane_locality": true,
+          "runtime_leak": [
+            0,
+            0
+          ],
+          "selection_dynamical_at": 0,
+          "total_endpoint_writes": 0,
+          "write_counts_agree": true,
+          "write_once_by_event_uniqueness": {
+            "gapped_ordinal_sequences": 0,
+            "non_monotone_ordinal_sequences": 0,
+            "repeated_examples": [],
+            "repeated_triples": 0,
+            "slot_write_triples": 92260,
+            "write_once_holds": true
+          },
+          "z11_agrees": true,
+          "z11_invariant": true,
+          "z11_violations": 0
+        },
+        "M_A": {
+          "ast_cross_lane": {
+            "cross_lane_operator_sites": 0,
+            "kinds": [],
+            "lane_local": true
+          },
+          "ast_lane_locality_agrees": true,
+          "branch_pairs": [
+            [
+              253,
+              407
+            ],
+            [
+              520,
+              630
+            ],
+            [
+              533,
+              643
+            ]
+          ],
+          "branch_pairs_agree": true,
+          "candidate_pairs": 27,
+          "dependence_agrees": true,
+          "dependence_primary": {
+            "determining_single_wires": [
+              1,
+              6
+            ],
+            "endpoint_wires_only": true,
+            "nn_ordinals": false,
+            "nn_record_content": false,
+            "setup_parity": false
+          },
+          "dependence_recomputed": {
+            "determining_single_wires": [
+              1,
+              6
+            ],
+            "endpoint_wires_only": true,
+            "nn_ordinals": false,
+            "nn_record_content": false,
+            "setup_parity": false
+          },
+          "duplicate_lane_mismatches": 0,
+          "dynamical_agrees": true,
+          "dynamical_branch_pairs": 3,
+          "gate_total": 34188,
+          "layout_independent": true,
+          "literal_911_branch_matrix": {
+            "SETUP_DIFFERS_AT_TICK_0": 274210,
+            "SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY": 5168
+          },
+          "literal_911_branch_pairs_recomputed": 0,
+          "lock_points": 134,
+          "lock_points_agree": true,
+          "off_menu": 0,
+          "off_menu_agrees": true,
+          "primary_ast_lane_locality": true,
+          "primary_dynamical_branch_pairs": 3,
+          "primary_layout_independent": true,
+          "primary_literal_911_branch_pairs": 0,
+          "primary_lock_points": 134,
+          "primary_off_menu": 0,
+          "primary_runtime_lane_locality": true,
+          "primary_selection_dynamical_at": 37,
+          "primary_total_endpoint_writes": 38736016,
+          "primary_write_once_violations": 0,
+          "primary_z11_invariant": false,
+          "primary_z11_violations": 124,
+          "runtime_lane_locality": true,
+          "runtime_leak": [
+            0,
+            0
+          ],
+          "selection_dynamical_at": 37,
+          "total_endpoint_writes": 38736016,
+          "write_counts_agree": true,
+          "write_once_by_event_uniqueness": {
+            "gapped_ordinal_sequences": 0,
+            "non_monotone_ordinal_sequences": 0,
+            "repeated_examples": [],
+            "repeated_triples": 0,
+            "slot_write_triples": 89864,
+            "write_once_holds": true
+          },
+          "z11_agrees": true,
+          "z11_invariant": false,
+          "z11_violations": 124
+        },
+        "M_B": {
+          "ast_cross_lane": {
+            "cross_lane_operator_sites": 22,
+            "kinds": [
+              "RShift"
+            ],
+            "lane_local": false
+          },
+          "ast_lane_locality_agrees": true,
+          "branch_pairs": [
+            [
+              514,
+              624
+            ],
+            [
+              580,
+              690
+            ]
+          ],
+          "branch_pairs_agree": true,
+          "candidate_pairs": 17,
+          "dependence_agrees": true,
+          "dependence_primary": {
+            "determining_single_wires": [
+              1,
+              6
+            ],
+            "endpoint_wires_only": true,
+            "nn_ordinals": false,
+            "nn_record_content": false,
+            "setup_parity": false
+          },
+          "dependence_recomputed": {
+            "determining_single_wires": [
+              1,
+              6
+            ],
+            "endpoint_wires_only": true,
+            "nn_ordinals": false,
+            "nn_record_content": false,
+            "setup_parity": false
+          },
+          "duplicate_lane_mismatches": 2,
+          "dynamical_agrees": true,
+          "dynamical_branch_pairs": 2,
+          "gate_total": 34188,
+          "layout_independent": false,
+          "literal_911_branch_matrix": {
+            "SETUP_DIFFERS_AT_TICK_0": 274210,
+            "SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY": 5168
+          },
+          "literal_911_branch_pairs_recomputed": 0,
+          "lock_points": 142,
+          "lock_points_agree": true,
+          "off_menu": 0,
+          "off_menu_agrees": true,
+          "primary_ast_lane_locality": false,
+          "primary_dynamical_branch_pairs": 2,
+          "primary_layout_independent": false,
+          "primary_literal_911_branch_pairs": 0,
+          "primary_lock_points": 142,
+          "primary_off_menu": 0,
+          "primary_runtime_lane_locality": false,
+          "primary_selection_dynamical_at": 29,
+          "primary_total_endpoint_writes": 32486656,
+          "primary_write_once_violations": 0,
+          "primary_z11_invariant": false,
+          "primary_z11_violations": 78,
+          "runtime_lane_locality": false,
+          "runtime_leak": [
+            600,
+            0
+          ],
+          "selection_dynamical_at": 29,
+          "total_endpoint_writes": 32486656,
+          "write_counts_agree": true,
+          "write_once_by_event_uniqueness": {
+            "gapped_ordinal_sequences": 0,
+            "non_monotone_ordinal_sequences": 0,
+            "repeated_examples": [],
+            "repeated_triples": 0,
+            "slot_write_triples": 95146,
+            "write_once_holds": true
+          },
+          "z11_agrees": true,
+          "z11_invariant": false,
+          "z11_violations": 78
+        },
+        "M_C": {
+          "ast_cross_lane": {
+            "cross_lane_operator_sites": 0,
+            "kinds": [],
+            "lane_local": true
+          },
+          "ast_lane_locality_agrees": true,
+          "branch_pairs": [],
+          "branch_pairs_agree": true,
+          "candidate_pairs": 33,
+          "dependence_agrees": true,
+          "dependence_primary": {
+            "determining_single_wires": [
+              1,
+              6
+            ],
+            "endpoint_wires_only": true,
+            "nn_ordinals": false,
+            "nn_record_content": false,
+            "setup_parity": true
+          },
+          "dependence_recomputed": {
+            "determining_single_wires": [
+              1,
+              6
+            ],
+            "endpoint_wires_only": true,
+            "nn_ordinals": false,
+            "nn_record_content": false,
+            "setup_parity": true
+          },
+          "duplicate_lane_mismatches": 0,
+          "dynamical_agrees": true,
+          "dynamical_branch_pairs": 0,
+          "gate_total": 34188,
+          "layout_independent": true,
+          "literal_911_branch_matrix": {
+            "SETUP_DIFFERS_AT_TICK_0": 274210,
+            "SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY": 5168
+          },
+          "literal_911_branch_pairs_recomputed": 0,
+          "lock_points": 154,
+          "lock_points_agree": true,
+          "off_menu": 0,
+          "off_menu_agrees": true,
+          "primary_ast_lane_locality": true,
+          "primary_dynamical_branch_pairs": 0,
+          "primary_layout_independent": true,
+          "primary_literal_911_branch_pairs": 0,
+          "primary_lock_points": 154,
+          "primary_off_menu": 0,
+          "primary_runtime_lane_locality": true,
+          "primary_selection_dynamical_at": 0,
+          "primary_total_endpoint_writes": 18647166,
+          "primary_write_once_violations": 0,
+          "primary_z11_invariant": true,
+          "primary_z11_violations": 0,
+          "runtime_lane_locality": true,
+          "runtime_leak": [
+            0,
+            0
+          ],
+          "selection_dynamical_at": 0,
+          "total_endpoint_writes": 18647166,
+          "write_counts_agree": true,
+          "write_once_by_event_uniqueness": {
+            "gapped_ordinal_sequences": 0,
+            "non_monotone_ordinal_sequences": 0,
+            "repeated_examples": [],
+            "repeated_triples": 0,
+            "slot_write_triples": 90924,
+            "write_once_holds": true
+          },
+          "z11_agrees": true,
+          "z11_invariant": true,
+          "z11_violations": 0
+        }
+      },
+      "planted_modification_rerun": {
+        "agrees": true,
+        "dynamical_branch_pairs_found": 1,
+        "off_menu": 0,
+        "pairs": [
+          [
+            3,
+            91
+          ]
+        ],
+        "primary_example_pairs": [
+          [
+            3,
+            91
+          ]
+        ],
+        "primary_found": 1,
+        "reconstructed_lane": 91,
+        "reconstructed_partner": 3,
+        "reconstructed_source": "M_A",
+        "runtime_sec": 34.262,
+        "the_planted_pair_is_among_the_splits": true
+      }
+    }
+  },
+  "checks": [
+    {
+      "check": "the_primary_declares_exactly_the_four_candidates_reconstructed_here",
+      "detail": {
+        "declared": [
+          "CONTROL",
+          "M_A",
+          "M_B",
+          "M_C"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "design_rows_reconstruct_CONTROL",
+      "detail": {
+        "receipt": []
+      },
+      "pass": true
+    },
+    {
+      "check": "design_rows_reconstruct_M_A",
+      "detail": {
+        "receipt": [
+          {
+            "input_wires": [
+              123
+            ],
+            "kind": "CNOT",
+            "target_wire": 1,
+            "text": "c[1] ^= c[123] & <mask>"
+          },
+          {
+            "input_wires": [
+              123
+            ],
+            "kind": "CNOT",
+            "target_wire": 6,
+            "text": "c[6] ^= c[123] & <mask>"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "design_rows_reconstruct_M_B",
+      "detail": {
+        "receipt": [
+          {
+            "input_wires": [
+              1
+            ],
+            "kind": "SHIFT_CNOT",
+            "target_wire": 1,
+            "text": "c[1] ^= (c[1] >> 1) & <mask>"
+          },
+          {
+            "input_wires": [
+              6
+            ],
+            "kind": "SHIFT_CNOT",
+            "target_wire": 6,
+            "text": "c[6] ^= (c[6] >> 1) & <mask>"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "design_rows_reconstruct_M_C",
+      "detail": {
+        "receipt": [
+          {
+            "input_wires": [
+              123,
+              254
+            ],
+            "kind": "TOF",
+            "target_wire": 1,
+            "text": "c[1] ^= c[123] & c[254] & <mask>"
+          },
+          {
+            "input_wires": [
+              123,
+              254
+            ],
+            "kind": "TOF",
+            "target_wire": 6,
+            "text": "c[6] ^= c[123] & c[254] & <mask>"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "empty_splice_is_the_pinned_compiler_itself",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "control_gate_total_matches_the_pinned_913_lemma",
+      "detail": {
+        "mine": 34166
+      },
+      "pass": true
+    },
+    {
+      "check": "control_endpoint_is_read_never_written",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "splice_reproduces_every_gate_total_the_primary_reports",
+      "detail": [
+        {
+          "LEFT_target": false,
+          "RIGHT_target": false,
+          "gates": 34166,
+          "gates_agree": true,
+          "modification": "CONTROL",
+          "primary_LEFT_target": false,
+          "primary_RIGHT_target": false,
+          "primary_gates": 34166,
+          "primary_reads_never_writes": true,
+          "reads_never_writes": true,
+          "target_claims_agree": true
+        },
+        {
+          "LEFT_target": true,
+          "RIGHT_target": true,
+          "gates": 34188,
+          "gates_agree": true,
+          "modification": "M_A",
+          "primary_LEFT_target": true,
+          "primary_RIGHT_target": true,
+          "primary_gates": 34188,
+          "primary_reads_never_writes": false,
+          "reads_never_writes": false,
+          "target_claims_agree": true
+        },
+        {
+          "LEFT_target": true,
+          "RIGHT_target": true,
+          "gates": 34188,
+          "gates_agree": true,
+          "modification": "M_B",
+          "primary_LEFT_target": true,
+          "primary_RIGHT_target": true,
+          "primary_gates": 34188,
+          "primary_reads_never_writes": false,
+          "reads_never_writes": false,
+          "target_claims_agree": true
+        },
+        {
+          "LEFT_target": true,
+          "RIGHT_target": true,
+          "gates": 34188,
+          "gates_agree": true,
+          "modification": "M_C",
+          "primary_LEFT_target": true,
+          "primary_RIGHT_target": true,
+          "primary_gates": 34188,
+          "primary_reads_never_writes": false,
+          "reads_never_writes": false,
+          "target_claims_agree": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "check": "splice_reproduces_every_target_claim_the_primary_reports",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "own_control_build_matches_the_pinned_913_forward_digest",
+      "detail": {
+        "mine": "e8456a8f68d7ac3fa68e8e044adf1151717bc58ecd574c2bc74d1e64f2b4896d"
+      },
+      "pass": true
+    },
+    {
+      "check": "own_control_reversed_build_matches_the_pinned_913_reverse_digest",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "own_control_lock_set_matches_the_pinned_911_set",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "own_control_event_cardinality_matches_878",
+      "detail": {
+        "mine": 92260
+      },
+      "pass": true
+    },
+    {
+      "check": "own_monitor_phase_action_is_a_census_bijection",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "own_monitor_phase_action_has_order_11",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "every_lock_point_count_reproduces",
+      "detail": {
+        "CONTROL": [
+          164,
+          164
+        ],
+        "M_A": [
+          134,
+          134
+        ],
+        "M_B": [
+          142,
+          142
+        ],
+        "M_C": [
+          154,
+          154
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "every_endpoint_write_count_reproduces",
+      "detail": {
+        "CONTROL": [
+          0,
+          0
+        ],
+        "M_A": [
+          38736016,
+          38736016
+        ],
+        "M_B": [
+          32486656,
+          32486656
+        ],
+        "M_C": [
+          18647166,
+          18647166
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "every_dynamical_selection_count_reproduces",
+      "detail": {
+        "CONTROL": [
+          0,
+          0
+        ],
+        "M_A": [
+          37,
+          37
+        ],
+        "M_B": [
+          29,
+          29
+        ],
+        "M_C": [
+          0,
+          0
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "every_dynamical_branch_pair_count_reproduces",
+      "detail": {
+        "CONTROL": [
+          0,
+          0
+        ],
+        "M_A": [
+          3,
+          3
+        ],
+        "M_B": [
+          2,
+          2
+        ],
+        "M_C": [
+          0,
+          0
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "every_off_menu_count_reproduces",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "every_layout_independence_claim_reproduces",
+      "detail": {
+        "CONTROL": [
+          true,
+          true
+        ],
+        "M_A": [
+          true,
+          true
+        ],
+        "M_B": [
+          false,
+          false
+        ],
+        "M_C": [
+          true,
+          true
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "the_913_dependence_analysis_reproduces_on_every_modification",
+      "detail": {
+        "CONTROL": {
+          "determining_single_wires": [
+            1,
+            6
+          ],
+          "endpoint_wires_only": true,
+          "nn_ordinals": false,
+          "nn_record_content": false,
+          "setup_parity": true
+        },
+        "M_A": {
+          "determining_single_wires": [
+            1,
+            6
+          ],
+          "endpoint_wires_only": true,
+          "nn_ordinals": false,
+          "nn_record_content": false,
+          "setup_parity": false
+        },
+        "M_B": {
+          "determining_single_wires": [
+            1,
+            6
+          ],
+          "endpoint_wires_only": true,
+          "nn_ordinals": false,
+          "nn_record_content": false,
+          "setup_parity": false
+        },
+        "M_C": {
+          "determining_single_wires": [
+            1,
+            6
+          ],
+          "endpoint_wires_only": true,
+          "nn_ordinals": false,
+          "nn_record_content": false,
+          "setup_parity": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "the_911_literal_branch_matrix_reproduces_and_is_empty_everywhere",
+      "detail": {
+        "CONTROL": {
+          "SETUP_DIFFERS_AT_TICK_0": 274210,
+          "SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY": 5168
+        },
+        "M_A": {
+          "SETUP_DIFFERS_AT_TICK_0": 274210,
+          "SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY": 5168
+        },
+        "M_B": {
+          "SETUP_DIFFERS_AT_TICK_0": 274210,
+          "SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY": 5168
+        },
+        "M_C": {
+          "SETUP_DIFFERS_AT_TICK_0": 274210,
+          "SETUP_DIFFERS_IN_SCAN_SCHEDULE_ONLY": 5168
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "every_cross_lane_certification_reproduces",
+      "detail": {
+        "CONTROL": {
+          "cross_lane_operator_sites": 0,
+          "kinds": [],
+          "lane_local": true
+        },
+        "M_A": {
+          "cross_lane_operator_sites": 0,
+          "kinds": [],
+          "lane_local": true
+        },
+        "M_B": {
+          "cross_lane_operator_sites": 22,
+          "kinds": [
+            "RShift"
+          ],
+          "lane_local": false
+        },
+        "M_C": {
+          "cross_lane_operator_sites": 0,
+          "kinds": [],
+          "lane_local": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "every_runtime_lane_locality_claim_reproduces",
+      "detail": {
+        "CONTROL": [
+          [
+            0,
+            0
+          ],
+          true
+        ],
+        "M_A": [
+          [
+            0,
+            0
+          ],
+          true
+        ],
+        "M_B": [
+          [
+            600,
+            0
+          ],
+          false
+        ],
+        "M_C": [
+          [
+            0,
+            0
+          ],
+          true
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "the_primarys_inherited_record_slots_are_still_dead_and_safe_under_every_modification",
+      "detail": [
+        {
+          "control_slots_still_dead": true,
+          "control_slots_still_safe": true,
+          "dead_count": 5668,
+          "modification": "CONTROL",
+          "safe_count": 5270,
+          "slot_map_would_be_identical": true
+        },
+        {
+          "control_dead_count": 5668,
+          "control_safe_count": 5270,
+          "control_slots_still_dead": true,
+          "control_slots_still_safe": true,
+          "dead_count": 5668,
+          "modification": "M_A",
+          "safe_count": 5270,
+          "slot_map_would_be_identical": true,
+          "slots_that_stopped_being_dead": []
+        },
+        {
+          "control_dead_count": 5668,
+          "control_safe_count": 5270,
+          "control_slots_still_dead": true,
+          "control_slots_still_safe": true,
+          "dead_count": 5668,
+          "modification": "M_B",
+          "safe_count": 5270,
+          "slot_map_would_be_identical": true,
+          "slots_that_stopped_being_dead": []
+        },
+        {
+          "control_dead_count": 5668,
+          "control_safe_count": 5270,
+          "control_slots_still_dead": true,
+          "control_slots_still_safe": true,
+          "dead_count": 5668,
+          "modification": "M_C",
+          "safe_count": 5270,
+          "slot_map_would_be_identical": true,
+          "slots_that_stopped_being_dead": []
+        }
+      ],
+      "pass": true
+    },
+    {
+      "check": "write_once_holds_by_the_independent_event_uniqueness_route",
+      "detail": {
+        "CONTROL": {
+          "gapped_ordinal_sequences": 0,
+          "non_monotone_ordinal_sequences": 0,
+          "repeated_examples": [],
+          "repeated_triples": 0,
+          "slot_write_triples": 92260,
+          "write_once_holds": true
+        },
+        "M_A": {
+          "gapped_ordinal_sequences": 0,
+          "non_monotone_ordinal_sequences": 0,
+          "repeated_examples": [],
+          "repeated_triples": 0,
+          "slot_write_triples": 89864,
+          "write_once_holds": true
+        },
+        "M_B": {
+          "gapped_ordinal_sequences": 0,
+          "non_monotone_ordinal_sequences": 0,
+          "repeated_examples": [],
+          "repeated_triples": 0,
+          "slot_write_triples": 95146,
+          "write_once_holds": true
+        },
+        "M_C": {
+          "gapped_ordinal_sequences": 0,
+          "non_monotone_ordinal_sequences": 0,
+          "repeated_examples": [],
+          "repeated_triples": 0,
+          "slot_write_triples": 90924,
+          "write_once_holds": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "the_primary_reported_zero_write_once_violations_and_this_route_agrees",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "every_Z11_invariance_claim_reproduces",
+      "detail": [
+        {
+          "added_gates_carry_the_anchor_station_mask_at_every_step": true,
+          "agrees": true,
+          "modification": "CONTROL",
+          "primary_says": true,
+          "primary_violations": 0,
+          "realized_selection_is_Z11_invariant": true,
+          "violation_counts_agree": true,
+          "violations": 0
+        },
+        {
+          "added_gates_carry_the_anchor_station_mask_at_every_step": true,
+          "agrees": true,
+          "modification": "M_A",
+          "primary_says": false,
+          "primary_violations": 124,
+          "realized_selection_is_Z11_invariant": false,
+          "violation_counts_agree": true,
+          "violations": 124
+        },
+        {
+          "added_gates_carry_the_anchor_station_mask_at_every_step": true,
+          "agrees": true,
+          "modification": "M_B",
+          "primary_says": false,
+          "primary_violations": 78,
+          "realized_selection_is_Z11_invariant": false,
+          "violation_counts_agree": true,
+          "violations": 78
+        },
+        {
+          "added_gates_carry_the_anchor_station_mask_at_every_step": true,
+          "agrees": true,
+          "modification": "M_C",
+          "primary_says": true,
+          "primary_violations": 0,
+          "realized_selection_is_Z11_invariant": true,
+          "violation_counts_agree": true,
+          "violations": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "check": "every_Z11_violation_count_reproduces",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "the_added_law_carries_the_anchor_stations_own_mask_everywhere",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "check": "every_verdict_survives_both_independent_routes",
+      "detail": [
+        {
+          "agrees_on_both_routes": true,
+          "checker_verdict_from_the_checkers_own_numbers": "BORN-CAPABLE",
+          "checker_verdict_from_the_primarys_published_numbers": "BORN-CAPABLE",
+          "modification": "M_A",
+          "primary_verdict": "BORN-CAPABLE"
+        },
+        {
+          "agrees_on_both_routes": true,
+          "checker_verdict_from_the_checkers_own_numbers": "DESTRUCTIVE",
+          "checker_verdict_from_the_primarys_published_numbers": "DESTRUCTIVE",
+          "modification": "M_B",
+          "primary_verdict": "DESTRUCTIVE"
+        },
+        {
+          "agrees_on_both_routes": true,
+          "checker_verdict_from_the_checkers_own_numbers": "STERILE",
+          "checker_verdict_from_the_primarys_published_numbers": "STERILE",
+          "modification": "M_C",
+          "primary_verdict": "STERILE"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "check": "no_verdict_string_is_assigned_to_a_candidate_by_name_in_the_primary",
+      "detail": {
+        "sites": []
+      },
+      "pass": true
+    },
+    {
+      "check": "verdict_strings_are_returned_only_by_the_declared_classifier",
+      "detail": {
+        "functions": [
+          "classify_candidate"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "the_primarys_planted_modification_reconstructs_and_reproduces",
+      "detail": {
+        "agrees": true,
+        "dynamical_branch_pairs_found": 1,
+        "off_menu": 0,
+        "pairs": [
+          [
+            3,
+            91
+          ]
+        ],
+        "primary_example_pairs": [
+          [
+            3,
+            91
+          ]
+        ],
+        "primary_found": 1,
+        "reconstructed_lane": 91,
+        "reconstructed_partner": 3,
+        "reconstructed_source": "M_A",
+        "runtime_sec": 34.262,
+        "the_planted_pair_is_among_the_splits": true
+      },
+      "pass": true
+    },
+    {
+      "check": "the_primarys_plant_detector_matched_its_own_ground_truth",
+      "detail": {
+        "receipt": true
+      },
+      "pass": true
+    },
+    {
+      "check": "the_primarys_published_lock_tables_hold_exactly_the_worlds_this_runner_locked",
+      "detail": {
+        "symmetric_difference": {
+          "CONTROL": [],
+          "M_A": [],
+          "M_B": [],
+          "M_C": []
+        }
+      },
+      "pass": true
+    }
+  ],
+  "checks_passed": 38,
+  "checks_total": 38,
+  "claim_type": "independent_check",
+  "cycles": [
+    918
+  ],
+  "exit_code_policy": "this runner exits 0 whether or not the primary survives; the verdict above is the finding.",
+  "failed_checks": [],
+  "provenance": {
+    "consts_878": {
+      "DEAD_CHUNK_ORBITS": 512,
+      "DEAD_ORBIT_ORBITS": 4096,
+      "REGISTER_CAP": 64
+    },
+    "lifted_863": [
+      "pairwise_separated",
+      "derive_event_seeds",
+      "derive_census",
+      "watched_registers",
+      "dirty_partition",
+      "synchronous_word",
+      "build_initial_states",
+      "pack_lanes",
+      "compile_masked_gate",
+      "masked_h_schedules",
+      "compile_fast",
+      "mask_over",
+      "lanes_of",
+      "lane_state"
+    ],
+    "lifted_878": [
+      "dead_wire_rig"
+    ],
+    "lifted_911": [
+      "classify_pair"
+    ],
+    "lifted_913": [
+      "endpoint_wires",
+      "read_state_direction",
+      "is_function",
+      "ladder_rows",
+      "exhaustive_singleton_sweep"
+    ],
+    "single_disclosed_import": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+  }
+}

@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle918_writable_independent_check_2026_07_28.py
+runner_sha256: 4244a7ca72549f0930d4ed1be97dec83adaca8cc1e4ccd0ed9ed74be9bb7bdec
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 385.656
+status: ok
+----- stdout -----
+CYCLE 918 INDEPENDENT CHECK -- SPECIFIED TO REFUTE
+==============================================================================
+A_PINS  PASS  (12 pinned, firewall hits 0)
+
+K1  THE SPLICE  (pinned compiler output + offset splice; never a rebuild)
+    CONTROL   gates  34166 (primary  34166) agree=True  LEFT/RIGHT targets False/False agree=True
+    M_A       gates  34188 (primary  34188) agree=True  LEFT/RIGHT targets True/True agree=True
+    M_B       gates  34188 (primary  34188) agree=True  LEFT/RIGHT targets True/True agree=True
+    M_C       gates  34188 (primary  34188) agree=True  LEFT/RIGHT targets True/True agree=True
+
+R   RECOMPUTATION  (own scan, own counters, own pair detector)
+    cand       locks  ep-writes  sel!=setup  offmenu  dynbr    Z11  layout
+    CONTROL      164          0           0        0      0   True    True
+    M_A          134   38736016          37        0      3  False    True
+    M_B          142   32486656          29        0      2  False   False
+    M_C          154   18647166           0        0      0   True    True
+
+    dependence re-analysis (AST-lifted Cycle-913 ladder, own rows)
+    CONTROL   setup-parity=True  nn-content=False nn-ordinals=False endpoint-only=True  determining=[1, 6]  agrees=True   911 branch pairs=0
+    M_A       setup-parity=False nn-content=False nn-ordinals=False endpoint-only=True  determining=[1, 6]  agrees=True   911 branch pairs=0
+    M_B       setup-parity=False nn-content=False nn-ordinals=False endpoint-only=True  determining=[1, 6]  agrees=True   911 branch pairs=0
+    M_C       setup-parity=True  nn-content=False nn-ordinals=False endpoint-only=True  determining=[1, 6]  agrees=True   911 branch pairs=0
+
+    planted modification reconstructed: {'reconstructed_source': 'M_A', 'reconstructed_lane': 91, 'reconstructed_partner': 3, 'runtime_sec': 34.262, 'dynamical_branch_pairs_found': 1, 'primary_found': 1, 'pairs': [[3, 91]], 'primary_example_pairs': [[3, 91]], 'the_planted_pair_is_among_the_splits': True, 'off_menu': 0, 'agrees': True}
+
+K2  RECORD MACHINERY  (rig re-derived UNDER each modification)
+    CONTROL   dead  5668 safe  5270  control slots still dead=True safe=True
+    M_A       dead  5668 safe  5270  control slots still dead=True safe=True
+    M_B       dead  5668 safe  5270  control slots still dead=True safe=True
+    M_C       dead  5668 safe  5270  control slots still dead=True safe=True
+
+K3  COVARIANCE
+    CONTROL   anchor-mask covariance=True  Z11 invariant=True (primary True) violations=0/0 agree=True
+    M_A       anchor-mask covariance=True  Z11 invariant=False (primary False) violations=124/124 agree=True
+    M_B       anchor-mask covariance=True  Z11 invariant=False (primary False) violations=78/78 agree=True
+    M_C       anchor-mask covariance=True  Z11 invariant=True (primary True) violations=0/0 agree=True
+
+K4  VERDICTS
+    M_A       primary=BORN-CAPABLE   from-receipt=BORN-CAPABLE   from-own=BORN-CAPABLE   agree=True
+    M_B       primary=DESTRUCTIVE    from-receipt=DESTRUCTIVE    from-own=DESTRUCTIVE    agree=True
+    M_C       primary=STERILE        from-receipt=STERILE        from-own=STERILE        agree=True
+    hardcoded-verdict AST sweep: functions returning a verdict string = ['classify_candidate']; candidate-keyed literals = []
+
+CHECKS  38/38 pass
+
+G_TEETH  PASS  (8 teeth)
+    [x] tampered_pin_detected
+    [x] dropped_modification_detected
+    [x] hardcoded_verdict_detected
+    [x] leaked_born_capable_detected
+    [x] skipped_world_detected
+    [x] planted_branch_blindness_detected
+    [x] planted_write_once_breach_detected
+    [x] planted_dead_slot_corruption_detected
+
+I_RUNTIME  385.199s / 900s
+==============================================================================
+VERDICT: PRIMARY_SURVIVES_THIS_CHECK
+receipt: outputs/writable_independent_check_cycle918_receipt_2026_07_28.json

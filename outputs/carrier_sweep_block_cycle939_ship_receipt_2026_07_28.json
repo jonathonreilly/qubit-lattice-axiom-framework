@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the mandatory prior-art sweep ran FIRST and dominates; five checker attacks against the committed first draft repaired on record; one checker refutation STANDS and is carried in the verdict (the gauge scope)",
+  "block": "toe-time-blockAC4-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 0.84s; 26/26; digest stable across primary re-runs",
+    "primary": "exit 0, 6.3s; 50/50; 938's digest + D3 reproduced and the no-go PASS=128 before any new analysis (ledger symlink disclosed); deterministic double-run; digest-recomputability fixed on record (C5)"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 4th AC-family PR: retires the vacuous piece of the lane's sharpest wall with a moving-control gauge theorem, exhibits the joint consumer that fixes the wall's exact content at its previously-named minimum, and narrows the open carrier content to a single named wiring gap; nothing corollary",
+  "cycles": [
+    939
+  ],
+  "files": {
+    "docs/CARRIER_SWEEP_MAP_GAUGE_WALL_NAMED_CYCLE939_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "c25f8825eab56f6bdb7cff90567d1fe183d3095e",
+      "sha256": "9c9c453ae3c30b84853c24dbc3a04c5e3d0512335cd37dca623b063a5d3b7a25"
+    },
+    "logs/runner-cache/frontier_cycle939_carrier_sweep_2026_07_28.txt": {
+      "git_blob": "64f1af35ec9bccef42e83c178b15bfd21519ffab",
+      "sha256": "428c032101ff7565548227c9122f129f2be6fa6d7e4dde5986e7b50410f9ee5e"
+    },
+    "logs/runner-cache/frontier_cycle939_carrier_sweep_independent_check_2026_07_28.txt": {
+      "git_blob": "9194499d4265a9c6d8ab61ebdcf924a5a084c66d",
+      "sha256": "0c38f88befe6d15c3202f6ea0d952caaabcecab2732e2bcba68e41efbd9916d2"
+    },
+    "outputs/carrier_sweep_cycle939_receipt_2026_07_28.json": {
+      "git_blob": "2474556802490722e32e218d691e0e4c1f456c5e",
+      "sha256": "da381c0eea3f164ddcc86a811ce2ba54cb8916d2a004b546b80a40aea9b28902"
+    },
+    "outputs/carrier_sweep_independent_check_cycle939_receipt_2026_07_28.json": {
+      "git_blob": "fed37dfa6c7b9282723967f0d5eaccd912668441",
+      "sha256": "862ae1ccb202073de2038b32b47655bf39e48cf8d7f967c1a335d75598846323"
+    },
+    "scripts/frontier_cycle939_carrier_sweep_2026_07_28.py": {
+      "git_blob": "6f5fb81a58205126c6058af84ee8f3b33e74dc36",
+      "sha256": "21954eaa543a9ab06949a3ba4b8c1dedc133ea810c087fb659aa12fd362483bd"
+    },
+    "scripts/frontier_cycle939_carrier_sweep_independent_check_2026_07_28.py": {
+      "git_blob": "b0a58a94a621d8017a900a1599bcf3a3b1ae292a",
+      "sha256": "efbbf91e753b2983ccb17dc307388c6d8faa01f8dc769ae4d73c7f7a02193868"
+    }
+  },
+  "headline": "THE SPACE GAP SPLITS THREE WAYS: the carrier MAP is GAUGE (all 11 corpus observables invariant under the full identification gauge group; the planted axis-indexed probe MOVES; prior art proved the same vacuity twice \u2014 species-bridge decomposition + invariant-ring sweep; SCOPED to this carrier pair by the standing checker refutation); the STRUCTURE-GROUP restriction is cheap content carrying THE O_h TRAP (commutant 3 -> 1 over all 48 signed permutations: a bare same-space assertion DESTROYS the delta dial \u2014 transport C3 only); the VALUE/TYPE assertion IS the wall and was ALREADY MINIMALLY NAMED 2026-06-11 (A_R-eta: |delta| IS the fixed-locus density identity-read in radians \u2014 ONE real parameter of load) with the JOINT CONSUMER exhibited (the 06-09 density-readout chain welding the carriers, its own bytes flagging 'supplied, not derived'); the genuinely open carrier content NARROWS to the WIRING GAP (the circulant note's generation space is a declared input with no dependency edge to the lattice-side chain deriving the same C3 action; the missing ingredient named by prior art: a momentum/spectral selection principle absent from the retained inventory); Cycle 901 does NOT decide it (two-sided; its re-binding de-licenses the lattice-normal-plane phrasing); 899 = the only proved isomorphism template; ROUTE 4 UNCHANGED; the alpha witness STRENGTHENED (defined after any identification \u2014 identifying selects nothing); two 938 corrections EXECUTED (the character pairing; the 901 re-binding); prior art: 49 byte-quotes, 46 dual-carrier docs, 4,003 swept, four head-on attempts never closed",
+  "independence": "checker 26/26; the gauge invariance reproduced in 40-digit exact charpoly arithmetic; the prior-art completeness attack added five entries; the checker's own substring-scan misfires disclosed and redesigned (the 934 lesson on the checker itself)",
+  "note": "docs/CARRIER_SWEEP_MAP_GAUGE_WALL_NAMED_CYCLE939_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 0.84,
+    "primary": 6.3
+  }
+}

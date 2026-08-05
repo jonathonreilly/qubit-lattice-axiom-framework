@@ -1048,3 +1048,38 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Local disposition: **pass** (bounded_theorem; audit pending).
 - Successor launched from the block's own opens: Cycle 921 (the
   loop-cost mechanism, blockM7).
+
+## Cycle 918 writable endpoint (blockQ11, PR #5987) — 2026-08-05
+
+- Supervisor review: the splice-only discipline (kernel never
+  edited; AST-verified); the control's digest-identity to the
+  pinned 913 build in BOTH layouts with the full 911/913/878
+  surface value-for-value; the three-axis design space with M_B's
+  outside-vocabulary status declared up front; the A3-arena
+  fractions carried as bookkeeping counts with every caveat.
+- Verdicts: M_A BORN-CAPABLE (the first three dynamical branch
+  pairs; priced by the Z11 loss and 32 unformed worlds); M_B
+  DESTRUCTIVE with the obstruction named (the neighbour is a
+  bookkeeping artefact); M_C STERILE with the mechanism measured
+  (even-parity cancellation).
+- The block's deepest result: the determinism lemma — the 911
+  branch class is empty for EVERY gate set as a census fact, so a
+  writable endpoint is necessary for realized selection but not
+  sufficient for O3; the obstruction relocates to "the law is a
+  function of (schedule, tick-0 state)". The successor's successor
+  is named against that wall. Selection still lives on wires [1,6]
+  (trajectory history, not neighbourhood).
+- Checker: PRIMARY_SURVIVES_THIS_CHECK on an independent splice
+  mechanism; 38/38, 8/8 teeth; the checker CLOSED the one gap it
+  found (the 878 dead-wire rig re-derived under each modification;
+  write-once re-derived without the primary's ledger).
+- OWNER SURFACE EMITTED (registration-shaped, no decision needed):
+  M_A meets constraints (a)/(b), fails (c) monitor-phase
+  covariance of realized selection — Born-capability under the
+  declared criteria with the (c) loss priced, not resolved.
+- Cluster-cap (10th Born-family PR): **OPEN**.
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 924 (the
+  occurrence-lane event-rate route + the alpha menu under the
+  priced bridge, blockAC1 — the retention map's highest-leverage
+  gap attacked through post-no-go surface).

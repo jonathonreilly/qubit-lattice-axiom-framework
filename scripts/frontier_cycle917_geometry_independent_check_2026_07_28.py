@@ -743,11 +743,15 @@ def main():
                           "loops": ST[g]["cyclomatic_number_loops"],
                           "certifies_up_to_lambda": boundary[g]["certifies_up_to"]}
                       for g in sorted(boundary)},
+            # non-decreasing: a strictly larger pointer degree never lowers the ceiling
             "monotone_in_pointer_degree": bool(all(
-                (ST[a]["pointer_degree"] <= ST[b]["pointer_degree"]) ==
-                ((boundary[a]["certifies_up_to"] or 0) <= (boundary[b]["certifies_up_to"] or 0))
+                (boundary[a]["certifies_up_to"] or 0) <= (boundary[b]["certifies_up_to"] or 0)
                 for a in boundary for b in boundary
-                if ST[a]["pointer_degree"] != ST[b]["pointer_degree"])),
+                if ST[a]["pointer_degree"] < ST[b]["pointer_degree"])),
+            "ceiling_by_degree_class": {
+                str(dg): sorted({boundary[g]["certifies_up_to"] for g in boundary
+                                 if ST[g]["pointer_degree"] == dg})
+                for dg in sorted({ST[g]["pointer_degree"] for g in boundary})},
             "reading": "the threshold is not a YES/NO cliff in geometry: it is a graded "
                        "CEILING on the transverse field, and that ceiling rises with the "
                        "pointer degree.  Loops do not move the ceiling (the degree-4 "
@@ -1020,9 +1024,11 @@ def main():
                              "certifies_up_to": boundary[g]["certifies_up_to"],
                              "bracket": boundary[g]["bracket"]} for g in sorted(boundary)},
                         sort_keys=True), BOUNDARY_LINE))
-    print("LAMBDA-CEILING monotone-in-pointer-degree=%s :: %s %s"
+    print("LAMBDA-CEILING non-decreasing-in-pointer-degree=%s by-degree-class=%s :: %s %s"
           % (threshold_attack["lambda_ceiling_vs_pointer_degree_NON_CLAIM"]
              ["monotone_in_pointer_degree"],
+             json.dumps(threshold_attack["lambda_ceiling_vs_pointer_degree_NON_CLAIM"]
+                        ["ceiling_by_degree_class"], sort_keys=True),
              threshold_attack["lambda_ceiling_vs_pointer_degree_NON_CLAIM"]["reading"],
              BOUNDARY_LINE))
     print("XI-REG-PROVENANCE definition-from=frozen-memo d1-note-has-formula=%s "

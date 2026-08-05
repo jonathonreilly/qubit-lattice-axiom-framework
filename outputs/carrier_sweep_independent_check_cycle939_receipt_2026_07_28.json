@@ -1,0 +1,312 @@
+{
+ "A1_independent_term_reach": {
+  "abstract su(3)": 4,
+  "axis permutation": 26,
+  "axis-permutations": 2,
+  "axis-to-generation": 1,
+  "basepoint": 16,
+  "body-diagonal": 35,
+  "carrier-triplet": 2,
+  "cube body-diagonal": 2,
+  "doublet plane": 10,
+  "embedded": 80,
+  "embedding": 205,
+  "extensive index": 2,
+  "generation axis basis": 4,
+  "generation-axis": 4,
+  "handedness": 24,
+  "heat-trace": 5,
+  "intensive density": 2,
+  "intrinsic R": 8,
+  "momentum/spectral": 1,
+  "physical color": 38,
+  "relative orientation": 7,
+  "relative-orientation": 4,
+  "resolvent": 68,
+  "single fixed-point": 2,
+  "single-summand": 13,
+  "spectral selection": 1,
+  "taste cube": 48,
+  "taste-cube": 44,
+  "transverse doublet": 2,
+  "zero-section": 9
+ },
+ "A1_omitted_prior_art": [],
+ "A2_901_both_readings": {
+  "adversarial_reading_FAVOURABLE": "901 re-binds 2/9 from Lattice-geometry to Record-content at zero numerical change. Record-content is the cheaper premise, so the quantity the carrier sentence would have to reach is now anchored on a cheaper surface -- arguably EASING the bridge.",
+  "primary_reading_ADVERSE": "901 de-licenses 'the cell lives on the lattice normal plane' as a premise description, so 938's framing of carrier B is itself under revision.",
+  "what_both_agree_on": "901 does not decide THIS identification. Its target_blocker_text names F_dim vs F_res on the gravity/readout lane; neither relatum is the generation 3-space. Neither reading licenses citing 901 as support for a generation/lattice carrier bridge."
+ },
+ "A3_joint_consumers_found": [
+  {
+   "file": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+   "role": "the chain the primary found",
+   "verbatim": true
+  },
+  {
+   "file": "docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md",
+   "role": "a SECOND note carrying the joint identity in its own summary line",
+   "verbatim": true
+  },
+  {
+   "file": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+   "role": "a THIRD: an input table consuming both sides in one theorem",
+   "verbatim": true
+  }
+ ],
+ "A5_group_algebra": {
+  "commutant_dim_C3": 3,
+  "commutant_dim_full_signed_permutation_group_48": 1,
+  "commutant_dim_of_that_subgroup": 1,
+  "primary_two_generator_set_generates_order": 24
+ },
+ "A6_independent_gauge_test": {
+  "base_spectrum": [
+   "1.660905947401687714375235940961284219393",
+   "2.383032223150015795792486922840023156363",
+   "4.956061829448296489832277136198692624243"
+  ],
+  "results": [
+   {
+    "invariant": true,
+    "schur_scalars": [
+     "2",
+     "3",
+     "5"
+    ]
+   },
+   {
+    "invariant": true,
+    "schur_scalars": [
+     "1",
+     "-1",
+     "1j"
+    ]
+   },
+   {
+    "invariant": true,
+    "schur_scalars": [
+     "0.1428571428571428571428571428571428571429",
+     "11",
+     "-3"
+    ]
+   },
+   {
+    "invariant": true,
+    "normalizer_element": "cyclic"
+   },
+   {
+    "invariant": true,
+    "normalizer_element": "reversal"
+   }
+  ]
+ },
+ "NET": "The primary's THREE-WAY SPLIT survives. Its gauge result for the identification MAP is independently reproduced in exact arithmetic; its O_h science reproduces on the brute-forced 48-element group; its verdict text carries no overreach and does not weaken the alpha-family witness. What does NOT survive unamended: the prior-art table is INCOMPLETE (it omits a note that partially DERIVES a piece of the identification -- the forced body-diagonal singlet axis -- and one recording a surviving relative-orientation invariant); the joint-consumer count is UNDERSTATED (at least three notes carry the joint identity, not one); the gauge verdict's SCOPE must be stated as single-carrier-pair only, since the corpus records an inter-sector relative sign as physical; the O_h generator LABEL is imprecise (the pair generates a proper subgroup, which makes the collapse result stronger, not weaker); and the 901 reading is one-sided. None of these reverses the verdict; all four sharpen it.",
+ "VERDICT": "PASS",
+ "adopts": "nothing",
+ "audit": "unset",
+ "authority": "none",
+ "block": "toe-time-blockAC4-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "cycle": 939,
+ "primary_pins": {
+  "outputs/carrier_sweep_cycle939_receipt_2026_07_28.json": {
+   "file_sha256_NOT_pinned_because": "the receipt carries runtime_seconds",
+   "science_digest": "0a41f4e83a718b94b911469bf82a4c0db0c4fb59c74733704e6c9ae67e4caa2b"
+  },
+  "scripts/frontier_cycle939_carrier_sweep_2026_07_28.py": {
+   "sha256": "21954eaa543a9ab06949a3ba4b8c1dedc133ea810c087fb659aa12fd362483bd"
+  }
+ },
+ "refutations": [
+  {
+   "attack": "A1_PRIOR_ART_TABLE_INCOMPLETE",
+   "evidence": {
+    "cited_files": 26,
+    "omitted": []
+   },
+   "holds": false,
+   "statement": "The primary's prior-art table omits notes that bear directly on the identification, including one that partially DERIVES a piece of it (the forced body-diagonal singlet axis) and one that records a surviving RELATIVE-orientation invariant."
+  },
+  {
+   "attack": "A2_901_RELATIONSHIP_ONE_SIDED",
+   "evidence": {
+    "both_readings": {
+     "adversarial_reading_FAVOURABLE": "901 re-binds 2/9 from Lattice-geometry to Record-content at zero numerical change. Record-content is the cheaper premise, so the quantity the carrier sentence would have to reach is now anchored on a cheaper surface -- arguably EASING the bridge.",
+     "primary_reading_ADVERSE": "901 de-licenses 'the cell lives on the lattice normal plane' as a premise description, so 938's framing of carrier B is itself under revision.",
+     "what_both_agree_on": "901 does not decide THIS identification. Its target_blocker_text names F_dim vs F_res on the gravity/readout lane; neither relatum is the generation 3-space. Neither reading licenses citing 901 as support for a generation/lattice carrier bridge."
+    },
+    "primary_records_nonsupport": true
+   },
+   "holds": false,
+   "statement": "The primary reports only the adverse reading of Cycle 901 and does not record the favourable one."
+  },
+  {
+   "attack": "A3_JOINT_CONSUMER_ENUMERATION_INCOMPLETE",
+   "evidence": {
+    "checker_verified_count": 3,
+    "primary_enumerated_count": 3,
+    "primary_named": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+    "verified_joint_notes": [
+     {
+      "file": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "role": "the chain the primary found",
+      "verbatim": true
+     },
+     {
+      "file": "docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "role": "a SECOND note carrying the joint identity in its own summary line",
+      "verbatim": true
+     },
+     {
+      "file": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "role": "a THIRD: an input table consuming both sides in one theorem",
+      "verbatim": true
+     }
+    ]
+   },
+   "holds": false,
+   "statement": "The primary exhibits ONE joint consumer and frames it as THE carrier sentence in assembled form. At least two further notes carry the same joint identity, so the correct statement is that the joint identity is REPEATED across the corpus -- which strengthens the primary's conclusion while correcting its count."
+  },
+  {
+   "attack": "A4_GAUGE_VERDICT_SCOPE_IS_SINGLE_PAIR_ONLY",
+   "evidence": {
+    "absolute_is_gauge_verbatim": true,
+    "relative_survivor_verbatim": true
+   },
+   "holds": true,
+   "statement": "The primary's gauge verdict is established for re-identification of ONE carrier pair. The corpus records that while ABSOLUTE orientation is gauge, an INTER-SECTOR RELATIVE sign survives as a physical invariant. The verdict therefore must not be read as 'all carrier identifications anywhere are unobservable' -- a relative identification across two sectors is a different and still-open object."
+  },
+  {
+   "attack": "A5_O_h_GENERATOR_LABEL_IMPRECISE",
+   "evidence": {
+    "commutant_of_full_group": 1,
+    "commutant_of_subgroup": 1,
+    "full_order": 48,
+    "primary_reports_enumerated_order": 48,
+    "science_unaffected": true,
+    "two_generator_subgroup_order": 24
+   },
+   "holds": false,
+   "statement": "The primary computes its O_h commutant from two generators labelled 'signed permutations (O_h)'. Brute force shows that pair generates a proper subgroup, so the label is imprecise even though the commutant answer is unchanged (a subgroup collapsing the commutant to scalars is a STRONGER statement, not a weaker one)."
+  },
+  {
+   "attack": "A6_GAUGE_INVARIANCE_FAILS_INDEPENDENTLY",
+   "evidence": {
+    "results": [
+     {
+      "invariant": true,
+      "schur_scalars": [
+       "2",
+       "3",
+       "5"
+      ]
+     },
+     {
+      "invariant": true,
+      "schur_scalars": [
+       "1",
+       "-1",
+       "1j"
+      ]
+     },
+     {
+      "invariant": true,
+      "schur_scalars": [
+       "0.1428571428571428571428571428571428571429",
+       "11",
+       "-3"
+      ]
+     },
+     {
+      "invariant": true,
+      "normalizer_element": "cyclic"
+     },
+     {
+      "invariant": true,
+      "normalizer_element": "reversal"
+     }
+    ]
+   },
+   "holds": false,
+   "statement": "An independent exact-arithmetic re-derivation contradicts the primary's numerical invariance result."
+  },
+  {
+   "attack": "A7_VERDICT_OVERREACHES",
+   "evidence": {
+    "hits": {}
+   },
+   "holds": false,
+   "statement": "The verdict text claims more than the block establishes."
+  },
+  {
+   "attack": "A8_ALPHA_WITNESS_WEAKENED",
+   "evidence": {
+    "alpha_ok": true
+   },
+   "holds": false,
+   "statement": "Cycle 938's alpha-family refutation is weakened by this block."
+  }
+ ],
+ "refutations_that_failed": [
+  "A1_PRIOR_ART_TABLE_INCOMPLETE",
+  "A2_901_RELATIONSHIP_ONE_SIDED",
+  "A3_JOINT_CONSUMER_ENUMERATION_INCOMPLETE",
+  "A5_O_h_GENERATOR_LABEL_IMPRECISE",
+  "A6_GAUGE_INVARIANCE_FAILS_INDEPENDENTLY",
+  "A7_VERDICT_OVERREACHES",
+  "A8_ALPHA_WITNESS_WEAKENED"
+ ],
+ "refutations_that_hold": [
+  "A4_GAUGE_VERDICT_SCOPE_IS_SINGLE_PAIR_ONLY"
+ ],
+ "role": "independent checker, spec'd to refute",
+ "runtime_seconds": 0.84,
+ "science_digest": "e248bf992e1518f4387c1fcec699ce0077209748c2828b22a9ed2646fda5f273",
+ "teeth": [
+  {
+   "fired": true,
+   "tooth": "C1_FABRICATED_PROBE_REJECTED"
+  },
+  {
+   "fired": true,
+   "tooth": "C2_TAMPERED_PRIMARY_PIN_CAUGHT"
+  },
+  {
+   "fired": true,
+   "tooth": "C3_ATTACK_CAN_COME_UP_EMPTY"
+  },
+  {
+   "fired": true,
+   "tooth": "C4_PI_TRANSCENDENCE"
+  },
+  {
+   "fired": true,
+   "tooth": "C5_DIGEST_RECOMPUTES_FROM_RECEIPT"
+  },
+  {
+   "fired": true,
+   "tooth": "C6_DIGEST_PAYLOAD_TIMING_FREE"
+  },
+  {
+   "fired": true,
+   "tooth": "C7_PHYSICS_WORDS_IN_VALUES_SAFE"
+  },
+  {
+   "fired": true,
+   "tooth": "C8_JOINT_CONSUMER_ATTRIBUTION_TIGHT"
+  },
+  {
+   "fired": true,
+   "tooth": "C9_IDENTIFICATION_DEPENDENT_OBSERVABLE_DETECTED"
+  },
+  {
+   "fired": true,
+   "tooth": "C10_NO_REGISTRY_SURFACE_TOUCHED"
+  }
+ ],
+ "totals": {
+  "FAIL": 0,
+  "PASS": 26
+ }
+}

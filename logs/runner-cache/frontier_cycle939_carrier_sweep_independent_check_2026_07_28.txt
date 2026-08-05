@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner=scripts/frontier_cycle939_carrier_sweep_independent_check_2026_07_28.py
+cycle=939 block=toe-time-blockAC4-20260802 role=independent-checker
+PASS S0_PRIMARY_RECEIPT_READ :: {'primary_totals': {'FAIL': 0, 'PASS': 50}, 'digest': '0a41f4e83a718b94b911469bf82a4c0db0c4fb59c74733704e6c9ae67e4caa2b'}
+PASS S1_COMPLETENESS_ATTACK_EXECUTED :: {'omitted_count': 0, 'refutation_holds': False}
+PASS S1_INDEPENDENT_TERM_SWEEP_HAS_REACH :: {'terms_with_hits': 30, 'docs_scanned': 4003}
+PASS S2_901_QUOTES_BYTE_VERIFIED :: {'target_verbatim': True, 'nochange_verbatim': True, 'refutation_holds': False}
+PASS S3_JOINT_CONSUMER_HUNT_EXECUTED :: {'verified': 3, 'refutation_holds': False}
+PASS S3_SCOPE_ATTACK_BYTE_VERIFIED :: {'refutation_holds': True}
+PASS S4_SIGNED_PERMUTATION_GROUP_ORDER :: {'order': 48}
+PASS S4_O_h_TRAP_REPRODUCES_ON_BRUTE_FORCED_GROUP :: {'C3': 3, 'O_h_48': 1}
+PASS S5_INDEPENDENT_GAUGE_TEST_CONFIRMS_INVARIANCE :: {'cases': 5, 'all_invariant': True}
+PASS S5_TOOTH_NON_EQUIVARIANT_MAP_LEAVES_THE_COVARIANT_CLASS :: {'H_commutes_with_C': True, 'conjugated_H_commutes': False, 'reading': 'a similarity preserves the SPECTRUM but not membership in the C3-covariant class; the gauge group is the EQUIVARIANT subgroup, and leaving it is detectable'}
+PASS S6_NO_OVERREACH_FOUND :: {'hits': {}}
+PASS S6_REQUIRED_NON_CLAIMS_PRESENT :: {'does NOT derive': True, 'UNCHANGED': True, 'gauge': True}
+PASS S6_ALPHA_WITNESS_NOT_WEAKENED :: {'alpha_family_mentioned': True, 'survival_asserted': True}
+PASS S6_ALPHA_FAMILY_REPRODUCED_INDEPENDENTLY :: {'readouts': {'0': '0', '1/9': '1/3', '1/3': '1', '1': '3', '2/27': '2/9'}, 'density_member': ['2/27']}
+PASS S7_C1_FABRICATED_PROBE_REJECTED :: {'found': False}
+PASS S7_C2_TAMPERED_PIN_CAUGHT :: {'sha_prefix': '21954eaa543a9ab0'}
+PASS S7_C3_COMPLETENESS_ATTACK_IS_NOT_RIGGED :: {'already_cited_by_primary': True}
+PASS S7_C4_NO_SMUGGLING :: {'q_rational': False}
+PASS S7_C5_PRIMARY_DIGEST_RECOMPUTES :: {'published': '0a41f4e83a718b94b911469bf82a4c0db0c4fb59c74733704e6c9ae67e4caa2b', 'recomputed': '0a41f4e83a718b94b911469bf82a4c0db0c4fb59c74733704e6c9ae67e4caa2b'}
+PASS S7_C6_DIGEST_TIMING_FREE :: {'offenders': []}
+PASS S7_C7_KEY_SEMANTIC_GUARD :: {'offenders': []}
+PASS S7_C8_JOINT_ATTRIBUTION_TIGHT :: {'false_positive': False}
+PASS S7_C9_CHECKER_CAN_DETECT_MAP_DEPENDENCE :: {'axis_indexed_value_base': 4.95606183, 'after_cyclic_relabel': 2.38303222}
+PASS S7_C10_SURFACES_INTACT :: {'obligation_sha': '4d742bcc68a1e7cd', 'registry_sha': 'cf629c9efe5811de'}
+PASS S7_TEETH_COUNT :: {'count': 10}
+PASS Z_RUNTIME_WITHIN_BUDGET :: 0.84s / 900.0s
+
+----- REFUTATIONS -----
+FAILED A1_PRIOR_ART_TABLE_INCOMPLETE :: The primary's prior-art table omits notes that bear directly on the identification, including one that partially DERIVES a piece of it (the forced body-diagonal singlet axis) and one that records a surviving RELATIVE-orientation invariant.
+FAILED A2_901_RELATIONSHIP_ONE_SIDED :: The primary reports only the adverse reading of Cycle 901 and does not record the favourable one.
+FAILED A3_JOINT_CONSUMER_ENUMERATION_INCOMPLETE :: The primary exhibits ONE joint consumer and frames it as THE carrier sentence in assembled form. At least two further notes carry the same joint identity, so the correct statement is that the joint identity is REPEATED across the corpus -- which strengthens the primary's conclusion while correcting its count.
+HOLDS  A4_GAUGE_VERDICT_SCOPE_IS_SINGLE_PAIR_ONLY :: The primary's gauge verdict is established for re-identification of ONE carrier pair. The corpus records that while ABSOLUTE orientation is gauge, an INTER-SECTOR RELATIVE sign survives as a physical invariant. The verdict therefore must not be read as 'all carrier identifications anywhere are unobservable' -- a relative identification across two sectors is a different and still-open object.
+FAILED A5_O_h_GENERATOR_LABEL_IMPRECISE :: The primary computes its O_h commutant from two generators labelled 'signed permutations (O_h)'. Brute force shows that pair generates a proper subgroup, so the label is imprecise even though the commutant answer is unchanged (a subgroup collapsing the commutant to scalars is a STRONGER statement, not a weaker one).
+FAILED A6_GAUGE_INVARIANCE_FAILS_INDEPENDENTLY :: An independent exact-arithmetic re-derivation contradicts the primary's numerical invariance result.
+FAILED A7_VERDICT_OVERREACHES :: The verdict text claims more than the block establishes.
+FAILED A8_ALPHA_WITNESS_WEAKENED :: Cycle 938's alpha-family refutation is weakened by this block.
+
+science_digest=e248bf992e1518f4387c1fcec699ce0077209748c2828b22a9ed2646fda5f273
+TOTAL: PASS=26 FAIL=0
+VERDICT: PASS
+refutations_holding=1 failed=7
+runtime_seconds=0.84 budget=900.0

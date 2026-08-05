@@ -32,6 +32,7 @@ from __future__ import annotations
 
 import hashlib
 import io
+import itertools
 import json
 import math
 import os
@@ -139,6 +140,15 @@ OCTA = "docs/KOIDE_OCTAHEDRAL_OVERCONSTRAINS_VALUE_BIT_NARROW_NOTE_2026-06-02.md
 C901 = ("docs/SPACE_IDENTIFICATION_DECIDED_FDIM_CYCLE901_BOUNDED_THEOREM_"
         "NOTE_2026-07-28.md")
 C899 = "docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+CHIRAL_BD = ("docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_"
+             "NARROW_NO_GO_NOTE_2026-06-04.md")
+HANDED = ("docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_"
+          "NARROW_THEOREM_NOTE_2026-06-08.md")
+Z2ORIENT = ("docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_"
+            "ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md")
+HEATTRACE = "docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md"
+RESOLVENT = ("docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_"
+             "NARROW_THEOREM_NOTE_2026-07-12.md")
 
 # (tag, file, verbatim quote, relation-to-the-space-gap)
 QUOTES: list[tuple[str, str, str, str]] = [
@@ -362,6 +372,37 @@ QUOTES: list[tuple[str, str, str, str]] = [
      "BEARING -- 901 moves 2/9's premise from Lattice-geometry to "
      "Record-content with zero numerical change, which DE-LICENSES 'the cell "
      "lives on the lattice normal plane' as a premise description"),
+    # ---- added after the checker's A1 completeness refutation held --------
+    ("M1_AXIS_FORCED", CHIRAL_BD,
+     "The geometric body-diagonal supplies the **axis**, not the "
+     "**chirality**.",
+     "PARTIAL-DERIVATION -- the strongest positive piece in the corpus: the "
+     "singlet axis of the hw=1 GENERATION factor is baseline-FORCED to be the "
+     "Z^3 cube body diagonal, so part of the identification is landed content "
+     "rather than a free choice"),
+    ("M2_HANDEDNESS_GAUGE", HANDED,
+     "the absolute flavor handedness is gauge",
+     "GAUGE PRIOR ART -- absolute orientation is a labeling convention, "
+     "'not a missing derivation'; independent corroboration of this block's "
+     "map-is-gauge finding"),
+    ("M3_RELATIVE_SURVIVES", HANDED,
+     "the inter-sector relative sign",
+     "SCOPE LIMIT -- an INTER-SECTOR RELATIVE orientation survives as a "
+     "physical invariant, so the gauge verdict is scoped to a SINGLE carrier "
+     "pair and must not be generalized"),
+    ("M4_Z2_JOINT", Z2ORIENT,
+     "generations = `hw=1` BZ-corner `C_3` axis triplet",
+     "JOINT CONSUMER (second) -- an input table consuming the generation-side "
+     "axis triplet AND the lattice-side 2/9 inside one theorem"),
+    ("M5_AMBIENT_FACE", HEATTRACE,
+     "the fixed-locus density acquires its ambient face",
+     "PARTIAL -- embeds the 2/9 cell into an ambient Z^3 lattice heat-trace "
+     "object: half of the carrier-B attachment, with no carrier-A content"),
+    ("M6_NORMAL_PLANE_ANGLE", RESOLVENT,
+     "On the real normal plane of the proper cubic `C3` body-diagonal "
+     "rotation",
+     "PARTIAL -- builds an ANGLE from the normal-plane object (the TYPE the "
+     "obligation wants) but on the lattice carrier, leaving h-unit untouched"),
 ]
 
 # Search terms for the mechanical corpus sweep (Q0).
@@ -763,15 +804,21 @@ def section_D(out: dict) -> None:
         A, _ = sp.linear_eq_to_matrix(eqs, syms)
         return 9 - A.rank()
 
-    c3_gens = [P]
-    dim_c3 = commutant_dim(c3_gens)
-    # O_h on R^3 = signed permutation matrices (48 elements); two generators
-    # suffice: the 3-cycle P and a sign flip on one axis composed with a swap.
-    Sflip = sp.Matrix([[0, 1, 0], [1, 0, 0], [0, 0, -1]])
-    dim_oh = commutant_dim([P, Sflip])
-    check(dim_c3 == 3 and dim_oh == 1,
+    dim_c3 = commutant_dim([P])
+    # O_h on R^3 = the signed permutation matrices.  Enumerated in full (48
+    # elements) rather than from a generator pair, so the label is exact.
+    oh = []
+    for perm in itertools.permutations(range(3)):
+        for signs in itertools.product([1, -1], repeat=3):
+            M = sp.zeros(3, 3)
+            for i, pj in enumerate(perm):
+                M[i, pj] = signs[i]
+            oh.append(M)
+    dim_oh = commutant_dim(oh)
+    check(dim_c3 == 3 and dim_oh == 1 and len(oh) == 48,
           "D7_O_h_TRAP_THE_IDENTIFICATION_MUST_TRANSPORT_C3_ONLY",
           {"commutant_dim_under_C3": dim_c3,
+           "O_h_order_enumerated": len(oh),
            "commutant_dim_under_signed_permutations_O_h": dim_oh,
            "reading": "C3 alone leaves the 3-parameter circulant dial "
                       "(a, |b|, delta); the ambient lattice point group leaves "
@@ -817,6 +864,8 @@ def section_D(out: dict) -> None:
             "the equality of a dimensionless DENSITY with a RADIAN angle. That "
             "is a type/unit assignment on functionals, not a map between "
             "carriers, and no choice of phi produces it."),
+        "structure_group_enumerated_order": 48,
+        "structure_group_commutant_dims": {"C3": 3, "O_h_48": 1},
         "dimension_correction_to_938": (
             "938's one-line framing ('the slot on the C3 generation 3-space and "
             "the cell on the normal plane') compares a 3-dim carrier with a "
@@ -1055,8 +1104,32 @@ def section_E(out: dict) -> None:
                  "fixed-locus spectral density, read directly as the angle:*")
     supplied_q = "This identification is **supplied, not derived**"
     joint_ok = premise_q in chain and supplied_q in chain
+    # The joint identity is not carried by one note but repeated across the
+    # corpus (checker finding A3, incorporated).  Each is byte-probed.
+    jc_all = []
+    for path, probe, role in [
+        (CHAIN, supplied_q, "the assembled chain: E1 (2/9) welded to E2 "
+                            "(H(delta)) by the declared R-eta premise"),
+        (HANDED, "the inter-sector relative sign",
+         "carries the joint identity |delta| = 2/9 = L_3(1,2) in its own "
+         "surviving-invariants line"),
+        (Z2ORIENT, "generations = `hw=1` BZ-corner `C_3` axis triplet",
+         "an input table consuming the generation-side axis triplet and the "
+         "lattice-side 2/9 inside one theorem, with the joint firewalled"),
+    ]:
+        jc_all.append({"note": path, "probe_verbatim": probe in flat_md(read_text(path)),
+                       "role": role})
+    out["joint_consumers_all"] = jc_all
+    check(all(j["probe_verbatim"] for j in jc_all) and len(jc_all) >= 3,
+          "E2c_THE_JOINT_IDENTITY_IS_REPEATED_NOT_ISOLATED",
+          {"count": len(jc_all),
+           "reading": "at least three landed notes assemble both carriers. "
+                      "Every one of them declares or firewalls the weld rather "
+                      "than deriving it."})
+
     out["joint_consumer"] = {
         "note": CHAIN,
+        "further_notes_carrying_the_same_joint_identity": [j["note"] for j in jc_all[1:]],
         "what_it_consumes_from_carrier_B": "L3(1,2) = 2/9, the fixed-locus "
                                            "density on the doublet/normal plane",
         "what_it_consumes_from_carrier_A": "H(delta) = a I + B e^{i delta} C + "
@@ -1214,6 +1287,17 @@ def section_F(out: dict) -> None:
             "re-binding changes nothing numerically anywhere in the retained "
             "lineage'. The wall's correct name is the one it already had on "
             "2026-06-11 and again in Cycle 928: A_R-eta = h-class + h-unit."),
+        "part_4b_scope_of_the_gauge_finding": (
+            "The gauge finding is scoped to re-identification of ONE carrier "
+            "pair, and must not be read as 'carrier identifications are "
+            "unobservable in general'. The corpus records the matching limit "
+            "directly: absolute flavor handedness is gauge, but an "
+            "INTER-SECTOR RELATIVE sign survives as a physical invariant. A "
+            "relative identification across two sectors is a different object "
+            "and is not addressed here. Nor does the finding claim the "
+            "identification is FREE: one piece of it is already forced by "
+            "landed content (the singlet axis of the hw=1 generation factor "
+            "is baseline-forced to the Z^3 cube body diagonal)."),
         "part_5_the_901_relationship": (
             "Cycle 901's SPACE_IDENTIFICATION_DECIDED_FDIM does NOT decide this "
             "identification and does not support it. It decided a different "
@@ -1502,25 +1586,26 @@ def main() -> int:
         "D_Q1_carriers": out["carriers"],
         "E_Q1b_gauge_test": out["gauge_test"],
         "E_Q1b_joint_consumer": out["joint_consumer"],
+        "E_Q1b_joint_consumers_all": out["joint_consumers_all"],
         "F_Q2_verdict": out["verdict"],
         "F_updated_wall_statement": out["updated_wall_statement"],
         "F_route4_price": out["route4_price"],
         "G_teeth": out["teeth"],
-        "totals": {"PASS": PASS, "FAIL": FAIL},
     }
 
+    # Both terminal gates run BEFORE the payload is frozen, so that the
+    # published `totals` are final and the digest is recomputable from the
+    # published receipt alone (checker finding C5, repaired).
     timing_offenders = assert_timing_free(science)
     check(not timing_offenders, "Z1_DIGEST_PAYLOAD_IS_TIMING_FREE",
           {"offending_key_paths": timing_offenders})
-    science["totals"] = {"PASS": PASS, "FAIL": FAIL}
-
-    digest = hashlib.sha256(
-        json.dumps(science, sort_keys=True, default=str).encode()).hexdigest()
-
     elapsed = time.time() - T0
     check(elapsed < BUDGET_S, "Z2_RUNTIME_WITHIN_BUDGET",
           f"{elapsed:.2f}s / {BUDGET_S}s")
+
     science["totals"] = {"PASS": PASS, "FAIL": FAIL}
+    digest = hashlib.sha256(
+        json.dumps(science, sort_keys=True, default=str).encode()).hexdigest()
 
     receipt = dict(science)
     receipt["science_digest"] = digest

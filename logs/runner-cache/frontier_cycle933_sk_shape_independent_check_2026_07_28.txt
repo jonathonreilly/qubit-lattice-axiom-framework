@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner   : frontier_cycle933_sk_shape_independent_check_2026_07_28.py
+cycle    : 933   INDEPENDENT CHECKER (spec'd to refute)
+
+CHECKS
+  CH10_product_branch_gives_zero                       supported=True
+  CH11_leading_coefficient_at_50_digits                supported=True
+  CH12_reflection_and_rank_off_grid                    supported=True
+  CH13_T_of_degree_is_really_2s(1)-s(2)                supported=True
+  CH14_determinism_and_receipt                         supported=True
+  CH15_931_identity_still_holds_on_the_checker_route   supported=True
+  CH1_krylov_svd_reversed_order_reproduces_s(k)        supported=True
+  CH2_fifty_digit_recomputation                        supported=True
+  CH3_symmetric_subspace_hunt                          supported=True
+  CH4_approximations_at_the_certified_fields           supported=True
+  CH5_no_cas_galois_no_go                              supported=True
+  CH6_overreach_audit                                  supported=True
+  CH7_seal_audit                                       supported=True
+  CH8_mechanism_audit                                  supported=True
+  CH9_one_line_k_laws_refit_independently              supported=True
+
+TEETH  15/15 fire
+REFUTATIONS: 0
+FINDINGS: 0
+
+VERDICT SUPPORTED
+runtime 9.64 s (limit 900 s)
+timing-free digest db6a9112c220d0b3f1b3d5b145e878c982ca8e71fa491f27e7d82bbf924e1740
+===== runner cache v1 =====

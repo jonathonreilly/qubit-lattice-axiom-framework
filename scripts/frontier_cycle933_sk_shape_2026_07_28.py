@@ -2614,7 +2614,9 @@ def main():
         "Q1_structure": q1,
         "Q2_candidates": cand,
         "Q3_consequences": q3,
-        "symbolic_derivation": sym,
+        "symbolic_derivation": {k: v for k, v in sym.items()
+                                if k != "lemma_seconds"},
+        "symbolic_lemma_seconds": sym["lemma_seconds"],
         "seal": {"seal_id": "cycle933-sk-shape-seal-v1", "seal_sha256": seal_sha,
                  "built_from": seal_payload["built_from"],
                  "n_sealed_cells": len(SEALED_CELLS),
@@ -2651,7 +2653,12 @@ def main():
     receipt["timing_free_digest"] = sha256_obj(
         {k: v for k, v in receipt.items()
          if k not in ("runtime_seconds", "runtime_within_limit", "runner_sha256",
-                      "restriction_gate_seconds", "timing_free_digest")})
+                      "restriction_gate_seconds", "symbolic_lemma_seconds",
+                      "timing_free_digest")})
+    if "lemma_seconds" in json.dumps(
+            {k: v for k, v in receipt.items()
+             if k not in ("symbolic_lemma_seconds",)}):
+        die("digest:timing leaked into the timing-free payload")
     ap("runtime %.2f s (limit %.0f s)" % (runtime, RUNTIME_LIMIT_SECONDS))
     ap("timing-free digest %s" % receipt["timing_free_digest"])
     ap(BOUNDARY_LINE)

@@ -1587,7 +1587,7 @@
   "n_constants_931": 21,
   "n_receipts_cross_checked": 7
  },
- "git_head": "eb84b40272",
+ "git_head": "23f2a6da37",
  "pins": {
   "docs/ARITY_IS_DEGREE_MULTIPLICITY_TAX_CYCLE929_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
    "blob": "0b316a500c4c6768b36651d71eb8702731d19f9e",
@@ -1748,7 +1748,7 @@
   "sha256_matches_929_receipt": true,
   "sha256_matches_931_receipt": true
  },
- "restriction_gate_seconds": 0.48991845798445866,
+ "restriction_gate_seconds": 0.4623149170074612,
  "restriction_gates": {
   "T_of_degree_table": {
    "max_abs_deviation": 0.0,
@@ -1778,9 +1778,9 @@
   }
  },
  "runner": "frontier_cycle933_sk_shape_2026_07_28.py",
- "runner_sha256": "8091e7e4891b6d3201c86d649cc9d099ebc3394c516475c44c619ed1a49123fb",
+ "runner_sha256": "faf3a3945dea6c19aff8842817541d047ef2ccd374d7c6ce8bcbaa044aa1da8a",
  "runtime_limit_seconds": 900.0,
- "runtime_seconds": 5.041193249984644,
+ "runtime_seconds": 5.0053550000011455,
  "runtime_within_limit": true,
  "schema": "frontier_cycle933_sk_shape_v1",
  "seal": {
@@ -2180,15 +2180,6 @@
     ]
    }
   },
-  "lemma_seconds": {
-   "L1": 0.026357333990745246,
-   "L2": 0.02735441699041985,
-   "L3": 0.005927874997723848,
-   "L4": 0.3823395000072196,
-   "L5": 1.5809124159859493,
-   "L6": 0.05411324999295175,
-   "L7": 0.00014779198681935668
-  },
   "lemmas_verified": {
    "L1_collective_reduction_exact": true,
    "L2_hankel_schmidt_form_exact": true,
@@ -2209,6 +2200,15 @@
    "L7  E_0 = E_d = 0 identically (B_0 = A and B_d = D), so the leading-order law reproduces s(0) = s(d) = 0 without imposing them.  VERIFIED=True"
   ],
   "transcript_sha256": "b42623a54c65d2aa948baf1f8e966623d1d1e528ed08beac7a5abe16f7d55658"
+ },
+ "symbolic_lemma_seconds": {
+  "L1": 0.025580249988706782,
+  "L2": 0.026701750000938773,
+  "L3": 0.0057366249966435134,
+  "L4": 0.3837091250170488,
+  "L5": 1.583619417011505,
+  "L6": 0.05579137499444187,
+  "L7": 0.00014504100545309484
  },
  "teeth": {
   "T10_unsigned_underflow_guard": {
@@ -2316,6 +2316,6 @@
   "n_firing": 15,
   "n_teeth": 15
  },
- "timing_free_digest": "107fdaccbc0dabe8cd1111088527903781b070dfad205cd997c337a989ca1c10",
+ "timing_free_digest": "7f4fe37710a15d99ebd822d391ae7a075a25a82b7d6c3dd38a247ed85ff17156",
  "verdict": "The shape of s(k) IS derived -- structurally, not elementarily.  The frozen star's arm-permutation symmetry is EXACT (6.2e-17), so the pointer-conditioned branch is a pure state of one collective spin j = d/2 and the k | (d-k) Schmidt matrix is the binomially weighted Hankel matrix T^(k)_{m,q} = sqrt(C(k,m)C(d-k,q)) x_{m+q} built from a single (d+1)-term amplitude sequence solving a 2(d+1)-dimensional linear problem.  s(k) is the entropy of its squared singular values; this reproduces the pinned ladder, the pinned s(k) table and the whole 927/929 T(d) baseline table at 1.2e-14, i.e. AT their precision, with no 2^(d+1) object anywhere.  Reflection stops being a measurement: T^(d-k) = (T^(k))^T identically.  The mechanism is named and ablated -- the pointer's OWN transverse term lambda X_0 is the entire source (turn it off and s(k) = 0 to 1e-14 at every d and every field), while the arm field only shifts the values by ~1e-3 relative.  What does NOT exist is an elementary closed form: the Z2-split blocks are quintics with Galois group S5 for d >= 4, so no radical expression can exist, and every one-line k-law offered (k(d-k), A(1-q^k)(1-q^{d-k}), quadratic) is refuted at grade even when refitted per cell.  Two error-controlled approximations survive with derived and verified error laws: the elementary arm-field-free form (relative error c(d) lambda^2, c growing with d) and the leading-order lambda^2 log(1/lambda) form -- both REFUTED AT THE PINNED GRADE and reported as approximations, never rounded up.  The seal reached three degrees past the measured table and called T(13), T(14), T(15), a full d=13 ladder, three off-grid cells, the mechanism at two new degrees and six gate-crossing fields from the reduction alone, all verified afterwards by the untouched full-space route."
 }

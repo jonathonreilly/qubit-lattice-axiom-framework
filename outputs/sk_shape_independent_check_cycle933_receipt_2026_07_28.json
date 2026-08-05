@@ -1,0 +1,1399 @@
+{
+ "block": "blockM13",
+ "checker_self_corrections_disclosed": [
+  "the first build's symmetry-breaking CONTROL added a constant to a single computational basis state.  That does NOT break arm permutation symmetry (the all-zeros state is itself symmetric), so the control deviation came out at 1.3e-16 and CH3's tooth did not fire.  Corrected to a longitudinal field on ONE arm, which is a genuine symmetry breaker; the tooth now separates by ten orders.",
+  "the first build compared the deep-field leading coefficient against the primary's E_k at a tolerance of 1e-20, below the DOUBLE precision floor of the stored value it compares to.  Corrected to 1e-14; the measured agreement is 3.0e-16, i.e. at the floor."
+ ],
+ "checks": {
+  "CH10_product_branch_gives_zero": {
+   "reading": "a PURE product state of d identical arms has zero entropy on every subset, so the product ansatz for the certified (pure) branch predicts s(k) = 0 identically -- exactly as the primary states.  The spec's 'k*s(1) truncated by purity' describes a MIXED branch and does not apply here.",
+   "supported": true,
+   "trials": 100
+  },
+  "CH11_leading_coefficient_at_50_digits": {
+   "max_rel_dev": 2.96839e-16,
+   "precision_floor": "the comparison target E_k is stored in the primary's receipt as a DOUBLE, so 1e-16 relative is the floor of this test; the tolerance is set at 1e-14.",
+   "reading": "at lambda = 1e-20, eps_k is of order 1e-41 and is invisible to double precision; at 60 digits it reproduces the primary's closed-form E_k to 3.0e-16 relative.  The lambda^2 leading order and its closed-form coefficient are confirmed at the double-precision floor of the stored E_k, at a FIELD the primary could not reach in double precision.",
+   "rows": [
+    {
+     "E_k_claimed": 0.11454857215558324,
+     "d": 4,
+     "eps_over_lambda2": "0.1145485721555832702810085",
+     "k": 1,
+     "lambda": "1e-20",
+     "rel_dev": "2.64351e-16"
+    },
+    {
+     "E_k_claimed": 0.13792442391303017,
+     "d": 4,
+     "eps_over_lambda2": "0.1379244239130302081106855",
+     "k": 2,
+     "lambda": "1e-20",
+     "rel_dev": "2.76316e-16"
+    },
+    {
+     "E_k_claimed": 0.10815574567155212,
+     "d": 6,
+     "eps_over_lambda2": "0.1081557456715521164608001",
+     "k": 1,
+     "lambda": "1e-20",
+     "rel_dev": "3.27232e-17"
+    },
+    {
+     "E_k_claimed": 0.1408980711393863,
+     "d": 6,
+     "eps_over_lambda2": "0.1408980711393863418240345",
+     "k": 2,
+     "lambda": "1e-20",
+     "rel_dev": "2.96839e-16"
+    }
+   ],
+   "supported": true
+  },
+  "CH12_reflection_and_rank_off_grid": {
+   "max_reflection_residual": 0.0,
+   "rows": [
+    {
+     "Jt": 1.7,
+     "d": 4,
+     "lambda": 0.31,
+     "max|s(k)-s(d-k)|": 0.0
+    },
+    {
+     "Jt": 0.35,
+     "d": 6,
+     "lambda": 0.02,
+     "max|s(k)-s(d-k)|": 0.0
+    },
+    {
+     "Jt": 2.2,
+     "d": 5,
+     "lambda": 0.9,
+     "max|s(k)-s(d-k)|": 0.0
+    },
+    {
+     "Jt": 0.7,
+     "d": 7,
+     "lambda": 0.05,
+     "max|s(k)-s(d-k)|": 0.0
+    },
+    {
+     "Jt": 1.1,
+     "d": 3,
+     "lambda": 0.15,
+     "max|s(k)-s(d-k)|": 0.0
+    },
+    {
+     "Jt": 0.7,
+     "d": 6,
+     "lambda": 0.1,
+     "max|s(k)-s(d-k)|": 0.0
+    }
+   ],
+   "schmidt_rank_violations": 0,
+   "supported": true
+  },
+  "CH13_T_of_degree_is_really_2s(1)-s(2)": {
+   "max_abs_residual": 2.035784735232582e-14,
+   "reading": "the whole pinned 927/929 baseline table, d = 2..12 at both fields, falls out of the arm-entropy sequence on the checker's own propagator at 2.04e-14.  The primary's Q3 claim that T(d) becomes derived holds.",
+   "rows": [
+    {
+     "checker_T": 0.006391471799024418,
+     "d": 2,
+     "lambda": 0.05,
+     "pinned_T": 0.00639147179902211,
+     "residual": 2.308049584787142e-15
+    },
+    {
+     "checker_T": 0.02168212599398526,
+     "d": 2,
+     "lambda": 0.1,
+     "pinned_T": 0.021682125993982747,
+     "residual": 2.5118795932144167e-15
+    },
+    {
+     "checker_T": 0.0037318860836422166,
+     "d": 3,
+     "lambda": 0.05,
+     "pinned_T": 0.0037318860836412773,
+     "residual": 9.39352762241441e-16
+    },
+    {
+     "checker_T": 0.012620718014015524,
+     "d": 3,
+     "lambda": 0.1,
+     "pinned_T": 0.012620718014014907,
+     "residual": 6.175615574477433e-16
+    },
+    {
+     "checker_T": 0.0030726840056537206,
+     "d": 4,
+     "lambda": 0.05,
+     "pinned_T": 0.003072684005653732,
+     "residual": -1.1275702593849246e-17
+    },
+    {
+     "checker_T": 0.010420913156723506,
+     "d": 4,
+     "lambda": 0.1,
+     "pinned_T": 0.010420913156725112,
+     "residual": -1.6063539387545234e-15
+    },
+    {
+     "checker_T": 0.0027679946421543663,
+     "d": 5,
+     "lambda": 0.05,
+     "pinned_T": 0.002767994642150348,
+     "residual": 4.018486932100274e-15
+    },
+    {
+     "checker_T": 0.009396140996004415,
+     "d": 5,
+     "lambda": 0.1,
+     "pinned_T": 0.009396140996005975,
+     "residual": -1.5595164049031496e-15
+    },
+    {
+     "checker_T": 0.00257654890570608,
+     "d": 6,
+     "lambda": 0.05,
+     "pinned_T": 0.002576548905706226,
+     "residual": -1.457167719820518e-16
+    },
+    {
+     "checker_T": 0.00874737839307339,
+     "d": 6,
+     "lambda": 0.1,
+     "pinned_T": 0.00874737839307383,
+     "residual": -4.40619762898109e-16
+    },
+    {
+     "checker_T": 0.002324038888940792,
+     "d": 8,
+     "lambda": 0.05,
+     "pinned_T": 0.002324038888942355,
+     "residual": -1.5629858518551032e-15
+    },
+    {
+     "checker_T": 0.007886341392382042,
+     "d": 8,
+     "lambda": 0.1,
+     "pinned_T": 0.007886341392383513,
+     "residual": -1.4710455076283324e-15
+    },
+    {
+     "checker_T": 0.002150398554385654,
+     "d": 10,
+     "lambda": 0.05,
+     "pinned_T": 0.0021503985543903014,
+     "residual": -4.647324192141866e-15
+    },
+    {
+     "checker_T": 0.007291295046013753,
+     "d": 10,
+     "lambda": 0.1,
+     "pinned_T": 0.007291295046010926,
+     "residual": 2.8275992658421956e-15
+    },
+    {
+     "checker_T": 0.0020175420573120516,
+     "d": 12,
+     "lambda": 0.05,
+     "pinned_T": 0.0020175420573283107,
+     "residual": -1.625912945946162e-14
+    },
+    {
+     "checker_T": 0.006834357350866004,
+     "d": 12,
+     "lambda": 0.1,
+     "pinned_T": 0.006834357350845646,
+     "residual": 2.035784735232582e-14
+    }
+   ],
+   "supported": true
+  },
+  "CH14_determinism_and_receipt": {
+   "checker_repeat_bitwise_identical": true,
+   "primary_gates_exactly_zero": true,
+   "primary_runtime_within_limit": true,
+   "primary_teeth_all_fire": true,
+   "primary_timing_free_digest_recomputes": true,
+   "supported": true,
+   "timing_fields_left_inside_the_timing_free_payload": []
+  },
+  "CH15_931_identity_still_holds_on_the_checker_route": {
+   "max_abs_residual": 9.610368056911511e-16,
+   "reading": "the 931 additivity identity is reproduced on this checker's own propagator from the derived s(k) alone.",
+   "rows": [
+    {
+     "additivity_residual": 4.805184028455756e-16,
+     "cell": "d3@0.05"
+    },
+    {
+     "additivity_residual": 1.5959455978986625e-16,
+     "cell": "d3@0.1"
+    },
+    {
+     "additivity_residual": 3.200564813177209e-16,
+     "cell": "d4@0.05"
+    },
+    {
+     "additivity_residual": 3.191891195797325e-16,
+     "cell": "d4@0.1"
+    },
+    {
+     "additivity_residual": 0.0,
+     "cell": "d5@0.05"
+    },
+    {
+     "additivity_residual": 1.5959455978986625e-16,
+     "cell": "d5@0.1"
+    },
+    {
+     "additivity_residual": 9.610368056911511e-16,
+     "cell": "d6@0.05"
+    },
+    {
+     "additivity_residual": 8.014422459012849e-16,
+     "cell": "d6@0.1"
+    }
+   ],
+   "supported": true
+  },
+  "CH1_krylov_svd_reversed_order_reproduces_s(k)": {
+   "max_abs_deviation": 1.2256255038645136e-14,
+   "rows": [
+    {
+     "cell": "d3@0.05",
+     "max_abs_dev_from_931": 4.805139755722376e-16,
+     "s": {
+      "0": 4.805139755722376e-16,
+      "1": 0.0037318860836422166,
+      "2": 0.0037318860836422166,
+      "3": 4.805139755722376e-16
+     }
+    },
+    {
+     "cell": "d3@0.1",
+     "max_abs_dev_from_931": 6.713379852030243e-16,
+     "s": {
+      "0": 1.601713251907459e-16,
+      "1": 0.012620718014015524,
+      "2": 0.012620718014015524,
+      "3": 1.601713251907459e-16
+     }
+    },
+    {
+     "cell": "d4@0.05",
+     "max_abs_dev_from_931": 4.612196041753336e-15,
+     "s": {
+      "0": 3.2034265038149176e-16,
+      "1": 0.0037782727283540373,
+      "2": 0.004483861451054354,
+      "3": 0.0037782727283540373,
+      "4": 3.2034265038149176e-16
+     }
+    },
+    {
+     "cell": "d4@0.1",
+     "max_abs_dev_from_931": 5.863365348801608e-16,
+     "s": {
+      "0": -3.203426503814919e-16,
+      "1": 0.012771813530087987,
+      "2": 0.015122713903452469,
+      "3": 0.012771813530087987,
+      "4": -3.203426503814919e-16
+     }
+    },
+    {
+     "cell": "d5@0.05",
+     "max_abs_dev_from_931": 3.780829815891451e-15,
+     "s": {
+      "0": 0.0,
+      "1": 0.003699819855892233,
+      "2": 0.0046316450696301,
+      "3": 0.0046316450696301,
+      "4": 0.003699819855892233,
+      "5": 0.0
+     }
+    },
+    {
+     "cell": "d5@0.1",
+     "max_abs_dev_from_931": 3.599551212651875e-15,
+     "s": {
+      "0": 1.6017132519074588e-16,
+      "1": 0.012507929319818152,
+      "2": 0.015619717643631889,
+      "3": 0.015619717643631889,
+      "4": 0.012507929319818152,
+      "5": 1.6017132519074588e-16
+     }
+    },
+    {
+     "cell": "d6@0.05",
+     "max_abs_dev_from_931": 1.2256255038645136e-14,
+     "s": {
+      "0": 9.610279511444748e-16,
+      "1": 0.003588804982883429,
+      "2": 0.004601061060060778,
+      "3": 0.004856021061339284,
+      "4": 0.004601061060060778,
+      "5": 0.003588804982883429,
+      "6": 9.610279511444748e-16
+     }
+    },
+    {
+     "cell": "d6@0.1",
+     "max_abs_dev_from_931": 5.167741234934908e-15,
+     "s": {
+      "0": 8.008566259537292e-16,
+      "1": 0.012135216393540108,
+      "2": 0.015523054394006825,
+      "3": 0.016378081050221982,
+      "4": 0.015523054394006825,
+      "5": 0.012135216393540108,
+      "6": 8.008566259537292e-16
+     }
+    }
+   ],
+   "supported": true
+  },
+  "CH2_fifty_digit_recomputation": {
+   "max_abs_dev_from_the_pinned_doubles": "4.6084593e-15",
+   "primary_claimed_max_abs_residual": 1.21617126092044e-14,
+   "reading": "the pinned values are double precision; a 50-digit recomputation of the SAME closed form must sit within double-precision noise of them, and does.",
+   "rows": [
+    {
+     "cell": "d3@0.05",
+     "max_abs_dev_from_the_pinned_double_values": "2.8495242e-16",
+     "s1_at_50_digits": "0.003731886083641889047575227183876132197464"
+    },
+    {
+     "cell": "d3@0.1",
+     "max_abs_dev_from_the_pinned_double_values": "7.260068e-16",
+     "s1_at_50_digits": "0.0126207180140155790068045166861392470363"
+    },
+    {
+     "cell": "d4@0.05",
+     "max_abs_dev_from_the_pinned_double_values": "4.6084593e-15",
+     "s1_at_50_digits": "0.003778272728354041040724584246017374187144"
+    },
+    {
+     "cell": "d4@0.1",
+     "max_abs_dev_from_the_pinned_double_values": "7.7762633e-16",
+     "s1_at_50_digits": "0.01277181353008813479998787289938629305625"
+    },
+    {
+     "cell": "d5@0.05",
+     "max_abs_dev_from_the_pinned_double_values": "3.7605879e-15",
+     "s1_at_50_digits": "0.0036998198558922534120934153760816695177"
+    },
+    {
+     "cell": "d5@0.1",
+     "max_abs_dev_from_the_pinned_double_values": "3.1904852e-15",
+     "s1_at_50_digits": "0.01250792931981856151484444921836623697974"
+    }
+   ],
+   "supported": true
+  },
+  "CH3_symmetric_subspace_hunt": {
+   "cells_hunted": 10,
+   "max_norm_outside_Sym^d": 1.462938703671591e-16,
+   "reading": "ten cells including strong fields (up to lambda = 2.0) and long times (up to Jt = 5.0) and a degree off the certified grid.  ZERO component outside Sym^d anywhere; the broken-symmetry control shows the hunt can see one.",
+   "rows": [
+    {
+     "Jt": 0.7,
+     "d": 3,
+     "lambda": 0.05,
+     "norm_of_the_component_outside_Sym^d": 9.614813431917819e-17
+    },
+    {
+     "Jt": 0.7,
+     "d": 4,
+     "lambda": 0.1,
+     "norm_of_the_component_outside_Sym^d": 0.0
+    },
+    {
+     "Jt": 0.7,
+     "d": 5,
+     "lambda": 0.05,
+     "norm_of_the_component_outside_Sym^d": 1.316562550716263e-16
+    },
+    {
+     "Jt": 0.7,
+     "d": 6,
+     "lambda": 0.1,
+     "norm_of_the_component_outside_Sym^d": 1.3877787807814457e-16
+    },
+    {
+     "Jt": 1.9,
+     "d": 5,
+     "lambda": 0.3,
+     "norm_of_the_component_outside_Sym^d": 1.0749688212373146e-16
+    },
+    {
+     "Jt": 3.0,
+     "d": 4,
+     "lambda": 1.0,
+     "norm_of_the_component_outside_Sym^d": 2.655742100606481e-19
+    },
+    {
+     "Jt": 0.15,
+     "d": 6,
+     "lambda": 0.0125,
+     "norm_of_the_component_outside_Sym^d": 7.850462293418876e-17
+    },
+    {
+     "Jt": 2.5,
+     "d": 7,
+     "lambda": 0.1,
+     "norm_of_the_component_outside_Sym^d": 1.462938703671591e-16
+    },
+    {
+     "Jt": 5.0,
+     "d": 3,
+     "lambda": 2.0,
+     "norm_of_the_component_outside_Sym^d": 4.8074067159589095e-17
+    },
+    {
+     "Jt": 1.2,
+     "d": 5,
+     "lambda": 0.075,
+     "norm_of_the_component_outside_Sym^d": 1.1188630228279524e-16
+    }
+   ],
+   "supported": true,
+   "symmetry_broken_control": 0.18622982292665405
+  },
+  "CH4_approximations_at_the_certified_fields": {
+   "B_elementary_worst_rel_at_certified_fields": 0.0052614203536927905,
+   "C_leading_order_worst_rel_at_certified_fields": 0.006705623523319429,
+   "all_rows_agree_with_the_primary": true,
+   "rows": [
+    {
+     "agree": true,
+     "candidate": "C_leading_order",
+     "cell": "d3@0.05",
+     "checker_max_rel": 0.0013706706947684273,
+     "primary_max_rel": 0.0013706706948447653
+    },
+    {
+     "agree": true,
+     "candidate": "C_leading_order",
+     "cell": "d3@0.1",
+     "checker_max_rel": 0.00538970262638531,
+     "primary_max_rel": 0.005389702626438789
+    },
+    {
+     "agree": true,
+     "candidate": "C_leading_order",
+     "cell": "d4@0.05",
+     "checker_max_rel": 0.0014333216542925607,
+     "primary_max_rel": 0.0014333216542470415
+    },
+    {
+     "agree": true,
+     "candidate": "C_leading_order",
+     "cell": "d4@0.1",
+     "checker_max_rel": 0.005634897543441595,
+     "primary_max_rel": 0.0056348975433972055
+    },
+    {
+     "agree": true,
+     "candidate": "C_leading_order",
+     "cell": "d5@0.05",
+     "checker_max_rel": 0.0015536827112728544,
+     "primary_max_rel": 0.001553682711635617
+    },
+    {
+     "agree": true,
+     "candidate": "C_leading_order",
+     "cell": "d5@0.1",
+     "checker_max_rel": 0.006107705476881571,
+     "primary_max_rel": 0.006107705476844734
+    },
+    {
+     "agree": true,
+     "candidate": "C_leading_order",
+     "cell": "d6@0.05",
+     "checker_max_rel": 0.0017056908959466898,
+     "primary_max_rel": 0.0017056908960679806
+    },
+    {
+     "agree": true,
+     "candidate": "C_leading_order",
+     "cell": "d6@0.1",
+     "checker_max_rel": 0.006705623523319429,
+     "primary_max_rel": 0.006705623523073922
+    },
+    {
+     "agree": true,
+     "candidate": "B_elementary",
+     "cell": "d3@0.05",
+     "checker_max_rel": 0.0009834556541370731,
+     "primary_max_rel": 0.0009834556541888616
+    },
+    {
+     "agree": true,
+     "candidate": "B_elementary",
+     "cell": "d3@0.1",
+     "checker_max_rel": 0.0038561848350112445,
+     "primary_max_rel": 0.003856184835062994
+    },
+    {
+     "agree": true,
+     "candidate": "B_elementary",
+     "cell": "d4@0.05",
+     "checker_max_rel": 0.0010584656901766172,
+     "primary_max_rel": 0.0010584656901089621
+    },
+    {
+     "agree": true,
+     "candidate": "B_elementary",
+     "cell": "d4@0.1",
+     "checker_max_rel": 0.004149596580616972,
+     "primary_max_rel": 0.004149596580572784
+    },
+    {
+     "agree": true,
+     "candidate": "B_elementary",
+     "cell": "d5@0.05",
+     "checker_max_rel": 0.0011850670790419155,
+     "primary_max_rel": 0.001185067079401497
+    },
+    {
+     "agree": true,
+     "candidate": "B_elementary",
+     "cell": "d5@0.1",
+     "checker_max_rel": 0.004646627221673378,
+     "primary_max_rel": 0.004646627221629521
+    },
+    {
+     "agree": true,
+     "candidate": "B_elementary",
+     "cell": "d6@0.05",
+     "checker_max_rel": 0.0013414603373851908,
+     "primary_max_rel": 0.0013414603375059542
+    },
+    {
+     "agree": true,
+     "candidate": "B_elementary",
+     "cell": "d6@0.1",
+     "checker_max_rel": 0.0052614203536927905,
+     "primary_max_rel": 0.005261420353447636
+    }
+   ],
+   "supported": true,
+   "verdict": "BOTH approximations are REFUTED AT THE PINNED GRADE at the certified fields -- relative residuals of 5.26e-03 and 6.71e-03, nine orders above the 1e-11 identity grade.  The primary says exactly this and does not round them up."
+  },
+  "CH5_no_cas_galois_no_go": {
+   "d4_quintic_blocks_show_a_5_cycle": true,
+   "d4_quintic_blocks_show_a_transposition": true,
+   "method": "exact Fraction Faddeev-LeVerrier characteristic polynomial in the INTEGER Dicke basis (X_tot |n~> = (d-n+1)|(n-1)~> + (n+1)|(n+1)~>), then hand-written distinct-degree factorisation over F_p and Dedekind's theorem.  NO CAS.",
+   "reading": "the degree-10 characteristic polynomial at d=4 factors mod p into patterns that force a 5-cycle and a transposition in the Galois group of a quintic block; a transitive subgroup of S5 with both is S5, which is not solvable.  The primary's NO-GO is confirmed on machinery with no CAS in it.",
+   "rows": {
+    "d2@1/10": {
+     "charpoly_degree": 6,
+     "factor_degree_types_mod_p": {
+      "11": [
+       3,
+       3
+      ],
+      "13": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "17": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "19": [
+       3,
+       3
+      ],
+      "23": [
+       3,
+       3
+      ],
+      "29": [
+       3,
+       3
+      ],
+      "31": [
+       3,
+       3
+      ],
+      "37": [
+       3,
+       3
+      ],
+      "41": [
+       3,
+       3
+      ],
+      "43": [
+       3,
+       3
+      ],
+      "47": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "53": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "59": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "61": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "7": [
+       3,
+       3
+      ]
+     },
+     "integer_coefficients_leading_first": [
+      1000000,
+      0,
+      -8110000,
+      0,
+      "...",
+      0,
+      -157609
+     ]
+    },
+    "d2@1/20": {
+     "charpoly_degree": 6,
+     "factor_degree_types_mod_p": {
+      "11": [
+       3,
+       3
+      ],
+      "13": [
+       3,
+       3
+      ],
+      "17": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "19": [
+       3,
+       3
+      ],
+      "23": [
+       3,
+       3
+      ],
+      "29": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "31": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "37": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "41": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "43": [
+       3,
+       3
+      ],
+      "47": [
+       3,
+       3
+      ],
+      "53": [
+       3,
+       3
+      ],
+      "59": [
+       1,
+       1,
+       2,
+       2
+      ],
+      "61": [
+       1,
+       1,
+       2,
+       2
+      ]
+     },
+     "integer_coefficients_leading_first": [
+      64000000,
+      0,
+      -513760000,
+      0,
+      "...",
+      0,
+      -2550409
+     ]
+    },
+    "d3@1/10": {
+     "charpoly_degree": 8,
+     "factor_degree_types_mod_p": {
+      "11": [
+       1,
+       1,
+       2,
+       4
+      ],
+      "13": [
+       1,
+       1,
+       2,
+       2,
+       2
+      ],
+      "19": [
+       2,
+       2,
+       4
+      ],
+      "23": [
+       4,
+       4
+      ],
+      "29": [
+       1,
+       1,
+       2,
+       2,
+       2
+      ],
+      "31": [
+       1,
+       1,
+       2,
+       4
+      ],
+      "37": [
+       1,
+       1,
+       2,
+       2,
+       2
+      ],
+      "43": [
+       1,
+       1,
+       2,
+       4
+      ],
+      "47": [
+       1,
+       1,
+       2,
+       2,
+       2
+      ],
+      "53": [
+       2,
+       2,
+       2,
+       2
+      ],
+      "59": [
+       2,
+       2,
+       4
+      ],
+      "61": [
+       1,
+       1,
+       1,
+       1,
+       2,
+       2
+      ],
+      "7": [
+       2,
+       2,
+       4
+      ]
+     },
+     "integer_coefficients_leading_first": [
+      15625,
+      0,
+      -316250,
+      0,
+      "...",
+      0,
+      1343816
+     ]
+    },
+    "d3@1/20": {
+     "charpoly_degree": 8,
+     "factor_degree_types_mod_p": {
+      "11": [
+       2,
+       2,
+       4
+      ],
+      "17": [
+       2,
+       2,
+       4
+      ],
+      "19": [
+       1,
+       1,
+       1,
+       1,
+       2,
+       2
+      ],
+      "29": [
+       1,
+       1,
+       2,
+       4
+      ],
+      "37": [
+       1,
+       1,
+       2,
+       2,
+       2
+      ],
+      "41": [
+       4,
+       4
+      ],
+      "43": [
+       2,
+       2,
+       2,
+       2
+      ],
+      "47": [
+       1,
+       1,
+       2,
+       4
+      ],
+      "53": [
+       2,
+       2,
+       4
+      ],
+      "59": [
+       1,
+       1,
+       1,
+       1,
+       4
+      ],
+      "61": [
+       2,
+       2,
+       2,
+       2
+      ],
+      "7": [
+       1,
+       1,
+       2,
+       4
+      ]
+     },
+     "integer_coefficients_leading_first": [
+      250000,
+      0,
+      -5015000,
+      0,
+      "...",
+      0,
+      20564429
+     ]
+    },
+    "d4@1/10": {
+     "charpoly_degree": 10,
+     "factor_degree_types_mod_p": {
+      "11": [
+       5,
+       5
+      ],
+      "17": [
+       1,
+       1,
+       1,
+       1,
+       3,
+       3
+      ],
+      "23": [
+       5,
+       5
+      ],
+      "29": [
+       1,
+       1,
+       1,
+       1,
+       3,
+       3
+      ],
+      "31": [
+       1,
+       1,
+       2,
+       2,
+       2,
+       2
+      ],
+      "37": [
+       5,
+       5
+      ],
+      "41": [
+       2,
+       2,
+       3,
+       3
+      ],
+      "43": [
+       1,
+       1,
+       4,
+       4
+      ],
+      "47": [
+       1,
+       1,
+       4,
+       4
+      ],
+      "53": [
+       5,
+       5
+      ],
+      "59": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       2,
+       2
+      ],
+      "61": [
+       2,
+       2,
+       3,
+       3
+      ]
+     },
+     "integer_coefficients_leading_first": [
+      400000000,
+      0,
+      -16180000000,
+      0,
+      "...",
+      0,
+      -15200177521
+     ]
+    },
+    "d4@1/20": {
+     "charpoly_degree": 10,
+     "factor_degree_types_mod_p": {
+      "11": [
+       1,
+       1,
+       4,
+       4
+      ],
+      "19": [
+       5,
+       5
+      ],
+      "29": [
+       1,
+       1,
+       1,
+       1,
+       3,
+       3
+      ],
+      "31": [
+       1,
+       1,
+       2,
+       2,
+       2,
+       2
+      ],
+      "37": [
+       5,
+       5
+      ],
+      "43": [
+       1,
+       1,
+       1,
+       1,
+       3,
+       3
+      ],
+      "47": [
+       1,
+       1,
+       4,
+       4
+      ],
+      "53": [
+       1,
+       1,
+       4,
+       4
+      ],
+      "59": [
+       1,
+       1,
+       4,
+       4
+      ],
+      "61": [
+       5,
+       5
+      ],
+      "7": [
+       1,
+       1,
+       4,
+       4
+      ]
+     },
+     "integer_coefficients_leading_first": [
+      409600000000,
+      0,
+      -16430080000000,
+      0,
+      "...",
+      0,
+      -4117364498641
+     ]
+    }
+   },
+   "supported": true
+  },
+  "CH6_overreach_audit": {
+   "chi_gap_at_matched_s(1)": 0.36374721330193216,
+   "chi_rows": [
+    {
+     "cell": "d4@0.1@Jt0.7",
+     "chi_one_arm": 0.9653173096914268,
+     "s_of_1": 0.012771813530087987
+    },
+    {
+     "cell": "d4@0.1@Jt0.9",
+     "chi_one_arm": 0.9417582330119677,
+     "s_of_1": 0.023435472896149334
+    },
+    {
+     "cell": "d5@0.05@Jt0.7",
+     "chi_one_arm": 0.9751344876124998,
+     "s_of_1": 0.003699819855892233
+    },
+    {
+     "cell": "d5@0.1@Jt0.4",
+     "chi_one_arm": 0.6113872743105676,
+     "s_of_1": 0.00188443622616413
+    }
+   ],
+   "claim_audited": "s(k) alone does NOT decide 926's conjunction.  It gives every C_ab on an isomorphic-arm spider; the conjunction also needs the content gate chi_Z(S:F) >= (1-delta) H(Z_S) and the excess gate, which are pointer-side quantities this block does not derive.",
+   "closest_s(1)_pair_with_different_chi": [
+    "d5@0.05@Jt0.7",
+    "d5@0.1@Jt0.4"
+   ],
+   "supported": true,
+   "verdict": "NO OVERREACH FOUND.  The primary explicitly states that s(k) does not decide 926's conjunction because the content and excess gates are pointer-side statistics, and that is correct: two cells whose s(1) agree to 2e-3 differ in chi_Z(S:F) by 0.3637 bit.  The primary also restricts the derivation to pairwise isomorphic arms, which is the right restriction."
+  },
+  "CH7_seal_audit": {
+   "digest_recomputes_from_the_receipt": true,
+   "holdout_claim": 0,
+   "independent_verification": {
+    "T(13)@0.05": {
+     "checker": 0.001961302032035624,
+     "residual": -2.4359854411404314e-15,
+     "sealed": 0.00196130203203806
+    },
+    "T(13)@0.1": {
+     "checker": 0.006640427681839096,
+     "residual": -3.934699788210594e-14,
+     "sealed": 0.006640427681878443
+    },
+    "gate_crossing_d2": {
+     "T_checker": 0.020000000000000157,
+     "lambda_star_sealed": 0.09546375831478487,
+     "residual_from_0.02": 1.5612511283791264e-16
+    },
+    "gate_crossing_d3": {
+     "T_checker": 0.020000000000000698,
+     "lambda_star_sealed": 0.13069237320358773,
+     "residual_from_0.02": 6.973588373426765e-16
+    },
+    "gate_crossing_d4": {
+     "T_checker": 0.019999999999999477,
+     "lambda_star_sealed": 0.14615223367256347,
+     "residual_from_0.02": -5.238864897449957e-16
+    },
+    "gate_crossing_d5": {
+     "T_checker": 0.01999999999999926,
+     "lambda_star_sealed": 0.15536390475593748,
+     "residual_from_0.02": -7.389922007661198e-16
+    },
+    "gate_crossing_d6": {
+     "T_checker": 0.019999999999997735,
+     "lambda_star_sealed": 0.16217296818049676,
+     "residual_from_0.02": -2.26554885962571e-15
+    },
+    "gate_crossing_d8": {
+     "T_checker": 0.01999999999999967,
+     "lambda_star_sealed": 0.17280979261600748,
+     "residual_from_0.02": -3.2959746043559335e-16
+    }
+   },
+   "max_abs_residual_on_the_checker_route": 3.934699788210594e-14,
+   "reading": "the seal's predictions were built from a 2(d+1)-dimensional route; this checker re-derives them on a Krylov propagator in 2^(d+1) dimensions with the opposite site ordering and finds them at 3.93e-14.  The holdout structure is meaningful: a prediction from a reduced model verified by an unreduced one.",
+   "supported": true,
+   "tamper_changes_the_digest": true
+  },
+  "CH8_mechanism_audit": {
+   "max_commutator_[Z_0,H]_with_the_pointer_field_off": 0.0,
+   "max_s(k)_with_the_pointer_field_off": 2.242398552670444e-15,
+   "reading": "confirmed, and with the algebraic reason exhibited: with lambda X_0 removed, Z_0 COMMUTES WITH H exactly, so each branch evolves under a sum of single-arm terms and is an exact product state.  The primary's mechanism claim is not an empirical coincidence.",
+   "rows": [
+    {
+     "arm_field_off_max_rel_change": 0.0009834556542418942,
+     "d": 3,
+     "lambda": 0.05,
+     "pointer_field_off_max_|s(k)|": 4.930380657631324e-32,
+     "||[Z_0,H]||_max_with_pointer_field_off": 0.0
+    },
+    {
+     "arm_field_off_max_rel_change": 0.003856184835040934,
+     "d": 3,
+     "lambda": 0.1,
+     "pointer_field_off_max_|s(k)|": 3.2034265038149176e-16,
+     "||[Z_0,H]||_max_with_pointer_field_off": 0.0
+    },
+    {
+     "arm_field_off_max_rel_change": 0.001185067079081066,
+     "d": 5,
+     "lambda": 0.05,
+     "pointer_field_off_max_|s(k)|": 4.805139755722375e-16,
+     "||[Z_0,H]||_max_with_pointer_field_off": 0.0
+    },
+    {
+     "arm_field_off_max_rel_change": 0.004646627221702087,
+     "d": 5,
+     "lambda": 0.1,
+     "pointer_field_off_max_|s(k)|": 3.2034265038149167e-16,
+     "||[Z_0,H]||_max_with_pointer_field_off": 0.0
+    },
+    {
+     "arm_field_off_max_rel_change": 0.0015176873168306908,
+     "d": 7,
+     "lambda": 0.05,
+     "pointer_field_off_max_|s(k)|": 6.406853007629839e-16,
+     "||[Z_0,H]||_max_with_pointer_field_off": 0.0
+    },
+    {
+     "arm_field_off_max_rel_change": 0.005954828600408466,
+     "d": 7,
+     "lambda": 0.1,
+     "pointer_field_off_max_|s(k)|": 2.242398552670444e-15,
+     "||[Z_0,H]||_max_with_pointer_field_off": 0.0
+    }
+   ],
+   "supported": true
+  },
+  "CH9_one_line_k_laws_refit_independently": {
+   "method": "brute-force scan over q on 40000 points with A pinned by matching k=1 exactly -- a different fitter from the primary's Nelder-Mead, so a fitter artefact cannot survive both",
+   "rows": [
+    {
+     "best_q": 0.33708598739968504,
+     "cell": "d6@0.05",
+     "geometric_law_best_max_rel": 0.002332934548126383
+    },
+    {
+     "best_q": 0.3427945718642966,
+     "cell": "d6@0.1",
+     "geometric_law_best_max_rel": 0.002245501752921938
+    },
+    {
+     "best_q": 0.36834844996124905,
+     "cell": "d8@0.05",
+     "geometric_law_best_max_rel": 0.008839742651318351
+    },
+    {
+     "best_q": 0.3750860496512413,
+     "cell": "d8@0.1",
+     "geometric_law_best_max_rel": 0.008553583115248392
+    },
+    {
+     "best_q": 0.39169729543238585,
+     "cell": "d10@0.05",
+     "geometric_law_best_max_rel": 0.016819004992125932
+    },
+    {
+     "best_q": 0.3993169081727044,
+     "cell": "d10@0.1",
+     "geometric_law_best_max_rel": 0.01634835866362957
+    }
+   ],
+   "supported": true,
+   "verdict": "REFUTED, independently: the best geometric law still misses by 1.68e-02 relative -- nine orders above the identity grade.",
+   "worst_over_the_probed_degrees": 0.016819004992125932
+  }
+ },
+ "cycle": 933,
+ "date": "2026-07-28",
+ "disjointness": {
+  "entropies": "SVD of the reshaped state tensor (no density matrix) and mpmath Hermitian eigensolve",
+  "propagation": "scipy expm_multiply (Krylov/Pade) + 50-digit mpmath expm; the primary used Chebyshev/Bessel, a Taylor march, dense eigh and a dense collective eigh",
+  "site_ordering": "REVERSED -- the pointer is the highest bit here and the lowest bit in the primary",
+  "symbolics": "NO CAS -- exact Fraction Faddeev-LeVerrier charpoly in an integer basis, hand-written F_p distinct-degree factorisation, Dedekind's theorem"
+ },
+ "findings": [],
+ "primary_receipt_file_sha256": "46cac3668d72cf4d3f0d0c20ae01f2334dedacecdd7a06485637b1c315bf7b83",
+ "primary_timing_free_digest": "7f4fe37710a15d99ebd822d391ae7a075a25a82b7d6c3dd38a247ed85ff17156",
+ "refutations": [],
+ "role": "independent checker",
+ "runner": "frontier_cycle933_sk_shape_independent_check_2026_07_28.py",
+ "runner_sha256": "ed391f7bc0c5c88c61e47898f8343d4809c65b99f157c7139499ddfc36748cc7",
+ "runtime_limit_seconds": 900.0,
+ "runtime_seconds": 9.640824791014893,
+ "runtime_within_limit": true,
+ "schema": "frontier_cycle933_sk_shape_independent_check_v1",
+ "teeth": {
+  "T10_product_ansatz_prediction_is_zero": {
+   "fires": true,
+   "refutes": false
+  },
+  "T11_deep_field_attack_on_the_expansion": {
+   "digits": 60,
+   "fires": true,
+   "max_rel_dev": 2.96839e-16,
+   "refutes": false
+  },
+  "T12_reflection_and_rank_survive_off_grid": {
+   "fires": true,
+   "max_reflection_residual": 0.0,
+   "rank_violations": 0,
+   "refutes": false
+  },
+  "T13_T_table_consequence": {
+   "fires": true,
+   "max_abs_residual": 2.035784735232582e-14,
+   "refutes": false
+  },
+  "T14_determinism_and_digest": {
+   "fires": true,
+   "primary_digest_recomputes": true,
+   "refutes": false
+  },
+  "T15_931_inheritance": {
+   "fires": true,
+   "max_abs_residual": 9.610368056911511e-16,
+   "refutes": false
+  },
+  "T1_independent_propagator_agrees": {
+   "fires": true,
+   "max_abs_deviation": 1.2256255038645136e-14,
+   "refutes": false,
+   "route": "scipy expm_multiply (Krylov/Pade), pointer on the HIGHEST bit, entropies by SVD of the reshaped tensor"
+  },
+  "T2_fifty_digit_attack_on_the_closed_form": {
+   "digits": 50,
+   "fires": true,
+   "max_abs_dev": 4.608459275415754e-15,
+   "refutes": false
+  },
+  "T3_symmetric_subspace_hunt_has_teeth": {
+   "control_deviation": 0.18622982292665405,
+   "fires": true,
+   "max_outside_component_found": 1.462938703671591e-16,
+   "refutes": false
+  },
+  "T4_approximations_are_not_rounded_up": {
+   "B_worst": 0.0052614203536927905,
+   "C_worst": 0.006705623523319429,
+   "fires": true,
+   "primary_verdict_B": "REFUTED AT GRADE -- approximation only",
+   "primary_verdict_C": "REFUTED AT GRADE -- approximation only",
+   "refutes": false
+  },
+  "T5_no_cas_galois_check": {
+   "5_cycle_witness": true,
+   "fires": true,
+   "refutes": false,
+   "transposition_witness": true
+  },
+  "T6_overreach_probe": {
+   "chi_gap_at_matched_s1": 0.36374721330193216,
+   "fires": true,
+   "refutes": false
+  },
+  "T7_seal_is_tamper_evident_and_independently_verified": {
+   "fires": true,
+   "max_abs_residual": 3.934699788210594e-14,
+   "refutes": false
+  },
+  "T8_mechanism_has_an_algebraic_witness": {
+   "commutator_norm": 0.0,
+   "fires": true,
+   "refutes": false,
+   "s_with_pointer_off": 2.242398552670444e-15
+  },
+  "T9_k_law_refutation_survives_a_different_fitter": {
+   "fires": true,
+   "refutes": false,
+   "worst_rel": 0.016819004992125932
+  }
+ },
+ "teeth_summary": {
+  "all_fire": true,
+  "n_firing": 15,
+  "n_teeth": 15
+ },
+ "timing_free_digest": "db6a9112c220d0b3f1b3d5b145e878c982ca8e71fa491f27e7d82bbf924e1740",
+ "verdict": "SUPPORTED"
+}

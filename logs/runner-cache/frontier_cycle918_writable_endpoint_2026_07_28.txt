@@ -1,0 +1,146 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle918_writable_endpoint_2026_07_28.py
+runner_sha256: 0ef019ef77cf3ff33c7e6c29ac31d1cd53945bd5f505f1fd4b3387e74017289d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 324.099
+status: ok
+----- stdout -----
+CYCLE 918 -- THE WRITABLE-ENDPOINT DESIGN SPACE, CONSTRUCTED AND MEASURED
+==============================================================================
+  every fraction below: bookkeeping fraction, not probability
+  scope: FULL CENSUS 748 worlds, horizon 16384 orbits (180224 boundaries), both lane layouts
+
+A_PINS                      PASS  (14 pinned; sha256+git-blob; firewall hits 0)
+B_RESTRICTION_GATE          PASS  (41/41 reproduce)
+
+------------------------------------------------------------------------------
+C1  THE CONSTRUCTION SPACE  (wrap never edit; anchored at the source station)
+------------------------------------------------------------------------------
+  CONTROL   the unmodified landed 719 kernel -- the anchor
+            targets []  inputs []  in-vocabulary=True
+  M_A       RECORD-DRIVEN: a designated record slot fires and the endpoint encoding swaps
+            CNOT        c[1] ^= c[123] & <mask>
+            CNOT        c[6] ^= c[123] & <mask>
+            targets [1, 6]  inputs [123]  in-vocabulary=True
+  M_B       CROSS-LANE: the endpoint XORs with the lane neighbour's endpoint -- worlds interact
+            SHIFT_CNOT  c[1] ^= (c[1] >> 1) & <mask>
+            SHIFT_CNOT  c[6] ^= (c[6] >> 1) & <mask>
+            targets [1, 6]  inputs [1, 6]  in-vocabulary=False
+  M_C       LOCALLY CONTENT-DRIVEN: the endpoint flips as a function of the site's own two bank occupations
+            TOF         c[1] ^= c[123] & c[254] & <mask>
+            TOF         c[6] ^= c[123] & c[254] & <mask>
+            targets [1, 6]  inputs [123, 254]  in-vocabulary=True
+  designated record registers: REC_A wire 123 (bank 0 POINTER), REC_B wire 254 (bank 1 POINTER)
+
+------------------------------------------------------------------------------
+C2  THE MEASUREMENT
+------------------------------------------------------------------------------
+  candidate  locks  lost  gain  bmoved  ep-writes  lk-writ  sel!=setup  offmenu  dynbr  Z11
+  CONTROL      164     0     0       0          0        0           0        0      0 True
+  M_A          134    32     2      83   38736016      110          37        0      3 False
+  M_B          142    71    49      60   32486656      109          29        0      2 False
+  M_C          154    10     0      65   18647166       67           0        0      0 True
+
+  CONTROL:
+     endpoint a gate TARGET? LEFT=False RIGHT=False; 913 reads-never-writes holds=True; gates 34166 (+0)
+     selection determined by: setup parity=True, nn record content=False, nn ordinals=False, endpoint wires only=True
+     determining single wires: [1, 6]; outside the site=False
+     lane locality: AST=True runtime=True; layout-independent=True; Z_11 invariant=True
+     record machinery: write-once violations=0, slot activations=0, dup-lane=0/0, 911 branch pairs=0
+  M_A:
+     endpoint a gate TARGET? LEFT=True RIGHT=True; 913 reads-never-writes holds=False; gates 34188 (+22)
+     selection determined by: setup parity=False, nn record content=False, nn ordinals=False, endpoint wires only=True
+     determining single wires: [1, 6]; outside the site=False
+     lane locality: AST=True runtime=True; layout-independent=True; Z_11 invariant=False
+     record machinery: write-once violations=0, slot activations=0, dup-lane=0/0, 911 branch pairs=0
+  M_B:
+     endpoint a gate TARGET? LEFT=True RIGHT=True; 913 reads-never-writes holds=False; gates 34188 (+22)
+     selection determined by: setup parity=False, nn record content=False, nn ordinals=False, endpoint wires only=True
+     determining single wires: [1, 6]; outside the site=False
+     lane locality: AST=False runtime=False; layout-independent=False; Z_11 invariant=False
+     record machinery: write-once violations=0, slot activations=0, dup-lane=2/0, 911 branch pairs=0
+  M_C:
+     endpoint a gate TARGET? LEFT=True RIGHT=True; 913 reads-never-writes holds=False; gates 34188 (+22)
+     selection determined by: setup parity=True, nn record content=False, nn ordinals=False, endpoint wires only=True
+     determining single wires: [1, 6]; outside the site=False
+     lane locality: AST=True runtime=True; layout-independent=True; Z_11 invariant=True
+     record machinery: write-once violations=0, slot activations=0, dup-lane=0/0, 911 branch pairs=0
+
+  M_PLANT (falsifier): the M_A gates with their lane mask ANDed down to the single world lane 91.  Because M_A is lane-local, world 91 then runs exactly the M_A law while world 3 -- which shares its token positions and its prepared endpoint direction -- runs exactly the CONTROL law.  The pair is constructed to split, so the branch machinery has to find it.
+            CNOT        c[1] ^= c[123] & <mask>
+            CNOT        c[6] ^= c[123] & <mask>
+     lanes planted 1; planted pairs 1; lock points 164; dynamical branch pairs FOUND 1; independent ground truth 1; detector matches = True
+     example split pairs [[3, 91]]
+
+------------------------------------------------------------------------------
+C3  THE VERDICTS AND THE PRICING
+------------------------------------------------------------------------------
+  M_A    BORN-CAPABLE
+         the selection is dynamical and same-setup-coordinate pairs split, so the two menu items are alternatives of one prepared endpoint rather than of two
+         declared constraints met: (a) record machinery=True  (b) certified vocabulary=True  (c) monitor-phase Z_11=False (124 violations)
+         preserved: the write-once discipline; the dead-wire record slots; formation by the global-clean predicate; the endpoint menu (the site carries an admissible possibility); setups-are-worlds (lane locality); layout independence of the law; the certified gate vocabulary
+         supplements: the Cycle-913 reads-never-writes transport theorem: the endpoint is now written; the landed monitor-phase Z_11 invariance of the REALIZED selection: the lock tick is not phase-invariant, so a trajectory-dependent selection cannot be either; the control's lock-point set: 32 worlds stop forming inside the landed horizon
+         price: the supplement is exactly one added sentence of law, and this is it verbatim: at the source station, c[1] ^= c[123] & the station mask and c[6] ^= c[123] & the station mask.  Nothing in the four axioms forces that sentence and nothing in them forbids it.  It is an import, priced as one, and it is the whole of what this candidate buys.
+  M_B    DESTRUCTIVE
+         duplicate-lane consistency lost (2 mismatches); the law is not well defined: forward and reversed lane layouts give different trajectories, so the law depends on the bookkeeping order in which worlds are packed into bits; the Cycle-911 no-cross-lane certification fails on the compiled source; the runtime perturbation witness leaks outside its own lane: setups-are-worlds is broken
+         declared constraints met: (a) record machinery=True  (b) certified vocabulary=False  (c) monitor-phase Z_11=False (78 violations)
+         preserved: the write-once discipline; the dead-wire record slots; formation by the global-clean predicate; the endpoint menu (the site carries an admissible possibility)
+         supplements: the Cycle-913 reads-never-writes transport theorem: the endpoint is now written; the certified gate vocabulary: a new gate kind is introduced; setups-are-worlds: worlds now read each other; the landed monitor-phase Z_11 invariance of the REALIZED selection: the lock tick is not phase-invariant, so a trajectory-dependent selection cannot be either; the control's lock-point set: 71 worlds stop forming inside the landed horizon
+         price: the supplement is exactly one added sentence of law, and this is it verbatim: at the source station, c[1] ^= (c[1] >> 1) & the station mask and c[6] ^= (c[6] >> 1) & the station mask.  Nothing in the four axioms forces that sentence and nothing in them forbids it.  It is an import, priced as one, and it is the whole of what this candidate buys.
+  M_C    STERILE
+         the endpoint wires are gate targets and the endpoints do move, but every lock point still carries the item its setup prepared: the writes that reach the lock tick always came in even numbers, so the selection stayed setup-determined
+         declared constraints met: (a) record machinery=True  (b) certified vocabulary=True  (c) monitor-phase Z_11=True (0 violations)
+         preserved: the write-once discipline; the dead-wire record slots; formation by the global-clean predicate; the endpoint menu (the site carries an admissible possibility); setups-are-worlds (lane locality); layout independence of the law; the landed monitor-phase Z_11 covariance; the certified gate vocabulary
+         supplements: the Cycle-913 reads-never-writes transport theorem: the endpoint is now written; the control's lock-point set: 10 worlds stop forming inside the landed horizon
+         price: the supplement is exactly one added sentence of law, and this is it verbatim: at the source station, c[1] ^= c[123] & c[254] & the station mask and c[6] ^= c[123] & c[254] & the station mask.  Nothing in the four axioms forces that sentence and nothing in them forbids it.  It is an import, priced as one, and it is the whole of what this candidate buys.
+
+------------------------------------------------------------------------------
+C4  THE A3 ARENA
+------------------------------------------------------------------------------
+  M_A: 134 lock points x 2 possibilities; realized [0, 1] -> 56 (28/67), [1, 0] -> 78 (39/67)
+         dynamical branch pairs 3 of 27 candidate pairs (share 1/9)
+         caveat: this is a count over the 748-world census at a single declared horizon on a single declared substrate; it is not an ensemble and it is not a probability.
+         caveat: the pair-split share counts pairs of DISTINCT setups that share two setup coordinates and differ in the rest; it is not a within-setup frequency, because a deterministic scan gives each setup exactly one trajectory.
+         caveat: the realized-state primitive forbids averaging over alternatives; every number here is a bookkeeping count of what this scan did, quoted as such.
+         caveat: the modification that produced it is an IMPORT: it is not forced by the four axioms, and the datum inherits that status.
+
+------------------------------------------------------------------------------
+C5  THE STRUCTURAL LEMMA
+------------------------------------------------------------------------------
+  no gate-set modification of this substrate can produce a Cycle-911 BRANCH PAIR.
+  CLASS_BRANCH is conjunctively gated on same_schedule AND same_tick0_state AND a divergence.
+  A gate set is a LAW: two lanes handed the same schedule and the same tick-0 state receive the same gates in the same order, so their columns stay equal for ever and cannot diverge.
+  A cross-lane law escapes that argument only by destroying its premise, since a lane's law then depends on its neighbours and the two lanes are no longer running the same law.
+  Either way the class stays empty..
+  census pairs sharing schedule AND tick-0 state: 0
+  literal 911 branch pairs per candidate: {'CONTROL': 0, 'M_A': 0, 'M_B': 0, 'M_C': 0}
+  a writable endpoint is NECESSARY for O2 to be a rule rather than a transport -- 913 proved that -- but it is not SUFFICIENT for O3.  Making the endpoint a gate target moves the selection from the setup into the dynamics; it does not make one setup carry two trajectories, and O3's weight needs exactly that.  The obstruction O3 faces on a writable-endpoint substrate is no longer 'the distinguishing coordinate is frozen' but 'the law is a function'.  That is a different obstruction and it is the successor this block hands on.
+
+------------------------------------------------------------------------------
+G_FALSIFIERS                PASS  (14 teeth)
+    [x] planted_synthetic_branch_pair_detected
+    [x] planted_modification_detected_as_creating_a_branch_pair
+    [x] cross_lane_gate_detected_by_the_911_ast_sweep
+    [x] cross_lane_gate_detected_by_the_runtime_perturbation_witness
+    [x] planted_write_once_breach_detected
+    [x] planted_record_targeting_modification_refused
+    [x] dropped_modification_detected
+    [x] dropped_lock_point_breaks_the_c911_gate
+    [x] corrupted_selection_table_breaks_the_c913_gate
+    [x] tampered_pin_detected
+    [x] control_cannot_leak_a_born_capable_verdict
+    [x] skipped_world_changes_the_measured_pair_census
+    [x] out_of_vocabulary_gate_kind_flagged
+    [x] verdict_classifier_reaches_every_class
+H_DOUBLE_BUILD              PASS
+    CONTROL   fwd   33.56s rev   34.02s  identical=True  formed [164, 164]
+    M_A       fwd   33.87s rev   34.59s  identical=True  formed [134, 134]
+    M_B       fwd   32.66s rev   33.09s  identical=False  formed [142, 135]
+    M_C       fwd   33.91s rev   34.65s  identical=True  formed [154, 154]
+I_RUNTIME                   PASS  (323.57s / 900s)
+
+==============================================================================
+VERDICT: WRITABLE-ENDPOINT DESIGN SPACE MAPPED
+HEADLINE: three minimal writable-endpoint modifications of the 719 kernel were constructed and run on the full 748-world census at the landed 16384-orbit horizon in both lane layouts: M_A BORN-CAPABLE; M_B DESTRUCTIVE; M_C STERILE.  The door Cycle 913 specified opens for M_A: the selection becomes dynamical at 37 lock points and 3 dynamical branch pairs appear -- but at three measured prices: the Cycle-913 transport theorem is supplemented, the monitor-phase Z_11 invariance of the realized selection is lost (the lock tick is not phase-invariant), and 32 worlds stop forming inside the landed horizon.  The Cycle-911 branch class stays empty for every candidate, so a writable endpoint buys a dynamical selection but not an indeterministic one.
+receipt: outputs/writable_endpoint_cycle918_receipt_2026_07_28.json

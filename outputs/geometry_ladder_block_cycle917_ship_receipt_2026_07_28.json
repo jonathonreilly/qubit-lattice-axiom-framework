@@ -15,8 +15,8 @@
   ],
   "files": {
     "docs/GEOMETRY_LADDER_CHAIN_CERTIFIES_CYCLE917_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "6311514dcd9a97f1a14b0ba7249b7570baeaff14",
-      "sha256": "b424c3aaf684015f6ca08e81446df58c2d85a1c4e981a8c220be165989d057d4"
+      "git_blob": "86e1953dc29dad74e51a4218da45c8cb5e0ba09c",
+      "sha256": "e58ee96a95c13e86c8d8c93ab835f769396b9117337015832d02219ac41a4356"
     },
     "logs/runner-cache/frontier_cycle917_geometry_independent_check_2026_07_28.txt": {
       "git_blob": "2a2ca16c9beb03c4ee6c5be2037c6566ac456110",
@@ -46,6 +46,13 @@
   "headline": "THE CHAIN CERTIFIES: the geometry the recovered d=1 no-go declares impossible reaches permanence-grade redundancy at lambda=0.05 (R_ind=2 over its two arms; the no-go-inconsistency detector fires on the REAL row with the planted control proving it works); xi_reg = 1 on EVERY geometry certifying or not \u2014 the no-go's mechanism is comparator-specific and its geometric generalization is FALSIFIED (the no-go stands in its own Schwinger system); the measured replacement laws: R_ind ceiling = pointer degree (all 7 at 0.05; loop-free at 0.10), LOOPS COST REDUNDANCY, the field ceiling is graded in degree with the threshold BRACKETED (4, 6]; confound analysis: four features collapse to one statistic, size excluded, three of four NOs are one-sample misses (tightest 0.00078 bits); 10 YES / 4 NO across 14 cells; the degree-5 successor named",
   "independence": "cross-context (fully independent Hamiltonians/Holevo/partitions from the memo's bytes; agreement at 1e-13; route A vs B at 4.5e-14; 10/10 teeth incl. a planted under-converged propagator proving the numerics are guarded)",
   "note": "docs/GEOMETRY_LADDER_CHAIN_CERTIFIES_CYCLE917_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "post_ship_edits": [
+    {
+      "authority": "supervisor post-ship precision edit (the T4/916/918 pattern); no claim strengthened",
+      "date": "2026-08-05",
+      "edit": "Cycle-926 correction: the loop-free equality sentence overstated (fails for G1 at 0.10 per this note's own receipt data; holds for degree >= 3); the carrying statistic is the fragment count (Cycle 926 separation family). Bracketed dated correction added; note pin refreshed."
+    }
+  ],
   "runtime_seconds": {
     "checker": 6,
     "primary": 116

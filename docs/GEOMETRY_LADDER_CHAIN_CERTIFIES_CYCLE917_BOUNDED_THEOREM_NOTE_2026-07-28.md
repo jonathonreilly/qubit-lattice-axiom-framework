@@ -81,7 +81,15 @@ registers within range 1 — not the range.
    pointer degree on ALL SEVEN geometries at lambda = 0.05; at
    lambda = 0.10 the equality survives on every loop-free geometry
    and fails on all three loopy ones — **branching sets the ceiling;
-   loops cost redundancy**.
+   loops cost redundancy**. [Correction 2026-08-05, Cycle 926:
+   "every loop-free geometry" overstates — the equality fails at
+   lambda = 0.10 for the loop-free degree-2 chain G1 (max R_ind 1,
+   not 2), as this note's own receipt data records; it holds for
+   loop-free geometries of degree >= 3 (the G1 drop is the
+   size-driven second channel, Cycle 927). Cycle 926's separation
+   family further shows the carrying statistic is the FRAGMENT
+   COUNT, which coincides with pointer degree on this note's
+   geometries. See the Cycle-926 note.]
 2. **A graded field ceiling** (the checker's declared non-claim
    diagnostic, outside the frozen field set): the certifying field
    ceiling is non-decreasing in pointer degree (degree 2 certifies

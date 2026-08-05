@@ -207,8 +207,10 @@ entangled projection becomes lockable content.
   - Route 5, condition an independent full-lattice auxiliary grading on
     support (ATTEMPTED): succeeds conditionally as v2 and keeps the two typed
     objects distinct; the runner checks coexistence and conditioning.
-  - Route 6, silently normalize a zero-total supported grading (REJECTED): is
-    undefined rather than a probability law; v2 exposes this boundary.
+  - Route 6, normalize a zero-total supported grading (ATTEMPTED): the
+    denominator is exactly zero, so the attempted conditional law is
+    undefined; v2 exposes this boundary rather than silently assigning it a
+    probability distribution.
 - **N2 premise separation:** v2 is a named conditional premise. This note does
   not register it, approve it, or treat it as landed axiom text.
 - **N3 hidden-wall scan:** the full-lattice/additivity surface, mixed

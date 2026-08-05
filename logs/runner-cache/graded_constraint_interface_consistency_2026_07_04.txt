@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/graded_constraint_interface_consistency_2026_07_04.py
 runner_sha256: ecfacb883ac2019acac29d1f1389139fd741d7a2c89a70c4e56f846ce5003583
-input_fingerprint_sha256: 170c46c11bad34e965f217192be9ddd19126fd85bd01d3b1c6be6b04394e9066
+input_fingerprint_sha256: 847c3008054b67e3ee0a881800da181a3f6c32b828ff56ca72cc90a92865fb9c
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05

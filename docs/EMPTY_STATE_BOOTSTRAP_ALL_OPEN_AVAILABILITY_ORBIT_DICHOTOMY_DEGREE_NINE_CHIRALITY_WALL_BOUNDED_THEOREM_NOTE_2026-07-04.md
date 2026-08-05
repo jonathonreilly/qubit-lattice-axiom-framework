@@ -80,9 +80,10 @@ answered here:
 
 3. **The degree-nine det-channel wall (Theorem 3).** The det-character multiplicity
    in the spherical harmonics of degree `l` under the full cubic group is
-   **zero for every `l <= 8` and one at `l = 9`** (exact character sums,
-   cross-checked by direct det-weighted group-averaging of generic
-   polynomials). Hence no polynomial transforming in the full-cubic
+   **zero for every `l <= 8` and one at `l = 9`** (character sums,
+   independently cross-checked by exact homogeneous-polynomial characters,
+   coefficient-kernel ranks, exhaustive Reynolds projection, and reflection
+   divisibility). Hence no polynomial transforming in the full-cubic
    det-character channel exists at degree eight or less. The unique minimal
    harmonic in that channel is the `l = 9` chiral cubic harmonic
 
@@ -176,18 +177,29 @@ structure determines.
 
 ### Theorem 3 (the degree-nine wall and the unique detector)
 
-*Proof.* Character path: the det-character multiplicity
+*Proof.* The harmonic-character sum
 `(1/48) sum det(g) chi_l(g)` vanishes for `l = 0..8` and equals one at
-`l = 9` (C1). Projection path, independently: det-weighted group
-averages of generic degree-7 and degree-8 polynomials vanish
-identically, while a generic degree-9 polynomial projects onto a nonzero
-multiple of `Psi9` (C3, ratio constant across evaluation points). `Psi9`
-transforms by the det character (C2); its zero locus is exactly the
+`l = 9` (C1). Four exact routes independently reach the same degree floor:
+the full homogeneous-polynomial character has multiplicity zero through
+degree eight and one at degree nine (C6); the generator equations
+`p(gx)=det(g)p(x)` have zero coefficient-kernel nullity through degree eight
+and nullity one at degree nine (C7); the exact det-weighted Reynolds operator
+annihilates every monomial through degree eight and has a one-dimensional
+image at degree nine (C8); and anti-invariance across the nine cubic
+reflection hyperplanes forces their nine distinct linear forms to divide
+`p` (C9). Equivalently, the three sign flips force `p=xyz q(x^2,y^2,z^2)`
+and the permutations force `q` to be alternating, whose first possible
+exponent seed is `(1,3,5)` at total degree nine (C10).
+
+`Psi9` transforms by the det character (C2); its zero locus is exactly the
 mirror loci, pointwise equivalent to the improper-stabilizer criterion
-(C4-C5). Since polynomials of degree `<= 8` decompose into harmonics of
-degree `<= 8`, no such polynomial has a det-character component. Arbitrary
-polynomials need not transform in that channel and are not covered by this
-conclusion.
+(C4-C5). The sampled projection check C3 remains a non-load-bearing numerical
+cross-check. Since polynomials of degree `<= 8` decompose into harmonics of
+degree `<= 8`, no such polynomial has a det-character component. A preferred
+coordinate and a three-content determinant were also tried as hostile cheap
+detectors (C11-C12): the former fails cubic det covariance and the latter is
+not a one-content polynomial. Arbitrary functions outside the stated carrier
+are not covered by this conclusion.
 
 ### Theorem 4 (the selector is the bit; an even readout is blind to it)
 
@@ -230,17 +242,26 @@ physical readouts cannot distinguish orientation.
 
 ### N1 -- alternative routes
 
-| route | marker | outcome | evidence boundary |
-|---|---|---|---|
-| exact character multiplicity for the det representation | ATTEMPTED | zero at `l=0..8`, one at `l=9` | runner C1, exact finite group sum |
-| det-weighted Reynolds projection of generic polynomials | ATTEMPTED | degree 7 and 8 vanish; degree 9 yields `Psi9` | runner C3, independent projection path |
-| direct transformation of the explicit `Psi9` polynomial | ATTEMPTED | transforms by `det(g)` under all 48 elements | runner C2 |
-| mirror-locus / improper-stabilizer classification | ATTEMPTED | `Psi9=0` exactly on the tested mirror loci | runner C4-C5 and orbit checks A2-A3 |
-| arbitrary direction-dependent low-degree functions | LIVE OUTSIDE SCOPE | coordinate functions can distinguish some improper pairs | explicit counterexample in Theorem 3; no no-go claimed |
-| multi-content orientation functions | LIVE OUTSIDE SCOPE | triple products can detect relative orientation at degree three | boundary section; not a single-content det-character polynomial |
+The normalized target is: a nonzero, one-content polynomial `p` of total
+degree at most eight satisfying `p(gv)=det(g)p(v)` for every full-cubic group
+element. Each row differs in primary object, load-bearing mechanism, and
+terminal obligation.
 
-The first four routes cross-check the bounded channel statement; the last two
-prevent it from being inflated into a general detector no-go.
+| route family | primary object / mechanism | terminal obligation and outcome | evidence | marker |
+|---|---|---|---|---|
+| spherical-harmonic character | restricted `H_l`; det-character inner product | find nonzero multiplicity for some `l<=8`; none, first one at `l=9` | runner C1 | ATTEMPTED |
+| homogeneous-polynomial character | `Sym^d(V*)`; exact trace average over 48 elements | find a det copy for `d<=8`; multiplicities are exactly zero, first one at `d=9` | runner C6 | ATTEMPTED |
+| coefficient constraints | monomial coefficients; exact generator equations and modular full-rank certificate | find a nonzero kernel vector for `d<=8`; nullity zero, then one at `d=9` | runner C7 | ATTEMPTED |
+| exhaustive Reynolds operator | every monomial basis vector; exact integer det projection | find a nonzero projected column for `d<=8`; every column is zero, degree-nine image is one-dimensional | runner C8 | ATTEMPTED |
+| reflection divisibility | nine fixed hyperplanes; anti-invariance forces vanishing and distinct linear divisors | construct degree at most eight after all forced divisors; impossible because their product has degree nine | runner C9; polynomial UFD divisibility | ATTEMPTED |
+| sign-flip / alternant factorization | `p=xyz q(x^2,y^2,z^2)`; permutation alternation of `q` | find a compatible odd exponent orbit below degree nine; none, first seed `(1,3,5)` | runner C10 | ATTEMPTED |
+| preferred-coordinate hostile candidate | degree-one coordinate; imports a direction | satisfy the improper `y-z` swap; fails because `x` stays fixed instead of acquiring `det=-1` | runner C11 | ATTEMPTED |
+| three-content hostile candidate | scalar triple product; antisymmetry across three contents | reduce to a nonzero one-content polynomial; fails because the repeated-content restriction is zero | runner C12 | ATTEMPTED |
+
+The reflection-divisor and sign-flip/alternant rows are two presentations of
+one structural family and are counted once. Even after that normalization,
+seven distinct route families were attempted. The last two also prevent the
+bounded result from being inflated into a general detector no-go.
 
 ### N2 -- wall independence
 
@@ -287,9 +308,32 @@ a direction and does not transform by the det character.
 
 ### N8 -- cross-cycle echo
 
-Earlier chirality and theta lanes can use this result only as a bounded
-representation-channel classification. No prior physical closure, retained
-grade, observed value, or axiom necessity is imported or echoed as authority.
+The prescribed repository search was rerun for `structurally undecidable`,
+`no retained primitive`, `requires new axiom`, and `cannot be derived from
+A_min`, and all 79 `NO_GO_LEDGER.md` files under
+`.claude/science/physics-loops/` were walked. The nearest precedents do not
+retire this wall:
+
+- `registrability-bridges-20260610` records that a broader determinant negative
+  was demoted when it had only four routes. That precedent is directly
+  applicable as a discipline warning; it is why the exact N1 portfolio above
+  is required.
+- `picard-fuchs-finite-window-boundary-20260608` records that a finite degree
+  check cannot be promoted to arbitrary degree. That boundary is applicable:
+  this theorem stops at degree eight and makes no all-degree detector claim.
+- `charged-lepton-two-higgs-canonical-reduction-audit-closure-20260729` and
+  `teleportation-three-register-cross-encoding-exact-20260719` require exact
+  exhaustive finite certificates rather than sampled trials. Their mechanism
+  is applicable and is met here by C7-C8; sampled C3 is not load-bearing.
+- `registrability-bridges-20260610` also records a wall retired by owner
+  governance when Record was reclassified. That retirement mechanism is not
+  applicable to this fixed representation calculation; no governance or Axiom
+  change can substitute for the group-theoretic obligations.
+
+No ledger contains an earlier retirement of this full-cubic one-content
+degree-eight wall. It is falsified by exhibiting a nonzero degree-at-most-eight
+det-relative polynomial, or changed by changing the group/action/carrier—not
+by a physical closure, observed value, or authority import.
 
 ## Residuals and next paths
 

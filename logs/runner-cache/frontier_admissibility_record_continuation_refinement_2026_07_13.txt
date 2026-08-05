@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py
 runner_sha256: db9825a2c10482fecfa04c005b20a73ead43f5f411ed6a720527273a6d18128e
-input_fingerprint_sha256: 833c059e6a97dcd98a2393ae50fd5102e3888131e1a575f511f49081be250340
+input_fingerprint_sha256: 9e5a291e24d50519664e8641fb023b49311c93fc79e2d730487ab648f8151896
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 

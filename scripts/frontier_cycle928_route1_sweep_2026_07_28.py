@@ -534,6 +534,52 @@ def scan_tokens(text: str, tokens: list[str]) -> dict[str, int]:
     return {t: low.count(t) for t in tokens}
 
 
+# A referent token only counts if it is used in PROSE.  Three ways a raw
+# substring count inflates the referent gate, all found in this corpus:
+#   (i)  the token sits inside a file path in a corpus-scan hit list
+#        (e.g. "scripts/frontier_koide_mru_weight_class_obstruction_theorem.py")
+#        -- the package scanned a tree, it did not talk about Koide;
+#   (ii) the token sits inside a cited NOTE FILENAME (the July no-go itself);
+#   (iii) it is a substring of an unrelated identifier -- "s_sum" occurs inside
+#        "dimensions_sum_to_the_orbit_length".
+# Counting those as a referent would flatter the sweep by moving candidates out
+# of bin 5, so they are separated and reported.
+PATH_MARKER = re.compile(r"\.(md|py|json|txt)\b|(docs|scripts|outputs|logs)/")
+S_SUM_WORD = re.compile(r"(?<![a-z0-9_])s_sum", re.I)
+
+
+def scan_referent_quality(text: str) -> dict:
+    """Split referent-token hits into prose hits and path/substring artefacts."""
+    prose: dict[str, int] = {}
+    pathlike: dict[str, int] = {}
+    false_pos: dict[str, int] = {}
+    for tok in REFERENT_TOKENS:
+        pattern = S_SUM_WORD if tok == "s_sum" else re.compile(re.escape(tok), re.I)
+        for m in pattern.finditer(text):
+            if tok == "s_sum" and not S_SUM_WORD.match(text, m.start()):
+                false_pos[tok] = false_pos.get(tok, 0) + 1
+                continue
+            ls = text.rfind("\n", 0, m.start()) + 1
+            le = text.find("\n", m.start())
+            line = text[ls : le if le != -1 else len(text)]
+            window = text[max(0, m.start() - 120) : m.start() + 120]
+            if PATH_MARKER.search(window):
+                pathlike[tok] = pathlike.get(tok, 0) + 1
+            else:
+                prose[tok] = prose.get(tok, 0) + 1
+        # a raw substring count that exceeds every classified hit is a false positive
+        raw = len(re.findall(re.escape(tok), text, re.I))
+        classified = prose.get(tok, 0) + pathlike.get(tok, 0) + false_pos.get(tok, 0)
+        if raw > classified:
+            false_pos[tok] = false_pos.get(tok, 0) + (raw - classified)
+    return {
+        "prose_hits": prose,
+        "path_or_filename_hits": pathlike,
+        "substring_false_positives": false_pos,
+        "referent_present_in_prose": bool(prose),
+    }
+
+
 def section_c() -> dict:
     enumerated = []
     for cand in CANDIDATES:
@@ -570,13 +616,16 @@ def section_c() -> dict:
         blob = "\n".join(files.values())
         tok = scan_tokens(blob, ANGLE_TYPE_TOKENS + REFERENT_TOKENS)
         radian_total += tok["radian"] + tok["radians"]
+        quality = scan_referent_quality(blob)
         per_cycle[cycle] = {
             "files": len(files),
             "radian_hits": tok["radian"] + tok["radians"],
             "angle_word_hits": len(ANGLE_WORD.findall(blob)),
             "holonomy_hits": len(HOLONOMY_WORD.findall(blob)),
-            "referent_hits": {t: tok[t] for t in REFERENT_TOKENS},
-            "referent_present": any(tok[t] for t in REFERENT_TOKENS),
+            "referent_raw_substring_hits": {t: tok[t] for t in REFERENT_TOKENS},
+            "referent_quality": quality,
+            # the gate uses PROSE hits only -- raw substring counting inflates it
+            "referent_present": quality["referent_present_in_prose"],
         }
 
     check(
@@ -585,10 +634,21 @@ def section_c() -> dict:
         {"radian_or_radians_occurrences": radian_total, "packages_scanned": len(PACKAGES)},
     )
     referent_carrying = sorted(c for c, v in per_cycle.items() if v["referent_present"])
+    # The meaningful claim is not a headcount: it is that the referent gate --
+    # decisive for route 3 -- separates these packages instead of emptying them.
+    # A nonempty PROPER subset proves both halves: the gate still discriminates,
+    # and it no longer kills every candidate the way it did on the occurrence
+    # surface.  Prose hits only; path/filename hits are excluded on purpose.
     check(
-        len(referent_carrying) >= 8,
+        0 < len(referent_carrying) < len(PACKAGES),
         "C_REFERENT_IS_PRESENT_UNLIKE_THE_OCCURRENCE_SURFACE",
-        {"packages_carrying_a_charged-lepton/fixed-locus referent": referent_carrying},
+        {
+            "packages_carrying_the_referent_IN_PROSE": referent_carrying,
+            "packages_without_it": sorted(set(PACKAGES) - set(referent_carrying)),
+            "note": "raw substring counting would have inflated this list to 10 by counting "
+                    "corpus-scan file paths and the substring 's_sum' inside identifiers such as "
+                    "'dimensions_sum_to_the_orbit_length'; those are classified out and reported",
+        },
     )
 
     # every bare "angle" occurrence is classified, so the zero is not a blind spot

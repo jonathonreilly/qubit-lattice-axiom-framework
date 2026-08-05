@@ -1239,11 +1239,9 @@
   ],
   "packages_carrying_the_referent": [
    882,
-   883,
    886,
    888,
    890,
-   895,
    898,
    899,
    901
@@ -1254,7 +1252,14 @@
     "files": 5,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {},
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1263,15 +1268,21 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 0
-    },
-    "referent_present": false
+    }
    },
    "876": {
     "angle_word_hits": 7,
     "files": 5,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {},
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1280,15 +1291,27 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 0
-    },
-    "referent_present": false
+    }
    },
    "882": {
     "angle_word_hits": 1,
     "files": 5,
     "holonomy_hits": 2,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": true,
+    "referent_quality": {
+     "path_or_filename_hits": {
+      "r_eta": 2
+     },
+     "prose_hits": {
+      "fixed-locus": 1,
+      "fixed_locus": 5,
+      "r-eta": 1
+     },
+     "referent_present_in_prose": true,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 1,
      "fixed_locus": 5,
@@ -1297,15 +1320,25 @@
      "r-eta": 1,
      "r_eta": 2,
      "s_sum": 0
-    },
-    "referent_present": true
+    }
    },
    "883": {
     "angle_word_hits": 0,
     "files": 4,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {
+      "koide": 5
+     },
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {
+      "s_sum": 1
+     }
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1314,15 +1347,28 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 1
-    },
-    "referent_present": true
+    }
    },
    "886": {
     "angle_word_hits": 0,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": true,
+    "referent_quality": {
+     "path_or_filename_hits": {
+      "lepton": 6
+     },
+     "prose_hits": {
+      "fixed-locus": 11,
+      "lepton": 5
+     },
+     "referent_present_in_prose": true,
+     "substring_false_positives": {
+      "s_sum": 99
+     }
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 11,
      "fixed_locus": 0,
@@ -1331,15 +1377,29 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 99
-    },
-    "referent_present": true
+    }
    },
    "888": {
     "angle_word_hits": 0,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": true,
+    "referent_quality": {
+     "path_or_filename_hits": {
+      "lepton": 6
+     },
+     "prose_hits": {
+      "fixed-locus": 7,
+      "fixed_locus": 8,
+      "lepton": 1
+     },
+     "referent_present_in_prose": true,
+     "substring_false_positives": {
+      "s_sum": 63
+     }
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 7,
      "fixed_locus": 8,
@@ -1348,15 +1408,28 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 63
-    },
-    "referent_present": true
+    }
    },
    "890": {
     "angle_word_hits": 2,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": true,
+    "referent_quality": {
+     "path_or_filename_hits": {
+      "fixed-locus": 2,
+      "r_eta": 4
+     },
+     "prose_hits": {
+      "ac_phi": 2
+     },
+     "referent_present_in_prose": true,
+     "substring_false_positives": {
+      "s_sum": 3
+     }
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 2,
      "fixed-locus": 2,
      "fixed_locus": 0,
@@ -1365,15 +1438,21 @@
      "r-eta": 0,
      "r_eta": 4,
      "s_sum": 3
-    },
-    "referent_present": true
+    }
    },
    "891": {
     "angle_word_hits": 0,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {},
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1382,15 +1461,25 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 0
-    },
-    "referent_present": false
+    }
    },
    "895": {
     "angle_word_hits": 1,
     "files": 6,
     "holonomy_hits": 4,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {
+      "koide": 19,
+      "lepton": 1,
+      "r_eta": 1
+     },
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1399,15 +1488,23 @@
      "r-eta": 0,
      "r_eta": 1,
      "s_sum": 0
-    },
-    "referent_present": true
+    }
    },
    "898": {
     "angle_word_hits": 0,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": true,
+    "referent_quality": {
+     "path_or_filename_hits": {},
+     "prose_hits": {
+      "r-eta": 1
+     },
+     "referent_present_in_prose": true,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1416,15 +1513,30 @@
      "r-eta": 1,
      "r_eta": 0,
      "s_sum": 0
-    },
-    "referent_present": true
+    }
    },
    "899": {
     "angle_word_hits": 0,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": true,
+    "referent_quality": {
+     "path_or_filename_hits": {
+      "fixed_locus": 8,
+      "koide": 8
+     },
+     "prose_hits": {
+      "fixed-locus": 12,
+      "fixed_locus": 4,
+      "koide": 3
+     },
+     "referent_present_in_prose": true,
+     "substring_false_positives": {
+      "s_sum": 12
+     }
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 12,
      "fixed_locus": 12,
@@ -1433,15 +1545,21 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 12
-    },
-    "referent_present": true
+    }
    },
    "900": {
     "angle_word_hits": 0,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {},
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1450,15 +1568,28 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 0
-    },
-    "referent_present": false
+    }
    },
    "901": {
     "angle_word_hits": 5,
     "files": 6,
     "holonomy_hits": 5,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": true,
+    "referent_quality": {
+     "path_or_filename_hits": {
+      "fixed_locus": 67,
+      "koide": 73,
+      "r_eta": 17
+     },
+     "prose_hits": {
+      "fixed_locus": 11,
+      "koide": 9
+     },
+     "referent_present_in_prose": true,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 78,
@@ -1467,15 +1598,21 @@
      "r-eta": 0,
      "r_eta": 17,
      "s_sum": 0
-    },
-    "referent_present": true
+    }
    },
    "903": {
     "angle_word_hits": 3,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {},
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1484,15 +1621,21 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 0
-    },
-    "referent_present": false
+    }
    },
    "904": {
     "angle_word_hits": 0,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {},
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1501,15 +1644,21 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 0
-    },
-    "referent_present": false
+    }
    },
    "916": {
     "angle_word_hits": 0,
     "files": 6,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {},
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1518,15 +1667,21 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 0
-    },
-    "referent_present": false
+    }
    },
    "921": {
     "angle_word_hits": 0,
     "files": 5,
     "holonomy_hits": 0,
     "radian_hits": 0,
-    "referent_hits": {
+    "referent_present": false,
+    "referent_quality": {
+     "path_or_filename_hits": {},
+     "prose_hits": {},
+     "referent_present_in_prose": false,
+     "substring_false_positives": {}
+    },
+    "referent_raw_substring_hits": {
      "ac_phi": 0,
      "fixed-locus": 0,
      "fixed_locus": 0,
@@ -1535,8 +1690,7 @@
      "r-eta": 0,
      "r_eta": 0,
      "s_sum": 0
-    },
-    "referent_present": false
+    }
    }
   },
   "radian_occurrences_across_the_entire_new_surface": 0
@@ -1554,8 +1708,8 @@
    "BIN 8 SCOPE GAP (NEW this block, structural)": "The value exists only at a scope -- C3, or n = 3, or one schema out of many -- that the SAME campaign's own theorems prove is not isolated: Cycle 886 finds 0 of 16 routes grounded-and-isolating for C3, Cycle 888 finds freeness+maximality selects S3 alone over the full 30-subgroup lattice, Cycle 890 leaves the ladder endpoint at {C3, C4}, and Cycle 904 finds 442 scope-uniform families reaching 115 distinct values.  Even granting the type conversion, picking the scope that yields 2/3 is an unlicensed selection."
   },
   "counts_by_bin": {
-   "BIN 1 misses the target": 5,
-   "BIN 5 no referent": 10,
+   "BIN 1 misses the target": 3,
+   "BIN 5 no referent": 12,
    "BIN 7 TYPE GAP (NEW this block, and the decisive one here)": 3
   },
   "route_1_verdict": "ROUTE 1 IS SWEPT EMPTY on every surface this campaign built.  The sweep found what 924's occurrence sweep could not: derived objects whose exact value IS 2/3, on surfaces that DO carry the charged-lepton referent (cycle 899's sum_of_inverse_determinants = 2/3 over the C3 fixed locus is the sharpest).  Bin 5, which was decisive for route 3, does NOT fire here.  What blocks route 1 instead is the TYPE GAP: no artifact anywhere on the new surface types any object in radians (zero occurrences of 'radian' across 99 vendored files in 17 packages), so every candidate is a density, a determinant sum, a weight, a count or a dimension, and declaring it the charged-lepton cycle ANGLE is precisely the unpriced h-unit angle scale that Cycle 924 computed as the one missing dimension.  Granting the type conversion for free, the SCOPE GAP blocks it a second time: the 2/3 lives only at C3 / n = 3, and this campaign's own theorems (886, 888, 890, 904) prove that scope is not isolated.",
@@ -1730,15 +1884,15 @@
    },
    {
     "angle_of": "the unit-grading parameter of the response law",
-    "bin": "BIN 1 misses the target",
+    "bin": "BIN 5 no referent",
     "cycle": 895,
     "derivation_status": "derived theorem; the t-CHOICE DISSOLVES",
-    "exact_check": "exact value is t free (1,296 configs partitioned 6/84/60/1146), not 2/3",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
     "gates": {
      "LICENSED": false,
      "R1_value_is_exactly_2_over_3": false,
      "R2_source_types_it_as_an_angle": false,
-     "R3_referent_present_on_the_home_surface": true,
+     "R3_referent_present_on_the_home_surface": false,
      "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
      "R5_scope_is_isolated_by_the_surface": false,
      "R6_arity_is_the_C3_threefold_unaveraged_sum": false
@@ -1746,20 +1900,20 @@
     "id": "C895-AFFINE",
     "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the affine t-law: lawfulness is exactly A + tB (cycle 895), read in radians",
     "object": "the affine t-law: lawfulness is exactly A + tB",
-    "secondary_bin_if_the_type_gap_were_granted": null,
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
     "value": "t free (1,296 configs partitioned 6/84/60/1146)"
    },
    {
     "angle_of": "the C3 fixed locus transverse weights",
-    "bin": "BIN 1 misses the target",
+    "bin": "BIN 5 no referent",
     "cycle": 883,
     "derivation_status": "derived from Lattice + Record (SL1, the weaker successor named by 882)",
-    "exact_check": "exact value is (1, 2), not 2/3",
+    "exact_check": "the home surface carries no charged-lepton / fixed-locus vocabulary, so the identification sentence cannot be stated there",
     "gates": {
      "LICENSED": false,
      "R1_value_is_exactly_2_over_3": false,
      "R2_source_types_it_as_an_angle": false,
-     "R3_referent_present_on_the_home_surface": true,
+     "R3_referent_present_on_the_home_surface": false,
      "R4_identification_is_derivable_not_alpha_1_nor_2pi_packaging": false,
      "R5_scope_is_isolated_by_the_surface": false,
      "R6_arity_is_the_C3_threefold_unaveraged_sum": false
@@ -1767,7 +1921,7 @@
     "id": "C883-WEIGHTPAIR",
     "identification_sentence_required": "the registered charged-lepton cycle holonomy Phi equals the Record-carried weight pair (1, 2) (cycle 883), read in radians",
     "object": "the Record-carried weight pair (1, 2)",
-    "secondary_bin_if_the_type_gap_were_granted": null,
+    "secondary_bin_if_the_type_gap_were_granted": "BIN 7 TYPE GAP -- granting a charged-lepton referent for free, the object is still not typed as an angle anywhere: its home package contains zero occurrences of 'radian', so the conversion sentence would still have to be supplied.  Its value also misses 2/3.",
     "value": "(1, 2)"
    },
    {
@@ -2032,7 +2186,7 @@
     "tooth": "T9_MISSING_SHIP_RECEIPTS_DETECTED"
    },
    {
-    "detail": "9 of 17 packages carry a charged-lepton/fixed-locus referent -- the gate separates them, so its non-firing on the AC-lane packages is a property of those packages, not a disabled gate",
+    "detail": "7 of 17 packages carry a charged-lepton/fixed-locus referent -- the gate separates them, so its non-firing on the AC-lane packages is a property of those packages, not a disabled gate",
     "fired": true,
     "tooth": "T10_REFERENT_GATE_STILL_DISCRIMINATES"
    }
@@ -2047,8 +2201,8 @@
  "campaign": "toe-time-expansion-20260802",
  "claim_type": "bounded_theorem",
  "cycle": 928,
- "runtime_seconds": 2.57,
- "science_digest": "23e65049900519d92eb7eedd39ccdb7c4bf97590f031e95aadf348c5b665feed",
+ "runtime_seconds": 2.76,
+ "science_digest": "c171abf56be81d34a76005a41f55b0b211dfd5d09dcee92f87c9f3f8c8fcbe43",
  "target": "R-eta route 1 (the licensed angle-native theorem) -- swept over every angle-valued and scale-carrying object on the surfaces built since the 2026-07-04 angle-native no-go",
  "totals": {
   "FAIL": 0,

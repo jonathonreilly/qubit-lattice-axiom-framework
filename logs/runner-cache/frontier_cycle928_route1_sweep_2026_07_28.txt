@@ -30,11 +30,11 @@ PASS C_ANCHOR_C876-GRADING :: {'source': 'logs/runner-cache/frontier_cycle876_un
 PASS C_ANCHOR_C921-CYCLE :: {'source': 'outputs/loop_cost_block_cycle921_ship_receipt_2026_07_28.json', 'anchor': 'THE PAIR-CYCLE LAW'}
 PASS C_ANCHOR_C872-SIGMA :: {'source': 'logs/runner-cache/frontier_cycle872_sigma_linear_admissibility_2026_07_28.txt', 'anchor': 'escape_b_shaped_count'}
 PASS C_RADIAN_SCAN_ZERO_ACROSS_THE_WHOLE_NEW_SURFACE :: {'radian_or_radians_occurrences': 0, 'packages_scanned': 17}
-PASS C_REFERENT_IS_PRESENT_UNLIKE_THE_OCCURRENCE_SURFACE :: {'packages_carrying_a_charged-lepton/fixed-locus referent': [882, 883, 886, 888, 890, 895, 898, 899, 901]}
+PASS C_REFERENT_IS_PRESENT_UNLIKE_THE_OCCURRENCE_SURFACE :: {'packages_carrying_the_referent_IN_PROSE': [882, 886, 888, 890, 898, 899, 901], 'packages_without_it': [872, 876, 883, 891, 895, 900, 903, 904, 916, 921], 'note': "raw substring counting would have inflated this list to 10 by counting corpus-scan file paths and the substring 's_sum' inside identifiers such as 'dimensions_sum_to_the_orbit_length'; those are classified out and reported"}
 PASS C_NO_DERIVED_ANGLE_OBJECT_ON_THE_NEW_SURFACE :: {'angle_word_occurrences': 20, 'kinds': ['CITATION of the July no-go note itself', 'CODE SIGNATURE quoted as provenance, not a derived object', 'EXCLUSION CLAUSE -- the primitive refuses to supply an angle', 'OTHER']}
 PASS D_NO_ROUTE_1_SURVIVOR :: {'survivors': []}
-PASS D_TYPE_GAP_IS_THE_DECISIVE_BIN :: {'candidates_that_are_exactly_2/3_AND_carry_the_referent': ['C899-SUM', 'C898-TRACE', 'C897-Q'], 'all_stopped_by_the_type_gap': True, 'counts_by_bin': {'BIN 7 TYPE GAP (NEW this block, and the decisive one here)': 3, 'BIN 1 misses the target': 5, 'BIN 5 no referent': 10}}
-PASS D_BIN_5_IS_NOT_DECISIVE_HERE_UNLIKE_924 :: {'bin_5_count': 10, 'total': 18}
+PASS D_TYPE_GAP_IS_THE_DECISIVE_BIN :: {'candidates_that_are_exactly_2/3_AND_carry_the_referent': ['C899-SUM', 'C898-TRACE', 'C897-Q'], 'all_stopped_by_the_type_gap': True, 'counts_by_bin': {'BIN 7 TYPE GAP (NEW this block, and the decisive one here)': 3, 'BIN 1 misses the target': 3, 'BIN 5 no referent': 12}}
+PASS D_BIN_5_IS_NOT_DECISIVE_HERE_UNLIKE_924 :: {'bin_5_count': 12, 'total': 18}
 PASS E_PRIMITIVE_EXCLUSION_CLAUSE_NAMES_AN_ANGLE :: This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.
 PASS F_T1_NUMEROLOGY_PLANT :: planted a synthetic object equal to 2/3 on a referent-carrying surface; it is still rejected, and rejected by the TYPE GAP gate specifically -> BIN 7 TYPE GAP (NEW this block, and the decisive one her
 PASS F_T2_TAMPERED_PIN :: appending one byte to docs/FAMILY_BINDING_FDIM_CYCLE899_BOUNDED_THEOREM_NOTE_2026-07-28.md gives digest 477d0779154468a7 != pinned 3cffb593cf379f68; section A2 compares exactly this
@@ -45,10 +45,10 @@ PASS F_T6_SCOPE_GATE_IS_FALSIFIABLE :: bin 8 rests on three pinned verdicts; had
 PASS F_T7_EXACT_MISS_ARITHMETIC :: 924's most natural occurrence candidate misses by 2/3 - 21/41 = 19/123 exactly; reproduced here in rational arithmetic with no floats
 PASS F_T8_ENUMERATION_COMPLETENESS :: independent regex pass for a bare 2/3 over every package NOT already in the candidate pool found 0 file(s): [].  Any cycle listed here is a gap in the enumeration and is reported as such
 PASS F_T9_MISSING_SHIP_RECEIPTS_DETECTED :: the corpus scan detects that cycles [872, 876, 882, 883] have no ship receipt anywhere in the campaign; they are pinned against their originating branch blob and the gap is emitted as audit row 3 rath
-PASS F_T10_REFERENT_GATE_STILL_DISCRIMINATES :: 9 of 17 packages carry a charged-lepton/fixed-locus referent -- the gate separates them, so its non-firing on the AC-lane packages is a property of those packages, not a disabled gate
-PASS Z_RUNTIME_WITHIN_BUDGET :: 2.57s / 900.0s
+PASS F_T10_REFERENT_GATE_STILL_DISCRIMINATES :: 7 of 17 packages carry a charged-lepton/fixed-locus referent -- the gate separates them, so its non-firing on the AC-lane packages is a property of those packages, not a disabled gate
+PASS Z_RUNTIME_WITHIN_BUDGET :: 2.76s / 900.0s
 
-science_digest=23e65049900519d92eb7eedd39ccdb7c4bf97590f031e95aadf348c5b665feed
+science_digest=c171abf56be81d34a76005a41f55b0b211dfd5d09dcee92f87c9f3f8c8fcbe43
 TOTAL: PASS=46 FAIL=0
 VERDICT: PASS
-runtime_seconds=2.57 budget=900.0
+runtime_seconds=2.76 budget=900.0

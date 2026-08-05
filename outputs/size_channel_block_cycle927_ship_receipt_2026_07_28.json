@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); the checker's saturation scope finding adopted mid-block; one tooth adapted two-sided with in-receipt reasoning; the Gram route declared with pinned cells on the unmodified path",
+  "block": "toe-time-blockM9-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 37.9s; 205 cells zero disagreement; 13/13 teeth; form-degeneracy and mechanism-rescue attacks strengthen the claim boundaries",
+    "primary": "exit 0, 58.4s, 0.69 GiB; FOUR restriction surfaces at deviation exactly 0 (917, 919, 921's full 832-row designed set, the G1 exception cell to full precision); 21/21 constants quote-identical to three receipts; routes 1.1e-13/5.6e-14; 12/12 teeth; timing-free digest identical across cold runs"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 9th M-family PR: falsifies its own premise into a mechanism law with a decisive cell, fully explains the lane's one standing exception, hardens a shipped threshold on a new axis, and splits the graded ceiling into two mechanisms; nothing corollary",
+  "cycles": [
+    927
+  ],
+  "files": {
+    "docs/SIZE_CHANNEL_NULL_ARITY_DILUTION_THRESHOLD_HARDENS_CYCLE927_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "c066b3acf0d19eb54fae5e50c07d2774f1cd8521",
+      "sha256": "18914fa29e3594dfb92465ba1128d61911861e12d756f910d573e662145caf2c"
+    },
+    "logs/runner-cache/frontier_cycle927_size_channel_2026_07_28.txt": {
+      "git_blob": "5704d2b306ec21a50ad548a935dfe51aea0f58bb",
+      "sha256": "ba352321d6662ae4d267d0a4512c3709670fab6449776434e25c1a229eb5d9ae"
+    },
+    "logs/runner-cache/frontier_cycle927_size_channel_independent_check_2026_07_28.txt": {
+      "git_blob": "6e7dbfaa80610bd8228a7f4c2a8cd49e22f6656f",
+      "sha256": "d8bd02df51bc689842a7f9e1a851a9059397875707342d84e9a1eb658e6df692"
+    },
+    "outputs/size_channel_cycle927_receipt_2026_07_28.json": {
+      "git_blob": "12edc846cdb31c19e5f9bb709533ee18d5d5a092",
+      "sha256": "2dd871f70c6486a20babb7b74048befb51a108a0feea57aee86ba3ff7f2fe51c"
+    },
+    "outputs/size_channel_independent_check_cycle927_receipt_2026_07_28.json": {
+      "git_blob": "a30d1be054b25a1960ac6cf383d925971f656d72",
+      "sha256": "432302f172fd8098268649f7e986e2cf620f4216cb76a7220b0c12077b330d56"
+    },
+    "scripts/frontier_cycle927_size_channel_2026_07_28.py": {
+      "git_blob": "fe2e0f14d1762e44c00b028ca40c5ead851fb48a",
+      "sha256": "caa3becbd2bfc97afc106e998e5f2b9ee23cb46efd8c673d04ee69ed554314a9"
+    },
+    "scripts/frontier_cycle927_size_channel_independent_check_2026_07_28.py": {
+      "git_blob": "a233c0d99cc9d8695af875cf0a9318dce186b827",
+      "sha256": "617fda8375901bed6260061e19e7d6b5d30d5ac460a02823fdb84130207d74fd"
+    }
+  },
+  "headline": "THE SECOND CHANNEL IS ARITY DILUTION, NOT SIZE \u2014 the premise falsified: per-pair C_ab on loop-free geometries is a function of POINTER DEGREE AND FIELD ALONE (separation ratio 619; flat in size beyond a saturation step at arm length 2 \u2014 a 3-site and a 15-site chain agree to six decimals; acts ONLY through the independence gate, zero content failures in 45 systems x 5 fields); only degree 2 crosses the 0.02 gate at the high field = THE COMPLETE G1 EXPLANATION; mechanism discrimination: arity dilution 10/10 (the arity ladder \u2014 added singleton arms protect a pair they never touch: 0.0217 -> 0.0126 -> 0.0104 -> 0.0094), five rivals refuted on designed cells; Q3 RESOLVES OPPOSITE TO THE SUSPICION: degree carries the graded ceiling (fixed degree x varied size: ceiling never moves; fixed size x varied degree: threshold is 5 at EVERY size) \u2014 THE 919 THRESHOLD HARDENS (co-variation broken; zero contradictions at matched grade; the 926 gate-fragility certificate is a different axis and stands); THE FIELD CEILING IS TWO MECHANISMS (independence wall at degree 2; persistence razor at degrees 3-4 with C_ab far under gate); 921's size sentence CORRECTED on its branch; named joint open: the arity variable under 926's fragment/degree separation",
+  "independence": "checker on independent machinery (reversed bit order, hand-rolled Arnoldi vs expm_multiply vs dense Pade, SVD entropies, boolean-power distances, bitmask-DP MIS); 205 cells recomputed at zero disagreement (2.9e-13); SUPPORTED-WITH-FINDINGS, 15/17 claims, 13/13 teeth",
+  "note": "docs/SIZE_CHANNEL_NULL_ARITY_DILUTION_THRESHOLD_HARDENS_CYCLE927_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 37.9,
+    "primary": 58.4
+  }
+}

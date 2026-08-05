@@ -1734,3 +1734,23 @@ refreshed, none a silent rewrite.
   pointer-side gates, blockM14 — the capstone: if chi/excess/
   t_open derive in the same reduction, the complete star
   certification theorem closes).
+
+## blockQ17 / Cycle 946 — supervisor disposition (2026-08-05)
+
+SHIPPED as PR #6014 (stacked on #6012). Line-review: deliverable hashes
+recomputed and matched the worker report exactly; receipt structure
+verified (conditional value ONLY under CONDITIONAL_* key paths; zero
+raw 0.5 literals by my own sweep; axiom vendor-read pin present; H0 +
+no-privilege on the surface); wall-clock scan of the primary clean;
+14/14 checker teeth with the checker's own splice algorithm. The
+worker's five adopted refutations are the right calls — especially R2
+(the primary had left H0 unnamed; it is the block's most load-bearing
+line) and R4 (the occasion sharpening — the equal weight is a property
+of the occasion, not the site). The S4 refutation is the block's best
+finding shipped as a miss: record-indistinguishability follows
+menu-hood, not coverage. Supervisor wrote the note (the worker
+correctly wrote none), ship receipt with 7 pins, vocab-lint clean on
+the new file (pre-existing work_history flags left for the audit
+lane). The lane's wall moves from "no symmetry exists" (940, now
+model-contingent) to H0: prove the compiled substrate realizes the
+axiom's rule symmetry-faithfully.

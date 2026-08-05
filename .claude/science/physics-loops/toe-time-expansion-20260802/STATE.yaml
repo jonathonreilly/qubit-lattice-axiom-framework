@@ -821,3 +821,45 @@ network_loss_recovery_20260805: >
   2026-08-06 ~07:45 EDT — continue the GOAL.md queue. The axiom surface
   stays frozen pending the owner's decision on the neighborhood-weight
   candidate (dossier = 944's deliverable).
+
+c5_q17_cycle946_shipped: >
+  2026-08-05 — blockQ17 SHIPPED as PR #6014 (STACKED on #6012; branch
+  physics-loop/toe-time-blockQ17-20260802, tip b0626d59ac). THE FIRST
+  DERIVED-VALUES BLOCK: the mirror defect is 12 gates / 220 occurrences
+  (943 clause 1 confirmed — the 4 orientation drives, both banks both
+  cells — clause 2 REFUTED: an 8-gate mask-sensitive link ladder 943
+  never saw); the full splice (34,188 -> 34,408) makes the menu swap an
+  EXACT automorphism (L1/L2/L4 exact, L3 semantic 0-vs-139, L5 a
+  measured instrument false alarm); 940's negative proved
+  model-contingent. CONDITIONAL ON #6011 (pinned vendor-read
+  638b2b2c...) AND the NAMED-UNDISCHARGED H0 import (substrate law
+  realizes the axiom's rule symmetry-faithfully), the adopted
+  distribution clause + Qubit no-privilege derives w=1/2 at 3 of 5
+  genuine menus, PER OCCASION (checker R4). Sealed table 4/5 with S4
+  refuted-and-shipped: record-indistinguishability follows MENU-HOOD
+  (64 -> 8 observables). Five checker refutations adopted incl. the
+  unnamed H0. Successor queue: (1) H0 discharge — the lane's wall;
+  (2) the general form of the distribution; (3) the S4 finding as its
+  own object; (4) the 936 choice-gate placement artifact (702/254).
+
+owner_thread_science_census_20260805: >
+  Owner directive: ensure a FULL ledger of all meaningful science back
+  to the start. Three surveys run: (1) ledger history — peak 1,456
+  retained-grade rows 2026-06-21..29 vs 438 at tip; 97% of
+  displacements process-typed (no-go packet discipline 07-11/12 =
+  1,491 verdicts incl. 192 clean no-gos; axiom reset 06-30; third
+  sweep ran ON 08-03), only 66 of 1,028 genuinely failed re-audit;
+  (2) coverage — the ledger is complete+hash-exact over LANDED
+  docs-root claims (registrar: seed_audit_ledger.py at every landing
+  + nightly CI + pre-commit; 0 drift, 0 orphans) but is a live-tip
+  census, NOT historical: March-era stratum (~58 .claude/science
+  notes), ~24 substantive pre-seeding deletions (GW echo, Cabibbo/
+  Jarlskog, zero-import closure, DM/leptogenesis trio), ~2,510
+  branch-only notes (April CKM wave ~1,325; causal-time remainder
+  243; QUARK_ROUTE2 76), 14 FORK-PR-ONLY notes (PRs 5922..5998 subset
+  — the fragile tier), 275 dropped-row audit histories; (3) census
+  closure IN FLIGHT: worker building docs/repo/
+  SCIENCE_CENSUS_FULL_HISTORY_2026-08-05.md + machine-readable
+  unledgered index + fork-PR rescue into archive_unlanded/ on branch
+  physics-loop/science-census-20260805 (supervisor reviews then
+  ships; audit-lane options flagged not executed).

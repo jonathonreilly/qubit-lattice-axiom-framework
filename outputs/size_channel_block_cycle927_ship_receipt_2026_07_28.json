@@ -15,8 +15,8 @@
   ],
   "files": {
     "docs/SIZE_CHANNEL_NULL_ARITY_DILUTION_THRESHOLD_HARDENS_CYCLE927_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "c066b3acf0d19eb54fae5e50c07d2774f1cd8521",
-      "sha256": "18914fa29e3594dfb92465ba1128d61911861e12d756f910d573e662145caf2c"
+      "git_blob": "498f8042b5d26acdfc410edf768288d3c5daa8e0",
+      "sha256": "7115ac712d9405f3944df91bc08d7514cbbf154ca13dd968ad532a088ad44782"
     },
     "logs/runner-cache/frontier_cycle927_size_channel_2026_07_28.txt": {
       "git_blob": "5704d2b306ec21a50ad548a935dfe51aea0f58bb",
@@ -46,6 +46,13 @@
   "headline": "THE SECOND CHANNEL IS ARITY DILUTION, NOT SIZE \u2014 the premise falsified: per-pair C_ab on loop-free geometries is a function of POINTER DEGREE AND FIELD ALONE (separation ratio 619; flat in size beyond a saturation step at arm length 2 \u2014 a 3-site and a 15-site chain agree to six decimals; acts ONLY through the independence gate, zero content failures in 45 systems x 5 fields); only degree 2 crosses the 0.02 gate at the high field = THE COMPLETE G1 EXPLANATION; mechanism discrimination: arity dilution 10/10 (the arity ladder \u2014 added singleton arms protect a pair they never touch: 0.0217 -> 0.0126 -> 0.0104 -> 0.0094), five rivals refuted on designed cells; Q3 RESOLVES OPPOSITE TO THE SUSPICION: degree carries the graded ceiling (fixed degree x varied size: ceiling never moves; fixed size x varied degree: threshold is 5 at EVERY size) \u2014 THE 919 THRESHOLD HARDENS (co-variation broken; zero contradictions at matched grade; the 926 gate-fragility certificate is a different axis and stands); THE FIELD CEILING IS TWO MECHANISMS (independence wall at degree 2; persistence razor at degrees 3-4 with C_ab far under gate); 921's size sentence CORRECTED on its branch; named joint open: the arity variable under 926's fragment/degree separation",
   "independence": "checker on independent machinery (reversed bit order, hand-rolled Arnoldi vs expm_multiply vs dense Pade, SVD entropies, boolean-power distances, bitmask-DP MIS); 205 cells recomputed at zero disagreement (2.9e-13); SUPPORTED-WITH-FINDINGS, 15/17 claims, 13/13 teeth",
   "note": "docs/SIZE_CHANNEL_NULL_ARITY_DILUTION_THRESHOLD_HARDENS_CYCLE927_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "post_ship_edits": [
+    {
+      "authority": "supervisor post-ship precision edit (the standing pattern); no claim strengthened",
+      "date": "2026-08-05",
+      "edit": "Cycle-929 qualification: the degree-and-field law is the anchor-multiplicity-one restriction (the full law is F(d, m_a, m_b, field, t); merged pairs cross the gate at every degree; the G1 explanation and the degree indexing are unaffected/confirmed). Bracketed dated qualification added; note pin refreshed."
+    }
+  ],
   "runtime_seconds": {
     "checker": 37.9,
     "primary": 58.4

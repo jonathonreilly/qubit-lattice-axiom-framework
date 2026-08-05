@@ -88,7 +88,18 @@ within-degree spread 2.4e-5 bits against an across-degree range of
 0.0148 bits (separation ratio 619). **At lambda = 0.10 only degree
 2 exceeds the 0.02 gate — the complete explanation of the G1
 exception** (G1 is the only degree-2 loop-free geometry in the 917
-ladder). The claim is the table and the monotone fall, not a
+ladder). [Qualification 2026-08-05, Cycle 929: this law is the
+MULTIPLICITY-ONE restriction — on this note's families every
+fragment has anchor multiplicity 1, so "alone" should read "and
+field alone AT ANCHOR MULTIPLICITY ONE". The full per-pair law is
+F(d, m_a, m_b, field, t): raising a fragment's anchor multiplicity
+at fixed degree shifts C_ab by up to 1.56e-2 bits (339x any size
+effect), and MERGED pairs cross the 0.02 gate at EVERY degree.
+"Only degree 2 exceeds the gate" is true of the multiplicity-one
+baseline table and false of the full law; the G1 explanation is
+unaffected (G1 has no merged anchors). The variable indexing (raw
+degree) is CONFIRMED by identity argument. See the Cycle-929
+note.] The claim is the table and the monotone fall, not a
 functional form (the checker's form-degeneracy attack shows
 several forms fit comparably).
 

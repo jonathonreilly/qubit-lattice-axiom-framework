@@ -1,0 +1,2139 @@
+{
+ "RC2_statement": "RC-2, SHORT-ARC NECESSITY (Cycle 922, FITTED-THEN-SEALED, not derived).  A bank-owned entry-gap reading occurs only if 2P < N, equivalently b >= floor(B/2).  At B = 10, N = 75 and P = 8(9-b), so the condition cuts the family at b >= 5, i.e. P in {8, 16, 24, 32} may fire and P in {40, 48, 56, 64, 72} may not.  Across Cycles 922 and 930 necessity was never violated on 27 cells and sufficiency failed on exactly the two b = B-2 / P = 8 cells (B=8.b6 and B=9.b7), both flagged in advance.  B=10's b = 8 cell is the third instance of that pattern and is unmeasured before this runner.",
+ "TP_at_B10": {
+  "cells_checked_B3_to_B24": 253,
+  "disagreements": [],
+  "fourth_fixed_row_cells": [
+   {
+    "P_shift_fixed_rows": [
+     19,
+     22,
+     24,
+     59
+    ],
+    "bank": 4,
+    "extra_P_shift_fixed_rows": [
+     59
+    ],
+    "first_shadowed": {
+     "handoff_swap": false,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "h_r_b": 61,
+    "h_r_b_has_no_P_preimage": true,
+    "h_r_b_one_below_third_pair_terminal": true,
+    "is_coincidence_cell": true,
+    "pairs": {
+     "handoff_swap": [
+      22,
+      62
+     ],
+     "swap_handoff": [
+      24,
+      64
+     ],
+     "swap_swap": [
+      19,
+      59
+     ]
+    },
+    "period": 40,
+    "reverse_rows": [
+     62,
+     59
+    ],
+    "rows_sorted": [
+     17,
+     19,
+     22,
+     24,
+     59,
+     61,
+     62,
+     64
+    ],
+    "shadowed_rows": [
+     62
+    ],
+    "spans": {
+     "handoff_swap": true,
+     "swap_handoff": true,
+     "swap_swap": true
+    },
+    "stations": 75,
+    "terminal_shadowed": {
+     "handoff_swap": true,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "three_first_stations": [
+     19,
+     22,
+     24
+    ],
+    "unit_gap_lower_stations": [
+     61
+    ]
+   }
+  ],
+  "rows": [
+   {
+    "P_shift_fixed_rows": [
+     4,
+     7,
+     9
+    ],
+    "bank": 1,
+    "extra_P_shift_fixed_rows": [],
+    "first_shadowed": {
+     "handoff_swap": false,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "h_r_b": 70,
+    "h_r_b_has_no_P_preimage": true,
+    "h_r_b_one_below_third_pair_terminal": true,
+    "is_coincidence_cell": false,
+    "pairs": {
+     "handoff_swap": [
+      7,
+      71
+     ],
+     "swap_handoff": [
+      9,
+      73
+     ],
+     "swap_swap": [
+      4,
+      68
+     ]
+    },
+    "period": 64,
+    "reverse_rows": [
+     71,
+     68
+    ],
+    "rows_sorted": [
+     2,
+     4,
+     7,
+     9,
+     68,
+     70,
+     71,
+     73
+    ],
+    "shadowed_rows": [
+     71
+    ],
+    "spans": {
+     "handoff_swap": true,
+     "swap_handoff": true,
+     "swap_swap": true
+    },
+    "stations": 75,
+    "terminal_shadowed": {
+     "handoff_swap": true,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "three_first_stations": [
+     4,
+     7,
+     9
+    ],
+    "unit_gap_lower_stations": [
+     70
+    ]
+   },
+   {
+    "P_shift_fixed_rows": [
+     9,
+     12,
+     14
+    ],
+    "bank": 2,
+    "extra_P_shift_fixed_rows": [],
+    "first_shadowed": {
+     "handoff_swap": false,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "h_r_b": 67,
+    "h_r_b_has_no_P_preimage": true,
+    "h_r_b_one_below_third_pair_terminal": true,
+    "is_coincidence_cell": false,
+    "pairs": {
+     "handoff_swap": [
+      12,
+      68
+     ],
+     "swap_handoff": [
+      14,
+      70
+     ],
+     "swap_swap": [
+      9,
+      65
+     ]
+    },
+    "period": 56,
+    "reverse_rows": [
+     68,
+     65
+    ],
+    "rows_sorted": [
+     7,
+     9,
+     12,
+     14,
+     65,
+     67,
+     68,
+     70
+    ],
+    "shadowed_rows": [
+     68
+    ],
+    "spans": {
+     "handoff_swap": true,
+     "swap_handoff": true,
+     "swap_swap": true
+    },
+    "stations": 75,
+    "terminal_shadowed": {
+     "handoff_swap": true,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "three_first_stations": [
+     9,
+     12,
+     14
+    ],
+    "unit_gap_lower_stations": [
+     67
+    ]
+   },
+   {
+    "P_shift_fixed_rows": [
+     14,
+     17,
+     19
+    ],
+    "bank": 3,
+    "extra_P_shift_fixed_rows": [],
+    "first_shadowed": {
+     "handoff_swap": false,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "h_r_b": 64,
+    "h_r_b_has_no_P_preimage": true,
+    "h_r_b_one_below_third_pair_terminal": true,
+    "is_coincidence_cell": false,
+    "pairs": {
+     "handoff_swap": [
+      17,
+      65
+     ],
+     "swap_handoff": [
+      19,
+      67
+     ],
+     "swap_swap": [
+      14,
+      62
+     ]
+    },
+    "period": 48,
+    "reverse_rows": [
+     65,
+     62
+    ],
+    "rows_sorted": [
+     12,
+     14,
+     17,
+     19,
+     62,
+     64,
+     65,
+     67
+    ],
+    "shadowed_rows": [
+     65
+    ],
+    "spans": {
+     "handoff_swap": true,
+     "swap_handoff": true,
+     "swap_swap": true
+    },
+    "stations": 75,
+    "terminal_shadowed": {
+     "handoff_swap": true,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "three_first_stations": [
+     14,
+     17,
+     19
+    ],
+    "unit_gap_lower_stations": [
+     64
+    ]
+   },
+   {
+    "P_shift_fixed_rows": [
+     19,
+     22,
+     24,
+     59
+    ],
+    "bank": 4,
+    "extra_P_shift_fixed_rows": [
+     59
+    ],
+    "first_shadowed": {
+     "handoff_swap": false,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "h_r_b": 61,
+    "h_r_b_has_no_P_preimage": true,
+    "h_r_b_one_below_third_pair_terminal": true,
+    "is_coincidence_cell": true,
+    "pairs": {
+     "handoff_swap": [
+      22,
+      62
+     ],
+     "swap_handoff": [
+      24,
+      64
+     ],
+     "swap_swap": [
+      19,
+      59
+     ]
+    },
+    "period": 40,
+    "reverse_rows": [
+     62,
+     59
+    ],
+    "rows_sorted": [
+     17,
+     19,
+     22,
+     24,
+     59,
+     61,
+     62,
+     64
+    ],
+    "shadowed_rows": [
+     62
+    ],
+    "spans": {
+     "handoff_swap": true,
+     "swap_handoff": true,
+     "swap_swap": true
+    },
+    "stations": 75,
+    "terminal_shadowed": {
+     "handoff_swap": true,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "three_first_stations": [
+     19,
+     22,
+     24
+    ],
+    "unit_gap_lower_stations": [
+     61
+    ]
+   },
+   {
+    "P_shift_fixed_rows": [
+     24,
+     27,
+     29
+    ],
+    "bank": 5,
+    "extra_P_shift_fixed_rows": [],
+    "first_shadowed": {
+     "handoff_swap": false,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "h_r_b": 58,
+    "h_r_b_has_no_P_preimage": true,
+    "h_r_b_one_below_third_pair_terminal": true,
+    "is_coincidence_cell": false,
+    "pairs": {
+     "handoff_swap": [
+      27,
+      59
+     ],
+     "swap_handoff": [
+      29,
+      61
+     ],
+     "swap_swap": [
+      24,
+      56
+     ]
+    },
+    "period": 32,
+    "reverse_rows": [
+     59,
+     56
+    ],
+    "rows_sorted": [
+     22,
+     24,
+     27,
+     29,
+     56,
+     58,
+     59,
+     61
+    ],
+    "shadowed_rows": [
+     59
+    ],
+    "spans": {
+     "handoff_swap": true,
+     "swap_handoff": true,
+     "swap_swap": true
+    },
+    "stations": 75,
+    "terminal_shadowed": {
+     "handoff_swap": true,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "three_first_stations": [
+     24,
+     27,
+     29
+    ],
+    "unit_gap_lower_stations": [
+     58
+    ]
+   },
+   {
+    "P_shift_fixed_rows": [
+     29,
+     32,
+     34
+    ],
+    "bank": 6,
+    "extra_P_shift_fixed_rows": [],
+    "first_shadowed": {
+     "handoff_swap": false,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "h_r_b": 55,
+    "h_r_b_has_no_P_preimage": true,
+    "h_r_b_one_below_third_pair_terminal": true,
+    "is_coincidence_cell": false,
+    "pairs": {
+     "handoff_swap": [
+      32,
+      56
+     ],
+     "swap_handoff": [
+      34,
+      58
+     ],
+     "swap_swap": [
+      29,
+      53
+     ]
+    },
+    "period": 24,
+    "reverse_rows": [
+     56,
+     53
+    ],
+    "rows_sorted": [
+     27,
+     29,
+     32,
+     34,
+     53,
+     55,
+     56,
+     58
+    ],
+    "shadowed_rows": [
+     56
+    ],
+    "spans": {
+     "handoff_swap": true,
+     "swap_handoff": true,
+     "swap_swap": true
+    },
+    "stations": 75,
+    "terminal_shadowed": {
+     "handoff_swap": true,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "three_first_stations": [
+     29,
+     32,
+     34
+    ],
+    "unit_gap_lower_stations": [
+     55
+    ]
+   },
+   {
+    "P_shift_fixed_rows": [
+     34,
+     37,
+     39
+    ],
+    "bank": 7,
+    "extra_P_shift_fixed_rows": [],
+    "first_shadowed": {
+     "handoff_swap": false,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "h_r_b": 52,
+    "h_r_b_has_no_P_preimage": true,
+    "h_r_b_one_below_third_pair_terminal": true,
+    "is_coincidence_cell": false,
+    "pairs": {
+     "handoff_swap": [
+      37,
+      53
+     ],
+     "swap_handoff": [
+      39,
+      55
+     ],
+     "swap_swap": [
+      34,
+      50
+     ]
+    },
+    "period": 16,
+    "reverse_rows": [
+     53,
+     50
+    ],
+    "rows_sorted": [
+     32,
+     34,
+     37,
+     39,
+     50,
+     52,
+     53,
+     55
+    ],
+    "shadowed_rows": [
+     53
+    ],
+    "spans": {
+     "handoff_swap": true,
+     "swap_handoff": true,
+     "swap_swap": true
+    },
+    "stations": 75,
+    "terminal_shadowed": {
+     "handoff_swap": true,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "three_first_stations": [
+     34,
+     37,
+     39
+    ],
+    "unit_gap_lower_stations": [
+     52
+    ]
+   },
+   {
+    "P_shift_fixed_rows": [
+     39,
+     42,
+     44
+    ],
+    "bank": 8,
+    "extra_P_shift_fixed_rows": [],
+    "first_shadowed": {
+     "handoff_swap": false,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "h_r_b": 49,
+    "h_r_b_has_no_P_preimage": true,
+    "h_r_b_one_below_third_pair_terminal": true,
+    "is_coincidence_cell": false,
+    "pairs": {
+     "handoff_swap": [
+      42,
+      50
+     ],
+     "swap_handoff": [
+      44,
+      52
+     ],
+     "swap_swap": [
+      39,
+      47
+     ]
+    },
+    "period": 8,
+    "reverse_rows": [
+     50,
+     47
+    ],
+    "rows_sorted": [
+     37,
+     39,
+     42,
+     44,
+     47,
+     49,
+     50,
+     52
+    ],
+    "shadowed_rows": [
+     50
+    ],
+    "spans": {
+     "handoff_swap": true,
+     "swap_handoff": true,
+     "swap_swap": true
+    },
+    "stations": 75,
+    "terminal_shadowed": {
+     "handoff_swap": true,
+     "swap_handoff": false,
+     "swap_swap": false
+    },
+    "three_first_stations": [
+     39,
+     42,
+     44
+    ],
+    "unit_gap_lower_stations": [
+     49
+    ]
+   }
+  ]
+ },
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec; supervisor review",
+ "blind_tier": {
+  "SEAL_HOLDS": true,
+  "anatomised_episodes": [],
+  "anatomy_aggregate_counts": {},
+  "banks": 10,
+  "clocks": "bank clocks only",
+  "clocks_swept": 54000,
+  "closed_quiescent_stretches": 697592,
+  "horizon": 16384,
+  "lanes": 5400,
+  "longest_closed_stretch": 525,
+  "per_cell_rows": [
+   {
+    "bank": 1,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 10,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 64,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {},
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 316
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 7814,
+      "S2_equal_width": 8,
+      "S3_equal_width_le_Pm1": 8,
+      "S4_and_8_clean_ticks": 8,
+      "S5_FULL_CONFIGURATION": 8,
+      "reject_R3_tail_window_not_P_exact": 8
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 316,
+     "ENTRY_GAP_swap_swap": 7830
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 75,
+    "two_P": 128
+   },
+   {
+    "bank": 2,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 10,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 56,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 148
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1206
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 6315,
+      "S2_equal_width": 106,
+      "S3_equal_width_le_Pm1": 106,
+      "S4_and_8_clean_ticks": 106,
+      "S5_FULL_CONFIGURATION": 8,
+      "reject_R3_tail_window_not_P_exact": 8
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 148,
+     "ENTRY_GAP_swap_handoff": 1206,
+     "ENTRY_GAP_swap_swap": 6329
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 75,
+    "two_P": 112
+   },
+   {
+    "bank": 3,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 10,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 48,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 6
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 734
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 12717,
+      "S2_equal_width": 2,
+      "S3_equal_width_le_Pm1": 2,
+      "S4_and_8_clean_ticks": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 6,
+     "ENTRY_GAP_swap_handoff": 734,
+     "ENTRY_GAP_swap_swap": 13165
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 75,
+    "two_P": 96
+   },
+   {
+    "bank": 4,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 10,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 40,
+    "episodes_on_the_bank_clock": 2,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 378
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1142
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 9941,
+      "S2_equal_width": 68,
+      "S3_equal_width_le_Pm1": 68,
+      "S4_and_8_clean_ticks": 68
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 378,
+     "ENTRY_GAP_swap_handoff": 1142,
+     "ENTRY_GAP_swap_swap": 10143
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 2,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 75,
+    "two_P": 80
+   },
+   {
+    "bank": 5,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 10,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 32,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 330
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 792
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 9029,
+      "S2_equal_width": 148,
+      "S3_equal_width_le_Pm1": 148,
+      "S4_and_8_clean_ticks": 148,
+      "S5_FULL_CONFIGURATION": 146,
+      "reject_R2_stretch_shorter_than_2P": 144,
+      "reject_R3_tail_window_not_P_exact": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 330,
+     "ENTRY_GAP_swap_handoff": 792,
+     "ENTRY_GAP_swap_swap": 9171
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 75,
+    "two_P": 64
+   },
+   {
+    "bank": 6,
+    "bank_owned_entry_gap_episodes": 48,
+    "banks": 10,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 48
+    },
+    "entry_gap_period": 24,
+    "episodes_on_the_bank_clock": 48,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 48,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 194
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 4257,
+      "S2_equal_width": 2,
+      "S3_equal_width_le_Pm1": 2,
+      "S4_and_8_clean_ticks": 2,
+      "S5_FULL_CONFIGURATION": 2,
+      "reject_R3_tail_window_not_P_exact": 2
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 12129,
+      "S2_equal_width": 186,
+      "S3_equal_width_le_Pm1": 186,
+      "S4_and_8_clean_ticks": 186,
+      "S5_FULL_CONFIGURATION": 186,
+      "S6_and_the_stretch_reads_P": 48,
+      "reject_ACCEPT": 48,
+      "reject_R3_tail_window_not_P_exact": 138
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 194,
+     "ENTRY_GAP_swap_handoff": 4257,
+     "ENTRY_GAP_swap_swap": 12417
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 48,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 75,
+    "two_P": 48
+   },
+   {
+    "bank": 7,
+    "bank_owned_entry_gap_episodes": 138,
+    "banks": 10,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 138
+    },
+    "entry_gap_period": 16,
+    "episodes_on_the_bank_clock": 138,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 138,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {},
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1531
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 11309,
+      "S2_equal_width": 138,
+      "S3_equal_width_le_Pm1": 138,
+      "S4_and_8_clean_ticks": 138,
+      "S5_FULL_CONFIGURATION": 138,
+      "S6_and_the_stretch_reads_P": 138,
+      "reject_ACCEPT": 138
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 1531,
+     "ENTRY_GAP_swap_swap": 11949
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 138,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 75,
+    "two_P": 32
+   },
+   {
+    "bank": 8,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 10,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 8,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {},
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 574
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 8391
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 574,
+     "ENTRY_GAP_swap_swap": 8817
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 75,
+    "two_P": 16
+   }
+  ],
+  "seconds": 514.1,
+  "stations": 75,
+  "substrate_failures": 0,
+  "third_pair_episodes": 0,
+  "third_pair_episodes_per_bank": {
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "6": 0,
+   "7": 0,
+   "8": 0
+  },
+  "third_pair_full_configurations": {
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "6": 0,
+   "7": 0,
+   "8": 0
+  },
+  "third_pair_refusal_components": {},
+  "third_pair_register_level_occurrences": {
+   "1": 0,
+   "2": 148,
+   "3": 6,
+   "4": 378,
+   "5": 330,
+   "6": 194,
+   "7": 0,
+   "8": 0
+  }
+ },
+ "blind_tier_statement": "THE BLIND TIER (Cycle 942).  Cycle 930's seal covers B = 9, 10, 11, 12 and predicts ZERO third-pair episodes at each.  Cycle 930 disclosed that B = 8 and B = 9 were already published -- the pinned Cycle-922 primary receipt carries ENTRY_GAP_handoff_swap = 0 on all six B=8 rows and the pinned Cycle-922 checker receipt carries the B=9 per-bank shape lists -- so the first genuinely blind tier is B >= 10.  No runner in this lineage has ever built B = 10.  This runner builds it at the full pinned horizon with all ten bank clocks, having first recomputed the seal from the 930-published text with its own implementation of the rule's pure function and audited the build log to show no B=10 corpus existed at that moment.",
+ "block": "toe-time-blockT8-20260802",
+ "build_log": [
+  {
+   "banks": 4,
+   "horizon": 16384,
+   "lanes": 648,
+   "stations": 27
+  },
+  {
+   "banks": 5,
+   "horizon": 16384,
+   "lanes": 1120,
+   "stations": 35
+  },
+  {
+   "banks": 7,
+   "horizon": 16384,
+   "lanes": 2448,
+   "stations": 51
+  },
+  {
+   "banks": 10,
+   "horizon": 16384,
+   "lanes": 5400,
+   "stations": 75
+  },
+  {
+   "banks": 3,
+   "horizon": 64,
+   "lanes": 304,
+   "stations": 19
+  },
+  {
+   "banks": 3,
+   "horizon": 64,
+   "lanes": 304,
+   "stations": 19
+  }
+ ],
+ "campaign": "toe-time-expansion-20260802",
+ "claim_type": "blind-tier measurement against a sealed prediction",
+ "cycles": [
+  942
+ ],
+ "determinism": {
+  "corpus_double_build_deterministic": true,
+  "corpus_double_build_digest": "3a900a415474122d5652070a7091fec090fa6d4b94d4aa500a34e89efd26134a",
+  "double_run_protocol": "the runner is executed twice cold; the two stdouts are compared after normalising the runtime fields, the per-tier seconds and the trailing RECEIPT digest line.  Every gate line, the SEAL line and the key-semantics digest must be byte identical.",
+  "key_semantics_sha256": "dc99365b60cf99e08a880dc9e9810745fd34a6fc53d59f9e0b16a2284f3fd28d",
+  "program_double_build_deterministic": true,
+  "program_double_build_digest": "a1adc24dfcce7e76c12a5119f1f6953d9b2528bc9b9b57bfaaf56f932c7072c8"
+ },
+ "disclosed_deviations": [
+  "MACHINERY REUSE, DECLARED.  This runner does NOT reimplement the corpus builder, the detector or the clock-local taxonomy.  It imports the pinned Cycle-930 primary as a module (sha256 afe78fdf..., git blob 1b163d8c...) and calls its committed code path, so the B=10 corpus is built by exactly the code that produced the pinned B=4..8 rows.  The restriction gate proves that code reproduces the pinned rows value for value in THIS environment before any B=10 construction.  The INDEPENDENT CHECKER does not reuse it: it generates ticks from the kernel's crossing identity and validates them against the kernel's own composed step function.",
+  "TIER SCOPING, DECLARED.  B=10 is built at the FULL pinned horizon H = 16384 with BANK CLOCKS ONLY (all ten), not pair clocks.  Every quantity this cycle reports at B=10 -- the third-pair register/episode counts, the ladder, the entry-gap carrier map, the clock-local shape counts and the per-bank period counts -- is a bank-clock quantity by construction in the pinned census (they are gated on len(member_banks)==1), so bank-clock-only construction is exact and complete for them.  What is NOT measured at B=10 and is NOT claimed: the pair-clock inheritance of episodes, and the 891 class-level counts, which need pair clocks.  Stated, not hidden.",
+  "RESTRICTION SCOPING, DECLARED.  B=4 is rebuilt with EVERY clock, which is what the pinned 891/922 class-level rows are computed over, so those rows are compared value for value.  B=5 and B=7 are rebuilt with BANK CLOCKS ONLY; every field of Cycle 930's per-cell rows is a bank-clock quantity by construction, and the closed-quiescent-stretch counts are lane-level, so all of those compare exactly.  B=6 and B=8 are NOT rebuilt, and the B=5/B=7 class-level 891 rows are NOT restricted against: the runtime budget buys the blind tier at the FULL horizon instead, which is the point of the block.  Cycle 930's spec allows B=5..7 spot rows; these are they, and B=7 is the richest tier in the pinned set (five cells, the 20-episode B7.b3 necessity counterexample, the 2244-tick longest stretch).  Stated, not hidden.",
+  "SCOPING-PROBE DISCLOSURE, IN FULL.  Before this runner was finalised the worker ran a timing probe that built B = 8, 9 and 10 with the same pinned machinery at the REDUCED horizon H = 2048 (bank clocks only) to size the budget, and read its output: at H = 2048 the third pair recorded ZERO register-level occurrences and ZERO episodes at all three bank counts, and no B=10 bank fired a bank-owned entry-gap episode at all.  The worker was therefore NOT blind when this file was written.  What that probe cannot touch: Cycle 930's seal is immutable and sha-pinned, it predates every B=10 corpus in this lineage, and this runner's gates are not conditioned on its prediction in either direction.  What it does mean: the H = 2048 reading is a corroborating pre-measurement on a different, eight-times smaller corpus, disclosed here as data rather than concealed as a peek.  The tier this block SHIPS -- B = 10 at the full pinned horizon H = 16384 -- had never been built by anyone, including the probe, and the probe's own numbers show why the full horizon is required: at H = 2048 the longest closed stretch is 298 ticks against 2244 at H = 16384 and NOTHING fires anywhere, so a reduced-horizon tier would have made both the third-pair test and RC-2's sufficiency side vacuous.",
+  "ANATOMY.  The census stores at most 6 sample rows per (bank, shape); every occurrence is COUNTED and every aggregate is exhaustive.  If -- and only if -- the blind tier reports a NONZERO third-pair episode count, a second, targeted, UNCAPPED pass anatomises every one of them.  With a zero count there is nothing to anatomise and the exhaustive counters are the finding.",
+  "THE SEALED PREDICTION IS NOT A PREMISE.  No gate passes because the prediction came true.  Gate F requires only that the instrument be live at B=10 and that any episode found be anatomised; the verdict is reported as data, in either direction.  The same posture is taken for RC-2 in gate G.",
+  "RC-2 IS FITTED-THEN-SEALED (Cycle 922), NOT DERIVED, and its model degeneracy (three closed forms indistinguishable inside an 8-wide band) is untouched here.  A B=10 agreement is one more sealed cell, not a derivation; a B=10 necessity violation would be a part-refutation."
+ ],
+ "exit_codes": {
+  "primary": 0
+ },
+ "files": {
+  "scripts/frontier_cycle942_blind_tier_2026_07_28.py": {
+   "git_blob": "fa62dcf2746558ca42f5634c571f8f5f67c49902",
+   "sha256": "268cebff0907f754339df842ce0db39a07d5022ef7c1c88d8e74f1d055f11dde"
+  }
+ },
+ "gate_results": {
+  "A_PINS": "PASS",
+  "B_TP_AT_B10": "PASS",
+  "C_DETECTOR": "PASS",
+  "D_RESTRICTION": "PASS",
+  "E_SEAL": "PASS",
+  "F_BLIND_THIRD_PAIR": "PASS",
+  "G_RC2_AT_B10": "PASS",
+  "H_LABEL_THEFT_AT_B10": "PASS",
+  "I_STRETCH_LOCAL_AT_B10": "PASS",
+  "J_TEETH": "PASS",
+  "K_VERDICT": "PASS"
+ },
+ "headline": "THE BLIND TIER IS BUILT.  B = 10 -- 5400 lanes, 75 stations, 697592 closed quiescent stretches, all ten bank clocks -- is the first tier in this lineage nobody had ever measured, and Cycle 930's seal (d4f8f058b13f) predicted ZERO third-pair episodes there.  MEASURED: 0.  The pair occurs 1056 times at register level and reaches the full stretch configuration 0 times, so the instrument is live; the zero is a measurement, and the seal survives its first genuinely blind test.  RC-2 at B=10: necessity violations 0; predicted firing banks [5, 6, 7, 8], measured [6, 7]; the b = B-2 = 8 cell (P = 8) stays SILENT -- a third instance of the b = B-2 sufficiency failure.  The value-coincidence cell b = 4 (entry gap 40 = the edge-4 complement) is clock-locally SAME_EDGE_COMPLEMENT x2.",
+ "independence": "primary only -- see the independent-check receipt",
+ "key_semantics": {
+  "B10_label_theft_shape_split": {
+   "SAME_EDGE_COMPLEMENT": 2
+  },
+  "B10_necessity_violations": 0,
+  "B10_rc2_carrier_map": [
+   {
+    "P": 64,
+    "RC2_predicts_fire": false,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b1",
+    "episodes_on_the_bank_clock": 0,
+    "measured_fires": false
+   },
+   {
+    "P": 56,
+    "RC2_predicts_fire": false,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b2",
+    "episodes_on_the_bank_clock": 0,
+    "measured_fires": false
+   },
+   {
+    "P": 48,
+    "RC2_predicts_fire": false,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b3",
+    "episodes_on_the_bank_clock": 0,
+    "measured_fires": false
+   },
+   {
+    "P": 40,
+    "RC2_predicts_fire": false,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b4",
+    "episodes_on_the_bank_clock": 2,
+    "measured_fires": false
+   },
+   {
+    "P": 32,
+    "RC2_predicts_fire": true,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b5",
+    "episodes_on_the_bank_clock": 0,
+    "measured_fires": false
+   },
+   {
+    "P": 24,
+    "RC2_predicts_fire": true,
+    "bank_owned_entry_gap_episodes": 48,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 48
+    },
+    "cell": "B10.b6",
+    "episodes_on_the_bank_clock": 48,
+    "measured_fires": true
+   },
+   {
+    "P": 16,
+    "RC2_predicts_fire": true,
+    "bank_owned_entry_gap_episodes": 138,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 138
+    },
+    "cell": "B10.b7",
+    "episodes_on_the_bank_clock": 138,
+    "measured_fires": true
+   },
+   {
+    "P": 8,
+    "RC2_predicts_fire": true,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b8",
+    "episodes_on_the_bank_clock": 0,
+    "measured_fires": false
+   }
+  ],
+  "B10_stretch_local_totals": {
+   "40": 4,
+   "48": 4,
+   "56": 0,
+   "64": 2,
+   "72": 0
+  },
+  "B10_stretches": 697592,
+  "B10_sufficiency_failures": [
+   "B10.b5",
+   "B10.b8"
+  ],
+  "B10_third_pair_episodes": 0,
+  "B10_third_pair_full_configurations": {
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "6": 0,
+   "7": 0,
+   "8": 0
+  },
+  "B10_third_pair_occurrences": {
+   "1": 0,
+   "2": 148,
+   "3": 6,
+   "4": 378,
+   "5": 330,
+   "6": 194,
+   "7": 0,
+   "8": 0
+  },
+  "SEAL_sha256": "d4f8f058b13f3063227b415a4f25be7211ea7a63d8aec09ff3722293499303e8",
+  "seal_recomputed": "d4f8f058b13f3063227b415a4f25be7211ea7a63d8aec09ff3722293499303e8"
+ },
+ "key_semantics_sha256": "dc99365b60cf99e08a880dc9e9810745fd34a6fc53d59f9e0b16a2284f3fd28d",
+ "label_theft_at_B10": {
+  "TP3_fourth_fixed_row": [
+   59
+  ],
+  "bank_owned_entry_gap_episodes": 0,
+  "clock_local_shape_counts": {
+   "SAME_EDGE_COMPLEMENT": 2
+  },
+  "coincidence_bank": 4,
+  "coincides_with_edge": [
+   4
+  ],
+  "entry_gap_value": 40,
+  "episodes_on_the_bank_clock": 2,
+  "own_edge_complement_values": {
+   "3": 32,
+   "4": 40
+  },
+  "the_891_value_based_label": "RELAY_ENTRY_GAP"
+ },
+ "label_theft_statement": "THE VALUE COINCIDENCE AT B = 10 (Cycle 922's label theft, checked at the blind tier).  Cycle 891's classifier is VALUE-based with entry-gap priority, so wherever a bank's entry-gap value 8(B-1-b) coincides with one of its own edge complements the ENTRY_GAP label is stolen from whatever actually produced the reading.  Bank b's own edge complements are N - DELTA(b-1) = 8b and N - DELTA(b) = 8(b+1); the coincidence cells are therefore b = (B-1)/2 and b = (B-2)/2.  At B = 10 only the second is an integer: b = 4, where the entry gap 8(10-1-4) = 40 equals the same-edge complement of edge 4.  The cell is classified CLOCK-LOCALLY here, the 922 way, and the value-based label is computed alongside it for contrast.",
+ "note": "none -- this block ships scripts, caches and receipts only",
+ "ones_and_twos_statement": "THE ONES-AND-TWOS LAW (Cycle 922).  A same-edge complement value with 2P >= N cannot close a ring-periodic reading, so it survives only as a stretch-local finite-form reading and therefore appears only in ones and twos.  At B = 10, N = 75, the complement values are 8(e+1) for e = 0..8 and the 2P >= N ones are P in {40, 48, 56, 64, 72}.  Censused on all ten bank clocks.",
+ "open": [
+  "B = 11 and B = 12 remain sealed and unbuilt",
+  "RC-2 stays fitted-then-sealed with its degeneracy band",
+  "RC-3 sufficiency untouched, still on the dynamical boundary"
+ ],
+ "pinned_inputs": {
+  "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "235965affc47ce7745327ef194e7c0ae31e6a6c8",
+   "sha256": "5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c"
+  },
+  "docs/P32_CARRIER_SHORT_ARC_LABEL_THEFT_CYCLE922_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "572090165a4e6ef876f1eb9a291795fba11118fc",
+   "sha256": "420c162b2530c7329c21915ff2eee8d91689a5f97688c1df29752841b6af949d"
+  },
+  "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "c12a05079f0b8c691a726c017edb817329efc499",
+   "sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e"
+  },
+  "logs/runner-cache/frontier_cycle922_p32_carrier_2026_07_28.txt": {
+   "git_blob": "4cd970d8261c5d705a2b02f909f97907a0ccb0d3",
+   "sha256": "256d8422a4d379062d6dc0163dc748b2063e6d0f7533598a90971030428eede1"
+  },
+  "logs/runner-cache/frontier_cycle922_p32_carrier_independent_check_2026_07_28.txt": {
+   "git_blob": "0f7c892f555538c95a2fd1b86a47c30f4b59ee2c",
+   "sha256": "add02c024c5f008e17fe135a103bb674fdca5d3c25be0a8fc39f653be7d7ec75"
+  },
+  "logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt": {
+   "git_blob": "d4e9755853b526a486471edf5bf015e11b1987e3",
+   "sha256": "55f0c16f7da54056e1b1bc5e0661b75e6486c65b0c470062563ef24369d4c666"
+  },
+  "logs/runner-cache/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.txt": {
+   "git_blob": "bc4f2d09eca25163de24ff8d177bb6234bd76f0f",
+   "sha256": "437fec1f8d8d5f45ab95818d6edeb5d4cd2276d7e2b71f86cde9d0702adc87fe"
+  },
+  "outputs/complement_independent_check_cycle891_receipt_2026_07_28.json": {
+   "git_blob": "478f19642c1d66a6e1575798f9974b645c9f9a18",
+   "sha256": "cb2f6badda7315725f5f33c5aad89e7e37cf9201472362e0af3a16c4225fae8f"
+  },
+  "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json": {
+   "git_blob": "f537715a927b00b817f8de2569953d78929c86db",
+   "sha256": "f8e30d50a50e39a13f8f968b2ae21991885b6c858c6c96439ed733fc8514bacd"
+  },
+  "outputs/p32_carrier_block_cycle922_ship_receipt_2026_07_28.json": {
+   "git_blob": "a39abd45b40897d872ecbccf2f5ee962ce66dc54",
+   "sha256": "9df9f38530b6d8bb8e4ebc9f76d5683ac065bf06f4edcfb2db9f3e70ef28ad76"
+  },
+  "outputs/p32_carrier_cycle922_receipt_2026_07_28.json": {
+   "git_blob": "4497a88d3d2cf7ca058ff759c8f3ecea8c042481",
+   "sha256": "ab40677256009a0b1ecdf841766aa055a113aeb93827dc1d1da21a9e1cb97954"
+  },
+  "outputs/p32_carrier_independent_check_cycle922_receipt_2026_07_28.json": {
+   "git_blob": "a1fcadfd795d08c9705722f7165349e361778b65",
+   "sha256": "e609eafcb6ef33c22ec0aa4481cc29ea5be46f5be1312a9ccd4822b154ff059e"
+  },
+  "outputs/third_pair_rc3_block_cycle930_ship_receipt_2026_07_28.json": {
+   "git_blob": "ead9dee1660abb5a7f7fe84dd604a3b065049fd9",
+   "sha256": "362fd3ea487540387b29682c37e119561889d466d87a672cdf0f2a356167eee4"
+  },
+  "outputs/third_pair_rc3_cycle930_receipt_2026_07_28.json": {
+   "git_blob": "0aaf4442470dac362d490adf5f093bb512e30b89",
+   "sha256": "a865ebc7c9ce2a03306c33a636f7583cadc0f3bc9ec3abfea0cac0491ae902a2"
+  },
+  "outputs/third_pair_rc3_independent_check_cycle930_receipt_2026_07_28.json": {
+   "git_blob": "4dfac9cb9ee9d5f68ebb28d28e4a81755de3101c",
+   "sha256": "a05795d4d902bf9d1261dd2d448fff8f0bd2de1d6d38023d72a35ea66c562955"
+  },
+  "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py": {
+   "git_blob": "3add288d1b7de5bcc45f5ef8f88f3cfb98105b8f",
+   "sha256": "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691"
+  },
+  "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": {
+   "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  "scripts/frontier_cycle879_b4_clock_relation_2026_07_28.py": {
+   "git_blob": "c2147a99c1a6879508fbf250051f87115b0b9d35",
+   "sha256": "40bf65b88db19a7872d3dd5de50c7746bbecd98ce87c2b1176ce18ec9e5f7b2f"
+  },
+  "scripts/frontier_cycle881_p11_characterization_2026_07_28.py": {
+   "git_blob": "4b7297890a822184914bace90f60b47dc09f8305",
+   "sha256": "7cc1c8984869d824f33d83ccf6599c6ef9e166766015979d204309c3e820ed35"
+  },
+  "scripts/frontier_cycle889_delta_spectrum_2026_07_28.py": {
+   "git_blob": "f1bdf1f789a85213a0a854ab0bed45e6bf250fed",
+   "sha256": "c18ed0c49281fd2d54ad013ba12264b181d1720349ee002b144c028b521dd826"
+  },
+  "scripts/frontier_cycle891_complement_independent_check_2026_07_28.py": {
+   "git_blob": "53f5cf560f6dfad20dc6b4b91b0c003c848c6bea",
+   "sha256": "f2e9ca32b7d3f863822126c05fbf6a3b637164e8969e5ec7c6c04f15cd89e568"
+  },
+  "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": {
+   "git_blob": "a1bbd49ffbe970193cc79054fb7219732f7c9873",
+   "sha256": "3d260f6641d05a22aee092145ea3e5c3b29f3a6882b4cbd9ae966424458afbb7"
+  },
+  "scripts/frontier_cycle922_p32_carrier_2026_07_28.py": {
+   "git_blob": "fdd77d879b142d1bafa1f76926c494bbc4480b1c",
+   "sha256": "9e1a8de7190188a89cd4449300ab56cc053d6a63eec328265fa80f9955ce3a83"
+  },
+  "scripts/frontier_cycle922_p32_carrier_independent_check_2026_07_28.py": {
+   "git_blob": "faae396e9801cfac4c8f6baa80d022397bed3f64",
+   "sha256": "fb7acd4bfe5fa1dcc8f22373861da2038dfdb169371c53d283ae65325d44b118"
+  },
+  "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": {
+   "git_blob": "1b163d8cf59d6143fa3bfd83a170e805f3e7d0c0",
+   "sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92"
+  },
+  "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py": {
+   "git_blob": "4ddfe42be4993593d328b13fe375225f4a0fa976",
+   "sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab"
+  }
+ },
+ "rc2_at_B10": {
+  "b_equals_B_minus_2_cell": {
+   "N": 75,
+   "P": 8,
+   "RC2_predicts_fire": true,
+   "agrees": false,
+   "bank": 8,
+   "bank_owned_entry_gap_episodes": 0,
+   "by_shape": {
+    "ENTRY_GAP_handoff_swap": 0,
+    "ENTRY_GAP_swap_handoff": 0,
+    "ENTRY_GAP_swap_swap": 0
+   },
+   "cell": "B10.b8",
+   "episodes_on_the_bank_clock": 0,
+   "full_configurations_presented": 0,
+   "is_b_equals_B_minus_2": true,
+   "measured_fires": false,
+   "two_P": 16
+  },
+  "carrier_map": [
+   {
+    "N": 75,
+    "P": 64,
+    "RC2_predicts_fire": false,
+    "agrees": true,
+    "bank": 1,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b1",
+    "episodes_on_the_bank_clock": 0,
+    "full_configurations_presented": 8,
+    "is_b_equals_B_minus_2": false,
+    "measured_fires": false,
+    "two_P": 128
+   },
+   {
+    "N": 75,
+    "P": 56,
+    "RC2_predicts_fire": false,
+    "agrees": true,
+    "bank": 2,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b2",
+    "episodes_on_the_bank_clock": 0,
+    "full_configurations_presented": 8,
+    "is_b_equals_B_minus_2": false,
+    "measured_fires": false,
+    "two_P": 112
+   },
+   {
+    "N": 75,
+    "P": 48,
+    "RC2_predicts_fire": false,
+    "agrees": true,
+    "bank": 3,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b3",
+    "episodes_on_the_bank_clock": 0,
+    "full_configurations_presented": 0,
+    "is_b_equals_B_minus_2": false,
+    "measured_fires": false,
+    "two_P": 96
+   },
+   {
+    "N": 75,
+    "P": 40,
+    "RC2_predicts_fire": false,
+    "agrees": true,
+    "bank": 4,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b4",
+    "episodes_on_the_bank_clock": 2,
+    "full_configurations_presented": 0,
+    "is_b_equals_B_minus_2": false,
+    "measured_fires": false,
+    "two_P": 80
+   },
+   {
+    "N": 75,
+    "P": 32,
+    "RC2_predicts_fire": true,
+    "agrees": false,
+    "bank": 5,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b5",
+    "episodes_on_the_bank_clock": 0,
+    "full_configurations_presented": 146,
+    "is_b_equals_B_minus_2": false,
+    "measured_fires": false,
+    "two_P": 64
+   },
+   {
+    "N": 75,
+    "P": 24,
+    "RC2_predicts_fire": true,
+    "agrees": true,
+    "bank": 6,
+    "bank_owned_entry_gap_episodes": 48,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 48
+    },
+    "cell": "B10.b6",
+    "episodes_on_the_bank_clock": 48,
+    "full_configurations_presented": 188,
+    "is_b_equals_B_minus_2": false,
+    "measured_fires": true,
+    "two_P": 48
+   },
+   {
+    "N": 75,
+    "P": 16,
+    "RC2_predicts_fire": true,
+    "agrees": true,
+    "bank": 7,
+    "bank_owned_entry_gap_episodes": 138,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 138
+    },
+    "cell": "B10.b7",
+    "episodes_on_the_bank_clock": 138,
+    "full_configurations_presented": 138,
+    "is_b_equals_B_minus_2": false,
+    "measured_fires": true,
+    "two_P": 32
+   },
+   {
+    "N": 75,
+    "P": 8,
+    "RC2_predicts_fire": true,
+    "agrees": false,
+    "bank": 8,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b8",
+    "episodes_on_the_bank_clock": 0,
+    "full_configurations_presented": 0,
+    "is_b_equals_B_minus_2": true,
+    "measured_fires": false,
+    "two_P": 16
+   }
+  ],
+  "necessity_holds": true,
+  "necessity_violations": [],
+  "sufficiency_failures": [
+   {
+    "N": 75,
+    "P": 32,
+    "RC2_predicts_fire": true,
+    "agrees": false,
+    "bank": 5,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b5",
+    "episodes_on_the_bank_clock": 0,
+    "full_configurations_presented": 146,
+    "is_b_equals_B_minus_2": false,
+    "measured_fires": false,
+    "two_P": 64
+   },
+   {
+    "N": 75,
+    "P": 8,
+    "RC2_predicts_fire": true,
+    "agrees": false,
+    "bank": 8,
+    "bank_owned_entry_gap_episodes": 0,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "cell": "B10.b8",
+    "episodes_on_the_bank_clock": 0,
+    "full_configurations_presented": 0,
+    "is_b_equals_B_minus_2": true,
+    "measured_fires": false,
+    "two_P": 16
+   }
+  ]
+ },
+ "restriction_gate": {
+  "fields_compared_per_cell": [
+   "banks",
+   "bank",
+   "entry_gap_period",
+   "two_P",
+   "stations",
+   "short_arc_2P_lt_N",
+   "episodes_on_the_bank_clock",
+   "bank_owned_entry_gap_episodes",
+   "by_shape",
+   "fires",
+   "register_level_pair_occurrences",
+   "ladder",
+   "firing_episodes_with_an_equal_width_entry_gap_pair",
+   "firing_episodes_with_only_unequal_width_entry_gap_pairs",
+   "firing_episodes_with_no_P_separated_pair_at_all",
+   "stable_region_pairs_equal_width",
+   "stable_region_pairs_unequal_width",
+   "stable_region_unequal_explained_by_tail_truncation"
+  ],
+  "seconds_per_tier": {
+   "4": 18.6,
+   "5": 35.5,
+   "7": 109.1
+  },
+  "third_pair_full_configurations_reproduced": {
+   "B4.b1": 0,
+   "B4.b2": 0,
+   "B5.b1": 0,
+   "B5.b2": 30,
+   "B5.b3": 0,
+   "B7.b1": 0,
+   "B7.b2": 0,
+   "B7.b3": 0,
+   "B7.b4": 0,
+   "B7.b5": 0
+  },
+  "third_pair_occurrences_reproduced": {
+   "B4.b1": 158,
+   "B4.b2": 16,
+   "B5.b1": 426,
+   "B5.b2": 104,
+   "B5.b3": 18,
+   "B7.b1": 30,
+   "B7.b2": 270,
+   "B7.b3": 176,
+   "B7.b4": 516,
+   "B7.b5": 44
+  },
+  "tier_rows": [
+   {
+    "banks": 4,
+    "cells": 2,
+    "checks": {
+     "class_counts_891": true,
+     "clocks_swept": true,
+     "clocks_swept_equals_expected": true,
+     "closed_quiescent_stretches": true,
+     "complements_observed": true,
+     "completeness_ledger": true,
+     "cooccurrence_clocks": true,
+     "entry_gap_table": true,
+     "longest_closed_stretch": true,
+     "per_cell_rows_930": true,
+     "substrate_failures_zero": true
+    },
+    "full_clocks": true,
+    "seconds": 18.6
+   },
+   {
+    "banks": 5,
+    "cells": 3,
+    "checks": {
+     "clocks_swept_equals_expected": true,
+     "closed_quiescent_stretches": true,
+     "entry_gap_table": true,
+     "longest_closed_stretch": true,
+     "per_cell_rows_930": true,
+     "substrate_failures_zero": true
+    },
+    "full_clocks": false,
+    "seconds": 35.5
+   },
+   {
+    "banks": 7,
+    "cells": 5,
+    "checks": {
+     "clocks_swept_equals_expected": true,
+     "closed_quiescent_stretches": true,
+     "entry_gap_table": true,
+     "longest_closed_stretch": true,
+     "per_cell_rows_930": true,
+     "substrate_failures_zero": true
+    },
+    "full_clocks": false,
+    "seconds": 109.1
+   }
+  ],
+  "total_failed_checks": 0
+ },
+ "runtime_limit_seconds": 900,
+ "runtime_seconds": 681.7,
+ "seal_recomputation": {
+  "TP_text_identical_across_four_sources": true,
+  "build_log_at_recomputation_time": [
+   {
+    "banks": 4,
+    "horizon": 16384,
+    "lanes": 648,
+    "stations": 27
+   },
+   {
+    "banks": 5,
+    "horizon": 16384,
+    "lanes": 1120,
+    "stations": 35
+   },
+   {
+    "banks": 7,
+    "horizon": 16384,
+    "lanes": 2448,
+    "stations": 51
+   }
+  ],
+  "no_sealed_tier_corpus_existed_at_recomputation": true,
+  "own_payload_equals_published_payload": true,
+  "pinned_expectation": "d4f8f058b13f3063227b415a4f25be7211ea7a63d8aec09ff3722293499303e8",
+  "published_SEAL_sha256": "d4f8f058b13f3063227b415a4f25be7211ea7a63d8aec09ff3722293499303e8",
+  "recomputed_from_published_payload": "d4f8f058b13f3063227b415a4f25be7211ea7a63d8aec09ff3722293499303e8",
+  "recomputed_from_published_text_and_own_arithmetic": "d4f8f058b13f3063227b415a4f25be7211ea7a63d8aec09ff3722293499303e8",
+  "sealed_payload": {
+   "TP_STATEMENT": "THE THIRD-PAIR RULE (TP).  Fix B, N = 8B-5, a bank b with 1 <= b <= B-2, and P = 8(B-1-b).  Bank b's eight incident transport rows are, for each incident edge e in {b-1, b}, h_f(e) = 4+5e-2, f(e) = 4+5e, r(e) = 8B-9-3e and h_r(e) = 8B-9-3e+2.  RC-1 (Cycle 922, derived) realises P by exactly the three ordered same-token pairs (f(b-1), r(b)), (f(b), h_r(b-1)) and (h_f(b), r(b-1)).  TP-1 SHADOWING (derived station arithmetic).  Sorted by station index the eight rows have exactly ONE consecutive gap equal to 1, namely r(b-1) - h_r(b) = (8B-6-3b) - (8B-7-3b) = 1; every other consecutive gap is at least 2.  A token advances exactly one station per tick, so every crossing of r(b-1) by a token is immediately preceded, one tick earlier and BY THAT SAME TOKEN, by that token's crossing of h_r(b), which is also a row of bank b.  r(b-1) is therefore the unique own row of bank b that can open a dirty run only when the own-row crossing one tick before it leaves the bank clean.  TP-2 UNIQUENESS AMONG THE THREE PAIRS (derived).  Of the three RC-1 pairs exactly one terminates on r(b-1) -- the third, (h_f(b), r(b-1)).  The other two terminate on r(b) and on h_r(b-1), whose predecessors r(b)-1 = 8B-10-3b and h_r(b-1)-1 = 8B-5-3b are never rows of bank b for 1 <= b <= B-2.  The third pair is therefore the unique entry-gap pair whose second run-start is shadowed, and the three pairs' first stations f(b-1), h_f(b), f(b) are all unshadowed.  TP-3 THE SHIFT PICTURE (derived).  Writing R for the eight rows, the three first stations f(b-1), h_f(b), f(b) are always P-shift-fixed (s in R and s+P in R).  They are the ONLY such rows except on the cells where the entry-gap value coincides with the bank's own edge complement, b = floor((B-1)/2), where exactly one reverse row becomes a fourth one -- r(b-1) at odd B (r(b-1) + P = f(b-1)) and r(b) at even B (r(b) + P = f(b)) -- and those are precisely Cycle 922's b = (B-1)/2 or (B-2)/2 label-theft cells, arriving here from the geometry side.  At odd B the fourth fixed row is the THIRD PAIR'S OWN TERMINAL.  Separately and without exception, h_r(b) has NO P-preimage in R: h_r(b) - P = 5b+1, which is never a row of bank b for 1 <= b <= B-2.  So h_r(b) is a row no P-shift can reach, and it sits exactly one station below r(b-1), the one entry-gap terminal that has to open a run.  TP-4 THE MEASURED FACT (exhaustive, B=4..8, every bank clock, every closed quiescent stretch).  The third pair is NOT geometrically absent: it occurs as a consecutive same-token P-separated run-start pair in every tier and at most cells.  What is exactly zero is its coincidence with a reading: in no stretch that the detector reads at period P does the third pair occur.  Wherever the third pair reaches the full stretch configuration at all, the detector's rejection is R3 -- the terminal 2P+1 ticks of the closed quiescent stretch are not P-exact.  STATUS.  TP-1, TP-2 and TP-3 are DERIVED pure station arithmetic, exhaustively verified.  TP-4's zero is MEASURED and SEALED at B=9..12, NOT derived: the shadowing asymmetry explains why the third pair is the fragile one, it does not prove the count is zero.",
+   "predicted_other_two_pairs_terminals_unshadowed": {
+    "10": true,
+    "11": true,
+    "12": true,
+    "9": true
+   },
+   "predicted_third_pair_episodes": {
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "9": 0
+   },
+   "predicted_third_pair_exists_geometrically": {
+    "10": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "9": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   },
+   "predicted_third_pair_terminal_is_shadowed_everywhere": {
+    "10": true,
+    "11": true,
+    "12": true,
+    "9": true
+   }
+  },
+  "sealed_prediction_at_the_blind_tier": 0
+ },
+ "stretch_local_at_B10": {
+  "census": [
+   {
+    "N": 75,
+    "P": 8,
+    "banks_reading_it": [],
+    "clock_local_shapes": {},
+    "episodes_per_bank_clock": {},
+    "episodes_total": 0,
+    "stretch_local_only_2P_ge_N": false,
+    "two_P": 16
+   },
+   {
+    "N": 75,
+    "P": 16,
+    "banks_reading_it": [
+     4,
+     7,
+     9
+    ],
+    "clock_local_shapes": {
+     "b4|CROSS_TOKEN": 540,
+     "b7|ENTRY_GAP_swap_swap": 138,
+     "b9|CROSS_TOKEN": 14
+    },
+    "episodes_per_bank_clock": {
+     "4": 540,
+     "7": 138,
+     "9": 14
+    },
+    "episodes_total": 692,
+    "stretch_local_only_2P_ge_N": false,
+    "two_P": 32
+   },
+   {
+    "N": 75,
+    "P": 24,
+    "banks_reading_it": [
+     3,
+     6,
+     9
+    ],
+    "clock_local_shapes": {
+     "b3|CROSS_TOKEN": 40,
+     "b6|CROSS_TOKEN": 46,
+     "b6|ENTRY_GAP_swap_swap": 48,
+     "b9|CROSS_TOKEN": 4
+    },
+    "episodes_per_bank_clock": {
+     "3": 40,
+     "6": 48,
+     "9": 4
+    },
+    "episodes_total": 92,
+    "stretch_local_only_2P_ge_N": false,
+    "two_P": 48
+   },
+   {
+    "N": 75,
+    "P": 32,
+    "banks_reading_it": [
+     3,
+     4,
+     7,
+     9
+    ],
+    "clock_local_shapes": {
+     "b3|CROSS_TOKEN": 1272,
+     "b4|CROSS_TOKEN": 112,
+     "b4|SAME_EDGE_COMPLEMENT": 2,
+     "b7|CROSS_TOKEN": 2,
+     "b9|CROSS_TOKEN": 4
+    },
+    "episodes_per_bank_clock": {
+     "3": 1272,
+     "4": 114,
+     "7": 2,
+     "9": 4
+    },
+    "episodes_total": 1392,
+    "stretch_local_only_2P_ge_N": false,
+    "two_P": 64
+   },
+   {
+    "N": 75,
+    "P": 40,
+    "banks_reading_it": [
+     4,
+     5
+    ],
+    "clock_local_shapes": {
+     "b4|SAME_EDGE_COMPLEMENT": 2,
+     "b5|SAME_EDGE_COMPLEMENT": 2
+    },
+    "episodes_per_bank_clock": {
+     "4": 2,
+     "5": 2
+    },
+    "episodes_total": 4,
+    "stretch_local_only_2P_ge_N": true,
+    "two_P": 80
+   },
+   {
+    "N": 75,
+    "P": 48,
+    "banks_reading_it": [
+     0,
+     5
+    ],
+    "clock_local_shapes": {
+     "b0|CROSS_TOKEN": 2,
+     "b5|SAME_EDGE_COMPLEMENT": 2
+    },
+    "episodes_per_bank_clock": {
+     "0": 2,
+     "5": 2
+    },
+    "episodes_total": 4,
+    "stretch_local_only_2P_ge_N": true,
+    "two_P": 96
+   },
+   {
+    "N": 75,
+    "P": 56,
+    "banks_reading_it": [],
+    "clock_local_shapes": {},
+    "episodes_per_bank_clock": {},
+    "episodes_total": 0,
+    "stretch_local_only_2P_ge_N": true,
+    "two_P": 112
+   },
+   {
+    "N": 75,
+    "P": 64,
+    "banks_reading_it": [
+     7
+    ],
+    "clock_local_shapes": {
+     "b7|CROSS_TOKEN": 2,
+     "b7|SAME_EDGE_COMPLEMENT": 2
+    },
+    "episodes_per_bank_clock": {
+     "7": 2
+    },
+    "episodes_total": 2,
+    "stretch_local_only_2P_ge_N": true,
+    "two_P": 128
+   },
+   {
+    "N": 75,
+    "P": 72,
+    "banks_reading_it": [],
+    "clock_local_shapes": {},
+    "episodes_per_bank_clock": {},
+    "episodes_total": 0,
+    "stretch_local_only_2P_ge_N": true,
+    "two_P": 144
+   }
+  ],
+  "complement_values": [
+   8,
+   16,
+   24,
+   32,
+   40,
+   48,
+   56,
+   64,
+   72
+  ],
+  "every_per_bank_count_is_one_or_two": true,
+  "multiplicity_histogram": {
+   "2": 5
+  },
+  "stretch_local_values_2P_ge_N": [
+   40,
+   48,
+   56,
+   64,
+   72
+  ],
+  "totals": {
+   "40": 4,
+   "48": 4,
+   "56": 0,
+   "64": 2,
+   "72": 0
+  }
+ },
+ "teeth": [
+  {
+   "fires": true,
+   "mismatched": [
+    "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py"
+   ],
+   "tooth": "tampered_pin_is_caught"
+  },
+  {
+   "cell": "B10.b8",
+   "classifier_names_it": "ENTRY_GAP_handoff_swap",
+   "detector_reads_P": true,
+   "fires": true,
+   "note": "a REAL third-pair episode at B=10 -- the stations really are P apart, the classifier really does name the shape, and the detector really does read P on a stretch of this form -- would be reported by the identical code path that reports the blind-tier count, so a zero is not an instrument blind spot",
+   "period": 8,
+   "planted_run_start_separations": [
+    8
+   ],
+   "station_separation_is_P": true,
+   "third_pair_stations": [
+    42,
+    50
+   ],
+   "tooth": "planted_third_pair_episode_at_B10_is_caught"
+  },
+  {
+   "fires": true,
+   "planted_into": "B10.b1",
+   "tooth": "planted_RC2_necessity_violation_is_caught",
+   "violations_after": 1,
+   "violations_before": 0
+  },
+  {
+   "fires": true,
+   "tampered_digest": "afad34d54cb3a6436260062f2c446d69f7fd2bc7b8603e85e3450be464ca1251",
+   "tooth": "tampered_seal_text_is_caught"
+  },
+  {
+   "fires": true,
+   "tampered_digest": "a3fa5c89d86f8f4136339a0c4a8d24581ac7c6e2dffe5946a1eefa3feb2d83f3",
+   "tooth": "tampered_sealed_prediction_is_caught"
+  },
+  {
+   "cells_broken": 17,
+   "fires": true,
+   "tooth": "perturbed_station_formula_breaks_TP_at_B10"
+  },
+  {
+   "failures_raised": 1,
+   "fires": true,
+   "tooth": "restriction_comparison_actually_compares"
+  },
+  {
+   "cells_named_by_the_crippled_classifier": 0,
+   "cells_named_by_the_true_classifier": 8,
+   "fires": true,
+   "tooth": "dropping_the_third_shape_is_detectable_at_B10"
+  },
+  {
+   "clean_ticks_in_the_planted_mask": 36,
+   "fires": true,
+   "tooth": "detector_min_events_constant_is_load_bearing"
+  },
+  {
+   "disagreements": 92,
+   "fires": true,
+   "tooth": "crippled_rejection_decomposer_is_detectable"
+  },
+  {
+   "fires": true,
+   "key_semantics_sha256": "dc99365b60cf99e08a880dc9e9810745fd34a6fc53d59f9e0b16a2284f3fd28d",
+   "keys": [
+    "B10_label_theft_shape_split",
+    "B10_necessity_violations",
+    "B10_rc2_carrier_map",
+    "B10_stretch_local_totals",
+    "B10_stretches",
+    "B10_sufficiency_failures",
+    "B10_third_pair_episodes",
+    "B10_third_pair_full_configurations",
+    "B10_third_pair_occurrences",
+    "SEAL_sha256",
+    "seal_recomputed"
+   ],
+   "note": "no runtime, elapsed time, timestamp or path enters the key semantics payload -- and the guard is load bearing: injecting a runtime field WOULD change the digest, and a single changed measurement DOES change it",
+   "payload_carries_no_timing_key": true,
+   "tooth": "key_semantics_digest_is_timing_free_and_semantics_sensitive"
+  },
+  {
+   "build_log_at_seal_recomputation": [
+    {
+     "banks": 4,
+     "horizon": 16384,
+     "lanes": 648,
+     "stations": 27
+    },
+    {
+     "banks": 5,
+     "horizon": 16384,
+     "lanes": 1120,
+     "stations": 35
+    },
+    {
+     "banks": 7,
+     "horizon": 16384,
+     "lanes": 2448,
+     "stations": 51
+    }
+   ],
+   "build_log_now": [
+    {
+     "banks": 4,
+     "horizon": 16384,
+     "lanes": 648,
+     "stations": 27
+    },
+    {
+     "banks": 5,
+     "horizon": 16384,
+     "lanes": 1120,
+     "stations": 35
+    },
+    {
+     "banks": 7,
+     "horizon": 16384,
+     "lanes": 2448,
+     "stations": 51
+    },
+    {
+     "banks": 10,
+     "horizon": 16384,
+     "lanes": 5400,
+     "stations": 75
+    }
+   ],
+   "fires": true,
+   "tooth": "seal_was_recomputed_before_the_blind_corpus_existed"
+  }
+ ]
+}

@@ -66,6 +66,12 @@ CORE_719_HANDSHAKE = (
     "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py")
 
 PINS = {
+    PRIMARY_930: ("afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92",
+                  "1b163d8cf59d6143fa3bfd83a170e805f3e7d0c0"),
+    CACHE_930: ("55f0c16f7da54056e1b1bc5e0661b75e6486c65b0c470062563ef24369d4c666",
+                "d4e9755853b526a486471edf5bf015e11b1987e3"),
+    RECEIPT_930: ("a865ebc7c9ce2a03306c33a636f7583cadc0f3bc9ec3abfea0cac0491ae902a2",
+                  "0aaf4442470dac362d490adf5f093bb512e30b89"),
     PRIMARY_922: ("9e1a8de7190188a89cd4449300ab56cc053d6a63eec328265fa80f9955ce3a83",
                   "fdd77d879b142d1bafa1f76926c494bbc4480b1c"),
     CHECKER_922: ("fb7acd4bfe5fa1dcc8f22373861da2038dfdb169371c53d283ae65325d44b118",
@@ -82,7 +88,7 @@ PINS = {
         "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
         "3add288d1b7de5bcc45f5ef8f88f3cfb98105b8f"),
 }
-AUDIT_INPUT_PATHS = tuple(sorted(PINS)) + (PRIMARY_930, CACHE_930, RECEIPT_930)
+AUDIT_INPUT_PATHS = tuple(sorted(PINS))
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 AUDIT_TIMEOUT_SEC = 900
 
@@ -703,28 +709,60 @@ def literal_from_primary(name):
     return None
 
 
+_MACHINE_CACHE = {}
+
+
+def cached_machine(bank_count):
+    if bank_count not in _MACHINE_CACHE:
+        _MACHINE_CACHE[bank_count] = machine(bank_count)
+    return _MACHINE_CACHE[bank_count]
+
+
 def tp_predicates_from_text(text):
-    """Re-derive the rule from the primary's stated words alone."""
+    """Re-derive the rule from the primary's stated words alone.
+
+    Every predicate is checked against the MACHINE -- the rows the kernel's own
+    emitted program puts on the ring -- not against the algebraic identity the
+    sentence happens to contain, so a true-by-construction sentence cannot pass.
+    """
     found = {}
     if "r(b-1) - h_r(b) = (8B-6-3b) - (8B-7-3b) = 1" in text:
-        found["adjacency_closed_form"] = lambda bc, b: (
-            ((8 * bc - 6 - 3 * b) - (8 * bc - 7 - 3 * b)) % (8 * bc - 5) == 1)
+        def adjacency(bc, b):
+            mac = cached_machine(bc)
+            n = mac["stations"]
+            return (mac["swap_r"][b - 1] - mac["hand_r"][b]) % n == 1
+        found["third_pair_terminal_sits_one_above_h_r_b"] = adjacency
     if "h_r(b) - P = 5b+1" in text:
-        found["h_r_preimage_is_5b_plus_1"] = lambda bc, b: (
-            ((8 * bc - 7 - 3 * b) - 8 * (bc - 1 - b)) % (8 * bc - 5)
-            == (5 * b + 1) % (8 * bc - 5))
+        def no_preimage(bc, b):
+            mac = cached_machine(bc)
+            n = mac["stations"]
+            period = mac["entry"][b]
+            return ((mac["hand_r"][b] - period) % n not in mac["own"][b]
+                    and (mac["hand_r"][b] - period) % n == (5 * b + 1) % n)
+        found["h_r_b_has_no_P_preimage_and_equals_5b_plus_1"] = no_preimage
     if "exactly one" in text.lower() or "ONE consecutive gap equal to 1" in text:
         def one_unit_gap(bc, b):
-            n = 8 * bc - 5
-            f = lambda e: (4 + 5 * e) % n
-            r = lambda e: (8 * bc - 9 - 3 * e) % n
-            rows = sorted({(f(b - 1) - 2) % n, f(b - 1), r(b - 1),
-                           (r(b - 1) + 2) % n, (f(b) - 2) % n, f(b), r(b),
-                           (r(b) + 2) % n})
+            mac = cached_machine(bc)
+            n = mac["stations"]
+            rows = sorted(mac["own"][b])
             gaps = [(rows[(i + 1) % len(rows)] - rows[i]) % n
                     for i in range(len(rows))]
-            return gaps.count(1) == 1
-        found["exactly_one_unit_gap"] = one_unit_gap
+            return len(rows) == 8 and gaps.count(1) == 1
+        found["exactly_one_unit_gap_among_the_eight_rows"] = one_unit_gap
+    if "unique entry-gap pair whose second run-start is shadowed" in text:
+        def only_third_pair_shadowed(bc, b):
+            mac = cached_machine(bc)
+            n = mac["stations"]
+            rows = sorted(mac["own"][b])
+            gaps = [(rows[(i + 1) % len(rows)] - rows[i]) % n
+                    for i in range(len(rows))]
+            shadow = {rows[(i + 1) % len(rows)]
+                      for i, g in enumerate(gaps) if g == 1}
+            pairs = entry_pair_stations(mac, b)
+            return (pairs["handoff_swap"][1] in shadow
+                    and pairs["swap_swap"][1] not in shadow
+                    and pairs["swap_handoff"][1] not in shadow)
+        found["only_the_third_pair_has_a_shadowed_terminal"] = only_third_pair_shadowed
     return found
 
 
@@ -833,17 +871,24 @@ def main():
     # ------------------------------------------------------------ gate D
     tp_text = literal_from_primary("TP_STATEMENT")
     preds = tp_predicates_from_text(tp_text or "")
-    determinacy, disagree = 0, 0
-    for bc in range(3, 21):
+    determinacy, disagree, failed = 0, 0, []
+    for bc in range(3, 13):     # the kernel's emitted program tops out at B=12
         for b in range(1, bc - 1):
             determinacy += 1
             vals = {name: bool(fn(bc, b)) for name, fn in preds.items()}
             if not all(vals.values()):
                 disagree += 1
+                failed.append({"banks": bc, "bank": b,
+                               "failed": [k for k, v in vals.items() if not v]})
     d_ok = len(preds) >= 3 and disagree == 0 and determinacy > 0
     results["D_RULE_FROM_TEXT"] = gate("D_RULE_FROM_TEXT", d_ok, {
         "phrasings_found": sorted(preds),
         "cells_checked": determinacy, "disagreements": disagree,
+        "failed_cells": failed,
+        "scope_note": "every predicate is evaluated against the KERNEL'S OWN "
+                      "emitted program, which tops out at B=12; the primary's "
+                      "own B=3..24 sweep uses closed forms and validates them "
+                      "against the kernel exactly where the kernel exists",
         "note": "the primary's TP text is re-read as an AST literal and its "
                 "closed forms re-derived here; every phrasing must hold on "
                 "every cell independently of the primary's own code",

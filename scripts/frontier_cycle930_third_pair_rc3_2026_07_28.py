@@ -1914,9 +1914,33 @@ def main():
         "teeth": teeth, "count": len(teeth), "declared_minimum": 8,
         "all_fire": all(t["fires"] for t in teeth)})
 
+    # ---------------------------------------------------- determinism probe
+    probe_a = build_corpus(3, 64)
+    probe_b = build_corpus(3, 64)
+    corpus_digest = digest([probe_a["clean_planes"], probe_a["source_clean"]])
+    corpus_digest_b = digest([probe_b["clean_planes"], probe_b["source_clean"]])
+    program_digest = digest([list(K.interleaved_program(bc))
+                             for bc in range(3, 9)])
+    program_digest_b = digest([list(K.interleaved_program(bc))
+                               for bc in range(3, 9)])
+    determinism = {
+        "corpus_double_build_digest": corpus_digest,
+        "corpus_double_build_deterministic": corpus_digest == corpus_digest_b,
+        "program_double_build_digest": program_digest,
+        "program_double_build_deterministic": program_digest == program_digest_b,
+        "double_run_protocol":
+            "the runner is executed twice cold; the two stdouts are compared "
+            "after normalising the two runtime fields and the trailing RECEIPT "
+            "digest line (which embeds the runtime).  Everything else -- all "
+            "ten gate lines and the SEAL line -- must be byte identical.",
+    }
+    del probe_a, probe_b
+
     # ------------------------------------------------------------ gate K
     runtime = time.monotonic() - started
-    k_ok = all(results.values()) and runtime <= RUNTIME_LIMIT_SECONDS
+    k_ok = (all(results.values()) and runtime <= RUNTIME_LIMIT_SECONDS
+            and determinism["corpus_double_build_deterministic"]
+            and determinism["program_double_build_deterministic"])
     headline = (
         "THE THIRD PAIR IS NOT ABSENT, IT IS NEVER READ.  (h_f(b), r(b-1)) "
         "occurs %d times as a consecutive same-token P-separated run-start pair "
@@ -1937,6 +1961,7 @@ def main():
     results["K_VERDICT"] = gate("K_VERDICT", k_ok, {
         "headline": headline,
         "gates": {k: ("PASS" if v else "FAIL") for k, v in results.items()},
+        "determinism": determinism,
         "runtime_s": round(runtime, 1),
         "runtime_limit_s": RUNTIME_LIMIT_SECONDS,
         "build_log": list(BUILD_LOG),
@@ -2002,6 +2027,7 @@ def main():
                  "build_log_at_seal_time_is_holdout_free": holdout_free,
                  "blind_from_bank_count": 10},
         "teeth": teeth,
+        "determinism": determinism,
         "restriction_gate": {"total_failed_checks": len(failures),
                              "tier_rows": d_rows,
                              "pinned_cells_compared": len(pinned_fit) + 6},

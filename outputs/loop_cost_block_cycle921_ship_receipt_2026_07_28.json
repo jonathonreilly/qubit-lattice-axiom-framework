@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); both loop-count readings run; the pair-key ordering defect documented, not hidden; supervisor line-by-line review",
+  "block": "toe-time-blockM7-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 11.6s; 12/12 teeth (Euler and truncated-Krylov guards flip ceilings; one-byte tampers; planted loop-count data flips the survivor); attack A 120/120; attack B 102/102 and 101/102 with best rival 93/102",
+    "primary": "exit 0, 218.5s, 0.99 GiB; 917 AND 919 reproduced at deviation exactly 0 (156 rows each) before any new number; 21/21 constants quote-identical to both pinned receipts; routes A/B 6.8e-14, A/C 6.9e-14; deterministic double-run, stable content digest"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 7th M-family PR: converts two blocks' measured slogan into an exact mechanism law with a pre-registered predictor, an adversarial confirmation sweep, and an honest exception promoted to the next measurement; nothing corollary",
+  "cycles": [
+    921
+  ],
+  "files": {
+    "docs/LOOP_COST_PAIR_CYCLE_LAW_CYCLE921_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "69866c618441585072ab1df72c68c857799a7171",
+      "sha256": "36b70f78959ae0a739aca76355b6390022113a43967566b727b91363bece22a6"
+    },
+    "logs/runner-cache/frontier_cycle921_loop_cost_2026_07_28.txt": {
+      "git_blob": "cbd2a6db89d4f0e7e526dc8a6fed85b1da6f7b7a",
+      "sha256": "d326f1dcaad650cfc61df5abe7bb84ac0c06ff114497063215dfc6d7bf676503"
+    },
+    "logs/runner-cache/frontier_cycle921_loop_cost_independent_check_2026_07_28.txt": {
+      "git_blob": "7aeae778a16c7cdd6c89c8c1f5129774ee64ff3d",
+      "sha256": "b9689120c681e75d1e162d3f06688a64a6d547724df18b1ac8fd158989d3aeb4"
+    },
+    "outputs/loop_cost_cycle921_receipt_2026_07_28.json": {
+      "git_blob": "01e9689639dee1dc6f73c6a2834a84da3dc9f6cc",
+      "sha256": "86e58837349baa719d116948c67a166b922cb6b21fefe6108ec41fa08727df6f"
+    },
+    "outputs/loop_cost_independent_check_cycle921_receipt_2026_07_28.json": {
+      "git_blob": "abb45f90685a29a4d4cbfd1d5966e36d3bf34bd9",
+      "sha256": "75d9808b0385fbe83d78f832ad70fee092ebb94c64cc4ef672742b013d8cbdd3"
+    },
+    "scripts/frontier_cycle921_loop_cost_2026_07_28.py": {
+      "git_blob": "55710d560dd948e2ccc053c3b7eb09d0d523d6a4",
+      "sha256": "fbde9f1a62e33e1e7fb9a440658ed23821a0f0c577fb8b798f707e23118ffc11"
+    },
+    "scripts/frontier_cycle921_loop_cost_independent_check_2026_07_28.py": {
+      "git_blob": "e14176a65f39d84dd77839ff4a714347707910f9",
+      "sha256": "0251ea95e8723df2fa9f6f081e73022aa09097bb7a4da3b3648c4dffd00734b9"
+    }
+  },
+  "headline": "THE LOOP COST EXPLAINED \u2014 THE PAIR-CYCLE LAW: the tax is per fragment-pair, graded by the shortest pointer-through cycle joining the pair's anchors (length 3 kills content at every field; length 4 kills pair-independence at lambda >= 0.075 but not 0.05; length >= 5 is FREE) and max R_ind = the independence number of what survives (loop-free => pointer degree = 917's reading; 917's high-field failures are exactly its d=2 pairs); loop COUNT REFUTED in both readings (ten loops can cost nothing; six fixed-pair ladders never move the ceiling); POSITION reduces to the binary through-pointer gate; discrimination 42/42, 42/42, 41/42 vs best rival 34/42 (a degeneracy probe); margins WIDE (+0.016 / -0.010 bits \u2014 not a persistence razor); matched pairs identical on EVERY tracked statistic still split 4 vs 3, excluding all counting mechanisms at once; crossover field monotone in d (probe-grade ladder); THE ONE EXCEPTION reported not absorbed: G1 chain at 0.10 (a second, size-driven, loop-independent channel \u2014 the named successor); scope rules: d=2 constructible only in cube coordinates under the frozen tie-break; l=3 forces +X/+X",
+  "independence": "checker fully independent (Floyd-Warshall partitions from memo bytes, Pauli-Kron Hamiltonians, Lanczos/Krylov vs Pade, opposite site-ordering, Bron-Kerbosch MIS); SUPPORTED, zero disagreements; 12/12 teeth; 120/120 adversarial cells; 102-geometry degeneracy attack, no rival within 8",
+  "note": "docs/LOOP_COST_PAIR_CYCLE_LAW_CYCLE921_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 11.6,
+    "primary": 218.5
+  }
+}

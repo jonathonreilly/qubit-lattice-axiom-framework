@@ -1483,6 +1483,37 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Cluster-cap (G-family): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
 
+## Cycles 936/939/937 shipped (window 3 batch) — 2026-08-05 ~05:15 EDT
+
+- **936 choice substrate (blockQ13, PR #6006)**: the engineering
+  successor executed with the firewall INTACT (mu parametric end to
+  end; the planted privileging step caught); semantic P3 with the
+  checker's independent non-anticipation theorem; the first genuine
+  same-world branch pairs; the weight algebra's no-collapse verdict
+  and THE FORCED INDEX SET (worlds not slots — a measured grammar
+  constraint on any future A3 wording). Cluster-cap (12th Born PR):
+  OPEN. Disposition: pass. R1-A3 launched as Cycle 940.
+- **939 carrier sweep (blockAC4, PR #6007)**: the prior-art-first
+  protocol's first full outing — it DOMINATED (the wall already
+  minimally named 2026-06-11; four head-on attempts); the map-gauge
+  theorem with a moving control; the O_h trap; the joint consumer;
+  the WIRING gap as the narrowed open; ONE STANDING checker
+  refutation carried in the verdict (gauge scoped to this pair);
+  two 938 corrections executed (pin refreshed, #6004 updates).
+  Cluster-cap (4th AC PR): OPEN. Disposition: pass. THE AC LANE'S
+  WALL IS NOW AT ITS MINIMAL HISTORICAL NAME with the vacuous
+  pieces retired.
+- **937 spider extension (blockM15, PR #6008)**: the reduction off
+  the star (933's obstruction dissolved); the L-ZERO lemma (exact,
+  reaching loopy and non-isomorphic arms) + the depth ladder;
+  927's saturation column PREDICTED; G1 CLOSES; six cells
+  measured->derived; the PROVENANCE finding (two bitwise-different
+  Chebyshev paths — code-path naming now required in cross-family
+  zero-deviation claims; audit row). Cluster-cap (15th M PR):
+  OPEN. Disposition: pass.
+- Launched: Cycle 940 (R1-A3, blockQ14) and Cycle 941 (GB-S2,
+  blockG29 — the lane's largest residual, in the 935 currency).
+
 ## Cycle 934 pointer gates capstone (blockM14, PR #6005) — 2026-08-05
 
 - Supervisor review: the lemma-grade symmetry work (H_Z = 1 with

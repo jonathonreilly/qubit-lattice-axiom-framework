@@ -1,0 +1,53 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); killed by a process restart and resumed from transcript with everything recomputed from disk; SIX checker refutations ALL ADOPTED incl. two hitting the primary's own published claims (the IFF-only-an-IF; the falsified timing glosses)",
+  "block": "toe-time-blockQ15-20260802",
+  "campaign": "toe-time-expansion-20260802",
+  "certificates": {
+    "checker": "exit 0, 332.8s; 16/16; six refutations mounted and adopted; the harder embedded source-pointer test",
+    "primary": "exit 0, 263.7s; 10/10 certificates, 67/67 restriction gates, 14/14 teeth; double-run identical"
+  },
+  "claim_type": "bounded_theorem",
+  "cluster_cap_evaluation": "OPEN \u2014 14th Born-family PR: corrects a shipped block's scope from its own bytes, localises the lane's asymmetry to a single named wire with the mirror structure exhibited, proves the encoding and axiom layers innocent, and names the substrate modification that would convert the adopted axiom into the first derived Born values; nothing corollary",
+  "cycles": [
+    943
+  ],
+  "files": {
+    "docs/PRERECORD_SWAP_ORIENTATION_WIRE_CYCLE943_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "git_blob": "7fa5070a34ed5ab40283c9e9048634b6dba7ac27",
+      "sha256": "1c2f1374f119b5dd6e773004f872216b95467e2e8e3a609b3304fc18ba330d3e"
+    },
+    "logs/runner-cache/frontier_cycle943_prerecord_swap_2026_07_28.txt": {
+      "git_blob": "b1895d6b718cca09febf1b445c86b2da5817ca53",
+      "sha256": "4f6cebccd6fa05e3a98d9461b94d4b6903831530b10314cb21994a391e821e46"
+    },
+    "logs/runner-cache/frontier_cycle943_prerecord_swap_independent_check_2026_07_28.txt": {
+      "git_blob": "b5f46bf4e2fb7ca03620fc5ad2e17e241bd6478c",
+      "sha256": "274b65bac0882c8cdf0c3ebe951dbb27d808a8a17123baafa4fa12a3506a7f53"
+    },
+    "outputs/prerecord_swap_cycle943_receipt_2026_07_28.json": {
+      "git_blob": "7b88a67072bb965b975db217eb514d805e7dfb2c",
+      "sha256": "cc66fa9258fd76eba473585326d07cc83e108860174076ba0e14b7d006a878e6"
+    },
+    "outputs/prerecord_swap_independent_check_cycle943_receipt_2026_07_28.json": {
+      "git_blob": "9a32ea4d02b73006abefc7cf5a90165687c83f05",
+      "sha256": "d95793d2ab5bccbf1b6ca8eb0d24caac01f71b84dbf7a95da0daddd0bcace3ea"
+    },
+    "scripts/frontier_cycle943_prerecord_swap_2026_07_28.py": {
+      "git_blob": "bfc908742eada7aa36452b405aeaadf971fccb3f",
+      "sha256": "8dbd076ecc156be8659bb0270c93e1917915371db80e0c47cd6d3edcb389f349"
+    },
+    "scripts/frontier_cycle943_prerecord_swap_independent_check_2026_07_28.py": {
+      "git_blob": "9eb76caef67b5e07a36a05ffe734319014430b8e",
+      "sha256": "00f2f26fd5e89bf9ab21b42f90caca8c88152bf7bdb33df4e296e2f5a8009904"
+    }
+  },
+  "headline": "THE OWNER VINDICATED IN STRUCTURE, REFUTED IN TIMING \u2014 THE MENU ASYMMETRY IS ONE WIRE WIDE: 940 swept RELABELLINGS ONLY (zero value-space maps \u2014 the envariance swap is state-space; the owner's question was untested); the endpoints control NOTHING but the record apparatus (six TOF patterns; the source-pointer pair EXACTLY menu-symmetric, checker-confirmed embedded); branch divergence = 8 of 5,815 wires in one lane, SIX mirror-paired and EXACTLY swap-related \u2014 THE SOLE OBSTRUCTION IS THE RECORD CELL'S ORIENTATION FIELD (the one record datum with no mirror partner; diverges at the five genuine-menu atoms, never the three timing atoms); the bulk dynamics IS menu-swap invariant; TIMING: every atom breaks strictly before its lock (the pre-record symmetric era is real but short; the primary's timing glosses falsified by its own checker and withdrawn); 940's A2 PROVED GAUGE (two-nonzero-word encoding: leaf digests byte-identical; the obstruction is physical); THE AXIOMS DO NOT ORIENT THE MENU (six byte-quotes; ordering scan zero hits; the Open Gates disclaim formation rules) \u2014 940's negative is MODEL-CONTINGENT, the class question OPEN, the symmetriser NAMED (mirror-partner the orientation field); UNDER THE ADOPTED DISTRIBUTION AXIOM the mirror-partnered kernel would make symmetric-site 50/50 a THEOREM (Cycle 946 = the named successor); caveats carried (ensemble-dependent commutation count \u2014 sign only; the affine intertwiner fitted and NOT a symmetry)",
+  "independence": "checker 16/16 certificates, 14/14 teeth, fully independent (own AST replay, commutation engine, GF(2) solver, own gauge wire); import firewall blocked 936/940/943-primary at zero hits",
+  "note": "docs/PRERECORD_SWAP_ORIENTATION_WIRE_CYCLE943_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "runtime_seconds": {
+    "checker": 332.8,
+    "primary": 263.7
+  }
+}

@@ -1458,6 +1458,63 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Cluster-cap (12th M-family PR): **OPEN**.
 - Local disposition: **pass** (bounded_theorem; audit pending).
 
+# SUPERVISOR PERSONAL LANE REVIEWS — 2026-08-05 ~04:40 EDT (owner-directed)
+
+Fresh-eyes line-by-line pass over each lane's full window output by the
+supervisor personally (not the review-loop). Method: cross-lane
+consistency, overreach hunting, correction-chain integrity, missed
+connections. Findings:
+
+GRAVITY — CONSISTENT. The 445-sigma exclusion's conditionality
+(quarantined comparator masses + retained parameterization) is scoped
+correctly at every citation found. The 871 map's "equivalent" class
+(G_Newton/SI normalization = the bridge scalar) composes cleanly with
+the owner's Planck registration; Cycle 935 (in flight) is spec'd to NOT
+silently claim the five stronger obligations. No defect found.
+
+BORN — CONSISTENT, one composition flagged for the owner surface: the
+918 constraint-(c) tension (Born-capability trades monitor-phase
+covariance of realized selection) and 925's "one sentence wide" are ONE
+decision surface, not two — any future A3 consideration inherits the
+(c) trade, because the substrate that hosts the sentence is the
+substrate that pays the covariance price. Carried into the handoff.
+Also banked from the exercise: the Gleason-arity no-go row (the menu
+arena is binary everywhere; Gleason needs dim >= 3 — the classic
+derivation route is closed by the framework's own structure).
+
+MASS — CONSISTENT ACROSS THE SEVEN-BLOCK CHAIN. The correction chain
+(917 loop-free overstatement -> 926 fragment count -> 927 size null ->
+929 multiplicity -> 932 grid phase) is closed: every corrected sentence
+carries its dated bracket with pin refreshed, and no stale citation of
+a corrected form was found in later notes. The star-derivation
+composition (931 relations + 932 windows + 933 amplitudes) is scoped
+correctly to stars at the frozen grid phase; the pinned tree anchors
+remain measured-grade pending Cycle 937. No defect found.
+
+T — CONSISTENT. The 922 label-theft correction propagated to 891's
+note; 930's exception-cell unification cross-references correctly; the
+RC-2 model-degeneracy band is untouched by the shadow derivation and
+remains honestly open (a different-N corpus is the only resolver). No
+defect found.
+
+AC — CONSISTENT. 924's unification (the alpha menu = the 871 bridge's
+line) + 928's type gap + 871's readout dimension count (2 = h-class +
+h-unit) compose exactly: the bridge prices the h-class; the h-unit is
+the type-gap license; Cycle 938 (in flight) tests whether it
+reclassifies to registration. If 938 lands, route 4's new-primitive
+price is withdrawn as unnecessary — the registry text itself stays
+owner territory.
+
+R — CONSISTENT; the arrow reclassification (exercise wall 3) is queued
+as Cycle 939 / next-campaign block. 923's audit row (cite the gate,
+not the digit) verified present in the note and receipt.
+
+PROCESS — the supervisor-error ledger stands at 7 (2 owner-caught, 5
+worker/checker-caught); the declared-fallible-source-list pattern has
+prevented recurrence in every spec since 928. Ten dated post-ship
+corrections executed this window, all as bracketed additions with pins
+refreshed, none a silent rewrite.
+
 ## Cycle 933 s(k) shape (blockM13, PR #6002) — 2026-08-05
 
 - Supervisor review: the derivation-plus-no-go pairing (the

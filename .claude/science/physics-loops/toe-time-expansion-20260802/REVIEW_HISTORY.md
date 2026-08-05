@@ -1116,3 +1116,38 @@ NEW QUEUE (window 2b — from the campaign's own named successors):
 - Successor launched into the freed slot: Cycle 925 (the
   law-relaxation classification, blockQ12 — 918's determinism
   lemma one level up).
+
+## Cycle 924 occurrence-rate route (blockAC1, PR #5989) — 2026-08-05
+
+- SUPERVISOR SPEC ERROR #7 (caught by the WORKER): the spec stated
+  the Cycle-912 package lives on blockQ10; it lives on blockQ9 (a
+  sibling, not an ancestor — merge-base confirmed). The worker
+  falsified the premise, vendored from blockQ9's own ship pin, and
+  disclosed it in the vendor commit. Pattern unchanged: minimal
+  spec premises; workers spec'd to verify inheritance claims.
+- Supervisor review: the vendoring discipline (40/40 cross-branch
+  pins digest-verified, commands disclosed); the referent scan's
+  positive control; the honesty-label discipline on all eleven Q1
+  objects (the receipts' own labels carried, never upgraded); the
+  group-equality verification (C3 = Z/3 translations as permutation
+  groups, not merely isomorphic); the read-only materialization of
+  the gitignored ledger via repo tooling (nothing committed).
+- Verdicts: route 3 PRICED SHUT on the current surface — two new
+  bins beyond the July no-go's three (referent, forcedness-census)
+  plus two theorem obstructions (arity mismatch; terminality);
+  the price itemized. The unification: the alpha menu, the 871
+  residual scalar, and the angle-native bin 2 are ONE computed
+  dimension-1 freedom; the readout's unpriced extra dimension IS
+  the h-unit angle scale = the R-eta license; route 1 is the sole
+  remaining live derivation route.
+- Checker (35/35, 8 teeth, zero refutations): model-degeneracy
+  attack confirmed (22 reachable values); hit count reproduced
+  from an independent pool; Q1 re-derived from the notes' prose.
+- Audit rows emitted: the stretch no-go's pass-count discrepancy
+  (runner 113 vs claimed >=120, FAIL=0 either way); the 912 branch
+  placement.
+- Cluster-cap: n/a (1st AC-family PR this campaign).
+- Local disposition: **pass** (bounded_theorem; audit pending).
+- Successor launched into the freed slot: Cycle 926 (the
+  gate-robustness sweep + the separation family, blockM8 — 919's
+  two named hardenings).

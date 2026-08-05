@@ -84,9 +84,24 @@ realized-kinetic-branch chain:
 
 > the available possibilities are determined by, and vary with, the nearest-neighbor conditions
 
+> **Scope note (2026-08-05, adoption repair).** The Admissibility second
+> sentence quoted above was replaced by owner-approved revision on 2026-08-05.
+> It now reads:
+> "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions."
+> Availability is the likelihood's support. The quotation above is retained as
+> the wording this note consumed when it landed.
+
 The same text gives the full non-selection sentence:
 
 > It does not choose a Hamiltonian or transfer operator, supply transition probabilities or weights, select a scalar or nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or provide a record-production process or physical persistence dynamics.
+
+> **Scope note (2026-08-05, adoption repair).** The non-selection sentence
+> quoted above was reworded by the same owner-approved revision on 2026-08-05.
+> It now reads:
+> "It does not choose a Hamiltonian or transfer operator, supply transition-probability or weight values, select a scalar or nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or provide a record-production process or physical persistence dynamics."
+> The list of withheld content is unchanged; only the probability/weight item
+> was reworded. The quotation above is retained as the wording this note
+> consumed when it landed.
 
 It also states the record-permanence clause:
 

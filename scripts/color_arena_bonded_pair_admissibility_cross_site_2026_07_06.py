@@ -337,7 +337,7 @@ def main():
     axiom_text = read_text_file(AXIOM_FILE)
     june8_text = read_text_file(JUNE8_FILE)
     admissibility_sentence = (
-        "For each site, the available possibilities are determined by, and vary with, "
+        "For each site, the likelihood of each possibility is determined by, and varies with, "
         "the nearest-neighbor conditions."
     )
     reopening_sentence = (

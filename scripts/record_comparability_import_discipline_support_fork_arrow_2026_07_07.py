@@ -62,8 +62,8 @@ AXIOM_QUOTES = [
         "under lattice translations and proper cubic rotations."
     ),
     (
-        "For each site, the available possibilities are determined by, and "
-        "vary with, the nearest-neighbor conditions."
+        "For each site, the likelihood of each possibility is determined by, "
+        "and varies with, the nearest-neighbor conditions."
     ),
     "Records form.",
     "When present, a record locks exactly one admissible local possibility.",

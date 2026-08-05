@@ -32,8 +32,8 @@ SOURCE_FILES = {
 
 QUOTES = {
     "axioms": [
-        "For each site, the available possibilities are determined by, "
-        "and vary with, the nearest-neighbor conditions.",
+        "For each site, the likelihood of each possibility is determined by, "
+        "and varies with, the nearest-neighbor conditions.",
         "Further physical structure requires derivation, bridge, explicit "
         "admission, or approved primitive registration before use as a "
         "premise.",

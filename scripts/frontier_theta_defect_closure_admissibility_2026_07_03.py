@@ -34,8 +34,8 @@ PARENT_RUNNER_PATH = Path(
 )
 
 ADMISSIBILITY_QUOTE = (
-    "For each site, the available possibilities are determined by, and vary with,\n"
-    "the nearest-neighbor conditions."
+    "For each site, the likelihood of each possibility is determined by, and varies\n"
+    "with, the nearest-neighbor conditions."
 )
 THEOREM_4_1_NO_DECOMP_QUOTE = (
     "no class function exists and\n"

@@ -48,6 +48,12 @@ From [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
 - "Only records are readable."
 - "A readout value is determined by record content alone."
 
+> **Scope note (2026-08-05, adoption repair).** The Admissibility second
+> sentence quoted above was replaced by owner-approved revision on 2026-08-05.
+> It now reads: "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions."
+> Availability is the likelihood's support. The quotation above is retained as
+> the wording this note consumed when it landed.
+
 ## Superseded v1 Core Text
 
 **graded_constraint v1 (superseded core text).** For record-conditioned

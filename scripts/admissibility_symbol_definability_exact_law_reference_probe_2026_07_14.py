@@ -367,10 +367,10 @@ def source_and_documentation_contract() -> None:
     )
     check(
         "F exact availability sentence is live",
-        "available possibilities are determined by, and vary with, the nearest-neighbor conditions" in axioms,
+        "likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions" in axioms,
     )
     check("F live memo says Admissibility is not dynamics", "admissibility is not a dynamics axiom" in axioms)
-    check("F live memo withholds transition weights", "supply transition probabilities or weights" in axioms)
+    check("F live memo withholds transition weights", "supply transition-probability or weight values" in axioms)
     check("F live memo withholds record production", "provide a record-production process" in axioms)
 
     registry = json.loads(REGISTRY.read_text(encoding="utf-8"))

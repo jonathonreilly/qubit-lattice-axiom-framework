@@ -32,14 +32,14 @@ EXPECTED_KS_SCOPE = (
 )
 
 VARIATION_CLAUSE = (
-    "the available possibilities are determined by, and vary with, the "
+    "the likelihood of each possibility is determined by, and varies with, the "
     "nearest-neighbor conditions"
 )
 NON_SELECTION_SENTENCE = (
-    "It does not choose a Hamiltonian or transfer operator, supply transition "
-    "probabilities or weights, select a scalar or nonzero kinetic branch, assert a "
-    "Dirac-square carrier, define a time metric, or provide a record-production "
-    "process or physical persistence dynamics."
+    "It does not choose a Hamiltonian or transfer operator, supply "
+    "transition-probability or weight values, select a scalar or nonzero kinetic "
+    "branch, assert a Dirac-square carrier, define a time metric, or provide a "
+    "record-production process or physical persistence dynamics."
 )
 DOWNSTREAM_CONTENT_CLAUSE = (
     "A realized kinetic branch, if proposed, is downstream content: it needs "

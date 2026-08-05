@@ -84,6 +84,13 @@ The second is:
 
 > For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.
 
+> **Scope note (2026-08-05, adoption repair).** The Admissibility second
+> sentence quoted above was replaced by owner-approved revision on 2026-08-05.
+> It now reads:
+> "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions."
+> Availability is the likelihood's support. The quotation above is retained as
+> the wording this note consumed when it landed.
+
 The statements above belong to the full `Z^3` framework. The lemma below uses
 only their one-dimensional translation restriction; it does not derive the
 binary ring model or proper-cubic covariance from them.

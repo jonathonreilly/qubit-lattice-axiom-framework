@@ -81,6 +81,13 @@ The two clause sentences, quoted verbatim from the linked axioms note, are:
 
 > For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.
 
+> **Scope note (2026-08-05, adoption repair).** The Admissibility second
+> sentence quoted above was replaced by owner-approved revision on 2026-08-05.
+> It now reads:
+> "For each site, the likelihood of each possibility is determined by, and varies with, the nearest-neighbor conditions."
+> Availability is the likelihood's support. The quotation above is kept as the
+> wording this note consumed when it landed.
+
 Their formalizations on the availability-rule model are:
 
 - **Clause 1, translation part.** The table `B` is site-independent (one fixed

@@ -124,7 +124,7 @@ def source_contract() -> None:
 
     needles = (
         "There is one fixed nearest-neighbor admissibility rule, covariant under lattice",
-        "For each site, the available possibilities are determined by, and vary with,",
+        "For each site, the likelihood of each possibility is determined by, and varies\nwith, the nearest-neighbor conditions.",
         "Records form.",
         "site never carries more than one record; records are permanent.",
         "A state is a configuration of records.",
@@ -636,7 +636,7 @@ def final_classification() -> None:
     note = NOTE.read_text()
     check(
         "G6 selection, weights, rate, metric, and capacity renewal remain outside this probe",
-        "with what weight, or at what rate" in flat_axiom
+        "the likelihood function's form and values, at which site, and at what rate" in flat_axiom
         and "time metric" in flat_axiom
         and "physical persistence dynamics" in flat_axiom
         and "support renewal" in note,

@@ -1,0 +1,54 @@
+# Historic intake: Planck-Scale Boundary Action Source Versus Pressure Classification Theorem
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_terminology_and_object_class_hardening_theorem
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+The Planck lane does NOT prove that the ordinary scalar Schur boundary pressure equals 1/4: three distinct same-surface quantities are separated - p_scalar = (1/(2n)) log det(L_Sigma), which on the rational witness L_Sigma = [[4/3,1/3],[1/3,4/3]] gives (1/4) log(5/3), not 1/4; p_action = nu - lambda_min(L_Sigma); and p_event = Tr(rho_cell P_A) = 1/4. Only p_action = p_event is claimed, via the parent source B_parent = (H_A, P_A).
+
+Original verdict: The safe object is the normal-ordered primitive boundary action-source density, never 'scalar boundary pressure'.
+Scope: Terminology/object-class scoping for the retained primitive gravitational boundary-action object class; explicitly concedes the lane does not close if a reviewer defines physical pressure exclusively as the scalar Schur free-energy observable.
+Escape conditions (negative claims): The negative (exact Planck closure fails on the scalar-Schur reading) is escaped only by the reviewer accepting the retained primitive gravitational boundary-action object class.
+
+## Why pulled (supervisor decision, on the record)
+
+Terminology hardening separating three same-surface scalars — corrects previously circulated Planck-lane wording; safe-object rule stated.
+
+## Provenance (pinned)
+
+- Original path: `docs/PLANCK_SCALE_BOUNDARY_ACTION_SOURCE_VS_PRESSURE_CLASSIFICATION_THEOREM_2026-04-23.md`
+- Source commit: `4599b458d80f6a3c6e3ef0bf0a7c20538905aa5b`
+- git blob: `e25cec87e712eacb9b5c52524f4eb740dd2c66e8`
+- sha256: `e9d25bc0d5ce57b91957afd7d9ebb8c56ce2420dc60d1a32f1a1cb88026e884f`
+- Lines: 157; runners named: scripts/frontier_planck_boundary_action_source_vs_pressure_classification_theorem.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+Corrects previously circulated Planck-lane wording ('the observable-principle scalar boundary pressure equals 1/4') as false.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

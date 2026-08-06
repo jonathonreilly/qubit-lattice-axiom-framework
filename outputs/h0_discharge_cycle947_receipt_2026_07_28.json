@@ -1540,20 +1540,20 @@
     "I_RUNTIME": {
       "budget_seconds": 1800,
       "certificate": "I_RUNTIME",
-      "elapsed_seconds": 24.29,
+      "elapsed_seconds": 24.459,
       "pass": true,
       "per_stage_seconds": {
-        "H0a1": 1.357,
-        "H0a2": 0.008,
+        "H0a1": 1.362,
+        "H0a2": 0.007,
         "H0a3": 0.023,
-        "H0b1": 3.697,
-        "H0b2": 1.355,
-        "H0c": 0.988,
-        "H0d": 0.303,
-        "NO_GO": 0.811,
-        "double_run": 1.918,
-        "setup": 13.563,
-        "teeth": 0.214
+        "H0b1": 3.762,
+        "H0b2": 1.364,
+        "H0c": 0.983,
+        "H0d": 0.305,
+        "NO_GO": 0.818,
+        "double_run": 1.95,
+        "setup": 13.619,
+        "teeth": 0.213
       }
     }
   },
@@ -1562,7 +1562,7 @@
     947
   ],
   "fraction_label": "bookkeeping fraction, not probability",
-  "headline": "H0 DOES NOT DISCHARGE.  Four of the ten named clauses are DERIVED from compiler-native data (the lane fibration, its totality, the causal-cone containment, and sigma's fibre respect); five are RESIDUE with named import sentences (no native Z^3 embedding; NO dependence on any other site, which refutes the axiom's 'varies with' conjunct outright; no derivation that both menu items carry nonzero probability; no map into a domain with the axiom's one-site presentation; and descent, which is downstream of those).  Separately, H0's UNIVERSAL form is REFUTED by two independent families of symmetries of the compiled law that have no axiom-level counterpart, and the narrowed sigma-specific clause is stated.",
+  "headline": "H0 DOES NOT DISCHARGE.  Five of the ten named clauses are DERIVED from compiler-native data (the lane fibration, its totality, the causal-cone containment, the two-item menu cardinality, and sigma's fibre respect); five are RESIDUE with named import sentences (no native Z^3 embedding; NO dependence on any other site, which refutes the axiom's 'varies with' conjunct outright; no derivation that both menu items carry nonzero probability; no map into a domain with the axiom's one-site presentation; and descent, which is downstream of those).  Separately, H0's UNIVERSAL form is REFUTED by two independent families of symmetries of the compiled law that have no axiom-level counterpart, and the narrowed sigma-specific clause is stated.",
   "provenance": {
     "c946_never_imported_or_lifted": "the 946 runner's bytes are pinned so the reader knows exactly which text this block re-derives, and its module name is on the import BLOCKLIST.  Its structures (sigma, the splice, the certificate layers, the neighborhood formalizations) are RE-DERIVED here from the pinned 936 compiler and the pinned 719 kernel; nothing is lifted or imported from it.",
     "lift_counts": {
@@ -1612,5 +1612,5 @@
     "worker": "Claude Opus 5 worker under supervisor spec (substitution disclosed); supervisor reviews line-by-line and authors the note."
   },
   "science_digest": "656621f3863e96c728d9976c8271bfd2a1a959fdf5b9392a2c40c8e07a12017a",
-  "self_sha256": "0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c"
+  "self_sha256": "ea63c23346a6e4c6c88ac221d129c9399b21f6c48fc996602e700c86aad6284e"
 }

@@ -2181,10 +2181,11 @@ def main() -> int:
         "authority": "none",
         "audit": "unset",
         "headline":
-            "H0 DOES NOT DISCHARGE.  Four of the ten named clauses are "
+            "H0 DOES NOT DISCHARGE.  Five of the ten named clauses are "
             "DERIVED from compiler-native data (the lane fibration, its "
-            "totality, the causal-cone containment, and sigma's fibre "
-            "respect); five are RESIDUE with named import sentences (no "
+            "totality, the causal-cone containment, the two-item menu "
+            "cardinality, and sigma's fibre respect); five are RESIDUE with "
+            "named import sentences (no "
             "native Z^3 embedding; NO dependence on any other site, which "
             "refutes the axiom's 'varies with' conjunct outright; no "
             "derivation that both menu items carry nonzero probability; no "

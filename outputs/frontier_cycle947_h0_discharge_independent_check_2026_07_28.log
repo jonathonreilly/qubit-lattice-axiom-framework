@@ -20,6 +20,6 @@ checks: 17/17 SUPPORTED
 mutation probes: 16/16
 refutations raised: 2 (see receipt for status)
 science digest: a5cb9c407ef04f38f86e7f8fcde4693f31c7415e27e9be8e7a3c002c7c250267
-elapsed: 19.387s
+elapsed: 19.042s
 OVERALL: SUPPORTED
 all certificates pass: True

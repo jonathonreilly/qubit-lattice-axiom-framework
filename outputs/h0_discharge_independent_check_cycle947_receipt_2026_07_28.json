@@ -22,7 +22,7 @@
       "landed_axiom_sha256": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
       "landed_axiom_sha256_matches": true,
       "pass": true,
-      "primary_receipt_sha256": "151bab024bfc95cd4fdf1f188fa142e4b7172540dc6996af4998821b60095cdc",
+      "primary_receipt_sha256": "12e1c9a6a447058a98820d7d064730518dbcb100523f22688aa70a133631ceca",
       "primary_runner_sha256": "0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c",
       "rows": {
         "docs/MINIMAL_AXIOMS_2026-06-29.md": {
@@ -31,9 +31,9 @@
           "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
         },
         "outputs/h0_discharge_cycle947_receipt_2026_07_28.json": {
-          "bytes": 72357,
-          "git_blob": "e1de9561d6b34af591e27353b53ffe7b709a1b18",
-          "sha256": "151bab024bfc95cd4fdf1f188fa142e4b7172540dc6996af4998821b60095cdc"
+          "bytes": 72358,
+          "git_blob": "ff4be87c67bf5ceccb27504aeb6f8991d779bccc",
+          "sha256": "12e1c9a6a447058a98820d7d064730518dbcb100523f22688aa70a133631ceca"
         },
         "outputs/mirror_kernel_cycle946_receipt_2026_07_28.json": {
           "bytes": 95277,
@@ -723,15 +723,15 @@
     "I_RUNTIME": {
       "budget_seconds": 1800,
       "certificate": "I_RUNTIME",
-      "elapsed_seconds": 19.387,
+      "elapsed_seconds": 19.042,
       "pass": true,
       "per_stage_seconds": {
-        "cones": 2.14,
-        "nogo": 0.543,
-        "scalar": 0.288,
-        "setup": 13.745,
-        "teeth": 0.223,
-        "variation": 1.349
+        "cones": 2.108,
+        "nogo": 0.54,
+        "scalar": 0.215,
+        "setup": 13.556,
+        "teeth": 0.22,
+        "variation": 1.319
       }
     }
   },

@@ -1,0 +1,54 @@
+# Historic intake: Cl(3) Non-Renormalization Theorem for Yukawa-Gauge Matching
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_theorem
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Independent Clifford-centrality route: 31/31 PASS establishing G_5 central in Cl(3) with center span{I,G5}, 1-loop Yukawa vertex factorization to relative error 5e-17, and explicitly Z_Y = Z_scalar != Z_g (ratio -2.03). V-scheme boundary condition gives m_t = 174.2 GeV (+0.7%); 1-loop-extrapolated g_3 gives 109.0 GeV (-37%).
+
+Original verdict: Z_Y = Z_g is the WRONG question and does not hold even on the lattice; the gap is CLOSED by reframing to UV boundary-condition protection.
+Scope: d=3 staggered lattice, L=8, m=0.1, Cl(3) 8x8 representation; non-renormalization is a d=3 lattice result only, does not extend to continuum d=4.
+
+
+## Why pulled (supervisor decision, on the record)
+
+The honest wildcard route: Z_Y = Z_g is the WRONG QUESTION — 31/31 centrality algebra with the title flag; the lane's true mechanism statement.
+
+## Provenance (pinned)
+
+- Original path: `docs/RENORMALIZED_YT_WILDCARD_NOTE.md`
+- Source commit: `ccab562ebde768c686cd884f8c8429266485f466`
+- git blob: `a0bee07f7cd47512ec1577257bea2148217ef963`
+- sha256: `57f6d479d2472e0343a000246b956af729c0f3aeb167bce09731521e6727c943`
+- Lines: 192; runners named: scripts/frontier_renormalized_yt_wildcard.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+Title says 'Non-Renormalization Theorem' while the body's headline finding is that the sought identity Z_Y = Z_g is false; the 1-loop-extrapolated boundary condition is off by -37%.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

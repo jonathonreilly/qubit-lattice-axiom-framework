@@ -1,0 +1,54 @@
+# Historic intake: Hierarchy Exponent-16 Chirality-Forced-Doubler No-Go Note
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+The hierarchy exponent 16 = 2^4 (the 4D staggered taste-doubler count, primitive P2) is NOT forced by anomaly-exact chirality on the derived Euclidean-time axis: the framework's realized vector-like staggered chirality epsilon(x) = (-1)^{x1+x2+x3} (acting as k4 -> k4 + pi) does not anticommute with the Wilson b-term, since 1 - cos(k4+pi) = 1 + cos(k4) leaves residual 2 != 0, so b is not forced to zero and the pi-doubler is not forced.
+
+Original verdict: The chirality route to 16 is pruned; realized staggered epsilon-chirality is Wilson-compatible (Kahler-Dirac), so reaching 16 still requires importing a substrate-external regulator choice.
+Scope: One discrete Euclidean-time axis with the most general hermitian translation-invariant nearest-neighbour kernel D(k4) = a gamma4 sin(k4) + b (1 - cos(k4)); prunes only the 'anomaly forces time -> forces doubler -> forces 2^4 = 16' route and does not claim 16 is wrong.
+Escape conditions (negative claims): The no-go depends on chirality being realized as the vector-like 3D sublattice parity epsilon rather than an anticommuting per-site gamma5; an idealized anticommuting gamma5 WOULD force b = 0 ({1,gamma5} = 2 gamma5 != 0), but is barred by NO_PER_SITE_CHIRALITY (Cl(3) pseudoscalar omega = i I_2 is central) — so the escape is a chirality operator outside the per-site Cl(3) construction, or importing an external regulator choice.
+
+## Why pulled (supervisor decision, on the record)
+
+No-go: the hierarchy exponent 16 is NOT forced by anomaly-exact chirality (realized staggered chirality is Wilson-compatible) — prunes a route with its dependency stated.
+
+## Provenance (pinned)
+
+- Original path: `docs/HIERARCHY_EXPONENT16_CHIRALITY_FORCED_DOUBLER_NO_GO_NOTE_2026-05-30.md`
+- Source commit: `a5bc9a8915cd48bcde67cafd0a8b8b366d6a5234`
+- git blob: `ff2e974379e51b6e8422f04fa03ff37f5a5cb334`
+- sha256: `d29754bb914b5846815864835e14dbfcac4f4a6826391e190789e5f621f8522c`
+- Lines: 326; runners named: scripts/frontier_hierarchy_exponent16_chirality_forced_doubler_no_go.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

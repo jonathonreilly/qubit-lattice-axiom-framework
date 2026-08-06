@@ -1,0 +1,54 @@
+# Historic intake: Koide Color Sector Correction Note
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+The SU(3) Casimir identity (C_F - T_F)^(-1/4) = (6/5)^(1/4) = 1.0466351394 is exact, and dressing the down-sector amplitudes by it predicts Q_d = (2/3)sqrt(6/5) = 0.730296743 against the PDG threshold-local 0.731428 (0.16%); but a species-independent dressing leaves Q exactly invariant, the doubled insertion for up-type gives 4/5 = 0.800 versus observed 0.849 (5.75% miss, log-ratio exponent 2.65 is not a Casimir power), and 17 enumerated Casimir ratios yield no other match.
+
+Original verdict: COLOR_CORRECTION_FORCES_SQRT_65 = FALSE_BUT_NEAR — the Casimir expression is algebraically available but its deployment as a species-dependent amplitude dressing is not forced by any retained theorem.
+Scope: Structural support/negative note for candidate 5 of the G5 attack surface; promotes no Koide relation to a retained theorem in any sector.
+Escape conditions (negative claims): The obstruction is that the retained hw=1 generation algebra carries no species-dependent color-adjoint projector and the color-singlet projector R_conn = 8/9 is species-democratic so cancels in Q; escaping requires a species-dependent (or matrix-valued) correction on the circulant (a,b) parameters.
+
+## Why pulled (supervisor decision, on the record)
+
+FALSE_BUT_NEAR: the exact Casimir dressing predicts Q_d = 0.7303 with the up-type 5.75% failure honest — a falsifiable-adjacent near-miss with the missing species-charge named.
+
+## Provenance (pinned)
+
+- Original path: `docs/KOIDE_COLOR_SECTOR_CORRECTION_NOTE.md`
+- Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
+- git blob: `40bd522085af7b07f4a375b1868cefa4d49619dd`
+- sha256: `e863cd3531864166c66e989199f8c09fb2719ed85aa33f4da43594330be784a8`
+- Lines: 274; runners named: scripts/frontier_koide_color_sector_correction.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+The up-type extension fails by 5.75%, undercutting the down-sector near-match as evidence of a real mechanism.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

@@ -226,7 +226,66 @@ print("  The phase arg(b) is NOT constrained by anything in this note and is")
 print("  not computed here.  Only the modulus enters r.")
 
 
-section("G. Scope guards")
+section("G. The positivity condition is LOAD-BEARING, not decorative")
+print("  The identity is about Q = (sum x_k^2)/(sum x_k)^2.")
+print("  The KOIDE ratio is  Q_Koide = (sum m)/(sum sqrt m)^2")
+print("                              = (sum x_k^2)/(sum |x_k|)^2 .")
+print("  These agree iff sum x_k = sum |x_k|, i.e. iff no x_k is negative.")
+print("  Below: exact cases with a negative component where they DIFFER.")
+print()
+
+
+def koide_ratio(x):
+    """(sum x^2)/(sum |x|)^2 -- the actual Koide ratio."""
+    s = sum((abs(v) for v in x), F(0))
+    return sum((v * v for v in x), F(0)) / (s * s)
+
+
+def identity_ratio(x):
+    """(sum x^2)/(sum x)^2 -- what the identity computes."""
+    s = sum(x, F(0))
+    return sum((v * v for v in x), F(0)) / (s * s)
+
+
+NEGATIVE_CASES = [(F(1), F(2), F(0)), (F(1), F(1), F(-1)), (F(1), F(3), F(1))]
+POSITIVE_CASES = [(F(2), F(1), F(0)), (F(5), F(1), F(2)), (F(3), F(1), F(1))]
+
+for (a, p, q) in NEGATIVE_CASES:
+    x = components(a, p, q)
+    r = modb2(p, q) / (a * a)
+    qi, qk = identity_ratio(x), koide_ratio(x)
+    check(
+        f"NEGATIVE component present: identity != Koide   x={[str(v) for v in x]}",
+        any(v < 0 for v in x) and qi != qk,
+        f"(1+2r)/3 = {(1 + 2 * r) / 3}  but Q_Koide = {qk}",
+    )
+
+for (a, p, q) in POSITIVE_CASES:
+    x = components(a, p, q)
+    r = modb2(p, q) / (a * a)
+    qi, qk = identity_ratio(x), koide_ratio(x)
+    check(
+        f"all components >= 0: identity == Koide          x={[str(v) for v in x]}",
+        all(v >= 0 for v in x) and qi == qk and qi == (1 + 2 * r) / 3,
+        f"both = {qk}",
+    )
+
+check(
+    "so (1+2r)/3 is the Koide ratio ONLY under the positivity condition",
+    True,
+    "the note states this as a load-bearing open hypothesis (P1), not a result",
+)
+
+# the observed spectrum does satisfy it -- record that, as a comparator
+sq_obs = [math.sqrt(v) for v in m]
+check(
+    "comparator: the observed charged-lepton sqrt-masses are all positive",
+    all(v > 0 for v in sq_obs),
+    f"sqrt(m) = {[round(v, 6) for v in sq_obs]}; |b|/a = {math.sqrt(modb2_c)/a_c:.6f} < 1",
+)
+
+
+section("H. Scope guards")
 if NOTE.exists():
     text = NOTE.read_text(encoding="utf-8")
     check("source note is present on the branch", True, NOTE.name)
@@ -236,6 +295,10 @@ if NOTE.exists():
         ("supplied context", "note names the unproved identification it depends on"),
         ("proposed_retained", "author-side status vocabulary only"),
         ("comparator", "PDG use is disclosed as a comparator"),
+        ("positivity condition", "note states the positivity hypothesis explicitly"),
+        ("not retained", "note records P1's non-retained status"),
+        ("does not establish the positivity condition",
+         "note disclaims discharging the positivity hypothesis"),
     ]:
         check(f"note contains discipline marker: {needle!r}", needle in text, why)
     for forbidden in ["effective_status", "audit_status"]:

@@ -87,8 +87,39 @@ in the form `||a I||^2 = ||b C + bbar C^2||^2`.
 
 The identity above says those two quantities are **the same quantity in
 different coordinates**. Consequently, *under the identification described in
-the next section*, a theorem fixing `r` is a theorem fixing `Q`, and vice
-versa. That is the whole content of this note.
+the next section and the positivity condition below*, a theorem fixing `r` is a
+theorem fixing `Q`, and vice versa. That is the whole content of this note.
+
+## The positivity condition, stated as a load-bearing hypothesis
+
+The identity is proved for `Q = (sum_k x_k^2) / (sum_k x_k)^2`, an algebraic
+statement about arbitrary real `x_k`. The **Koide ratio** is
+
+```text
+Q_Koide = (sum_k m_k) / (sum_k sqrt(m_k))^2 = (sum_k x_k^2) / (sum_k |x_k|)^2 .
+```
+
+These two coincide **if and only if** `sum_k x_k = sum_k |x_k|`, i.e. when no
+`x_k` is negative (given `a != 0`, equivalently when all `x_k` have the sign of
+`a`). So:
+
+```text
+    x_k >= 0 for all k     =>    Q = Q_Koide = (1 + 2r)/3
+    some x_k < 0           =>    Q != Q_Koide in general, and (1+2r)/3
+                                 is NOT the Koide ratio
+```
+
+This matters because the circulant `H = a I + b C + conj(b) C^2` may in general
+have negative eigenvalues, and the reading in which those eigenvalues **are**
+the non-negative square roots `sqrt(m_k)` — rather than merely squaring to the
+masses — is a separate mass/readout identification (`P1` in the Option-C
+inventory, recorded there as *not retained*). This note does **not** discharge
+that identification and does not assume it beyond stating it as the hypothesis
+under which `r` and the Koide ratio are the same quantity.
+
+The runner exhibits an explicit counterexample with a negative component in
+which `(1+2r)/3` and the Koide ratio differ, so the condition is demonstrably
+load-bearing rather than decorative.
 
 ## The identification this depends on, stated as an open premise
 
@@ -114,6 +145,10 @@ any part of it.
   realized-state primitive that remains registered data.
 - It says nothing about the phase `arg(b)` (the Koide `delta`). Only the
   modulus enters `r`, and `delta` is untouched and open.
+- It **does not establish the positivity condition** above, and does not
+  assert that the circulant eigenvalues are the non-negative square roots
+  rather than merely squaring to the masses. Where that fails, `(1+2r)/3` is
+  not the Koide ratio and this note connects nothing.
 - The `K`/CPT partition, its identification with the charged-lepton occupancy
   surface, and the rank-3 spectral reading are **not** derived here.
 - PDG masses appear only as a disclosed **comparator**, never as a derivation
@@ -126,8 +161,12 @@ any part of it.
 
 Real 3-vectors, `a != 0`, exact rational arithmetic. The claim is an algebraic
 identity between two scalar functions of the same object; it carries no
-physical content on its own and acquires physical meaning only through the
-identification named above, which is open.
+physical content on its own and acquires physical meaning only through **two**
+hypotheses named above, both open: the `K`/CPT identification, and the
+positivity condition `x_k >= 0` without which `(1+2r)/3` is not the Koide
+ratio. The algebraic identity `Q = (1+2r)/3` itself holds for all real `x_k`
+with `sum_k x_k != 0`; only its reading as a statement about masses needs
+positivity.
 
 ## Reproduce
 

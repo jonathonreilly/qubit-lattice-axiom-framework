@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_occupancy_grain_koide_ratio_identity_2026_08_06.py
-runner_sha256: 6e354a0d80235936bb139c0c26eada1c44c1a92448feff8278c18f82e4d09217
-input_fingerprint_sha256: 1204080d40741afac21f5d2469625b698272393dfb3fae1a15699054b42472e5
+runner_sha256: 4635e6a2eb34959bc08908649ba2ffaee1dd93f7b9f722b73ca84388702e3a38
+input_fingerprint_sha256: 8b05437149b436ae8f4d6e3ca4af29c3e7fff5f5748a27e4498a3571b5800b85
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.07
@@ -97,7 +97,24 @@ F. Disclosed comparator (PDG) -- NOT a derivation step
   The phase arg(b) is NOT constrained by anything in this note and is
   not computed here.  Only the modulus enters r.
 
-G. Scope guards
+G. The positivity condition is LOAD-BEARING, not decorative
+-----------------------------------------------------------
+  The identity is about Q = (sum x_k^2)/(sum x_k)^2.
+  The KOIDE ratio is  Q_Koide = (sum m)/(sum sqrt m)^2
+                              = (sum x_k^2)/(sum |x_k|)^2 .
+  These agree iff sum x_k = sum |x_k|, i.e. iff no x_k is negative.
+  Below: exact cases with a negative component where they DIFFER.
+
+  [PASS] NEGATIVE component present: identity != Koide   x=['5', '-1', '-1']  ((1+2r)/3 = 3  but Q_Koide = 27/49)
+  [PASS] NEGATIVE component present: identity != Koide   x=['4', '1', '-2']  ((1+2r)/3 = 7/3  but Q_Koide = 3/7)
+  [PASS] NEGATIVE component present: identity != Koide   x=['6', '-3', '0']  ((1+2r)/3 = 5  but Q_Koide = 5/9)
+  [PASS] all components >= 0: identity == Koide          x=['4', '1', '1']  (both = 1/2)
+  [PASS] all components >= 0: identity == Koide          x=['5', '2', '8']  (both = 31/75)
+  [PASS] all components >= 0: identity == Koide          x=['4', '1', '4']  (both = 11/27)
+  [PASS] so (1+2r)/3 is the Koide ratio ONLY under the positivity condition  (the note states this as a load-bearing open hypothesis (P1), not a result)
+  [PASS] comparator: the observed charged-lepton sqrt-masses are all positive  (sqrt(m) = [0.714842, 10.279026, 42.152817]; |b|/a = 0.707100 < 1)
+
+H. Scope guards
 ---------------
   [PASS] source note is present on the branch  (OCCUPANCY_GRAIN_KOIDE_RATIO_IDENTITY_BOUNDED_THEOREM_NOTE_2026-08-06.md)
   [PASS] note contains discipline marker: 'derives neither'  (note disclaims deriving Q or r)
@@ -105,11 +122,14 @@ G. Scope guards
   [PASS] note contains discipline marker: 'supplied context'  (note names the unproved identification it depends on)
   [PASS] note contains discipline marker: 'proposed_retained'  (author-side status vocabulary only)
   [PASS] note contains discipline marker: 'comparator'  (PDG use is disclosed as a comparator)
+  [PASS] note contains discipline marker: 'positivity condition'  (note states the positivity hypothesis explicitly)
+  [PASS] note contains discipline marker: 'not retained'  (note records P1's non-retained status)
+  [PASS] note contains discipline marker: 'does not establish the positivity condition'  (note disclaims discharging the positivity hypothesis)
   [PASS] note does not set 'effective_status'  (status authority stays with the independent audit lane)
   [PASS] note does not set 'audit_status'  (status authority stays with the independent audit lane)
 
 ==================================================================
-TOTAL: PASS=62, FAIL=0
+TOTAL: PASS=73, FAIL=0
 ==================================================================
 
 ----- stderr -----

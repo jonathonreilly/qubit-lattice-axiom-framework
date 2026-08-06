@@ -1,0 +1,54 @@
+# Historic intake: Koide Q_l = 2/3 Unconditional Closure via Q-Specific SO(2)-Invariance on the Doublet Sector
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_upgrade_to_unconditional_retained_closure_of_q_l_2_3_on_the_live_authority_surface
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Claims the load-bearing carrier-choice primitive is now DERIVED, not admitted: direct algebra on the Brannen formula gives Q=(c^2+2)/6 exactly, independent of delta and V_0, with c^2=4|b|^2/a^2 — so Q depends only on |b| and IS SO(2)-invariant on the doublet sector (unlike delta_Brannen = arg b, which the April-20 MRU demotion correctly excluded). The reduced two-slot carrier (E_+,E_perp)=(3a^2,6|b|^2) is therefore forced, and ground-state extremization of W_red at fixed Tr Y_red gives E_+=E_perp <=> a^2=2|b|^2 <=> c=sqrt(2) <=> Q=2/3.
+
+Original verdict: Q_l = 2/3 retained closure on origin/main — unconditional on the carrier choice, which is now derived from Q's SO(2)-invariance.
+Scope: Q-side only, on the retained Brannen mass formula plus the Observable Principle source generator and standard QFT ground-state interpretation; the delta side is handled separately.
+
+
+## Why pulled (supervisor decision, on the record)
+
+The 'unconditional retained closure' claim via carrier-choice derivation — pulled WITH its strong-claim flag beside the 04-24/25 sweeps that treat Q as open; audit rules the contradiction.
+
+## Provenance (pinned)
+
+- Original path: `docs/KOIDE_Q_UNCONDITIONAL_CLOSURE_VIA_Q_SO2_INVARIANCE_THEOREM_NOTE_2026-04-25.md`
+- Source commit: `f6ead1062ac4504b4ba03325f8fea6a696dc6056`
+- git blob: `c01106c087b71ef2bc64a04858182f55ffcc2d24`
+- sha256: `0018f1b267dc05b1a313fa79017f959174d40a00d45b918a8547e46ce17f62f3`
+- Lines: 399; runners named: scripts/frontier_koide_q_unconditional_closure_via_q_so2_invariance.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+Strong claim ('unconditional closure', 'retained closure on origin/main') resting on a single new observation (Q's SO(2)-invariance) plus a 'QFT-standard interpretation' of the Observable Principle partition function; the ground-state-extremization step is an interpretive import rather than a derived law.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

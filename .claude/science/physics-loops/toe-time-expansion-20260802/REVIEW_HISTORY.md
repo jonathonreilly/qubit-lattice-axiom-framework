@@ -1754,3 +1754,29 @@ the new file (pre-existing work_history flags left for the audit
 lane). The lane's wall moves from "no symmetry exists" (940, now
 model-contingent) to H0: prove the compiled substrate realizes the
 axiom's rule symmetry-faithfully.
+
+## blockQ18 / Cycle 947 — supervisor disposition (2026-08-05)
+
+Line-by-line review of both runners (2,280 + 1,249 lines), receipts, and
+logs. Verified: whitelist AST diagonality grammar sound (shifts/calls
+refuse); backward-cone implementation correct over control->target edges;
+H0b2's structural argument (bit-diagonality => cross-lane independence for
+every state and horizon) airtight given H0a1, with firing own-lane
+controls; famA tensor-factorization argument checked by hand — all 11
+probed lanes commute (the one non-witness, lane 254, is a symmetry acting
+trivially at its own lane on the sampled state — benign, verified in the
+receipt); famB rides on affine rigidity, enumerated not asserted; checker
+machinery genuinely disjoint (forward-only reachability, scalar per-lane
+interpreter, generator-closure isometries, subset/3-cycle generators).
+Both science digests reproduced in fresh supervisor processes (primary
+656621f3…, checker a5cb9c40…). One defect found and fixed on the record:
+receipt headline said "Four" DERIVED vs the verdict table's five (menu
+cardinality omitted) — string corrected, rerun, science_digest unchanged.
+One cosmetic flag left as-is: the checker's R2 key
+`BUT_sigma_itself_preserves_proto` is awkwardly named (value False is what
+the withdrawal needs; surrounding prose is explicit). R1 adopted as
+STANDING with scope effect on 946's certificate; R2 raised-and-withdrawn
+accepted (symmetric standard). The worker's five spec deviations all
+endorsed — the data won each time; my spec's wire-level site map was wrong
+(lanes, not wires) and my "946 containment predicate as comparator" split
+under the cone test. Shipped as PR #6017.

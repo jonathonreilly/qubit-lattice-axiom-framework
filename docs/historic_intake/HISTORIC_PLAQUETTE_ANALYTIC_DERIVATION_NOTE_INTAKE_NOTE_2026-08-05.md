@@ -1,0 +1,54 @@
+# Historic intake: Plaquette Scalar-Bridge Theorem: Analytic Route on Main
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_bridge_theorem_closed_on_main
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+On the 3+1 scalar-bridge surface <P>(beta) = <P>_1plaq(beta_eff) with beta_eff = beta (3/2)(2/sqrt3)^(1/4), built from local Wilson source-response, the scalar 3+1 temporal ratio A_inf/A_2 = 2/sqrt3, the four-link map P(u_0 V) = u_0^4 P(V) and the incidence factor Gamma_coord = 6/4 = 3/2. At beta = 6 this gives <P> = 0.5935307..., differing from the historical same-surface 0.5934 in the fifth decimal.
+
+Original verdict: The theorem gap is closed on the chosen route with qualifiers; not promoted as a fully universal analytic derivation.
+Scope: Closed on the chosen 3+1 scalar-bridge route only; no uniqueness claim for that route, and repo-wide numeric migration from 0.5934 is pending.
+
+
+## Why pulled (supervisor decision, on the record)
+
+Bridge theorem that RETRACTS a landed negative and leaves a repo-wide inconsistency (consumers quote 0.5934; bridge gives 0.59353) — audit work order.
+
+## Provenance (pinned)
+
+- Original path: `docs/PLAQUETTE_ANALYTIC_DERIVATION_NOTE.md`
+- Source commit: `3026d0167c0f09bd71eef26815e80691122e64ca`
+- git blob: `c14e7b91c7d06bb240588709dc4968ef7cc222c5`
+- sha256: `47a26f97425b3b3186bad35682809fc044e2da4512a6abb8d61cfdef040d44ee`
+- Lines: 92; runners named: scripts/frontier_scalar_3plus1_temporal_ratio.py, scripts/frontier_gauge_vacuum_plaquette_bridge_theorem.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+Retracts a previously landed negative result and leaves a known repo-wide inconsistency: downstream consumers still quote 0.5934 while the bridge gives 0.59353.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

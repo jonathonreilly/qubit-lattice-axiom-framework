@@ -1,0 +1,54 @@
+# Historic intake: Poisson Uniqueness Theorem
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_exact_algebraic_theorem
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+On Z^3 with nearest-neighbour coupling the graph Laplacian is the unique translation-invariant self-adjoint operator whose Green's function decays as 1/r and is attractive: the zero-mode condition forces c_0 = -6 c_1, Taylor expansion gives L_hat(k) = -c_1|k|^2 + O(|k|^4), the bracket 3 - cos k_1 - cos k_2 - cos k_3 vanishes only at k = 0, and attraction forces c_1 > 0. Corollary: adding a mass term makes the Green's function Yukawa, ruling out massive gravitons in this class.
+
+Original verdict: Exact - the 5/5 algebraic steps are the proof; three of five numerical checks FAIL from finite-size artifacts and are explicitly not load-bearing.
+Scope: Explicit assumptions: translation invariance, nearest-neighbour connectivity, self-adjointness and exact 1/r decay; the proof is on infinite Z^3, with finite-lattice numerics as consistency checks only.
+Escape conditions (negative claims): The uniqueness bites only within the stated operator class - beyond nearest-neighbour or beyond exact 1/r decay it says nothing.
+
+## Why pulled (supervisor decision, on the record)
+
+Poisson uniqueness within the stated class — WITH the EXACT-header-vs-3/5-numerical-FAILs flag on the record.
+
+## Provenance (pinned)
+
+- Original path: `docs/POISSON_UNIQUENESS_THEOREM_NOTE.md`
+- Source commit: `01fcc3c83d644fb34bb42cbc881565cd3b4d7e3f`
+- git blob: `46114a36df713f04767281651acfa9f11bd2447e`
+- sha256: `987e8ea34d882f6d9320c0f9c829884b9be9290b175c0c8a825e4cc102349150`
+- Lines: 166; runners named: scripts/frontier_poisson_uniqueness_theorem.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+Header advertises EXACT while the same runner reports 3/5 numerical checks FAILING; the note argues these are finite-size artifacts, but a reader scanning runner output would see failures.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

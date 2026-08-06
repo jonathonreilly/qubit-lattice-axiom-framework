@@ -1,0 +1,54 @@
+# Historic intake: Same-Source W-Response Decomposition Theorem
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_bounded_theorem
+Stratum: branch_only_never_mainlined
+Era: may_june_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+If the source moves the canonical radial coordinate by kappa_h ds and an orthogonal neutral scalar by kappa_x ds, then at tree level R_t = dm_t/ds = (y_h kappa_h + y_x kappa_x)/sqrt(2) and R_W = dM_W/ds = g_2 kappa_h/2, so g_2 R_t/(sqrt(2) R_W) = y_h + y_x kappa_x/kappa_h — the unknown source normalization cancels exactly and the entire residue is the orthogonal neutral top-coupling term.
+
+Original verdict: The W-response route closes the source-normalization half of the FH/LSZ blocker, but W response alone is not physical y_t without an orthogonal-top null theorem, a tomography row subtracting y_x kappa_x/kappa_h, or Gram-purity rows proving the source pole is the canonical pole.
+Scope: Exact support at tree level on the existing one-Higgs gauge-mass and Yukawa-selection surfaces; the required rows are absent.
+Escape conditions (negative claims): Three named sufficient supplements, each of which is separately gated (idx 2352, 2171, 2379).
+
+## Why pulled (supervisor decision, on the record)
+
+The W/Z response route's positive form (per the chain map: the surviving conditional theorem of the gauge-normalized cluster).
+
+## Provenance (pinned)
+
+- Original path: `docs/YT_SAME_SOURCE_W_RESPONSE_DECOMPOSITION_THEOREM_NOTE_2026-05-04.md`
+- Source commit: `6e695ce8bc2d388c1d229a46183bddbfd87b6c63`
+- git blob: `8d288380581d32aea80782e2b161b428fbdb5085`
+- sha256: `36ded4d85f7404b3bd424f55d60f2a3fb183413a0f943dc11388631f689ecdbb`
+- Lines: 54; runners named: scripts/frontier_yt_same_source_w_response_decomposition_theorem.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

@@ -1,0 +1,54 @@
+# Historic intake: y_t Overshoot Diagnosis: Where Does the 6.5% Come From?
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_bounded_result
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Decomposes the 184 vs 173 GeV overshoot into competing effects: a 1-loop baseline at +1.1%, the 1-loop to 2-loop RGE step at +9.2 GeV (+5.3%), and threshold corrections from n_f decoupling at -7.0 GeV (-4.1%), leaving a net +4.2 GeV (+2.4%). The full 6.5% appears only when 2-loop running is used without thresholds — an inconsistent approximation.
+
+Original verdict: The overshoot is not a single source, and the best consistent estimate is a residual 2.4% rather than 6.5%.
+Scope: Diagnostic, 9 PASS 0 FAIL; the boundary condition itself contributes 0% error.
+
+
+## Why pulled (supervisor decision, on the record)
+
+The overshoot decomposition: the widely quoted 6.5% figure came from inconsistent scheme use — corrective accounting of the 184-vs-173 gap.
+
+## Provenance (pinned)
+
+- Original path: `docs/YT_OVERSHOOT_DIAGNOSIS_NOTE.md`
+- Source commit: `6edb0c838aa3ed8873a055e88ea5cc40a43620fa`
+- git blob: `787aa3dc61a4632d620c7ac95fd39919d8bda045`
+- sha256: `f218a7dbed8e8b6e23d10cf3d519446ac47e581a401df19f96f8b8f4d711a7f7`
+- Lines: 118; runners named: scripts/frontier_yt_overshoot_diagnosis.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+Shows that the widely quoted 6.5% figure came from an inconsistent approximation (2-loop running without thresholds).
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

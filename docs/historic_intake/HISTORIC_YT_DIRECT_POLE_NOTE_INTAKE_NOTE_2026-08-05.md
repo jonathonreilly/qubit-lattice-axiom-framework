@@ -1,0 +1,54 @@
+# Historic intake: Direct Top Mass from Lattice Propagator Pole
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+The free staggered Hamiltonian at the hw=1 corner k = (pi,0,0) has all eight eigenvalues degenerate at E = 2r, so with r = 1 the bare mass is 2 M_Planck ~ 2.4e19 GeV and m_t/m_bare ~ 7e-18 — the bare mass IS the cutoff. Attempts to skip the RGE fail: the 1-loop CW potential has lambda_eff < 0 (unbounded below, no stable vacuum at v = 246), the naive ratio at M_Z gives m_t ~ 73 GeV (off by 2.4x), and CW dimensional transmutation gives v ~ 1e7 GeV.
+
+Original verdict: You cannot skip the RGE — the lattice pole lives at the Planck scale and bridging to 173 GeV requires either the existing RGE chain or a non-perturbative hierarchy mechanism; the CW mechanism alone needs tuned bare parameters.
+Scope: Free staggered propagator pole plus 1-loop CW with SM couplings at Lambda = M_Planck.
+Escape conditions (negative claims): A non-perturbative mechanism generating the full hierarchy is the named alternative to the RGE route.
+
+## Why pulled (supervisor decision, on the record)
+
+The Planck-degeneracy fact: all eight corner eigenvalues at 2 M_Pl — you cannot skip the RGE; kills the direct-readout dream exactly.
+
+## Provenance (pinned)
+
+- Original path: `docs/YT_DIRECT_POLE_NOTE.md`
+- Source commit: `fb4d882b586b3983f9cc6a2db7fe4f97eed84ab0`
+- git blob: `e5b5cd454f8d23b9757aad7471953140a65e0588`
+- sha256: `c7a3d6b76129218aab9e4dfb5d8908aa9f58703dcfdc8bb435a3fdf8ec8e413a`
+- Lines: 78; runners named: scripts/frontier_yt_direct_pole.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

@@ -1,0 +1,54 @@
+# Historic intake: Koide Native Zero-Section Bridge Current-Surface No-Go
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: post_reset_2026_06_29
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Narrowed claim: current surfaces do not supply NATIVE_ZERO_SECTION_BRIDGE_RETAINED. Route algebra gives finite support only: z = 0 -> w_plus = 1/2, K_TL = 0, Q = 2/3; z = -1/3 -> w_plus = 1/3, Q = 1; a whole real nontrivial Z_3 primitive admits no spectator idempotent; based endpoint F(0) = 0 -> c = 0; eta_Z3 -> delta_open = 2/9.
+
+Original verdict: Support-only non-supply boundary; the physical Z1/Z2/Z3 licenses, species bridge and absolute scale are all still separate.
+Scope: The Koide native bridge input consumed by the physical electron mass lane; eight-input contract (bridge text lock, zero-source readout, real primitive Brannen endpoint, based determinant-line readout, no comparator, no new primitive/axiom, owner ratification, audit acceptance).
+Escape conditions (negative claims): Supply the zero-source readout, real primitive Brannen endpoint and based determinant-line readout, then ratify and audit.
+
+## Why pulled (supervisor decision, on the record)
+
+Native zero-section bridge terminal: route algebra exact (z = 0 -> Q = 2/3) but the physical licenses are the missing content.
+
+## Provenance (pinned)
+
+- Original path: `docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+- Source commit: `a750e4fdb1b4e8a0296a90db1cb51b74cf51b903`
+- git blob: `905696fd06e31ba40838d72720093ca25df11eb5`
+- sha256: `3864ec806796c844ec3f01e33c6e74b6bc1f5d9ae2ea67394d1b597ebfb9f217`
+- Lines: 264; runners named: scripts/frontier_koide_native_zero_section_closure_route.py, scripts/frontier_zero_import_hydrogen_koide_native_zero_section_bridge_current_surface_no_go.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

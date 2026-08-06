@@ -1520,20 +1520,20 @@
     "I_RUNTIME": {
       "budget_seconds": 1800,
       "certificate": "I_RUNTIME",
-      "elapsed_seconds": 24.355,
+      "elapsed_seconds": 24.199,
       "pass": true,
       "per_stage_seconds": {
-        "H0a1": 1.362,
-        "H0a2": 0.008,
+        "H0a1": 1.357,
+        "H0a2": 0.007,
         "H0a3": 0.023,
-        "H0b1": 3.735,
-        "H0b2": 1.355,
-        "H0c": 0.987,
+        "H0b1": 3.756,
+        "H0b2": 1.406,
+        "H0c": 0.996,
         "H0d": 0.048,
-        "NO_GO": 0.802,
+        "NO_GO": 0.812,
         "double_run": 1.932,
-        "setup": 13.825,
-        "teeth": 0.221
+        "setup": 13.593,
+        "teeth": 0.214
       }
     }
   },

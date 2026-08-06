@@ -22,5 +22,5 @@ no-go: universal symmetry-faithfulness FALSE = True (famA=10, famB=7)
 teeth: 10/10
 firewall: floats=0, unfenced weights=0
 science digest: f8fef0efa3c757fcd054ee0c422bece9da3f9ebdffd242de94597b947b723af8
-elapsed: 24.355s
+elapsed: 24.199s
 all certificates pass: True

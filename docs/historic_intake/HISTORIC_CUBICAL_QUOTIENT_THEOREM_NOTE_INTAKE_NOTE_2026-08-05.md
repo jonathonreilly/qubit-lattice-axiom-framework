@@ -1,0 +1,54 @@
+# Historic intake: Constructive Cubical Quotient Theorem for Rooted `3`-Chains on the `3+1` Plaquette Surface
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_theorem
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+For finite rooted 3-chains V, W on the 3+1 cubic lattice, dV = dW iff V + W is a finite closed 3-chain that bounds — proved constructively by building the exact C_4 -> C_3 boundary matrix on a support box and solving dX = V + W over F_2 by lexicographic elimination — with the hypercube-complement witness being exactly one 4-cube boundary and the first rooted duplicate pair at n = 4 also on it.
+
+Original verdict: The rooted filling is not physical data — only its boundary is.
+Scope: Exhaustive finite-box checks; the canonical quotient key is identified as dV.
+
+
+## Why pulled (supervisor decision, on the record)
+
+Exact constructive theorem: dV = dW iff V+W bounds — only the boundary is physical data; global extension of the landed local result.
+
+## Provenance (pinned)
+
+- Original path: `docs/CUBICAL_QUOTIENT_THEOREM_NOTE.md`
+- Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
+- git blob: `5da9154c249c7582d31338da5f1e67447f15aa40`
+- sha256: `916345d8df00c2fe587979dfe5da0f5d6ce3389953d6738bc1190ab32eb14b0b`
+- Lines: 145; runners named: scripts/frontier_cubical_quotient_theorem.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

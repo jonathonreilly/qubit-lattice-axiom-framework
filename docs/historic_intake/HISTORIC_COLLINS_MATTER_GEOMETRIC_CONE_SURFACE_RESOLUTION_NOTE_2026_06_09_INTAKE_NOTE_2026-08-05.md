@@ -1,0 +1,54 @@
+# Historic intake: Collins Matter-Cone vs Geometric-Cone: Surface-Resolution of the Marginal Velocity Anisotropy
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_bounded_theorem_plus_structural_no_go
+Stratum: branch_only_never_mainlined
+Era: unknown
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Resolves the Collins matter-cone versus geometric-cone tension: on the framework's canonical free staggered action (which discretizes all four directions including Euclidean time on the same nearest-neighbour footing) the interacting answer is delta_v = 0 exactly and representation-blind, verified at one gauged loop where the B_4-symmetric measure maps the temporal coefficient integral onto the spatial one to machine precision; the apparent anisotropy is an anisotropic-regulator artifact.
+
+Original verdict: Collins reduces to a single mild well-motivated admission, and the framework's own structure selects the protected surface.
+Scope: Runner SCORECARD PASS=18 FAIL=0; three distinct residual freedoms are itemized.
+Escape conditions (negative claims): The structural no-go is against the anisotropic-regulator route; the residual premise is decomposed into three distinct freedoms, each a separate escape.
+
+## Why pulled (supervisor decision, on the record)
+
+Collins anisotropy resolved: the framework's own canonical staggered action selects the protected isotropic class, reducing the external critique to one mild named admission — structural no-go on the anisotropic-regulator route.
+
+## Provenance (pinned)
+
+- Original path: `docs/COLLINS_MATTER_GEOMETRIC_CONE_SURFACE_RESOLUTION_NOTE_2026-06-09.md`
+- Source commit: `7953c1d26c812782f68cf659f636522a25e8881b`
+- git blob: `8b44041123c6ba4d24050dd6508d507f4ed3501f`
+- sha256: `1ad5b6db90edfef23d644ee6e574d038e510807f08e732c85feb1de114b1a1ad`
+- Lines: 354; runners named: ../scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09.py, scripts/frontier_collins_matter_geometric_cone_surface_resolution_2026_06_09.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

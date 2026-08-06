@@ -1,0 +1,54 @@
+# Historic intake: Boltzmann Equation as a Lattice Theorem
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_theorem
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Proves the lattice master equation for taste occupation numbers reduces to the Boltzmann equation dn/dt + 3Hn = -<sigma v>(n^2 - n_eq^2) in the thermodynamic limit, via exact transition rates, a Stosszahlansatz derived from the spectral gap, Riemann-sum and Weyl's-law convergence with UV finiteness from the compact Brillouin zone, and an expansion term from graph growth.
+
+Original verdict: The Boltzmann equation is a lattice theorem rather than an import, making R a corollary given the Casimir ratio, alpha_s at g_bare = 1, and the Sommerfeld factor.
+Scope: Thermodynamic limit L -> infinity at fixed lattice spacing; closes the objection that freeze-out was imported cosmology.
+
+
+## Why pulled (supervisor decision, on the record)
+
+The Boltzmann equation as a lattice THEOREM (exact transition rates, Stosszahlansatz discharged) closing a standing import objection — with the alpha_s/g_bare caveat carried.
+
+## Provenance (pinned)
+
+- Original path: `docs/DM_BOLTZMANN_THEOREM.md`
+- Source commit: `8e20182cc534935063b9a384e11da7b0f6772d37`
+- git blob: `c80a5dd85671602d64c66da5042127c08084fffd`
+- sha256: `70330dbc1b9ba39db6af5f359c4dd4c601c4107dc5bab4bfaa83ed5bc33846cd`
+- Lines: 275; runners named: frontier_dm_direct_boltzmann.py, frontier_dm_friedmann_from_newton.py, frontier_dm_stosszahlansatz_theorem.py, scripts/frontier_dm_boltzmann_theorem.py, scripts/frontier_dm_friedmann_from_newton.py, scripts/frontier_dm_stosszahlansatz_theorem.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+The corollary still routes through alpha_s at g_bare = 1, which other notes flag as an assumed input (Axiom A5).
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

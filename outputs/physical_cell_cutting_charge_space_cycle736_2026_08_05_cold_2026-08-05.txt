@@ -1,0 +1,30 @@
+
+the cuttings of the cell at the floor of the cost
+PASS base.cell  4368 five-subsets of the 16 corners give 2672 pieces of least volume, carrying 2736 sample points with no collision and 0 on a boundary; the cell has 48 symmetries and the pieces 57 orbits
+PASS base.floor  a complete search over the 400 pieces of least cost 6 visits 502838 nodes and finds 15800 cuttings of 24 pieces each, between them using 192 pieces
+
+moves between cuttings, counted by how many pieces they replace
+PASS move.size  moves replacing four, five, six, seven, eight, nine and ten pieces number 46128, 0, 31968, 60096, 151704, 119808 and 281376, drawn from 120, 528, 1152, 4212, 6144 and 25248 distinct exchanges; the 120 at four match the 120 regions the earlier cycle recut
+PASS span.pop  the 15800 cuttings span 88 dimensions and their differences 87; the exchange differences span 85 at four rising to 87 at eight, nine and ten, and a population difference lying outside the seven-piece span is exhibited
+
+which uniform answers a weight on the pieces can give
+PASS resp.rev  a weight is exhibited whose reading changes across every one of the 46128 smallest moves; at six, seven, eight, nine and ten a family of 7, 5, 5, 7 and 5 exchanges summing to zero is exhibited, each family of odd size, so at those sizes no weight can change across every move
+PASS resp.lat  the four-piece span sits inside both the six- and the seven-piece span, neither of which holds the other; their sum is the eight-piece span, itself the nine- and the ten-piece span, and their meet has dimension 85, so the four-piece span is exactly the overlap of the six- and seven-piece spans
+PASS resp.subs  of the 63 non-empty sets of move sizes exactly 3 admit more than one answer pattern, namely four, four with six and four with seven, each admitting 2; every other set, the whole of them included, admits exactly one
+
+the charges the cuttings carry
+PASS chg.space  weights answering the smallest move uniformly form a space of dimension 107; on the cuttings they induce 8 charges spanning dimension 3, of which 2 are constant, and moving the exhibited weight on a single piece destroys uniformity at four
+  keeps           split  rigid side     at 4     at 6     at 7     at 8     at 9    at 10
+  four      5664/10136        10136        0     9504    26880    32640    48960   124224
+  six       7704/8096          7704    46128        0    26880    28608    87552   190848
+  seven     7424/8376          8376    46128     9504        0    21312   102336   183744
+PASS chg.table  there are 3 charges up to swapping the two sides, one keeping each of the four-, six- and seven-piece moves; the 26880 of 60096 that the six-keeping charge flips at seven, its 7704 to 8096 split, and the 7704 side carrying all 48 rigid cuttings are the numbers the earlier cycle measured
+PASS chg.joint  asking a weight to answer the six- and the seven-piece move uniformly at once leaves a space of dimension 105, and every charge it puts on the cuttings is constant
+
+the groups the smallest move leaves behind
+PASS comp.prof  the smallest move leaves 349 groups, of sizes 1, 2, 4, 7, 236 and 9320 with 144, 96, 36, 48, 24 and 1 groups at each size; the 349 groups and the 144 of size one are counts the earlier cycles measured
+PASS comp.orb  no symmetry splits a group; the 349 groups fall into 14 orbits, a count the earlier cycle measured, and the 24 of size 236 form a single orbit whose stabiliser has order 2, while the largest group is held fixed by all 48
+PASS chg.fix  every one of the 8 charges is left where it is by all 48 symmetries of the cell, point by point, while the indicator of a single group of 236 cuttings is carried to 24 different functions
+PASS chg.supp  the charge keeping the smallest move is exactly the indicator of that one orbit of 24 groups, holding 5664 of the 15800 cuttings, and the 48 cuttings carrying no move on at most eight pieces all sit off it
+
+TOTAL: PASS=14 FAIL=0

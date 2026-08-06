@@ -858,7 +858,8 @@ def main() -> int:
     gate("orientation_wires_re_derived_match_946",
          list(ORIENTATION_WIRES), q1_946["orientation_wires"])
     gate("defect_distinct_gates",
-         len({g for _si, g, _im in defect}), q1_946["defect_distinct_gates"])
+         len({(g[0], g[1], g[2], g[3]) for _si, g, _im in defect}),
+         q1_946["defect_distinct_gates"])
     gate("defect_occurrences", len(defect), q1_946["defect_occurrences"])
     gate("gates_before", sum(len(s) for s in sched_ma), q1_946["gates_before"])
     gate("gates_after", sum(len(s) for s in sched_p), q1_946["gates_after"])
@@ -1199,6 +1200,8 @@ def main() -> int:
         }
     coneF = backward_cone(sched_p, {left_w, right_w}, 1 << 8, kinds,
                           M.gate_target)
+    cone50 = backward_cone(sched_p, {left_w, right_w}, 50, kinds,
+                           M.gate_target)
     cone1 = backward_cone(sched_p, {left_w, right_w}, 1, kinds, M.gate_target)
     cone2 = backward_cone(sched_p, {left_w, right_w}, 2, kinds, M.gate_target)
     FORMALIZATIONS = {
@@ -1225,7 +1228,26 @@ def main() -> int:
                      "neighborhood wire set, and inside the site's own fibre.",
         "per_occasion_cones": cone_rows,
         "cycle_wide_cone_sizes": {"depth_1": len(cone1), "depth_2": len(cone2),
-                                  "closure": len(coneF)},
+                                  "depth_50": len(cone50),
+                                  "true_closure": len(coneF)},
+        "946_N5_IS_A_DEPTH_50_TRUNCATION_NOT_A_CLOSURE": {
+            "946_pinned_N5_size":
+                ne_946["formalizations"]["N5_endpoint_read_cone_closure"][
+                    "wires_in_the_formalization"],
+            "this_block_at_depth_50": len(cone50),
+            "this_block_at_the_fixed_point": len(coneF),
+            "reproduces_946_at_its_own_depth":
+                len(cone50) == ne_946["formalizations"][
+                    "N5_endpoint_read_cone_closure"][
+                    "wires_in_the_formalization"],
+            "disclosure": "946 called its depth-50 cone a 'closure'.  The "
+                          "backward cone does NOT reach its fixed point by "
+                          "depth 50; iterating to the fixed point gives a "
+                          "strictly larger set.  Nothing in 946's verdicts "
+                          "turns on this (N5 was inadmissible under its own "
+                          "criterion either way), but the label is wrong and "
+                          "is corrected here.",
+        },
         "containment_against_the_re_derived_formalizations": containment,
         "the_only_neighborhoods_containing_BOTH_the_sigma_support_and_the_"
         "cone": only_total,
@@ -1243,6 +1265,16 @@ def main() -> int:
                 "screening is satisfied because the neighbours contribute "
                 "NOTHING, not because their contribution is small.  That is "
                 "the fact H0b2 turns into a refutation.",
+        },
+        "THE_TRUE_CLOSURE_IS_THE_WHOLE_ACTIVE_MACHINE": {
+            "closure_equals_every_wire_the_law_touches":
+                coneF == set(touched_p),
+            "wires": len(coneF),
+            "meaning": "iterated to its fixed point, the backward cone of the "
+                       "menu wires is EXACTLY the set of wires the law "
+                       "touches.  Every active wire of the site is a causal "
+                       "ancestor of the menu.  There is no proper local shell "
+                       "that screens the choice.",
         },
         "THE_CHOICE_NODE_HAS_NO_CAUSAL_ANCESTOR":
             "the CHOICE gate carries no control wires, so the branch datum "
@@ -1872,7 +1904,8 @@ def main() -> int:
     def tooth(name, fired, detail):
         teeth.append({"tooth": name, "fired": bool(fired), "detail": detail})
 
-    planted_line = f" c[{left_w}] ^= (c[{right_w}] << 1) & {all_masks[0]}"
+    planted_line = (f" c[{left_w}] ^= (c[{right_w}] << 1) & "
+                    f"{env['uni_sim']}")
     ok_planted, why_planted = statement_is_lane_diagonal(planted_line)
     ns_p: dict = {}
     exec("def apply_chunk(c):\n" + planted_line, {"__builtins__": {}}, ns_p)
@@ -1913,10 +1946,14 @@ def main() -> int:
 
     bad_sched = list(sched_p)
     s0 = list(bad_sched[0])
-    victim = next(i for i, g in enumerate(s0) if g in set(added))
+    added_set = set(added)
+    victim = next(i for i, g in enumerate(s0)
+                  if g in added_set and sigma_gate(g, SIG, kinds) != g)
     kg = s0[victim]
-    s0[victim] = (kg[0], kg[1], kg[2], ORIENTATION_WIRES[0], kg[4]) \
-        if kg[0] == M.KIND_TOF else (kg[0], kg[1], ORIENTATION_WIRES[0],
+    fresh_target = next(w for w in range(len(proto))
+                        if w not in set(touched_p) and w not in SIG)
+    s0[victim] = (kg[0], kg[1], kg[2], fresh_target, kg[4]) \
+        if kg[0] == M.KIND_TOF else (kg[0], kg[1], fresh_target,
                                      kg[3], kg[4])
     bad_sched[0] = tuple(s0)
     bad_sched = tuple(bad_sched)
@@ -1926,6 +1963,7 @@ def main() -> int:
                                      lambda c: perm_apply(c, SIG))),
           {"flipped": "one spliced sigma-image gate's target moved to an "
                       "orientation wire",
+           "victim_gate": list(kg), "retargeted_to": fresh_target,
            "L1_after_the_flip": multiset_sigma_invariant(bad_sched, SIG,
                                                          kinds)})
 

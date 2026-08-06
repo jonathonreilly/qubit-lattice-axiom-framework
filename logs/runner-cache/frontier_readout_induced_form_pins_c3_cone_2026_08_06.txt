@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/frontier_readout_induced_form_pins_c3_cone_2026_08_06.py
+runner_sha256: f2e119837f57dac21394765532fbdb3dc073c55a6b4304ba05130883e86a32a2
+input_fingerprint_sha256: f1fecebcc23af8674ae722f568cf4fe487ac476b1a29c6ce7d6db2e337a24f72
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+
+A. The circulant cone: associativity forces g1 = 2*g0
+-----------------------------------------------------
+  Hermitian circulants  u = a_u I + b_u C + conj(b_u) C^2  (a real, b complex).
+  Cone form (the general PD C_3-invariant weighting form):
+      <u,v> = g0 * a_u a_v + g1 * (b_u . b_v)      b.b' = re re' + im im'
+  Circulants are self-adjoint and commute, so the readout-induced condition
+      <u v, t> = <v, u^dagger t>   becomes   <u v, t> = <v, u t>.
+
+  [PASS] the residual is not identically zero -- the condition has content  (coefficients (g0,g1) = (-2, 1))
+  [PASS] collected 48 distinct nontrivial linear constraints on (g0,g1)
+  [PASS] every constraint is the SAME line -- so the solution set is one ray  (all constraints proportional; c1/c0 = -1/2)
+  [PASS] (g0,g1) = (1,2) associative? True  (Hilbert-Schmidt ray)
+  [PASS] (g0,g1) = (3,6) associative? True  (Hilbert-Schmidt ray)
+  [PASS] (g0,g1) = (1,1) associative? False  (excluded)
+  [PASS] (g0,g1) = (1,3) associative? False  (excluded)
+  [PASS] (g0,g1) = (2,3) associative? False  (excluded)
+  [PASS] the surviving ray is the Hilbert-Schmidt / trace form, Tr(XY) = 3a a' + 6 Re(b conj(b'))  ((g0,g1) = (3,6) up to scale)
+
+B. Ambient restatement on Herm(3): the same condition forces beta = 0
+---------------------------------------------------------------------
+  [PASS] alpha-part Tr(AB) is associative on all 125 Hermitian triples  (including genuinely complex off-diagonals)
+  [PASS] beta-part tr(A)tr(B) is NOT associative -- explicit witness  (tr(A.B)tr(C) = 2 vs tr(A)tr(B.C) = 0)
+  [PASS] therefore B_{alpha,beta} associative  <=>  beta = 0  (matches the circulant result of part A)
+
+C. Group-free strengthening: no invariance assumption needed
+------------------------------------------------------------
+  In eigenvalue coordinates a Hermitian circulant is a real triple
+  (lam_0, lam_1, lam_2) and the algebra product is POINTWISE. A bilinear
+  form is then a Gram matrix G. Associativity <u v, t> = <v, u t> with a
+  pointwise product forces G to be DIAGONAL -- no group is used.
+
+  [PASS] Gram 'identity': associativity-compatible (diagonal)? True
+  [PASS] Gram 'unequal diagonal': associativity-compatible (diagonal)? True
+  [PASS] Gram 'off-diagonal present': associativity-compatible (diagonal)? False
+
+  Adding only scalar/traceless orthogonality -- one of the three conditions
+  the standing no-go ALREADY grants -- forces the diagonal entries equal:
+  [PASS] equal diagonal c_0 = c_1 = c_2 gives the counting measure on eigenvalue slots  (sum_j lam_j lam'_j = Tr(H H'), i.e. the HS ray again)
+  [PASS] so the pin is reachable with NO group-invariance assumption at all  (Frobenius + scalar/traceless orthogonality => HS)
+
+D. THE NON-CLOSURE: the pin does not select r
+---------------------------------------------
+  With the form pinned to HS, the two isotype block norms are
+      scalar block   ||a I||^2      = 3 a^2      (real dimension 1)
+      traceless block ||bC+bbarC^2||^2 = 6 |b|^2 (real dimension 2)
+
+  'Equipartition' still admits a counting exponent s on the block
+  dimensions:   3a^2 / 1^s  =  6|b|^2 / 2^s   =>   r = |b|^2/a^2 = 2^(s-1).
+
+  [PASS] s = 0 (equal TOTAL block norm) -> r = 1/2 -> Q = 2/3
+  [PASS] s = 1 (equal norm PER REAL DIMENSION) -> r = 1 -> Q = 1
+  [PASS] BOTH horns use the SAME pinned form -- associativity is silent on s  (the pin fixes the metric, not the counting exponent)
+  [PASS] so this note pins the cone and does NOT close the occupancy-grain obligation  (the residual is the counting exponent, exactly as the source packet states)
+
+E. Scope guards
+---------------
+  [PASS] source note present on the branch  (READOUT_INDUCED_FORM_PINS_C3_CONE_BOUNDED_THEOREM_NOTE_2026-08-06.md)
+  [PASS] discipline marker present: 'does not close'  (note disclaims closing the grain obligation)
+  [PASS] discipline marker present: 'counting exponent'  (note names the surviving residual)
+  [PASS] discipline marker present: 'readout bridge'  (note carries the adjudicated premise classification)
+  [PASS] discipline marker present: 'supplied'  (note marks the readout identification as supplied, not derived)
+  [PASS] discipline marker present: 'proposed_retained'  (author-side status vocabulary only)
+  [PASS] discipline marker present: 'KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS'  (note cites the no-go it repairs)
+  [PASS] discipline marker present: '.claude/science'  (note credits the branch-local origin of the result)
+  [PASS] note does not set 'effective_status'  (status authority stays with the independent audit lane)
+  [PASS] note does not set 'audit_status'  (status authority stays with the independent audit lane)
+
+====================================================================
+TOTAL: PASS=31, FAIL=0
+====================================================================
+
+----- stderr -----
+

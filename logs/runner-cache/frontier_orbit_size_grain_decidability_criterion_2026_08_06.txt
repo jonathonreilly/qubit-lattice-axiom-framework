@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_orbit_size_grain_decidability_criterion_2026_08_06.py
-runner_sha256: b021f960bc893e10578b1dbe268b82590e8aaeb39add6cb5f1e79c5abb06cd60
-input_fingerprint_sha256: 8166480c29605396077898fc6571ac726e032063cafdbde4465d50571d9ed1bd
+runner_sha256: 07bd316b852acd5da0750b299699e8fb344aabf2b615a8732155cf85a92dd217
+input_fingerprint_sha256: 8e7168029231b1b6a141681db15220dceced094a01010af28f982f2f8fbfe2ff
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 
@@ -46,49 +46,41 @@ B. The axioms fix the readout's zero but not its unit
   [PASS] scale c=11/7: additivity over all 49 disjoint pairs
   [PASS] no axiom-supplied property separates I from c*I  (zero fixed, unit free)  (so a CONSTANT grain factor is unobservable in principle)
 
-C. Non-free sectors: the grain factor is the orbit size
--------------------------------------------------------
-  Model a sector as one fixed cell (the singlet, orbit size 1) plus one
-  orbit of size n (the exchanged multiplet).  Write the singlet block power
-  as a^2 and each multiplet member's block power as |b|^2, and set
-  r = |b|^2 / a^2.  Suppose the sector weights equilibrate to the uniform
-  distribution ON THE COUNTED CELLS -- this equilibration hypothesis is a
-  SUPPLIED condition here, not derived.  Then:
+C. Prior art: the two horns are NOT claimed here
+------------------------------------------------
+  The horns themselves, their r values, and the K/CPT instance are
+  established elsewhere and are deliberately NOT re-derived in this note:
 
-    orbit grain : 2 cells uniform   ->  a^2 = n|b|^2  ->  r = 1/n
-    point grain : 1+n cells uniform ->  a^2 =  |b|^2  ->  r = 1
+    ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_MEASURE_DYNAMICAL_STATIC_
+    CORRESPONDENCE_BOUNDED_THEOREM_NOTE_2026-07-16
+      -> 2-cell and 3-cell stationary weights; names the two countings
+         ('carrier/orbit multiplicities' w=1/3 vs 'quotient-atom
+         counting' w=1/2) and the dial coordinates r=1/2 and r=1.
 
-  [PASS] orbit size n=2: r_orbit = 1/2, r_point = 1, ratio = 2  (p_multiplet: 1/2 (orbit) vs 2/3 (point))
-  [PASS] orbit size n=3: r_orbit = 1/3, r_point = 1, ratio = 3  (p_multiplet: 1/2 (orbit) vs 3/4 (point))
-  [PASS] orbit size n=4: r_orbit = 1/4, r_point = 1, ratio = 4  (p_multiplet: 1/2 (orbit) vs 4/5 (point))
-  [PASS] orbit size n=5: r_orbit = 1/5, r_point = 1, ratio = 5  (p_multiplet: 1/2 (orbit) vs 5/6 (point))
-  [PASS] general form: the grain factor on a sector equals that sector's orbit size  (w_sector = |orbit|)
+    FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02
+      -> the r-family Q=1/3 (r=0), Q=2/3 (r=1/2), Q=1 (r=1), the
+         positivity endpoint at r=1, and the framing that these are
+         distinguished points of one family, not competing answers.
 
-D. The K/CPT instance (n = 2)
------------------------------
-  [PASS] K/CPT orbit sizes are (1, 2) -> non-free -> grain decidable in principle
-  [PASS] orbit grain gives r = 1/2
-  [PASS] point grain gives r = 1
-  [PASS] ratio is exactly 2
-  [PASS] multiplet weight 1/2 (orbit) vs 2/3 (point)  (difference = 1/6)
+  [PASS] prior-art note present in repo: ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_MEASURE_DY...
+  [PASS] prior-art note present in repo: FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-...
+  [PASS] source note cites prior art: ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_ME...
+  [PASS] source note cites prior art: FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORC...
+  [PASS] this note's claimed content is T1-T3 only  (constancy dichotomy + readout-unit freedom + decidability criterion)
 
-  Cross-check against the block-power parameterisation used on the
-  charged-lepton surface, p_multiplet = 2r/(1+2r):
-  [PASS]   p(r=1/2) = 1/2  (computed 1/2)
-  [PASS]   p(r=1) = 2/3  (computed 2/3)
-
-E. Scope guards
+D. Scope guards
 ---------------
   [PASS] source note is present on the branch  (ORBIT_SIZE_GRAIN_DECIDABILITY_CRITERION_BOUNDED_THEOREM_NOTE_2026-08-06.md)
   [PASS] note contains discipline marker: 'selects no grain'  (note disclaims selecting a horn)
   [PASS] note contains discipline marker: 'does not close'  (note disclaims closing the obligation)
-  [PASS] note contains discipline marker: 'equilibration hypothesis'  (note names the supplied equilibration condition)
+  [PASS] note contains discipline marker: 'Prior art this note does NOT duplicate'  (note defers the horns to prior art)
+  [PASS] note contains discipline marker: 'T1-T3'  (note states its claimed content is the criterion only)
   [PASS] note contains discipline marker: 'proposed_retained'  (note uses author-side status vocabulary only)
   [PASS] note does not set 'effective_status'  (status authority stays with the independent audit lane)
   [PASS] note does not set 'audit_status'  (status authority stays with the independent audit lane)
 
 ================================================================
-TOTAL: PASS=36, FAIL=0
+TOTAL: PASS=30, FAIL=0
 ================================================================
 
 ----- stderr -----

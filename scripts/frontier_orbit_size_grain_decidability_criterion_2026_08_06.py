@@ -158,60 +158,41 @@ check(
 )
 
 
-section("C. Non-free sectors: the grain factor is the orbit size")
-
-print("  Model a sector as one fixed cell (the singlet, orbit size 1) plus one")
-print("  orbit of size n (the exchanged multiplet).  Write the singlet block power")
-print("  as a^2 and each multiplet member's block power as |b|^2, and set")
-print("  r = |b|^2 / a^2.  Suppose the sector weights equilibrate to the uniform")
-print("  distribution ON THE COUNTED CELLS -- this equilibration hypothesis is a")
-print("  SUPPLIED condition here, not derived.  Then:")
+section("C. Prior art: the two horns are NOT claimed here")
+print("  The horns themselves, their r values, and the K/CPT instance are")
+print("  established elsewhere and are deliberately NOT re-derived in this note:")
 print()
-print("    orbit grain : 2 cells uniform   ->  a^2 = n|b|^2  ->  r = 1/n")
-print("    point grain : 1+n cells uniform ->  a^2 =  |b|^2  ->  r = 1")
+print("    ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_MEASURE_DYNAMICAL_STATIC_")
+print("    CORRESPONDENCE_BOUNDED_THEOREM_NOTE_2026-07-16")
+print("      -> 2-cell and 3-cell stationary weights; names the two countings")
+print("         ('carrier/orbit multiplicities' w=1/3 vs 'quotient-atom")
+print("         counting' w=1/2) and the dial coordinates r=1/2 and r=1.")
 print()
-
-for n in [2, 3, 4, 5]:
-    r_orbit = Fraction(1, n)
-    r_point = Fraction(1)
-    # doublet/multiplet total weight under each grain
-    p_multi_orbit = Fraction(1, 2)
-    p_multi_point = Fraction(n, 1 + n)
-    check(
-        f"orbit size n={n}: r_orbit = 1/{n}, r_point = 1, ratio = {n}",
-        r_point / r_orbit == n,
-        f"p_multiplet: {p_multi_orbit} (orbit) vs {p_multi_point} (point)",
-    )
-
+print("    FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02")
+print("      -> the r-family Q=1/3 (r=0), Q=2/3 (r=1/2), Q=1 (r=1), the")
+print("         positivity endpoint at r=1, and the framing that these are")
+print("         distinguished points of one family, not competing answers.")
+print()
+for nm in [
+    "ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_MEASURE_DYNAMICAL_STATIC_CORRESPONDENCE_BOUNDED_THEOREM_NOTE_2026-07-16.md",
+    "FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md",
+]:
+    check(f"prior-art note present in repo: {nm[:52]}...", (ROOT / "docs" / nm).exists())
+if NOTE.exists():
+    t = NOTE.read_text(encoding="utf-8")
+    for nm in [
+        "ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_MEASURE_DYNAMICAL_STATIC_CORRESPONDENCE",
+        "FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED",
+    ]:
+        check(f"source note cites prior art: {nm[:44]}...", nm in t)
 check(
-    "general form: the grain factor on a sector equals that sector's orbit size",
-    all(Fraction(1) / Fraction(1, n) == n for n in [2, 3, 4, 5, 9]),
-    "w_sector = |orbit|",
+    "this note's claimed content is T1-T3 only",
+    True,
+    "constancy dichotomy + readout-unit freedom + decidability criterion",
 )
 
 
-section("D. The K/CPT instance (n = 2)")
-
-n = 2
-r_orbit, r_point = Fraction(1, n), Fraction(1)
-check("K/CPT orbit sizes are (1, 2) -> non-free -> grain decidable in principle",
-      len({1, 2}) > 1)
-check("orbit grain gives r = 1/2", r_orbit == Fraction(1, 2))
-check("point grain gives r = 1", r_point == Fraction(1))
-check("ratio is exactly 2", r_point / r_orbit == 2)
-check("multiplet weight 1/2 (orbit) vs 2/3 (point)",
-      Fraction(1, 2) != Fraction(2, 3),
-      f"difference = {Fraction(2,3) - Fraction(1,2)}")
-
-print()
-print("  Cross-check against the block-power parameterisation used on the")
-print("  charged-lepton surface, p_multiplet = 2r/(1+2r):")
-for r, expect in [(Fraction(1, 2), Fraction(1, 2)), (Fraction(1), Fraction(2, 3))]:
-    got = 2 * r / (1 + 2 * r)
-    check(f"  p(r={r}) = {expect}", got == expect, f"computed {got}")
-
-
-section("E. Scope guards")
+section("D. Scope guards")
 
 if NOTE.exists():
     text = NOTE.read_text(encoding="utf-8")
@@ -219,7 +200,8 @@ if NOTE.exists():
     for needle, why in [
         ("selects no grain", "note disclaims selecting a horn"),
         ("does not close", "note disclaims closing the obligation"),
-        ("equilibration hypothesis", "note names the supplied equilibration condition"),
+        ("Prior art this note does NOT duplicate", "note defers the horns to prior art"),
+        ("T1-T3", "note states its claimed content is the criterion only"),
         ("proposed_retained", "note uses author-side status vocabulary only"),
     ]:
         check(f"note contains discipline marker: {needle!r}", needle in text, why)

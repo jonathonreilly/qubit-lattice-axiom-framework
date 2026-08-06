@@ -81,37 +81,6 @@ i.e. whose orbit sizes are not all equal. Where every orbit has the same
 size, the two grains differ by a constant, which T2 shows is absorbed into the
 readout's free unit.
 
-### T4 — the grain factor is the orbit size
-
-Model a sector as one fixed cell (block power `a^2`) plus one orbit of size
-`n` (each member `|b|^2`), and write `r = |b|^2 / a^2`. Adopt the
-**equilibration hypothesis**: sector weights equilibrate to the uniform
-distribution on the counted cells. That hypothesis is *supplied here, not
-derived*; it is stated so that the comparison is between the two grains and
-nothing else. Then
-
-```text
-orbit grain : 2 cells uniform    ->  a^2 = n|b|^2  ->  r = 1/n
-point grain : (1+n) cells uniform ->  a^2 =  |b|^2  ->  r = 1
-```
-
-so `r_point / r_orbit = n`. The grain factor on a sector is that sector's
-orbit size: `w_sector = |orbit|`. Verified exactly for `n = 2, 3, 4, 5`.
-
-### T5 — the `K`/CPT instance
-
-The `K`/CPT surface has orbit sizes `(1, 2)`: the singlet is fixed, the
-doublet pair is exchanged. Non-free, so by T3 the binary is decidable there,
-and by T4 the factor is exactly `2`:
-
-```text
-orbit grain  r = 1/2 ,  multiplet weight 1/2
-point grain  r = 1   ,  multiplet weight 2/3
-```
-
-Cross-checked against the block-power parameterisation `p = 2r/(1+2r)` used on
-the charged-lepton surface: `p(1/2) = 1/2` and `p(1) = 2/3`, exactly.
-
 ## What this buys
 
 The obligation's binary can only ever be settled on sectors with unequal orbit
@@ -122,6 +91,28 @@ kind rather than of difficulty.
 
 That is a scope result for the obligation, not progress on it: it says where
 to look and where looking cannot help.
+
+## Prior art this note does NOT duplicate, and defers to
+
+The two horns themselves, their `r` values, and the `K`/CPT instance are
+**already established elsewhere and are not re-derived here**:
+
+- [`ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_MEASURE_DYNAMICAL_STATIC_CORRESPONDENCE_BOUNDED_THEOREM_NOTE_2026-07-16.md`](ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_MEASURE_DYNAMICAL_STATIC_CORRESPONDENCE_BOUNDED_THEOREM_NOTE_2026-07-16.md)
+  gives the 2-cell and 3-cell stationary weights and names the two countings
+  exactly — "carrier/orbit multiplicities give `w = 1/3`, while quotient-atom
+  counting gives `w = 1/2`" — together with the dial coordinates `r = 1/2` and
+  `r = 1`.
+- [`FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md`](FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md)
+  gives the `r`-family classification `Q = 1/3` (`r = 0`, degenerate),
+  `Q = 2/3` (`r = 1/2`, balanced), `Q = 1` (`r = 1`, hierarchy), the
+  positivity endpoint at `r = 1`, and the framing that these are distinguished
+  points of one family rather than competing answers.
+
+The only content claimed here is **T1-T3**: the constancy dichotomy, the
+readout-unit freedom, and the decidability criterion that follows from them.
+That is a statement about *when the binary is settleable by an axiom-supplied
+readout at all*, which is a different question from *what the two horns are*.
+Readers wanting the horns should cite the two notes above, not this one.
 
 ## Relation to the standing non-supply no-go
 
@@ -147,14 +138,15 @@ no-go.
   action and its measure; nothing of the sort is attempted here.
 - No `r`, `Q`, `delta`, charged-lepton mass, mixing angle, probability rule,
   Born weight, species map, or sector weight is derived.
-- The equilibration hypothesis in T4 is supplied, not derived. Without it, T4
-  states nothing.
+- The two grain horns, their `r` values, and the `K`/CPT instance are **prior
+  art** (see the section above) and are not claimed here.
 - Orbit-invariance of `iota` is supplied, not derived.
 - No axiom, approved primitive, registry entry, or audit verdict is added,
   edited, retired, or predicted. The Tier-A count is unchanged.
 - The `K`/CPT partition itself, its orbit structure, and its identification
-  with the charged-lepton occupancy surface are **not** derived here; T5 is
-  conditional on that partition as supplied elsewhere.
+  with the charged-lepton occupancy surface are **not** derived, used, or
+  relied on here. T1-T3 are stated for an arbitrary finite group action and
+  make no reference to any physical sector.
 
 ## Scope boundary
 

@@ -1,0 +1,54 @@
+# Historic intake: Gauge Plaquette Source Theorem and Constant-Lift No-Go
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Both the full 3+1 plaquette and the one-plaquette block have strong-coupling slope exactly 1/18 at beta = 0, so any exact identity P_full(beta) = P_1plaq(c beta) on an interval forces c = 1 - ruling out the proposed lift constant c = (3/2)(2/sqrt3)^(1/4) = 1.554921974442116.
+
+Original verdict: The proposed constant-lift closure is exactly ruled out; what survives is the source identity, the exact Toeplitz/Bessel one-plaquette block, and the strong-coupling slope.
+Scope: Exact on a finite 3+1 Wilson lattice; the one-plaquette block is cross-checked against an independent Weyl-angle integral to machine precision (P_1plaq(6) = 0.422531739649983).
+Escape conditions (negative claims): The negative kills only CONSTANT lifts: it forces c = 1 for any identity valid on an interval, leaving non-constant (beta-dependent) lifts and other closure forms untouched.
+
+## Why pulled (supervisor decision, on the record)
+
+Exact no-go: strong-coupling slope 1/18 on both objects forces c = 1 — every constant-lift closure (including the landed-adjacent 575) is ruled out.
+
+## Provenance (pinned)
+
+- Original path: `docs/GAUGE_PLAQUETTE_SOURCE_NO_GO_NOTE.md`
+- Source commit: `60a264ba93427b648c4c01edb5b2437542b78eb5`
+- git blob: `7c919d734b04fd836be4b57255d2eb12179c47e0`
+- sha256: `58efe8f729692c38acf7d5a2a6d398f1517471ae1b64720ecbbd6a2cfefc105b`
+- Lines: 226; runners named: scripts/frontier_gauge_plaquette_source_no_go.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- `docs/GAUGE_VACUUM_PLAQUETTE_CLOSURE_NOTE.md` — The constant-lift closure claim; exactly refuted by 564.
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

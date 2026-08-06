@@ -1,0 +1,54 @@
+# Historic intake: Generation Axiom Boundary Theorem
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+The generation physicality gate is bounded by exactly one irreducible axiom, A5 (the lattice is physical, not a regulator): with A5 the chain closes to three irremovable species with identical gauge representations and EWSB-split masses; without A5 the fourth-root trick on a path-integral formulation of the same Hamiltonian reduces them to one species times three taste copies; and A5 cannot be derived from A1-A4 because standard lattice QCD is a consistent framework using exactly A1-A4 without it.
+
+Original verdict: A sharp obstruction with sufficiency, necessity, irreducibility and completeness all proved - A5 is the ONLY non-derived assumption in the chain.
+Scope: Uses exactly A1-A5 with no imported physics, no fitting, no finite-size extrapolation; the bounded 1+1+1 hierarchy is noted but not needed.
+Escape conditions (negative claims): The escape route is explicit and named: without A5 the fourth-root trick reduces the three species to taste copies. Conversely, adopting A5 closes the gate - so the obstruction is exactly one axiom wide, with the same logical status as the gauge-group and spacetime derivations.
+
+## Why pulled (supervisor decision, on the record)
+
+The A5 boundary theorem: generation physicality bounded by exactly ONE axiom with sufficiency/necessity/irreducibility/completeness proved and the escape named.
+
+## Provenance (pinned)
+
+- Original path: `docs/GENERATION_AXIOM_BOUNDARY_THEOREM_NOTE.md`
+- Source commit: `03cd433b0abefd4c70862393ec45420854e87bde`
+- git blob: `854c2ff9a042d3a46e30ea306442024b71ab86f2`
+- sha256: `d824d88a547f881e00aaa85410ac2c869a9068a2cb7e0319322f85e1cf7435da`
+- Lines: 239; runners named: scripts/frontier_generation_axiom_boundary.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

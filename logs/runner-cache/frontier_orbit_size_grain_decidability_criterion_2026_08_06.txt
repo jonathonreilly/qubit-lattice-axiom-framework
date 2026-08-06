@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/frontier_orbit_size_grain_decidability_criterion_2026_08_06.py
+runner_sha256: b021f960bc893e10578b1dbe268b82590e8aaeb39add6cb5f1e79c5abb06cd60
+input_fingerprint_sha256: 8166480c29605396077898fc6571ac726e032063cafdbde4465d50571d9ed1bd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.06
+status: ok
+----- stdout -----
+
+A. Constancy dichotomy: I_point = c * I_orbit identically iff sizes are equal
+-----------------------------------------------------------------------------
+  For any candidate constant c, the difference functional is
+    D(iota) = I_point(iota) - c * I_orbit(iota) = sum_k (n_k - c) * iota_k .
+  Evaluating D on the indicator basis gives D(e_j) = n_j - c, so D vanishes
+  identically iff n_j = c for every j.  The indicator evaluations below are
+  a complete finite proof, not a sample.
+
+  [PASS] sizes (2, 2, 2): I_point is a constant multiple of I_orbit -> True  (free action, all orbits size 2; residuals on indicator basis = ['0', '0', '0'])
+  [PASS] sizes (1, 1, 1): I_point is a constant multiple of I_orbit -> True  (trivial action, all orbits size 1; residuals on indicator basis = ['0', '0', '0'])
+  [PASS] sizes (3, 3): I_point is a constant multiple of I_orbit -> True  (free Z_3 action; residuals on indicator basis = ['0', '0'])
+  [PASS] sizes (4, 4, 4, 4): I_point is a constant multiple of I_orbit -> True  (free Z_4 action; residuals on indicator basis = ['0', '0', '0', '0'])
+  [PASS] sizes (1, 2): I_point is a constant multiple of I_orbit -> False  (K/CPT shape: one fixed sector, one exchanged pair; residuals on indicator basis = ['0', '1'])
+  [PASS] sizes (1, 3): I_point is a constant multiple of I_orbit -> False  (one fixed sector, one Z_3 orbit; residuals on indicator basis = ['0', '2'])
+  [PASS] sizes (1, 2, 2): I_point is a constant multiple of I_orbit -> False  (one fixed sector, two exchanged pairs; residuals on indicator basis = ['0', '1', '1'])
+  [PASS] sizes (2, 3): I_point is a constant multiple of I_orbit -> False  (mixed non-free, no fixed sector; residuals on indicator basis = ['0', '1'])
+
+  Conclusion (exact): the two grains are related by a constant factor
+  exactly on the uniform-orbit-size families, and by a non-constant
+  reweighting otherwise.
+
+B. The axioms fix the readout's zero but not its unit
+-----------------------------------------------------
+  Record supplies: readout determined by record content alone; additivity
+  over finite pairwise-disjoint collections; I(empty) = 0.  A positive
+  rescaling I -> c*I preserves every one of those properties, so no
+  axiom-supplied readout property distinguishes I from c*I.
+
+  [PASS] scale c=1: I(empty) = 0 preserved
+  [PASS] scale c=1: additivity over all 49 disjoint pairs
+  [PASS] scale c=2: I(empty) = 0 preserved
+  [PASS] scale c=2: additivity over all 49 disjoint pairs
+  [PASS] scale c=1/3: I(empty) = 0 preserved
+  [PASS] scale c=1/3: additivity over all 49 disjoint pairs
+  [PASS] scale c=11/7: I(empty) = 0 preserved
+  [PASS] scale c=11/7: additivity over all 49 disjoint pairs
+  [PASS] no axiom-supplied property separates I from c*I  (zero fixed, unit free)  (so a CONSTANT grain factor is unobservable in principle)
+
+C. Non-free sectors: the grain factor is the orbit size
+-------------------------------------------------------
+  Model a sector as one fixed cell (the singlet, orbit size 1) plus one
+  orbit of size n (the exchanged multiplet).  Write the singlet block power
+  as a^2 and each multiplet member's block power as |b|^2, and set
+  r = |b|^2 / a^2.  Suppose the sector weights equilibrate to the uniform
+  distribution ON THE COUNTED CELLS -- this equilibration hypothesis is a
+  SUPPLIED condition here, not derived.  Then:
+
+    orbit grain : 2 cells uniform   ->  a^2 = n|b|^2  ->  r = 1/n
+    point grain : 1+n cells uniform ->  a^2 =  |b|^2  ->  r = 1
+
+  [PASS] orbit size n=2: r_orbit = 1/2, r_point = 1, ratio = 2  (p_multiplet: 1/2 (orbit) vs 2/3 (point))
+  [PASS] orbit size n=3: r_orbit = 1/3, r_point = 1, ratio = 3  (p_multiplet: 1/2 (orbit) vs 3/4 (point))
+  [PASS] orbit size n=4: r_orbit = 1/4, r_point = 1, ratio = 4  (p_multiplet: 1/2 (orbit) vs 4/5 (point))
+  [PASS] orbit size n=5: r_orbit = 1/5, r_point = 1, ratio = 5  (p_multiplet: 1/2 (orbit) vs 5/6 (point))
+  [PASS] general form: the grain factor on a sector equals that sector's orbit size  (w_sector = |orbit|)
+
+D. The K/CPT instance (n = 2)
+-----------------------------
+  [PASS] K/CPT orbit sizes are (1, 2) -> non-free -> grain decidable in principle
+  [PASS] orbit grain gives r = 1/2
+  [PASS] point grain gives r = 1
+  [PASS] ratio is exactly 2
+  [PASS] multiplet weight 1/2 (orbit) vs 2/3 (point)  (difference = 1/6)
+
+  Cross-check against the block-power parameterisation used on the
+  charged-lepton surface, p_multiplet = 2r/(1+2r):
+  [PASS]   p(r=1/2) = 1/2  (computed 1/2)
+  [PASS]   p(r=1) = 2/3  (computed 2/3)
+
+E. Scope guards
+---------------
+  [PASS] source note is present on the branch  (ORBIT_SIZE_GRAIN_DECIDABILITY_CRITERION_BOUNDED_THEOREM_NOTE_2026-08-06.md)
+  [PASS] note contains discipline marker: 'selects no grain'  (note disclaims selecting a horn)
+  [PASS] note contains discipline marker: 'does not close'  (note disclaims closing the obligation)
+  [PASS] note contains discipline marker: 'equilibration hypothesis'  (note names the supplied equilibration condition)
+  [PASS] note contains discipline marker: 'proposed_retained'  (note uses author-side status vocabulary only)
+  [PASS] note does not set 'effective_status'  (status authority stays with the independent audit lane)
+  [PASS] note does not set 'audit_status'  (status authority stays with the independent audit lane)
+
+================================================================
+TOTAL: PASS=36, FAIL=0
+================================================================
+
+----- stderr -----
+

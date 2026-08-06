@@ -1,0 +1,54 @@
+# Historic intake: Koide: the native generation geometry is Hermitian, not Kahler
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_bounded_theorem
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+The whole Q = 2/3 pin reduces to one differential-geometric fact: the native action supplies the complex structure J = (C - C^2)/sqrt(3) and the flat Kahler metric g = 6(dx^2+dy^2) but NOT the symplectic form omega, because the retained real anti-Hermitian condensate action is conjugation-even (det M = a^3 - 3a(x^2+y^2) + 2x^3 - 6xy^2, invariant under b -> conj b), so there is no first-order Berry term.
+
+Original verdict: Without omega the theta-flow is an isometry rather than a Hamiltonian flow, so theta is an independent coordinate, field-count 2 and the RETAINED surface gives Q = 1 — while the observed Q = 2/3 (to <0.05%) means the true, underived matter action must be Kahler.
+Scope: Structural localization, not a no-go on Q = 2/3; approves no axiom or import and sets no audit verdict.
+Escape conditions (negative claims): Supplying omega is equivalent to a chiral bilinear with a generation grading anticommuting with B = C + C^2, which is non-native because spec(B) = {2,-1,-1} is not symmetric under lambda -> -lambda (the Z_3-equivariant anticommuting no-go re-derived at field-reality level); the named next path is building the bridge-gap matter action from A1+A2 and testing whether emergent time gives b a first-order Schrodinger/Bargmann kinetic term.
+
+## Why pulled (supervisor decision, on the record)
+
+The Q-gate's differential-geometric localization: the native action supplies J and g but NOT the symplectic omega — and 'the retained surface implies Q = 1 while observation says 2/3' stated plainly; supplying omega = the named escape.
+
+## Provenance (pinned)
+
+- Original path: `docs/KOIDE_GENERATION_HERMITIAN_NOT_KAHLER_NOTE_2026-05-30.md`
+- Source commit: `5eabd7a42df2600f2424c104a9938de153e80da4`
+- git blob: `9c00e898421c3d10017f4e7f7c825303200472e6`
+- sha256: `083cb28711f7a1ca1c79681bf25723d0a1a140a469a1f31e4c8e5fc1bf085d36`
+- Lines: 106; runners named: scripts/frontier_koide_generation_hermitian_not_kahler_2026_05_30.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+States plainly that the retained surface implies Q = 1 while observation gives 2/3, i.e. the retained action is known to be incomplete.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

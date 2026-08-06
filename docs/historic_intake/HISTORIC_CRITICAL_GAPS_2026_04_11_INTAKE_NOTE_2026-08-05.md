@@ -1,0 +1,54 @@
+# Historic intake: Critical Gaps and Falsification Tests
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_analysis
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Flags the Anderson localization elephant and four existential controls that must run before any publication claim (Anderson control highest priority, free-fermion baseline, classical mixture control, eigenvalue statistics), noting that since the model IS free-fermion the area law is mathematically guaranteed by Eisert-Cramer-Plenio (2010) and Hastings (2007).
+
+Original verdict: URGENT: known no-go theorems mean the area-law result carries no evidential weight, and a condensed-matter reframe is suggested.
+Scope: Pre-publication checklist; no computation performed.
+
+
+## Why pulled (supervisor decision, on the record)
+
+The Anderson-localization kill: the era's area-law headline carries no evidential weight against known no-gos; four existential controls specified — a genuine adversarial correction.
+
+## Provenance (pinned)
+
+- Original path: `docs/CRITICAL_GAPS_2026-04-11.md`
+- Source commit: `84da1a307021a5645e8398a1ab3e13b588b36986`
+- git blob: `5e986f8f961fff014b910e9a91acc9510cce58ad`
+- sha256: `50b18353575cdc442b11b5b695146267e900260ac7ae4194bcb201306f16fb21`
+- Lines: 47; runners named: none
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+Points out that a headline area-law finding is guaranteed by standard theorems for free-fermion models and therefore not evidence for the framework.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

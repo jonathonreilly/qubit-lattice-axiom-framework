@@ -1,0 +1,54 @@
+# Historic intake: α_EM from Cl(3)/Z³ Axioms: Resolution of the 27% Gap
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_derived
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Closes the earlier 27% gap in g_1(v) by adding the taste threshold staircase and the color projection: g_1(v) = 0.46438 vs 0.46400 (+0.08%), g_2(v) = 0.64803 vs 0.64630 (+0.27%), sin^2 theta_W(M_Z) = 0.23064 vs 0.23122 (-0.25%), 1/alpha_EM(M_Z) = 127.682 vs 127.951 (-0.21%), claimed with zero SM imports.
+
+Original verdict: DERIVED at 0.21% accuracy; unblocks the alpha_EM half of the hydrogen/helium blocker while the electron mass stays open.
+Scope: Claims derivation from Cl(3)/Z^3 axioms with zero SM imports; the 0.21% residual is attributed to 2-loop systematics.
+
+
+## Why pulled (supervisor decision, on the record)
+
+The era's alpha_EM/electroweak closure claim at 0.21% (g_1, g_2, sin^2 theta_W) WITH its next-day audit attached — flagship-era numeric surface for the audit lane to price.
+
+## Provenance (pinned)
+
+- Original path: `docs/ALPHA_EM_DERIVATION_NOTE.md`
+- Source commit: `a6fdce65069126907d9e2f1ab8bf55569b5487de`
+- git blob: `6d82fd00e6502eb25522b3d691964b83ad32f64d`
+- sha256: `75f9496d34f6fbb07d07fa7d1cc5f273559536b174029bffd23d408132b0556a`
+- Lines: 198; runners named: alpha_em_twoloop_rge.py, scripts/alpha_em_from_axioms.py, scripts/alpha_em_twoloop_rge.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- `docs/ALPHA_EM_AUDIT_NOTE.md` — The step-by-step audit that downgrades three steps of 45 — rides the pull as adverse evidence.
+
+## Flags carried
+
+Audited the next day (ALPHA_EM_AUDIT_NOTE) which downgrades three of its steps to vulnerable and flags a circularity risk.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

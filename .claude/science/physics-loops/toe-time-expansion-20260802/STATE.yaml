@@ -931,3 +931,21 @@ c5_q18_cycle947_shipped: >
   INTER-SITE-GATE substrate — the measured discharge route for H0b2
   and the lane's new frontier; (2) general form of the distribution;
   (3) S4 as its own object; (4) the 702/254 placement artifact.
+
+historic_intake_part1_shipped_20260806: >
+  2026-08-06 (early) — HISTORIC INTAKE PART 1 SHIPPED as PR #6018
+  (branch physics-loop/historic-intake-20260805, base main): 622
+  supervisor-decided wrapper notes in docs/historic_intake/ + the
+  octopus-era 90-claim registry + manifest/index. Basis: 3,587 rows
+  personally reviewed across twelve strata (579 pulls from
+  branch01-08, 33 recovery, 8 march; mainline-deleted = path-ghosts
+  0; open-PR = live lane 0) + 3,179 early commits distilled. All
+  pins byte-exact (0 unresolved), every wrapper audit_required;
+  registrar seeds historic_intake.* rows at landing; audit lane
+  rules. Decisions + reasons pinned in the census worktree triage
+  dir (TRIAGE_STATE.md is the resumption anchor). Owner assessment
+  delivered + banked at ~/TOE_ARC_ASSESSMENT_2026-08-06.md (task
+  18). REMAINING: branch09 + packsci01-05 (~1,887 rows) extracting/
+  queued -> decide -> intake part 2 same mechanism. Ships pending
+  review-loop: #6014 (946), #6015 (census), #6017 (947), #6018
+  (intake 1).

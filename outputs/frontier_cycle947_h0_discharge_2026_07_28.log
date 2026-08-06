@@ -1,5 +1,5 @@
 cycle947 h0 discharge attempt -- primary runner
-runner_sha256: e0644328f485f6a435d3178b1b5d15fd6312549c997e810a73ba52c32225e2b1
+runner_sha256: 0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c
 landed axiom sha256: 53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39
 landed axiom git blob: 2f5fdd26898f62c17fcabc846761f7785c2eadb1
 pins: PASS
@@ -21,6 +21,6 @@ residue clauses: H0a3_EMBEDDING, H0b2_VARIATION, H0c2_SUPPORT, H0c3_DOMAIN, H0d2
 no-go: universal symmetry-faithfulness FALSE = True (famA=10, famB=7)
 teeth: 10/10
 firewall: floats=0, unfenced weights=0
-science digest: f8fef0efa3c757fcd054ee0c422bece9da3f9ebdffd242de94597b947b723af8
-elapsed: 24.199s
+science digest: 656621f3863e96c728d9976c8271bfd2a1a959fdf5b9392a2c40c8e07a12017a
+elapsed: 24.29s
 all certificates pass: True

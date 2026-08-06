@@ -259,6 +259,29 @@ def csplice(schedules, sig, kinds):
     return tuple(out), added
 
 
+def cinplace_splice(schedules, sig, kinds):
+    """The IN-PLACE splice: each deficit occurrence keeps its position and its
+    image is inserted immediately after it.  The checker builds this from its
+    OWN deficit computation; it is the same CONSTRUCTION as the primary's
+    because the measured placement-dependence below shows the construction is
+    not free to differ."""
+    out, added = [], []
+    for s in schedules:
+        have = Counter(s)
+        img = Counter(cgate_image(g, sig, kinds) for g in s)
+        rem = have - img
+        new = []
+        for g in s:
+            new.append(g)
+            if rem[g] > 0:
+                rem[g] -= 1
+                im = cgate_image(g, sig, kinds)
+                new.append(im)
+                added.append(im)
+        out.append(tuple(new))
+    return tuple(out), added
+
+
 def cmultiset_invariant(schedules, sig, kinds):
     return all(Counter(s) == Counter(cgate_image(g, sig, kinds) for g in s)
                for s in schedules)
@@ -498,8 +521,10 @@ def main() -> int:
     SIG_PAIRS, SIG = csigma(left_w, right_w, BB)
     sched_ma = M.build_schedules(c863, program, sim_fwd, 0, M_A)
     rows_ma = M.compile_schedules(sched_ma)
-    sched_p, added = csplice(sched_ma, SIG, kinds)
+    sched_append, added_append = csplice(sched_ma, SIG, kinds)
+    sched_p, added = cinplace_splice(sched_ma, SIG, kinds)
     rows_p = M.compile_schedules(sched_p)
+    rows_append = M.compile_schedules(sched_append)
     touched = sorted({w for s in sched_p for g in s
                       for w in (M.gate_target(*g[:4]),) + ccontrols(g, kinds)})
     atoms = tuple(sorted(M.CHOICE_ATOMS))
@@ -515,8 +540,8 @@ def main() -> int:
     for t in apps:
         gates = M_A + ((M.KIND_CHOICE, occ_of[t], left_w, 0),
                        (M.KIND_CHOICE, occ_of[t], right_w, 0))
-        s = csplice(M.build_schedules(c863, program, sim_fwd, 0, gates),
-                    SIG, kinds)[0]
+        s = cinplace_splice(M.build_schedules(c863, program, sim_fwd, 0,
+                                              gates), SIG, kinds)[0]
         src = M.chunk_source(s[t % stations])
         ns: dict = {}
         exec("\n".join(src), {"__builtins__": {}, "CHOICE": M.CHOICE}, ns)
@@ -552,54 +577,40 @@ def main() -> int:
           == q1["defect_distinct_gates"],
           {"checker": len({(g[0], g[1], g[2], g[3]) for _s, g in defect}),
            "pinned": q1["defect_distinct_gates"]})
-    check("946_partnered_gate_total_reproduced_by_the_append_splice",
-          sum(len(s) for s in sched_p) == q1["gates_after"],
-          {"checker": sum(len(s) for s in sched_p),
-           "pinned": q1["gates_after"],
-           "note": "the checker APPENDS the deficit images at the end of each "
-                   "station instead of inserting them in place.  The gate "
-                   "TOTAL agrees; the ORDER does not, which is the point of "
-                   "using a different algorithm."})
-    check("L1_holds_for_the_checkers_own_splice",
-          cmultiset_invariant(sched_p, SIG, kinds),
-          {"why": "gate-multiset sigma-invariance is placement-independent, "
-                  "so a different splice order must still certify"})
+    check("946_partnered_gate_total_reproduced_by_both_checker_splices",
+          sum(len(s) for s in sched_p) == q1["gates_after"]
+          and sum(len(s) for s in sched_append) == q1["gates_after"],
+          {"checker_inplace": sum(len(s) for s in sched_p),
+           "checker_append": sum(len(s) for s in sched_append),
+           "pinned": q1["gates_after"]})
+    check("L1_holds_for_BOTH_checker_splice_orders",
+          cmultiset_invariant(sched_p, SIG, kinds)
+          and cmultiset_invariant(sched_append, SIG, kinds),
+          {"why": "gate-multiset sigma-invariance is placement-independent by "
+                  "construction; the semantic layer, as measured below, is "
+                  "NOT"})
 
     # placement independence: the primary inserts images in place, the checker
     # appends them.  Same multiset, possibly different composed map.
-    def inplace_splice(schedules):
-        out = []
-        for s in schedules:
-            have = Counter(s)
-            img = Counter(cgate_image(g, SIG, kinds) for g in s)
-            rem = have - img
-            new = []
-            for g in s:
-                new.append(g)
-                if rem[g] > 0:
-                    rem[g] -= 1
-                    new.append(cgate_image(g, SIG, kinds))
-            out.append(tuple(new))
-        return tuple(out)
-
-    rows_inplace = M.compile_schedules(inplace_splice(sched_ma))
     ens = rand_states(4, proto, touched, env["uni_sim"], "c947chk")
     place_diff = set()
     for cols in ens:
         a, b = list(cols), list(cols)
-        for fn in rows_p:
+        for fn in rows_append:
             fn(a)
-        for fn in rows_inplace:
+        for fn in rows_p:
             fn(b)
         for w in range(len(a)):
             if a[w] != b[w]:
                 place_diff.add(w)
-    check("the_two_splice_orders_give_the_same_composed_map",
-          not place_diff,
+    sem_append = commutes(rows_append, ens,
+                          lambda c: cperm_lane(c, SIG, range(n + 1)))
+    check("the_two_splice_orders_give_DIFFERENT_composed_maps",
+          bool(place_diff),
           {"differing_wires": len(place_diff),
-           "why_it_matters": "if the two orders disagreed, every semantic "
-                             "statement in the primary would be placement-"
-                             "relative and would have to say so"})
+           "consequence": "every SEMANTIC statement about the partnered "
+                          "kernel is placement-relative and must name the "
+                          "splice placement as part of the construction"})
 
     # =====================================================================
     # H0a1 / H0a2 -- the site map, reconstructed by a SCALAR PER-LANE MACHINE
@@ -687,7 +698,7 @@ def main() -> int:
            "equals_every_touched_wire": anc == set(touched)})
     choice_ctrl = sorted({w for t in apps for s in [None] for w in ()})
     cg = [g for t in apps
-          for s in csplice(M.build_schedules(
+          for s in cinplace_splice(M.build_schedules(
               c863, program, sim_fwd, 0,
               M_A + ((M.KIND_CHOICE, occ_of[t], left_w, 0),
                      (M.KIND_CHOICE, occ_of[t], right_w, 0))),
@@ -842,6 +853,27 @@ def main() -> int:
            "note": "the checker applies sigma as an ALL-LANE subset "
                    "relabelling, a different code path from the primary's "
                    "global permutation, and gets the same verdict"})
+    refute("946_SYMMETRY_CERTIFICATE (carried into 947's H0d1)",
+           "the semantic sigma-symmetry of the partnered kernel is "
+           "PLACEMENT-DEPENDENT.  Gate-multiset sigma-invariance (946's L1) "
+           "does NOT imply it.  The checker built the SAME multiset with each "
+           "deficit image appended at the end of its station instead of "
+           "inserted in place, and measured semantic breaking wires equal to "
+           "the UNPARTNERED BASELINE.",
+           {"append_splice_semantic_breaking_wires": len(sem_append),
+            "inplace_splice_semantic_breaking_wires": len(sem_p),
+            "baseline_semantic_breaking_wires": len(sem_b),
+            "composed_maps_differ_on_wires": len(place_diff),
+            "what_must_change": "no citation may say 'the partnered kernel's "
+                                "law is sigma-symmetric' without naming the "
+                                "IN-PLACE splice.  946's L1 is exact and "
+                                "placement-free; its L3 is not, and the two "
+                                "were reported side by side as if the first "
+                                "underwrote the second.  946's L2 (pairwise "
+                                "commutation with sigma-partners) is the step "
+                                "that does not survive re-ordering.",
+            "STATUS": "STANDING -- adopt as a scope caveat on 946 and on "
+                      "947's H0d1"})
     V["H0d2_DESCENT"] = "SUPPORTED"
     check("H0d2_descent_is_downstream_of_H0c3_and_therefore_residue",
           V["H0c3_DOMAIN"] == "SUPPORTED",

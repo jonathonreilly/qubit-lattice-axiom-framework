@@ -448,6 +448,24 @@ def mirror_splice(schedules, sig, kinds):
     return tuple(out), added
 
 
+def append_splice(schedules, sig, kinds):
+    """The SAME multiset, different placement: every deficit image appended at
+    the END of its station instead of inserted after its deficit occurrence.
+    Built only to MEASURE placement dependence, never used as the
+    construction."""
+    out = []
+    for s in schedules:
+        have = Counter(s)
+        img = Counter(sigma_gate(g, sig, kinds) for g in s)
+        rem = have - img
+        images = []
+        for g, k in sorted(rem.items()):
+            if k > 0:
+                images.extend([sigma_gate(g, sig, kinds)] * k)
+        out.append(tuple(s) + tuple(images))
+    return tuple(out)
+
+
 def multiset_sigma_invariant(schedules, sig, kinds):
     return all(Counter(s) == Counter(sigma_gate(g, sig, kinds) for g in s)
                for s in schedules)
@@ -1557,6 +1575,19 @@ def main() -> int:
                                untouched})
     sem_p = semantic_commutes(rows_p, ens, lambda c: perm_apply(c, SIG))
     sem_b = semantic_commutes(rows_ma, ens, lambda c: perm_apply(c, SIG))
+    sched_app = append_splice(sched_ma, SIG, kinds)
+    rows_app = M.compile_schedules(sched_app)
+    sem_app = semantic_commutes(rows_app, ens, lambda c: perm_apply(c, SIG))
+    place_diff = set()
+    for cols in ens:
+        a, b = list(cols), list(cols)
+        for fn in rows_p:
+            fn(a)
+        for fn in rows_app:
+            fn(b)
+        for w in range(len(a)):
+            if a[w] != b[w]:
+                place_diff.add(w)
     S["H0d_SYMMETRY_TRANSPORT"] = {
         "H0d1_FIBRE_RESPECT": {
             "PREDICATE": "sigma maps every fibre of the native fibration to "
@@ -1572,6 +1603,32 @@ def main() -> int:
             "semantic_breaking_wires_baseline": len(sem_b),
             "sigma_is_a_symmetry_of_the_partnered_law": not sem_p,
             "sigma_is_NOT_a_symmetry_of_the_baseline": bool(sem_b),
+            "PLACEMENT_DEPENDENCE_ADOPTED_FROM_THE_CHECKER": {
+                "the_finding": "gate-multiset sigma-invariance (946's L1) "
+                               "does NOT imply the semantic symmetry.  The "
+                               "SAME multiset, with every deficit image "
+                               "appended at the end of its station instead of "
+                               "inserted immediately after its deficit "
+                               "occurrence, is L1-invariant and semantically "
+                               "BROKEN at the unpartnered baseline's own "
+                               "count.",
+                "append_order_multiset_sigma_invariant":
+                    multiset_sigma_invariant(sched_app, SIG, kinds),
+                "append_order_semantic_breaking_wires": len(sem_app),
+                "in_place_order_semantic_breaking_wires": len(sem_p),
+                "baseline_semantic_breaking_wires": len(sem_b),
+                "the_two_orders_composed_maps_differ_on_wires":
+                    len(place_diff),
+                "consequence": "H0d1 is DERIVED for the IN-PLACE partnered "
+                               "kernel only.  Any statement that 'the "
+                               "partnered kernel's law is sigma-symmetric' "
+                               "must name the splice placement; 946's L2 "
+                               "(pairwise commutation with sigma-partners) is "
+                               "the step that does not survive re-ordering, "
+                               "and 946 reported L1 and L3 side by side "
+                               "without saying that the first does not "
+                               "underwrite the second.",
+            },
             "VERDICT": "DERIVED",
         },
         "H0d2_DESCENT": {
@@ -2153,6 +2210,25 @@ def main() -> int:
                       "line-by-line and authors the note.",
             "c946_never_imported_or_lifted":
                 cert_a["C946_IS_PINNED_BUT_NEVER_LIFTED"],
+        },
+        "INDEPENDENT_CHECKER_ADOPTIONS": {
+            "R1_the_symmetry_certificate_is_placement_dependent": {
+                "raised_by": "the independent checker, which rebuilt the same "
+                             "gate multiset with a different splice order",
+                "status": "ADOPTED and measured here by the primary itself; "
+                          "see H0d1's PLACEMENT_DEPENDENCE block",
+                "scope_effect": "H0d1 is DERIVED for the in-place partnered "
+                                "kernel only, and the caveat propagates to "
+                                "946's certificate",
+            },
+            "R2_the_no_go_witnesses_do_not_preserve_the_setup": {
+                "raised_by": "the independent checker",
+                "status": "RAISED AND WITHDRAWN on the record: sigma does not "
+                          "preserve the setup either, so any reading strict "
+                          "enough to exclude the witnesses excludes sigma and "
+                          "collapses Route B entirely.  The same standard is "
+                          "applied to both.",
+            },
         },
         "science_digest": science_digest,
         "self_sha256": sha256(Path(__file__).read_bytes()).hexdigest(),

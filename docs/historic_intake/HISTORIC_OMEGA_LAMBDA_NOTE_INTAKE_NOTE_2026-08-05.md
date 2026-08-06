@@ -1,0 +1,54 @@
+# Historic intake: Omega_Lambda Investigation: Can We Remove the Observational Input?
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Seven investigations: the de Sitter attractor is KNOWN, the coincidence window is ~1% of log(a) history (MODEST), graph growth by volume gives w = -1/3 (ruled out), graph growth by Hubble gives Omega_L = 1 (too strong), and the taste route to Omega_m needs baryon asymmetry (incomplete). Matter-Lambda equality sits at a = 0.772 (z = 0.30, 10.3 Gyr) against today's 0.685 at 13.8 Gyr.
+
+Original verdict: Omega_Lambda cannot be derived from the framework alone, but the reframing Lambda = 3/R_H^2 guarantees Lambda ~ rho_crit, reducing the cosmological-constant problem from 1e122 fine-tuning to an O(1) question about matter content, with observer selection explaining why we see ~0.7.
+Scope: Omega_Lambda = 0.685 depends on matter content (Omega_m = 0.315), which requires baryon asymmetry and DM abundance from particle physics.
+
+
+## Why pulled (supervisor decision, on the record)
+
+Omega_Lambda honest negative: seven investigations, no derivation — the guaranteed-reframing survivor stated; cosmology lane terminal.
+
+## Provenance (pinned)
+
+- Original path: `docs/OMEGA_LAMBDA_NOTE.md`
+- Source commit: `a941e3c59b6c3887df7fdff5ceec89971cb14608`
+- git blob: `7c87077890e2e7b5bb1b232590450391be5a6ba3`
+- sha256: `399cb398631ccda28a92885ed39e6fd53d9f46f28ca9a3a4aa057fac7bd43dc7`
+- Lines: 144; runners named: scripts/frontier_omega_lambda_derivation.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+Self-labelled honest negative; the surviving explanation of the coincidence is qualitative and rests on observer selection.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

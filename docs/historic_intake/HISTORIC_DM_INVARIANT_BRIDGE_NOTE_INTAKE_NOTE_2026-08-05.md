@@ -1,0 +1,55 @@
+# Historic intake: Invariant Bridge: From H(g=1) to the Physical Coupling in sigma_v
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_bounded
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+Shows that for the lattice family H_g = g sum eta_ij U_ij^(1/g) different g means different physics (<P>_g and hence alpha_bare(g) = g^2/(4 pi) depend on g, unlike the vacuous continuum redefinition A -> A/g), so alpha_s is an invariant observable of each fixed H and alpha_plaq = 0.0923 is a prediction, not a convention.
+
+Original verdict: KEEP BOUNDED - the remaining question 'why does H have coefficient 1' reduces to a foundational commitment about which framework is chosen, not a derivable theorem.
+Scope: Assumes A1-A5 with H = sum eta_ij U_ij, U in SU(3), and the standard plaquette extraction alpha_V = -ln<P>/c_1 with c_1 = pi^2/3.
+
+
+## Why pulled (supervisor decision, on the record)
+
+The honest counter: H_g family shows different g IS different physics, so g_bare = 1 stays BOUNDED as a foundational commitment — the contradiction pair's other half.
+
+## Provenance (pinned)
+
+- Original path: `docs/DM_INVARIANT_BRIDGE_NOTE.md`
+- Source commit: `3e1d4f8ecb4a348b9cf59cf92a75a8e3ac576ea5`
+- git blob: `b76060fb3a93b148ae4f93f05753480302c9c3b2`
+- sha256: `c0c8a1a04b5e0a845f102f9bc546c17aabc2712edd4ee25146b006fb9921f095`
+- Lines: 270; runners named: scripts/frontier_dm_invariant_bridge.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- `docs/DM_G_BARE_FROM_HAMILTONIAN_NOTE.md` — g_bare EXACT upgrade; retracted in effect by the invariant-bridge note.
+- `docs/DM_PUSHBACK_ON_G_BARE.md` — Rhetorical counterpart arguing the bridge demand ill-posed.
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

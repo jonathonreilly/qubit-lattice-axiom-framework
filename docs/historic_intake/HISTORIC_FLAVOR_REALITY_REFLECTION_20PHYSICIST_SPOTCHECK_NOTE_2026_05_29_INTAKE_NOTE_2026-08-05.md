@@ -1,0 +1,54 @@
+# Historic intake: Flavor - 20-physicist spot-check of the reality / real-reflection reframe
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+All the framework's real reflections are generation-blind (C = (-1)^hw acts as -I_3 on the hw=1 triplet, charge conjugation maps hw=1 to hw=2, Connes' J is S_3-symmetric), so they discharge CPT vertically without forcing horizontal generation balance; sharpest new result: Gamma_chi has eigenspace dimensions 1 != 2 and no involution can swap unequal dimensions, so the Q=2/3-forcing operator is NOT a reflection at all but a reflection-odd mass operator.
+
+Original verdict: Q = 2/3 needs a symmetry-BREAKING order parameter, not a symmetry, reflection or consistency condition - which explains why every symmetry-based route in the campaign failed.
+Scope: Steps 1-2 of the reframe are judged fair (20/20); steps 3-4 fail on an equivocation on 'reflection', re-verified 0 anticommuting S_3-invariant operators over 5000+20000 samples.
+Escape conditions (negative claims): One door left open: a product grading H = R^3(gen) x (L/R or taste factor) where the extra factor supplies the missing -1 partner so Gamma_chi x epsilon is a genuine involution. Two caveats: the L/R factor is the non-native e_4/Wick-rotation import (Cl(3) is odd, no native gamma_5), and a separate-factor grading is generation-blind so r = 1/2 stays unforced.
+
+## Why pulled (supervisor decision, on the record)
+
+20-physicist spotcheck: Q = 2/3 needs a symmetry-BREAKING order parameter, not a symmetry — the reframing that drives the later program; one door named.
+
+## Provenance (pinned)
+
+- Original path: `docs/FLAVOR_REALITY_REFLECTION_20PHYSICIST_SPOTCHECK_NOTE_2026-05-29.md`
+- Source commit: `0a98636aea1d22272dfa1da6f6b56601a9498568`
+- git blob: `033529ce76e037b8007ad13048264d3aa8c2464a`
+- sha256: `510289c8b565dd746283b407ccfdadd04a79293c775549a60b501c565782d805`
+- Lines: 91; runners named: scripts/flavor_reality_reflection_spotcheck_2026_05_29.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+Cites Wu-Lee-Yang to argue reflection-balance is empirically false as a default, undercutting the reframe's own premise.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

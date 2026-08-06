@@ -1,0 +1,55 @@
+# Historic intake: The 4th-axiom dichotomy: any dynamics relocates the flavor input or gives the wrong (special) modulus
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+The charged lepton sits exactly on the dial's one interior distinguished point (r = 0.5000 to ~1e-4) but the quarks and neutrino are generic (r_up = 0.7732, r_down = 0.5969, r_nu = 0.2381), so extremum-type dynamics is falsified by the quark values; and the apparent parameter-free lattice Green-ratio matches are a look-elsewhere artifact because 42 such ratios densely fill (0.40, 0.90) with mean gap 0.012.
+
+Original verdict: RELOCATION-NO-GO-HOLDS - the kinematic floor is the honest endpoint; no tested 4th axiom escapes both horns of the dichotomy.
+Scope: Observed moduli are used as observational comparison only, never as derivation input; the note imports no axiom and derives no modulus.
+Escape conditions (negative claims): The escape the dichotomy would need is a dynamics that is simultaneously parameter-free AND reaches generic values. Route 1 would need a distinguished, PRE-REGISTERED parameter-free quantity that is structurally a modulus (a property of the 3x3 flavor spectrum, not a 2-point substrate function); Route 2 would need a cross-sector relation that is both tight and stable under mid-mass uncertainty (the two closest, r_up/r_down ~ 13/10 and r_down/r_lep ~ 6/5, miss at 0.36-0.51% and drift).
+
+## Why pulled (supervisor decision, on the record)
+
+The dial no-go: charged lepton EXACTLY at the interior distinguished point, quarks/neutrino generic — RELOCATION-NO-GO-HOLDS with the double-horn escape named and its own coincidences diagnosed.
+
+## Provenance (pinned)
+
+- Original path: `docs/FOURTH_AXIOM_RELOCATION_NOGO_OR_LOOPHOLE_2026-06-05.md`
+- Source commit: `e6045d2c1652e8ddd53dc2aee0fafe27194a9532`
+- git blob: `710aece275545d6a259c8cd842c6951417ee34f6`
+- sha256: `427c57b351246751ec70068cb0cf7065697840e8633dce420d0078f074c41c52`
+- Lines: 215; runners named: scripts/fourth_axiom_relocation_nogo_2026_06_05.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- `docs/FOURTH_AXIOM_SELF_CONSISTENCY_DYNAMICS_SCOPING_2026-06-05.md` — Self-consistency dynamics scoping (scale yes, texture no).
+- `docs/FOURTH_AXIOM_VARIATIONAL_DYNAMICS_SCOPING_2026-06-05.md` — Variational scoping: minimal implies special.
+
+## Flags carried
+
+Explicitly diagnoses its own most striking numerical coincidences (Green-function ratios matching moduli to 3e-4) as forced numerology from a densely filled window.
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

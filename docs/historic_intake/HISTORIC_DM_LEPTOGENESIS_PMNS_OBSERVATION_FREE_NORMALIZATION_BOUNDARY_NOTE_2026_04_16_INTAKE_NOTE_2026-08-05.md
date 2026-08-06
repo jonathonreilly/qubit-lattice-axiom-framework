@@ -1,0 +1,54 @@
+# Historic intake: DM Leptogenesis PMNS Observation-Free Normalization Boundary
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+The current stack cannot replace eta_{i_*}/eta_obs = 1 by a native value law: the closure source x_* = (0.471675,0.553811,0.664514), y_* = (0.208063,0.464383,0.247554) is a local stationary point of Phi_a only at the tuned a_* = 0.518479949928, while a = 0 overshoots (eta/eta_obs = 1.05100433), a = 1 underproduces (< 0.9), and a bounded search at the tuned a_* does not return the closure source.
+
+Original verdict: Not yet - the observational closure surface is still doing real scientific work; what remains is exactly one missing normalization/value law.
+Scope: Boundary on the CURRENT exact reduced-domain stack only, not a permanent impossibility.
+Escape conditions (negative claims): The negative is conditioned on the current bank's bounded observation-free searches and the one-parameter family Phi_a; deriving the coefficient a natively (e.g. from a canonical first-order transport-response law) escapes it, as does a theorem-grade global selector beyond the local rewrite.
+
+## Why pulled (supervisor decision, on the record)
+
+Observation-free normalization no-go: the stack cannot replace eta/eta_obs = 1 by a native value law — the observational surface is doing real work; conditioned escapes stated.
+
+## Provenance (pinned)
+
+- Original path: `docs/DM_LEPTOGENESIS_PMNS_OBSERVATION_FREE_NORMALIZATION_BOUNDARY_NOTE_2026-04-16.md`
+- Source commit: `4c3906a20b8570e70a14c5b8d96fe6110647d003`
+- git blob: `deb98cfe97cb9f674cd0e156d1c9f033fdc751f2`
+- sha256: `0d962a3b48a73b97113fd7888dbdd75f2a86e43eb9aabd0b60a86098ea5f2574`
+- Lines: 141; runners named: scripts/frontier_dm_leptogenesis_pmns_observation_free_normalization_boundary.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- none
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

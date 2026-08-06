@@ -1,0 +1,57 @@
+# Historic intake: Finite-Rank Lambda Bypass Test
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_no_go
+Stratum: branch_only_never_mainlined
+Era: april_pre_reset
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+The finite-rank widening route fixes the support-irrep frame A1(center) + A1(shell) + E + T1, the scalar active-quotient law through Q_eff, the bilinear Route-2 carrier and the scalar source-to-metric reduction, but it still leaves the normalized weight-1 multiplicity freedom L_lambda(D) = (cos lambda D, sin lambda D) because the tensorized Route-2 action is Euclidean and blind to O(1) x O(2) reparameterizations of the bright block.
+
+Original verdict: No finite-rank bypass of lambda exists - the observable surface is orbit-valued, not section-valued, the same failure mode as the phase-lift route.
+Scope: Current atlas widening stack; the source-to-metric theorem is scalar and therefore theta-blind (it sees only Q_eff and the stationary scalar boundary action).
+Escape conditions (negative claims): Fixing lambda would need a new selector primitive absent from the current widening stack, most plausibly a time-sensitive or curvature-local connection choice.
+
+## Why pulled (supervisor decision, on the record)
+
+No finite-rank bypass of lambda: the observable surface is orbit-valued — the widening lane's no-go with the selector-primitive escape named.
+
+## Provenance (pinned)
+
+- Original path: `docs/FINITE_RANK_LAMBDA_BYPASS_NOTE.md`
+- Source commit: `741c1f25e57877796e3a62290fa86af2eddf3d81`
+- git blob: `44153631fc1abac2d6399cec7541b14dffad05d9`
+- sha256: `1963344853c09a63ce59deac69ab2bf608f2180f7190109e433144ddcb137e47`
+- Lines: 92; runners named: scripts/frontier_finite_rank_lambda_bypass.py
+
+## Attached evidence (registered with, not as, this claim)
+
+- `docs/FINITE_RANK_3PLUS1_PROMOTION_BLOCKER_NOTE.md` — Promotion blocker; rides the lambda no-go.
+- `docs/FINITE_RANK_SUPPORT_CANONICAL_FRAME_NOTE.md` — Canonical-frame residual (O(1)xO(2) gauge).
+- `docs/FINITE_RANK_SUPPORT_GENERATOR_FAMILY_NOTE.md` — Noncanonical enlargement exists; canonicalization fails three ways.
+- `docs/FINITE_RANK_SUPPORT_POLARIZATION_FRAME_NOTE.md` — Rank-one vs rank-two polarization mismatch.
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

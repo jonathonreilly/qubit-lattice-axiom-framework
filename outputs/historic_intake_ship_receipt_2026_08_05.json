@@ -1,0 +1,87 @@
+{
+  "audit_lane_notes": [
+    "Priority suggestion: audit attacks-on-landed-rows first (frozen-stars 3D size-independence, P4 formula erratum, I_S double-counting, y_t Ward demotion trail, deposition-floor grid artifact, Shapiro wraparound bug consumers).",
+    "Contradiction sets are pulled AS SETS (e.g. CC 136+264; DM zero-import vs invariant-bridge; nucleation pair; Target-3 closure vs retraction; PMNS iter-10 vs failure records) \u2014 rule on the pair, not a side.",
+    "openpr stratum hazards recorded at triage decisions/openpr_hazards_for_audit_lane.md (census worktree)."
+  ],
+  "authorship": {
+    "decisions": "supervisor (Fable), every row personally, reasons on file in the triage decision JSONLs (pinned in the census worktree)",
+    "supervisor_verification": "independent re-fetch + re-hash of 8 random pins (8/8), line review of sampled wrappers, manifest count/ordering checks, vocab_lint clean",
+    "wrapper_generation": "Claude Opus worker, mechanical, template byte-verified against the 8 supervisor-authored march wrappers before generation"
+  },
+  "intake": {
+    "attachment_lines": 1665,
+    "index": "docs/historic_intake/INTAKE_INDEX_2026-08-05.md",
+    "manifest": "docs/historic_intake/INTAKE_MANIFEST_2026-08-05.json",
+    "manifest_pin": {
+      "git_blob": "0e62ee6de40255d72a5867f7fe1389381c71f8ce",
+      "sha256": "780e90dc2827748ba368b93b21c06f358393da5d042f1cde603f0de85b87f105"
+    },
+    "registrar_effect": "each wrapper becomes one ledger row (claim_id = historic_intake.<stem>) at landing, audit_required_before_effective_retained: true on every row",
+    "slug_collisions": 0,
+    "unresolved_pins": 0,
+    "wrappers": 622
+  },
+  "owner_directive": "2026-08-05: pull historic science iff relevant and/or valuable; pulled items enter the audit ledger and are audited; supervisor personally reviews every theorem and decides; corpus from octopus physics (repo start 2026-03-13) forward; mine exhaustively.",
+  "review_universe": {
+    "format": "[reviewed, pulled]",
+    "octopus_claims_ledgered": 90,
+    "octopus_era_commits_distilled": 3179,
+    "remaining_strata_followup": [
+      "branch09 (338, extracting)",
+      "packsci01-05 (1549, extracting/queued)"
+    ],
+    "rows_personally_reviewed": 3587,
+    "strata_decided": {
+      "branch01": [
+        342,
+        106
+      ],
+      "branch02": [
+        342,
+        129
+      ],
+      "branch03": [
+        342,
+        66
+      ],
+      "branch04": [
+        342,
+        77
+      ],
+      "branch05": [
+        342,
+        55
+      ],
+      "branch06": [
+        342,
+        47
+      ],
+      "branch07": [
+        342,
+        60
+      ],
+      "branch08": [
+        342,
+        39
+      ],
+      "maindeleted_path_ghosts": [
+        152,
+        0
+      ],
+      "march": [
+        58,
+        8
+      ],
+      "openpr_live_lane": [
+        228,
+        0
+      ],
+      "recovery": [
+        67,
+        33
+      ]
+    }
+  },
+  "ship": "historic_science_intake_2026-08-05"
+}

@@ -1,0 +1,57 @@
+# Historic intake: Analysis: Fixed-DAG Sorkin Test
+
+Date: 2026-08-05
+Authority: none
+Audit: unset
+Claim type: historic_analysis
+Stratum: march_2026_event_network_era
+Era: march_event_network — path-sum with linear amplitude propagation on a fixed causal DAG
+
+Status: HISTORIC INTAKE under the 2026-08-05 owner directive (pull historic
+science iff relevant and/or valuable; pulled items enter the ledger and are
+audited). This wrapper registers a claim from the repo's unledgered history.
+The wrapper asserts nothing beyond what the pinned original states; the
+original's own scope, caveats and era conventions govern. Independent audit
+required before any effective status.
+
+## The claim (as stated by the original, supervisor-compressed)
+
+With the causal DAG held fixed (all barrier nodes present, amplitude zeroed at closed slits instead of removing nodes), the Sorkin parameter is zero to machine precision: max |I3|/|P_ABC| = 4.73e-16 (symmetric), 6.44e-16 (close), 2.56e-16 (wide), 4.22e-16 (asymmetric) — drops of 1e17 to 1e25 versus the original topology-changing test.
+
+Original verdict: BORN RULE CONFIRMED — the model has standard pairwise interference only, and the original I3 != 0 was entirely DAG reconfiguration with zero genuine higher-order interference.
+Scope: Four slit configurations (-4,0,+4), (-2,0,+2), (-6,0,+6), (-4,+1,+6) with the DAG held fixed.
+Escape conditions (negative claims): The 'no higher-order interference' negative is stated to depend on holding the DAG fixed via amplitude-zeroing rather than node removal; the escape it identifies is topology change, where DAG reconfiguration reintroduces nonlinear coupling between slit configurations (the original I3 up to 4.6e9).
+
+## Why pulled (supervisor decision, on the record)
+
+Machine-precision pairwise-only result PLUS the mechanism discovery: apparent Sorkin violations up to 1e9 x P in causal-DAG models are entirely topology reconfiguration; fixed-DAG protocol restores I3=0 exactly. Citable caution for discrete/causal-set interference tests. Sanity objection (linearity guarantees I3=0) goes in the wrapper caveat.
+
+## Provenance (pinned)
+
+- Original path: `.claude/science/analyses/sorkin-fixed-dag-2026-03-30.md`
+- Source commit: `ae6269eca37448cc6f7a6a01b3cb58c3ad78f612`
+- git blob: `a5dbb508c21322da7b5a611b5f6a17672e0e25f9`
+- sha256: `dec62233266ac68963c1f64e2ee75f88224d8400fb2e8de4a399a1018a8d3db6`
+- Lines: 45; runners named: none
+
+## Attached evidence (registered with, not as, this claim)
+
+- `.claude/science/analyses/dag-reconfiguration-2026-03-30.md` — Quantifies the topology-reconfiguration mechanism behind the Sorkin resolution; evidence attachment.
+- `.claude/science/analyses/sorkin-test-2026-03-30.md` — The ambiguous original the fixed-DAG note resolves; evidence attachment.
+- `.claude/science/sanity/sorkin-fixed-dag-2026-03-30.md` — Audit evidence; linearity-guarantees-I3=0 objection goes in the wrapper caveat.
+- `.claude/science/sanity/sorkin-test-2026-03-30.md` — Audit evidence (precision flags on the original).
+
+## Flags carried
+
+none recorded
+
+## Audit fields
+
+```yaml
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+historic_intake: true
+intake_directive: owner_2026-08-05
+```
+
+Independent audit still required.

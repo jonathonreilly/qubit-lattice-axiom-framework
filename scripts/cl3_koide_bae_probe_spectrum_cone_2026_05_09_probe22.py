@@ -701,6 +701,60 @@ def section_7_verdict() -> tuple[int, int]:
     return report(passed, "Section 7")
 
 
+def section_8_n5_certificate() -> tuple[int, int]:
+    """Record the granularity at which this runner resolves its claim.
+
+    Adds no check and no count; every statement below points at work
+    already done in Sections 1-6.
+    """
+    header("Section 8 — N5 execution certificate")
+
+    print(
+        "  per_element: resolved exactly rather than numerically — the shift C is written "
+        "out as a 3x3 integer permutation matrix and C**3 == I3 and C * C.T == I3 are "
+        "decided as exact matrix equalities, the symbolic circulant H = aI + bC + b_bar C^2 "
+        "is required to satisfy H - H.conjugate().T == zeros(3, 3) entry by entry over "
+        "real a, b_re, b_im, and the characteristic polynomial of C is confirmed to be "
+        "-(lam^3 - 1)."
+    )
+    print(
+        "  per_site: checked and not executed — no site, position or lattice index is "
+        "constructed anywhere in this runner, and that is the note's own declared "
+        "boundary rather than an omission: the object under test is a supplied abstract "
+        "Hermitian circulant, and the note states that P1, a matter-sector carrier, a "
+        "readout, a quotient and a selector are all not supplied. With no carrier there "
+        "is nothing sited to resolve, and the cone-slack rewrite is complete without one."
+    )
+    print(
+        "  per_mode: resolved — the three C_3 modes k = 0, 1, 2 are carried individually "
+        "as lambda_k = a + 2|b| cos(delta + 2 pi k / 3), and the runner separates them by "
+        "phase sensitivity: d/d(delta) of p_1, p_2, e_1 and e_2 is shown to be exactly 0 "
+        "while d/d(delta) of p_3 and e_3 is shown to be nonzero, with the explicit form "
+        "e_3 = a^3 - 3 a |b|^2 + 2 |b|^3 cos(3 delta). That is precisely why the cone "
+        "slack, built from p_1 and p_2 alone, cannot see the residual angular degree of "
+        "freedom."
+    )
+    print(
+        "  per_block: resolved at the only block structure this object has, the C_3-isotype "
+        "split of the circulant into a one-dimensional trivial block and a two-dimensional "
+        "doublet block. Section 2 computes the two block coefficients separately, obtaining "
+        "a_0 = sqrt(3) a and |z|^2 = 3 |b|^2 with exactly zero symbolic residual, and then "
+        "assembles them into the bridge identity a_0^2 - 2|z|^2 = 3 a^2 - 6 |b|^2, which is "
+        "what makes the spectrum-level and parameter-level slacks the same equation."
+    )
+    print(
+        "  lattice_wide: checked and not executed — there is no Z^3, no volume and no "
+        "extensive quantity in this runner, so no lattice-wide aggregate exists to form. "
+        "The reason no limit is needed is that the result is already global in parameter "
+        "space: the prefactor in 3 p_2 - 2 p_1^2 = prefactor * (a^2 - 2|b|^2) is recomputed "
+        "by cancellation and shown to be the constant -9 with zero derivative in both a and "
+        "|b|, so the two zero loci coincide on the whole half-plane, origin included, "
+        "exactly and without any asymptotics."
+    )
+
+    return report([], "Section 8")
+
+
 def main() -> int:
     print("Abstract Circulant Cone-Slack Rewrite (historical Koide Probe 22)")
     print("Date: 2026-05-09")
@@ -715,7 +769,8 @@ def main() -> int:
                section_4_bridge_makes_pivot_illusory,
                section_5_no_extra_handle,
                section_6_retained_polynomial_closure_step,
-               section_7_verdict):
+               section_7_verdict,
+               section_8_n5_certificate):
         n_pass, n_fail = fn()
         total_pass += n_pass
         total_fail += n_fail

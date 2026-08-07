@@ -251,6 +251,55 @@ def main() -> int:
     check("Lane 3 remains open", "Lane 3 remains open" in new_text)
 
     print()
+    print("G. N5 execution certificate (reporting only; adds no check)")
+    print("-" * 72)
+    print(
+        "per_element: resolved amplitude by amplitude — each positive triple "
+        "is supplied entry by entry, placed on the diagonal on its own, and "
+        "conjugated by the explicit 3x3 Fourier matrix whose nine entries are "
+        "1, omega and omega^2 over sqrt(3); the resulting operators are then "
+        "compared entrywise, with the two C3 commutators required below "
+        "TOL = 1e-10 as max absolute entry and the remaining identities "
+        "checked by np.allclose."
+    )
+    print(
+        "per_site: checked and not executed — the carrier here is the "
+        "retained hw=1 generation triplet together with the C3 cycle, which "
+        "is a generation index and not a position, and no lattice array, link "
+        "or site sum is constructed anywhere; the runner's own typed-edge "
+        "graph records the matching gap, since no existing edge reaches "
+        "physical_quark_positive_C3_parent."
+    )
+    print(
+        "per_mode: resolved character by character in the C3 Fourier basis — "
+        "Y is built as F diag(amplitudes) F^dagger so each of the three C3 "
+        "characters 1, omega and omega^2 carries its own amplitude, the "
+        "parent M = Y^2 is confirmed to share that eigenbasis, and the "
+        "square-root dictionary is verified mode-wise by matching the sorted "
+        "squares of the Y spectrum against the M spectrum."
+    )
+    print(
+        "per_block: exercised only as degenerate rank-one blocks — C3 is "
+        "abelian with three one-dimensional irreps, so every C3-covariant "
+        "operator here is diagonal in the Fourier basis and there is no "
+        "multi-dimensional block left to resolve; the only other block-shaped "
+        "work is the reachability partition of the typed-edge graph, which is "
+        "bookkeeping over twelve declared edges and separates what is "
+        "connected from what is not, resolving no amplitude."
+    )
+    print(
+        "lattice_wide: checked and not executed — this runner never leaves a "
+        "single 3x3 generation space, so no volume, thermodynamic limit or "
+        "continuum limit exists, and the universality claim that the "
+        "dictionary represents arbitrary positive triples is a "
+        "check(..., True) declaration exercised on four hardcoded triples; of "
+        "the 54 recorded passes, 33 are file-existence or string-presence "
+        "checks over seven repository notes, 7 are reachability queries on "
+        "the declared graph and 2 are check(..., True) declarations, leaving "
+        "12 that compute anything numerical or set-theoretic."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

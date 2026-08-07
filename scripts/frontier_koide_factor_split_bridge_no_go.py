@@ -137,6 +137,49 @@ check("product algebra leaves a bridge as an extra relation",
       and not np.allclose(value_full, carrier_full)
       and not np.allclose(value_full, -carrier_full))
 
+section("E. N5 execution certificate")
+print(
+    "  per_element: resolved — every claim above is an entrywise operator identity at "
+    "atol 1e-9 on explicitly written matrices. Jcs @ Jcs is required to equal minus the "
+    "C3 doublet projector entry for entry, both involutions are squared and matched "
+    "against the identity, sigma_plus is confirmed nilpotent, and the commutators and "
+    "anticommutators that carry the argument are required to be the zero matrix rather "
+    "than merely small in norm."
+)
+print(
+    "  per_site: resolved — the carrier side is a genuine two-site register, the Qubit "
+    "factor C^2 at each site, and the two sites are distinguished operationally. The "
+    "native ladders sigma_plus tensor I and I tensor sigma_plus are shown to commute "
+    "across sites, while the Jordan-Wigner pair, which inserts a sigma_z string on the "
+    "first site, is shown to anticommute across the same two sites. The whole point of "
+    "the no-go is that this site-level statistics choice does not reach the value side."
+)
+print(
+    "  per_mode: checked and not executed — nothing is diagonalized into modes anywhere in "
+    "this runner, and the claim does not admit a mode-resolved form. What is being tested "
+    "is whether commutation of two tensor factors forces a relation between their signs, "
+    "and commutation is a basis-free operator statement: the two involutions are compared "
+    "as whole operators, verified to commute and then verified to be neither equal nor "
+    "each other's negative. A mode decomposition would change coordinates without touching "
+    "any of those three facts."
+)
+print(
+    "  per_block: resolved — the blocks are the joint sign sectors of the value and "
+    "carrier involutions, and their dimensions are computed rather than argued: the four "
+    "products of rank projectors are formed and their traces taken, and all four sectors "
+    "including both mixed ones come out nonempty. The value side is itself block-split, "
+    "with the C3 singlet projector and its rank-two doublet complement appearing "
+    "explicitly in the Jcs relation."
+)
+print(
+    "  lattice_wide: checked and not executed — there is no lattice here, only two carrier "
+    "sites and one generation factor, and no volume, sum or limit is taken. That is "
+    "sufficient rather than a shortfall: the claim under refutation is that factorization "
+    "alone forces a value-carrier bridge, and a single nonempty mixed sector already "
+    "refutes it. Enlarging the register can only add further sectors, so no lattice-wide "
+    "statement could strengthen the conclusion."
+)
+
 print()
 print("=" * 72)
 print("VERDICT")

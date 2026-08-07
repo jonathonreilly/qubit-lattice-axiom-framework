@@ -517,6 +517,103 @@ def test_density_control() -> None:
 
 
 # ---------------------------------------------------------------------
+# N5 execution certificate (reporting only)
+# ---------------------------------------------------------------------
+
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: no check() call is added and no PASS/FAIL count moves.
+    Nothing drawn from the two seeded sweeps is quoted; every number below is
+    a structural count or a literal constant of the source.
+    """
+    section("N5 execution certificate: what this runner resolves")
+
+    n_gen = 3
+    entries = n_gen * n_gen
+    perm_pairs = math.factorial(n_gen) ** 2
+    grid_points = 12 ** 4
+
+    print(
+        "per_element: resolved with amplitudes, and this is the strongest "
+        "granularity here. Each circulant is assembled entry by entry as "
+        "a I + b C + b_bar C^2, the full 3 x 3 magnitude table |V_ij| is printed "
+        "entry by entry, every row is separately tested for the one-1-and-two-0 "
+        f"pattern, and the permutation test is a maximum over all {entries} entries "
+        "of ||V|^2 - round(|V|^2)|. Individual Wolfenstein entries are then read out "
+        "one at a time against their PDG values, |V_us| = V[0, 1] and |V_cb| = "
+        "V[1, 2] and |V_td| = V[2, 0] each coming back at exactly 1 while |V_ud|, "
+        "|V_ub| and |V_ts| sit below 1e-14, and the Jarlskog invariant is formed "
+        "from the four named entries V[0, 1], V[1, 2], V[0, 2]* and V[1, 1]*."
+    )
+    print()
+    print(
+        "per_site: checked and not executed. There is no spatial lattice in this "
+        "runner. The only ring structure present is the C_3 cyclic shift, and that "
+        "shift permutes generation labels on C_3[111], not neighbouring points: the "
+        "three slots carry no coordinate, no distance and no volume, so no "
+        "site-indexed field amplitude is defined here at any stage."
+    )
+    print()
+    print(
+        "per_mode: resolved, and the entire no-go is a mode statement. The three Z_3 "
+        "Fourier vectors are the modes, each circulant is diagonalized by eigh into "
+        "its three eigenvalues and eigenvectors, the closed-form spectrum "
+        "lambda_k = a (1 + rho cos(delta + 2 pi k / 3)) for k = 0, 1, 2 is the mode "
+        "structure being exploited, and the diagonalization checks measure exactly "
+        "the residual mode mixing as the largest off-diagonal entry of F^H H F. The "
+        "permutation freedom the runner enumerates is nothing but a relabelling of "
+        "Fourier mode k onto generation g."
+    )
+    print()
+    print(
+        "per_block: checked, and only an inventory and a count can be resolved, for "
+        "a structural reason worth stating: the C_3 irreps are one-dimensional, so "
+        "each block has no interior. What is resolved is the count - three "
+        f"one-dimensional Fourier blocks per sector, {perm_pairs} ordered "
+        "(P_up, P_dn) pairs enumerated exhaustively, collapsing to exactly 6 distinct "
+        "|V_CKM| patterns, which is |S_3|. No within-block amplitude is or could be "
+        "evaluated, and no block is ever compared against another by magnitude."
+    )
+    print()
+    print(
+        "lattice_wide: checked and not executed as a global proof. There is no "
+        "lattice; and the parameter-wide statements this runner makes are executed "
+        f"by finite sampling rather than quantification - a {grid_points}-point "
+        "(rho_up, delta_up, rho_dn, delta_dn) grid, 25 random parameter quadruples, "
+        "30 random circulant pairs and 6 named triples. The genuinely global step, "
+        "that every pair of circulants on the same C_3 generator commutes, is an "
+        "algebraic theorem stated in the prose of this file and checked only on "
+        "sampled pairs; no symbolic or exhaustive proof is executed anywhere."
+    )
+    print()
+    print(
+        "  scope: the grid comment above Test 6 describes 30 x 30 x 30 x 30 = 810000 "
+        f"combinations, but the grids are built with linspace(..., 12), so the sweep "
+        f"actually visits {grid_points} points. The check's own detail string reports "
+        "that number correctly; only the comment is stale."
+    )
+    print(
+        "  scope: Test 2 carries dead code - a double loop whose body is a bare pass, "
+        "and a nontrivial_offdiag value that is computed and never used - and "
+        "V_ud_pred in Test 4 is computed but never reported. None of this affects "
+        "any check."
+    )
+    print(
+        "  scope: the generation assignment relies on eigh returning eigenvalues in "
+        "ascending order to map (lightest, middle, heaviest) onto (gen1, gen2, gen3). "
+        "That ordering is never tested for degeneracy, so at an accidentally "
+        "degenerate spectrum the eigenvector assignment would be ambiguous; the "
+        "sampled parameter ranges avoid this but the runner does not check it."
+    )
+    print(
+        "  scope: Tests 3 and 7 draw from seeded streams (20260510 and 20260513). Two "
+        "back-to-back executions of this runner are byte-identical, and no sampled "
+        "quantity is quoted anywhere in the lines above."
+    )
+
+
+# ---------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------
 
@@ -537,6 +634,7 @@ def main() -> int:
     test_simultaneously_diagonalizable()
     test_charged_lepton_same_group()
     test_density_control()
+    n5_execution_certificate()
 
     print()
     print("=" * 72)

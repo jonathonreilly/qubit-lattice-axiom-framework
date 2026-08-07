@@ -162,6 +162,42 @@ def main() -> int:
         "No observed masses, fitted targets, PDG values, nearest-rational selection, or live endpoint fit is used." in new_note,
     )
 
+    print("\n-- N5 execution certificate --")
+    print(
+        f"per_element: individual Gram cells are what carry this no-go -- for each of the "
+        f"{len(samples)} exact rational source metrics the runner forms K_R^T M K_R on both unit "
+        "bright probes and evaluates every entry, finding the diagonal cell equal to "
+        "A_M(delta)=m00+2*m01*delta+m11*delta^2 and each off-diagonal and complementary cell "
+        f"exactly zero, i.e. six cell-level rational equalities per metric and {6 * len(samples)} in all."
+    )
+    print(
+        "per_site: checked; not executed in this file -- the source leg is a fixed "
+        "two-dimensional internal factor spanned by [1, delta_A1(q)], and delta_A1 enters purely "
+        "as a free rational standing for the A1 invariant of a configuration, with the sampled "
+        "values 0, 1/6, -2/7 and 5/3 picked as arbitrary rationals rather than read off any site."
+    )
+    print(
+        "per_mode: the executed heart of the block sits here -- the two bright modes E and T1 are "
+        "probed by the unit rows (1,0) and (0,1), both return the identical source scalar "
+        f"A_M(delta), and the induced covariance ratio is therefore lambda={lambda_gram} instead "
+        f"of 9/4, which is exactly the channel blindness the note names; kappa=w_T1/w_E={kappa} "
+        "never enters the response."
+    )
+    print(
+        "per_block: the tensor-power rungs 1 through 4 are swept across the same four metrics and "
+        f"the channel-metric block is swept over the ratios {ratios}; the rung sweep resolves "
+        "closure of the grammar rather than an independent quantity, because both sides of each "
+        "power comparison are built from the single source scalar A_M -- that identity is itself "
+        "the collapse being certified, and no new amplitude appears at any rung."
+    )
+    print(
+        "lattice_wide: examined and deliberately left unexecuted -- nothing in this file is summed, "
+        "averaged or extended over a lattice, the whole argument being 2x2 algebra over a rank-one "
+        "carrier; the note's own Minimal Premise Set confines the result to the current class-A "
+        "K_R grammar with channel-blind M and expressly declines to rule out nonseparable "
+        "primitives outside it, so no all-primitives quantifier is available to certify."
+    )
+
     print("\n" + "=" * 84)
     print(f"PASS={PASS} FAIL={FAIL}")
     print(

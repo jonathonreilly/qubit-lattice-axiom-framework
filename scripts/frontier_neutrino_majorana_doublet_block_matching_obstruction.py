@@ -115,6 +115,48 @@ def main() -> int:
     )
 
     print()
+    print("N5 execution certificate -- resolved granularity (print-only):")
+    print(
+        "  per_element: checked and not executed - no matrix is instantiated "
+        "anywhere in this runner. The doublet block G(r) = r I + sigma_x is "
+        "named in the header line above, but the code evaluates only the two "
+        "closed-form scalars Q_rel = r^2 and W_rel = (1/2) log|1 - r^2|, so no "
+        "entry of either the doublet or the local self-dual block is ever "
+        "placed or read back."
+    )
+    print(
+        "  per_site: checked and not executed - the runner carries no site "
+        "index, neighbour or spatial coordinate. The local side of the "
+        "comparison enters purely as two supplied numbers, Q_rel = 1.000000 and "
+        "W_rel = 0.346574; the local self-dual Majorana block that produced them "
+        "is taken from the cited authority stack and is not rebuilt here."
+    )
+    print(
+        "  per_mode: checked and not executed - nothing is diagonalized. "
+        "Although Q_rel and W_rel are background-normalized invariants of the "
+        "doublet block, this runner consumes them as functions of the single "
+        "ratio r, so no individual eigenvalue, splitting or mode amplitude is "
+        "ever formed or reported."
+    )
+    print(
+        "  per_block: checked, but each block is reduced to two scalar "
+        "summaries before comparison - the local self-dual block and the 2 x 2 "
+        "generation doublet each enter as one pair (Q_rel, W_rel). The "
+        "obstruction is then arithmetic on those pairs: quadratic matching "
+        "forces r = 1.000000000000, log-response matching forces "
+        "r = 1.732050807569, and the perturbative band r = 0.01 to 0.15 misses "
+        "the quadratic target by up to 0.999900 while carrying the wrong sign "
+        "for the log-response target, max -0.000050 against +0.346574."
+    )
+    print(
+        "  lattice_wide: checked and not executed - no lattice, no volume and "
+        "no limit appear. The staircase placement k_A = 7, k_B = 8 is held "
+        "fixed as a premise from the cited authority stack rather than swept, "
+        "and the only sweep this runner performs is over four sample values of "
+        "the dimensionless ratio r, so there is no extensive sum and no "
+        "asymptotic regime to enter."
+    )
+    print()
     print("Result:")
     print("  The obvious normalized 2x2 local-to-doublet matching class fails.")
     print("  Its quadratic match forces r = 1, its bosonic log-response match")

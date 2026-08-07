@@ -104,6 +104,68 @@ check("trace separates additive block-sum behavior from product-character behavi
 
 print()
 print("=" * 78)
+print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+print("=" * 78)
+print(
+    "per_element: resolved, and every identity is certified entrywise rather than at "
+    "a norm. The source matrices are constructed cell by cell as generic symbol grids "
+    "(j00..j11, q00..q11, x00..x11, y00..y11), the unit-diagonal upper-triangular D is "
+    "written index by index, and the factorization residual D + J - D(I + D^-1 J) is "
+    "compared against the exact zero matrix over all 4 entries at n = 2 and all 9 at "
+    "n = 3. The product-character gap is likewise reported as a full symbolic "
+    "expression, -x00 y11 + x01 y10 + x10 y01 - x11 y00, not as a magnitude."
+)
+print(
+    "per_site: checked and not executed. There is no lattice and no position index "
+    "anywhere in this file. The matrix indices label abstract source and operator "
+    "slots, and the block-sum axis is an algebraic direct sum of two matrices rather "
+    "than a spatial decomposition, so nothing carries a coordinate, a neighbour or a "
+    "volume and no site-resolved amplitude exists to evaluate."
+)
+print(
+    "per_mode: checked and not executed. Nothing is diagonalized in this runner: only "
+    "matrix products, inverses, traces and determinants are formed. Trace and "
+    "determinant are of course symmetric functions of a spectrum, but they are "
+    "computed straight from the entries here, and no eigenvalue, eigenvector or "
+    "spectral weight is ever produced, so there is no mode at which to resolve "
+    "anything."
+)
+print(
+    "per_block: resolved with amplitudes, and it is exactly the axis the no-go turns "
+    "on. The runner builds the block-diagonal sum of two 2 x 2 matrices and certifies "
+    "both block laws on it - det(A (+) B) = det(A) det(B) and tr(A (+) B) = tr(A) + "
+    "tr(B) - then sets that against the product axis A S, where the same two readouts "
+    "part company: on the concrete witness A = [[2, 1], [1, 2]] and S = [[3, 0], "
+    "[1, 4]] with determinants 3 and 12, the trace gives tr(AS) = 15 against "
+    "tr(A) tr(S) = 28 and tr(A) + tr(S) = 11, while the determinant obeys the product "
+    "law exactly."
+)
+print(
+    "lattice_wide: checked and not executed, and the missing global statement is this "
+    "note's own boundary. The claim is universal in form - that source factoring does "
+    "not force a product character for every scalar readout - but it is established by "
+    "exhibiting a single counterexample, the trace, not by classifying the admissible "
+    "readouts. The note itself scopes 'does not force' to the two tested "
+    "factorization facts and leaves the product-character premise open as admission "
+    "work, so no global classification is available to execute."
+)
+print(
+    "  scope: section D adds little beyond recombination. Three of its four checks are "
+    "conjunctions of booleans already established in sections B and C, and each of "
+    "those conjunctions carries the term (A S).trace() is not None, which is true of "
+    "any SymPy result and discriminates nothing. Only the determinant product-law "
+    "check in that section computes something new."
+)
+print(
+    "  scope: the concrete leg rests on one witness pair at n = 2 and the symbolic "
+    "legs on generic 2 x 2 and 3 x 3 grids; no larger dimension, no singular or "
+    "degenerate matrix, and no readout other than trace and determinant is exercised. "
+    "The runner is fully deterministic - no RNG stream and no optimizer - with exact "
+    "SymPy throughout."
+)
+
+print()
+print("=" * 78)
 print("VERDICT")
 print("=" * 78)
 print("Source factoring and determinant block-sum factoring do not imply")

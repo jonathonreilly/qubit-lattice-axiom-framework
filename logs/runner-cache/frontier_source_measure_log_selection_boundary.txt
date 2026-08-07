@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_measure_log_selection_boundary.py
-runner_sha256: 9b9e7cce7b25b440ec4245649f93ff50351c8d99d48dbafc7c05866e11796c56
+runner_sha256: 551c17fbb126217520589c19a9aa3185c789f29e44339b71e6ce204d4abf37d3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -82,6 +82,15 @@ Part 8: forbidden-import firewall
 [PASS] note names forbidden route: alpha_LM
 [PASS] note names forbidden route: plaquette/u0
 [PASS] note names forbidden route: fitted selectors
+
+Part 9: N5 execution certificate (print-only; adds no check and no counter)
+per_element: checked and not executed -- no matrix and no linear operator is constructed anywhere in this runner. Every object it forms is a scalar symbolic expression: logarithms, exponentials, partition functions, and their derivatives. With no matrix present there is no matrix element available to resolve, and nothing in this file should be read as resolving one.
+per_site: resolved symbolically across a three-site region -- Part 5 gives each site of a finite physical lattice region its own observable symbol o_i and its own partition function Z_i(h), assembles the region log-density as lambda*h*sum(o_i) - log(prod Z_i), and verifies by forced logarithmic expansion that it equals the sum of the three per-site log-densities for symbolic lambda. The site-local score is then read at that first site alone under lambda=1 and lambda=2, returning o_0 and 2*o_0, which is exactly how the file shows locality cannot separate the two source scales.
+per_mode: checked and not executed -- there is no operator in this runner, hence no spectrum, no eigenmode, and no Fourier decomposition available to resolve. The only two-valued structure present is the Bernoulli record outcome e in {-1, +1}, whose plus and minus scores Part 3 does compute separately; those are outcome labels on a probability space rather than modes of any operator, and this certificate declines to report them as mode resolution.
+per_block: resolved as an explicit two-block independence test -- Part 4 places independent Bernoulli records on blocks a and b, each with its own field and its own partition function, then separates the two candidate generators by their mixed second derivative taken across the block pair: the logarithmic generator has mixed derivative exactly zero while the power generator does not, evaluated at the exact rational point h_a=1/3, h_b=1/5 with p=1. That cross-block derivative is the entire content of the connected-response equivalence.
+lattice_wide: executed symbolically at one fixed region size and returning a negative, which is what the certificate reports -- whole-region additivity of the source log-density is formed and verified for the three-site product at arbitrary lambda, and the lattice spacing is carried separately through the approved Planck anchor in Part 6. No lattice is instantiated, no region size is varied, and no thermodynamic limit is taken. More to the point the outcome is a non-selection: locality and product structure together still admit every lambda, and the dimensionless coefficient lambda/sqrt(6) is shown to have no dependence on the lattice scale, so what is established is that no lattice-wide property selects the source unit, not any lattice-wide value.
+Scope, reported plainly: thirty-two of the fifty-seven checks are document tests -- twenty in Part 1 confirming that six notes exist and contain required phrases, and twelve in Part 8 confirming that forbidden phrases are absent and required route names present. Those resolve nothing quantitative. The twenty-five checks in Parts 2 through 7 carry every symbolic result certified above.
+Determinism: the computational parts run on sympy exact symbolic algebra with no floating-point tolerance anywhere -- equality is decided by simplification against zero, and the probe points are exact rationals, 1/2, 1, 2 and -1 for the multiplicativity leg and 1/3 and 1/5 for the mixed derivative. No RNG, optimizer, root-finding, grid scan, Monte Carlo, or flow integration is used, so no quantity in this certificate is interpolated from a sampled or converged value.
 
 ========================================================================================
 SUMMARY: PASS=57 FAIL=0

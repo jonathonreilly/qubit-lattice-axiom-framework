@@ -594,6 +594,58 @@ def section8_obstruction_theorem():
 
 
 # --------------------------------------------------------------------
+# Section 9 — N5 execution certificate (reporting only; adds no check)
+# --------------------------------------------------------------------
+
+def section9_n5_execution_certificate():
+    """State, per canonical resolution class, what this runner actually
+    resolves.  Reporting only: this section adds no PASS/FAIL item.
+    """
+    print("Section 9 — N5 execution certificate: resolution classes exercised here")
+    print(
+        "  per_element: resolved one representation label and one matrix entry "
+        "at a time — the six-row SM table (L, H, Q, e_R, u_R, d_R) is walked "
+        "row by row in exact Fraction arithmetic, giving 3/4 - 1/4 = 1/2 for L "
+        "and H and a different value for each of the other four, and the 3x3 "
+        "circulant a I + b U + b-bar U^{-1} is checked entrywise for "
+        "Hermiticity and for C_3-equivariance Y U = U Y at every sampled "
+        "(a, b) pair."
+    )
+    print(
+        "  per_site: checked and not executed — no Z^3 site index is ever "
+        "formed in this runner; the only three-fold label present is the hw=1 "
+        "corner basis |c_1>, |c_2>, |c_3> permuted by the C_3[111] cycle, "
+        "which is an internal generation label and not a lattice position, so "
+        "there is no site sum and no site-resolved quantity here."
+    )
+    print(
+        "  per_mode: exercised once and only thinly — the C_3 Fourier modes of "
+        "the circulant are resolved individually in exactly one place, the "
+        "degenerate counterexample (a=1, b=0), where the three eigenvalues "
+        "come out (1, 1, 1) so no Koide splitting exists at all; every other "
+        "barrier is argued at the level of the coefficients a and b, so this "
+        "runner does not resolve the mass spectrum mode by mode."
+    )
+    print(
+        "  per_block: resolved block by block, and Barrier 3 is exactly a "
+        "block statement — the SU(2)_L doublet block is 2-dimensional with "
+        "Casimir J^2 = (3/4) I_2, the hw=1 generation block is 3-dimensional "
+        "with the C_3 cycle, the runner compares those two dimensions directly "
+        "(2 != 3), and the Casimir scalar acting on the flavor block only "
+        "rescales it, preserving its shape and leaving |b|^2/a^2 untouched."
+    )
+    print(
+        "  lattice_wide: checked and not executed — the Cl(3)/Z^3 lattice is "
+        "never instantiated here, and no volume, no site sum and no continuum "
+        "limit is taken; both sides of the candidate identity are lattice-free "
+        "by construction, the right side being a representation-label scalar "
+        "and the left an operator-coefficient ratio on a fixed 3-dimensional "
+        "factor, which is precisely the category mismatch Barrier 4 records."
+    )
+    print()
+
+
+# --------------------------------------------------------------------
 # Main runner
 # --------------------------------------------------------------------
 
@@ -613,6 +665,7 @@ def main():
     all_results += section6_counterexamples()
     all_results += section7_falsifiability_anchor()
     all_results += section8_obstruction_theorem()
+    section9_n5_execution_certificate()
 
     n_total = len(all_results)
     n_pass = sum(all_results)

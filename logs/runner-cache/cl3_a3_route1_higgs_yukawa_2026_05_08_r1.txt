@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_route1_higgs_yukawa_2026_05_08_r1.py
-runner_sha256: 5cd36874a45124da035a223ffab5c4c0b4d8de7da321ae0614549d7f7e1fd1b8
-timeout_sec: 300
+runner_sha256: 58089fd58ea237afde469b02b65739f48f79bcbea8d67e01d93661d57de446b3
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ======================================================================
@@ -25,7 +25,7 @@ Section 3 — Circulant theorem and corner expectations
   PASS : Off-diagonal Y entries nonzero (Y mixes corners) | |Y[0,1]| = 0.500, |Y[1,2]| = 0.500
   PASS : Generic C_3-symmetric Hermitian is circulant aI + bU + b̄U^{-1} | Reconstruction error: 2.22e-16
 Section 4 — Mass eigenstates are C_3-Fourier basis
-  PASS : Generic circulant has 3 distinct eigenvalues | eigvals = [-0.29282032302755134, 1.0928203230275508, 1.2999999999999996]
+  PASS : Generic circulant has 3 distinct eigenvalues | eigvals = [-0.2928203230275511, 1.0928203230275508, 1.2999999999999994]
   PASS : Brannen-Rivero closed-form eigenvalues match | closed_form = [np.float64(-0.2928203230275509), np.float64(1.0928203230275506), np.float64(1.2999999999999998)]
   PASS : C_3-Fourier basis vectors are eigenvectors of circulant Y
   PASS : C_3-Fourier basis is orthonormal (DFT3 unitary)
@@ -36,8 +36,8 @@ Section 5 — Spontaneous C_3 breaking blocked by unique-vacuum
   PASS : C_3-asymmetric observable A has different corner expectations | ⟨c_1|A|c_1⟩ = 1.0, ⟨c_2|A|c_2⟩ = 0.0
   PASS : C_3-asymmetric A does NOT commute with U_C3 (not derivable) | max |[A, U_C3]| = 1.000
 Section 6 — Loop integrals preserve C_3-equivariance
-  PASS : One-loop convolution of circulant preserves C_3-symmetry | max |[P_loop, U_C3]| = 1.24e-16
-  PASS : Three-loop product of circulant preserves C_3-symmetry | max |[P^3, U_C3]| = 4.58e-16
+  PASS : One-loop convolution of circulant preserves C_3-symmetry | max |[P_loop, U_C3]| = 4.44e-16
+  PASS : Three-loop product of circulant preserves C_3-symmetry | max |[P^3, U_C3]| = 1.33e-15
   PASS : C_3-symmetric D + φ has C_3-invariant determinant (CW potential) | |det - det_rot| = 0.00e+00
 Section 7 — Counterfactual: explicit C_3-breaking input
   PASS : Non-circulant Y_break does NOT commute with U_C3 | max |[Y_break, U_C3]| = 1.000
@@ -45,8 +45,14 @@ Section 7 — Counterfactual: explicit C_3-breaking input
   PASS : Y_break would satisfy AC_φ but is NOT derivable from the stated source baseline | C_3-equivariance theorem (Step 2 of source note) blocks derivation
 Section 8 — Counterfactual: species = C_3-Fourier basis
   PASS : In C_3-Fourier basis, circulant Y has 3 distinct diagonals | diag = [1.3000000000000005, 1.092820323027551, -0.292820323027551]
-  PASS : Circulant Y is diagonal in C_3-Fourier basis (no mass mixing) | max off-diag = 2.06e-16
+  PASS : Circulant Y is diagonal in C_3-Fourier basis (no mass mixing) | max off-diag = 2.04e-16
   PASS : Species = Fourier basis would satisfy AC_φ via mass eigenvalues | but this is a re-identification — not the original AC_residual
+Section 9 — N5 execution certificate: what this runner resolves
+per_element: checked - the obstruction is decided on individual matrix entries: the corner expectations are the diagonal entries Y[alpha, alpha], equal at 0.7 for the circulant and split to [1.0, 0.0, 0.0] for the counterfactual Y_break, while the off-diagonal entries |Y[0,1]| = |Y[1,2]| = 0.500 are what carry the corner mixing that makes the equality nontrivial.
+per_site: checked and not executed - Z^3 enters this runner only as the label set for the C_3[111] axis permutation, never as an instantiated lattice; the sole site-level object is the Qubit one-site algebra M_2(C) spanned by sigma_1, sigma_2, sigma_3, whose Clifford relations and Killing form are checked at one site, with no second site and no hopping built.
+per_mode: checked - the three C_3-Fourier modes are resolved one at a time, carrying distinct masses [1.3, 1.09282, -0.29282], each matched against the Brannen-Rivero closed form, each verified to be an eigenvector of the circulant and a C_3 eigenstate up to phase, with the residual mass mixing between modes bounded by 2.04e-16.
+per_block: checked and not executed - two distinct algebras appear, the 2x2 Cl(3) spin block of Section 1 and the 3x3 hw=1 generation block of Sections 2 through 8, and the runner never tensors or otherwise assembles them into a joint block structure, so no quantity is compared from one block to another and the generation block is treated as the whole content.
+lattice_wide: checked and not executed - Section 6 is named for loop integrals but executes matrix squares and cubes of a 3x3 circulant plus one 3x3 determinant; no momentum is integrated over a Brillouin zone, no volume is summed and no continuum or large-volume limit is taken, so the route is foreclosed structurally rather than by any lattice-wide evaluation.
 
 ======================================================================
 EXACT      : PASS = 28, FAIL = 0

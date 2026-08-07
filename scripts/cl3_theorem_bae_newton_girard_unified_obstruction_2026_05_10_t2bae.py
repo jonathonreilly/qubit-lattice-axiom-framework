@@ -660,6 +660,96 @@ def section_6_eight_attack_collapse(c: Counter) -> None:
 # ----------------------------------------------------------------------
 
 
+def execution_certificate() -> None:
+    """Print-only N5 execution certificate.
+
+    Reports, per canonical resolution class, what THIS runner resolves.
+    It touches no counter and draws no random number: every quantity below
+    is recomputed from the runner's own deterministic primitives, and the
+    sampled sections are described by their seeds, draw counts, ranges and
+    tolerances rather than by any drawn value.
+    """
+    I3 = np.eye(3, dtype=complex)
+    sym = C_CYCLE + C_pow(2)
+    asym = 1j * (C_CYCLE - C_pow(2))
+
+    def frob(A: np.ndarray, B: np.ndarray) -> complex:
+        return np.trace(A.conj().T @ B)
+
+    pairings_vanish = all(
+        abs(frob(X, Y)) < 1e-12
+        for X, Y in ((I3, sym), (I3, asym), (sym, asym))
+    )
+    norms_exact = (
+        abs(np.real(frob(I3, I3)) - 3.0) < 1e-12
+        and abs(np.real(frob(sym, sym)) - 6.0) < 1e-12
+        and abs(np.real(frob(asym, asym)) - 6.0) < 1e-12
+    )
+
+    # Deterministic reference point (no RNG draw): the BAE point itself.
+    a_ref, b_ref = 1.0, complex(math.sqrt(0.5), 0.0)
+    mu_ij = coproduct_isotype_eigenvalues(a_ref, b_ref)
+    class_sizes = sorted(
+        len([1 for i in range(3) for j in range(3) if (i + j) % 3 == n])
+        for n in range(3)
+    )
+    lams_ref = circulant_eigenvalues(a_ref, b_ref)
+    class_reps_match = all(
+        abs(mu_ij[i * 3 + j] - lams_ref[(i + j) % 3]) < 1e-12
+        for i in range(3)
+        for j in range(3)
+    )
+    f11_at_bae = a_ref * a_ref / 2.0 - abs(b_ref) ** 2
+    f12_at_bae = a_ref * a_ref - abs(b_ref) ** 2
+
+    print()
+    print("=== N5 execution certificate ===")
+    print(
+        f"per_element: entry-level resolution is exact on the three 3x3 "
+        f"isotype generators I, C+C^2 and i(C-C^2) — their pairwise Frobenius "
+        f"pairings all vanish ({pairings_vanish}) and their squared norms come "
+        f"back as the integers 3, 6 and 6 ({norms_exact}); by contrast the "
+        f"four Section-6 checks read a hard-coded eight-row classification "
+        f"table and resolve no matrix entry at all, so that part is inventory "
+        f"only."
+    )
+    print(
+        f"per_site: checked and not executed — H acts on the hw=1 BZ-corner "
+        f"triplet C^3 whose index is a corner/character label, and this runner "
+        f"never instantiates a Z^3 coordinate, a neighbour list or a "
+        f"site-local carrier, so there is no site-resolved quantity for it to "
+        f"decide."
+    )
+    print(
+        f"per_mode: the three circulant modes lambda_k = a + 2|b| cos(arg b + "
+        f"2 pi k / 3) are resolved and cross-checked against Tr(H^n) for "
+        f"n = 1, 2, 3, 4 over 50 seeded circulant draws (seed 987654, a and "
+        f"both parts of b uniform on [-2, 2]) at relative tolerance 1e-9, "
+        f"while Section 2 separates the mode content into (a, |b|^2) plus a "
+        f"single cos(3 arg b) remnant over 50 draws at seeds 314159 and "
+        f"271828."
+    )
+    print(
+        f"per_block: block structure separates cleanly and is where the "
+        f"residue sits — the 1-real-dimensional trivial block R<I> is "
+        f"orthogonal to the 2-real-dimensional doublet block, the nine (i, j) "
+        f"coproduct isotypes of Delta(H) fall into class sizes {class_sizes} "
+        f"under (i + j) mod 3 with representatives equal to the H-multiset "
+        f"({class_reps_match}), and the surviving ambiguity is the block "
+        f"weight choice, since at the BAE point a = 1, |b| = 1/sqrt(2) the "
+        f"multiplicity-weighted F_(1,1) vanishes to 1e-12 "
+        f"({abs(f11_at_bae) < 1e-12}) while the real-dimension-weighted "
+        f"F_(1,2) sits at {f12_at_bae:.1f}."
+    )
+    print(
+        f"lattice_wide: checked and not executed — the obstruction is stated "
+        f"on one three-dimensional BZ-corner fibre, and nothing in this runner "
+        f"sums, averages or extrapolates over a lattice volume or takes any "
+        f"large-volume limit; the ingredient the note itself declares missing "
+        f"is an isotype-weight convention, not a global lattice theorem."
+    )
+
+
 def main() -> int:
     print("=" * 72)
     print("BAE Newton-Girard Unified Obstruction Theorem — verification runner")
@@ -676,6 +766,7 @@ def main() -> int:
     section_5_s3_reflection(c)
     section_6_eight_attack_collapse(c)
 
+    execution_certificate()
     c.summary()
     return 0 if c.failed == 0 else 1
 

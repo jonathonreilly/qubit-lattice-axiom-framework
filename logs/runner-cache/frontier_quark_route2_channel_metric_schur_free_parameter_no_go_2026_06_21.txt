@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21.py
-runner_sha256: f76964c7b33a75d2a6bf54970413dae7b17ea4d43d78340072737b7833b9b5ce
+runner_sha256: af11b4483a5e735504aafff6c44c594affff7d2085a4491295aac9e7c1abe57b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 Route-2 channel metric Schur-free-parameter no-go
@@ -34,6 +34,15 @@ Route-2 channel metric Schur-free-parameter no-go
        (beta_T/alpha_T, alpha_T/alpha_E, beta_E/alpha_E)=(Fraction(-1, 1), Fraction(-2, 1), Fraction(21, 4))
 [PASS] Schur leaves c_E/c_T free across a continuum of positive invariant channel metrics
        checked ratios=[Fraction(1, 5), Fraction(1, 1), Fraction(3, 2), Fraction(9, 4), Fraction(7, 1)]
+
+========================================================================================
+N5 EXECUTION CERTIFICATE
+========================================================================================
+per_element: resolved on the six oriented arms taken one at a time -- each of the 48 signed permutation matrices is built explicitly and its induced arm permutation is read entry by entry, and the arm-diagonal projector entries w_A1=1/6, w_E=1/3, w_T=1/2 are single matrix entries P_X[0,0], so the leverage kappa=w_T/w_E=3/2 is an entrywise ratio and never a summed or averaged quantity.
+per_site: checked and not executed -- every object in this runner lives on the six-arm star of one octahedral center, the arm tuples carry direction labels only and no site coordinate, displacement or neighbor index is ever formed, so the runner has no second site against which any site-resolved statement about the E:T1 normalization scalar could be made.
+per_mode: resolved on the three O_h irreducible channels -- A1, E and T1 are separated by their own projectors of ranks 1, 2 and 3, the invariant symmetric forms span dimension 3 on the full arm space and dimension 2 after restriction to E (+) T1, and the mode-weight powers w, w^2, w^-1, w^-2 are evaluated one per mode pair to give 2/3, 4/9, 3/2 and 9/4 respectively.
+per_block: resolved on the Schur blocks of the Reynolds-projected metric -- the generic integer seed averages to diagonal blocks a_E=29/3 on E and a_T=41/6 on T1, each exactly a scalar multiple of its own projector, with the E:T1 cross block identically zero; that is the whole content of the free ratio c_E/c_T, since two independent block scalars admit ratios 1, 3/2, 9/4, 1/5 and 7 alike.
+lattice_wide: checked and not executed -- the classification never leaves the single star, so no box length, site count, volume or thermodynamic limit appears anywhere in this file; the missing global object is precisely the note's result, namely an inverse-square normalization law c_X proportional to w_X^-2 that would have to be supplied as a new primitive rather than derived here.
 
 ========================================================================================
 PASS=13 FAIL=0

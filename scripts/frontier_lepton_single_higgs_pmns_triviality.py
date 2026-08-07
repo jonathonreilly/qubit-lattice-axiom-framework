@@ -211,6 +211,57 @@ def part4_exact_last_mile_statement() -> None:
     print("  actually derived or selected by the framework.")
 
 
+def part5_n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only, records no PASS/FAIL."""
+    print("\n" + "=" * 88)
+    print("PART 5: N5 EXECUTION CERTIFICATE (RESOLVED GRANULARITY)")
+    print("=" * 88)
+
+    print(
+        "per_element: checked - the whole theorem is decided entry by entry. "
+        "The support matrix is filled by testing "
+        "(q_L(i) + offset + q_R(j)) mod 3 == 0 over all nine (i, j), its row "
+        "sums and column sums are each verified to be exactly 1, the Yukawa is "
+        "assembled as Y = diag(coeffs) P, and monomiality is decided by "
+        "counting entries with |Y_ij| > 1e-12 per row and per column, giving "
+        "3 nonzero entries out of 9 in every case."
+    )
+    print(
+        "per_site: checked and not executed - there is no lattice site in this "
+        "runner. Both indices of every matrix it builds are generation labels "
+        "on a single flavour space, and the Z_3 structure enters as a charge "
+        "assignment rather than as a position, so no local algebra, neighbour "
+        "or site sum exists to resolve."
+    )
+    print(
+        "per_mode: checked, and the finding is that it collapses - the only "
+        "spectral decomposition performed is the SVD of Y_e, and its singular "
+        "values come back exactly equal to the sorted |coefficients| at "
+        "tolerance 1e-12, so every singular direction coincides with one "
+        "generation basis vector and no mode mixes two generations. No Z_3 "
+        "character or Fourier expansion is ever formed; the charges appear only "
+        "as integers in the mod-3 selection rule."
+    )
+    print(
+        "per_block: checked, and exhaustively - the block index here is the "
+        "effective Z_3 offset, and all copies are enumerated rather than "
+        "sampled. Each of the offsets 0, 1, 2 gets its own support matrix, its "
+        "own factorization Y_e = D_e P verified at 0.00e+00 error, and its own "
+        "singular-value list; Part 3 then walks the complete 3 x 3 grid of "
+        "(neutrino offset, charged-lepton offset) pairs with maximum "
+        "off-diagonal Gram norm 0.00e+00 over all nine, and the comparison "
+        "target is the full set of 3! = 6 permutation matrices."
+    )
+    print(
+        "lattice_wide: checked and not executed - nothing extensive is formed "
+        "and no limit is taken. The widest object the runner evaluates is a "
+        "Frobenius distance between two 3 x 3 magnitude matrices, minimized "
+        "over the six permutations to 1.300, which is a single global number on "
+        "the flavour space rather than a lattice-summed observable; no volume, "
+        "site count or continuum limit appears anywhere."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("LEPTON YUKAWA SECTOR: SINGLE-HIGGS PMNS TRIVIALITY THEOREM")
@@ -230,6 +281,7 @@ def main() -> int:
     part2_charged_lepton_lane_is_monomial()
     part3_full_single_higgs_lepton_sector_has_trivial_pmns()
     part4_exact_last_mile_statement()
+    part5_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

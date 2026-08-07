@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_canonical_two_higgs_slot_nogo.py
-runner_sha256: ca51fb656709c148e6dca1a757779801ece4fa371d9df823bcbe3de7512eba95
+runner_sha256: 4fa4e1a4fdf2f7cff725620cf25e900eef6ebf6113a668f53f3639e6a15a34c6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.90
+elapsed_sec: 5.09
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -42,6 +42,15 @@ PART 3: THE PHYSICAL HEAVY-NEUTRINO-BASIS CP TENSOR IS PROPORTIONAL TO x3 y3
   So the canonical lane does not merely fail to explain the last
   amplitudes. On the exact source-phase aligned branch it is
   structurally CP-empty.
+
+========================================================================================
+PART 4: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE
+========================================================================================
+  per_element: checked -- the obstruction is located entry by entry on the 3x3 Hermitian kernel, never as a bulk norm: the corner entry K_02 = x3*y3*(-1/2 - sqrt(3)*I/2) carries the whole source phase, the alignment conditions come from the single entries kz[0,1] and kz[0,2] separately, and the CP tensor is read off the single mass-basis entries km[0,1] and km[0,2] squared.
+  per_site: checked and not executed -- the six lane amplitudes x1, x2, x3, y1, y2, y3 plus the source phase delta are flavour amplitudes of one fixed internal factor, and the 3x3 indices are Z_3 charge labels rather than positions; no lattice site is instantiated anywhere, so nothing here is resolved site by site.
+  per_mode: checked -- conjugation by UZ3 puts the kernel in the Z_3 character basis and the alignment demand is imposed separately on each singlet-to-doublet mode pair, yielding two distinct polynomials: cond1 from mode pair (0,1) and cond2 from mode pair (0,2), whose sum is exactly -sqrt(3)*x3*y3/2 -- the per-mode conditions are what collapse to the single product obstruction.
+  per_block: checked -- the Z_3 grading splits the kernel into a 1-dimensional singlet block and a 2-dimensional doublet block, and the real rotation R fixes the singlet while rotating only the doublet block into the heavy-neutrino mass basis; on that block structure Im[(K_mass)_01^2] = sqrt(3)*x3*y3*(-2*x1*y1 - 2*x2**2 + 2*x3**2 - x3*y3 - 2*y1**2 + 2*y2**2)/12, and both forced branches x3 = 0 and y3 = 0 are evaluated separately and both give zero.
+  lattice_wide: checked and not executed -- the entire theorem is exact polynomial algebra in six real symbols on one fixed 3x3 kernel; no volume, no site sum and no limit is taken, so the CP-emptiness of the aligned branch is certified at single-factor scope only and this runner makes no lattice-scale statement about the canonical lane.
 
 ========================================================================================
 RESULT

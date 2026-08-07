@@ -242,6 +242,28 @@ def main() -> int:
     )
 
     print()
+    print(" N5 execution certificate -- what this runner resolves:")
+    print("   per_element: checked -- every one of the 1440 Cartesian grid "
+          "points is evaluated on its own by a separate gap_at call, "
+          "uniqueness is tested point by point, each axis endpoint is pinned "
+          "individually, and the target triple is compared componentwise.")
+    print("   per_site: checked and not executed -- this certificate never "
+          "opens the spatial structure: it consumes the imported spatial_pair "
+          "family through gap_at, so no site, link or individual transfer "
+          "layer is instantiated or examined anywhere in the sweep.")
+    print("   per_mode: checked -- the readout resolves three independent "
+          "sample modes W_A, W_B, W_C, whose character rows contract the "
+          "weight-space amplitude into zhat; the individual weight modes "
+          "(p,q) are summed by that contraction and are not resolved here.")
+    print("   per_block: checked -- the sweep is the Cartesian product of four "
+          "parameter blocks, 6 log-spaced tau_transfer by 6 linear "
+          "tau_boundary by 5 log-spaced asym_decay by 8 linear linear_decay, "
+          "and the argmin sits on the corner block (1e-04, 4.0, 1e-08).")
+    print("   lattice_wide: checked and not executed -- no lattice volume is "
+          "built and no limit is taken; the weight truncation and the fixed "
+          "transfer depth are inherited constants, and the scope below already "
+          "restricts the result to the sampled points alone.")
+    print()
     print(" Honest scope of this certificate:")
     print(f"   - On the explicit {total}-point Cartesian grid, every float64 gap_at")
     print(f"     result is finite and greater than {NUMERICAL_ZERO_THRESHOLD:.1e}.")

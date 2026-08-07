@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py
-runner_sha256: 61aea1e631c6bde41b9d231f91a53b1dcb2e68de3ee0d2642acb1e067f93d300
+runner_sha256: 6460a4b149b55fe092d128ac70dcd61b18d7439ade42c410e05e813e57ae67c6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -83,6 +83,15 @@ BLOCK 7 — VERDICT: tracial route gives (1,2)->Q=1, not (1,1)->Q=2/3
   [PASS] equal-block route is r=1/2 (Q=2/3), different from the trace
   [PASS] => tracial/product/modular route does NOT select the equal-block value :: RP/T-pos agnostic; trace+KMS+product route gives (1,2)->Q=1; (1,1)->Q=2/3 needs finite-beta/non-tracial weight
   [PASS] source boundary guard: carrier/readout are assumed, not derived by this packet :: the packet closes only the assumed-carrier tracial-reference no-go
+
+==============================================================================
+BLOCK 8 — N5 execution certificate: what this runner resolves
+==============================================================================
+  per_element: checked — the two minimal central idempotents are built and tested one at a time (e0 = (I+C+C^2)/3 rank 1, e1 = I-e0 rank 2, e0e1 = 0), and the Tomita map is applied to each of the 18 realified basis elements E_ij and i E_ij of M3(C) separately.
+  per_site: checked — BLOCK 5 iterates the region sizes |Lambda| = 1, 2, 4 and reports the induced generation weight (0.333:0.667) at each; the site direction enters only through the product-trace factorization premise, no explicit multi-site tensor state is assembled here.
+  per_mode: checked — the circulant spectrum is resolved as the singlet mode a+2b against the twice-degenerate doublet mode a-b, and the reflection-positivity Gram is read mode-wise as min-eig of (H+m^2)^-1 at r = 0.3, 0.5, 1.0 (positive) and r = 2.0 (negative, past the endpoint).
+  per_block: checked — the whole tie is a two-block statement: the trace gives (Tr rho e0, Tr rho e1) = (1/3, 2/3) -> r=1, the equal-block state gives (1/2, 1/2) -> r=1/2, and the doublet block is compressed both as det_R (full 2 real) and det_C (e1 S e1), both PSD.
+  lattice_wide: checked and not executed — region size stops at |Lambda| = 4 and is never taken to a limit; no infinite-volume state, cluster-decay rate or lattice-wide observable is constructed, so the verdict is carried entirely by the single-factor block algebra.
 
 ==============================================================================
 SCORECARD: PASS=39 FAIL=0

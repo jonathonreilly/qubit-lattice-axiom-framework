@@ -1,4 +1,4 @@
-# The C₃ Sector Dial Is Invariant Under a Common Mass Rescaling, So Within a Fixed Mass Scheme It Is Reference-Scale-Free (Bounded Theorem + Comparator Correction)
+# The Quark-Lane Dial Comparators Are Mixed-Convention; Corrected Common-Scale Values (Comparator Correction with Exact Support)
 
 **Date:** 2026-08-07
 **Type:** bounded_theorem
@@ -11,399 +11,185 @@ set, predict, or apply an audit outcome, and edits no registry.
 **Cached runner output:**
 [`logs/runner-cache/frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07.txt`](../logs/runner-cache/frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07.txt)
 
-## Question
+## What this corrects
 
 [`QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md`](QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md)
-opens the quark lane with a warning: quark masses are renormalization-scheme
-and scale dependent, so "any numerical comparison must make the quark mass
-scheme explicit," and its own displayed quark dials are labelled
-"observational comparators only" under a "packet-local central-value
+displays quark dial values `r_up = 0.773642` and `r_down = 0.597141`, correctly
+labelled "observational comparators only" under a "packet-local central-value
 comparator convention."
 
-That warning is correct as stated. This note asks the sharper question it
-leaves open:
+That convention quotes the three masses of a sector at **different reference
+scales** — and, in the up-type sector, mixes a pole mass with MSbar masses.
+Re-quoting a mass triple with unequal per-generation factors is precisely the
+operation the dial is *not* invariant under. So those numbers do not measure
+the dial, and this note supplies the values that do.
 
-> Once a mass **scheme** is fixed, does the **dial** `(r, δ)` still depend on
-> the reference **scale** at which the three masses are quoted?
+This is the repo's only source note carrying them; the two audit-data files
+that also contain them are pipeline-generated and belong to the audit lane.
 
-The answer is no, and that is a strictly narrower result than "the dial is
-convention-free". The dial is invariant under any common rescaling of a
-sector's three masses, and flavour-universal QCD running *within a fixed
-scheme* is exactly such a rescaling. So, **given a scheme**, the dial has a
-single value per sector, independent of which common reference scale is
-chosen.
-
-This does **not** make the dial scheme-independent. A change of mass scheme is
-generally *not* a common rescaling: the MSbar→pole conversion factor
-`1 + 4α_s(m_q)/3π + …` depends on `α_s` at the quark's own mass and so differs
-per generation (≈`1.164` at `m_c` against ≈`1.046` at `m_t` for the inputs
-below). Converting the up-type sector to pole masses moves `r_up` by about
-`−0.010`, about `4.5σ` of the PDG-propagated input error. Scheme choice therefore
-remains a live convention; only the reference scale inside a scheme is free.
-See the scope boundary.
-
-The practical consequence for the open gate is that its displayed numbers do
-not measure the dial: they mix reference scales (and, in the up-type sector, a
-pole mass with MSbar masses), and re-quoting with unequal per-generation
-factors is precisely the operation the invariance does *not* cover.
-
-## Setting
-
-For three generation coordinates `x_k = sqrt(m_k)` with `S = Σ x_k ≠ 0`, the
-Brannen/C₃ circulant parametrization is `x_k = a + 2|b| cos(δ + 2πk/3)` with
-`a = S/3`, and the dial is `r = |b|²/a²`, `δ = arg b`, with
-`Q = Σm_k / S² = (1 + 2r)/3`.
-
-Ordering `x_0 ≥ x_1 ≥ x_2`, the Fourier coefficient
-`b = (1/3) Σ_k x_k ω^{-k}` (with `ω = e^{2πi/3}`) has
+## The correction
 
 ```text
-C = Re(b)/a        = (x_0 - (x_1 + x_2)/2) / (3a)
-J = Im(b)/(a·√3)   = (x_2 - x_1) / (6a)
-r = C² + 3J²       δ = atan2(√3·J, C)
+                                       r_up       r_down
+open-gate note, as displayed         0.773642    0.597141   (mixed scale; pole top)
+same inputs, MSbar top m_t(m_t)      0.767630    0.597141   (mixed scale only)
+canonical common scale               0.830971    0.621090
+                                     ± 0.002204  ± 0.007335
 ```
 
-`C` and `J` are **rational** in the `x_k`, so the whole dial is pinned by an
-exact rational pair. The runner's load-bearing checks take no square roots and
-use no floating point.
+The runner reproduces the open gate's two displayed values to six decimals from
+that note's own quoted mass list, which confirms the convention being compared
+is the one it actually used. The `+0.0573` shift in `r_up` splits as `−0.0060`
+from pole→MSbar and `+0.0633` from the scale correction.
 
-## Theorem
+For reference, the charged-lepton dial under the same treatment is
+`r = 0.499990767 ± 0.0000102`, i.e. `0.9σ` from exactly `1/2`.
 
-### T1 — homogeneity (exact)
+The corrected values sit *further apart* than the ones they replace. Anyone
+using the sector spread should note that this correction widens it rather than
+narrowing it.
 
-`Q`, `r`, `C`, and `J` are unchanged under `m_k ↦ λ m_k` for every `λ > 0`,
-equivalently `x_k ↦ μ x_k` with `μ = √λ`. Each is a ratio of forms of equal
-degree in `x`, so `μ` cancels identically. Since `μ > 0` preserves the
-descending order, the ordering convention is applied to the same ordering
-before and after.
+## Why the common-scale convention is the well-defined one
 
-This is elementary and is **not claimed as new**. Degree-0 homogeneity of the
-Koide ratio is standard, and — more directly — the invariance itself is
-already stated in the repo:
+Two ingredients, both **prior art**, and one exact step that is not.
+
+**Homogeneity (prior art, not claimed here).** `Q`, `r` and the rational pair
+`(C, J)` pinning `δ` are ratios of equal-degree forms in `x_k = √m_k`, so a
+common rescaling `m_k ↦ λ m_k` cancels identically.
 [`CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md`](CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md)
-records that `r` "is invariant under every permutation of the mass triple and
-under a common positive rescaling of all three masses", along with
-`Q = 1/3 + 2r/3` and `r = 1/2 ⟺ Q = 2/3`. T1 adds nothing to that statement
-beyond carrying it through the explicit rational pair `(C, J)`, and it is
-reproduced here only because T3 and the comparator need those same
-coordinates.
+already records that `r` "is invariant under every permutation of the mass
+triple and under a common positive rescaling of all three masses." The runner
+reproduces it exactly only because the step below needs the same coordinates.
 
-### T2 — flavour-universal running is a common rescaling (supplied condition)
-
-**Supplied, not derived:** in QCD the MSbar mass anomalous dimension `γ_m`
-depends on the coupling and the active flavour number only, not on which quark
-is being run, so on a fixed-flavour surface
-
-```text
-m_q(μ) = R(μ, μ₀) · m_q(μ₀)   with one R for every q in the sector.
-```
-
-This is already recorded in the repo at
+**Flavour-universal running (prior art, supplied physics).** In QCD the MSbar
+mass anomalous dimension depends on the coupling and the active flavour number
+only, so on a fixed-flavour surface one factor `R(μ, μ₀)` rescales the whole
+sector. Recorded at
 [`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`](CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md)
-eq. (5.6), which uses it for mass *ratios*. Applying it to the dial is
-immediate from T1 with `λ = R`: **a sector's dial does not depend on the
-common reference scale.**
+eq. (5.6), there used for mass ratios. Combined with homogeneity: **within a
+fixed scheme, a sector's dial does not depend on which common reference scale
+is chosen.** The runner exhibits this across six common scales spanning three
+decades, agreeing to `4e-12`.
 
-The same universality survives flavour thresholds, with one precision that
-matters. The decoupling coefficient `ζ_m` relating `m_q^{(n_f)}` to
-`m_q^{(n_f-1)}` depends on the decoupled heavy mass, the coupling and `μ` —
-not on `q`. So every sector member that *crosses* a given threshold receives
-the **same** `ζ_m`.
-
-It does not follow that the accumulated decoupling is common to the sector,
-and in the transport used here it is not: members starting above a threshold
-never cross it. Running to `μ = 1000 GeV`, `m_u` and `m_c` each cross `m_b`
-and `m_t`, `m_b` crosses only `m_t`, and `m_t` crosses nothing. Those
-accumulated factors differ per generation and are therefore an unequal
-rescaling in exactly T3's sense.
-
-This does **not** affect the invariance claim, which is the statement that
-moving between two common scales *both at or above `m_t`* leaves the dial
-fixed — that move crosses no threshold at all, so `R` is genuinely common and
-T2 applies exactly. It affects only the accuracy of transporting mixed-scale
-*inputs* onto the common scale, where the residual is the neglected
-higher-order decoupling (`ζ_m = 1 + O(α_s²)`) itemized in the scope boundary
-and bounded numerically by the runner. See the scope boundary for the
-canonical `μ ≥ m_t` prescription.
-
-### T3 — sharpness: T1's equal-factor hypothesis cannot be dropped (exact)
-
-A **mixed-scale** convention quotes different generations at different
-reference scales. That applies `m_k ↦ λ_k m_k` with the `λ_k` not all equal,
-which is outside T1's hypothesis. T3 shows that hypothesis is doing real work
-rather than being a removable technicality:
-
-*Lemma (exact).* On the triple `x = (1, 1, 0)`, scaling the two nonzero
-coordinates by `μ₁, μ₂` gives `Q = (μ₁² + μ₂²)/(μ₁ + μ₂)²`, and
+**Sharpness (exact, the one thing claimed here).** The equal-factor hypothesis
+is doing real work, not sitting there as a removable technicality. On the
+triple `x = (1, 1, 0)`, scaling the two nonzero coordinates by `μ₁, μ₂` gives
 
 ```text
 2(μ₁² + μ₂²) − (μ₁ + μ₂)²  =  (μ₁ − μ₂)² ,
 ```
 
-so `Q` returns its unscaled value `1/2` **iff** `μ₁ = μ₂`. On this triple, any
-unequal pair of factors applied to the two nonzero coordinates moves `Q`. The
-runner also exhibits strictly positive, nondegenerate rational triples on which
-unequal factors move both `Q` and `r`, with the before/after values displayed
-as exact fractions.
+so `Q` returns its unscaled value **iff** `μ₁ = μ₂`. The runner also moves both
+`Q` and `r` on strictly positive nondegenerate rational triples, with exact
+before/after fractions.
 
-**This is a sharpness witness, not a converse, and the distinction is
-load-bearing.** The literal converse — "the dial is unchanged ⟹ the `λ_k` are
-all equal" — is **false**, and the runner now exhibits exact counterexamples so
-the stronger reading cannot be reinstated by accident:
+This is a **sharpness witness, not a converse**, and the distinction is
+load-bearing. The literal converse — dial unchanged ⟹ all `λ_k` equal — is
+**false**: the dial depends only on the mass *multiset*, so `x = (4, 2, 1)`
+with `λ = (1/4, 1, 4)` permutes the multiset and leaves `Q` and `r` exactly
+fixed. The runner exhibits that counterexample so the stronger reading cannot
+return by accident.
 
-- on this note's own witness triple `x = (1, 1, 0)`, the factors `(1, 1, 7)`
-  are unequal but act on a zero coordinate and fix the dial exactly;
-- on the strictly positive, nondegenerate triple `x = (4, 2, 1)`, the factors
-  `(1/4, 1, 4)` permute the multiset back onto itself and leave `Q`, `r`, `C`
-  and `J` *exactly* unchanged.
+## Canonical prescription (load-bearing)
 
-So unequal factors are not *guaranteed* to move the dial; what T3 establishes
-is that they are not *protected* from moving it. That is all the argument
-below needs: a mixed-scale re-quoting carries no invariance guarantee, so it
-cannot be assumed to measure the dial, and in the quark case the comparator
-shows it demonstrably does not.
+The common scale must be one at which all three masses are legitimate
+active-flavour MSbar masses. A quark below its **own** threshold is decoupled,
+so `μ ≥ m_t` for up-type and `μ ≥ m_b` for down-type; **taking `μ ≥ m_t`
+satisfies both and is the prescription adopted here.** At `μ ≥ m_t` every mass
+is transported *upward* only, so at each threshold it crosses it is a light
+(active) flavour, no sector member is ever the decoupled one, and the
+decoupling coefficient is common to the sector.
 
-Accordingly, "the dial is scale-free" is true for the common-scale class and
-carries no guarantee outside it. There is nothing to choose *within* the
-common-scale class; the choice *between* common-scale and mixed-scale is not a
-free convention, because only the former is covered by T1.
+The sub-threshold rows of the runner's invariance table are **display-only**:
+they extrapolate `m_t` (both sectors, four of six rows including `μ = M_Z`) and
+`m_b` (down sector, at 2 GeV) below their own thresholds. They exist to exhibit
+the invariance; every one agrees with the canonical value to `4e-12`, so no
+displayed digit depends on them.
 
-## What this does to the open gate's numbers (comparator)
+## Two named conditions
 
-Everything in this section is a **comparator**. It uses external PDG central
-values and floating point, is not exact, is not a derivation step, and
-supplies no premise. T1–T3 stand without it.
+**Mass scheme is a named residual, not a resolved one.** Everything here sits
+inside one fixed scheme (MSbar); the invariance covers the reference scale
+only. A change of scheme is generally *not* a common rescaling — the MSbar→pole
+factor `1 + 4α_s(m_q)/3π + …` is evaluated at each quark's own mass (`≈1.164`
+at `m_c` against `≈1.046` at `m_t`), so converting the up-type sector to pole
+masses moves `r_up` by about `−0.010`, roughly `4.5σ` of the propagated input
+error. A framework-native dial target must still name its scheme.
 
-Reading PDG-style inputs at the open gate's quoted (mixed) reference points
-versus at any common scale:
-
-```text
-                                      r_up       r_down
-open-gate note's displayed           0.773642    0.597141   (mixed; pole top)
-same inputs, MSbar top m_t(m_t)      0.767630    0.597141   (mixed scales only)
-common-scale, scale-invariant        0.830971    0.621090
-  total shift from displayed          +0.0573     +0.0239
-```
-
-The runner reproduces the open gate's two displayed values to six decimals
-from that note's own quoted mass list, which confirms the convention being
-compared is the one it actually used.
-
-One detail matters for attribution of the shift. The open gate's up-type list
-is `[0.00216, 1.27, 173.0] GeV`: `m_u` and `m_c` are MSbar, but `173.0` is the
-**pole** top mass. Its up-type convention is therefore mixed-*scheme* as well
-as mixed-scale, and the `+0.0573` in `r_up` bundles both effects. Isolating
-them, the pole→MSbar top replacement accounts for about `−0.0060` and the
-mixed→common-scale move for about `+0.0633`. The down-type list is MSbar
-throughout, so its `+0.0239` is a pure reference-scale effect.
-
-With linear error propagation from PDG input uncertainties, the common-scale
-dials are
-
-```text
-sector          Q                      r
-charged lepton  0.666660511            0.499990767      (no QCD running)
-up-type         0.887314 ± 0.001469    0.830971 ± 0.002204
-down-type       0.747393 ± 0.004890    0.621090 ± 0.007335
-```
-
-and the six-common-scale invariance table agrees to float noise
-(`2.4e-12` and `4.4e-16` spread in `Q` across `μ = 2 GeV … 1 TeV`).
-
-These are quoted at `μ = M_Z` for continuity with the table above. `M_Z` is
-below `m_t`, so it is one of the display-only rows; it agrees with the
-canonical `μ ≥ m_t` value to `4e-12`, well below the last displayed digit.
-See the scope boundary for the canonical prescription.
+**The mass-to-dial dictionary is non-retained.** The values above are not
+measured values of `r`. They are computed from PDG masses through the
+C₃-circulant parametrization *together with* the identification of its
+eigenvalues as one-leg amplitudes `√m` rather than masses.
+[`QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md`](QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md)
+records that identification verbatim among its "non-retained inputs" (`P1`).
+The exact content above is unaffected — it concerns a defined function of three
+masses and holds whatever that function is later identified with — but any
+reading of these numbers *as the framework's dial* is conditional on `P1`.
 
 ## What this buys the lane
 
-The open gate's live blocker is stated as: "a retained positive quark-mass
-spectrum lane must first supply a sector-specific mass scheme/scale **and**
-quark dial theorem."
+The open gate's blocker is stated as a conjunction: a quark-mass lane needs a
+sector-specific mass scheme/scale **and** a dial theorem. This separates the
+two. Fixing a scheme leaves no residual freedom in the reference scale, so the
+scale half of that conjunction is not an obstruction to defining the dial —
+only to fixing `v₀`. The scheme half stands, unreduced.
 
-T1–T3 narrow that conjunction, and it is worth being precise about how much.
-The dial half is not **scale**-blocked: once a mass scheme is fixed, no
-framework-native choice of *reference scale* is needed to give a sector's
-`(r, δ)` a well-defined value — only the discipline of quoting all three
-masses of the sector at one common scale. What is *not* removed is the scheme
-choice itself: as shown above, MSbar versus pole is not a common rescaling and
-moves `r_up` at the `4.5σ` level. So the residual requirement on the dial half is
-"fix one scheme", not "fix a scheme *and* a scale".
-
-The `v₀` half — the overall scale that turns a dial into masses — is untouched
-and remains fully open.
-
-That is a narrowing of an open gate, not a closing of it. Nothing here derives
-a quark dial from the framework; it says only that, once a scheme is named, the
-target the framework would have to hit is a single well-posed number rather
-than a whole family indexed by an arbitrary reference scale.
-
-It also sharpens an existing negative direction without adding a new one: the
-three sector dials sit at `0.4999907`, `0.6211 ± 0.0073`, `0.8310 ± 0.0022`,
-which are `17σ` and `150σ` from the leptonic `1/2` when only PDG input errors
-are propagated. Those quoted `σ` are input-error bars, not total errors: they
-exclude the scheme systematic above. T1–T3 remove the *reference-scale* choice
-as an explanation of the spread, and the scheme systematic is a `4.5σ`-scale
-effect against a `17σ`/`150σ` separation — but "the spread survives the
-conventions examined here" is the honest statement, not "the spread cannot be
-convention". Whether it forbids any particular sector-blind supply of `r` is a
-question for a no-go note under the negative gate, and is **not** claimed here.
+That is a narrowing, and a corrected set of comparators to aim at. It **does
+not close** the open gate and supplies no part of a closing theorem.
 
 ## Prior art this note does NOT duplicate, and defers to
 
-- Degree-0 homogeneity of `Q` is standard textbook Koide algebra and is not
-  claimed as new.
-- **T1 in full** — invariance of `r` under a common positive rescaling (and
-  under permutations), together with `Q = 1/3 + 2r/3` and `r = 1/2 ⟺ Q = 2/3` —
-  is repo prior art, stated in those words in
-  ([`CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md`](CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md)).
-  T1 is a restatement in `(C, J)` coordinates, not a new result, and the
-  title's first clause should be read as recalling that prior art rather than
-  claiming it.
-- Flavour-universality of QCD mass running is repo prior art
-  ([`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`](CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md)
-  eq. 5.6), there applied to mass ratios rather than to the dial. It enters
-  here as a **supplied physics condition**, not as something derived.
-- The general observation that a *mixed* quantity — one whose components are
-  read at different reference points — carries an extra scale prescription is
-  also prior art in that same note, immediately below eq. 5.6 ("a bridge stated
-  directly on that mixed ratio already contains an additional scale/readout
-  prescription"). This note does not claim that principle; it applies it to the
-  `C₃` dial and to one specific comparator convention.
-- The `C₃` circulant/character algebra and the Koide-cone equivalence are
-  prior art cited by the open gate itself and are not re-derived.
+- Degree-0 homogeneity, and the rescaling invariance itself, are already in
+  `CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11`,
+  along with `Q = 1/3 + 2r/3` and `r = 1/2 ⟺ Q = 2/3`.
+- Flavour-universality of QCD mass running is in
+  `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22` eq. (5.6), which
+  also carries the principle that a mixed quantity has an extra scale
+  prescription baked in.
+- The C₃ circulant/character algebra and the Koide-cone equivalence are prior
+  art cited by the open gate itself.
+- That a single universal `r` cannot fit all three sectors is already recorded
+  qualitatively in `FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05` §2.1.
+  This note does not restate or quantify it; it only supplies corrected inputs.
 
-The content claimed here is narrower than the title alone suggests:
-**T3** as a *sharpness* witness (with the exact identity, and the exact
-counterexamples showing the literal converse fails), the identification that
-the open gate's comparator convention is mixed-scale — and, in the up-type
-sector, mixed-scheme — and therefore is not covered by T1, the corrected
-common-scale comparator values, and the resulting narrowing of the open gate's
-stated blocker from "scheme and scale" to "scheme only" on the dial half.
+Claimed here: the sharpness witness and its counterexample, the identification
+that the open gate's convention is mixed-scale and mixed-scheme, the canonical
+`μ ≥ m_t` prescription, and the corrected comparator values.
 
 ## Dependency standing (disclosure)
 
-At the time of writing, the three notes this one links are not all
-retained-grade in the pipeline-derived view: the quark-mass open gate is an
-`open_gate` and still unaudited, the CKM scale-convention note carries a
-terminal conditional audit outcome, and the charged-lepton DFT coordinate note
-is retained but with an audit in progress. Grade is pipeline-derived after
-independent ratification and dependency closure; this note asserts none of it.
-
-Nothing here silently inherits retained grade from those rows:
-
-- T1 and T3 are self-contained exact algebra; they need no premise from any of
-  the three, and the DFT note is cited as prior art for attribution, not as a
-  load-bearing premise.
-- T2 is declared a **supplied physics condition**, not a result inherited from
-  the CKM note. That note is cited as the place the same condition is already
-  recorded. This supplied condition is the reason the claim type here is
-  `bounded_theorem` rather than `positive_theorem`.
-- The open gate is the **subject** of the comparator correction, not a premise
-  of it.
-
-A reader or auditor should therefore expect the chain-derived grade of this row
-to be limited by those dependencies, and should not read the author-side
-`proposed_retained` line as a prediction of the outcome.
+The open-gate dependency is `unaudited`/`open_gate`; the CKM dependency is
+`audited_conditional`. Both are retained-grade blockers, so whatever
+chain-derived grade this note receives will be limited by them. That is the
+audit lane's determination, not this note's.
 
 ## Non-claims
 
-- This note **derives no quark mass**, no mass scale, no `v₀`, no quark
-  Brannen phase, no sector weight, no species map, and no dial *value* from
-  the framework. Every number in the comparator section is external.
-- This note **does not close** the quark-mass-spectrum open gate, and supplies
-  no part of a closing theorem.
-- This note asserts **no** no-go. The `17σ`/`150σ` sector spread is displayed
-  as a comparator; converting it into a negative claim about any candidate
-  supply of `r` is separate work under the negative gate and is not attempted.
-- This note does **not** claim the dial is scheme-independent, and it is not.
-  Only the reference scale *within* a fixed scheme is shown to drop out. A
-  scheme change is generally not a common rescaling and moves the dial; the
-  quoted MSbar→pole size is itself a comparator, not a bound.
-- No claim is made that a common reference scale is *physically* preferred.
-  The claim is narrower: the dial is constant across the common-scale class,
-  so that class has a single well-defined answer, while a mixed-scale
-  convention carries no such guarantee.
-- T3 is **not** a converse of T1 and is not claimed as one. Unequal
-  per-generation factors are not guaranteed to move the dial — exact
-  counterexamples are exhibited — only not guaranteed to preserve it.
-- Charged-lepton QED running is neglected in the comparator, as it is in the
-  open gate.
+- This note **derives no quark mass**, no mass scale, no `v₀`, no Brannen
+  phase, no sector weight, no species map, and no dial *value* from the
+  framework. Every number is an external comparator.
+- It **does not close** the quark-mass-spectrum open gate.
+- It asserts no no-go, and makes no claim about why the sectors differ.
+- It does not claim the dial is scheme-independent — see the named conditions.
+- No claim that a common reference scale is *physically* preferred; only that
+  the dial is constant across the common-scale class while mixed conventions
+  give convention-dependent answers.
+- Charged-lepton QED running is neglected, as it is in the open gate.
+- Reconciling the open gate's own displayed values is left to that note's
+  owners; nothing here edits it.
 - No axiom, approved primitive, registry entry, or audit verdict is added,
   edited, retired, or predicted. The Tier-A count is unchanged.
 
 ## Scope boundary
 
 Three-generation sectors, real nonnegative generation coordinates, nonzero
-coordinate sum. `Q` and `r` are undefined at `Σx = 0`, which the runner
-excludes rather than samples.
-
-**Canonical prescription (load-bearing).** The common scale must be one at
-which all three masses of the sector are legitimate active-flavour MSbar
-masses. A quark below its *own* threshold is decoupled, so the common scale
-must satisfy `μ ≥ m_Q` for the heaviest member `Q` of the sector: `μ ≥ m_t`
-for up-type and `μ ≥ m_b` for down-type. **Taking `μ ≥ m_t` satisfies both
-sectors simultaneously and is the prescription this note adopts.**
-
-At `μ ≥ m_t` every mass is transported *upward* only, so at each threshold it
-crosses it is a light (active) flavour — no sector member is ever the decoupled
-one, and T2's hypothesis holds with no extrapolation. The runner segments each
-upward run at the crossed thresholds with the correct active-flavour number
-(for `μ = 1000 GeV`: `m_u` over `n_f = 4, 5, 6`; `m_c` over `4, 5, 6`; `m_b`
-over `5, 6`; `m_t` over `6`), which is verified explicitly in Part D6.
-
-The sub-threshold rows of the invariance table are **display-only**:
-
-```text
-row (mu)     extrapolated below its own threshold
-2 GeV        m_t (up-type)  and  m_b (down-type)
-4.18, 10     m_t (up-type)
-91.1876      m_t (up-type)
-162.5, 1000  none -- canonical
-```
-
-Note that this bites the up-type sector in four of the six rows, including the
-`μ = M_Z` row at which the error propagation above is quoted; the down-type
-sector is affected only at `μ = 2 GeV`.
-
-They are shown only to exhibit the invariance across three decades. No result
-here depends on them: every display-only row agrees with the canonical
-`μ ≥ m_t` value to `4e-12` or better, so quoting the central values and error
-bars at `M_Z` rather than at `μ ≥ m_t` changes no displayed digit. The
-canonical numbers are the `μ = 162.5` and `μ = 1000 GeV` rows.
-
-**Mass scheme is a named residual, not a resolved one.** Everything here is
-stated inside one fixed scheme (MSbar). The invariance covers the reference
-scale only. Converting the up-type sector to pole masses moves `r_up` by about
-`−0.010` (≈`4.5σ` of the PDG-propagated input error), because the conversion
-factor `1 + 4α_s(m_q)/3π + …` is evaluated at each quark's own mass and so is
-not common to the sector. A framework-native dial target must still name its
-scheme.
-
-**The mass-to-dial dictionary is non-retained (named condition).** The
-comparator values published above are not measured values of `r`. They are
-computed from PDG masses through the C₃-circulant (Brannen) parametrization
-*together with* the identification of its eigenvalues as one-leg amplitudes
-`√m` rather than as masses.
-[`QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md`](QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md)
-records that identification verbatim as one of the "non-retained inputs"
-(its `P1`). T1–T3 are unaffected: they are exact statements about a defined
-function of three masses and hold whatever that function is later identified
-with. What the condition bites is the *payoff* — "the dial half of the open
-gate's blocker is not scale-blocked" is a claim about the framework's dial, and
-the bridge from masses to that dial is `P1`, which is not retained. Read the
-payoff as conditional on it.
-
-Residual comparator systematics: the active-flavour convention attached to the
-quoted 2 GeV light-quark masses, and neglected higher-order decoupling. These
-act on only the subset of masses quoted at 2 GeV — `m_u` alone in the up
-sector, `m_d` and `m_s` in the down sector — so they are themselves unequal
-per-generation factors in the sense of T3 and are not protected by the
-invariance. The runner now bounds them directly: a common `ζ_m`-style shift of
-`+0.3%` on the 2 GeV masses moves `r_down` by `4.2e-4` (`0.06σ`) and `r_up` by
-`1.0e-5` (`0.005σ`), and even a deliberately excessive `3%` shift stays inside
-`0.6σ`. They are therefore well inside the quoted PDG input errors, which are
-dominated by `m_s` in the down sector and `m_t` in the up sector.
+coordinate sum; `Q` and `r` are undefined at `Σx = 0`, which the runner
+excludes rather than samples. Symmetric linear error propagation from PDG
+inputs. Residual comparator systematics — the active-flavour convention on the
+quoted 2 GeV light-quark masses, and neglected higher-order decoupling — act on
+only the subset of masses quoted at 2 GeV and are therefore themselves unequal
+per-generation factors; the runner bounds them directly, and a common `+0.3%`
+shift on the 2 GeV masses moves `r_down` by `4.2e-4` (`0.06σ`).
 
 ## Reproduce
 
@@ -411,9 +197,6 @@ dominated by `m_s` in the down sector and `m_t` in the up sector.
 python3 scripts/frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07.py
 ```
 
-Parts A–C, the anti-overclaim guard C′, and the scope guards E are standard
-library only — `fractions.Fraction` and integers throughout, no floating point,
-no randomness. Part D is explicitly marked comparator-only and uses `math` for
-the four-loop running. The runner prints the exact and comparator tallies
-separately; only the exact tally is load-bearing, and Parts A–C′ do not read
-any Part D value.
+Load-bearing parts are standard library only — `fractions.Fraction` and
+integers, no floating point, no randomness. The comparator part is tallied
+separately and supplies no premise.

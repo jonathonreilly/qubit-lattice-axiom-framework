@@ -214,6 +214,52 @@ def main() -> int:
 
     print()
     print("=" * 78)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 78)
+    dets_after = sorted({str(base.rescale(mu, lam).gram_det) for mu, lam in scalings})
+    ratios_after = sorted({str(base.rescale(mu, lam).mass_ratio) for mu, lam in scalings})
+    print(
+        f"per_element: the two-by-two residue Gram of the source and Higgs "
+        f"interpolators is formed explicitly from exact rationals — with "
+        f"amplitudes a_S = {base.a_s}, a_H = {base.a_h} and pole factor "
+        f"q = {base.q} at separation t = {base.t}, the entries C_SS = "
+        f"{base.c_ss}, C_SH = {base.c_sh} and C_HH = {base.c_hh} are all "
+        f"strictly positive while the determinant C_SH^2 - C_SS C_HH is "
+        f"exactly {base.gram_det}, so the matrix is rank one entry for entry."
+    )
+    print(
+        f"per_site: checked and not executed — the only index this runner "
+        f"carries is a Euclidean time separation, evaluated at t = {base.t} "
+        f"and t = {base.t + 1} inside a closed-form geometric row; no spatial "
+        f"site, link or volume is instantiated, so nothing is decided per "
+        f"site."
+    )
+    print(
+        f"per_mode: exactly one pole mode is present and it is resolved "
+        f"cleanly — C(t) = a^2 q^t yields the effective-mass ratio "
+        f"C(t)/C(t+1) = {base.mass_ratio} in exact arithmetic, and that ratio "
+        f"is unchanged under every tested amplitude rescaling "
+        f"(values {ratios_after}), so the mode location is pinned while the "
+        f"mode amplitude is not."
+    )
+    print(
+        f"per_block: the source/Higgs operator block is where the no-go bites "
+        f"— across {len(scalings)} independent rescalings (mu, lambda) the "
+        f"Gram determinant stays {dets_after}, C_SS scales as mu^2 and C_HH "
+        f"as lambda^2, the normalized residue ratio C_SH^2/(C_SS C_HH) stays "
+        f"exactly {normalized}, and the whole kappa_Y ambiguity is absorbed by "
+        f"the single block normalization lambda^2 = {lambda_squared} carrying "
+        f"K_Y from {k_connected} to {k_full}."
+    )
+    print(
+        f"lattice_wide: checked and not executed — a pole row at fixed "
+        f"separation says nothing about extent, and neither a volume, a "
+        f"boundary condition nor a continuum limit appears anywhere in this "
+        f"file; 22 of its {PASS_COUNT + FAIL_COUNT} checks are source-document "
+        f"reads (4 file-existence tests and 18 substring assertions) that "
+        f"resolve nothing numerical."
+    )
+    print("=" * 78)
     print(f"RESULT: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 78)
     return 0 if FAIL_COUNT == 0 else 1

@@ -178,10 +178,61 @@ def firewall_checks() -> None:
     report("audit verdict applied flag is false", not audit_verdict_applied)
 
 
+def n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, calls no report(), leaves PASS/FAIL alone.
+    """
+    section("N5 execution certificate (reporting only; adds no check)")
+    print(
+        "  per_element: resolved separately for A and for B — count_word "
+        "returns the two multiplicities apart, expected_counts accumulates "
+        "p * count_A and p * count_B as independent exact Fraction sums over "
+        "the law, and both supplied laws land on (2, 2) at horizon N = 4; the "
+        "accumulation runs over all sixteen words with no sampling, so this "
+        "class rests on enumeration."
+    )
+    print(
+        "  per_site: checked and not executed as a lattice resolution, though "
+        "the position analogue is genuinely run — no spatial coordinate, link "
+        "or site array exists anywhere here, but one_time_marginal is "
+        "evaluated at each of the four event indices separately and both laws "
+        "return (1/2, 1/2) at every one of them, which is the sharpest form of "
+        "this row's negative: agreement at every position still leaves the "
+        "tails free."
+    )
+    print(
+        "  per_mode: checked and not executed — nothing spectral or dynamical "
+        "is formed in this file; there is no transition operator, no "
+        "correlation length, no eigenvalue and no Fourier content, and the "
+        "correlated law is written down by hand as a two-atom law rather than "
+        "derived from any mode or mixing analysis."
+    )
+    print(
+        "  per_block: resolved bucket by bucket under the imbalance statistic "
+        "— |count_A - count_B| partitions the sixteen words into the blocks 0, "
+        "2 and 4, tail_prob sums the exact mass of the block at or above a "
+        "threshold, and the extreme block carries 1/8 under the iid fair law "
+        "against 1 under the correlated fair law, which is the whole "
+        "counterexample; the two laws themselves are the two registrations "
+        "being compared block for block."
+    )
+    print(
+        "  lattice_wide: checked and not executed as a lattice statement — no "
+        "volume, no spatial extent and no N -> infinity or thermodynamic limit "
+        "appears; what does exist is an exhaustive finite-horizon sum at N = 4 "
+        "in which every one of the sixteen words contributes its exact mass, "
+        "and the note states its result at that horizon and no wider; of the "
+        "recorded passes, 18 are string-presence checks over four repository "
+        "documents and 8 are firewall booleans hardcoded False in this file."
+    )
+
+
 def main() -> int:
     source_anchor_checks()
     counterexample_checks()
     firewall_checks()
+    n5_execution_certificate()
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("EXPECTATION_IMPLIES_CONCENTRATION=FALSE")

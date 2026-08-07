@@ -486,6 +486,57 @@ def part5_structural_explanation() -> None:
 
 
 # ---------------------------------------------------------------------------
+# Part 6: N5 execution certificate (reporting only; adds no check)
+# ---------------------------------------------------------------------------
+
+
+def part6_n5_execution_certificate(obs2: dict, obsX: dict) -> None:
+    print()
+    print("=" * 80)
+    print("Part 6: N5 execution certificate — resolved granularity")
+    print("=" * 80)
+    print()
+
+    n_sigma = len(list(itertools.permutations(range(3))))
+
+    print(
+        "per_element: checked - the NuFit filter is applied entry by entry to all "
+        "nine PMNS magnitudes |P[a][i]|, each tested against its own PDG_LO and "
+        "PDG_HI band, and the resulting n_pass out of 9 is what separates the "
+        f"admissible sigma assignments from the rest: {obs2['n_pass']}/9 at Basin 2 "
+        f"and {obsX['n_pass']}/9 at Basin X under the physical sigma."
+    )
+    print(
+        "per_site: checked and not executed - no lattice and no site index exists "
+        "anywhere in this runner, which works only on the 3x3 Hermitian form H(m, "
+        "delta, q_+) over the retained affine chart; that absence is the note's own "
+        "stated boundary, since A-BCC here is grounded observationally by T2K rather "
+        "than derived as an axiom-native Cl(3)/Z^3 theorem."
+    )
+    print(
+        "per_mode: checked - the three eigen-modes of H are resolved individually, "
+        f"with Basin 2 giving eigenvalues {[round(float(x), 4) for x in obs2['eigvals']]} and "
+        f"Basin X {[round(float(x), 4) for x in obsX['eigvals']]}, both of inertia (1, 0, 2) "
+        f"flipped from C_base; each of the {n_sigma} sigma permutations then assigns "
+        "those modes to generations and yields its own sin(delta_CP)."
+    )
+    print(
+        "per_block: checked - the retained affine chart is treated as two disjoint "
+        "sign blocks and both are populated: the det(H) > 0 block C_base at the pin "
+        "with sin(dCP) = -0.9874, and the det(H) < 0 block C_neg entered twice, at "
+        f"Basin 2 with det = {obs2['det_H']:.0f} and Basin X with det = "
+        f"{obsX['det_H']:.0f}, each solved to chi^2 < 1e-8 independently."
+    )
+    print(
+        "lattice_wide: checked and not executed - there is no lattice to sweep, and "
+        "the chart is not swept exhaustively either: the theorem is stated over "
+        "'every KNOWN chi^2=0 solution', which is exactly the three basins located "
+        "here from three fixed starting points, so no global scan of the chart "
+        "certifies that no further C_neg basin exists."
+    )
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -509,6 +560,7 @@ def main() -> int:
     obs1_sin = pmns_obs(0.657061, 0.933806, 0.715042)["sin_dcp"]
     part4_nogo_summary(obs1_sin, obs2, obsX)
     part5_structural_explanation()
+    part6_n5_execution_certificate(obs2, obsX)
 
     print()
     print("=" * 80)

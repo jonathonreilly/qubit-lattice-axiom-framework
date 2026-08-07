@@ -255,6 +255,50 @@ def part5_companion_note() -> None:
         check(f"note avoids overclaim: {label}", phrase not in text)
 
 
+def part6_n5_execution_certificate(candidates: list[PrimitiveCandidate]) -> None:
+    """N5 execution certificate: print-only; contributes nothing to the tally."""
+    print()
+    print("PART 6: N5 execution certificate")
+    classes = sorted({c.class_name for c in candidates})
+    exponent_rows = {c.selected_p: c.selected_rho for c in candidates if c.selected_p is not None}
+    print(
+        f"per_element: each of the {len(candidates)} bank entries is classified on its own "
+        f"row with its own class, exponent, exact rho and two flags, and the four "
+        f"exponent-carrying rows are evaluated individually to rho_E={exponent_rows[0]} at "
+        f"p=0, {exponent_rows[1]} at p=1, {exponent_rows[-2]} at p=-2 and "
+        f"{exponent_rows[2]} at p=2 -- note that the free-text reason string on the p=-2 "
+        "row reads -14/9 while the value this runner computes and prints is -34/9."
+    )
+    print(
+        "per_site: checked and not executed -- nothing spatial is reconstructed in this "
+        "file at all, since the channel leverage enters rho_from_p as the hard-coded "
+        "Fraction 2/3 rather than being rebuilt from a star, so there is no arm, no "
+        "center, no coordinate and consequently no object that a site-resolved gate "
+        "statement could be attached to."
+    )
+    print(
+        "per_mode: resolved, but only through the single E-over-T ratio the law is "
+        "written in -- the T channel is held at q_T=5/6 while the E channel receives "
+        "q_E=q_T*(w_E/w_T)^(-p), so the two bright channels are distinguished exactly "
+        "once per exponent and no separate per-channel amplitude, norm or direction is "
+        "ever evaluated on either of them."
+    )
+    print(
+        f"per_block: checked, and what is resolved here is an inventory rather than any "
+        f"amplitude -- the bank is partitioned into {len(classes)} named classes "
+        f"({', '.join(classes)}), four current-authority classes are each paired with one "
+        "named blocker, and the closure query returns an empty current-authority list "
+        "against the single new-premise entry dual_compliance_p2."
+    )
+    print(
+        "lattice_wide: checked and not executed -- this gate never constructs a lattice, a "
+        "volume or a limit, and its widest statement is a text-marker sweep across five "
+        "authority documents plus the companion note; the whole-surface theorem that "
+        "would be needed is the one the note names as still owed, a same-domain "
+        "dual-compliance p=2 source/readout law."
+    )
+
+
 def main() -> int:
     print("Route-2 dual-compliance current primitive-bank gate")
     print("Status: no-go for current primitive-bank p=2 gate; not an audit verdict.")
@@ -265,6 +309,7 @@ def main() -> int:
     part3_wrong_exponent_arithmetic(candidates)
     part4_gate_no_go()
     part5_companion_note()
+    part6_n5_execution_certificate(candidates)
     print()
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     if FAIL_COUNT == 0:

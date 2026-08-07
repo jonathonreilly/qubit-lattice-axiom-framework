@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/frontier_sector_independent_dial_exclusion_bounded_2026_08_07.py
+runner_sha256: 4328dcd3a809621a99e0d8009cd9e546110d68bfb62eadb606325781c2b0a064
+input_fingerprint_sha256: f25c7b3101357dc923be65bd0d2537835984b702866f2cdd9f6299d3095954e3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.17
+status: ok
+----- stdout -----
+
+A. EXACT: the K-sigma registered dial intervals are pairwise disjoint
+---------------------------------------------------------------------
+  Comparator inputs, frozen as exact rationals (see header):
+    charged lepton   r = 0.499990767 +- 0.000010
+    down-type quark  r = 0.621090000 +- 0.007335
+    up-type quark    r = 0.830971000 +- 0.002204
+  Interval half-width K = 5 sigma.  All arithmetic below is exact.
+
+    charged lepton   [0.499940, 0.500042]
+    down-type quark  [0.584415, 0.657765]
+    up-type quark    [0.819951, 0.841991]
+
+  [PASS] charged lepton and down-type quark intervals are disjoint  (exact gap = 84373233/1000000000 = 0.084373)
+  [PASS] charged lepton and up-type quark intervals are disjoint  (exact gap = 319909233/1000000000 = 0.319909)
+  [PASS] down-type quark and up-type quark intervals are disjoint  (exact gap = 81093/500000 = 0.162186)
+  [PASS] the triple intersection is empty: no single r* lies in all three  (max(lower) = 0.819951 > min(upper) = 0.500042)
+
+  Pulls of each sector against the other sectors' central values:
+    charged lepton   vs r* = 0.621090:  11872.5 sigma
+    charged lepton   vs r* = 0.830971:  32449.0 sigma
+    down-type quark  vs r* = 0.499991:     16.5 sigma
+    down-type quark  vs r* = 0.830971:     28.6 sigma
+    up-type quark    vs r* = 0.499991:    150.2 sigma
+    up-type quark    vs r* = 0.621090:     95.2 sigma
+
+  Best-case single r*: minimise the largest pull over the three sectors.
+  [PASS] even the best single r* is excluded by at least one sector  (argmin r* = 0.5015, largest pull there = 149.5 sigma)
+
+B. EXACT but WALL-CONDITIONAL: the uniform-count ladder
+-------------------------------------------------------
+  CONDITIONAL ON WALL W3.  The weight-to-dial coordinate
+      r = (1 - w) / (2 w)
+  is prior art -- ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_MEASURE_
+  DYNAMICAL_STATIC_CORRESPONDENCE_BOUNDED_THEOREM_NOTE_2026-07-16, T3 --
+  but that note states it is 'supplied only through the relocation
+  theorem's explicitly unadopted energy dictionary (Residual Atom 2)'.
+  Part B therefore consumes an UNADOPTED dictionary and is conditional.
+  Part A does not depend on Part B.
+
+  Uniform count on n atoms: w = 1/n, so r = (n-1)/2.
+    n=1: r=0,  n=2: r=1/2,  n=3: r=1,  n=4: r=3/2,  n=5: r=2,  n=6: r=5/2,  n=7: r=3,  n=8: r=7/2
+
+  [PASS] menu-note arithmetic reproduced: w = 1/2 -> r = 1/2  (all four pairs are quoted in the cited note; none is fitted here)
+  [PASS] menu-note arithmetic reproduced: w = 1/3 -> r = 1  (all four pairs are quoted in the cited note; none is fitted here)
+  [PASS] menu-note arithmetic reproduced: w = 2/3 -> r = 1/4  (all four pairs are quoted in the cited note; none is fitted here)
+  [PASS] menu-note arithmetic reproduced: w = 1/4 -> r = 3/2  (all four pairs are quoted in the cited note; none is fitted here)
+
+  [PASS] down-type quark: strictly between rungs  (nearest rung 1/2, exact distance 0.121090 = 16.5 sigma)
+  [PASS] up-type quark: strictly between rungs  (nearest rung 1, exact distance 0.169029 = 76.7 sigma)
+  [PASS] charged lepton: ON the n = 2 rung, within 1 sigma  (distance from r = 1/2 is 0.9 sigma)
+
+C. EXACT: what the exclusion does NOT reach
+-------------------------------------------
+  The excluded class is: candidate supplies that yield ONE numerical
+  value of r shared by every sector.  A universal RULE whose input is
+  sector-dependent registered content is NOT in that class and is NOT
+  excluded.  The witness below is a two-line existence proof.
+
+  [PASS] charged lepton: one rule reproduces the registered dial from w = 0.500005  (exact inverse; shows the rule-level route is untouched by Part A)
+  [PASS] down-type quark: one rule reproduces the registered dial from w = 0.445995  (exact inverse; shows the rule-level route is untouched by Part A)
+  [PASS] up-type quark: one rule reproduces the registered dial from w = 0.375666  (exact inverse; shows the rule-level route is untouched by Part A)
+  [PASS] so Part A excludes sector-independent VALUES, not sector-blind rules  (this is the N5 narrowing and is load-bearing on the claim's wording)
+
+D. Named walls, echoed from the note
+------------------------------------
+  W1 carrier universality: that all three sectors register the SAME C_3 hw=1 carrier is not derived; the species bridge's across-fermion-type alignment residual is explicitly open
+  [PASS] wall stated in the source note: W1
+  W2 registration scale: the companion invariance theorem covers flavour-universal QCD running only; SM Yukawa contributions to the mass anomalous dimension are flavour-DEPENDENT, so a dial supplied at a different scale need not equal the registered one
+  [PASS] wall stated in the source note: W2
+  W3 energy dictionary: Part B's weight-to-dial coordinate rides on an explicitly unadopted energy dictionary; Part A is independent of it
+  [PASS] wall stated in the source note: W3
+
+  [PASS] Part A is independent of walls W3  (Part A uses no weight-to-dial coordinate at all)
+  [PASS] Part A is NOT independent of walls W1 and W2  (both are stated as load-bearing conditions of the claim, not as caveats)
+
+E. Scope guards
+---------------
+  [PASS] source note is present on the branch  (SECTOR_INDEPENDENT_DIAL_EXCLUSION_WITH_NAMED_WALLS_BOUNDED_THEOREM_NOTE_2026-08-07.md)
+  [PASS] note contains discipline marker: 'This is not a no_go'  (note refuses no_go classification)
+  [PASS] note contains discipline marker: 'sector-independent'  (note states the narrow excluded class)
+  [PASS] note contains discipline marker: 'comparator'  (note marks its numerics as comparators)
+  [PASS] note contains discipline marker: 'prior art'  (note defers the ladder arithmetic to prior art)
+  [PASS] note contains discipline marker: 'proposed_retained'  (note uses author-side status vocabulary only)
+  [PASS] note does not set 'effective_status'  (status authority stays with the independent audit lane)
+  [PASS] note does not set 'audit_status'  (status authority stays with the independent audit lane)
+
+================================================================
+TOTAL: PASS=29, FAIL=0
+================================================================
+
+----- stderr -----
+

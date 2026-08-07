@@ -1,89 +1,42 @@
 {
-  "audit_date": "2026-07-29T14:36:08.703334+00:00",
-  "audit_invocation_history": [
-    "d649eeb2771a4699894014d7e1363bbb",
-    "ec5134e1db4f43029077c0d6ff2503b8"
-  ],
-  "audit_invocation_id": "ec5134e1db4f43029077c0d6ff2503b8",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 19,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "6dffa997a285c735c1ab00eae5504cfe482f0e04b38cb7aad752f379be35cd29",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "6dffa997a285c735c1ab00eae5504cfe482f0e04b38cb7aad752f379be35cd29",
-    "runner_path": "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-batch-A-20260729-c5a06507",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The core degree argument closes, but \u00a75.7's universal nonvanishing inference does not: dim \u039b\u2074(R^d)>0 does not imply F\u2227F\u22600 for arbitrary F, and the runner checks only a selected canonical F.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26",
-  "claim_scope": "Formal graded-algebra theorem that a nonzero Chern-character term ch_k(F) has top degree iff 2k=d, with k=2 giving d=4 and formal coefficient -1/(8 pi^2); no physical ABJ identification, instanton claim, or independence from the wedge-square witness is ratified.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-29T14:36:08.703334+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Because F^\u2227k has degree 2k and scalar multiplication and trace preserve form degree, a nonzero ch_k(F) is top-degree exactly when 2k=d.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "c3af25f7cbb39800919f95164c72dd2d55e1e6b739ecaa3ce2d5ef0e6a721900",
   "note_path": "docs/CHERN_CHARACTER_K2_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": "Recheck the corrected K7 nonvanishing quantifier and ensure the runner and source use identical quantifiers.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1275,19 +1228,103 @@
         "total_pass": 131
       },
       "verdict_rationale": "The algebraic core closes without dependencies: wedge powers of a 2-form have degree 2k, and scalar multiplication and matrix trace preserve that degree. The runner genuinely implements exterior products and exact symbolic coefficient arithmetic rather than importing a target value. The verdict is restricted to the formal nonzero-form statement; the physical ABJ label, instanton interpretation, and asserted independence from the wedge-square witness are outside the audited scope."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.615642+00:00",
+      "audit_date": "2026-07-29T14:36:08.703334+00:00",
+      "audit_invocation_history": [
+        "d649eeb2771a4699894014d7e1363bbb",
+        "ec5134e1db4f43029077c0d6ff2503b8"
+      ],
+      "audit_invocation_id": "ec5134e1db4f43029077c0d6ff2503b8",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 19,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "6dffa997a285c735c1ab00eae5504cfe482f0e04b38cb7aad752f379be35cd29",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "6dffa997a285c735c1ab00eae5504cfe482f0e04b38cb7aad752f379be35cd29",
+        "runner_path": "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-batch-A-20260729-c5a06507",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The core degree argument closes, but \u00a75.7's universal nonvanishing inference does not: dim \u039b\u2074(R^d)>0 does not imply F\u2227F\u22600 for arbitrary F, and the runner checks only a selected canonical F.",
+      "claim_scope": "Formal graded-algebra theorem that a nonzero Chern-character term ch_k(F) has top degree iff 2k=d, with k=2 giving d=4 and formal coefficient -1/(8 pi^2); no physical ABJ identification, instanton claim, or independence from the wedge-square witness is ratified.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-29T14:36:08.703334+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "Because F^\u2227k has degree 2k and scalar multiplication and trace preserve form degree, a nonzero ch_k(F) is top-degree exactly when 2k=d.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck the corrected K7 nonvanishing quantifier and ensure the runner and source use identical quantifiers.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 131,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 131
+      },
+      "verdict_rationale": "Issue: \u00a75.7 claims that for d\u22655, F\u2227F is nonzero because dim \u039b\u2074(R^d)>0, but F=0 or a decomposable 2-form has F\u2227F=0, and the runner tests only one canonical F. Why this blocks: the source is not clean as written even though the conditional degree statement for nonzero ch_k(F) and the formal coefficient are correct. Repair target: replace the universal nonvanishing claim with an existence statement or retain the explicit nonzero hypothesis, and make the runner assertion match that quantifier. Claim boundary until fixed: only the formal degree-and-coefficient theorem in claim_scope is supported; the physical ABJ identification, instanton normalization claim, and asserted independence from the wedge-square witness are not ratified."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 131,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 131
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py",
   "title": "Chern-Character `k = 2` Term Top-Form Forces `d = 4` Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: \u00a75.7 claims that for d\u22655, F\u2227F is nonzero because dim \u039b\u2074(R^d)>0, but F=0 or a decomposable 2-form has F\u2227F=0, and the runner tests only one canonical F. Why this blocks: the source is not clean as written even though the conditional degree statement for nonzero ch_k(F) and the formal coefficient are correct. Repair target: replace the universal nonvanishing claim with an existence statement or retain the explicit nonzero hypothesis, and make the runner assertion match that quantifier. Claim boundary until fixed: only the formal degree-and-coefficient theorem in claim_scope is supported; the physical ABJ identification, instanton normalization claim, and asserted independence from the wedge-square witness are not ratified."
+  "verdict_rationale": null
 }

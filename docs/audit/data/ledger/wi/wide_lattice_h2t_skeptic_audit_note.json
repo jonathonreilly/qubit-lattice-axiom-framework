@@ -1,40 +1,24 @@
 {
-  "audit_date": "2026-06-08T21:42:00.871688+00:00",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "wide_lattice_h2t_distance_law_note": "Bounded finite-slice replay for the ordered 3D 1/L^2 wide lattice at h=0.25, W=12, L=12, with valley-linear action, showing attractive distance rows, near-Newtonian far tail, and linear source-strength scaling."
-    },
-    "dep_claim_type": {
-      "wide_lattice_h2t_distance_law_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "wide_lattice_h2t_distance_law_note": "retained_bounded"
-    },
-    "deps": [
-      "wide_lattice_h2t_distance_law_note"
-    ],
-    "load_bearing_score": 4.587,
-    "runner_hash": "5de79d2618ae8e28716ccd35889b2730f94d41fd73874637254aaeed63ab0bf2",
-    "transitive_descendants": 16
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260608-213932-5a01ac8cb2-wide_lattice_h2t_skeptic_aud",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The raw distance and F~M rows in the retained_bounded cited authority algebraically reproduce the reported signs, counts, far-tail slope, R^2, and mass-scaling exponent. The source note explicitly limits the result to the tested finite-lattice slice.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "wide_lattice_h2t_skeptic_audit_note",
-  "claim_scope": "A bounded W=12, h=0.25 ordered 3D 1/L^2 wide-lattice h^2+T replay with positive distance rows, near-Newtonian far-tail fit, and linear F~M sweep, without continuum or universal-asymptotic promotion.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-06-08T21:42:00.871688+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -42,21 +26,21 @@
     "wide_lattice_h2t_distance_law_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/valley_linear_same_harness_compare.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The replay is genuinely clean on the tested wide slice, which is enough to retain it only as a finite-lattice replay and not as a universal distance law.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "1e8be864ff347412a6bdb1a60f93cb2f4d0dfc6e77af772d5c5366ae3bd888cc",
   "note_path": "docs/WIDE_LATTICE_H2T_SKEPTIC_AUDIT_NOTE.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-gpt-5",
   "previous_audits": [
@@ -165,6 +149,62 @@
         "total_pass": 0
       },
       "verdict_rationale": "Issue: this note is a skeptic/scope wrapper around the already retained-bounded wide_lattice_h2t_distance_law_note and uses the same replay/log rather than adding an independent theorem or comparator. Why this blocks separate retained status: giving it another retained-bounded row would double-count the same finite-lattice evidence as an additional claim. Repair target: keep the cautionary wording boxed under the parent distance-law note or add genuinely independent controls such as width/refinement/window/source-placement replays. Claim boundary until fixed: it is safe as a scope-management corollary saying the parent replay is finite-lattice evidence only, not a universal distance law."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.873012+00:00",
+      "audit_date": "2026-06-08T21:42:00.871688+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wide_lattice_h2t_distance_law_note": "Bounded finite-slice replay for the ordered 3D 1/L^2 wide lattice at h=0.25, W=12, L=12, with valley-linear action, showing attractive distance rows, near-Newtonian far tail, and linear source-strength scaling."
+        },
+        "dep_claim_type": {
+          "wide_lattice_h2t_distance_law_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wide_lattice_h2t_distance_law_note": "retained_bounded"
+        },
+        "deps": [
+          "wide_lattice_h2t_distance_law_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "5de79d2618ae8e28716ccd35889b2730f94d41fd73874637254aaeed63ab0bf2",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-213932-5a01ac8cb2-wide_lattice_h2t_skeptic_aud",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The raw distance and F~M rows in the retained_bounded cited authority algebraically reproduce the reported signs, counts, far-tail slope, R^2, and mass-scaling exponent. The source note explicitly limits the result to the tested finite-lattice slice.",
+      "claim_scope": "A bounded W=12, h=0.25 ordered 3D 1/L^2 wide-lattice h^2+T replay with positive distance rows, near-Newtonian far-tail fit, and linear F~M sweep, without continuum or universal-asymptotic promotion.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T21:42:00.871688+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The replay is genuinely clean on the tested wide slice, which is enough to retain it only as a finite-lattice replay and not as a universal distance law.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The load-bearing audit math is an algebraic closure over retained-grade packet inputs: row sign counts and independent log-log fits reproduce the displayed numerical claims. The cited upstream note is marked retained_bounded, which is retained-grade under the rubric. The source note does not import the missing continuum, width-independence, detector-window, or geometry-generic controls as conclusions."
     }
   ],
   "prose_corrections": [],
@@ -172,14 +212,14 @@
   "relabel_date": "2026-05-06T17:45:26.977074+00:00",
   "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
   "runner_check_breakdown": {
-    "A": 12,
-    "B": 3,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 15
+    "total_pass": 0
   },
   "runner_path": "scripts/wide_lattice_h2t_distance_replay.py",
   "title": "Wide-Lattice `h^2+T` Skeptic Audit Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "The load-bearing audit math is an algebraic closure over retained-grade packet inputs: row sign counts and independent log-log fits reproduce the displayed numerical claims. The cited upstream note is marked retained_bounded, which is retained-grade under the rubric. The source note does not import the missing continuum, width-independence, detector-window, or geometry-generic controls as conclusions."
+  "verdict_rationale": null
 }

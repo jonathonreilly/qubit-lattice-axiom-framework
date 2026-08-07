@@ -2,6 +2,103 @@
   "live": [
     {
       "actual_audit_status": "unaudited",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+        "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+        "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+        "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
+      ],
+      "audit_question": "Fresh-context re-audit: do the current source note, exact primary runner, independent faithful-direct-sum control, and complete N1-N8 certificate establish the stated finite-dimensional Cl(3,0) algebra/module classification, real-versus-complex faithfulness boundary, and conditional unitary refinement without any proof, scope, or negative-claim discipline gap?",
+      "blocked_by_group_ids": [],
+      "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "positive_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "PR discussion as evidence",
+        "prior assistant discussion",
+        "prior audit rationales as evidence",
+        "publication-facing status summaries as evidence",
+        "generated audit queue output as evidence"
+      ],
+      "generated_order": 1,
+      "group_id": "cl3_pauli_irrep_uniqueness_fresh_context",
+      "group_order": 1,
+      "helper_runner_paths": [
+        "scripts/cl3_pauli_irrep_exact_support_2026_05_10.py",
+        "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
+      ],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "queue_order": 1,
+      "ready": true,
+      "ready_blocker": null,
+      "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+      "source_json_path": "docs/audit/data/cl3_pauli_irrep_uniqueness_reaudit_queue_2026-07-25.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "docs/LORENTZ_VIOLATION_DERIVED_NOTE.md",
+        "scripts/frontier_lorentz_violation.py"
+      ],
+      "audit_question": "Fresh-context re-audit: does the bounded dimension-6 cubic-anisotropy result remain valid only under an explicitly selected Planck-spaced cubic finite-difference kinetic operator, with scale reference granting units conversion and kinetic isotropy granting only c_t = c_s, rather than as zero-input four-axiom Lorentz authority?",
+      "blocked_by_group_ids": [],
+      "claim_id": "lorentz_violation_derived_note",
+      "deps": [
+        "scale_reference_primitive"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "PR discussion as evidence",
+        "prior assistant discussion",
+        "prior audit rationales as evidence",
+        "publication status prose as evidence",
+        "generated audit queue output as evidence"
+      ],
+      "generated_order": 1,
+      "group_id": "lorentz_selected_action_scope_fresh_context",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/LORENTZ_VIOLATION_DERIVED_NOTE.md",
+      "queue_order": 2,
+      "ready": true,
+      "ready_blocker": null,
+      "runner_path": "scripts/frontier_lorentz_violation.py",
+      "source_json_path": "docs/audit/data/lorentz_legacy_scope_reaudit_queue_2026-07-12.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    },
+    {
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "meta",
       "actual_effective_status": "meta",
       "allowed_context_paths": [
@@ -37,142 +134,11 @@
       ],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md",
-      "queue_order": 1,
+      "queue_order": 3,
       "ready": true,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_teleportation_acceptance_suite_note_sync_check.py",
       "source_json_path": "docs/audit/data/teleportation_acceptance_suite_note_reaudit_queue_2026-07-28.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "unaudited",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
-      ],
-      "audit_question": "Under the ratified k=1 qubit-per-site clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category?",
-      "blocked_by_group_ids": [],
-      "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-      "deps": [
-        "minimal_axioms",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "unaudited",
-      "expected_current_claim_type": "positive_theorem",
-      "expected_current_effective_status": "unaudited",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this k=1 qubit-per-site re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 1,
-      "group_id": "r1_substep1_chain",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_order": 2,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/frontier_u4_qubit_reframe_closure.py",
-      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
-      ],
-      "audit_question": "With the k=1 qubit-per-site clause ratified on the axiom surface, does the substep-1 U4 conditional sub-claim (k=1 implies dim_C H_x = 2) close under the qubit-per-site reading, or does another blocker remain?",
-      "blocked_by_group_ids": [],
-      "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "deps": [
-        "minimal_axioms",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "unaudited",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "unaudited",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this k=1 qubit-per-site re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 2,
-      "group_id": "r1_substep1_chain",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "queue_order": 3,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
-      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
-      ],
-      "audit_question": "With the k=1 qubit-per-site clause ratified on the axiom surface and the substep-1 dependency chain routed through the retained cl3_complexification_split parent, does the Jordan-Wigner substep-1 bridge close under the qubit-per-site reading, or does another blocker remain?",
-      "blocked_by_group_ids": [],
-      "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-      "deps": [
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "unaudited",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "unaudited",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this k=1 qubit-per-site re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 4,
-      "group_id": "r1_substep1_chain",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_order": 4,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
-      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "live"
     },
@@ -218,9 +184,9 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
-      "queue_order": 5,
+      "queue_order": 4,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:audited_conditional,abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18:audited_conditional,clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10:audited_conditional,no_per_site_chirality_theorem_note_2026-05-02:unaudited,staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07:unaudited",
+      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited,abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:unaudited,abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18:unaudited,abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18:unaudited,native_gauge_closure_note:unaudited,native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23:unaudited,clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10:unaudited,no_per_site_chirality_theorem_note_2026-05-02:unaudited,staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07:unaudited",
       "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
       "source_json_path": "docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json",
       "source_schema": "promotion_reaudit_queue.v1",
@@ -262,11 +228,55 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/S3_MASS_MATRIX_NO_GO_NOTE.md",
-      "queue_order": 6,
+      "queue_order": 5,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:s3_mass_matrix_conditional_degeneracy_note_2026-07-11:audited_conditional",
+      "ready_blocker": "blocked_by_dependency:s3_mass_matrix_conditional_degeneracy_note_2026-07-11:unaudited",
       "runner_path": "scripts/frontier_s3_mass_matrix_no_go.py",
       "source_json_path": "docs/audit/data/s3_mass_matrix_scope_reaudit_queue_2026-07-11.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
+      ],
+      "audit_question": "Under the ratified k=1 qubit-per-site clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category?",
+      "blocked_by_group_ids": [],
+      "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+      "deps": [
+        "minimal_axioms",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "positive_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this k=1 qubit-per-site re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 1,
+      "group_id": "r1_substep1_chain",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "queue_order": 6,
+      "ready": false,
+      "ready_blocker": "blocked_by_dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:unaudited",
+      "runner_path": "scripts/frontier_u4_qubit_reframe_closure.py",
+      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "live"
     },
@@ -353,9 +363,96 @@
       "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
       "queue_order": 8,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:audited_failed",
+      "ready_blocker": "blocked_by_dependency:kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20:unaudited,lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22:unaudited",
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
       "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
+      ],
+      "audit_question": "With the k=1 qubit-per-site clause ratified on the axiom surface, does the substep-1 U4 conditional sub-claim (k=1 implies dim_C H_x = 2) close under the qubit-per-site reading, or does another blocker remain?",
+      "blocked_by_group_ids": [],
+      "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+      "deps": [
+        "minimal_axioms",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this k=1 qubit-per-site re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 2,
+      "group_id": "r1_substep1_chain",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "queue_order": 9,
+      "ready": false,
+      "ready_blocker": "blocked_by_dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:unaudited",
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
+      ],
+      "audit_question": "With the k=1 qubit-per-site clause ratified on the axiom surface and the substep-1 dependency chain routed through the retained cl3_complexification_split parent, does the Jordan-Wigner substep-1 bridge close under the qubit-per-site reading, or does another blocker remain?",
+      "blocked_by_group_ids": [],
+      "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+      "deps": [
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this k=1 qubit-per-site re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 4,
+      "group_id": "r1_substep1_chain",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "queue_order": 10,
+      "ready": false,
+      "ready_blocker": "blocked_by_dependency:cl3_complexification_split_narrow_theorem_note_2026-05-10:unaudited",
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
+      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "live"
     },
@@ -401,7 +498,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
-      "queue_order": 9,
+      "queue_order": 11,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:anomaly_forces_time_bridge_fresh_context",
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
@@ -452,7 +549,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "queue_order": 10,
+      "queue_order": 12,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:lsp_projective_direct_luders",
       "runner_path": "scripts/born_rule_framework_bridge_check.py",
@@ -461,14 +558,14 @@
       "state": "live"
     }
   ],
-  "live_count": 10,
+  "live_count": 12,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 4,
+  "ready_count": 3,
   "resolved_or_invalid": [
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -508,9 +605,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -547,9 +644,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -586,9 +683,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -625,9 +722,48 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Can the exact existence and uniqueness of the implicit finite Wilson reduction law be reclassified as positive_theorem while leaving explicit nonperturbative beta=6 characterization open?",
+      "blocked_by_group_ids": [],
+      "claim_id": "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this bounded-to-retained queue as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries",
+        "PR 1648 source-coupled local-action convention as an assumed axiom"
+      ],
+      "generated_order": 5,
+      "group_id": "wilson_exact_local_chain",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md",
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py",
+      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -664,9 +800,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -706,9 +842,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -832,9 +968,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -957,9 +1093,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1099,6 +1235,46 @@
         "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
         "docs/MINIMAL_AXIOMS_2026-05-20.md"
       ],
+      "audit_question": "Can the exact finite cubical-ball boundary-cap uniqueness (R=2..5 constructed family) be reclassified positive_theorem?",
+      "blocked_by_group_ids": [],
+      "claim_id": "s3_cap_uniqueness_note",
+      "deps": [
+        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher queue as evidence",
+        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 6,
+      "group_id": "lead_exact_algebra_candidates",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
+      "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
+      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
       "audit_question": "Can the exact lattice-dispersion fact m(p)=2 hw(p) on p_mu in {0,pi} with degeneracies 1,3,3,1 and hw=1 the unique lowest band be reclassified positive_theorem, leaving generation-count physics out of scope? Split first if mixed.",
       "blocked_by_group_ids": [],
       "claim_id": "three_generation_structure_note",
@@ -1129,9 +1305,47 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Can the spectral-decomposition + Cauchy-Schwarz connected-correlator bound be reclassified positive_theorem? Confirm the mass-gap input is retained-grade first.",
+      "blocked_by_group_ids": [],
+      "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher queue as evidence",
+        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 8,
+      "group_id": "cluster_decomposition",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+      "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
+      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1210,55 +1424,50 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
-        "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
-        "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
-        "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
-        "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
+        "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md"
       ],
-      "audit_question": "Fresh-context re-audit: do the current source note, exact primary runner, independent faithful-direct-sum control, and complete N1-N8 certificate establish the stated finite-dimensional Cl(3,0) algebra/module classification, real-versus-complex faithfulness boundary, and conditional unitary refinement without any proof, scope, or negative-claim discipline gap?",
+      "audit_question": "Fresh-context re-audit: ignoring the archived failed causal_propagating_field_note row and stale 0.63 / 0.45 table, does the current live bounded finite replay in CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md audit clean under its narrowed configured-family scope?",
       "blocked_by_group_ids": [],
-      "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+      "claim_id": "causal_propagating_field_live_packet_note_2026-06-05",
       "deps": [],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "unaudited",
-      "expected_current_claim_type": "positive_theorem",
-      "expected_current_effective_status": "unaudited",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
       "forbidden_context": [
         "this dispatcher manifest as evidence",
-        "PR discussion as evidence",
-        "prior assistant discussion",
-        "prior audit rationales as evidence",
-        "publication-facing status summaries as evidence",
-        "generated audit queue output as evidence"
+        "the live re-audit bridge note as evidence",
+        "PR #4317 discussion as evidence",
+        "the archived causal_propagating_field_note as live evidence",
+        "the archived 0.63 / 0.45 table as evidence",
+        "prior audit verdicts as evidence",
+        "prior assistant discussion"
       ],
       "generated_order": 1,
-      "group_id": "cl3_pauli_irrep_uniqueness_fresh_context",
+      "group_id": "causal_field_live_packet_fresh_context",
       "group_order": 1,
       "helper_runner_paths": [
-        "scripts/cl3_pauli_irrep_exact_support_2026_05_10.py",
-        "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
+        "scripts/evolving_network_prototype_v6.py"
       ],
       "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
-      "source_json_path": "docs/audit/data/cl3_pauli_irrep_uniqueness_reaudit_queue_2026-07-25.json",
+      "note_path": "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md",
+      "runner_path": "scripts/causal_propagating_field.py",
+      "source_json_path": "docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1294,51 +1503,6 @@
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py",
       "source_json_path": "docs/audit/data/dm_pmns_sole_axiom_scope_reaudit_queue_2026-07-11.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
-    },
-    {
-      "actual_audit_status": "audited_conditional",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-06-29.md",
-        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
-        "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
-        "docs/LORENTZ_VIOLATION_DERIVED_NOTE.md",
-        "scripts/frontier_lorentz_violation.py"
-      ],
-      "audit_question": "Fresh-context re-audit: does the bounded dimension-6 cubic-anisotropy result remain valid only under an explicitly selected Planck-spaced cubic finite-difference kinetic operator, with scale reference granting units conversion and kinetic isotropy granting only c_t = c_s, rather than as zero-input four-axiom Lorentz authority?",
-      "blocked_by_group_ids": [],
-      "claim_id": "lorentz_violation_derived_note",
-      "deps": [
-        "scale_reference_primitive"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "unaudited",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "unaudited",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "PR discussion as evidence",
-        "prior assistant discussion",
-        "prior audit rationales as evidence",
-        "publication status prose as evidence",
-        "generated audit queue output as evidence"
-      ],
-      "generated_order": 1,
-      "group_id": "lorentz_selected_action_scope_fresh_context",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/LORENTZ_VIOLATION_DERIVED_NOTE.md",
-      "runner_path": "scripts/frontier_lorentz_violation.py",
-      "source_json_path": "docs/audit/data/lorentz_legacy_scope_reaudit_queue_2026-07-12.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"
     },
@@ -1386,9 +1550,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1429,9 +1593,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1469,9 +1633,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_decoration",
-      "actual_claim_type": "decoration",
-      "actual_effective_status": "retained_pending_chain",
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1511,9 +1675,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1555,9 +1719,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1730,9 +1894,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_decoration",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "decoration",
-      "actual_effective_status": "decoration_under_graph_first_su3_integration_note",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1860,9 +2024,49 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Fresh-context provenance re-audit: the current clean verdict has independence=weak. Re-audit the bounded claim under current independence and reasoning-effort requirements.",
+      "blocked_by_group_ids": [],
+      "claim_id": "chiral_3plus1d_coupled_coin_note",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this audit-provenance review as evidence",
+        "PR-submitted audit verdicts",
+        "PR #441 review text or PR discussion as evidence",
+        "legacy weak-independence audit rationales as evidence",
+        "prior assistant discussion",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 2,
+      "group_id": "legacy_weak_independence_clean_rows",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md",
+      "runner_path": "scripts/frontier_chiral_3plus1d_coupled_coin_scan.py",
+      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1951,9 +2155,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "open_gate",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -2170,6 +2374,46 @@
       ],
       "audit_question": "Fresh-context provenance re-audit: the current clean verdict is Claude-only but recorded as cross_family without non-Claude confirmation. Re-audit the bounded claim under current auditor-independence requirements.",
       "blocked_by_group_ids": [],
+      "claim_id": "continuum_limit_note",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this audit-provenance review as evidence",
+        "PR-submitted audit verdicts",
+        "PR #441 review text or PR discussion as evidence",
+        "legacy weak-independence audit rationales as evidence",
+        "prior assistant discussion",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 10,
+      "group_id": "claude_only_clean_needs_non_claude_confirmation",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CONTINUUM_LIMIT_NOTE.md",
+      "runner_path": "scripts/lattice_h2_T_numpy_continuum.py",
+      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Fresh-context provenance re-audit: the current clean verdict is Claude-only but recorded as cross_family without non-Claude confirmation. Re-audit the bounded claim under current auditor-independence requirements.",
+      "blocked_by_group_ids": [],
       "claim_id": "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17",
       "deps": [
         "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
@@ -2201,9 +2445,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_failed",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_failed",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -2661,9 +2905,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -2742,306 +2986,7 @@
       "state": "resolved_or_superseded"
     }
   ],
-  "resolved_targets": [
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md"
-      ],
-      "audit_question": "Fresh-context re-audit: ignoring the archived failed causal_propagating_field_note row and stale 0.63 / 0.45 table, does the current live bounded finite replay in CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md audit clean under its narrowed configured-family scope?",
-      "blocked_by_group_ids": [],
-      "claim_id": "causal_propagating_field_live_packet_note_2026-06-05",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "the live re-audit bridge note as evidence",
-        "PR #4317 discussion as evidence",
-        "the archived causal_propagating_field_note as live evidence",
-        "the archived 0.63 / 0.45 table as evidence",
-        "prior audit verdicts as evidence",
-        "prior assistant discussion"
-      ],
-      "generated_order": 1,
-      "group_id": "causal_field_live_packet_fresh_context",
-      "group_order": 1,
-      "helper_runner_paths": [
-        "scripts/evolving_network_prototype_v6.py"
-      ],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md",
-      "resolution_evidence": {
-        "audit_date": "2026-06-21T05:47:30.165796+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-causal_propagating_field_live_packet_note_2026-06-05-reaudit",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "bounded_theorem",
-        "independence": "fresh_context"
-      },
-      "resolution_manifest_date": "2026-06-18",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/causal_propagating_field.py",
-      "source_json_path": "docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Can the exact finite cubical-ball boundary-cap uniqueness (R=2..5 constructed family) be reclassified positive_theorem?",
-      "blocked_by_group_ids": [],
-      "claim_id": "s3_cap_uniqueness_note",
-      "deps": [
-        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher queue as evidence",
-        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 6,
-      "group_id": "lead_exact_algebra_candidates",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-28T01:33:46.485182+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-audit-loop-fresh-context-s3-cap-20260527-r2",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "bounded_theorem",
-        "independence": "fresh_context"
-      },
-      "resolution_manifest_date": "2026-05-28",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
-      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Fresh-context provenance re-audit: the current clean verdict has independence=weak. Re-audit the bounded claim under current independence and reasoning-effort requirements.",
-      "blocked_by_group_ids": [],
-      "claim_id": "chiral_3plus1d_coupled_coin_note",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this audit-provenance review as evidence",
-        "PR-submitted audit verdicts",
-        "PR #441 review text or PR discussion as evidence",
-        "legacy weak-independence audit rationales as evidence",
-        "prior assistant discussion",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 2,
-      "group_id": "legacy_weak_independence_clean_rows",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-23T17:58:15.439009+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T175755Z-ec176ca3-chiral_3plus1d_coupled_c-01",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "bounded_theorem",
-        "independence": "fresh_context"
-      },
-      "resolution_manifest_date": "2026-05-23",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/frontier_chiral_3plus1d_coupled_coin_scan.py",
-      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Can the exact existence and uniqueness of the implicit finite Wilson reduction law be reclassified as positive_theorem while leaving explicit nonperturbative beta=6 characterization open?",
-      "blocked_by_group_ids": [],
-      "claim_id": "gauge_vacuum_plaquette_reduction_existence_theorem_note",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this bounded-to-retained queue as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries",
-        "PR 1648 source-coupled local-action convention as an assumed axiom"
-      ],
-      "generated_order": 5,
-      "group_id": "wilson_exact_local_chain",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md",
-      "resolution_evidence": {
-        "audit_date": "2026-07-22T17:50:03.273685+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-judicial-1-20260722-3fc69cc6",
-        "auditor_family": "codex-gpt-5.6",
-        "claim_type": "bounded_theorem",
-        "independence": "judicial_review"
-      },
-      "resolution_manifest_date": "2026-05-23",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py",
-      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Can the spectral-decomposition + Cauchy-Schwarz connected-correlator bound be reclassified positive_theorem? Confirm the mass-gap input is retained-grade first.",
-      "blocked_by_group_ids": [],
-      "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher queue as evidence",
-        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 8,
-      "group_id": "cluster_decomposition",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
-      "resolution_evidence": {
-        "audit_date": "2026-08-03T14:41:17.900008+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-judicial-1-20260803-33acb519",
-        "auditor_family": "codex-gpt-5.6",
-        "claim_type": "bounded_theorem",
-        "independence": "judicial_review"
-      },
-      "resolution_manifest_date": "2026-05-28",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
-      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Fresh-context provenance re-audit: the current clean verdict is Claude-only but recorded as cross_family without non-Claude confirmation. Re-audit the bounded claim under current auditor-independence requirements.",
-      "blocked_by_group_ids": [],
-      "claim_id": "continuum_limit_note",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this audit-provenance review as evidence",
-        "PR-submitted audit verdicts",
-        "PR #441 review text or PR discussion as evidence",
-        "legacy weak-independence audit rationales as evidence",
-        "prior assistant discussion",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 10,
-      "group_id": "claude_only_clean_needs_non_claude_confirmation",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/CONTINUUM_LIMIT_NOTE.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-23T18:13:56.019683+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T181334Z-742480ea-continuum_limit_note-01",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "bounded_theorem",
-        "independence": "fresh_context"
-      },
-      "resolution_manifest_date": "2026-05-23",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/lattice_h2_T_numpy_continuum.py",
-      "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    }
-  ],
+  "resolved_targets": [],
   "retired": [
     {
       "actual_audit_status": "unaudited",
@@ -3059,9 +3004,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audit_in_progress",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audit_in_progress",
+      "actual_effective_status": "unaudited",
       "audit_question": "Useful finite coefficient table, but intentionally finite-box support; reconsider later only if finite tables are accepted as scoped positive theorems.",
       "claim_id": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
       "expected_current_audit_status": "audited_clean",
@@ -3179,9 +3124,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_renaming",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_renaming",
+      "actual_effective_status": "unaudited",
       "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
       "claim_id": "g_bare_rigidity_theorem_note",
       "expected_current_audit_status": "audited_clean",
@@ -3239,9 +3184,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_renaming",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_renaming",
+      "actual_effective_status": "unaudited",
       "audit_question": null,
       "claim_id": "g_bare_rigidity_theorem_note",
       "expected_current_audit_status": null,
@@ -3254,9 +3199,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "audit_question": null,
       "claim_id": "koide_circulant_wilson_target_note_2026-04-18",
       "expected_current_audit_status": null,
@@ -3284,9 +3229,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
+      "actual_effective_status": "unaudited",
       "audit_question": "Does the finite H_hw=1 translation-character algebra qualify as positive_theorem, or does the row need a split first?",
       "claim_id": "generation_axiom_boundary_note",
       "expected_current_audit_status": "audited_clean",
@@ -3299,9 +3244,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "audit_question": "Does the structural native gauge-closure scope qualify as positive_theorem, or does the row need a structural/physical split first?",
       "claim_id": "native_gauge_closure_note",
       "expected_current_audit_status": "audited_clean",
@@ -3314,9 +3259,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "audit_question": "Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching?",
       "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
       "expected_current_audit_status": "audited_clean",

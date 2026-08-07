@@ -1,88 +1,44 @@
 {
-  "audit_date": "2026-07-11T22:29:04.561861+00:00",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "load_bearing_score": 10.807,
-    "runner_hash": "645cfe028fcc8a6370f03a3f8cb3c3b76c66aeaad020e0f0f39a934a9d4ef660",
-    "transitive_descendants": 447
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00350-lsp_projective_canonical_kp_",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The conclusions follow directly from projection orthogonality, completeness, and the stated apparatus contraction. The accepted finite-carrier premise supplies the setting, while no measurement-probability rule, fitted value, or open physical-selection bridge is used.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
-  "claim_scope": "Finite-dimensional projective measurements with nonzero displayed outcome projectors and fixed canonical apparatus preparation/readout: K_r=P_r; outcome phases and permutations preserve the instrument up to phase or relabeling; label-mixing apparatus rows change the corresponding POVM element.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-11T22:29:04.561861+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "medium",
-  "cross_confirmation": {
-    "first_audit": {
-      "audit_date": "2026-07-11T22:06:05.067412+00:00",
-      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00340-lsp_projective_canonical_kp_",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Finite-dimensional projective measurements with nonzero displayed projectors and fixed canonical apparatus preparation/readout: K_r=P_r; phases and permutations preserve the instrument up to phase or relabeling; other label mixing changes the labeled nonzero-sector POVM elements.",
-      "claim_type": "bounded_theorem",
-      "independence": "cross_family",
-      "load_bearing_step_class": "A",
-      "verdict": "audited_clean"
-    },
-    "second_audit": {
-      "audit_date": "2026-07-11T22:29:04.561861+00:00",
-      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00350-lsp_projective_canonical_kp_",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "Finite-dimensional projective measurements with nonzero displayed outcome projectors and fixed canonical apparatus preparation/readout: K_r=P_r; outcome phases and permutations preserve the instrument up to phase or relabeling; label-mixing apparatus rows change the corresponding POVM element.",
-      "claim_type": "bounded_theorem",
-      "independence": "fresh_context",
-      "load_bearing_step_class": "A",
-      "verdict": "audited_clean"
-    },
-    "status": "confirmed"
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms"
   ],
   "direct_in_degree": 4,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 8.392,
-  "load_bearing_step": "From K_r=\u03a3_s\u27e8r|V_A|s\u27e9P_s and P_sP_{s'}=\u03b4_{ss'}P_s, one obtains K_r\u2020K_r=\u03a3_s|\u27e8r|V_A|s\u27e9|\u00b2P_s, with the canonical case giving K_r=P_r.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "ebafd931381243c847b6562669b3148cec4c3fa5cfff895bda9b3bdb93730478",
   "note_path": "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -373,19 +329,103 @@
         "total_pass": 53
       },
       "verdict_rationale": "The load-bearing steps are genuine finite-dimensional algebraic closures rather than definitions, renamings, or imported numerical matches. The supplied runner source actually constructs the projectors, isometry, Kraus operators, twists, and zero-projector cases using exact symbolic and independent numerical calculations, with 53 checks passing and no hard-coded contested conclusion. The randomized tests are supplementary; the inline orthogonality argument proves the general scoped statement."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.758281+00:00",
+      "audit_date": "2026-07-11T22:29:04.561861+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.807,
+        "runner_hash": "645cfe028fcc8a6370f03a3f8cb3c3b76c66aeaad020e0f0f39a934a9d4ef660",
+        "transitive_descendants": 447
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00350-lsp_projective_canonical_kp_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusions follow directly from projection orthogonality, completeness, and the stated apparatus contraction. The accepted finite-carrier premise supplies the setting, while no measurement-probability rule, fitted value, or open physical-selection bridge is used.",
+      "claim_scope": "Finite-dimensional projective measurements with nonzero displayed outcome projectors and fixed canonical apparatus preparation/readout: K_r=P_r; outcome phases and permutations preserve the instrument up to phase or relabeling; label-mixing apparatus rows change the corresponding POVM element.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T22:29:04.561861+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-11T22:06:05.067412+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00340-lsp_projective_canonical_kp_",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional projective measurements with nonzero displayed projectors and fixed canonical apparatus preparation/readout: K_r=P_r; phases and permutations preserve the instrument up to phase or relabeling; other label mixing changes the labeled nonzero-sector POVM elements.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-11T22:29:04.561861+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00350-lsp_projective_canonical_kp_",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional projective measurements with nonzero displayed outcome projectors and fixed canonical apparatus preparation/readout: K_r=P_r; outcome phases and permutations preserve the instrument up to phase or relabeling; label-mixing apparatus rows change the corresponding POVM element.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "From K_r=\u03a3_s\u27e8r|V_A|s\u27e9P_s and P_sP_{s'}=\u03b4_{ss'}P_s, one obtains K_r\u2020K_r=\u03a3_s|\u27e8r|V_A|s\u27e9|\u00b2P_s, with the canonical case giving K_r=P_r.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing identities are genuine finite-dimensional algebraic consequences of the stated hypotheses. The runner constructs the projectors, isometry, Kraus contractions, phase/permutation twists, mixing examples, and zero-projector cases rather than printing or importing the conclusions; all 53 checks pass. The necessity statement is correctly limited to nonzero displayed sectors, and the note does not claim instrument uniqueness or derive physical measurement semantics."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 53,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 53
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
   "title": "LSP-Projective Canonical Kraus Selection `K_P = P` Under Restricted Step-3 Scope (Narrow)",
   "transitive_descendants": 83,
-  "verdict_rationale": "The load-bearing identities are genuine finite-dimensional algebraic consequences of the stated hypotheses. The runner constructs the projectors, isometry, Kraus contractions, phase/permutation twists, mixing examples, and zero-projector cases rather than printing or importing the conclusions; all 53 checks pass. The necessity statement is correctly limited to nonzero displayed sectors, and the note does not claim instrument uniqueness or derive physical measurement semantics."
+  "verdict_rationale": null
 }

@@ -1,168 +1,42 @@
 {
-  "audit_date": "2026-08-03T09:53:23.098451+00:00",
-  "audit_invocation_history": [
-    "b10bb64fb2c74d6590337ff6abae119d",
-    "5ea90b79965948008c7656f116f47e78"
-  ],
-  "audit_invocation_id": "5ea90b79965948008c7656f116f47e78",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "judgment_fingerprint": {
-      "claim_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
-      "digest": "85ef1a86825b3ee1ede7d9ccf623ecb9f6995d881b8c660c7bd180231ec1c86b",
-      "judgment": {
-        "audit_date": "2026-08-03T09:53:23.098451+00:00",
-        "audit_invocation_id": "5ea90b79965948008c7656f116f47e78",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-audit-batch-B-20260803-7e78abd4",
-        "auditor_confidence": "high",
-        "auditor_family": "codex-gpt-5.6",
-        "auditor_model": "gpt-5.6-sol",
-        "auditor_reasoning_effort": "xhigh",
-        "chain_closes": false,
-        "chain_closure_explanation": "The finite matrix theorem is exhaustively verified on the explicitly defined 2^4 surface. The packet does not derive the canonical free staggered carrier from framework premises, so its use as a reconstruction-core bridge remains open.",
-        "claim_scope": "Conditional finite-algebra theorem for the explicitly specified canonical free staggered 2^4 blocked hypercube: the alpha_mu generate rank-16 Cl4 with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
-        "claim_type": "bounded_theorem",
-        "claim_type_provenance": "audited",
-        "cross_confirmation": null,
-        "decoration_parent_claim_id": null,
-        "independence": "fresh_context",
-        "load_bearing_step": "Exhaustively constructing the 16-by-16 alpha_mu from the stated eta_mu phases yields Clifford rank 16, commutant dimension 16, and a taste-singlet volume element distinct from epsilon.",
-        "load_bearing_step_class": "A",
-        "negative_assertion_classes": [
-          "derived_no_go_boundary"
-        ],
-        "notes_for_re_audit_if_any": "missing_dependency_edge: Add a retained derivation or accepted-premise edge supplying the canonical blocked free staggered carrier; if instead narrowing downstream framework-facing sentences, also add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the audit queue.",
-        "open_dependency_paths": [],
-        "runner_check_breakdown": {
-          "A": 10,
-          "B": 2,
-          "C": 0,
-          "D": 0,
-          "total_pass": 12
-        },
-        "verdict_rationale": "The runner genuinely constructs the 16-by-16 matrices and verifies all stated finite-algebra identities rather than printing expected constants. However, no authority derives the canonical free staggered carrier from the accepted framework premises; that framework-carrier identification is stronger than the finite matrix theorem but necessary for its reconstruction-core import. N1-N2 provide only the exact finite-algebra epsilon separation rather than a five-route closure record; N3-N5 expose the substantive negative rhetoric but no prior residual witness. N6 supplies no approved primitive closing the carrier edge, N7 lacks an independently evidenced steelman resolution, and N8 contains an applicable echo that the minimal surface does not select the staggered kinetic law."
-      },
-      "schema": "frozen_audit_judgment_v1"
-    },
-    "load_bearing_score": 11.957,
-    "packet_policy_fingerprint": {
-      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
-      "schema": "packet_policy_fingerprint_v1",
-      "sources": {
-        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
-        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
-        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
-        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
-        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
-      }
-    },
-    "policy_versions": {
-      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db",
-    "runner_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "science_fingerprint": {
-      "dependencies": [],
-      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "9d033fec88bbd51912fa358cda5508eaf97e19a5b6db66c3b0e76a4f8b5b378e",
-      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
-      "runners": [
-        {
-          "declared_input_fingerprint_sha256": null,
-          "declared_input_paths": null,
-          "declared_inputs": [],
-          "path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
-          "present": true,
-          "role": "primary",
-          "sha256": "7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db"
-        }
-      ],
-      "schema": "science_fingerprint_v2",
-      "target": {
-        "claim_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
-        "claim_scope": "Conditional finite-algebra theorem for the explicitly specified canonical free staggered 2^4 blocked hypercube: the alpha_mu generate rank-16 Cl4 with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
-        "claim_type": "bounded_theorem",
-        "ledger_note_hash": "d2b7e3a2d55eea824728e75668d2116c941d21a7d97e3f78b120d14786fa0938",
-        "note_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
-        "note_sha256": "d2b7e3a2d55eea824728e75668d2116c941d21a7d97e3f78b120d14786fa0938"
-      }
-    },
-    "transitive_descendants": 1405
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260803-7e78abd4",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite matrix theorem is exhaustively verified on the explicitly defined 2^4 surface. The packet does not derive the canonical free staggered carrier from framework premises, so its use as a reconstruction-core bridge remains open.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
-  "claim_scope": "Conditional finite-algebra theorem for the explicitly specified canonical free staggered 2^4 blocked hypercube: the alpha_mu generate rank-16 Cl4 with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-08-03T09:53:23.098451+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 11.957,
-  "load_bearing_step": "Exhaustively constructing the 16-by-16 alpha_mu from the stated eta_mu phases yields Clifford rank 16, commutant dimension 16, and a taste-singlet volume element distinct from epsilon.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "d2b7e3a2d55eea824728e75668d2116c941d21a7d97e3f78b120d14786fa0938",
   "note_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge: Add a retained derivation or accepted-premise edge supplying the canonical blocked free staggered carrier; if instead narrowing downstream framework-facing sentences, also add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the audit queue.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1512,19 +1386,182 @@
         "total_pass": 12
       },
       "verdict_rationale": "The load-bearing result is an exact finite-dimensional algebraic closure over matrices fully specified in the note, not a renamed physical identification or tuned numerical comparison. The runner genuinely constructs those matrices and computes all load-bearing properties rather than printing expected constants. The theorem remains correctly bounded to the free blocked algebraic surface and does not claim the separate interacting, gauged, single-taste physical bridge."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.602871+00:00",
+      "audit_date": "2026-08-03T09:53:23.098451+00:00",
+      "audit_invocation_history": [
+        "b10bb64fb2c74d6590337ff6abae119d",
+        "5ea90b79965948008c7656f116f47e78"
+      ],
+      "audit_invocation_id": "5ea90b79965948008c7656f116f47e78",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "judgment_fingerprint": {
+          "claim_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+          "digest": "85ef1a86825b3ee1ede7d9ccf623ecb9f6995d881b8c660c7bd180231ec1c86b",
+          "judgment": {
+            "audit_date": "2026-08-03T09:53:23.098451+00:00",
+            "audit_invocation_id": "5ea90b79965948008c7656f116f47e78",
+            "audit_status": "audited_conditional",
+            "auditor": "codex-audit-batch-B-20260803-7e78abd4",
+            "auditor_confidence": "high",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "The finite matrix theorem is exhaustively verified on the explicitly defined 2^4 surface. The packet does not derive the canonical free staggered carrier from framework premises, so its use as a reconstruction-core bridge remains open.",
+            "claim_scope": "Conditional finite-algebra theorem for the explicitly specified canonical free staggered 2^4 blocked hypercube: the alpha_mu generate rank-16 Cl4 with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+            "claim_type": "bounded_theorem",
+            "claim_type_provenance": "audited",
+            "cross_confirmation": null,
+            "decoration_parent_claim_id": null,
+            "independence": "fresh_context",
+            "load_bearing_step": "Exhaustively constructing the 16-by-16 alpha_mu from the stated eta_mu phases yields Clifford rank 16, commutant dimension 16, and a taste-singlet volume element distinct from epsilon.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "missing_dependency_edge: Add a retained derivation or accepted-premise edge supplying the canonical blocked free staggered carrier; if instead narrowing downstream framework-facing sentences, also add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the audit queue.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 10,
+              "B": 2,
+              "C": 0,
+              "D": 0,
+              "total_pass": 12
+            },
+            "verdict_rationale": "The runner genuinely constructs the 16-by-16 matrices and verifies all stated finite-algebra identities rather than printing expected constants. However, no authority derives the canonical free staggered carrier from the accepted framework premises; that framework-carrier identification is stronger than the finite matrix theorem but necessary for its reconstruction-core import. N1-N2 provide only the exact finite-algebra epsilon separation rather than a five-route closure record; N3-N5 expose the substantive negative rhetoric but no prior residual witness. N6 supplies no approved primitive closing the carrier edge, N7 lacks an independently evidenced steelman resolution, and N8 contains an applicable echo that the minimal surface does not select the staggered kinetic law."
+          },
+          "schema": "frozen_audit_judgment_v1"
+        },
+        "load_bearing_score": 11.957,
+        "packet_policy_fingerprint": {
+          "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+          "schema": "packet_policy_fingerprint_v1",
+          "sources": {
+            "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+            "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+            "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+            "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+            "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+            "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+            "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+          }
+        },
+        "policy_versions": {
+          "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db",
+        "runner_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "science_fingerprint": {
+          "dependencies": [],
+          "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+          "digest": "9d033fec88bbd51912fa358cda5508eaf97e19a5b6db66c3b0e76a4f8b5b378e",
+          "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+          "runners": [
+            {
+              "declared_input_fingerprint_sha256": null,
+              "declared_input_paths": null,
+              "declared_inputs": [],
+              "path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
+              "present": true,
+              "role": "primary",
+              "sha256": "7d96d9ecd7b1fec9fa862648e9569841d5d2952d96ace36c42837c77afc142db"
+            }
+          ],
+          "schema": "science_fingerprint_v2",
+          "target": {
+            "claim_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+            "claim_scope": "Conditional finite-algebra theorem for the explicitly specified canonical free staggered 2^4 blocked hypercube: the alpha_mu generate rank-16 Cl4 with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+            "claim_type": "bounded_theorem",
+            "ledger_note_hash": "d2b7e3a2d55eea824728e75668d2116c941d21a7d97e3f78b120d14786fa0938",
+            "note_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
+            "note_sha256": "d2b7e3a2d55eea824728e75668d2116c941d21a7d97e3f78b120d14786fa0938"
+          }
+        },
+        "transitive_descendants": 1405
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260803-7e78abd4",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix theorem is exhaustively verified on the explicitly defined 2^4 surface. The packet does not derive the canonical free staggered carrier from framework premises, so its use as a reconstruction-core bridge remains open.",
+      "claim_scope": "Conditional finite-algebra theorem for the explicitly specified canonical free staggered 2^4 blocked hypercube: the alpha_mu generate rank-16 Cl4 with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-08-03T09:53:23.098451+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "science_changed:framework_premise_epoch",
+      "load_bearing_step": "Exhaustively constructing the 16-by-16 alpha_mu from the stated eta_mu phases yields Clifford rank 16, commutant dimension 16, and a taste-singlet volume element distinct from epsilon.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: Add a retained derivation or accepted-premise edge supplying the canonical blocked free staggered carrier; if instead narrowing downstream framework-facing sentences, also add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the audit queue.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner genuinely constructs the 16-by-16 matrices and verifies all stated finite-algebra identities rather than printing expected constants. However, no authority derives the canonical free staggered carrier from the accepted framework premises; that framework-carrier identification is stronger than the finite matrix theorem but necessary for its reconstruction-core import. N1-N2 provide only the exact finite-algebra epsilon separation rather than a five-route closure record; N3-N5 expose the substantive negative rhetoric but no prior residual witness. N6 supplies no approved primitive closing the carrier edge, N7 lacks an independently evidenced steelman resolution, and N8 contains an applicable echo that the minimal surface does not select the staggered kinetic law."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 10,
-    "B": 2,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 12
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
   "title": "ABJ P-REC Spin/Taste Clifford-Core Bridge",
   "transitive_descendants": 1405,
-  "verdict_rationale": "The runner genuinely constructs the 16-by-16 matrices and verifies all stated finite-algebra identities rather than printing expected constants. However, no authority derives the canonical free staggered carrier from the accepted framework premises; that framework-carrier identification is stronger than the finite matrix theorem but necessary for its reconstruction-core import. N1-N2 provide only the exact finite-algebra epsilon separation rather than a five-route closure record; N3-N5 expose the substantive negative rhetoric but no prior residual witness. N6 supplies no approved primitive closing the carrier edge, N7 lacks an independently evidenced steelman resolution, and N8 contains an applicable echo that the minimal surface does not select the staggered kinetic law."
+  "verdict_rationale": null
 }

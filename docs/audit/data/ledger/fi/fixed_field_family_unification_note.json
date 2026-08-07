@@ -1,44 +1,24 @@
 {
-  "audit_date": "2026-05-25T11:59:07.926240+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "claude_complex_action_grown_companion_note": "Runner-defined grown row only: drift=0.2, restore=0.7, seeds 0 and 1, with the listed gamma sweep and no geometry-generic, continuum, or self-gravity extension.",
-      "gate_b_nonlabel_sign_grown_transfer_note": "Seed-0 finite-runner transfer test for label-grown control and position-based geometry-sector candidate on the retained-bounded grown row with drift=0.2, restore=0.7, h=0.5."
-    },
-    "dep_claim_type": {
-      "claude_complex_action_grown_companion_note": "bounded_theorem",
-      "gate_b_nonlabel_sign_grown_transfer_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "claude_complex_action_grown_companion_note": "retained_bounded",
-      "gate_b_nonlabel_sign_grown_transfer_note": "retained_bounded"
-    },
-    "deps": [
-      "claude_complex_action_grown_companion_note",
-      "gate_b_nonlabel_sign_grown_transfer_note"
-    ],
-    "load_bearing_score": 1.5,
-    "runner_hash": "e32f0f9951a6d7010bd1475ce49e757260499b7e0c4729fef8ce575128c5bf70",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T115723Z-a7653ed2-fixed_field_family_unifi-01",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Both cited authorities are retained-grade, and the included runner source recomputes both branches from the same grow(drift=0.2, restore=0.7, seed=0) geometry rather than hard-coding the reported values. The cached runner output matches the source note's frozen table and stays within the note's stated narrow scope.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "fixed_field_family_unification_note",
-  "claim_scope": "Seed-0 fixed-field comparison on the retained grown row drift=0.2, restore=0.7, h=0.5: signed-source zero/neutral/linear sign response and complex-action gamma=0, gamma=0.2, and gamma=0.5 metrics on the same connectivity family, with no geometry-generic or continuum claim.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-25T11:59:07.926240+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -47,23 +27,23 @@
     "claude_complex_action_grown_companion_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "retained",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
     "scripts/complex_action_grown_companion.py",
     "scripts/gate_b_grown_joint_package.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained",
-  "load_bearing_score": 4.5,
-  "load_bearing_step": "The same retained grown row supports both the signed-source companion and the exact gamma=0 complex-action companion under the same fixed-field connectivity slice.",
-  "load_bearing_step_class": "C",
-  "max_descendant_status": "retained_bounded",
-  "max_descendant_status_rank": 95,
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "d65c8e41cb00e0e6c7c06dce0874af3842728fa1effbcb8ea43f406a3264a778",
   "note_path": "docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md",
-  "notes_for_re_audit_if_any": "Second auditor should re-check that the intended signed-source companion is the same-connectivity label-grown branch actually computed here; no open dependency was found.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -129,6 +109,66 @@
         "total_pass": 6
       },
       "verdict_rationale": "The artifact is a direct same-row computation rather than a static synthesis: it recomputes the sign-law controls and the complex-action responses under the same grown-row parameters. The source note keeps the claim compact and explicitly excludes geometry-generic and continuum extensions, so the chain closes at that finite comparison surface. Residual boundary: the cited sign-transfer companion note is not itself audited retained in the ledger, but this row's load-bearing sign-law quantities are recomputed directly here rather than imported."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.696300+00:00",
+      "audit_date": "2026-05-25T11:59:07.926240+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "claude_complex_action_grown_companion_note": "Runner-defined grown row only: drift=0.2, restore=0.7, seeds 0 and 1, with the listed gamma sweep and no geometry-generic, continuum, or self-gravity extension.",
+          "gate_b_nonlabel_sign_grown_transfer_note": "Seed-0 finite-runner transfer test for label-grown control and position-based geometry-sector candidate on the retained-bounded grown row with drift=0.2, restore=0.7, h=0.5."
+        },
+        "dep_claim_type": {
+          "claude_complex_action_grown_companion_note": "bounded_theorem",
+          "gate_b_nonlabel_sign_grown_transfer_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "claude_complex_action_grown_companion_note": "retained_bounded",
+          "gate_b_nonlabel_sign_grown_transfer_note": "retained_bounded"
+        },
+        "deps": [
+          "claude_complex_action_grown_companion_note",
+          "gate_b_nonlabel_sign_grown_transfer_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "e32f0f9951a6d7010bd1475ce49e757260499b7e0c4729fef8ce575128c5bf70",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T115723Z-a7653ed2-fixed_field_family_unifi-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Both cited authorities are retained-grade, and the included runner source recomputes both branches from the same grow(drift=0.2, restore=0.7, seed=0) geometry rather than hard-coding the reported values. The cached runner output matches the source note's frozen table and stays within the note's stated narrow scope.",
+      "claim_scope": "Seed-0 fixed-field comparison on the retained grown row drift=0.2, restore=0.7, h=0.5: signed-source zero/neutral/linear sign response and complex-action gamma=0, gamma=0.2, and gamma=0.5 metrics on the same connectivity family, with no geometry-generic or continuum claim.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:59:07.926240+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The same retained grown row supports both the signed-source companion and the exact gamma=0 complex-action companion under the same fixed-field connectivity slice.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the intended signed-source companion is the same-connectivity label-grown branch actually computed here; no open dependency was found.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The primary runner instantiates the grown geometry and propagation rules, then computes the signed-source and complex-action summaries on the same row. The helper sources are included and do not import contested numeric conclusions or print constants as proof. The conclusion is only the compact same-row unification of two retained narrow companions, not a geometry-generic theorem."
     }
   ],
   "prose_corrections": [],
@@ -136,12 +176,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 2,
+    "C": 0,
     "D": 0,
-    "total_pass": 2
+    "total_pass": 0
   },
   "runner_path": "scripts/FIXED_FIELD_FAMILY_UNIFICATION.py",
   "title": "Fixed-Field Family Unification Note",
   "transitive_descendants": 1,
-  "verdict_rationale": "The primary runner instantiates the grown geometry and propagation rules, then computes the signed-source and complex-action summaries on the same row. The helper sources are included and do not import contested numeric conclusions or print constants as proof. The conclusion is only the compact same-row unification of two retained narrow companions, not a geometry-generic theorem."
+  "verdict_rationale": null
 }

@@ -4,11 +4,11 @@
       "blocking": [
         {
           "claim_id": "ac_orbit_occupancy_statistical_grain_derivation_obligation",
-          "effective_status": "audited_renaming"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "ac_reta_hclass_hunit_readout_derivation_obligation",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
@@ -16,7 +16,7 @@
         },
         {
           "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
@@ -25,26 +25,46 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "cpt_exact_note",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
           "effective_status": "unaudited"
         },
         {
@@ -56,8 +76,12 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
@@ -65,6 +89,10 @@
         },
         {
           "claim_id": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
           "effective_status": "unaudited"
         },
         {
@@ -80,24 +108,44 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "pl_topology_infrastructure_textbook_import_note_2026-05-17",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "s3_cap_uniqueness_note",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "s3_mass_matrix_no_go_note",
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "s3_taste_cube_decomposition_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "site_phase_cube_shift_intertwiner_note",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "three_generation_observable_count_corollary_note_2026-05-03",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
@@ -109,7 +157,7 @@
         },
         {
           "claim_id": "z2_hw1_mass_matrix_parametrization_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         }
       ],
       "certified": false,
@@ -119,18 +167,18 @@
       "roots": [
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
       ],
-      "uncertified_count": 27
+      "uncertified_count": 39
     },
     {
       "blocking": [
         {
           "claim_id": "ac_orbit_occupancy_statistical_grain_derivation_obligation",
-          "effective_status": "audited_renaming",
+          "effective_status": "unaudited",
           "reason": "root_not_retained_science"
         },
         {
           "claim_id": "ac_reta_hclass_hunit_readout_derivation_obligation",
-          "effective_status": "audited_conditional",
+          "effective_status": "unaudited",
           "reason": "root_not_retained_science"
         }
       ],
@@ -148,11 +196,11 @@
       "blocking": [
         {
           "claim_id": "ac_orbit_occupancy_statistical_grain_derivation_obligation",
-          "effective_status": "audited_renaming"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "ac_reta_hclass_hunit_readout_derivation_obligation",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
@@ -164,8 +212,12 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
@@ -223,7 +275,7 @@
       "roots": [
         "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11"
       ],
-      "uncertified_count": 17
+      "uncertified_count": 18
     },
     {
       "blocking": [
@@ -276,12 +328,20 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10",
@@ -292,7 +352,15 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "alpha_s_derived_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
           "effective_status": "unaudited"
         },
         {
@@ -357,11 +425,11 @@
         },
         {
           "claim_id": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
@@ -385,6 +453,10 @@
         },
         {
           "claim_id": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
           "effective_status": "unaudited"
         },
         {
@@ -417,7 +489,7 @@
         },
         {
           "claim_id": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
@@ -444,7 +516,15 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "charged_lepton_ue_identity_via_z3_trichotomy_note_2026-04-17",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
           "effective_status": "unaudited"
         },
         {
@@ -492,6 +572,10 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
           "effective_status": "unaudited"
         },
@@ -501,7 +585,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
@@ -517,11 +601,23 @@
         },
         {
           "claim_id": "cl3_taste_generation_theorem",
-          "effective_status": "retained_pending_chain"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "coarse_grained_exterior_law_helper_note_2026-04-14",
@@ -541,10 +637,14 @@
         },
         {
           "claim_id": "cpt_exact_note",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "cpt_squared_is_identity_theorem_note_2026-05-02",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
           "effective_status": "unaudited"
         },
         {
@@ -561,7 +661,7 @@
         },
         {
           "claim_id": "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "dm_leptogenesis_hrad_theorem_note_2026-04-16",
@@ -665,7 +765,7 @@
         },
         {
           "claim_id": "dm_neutrino_cascade_geometry_note_2026-04-14",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "dm_neutrino_ckm_texture_transfer_no_go_note_2026-04-15",
@@ -681,7 +781,7 @@
         },
         {
           "claim_id": "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
@@ -705,6 +805,10 @@
         },
         {
           "claim_id": "dm_neutrino_odd_circulant_current_stack_zero_law_note_2026-04-15",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15",
           "effective_status": "unaudited"
         },
         {
@@ -909,10 +1013,14 @@
         },
         {
           "claim_id": "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "ew_coupling_derivation_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "ew_current_fierz_channel_decomposition_note_2026-05-01",
           "effective_status": "unaudited"
         },
         {
@@ -928,16 +1036,20 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "finite_rank_gravity_residual_helper_note_2026-04-14",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "flavor_einselection_2sector_modulo_kreality_2026-06-02",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
@@ -981,7 +1093,7 @@
         },
         {
           "claim_id": "g_bare_rigidity_theorem_note",
-          "effective_status": "audited_renaming"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
@@ -1017,14 +1129,18 @@
         },
         {
           "claim_id": "gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "gauge_scalar_temporal_completion_theorem_note",
           "effective_status": "unaudited"
         },
         {
@@ -1036,6 +1152,14 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "gauge_vacuum_plaquette_constant_lift_obstruction_note",
           "effective_status": "unaudited"
         },
@@ -1044,20 +1168,28 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
           "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
@@ -1065,11 +1197,15 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
@@ -1080,7 +1216,19 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
           "effective_status": "unaudited"
         },
         {
@@ -1096,16 +1244,24 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "graph_first_selector_derivation_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "graph_first_su3_integration_note",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "gravity_clean_derivation_note",
           "effective_status": "unaudited"
         },
         {
           "claim_id": "gravity_full_self_consistency_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gravity_law_cleanup_note",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
@@ -1128,7 +1284,15 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "hierarchy_dimensional_compression_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
           "effective_status": "unaudited"
         },
         {
@@ -1149,11 +1313,11 @@
         },
         {
           "claim_id": "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "hierarchy_matsubara_decomposition_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
@@ -1161,6 +1325,14 @@
         },
         {
           "claim_id": "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "hierarchy_spatial_bc_and_u0_scaling_note",
           "effective_status": "unaudited"
         },
         {
@@ -1217,7 +1389,7 @@
         },
         {
           "claim_id": "hypercharge_identification_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "hypercharge_proof_walk_lattice_independence_bounded_note_2026-05-07",
@@ -1241,7 +1413,7 @@
         },
         {
           "claim_id": "koide_a1_loop_final_status_2026-04-22",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_a1_physical_bridge_attempt_2026-04-22",
@@ -1304,6 +1476,14 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "koide_bae_30_probe_campaign_note_2026-05-09",
           "effective_status": "meta"
         },
@@ -1344,6 +1524,10 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "koide_circulant_character_bridge_note_2026-04-18",
           "effective_status": "unaudited"
         },
@@ -1352,8 +1536,24 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_circulant_wilson_target_note_2026-04-18",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_cyclic_wilson_descendant_law_note_2026-04-18",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "koide_dweh_cyclic_compression_note_2026-04-18",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_explicit_calculations_note",
@@ -1384,16 +1584,20 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_mru_demotion_note_2026-04-20",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
@@ -1417,7 +1621,7 @@
         },
         {
           "claim_id": "koide_q_readout_factorization_theorem_2026-04-22",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
@@ -1441,7 +1645,7 @@
         },
         {
           "claim_id": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
-          "effective_status": "audited_renaming"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_z3_scalar_potential_support_note_2026-04-19",
@@ -1449,6 +1653,14 @@
         },
         {
           "claim_id": "l3a_v3_trace_surface_bounded_obstruction_note_2026-05-07_l3a",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
           "effective_status": "unaudited"
         },
         {
@@ -1461,6 +1673,10 @@
         },
         {
           "claim_id": "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "left_handed_charge_matching_note",
           "effective_status": "unaudited"
         },
         {
@@ -1484,11 +1700,23 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "lhcm_y_normalization_from_anomaly_and_convention_note_2026-05-02",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
           "effective_status": "unaudited"
         },
         {
@@ -1549,6 +1777,18 @@
         },
         {
           "claim_id": "n_f_v3_normalization_bounded_note_2026-05-07_w2norm",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "native_gauge_closure_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
           "effective_status": "unaudited"
         },
         {
@@ -1808,11 +2048,19 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "physical_lattice_foundational_interpretation_note_2026-05-08",
           "effective_status": "meta"
         },
         {
           "claim_id": "physical_lattice_necessity_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "pl_topology_infrastructure_textbook_import_note_2026-05-17",
           "effective_status": "unaudited"
         },
         {
@@ -1829,7 +2077,11 @@
         },
         {
           "claim_id": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "pmns_active_four_real_source_from_transport_note",
@@ -1881,7 +2133,7 @@
         },
         {
           "claim_id": "pmns_hw1_source_transfer_boundary_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "pmns_lower_level_end_to_end_closure_note",
@@ -1893,10 +2145,14 @@
         },
         {
           "claim_id": "pmns_oriented_cycle_channel_value_law_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "pmns_oriented_cycle_reduced_channel_nonselection_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "pmns_oriented_cycle_selection_structure_note",
           "effective_status": "unaudited"
         },
         {
@@ -1952,6 +2208,14 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
           "effective_status": "unaudited"
         },
@@ -1961,7 +2225,7 @@
         },
         {
           "claim_id": "pmns_uniform_scalar_deformation_boundary_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "poisson_exhaustive_uniqueness_note",
@@ -1969,7 +2233,7 @@
         },
         {
           "claim_id": "poisson_response_kernel_and_sign_normalization_finite_grid_bounded_note_2026-07-26",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "poisson_self_gravity_born_audit_note",
@@ -1977,6 +2241,10 @@
         },
         {
           "claim_id": "poisson_self_gravity_loop_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "poisson_self_gravity_loop_v3_note",
           "effective_status": "unaudited"
         },
         {
@@ -1997,7 +2265,7 @@
         },
         {
           "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
@@ -2009,7 +2277,7 @@
         },
         {
           "claim_id": "quark_cp_carrier_completion_note_2026-04-18",
-          "effective_status": "audited_numerical_match"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17",
@@ -2033,11 +2301,11 @@
         },
         {
           "claim_id": "quark_route2_eta_floor_hf_boundary_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
@@ -2049,11 +2317,11 @@
         },
         {
           "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "record_formation_append_consistency_sweep_2026-07-04",
@@ -2065,7 +2333,7 @@
         },
         {
           "claim_id": "record_function_finite_sector_algebra_2026-06-05",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
@@ -2077,6 +2345,10 @@
         },
         {
           "claim_id": "record_unbounded_finite_additivity_schema_2026-06-06",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
           "effective_status": "unaudited"
         },
         {
@@ -2097,11 +2369,11 @@
         },
         {
           "claim_id": "rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "s3_anomaly_spacetime_lift_note",
@@ -2109,7 +2381,11 @@
         },
         {
           "claim_id": "s3_boundary_link_theorem_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "s3_cap_uniqueness_note",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "s3_general_r_derivation_note",
@@ -2117,10 +2393,14 @@
         },
         {
           "claim_id": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "s3_mass_matrix_no_go_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "s3_taste_cube_decomposition_note",
           "effective_status": "unaudited"
         },
         {
@@ -2168,6 +2448,10 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
           "effective_status": "unaudited"
         },
@@ -2185,10 +2469,14 @@
         },
         {
           "claim_id": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "single_clock_uniqueness_scope_boundary_2026-06-06",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "site_phase_cube_shift_intertwiner_note",
           "effective_status": "unaudited"
         },
         {
@@ -2201,11 +2489,11 @@
         },
         {
           "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "source_driven_field_recovery_sweep_note",
-          "effective_status": "audited_numerical_match"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
@@ -2213,11 +2501,11 @@
         },
         {
           "claim_id": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "staggered_3d_self_gravity_sign_note_2026-04-11",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02",
@@ -2229,7 +2517,7 @@
         },
         {
           "claim_id": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
@@ -2281,7 +2569,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
@@ -2289,10 +2577,14 @@
         },
         {
           "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17",
           "effective_status": "unaudited"
         },
         {
@@ -2312,8 +2604,16 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "staggered_only_det_positivity_case_a_note_2026-05-17",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
-          "effective_status": "audited_renaming"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "staggered_taste_is_the_qubit_no_separate_koide_multiplicity_narrow_obstruction_note_2026-06-04",
@@ -2321,7 +2621,7 @@
         },
         {
           "claim_id": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
@@ -2389,6 +2689,10 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "su3_cube_full_rho_perron_2026-05-04",
           "effective_status": "unaudited"
         },
@@ -2406,7 +2710,7 @@
         },
         {
           "claim_id": "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
@@ -2433,12 +2737,16 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "taste_scalar_isotropy_theorem_note",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
           "effective_status": "unaudited"
         },
         {
           "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-          "effective_status": "retained_pending_chain"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "tensor_support_center_excess_law_note",
@@ -2474,7 +2782,7 @@
         },
         {
           "claim_id": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
-          "effective_status": "retained_pending_chain"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
@@ -2494,10 +2802,14 @@
         },
         {
           "claim_id": "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "unified_matter_content_ewsb_harness_theorem_note_2026-05-03",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
           "effective_status": "unaudited"
         },
         {
@@ -2521,8 +2833,20 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "wave_equation_gravity_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "wave_equation_self_field_note",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "wave_retardation_continuum_limit_note",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "wave_static_boundary_sensitivity_note",
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "wave_static_direct_probe_fine_note",
@@ -2530,6 +2854,10 @@
         },
         {
           "claim_id": "wave_static_fixed_beam_boundary_sensitivity_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "wave_static_matrixfree_fixed_beam_boundary_note",
           "effective_status": "unaudited"
         },
         {
@@ -2545,8 +2873,12 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
@@ -2614,7 +2946,7 @@
         },
         {
           "claim_id": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "yt_eft_bridge_theorem",
@@ -2797,8 +3129,12 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "yukawa_color_projection_theorem",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "z2_hw1_mass_matrix_parametrization_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         }
       ],
       "certified": false,
@@ -2808,7 +3144,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 643
+      "uncertified_count": 714
     }
   ],
   "schema": "lane_certification_v2"

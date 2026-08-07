@@ -1,39 +1,24 @@
 {
-  "audit_date": "2026-05-05T23:53:51.082225+00:00",
+  "audit_date": null,
   "audit_invocation_history": [],
   "audit_invocation_id": null,
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_effective_status": {
-      "universal_gr_lorentzian_global_atlas_closure_note": "audited_conditional",
-      "universal_qg_projective_schur_closure_note": "unaudited",
-      "universal_qg_uv_finite_partition_note": "unaudited"
-    },
-    "deps": [
-      "universal_gr_lorentzian_global_atlas_closure_note",
-      "universal_qg_projective_schur_closure_note",
-      "universal_qg_uv_finite_partition_note"
-    ],
-    "load_bearing_score": 15.822,
-    "runner_hash": null,
-    "transitive_descendants": 319
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-universal_qg_canonical_r-094",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The chain does not close to retained grade because all load-bearing upstream authorities are conditional or unaudited, and the packet does not independently prove that the geometric barycentric-dyadic refinement maps canonically induce the algebraic coarse/fine Schur splittings for the same fields/operators.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "universal_qg_canonical_refinement_net_note",
-  "claim_scope": "Audit of the claimed canonical barycentric-dyadic refinement/projective net for the discrete PL S^3 x R partition-density and stationary-section family, using only the three cited upstream notes.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-05T23:53:51.082225+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -43,26 +28,20 @@
     "universal_qg_projective_schur_closure_note"
   ],
   "direct_in_degree": 18,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 16.2,
-  "load_bearing_step": "Once the barycentric-dyadic refinement maps are chosen geometrically, they induce canonical coarse/fine splittings, so the exact Schur pushforward applies directly on the same canonical discrete net.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": null,
-  "no_go_discipline": null,
   "note_hash": "62105a536d84d138f5b9278ec479b59f1cc8bfe51f8d08aa7f152046c8d64cfc",
   "note_path": "docs/UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md",
-  "notes_for_re_audit_if_any": "dependency_not_retained: first retain or re-audit the UV-finite partition and projective Schur closure notes, and add an explicit bridge proof that barycentric-dyadic refinement maps induce the claimed canonical coarse/fine Schur splittings.",
-  "open_dependency_paths": [
-    "docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md",
-    "docs/UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md",
-    "docs/UNIVERSAL_QG_PROJECTIVE_SCHUR_CLOSURE_NOTE.md"
-  ],
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
   "previous_audits": [
     {
       "archived_at": "2026-04-30T18:17:51.107531+00:00",
@@ -256,6 +235,63 @@
         "total_pass": 0
       },
       "verdict_rationale": "The source note's main step is an algebraic/geometric compatibility assertion over cited inputs, not a first-principles computation. However, the cited Lorentzian global atlas authority is explicitly audited_conditional, while the UV-finite partition and projective Schur closure authorities are unaudited. In addition, the restricted packet asserts rather than proves the bridge from barycentric-dyadic refinement maps to canonical Schur coarse/fine splittings. Under the rubric, those open dependencies force audited_conditional rather than audited_clean."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.867930+00:00",
+      "audit_date": "2026-05-05T23:53:51.082225+00:00",
+      "audit_invocation_history": [],
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "universal_gr_lorentzian_global_atlas_closure_note": "audited_conditional",
+          "universal_qg_projective_schur_closure_note": "unaudited",
+          "universal_qg_uv_finite_partition_note": "unaudited"
+        },
+        "deps": [
+          "universal_gr_lorentzian_global_atlas_closure_note",
+          "universal_qg_projective_schur_closure_note",
+          "universal_qg_uv_finite_partition_note"
+        ],
+        "load_bearing_score": 15.822,
+        "runner_hash": null,
+        "transitive_descendants": 319
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-universal_qg_canonical_r-094",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain does not close to retained grade because all load-bearing upstream authorities are conditional or unaudited, and the packet does not independently prove that the geometric barycentric-dyadic refinement maps canonically induce the algebraic coarse/fine Schur splittings for the same fields/operators.",
+      "claim_scope": "Audit of the claimed canonical barycentric-dyadic refinement/projective net for the discrete PL S^3 x R partition-density and stationary-section family, using only the three cited upstream notes.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:53:51.082225+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "Once the barycentric-dyadic refinement maps are chosen geometrically, they induce canonical coarse/fine splittings, so the exact Schur pushforward applies directly on the same canonical discrete net.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "dependency_not_retained: first retain or re-audit the UV-finite partition and projective Schur closure notes, and add an explicit bridge proof that barycentric-dyadic refinement maps induce the claimed canonical coarse/fine Schur splittings.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md",
+        "docs/UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md",
+        "docs/UNIVERSAL_QG_PROJECTIVE_SCHUR_CLOSURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The source note's main step is an algebraic/geometric compatibility assertion over cited inputs, not a first-principles computation. However, the cited Lorentzian global atlas authority is explicitly audited_conditional, while the UV-finite partition and projective Schur closure authorities are unaudited. In addition, the restricted packet asserts rather than proves the bridge from barycentric-dyadic refinement maps to canonical Schur coarse/fine splittings. Under the rubric, those open dependencies force audited_conditional rather than audited_clean."
     }
   ],
   "prose_corrections": [],
@@ -286,5 +322,5 @@
   "runner_path": "scripts/frontier_universal_qg_canonical_refinement_net.py",
   "title": "Universal QG Canonical Geometric Refinement Net on `PL S^3 x R`",
   "transitive_descendants": 146,
-  "verdict_rationale": "The source note's main step is an algebraic/geometric compatibility assertion over cited inputs, not a first-principles computation. However, the cited Lorentzian global atlas authority is explicitly audited_conditional, while the UV-finite partition and projective Schur closure authorities are unaudited. In addition, the restricted packet asserts rather than proves the bridge from barycentric-dyadic refinement maps to canonical Schur coarse/fine splittings. Under the rubric, those open dependencies force audited_conditional rather than audited_clean."
+  "verdict_rationale": null
 }

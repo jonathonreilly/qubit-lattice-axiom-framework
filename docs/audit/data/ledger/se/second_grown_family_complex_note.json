@@ -1,39 +1,24 @@
 {
-  "audit_date": "2026-05-10T16:44:56.011413+00:00",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_claim_scope": {
-      "second_grown_family_sign_note": "The audited packet supports that the signed-source fixed-field diagnostics pass on the tested no-restore geometry-sector grown-family slice for the listed drifts and seeds."
-    },
-    "dep_claim_type": {
-      "second_grown_family_sign_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "second_grown_family_sign_note": "retained_bounded"
-    },
-    "deps": [
-      "second_grown_family_sign_note"
-    ],
-    "load_bearing_score": 6.524,
-    "runner_hash": "4ab7a30039285b0b7e45e9cbe2db48d946903547fb93e488f9a456149f52d90e",
-    "transitive_descendants": 22
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-audit-loop-019e12c5-4d99-7bf3-bd38-447aae1f1250",
-  "auditor_confidence": "medium",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The cited authority is retained_bounded for the second no-restore geometry-sector family, and the current runner separately computes the complex-action gate outcomes for the anchor row. The source note's safe read is explicitly limited to that anchor row and does not assert family-wide closure.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "second_grown_family_complex_note",
-  "claim_scope": "Narrow anchor-row positive: drift=0.20 on the no-restore Gate B grown geometry with geometry-sector stencil satisfies the runner's Born-proxy, weak-field F~M, and TOWARD@0.1 to AWAY@0.5 complex-action gates over the tested seeds.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-10T16:44:56.011413+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -41,24 +26,24 @@
     "second_grown_family_sign_note"
   ],
   "direct_in_degree": 5,
-  "effective_status": "retained",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
     "scripts/complex_action_grown_companion.py",
     "scripts/gate_b_grown_joint_package.py",
     "scripts/gate_b_no_restore_farfield.py"
   ],
-  "independence": "fresh_context",
-  "intrinsic_status": "retained",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 6.5,
-  "load_bearing_step": "The probe passed the retained safety gates on the anchor row and showed the expected narrow crossover pattern.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "086accbcaa09c2aa4653fff65eff1b1c933f218aed2f2f8cee10d0d469f02826",
   "note_path": "docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md",
-  "notes_for_re_audit_if_any": "Recheck gamma=0 baseline semantics if a later audit interprets the nonzero printed g0_delta as a required zero-baseline condition rather than the runner's gamma=0/Born-proxy control.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -213,6 +198,61 @@
         "total_pass": 0
       },
       "verdict_rationale": "The second audit is correct under the current packet: timeout is irrelevant because the completed cache exists and the dependency is now retained_bounded, but the load-bearing gates are diagnostic prints rather than executable PASS/FAIL assertions, so audited_clean is too strong."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.790649+00:00",
+      "audit_date": "2026-05-10T16:44:56.011413+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "second_grown_family_sign_note": "The audited packet supports that the signed-source fixed-field diagnostics pass on the tested no-restore geometry-sector grown-family slice for the listed drifts and seeds."
+        },
+        "dep_claim_type": {
+          "second_grown_family_sign_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "second_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "second_grown_family_sign_note"
+        ],
+        "load_bearing_score": 6.524,
+        "runner_hash": "4ab7a30039285b0b7e45e9cbe2db48d946903547fb93e488f9a456149f52d90e",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e12c5-4d99-7bf3-bd38-447aae1f1250",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authority is retained_bounded for the second no-restore geometry-sector family, and the current runner separately computes the complex-action gate outcomes for the anchor row. The source note's safe read is explicitly limited to that anchor row and does not assert family-wide closure.",
+      "claim_scope": "Narrow anchor-row positive: drift=0.20 on the no-restore Gate B grown geometry with geometry-sector stencil satisfies the runner's Born-proxy, weak-field F~M, and TOWARD@0.1 to AWAY@0.5 complex-action gates over the tested seeds.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-10T16:44:56.011413+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The probe passed the retained safety gates on the anchor row and showed the expected narrow crossover pattern.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck gamma=0 baseline semantics if a later audit interprets the nonzero printed g0_delta as a required zero-baseline condition rather than the runner's gamma=0/Born-proxy control.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The audited claim is operational and narrow: the runner builds the grown geometry slice, applies the geometry-sector stencil, computes propagation/Born-proxy/centroid/probability observables, and gates the anchor-row result without hard-coded target row outputs. The one-hop dependency is retained-grade and supplies only the second-family slice, while the runner supplies the complex-action companion evidence. The note stays within the tested anchor-row boundary and explicitly denies family-wide generalization."
     }
   ],
   "prose_corrections": [],
@@ -220,12 +260,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 2,
+    "C": 0,
     "D": 0,
-    "total_pass": 2
+    "total_pass": 0
   },
   "runner_path": "scripts/SECOND_GROWN_FAMILY_COMPLEX.py",
   "title": "Second Grown Family Complex Note",
   "transitive_descendants": 15,
-  "verdict_rationale": "The audited claim is operational and narrow: the runner builds the grown geometry slice, applies the geometry-sector stencil, computes propagation/Born-proxy/centroid/probability observables, and gates the anchor-row result without hard-coded target row outputs. The one-hop dependency is retained-grade and supplies only the second-family slice, while the runner supplies the complex-action companion evidence. The note stays within the tested anchor-row boundary and explicitly denies family-wide generalization."
+  "verdict_rationale": null
 }

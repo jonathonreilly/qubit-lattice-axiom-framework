@@ -1,47 +1,24 @@
 {
-  "audit_date": "2026-07-25T15:03:52.540528+00:00",
-  "audit_invocation_history": [
-    "1bded3510b02423fb6f6df9bc7573342"
-  ],
-  "audit_invocation_id": "1bded3510b02423fb6f6df9bc7573342",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "runner_hash": null,
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-audit-batch-A-20260725-1346dab6",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Iterating finite matrix tensor products gives A_\u039b \u2245 M_{2^{|\u039b|}}(C); matrix-unit traciality fixes the unique state as Tr/N, and direct index summation gives Tr(A \u2297 B) = Tr(A)Tr(B). This also covers an empty finite region via M_1(C) = C.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
-  "claim_scope": "For disjoint finite regions \u039b\u2081 and \u039b\u2082, with A_\u039b defined as the finite tensor product of the sites' M\u2082(C) algebras, the combined algebra has a unique normalized trace that factorizes on simple tensors into the two regional normalized traces.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-  "claim_type_last_reviewed": "2026-07-25T15:03:52.540528+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -49,20 +26,19 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "retained",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "retained",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The normalized matrix trace obeys \u03c4(A \u2297 B) = (Tr A/n\u2081)(Tr B/n\u2082) because Tr(A \u2297 B) = Tr(A)Tr(B).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "0415e8fa016999d25b46aad8d3ba933e75e9275787c2d395a228602c28cfde56",
   "note_path": "docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md",
-  "notes_for_re_audit_if_any": "No runner was supplied; the matrix-algebra isomorphism, trace uniqueness, normalization, tensor-trace identity, and empty-region edge case were checked independently by exact finite-dimensional algebra.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -272,6 +248,67 @@
         "total_pass": 1
       },
       "verdict_rationale": "The load-bearing step is an elementary normalized-matrix-trace identity, with no numerical computation or external comparison. The note correctly specializes standard finite-dimensional matrix-algebra mathematics to the single accepted minimal-axioms parent, so it closes but contributes decoration-grade localization rather than an independent framework theorem."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.861321+00:00",
+      "audit_date": "2026-07-25T15:03:52.540528+00:00",
+      "audit_invocation_history": [
+        "1bded3510b02423fb6f6df9bc7573342"
+      ],
+      "audit_invocation_id": "1bded3510b02423fb6f6df9bc7573342",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-batch-A-20260725-1346dab6",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Iterating finite matrix tensor products gives A_\u039b \u2245 M_{2^{|\u039b|}}(C); matrix-unit traciality fixes the unique state as Tr/N, and direct index summation gives Tr(A \u2297 B) = Tr(A)Tr(B). This also covers an empty finite region via M_1(C) = C.",
+      "claim_scope": "For disjoint finite regions \u039b\u2081 and \u039b\u2082, with A_\u039b defined as the finite tensor product of the sites' M\u2082(C) algebras, the combined algebra has a unique normalized trace that factorizes on simple tensors into the two regional normalized traces.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-25T15:03:52.540528+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The normalized matrix trace obeys \u03c4(A \u2297 B) = (Tr A/n\u2081)(Tr B/n\u2082) because Tr(A \u2297 B) = Tr(A)Tr(B).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "No runner was supplied; the matrix-algebra isomorphism, trace uniqueness, normalization, tensor-trace identity, and empty-region edge case were checked independently by exact finite-dimensional algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The result is an exact finite-dimensional matrix-algebra theorem: the unique tracial state on M_N(C) is Tr/N, and the tensor-product trace identity proves the stated factorization without an additional physical bridge. The accepted Qubit premise supplies the one-site M\u2082(C) algebra, while the audited scope explicitly fixes the finite-region tensor-product construction. The equality between differently ordered regional tensor products is understood through the canonical tensor-factor isomorphism and does not affect the trace statement."
     }
   ],
   "prose_corrections": [],
@@ -286,5 +323,5 @@
   "runner_path": null,
   "title": "Tomita Tensor-Trace Factorization on Finite-Dim Matrix Algebras (Narrow)",
   "transitive_descendants": 0,
-  "verdict_rationale": "The result is an exact finite-dimensional matrix-algebra theorem: the unique tracial state on M_N(C) is Tr/N, and the tensor-product trace identity proves the stated factorization without an additional physical bridge. The accepted Qubit premise supplies the one-site M\u2082(C) algebra, while the audited scope explicitly fixes the finite-region tensor-product construction. The equality between differently ordered regional tensor products is understood through the canonical tensor-factor isomorphism and does not affect the trace statement."
+  "verdict_rationale": null
 }

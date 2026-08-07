@@ -1,64 +1,44 @@
 {
-  "audit_date": "2026-07-12T18:58:38.545638+00:00",
-  "audit_invocation_history": [
-    "1655bd7a6e2f860b50763bdf5b8b5779"
-  ],
-  "audit_invocation_id": "1655bd7a6e2f860b50763bdf5b8b5779",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|)."
-    },
-    "dep_claim_type": {
-      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded"
-    },
-    "deps": [
-      "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
-    ],
-    "load_bearing_score": 13.609,
-    "runner_hash": "c2c0e91c92af5e7ddea9b09cbe665524786b359b88d4c7a87fe8fb13b4698e8a",
-    "transitive_descendants": 68
-  },
-  "audit_status": "audited_decoration",
-  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00221-newton_law_derived_note",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The calculus is correct over the retained-bounded parent input, but the row adds only standard differentiation and source scaling to that single upstream claim. Under the decoration policy it is not an independent theorem closure.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "newton_law_derived_note",
-  "claim_scope": "Algebraic differentiation of the continuum-leading radial kernel supplied by the retained-bounded Z^3 lattice Green-kernel parent, with no physical force-law conclusion.",
-  "claim_type": "decoration",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem.",
-  "claim_type_last_reviewed": "2026-07-12T18:58:38.545638+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+  "decoration_parent_claim_id": null,
   "deps": [
     "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
   ],
   "direct_in_degree": 15,
-  "effective_status": "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-  "effective_status_reason": "decoration_parent_retained",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 13.629,
-  "load_bearing_step": "Differentiating phi(r) = M/(4 pi r) gives d phi/dr = -M/(4 pi r^2), hence |grad phi| = M/(4 pi r^2).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "0c6fe54a3dcbc18d3cc7b3cc001868257b744fd93554ecf356b12b1cd03bdada",
   "note_path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -426,19 +406,77 @@
         "total_pass": 12
       },
       "verdict_rationale": "The differentiation is genuine class-A calculus and the narrowed inverse-square-gradient conclusion follows once the stated kernel and source-linearity are granted. However, the restricted packet supplies no retained-grade or explicitly accepted authority for either premise; under the rubric, importing such an unclosed kernel and source-linearity premise requires audited_conditional even though the physical force-law overclaim has been removed."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.762702+00:00",
+      "audit_date": "2026-07-12T18:58:38.545638+00:00",
+      "audit_invocation_history": [
+        "1655bd7a6e2f860b50763bdf5b8b5779"
+      ],
+      "audit_invocation_id": "1655bd7a6e2f860b50763bdf5b8b5779",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|)."
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+        ],
+        "load_bearing_score": 13.609,
+        "runner_hash": "c2c0e91c92af5e7ddea9b09cbe665524786b359b88d4c7a87fe8fb13b4698e8a",
+        "transitive_descendants": 68
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00221-newton_law_derived_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The calculus is correct over the retained-bounded parent input, but the row adds only standard differentiation and source scaling to that single upstream claim. Under the decoration policy it is not an independent theorem closure.",
+      "claim_scope": "Algebraic differentiation of the continuum-leading radial kernel supplied by the retained-bounded Z^3 lattice Green-kernel parent, with no physical force-law conclusion.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-12T18:58:38.545638+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "Differentiating phi(r) = M/(4 pi r) gives d phi/dr = -M/(4 pi r^2), hence |grad phi| = M/(4 pi r^2).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner genuinely verifies the symbolic derivative, scope restrictions, and live retained-grade dependency edge. The result contains no first-principles computation or external comparison and reduces to one retained-bounded Green-kernel parent plus elementary calculus. It therefore qualifies as an algebraic decoration rather than a separate bounded theorem or Newton force-law derivation."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 12,
-    "B": 4,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 16
+    "total_pass": 0
   },
   "runner_path": "scripts/newton_law_potential_kernel_scope_check.py",
   "title": "Newton Potential-Kernel Algebra Packet on Z^3",
   "transitive_descendants": 69,
-  "verdict_rationale": "The runner genuinely verifies the symbolic derivative, scope restrictions, and live retained-grade dependency edge. The result contains no first-principles computation or external comparison and reduces to one retained-bounded Green-kernel parent plus elementary calculus. It therefore qualifies as an algebraic decoration rather than a separate bounded theorem or Newton force-law derivation."
+  "verdict_rationale": null
 }

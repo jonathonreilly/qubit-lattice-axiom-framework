@@ -1,168 +1,42 @@
 {
-  "audit_date": "2026-08-03T12:14:32.700680+00:00",
-  "audit_invocation_history": [
-    "8d9602b08a9c4f5c82a1cfa7ea057eef",
-    "5bfe92e52a994df09ffe8b4bd9b28eca"
-  ],
-  "audit_invocation_id": "5bfe92e52a994df09ffe8b4bd9b28eca",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 1,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "judgment_fingerprint": {
-      "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-      "digest": "092f32e0d830632b28a64f0fa79769a0e3d72c5440b20ddea3ba0463e847a812",
-      "judgment": {
-        "audit_date": "2026-08-03T12:14:32.700680+00:00",
-        "audit_invocation_id": "5bfe92e52a994df09ffe8b4bd9b28eca",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-audit-batch-B-20260803-4cb42db2",
-        "auditor_confidence": "high",
-        "auditor_family": "codex-gpt-5.6",
-        "auditor_model": "gpt-5.6-sol",
-        "auditor_reasoning_effort": "xhigh",
-        "chain_closes": false,
-        "chain_closure_explanation": "Direct basis action verifies the positive finite-algebra identities. The full source claim does not pass the required negative-claim gate for its assertion that a single flip is not a within-triplet operator.",
-        "claim_scope": "the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow",
-        "claim_type": "bounded_theorem",
-        "claim_type_provenance": "audited",
-        "cross_confirmation": null,
-        "decoration_parent_claim_id": null,
-        "independence": "fresh_context",
-        "load_bearing_step": "The symmetric sum of double bit flips projects exactly to J-I.",
-        "load_bearing_step_class": "A",
-        "negative_assertion_classes": [
-          "derived_no_go_boundary"
-        ],
-        "notes_for_re_audit_if_any": "scope_too_broad: add current-cycle N1-N8 adversarial evidence for the single-flip boundary and a dated boundary-hygiene line to this source note so its hash re-enters audit.",
-        "open_dependency_paths": [],
-        "runner_check_breakdown": {
-          "A": 4,
-          "B": 0,
-          "C": 0,
-          "D": 0,
-          "total_pass": 4
-        },
-        "verdict_rationale": "Issue: Independent basis action confirms all four algebraic checks, but the artifact also asserts a derived negative boundary while N1 supplies no five-route attack set, N5 supplies no five-resolution execution lines, and N7 supplies no evidenced steelman. Why this blocks: N2 has only the single claimed boundary, N3's axiom wording is non-load-bearing, N4 has no prior witness, N6's indexed candidates do not supply the missing adversarial evidence, and N8 cannot replace current-cycle testing. Repair target: instrument a restricted current-cycle certificate covering five distinct N1 mechanisms, the required N5 resolutions, a resolved N7 steelman, and applicable N8 echoes. Claim boundary until fixed: only the positive double-shift projection, spectrum, and Koide identity are supported."
-      },
-      "schema": "frozen_audit_judgment_v1"
-    },
-    "load_bearing_score": 10.543,
-    "packet_policy_fingerprint": {
-      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
-      "schema": "packet_policy_fingerprint_v1",
-      "sources": {
-        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
-        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
-        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
-        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
-        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
-      }
-    },
-    "policy_versions": {
-      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "0e454bbf2f2344cf196ae2000c5d0c45521e938b744337bca00e6a0653ed79e5",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "0e454bbf2f2344cf196ae2000c5d0c45521e938b744337bca00e6a0653ed79e5",
-    "runner_path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "science_fingerprint": {
-      "dependencies": [],
-      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "c707b0a5721c365e8a38089a81b9aae886d0ca907ed4e0ba4768669fd5e18b83",
-      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
-      "runners": [
-        {
-          "declared_input_fingerprint_sha256": null,
-          "declared_input_paths": null,
-          "declared_inputs": [],
-          "path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py",
-          "present": true,
-          "role": "primary",
-          "sha256": "0e454bbf2f2344cf196ae2000c5d0c45521e938b744337bca00e6a0653ed79e5"
-        }
-      ],
-      "schema": "science_fingerprint_v2",
-      "target": {
-        "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-        "claim_scope": "the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow",
-        "claim_type": "bounded_theorem",
-        "ledger_note_hash": "57cb8d5128f39767d767f80245b8a5afe6069e19607fb5933ade6e3d0b848ec8",
-        "note_path": "docs/FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md",
-        "note_sha256": "57cb8d5128f39767d767f80245b8a5afe6069e19607fb5933ade6e3d0b848ec8"
-      }
-    },
-    "transitive_descendants": 745
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260803-4cb42db2",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "Direct basis action verifies the positive finite-algebra identities. The full source claim does not pass the required negative-claim gate for its assertion that a single flip is not a within-triplet operator.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-  "claim_scope": "the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-08-03T12:14:32.700680+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 10.543,
-  "load_bearing_step": "The symmetric sum of double bit flips projects exactly to J-I.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "57cb8d5128f39767d767f80245b8a5afe6069e19607fb5933ade6e3d0b848ec8",
   "note_path": "docs/FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: add current-cycle N1-N8 adversarial evidence for the single-flip boundary and a dated boundary-hygiene line to this source note so its hash re-enters audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1548,19 +1422,182 @@
         "total_pass": 0
       },
       "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The runner constructs the finite matrices and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260721-84adf558\", \"judge\": 1, \"rationale\": \"The runner constructs the finite matrices and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260721-89a83cc5\", \"judge\": 2, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260721-6c745c2a\", \"judge\": 3, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260721-b62c69fd\", \"judge\": 4, \"rationale\": \"The runner constructs the finite matrices and checks identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity rather than a route-general negative assertion. However, the binding rubric requires every audited_clean verdict to include a structured N1-N8 PASS object, and the restricted packet lacks the route-specific execution evidence needed to construct one validly; the applyable disposition is therefore conditional despite the closed algebraic calculation.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260721-7a592e3b\", \"judge\": 5, \"rationale\": \"The runner constructs the finite operators and verifies identities already stated in the note, so the load-bearing calculation is class A. Zero compression on this fixed carrier is an exact bounded identity, not a route-general negative assertion. The mathematics closes, but the binding rubric requires every audited_clean verdict to include a structured N1-N8 record, which the restricted packet cannot support; audited_conditional is therefore the conservative applyable verdict.\", \"tuple\": [\"hybrid\", \"audited_conditional\", \"bounded_theorem\", \"Verified finite algebra on the defined (Z_2)^3 corner representation: every single-flip compression vanishes, the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow; physical coefficient selection and charged-lepton interpretation are excluded.\", \"A\", []]}]"
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.699768+00:00",
+      "audit_date": "2026-08-03T12:14:32.700680+00:00",
+      "audit_invocation_history": [
+        "8d9602b08a9c4f5c82a1cfa7ea057eef",
+        "5bfe92e52a994df09ffe8b4bd9b28eca"
+      ],
+      "audit_invocation_id": "5bfe92e52a994df09ffe8b4bd9b28eca",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "judgment_fingerprint": {
+          "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
+          "digest": "092f32e0d830632b28a64f0fa79769a0e3d72c5440b20ddea3ba0463e847a812",
+          "judgment": {
+            "audit_date": "2026-08-03T12:14:32.700680+00:00",
+            "audit_invocation_id": "5bfe92e52a994df09ffe8b4bd9b28eca",
+            "audit_status": "audited_conditional",
+            "auditor": "codex-audit-batch-B-20260803-4cb42db2",
+            "auditor_confidence": "high",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "Direct basis action verifies the positive finite-algebra identities. The full source claim does not pass the required negative-claim gate for its assertion that a single flip is not a within-triplet operator.",
+            "claim_scope": "the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow",
+            "claim_type": "bounded_theorem",
+            "claim_type_provenance": "audited",
+            "cross_confirmation": null,
+            "decoration_parent_claim_id": null,
+            "independence": "fresh_context",
+            "load_bearing_step": "The symmetric sum of double bit flips projects exactly to J-I.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "scope_too_broad: add current-cycle N1-N8 adversarial evidence for the single-flip boundary and a dated boundary-hygiene line to this source note so its hash re-enters audit.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 4,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 4
+            },
+            "verdict_rationale": "Issue: Independent basis action confirms all four algebraic checks, but the artifact also asserts a derived negative boundary while N1 supplies no five-route attack set, N5 supplies no five-resolution execution lines, and N7 supplies no evidenced steelman. Why this blocks: N2 has only the single claimed boundary, N3's axiom wording is non-load-bearing, N4 has no prior witness, N6's indexed candidates do not supply the missing adversarial evidence, and N8 cannot replace current-cycle testing. Repair target: instrument a restricted current-cycle certificate covering five distinct N1 mechanisms, the required N5 resolutions, a resolved N7 steelman, and applicable N8 echoes. Claim boundary until fixed: only the positive double-shift projection, spectrum, and Koide identity are supported."
+          },
+          "schema": "frozen_audit_judgment_v1"
+        },
+        "load_bearing_score": 10.543,
+        "packet_policy_fingerprint": {
+          "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+          "schema": "packet_policy_fingerprint_v1",
+          "sources": {
+            "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+            "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+            "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+            "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+            "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+            "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+            "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+          }
+        },
+        "policy_versions": {
+          "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "0e454bbf2f2344cf196ae2000c5d0c45521e938b744337bca00e6a0653ed79e5",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "0e454bbf2f2344cf196ae2000c5d0c45521e938b744337bca00e6a0653ed79e5",
+        "runner_path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "science_fingerprint": {
+          "dependencies": [],
+          "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+          "digest": "c707b0a5721c365e8a38089a81b9aae886d0ca907ed4e0ba4768669fd5e18b83",
+          "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+          "runners": [
+            {
+              "declared_input_fingerprint_sha256": null,
+              "declared_input_paths": null,
+              "declared_inputs": [],
+              "path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py",
+              "present": true,
+              "role": "primary",
+              "sha256": "0e454bbf2f2344cf196ae2000c5d0c45521e938b744337bca00e6a0653ed79e5"
+            }
+          ],
+          "schema": "science_fingerprint_v2",
+          "target": {
+            "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
+            "claim_scope": "the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow",
+            "claim_type": "bounded_theorem",
+            "ledger_note_hash": "57cb8d5128f39767d767f80245b8a5afe6069e19607fb5933ade6e3d0b848ec8",
+            "note_path": "docs/FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md",
+            "note_sha256": "57cb8d5128f39767d767f80245b8a5afe6069e19607fb5933ade6e3d0b848ec8"
+          }
+        },
+        "transitive_descendants": 745
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260803-4cb42db2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Direct basis action verifies the positive finite-algebra identities. The full source claim does not pass the required negative-claim gate for its assertion that a single flip is not a within-triplet operator.",
+      "claim_scope": "the symmetric double-flip compression equals J-I, and the stated spectrum and Koide identity follow",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-08-03T12:14:32.700680+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "science_changed:framework_premise_epoch",
+      "load_bearing_step": "The symmetric sum of double bit flips projects exactly to J-I.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: add current-cycle N1-N8 adversarial evidence for the single-flip boundary and a dated boundary-hygiene line to this source note so its hash re-enters audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: Independent basis action confirms all four algebraic checks, but the artifact also asserts a derived negative boundary while N1 supplies no five-route attack set, N5 supplies no five-resolution execution lines, and N7 supplies no evidenced steelman. Why this blocks: N2 has only the single claimed boundary, N3's axiom wording is non-load-bearing, N4 has no prior witness, N6's indexed candidates do not supply the missing adversarial evidence, and N8 cannot replace current-cycle testing. Repair target: instrument a restricted current-cycle certificate covering five distinct N1 mechanisms, the required N5 resolutions, a resolved N7 steelman, and applicable N8 echoes. Claim boundary until fixed: only the positive double-shift projection, spectrum, and Koide identity are supported."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 4,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py",
   "title": "Flavor Native Double-Shift Corner Coupling (Bounded Support)",
   "transitive_descendants": 745,
-  "verdict_rationale": "Issue: Independent basis action confirms all four algebraic checks, but the artifact also asserts a derived negative boundary while N1 supplies no five-route attack set, N5 supplies no five-resolution execution lines, and N7 supplies no evidenced steelman. Why this blocks: N2 has only the single claimed boundary, N3's axiom wording is non-load-bearing, N4 has no prior witness, N6's indexed candidates do not supply the missing adversarial evidence, and N8 cannot replace current-cycle testing. Repair target: instrument a restricted current-cycle certificate covering five distinct N1 mechanisms, the required N5 resolutions, a resolved N7 steelman, and applicable N8 echoes. Claim boundary until fixed: only the positive double-shift projection, spectrum, and Koide identity are supported."
+  "verdict_rationale": null
 }

@@ -1,56 +1,49 @@
 {
-  "audit_date": "2026-05-05T11:26:50.315429+00:00",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_effective_status": {
-      "linear_response_true_kubo_note": "retained_bounded"
-    },
-    "deps": [
-      "linear_response_true_kubo_note"
-    ],
-    "load_bearing_score": 8.66,
-    "runner_hash": "01656aead00578dab623e53b374dd756fdffbc3d761412688a7200d15498c973",
-    "transitive_descendants": 285
-  },
-  "audit_status": "audited_decoration",
-  "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-kubo_range_of_validity_n-028",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The implication from linear response to F~M = 1 closes as standard log-log slope algebra once the upstream Kubo coefficient and the runner's selected linearity subset are accepted. It does not establish an independent positive theorem because the F~M result is forced by the same measured linearity condition used to define the subset.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "kubo_range_of_validity_note",
-  "claim_scope": "Algebraic corollary, with the provided runner's finite-family accounting, that families selected by the measured Kubo-linearity ratio have F~M near 1.",
+  "claim_scope": null,
   "claim_type": "decoration",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-05T11:26:50.315429+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": "linear_response_true_kubo_note",
+  "decoration_parent_claim_id": null,
   "deps": [
     "linear_response_true_kubo_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "decoration_under_linear_response_true_kubo_note",
-  "effective_status_reason": "decoration_parent_retained",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/global_coherence_off_scaffold.py",
     "scripts/independent_generators_heldout.py",
     "scripts/linear_response_true_kubo.py",
     "scripts/universality_classifier.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "decoration_under_linear_response_true_kubo_note",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 6.024,
-  "load_bearing_step": "First-order linear response gives delta_z(s) approximately equal to kubo_true * s, so |delta_z(s)| is proportional to s^1 and the log-log F~M slope is exactly 1.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "0d8a04d9f841e6ba34b6d0cf439e2a76afe0bff389f58584e69a1ac59278afc0",
   "note_path": "docs/KUBO_RANGE_OF_VALIDITY_NOTE.md",
-  "notes_for_re_audit_if_any": "Re-check the imported runner dependencies if a future audit wants to ratify the numerical 15/41 accounting beyond the provided cache.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -117,19 +110,68 @@
         "total_pass": 0
       },
       "verdict_rationale": "Issue: the result depends on a selected 15/41-family linearity subset and imported battery measurements, with the listed runner/log outside the audit row and a bounded conditional Kubo dependency. Why this blocks: the note gives useful non-tautological evidence for the linear-response subset, but a selected finite subset and unregistered computation cannot be ratified as a retained theorem about the full range of validity. Repair target: register scripts/kubo_range_of_validity.py as the primary runner, recompute the family table with hard thresholds, and keep the claim scoped to the exact subset unless a theorem derives the selection boundary. Claim boundary until fixed: safe as bounded numerical evidence that the first-order Kubo formula predicts F~M near 1 on the listed linearity-regime subset; not safe as audit-clean retained validity range."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.750898+00:00",
+      "audit_date": "2026-05-05T11:26:50.315429+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "linear_response_true_kubo_note": "retained_bounded"
+        },
+        "deps": [
+          "linear_response_true_kubo_note"
+        ],
+        "load_bearing_score": 8.66,
+        "runner_hash": "01656aead00578dab623e53b374dd756fdffbc3d761412688a7200d15498c973",
+        "transitive_descendants": 285
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-kubo_range_of_validity_n-028",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The implication from linear response to F~M = 1 closes as standard log-log slope algebra once the upstream Kubo coefficient and the runner's selected linearity subset are accepted. It does not establish an independent positive theorem because the F~M result is forced by the same measured linearity condition used to define the subset.",
+      "claim_scope": "Algebraic corollary, with the provided runner's finite-family accounting, that families selected by the measured Kubo-linearity ratio have F~M near 1.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-05T11:26:50.315429+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "linear_response_true_kubo_note",
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "First-order linear response gives delta_z(s) approximately equal to kubo_true * s, so |delta_z(s)| is proportional to s^1 and the log-log F~M slope is exactly 1.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the imported runner dependencies if a future audit wants to ratify the numerical 15/41 accounting beyond the provided cache.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the decisive step is the algebraic identity that a response proportional to s has log-log slope 1. Why this blocks: the runner's headline 15/41 subset is selected by measured linearity ratios across the same strengths used to fit F~M, so the near-1 F~M result is a corollary of the subset definition rather than an independent derivation of a new battery condition. Repair target: present this as a bounded range-of-validity diagnostic under the true-Kubo parent, or add an independent criterion that does not mathematically enforce the F~M slope. Claim boundary until fixed: the runner supports that its selected linearity-regime families have the reported F~M statistics, conditional on the upstream Kubo coefficient."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 1,
-    "B": 1,
-    "C": 1,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 3
+    "total_pass": 0
   },
   "runner_path": "scripts/kubo_range_of_validity.py",
   "title": "First-Order Kubo Range of Validity \u2014 F~M \u2248 1 Derived on Linearity-Regime Subset",
   "transitive_descendants": 45,
-  "verdict_rationale": "Issue: the decisive step is the algebraic identity that a response proportional to s has log-log slope 1. Why this blocks: the runner's headline 15/41 subset is selected by measured linearity ratios across the same strengths used to fit F~M, so the near-1 F~M result is a corollary of the subset definition rather than an independent derivation of a new battery condition. Repair target: present this as a bounded range-of-validity diagnostic under the true-Kubo parent, or add an independent criterion that does not mathematically enforce the F~M slope. Claim boundary until fixed: the runner supports that its selected linearity-regime families have the reported F~M statistics, conditional on the upstream Kubo coefficient."
+  "verdict_rationale": null
 }

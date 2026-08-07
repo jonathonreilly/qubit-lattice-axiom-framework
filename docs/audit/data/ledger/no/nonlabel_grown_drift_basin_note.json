@@ -1,40 +1,24 @@
 {
-  "audit_date": "2026-06-09T13:51:10.097591+00:00",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "nonlabel_grown_basin_note": "Finite deterministic audit of the grown geometry-sector signed-source transfer for seed 0, drift 0.2, and restore values 0.60, 0.70, and 0.80 only."
-    },
-    "dep_claim_type": {
-      "nonlabel_grown_basin_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "nonlabel_grown_basin_note": "retained_bounded"
-    },
-    "deps": [
-      "nonlabel_grown_basin_note"
-    ],
-    "load_bearing_score": 4.587,
-    "runner_hash": "29c33217289a76973974194887ae7bda389612391585891048fb3a60b9c8398b",
-    "transitive_descendants": 16
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260609-134905-48f224cbbe-nonlabel_grown_drift_basin_n",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Within the stated finite grid, the included runner source and helper instantiate the grown geometry, sector adjacency, signed source field, propagation, and centroid readout rather than merely printing constants. Independent arithmetic on the displayed rows verifies the zero/neutral gates, sign orientation, double-charge sign, and log2 charge exponents within the stated tolerance.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "nonlabel_grown_drift_basin_note",
-  "claim_scope": "Finite sweep over drift = {0.15, 0.20, 0.25} and seed = {0, 1, 2} at fixed restore = 0.70 for the grown-row geometry-sector non-label signed-source transfer.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-06-09T13:51:10.097591+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -42,21 +26,21 @@
     "nonlabel_grown_basin_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/gate_b_grown_joint_package.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The geometry-sector / non-label architecture survives the nearest drift grid at fixed restore = 0.7 with zero and neutral gates exactly zero, correct single-source sign orientation, negative double-charge response, and charge exponents within tolerance for all nine drift/seed rows.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "859390b6be715b6016b7403ebea6a13129eac40e25771f27a4e95ed9aeb4f212",
   "note_path": "docs/NONLABEL_GROWN_DRIFT_BASIN_NOTE.md",
-  "notes_for_re_audit_if_any": "Second auditor should re-check the separate SHA-pinned recompute artifact source if it is available, although the primary runner's --recompute path and included helper source already close the finite-grid computation.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-gpt-5",
   "previous_audits": [
@@ -215,6 +199,62 @@
         "total_pass": 9
       },
       "verdict_rationale": "The cited upstream basin note is retained_bounded, so it does not itself force a dependency downgrade. The current claim's new drift-basin rows, however, are established in the completed packet by parsing and gate-checking a frozen log, not by a completed first-principles recompute. The runner source contains a recompute path that appears to instantiate the grown geometry, source field, propagation, and detector centroid readout, but the available stdout is explicitly only the frozen-log verifier. That makes the finite gate classification plausible but not closed as an audited_clean derivation from the restricted packet."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.763549+00:00",
+      "audit_date": "2026-06-09T13:51:10.097591+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "nonlabel_grown_basin_note": "Finite deterministic audit of the grown geometry-sector signed-source transfer for seed 0, drift 0.2, and restore values 0.60, 0.70, and 0.80 only."
+        },
+        "dep_claim_type": {
+          "nonlabel_grown_basin_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "nonlabel_grown_basin_note": "retained_bounded"
+        },
+        "deps": [
+          "nonlabel_grown_basin_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "29c33217289a76973974194887ae7bda389612391585891048fb3a60b9c8398b",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-134905-48f224cbbe-nonlabel_grown_drift_basin_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated finite grid, the included runner source and helper instantiate the grown geometry, sector adjacency, signed source field, propagation, and centroid readout rather than merely printing constants. Independent arithmetic on the displayed rows verifies the zero/neutral gates, sign orientation, double-charge sign, and log2 charge exponents within the stated tolerance.",
+      "claim_scope": "Finite sweep over drift = {0.15, 0.20, 0.25} and seed = {0, 1, 2} at fixed restore = 0.70 for the grown-row geometry-sector non-label signed-source transfer.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T13:51:10.097591+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The geometry-sector / non-label architecture survives the nearest drift grid at fixed restore = 0.7 with zero and neutral gates exactly zero, correct single-source sign orientation, negative double-charge response, and charge exponents within tolerance for all nine drift/seed rows.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the separate SHA-pinned recompute artifact source if it is available, although the primary runner's --recompute path and included helper source already close the finite-grid computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is a bounded first-principles numerical replay inside the framework, not a renaming or an external comparator match. The cited upstream basin note is retained_bounded, which is retained-grade under the rubric, and the current claim adds a finite drift/seed sweep rather than importing an open bridge. The helper's hard-coded expected replay constants are not on the parent runner's load-bearing path for this claim. The clean verdict applies only to the stated finite grid at restore = 0.70, not to an unbounded drift basin."
     }
   ],
   "prose_corrections": [],
@@ -222,14 +262,14 @@
   "relabel_date": "2026-05-06T17:45:26.976941+00:00",
   "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
   "runner_check_breakdown": {
-    "A": 9,
+    "A": 0,
     "B": 0,
-    "C": 1,
+    "C": 0,
     "D": 0,
-    "total_pass": 10
+    "total_pass": 0
   },
   "runner_path": "scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py",
   "title": "Non-Label Grown Drift Basin Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "The load-bearing step is a bounded first-principles numerical replay inside the framework, not a renaming or an external comparator match. The cited upstream basin note is retained_bounded, which is retained-grade under the rubric, and the current claim adds a finite drift/seed sweep rather than importing an open bridge. The helper's hard-coded expected replay constants are not on the parent runner's load-bearing path for this claim. The clean verdict applies only to the stated finite grid at restore = 0.70, not to an unbounded drift basin."
+  "verdict_rationale": null
 }

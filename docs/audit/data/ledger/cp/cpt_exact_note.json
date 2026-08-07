@@ -1,598 +1,42 @@
 {
-  "audit_date": "2026-08-03T08:35:42.543300+00:00",
-  "audit_invocation_history": [
-    "bda918412a8e41519e95a9d36c520157",
-    "74e0ed29daa543308611bd50062a48e3",
-    "95300d7028ac439fb34da772da6ccab6"
-  ],
-  "audit_invocation_id": "95300d7028ac439fb34da772da6ccab6",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 1,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_cpt_exact.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "judgment_fingerprint": {
-      "claim_id": "cpt_exact_note",
-      "digest": "9eba386e3150ee985c4b9fe1e2d08646ed56578c649420376399e0040c3c11b5",
-      "judgment": {
-        "audit_date": "2026-08-03T08:35:42.543300+00:00",
-        "audit_invocation_id": "95300d7028ac439fb34da772da6ccab6",
-        "audit_status": "audited_failed",
-        "auditor": "codex-judicial-1-20260803-75ef1c0e",
-        "auditor_confidence": "judicial",
-        "auditor_family": "codex-gpt-5.6",
-        "auditor_model": "gpt-5.6-sol",
-        "auditor_reasoning_effort": "xhigh",
-        "chain_closes": false,
-        "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
-        "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-        "claim_type": "positive_theorem",
-        "claim_type_provenance": "judicial_review",
-        "cross_confirmation": {
-          "agreement_schema": "audit_tuple_v2",
-          "first_audit": {
-            "audit_date": "2026-08-03T08:13:42.810547+00:00",
-            "audit_invocation_id": "bda918412a8e41519e95a9d36c520157",
-            "auditor": "codex-audit-batch-A-20260803-99769db8",
-            "auditor_family": "codex-gpt-5.6",
-            "auditor_model": "gpt-5.6-sol",
-            "auditor_reasoning_effort": "xhigh",
-            "chain_closes": true,
-            "chain_closure_explanation": "Manual index substitution verifies the transpose and inversion signs for each direction on every even periodic lattice; combining these with complex conjugation of H=iD closes all antiunitary identities. At L=2 the coincident forward and backward hops cancel, so the degenerate edge case also closes.",
-            "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-            "claim_type": "positive_theorem",
-            "decoration_parent_claim_id": null,
-            "independence": "cross_family",
-            "load_bearing_step": "Because eta_mu(-x)=eta_mu(x) for even L, inversion reverses the forward-minus-backward deltas, giving P D_mu P=-D_mu; together with H_mu^*=-H_mu this yields (P K)H_mu(P K)^-1=H_mu.",
-            "load_bearing_step_class": "A",
-            "negative_assertion_classes": [],
-            "notes_for_re_audit_if_any": "",
-            "open_dependency_paths": [],
-            "runner_check_breakdown": {
-              "A": 115,
-              "B": 0,
-              "C": 0,
-              "D": 0,
-              "total_pass": 115
-            },
-            "verdict": "audited_clean",
-            "verdict_rationale": "An independent index-level calculation, separate from the runner implementation, verifies every load-bearing sign, matrix ordering, involution, and the L=2 degeneracy. The directionwise PK invariance then makes both the component and summed odd projections vanish exactly, with no imported premise or physical identification. The runner\u2019s 115 exact finite-instance checks agree with this algebra; residual risk is confined to physical interpretations explicitly outside the audited scope."
-          },
-          "judicial_panel_record_v1": {
-            "cid": "cpt_exact_note",
-            "disagreement_fingerprint": {
-              "claim_id": "cpt_exact_note",
-              "first_audit_invocation_id": "bda918412a8e41519e95a9d36c520157",
-              "note_hash": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca",
-              "schema": "judicial_disagreement_fingerprint_v1",
-              "seat_summaries_sha256": "179377683fa33ff93292b30dff4307185ec52082d56aabc7a19f19390b79050e",
-              "second_audit_invocation_id": "74e0ed29daa543308611bd50062a48e3"
-            },
-            "failures": [],
-            "invocation_id": "95300d7028ac439fb34da772da6ccab6",
-            "majority_count": 5,
-            "panel": 1,
-            "result": "majority_candidate",
-            "schema": "judicial_panel_record_v1",
-            "tally": [
-              {
-                "count": 5,
-                "tuple": [
-                  "second",
-                  "audited_failed",
-                  "positive_theorem",
-                  "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-                  "A",
-                  null,
-                  [
-                    "derived_no_go_boundary"
-                  ]
-                ]
-              }
-            ],
-            "votes": [
-              {
-                "auditor": "codex-judicial-1-20260803-75ef1c0e",
-                "first_auditor_error": "It overlooked that at the included L=2 edge case D=H=0, so the identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H and therefore do not support the claimed non-symmetry conclusion.",
-                "hybrid_resolution_note": null,
-                "judge": 1,
-                "judgment_rationale": "The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-                "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_failed",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              },
-              {
-                "auditor": "codex-judicial-2-20260803-5df19ef7",
-                "first_auditor_error": "It overlooked that at L=2 the proved sign flip -H equals H because D=H=0, so the universal assertion that K and CPK are not symmetries is false.",
-                "hybrid_resolution_note": null,
-                "judge": 2,
-                "judgment_rationale": "The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-                "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_failed",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              },
-              {
-                "auditor": "codex-judicial-3-20260803-89c83c62",
-                "first_auditor_error": "It overlooked the explicitly included L=2 degeneracy: because D=H=0 there, the true identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H, so those operations preserve H and cannot be called non-symmetries for every even L.",
-                "hybrid_resolution_note": null,
-                "judge": 3,
-                "judgment_rationale": "The second position correctly identifies a counterexample to the theorem\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-                "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_failed",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              },
-              {
-                "auditor": "codex-judicial-4-20260803-93ce6a93",
-                "first_auditor_error": "It overlooked that the all-even-L non-symmetry assertion fails at L=2: there H=0, so the displayed sign-flip actions also preserve H.",
-                "hybrid_resolution_note": null,
-                "judge": 4,
-                "judgment_rationale": "The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-                "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_failed",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              },
-              {
-                "auditor": "codex-judicial-5-20260803-eabe1a81",
-                "first_auditor_error": "It verified the sign identities but overlooked that at the included L=2 edge case H=0, so -H=H and the claimed inference that bare K and CPK are not symmetries is false.",
-                "hybrid_resolution_note": null,
-                "judge": 5,
-                "judgment_rationale": "The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.",
-                "negative_assertion_classes": [
-                  "derived_no_go_boundary"
-                ],
-                "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-                "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-                "ratified_claim_type": "positive_theorem",
-                "ratified_decoration_parent_claim_id": null,
-                "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-                "ratified_load_bearing_step_class": "A",
-                "ratified_verdict": "audited_failed",
-                "second_auditor_error": "none",
-                "sided_with": "second"
-              }
-            ]
-          },
-          "mode": "judicial_panel_majority",
-          "second_audit": {
-            "audit_date": "2026-08-03T08:13:42.818753+00:00",
-            "audit_invocation_id": "74e0ed29daa543308611bd50062a48e3",
-            "auditor": "codex-audit-batch-B-20260803-655a9a21",
-            "auditor_family": "codex-gpt-5.6",
-            "auditor_model": "gpt-5.6-sol",
-            "auditor_reasoning_effort": "xhigh",
-            "chain_closes": false,
-            "chain_closure_explanation": "The matrix identities close, but the inference that bare K and CPK are not symmetries requires H != 0. At the explicitly included L=2 case, D=H=0, so mapping H to -H also preserves H.",
-            "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-            "claim_type": "positive_theorem",
-            "decoration_parent_claim_id": null,
-            "independence": "fresh_context",
-            "load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-            "load_bearing_step_class": "A",
-            "negative_assertion_classes": [
-              "derived_no_go_boundary"
-            ],
-            "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-            "open_dependency_paths": [],
-            "runner_check_breakdown": {
-              "A": 115,
-              "B": 0,
-              "C": 0,
-              "D": 0,
-              "total_pass": 115
-            },
-            "verdict": "audited_failed",
-            "verdict_rationale": "The source explicitly includes the degenerate L=2 case, where its own argument gives D=H=0. Consequently KHK^-1=-H and CPK H(CPK)^-1=-H equal H there, so K and CPK are symmetries despite the theorem's all-even-L statement that they are not. The runner checks only L=4,6,8 and therefore does not expose this edge-case contradiction; the remaining displayed algebraic identities are consistent with the supplied proof and computation."
-          },
-          "status": "third_confirmed_second",
-          "third_audit": {
-            "audit_date": "2026-08-03T08:35:42.543300+00:00",
-            "audit_invocation_id": "95300d7028ac439fb34da772da6ccab6",
-            "auditor": "codex-judicial-1-20260803-75ef1c0e",
-            "auditor_family": "codex-gpt-5.6",
-            "auditor_model": "gpt-5.6-sol",
-            "auditor_reasoning_effort": "xhigh",
-            "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-            "claim_type": "positive_theorem",
-            "first_auditor_error": "It overlooked that at the included L=2 edge case D=H=0, so the identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H and therefore do not support the claimed non-symmetry conclusion.",
-            "independence": "judicial_review",
-            "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
-            "load_bearing_step_class": "A",
-            "negative_assertion_classes": [
-              "derived_no_go_boundary"
-            ],
-            "second_auditor_error": "none",
-            "sided_with": "second",
-            "verdict": "audited_failed"
-          }
-        },
-        "decoration_parent_claim_id": null,
-        "independence": "judicial_review",
-        "load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-        "load_bearing_step_class": "A",
-        "negative_assertion_classes": [
-          "derived_no_go_boundary"
-        ],
-        "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-        "open_dependency_paths": [],
-        "runner_check_breakdown": {
-          "A": 0,
-          "B": 0,
-          "C": 0,
-          "D": 0,
-          "total_pass": 0
-        },
-        "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
-      },
-      "schema": "frozen_audit_judgment_v1"
-    },
-    "load_bearing_score": 31.866,
-    "packet_policy_fingerprint": {
-      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
-      "schema": "packet_policy_fingerprint_v1",
-      "sources": {
-        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
-        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
-        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
-        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
-        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
-      }
-    },
-    "policy_versions": {
-      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_cpt_exact.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "4fee660a7a890bf399088a22da3ddcb891d4455e4ed627c51f60c4073dcfd8d2",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "4fee660a7a890bf399088a22da3ddcb891d4455e4ed627c51f60c4073dcfd8d2",
-    "runner_path": "scripts/frontier_cpt_exact.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "science_fingerprint": {
-      "dependencies": [],
-      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "9fac0fb03679185df64f31fe12caebabe8999e1e89cb972af9b57d84ee887e33",
-      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
-      "runners": [
-        {
-          "declared_input_fingerprint_sha256": null,
-          "declared_input_paths": null,
-          "declared_inputs": [],
-          "path": "scripts/frontier_cpt_exact.py",
-          "present": true,
-          "role": "primary",
-          "sha256": "4fee660a7a890bf399088a22da3ddcb891d4455e4ed627c51f60c4073dcfd8d2"
-        }
-      ],
-      "schema": "science_fingerprint_v2",
-      "target": {
-        "claim_id": "cpt_exact_note",
-        "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-        "claim_type": "positive_theorem",
-        "ledger_note_hash": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca",
-        "note_path": "docs/CPT_EXACT_NOTE.md",
-        "note_sha256": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca"
-      }
-    },
-    "transitive_descendants": 932
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-judicial-1-20260803-75ef1c0e",
-  "auditor_confidence": "judicial",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "cpt_exact_note",
-  "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-08-03T08:35:42.543300+00:00",
-  "claim_type_provenance": "judicial_review",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
-  "cross_confirmation": {
-    "agreement_schema": "audit_tuple_v2",
-    "first_audit": {
-      "audit_date": "2026-08-03T08:13:42.810547+00:00",
-      "audit_invocation_id": "bda918412a8e41519e95a9d36c520157",
-      "auditor": "codex-audit-batch-A-20260803-99769db8",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": true,
-      "chain_closure_explanation": "Manual index substitution verifies the transpose and inversion signs for each direction on every even periodic lattice; combining these with complex conjugation of H=iD closes all antiunitary identities. At L=2 the coincident forward and backward hops cancel, so the degenerate edge case also closes.",
-      "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-      "claim_type": "positive_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "cross_family",
-      "load_bearing_step": "Because eta_mu(-x)=eta_mu(x) for even L, inversion reverses the forward-minus-backward deltas, giving P D_mu P=-D_mu; together with H_mu^*=-H_mu this yields (P K)H_mu(P K)^-1=H_mu.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "notes_for_re_audit_if_any": "",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 115,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 115
-      },
-      "verdict": "audited_clean",
-      "verdict_rationale": "An independent index-level calculation, separate from the runner implementation, verifies every load-bearing sign, matrix ordering, involution, and the L=2 degeneracy. The directionwise PK invariance then makes both the component and summed odd projections vanish exactly, with no imported premise or physical identification. The runner\u2019s 115 exact finite-instance checks agree with this algebra; residual risk is confined to physical interpretations explicitly outside the audited scope."
-    },
-    "judicial_panel_record_v1": {
-      "cid": "cpt_exact_note",
-      "disagreement_fingerprint": {
-        "claim_id": "cpt_exact_note",
-        "first_audit_invocation_id": "bda918412a8e41519e95a9d36c520157",
-        "note_hash": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca",
-        "schema": "judicial_disagreement_fingerprint_v1",
-        "seat_summaries_sha256": "179377683fa33ff93292b30dff4307185ec52082d56aabc7a19f19390b79050e",
-        "second_audit_invocation_id": "74e0ed29daa543308611bd50062a48e3"
-      },
-      "failures": [],
-      "invocation_id": "95300d7028ac439fb34da772da6ccab6",
-      "majority_count": 5,
-      "panel": 1,
-      "result": "majority_candidate",
-      "schema": "judicial_panel_record_v1",
-      "tally": [
-        {
-          "count": 5,
-          "tuple": [
-            "second",
-            "audited_failed",
-            "positive_theorem",
-            "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-            "A",
-            null,
-            [
-              "derived_no_go_boundary"
-            ]
-          ]
-        }
-      ],
-      "votes": [
-        {
-          "auditor": "codex-judicial-1-20260803-75ef1c0e",
-          "first_auditor_error": "It overlooked that at the included L=2 edge case D=H=0, so the identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H and therefore do not support the claimed non-symmetry conclusion.",
-          "hybrid_resolution_note": null,
-          "judge": 1,
-          "judgment_rationale": "The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-          "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_failed",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-2-20260803-5df19ef7",
-          "first_auditor_error": "It overlooked that at L=2 the proved sign flip -H equals H because D=H=0, so the universal assertion that K and CPK are not symmetries is false.",
-          "hybrid_resolution_note": null,
-          "judge": 2,
-          "judgment_rationale": "The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-          "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_failed",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-3-20260803-89c83c62",
-          "first_auditor_error": "It overlooked the explicitly included L=2 degeneracy: because D=H=0 there, the true identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H, so those operations preserve H and cannot be called non-symmetries for every even L.",
-          "hybrid_resolution_note": null,
-          "judge": 3,
-          "judgment_rationale": "The second position correctly identifies a counterexample to the theorem\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-          "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_failed",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-4-20260803-93ce6a93",
-          "first_auditor_error": "It overlooked that the all-even-L non-symmetry assertion fails at L=2: there H=0, so the displayed sign-flip actions also preserve H.",
-          "hybrid_resolution_note": null,
-          "judge": 4,
-          "judgment_rationale": "The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-          "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_failed",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        },
-        {
-          "auditor": "codex-judicial-5-20260803-eabe1a81",
-          "first_auditor_error": "It verified the sign identities but overlooked that at the included L=2 edge case H=0, so -H=H and the claimed inference that bare K and CPK are not symmetries is false.",
-          "hybrid_resolution_note": null,
-          "judge": 5,
-          "judgment_rationale": "The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.",
-          "negative_assertion_classes": [
-            "derived_no_go_boundary"
-          ],
-          "no_go_discipline": null,
-          "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-          "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-          "ratified_claim_type": "positive_theorem",
-          "ratified_decoration_parent_claim_id": null,
-          "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-          "ratified_load_bearing_step_class": "A",
-          "ratified_verdict": "audited_failed",
-          "second_auditor_error": "none",
-          "sided_with": "second"
-        }
-      ]
-    },
-    "mode": "judicial_panel_majority",
-    "second_audit": {
-      "audit_date": "2026-08-03T08:13:42.818753+00:00",
-      "audit_invocation_id": "74e0ed29daa543308611bd50062a48e3",
-      "auditor": "codex-audit-batch-B-20260803-655a9a21",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "chain_closes": false,
-      "chain_closure_explanation": "The matrix identities close, but the inference that bare K and CPK are not symmetries requires H != 0. At the explicitly included L=2 case, D=H=0, so mapping H to -H also preserves H.",
-      "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-      "claim_type": "positive_theorem",
-      "decoration_parent_claim_id": null,
-      "independence": "fresh_context",
-      "load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [
-        "derived_no_go_boundary"
-      ],
-      "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
-      "open_dependency_paths": [],
-      "runner_check_breakdown": {
-        "A": 115,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 115
-      },
-      "verdict": "audited_failed",
-      "verdict_rationale": "The source explicitly includes the degenerate L=2 case, where its own argument gives D=H=0. Consequently KHK^-1=-H and CPK H(CPK)^-1=-H equal H there, so K and CPK are symmetries despite the theorem's all-even-L statement that they are not. The runner checks only L=4,6,8 and therefore does not expose this edge-case contradiction; the remaining displayed algebraic identities are consistent with the supplied proof and computation."
-    },
-    "status": "third_confirmed_second",
-    "third_audit": {
-      "audit_date": "2026-08-03T08:35:42.543300+00:00",
-      "audit_invocation_id": "95300d7028ac439fb34da772da6ccab6",
-      "auditor": "codex-judicial-1-20260803-75ef1c0e",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
-      "claim_type": "positive_theorem",
-      "first_auditor_error": "It overlooked that at the included L=2 edge case D=H=0, so the identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H and therefore do not support the claimed non-symmetry conclusion.",
-      "independence": "judicial_review",
-      "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [
-        "derived_no_go_boundary"
-      ],
-      "second_auditor_error": "none",
-      "sided_with": "second",
-      "verdict": "audited_failed"
-    }
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 44,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "judicial_review",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 31.866,
-  "load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
   "note_hash": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca",
   "note_path": "docs/CPT_EXACT_NOTE.md",
-  "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -2578,6 +2022,599 @@
         "total_pass": 115
       },
       "verdict_rationale": "The proof correctly establishes the real anti-Hermiticity of D and tracks both unitary spectral flips and the additional sign introduced by antiunitary conjugation of i. It also proves the involution and direction-resolved statements without extending the result to physical CPT or interacting theories. The runner genuinely constructs the finite-lattice operators and supplies 115 exact algebraic checks rather than printing hard-coded outcomes."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.676484+00:00",
+      "audit_date": "2026-08-03T08:35:42.543300+00:00",
+      "audit_invocation_history": [
+        "bda918412a8e41519e95a9d36c520157",
+        "74e0ed29daa543308611bd50062a48e3",
+        "95300d7028ac439fb34da772da6ccab6"
+      ],
+      "audit_invocation_id": "95300d7028ac439fb34da772da6ccab6",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_cpt_exact.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "judgment_fingerprint": {
+          "claim_id": "cpt_exact_note",
+          "digest": "9eba386e3150ee985c4b9fe1e2d08646ed56578c649420376399e0040c3c11b5",
+          "judgment": {
+            "audit_date": "2026-08-03T08:35:42.543300+00:00",
+            "audit_invocation_id": "95300d7028ac439fb34da772da6ccab6",
+            "audit_status": "audited_failed",
+            "auditor": "codex-judicial-1-20260803-75ef1c0e",
+            "auditor_confidence": "judicial",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+            "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+            "claim_type": "positive_theorem",
+            "claim_type_provenance": "judicial_review",
+            "cross_confirmation": {
+              "agreement_schema": "audit_tuple_v2",
+              "first_audit": {
+                "audit_date": "2026-08-03T08:13:42.810547+00:00",
+                "audit_invocation_id": "bda918412a8e41519e95a9d36c520157",
+                "auditor": "codex-audit-batch-A-20260803-99769db8",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "chain_closes": true,
+                "chain_closure_explanation": "Manual index substitution verifies the transpose and inversion signs for each direction on every even periodic lattice; combining these with complex conjugation of H=iD closes all antiunitary identities. At L=2 the coincident forward and backward hops cancel, so the degenerate edge case also closes.",
+                "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                "claim_type": "positive_theorem",
+                "decoration_parent_claim_id": null,
+                "independence": "cross_family",
+                "load_bearing_step": "Because eta_mu(-x)=eta_mu(x) for even L, inversion reverses the forward-minus-backward deltas, giving P D_mu P=-D_mu; together with H_mu^*=-H_mu this yields (P K)H_mu(P K)^-1=H_mu.",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [],
+                "notes_for_re_audit_if_any": "",
+                "open_dependency_paths": [],
+                "runner_check_breakdown": {
+                  "A": 115,
+                  "B": 0,
+                  "C": 0,
+                  "D": 0,
+                  "total_pass": 115
+                },
+                "verdict": "audited_clean",
+                "verdict_rationale": "An independent index-level calculation, separate from the runner implementation, verifies every load-bearing sign, matrix ordering, involution, and the L=2 degeneracy. The directionwise PK invariance then makes both the component and summed odd projections vanish exactly, with no imported premise or physical identification. The runner\u2019s 115 exact finite-instance checks agree with this algebra; residual risk is confined to physical interpretations explicitly outside the audited scope."
+              },
+              "judicial_panel_record_v1": {
+                "cid": "cpt_exact_note",
+                "disagreement_fingerprint": {
+                  "claim_id": "cpt_exact_note",
+                  "first_audit_invocation_id": "bda918412a8e41519e95a9d36c520157",
+                  "note_hash": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca",
+                  "schema": "judicial_disagreement_fingerprint_v1",
+                  "seat_summaries_sha256": "179377683fa33ff93292b30dff4307185ec52082d56aabc7a19f19390b79050e",
+                  "second_audit_invocation_id": "74e0ed29daa543308611bd50062a48e3"
+                },
+                "failures": [],
+                "invocation_id": "95300d7028ac439fb34da772da6ccab6",
+                "majority_count": 5,
+                "panel": 1,
+                "result": "majority_candidate",
+                "schema": "judicial_panel_record_v1",
+                "tally": [
+                  {
+                    "count": 5,
+                    "tuple": [
+                      "second",
+                      "audited_failed",
+                      "positive_theorem",
+                      "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                      "A",
+                      null,
+                      [
+                        "derived_no_go_boundary"
+                      ]
+                    ]
+                  }
+                ],
+                "votes": [
+                  {
+                    "auditor": "codex-judicial-1-20260803-75ef1c0e",
+                    "first_auditor_error": "It overlooked that at the included L=2 edge case D=H=0, so the identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H and therefore do not support the claimed non-symmetry conclusion.",
+                    "hybrid_resolution_note": null,
+                    "judge": 1,
+                    "judgment_rationale": "The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+                    "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_failed",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  },
+                  {
+                    "auditor": "codex-judicial-2-20260803-5df19ef7",
+                    "first_auditor_error": "It overlooked that at L=2 the proved sign flip -H equals H because D=H=0, so the universal assertion that K and CPK are not symmetries is false.",
+                    "hybrid_resolution_note": null,
+                    "judge": 2,
+                    "judgment_rationale": "The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+                    "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_failed",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  },
+                  {
+                    "auditor": "codex-judicial-3-20260803-89c83c62",
+                    "first_auditor_error": "It overlooked the explicitly included L=2 degeneracy: because D=H=0 there, the true identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H, so those operations preserve H and cannot be called non-symmetries for every even L.",
+                    "hybrid_resolution_note": null,
+                    "judge": 3,
+                    "judgment_rationale": "The second position correctly identifies a counterexample to the theorem\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+                    "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_failed",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  },
+                  {
+                    "auditor": "codex-judicial-4-20260803-93ce6a93",
+                    "first_auditor_error": "It overlooked that the all-even-L non-symmetry assertion fails at L=2: there H=0, so the displayed sign-flip actions also preserve H.",
+                    "hybrid_resolution_note": null,
+                    "judge": 4,
+                    "judgment_rationale": "The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+                    "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_failed",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  },
+                  {
+                    "auditor": "codex-judicial-5-20260803-eabe1a81",
+                    "first_auditor_error": "It verified the sign identities but overlooked that at the included L=2 edge case H=0, so -H=H and the claimed inference that bare K and CPK are not symmetries is false.",
+                    "hybrid_resolution_note": null,
+                    "judge": 5,
+                    "judgment_rationale": "The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.",
+                    "negative_assertion_classes": [
+                      "derived_no_go_boundary"
+                    ],
+                    "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+                    "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                    "ratified_claim_type": "positive_theorem",
+                    "ratified_decoration_parent_claim_id": null,
+                    "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+                    "ratified_load_bearing_step_class": "A",
+                    "ratified_verdict": "audited_failed",
+                    "second_auditor_error": "none",
+                    "sided_with": "second"
+                  }
+                ]
+              },
+              "mode": "judicial_panel_majority",
+              "second_audit": {
+                "audit_date": "2026-08-03T08:13:42.818753+00:00",
+                "audit_invocation_id": "74e0ed29daa543308611bd50062a48e3",
+                "auditor": "codex-audit-batch-B-20260803-655a9a21",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "chain_closes": false,
+                "chain_closure_explanation": "The matrix identities close, but the inference that bare K and CPK are not symmetries requires H != 0. At the explicitly included L=2 case, D=H=0, so mapping H to -H also preserves H.",
+                "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                "claim_type": "positive_theorem",
+                "decoration_parent_claim_id": null,
+                "independence": "fresh_context",
+                "load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [
+                  "derived_no_go_boundary"
+                ],
+                "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+                "open_dependency_paths": [],
+                "runner_check_breakdown": {
+                  "A": 115,
+                  "B": 0,
+                  "C": 0,
+                  "D": 0,
+                  "total_pass": 115
+                },
+                "verdict": "audited_failed",
+                "verdict_rationale": "The source explicitly includes the degenerate L=2 case, where its own argument gives D=H=0. Consequently KHK^-1=-H and CPK H(CPK)^-1=-H equal H there, so K and CPK are symmetries despite the theorem's all-even-L statement that they are not. The runner checks only L=4,6,8 and therefore does not expose this edge-case contradiction; the remaining displayed algebraic identities are consistent with the supplied proof and computation."
+              },
+              "status": "third_confirmed_second",
+              "third_audit": {
+                "audit_date": "2026-08-03T08:35:42.543300+00:00",
+                "audit_invocation_id": "95300d7028ac439fb34da772da6ccab6",
+                "auditor": "codex-judicial-1-20260803-75ef1c0e",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                "claim_type": "positive_theorem",
+                "first_auditor_error": "It overlooked that at the included L=2 edge case D=H=0, so the identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H and therefore do not support the claimed non-symmetry conclusion.",
+                "independence": "judicial_review",
+                "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [
+                  "derived_no_go_boundary"
+                ],
+                "second_auditor_error": "none",
+                "sided_with": "second",
+                "verdict": "audited_failed"
+              }
+            },
+            "decoration_parent_claim_id": null,
+            "independence": "judicial_review",
+            "load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+              "derived_no_go_boundary"
+            ],
+            "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 0,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 0
+            },
+            "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
+          },
+          "schema": "frozen_audit_judgment_v1"
+        },
+        "load_bearing_score": 31.866,
+        "packet_policy_fingerprint": {
+          "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+          "schema": "packet_policy_fingerprint_v1",
+          "sources": {
+            "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+            "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+            "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+            "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+            "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+            "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+            "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+          }
+        },
+        "policy_versions": {
+          "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_cpt_exact.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "4fee660a7a890bf399088a22da3ddcb891d4455e4ed627c51f60c4073dcfd8d2",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "4fee660a7a890bf399088a22da3ddcb891d4455e4ed627c51f60c4073dcfd8d2",
+        "runner_path": "scripts/frontier_cpt_exact.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "science_fingerprint": {
+          "dependencies": [],
+          "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+          "digest": "9fac0fb03679185df64f31fe12caebabe8999e1e89cb972af9b57d84ee887e33",
+          "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+          "runners": [
+            {
+              "declared_input_fingerprint_sha256": null,
+              "declared_input_paths": null,
+              "declared_inputs": [],
+              "path": "scripts/frontier_cpt_exact.py",
+              "present": true,
+              "role": "primary",
+              "sha256": "4fee660a7a890bf399088a22da3ddcb891d4455e4ed627c51f60c4073dcfd8d2"
+            }
+          ],
+          "schema": "science_fingerprint_v2",
+          "target": {
+            "claim_id": "cpt_exact_note",
+            "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+            "claim_type": "positive_theorem",
+            "ledger_note_hash": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca",
+            "note_path": "docs/CPT_EXACT_NOTE.md",
+            "note_sha256": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca"
+          }
+        },
+        "transitive_descendants": 932
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-judicial-1-20260803-75ef1c0e",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+      "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-08-03T08:35:42.543300+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "agreement_schema": "audit_tuple_v2",
+        "first_audit": {
+          "audit_date": "2026-08-03T08:13:42.810547+00:00",
+          "audit_invocation_id": "bda918412a8e41519e95a9d36c520157",
+          "auditor": "codex-audit-batch-A-20260803-99769db8",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": true,
+          "chain_closure_explanation": "Manual index substitution verifies the transpose and inversion signs for each direction on every even periodic lattice; combining these with complex conjugation of H=iD closes all antiunitary identities. At L=2 the coincident forward and backward hops cancel, so the degenerate edge case also closes.",
+          "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+          "claim_type": "positive_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Because eta_mu(-x)=eta_mu(x) for even L, inversion reverses the forward-minus-backward deltas, giving P D_mu P=-D_mu; together with H_mu^*=-H_mu this yields (P K)H_mu(P K)^-1=H_mu.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "notes_for_re_audit_if_any": "",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 115,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 115
+          },
+          "verdict": "audited_clean",
+          "verdict_rationale": "An independent index-level calculation, separate from the runner implementation, verifies every load-bearing sign, matrix ordering, involution, and the L=2 degeneracy. The directionwise PK invariance then makes both the component and summed odd projections vanish exactly, with no imported premise or physical identification. The runner\u2019s 115 exact finite-instance checks agree with this algebra; residual risk is confined to physical interpretations explicitly outside the audited scope."
+        },
+        "judicial_panel_record_v1": {
+          "cid": "cpt_exact_note",
+          "disagreement_fingerprint": {
+            "claim_id": "cpt_exact_note",
+            "first_audit_invocation_id": "bda918412a8e41519e95a9d36c520157",
+            "note_hash": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca",
+            "schema": "judicial_disagreement_fingerprint_v1",
+            "seat_summaries_sha256": "179377683fa33ff93292b30dff4307185ec52082d56aabc7a19f19390b79050e",
+            "second_audit_invocation_id": "74e0ed29daa543308611bd50062a48e3"
+          },
+          "failures": [],
+          "invocation_id": "95300d7028ac439fb34da772da6ccab6",
+          "majority_count": 5,
+          "panel": 1,
+          "result": "majority_candidate",
+          "schema": "judicial_panel_record_v1",
+          "tally": [
+            {
+              "count": 5,
+              "tuple": [
+                "second",
+                "audited_failed",
+                "positive_theorem",
+                "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+                "A",
+                null,
+                [
+                  "derived_no_go_boundary"
+                ]
+              ]
+            }
+          ],
+          "votes": [
+            {
+              "auditor": "codex-judicial-1-20260803-75ef1c0e",
+              "first_auditor_error": "It overlooked that at the included L=2 edge case D=H=0, so the identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H and therefore do not support the claimed non-symmetry conclusion.",
+              "hybrid_resolution_note": null,
+              "judge": 1,
+              "judgment_rationale": "The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+              "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_failed",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-2-20260803-5df19ef7",
+              "first_auditor_error": "It overlooked that at L=2 the proved sign flip -H equals H because D=H=0, so the universal assertion that K and CPK are not symmetries is false.",
+              "hybrid_resolution_note": null,
+              "judge": 2,
+              "judgment_rationale": "The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+              "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_failed",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-3-20260803-89c83c62",
+              "first_auditor_error": "It overlooked the explicitly included L=2 degeneracy: because D=H=0 there, the true identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H, so those operations preserve H and cannot be called non-symmetries for every even L.",
+              "hybrid_resolution_note": null,
+              "judge": 3,
+              "judgment_rationale": "The second position correctly identifies a counterexample to the theorem\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+              "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_failed",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-4-20260803-93ce6a93",
+              "first_auditor_error": "It overlooked that the all-even-L non-symmetry assertion fails at L=2: there H=0, so the displayed sign-flip actions also preserve H.",
+              "hybrid_resolution_note": null,
+              "judge": 4,
+              "judgment_rationale": "The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+              "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_failed",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            },
+            {
+              "auditor": "codex-judicial-5-20260803-eabe1a81",
+              "first_auditor_error": "It verified the sign identities but overlooked that at the included L=2 edge case H=0, so -H=H and the claimed inference that bare K and CPK are not symmetries is false.",
+              "hybrid_resolution_note": null,
+              "judge": 5,
+              "judgment_rationale": "The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.",
+              "negative_assertion_classes": [
+                "derived_no_go_boundary"
+              ],
+              "no_go_discipline": null,
+              "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+              "ratified_claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+              "ratified_claim_type": "positive_theorem",
+              "ratified_decoration_parent_claim_id": null,
+              "ratified_load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+              "ratified_load_bearing_step_class": "A",
+              "ratified_verdict": "audited_failed",
+              "second_auditor_error": "none",
+              "sided_with": "second"
+            }
+          ]
+        },
+        "mode": "judicial_panel_majority",
+        "second_audit": {
+          "audit_date": "2026-08-03T08:13:42.818753+00:00",
+          "audit_invocation_id": "74e0ed29daa543308611bd50062a48e3",
+          "auditor": "codex-audit-batch-B-20260803-655a9a21",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "chain_closes": false,
+          "chain_closure_explanation": "The matrix identities close, but the inference that bare K and CPK are not symmetries requires H != 0. At the explicitly included L=2 case, D=H=0, so mapping H to -H also preserves H.",
+          "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+          "claim_type": "positive_theorem",
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 115,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 115
+          },
+          "verdict": "audited_failed",
+          "verdict_rationale": "The source explicitly includes the degenerate L=2 case, where its own argument gives D=H=0. Consequently KHK^-1=-H and CPK H(CPK)^-1=-H equal H there, so K and CPK are symmetries despite the theorem's all-even-L statement that they are not. The runner checks only L=4,6,8 and therefore does not expose this edge-case contradiction; the remaining displayed algebraic identities are consistent with the supplied proof and computation."
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-08-03T08:35:42.543300+00:00",
+          "audit_invocation_id": "95300d7028ac439fb34da772da6ccab6",
+          "auditor": "codex-judicial-1-20260803-75ef1c0e",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "It overlooked that at the included L=2 edge case D=H=0, so the identities KHK^-1=-H and CPKH(CPK)^-1=-H also equal H and therefore do not support the claimed non-symmetry conclusion.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [
+            "derived_no_go_boundary"
+          ],
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_failed"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "science_changed:framework_premise_epoch",
+      "load_bearing_step": "Since H^*=-H, bare K and CPK map H to -H, whereas CK and PK map H to H.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Qualify the non-symmetry conclusion to nonzero H (for example L>=4) or state only the exact sign-action identities at L=2, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
     }
   ],
   "prose_corrections": [],
@@ -2592,5 +2629,5 @@
   "runner_path": "scripts/frontier_cpt_exact.py",
   "title": "Exact antiunitary symmetry of the free staggered Hermitian lift",
   "transitive_descendants": 932,
-  "verdict_rationale": "Five-judge panel majority (5/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260803-75ef1c0e\", \"judge\": 1, \"rationale\": \"The exact sign-action identities close for all even L, including L=2. However, the source also asserts that bare K and CPK are not symmetries for every even L; at L=2, H=0 and hence -H=H, making both operations symmetries of that degenerate operator. Because the runner checks only L=4,6,8, its 115 passes do not cure this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-2-20260803-5df19ef7\", \"judge\": 2, \"rationale\": \"The packet explicitly includes L=2, where forward and backward hops coincide and D=H=0. Therefore KHK^-1=-H=H and likewise for CPK, contradicting the theorem\\u2019s all-even-L non-symmetry assertion even though the displayed matrix identities remain valid.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-3-20260803-89c83c62\", \"judge\": 3, \"rationale\": \"The second position correctly identifies a counterexample to the theorem\\u2019s all-even-L non-symmetry conclusion. At L=2 the forward and backward hops coincide, so H=0; therefore mapping H to -H preserves H. The runner tests only L=4,6,8, so its 115 passing algebraic checks do not repair this explicit edge-case contradiction.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-4-20260803-93ce6a93\", \"judge\": 4, \"rationale\": \"The exact sign-action equations remain valid at L=2, but the theorem additionally characterizes bare K and CPK as not symmetries for every even L. Since D=H=0 at L=2, -H=H and both operations are symmetries there. The runner checks only L=4,6,8, so its 115 passes do not test this degenerate counterexample. The full stated theorem therefore fails until the non-symmetry language is qualified.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}, {\"auditor\": \"codex-judicial-5-20260803-eabe1a81\", \"judge\": 5, \"rationale\": \"The exact identities KHK^-1=-H and CPKH(CPK)^-1=-H hold for every even L, but the theorem additionally characterizes these operations as non-symmetries. At L=2 the source explicitly has D=H=0, making -H=H; therefore both operations preserve H and the all-even-L theorem fails as stated.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.\", \"A\", null, [\"derived_no_go_boundary\"]]}]"
+  "verdict_rationale": null
 }

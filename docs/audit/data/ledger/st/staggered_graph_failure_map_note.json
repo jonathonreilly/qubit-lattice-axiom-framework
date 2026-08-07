@@ -1,31 +1,24 @@
 {
-  "audit_date": "2026-05-05T11:41:20.272705+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_effective_status": {
-      "staggered_graph_portability_note": "retained"
-    },
-    "deps": [
-      "staggered_graph_portability_note"
-    ],
-    "load_bearing_score": 0.0,
-    "runner_hash": "7d4da2851753cb298dc5a94864332e2117c4358dfc7348041ee43e492100ed22",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-staggered_graph_failure_-054",
-  "auditor_confidence": "medium",
-  "auditor_family": "codex-gpt-5.5",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The cited portability note is retained and supplies the retained force-battery baseline. The provided runner constructs the adversarial graph cases, measures the portability battery through the upstream runner, detects same-color/parity defects and graph irregularity metrics, and classifies the cases according to the note's stated boundary-map rule.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "staggered_graph_failure_map_note",
-  "claim_scope": "Audit of the stated adversarial graph failure classification for the staggered graph lane using the cited portability note and the provided failure-map runner output/source.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-05T11:41:20.272705+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -33,21 +26,21 @@
     "staggered_graph_portability_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_staggered_graph_portability.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Odd-cycle defects and parity wrap inconsistencies are structural breaks, while dense shortcuts and high-degree contamination are graceful degradations as long as the retained force battery stays intact.",
-  "load_bearing_step_class": "B",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "204cebc495027021efe5e5947efa55eeb3d7de15e480b884a67a3d663be0c927",
   "note_path": "docs/STAGGERED_GRAPH_FAILURE_MAP_NOTE.md",
-  "notes_for_re_audit_if_any": "Re-check that scripts.frontier_staggered_graph_portability._measure_family is itself covered by the retained portability audit, since this runner imports that battery rather than independently deriving it.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -108,19 +101,68 @@
         "total_pass": 0
       },
       "verdict_rationale": "Issue: The table is current, but the claim imports the staggered graph portability battery as a retained authority while that parent remains unaudited; additionally, the odd-cycle and parity-wrap rows are labeled structural_break despite retained=8/8 because they violate bipartite/parity assumptions, not because the measured battery fails. Why this blocks: a retained adversarial boundary map must separate empirical battery failure from assumption-boundary classification and must rest on an audit-clean portability battery. Repair target: audit the graph portability note and the graph-Dirac requirements/bipartite parity assumptions, then add explicit assertions distinguishing same-color-edge structural invalidity from retained-battery pass/fail. Claim boundary until fixed: it is safe to claim that the current runner reproduces the five-row map with odd-cycle and parity-wrap defects flagged as assumption-level structural breaks, dense shortcuts and hub contamination as graceful degradation, and all rows retained=8/8; it is not safe to claim an audit-clean retained portability boundary without the parent battery audit."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.850860+00:00",
+      "audit_date": "2026-05-05T11:41:20.272705+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "staggered_graph_portability_note": "retained"
+        },
+        "deps": [
+          "staggered_graph_portability_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7d4da2851753cb298dc5a94864332e2117c4358dfc7348041ee43e492100ed22",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-staggered_graph_failure_-054",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited portability note is retained and supplies the retained force-battery baseline. The provided runner constructs the adversarial graph cases, measures the portability battery through the upstream runner, detects same-color/parity defects and graph irregularity metrics, and classifies the cases according to the note's stated boundary-map rule.",
+      "claim_scope": "Audit of the stated adversarial graph failure classification for the staggered graph lane using the cited portability note and the provided failure-map runner output/source.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T11:41:20.272705+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "Odd-cycle defects and parity wrap inconsistencies are structural breaks, while dense shortcuts and high-degree contamination are graceful degradations as long as the retained force battery stays intact.",
+      "load_bearing_step_class": "B",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that scripts.frontier_staggered_graph_portability._measure_family is itself covered by the retained portability audit, since this runner imports that battery rather than independently deriving it.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The claim is not a first-principles physics derivation; it is a bounded computational boundary-map claim over a retained upstream battery. The runner source does more than print constants: it constructs modified graph families, computes defect counts, long-edge fraction, max degree, retained-battery pass counts, force observables, and gauge status, then classifies the cases. The upstream authority is retained, and no open or non-retained dependency is present in the restricted packet."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
-    "B": 5,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 5
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_staggered_graph_failure_map.py",
   "title": "Staggered Graph Failure Map Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "The claim is not a first-principles physics derivation; it is a bounded computational boundary-map claim over a retained upstream battery. The runner source does more than print constants: it constructs modified graph families, computes defect counts, long-edge fraction, max degree, retained-battery pass counts, force observables, and gauge status, then classifies the cases. The upstream authority is retained, and no open or non-retained dependency is present in the restricted packet."
+  "verdict_rationale": null
 }

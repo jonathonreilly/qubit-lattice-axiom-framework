@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_odd_circulant_current_stack_zero_law.py
-runner_sha256: 1496dd8c4c2a573716b266baff3341a77e734c395d4c2da09e507c4b81b0886e
+runner_sha256: 29addc23c50bbb518ccd0299308affcd545f494ee8950e30f80ec5e55fd70303
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -23,15 +23,15 @@ Question:
 PART 1: THE CURRENT LOCAL INPUT SURFACE IS RESIDUAL-Z2 EVEN
 ========================================================================================
   [PASS] The exact weak-axis split is residual-Z2 even in the local site basis  (site-even error=0.00e+00)
-  [PASS] Its bridged local Dirac surface remains residual-Z2 even  (Dirac-even error=1.68e-16)
-  [PASS] Its Hermitian kernel is residual-Z2 even and has zero odd slot  (odd coeff=2.50e-16)
+  [PASS] Its bridged local Dirac surface remains residual-Z2 even  (Dirac-even error=1.67e-16)
+  [PASS] Its Hermitian kernel is residual-Z2 even and has zero odd slot  (odd coeff=2.68e-16)
 
   So the retained local DM bank starts on a strictly residual-Z2-even surface.
 
 ========================================================================================
 PART 2: EQUIVARIANT FUNCTIONALS OF EVEN DATA STAY EVEN
 ========================================================================================
-  [PASS] Representative current-bank-like equivariant functionals preserve residual-Z2 evenness  (Y^dag Y: even=1.5e-16, odd=2.5e-16; Hermitian symmetrization: even=9.6e-17, odd=2.2e-16; Hermitian quadratic combination: even=1.2e-16, odd=3.2e-16; Resolvent of H: even=1.6e-16, odd=5.2e-17)
+  [PASS] Representative current-bank-like equivariant functionals preserve residual-Z2 evenness  (Y^dag Y: even=3.9e-16, odd=2.7e-16; Hermitian symmetrization: even=1.4e-16, odd=2.5e-16; Hermitian quadratic combination: even=3.9e-16, odd=3.4e-16; Resolvent of H: even=7.2e-17, odd=5.2e-17)
 
   So scalar/Hermitian/equivariant post-processing of the retained even
   local data cannot activate the odd slot by itself.
@@ -44,6 +44,15 @@ PART 3: THE CURRENT-STACK LAW FOR THE ODD SLOT IS ZERO
 
   So the exact current-stack answer is not an unknown coefficient.
   It is the zero law c_odd,current = 0.
+
+========================================================================================
+PART 4: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE
+========================================================================================
+  per_element: checked -- the odd slot is not a norm but one specific matrix entry, Im K[0,1], and it is extracted separately for every kernel this runner builds: 2.68e-16 on the bridged Hermitian kernel, 0.00e+00 on the retained even circulant, and 0.190000 on the hypothetical activated kernel, so the zero law is read off an entry rather than inferred.
+  per_site: checked -- the three-element local site basis on which the shift S and the residual-Z2 transposition P23 act is resolved site by site: the weak-axis split puts a = (1.4+0.3j) on site 1 and the identical b = (0.8-0.2j) on sites 2 and 3, and evenness is verified as the exact site-permutation identity P23 D P23^dag = D to 0.00e+00.
+  per_mode: checked and not executed -- the Z_3 character modes are never separated here; uz3 is applied only as a whole-matrix conjugation and no eigenvalue or character amplitude is taken, so the runner does not exhibit the odd slot as the splitting between the two doublet characters even though that is where it would live.
+  per_block: checked -- the residual-Z2 orbit structure gives a 1-dimensional weak-axis block and a 2-dimensional degenerate block, and all four representative bank functionals (Y^dag Y, Hermitian symmetrization, the Hermitian quadratic combination, the resolvent) are evaluated against that block structure and each stays even, so no single block of the retained bank activates the slot.
+  lattice_wide: checked and not executed -- the entire system is the one three-site orbit above; there is no extended lattice, no volume and no limit taken anywhere in this runner, so c_odd,current = 0 is certified as a present-tense statement about that single retained bank and is not promoted to any lattice-scale zero law.
 
 ========================================================================================
 RESULT

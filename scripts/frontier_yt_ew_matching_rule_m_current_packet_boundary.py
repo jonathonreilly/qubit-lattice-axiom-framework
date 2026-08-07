@@ -87,6 +87,43 @@ def main() -> int:
     gate.check("the repaired note links no conditional OZI dependency", "EW_CURRENT_MATCHING_OZI_SUPPRESSION" not in text)
     gate.check("the repaired note leaves audit authority external", "independent audit lane only" in text)
 
+    total = gate.pass_count + gate.fail_count
+    n_arith = 5
+    print("\nN5 execution certificate")
+    print(
+        f"per_element: checked and not executed — stated plainly, this file is "
+        f"a note-structure verifier plus a dimension count, and it never "
+        f"builds an operator, a vector or a matrix of any kind, so it resolves "
+        f"no matrix element whatsoever."
+    )
+    print(
+        f"per_site: checked and not executed — the boundary it certifies "
+        f"concerns which sentences the source note may and may not contain, "
+        f"together with colour-channel dimensions; neither of those carries a "
+        f"position argument and no lattice site is ever defined."
+    )
+    print(
+        f"per_mode: checked and not executed — there is no spectrum, no "
+        f"momentum variable and no eigenvector in the file; the only numbers "
+        f"it computes are the integers {dim_full}, {dim_singlet} and "
+        f"{dim_adjoint} together with their ratio."
+    )
+    print(
+        f"per_block: dimension counting only — the colour blocks enter purely "
+        f"as the integer dimensions singlet {dim_singlet} and adjoint "
+        f"{dim_adjoint} out of N_c^2 = {dim_full}, giving F_adj = {f_adj} "
+        f"exactly in Fraction arithmetic, and that count is the whole "
+        f"numerical content: {total - n_arith} of the {total} checks are "
+        f"note-substring assertions and the remaining {n_arith} are this "
+        f"count."
+    )
+    print(
+        f"lattice_wide: checked and not executed — no lattice object of any "
+        f"kind is present here, and the runner's own declared scope is a "
+        f"current-packet boundary on a single note, which asserts nothing at "
+        f"any lattice extent, volume or limit."
+    )
+
     ok = gate.fail_count == 0
     print(f"\nYT EW matching rule M current-packet boundary: {'PASS' if ok else 'FAIL'}")
     print(f"PASS={gate.pass_count} FAIL={gate.fail_count}")

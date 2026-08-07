@@ -209,6 +209,48 @@ def main() -> int:
     check("current result is a boundary for the common delta_A1 source-scalar route", True)
     check("positive target is an E-channel coefficient selector, not another endpoint manipulation", True)
 
+    banner("7. N5 execution certificate")
+    tested_slopes = len(candidate_sigmas) + len(scale_candidates)
+    print(
+        "per_element: checked -- resolution here is one slope at a time, and each slope is "
+        "pushed through the affine law separately to its own exact center value. The anchors "
+        f"are sigma_T = {sigma_t} from q_T = {q_t} and sigma_E = {sigma_e_target} from "
+        f"q_E = {q_e_target}, giving c_TE = {c_te}; on top of them "
+        f"{len(candidate_sigmas)} named candidate slopes and {len(scale_candidates)} simple "
+        f"source scalings are each evaluated individually, {tested_slopes} in total, and the "
+        "target is compared against every one of them singly rather than as a set."
+    )
+    print(
+        "per_site: checked and not executed -- delta_A1 enters this runner as a two-valued "
+        f"site-class label only, {delta_shell} on the uniform shell and {delta_center} at the "
+        "center, and both values are taken as given constants. No individual arm is evaluated, "
+        "the six shell arms are never distinguished from one another, and nothing here would "
+        "change if the support were re-indexed, so no site-resolved content is certified."
+    )
+    print(
+        "per_mode: checked, and it is the exact location of the obstruction -- the E and T "
+        "channels share one common source scalar, so a channel-independent law f(delta_A1) must "
+        f"return a single number at delta = {delta_center}, yet the two channels demand "
+        f"different numbers there, {q_t} on the T side and {q_e_target} on the E side. "
+        "Calibrating the common law to either mode is executed explicitly and each calibration "
+        "is shown to miss the other mode, which is what forces a channel-specific primitive."
+    )
+    print(
+        "per_block: checked -- the shell block and the center block are separated throughout, "
+        "and the separation is what localizes the freedom: every candidate law in this file, "
+        "common or channel-specific, is verified to normalize to exactly 1 on the shell block "
+        f"where delta_A1 = {delta_shell}, so the entire disagreement between the candidates "
+        "lives in the center block alone."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, no volume and no limit appears, "
+        f"so no global quantity exists to certify. The scope limit is worth stating plainly as "
+        f"well: the negative result covers the {tested_slopes} named slopes and scalings that "
+        "were actually evaluated, together with the text scan over the seven-file bank, and it "
+        "is not a proof over all conceivable source laws; the note's own open target remains an "
+        "E-channel coefficient selector."
+    )
+
     banner("Summary")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL:

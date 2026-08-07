@@ -418,6 +418,54 @@ check(
 
 
 print()
+print("(F10) N5 execution certificate -- resolved granularity (print-only)")
+print("-" * 72)
+
+print(
+    "per_element: checked - the finest grain resolved is the pair of complex "
+    "components of the CP^1 section chi(theta) = (1, e^(-2 i theta))/sqrt(2) on "
+    "the Qubit one-site algebra M_2(C); every Pancharatnam overlap is that "
+    "two-component vdot, and the decisive numbers are read straight off it, "
+    "|<chi|g.chi>| = 0.500000000000 and arg = 1.047197551197 = pi/3, with "
+    "base-point independence over 17 equator points at 8.88e-16."
+)
+print(
+    "per_site: checked and not executed - there is no Z^3 site index in this "
+    "runner. Its base is the one-real-parameter selected line, sampled only at "
+    "the three supplied reference points m_0 = -0.265816, m_pos = -1.295795 and "
+    "m_* = -1.160443, and supplied ingredient R2 states that this physical base "
+    "is an interval; an interval of a single scalar parameter carries no site "
+    "to resolve and no neighbour sum is formed."
+)
+print(
+    "per_mode: checked - the mode content is what the CP^1 coordinate actually "
+    "is. The projective doublet ray is the conjugate Fourier-mode pair "
+    "(v_omega, v_omega_bar) of the Z_3 circulant, so the relative phase "
+    "e^(-2 i theta) between those two modes is the only mode datum carried, and "
+    "the trivial mode v_1 drops out of the projective coordinate and is never "
+    "re-evaluated. The runner then sweeps the mode count itself, d in "
+    "{2, 3, 5, 7, 11}, and gets gamma_PB = 0, pi/3, -2pi/5, -2pi/7, -2pi/11 - "
+    "each a rational multiple of pi to 2.22e-16 and none equal to 2/d^2."
+)
+print(
+    "per_block: checked, but only as a dimension count - no block operator is "
+    "ever built. F7a resolves the Plancherel weight purely as a ratio of real "
+    "dimensions, the 2 real degrees of freedom of the b block over "
+    "dim_R Herm_d = d^2, giving 2/9 at d = 3 and the analogous counts at "
+    "d = 5, 7; the block Frobenius split d a_0^2 + 2 d |b|^2 appears only as a "
+    "comment and no amplitude is evaluated on either block. That this is a bare "
+    "count with no units is exactly the F9c obstruction."
+)
+print(
+    "lattice_wide: checked and not executed - nothing extensive is summed and "
+    "no limit is taken. The only closed object the runner forms is a three-step "
+    "Bargmann product around the Z_3 orbit on the equator, |gamma_closed| = pi, "
+    "which is a three-point cycle on CP^1 rather than a lattice-wide holonomy, "
+    "and supplied ingredient R2 is precisely the statement that no closed-loop "
+    "Berry holonomy is forced here by topology."
+)
+
+print()
 print("=" * 72)
 print(f"PASS={PASS} FAIL={FAIL}")
 print("=" * 72)

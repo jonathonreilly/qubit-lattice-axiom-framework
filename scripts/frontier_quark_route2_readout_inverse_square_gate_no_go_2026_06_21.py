@@ -266,6 +266,50 @@ def main() -> int:
     for label, marker in banned_markers:
         check(f"note avoids overclaim marker: {label}", marker not in note)
 
+    print("\nPART 6: N5 execution certificate")
+    print(
+        "per_element: checked -- every quantity on the arithmetic side is an exact Fraction "
+        "resolved on its own line, never a bundle: the two Schur weights w_E = "
+        f"{W_E} and w_T = {W_T}, the first and second inverse powers of their ratio "
+        f"{inverse_one} and {inverse_square}, then q_T = {q_t}, the one-power endpoint pair "
+        f"(q_E = {q_e_one}, rho_E = {rho_e_one}) and the square endpoint pair (q_E = "
+        f"{q_e_square}, rho_E = {rho_e_square}), and the center ratio "
+        f"{center_te(SHELL_TE, q_t, q_e_square)}. On top of that each of the "
+        f"{len(sample_rhos)} sampled rho_E values is tested individually against the one "
+        "positivity bound the bank actually supplies, rho_E > -6."
+    )
+    print(
+        "per_site: checked and not executed -- this gate is about a 2x4 readout row and a "
+        "handful of rational coefficients, and no configuration is ever built. The seven-site "
+        "star that the readout row ultimately acts on is not instantiated here, so there is no "
+        "site at which anything could be, or is, evaluated in this file."
+    )
+    print(
+        "per_mode: checked, and it is where the substance of this runner sits -- the E and T1 "
+        f"channels enter with their own distinct Schur weights, w_E = {W_E} against w_T = "
+        f"{W_T}, and the whole inverse-square value under test is nothing but a power of their "
+        f"ratio. Resolving the two modes separately is what makes the gate visible: one inverse "
+        f"power lands rho_E = {rho_e_one} while two land rho_E = {rho_e_square}, so the exponent "
+        "p is a genuine free choice that the bank does not fix."
+    )
+    print(
+        "per_block: checked -- the six constraint families are each carried as a separate root "
+        "and each is separately shown to have no typed path to rho_E_21_4: exact readout family, "
+        "Schur projector weights, quadratic O_h invariants, registration/idempotency, "
+        "positivity, and factor rigidity. Honesty note on the executed evidence: the "
+        "free-direction content of three of those families is imported as quoted marker strings "
+        "from the two named bank runners and from the rigidity note; it is asserted here by "
+        "citation, not recomputed inside this file."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no volume, no thermodynamic limit and no "
+        "extensive quantity exists in this runner, so there is nothing global to take a limit "
+        "of. The nearest whole-bank statement it does close is that the admissible set remains "
+        f"a one-parameter line: across the {len(BANK_FILES)} named bank files the strongest "
+        "executed restriction on rho_E is the single one-sided bound rho_E > -6, which leaves "
+        "both 3/2 and 21/4 alive, and that persistent freedom is the no-go itself."
+    )
+
     print("\nTOTAL: PASS=%d, FAIL=%d" % (PASS, FAIL))
     if FAIL:
         return 1

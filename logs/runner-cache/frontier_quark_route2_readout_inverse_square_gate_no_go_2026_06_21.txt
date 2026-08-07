@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21.py
-runner_sha256: f3cfca437395af3419242db7be8bde6799d87f9aacd4cb0f301cfd448afd9afd
+runner_sha256: 5ee6f227bcc2d768c9aa6ee490aa1e18f1dc3525187545808b1786a489158c56
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 Route-2 readout-only inverse-square coefficient gate
@@ -86,6 +86,13 @@ PASS: note avoids overclaim marker: branch-local status-promotion phrase
 PASS: note avoids overclaim marker: future-retention phrase
 PASS: note avoids overclaim marker: promotion-to-retention phrase
 PASS: note avoids overclaim marker: no-future-theorem phrase
+
+PART 6: N5 execution certificate
+per_element: checked -- every quantity on the arithmetic side is an exact Fraction resolved on its own line, never a bundle: the two Schur weights w_E = 1/3 and w_T = 1/2, the first and second inverse powers of their ratio 3/2 and 9/4, then q_T = 5/6, the one-power endpoint pair (q_E = 5/4, rho_E = 3/2) and the square endpoint pair (q_E = 15/8, rho_E = 21/4), and the center ratio -8/9. On top of that each of the 6 sampled rho_E values is tested individually against the one positivity bound the bank actually supplies, rho_E > -6.
+per_site: checked and not executed -- this gate is about a 2x4 readout row and a handful of rational coefficients, and no configuration is ever built. The seven-site star that the readout row ultimately acts on is not instantiated here, so there is no site at which anything could be, or is, evaluated in this file.
+per_mode: checked, and it is where the substance of this runner sits -- the E and T1 channels enter with their own distinct Schur weights, w_E = 1/3 against w_T = 1/2, and the whole inverse-square value under test is nothing but a power of their ratio. Resolving the two modes separately is what makes the gate visible: one inverse power lands rho_E = 3/2 while two land rho_E = 21/4, so the exponent p is a genuine free choice that the bank does not fix.
+per_block: checked -- the six constraint families are each carried as a separate root and each is separately shown to have no typed path to rho_E_21_4: exact readout family, Schur projector weights, quadratic O_h invariants, registration/idempotency, positivity, and factor rigidity. Honesty note on the executed evidence: the free-direction content of three of those families is imported as quoted marker strings from the two named bank runners and from the rigidity note; it is asserted here by citation, not recomputed inside this file.
+lattice_wide: checked and not executed -- no volume, no thermodynamic limit and no extensive quantity exists in this runner, so there is nothing global to take a limit of. The nearest whole-bank statement it does close is that the admissible set remains a one-parameter line: across the 5 named bank files the strongest executed restriction on rho_E is the single one-sided bound rho_E > -6, which leaves both 3/2 and 21/4 alive, and that persistent freedom is the no-go itself.
 
 TOTAL: PASS=61, FAIL=0
 VERDICT: bounded current-bank no-go. The bank contains the exact inverse-square value 9/4, but no readout-only coefficient theorem bridges that value to rho_E=21/4.

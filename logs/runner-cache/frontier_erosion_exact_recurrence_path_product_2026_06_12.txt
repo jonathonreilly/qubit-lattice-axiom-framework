@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_erosion_exact_recurrence_path_product_2026_06_12.py
-runner_sha256: 9a8ae9be43dbad33bb791f8b9f1fddc5083b992093d71c5c2e99c91a1b074e01
+runner_sha256: 26e0c4ecb0eea18b037ed1f4f0a2e22b50352a4deb9cecaf695ffe4112294923
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.29
+elapsed_sec: 5.29
 status: ok
 ----- stdout -----
 V3 model: pointer |+>, three |0> fragments; phase 1 has three pointer-to-fragment CNOT broadcasts each followed by M_pm; phase 2 uses M_pm on the pointer only.
@@ -13,8 +13,8 @@ PASS: V3a direct 2x2 Kraus algebra matches the derived single-branch Bloch actio
 PASS: V3a nonselective transverse components contract by exactly sqrt(1-eps^2) at <=1e-14
 V3b derived daughter map for each fragment, with pre-branch p=<Zp>, f=<Zf>, q=<Zp Zf>, c=q-pf: w_s/w=(1+s eps p)/2; p_s=(p+s eps)/(1+s eps p); f_s=(f+s eps q)/(1+s eps p); q_s=(q+s eps f)/(1+s eps p); c_s=(1-eps^2)c/(1+s eps p)^2.
 V3c eps=0.6 direct measured Rbar(t=0..10)=[1.44, 0.4607999999999999, 0.7679999999999997, 0.2457599999999999, 0.4300799999999992, 0.1376255999999999, 0.247726079999999, 0.0792723456, 0.1453326336000004, 0.04650644275200091, 0.0863691079680024]
-V3c eps=0.6 recurrence predicted Rbar(t=0..10)=[1.44, 0.4607999999999998, 0.7679999999999996, 0.2457599999999998, 0.4300799999999996, 0.1376255999999998, 0.2477260799999997, 0.07927234559999988, 0.1453326335999998, 0.04650644275199991, 0.08636910796799985]
-V3c eps=0.6 odd envelope ratios=[t1->t3:0.5333333333333332, t3->t5:0.5599999999999998, t5->t7:0.5759999999999997, t7->t9:0.5866666666666664]
+V3c eps=0.6 recurrence predicted Rbar(t=0..10)=[1.44, 0.4607999999999998, 0.7679999999999997, 0.2457599999999998, 0.4300799999999991, 0.1376255999999998, 0.2477260799999989, 0.07927234559999995, 0.1453326336000001, 0.04650644275200083, 0.08636910796800232]
+V3c eps=0.6 odd envelope ratios=[t1->t3:0.5333333333333332, t3->t5:0.5599999999999994, t5->t7:0.5760000000000006, t7->t9:0.5866666666666775]
 PASS: V3 finite-tree size probe eps=0.6: direct and recurrence trees have 8*2^t branches through t=10
 PASS: V3 finite-tree wraparound probe eps=0.6: branch paths stay aligned and Born weights stay normalized through t=10
 PASS: V3 threshold-count stability probe eps=0.6: no checked connected correlator lies on threshold 0.5
@@ -22,8 +22,8 @@ PASS: V3b eps=0.6: exact phase-2 recurrence matches the direct 16-dim tree at ev
 PASS: V3c eps=0.6: recurrence-predicted Rbar(t) equals the direct measured threshold-count table at every checked step <=1e-12
 PASS: V3c eps=0.6: recurrence-predicted odd-step envelope ratios equal direct measured ratios <=1e-12
 V3c eps=0.9 direct measured Rbar(t=0..10)=[0, 0.04061249999999995, 0, 0.006430312499999988, 0, 0.001069039453124999, 0, 0.0001828057464843753, 0, 3.18386675126953e-05, 0]
-V3c eps=0.9 recurrence predicted Rbar(t=0..10)=[0, 0.04061249999999993, 0, 0.006430312499999954, 0, 0.001069039453124964, 0, 0.0001828057464843197, 0, 3.183866751278532e-05, 0]
-V3c eps=0.9 odd envelope ratios=[t1->t3:0.1583333333333325, t3->t5:0.1662499999999956, t5->t7:0.170999999999954, t7->t9:0.1741666666672117]
+V3c eps=0.9 recurrence predicted Rbar(t=0..10)=[0, 0.04061249999999993, 0, 0.006430312499999953, 0, 0.001069039453124965, 0, 0.0001828057464843201, 0, 3.183866751278544e-05, 0]
+V3c eps=0.9 odd envelope ratios=[t1->t3:0.1583333333333324, t3->t5:0.1662499999999958, t5->t7:0.1709999999999542, t7->t9:0.174166666667212]
 PASS: V3 finite-tree size probe eps=0.9: direct and recurrence trees have 8*2^t branches through t=10
 PASS: V3 finite-tree wraparound probe eps=0.9: branch paths stay aligned and Born weights stay normalized through t=10
 PASS: V3 threshold-count stability probe eps=0.9: no checked connected correlator lies on threshold 0.5
@@ -62,7 +62,7 @@ V3d eps=0.6 crossing ledger for threshold 0.5 (10278 branch-fragment edge change
   step=10 frag=1 up count=1584 born_weight=0.0132875550720003 examples=[P1=+++ P2=++++------ |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++-+----- |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++--+---- |c|:0.221453->0.64 w=8.38861e-06]
   step=10 frag=2 up count=1584 born_weight=0.0132875550720003 examples=[P1=+++ P2=++++------ |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++-+----- |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++--+---- |c|:0.221453->0.64 w=8.38861e-06]
   step=10 frag=3 up count=1584 born_weight=0.0132875550720003 examples=[P1=+++ P2=++++------ |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++-+----- |c|:0.221453->0.64 w=8.38861e-06; P1=+++ P2=+++--+---- |c|:0.221453->0.64 w=8.38861e-06]
-PASS: V3d eps=0.6: no single eps-only odd-envelope ratio fits the checked odd-step table; measured odd ratios span 0.05333333333333323 and threshold crossings locate the obstruction
+PASS: V3d eps=0.6: no single eps-only odd-envelope ratio fits the checked odd-step table; measured odd ratios span 0.05333333333334433 and threshold crossings locate the obstruction
 V3d eps=0.9 crossing ledger for threshold 0.5 (11448 branch-fragment edge changes):
   step=1 frag=1 up count=6 born_weight=0.01353749999999998 examples=[P1=++- P2=- |c|:0.19->1 w=0.00225625; P1=+-+ P2=- |c|:0.19->1 w=0.00225625; P1=+-- P2=+ |c|:0.19->1 w=0.00225625]
   step=1 frag=2 up count=6 born_weight=0.01353749999999998 examples=[P1=++- P2=- |c|:0.19->1 w=0.00225625; P1=+-+ P2=- |c|:0.19->1 w=0.00225625; P1=+-- P2=+ |c|:0.19->1 w=0.00225625]
@@ -94,7 +94,13 @@ V3d eps=0.9 crossing ledger for threshold 0.5 (11448 branch-fragment edge change
   step=10 frag=1 down count=1848 born_weight=1.061288917092849e-05 examples=[P1=+++ P2=+++------+ |c|:1->0.19 w=5.74291e-09; P1=+++ P2=+++------- |c|:1->0.19 w=5.74291e-09; P1=+++ P2=++-+-----+ |c|:1->0.19 w=5.74291e-09]
   step=10 frag=2 down count=1848 born_weight=1.061288917092849e-05 examples=[P1=+++ P2=+++------+ |c|:1->0.19 w=5.74291e-09; P1=+++ P2=+++------- |c|:1->0.19 w=5.74291e-09; P1=+++ P2=++-+-----+ |c|:1->0.19 w=5.74291e-09]
   step=10 frag=3 down count=1848 born_weight=1.061288917092849e-05 examples=[P1=+++ P2=+++------+ |c|:1->0.19 w=5.74291e-09; P1=+++ P2=+++------- |c|:1->0.19 w=5.74291e-09; P1=+++ P2=++-+-----+ |c|:1->0.19 w=5.74291e-09]
-PASS: V3d eps=0.9: no single eps-only odd-envelope ratio fits the checked odd-step table; measured odd ratios span 0.01583333333387926 and threshold crossings locate the obstruction
+PASS: V3d eps=0.9: no single eps-only odd-envelope ratio fits the checked odd-step table; measured odd ratios span 0.01583333333387957 and threshold crossings locate the obstruction
+V3e N5 EXECUTION CERTIFICATE: what this runner resolves
+per_element: checked — the direct-versus-recurrence agreement is taken entrywise, not as a single distance. Branch weight and pointer polarization are compared scalar by scalar, and the fragment polarization vector, the pointer-fragment correlator vector and the connected correlator vector are each compared component by component, with c = q - p_z f_z re-verified entrywise inside the recurrence at tolerance 1e-12.
+per_site: checked — the register is four qubit sites and the fragment content is resolved site by site. Each of the fragments (1, 2, 3) carries its own Z expectation, its own pointer-fragment correlator and its own connected correlator, the threshold indicator |c_i| >= 0.5 is evaluated separately per fragment, and every crossing event in the ledger is tagged with the fragment index that crossed.
+per_mode: checked and not executed — no spectral or normal-mode decomposition is formed anywhere in this runner. The single-branch Kraus operators are diagonal in Z, so the recurrence closes exactly on a fixed Pauli-Z observable set (pointer polarization, per-fragment polarization, and their correlator); there is no diagonalizing mode basis to introduce and none is used.
+per_block: checked — the outcome tree is resolved in two labelled blocks that are tracked separately on every branch. The phase-1 label records the three pointer-to-fragment broadcast measurements and the phase-2 label records the subsequent 10 pointer-only steps, and the direct and recurrence constructions are required to agree branch by branch on both labels, not merely on aggregate counts.
+lattice_wide: checked and executed only at fixed register size — R-bar is a genuine whole-register aggregate, summing over all branches the branch weight times the number of fragment sites above threshold. It is bounded evidence: the register is fixed at 4 qubits, the depth at 10 phase-2 steps and the coupling at eps in (0.6, 0.9). No large-register or asymptotic limit is taken, so the absent single-ratio envelope is a checked-table statement and not a proof of nonexistence.
 TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----

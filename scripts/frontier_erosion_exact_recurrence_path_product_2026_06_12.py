@@ -551,6 +551,50 @@ def v3d(results):
             )
 
 
+def n5_execution_certificate():
+    print("V3e N5 EXECUTION CERTIFICATE: what this runner resolves")
+    print(
+        "per_element: checked — the direct-versus-recurrence agreement is taken "
+        "entrywise, not as a single distance. Branch weight and pointer polarization are "
+        "compared scalar by scalar, and the fragment polarization vector, the "
+        "pointer-fragment correlator vector and the connected correlator vector are each "
+        f"compared component by component, with c = q - p_z f_z re-verified entrywise "
+        f"inside the recurrence at tolerance {TOL_TREE:g}."
+    )
+    print(
+        "per_site: checked — the register is four qubit sites and the fragment content is "
+        f"resolved site by site. Each of the fragments {FRAGMENTS} carries its own "
+        "Z expectation, its own pointer-fragment correlator and its own connected "
+        f"correlator, the threshold indicator |c_i| >= {CONNECT_THRESHOLD} is evaluated "
+        "separately per fragment, and every crossing event in the ledger is tagged with "
+        "the fragment index that crossed."
+    )
+    print(
+        "per_mode: checked and not executed — no spectral or normal-mode decomposition is "
+        "formed anywhere in this runner. The single-branch Kraus operators are diagonal "
+        "in Z, so the recurrence closes exactly on a fixed Pauli-Z observable set "
+        "(pointer polarization, per-fragment polarization, and their correlator); there "
+        "is no diagonalizing mode basis to introduce and none is used."
+    )
+    print(
+        "per_block: checked — the outcome tree is resolved in two labelled blocks that "
+        "are tracked separately on every branch. The phase-1 label records the three "
+        "pointer-to-fragment broadcast measurements and the phase-2 label records the "
+        f"subsequent {DIRECT_STEPS} pointer-only steps, and the direct and recurrence "
+        "constructions are required to agree branch by branch on both labels, not merely "
+        "on aggregate counts."
+    )
+    print(
+        "lattice_wide: checked and executed only at fixed register size — R-bar is a "
+        "genuine whole-register aggregate, summing over all branches the branch weight "
+        "times the number of fragment sites above threshold. It is bounded evidence: the "
+        f"register is fixed at {N_QUBITS} qubits, the depth at {DIRECT_STEPS} phase-2 "
+        f"steps and the coupling at eps in {EPS_VALUES}. No large-register or asymptotic "
+        "limit is taken, so the absent single-ratio envelope is a checked-table statement "
+        "and not a proof of nonexistence."
+    )
+
+
 def main():
     print(
         "V3 model: pointer |+>, three |0> fragments; phase 1 has three "
@@ -564,6 +608,7 @@ def main():
     for eps in EPS_VALUES:
         results[eps] = analyze_eps(eps)
     v3d(results)
+    n5_execution_certificate()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
         sys.exit(1)

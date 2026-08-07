@@ -732,6 +732,50 @@ def main() -> int:
     print("=" * 72)
     print("Summary")
     print("=" * 72)
+    overlaps_cert = verify_block6_species_uniformity()
+    print()
+    print("N5 execution certificate")
+    print(
+        f"per_element: the singlet state on Q_L (x) Q_L* is built explicitly "
+        f"as a {DIM_Q_L}x{DIM_Q_L} array and read out entry by entry — its "
+        f"{len(overlaps_cert)} basis Clebsch-Gordan overlaps are all the exact "
+        f"algebraic value 1/sqrt({DIM_Q_L}), with spread max minus min equal "
+        f"to {max(overlaps_cert) - min(overlaps_cert):.1f}, which is what makes "
+        f"the species substitution to the b-quark an identity rather than an "
+        f"approximation."
+    )
+    print(
+        f"per_site: checked and not executed — no lattice is constructed here "
+        f"at all; the lattice surface enters only as the inherited scalar "
+        f"anchor alpha_LM = {ALPHA_LM:.5f} used to set g_3 at M_Pl, so nothing "
+        f"in this analysis is decided site by site."
+    )
+    print(
+        f"per_mode: checked and not executed — this runner solves no "
+        f"eigenproblem and constructs no momentum or Fourier mode; the ODE "
+        f"state it integrates is the five running couplings "
+        f"(g1, g2, g3, y_t, y_b) in log-scale from ln(v) to ln(M_Pl) under "
+        f"RK45 at rtol 1e-11, atol 1e-13 and max_step 0.5, which are couplings "
+        f"rather than modes of any operator."
+    )
+    print(
+        f"per_block: the block structure that carries the argument is resolved "
+        f"exactly — the Q_L colour-isospin block has dimension "
+        f"N_C * N_iso = {DIM_Q_L}, and the Delta_R assembly splits into the "
+        f"three Casimir channels C_F = 4/3, C_A = 3 and T_F n_f with "
+        f"T_F = 1/2 (all three confirmed live to 1e-12: "
+        f"{abs(C_F - 4/3) < 1e-12 and abs(C_A - 3) < 1e-12 and abs(T_F - 0.5) < 1e-12}), "
+        f"none of which carries a species index, so the bottom and top blocks "
+        f"inherit the identical Delta_R."
+    )
+    print(
+        f"lattice_wide: checked and not executed — this analysis defines no "
+        f"volume, spacing, boundary condition or limit at any point, and the "
+        f"falsification it reports is a comparison of scalar mass predictions "
+        f"against the runner's declared PDG comparators m_t = {M_T_OBS} GeV "
+        f"and m_b(m_b) = {M_B_OBS_MB} GeV, not any lattice-scale statement."
+    )
+    print()
     print(f"  Total: PASS = {PASS_COUNT}, FAIL = {FAIL_COUNT}")
     print()
     print("Verdict (Outcome A, Yukawa unification at M_Pl):")

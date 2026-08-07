@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_generation_rooting_undefined.py
-runner_sha256: f37f6e6a3b46d56071e1400ada129e6fb943a51994eda714310f0c3176d08cd2
+runner_sha256: 0b5f00a55ea5df67e77d6f661f0e71772259e0321bb9e9424a5fd7b452d702a9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 3.52
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -70,7 +70,7 @@ CHECK 2: BZ-corner projection breaks taste symmetry
   [PASS] [EXACT] L=4_proj_spec_differs: 27/27 projected eigenvalues not in original spectrum
 
     L = 6:
-  [PASS] [EXACT] L=6_P_is_projector: ||P^2 - P||/||P|| = 9.43e-16, rank = 27
+  [PASS] [EXACT] L=6_P_is_projector: ||P^2 - P||/||P|| = 9.41e-16, rank = 27
   [PASS] [EXACT] L=6_proj_spec_differs: 27/27 projected eigenvalues not in original spectrum
 
 ==============================================================================
@@ -149,6 +149,16 @@ SYNTHESIS: COORDINATE ROOTING IS UNDEFINED IN HAMILTONIAN Cl(3) ON Z^3
 
 
 ==============================================================================
+N5 EXECUTION CERTIFICATE
+==============================================================================
+
+per_element: the 8x8 Clifford and taste relations are resolved entry by entry and close on the nose — the largest Frobenius residual over the six anticommutators {Gamma_i, Gamma_j} - 2 delta_ij I, the three involutions Xi_mu^2 - I and the three taste-flip commutators is 0.0, i.e. every one of those matrix entries is an exact binary zero.
+per_site: the staggered Hamiltonian is assembled site by site over the whole cube — 64 sites at L = 4 and 216 at L = 6, each given three periodic hoppings carrying the staggered phases eta_1 = 1, eta_2 = (-1)^(n_1) and eta_3 = (-1)^(n_1 + n_2), so no site is omitted from the projected-spectrum comparison.
+per_mode: momentum modes are classified one at a time by nearest BZ corner, and exactly 27 of the 64 modes at L = 4 and 27 of the 216 at L = 6 land on the corner (0, 0, 0); each of those 27 nontrivial eigenvalues of P H P is then compared against the full spectrum at absolute tolerance 1e-8 and none is found in it.
+per_block: coordinate blocks of the taste carrier are enumerated exhaustively rather than sampled — all 246 proper corner subsets of size 2 to 7 fail at least one Cl(3) anticommutator at tolerance 1e-10, and none of the 254 proper subsets of size 1 to 7 is closed under the transitive (Z_2)^3 taste-flip action; the 200 seeded random 4D rotations are a support-only probe and are reported as such, not as an exhaustive subspace claim.
+lattice_wide: every lattice statement here is finite-N and is certified only as such — periodic cubes of 64 and 216 sites, with no thermodynamic and no continuum limit taken anywhere; on each cube the corner projector meets the runner's ||P^2 - P|| / ||P|| < 1e-10 criterion at integer rank 27, and the bandwidth of P H P departs from that of H by more than the runner's 1 percent criterion.
+
+==============================================================================
 RESULTS SUMMARY
 ==============================================================================
   [PASS] [EXACT] full_{G1,G1}: error = 0.00e+00
@@ -178,7 +188,7 @@ RESULTS SUMMARY
   [PASS] [EXACT] only_trivial_taste_closed: proper subsets closed under all taste flips: 0 (must be 0)
   [PASS] [EXACT] L=4_P_is_projector: ||P^2 - P||/||P|| = 6.22e-16, rank = 27
   [PASS] [EXACT] L=4_proj_spec_differs: 27/27 projected eigenvalues not in original spectrum
-  [PASS] [EXACT] L=6_P_is_projector: ||P^2 - P||/||P|| = 9.43e-16, rank = 27
+  [PASS] [EXACT] L=6_P_is_projector: ||P^2 - P||/||P|| = 9.41e-16, rank = 27
   [PASS] [EXACT] L=6_proj_spec_differs: 27/27 projected eigenvalues not in original spectrum
   [PASS] [EXACT] L=4_spec_not_subset: 27/27 projected eigenvalues NOT in original spectrum
   [PASS] [EXACT] L=4_no_rescaling: best rescaling matches 2/27

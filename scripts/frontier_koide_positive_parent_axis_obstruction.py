@@ -137,10 +137,58 @@ def part3_observed_masses():
     )
 
 
+def part4_n5_certificate() -> None:
+    """Granularity report. Prints only; adds no check and changes no count."""
+    print()
+    print("=" * 88)
+    print("PART 4: N5 execution certificate — what this runner resolves")
+    print("=" * 88)
+    print(
+        "  per_element: resolved, and this is the granularity the whole obstruction is "
+        "stated at. The argument is a comparison of individual matrix entries: the three "
+        "diagonal entries of a Hermitian circulant are shown equal, the off-diagonals are "
+        "identified exactly as b and its conjugate so that demanding axis-diagonality sets "
+        "b to zero, the Fourier-built parent's entries M01 and M02 are shown nonzero away "
+        "from full degeneracy, and at observed masses the largest off-diagonal modulus is "
+        "required to exceed 1."
+    )
+    print(
+        "  per_site: checked and not executed — no lattice or spatial index enters. The "
+        "'axis basis' whose diagonal is read is the generation-axis basis fixed by "
+        "U_e = I_3, not a set of sites, and exactly one 3x3 parent operator is built. "
+        "There is no second location at which the readout could be posed differently."
+    )
+    print(
+        "  per_mode: resolved — the parent is specified mode by mode in the C_3 character "
+        "channel, constructed as F diag(m1, m2, m3) F^dag with the Fourier matrix built "
+        "from the exact cube root of unity, and its C_3 equivariance C M C^{-1} - M is "
+        "verified to be the zero matrix symbolically. The obstruction is precisely the "
+        "mismatch between that mode channel, where the spectrum is freely prescribed, and "
+        "the entry channel, where the physical readout is taken."
+    )
+    print(
+        "  per_block: checked and not executed — the three characters are never grouped "
+        "into singlet and doublet blocks, and grouping them would defeat the argument "
+        "rather than support it, since a block-level statement retains only the doublet's "
+        "total weight while the obstruction turns on which individual off-diagonal entries "
+        "are forced to vanish. The runner therefore stays at the entry and mode levels "
+        "throughout."
+    )
+    print(
+        "  lattice_wide: checked and not executed — there is no volume, sum over sites or "
+        "limit anywhere. None is available and none is wanted: the result is an exact "
+        "intersection of two linear conditions inside one fixed nine-dimensional matrix "
+        "space, circulance and axis-diagonality, whose common solutions are the scalars, "
+        "and an intersection of subspaces does not become larger or smaller with lattice "
+        "extent."
+    )
+
+
 def main() -> int:
     part1_intersection()
     part2_fourier_parent()
     part3_observed_masses()
+    part4_n5_certificate()
 
     print()
     print("Interpretation:")

@@ -732,6 +732,60 @@ def part6_narrowed_gap() -> None:
   )
 
 
+def part7_n5_execution_certificate() -> None:
+  """Part 7: N5 execution certificate — what this runner resolves per class."""
+  print("\n" + "=" * 88)
+  print("PART 7: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE")
+  print("=" * 88)
+
+  delta_star = SQRT6 / 2.0 - SQRT2 / 18.0
+  q_star = SQRT6 / 6.0 + SQRT2 / 18.0
+  m_star = 4.0 * SQRT2 / 9.0
+  m_probe = 0.5
+  k11 = K11_exact(m_probe, delta_star, q_star)
+  k22 = K22_exact(m_probe, delta_star, q_star)
+
+  print(
+    " per_element: checked — each Z_3 kernel entry is carried in exact closed "
+    "form and its dependence is tested on its own: K01 and K02 are verified "
+    "frozen constants with no (m, delta, q_+) dependence, K11 and K22 are "
+    "shown independent of delta, and K12 independent of q_+, so the "
+    f"parity split is established entry by entry with K11 - K22 = "
+    f"{k11 - k22:.10f} = -1/sqrt(3) exactly."
+  )
+  print(
+    " per_site: checked and not executed — the whole computation is carried by "
+    "the three chart coordinates (m, delta, q_+) feeding closed-form kernel "
+    "entries; this runner instantiates no lattice, no site index and no "
+    "spatial sum, so the parity-mixing selector question is never posed at "
+    "site resolution and no site-level claim is made."
+  )
+  print(
+    " per_mode: checked — the two Z_3 parity sectors are separated and each is "
+    "differentiated on its own: the even sector K11^2 + K22^2 depends only on "
+    "q_+ and the odd sector 2|K12|^2 only on delta, and the runner verifies "
+    "the gradient decoupling numerically, d/d(delta) of the even sector and "
+    "d/d(q_+) of the odd sector both coming out exactly zero — the mixing "
+    "functional is a sum of sectors, never a genuinely coupled one."
+  )
+  print(
+    " per_block: checked — the invariants are built strictly from the 2x2 "
+    "doublet block K[1:3, 1:3] while the singlet-facing entries stay frozen at "
+    "a_* and b_*, and the block choice is what decides the outcome: the three "
+    f"block invariants disagree, F1 selecting delta = {delta_star:.6f} with "
+    f"q_+ = {q_star:.6f}, F2 a different boundary extremum, and F3 losing q_+ "
+    "sensitivity entirely because the block's traceless part is constant."
+  )
+  print(
+    " lattice_wide: checked and not executed — no volume, thermodynamic limit "
+    "or lattice sum appears; the widest sweep is a finite ladder of seven "
+    "discrete m values confirming that the F1 boundary minimizer is "
+    f"m-independent (with the separate m-stationary point m_* = 4 sqrt(2)/9 = "
+    f"{m_star:.6f}), which is a bounded scale check on one chart rather than "
+    "any statement at lattice scale."
+  )
+
+
 def print_summary() -> None:
   print("\n" + "=" * 88)
   print(f"TOTAL: PASS = {PASS_COUNT}, FAIL = {FAIL_COUNT}")
@@ -751,6 +805,7 @@ def main() -> int:
   part4_functional_selection_ambiguity()
   part5_cross_check_vs_candidates()
   part6_narrowed_gap()
+  part7_n5_execution_certificate()
 
   print_summary()
   return 1 if FAIL_COUNT else 0

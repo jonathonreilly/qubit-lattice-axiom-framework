@@ -276,6 +276,40 @@ def main() -> int:
 
     check("PART F note does not claim AC_phi_lambda retirement", "claim `AC_phi_lambda` retirement" in note and "does not" in note)
 
+    print("PART G -- N5 execution certificate: what this runner resolves")
+    print(
+        "per_element: checked — the flux dependence is traced matrix element by "
+        "matrix element: every ring edge carries the Peierls factor exp(i Phi/N), "
+        "raising one edge weight to w=2 moves the constant term to "
+        "2w^2 + 2w cos Phi - 4, and adding the single real chord element at (0,2) "
+        "is what pushes flux out of the constant term into the lambda^1 coefficient."
+    )
+    print(
+        "per_site: checked — the ring sites are resolved individually by the "
+        "matrix-tree cofactors: at N=3 all nine (row, col) cofactors of the "
+        "unfluxed Laplacian equal 3, so no site or site pair carries a distinguished "
+        "spanning-tree weight that a flux term could attach to."
+    )
+    print(
+        "per_mode: checked and not executed — no individual eigenvalue is computed "
+        "anywhere in this runner; the spectrum enters only through its elementary "
+        "symmetric functions (all e_k flux-blind, e_{N-1} = N^2, det L = 2 - 2 cos Phi, "
+        f"Tr L^-1 = {trace_inverse_closed}), so nothing is certified mode by mode."
+    )
+    print(
+        "per_block: checked — four ring blocks N=3, 4, 5, 6 are each run separately "
+        "and all confine the flux to the constant term with e_{N-1} = N^2; a fifth "
+        "block, the 4-ring carrying a chord and hence a second independent cycle, "
+        "breaks exactly that and is the runner's structural rejector."
+    )
+    print(
+        "lattice_wide: checked and not executed — flux localization is verified only "
+        "on finite rings up to N=6 plus the one chorded 4-ring, with no large-N or "
+        "continuum limit taken; the lattice-wide step rests on the symbolic identity "
+        "d/dPhi g(cos Phi) = -sin Phi g'(cos Phi) for an unspecified outer function g, "
+        f"which is checked symbolically but on no lattice, with PASS={PASS}, FAIL={FAIL}."
+    )
+
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 and PASS >= 60 else 1
 

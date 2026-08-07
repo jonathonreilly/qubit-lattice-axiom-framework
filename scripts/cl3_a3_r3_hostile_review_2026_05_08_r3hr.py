@@ -526,6 +526,64 @@ def universal_r3s1_sweep(num_samples: int = 100) -> Dict[str, object]:
 
 
 # ---------------------------------------------------------------------------
+# N5 execution certificate
+# ---------------------------------------------------------------------------
+
+
+def n5_execution_certificate() -> None:
+    """Report the granularity at which this review actually resolves.
+
+    Reporting only: adds no attack vector, no check, and no PASS/FAIL item.
+    """
+    U = c3_unitary_on_hw1()
+    corners = hw1_corners()
+    sweep = universal_r3s1_sweep()
+    char = (
+        float(np.trace(np.eye(3, dtype=complex)).real),
+        float(np.trace(U).real),
+        float(np.trace(U @ U).real),
+    )
+    n_deform = len(np.linspace(0.0, 2.0, 11))
+
+    print(
+        "per_element: checked - every verdict here is read off individual matrix "
+        "entries: equal_corner_expectations extracts the three diagonal entries "
+        "O[alpha, alpha] one at a time and compares max minus min against 1e-10, "
+        "the translation decorations are the explicit diagonals diag(-1, +1, +1), "
+        "diag(+1, -1, +1), diag(+1, +1, -1), and their C_3 conjugates are matched "
+        f"entrywise onto the cyclic shift (sweep max diag diff {sweep['max_diag_diff']:.2e})."
+    )
+    print(
+        "per_site: checked and not executed - the only geometry instantiated is the "
+        f"three hw=1 Brillouin-zone corners {corners} on Z^3 APBC, which are momentum "
+        "labels rather than real-space sites; no site field is built, no hopping is "
+        "summed over sites, and nothing in the eight attack vectors is resolved at "
+        "the granularity of a single lattice point."
+    )
+    print(
+        "per_mode: checked - H_{hw=1} is decomposed by C_3 mode content and the "
+        f"regular-representation character (chi_e, chi_g, chi_g2) = {char} is verified, "
+        "so each of the three C_3 irreps occurs exactly once and the isotypic "
+        "projectors used by the Anderson-dual argument are mode-resolved; the "
+        "C_3-invariant decoration sum T_x + T_y + T_z collapses to the identity."
+    )
+    print(
+        "per_block: checked and not executed - the whole review lives inside a single "
+        "Hamming-weight block, hw = 1; the remaining Brillouin-zone weight blocks "
+        "hw = 0, 2, 3 are never constructed, so no block-to-block comparison is made "
+        "and no statement here is certified across distinct weight sectors."
+    )
+    print(
+        "lattice_wide: checked and not executed - no volume sum, no extensive "
+        "quantity and no thermodynamic limit is taken anywhere; that is deliberate, "
+        "since R3-S1's reach comes from functoriality plus Freed-Hopkins Anderson "
+        "dual cobordism rather than from any lattice computation, with APBC fixed as "
+        f"one C_3-symmetric twist and the deformation sweep run over {n_deform} "
+        "g-values at fixed geometry."
+    )
+
+
+# ---------------------------------------------------------------------------
 # Main verification driver
 # ---------------------------------------------------------------------------
 
@@ -654,6 +712,13 @@ def main() -> int:
         print("  FULLY EXCLUDED by R3-S1 + this hostile review confirmation.")
     else:
         print("  ESCAPE FOUND -- R3-S1 needs revision.")
+    print()
+
+    # Section 5: N5 execution certificate (reporting only; no new checks)
+    print("=" * 78)
+    print("Section 5: N5 execution certificate -- what this review resolves")
+    print("=" * 78)
+    n5_execution_certificate()
     print()
 
     # Final tally

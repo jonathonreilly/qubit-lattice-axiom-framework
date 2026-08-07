@@ -216,12 +216,62 @@ def firewall_checks() -> None:
     report("audit verdict applied flag is false", not audit_verdict_applied)
 
 
+def n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, calls no report(), leaves PASS/FAIL alone.
+    """
+    section("N5 execution certificate (reporting only; adds no check)")
+    print(
+        "  per_element: resolved word by word in exact Fractions — iid_law "
+        "assigns every word of the horizon its own mass "
+        "p_A^count_A (1-p_A)^(n-count_A), and the individual likelihoods of "
+        "the realized word AAAB are pinned separately at 4/625 under the "
+        "low-A law and 27/256 under the high-A law, with their ratio pinned "
+        "at 16875/1024; nothing here is aggregated before it is compared."
+    )
+    print(
+        "  per_site: checked and not executed — the candidate laws live on "
+        "words rather than on any geometry, so no spatial coordinate exists; "
+        "the iid family in fact collapses position entirely, since count_a "
+        "reduces each word to one exponent, and only the hand-written skew "
+        "law is position-sensitive, giving mass 1/4 to ('A','B') against 1/2 "
+        "to ('B','A')."
+    )
+    print(
+        "  per_mode: checked and not executed — a likelihood here is one "
+        "number per candidate law and is never resolved into components; no "
+        "operator, spectrum, eigenvector, correlation function or Fourier "
+        "decomposition is constructed at any point in the five sections."
+    )
+    print(
+        "  per_block: resolved candidate by candidate across the supplied "
+        "family — each law is normalized on its own before scoring, each "
+        "carries its own likelihood at the realized word, the posterior "
+        "reweights each candidate by its own prior mass, and enlarging the "
+        "family from {fair, skew} to {fair, skew, spike} moves the argmax off "
+        "the tie and onto the spike, which is exactly the family-extension "
+        "counterexample."
+    )
+    print(
+        "  lattice_wide: checked and not executed — the runner never leaves "
+        "the horizons N = 2 and N = 4, builds no volume and takes no limit of "
+        "any kind, and the four obstructions it reports are explicit finite "
+        "witnesses (one prior pair, one tie pair, one family extension, one "
+        "threshold pair) rather than a general theorem over all priors, "
+        "families and thresholds; of the recorded passes, 18 are "
+        "string-presence checks over four repository documents and 9 are "
+        "firewall booleans hardcoded False in this file."
+    )
+
+
 def main() -> int:
     source_anchor_checks()
     prior_reversal_checks()
     tie_and_family_extension_checks()
     threshold_checks()
     firewall_checks()
+    n5_execution_certificate()
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("POST_RECORD_SCORE_TO_CANONICAL_SELECTION=FALSE")

@@ -128,6 +128,46 @@ def main() -> int:
     check("current result is a no-go for Hessian-ratio-alone closure", True)
     check("positive target is the specific q-proportional Hessian readout theorem", True)
 
+    banner("5. N5 execution certificate")
+    print(
+        f"per_element: each coefficient is built separately from its own weight, giving "
+        f"C_E = 1/w_E^2 = {c_e} from w_E={w_e} and C_T = 1/w_T^2 = {c_t} from w_T={w_t}, "
+        f"and every candidate map is then evaluated on its own to a full triple -- "
+        f"q-proportional to ({alternatives['q_proportional'][0]}, "
+        f"{alternatives['q_proportional'][1]}), increment- and rho-proportional both to "
+        f"({alternatives['increment_proportional'][0]}, -9/4), inverse-q to (10/27, -34/9)."
+    )
+    print(
+        "per_site: checked and not executed -- the only site-derived quantities reaching "
+        "this file are the two projector weights written as literals, and the center-versus-"
+        "shell content of q_E survives only inside a quoted definition being matched in "
+        "another note; no star is assembled, no arm or center amplitude is formed, and no "
+        "coordinate exists, so nothing at site granularity is computed here."
+    )
+    print(
+        "per_mode: the channel structure is what every candidate map is tested against -- "
+        f"E and T are each assigned their own Hessian coefficient ({c_e} against {c_t}), "
+        f"and each of the {len(alternatives)} maps is separately required to return the "
+        f"T channel to its granted calibration q_T={q_t} or rho_T={rho_t} when applied to "
+        "the T coefficient, so the E output is the only free result and the four maps are "
+        "distinguished purely by how they transport the mode ratio."
+    )
+    print(
+        f"per_block: the readout laws form one block and the authority bank forms another -- "
+        f"the {len(alternatives)} T-calibrated maps are all built from the same coefficient "
+        "pair and only one of them lands rho_E=21/4, while the second block is an absence "
+        "scan in which two proportionality phrase families and one Hessian-to-E-center "
+        "phrase are each confirmed missing from the concatenated eight-document bank; that "
+        "second block resolves string presence only and evaluates no quantity."
+    )
+    print(
+        "lattice_wide: checked and not executed -- two scalar coefficients and one granted "
+        "T-side calibration are all this runner ever holds, and around them it raises no "
+        "extent, no volume and no limiting procedure; the global statement it reports "
+        "as absent is the q-proportional Hessian readout theorem itself, which is precisely "
+        "the positive target named in the verdict rather than anything shown here."
+    )
+
     banner("Summary")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL:

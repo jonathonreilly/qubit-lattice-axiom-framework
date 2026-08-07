@@ -188,6 +188,43 @@ def main() -> int:
     check("fan-out includes five post-scan rescue frames", len(fanout) == 5)
 
     print()
+    print("H. N5 execution certificate")
+    print("-" * 72)
+    print(
+        f"per_element: resolution here is one cached row per box -- {len(rows)} rows are parsed "
+        "out of the stored box-size scan artifact, each supplying eight named columns, and the "
+        "honest description is that these are read values from an upstream numerical scan rather "
+        "than quantities this file computes, so the element-level facts asserted below are signs, "
+        "counts and named-tolerance comparisons and never a restated float."
+    )
+    print(
+        "per_site: checked and demonstrably not executed -- every parsed row does carry the "
+        "site-resolved columns eta_e0, eta_s, gE_center, gE_shell, gT_center and gT_shell, yet "
+        "nothing downstream ever reads them; sections C through E use only the two aggregated "
+        "ratios q_T and q_E, so the center/shell structure is parsed and then discarded unused."
+    )
+    print(
+        "per_mode: exercised throughout, because E and T1 are kept as separate columns at every "
+        "box and are never averaged together -- the firewall is stated three times over, once on "
+        "the q_E mode, once on the q_T mode and once on the cross-mode ratio lambda=q_E/q_T, and "
+        "it is the joint failure of all three that closes the rescue route."
+    )
+    print(
+        f"per_block: the staircase is partitioned into named blocks -- the single anchor rung "
+        f"N=15, the {len(bulk_ns)}-rung fixed-radius bulk block, the box-proportional stable tail "
+        f"formed by dropping the first of {len(prop_qe)} entries, and the {len(fanout)}-route "
+        "fan-out frame; each block is judged against its own named threshold, 0.002 and 0.00002 "
+        "at the anchor, 0.25 for other-box proximity, and 0.90-1.06, 0.13 and 0.25 on the tails."
+    )
+    print(
+        f"lattice_wide: executed, and certified strictly as a finite-N statement -- the evidence "
+        f"is {len(rows)} boxes up to N={max(rows)} read from a stored upstream artifact, the "
+        f"convex-hull exclusions are hulls over {len(bulk_ns)} bulk rungs only, and no "
+        "N-to-infinity limit, extrapolation or thermodynamic limit is performed anywhere in this "
+        "file; the claim is correspondingly about the current scan surface, not about all volumes."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

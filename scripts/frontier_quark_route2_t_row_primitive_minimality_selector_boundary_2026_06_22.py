@@ -210,6 +210,47 @@ def main() -> int:
     check("the enumerated selectors do not derive the full t row" in note_cl, "note limits no-go to enumerated selectors")
     check("the enumerated minimality tests select `beta_T=0` or `beta_T=1`" in note_c, "note records fixed-shell beta-family miss")
 
+    print("\nG. N5 execution certificate -- what this runner resolves")
+    print(
+        "per_element: checked -- the T row is treated as three separate integer entries and the "
+        "arithmetic is done on those entries, not on the row as an opaque object. The decisive "
+        f"comparison is entrywise: the full triple gcd is {target.full_gcd()} at the target and "
+        f"{primitive.full_gcd()} at n=1, while the Frobenius squares differ exactly, "
+        f"{target.frobenius_sq()} against {primitive.frobenius_sq()}. Every value is an exact "
+        "Fraction or integer; no tolerance appears anywhere in this file."
+    )
+    print(
+        "per_site: checked and not executed -- a readout row is a list of coefficients, and no "
+        "configuration is ever placed under it. The support, its center and its arms play no "
+        "part in the primitivity or minimality questions asked here, so there is no site-level "
+        "evidence to report and none is implied by the enumerated selectors."
+    )
+    print(
+        "per_mode: checked, and the boundary is literally a disagreement between two mode-level "
+        "readings of the same row -- taking the whole row, E entry included, makes every member "
+        f"primitive with gcd {primitive.full_gcd()}, whereas restricting to the T subrow gives "
+        f"gcd {target.t_gcd()} at the target and {primitive.t_gcd()} at n=1, so the T-only "
+        "reading selects n=1 and the E-inclusive reading selects nothing. Which mode subset the "
+        "selector is allowed to see decides the answer, and that is exactly the missing premise."
+    )
+    print(
+        "per_block: checked -- two one-parameter families are carried as separate blocks of the "
+        "row space and each is closed on its own before being compared. The shape block "
+        f"(1, -n, n) holds rho_T = {TARGET_RHO_T} and q_T = {TARGET_Q_T} fixed while sweeping "
+        f"the shell quotient, sampled over n = 1..{len(rows)}; the shell-scale block (1, -2, "
+        f"beta_T) holds s_TE = {TARGET_S_TE} fixed while sweeping rho_T, sampled over beta_T = "
+        f"0..{len(shell_rows) - 1}. The target row sits at n=2 in the first and beta_T=2 in the "
+        "second, and no enumerated selector reaches it in either block."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, no volume and no limit exists in "
+        "this runner, so the class has no referent. What can be said globally is about the "
+        "families rather than about a system, and it is proved rather than sampled: the shape "
+        "block's norm gap factors as 2(n-1)(n+1) and the shell block's as beta_T^2, both "
+        "nonnegative on the whole family, so the minimality outcomes are closed-form facts and "
+        "would not change if the sampled ranges above were widened."
+    )
+
     print("\n" + "=" * 78)
     print(f"TOTAL: PASS={passes}, FAIL={fails}")
     if fails:

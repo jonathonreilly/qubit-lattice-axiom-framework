@@ -305,6 +305,68 @@ def task7_d3_binary_uniqueness():
 
 
 # ---------------------------------------------------------------------------
+# N5 execution certificate: what this runner resolves at each granularity
+# ---------------------------------------------------------------------------
+
+def n5_execution_certificate():
+    print("\n=== N5 execution certificate: resolution classes exercised here ===")
+
+    basin_coeffs = {}
+    basin_cps = {}
+    for name, (m, d_, q) in BASINS.items():
+        coeffs = char_poly_coeffs(H_BASE, J_mat(m, d_, q), 3)
+        basin_coeffs[name] = coeffs
+        basin_cps[name] = interior_morse_idx0(coeffs, (0.0, 1.0))
+    c0 = basin_coeffs["Basin 1"][0]
+    b1_coeffs = basin_coeffs["Basin 1"]
+    b1_roots = basin_cps["Basin 1"][1]
+    b1_tstar = min(b1_roots)
+    b1_pstar = p_at(b1_coeffs, b1_tstar)
+    zero_cp = [n for n in BASINS if basin_cps[n][0] == 0]
+
+    print(
+        "per_element: checked -- the four retained A-BCC basin points of the "
+        "(m, d, q) J-chart are resolved one at a time, each getting its own "
+        "degree-3 coefficient vector; Basin 1 gives (c0, c1, c2, c3) = "
+        f"({b1_coeffs[0]:.4f}, {b1_coeffs[1]:.4f}, {b1_coeffs[2]:.4f}, "
+        f"{b1_coeffs[3]:.4f}) and T6 pulls c1, c2, c3 out individually to form "
+        "Delta_ret = c2^2 - 3 c1 c3 separately for each of Basin 1, N, P, X."
+    )
+    print(
+        "per_site: checked and not executed -- H_base and J_mat are 3x3 "
+        "operators carrying only the internal three-generation flavour index, "
+        "and no quantity in this runner is indexed by a lattice site; the "
+        "Cl(3)/Z^3 site structure named in the note never enters the pencil, "
+        "so nothing here is resolved site by site."
+    )
+    print(
+        "per_mode: checked -- the interior Morse-index-0 critical points of "
+        "W(t) = log|det H(t)| are the modes, and they are enumerated "
+        "individually: Basin 1 carries exactly one, at t_* = "
+        f"{b1_tstar:.6f} with p(t_*) = {b1_pstar:+.6f} matching sign(c_0) = "
+        f"sign({c0:+.6f}), while {', '.join(zero_cp)} carry zero interior "
+        "modes; T4 exhibits a d = 4 pencil where two such modes coexist and "
+        "prints both roots separately."
+    )
+    print(
+        "per_block: checked -- the dimension blocks d = 2, 3, 4, 5 are swept "
+        "as separate blocks, each with 400 independent pencils and its own "
+        "bound floor(d/2) = 1, 1, 2, 2; the blocks are drawn sign-unrestricted "
+        "by rand_herm, so pencils with det H_0 < 0 (the C_neg sheet of the "
+        "note) sit inside these counts without being separated out, and this "
+        "runner defines no separately labelled C_neg task."
+    )
+    print(
+        "lattice_wide: checked and not executed -- the whole computation lives "
+        "on a fixed finite pencil space of dimension at most 5, the sweep "
+        "stops at d = 5 and no d -> infinity or volume limit is taken, so no "
+        "statement here is certified at lattice scope; the note's open item is "
+        "the sign choice among connected components of a 3x3 determinant "
+        f"chart, not a lattice-scale quantity (PASS={PASS}, FAIL={FAIL})."
+    )
+
+
+# ---------------------------------------------------------------------------
 # Driver
 # ---------------------------------------------------------------------------
 
@@ -319,6 +381,7 @@ def main() -> int:
     task5_d2_degeneracy()
     task6_d3_f4_discriminant()
     task7_d3_binary_uniqueness()
+    n5_execution_certificate()
 
     print()
     print("=" * 72)

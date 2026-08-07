@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_dple_theorem.py
-runner_sha256: 80da104bddfab4ba1b2821550580b661aa970aea231c827f783ac6ff5585ffc2
+runner_sha256: 6a488b2e641bd168025188b06262bd2a0ffd32441c3a1fb064f126c99a797c7a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.35
+elapsed_sec: 2.33
 status: ok
 ----- stdout -----
 ========================================================================
@@ -11,10 +11,10 @@ status: ok
 ========================================================================
 
 === T1: det H(t) is deg-d in t (d = 2, 3, 4, 5) ===
-  [PASS] d=2: |coeff(t^3)| ~ 0 (max 1.73e-14)
-  [PASS] d=3: |coeff(t^4)| ~ 0 (max 1.71e-14)
-  [PASS] d=4: |coeff(t^5)| ~ 0 (max 2.83e-13)
-  [PASS] d=5: |coeff(t^6)| ~ 0 (max 8.41e-13)
+  [PASS] d=2: |coeff(t^3)| ~ 0 (max 2.00e-14)
+  [PASS] d=3: |coeff(t^4)| ~ 0 (max 7.09e-14)
+  [PASS] d=4: |coeff(t^5)| ~ 0 (max 2.61e-13)
+  [PASS] d=5: |coeff(t^6)| ~ 0 (max 1.52e-12)
 
 === T2: interior Morse-idx-0 CP count <= floor(d/2) ===
   [PASS] d=2: max interior Morse-idx-0 CP observed <= floor(d/2)=1  (max_obs = 1)
@@ -30,7 +30,7 @@ status: ok
 
 === T4: d = 4 fragmentation (2 interior Morse-idx-0 CPs) ===
   [PASS] d = 4: found pair with 2+ interior Morse-idx-0 CPs (fragmentation)  (search result: found)
-    CPs: cnt = 2, roots_in = [np.float64(0.779334594781689), np.float64(0.3094843803184843)]
+    CPs: cnt = 2, roots_in = [np.float64(0.779334594781706), np.float64(0.30948438031847997)]
 
 === T5: d = 2 degeneracy (F_2 vacuous) ===
   [PASS] d = 2: both c_2 > 0 and c_2 < 0 cases appear (vacuous signature)  (c_2>0: 82, c_2<0: 318)
@@ -43,6 +43,13 @@ status: ok
 
 === T7: d = 3 binary-selector uniqueness (CP histogram) ===
   [PASS] d = 3: CP count in {0, 1} dominates (>= 95%)  (CP=0: 788, CP=1: 212, CP>=2: 0)
+
+=== N5 execution certificate: resolution classes exercised here ===
+per_element: checked -- the four retained A-BCC basin points of the (m, d, q) J-chart are resolved one at a time, each getting its own degree-3 coefficient vector; Basin 1 gives (c0, c1, c2, c3) = (5.0283, -13.8861, 15.1109, -5.2939) and T6 pulls c1, c2, c3 out individually to form Delta_ret = c2^2 - 3 c1 c3 separately for each of Basin 1, N, P, X.
+per_site: checked and not executed -- H_base and J_mat are 3x3 operators carrying only the internal three-generation flavour index, and no quantity in this runner is indexed by a lattice site; the Cl(3)/Z^3 site structure named in the note never enters the pencil, so nothing here is resolved site by site.
+per_mode: checked -- the interior Morse-index-0 critical points of W(t) = log|det H(t)| are the modes, and they are enumerated individually: Basin 1 carries exactly one, at t_* = 0.775570 with p(t_*) = +0.878309 matching sign(c_0) = sign(+5.028315), while Basin N, Basin P, Basin X carry zero interior modes; T4 exhibits a d = 4 pencil where two such modes coexist and prints both roots separately.
+per_block: checked -- the dimension blocks d = 2, 3, 4, 5 are swept as separate blocks, each with 400 independent pencils and its own bound floor(d/2) = 1, 1, 2, 2; the blocks are drawn sign-unrestricted by rand_herm, so pencils with det H_0 < 0 (the C_neg sheet of the note) sit inside these counts without being separated out, and this runner defines no separately labelled C_neg task.
+lattice_wide: checked and not executed -- the whole computation lives on a fixed finite pencil space of dimension at most 5, the sweep stops at d = 5 and no d -> infinity or volume limit is taken, so no statement here is certified at lattice scope; the note's open item is the sign choice among connected components of a 3x3 determinant chart, not a lattice-scale quantity (PASS=19, FAIL=0).
 
 ========================================================================
 PASS=19 FAIL=0

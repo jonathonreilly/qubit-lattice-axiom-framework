@@ -188,6 +188,53 @@ def main() -> int:
     check("parent S3 note remains open on the endpoint triple", "readout-map endpoint triple is not yet derived" in parent)
     check("no observed endpoint value is used as a proof input", True)
 
+    banner("6. N5 execution certificate (reporting only; adds no check)")
+    print(
+        "per_element: resolved one derived quantity at a time — from the "
+        "single candidate pair the runner forms the determinant 1/6, the "
+        "diagonal Hessian ratio 9/4, and then q_E = 15/8, rho_E = 21/4 and "
+        "c_TE = -8/9 as five separately pinned exact Fractions, so each face "
+        "of the endpoint triple stands or falls on its own rather than inside "
+        "a bundled comparison."
+    )
+    print(
+        "per_site: exercised only through the one-site functional, never "
+        "through any geometry — square_sum realizes the classifier's "
+        "W_n(x_1,...,x_n) = sum_i phi(x_i) shape and is confirmed additive "
+        "when two supplied block lists are concatenated, and is then shown to "
+        "differ across the determinant fiber; but the sites are the diagonal "
+        "slots of a supplied model, with no position index, neighbour "
+        "relation or lattice anywhere in the file."
+    )
+    print(
+        "per_mode: resolved by giving each channel its own inverse-square "
+        "coefficient — w_E = 1/3 and w_T1 = 1/2 enter separately, each "
+        "contributes 1/w^2 on its own, and their quotient is what produces "
+        "lambda = 9/4; the two channels are never averaged or summed into a "
+        "single scalar before that ratio is taken."
+    )
+    print(
+        "per_block: resolved across the same-determinant fiber — three weight "
+        "pairs, (1/3, 1/2), (1/4, 2/3) and (1/6, 1), are carried as separate "
+        "registrations that all share determinant 1/6 while their Hessian "
+        "ratios are pairwise distinct by a full set-cardinality test, which is "
+        "the whole obstruction; note that the companion check writes "
+        "ratios[0] != ratios[1] != ratios[2], a chained comparison that never "
+        "compares the first against the third, so its force comes from the "
+        "len(set(...)) == 3 test beside it."
+    )
+    print(
+        "lattice_wide: checked and not executed — no geometry, volume, "
+        "thermodynamic limit or continuum limit is built, and the widest claim "
+        "in this file is an absence claim established by substring search: "
+        "eight documents are concatenated and lowercased, then tested for the "
+        "absence of the phrases route-2 channel determinant and "
+        "hessian-to-e-center, which shows those phrases are missing rather "
+        "than proving the content is; 13 of the 24 recorded passes are "
+        "document scans of that kind and one more is a check(..., True) "
+        "declaration."
+    )
+
     banner("Summary")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL:

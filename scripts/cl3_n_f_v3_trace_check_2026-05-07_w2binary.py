@@ -784,6 +784,62 @@ def section_9_synthesis(T3, T8):
 
 
 # =========================================================================
+# N5 execution certificate (print-only; adds no check)
+# =========================================================================
+def section_n5_certificate():
+    section("N5 EXECUTION CERTIFICATE — resolved granularity (reporting only)")
+
+    print(
+        "per_element: checked - the arguments are settled on explicit matrix "
+        "entries. Both trace surfaces are filled as full 8 x 8 Gram matrices "
+        "over the (a, b) generator pairs, the Cl(3) half-Pauli Gram is printed "
+        "as the literal array diag(0.5, 0.5, 0.5) and its V_color counterpart as "
+        "diag(1, 1, 1), the fundamental and anti-fundamental generator sets are "
+        "compared by the entrywise norm ||3 - 3-bar|| = 7.0711, and the lepton "
+        "annihilation is checked from both sides, T_a^V P_lepton = 0 and "
+        "P_lepton T_a^V = 0, for all eight generators."
+    )
+    print(
+        "per_site: checked, but on exactly one site's algebra - V8 constructs "
+        "the Cl(3) bivector half-Paulis T_k = sigma_k/2 on the Qubit one-site "
+        "algebra M_2(C) and evaluates their Gram to (1/2) delta_ab, and that "
+        "single-site normalization is the whole of V8's leverage. No second "
+        "site, neighbour or site sum is ever formed, and the per-site "
+        "Hilbert-dimension-2 input is cited from another note rather than "
+        "recomputed here."
+    )
+    print(
+        "per_mode: checked, and this is exactly where the gate stays open - the "
+        "fiber/taste index is never resolved into individual states, only into "
+        "a multiplicity. V4 collapses Tr_V onto Tr_{V_color} exactly, at "
+        "max diff 0.00e+00, and then stalls because "
+        "Tr_{V_color} = dim(V_fiber) x Tr_{V_3} = 2 x (1/2) = 1; the runner's "
+        "own words are that the fiber I_2 is the residual obstruction. V7 adds "
+        "that this fiber is the weak-isospin doublet rather than a colour "
+        "direction, and no amplitude is ever evaluated on a single fiber state."
+    )
+    print(
+        "per_block: checked - the decomposition of V into blocks is carried "
+        "explicitly and does real work. The colour and lepton projectors split "
+        "V, V_color is identified as the reducible 3 + 3 rather than a new "
+        "irreducible, V as a whole is found to carry 3 + 3 + 1 + 1 with no "
+        "copy of 3-bar (V5), and the decisive per-block contrast is the SU(2) "
+        "sub-normalization: Gram 1/2 on the irreducible V_3 block against Gram "
+        "1 on the multiplicity-inflated V_color block."
+    )
+    print(
+        "lattice_wide: checked and not executed - no lattice is instantiated "
+        "and nothing is summed over sites or links. Z^3 enters this runner only "
+        "as a dimension count in V7, dim(Z^3) = 3 = N_c fixing the colour "
+        "carrier size, which is a statement about the number of spatial axes "
+        "rather than about any configuration on them; even V6, which discusses "
+        "the Wilson loop, evaluates only the block decomposition of a single "
+        "8 x 8 holonomy with Tr on the lepton block equal to 2.0, never a loop "
+        "traversing links or a sum over a volume."
+    )
+
+
+# =========================================================================
 # Final summary
 # =========================================================================
 def main():
@@ -808,6 +864,7 @@ def main():
     section_v7_substrate_z3(T3)
     section_v8_bivectors()
     section_9_synthesis(T3, T8)
+    section_n5_certificate()
 
     section("FINAL SUMMARY")
     print(f"\nEXACT   : PASS = {PASS}, FAIL = {FAIL}")

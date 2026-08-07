@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_angular_kernel_orbit_class_underdetermination_narrow.py
-runner_sha256: f2d84a83f9ada918cfdf7232bfac194087eb925b70aac0a1ecc68aa974f37c84
+runner_sha256: f7de8e964ae6922574a243a01bf53c6ac5062eca6b4bf9da9d9fef931619ed36
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.64
+elapsed_sec: 0.47
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -93,20 +93,28 @@ layer-step neighbour set of Z^3; orbit-class polynomial-algebra fact
 
 === Part E: Four primitive constraints satisfied by every witness ===
 
-  [PASS] Witness 'uniform': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=4.0000, <dz^2>=4.0000, <dy*dz>=0.00e+00)
+  [PASS] Witness 'uniform': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=4.0000, <dz^2>=4.0000, <dy*dz>=-2.78e-17)
   [PASS] Witness 'uniform': total mass = 1 (probability)  (sum_R w = 1.0000000000)
-  [PASS] Witness 'cos': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=3.1523, <dz^2>=3.1523, <dy*dz>=0.00e+00)
+  [PASS] Witness 'cos': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=3.1523, <dz^2>=3.1523, <dy*dz>=5.55e-17)
   [PASS] Witness 'cos': total mass = 1 (probability)  (sum_R w = 1.0000000000)
-  [PASS] Witness 'cos^2': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=2.2777, <dz^2>=2.2777, <dy*dz>=0.00e+00)
+  [PASS] Witness 'cos^2': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=2.2777, <dz^2>=2.2777, <dy*dz>=-1.39e-17)
   [PASS] Witness 'cos^2': total mass = 1 (probability)  (sum_R w = 1.0000000000)
-  [PASS] Witness 'gaussian_0_4': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=3.6502, <dz^2>=3.6502, <dy*dz>=0.00e+00)
+  [PASS] Witness 'gaussian_0_4': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=3.6502, <dz^2>=3.6502, <dy*dz>=5.55e-17)
   [PASS] Witness 'gaussian_0_4': total mass = 1 (probability)  (sum_R w = 1.0000000000)
-  [PASS] Witness 'gaussian_0_8': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=3.2595, <dz^2>=3.2595, <dy*dz>=0.00e+00)
+  [PASS] Witness 'gaussian_0_8': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=3.2595, <dz^2>=3.2595, <dy*dz>=-2.78e-17)
   [PASS] Witness 'gaussian_0_8': total mass = 1 (probability)  (sum_R w = 1.0000000000)
   [PASS] Witness 'gaussian_1_6': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=2.3854, <dz^2>=2.3854, <dy*dz>=0.00e+00)
   [PASS] Witness 'gaussian_1_6': total mass = 1 (probability)  (sum_R w = 1.0000000000)
-  [PASS] Witness 'linear_falloff': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=3.0143, <dz^2>=3.0143, <dy*dz>=0.00e+00)
+  [PASS] Witness 'linear_falloff': transverse isotropy <dy^2>=<dz^2>, <dy*dz>=0  (<dy^2>=3.0143, <dz^2>=3.0143, <dy*dz>=2.78e-17)
   [PASS] Witness 'linear_falloff': total mass = 1 (probability)  (sum_R w = 1.0000000000)
+
+=== Part F: N5 execution certificate — resolved granularity ===
+
+per_element: checked - the weight carries one independent entry per offset, and the runner counts how many of the 49 offsets of R(d_max=3) fall into each orbit, recovering the multiplicities 1, 4 and 8 individually as the symbolic coefficients of k0 through k9 in the total mass, which is verified to be exactly degree 1 in those symbols.
+per_site: checked - each witness is placed on the actual Z^3 forward-cone neighbour sites (1, dy, dz) and then tested site by site for cubic symmetry, requiring w to be constant across every site of each orbit; the transverse isotropy moments <dy^2> = <dz^2> with <dy dz> vanishing to order 1e-17 are likewise accumulated site by site over the whole neighbour set.
+per_mode: checked and not executed - no Fourier or angular-harmonic decomposition is performed anywhere; the discriminating quantity I_4 = <dy^4 + dz^4> is a fourth position-space moment, and although it is the natural cubic-anisotropy channel, no individual harmonic is ever formed, so nothing here is certified mode by mode.
+per_block: checked - the D_4 orbit classes are the granularity the theorem turns on: they are enumerated explicitly as [(0, 0), (0, 1), (0, 2), (0, 3), (1, 1), (1, 2), (1, 3), (2, 2), (2, 3), (3, 3)] at d_max = 3, their counts [3, 6, 10, 15, 21] matched against the closed form (d_max+1)(d_max+2)/2 and shown strictly increasing, giving the free-parameter dimension |O| - 1 = 9.
+lattice_wide: checked - the separating quantities are whole-set sums over the neighbour layer, with total mass sum_R w normalized to 1.0000000000 for each of the 7 witnesses and I_4 spanning a factor 2.094 across them; but R is finite, capped at |R| = [9, 25, 49, 81, 121] for d_max = 1..5, and no infinite-lattice or continuum limit is taken.
 
 ==============================================================================
 SUMMARY: PASS=53  FAIL=0

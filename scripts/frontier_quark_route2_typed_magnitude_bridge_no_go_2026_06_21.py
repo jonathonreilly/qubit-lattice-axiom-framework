@@ -327,6 +327,50 @@ def main() -> int:
         check("paired_note_avoids_banned_phrases", all(phrase not in note for phrase in banned))
 
     print()
+    print("G. N5 execution certificate (print-only; no check is registered here)")
+    print("-" * 72)
+    blind_residual = max(
+        float(np.max(np.abs(p_zero @ col - p_target @ col)))
+        for col in (data.carrier_e_shell, data.carrier_t_shell, data.carrier_t_center)
+    )
+    e_center_gap = float(
+        np.max(np.abs(p_zero @ data.carrier_e_center - p_target @ data.carrier_e_center))
+    )
+    print(
+        "per_element: exercised -- the witness comparison is componentwise, not aggregate: same_vector() takes the "
+        f"largest absolute component difference against EXACT_TOL = {EXACT_TOL:.0e}, and it separates a blind residual "
+        f"of {blind_residual:.3e} on the three invariant columns from a genuine component gap of {e_center_gap:.3e} on "
+        "E-center, whose leading entry moves from 1 to 15/8. Each reduced map is likewise assembled entry by entry "
+        "with only the [0,2] slot carrying rho_E."
+    )
+    print(
+        "per_site: checked and not executed -- this file receives the readout columns already contracted by "
+        "restricted_readout_data() and never reaches behind them, so the seven-site star it ultimately rests on is "
+        "invisible here: 'center' and 'shell' arrive as labels on 4-component columns, not as site sums this runner "
+        "performs. Nothing site-resolved is computed and nothing site-resolved is claimed."
+    )
+    print(
+        "per_mode: exercised, and the no-go is stated at exactly this granularity -- the disputed quantity "
+        "|gamma_T(center)/gamma_E(center)| is a magnitude ratio between the T and E bright modes, carried in rows 1 "
+        f"and 0 of the reduced map, while the SU(3) scalar F_adj = {label(R_CONN)} offered as its source is entirely "
+        f"mode-blind. Holding that scalar fixed while the cross-mode magnitude runs through "
+        f"{', '.join(label(m) for m in magnitudes)} is what forbids a color-only bridge."
+    )
+    print(
+        "per_block: exercised -- the restricted carrier is read as four endpoint blocks and the run partitions them: "
+        "E-shell, T-shell and T-center are certified identical under rho_E=0, rho_E=1 and rho_E=21/4, so the "
+        "E-center-blind signature built from those three blocks is literally the same tuple for rho_E=0 and the "
+        "target, while the fourth block alone separates them. The obstruction is therefore localized to one block."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice-scale object is constructed in this file; there is no "
+        "volume, no site count and no whole-system operator, so neither a finite-N nor a limiting statement is "
+        "available. The only global dial turned here is the color rank N_c over 2, 3 and 4 in section E, which "
+        "changes the gauge group rather than the size of any system, and the typed-graph gap this runner reports is "
+        "size-independent by construction."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

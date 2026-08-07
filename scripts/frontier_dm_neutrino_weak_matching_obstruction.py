@@ -190,6 +190,47 @@ def main() -> int:
     print("     factorization. The later bosonic selector moves the physical")
     print("     benchmark to g_weak/sqrt(2) instead.")
     print()
+    print("N5 execution certificate:")
+    print(
+        "  per_element: checked and not executed - each verdict here collapses an "
+        "entire array to one scalar, either a Frobenius commutator norm or a "
+        "largest singular value, so although the Cl(3) generators, the three weak "
+        "bivectors, the four 4D gammas and the chiral bridge are all built as "
+        "explicit dense matrices, not one (i,j) position is ever isolated, "
+        "compared or reported by itself"
+    )
+    print(
+        "  per_site: checked and not executed - the taste propagator is written "
+        "straight into momentum space as the inverse of m G5 plus i sum_mu "
+        "sin(k_mu) Gamma_mu, which means the position sum that would define it "
+        "has already been carried out analytically; no lattice coordinate, no "
+        "hopping matrix and no spacing appears at any point in the file"
+    )
+    print(
+        "  per_mode: one momentum is resolved and only one - the propagator is "
+        "evaluated at the hardcoded generic point k = (0.37, 0.91, 1.23) with m = "
+        "0.41, and the three directions enter separately through sin(k_1), "
+        "sin(k_2) and sin(k_3), but no scan over the Brillouin zone is performed, "
+        "so uniformity of the failure across modes is asserted by genericity of "
+        "that single point rather than tested"
+    )
+    print(
+        "  per_block: the chiral sandwich is the block that carries Part 1 - the "
+        "bridge is formed as P_R Gamma_1 P_L, i.e. the right-from-left "
+        "off-diagonal block alone, and its largest singular value is divided by "
+        "that of the unprojected operator to give a ratio of exactly one, which "
+        "is the precise sense in which projecting to the active block costs no "
+        "operator norm"
+    )
+    print(
+        "  lattice_wide: checked and not executed - the widest quantifier this "
+        "runner reaches is a maximum of the G5 commutator norm over a "
+        "seven-element comparison set of Cl(3) generators and bivectors, which "
+        "vanishes below the file's 1e-12 threshold; that is an algebra-wide "
+        "statement, not a lattice-wide one, and nowhere in the file is an extent, "
+        "a volume or a limiting procedure defined"
+    )
+    print()
     print("=" * 78)
     print(f"RESULT: {PASS_COUNT} PASS, {FAIL_COUNT} FAIL")
     print("=" * 78)

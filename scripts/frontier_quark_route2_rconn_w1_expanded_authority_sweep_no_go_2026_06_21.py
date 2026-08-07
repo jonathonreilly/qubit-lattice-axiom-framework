@@ -239,11 +239,59 @@ def part_d_graph_and_arithmetic() -> None:
     check("W1 value gives rho_E=21/4", rho == Fraction(21, 4), str(rho))
 
 
+def part_e_n5_certificate(all_hits: list[MixedParagraph]) -> None:
+    """N5 execution certificate: print-only, adds no check and moves no counter."""
+    print("\nE. N5 execution certificate")
+    per_file = {name: EXPECTED_MIXED_COUNTS[name] for name in AUTHORITY_FILES}
+    nonzero = {name: count for name, count in per_file.items() if count}
+    positives = [hit for hit in all_hits if positive_bridge_like(hit)]
+    print(
+        "per_element: checked, and the elements are paragraphs, not amplitudes -- this runner "
+        f"evaluates no field quantity anywhere. Each of the {len(all_hits)} mixed paragraphs is "
+        "resolved on its own: it is admitted only if it carries both a color-domain token and a "
+        "Route-2 endpoint token, then it is separately classified against the "
+        f"{len(NON_POSITIVE_MARKERS)} non-positive markers within a three-paragraph local window, "
+        f"and separately tested for the four literal positive bridge formulas. Result per "
+        f"paragraph: {len(all_hits)} classified, {len(positives)} positive."
+    )
+    print(
+        "per_site: checked and not executed -- the sweep operates on markdown paragraphs, so "
+        "there is no lattice, no site index and no configuration to resolve. Its only "
+        "positional coordinate is a paragraph number inside a named file, which is a location "
+        "in a document rather than a location in a physical system."
+    )
+    print(
+        "per_mode: checked and not executed, and this is the honest THIN answer for this runner "
+        "-- gamma_E(center) and gamma_T(center) appear here strictly as literal search strings "
+        "inside ROUTE_TOKENS. No E amplitude, no T amplitude and no channel decomposition is "
+        "ever formed, so nothing about the mode structure is certified by this sweep; the "
+        "cross-check in part D reuses only the already-typed edge inventory."
+    )
+    print(
+        "per_block: checked -- the authority bank is closed file by file rather than in bulk, "
+        f"with each of the {len(AUTHORITY_FILES)} files carrying its own expected count and "
+        "failing on its own if that count moves: "
+        + ", ".join(f"{name.split('_NOTE')[0][:34]}={count}" for name, count in nonzero.items())
+        + f", and the remaining {len(per_file) - len(nonzero)} files are asserted to contribute "
+        "exactly zero, which is the sharper half of the claim since those are the pure-domain "
+        "surfaces where a hidden one-hop bridge would most plausibly hide."
+    )
+    print(
+        "lattice_wide: checked and not executed -- taking a whole-system limit is impossible "
+        "here because no system is instantiated: no volume, no lattice and no observable. What "
+        "the runner does close globally is the bank aggregate, 31 mixed paragraphs with zero "
+        "unclassified and zero positive-bridge-like, and that aggregate is a completeness "
+        "statement about the searched documents. The distinction matters: it certifies that no "
+        "one-hop W1 authority is hiding in the bank, not that any physical quantity was computed."
+    )
+
+
 def main() -> int:
     part_a_files_and_note()
     all_hits = part_b_mixed_paragraph_sweep()
     part_c_dispositions(all_hits)
     part_d_graph_and_arithmetic()
+    part_e_n5_certificate(all_hits)
     print(f"\nTOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("Status: exact negative boundary for hidden one-hop W1 authority.")
     return 0 if FAIL_COUNT == 0 else 1

@@ -177,6 +177,86 @@ def test_normalized_class_invariants_are_scale_invariant() -> None:
     print("  pick its absolute amplitude.")
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: no check() call is added and no PASS/FAIL count moves.
+    """
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    m_ref = z3_texture(1.4, 0.52, 0.09 + 0.04j)
+    delta_ref = np.kron(m_ref, J2)
+    pairs = delta_ref.shape[0] // 2
+    spectrum = normalized_spectrum(m_ref)
+
+    print(
+        "per_element: resolved, with amplitudes, because the whole computation is "
+        "entry-driven. z3_texture writes the singlet 1.4 at [0, 0], the diagonal "
+        "0.09 + 0.04j at [1, 1] and [2, 2], the doublet coupling 0.52 at [1, 2] and "
+        "[2, 1] and exact zeros everywhere else; J2 carries +1 at [0, 1] and -1 at "
+        "[1, 0]; and the Pfaffian is a hand-written cofactor expansion that reads "
+        "matrix[0, j] one entry at a time, discards entries under 1e-14 and recurses "
+        "on the minor. At one generation the entire generator is a single matrix "
+        "element: Pf(mu J2) = mu, so W_1 = log(mu) is the logarithm of one entry."
+    )
+    print(
+        "per_site: checked and not executed. This runner places nothing anywhere - "
+        "the three-valued index is a generation label organized by the Z3 "
+        "singlet/doublet split and the two-valued index inside each J2 is the "
+        "Majorana pair index, so neither carries a coordinate, a neighbour relation "
+        "or a volume, and no lattice is instantiated at any point."
+    )
+    print(
+        "per_mode: resolved by computation, reported only in aggregate. "
+        "normalized_spectrum takes the singular value decomposition of scale * M_0 "
+        f"and returns all {spectrum.size} singular values sorted and divided by their "
+        f"norm, giving the mode-resolved triple {np.round(spectrum, 6).tolist()}, and "
+        "that triple is recomputed at scales 0.17, 0.53 and 1.11 and compared. What "
+        "is printed, however, is only the norm of the difference between spectra, so "
+        "the individual mode weights never appear in the output."
+    )
+    print(
+        "per_block: resolved as a count and an exponent, not as separate block "
+        "amplitudes. The Z3 block structure is written explicitly - a singlet entry "
+        "plus a 2 x 2 doublet [[eps, b], [b, eps]] - and the Kronecker product with "
+        f"J2 turns the {delta_ref.shape[0]} x {delta_ref.shape[0]} pairing block into "
+        f"exactly {pairs} antisymmetric 2 x 2 pairing pairs. That block count is the "
+        f"exponent: Pf(lambda Delta_0) = lambda^{pairs} Pf(Delta_0) is what the "
+        "scale-ratio check verifies. No per-block Pfaffian, no singlet-against-"
+        "doublet comparison and no block-resolved invariant is ever evaluated."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the missing global ingredient is "
+        "this note's own declared obstruction. There is no lattice; and on the scale "
+        "axis, which is the axis this theorem actually lives on, no limit is taken "
+        "either - the runner evaluates fixed positive scales (mu = 0.37 and 0.91, "
+        "lambda = 0.41 and 0.83, plus four samples each) and never approaches mu -> 0 "
+        "or mu -> infinity. The note's bottom line is that any scale-setting law must "
+        "introduce a genuinely new non-homogeneous ingredient beyond this class, and "
+        "no global statement here can supply it."
+    )
+    print(
+        "  scope: the two 'never vanishes on positive scales' checks discriminate "
+        "nothing. Each builds its list directly as 1/mu (resp. 3/lambda) from four "
+        "positive sample scales and confirms the minimum exceeds zero, which is "
+        "automatic for positive input. The generality rests on the closed forms "
+        "1/mu and 3/lambda, which are tested numerically only at the single points "
+        "mu0 = 0.37 and lambda0 = 0.41 by central difference at eps = 1e-7."
+    )
+    print(
+        "  scope: every three-generation result is established on one fixed texture "
+        "representative (a = 1.4, b = 0.52, eps = 0.09 + 0.04j) while the note "
+        "quantifies over any fixed nonzero Z3 texture; no texture family is swept "
+        "and no degenerate or vanishing representative is exercised."
+    )
+    print(
+        "  scope: fully deterministic - no RNG stream and no optimizer appears in "
+        "this runner, so every quantity above is fixed by literal source constants."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("NEUTRINO MAJORANA: NO-STATIONARY-SCALE THEOREM")
@@ -195,6 +275,7 @@ def main() -> int:
     test_local_generator_has_no_stationary_scale()
     test_three_generation_lift_has_no_stationary_scale()
     test_normalized_class_invariants_are_scale_invariant()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

@@ -1,0 +1,190 @@
+{
+ "cycle": 737,
+ "failures": 0,
+ "gates": 35,
+ "headline": "On the 15800 least-cost cuttings of the single cell, every reading of the cycle-736 charge space is computed by the use-parity of a set of pieces, and the least such sets are measured. Every piece is used an odd number of times (1975), so a computing set's size has the parity of the reading: all eight readings force even size. A complete search of every set of at most eight pieces finds the smallest sets a cutting cannot see - 648 even octets - and the smallest computing the all-ones reading - 192 odd octets - while the six physical charges are carried by no set of eight or fewer and so need at least 10 pieces; verified sets of sizes 16 to 30 compute them. Both octet families are unions of orbits of the 48 cell symmetries with fixed geometry: the eight pieces of any octet share exactly two corners; for odd octets the shared pair is always a cell edge, six octets through each of the 32 edges; for even octets the shared pairs run over all 120 corner pairs with multiplicity set by the pair's distance alone.",
+ "lane": "emergent-geometry",
+ "note": "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
+ "recorded_output": "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_cold_2026-08-05.txt",
+ "results": {
+  "complete_sweep_to_eight": {
+   "even_octet_half_splits": [
+    0,
+    8,
+    42,
+    2,
+    6,
+    240,
+    4,
+    4,
+    204,
+    8,
+    0,
+    162
+   ],
+   "even_octets": 648,
+   "odd_octet_half_splits": [
+    2,
+    6,
+    96,
+    4,
+    4,
+    48,
+    8,
+    0,
+    48
+   ],
+   "odd_octets": 192,
+   "physical_charge_floor": 10
+  },
+  "construction": {
+   "cell_symmetries": 48,
+   "cuttings": 15800,
+   "five_subsets": 4368,
+   "least_cost": 6,
+   "least_cost_pieces": 400,
+   "least_volume_pieces": 2672,
+   "piece_orbits": 4,
+   "pieces_per_cutting": 24,
+   "sample_points": 2736,
+   "search_nodes": 502838,
+   "used_pieces": 192
+  },
+  "geometry": {
+   "even_octet_distance_multiplicities": [
+    9,
+    3,
+    3,
+    15
+   ],
+   "even_octet_distance_union_cross": true,
+   "even_octet_union_sizes": [
+    [
+     10,
+     240
+    ],
+    [
+     12,
+     120
+    ],
+    [
+     16,
+     288
+    ]
+   ],
+   "odd_octet_pencils": [
+    32,
+    6
+   ],
+   "pieces_per_corner": 60,
+   "pieces_per_tick_edge_and_spatial": [
+    24,
+    [
+     24,
+     24
+    ]
+   ],
+   "shared_corners_per_octet": 2
+  },
+  "license": {
+   "all_pieces_forced_parity": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "license_test_can_fail": true,
+   "odd_split_inside_half_not_licensed": true
+  },
+  "parity_law": {
+   "gf2_rank": 88,
+   "reading_counts_all_even": [
+    0,
+    15800,
+    5664,
+    10136,
+    7704,
+    8096,
+    7424,
+    8376
+   ],
+   "uses_per_piece_odd": 1975
+  },
+  "separations": {
+   "exchange_overlap_with_even_octets": [
+    0,
+    0
+   ],
+   "four_is_six_plus_seven_flipped": true,
+   "smallest_exchanges": 120
+  },
+  "symmetry_orbits": {
+   "even_family_orbits": 22,
+   "even_orbits_of_24": 17,
+   "even_orbits_of_48": 5,
+   "even_spread_over_piece_orbits": [
+    0,
+    0,
+    4,
+    4,
+    120,
+    0,
+    2,
+    2,
+    4,
+    48,
+    1,
+    1,
+    3,
+    3,
+    192,
+    2,
+    2,
+    2,
+    2,
+    288
+   ],
+   "odd_family_orbit_sizes": [
+    24,
+    24,
+    48,
+    48,
+    48
+   ],
+   "odd_spread_over_piece_orbits": [
+    0,
+    0,
+    4,
+    4,
+    48,
+    0,
+    2,
+    2,
+    4,
+    48,
+    1,
+    1,
+    3,
+    3,
+    48,
+    2,
+    2,
+    2,
+    2,
+    48
+   ]
+  },
+  "verified_computing_sets": {
+   "four": 16,
+   "four_flip": 20,
+   "seven": 30,
+   "seven_flip": 30,
+   "six": 24,
+   "six_flip": 24
+  }
+ }
+}

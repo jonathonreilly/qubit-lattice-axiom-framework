@@ -1,0 +1,37 @@
+PASS base.cell  4368 five-subsets of the 16 corners give 2672 pieces of least volume, carrying 2736 sample points with no collision and 0 on a boundary; the cell has 48 symmetries
+PASS base.floor  a complete search over the 400 pieces of least cost 6 visits 502838 nodes and finds 15800 cuttings of 24 pieces each, between them using 192 pieces
+PASS base.cols  each of the 48 symmetries permutes the 192 used pieces in step with its action on the 15800 cuttings; the pieces fall into 4 orbits of 48
+PASS par.colsum  every one of the 192 pieces is used by 1975 of the 15800 cuttings, an odd count
+PASS par.ones  zero, one, four, four-flip, six, six-flip, seven and seven-flip hold on 0, 15800, 5664, 10136, 7704, 8096, 7424 and 8376 cuttings, every count even
+PASS base.rank  the 15800 cuttings span 88 dimensions over the field with two elements
+PASS lic.full  the forced parity of the all-pieces indicator against the eight readings is (0, 0, 0, 0, 0, 0, 0, 0)
+PASS lic.half  the left half 0, pieces 96 to 143 0 and pieces 144 to 191 0: each lies in the row space with all eight forced parities 0
+PASS lic.quart  the indicators of pieces 0 to 47 and of pieces 48 to 95 lie outside the row space, so an odd split inside a half is not licensed
+PASS lic.orb  the indicator of each of the 4 orbits of 48 pieces lies outside the row space: [True, True, True, True]
+PASS lic.plant  each of the 4 planted targets also has forced left-half parity 0, so the even-split sweep covers them too
+PASS lic.ctrl  a synthetic reading built from pieces 5, 17, 60 and 130 has forced left-half parity 1, so the license test can fail
+PASS sweep.zero  no set of 2, 4 or 6 pieces sums to zero; at 8 there are exactly 648, splitting [((0, 8), 42), ((2, 6), 240), ((4, 4), 204), ((8, 0), 162)]
+PASS sweep.one  the all-ones reading needs 8 pieces too, none at 2, 4 or 6; there are exactly 192, splitting [((2, 6), 96), ((4, 4), 48), ((8, 0), 48)]
+PASS sweep.charge  four, four-flip, six, six-flip, seven and seven-flip are carried by no set of 2, 4, 6 or 8 pieces; parity bars odd sizes, so each needs at least 10
+PASS sweep.ver  every set of pieces the sweep found reproduces its own reading on all 15800 cuttings, and no set was found twice
+PASS sweep.plant  planted sets of 4, 8, 8 and 8 pieces, one in each search class, are all recovered: [True, True, True, True]
+PASS orb.zero  the 648 octets summing to zero form 22 orbits under the 48 symmetries, 17 of size 24 and 5 of size 48, closed under the action and together using all 192 pieces
+PASS orb.one  the 192 octets reading all-ones form 5 orbits of sizes [24, 24, 48, 48, 48], closed under the action and together using all 192 pieces
+PASS orb.spread.zero  across the four orbits of pieces the octets summing to zero spread as [((0, 0, 4, 4), 120), ((0, 2, 2, 4), 48), ((1, 1, 3, 3), 192), ((2, 2, 2, 2), 288)], each spread the ordered counts smallest first
+PASS orb.spread.one  the all-ones octets spread as [((0, 0, 4, 4), 48), ((0, 2, 2, 4), 48), ((1, 1, 3, 3), 48), ((2, 2, 2, 2), 48)], the same four patterns, 48 sets at each
+PASS wit.four  four: size 16, verified True, split (8, 8)
+PASS wit.four-flip  four-flip: size 20, verified True, split (10, 10)
+PASS wit.six  six: size 24, verified True, split (12, 12)
+PASS wit.six-flip  six-flip: size 24, verified True, split (12, 12)
+PASS wit.seven  seven: size 30, verified True, split (16, 14)
+PASS wit.seven-flip  seven-flip: size 30, verified True, split (14, 16)
+PASS sep.move  the 120 smallest exchanges each replace 8 pieces, 0 of them sum to zero, and 0 of them are among the 648 octets
+PASS sep.fun  four is six added to seven and then flipped, on all 15800 cuttings, and differs from six added to seven somewhere
+PASS geo.corner  each of the 16 corners lies in 60 of the 192 pieces, 16 times 60 being 5 times 192; each of the 8 tick edges lies in 24, and the spatial edges give [(24, 24)]
+PASS geo.inter  the eight pieces of an octet share exactly two corners: sizes [(2, 648)] for the octets summing to zero and [(2, 192)] for the all-ones octets
+PASS geo.union  corners the eight pieces cover between them: zero octets [(10, 240), (12, 120), (16, 288)], all-ones octets [(16, 192)]
+PASS geo.odd  the two corners an all-ones octet shares are always a cell edge: distances [(1, 192)], directions [(1, 48), (2, 48), (4, 48), (8, 48)], and the 32 edges each carried 6 times, [(6, 32)]
+PASS geo.even.d  the pairs zero octets share run over all 120 corner pairs, distances [(1, 288), (2, 144), (3, 96), (4, 120)], and at each distance a single multiplicity: 9, 3, 3 and 15
+PASS geo.even.x  distance against corners covered, for the zero octets: [((1, 12), 96), ((1, 16), 192), ((2, 10), 144), ((3, 10), 96), ((4, 12), 24), ((4, 16), 96)]
+
+TOTAL: PASS=35 FAIL=0

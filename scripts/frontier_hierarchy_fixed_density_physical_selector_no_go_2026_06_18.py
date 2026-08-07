@@ -167,6 +167,46 @@ def main() -> None:
         and "N8, cross-cycle echo" in note_text,
     )
 
+    # N5 execution certificate. Print-only: no check() call is made here, so
+    # PASS/FAIL are untouched. Quantities are reused from the computations above.
+    print()
+    print("=" * 78)
+    print("N5 execution certificate: resolution granularity of this selector no-go")
+    print("=" * 78)
+    print(
+        "per_element: checked and not executed — no operator, matrix, or algebra element is constructed "
+        "anywhere in this runner; its objects are three scalar endpoint coefficients and the quartic-root "
+        "scale readouts built from them, so there is no element-indexed carrier on which the selector "
+        "obstruction could be resolved more finely than by endpoint."
+    )
+    print(
+        "per_site: checked and not executed — the D=4 map rho_* = A(L) v(L)^4 is a coarse-grained density "
+        "relation with no site index; the executed coefficients are evaluated at u_0 = 1.0 and no lattice "
+        "is instantiated, so no site-resolved field or link enters the endpoint-selection question at all."
+    )
+    print(
+        "per_mode: checked and not executed — the compression map carries no spectral or mode label, only "
+        "the block size L; no eigenvalue, Fourier component, or taste index appears, so this runner makes "
+        "no mode-resolved claim about where a physical selector could be hiding."
+    )
+    print(
+        "per_block: checked — the coefficient surface is resolved at each finite block size: "
+        f"A(2)=1/(8 u_0^2)={A2:.12f} and A(4)=1/(7 u_0^2)={A4:.12f}, with the exact endpoint ratio "
+        f"A2/A4={A2 / A4:.12f} = 7/8 and the induced scale ratio v4/v2={scales['A4'] / scales['A2']:.12f}. "
+        "Each block can be normalized as the reference endpoint without violating the fixed-density "
+        f"algebra, and the {len(set(nonidentical_refs.values()))} resulting readout triples are distinct "
+        "yet all internally compatible, which is exactly why no block singles itself out as physical."
+    )
+    print(
+        "lattice_wide: checked — the L -> infinity endpoint is carried explicitly as "
+        f"A(inf)=1/(4 sqrt(3) u_0^2)={Ainf:.12f} and enters on the same footing as the finite blocks, with "
+        f"Ainf/A2={Ainf / A2:.12f} = 2/sqrt(3) and vinf/v2={scales['Ainf'] / scales['A2']:.12f}; the "
+        "obstruction survives at that endpoint too, since rescaling the fixed density by lambda^4 with "
+        f"lambda={lam} multiplies every v_i by exactly lambda and leaves all endpoint ratios unchanged. "
+        "The infinite-L limit itself is consumed from the parent dimensional-compression note rather than "
+        "taken here."
+    )
+
     print(f"\nSUMMARY: HIERARCHY FIXED-DENSITY SELECTOR NO-GO PASS={PASS} FAIL={FAIL}")
     if FAIL:
         raise SystemExit(1)

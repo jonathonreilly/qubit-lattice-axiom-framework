@@ -21,7 +21,6 @@ from __future__ import annotations
 
 import math
 from fractions import Fraction
-from itertools import product
 from pathlib import Path
 
 AUDIT_INPUT_PATHS = (
@@ -34,14 +33,22 @@ NOTE = ROOT / AUDIT_INPUT_PATHS[0]
 PASS = 0
 FAIL = 0
 
+# Evidence is tallied separately for the exact (load-bearing) parts A-C and the
+# comparator part D, so a single headline count can never present floating-point
+# comparator agreement as if it were exact algebra.
+MODE = "exact"
+TALLY = {"exact": [0, 0], "comparator": [0, 0]}
+
 
 def check(label: str, ok: bool, detail: object = "") -> None:
     global PASS, FAIL
     if bool(ok):
         PASS += 1
+        TALLY[MODE][0] += 1
         tag = "PASS"
     else:
         FAIL += 1
+        TALLY[MODE][1] += 1
         tag = "FAIL"
     suffix = f"  ({detail})" if detail != "" else ""
     print(f"  [{tag}] {label}{suffix}")
@@ -251,7 +258,56 @@ for lam in [(Fraction(1), Fraction(2), Fraction(1)),
     )
 
 
+# ---------------------------------------------------------------------------
+# C'.  ANTI-OVERCLAIM GUARD.
+#
+# Part C is a SHARPNESS witness, NOT a converse of Part A.  The literal
+# converse -- "the dial is unchanged  =>  the lambda_k are all equal" -- is
+# FALSE.  These exact counterexamples are asserted so that the stronger reading
+# cannot be reintroduced into the note without failing the runner.
+# ---------------------------------------------------------------------------
+print()
+print("  C'. Anti-overclaim guard: the literal CONVERSE of Part A is FALSE.")
+print("      Unequal factors are not GUARANTEED to move the dial; they are")
+print("      only not PROTECTED from moving it.  Exact counterexamples:")
+print()
+
+# (i) a zero coordinate absorbs any factor -- on Part C's own witness triple
+x_z = desc((Fraction(1), Fraction(1), Fraction(0)))
+lam_z = (Fraction(1), Fraction(1), Fraction(7))
+x_z2 = desc(tuple(l * v for l, v in zip(lam_z, x_z)))
+check(
+    "counterexample (i): on x=(1,1,0), unequal factors (1,1,7) FIX the dial",
+    dial_exact(x_z) == dial_exact(x_z2),
+    "the factor lands on a zero coordinate; converse fails on C's own witness",
+)
+
+# (ii) strictly positive, nondegenerate: factors that permute the multiset
+for base, lam_p in [
+    ((Fraction(4), Fraction(2), Fraction(1)), (Fraction(1, 4), Fraction(1), Fraction(4))),
+    ((Fraction(9), Fraction(3), Fraction(1)), (Fraction(1, 9), Fraction(1), Fraction(9))),
+    ((Fraction(25), Fraction(5), Fraction(1)), (Fraction(1, 25), Fraction(1), Fraction(25))),
+]:
+    xb = desc(base)
+    xp = desc(tuple(l * v for l, v in zip(lam_p, xb)))
+    d0, d1 = dial_exact(xb), dial_exact(xp)
+    check(
+        f"counterexample (ii): x={tuple(str(v) for v in xb)} with unequal "
+        f"{tuple(str(l) for l in lam_p)} FIXES the dial",
+        d0 == d1 and len(set(lam_p)) > 1,
+        f"multiset permuted onto itself; Q={d0[0]} r={d0[1]} unchanged",
+    )
+
+check(
+    "therefore Part C is labelled a SHARPNESS witness, not a converse",
+    True,
+    "note must not claim 'the exact converse'; see counterexamples above",
+)
+
+
 section("D. COMPARATOR ONLY: what this means for the displayed quark numbers")
+
+MODE = "comparator"
 
 print("  Everything in Part D is a comparator.  It uses external PDG central")
 print("  values and floating point, is not exact, is not a derivation step, and")
@@ -434,8 +490,108 @@ check("comparator: the three sector dials are not a common value",
       pull_u > 20 and pull_d > 5,
       "displayed as a comparator only; this runner asserts no no-go")
 
+print()
+print("  D4. SCHEME dependence: the invariance covers the reference SCALE only.")
+print("      A scheme change is NOT a common rescaling -- the MSbar->pole factor")
+print("      1 + 4 a_s(m_q)/(3 pi) is evaluated at each quark's own mass, so it")
+print("      differs per generation.  This is a named residual, not a bound.")
+_R = _RG(PARS['aS'], PARS['mc'], PARS['mb'], PARS['mt'])
+
+
+def _pole_factor(m):
+    return 1.0 + 4.0 * (_R.a_at(m) * math.pi) / (3.0 * math.pi)
+
+
+f_c, f_t = _pole_factor(PARS['mc']), _pole_factor(PARS['mt'])
+r_ms = _dial_f([PARS['mu'], PARS['mc'], PARS['mt']])[1]
+r_pole = _dial_f([PARS['mu'], PARS['mc'] * f_c, PARS['mt'] * f_t])[1]
+print(f"    MSbar->pole factors: at m_c {f_c:.4f}, at m_t {f_t:.4f} (NOT common)")
+print(f"    up-type r: MSbar {r_ms:.6f} -> pole {r_pole:.6f}  "
+      f"(shift {r_pole - r_ms:+.6f} = {abs(r_pole - r_ms)/sru:.1f} sigma)")
+check("comparator: a uniform scheme change DOES move the dial",
+      abs(r_pole - r_ms) > 5e-3,
+      "so the dial is reference-scale-free within a scheme, NOT scheme-free")
+check("comparator: the MSbar->pole factors are not a common rescaling",
+      abs(f_c - f_t) > 1e-2,
+      f"|f_c - f_t| = {abs(f_c - f_t):.4f}; outside Part A's hypothesis")
+
+print()
+print("  D5. Active-flavour / decoupling systematic on the 2 GeV light masses.")
+print("      This acts on m_u alone (up) and m_d,m_s (down) -- an UNEQUAL")
+print("      per-generation factor in the sense of Part C, so it is not")
+print("      protected by the invariance and must be sized explicitly:")
+for pct in (0.003, 0.01, 0.03):
+    p = dict(PARS)
+    for k in ('mu', 'md', 'ms'):
+        p[k] = PARS[k] * (1.0 + pct)
+    (_, ru_s, _), (_, rd_s, _) = _sector_dials(p, 91.1876)
+    print(f"    zeta_m-style shift {pct*100:+5.1f}% : d r_up = {ru_s-base[0][1]:+.2e} "
+          f"({abs(ru_s-base[0][1])/sru:.3f} sigma)   "
+          f"d r_down = {rd_s-base[1][1]:+.2e} ({abs(rd_s-base[1][1])/srd:.3f} sigma)")
+    if abs(pct - 0.03) < 1e-12:
+        check("comparator: even a 3% light-mass convention shift stays under 1 sigma",
+              abs(ru_s - base[0][1]) / sru < 1.0 and abs(rd_s - base[1][1]) / srd < 1.0,
+              "supports the note's 'well inside PDG input errors' scope line")
+
+
+print()
+print("  D6. Threshold prescription: the common scale must be at or above the")
+print("      heaviest sector member's OWN threshold (mu >= m_t covers both")
+print("      sectors).  Below its own threshold a quark is decoupled, so the")
+print("      row is a formal extrapolation and is display-only.")
+_starts = {'m_u': 2.0, 'm_c': PARS['mc'], 'm_t': PARS['mt'],
+           'm_d': 2.0, 'm_s': 2.0, 'm_b': PARS['mb']}
+_own = {'m_c': PARS['mc'], 'm_b': PARS['mb'], 'm_t': PARS['mt']}
+_sectors = {'up': ['m_u', 'm_c', 'm_t'], 'down': ['m_d', 'm_s', 'm_b']}
+print(f"    {'mu [GeV]':>10} | extrapolated below own threshold")
+for mu_c in (2.0, 4.18, 10.0, 91.1876, 162.5, 1000.0):
+    bad = []
+    for sname, mem in _sectors.items():
+        for k in mem:
+            if k in _own and mu_c < _own[k]:
+                bad.append(f"{k}({sname})")
+    print(f"    {mu_c:10.4f} | {', '.join(bad) if bad else 'none -- CANONICAL'}")
+
+# At mu >= m_t every member is transported upward only.
+_canon = [mu for mu in (2.0, 4.18, 10.0, 91.1876, 162.5, 1000.0)
+          if mu >= PARS['mt']]
+_all_up = all(mu >= _starts[k] for mu in _canon for k in _starts)
+check("comparator: at mu >= m_t every sector member runs UPWARD only",
+      _all_up,
+      "so each is a light/active flavour at every threshold it crosses")
+
+# nf segmentation of the canonical mu = 1000 GeV row
+_thr = (PARS['mc'], PARS['mb'], PARS['mt'])
+_seg_ok = True
+_seg_desc = []
+for k in ('m_u', 'm_c', 'm_b', 'm_t'):
+    lo, hi = _starts[k], 1000.0
+    pts = [lo] + [t for t in _thr if lo < t < hi] + [hi]
+    nfs = []
+    for i in range(len(pts) - 1):
+        mid = math.sqrt(pts[i] * pts[i + 1])
+        nfs.append(3 + sum(1 for t in _thr if mid > t))
+    if nfs != sorted(nfs) or nfs[-1] != 6:
+        _seg_ok = False
+    _seg_desc.append(f"{k}:nf={'/'.join(map(str, nfs))}")
+check("comparator: mu = 1000 GeV row uses monotone nf segmentation ending at nf=6",
+      _seg_ok, "  ".join(_seg_desc))
+
+# the canonical rows and the sub-threshold display rows agree to float noise,
+# so no displayed digit depends on an extrapolated row
+_ref = _sector_dials(PARS, 1000.0)
+_worst = 0.0
+for mu_c in (2.0, 4.18, 10.0, 91.1876, 162.5):
+    _d = _sector_dials(PARS, mu_c)
+    _worst = max(_worst, abs(_d[0][1] - _ref[0][1]), abs(_d[1][1] - _ref[1][1]))
+check("comparator: display-only rows agree with the canonical mu >= m_t value",
+      _worst < 1e-10,
+      f"max |delta r| = {_worst:.2e}; no displayed digit depends on an extrapolation")
+
 
 section("E. Scope guards")
+
+MODE = "exact"
 
 if NOTE.exists():
     text = NOTE.read_text(encoding="utf-8")
@@ -446,11 +602,30 @@ if NOTE.exists():
         ("comparator", "note marks its numerics as comparators"),
         ("prior art", "note defers homogeneity and flavour-universality to prior art"),
         ("proposed_retained", "note uses author-side status vocabulary only"),
+        ("sharpness witness, not a converse",
+         "note does not claim T3 is a converse (it is not; see Part C')"),
+        ("Mass scheme is a named residual",
+         "note scopes the invariance to the reference scale within one scheme"),
+        ("Canonical prescription",
+         "note states the mu >= m_t common-scale prescription as load-bearing"),
+        ("display-only",
+         "note marks the sub-threshold rows as display-only extrapolations"),
     ]:
         check(f"note contains discipline marker: {needle!r}", needle in text, why)
     for forbidden in ["effective_status", "audit_status"]:
         check(f"note does not set {forbidden!r}", forbidden not in text,
               "status authority stays with the independent audit lane")
+    # anti-overclaim guards: these phrasings were removed in review and the
+    # runner fails if they return.  See Part C' and Part D4.
+    for banned, why in [
+        ("the exact converse",
+         "the literal converse is FALSE; Part C' exhibits counterexamples"),
+        ("not scheme-blocked",
+         "only the reference SCALE is unblocked; scheme remains a residual"),
+        ("attributed to scheme bookkeeping",
+         "T1-T3 remove the scale choice, not the scheme choice"),
+    ]:
+        check(f"note avoids retired overclaim: {banned!r}", banned not in text, why)
 else:
     check("source note is present on the branch", False, f"missing: {NOTE}")
 
@@ -458,4 +633,9 @@ else:
 print()
 print("=" * 64)
 print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
+print(f"  exact      (Parts A-C, C', E, Fraction/int only): "
+      f"PASS={TALLY['exact'][0]}, FAIL={TALLY['exact'][1]}")
+print(f"  comparator (Part D, floating point + PDG inputs): "
+      f"PASS={TALLY['comparator'][0]}, FAIL={TALLY['comparator'][1]}")
+print("Only the exact tally is load-bearing; Part D supplies no premise.")
 print("=" * 64)

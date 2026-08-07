@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07.py
-runner_sha256: 6d109dc1d6b48cdbd5ce5af22cda7df63cc2d7b7b9406cc3475ae76125599378
-input_fingerprint_sha256: 7c27ba7216c4067a7deb31a51911f0042369a2e68472e3f15a26412c7fbc1ac2
+runner_sha256: 74dfcea1c582995221384f0c46d2e91140bcfce1049d859d8916d298ae4bdaba
+input_fingerprint_sha256: ff853984f37cedb9d156e709b20ef00367bd6a7de8750eb834ca203b79cfc59c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 
@@ -77,6 +77,16 @@ C. EXACT: unequal per-generation factors DO move the dial
   [PASS] unequal factors ('1', '1', '4') move the dial  (Q: 63/128 -> 141/361   r: 61/256 -> 31/361)
   [PASS] unequal factors ('9/4', '1', '1') move the dial  (Q: 63/128 -> 2129/3249   r: 61/256 -> 523/1083)
 
+  C'. Anti-overclaim guard: the literal CONVERSE of Part A is FALSE.
+      Unequal factors are not GUARANTEED to move the dial; they are
+      only not PROTECTED from moving it.  Exact counterexamples:
+
+  [PASS] counterexample (i): on x=(1,1,0), unequal factors (1,1,7) FIX the dial  (the factor lands on a zero coordinate; converse fails on C's own witness)
+  [PASS] counterexample (ii): x=('4', '2', '1') with unequal ('1/4', '1', '4') FIXES the dial  (multiset permuted onto itself; Q=3/7 r=1/7 unchanged)
+  [PASS] counterexample (ii): x=('9', '3', '1') with unequal ('1/9', '1', '9') FIXES the dial  (multiset permuted onto itself; Q=7/13 r=4/13 unchanged)
+  [PASS] counterexample (ii): x=('25', '5', '1') with unequal ('1/25', '1', '25') FIXES the dial  (multiset permuted onto itself; Q=21/31 r=16/31 unchanged)
+  [PASS] therefore Part C is labelled a SHARPNESS witness, not a converse  (note must not claim 'the exact converse'; see counterexamples above)
+
 D. COMPARATOR ONLY: what this means for the displayed quark numbers
 -------------------------------------------------------------------
   Everything in Part D is a comparator.  It uses external PDG central
@@ -116,6 +126,39 @@ D. COMPARATOR ONLY: what this means for the displayed quark numbers
     distance of r_down from the leptonic 1/2: 17 sigma
   [PASS] comparator: the three sector dials are not a common value  (displayed as a comparator only; this runner asserts no no-go)
 
+  D4. SCHEME dependence: the invariance covers the reference SCALE only.
+      A scheme change is NOT a common rescaling -- the MSbar->pole factor
+      1 + 4 a_s(m_q)/(3 pi) is evaluated at each quark's own mass, so it
+      differs per generation.  This is a named residual, not a bound.
+    MSbar->pole factors: at m_c 1.1641, at m_t 1.0461 (NOT common)
+    up-type r: MSbar 0.767630 -> pole 0.757716  (shift -0.009914 = 4.5 sigma)
+  [PASS] comparator: a uniform scheme change DOES move the dial  (so the dial is reference-scale-free within a scheme, NOT scheme-free)
+  [PASS] comparator: the MSbar->pole factors are not a common rescaling  (|f_c - f_t| = 0.1181; outside Part A's hypothesis)
+
+  D5. Active-flavour / decoupling systematic on the 2 GeV light masses.
+      This acts on m_u alone (up) and m_d,m_s (down) -- an UNEQUAL
+      per-generation factor in the sense of Part C, so it is not
+      protected by the invariance and must be sized explicitly:
+    zeta_m-style shift  +0.3% : d r_up = -1.01e-05 (0.005 sigma)   d r_down = -4.18e-04 (0.057 sigma)
+    zeta_m-style shift  +1.0% : d r_up = -3.37e-05 (0.015 sigma)   d r_down = -1.39e-03 (0.190 sigma)
+    zeta_m-style shift  +3.0% : d r_up = -1.01e-04 (0.046 sigma)   d r_down = -4.14e-03 (0.564 sigma)
+  [PASS] comparator: even a 3% light-mass convention shift stays under 1 sigma  (supports the note's 'well inside PDG input errors' scope line)
+
+  D6. Threshold prescription: the common scale must be at or above the
+      heaviest sector member's OWN threshold (mu >= m_t covers both
+      sectors).  Below its own threshold a quark is decoupled, so the
+      row is a formal extrapolation and is display-only.
+      mu [GeV] | extrapolated below own threshold
+        2.0000 | m_t(up), m_b(down)
+        4.1800 | m_t(up)
+       10.0000 | m_t(up)
+       91.1876 | m_t(up)
+      162.5000 | none -- CANONICAL
+     1000.0000 | none -- CANONICAL
+  [PASS] comparator: at mu >= m_t every sector member runs UPWARD only  (so each is a light/active flavour at every threshold it crosses)
+  [PASS] comparator: mu = 1000 GeV row uses monotone nf segmentation ending at nf=6  (m_u:nf=4/5/6  m_c:nf=4/5/6  m_b:nf=5/6  m_t:nf=6)
+  [PASS] comparator: display-only rows agree with the canonical mu >= m_t value  (max |delta r| = 3.65e-12; no displayed digit depends on an extrapolation)
+
 E. Scope guards
 ---------------
   [PASS] source note is present on the branch  (SECTOR_DIAL_SCALE_INVARIANCE_AND_COMMON_SCALE_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-08-07.md)
@@ -124,11 +167,21 @@ E. Scope guards
   [PASS] note contains discipline marker: 'comparator'  (note marks its numerics as comparators)
   [PASS] note contains discipline marker: 'prior art'  (note defers homogeneity and flavour-universality to prior art)
   [PASS] note contains discipline marker: 'proposed_retained'  (note uses author-side status vocabulary only)
+  [PASS] note contains discipline marker: 'sharpness witness, not a converse'  (note does not claim T3 is a converse (it is not; see Part C'))
+  [PASS] note contains discipline marker: 'Mass scheme is a named residual'  (note scopes the invariance to the reference scale within one scheme)
+  [PASS] note contains discipline marker: 'Canonical prescription'  (note states the mu >= m_t common-scale prescription as load-bearing)
+  [PASS] note contains discipline marker: 'display-only'  (note marks the sub-threshold rows as display-only extrapolations)
   [PASS] note does not set 'effective_status'  (status authority stays with the independent audit lane)
   [PASS] note does not set 'audit_status'  (status authority stays with the independent audit lane)
+  [PASS] note avoids retired overclaim: 'the exact converse'  (the literal converse is FALSE; Part C' exhibits counterexamples)
+  [PASS] note avoids retired overclaim: 'not scheme-blocked'  (only the reference SCALE is unblocked; scheme remains a residual)
+  [PASS] note avoids retired overclaim: 'attributed to scheme bookkeeping'  (T1-T3 remove the scale choice, not the scheme choice)
 
 ================================================================
-TOTAL: PASS=53, FAIL=0
+TOTAL: PASS=71, FAIL=0
+  exact      (Parts A-C, C', E, Fraction/int only): PASS=59, FAIL=0
+  comparator (Part D, floating point + PDG inputs): PASS=12, FAIL=0
+Only the exact tally is load-bearing; Part D supplies no premise.
 ================================================================
 
 ----- stderr -----

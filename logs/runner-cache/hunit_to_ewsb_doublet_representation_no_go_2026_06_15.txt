@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py
-runner_sha256: f3cf4941207839bd4c573c1e17fcdd5164c741b015e2ab4bdc1437476a658ab9
+runner_sha256: b477a9941c4f7ccaa4231e09089d3e44d415eb4dc0e2f8c8fca7458c4c69a2ea
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -58,6 +58,13 @@ Part 5: thermal census boundary
 [PASS] one complex SU(2) doublet has four real scalar components
 [PASS] a neutral radial ray is one real carrier direction
 [PASS] a scalar singlet is not the four-component high-T doublet
+
+N5 execution certificate: resolution granularity of this representation no-go
+per_element: checked — equivariance is decided entry by entry in exact symbolic arithmetic, not by a norm: every one of the 36 entries of each commutator [T_i, H_unit] is simplified and required to vanish for all three generators, and the rank-one projector P_- is likewise verified entrywise as idempotent. The obstruction is exact, with no tolerance anywhere in this runner.
+per_site: checked and not executed — no lattice and no site index appears; the carrier is the internal Q_L = (2,3) block of a single generation, a 6-dimensional space whose second factor is colour rather than position, so there is no spatial degree of freedom for the representation obstruction to be resolved against.
+per_mode: checked — the two weight components of the SU(2) fundamental are resolved separately and both are eliminated: solving the equivariance equations for a general v = (a, b) forces a = 0 and b = 0, the stacked generator constraint has rank 2 with empty nullspace, and the resolution P_+ + P_- = I_2 separates the charged component from the neutral one, with Q = T_3 + Y annihilating only the latter. No individual component survives as an invariant direction.
+per_block: checked — H_unit is examined as an operator on the whole Q_L block rather than on a chosen sub-piece: it is exactly the identity of that block scaled to unit Hilbert-Schmidt norm, 1/sqrt(6) times I_2 tensor I_3, so it is constant across the isospin factor and the colour factor alike and carries no block-internal direction that could single out a doublet component. Choosing any nonzero ray inside the block, such as (1, 0), immediately breaks the equivariance.
+lattice_wide: checked and not executed — no lattice-wide, thermal, or field-theoretic computation is performed; the high-temperature census in Part 5 is an integer comparison of real degrees of freedom, 4 for one complex doublet against 1 for a neutral radial ray or a scalar singlet, not a partition-function or free-energy evaluation, and the note is explicit that this does not close R-HIGGS positively and adds no axiom or approved primitive.
 
 TOTAL: PASS=39 FAIL=0
 

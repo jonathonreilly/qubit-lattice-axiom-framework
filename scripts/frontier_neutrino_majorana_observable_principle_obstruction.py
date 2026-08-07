@@ -238,6 +238,93 @@ def test_no_current_atlas_functional_can_select_mu() -> None:
     print("  observable-principle jet can activate or force the Majorana slot.")
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: no check() call is added and no PASS/FAIL count moves.
+    """
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    k = build_normal_kernel()
+    projectors = [
+        np.diag([1.0, 0.0, 0.0]).astype(complex),
+        np.diag([0.0, 1.0, 0.0]).astype(complex),
+        np.diag([0.0, 0.0, 1.0]).astype(complex),
+    ]
+    coeffs = np.array([0.07, -0.04, 0.05], dtype=float)
+    w_value, grad, hess = observable_jet(k, projectors, coeffs)
+    slots = len(projectors)
+    fock_dim = 2 ** 2
+
+    print(
+        "per_element: resolved with amplitudes on both sides of the argument. The "
+        "normal kernel is written entry by entry (1.30, 1.55, 1.72 on the diagonal, "
+        "0.11 - 0.03j, 0.02 and -0.06j off it), each of the three source projectors "
+        "is a diagonal unit that addresses exactly one kernel entry, and the jet is "
+        f"then read out entry by entry: W = {w_value:.12f}, the {slots} gradient "
+        f"components {list(grad)} as separate traces of A^-1 P_i, and the "
+        f"{slots * slots} Hessian entries as separate traces of A^-1 P_i A^-1 P_j "
+        f"with diagonal {[hess[i][i] for i in range(slots)]}. Part 1 adds entrywise "
+        f"charge identities across all {fock_dim} x {fock_dim} Fock entries."
+    )
+    print(
+        "per_site: checked and not executed. Neither half of this runner has a "
+        "geometry: the three indices of the normal kernel are retained source slots "
+        "picked out by diagonal projectors, not positions, and the two factors of "
+        "Part 1 are internal Fock modes. No coordinate, no neighbour relation and no "
+        "volume is defined, so nothing site-indexed is available to evaluate."
+    )
+    print(
+        "per_mode: resolved on the fermionic side, absent on the spectral side. Part "
+        "1 tests the two modes one at a time - n0 and n1 are separately certified "
+        "charge-zero and the unique seed is the specific pair c_0 c_1 carrying charge "
+        "-2 - and Parts 2 and 3 give each of the three source directions its own "
+        "gradient component. But the kernel is never diagonalized: slogdet and inv "
+        "are the only spectral operations, so no eigenvalue, eigenmode or spectral "
+        "weight of K is ever produced."
+    )
+    print(
+        "per_block: this is the granularity the claim is stated at, and the runner "
+        "resolves it only as a grading, never as a decomposition of one object. Part "
+        "1 certifies the charge grading operationally - the source class sits at "
+        "charge 0, the Majorana seed at charge -2 - but the normal kernel and the "
+        "pairing block are two disconnected matrices of different sizes (3 x 3 for K, "
+        "2 x 2 for mu J2) that are never assembled into a common Nambu object, so no "
+        "block decomposition, no off-diagonal coupling and no block-resolved "
+        "amplitude of a single matrix is computed anywhere."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the missing global law is "
+        "exactly this note's obstruction. No lattice exists here, and the note's own "
+        "theorem is a statement about the whole current atlas toolkit which this "
+        "runner cannot reach by execution: it exhibits one kernel, one source triple "
+        "and one pairing family rather than quantifying over the toolkit, and the "
+        "note's remaining task - a genuinely new charge-2 primitive or pairing-side "
+        "observable principle - is precisely the global object that is absent."
+    )
+    print(
+        "  scope: the central blindness comparison is not computed. In Part 2 the "
+        "comprehension 'for _ in mus' discards mu, so observable_jet is called three "
+        "times with identical arguments, and in Part 3 current_atlas_signature() "
+        "takes no argument at all; distinct jets = 1 and distinct images = 1 follow "
+        "from determinism, not from any property of the observable principle. The "
+        "real content is structural - observable_jet receives no pairing data - and "
+        "the only genuinely computed contrast is on the pairing side, where "
+        "Pf(mu J2) = mu yields the three distinct amplitudes 0.0, 0.35 and 1.10."
+    )
+    print(
+        "  scope: the jet is compared as a tuple rounded to 12 decimals, so what the "
+        "equality tests certify is agreement at that rounding, and the mu family "
+        "consists of three hand-picked values rather than a swept range."
+    )
+    print(
+        "  scope: fully deterministic - no RNG stream and no optimizer is used, so "
+        "every quantity above is fixed by literal constants in the source."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("NEUTRINO MAJORANA: OBSERVABLE-PRINCIPLE OBSTRUCTION")
@@ -257,6 +344,7 @@ def main() -> int:
     test_current_source_family_is_charge_zero()
     test_observable_jet_is_identical_across_pfaffian_family()
     test_no_current_atlas_functional_can_select_mu()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

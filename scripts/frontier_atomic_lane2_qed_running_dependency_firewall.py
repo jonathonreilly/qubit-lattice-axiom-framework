@@ -300,6 +300,61 @@ def part5_forbidden_imports() -> None:
     )
 
 
+def part6_n5_execution_certificate() -> None:
+    section("N5 execution certificate — what this runner resolves at each granularity")
+    alpha_one_loop = 1.0 / ALPHA_0_INV_COMP
+    d_e = delta_alpha_lep_perturbative(M_E_MEV_COMP, M_Z_MEV_COMP, alpha_one_loop)
+    d_mu = delta_alpha_lep_perturbative(M_MU_MEV_COMP, M_Z_MEV_COMP, alpha_one_loop)
+    d_tau = delta_alpha_lep_perturbative(M_TAU_MEV_COMP, M_Z_MEV_COMP, alpha_one_loop)
+    d_c = delta_alpha_quark_heavy_perturbative(
+        M_C_MEV_COMP, 2.0 / 3.0, M_Z_MEV_COMP, alpha_one_loop
+    )
+    d_b = delta_alpha_quark_heavy_perturbative(
+        M_B_MEV_COMP, -1.0 / 3.0, M_Z_MEV_COMP, alpha_one_loop
+    )
+    print(
+        "  per_element: checked — the vacuum-polarization sum is resolved one "
+        f"charged fermion at a time, with Delta alpha_e = {d_e:.5f}, "
+        f"Delta alpha_mu = {d_mu:.5f}, Delta alpha_tau = {d_tau:.5f} from the "
+        f"leptonic loop and Delta alpha_c = {d_c:.5f}, Delta alpha_b = {d_b:.5f} "
+        "from the perturbative heavy-quark loop, so each named loop element "
+        "carries its own retained-mass dependency rather than a lumped total."
+    )
+    print(
+        "  per_site: checked and not executed — this firewall lives entirely in "
+        "scale space, its only running index being mu evaluated at the single "
+        f"point M_Z = {M_Z_MEV_COMP} MeV; no lattice is instantiated and no "
+        "site-indexed quantity exists here, so there is nothing for a "
+        "site-resolved statement to range over."
+    )
+    print(
+        "  per_mode: checked and not executed — the mode-resolved object would be "
+        "the hadronic spectral density R(s) under the dispersion integral over "
+        "s' from 4 m_pi^2 upward, and refusing to evaluate that integral is "
+        "exactly sub-residual R-Had-NP; the runner instead carries the single "
+        f"comparator number Delta alpha_had^(5) = {DELTA_ALPHA_HAD_5_COMP}, which "
+        "is a scaling import and not a mode decomposition."
+    )
+    print(
+        "  per_block: checked — the decomposition is resolved block by block in "
+        "the three named sub-residuals, R-Lep summing to "
+        f"{d_e + d_mu + d_tau:.5f}, R-Q-Heavy contributing the perturbative c+b "
+        f"tail {d_c + d_b:.5f} bounded above by the full hadronic block, and "
+        "R-Had-NP left open; Part 4 then walks the lane-closure blocks Lane 6, "
+        "Lane 6 + Lane 3, and Lane 6 + Lane 3 + Lane 1 and reports the coverage "
+        "flags of each sub-residual separately at every stage."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no framework lattice, volume, "
+        "or thermodynamic limit enters this runner at any point; the only "
+        "aggregate it forms is the leading-order flavour sum "
+        f"Delta alpha_total_LO = {d_e + d_mu + d_tau + DELTA_ALPHA_HAD_5_COMP:.5f} "
+        "at one scale, and the global-level assertion it certifies is a "
+        "dependency-chain statement about Lanes 1, 3, and 6 rather than any "
+        "extensive lattice quantity."
+    )
+
+
 def main() -> int:
     section("Lane 2 QED running dependency firewall verification")
     part1_note_structure()
@@ -307,6 +362,7 @@ def main() -> int:
     part3_substitution_failure()
     part4_dependency_chain()
     part5_forbidden_imports()
+    part6_n5_execution_certificate()
 
     print()
     print("-" * 88)

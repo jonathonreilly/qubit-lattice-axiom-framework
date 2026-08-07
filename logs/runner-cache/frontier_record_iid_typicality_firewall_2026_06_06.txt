@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_iid_typicality_firewall_2026_06_06.py
-runner_sha256: c48baceb7166281e589572b42cb0b8a4a24ff27dfb81a7465c356891759a2d84
+runner_sha256: d88f0c5920c436736e16ce8c3da644d2076e7d2df2dc796acdf6a86f57afa3ea
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 Record IID/typicality firewall
@@ -44,6 +44,13 @@ E. boundary firewalls
 [PASS] IID/typicality is a separate premise
 [PASS] frequency claims require sequence law, not only one-step law
 [PASS] no physical generator, clock/rate, or dial value is selected
+
+F. N5 execution certificate (print-only; registers no check)
+per_element: exercised exactly, over small tables -- each joint law is a 4-entry table of sympy Rationals and both marginals are formed by adding named entries one pair at a time, not by any aggregate reduction. The decisive comparison is also entry-level: the (0,0) entries of the two laws are put side by side and differ, while equality throughout is exact rational equality with no tolerance anywhere.
+per_site: checked and not executed -- there is no site index in this file. The two record slots are sequence positions, the first and second production, and nothing attaches them to a location; the alphabet is two abstract letters. A site-resolved reading of this firewall would attribute structure the runner never builds.
+per_mode: checked and not executed -- no state space, operator or basis appears at all, so nothing can be decomposed into modes. The vectors here are classical probability distributions over a two-letter alphabet; no spectrum is taken, and the one-step vector is explicitly checked to be a distribution rather than a realized atom, which is a typing statement and not a modal one.
+per_block: exercised -- the 4 two-record words are partitioned into 3 count blocks by how many zeros they contain, and the entire result is visible at that granularity: the two laws agree on both marginals and even on the expected count, yet their count-block distributions differ and so do their variances. The obstruction is a block-level difference invisible to the one-step law.
+lattice_wide: checked and not executed -- nothing of any extent exists here and no size is varied; the run stops deliberately at two records. That absence is the substance of the no-go rather than a gap in it: a typicality or large-sample statement is exactly what a one-shot production probability fails to supply, so there is no finite-N ladder to report and no limit is approached.
 
 SCORECARD: PASS=22 FAIL=0
 VERDICT: exact no-go for deriving IID/typicality from a one-shot record-production probability vector. Same one-step marginals can have different joint and frequency laws.

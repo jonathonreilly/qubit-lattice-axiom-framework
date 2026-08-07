@@ -190,6 +190,91 @@ def test_generation_pairing_observables_are_homogeneous() -> None:
     print("  the local self-dual constants cannot change that on the present stack.")
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: no check() call is added and no PASS/FAIL count moves.
+    """
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    texture = representative_texture()
+    block = pairing_block(1.0, 1.0)
+    gen = texture.shape[0]
+    dim = block.shape[0]
+    det_hat = float(np.linalg.det(texture))
+    q0 = generation_abs_q2(1.0, 1.0)
+
+    print(
+        "per_element: written entry by entry, but every readout is an aggregate. The "
+        "generation texture carries 2.0 on the singlet, 0.25 on the doublet diagonal "
+        "and 1.0 off it with exact zeros elsewhere, j2 carries +1 and -1, and the "
+        f"Kronecker product lays those into a {dim} x {dim} pairing block. Each entry "
+        f"then feeds the determinant, det = {det_hat}, and the squared Frobenius norm "
+        f"over all {dim * dim} entries, ||Delta||^2 = {q0}. No individual matrix "
+        "element is ever reported or compared on its own, so the elementwise "
+        "resolution is on the construction side only."
+    )
+    print(
+        "per_site: checked and not executed. This runner builds no geometry at all - "
+        f"the {gen} indices are generation labels under the singlet/doublet split and "
+        "the pair of indices inside j2 is the Majorana pair index. Nothing carries a "
+        "coordinate, an adjacency or a volume, and no site-indexed quantity is "
+        "defined anywhere in the file."
+    )
+    print(
+        "per_mode: checked and not executed, and here that is unusually clear-cut. "
+        "This runner performs no spectral operation whatsoever: determinant, "
+        "Frobenius norm, log, exp and sqrt are the complete list, with no eigenvalue "
+        "routine, no singular value decomposition and no diagonalization of the "
+        "texture or of the pairing block anywhere. There is consequently no mode, "
+        "band or spectral weight in this runner to resolve."
+    )
+    print(
+        "per_block: resolved as exponents and counts rather than as block amplitudes. "
+        f"The texture is a singlet plus a coupled 2 x 2 doublet, and the {gen} "
+        "generation slots are exactly what sets the degrees the matching arithmetic "
+        f"turns on: log|det(lambda sigma M)| = log|det M| + {gen} log(lambda sigma), "
+        "while the quadratic comparator is degree two in the same scale. The singlet "
+        "and doublet contributions are never separated, and no per-block determinant "
+        "or per-block norm is computed."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the absent object is this note's "
+        "own obstruction. No lattice exists here, and on the scale axis where the "
+        "claim lives the runner takes no limit - it solves matching equations at "
+        "three representative normalizations and three reference scales and stops. "
+        "The note's conclusion is that the missing object must go beyond the current "
+        "source-response matching class, so a genuinely new non-homogeneous bridge or "
+        "absolute-scale datum is by definition not reachable by executing this class."
+    )
+    print(
+        "  scope, in this runner's favour: unlike a self-comparison, Parts 1 and 2 do "
+        "perform genuine solve-then-verify round trips. Each solver inverts the "
+        "matching equation for the staircase scale, and the forward response is then "
+        "recomputed independently and confirmed to return the target value to better "
+        "than 1e-12; the relative matches land on the closed-form ratios 2^(1/6) for "
+        "the log response and 1 for the quadratic one."
+    )
+    print(
+        "  scope: the local side of every match is not computed here. W_LOCAL = "
+        "(1/2) log 2 and Q_LOCAL = 1.0 are hardcoded module constants imported from "
+        "the local self-dual result; the self-dual kernel itself is never constructed "
+        "in this file, so all arithmetic is generation-side against two literal "
+        "numbers."
+    )
+    print(
+        "  scope: the response called a Pfaffian is evaluated as log|det M| on the "
+        f"{gen} x {gen} texture. That equals the Pfaffian of the {dim} x {dim} "
+        "Kronecker block up to sign, but that block's Pfaffian is never computed "
+        "directly - the larger block is assembled only for the Frobenius comparator. "
+        "One texture representative is used throughout, with sigma in {0.5, 1.0, 2.0} "
+        "and reference scales in {0.25, 1.0, 4.0}, i.e. three-point grids rather than "
+        "swept ranges. The runner is fully deterministic: no RNG and no optimizer."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("NEUTRINO MAJORANA: SOURCE-RESPONSE MATCHING OBSTRUCTION")
@@ -210,6 +295,7 @@ def main() -> int:
     test_absolute_matches_depend_on_representative_normalization()
     test_relative_matches_remove_representative_normalization_but_not_anchor_scale()
     test_generation_pairing_observables_are_homogeneous()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

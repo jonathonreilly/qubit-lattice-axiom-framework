@@ -260,6 +260,55 @@ def main() -> int:
     check("new note does not overclaim future no-go", "future retained 3C route may still exist" in new_text)
 
     print()
+    print("F. N5 execution certificate (reporting only; adds no check)")
+    print("-" * 72)
+    print(
+        "per_element: resolved one group element at a time — each of the six "
+        "S_3 elements is turned into its own permutation matrix entry by "
+        "entry, each is separately confirmed orthogonal and each contributes "
+        "its own character, while the commutant system is assembled row by "
+        "row as nine index pairs for each of the five non-identity elements, "
+        "giving a 45-by-9 constraint matrix; the normal-form test is likewise "
+        "elementwise, requiring all diagonal entries equal and all "
+        "off-diagonal entries equal within TOL = 1e-10."
+    )
+    print(
+        "per_site: checked and not executed — the three slots being permuted "
+        "are generation labels on the retained hw=1 triplet, not positions, "
+        "and no lattice array, link or spatial sum is constructed here; the "
+        "runner in fact checks that the paired note routes its carrier "
+        "through the three-generation authority and carries no dependency "
+        "edge to the realization gate, so no site-resolved carrier is claimed "
+        "at all."
+    )
+    print(
+        "per_mode: resolved on the explicit A_1 and E eigenvectors — the "
+        "characters 3, 1 and 0 on the identity, transposition and 3-cycle "
+        "classes give multiplicities one A_1, zero A_2 and one E, and the "
+        "sample operator is then evaluated separately on (1,1,1)/sqrt(3), "
+        "(1,-1,0)/sqrt(2) and (1,1,-2)/sqrt(6), which is how the E-plane "
+        "degeneracy is exhibited rather than merely asserted."
+    )
+    print(
+        "per_block: resolved as the two isotype blocks — the commutant comes "
+        "out two-dimensional, one free scalar per block, so the singlet block "
+        "carries a + 3b while the whole E block carries the single value a; "
+        "state plainly that this dimension is computed as the SVD nullity of "
+        "the constraint system over the 9-dimensional space of real 3x3 "
+        "matrices, so the complex Hermitian case is covered here only by the "
+        "explicit oriented example in section E, not by that count."
+    )
+    print(
+        "lattice_wide: checked and not executed — nothing spatial is "
+        "instantiated, so no volume, thermodynamic limit or continuum limit "
+        "can appear, and the widest scope statements are documentary rather "
+        "than computed: 15 of the 47 recorded passes are file-existence or "
+        "string-presence scans over five repository notes, and the "
+        "forbidden-input check compares two set literals that are disjoint by "
+        "construction."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

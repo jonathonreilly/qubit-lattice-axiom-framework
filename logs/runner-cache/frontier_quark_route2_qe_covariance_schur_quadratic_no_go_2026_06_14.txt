@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py
-runner_sha256: ef5c784976a87cd1665533d5760f956b7be7c4954f76e9463e321cf403aa22e6
+runner_sha256: 4f12279f1a7bf88b1804aa33b78585b87a601affbb167235cf543bfb404f2a58
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 Route-2 q_E covariance bridge: quadratic-route closure (Schur) -- follow-on no-go
@@ -34,6 +34,13 @@ Route-2 q_E covariance bridge: quadratic-route closure (Schur) -- follow-on no-g
        spread(lambda)=29.70, spread(q_E)=12.25, spread(q_T)=2.96
 [PASS] Q3b lambda = 9/4 ONLY at the pinning box N=15 (bulk boxes are far from 9/4)
        |lambda(15)-9/4|=0.0015; min bulk |lambda-9/4|=2.29; lambda(N)=[-0.04, 2.25, 29.66, 9.18, 6.59, 4.98]
+
+-- N5 execution certificate --
+per_element: resolution reaches single matrix entries and single group elements -- the projector diagonals at one arm come out exactly as (w_A1, w_E, w_T1) = (1/6, 1/3, 1/2) after rationalizing a floating diagonal, and the permutation character of each of the 48 group elements is obtained by counting the arms it fixes, an exact integer per element.
+per_site: genuinely executed, and it appears here as literal site bookkeeping -- every symmetry is realized by permuting the 6 arms and its character is the count of arms it leaves in place, while the antipodal involution pairs those arms into 3 opposite pairs, and it is exactly that pairing which separates the antipodal-even and antipodal-odd parts into Eg and T1u.
+per_mode: the three irrep modes are what this whole no-go is about -- kappa=3/2 is the ratio of the T1u to the Eg per-arm weight, the Reynolds intertwiner between the E and T1 modes is confirmed to vanish within the runner's named 1e-12 threshold so the two modes carry independent scales, and Sym^2 supplies 3 free invariant quadratics, which is precisely what leaves the E:T1 weight ratio unfixed.
+per_block: two block families are resolved -- the tensor blocks give trivial multiplicity 3 in Sym^2(perm6) against 0 in Lambda^2(perm6) and 1 in perm6 itself, all computed by exact character sums over the group; and the corroborating box block covers 6 rungs, one anchor at N=15 against 5 bulk rungs, judged by the named thresholds 0.01 at the anchor and 1.0 in the bulk.
+lattice_wide: executed, and certified strictly as a finite statement -- the Reynolds projector is a true average over all 48 group elements acting on the whole 6-arm star, so the decomposition is global across that star, while the box corroboration spans 6 finite boxes up to N=25 read from an upstream scan; no infinite-volume extrapolation, no thermodynamic limit and no larger star is constructed anywhere in this runner.
 
 ================================================================================================
 PASS=11 FAIL=0

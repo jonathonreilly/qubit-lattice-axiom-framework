@@ -607,9 +607,11 @@ def n5_execution_certificate() -> None:
         "sampled parameter ranges avoid this but the runner does not check it."
     )
     print(
-        "  scope: Tests 3 and 7 draw from seeded streams (20260510 and 20260513). Two "
-        "back-to-back executions of this runner are byte-identical, and no sampled "
-        "quantity is quoted anywhere in the lines above."
+        "  scope: the random legs of Tests 3 and 7 come from two fixed seeds, 20260510 "
+        "and 20260513. Running this file twice in succession reproduces its output "
+        "byte for byte, and the certificate above deliberately quotes nothing that "
+        "either stream produced - the counts and constants it cites are all fixed by "
+        "the source text."
     )
 
 

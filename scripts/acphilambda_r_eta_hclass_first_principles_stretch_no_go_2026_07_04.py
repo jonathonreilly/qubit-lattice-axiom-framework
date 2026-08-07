@@ -277,6 +277,43 @@ def main() -> int:
             "non-authoritative provenance" in note,
         )
 
+    section("G. N5 execution certificate (reporting only; adds no check)")
+    print(
+        "per_element: checked - the readout is pinned coefficient by coefficient: the "
+        "C3-invariance polynomial in x0, x1, x2 has each of its coefficients extracted "
+        "and separately set to zero, which is what forces a0 = a1 = a2, and the five "
+        "candidate alpha values 0, 1/9, 2/27, 1/3 and 1 are then each evaluated on "
+        "their own and confirmed to give five distinct readouts."
+    )
+    print(
+        "per_site: checked and not executed - the occupancy vector here is abstract "
+        "orbit-cell multiplicity, not a map over lattice positions, and that "
+        "separation is deliberate: section A verifies the AC minimum decomposition "
+        "keeps occupancy separate from R-eta, so no site-resolved occupancy map is "
+        "built and no claim here is certified position by position."
+    )
+    print(
+        "per_mode: checked and not executed - C3 covariance is imposed as a "
+        "coefficient-matching condition on an expanded polynomial rather than by "
+        "decomposing into C3 characters, so no individual omega or omega-bar mode is "
+        "ever formed or evaluated; the resulting a0 = a1 = a2 is equivalent to "
+        "retaining only the trivial character, but that equivalence is not executed."
+    )
+    print(
+        "per_block: checked - orbit copies are the resolved granularity: additivity "
+        "is verified both on the explicit cell split (1, 0, 1) plus (0, 1, 0) and on "
+        "orbit doubling, with one full orbit evaluating to 3 alpha and two full "
+        "orbits to 6 alpha, and every one of the five candidates is re-checked for "
+        "empty normalization, additivity and invariance on those same copies."
+    )
+    print(
+        "lattice_wide: checked and not executed - no lattice, volume or limit appears "
+        "anywhere; sections A, B, C and F are registry and note-text accounting over "
+        "the premise registry, the minimal axioms and the ledger row, so the negative "
+        "result is that no first-principles route selects alpha = 2/27, established "
+        "by exhausting five named routes rather than by any whole-lattice evaluation."
+    )
+
     print("\nTOTAL: PASS=%d FAIL=%d CHECKS=%d" % (PASS, FAIL, PASS + FAIL))
     return 0 if FAIL == 0 else 1
 

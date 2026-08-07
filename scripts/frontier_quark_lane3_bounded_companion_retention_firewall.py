@@ -226,6 +226,54 @@ def part5_safe_endpoint() -> None:
     )
 
 
+def part6_n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, calls no check(), leaves the counters alone.
+    """
+    section("Part 6: N5 execution certificate (reporting only; adds no check)")
+    print(
+        "  per_element: resolved one mass ratio at a time — m_d/m_s is formed "
+        "as alpha_s(v)/2, m_s/m_b as v_cb raised to 6/5 with v_cb = "
+        "alpha_s(v)/sqrt(6), and m_d/m_b as their product, each carrying its "
+        "own comparator deviation against its own threshold, and the two "
+        "support values are pinned separately at 1e-10 and 1e-7."
+    )
+    print(
+        "  per_site: checked and not executed — the one lattice-derived "
+        "quantity in play is the imported scalar CANONICAL_ALPHA_S_V, which "
+        "arrives from the plaquette surface with every site already summed "
+        "away, and nothing downstream of it carries a position index, a link "
+        "or a spatial sum; the whole file is scalar ratio arithmetic."
+    )
+    print(
+        "  per_mode: checked and not executed — the generation levels enter "
+        "only as declared PDG comparator constants and their ratios, so no "
+        "operator is assembled, no eigenvalue or eigenvector is taken, and no "
+        "spectral or Fourier decomposition of anything occurs in the five "
+        "parts above."
+    )
+    print(
+        "  per_block: split across the up-type and down-type sectors, which "
+        "are governed by different laws — Part 2 gives the down-type block "
+        "its two closed ratio formulas, Part 3 gives the up-type block a "
+        "partition law, and Part 4 treats the top/bottom Ward channel on its "
+        "own; state plainly that the up-type numbers are not free "
+        "predictions, since f_12 and f_23 are solved from the observed "
+        "down-type ratios and then reinserted, which is why the runner labels "
+        "them comparator partitions and calls m_u/m_c partition-selected."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no volume, thermodynamic "
+        "limit or continuum limit appears, and the whole-spectrum statement is "
+        "precisely what this row shows is missing: doubling the bottom anchor "
+        "leaves every ratio fixed to within 1e-14 while the absolute scale "
+        "moves by exactly a factor of two, so the ratio package fixes no "
+        "absolute mass; correspondingly 9 of the 17 recorded passes are "
+        "string-presence scans over six repository documents."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("LANE 3 QUARK BOUNDED-COMPANION RETENTION FIREWALL")
@@ -243,6 +291,7 @@ def main() -> int:
     part3_up_type_partition_firewall()
     part4_ward_reuse_firewall()
     part5_safe_endpoint()
+    part6_n5_execution_certificate()
 
     print()
     print("=" * 88)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_l3a_v3_check_2026_05_07_l3a.py
-runner_sha256: 28a27463ec05608bd6faaeda3d23574746377b7a176b1da7adbeadaa8e293ca9
+runner_sha256: 1b837ff3073f93980fbd8f7f8700567a1b40ab049f27ef527109f54cb7e36afb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -66,7 +66,7 @@ ATTACK 3 — Z³ point-group O_h(3) = S_3 ⋉ (Z_2)^3
   [PASS] S_3 cyclic permutation σ on V_3 is unitary  (max |UU† - I| = 0.00e+00)
   [PASS] S_3 cyclic σ has order 3 on V_3 (σ³ = I)  (max |σ³ - I| = 0.00e+00)
   [PASS] Tr_{V_3}(σ_cyc) = 0 (sum of 3rd roots of unity)  (Tr = 0.000000)
-  [PASS] V_3 carries trivial ⊕ E of S_3 (eigenvalues {1, ω, ω̄})  (eigs = [np.complex128(-0.5000000000000001-0.866025403784439j), np.complex128(1-1.3256180803817732e-34j), np.complex128(-0.5000000000000001+0.866025403784439j)])
+  [PASS] V_3 carries trivial ⊕ E of S_3 (eigenvalues {1, ω, ω̄})  (eigs = [np.complex128(-0.5000000000000001-0.866025403784439j), np.complex128(1+0j), np.complex128(-0.5000000000000001+0.866025403784439j)])
 
   V_3 = trivial ⊕ E_2 of S_3 (under axis permutation).
   V_lepton (1D antisym) carries the SIGN rep of S_3.
@@ -210,6 +210,15 @@ META — Bridge gap admission count
   Six clean obstructions (Attacks 4, 5, 6, 7, 9, 10).
   Four partials, all bridge-conditional (Attacks 1, 2, 3, 8).
   Zero unconditional positive arrows.
+
+========================================================================================
+N5 EXECUTION CERTIFICATE — resolved granularity (reporting only)
+========================================================================================
+per_element: checked - every generator is an explicit complex matrix and the trace surfaces are built entry by entry. The Gell-Mann T_a = lambda_a/2 are written out as 3 x 3 arrays and embedded as T_a^V = (T_a in the 4-block) kron I_2, and the two Gram matrices are filled over all 64 (a, b) pairs, giving max |Gram3 - (1/2) I| = 1.11e-16 on V_3 and max |GramV - I| = 2.22e-16 on V_full; the projector identity P_color + P_lepton = I_V closes entrywise at 0.00e+00.
+per_site: checked, but only for one site - a single Cl(3) carrier is instantiated and V = C^8 is read as three 2-dimensional tensor factors. Attack 9 builds the per-site bivector generator sigma_3/2 = (SZ kron I_2 kron I_2)/2 on factor 0 and reads its spectrum {+1/2 mult 4, -1/2 mult 4} against the colour Cartan T_3^V spectrum {+1/2 mult 2, -1/2 mult 2, 0 mult 4} - zero zero-modes against four - which is exactly how the bridge is shown to be a non-trivial identification. No second site exists and no site sum is formed.
+per_mode: checked, and resolved precisely to the point of showing the taste index factors out - no individual taste amplitude is ever separated. V_full carries the 2-dimensional fiber as V_color = V_3 kron V_fiber, gauge generators return identical expectation values on fiber-distinct states, and every polynomial in the generators inflates by exactly dim V_fiber = 2: Casimir traces 4 -> 8, cubic Tr(T_a T_b T_c) and the d^abc symbols matching 2x at 0.00e+00, quark number 3.0000 -> 6.0000. That uniform factor 2 is sharpening S1, and it is the reason the taste direction cannot discriminate the two trace surfaces.
+per_block: checked - the block decomposition of V_full is real and load-bearing. P_color (6-dimensional) and P_lepton (2-dimensional) are constructed as explicit diagonal projectors and shown to sum to I_V, all eight T_a^V are verified to vanish identically on the lepton block, the colour block is checked to carry the reducible 4 = 3 + 1 of SU(3), and the block ranks 3 and 8 are what Attack 6 compares. Note that Attack 6's stable-class statement is recorded as a structural assertion, not computed.
+lattice_wide: checked and not executed - no lattice is built anywhere in this runner. Z^3 enters only through its point group O_h(3) = S_3 semidirect (Z_2)^3 acting on the three axes of V_3, where the cyclic permutation is checked unitary of order 3 with trace 0 and eigenvalues {1, omega, omega_bar} - a symmetry of internal axis labels, not a sum over sites. Even the one object called a Wilson-loop polynomial, Tr([T_1, T_2]^2) = -1, is a polynomial in the internal generators rather than a loop traversing links, and no volume, extent or limit appears.
 
 ========================================================================================
 EXACT      : PASS = 44, FAIL = 0

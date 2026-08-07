@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_algebraic_bridge_obstruction.py
-runner_sha256: 628d5a6335a7d7410444fd266dc40bda112a9411ccc041be3fd2778fcf37ea30
+runner_sha256: 0170a196e92b19e0e90b3b31e4368445a2e26e404f1ab8c2cffefa78c43d9853
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.11
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -24,7 +24,7 @@ Question:
 ========================================================================================
 PART 1: THE FULL LOCAL-TO-GENERATION BRIDGE BLOCK IS HOMOGENEOUS
 ========================================================================================
-  [PASS] Normalized full bridge blocks are identical across staircase rescalings  (max normalized difference=2.12e-16)
+  [PASS] Normalized full bridge blocks are identical across staircase rescalings  (max normalized difference=0.00e+00)
 
   So any bridge block built from the selected local ray, the current
   generation texture, and scale-independent structural couplings still
@@ -34,7 +34,7 @@ PART 1: THE FULL LOCAL-TO-GENERATION BRIDGE BLOCK IS HOMOGENEOUS
 PART 2: SCHUR-COMPLEMENT BRIDGES REMAIN DEGREE-ONE IN THE SAME SCALE
 ========================================================================================
   [PASS] Normalized Schur-complement bridge blocks are identical across staircase rescalings  (max normalized difference=3.12e-16)
-  [PASS] Schur-complement bridge norms scale linearly with the same free parameter  (spread in ||S||/scale=4.44e-16)
+  [PASS] Schur-complement bridge norms scale linearly with the same free parameter  (spread in ||S||/scale=8.88e-16)
 
   So even when the obvious local-to-generation bridge is dressed by a
   Schur complement, it still carries the same overall scale weight.
@@ -42,14 +42,23 @@ PART 2: SCHUR-COMPLEMENT BRIDGES REMAIN DEGREE-ONE IN THE SAME SCALE
 ========================================================================================
 PART 3: THE OBVIOUS SPECTRAL BRIDGE DATA ARE HOMOGENEOUS OR SCALE-FREE
 ========================================================================================
-  [PASS] Characteristic-polynomial coefficients carry fixed homogeneous degrees  (spread=1.49e-14)
-  [PASS] Eigenvalue gaps scale linearly with the same free parameter  (spread=5.03e-15)
+  [PASS] Characteristic-polynomial coefficients carry fixed homogeneous degrees  (spread=3.35e-14)
+  [PASS] Eigenvalue gaps scale linearly with the same free parameter  (spread=6.19e-15)
   [PASS] Singular values scale linearly with the same free parameter  (spread=1.02e-15)
-  [PASS] Normalized eigenvalue ratios are scale-invariant  (spread=8.92e-16)
+  [PASS] Normalized eigenvalue ratios are scale-invariant  (spread=1.39e-15)
 
   So the obvious spectral candidates split into two classes only:
   homogeneous scale carriers and scale-free normalized ratios. Neither
   class can pick a finite absolute staircase anchor by itself.
+
+========================================================================================
+PART 4: N5 EXECUTION CERTIFICATE (RESOLVED GRANULARITY)
+========================================================================================
+per_element: checked - the bridge is written out entry by entry and compared entry by entry. The 5 x 5 block is stacked from the explicit local kernel sigma_z + sigma_x, the generation texture with rows (2, 0, 0), (0, 0.25, 1), (0, 1, 0.25), and the 2 x 3 coupling with rows (1, 0, 0), (0, 1, 0.5); after dividing by its Frobenius norm the block is identical across rescalings at max entrywise difference 0.00e+00, and the Schur-complement version at 3.12e-16.
+per_site: checked and not executed as a site-resolved statement - the local selected kernel sigma_z + sigma_x is a single 2 x 2 on the Qubit one-site algebra M_2(C) and enters only as an ingredient of the bridge block. No site index runs, no second copy is instantiated, and the runner never asks a question whose answer would differ from site to site.
+per_mode: checked - the spectral modes of the bridge block are resolved individually and tested for their scaling weight. Eigenvalues are sorted and their consecutive gaps taken, singular values are sorted, and each is divided by the rung scale before comparison across rungs: gap spread 6.19e-15, singular-value spread 1.02e-15, and the norm-normalized eigenvalue ratios spread 1.39e-15, i.e. every mode either carries weight one in the scale or is exactly scale-free.
+per_block: checked - the block decomposition is the subject of the theorem, not a side detail. The bridge is built as a two-by-two block matrix with the local kernel in the upper-left block, the generation texture in the lower-right block and the coupling off-diagonal, and the Schur complement M_gen - C^dag K^-1 C then eliminates the local block outright to leave a generation-only effective block, whose norm is confirmed to stay degree one in the scale at spread 8.88e-16.
+lattice_wide: checked and not executed - there is no lattice and no limit is taken. The only extended thing this runner sweeps is the staircase itself, three rungs at alpha_LM^7, alpha_LM^8 and alpha_LM^9, and it deliberately stops there: nothing is carried to an asymptotic or continuum limit, which is consistent with the obstruction, since the missing object is an absolute scale anchor that no finite rescaled quantity in this class can supply.
 
 ========================================================================================
 RESULT

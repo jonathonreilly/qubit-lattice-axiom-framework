@@ -187,4 +187,46 @@ check("single-axis map a I + b v v^T ALWAYS commutes with Gamma_chi (cannot anti
 check("=> the SECOND doublet vector h is FREE; no ambient op supplies it from v alone",
       not anticommutes(sp.simplify(Mv.subs({b0:0,b1:1})), Gx))
 
+# ===================== N5 EXECUTION CERTIFICATE =====================
+print("\n--- N5 execution certificate: resolution granularities ---")
+print(
+    "per_element: every grade-1 matrix in this argument is reconstructed entry "
+    "by entry rather than asserted — the (i, j) component of each ambient "
+    "operation is extracted as the Clifford trace (1/2) Tr(e_i U e_j U^{-1}), "
+    "and the supporting identities e_i^2 = I_2, e_i e_j = -e_j e_i, "
+    "omega = i I_2 and Gamma_chi^2 = I_3 are each confirmed as exact zero "
+    "matrices in sympy with no floating point involved."
+)
+print(
+    "per_site: checked and not executed — the carrier here is the Qubit "
+    "one-site baseline M_2(C) realizing Cl(3,0), and the question asked is "
+    "about ambient operations internal to that single algebra; no lattice, no "
+    "hop and no second site is ever constructed, so nothing in this runner "
+    "could be resolved against a site index."
+)
+print(
+    "per_mode: resolved by Clifford grade rather than by any spectral or "
+    "momentum mode — each named operation is evaluated specifically on grade 1, "
+    "the pseudoscalar is confirmed central against the grade-1 generators, the "
+    "Hodge star is shown to carry grade 1 to grade 2 with index identity k to "
+    "k, and the grade-2 adjoints come back antisymmetric; no Fourier or "
+    "eigenmode expansion is performed anywhere."
+)
+print(
+    f"per_block: the Schur step is a statement about blocks and it is computed, "
+    f"not cited — solving the full 9-parameter commutant equations against "
+    f"L_x, L_y, L_z leaves {len(free)} free parameter, so grade-1 is a single "
+    f"irreducible real block whose only equivariant endomorphisms are scalars, "
+    f"and a scalar c I gives {{c I, Gamma_chi}} = 2 c Gamma_chi, which vanishes "
+    f"only at c = 0; the single-axis family b0 I + b1 v v^T likewise stays "
+    f"block-diagonal and commutes."
+)
+print(
+    "lattice_wide: checked and not executed — no volume, no lattice and no "
+    "limit of any kind enters; the widest claim made is about the whole class "
+    "of frame-free ambient Clifford operations on one algebra, and the note's "
+    "own scope keeps frame-broken and dynamics-selected routes explicitly open, "
+    "so no global lattice statement is available or asserted here."
+)
+
 print(f"\nSCORECARD: PASS={PASS} FAIL={FAIL}")

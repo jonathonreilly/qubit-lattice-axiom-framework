@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_u_heavy_modular_2026_05_08_probeU_heavy_modular.py
-runner_sha256: c2b15fbe7658540db91ce01ae93544f919afeb706c1721c3e4d10a8783d10019
+runner_sha256: 91b330ae7745e43bc873b515310a02a10318c84f1563f4f3bfcf5f4238bb15ac
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ========================================================================
@@ -51,8 +51,8 @@ Section 4 -- C_3 in A_4 vs retained Z_3 trichotomy: SELECTION COINCIDENCE
 
 Section 5 -- tau = omega as C_3 fixed point of SL(2,Z)
   [PASS] omega satisfies omega^2 + omega + 1 = 0 (cube root of unity) | omega^2 + omega + 1 = 0.000000e+00+3.330669e-16j
-  [PASS] omega is in H (upper half plane): Im(omega) > 0 | omega = (-0.49999999999999983+0.8660254037844387j), Im = 0.866025
-  [PASS] omega is fixed by S T: omega = -1/(omega + 1) | -1/(omega+1) = (-0.5+0.8660254037844384j), omega = (-0.49999999999999983+0.8660254037844387j)
+  [PASS] omega is in H (upper half plane): Im(omega) > 0 | omega = (-0.4999999999999998+0.8660254037844387j), Im = 0.866025
+  [PASS] omega is fixed by S T: omega = -1/(omega + 1) | -1/(omega+1) = (-0.5+0.8660254037844384j), omega = (-0.4999999999999998+0.8660254037844387j)
   [PASS] (S T)^3 = -I in SL(2,Z), so S T has order 3 in PSL(2,Z) | (ST)^3 = [[-1, 0], [0, -1]] = -I
   [ADMITTED] Identification of framework modulus with SL(2,Z) tau = omega | Even though omega is the C_3 fixed point and the framework's Z_3 cycle is retained, identifying the modular parameter with this point requires an explicit structural assumption (I4)
     -> tau = omega is the C_3 fixed point of SL(2,Z) (mathematical fact).
@@ -70,14 +70,14 @@ Section 6 -- Diagnostic C_3 root-of-unity weight-2 ansatz
     -> Any actual modular-form values remain imported data.
 
 Section 7 -- Diagnostic circulant Yukawa matrix and SVD spectrum
-  [PASS] Tr(Y M^dagger) at tau = omega | Tr = 9.0000-0.0000j; expected 9 (3 rows x 3 |Y_k|^2 = 1 entries)
+  [PASS] Tr(Y M^dagger) at tau = omega | Tr = 9.0000+0.0000j; expected 9 (3 rows x 3 |Y_k|^2 = 1 entries)
     Y Y^dagger eigenvalues at tau = omega (circulant analytic): ['9.0000', '0.0000', '0.0000']
     -> RANK-1 mass matrix; TWO massless generations at weight-2 only.
   [PASS] Eigenvalue sum = Tr(Y M^dagger) = 9 | sum = 9.0000
     Mass eigenvalues (sqrt of Y Y^dagger): (3.0000, 0.0000, 0.0000)
   [PASS] Y Y^dagger at tau = omega is RANK-1 (one non-zero eigenvalue) | non-zero eigenvalues = 1; (9, 0, 0) means 2 generations massless
   [PASS] Non-zero eigenvalue equals 9 (one massive generation) | m_max = sqrt(9.0000) = 3.0000 (target sqrt(9) = 3)
-  [PASS] Two generations are exactly massless in the diagnostic root-of-unity ansatz | m_mid = 6.753223e-16, m_min = 3.376612e-16; diagnostic ansatz fails to give 3 distinct masses
+  [PASS] Two generations are exactly massless in the diagnostic root-of-unity ansatz | m_mid = 1.005350e-15, m_min = 3.510833e-16; diagnostic ansatz fails to give 3 distinct masses
     PDG m_t/m_c = 135.98 (3 non-zero hierarchical masses)
     Diagnostic C_3 ansatz: 1 massive + 2 massless --
       cannot match a 3-mass spectrum.
@@ -145,6 +145,13 @@ Section 11 -- Constraints respected
   [PASS] No PDG masses used as derivation input | PDG values appear ONLY as comparators after computation; the diagnostic root-of-unity Yukawa matrix has rank-1 spectrum (9, 0, 0); PDG used only to verify the negative result
   [ADMITTED] Import classification applied | 6 ingredients tiered: 0 fully RETAINED, 1 PARTIALLY RETAINED (I3), 5 IMPORTED
   [ADMITTED] Source-only PR pattern (per feedback_review_loop_source_only_policy) | 1 source-note + 1 runner + 1 cache; no support docs, no audit-ledger edits, no synthesis notes
+
+Section 12 -- N5 execution certificate (resolved granularity)
+per_element: checked - the diagnostic weight-2 Yukawa is written out entry by entry as the 3 x 3 circulant with first row (Y_1, Y_3, Y_2) = (1, omega^2, omega), and (Y Y^dagger)_ij is formed by an explicit triple loop over i, j, k, so Tr(Y Y^dagger) = 9 is read back off individual matrix entries; the retained Z_3 selection is resolved at the same grain as Y_support[i][j] = delta_ij.
+per_site: checked and not executed - no Z^3 site is ever instantiated. The spatial substrate enters this probe only as the unaudited candidate map from Z^3 x C_3 BZ corners to the cusps of X(3), which Section 2 classifies as imports I2 and I4; every quantity evaluated downstream carries a generation index 1..3 and no lattice coordinate.
+per_mode: checked - this is the grain at which the obstruction is actually resolved. The circulant is diagonalized in the C_3 Fourier basis, lambda_k = sum_m c_m omega^(k m) for k = 0, 1, 2, and the resulting |lambda_k|^2 spectrum (9, 0, 0) puts the entire trace on one mode with the other two exactly zero, which is the rank-1 / two-massless -generation statement, m_max = 3.
+per_block: checked, but only as an inventory - no amplitude is evaluated block by block. Section 3 counts the A_4 irrep blocks {1, 1', 1'', 3} via 1 + 1 + 1 + 9 = 12 = |PSL(2, Z/3Z)|, and Section 8 counts dim M_2(Gamma(3)) = 1, dim M_4 = 2, dim M_6 = 3 giving 3 free parameters; the 3 x 3 = 1 + 1' + 1'' + 3_S + 3_A Clebsch-Gordan coefficients that would populate those blocks are admitted as imported, not computed.
+lattice_wide: checked and not executed - the runner has no lattice extent and takes no limit. Its whole computation sits in a fixed 3-dimensional generation space at the single modulus value tau = omega, and the Section 9 closure gate compares one ratio against PDG m_t/m_c = 135.98 rather than any volume-scaled or asymptotic quantity; the note's obstruction is redundancy with retained Z_3, so there is no extensive sum to take.
 
 SUMMARY: PASS=32 FAIL=0 ADMITTED=16
 

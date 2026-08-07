@@ -970,6 +970,60 @@ def section11_constraints(c: Counter) -> None:
 
 
 # ----------------------------------------------------------------------
+# SECTION 12 - N5 execution certificate (print-only; adds no check)
+# ----------------------------------------------------------------------
+
+def section12_n5_execution_certificate() -> None:
+    """Report which resolution granularities this runner actually exercises.
+
+    Reporting only: this section records no PASS/FAIL and asserts nothing.
+    """
+    print()
+    print("Section 12 -- N5 execution certificate (resolved granularity)")
+    print(
+        "per_element: checked - the diagnostic weight-2 Yukawa is written out "
+        "entry by entry as the 3 x 3 circulant with first row (Y_1, Y_3, Y_2) = "
+        "(1, omega^2, omega), and (Y Y^dagger)_ij is formed by an explicit "
+        "triple loop over i, j, k, so Tr(Y Y^dagger) = 9 is read back off "
+        "individual matrix entries; the retained Z_3 selection is resolved at "
+        "the same grain as Y_support[i][j] = delta_ij."
+    )
+    print(
+        "per_site: checked and not executed - no Z^3 site is ever instantiated. "
+        "The spatial substrate enters this probe only as the unaudited candidate "
+        "map from Z^3 x C_3 BZ corners to the cusps of X(3), which Section 2 "
+        "classifies as imports I2 and I4; every quantity evaluated downstream "
+        "carries a generation index 1..3 and no lattice coordinate."
+    )
+    print(
+        "per_mode: checked - this is the grain at which the obstruction is "
+        "actually resolved. The circulant is diagonalized in the C_3 Fourier "
+        "basis, lambda_k = sum_m c_m omega^(k m) for k = 0, 1, 2, and the "
+        "resulting |lambda_k|^2 spectrum (9, 0, 0) puts the entire trace on one "
+        "mode with the other two exactly zero, which is the rank-1 / two-massless "
+        "-generation statement, m_max = 3."
+    )
+    print(
+        "per_block: checked, but only as an inventory - no amplitude is "
+        "evaluated block by block. Section 3 counts the A_4 irrep blocks "
+        "{1, 1', 1'', 3} via 1 + 1 + 1 + 9 = 12 = |PSL(2, Z/3Z)|, and Section 8 "
+        "counts dim M_2(Gamma(3)) = 1, dim M_4 = 2, dim M_6 = 3 giving 3 free "
+        "parameters; the 3 x 3 = 1 + 1' + 1'' + 3_S + 3_A Clebsch-Gordan "
+        "coefficients that would populate those blocks are admitted as imported, "
+        "not computed."
+    )
+    print(
+        "lattice_wide: checked and not executed - the runner has no lattice "
+        "extent and takes no limit. Its whole computation sits in a fixed "
+        "3-dimensional generation space at the single modulus value tau = omega, "
+        "and the Section 9 closure gate compares one ratio against PDG "
+        "m_t/m_c = 135.98 rather than any volume-scaled or asymptotic quantity; "
+        "the note's obstruction is redundancy with retained Z_3, so there is no "
+        "extensive sum to take."
+    )
+
+
+# ----------------------------------------------------------------------
 # Main
 # ----------------------------------------------------------------------
 
@@ -994,6 +1048,7 @@ def main() -> int:
     section9_closure_gate(counter)
     section10_verdict(counter)
     section11_constraints(counter)
+    section12_n5_execution_certificate()
 
     counter.summary()
 

@@ -230,5 +230,43 @@ check("source no longer claims retained gauge-uniformity",
       "retained gauge-uniformity" not in note_text)
 
 
+# ============================================================================
+# 8. N5 execution certificate: what this runner actually resolves, per class.
+# ============================================================================
+print("\n[8] N5 execution certificate: what this runner actually resolves")
+print(
+    "per_element: checked — each registered dial setting is resolved on its own: "
+    "r in {0, 1/2, 0.597, 0.773, 1} all land inside the admissible window "
+    f"Q = 1/3 + 2r/3 subset [1/3, 1], the four non-trivial ones give the distinct "
+    f"values {Qs}, and only r = 1/2 coincides with the computed max-entropy "
+    f"selector r_star = {r_star:.6f}."
+)
+print(
+    "per_site: checked and not executed — the carrier is one finite M_3(C) "
+    "generation space with no spatial site index; the three cyclic slots are "
+    "permuted by C and every executed check is slot-symmetric (P0 = (I+C+C^2)/3), "
+    "so no per-slot statement is produced."
+)
+print(
+    "per_mode: checked — the two C3 isotype modes are resolved separately: P_s has "
+    "rank 1 and P_d has rank 2, both commuting with C, their record weights are "
+    f"(w_s, w_d) = ({ws:.6f}, {wd:.6f}) at r = 1/2 with S2 = {S_half:.12f} = ln 2, "
+    f"and giving the two modes unequal multiplicities moves the argmax to r = {r_nu:.6f}."
+)
+print(
+    "per_block: checked — each supplied gauge block dimension is run separately: "
+    "d = 1, 2, 3, 8 leave the generation record weights invariant to 1e-12 and give "
+    "selectors "
+    + ", ".join(f"d={d}: {float(v):.6f}" for d, v in colored_selectors.items())
+    + ", "
+    "all equal to the bare selector within 2e-3, which is exactly the sector-blindness."
+)
+print(
+    "lattice_wide: checked and not executed — this is a finite M_3(C) tensor "
+    "gauge-factor computation; no lattice, no volume scaling and no thermodynamic "
+    "limit is executed, so the sector-blindness is certified only on the supplied "
+    f"separable class, with PASS={PASS}, FAIL={FAIL}."
+)
+
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
 assert FAIL == 0, "discriminating checks failed"

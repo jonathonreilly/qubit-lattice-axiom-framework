@@ -1372,6 +1372,61 @@ print()
 
 
 # ----------------------------------------------------------------------
+# Section 13b: N5 execution certificate (reporting only; adds no check)
+# ----------------------------------------------------------------------
+
+print()
+print("=" * 70)
+print("Section 13b: N5 execution certificate — resolution classes exercised here")
+print("=" * 70)
+print()
+print(
+    "  per_element: resolved candidate by candidate and entry by entry — all "
+    "nine retained U(1) candidates are put through the same five tests "
+    "individually rather than dismissed as a class, and for each one the "
+    "generator restricted to hw=1 is inspected in detail, its commutator with "
+    "C evaluated, its off-diagonal entries in the Y-Fourier basis examined, "
+    "and the (a, b) coefficients recovered by round-trip extraction."
+)
+print(
+    "  per_site: genuinely exercised, as Candidates 1 and 5 — the global "
+    "fermion-number action chi_x -> e^{i alpha} chi_x is applied at every "
+    "site and the per-site Qubit phase e^{i alpha sigma_z/2} is applied at a "
+    "single site x, and the runner shows that the product of the per-site "
+    "rotations over all sites is exactly Q-hat_total and that both act "
+    "trivially on the hw=1 bilinears chi_y^* chi_x, so site-level phase "
+    "freedom is resolved and found to leave (a, b) untouched."
+)
+print(
+    "  per_mode: resolved mode by mode in the Y-Fourier basis, which is the "
+    "sharpest thing this probe does — Y_F^* C Y_F = diag(1, omega, omega_bar) "
+    "puts every candidate generator into the character basis where its "
+    "diagonal is compared component by component against D_b = diag(0, 1, -1), "
+    "and that comparison is what identifies D_b as exactly the U(1)_b "
+    "generator with C_3 = exp(i (2 pi/3) D_b) while showing the retained "
+    "candidates are not proportional to it."
+)
+print(
+    "  per_block: resolved block by block on two different decompositions — "
+    "on A^{C_3} the real basis B_0 = I, B_1 = C + C^2 and B_2 = i(C - C^2) is "
+    "normed separately at 3, 6 and 6 so that rho_+^2 = rho_perp^2 = 6 is what "
+    "A1 means, and on the taste space C^8 = (C^2)^{tensor 3} the "
+    "highest-weight blocks are kept apart, which is why the pseudoscalar "
+    "restricts to zero on hw=1: it maps that block into hw=2."
+)
+print(
+    "  lattice_wide: checked and not executed — no lattice volume is ever "
+    "instantiated, no site sum is performed and no thermodynamic limit is "
+    "taken; the two candidates that are nominally lattice-wide, the global "
+    "charge over all sites and the product of per-site rotations, are settled "
+    "purely by their induced action on the fixed hw=1 bilinear algebra, and "
+    "the retained-radian constraint invoked at the end (every retained radian "
+    "is a rational multiple of pi) is an algebraic fact about the group, not "
+    "a statement about any volume."
+)
+
+
+# ----------------------------------------------------------------------
 # Section 14: Verdict and residue characterization
 # ----------------------------------------------------------------------
 

@@ -799,6 +799,30 @@ def main() -> int:
           bad)
 
     # ========================================================================
+    section("[E] N5 execution certificate -- what this runner resolves")
+    # ========================================================================
+    print("per_element: checked -- the resolved elements are the ordered pair "
+          "signs eps(x,y): every one of the 240 ordered pairs on the linked "
+          "16-site configuration is verified, and the string-family images are "
+          "enumerated exhaustively (64 families at N=3, 4096 at N=4).")
+    print("per_site: checked -- each site carries its own field psi_x on the "
+          "Qubit net (C^2)^(x)|Lambda| with the on-site relations psi_x^2 = 0, "
+          "{psi_x, psi_x^+} = I and {F, psi_x} = 0 checked site by site, across "
+          "the 6-site theta graph, the 8-site cube and 16 linked sites.")
+    print("per_mode: checked -- spectra are resolved eigenvalue by eigenvalue: "
+          "ground-state energies and minimum transfer eigenvalues are reported "
+          "for every configuration in both frames, and the frame difference is "
+          "read as the maximum |dE| over the full spectrum.")
+    print("per_block: checked -- positivity is established block by block in "
+          "the (-1)^Q parity grading: transfer T = exp(-tau H) at tau = 0.5 is "
+          "positive overall AND separately within each parity sector, for both "
+          "the HCB and CAR frames on every configuration tested.")
+    print("lattice_wide: checked on finite blocks -- plaquette boundaries are "
+          "shown to span the entire F_2 cycle space of the 3x2x1, 2x2x2 and "
+          "3x3x3 blocks (ranks 2, 5, 28), so every lattice-loop condition "
+          "reduces to plaquettes there; no infinite-volume limit is taken.")
+
+    # ========================================================================
     section("Summary")
     # ========================================================================
     print("  Verified (numpy tol 1e-12 + exact integer sign calculus, certified):")

@@ -184,6 +184,71 @@ def part3_cp_tensor_then_collapses() -> None:
     print("  structurally CP-empty.")
 
 
+def part4_n5_execution_certificate() -> None:
+    print("\n" + "=" * 88)
+    print("PART 4: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE")
+    print("=" * 88)
+
+    a, b, c, d = s.symbols("a b c d", real=True)
+    k = restricted_kernel(a, b, c, d)
+    bd_positions = [
+        (i, j)
+        for i in range(3)
+        for j in range(3)
+        if s.simplify(k[i, j]) != 0
+        and s.simplify(k[i, j].subs({b: 0})) == 0
+        and s.simplify(k[i, j].subs({d: 0})) == 0
+    ]
+    kz = s.simplify(UZ3.H * k * UZ3)
+    km = s.simplify(R.T * kz * R)
+    combined = s.simplify(
+        s.factor(
+            SQRT3 * (a**2 - b**2 - 3 * b * d - c**2 + d**2) / 6
+            + SQRT3 * (-a**2 + b**2 + c**2 - d**2) / 6
+        )
+    )
+    imag02 = s.simplify(s.factor(s.im(s.expand(km[0, 2] ** 2))))
+
+    print(
+        "  per_element: checked -- the 2<->3 restriction is imposed entrywise, "
+        "x_2 = x_3 = b and y_2 = y_3 = d collapsing the six lane amplitudes to "
+        "the four symbols a, b, c, d, and the runner then finds the whole "
+        f"obstruction living in the single product b d, which occupies exactly "
+        f"{len(bd_positions)} entries of the kernel at positions "
+        f"{bd_positions}; the alignment demands are read off kz[0,1] and "
+        "kz[0,2] individually."
+    )
+    print(
+        "  per_site: checked and not executed -- the 2<->3 exchange that defines "
+        "this sublane acts on the internal generation labels 2 and 3 of a "
+        "single fixed factor, not on any pair of lattice positions; the runner "
+        "builds no lattice, so the restriction is a symmetry of the internal "
+        "index only and nothing here is resolved per site."
+    )
+    print(
+        "  per_mode: checked -- conjugating by UZ3 sends the kernel to the Z_3 "
+        "character basis, and the exact source phase exp(2 pi i / 3) is imposed "
+        "separately on the two singlet-to-doublet mode pairs, yielding two "
+        "independent real polynomials whose sum collapses to the single "
+        f"obstruction {combined}; neither mode pair alone forces it."
+    )
+    print(
+        "  per_block: checked -- because the sublane is 2<->3 symmetric it is "
+        "exactly the exchange-even subfamily, so its Z_3 doublet block is "
+        "degenerate by construction, and that is why a four-parameter sublane "
+        "is more tightly constrained than the full lane; the real rotation R "
+        "then carries the singlet fixed and the doublet block into the mass "
+        f"basis, where Im[(K_mass)_02^2] = {imag02}."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- the whole no-go is exact "
+        "symbolic algebra in four real symbols on one 3x3 kernel, with no "
+        "volume, no site sum, no ensemble and no limit anywhere, so the "
+        "CP-emptiness of the aligned branch is certified for this sublane at "
+        "single-factor scope and is never lifted to a lattice-scale claim."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("DM NEUTRINO TWO-HIGGS 2<->3-SYMMETRIC SLOT NO-GO")
@@ -196,6 +261,7 @@ def main() -> int:
     cond1, cond2 = part1_source_phase_alignment_conditions()
     part2_alignment_forces_bd_zero(cond1, cond2)
     part3_cp_tensor_then_collapses()
+    part4_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

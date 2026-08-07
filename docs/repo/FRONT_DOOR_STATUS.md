@@ -100,43 +100,9 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 0 |
 | Lane rows already in actual ready top-10 | 2 |
-| Lane rows added since prior pass | 32 |
+| Lane rows added since prior pass | 0 |
 | Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 187 |
-
-Named lane membership churn since the prior pass:
-- added: `ckm_five_sixths_bridge_support_note`
-- added: `cl3_taste_generation_theorem`
-- added: `cpt_exact_note`
-- added: `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`
-- added: `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`
-- added: `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25`
-- added: `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`
-- added: `g_bare_rigidity_theorem_note`
-- added: `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`
-- added: `gauge_vacuum_plaquette_framework_point_underdetermination_note`
-- added: `gauge_vacuum_plaquette_reduction_existence_theorem_note`
-- added: `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`
-- added: `gauge_vacuum_plaquette_susceptibility_flow_theorem_note`
-- added: `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`
-- added: `gravitomagnetic_note`
-- added: `hierarchy_matsubara_decomposition_note`
-- added: `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02`
-- added: `higgs_mechanism_note`
-- added: `koide_aps_block_by_block_forcing_note_2026-04-21`
-- added: `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`
-- added: `matter_inertial_closure_note`
-- added: `plaquette_self_consistency_note`
-- added: `q_integer_spectrum_theorem_note_2026-05-02`
-- added: `quark_cp_carrier_completion_note_2026-04-18`
-- added: `shapiro_static_discriminator_note`
-- added: `single_axiom_hilbert_note`
-- added: `teleportation_native_axioms_theory_note`
-- added: `universal_gr_casimir_block_localization_note`
-- added: `universal_gr_lorentzian_global_atlas_closure_note`
-- added: `work_history.ckm.cabibbo_bound_note`
-- added: `z2_hw1_mass_matrix_parametrization_note`
-- added: `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02`
 
 Unmanifested candidates (visible gaming surface; need review-landed pending entries before admission):
 - `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02`

@@ -1098,6 +1098,37 @@ labels, draft-branch vocabulary, campaign names, and noncanonical theory
 phrases must be rewritten into repo-native language or explicitly deferred in
 `docs/repo/ACTIVE_REVIEW_QUEUE.md`; do not land them silently.
 
+13. **Landed-evidence PASS gate (hard).** Audit evidence must LAND with the
+PR, not live in its body. For every branch-changed note or runner whose row
+the audit lane will consume, run
+
+```bash
+python3 docs/audit/scripts/check_changed_audit_evidence.py
+```
+
+and treat any reported `forensic_evidence_ready: false` on an affected row as
+a blocking finding. In particular, for negative-claim-shaped changes (notes
+whose rhetoric trips the N5 scan phrases in
+`docs/audit/scripts/no_go_discipline_gate.py`):
+
+- the primary runner's cached stdout must carry the five-line N5 execution
+  certificate (`per_element:`, `per_site:`, `per_mode:`, `per_block:`,
+  `lattice_wide:` — each honest and substantive, using "checked and not
+  executed — <reason>" where a class is genuinely not exercised); and
+- the N1-N8 checklist required by the no-go-discipline gate must be a
+  committed artifact (a `## No-Go Discipline Gate` section in the note or a
+  committed sidecar), not only PR-body text.
+
+Rationale: packets that existed at review time but did not land are the
+largest audit-invalidation class in repo history (1,560 voided verdicts;
+799 in one day for `no_go_discipline_packet_missing`). A PASS with
+un-landed evidence recreates that failure mode. Repairing the evidence
+(adding honest certificate lines, landing the checklist) is in scope for
+the review; fabricating resolution coverage is not — a runner that
+genuinely cannot certify a resolution class states so honestly, and if the
+claim's rhetoric then over-reaches the certificate, the claim is narrowed,
+not the certificate padded.
+
 The review loop must not run `docs/audit/scripts/apply_audit.py` and must not
 write `audit_status`, `audited_clean`, or other audit verdicts. If the branch
 introduces retained-grade `claim_type` rows, report those claim IDs in the

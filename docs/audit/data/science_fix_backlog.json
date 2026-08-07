@@ -1,0 +1,33 @@
+{
+ "schema": "science_fix_backlog_v1",
+ "authority": "generated summary only; no verdict, no premise, no audit authority; archived_advisory entries are VOID verdicts whose defect reports must be re-verified on current main before any edit",
+ "applied_non_clean": {
+  "total": 0,
+  "by_verdict": {}
+ },
+ "archived_advisory": {
+  "total": 233,
+  "by_verdict": {
+   "audited_failed": 121,
+   "audited_numerical_match": 34,
+   "audited_renaming": 78
+  },
+  "unmapped_category_records": 1024
+ },
+ "evidence_repair": {
+  "queue_available": true,
+  "total": 481,
+  "by_gate_family": {
+   "forensic_n5_execution_certificate_incomplete": 448,
+   "forensic_runner_cache_not_fresh": 20,
+   "runner_declared_inputs_invalid": 8,
+   "forensic_n5_runner_missing": 5
+  },
+  "note": ""
+ },
+ "drain_commands": {
+  "applied_non_clean": "python3 scripts/science_fix_loop.py --dry-run",
+  "archived_advisory": "python3 scripts/science_fix_loop.py --from-archived --dry-run",
+  "evidence_repair": "see docs/audit/data/audit_queue.json rows with audit_work_kind=evidence_repair_required"
+ }
+}

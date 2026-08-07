@@ -225,7 +225,29 @@ the no-go is premature.
 
 A `NO_GO_DISCIPLINE_CHECKLIST.md` (or a `## No-Go Discipline Gate` section
 in `CLAIM_STATUS_CERTIFICATE.md`) recording the answers to N1-N8 verbatim.
-The output must be present in the PR body or review verdict.
+
+**The packet must LAND with the PR — a PR body is not a landing surface.**
+The single largest audit-invalidation class in this repo's history is the
+no-go-discipline packet family (1,560 voided verdicts, 799 of them in one
+day for `no_go_discipline_packet_missing`): packets that existed at review
+time but did not land as evidence the audit could bind. Two artifacts are
+therefore required to land IN the PR, not merely appear in its body:
+
+1. **The N1-N8 checklist as a committed artifact** — a `## No-Go Discipline
+   Gate` section in the source note itself, or a committed sidecar
+   `NO_GO_DISCIPLINE_CHECKLIST.md` the note links. Copying it into the PR
+   body as well is fine, but the PR body copy is a courtesy, not the record.
+2. **The N5 execution certificate in the primary runner's cached stdout** —
+   one line per resolution class (`per_element:`, `per_site:`, `per_mode:`,
+   `per_block:`, `lattice_wide:`), each an honest, substantive (>= 40 char)
+   statement of what the runner actually resolves at that granularity,
+   using the form "checked and not executed — <reason>" where a class is
+   genuinely not exercised. `docs/audit/scripts/forensic_evidence_readiness.py`
+   is the validator; `docs/audit/scripts/check_changed_audit_evidence.py`
+   checks it at review time against the staged changes.
+
+A negative-claim PR whose packet artifacts are not landing with it fails
+this gate even when the checklist is complete and correct.
 
 Status: `PASS` if all 8 checks have answers and no failure conditions are
 hit. `FAIL` if any failure condition is hit.

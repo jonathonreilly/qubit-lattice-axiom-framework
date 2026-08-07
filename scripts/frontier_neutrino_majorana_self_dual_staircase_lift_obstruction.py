@@ -208,6 +208,94 @@ def test_charge_sector_stays_identical_across_selected_levels() -> None:
     print("  already been selected exactly.")
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: no check() call is added and no PASS/FAIL count moves.
+    """
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    texture = z3_texture(2.0, 1.0, 0.25)
+    delta_shape = np.kron(texture, J2)
+    pair_dim = delta_shape.shape[0]
+    upper = np.triu_indices(pair_dim, 1)
+    upper_total = int(upper[0].size)
+    upper_nonzero = int(np.count_nonzero(np.abs(delta_shape[upper]) > 1e-15))
+    texture_eigs = [round(float(v), 6) for v in np.sort(np.linalg.eigvals(texture).real)]
+    sd_eigs = [round(float(v), 6) for v in np.linalg.eigvalsh(self_dual_kernel(1.0))]
+    fock_dim = 2 ** pair_dim
+
+    print(
+        "per_element: resolved with amplitudes, and the pairing sum is driven one "
+        "entry at a time. The texture is written as 2.0 on the singlet, 0.25 on the "
+        "doublet diagonal and 1.0 off it with exact zeros elsewhere; J2 carries +1 at "
+        f"[0, 1] and -1 at [1, 0]; and pair_operator_from_delta then walks all "
+        f"{upper_total} strictly upper-triangular entries of the {pair_dim} x "
+        f"{pair_dim} pairing matrix, of which {upper_nonzero} are nonzero, adding "
+        "delta[a, b] c_a c_b for each one separately."
+    )
+    print(
+        "per_site: checked and not executed. Nothing in this runner is placed "
+        "anywhere: the three-valued index is a generation label under the Z3 "
+        "singlet/doublet split, the two-valued index inside J2 is the Majorana pair "
+        f"index, and the {pair_dim} fermionic modes of Part 3 are exactly those "
+        "(generation, pair) slots. None of them has a coordinate, a neighbour or a "
+        "volume, so there is no site here at which to evaluate anything."
+    )
+    print(
+        "per_mode: resolved on both of the runner's two mode notions. The three "
+        f"texture eigenvalues are computed and sorted, {texture_eigs}, and normalized "
+        "for comparison across scales; and the local self-dual kernel sigma_z + "
+        f"sigma_x is diagonalized to its pair of eigenvalues {sd_eigs}, that is "
+        f"+-sqrt(2). Separately Part 3 builds each of the {pair_dim} fermionic modes "
+        f"individually by Jordan-Wigner into a {fock_dim}-dimensional Fock space and "
+        "sums their occupations into the total number operator."
+    )
+    print(
+        "per_block: resolved with amplitudes, and unlike a block-diagonal case the "
+        "blocks here genuinely couple. The Z3 texture is a singlet entry plus a 2 x 2 "
+        "doublet whose off-diagonal 1.0 links the second and third generations, so "
+        f"the Kronecker product with J2 gives a {pair_dim} x {pair_dim} pairing matrix "
+        "with three on-block Majorana pairs plus cross-generation pairing entries, "
+        "and every one of them is carried into the Fock-space operator and into the "
+        "charge commutator. No block is inspected in isolation, however - the block "
+        "content is only ever read out through whole-matrix norms."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the absent object is the note's "
+        "own stated obstruction. No lattice is constructed anywhere; and the axis the "
+        "claim actually lives on, the staircase scale, is never taken to a limit - "
+        "three fixed positive scales are evaluated and nothing asymptotic is "
+        "approached. The note's conclusion is that closure needs a genuinely new "
+        "non-homogeneous local-to-generation bridge or a new absolute-scale datum, "
+        "and that global object is precisely what cannot be produced by execution "
+        "on a fixed finite block."
+    )
+    print(
+        "  scope: three of Part 1's four checks confirm that a constant is constant. "
+        "rho_values is written down literally as [1.0, 1.0, 1.0] rather than measured "
+        "from any kernel, and W_rel and Q_rel are then evaluated at that same "
+        "constant, giving (1/2) log 2 and 1 three times over; the self-dual kernel is "
+        "never used to compute rho at all."
+    )
+    print(
+        "  scope: the invariance results across Parts 1, 2 and 3 are guaranteed by "
+        "the constructors rather than discovered. Every object is built as scale "
+        "times a scale-independent matrix - the self-dual kernel, the lifted pairing "
+        "block and the Fock-space pairing operator alike - so normalizing, or "
+        "dividing the norm by the scale, removes that factor identically."
+    )
+    print(
+        "  scope: one texture representative is exercised (2.0, 1.0, 0.25) with no "
+        "family swept, and the three scales are consecutive powers ALPHA_LM^7 to "
+        f"ALPHA_LM^9 of the single constant ALPHA_LM = {ALPHA_LM}, so no independent "
+        "scale direction is probed. The runner is fully deterministic: no RNG stream "
+        "and no optimizer appears in it."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("NEUTRINO MAJORANA: SELF-DUAL STAIRCASE-LIFT OBSTRUCTION")
@@ -227,6 +315,7 @@ def main() -> int:
     test_selected_local_point_is_only_a_ray()
     test_z3_lift_remains_homogeneous_after_local_selection()
     test_charge_sector_stays_identical_across_selected_levels()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

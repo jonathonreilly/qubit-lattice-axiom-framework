@@ -505,6 +505,45 @@ check(
 )
 
 # ============================================================================
+# N5 execution certificate -- what this runner resolves at each granularity
+# ============================================================================
+print()
+print("N5 EXECUTION CERTIFICATE")
+print(
+    "per_element: checked — the four joint cells are resolved one by one: the "
+    "quotient cumulant C(j,k) = m(j,k) - p_j p_k vanishes on all four product "
+    f"cells while C(s,d) = {sp.simplify(C_corr[(0, 1)])} and m_corr(s,d) = "
+    f"{sp.simplify(m_corr[(0, 1)])} on the correlated stack, and every diagonal "
+    "entry of both 4x4 states is verified nonnegative on an 11-point p grid."
+)
+print(
+    "per_site: checked and not executed — the registered quotient is labelled by "
+    "two registration edges and two outcomes only; no lattice site index appears "
+    "anywhere in the 4x4 carrier, so this runner produces no site-resolved "
+    "statement about the factorization law."
+)
+print(
+    "per_mode: checked — the two outcome modes s and d are resolved separately: "
+    "the single-registration Born weights are (p, 1-p) on both witnesses, and "
+    "under agreement-conditioning the product stack sends p_s to "
+    "p_s^2/(p_s^2+p_d^2) while the correlated stack leaves each mode fixed at "
+    "its input weight."
+)
+print(
+    "per_block: checked — the two registration copies are the block units: Tr_2 "
+    "and Tr_1 both reduce to diag(p, 1-p) on each witness, a 475-observable "
+    "Hermitian battery finds a maximum copy-1 discrepancy of "
+    f"{max(c1_devs):.2e} between the two witnesses, and the "
+    "unequal-marginal witness splits copy-1 weight p1 from copy-2 weight p2."
+)
+print(
+    "lattice_wide: checked and not executed — the argument is a finite "
+    "two-registration quotient plus a three-atom coupling lemma; no extension to "
+    "many edges, to a lattice, or to a thermodynamic limit is executed, so the "
+    f"no-go is certified only at that scope, with PASS={_PASS}, FAIL={_FAIL}."
+)
+
+# ============================================================================
 # summary
 # ============================================================================
 print()

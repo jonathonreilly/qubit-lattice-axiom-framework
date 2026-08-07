@@ -10,13 +10,38 @@ active lane; the Koide flagship lane covers ratios but not absolute scale.
 1–3 months of focused work on existing Ward-identity scaffolding).
 **Primary closure targets:** retained absolute `m_e`, `m_μ`, `m_τ` derived
 from one axiom — no PDG observational pin.
-**First parallel-worker target:** construct the y_τ Ward identity on the
+**First parallel-worker target:** ~~construct the y_τ Ward identity on the
 charged-lepton carrier (analog of the retained `y_t(M_Pl)/g_s(M_Pl) = 1/√6`
 top-quark Ward identity). With the Koide ratios closure in flight providing
 m_e/m_μ/m_τ ratios, a y_τ Ward identity pins the absolute lepton scale V_0
-and chains to all three charged-lepton masses retained.
+and chains to all three charged-lepton masses retained.~~
+**Superseded 2026-08-07** — see the status-correction block below; that
+construction surface is closed by the 2026-05-10 `y_τ` Ward combined no-go.
+This lane currently has **no nominated first target**.
 **Non-claim boundary:** this file opens the lane only; it does not derive any
 charged-lepton mass.
+
+> **2026-08-07 status correction (housekeeping, no science change).** The
+> "first parallel-worker target" and the Phase-1 entry point below both name
+> **6B**, the `y_τ` Ward identity construction. That surface was subsequently
+> exhausted by
+> [`CHARGED_LEPTON_Y_TAU_WARD_COMBINED_NO_GO_NOTE_2026-05-10.md`](../../CHARGED_LEPTON_Y_TAU_WARD_COMBINED_NO_GO_NOTE_2026-05-10.md),
+> which states that no Ward identity of the form
+> `y_τ_bare = (retained content) × (structural sqrt-rational constant)` is
+> constructible from the framework surface it defines. Sections 6B and the
+> Phase-1 recommendation are therefore **stale as written** and are annotated
+> in place below rather than deleted, so the lane's history stays readable.
+>
+> The dependent chains 6C, 6D and 6E are written as "automatic once 6B lands"
+> and are correspondingly blocked **as routed**, not refuted — the no-go
+> explicitly does not bar closures via parallel-lane progress or new
+> structural primitives, and a V₀ route that does not pass through a Ward
+> identity of that form is untouched by it.
+>
+> This block **names no replacement target**. Choosing one is science, and
+> this edit is housekeeping: it exists so the lane stops pointing new workers
+> at a closed surface. Status authority remains the independent audit lane;
+> nothing here sets, predicts, or re-grades any status.
 
 ## 1. Missing-science framing
 
@@ -109,7 +134,13 @@ open support lane](../ACTIVE_WORKING_LANES_2026-04-26.md). This lane is a
 **Approachability:** Tier A–B for δ via rotation angle; Tier B for Q via
 source-domain selector.
 
-### 6B. y_τ Ward identity construction
+### 6B. y_τ Ward identity construction  — **CLOSED SURFACE (2026-05-10)**
+
+> Retained below for provenance. The construction described here is the
+> one exhausted by
+> [`CHARGED_LEPTON_Y_TAU_WARD_COMBINED_NO_GO_NOTE_2026-05-10.md`](../../CHARGED_LEPTON_Y_TAU_WARD_COMBINED_NO_GO_NOTE_2026-05-10.md).
+> Do not open it as new work without a mechanism outside that note's
+> enumerated surface.
 
 **Target:** construct a τ-generation Ward identity analogous to the retained
 top-quark Ward identity y_t(M_Pl)/g_s(M_Pl) = 1/√6, fixing the τ Yukawa at
@@ -191,9 +222,12 @@ to PDG precision.
 
 **Phase 1 (parallel with Koide flagship closure):**
 
-1. **6B: y_τ Ward identity construction.** Tier B, 1–3 months. Uses the
+1. ~~**6B: y_τ Ward identity construction.** Tier B, 1–3 months. Uses the
    y_t Ward template + retained three-generation structure. Independent
-   of the Koide closure timing — can start immediately.
+   of the Koide closure timing — can start immediately.~~
+   **Superseded 2026-08-07** by the `y_τ` Ward combined no-go; see §6B and
+   the status-correction block at the top of this file. Phase 1 has no
+   nominated replacement item.
 
 **Phase 2 (after Koide flagship closure + 6B):**
 

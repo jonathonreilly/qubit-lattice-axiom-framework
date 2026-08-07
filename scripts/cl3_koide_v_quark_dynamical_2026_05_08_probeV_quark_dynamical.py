@@ -723,6 +723,63 @@ def section9_constraints(c: Counter) -> None:
 
 
 # ----------------------------------------------------------------------
+# SECTION 10 - N5 execution certificate (print-only; adds no check)
+# ----------------------------------------------------------------------
+
+def section10_n5_execution_certificate() -> None:
+    """Report which resolution granularities this runner actually exercises.
+
+    Reporting only: records no PASS/FAIL and asserts nothing.
+    """
+    print()
+    print("Section 10 — N5 execution certificate (resolved granularity)")
+    print(
+        "per_element: checked, but the finest grain here is one scalar per "
+        "quark species, not a matrix entry - the Ward boundary value "
+        "y_t(M_Pl) = 0.43577, the run-down y_t(v) = 0.9734 giving "
+        "m_t = 169.47 GeV at -1.86%, and the per-species constituent sums "
+        "2.2 + 330, 4.7 + 330 and 93.4 + 330 MeV for u, d, s. No Yukawa "
+        "texture is assembled, so no off-diagonal element is ever evaluated."
+    )
+    print(
+        "per_site: checked and not executed - the runner carries no site index "
+        "at all. Its one lattice-derived input, u_0 = <P>^(1/4) = 0.87768, "
+        "arrives as the single supplied plaquette number <P> = 0.5934 rather "
+        "than as an average this runner accumulates over sites, and every "
+        "downstream object is a coupling depending on an energy scale, with no "
+        "spatial argument to resolve."
+    )
+    print(
+        "per_mode: checked and not executed - no mode decomposition is "
+        "performed anywhere. This is the note's own obstruction: the "
+        "circulant Fourier-basis spectrum, where a species-differentiating "
+        "Koide equipartition plus Brannen sqrt(m) identification would live, is "
+        "admitted as non-retained under I4 and named in Section 8 as the "
+        "remaining open gap, so the runner deliberately stops short of "
+        "computing it."
+    )
+    print(
+        "per_block: checked, only as a two-sector split - the 1L RGE is "
+        "integrated for the coupled up-type and down-type pair (y_t, y_b), and "
+        "the decisive negative is precisely that these two blocks collapse onto "
+        "a common quasi-fixed-point value (y_t, y_b)(v) = (0.7549, 0.7549), "
+        "which is why m_b overshoots by 45.6x while m_t undershoots by 1.31x. "
+        "The three generations are never given separate blocks and no "
+        "block-diagonal operator is assembled."
+    )
+    print(
+        "lattice_wide: checked and not executed - the one genuinely "
+        "lattice-wide object this argument would need, the Banks-Casher "
+        "condensate Sigma = pi rho_Dirac(0) with its infinite-volume limit of "
+        "the Dirac spectral density, is admitted under I5 as requiring an "
+        "L >= 12-16 run that is off the retained surface. The runner instead "
+        "uses the fixed constituent value Sigma = 330 MeV, so its reported "
+        "Sigma/m_q fractions of 25.98%, 7.89% and 0.19% are ratios of supplied "
+        "numbers and no volume limit is taken."
+    )
+
+
+# ----------------------------------------------------------------------
 # Main
 # ----------------------------------------------------------------------
 
@@ -749,6 +806,7 @@ def main() -> int:
     section7_cross_mechanism_gate(c)
     section8_structural_verdict(c)
     section9_constraints(c)
+    section10_n5_execution_certificate()
 
     c.summary()
 

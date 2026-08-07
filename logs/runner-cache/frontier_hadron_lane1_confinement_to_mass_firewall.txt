@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hadron_lane1_confinement_to_mass_firewall.py
-runner_sha256: c4a936931698dde5953974c904b346b44548e20b1968cf5524f1cd89d2ff5759
+runner_sha256: 5bb24c3653ad742352cb6ca121b0fc156309e1722989fe27ca9c612d2fc3a87e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.02
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -60,6 +60,15 @@ Part 5: safe endpoint
 ----------------------------------------------------------------------------------------
   [PASS] Lane 1 honest status is open, not a retained hadron-mass result  (open gates: quark masses, chiral inputs, hadronic running, correlators)
   [PASS] standard lattice-QCD methodology remains a bridge until instantiated  (methodology alone is not a framework mass calculation)
+
+----------------------------------------------------------------------------------------
+N5 execution certificate: resolution granularity of this firewall
+----------------------------------------------------------------------------------------
+per_element: checked and not executed — this runner builds no operator, matrix, or algebra carrier, so it has no matrix element to resolve; its finest objects are a dimensionless channel coefficient c_H = m_H/sqrt(sigma) and a literal assertion read out of a repo document, and the 16 executed checks are all of those two kinds.
+per_site: checked and not executed — no lattice is constructed anywhere in this runner; the note's own boundary is that a lattice-QCD-equivalent correlator extraction is a bridge that has not been instantiated, so there is no site-resolved quark or gluon field to interrogate.
+per_mode: checked — the four hadron channels are resolved one at a time against the single bounded scale sqrt(sigma)=465.0 MeV, giving c_pi+=0.3002, c_pi0=0.2903, c_p=2.0178, c_n=2.0206; more than two of these are distinct at three decimals, which is exactly the firewall's content that one scale does not fix a spectrum.
+per_block: checked — the isospin multiplets are separated as blocks: within the nucleon block c_n-c_p=0.00278 is nonzero but under 0.01, while across the pion and nucleon blocks c_p-c_pi+=1.718 exceeds 1.5, so neither the intra-block splitting nor the inter-block gap is supplied by the string tension alone.
+lattice_wide: checked and not executed — no lattice-wide quantity is computed or even available here; the GMOR sensitivity is a two-line scaling argument (a 10% shift in (m_u+m_d) or Sigma moves m_pi by 1.0488x and a 10% shift in f_pi by 0.9091x), and m_u, m_d, Sigma, and f_pi are all still open on Lane 3, so the ab-initio route that would make a lattice-wide statement is precisely the premise the firewall declares missing.
 
 ========================================================================================
 PASS=16 FAIL=0

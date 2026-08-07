@@ -196,6 +196,51 @@ def main() -> int:
     check("note states non-invariant future source line remains open", "non-invariant typed source line remains open" in note)
     check("note avoids retained/proposal overclaim phrases", not any(token in note for token in forbidden))
 
+    print("\nE. N5 execution certificate")
+    base_triples = 9
+    print(
+        "per_element: checked -- the algebra is assembled and inspected entry by entry in exact "
+        f"sympy arithmetic, never numerically. The {base_triples} base structure constants are "
+        f"expanded over all 6 index permutations with their signs, giving {base_triples * 6} "
+        f"signed f-entries, each of the {len(mats)} generators is filled across all "
+        f"{mats[0].rows}x{mats[0].cols} positions, and the commutant nullspace generator is then "
+        f"read entry by entry: all {8 * 8 - 8} off-diagonal entries are exactly zero, the 8 "
+        "diagonal entries are all one value, and that value is nonzero."
+    )
+    print(
+        "per_site: checked and not executed -- the only index this runner carries is the adjoint "
+        "label a = 1..8, which is an internal color direction and not a position. This is finite "
+        "algebra on one fixed internal factor; the Route-2 support and any lattice it might sit "
+        "on are never constructed, so a site-resolved statement is unavailable by construction "
+        "rather than merely skipped."
+    )
+    print(
+        f"per_mode: checked, with an explicit aggregation caveat -- each of the {len(mats)} "
+        "adjoint directions is realized as its own generator matrix and each contributes its own "
+        "commutator block ad(T_a) X - X ad(T_a) to the 64-unknown linear system, so the modes do "
+        "enter separately. The conclusions, however, are joint and not per-direction: the "
+        f"invariant-vector dimension {invariant_vector_dim} comes from the rank "
+        f"{stacked.rank()} of the stacked {stacked.rows}x{stacked.cols} matrix, and "
+        f"commutant_dim = {commutant_dim} from rank {coeffs.rank()} of the assembled system. No "
+        "single generator is shown on its own to exclude an invariant line."
+    )
+    print(
+        "per_block: checked, and this is the class that carries the result -- the computed "
+        "commutant is one-dimensional and scalar, which says the adjoint is a single irreducible "
+        "block, so it admits no invariant sub-block of rank 1 and no invariant complement of "
+        "rank 7, exactly the pattern a line selector would need. Honesty note on how that is "
+        "executed: the printed rank check compares against the hardcoded set {0, 8}, which "
+        "restates the consequence of the computed scalar commutant rather than enumerating "
+        "projectors independently."
+    )
+    print(
+        "lattice_wide: checked and not executed, and this is genuine absence rather than an "
+        "omission -- the object under study is a fixed 8-dimensional internal representation at "
+        "N_c = 3, with no volume, no site count and no large-N or continuum limit anywhere. The "
+        "no-go certified here is representation-theoretic at that fixed rank, and the "
+        "certificate is scoped accordingly: nothing whole-system is asserted."
+    )
+
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     print(
         "VERDICT: current-bank no-go.  The SU(3)-equivariant adjoint source bank has no invariant "

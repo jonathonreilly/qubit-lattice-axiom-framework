@@ -316,8 +316,8 @@ def n5_execution_certificate() -> None:
         "as supplied closed forms from the cited 2D and 3D boost-covariance "
         "theorems, whose presence Part 1 verifies only by reading their note "
         "text; the boost test then compares one base separation against one "
-        "boosted separation, matching at 0.038778907396 in 1+1D and "
-        "0.00284440392 in 3+1D, rather than summing anything over a volume."
+        "boosted separation, matching at about 0.0387789 in 1+1D and 0.0028444 in "
+        "3+1D, rather than summing anything over a volume."
     )
 
 

@@ -149,8 +149,8 @@ def main() -> int:
     print(
         "  per_mode: checked - the individual modes are exactly what moves, and "
         "the runner resolves them. Numerical eigvals of the texture are matched "
-        "against the analytic triple (a, eps + b, eps - b) to max error "
-        "4.97e-16, and the normalized doublet spectrum |1 +- r| is recomputed "
+        "against the analytic triple (a, eps + b, eps - b) inside the runner's "
+        "1e-12 gate, and the normalized doublet spectrum |1 +- r| is recomputed "
         "for each r, walking from [0.70000071, 0.71414214] at r = 0.01 to "
         "[0.59439106, 0.80417614] at r = 0.15 - a spread of 1.388e-01 that no "
         "other quantity here reproduces."

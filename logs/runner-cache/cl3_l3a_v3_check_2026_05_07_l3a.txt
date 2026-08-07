@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_l3a_v3_check_2026_05_07_l3a.py
-runner_sha256: 1b837ff3073f93980fbd8f7f8700567a1b40ab049f27ef527109f54cb7e36afb
+runner_sha256: f3b4b549ddd5b276a7e2641a7925d4cfbf748fbadff6bec4e51d50f30075acd8
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.17
@@ -214,7 +214,7 @@ META — Bridge gap admission count
 ========================================================================================
 N5 EXECUTION CERTIFICATE — resolved granularity (reporting only)
 ========================================================================================
-per_element: checked - every generator is an explicit complex matrix and the trace surfaces are built entry by entry. The Gell-Mann T_a = lambda_a/2 are written out as 3 x 3 arrays and embedded as T_a^V = (T_a in the 4-block) kron I_2, and the two Gram matrices are filled over all 64 (a, b) pairs, giving max |Gram3 - (1/2) I| = 1.11e-16 on V_3 and max |GramV - I| = 2.22e-16 on V_full; the projector identity P_color + P_lepton = I_V closes entrywise at 0.00e+00.
+per_element: checked - every generator is an explicit complex matrix and the trace surfaces are built entry by entry. The Gell-Mann T_a = lambda_a/2 are written out as 3 x 3 arrays and embedded as T_a^V = (T_a in the 4-block) kron I_2, and the two Gram matrices are filled over all 64 (a, b) pairs and compared against (1/2) I on V_3 and I on V_full inside the runner's 1e-9 closeness tolerance; the projector identity P_color + P_lepton = I_V closes entrywise at exactly zero.
 per_site: checked, but only for one site - a single Cl(3) carrier is instantiated and V = C^8 is read as three 2-dimensional tensor factors. Attack 9 builds the per-site bivector generator sigma_3/2 = (SZ kron I_2 kron I_2)/2 on factor 0 and reads its spectrum {+1/2 mult 4, -1/2 mult 4} against the colour Cartan T_3^V spectrum {+1/2 mult 2, -1/2 mult 2, 0 mult 4} - zero zero-modes against four - which is exactly how the bridge is shown to be a non-trivial identification. No second site exists and no site sum is formed.
 per_mode: checked, and resolved precisely to the point of showing the taste index factors out - no individual taste amplitude is ever separated. V_full carries the 2-dimensional fiber as V_color = V_3 kron V_fiber, gauge generators return identical expectation values on fiber-distinct states, and every polynomial in the generators inflates by exactly dim V_fiber = 2: Casimir traces 4 -> 8, cubic Tr(T_a T_b T_c) and the d^abc symbols matching 2x at 0.00e+00, quark number 3.0000 -> 6.0000. That uniform factor 2 is sharpening S1, and it is the reason the taste direction cannot discriminate the two trace surfaces.
 per_block: checked - the block decomposition of V_full is real and load-bearing. P_color (6-dimensional) and P_lepton (2-dimensional) are constructed as explicit diagonal projectors and shown to sum to I_V, all eight T_a^V are verified to vanish identically on the lepton block, the colour block is checked to carry the reducible 4 = 3 + 1 of SU(3), and the block ranks 3 and 8 are what Attack 6 compares. Note that Attack 6's stable-class statement is recorded as a structural assertion, not computed.

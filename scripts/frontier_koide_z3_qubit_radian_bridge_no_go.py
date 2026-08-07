@@ -427,7 +427,8 @@ print(
     "the Qubit one-site algebra M_2(C); every Pancharatnam overlap is that "
     "two-component vdot, and the decisive numbers are read straight off it, "
     "|<chi|g.chi>| = 0.500000000000 and arg = 1.047197551197 = pi/3, with "
-    "base-point independence over 17 equator points at 8.88e-16."
+    "base-point independence checked over 17 equator points against the "
+    "runner's 1e-12 gate."
 )
 print(
     "per_site: checked and not executed - there is no Z^3 site index in this "
@@ -445,7 +446,8 @@ print(
     "the trivial mode v_1 drops out of the projective coordinate and is never "
     "re-evaluated. The runner then sweeps the mode count itself, d in "
     "{2, 3, 5, 7, 11}, and gets gamma_PB = 0, pi/3, -2pi/5, -2pi/7, -2pi/11 - "
-    "each a rational multiple of pi to 2.22e-16 and none equal to 2/d^2."
+    "each matching its rational-multiple-of-pi closed form inside the 1e-12 "
+    "gate, and none equal to 2/d^2."
 )
 print(
     "per_block: checked, but only as a dimension count - no block operator is "

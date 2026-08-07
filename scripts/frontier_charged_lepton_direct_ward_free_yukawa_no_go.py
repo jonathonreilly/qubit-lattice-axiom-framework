@@ -230,6 +230,49 @@ def main() -> int:
     )
 
     print()
+    print("E. N5 execution certificate")
+    print("-" * 72)
+    print(
+        "per_element: the free-Yukawa conclusion is reached entry by entry — all "
+        "nine positions of the 3x3 generation matrix Y_e are tested against the "
+        "same gauge-allowed monomial bar L_L H e_R, the diagonal values "
+        f"{[int(y_e[i][i]) for i in range(3)]} and the nonzero off-diagonal "
+        f"positions {nonzero_offdiag} each pass independently, and the "
+        "wrong-Higgs matrix is refused at every one of those nine positions."
+    )
+    print(
+        "per_site: checked and not executed — this runner holds no lattice at "
+        "all; its objects are representation labels carrying a color dimension, "
+        "an isospin dimension and a doubled hypercharge, so there is no site "
+        "index for any quantity to be resolved against and no site-local "
+        "statement is made or needed."
+    )
+    print(
+        "per_mode: checked and not executed — the retained top result enters only "
+        "through its normalization factor 1/sqrt(6) and never through the loop "
+        "integral that produced it; no propagator, no momentum variable and no "
+        "mode sum appears anywhere here, so the runner cannot and does not speak "
+        "to any mode-resolved part of the Ward identity."
+    )
+    print(
+        f"per_block: the decisive granularity is the gauge multiplet block — the "
+        f"Q_L block carries color times isospin = {top_color_dim} x "
+        f"{top_isospin_dim} = {top_singlet_norm_sq}, which is where 1/sqrt(6) "
+        f"comes from, while the charged-lepton blocks offer only the "
+        f"normalization squares {sorted(direct_lepton_norm_squares)}, and "
+        f"reaching {top_singlet_norm_sq} would require the generation triplet "
+        f"times weak dimension {generation_triplet_norm_sq} x "
+        f"{lepton_isospin_dim}, an added primitive rather than gauge selection."
+    )
+    print(
+        "lattice_wide: checked and not executed — nothing extensive, no volume "
+        "and no thermodynamic limit is involved, and the global statement a "
+        "reader might want here, a retained charged-lepton mass theorem, is "
+        "precisely what the note declines to assert: the executed content is a "
+        "boundary on which monomials gauge selection permits, leaving Y_e free."
+    )
+
+    print()
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

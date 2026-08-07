@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_cp_orientation_parity_reduction_2026_04_20.py
-runner_sha256: 77d513ed2af88104b265c9d2f19c4f2c87241747a97bfec67f38b82ea6f52dbd
+runner_sha256: e973eebbac245a3a79045a07e1f186175a02f5e6a8b8d381bb8ef2760b4aeb70
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -13,9 +13,9 @@ DM PMNS CP ORIENTATION PARITY REDUCTION
 Part 1: source cubic equals the ascending-basis Jarlskog bridge
    Basin 1: I_src=+0.303560489497  Delta=+9.267735426413  J_basis=+0.032754548499  I_src/Delta=+0.032754548499
   [PASS] Basin 1: ascending-basis Jarlskog equals I_src / Delta
-   Basin 2: I_src=-225.763564069262  Delta=+12275.668963542641  J_basis=-0.018391141431  I_src/Delta=-0.018391141431
+   Basin 2: I_src=-225.763564069262  Delta=+12275.668963542652  J_basis=-0.018391141431  I_src/Delta=-0.018391141431
   [PASS] Basin 2: ascending-basis Jarlskog equals I_src / Delta
-   Basin X: I_src=-99.766107123954  Delta=+7181.229515524768  J_basis=-0.013892621996  I_src/Delta=-0.013892621996
+   Basin X: I_src=-99.766107123954  Delta=+7181.229515524751  J_basis=-0.013892621996  I_src/Delta=-0.013892621996
   [PASS] Basin X: ascending-basis Jarlskog equals I_src / Delta
 
 Part 2: row-permutation parity is the only extra sign
@@ -42,6 +42,13 @@ Part 3: chamber-sign structure
 Part 4: conditional source law after the parity bit
   [PASS] On the odd sigma branch, the coefficient-free source law I_src > 0 selects Basin 1 uniquely  (odd-positive=['Basin 1'])
   [PASS] So once a parity / charged-doublet label law fixes sigma=(2,1,0), the source cubic sign also forces sin(delta_CP) < 0
+
+Part 5: N5 execution certificate -- what this runner resolves
+  per_element: checked -- both sides of the bridge are assembled from named individual matrix entries, not from an aggregate invariant: I_src is Im(H_12 H_23 H_31) taken off three specific Hermitian entries, and every Jarlskog is Im(P_00 P_01* P_10* P_11) off four specific mixing entries, compared entry-level at tolerance 1e-12 on all three chamber roots.
+  per_site: checked and not executed -- this runner carries no lattice site index. The three rows of H are charged-lepton flavor labels (e, mu, tau) in one 3x3 Hermitian, and H_mat(m, delta, q_plus) is a point in a three-dial parameter space rather than a site-indexed field, so no site sweep exists to run.
+  per_mode: checked -- np.linalg.eigh resolves the three eigenmodes individually with ascending lambda_1 < lambda_2 < lambda_3, Delta is built from all three pairwise mode gaps (l1-l2)(l2-l3)(l3-l1), and the permutation sigma is precisely a relabeling of which eigenmode occupies which flavor slot; the parity sign is verified mode-permutation by mode-permutation.
+  per_block: checked -- jarlskog() reads only the upper-left 2x2 block of the row-permuted matrix, and the two surviving branches sigma=(2,1,0) and sigma=(2,0,1) share their first slot (row 2) while differing only by the transposition inside the remaining two-slot mu-tau doublet block, which is exactly where the whole parity bit lives.
+  lattice_wide: checked and not executed -- there is no lattice, extent, or asymptotic limit anywhere in this runner. The executed evidence is three isolated exact chamber roots (Basin 1, Basin 2, Basin X) at fixed (m, delta, q_plus), with I_src positive only at Basin 1; no volume scaling or thermodynamic statement is attempted.
 
 ========================================================================================
 RESULT

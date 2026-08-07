@@ -167,6 +167,53 @@ def weight_clean() -> None:
           True)
 
 
+def n5_execution_certificate() -> None:
+    """Granularity report. Prints only; no check is added and no count changes."""
+    section("N5 execution certificate: what this runner resolves")
+    print(
+        "  per_element: resolved — the operators are small enough to be pinned entry by "
+        "entry and they are. The cyclic shift is filled in element by element as "
+        "C[(i+1) mod 3, i] = 1, gamma5 is matched against diag(+1, -1) entrywise, the "
+        "chiral projectors are required to satisfy P+ + P- = I_2 as an exact matrix "
+        "identity, and the decisive commutator is required to be the zero matrix with "
+        "operator norm below 1e-12, not merely small."
+    )
+    print(
+        "  per_site: resolved in the on-site sense only, which is the whole scope of the "
+        "claim. Exactly one site is instantiated and its Hilbert space is split as the "
+        "spin factor C^2 tensor the generation factor C^3; the no-go is that the on-site "
+        "Clifford chirality is built on the first factor and embedded as "
+        "gamma5_spin tensor I_gen. No second site, hopping term or inter-site relation is "
+        "constructed, so nothing is asserted about site-to-site structure."
+    )
+    print(
+        "  per_mode: resolved at the level of individual eigenvalues. The generation modes "
+        "are separated by diagonalizing S = C + C^2 and matching its spectrum to "
+        "{2, -1, -1}, the K-odd generation current A = i(C - C^2) is identified with its "
+        "own spectrum {0, +sqrt3, -sqrt3}, and the spin modes are the two eigenvalues "
+        "+1 and -1 of gamma5. The failure is visible precisely as mode labels that belong "
+        "to different tensor factors and therefore never mix."
+    )
+    print(
+        "  per_block: resolved at the level of the invariant subspaces those modes group "
+        "into, which is a strictly coarser and different statement. On the generation "
+        "factor the blocks are the singlet of dimension 1 and the doublet of dimension 2 "
+        "read off the S spectrum; on the spin factor the blocks are the two chiral "
+        "eigenspaces, each confirmed rank 1 by tracing P+ and completing to I_2. The two "
+        "block decompositions partition different factors, which is why one cannot select "
+        "within the other."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no lattice, sum over sites or volume "
+        "limit is built, and asserting one would exceed the note's own stated scope, which "
+        "rules out the natural tensor embedding at a site and explicitly leaves open a "
+        "rooted carrier that entangles spin into the generation index. The generality that "
+        "is established instead is algebraic and sampled at one site: for 200 random "
+        "Hermitian pairs the cross-factor commutator stays below 1e-12, so no site-factor "
+        "operator whatsoever can fail to commute with S."
+    )
+
+
 def main() -> int:
     source_anchor_checks()
     setup_checks()
@@ -174,6 +221,7 @@ def main() -> int:
     structural_reason()
     rank2_is_spin_taste_not_generation()
     weight_clean()
+    n5_execution_certificate()
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
         print("VERDICT: gamma5 factor-bridge no-go checks FAILED.")

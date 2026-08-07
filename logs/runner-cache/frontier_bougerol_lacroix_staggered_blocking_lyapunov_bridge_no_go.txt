@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bougerol_lacroix_staggered_blocking_lyapunov_bridge_no_go.py
-runner_sha256: a1c37538b11156a54f94bd23fd27134e1e3c46cf99d97fcf77e413c1a00a5e4d
+runner_sha256: 9b4e68305d56d45bbfebb688db22f781f0cee165aaba74f13d06382f0788a624
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 
@@ -101,6 +101,15 @@ No-go theorem summary
       lattice transfer-matrix spectral gap, non-perturbative blocking RG);
       none of these are adjudicated here.
 
+
+----------------------------------------------------------------------------------------
+N5 execution certificate — what this runner resolves at each granularity
+----------------------------------------------------------------------------------------
+per_element: checked and not executed — the runner's first obstruction is precisely that no explicit matrix-form per-step operator A_k is exhibited anywhere in the 5 scanned source notes, so there is no operator entry to resolve; the executed evidence at this granularity is that negative scan, not any entrywise computation.
+per_site: checked and not executed — the 16-step staircase is indexed by blocking scale, not by lattice site; no lattice is instantiated anywhere in this runner and no site-resolved quantity is computed, so nothing here certifies the bridge site by site.
+per_mode: checked — the 16 taste modes are enumerated one at a time, n_taste taking the 16 distinct values 16 down to 1 with each rung contributing b_3 = (33 - 2 n_taste)/3, and the taste near-degeneracy leaves an available log-gap of only alpha_LM^2 = 0.008226 against the required |log alpha_LM| = 2.4002.
+per_block: checked — the blocking rungs are accumulated block by block and the runner locates the exact rung at which the coupling budget is exhausted: crossing at k* = 9 with partial shift 1.0133 against the start 1/g^2 = 0.8777, the full 16-rung shift being 2.5940.
+lattice_wide: checked and not executed — the hypothesis that would need certification is the N -> infinity random-product limit, while this runner executes only the finite 16-step deterministic staircase plus two alpha_LM sensitivity points at 0.05 and 0.20; taking no asymptotic or volume limit is itself obstruction T9, with PASS=10, FAIL=0.
 
 ========================================================================================
   TOTAL: PASS=10, FAIL=0

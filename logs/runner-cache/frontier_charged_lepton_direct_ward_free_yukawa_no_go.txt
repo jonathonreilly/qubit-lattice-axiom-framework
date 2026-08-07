@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_direct_ward_free_yukawa_no_go.py
-runner_sha256: 61098195437fd457719c6b48af7523ed948164d56778a7b3a7961c23ee8b60a5
+runner_sha256: de7e38978dd8f9422129832a508984044fc6308defbae01613dded9357403640
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 PASS: one-Higgs gauge-selection note exists -- docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md
@@ -45,6 +45,14 @@ D. Comparator firewall
 Comparator masses, not proof inputs: {'m_e_MeV': 0.51099895, 'm_mu_MeV': 105.6583755, 'm_tau_MeV': 1776.86}
 PASS: observed charged-lepton masses are not proof-input keys -- proof keys = ['basis_rotation_unitarity', 'color_representations', 'direct_normalization_dimensions', 'field_charges', 'generation_blind_gauge_action', 'source_note_scope_strings']
 PASS: bounded review marks charged-lepton masses as observational pin
+
+E. N5 execution certificate
+------------------------------------------------------------------------
+per_element: the free-Yukawa conclusion is reached entry by entry — all nine positions of the 3x3 generation matrix Y_e are tested against the same gauge-allowed monomial bar L_L H e_R, the diagonal values [1, 3, 6] and the nonzero off-diagonal positions [(0, 1), (1, 2), (2, 0)] each pass independently, and the wrong-Higgs matrix is refused at every one of those nine positions.
+per_site: checked and not executed — this runner holds no lattice at all; its objects are representation labels carrying a color dimension, an isospin dimension and a doubled hypercharge, so there is no site index for any quantity to be resolved against and no site-local statement is made or needed.
+per_mode: checked and not executed — the retained top result enters only through its normalization factor 1/sqrt(6) and never through the loop integral that produced it; no propagator, no momentum variable and no mode sum appears anywhere here, so the runner cannot and does not speak to any mode-resolved part of the Ward identity.
+per_block: the decisive granularity is the gauge multiplet block — the Q_L block carries color times isospin = 3 x 2 = 6, which is where 1/sqrt(6) comes from, while the charged-lepton blocks offer only the normalization squares [1, 2], and reaching 6 would require the generation triplet times weak dimension 3 x 2, an added primitive rather than gauge selection.
+lattice_wide: checked and not executed — nothing extensive, no volume and no thermodynamic limit is involved, and the global statement a reader might want here, a retained charged-lepton mass theorem, is precisely what the note declines to assert: the executed content is a boundary on which monomials gauge selection permits, leaving Y_e free.
 
 Summary
 ------------------------------------------------------------------------

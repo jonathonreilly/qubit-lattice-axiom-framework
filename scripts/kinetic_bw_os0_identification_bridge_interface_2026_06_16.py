@@ -110,6 +110,43 @@ def main() -> int:
     check("target kinetic note cites this B-W interface no-go", "KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md" in target)
     check("target kinetic note still keeps primitive retirement firewalled", "does not retire the kinetic-isotropy primitive" in target_flat)
 
+    print("\nF. N5 execution certificate -- resolution classes exercised here")
+    print(
+        "  per_element: resolved entry by entry on the saturated tick -- "
+        "U(k)^H U(k) - I is checked as the exact 2x2 zero matrix and the "
+        "eigenvalue set is checked to be exactly {exp(i k), exp(-i k)}, and "
+        "the four envelope members r = 1/2, 1, 2, 3 are each given their own "
+        "positivity check rather than being summarised as a family."
+    )
+    print(
+        "  per_site: checked and not executed — this runner builds no "
+        "lattice and carries no site index; every object above is a function "
+        "of the single momentum symbol k on one axis, so there is no site "
+        "sum, no neighbour edge and no site-resolved quantity to resolve."
+    )
+    print(
+        "  per_mode: resolved mode by mode, which is where the obstruction "
+        "actually lives -- at each momentum the real-time band keeps "
+        "d omega/dk = 1 while the Euclidean envelope T_r(k) = exp(-r k) is "
+        "sampled at k = 0.1, 0.7, 1.3 and stays a strict contraction for "
+        "every r, and at k = 0.4 the positive envelope is separated from the "
+        "unitary phase exp(i omega) for r = 1/2, 1, 2 one r at a time."
+    )
+    print(
+        "  per_block: checked and not executed — there is exactly one 2x2 "
+        "K/CPT-paired quasi-energy block here and no direct sum or block "
+        "decomposition is ever formed; the only block-level facts, unitarity "
+        "and the omega <-> -omega pairing, are already the entrywise checks "
+        "above, so no further granularity exists at block level."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no volume, no site sum "
+        "and no continuum or thermodynamic limit is taken; the entire witness "
+        "is the one-parameter family E_E(k) = r |omega(k)| on a single axis, "
+        "and this note's own N5 restricts the negative phrase to that "
+        "per-axis statement rather than a lattice-wide B-W impossibility."
+    )
+
     print()
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     if PASS > 0 and FAIL == 0:

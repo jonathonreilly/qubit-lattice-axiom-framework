@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_universal_yukawa_nogo.py
-runner_sha256: bf7d959e5a9b9bee276f424985beb72c7a1ff7b942de4c7f4175ef16a8d86052
+runner_sha256: 7abf524c0a95886cdc5cf5e4d9f896f9dcd5ae435b43eba547189ed60cdedc61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -21,23 +21,30 @@ Question:
 Representative transformed Yukawa matrix Y':
 [[ 3.84667736e-03+0.00000000e+00j  8.49771515e-20+0.00000000e+00j
    5.44002329e-03+0.00000000e+00j]
- [ 3.84667736e-03+0.00000000e+00j  1.00450966e-18-4.71119837e-03j
+ [ 3.84667736e-03+0.00000000e+00j  1.15783900e-18-4.71119837e-03j
   -2.72001165e-03-1.21941460e-18j]
  [ 3.84667736e-03+0.00000000e+00j -1.15299790e-18+4.71119837e-03j
   -2.72001165e-03-1.30826274e-18j]]
 
 Representative H' = Y'^dag Y':
-[[ 4.43907801e-05+0.00000000e+00j -2.44306683e-22+5.12923053e-22j
-   4.52737544e-22-9.72315919e-21j]
- [-2.44306683e-22-5.12923053e-22j  4.43907801e-05+0.00000000e+00j
-   4.47586258e-22-2.16931454e-22j]
- [ 4.52737544e-22+9.72315919e-21j  4.47586258e-22+2.16931454e-22j
-   4.43907801e-05+0.00000000e+00j]]
+[[ 4.43907801e-05+0.00000000e+00j  3.45501824e-22+5.12923053e-22j
+  -1.24132835e-21-9.72315919e-21j]
+ [ 3.45501824e-22-5.12923053e-22j  4.43907801e-05+9.06713191e-38j
+   3.05286631e-23-1.91099735e-21j]
+ [-1.24132835e-21+9.72315919e-21j  3.05286631e-23+1.91099735e-21j
+   4.43907801e-05-3.42817978e-38j]]
   [PASS (C)] The retained exact Dirac bridge is universal: Y = y_0 I  (y0=0.006662640625)
   [PASS (C)] The canonical Z_3 bridge and doublet diagonalization are unitary  (U_Z3^dag U_Z3 = I and U_R^dag U_R = I)
   [PASS (C)] Under those unitary rotations, H' remains y_0^2 I  (Y'^dag Y' = y0^2 I)
   [PASS (C)] The statement is basis-independent for generic unitary U_L, U_R  (generic U_L/U_R still give H = y0^2 I)
-  [PASS (C)] All off-diagonal entries vanish, so the CP tensor is exactly zero  (max offdiag=9.73e-21)
+  [PASS (C)] All off-diagonal entries vanish, so the CP tensor is exactly zero  (max offdiag=9.80e-21)
+
+N5 execution certificate -- what this runner resolves per class:
+  per_element: checked -- the vanishing is established entry by entry on the 3x3 kernel: every off-diagonal entry of H' is inspected with max |H'_offdiag| = 9.80e-21, the diagonal entries all equal y_0^2 = 4.439078010e-05, and the two CP entries Im[(H'_1j)^2] for j = 2, 3 come out as 3.54e-43 and 2.41e-41 individually.
+  per_site: checked and not executed -- although the source comment labels the left rotation a flavor/site basis change, every matrix here acts on the internal three-generation index of a single fixed factor; no Z^3 lattice site is instantiated and no quantity is indexed by position, so the no-go is not resolved site by site.
+  per_mode: checked -- the three Z_3 character modes carried by U_Z3 with omega = exp(2 pi i / 3) are the resolved objects, and the finding is exact degeneracy across them: H' assigns the identical value 4.439078010e-05 to all three character modes, so no mode pair carries the relative phase the CP tensor would need.
+  per_block: checked -- the Z_3 grading splits the factor into a 1-dimensional singlet block and a 2-dimensional doublet block, and the Majorana rotation U_R acts as the identity on the singlet while rotating only the doublet block by pi/4; H' is unchanged on both blocks, so neither block supplies a nonzero CP kernel.
+  lattice_wide: checked and not executed -- the entire argument is finite linear algebra on one fixed 3x3 internal factor with no volume, no site sum and no limit taken; the centrality of Y = y_0 I = 0.006662640625 I is what kills the kernel, and that statement is never extended to a lattice-scale object anywhere in this runner.
 
 Result:
   The exact universal Dirac bridge by itself cannot generate a nonzero

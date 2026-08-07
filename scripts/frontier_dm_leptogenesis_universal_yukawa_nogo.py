@@ -150,6 +150,44 @@ def main() -> int:
     )
 
     print()
+    print("N5 execution certificate -- what this runner resolves per class:")
+    print(
+        "  per_element: checked -- the vanishing is established entry by entry "
+        "on the 3x3 kernel: every off-diagonal entry of H' is inspected with "
+        f"max |H'_offdiag| = {np.max(np.abs(offdiag)):.2e}, the diagonal entries "
+        f"all equal y_0^2 = {y0 * y0:.9e}, and the two CP entries "
+        f"Im[(H'_1j)^2] for j = 2, 3 come out as {cp_entries[0]:.2e} and "
+        f"{cp_entries[1]:.2e} individually."
+    )
+    print(
+        "  per_site: checked and not executed -- although the source comment "
+        "labels the left rotation a flavor/site basis change, every matrix here "
+        "acts on the internal three-generation index of a single fixed factor; "
+        "no Z^3 lattice site is instantiated and no quantity is indexed by "
+        "position, so the no-go is not resolved site by site."
+    )
+    print(
+        "  per_mode: checked -- the three Z_3 character modes carried by "
+        "U_Z3 with omega = exp(2 pi i / 3) are the resolved objects, and the "
+        "finding is exact degeneracy across them: H' assigns the identical "
+        f"value {y0 * y0:.9e} to all three character modes, so no mode pair "
+        "carries the relative phase the CP tensor would need."
+    )
+    print(
+        "  per_block: checked -- the Z_3 grading splits the factor into a "
+        "1-dimensional singlet block and a 2-dimensional doublet block, and "
+        "the Majorana rotation U_R acts as the identity on the singlet while "
+        "rotating only the doublet block by pi/4; H' is unchanged on both "
+        "blocks, so neither block supplies a nonzero CP kernel."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- the entire argument is "
+        "finite linear algebra on one fixed 3x3 internal factor with no "
+        "volume, no site sum and no limit taken; the centrality of Y = y_0 I "
+        f"= {y0:.12f} I is what kills the kernel, and that statement is never "
+        "extended to a lattice-scale object anywhere in this runner."
+    )
+    print()
     print("Result:")
     print("  The exact universal Dirac bridge by itself cannot generate a nonzero")
     print("  leptogenesis asymmetry on the fixed Z_3 Majorana texture. A non-")

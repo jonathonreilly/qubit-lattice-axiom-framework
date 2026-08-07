@@ -133,6 +133,56 @@ ROUTE2_EDGES: tuple[tuple[str, str], ...] = (
 )
 
 
+def n5_execution_certificate(
+    n_mats: int,
+    stack_rank: int,
+    commutant_dim: int,
+    f_adj: Fraction,
+    color_complement: Fraction,
+    e_e: Fraction,
+    q_e: Fraction,
+    c_te: Fraction,
+    n_edges: int,
+) -> None:
+    """N5 execution certificate: print-only; it adds no check and changes none."""
+    print("\nG. N5 execution certificate")
+    print(
+        "per_element: the SU(3) structure constants are resolved one index triple at a "
+        f"time -- nine independent nonzero triples generate every entry, and each of the "
+        f"{n_mats} adjoint matrices ad(T_a) is filled cell by cell across all 64 (b,c) "
+        "index pairs with the inversion parity applied to that single cell, so the "
+        "verified samples f_123=1 and f_458=sqrt(3)/2 are individual numbers, not sums."
+    )
+    print(
+        "per_site: checked and not executed -- this runner never leaves the internal "
+        "color factor attached to one point, working only with the nine-dimensional "
+        "q-qbar product and its eight-dimensional adjoint; there is no coordinate, no "
+        "neighbor list and no star anywhere in the file, and the 'complement' under test "
+        "is a subspace of a representation rather than a collection of lattice sites."
+    )
+    print(
+        "per_mode: the color channels are separated and each is given its own exact "
+        f"rational -- the q-qbar product splits as 1 (+) adj with dimensions 1 and 8 out "
+        f"of 9, giving F_adj={f_adj}, while the candidate all-but-one channel fraction is "
+        f"{color_complement}; that value is then compared against the Route-2 E-center "
+        f"excess e_E={e_e}, which carries q_E={q_e} and c_TE={c_te}."
+    )
+    print(
+        "per_block: this is where the obstruction actually lands, and it is executed in "
+        f"full -- the joint kernel of the eight ad(T_a) is trivial (the stacked 64x8 "
+        f"column array has rank {stack_rank}), the commutant has dimension "
+        f"{commutant_dim} and is spanned exactly by I_8, so every invariant idempotent is "
+        "scalar with rank 0 or 8 and an invariant rank-7 block simply does not exist."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, volume, box or limit of any "
+        f"kind is constructed here; the only whole-object statement made is reachability "
+        f"over a four-node, {n_edges}-edge Route-2 equivalence graph plus one absent typed "
+        "bridge edge, which is provenance bookkeeping over notes rather than a field "
+        "amplitude, and that missing edge is itself the theorem this note reports absent."
+    )
+
+
 def main() -> int:
     print("Route-2 color-complement seven-eighths bridge no-go")
     print("=" * 88)
@@ -225,6 +275,18 @@ def main() -> int:
     check("note states no invariant one-dimensional line", "There is no invariant one-dimensional adjoint line." in note)
     check("note states no invariant rank-seven projector", "never rank `7`" in note)
     check("note records boundary exclusions", "This note does not establish" in note and "any audit verdict" in note)
+
+    n5_execution_certificate(
+        len(mats),
+        stacked_rank(mats),
+        len(nullspace),
+        f_adj,
+        color_complement,
+        e_e,
+        q_e,
+        c_te,
+        len(ROUTE2_EDGES),
+    )
 
     print("\n" + "=" * 88)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

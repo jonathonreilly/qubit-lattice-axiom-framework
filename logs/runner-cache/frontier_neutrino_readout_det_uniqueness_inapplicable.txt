@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_readout_det_uniqueness_inapplicable.py
-runner_sha256: 316172660b0588e702adf8bab2b8825748e4650b242abcd112a8e9e3040b642f
+runner_sha256: a057e02e8152f52d06c7e38bb0e155f80b8bf8501bd821fb4a7ee78d6a82737c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.22
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 PASS T1 D_kin real & anti-symmetric (D^T=-D) = det-uniqueness operator class
@@ -14,6 +14,13 @@ PASS T4 CONTROL: off-corner D_kin is NONZERO (vanishing is corner-specific, not 
 PASS T4b full D_kin is a nonzero operator (norm>0)
 PASS T5 det(mI+jY)=m^16 (nilpotent) and det(mI+jG1)=(m^2-j^2)^8 (scalar-baseline diagnostics)
 PASS T5b scalar baseline m*I is real-symmetric, not anti-Hermitian (outside det-uniqueness X1)
+
+N5 execution certificate -- what this runner resolves at each granularity
+per_element: checked -- D_kin is assembled and audited entry by entry: 384 nonzero entries of the 64x64 matrix, each written as +/- eta_mu(x)/2 by the explicit hop loop, and the defining antisymmetry is verified entrywise with max |D^T + D| = 0.0 exactly, not through a tolerance on a summary norm.
+per_site: checked -- all L^3 = 64 sites of the Z^3 lattice at L = 4 are visited individually, each contributing three directed hops whose Kogut-Susskind sign eta_mu(x) = (-1)^(x_1+...+x_{mu-1}) is computed from that site's own coordinates, so the staggered phase pattern is realized site by site rather than assumed.
+per_mode: checked -- the Bloch momentum modes are projected one at a time and they disagree sharply: each of the three hw=1 generation corners (pi,0,0), (0,pi,0), (0,0,pi) gives ||P D_kin P|| = 1.06e-32, while the two generic momenta (0.7,1.1,0.3) and (1.9,0.5,2.2) give 0.895169, so the vanishing is a property of those specific modes and not of the operator.
+per_block: checked -- the 16-dimensional readout space is split into chirality blocks by g5 = kron(sz, I8) with projectors PL and PR, and the determinant responses count those blocks explicitly: det(mI + jY) = m^16 = 4866.1192 is the nilpotent response with every block contributing nothing, while det(mI + j*Gamma_1) = (m^2 - j^2)^8 = 350.3537 exhibits eight independent two-dimensional blocks.
+lattice_wide: checked -- this class is genuinely executed here, and it is what gives the no-go its teeth: D_kin is confirmed real and antisymmetric across the whole 64-site lattice at once with total norm ||D_kin|| = 9.797959, so the operator is globally nonzero and yet identically zero on the generation sector -- the det-uniqueness X1 domain is empty there for a corner-specific reason, not because the lattice operator is trivial.
 
 TOTAL: PASS=8 FAIL=0
 

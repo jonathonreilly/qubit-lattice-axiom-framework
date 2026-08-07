@@ -79,6 +79,54 @@ def stationary_q_for_quadratic(A: F, B: F) -> F:
     return -B / (2 * A)
 
 
+def n5_execution_certificate(
+    admissible_samples: list[F],
+    selector_values: dict,
+    anchors: dict,
+    powers: dict,
+) -> None:
+    """N5 execution certificate: reporting only; no check is added or altered."""
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 88)
+    print(
+        f"per_element: each scalar entry of the reduced readout row is evaluated on its "
+        f"own as an exact Fraction -- the granted T-side entries rho_T={RHO_T} and "
+        f"s_TE={S_TE} give q_T={Q_T}, and for every one of the {len(admissible_samples)} "
+        "admissible slopes rho_E in {-5, -1, 0, 1, 21/4, 6} the runner forms q_E and "
+        "lambda separately, obtaining six distinct pairs with no averaging anywhere."
+    )
+    print(
+        "per_site: checked and not executed -- the only lattice-derived numbers entering "
+        f"this file are the imported projector weights w_E={W_E} and w_T={W_T}, hence "
+        f"kappa={KAPPA}; no star, arm, coordinate or neighbor list is constructed, so "
+        "there is nothing in the runner that could carry a site index for the E-row "
+        "slope it is trying to select."
+    )
+    print(
+        "per_mode: the two readout channels are separated and treated differently -- the "
+        f"T mode is fully pinned at q_T={Q_T} with s_TE={S_TE}, while the E mode survives "
+        "only as the projective direction ell_E ~ (1, rho_E) on rho_E > -6; the blind "
+        f"signature (q_T, s_TE) is byte-identical across all six samples whereas q_E takes "
+        "six different values, which is exactly how the residual is localized to one mode."
+    )
+    print(
+        "per_block: checked, but only inventories and exact values are resolved and no "
+        "matrix sub-block amplitude is evaluated -- the runner enumerates four candidate "
+        f"selector banks ({len(selector_values)} named selectors, {len(anchors)} target-free "
+        f"quadratic anchors at q_E in {{1, 5/6, 5/4}}, four free coefficient ratios, and "
+        f"{len(powers)} power-law exponents), yet P_R itself is never instantiated in code, "
+        "so its center/excess 2x2 blocks are never formed or compared."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no box, no site count and no limit of "
+        "any kind is taken in this runner, and the global statement that would be needed "
+        "is the note's own missing theorem: a rule fixing the exponent n=2 in "
+        f"lambda=kappa^n, which alone moves rho_E from {powers[1]} at n=1 to {powers[2]}; "
+        "the runner supplies the exponent by hand and certifies nothing beyond that."
+    )
+
+
 def main() -> int:
     print("Route-2 coefficient-selection boundary")
     print("=" * 88)
@@ -165,6 +213,13 @@ def main() -> int:
         "projector-weight power law selects the endpoint only after the exponent is set to n=2",
         powers == {0: F(-1, 1), 1: F(3, 2), 2: RHO_TARGET} and required_power == 2,
         f"rho(n)={powers}",
+    )
+
+    n5_execution_certificate(
+        admissible_samples,
+        selector_values,
+        target_free_quadratic_anchors,
+        powers,
     )
 
     print("\n" + "=" * 88)

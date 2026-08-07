@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ep_record_stiffness_context_independence_no_go_2026_06_17.py
-runner_sha256: 0e5da4bf170c4c513f331ea7244efb51c010bfc99ba6f8da514ee8e4a4675d6a
+runner_sha256: 311d9896069caf30ae3679202323e8003bf71636708231c507a414c8b93a8499
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 EP Record-stiffness context independence no-go
@@ -20,6 +20,13 @@ EP Record-stiffness context independence no-go
 [PASS] no new axiom or Tier-A admission is claimed
 [PASS] audit surfaces are not named as write targets  (read-only audit posture)
 [PASS] positive EP closure is explicitly outside this artifact
+========================================================================
+N5 execution certificate: what this runner resolves
+per_element: checked — additivity is established by exhaustive enumeration rather than by an identity. Every one of the 8 subsets of {r1, r2, r3} is assigned its own readout, every ordered disjoint pair is separately required to satisfy I(a|b) = I(a) + I(b), and I(empty) = 0 is checked on its own; the note and template wording guards are likewise matched token by token.
+per_site: checked and not executed — r1, r2, r3 are abstract record labels and no lattice site index is ever assigned to them. This is the note's own point rather than a gap in coverage: the axiom under audit supplies no dynamics, source or time metric, so it constrains nothing site-resolved that could be swept here.
+per_mode: checked and not executed — no spectrum or normal-mode decomposition is formed anywhere. The two completions differ by the single scalar lambda, and the rest gap enters as one quadratic coefficient evaluated at phi0, not as a mode spectrum; with no dynamics supplied by the axiom there is no mode content for the no-go to resolve.
+per_block: checked — the whole argument is a two-block comparison of complete model copies. Completion A and completion B each carry their own potential, second derivative at phi0, inertial rest gap, inertial mass and gravitational coefficient, computed independently inside each block; only then are the blocks compared, giving stiffness ratio lambda and free source ratios gamma_A vs gamma_B.
+lattice_wide: checked and not executed — nothing is extended, scaled or taken to a limit. The evidence is exact symbolic algebra over three abstract records and one pair of symbolic completions, which is exactly the scope of a narrow negative boundary on the axiom surface; no extended-system or asymptotic statement is made or needed.
 ========================================================================
 RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO=TRUE
 EP_SHARED_COUPLING_NOT_DERIVED_FROM_RECORD=TRUE

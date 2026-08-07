@@ -269,6 +269,83 @@ def test_explicit_pairing_source_is_new_object() -> None:
     print("  DeltaL=2 microscopic insertion changes the symmetry class.")
 
 
+def n5_execution_certificate(
+    n_tot: np.ndarray,
+    h_sourced: np.ndarray,
+    pair_ann: np.ndarray,
+    density: np.ndarray,
+    n0: np.ndarray,
+) -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: this adds no check() call and changes no PASS/FAIL count.
+    """
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    dim = int(n_tot.shape[0])
+    n_modes = int(round(math.log2(dim)))
+    charges = sorted({int(round(v)) for v in np.linalg.eigvalsh(n_tot)})
+    rho = gibbs_state(h_sourced, beta=0.9)
+    n0_ev = expect(rho, n0).real
+    density_ev = expect(rho, density).real
+    pair_ev = expect(rho, pair_ann)
+
+    print(
+        "per_element: resolved as literal matrix entries. Jordan-Wigner writes each "
+        f"c_k as an explicit Kronecker product of sigma_z, sigma_minus and I, so all "
+        f"{dim} x {dim} = {dim * dim} complex entries of every monomial are laid down "
+        "individually, and the charge gradings [N, O] = q O are then entrywise "
+        "identities certified in Frobenius norm across that whole entry set for the "
+        "hopping, density, scattering, triple-density, cc and c^dag c^dag monomials."
+    )
+    print(
+        "per_site: checked and not executed. This runner never instantiates a spatial "
+        f"lattice: the {n_modes} tensor factors are internal fermionic modes of a "
+        "single Fock algebra, carrying no coordinate, no neighbour relation and no "
+        "translation, and the index choices in the (0,2 | 3,1) scattering monomial are "
+        "arbitrary labels rather than positions, so no site-indexed amplitude exists "
+        "here to evaluate."
+    )
+    print(
+        "per_mode: resolved with amplitudes. The four modes are built one at a time "
+        "with their own Jordan-Wigner string, the mode-resolved occupations n_0, n_1, "
+        "n_2, n_3 enter H_sourced with distinct coefficients +0.14, -0.09, +0.06 and "
+        f"+0.19, the Gibbs state at beta = 0.9 returns the mode-resolved occupation "
+        f"<n_0> = {n0_ev:.6f}, and the Majorana bilinear tested is the specific mode "
+        "pair c_0 c_1 rather than a mode-summed object."
+    )
+    print(
+        "per_block: checked, but only the grading is resolved, not the sectors. "
+        "rotation_from_number spectrally decomposes N so U(theta) acts diagonally on "
+        f"the integer fermion-number eigenspaces q = {charges} of the {dim}-dimensional "
+        "Fock space, and the no-go is precisely the two-block offset of cc against a "
+        "block-diagonal state; the runner never prints a sector dimension and "
+        "evaluates no within-sector amplitude, so the block content stays implicit."
+    )
+    print(
+        "lattice_wide: checked and not executed, and this is the note's own stated "
+        f"obstruction. Everything above happens at fixed size {n_modes} modes with "
+        "Gibbs states at beta = 0.9 and 1.1; no sequence of growing mode number and no "
+        "thermodynamic limit is taken, and the note's 'What this does not close' "
+        "section leaves thermodynamic-limit / spontaneous-symmetry-breaking analysis "
+        "explicitly open, so the missing infinite-volume theorem is the boundary here."
+    )
+    print(
+        "  scope: the theorem quantifies over any finite charge-zero family, but the "
+        "runner instantiates representatives, not a sweep - one H_sourced, one "
+        f"H_pair at mu = 0.27 - so the generality is carried by the U(1) algebra "
+        f"itself (<cc> = {abs(pair_ev):.2e} against <density> = {density_ev:.6f}), "
+        "not by enumeration of the grammar."
+    )
+    print(
+        "  scope: the reduction target named in the note, the charge-two primitive, "
+        "is a separate script; no task in this runner tests it, so nothing here "
+        "certifies that companion."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("NEUTRINO MAJORANA: FINITE NORMAL-GRAMMAR NO-GO")
@@ -291,6 +368,7 @@ def main() -> int:
     n_tot, h_sourced, pair_ann, density, n0 = test_charge_zero_grammar_is_u1_invariant()
     test_selection_rule_kills_majorana_expectation(n_tot, h_sourced, pair_ann, density, n0)
     test_explicit_pairing_source_is_new_object()
+    n5_execution_certificate(n_tot, h_sourced, pair_ann, density, n0)
 
     print("\n" + "=" * 88)
     print("RESULT")

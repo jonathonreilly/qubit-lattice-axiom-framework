@@ -568,6 +568,51 @@ def main() -> int:
     )
 
     # -----------------------------------------------------------------------
+    # N5 execution certificate
+    # -----------------------------------------------------------------------
+    print("\n[N5] Execution certificate — resolution granularities\n")
+    print(
+        f"  per_element: the generator algebra is verified one object and one "
+        f"entry at a time — each of the {len(lam)} Gell-Mann matrices is "
+        f"separately confirmed Hermitian and traceless, Tr[T^1 T^1] returns "
+        f"exactly 1/2 against Tr[T^1 T^2] returning exactly 0, the difference "
+        f"sum_a T^a T^a - C_F I is the exact zero matrix with C_F = {C_F}, and "
+        f"every entry of X^2 is checked to be degree 2 in the eight A^a."
+    )
+    print(
+        "  per_site: no lattice of sites is instantiated; the whole argument "
+        "lives on a single link and the site-level content actually executed is "
+        "that the backward hop never reaches a second site — U^dag is confirmed "
+        "numerically to equal U^H on the same link and U U^dag to equal I, so "
+        "the forward/backward pair is a Hermitian sum on one link rather than a "
+        "two-link product across adjacent sites."
+    )
+    print(
+        "  per_mode: checked and not executed — despite the word doubling, "
+        "nothing here concerns Brillouin-zone doubler modes; no Fourier "
+        "transform, momentum variable or mode sum is formed at any point, the "
+        "expansion being carried out at coincident points in position space, so "
+        "no mode-resolved quantity bears on the factor-of-two question."
+    )
+    print(
+        f"  per_block: the Fierz sandwich is resolved channel by channel and that "
+        f"is what closes route (D4) — sum_a T^a M T^a returns C_F I in the "
+        f"singlet channel M = I, which is where a fundamental scalar's "
+        f"self-energy lives, and returns -(1/(2 N_c)) M in the adjoint channel "
+        f"for traceless M; the same block reading is then rerun across the "
+        f"SU(2), SU(3) and SU(4) fundamentals, each landing a factor of two "
+        f"below its target."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no volume, no site sum and "
+        "no thermodynamic limit is computed here; the one lattice-wide number in "
+        "play, the structural product m_DM = N_sites * v = 16 v, arrives as an "
+        "imported audit-discovery comparator that this runner only compares "
+        "against, and the reason 16 v cannot be reached is a same-link algebraic "
+        "fact rather than anything about lattice extent."
+    )
+
+    # -----------------------------------------------------------------------
     # SCORECARD
     # -----------------------------------------------------------------------
     return sc.summary()

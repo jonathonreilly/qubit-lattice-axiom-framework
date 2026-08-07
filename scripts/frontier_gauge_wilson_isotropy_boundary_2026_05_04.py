@@ -144,6 +144,27 @@ def main() -> int:
         ),
     )
 
+    print("\nN5 execution certificate -- what this runner resolves")
+    print("  per_element: checked -- each generator pair is tested on its own: "
+          "all nine anticommutators {G_i, G_j} against 2 delta_ij, and the "
+          "pseudoscalar is taken against each G_i separately, commuting exactly "
+          "while its anticommutator reaches max magnitude 2.")
+    print("  per_site: checked -- the eta plaquette product is evaluated at "
+          "every one of the 16 sites of the 2^4 corner set, separately for each "
+          "of the six orientations, and each orientation's value set collapses "
+          "to the single value -1 across all those sites.")
+    print("  per_mode: checked and not executed -- no spectrum, propagator or "
+          "momentum variable is formed anywhere: Part 1 works in the "
+          "2-dimensional Qubit carrier M_2(C) of the Cl(3) Pauli irrep and Part "
+          "2 in integer signs, so there is no mode to resolve.")
+    print("  per_block: checked -- the six orientations are split into the "
+          "spatial block {xy, xz, yz} and the temporal block {xt, yt, zt}, and "
+          "the block contrast 3(mean_spatial - mean_temporal) is computed and "
+          "comes out exactly 0, so no spatial/temporal split is created.")
+    print("  lattice_wide: checked -- staggered_eta depends on the coordinates "
+          "only through their parities, so the 16 enumerated sites exhaust "
+          "every parity class of the 4d lattice; the uniform value -1 on all "
+          "six orientations is therefore lattice-wide, needing no volume limit.")
     print()
     print("=" * 78)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_r1_hostile_review_2026_05_08_r1hr.py
-runner_sha256: 2ac3ce7d8d01ecbe06b8d8ef0fc5b010a65beb532bb8680e74ebdf713d21890d
+runner_sha256: ddee2a88e2a3e839ec10f118ec2d36fb71ce47fba7b07f1630372a9d24426b10
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 ======================================================================
@@ -12,7 +12,7 @@ Source note:
   docs/A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md
 ======================================================================
 HR1.1 — Quantization measure / RG / scheme dependence
-  PASS : Sampled C_3-symmetrized matrices commute with U_C3 (measure preserves C_3) | max |[<H>, U_C3]| = 2.08e-17
+  PASS : Sampled C_3-symmetrized matrices commute with U_C3 (measure preserves C_3) | max |[<H>, U_C3]| = 1.55e-17
   PASS : RG block-spin average of circulants is circulant | max |[H_avg, U_C3]| = 0.00e+00
   PASS : Multiplicatively renormalized circulant remains C_3-equivariant | max |[Y_renorm, U_C3]| = 0.00e+00
   PASS : Anisotropic-scheme renorm breaks C_3 (counterfactual; not derivable) | max |[Y_anisotropic, U_C3]| = 2.20e-01 — but Z_axis is not derivable from C_3-symm primitives
@@ -24,7 +24,7 @@ HR1.2 — Non-perturbative: theta-sectors, twisted BC, WZW
   PASS : WZW-like topological trace is C_3-invariant | |Tr - Tr_rot| = 0.00e+00
 
 HR1.3 — Quantum effects: anomalous dim, dim reg, Wilson coefs
-  PASS : Anomalous-dim renorm in Fourier-irrep basis preserves C_3 of corner-basis matrix | max |[Y_renormed, U_C3]| = 2.29e-16
+  PASS : Anomalous-dim renorm in Fourier-irrep basis preserves C_3 of corner-basis matrix | max |[Y_renormed, U_C3]| = 2.83e-16
   PASS : Discrete C_3-symm integration measure is C_3-invariant | |integral - integral_perm| = 0.00e+00
   PASS : Higher-dim operator Tr(Y^3) is C_3-invariant (Wilson coef context) | |Tr(Y^3) - Tr(Y_rot^3)| = 0.00e+00
   PASS : Framework has no IR-scale-anisotropy primitive (Lorentz-on-Z³ or single-clock SC is C_3-symm spatially) | single-clock SC singles out time, not any spatial axis (cf. AXIOM_FIRST_SINGLE_CLOCK note)
@@ -38,12 +38,12 @@ HR1.4 — Missing attack vectors (beyond R1's six)
   PASS : F. Z_2 axis-selected mass matrix has α-dep diagonals AND breaks C_3 (counterfactual) | diag = [np.float64(1.0), np.float64(0.5), np.float64(0.5)], breaks_C3 = True; requires explicit Z_2-axis-selection input
 
 HR1.5 — Functoriality assumption
-  PASS : Composition of C_3-equivariant ops is C_3-equivariant | max |[f1·f2, U_C3]| = 2.22e-16
+  PASS : Composition of C_3-equivariant ops is C_3-equivariant | max |[f1·f2, U_C3]| = 1.44e-17
   PASS : State-dependent expectations of C_3-equivariant op are state-invariant under C_3-rotated states | ⟨c_1|Y|c_1⟩ = 0.7, ⟨U c_1|Y|U c_1⟩ = 0.7
   PASS : Three C_3-related corner-state vacua are mutually orthogonal (SSB non-functorial) | if these were all vacua, would contradict CD uniqueness — confirms R1 Step 7
 
 HR1.6 — Brannen-Rivero implicit usage check
-  PASS : Brannen-Rivero formula matches numerical eigenvalues (per Koide circulant character note) | closed_form = [np.float64(-0.2928203230275509), np.float64(1.0928203230275506), np.float64(1.2999999999999998)], numerical = [-0.29282032302755134, 1.0928203230275508, 1.2999999999999996]
+  PASS : Brannen-Rivero formula matches numerical eigenvalues (per Koide circulant character note) | closed_form = [np.float64(-0.2928203230275509), np.float64(1.0928203230275506), np.float64(1.2999999999999998)], numerical = [-0.2928203230275511, 1.0928203230275508, 1.2999999999999994]
   PASS : Brannen-Rivero / Fourier-basis path is already in retained framework (Koide candidate) | see docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md
   PASS : AC_φλ residual is the species-identification (Fourier vs corner) | docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md
 
@@ -58,6 +58,13 @@ HR1.8 — Cluster decomposition uniqueness
   PASS : θ_eff = 0 closure rules out theta-vacuum sector (Strong CP note) | docs/STRONG_CP_THETA_ZERO_NOTE.md (bounded conditional closure)
   PASS : Three corner states in single superselection sector (RS+CD) | STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md Step 4
   PASS : Three corner states are mutually orthogonal (cannot all be the unique vacuum) | if all three were vacua, the three orthogonal vacua would violate CD
+
+N5 execution certificate — what this hostile review resolves
+per_element: checked - every equivariance verdict in this review is a max over matrix entries of a commutator, and the counterfactuals are assembled entry by entry: the anisotropic scheme Z_axis = diag(1.05, 1.10, 1.15) drives max|[Y_aniso, U_C3]| to 2.20e-01, the single-axis twist diag(omega, 1, 1) to 1.73e+00, and the Z_2 mass matrix carries corner diagonals [1.0, 0.5, 0.5] against K_C3's [0.0, 0.0, 0.0].
+per_site: checked - the dim-reg surrogate materializes the whole coordinate list of the (-5..5)^3 grid and evaluates exp(-(x^2 + y^2 + z^2)) at each of its 1331 sites, with the C_3 map (x, y, z) -> (z, x, y) applied site by site to that array; the site-resolved values are real but are then contracted, so the reported assertion is made on their sum.
+per_mode: checked - the three Fourier irreps are resolved separately, each given its own anomalous dimension gamma_k = 1.05, 1.10, 1.15 before rotating back (max|[Y_renormed, U_C3]| = 2.83e-16), and the Brannen-Rivero closed form [-0.29282, 1.09282, 1.3] is matched eigenvalue by eigenvalue against eigvalsh.
+per_block: checked and not executed - the only block-indexed construct is the RG block-spin test, which draws 50 circulant blocks and the measure test, which draws 1000 C_3-symmetrized matrices; both average immediately and report a single aggregate commutator, so no individual block is ever resolved, compared, or allowed to differ from its neighbours.
+lattice_wide: checked - the discrete-measure attack contracts the full grid into a genuinely whole-lattice functional, sum f over all sites versus the same sum after the C_3 axis permutation, and finds them equal; but the grid is fixed at N = 5 and no infinite-volume limit is taken, so the review certifies C_3 invariance of a finite lattice sum, not an asymptotic one.
 
 ======================================================================
 EXACT      : PASS = 32, FAIL = 0

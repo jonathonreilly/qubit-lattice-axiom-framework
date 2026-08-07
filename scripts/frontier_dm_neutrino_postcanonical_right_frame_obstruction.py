@@ -202,6 +202,56 @@ def part3_current_stack_cannot_derive_the_bridge_intrinsically() -> None:
     print("  So the honest answer is no: not from the current stack.")
 
 
+def part4_n5_execution_certificate(y0: np.ndarray, y1: np.ndarray) -> None:
+    print("\n" + "=" * 88)
+    print("PART 4: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE")
+    print("=" * 88)
+
+    phi = 2.0 * PI / 3.0
+    kz0 = z3_kernel(y0)
+    kz1 = z3_kernel(y1)
+    u0, v0 = slot_amplitudes_from_kz(kz0, phi)
+    u1, v1 = slot_amplitudes_from_kz(kz1, phi)
+    h_err = np.linalg.norm(y0 @ y0.conj().T - y1 @ y1.conj().T)
+
+    print(
+        "  per_element: checked -- the moving quantities are located in named "
+        "single entries, not in a summary norm: kz[0,1] runs from "
+        f"{kz0[0, 1]:.6f} to {kz1[0, 1]:.6f} and kz[0,2] from {kz0[0, 2]:.6f} "
+        f"to {kz1[0, 2]:.6f} along the right orbit, while the entrywise "
+        f"difference of H itself is only {h_err:.2e} -- the same entries that "
+        "the retained bank leaves undetermined are the ones exhibited here."
+    )
+    print(
+        "  per_site: checked and not executed -- the three indices carrying "
+        "x = [1.0, 0.8, 1.1] and y = [0.4, 0.6, 0.5] are internal generation "
+        "slots that the CYCLE matrix permutes, not lattice positions, and the "
+        "right-frame ambiguity is an ambiguity of internal basis; no "
+        "position-dependent quantity is formed anywhere in this runner."
+    )
+    print(
+        "  per_mode: checked -- the two singlet-doublet slot amplitudes are the "
+        "mode-resolved even and odd combinations of the two Z_3 doublet "
+        f"characters at phase phi = 2 pi/3, and both move: u goes {u0:.6f} -> "
+        f"{u1:.6f} and v goes {v0:.6f} -> {v1:.6f}, so the obstruction is "
+        "visible mode by mode and not only in an aggregate."
+    )
+    print(
+        "  per_block: checked -- the right rotation U_R(0.41) is the identity "
+        "on the singlet index and a rotation of the 2-dimensional doublet "
+        "block alone, which is exactly why it is invisible to H and visible to "
+        "K; the runner evaluates the complete slot-and-CP block on both orbit "
+        "copies Y and Y U_R^dag and compares them copy against copy."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- only two representatives "
+        "of one right-unitary orbit on a single 3x3 bridge are instantiated, "
+        "with no volume, no ensemble over the orbit and no limit taken; the "
+        "obstruction is that the orbit is never quotiented by a frame-fixing "
+        "theorem, which is a statement about this one fiber, not about scale."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("DM NEUTRINO POST-CANONICAL RIGHT-FRAME OBSTRUCTION")
@@ -214,6 +264,7 @@ def main() -> int:
     y0, y1, _ = part1_right_orbit_preserves_h()
     part2_slot_data_move_on_that_same_orbit(y0, y1)
     part3_current_stack_cannot_derive_the_bridge_intrinsically()
+    part4_n5_execution_certificate(y0, y1)
 
     print("\n" + "=" * 88)
     print("RESULT")

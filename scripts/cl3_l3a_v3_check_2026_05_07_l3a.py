@@ -887,10 +887,9 @@ def section_n5_execution_certificate():
         "and the trace surfaces are built entry by entry. The Gell-Mann "
         "T_a = lambda_a/2 are written out as 3 x 3 arrays and embedded as "
         "T_a^V = (T_a in the 4-block) kron I_2, and the two Gram matrices are "
-        "filled over all 64 (a, b) pairs, giving max |Gram3 - (1/2) I| = "
-        "1.11e-16 on V_3 and max |GramV - I| = 2.22e-16 on V_full; the "
-        "projector identity P_color + P_lepton = I_V closes entrywise at "
-        "0.00e+00."
+        "filled over all 64 (a, b) pairs and compared against (1/2) I on V_3 and I "
+        "on V_full inside the runner's 1e-9 closeness tolerance; the projector "
+        "identity P_color + P_lepton = I_V closes entrywise at exactly zero."
     )
     print(
         "per_site: checked, but only for one site - a single Cl(3) carrier is "

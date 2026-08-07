@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary.py
-runner_sha256: 1082bf711b3952cd2982ed2f20639f7f055d8c7f00f7abf273895e183bce7fbd
+runner_sha256: 051d19a1dc1cae355dc0bd9b98a23e758944ab57be68944c09be2a2057ce16ad
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.32
@@ -64,7 +64,7 @@ per_element: checked - the mu-blindness is demonstrated on explicit matrix entri
 per_site: checked and not executed - no lattice site appears in this runner. The two-point functions it evaluates are already the continuum-limit closed forms K_0(m sqrt(-s^2))/(2 pi) and m K_1(m sqrt(-s^2))/(4 pi^2 sqrt(-s^2)), applied at supplied separations at mass 0.7, so no site index, neighbour relation or lattice propagator is ever constructed.
 per_mode: checked - the fermionic modes are resolved individually. Annihilation operators are built mode by mode with a Jordan-Wigner sigma_z string on the preceding index, the number operators n_0 and n_1 are formed and tested separately against the total charge (each commutator norm 0.00e+00), and the pairing seed c_0 c_1 is checked to shift the charge by exactly -2 at error 0.00e+00. The Pfaffian family is likewise scanned across mu = 0, 0.25, 1.0 and mu = 0, 0.4, 1.1, giving 3 distinct pairing signatures each time.
 per_block: checked - the charge sectors are the blocks, and their separation is the entire boundary result. The normal densities and the Hermitian hopping source all sit in the charge-zero block while the pairing seed sits in the charge-minus-two block, and because the scalar two-point surface and the normal determinant jet both live wholly in the charge-zero block, they collapse to a single signature and a single jet image across every mu tested.
-lattice_wide: checked and not executed - no extensive quantity is formed and no limit is taken here. The continuum results are consumed as supplied closed forms from the cited 2D and 3D boost-covariance theorems, whose presence Part 1 verifies only by reading their note text; the boost test then compares one base separation against one boosted separation, matching at 0.038778907396 in 1+1D and 0.00284440392 in 3+1D, rather than summing anything over a volume.
+lattice_wide: checked and not executed - no extensive quantity is formed and no limit is taken here. The continuum results are consumed as supplied closed forms from the cited 2D and 3D boost-covariance theorems, whose presence Part 1 verifies only by reading their note text; the boost test then compares one base separation against one boosted separation, matching at about 0.0387789 in 1+1D and 0.0028444 in 3+1D, rather than summing anything over a volume.
 
 ========================================================================================
 SUMMARY: PASS=18 FAIL=0

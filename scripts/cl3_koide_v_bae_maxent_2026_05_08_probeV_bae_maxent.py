@@ -935,8 +935,9 @@ print(
 print(
     "per_mode: checked - the C_3 Fourier modes e_k = (1, omega^k, omega^2k)/"
     "sqrt(3) carry the substance of the no-go. Each mode gets its own "
-    "eigenvalue lambda_k = a + 2|b| cos(phi - 2 pi k / 3), matched against "
-    "eigvalsh to 6.4e-16, and its own Gibbs weight p_k = exp(-beta lambda_k)/Z; "
+    "eigenvalue lambda_k = a + 2|b| cos(phi - 2 pi k / 3), checked against the "
+    "numerically diagonalized spectrum inside the runner's allclose tolerance, "
+    "and its own Gibbs weight p_k = exp(-beta lambda_k)/Z; "
     "at the BAE point the per-mode weights are [0.0514, 0.4743, 0.4743] with "
     "range 0.4230, i.e. explicitly NOT the equipartitioned (1/3, 1/3, 1/3)."
 )

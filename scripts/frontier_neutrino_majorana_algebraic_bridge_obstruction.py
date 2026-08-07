@@ -188,9 +188,9 @@ def n5_execution_certificate() -> None:
         "compared entry by entry. The 5 x 5 block is stacked from the explicit "
         "local kernel sigma_z + sigma_x, the generation texture with rows "
         "(2, 0, 0), (0, 0.25, 1), (0, 1, 0.25), and the 2 x 3 coupling with rows "
-        "(1, 0, 0), (0, 1, 0.5); after dividing by its Frobenius norm the block "
-        "is identical across rescalings at max entrywise difference 0.00e+00, "
-        "and the Schur-complement version at 3.12e-16."
+        "(1, 0, 0), (0, 1, 0.5); after dividing by its Frobenius norm the block is "
+        "compared entrywise across rescalings and, like its Schur-complement "
+        "version, agrees inside the runner's 1e-12 gate."
     )
     print(
         "per_site: checked and not executed as a site-resolved statement - the "
@@ -204,10 +204,12 @@ def n5_execution_certificate() -> None:
         "per_mode: checked - the spectral modes of the bridge block are resolved "
         "individually and tested for their scaling weight. Eigenvalues are "
         "sorted and their consecutive gaps taken, singular values are sorted, "
-        "and each is divided by the rung scale before comparison across rungs: "
-        "gap spread 6.19e-15, singular-value spread 1.02e-15, and the "
-        "norm-normalized eigenvalue ratios spread 1.39e-15, i.e. every mode "
-        "either carries weight one in the scale or is exactly scale-free."
+        "and each is divided by the rung scale before comparison across rungs, "
+        "with the gap, singular-value and norm-normalized-eigenvalue spreads all "
+        "landing inside the runner's 1e-10 gate: every mode either carries "
+        "weight one in the scale or is exactly scale-free. The residual spreads "
+        "themselves are LAPACK round-off and are not quoted here, since they "
+        "shift with the numerical environment while the verdict does not."
     )
     print(
         "per_block: checked - the block decomposition is the subject of the "
@@ -216,7 +218,8 @@ def n5_execution_certificate() -> None:
         "texture in the lower-right block and the coupling off-diagonal, and "
         "the Schur complement M_gen - C^dag K^-1 C then eliminates the local "
         "block outright to leave a generation-only effective block, whose norm "
-        "is confirmed to stay degree one in the scale at spread 8.88e-16."
+        "divided by the scale is confirmed constant across the rungs inside the "
+        "runner's 1e-12 gate."
     )
     print(
         "lattice_wide: checked and not executed - there is no lattice and no "

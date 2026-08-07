@@ -303,9 +303,10 @@ def part6_n5_execution_certificate() -> None:
         "(1,2), (2,1); all nine products s_i^dag s_j are evaluated and come back "
         "delta_ij s_i, so the sources are mutually orthogonal blocks, and the "
         "no-go is then read off block multiplicities: a unique top gives one "
-        "block (eigs 1, 2, 5, alignment 1.000000000000, Koide Q = 1), a twofold "
-        "top gives two (eigs 1, 7, 7), a threefold top gives all three (identity "
-        "kernel)."
+        "block (eigenvalues 1, 2, 5, whose top eigenvector aligns with the first "
+        "canonical axis to within 1e-12 and carries Koide Q = 1), a twofold top "
+        "gives two (eigenvalues 1, 7, 7), a threefold top gives all three "
+        "(identity kernel)."
     )
     print(
         "lattice_wide: checked and not executed - no extensive quantity is "

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_local_selector_family_no_go_theorem_2026_04_20.py
-runner_sha256: 80971aa96feced8c1990ef1df363e9e1923f1fe689d36d7a4defd55ab648a7c1
+runner_sha256: ca06c5f76bff466a5e86ab1c04a464fac19bba7bf76c56608beaa5c7de3e2705
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.89
+elapsed_sec: 2.03
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -25,25 +25,25 @@ PART 1: CURRENT EXACT LOCAL SELECTOR FAMILIES REDUCE TO THE SAME SELECTED LINE
 ========================================================================================
 PART 2: THE SCHUR LINE HAS A HARD SOLAR-ANGLE FLOOR
 ========================================================================================
- stationary roots of s12^2(m, S, S) on [-2000,2000]: [-0.41013790202748496, 4.365005345285525]
- local min: m = 4.365005345286, s12^2 = 0.331582718643
- local max: m = -0.410137902027, s12^2 = 0.761269027610
+ stationary roots of s12^2(m, S, S) on [-2000,2000]: [-0.41013790202928624, 4.365005344666904]
+ local min: m = 4.365005344667, s12^2 = 0.331582718643
+ local max: m = -0.410137902029, s12^2 = 0.761269027610
  endpoint values: s12^2(-2000) = 0.474172699901, s12^2(2000) = 0.344679257552
-  [PASS] s12^2 on the Schur line has exactly two stationary points on the wide scan  (roots=[-0.41013790202748496, 4.365005345285525])
-  [PASS] The lower stationary point sits at positive m ~= 4.365 and is the line minimum on the wide scan  (m_min=4.365005345286, s12^2_min=0.331582718643)
+  [PASS] s12^2 on the Schur line has exactly two stationary points on the wide scan  (roots=[-0.41013790202928624, 4.365005344666904])
+  [PASS] The lower stationary point sits at positive m ~= 4.365 and is the line minimum on the wide scan  (m_min=4.365005344667, s12^2_min=0.331582718643)
   [PASS] The Schur-line solar-angle floor stays strictly above the physical target 0.307  (s12^2_min - 0.307 = 0.024582718643)
   [PASS] Therefore no point on delta = q_+ = sqrt(6)/3 can realize the physical PMNS triple  (s12^2_min=0.331582718643)
 
 ========================================================================================
 PART 3: THE BEST FULL THREE-ANGLE FIT ON THE SCHUR LINE STILL MISSES
 ========================================================================================
- stationary roots of chi^2_line on [-200,200]: [1.278322119585464]
- best root: m = 1.278322119585
+ stationary roots of chi^2_line on [-200,200]: [1.2783221195924939]
+ best root: m = 1.278322119592
  best chi^2 = 0.011428083951
- best triple = (0.379202747701, 0.055637456612, 0.473796954383)
+ best triple = (0.379202747700, 0.055637456613, 0.473796954382)
  endpoint chi^2 values: chi^2(-200) = 0.462538811906, chi^2(200) = 0.100836772758
-  [PASS] The Schur-line three-angle distance has a unique stationary point on the wide scan  (roots=[1.278322119585464])
-  [PASS] The unique best-fit point is near m ~= 1.27832212  (m_best=1.278322119585)
+  [PASS] The Schur-line three-angle distance has a unique stationary point on the wide scan  (roots=[1.2783221195924939])
+  [PASS] The unique best-fit point is near m ~= 1.27832212  (m_best=1.278322119592)
   [PASS] The full three-angle miss stays macroscopically nonzero  (chi^2_min=0.011428083951)
 
 ========================================================================================
@@ -54,14 +54,23 @@ PART 4: ALL CURRENT EXPLICIT CANDIDATE POINTS MISS THE PMNS TRIPLE
  C Tr(H^2)-bdy   chi^2 = 0.086958052830  max|angle error| = 0.218478148954
  D K12 char      chi^2 = 0.257190397214  max|angle error| = 0.504569682326
  E par-mix F1    chi^2 = 0.046554013283  max|angle error| = 0.205004015444
-  [PASS] Every current explicit selector candidate has max angle error > 0.05  (rows=[('A Schur-Q', 0.06279697767843943, 0.2505706482474969), ('B det-crit', 0.03112581775423068, 0.15543809288164334), ('C Tr(H^2)-bdy', 0.08695805283008462, 0.21847814895377254), ('D K12 char', 0.257190397213588, 0.5045696823261516), ('E par-mix F1', 0.04655401328321692, 0.20500401544416808)])
-  [PASS] Every current explicit selector candidate has chi^2 > 0.03  (rows=[('A Schur-Q', 0.06279697767843943, 0.2505706482474969), ('B det-crit', 0.03112581775423068, 0.15543809288164334), ('C Tr(H^2)-bdy', 0.08695805283008462, 0.21847814895377254), ('D K12 char', 0.257190397213588, 0.5045696823261516), ('E par-mix F1', 0.04655401328321692, 0.20500401544416808)])
+  [PASS] Every current explicit selector candidate has max angle error > 0.05  (rows=[('A Schur-Q', 0.06279697767843938, 0.2505706482474968), ('B det-crit', 0.031125817754230598, 0.15543809288164312), ('C Tr(H^2)-bdy', 0.08695805283008468, 0.21847814895377254), ('D K12 char', 0.2571903972135885, 0.5045696823261521), ('E par-mix F1', 0.04655401328321686, 0.20500401544416796)])
+  [PASS] Every current explicit selector candidate has chi^2 > 0.03  (rows=[('A Schur-Q', 0.06279697767843938, 0.2505706482474968), ('B det-crit', 0.031125817754230598, 0.15543809288164312), ('C Tr(H^2)-bdy', 0.08695805283008468, 0.21847814895377254), ('D K12 char', 0.2571903972135885, 0.5045696823261521), ('E par-mix F1', 0.04655401328321686, 0.20500401544416796)])
 
 ========================================================================================
 PART 5: THE NOTE STATES THE CORRECT I5 CONSEQUENCE
 ========================================================================================
   [PASS] The note records the hard Schur-line solar-angle floor
   [PASS] The note records that the missing ingredient is nonlocal point selection, not another local family
+
+========================================================================================
+PART 6: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES
+========================================================================================
+  per_element: checked -- the five explicit selector candidates A Schur-Q, B det-crit, C Tr(H^2)-bdy, D K12 char and E par-mix F1 are each evaluated and reported on their own row with their own chi^2 and max|angle error|, and each stationary root is isolated individually by brentq with a 1e-3 separation guard rather than being summarized into a single count.
+  per_site: checked and not executed -- this runner carries no lattice site index. H(m, delta, q_+) is a single 3x3 source Hermitian at a point of a three-dial parameter space and its indices are lepton generation labels, so there is no site-resolved quantity for the selector no-go to sweep.
+  per_mode: checked -- the three PMNS mixing observables are resolved separately rather than only in aggregate. Part 2 rests on the solar mode s12^2 alone, whose Schur-line floor 0.331582718643 exceeds the target 0.307, so the no-go already holds on that single mode; Part 3 then combines all three modes into chi^2_line and still misses at 0.011428083950.
+  per_block: checked in a limited sense -- the block form is the premise of the two imported theorems, not something this runner rebuilds. What is executed here is that the parity-compatible family on D = diag(A,B,B) and the broader 23-symmetric active-curvature family on the same singlet-plus-degenerate-doublet block return the identical selected line delta_* = q_+* = sqrt(6)/3 to 1e-12.
+  lattice_wide: checked and not executed -- there is no lattice and no asymptotic limit. The widest thing executed is a one-dimensional dial scan over m on [-2000,2000] (4001 samples) and [-200,200] (8001 samples) with endpoint comparison, which bounds the selected line's behaviour on those intervals only and is parameter extent, not lattice extent.
 
 ========================================================================================
 RESULT

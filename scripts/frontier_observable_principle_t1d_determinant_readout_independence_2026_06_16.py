@@ -219,6 +219,90 @@ def test_source_guardrails() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: adds no check() call and moves no PASS/FAIL count.
+    """
+    print("== N5 execution certificate: what this runner resolves ==")
+
+    a = (sp.Integer(4), sp.Integer(1))
+    b = (sp.Integer(2), sp.Integer(2))
+    c = (sp.Integer(3), sp.Integer(5))
+    det_a = sp.prod(a)
+    det_c = sp.prod(c)
+    det_sum = sp.prod(direct_sum(a, c))
+    tr_a = trace_diag(a)
+    tr_b = trace_diag(b)
+
+    print(
+        "per_element: resolved with amplitudes, and the whole no-go is elementwise. "
+        "Each source is a finite positive diagonal block written entry by entry - "
+        f"diag(4, 1), diag(2, 2), diag(3, 5) - and the readout is assembled directly "
+        f"from those entries as their product and their sum. The separating witness is "
+        f"exactly an element-level one: diag(4, 1) and diag(2, 2) share the determinant "
+        f"{det_a} but have traces {tr_a} and {tr_b}, so the two readouts differ by "
+        "precisely epsilon. The smoothness leg then differentiates with respect to the "
+        "individual entries, returning dW/dx = 1/x + epsilon and dW/dy = 1/y + epsilon."
+    )
+    print(
+        "per_site: checked and not executed. No lattice is instantiated: the diagonal "
+        "entries are source slots without coordinates, and the disjoint blocks of the "
+        "record clause are the abstract index sets {1, 2} and {3, 4} with no adjacency, "
+        "no distance and no volume attached. Nothing in this runner is evaluated at a "
+        "position."
+    )
+    print(
+        "per_mode: checked and supplied rather than resolved, and the reason is worth "
+        "stating. Every source here is diagonal, so its entries are already its "
+        "eigenvalues and the per-element and per-mode granularities coincide by "
+        "construction; the spectrum is therefore an input to this runner, not an "
+        "output of it. No diagonalization, eigenvector, dispersion or spectral weight "
+        "is computed anywhere, because on this substrate none is needed."
+    )
+    print(
+        "per_block: resolved with amplitudes, and it is the axis the additivity clause "
+        "lives on. The direct sum is formed by concatenating the entry tuples, and "
+        "additivity is then certified separately for the log-determinant part, the "
+        f"trace part and the full readout, alongside determinant multiplicativity "
+        f"det(A (+) C) = {det_sum} = {det_a} x {det_c}. The dimension-labelled variant "
+        "sharpens the same axis by contrasting a one-entry block against a two-entry "
+        "block of equal determinant 4, which differ by epsilon in the block-dimension "
+        "term alone."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the missing global derivation is "
+        "the note's own boundary. No volume, sequence or limit is taken; the entire "
+        "argument runs on blocks of one and two entries. T1-d is declared by the parent "
+        "as a bridge premise that is not derivable from the minimal axioms, and this "
+        "runner's role is to supply countermodels against its being forced - it "
+        "exhibits what does not follow, and cannot exhibit the derivation that is "
+        "absent."
+    )
+    print(
+        "  scope: the second independence check in T2 cannot fail as written. It asks "
+        "whether c log(4) - log(4) - epsilon simplifies to zero while c and epsilon are "
+        "free symbols, so the inequality is automatic; the substantive separation is "
+        "carried entirely by the equal-determinant witness of T1, which is what the "
+        "check's own detail string points at."
+    )
+    print(
+        "  scope: the disjoint-record section is not a computation. It builds a "
+        "hand-written dictionary that maps both blocks to the same record label and "
+        "then reports set-disjointness and string inequality on it. That does "
+        "establish the intended point - the implication is not a truth of pure logic - "
+        "but it evaluates no source, no determinant and no readout."
+    )
+    print(
+        "  scope: 7 of the 20 checks are substring scans over the parent note, the "
+        "minimal-axiom memo and this note, certifying guardrail prose rather than any "
+        "quantity. The countermodel family is carried symbolically in a nonzero "
+        "epsilon and never instantiated numerically, which is a strength of the "
+        "argument rather than a gap. The runner is fully deterministic: no RNG stream "
+        "and no optimizer, exact SymPy throughout."
+    )
+
+
 def main() -> None:
     print("Observable-principle T1-d determinant-readout independence no-go")
     print("=" * 78)
@@ -226,6 +310,7 @@ def main() -> None:
     test_determinant_only_is_extra_quotient()
     test_disjoint_source_record_clause_independent()
     test_source_guardrails()
+    n5_execution_certificate()
     print("=" * 78)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 78)

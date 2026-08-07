@@ -1139,6 +1139,61 @@ check("13.4 Conditional expectation E projects onto circulants",
 
 
 # ======================================================================
+# Section 13b: N5 execution certificate (reporting only; adds no check)
+# ======================================================================
+
+print()
+print("=" * 70)
+print("=== Section 13b: N5 execution certificate ===")
+print("=" * 70)
+print()
+print(
+    "  per_element: resolved basis element by basis element — the closure "
+    "target is stated on each generator separately as phi_theta(I) = I, "
+    "phi_theta(C) = e^{i theta} C and phi_theta(C^2) = e^{-i theta} C^2, and "
+    "the failure is exhibited elementwise too, with phi_theta(C * C) compared "
+    "against phi_theta(C) * phi_theta(C) as full 3x3 matrices at the generic "
+    "theta = 0.41, and Ad_U(theta) applied entrywise to circulants to show it "
+    "moves nothing."
+)
+print(
+    "  per_site: genuinely exercised, as limit L7 — the per-site continuous "
+    "SU(2) on the one-site Qubit factor Cl(3) = M_2(C) is pushed onto hw=1 "
+    "and lands there as a single global phase, which acts trivially on "
+    "circulants by conjugation; the only C_3-equivariant per-site U(1) is "
+    "that diagonal one, so site-level continuity is resolved and shown not to "
+    "reach the three-site collective hw=1 sector."
+)
+print(
+    "  per_mode: resolved on the character grading and explicitly found empty "
+    "on the momentum grading — in the C-eigenbasis the generator is diagonal, "
+    "D = diag(1, omega, omega_bar), so the three C_3 characters are separated "
+    "one at a time and phi_theta is seen to be a grading-level linear action "
+    "rather than a conjugation; limit L5 by contrast reports that the hw=1 "
+    "triplet carries no internal momentum hierarchy at all, so there is no "
+    "Wilsonian shell-by-shell mode decomposition available to execute."
+)
+print(
+    "  per_block: resolved block by block on A^{C_3} = span_C{I, C, C^2} — "
+    "that fixed 3-dimensional invariant algebra splits into the trivial block "
+    "carrying a I and the b-doublet block carrying C and C^2 with characters "
+    "omega and omega_bar, phi_theta multiplies the doublet block by "
+    "e^{+i theta} and e^{-i theta} while leaving the trivial block alone, and "
+    "all nine candidate limits are scored against that same doublet block."
+)
+print(
+    "  lattice_wide: genuinely executed here, and it honestly fails — limit "
+    "L2 takes |Lambda| -> infinity and compares the per-fiber M_3(C) "
+    "structure across V = 8, 64 and 512, finding it unchanged, so volume "
+    "controls fiber multiplicity and not per-fiber algebra; limit L1 takes "
+    "the lattice spacing a -> 0 with the same outcome, the BZ-corner triplet "
+    "persisting at every finite a > 0 and the C_3 permutation staying "
+    "discrete. The lattice-wide limits are taken and produce no U(1)_b; that "
+    "negative result is the finding, not an unexercised class."
+)
+
+
+# ======================================================================
 # Section 14: Summary
 # ======================================================================
 

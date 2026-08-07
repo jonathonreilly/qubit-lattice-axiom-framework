@@ -98,6 +98,40 @@ def main() -> int:
         "prove or bound delta_lambda in the chosen continuum convention",
     )
 
+    section("N5 execution certificate: resolution granularity of this operator-absence no-go")
+    # Print-only; no check() call, so PASS/FAIL are untouched.
+    print(
+        "per_element: checked — the matching relation lambda_MSbar = Z_lambda * lambda_bare + "
+        "delta_lambda has exactly two additive terms and the no-go is resolved term by term in exact "
+        f"Fraction arithmetic: the multiplicative term vanishes identically at lambda_bare={lambda_bare} "
+        f"whatever Z_lambda={z_lambda} is, while the additive term is untouched by operator absence, so "
+        f"delta_lambda={delta_nonzero} already yields lambda_MSbar={lam_nonzero} != 0."
+    )
+    print(
+        "per_site: checked and not executed — no lattice is instantiated and no site is visited; "
+        "'lattice-bare' here names only which action a coefficient belongs to, and the runner never "
+        "constructs that action, so the absence of the quartic operator is recorded as a stipulation "
+        "about the packet rather than verified site by site."
+    )
+    print(
+        "per_mode: checked and not executed — no momentum mode, loop integral, or RG trajectory is "
+        "evaluated; delta_lambda is carried as an unevaluated exact rational and is never decomposed "
+        "into mode-by-mode contributions, which is precisely why this runner can show it is unconstrained "
+        "rather than compute what it equals."
+    )
+    print(
+        "per_block: checked and not executed — no blocking, decimation, or coarse-graining step connects "
+        "the lattice-bare scale to the continuum MSbar convention anywhere in this runner; that missing "
+        "step is the matching theorem the note names as the repair target, so its absence is the content "
+        "of the result rather than a gap in the execution."
+    )
+    print(
+        "lattice_wide: checked and not executed — no lattice-wide sum, thermodynamic limit, or continuum "
+        f"limit is taken; lambda_MSbar(M_Pl) is a value in a continuum convention that this runner only "
+        f"symbolizes through Z_lambda and delta_lambda, and the {PASS} executed checks are all exact "
+        "finite-rational statements about that two-term relation and its dependency packet."
+    )
+
     print("\n" + "=" * 88)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     print("=" * 88)

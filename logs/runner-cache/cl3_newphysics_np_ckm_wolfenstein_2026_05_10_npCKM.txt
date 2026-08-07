@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_newphysics_np_ckm_wolfenstein_2026_05_10_npCKM.py
-runner_sha256: ff81f270a1bb38a0dfc9ac4e730790a2f9ae6e0ef79df3c6e660649a72bdea2c
+runner_sha256: 8cb35b87e89dc998a7cf791f07d6f94216561bb7a432ac9b845f0e64eb3e63a7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.88
+elapsed_sec: 1.62
 status: ok
 ----- stdout -----
 
@@ -28,9 +28,9 @@ Test 2: V_CKM = U_up^H U_down is permutation x phase
 ========================================================================
 
 |V_CKM| (P-Heavy-A up-type x down-type fits):
-  +7.356946e-16  +1.000000e+00  +2.864961e-16
-  +8.587605e-18  +2.849621e-16  +1.000000e+00
-  +1.000000e+00  +8.352418e-16  +1.453727e-16
+  +3.570168e-16  +1.000000e+00  +1.514528e-15
+  +1.382958e-17  +1.628797e-15  +1.000000e+00
+  +1.000000e+00  +4.391281e-16  +3.120774e-17
 
   PASS  V is unitary (each row sums to 1)
   PASS  Row 0 has one |V_ij|=1 and two |V_ij|=0 (permutation pattern)
@@ -49,12 +49,12 @@ Test 4: Wolfenstein (lambda, A, rho_W, eta_W, J) forced to 0/trivial
 
   Predicted |V_us| = 1.000000e+00    (PDG ~ 0.22500)
   Predicted |V_cb| = 1.000000e+00    (PDG ~ 0.04210)
-  Predicted |V_ub| = 2.864961e-16    (PDG ~ 0.00370)
+  Predicted |V_ub| = 1.514528e-15    (PDG ~ 0.00370)
   Predicted |V_td| = 1.000000e+00    (PDG ~ 0.00855)
-  Predicted |V_ts| = 8.352418e-16    (PDG ~ 0.04138)
+  Predicted |V_ts| = 4.391281e-16    (PDG ~ 0.04138)
   Predicted Wolfenstein lambda = 1.000000e+00    (PDG ~ 0.22500)
-  Predicted Wolfenstein A      = 1.0              (PDG ~ 0.826)
-  Predicted Jarlskog J         = 4.073387e-32    (PDG ~ 3.08e-5)
+  Predicted Wolfenstein A      = 0.9999999999999996              (PDG ~ 0.826)
+  Predicted Jarlskog J         = 2.525081e-32    (PDG ~ 3.08e-5)
 
   PASS  Predicted |V_us| is 0 or 1 (not 0.22500)
   PASS  Predicted lambda is far from PDG 0.22500
@@ -96,6 +96,24 @@ Density-of-rationals control: cannot fit lambda from {0,1} discrete set
 ========================================================================
   PASS  PDG lambda is at distance >= 0.22500 from the discrete admissible set
   PASS  PDG |V_cb| is at distance >= 0.0421 from discrete admissible set
+
+========================================================================
+N5 execution certificate: what this runner resolves
+========================================================================
+per_element: resolved with amplitudes, and this is the strongest granularity here. Each circulant is assembled entry by entry as a I + b C + b_bar C^2, the full 3 x 3 magnitude table |V_ij| is printed entry by entry, every row is separately tested for the one-1-and-two-0 pattern, and the permutation test is a maximum over all 9 entries of ||V|^2 - round(|V|^2)|. Individual Wolfenstein entries are then read out one at a time against their PDG values, |V_us| = V[0, 1] and |V_cb| = V[1, 2] and |V_td| = V[2, 0] each coming back at exactly 1 while |V_ud|, |V_ub| and |V_ts| sit below 1e-14, and the Jarlskog invariant is formed from the four named entries V[0, 1], V[1, 2], V[0, 2]* and V[1, 1]*.
+
+per_site: checked and not executed. There is no spatial lattice in this runner. The only ring structure present is the C_3 cyclic shift, and that shift permutes generation labels on C_3[111], not neighbouring points: the three slots carry no coordinate, no distance and no volume, so no site-indexed field amplitude is defined here at any stage.
+
+per_mode: resolved, and the entire no-go is a mode statement. The three Z_3 Fourier vectors are the modes, each circulant is diagonalized by eigh into its three eigenvalues and eigenvectors, the closed-form spectrum lambda_k = a (1 + rho cos(delta + 2 pi k / 3)) for k = 0, 1, 2 is the mode structure being exploited, and the diagonalization checks measure exactly the residual mode mixing as the largest off-diagonal entry of F^H H F. The permutation freedom the runner enumerates is nothing but a relabelling of Fourier mode k onto generation g.
+
+per_block: checked, and only an inventory and a count can be resolved, for a structural reason worth stating: the C_3 irreps are one-dimensional, so each block has no interior. What is resolved is the count - three one-dimensional Fourier blocks per sector, 36 ordered (P_up, P_dn) pairs enumerated exhaustively, collapsing to exactly 6 distinct |V_CKM| patterns, which is |S_3|. No within-block amplitude is or could be evaluated, and no block is ever compared against another by magnitude.
+
+lattice_wide: checked and not executed as a global proof. There is no lattice; and the parameter-wide statements this runner makes are executed by finite sampling rather than quantification - a 20736-point (rho_up, delta_up, rho_dn, delta_dn) grid, 25 random parameter quadruples, 30 random circulant pairs and 6 named triples. The genuinely global step, that every pair of circulants on the same C_3 generator commutes, is an algebraic theorem stated in the prose of this file and checked only on sampled pairs; no symbolic or exhaustive proof is executed anywhere.
+
+  scope: the grid comment above Test 6 describes 30 x 30 x 30 x 30 = 810000 combinations, but the grids are built with linspace(..., 12), so the sweep actually visits 20736 points. The check's own detail string reports that number correctly; only the comment is stale.
+  scope: Test 2 carries dead code - a double loop whose body is a bare pass, and a nontrivial_offdiag value that is computed and never used - and V_ud_pred in Test 4 is computed but never reported. None of this affects any check.
+  scope: the generation assignment relies on eigh returning eigenvalues in ascending order to map (lightest, middle, heaviest) onto (gen1, gen2, gen3). That ordering is never tested for degeneracy, so at an accidentally degenerate spectrum the eigenvector assignment would be ambiguous; the sampled parameter ranges avoid this but the runner does not check it.
+  scope: Tests 3 and 7 draw from seeded streams (20260510 and 20260513). Two back-to-back executions of this runner are byte-identical, and no sampled quantity is quoted anywhere in the lines above.
 
 ========================================================================
 TOTAL: PASS=24, FAIL=0

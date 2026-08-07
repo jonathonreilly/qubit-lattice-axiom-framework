@@ -380,6 +380,20 @@ factor `1 + 4α_s(m_q)/3π + …` is evaluated at each quark's own mass and so i
 not common to the sector. A framework-native dial target must still name its
 scheme.
 
+**The mass-to-dial dictionary is non-retained (named condition).** The
+comparator values published above are not measured values of `r`. They are
+computed from PDG masses through the C₃-circulant (Brannen) parametrization
+*together with* the identification of its eigenvalues as one-leg amplitudes
+`√m` rather than as masses.
+[`QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md`](QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md)
+records that identification verbatim as one of the "non-retained inputs"
+(its `P1`). T1–T3 are unaffected: they are exact statements about a defined
+function of three masses and hold whatever that function is later identified
+with. What the condition bites is the *payoff* — "the dial half of the open
+gate's blocker is not scale-blocked" is a claim about the framework's dial, and
+the bridge from masses to that dial is `P1`, which is not retained. Read the
+payoff as conditional on it.
+
 Residual comparator systematics: the active-flavour convention attached to the
 quoted 2 GeV light-quark masses, and neglected higher-order decoupling. These
 act on only the subset of masses quoted at 2 GeV — `m_u` alone in the up

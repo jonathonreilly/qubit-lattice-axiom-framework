@@ -339,11 +339,71 @@ def run_note_check() -> None:
     )
 
 
+def n5_execution_certificate() -> None:
+    """Report the granularity this diagnostic actually resolves.
+
+    Reporting only: adds no check and does not touch PASS/FAIL.
+    """
+    print()
+    print("=" * 64)
+    print("Section C: N5 execution certificate")
+    print("=" * 64)
+
+    # Deterministically ordered so this block does not churn between runs:
+    # sympy's eigenvals() dict ordering is not stable.
+    lam = sorted(
+        {
+            sp.simplify(
+                sp.Rational(3, 2) + 2 * sp.Rational(7, 10) * sp.cos(2 * sp.pi * k / 3)
+            )
+            for k in range(3)
+        },
+        key=lambda e: float(e),
+    )
+    n_probes = len(PROBE_NOTES)
+
+    print(
+        "per_element: checked - the Schur argument is carried out on symbolic matrix "
+        "entries: H.H - H and the commutator H U - U H are each simplified to the 3x3 "
+        "zero matrix entry by entry, the three diagonal entries H[i, i] are "
+        "individually simplified and shown to equal a, and the counterfactual "
+        "diag(1, 2, 3) is read back as the distinct corner values [1, 2, 3]."
+    )
+    print(
+        "per_site: checked and not executed - nothing in this runner carries a site "
+        "index: Section A works entirely in the regular representation of Z/3Z on "
+        "C^3, which indexes generations rather than lattice points, and Section B is "
+        f"text auditing of the note and its {n_probes} cited probe files, so no Z^3 "
+        "position is ever constructed."
+    )
+    print(
+        "per_mode: checked - the mode content is resolved character by character, the "
+        "spectrum of U_C3 being verified as the three distinct cube roots "
+        "{1, omega, omega^2}; the operator H built on them collapses to only the two "
+        f"distinct eigenvalues {lam[0]} and {lam[1]} at the tested instance, because "
+        "b = 7/10 is real and so the omega and omega^2 modes stay degenerate."
+    )
+    print(
+        "per_block: checked and not executed - exactly one operator block is "
+        "instantiated, the Type I_3 factor on C^3 that the note names; no second "
+        "block, no direct sum and no block index appears anywhere, so no quantity is "
+        "compared from one block to another."
+    )
+    print(
+        "lattice_wide: checked and not executed - no lattice, volume or limit is "
+        "built; by the runner's own docstring it is a brief illustrative diagnostic "
+        "and NOT a load-bearing component of the foreclosure, whose proof is the "
+        "one-page representation theory recorded in Section 3 of the source note, so "
+        "no lattice-wide evaluation is offered or claimed here."
+    )
+
+
 def main() -> int:
     print("AC_phi_lambda preserved-C_3 structural foreclosure diagnostic")
     print(f"Source note: {NOTE.relative_to(ROOT)}")
     run_schur_check()
     run_note_check()
+    n5_execution_certificate()
     print()
     print("=" * 64)
     print(f"PASS = {PASS}, FAIL = {FAIL}")

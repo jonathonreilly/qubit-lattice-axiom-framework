@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_route_d_sharpened_no_go_narrow.py
-runner_sha256: 7b58c98cb461fb3157bf4a76a693f9e25072ebbf5125565a5cf8ebc915bd8745
+runner_sha256: 9d0c5e8c8271ebbaeb7b9ce69565a7b015fe3fd1d41604fb5f607cb92c730822
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.57
@@ -90,6 +90,18 @@ T10: Source-note boundary check
          clean
   [PASS] note cites Routes A/B/C/E PRs as markdown links
          all four PR links present
+
+==============================================================================
+N5 execution certificate: what this runner resolves
+==============================================================================
+per_element: resolved symbolically over named free entries. T5 writes two explicit 2 x 2 blocks, M1 = [[a, b], [-b, a]] and M2 = [[c, d], [-d, c]], assembles them into a 4 x 4 block-diagonal matrix and certifies det(M1 (+) M2) = det(M1) det(M2) as an exact symbolic zero in all four free entries, then exhibits the non-additive residual symbolically as well. T3 adds entry-level exactness on the source side, with r-pairs given as exact rationals (2, 3), (3/2, 5/7) and (11/13, 7/5).
+per_site: checked and not executed, and here the absence is total. This runner contains no site index, no lattice, no per-site dimension and no register count anywhere in the file - the subsystem split it reasons about is the abstract pair (J_A, J_B) with no underlying geometry attached. There is consequently nothing site-shaped even to count, let alone to evaluate.
+per_mode: checked and not executed. No spectral operation occurs in this runner at all: the two 2 x 2 blocks are consumed only through their determinants, nothing is diagonalized, and no eigenvalue, singular value or spectral weight is formed. The F_p family is a family of scalar functionals of a positive real and has no mode structure to resolve.
+per_block: resolved, and it is the granularity the entire no_go is stated at. The claim is block-additivity on the two-block split J_A (+) J_B, and the runner exercises exactly that split three independent ways: F_p is shown multiplicatively factorizing across the two blocks as an exact symbolic identity; additivity is shown to fail across a 6 x 3 = 18-point grid of (p, r_A, r_B); and the determinant of an explicit block-diagonal matrix is confirmed multiplicative with a nonzero additive residual, which is the concrete form of the obstruction.
+lattice_wide: checked and not executed, and the missing global object is this note's own obstruction. Nothing global is constructed - no volume, no sequence, no limit - and the note's own statement of what would close the gap is a retained primitive that supplies scalar block-additivity directly. That primitive is by definition absent, so no execution of this runner could exhibit it; what the runner can and does exhibit is the counterexample family that blocks the alternatives.
+  scope: the file's own docstring states that all numerical checks use exact Fraction arithmetic or SymPy symbolic verification with no floating-point comparator inputs, but the block-additivity grid in T3 does not meet that standard: it evaluates float(r_A * r_B) ** float(p) against a 1e-9 threshold in double precision, and the exact-Fraction value it prepares for the integer-p cases is computed and then never used. The other seven computed checks are exact as described.
+  scope: of the 22 checks, 14 are substring scans over the source Markdown and only 8 compute anything. And the 'fails for all tested p != 0' statement is quantified over a six-value rational p grid crossed with three r-pairs, not over all real p.
+  scope: fully deterministic - no RNG stream and no optimizer appears anywhere in this runner.
 
 === TOTAL: PASS=22, FAIL=0 ===
 

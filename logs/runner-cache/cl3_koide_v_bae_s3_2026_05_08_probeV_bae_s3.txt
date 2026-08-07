@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_v_bae_s3_2026_05_08_probeV_bae_s3.py
-runner_sha256: 6a6232d478e394e06a8230dd3c02771b6588ca39166a2c6504941c5d75bd0824
+runner_sha256: 0d979fb0e13dd584a258c4f679ff0c40d4b67d91b081e2a4c990391926c3489a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 ======================================================================
@@ -152,6 +152,13 @@ S_3 representation theory does NOT structurally force BAE.
 The structural rejection (rooted in C_3 trivial action on Herm_circ(3))
 extends from C_3 alone to the full S_3 = C_3 \rtimes Z_2.
 ======================================================================
+
+Section 13 -- N5 execution certificate (resolved granularity)
+per_element: checked - the two named inputs are handled as explicit 3 x 3 matrices, C the cyclic shift and P_23 the transposition, with unitarity, C^3 = I, P^2 = I and Im(P) = 0 all read off at 0.00e+00 error; the Herm_circ basis B_0 = I, B_1 = C + C^2, B_2 = i(C - C^2) is built entrywise and the reflection is resolved coordinate by coordinate as (a, u, v) -> (a, u, -v).
+per_site: checked and not executed - no Z^3 site is instantiated. The Z^3 x C_3 substrate is invoked only to motivate why S_3 is the natural symmetry to test, and of that product only the C_3 factor is ever represented; the three indices carried through every section are C_3 cycle positions on hw = 1, so there is no spatial neighbour or site sum.
+per_mode: checked - the C_3 Fourier modes are resolved as the eigenvalues of C, {1, omega, omega_bar}, and the decisive negative result is stated at that grain: the two non-trivial modes b and b_bar are not re-coupled by the reflection but split further into Re b, which lands in the S_3-trivial character, and Im b, which lands in the sign character.
+per_block: checked - the S_3 isotype blocks are counted by character inner products, <chi, chi_trivial> = 2, <chi, chi_sign> = 1 and <chi, chi_standard> = 0 summing to 3 = dim Herm_circ(3), and each block then carries its own Frobenius energy E_triv = 3 a^2 + 6 (Re b)^2 against E_sign = 6 (Im b)^2, equal at 3.000000, 4.500000 and 6.000000 while |b|^2/a^2 moves through 0.5, 1.0 and 1.5 - the block equality does not pin the amplitude ratio.
+lattice_wide: checked and not executed - nothing extensive is computed. Every quantity in this runner is a functional of the three real coordinates (a, Re b, Im b) of a single hw = 1 circulant, so there is no volume, no site count and no limit in which a lattice-wide sum could be taken; the note's obstruction is the trivial C_3 action on Herm_circ(3), which is already visible at fixed finite dimension.
 
 === TOTAL: PASS=63, FAIL=0 ===
 

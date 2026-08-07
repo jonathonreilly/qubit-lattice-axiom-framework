@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_primitive_p_heavyq_casimir_2026_05_10_pPheavyq_closure.py
-runner_sha256: ccf6bd7742292fc7b6cd4d43a2d68f13048fc588591cc7760b54d915ef5a688d
+runner_sha256: 93541acb06e67e680d165a743fa1324ee68ee1cdfaaa2357adb3277988067d68
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.36
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 
@@ -283,6 +283,16 @@ Strategic outcome for P-Heavy-A:
 
 Claim class: no_go / bounded obstruction. P-Heavy-A as a closed positive primitive is not closed;
       as a phenomenological 4-parameter fit it stands.
+
+========================================================================
+N5 execution certificate (reporting only; adds no check)
+========================================================================
+
+  per_element: resolved value by value across the generated Casimir basis — build_strict_casimir_basis expands each of the seven cited quantities C_F = 4/3, C_A = 3, T_F = 1/2, F_adj = 8/9, N_c = 3, 7/8 and sqrt(2) into v, 2v, v^2 and 1/v on its own, then forms every unordered pair under +, *, - and / and keeps whatever lands strictly inside (0.5, 5), after which each candidate is compared against individual basis entries by relative gap with the five nearest listed.
+  per_site: checked and not executed — the Z^3 substrate enters this file only as the cited reason that N_c = 3, and no site index, link variable, lattice array or spatial sum is constructed anywhere; nothing in the five exercises or in either density baseline depends on position.
+  per_mode: checked and not executed, and that absence is the finding — the whole obstruction concerns a multiplicity-counting primitive on the C_3-isotype decomposition of Herm_circ(3), yet no circulant H_q = a I + b C + b_bar C^2 is ever built, no isotype projector or eigenvector is formed, and numpy is imported here only to seed the density sampler; correspondingly 8 of the 18 recorded passes are check(..., True) statements rather than computations, including all three of D3 T2-T4 and both SO tests.
+  per_block: resolved sector by sector and then basis by basis — D1 up, D2 down and D3 lepton each get their own five-exercise block with their own tests and their own closest-basis listing, the shared obstruction block then places all three on the same amplitude-ratio surface, and the density analysis is run twice over two separately constructed registrations, the strict seven-generator basis and the broad fourteen-generator basis carrying powers -2, -1, 1 and 2.
+  lattice_wide: checked and not executed — no lattice, volume, continuum limit or thermodynamic limit exists here, and the widest statements are deliberately not exhaustive, since each density baseline is an estimate over 2000 uniform draws from the seeded stream rather than a measure statement about [1, 2], and the basis is a finitely generated set with no claim to cover all Casimir expressions; note also that the scale-mismatch sensitivity which this file's own docstring and the paired note both attribute to the runner is not implemented, since no RGE, running factor or M_Pl boundary appears in the code.
 
 ========================================================================
 Final tally

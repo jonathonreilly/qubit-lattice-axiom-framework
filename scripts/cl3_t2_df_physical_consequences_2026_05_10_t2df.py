@@ -373,6 +373,50 @@ def main() -> int:
            True)
 
     # =================================================================
+    section("N5 execution certificate (print-only; no check, no verdict)")
+    # =================================================================
+    print(
+        "  per_element: the three staggered gammas are assembled as explicit "
+        "Kronecker products of 2x2 Paulis, Gamma_1 = s1 x I x I, "
+        "Gamma_2 = s3 x s1 x I and Gamma_3 = s3 x s3 x s1, the generation "
+        "projector is filled by setting its diagonal entries at indices 1, 2 and 4 "
+        "to one, and every Clifford relation is settled as a full 8x8 array "
+        "comparison against I8, -I8 or the zero array through np.allclose."
+    )
+    print(
+        "  per_site: exactly one of the eight corners of the 2^3 taste cube is "
+        "probed on its own - D_F is applied to |001> and the largest component of "
+        "the image inside the hamming-weight-one triplet comes back exactly "
+        "0.00e+00, so that corner is shown to leave the triplet entirely; "
+        "D_F|010> and D_F|100> are formed and then discarded, so two of the three "
+        "weight-one corners are never actually inspected."
+    )
+    print(
+        "  per_mode: all eight eigenvalues are computed and printed individually, "
+        "and the KO-dim-6 antiunitary J = omega K is applied to each of the eight "
+        "eigenvectors in turn, checking mode by mode that D_F J psi equals "
+        "lambda J psi at atol 1e-9 and that ||J psi|| stays 1, so the pairing "
+        "statement is established eigenvector by eigenvector rather than by a "
+        "spectral count."
+    )
+    print(
+        "  per_block: the two spectral blocks are the fourfold-degenerate plus and "
+        "minus sqrt(3) eigenspaces, whose dimension 4 is counted directly from the "
+        "eigenvalue list, and the chirality grading s3 x s3 x s3 anticommutes with "
+        "D_F so those blocks are exchanged rather than preserved, while the "
+        "three-dimensional generation block fails to commute with D_F against the "
+        "1e-9 threshold."
+    )
+    print(
+        "  lattice_wide: resolved as a finite-N statement about one 2^3 staggered "
+        "taste cube and nothing larger - the identity D_F^2 = 3 I holds across all "
+        "eight dimensions at once, and the whole-spectrum consequence "
+        "Koide Q = 1/3, exact because the positive triple is fully degenerate, is "
+        "set against the PDG value near 2/3; no lattice of cubes is assembled, no "
+        "volume is varied and no thermodynamic limit is taken."
+    )
+
+    # =================================================================
     section("Final accounting")
     # =================================================================
     print(f"  PASS: {PASS}")

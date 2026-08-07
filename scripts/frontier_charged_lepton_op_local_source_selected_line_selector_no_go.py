@@ -463,6 +463,49 @@ def main() -> int:
         in note_text,
     )
 
+    section("G. N5 execution certificate")
+
+    print(
+        f"per_element: the source matrices are compared entry by entry in exact "
+        f"rationals — is_scalar_identity inspects all nine positions of "
+        f"J = {scalar_source[0][0]} I before granting C3-fixity, the nonuniform "
+        f"candidate differs from its conjugate C J C^T at specific entries, and "
+        f"the isotype projectors satisfy P_+ + P_perp = I_3 position by position "
+        f"with no floating-point step anywhere in this part."
+    )
+    print(
+        f"per_site: this is where the granted premise bites — a strict-onsite "
+        f"scalar source is the diagonal J = diag(j_1, j_2, j_3) carrying one "
+        f"independent value per site of the generation orbit, C3-fixity forces "
+        f"j_1 = j_2 = j_3 = {scalar_source[0][0]}, and the runner exhibits the "
+        f"contrast case diag({nonuniform_source[0][0]}, {nonuniform_source[1][1]}, "
+        f"{nonuniform_source[2][2]}) failing that condition."
+    )
+    print(
+        f"per_mode: the two C3 isotype channels are projected separately and that "
+        f"is what erases the Q-side coordinate — the trivial channel returns "
+        f"K_+ = {k_plus} and the complementary channel returns K_perp = {k_perp}, "
+        f"so the reduced trace-zero coordinate is z = {z_reduced} and the "
+        f"criterion carrier gives Q = 2/3, while a nonzero z on that same carrier "
+        f"would move Q away from 2/3."
+    )
+    print(
+        f"per_block: the three cyclic copies of the selected-line orbit are each "
+        f"evaluated in full — every rotation returns Q = 2/3, the unordered "
+        f"heavy/middle/light profile is identical across copies at "
+        f"{tuple(round(v, 8) for v in sorted_ratios[0])}, and the heaviest slot "
+        f"lands at {heaviest_slots} across the three copies, so no copy is "
+        f"distinguished by anything the runner can compute."
+    )
+    print(
+        f"lattice_wide: checked and not executed as a lattice statement — no "
+        f"volume, no extended lattice and no thermodynamic limit appears here; "
+        f"the widest object exhausted is the three-element generation orbit "
+        f"itself, where enumerating all label subsets leaves "
+        f"{nonempty_invariant_subsets} as the only nonempty C3-invariant one, a "
+        f"whole-orbit fact that is precisely why no single label is selectable."
+    )
+
     print()
     print("=" * 88)
     print("Summary")

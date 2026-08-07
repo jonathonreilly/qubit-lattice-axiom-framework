@@ -332,10 +332,11 @@ def part6_n5_execution_certificate() -> None:
         "guard rather than being summarized into a single count."
     )
     print(
-        "  per_site: checked and not executed -- this runner carries no lattice site "
-        "index. H(m, delta, q_+) is a single 3x3 source Hermitian at a point of a "
-        "three-dial parameter space and its indices are lepton generation labels, so "
-        "there is no site-resolved quantity for the selector no-go to sweep."
+        "  per_site: checked and not executed -- nothing in the selector no-go is indexed "
+        "by position. H(m, delta, q_+) is a single 3x3 source Hermitian evaluated at one "
+        "point of a three-dial parameter space, and its indices are lepton generation "
+        "labels, so the family being ruled out has no site-resolved degree of freedom "
+        "that a sweep could expose."
     )
     print(
         "  per_mode: checked -- the three PMNS mixing observables are resolved "

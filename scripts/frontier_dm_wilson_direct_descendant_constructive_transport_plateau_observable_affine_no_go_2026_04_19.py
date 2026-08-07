@@ -307,8 +307,8 @@ def main() -> int:
         "invariants also disagree on the winner."
     )
     print(
-        "  lattice_wide: checked and not executed — no lattice, extent or asymptotic "
-        "limit appears. The evidence is four explicit plateau witnesses and exact linear "
+        "  lattice_wide: checked and not executed — this runner never leaves a fixed "
+        "finite witness set. The evidence is four explicit plateau witnesses and exact linear "
         "algebra on their images, including an affine rank of 3 at tolerance 1e-10; "
         "nothing is scaled up or taken to a limit, and the no-go is already complete on "
         "that finite witness set."

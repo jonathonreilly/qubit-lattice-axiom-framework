@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_scalar_datum_transplant_obstruction.py
-runner_sha256: 2e47afe33b202679302bc48eeda2c91131f42cec2347dbeaf830c3cc2bf1c893
+runner_sha256: b1fe8f1fe3876ab6345f05e30617224ea328f2a8b142902728e929e175acd1fd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -34,7 +34,7 @@ PART 1: CURRENT EXACT SCALAR ATLAS DATUMS ARE FIXED DIMENSIONLESS NUMBERS
 ========================================================================================
 PART 2: TRANSPLANTED SCALAR DATUMS STILL LEAVE THE GLOBAL SCALE FACTORIZED
 ========================================================================================
-  [PASS] Every tested scalar-datum transplant keeps the full bridge block on one normalized ray  (max normalized difference=2.94e-16)
+  [PASS] Every tested scalar-datum transplant keeps the full bridge block on one normalized ray  (max normalized difference=4.25e-16)
 
   So a fixed scalar datum can change the shape constants inside the
   lifted block, but it still leaves the common staircase scale as one
@@ -44,12 +44,25 @@ PART 2: TRANSPLANTED SCALAR DATUMS STILL LEAVE THE GLOBAL SCALE FACTORIZED
 PART 3: SCHUR AND SPECTRAL BRIDGE DATA STILL CARRY THE SAME SCALE WEIGHT
 ========================================================================================
   [PASS] Schur complements remain degree-one in the same staircase scale  (normalized diff=1.53e-16, spread in ||S||/scale=4.44e-16)
-  [PASS] Eigenvalue gaps remain degree-one after scalar-datum transplant  (spread=3.18e-15)
-  [PASS] Singular values remain degree-one after scalar-datum transplant  (spread=8.01e-16)
+  [PASS] Eigenvalue gaps remain degree-one after scalar-datum transplant  (spread=6.77e-15)
+  [PASS] Singular values remain degree-one after scalar-datum transplant  (spread=1.37e-15)
 
   So the existing exact scalar atlas datums do not create the missing
   non-homogeneous scale law. They only change fixed coefficients inside
   the same homogeneous bridge class.
+
+========================================================================================
+N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES
+========================================================================================
+per_element: resolved with amplitudes, and the comparisons are entrywise. The selected local kernel is written as sigma_z + sigma_x, i.e. the explicit [[1, 1], [1, -1]] with determinant -2; the generation texture carries 2.0 on the singlet, 0.25 on the doublet diagonal and 1.0 off it with exact zeros elsewhere; the bridge tensor carries 1.0, 1.0 and 0.5 with exact zeros; and hstack/vstack assemble those into a 5 x 5 block whose normalized differences are Frobenius norms over all 25 entries. The Schur complement is then formed by explicit matrix products, not by any solver shortcut.
+per_site: checked and not executed. No lattice is built: the two-valued index is the selected local Majorana slot fixed by the self-dual lane and the three-valued index is a generation label under the Z3 singlet/doublet split. Neither index has a coordinate, a neighbour or a volume, so no site-indexed quantity exists in this runner to evaluate.
+per_mode: resolved, and this runner is where the spectral granularity is genuinely exercised. Every lifted block is fully diagonalized: all 5 eigenvalues are taken and sorted, at unit scale [-1.787527, -0.777208, 0.700369, 1.865823, 2.885295], the 4 consecutive gaps are formed from them, and independently all 5 singular values are computed, at unit scale [0.700369, 0.777208, 1.787527, 1.865823, 2.885295]. Both the gap vector and the singular-value vector are divided by the scale and compared mode against mode across the three scales.
+per_block: resolved with amplitudes, and it is the two-registration structure the note is about. The lifted object is assembled as a 2 x 2 local registration, a 3 x 3 generation registration and a 2 x 3 bridge coupling them, and the Schur step eliminates the local registration outright to leave a 3 x 3 effective generation block whose norm and normalized shape are both read out. The transplant is applied block by block: the four patterns place each datum into the local slot, the bridge slot, the generation slot, or all three, giving 16 block configurations.
+lattice_wide: checked and not executed, and the missing global datum is precisely this note's obstruction. There is no lattice; and on the scale axis, which is where the claim lives, no limit is approached at all. The note's own bottom line is that the absent object is a genuinely new non-homogeneous bridge or absolute-scale datum beyond the current scalar class, and nothing that can be executed on a fixed finite block can supply such a datum.
+  scope: the homogeneity results of Parts 2 and 3 are guaranteed by the constructor rather than discovered. lifted_bridge_block multiplies all three of its sub-blocks by the same scale, so each block is exactly scale times a scale-independent matrix and normalization divides that factor out identically; the degree-one statements about the Schur complement, the eigenvalue gaps and the singular values follow from the same factorization. What is verified is that the code respects an algebraic identity written into it, not that homogeneity was found.
+  scope: Part 1 resolves an inventory only. Its two checks confirm that four closed-form constants - (7/8)^(1/4), (3/4)^(1/8), 8/7 and 2/sqrt(3) - are positive and differ from 1 by more than 1e-6; no field amplitude and no block quantity is evaluated there at all.
+  scope: the three scales are consecutive powers of a single constant, ALPHA_LM^7 through ALPHA_LM^9 with ALPHA_LM = 0.09067, so successive scales differ only by that one fixed ratio and no independent scale direction is probed; and each datum is transplanted purely multiplicatively into a slot, so no additive or non-homogeneous transplant is tested.
+  scope: fully deterministic - no RNG stream and no optimizer is used anywhere in this runner.
 
 ========================================================================================
 RESULT

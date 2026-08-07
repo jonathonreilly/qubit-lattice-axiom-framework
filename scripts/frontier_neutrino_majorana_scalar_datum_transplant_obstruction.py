@@ -193,6 +193,107 @@ def test_schur_and_spectral_data_stay_homogeneous() -> None:
     print("  the same homogeneous bridge class.")
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: no check() call is added and no PASS/FAIL count moves.
+    """
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    datums = exact_scalar_datums()
+    unit_block = lifted_bridge_block(
+        1.0,
+        datums["selector_C4"],
+        datums["endpoint_Cinf4D"],
+        datums["Ainf_over_A2"],
+    )
+    local_dim = local_selected_kernel().shape[0]
+    gen_dim = generation_texture().shape[0]
+    total_dim = unit_block.shape[0]
+    unit_eigs = [round(float(v), 6) for v in np.sort(np.linalg.eigvals(unit_block).real)]
+    unit_svals = [
+        round(float(v), 6) for v in np.sort(np.linalg.svd(unit_block, compute_uv=False))
+    ]
+    combos = len(datums) * 4
+
+    print(
+        "per_element: resolved with amplitudes, and the comparisons are entrywise. "
+        "The selected local kernel is written as sigma_z + sigma_x, i.e. the explicit "
+        "[[1, 1], [1, -1]] with determinant -2; the generation texture carries 2.0 on "
+        "the singlet, 0.25 on the doublet diagonal and 1.0 off it with exact zeros "
+        "elsewhere; the bridge tensor carries 1.0, 1.0 and 0.5 with exact zeros; and "
+        f"hstack/vstack assemble those into a {total_dim} x {total_dim} block whose "
+        f"normalized differences are Frobenius norms over all {total_dim * total_dim} "
+        "entries. The Schur complement is then formed by explicit matrix products, "
+        "not by any solver shortcut."
+    )
+    print(
+        "per_site: checked and not executed. No lattice is built: the two-valued index "
+        "is the selected local Majorana slot fixed by the self-dual lane and the "
+        "three-valued index is a generation label under the Z3 singlet/doublet split. "
+        "Neither index has a coordinate, a neighbour or a volume, so no site-indexed "
+        "quantity exists in this runner to evaluate."
+    )
+    print(
+        "per_mode: resolved, and this runner is where the spectral granularity is "
+        f"genuinely exercised. Every lifted block is fully diagonalized: all "
+        f"{total_dim} eigenvalues are taken and sorted, at unit scale {unit_eigs}, the "
+        f"{total_dim - 1} consecutive gaps are formed from them, and independently all "
+        f"{total_dim} singular values are computed, at unit scale {unit_svals}. Both "
+        "the gap vector and the singular-value vector are divided by the scale and "
+        "compared mode against mode across the three scales."
+    )
+    print(
+        "per_block: resolved with amplitudes, and it is the two-registration structure "
+        f"the note is about. The lifted object is assembled as a {local_dim} x "
+        f"{local_dim} local registration, a {gen_dim} x {gen_dim} generation "
+        f"registration and a {local_dim} x {gen_dim} bridge coupling them, and the "
+        "Schur step eliminates the local registration outright to leave a "
+        f"{gen_dim} x {gen_dim} effective generation block whose norm and normalized "
+        f"shape are both read out. The transplant is applied block by block: the "
+        f"four patterns place each datum into the local slot, the bridge slot, the "
+        f"generation slot, or all three, giving {combos} block configurations."
+    )
+    print(
+        "lattice_wide: checked and not executed, and the missing global datum is "
+        "precisely this note's obstruction. There is no lattice; and on the scale "
+        "axis, which is where the claim lives, no limit is approached at all. The "
+        "note's own bottom line is that the absent object is a genuinely new "
+        "non-homogeneous bridge or absolute-scale datum beyond the current scalar "
+        "class, and nothing that can be executed on a fixed finite block can supply "
+        "such a datum."
+    )
+    print(
+        "  scope: the homogeneity results of Parts 2 and 3 are guaranteed by the "
+        "constructor rather than discovered. lifted_bridge_block multiplies all three "
+        "of its sub-blocks by the same scale, so each block is exactly scale times a "
+        "scale-independent matrix and normalization divides that factor out "
+        "identically; the degree-one statements about the Schur complement, the "
+        "eigenvalue gaps and the singular values follow from the same factorization. "
+        "What is verified is that the code respects an algebraic identity written "
+        "into it, not that homogeneity was found."
+    )
+    print(
+        "  scope: Part 1 resolves an inventory only. Its two checks confirm that four "
+        "closed-form constants - (7/8)^(1/4), (3/4)^(1/8), 8/7 and 2/sqrt(3) - are "
+        "positive and differ from 1 by more than 1e-6; no field amplitude and no "
+        "block quantity is evaluated there at all."
+    )
+    print(
+        "  scope: the three scales are consecutive powers of a single constant, "
+        f"ALPHA_LM^7 through ALPHA_LM^9 with ALPHA_LM = {ALPHA_LM}, so successive "
+        "scales differ only by that one fixed ratio and no independent scale "
+        "direction is probed; and each datum is transplanted purely multiplicatively "
+        "into a slot, so no additive or non-homogeneous transplant is tested."
+    )
+    print(
+        "  scope: fully deterministic - no RNG stream and no optimizer is used "
+        "anywhere in this runner."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("NEUTRINO MAJORANA: SCALAR-DATUM TRANSPLANT OBSTRUCTION")
@@ -213,6 +314,7 @@ def main() -> int:
     test_scalar_datums_are_fixed_positive_numbers()
     test_transplanted_scalar_datums_preserve_global_scale_factorization()
     test_schur_and_spectral_data_stay_homogeneous()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

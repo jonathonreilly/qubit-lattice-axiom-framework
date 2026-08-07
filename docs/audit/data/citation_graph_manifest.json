@@ -1,6 +1,6 @@
 {
- "edge_count": 15441,
- "node_count": 4645,
+ "edge_count": 15447,
+ "node_count": 4646,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -8487,8 +8487,8 @@
    "out_degree": 24
   },
   "lanes.open_science.06_charged_lepton_mass_retention_open_lane_2026-04-26": {
-   "deps_hash": "0a2e32dfc1c7",
-   "out_degree": 8
+   "deps_hash": "ceda63d88299",
+   "out_degree": 9
   },
   "lanes.open_science.07_thermalization_kinetic_theory_open_lane_2026-06-12": {
    "deps_hash": "6c9560098932",
@@ -13093,6 +13093,10 @@
   "second_grown_family_sign_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "sector_dial_common_scale_comparator_correction_meta_note_2026-08-07": {
+   "deps_hash": "579a19337eae",
+   "out_degree": 5
   },
   "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7299ef75081c",

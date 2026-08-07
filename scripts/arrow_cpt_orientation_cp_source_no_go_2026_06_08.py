@@ -191,6 +191,44 @@ def main() -> int:
           readout_even and j_matches,
           f"log|det| even: {readout_even}; J formula matches: {j_matches}")
 
+    # ---- N5 execution certificate (reporting only; adds no check) ----
+    print("\nN5 execution certificate: what these six routes resolve")
+    print(
+        "per_element: checked - the CP-odd content is read off named individual "
+        "entries: J = Im(M01 M12 M20) is assembled from exactly three matrix elements "
+        "of the circulant and matched to |b|^3 sin(3 delta) at four delta values, and "
+        "the write generator is certified real symmetric by testing every entry of H "
+        "for a vanishing imaginary part and for equality with its transpose."
+    )
+    print(
+        "per_site: checked - S1 and S2 run on a two-site register built from the "
+        "Qubit one-site algebra M_2(C), with the generator acting as "
+        "|1><1| on the system site tensored with X on the fragment site, and the "
+        "record proxy read at the fragment site alone, moving 0.000 -> 0.500 forward "
+        "and 0.500 -> 0.000 reversed; there is no third site and no lattice extension."
+    )
+    print(
+        "per_mode: checked and not executed - the C3 circulant is handled only through "
+        "its determinant a^3 - 3a|b|^2 + 2|b|^3 cos(3 delta) and through J, both of "
+        "which combine all three C3 modes at once, and the 6x6 staggered toy is used "
+        "only via its determinant; no individual eigenvalue is ever formed, so the "
+        "phase protection is exhibited globally rather than mode by mode."
+    )
+    print(
+        "per_block: checked and not executed - the four objects here, the 4x4 "
+        "two-site operator, the 3x3 C3 circulant, the 6x6 staggered toy and the 2x2 "
+        "SU(2) holonomy, are each handled whole and never assembled into a common "
+        "direct sum; no block index, no block-to-block comparison and no rank "
+        "bookkeeping across blocks appears in any of the six routes."
+    )
+    print(
+        "lattice_wide: checked and not executed - no lattice is constructed and no "
+        "volume or limit is taken; lattice orientation enters S5 only as the sign set "
+        "det(R) in {-1, +1} over the eight sign-diagonal reflections, and the gauge "
+        "route tests a single Wilson loop at one base point rather than a lattice of "
+        "plaquettes, which is precisely why the result is scoped to the tested routes."
+    )
+
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     print(
         "VERDICT: the tested routes do not source CP-odd action coefficients. The arrow is a Past-\n"

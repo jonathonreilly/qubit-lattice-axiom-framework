@@ -1,9 +1,11 @@
 # The Quark-Lane Dial Comparators Are Mixed-Convention; Corrected Common-Scale Values (Comparator Correction with Exact Support)
 
 **Date:** 2026-08-07
-**Type:** bounded_theorem
-**Claim type:** bounded_theorem
-**Status:** proposed_retained
+**Type:** meta
+**Claim type:** meta (comparator correction and reference-scale convention;
+no premise-conditional proposition is asserted — see "What is and is not
+claimed" below)
+**Status:** support
 **Status authority:** independent audit lane only. This source note does not
 set, predict, or apply an audit outcome, and edits no registry.
 **Primary runner:**
@@ -24,8 +26,22 @@ Re-quoting a mass triple with unequal per-generation factors is precisely the
 operation the dial is *not* invariant under. So those numbers do not measure
 the dial, and this note supplies the values that do.
 
-This is the repo's only source note carrying them; the two audit-data files
-that also contain them are pipeline-generated and belong to the audit lane.
+It is the only source note carrying the six-decimal values, but not the only
+consumer. Five landed notes quote the three-decimal roundings `r_up ≈ 0.773`
+(or `0.774`) and `r_down ≈ 0.597` as sector comparators:
+`FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05` §2.1, the three 2026-06-15
+narrow no-go notes on flavor-gauge holonomy, flavor-gauge representation, and
+max-record-entropy, and
+`KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11`.
+No claim of theirs is overturned: each uses only the ordering
+`r_lep < r_down < r_up` and the fact that the three differ, and the correction
+preserves both while widening the gaps. One *displayed* number does move — the
+kappa note's `kappa_down_report = 1/r_down` goes from `1.675` to `1.610`, so
+its near-hit on the display-grid value `5/3` does not survive. That note
+already marks the figure as display-only arithmetic with no confidence-level
+meaning, so nothing is retracted; the near-hit simply should not be carried
+forward. (The two audit-data files that also carry the old values are
+pipeline-generated and belong to the audit lane.)
 
 ## The correction
 
@@ -41,9 +57,6 @@ The runner reproduces the open gate's two displayed values to six decimals from
 that note's own quoted mass list, which confirms the convention being compared
 is the one it actually used. The `+0.0573` shift in `r_up` splits as `−0.0060`
 from pole→MSbar and `+0.0633` from the scale correction.
-
-For reference, the charged-lepton dial under the same treatment is
-`r = 0.499990767 ± 0.0000102`, i.e. `0.9σ` from exactly `1/2`.
 
 The corrected values sit *further apart* than the ones they replace. Anyone
 using the sector spread should note that this correction widens it rather than
@@ -71,7 +84,7 @@ fixed scheme, a sector's dial does not depend on which common reference scale
 is chosen.** The runner exhibits this across six common scales spanning three
 decades, agreeing to `4e-12`.
 
-**Sharpness (exact, the one thing claimed here).** The equal-factor hypothesis
+**Sharpness (exact, the one step here that is not prior art).** The equal-factor hypothesis
 is doing real work, not sitting there as a removable technicality. On the
 triple `x = (1, 1, 0)`, scaling the two nonzero coordinates by `μ₁, μ₂` gives
 
@@ -85,12 +98,13 @@ before/after fractions.
 
 This is a **sharpness witness, not a converse**, and the distinction is
 load-bearing. The literal converse — dial unchanged ⟹ all `λ_k` equal — is
-**false**: the dial depends only on the mass *multiset*, so `x = (4, 2, 1)`
-with `λ = (1/4, 1, 4)` permutes the multiset and leaves `Q` and `r` exactly
-fixed. The runner exhibits that counterexample so the stronger reading cannot
-return by accident.
+**false**: the dial depends only on the *multiset*, so the coordinate triple
+`x = (4, 2, 1)` with unequal factors `(1/4, 1, 4)` on `x` — equivalently
+`λ = (1/16, 1, 16)` on the masses — permutes the multiset onto itself and
+leaves `Q` and `r` exactly fixed. The runner exhibits that counterexample so
+the stronger reading cannot return by accident.
 
-## Canonical prescription (load-bearing)
+## Canonical prescription (load-bearing for the values above)
 
 The common scale must be one at which all three masses are legitimate
 active-flavour MSbar masses. A quark below its **own** threshold is decoupled,
@@ -132,7 +146,8 @@ The open gate's blocker is stated as a conjunction: a quark-mass lane needs a
 sector-specific mass scheme/scale **and** a dial theorem. This separates the
 two. Fixing a scheme leaves no residual freedom in the reference scale, so the
 scale half of that conjunction is not an obstruction to defining the dial —
-only to fixing `v₀`. The scheme half stands, unreduced.
+only to fixing `v₀`. The scheme half stands, unreduced. The separation follows
+from the prior art cited below, not from anything first established here.
 
 That is a narrowing, and a corrected set of comparators to aim at. It **does
 not close** the open gate and supplies no part of a closing theorem.
@@ -143,25 +158,52 @@ not close** the open gate and supplies no part of a closing theorem.
   `CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11`,
   along with `Q = 1/3 + 2r/3` and `r = 1/2 ⟺ Q = 2/3`.
 - Flavour-universality of QCD mass running is in
-  `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22` eq. (5.6), which
-  also carries the principle that a mixed quantity has an extra scale
-  prescription baked in.
+  `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22` eq. (5.6).
+- **The mixed-scale/common-scale distinction itself is prior art in the CKM
+  lane**, and this note claims no part of it. `CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE`
+  already contrasts a "threshold-local self-scale comparator" against the
+  common-scale comparison and sizes the difference;
+  `QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28` already asks
+  whether a separate scale-selection theorem is load-bearing for exactly that
+  choice; and
+  `CKM_DOWN_TYPE_SCALE_CONVENTION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10`
+  already records that "a directly mixed surface must carry its scale
+  prescription inside the mass/operator map." All this note adds is the
+  bookkeeping observation that the quark open gate's displayed dial values are
+  such a mixed surface.
 - The C₃ circulant/character algebra and the Koide-cone equivalence are prior
   art cited by the open gate itself.
 - That a single universal `r` cannot fit all three sectors is already recorded
-  qualitatively in `FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05` §2.1.
-  This note does not restate or quantify it; it only supplies corrected inputs.
+  — and **quantified**, with a 15/15 exact runner — in
+  [`FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05.md`](FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05.md)
+  §2.1, which tabulates the four sector moduli and their spread. This note
+  neither restates nor re-quantifies it; it only supplies corrected inputs.
 
-Claimed here: the sharpness witness and its counterexample, the identification
-that the open gate's convention is mixed-scale and mixed-scheme, the canonical
-`μ ≥ m_t` prescription, and the corrected comparator values.
+## What is and is not claimed
+
+Claimed here, and nothing else: the exact sharpness witness with its multiset
+counterexample, the `μ ≥ m_t` common-scale prescription, and the corrected
+comparator values.
+
+Of those three, the first is a one-line algebraic identity qualifying a
+prior-art hypothesis, the second is a **convention** — a stipulation about
+which reference scale to quote at, not a derived proposition — and the third
+is floating-point comparator data that the runner tallies separately and that
+supplies no premise. There is no premise-conditional algebraic proposition
+here that this note establishes and that is not already prior art. That is why
+the claim type is `meta` and not `bounded_theorem`: `retained_bounded` grade is
+for algebraic claims with explicit named premises, and after the deferrals
+above there is no such claim left to carry it.
 
 ## Dependency standing (disclosure)
 
-The open-gate dependency is `unaudited`/`open_gate`; the CKM dependency is
-`audited_conditional`. Both are retained-grade blockers, so whatever
-chain-derived grade this note receives will be limited by them. That is the
-audit lane's determination, not this note's.
+None of the four load-bearing dependencies is currently retained-grade: the
+quark open gate is `unaudited`/`open_gate`, the CKM scale-convention note is
+`audited_conditional`, the C₃ circulant boundary note is `unaudited`, and the
+charged-lepton DFT coordinate note is `audit_in_progress`. A retained-grade
+claim could not chain through any of them. This note does not seek a
+retained grade — it is typed `meta` — so it does not depend on that changing.
+Grading is the audit lane's determination, not this note's.
 
 ## Non-claims
 

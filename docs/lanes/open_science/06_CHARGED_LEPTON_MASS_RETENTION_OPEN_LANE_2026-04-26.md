@@ -32,6 +32,11 @@ charged-lepton mass.
 > Phase-1 recommendation are therefore **stale as written** and are annotated
 > in place below rather than deleted, so the lane's history stays readable.
 >
+> Standing of that no-go: it is itself `proposed_no_go` and **not yet
+> audited**, so "closed" here means "closed as a routing recommendation, on
+> the strength of an unaudited no-go" — not a ratified negative result. If the
+> audit lane narrows or rejects it, this annotation should be revisited.
+>
 > The dependent chains 6C, 6D and 6E are written as "automatic once 6B lands"
 > and are correspondingly blocked **as routed**, not refuted — the no-go
 > explicitly does not bar closures via parallel-lane progress or new

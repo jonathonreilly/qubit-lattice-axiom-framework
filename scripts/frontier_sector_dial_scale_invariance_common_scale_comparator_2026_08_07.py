@@ -2,7 +2,7 @@
 """Exact checks: the C_3 sector dial is invariant under a common mass rescaling.
 
 Companion runner for
-docs/SECTOR_DIAL_SCALE_INVARIANCE_AND_COMMON_SCALE_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-08-07.md
+docs/SECTOR_DIAL_COMMON_SCALE_COMPARATOR_CORRECTION_META_NOTE_2026-08-07.md
 
 Load-bearing content is Parts A-C and is exact: `fractions.Fraction` and
 integers only, no floating point, no randomness.
@@ -24,7 +24,7 @@ from fractions import Fraction
 from pathlib import Path
 
 AUDIT_INPUT_PATHS = (
-    "docs/SECTOR_DIAL_SCALE_INVARIANCE_AND_COMMON_SCALE_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-08-07.md",
+    "docs/SECTOR_DIAL_COMMON_SCALE_COMPARATOR_CORRECTION_META_NOTE_2026-08-07.md",
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -481,14 +481,11 @@ sQu, sru = math.sqrt(var['Qu']), math.sqrt(var['ru'])
 sQd, srd = math.sqrt(var['Qd']), math.sqrt(var['rd'])
 print(f"    Q_up   = {base[0][0]:.6f} +- {sQu:.6f}      r_up   = {base[0][1]:.6f} +- {sru:.6f}")
 print(f"    Q_down = {base[1][0]:.6f} +- {sQd:.6f}      r_down = {base[1][1]:.6f} +- {srd:.6f}")
-print(f"    charged leptons (no QCD running): Q = {_dial_f([0.510998950e-3, 105.6583755e-3, 1.77686])[0]:.9f}")
-pull_u = abs(base[0][1] - 0.5) / sru
-pull_d = abs(base[1][1] - 0.5) / srd
-print(f"    distance of r_up   from the leptonic 1/2: {pull_u:.0f} sigma")
-print(f"    distance of r_down from the leptonic 1/2: {pull_d:.0f} sigma")
-check("comparator: the three sector dials are not a common value",
-      pull_u > 20 and pull_d > 5,
-      "displayed as a comparator only; this runner asserts no no-go")
+# NOTE: this block deliberately does NOT compare the sector dials to each other
+# or to the leptonic 1/2.  That the sectors carry distinct r is prior art, already
+# quantified in docs/FOURTH_AXIOM_RG_SCALE_DYNAMICS_SCOPING_2026-06-05.md section
+# 2.1, and the companion note explicitly defers it rather than restating it.  A
+# check here would assert something the note does not claim.
 
 print()
 print("  D4. SCHEME dependence: the invariance covers the reference SCALE only.")
@@ -601,9 +598,11 @@ if NOTE.exists():
         ("does not close", "note disclaims closing the open gate"),
         ("comparator", "note marks its numerics as comparators"),
         ("prior art", "note defers homogeneity and flavour-universality to prior art"),
-        ("proposed_retained", "note uses author-side status vocabulary only"),
+        ("**Claim type:** meta",
+         "note is typed meta: a comparator correction plus a scale convention, "
+         "not a premise-conditional algebraic claim"),
         ("sharpness witness, not a converse",
-         "note does not claim T3 is a converse (it is not; see Part C')"),
+         "note does not claim Part C is a converse (it is not; see Part C')"),
         ("Mass scheme is a named residual",
          "note scopes the invariance to the reference scale within one scheme"),
         ("Canonical prescription",
@@ -612,9 +611,19 @@ if NOTE.exists():
          "note marks the sub-threshold rows as display-only extrapolations"),
     ]:
         check(f"note contains discipline marker: {needle!r}", needle in text, why)
-    for forbidden in ["effective_status", "audit_status"]:
+    for forbidden in ["effective_status", "audit_status",
+                      "**Status:** retained", "**Status:** promoted"]:
         check(f"note does not set {forbidden!r}", forbidden not in text,
               "status authority stays with the independent audit lane")
+    # the note must keep deferring the prior art it says it defers
+    for needle, why in [
+        ("prior art in the CKM\n  lane",
+         "note defers the mixed-scale/common-scale distinction to the CKM lane"),
+        ("neither restates nor re-quantifies",
+         "note defers the sector-spread observation to the fourth-axiom scoping note"),
+    ]:
+        check(f"note keeps its prior-art deferral: {needle.split(chr(10))[0]!r}",
+              needle in text, why)
     # anti-overclaim guards: these phrasings were removed in review and the
     # runner fails if they return.  See Part C' and Part D4.
     for banned, why in [
@@ -623,7 +632,13 @@ if NOTE.exists():
         ("not scheme-blocked",
          "only the reference SCALE is unblocked; scheme remains a residual"),
         ("attributed to scheme bookkeeping",
-         "T1-T3 remove the scale choice, not the scheme choice"),
+         "Parts A-C remove the scale choice, not the scheme choice"),
+        ("**Type:** bounded_theorem",
+         "the note was demoted to meta in review; the algebraic content it "
+         "would need for retained_bounded grade is prior art"),
+        ("**Claim type:** bounded_theorem",
+         "the note was demoted to meta in review; the algebraic content it "
+         "would need for retained_bounded grade is prior art"),
     ]:
         check(f"note avoids retired overclaim: {banned!r}", banned not in text, why)
 else:

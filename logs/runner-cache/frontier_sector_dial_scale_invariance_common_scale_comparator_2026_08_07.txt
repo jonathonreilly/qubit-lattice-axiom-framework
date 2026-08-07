@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sector_dial_scale_invariance_common_scale_comparator_2026_08_07.py
-runner_sha256: 74dfcea1c582995221384f0c46d2e91140bcfce1049d859d8916d298ae4bdaba
-input_fingerprint_sha256: 3bd5a426a887753964d8a9846c12d8220a77ee9b1860e0347417194b1028c848
+runner_sha256: 9f59e8137e11e23eceae2cc7c10854633a1a40dc2ca59fbae259773eb9d8a10c
+input_fingerprint_sha256: 34d78b7e66378629fa0393855663ca1450b329588e76e104b93aed7aaecbd320
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.16
+elapsed_sec: 0.11
 status: ok
 ----- stdout -----
 
@@ -121,10 +121,6 @@ D. COMPARATOR ONLY: what this means for the displayed quark numbers
   D3. Linear error propagation on the common-scale dial (mu = M_Z):
     Q_up   = 0.887314 +- 0.001469      r_up   = 0.830971 +- 0.002204
     Q_down = 0.747393 +- 0.004890      r_down = 0.621090 +- 0.007335
-    charged leptons (no QCD running): Q = 0.666660511
-    distance of r_up   from the leptonic 1/2: 150 sigma
-    distance of r_down from the leptonic 1/2: 17 sigma
-  [PASS] comparator: the three sector dials are not a common value  (displayed as a comparator only; this runner asserts no no-go)
 
   D4. SCHEME dependence: the invariance covers the reference SCALE only.
       A scheme change is NOT a common rescaling -- the MSbar->pole factor
@@ -161,26 +157,32 @@ D. COMPARATOR ONLY: what this means for the displayed quark numbers
 
 E. Scope guards
 ---------------
-  [PASS] source note is present on the branch  (SECTOR_DIAL_SCALE_INVARIANCE_AND_COMMON_SCALE_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-08-07.md)
+  [PASS] source note is present on the branch  (SECTOR_DIAL_COMMON_SCALE_COMPARATOR_CORRECTION_META_NOTE_2026-08-07.md)
   [PASS] note contains discipline marker: 'derives no quark mass'  (note disclaims a quark-mass derivation)
   [PASS] note contains discipline marker: 'does not close'  (note disclaims closing the open gate)
   [PASS] note contains discipline marker: 'comparator'  (note marks its numerics as comparators)
   [PASS] note contains discipline marker: 'prior art'  (note defers homogeneity and flavour-universality to prior art)
-  [PASS] note contains discipline marker: 'proposed_retained'  (note uses author-side status vocabulary only)
-  [PASS] note contains discipline marker: 'sharpness witness, not a converse'  (note does not claim T3 is a converse (it is not; see Part C'))
+  [PASS] note contains discipline marker: '**Claim type:** meta'  (note is typed meta: a comparator correction plus a scale convention, not a premise-conditional algebraic claim)
+  [PASS] note contains discipline marker: 'sharpness witness, not a converse'  (note does not claim Part C is a converse (it is not; see Part C'))
   [PASS] note contains discipline marker: 'Mass scheme is a named residual'  (note scopes the invariance to the reference scale within one scheme)
   [PASS] note contains discipline marker: 'Canonical prescription'  (note states the mu >= m_t common-scale prescription as load-bearing)
   [PASS] note contains discipline marker: 'display-only'  (note marks the sub-threshold rows as display-only extrapolations)
   [PASS] note does not set 'effective_status'  (status authority stays with the independent audit lane)
   [PASS] note does not set 'audit_status'  (status authority stays with the independent audit lane)
+  [PASS] note does not set '**Status:** retained'  (status authority stays with the independent audit lane)
+  [PASS] note does not set '**Status:** promoted'  (status authority stays with the independent audit lane)
+  [PASS] note keeps its prior-art deferral: 'prior art in the CKM'  (note defers the mixed-scale/common-scale distinction to the CKM lane)
+  [PASS] note keeps its prior-art deferral: 'neither restates nor re-quantifies'  (note defers the sector-spread observation to the fourth-axiom scoping note)
   [PASS] note avoids retired overclaim: 'the exact converse'  (the literal converse is FALSE; Part C' exhibits counterexamples)
   [PASS] note avoids retired overclaim: 'not scheme-blocked'  (only the reference SCALE is unblocked; scheme remains a residual)
-  [PASS] note avoids retired overclaim: 'attributed to scheme bookkeeping'  (T1-T3 remove the scale choice, not the scheme choice)
+  [PASS] note avoids retired overclaim: 'attributed to scheme bookkeeping'  (Parts A-C remove the scale choice, not the scheme choice)
+  [PASS] note avoids retired overclaim: '**Type:** bounded_theorem'  (the note was demoted to meta in review; the algebraic content it would need for retained_bounded grade is prior art)
+  [PASS] note avoids retired overclaim: '**Claim type:** bounded_theorem'  (the note was demoted to meta in review; the algebraic content it would need for retained_bounded grade is prior art)
 
 ================================================================
-TOTAL: PASS=71, FAIL=0
-  exact      (Parts A-C, C', E, Fraction/int only): PASS=59, FAIL=0
-  comparator (Part D, floating point + PDG inputs): PASS=12, FAIL=0
+TOTAL: PASS=76, FAIL=0
+  exact      (Parts A-C, C', E, Fraction/int only): PASS=65, FAIL=0
+  comparator (Part D, floating point + PDG inputs): PASS=11, FAIL=0
 Only the exact tally is load-bearing; Part D supplies no premise.
 ================================================================
 

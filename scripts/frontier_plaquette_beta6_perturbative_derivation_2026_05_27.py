@@ -895,6 +895,61 @@ def test_note_exists() -> None:
     )
 
 
+def report_n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: no check() call, so PASS and FAIL are unaffected.
+    """
+    section("T11: N5 execution certificate (reporting only; adds no check)")
+    print(
+        "  per_element: resolved coefficient by coefficient inside the "
+        "runner-local packet — each w_n for n = 1..16 is printed on its own, "
+        "each order contributes its own term w_n/beta^n at beta = 6 so the "
+        "minimum-term order can be located, and the fifteen successive ratios "
+        "w_(n+1)/w_n are formed individually with the growth test applied to "
+        "each of the ten ratios from n = 6 upward; the leading element is the "
+        "exact rational w_1 = (N^2-1)/(2 N^2) = 4/9."
+    )
+    print(
+        "  per_site: checked and not executed — nothing in this runner carries "
+        "a lattice coordinate, because the only observable is the mean "
+        "plaquette <P>(beta), an already position-averaged scalar, and the "
+        "runner-local coefficient packet is a list of pure numbers with the "
+        "site label summed away before it is written down; no link variable, "
+        "plaquette array or site loop is constructed anywhere in T0 through "
+        "T10."
+    )
+    print(
+        "  per_mode: checked and not executed — the whole computation is a "
+        "scalar power series in 1/beta, so no gluon polarization, no Fourier "
+        "or momentum decomposition and no eigenmode of any lattice operator "
+        "is ever formed; the closest thing to a mode label here is the "
+        "perturbative order n, which is already the per_element axis above "
+        "and is a counting index rather than a field mode."
+    )
+    print(
+        "  per_block: resolved grid by grid, with pinned censuses — four "
+        "method families are walked separately (plain truncations N = 1..16, "
+        "self-consistent fixed points N = 1..8 from seed 0.5 at tol 1e-13, "
+        "the ordinary Pade grid over m,n >= 1 with 2 <= m+n <= 12 whose "
+        "accepted evaluation count is pinned at PADE_EVALUATED_COUNT = 66, "
+        "and the self-consistent Pade grid over 3 <= m+n <= 8 whose converged "
+        "count is pinned at TI_PADE_CONVERGED_COUNT = 27 at tol 1e-12), and "
+        "the [m/0] and [0/n] edge families are deliberately outside every "
+        "grid, as the note states."
+    )
+    print(
+        "  lattice_wide: attempted and honestly failed, which is this row's "
+        "result — the target quantity is the whole-lattice plaquette "
+        "expectation at beta = 6, yet no all-orders, Borel, strong-coupling, "
+        "finite-volume or continuum limit is taken anywhere, so the finite "
+        "envelope simply stops: every family stays outside the 40% band "
+        "against the runner-local comparator 0.5934, and the best residual of "
+        "the whole envelope still exceeds the runner-local F2 comparator "
+        "0.0833%, so no lattice-wide physical statement is asserted here."
+    )
+
+
 # ---------------------------------------------------------------------------
 # Run all tests
 # ---------------------------------------------------------------------------
@@ -916,6 +971,7 @@ def main() -> int:
     test_honest_verdict()
     test_no_axiom_extension()
     test_note_exists()
+    report_n5_execution_certificate()
     print(f"\nTOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL > 0:
         return 1

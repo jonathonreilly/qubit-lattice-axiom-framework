@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py
-runner_sha256: 46a2cc4082ee1e2db4ac6915c6149a1a893eed91199b0991c415ca1b9971944c
+runner_sha256: ad11680c580a48b8bd778b40a980637a157b07eefffbefc06ac95d9d325acafe
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -25,6 +25,14 @@ Lane 5 (C1) A2 action-unit metrology obstruction verifier
 [PASS] source boundary phrase absent: Can retained g_bare = 1: old overclaim wording must stay absent
 [PASS] source boundary phrase absent: retained `g_bare` packet: old overclaim wording must stay absent
 [PASS] source boundary phrase absent: retained dimensionless lattice normalizations: old overclaim wording must stay absent
+------------------------------------------------------------------------------
+N5 execution certificate: resolution granularity of this metrology obstruction
+------------------------------------------------------------------------------
+per_element: checked and not executed — no explicit matrix is ever built on the cell, so no matrix element is inspected; the finite-trace obstruction is entered as the standard identity Tr([X,P])=0 against the canonical requirement Tr(i kappa I_4)=4 i kappa at kappa=1.0, recorded as a literal rather than computed from a constructed X and P.
+per_site: checked and not executed — the whole computation lives on one cell of dimension 16 carrying a rank-4 projector; there is no site index, no neighbour, and no link, and the plaquette surface enters only as scalar constants (<P>=0.5934, u0=0.8776813812) rather than as site-resolved configuration data.
+per_mode: checked and not executed — nothing here is decomposed into modes: the Wilson weight uses the single scalar Re<P>=0.42 with beta=6.0 to give S_lat=3.480000000000 and exp(-S_lat)=0.030807411033, and neither the projector nor any transfer operator is diagonalized, so no eigenmode is available to carry a unit.
+per_block: checked — the rank-four block inside the cell is where the obstruction is actually exhibited: its trace coefficient c_cell = 4/16 = 0.250000000000 is a pure ratio, and the projected block phase agrees to within 1e-12 across kappa in {0.5, 1.0, 2.0, 8.0} at 0.959717864954+0.280965513343i. That agreement is structural rather than numerical luck: the dimensional action is built as kappa times the dimensionless block action, so kappa cancels identically, which is precisely why the block cannot pin it.
+lattice_wide: checked and not executed — no lattice-wide action sum, partition function, thermodynamic limit, or continuum limit is constructed anywhere; the rescaling family (S, kappa) -> (lambda S, lambda kappa) is exercised only at one cell over lambda in {0.25, 1.0, 3.0, 11.0}, and the note records the clock/source/action metrology map as an open import registered as the Tier-A derivation target AC_phi_lambda, which this runner does not close.
 ------------------------------------------------------------------------------
 TOTAL: PASS=16, FAIL=0
 Conclusion: supplied g_bare, plaquette/u0, APBC, and c_cell data are dimensionless. They do not pin a dimensional kappa on P_A H_cell; A2 needs an additional clock/source/action metrology theorem.

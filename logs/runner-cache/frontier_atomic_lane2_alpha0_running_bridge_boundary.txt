@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_lane2_alpha0_running_bridge_boundary.py
-runner_sha256: d4210b0eff5ca064c1394bf34f6bcb253d76cfc4b77db7ae5b99e4ebc14407c6
+runner_sha256: 88eac69abff9baa3da44e8752d814c7fd1a15c99b85c022a924601433780c45d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.03
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -60,6 +60,15 @@ PART 4: CLAIM-STATUS FIREWALL
   [PASS] The QED-running route is only conditional support
   [PASS] Three load-bearing imports remain open
   [PASS] No stronger branch-local proposal wording is allowed
+
+========================================================================================
+PART 5: N5 EXECUTION CERTIFICATE
+========================================================================================
+  per_element: checked - the running is assembled term by term, one log per lepton threshold over ['e', 'mu', 'tau'] at [0.00051099895, 0.1056583755, 1.77686] GeV, and the sensitivity test isolates the single electron term, doubles that one mass and re-sums to move Delta(1/alpha) by 0.147090.
+  per_site: checked and not executed - this bridge runs over energy scale, not over any lattice: no site, no spacing and no Z^3 position appears, which is the boundary the runner itself records when it confirms the atomic scaffold imports textbook constants rather than framework inputs.
+  per_mode: checked and not executed - the only spectral object touched is the ground level, evaluated once at 1/alpha(M_Z) and once at 1/alpha(0) to expose the +15.21% shift; no excited level is formed and no mode-resolved spectrum is compared, so the gap is demonstrated on a single level.
+  per_block: checked - the vacuum polarization is split into blocks and each is sized separately: the lepton block contributes Delta = 4.836315 taking 1/alpha only to 132.506315, leaving the hadronic block to supply the remaining 4.529684 to reach 137.035999084, which is what makes the hadronic treatment separately load-bearing.
+  lattice_wide: checked and not executed - nothing here is a lattice functional and no volume or continuum limit is taken; the transport is purely a scale flow from M_Z down toward zero momentum, and the runner stops short of completing it, which is exactly the reported no-go.
 
 ========================================================================================
 SUMMARY: PASS=18 FAIL=0

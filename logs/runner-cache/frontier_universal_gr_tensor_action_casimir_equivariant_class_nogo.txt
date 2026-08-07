@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_tensor_action_casimir_equivariant_class_nogo.py
-runner_sha256: 4ce011c35d1bd2416e03cf9666e19030653cccd0531e7326c47891f7c9cdd6e5
+runner_sha256: 3233b1e93fd6d5edeb6808494450c91474205b87897e8450b14098954fa11d21
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.00
+elapsed_sec: 16.20
 status: ok
 ----- stdout -----
 UNIVERSAL GR TENSOR ACTION — Casimir-equivariant Class No-Go
@@ -92,6 +92,15 @@ Part G: load-bearing-step inventory + scope discipline
     narrow scope discipline
 [DOC] PASS: note avoids forbidden claim: 'uses PDG values'
     narrow scope discipline
+
+----------------------------------------------------------------------------------------
+N5 execution certificate
+----------------------------------------------------------------------------------------
+per_element: the 10-dimensional polarization frame is verified entry by entry — its Frobenius Gram matrix is exactly the identity I_10 (True), the four projectors are exactly idempotent, mutually annihilating and complete, and all 12 commutators [P_a, G_b] are the exact zero matrix (True); the 13 Part-G entries are note-substring checks and resolve no matrix element at all.
+per_site: checked and not executed — the entire calculation happens inside one tangent space Sym^2(R^4) attached to a single point, with no lattice, no field configuration spread over a set of points, and hence no site index for anything to be resolved against.
+per_mode: SO(3) mode content is resolved by Casimir eigenvalue on the 8-dimensional complement — the restricted Casimir comes out diagonal with eigenvalues ['-6', '-2'], selecting the j = 1 triplet and the j = 2 quintet, and the Schur count over those two modes plus the two trivial modes gives dim Class CB(V) = 5, i.e. 3 + 1 + 1.
+per_block: the four Casimir blocks are separated with exact integer ranks {'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}, summing to 10, and the block-diagonal bilinear span they generate has rank 4, lifted to 5 only by the Schur cross term between the two trivial blocks — that one cross direction is what the whole class no-go turns on.
+lattice_wide: checked and not executed — there is no lattice anywhere in this runner, no volume, no spacing, no boundary condition and no configuration space beyond the single 10-dimensional fibre, so the orbit-flatness result is stated pointwise on that fibre and nowhere else.
 
 ----------------------------------------------------------------------------------------
 Summary

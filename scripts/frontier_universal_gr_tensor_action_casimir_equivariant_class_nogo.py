@@ -209,6 +209,71 @@ def section(title: str) -> None:
     print("-" * 88)
 
 
+def execution_certificate(
+    frame: list[sp.Matrix],
+    projectors: dict,
+    ranks: dict,
+    gens: tuple,
+    gram_is_identity: bool,
+    equivariant: bool,
+    class_dim: int,
+    block_span_rank: int,
+    lifted_rank: int,
+) -> None:
+    """Print-only N5 execution certificate; records no check and no counter.
+
+    Everything quoted is an exact sympy integer or a boolean produced by
+    this run.  The runner uses no random sampling, no optimizer and no
+    numeric tolerance, so nothing here is environment-dependent.
+    """
+    comp_idx = [i for i in range(10) if i not in (0, 4)]
+    gc = [submatrix(g, comp_idx) for g in gens]
+    casimir = sp.simplify(sum((g * g for g in gc), sp.zeros(8, 8)))
+    casimir_eigs = sorted({sp.simplify(casimir[i, i]) for i in range(8)},
+                          key=lambda e: float(e))
+    n_doc = sum(1 for c in CHECKS if c.status == "DOC")
+
+    section("N5 execution certificate")
+    print(
+        f"per_element: the {len(frame)}-dimensional polarization frame is "
+        f"verified entry by entry — its Frobenius Gram matrix is exactly the "
+        f"identity I_{len(frame)} ({gram_is_identity}), the four projectors "
+        f"are exactly idempotent, mutually annihilating and complete, and all "
+        f"{len(projectors) * len(gens)} commutators [P_a, G_b] are the exact "
+        f"zero matrix ({equivariant}); the {n_doc} Part-G entries are "
+        f"note-substring checks and resolve no matrix element at all."
+    )
+    print(
+        f"per_site: checked and not executed — the entire calculation happens "
+        f"inside one tangent space Sym^2(R^4) attached to a single point, with "
+        f"no lattice, no field configuration spread over a set of points, and "
+        f"hence no site index for anything to be resolved against."
+    )
+    print(
+        f"per_mode: SO(3) mode content is resolved by Casimir eigenvalue on "
+        f"the 8-dimensional complement — the restricted Casimir comes out "
+        f"diagonal with eigenvalues {[str(e) for e in casimir_eigs]}, "
+        f"selecting the j = 1 triplet and the j = 2 quintet, and the Schur "
+        f"count over those two modes plus the two trivial modes gives "
+        f"dim Class CB(V) = {class_dim}, i.e. 3 + 1 + 1."
+    )
+    print(
+        f"per_block: the four Casimir blocks are separated with exact integer "
+        f"ranks {ranks}, summing to {sum(ranks.values())}, and the "
+        f"block-diagonal bilinear span they generate has rank "
+        f"{block_span_rank}, lifted to {lifted_rank} only by the Schur cross "
+        f"term between the two trivial blocks — that one cross direction is "
+        f"what the whole class no-go turns on."
+    )
+    print(
+        f"lattice_wide: checked and not executed — there is no lattice "
+        f"anywhere in this runner, no volume, no spacing, no boundary "
+        f"condition and no configuration space beyond the single "
+        f"{len(frame)}-dimensional fibre, so the orbit-flatness result is "
+        f"stated pointwise on that fibre and nowhere else."
+    )
+
+
 def main() -> int:
     print("UNIVERSAL GR TENSOR ACTION — Casimir-equivariant Class No-Go")
     print("=" * 88)
@@ -650,6 +715,19 @@ def main() -> int:
             f"missing {note_path}",
             status="DOC",
         )
+
+    # ------------------------------------------------------------------
+    execution_certificate(
+        frame,
+        projectors,
+        ranks,
+        (gx, gy, gz),
+        gram == sp.eye(10),
+        equivariant,
+        indep_rank,
+        sym_rank,
+        full_rank,
+    )
 
     # ------------------------------------------------------------------
     section("Summary")

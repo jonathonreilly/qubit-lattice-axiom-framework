@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_flavor_anomaly_2026_05_08_probe2.py
-runner_sha256: 6b789c9f1ea6a67924f2e068ce3de610f7e062218242bfb7e028f25b9d96e3fa
+runner_sha256: 162c5858463420fb6959145d74ca1e4aa193ea627c2f6b26daeb22a03205bc97
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 ======================================================================
@@ -63,7 +63,7 @@ Section 5 — Unifying obstruction P2-S1: category mismatch is universal
 
 Section 6 — Distinguishing P2-S1 from R3-S1 (independent obstructions)
   PASS : Hypothetical R3-escape scenario: distinct q_α with anomaly cancellation | qs = [1.0, -1.0, 0.0], Tr=0, Tr^3 = 0.000
-  PASS : Even a 'maximally anomaly-cancelling' charge triple on the orbit (viewed as RR-valued) fails cube-anomaly | qs=[1.0, np.float64(-0.49999999999999983), np.float64(-0.5000000000000004)], sum=-0.000, cube=0.750
+  PASS : Even a 'maximally anomaly-cancelling' charge triple on the orbit (viewed as RR-valued) fails cube-anomaly | qs=[1.0, np.float64(-0.4999999999999998), np.float64(-0.5000000000000004)], sum=-0.000, cube=0.750
   PASS : P2-S1 still blocks even when R3 escaped: random (a, b) hits |b|^2/a^2 ≈ 1/2 only 1.1% of time | no anomaly-cancellation constraint preferences for the A1 ratio
        R3-S1 and P2-S1 are STRUCTURALLY INDEPENDENT obstructions:
        R3-S1 ⇒ anomaly carriers respect C_3 orbits (=> equal expectations)
@@ -89,6 +89,13 @@ Section 8 — Probe 2 verdict (flavor anomaly bounded obstruction)
        Routes A (Koide-Nishiura quartic), D (Newton-Girard), E (Kostant)
        are handled by their own companion obstruction notes. Probe 2 adds
        the flavor-anomaly channel to the barred list alongside A, D, E, F.
+
+Section 9 — N5 execution certificate: resolution classes exercised here
+  per_element: resolved charge by charge on the C_3 orbit — R3-functoriality is applied to each orbit member individually to give q_1 = q_2 = q_3, the anomaly traces Tr[Q_F] and Tr[Q_F^3] are then assembled from those individual charges, the twelve (Yukawa, flavor-charge) pairs are exhibited one pair at a time, and each circulant is checked entrywise for Hermiticity and for C_3-equivariance before its ratio is read off.
+  per_site: checked and not executed — nothing in this probe carries a Z^3 position; hw=1 is an internal three-corner sector and the U(1)_F charges are representation labels attached to that sector, not site variables, so there is no site sum and no site-resolved anomaly coefficient anywhere in channels F1, F2 or F3.
+  per_mode: checked and not executed — the circulant is never diagonalized in this probe; both sides of the comparison stay at their own level, the anomaly side as polynomial arithmetic in the rep labels q_i and the A1 side as the coefficient ratio |b|^2/a^2, so no eigenvalue and no C_3 character is ever separated out as an individual mode.
+  per_block: resolved block against block, which is how F1 and F3 are argued — the 2-dimensional SU(2)_L doublet block is compared directly with the 3-dimensional hw=1 flavor block, the Witten constraint is shown to live on rep-count parity of the doublet block and so to be Z_2-valued, and the mixed SU(2)_L^2 x U(1)_F channel is shown to be linear in the flavor block's charges while the A1 target is quadratic in the coefficients.
+  lattice_wide: checked and not executed — no lattice, no volume, no site sum and no limit is taken here; and the sampling arguments are explicitly finite rather than exhaustive, being 100 seeded draws of (anomaly-cancelling charges, circulant) pairs accepted at a greater-than-80 threshold and 1000 seeded draws tested against the A1 ratio at atol 1e-2 accepted below a 10 percent hit rate, so nothing here closes over the whole parameter space.
 
 ======================================================================
 Summary

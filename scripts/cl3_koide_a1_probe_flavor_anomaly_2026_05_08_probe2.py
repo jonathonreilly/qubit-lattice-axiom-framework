@@ -851,6 +851,62 @@ def section8_probe_verdict() -> list[bool]:
 
 
 # --------------------------------------------------------------------
+# Section 9 — N5 execution certificate (reporting only; adds no check)
+# --------------------------------------------------------------------
+
+
+def section9_n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this probe resolves.
+
+    Reporting only: returns nothing and appends no PASS/FAIL item.
+    """
+    print("Section 9 — N5 execution certificate: resolution classes exercised here")
+    print(
+        "  per_element: resolved charge by charge on the C_3 orbit — "
+        "R3-functoriality is applied to each orbit member individually to "
+        "give q_1 = q_2 = q_3, the anomaly traces Tr[Q_F] and Tr[Q_F^3] are "
+        "then assembled from those individual charges, the twelve "
+        "(Yukawa, flavor-charge) pairs are exhibited one pair at a time, and "
+        "each circulant is checked entrywise for Hermiticity and for "
+        "C_3-equivariance before its ratio is read off."
+    )
+    print(
+        "  per_site: checked and not executed — nothing in this probe carries "
+        "a Z^3 position; hw=1 is an internal three-corner sector and the "
+        "U(1)_F charges are representation labels attached to that sector, "
+        "not site variables, so there is no site sum and no site-resolved "
+        "anomaly coefficient anywhere in channels F1, F2 or F3."
+    )
+    print(
+        "  per_mode: checked and not executed — the circulant is never "
+        "diagonalized in this probe; both sides of the comparison stay at "
+        "their own level, the anomaly side as polynomial arithmetic in the "
+        "rep labels q_i and the A1 side as the coefficient ratio |b|^2/a^2, "
+        "so no eigenvalue and no C_3 character is ever separated out as an "
+        "individual mode."
+    )
+    print(
+        "  per_block: resolved block against block, which is how F1 and F3 "
+        "are argued — the 2-dimensional SU(2)_L doublet block is compared "
+        "directly with the 3-dimensional hw=1 flavor block, the Witten "
+        "constraint is shown to live on rep-count parity of the doublet block "
+        "and so to be Z_2-valued, and the mixed SU(2)_L^2 x U(1)_F channel is "
+        "shown to be linear in the flavor block's charges while the A1 target "
+        "is quadratic in the coefficients."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no lattice, no volume, no "
+        "site sum and no limit is taken here; and the sampling arguments are "
+        "explicitly finite rather than exhaustive, being 100 seeded draws of "
+        "(anomaly-cancelling charges, circulant) pairs accepted at a "
+        "greater-than-80 threshold and 1000 seeded draws tested against the "
+        "A1 ratio at atol 1e-2 accepted below a 10 percent hit rate, so "
+        "nothing here closes over the whole parameter space."
+    )
+    print()
+
+
+# --------------------------------------------------------------------
 # Main runner
 # --------------------------------------------------------------------
 
@@ -871,6 +927,7 @@ def main() -> int:
     all_results += section6_distinguish_from_r3()
     all_results += section7_falsifiability_anchor()
     all_results += section8_probe_verdict()
+    section9_n5_execution_certificate()
 
     n_total = len(all_results)
     n_pass = sum(all_results)

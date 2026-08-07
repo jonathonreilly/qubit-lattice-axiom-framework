@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_bottom_yukawa_retention.py
-runner_sha256: e14817158d7846e2e35689834e78694fa049692fe5e95ac390a29f0945dc56b0
+runner_sha256: 388598df7554ac08603b90be8b9bdb16c631f87792d5b867118511dae04b1846
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.10
+elapsed_sec: 0.98
 status: ok
 ----- stdout -----
 ========================================================================
@@ -112,6 +112,14 @@ Block 12: Safe-claim boundary verification.
 ========================================================================
 Summary
 ========================================================================
+
+N5 execution certificate
+per_element: the singlet state on Q_L (x) Q_L* is built explicitly as a 6x6 array and read out entry by entry — its 6 basis Clebsch-Gordan overlaps are all the exact algebraic value 1/sqrt(6), with spread max minus min equal to 0.0, which is what makes the species substitution to the b-quark an identity rather than an approximation.
+per_site: checked and not executed — no lattice is constructed here at all; the lattice surface enters only as the inherited scalar anchor alpha_LM = 0.09067 used to set g_3 at M_Pl, so nothing in this analysis is decided site by site.
+per_mode: checked and not executed — this runner solves no eigenproblem and constructs no momentum or Fourier mode; the ODE state it integrates is the five running couplings (g1, g2, g3, y_t, y_b) in log-scale from ln(v) to ln(M_Pl) under RK45 at rtol 1e-11, atol 1e-13 and max_step 0.5, which are couplings rather than modes of any operator.
+per_block: the block structure that carries the argument is resolved exactly — the Q_L colour-isospin block has dimension N_C * N_iso = 6, and the Delta_R assembly splits into the three Casimir channels C_F = 4/3, C_A = 3 and T_F n_f with T_F = 1/2 (all three confirmed live to 1e-12: True), none of which carries a species index, so the bottom and top blocks inherit the identical Delta_R.
+lattice_wide: checked and not executed — this analysis defines no volume, spacing, boundary condition or limit at any point, and the falsification it reports is a comparison of scalar mass predictions against the runner's declared PDG comparators m_t = 172.69 GeV and m_b(m_b) = 4.18 GeV, not any lattice-scale statement.
+
   Total: PASS = 52, FAIL = 0
 
 Verdict (Outcome A, Yukawa unification at M_Pl):

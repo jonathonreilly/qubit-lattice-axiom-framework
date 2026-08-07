@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py
-runner_sha256: 5b837de159fe783abf02e58d283ada1b17b84caca8c102e5980e10374a765f26
+runner_sha256: 48cdf3044467dd1aae971500822fa89e8c17515acd765e0ac566d8f3d5f86ace
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 1.17
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta h-class first-principles stretch no-go verifier
@@ -144,6 +144,15 @@ F. route accounting and audit row
 [PASS] new row effective status remains unaudited
 [PASS] source note links the current R-eta open obligation
 [PASS] source note treats decision history as non-authoritative provenance
+
+========================================================================================
+G. N5 execution certificate (reporting only; adds no check)
+========================================================================================
+per_element: checked - the readout is pinned coefficient by coefficient: the C3-invariance polynomial in x0, x1, x2 has each of its coefficients extracted and separately set to zero, which is what forces a0 = a1 = a2, and the five candidate alpha values 0, 1/9, 2/27, 1/3 and 1 are then each evaluated on their own and confirmed to give five distinct readouts.
+per_site: checked and not executed - the occupancy vector here is abstract orbit-cell multiplicity, not a map over lattice positions, and that separation is deliberate: section A verifies the AC minimum decomposition keeps occupancy separate from R-eta, so no site-resolved occupancy map is built and no claim here is certified position by position.
+per_mode: checked and not executed - C3 covariance is imposed as a coefficient-matching condition on an expanded polynomial rather than by decomposing into C3 characters, so no individual omega or omega-bar mode is ever formed or evaluated; the resulting a0 = a1 = a2 is equivalent to retaining only the trivial character, but that equivalence is not executed.
+per_block: checked - orbit copies are the resolved granularity: additivity is verified both on the explicit cell split (1, 0, 1) plus (0, 1, 0) and on orbit doubling, with one full orbit evaluating to 3 alpha and two full orbits to 6 alpha, and every one of the five candidates is re-checked for empty normalization, additivity and invariance on those same copies.
+lattice_wide: checked and not executed - no lattice, volume or limit appears anywhere; sections A, B, C and F are registry and note-text accounting over the premise registry, the minimal axioms and the ledger row, so the negative result is that no first-principles route selects alpha = 2/27, established by exhausting five named routes rather than by any whole-lattice evaluation.
 
 TOTAL: PASS=113 FAIL=0 CHECKS=113
 

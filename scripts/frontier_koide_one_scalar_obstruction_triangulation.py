@@ -367,6 +367,54 @@ check(
 
 
 # ---------------------------------------------------------------------------
+# Section 10 - N5 execution certificate (reporting only; no check, no count)
+# ---------------------------------------------------------------------------
+
+print()
+print("=" * 72)
+print("Section 10 - N5 execution certificate: what this runner resolves")
+print("=" * 72)
+print(
+    "  per_element: resolved exactly, in symbols rather than to a tolerance. The 3-cycle "
+    "relation, the Hermiticity of the cyclic bundle elements, the Hermiticity of the "
+    "general circulant G for all real (g0, Re g1, Im g1), and the commutation [C, G] = 0 "
+    "are each decided by simplifying a 3x3 matrix and requiring it to be zeros(3, 3) entry "
+    "by entry, with the traces Tr C = Tr C^2 = 0 and Tr C^3 = 3 fixed alongside."
+)
+print(
+    "  per_site: checked and not executed — the Z^3 covariance named in the premises is "
+    "never instantiated as sites. Only one copy of the circulant commutant of C_3[111] in "
+    "M_3(C) is built, with no position index, hopping term or neighbour sum anywhere, so "
+    "there is no site at which a separate version of the one-scalar obstruction could be "
+    "posed."
+)
+print(
+    "  per_mode: resolved, and it is where the obstruction becomes visible as a single "
+    "scalar. The cyclic bundle B_0 = I, B_1 = C + C^2, B_2 = i(C - C^2) is a mode basis, "
+    "the responses are computed one mode at a time as r_0 = 3 g_0, r_1 = 6 Re(g_1) and "
+    "r_2 = 6 Im(g_1), and the map from parameters to modes is shown to be a linear "
+    "bijection with Jacobian determinant exactly 108. The master identity then collapses "
+    "the three mode responses into the one combination g_0^2 - 2 |g_1|^2."
+)
+print(
+    "  per_block: resolved — Section 8 leaves the single carrier and works with a genuine "
+    "two-block object, extending T_1 by a second three-dimensional sector W with an "
+    "equivariant coupling. The equivariant Schur complement is then taken back down onto "
+    "the T_1 block and required to remain circulant to 1e-9, which it does on every one of "
+    "the 10 trials. That is the sense in which enlarging the carrier adds blocks but no "
+    "new constraint on the scalar ratio."
+)
+print(
+    "  lattice_wide: checked and not executed — no lattice sum, volume or limit is formed. "
+    "The reason none is needed is that the obstruction is a codimension count in a fixed "
+    "three-parameter family: the Koide condition is the single quadratic "
+    "g_0^2 = 2 |g_1|^2, so it cuts out a codimension-one set, confirmed by 50 random "
+    "circulant draws none of which land within 1e-6 of the cone. A codimension in a "
+    "three-parameter space is not something a lattice extent can change."
+)
+
+
+# ---------------------------------------------------------------------------
 # Summary
 # ---------------------------------------------------------------------------
 

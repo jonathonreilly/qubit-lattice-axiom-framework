@@ -199,6 +199,39 @@ def main() -> int:
     check("B4 stable dial language is allowed only after naming the generator/functional",
           stationary_iid(fair) != stationary_iid(dimension))
 
+    section("N5 execution certificate (print-only; registers no check)")
+    print(
+        f"per_element: thin, and reported as thin -- the only indexed objects are two-component rational "
+        f"distributions. Their components are handled individually: normalize() tests each component for "
+        f"nonnegativity and requires the pair to sum to exactly 1, and likelihood() selects the single component "
+        f"dist[atom] at each of the {len(target)} steps. No matrix, operator or array exists, so nothing "
+        "element-resolved beyond those two-slot tuples is executed here."
+    )
+    print(
+        "per_site: checked and not executed -- no site index is present anywhere. Atoms occupy positions in a word, "
+        "which are production steps rather than locations, and the alphabet is two abstract letters carrying no "
+        "spatial tag. Nothing in this boundary would change if the underlying system had one site or a million."
+    )
+    print(
+        f"per_mode: checked and not executed -- there is no state space, operator or basis in this file, so no mode "
+        f"can be formed. The {len(kernels)} kernels are conditional distributions over a two-letter alphabet, "
+        "including one history-dependent and one scripted producer; they are compared as functions of the prefix, "
+        "never diagonalized, and no spectral or modal quantity is computed at any point."
+    )
+    print(
+        "per_block: exercised at letter-class granularity -- count() projects a word onto its two letter blocks and "
+        "the run certifies that projection additive under concatenation, so the block counts of a concatenated "
+        "history are exactly the sums of the parts. The kernels are also separated blockwise into the scripted "
+        "producer, which realizes the target with probability one, and the non-scripted ones, which spread "
+        "likelihood across several distinct values for the very same word."
+    )
+    print(
+        f"lattice_wide: checked and not executed -- nothing spatial is constructed and no size is varied. The only "
+        f"global object is the whole {len(target)}-atom history, over which each kernel's likelihood is accumulated "
+        "end to end, and that is extent in production order rather than in volume. No finite-N statement is "
+        "available and no limit is taken or implied by anything in this file."
+    )
+
     section("Scorecard")
     print(f"PASS={PASS} FAIL={FAIL}")
     print(

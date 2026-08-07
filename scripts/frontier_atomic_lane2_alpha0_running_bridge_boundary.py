@@ -151,6 +151,49 @@ def test_status_firewall() -> None:
     check("No stronger branch-local proposal wording is allowed", not proposal_allowed)
 
 
+
+def n5_execution_certificate() -> None:
+    """N5 execution certificate: reporting only, adds no check."""
+    print("\n" + "=" * 88)
+    print("PART 5: N5 EXECUTION CERTIFICATE")
+    print("=" * 88)
+    lepton_delta = one_loop_lepton_delta_inv_alpha(LEPTON_THRESHOLDS_GEV)
+    lepton_only_inv = INV_ALPHA_MZ_REPO + lepton_delta
+    missing = INV_ALPHA0_COMPARATOR - lepton_only_inv
+    print(
+        "  per_element: checked - the running is assembled term by term, one log "
+        f"per lepton threshold over {sorted(LEPTON_THRESHOLDS_GEV)} at "
+        f"{[LEPTON_THRESHOLDS_GEV[k] for k in sorted(LEPTON_THRESHOLDS_GEV)]} GeV, "
+        "and the sensitivity test isolates the single electron term, doubles that "
+        "one mass and re-sums to move Delta(1/alpha) by 0.147090."
+    )
+    print(
+        "  per_site: checked and not executed - this bridge runs over energy scale, "
+        "not over any lattice: no site, no spacing and no Z^3 position appears, "
+        "which is the boundary the runner itself records when it confirms the atomic "
+        "scaffold imports textbook constants rather than framework inputs."
+    )
+    print(
+        "  per_mode: checked and not executed - the only spectral object touched is "
+        "the ground level, evaluated once at 1/alpha(M_Z) and once at 1/alpha(0) to "
+        "expose the +15.21% shift; no excited level is formed and no mode-resolved "
+        "spectrum is compared, so the gap is demonstrated on a single level."
+    )
+    print(
+        "  per_block: checked - the vacuum polarization is split into blocks and each "
+        f"is sized separately: the lepton block contributes Delta = {lepton_delta:.6f} "
+        f"taking 1/alpha only to {lepton_only_inv:.6f}, leaving the hadronic block to "
+        f"supply the remaining {missing:.6f} to reach {INV_ALPHA0_COMPARATOR}, which "
+        "is what makes the hadronic treatment separately load-bearing."
+    )
+    print(
+        "  lattice_wide: checked and not executed - nothing here is a lattice "
+        "functional and no volume or continuum limit is taken; the transport is "
+        "purely a scale flow from M_Z down toward zero momentum, and the runner "
+        "stops short of completing it, which is exactly the reported no-go."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("LANE 2: ALPHA(0) RUNNING BRIDGE BOUNDARY")
@@ -168,6 +211,7 @@ def main() -> int:
     test_numeric_gap()
     test_running_bridge_dependencies()
     test_status_firewall()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

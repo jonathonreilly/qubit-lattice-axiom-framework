@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/unordered_mass_pdep_record_independence_no_go_2026_06_18.py
-runner_sha256: 7d61d990daaffebedbef2e18eb17f2d5d921332476507c95c16a69e757433d98
+runner_sha256: 5ddf7d771b11ec41eb5458ab878071551873206ac510f05822aab10b17d5bcb8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -27,6 +27,14 @@ UNORDERED MASS P-DEP RECORD-INDEPENDENCE NO-GO
 [PASS] note boundary phrase: does not edit audit results
 [PASS] note boundary phrase: does not dispute the existing conditional theorem
 [PASS] parent note links the P-dep independence no-go
+========================================================================================
+N5 EXECUTION CERTIFICATE
+========================================================================================
+per_element: checked and not executed — no matrix is assembled anywhere in this file; lambda_k enters as the closed-form scalar a + 2b cos(delta + 2 pi k / 3) rather than as an entry or an eigenvalue of a constructed operator, so there is no matrix element here for anything to be resolved against.
+per_site: checked and not executed — the index k labels a C_3 sector of the registered datum, not a lattice position, and no spatial coordinate, neighbour relation or lattice extent is introduced at any point in the countermodel.
+per_mode: the three sector modes k = 0, 1, 2 are resolved one by one — the K/CPT map sigma(k) = -k mod 3 is confirmed to be an involution fixing exactly one label, the mode orbits come out as [(0,), (1, 2)], and lambda_(sigma(k))(-delta) matches lambda_k(delta) within 1e-10 across all 4 hard-coded (a, b, delta) triples.
+per_block: record blocks are enumerated exhaustively over the 8 subsets of {0, 1, 2} — all 27 disjoint subset pairs satisfy finite additivity, the empty record reads zero, and both the singlet and the doublet collections are invariant under delta -> -delta, for each of the 3 unregistered scalings q in [1.0, 2.0, -3.0].
+lattice_wide: checked and not executed — the countermodel lives on a three-element sector label set with no lattice, no volume and no limit of any kind; 6 of the 18 checks are note and parent substring guards deciding nothing numerical, and the witness itself is the exact structural fact that I_q = q * sum lambda rescales with an unregistered q while the registered datum ([k], lambda_k) does not move.
 ========================================================================================
 SUMMARY: UNORDERED MASS P-DEP RECORD-INDEPENDENCE NO-GO PASS=18 FAIL=0
 ========================================================================================

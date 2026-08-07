@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_slice_semigroup_coordinate_gate_2026_06_21.py
-runner_sha256: 95c325d74071e0dc89f87e769d4f09391872fb8bfad053dae3dcdc79beaf8220
+runner_sha256: 2749929ff26b3e73161de24c23b8965a6ee8cbc247624ed524a529b6b0f6a3e9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 Route-2 slice-semigroup coordinate gate
@@ -62,6 +62,15 @@ PASS: no observed endpoint value is used as proof input
 PASS: positive target is now a non-semigroup raw q readout primitive or alternate bridge
 PASS: current result is a no-go for semigroup-derived raw q scaling
 PASS: this does not rule out future nonsemigroup readout primitives
+
+----------------------------------------------------------------------------------------
+6. N5 execution certificate
+----------------------------------------------------------------------------------------
+per_element: checked -- every comparison in this gate is between two individually constructed exact rationals, with no averaging or tolerance anywhere: q_T = 5/6 and lambda = 9/4 give q_target = 15/8 and rho_target = 21/4 with c_TE = -8/9; the composition witnesses q1 = 7/10 and q2 = 11/13 give F(q1 q2) = 693/520 against F(q1) F(q2) = 6237/2080; and the generator coordinates give 5/8 and -9/4 additively and the bound 216/125 in the sign-flipped log direction.
+per_site: checked and not executed -- nothing positional exists in this runner. The slice family is handled entirely through scalar endpoint ratios, the seven-site support behind those ratios is never rebuilt, and no quantity here could be attributed to one site rather than another even in principle.
+per_mode: checked but THIN, resolved in exactly one place -- the E and T channels enter only as the two named endpoint ratios q_E and q_T, and the entire test is whether a coordinate law can carry q_T into q_E. No channel amplitude is formed, and in particular no eigenmode of the slice generator Lambda_R is constructed anywhere, so the semigroup's own mode content is left completely untouched by this evidence.
+per_block: checked and not executed -- there is no block decomposition in this file to resolve. Lambda_R is never decomposed, the readout row is never split, and the three candidate coordinate laws are alternatives to one another rather than blocks of one object, so reporting a block-resolved result would misdescribe what was run.
+lattice_wide: checked and not executed -- no volume and no lattice appear, and the one direction that could carry a global or asymptotic statement, the semigroup time t in exp(-t Lambda_R), is never integrated or evaluated here; its law is taken from the parent note by quoted marker only. The gate is closed at the level of finite exact inequalities between fixed rationals, and nothing beyond that scope is certified.
 
 ----------------------------------------------------------------------------------------
 Summary

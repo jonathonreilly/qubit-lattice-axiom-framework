@@ -159,6 +159,61 @@ def part4_the_atlas_now_records_the_right_conjugacy_invariant_no_go() -> None:
     print("  So the K-side invariant family is exhausted too.")
 
 
+def part5_n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, calls no check(), leaves the counters alone.
+    """
+    print("\n" + "=" * 88)
+    print("PART 5: N5 EXECUTION CERTIFICATE (reporting only; adds no check)")
+    print("=" * 88)
+    print(
+        "  per_element: resolved on the individual off-diagonal slots of "
+        "K = Y^dag Y — right_score inspects K_01, K_12 and K_02 one slot at a "
+        "time against the 1e-12 threshold, giving 0 nonvanishing slots for the "
+        "monomial Y and 3 after the DFT3 right rotation, and the sheet datum "
+        "is the single amplitude |K_01| in these 0-based labels, the note's "
+        "|(Y^dag Y)12|, whose change along the rotation-12 orbit is required "
+        "to exceed 1e-3."
+    )
+    print(
+        "  per_site: checked and not executed — every object built here is a "
+        "3x3 matrix on generation space, Y, its right Gram K and the U(3) "
+        "elements acting on it, so no spatial coordinate exists to resolve "
+        "against; the frame this note says is missing is a right-handed "
+        "generation frame, not a site label, and deriving it is explicitly "
+        "left open."
+    )
+    print(
+        "  per_mode: resolved spectrum first and then collapsed to one norm — "
+        "the three eigenvalues of K are sorted and carried individually into a "
+        "seven-component signature alongside Tr K, Tr K^2, Tr K^3 and det K, "
+        "but the invariance test compares the two signatures by a single "
+        "Euclidean norm below 1e-10 rather than eigenvalue by eigenvalue, and "
+        "the follow-on sentence that every right-conjugacy-invariant "
+        "observable is therefore constant is registered as check(..., True), "
+        "restating the argument without computing anything."
+    )
+    print(
+        "  per_block: exercised on the acting group only — the right unitaries "
+        "are assembled as a (1,2) rotation block times a diagonal phase block, "
+        "leaving the third direction untouched, while the alternative DFT3 "
+        "mixes all three; on the observable side nothing is decomposed into "
+        "blocks, and the only block-shaped output is the count of how many of "
+        "the three upper-triangle slots survive, an inventory rather than a "
+        "block-resolved amplitude."
+    )
+    print(
+        "  lattice_wide: checked and not executed — nothing in this runner has "
+        "spatial extent, and the only wide quantifier in play ranges over U(3) "
+        "and over branches, which the runner probes at fixed hardcoded "
+        "witnesses (one rotation angle per part, one DFT3, one monomial "
+        "diagonal) instead of sweeping, so no all-orbit or all-branch closure "
+        "is offered; Parts 3 and 4 are string-presence checks over four "
+        "repository documents and resolve bookkeeping, not any amplitude."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("PMNS RIGHT-CONJUGACY-INVARIANT NO-GO")
@@ -179,6 +234,7 @@ def main() -> int:
     part2_the_admitted_right_gram_data_vary_on_that_same_orbit()
     part3_the_current_scalar_bank_is_already_separately_ruled_out()
     part4_the_atlas_now_records_the_right_conjugacy_invariant_no_go()
+    part5_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

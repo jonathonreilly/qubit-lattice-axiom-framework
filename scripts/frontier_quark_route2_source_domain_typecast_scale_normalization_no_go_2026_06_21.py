@@ -179,6 +179,48 @@ def main() -> int:
         check(f"new note lists boundary phrase: {phrase}", phrase in new_note)
 
     print()
+    print("E. N5 execution certificate -- what this runner resolves")
+    print("-" * 78)
+    print(
+        f"per_element: checked, and threefold per sample -- each of the {len(scale_samples)} "
+        "typecast scales is put through its own expected-value comparison, its own positive-lift "
+        "domain test on both rho_E and q_E, and its own exact round trip back to |c_TE| = nu "
+        f"F_adj, giving {3 * len(scale_samples)} element-level assertions in exact Fractions "
+        f"with no tolerance. The spread is real and computed, not asserted: nu = {Fraction(1, 2)} "
+        f"lands rho_E = {expected_rhos[Fraction(1, 2)]} while nu = {Fraction(2, 1)} lands "
+        f"{expected_rhos[Fraction(2, 1)]}, on opposite sides of the target."
+    )
+    print(
+        "per_site: checked and not executed -- a typecast normalization is a statement about "
+        "units between two scalars, and neither scalar has positional structure. No support, no "
+        "arm and no center configuration is instantiated in this file, so there is no site at "
+        "which nu could be measured and none is claimed."
+    )
+    print(
+        "per_mode: checked, and the finding is that this class cannot help here -- the only "
+        "mode-level quantity in play is the T-over-E center magnitude, and the free scale nu "
+        "multiplies it uniformly. A mode-uniform rescaling is by construction invisible to any "
+        "comparison between the E and T channels, which is exactly why no mode-resolved fact in "
+        "the current bank can pin nu, and why the note asks for a typed landing edge instead."
+    )
+    print(
+        "per_block: checked -- the evidence is carried in two authority blocks that this runner "
+        "closes separately and never fuses. The color/Fierz block supplies the bare number "
+        f"F_adj = {f} at N_c = 3, and the Route-2 endpoint block supplies the inversion from "
+        "|c_TE| back to rho_E; the typed graph confirms neither block reaches the other, with no "
+        "path from su3_R_conn_8_9 to the center node or to rho_E until the missing edge is "
+        "adjoined. The unresolved seam between those two blocks is precisely nu."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, no volume and no limit appears "
+        "anywhere, so there is no global object to certify. The scope of the negative result "
+        f"should also be read exactly: the freedom in nu is exhibited by {len(scale_samples)} "
+        "named scales that each select a different lift, and the absence of a normalization "
+        "theorem is established by literal phrase search across the six parent surfaces, not by "
+        "a proof that no such theorem could exist."
+    )
+
+    print()
     print("Summary")
     print("-" * 78)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

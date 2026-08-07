@@ -251,6 +251,50 @@ def main():
         for label, ok in checks:
             check(label, ok)
 
+    # ---------------- Section 12: N5 execution certificate ----------------
+    section("Section 12: N5 execution certificate — resolution granularities")
+
+    print(
+        "  per_element: checked — every structural identity here is settled "
+        "entrywise as an exact symbolic zero matrix in the free symbols "
+        "a, b_re, b_im, namely C^3 - I_3, H - H^dagger, the doublet commutator "
+        "[B_1, B_2] and U_swap C U_swap - C^2 all equal zeros(3, 3), together "
+        "with the three Clifford anticommutators of e_1e_2, e_2e_3, e_3e_1 "
+        "equal to zeros(2, 2) on the Qubit one-site baseline M_2(C)."
+    )
+    print(
+        "  per_site: checked and not executed — the entire argument lives on one "
+        "fixed internal factor Herm_circ(3) and the runner instantiates exactly "
+        "one matrix H = a I + b C + b_bar C^2; the index 0, 1, 2 labels C_3 "
+        "group elements and isotype components, not lattice sites, so no "
+        "site-resolved quantity is defined or computed anywhere in this runner."
+    )
+    print(
+        "  per_mode: checked — the C_3 isotype modes are resolved separately, the "
+        "trivial mode carrying E_+(H) = 3 a^2 and the doublet mode carrying "
+        "E_perp(H) = 6 |b|^2, and the AV4 section further resolves the three "
+        "individual eigenvalues lambda_0 = a + 2 b_re, lambda_omega = "
+        "a - b_re - sqrt(3) b_im and lambda_omegabar = a - b_re + sqrt(3) b_im, "
+        "verifying their sum is 3a and their sum of squares 3 a^2 + 6 |b|^2."
+    )
+    print(
+        "  per_block: checked — the selection question is decided block by block "
+        "between the 1-dimensional trivial block and the 2-dimensional doublet "
+        "block, with F1's (1, 1) block weighting placing the critical point at "
+        "E_+ = E_perp = E_tot/2 (kappa = 2, the BAE locus) and F3's (1, 2) rank "
+        "weighting placing it at E_+ = E_tot/3, E_perp = 2 E_tot/3 (kappa = 1), "
+        "while the AV3 Hilbert-Schmidt block weights (3, 6) sit proportional to "
+        "the real block dimensions (1, 2)."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no lattice, volume, or "
+        "extended system enters this companion at any point, and the note's own "
+        "scope forbids the corresponding global statement: the obstruction is "
+        "declared over the tested attack-vector set AV1-AV9 only and explicitly "
+        "NOT as a universal impossibility, so the runner enumerates those nine "
+        "attack vectors one at a time and asserts nothing beyond them."
+    )
+
     print("\n" + "=" * 88)
     print(f"=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")
     print("=" * 88)

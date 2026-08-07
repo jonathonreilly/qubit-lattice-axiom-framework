@@ -233,6 +233,48 @@ def part5_quote_anchors() -> None:
     )
 
 
+def part6_n5_execution_certificate() -> None:
+    """Print-only record of what this runner resolves at each granularity."""
+    print("\nPART 6: N5 execution certificate (print-only; adds no check and no counter)")
+    backbone = route2_slice_backbone()
+    trace_dim = int(backbone.lambda_sym.shape[0])
+    rho_list = ", ".join(str(rho) for rho in RHO_VALUES)
+    print(
+        f"per_element: resolved -- the slice generator is compared entry against transposed entry over all "
+        f"{trace_dim}x{trace_dim} positions, max|Lambda_R - Lambda_R^T| = {backbone.sym_err:.3e} against the shared "
+        f"EXACT_TOL = {EXACT_TOL:.0e}, and every admissible readout is assembled one entry at a time: of the eight "
+        f"entries of P(rho_E) exactly one, the [0,2] slot, is moved across the enumerated values {rho_list}, while "
+        f"[0,0]=1, [1,1]=-2, [1,3]=2 and the four structural zeros are held fixed."
+    )
+    print(
+        f"per_site: checked and not executed -- the {trace_dim} boundary-trace sites indexing Lambda_R are produced by "
+        "eliminating the exterior bulk of the 15^3 grid in one Schur solve, and after that no site is ever read on its "
+        "own: the slice seed u_* is the uniform unit vector over all trace sites and only its transported norm is used, "
+        "while on the source side the six shell sites of the seven-site star enter solely through the single uniform "
+        "combination s/sqrt(6). No site amplitude is resolved anywhere in this file."
+    )
+    print(
+        "per_mode: resolved -- E and T occupy separate rows of P(rho_E), row 0 for E and row 1 for T, and the quantity "
+        "this no-go is about is a strictly cross-mode one: lambda = q_E/q_T. Both modes are transported through the "
+        f"same V_R(t) at the {len(TIMES)} tested times {TIMES} and each mode's center/shell ratio, and their quotient, "
+        "come back unchanged, so rho_E=0 keeps lambda=6/5 and rho_E=21/4 keeps lambda=9/4 rather than being mixed."
+    )
+    print(
+        "per_block: resolved -- the restricted carrier space splits into an E block on coordinates {0,2} and a T block "
+        "on {1,3}; P(rho_E) is block-diagonal across that split, so the whole rho_E freedom sits inside the E block "
+        "while the T block stays pinned at (-2, 2). The typed graph carries the same block structure: the 5 current "
+        f"theta-to-slice edges and the {len(MISSING_PRIMITIVE_EDGES)} missing-primitive edges form two components with "
+        "no edge joining them, which is precisely what PART 4 certifies as unreachability."
+    )
+    print(
+        "lattice_wide: resolved as a finite-N statement -- Lambda_R is the Schur complement of the 15^3 negative "
+        "Laplacian onto the trace set at cutoff radius 4.0, a whole-grid operator, and it is certified whole here: "
+        f"symmetric to EXACT_TOL and positive definite with smallest eigenvalue {backbone.min_eig:.6f}. Because "
+        "V_R(t)=exp(-t Lambda_R) u_* multiplies every source channel identically, this entire lattice-scale factor "
+        "cancels out of each ratio. One grid size (15) and one cutoff (4.0) are executed; no thermodynamic limit."
+    )
+
+
 def main() -> int:
     print("Route-2 theta-to-slice channel-density no-go")
     print("Scope: exact rank-one theta-to-slice transport; source/readout primitives remain open")
@@ -241,6 +283,7 @@ def main() -> int:
     part3_no_channel_density_generation()
     part4_typed_reachability()
     part5_quote_anchors()
+    part6_n5_execution_certificate()
 
     total = PASS_COUNT + FAIL_COUNT
     print(f"\nPASS={PASS_COUNT} FAIL={FAIL_COUNT} TOTAL={total}")

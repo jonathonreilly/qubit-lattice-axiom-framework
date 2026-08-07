@@ -582,6 +582,85 @@ else:
     check("B", "forbidden promotion strings absent", False)
 
 # ----------------------------------------------------------------------
+# N5 execution certificate (reporting only: adds no check, moves no count)
+# ----------------------------------------------------------------------
+print("== N5 execution certificate: what this runner resolves ==")
+
+_n_sectors = len(v4)
+_n_subsets = 2 ** _n_sectors
+_sector_total = sum(v4)
+_probe_size = len(P_PROBE)
+
+print(
+    "per_element: resolved with amplitudes on the record side and on the "
+    "Qubit one-site baseline. The four sector data are explicit rationals "
+    f"(2, 3/2, 5, 7/3, totalling {_sector_total}) and I(A) = chi_A . v is recomputed as "
+    f"an indicator-by-datum contraction, element against element, across all {pairs} "
+    f"ordered disjoint subset pairs drawn from the {_n_subsets} subsets. On the M_2(C) "
+    "side the effect is written out as U diag(a, b) U^T for the exact (3/5, 4/5) "
+    "rotation and the state as diag(q, 1 - q), and Tr(sigma E) is evaluated entry by "
+    "entry at all 8 corners of the (a, b, q) box, returning exactly 1 at (1, 1) and "
+    "exactly 0 at (0, 0)."
+)
+print(
+    "per_site: checked, and only a count is resolved - no field amplitude is evaluated "
+    "at any site anywhere in this runner. The single place a lattice enters is the "
+    "Route-B rate argument, where Z^3 supplies the register count (2n + 1)^3 with "
+    "derivative 6(2n + 1)^2 and the instance 101^3 = 1030301; that is an inventory of "
+    "registers, not a readout. No site carries a value of W, of any record datum, or "
+    "of any effect in this file."
+)
+print(
+    "per_mode: resolved, but only on the Qubit one-site baseline and only there. The "
+    "effect is presented in its own eigenbasis so that a and b are literally its two "
+    "spectral values, the state diag(q, 1 - q) is its own spectral decomposition, and "
+    "the corner sweep is exactly an evaluation at the spectral extreme points, "
+    "establishing the [0, 1] range on the whole box by multilinearity. Nothing else "
+    "here has modes: the exponent family {s g_p} is a family of scalar readouts with "
+    "no spectrum, and no other operator in this runner is diagonalized."
+)
+print(
+    "per_block: resolved with amplitudes, and the blocks are the record sectors. "
+    f"Finite additivity I(A u B) = I(A) + I(B) is verified sector-block by "
+    f"sector-block on every one of the {pairs} ordered disjoint pairs; the capacity "
+    "bound is then exhibited at block granularity with the extremal instance summing "
+    "to 5M and the mixed-sign instance to 7M/6 under K = 5; and the two negative "
+    "witnesses are separated by block structure, W_Q registering as a single sector "
+    "per e-fold (K = 1 with the datum unbounded) against the 4^k unit-record family "
+    "(M = 1 with the count unbounded, prefix sums (4^(K+1) - 1)/3, and 4^10 = 1048576 "
+    "already past any cap of 10^6)."
+)
+print(
+    "lattice_wide: checked and not executed, and the missing global supplier is "
+    "precisely this note's obstruction. Z^3 appears only as a register-count formula, "
+    "never as a lattice carrying a field, and no volume, sequence or thermodynamic "
+    "limit is taken. More to the point, the gap the note names - a retained supplier "
+    "for the registration-rate cap (CAP-K) - is a global licensing statement, the "
+    "ledger scan returns zero retained-grade rows matching that vocabulary, and the "
+    "adjacent finite-to-unbounded family-lift no-go cited in T6 states outright that "
+    "finitely many e-fold checks cannot certify the uniform cap. No execution of this "
+    "runner could close that."
+)
+print(
+    "  scope: the clause under hunt is a supremum over all of R_{>0}, and the runner "
+    "reaches it partly by spot evaluation rather than proof. W_V's unboundedness is "
+    "shown by exceeding the caps 10, 100 and 1000 at m = 1e2, 1e4 and 1e6, not by an "
+    f"unbounded-limit argument, and every selection pass set is computed over the "
+    f"{_probe_size}-member probe {{0, 2, 1, 1/2, -1/2}} rather than over all real p."
+)
+print(
+    "  scope: the T9 ledger scan matches its regex against claim_id keys only, not "
+    "against row bodies, so a retained-grade supplier whose identifier happened to "
+    "lack capacity/rate/resolution vocabulary would not be surfaced by it. Several "
+    "further checks in T6, T7 and T10 are file-presence and substring scans over "
+    "Markdown, which evaluate no quantity at all."
+)
+print(
+    "  scope: fully deterministic - no RNG stream and no optimizer appears anywhere, "
+    "and the symbolic work is exact SymPy throughout."
+)
+
+# ----------------------------------------------------------------------
 print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 sys.exit(0 if FAIL == 0 else 1)

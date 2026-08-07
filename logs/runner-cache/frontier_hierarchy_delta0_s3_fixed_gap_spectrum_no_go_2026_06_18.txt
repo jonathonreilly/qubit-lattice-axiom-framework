@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_delta0_s3_fixed_gap_spectrum_no_go_2026_06_18.py
-runner_sha256: b322baeeab66e45710ebb7411b76d01a7f4a8d4fe40ff332c5d30c3c7826b6ad
+runner_sha256: 2923c63e9738260804991dd55f11280c43b95dab11b658fd5d496307a005f83c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 
@@ -93,6 +93,15 @@ E. Parent-gate context and residuals
   [PASS][C] runner source does not write audit ledgers
   RESIDUAL (declared-open): Threshold-dependent G_n or EW-driven gap equations remain open; this runner does not derive or rule them out.
   RESIDUAL (declared-open): Non-NJL direct transport rules remain open; this runner only prunes the fixed-G NJL gap-spectrum arm of S3.
+
+----------------------------------------------------------------------------------------
+N5 execution certificate: resolution granularity of this gap-spectrum no-go
+----------------------------------------------------------------------------------------
+per_element: checked and not executed — this runner builds no operator, matrix, or algebra carrier, so there is no matrix element to resolve; the gap equation dV/dsigma = 1/G - n/(sigma^2 + C) is a scalar stationarity condition with C = 4 u_0^2 = 3.081298, and its finest resolved object is a per-taste scalar root, reported under per_mode below.
+per_site: checked and not executed — no lattice site is instantiated and no field is evaluated anywhere; the lattice enters only through the single boundary plaquette <P>=0.5934 giving u_0=0.8776814, and the leading-order Kawamoto-Smit coupling G_LO = 1/(2 N_c) = 0.166667 at N_c=3 is a mean-field scalar, so nothing here is site-resolved.
+per_mode: checked — the active taste count is the mode index and all sixteen are swept one at a time: sigma_n^2 = n G - C is negative for every n=1..16 at G_LO (largest at n=16, sigma_16^2=-0.414632), and G_LO=0.166667 sits below every per-taste threshold G_crit(n) = C/n, with the loosest being G_crit(16)=0.192581. No taste mode reaches the broken phase at leading order, so no nontrivial gap root exists for any of them.
+per_block: checked — the adjacent-threshold rungs are resolved rung by rung across n=2..16: each rung admits its own forced coupling G_star(n) that reproduces alpha_LM=0.0906678 for that one step, all 15 of them distinct and strictly decreasing in n, so the n=16 and n=15 rungs already disagree (G16=0.205533 against G15=0.220223) and the full rung range spans 15.12x. A single fixed G therefore cannot hold across more than one rung.
+lattice_wide: checked and not executed — no volume, thermodynamic, or continuum limit is taken; the entire computation sits at one fixed mean-field surface with a leading-order coupling, and the note states in its own scope that S3 is not globally eliminated, that threshold-dependent, EW-driven and non-NJL transport mechanisms stay open (2 residuals declared above), and that the DELTA0 gate remains open.
 
 VERDICT: S3 fixed-G lattice-gauge-only gap-spectrum arm is pruned within stated scope; DELTA0 remains open.
 Breakdown: A=27 B=12 C=21 D=5 RESIDUAL=2

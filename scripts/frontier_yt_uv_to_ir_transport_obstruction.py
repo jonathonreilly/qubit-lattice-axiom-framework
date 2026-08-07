@@ -328,6 +328,46 @@ def main() -> int:
     # Summary
     # -----------------------------------------------------------------------
     print("=" * 72)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 72)
+    print(
+        f"per_element: checked and not executed — this is a budget runner "
+        f"working entirely in scalars, namely Casimirs, couplings, "
+        f"percentages and one mass in GeV; no operator, index pair or array is "
+        f"constructed at any point, so no matrix element is resolved and none "
+        f"is claimed."
+    )
+    print(
+        f"per_site: checked and not executed — no site index, hopping term or "
+        f"gauge configuration appears anywhere; the lattice contributes only "
+        f"the imported scalar anchors <P> = {PLAQUETTE} and "
+        f"u_0 = <P>^(1/4) = {U_0:.6f}, which arrive already averaged and carry "
+        f"no positional information at all."
+    )
+    print(
+        f"per_mode: checked and not executed — nothing is diagonalized, "
+        f"transformed or expanded in modes; the scale dependence enters as "
+        f"three labelled bands, at M_Pl, across M_Pl to v, and at m_t, rather "
+        f"than as any spectrum, dispersion or momentum sum."
+    )
+    print(
+        f"per_block: inventory plus one exact colour quantity — the three "
+        f"primitives are distinguished only by counting a set of three "
+        f"hard-coded scale labels, which decides nothing physical, while the "
+        f"single genuine block result is C_F = (N_c^2 - 1)/(2 N_c) = 4/3 at "
+        f"N_c = {N_C} (exact to 1e-12: {abs(C_F - 4.0 / 3.0) < 1e-12}), which "
+        f"feeds both P1 = alpha_LM C_F / (2 pi) and K_1 = C_F."
+    )
+    print(
+        f"lattice_wide: checked and not executed — no volume, spacing, "
+        f"boundary condition or continuum limit is taken in this file; the "
+        f"envelope it reports is a quadrature of three declared per-primitive "
+        f"percentages accepted against the runner's own windows "
+        f"|P1 - 0.01924| < 5e-4, |sigma - 0.02010| < 5e-4 and "
+        f"|100 sigma - 1.95| < 0.1, none of which is a lattice-scale "
+        f"measurement."
+    )
+    print("=" * 72)
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 72)
     print()

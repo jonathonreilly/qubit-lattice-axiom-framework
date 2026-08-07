@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_uv_to_ir_transport_obstruction.py
-runner_sha256: 54260262a0e84a42da36aa80033ef50e4f841a58270af023eea0cba3e4a56c08
+runner_sha256: 63c32c9a0cd48a8e28a7074ce8bab9d70290bb906f2290d12b6e7f43075d99f4
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.03
 status: ok
 ----- stdout -----
 ========================================================================
@@ -85,6 +85,14 @@ Block 5: m_t(pole) lane budget at packaged envelope.
 
   [PASS (C)] m_t(pole) lane consistent with packaged and refined envelopes  (packaged Delta m_t = +- 3.47 GeV, refined = +- 6.90 GeV, PDG = 172.69 GeV)
 
+========================================================================
+N5 EXECUTION CERTIFICATE
+========================================================================
+per_element: checked and not executed — this is a budget runner working entirely in scalars, namely Casimirs, couplings, percentages and one mass in GeV; no operator, index pair or array is constructed at any point, so no matrix element is resolved and none is claimed.
+per_site: checked and not executed — no site index, hopping term or gauge configuration appears anywhere; the lattice contributes only the imported scalar anchors <P> = 0.5934 and u_0 = <P>^(1/4) = 0.877681, which arrive already averaged and carry no positional information at all.
+per_mode: checked and not executed — nothing is diagonalized, transformed or expanded in modes; the scale dependence enters as three labelled bands, at M_Pl, across M_Pl to v, and at m_t, rather than as any spectrum, dispersion or momentum sum.
+per_block: inventory plus one exact colour quantity — the three primitives are distinguished only by counting a set of three hard-coded scale labels, which decides nothing physical, while the single genuine block result is C_F = (N_c^2 - 1)/(2 N_c) = 4/3 at N_c = 3 (exact to 1e-12: True), which feeds both P1 = alpha_LM C_F / (2 pi) and K_1 = C_F.
+lattice_wide: checked and not executed — no volume, spacing, boundary condition or continuum limit is taken in this file; the envelope it reports is a quadrature of three declared per-primitive percentages accepted against the runner's own windows |P1 - 0.01924| < 5e-4, |sigma - 0.02010| < 5e-4 and |100 sigma - 1.95| < 0.1, none of which is a lattice-scale measurement.
 ========================================================================
 SUMMARY: PASS=5  FAIL=0
 ========================================================================

@@ -262,6 +262,64 @@ def part4_blind_and_sensitive_sectors() -> None:
     )
 
 
+def part5_n5_execution_certificate() -> None:
+    """Print-only record of what this runner resolves at each granularity.
+
+    Adds no check and touches no counter.
+    """
+    print("\n" + "=" * 72)
+    print("PART 5: N5 execution certificate (print-only; adds no check and no counter)")
+    print("=" * 72)
+    print(
+        "per_element: resolved as exact rational entries -- Parts 2 through 4 run wholly in Fraction "
+        "arithmetic with no floating point, and the ambiguity is pinned to one slot: subtracting "
+        "P(rho_a)c from P(rho_b)c across the six named carriers returns "
+        "((rho_b - rho_a) * delta_E, 0) in every case, so among the eight entries of the 2x4 readout "
+        "only the one multiplying the third carrier coordinate is free to move. At the E-center "
+        "carrier the two endpoints separate by exactly 7/8 while the E ratio q_E goes from 1 to 15/8; "
+        "both are exact rationals and are printed literally."
+    )
+    print(
+        "per_site: checked and not executed -- the four carrier coordinates are channel labels on an "
+        "abstract readout column, and the words shell and center name two already-contracted "
+        "amplitudes rather than enumerated lattice points. No coordinate, adjacency, or per-site "
+        "value is constructed anywhere in the file, so there is no site-level quantity to report."
+    )
+    print(
+        "per_mode: resolved by holding the two readout rows apart -- row 0 carries the E channel and "
+        "row 1 the T channel, and the file's decisive negative result is that the second component of "
+        "every computed difference vanishes on all six carriers. Moving rho_E is therefore an "
+        "E-mode-only motion with the T mode pinned at its granted entries -2 and 2, and Part 4 "
+        "re-derives the same split from the consumer side."
+    )
+    print(
+        "per_block: resolved as a blind-versus-sensitive sector split -- the readout carries an E "
+        "block on carrier coordinates 0 and 2 and a T block on coordinates 1 and 3, and Part 4 "
+        "partitions downstream consumers along it: every post-functional whose E-readout component "
+        "vanishes is verified blind to rho_E on all six carriers, while an E-sensitive functional on "
+        "a carrier with nonzero center excess separates the endpoints. The four carriers carrying "
+        "delta_E = 0 form the invariant block and are listed by name."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no grid, volume, or size parameter appears here; "
+        "the entire run is one 2x4 rational matrix, six four-component carriers, and one "
+        "three-component slice vector. The obstruction is the one the note names for itself: the "
+        "endpoint rho_E is still open, so the exact Theta_R -> Lambda_R coupling theorem that any "
+        "lattice-wide statement would have to consume does not yet exist to be tested."
+    )
+    print(
+        "Scope of Part 1: those four checks are substring tests against source notes on disk. They "
+        "resolve no matrix element, no mode, and no block -- they inventory authority text only, and "
+        "every quantitative result certified above comes from Parts 2 through 4."
+    )
+    print(
+        "Determinism: the run is exact rational arithmetic end to end -- no RNG, no optimizer, no "
+        "root-finding, no grid scan, and no floating-point tolerance anywhere -- evaluated over a "
+        "fixed insertion-ordered dictionary of six named carriers, so every equality is decided "
+        "exactly and no value in this certificate is interpolated from a converged quantity."
+    )
+
+
 def main() -> int:
     print("S3-time Route-2 E-center consumer ambiguity firewall")
     print("=" * 72)
@@ -270,6 +328,7 @@ def main() -> int:
     part2_exact_readout_support_formula()
     part3_exact_consumer_factorization()
     part4_blind_and_sensitive_sectors()
+    part5_n5_execution_certificate()
 
     print("\n" + "=" * 72)
     print("SUMMARY")

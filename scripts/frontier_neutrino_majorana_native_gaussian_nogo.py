@@ -243,6 +243,91 @@ def test_native_staggered_kernel_has_zero_anomalous_block() -> None:
     print("  one adds a new microscopic pairing source.")
 
 
+def n5_execution_certificate() -> None:
+    """State the granularity at which this runner actually resolves the no-go.
+
+    Reporting only: no check() call is added and no PASS/FAIL count moves.
+    """
+    print("\n" + "=" * 88)
+    print("N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    lattice_size = 2
+    k_native = build_staggered_single_particle(lattice_size=lattice_size, mass=0.35)
+    n_sites = k_native.shape[0]
+    hopping_part = k_native - np.diag(np.diag(k_native))
+    hopping_norm = float(np.linalg.norm(hopping_part))
+    diag_values = sorted({round(float(v.real), 6) for v in np.diag(k_native)})
+    source_weights = np.linspace(-0.25, 0.25, n_sites)
+
+    print(
+        "per_element: resolved by explicit assembly, with one degeneracy that must "
+        "be stated. Part 1 writes the 4 x 4 normal kernel entry by entry (0.3, "
+        "0.2 - 0.1j, -0.05 and their conjugates) and carries all 16 x 16 = 256 Fock "
+        "entries into the commutator norms; Part 2 lays down each staggered hop as a "
+        "single += of -0.5j times a sign into hop[i, j], and the pairing block is "
+        "populated by exactly two entries, Delta[0, 1] = +0.2 and Delta[1, 0] = -0.2. "
+        "But at the only volume this runner builds, L = 2, the periodic wrap makes "
+        "the forward and backward neighbour the same site, so every directed hop is "
+        "written twice with opposite sign and the entire hopping matrix cancels: the "
+        f"off-diagonal part of K measures {hopping_norm:.3e}."
+    )
+    print(
+        f"per_site: resolved with real amplitudes over all {n_sites} sites of the "
+        f"Z^3_{lattice_size} torus. The triple loop visits every site and writes the "
+        "site-resolved staggered mass 0.35 * (-1)^(x + y + z), giving the two "
+        f"sublattice values {diag_values}, and local_projector_source then hands each "
+        f"site its own weight along linspace(-0.25, 0.25, {n_sites}), from "
+        f"{source_weights[0]:+.4f} to {source_weights[-1]:+.4f} in steps of 1/14. The "
+        "site-dependent hop phases eta_y = (-1)^x and eta_z = (-1)^(x + y) are "
+        "computed per site but, by the L = 2 cancellation above, never survive into "
+        "the kernel that is tested."
+    )
+    print(
+        "per_mode: checked and aggregated away, not resolved. The four fermionic "
+        "modes of Part 1 are addressed individually on the input side - K is given "
+        "mode pair by mode pair and the source J is diag(0.12, -0.07, 0.05, -0.03) - "
+        "but every reported quantity is a Frobenius norm over a whole operator, and "
+        "neither the 4 x 4 kernel, nor the 8 x 8 staggered kernel, nor the 16 x 16 "
+        "BdG matrix is ever diagonalized, so no eigenvalue, band, dispersion or "
+        "mode-resolved amplitude is produced anywhere in this runner."
+    )
+    print(
+        "per_block: resolved, and this is the granularity the claim lives at, though "
+        "two of the three block readings are settled by construction. nambu_bdg "
+        f"assembles [[K, Delta], [-conj(Delta), -K^T]] at {2 * n_sites} x "
+        f"{2 * n_sites}, and for the native and locally-sourced cases delta_block is "
+        "None, so the function writes a literal zero array into the anomalous slot "
+        "and the norm then re-reads it: those two checks certify the modelling "
+        "assignment (the native c^dag(K + J)c family maps to Delta = None), not a "
+        "computed cancellation. The third case, with Delta[0, 1] = 0.2 explicitly "
+        "inserted, is the genuine contrast showing the norm is not blind. The "
+        "lower-left -conj(Delta) block and the -K^T block are never inspected."
+    )
+    print(
+        "lattice_wide: partially resolved, and the missing global statement is the "
+        f"note's own boundary. The kernel is assembled across the entire periodic "
+        f"torus - all {n_sites} sites and all three directions with modulo "
+        "wraparound - and the Hermiticity and anomalous-block norms are whole-lattice "
+        "aggregates, so there is a real global object here. What is absent is any "
+        "asymptotics: a single volume L = 2 is instantiated, no L-sequence and no "
+        "infinite-volume or continuum limit is taken, and that single volume is the "
+        "degenerate one, so nothing is established beyond this one small torus."
+    )
+    print(
+        "  scope: the note's second structural argument runs through the determinant "
+        "source family Z[J] = det(D + J) and the generator W[J] = log|det(D + J)| - "
+        "log|det D|. No determinant is computed anywhere in this runner; the Gaussian "
+        "surface enters only as the modelling choice delta_block = None, so nothing "
+        "here certifies the determinant-side half of the note's argument."
+    )
+    print(
+        "  scope: this runner is fully deterministic - no RNG stream and no optimizer "
+        "is used, and every number above is fixed by the literal constants 0.35, "
+        "+-0.25, +-0.5j and 0.2 written into the source."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("NEUTRINO MAJORANA COEFFICIENT: NATIVE-GAUSSIAN NO-GO")
@@ -264,6 +349,7 @@ def main() -> int:
 
     test_number_conservation_on_normal_quadratic_family()
     test_native_staggered_kernel_has_zero_anomalous_block()
+    n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

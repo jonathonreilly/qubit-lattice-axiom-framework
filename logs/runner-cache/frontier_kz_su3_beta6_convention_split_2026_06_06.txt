@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_kz_su3_beta6_convention_split_2026_06_06.py
-runner_sha256: 906055772006dbad0e96d49aade15e2a9a0769339964ce5885d15f17af5d815b
+runner_sha256: f1af9760aa9d0c386ede7e97104e0f20d8a9a0d3c4e7df96ee304b3fce22a89b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 K-Z SU(3) beta=6 convention-split checker
@@ -35,6 +35,13 @@ D. boundary
 [PASS] result is a convention/source-pruning boundary, not a theorem promotion
 [PASS] explicit numeric bracket remains image-derived, not table-derived
 [PASS] future acceptable path is table/source-data extraction or repo-owned SDP reproduction
+
+E. N5 execution certificate -- what this runner resolves
+per_element: checked -- the elements resolved are the 16 extracted vertices of each source path: endpoints are matched pairwise, monotonicity is tested on every consecutive pair, and each bracket value comes from the single segment that contains the queried x.
+per_site: checked and not executed -- no lattice configuration is ever built here; the inputs are page-space coordinates of two vector paths in an EPS figure, so no site, link or field variable exists on which a per-site statement could be made.
+per_mode: checked and not executed -- the only quantity carried is the scalar plaquette coordinate u_p read off the figure; there is no operator, spectrum or momentum variable anywhere in this checker, so no mode decomposition is available to resolve.
+per_block: checked -- resolution is by evaluation block in the lambda coordinate: the Wilson beta=6 image at lambda = N^2/beta = 1.5 gives width 0.245195, the plotted lambda = 3.0 block gives width 0.048725, and the mismatch between these two blocks is the pruning.
+lattice_wide: checked and not executed -- nothing is simulated on a lattice at any size; the SU(3) beta=6 bracket is inherited from an external figure, and the named acceptable remedy, a repo-owned beta=6 reproduction, is exactly the work this runner does not do.
 
 SCORECARD: PASS=13 FAIL=0
 VERDICT: W_lift ~= 0.05 is supported by the source figure at plotted lambda=3, but not by the same figure at Wilson beta=6 under the paper's action coefficient. The K-Z external-lift route needs an explicit convention bridge or a repo-owned beta=6 reproduction.

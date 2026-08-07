@@ -182,11 +182,63 @@ def supplied_clock_interface_checks() -> None:
     report("count-alone generation/Koide dial selection flag is false", not count_alone_dial_selected)
 
 
+def n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, calls no report(), leaves PASS/FAIL alone.
+    """
+    section("N5 execution certificate (reporting only; adds no check)")
+    print(
+        "  per_element: resolved one alphabet symbol at a time — count_word "
+        "keeps singlet, doublet and other apart as the triple (2, 1, 1) for "
+        "the four-event witness, and letter_rates divides each of those three "
+        "counts by the supplied elapsed time on its own, giving "
+        "(1/5, 1/10, 1/10) exactly under tau_accel and a different triple "
+        "under tau_uniform; the coarse-grained rate after an explicit alphabet "
+        "map, which the note also lists as supported, is defined by no "
+        "function in this runner and is therefore untested here."
+    )
+    print(
+        "  per_site: checked and not executed — the only ordering label the "
+        "runner carries is the event index k = 0..n read off prefix length, "
+        "and no spatial coordinate, link or lattice array exists to resolve "
+        "against; the note's own result is that this index supplies order and "
+        "prefix preservation but no metric, so there is no site-resolved "
+        "quantity for a certificate to point at."
+    )
+    print(
+        "  per_mode: checked and not executed — every rate produced here is "
+        "the reciprocal of a supplied duration, computed in exact Fractions, "
+        "and never a frequency of anything oscillatory; no operator is formed, "
+        "no eigenvalue or spectral gap is taken, and no Fourier or normal-mode "
+        "decomposition appears at any point in the four sections."
+    )
+    print(
+        "  per_block: resolved copy by copy across the three supplied clocks — "
+        "the same four-event word is registered under tau_uniform, tau_slow "
+        "and tau_accel, each copy carrying its own duration tuple while the "
+        "word and the count vector (2, 1, 1) stay identical, and the three "
+        "total rates n/(tau_n - tau_0) come out as the exact distinct "
+        "Fractions 1, 1/2 and 2/5, which is what the non-uniqueness check "
+        "requires."
+    )
+    print(
+        "  lattice_wide: checked and not executed — this runner builds no "
+        "extended system at all, so no volume, thermodynamic limit or "
+        "continuum limit can be taken; the widest computed statement covers "
+        "three named clocks over one four-event word, whereas the note asserts "
+        "non-uniqueness for every strictly increasing tau, and of the recorded "
+        "passes 19 are string-presence checks over four repository documents "
+        "while 5 are count-alone flags hardcoded False in this file."
+    )
+
+
 def main() -> int:
     source_anchor_checks()
     event_order_checks()
     clock_nonuniqueness_checks()
     supplied_clock_interface_checks()
+    n5_execution_certificate()
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("POST_RECORD_COUNTS_DERIVE_CLOCK_OR_RATE=FALSE")

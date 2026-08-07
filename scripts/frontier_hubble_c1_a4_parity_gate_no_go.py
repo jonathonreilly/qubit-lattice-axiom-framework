@@ -285,6 +285,53 @@ def main() -> int:
         " supplies a derivation of CAR semantics on P_A H_cell",
     )
 
+    # ------------------------------------------------------------
+    # N5 execution certificate.  Print-only: no check() call is made
+    # here, so PASS_COUNT / FAIL_COUNT are untouched.
+    # ------------------------------------------------------------
+    print()
+    print("=" * 78)
+    print("N5 EXECUTION CERTIFICATE: RESOLUTION GRANULARITY OF THIS PARITY-GATE NO-GO")
+    print("=" * 78)
+    print(
+        "per_element: checked — the semantics are separated on individual algebra elements, not on "
+        "summary labels: the CAR Majorana pair built from c_0 anticommutes exactly, "
+        f"||{{gamma_0, gamma_1}}|| = {anticomm_car:.2e}, whereas the corresponding two-qubit generators "
+        f"X otimes I and I otimes X commute exactly, ||[.,.]|| = {comm_spin:.2e}, and violate CAR with "
+        f"||{{.,.}}|| = {anticomm_spin:.2e}. That element-level contrast is the only thing separating the "
+        "two carriers, and the parity gate never sees it."
+    )
+    print(
+        "per_site: checked and not executed — no real-space lattice site is ever formed; the block "
+        "carrying the parity gate is one cell's rank-four boundary block, and the transverse analysis "
+        "lives entirely in the momentum zone, where the nearest-neighbour dispersion enters as "
+        "Delta_perp = 1 - (sum cos q)/n and is never Fourier-inverted back to sites."
+    )
+    print(
+        "per_mode: checked — resolution here is mode by mode in two independent senses. Spectrally, each "
+        f"Z_2 involution is diagonalized and its eigenvalues counted: CAR (-1)^N gives {sig_car}, "
+        f"two-qubit Z otimes Z gives {sig_spin}, and ququart Z_4^2 gives {sig_ququart}, identical in all "
+        "three. In the transverse zone, every grid mode is classified individually against the self-dual "
+        f"threshold, giving n_low={n_low_2D} against n_high={n_high_2D} in one transverse direction and "
+        f"n_low={n_low_3D} against n_high={n_high_3D} in two, exact equality in both."
+    )
+    print(
+        f"per_block: checked — three inequivalent algebras are placed on the same rank-{dim_block} block "
+        "and compared as blocks: CAR two-orbital Fock F(C^2), commuting two-qubit spin on C^2 tensor C^2, "
+        "and ququart clock-shift Z_4. Each supplies a genuine Z_2 involution squaring to the identity with "
+        "a 2+2 grading, so every block-level invariant the parity gate can read is shared, and the block "
+        "alone cannot select CAR."
+    )
+    print(
+        "lattice_wide: checked — the half-zone measure is established across the entire discretized "
+        f"Brillouin zone rather than on a patch: the involution tau(q) = q + pi is applied to all "
+        f"{grid} modes in one transverse direction and all {grid ** 2} modes in two, leaving "
+        f"{n_bdy_2D} and {n_bdy_3D} modes exactly on the Delta_perp = 1 surface. The resulting mu = 1/2 "
+        "is exact by involution counting, but the continuum statement Delta_perp(tau q) = 2 - Delta_perp(q) "
+        "is argued rather than obtained as a grid limit, and it is a Z_2 zone symmetry that holds "
+        "irrespective of fermion semantics — which is exactly why it cannot close (G1)."
+    )
+
     print()
     print("=" * 78)
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")

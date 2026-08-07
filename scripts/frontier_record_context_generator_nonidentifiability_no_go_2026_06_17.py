@@ -203,6 +203,40 @@ def main() -> int:
     check("note keeps clock/rate unit underived", "Does not derive a physical clock or rate unit." in note)
     check("source gate cannot be cited as production-generator closure", "it cannot cite this row for more than the finite supplied-context algebra above" in flat_source_gate)
 
+    print("\nF. N5 execution certificate (print-only; no check is registered)")
+    print(
+        f"per_element: executed exactly, with no tolerance involved -- completeness, idempotence and orthogonality "
+        f"of each context are decided by is_zero_matrix(), which requires every one of the {rho.rows * rho.cols} "
+        "entries of the residual to be the symbolic integer 0 rather than small; row_stochastic() sums each kernel "
+        "row entry by entry to exactly 1, and row_generator() inspects every off-diagonal entry for nonnegativity "
+        "and every row sum for exact vanishing. These are sympy zeros, not floating-point residuals."
+    )
+    print(
+        "per_site: checked and not executed -- the pre-record state space here is a single M_2(C) Qubit site, so "
+        "there is no second site to resolve anything against. No lattice, no neighbour and no site index appears "
+        f"anywhere; the {len(contexts)} readout contexts are alternative bases on that one site, and the classical "
+        "chain in section D is a 3-state label space rather than a spatial arrangement."
+    )
+    print(
+        f"per_mode: executed, and the obstruction is exactly a mode-selection obstruction -- {len(contexts)} "
+        "complete binary contexts (Z, X and Y) are built on the same rho, each verified projective and complete, "
+        "and each is resolved into its two branch modes separately. They return three different probability "
+        "vectors, so the state together with the cited projective and Lueders algebra fixes no mode decomposition; "
+        "that non-selection is the no-go."
+    )
+    print(
+        "per_block: executed -- the identity is resolved into a two-block projector pair in every context, and the "
+        "kernel argument in section D is stated blockwise: the two candidate stochastic kernels are certified to "
+        "share the ready-state production row exactly while disagreeing on the atom-present block of rows. The "
+        "unidentifiability therefore lives in a block that a one-step production row never touches."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no extended system is constructed, so there is no whole-system "
+        "quantity and no finite-N or thermodynamic content of any kind. The largest object in the file is a 3x3 "
+        "row-stochastic matrix, size is never a parameter, and the generator pair Q and 5Q that stabilizes the same "
+        "stationary vector shows the missing datum is a rate normalization rather than anything volume-dependent."
+    )
+
     print()
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     if PASS > 0 and FAIL == 0:

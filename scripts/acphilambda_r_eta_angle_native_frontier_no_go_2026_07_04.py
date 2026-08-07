@@ -240,10 +240,11 @@ def main() -> int:
     )
     print(
         "per_mode: checked — the available character-mode angles are enumerated and "
-        f"each is shown exactly distinct from the targets: the C3 root angle {root_angle}, "
-        f"the canonical U(1) packagings 2*pi*L = {sp.simplify(two_pi_L)} and "
-        f"2*pi*S_sum = {sp.simplify(two_pi_S)}, none of which equals delta = {delta_target} "
-        f"or Phi = {phi_target}."
+        "four inequalities against the targets are executed, one mode angle at a "
+        f"time: the C3 root angle {root_angle} != Phi = {phi_target}; the canonical "
+        f"U(1) packaging 2*pi*L = {sp.simplify(two_pi_L)} != delta = {delta_target} "
+        f"and != Phi; and 2*pi*S_sum = {sp.simplify(two_pi_S)} != Phi. The two "
+        "remaining mode-angle-versus-delta pairings are not executed here."
     )
     print(
         "per_block: checked and not executed — this runner carries no block "

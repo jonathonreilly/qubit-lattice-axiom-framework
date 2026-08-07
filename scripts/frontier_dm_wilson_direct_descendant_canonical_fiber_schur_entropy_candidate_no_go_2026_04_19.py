@@ -332,9 +332,11 @@ def main() -> int:
         "per_element: checked — the projected-pack components are resolved one "
         "by one at both witnesses, with (gamma, E1, E2, det h) = "
         f"{np.round(shannon_pack4, 6)} for Shannon and {np.round(renyi_pack4, 6)} "
-        "for Renyi-2, every entry strictly above the positivity tolerance "
-        f"{POS_TOL:g}, while at the crossing the observable pack resolves "
-        f"entrywise to {np.round(root_pack, 6)} with E1 = {root_pack[2]:.6f} < 0."
+        "for Renyi-2; the executed assertion is that every entry is strictly "
+        f"positive (POS_TOL = {POS_TOL:g} is the optimizer's own feasibility floor, "
+        "not a separately re-checked margin), while at the crossing the observable "
+        f"pack resolves entrywise to {np.round(root_pack, 6)} with "
+        f"E1 = {root_pack[2]:.6f} < 0."
     )
     print(
         "per_site: checked and not executed — this is a three-generation "

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py
-runner_sha256: fd0579cf18e0bb5f5702c39efcba12f06973f7bad74c5002213e9fbbd2203557
+runner_sha256: c2da8807d595e6fb8798b36a937477124c3fb384b3123b705ca53b373bce04b7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.59
+elapsed_sec: 2.68
 status: ok
 ----- stdout -----
 
@@ -118,9 +118,9 @@ per_element: checked — the compensated lift is validated matrix element by mat
 per_site: checked — the sign frame is an explicit +-1 value carried at every lattice site: the spanning-tree solve assigns w over all 4^3 = 64 and 6^3 = 216 sites, rejects any run leaving a site unassigned, and then re-validates every off-tree edge against the per-site values.
 per_mode: checked and not executed — the heat traces are built from a full eigendecomposition, but only the aggregate Tr(exp(-tH) U) is compared at t = 0.3 and t = 1.0; no eigenvalue and no eigenvector is compared mode by mode, so nothing here is certified at single-mode resolution.
 per_block: checked — three lattice blocks are built and closed independently: K1 at N=4 (64 sites, 192 edges) and K1 at N=6 (216 sites, 648 edges), plus K0 at N=4 where the lift is the bare rotation; each gives an exactly zero covariance residual and a compensated cube equal to +I.
-lattice_wide: checked — the quantities actually compared are whole-lattice functionals: on the full periodic 3-torus the K1 heat traces against Rt and Rt^2 agree to 8.882e-16 and the K0 traces likewise agree below 1e-09, but only at the two volumes N=4 and N=6, with no large-N or continuum limit executed.
+lattice_wide: checked — the quantities actually compared are whole-lattice functionals: on the full periodic 4^3 3-torus the K1 heat traces against Rt and Rt^2 agree to 8.882e-16 and the K0 traces likewise agree below 1e-09. Every heat trace in this runner is taken at N=4 only; the N=6 block is closed on the exact covariance-residual and cube identities, not on any heat trace, and no large-N or continuum limit is executed.
 
-Runtime: 2.00 s
+Runtime: 2.02 s
 TOTAL: PASS=83 FAIL=0
 
 ----- stderr -----

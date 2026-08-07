@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_schur_entropy_candidate_no_go_2026_04_19.py
-runner_sha256: 064d7115394fbe8d6d2f775b0c8aacd76c245273d0802349a72db1c05f07d57a
+runner_sha256: ca60b043409517548791a1db9b59099eae0d8984ac26e32b2e7733c01af52f6a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 19.39
+elapsed_sec: 19.62
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -52,7 +52,7 @@ PART 5: BOTTOM LINE
 ========================================================================================
 N5 EXECUTION CERTIFICATE: WHAT THIS RUNNER ACTUALLY RESOLVES
 ========================================================================================
-per_element: checked — the projected-pack components are resolved one by one at both witnesses, with (gamma, E1, E2, det h) = [0.394212 0.000325 0.000476 0.026684] for Shannon and [0.119541 0.445072 0.005487 0.013695] for Renyi-2, every entry strictly above the positivity tolerance 1e-09, while at the crossing the observable pack resolves entrywise to [ 1.        0.340871 -0.017737  0.029036  0.029777] with E1 = -0.017737 < 0.
+per_element: checked — the projected-pack components are resolved one by one at both witnesses, with (gamma, E1, E2, det h) = [0.394212 0.000325 0.000476 0.026684] for Shannon and [0.119541 0.445072 0.005487 0.013695] for Renyi-2; the executed assertion is that every entry is strictly positive (POS_TOL = 1e-09 is the optimizer's own feasibility floor, not a separately re-checked margin), while at the crossing the observable pack resolves entrywise to [ 1.        0.340871 -0.017737  0.029036  0.029777] with E1 = -0.017737 < 0.
 per_site: checked and not executed — this is a three-generation flavor-space construction; neither the five-component source vector nor the canonical 3x3 h carries a spatial site label, so no site-resolved statement is available from the executed evidence.
 per_mode: checked — the three normalized Schur spectral modes are compared partial-sum by partial-sum: Shannon gives [0.632539 0.320514 0.046947] and Renyi-2 gives [0.540252 0.445721 0.014028], and majorization fails in both directions, so no mode ordering makes 'most isotropic spectrum' well defined on the fiber.
 per_block: checked — the three transport columns are the block units here; the Shannon endpoint resolves them to eta = [0.855779 1.05222  0.853321], keeping the favored column at the exact transport-maximal value eta_1 = 1.052220313052 to within 1e-10.

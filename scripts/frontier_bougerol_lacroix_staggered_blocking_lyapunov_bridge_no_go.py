@@ -517,8 +517,9 @@ print(
     "certifies the bridge site by site."
 )
 print(
-    "per_mode: checked — the 16 taste modes are enumerated one at a time, n_taste "
-    f"taking the {len(set(n_taste_sequence))} distinct values 16 down to 1 with each "
+    "per_mode: checked — the taste-mode COUNT is resolved one rung at a time (no "
+    "individual taste mode is ever constructed or diagonalized here): n_taste takes "
+    f"the {len(set(n_taste_sequence))} distinct values 16 down to 1 with each "
     "rung contributing b_3 = (33 - 2 n_taste)/3, and the taste near-degeneracy "
     f"leaves an available log-gap of only alpha_LM^2 = {alpha_LM_sq:.6f} against the "
     f"required |log alpha_LM| = {required_log_gap:.4f}."

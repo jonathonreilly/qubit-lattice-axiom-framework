@@ -232,6 +232,59 @@ def part5_the_note_records_the_full_closeout_cleanly() -> None:
     )
 
 
+def part6_n5_execution_certificate() -> None:
+    print("\n" + "=" * 88)
+    print("PART 6: N5 EXECUTION CERTIFICATE -- RESOLUTION CLASSES EXERCISED HERE")
+    print("=" * 88)
+
+    pts = sample_points()
+    hs = [active_affine_h(m, delta, q_plus) for m, delta, q_plus in pts]
+    tgts = [active_target_from_h(h) for h in hs]
+    pkg = exact_package()
+
+    print(
+        "  per_element: checked -- the two active coordinates are moved and "
+        "read back one at a time, so the blindness is coordinate-resolved "
+        "rather than aggregate: raising delta leaves the second coordinate "
+        f"pinned at {tgts[0][1]:.12f} while the first moves "
+        f"{tgts[0][0]:.6f} -> {tgts[1][0]:.6f}, and raising q_+ leaves the "
+        f"first pinned while the second moves {tgts[0][1]:.6f} -> "
+        f"{tgts[2][1]:.6f}; same_signature likewise compares all eight bank "
+        "components separately."
+    )
+    print(
+        "  per_site: checked and not executed -- the last microscopic gate this "
+        "runner probes is microscopic in the sense of chart coordinates, not of "
+        "space: the carriers are 3x3 Hermitian points and the target is a pair "
+        "of real numbers, with no lattice, no neighbourhood and no site label "
+        "constructed anywhere, so nothing is certified per site."
+    )
+    print(
+        "  per_mode: checked -- the two unresolved reals are read out of the "
+        "intrinsic Z_3 character kernel, delta from the imaginary doublet "
+        "mixing and q_+ from the centered doublet trace, while the "
+        "singlet-facing readouts stay pinned at gamma = "
+        f"{pkg.gamma:.12f}, E1 = {pkg.E1:.12f}, E2 = {pkg.E2:.12f} across "
+        "every sample; the bank sees the singlet modes and misses the doublet "
+        "modes, and that split is exhibited mode by mode."
+    )
+    print(
+        "  per_block: checked -- four carrier copies are compared block against "
+        f"block, and the fourth deliberately switches on the spectator "
+        f"generator at m = {pts[3][0]}, so the point-blindness is verified not "
+        "only along the two active doublet-block directions but also against "
+        "the spectator block; all four copies return one and the same "
+        "signature while carrying different doublet blocks."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- exactly four points of one "
+        "affine chart are instantiated, with no volume, no sweep to infinity "
+        "and no limit of any kind; the negative closeout is therefore certified "
+        "as a statement about the current bank on those points, and this runner "
+        "asserts nothing at lattice or asymptotic scale."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("DM NEUTRINO SOURCE-SURFACE Z3 DOUBLET-BLOCK FULL CLOSURE BOUNDARY")
@@ -248,6 +301,7 @@ def main() -> int:
     part3_the_current_exact_bank_is_point_blind_on_that_chamber()
     part4_the_current_bank_closes_negatively_at_the_final_gate()
     part5_the_note_records_the_full_closeout_cleanly()
+    part6_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

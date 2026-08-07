@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_e_center_blindness_no_go.py
-runner_sha256: 79ade76c86a1ccde8f3464ec8fd21cfeb3b7024324ea924317a4057b4372deb6
+runner_sha256: 1921a267972b1253e83b4ad8176a8b8ff57f48485dbff012002867fce3dc0210
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 ========================================================================
@@ -64,6 +64,16 @@ PART 4: Low-Rational And Naturality Firewall
   [PASS] The low-rational grammar contains the target but does not select it  (admissible count=643)
   [PASS] Simple naturality choices are exact admissible alternatives but not the target
   [PASS] No E-center-blind pairwise equality among the four endpoint images fixes rho_E  (rho_E only appears when E-center is evaluated)
+
+========================================================================
+  N5 Execution Certificate
+========================================================================
+
+  per_element: the whole no-go turns on one coordinate of the four-component carrier -- subtracting E-shell from E-center leaves (0, 0, 1/6, 0), so d_E is the single slot rho_E can reach through beta_E*d_E, and that is why the four tested slopes -1, 0, 1 and 21/4 move the E-center image through 5/6, 1, 7/6 and 15/8 while leaving every other component untouched.
+  per_site: resolved at both site roles on both channels -- shell and center vectors are built separately for E and for T, the readout is applied to all four of them, and the center-over-shell ratios are taken per channel to give q_T=5/6 against a free q_E; what is absent is any finer site structure, since the six shell arms are never individually addressed and no coordinate is carried.
+  per_mode: the two channels are separated by the readout's own block form -- apply returns alpha_E*x_E + beta_E*d_E in the first slot and alpha_T*x_T + beta_T*d_T in the second, so with alpha_T=-2 and beta_T=2 the T mode is pinned at T-shell -2 and T-center -5/3, and the residual sits wholly in the E mode; the second slot is exactly 0 on both E vectors, so no cross-channel leakage exists.
+  per_block: resolved as an exact subspace-rank statement -- the E-center-blind block spanned by E-shell, T-shell and T-center has rank 3, the full carrier basis has rank 4, and the lift direction fails to lie in the blind span, raising the rank from 3 to 4; that missing dimension is the entire content of the blindness, not an approximation or a tolerance.
+  lattice_wide: checked and not executed -- this runner works inside one four-dimensional endpoint carrier and never sums over sites, grows a box or takes a limit; its widest sweep is a finite grammar of 643 distinct low rationals of which all 643 are E-center-blind admissible, which counts candidates rather than evaluating any extended field, and the global object still owed is the E-center lift the summary names.
 
 ========================================================================
 PART 5: Summary

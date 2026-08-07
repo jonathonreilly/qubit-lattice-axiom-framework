@@ -1,77 +1,47 @@
 {
-  "audit_date": "2026-05-05T04:20:10.208839+00:00",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_effective_status": {
-      "alt_connectivity_family_sign_note": "retained_bounded"
-    },
-    "deps": [
-      "alt_connectivity_family_sign_note"
-    ],
-    "load_bearing_score": 10.229,
-    "runner_hash": "f28cfee9c818c92988da7074a68ecf2f40326348b039853f1f26432ca8d21270",
-    "transitive_descendants": 299
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-fresh-second-alt_connectivity_family_basin_note-20260505",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The dependency is retained_bounded and supplies the alternative family/sign setup; the basin runner extends it over the explicitly listed finite drift/seed grid and computes the row outcomes. The source note's bounded, non-universal safe read follows from the cached runner output.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "alt_connectivity_family_basin_note",
-  "claim_scope": "Finite bounded sweep showing that the parity-rotated sector-transition alternative connectivity family has 32/45 passing rows over the stated 9 drift values and 5 seeds on the no-restore grown slice, with no claim of seed-wide, geometry-generic, or unique-family closure.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-05T04:20:10.208839+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "high",
-  "cross_confirmation": {
-    "first_audit": {
-      "audit_date": "2026-05-05T03:37:16.302567+00:00",
-      "auditor": "codex-cli-gpt-5.5-20260505-033337-de2b049d-alt_connectivity_family_-005",
-      "auditor_family": "codex-gpt-5.5",
-      "claim_scope": "A bounded computational basin for the parity-rotated sector-transition connectivity family on the no-restore grown slice over drifts [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5] and seeds [0, 1, 2, 3, 4].",
-      "claim_type": "bounded_theorem",
-      "independence": "cross_family",
-      "load_bearing_step_class": "C",
-      "verdict": "audited_clean"
-    },
-    "second_audit": {
-      "audit_date": "2026-05-05T04:20:10.208458+00:00",
-      "auditor": "codex-fresh-second-alt_connectivity_family_basin_note-20260505",
-      "auditor_family": "codex-gpt-5.5",
-      "claim_scope": "Finite bounded sweep showing that the parity-rotated sector-transition alternative connectivity family has 32/45 passing rows over the stated 9 drift values and 5 seeds on the no-restore grown slice, with no claim of seed-wide, geometry-generic, or unique-family closure.",
-      "claim_type": "bounded_theorem",
-      "independence": "fresh_context",
-      "load_bearing_step_class": "C",
-      "previous_auditor_family": "codex-gpt-5",
-      "verdict": "audited_clean"
-    },
-    "status": "confirmed"
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "alt_connectivity_family_sign_note"
   ],
   "direct_in_degree": 5,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
     "scripts/gate_b_no_restore_farfield.py"
   ],
-  "independence": "fresh_context",
-  "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 12.172,
-  "load_bearing_step": "Sweep summary: tested drifts 0.0 through 0.5 over seeds 0 through 4, with passing rows 32/45 and clean zero, neutral, sign-orientation, and near-linear charge-scaling controls on passing rows.",
-  "load_bearing_step_class": "C",
-  "max_descendant_status": "retained_bounded",
-  "max_descendant_status_rank": 95,
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.172,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "cb4afe8b657bf32a2700a05967dd893bf44cde67c5d510ec21c817cc81529533",
   "note_path": "docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md",
-  "notes_for_re_audit_if_any": "Re-check the runner's final mean-exponent summary indexing if that summary number later becomes load-bearing; it is not load-bearing for this bounded 32/45 basin audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-gpt-5",
   "previous_audits": [
@@ -208,6 +178,78 @@
         }
       },
       "verdict_rationale": "Issue: The load-bearing step treats a finite configured sweep with 32/45 passing rows as a real bounded basin. Why this blocks: A bounded theorem may claim the enumerated drift/seed results, but the current note and runner do not derive any basin criterion, interpolation theorem, open-neighborhood guarantee, or independently justified sampling measure that turns those rows into a basin rather than a larger finite numerical pass set. Repair target: Add a theorem or certified computation defining the basin boundary/measure and proving that the sampled passing set implies that bounded basin, or demote the claim to the exact finite sweep result. Also fix the runner summary indexing for mean exponent. Claim boundary until fixed: It is safe to say that, for the configured 45 drift/seed rows, 32 pass the listed controls and every tested drift has at least one passing seed."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.606459+00:00",
+      "audit_date": "2026-05-05T04:20:10.208839+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "alt_connectivity_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "alt_connectivity_family_sign_note"
+        ],
+        "load_bearing_score": 10.229,
+        "runner_hash": "f28cfee9c818c92988da7074a68ecf2f40326348b039853f1f26432ca8d21270",
+        "transitive_descendants": 299
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-second-alt_connectivity_family_basin_note-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The dependency is retained_bounded and supplies the alternative family/sign setup; the basin runner extends it over the explicitly listed finite drift/seed grid and computes the row outcomes. The source note's bounded, non-universal safe read follows from the cached runner output.",
+      "claim_scope": "Finite bounded sweep showing that the parity-rotated sector-transition alternative connectivity family has 32/45 passing rows over the stated 9 drift values and 5 seeds on the no-restore grown slice, with no claim of seed-wide, geometry-generic, or unique-family closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:20:10.208839+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-05T03:37:16.302567+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260505-033337-de2b049d-alt_connectivity_family_-005",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "A bounded computational basin for the parity-rotated sector-transition connectivity family on the no-restore grown slice over drifts [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5] and seeds [0, 1, 2, 3, 4].",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-05T04:20:10.208458+00:00",
+          "auditor": "codex-fresh-second-alt_connectivity_family_basin_note-20260505",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Finite bounded sweep showing that the parity-rotated sector-transition alternative connectivity family has 32/45 passing rows over the stated 9 drift values and 5 seeds on the no-restore grown slice, with no claim of seed-wide, geometry-generic, or unique-family closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "previous_auditor_family": "codex-gpt-5",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "Sweep summary: tested drifts 0.0 through 0.5 over seeds 0 through 4, with passing rows 32/45 and clean zero, neutral, sign-orientation, and near-linear charge-scaling controls on passing rows.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the runner's final mean-exponent summary indexing if that summary number later becomes load-bearing; it is not load-bearing for this bounded 32/45 basin audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 32,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The load-bearing result is a finite deterministic sweep, not a generic physics bridge, and the note correctly limits the claim to a bounded basin rather than universal closure. The cached runner completes successfully and computes the 32/45 row count from the grown geometries, alternative connectivity construction, propagated source fields, and explicit ok gate; it does not use an external comparator or import the 32/45 result as an input. Residual risk is that the runner's final mean-exponent summary appears to index the neutral column rather than the exponent column, but the row-level exponents and ok predicate still support the source note's near-linear scaling statement."
     }
   ],
   "prose_corrections": [],
@@ -217,12 +259,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 32,
+    "C": 0,
     "D": 0,
-    "total_pass": 32
+    "total_pass": 0
   },
   "runner_path": "scripts/ALT_CONNECTIVITY_FAMILY_BASIN.py",
   "title": "ALT Connectivity Family Basin Note",
   "transitive_descendants": 101,
-  "verdict_rationale": "The load-bearing result is a finite deterministic sweep, not a generic physics bridge, and the note correctly limits the claim to a bounded basin rather than universal closure. The cached runner completes successfully and computes the 32/45 row count from the grown geometries, alternative connectivity construction, propagated source fields, and explicit ok gate; it does not use an external comparator or import the 32/45 result as an input. Residual risk is that the runner's final mean-exponent summary appears to index the neutral column rather than the exponent column, but the row-level exponents and ok predicate still support the source note's near-linear scaling statement."
+  "verdict_rationale": null
 }

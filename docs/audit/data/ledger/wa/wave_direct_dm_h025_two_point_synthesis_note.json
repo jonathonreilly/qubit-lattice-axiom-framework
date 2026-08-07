@@ -1,44 +1,24 @@
 {
-  "audit_date": "2026-05-28T03:20:36.628226+00:00",
-  "audit_state_snapshot": {
-    "criticality": "high",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "wave_direct_dm_h025_fam1_seed0_control_note": "Runner-defined Fam1, seed 0, H=0.25 control replay only: exact S=0 null, common negative weak-field sign across S=0.002/0.004/0.008, and approximately linear weak-field scaling with R_hist around -20% to -21%. No Fam1 seed1, Fam2, cross-family, or general H=0.25 portability claim.",
-      "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%."
-    },
-    "dep_claim_type": {
-      "wave_direct_dm_h025_fam1_seed0_control_note": "bounded_theorem",
-      "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "wave_direct_dm_h025_fam1_seed0_control_note": "retained_bounded",
-      "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded"
-    },
-    "deps": [
-      "wave_direct_dm_h025_fam1_seed0_control_note",
-      "wave_direct_dm_h025_fam1_seed1_control_note"
-    ],
-    "load_bearing_score": 8.587,
-    "runner_hash": "87f7b9946cacf9ef89096deba2ae6d66b9cb8c11efa2d75999ae4e27ab16c09e",
-    "transitive_descendants": 16
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-audit-loop-wave-direct-dm-h025-two-point-20260528-r1",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Both one-hop control notes are retained-bounded, the direct runner completes in this worktree with PASS=39 FAIL=0, and independent arithmetic on the frozen logs confirms delta_hist = dM(early)-dM(late), negative signs for both seeds, and |R_hist(seed1)| > |R_hist(seed0)| at S=0.004.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "wave_direct_dm_h025_two_point_synthesis_note",
-  "claim_scope": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-05-28T03:20:36.628226+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -47,19 +27,19 @@
     "wave_direct_dm_h025_fam1_seed1_control_note"
   ],
   "direct_in_degree": 8,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 10.907,
-  "load_bearing_step": "The synthesis table combines the retained seed0 and seed1 control ladders at Fam1, H=0.25, S=0.004 and asserts common negative delta_hist with seed 1 having the larger-magnitude negative R_hist.",
-  "load_bearing_step_class": "B",
-  "max_descendant_status": "retained_bounded",
-  "max_descendant_status_rank": 95,
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.907,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "a326ec7ba15cf86459ab3c08e29ec973c8bab7a496634e60f74133c05e8e530c",
   "note_path": "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
-  "notes_for_re_audit_if_any": "Re-audit if the source reintroduces coarse-band reversal/mechanism language, broadens beyond the two Fam1 H=0.25 seeds, or runner/log hashes change.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -252,20 +232,80 @@
         "total_pass": 1
       },
       "verdict_rationale": "Issue: The note's headline depends on old coarse-H seed ordering and late-gain compression bands, but the coarse-H high/low logs are only mentioned in the source note authority chain and are not provided as retained one-hop dependencies. Why this blocks: without retained coarse-H dependency edges or runner artifacts, the audit packet verifies the fine-H seed pair/control core but cannot close the refinement-instability and compression-mechanism portion of the bounded theorem. Repair target: add retained one-hop dependencies for the coarse-H seed-band logs high/low, or attach runner/source/output artifacts that reproduce the coarse-H R_hist and late-gain band values for both seeds. Claim boundary until fixed: the clean core is limited to the controlled Fam1 H=0.25 seed0/seed1 fine-H sign/null/control-ladder comparison; the coarse-to-fine seed-ordering reversal and uneven late-gain-compression explanation remain conditional."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.870568+00:00",
+      "audit_date": "2026-05-28T03:20:36.628226+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam1_seed0_control_note": "Runner-defined Fam1, seed 0, H=0.25 control replay only: exact S=0 null, common negative weak-field sign across S=0.002/0.004/0.008, and approximately linear weak-field scaling with R_hist around -20% to -21%. No Fam1 seed1, Fam2, cross-family, or general H=0.25 portability claim.",
+          "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam1_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam1_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam1_seed0_control_note",
+          "wave_direct_dm_h025_fam1_seed1_control_note"
+        ],
+        "load_bearing_score": 8.587,
+        "runner_hash": "87f7b9946cacf9ef89096deba2ae6d66b9cb8c11efa2d75999ae4e27ab16c09e",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-wave-direct-dm-h025-two-point-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Both one-hop control notes are retained-bounded, the direct runner completes in this worktree with PASS=39 FAIL=0, and independent arithmetic on the frozen logs confirms delta_hist = dM(early)-dM(late), negative signs for both seeds, and |R_hist(seed1)| > |R_hist(seed0)| at S=0.004.",
+      "claim_scope": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T03:20:36.628226+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The synthesis table combines the retained seed0 and seed1 control ladders at Fam1, H=0.25, S=0.004 and asserts common negative delta_hist with seed 1 having the larger-magnitude negative R_hist.",
+      "load_bearing_step_class": "B",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if the source reintroduces coarse-band reversal/mechanism language, broadens beyond the two Fam1 H=0.25 seeds, or runner/log hashes change.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 39,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The source has been narrowed to the retained-core fine-pair comparison and explicitly excludes the older coarse-band reversal/mechanism claims. The runner checks source boundaries, reads only the two Fam1 seed-control logs, verifies exact nulls/sign patterns/spread summaries, and matches the S=0.004 table values. A separate log arithmetic check reproduces the negative deltas and R_hist ordering within rounding. Residual risk is limited to the finite logged control-ladder setup; no family-wide, portability, mechanism, or coarse-band conclusion is retained."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
     "A": 0,
-    "B": 39,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_fail": 0,
-    "total_pass": 39
+    "total_pass": 0
   },
   "runner_path": "scripts/wave_direct_dm_h025_fam1_fine_pair_synthesis_certificate.py",
   "title": "Wave Direct-dM H=0.25 Fam1 Fine-Pair Synthesis",
   "transitive_descendants": 14,
-  "verdict_rationale": "The source has been narrowed to the retained-core fine-pair comparison and explicitly excludes the older coarse-band reversal/mechanism claims. The runner checks source boundaries, reads only the two Fam1 seed-control logs, verifies exact nulls/sign patterns/spread summaries, and matches the S=0.004 table values. A separate log arithmetic check reproduces the negative deltas and R_hist ordering within rounding. Residual risk is limited to the finite logged control-ladder setup; no family-wide, portability, mechanism, or coarse-band conclusion is retained."
+  "verdict_rationale": null
 }

@@ -1,40 +1,24 @@
 {
-  "audit_date": "2026-06-18T08:43:57.646067+00:00",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11": "Finite runner-defined diagnostic for the stated L=3 and L=4 ring events, occupancies, seeds, depths, sparse Fock evolution, SVD-polar determinant readout, and fixed seeded 300-draw label-permutation null protocol."
-    },
-    "dep_claim_type": {
-      "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11": "retained_bounded"
-    },
-    "deps": [
-      "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
-    ],
-    "load_bearing_score": 5.322,
-    "runner_hash": "59be6d7f42385aee3b5125f0f4ce2e08f93a0af6c50fa17fec0d2cbd7d1a65eb",
-    "transitive_descendants": 19
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11-first",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The runner source constructs the finite sparse Fock systems, evolves them with expm_multiply, computes determinant phases, prefix statistics, sampled-null p95 values, min-gains, and medians, and its cached output matches the source note. The closure is only for the explicitly scoped finite diagnostic, not an exhaustive permutation null, asymptotic law, or physical U(1) gauge-field claim.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11",
-  "claim_scope": "For the stated L=3, L=4, and L=5 ring events, occupancies, seeds, depths, sparse Fock evolution/SVD-polar determinant readout, and fixed seeded 300-draw sampled-null protocol, the displayed min-gain ledger, sampled-null gaps, and non-monotone gap-median series are audited.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-06-18T08:43:57.646067+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -42,19 +26,19 @@
     "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
   ],
   "direct_in_degree": 1,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 2.822,
-  "load_bearing_step": "For the stated L=3/L=4/L=5 events, occupancies, seeds, depth choices, and fixed 300-permutation sampled-null protocol, the three-point min-gain ledger and sampled-null gap series have the displayed values.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "13736bf30d2ab2c89c6196e974c2343ac813a7049a429145296f10c6c7213f5e",
   "note_path": "docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md",
-  "notes_for_re_audit_if_any": "Second auditor should spot-check the prefix-label permutation/null_p95 implementation and the L=3 pinned versus L=4/L=5 most-spread selector caveat; no exhaustive permutation-null theorem was audited.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -140,19 +124,75 @@
         "total_pass": 17
       },
       "verdict_rationale": "The runner genuinely builds the finite fermionic operators and computes the displayed profiles, min-gains, seeded-null gaps, and medians; the displayed ledger checks arithmetically against stdout. However, the source note explicitly inherits conditional premises and modeling choices not supplied as retained one-hop authorities in this restricted packet. The primitive-registry excerpt does not supply those missing dynamics, readout, carrier, selector, probability, or parameter choices. The finite diagnostic is therefore credible only conditional on the unstated/imported framework setup."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.783942+00:00",
+      "audit_date": "2026-06-18T08:43:57.646067+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11": "Finite runner-defined diagnostic for the stated L=3 and L=4 ring events, occupancies, seeds, depths, sparse Fock evolution, SVD-polar determinant readout, and fixed seeded 300-draw label-permutation null protocol."
+        },
+        "dep_claim_type": {
+          "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11": "retained_bounded"
+        },
+        "deps": [
+          "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "59be6d7f42385aee3b5125f0f4ce2e08f93a0af6c50fa17fec0d2cbd7d1a65eb",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the finite sparse Fock systems, evolves them with expm_multiply, computes determinant phases, prefix statistics, sampled-null p95 values, min-gains, and medians, and its cached output matches the source note. The closure is only for the explicitly scoped finite diagnostic, not an exhaustive permutation null, asymptotic law, or physical U(1) gauge-field claim.",
+      "claim_scope": "For the stated L=3, L=4, and L=5 ring events, occupancies, seeds, depths, sparse Fock evolution/SVD-polar determinant readout, and fixed seeded 300-draw sampled-null protocol, the displayed min-gain ledger, sampled-null gaps, and non-monotone gap-median series are audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T08:43:57.646067+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "For the stated L=3/L=4/L=5 events, occupancies, seeds, depth choices, and fixed 300-permutation sampled-null protocol, the three-point min-gain ledger and sampled-null gap series have the displayed values.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should spot-check the prefix-label permutation/null_p95 implementation and the L=3 pinned versus L=4/L=5 most-spread selector caveat; no exhaustive permutation-null theorem was audited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 17,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing numbers are computed directly by the provided runner rather than imported from the cited authority or hard-coded as a print-only result. The one-hop authority is retained_bounded, which is retained-grade under the rubric, and the source note explicitly confines load-bearing content to the runner-defined finite objects. The negative conclusion is scoped to the displayed finite period series and does not overclaim an all-permutation null, asymptotic behavior, L>=6 behavior, or a physical gauge interpretation."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 7,
+    "A": 0,
     "B": 0,
-    "C": 17,
+    "C": 0,
     "D": 0,
-    "total_pass": 24
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py",
   "title": "The Three-Point Period Series (L=3,4,5) of the Record-Conditional U(1) Law: No Systematic Period Strengthening \u2014 the Min-Gain Ledger Replaces the Monotone/Stall Dichotomy",
   "transitive_descendants": 4,
-  "verdict_rationale": "The load-bearing numbers are computed directly by the provided runner rather than imported from the cited authority or hard-coded as a print-only result. The one-hop authority is retained_bounded, which is retained-grade under the rubric, and the source note explicitly confines load-bearing content to the runner-defined finite objects. The negative conclusion is scoped to the displayed finite period series and does not overclaim an all-permutation null, asymptotic behavior, L>=6 behavior, or a physical gauge interpretation."
+  "verdict_rationale": null
 }

@@ -1,40 +1,24 @@
 {
-  "audit_date": "2026-06-18T13:42:33.011532+00:00",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "valley_linear_asymptotic_bridge_note": "Audited the bounded finite-lattice claim that the provided valley-linear 3D runner computes TOWARD sign persistence, near-linear mass scaling, and slice-dependent far-tail exponents for h=0.5,W=8; h=0.25,W=10; and h=0.25,W=12."
-    },
-    "dep_claim_type": {
-      "valley_linear_asymptotic_bridge_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "valley_linear_asymptotic_bridge_note": "retained_bounded"
-    },
-    "deps": [
-      "valley_linear_asymptotic_bridge_note"
-    ],
-    "load_bearing_score": 4.5,
-    "runner_hash": "32bd32b33e63357df81134773f956e1d6ce74e2801fb29fc62c4c2b3363effdc",
-    "transitive_descendants": 15
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-lattice_3d_nyquist_diffraction_note-first",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The primary runner constructs the lattice, field, slit geometry, propagates amplitudes, scans k, computes centroid shifts, and interpolates the first sign flip without hard-coding the reported flip values. The cited retained_bounded authority supplies the finite valley-linear lattice family context, and no open external comparator or continuum bridge is needed for this bounded lattice-artifact claim.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "lattice_3d_nyquist_diffraction_note",
-  "claim_scope": "Finite ordered-lattice valley-linear probe showing that, for h=0.5 and h=0.25 at strengths 1e-4 and 1e-2, the first positive-to-negative gravity-side centroid-shift flip occurs near pi/h and scales with the lattice spacing.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-06-18T13:42:33.011532+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -42,21 +26,21 @@
     "valley_linear_asymptotic_bridge_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/lattice_3d_valley_linear_card.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The first gravity sign flip tracks the lattice Nyquist scale, stays field-independent to the tested order of magnitude, and moves with h rather than staying at a fixed continuum scale.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "3501ae19eeade9119e3456b8d64b746f6717e8fbd87a3c41a6db1c356a85ce49",
   "note_path": "docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md",
-  "notes_for_re_audit_if_any": "Second auditor should preserve the finite-scan scope: this certifies the bounded Nyquist-tracking artifact, not an exact continuum or exact-aliasing theorem.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -175,6 +159,62 @@
         "total_pass": 4
       },
       "verdict_rationale": "The load-bearing step is a first-principles finite-lattice computation within the supplied runner/helper chain: it constructs the lattice, propagates free and field-coupled amplitudes, computes detector centroid shifts, and interpolates the first sign flip. No hard-coded expected flip, external comparator, or cross-note numerical import appears on the load-bearing path. The clean verdict is limited to the bounded sweep; it does not promote the result to an exact continuum theorem."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.752381+00:00",
+      "audit_date": "2026-06-18T13:42:33.011532+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "valley_linear_asymptotic_bridge_note": "Audited the bounded finite-lattice claim that the provided valley-linear 3D runner computes TOWARD sign persistence, near-linear mass scaling, and slice-dependent far-tail exponents for h=0.5,W=8; h=0.25,W=10; and h=0.25,W=12."
+        },
+        "dep_claim_type": {
+          "valley_linear_asymptotic_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "valley_linear_asymptotic_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "valley_linear_asymptotic_bridge_note"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "32bd32b33e63357df81134773f956e1d6ce74e2801fb29fc62c4c2b3363effdc",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-lattice_3d_nyquist_diffraction_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner constructs the lattice, field, slit geometry, propagates amplitudes, scans k, computes centroid shifts, and interpolates the first sign flip without hard-coding the reported flip values. The cited retained_bounded authority supplies the finite valley-linear lattice family context, and no open external comparator or continuum bridge is needed for this bounded lattice-artifact claim.",
+      "claim_scope": "Finite ordered-lattice valley-linear probe showing that, for h=0.5 and h=0.25 at strengths 1e-4 and 1e-2, the first positive-to-negative gravity-side centroid-shift flip occurs near pi/h and scales with the lattice spacing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T13:42:33.011532+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The first gravity sign flip tracks the lattice Nyquist scale, stays field-independent to the tested order of magnitude, and moves with h rather than staying at a fixed continuum scale.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should preserve the finite-scan scope: this certifies the bounded Nyquist-tracking artifact, not an exact continuum or exact-aliasing theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner source and helper source implement the load-bearing computation directly from the finite lattice propagator, action, kernel, field, and detector geometry, then compare the computed flips to pi/h. The stdout values match the source note: both spacings show the first positive-to-negative flip near the corresponding Nyquist scale, and the flip scale roughly doubles when h halves. The clean result is bounded to the stated finite scan and does not establish a continuum theorem or exact aliasing proof."
     }
   ],
   "prose_corrections": [],
@@ -182,12 +222,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 4,
+    "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/lattice_3d_nyquist_diffraction_probe.py",
   "title": "Lattice 3D Nyquist Diffraction Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "The runner source and helper source implement the load-bearing computation directly from the finite lattice propagator, action, kernel, field, and detector geometry, then compare the computed flips to pi/h. The stdout values match the source note: both spacings show the first positive-to-negative flip near the corresponding Nyquist scale, and the flip scale roughly doubles when h halves. The clean result is bounded to the stated finite scan and does not establish a continuum theorem or exact aliasing proof."
+  "verdict_rationale": null
 }

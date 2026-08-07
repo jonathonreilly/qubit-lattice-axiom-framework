@@ -1,164 +1,42 @@
 {
-  "audit_date": "2026-08-03T11:57:17.126678+00:00",
-  "audit_invocation_history": [
-    "510590e3450e4bd9808653675fdef6fb",
-    "7faefe8e06c84770b7a12892ed95d281"
-  ],
-  "audit_invocation_id": "7faefe8e06c84770b7a12892ed95d281",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 14,
-        "B": 0,
-        "C": 2,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "judgment_fingerprint": {
-      "claim_id": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
-      "digest": "7f71d77a744b19f4a9604790800b7bcd8d8ff65e868501c1d90350f1d04930da",
-      "judgment": {
-        "audit_date": "2026-08-03T11:57:17.126678+00:00",
-        "audit_invocation_id": "7faefe8e06c84770b7a12892ed95d281",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-audit-batch-B-20260803-2897f7e8",
-        "auditor_confidence": "high",
-        "auditor_family": "codex-gpt-5.6",
-        "auditor_model": "gpt-5.6-sol",
-        "auditor_reasoning_effort": "xhigh",
-        "chain_closes": false,
-        "chain_closure_explanation": "The determinant identity and unnormalized odd-odd antisymmetry close algebraically. However, (2) is stated as an expectation with respect to Z_F for every complex M; when det(M)=0 that normalization is undefined, and no nonzero-determinant restriction is stated.",
-        "claim_scope": "For finite Grassmann generators satisfying (G1)-(G3) and (B1)-(B2), the claimed determinant identity for arbitrary complex M, odd-odd correlator antisymmetry, and stated algebraic corollaries.",
-        "claim_type": "bounded_theorem",
-        "claim_type_provenance": "audited",
-        "cross_confirmation": null,
-        "decoration_parent_claim_id": null,
-        "independence": "fresh_context",
-        "load_bearing_step": "For any complex M, the ordered quadratic Berezin integral equals det(M), and expectations of two odd-graded operators change sign under exchange.",
-        "load_bearing_step_class": "A",
-        "negative_assertion_classes": [],
-        "notes_for_re_audit_if_any": "scope_too_broad: restrict normalized correlators to det(M) != 0 or define (2) explicitly as an unnormalized Berezin integral, replace the incorrect single-generator proof sentence with the graded-commutativity argument, and add a direct measure-order/sign check to the runner.",
-        "open_dependency_paths": [],
-        "runner_check_breakdown": {
-          "A": 19,
-          "B": 0,
-          "C": 0,
-          "D": 0,
-          "total_pass": 19
-        },
-        "verdict_rationale": "Issue: Equation (2) is asserted for every complex M as an expectation normalized by Z_F, although Z_F=det(M) may vanish. Why this blocks: for singular M the normalized correlators are undefined, so the universal claim does not close even though (D) and the unnormalized odd-odd identity do. Repair target: state det(M) != 0 whenever brackets are normalized, use graded commutativity rather than the false assertion that every odd element contains one generator factor, and directly check the Berezin measure sign. Claim boundary until fixed: with a consistently ordered measure, (D), unnormalized antisymmetry, and normalized antisymmetry for det(M) != 0 remain supported."
-      },
-      "schema": "frozen_audit_judgment_v1"
-    },
-    "load_bearing_score": 15.803,
-    "packet_policy_fingerprint": {
-      "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
-      "schema": "packet_policy_fingerprint_v1",
-      "sources": {
-        "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-        "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
-        "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
-        "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
-        "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
-        "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
-      }
-    },
-    "policy_versions": {
-      "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "a251ed8010207f293f41d85a857de11dbeeb4fcb194b8444286bc1b8375831a7",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "a251ed8010207f293f41d85a857de11dbeeb4fcb194b8444286bc1b8375831a7",
-    "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "science_fingerprint": {
-      "dependencies": [],
-      "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
-      "digest": "de86e077c82b497ad630f1aabdacc8f0a5955d16c5c7ac380abf4d2128cc68fd",
-      "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
-      "runners": [
-        {
-          "declared_input_fingerprint_sha256": null,
-          "declared_input_paths": null,
-          "declared_inputs": [],
-          "path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
-          "present": true,
-          "role": "primary",
-          "sha256": "a251ed8010207f293f41d85a857de11dbeeb4fcb194b8444286bc1b8375831a7"
-        }
-      ],
-      "schema": "science_fingerprint_v2",
-      "target": {
-        "claim_id": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
-        "claim_scope": "For finite Grassmann generators satisfying (G1)-(G3) and (B1)-(B2), the claimed determinant identity for arbitrary complex M, odd-odd correlator antisymmetry, and stated algebraic corollaries.",
-        "claim_type": "bounded_theorem",
-        "ledger_note_hash": "2f746f008caf0f18c48bc7fda7ced8b42fa264bf7635ebca44aa91557de8c8e6",
-        "note_path": "docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
-        "note_sha256": "2f746f008caf0f18c48bc7fda7ced8b42fa264bf7635ebca44aa91557de8c8e6"
-      }
-    },
-    "transitive_descendants": 1262
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260803-2897f7e8",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The determinant identity and unnormalized odd-odd antisymmetry close algebraically. However, (2) is stated as an expectation with respect to Z_F for every complex M; when det(M)=0 that normalization is undefined, and no nonzero-determinant restriction is stated.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
-  "claim_scope": "For finite Grassmann generators satisfying (G1)-(G3) and (B1)-(B2), the claimed determinant identity for arbitrary complex M, odd-odd correlator antisymmetry, and stated algebraic corollaries.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-08-03T11:57:17.126678+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 11,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 15.803,
-  "load_bearing_step": "For any complex M, the ordered quadratic Berezin integral equals det(M), and expectations of two odd-graded operators change sign under exchange.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "2f746f008caf0f18c48bc7fda7ced8b42fa264bf7635ebca44aa91557de8c8e6",
   "note_path": "docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: restrict normalized correlators to det(M) != 0 or define (2) explicitly as an unnormalized Berezin integral, replace the incorrect single-generator proof sentence with the graded-commutativity argument, and add a direct measure-order/sign check to the runner.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -341,19 +219,178 @@
         "total_pass": 19
       },
       "verdict_rationale": "This is a genuine class-(A) algebraic closure from explicitly stated finite-Grassmann hypotheses, without a physical-field identification or imported numerical premise. The runner performs 19 exact algebraic checks of the Leibniz determinant formula, exterior-algebra relations, antisymmetry, and stated corollaries; although it does not implement the full exponential coefficient extraction, that general step is supplied by the source proof. The clean scope fixes the Berezin-measure orientation and excludes normalized correlators when det(M)=0."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.800834+00:00",
+      "audit_date": "2026-08-03T11:57:17.126678+00:00",
+      "audit_invocation_history": [
+        "510590e3450e4bd9808653675fdef6fb",
+        "7faefe8e06c84770b7a12892ed95d281"
+      ],
+      "audit_invocation_id": "7faefe8e06c84770b7a12892ed95d281",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 14,
+            "B": 0,
+            "C": 2,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "judgment_fingerprint": {
+          "claim_id": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "digest": "7f71d77a744b19f4a9604790800b7bcd8d8ff65e868501c1d90350f1d04930da",
+          "judgment": {
+            "audit_date": "2026-08-03T11:57:17.126678+00:00",
+            "audit_invocation_id": "7faefe8e06c84770b7a12892ed95d281",
+            "audit_status": "audited_conditional",
+            "auditor": "codex-audit-batch-B-20260803-2897f7e8",
+            "auditor_confidence": "high",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "chain_closes": false,
+            "chain_closure_explanation": "The determinant identity and unnormalized odd-odd antisymmetry close algebraically. However, (2) is stated as an expectation with respect to Z_F for every complex M; when det(M)=0 that normalization is undefined, and no nonzero-determinant restriction is stated.",
+            "claim_scope": "For finite Grassmann generators satisfying (G1)-(G3) and (B1)-(B2), the claimed determinant identity for arbitrary complex M, odd-odd correlator antisymmetry, and stated algebraic corollaries.",
+            "claim_type": "bounded_theorem",
+            "claim_type_provenance": "audited",
+            "cross_confirmation": null,
+            "decoration_parent_claim_id": null,
+            "independence": "fresh_context",
+            "load_bearing_step": "For any complex M, the ordered quadratic Berezin integral equals det(M), and expectations of two odd-graded operators change sign under exchange.",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+            "notes_for_re_audit_if_any": "scope_too_broad: restrict normalized correlators to det(M) != 0 or define (2) explicitly as an unnormalized Berezin integral, replace the incorrect single-generator proof sentence with the graded-commutativity argument, and add a direct measure-order/sign check to the runner.",
+            "open_dependency_paths": [],
+            "runner_check_breakdown": {
+              "A": 19,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "total_pass": 19
+            },
+            "verdict_rationale": "Issue: Equation (2) is asserted for every complex M as an expectation normalized by Z_F, although Z_F=det(M) may vanish. Why this blocks: for singular M the normalized correlators are undefined, so the universal claim does not close even though (D) and the unnormalized odd-odd identity do. Repair target: state det(M) != 0 whenever brackets are normalized, use graded commutativity rather than the false assertion that every odd element contains one generator factor, and directly check the Berezin measure sign. Claim boundary until fixed: with a consistently ordered measure, (D), unnormalized antisymmetry, and normalized antisymmetry for det(M) != 0 remain supported."
+          },
+          "schema": "frozen_audit_judgment_v1"
+        },
+        "load_bearing_score": 15.803,
+        "packet_policy_fingerprint": {
+          "digest": "3ba7e0850699de68e8ba86351aac670c195aac563281dc2aed2fd549765b51ba",
+          "schema": "packet_policy_fingerprint_v1",
+          "sources": {
+            "docs/ai_methodology/skills/audit-loop/SKILL.md": "2f3fc92689aaea26f5f8305be4b0008a4968d129501d8174cca057b33fd42936",
+            "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+            "docs/audit/scripts/apply_audit.py": "c9be4e94bae1c61bce558767adcd87f5db58062632dfc99597abb495cbad1c33",
+            "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",
+            "docs/audit/scripts/no_go_discipline_gate.py": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+            "docs/audit/scripts/orchestrate_audit_loop.py": "153f71f617e264428eaaf1ff2477401dae297602988cd2ddade901a55a2ba0b1",
+            "scripts/codex_audit_runner.py": "b05bc262c06be0c36afa124d077b7f9ab0167f58d5e699c7e14d9a508eed33ba"
+          }
+        },
+        "policy_versions": {
+          "audit_prompt_template_sha256": "a5a0bbf0c757019de63fa737ca29fb28b3b835872b87c88c1a7d083dc0f8fd11",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "a251ed8010207f293f41d85a857de11dbeeb4fcb194b8444286bc1b8375831a7",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "a251ed8010207f293f41d85a857de11dbeeb4fcb194b8444286bc1b8375831a7",
+        "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "science_fingerprint": {
+          "dependencies": [],
+          "dependency_policy_epoch": "851282352b8361355483ed852ac492b64c4b0cb73a3f66f311046cc94ac934dc",
+          "digest": "de86e077c82b497ad630f1aabdacc8f0a5955d16c5c7ac380abf4d2128cc68fd",
+          "framework_premise_epoch": "165602dd6159ee02ffbcfafd6ad5ef57379927914d0eab015d33beca8f07942c",
+          "runners": [
+            {
+              "declared_input_fingerprint_sha256": null,
+              "declared_input_paths": null,
+              "declared_inputs": [],
+              "path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
+              "present": true,
+              "role": "primary",
+              "sha256": "a251ed8010207f293f41d85a857de11dbeeb4fcb194b8444286bc1b8375831a7"
+            }
+          ],
+          "schema": "science_fingerprint_v2",
+          "target": {
+            "claim_id": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+            "claim_scope": "For finite Grassmann generators satisfying (G1)-(G3) and (B1)-(B2), the claimed determinant identity for arbitrary complex M, odd-odd correlator antisymmetry, and stated algebraic corollaries.",
+            "claim_type": "bounded_theorem",
+            "ledger_note_hash": "2f746f008caf0f18c48bc7fda7ced8b42fa264bf7635ebca44aa91557de8c8e6",
+            "note_path": "docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "note_sha256": "2f746f008caf0f18c48bc7fda7ced8b42fa264bf7635ebca44aa91557de8c8e6"
+          }
+        },
+        "transitive_descendants": 1262
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260803-2897f7e8",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant identity and unnormalized odd-odd antisymmetry close algebraically. However, (2) is stated as an expectation with respect to Z_F for every complex M; when det(M)=0 that normalization is undefined, and no nonzero-determinant restriction is stated.",
+      "claim_scope": "For finite Grassmann generators satisfying (G1)-(G3) and (B1)-(B2), the claimed determinant identity for arbitrary complex M, odd-odd correlator antisymmetry, and stated algebraic corollaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-08-03T11:57:17.126678+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "science_changed:framework_premise_epoch",
+      "load_bearing_step": "For any complex M, the ordered quadratic Berezin integral equals det(M), and expectations of two odd-graded operators change sign under exchange.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: restrict normalized correlators to det(M) != 0 or define (2) explicitly as an unnormalized Berezin integral, replace the incorrect single-generator proof sentence with the graded-commutativity argument, and add a direct measure-order/sign check to the runner.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "Issue: Equation (2) is asserted for every complex M as an expectation normalized by Z_F, although Z_F=det(M) may vanish. Why this blocks: for singular M the normalized correlators are undefined, so the universal claim does not close even though (D) and the unnormalized odd-odd identity do. Repair target: state det(M) != 0 whenever brackets are normalized, use graded commutativity rather than the false assertion that every odd element contains one generator factor, and directly check the Berezin measure sign. Claim boundary until fixed: with a consistently ordered measure, (D), unnormalized antisymmetry, and normalized antisymmetry for det(M) != 0 remain supported."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 19,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 19
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
   "title": "Spin-Statistics \u2014 Berezin Determinant Narrow Theorem",
   "transitive_descendants": 1262,
-  "verdict_rationale": "Issue: Equation (2) is asserted for every complex M as an expectation normalized by Z_F, although Z_F=det(M) may vanish. Why this blocks: for singular M the normalized correlators are undefined, so the universal claim does not close even though (D) and the unnormalized odd-odd identity do. Repair target: state det(M) != 0 whenever brackets are normalized, use graded commutativity rather than the false assertion that every odd element contains one generator factor, and directly check the Berezin measure sign. Claim boundary until fixed: with a consistently ordered measure, (D), unnormalized antisymmetry, and normalized antisymmetry for det(M) != 0 remain supported."
+  "verdict_rationale": null
 }

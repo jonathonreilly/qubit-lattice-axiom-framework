@@ -1,42 +1,24 @@
 {
-  "audit_date": "2026-07-11T23:26:59.641194+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {
-      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
-    },
-    "dep_claim_scope": {
-      "minimal_axioms": null
-    },
-    "dep_claim_type": {
-      "minimal_axioms": "meta"
-    },
-    "dep_effective_status": {
-      "minimal_axioms": "meta"
-    },
-    "deps": [
-      "minimal_axioms"
-    ],
-    "load_bearing_score": 2.085,
-    "runner_hash": "98b76450d68461d1be1ab982f0c4f9d1494688c608710b7c0272a2a816bba6c2",
-    "transitive_descendants": 2
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00388-d3_checkerboard_step1_closed",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The accepted Lattice axiom supplies cubic Z\u00b3 nearest-neighbor adjacency, while the bounded note supplies the free scalar Hamiltonian under study. Direct construction and two-step path counting yield the stated signed coefficients and support, and the parity and resolvent statements follow algebraically.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
-  "claim_scope": "The supplied free one-orbital nearest-neighbor scalar Hamiltonian on periodic simple-cubic Z\u00b3 lattices L \u2208 {6,8}, audited for its step-1 parity Schur complement at E=0, one E=0.3 covariance probe, retained-site resolvent equality, and the stated integer parity lemma.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-11T23:26:59.641194+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -44,19 +26,19 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 1,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 5.085,
-  "load_bearing_step": "Because the odd-parity block is h_oo = \u03bcI, its exact Schur complement is determined by two-step path counts: 6 on-site, 2 at face diagonals, 1 at axial d\u00b2=4, and 0 beyond those shells.",
-  "load_bearing_step_class": "C",
-  "max_descendant_status": "retained_bounded",
-  "max_descendant_status_rank": 95,
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "05337621c44d399f16fe02fe2c5a5d3057dfe1de908ebb4f4c1eb87aa77cda50",
   "note_path": "docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -217,19 +199,77 @@
         "total_pass": 12
       },
       "verdict_rationale": "Clean within the bounded algebraic scope: the source states a supplied free one-orbital NN Hamiltonian on the cubic lattice, and the claimed step-1 coefficients are exactly the Schur-complement path counts over the odd sublattice. The parity lemma is elementary integer algebra and the runner also checks finite-size/wraparound, E-covariance, and retained-site resolvent equality. Residual risk is only scope: this does not derive a physical kinetic branch, measure, weight, r-value, or step-2 behavior from the axioms."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.679856+00:00",
+      "audit_date": "2026-07-11T23:26:59.641194+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "98b76450d68461d1be1ab982f0c4f9d1494688c608710b7c0272a2a816bba6c2",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00388-d3_checkerboard_step1_closed",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Lattice axiom supplies cubic Z\u00b3 nearest-neighbor adjacency, while the bounded note supplies the free scalar Hamiltonian under study. Direct construction and two-step path counting yield the stated signed coefficients and support, and the parity and resolvent statements follow algebraically.",
+      "claim_scope": "The supplied free one-orbital nearest-neighbor scalar Hamiltonian on periodic simple-cubic Z\u00b3 lattices L \u2208 {6,8}, audited for its step-1 parity Schur complement at E=0, one E=0.3 covariance probe, retained-site resolvent equality, and the stated integer parity lemma.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T23:26:59.641194+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "Because the odd-parity block is h_oo = \u03bcI, its exact Schur complement is determined by two-step path counts: 6 on-site, 2 at face diagonals, 1 at axial d\u00b2=4, and 0 beyond those shells.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner genuinely constructs the finite cubic Hamiltonians, forms their parity blocks and Schur complements, and computes path counts and resolvents rather than merely printing expected results. Its independently generated matrices confirm the signed shell coefficients, absence of farther step-1 couplings, wraparound stability, energy shift, and resolvent identity. The elementary parity identity establishes the checkerboard preservation statement within the explicitly bounded scope; no external comparator or non-accepted authority is used."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 2,
+    "A": 0,
     "B": 0,
-    "C": 10,
+    "C": 0,
     "D": 0,
-    "total_pass": 12
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_d3_checkerboard_step1_parity_lemma_2026_06_12.py",
   "title": "The First d=3 Decimation Datum on the Framework's Cubic Lattice: Step-1 Closed Form (diag \u2212 6t\u00b2/\u03bc; Face-Diagonal \u22122t\u00b2/\u03bc; Axial \u2212t\u00b2/\u03bc; Nothing Beyond) and the Parity Lemma in Three Dimensions (Bounded)",
   "transitive_descendants": 2,
-  "verdict_rationale": "The runner genuinely constructs the finite cubic Hamiltonians, forms their parity blocks and Schur complements, and computes path counts and resolvents rather than merely printing expected results. Its independently generated matrices confirm the signed shell coefficients, absence of farther step-1 couplings, wraparound stability, energy shift, and resolvent identity. The elementary parity identity establishes the checkerboard preservation statement within the explicitly bounded scope; no external comparator or non-accepted authority is used."
+  "verdict_rationale": null
 }

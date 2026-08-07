@@ -1,44 +1,24 @@
 {
-  "audit_date": "2026-05-29T21:40:44.925162+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "asymmetry_persistence_collapse_note": "Narrow qualitative observation from the completed N=80 configured runner output only: asymmetry-persistence lowers the unitary pur_min readout at the nonzero thresholds, while the stochastic-collapse readout does not show a uniform lowering relative to the unpruned baseline; N=100 rows and any collapse-pocket claim are excluded.",
-      "asymmetry_persistence_joint_card_note": "Dense 3D generated same-graph joint card for N=80 with npl=50 and N=100 with npl=60, 8 matched seeds, thresholds 0.00/0.10/0.20, measuring pur_cl, pur_min, gravity delta, and corrected Born |I3|/P under linear and layer-normalized propagation."
-    },
-    "dep_claim_type": {
-      "asymmetry_persistence_collapse_note": "bounded_theorem",
-      "asymmetry_persistence_joint_card_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "asymmetry_persistence_collapse_note": "retained_bounded",
-      "asymmetry_persistence_joint_card_note": "retained_bounded"
-    },
-    "deps": [
-      "asymmetry_persistence_collapse_note",
-      "asymmetry_persistence_joint_card_note"
-    ],
-    "load_bearing_score": 1.5,
-    "runner_hash": "c93597a2cd0760302d5d6303fae24f6476ba4889863f0f8a6f4849188fc829c1",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-audit-ready-20260529-asymmetry_persistence_bo",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The restricted packet includes the primary runner, its cache, and all named helper sources; the runner builds the graphs, propagates amplitudes, computes the corrected Sorkin I3 with -P(empty), and reproduces the note table without hard-coded expected values. The conclusion is limited to the stated narrow density-limited probe and does not assert broader-N or asymptotic closure.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "asymmetry_persistence_born_note",
-  "claim_scope": "Narrow dense Born calibration for generated asymmetry-persistence graphs at N=100, npl=60, thresholds 0.10 and 0.20, 2 seeds and 4 realizations, including linear, persistence, persistence+LN, and persistence+LN+collapse columns.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-29T21:40:44.925162+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -47,8 +27,8 @@
     "asymmetry_persistence_joint_card_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "retained",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/asymmetry_persistence_collapse_pilot.py",
     "scripts/asymmetry_persistence_joint_card.py",
@@ -56,16 +36,16 @@
     "scripts/gap_topological_asymmetry.py",
     "scripts/gap_topological_asymmetry_layernorm_combo.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
-  "load_bearing_step": "The corrected Sorkin |I3|/P magnitudes in the table are reproducible from the registered runner at the narrow N=100, npl=60, thresholds=[0.1,0.2], 2-seed, 4-realization default configuration, and every column is far below 1e-10.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "meta",
   "max_descendant_status_rank": 25,
   "note_hash": "8264a24e2320068c2e41e62ef6cdbf7fe508261bea0cf6fe7a902e446ff12f06",
   "note_path": "docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md",
-  "notes_for_re_audit_if_any": "Second auditor should re-check that the class-C characterization is understood as applying only to the narrow cached Born calibration, not to the admitted broader asymptotic or layernorm-combo closure questions.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -248,6 +228,66 @@
         "runner_status": "completed_narrow_rerun_table_mismatch"
       },
       "verdict_rationale": "Issue: the stated narrow command does not reproduce the source table exactly. A completed rerun of `python3 scripts/asymmetry_persistence_born_calibration.py --n-layers 100 --thresholds 0.10 0.20 --n-seeds 2 --n-realizations 4 --npl 60` gave threshold 0.10 linear=6.54e-16\u00b19.9e-17, persistence=8.49e-16\u00b11.7e-16, persist+LN=2.78e-16\u00b17.2e-17, persist+LN+collapse=2.78e-16\u00b15.8e-17; threshold 0.20 linear=6.54e-16\u00b19.9e-17, persistence=1.12e-15\u00b12.5e-16, persist+LN=2.59e-16\u00b13.9e-17, persist+LN+collapse=3.33e-16\u00b15.0e-17. These differ from the table's linear and collapse entries, while the registered broad default cache still times out. Why this blocks: the row claims table reproducibility from the registered runner/cache, so the current source is stale on its own numerical surface even though the qualitative Born-clean conclusion remains plausible. Repair target: update the table to the completed narrow command output and add an args-specific completed transcript/cache, or narrow the source to the qualitative machine-precision conclusion. Claim boundary until fixed: the direct narrow rerun supports machine-precision corrected-Born values, but the current table and cache do not audit cleanly."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.607959+00:00",
+      "audit_date": "2026-05-29T21:40:44.925162+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "asymmetry_persistence_collapse_note": "Narrow qualitative observation from the completed N=80 configured runner output only: asymmetry-persistence lowers the unitary pur_min readout at the nonzero thresholds, while the stochastic-collapse readout does not show a uniform lowering relative to the unpruned baseline; N=100 rows and any collapse-pocket claim are excluded.",
+          "asymmetry_persistence_joint_card_note": "Dense 3D generated same-graph joint card for N=80 with npl=50 and N=100 with npl=60, 8 matched seeds, thresholds 0.00/0.10/0.20, measuring pur_cl, pur_min, gravity delta, and corrected Born |I3|/P under linear and layer-normalized propagation."
+        },
+        "dep_claim_type": {
+          "asymmetry_persistence_collapse_note": "bounded_theorem",
+          "asymmetry_persistence_joint_card_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "asymmetry_persistence_collapse_note": "retained_bounded",
+          "asymmetry_persistence_joint_card_note": "retained_bounded"
+        },
+        "deps": [
+          "asymmetry_persistence_collapse_note",
+          "asymmetry_persistence_joint_card_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "c93597a2cd0760302d5d6303fae24f6476ba4889863f0f8a6f4849188fc829c1",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-audit-ready-20260529-asymmetry_persistence_bo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet includes the primary runner, its cache, and all named helper sources; the runner builds the graphs, propagates amplitudes, computes the corrected Sorkin I3 with -P(empty), and reproduces the note table without hard-coded expected values. The conclusion is limited to the stated narrow density-limited probe and does not assert broader-N or asymptotic closure.",
+      "claim_scope": "Narrow dense Born calibration for generated asymmetry-persistence graphs at N=100, npl=60, thresholds 0.10 and 0.20, 2 seeds and 4 realizations, including linear, persistence, persistence+LN, and persistence+LN+collapse columns.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T21:40:44.925162+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The corrected Sorkin |I3|/P magnitudes in the table are reproducible from the registered runner at the narrow N=100, npl=60, thresholds=[0.1,0.2], 2-seed, 4-realization default configuration, and every column is far below 1e-10.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the class-C characterization is understood as applying only to the narrow cached Born calibration, not to the admitted broader asymptotic or layernorm-combo closure questions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing result is a direct deterministic computation from the included graph-generation, propagation, collapse, and Sorkin-metric code, not a definition, renaming, external comparator, or numerical fit to imported constants. The cached stdout matches the source-note table and records status ok within the audit timeout. The cited authorities are retained_bounded and the note explicitly confines itself to the narrow N=100 calibration rather than relying on the open broader sweep."
     }
   ],
   "prose_corrections": [],
@@ -255,12 +295,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 1,
+    "C": 0,
     "D": 0,
-    "total_pass": 1
+    "total_pass": 0
   },
   "runner_path": "scripts/asymmetry_persistence_born_calibration.py",
   "title": "Asymmetry Persistence Born Calibration Note",
   "transitive_descendants": 1,
-  "verdict_rationale": "The load-bearing result is a direct deterministic computation from the included graph-generation, propagation, collapse, and Sorkin-metric code, not a definition, renaming, external comparator, or numerical fit to imported constants. The cached stdout matches the source-note table and records status ok within the audit timeout. The cited authorities are retained_bounded and the note explicitly confines itself to the narrow N=100 calibration rather than relying on the open broader sweep."
+  "verdict_rationale": null
 }

@@ -1,31 +1,24 @@
 {
-  "audit_date": "2026-05-05T06:47:35.160996+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_effective_status": {
-      "moving_source_retarded_portability_note": "retained_bounded"
-    },
-    "deps": [
-      "moving_source_retarded_portability_note"
-    ],
-    "load_bearing_score": 1.5,
-    "runner_hash": "6b1422ef6837570deb469351a10c5dd86c3b3cdb3adee749a2e09c746a029456",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-moving_source_cross_fami-282",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The runner genuinely computes the two-family rows from generated geometries, fields, propagation, centroid readout, and seed summaries rather than printing hard-coded expected values. The cited first-family authority is retained_bounded, and the second-family result is computed directly in the supplied runner packet.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "moving_source_cross_family_note",
-  "claim_scope": "A bounded moving-source centroid-y directional observable was audited on two specified portable grown families under zero-source and v=0 static controls, using the provided runner output and source.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-05T06:47:35.160996+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -33,21 +26,21 @@
     "moving_source_retarded_portability_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/evolving_network_prototype_v6.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained_bounded",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
-  "load_bearing_step": "The moving-source centroid bias keeps the same signed response pattern on the second family, so the effect is not just a one-family artifact.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "ed08a51f43fec31c2c9cd4cd5ef1c4e35be5244e6f8a1b6291d4a576fb9ef0eb",
   "note_path": "docs/MOVING_SOURCE_CROSS_FAMILY_NOTE.md",
-  "notes_for_re_audit_if_any": "A second auditor should re-check the imported implementation of build_structured_growth, propagate, and centroid_y if source for scripts/evolving_network_prototype_v6.py is added to the restricted packet.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -113,19 +106,68 @@
         "total_pass": 4
       },
       "verdict_rationale": "The finite extension closes on its own terms: the runner builds both named portable grown families, applies exact zero-source and v=0 static controls, and reproduces the signed moving-source centroid-bias rows with six seeds per velocity. This clean audit is narrow: it certifies only the two displayed drift/restore family cards, the signed delta_y-vs-static pattern, exact zero baselines, and flat v=0 control; it does not certify a wave theory, asymptotic portability law, or broader class of generated families."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.761679+00:00",
+      "audit_date": "2026-05-05T06:47:35.160996+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "moving_source_retarded_portability_note": "retained_bounded"
+        },
+        "deps": [
+          "moving_source_retarded_portability_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "6b1422ef6837570deb469351a10c5dd86c3b3cdb3adee749a2e09c746a029456",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-moving_source_cross_fami-282",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner genuinely computes the two-family rows from generated geometries, fields, propagation, centroid readout, and seed summaries rather than printing hard-coded expected values. The cited first-family authority is retained_bounded, and the second-family result is computed directly in the supplied runner packet.",
+      "claim_scope": "A bounded moving-source centroid-y directional observable was audited on two specified portable grown families under zero-source and v=0 static controls, using the provided runner output and source.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:47:35.160996+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The moving-source centroid bias keeps the same signed response pattern on the second family, so the effect is not just a one-family artifact.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the imported implementation of build_structured_growth, propagate, and centroid_y if source for scripts/evolving_network_prototype_v6.py is added to the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing step is a first-principles computational replay over two parameterized grown families with exact zero-source and matched static controls. The source code computes the field schedule, propagation, centroid differences, phase lag, and seed statistics; the contested signed response is not imported from the cited authority or hard-coded as a numerical target. The conclusion remains narrow: it establishes persistence across the two tested families, not a universal wave or continuum theorem."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 2,
-    "B": 1,
-    "C": 1,
+    "A": 0,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/moving_source_cross_family_probe.py",
   "title": "Moving Source Cross-Family Note",
   "transitive_descendants": 1,
-  "verdict_rationale": "The load-bearing step is a first-principles computational replay over two parameterized grown families with exact zero-source and matched static controls. The source code computes the field schedule, propagation, centroid differences, phase lag, and seed statistics; the contested signed response is not imported from the cited authority or hard-coded as a numerical target. The conclusion remains narrow: it establishes persistence across the two tested families, not a universal wave or continuum theorem."
+  "verdict_rationale": null
 }

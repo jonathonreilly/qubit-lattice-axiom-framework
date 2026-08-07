@@ -44,7 +44,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8328bf7df8fc489edb17ae585b8aeba40c2c5929138598de3192b8710e344cac",
+  "note_hash": "8ecbd38e6ad34101ae2088dad58a1e3e131a4bb54099d410dd2ceb86b4b20231",
   "note_path": "docs/STAGGERED_DIRAC_PKIN_SUBTREE_CURRENT_SURFACE_RESTATEMENT_NOTE_2026-07-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

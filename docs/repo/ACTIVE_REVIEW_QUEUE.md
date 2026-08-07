@@ -27,6 +27,22 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-08-07-premise-epoch-reset-narrative-staleness`
+  Scope: hand-authored narrative surfaces on `main` after the
+  framework-premise-epoch invalidation refresh (887 audits reset to
+  `unaudited`; generated surfaces zeroed): the `README.md` "Read First"
+  retained-grade-rows sentence, the `docs/repo/STATE_OF_THE_THEORY_2026-07-16.md`
+  retained-grade count and named retained rows, and the
+  `docs/publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md` "small retained
+  surface" phrasing.
+  Finding: these prose surfaces still describe the pre-reset retained
+  surface. The generated authority surfaces they defer to are already
+  honest (`docs/repo/RETAINED_BACKBONE.md` and the publication badges are
+  zeroed), so this is narrative staleness, not a standing grant.
+  Disposition: `fix-needed`; hand-authored re-date/correction pass per
+  `docs/repo/FOUR_AXIOM_NARRATIVE_SCRUB_PLAN_2026-07-04.md`. No grade
+  language; re-audit standing is set only by the independent audit lane.
+
 - `2026-07-30-cycle734-supplied-position-and-guard-scope`
   Scope: the Cycle-734 externally positioned ring-11 logical pair template
   and its current Cycle-719/724/731 controller stack.

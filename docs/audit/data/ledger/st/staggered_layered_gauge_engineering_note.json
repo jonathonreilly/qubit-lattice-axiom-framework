@@ -1,31 +1,24 @@
 {
-  "audit_date": "2026-05-05T11:38:19.286802+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_effective_status": {
-      "staggered_graph_portability_note": "retained"
-    },
-    "deps": [
-      "staggered_graph_portability_note"
-    ],
-    "load_bearing_score": 1.5,
-    "runner_hash": "d966da041a4c4f8d7a66acbd77fe52c11076b1df8013f5497acf3f2a848087e8",
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-staggered_layered_gauge_-046",
-  "auditor_confidence": "medium",
-  "auditor_family": "codex-gpt-5.5",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The cited portability authority is retained, and the runner source builds new layered brickwall graphs, threads flux through detected cycle edges, diagonalizes the Hamiltonian, and computes current spans and residuals rather than printing constants. The completed runner output supports PASS results for both engineered brickwall geometries.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "staggered_layered_gauge_engineering_note",
-  "claim_scope": "The restricted packet audits whether the provided runner constructs layered brickwall cycle geometries and computes a native flux-threaded staggered-Hamiltonian current span above threshold while retaining the staggered force battery.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-05T11:38:19.286802+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -33,22 +26,22 @@
     "staggered_graph_portability_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "retained",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_staggered_graph_portability.py",
     "scripts/frontier_staggered_layered_backreaction.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "retained",
-  "load_bearing_score": 4.5,
-  "load_bearing_step": "The engineered layered plaquette geometries close the native gauge/current probe cleanly.",
-  "load_bearing_step_class": "C",
-  "max_descendant_status": "retained_bounded",
-  "max_descendant_status_rank": 95,
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "e0316885f80906b08c254e9cdcbbb51b9a8f5a155ad1eb474c821927d8ed9dbc",
   "note_path": "docs/STAGGERED_LAYERED_GAUGE_ENGINEERING_NOTE.md",
-  "notes_for_re_audit_if_any": "Re-check the imported helper implementations frontier_staggered_graph_portability._build_hamiltonian and _measure_family if a future packet includes them; this audit only had the primary runner source and cached output.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -108,19 +101,68 @@
         "total_pass": 31
       },
       "verdict_rationale": "Issue: The qualitative engineered-gauge conclusion reproduces, but the note's exact current table is stale for the sparse layered holdout: the live runner gives J_span about 5.015e-35 rather than 4.769e-06, and the force side battery is imported from the conditional staggered graph portability probe. Why this blocks: an audit-clean retained claim cannot freeze incorrect exact numerics or promote a gauge/current engineering result while the underlying graph force/current readout remains conditional. Repair target: update the note to the current runner output with toleranced assertions, and close or explicitly bound the inherited graph-portability observable theorem. Claim boundary until fixed: safe to claim the current runner classifies the acyclic control as N/A, the sparse cycle holdout as gauge FAIL, and the two engineered brickwall geometries as gauge PASS with current spans about 2.279e-03 and 2.151e-03; not safe to claim clean retained gauge engineering with the frozen exact table as written."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.851764+00:00",
+      "audit_date": "2026-05-05T11:38:19.286802+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "staggered_graph_portability_note": "retained"
+        },
+        "deps": [
+          "staggered_graph_portability_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "d966da041a4c4f8d7a66acbd77fe52c11076b1df8013f5497acf3f2a848087e8",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-staggered_layered_gauge_-046",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited portability authority is retained, and the runner source builds new layered brickwall graphs, threads flux through detected cycle edges, diagonalizes the Hamiltonian, and computes current spans and residuals rather than printing constants. The completed runner output supports PASS results for both engineered brickwall geometries.",
+      "claim_scope": "The restricted packet audits whether the provided runner constructs layered brickwall cycle geometries and computes a native flux-threaded staggered-Hamiltonian current span above threshold while retaining the staggered force battery.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T11:38:19.286802+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The engineered layered plaquette geometries close the native gauge/current probe cleanly.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the imported helper implementations frontier_staggered_graph_portability._build_hamiltonian and _measure_family if a future packet includes them; this audit only had the primary runner source and cached output.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The load-bearing result is a numerical first-principles computation inside the provided staggered graph harness: the runner constructs the geometries, detects cycle edges, applies flux in the Hamiltonian, diagonalizes it, and measures persistent-current span. The upstream portability note is explicitly retained in the packet, and no external comparator or calibrated input value is used. The note table has small numerical drift from the cached runner output for the sparse holdout and brickwall rows, but the pass/fail pattern and conclusion are unchanged."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
-    "B": 1,
-    "C": 1,
+    "B": 0,
+    "C": 0,
     "D": 0,
-    "total_pass": 2
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_staggered_layered_gauge_engineering.py",
   "title": "Staggered Layered Gauge Engineering Note",
   "transitive_descendants": 1,
-  "verdict_rationale": "The load-bearing result is a numerical first-principles computation inside the provided staggered graph harness: the runner constructs the geometries, detects cycle edges, applies flux in the Hamiltonian, diagonalizes it, and measures persistent-current span. The upstream portability note is explicitly retained in the packet, and no external comparator or calibrated input value is used. The note table has small numerical drift from the cached runner output for the sparse holdout and brickwall rows, but the pass/fail pattern and conclusion are unchanged."
+  "verdict_rationale": null
 }

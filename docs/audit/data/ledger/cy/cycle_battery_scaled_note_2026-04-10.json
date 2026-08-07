@@ -1,51 +1,46 @@
 {
-  "audit_date": "2026-05-03T02:53:44.450230+00:00",
-  "audit_state_snapshot": {
-    "criticality": "leaf",
-    "dep_effective_status": {
-      "cycle_battery_note_2026-04-10": "retained_bounded"
-    },
-    "deps": [
-      "cycle_battery_note_2026-04-10"
-    ],
-    "load_bearing_score": 1.5,
-    "transitive_descendants": 1
-  },
-  "audit_status": "audited_clean",
-  "auditor": "fresh-agent-mcclintock-3rd-019debc0-eab9-7e42-85c9-8da3000a319d",
-  "auditor_confidence": "medium",
-  "auditor_family": "codex-gpt-5",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The one-hop dependency is now retained_bounded and supplies the row semantics and caveats. The provided scaled runner output directly covers the larger side sweep without invoking an external comparator, a hidden physical identification, or a new semantic standard.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "cycle_battery_scaled_note_2026-04-10",
-  "claim_scope": "The larger-size sibling harness for the retained cycle-bearing graph battery passes the inherited B1-B9 checks for random geometric, growing, and layered cycle graph families through side 12, with force treated as the primary observable and B9 as characterization only.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-03T02:53:44.450230+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "leaf",
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "cycle_battery_note_2026-04-10"
   ],
   "direct_in_degree": 1,
-  "effective_status": "retained_bounded",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_staggered_cycle_battery.py"
   ],
-  "independence": "fresh_context",
-  "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 4.5,
-  "load_bearing_step": "The scaled runner reports that all nine family/size cases, spanning random geometric, growing, and layered cycle graphs at side 8, 10, and 12, score 9/9 under the inherited cycle-battery protocol.",
-  "load_bearing_step_class": "C",
-  "max_descendant_status": "retained_bounded",
-  "max_descendant_status_rank": 95,
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "973754949d49414d46249e7bd66313e0eb92c44565a22afd77712a11fd1b5aa4",
   "note_path": "docs/CYCLE_BATTERY_SCALED_NOTE_2026-04-10.md",
-  "notes_for_re_audit_if_any": "Retain the claim only as a bounded scaled battery result under the inherited protocol and caveats; do not promote beyond the provided runner rows.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -73,19 +68,67 @@
         "total_pass": 0
       },
       "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.678296+00:00",
+      "audit_date": "2026-05-03T02:53:44.450230+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "cycle_battery_note_2026-04-10": "retained_bounded"
+        },
+        "deps": [
+          "cycle_battery_note_2026-04-10"
+        ],
+        "load_bearing_score": 1.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-mcclintock-3rd-019debc0-eab9-7e42-85c9-8da3000a319d",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop dependency is now retained_bounded and supplies the row semantics and caveats. The provided scaled runner output directly covers the larger side sweep without invoking an external comparator, a hidden physical identification, or a new semantic standard.",
+      "claim_scope": "The larger-size sibling harness for the retained cycle-bearing graph battery passes the inherited B1-B9 checks for random geometric, growing, and layered cycle graph families through side 12, with force treated as the primary observable and B9 as characterization only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T02:53:44.450230+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The scaled runner reports that all nine family/size cases, spanning random geometric, growing, and layered cycle graphs at side 8, 10, and 12, score 9/9 under the inherited cycle-battery protocol.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Retain the claim only as a bounded scaled battery result under the inherited protocol and caveats; do not promote beyond the provided runner rows.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 36,
+        "B": 0,
+        "C": 45,
+        "D": 0,
+        "total_pass": 81
+      },
+      "verdict_rationale": "The scoped bounded claim closes as a retained scaled computation: the base battery semantics are clean, and the scaled runner output reports 9/9 scores for all nine family/size cases. The clean verdict is limited to the stated battery protocol and inherits the base-note caveats: irregular-graph force is a shell-radial proxy, two-sign behavior narrows sign interpretation, and B9 is characterization rather than a gate. This does not establish a full gravity-selection theorem or exact lattice-coordinate force result."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 36,
+    "A": 0,
     "B": 0,
-    "C": 45,
+    "C": 0,
     "D": 0,
-    "total_pass": 81
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_staggered_cycle_battery_scaled.py",
   "title": "Cycle-Bearing Graph Battery, Scaled",
   "transitive_descendants": 1,
-  "verdict_rationale": "The scoped bounded claim closes as a retained scaled computation: the base battery semantics are clean, and the scaled runner output reports 9/9 scores for all nine family/size cases. The clean verdict is limited to the stated battery protocol and inherits the base-note caveats: irregular-graph force is a shell-radial proxy, two-sign behavior narrows sign interpretation, and B9 is characterization rather than a gate. This does not establish a full gravity-selection theorem or exact lattice-coordinate force result."
+  "verdict_rationale": null
 }

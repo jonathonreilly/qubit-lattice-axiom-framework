@@ -1,40 +1,24 @@
 {
-  "audit_date": "2026-07-07T20:02:04.897842+00:00",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20": null
-    },
-    "dep_claim_type": {
-      "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20": "unaudited"
-    },
-    "deps": [
-      "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20"
-    ],
-    "load_bearing_score": 7.644,
-    "runner_hash": "c87369f25c8378c72dd4ffa910ab286df3edc0e087036f7640d686400f3fb390",
-    "transitive_descendants": 49
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-gauge_vacuum_plaquette_first_sec-14",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Conditioned on the supplied retained Wilson block and sparse-face target block, the interlacing obstruction is a standard algebraic closure and the runner verifies the needed eigenvalue inequalities. Retained-grade dependency closure is not established because the cited reduced-packet selector authority is marked unaudited.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20",
-  "claim_scope": "Audited the linear-algebra no-go that the supplied full sparse-face target 3x3 Hermitian block cannot be a 3d compression of the selected retained 4x4 Wilson block because its eigenvalues violate Cauchy interlacing.",
+  "claim_scope": null,
   "claim_type": "no_go",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-07T20:02:04.897842+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -42,8 +26,8 @@
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20"
   ],
   "direct_in_degree": 4,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/dm_leptogenesis_exact_common.py",
     "scripts/frontier_dm_leptogenesis_constructive_live_doublet_corner_descendant_theorem.py",
@@ -89,19 +73,17 @@
     "scripts/frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19.py",
     "scripts/frontier_perron_frobenius_step2_nilpotent_chain_source_response_calculus_2026_04_19.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 7.585,
-  "load_bearing_step": "The full sparse-face target Hermitian block violates compression interlacing against the selected retained 4x4 Wilson block, so no real or complex 3d compression of that retained ambient can reproduce the full target packet exactly.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "53fe1b5e674f1c5bd30ad0e5a54de05eaf47fe379c424760d3ee71439e350b49",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_FULL_PACKET_NO_GO_THEOREM_NOTE_2026-04-20.md",
-  "notes_for_re_audit_if_any": "dependency_not_retained: audit and retain the reduced-packet complex-Givens selector theorem, then re-run this row with explicit no-go-discipline N1 coverage if clean wall status is sought.",
-  "open_dependency_paths": [
-    "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_REDUCED_PACKET_COMPLEX_GIVENS_SELECTOR_THEOREM_NOTE_2026-04-20.md"
-  ],
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
     {
@@ -254,19 +236,77 @@
         "total_pass": 4
       },
       "verdict_rationale": "The runner performs genuine numerical linear algebra checks: it constructs/imports the 4x4 block and target 3x3 block, computes eigenvalues, and checks the Cauchy interlacing violation rather than merely printing constants. However, the load-bearing inputs are imported from modules outside the restricted packet, while the note lists no cited authorities and says the step must derive from axiom. Thus the no-go closes conditionally on those imported blocks being independently retained-grade, not from the packet alone."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.706279+00:00",
+      "audit_date": "2026-07-07T20:02:04.897842+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20": null
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20": "unaudited"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20"
+        ],
+        "load_bearing_score": 7.644,
+        "runner_hash": "c87369f25c8378c72dd4ffa910ab286df3edc0e087036f7640d686400f3fb390",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-gauge_vacuum_plaquette_first_sec-14",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Conditioned on the supplied retained Wilson block and sparse-face target block, the interlacing obstruction is a standard algebraic closure and the runner verifies the needed eigenvalue inequalities. Retained-grade dependency closure is not established because the cited reduced-packet selector authority is marked unaudited.",
+      "claim_scope": "Audited the linear-algebra no-go that the supplied full sparse-face target 3x3 Hermitian block cannot be a 3d compression of the selected retained 4x4 Wilson block because its eigenvalues violate Cauchy interlacing.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-07T20:02:04.897842+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The full sparse-face target Hermitian block violates compression interlacing against the selected retained 4x4 Wilson block, so no real or complex 3d compression of that retained ambient can reproduce the full target packet exactly.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit and retain the reduced-packet complex-Givens selector theorem, then re-run this row with explicit no-go-discipline N1 coverage if clean wall status is sought.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_REDUCED_PACKET_COMPLEX_GIVENS_SELECTOR_THEOREM_NOTE_2026-04-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The no-go step itself is an algebraic Cauchy-interlacing check over the supplied matrices, and the primary runner computes the relevant spectra rather than merely printing constants. However, the source cites the reduced-packet complex-Givens selector theorem with effective_status unaudited, which triggers the rubric's dependency-not-retained downgrade. The additional no-go-discipline gate also blocks clean wall status as presented because the packet supplies one decisive interlacing route, not five distinct attack routes against the negative claim."
     }
   ],
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 4,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 4
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_2026_04_20.py",
   "title": "Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3d+1` Full-Packet No-Go Theorem",
   "transitive_descendants": 47,
-  "verdict_rationale": "The no-go step itself is an algebraic Cauchy-interlacing check over the supplied matrices, and the primary runner computes the relevant spectra rather than merely printing constants. However, the source cites the reduced-packet complex-Givens selector theorem with effective_status unaudited, which triggers the rubric's dependency-not-retained downgrade. The additional no-go-discipline gate also blocks clean wall status as presented because the packet supplies one decisive interlacing route, not five distinct attack routes against the negative claim."
+  "verdict_rationale": null
 }

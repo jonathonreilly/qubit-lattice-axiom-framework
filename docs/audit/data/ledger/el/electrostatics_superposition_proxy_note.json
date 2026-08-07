@@ -1,70 +1,45 @@
 {
-  "audit_date": "2026-05-04T23:52:26.154523+00:00",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_effective_status": {},
-    "deps": [],
-    "load_bearing_score": 8.738,
-    "runner_hash": "0513518d5931461ba99d0671ecac9038321eec4cfca961382cc2a11bf67f4285",
-    "transitive_descendants": 301
-  },
-  "audit_status": "audited_clean",
-  "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-electrostatics_superposi-009",
-  "auditor_confidence": "medium",
-  "auditor_family": "codex-gpt-5.5",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The provided runner constructs the lattice, sums source fields linearly, propagates a test charge, and computes centroid shifts rather than printing fixed expected constants. The audited conclusion is limited to this proxy harness and does not establish Maxwell theory or full electromagnetism.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "electrostatics_superposition_proxy_note",
-  "claim_scope": "A narrow numerical proxy: within the specified ordered lattice harness and sign-coupled weak-field propagator, multiple source fields are linearly combined and the detector centroid shifts show cancellation, reinforcement, dipole reduction, and approximate doubling.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-05-04T23:52:26.154523+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "medium",
-  "cross_confirmation": {
-    "first_audit": {
-      "audit_date": "2026-05-04T23:33:51.553678+00:00",
-      "auditor": "codex-cli-gpt-5.5-20260504-232946-c1a20bdf-electrostatics_superposi-013",
-      "auditor_family": "codex-gpt-5.5",
-      "claim_scope": "Audited the narrow runner-backed proxy claim that the provided multi-source field construction produces the reported cancellation, reinforcement, dipole, and doubling behavior on the tested lattice geometry.",
-      "claim_type": "positive_theorem",
-      "independence": "cross_family",
-      "load_bearing_step_class": "C",
-      "verdict": "audited_clean"
-    },
-    "second_audit": {
-      "audit_date": "2026-05-04T23:52:26.154523+00:00",
-      "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-electrostatics_superposi-009",
-      "auditor_family": "codex-gpt-5.5",
-      "claim_scope": "A narrow numerical proxy: within the specified ordered lattice harness and sign-coupled weak-field propagator, multiple source fields are linearly combined and the detector centroid shifts show cancellation, reinforcement, dipole reduction, and approximate doubling.",
-      "claim_type": "positive_theorem",
-      "independence": "fresh_context",
-      "load_bearing_step_class": "C",
-      "verdict": "audited_clean"
-    },
-    "status": "confirmed"
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "retained",
-  "effective_status_reason": "self",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/electric_sign_law_harness.py",
     "scripts/two_body_momentum_harness.py"
   ],
-  "independence": "fresh_context",
-  "intrinsic_status": "retained",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 7.022,
-  "load_bearing_step": "The same weak-field sign-coupled propagator supports linear source superposition, so same-point opposite charges cancel, like charges reinforce, and dipole/double-source cases give the reported signed centroid shifts.",
-  "load_bearing_step_class": "C",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "note_hash": "aa12583a89680dd8f2ef9837791ed43087da69e03f097d002d472ce525d0e3aa",
   "note_path": "docs/ELECTROSTATICS_SUPERPOSITION_PROXY_NOTE.md",
-  "notes_for_re_audit_if_any": "A second auditor should re-check the imported electric_sign_law_harness and two_body_momentum_harness implementations if the audit packet is expanded, since this restricted packet includes only the top-level runner source.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -178,6 +153,73 @@
         "what_runner_does_not_check": "It does not derive linear electrostatic superposition from the retained lattice dynamics, prove uniqueness or generality beyond the configured cases, or establish that the centroid observable is a physically retained electrostatic observable."
       },
       "verdict_rationale": "Issue: The claimed positive-theorem bridge from the retained electric-like sign law to multi-source electrostatic superposition is implemented by directly summing configured source fields in the runner, not proved from retained inputs. Why this blocks: The successful cancellation and approximate scaling checks are consequences of the imposed linear field construction plus the selected geometries; they do not close the hard theorem that the underlying retained propagator entails electrostatic superposition. Repair target: Provide a retained derivation or audited dependency showing that the lattice source law and propagator force linear multi-source field composition and that the detector centroid shift is the claimed electrostatic observable, then have the runner test that theorem rather than encode it. Claim boundary until fixed: The note may claim a reproducible configured numerical proxy: under the runner's imposed linear source-field sum, the listed cases cancel, reinforce, and scale approximately as printed. It may not stand as an independent positive theorem of electrostatic superposition."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.688191+00:00",
+      "audit_date": "2026-05-04T23:52:26.154523+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.738,
+        "runner_hash": "0513518d5931461ba99d0671ecac9038321eec4cfca961382cc2a11bf67f4285",
+        "transitive_descendants": 301
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-electrostatics_superposi-009",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided runner constructs the lattice, sums source fields linearly, propagates a test charge, and computes centroid shifts rather than printing fixed expected constants. The audited conclusion is limited to this proxy harness and does not establish Maxwell theory or full electromagnetism.",
+      "claim_scope": "A narrow numerical proxy: within the specified ordered lattice harness and sign-coupled weak-field propagator, multiple source fields are linearly combined and the detector centroid shifts show cancellation, reinforcement, dipole reduction, and approximate doubling.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-04T23:52:26.154523+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-04T23:33:51.553678+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260504-232946-c1a20bdf-electrostatics_superposi-013",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Audited the narrow runner-backed proxy claim that the provided multi-source field construction produces the reported cancellation, reinforcement, dipole, and doubling behavior on the tested lattice geometry.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-04T23:52:26.154523+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-electrostatics_superposi-009",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "A narrow numerical proxy: within the specified ordered lattice harness and sign-coupled weak-field propagator, multiple source fields are linearly combined and the detector centroid shifts show cancellation, reinforcement, dipole reduction, and approximate doubling.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "The same weak-field sign-coupled propagator supports linear source superposition, so same-point opposite charges cancel, like charges reinforce, and dipole/double-source cases give the reported signed centroid shifts.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the imported electric_sign_law_harness and two_body_momentum_harness implementations if the audit packet is expanded, since this restricted packet includes only the top-level runner source.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The note's load-bearing claims are qualitative consequences of the completed runner output and the runner source shows actual computation of the tested cases. There are no cited upstream authorities to propagate, and no external comparator or calibrated input is used for the contested conclusion. The result is clean only at the explicitly narrow proxy scope: linear field summation inside the imported retained weak-field propagator harness."
     }
   ],
   "prose_corrections": [],
@@ -185,12 +227,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 5,
+    "C": 0,
     "D": 0,
-    "total_pass": 5
+    "total_pass": 0
   },
   "runner_path": "scripts/electrostatics_superposition_proxy.py",
   "title": "Electrostatics Superposition Proxy Note",
   "transitive_descendants": 64,
-  "verdict_rationale": "The note's load-bearing claims are qualitative consequences of the completed runner output and the runner source shows actual computation of the tested cases. There are no cited upstream authorities to propagate, and no external comparator or calibrated input is used for the contested conclusion. The result is clean only at the explicitly narrow proxy scope: linear field summation inside the imported retained weak-field propagator harness."
+  "verdict_rationale": null
 }

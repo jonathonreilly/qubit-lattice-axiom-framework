@@ -1,94 +1,42 @@
 {
-  "audit_date": "2026-07-30T12:15:50.232758+00:00",
-  "audit_invocation_history": [
-    "d6e72b88ef6a42cbbfbdbfe5a6c787e4",
-    "517a5605461a40c5a79be28484b94c24",
-    "4fc1519037f54100ba728a261a8a6101",
-    "9b33fd07bdee44d38960a8ead7fb5863",
-    "b21064c84c6e4f7982c81eaff6a00611",
-    "8455c7c67e1a45a2840ca478ab4c50c1",
-    "675dfcaa7f6244c8abb55496fed58c57"
-  ],
-  "audit_invocation_id": "675dfcaa7f6244c8abb55496fed58c57",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 6,
-      "counts": {
-        "A": 2,
-        "B": 1,
-        "C": 6,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_hypercharge_identification.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_hypercharge_identification.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "92c52e9d977569d95ea5cc19b903e1f44e42f0ec6fc47dde68c10d26558436b4",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "92c52e9d977569d95ea5cc19b903e1f44e42f0ec6fc47dde68c10d26558436b4",
-    "runner_path": "scripts/frontier_hypercharge_identification.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260730-2990e63d",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The supplied equation gives -a/2+b=0 and hence the stated one-dimensional annihilator, but the audit chain lacks a completed PART 9 execution because the runner aborts in its source-boundary firewall before reaching the load-bearing checks.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gmn_vev_annihilator_l4_support_note_2026-07-02",
-  "claim_scope": "Given supplied T_3=diag(+1/2,-1/2), Y_H=+1, and v_0=(0,1)^T, the annihilator in span{T_3,Y} is one-dimensional with b/a=+1/2, yielding Q=T_3+Y/2 up to normalization.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-30T12:15:50.232758+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Inside span{T_3,Y}, the condition (a T_3+bY)v_0=0 has a one-dimensional solution space with b/a=+1/2.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "467a8176bd41abee7993379069915ad387fcace427b9983519b21c4f26f61626",
   "note_path": "docs/GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: repair the source-boundary firewall mismatch so the primary runner reaches PART 9, then attach a complete successful PART 9 execution.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -161,6 +109,95 @@
         "total_pass": 5
       },
       "verdict_rationale": "The load-bearing step is a direct algebraic closure over explicitly supplied bounded inputs, not a renaming or numerical match. Independent recomputation confirms the nullspace dimension and coefficient sign/factor for the lower-component vev. Runner PART 9 genuinely computes the nullspace and downstream charge-table consequences rather than merely printing constants, though the downstream table also uses the separately supplied parent hypercharge assignments."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.719965+00:00",
+      "audit_date": "2026-07-30T12:15:50.232758+00:00",
+      "audit_invocation_history": [
+        "d6e72b88ef6a42cbbfbdbfe5a6c787e4",
+        "517a5605461a40c5a79be28484b94c24",
+        "4fc1519037f54100ba728a261a8a6101",
+        "9b33fd07bdee44d38960a8ead7fb5863",
+        "b21064c84c6e4f7982c81eaff6a00611",
+        "8455c7c67e1a45a2840ca478ab4c50c1",
+        "675dfcaa7f6244c8abb55496fed58c57"
+      ],
+      "audit_invocation_id": "675dfcaa7f6244c8abb55496fed58c57",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 6,
+          "counts": {
+            "A": 2,
+            "B": 1,
+            "C": 6,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_hypercharge_identification.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_hypercharge_identification.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "92c52e9d977569d95ea5cc19b903e1f44e42f0ec6fc47dde68c10d26558436b4",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "92c52e9d977569d95ea5cc19b903e1f44e42f0ec6fc47dde68c10d26558436b4",
+        "runner_path": "scripts/frontier_hypercharge_identification.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260730-2990e63d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The supplied equation gives -a/2+b=0 and hence the stated one-dimensional annihilator, but the audit chain lacks a completed PART 9 execution because the runner aborts in its source-boundary firewall before reaching the load-bearing checks.",
+      "claim_scope": "Given supplied T_3=diag(+1/2,-1/2), Y_H=+1, and v_0=(0,1)^T, the annihilator in span{T_3,Y} is one-dimensional with b/a=+1/2, yielding Q=T_3+Y/2 up to normalization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-30T12:15:50.232758+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "Inside span{T_3,Y}, the condition (a T_3+bY)v_0=0 has a one-dimensional solution space with b/a=+1/2.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: repair the source-boundary firewall mismatch so the primary runner reaches PART 9, then attach a complete successful PART 9 execution.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The finite algebra shown in the source and runner code supports the claimed ratio on the explicitly supplied inputs. However, the rendered runner execution exits during check_source_boundary and produces no live PART 9 results, while the binding packet preflight identifies the load-bearing evidence as clipped and forbids audited_clean. This is a runner-artifact defect rather than a timeout or a demonstrated scientific contradiction."
     }
   ],
   "prose_corrections": [],
@@ -175,5 +212,5 @@
   "runner_path": "scripts/frontier_hypercharge_identification.py",
   "title": "GMN Vev-Annihilator L4 Support Lemma",
   "transitive_descendants": 0,
-  "verdict_rationale": "The finite algebra shown in the source and runner code supports the claimed ratio on the explicitly supplied inputs. However, the rendered runner execution exits during check_source_boundary and produces no live PART 9 results, while the binding packet preflight identifies the load-bearing evidence as clipped and forbids audited_clean. This is a runner-artifact defect rather than a timeout or a demonstrated scientific contradiction."
+  "verdict_rationale": null
 }

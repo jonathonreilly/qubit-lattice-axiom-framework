@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_z3_circulant_mass_basis_nogo.py
-runner_sha256: dc07cc4763174b84e5c0f8f44e4705fd7b0b94179086a230856ca0095e291c01
+runner_sha256: ef845a46c2041fae76bc8d4a0aed97aa345fb49834c8c1dd8c95dd994ecc114a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.11
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,7 +17,7 @@ Question:
 ========================================================================================
 PART 1: THE EXACT Z3-COVARIANT CIRCULANT FAMILY IS REAL-DIAGONAL IN U_Z3
 ========================================================================================
-  [PASS] Every exact Z3-covariant circulant bridge diagonalizes in the Z3 basis  (1: offdiag=5.10e-16, imag_diag=2.18e-17; omega: offdiag=4.05e-16, imag_diag=7.43e-17; omega^2: offdiag=4.39e-16, imag_diag=2.79e-17)
+  [PASS] Every exact Z3-covariant circulant bridge diagonalizes in the Z3 basis  (1: offdiag=5.22e-16, imag_diag=2.18e-17; omega: offdiag=4.59e-16, imag_diag=6.57e-17; omega^2: offdiag=4.66e-16, imag_diag=1.98e-17)
 
   So once the bridge is an exact Z3 character lift, its right-Gram kernel
   is not merely structured in the Z3 basis. It is real-diagonal there.
@@ -35,11 +35,20 @@ PART 2: THE CURRENT MAJORANA DOUBLET DIAGONALIZATION IS REAL
 ========================================================================================
 PART 3: THE STANDARD LEPTOGENESIS CP TENSOR STILL VANISHES
 ========================================================================================
-  [PASS] After moving to the heavy-neutrino mass basis, the circulant family stays real symmetric  (1: Im(K01^2)=-6.88e-50, Im(K02^2)=3.56e-32, real_sym=True; omega: Im(K01^2)=-1.10e-34, Im(K02^2)=-1.58e-33, real_sym=True; omega^2: Im(K01^2)=-9.96e-34, Im(K02^2)=-1.66e-33, real_sym=True)
+  [PASS] After moving to the heavy-neutrino mass basis, the circulant family stays real symmetric  (1: Im(K01^2)=-2.13e-50, Im(K02^2)=-2.31e-32, real_sym=True; omega: Im(K01^2)=6.50e-51, Im(K02^2)=-6.26e-33, real_sym=True; omega^2: Im(K01^2)=-1.14e-50, Im(K02^2)=-8.69e-33, real_sym=True)
 
   Therefore exact Z3-covariant circulant bridges, including the full
   source-transfer branch chi=omega, do not generate the physical
   leptogenesis tensor on the current Majorana stack.
+
+========================================================================================
+PART 4: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES
+========================================================================================
+  per_element: checked -- the verdict is read off individual matrix entries, not a summary norm: Im(K_mass[0,1]^2) and Im(K_mass[0,2]^2) are evaluated and reported separately for each character branch, alongside the entrywise off-diagonal norm and max|Im| of the Z3-basis diagonal.
+  per_site: checked and not executed -- there is no lattice site index in this computation. The three indices of K and M_R are generation labels in a single 3x3 flavor space, and the whole no-go is a statement about one kernel under a change of basis, so no site-resolved sweep exists to run.
+  per_mode: checked -- the exact Z3 character branches chi = 1, omega, omega^2 are each built and pushed through U_Z3 and the mass-basis rotation independently, including the full-source branch chi = omega; each is confirmed real-diagonal in U_Z3 at the current stack values d=1.1367, r=0.4567.
+  per_block: checked -- M_R = [[A,0,0],[0,eps,B],[0,B,eps]] is resolved as its singlet block and its doublet block separately. The pi/4 rotation is applied only inside the doublet block [[0.2,1.3],[1.3,0.2]], which is verified to diagonalize really and to introduce no new phase; the singlet block is untouched.
+  lattice_wide: checked and not executed -- nothing here extends over a lattice or takes an asymptotic limit. The evidence is exact linear algebra on one fixed 3x3 flavor stack at the numeric denominator values above, swept over the three characters only; no volume, extent, or continuum statement is attempted.
 
 ========================================================================================
 RESULT

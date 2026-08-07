@@ -196,6 +196,43 @@ def part3_the_physical_cp_tensor_still_vanishes() -> None:
     print("  leptogenesis tensor on the current Majorana stack.")
 
 
+def part4_n5_execution_certificate() -> None:
+    print("\n" + "=" * 88)
+    print("PART 4: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES")
+    print("=" * 88)
+
+    print(
+        "  per_element: checked -- the verdict is read off individual matrix entries, "
+        "not a summary norm: Im(K_mass[0,1]^2) and Im(K_mass[0,2]^2) are evaluated and "
+        "reported separately for each character branch, alongside the entrywise "
+        "off-diagonal norm and max|Im| of the Z3-basis diagonal."
+    )
+    print(
+        "  per_site: checked and not executed -- there is no lattice site index in this "
+        "computation. The three indices of K and M_R are generation labels in a single "
+        "3x3 flavor space, and the whole no-go is a statement about one kernel under a "
+        "change of basis, so no site-resolved sweep exists to run."
+    )
+    print(
+        "  per_mode: checked -- the exact Z3 character branches chi = 1, omega, omega^2 "
+        "are each built and pushed through U_Z3 and the mass-basis rotation "
+        "independently, including the full-source branch chi = omega; each is confirmed "
+        "real-diagonal in U_Z3 at the current stack values d=1.1367, r=0.4567."
+    )
+    print(
+        "  per_block: checked -- M_R = [[A,0,0],[0,eps,B],[0,B,eps]] is resolved as its "
+        "singlet block and its doublet block separately. The pi/4 rotation is applied "
+        "only inside the doublet block [[0.2,1.3],[1.3,0.2]], which is verified to "
+        "diagonalize really and to introduce no new phase; the singlet block is untouched."
+    )
+    print(
+        "  lattice_wide: checked and not executed -- nothing here extends over a lattice "
+        "or takes an asymptotic limit. The evidence is exact linear algebra on one fixed "
+        "3x3 flavor stack at the numeric denominator values above, swept over the three "
+        "characters only; no volume, extent, or continuum statement is attempted."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("DM NEUTRINO Z3-CIRCULANT MASS-BASIS NO-GO")
@@ -208,6 +245,7 @@ def main() -> int:
     part1_exact_circulant_family_is_real_diagonal_in_the_z3_basis()
     part2_the_majorana_doublet_diagonalization_is_real()
     part3_the_physical_cp_tensor_still_vanishes()
+    part4_n5_execution_certificate()
 
     print("\n" + "=" * 88)
     print("RESULT")

@@ -180,6 +180,58 @@ def main() -> None:
         "primitive, not the code's adjoint centroid functional."
     )
     print()
+    print("N5 execution certificate -- resolved granularity (print-only):")
+    print(
+        f"per_element: checked - the element here is the individual directed "
+        f"edge, and all {len(edges)} of them are visited one at a time. Each "
+        f"carries its own signed coefficient c_e built from the source "
+        f"amplitude A[i], the adjoint lam[j], the phase exp(i k L) and the "
+        f"angular weight exp(-beta theta^2), together with its own midpoint "
+        f"(x_e, z_e); the moments are accumulated edge by edge as m0 += c_e, "
+        f"m1 += c_e (z_e - eps), m2 += c_e ((z_e - eps)^2 - dx^2/2), and "
+        f"alpha(b) is likewise an edge-by-edge reciprocal sum."
+    )
+    print(
+        f"per_site: checked - the edge list is generated from an explicit grown "
+        f"lattice of NL = {nl} layers at spacing H = {H:g}, with every site "
+        f"holding a 3-vector position. Each edge reads two sites: the "
+        f"displacement (dx, dy, dz) and length L come from pos[i] and pos[j], "
+        f"the midpoint is the average of their coordinates, and sites whose "
+        f"forward amplitude satisfies |A[i]| < 1e-30 are dropped before any "
+        f"edge is emitted, so site occupancy genuinely gates the sum."
+    )
+    print(
+        f"per_mode: checked, in the multipole sense only - the runner separates "
+        f"the monopole, dipole and quadrupole channels of the signed edge "
+        f"measure and that separation is where the no-go lands: "
+        f"|M0|/sum|c| = {mono_ratio:.6e} against |M1|/sum|c| = "
+        f"{dipole_ratio:.6e}, so the l = 0 channel is cancelled while l = 1 is "
+        f"live, giving the measured slope {slope_dipole_window:+.6f} instead of "
+        f"the nonnegative-weight control's {control_slope:+.6f}. No Fourier or "
+        f"k-space decomposition is performed: the harness runs at the single "
+        f"fixed phase k_phase = {k_phase:.6g} and one beta."
+    )
+    print(
+        f"per_block: checked and not executed - the blocks are the layers, and "
+        f"the runner deliberately does not resolve them. Every edge record "
+        f"carries a layer label round(pos[j][0]/H), but that field is bound to "
+        f"_layer and discarded in all three moment accumulators and in the "
+        f"exact edge sum, so no per-layer moment or amplitude is ever formed. "
+        f"That is the point of the note: the blocked bridge is the "
+        f"layer-weighted reduction, and this runner evaluates the full signed "
+        f"edge functional instead of any layer decomposition of it."
+    )
+    print(
+        f"lattice_wide: checked - every number reported above is a whole-lattice "
+        f"sum over the entire {len(edges)}-edge list of the fixed harness: M0, "
+        f"M1, M2, sum|c|, the sign split "
+        f"{pos_abs:.3f}/{neg_abs:.3f}, and alpha(b) at each b. The scope is "
+        f"bounded exactly as the note states - one geometry at H = {H:g}, "
+        f"T_phys = {T_PHYS:g}, NL = {nl}, from the single seeded growth "
+        f"realization - and no continuum H -> 0 or infinite-volume limit is "
+        f"taken anywhere."
+    )
+    print()
     for name, ok in checks:
         print(("PASS" if ok else "FAIL"), name)
     print()

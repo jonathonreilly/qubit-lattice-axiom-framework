@@ -1112,6 +1112,61 @@ def section9_does_not_disclaimers(c: Counter) -> None:
 
 
 # ----------------------------------------------------------------------
+# SECTION 10 — N5 execution certificate (reporting only; no PASS/FAIL/ADMITTED)
+# ----------------------------------------------------------------------
+
+
+def section10_n5_execution_certificate() -> None:
+    print()
+    print("Section 10 — N5 execution certificate: what this runner resolves")
+    print(
+        "  per_element: resolved — the Dirac operator and the cycle are handled as "
+        "explicit 3x3 matrices with entrywise acceptance criteria: the cycle is checked "
+        "unitary and of order three by the largest entry deviation from the identity, its "
+        "determinant is pinned to +1, D is required self-adjoint by max |D - D^dag|, and "
+        "the equivariance [H, C] is required to vanish entry by entry. The first-order "
+        "condition is likewise evaluated as an explicit double commutator on concrete "
+        "Hermitian test matrices, whose norm must exceed 1e-8 for the constraint to be "
+        "genuine rather than automatic."
+    )
+    print(
+        "  per_site: checked and not executed — the algebra of the triple is described as "
+        "the local Cl(3) factor together with functions on the Z^3 substrate, but only the "
+        "finite factor is ever instantiated. Every computation here lives on the hw=1 "
+        "sector isomorphic to C^3, with no site index, no function algebra over the "
+        "substrate and no locality structure, so nothing in this runner distinguishes one "
+        "site from another."
+    )
+    print(
+        "  per_mode: resolved, and it is the level at which the spectral action is "
+        "actually built. The three modes lambda_k = a + 2|b| cos(arg b + 2 pi k / 3) are "
+        "computed in closed form and cross-checked against numerical diagonalization to "
+        "1e-10, the action is assembled as the mode sum of f(lambda_k^2 / Lambda^2), and "
+        "the heat-kernel content is expressed through the mode power sums, with "
+        "P_1 = 3 a carrying no amplitude dependence at all."
+    )
+    print(
+        "  per_block: resolved — the C_3 isotype blocks are what the second power sum "
+        "separates, P_2 = 3 a^2 + 6 |b|^2 splitting into a singlet block total and a "
+        "doublet block total, and the BAE condition under test is exactly the equal-block "
+        "statement a^2 = 2 |b|^2. That block identity is confirmed algebraically and the "
+        "block-total derivative in |b| is shown to vanish only at |b| = 0, never at the "
+        "BAE ratio."
+    )
+    print(
+        "  lattice_wide: checked and not executed, and its absence is part of the finding "
+        "rather than a gap. No Z^3 sum, volume or continuum limit is formed, and the cutoff "
+        "scale is held fixed at Lambda = 1 throughout, so the asymptotic large-Lambda "
+        "regime in which a spectral action would normally be expanded is never entered. "
+        "What is scanned instead is convention space at fixed finite rank: four cutoff "
+        "functions, a 1000-point amplitude grid and a 2000-point phase grid, with BAE "
+        "counted as critical only within 0.05 in |b|/a and Brannen-phase stationarity "
+        "tested against a 1e-2 threshold. The route fails on that robustness scan, not on "
+        "any asymptotic argument."
+    )
+
+
+# ----------------------------------------------------------------------
 # Main
 # ----------------------------------------------------------------------
 
@@ -1137,6 +1192,7 @@ def main() -> int:
     section7_six_level_closure(c)
     section8_convention_robustness(c)
     section9_does_not_disclaimers(c)
+    section10_n5_execution_certificate()
 
     c.summary()
     print()

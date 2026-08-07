@@ -212,6 +212,55 @@ check("base splits 3 (+) 1 under the residual swap (ranks 3 and 1) -> su(3) at t
       sym_rank == 3 and anti_rank == 1, f"ranks ({sym_rank},{anti_rank})")
 
 # ===========================================================================
+# N5 execution certificate: what this runner resolves at each granularity.
+#   (Reports already-computed quantities only; it draws no new random numbers,
+#    so the seeded stream above is untouched.)
+# ===========================================================================
+print("=" * 78)
+print("N5 execution certificate — resolution granularities")
+print("=" * 78)
+print(
+    "  per_element: every algebraic claim here is settled entrywise on explicit "
+    "complex matrices rather than by appeal to a theorem name — phi(AB) equals "
+    "phi(A)phi(B) and phi(A^dag) equals phi(A)^dag on M_4 to numerical zero, "
+    "E(I_4) equals I_2 exactly, and on the block cube X_1^2, Y_1^2 and Z_1^2 "
+    "each return I_8 with the three cyclic commutators returning 2i Z_1, 2i X_1 "
+    "and 2i Y_1 entry by entry."
+)
+print(
+    "  per_site: the obstruction is stated at the single site and is arithmetic — "
+    f"the Qubit axiom fixes M_{m_site}(C) at every site of the lattice and at "
+    f"every block-site after decimation, while eight such sites tensor to the "
+    f"block algebra M_{n_block}; since {n_block} does not divide {m_site} there "
+    "is no unital *-homomorphism onto the coarse site, and the positive control "
+    "M_2 -> M_4 shows the divisibility criterion is the whole content."
+)
+print(
+    "  per_mode: resolved by cube axis rather than by individual taste corner — "
+    "the selected axis mu = 1 carries the shift X_1, the parity Z_1 and the "
+    "derived Y_1 = -i Z_1 X_1 that close su(2) on the 8-dimensional cube, while "
+    "the two complementary axes 2 and 3 enter only through the residual swap "
+    "P_swap, which is verified to commute with all three selected-axis "
+    "generators; no single taste corner is given its own separate treatment."
+)
+print(
+    "  per_block: this is the granularity the no-go is about — the 2x2x2 block of "
+    f"eight qubits carries M_{n_block} against the required M_{m_site} at the "
+    "block-site, the non-multiplicativity is exhibited on the memory-safe M_4 -> "
+    "M_2 block and then re-tested across 50 independently drawn isometries "
+    "without a single multiplicative case, and the graph-first construction is "
+    f"re-run one rung up on the block-level cube returning commutant dimension "
+    f"{null_dim} with the base splitting into ranks ({sym_rank}, {anti_rank})."
+)
+print(
+    "  lattice_wide: checked and not executed — no extended Z^3 lattice, volume, "
+    "or thermodynamic limit is instantiated anywhere in this runner; the claim "
+    "that the blocked lattice again satisfies Lattice + Qubit holds by "
+    "construction of the decimation rather than by any computation performed "
+    "here, and the scale-blindness evidence is a single blocking step re-run one "
+    "level up, not an iteration toward an RG fixed point."
+)
+
 print("=" * 78)
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("=" * 78)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_theorem_bae_newton_girard_unified_obstruction_2026_05_10_t2bae.py
-runner_sha256: 4c260ae804e47abe3eb3f4a9f08077e0f0c374d27f038e8cb15a0d6912a1b0f0
+runner_sha256: b163a34695269754061f602be508fe19e9adc98e0f3162e0125478552f3a41a0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================
@@ -64,6 +64,13 @@ Source-note: docs/THEOREM_BAE_NEWTON_GIRARD_UNIFIED_OBSTRUCTION_NOTE_2026-05-10_
   [PASS] S6.EA2 Tested route summaries cover cases (i) + (ii) | symmetric eigenvalue functionals + grouplike-coproduct extensions
   [PASS] S6.EA3 Case (i) cannot pin BAE (Newton-Girard reduction to power sums) | verified in Section 1: P_n supplies no BAE selector
   [PASS] S6.EA4 Case (ii) cannot pin BAE (group-ring coproduct collapse) | verified in Section 3: Tr(Δ(H)^n) = 3 Tr(H^n)
+
+=== N5 execution certificate ===
+per_element: entry-level resolution is exact on the three 3x3 isotype generators I, C+C^2 and i(C-C^2) — their pairwise Frobenius pairings all vanish (True) and their squared norms come back as the integers 3, 6 and 6 (True); by contrast the four Section-6 checks read a hard-coded eight-row classification table and resolve no matrix entry at all, so that part is inventory only.
+per_site: checked and not executed — H acts on the hw=1 BZ-corner triplet C^3 whose index is a corner/character label, and this runner never instantiates a Z^3 coordinate, a neighbour list or a site-local carrier, so there is no site-resolved quantity for it to decide.
+per_mode: the three circulant modes lambda_k = a + 2|b| cos(arg b + 2 pi k / 3) are resolved and cross-checked against Tr(H^n) for n = 1, 2, 3, 4 over 50 seeded circulant draws (seed 987654, a and both parts of b uniform on [-2, 2]) at relative tolerance 1e-9, while Section 2 separates the mode content into (a, |b|^2) plus a single cos(3 arg b) remnant over 50 draws at seeds 314159 and 271828.
+per_block: block structure separates cleanly and is where the residue sits — the 1-real-dimensional trivial block R<I> is orthogonal to the 2-real-dimensional doublet block, the nine (i, j) coproduct isotypes of Delta(H) fall into class sizes [3, 3, 3] under (i + j) mod 3 with representatives equal to the H-multiset (True), and the surviving ambiguity is the block weight choice, since at the BAE point a = 1, |b| = 1/sqrt(2) the multiplicity-weighted F_(1,1) vanishes to 1e-12 (True) while the real-dimension-weighted F_(1,2) sits at 0.5.
+lattice_wide: checked and not executed — the obstruction is stated on one three-dimensional BZ-corner fibre, and nothing in this runner sums, averages or extrapolates over a lattice volume or takes any large-volume limit; the ingredient the note itself declares missing is an isotype-weight convention, not a global lattice theorem.
 
 === TOTAL: PASS=26, FAIL=0 (of 26) ===
 

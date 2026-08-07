@@ -182,6 +182,49 @@ def part5_firewall() -> None:
     check("bare retained is disallowed", "bare_retained_allowed: false" not in note)
 
 
+def part6_n5_certificate() -> None:
+    """Print-only N5 execution certificate. Adds no check and no counter."""
+    print("\nF. N5 execution certificate")
+    ratio = diag_metric_ratio_for_target(TARGET_Q_E)
+    a_coeff = general_metric_residual(Fraction(1), Fraction(0), Fraction(0), TARGET_Q_E)
+    c_coeff = 2 * (TARGET_Q_E * CENTER_T - SHELL[0] * SHELL[1])
+    b_coeff = CENTER_T * CENTER_T - SHELL[1] * SHELL[1]
+    print(
+        f"per_element: the selector equation is resolved coefficient by coefficient -- the "
+        f"a-coefficient is {a_coeff}, the off-diagonal coefficient is {c_coeff} and the "
+        f"b-coefficient is {b_coeff}, each an exact Fraction assembled from the two fixed source "
+        f"vectors, and the diagonal specialization collapses the three into the single required "
+        f"ratio b/a={ratio}."
+    )
+    print(
+        "per_site: genuinely executed, because the two star roles are the very objects compared "
+        f"-- the shell source S=({SHELL[0]}, {SHELL[1]}) and the center source "
+        f"C(q_E)=(q_E, {CENTER_T}) enter as distinct 2-vectors, and the entire selector condition "
+        "is the demand that their quadratic norms agree, so shifting the center entry q_E is "
+        "precisely what the metric is being asked to absorb."
+    )
+    print(
+        "per_mode: resolved on the two legs of each source vector -- the first entry of each pair "
+        f"is the E-channel leg and the second the T-channel leg, the T legs stay frozen at "
+        f"{SHELL[1]} on the shell and {CENTER_T} at the center, and the off-diagonal metric entry "
+        f"c is exactly the E-T mode mixing whose coefficient {c_coeff} sits in the target equation."
+    )
+    print(
+        "per_block: one exhaustive block sweep is run -- every integer triple with a and b in "
+        "1..64 and c in -64..64 is filtered to the SPD cone and tested against the target "
+        "residual, and none of them solves it; this certificate states plainly that the emptiness "
+        "is bounded rather than general, since the runner itself exhibits the SPD solution "
+        "(a,b,c)=(704,1449,0) sitting just outside that search box."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no lattice, no volume, no sum and no limit "
+        "appears anywhere in this file, and the only quantifier it attempts runs over that bounded "
+        "integer box rather than over all admissible metrics; the genuinely unrestricted object, a "
+        f"typed Route-2 metric/source primitive that would derive {ratio} instead of supplying it, "
+        "is what the note leaves standing as the remaining positive target."
+    )
+
+
 def main() -> int:
     print("=" * 88)
     print("ROUTE-2 METRIC SELECTOR RATIO BOUNDARY")
@@ -192,6 +235,7 @@ def main() -> int:
     part3_current_metric_surfaces()
     part4_supplied_metric_examples()
     part5_firewall()
+    part6_n5_certificate()
 
     print("\nSummary")
     print("-" * 72)

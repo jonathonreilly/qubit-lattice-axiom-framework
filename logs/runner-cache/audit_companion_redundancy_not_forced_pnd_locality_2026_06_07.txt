@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_redundancy_not_forced_pnd_locality_2026_06_07.py
-runner_sha256: 05ab9e82954a70ac8194b40f5a4fc6682bafe2405de8f0bcd8d9a99202e24aed
+runner_sha256: d7b2ddae60240e3346cb3ea0a8162b526727b83b5cb2523e3ea3b3e3852d11da
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.47
 status: ok
 ----- stdout -----
 REDUNDANCY IS NOT FORCED BY {DURABILITY/PND + Z^3-LOCALITY + LEADING-RANGE}  (NO-GO)
@@ -30,6 +30,14 @@ REDUNDANCY IS NOT FORCED BY {DURABILITY/PND + Z^3-LOCALITY + LEADING-RANGE}  (NO
 -- C. PND alone does NOT force redundancy: a higher-range PND coupling gives R_delta=0 --
 [PASS] Z_S X_1 X_2 is pointer-non-demolition ([H, Z_S]=0) yet R_delta=0 for disjoint single-site fragments -> RECORD_FORMATION item 1's '[H,Pi_S]=0 => R_delta=n' holds only for the single-site-SUM coupling, not for general PND
        ||[Z_S X_1 X_2, Z_S]||=0.0e+00, single-site R_delta=0
+
+-- N5 execution certificate (print-only; registers no check, draws no random number) --
+per_element: exercised -- every operator here is written down entry by entry as a Kronecker product of explicit 2x2 Paulis placed at a named site, and the pointer-non-demolition premise is verified the same way: the commutator [Z_S X_1 X_2, Z_S] is compared entrywise against zero by np.allclose and carries norm 0.0e+00. Conditional states are built as outer products and reduced by explicit index contraction, never by a summary statistic.
+per_site: exercised, and the result is defined at this granularity -- R_delta counts DISJOINT SINGLE-SITE fragments, testing each environment site on its own rather than any pooled fragment, with holevo_pointer() called per site after partial_trace() keeps exactly that one site. The section-A chain carries 4 environment sites around one pointer site and the section-B/C chain carries 2; a coupling that broadcasts to a joint pair but not to single sites is exactly what the no-go exhibits.
+per_mode: exercised -- time evolution is not approximated but performed in the Hamiltonian eigenbasis: eigh() diagonalizes H and exp(-i w t) is applied to each eigenvalue separately, so every mode is advanced individually. The von Neumann entropies feeding the Holevo deficit are likewise sums over the full eigenvalue spectrum of each reduced state, with eigenvalues below 1e-12 dropped from the logarithm.
+per_block: exercised, and it is load-bearing -- the pointer projectors (I +/- Z_S)/2 split every state into its two pointer blocks, and each Holevo quantity is assembled from the two block-conditioned reduced states together with their block priors. Without that two-block resolution the deficit criterion at delta = 0.1 could not be evaluated at all, and the B0 anti-witness shows why it matters: a fragment with a full bit of quantum mutual information carries zero blockwise pointer information.
+lattice_wide: exercised, as a finite-N statement and nothing more -- R_delta is a whole-environment count over all disjoint single-site fragments, evaluated on a fixed 5-site Qubit chain in section A and a fixed 3-site chain in sections B and C. No size is extrapolated, no sequence in N is compared and no thermodynamic limit is taken; the runner's own docstring frames the genericity result as a bounded empirical statement rather than a measure-zero claim, and this certificate keeps it there.
+  provenance: section B is Monte Carlo over a seeded stream, np.random.seed(0) with 300 Gaussian coupling draws at each of two times (t = 1 and t = pi/4), scored against the deficit delta = 0.1 and a hit-rate threshold of 0.05. No sampled hit rate is quoted in the certificate above; only draw count, times, thresholds and seed are named, and this block draws no random number of its own.
 
 SCORECARD PASS=7 FAIL=0
 VERDICT (NO-GO): redundant broadcast / local observability is NOT forced by {durability/PND (clean, redundancy-free) + Z^3-locality + leading-range}. Under the sampled coupling family and times it is rare and fine-tuned (pure single-site-sum monitoring at the CNOT time); a randomly sampled pointer-non-demolition coupling is non-redundant. The premise that does force it -- a pure sum of independent single-site monitorings (conditional independence / multiplicity) -- IS local observability restated. This CONFIRMS + QUANTIFIES the landed open-gate note: local observability is a NAMED OPEN PREMISE not supplied by the axioms. Audit lane sets the verdict.

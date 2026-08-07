@@ -75,6 +75,15 @@ jobs:
         # been re-audited.
         run: python3 docs/audit/scripts/generate_conditional_prompts.py
 
+      - name: Compute science-fix backlog surface
+        # science_fix_backlog.json is the durable summary of every surface
+        # the science-fix-loop can drain: applied non-clean verdicts,
+        # archived-advisory defect reports that survive ledger-wide
+        # invalidations, and evidence-repair rows grouped by gate family.
+        # Runs after the pipeline so audit_queue.json exists. Summary only:
+        # no verdict, no premise, no audit authority.
+        run: python3 docs/audit/scripts/compute_science_fix_backlog.py
+
       - name: Commit refreshed ledger / queue
         run: |
           set -e
@@ -129,6 +138,7 @@ jobs:
           name: audit-queue-${{ github.run_id }}
           path: |
             docs/audit/data/audit_queue.json
+            docs/audit/data/science_fix_backlog.json
             docs/audit/data/effective_status_summary.json
             docs/audit/data/cycle_inventory.json
             docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md

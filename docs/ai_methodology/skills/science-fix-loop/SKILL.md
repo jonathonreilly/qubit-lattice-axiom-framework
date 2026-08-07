@@ -78,6 +78,32 @@ python3 scripts/science_fix_loop.py --dry-run
 Only complete, applied `audited_conditional`, `audited_renaming`,
 `audited_failed`, and `audited_numerical_match` records enter this lane.
 
+### 1b. Archived advisories (post-invalidation recovery)
+
+After a ledger-wide invalidation (premise-epoch reset, packet-requirement
+change), zero applied verdicts exist and lane 1 is empty — but the archived
+non-clean rationales in `previous_audits[]` still name source defects the
+invalidating event did not repair. Recover them as ADVISORY candidates:
+
+```bash
+python3 scripts/science_fix_loop.py --from-archived --dry-run
+```
+
+Selection is conservative: only rows whose LAST archived verdict is
+non-clean qualify (a trailing clean means the defect was repaired and
+re-audited before the reset, so plain re-audit is the right next step).
+Archived verdicts are VOID and authorize nothing: every worker prompt binds
+reproduce-first discipline — verify the named defect on current
+`origin/main`, make no edit when it is already settled, and report
+"settled on main" with evidence. The independent audit lane re-decides
+everything.
+
+The consolidated backlog across all lanes (applied, archived-advisory,
+evidence-repair by gate family) is generated nightly to
+`docs/audit/data/science_fix_backlog.json` by
+`docs/audit/scripts/compute_science_fix_backlog.py`; read it first when
+deciding where to drain.
+
 ### 2. Campaign quarantines
 
 Render the typed recovery plan first:

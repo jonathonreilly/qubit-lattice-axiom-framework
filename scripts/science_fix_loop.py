@@ -89,7 +89,9 @@ import os
 import re
 import shutil
 import signal
+import io
 import subprocess
+import tarfile
 import sys
 import tempfile
 import time
@@ -550,6 +552,167 @@ CAMPAIGN_REASON_CATEGORY = {
     "blocked_row_reentry_quarantined": "campaign_blocked_reentry",
     "claim_transaction_quarantined": "campaign_claim_transaction",
 }
+
+
+ARCHIVED_NON_CLEAN_VERDICTS = (
+    "audited_conditional",
+    "audited_failed",
+    "audited_renaming",
+    "audited_numerical_match",
+)
+
+
+def advisory_handoff_prompt(row: dict) -> str:
+    """Worker prompt for an ADVISORY candidate from an archived audit.
+
+    The archived verdict is void and confers no authority.  The prompt binds
+    the worker to reproduce-first discipline so a defect that current main has
+    already settled produces no edit.
+    """
+    return f"""Use the physics-loop skill to evaluate and, only if it still reproduces, repair a defect named by an ARCHIVED audit of {row['note_path']}.
+
+ADVISORY PROVENANCE — READ FIRST. The audit verdict quoted below was
+invalidated by a ledger-wide event ({row['invalidation_reason']},
+archived {row['archived_at']}). It is VOID and carries no audit authority.
+It is supplied only because a non-clean rationale usually names a real
+source defect that the invalidating event (for example an axiom wording
+change) did not repair. The independent audit lane re-decides everything.
+
+Claim id: {row['claim_id']}
+Archived verdict (void): {row['audit_verdict']}
+Claim type: {row['claim_type']}
+Load-bearing step class: {row['cls']}
+Claim scope: {row['claim_scope']}
+
+Archived auditor rationale (advisory only):
+{row['verdict_rationale']}
+
+Archived auditor repair target (advisory only):
+{row['repair_target']}
+
+Required first step: verify against CURRENT origin/main that the named
+defect still exists — read the note, run the runner, check the cited
+lines. If current main already settles it, STOP: make no edit and report
+"settled on main" with the evidence. Only a still-reproducing defect
+authorizes the narrowest honest source or runner edit. Open no new axiom
+or primitive. Do not edit audit-ledger or generated audit-status
+surfaces. The goal is a reviewable PR whose merged result can be
+independently re-audited.
+""".strip()
+
+
+def parse_archived_advisories() -> list[dict]:
+    """ADVISORY repair candidates from archived (invalidated) audits.
+
+    A mass invalidation — a premise-epoch reset, a packet-requirement change —
+    archives every live verdict into ``previous_audits[]`` and resets rows to
+    ``unaudited``.  The verdicts are void, but a non-clean rationale usually
+    names a source defect that the invalidating event did not repair.  This
+    lane resurfaces that knowledge so months of defect-finding survive a
+    reset, without granting the archived verdict any authority.
+
+    Conservative selection rule, per row on current ``origin/main``:
+
+    - live ``audit_status`` is ``unaudited``;
+    - ``previous_audits`` is non-empty and its LAST archived record carries a
+      non-clean scientific verdict.  If the last archived verdict is clean,
+      the defect was repaired and re-audited clean before the invalidation,
+      so re-audit alone is the right next step and no candidate is emitted.
+
+    Candidates are read from ``origin/main`` (single ``git archive``
+    snapshot), never from the possibly-stale local ledger.
+    """
+    refresh_origin_main_for_handoff()
+    try:
+        result = subprocess.run(
+            ["git", "archive", "origin/main", "docs/audit/data/ledger"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            timeout=120,
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        raise ValueError(f"cannot snapshot origin/main ledger: {exc}") from exc
+    if result.returncode != 0:
+        raise ValueError(
+            "cannot snapshot origin/main ledger: "
+            + result.stderr.decode("utf-8", "replace").strip()
+        )
+
+    rows: list[dict] = []
+    skipped_unmapped = 0
+    skipped_incomplete = 0
+    with tarfile.open(fileobj=io.BytesIO(result.stdout)) as tar:
+        for member in tar.getmembers():
+            if not member.name.endswith(".json"):
+                continue
+            fh = tar.extractfile(member)
+            if fh is None:
+                continue
+            try:
+                row = json.loads(fh.read().decode("utf-8"))
+            except (json.JSONDecodeError, UnicodeDecodeError):
+                continue
+            if not isinstance(row, dict):
+                continue
+            if row.get("audit_status") != "unaudited":
+                continue
+            archived = row.get("previous_audits") or []
+            if not isinstance(archived, list) or not archived:
+                continue
+            last = archived[-1]
+            if not isinstance(last, dict):
+                continue
+            verdict = last.get("audit_status")
+            if verdict not in ARCHIVED_NON_CLEAN_VERDICTS:
+                continue
+            repair_target = str(last.get("repair_target") or "").strip()
+            rationale = str(last.get("verdict_rationale") or "").strip()
+            if not rationale:
+                skipped_incomplete += 1
+                continue
+            category = audit_repair_category(verdict, repair_target)
+            if category is None:
+                skipped_unmapped += 1
+                continue
+            claim_id = row.get("claim_id")
+            note_path = row.get("note_path")
+            if not claim_id or not note_path:
+                skipped_incomplete += 1
+                continue
+            candidate = {
+                "category": category,
+                "claim_id": claim_id,
+                "note_path": note_path,
+                "descendants": int(row.get("transitive_descendants") or 0),
+                "cls": str(
+                    last.get("load_bearing_step_class")
+                    or row.get("load_bearing_step_class")
+                    or "unknown"
+                ),
+                "claim_type": str(
+                    last.get("claim_type") or row.get("claim_type") or "unknown"
+                ),
+                "claim_scope": str(
+                    last.get("claim_scope") or row.get("claim_scope") or ""
+                ),
+                "audit_verdict": verdict,
+                "verdict_rationale": rationale,
+                "repair_target": repair_target or "(none recorded)",
+                "invalidation_reason": str(
+                    last.get("invalidation_reason") or "unrecorded"
+                ),
+                "archived_at": str(last.get("archived_at") or "unrecorded"),
+                "advisory": True,
+                "prompt_source": "archived_previous_audits(origin/main)",
+            }
+            candidate["prompt_body"] = advisory_handoff_prompt(candidate)
+            rows.append(candidate)
+    if skipped_unmapped or skipped_incomplete:
+        print(
+            f"from-archived: skipped {skipped_unmapped} unmapped-category and "
+            f"{skipped_incomplete} incomplete archived records"
+        )
+    return rows
 
 
 def origin_main_blob_oid(path: str | None) -> str | None:
@@ -1414,6 +1577,19 @@ def main() -> int:
         ),
     )
     p.add_argument(
+        "--from-archived",
+        action="store_true",
+        help=(
+            "Build ADVISORY repair candidates from archived (invalidated) "
+            "non-clean audits in previous_audits[] on origin/main. Archived "
+            "verdicts carry no authority: each worker must reproduce the "
+            "named defect on current main before editing, and settled "
+            "defects produce no edit. Use after a mass invalidation (e.g. a "
+            "premise-epoch reset) so recorded defect-finding survives the "
+            "reset."
+        ),
+    )
+    p.add_argument(
         "--campaign-workdir",
         type=Path,
         default=None,
@@ -1454,6 +1630,8 @@ def main() -> int:
         p.error("--difficulty must include at least one bucket")
     if args.handoff_file is not None and args.campaign_workdir is not None:
         p.error("--handoff-file and --campaign-workdir are mutually exclusive")
+    if args.from_archived and (args.handoff_file or args.campaign_workdir):
+        p.error("--from-archived is mutually exclusive with --handoff-file/--campaign-workdir")
 
     RUNTIME["model"] = args.model
     RUNTIME["reasoning"] = args.reasoning
@@ -1469,6 +1647,8 @@ def main() -> int:
     try:
         if args.handoff_file is not None:
             rows = parse_audit_handoff(args.handoff_file)
+        elif args.from_archived:
+            rows = parse_archived_advisories()
         elif args.campaign_workdir is not None:
             rows = parse_campaign_workdir(args.campaign_workdir)
         else:
@@ -1480,7 +1660,8 @@ def main() -> int:
         source = (
             args.handoff_file
             or args.campaign_workdir
-            or PROMPTS_FILE.relative_to(REPO_ROOT)
+            or ("archived previous_audits on origin/main" if args.from_archived
+                else PROMPTS_FILE.relative_to(REPO_ROOT))
         )
         print(f"No actionable repair candidates found in {source}")
         return 0

@@ -232,12 +232,65 @@ def firewall_checks() -> None:
     report("generation/Koide dial selected flag is false", not generation_or_koide_dial_selected)
 
 
+def n5_execution_certificate() -> None:
+    """State, per canonical resolution class, what this runner resolves.
+
+    Reporting only: prints, calls no report(), leaves PASS/FAIL alone.
+    """
+    section("N5 execution certificate (reporting only; adds no check)")
+    print(
+        "  per_element: resolved letter by letter over the three-symbol "
+        "alphabet — count(w) returns the separate multiplicities of A, B and "
+        "C, the additive readout weights those three multiplicities "
+        "individually by (2, 5, 11), and reversal invariance of the count "
+        "state is confirmed exhaustively across all 121 words of length 0 "
+        "through 4, so this class is settled by enumeration rather than by a "
+        "single witness."
+    )
+    print(
+        "  per_site: checked and not executed as a spatial resolution — "
+        "nothing here carries a Z^3 or any other lattice coordinate; the only "
+        "index available is position within a record word, and the runner does "
+        "work with that index, since transitions() reads adjacent-position "
+        "pairs, the fine event reads w[0] and w[-1], and reversal is the "
+        "position map i -> n-1-i, but a step along a record history is not a "
+        "site and the note asks for no site-resolved statement."
+    )
+    print(
+        "  per_mode: checked and not executed — no operator is diagonalized "
+        "anywhere in this runner; the two empirical kernels are tested only "
+        "for row-stochasticity in exact Fraction arithmetic and for inequality "
+        "with each other, and no stationary vector, spectral gap, relaxation "
+        "mode or eigenvector of either kernel is ever computed."
+    )
+    print(
+        "  per_block: resolved row block by row block — normalize_rows builds "
+        "one conditional row per source letter, divides each by its own "
+        "outgoing total, and requires each to sum to exactly 1 as Fractions, "
+        "with the empty-row convention falling back to the identity row; the "
+        "forward and reversed kernels are then compared as whole row systems, "
+        "and transpose_edges is precisely what carries one block structure "
+        "onto the other."
+    )
+    print(
+        "  lattice_wide: checked and not executed — there is no lattice, no "
+        "volume and no limit of any kind here; the widest computed statement "
+        "is the exhaustive 121-word enumeration plus one explicit three-word "
+        "law, so the note's general claim that count_* P equals count_* P^R "
+        "for every finite law is exhibited on a witness rather than proved; "
+        "and of the recorded passes, 17 are string-presence checks over four "
+        "repository documents while 7 are firewall booleans hardcoded False in "
+        "this file rather than computed from anything."
+    )
+
+
 def main() -> int:
     source_anchor_checks()
     count_reversal_checks()
     law_pushforward_checks()
     transition_orientation_checks()
     firewall_checks()
+    n5_execution_certificate()
     print()
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("POST_RECORD_COUNTS_ORIENT_PHYSICAL_ARROW=FALSE")

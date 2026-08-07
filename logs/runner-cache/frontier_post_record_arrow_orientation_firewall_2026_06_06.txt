@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_arrow_orientation_firewall_2026_06_06.py
-runner_sha256: 56caa42f1a6d35ccc199c9515b213bdea82dd634da4111319a8582bbb2c885d0
+runner_sha256: 54a08fd1ba0ee1661614c210e2b3575984389f6c1bf9361ba38846d006f91bf4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 
@@ -69,6 +69,15 @@ PASS Record-derived physical arrow flag is false
 PASS production-kernel selected flag is false
 PASS stable setting selects dial flag is false
 PASS generation/Koide dial selected flag is false
+
+------------------------------------------------------------------------------
+N5 execution certificate (reporting only; adds no check)
+------------------------------------------------------------------------------
+  per_element: resolved letter by letter over the three-symbol alphabet — count(w) returns the separate multiplicities of A, B and C, the additive readout weights those three multiplicities individually by (2, 5, 11), and reversal invariance of the count state is confirmed exhaustively across all 121 words of length 0 through 4, so this class is settled by enumeration rather than by a single witness.
+  per_site: checked and not executed as a spatial resolution — nothing here carries a Z^3 or any other lattice coordinate; the only index available is position within a record word, and the runner does work with that index, since transitions() reads adjacent-position pairs, the fine event reads w[0] and w[-1], and reversal is the position map i -> n-1-i, but a step along a record history is not a site and the note asks for no site-resolved statement.
+  per_mode: checked and not executed — no operator is diagonalized anywhere in this runner; the two empirical kernels are tested only for row-stochasticity in exact Fraction arithmetic and for inequality with each other, and no stationary vector, spectral gap, relaxation mode or eigenvector of either kernel is ever computed.
+  per_block: resolved row block by row block — normalize_rows builds one conditional row per source letter, divides each by its own outgoing total, and requires each to sum to exactly 1 as Fractions, with the empty-row convention falling back to the identity row; the forward and reversed kernels are then compared as whole row systems, and transpose_edges is precisely what carries one block structure onto the other.
+  lattice_wide: checked and not executed — there is no lattice, no volume and no limit of any kind here; the widest computed statement is the exhaustive 121-word enumeration plus one explicit three-word law, so the note's general claim that count_* P equals count_* P^R for every finite law is exhibited on a witness rather than proved; and of the recorded passes, 17 are string-presence checks over four repository documents while 7 are firewall booleans hardcoded False in this file rather than computed from anything.
 
 SUMMARY: PASS=43 FAIL=0
 POST_RECORD_COUNTS_ORIENT_PHYSICAL_ARROW=FALSE

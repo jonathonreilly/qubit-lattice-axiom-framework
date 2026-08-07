@@ -184,6 +184,46 @@ check("the axiom file supersedes the 2026-06-04 wording (it is the live authorit
       "supersedes" in low and "minimal_axioms_2026-06-04.md" in low)
 
 # ===========================================================================
+# Part 4.  N5 execution certificate — what this runner resolves.
+# ===========================================================================
+# Monte-Carlo sampled (seeded): the certificate cites structure, sample counts
+# and named gates rather than sampled deviation values.
+print("=" * 78)
+print("Part 4  N5 execution certificate — what this runner resolves")
+print("=" * 78)
+print(
+    "  per_element: checked — SWAP is not accepted on a summary norm. Its defining "
+    "action is verified on the 2x2 matrix-unit basis element by element, every ordered "
+    "pair (E_ij, E_kl) being required to satisfy SWAP (A x B) SWAP = B x A, and SWAP is "
+    "separately confirmed entrywise real, equal to its own transpose, and involutive."
+)
+print(
+    "  per_site: checked — the two sites of the edge are exactly the two tensor factors "
+    "of C^2 (x) C^2, and every matrix-unit test above is literally a site-exchange test "
+    "showing SWAP moves site content without carrying internal direction. The text "
+    "audit then resolves the same axis on the authority file, confirming no cross-site "
+    "clause occurs anywhere in the canonical Record text."
+)
+print(
+    "  per_mode: checked — the only candidate mode split of the irreducible color "
+    "triplet is tested directly and rejected. The rank-1 projector diag(1,0,0) fails to "
+    "commute with the SU(3) action by more than the 0.1 gate, so no nontrivial "
+    "mode-resolved partition survives and D(U) = U registers the framed link rather "
+    "than any per-mode class content."
+)
+print(
+    "  per_block: checked — the block-level obstruction is an exact dimension count "
+    "between algebras rather than a numerical fit: the anti-Hermitian block natively "
+    "carried by one qubit link is u(2) of real dimension 4, while a faithful color "
+    "block needs dim su(3) = 8, so the color block does not fit on a link at all."
+)
+print(
+    "  lattice_wide: checked and not executed — nothing in this runner extends past a "
+    "single edge. The largest object built is the two-site space C^2 (x) C^2 plus one "
+    "C^3 color factor; no ring, volume or limit appears, which matches the note's own "
+    "scope as a narrow route-demote at the edge level rather than a lattice claim."
+)
+
 print("=" * 78)
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("=" * 78)

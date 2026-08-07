@@ -499,5 +499,44 @@ print(
 )
 
 
+# ----------------------------------------------------------------------------
+section("N5 execution certificate — what this runner resolves at each granularity")
+# ----------------------------------------------------------------------------
+
+print(
+    "per_element: checked and not executed — the runner's first obstruction is "
+    "precisely that no explicit matrix-form per-step operator A_k is exhibited "
+    f"anywhere in the {len(RETAINED_NOTES)} scanned source notes, so there is no "
+    "operator entry to resolve; the executed evidence at this granularity is that "
+    "negative scan, not any entrywise computation."
+)
+print(
+    "per_site: checked and not executed — the 16-step staircase is indexed by "
+    "blocking scale, not by lattice site; no lattice is instantiated anywhere in "
+    "this runner and no site-resolved quantity is computed, so nothing here "
+    "certifies the bridge site by site."
+)
+print(
+    "per_mode: checked — the 16 taste modes are enumerated one at a time, n_taste "
+    f"taking the {len(set(n_taste_sequence))} distinct values 16 down to 1 with each "
+    "rung contributing b_3 = (33 - 2 n_taste)/3, and the taste near-degeneracy "
+    f"leaves an available log-gap of only alpha_LM^2 = {alpha_LM_sq:.6f} against the "
+    f"required |log alpha_LM| = {required_log_gap:.4f}."
+)
+print(
+    "per_block: checked — the blocking rungs are accumulated block by block and the "
+    f"runner locates the exact rung at which the coupling budget is exhausted: "
+    f"crossing at k* = {k_cross} with partial shift {partial:.4f} against the start "
+    f"1/g^2 = {ONE_OVER_G2:.4f}, the full 16-rung shift being {cumulative_shift:.4f}."
+)
+print(
+    "lattice_wide: checked and not executed — the hypothesis that would need "
+    "certification is the N -> infinity random-product limit, while this runner "
+    "executes only the finite 16-step deterministic staircase plus two alpha_LM "
+    f"sensitivity points at {alpha_low} and {alpha_high}; taking no asymptotic or "
+    f"volume limit is itself obstruction T9, with PASS={PASS}, FAIL={FAIL}."
+)
+
+
 print(f"\n{'=' * 88}\n  TOTAL: PASS={PASS}, FAIL={FAIL}\n{'=' * 88}")
 sys.exit(1 if FAIL > 0 else 0)

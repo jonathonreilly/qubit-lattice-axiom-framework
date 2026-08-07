@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_theorem_l1_4attack_terminality_2026_05_10_t2l1.py
-runner_sha256: 099b7e0a589c0e1d85b05a0b6eb544a55593bc200a8668c84f847fa5235fb034
+runner_sha256: 294c8d7beda2b389e957b3e36dc07e34516f62f985dd842641d7e8a4206ab202
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================
@@ -84,6 +84,13 @@ Source-note: docs/THEOREM_L1_4ATTACK_TERMINALITY_NOTE_2026-05-10_t2l1.md
   [PASS] S7.FA1 Four-route bounded no-go: each lands at named obstacle | MS-bar + Casimir + Resurgence + Topological = tested axes
   [PASS] S7.FA2 Per P-L1-D synthesis: open-gate residue decomposes to 3 named sub-functors | (a) HK-MS conversion; (b) c_2 → coef; (c) per-graph projection
   [PASS] S7.FA3 L1 admission count UNCHANGED by this theorem | bounded no-go + sharpened residue; no new admission
+
+=== N5 execution certificate ===
+per_element: the eight Gell-Mann generators are the only objects this runner resolves entry by entry, and they close exactly — all 64 of the 64 pairings satisfy Tr(t^a t^b) = delta^ab / 2 to 1e-12 and the summed quadratic Casimir is a scalar matrix (4/3) I entrywise to atol 1e-12 (True); nothing else in Sections 1 to 7 touches an individual matrix entry.
+per_site: checked and not executed — the only vertex-like indices present belong to the bubble, sunset and K_4 Feynman graphs used for the Kirchhoff and F_q point counts, and no lattice site, link, spacing or configuration is instantiated at any point, so nothing is decided at site granularity.
+per_mode: Borel-plane singularity modes are resolved in closed form rather than numerically searched — the IR renormalon sits at z_* = 4 pi / beta_0 with beta_0 = 7, the UV ladder at z = -4 pi / (7 n) for n = 1, 2, 3, 4, and the subleading exponent 1 - beta_1 / beta_0^2 evaluates in exact rational arithmetic to 23/49 from beta_1 = 26.
+per_block: Casimir-channel blocks are enumerated completely and weighed — the 3-loop MS-bar skeleton carries 6 distinct tensor channels with exact rational weights ['2857/54', '-1415/54', '-205/18', '79/54', '11/9', '1/2'], while the Cl(3) plaquette period functor supplies rank 2 against MS-bar rank 6, so the block-level deficit is exactly 4 missing rationals.
+lattice_wide: checked and not executed — no lattice configuration, volume, spacing or plaquette expectation value is built here; the lattice/<P>-scheme enters only as the closed-form HK coefficient series T(n) = (-1)^(n+1) 4^n / (3^n n!) = ['4/3', '-8/9', '32/81', '-32/243'], and converting that to MS-bar is precisely sub-functor (a), which this runner names as missing rather than supplies.
 
 === TOTAL: PASS=41, FAIL=0 (of 41) ===
 

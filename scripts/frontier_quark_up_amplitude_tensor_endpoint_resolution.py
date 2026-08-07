@@ -705,6 +705,60 @@ def part3_endpoint_verdict(
     )
 
 
+def n5_execution_certificate(data: TensorEndpointData) -> None:
+    """Print-only granularity record; registers no check and moves no counter."""
+    print("\n" + "=" * 72)
+    print("N5 EXECUTION CERTIFICATE")
+    print("=" * 72)
+    print()
+    print(
+        "per_element: exercised at the level of individual CKM entries -- anchor_deviations() returns four separate "
+        "percent deviations, for |V_us|, |V_cb|, |V_ub| and the Jarlskog invariant, and both the anchored aggregate "
+        "and the anchored maximum reported for every candidate denominator are assembled from those four one at a "
+        "time. That is why a law can be penalised on a single entry while its sum still looks small. No "
+        "operator-valued or lattice-indexed element is evaluated in this file."
+    )
+    print(
+        f"per_site: thin, and reported as thin -- exactly two support points are ever distinguished: the center e0 "
+        f"and the uniform shell combination s/sqrt(6), taken from a {len(build_endpoint_atoms())}-atom endpoint "
+        "package that ultimately rests on the 7-by-7 adapted basis. The exact endpoint gap "
+        f"delta_A1(center) - delta_A1(shell) = {data.endpoint_gap:.12f}, which fixes the refit branch, is a genuine "
+        "site-class quantity, but the six shell sites are never separated from one another, so this is a two-point "
+        "endpoint distinction and not site resolution."
+    )
+    print(
+        "per_mode: exercised -- the endpoint readout is carried separately for the E and T bright channels, and "
+        "every ratio the cycle turns on is mode-labelled: |b_E/b_T| across the two slopes, |a_T/a_E| across the two "
+        "intercepts, and |b_T/a_T| inside the T channel alone. The bounded no-go is stated about the first of these, "
+        "so unless the two modes are held apart the question this runner answers cannot even be posed."
+    )
+    print(
+        "per_block: exercised -- the endpoint law is a two-by-two array of coefficients, a slope and an intercept "
+        "for each channel, and all four are read. The slope block supplies the disputed ratio, the intercept block "
+        "supplies the shell ratio, and b_T/a_T balances the two blocks within T. That is the entirety of the block "
+        "structure available here, and nothing beyond it is asserted."
+    )
+    print(
+        "lattice_wide: checked and not executed -- no whole-system quantity is computed and no system size is "
+        "varied. The only link to an extended object is inherited: tensor_endpoint_data() has already reduced the "
+        "adapted basis to a handful of endpoint scalars before this file begins, and everything downstream, the "
+        "exact-atom grammar, the anchored scoring and the verdict, is arithmetic on those scalars. There is "
+        "consequently no finite-N claim available and no limit is approached."
+    )
+    print()
+    print(
+        "  provenance: STAGE B enumerates an exact-expression grammar from the endpoint atoms and their positive "
+        "complements under +, -, *, / and sqrt of products, twice over, with dedup at 12 decimals; each surviving "
+        "denominator is scored through evaluate_candidate(), which runs an L-BFGS-B refit, and the anchor comes from "
+        "exact_support_anchor(), i.e. differential_evolution with seed=83 followed by L-BFGS-B. Grammar sizes are "
+        "printed in STAGE B. No optimized, searched or scored value is quoted in this certificate, and every "
+        "ordering it relies on is the runner's own deterministic (complexity, label) sort."
+    )
+    print(
+        f"  every identity claim above and below is tested against the runner's own EXACT_TOL = {EXACT_TOL:.0e}."
+    )
+
+
 def main() -> int:
     print("========================================================================")
     print("  FRONTIER: Quark Up-Amplitude Tensor-Endpoint Resolution")
@@ -736,6 +790,7 @@ def main() -> int:
         anchor_r_uc,
         anchor_r_ct,
     )
+    n5_execution_certificate(data)
 
     print("\n" + "=" * 72)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

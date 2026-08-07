@@ -292,6 +292,48 @@ def part7_reachability() -> None:
     ], " -> ".join(with_missing))
 
 
+def part8_n5_certificate() -> None:
+    """Print-only N5 execution certificate. Adds no check and no counter."""
+    print("\nPART 8: N5 execution certificate")
+    mixed = response_ratio([-1, 0, 1], [1, 1, 1])
+    bound_q_e, bound_rho_e, bound_c_te = endpoint_tuple(Fraction(3, 2))
+    print(
+        f"per_element: individual exponents are the elements here -- r^p is formed exactly at "
+        f"r={frac_text(R)} for each p in the tested ranges, and the exhaustive scan additionally "
+        "records which coefficient vector attains each bound, finding both extrema at pure single "
+        "monomials rather than at any mixture; that is the convex-average mechanism made visible "
+        "one coefficient at a time, not an assumed inequality."
+    )
+    print(
+        "per_site: checked and not executed -- this file never mentions a site, an arm or a star "
+        "anywhere; its whole vocabulary is exponents and nonnegative coefficients over two channel "
+        "weights, so there is no site index available to resolve and nothing site-shaped is "
+        "computed at any point in the run."
+    )
+    print(
+        "per_mode: the two modes enter through exactly one number and no more -- the ratio "
+        f"r=w_E/w_T={frac_text(R)} carries all mode information in this file, every bound is a "
+        f"statement about powers of that single ratio, and the endpoint consequences "
+        f"q_E<={frac_text(bound_q_e)}, rho_E<={frac_text(bound_rho_e)} and "
+        f"c_TE={frac_text(bound_c_te)} at the upper edge follow from it with the granted "
+        f"q_T={frac_text(Q_T)}."
+    )
+    print(
+        "per_block: three exponent cones are compared as blocks -- p>=0 capped at 1, p>=-1 capped "
+        f"at 3/2, and p>=-2 first reaching {frac_text(TARGET_LAMBDA)} -- each backed by an "
+        "exhaustive nonnegative coefficient sweep at coefficients 0..3, while a deliberately mixed "
+        f"block with exponents -1, 0, 1 and unit coefficients lands at {frac_text(mixed)}, "
+        "strictly inside the one-inverse cap; the caps are computed, the memberships are inventory."
+    )
+    print(
+        "lattice_wide: checked and not executed -- the only globally shaped object in the file is "
+        f"the typed reachability graph, a hand-declared set of {len(CURRENT_EDGES)} current edges "
+        f"and {len(MISSING_EDGES)} missing-primitive edges whose closure is searched rather than "
+        "derived, so it certifies routing between declared nodes and nothing about any extended "
+        "system; no volume, sum or limit occurs anywhere in this runner."
+    )
+
+
 def main() -> int:
     print("Route-2 positive source-functional cone no-go")
     print("Scope: finite positive channel-local functionals with net exponent p >= -1")
@@ -302,6 +344,7 @@ def main() -> int:
     part5_escape_hatches()
     part6_quote_anchors()
     part7_reachability()
+    part8_n5_certificate()
     print(f"\nPASS={PASS_COUNT} FAIL={FAIL_COUNT} TOTAL={PASS_COUNT + FAIL_COUNT}")
     if FAIL_COUNT:
         print("VERDICT: failed checks; do not use this packet.")

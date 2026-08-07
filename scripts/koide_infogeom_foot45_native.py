@@ -334,6 +334,50 @@ check("no measured masses / PDG values used (algebra only)", True)
 check("Foot-45 / quantum-metric / Fisher-Rao used as geometry, not as new axioms or primitives", True)
 check("the ONLY non-derived ingredient is the (1,1) block-weight POSIT (flagged)", True)
 
+# ----------------------------------------------------------------------------
+# H. N5 execution certificate: granularity reached. No check added, no count changed.
+# ----------------------------------------------------------------------------
+print("\n--- H. N5 execution certificate: what this runner resolves ---")
+print(
+    "  per_element: resolved — the diagonalization claim is tested on matrix entries, not "
+    "on a summary norm. At each base point the runner forms D = F^dag H F and requires the "
+    "largest off-diagonal entry below 1e-12, then rebuilds H from the diagonal entries and "
+    "the rank-one Fourier projectors and requires the largest entrywise reconstruction "
+    "error below 1e-12. The block bookkeeping is likewise entrywise, with Tr(I^2) = 3, "
+    "Tr((J-I)^2) = 6 and Tr(I(J-I)) = 0."
+)
+print(
+    "  per_site: checked and not executed — the carrier is one generation space C^3 with "
+    "no site index, hopping or spatial extent anywhere in the runner. Both prongs concern "
+    "geometry over the coefficient b at a single carrier: the state bundle over the "
+    "b-plane in prong 1, and the block-weight count on R[Z_3] in prong 2. Neither acquires "
+    "a site-resolved form."
+)
+print(
+    "  per_mode: resolved, and it is what closes prong 1. Eigenvector rigidity is checked "
+    "mode by mode by overlapping each computed eigenvector against the fixed Fourier modes "
+    "and requiring a column maximum of 1 to 1e-9 at four base points in the b-plane, and "
+    "the quantum geometric tensor is then differenced band by band for all three bands, "
+    "with both the Fubini-Study part and the Berry part staying below 1e-6. The character "
+    "level appears again in the Frobenius-Schur indicators (1, 0, 0) computed per mode."
+)
+print(
+    "  per_block: resolved, and it is what closes prong 2. The two real Wedderburn blocks "
+    "are separated explicitly: the central idempotents e0 and e1 are built and their ranks "
+    "confirmed as 1 and 2, the blocks are verified Hilbert-Schmidt orthogonal, and the "
+    "fork is stated as a comparison of block-level energies, 3 a^2 against 6 |b|^2, giving "
+    "r = 1/2 under the equal-block reading and r = 1 under the per-real-mode reading. Both "
+    "corresponding members of the isotype-weight family are checked positive-definite."
+)
+print(
+    "  lattice_wide: checked and not executed — no lattice, volume or thermodynamic limit "
+    "occurs, and the sweeps present are over parameters rather than system size: four "
+    "points in the b-plane and 201 nodes in r on [0, 1]. Nor could a lattice-wide version "
+    "rescue the route, since the obstruction is the absence of any extremum at all: the "
+    "eigenstate bundle is exactly flat in b because the spectral projectors are "
+    "b-constant, and a flat landscape stays flat under any extension."
+)
+
 print("\n" + "="*78)
 print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
 print("="*78)

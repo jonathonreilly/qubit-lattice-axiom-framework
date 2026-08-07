@@ -318,6 +318,49 @@ def part7_stuck_fanout() -> None:
     check("density-square primitive is the minimal direct missing premise in this packet", all(frame.needs_new_premise for frame in FANOUT))
 
 
+def part8_n5_execution_certificate() -> None:
+    """N5 execution certificate: print-only; it registers no check of its own."""
+    print("\nPART 8: N5 execution certificate")
+    print(
+        "per_element: the decisive object is a single column entry -- the restricted "
+        "shell column (1,0,0,0) and center column (1,0,1/6,0) differ in exactly one "
+        "slot, and because exact_p_apply forms x0 + rho_E*x2 that one slot 1/6 is the "
+        "sole place rho_E can act, which is why rho_E=0 and rho_E=21/4 give the same "
+        "shell answer 1 but center answers 1 and 15/8 respectively."
+    )
+    print(
+        "per_site: resolved only at the two site-role level and no further -- the runner "
+        "does carry the star center and the star shell as separate readout columns, and "
+        "the endpoint datum q_E is by construction the center-over-shell ratio, but no "
+        "seven-site star is ever built, no individual arm of the shell is addressed, and "
+        "no coordinate or displacement appears, so nothing finer than center-versus-shell "
+        "is available here."
+    )
+    print(
+        f"per_mode: the two bright channels are kept apart throughout -- the finite-star "
+        f"weights w_E={frac_text(W_E)} and w_T={frac_text(W_T)} give the channel ratio "
+        f"r={frac_text(R)}, the response law lambda=r^p is evaluated channelwise, and the "
+        "second output slot -2*x1 + 2*x3 is the T row which stays at 0 in both columns "
+        "while the E row alone moves; the residual is therefore a one-mode residual."
+    )
+    print(
+        "per_block: the exponent staircase is the block structure that is executed here, "
+        f"rung by rung -- p=0 gives lambda={frac_text(p_response_ratio(0))}, p=-1 gives "
+        f"{frac_text(p_response_ratio(-1))}, p=+2 gives the wrong-side "
+        f"{frac_text(p_response_ratio(2))}, and only p=-2 gives "
+        f"{frac_text(p_response_ratio(-2))}; the conditional block also shows the overall "
+        "density scale cancelling, since D_E=63/5 over D_T=28/5 is again 9/4."
+    )
+    print(
+        "lattice_wide: checked and not executed -- not one box, site count or limit is "
+        "constructed in this file, and its two global-looking parts resolve "
+        f"inventories only: a {len(CURRENT_EDGES)}-edge current typed graph that fails to "
+        f"reach rho_E_21_4 at all, plus {len(MISSING_DENSITY_EDGES)} hypothetical edges "
+        "that would complete it, and a token-absence scan over two registered premise "
+        "files; the missing global law is the p=-2 density-square primitive itself."
+    )
+
+
 def main() -> int:
     print("Route-2 p=-2 density-square primitive gap")
     print("Scope: current named Route-2 authority bank plus conditional p=-2 consequence")
@@ -328,6 +371,7 @@ def main() -> int:
     part5_registered_premise_scan()
     part6_typed_reachability()
     part7_stuck_fanout()
+    part8_n5_execution_certificate()
     print(f"\nPASS={PASS_COUNT} FAIL={FAIL_COUNT} TOTAL={PASS_COUNT + FAIL_COUNT}")
     if FAIL_COUNT:
         print("VERDICT: failed checks; do not use this packet.")

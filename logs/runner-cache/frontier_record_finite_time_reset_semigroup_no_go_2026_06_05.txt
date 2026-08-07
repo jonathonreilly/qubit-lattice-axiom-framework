@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_finite_time_reset_semigroup_no_go_2026_06_05.py
-runner_sha256: ab83bfcb463eda821a4f84f7f2a5ae78f23bbe74b7083e98a4ef0541009c860f
+runner_sha256: ba890ad1e3447a411ff7092a74ba0f422e6cdb7056d09fbb69d1b6651a2613d3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -69,6 +69,15 @@ no-go / singular reset endpoint runner
   [PASS] forbidden wording absent: boundary closure
   [PASS] forbidden wording absent: dial closure
   [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+N5 EXECUTION CERTIFICATE (print-only; registers no check)
+------------------------------------------------------------------------------
+  per_element: exercised -- each superoperator is assembled column by column from the individual matrix units E_ij, one per index pair, and trace preservation is then verified separately on every one of those units rather than on a single test state. Comparisons against the blank density and against the identity are entrywise via np.allclose at atol = 1e-12; the explicit-inverse residual measured that way is 0.000e+00.
+  per_site: checked and not executed -- the Hilbert space is treated as flat throughout. The dimensions used, 2, 4 and 8, are consistent with one, two and three Qubit sites, but no tensor factorization is ever formed, no partial trace is taken and no single-site reduction appears: the reset writes the entire density matrix to one blank state without addressing any factor, so no site-resolved statement is available here.
+  per_mode: exercised, though narrowly -- the finite-exponential marker in section 3 is genuinely mode-resolved: a diagonal generator with the four eigenvalues on its diagonal is exponentiated eigenvalue by eigenvalue and inverted the same way, giving determinant magnitude 5.530844e-04 and an explicit reciprocal per mode. Elsewhere the spectrum enters only as an integer rank, so no further mode-resolved claim is made.
+  per_block: thin, and reported as thin -- the only block structure this file exercises is the split of the operator space into the one-dimensional blank image and everything that maps into it, which is exactly what rank 1 for the endpoint reset records. No decomposition by coherence order, by subsystem or by any finer invariant subspace is constructed, so nothing beyond that single split is certified.
+  lattice_wide: exercised, and stated only at finite dimension -- rank, determinant and trace preservation are all whole-space properties of the full d^2-by-d^2 superoperator, established independently at d = 2, 4 and 8 rather than sampled on states. No sequence in d is extrapolated and no limit is taken; the obstruction, that a rank-one map cannot be the exponential of a bounded generator over a finite time, is a separate finite statement at each of those dimensions.
 
 ------------------------------------------------------------------------------
 SCORECARD

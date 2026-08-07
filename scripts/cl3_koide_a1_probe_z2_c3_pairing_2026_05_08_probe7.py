@@ -1231,6 +1231,59 @@ def section11_theorem_statement():
 # --------------------------------------------------------------------
 
 
+def section12_n5_execution_certificate() -> list:
+    """N5 execution certificate — reporting only; returns no results."""
+    print("Section 12 — N5 execution certificate: resolution classes exercised here")
+    print(
+        "  per_element: resolved candidate by candidate and entry by entry — "
+        "all five inventoried Z_2 candidates are put through the same "
+        "five-test grid separately rather than dismissed as a class, each "
+        "involution is verified to square to the identity in its own right, "
+        "and the conjugation P_23 H(a, b) P_23 = H(a, b-bar) is computed on "
+        "the explicit 3x3 matrix so the effect on each coefficient is read "
+        "off individually."
+    )
+    print(
+        "  per_site: checked and not executed — two candidates are nominally "
+        "site-level, the fermion parity F built as a tensor product of "
+        "sigma_3 factors and the APBC-versus-PBC boundary convention, but "
+        "both are settled here purely by their induced action on the hw=1 "
+        "bilinears, where F acts as the identity and APBC has no operator "
+        "action at all, so no quantity in this probe is ever resolved site by "
+        "site."
+    )
+    print(
+        "  per_mode: resolved mode by mode on the C_3 characters — the "
+        "circulant spectrum is confirmed to match the Brannen-Rivero cosine "
+        "form eigenvalue by eigenvalue, and the trivial character is kept "
+        "distinct from the two non-trivial characters throughout, which is "
+        "what lets Section 8 trace the number 1/2 back to character "
+        "arithmetic rather than to any Z_2 halving."
+    )
+    print(
+        "  per_block: resolved block by block on the Hermitian isotype "
+        "decomposition — the trivial-character block has dimension 3 and the "
+        "non-trivial-character block dimension 6, giving the 3 : 6 Frobenius "
+        "split, and at the Brannen point a = 1, b = 1/sqrt(2) the two block "
+        "energies are separately computed and both equal 3, which is the "
+        "equipartition meaning of A1; the runner is explicit that this weight "
+        "comes from C_3 multiplicity, not from any of the Z_2 candidates."
+    )
+    print(
+        "  lattice_wide: checked and not executed — no lattice is "
+        "instantiated at any volume, no site sum is formed and no limit is "
+        "taken; the closed-lattice facts that Candidate 5 leans on, that "
+        "uniform Z_3 phase twists cancel and that the cited plaquette "
+        "comparison is identical between PBC and Z_3-symmetric APBC, enter as "
+        "cited substrate results and are not re-executed here, so nothing is "
+        "certified at lattice scale by this probe."
+    )
+    return []
+
+
+# --------------------------------------------------------------------
+
+
 def main() -> int:
     sections = [
         section0_baseline,
@@ -1245,6 +1298,7 @@ def main() -> int:
         section9_convention_robustness,
         section10_falsifiability_anchor,
         section11_theorem_statement,
+        section12_n5_execution_certificate,
     ]
 
     all_results = []

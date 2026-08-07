@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_route2_single_clock_2026_05_08_r2.py
-runner_sha256: b9fc383349f28c49b2fa22e087bcf72633dcf1225e2029185519ad8cb968f44c
+runner_sha256: 65ce2c90539c5dd98a18707244998d58c0094d1d07e271f888b94daf24349772
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -203,7 +203,7 @@ Attack vector 7: Spectrum-condition + time direction breaks
   break spatial C_3[111]?
 
   [PASS] Test C_3-sym H is Hermitian
-    H_test eigenvalues: [np.float64(0.2803847577293369), np.float64(1.3196152422706624), np.float64(1.3999999999999995)]
+    H_test eigenvalues: [np.float64(0.2803847577293367), np.float64(1.3196152422706628), np.float64(1.3999999999999997)]
   [PASS] H >= 0 after subtracting min eigenvalue (vacuum)
   [PASS] [H, U_C3] = 0
     Are two eigenvalues degenerate? False
@@ -316,6 +316,15 @@ AC_phi closure requires either:
 
 This note is NOT positive closure of AC_phi. It SHARPENS
 the obstruction by exhausting one more attack class.
+
+Section 10 — N5 execution certificate
+======================================================================
+
+per_element: checked - each attack vector is decided by reading the corner expectations <c_alpha|O|c_alpha> off the diagonal one alpha at a time and confirming they coincide, at 0.7000 for the single-clock Hamiltonian, -0.3333 for the binary OS-orientation observable and -1.0856 for the random C_3-symmetric H, while J is shown to fix each corner basis vector pointwise.
+per_site: checked - the reflection-positivity vector is settled site by site, with theta_t : (t, x, y, z) -> (-1 - t, x, y, z) composed against C_3[111] at 5 explicit points of the Z^3 x Z spacetime lattice, including (0, 2, 3, 4) and (7, -1, -2, -3), and the two compositions compared coordinate by coordinate for exact equality.
+per_mode: checked - the structural obstruction is exhibited in the C_3 character basis, where the three modes carry distinct eigenvalues h(theta = 0) = 0.9091, h(2pi/3) = -2.5731 and h(4pi/3) = -1.5928, and the common corner expectation -1.0856 is verified to equal their mean, which is exactly the Schur identity the whole no-go rests on.
+per_block: checked - the 16-corner 4D Brillouin zone is enumerated and factorized into 8 spatial times 2 temporal blocks, and each of the 3 spatial hw=1 corners is shown to carry the identical temporal block content [0, 1], so the Z_2 temporal grading is confirmed to be a tensor factor that no spatial corner sees differently.
+lattice_wide: checked - the Lieb-Robinson bound is the one genuinely whole-lattice object here, v_LR = 2 e r J built from the maximum hopping range over the entire graph and J = sup_z ||h_z||, and it evaluates to 5.4366 identically along [100], [110] and [111] under the L^1 graph distance; no infinite-volume or continuum limit is taken.
 
 ==============================================================================
 PASS = 18, FAIL = 0

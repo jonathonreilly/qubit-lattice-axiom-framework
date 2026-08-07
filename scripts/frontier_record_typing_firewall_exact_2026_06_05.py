@@ -170,6 +170,40 @@ def main() -> int:
         check(f"H2.{n} arbitrary finite recorded count n={n} is allowed algebraically",
               sum(history.values()) == n)
 
+    print("\n=== N5 execution certificate (print-only; no check is registered) ===")
+    print(
+        "per_element: checked and not executed -- no array-valued object exists in this runner, so there is no "
+        "element to resolve. Everything it manipulates is a frozenset, a dict keyed by atom name, or an exact "
+        "Fraction, and every conclusion is reached by set algebra and equality of exact rationals rather than by "
+        "comparing entries of anything."
+    )
+    print(
+        f"per_site: checked and not executed -- there is no site index at any point. The {len(sectors)} labels "
+        "chi0, chi1 and chi2 are central-sector names supplied by the readout context, not positions in a lattice, "
+        "and the runner deliberately avoids measurement dynamics of any kind, so a site-resolved reading of this "
+        "type firewall would be an invention."
+    )
+    print(
+        f"per_mode: exercised, at sector granularity and no finer -- the fixed K/CPT action is verified sector by "
+        f"sector, each of the {len(sectors)} central sectors separately satisfying K(K(s)) = s, and the record "
+        "alphabet is then derived from that per-sector action rather than assumed. These are central sectors, "
+        "however: no spectrum is computed and no dynamical mode is separated, and the certificate claims nothing "
+        "beyond the sector level."
+    )
+    print(
+        f"per_block: exercised, and the firewall is stated at exactly this granularity -- the sectors fall into "
+        f"{len(orbits)} K/CPT orbit blocks, a singlet block and a doublet block, and those blocks are the record "
+        "atoms. The additive readout is checked to split over disjoint blocks with I(empty)=0, and the whole "
+        "type-level result is that a block is an event while a probability is a separate normalized state that "
+        "assigns numbers to blocks."
+    )
+    print(
+        f"lattice_wide: checked and not executed -- nothing here has spatial extent, so no whole-lattice quantity "
+        f"exists and no finite-N or limiting statement is available. The one exhaustive global check present is "
+        f"Boolean closure over all {len(events)}x{len(events)} pairs of events in the powerset algebra, which is a "
+        "statement about an algebra over record atoms and carries no volume, no size parameter and no limit."
+    )
+
     print("\n=== Scorecard ===")
     print(f"PASS={PASS} FAIL={FAIL}")
     print(
